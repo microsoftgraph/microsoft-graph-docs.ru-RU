@@ -3,12 +3,13 @@ title: Перечисление классов
 description: 'Получение списка всех объектов class. '
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: fdb0b199357f55d071dd5ec1a0f44422e2ecfeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: f1d46db00314eb3c12ff075781cadfba562fef34
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814604"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960737"
 ---
 # <a name="list-classes"></a>Перечисление классов
 

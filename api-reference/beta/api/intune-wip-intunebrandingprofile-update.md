@@ -3,12 +3,13 @@ title: Обновление intuneBrandingProfile
 description: Обновление свойства объекта intuneBrandingProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6408e2c5e3efc8dd989cb109a98756576b974967
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0840852d0668cc6e2b4d18b4345792166a2d5193
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846657"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964468"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление intuneBrandingProfile
 
@@ -49,10 +50,10 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Клавиша профилей|
-|Имя_профиля|Строка|Имя профиля|
-|profileDescription|Строка|Описание профиля|
-|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
+|id|String|Клавиша профилей|
+|Имя_профиля|String|Имя профиля|
+|profileDescription|String|Описание профиля|
+|isDefaultProfile|Boolean|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
@@ -72,7 +73,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -122,7 +123,7 @@ Content-length: 1209
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

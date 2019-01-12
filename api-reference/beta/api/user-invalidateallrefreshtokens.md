@@ -2,12 +2,14 @@
 title: 'пользователь: invalidateAllRefreshTokens'
 description: Признает недействительным всех маркеров обновления пользователя, выданный приложений (а также файлы cookie сеанса в браузере пользователя), сброс свойство пользователя **refreshTokensValidFromDateTime** текущая дата и время. Как правило эта операция выполняется (по пользователь или администратор), если у пользователя есть потерянных или украденных устройств.  Эта операция может запретить доступ к любой из организации данных, доступных через приложения на устройстве без уведомления пользователя, сначала необходимо выполнить повторный вход. На самом деле эта операция будет принудительно пользователя выполнить повторный вход для всех приложений, которые они ранее согласие, вне зависимости от устройства.
 localization_priority: Normal
-ms.openlocfilehash: 4ece9866e703d47ab8f7b024496f92f30a4a14b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 740829e4ebd3b64308e514ab1c7633db7f35e7d7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858081"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950181"
 ---
 # <a name="user-invalidateallrefreshtokens"></a>пользователь: invalidateAllRefreshTokens
 

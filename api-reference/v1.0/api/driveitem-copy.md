@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Копирование файла или папки
 localization_priority: Normal
-ms.openlocfilehash: b1d949d7a0bb19d03feccf353ec4803c37e7ec7d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: db953e3221c03cbf094f84e2e36eb1e5b2d7d24b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828072"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961990"
 ---
 # <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
 
@@ -69,7 +70,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Возвращает сведения о том, как [отслеживать ход](/graph/long-running-actions-overview) копирования после принятия запроса.
 

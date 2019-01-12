@@ -3,12 +3,13 @@ title: 'TableColumnCollection: add'
 description: Добавляет новый столбец в таблицу.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: bd3c1a2b1cbfcb8d0e47f9d7ec93b0695e9854c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 0613415c2d010945f95fa8fc3dbcb16ec7125012
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870240"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964706"
 ---
 # <a name="tablecolumncollection-add"></a>TableColumnCollection: add
 
@@ -72,7 +73,7 @@ Content-length: 51
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

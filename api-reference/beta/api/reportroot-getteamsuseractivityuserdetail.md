@@ -2,12 +2,13 @@
 title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: Получение сведения о действиях отдельных пользователей Microsoft Teams.
 localization_priority: Normal
-ms.openlocfilehash: 7c007acc9988db8dc9e4e7bfdf2440178b1ca445
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 558e142eb9b8afd74ba30657e5b21726f283df2b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815339"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962963"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -53,7 +54,7 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -101,7 +102,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -145,7 +146,7 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
 GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -1,14 +1,15 @@
 ---
 title: Создание sectionGroup
 description: Создание группы разделов в указанной записной книжке.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 85e971719fd3074d78ab8ca857d6db324174c714
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 00dd24a923d98b0386b8bf9dd5aa1b2b97b6f58f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875280"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962774"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 
@@ -35,8 +36,8 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `application/json` |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите имя группы разделов.

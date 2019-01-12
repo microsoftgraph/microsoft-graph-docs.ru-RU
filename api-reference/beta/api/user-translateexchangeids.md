@@ -3,12 +3,13 @@ title: 'пользователь: translateExchangeIds'
 description: Переведите идентификаторы, связанные с Outlook ресурсов форматов.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: b59cc33765586648432736df6067e6c089318729
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d613a6c27df1b53c5a41462276f67cc1991a3c88
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831908"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957629"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -24,7 +25,7 @@ ms.locfileid: "27831908"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.ReadBasic, User.Read, User.ReadWrite |
-| Application | User.Read.All, User.ReadWrite.All |
+| Приложение | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -66,7 +67,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 - Удалите все конечные знаки внутренние поля (`=`)
 - Добавление целое число в конец строки, показывающее, сколько символов заполнения были в исходной (`0`, `1`, или `2`)
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и семейства [convertIdResult](../resources/convertidresult.md) в теле ответа.
 
@@ -96,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа
 <!-- {

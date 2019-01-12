@@ -2,12 +2,14 @@
 title: Обновление страницы
 description: Обновление содержимого страницы OneNote.
 localization_priority: Normal
-ms.openlocfilehash: 78dc12f9eb5c041ae58f49aae137063b8a94bce3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 91be57e33bba2d90725beaee8607fd3e2eddb84a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960696"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -34,8 +36,8 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `application/json` |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса задаете массив объектов [patchContentCommand](../resources/patchcontentcommand.md) , которые представляют изменения на страницу. Дополнительные сведения и примеры в разделе [содержимого страницы OneNote обновления](/graph/onenote-update-page).
@@ -69,7 +71,7 @@ Content-length: 312
   }
 ]
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

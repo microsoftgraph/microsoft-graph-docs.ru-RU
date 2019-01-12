@@ -3,12 +3,13 @@ title: Get iosVppApp
 description: Чтение свойств и связей объекта iosVppApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fdfb2e6e6c116058eea43d92a15adb886d73a463
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: be8117c72c3edb8410c4e5f2f9e6287469c3d33c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834988"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960723"
 ---
 # <a name="get-iosvppapp"></a>Get iosVppApp
 
@@ -55,7 +56,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}
 GET https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

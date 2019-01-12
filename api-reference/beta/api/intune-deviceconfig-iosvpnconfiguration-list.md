@@ -2,12 +2,14 @@
 title: Список iosVpnConfigurations
 description: Свойства списка и связей объектов iosVpnConfiguration.
 author: tfitzmac
-ms.openlocfilehash: eeebea3787c5a37baa16a29c0f00a973903bffc0
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: e17edc4ddd0125166f26bafb8e7e1e734a640764
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27362848"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958028"
 ---
 # <a name="list-iosvpnconfigurations"></a>Список iosVpnConfigurations
 
@@ -38,11 +40,11 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ

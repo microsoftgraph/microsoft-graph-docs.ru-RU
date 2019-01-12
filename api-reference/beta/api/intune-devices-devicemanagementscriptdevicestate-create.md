@@ -3,12 +3,13 @@ title: Создание deviceManagementScriptDeviceState
 description: Создание нового объекта deviceManagementScriptDeviceState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d4f2dcd346aaef4d71b0309f65b7f6a7005c4346
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9663be4b0079763f8b0055bd68c9ccbc9c833fa5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874258"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963908"
 ---
 # <a name="create-devicemanagementscriptdevicestate"></a>Создание deviceManagementScriptDeviceState
 
@@ -50,9 +51,9 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности состояния устройства устройства управления скрипта.|
+|id|String|Ключ сущности состояния устройства устройства управления скрипта.|
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего выполнения сценарий управления устройства. Возможные значения: `unknown`, `success`, `fail`.|
-|resultMessage|Строка|Подробные сведения о результатов выполнения.|
+|resultMessage|String|Подробные сведения о результатов выполнения.|
 |lastStateUpdateDateTime|DateTimeOffset|Время последнего выполняет сценарий управления устройства.|
 |errorCode|Int32|Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
 |errorDescription|String|Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.|

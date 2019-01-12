@@ -3,12 +3,13 @@ title: Перечисление объектов termsAndConditionsAssignment
 description: Список свойств и связей объектов termsAndConditionsAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0ae712e3fc2d4f4490652c3b74aa69e61df12f0d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c9beea3297c1360ee11a1ed267a5d06e9247862
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825055"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962557"
 ---
 # <a name="list-termsandconditionsassignments"></a>Перечисление объектов termsAndConditionsAssignment
 

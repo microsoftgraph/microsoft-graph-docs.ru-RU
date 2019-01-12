@@ -3,12 +3,13 @@ title: Получение контакта
 description: Получение свойств и связей объекта contact.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 057a97ba25d12f7baaa951ba7750cdd4ab9dd435
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6bb3f134e4c0cced1ac0ebbc9ec05aebc2c3d664
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860909"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961871"
 ---
 # <a name="get-contact"></a>Получение контакта
 
@@ -48,8 +49,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 |Имя|Значение|Описание|
 |:---------------|:--------|:-------|
-|$expand|string|Разделенный запятыми список связей, развертываемых и включаемых в ответ. Поддерживаемые имена представлены в таблице связей объекта [contact](../resources/contact.md). |
-|$select|string|Разделенный запятыми список свойств, включаемых в ответ.|
+|$expand|строка|Разделенный запятыми список связей, развертываемых и включаемых в ответ. Поддерживаемые имена представлены в таблице связей объекта [contact](../resources/contact.md). |
+|$select|строка|Разделенный запятыми список свойств, включаемых в ответ.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -72,7 +73,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ```http
 GET https://graph.microsoft.com/v1.0/me/contacts/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

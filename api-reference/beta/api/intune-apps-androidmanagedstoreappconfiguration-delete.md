@@ -3,12 +3,13 @@ title: Удаление androidManagedStoreAppConfiguration
 description: Удаляет androidManagedStoreAppConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 224b45e4fac0c8b235eaea2ed304fb9df46aba95
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a75ae25d2932825862d7bb50e2a28a9a3f106691
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964699"
 ---
 # <a name="delete-androidmanagedstoreappconfiguration"></a>Удаление androidManagedStoreAppConfiguration
 
@@ -45,7 +46,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ DELETE /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfi
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

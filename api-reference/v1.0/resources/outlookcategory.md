@@ -2,12 +2,14 @@
 title: Тип ресурса outlookCategory
 description: Представляет категорию, по которой пользователь может группировать такие элементы Outlook, как сообщения и события. Пользователь определяет категории в главном списке и можно применить одно или несколько из следующих пользовательских
 localization_priority: Normal
-ms.openlocfilehash: 08188480bc2b95ded0d1cb9ac033939a17fc92b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 490ecaf2e6303cc943646dbed99b3202b8d57525
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832769"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953128"
 ---
 # <a name="outlookcategory-resource-type"></a>Тип ресурса outlookCategory
 

@@ -1,14 +1,15 @@
 ---
 title: Перечисление страниц
 description: Получение списка объектов page.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: f06404437fbd5dc34cef6d81e5b3d692bf5ce101
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: 5a7796bad3afbb7f30b6200f20b667fe53cc0c89
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829367"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955648"
 ---
 # <a name="list-pages"></a>Перечисление страниц
 
@@ -40,7 +41,7 @@ GET /sites/{id}/onenote/pages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
@@ -56,7 +57,7 @@ GET /sites/{id}/onenote/pages
 ```http
 GET https://graph.microsoft.com/v1.0/me/onenote/pages
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
 <!-- { "blockType": "ignored" } -->
 ```http

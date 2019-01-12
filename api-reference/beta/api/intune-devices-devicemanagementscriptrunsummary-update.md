@@ -3,12 +3,13 @@ title: Обновление deviceManagementScriptRunSummary
 description: Обновление свойства объекта deviceManagementScriptRunSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c7a82b01ccae7e3f5ca1e8c3b3b784791fe08df3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d2a0ba2a7dfbd44cd5e756010239caee285fe090
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858326"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954703"
 ---
 # <a name="update-devicemanagementscriptrunsummary"></a>Обновление deviceManagementScriptRunSummary
 
@@ -49,7 +50,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/runSu
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Клавиша сценарий управления устройства выполните сводки сущности.|
+|id|String|Клавиша сценарий управления устройства выполните сводки сущности.|
 |successDeviceCount|Int32|Число допустимых устройства.|
 |errorDeviceCount|Int32|Число ошибок устройства.|
 |successUserCount|Int32|Число пользователей успеха.|

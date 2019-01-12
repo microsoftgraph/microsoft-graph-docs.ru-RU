@@ -3,12 +3,13 @@ title: Обновление свойств educationclass
 description: Обновление свойств курса.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 1c011a19371490bb8d00a7048a9809cc8a58beee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 7932dc3072689468ceff813a99466d287ce77a1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813995"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950566"
 ---
 # <a name="update-educationclass-properties"></a>Обновление свойств educationclass
 
@@ -65,7 +66,7 @@ Content-length: 224
   "displayName": "World History Level 1",
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

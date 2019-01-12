@@ -3,12 +3,13 @@ title: Тип ресурса deviceConfiguration
 description: Конфигурация устройства
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 255826460a81544d27620807d569ce3857e1034e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1a508a037dbd1271d30a226d9cf62fb0683b53af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884044"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953149"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Тип ресурса deviceConfiguration
 
@@ -25,11 +26,11 @@ ms.locfileid: "27884044"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|Строка|Указанное администратором описание конфигурации устройства.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|описание|String|Указанное администратором описание конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи

@@ -2,12 +2,14 @@
 title: Создание educationAssignment
 description: 'Создание нового назначения. Учителя только в классе можно создать назначение. Запустите назначений в черновом варианте, что означает, что студентов не будут отображаться назначения, пока не будет вызван опубликовать.  '
 localization_priority: Normal
-ms.openlocfilehash: 6bcc1f44be9d811335d24cea7502c0752052c5ab
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f86c6c3cc94ada7865038a0e8ae4aff90285719e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824187"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950160"
 ---
 # <a name="create-educationassignment"></a>Создание educationAssignment
 
@@ -40,7 +42,7 @@ POST /education/classes/{id}/assignments
 В тексте запроса укажите представление JSON объекта [educationAssignment](../resources/educationassignment.md) .
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [educationAssignment](../resources/educationassignment.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -75,7 +77,7 @@ Content-length: 279
 ```
 В тексте запроса укажите представление JSON объекта [educationAssignment](../resources/educationassignment.md) .
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

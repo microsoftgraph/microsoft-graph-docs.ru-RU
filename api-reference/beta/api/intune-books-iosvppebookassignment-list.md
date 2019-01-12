@@ -3,12 +3,13 @@ title: Перечисление объектов iosVppEBookAssignment
 description: Список свойств и связей объектов iosVppEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0439d1e26df7cb48a20fbdc462485727c16cf7bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 350aab059f391029b5d4d6ce0e55a8122bfa6255
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823368"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963845"
 ---
 # <a name="list-iosvppebookassignments"></a>Перечисление объектов iosVppEBookAssignment
 
@@ -55,7 +56,7 @@ GET /deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 GET https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{managedEBookId}/assignments
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -2,12 +2,14 @@
 title: Тип ресурса androidDeviceOwnerEnrollmentProfile
 description: Профиль регистрации, используемый для регистрации устройств COSU с помощью управления облачными клиентами от Google.
 localization_priority: Normal
-ms.openlocfilehash: 17d8d00fb0c21d9474607e0cc388ce38687af0ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 5e609f16978f3dd68eb680692149954f83e6cc6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841876"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963559"
 ---
 # <a name="androiddeviceownerenrollmentprofile-resource-type"></a>Тип ресурса androidDeviceOwnerEnrollmentProfile
 

@@ -3,12 +3,13 @@ title: Список TableColumnCollection
 description: Получение списка объектов tablecolumn.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 56b4722c69589d8474bee10bed4fdec01dbc72bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 64bc020588d4a61e7daedc020732147b66d99053
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964692"
 ---
 # <a name="list-tablecolumncollection"></a>Список TableColumnCollection
 
@@ -55,7 +56,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/columns
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

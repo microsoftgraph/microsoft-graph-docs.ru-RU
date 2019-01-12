@@ -3,12 +3,13 @@ title: Получение windowsAppX
 description: Чтение свойства и связи объекта windowsAppX.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aa87736626fbd2a26849b67b6993f7706de7cd75
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 40a8bad885df7da96a50853035811a739baf118f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869799"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964629"
 ---
 # <a name="get-windowsappx"></a>Получение windowsAppX
 
@@ -49,7 +50,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [windowsAppX](../resources/intune-apps-windowsappx.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -59,7 +60,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

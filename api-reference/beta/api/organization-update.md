@@ -2,12 +2,14 @@
 title: Обновление организации
 description: Обновление свойств объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Normal
-ms.openlocfilehash: ae91b0f7cf92619f07f042c515bad2aab0d1035a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 5ed49dcd0546fedf16572bcf75a8c4366395f1fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890421"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27964440"
 ---
 # <a name="update-organization"></a>Обновление организации
 
@@ -37,7 +39,7 @@ PATCH /organization/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -83,7 +85,7 @@ Content-length: 411
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

@@ -3,12 +3,13 @@ title: Тип перечисления windowsAutopilotProfileAssignmentStatus
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 48d08ad4d4c80c3d5a68cca5af36c958deaac819
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1427ffeb45862312d92fdf02a00a242725894d36
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869645"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962634"
 ---
 # <a name="windowsautopilotprofileassignmentstatus-enum-type"></a>Тип перечисления windowsAutopilotProfileAssignmentStatus
 

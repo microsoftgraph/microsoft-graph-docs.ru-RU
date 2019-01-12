@@ -2,12 +2,14 @@
 title: Добавление участника
 description: С помощью этого API можно добавить участника в группу Office 365 или группу безопасности (обычную или с поддержкой почты) через свойство навигации **members**.
 localization_priority: Normal
-ms.openlocfilehash: 74ad07ea9012385f896ba4c6c6aa18f44758e5bb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: db0261b71f6499489b48deb099a572599b482d38
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832867"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955529"
 ---
 # <a name="add-member"></a>Добавление участника
 
@@ -35,7 +37,7 @@ POST /groups/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md), [user](../resources/user.md) или [group](../resources/group.md) в формате JSON.
@@ -61,7 +63,7 @@ Content-length: 30
 ```
 В тексте запроса укажите представление JSON `id` объекта [directoryObject](../resources/directoryobject.md), [пользователя](../resources/user.md)или [группы,](../resources/group.md) необходимо добавить.
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 >**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства.
 <!-- {

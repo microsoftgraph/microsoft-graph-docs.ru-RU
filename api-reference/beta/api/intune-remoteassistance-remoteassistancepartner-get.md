@@ -3,12 +3,13 @@ title: Получение remoteAssistancePartner
 description: Чтение свойств и связей объекта remoteAssistancePartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1212ca8d51ac0fd2a896800d5467624cd1c08570
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 171982e79745bfb94ecf41ddfc602bc883cf6ac3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806722"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963537"
 ---
 # <a name="get-remoteassistancepartner"></a>Получение remoteAssistancePartner
 

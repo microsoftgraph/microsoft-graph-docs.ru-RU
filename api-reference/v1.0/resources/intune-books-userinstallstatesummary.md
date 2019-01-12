@@ -3,12 +3,13 @@ title: Тип ресурса userInstallStateSummary
 description: Содержит свойства сводки по состоянию установки для пользователя.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3e63bf8a5f6ab982a8542f483ad8f017c00b1496
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 82782be90b0d9cda70def3a2e6d41ba1d76794a8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894553"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955382"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Тип ресурса userInstallStateSummary
 
@@ -27,7 +28,7 @@ ms.locfileid: "27894553"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|

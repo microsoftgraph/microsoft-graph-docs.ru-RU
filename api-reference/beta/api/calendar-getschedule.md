@@ -2,12 +2,14 @@
 title: 'календарь: getSchedule'
 description: Получение сведений о доступности данных о доступности для коллекции пользователей, списки рассылки и ресурсы, для заданного периода времени.
 localization_priority: Priority
-ms.openlocfilehash: 08a584d4ce8cb9967856610408aebedc08f7b123
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 9089489d2b26b3dd4cd56b950538a72ab533c933
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844564"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956957"
 ---
 # <a name="calendar-getschedule"></a>календарь: getSchedule
 
@@ -34,16 +36,16 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | string | Характер данные в теле сущности, который является приложение/json. Обязательный.  |
-| Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type  | строка | Характер данные в теле сущности, который является приложение/json. Обязательный.  |
+| Prefer: outlook.timezone | строка | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|Строка|Представляет продолжительность промежуток времени в **availabilityView** в ответе. Значение по умолчанию — 30 минут, как минимум — 6, максимум — 1440. Необязательное.|
+|availabilityViewInterval|String|Представляет продолжительность промежуток времени в **availabilityView** в ответе. Значение по умолчанию — 30 минут, как минимум — 6, максимум — 1440. Необязательный атрибут.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Даты, времени и часового пояса окончания периода.|
 |расписания|Коллекция String|Коллекция SMTP-адреса пользователей, списков рассылки и ресурсы для получения сведений о доступности для.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Даты, времени и часового пояса начала периода.|

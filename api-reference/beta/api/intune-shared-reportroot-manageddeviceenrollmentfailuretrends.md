@@ -3,12 +3,13 @@ title: функция managedDeviceEnrollmentFailureTrends
 description: Метаданные для отчета тенденций сбой подачи заявок
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c115ee0ada2297c237db839049f9cd33cb77e2ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 648053ad000b2a9988b46b0d68d62219ed967a3a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853490"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963635"
 ---
 # <a name="manageddeviceenrollmentfailuretrends-function"></a>функция managedDeviceEnrollmentFailureTrends
 
@@ -46,7 +47,7 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -56,7 +57,7 @@ GET /reports/managedDeviceEnrollmentFailureTrends
 GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentFailureTrends
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

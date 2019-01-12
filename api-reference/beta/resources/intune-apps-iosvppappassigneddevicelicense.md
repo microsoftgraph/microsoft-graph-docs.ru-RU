@@ -2,12 +2,14 @@
 title: Тип ресурса iosVppAppAssignedDeviceLicense
 description: операций ввода-вывода устройства программа покупки корпоративного лицензионного назначения. Этот класс не поддерживает операции создания, удаления и обновления.
 localization_priority: Normal
-ms.openlocfilehash: 5c7f378def53950fd4dfbcd76b2a2820506ed7d9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 6c02a708c0629b23a14458eb08e0e26208e121db
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828331"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948739"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>Тип ресурса iosVppAppAssignedDeviceLicense
 
@@ -31,12 +33,12 @@ ms.locfileid: "27828331"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userEmailAddress|Строка|Адрес электронной почты пользователя. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|id|String|Ключ объекта. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userEmailAddress|String|Адрес электронной почты пользователя. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|Идентификатор пользователя. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|Имя пользователя. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|Строка|Имя участника-пользователя. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
-|managedDeviceId|Строка|С идентификатором управляемого устройства.|
+|userPrincipalName|String|Имя участника-пользователя. Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)|
+|managedDeviceId|String|С идентификатором управляемого устройства.|
 |deviceName|String|Имя устройства.|
 
 ## <a name="relationships"></a>Связи

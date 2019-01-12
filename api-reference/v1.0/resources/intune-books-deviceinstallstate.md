@@ -3,12 +3,13 @@ title: Тип ресурса deviceInstallState
 description: Содержит свойства состояния установки для устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 94cd0f2181b23a37518a28cac3854f46dd4a2004
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 39f7331f8bc83840b8b5865cb71414382b3d5a50
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894441"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963691"
 ---
 # <a name="deviceinstallstate-resource-type"></a>Тип ресурса deviceInstallState
 
@@ -27,7 +28,7 @@ ms.locfileid: "27894441"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|

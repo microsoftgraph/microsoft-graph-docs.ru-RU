@@ -3,12 +3,13 @@ title: Создание объекта deviceCategory
 description: Создание объекта deviceCategory.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 59b6b581120f003167dafe230a2b9a8a485b4d74
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 709217670f946d92135c15b13b2c825703337daa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843276"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950454"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -48,7 +49,7 @@ POST /deviceManagement/deviceCategories
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
 |**Адаптация новых сотрудников**|
 |displayName|String|Отображаемое имя категории устройств.|
 |описание|String|Необязательное описание категории устройств.|
@@ -73,7 +74,7 @@ Content-length: 135
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

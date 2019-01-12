@@ -2,12 +2,14 @@
 title: Перечисление разделов
 description: Получение списка объектов onenoteSection из указанного раздела группы.
 localization_priority: Normal
-ms.openlocfilehash: 3086a3476d1fa6732a7aae287f0cdf7cad0b16fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 8c29ec47ef322c205a8c62a4074c5fec84de6c14
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867804"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27948711"
 ---
 # <a name="list-sections"></a>Перечисление разделов
 
@@ -40,7 +42,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса

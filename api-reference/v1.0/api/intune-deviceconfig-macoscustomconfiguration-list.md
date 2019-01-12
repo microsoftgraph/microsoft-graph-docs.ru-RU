@@ -3,12 +3,13 @@ title: Перечисление объектов macOSCustomConfiguration
 description: Список свойств и связей объектов macOSCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fb393a1babdb439675eb1b05fd3362fefaf663f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd9e7b591b49b05705c580a84d0c7480a454c159
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892087"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965385"
 ---
 # <a name="list-macoscustomconfigurations"></a>Перечисление объектов macOSCustomConfiguration
 

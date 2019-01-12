@@ -3,12 +3,13 @@ title: Получение windowsDomainJoinConfiguration
 description: Чтение свойства и связи объекта windowsDomainJoinConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d0c4aedf07e8a6e95dc81f440975809e75b85160
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 64a295ae105a69865e304c45d08e339eadbf7936
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831334"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950244"
 ---
 # <a name="get-windowsdomainjoinconfiguration"></a>Получение windowsDomainJoinConfiguration
 
@@ -68,7 +69,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` объект [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) и кода ответа в теле ответа.
 
@@ -82,7 +83,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства, возвращенные фактический вызов зависит от контекста.
 

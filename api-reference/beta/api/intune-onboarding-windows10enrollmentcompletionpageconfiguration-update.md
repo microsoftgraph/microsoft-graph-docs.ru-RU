@@ -3,12 +3,13 @@ title: Обновление windows10EnrollmentCompletionPageConfiguration
 description: Обновление свойства объекта windows10EnrollmentCompletionPageConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9cc7d2cff8563d5e720e23c7f49bd88c42f47ec3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2219a2f2e2b5a0717fe6cc7bb954c8af11ebfd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870085"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959799"
 ---
 # <a name="update-windows10enrollmentcompletionpageconfiguration"></a>Обновление windows10EnrollmentCompletionPageConfiguration
 
@@ -56,18 +57,18 @@ PATCH /deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigur
 |createdDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |version|Int32|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|showInstallationProgress|Логический|Показать или скрыть выполнения установки для пользователей|
-|blockDeviceSetupRetryByUser|Логический|Пользователь может повторно запустите программу установки на сбой установки|
-|allowDeviceResetOnInstallFailure|Логический|Разрешить или заблокировать устройство Сброс на сбой установки|
-|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать семейства журнала на сбой установки|
-|customErrorMessage|Строка|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
+|showInstallationProgress|Boolean|Показать или скрыть выполнения установки для пользователей|
+|blockDeviceSetupRetryByUser|Boolean|Пользователь может повторно запустите программу установки на сбой установки|
+|allowDeviceResetOnInstallFailure|Boolean|Разрешить или заблокировать устройство Сброс на сбой установки|
+|allowLogCollectionOnInstallFailure|Boolean|Разрешить или заблокировать семейства журнала на сбой установки|
+|customErrorMessage|String|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
 |installProgressTimeoutInMinutes|Int32|Задать время ожидания ход выполнения установки в минутах|
-|allowDeviceUseOnInstallFailure|Логический|Разрешает пользователю продолжить использование устройства на сбой установки|
+|allowDeviceUseOnInstallFailure|Boolean|Разрешает пользователю продолжить использование устройства на сбой установки|
 |selectedMobileAppIds|Коллекция String|Для отслеживания состояния установки выбранных приложений|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windows10EnrollmentCompletionPageConfiguration](../resources/intune-onboarding-windows10enrollmentcompletionpageconfiguration.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -97,7 +98,7 @@ Content-length: 562
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

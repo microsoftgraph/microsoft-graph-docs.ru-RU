@@ -3,12 +3,13 @@ title: функция getManagementConditionStatementsForPlatform
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: fb658989b3be4870a4dcfcb7c65b172e00070b6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4592d06a8c9da0e2b3535bcab2d9e42696499867
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838747"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950195"
 ---
 # <a name="getmanagementconditionstatementsforplatform-function"></a>функция getManagementConditionStatementsForPlatform
 
@@ -53,7 +54,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Если успешно завершена, эта функция возвращает `200 OK` код ответа и семейства [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -63,7 +64,7 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 GET https://graph.microsoft.com/beta/deviceManagement/managementConditionStatements/getManagementConditionStatementsForPlatform(platform='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

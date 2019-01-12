@@ -3,12 +3,13 @@ title: Delete auditEvent
 description: Удаляет объект auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: abfee6fb35ecdd86464d1d751d0cb72cab45b63d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: aa005d6275e37f5807141553252d45331563f4e5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853874"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958819"
 ---
 # <a name="delete-auditevent"></a>Delete auditEvent
 
@@ -45,7 +46,7 @@ DELETE /deviceManagement/auditEvents/{auditEventId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ DELETE /deviceManagement/auditEvents/{auditEventId}
 DELETE https://graph.microsoft.com/beta/deviceManagement/auditEvents/{auditEventId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

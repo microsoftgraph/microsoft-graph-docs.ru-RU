@@ -3,12 +3,13 @@ title: Список вложений
 description: Получение списка объектов вложений.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: b5ca42a0ee191b62ab8c5484acce41acf7d924a5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 5b54e26acbb08b7960693b3e5a1e531fc4c20708
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853951"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27951350"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -36,7 +37,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -54,7 +55,7 @@ GET /users/{id | userPrincipalName}/messages/{id}/attachments
 ```http
 GET https://graph.microsoft.com/beta/me/messages/{id}/attachments
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
