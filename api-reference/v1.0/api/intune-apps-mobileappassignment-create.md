@@ -3,12 +3,13 @@ title: Создание объекта mobileAppAssignment
 description: Создание объекта mobileAppAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b882c12de0be358d1a08611037662f3cd9246a43
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0d163d3d13b69cd536ad7ef99a2a9bab54baa366
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876211"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987841"
 ---
 # <a name="create-mobileappassignment"></a>Создание объекта mobileAppAssignment
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/assignments
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |intent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки, определенная администратором. Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Целевое назначение группы, определенное администратором.|
 |settings|[mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)|Параметры целевого назначения, определенные администратором.|
@@ -77,7 +78,7 @@ Content-length: 273
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

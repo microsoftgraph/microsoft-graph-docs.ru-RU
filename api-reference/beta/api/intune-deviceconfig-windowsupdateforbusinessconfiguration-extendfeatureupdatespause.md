@@ -3,12 +3,13 @@ title: Действие extendFeatureUpdatesPause
 description: Расширение приостановить обновлений компонент для обновления Windows для бизнеса звонить.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 60f370a62095b741c976d5cd6ad16b5b3f8beb4b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b0e1315074f9460c1ecf64e765e3fc08f2e58c3f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812119"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990287"
 ---
 # <a name="extendfeatureupdatespause-action"></a>Действие extendFeatureUpdatesPause
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/extendFeatureUpdatesPause
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

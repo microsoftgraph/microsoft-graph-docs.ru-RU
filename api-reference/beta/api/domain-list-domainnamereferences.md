@@ -3,12 +3,13 @@ title: Перечисление domainNameReferences
 description: Получение списка объектов directoryObject со ссылкой на домен. Возвращаемый список содержит все объекты каталога, у которых есть зависимости от домена.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: bf6626dac5d08094f4e96d87bde93e36f7276295
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 2a0e2cdbfb4a7a0899650e884a190ea45855d72c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883239"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985370"
 ---
 # <a name="list-domainnamereferences"></a>Перечисление domainNameReferences
 

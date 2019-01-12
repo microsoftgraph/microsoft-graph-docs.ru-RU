@@ -3,12 +3,13 @@ title: Действие revokeAllLicenses
 description: Операций ввода-вывода REVOKE назначенных VPP лицензируемые для заданного приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cd79d1b7f5d963b0015a63f820092def886f2119
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 07a370c768591c66776f5034f1bd3874f4f5ade9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879809"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991030"
 ---
 # <a name="revokealllicenses-action"></a>Действие revokeAllLicenses
 
@@ -51,11 +52,11 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|notifyManagedDevices|Логический|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
+|notifyManagedDevices|Boolean|Логическое значение, указывающее, если устройство отправляется уведомление revoke|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -72,7 +73,7 @@ Content-length: 36
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

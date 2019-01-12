@@ -2,12 +2,14 @@
 title: Получение календаря
 description: 'Получение свойств и связей объекта calendar. Календарь может иметь одно для пользователя '
 localization_priority: Priority
-ms.openlocfilehash: 15c21801702bf884a79f1dfed60867a2dc211efb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 3b5f8ff95d6b8e77749acc4a7dececfb272e26dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840861"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990448"
 ---
 # <a name="get-calendar"></a>Получение календаря
 
@@ -52,7 +54,7 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

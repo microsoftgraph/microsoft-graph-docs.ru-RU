@@ -3,12 +3,13 @@ title: Тип ресурса deviceManagementPartner
 description: Объект, представляющий подключение к партнеру по управлению устройствами.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 08d604fc5f56e9d6ded439bd398cda9b95e2c8a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4c321973d3f1400f252d0807c279bedbdf7dc585
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875532"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987820"
 ---
 # <a name="devicemanagementpartner-resource-type"></a>Тип ресурса deviceManagementPartner
 
@@ -29,7 +30,7 @@ ms.locfileid: "27875532"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Партнерские типа приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|

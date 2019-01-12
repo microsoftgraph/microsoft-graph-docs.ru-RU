@@ -2,12 +2,14 @@
 title: Обновление plannerPlan
 description: Обновление свойства объекта **plannerPlan** .
 localization_priority: Normal
-ms.openlocfilehash: 55dcc8816489144b43c6dc41500bdee94190883d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: d4f8f3c3704c1108485ec21e5ac4a8836a401925
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856485"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987239"
 ---
 # <a name="update-plannerplan"></a>Обновление plannerPlan
 
@@ -40,7 +42,7 @@ PATCH /planner/plans/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|owner|Строка|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
+|owner|String|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
 |title|Строка|Название плана.|
 
 ## <a name="response"></a>Ответ

@@ -2,12 +2,14 @@
 title: 'Группа: validateProperties'
 description: Проверьте, если группу Office 365 отображаемое имя или почты псевдонимов стандарту именования политик. Клиенты могут использовать API-Интерфейс для определения отображаемое имя или псевдоним почты является допустимым перед попыткой **обновления** группы с Office 365. Для проверки свойства перед созданием группы, используйте функцию validateProperties для объектов каталога.
 localization_priority: Normal
-ms.openlocfilehash: 0ffdf44f687ad047d952e00c268239432244006d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 5361e05d2a58e2d4c27bd662f158d4f185c447fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833903"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990893"
 ---
 # <a name="group-validateproperties"></a>Группа: validateProperties
 
@@ -48,11 +50,11 @@ POST /groups/<id>/validateProperties
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка| Отображаемое имя группы, чтобы проверить. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
+|displayName|String| Отображаемое имя группы, чтобы проверить. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
 |mailNickname|String| Псевдоним почты группы для проверки. Свойство не требуется по отдельности. Тем не менее по крайней мере одно свойство (отображаемое имя или mailNickname) является обязательным. |
 |onBehalfOfUserId|Guid| Идентификатор объекта пользователя для олицетворения при вызове API. Результаты проверки используются атрибуты onBehalfOfUserId и роли. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения и нет ошибок проверки, метод возвращает `204 No Content` код ответа. Он не возвращает все действия в теле ответа.
 
 Если запрос является недопустимым, метод возвращает `400 Bad Request` код ответа. Сообщение об ошибке с подробными сведениями о недопустимый запрос возвращается в теле ответа.
@@ -80,7 +82,7 @@ Content-length: 132
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,7 +105,7 @@ Content-length: 128
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 ```http
 HTTP/1.1 422
 Content-type: application/json

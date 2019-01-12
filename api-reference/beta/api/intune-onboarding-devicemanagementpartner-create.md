@@ -3,12 +3,13 @@ title: Создание объекта deviceManagementPartner
 description: Создание объекта deviceManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38a21c8e069a3a071d43111f8542972ccc70e546
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b9ff6eab5bf04277d89616765fb14855d047450c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844368"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991085"
 ---
 # <a name="create-devicemanagementpartner"></a>Создание объекта deviceManagementPartner
 
@@ -49,7 +50,7 @@ POST /deviceManagement/deviceManagementPartners
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Партнерские типа приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
@@ -89,7 +90,7 @@ Content-length: 664
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

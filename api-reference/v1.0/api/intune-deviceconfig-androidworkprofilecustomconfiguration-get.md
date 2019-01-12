@@ -3,12 +3,13 @@ title: Получение androidWorkProfileCustomConfiguration
 description: Чтение свойства и связи объекта androidWorkProfileCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e966d803a801ff07c91accfea99aac40a99e28c4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5cdc669d0f62fe5193ecfe38d27339dbb61e461f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27881111"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985923"
 ---
 # <a name="get-androidworkprofilecustomconfiguration"></a>Получение androidWorkProfileCustomConfiguration
 
@@ -45,7 +46,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [androidWorkProfileCustomConfiguration](../resources/intune-deviceconfig-androidworkprofilecustomconfiguration.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: Тип ресурса eBookInstallSummary
 description: Содержит свойства сводки по установке книги для устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b33f319106c39e11931726fcebcc8d5aa8d6ba46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a3d07dc2d1a1b7a117e001546cd5298765676bdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825783"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986154"
 ---
 # <a name="ebookinstallsummary-resource-type"></a>Тип ресурса eBookInstallSummary
 
@@ -24,7 +25,7 @@ ms.locfileid: "27825783"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, на которых была успешно установлена эта книга.|
 |failedDeviceCount|Int32|Количество устройств, на которых не удалось установить эту книгу.|
 |notInstalledDeviceCount|Int32|Количество устройств, на которых не установлена эта книга.|

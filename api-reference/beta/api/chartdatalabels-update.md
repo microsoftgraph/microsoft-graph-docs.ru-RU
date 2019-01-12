@@ -3,12 +3,13 @@ title: Обновление объекта chartdatalabels
 description: Обновление свойств объекта chartdatalabels.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: b430d411a10b09ebf8a160b56bd83dcaadeee036
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: f61113f8cd0617d6d8eb3f3191112d74e55f27cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824180"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985440"
 ---
 # <a name="update-chartdatalabels"></a>Обновление объекта chartdatalabels
 
@@ -40,8 +41,8 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|разделитель|string|Строка, представляющая разделитель для меток данных на диаграмме.|
+|position|строка|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|разделитель|строка|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
 |showLegendKey|boolean|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|

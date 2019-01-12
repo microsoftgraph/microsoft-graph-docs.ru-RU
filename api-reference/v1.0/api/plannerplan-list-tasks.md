@@ -2,12 +2,14 @@
 title: Перечисление задач
 description: Получение списка объектов **plannertask**, связанных с объектом plannerPlan.
 localization_priority: Normal
-ms.openlocfilehash: f0823aea0731f03ab0a0b3387f2e4f4eca86a534
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: c24fbdd21904031d54ac60f1452b3e5edfc8be85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815297"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987072"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 
@@ -51,7 +53,7 @@ GET /planner/plans/{id}/tasks
 ```http
 GET https://graph.microsoft.com/v1.0/planner/plans/{plan-id}/tasks
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

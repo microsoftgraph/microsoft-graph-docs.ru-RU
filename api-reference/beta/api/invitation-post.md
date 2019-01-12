@@ -2,12 +2,14 @@
 title: Создание приглашения
 description: Используйте этот API для создания приглашения. Приглашение позволяет добавить внешнего пользователя в организацию.
 localization_priority: Normal
-ms.openlocfilehash: 94b02335c123529a9f797c4003a2743e4c074c32
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4ec0fce295046182c93ccb36ecab3706ad787f80
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864283"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983669"
 ---
 # <a name="create-invitation"></a>Создание приглашения
 
@@ -48,8 +50,8 @@ POST /invitations
 
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
-|invitedUserEmailAddress |string | Адрес электронной почты приглашаемого пользователя.|
-|inviteRedirectUrl |string |URL-адрес, на который пользователь перенаправляется после активации.|
+|invitedUserEmailAddress |строка | Адрес электронной почты приглашаемого пользователя.|
+|inviteRedirectUrl |строка |URL-адрес, на который пользователь перенаправляется после активации.|
 
 ## <a name="response"></a>Отклик
 
@@ -73,7 +75,7 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

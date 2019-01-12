@@ -2,12 +2,13 @@
 title: Тип ресурса office365ActivationCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 30386b3833b8140d4c602e27cb3a78f3a68670dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 4787672df6462e8d1f343e4dace43ede7c79ff37
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824992"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991183"
 ---
 # <a name="office365activationcounts-resource-type"></a>Тип ресурса office365ActivationCounts
 
@@ -16,7 +17,7 @@ ms.locfileid: "27824992"
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | Последняя дата контента.          |
-| productType       | Строка | Тип продукта, например «Office 365 профессиональный плюс», «Клиента Project» или «Visio Pro для Office 365". |
+| productType       | String | Тип продукта, например «Office 365 профессиональный плюс», «Клиента Project» или «Visio Pro для Office 365". |
 | Windows           | Int64  | Число активации в Windows. Эта цифра включает в себя каждые активации на компьютерах под управлением Windows. |
 | mac               | Int64  | Число активации на Mac OS.          |
 | Android (en)           | Int64  | Число активации на устройстве Android.  |

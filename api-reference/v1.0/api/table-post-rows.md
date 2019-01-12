@@ -2,12 +2,14 @@
 title: Создание объекта TableRow
 description: 'Добавляет строки в конец таблицы. Обратите внимание на то, что API может принимать несколько строк данных, с помощью этот интерфейс API. Добавление одной строке за раз может привести к снижению производительности. Рекомендуемый подход бы для пакетной обработки строк в один вызов, а не выполнив одну строку вставки. Для достижения наилучших результатов собирать строки, чтобы вставить в части приложения и выполнить отдельных строк добавьте операции. Поэкспериментируйте с номером строки, чтобы определить, идеальная число строк для использования в одном вызове API. '
 localization_priority: Normal
-ms.openlocfilehash: 27979ee3f6ed38d9815e78a29b17f07bb72bcf91
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 02817faf621bfd0df264f62fc957f2cbe5e251d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840140"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984117"
 ---
 # <a name="create-tablerow"></a>Создание объекта TableRow
 

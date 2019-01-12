@@ -2,12 +2,14 @@
 title: Обновление bookingbusiness
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 53115469821bc39c05c4e7a262e5f9fc15b376ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 3f20d466614e35cce701999fabfb631e081a02ca
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824999"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991338"
 ---
 # <a name="update-bookingbusiness"></a>Обновление bookingbusiness
 
@@ -40,13 +42,13 @@ PATCH /bookingBusinesses/<id>
 |:---------------|:--------|:----------|
 |address|[physicalAddress](../resources/physicaladdress.md)|Почтовый адрес организации.|
 |businessHours|[bookingWorkHours](../resources/bookingworkhours.md) коллекции|Часы работы для предприятий.|
-|businessType|Строка|Тип бизнеса.|
-|defaultCurrencyIso|Строка|Код для валюты, предприятию работает в Microsoft резервирования.|
-|displayName|Строка|Имя для бизнеса, связанный с клиентами.|
+|businessType|String|Тип бизнеса.|
+|defaultCurrencyIso|String|Код для валюты, предприятию работает в Microsoft резервирования.|
+|displayName|String|Имя для бизнеса, связанный с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
 |schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создать резервирования для бизнеса.|
-|webSiteUrl|Строка|URL-адрес веб-сайта бизнеса.|
+|webSiteUrl|String|URL-адрес веб-сайта бизнеса.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
@@ -72,7 +74,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

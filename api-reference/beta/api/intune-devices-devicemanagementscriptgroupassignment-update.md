@@ -3,12 +3,13 @@ title: Обновление deviceManagementScriptGroupAssignment
 description: Обновление свойства объекта deviceManagementScriptGroupAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d6988bec87e9470e3c46a7c47c483529ca1e2c86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1509b232e77178f6b992772507712cb050a6c06
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869239"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990231"
 ---
 # <a name="update-devicemanagementscriptgroupassignment"></a>Обновление deviceManagementScriptGroupAssignment
 
@@ -49,12 +50,12 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/group
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта назначения группы, сценарий управления устройства.|
-|targetGroupId|Строка|Идентификатор группы Azure Active Directory мы ориентация сценария.|
+|id|String|Ключ объекта назначения группы, сценарий управления устройства.|
+|targetGroupId|String|Идентификатор группы Azure Active Directory мы ориентация сценария.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -70,7 +71,7 @@ Content-length: 48
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

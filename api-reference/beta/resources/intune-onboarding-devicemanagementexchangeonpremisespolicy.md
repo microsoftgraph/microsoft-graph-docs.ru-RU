@@ -3,12 +3,13 @@ title: Тип ресурса deviceManagementExchangeOnPremisesPolicy
 description: Одного сущности, который представляет Exchange OnPremises политики, настроенной для клиента.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da4e17bc6051b8b03158da19ddb876457c7853d7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1c4f513242694228b53268772d9b2910fa40bbd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855001"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990336"
 ---
 # <a name="devicemanagementexchangeonpremisespolicy-resource-type"></a>Тип ресурса deviceManagementExchangeOnPremisesPolicy
 
@@ -26,7 +27,7 @@ ms.locfileid: "27855001"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |notificationContent|Binary|Текст уведомления, которое будет отправляться пользователям в карантин для этой политики. Это массив байтов кодировке UTF8 HTML.|
 |defaultAccessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Состояние доступа по умолчанию в Exchange. Это правило применяется глобально во всей организации Exchange. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
 |accessRules|[deviceManagementExchangeAccessRule](../resources/intune-onboarding-devicemanagementexchangeaccessrule.md) коллекции|Список доступа устройств правила в Exchange. Правила доступа к применяются глобально во всей организации Exchange|

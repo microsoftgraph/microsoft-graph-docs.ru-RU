@@ -3,12 +3,13 @@ title: Действие logoutSharedAppleDeviceActiveUser
 description: Выход от имени активного пользователя общего устройства Apple
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 93d33d534701d5aa1801513ae393f2cabff76dfb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cd217b634c26a441d707040dbff77cf9d63478b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843934"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986455"
 ---
 # <a name="logoutsharedappledeviceactiveuser-action"></a>Действие logoutSharedAppleDeviceActiveUser
 
@@ -45,7 +46,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ POST /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevic
 POST https://graph.microsoft.com/v1.0/users/{usersId}/managedDevices/{managedDeviceId}/logoutSharedAppleDeviceActiveUser
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

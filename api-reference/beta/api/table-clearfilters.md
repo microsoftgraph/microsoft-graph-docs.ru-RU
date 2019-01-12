@@ -3,12 +3,13 @@ title: 'Table: clearFilters'
 description: Удаляет все фильтры, примененные к таблице.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 17a0eca1c10e8abb89f2764c44099536ea3df436
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 46b2dff63296f81c94e2113ea107d8fcae366bf9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855792"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983494"
 ---
 # <a name="table-clearfilters"></a>Table: clearFilters
 

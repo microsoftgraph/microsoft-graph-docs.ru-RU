@@ -2,12 +2,14 @@
 title: Тип ресурса educationAssignmentResource
 description: Объект оболочки, в которой хранятся ресурсы, связанные с назначением. Добавляет свойство **distributeForStudentWork** и указывает, что ресурс будет программы-оболочки
 localization_priority: Normal
-ms.openlocfilehash: 55d978ceb2a3df613ded09682bbdc42009f4e204
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dipakboyed
+ms.prod: education
+ms.openlocfilehash: eb0879737d0375bf2463268fe29f2c98f2b6ed51
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868840"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991351"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Тип ресурса educationAssignmentResource
 
@@ -21,14 +23,14 @@ ms.locfileid: "27868840"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойства и связи объекта **educationAssignmentResource** .|
-|[обновление](../api/educationassignmentresource-update.md). | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
+|[обновление](../api/educationassignmentresource-update.md); | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
 |[Delete](../api/educationassignmentresource-delete.md) | Нет |Удаление объекта **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Логический|Указывает, будет ли этот ресурс необходимо копировать в каждой учебы отправки для изменения и отправки.|
-|id|Строка| Идентификатор ресурса. Только для чтения.|
+|distributeForStudentWork|Boolean|Указывает, будет ли этот ресурс необходимо копировать в каждой учебы отправки для изменения и отправки.|
+|id|String| Идентификатор ресурса. Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект ресурса, связанный с этим назначением.|
 
 ## <a name="relationships"></a>Связи

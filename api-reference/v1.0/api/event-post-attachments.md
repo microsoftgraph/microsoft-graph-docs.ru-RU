@@ -3,12 +3,13 @@ title: Добавление вложения
 description: Используйте этот интерфейс API для добавления вложения в событии. Начиная с него
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 14ee980056c8a18183f81fad01cfc09e92ac35c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: cd295ba9b80bbbfcbdf4c6f7bebe95e8b0e4bfcb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886613"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990294"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -60,8 +61,8 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.

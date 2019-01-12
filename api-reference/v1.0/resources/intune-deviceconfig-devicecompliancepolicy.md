@@ -3,12 +3,13 @@ title: Тип ресурса deviceCompliancePolicy
 description: 'Это базовый класс для политик обеспечения соответствия требованиям. Такие политики предназначаются для определенной платформы. Отдельные политики обеспечения соответствия требованиям наследуются от этого класса. '
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2ab919a24c7c2819963ce047612f5a829913060
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85a82c981c16370603e3622f6536755bf9146343
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834414"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990399"
 ---
 # <a name="devicecompliancepolicy-resource-type"></a>Тип ресурса deviceCompliancePolicy
 
@@ -26,11 +27,11 @@ ms.locfileid: "27834414"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|Строка|Указанное администратором описание конфигурации устройства.|
+|описание|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|displayName|Строка|Указанное администратором имя конфигурации устройства.|
+|displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
 ## <a name="relationships"></a>Связи

@@ -3,12 +3,13 @@ title: Тип ресурса calendarGroup
 description: Группа пользователей календарей.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4d141b63b840daa7730d17f9dcfc2e527c1ed66b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 10a840fd9ae9835eb5ca6a96b88719605f89245b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810327"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985293"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
@@ -33,9 +34,9 @@ ms.locfileid: "27810327"
 | Свойство  | Тип   | Описание                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name      | String | Имя группы.                                                                                                                                                                                           |
-| changeKey | Строка | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
+| changeKey | String | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
-| id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
+| id        | String | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Связи
 

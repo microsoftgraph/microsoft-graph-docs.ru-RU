@@ -3,12 +3,13 @@ title: 'event: dismissReminder'
 description: Отключить напоминание, который будет активирована для события в календаре пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 1165dbf036848ee01ad80a1080a01e9b344fc399
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: cf2421db56babd394a3c011fb9bd4db9f83cb823
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811573"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990322"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
@@ -49,7 +50,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 <br/>
 
@@ -75,7 +76,7 @@ POST https://graph.microsoft.com/v1.0/me/events/{id}/dismissReminder
 
 <br/>
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {

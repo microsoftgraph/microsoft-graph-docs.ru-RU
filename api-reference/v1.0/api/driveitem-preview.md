@@ -2,12 +2,13 @@
 title: 'driveItem: предварительный просмотр'
 description: Это действие позволяет получать кратковременного встраиваемые URL-адреса для элемента для визуализации временные предварительного просмотра.
 localization_priority: Normal
-ms.openlocfilehash: c04a73d514dfb5a92030c4c2016579d469063f9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: ae5140bf6164aedd051f04c2c43c361f16517e7a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850773"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986077"
 ---
 # <a name="driveitem-preview"></a>driveItem: предварительный просмотр
 
@@ -66,13 +67,13 @@ POST /shares/{shareId}/driveItem/preview
 
 | Имя           | Тип   | Описание
 |:---------------|:-------|:---------------------------------------------------
-| getUrl         | string | URL-адрес для внедрения с помощью HTTP GET (Интернет-кадров, и т.д.)
-| postUrl        | string | URL-адрес для внедрения с помощью HTTP POST (отправки формы, JS, и т.д.)
-| postParameters | string | Параметры отправки для включения при использовании postUrl
+| getUrl         | строка | URL-адрес для внедрения с помощью HTTP GET (Интернет-кадров, и т.д.)
+| postUrl        | строка | URL-адрес для внедрения с помощью HTTP POST (отправки формы, JS, и т.д.)
+| postParameters | строка | Параметры отправки для включения при использовании postUrl
 
 В зависимости от текущего состояния внедрить поддержку указанные параметры могут возвращаться getUrl, postUrl или оба.
 
-postParameters — это строка в формате `application/x-www-form-urlencoded`, и, если для выполнения ОТПРАВКУ postUrl типа контента необходимо задать соответствующим образом. Пример:
+postParameters — это строка в формате `application/x-www-form-urlencoded`, и, если для выполнения ОТПРАВКУ postUrl типа контента необходимо задать соответствующим образом. Примеры:
 ```
 POST https://www.onedrive.com/embed_by_post
 Content-Type: application/x-www-form-urlencoded

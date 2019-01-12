@@ -2,12 +2,13 @@
 title: 'reportRoot: getOffice365GroupsActivityDetail'
 description: Получите сведения об активности в группах Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 02def0c4c2c54a6379ca5770f36d1f7fe5cfa925
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: c70f8ccdb2d27c96a652c0db4d16ee0ca70ec132
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871682"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983592"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
@@ -55,7 +56,7 @@ GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -121,7 +122,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -165,7 +166,7 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -3,12 +3,13 @@ title: Создание объекта userInstallStateSummary
 description: Создание объекта userInstallStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4630d8176c8ab1a2aa20f118d97304c213020a17
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 32f7b427143c8fa1d31302d51417c330cd3ca32d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847378"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985909"
 ---
 # <a name="create-userinstallstatesummary"></a>Создание объекта userInstallStateSummary
 
@@ -47,7 +48,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
@@ -75,7 +76,7 @@ Content-length: 189
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

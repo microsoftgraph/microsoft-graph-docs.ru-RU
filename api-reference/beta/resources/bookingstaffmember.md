@@ -2,12 +2,14 @@
 title: Тип ресурса bookingStaffMember
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 382da1b0710b691a6563a40c03ed62397262911d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: b7369ad3662bf86aaca14bc78ea52a1ebddcb4df
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884457"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985951"
 ---
 # <a name="bookingstaffmember-resource-type"></a>Тип ресурса bookingStaffMember
 
@@ -30,19 +32,19 @@ ms.locfileid: "27884457"
 |[Список сотрудников](../api/bookingbusiness-list-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) коллекции | Получите список объектов **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 |[Создание bookingStaff](../api/bookingbusiness-post-staffmembers.md) | [bookingStaffMember](bookingstaffmember.md) коллекции | Создание нового **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 |[Получение bookingStaffMember](../api/bookingstaffmember-get.md) | [bookingStaffMember](bookingstaffmember.md) |Получите свойства и связи **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
-|[обновление](../api/bookingstaffmember-update.md). | [bookingStaffMember](bookingstaffmember.md)    |Обновление свойств **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
+|[Обновление](../api/bookingstaffmember-update.md) | [bookingStaffMember](bookingstaffmember.md)    |Обновление свойств **bookingStaffMember** в указанном [bookingbusiness](../resources/bookingbusiness.md).|
 |[Delete](../api/bookingstaffmember-delete.md) | Нет |Удалите сотрудник в указанном [bookingbusiness](../resources/bookingbusiness.md). |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityIsAffectedByPersonalCalendar|Логический|Значение true означает, что если сотрудник является пользователь Office 365, API резервирования будет проверки доступности сотрудника на свой личный календарь в Office 365 перед внесением резервирования. |
+|availabilityIsAffectedByPersonalCalendar|Boolean|Значение true означает, что если сотрудник является пользователь Office 365, API резервирования будет проверки доступности сотрудника на свой личный календарь в Office 365 перед внесением резервирования. |
 |ColorIndex (en)|Int32|Определяет цвет сотрудника. Цвет соответствует цветовой палитры на странице **сведений о персонала** в приложении резервирования.|
-|displayName|Строка|Имя сотрудника, как оно отображается для клиентов. Обязательный.|
+|displayName|String|Имя сотрудника, как оно отображается для клиентов. Обязательный.|
 |emailAddress|String|Адрес электронной почты сотрудника. Это может быть в одном клиентов Office 365 как предприятию или в домене различных электронной почты. Можно использовать этот адрес электронной почты, если свойство **sendConfirmationsToOwner** имеет значение true в политике планирования бизнеса. Обязательный.|
-|id|Строка| Идентификатор сотрудника в формате GUID. Только для чтения.|
-|role|string| Роль сотрудника в организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`. Обязательный.|
-|useBusinessHours|Логический|Имеет значение true означает, что сотрудник доступность — как указанных в свойстве **businessHours** бизнеса. False означает, что доступность определяется значение свойства **workingHours** сотрудника.|
+|id|String| Идентификатор сотрудника в формате GUID. Только для чтения.|
+|role|строка| Роль сотрудника в организации. Возможные значения: `guest`, `administrator`, `viewer`, `externalGuest`. Обязательный.|
+|useBusinessHours|Boolean|Имеет значение true означает, что сотрудник доступность — как указанных в свойстве **businessHours** бизнеса. False означает, что доступность определяется значение свойства **workingHours** сотрудника.|
 |workingHours|[bookingWorkHours](bookingworkhours.md) коллекции|Диапазон часов каждый день недели, по которым сотрудник доступна для резервирования. По умолчанию они инициализируются совпадает со значением свойства **businessHours** бизнеса.|
 
 ## <a name="relationships"></a>Связи

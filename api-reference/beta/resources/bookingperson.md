@@ -2,12 +2,14 @@
 title: Тип ресурса bookingPerson
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 606e0e0d1d851fac16b25310b278ca524124eb00
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: e39fbbf12909e7a4d29c95e22896df081522a7d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990112"
 ---
 # <a name="bookingperson-resource-type"></a>Тип ресурса bookingPerson
 
@@ -18,9 +20,9 @@ ms.locfileid: "27845579"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Имя для производные сущности, который взаимодействует с клиентами.|
+|displayName|String|Имя для производные сущности, который взаимодействует с клиентами.|
 |emailAddress|String|Адрес электронной почты контакта.|
-|id|Строка| Идентификатор производные сущности. Только для чтения.|
+|id|String| Идентификатор производные сущности. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 Нет

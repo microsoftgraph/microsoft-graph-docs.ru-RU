@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerGroupsActivityCounts'
 description: Узнайте, сколько сообщений Yammer было опубликовано, прочитано и оценено в группах.
 localization_priority: Normal
-ms.openlocfilehash: 0cb4be3368db4b55d1bfa45c54f2a19d0363bd94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 9418009c0084bd0993af5fc8cf2f7cb1a278f071
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882301"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991176"
 ---
 # <a name="reportroot-getyammergroupsactivitycounts"></a>reportRoot: getYammerGroupsActivityCounts
 
@@ -51,7 +52,7 @@ GET /reports/getYammerGroupsActivityCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -91,7 +92,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -135,7 +136,7 @@ Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

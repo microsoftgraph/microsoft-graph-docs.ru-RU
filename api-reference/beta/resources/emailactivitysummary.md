@@ -2,12 +2,14 @@
 title: Тип ресурса emailActivitySummary
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 82fbdc2621b9c8746ed3028fe44414edeb7e56db
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 84958874af09b31aafed694c1a62d080a5c798ce
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871346"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990091"
 ---
 # <a name="emailactivitysummary-resource-type"></a>Тип ресурса emailActivitySummary
 

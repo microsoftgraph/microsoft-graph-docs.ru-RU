@@ -2,12 +2,14 @@
 title: Обновление mailSearchFolder
 description: Обновление для записи свойства объекта mailSearchFolder.
 localization_priority: Normal
-ms.openlocfilehash: 843dbe4d4312fdeb3485b0eb9e441a76b761dd46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: cf76198a42365f376421a95f795d19ac3bab4f0c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867231"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985419"
 ---
 # <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
 
@@ -42,10 +44,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| displayName | Строка | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Логический | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
+| displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
+| includeNestedFolders | Boolean | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
 | sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | Строка | Запросов OData для фильтрации сообщений. |
+| filterQuery | String | Запросов OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.

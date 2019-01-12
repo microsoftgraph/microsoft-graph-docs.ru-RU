@@ -3,12 +3,13 @@ title: Delete managedAndroidLobApp
 description: Удаляет объект managedAndroidLobApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1a995c5f006e7946f517f128f41feb9fab202c93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d810b95c86fd206467946af5a5af0d997c6da726
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808283"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990196"
 ---
 # <a name="delete-managedandroidlobapp"></a>Delete managedAndroidLobApp
 
@@ -43,7 +44,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}
 DELETE https://graph.microsoft.com/v1.0/deviceAppManagement/mobileApps/{mobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

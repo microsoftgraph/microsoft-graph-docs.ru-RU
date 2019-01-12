@@ -3,12 +3,13 @@ title: Удаление windowsInformationProtectionNetworkLearningSummary
 description: Удаление объекта windowsInformationProtectionNetworkLearningSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e63ef824a12db4a857030ee10d0970050216df07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bf7136179d864aee7216290862fb92307721c9ee
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856219"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983977"
 ---
 # <a name="delete-windowsinformationprotectionnetworklearningsummary"></a>Удаление windowsInformationProtectionNetworkLearningSummary
 
@@ -43,7 +44,7 @@ DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{w
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ DELETE /deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{w
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/windowsInformationProtectionNetworkLearningSummaries/{windowsInformationProtectionNetworkLearningSummaryId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

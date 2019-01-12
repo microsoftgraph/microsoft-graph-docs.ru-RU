@@ -1,14 +1,15 @@
 ---
 title: Тип ресурса alertTrigger
 description: Содержит сведения о свойствах, которые запускаются обнаружения (свойства существуют оповещения сущности).
-author: Preetikr
+author: preetikr
 localization_priority: Normal
-ms.openlocfilehash: 1dc8bb2b18380da50134aa67e742da89dea3c057
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 3a2f6818bad0c5600e4b2a2a2682707643d1900c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894343"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991260"
 ---
 # <a name="alerttrigger-resource-type"></a>Тип ресурса alertTrigger
 
@@ -18,9 +19,9 @@ ms.locfileid: "27894343"
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|name|Строка|Имя свойства, используемого в качестве триггера обнаружения.|
-|type|Строка|Тип свойства в пары "ключ: значение" для интерпретации. Например String, Boolean, и т.д.|
-|value|Строка|Значение свойства, используемого в качестве триггера обнаружения.|
+|name|String|Имя свойства, используемого в качестве триггера обнаружения.|
+|type|String|Тип свойства в пары "ключ: значение" для интерпретации. Например String, Boolean, и т.д.|
+|value|String|Значение свойства, используемого в качестве триггера обнаружения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

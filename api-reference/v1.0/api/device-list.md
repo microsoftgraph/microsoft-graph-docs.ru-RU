@@ -1,14 +1,15 @@
 ---
 title: Список устройств
 description: Получение списка объектов устройств, зарегистрированных в организации.
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 433938618d936ff48b83c74febe847ef6e7f7512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: d6b67d883a834c6e36c8fdde91844cea15f4ce04
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805098"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990469"
 ---
 # <a name="list-devices"></a>Список устройств
 
@@ -34,7 +35,7 @@ GET /devices
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

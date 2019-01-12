@@ -3,12 +3,13 @@ title: Delete mobileAppAssignment
 description: Удаляет объект mobileAppAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 65d511a390a75412d363d70059728f95d0e59064
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c13037573e7b4247a9cb796be37c36d49b595deb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983970"
 ---
 # <a name="delete-mobileappassignment"></a>Delete mobileAppAssignment
 
@@ -45,7 +46,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ DELETE /deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssig
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

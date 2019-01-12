@@ -2,12 +2,13 @@
 title: 'reportRoot: getMailboxUsageDetail'
 description: Получите сведения об использовании почтовых ящиков.
 localization_priority: Normal
-ms.openlocfilehash: 09fbb0ce1a4c652d4e24194b36edd790b1ec63f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: de0a401fdfb96bcaf216e987c3f498edf348097c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984887"
 ---
 # <a name="reportroot-getmailboxusagedetail"></a>reportRoot: getMailboxUsageDetail
 
@@ -51,7 +52,7 @@ GET /reports/getMailboxUsageDetail(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -100,7 +101,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -144,7 +145,7 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Cre
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

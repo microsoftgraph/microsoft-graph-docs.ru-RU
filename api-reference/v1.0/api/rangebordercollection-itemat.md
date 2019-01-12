@@ -3,12 +3,13 @@ title: 'RangeBorderCollection: ItemAt'
 description: Возвращает объект границы, указанный по индексу.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a67fbb3e66a5f29dbd146f72b3457fcd4c8f5a80
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 074314027e4c62c172245056be18a04078c6dfcb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990462"
 ---
 # <a name="rangebordercollection-itemat"></a>RangeBorderCollection: ItemAt
 

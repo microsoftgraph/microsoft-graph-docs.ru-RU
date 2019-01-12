@@ -3,12 +3,13 @@ title: Тип ресурса Chart
 description: Представляет объект диаграммы в книге.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 4f412894ffaef07908a41f8f7cc15ab3a52331af
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 831cea99e2eefaf87db814b149798506950bf407
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873404"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986595"
 ---
 # <a name="chart-resource-type"></a>Тип ресурса Chart
 
@@ -22,12 +23,12 @@ ms.locfileid: "27873404"
 |[Получение объекта Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Чтение свойств и связей объекта диаграммы.|
 |[Создание объекта ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Создание объекта ChartSeries путем добавления в коллекцию рядов.|
 |[Список рядов](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) коллекции| Получение коллекции объектов ChartSeries.|
-|[обновление](../api/chart-update.md). | [WorkbookChart](chart.md)   |Обновление объекта Chart. |
+|[Обновление](../api/chart-update.md) | [WorkbookChart](chart.md)   |Обновление объекта Chart. |
 |[Image](../api/chart-image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
 |[Delete](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
 |[Setdata](../api/chart-setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
 |[Setposition](../api/chart-setposition.md)|Нет|Располагает диаграмму относительно ячеек на листе.|
-|[List](../api/chart-list.md) | [WorkbookChart](chart.md) коллекции |Получение коллекции объектов диаграмм. |
+|[Список](../api/chart-list.md) | [WorkbookChart](chart.md) коллекции |Получение коллекции объектов диаграмм. |
 |[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Возвращает диаграмму на основании сведений о ее позиции в коллекции.|
 |[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Создает диаграмму.|
 

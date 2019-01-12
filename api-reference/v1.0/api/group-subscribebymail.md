@@ -2,12 +2,14 @@
 title: 'group: subscribeByMail'
 description: Вызов этого метода позволит текущему пользователю получать уведомления электронной почты о новых записях, событиях и файлах в этой группе. Поддерживается только для групп Office 365.
 localization_priority: Normal
-ms.openlocfilehash: 4127ae68caba0295426f81dc1c0c537ee2fb96b3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 20d34ba100ee795077e59c8a98d15d5e45b29dff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837984"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986469"
 ---
 # <a name="group-subscribebymail"></a>group: subscribeByMail
 Вызов этого метода позволит текущему пользователю получать уведомления электронной почты о новых записях, событиях и файлах в этой группе. Поддерживается только для групп Office 365.
@@ -49,7 +51,7 @@ POST /groups/{id}/subscribeByMail
 POST https://graph.microsoft.com/v1.0/groups/{id}/subscribeByMail
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

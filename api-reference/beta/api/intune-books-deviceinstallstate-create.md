@@ -3,12 +3,13 @@ title: Создание объекта deviceInstallState
 description: Создание объекта deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 244a03aa7c1f42c6e71591a3358ab7fca67a9b48
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfc1adae0175dcdf2c19d90d54bf597316919994
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853888"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990906"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
@@ -50,7 +51,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |deviceName|String|Имя устройства.|
 |deviceId|String|Идентификатор устройства.|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации.|
@@ -86,7 +87,7 @@ Content-length: 374
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

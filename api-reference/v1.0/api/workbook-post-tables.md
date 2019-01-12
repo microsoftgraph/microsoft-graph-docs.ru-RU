@@ -3,12 +3,13 @@ title: Создание таблицы
 description: С помощью этого API можно создать объект Table.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 48837631f496d6ab05aafde6b63da769fcaf9531
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 220c0b1e9b21c609009616d75567c0469b276cd4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836192"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986987"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -39,10 +40,10 @@ POST /workbook/tables/{table-id}/add
 
 | Параметр           | Тип      |Описание|
 |:---------------|:----------|:----------|
-| Адрес  | string| Адрес диапазона. При вызове этого API из пути `worksheets/{id or name}/tables/add` не нужно указывать префикс имя листа в адресе. Однако при вызове этого API из пути `workbook/tables/add` нужно указать имя листа, на котором требуется создать таблицу (например: `sheet1!A1:D4`)|
+| Адрес  | строка| Адрес диапазона. При вызове этого API из пути `worksheets/{id or name}/tables/add` не нужно указывать префикс имя листа в адресе. Однако при вызове этого API из пути `workbook/tables/add` нужно указать имя листа, на котором требуется создать таблицу (например: `sheet1!A1:D4`)|
 | hasHeaders  | boolean|Логическое значение, указывающее, имеет ли диапазон метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [WorkbookTable](../resources/table.md) в теле ответа.
 
@@ -63,7 +64,7 @@ Content-length: 109
   "hasHeaders": false
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

@@ -3,12 +3,13 @@ title: Список вложений
 description: Получение списка объектов attachment, вложенных в данные о событии.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: d05bb4194a60346b97e6be368d6790fdebf8e12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 9100788d30c4d9dcaacbb00e6fb72f8368bc0473
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990392"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -43,7 +44,7 @@ GET /groups/{id}/events/{id}/attachments
 
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-В частности, можно использовать `$expand` параметр для включения всех встроенных вложений событий с помощью rest свойства событий запроса. Пример:
+В частности, можно использовать `$expand` параметр для включения всех встроенных вложений событий с помощью rest свойства событий запроса. Примеры:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -53,7 +54,7 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

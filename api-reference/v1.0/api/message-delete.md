@@ -2,12 +2,14 @@
 title: Удаление сообщения
 description: Удалить сообщение в почтовый ящик указанного пользователя или отношения сообщения.
 localization_priority: Normal
-ms.openlocfilehash: a88a5699d7f5243f8a48d98f71a36aeaa316e388
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: cb9e6fd563688fc422bcaf748d931daf97c74985
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809354"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984929"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
@@ -35,7 +37,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

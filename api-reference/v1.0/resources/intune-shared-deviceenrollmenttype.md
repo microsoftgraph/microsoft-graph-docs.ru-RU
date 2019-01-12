@@ -3,12 +3,13 @@ title: Тип перечисления deviceEnrollmentType
 description: Возможные способы добавления мобильного устройства для управления.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d27e57538927966ea741ae1da57f0a02f9de862d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807203"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987757"
 ---
 # <a name="deviceenrollmenttype-enum-type"></a>Тип перечисления deviceEnrollmentType
 

@@ -2,12 +2,14 @@
 title: Тип ресурса Worksheet
 description: Лист Excel представляет собой сетку ячеек. Он может содержать данные, таблицы, диаграммы и т. д.
 localization_priority: Priority
-ms.openlocfilehash: 50d531aee3ed242f30be2c225ae9cd38bd6c6e89
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 60e31738329943d96e1a4f3ea8293851e759eaff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884814"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983872"
 ---
 # <a name="worksheet-resource-type"></a>Тип ресурса Worksheet
 
@@ -39,7 +41,7 @@ ms.locfileid: "27884814"
 |id|строка|Возвращает значение, однозначно идентифицирующее лист в данной книге. Значение идентификатора остается прежним, даже если переименовать или переместить лист. Только для чтения.|
 |name|строка|Отображаемое имя листа.|
 |position|int|Положение листа (начиная с нуля) в книге.|
-|visibility|string|Видимость рабочего листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|строка|Видимость рабочего листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|

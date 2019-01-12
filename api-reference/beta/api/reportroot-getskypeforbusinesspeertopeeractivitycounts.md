@@ -2,12 +2,13 @@
 title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityCounts'
 description: Отслеживайте динамику использования по количеству и типу проведенных в организации сеансов (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям и передача файлов).
 localization_priority: Normal
-ms.openlocfilehash: a962a80f2cf1aff70a267a5b52ac429e88286fe2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: d26b5a310a131b44814bcce3781953a29487fa85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871710"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990441"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 
@@ -51,7 +52,7 @@ GET /reports/getSkypeForBusinessPeerToPeerActivityCounts(period='{period_value}'
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -93,7 +94,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivityCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -137,7 +138,7 @@ Report Refresh Date,Report Date,Report Period,IM,Audio,Video,App Sharing,File Tr
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivityCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

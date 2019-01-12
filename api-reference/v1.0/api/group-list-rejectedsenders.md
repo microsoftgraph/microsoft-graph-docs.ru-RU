@@ -3,12 +3,13 @@ title: Список rejectedSenders
 description: 'Получение пользователей или групп из списка rejectedSenders для данной группы. '
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 58d8b15c6d20c3fbec895cc3a8050238bbe9507b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 14bf57133ad953d40c3cf39cca4cdf8c4f9f19f0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867664"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986343"
 ---
 # <a name="list-rejectedsenders"></a>Список rejectedSenders
 Получение пользователей или групп из списка rejectedSenders для данной группы. 
@@ -54,7 +55,7 @@ GET /groups/{id}/rejectedSenders
 GET https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа.
 >**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства.
 <!-- {

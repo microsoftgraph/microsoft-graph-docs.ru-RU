@@ -3,12 +3,13 @@ title: Обновление объекта deviceComplianceDeviceOverview
 description: Обновление свойств объекта deviceComplianceDeviceOverview.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1bcbcd81d70eb01613d33a9acf44737ae9519583
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e35e3769367d3fb0ac5215804487e10b3104603a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882105"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990434"
 ---
 # <a name="update-devicecompliancedeviceoverview"></a>Обновление объекта deviceComplianceDeviceOverview
 
@@ -49,7 +50,7 @@ PATCH /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/devi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
 |notApplicablePlatformCount|Int32|Число неприменимо устройств из-за несоответствие платформы и политики|
@@ -86,7 +87,7 @@ Content-length: 273
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -2,12 +2,14 @@
 title: Список объектов mailFolder
 description: Получите все почтовые папки в почтовом ящике пользователь выполнил вход.
 localization_priority: Normal
-ms.openlocfilehash: dca8b39b9685a0744a4b1ba0c1de148ed8987436
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: cb2d9e50776d88676cd6c2fdde39d9de89a635c0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866747"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990301"
 ---
 # <a name="list-mailfolders"></a>Список объектов mailFolder
 

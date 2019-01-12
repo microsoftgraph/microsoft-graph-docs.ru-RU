@@ -2,12 +2,14 @@
 title: Список пользователей устройств
 description: Ознакомьтесь со списком пользователей устройств, которые поддерживают возможности рим проекта. Этот компонент включает возможность запуска приложения, или сообщение или отправки данных в приложение. После того как вы выполнять на мне вызов GET- и устройств, передайте идентификатор устройства для отправки команды на устройство.
 localization_priority: Normal
-ms.openlocfilehash: 455a134b2edcf64255a2818887c6ff68959a1202
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 04b67b770eec38d9e70a2263cd54212077335c85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855925"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983543"
 ---
 # <a name="list-user-devices"></a>Список пользователей устройств
 
@@ -44,7 +46,7 @@ GET me/devices
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код ответа 200 и свойств пользователя устройства в теле ответа.
 
@@ -91,7 +93,7 @@ Authorization: Bearer Eaeou....
 Content-Type: application/json; charset=utf-8
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

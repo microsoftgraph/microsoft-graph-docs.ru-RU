@@ -3,12 +3,13 @@ title: Обновление объекта deviceManagement
 description: Обновление свойств объекта deviceManagement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e88b6379e340865adeb41bb0430fd8eecc8f0b69
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e7351eb15a194c68c4bd3b7abc59d866b5f4f237
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860685"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985972"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -106,7 +107,7 @@ Content-length: 751
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемых свойств различаться в зависимости от рабочего процесса и контекста.
 

@@ -3,12 +3,13 @@ title: Получение объекта mailFolder
 description: Получение свойств и связей объекта папки сообщений.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6e26486503391973a94dde382836701e3f888ef2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d2f61152b8edd98aa11fc7c6b34d2c2b04b72f55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845089"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990126"
 ---
 # <a name="get-mailfolder"></a>Получение объекта mailFolder
 
@@ -40,7 +41,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -58,7 +59,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

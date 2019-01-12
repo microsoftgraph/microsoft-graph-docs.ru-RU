@@ -3,12 +3,13 @@ title: Перечисление educationClasses
 description: Получение списка курсов учебного заведения.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 4d4dacca2530b183639222aba6d7d306b64b07dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 40b86e4f392179ffb0c98ec0284d4d7c017dd930
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883568"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990455"
 ---
 # <a name="list-educationclasses"></a>Перечисление educationClasses
 
@@ -52,7 +53,7 @@ GET /education/schools/{id}/classes
 ```http
 GET https://graph.microsoft.com/beta/education/schools/10002/classes
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

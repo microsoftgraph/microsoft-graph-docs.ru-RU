@@ -3,12 +3,13 @@ title: Добавление приложения в группу
 description: Пакет приложения для указанной группы.
 author: nkramer
 localization_priority: Normal
-ms.openlocfilehash: d3f67b8ea49f9940b60bcf0aec7eea15a59388b7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 3f52d54850d1046d837821de1501968965678e8b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855862"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27990273"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в группу
 
@@ -40,10 +41,10 @@ POST /teams/{id}/installedApps
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|teamsApp|Строка|Идентификатор приложения для добавления.|
+|teamsApp|String|Идентификатор приложения для добавления.|
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 ## <a name="example"></a>Пример
@@ -59,7 +60,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/installedApps
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",

@@ -2,12 +2,14 @@
 title: Перечисление groupLifecyclePolicies
 description: Получает список объектов groupLifecyclePolicy, к которым принадлежит группа.
 author: dkershaw10
-ms.openlocfilehash: 9433716e8c2a6f91a15ca23a7aa915974d757bd7
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: groups
+ms.openlocfilehash: 3a569c2c82205b59eda127f06a7cbef8fde17eed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27311048"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985321"
 ---
 # <a name="list-grouplifecyclepolicies"></a>Перечисление groupLifecyclePolicies
 
@@ -38,7 +40,7 @@ GET /groups/{id}/groupLifecyclePolicies
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) в теле отклика.

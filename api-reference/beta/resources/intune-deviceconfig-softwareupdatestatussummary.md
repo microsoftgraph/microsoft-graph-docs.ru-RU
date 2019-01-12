@@ -3,12 +3,13 @@ title: Тип ресурса softwareUpdateStatusSummary
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 79022d0f47f08d27a9b3d517267d0a32534916a8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6db3ea05c8cbb1179170b065f380d38fd811a35e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854588"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984334"
 ---
 # <a name="softwareupdatestatussummary-resource-type"></a>Тип ресурса softwareUpdateStatusSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "27854588"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |displayName|String|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|

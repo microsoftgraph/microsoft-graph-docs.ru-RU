@@ -3,12 +3,13 @@ title: Удаление объекта androidGeneralDeviceConfiguration
 description: Удаляет объект androidGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1ca8530e2ed3b803a3bf5e5f743ac8480ea115e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5ad9b4ad5f6d776605eb7fdef5f7330afc7f96c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856848"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986427"
 ---
 # <a name="delete-androidgeneraldeviceconfiguration"></a>Удаление объекта androidGeneralDeviceConfiguration
 
@@ -43,7 +44,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -53,7 +54,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

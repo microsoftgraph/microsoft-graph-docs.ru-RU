@@ -2,12 +2,14 @@
 title: Получение bookingCustomer
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
-ms.openlocfilehash: 4c17b1d80b6f105c35554012313736fee46b0b36
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 38a0fa87bc3b81c493914b14a8c35a01dad11689
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27989993"
 ---
 # <a name="get-bookingcustomer"></a>Получение bookingCustomer
 
@@ -38,7 +40,7 @@ GET /bookingBusinesses/{id}/customers/{id}
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [bookingCustomer](../resources/bookingcustomer.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -50,7 +52,7 @@ GET /bookingBusinesses/{id}/customers/{id}
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/8bb19078-0f45-4efb-b2c5-da78b860f73a
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

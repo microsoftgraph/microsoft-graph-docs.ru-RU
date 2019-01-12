@@ -3,12 +3,13 @@ title: Тип ресурса dailySchedule
 description: График ежедневного выполнения повторяющихся сценарий управления устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5321bce51f0f682591c6b27a0acec4ed95d0e2e8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d0f4f258afe1de65bd8fecf32d9df387716a2c6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840560"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987715"
 ---
 # <a name="dailyschedule-resource-type"></a>Тип ресурса dailySchedule
 

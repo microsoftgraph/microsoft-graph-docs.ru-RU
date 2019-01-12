@@ -3,12 +3,13 @@ title: Создание userPFXCertificate
 description: Создание нового объекта userPFXCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a20143e12098d246a65477400341409a79ad64ae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d98275975a0d9e46251521b76b55b0e8d67d226b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844571"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984488"
 ---
 # <a name="create-userpfxcertificate"></a>Создание userPFXCertificate
 
@@ -49,23 +50,23 @@ POST /deviceManagement/userPfxCertificates
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сертификата PFX.|
-|отпечаток|Строка|Отпечаток сертификата, PFX SHA-1.|
+|id|String|Уникальный идентификатор для сертификата PFX.|
+|отпечаток|String|Отпечаток сертификата, PFX SHA-1.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификата своей целью с точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
-|userPrincipalName|Строка|Имя участника-пользователя сертификата PFX.|
+|userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
 |startDateTime|DateTimeOffset|Дата и время начала действия сертификата.|
 |expirationDateTime|DateTimeOffset|Его допустимость Дата и время окончания.|
-|providerName|Строка|Поставщик криптографии для шифрования в этом больших двоичных объектов.|
-|keyName|Строка|Имя ключа (в рамках поставщика) используется для шифрования больших двоичных объектов.|
+|providerName|String|Поставщик криптографии для шифрования в этом больших двоичных объектов.|
+|keyName|String|Имя ключа (в рамках поставщика) используется для шифрования больших двоичных объектов.|
 |paddingScheme|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Заполнение схемы, используемый поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
 |encryptedPfxBlob|Binary|Зашифрованные больших двоичных объектов PFX.|
-|encryptedPfxPassword|Строка|Зашифрованный пароль PFX.|
+|encryptedPfxPassword|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время при импорте сертификата PFX.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения этого сертификата PFX.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [userPFXCertificate](../resources/intune-raimportcerts-userpfxcertificate.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -92,7 +93,7 @@ Content-length: 587
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

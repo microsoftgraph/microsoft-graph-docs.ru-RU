@@ -2,12 +2,13 @@
 title: 'reportRoot: getYammerActivityUserCounts'
 description: Отслеживайте динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer.
 localization_priority: Normal
-ms.openlocfilehash: 04a874a74740eadad72098c68eba5723e6d6368b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 1da8bdb8f12d66bd5e14176bd99cce4e1066a63b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887250"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984516"
 ---
 # <a name="reportroot-getyammeractivityusercounts"></a>reportRoot: getYammerActivityUserCounts
 
@@ -51,7 +52,7 @@ GET /reports/getYammerActivityUserCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -91,7 +92,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getYammerActivityUserCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -135,7 +136,7 @@ Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getYammerActivityUserCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -3,12 +3,13 @@ title: Update softwareUpdateStatusSummary
 description: Обновление свойств объекта softwareUpdateStatusSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c1437e55807e2fba92efb7dab3b908f8bae88487
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9696daa56c723a8bc6d5ef9d3d674ce16c6e2667
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837298"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984817"
 ---
 # <a name="update-softwareupdatestatussummary"></a>Update softwareUpdateStatusSummary
 
@@ -49,7 +50,7 @@ PATCH /deviceManagement/softwareUpdateStatusSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |displayName|String|Имя политики.|
 |compliantDeviceCount|Int32|Количество устройств, соответствующих требованиям.|
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
@@ -98,7 +99,7 @@ Content-length: 452
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
