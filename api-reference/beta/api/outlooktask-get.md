@@ -2,12 +2,14 @@
 title: Получение outlookTask
 description: Получите свойства и связи задачи Outlook в почтовом ящике пользователя.
 localization_priority: Normal
-ms.openlocfilehash: f93bc46a1bbe3f7a6c145458606174b6e3a13f1c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 680d27e647fdc5dd8162133c21c54276c532e939
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822227"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969137"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 

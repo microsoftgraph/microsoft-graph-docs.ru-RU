@@ -3,12 +3,13 @@ title: Создание depIOSEnrollmentProfile
 description: Создание нового объекта depIOSEnrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 164cfeef009f63e3318c59f2428483c60673bd10
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 70d992cc70904f350bc43826febf127e28719cd7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858032"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973589"
 ---
 # <a name="create-depiosenrollmentprofile"></a>Создание depIOSEnrollmentProfile
 

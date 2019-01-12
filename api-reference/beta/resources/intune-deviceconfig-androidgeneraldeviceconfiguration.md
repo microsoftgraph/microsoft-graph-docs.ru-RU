@@ -2,12 +2,14 @@
 title: Тип ресурса androidGeneralDeviceConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом androidGeneralDeviceConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 068a081ff6a52735bc2366a1b6a8af55801eed65
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 034c5d2f9e7452e1f1877fb7ca933f27d7df35ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882329"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976606"
 ---
 # <a name="androidgeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidGeneralDeviceConfiguration
 

@@ -3,12 +3,13 @@ title: Тип ресурса windowsPhone81ImportedPFXCertificateProfile
 description: Windows 8.1 телефон и Mobile PFX импорта профилей сертификата
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 8b66bb8e32c05546349a69da80120005cdfe351a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 35b7f4e799d6235c3fd874735a34257c4affcc10
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867314"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955396"
 ---
 # <a name="windowsphone81importedpfxcertificateprofile-resource-type"></a>Тип ресурса windowsPhone81ImportedPFXCertificateProfile
 

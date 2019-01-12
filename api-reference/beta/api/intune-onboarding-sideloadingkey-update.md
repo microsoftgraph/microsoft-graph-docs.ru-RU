@@ -3,12 +3,13 @@ title: Обновление sideLoadingKey
 description: Обновление свойства объекта sideLoadingKey.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6f4a6348df539924bdccbf3cacf8411442f877eb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 116034afff02ac41647d781bbd85ec6f8dcaeec4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885633"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969935"
 ---
 # <a name="update-sideloadingkey"></a>Обновление sideLoadingKey
 

@@ -3,12 +3,13 @@ title: Тип ресурса windowsPhoneXAP
 description: Содержит свойства и наследуемые свойства для Windows Phone XAP бизнес-приложений.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 29d728198a7da0cba0733eb2ad48a6951ddf4ae6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8940b84dd5b82529aa86c870f3d5638d046a9939
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890281"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975409"
 ---
 # <a name="windowsphonexap-resource-type"></a>Тип ресурса windowsPhoneXAP
 

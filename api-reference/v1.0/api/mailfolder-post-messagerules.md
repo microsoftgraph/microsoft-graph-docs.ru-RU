@@ -3,12 +3,13 @@ title: Создание правила
 description: 'Создает объект messageRule, определяя набор условий и действий. '
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 4adea9e35a3dcd5278c96f5689167554b1700d94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: a1ed88c0beec0b9b8767e8b49111aa65f3a5b6f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880152"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916147"
 ---
 # <a name="create-rule"></a>Создание правила
 
@@ -46,9 +47,9 @@ POST /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 |:--------|:-------|:----------|
 |actions|[messageRuleActions](../resources/messageruleactions.md)|Действия, применимые к сообщению при выполнении соответствующих условий (если таковые имеются). Обязательный.|
 |conditions|[messageRulePredicates](../resources/messagerulepredicates.md)|Условия, выполнение которых активирует соответствующие действия для указанного правила. Необязательное свойство.|
-|displayName| Строка  | Отображаемое имя правила. Обязательный.|
+|displayName| String  | Отображаемое имя правила. Обязательный.|
 |exceptions| [messageRulePredicates](../resources/messagerulepredicates.md)| Представляет условия исключения для правила. Необязательное свойство. |
-|isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
+|isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. Необязательное свойство. |
 |sequence| Int32 | Определяет последовательность выполнения правила среди прочих правил. Обязательный.|
 
 ## <a name="response"></a>Отклик

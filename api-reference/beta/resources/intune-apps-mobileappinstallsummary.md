@@ -3,12 +3,13 @@ title: Тип ресурса mobileAppInstallSummary
 description: Содержит свойства для установки сведениям о мобильных приложений.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3b730f73b8a86c8acba531ab0d30a67b2f8e7a7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a75dba8303d254aff911cc66931d52abb8b76c07
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820358"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916028"
 ---
 # <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса mobileAppInstallSummary
 
@@ -26,7 +27,7 @@ ms.locfileid: "27820358"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |installedDeviceCount|Int32|Количество устройств, которые были успешно установлены этого приложения.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
 |notApplicableDeviceCount|Int32|Количество устройств, которые не применимы для этого приложения.|

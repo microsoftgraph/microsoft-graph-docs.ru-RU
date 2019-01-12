@@ -2,12 +2,14 @@
 title: Получение организации
 description: Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
 localization_priority: Normal
-ms.openlocfilehash: f8076d36c47ea9d517b43eb827d702350c364132
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c4f0b325100ac8543e51320609e8c4e39ce130fc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826753"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915454"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -45,7 +47,7 @@ GET /organization
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

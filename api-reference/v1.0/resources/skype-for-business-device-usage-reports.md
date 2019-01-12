@@ -2,12 +2,13 @@
 title: Отчеты об использовании устройств со Skype для бизнеса
 description: Отчеты об использовании устройств со Skype для бизнеса содержат сведения о типах клиентов и устройств, используемых в организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 localization_priority: Normal
-ms.openlocfilehash: d9289b6e659f14a22553520a045eb3a2af00725a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 7551edd6b967e1f6fcfcabd2c0c59dd315bf8bc8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834106"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981075"
 ---
 # <a name="skype-for-business-device-usage-reports"></a>Отчеты об использовании устройств со Skype для бизнеса
 

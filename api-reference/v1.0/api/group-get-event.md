@@ -3,12 +3,13 @@ title: Получение события
 description: Получение объекта event.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 1ac0dd97253085bf42c5123ac6fca08baea00fbf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 6ab5248fb7747238157f24845a244d9f4a6c2e73
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886816"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27986728"
 ---
 # <a name="get-event"></a>Получение события
 Получение объекта [event](../resources/event.md).

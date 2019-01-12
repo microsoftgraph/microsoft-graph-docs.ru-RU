@@ -2,12 +2,14 @@
 title: Тип ресурса iosManagedAppRegistration
 description: Представляет собой сведения о синхронизации управляемого приложения iOS для определенного пользователя.
 localization_priority: Normal
-ms.openlocfilehash: eb36bf1e96a8b7a54daf9d02b4cc2765a1844d4c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 224c86f2671902fc84e4346f42b5af56d14419ac
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868070"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971741"
 ---
 # <a name="iosmanagedappregistration-resource-type"></a>Тип ресурса iosManagedAppRegistration
 

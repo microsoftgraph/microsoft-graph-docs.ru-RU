@@ -3,12 +3,13 @@ title: Delete managedIOSStoreApp
 description: Удаляет объект managedIOSStoreApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7c39ca3ce13f4d631d204f391456d72701bce14c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c876e5de77d250d3bd676c033165c70e87ccc5c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830725"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957202"
 ---
 # <a name="delete-managediosstoreapp"></a>Delete managedIOSStoreApp
 

@@ -3,12 +3,13 @@ title: Список вложений
 description: Получите список объектов вложения, подключенного к задачи Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: c76a11b960b8c1bb30e943cdc59205d2e0c3d4d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 6b65a6eabb0e002930253886b6799df54ab43f02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818909"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924449"
 ---
 # <a name="list-attachments"></a>Список вложений
 

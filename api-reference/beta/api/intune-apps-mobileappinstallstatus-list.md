@@ -3,12 +3,13 @@ title: Список mobileAppInstallStatuses
 description: Свойства списка и связей объектов mobileAppInstallStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c45ab74b2d204cb2d4f99da9220ae731460764a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 36513d31929319cdf4c34275e15f934d0615ee64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960947"
 ---
 # <a name="list-mobileappinstallstatuses"></a>Список mobileAppInstallStatuses
 

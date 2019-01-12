@@ -3,12 +3,13 @@ title: Обновление windowsManagementAppHealthState
 description: Обновление свойства объекта windowsManagementAppHealthState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4af20e28e47fa65c0e57ae5030c84bd23e74e3e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b52762bf13a7ff534c3c76b8b0c94561744b15fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838635"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924232"
 ---
 # <a name="update-windowsmanagementapphealthstate"></a>Обновление windowsManagementAppHealthState
 
@@ -49,12 +50,12 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
 |healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|Строка|Управление приложения установленной версии Windows.|
+|installedVersion|String|Управление приложения установленной версии Windows.|
 |lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
 |deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|Строка|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|deviceOSVersion|String|10 версии Windows устройства, на какие Windows установлено приложение управления.|
 
 
 

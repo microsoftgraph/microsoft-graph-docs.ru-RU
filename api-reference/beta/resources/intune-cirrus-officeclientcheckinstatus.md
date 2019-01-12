@@ -3,12 +3,13 @@ title: Тип ресурса officeClientCheckinStatus
 description: Сущности, которая описывает клиента возврат stats.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ff75c5d73db35c5c2ff70ad3a3dc3e4509745188
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a387e04b9ebc15d65eb8dd883ecd4a9bae78ad6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825235"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969291"
 ---
 # <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса officeClientCheckinStatus
 

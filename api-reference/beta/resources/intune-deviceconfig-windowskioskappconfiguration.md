@@ -3,12 +3,13 @@ title: Тип ресурса windowsKioskAppConfiguration
 description: Базовый класс приложение, используемое для идентификации сведения о приложении для базовой конфигурации
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5a686d94b25cc9352c9a129e883b3eae8e2d68b1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b2ac7de8bc2accd08b2508f4930a8ae6b7aa0909
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812826"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919892"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>Тип ресурса windowsKioskAppConfiguration
 

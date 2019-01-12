@@ -3,12 +3,13 @@ title: 'сообщение: отписаться'
 description: Отправляет запрос электронной почты от имени пользователя, выполнившего вход Чтобы отписаться от список рассылки по электронной почте. Использует сведения, приведенные в `List-Unsubscribe` заголовка.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: f66c24e2900ca4c881d08a402698dacbaf5af5f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 772c01c0522becc737d07d6e842c610a5abecc0d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877688"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968164"
 ---
 # <a name="message-unsubscribe"></a>сообщение: отписаться
 

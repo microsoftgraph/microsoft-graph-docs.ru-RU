@@ -3,12 +3,13 @@ title: Тип перечисления windows10AppType
 description: Тип приложения 10 Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2f971d88b1ebcec7a40c0f44b203c683bfee27f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 738ffae6b3750619c5c66ca69420de1ced0eaa9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856548"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975493"
 ---
 # <a name="windows10apptype-enum-type"></a>Тип перечисления windows10AppType
 

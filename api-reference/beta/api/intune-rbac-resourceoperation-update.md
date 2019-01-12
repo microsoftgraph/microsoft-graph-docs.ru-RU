@@ -3,12 +3,13 @@ title: Обновление объекта resourceOperation
 description: Обновляет свойства объекта resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 41702941a5de5869b13e4b1616448f34fcc6daf1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d65fb9394ba1bf33ce657941f2807d3dda44a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851795"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919066"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -50,11 +51,11 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
-|resource|Строка|Категория ресурсов, к которому относится данная операция.|
+|resource|String|Категория ресурсов, к которому относится данная операция.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
 |описание|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
-|enabledForScopeValidation|Логический|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
+|enabledForScopeValidation|Boolean|Определяет проверить разрешения для областей, определенных для каждого назначения роли.|
 
 
 

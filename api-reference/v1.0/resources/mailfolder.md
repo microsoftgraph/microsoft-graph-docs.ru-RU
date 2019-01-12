@@ -2,12 +2,14 @@
 title: Тип ресурса mailFolder
 description: Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 localization_priority: Priority
-ms.openlocfilehash: 32af125f57e02394c4d01913aaf783df11809242
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dbcb35ad0b131f4e714acd7f178fbbb1109b913c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888160"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920116"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
@@ -71,8 +73,8 @@ GET /me/mailFolders/drafts
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
-|displayName|Строка|Отображаемое имя элемента mailFolder.|
-|id|Строка|Уникальный идентификатор mailFolder.|
+|displayName|String|Отображаемое имя элемента mailFolder.|
+|id|String|Уникальный идентификатор mailFolder.|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|

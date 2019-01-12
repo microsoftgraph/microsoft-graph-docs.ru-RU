@@ -2,12 +2,14 @@
 title: Получение объекта eventMessage
 description: Разверните узел "параметр на **события**
 localization_priority: Normal
-ms.openlocfilehash: 7b5caffedf798d9934403eead13147116f578d77
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 96df7d14adf4b5d2d46c559d31dcd935db29a070
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814309"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922311"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -52,7 +54,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

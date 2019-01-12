@@ -2,12 +2,14 @@
 title: Список владельцев
 description: Получение списка владельцев группы. Владельцы — это пользователи, которые не являются администраторами и которым разрешено изменять объект группы.
 localization_priority: Normal
-ms.openlocfilehash: d173b7a350d4aedbf1ec96b0b5e37da70e87d078
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: f9b1f56dbd8499f7e7635a00144a9d14faf8b806
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878976"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916490"
 ---
 # <a name="list-owners"></a>Список владельцев
 
@@ -36,7 +38,7 @@ GET /groups/{id}/owners
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

@@ -3,12 +3,13 @@ title: Список объектов deviceManagementExchangeConnector
 description: Список свойств и связей объектов deviceManagementExchangeConnector.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3814e5d971cd0a1c04a654cb135edc6b15c22603
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 554115ef2cc26809f34dd717a281646f9dcc98e8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884206"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920277"
 ---
 # <a name="list-devicemanagementexchangeconnectors"></a>Список объектов deviceManagementExchangeConnector
 

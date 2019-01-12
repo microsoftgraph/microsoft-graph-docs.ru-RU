@@ -3,12 +3,13 @@ title: Список defaultDeviceCompliancePolicies
 description: Свойства списка и связей объектов defaultDeviceCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 00dd404b9f768efda9b7a153bb11f39057571493
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4aed80cacffd393b7d35ac540d7666113349f1ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813792"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967758"
 ---
 # <a name="list-defaultdevicecompliancepolicies"></a>Список defaultDeviceCompliancePolicies
 

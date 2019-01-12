@@ -2,12 +2,14 @@
 title: 'TableCollection: add'
 description: Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.
 localization_priority: Normal
-ms.openlocfilehash: 15071ab040fd19e6b3af3ac147395737389aaa9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 4b2523725c65f0b09e6f91296eacfcb9c75e2927
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844802"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919731"
 ---
 # <a name="tablecollection-add"></a>TableCollection: add
 
@@ -44,7 +46,7 @@ POST /workbook/worksheets/{id|name}/tables/add
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|string|Адрес или имя объекта range, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.|
+|address|строка|Адрес или имя объекта range, представляющего источник данных. Если адрес не содержит имя листа, используется текущий активный лист.|
 |hasHeaders|boolean|Логическое значение, указывающее, имеют ли импортируемые данные метки столбцов. Если источник не содержит заголовков (например, если этому свойству присвоено значение false), Excel автоматически создаст заголовок и сдвинет данные на одну строку вниз.|
 
 ## <a name="response"></a>Отклик

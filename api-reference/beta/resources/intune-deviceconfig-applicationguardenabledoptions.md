@@ -3,12 +3,13 @@ title: Тип перечисления applicationGuardEnabledOptions
 description: Возможные значения для ApplicationGuardEnabledOptions
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 599bae33fb5d76305256aeab2c3b339494f1143f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f917851bceba4624229a9ea99d6b39cea727c271
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852523"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991200"
 ---
 # <a name="applicationguardenabledoptions-enum-type"></a>Тип перечисления applicationGuardEnabledOptions
 

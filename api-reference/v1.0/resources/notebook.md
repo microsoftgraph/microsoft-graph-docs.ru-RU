@@ -1,14 +1,15 @@
 ---
 title: Тип ресурса notebook
 description: Записная книжка OneNote.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 0a657ea6d5837674a7881bc9ef6095af5529355a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: ed2d37de2dded71053f44bbcdd9de2b82505efc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894448"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978804"
 ---
 # <a name="notebook-resource-type"></a>Тип ресурса notebook
 

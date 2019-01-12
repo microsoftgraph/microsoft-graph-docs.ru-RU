@@ -3,12 +3,13 @@ title: Тип перечисления deviceGuardLocalSystemAuthorityCredential
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 42a39d982ddaff1283ba4e2126e1c4d25dab2813
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 960dea110e51e28294c6e374923cfc2a275786d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891555"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967688"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardstate-enum-type"></a>Тип перечисления deviceGuardLocalSystemAuthorityCredentialGuardState
 

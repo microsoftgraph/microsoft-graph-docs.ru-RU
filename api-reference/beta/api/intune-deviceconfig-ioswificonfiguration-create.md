@@ -3,12 +3,13 @@ title: Создание iosWiFiConfiguration
 description: Создание нового объекта iosWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f93477c0ee570fec3005fb6290d1fbe9f637dbdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d4a408aa2719c9765961c239b4ce9fe90da8989f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853663"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925037"
 ---
 # <a name="create-ioswificonfiguration"></a>Создание iosWiFiConfiguration
 
@@ -50,24 +51,24 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Boolean|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|networkName|Строка|Сетевое имя|
-|SSID|Строка|Это имя в сети Wi-Fi, который передается на все устройства.|
-|connectAutomatically|Логический|Автоматическое подключение, сети, если она в диапазоне. Установка значения true пропустите строке пользователя и автоматически подключаться к сети Wi-Fi устройства.|
-|connectWhenNetworkNameIsHidden|Логический|Если для сети не передают свое имя (SSID) подключиться. Когда установлено значение true, этот профиль принудительно устройства для подключения к сети, в которой не передает свое имя SSID для всех устройств.|
+|networkName|String|Сетевое имя|
+|SSID|String|Это имя в сети Wi-Fi, который передается на все устройства.|
+|connectAutomatically|Boolean|Автоматическое подключение, сети, если она в диапазоне. Установка значения true пропустите строке пользователя и автоматически подключаться к сети Wi-Fi устройства.|
+|connectWhenNetworkNameIsHidden|Boolean|Если для сети не передают свое имя (SSID) подключиться. Когда установлено значение true, этот профиль принудительно устройства для подключения к сети, в которой не передает свое имя SSID для всех устройств.|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, используется ли конечная точка Wi-Fi тип безопасности на основе внешних Приложений. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси-сервера для этого подключения Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
-|proxyManualAddress|Строка|IP-адрес или DNS-имя узла прокси-сервера при выборе ручной настройки.|
+|proxyManualAddress|String|IP-адрес или DNS-имя узла прокси-сервера при выборе ручной настройки.|
 |proxyManualPort|Int32|Порт прокси-сервера при выборе ручной настройки.|
-|proxyAutomaticConfigurationUrl|Строка|URL-адрес прокси-сервера сценарий автоматической настройки сервера при выборе автоматической настройки. Этот URL-адрес обычно имеет расположение файла PAC (автоматической конфигурации прокси-сервера).|
-|preSharedKey|Строка|Это предварительный ключ для WPA личных Сеть Wi-Fi.|
+|proxyAutomaticConfigurationUrl|String|URL-адрес прокси-сервера сценарий автоматической настройки сервера при выборе автоматической настройки. Этот URL-адрес обычно имеет расположение файла PAC (автоматической конфигурации прокси-сервера).|
+|preSharedKey|String|Это предварительный ключ для WPA личных Сеть Wi-Fi.|
 
 
 

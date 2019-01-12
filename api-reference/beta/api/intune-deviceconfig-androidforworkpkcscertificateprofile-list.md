@@ -3,12 +3,13 @@ title: Список androidForWorkPkcsCertificateProfiles
 description: Свойства списка и связей объектов androidForWorkPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 49421bf0edc4acc2f25c35f97a50c3c358f3f4e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 292c50caa24b04812347a12065b701a92cc37892
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847707"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971503"
 ---
 # <a name="list-androidforworkpkcscertificateprofiles"></a>Список androidForWorkPkcsCertificateProfiles
 

@@ -3,12 +3,13 @@ title: Получение объекта Chart
 description: Получение свойств и связей объекта диаграммы.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 84517a9bf31a3e8f9bdbb41df0d309eff1750dd8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: c730d24f1c249b9aec11d05e8ff1f0e220b84446
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838509"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961332"
 ---
 # <a name="get-chart"></a>Получение объекта Chart
 

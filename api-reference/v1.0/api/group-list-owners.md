@@ -2,12 +2,14 @@
 title: Список владельцев
 description: 'Получение списка владельцев группы. Владельцы — это пользователи, которые не являются администраторами и которым разрешено изменять объект группы. '
 localization_priority: Priority
-ms.openlocfilehash: a22e751d59d73b7bc3d3c00edafbce6c97f034f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 5c8cf1c82ceab0a7fa2a7f78b6c229165448d46e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814737"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972210"
 ---
 # <a name="list-owners"></a>Список владельцев
 Получение списка владельцев группы. Владельцы — это пользователи, которые не являются администраторами и которым разрешено изменять объект группы. 

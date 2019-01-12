@@ -2,12 +2,14 @@
 title: Список calendarView
 description: Получите вхождения, исключений и отдельные экземпляры событий в календарном представлении определенный временной интервал,
 localization_priority: Normal
-ms.openlocfilehash: 38240df7348d2d1de3576d9b2bb850c5128d8a0c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: db4c448176f21fc2a2d691e9155f9b7bba45d873
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817082"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956467"
 ---
 # <a name="list-calendarview"></a>Список calendarView
 Получение исключений, повторяемых или единичных экземпляров событий в таком представлении стандартного календаря группы, которое определяется заданным диапазоном времени.

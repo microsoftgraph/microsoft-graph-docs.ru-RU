@@ -2,12 +2,14 @@
 title: 'directoryRole: дельты'
 description: Get вновь созданные, обновлении или удалении роли каталога без выполнения полного чтения коллекции всей ресурсов. Для получения дополнительных сведений в разделе с помощью запроса дельты.
 localization_priority: Normal
-ms.openlocfilehash: 9eb847f390b4f05f56945a6496325bbeaccdf410
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: c5f17ed70426d8102870537354edf3cea9a723b0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809123"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916749"
 ---
 # <a name="directoryrole-delta"></a>directoryRole: дельты
 

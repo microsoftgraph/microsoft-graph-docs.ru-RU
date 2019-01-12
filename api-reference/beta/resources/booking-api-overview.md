@@ -2,12 +2,14 @@
 title: Использование Microsoft резервирования API в Microsoft Graph
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Priority
-ms.openlocfilehash: def9260654baafe1953d629265c4b76a2afd2748
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: bookings
+ms.openlocfilehash: 494b13016c20124e1a81f996d332c97c15e46852
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845537"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915734"
 ---
 # <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование Microsoft резервирования API в Microsoft Graph
 

@@ -1,12 +1,15 @@
 ---
 title: 'message: forward'
 description: 'Переслать сообщение, добавить комментарий или изменить любые обновляемые свойства  '
-ms.openlocfilehash: 3edb96a90c99f1bc9eb2d8499e9cda83774a7ab3
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 18394c29d57c090811bca9a70371c451b090fb26
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27082418"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971489"
 ---
 # <a name="message-forward"></a>message: forward
 
@@ -45,7 +48,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/forward
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

@@ -3,12 +3,13 @@ title: Обновление officeSuiteApp
 description: Обновление свойства объекта officeSuiteApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0fddae997d026702c450a5fea15d38aedbf589ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 24d5a8031580fa1d7cfe74415d84de32f49fa398
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859761"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979329"
 ---
 # <a name="update-officesuiteapp"></a>Обновление officeSuiteApp
 

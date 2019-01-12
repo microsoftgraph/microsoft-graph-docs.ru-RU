@@ -3,12 +3,13 @@ title: Создание windowsUniversalAppXContainedApp
 description: Создание нового объекта windowsUniversalAppXContainedApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 283852a1539fd16bb6c19f9db0d1770d9eb7e466
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f0466628ed1b2e6f3e0e196498b7cef3bb9daf24
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863828"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920984"
 ---
 # <a name="create-windowsuniversalappxcontainedapp"></a>Создание windowsUniversalAppXContainedApp
 
@@ -51,8 +52,8 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.windowsUniver
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Строка|Идентификатор модели пользователя приложения автономные приложения WindowsUniversalAppX приложения.|
+|id|String|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String|Идентификатор модели пользователя приложения автономные приложения WindowsUniversalAppX приложения.|
 
 
 

@@ -2,12 +2,14 @@
 title: Тип ресурса orgContact
 description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: bdf63762a4bb632dccc3578963f42b91d7127fe1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 34f929e1b49c60269845d27bf0d8781a6d17b32c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832972"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918576"
 ---
 # <a name="orgcontact-resource-type"></a>Тип ресурса orgContact
 
@@ -33,9 +35,9 @@ ms.locfileid: "27832972"
 | addresses                    | [physicalOfficeAddress](physicalofficeaddress.md)            | Почтовые адреса для этого контакта организации. В данный момент контакт может иметь только один физический адрес. |
 | companyName                  | String                                                    | Имя компании, принадлежащих организации контакта.                                                                                                                                                                                                                                                                                                                 |
 | department                   | String                                                     | Имя для отдела, в котором работает.                                                                                                                                                                                                                                                                                                                                |
-| displayName                  | Строка                                                     | Отображаемое имя для этого контакта организации.                                                                                                                                                                                                                                                                                                                                   |
+| displayName                  | String                                                     | Отображаемое имя для этого контакта организации.                                                                                                                                                                                                                                                                                                                                   |
 | givenName                    | String                                                     | Имя для этого контакта организации.                                                                                                                                                                                                                                                                                                                                     |
-| id                           | Строка                                                     | Уникальный идентификатор для этого контакта организации.                                                                                                                                                                                                                                                                                                                             |
+| id                           | String                                                     | Уникальный идентификатор для этого контакта организации.                                                                                                                                                                                                                                                                                                                             |
 | imAddresses                  | Коллекция String                          | Список адресов обмена мгновенными Сообщениями для этого контакта организации. В данный момент контакт может иметь только один адрес SIP.                                                                                                                                                                                                                        |
 | jobTitle                     | String                                                     | Должность для этого контакта организации.                                                                                                                                                                                                                                                                                                                                      |
 |mail|String| SMTP-адрес контакта, например, «jeff@contoso.onmicrosoft.com». |

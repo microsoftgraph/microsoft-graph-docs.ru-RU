@@ -3,12 +3,13 @@ title: Тип ресурса deviceConfigurationSettingState
 description: Состояние параметра конфигурации определенного устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: beed55d68c3ef7005a307d75fc1ee58ea78ed8d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 68c57b8842136494bf0604a31f62992f7a1c2501
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845845"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928012"
 ---
 # <a name="deviceconfigurationsettingstate-resource-type"></a>Тип ресурса deviceConfigurationSettingState
 

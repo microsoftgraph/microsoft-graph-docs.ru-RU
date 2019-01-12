@@ -3,12 +3,13 @@ title: Обновление объекта managedDeviceMobileAppConfigurationAs
 description: Обновление свойств объекта managedDeviceMobileAppConfigurationAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 58d28cb3e80f127f164e65861a15c230ef2d45fb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c9098a17def65d4eeeab4638a1b0625c33b04dc7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864234"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27960793"
 ---
 # <a name="update-manageddevicemobileappconfigurationassignment"></a>Обновление объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -71,7 +72,7 @@ Content-length: 185
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

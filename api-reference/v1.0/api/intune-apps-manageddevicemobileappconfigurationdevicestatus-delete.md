@@ -3,12 +3,13 @@ title: Удаление managedDeviceMobileAppConfigurationDeviceStatus
 description: Удаляет managedDeviceMobileAppConfigurationDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9053b3f86b8809f4920b7d10c157e40fe58ba4f9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9c1ce1cd26534de238fad323535f5010614d59b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867321"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27976984"
 ---
 # <a name="delete-manageddevicemobileappconfigurationdevicestatus"></a>Удаление managedDeviceMobileAppConfigurationDeviceStatus
 

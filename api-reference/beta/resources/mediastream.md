@@ -3,12 +3,13 @@ title: Тип ресурса mediaStream
 description: Тип mediaStream.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 7e56448c2c6d284e7a5904f1b0af414166782907
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: fd003bde0eca5fd21cb12c23d5c83699a6b79c8e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889616"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916966"
 ---
 # <a name="mediastream-resource-type"></a>Тип ресурса mediaStream
 
@@ -20,11 +21,11 @@ ms.locfileid: "27889616"
 
 | Свойство    | Тип    | Описание                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| Направление   | Строка  | Направление. Возможные значения: `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
-| label       | Строка  | Метка потока мультимедиа.                                                                                       |
-| Тип носителя   | Строка  | Тип носителя. Возможное значение — `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Логический | Если мультимедиа отключен на сервере.                                                                          |
-| sourceId    | Строка  | Исходный код.                                                                                                |
+| Направление   | String  | Направление. Возможные значения: `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
+| label       | String  | Метка потока мультимедиа.                                                                                       |
+| Тип носителя   | String  | Тип носителя. Возможное значение — `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
+| serverMuted | Boolean | Если мультимедиа отключен на сервере.                                                                          |
+| sourceId    | String  | Исходный код.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 

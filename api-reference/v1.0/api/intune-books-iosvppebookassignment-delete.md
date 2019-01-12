@@ -3,12 +3,13 @@ title: Удаление объекта iosVppEBookAssignment
 description: Удаляет объект iosVppEBookAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d234d44d9ecb31efb9fb2d0f50538ec39c5bf2a0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9108b84a11e15d4f17f16ef950374125d51e5550
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835352"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972259"
 ---
 # <a name="delete-iosvppebookassignment"></a>Удаление объекта iosVppEBookAssignment
 

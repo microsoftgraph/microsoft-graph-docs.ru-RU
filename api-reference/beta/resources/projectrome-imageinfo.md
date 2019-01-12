@@ -2,12 +2,13 @@
 title: Тип ресурса imageInfo
 description: Сложный тип для представления свойство **атрибуты** в части visualInfo объекта активности.
 localization_priority: Normal
-ms.openlocfilehash: 9df93e24c2019f246fc9da269b40ab690ae81aa4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: 347e07b70e8bad6dce8571dd1fbac5cd00d9abdd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828569"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978692"
 ---
 # <a name="imageinfo-resource-type"></a>Тип ресурса imageInfo
 

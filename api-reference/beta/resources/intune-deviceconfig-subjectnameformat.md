@@ -3,12 +3,13 @@ title: Тип перечисления subjectNameFormat
 description: Параметры формата имени субъекта.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 85a11e8690c360e405df2453229a039ea9f9b1dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 259af745567a0fc5de004f5a804d8bab00355f8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27821338"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969592"
 ---
 # <a name="subjectnameformat-enum-type"></a>Тип перечисления subjectNameFormat
 

@@ -3,12 +3,13 @@ title: Обновление deviceManagementScript
 description: Обновление свойства объекта deviceManagementScript.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: aaca6501f0a1c0fd206583af4e976b9afe9ac2cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fa19b1d34ebd3b00a4c2d03f32730647dec45bda
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869295"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924225"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -49,15 +50,15 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценарий управления устройства.|
-|displayName|Строка|Имя скрипта управления устройства.|
-|описание|Строка|Необязательное описание сценарий управления устройства.|
+|id|String|Уникальный идентификатор для сценарий управления устройства.|
+|displayName|String|Имя скрипта управления устройства.|
+|описание|String|Необязательное описание сценарий управления устройства.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска сценария. Если не определена сценарий будет выполняться один раз|
 |scriptContent|Binary|Содержимое сценария.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
+|enforceSignatureCheck|Boolean|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
 
 

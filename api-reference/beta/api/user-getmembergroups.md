@@ -2,12 +2,14 @@
 title: 'user: getMemberGroups'
 description: Возвращает все группы, в которые входит пользователь. Проверка доверия транзитивных, в отличие от чтения
 localization_priority: Normal
-ms.openlocfilehash: 097d6d6eafa031bf86460e97ced58d0063eee4ed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 68c01242927a80e9a35625f6e0ad733b44d4c3fe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879788"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27959680"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 

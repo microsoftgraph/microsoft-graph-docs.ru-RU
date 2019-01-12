@@ -3,12 +3,13 @@ title: Обновление androidWorkProfileScepCertificateProfile
 description: Обновление свойства объекта androidWorkProfileScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e0c65ebfe6f2ba4b3b4f55f0a7f0e2e8fc5ec960
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f2ab0e1ba6ca47672d285d94b2810e0c53c1801f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969060"
 ---
 # <a name="update-androidworkprofilescepcertificateprofile"></a>Обновление androidWorkProfileScepCertificateProfile
 

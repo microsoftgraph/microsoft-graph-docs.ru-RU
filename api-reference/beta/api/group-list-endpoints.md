@@ -3,12 +3,13 @@ title: Список конечных точек
 description: Получение списка объектов конечной точки.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: ce208e34cd4d8401d537a36626eeefc7cb5ae126
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 7bf357b40e932e9900af5ed85eaa43ae7282a0b8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833266"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971314"
 ---
 # <a name="list-endpoints"></a>Список конечных точек
 

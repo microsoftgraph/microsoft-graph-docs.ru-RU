@@ -3,12 +3,13 @@ title: Обновление outlooktaskfolder
 description: Обновление для записи свойств папки задач Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 06dd21cf9da2fab8c0472ac29f477b6a40d2df5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: af86b85df5529f7f8c15ce2e4977d4b0fe2f00ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874356"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27925681"
 ---
 # <a name="update-outlooktaskfolder"></a>Обновление outlooktaskfolder
 
@@ -42,7 +43,7 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|Строка|Имя папки задач.|
+|name|String|Имя папки задач.|
 
 ## <a name="response"></a>Ответ
 

@@ -3,12 +3,13 @@ title: Тип ресурса TableRow
 description: Представляет строку в таблице.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: fe95b62236322451893e3859f9d6599cc637848c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 2d96ef5c23361cd8b15b47af54a0584e21c48b95
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807177"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971664"
 ---
 # <a name="tablerow-resource-type"></a>Тип ресурса TableRow
 

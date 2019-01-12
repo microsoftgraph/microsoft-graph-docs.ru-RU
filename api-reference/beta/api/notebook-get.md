@@ -1,14 +1,15 @@
 ---
 title: Получение записной книжки
 description: Получение свойств и связей объекта notebook.
-author: Jewan-microsoft
+author: jewan-microsoft
 localization_priority: Normal
-ms.openlocfilehash: 7193e7ac0e94c15c467c0d9c49d41fb73eff324b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: onenote
+ms.openlocfilehash: befabbe46950b6b68819be992f0257cc121a2075
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838579"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27927641"
 ---
 # <a name="get-notebook"></a>Получение записной книжки
 
@@ -40,7 +41,7 @@ GET /sites/{id}/onenote/notebooks/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса

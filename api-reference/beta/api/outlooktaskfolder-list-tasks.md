@@ -3,12 +3,13 @@ title: Перечисление задач
 description: Получите все задачи Outlook в указанной папке.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: ee6b4c2454ba6bfad0c0f4e6acd826917f02ca93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: ec814616447db842f4eaaa230cd6634e98859198
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863079"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924519"
 ---
 # <a name="list-tasks"></a>Перечисление задач
 

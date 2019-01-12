@@ -3,12 +3,13 @@ title: Обновление группы
 description: Обновление свойств, принадлежащих объекту группы.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 87a9c167b3ba697831ad8b992fc38cb2fc4e7c47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: f1f86067771a4732c8839f48bc02dd3edd15c19b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848995"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915237"
 ---
 # <a name="update-group"></a>Обновление группы
 
@@ -38,7 +39,7 @@ PATCH /groups/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

@@ -2,12 +2,14 @@
 title: 'group: getMemberGroups'
 description: Возвращает все названия групп, в которых состоит указанная группа. Эта промежуточная проверка, в отличие от считывания свойства навигации memberOf (возвращаются только группы, непосредственным членом которых является данная группа).
 localization_priority: Normal
-ms.openlocfilehash: 0c5162e79921e6069d22861060e6c652d1a7de3f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: e485c80a06fc2d124dec728ab3ffcdfb8dcce105
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887209"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921537"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -41,7 +43,7 @@ POST /groups/{id}/getMemberGroups
 
 | Имя          | Тип   | Описание               |
 | :------------ | :----- | :------------------------ |
-| Authorization | string | Bearer {токен}. Обязательный. |
+| Authorization | строка | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

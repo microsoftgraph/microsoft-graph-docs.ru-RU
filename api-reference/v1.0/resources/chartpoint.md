@@ -3,12 +3,13 @@ title: Тип ресурса ChartPoint
 description: Представляет точку из ряда в диаграмме.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 245d6cf538488c567df00129deb9b594ff22018a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 3318415094a36100851b1c604cba2507de31f558
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811706"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962508"
 ---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 

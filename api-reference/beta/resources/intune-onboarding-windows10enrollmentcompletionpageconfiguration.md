@@ -3,12 +3,13 @@ title: Тип ресурса windows10EnrollmentCompletionPageConfiguration
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f843a36c5852f3a565894e5ea7e2d6f0ff70954e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bacbe1707a9e552d90f6f8b9d18a710f8a3a9761
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920207"
 ---
 # <a name="windows10enrollmentcompletionpageconfiguration-resource-type"></a>Тип ресурса windows10EnrollmentCompletionPageConfiguration
 
@@ -39,13 +40,13 @@ ms.locfileid: "27844718"
 |createdDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |version|Int32|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|showInstallationProgress|Логический|Показать или скрыть выполнения установки для пользователей|
-|blockDeviceSetupRetryByUser|Логический|Пользователь может повторно запустите программу установки на сбой установки|
-|allowDeviceResetOnInstallFailure|Логический|Разрешить или заблокировать устройство Сброс на сбой установки|
-|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать семейства журнала на сбой установки|
-|customErrorMessage|Строка|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
+|showInstallationProgress|Boolean|Показать или скрыть выполнения установки для пользователей|
+|blockDeviceSetupRetryByUser|Boolean|Пользователь может повторно запустите программу установки на сбой установки|
+|allowDeviceResetOnInstallFailure|Boolean|Разрешить или заблокировать устройство Сброс на сбой установки|
+|allowLogCollectionOnInstallFailure|Boolean|Разрешить или заблокировать семейства журнала на сбой установки|
+|customErrorMessage|String|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
 |installProgressTimeoutInMinutes|Int32|Задать время ожидания ход выполнения установки в минутах|
-|allowDeviceUseOnInstallFailure|Логический|Разрешает пользователю продолжить использование устройства на сбой установки|
+|allowDeviceUseOnInstallFailure|Boolean|Разрешает пользователю продолжить использование устройства на сбой установки|
 |selectedMobileAppIds|Коллекция String|Для отслеживания состояния установки выбранных приложений|
 
 ## <a name="relationships"></a>Связи

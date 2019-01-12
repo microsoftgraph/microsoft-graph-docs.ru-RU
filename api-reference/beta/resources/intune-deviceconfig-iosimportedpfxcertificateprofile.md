@@ -3,12 +3,13 @@ title: Тип ресурса iosImportedPFXCertificateProfile
 description: операций ввода-вывода профиля PFX импорта сертификата
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4a4e96e0e7e0f39f0e0223bfe25561b4545cfb8d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c43c94c4ceee5098f3a4117edcd999b2d5e5d434
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865197"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27974023"
 ---
 # <a name="iosimportedpfxcertificateprofile-resource-type"></a>Тип ресурса iosImportedPFXCertificateProfile
 

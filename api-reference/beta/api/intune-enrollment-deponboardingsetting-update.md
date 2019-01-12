@@ -3,12 +3,13 @@ title: Обновление depOnboardingSetting
 description: Обновление свойства объекта depOnboardingSetting.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 05b31f007aece229dacee41af354fdf7ab2807ba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a7624c99b812f67e76551e9f082da0af49c03bc5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891121"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924239"
 ---
 # <a name="update-deponboardingsetting"></a>Обновление depOnboardingSetting
 
@@ -55,13 +56,13 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|Когда служба была onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|При последней syned службы с помощью Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Когда Intune запрашивает последней синхронизации.|
-|shareTokenWithSchoolDataSyncService|Логический|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
+|shareTokenWithSchoolDataSyncService|Boolean|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
 |lastSyncErrorCode|Int32|Код ошибки Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
-|tokenName|Строка|Понятное имя для маркера Dep|
+|tokenName|String|Понятное имя для маркера Dep|
 |syncedDeviceCount|Int32|Получает количество синхронизированных устройства|
-|defaultProfileDisplayName|Строка|Получает количество синхронизированных устройства|
-|dataSharingConsentGranted|Логический|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
+|defaultProfileDisplayName|String|Получает количество синхронизированных устройства|
+|dataSharingConsentGranted|Boolean|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
 
 
 

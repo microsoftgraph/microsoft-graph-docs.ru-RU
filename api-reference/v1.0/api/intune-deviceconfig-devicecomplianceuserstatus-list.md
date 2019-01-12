@@ -3,12 +3,13 @@ title: List deviceComplianceUserStatuses
 description: Перечисление свойств и связей объектов deviceComplianceUserStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 517bf763f6b7de4c65b2106d7a50af7ecf263313
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 969a9afa8eb28bd64560309cede5a80411fcebbf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839965"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967191"
 ---
 # <a name="list-devicecomplianceuserstatuses"></a>List deviceComplianceUserStatuses
 

@@ -3,12 +3,13 @@ title: функция autopilotDeviceStream
 description: Создание запроса загрузки с потоком автопилот устройство в нем.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e11b4f66b68bcb5e7de083d0894567d8752d746
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 656a3c525ac1eb6ede3efaa0759e28f6c32c5972
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867158"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968457"
 ---
 # <a name="autopilotdevicestream-function"></a>функция autopilotDeviceStream
 

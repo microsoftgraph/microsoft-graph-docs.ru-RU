@@ -3,12 +3,13 @@ title: Принудительно удалить домен
 description: Удаление домена, с помощью асинхронной операции длительным.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 22ad640195fa9b14e0407a479438bf618d8f19c1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: bbf56fdd2f623a918b43298626bd08269ad922ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831355"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918429"
 ---
 # <a name="force-domain-deletion"></a>Принудительно удалить домен
 

@@ -3,12 +3,13 @@ title: Действие windowsDefenderUpdateSignatures
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 67679db941bdeb92098d3fa9113730ff13f505e5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a859c4ff6a719ddfb714c1fad1eefb3164c8824d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827943"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916399"
 ---
 # <a name="windowsdefenderupdatesignatures-action"></a>Действие windowsDefenderUpdateSignatures
 

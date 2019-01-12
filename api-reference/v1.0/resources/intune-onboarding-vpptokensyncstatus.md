@@ -3,12 +3,13 @@ title: Тип перечисления vppTokenSyncStatus
 description: Возможности синхронизации статусов связанный с маркером покупки программы корпоративного Apple.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: db458423a00fd7b38bddea1b1954cda1ec6ec83b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dfdb80ae40abcc505927b94a33330bc09454e790
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888685"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27965084"
 ---
 # <a name="vpptokensyncstatus-enum-type"></a>Тип перечисления vppTokenSyncStatus
 

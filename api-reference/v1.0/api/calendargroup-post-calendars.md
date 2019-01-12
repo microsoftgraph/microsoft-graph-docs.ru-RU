@@ -3,12 +3,13 @@ title: Создание объекта Calendar
 description: С помощью этого API можно для экземпляра user создать календарь в группе календарей.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: cdb24b32bfd23cf5c6c6cf41673b4f8fa0ff61dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 791615d7b934536a27d4a8d1ea88be42a4ca2d79
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806939"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928453"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
 

@@ -3,12 +3,13 @@ title: Список windows10ImportedPFXCertificateProfiles
 description: Свойства списка и связей объектов windows10ImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50fd152c9705b573d4e5905681e4721652d95a18
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 866e5874fc33083c810140964cf22c7db85ae24c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832244"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916014"
 ---
 # <a name="list-windows10importedpfxcertificateprofiles"></a>Список windows10ImportedPFXCertificateProfiles
 

@@ -3,12 +3,13 @@ title: Обновление объекта deviceManagementTroubleshootingEvent
 description: Обновление свойств объекта deviceManagementTroubleshootingEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 516233827c6d4a03b15ccb8a498df189464c6f9f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bbbf0689c6e25b19c96dc491d77ddb3cc74251bd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884681"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970831"
 ---
 # <a name="update-devicemanagementtroubleshootingevent"></a>Обновление объекта deviceManagementTroubleshootingEvent
 

@@ -3,12 +3,13 @@ title: Действие wipeManagedAppRegistrationsByDeviceTag
 description: Стирает данные о регистрации приложений с указанным тегом приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5613a3e80acf8e6091cfb37c9e9818231854321b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 80e7b83001cf177cacaeb84d814509f31cd340cb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851116"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972007"
 ---
 # <a name="wipemanagedappregistrationsbydevicetag-action"></a>Действие wipeManagedAppRegistrationsByDeviceTag
 

@@ -2,12 +2,14 @@
 title: Тип перечисления androidManagedStoreAppConfigurationSchemaItemDataType
 description: Тип данных для элемента конфигурации внутри схемы настраиваемой конфигурации Android приложения
 localization_priority: Normal
-ms.openlocfilehash: 185785fec7de9b87342703b41063ad49a0bd1bf5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 0cc5a21c88d4f5621339e30e4f81740bb584ccab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814877"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970411"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>Тип перечисления androidManagedStoreAppConfigurationSchemaItemDataType
 

@@ -3,12 +3,13 @@ title: Список вложений
 description: Получение списка объектов attachment, вложенных в сообщение.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: b4f86871e31dcaaf9303d0cbd19e7d178137a9a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 2e37e863d4b050a07b756b91f1e98a4349239154
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867027"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918123"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

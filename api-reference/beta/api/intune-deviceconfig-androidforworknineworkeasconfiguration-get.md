@@ -3,12 +3,13 @@ title: Получение androidForWorkNineWorkEasConfiguration
 description: Чтение свойства и связи объекта androidForWorkNineWorkEasConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2cbe7672241f24dabe52ac38b935ef242d242094
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 87585b9946bbea1de853638f60ffb59bf9b1f927
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879487"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918618"
 ---
 # <a name="get-androidforworknineworkeasconfiguration"></a>Получение androidForWorkNineWorkEasConfiguration
 

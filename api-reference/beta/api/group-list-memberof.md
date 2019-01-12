@@ -3,12 +3,13 @@ title: Член группы списка
 description: Получите административные единиц измерения, которые группа является непосредственным членом и группы.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 8a1badf9e52c9d0bc3319178f36d62d1327d3c63
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3a9f35774bd626a8ed33ba351c7e388579aebf80
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853335"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970852"
 ---
 # <a name="list-group-memberof"></a>Член группы списка
 

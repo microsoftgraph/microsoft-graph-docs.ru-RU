@@ -2,12 +2,13 @@
 title: Перечисление schemaExtensions
 description: 'Ознакомьтесь со списком schemaExtension объекты, созданные им владеете в текущем клиентов (который может быть любой приложений '
 localization_priority: Normal
-ms.openlocfilehash: bc8ac2ed0c96e112b5f5e47b9d84ecc16de7533b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 3949c73945f44857bbde2768ff9c79ec838063e6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880033"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970299"
 ---
 # <a name="list-schemaextensions"></a>Перечисление schemaExtensions
 

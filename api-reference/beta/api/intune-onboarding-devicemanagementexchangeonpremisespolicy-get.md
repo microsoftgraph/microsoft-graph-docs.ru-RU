@@ -3,12 +3,13 @@ title: Получение deviceManagementExchangeOnPremisesPolicy
 description: Чтение свойства и связи объекта deviceManagementExchangeOnPremisesPolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a587e369fc99f1f6b3a0ec7478271e1669a19aba
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5a7182e3064aaab99cbe5caab795d8de03f47bff
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832944"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970495"
 ---
 # <a name="get-devicemanagementexchangeonpremisespolicy"></a>Получение deviceManagementExchangeOnPremisesPolicy
 

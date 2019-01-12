@@ -2,12 +2,14 @@
 title: Удаление элемента
 description: С помощью этого API можно удалить участника из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации **members**. Вы можете удалять пользователей или другие группы.
 localization_priority: Normal
-ms.openlocfilehash: 917e662158785111847d5d74821bfedbb61205dc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 0ab1dff154903149b2cfc92f5d6cb9cbacbae166
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864479"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27926115"
 ---
 # <a name="remove-member"></a>Удаление элемента
 
@@ -33,7 +35,7 @@ DELETE /groups/{id}/members/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

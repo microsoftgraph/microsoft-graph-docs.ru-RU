@@ -2,12 +2,14 @@
 title: Удаление страницы
 description: Удаление страницы OneNote.
 localization_priority: Normal
-ms.openlocfilehash: fc2a4a9e809cb3a335c795a27cb5ffe35487a880
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 691ec8d4d2f6c95c217a9ddb99fbd4e8608483f9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810012"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962200"
 ---
 # <a name="delete-page"></a>Удаление страницы
 

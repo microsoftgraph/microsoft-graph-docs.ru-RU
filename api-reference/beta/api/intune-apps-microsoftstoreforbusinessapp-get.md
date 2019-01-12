@@ -3,12 +3,13 @@ title: Get microsoftStoreForBusinessApp
 description: Чтение свойств и связей объекта microsoftStoreForBusinessApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50975e2a3abc73ad61f457f155c2bc4ae3f484f8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c5864e20b709e7b73b0944343741a2709928b6bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27859614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979245"
 ---
 # <a name="get-microsoftstoreforbusinessapp"></a>Get microsoftStoreForBusinessApp
 

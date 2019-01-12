@@ -3,12 +3,13 @@ title: Тип ресурса windowsAutopilotDeploymentProfileAssignment
 description: Назначение профиля развертывания Windows автопилот к группе AAD.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7fad8f082396598584af0cbb5fe1daee06bfd09e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a6aa5152dd3dd85dc2aadbd4880f638b4e75b1a4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851221"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27967177"
 ---
 # <a name="windowsautopilotdeploymentprofileassignment-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfileAssignment
 

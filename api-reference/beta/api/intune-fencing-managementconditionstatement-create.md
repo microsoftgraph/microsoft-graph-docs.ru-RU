@@ -3,12 +3,13 @@ title: Создание managementConditionStatement
 description: Создание нового объекта managementConditionStatement.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: da085e2aa384e2ee3d4eedd611cfe14945b8fe1d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 0c884f1b7239dc2f73438c007202ab783a5bdf1d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806442"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919157"
 ---
 # <a name="create-managementconditionstatement"></a>Создание managementConditionStatement
 
@@ -50,9 +51,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
-|displayName|Строка|Имя оператора условия управления определенные администратором.|
-|описание|Строка|Описание управления условная инструкция определенные администратором.|
+|id|String|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
+|displayName|String|Имя оператора условия управления определенные администратором.|
+|описание|String|Описание управления условная инструкция определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания условная инструкция управления. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условная инструкция управления. Обновление со стороны службы.|
 |выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используется для оценки Если инструкции с условием управления был активирован деактивирован.|

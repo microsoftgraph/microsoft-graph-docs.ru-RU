@@ -2,12 +2,14 @@
 title: Перечисление объектов windows81CompliancePolicy
 description: Список свойств и связей объектов windows81CompliancePolicy.
 author: tfitzmac
-ms.openlocfilehash: 217ec11f7c2283d8eae90129896b00823211da81
-ms.sourcegitcommit: 6a82bf240a3cfc0baabd227349e08a08311e3d44
+localization_priority: Normal
+ms.prod: intune
+ms.openlocfilehash: c90d2e101006a067f10c6bcb33021803e5b60839
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "27333077"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975374"
 ---
 # <a name="list-windows81compliancepolicies"></a>Перечисление объектов windows81CompliancePolicy
 
@@ -37,11 +39,11 @@ GET /deviceManagement/deviceCompliancePolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик

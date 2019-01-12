@@ -3,12 +3,13 @@ title: Тип ресурса proxiedDomain
 description: Проксируемый домен
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: eff345414531b0ddda1600bb567aacd4a5436602
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: dc90ebd57752fedcaf7acf069da6e653da04978e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871115"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968549"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
 

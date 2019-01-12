@@ -3,12 +3,13 @@ title: Тип ресурса androidCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 0c3455767e30b83decdd99e73bb918ed5efcb38a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 6c4978480243826f8461b4ca723c1afd57a0122c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851200"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969669"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>Тип ресурса androidCompliancePolicy
 

@@ -3,12 +3,13 @@ title: Перечисление имен
 description: 'Получение списка именованных элементов, связанных с листом. '
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: a0213f18d8364e495152169e41e73938e3b62a86
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 134725b68af3cd0e5afb395e0125a12eb02832af
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842702"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975479"
 ---
 # <a name="list-names"></a>Перечисление имен
 

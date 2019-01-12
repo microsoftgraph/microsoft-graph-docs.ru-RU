@@ -2,12 +2,13 @@
 title: Получение действия пользователя
 description: Получение действий для определенного пользователя. В отличие от **последние** функции OData будут возвращены действия без личных дел. Разрешение UserActivity.ReadWrite.CreatedByApp будут применяться дополнительных фильтрации в ответ, чтобы возвращаются только действий, созданных приложением. В этом фильтрации на сервере может привести к пустой страницы Если пользователь является особенно active и другие приложения были созданы более последние действия. Для получения действия этого приложения, используйте свойство **nextLink** для разбиения по страницам.
 localization_priority: Normal
-ms.openlocfilehash: 7339805d4ef45cc9b0806c2ce6c14e7316bdba85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: project-rome
+ms.openlocfilehash: dce6420e33a5d57eb78d8ea4842ed759ebcdd11c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889686"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971797"
 ---
 # <a name="get-user-activities"></a>Получение действия пользователя
 
