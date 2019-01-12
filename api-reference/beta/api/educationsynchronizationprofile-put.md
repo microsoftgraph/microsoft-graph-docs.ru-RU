@@ -3,49 +3,50 @@ title: Обновление educationSynchronizationProfile
 description: Обновляет свойства существующего профиля синхронизации данных school в клиентов.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: b9f5ee2866d1e898035355a389b0358347d4d00b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 07947127b0346a33528136921580646623576d28
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818531"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27935089"
 ---
-# <a name="update-an-educationsynchronizationprofile"></a><span data-ttu-id="ca429-103">Обновление educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="ca429-103">Update an educationSynchronizationProfile</span></span>
+# <a name="update-an-educationsynchronizationprofile"></a><span data-ttu-id="9555e-103">Обновление educationSynchronizationProfile</span><span class="sxs-lookup"><span data-stu-id="9555e-103">Update an educationSynchronizationProfile</span></span>
 
-> <span data-ttu-id="ca429-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ca429-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ca429-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca429-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9555e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9555e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9555e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9555e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="ca429-106">Обновление свойств существующих данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.</span><span class="sxs-lookup"><span data-stu-id="ca429-106">Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
+<span data-ttu-id="9555e-106">Обновление свойств существующих данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.</span><span class="sxs-lookup"><span data-stu-id="9555e-106">Update properties for an existing school data [synchronization profile](../resources/educationsynchronizationprofile.md) in the tenant.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="ca429-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ca429-107">Permissions</span></span>
-<span data-ttu-id="ca429-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ca429-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="9555e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9555e-107">Permissions</span></span>
+<span data-ttu-id="9555e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9555e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="ca429-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ca429-110">Permission type</span></span> | <span data-ttu-id="ca429-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="ca429-111">Permissions</span></span> |
+| <span data-ttu-id="9555e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9555e-110">Permission type</span></span> | <span data-ttu-id="9555e-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="9555e-111">Permissions</span></span> |
 |:-----------|:----------|
-| <span data-ttu-id="ca429-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ca429-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ca429-113">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ca429-113">EduAdministration.ReadWrite</span></span> |
-|<span data-ttu-id="ca429-114">Делегированные (личная учетная запись Майкрософт</span><span class="sxs-lookup"><span data-stu-id="ca429-114">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="ca429-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca429-115">Not supported.</span></span>|
-|<span data-ttu-id="ca429-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ca429-116">Application</span></span>|<span data-ttu-id="ca429-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ca429-117">Not supported.</span></span>|
+| <span data-ttu-id="9555e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9555e-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9555e-113">EduAdministration.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9555e-113">EduAdministration.ReadWrite</span></span> |
+|<span data-ttu-id="9555e-114">Делегированные (личная учетная запись Майкрософт</span><span class="sxs-lookup"><span data-stu-id="9555e-114">Delegated (personal Microsoft account</span></span>|<span data-ttu-id="9555e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9555e-115">Not supported.</span></span>|
+|<span data-ttu-id="9555e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9555e-116">Application</span></span>|<span data-ttu-id="9555e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9555e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="ca429-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ca429-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9555e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9555e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PUT /synchronizationProfiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="ca429-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ca429-119">Request headers</span></span>
-| <span data-ttu-id="ca429-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ca429-120">Name</span></span>       | <span data-ttu-id="ca429-121">Тип</span><span class="sxs-lookup"><span data-stu-id="ca429-121">Type</span></span> | <span data-ttu-id="ca429-122">Описание</span><span class="sxs-lookup"><span data-stu-id="ca429-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9555e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9555e-119">Request headers</span></span>
+| <span data-ttu-id="9555e-120">Имя</span><span class="sxs-lookup"><span data-stu-id="9555e-120">Name</span></span>       | <span data-ttu-id="9555e-121">Тип</span><span class="sxs-lookup"><span data-stu-id="9555e-121">Type</span></span> | <span data-ttu-id="9555e-122">Описание</span><span class="sxs-lookup"><span data-stu-id="9555e-122">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="ca429-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="ca429-123">Authorization</span></span>  | <span data-ttu-id="ca429-124">string</span><span class="sxs-lookup"><span data-stu-id="ca429-124">string</span></span>  | <span data-ttu-id="ca429-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ca429-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="ca429-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="ca429-127">Content-Type</span></span> | <span data-ttu-id="ca429-128">строка</span><span class="sxs-lookup"><span data-stu-id="ca429-128">string</span></span> | <span data-ttu-id="ca429-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ca429-p104">application/json. Required.</span></span> |
+| <span data-ttu-id="9555e-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="9555e-123">Authorization</span></span>  | <span data-ttu-id="9555e-124">string</span><span class="sxs-lookup"><span data-stu-id="9555e-124">string</span></span>  | <span data-ttu-id="9555e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9555e-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="9555e-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="9555e-127">Content-Type</span></span> | <span data-ttu-id="9555e-128">строка</span><span class="sxs-lookup"><span data-stu-id="9555e-128">string</span></span> | <span data-ttu-id="9555e-p104">application/json. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9555e-p104">application/json. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ca429-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ca429-131">Request body</span></span>
-<span data-ttu-id="ca429-132">В тексте запроса укажите представление объекта [synchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.</span><span class="sxs-lookup"><span data-stu-id="ca429-132">In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9555e-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9555e-131">Request body</span></span>
+<span data-ttu-id="9555e-132">В тексте запроса укажите представление объекта [synchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.</span><span class="sxs-lookup"><span data-stu-id="9555e-132">In the request body, supply a JSON representation of the [synchronizationProfile](../resources/educationsynchronizationprofile.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ca429-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="ca429-133">Response</span></span>
-<span data-ttu-id="ca429-134">Успешно завершена, этот метод возвращает `202, Accepted` код ответа и объект [synchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ca429-134">If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="9555e-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="9555e-133">Response</span></span>
+<span data-ttu-id="9555e-134">Успешно завершена, этот метод возвращает `202, Accepted` код ответа и объект [synchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9555e-134">If successful, this method returns a `202, Accepted` response code and a [synchronizationProfile](../resources/educationsynchronizationprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ca429-135">Пример</span><span class="sxs-lookup"><span data-stu-id="ca429-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ca429-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="ca429-136">Request</span></span>
-<span data-ttu-id="ca429-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ca429-137">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9555e-135">Пример</span><span class="sxs-lookup"><span data-stu-id="9555e-135">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="9555e-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="9555e-136">Request</span></span>
+<span data-ttu-id="9555e-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9555e-137">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "update_synchronizationProfile"
@@ -97,10 +98,10 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="ca429-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="ca429-138">Response</span></span>
-<span data-ttu-id="ca429-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ca429-139">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9555e-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="9555e-138">Response</span></span>
+<span data-ttu-id="9555e-139">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9555e-139">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="ca429-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="ca429-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="9555e-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9555e-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "ignored",
