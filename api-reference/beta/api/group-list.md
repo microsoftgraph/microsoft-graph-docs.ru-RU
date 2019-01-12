@@ -2,66 +2,68 @@
 title: Список групп
 description: Список всех групп, доступных в организации, в том числе из функции "Группы Office 365".
 localization_priority: Priority
-ms.openlocfilehash: dd243d1f07b98564bb5aa4751664337c0f0654cc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: groups
+ms.openlocfilehash: 504ee61bcf246362332cec2382048aa1c5e91d75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813274"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916511"
 ---
-# <a name="list-groups"></a><span data-ttu-id="8819a-103">Список групп</span><span class="sxs-lookup"><span data-stu-id="8819a-103">List groups</span></span>
+# <a name="list-groups"></a><span data-ttu-id="5ec1e-103">Список групп</span><span class="sxs-lookup"><span data-stu-id="5ec1e-103">List groups</span></span>
 
-> <span data-ttu-id="8819a-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="8819a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8819a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8819a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5ec1e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="5ec1e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="8819a-p102">Список всех групп, доступных в организации, в том числе из функции "Группы Office 365". Возвращаются [свойства по умолчанию](../api/group-get.md#default-properties) для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="8819a-p102">List all the groups available in an organization, including but not limited to Office 365 Groups. The [default properties](../api/group-get.md#default-properties) of each group are returned.</span></span>
+<span data-ttu-id="5ec1e-p102">Список всех групп, доступных в организации, в том числе из функции "Группы Office 365". Возвращаются [свойства по умолчанию](../api/group-get.md#default-properties) для каждой группы.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-p102">List all the groups available in an organization, including but not limited to Office 365 Groups. The [default properties](../api/group-get.md#default-properties) of each group are returned.</span></span>
 
-<span data-ttu-id="8819a-108">Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:</span><span class="sxs-lookup"><span data-stu-id="8819a-108">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
+<span data-ttu-id="5ec1e-108">Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:</span><span class="sxs-lookup"><span data-stu-id="5ec1e-108">To list only Office 365 Groups (aka unified groups), apply a filter on **groupTypes**:</span></span>
 ```
 GET https://graph.microsoft.com/beta/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-<span data-ttu-id="8819a-109">С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере.</span><span class="sxs-lookup"><span data-stu-id="8819a-109">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
+<span data-ttu-id="5ec1e-109">С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-109">You can use the OData query option `$orderby` to sort groups in an organization by the **displayName** values, as shown in the following example:</span></span>
 ```
 GET https://graph.microsoft.com/beta/groups?$orderby=displayName
 ```
 
-<span data-ttu-id="8819a-110">Чтобы вернуть группы, содержащие элементы с ошибками лицензии, используйте параметр **$filter** запроса:</span><span class="sxs-lookup"><span data-stu-id="8819a-110">To return groups containing members with license errors, use the **$filter** query parameter:</span></span> 
+<span data-ttu-id="5ec1e-110">Чтобы вернуть группы, содержащие элементы с ошибками лицензии, используйте параметр **$filter** запроса:</span><span class="sxs-lookup"><span data-stu-id="5ec1e-110">To return groups containing members with license errors, use the **$filter** query parameter:</span></span> 
 
 ```http 
 GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true 
 ```
-## <a name="permissions"></a><span data-ttu-id="8819a-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8819a-111">Permissions</span></span>
-<span data-ttu-id="8819a-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8819a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="5ec1e-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5ec1e-111">Permissions</span></span>
+<span data-ttu-id="5ec1e-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5ec1e-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8819a-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8819a-114">Permission type</span></span>      | <span data-ttu-id="8819a-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8819a-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5ec1e-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5ec1e-114">Permission type</span></span>      | <span data-ttu-id="5ec1e-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5ec1e-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8819a-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8819a-116">Delegated (work or school account)</span></span> | <span data-ttu-id="8819a-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8819a-117">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="8819a-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8819a-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8819a-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8819a-119">Not supported.</span></span>    |
-|<span data-ttu-id="8819a-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8819a-120">Application</span></span> | <span data-ttu-id="8819a-121">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8819a-121">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="5ec1e-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5ec1e-116">Delegated (work or school account)</span></span> | <span data-ttu-id="5ec1e-117">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ec1e-117">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5ec1e-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5ec1e-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5ec1e-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-119">Not supported.</span></span>    |
+|<span data-ttu-id="5ec1e-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5ec1e-120">Application</span></span> | <span data-ttu-id="5ec1e-121">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5ec1e-121">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8819a-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8819a-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5ec1e-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5ec1e-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="8819a-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="8819a-123">Optional query parameters</span></span>
-<span data-ttu-id="8819a-124">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="8819a-124">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5ec1e-123">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5ec1e-123">Optional query parameters</span></span>
+<span data-ttu-id="5ec1e-124">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-124">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="8819a-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8819a-125">Request headers</span></span>
-| <span data-ttu-id="8819a-126">Имя</span><span class="sxs-lookup"><span data-stu-id="8819a-126">Name</span></span>       | <span data-ttu-id="8819a-127">Тип</span><span class="sxs-lookup"><span data-stu-id="8819a-127">Type</span></span> | <span data-ttu-id="8819a-128">Описание</span><span class="sxs-lookup"><span data-stu-id="8819a-128">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="5ec1e-125">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5ec1e-125">Request headers</span></span>
+| <span data-ttu-id="5ec1e-126">Имя</span><span class="sxs-lookup"><span data-stu-id="5ec1e-126">Name</span></span>       | <span data-ttu-id="5ec1e-127">Тип</span><span class="sxs-lookup"><span data-stu-id="5ec1e-127">Type</span></span> | <span data-ttu-id="5ec1e-128">Описание</span><span class="sxs-lookup"><span data-stu-id="5ec1e-128">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="8819a-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="8819a-129">Authorization</span></span>  | <span data-ttu-id="8819a-130">string</span><span class="sxs-lookup"><span data-stu-id="8819a-130">string</span></span>  | <span data-ttu-id="8819a-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8819a-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5ec1e-129">Authorization</span><span class="sxs-lookup"><span data-stu-id="5ec1e-129">Authorization</span></span>  | <span data-ttu-id="5ec1e-130">string</span><span class="sxs-lookup"><span data-stu-id="5ec1e-130">string</span></span>  | <span data-ttu-id="5ec1e-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="8819a-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8819a-133">Request body</span></span>
-<span data-ttu-id="8819a-134">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="8819a-134">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5ec1e-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="5ec1e-133">Request body</span></span>
+<span data-ttu-id="5ec1e-134">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-134">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="8819a-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="8819a-135">Response</span></span>
-<span data-ttu-id="8819a-136">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8819a-136">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5ec1e-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="5ec1e-135">Response</span></span>
+<span data-ttu-id="5ec1e-136">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-136">If successful, this method returns a `200 OK` response code and collection of [group](../resources/group.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8819a-137">Пример</span><span class="sxs-lookup"><span data-stu-id="8819a-137">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="8819a-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="8819a-138">Request</span></span>
-<span data-ttu-id="8819a-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8819a-139">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5ec1e-137">Пример</span><span class="sxs-lookup"><span data-stu-id="5ec1e-137">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="5ec1e-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="5ec1e-138">Request</span></span>
+<span data-ttu-id="5ec1e-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-139">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_groups"
@@ -70,9 +72,9 @@ GET /groups
 GET https://graph.microsoft.com/beta/groups
 ```
 
-#### <a name="response"></a><span data-ttu-id="8819a-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="8819a-140">Response</span></span>
-<span data-ttu-id="8819a-141">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="8819a-141">The following is an example of the response.</span></span>
-><span data-ttu-id="8819a-142">**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="8819a-142">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="8819a-143">[Свойства по умолчанию](../api/group-get.md#default-properties) возвращаются при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="8819a-143">The [default properties](../api/group-get.md#default-properties) will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="5ec1e-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="5ec1e-140">Response</span></span>
+<span data-ttu-id="5ec1e-141">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-141">The following is an example of the response.</span></span>
+><span data-ttu-id="5ec1e-142">**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-142">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5ec1e-143">[Свойства по умолчанию](../api/group-get.md#default-properties) возвращаются при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="5ec1e-143">The [default properties](../api/group-get.md#default-properties) will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

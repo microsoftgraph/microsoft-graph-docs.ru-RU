@@ -3,57 +3,58 @@ title: 'groupLifecyclePolicy: removeGroup'
 description: Удаляет группу из политики жизненного цикла.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: faf394e411301d268a307151d98ec84a9b4e19a9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 3abf83c19132d0a8fe825c3e187a34dcc7114097
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894131"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915755"
 ---
-# <a name="grouplifecyclepolicy-removegroup"></a><span data-ttu-id="52e2f-103">groupLifecyclePolicy: removeGroup</span><span class="sxs-lookup"><span data-stu-id="52e2f-103">groupLifecyclePolicy: removeGroup</span></span>
+# <a name="grouplifecyclepolicy-removegroup"></a><span data-ttu-id="adab0-103">groupLifecyclePolicy: removeGroup</span><span class="sxs-lookup"><span data-stu-id="adab0-103">groupLifecyclePolicy: removeGroup</span></span>
 
-> <span data-ttu-id="52e2f-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="52e2f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="52e2f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="52e2f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="adab0-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="adab0-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="adab0-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="adab0-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="52e2f-106">Удаляет группу из политики жизненного цикла.</span><span class="sxs-lookup"><span data-stu-id="52e2f-106">Removes a group from a lifecycle policy.</span></span>
+<span data-ttu-id="adab0-106">Удаляет группу из политики жизненного цикла.</span><span class="sxs-lookup"><span data-stu-id="adab0-106">Removes a group from a lifecycle policy.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="52e2f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="52e2f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="adab0-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="adab0-107">Permissions</span></span>
 
-<span data-ttu-id="52e2f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="52e2f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="adab0-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="adab0-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="52e2f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="52e2f-110">Permission type</span></span>      | <span data-ttu-id="52e2f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="52e2f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="adab0-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="adab0-110">Permission type</span></span>      | <span data-ttu-id="adab0-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="adab0-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="52e2f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="52e2f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="52e2f-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52e2f-113">Directory.ReadWrite.All</span></span>    |
-|<span data-ttu-id="52e2f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="52e2f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="52e2f-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="52e2f-115">Not supported</span></span> |
-|<span data-ttu-id="52e2f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="52e2f-116">Application</span></span> |  <span data-ttu-id="52e2f-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="52e2f-117">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="adab0-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="adab0-112">Delegated (work or school account)</span></span> | <span data-ttu-id="adab0-113">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adab0-113">Directory.ReadWrite.All</span></span>    |
+|<span data-ttu-id="adab0-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="adab0-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="adab0-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="adab0-115">Not supported</span></span> |
+|<span data-ttu-id="adab0-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="adab0-116">Application</span></span> |  <span data-ttu-id="adab0-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="adab0-117">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="52e2f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="52e2f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="adab0-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="adab0-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /groupLifecyclePolicies/{id}/removeGroup
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="52e2f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="52e2f-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="adab0-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="adab0-119">Request headers</span></span>
 
-| <span data-ttu-id="52e2f-120">Имя</span><span class="sxs-lookup"><span data-stu-id="52e2f-120">Name</span></span> | <span data-ttu-id="52e2f-121">Описание</span><span class="sxs-lookup"><span data-stu-id="52e2f-121">Description</span></span> |
+| <span data-ttu-id="adab0-120">Имя</span><span class="sxs-lookup"><span data-stu-id="adab0-120">Name</span></span> | <span data-ttu-id="adab0-121">Описание</span><span class="sxs-lookup"><span data-stu-id="adab0-121">Description</span></span> |
 |:---------------|:----------|
-| <span data-ttu-id="52e2f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="52e2f-122">Authorization</span></span> | <span data-ttu-id="52e2f-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="52e2f-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="52e2f-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="52e2f-125">Content-Type</span></span>  | <span data-ttu-id="52e2f-126">application/json</span><span class="sxs-lookup"><span data-stu-id="52e2f-126">application/json</span></span> |
+| <span data-ttu-id="adab0-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="adab0-122">Authorization</span></span> | <span data-ttu-id="adab0-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="adab0-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="adab0-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="adab0-125">Content-Type</span></span>  | <span data-ttu-id="adab0-126">application/json</span><span class="sxs-lookup"><span data-stu-id="adab0-126">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="52e2f-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="52e2f-127">Request body</span></span>
-<span data-ttu-id="52e2f-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="52e2f-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="adab0-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="adab0-127">Request body</span></span>
+<span data-ttu-id="adab0-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="adab0-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="52e2f-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="52e2f-129">Parameter</span></span> | <span data-ttu-id="52e2f-130">Тип</span><span class="sxs-lookup"><span data-stu-id="52e2f-130">Type</span></span> | <span data-ttu-id="52e2f-131">Описание</span><span class="sxs-lookup"><span data-stu-id="52e2f-131">Description</span></span> |
+| <span data-ttu-id="adab0-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="adab0-129">Parameter</span></span> | <span data-ttu-id="adab0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="adab0-130">Type</span></span> | <span data-ttu-id="adab0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="adab0-131">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="52e2f-132">groupId</span><span class="sxs-lookup"><span data-stu-id="52e2f-132">groupId</span></span>|<span data-ttu-id="52e2f-133">GUID</span><span class="sxs-lookup"><span data-stu-id="52e2f-133">Guid</span></span>| <span data-ttu-id="52e2f-134">Идентификатор группы, которую нужно удалить из политики.</span><span class="sxs-lookup"><span data-stu-id="52e2f-134">The id of the group to remove from the policy.</span></span>|
+|<span data-ttu-id="adab0-132">groupId</span><span class="sxs-lookup"><span data-stu-id="adab0-132">groupId</span></span>|<span data-ttu-id="adab0-133">GUID</span><span class="sxs-lookup"><span data-stu-id="adab0-133">Guid</span></span>| <span data-ttu-id="adab0-134">Идентификатор группы, которую нужно удалить из политики.</span><span class="sxs-lookup"><span data-stu-id="adab0-134">The id of the group to remove from the policy.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="52e2f-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="52e2f-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="adab0-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="adab0-135">Response</span></span>
 
-<span data-ttu-id="52e2f-136">При успешном выполнении этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="52e2f-136">If successful, this method returns `200 OK` response code.</span></span> <span data-ttu-id="52e2f-137">Если из политики удаляется группа, в теле отклика возвращается значение **true**.</span><span class="sxs-lookup"><span data-stu-id="52e2f-137">If the group is removed from the policy, a **true** value is returned in the response body.</span></span> <span data-ttu-id="52e2f-138">Если нет, то в теле отклика возвращается значение **false**.</span><span class="sxs-lookup"><span data-stu-id="52e2f-138">Otherwise, a **false** value is returned in the reponse body.</span></span>
+<span data-ttu-id="adab0-136">При успешном выполнении этот метод возвращает код отклика `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="adab0-136">If successful, this method returns `200 OK` response code.</span></span> <span data-ttu-id="adab0-137">Если из политики удаляется группа, в теле отклика возвращается значение **true**.</span><span class="sxs-lookup"><span data-stu-id="adab0-137">If the group is removed from the policy, a **true** value is returned in the response body.</span></span> <span data-ttu-id="adab0-138">Если нет, то в теле отклика возвращается значение **false**.</span><span class="sxs-lookup"><span data-stu-id="adab0-138">Otherwise, a **false** value is returned in the reponse body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="52e2f-139">Пример</span><span class="sxs-lookup"><span data-stu-id="52e2f-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="adab0-139">Пример</span><span class="sxs-lookup"><span data-stu-id="adab0-139">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="52e2f-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="52e2f-140">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="adab0-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="adab0-140">Request</span></span>
 
 <!-- {
   "blockType": "ignored",
@@ -69,7 +70,7 @@ Content-length: 57
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="52e2f-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="52e2f-141">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="adab0-141">Ответ</span><span class="sxs-lookup"><span data-stu-id="adab0-141">Response</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http

@@ -3,52 +3,53 @@ title: Обновление объекта TableColumn
 description: Обновление свойств объекта tablecolumn.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: e3e6bc61f66af286e348610c2463b6aad611f49c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a7ccd78c84ac7f7cc0640e3ec3dd16383b3f874f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27918352"
 ---
-# <a name="update-tablecolumn"></a><span data-ttu-id="f9eff-103">Обновление объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="f9eff-103">Update tablecolumn</span></span>
+# <a name="update-tablecolumn"></a><span data-ttu-id="0b124-103">Обновление объекта TableColumn</span><span class="sxs-lookup"><span data-stu-id="0b124-103">Update tablecolumn</span></span>
 
-> <span data-ttu-id="f9eff-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f9eff-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f9eff-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f9eff-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0b124-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0b124-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0b124-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0b124-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="f9eff-106">Обновление свойств объекта tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="f9eff-106">Update the properties of tablecolumn object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="f9eff-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f9eff-107">Permissions</span></span>
-<span data-ttu-id="f9eff-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f9eff-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="0b124-106">Обновление свойств объекта tablecolumn.</span><span class="sxs-lookup"><span data-stu-id="0b124-106">Update the properties of tablecolumn object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="0b124-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0b124-107">Permissions</span></span>
+<span data-ttu-id="0b124-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0b124-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f9eff-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f9eff-110">Permission type</span></span>      | <span data-ttu-id="f9eff-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f9eff-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="0b124-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0b124-110">Permission type</span></span>      | <span data-ttu-id="0b124-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0b124-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f9eff-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f9eff-112">Delegated (work or school account)</span></span> | <span data-ttu-id="f9eff-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f9eff-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f9eff-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f9eff-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9eff-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f9eff-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="f9eff-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f9eff-116">Application</span></span> | <span data-ttu-id="f9eff-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f9eff-117">Not supported.</span></span> |
+|<span data-ttu-id="0b124-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0b124-112">Delegated (work or school account)</span></span> | <span data-ttu-id="0b124-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0b124-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0b124-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0b124-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0b124-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="0b124-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="0b124-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0b124-116">Application</span></span> | <span data-ttu-id="0b124-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0b124-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9eff-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f9eff-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="0b124-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0b124-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/tables/{id|name}/columns/{id|name}
 PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="f9eff-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f9eff-119">Optional request headers</span></span>
-| <span data-ttu-id="f9eff-120">Имя</span><span class="sxs-lookup"><span data-stu-id="f9eff-120">Name</span></span>       | <span data-ttu-id="f9eff-121">Описание</span><span class="sxs-lookup"><span data-stu-id="f9eff-121">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="0b124-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0b124-119">Optional request headers</span></span>
+| <span data-ttu-id="0b124-120">Имя</span><span class="sxs-lookup"><span data-stu-id="0b124-120">Name</span></span>       | <span data-ttu-id="0b124-121">Описание</span><span class="sxs-lookup"><span data-stu-id="0b124-121">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="f9eff-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f9eff-122">Authorization</span></span>  | <span data-ttu-id="f9eff-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f9eff-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f9eff-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="f9eff-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="f9eff-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="f9eff-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="0b124-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="0b124-122">Authorization</span></span>  | <span data-ttu-id="0b124-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0b124-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="0b124-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="0b124-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="0b124-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="0b124-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f9eff-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="f9eff-128">Request body</span></span>
-<span data-ttu-id="f9eff-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="f9eff-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="0b124-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0b124-128">Request body</span></span>
+<span data-ttu-id="0b124-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="0b124-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="f9eff-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="f9eff-132">Property</span></span>     | <span data-ttu-id="f9eff-133">Тип</span><span class="sxs-lookup"><span data-stu-id="f9eff-133">Type</span></span>   |<span data-ttu-id="f9eff-134">Описание</span><span class="sxs-lookup"><span data-stu-id="f9eff-134">Description</span></span>|
+| <span data-ttu-id="0b124-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="0b124-132">Property</span></span>     | <span data-ttu-id="0b124-133">Тип</span><span class="sxs-lookup"><span data-stu-id="0b124-133">Type</span></span>   |<span data-ttu-id="0b124-134">Описание</span><span class="sxs-lookup"><span data-stu-id="0b124-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="f9eff-135">values</span><span class="sxs-lookup"><span data-stu-id="f9eff-135">values</span></span>|<span data-ttu-id="f9eff-136">json</span><span class="sxs-lookup"><span data-stu-id="f9eff-136">json</span></span>|<span data-ttu-id="f9eff-p106">Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.</span><span class="sxs-lookup"><span data-stu-id="f9eff-p106">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
+|<span data-ttu-id="0b124-135">values</span><span class="sxs-lookup"><span data-stu-id="0b124-135">values</span></span>|<span data-ttu-id="0b124-136">json</span><span class="sxs-lookup"><span data-stu-id="0b124-136">json</span></span>|<span data-ttu-id="0b124-p106">Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.</span><span class="sxs-lookup"><span data-stu-id="0b124-p106">Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="f9eff-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9eff-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="0b124-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="0b124-140">Response</span></span>
 
-<span data-ttu-id="f9eff-141">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="f9eff-141">If successful, this method returns a `200 OK` response code and updated [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="f9eff-142">Пример</span><span class="sxs-lookup"><span data-stu-id="f9eff-142">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f9eff-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9eff-143">Request</span></span>
-<span data-ttu-id="f9eff-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f9eff-144">Here is an example of the request.</span></span>
+<span data-ttu-id="0b124-141">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [TableColumn](../resources/tablecolumn.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="0b124-141">If successful, this method returns a `200 OK` response code and updated [TableColumn](../resources/tablecolumn.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="0b124-142">Пример</span><span class="sxs-lookup"><span data-stu-id="0b124-142">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="0b124-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="0b124-143">Request</span></span>
+<span data-ttu-id="0b124-144">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="0b124-144">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_tablecolumn"
@@ -64,8 +65,8 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="f9eff-145">Ответ</span><span class="sxs-lookup"><span data-stu-id="f9eff-145">Response</span></span>
-<span data-ttu-id="f9eff-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f9eff-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="0b124-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="0b124-145">Response</span></span>
+<span data-ttu-id="0b124-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="0b124-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
