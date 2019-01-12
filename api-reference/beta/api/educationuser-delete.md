@@ -3,49 +3,50 @@ title: Удаление educationUser
 description: Удаление пользователя.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: bc6e27e3bfb9326b147ab1121b5c900d7878ff85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: 2d07a44cffc70e5ed247b80861e1660a105b1689
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866852"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27930784"
 ---
-# <a name="delete-educationuser"></a><span data-ttu-id="fe4a5-103">Удаление educationUser</span><span class="sxs-lookup"><span data-stu-id="fe4a5-103">Delete educationUser</span></span>
+# <a name="delete-educationuser"></a><span data-ttu-id="2399e-103">Удаление educationUser</span><span class="sxs-lookup"><span data-stu-id="2399e-103">Delete educationUser</span></span>
 
-> <span data-ttu-id="fe4a5-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fe4a5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2399e-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="2399e-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2399e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2399e-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="fe4a5-106">Удаление пользователя.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-106">Delete a user.</span></span>
+<span data-ttu-id="2399e-106">Удаление пользователя.</span><span class="sxs-lookup"><span data-stu-id="2399e-106">Delete a user.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="fe4a5-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fe4a5-107">Permissions</span></span>
-<span data-ttu-id="fe4a5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fe4a5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="2399e-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2399e-107">Permissions</span></span>
+<span data-ttu-id="2399e-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2399e-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fe4a5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fe4a5-110">Permission type</span></span>      | <span data-ttu-id="fe4a5-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fe4a5-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="2399e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2399e-110">Permission type</span></span>      | <span data-ttu-id="2399e-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2399e-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fe4a5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fe4a5-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="fe4a5-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-113">Not supported.</span></span>  |
-|<span data-ttu-id="fe4a5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fe4a5-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="fe4a5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-115">Not supported.</span></span>  |
-|<span data-ttu-id="fe4a5-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fe4a5-116">Application</span></span> | <span data-ttu-id="fe4a5-117">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fe4a5-117">EduRoster.ReadWrite.All</span></span> |
+|<span data-ttu-id="2399e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2399e-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="2399e-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2399e-113">Not supported.</span></span>  |
+|<span data-ttu-id="2399e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2399e-114">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="2399e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2399e-115">Not supported.</span></span>  |
+|<span data-ttu-id="2399e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2399e-116">Application</span></span> | <span data-ttu-id="2399e-117">EduRoster.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2399e-117">EduRoster.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fe4a5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fe4a5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2399e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2399e-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/users/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="fe4a5-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fe4a5-119">Request headers</span></span>
-| <span data-ttu-id="fe4a5-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="fe4a5-120">Header</span></span>       | <span data-ttu-id="fe4a5-121">Значение</span><span class="sxs-lookup"><span data-stu-id="fe4a5-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="2399e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2399e-119">Request headers</span></span>
+| <span data-ttu-id="2399e-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2399e-120">Header</span></span>       | <span data-ttu-id="2399e-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2399e-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="fe4a5-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fe4a5-122">Authorization</span></span>  | <span data-ttu-id="fe4a5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="2399e-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2399e-122">Authorization</span></span>  | <span data-ttu-id="2399e-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2399e-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="fe4a5-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fe4a5-125">Request body</span></span>
-<span data-ttu-id="fe4a5-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2399e-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="2399e-125">Request body</span></span>
+<span data-ttu-id="2399e-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="2399e-126">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="fe4a5-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="fe4a5-127">Response</span></span>
-<span data-ttu-id="fe4a5-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2399e-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="2399e-127">Response</span></span>
+<span data-ttu-id="2399e-p104">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2399e-p104">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fe4a5-130">Пример</span><span class="sxs-lookup"><span data-stu-id="fe4a5-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fe4a5-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="fe4a5-131">Request</span></span>
-<span data-ttu-id="fe4a5-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="2399e-130">Пример</span><span class="sxs-lookup"><span data-stu-id="2399e-130">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="2399e-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="2399e-131">Request</span></span>
+<span data-ttu-id="2399e-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2399e-132">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_educationuser"
@@ -53,8 +54,8 @@ DELETE /education/users/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/users/13019
 ```
-##### <a name="response"></a><span data-ttu-id="fe4a5-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="fe4a5-133">Response</span></span>
-<span data-ttu-id="fe4a5-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="fe4a5-134">The following is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="2399e-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="2399e-133">Response</span></span>
+<span data-ttu-id="2399e-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="2399e-134">The following is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true
