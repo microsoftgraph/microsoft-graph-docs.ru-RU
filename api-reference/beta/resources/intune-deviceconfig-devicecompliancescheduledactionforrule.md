@@ -3,12 +3,13 @@ title: Тип ресурса deviceComplianceScheduledActionForRule
 description: Запланированное действие для правила
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 78f8947a24a29b0ae4c53469306ada5141ee5ce5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 16542e84be3bf897afb5aa7aadbfd2414b6c0540
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847938"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945750"
 ---
 # <a name="devicecompliancescheduledactionforrule-resource-type"></a>Тип ресурса deviceComplianceScheduledActionForRule
 

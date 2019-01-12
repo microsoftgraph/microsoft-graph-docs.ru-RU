@@ -3,12 +3,13 @@ title: Получение объектов каталога из списка и
 description: Выберите "параметр запроса не поддерживается для этой операции.
 author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 4c63ea85113ec54dec8e5d818c3add1005aebb19
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 256292a1610972b8a8cbe6026344300af29b1c55
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888062"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945975"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
