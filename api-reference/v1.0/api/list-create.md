@@ -4,28 +4,29 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: Создание списка SharePoint
 localization_priority: Normal
-ms.openlocfilehash: 724a34ea9add74772236b6d0dad90e23c9cac955
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 32dc5154d8a799f01294e87f47c93879f0ce3222
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878689"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27968598"
 ---
-# <a name="create-a-new-list"></a><span data-ttu-id="62d27-102">Создание списка</span><span class="sxs-lookup"><span data-stu-id="62d27-102">Create a new list</span></span>
+# <a name="create-a-new-list"></a><span data-ttu-id="b793f-102">Создание списка</span><span class="sxs-lookup"><span data-stu-id="b793f-102">Create a new list</span></span>
 
-<span data-ttu-id="62d27-103">Создание [списка][] на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="62d27-103">Create a new [list][] in a [site][].</span></span>
+<span data-ttu-id="b793f-103">Создание [списка][] на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="b793f-103">Create a new [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="62d27-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="62d27-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="b793f-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b793f-104">Permissions</span></span>
 
-<span data-ttu-id="62d27-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="62d27-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="b793f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b793f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="62d27-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="62d27-107">Permission type</span></span>             | <span data-ttu-id="62d27-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="62d27-108">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="b793f-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b793f-107">Permission type</span></span>             | <span data-ttu-id="b793f-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b793f-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="62d27-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="62d27-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="62d27-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="62d27-110">Sites.Manage.All</span></span>                            |
-| <span data-ttu-id="62d27-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="62d27-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62d27-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="62d27-112">Not supported.</span></span>                              |
-| <span data-ttu-id="62d27-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="62d27-113">Application</span></span>                            | <span data-ttu-id="62d27-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="62d27-114">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="b793f-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b793f-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="b793f-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="b793f-110">Sites.Manage.All</span></span>                            |
+| <span data-ttu-id="b793f-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b793f-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b793f-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b793f-112">Not supported.</span></span>                              |
+| <span data-ttu-id="b793f-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b793f-113">Application</span></span>                            | <span data-ttu-id="b793f-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b793f-114">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="62d27-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="62d27-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b793f-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b793f-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,13 +34,13 @@ ms.locfileid: "27878689"
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a><span data-ttu-id="62d27-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="62d27-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b793f-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b793f-116">Request body</span></span>
 
-<span data-ttu-id="62d27-117">В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="62d27-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
+<span data-ttu-id="b793f-117">В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b793f-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="62d27-118">Пример</span><span class="sxs-lookup"><span data-stu-id="62d27-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b793f-118">Пример</span><span class="sxs-lookup"><span data-stu-id="b793f-118">Example</span></span>
 
-<span data-ttu-id="62d27-119">В примере ниже показано, как создать список общего назначения.</span><span class="sxs-lookup"><span data-stu-id="62d27-119">Here is an example of how to create a new generic list.</span></span>
+<span data-ttu-id="b793f-119">В примере ниже показано, как создать список общего назначения.</span><span class="sxs-lookup"><span data-stu-id="b793f-119">Here is an example of how to create a new generic list.</span></span>
 
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
@@ -65,14 +66,14 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="62d27-120">**Примечание.** Настраиваемые столбцы являются необязательными.</span><span class="sxs-lookup"><span data-stu-id="62d27-120">**Note:** Custom columns are optional.</span></span>
+<span data-ttu-id="b793f-120">**Примечание.** Настраиваемые столбцы являются необязательными.</span><span class="sxs-lookup"><span data-stu-id="b793f-120">**Note:** Custom columns are optional.</span></span>
 
-<span data-ttu-id="62d27-121">Помимо столбцов, указанных здесь, в создаваемых списках используются столбцы, заданные в соответствующем **шаблоне**.</span><span class="sxs-lookup"><span data-stu-id="62d27-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
-<span data-ttu-id="62d27-122">Если аспект или **шаблон** **списка** не указаны, то по умолчанию для списка используется шаблон `genericList`, включающий столбец _Title_ (Название).</span><span class="sxs-lookup"><span data-stu-id="62d27-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+<span data-ttu-id="b793f-121">Помимо столбцов, указанных здесь, в создаваемых списках используются столбцы, заданные в соответствующем **шаблоне**.</span><span class="sxs-lookup"><span data-stu-id="b793f-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
+<span data-ttu-id="b793f-122">Если аспект или **шаблон** **списка** не указаны, то по умолчанию для списка используется шаблон `genericList`, включающий столбец _Title_ (Название).</span><span class="sxs-lookup"><span data-stu-id="b793f-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
 
-## <a name="response"></a><span data-ttu-id="62d27-123">Ответ</span><span class="sxs-lookup"><span data-stu-id="62d27-123">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b793f-123">Ответ</span><span class="sxs-lookup"><span data-stu-id="b793f-123">Response</span></span>
 
-<span data-ttu-id="62d27-124">При успешном выполнении этот метод возвращает объект [списка][] для вновь созданного списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="62d27-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
+<span data-ttu-id="b793f-124">При успешном выполнении этот метод возвращает объект [списка][] для вновь созданного списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="b793f-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -99,8 +100,8 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="62d27-125">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="62d27-125">**Note:** The response object is truncated for clarity.</span></span>
-<span data-ttu-id="62d27-126">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="62d27-126">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="b793f-125">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="b793f-125">**Note:** The response object is truncated for clarity.</span></span>
+<span data-ttu-id="b793f-126">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="b793f-126">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md
