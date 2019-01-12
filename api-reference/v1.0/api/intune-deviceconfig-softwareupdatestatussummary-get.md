@@ -3,12 +3,13 @@ title: Получение объекта softwareUpdateStatusSummary
 description: Чтение свойств и связей объекта softwareUpdateStatusSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 3c03096e64b75df89f131a01344e1adb6a1bee44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7d62ef39d7a1667eb1180467abd0318a41674272
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890274"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970376"
 ---
 # <a name="get-softwareupdatestatussummary"></a>Получение объекта softwareUpdateStatusSummary
 

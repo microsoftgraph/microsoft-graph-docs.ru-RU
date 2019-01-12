@@ -2,12 +2,14 @@
 title: 'TableRowCollection: add'
 description: 'Добавляет строки в конец таблицы. Обратите внимание на то, что API может принимать несколько строк данных, с помощью этот интерфейс API. Добавление одной строке за раз может привести к снижению производительности. Рекомендуемый подход бы для пакетной обработки строк в один вызов, а не выполнив одну строку вставки. Для достижения наилучших результатов собирать строки, чтобы вставить в части приложения и выполнить отдельных строк добавьте операции. Поэкспериментируйте с номером строки, чтобы определить, идеальная число строк для использования в одном вызове API. '
 localization_priority: Normal
-ms.openlocfilehash: 2b9f1858f77c8c6378f7fc189144ab4c9062d562
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lumine2008
+ms.prod: excel
+ms.openlocfilehash: 45126e74b8b4a242481b7cba3ca8d2664c48cc7c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877030"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969690"
 ---
 # <a name="tablerowcollection-add"></a>TableRowCollection: add
 

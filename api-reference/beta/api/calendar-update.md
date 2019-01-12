@@ -2,12 +2,14 @@
 title: Обновление календаря
 description: 'Обновление свойств объекта calendar. Календарь может иметь одно для пользователя '
 localization_priority: Normal
-ms.openlocfilehash: 48a3dd1630ce28aae1f8749cec7a1a4bbd5d6b83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: a9b9ac65fa5d03b73a7508f6032ebe199118b09c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27814373"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27922497"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 
@@ -55,7 +57,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue = 0, LightGreen = 1, LightOrange = 2, LightGray = 3, LightYellow = 4, LightTeal = 5, LightPink = 6, LightBrown = 7, LightRed = 8, MaxColor = 9, Auto = -1.|
-|isDefaultCalendar|Логический|Значение true, если этот календарь является пользователя по умолчанию, значение false в противном случае.|
+|isDefaultCalendar|Boolean|Значение true, если этот календарь является пользователя по умолчанию, значение false в противном случае.|
 |name|String|Имя календаря.|
 
 ## <a name="response"></a>Отклик

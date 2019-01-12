@@ -3,12 +3,13 @@ title: Обновление enrollmentProfile
 description: Обновление свойства объекта enrollmentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9a5628ad6aff7926d4248e76e5203a9419fc1727
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a642ab15427f29cec3a7535022135f9cc931856e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822598"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924253"
 ---
 # <a name="update-enrollmentprofile"></a>Обновление enrollmentProfile
 
@@ -50,11 +51,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|GUID объекта|
-|displayName|Строка|Имя профиля|
-|описание|Строка|Описание профиля|
-|requiresUserAuthentication|Логический|Указывает необходимость проверки подлинности пользователей в профиле|
-|configurationEndpointUrl|Строка|URL-адрес конечной точки конфигурации для подачи заявок|
-|enableAuthenticationViaCompanyPortal|Логический|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
+|displayName|String|Имя профиля|
+|описание|String|Описание профиля|
+|requiresUserAuthentication|Boolean|Указывает необходимость проверки подлинности пользователей в профиле|
+|configurationEndpointUrl|String|URL-адрес конечной точки конфигурации для подачи заявок|
+|enableAuthenticationViaCompanyPortal|Boolean|Указывает на проверку подлинности с Apple помощник по настройке вместо портала компании.|
 
 
 

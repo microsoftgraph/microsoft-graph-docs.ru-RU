@@ -3,12 +3,13 @@ title: Получение windowsAssignedAccessProfile
 description: Чтение свойства и связи объекта windowsAssignedAccessProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e7fa26f3cdbb158991287ea8cdf5440a58bd469b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 65fe15ef5a455ddf34bad8e40893ca35a8a2284e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827246"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27920557"
 ---
 # <a name="get-windowsassignedaccessprofile"></a>Получение windowsAssignedAccessProfile
 

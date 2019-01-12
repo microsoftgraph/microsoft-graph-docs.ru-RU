@@ -2,12 +2,14 @@
 title: 'section: copyToNotebook'
 description: Копирование раздела в указанную записную книжку.
 localization_priority: Normal
-ms.openlocfilehash: 7213220711051f0d4edd926305bcdc983cfa259a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 65a3dd079f0ed67e7c754f22f805de8ed8368c87
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878038"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928208"
 ---
 # <a name="section-copytonotebook"></a>section: copyToNotebook
 
@@ -36,19 +38,19 @@ POST /sites/{id}/onenote/sections/{id}/copyToNotebook
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `application/json` |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|siteCollectionId|Строка|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|siteId|Строка|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
-|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
+|siteCollectionId|String|Идентификатор сайта SharePoint для копирования. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|siteId|String|Идентификатор веб-сайта SharePoint, чтобы скопировать. Используйте только при копировании на сайте группы разработчиков Office 365.|
+|groupId|String|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
 |id|Строка|Обязательный. Идентификатор целевой записной книжки. |
-|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
+|renameAs|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 

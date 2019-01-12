@@ -2,12 +2,13 @@
 title: 'reportRoot: getOneDriveUsageFileCounts'
 description: Получение общего количества файлов на всех сайтах и количества активных файлов. Файл считается активным, если он был сохранен, синхронизирован, изменен в указанный период или им поделились в указанный период.
 localization_priority: Normal
-ms.openlocfilehash: d5c7127bfb5389dbf77e2bf168fd966768711932
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 76a9b0bf7fccde5ac93f45c0f47248fd99faabd6
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815668"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921026"
 ---
 # <a name="reportroot-getonedriveusagefilecounts"></a>reportRoot: getOneDriveUsageFileCounts
 

@@ -2,12 +2,14 @@
 title: Тип ресурса teamFunSettings
 description: Параметры для настройки использования Giphy, memes и наклейки рабочих групп.
 localization_priority: Normal
-ms.openlocfilehash: 3257e54744ef14a94a0570ae45afd271c1514bb0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: nkramer
+ms.prod: microsoft-teams
+ms.openlocfilehash: c701ffe76c82a6cb4b3586272926290f634a02d9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825601"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987673"
 ---
 # <a name="teamfunsettings-resource-type"></a>Тип ресурса teamFunSettings
 

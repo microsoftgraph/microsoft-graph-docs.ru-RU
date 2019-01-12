@@ -3,12 +3,13 @@ title: 'educationSynchronizationProfile: uploadUrl'
 description: Получение доступа к общим подписи (SAS) для загрузки исходных файлов в хранилище Azure больших двоичных объектов для синхронизации профиля данных конкретного school в клиентов. Маркер SAS имеет допустимость часа.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 2f6b10bda218bafbe18698defed138c39a45cc7b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: e0119a583ea1cdc753b44a984af84a42173a4295
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894147"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27969914"
 ---
 # <a name="educationsynchronizationprofile-uploadurl"></a>educationSynchronizationProfile: uploadUrl
 

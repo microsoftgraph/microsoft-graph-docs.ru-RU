@@ -3,12 +3,13 @@ title: Перечисление пользователей
 description: Список свойств и связей объектов user.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f286cd3bdb49f99fcc8db52b1fee8c204ccdee7c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 76e1d8cf21ed2c7757255b67d5646187827f9d59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856790"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27970691"
 ---
 # <a name="list-users"></a>Перечисление пользователей
 

@@ -3,12 +3,13 @@ title: Список androidTrustedRootCertificates
 description: Свойства списка и связей объектов androidTrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 35fc14ebc044164e99c0406e1d8f6ca459030f99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a0a3a32ebe7fe411f5ff09bdb32eed7aea79bcc1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854357"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27991001"
 ---
 # <a name="list-androidtrustedrootcertificates"></a>Список androidTrustedRootCertificates
 

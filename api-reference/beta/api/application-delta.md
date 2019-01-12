@@ -2,12 +2,14 @@
 title: 'приложение: дельты'
 description: Get вновь созданных, обновлении или удалении приложения без необходимости выполнять полное чтение всего ресурсов коллекция. Для получения дополнительных сведений в разделе с помощью запроса дельты.
 localization_priority: Normal
-ms.openlocfilehash: 594b7c05afdc8e3e3c89e8d2fb8e59f25cf4d4ea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 4479048865d50cb0887d938708cb44ff62a4a9b2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825475"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27917197"
 ---
 # <a name="application-delta"></a>приложение: дельты
 

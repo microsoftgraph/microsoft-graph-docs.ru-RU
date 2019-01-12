@@ -3,12 +3,13 @@ title: Get androidManagedAppProtection
 description: Чтение свойств и связей объекта androidManagedAppProtection.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 40fc43036a4bd6deed7d4bb7f05eb9d6866b9fae
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 656b09610fae79a25274b98cba55cd07b92b29dc
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825041"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919297"
 ---
 # <a name="get-androidmanagedappprotection"></a>Get androidManagedAppProtection
 

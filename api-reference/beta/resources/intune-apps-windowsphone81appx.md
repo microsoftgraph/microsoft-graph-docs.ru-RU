@@ -3,12 +3,13 @@ title: Тип ресурса windowsPhone81AppX
 description: Содержит свойства и наследуемые свойства для приложений Windows Phone 8.1 AppX бизнес-систем.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 535eb9e82241870418826711b76421c6c6b2d0ec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 1d356cd21b4fb268588636483b8c9a655a545536
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878213"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916007"
 ---
 # <a name="windowsphone81appx-resource-type"></a>Тип ресурса windowsPhone81AppX
 
@@ -32,7 +33,7 @@ ms.locfileid: "27878213"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -55,8 +56,8 @@ ms.locfileid: "27878213"
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|Строка|Идентификатор продукта телефона.|
-|phonePublisherId|Строка|Publisher с идентификатором телефона.|
+|phoneProductIdentifier|String|Идентификатор продукта телефона.|
+|phonePublisherId|String|Publisher с идентификатором телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи

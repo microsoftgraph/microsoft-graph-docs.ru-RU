@@ -2,12 +2,14 @@
 title: 'message: createForward'
 description: Создание черновика для пересылки указанного ресурса message. После этого можно обновить черновик, чтобы добавить содержимое в **текст** или изменить другие свойства сообщения, либо просто отправить черновик.
 localization_priority: Normal
-ms.openlocfilehash: 230fdfd4a1700e5bcbe2e1cb364de08d86c7be39
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 484eb33c3cfe7dc9c1dc3ec896e45cff9ecce61d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888265"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921145"
 ---
 # <a name="message-createforward"></a>message: createForward
 
@@ -38,7 +40,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createForwar
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 

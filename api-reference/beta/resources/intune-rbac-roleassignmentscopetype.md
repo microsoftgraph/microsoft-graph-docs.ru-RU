@@ -3,12 +3,13 @@ title: Тип перечисления roleAssignmentScopeType
 description: Указывает тип области для назначения ролей.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 738579fbd8bcda9ac438ada2f7746e020396d225
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b72e74bdb401f556214470b4c0aeda651339e332
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27871542"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27916084"
 ---
 # <a name="roleassignmentscopetype-enum-type"></a>Тип перечисления roleAssignmentScopeType
 

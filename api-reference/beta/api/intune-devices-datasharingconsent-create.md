@@ -3,12 +3,13 @@ title: Создание dataSharingConsent
 description: Создание нового объекта dataSharingConsent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cf45db12a9876d9be89d20fa3328e89eeea82013
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 83d329072b6e18f8ecbb745769e872c76fdae86b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862288"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919080"
 ---
 # <a name="create-datasharingconsent"></a>Создание dataSharingConsent
 
@@ -49,13 +50,13 @@ POST /deviceManagement/dataSharingConsents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|Строка|Отображаемое имя службы рабочих процессов|
-|termsUrl|Строка|TermsUrl для данных, общий доступ к согласия|
-|предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
+|id|String|Разрешения общего доступа данных идентификатор|
+|Отображаемое_имя_службы|String|Отображаемое имя службы рабочих процессов|
+|termsUrl|String|TermsUrl для данных, общий доступ к согласия|
+|предоставлено|Boolean|Предоставленные состояний для данных, общий доступ к согласия|
 |grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|Строка|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|Строка|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|grantedByUpn|String|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
+|grantedByUserId|String|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
 
 
 

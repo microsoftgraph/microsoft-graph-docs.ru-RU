@@ -3,12 +3,13 @@ title: Тип ресурса tokenMeetingInfo
 description: Тип tokenMeetingInfo.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: 9a618906df450ce58f7428a76367e896b315591a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0d68b60cdfc1470bb1c1c3846c34dfc76c5c5a1b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806981"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27919269"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса tokenMeetingInfo
 
@@ -20,7 +21,7 @@ ms.locfileid: "27806981"
 
 | Свойство                     | Тип    | Описание                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Логический | Указывает, если беседы можно продолжить после покидает узла беседы. |
+| allowConversationWithoutHost | Boolean | Указывает, если беседы можно продолжить после покидает узла беседы. |
 | токен                        | Строка  | Маркер для присоединения к/активации собрания.                                        |
 
 ## <a name="json-representation"></a>Представление JSON

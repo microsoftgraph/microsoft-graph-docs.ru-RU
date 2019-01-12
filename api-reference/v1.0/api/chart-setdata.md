@@ -3,12 +3,13 @@ title: 'Chart: setData'
 description: Сбрасывает исходные данные для диаграммы.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: b295b38df2cf7be1c568588d58bfb2cf529f4dc4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 93f50cd4f62909514145cfd369f32e1736b7215f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858151"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928525"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -40,7 +41,7 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setData
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Указывает, что способ столбцы или строки используются в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), строк, столбцов.  Возможные значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|строка|Необязательный параметр. Указывает, что способ столбцы или строки используются в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), строк, столбцов.  Возможные значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 

@@ -2,12 +2,14 @@
 title: Тип ресурса plannerUser
 description: 'Ресурс **plannerUser** предоставляет доступ к ресурсам, планировщик работы для пользователя. '
 localization_priority: Normal
-ms.openlocfilehash: 709b259c88d8fe0f02defaa57e77727a7b967cfd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 1b240092e7476884399f88fad61551763f33fe69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820806"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27928285"
 ---
 # <a name="planneruser-resource-type"></a>Тип ресурса plannerUser
 
@@ -29,7 +31,7 @@ ms.locfileid: "27820806"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Только для чтения. Идентификатор plannerUser|
+|id|String| Только для чтения. Идентификатор plannerUser|
 |favoritePlanReferences|[plannerFavoritePlanReferenceCollection](plannerfavoriteplanreferencecollection.md);| Коллекция, содержащая ссылки на планы, которые пользователь помеченные как "Избранное".|
 |recentPlanReferences|[plannerRecentPlanReferenceCollection](plannerrecentplanreferencecollection.md).| Коллекция, содержащая ссылки на планы, которые были просмотрены недавно пользователя в приложениях, которые поддерживают последние планов.|
 
