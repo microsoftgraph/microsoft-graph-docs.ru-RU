@@ -3,52 +3,53 @@ title: Получение объекта ChartFont
 description: Получение свойств и связей объекта chartfont.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 6b5ea27a182f009a029300a2d8268537bebc76f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: e4e5eb02e83855a4780ceec9764ec01ac82a1ce0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892437"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966715"
 ---
-# <a name="get-chartfont"></a><span data-ttu-id="44f82-103">Получение объекта ChartFont</span><span class="sxs-lookup"><span data-stu-id="44f82-103">Get ChartFont</span></span>
+# <a name="get-chartfont"></a><span data-ttu-id="72cfe-103">Получение объекта ChartFont</span><span class="sxs-lookup"><span data-stu-id="72cfe-103">Get ChartFont</span></span>
 
-> <span data-ttu-id="44f82-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="44f82-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="44f82-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44f82-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="72cfe-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="72cfe-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="72cfe-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="72cfe-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="44f82-106">Получение свойств и связей объекта chartfont.</span><span class="sxs-lookup"><span data-stu-id="44f82-106">Retrieve the properties and relationships of chartfont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="44f82-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="44f82-107">Permissions</span></span>
-<span data-ttu-id="44f82-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44f82-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="72cfe-106">Получение свойств и связей объекта chartfont.</span><span class="sxs-lookup"><span data-stu-id="72cfe-106">Retrieve the properties and relationships of chartfont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="72cfe-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="72cfe-107">Permissions</span></span>
+<span data-ttu-id="72cfe-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="72cfe-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="44f82-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44f82-110">Permission type</span></span>      | <span data-ttu-id="44f82-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="44f82-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="72cfe-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="72cfe-110">Permission type</span></span>      | <span data-ttu-id="72cfe-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="72cfe-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="44f82-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44f82-112">Delegated (work or school account)</span></span> | <span data-ttu-id="44f82-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="44f82-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="44f82-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44f82-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44f82-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="44f82-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="44f82-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="44f82-116">Application</span></span> | <span data-ttu-id="44f82-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44f82-117">Not supported.</span></span> |
+|<span data-ttu-id="72cfe-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="72cfe-112">Delegated (work or school account)</span></span> | <span data-ttu-id="72cfe-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="72cfe-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="72cfe-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="72cfe-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="72cfe-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="72cfe-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="72cfe-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="72cfe-116">Application</span></span> | <span data-ttu-id="72cfe-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="72cfe-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="44f82-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44f82-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="72cfe-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="72cfe-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
 GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="44f82-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="44f82-119">Optional query parameters</span></span>
-<span data-ttu-id="44f82-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="44f82-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="72cfe-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="72cfe-119">Optional query parameters</span></span>
+<span data-ttu-id="72cfe-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="72cfe-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="44f82-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="44f82-121">Request headers</span></span>
-| <span data-ttu-id="44f82-122">Имя</span><span class="sxs-lookup"><span data-stu-id="44f82-122">Name</span></span>      |<span data-ttu-id="44f82-123">Описание</span><span class="sxs-lookup"><span data-stu-id="44f82-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="72cfe-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="72cfe-121">Request headers</span></span>
+| <span data-ttu-id="72cfe-122">Имя</span><span class="sxs-lookup"><span data-stu-id="72cfe-122">Name</span></span>      |<span data-ttu-id="72cfe-123">Описание</span><span class="sxs-lookup"><span data-stu-id="72cfe-123">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="44f82-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="44f82-124">Authorization</span></span>  | <span data-ttu-id="44f82-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="44f82-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="44f82-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="44f82-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="44f82-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="44f82-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="72cfe-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="72cfe-124">Authorization</span></span>  | <span data-ttu-id="72cfe-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="72cfe-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="72cfe-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="72cfe-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="72cfe-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="72cfe-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="44f82-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="44f82-130">Request body</span></span>
-<span data-ttu-id="44f82-131">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="44f82-131">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="72cfe-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="72cfe-130">Request body</span></span>
+<span data-ttu-id="72cfe-131">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="72cfe-131">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="44f82-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="44f82-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="72cfe-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="72cfe-132">Response</span></span>
 
-<span data-ttu-id="44f82-133">В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartFont](../resources/chartfont.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="44f82-133">If successful, this method returns a `200 OK` response code and [ChartFont](../resources/chartfont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="44f82-134">Пример</span><span class="sxs-lookup"><span data-stu-id="44f82-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="44f82-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="44f82-135">Request</span></span>
-<span data-ttu-id="44f82-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="44f82-136">Here is an example of the request.</span></span>
+<span data-ttu-id="72cfe-133">В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartFont](../resources/chartfont.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="72cfe-133">If successful, this method returns a `200 OK` response code and [ChartFont](../resources/chartfont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="72cfe-134">Пример</span><span class="sxs-lookup"><span data-stu-id="72cfe-134">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="72cfe-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="72cfe-135">Request</span></span>
+<span data-ttu-id="72cfe-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="72cfe-136">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_chartfont"
@@ -56,8 +57,8 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 ```
-##### <a name="response"></a><span data-ttu-id="44f82-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="44f82-137">Response</span></span>
-<span data-ttu-id="44f82-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="44f82-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="72cfe-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="72cfe-137">Response</span></span>
+<span data-ttu-id="72cfe-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="72cfe-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

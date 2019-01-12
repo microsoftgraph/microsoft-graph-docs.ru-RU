@@ -2,52 +2,54 @@
 title: 'orgContact: getMemberGroups'
 description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
-ms.openlocfilehash: 77ec78708a7f1647133e85ae521417cf358996b8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 8da8f91a925c7a4fe783ba570a712819b4fff9cf
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836053"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915475"
 ---
-# <a name="orgcontact-getmembergroups"></a><span data-ttu-id="015d5-104">orgContact: getMemberGroups</span><span class="sxs-lookup"><span data-stu-id="015d5-104">orgContact: getMemberGroups</span></span>
+# <a name="orgcontact-getmembergroups"></a><span data-ttu-id="e7770-104">orgContact: getMemberGroups</span><span class="sxs-lookup"><span data-stu-id="e7770-104">orgContact: getMemberGroups</span></span>
 
-> <span data-ttu-id="015d5-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="015d5-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="015d5-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="015d5-106">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e7770-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e7770-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e7770-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e7770-106">Use of these APIs in production applications is not supported.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="015d5-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="015d5-107">Permissions</span></span>
-<span data-ttu-id="015d5-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="015d5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e7770-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e7770-107">Permissions</span></span>
+<span data-ttu-id="e7770-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7770-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="015d5-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="015d5-110">Permission type</span></span>      | <span data-ttu-id="015d5-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="015d5-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="e7770-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e7770-110">Permission type</span></span>      | <span data-ttu-id="e7770-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e7770-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="015d5-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="015d5-112">Delegated (work or school account)</span></span> | <span data-ttu-id="015d5-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="015d5-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="015d5-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="015d5-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="015d5-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="015d5-115">Not supported.</span></span>    |
-|<span data-ttu-id="015d5-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="015d5-116">Application</span></span> | <span data-ttu-id="015d5-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="015d5-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="e7770-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e7770-112">Delegated (work or school account)</span></span> | <span data-ttu-id="e7770-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="e7770-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="e7770-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e7770-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e7770-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e7770-115">Not supported.</span></span>    |
+|<span data-ttu-id="e7770-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e7770-116">Application</span></span> | <span data-ttu-id="e7770-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e7770-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="015d5-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="015d5-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7770-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e7770-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /contacts/{id}/getMemberGroups
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="015d5-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="015d5-119">Request headers</span></span>
-| <span data-ttu-id="015d5-120">Имя</span><span class="sxs-lookup"><span data-stu-id="015d5-120">Name</span></span>       | <span data-ttu-id="015d5-121">Тип</span><span class="sxs-lookup"><span data-stu-id="015d5-121">Type</span></span> | <span data-ttu-id="015d5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="015d5-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e7770-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e7770-119">Request headers</span></span>
+| <span data-ttu-id="e7770-120">Имя</span><span class="sxs-lookup"><span data-stu-id="e7770-120">Name</span></span>       | <span data-ttu-id="e7770-121">Тип</span><span class="sxs-lookup"><span data-stu-id="e7770-121">Type</span></span> | <span data-ttu-id="e7770-122">Описание</span><span class="sxs-lookup"><span data-stu-id="e7770-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="015d5-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="015d5-123">Authorization</span></span>  | <span data-ttu-id="015d5-124">string</span><span class="sxs-lookup"><span data-stu-id="015d5-124">string</span></span>  | <span data-ttu-id="015d5-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="015d5-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e7770-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7770-123">Authorization</span></span>  | <span data-ttu-id="e7770-124">строка</span><span class="sxs-lookup"><span data-stu-id="e7770-124">string</span></span>  | <span data-ttu-id="e7770-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e7770-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="015d5-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="015d5-127">Request body</span></span>
-<span data-ttu-id="015d5-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="015d5-128">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7770-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="e7770-127">Request body</span></span>
+<span data-ttu-id="e7770-128">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="e7770-128">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="015d5-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="015d5-129">Parameter</span></span>    | <span data-ttu-id="015d5-130">Тип</span><span class="sxs-lookup"><span data-stu-id="015d5-130">Type</span></span>   |<span data-ttu-id="015d5-131">Описание</span><span class="sxs-lookup"><span data-stu-id="015d5-131">Description</span></span>|
+| <span data-ttu-id="e7770-129">Параметр</span><span class="sxs-lookup"><span data-stu-id="e7770-129">Parameter</span></span>    | <span data-ttu-id="e7770-130">Тип</span><span class="sxs-lookup"><span data-stu-id="e7770-130">Type</span></span>   |<span data-ttu-id="e7770-131">Описание</span><span class="sxs-lookup"><span data-stu-id="e7770-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="015d5-132">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="015d5-132">securityEnabledOnly</span></span>|<span data-ttu-id="015d5-133">Boolean</span><span class="sxs-lookup"><span data-stu-id="015d5-133">Boolean</span></span>||
+|<span data-ttu-id="e7770-132">securityEnabledOnly</span><span class="sxs-lookup"><span data-stu-id="e7770-132">securityEnabledOnly</span></span>|<span data-ttu-id="e7770-133">Boolean</span><span class="sxs-lookup"><span data-stu-id="e7770-133">Boolean</span></span>||
 
-## <a name="response"></a><span data-ttu-id="015d5-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="015d5-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e7770-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="e7770-134">Response</span></span>
 
-<span data-ttu-id="015d5-135">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="015d5-135">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
+<span data-ttu-id="e7770-135">В случае успеха этот метод возвращает код отклика `200 OK` и объект коллекции String в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e7770-135">If successful, this method returns `200 OK` response code and String collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="015d5-136">Пример</span><span class="sxs-lookup"><span data-stu-id="015d5-136">Example</span></span>
-<span data-ttu-id="015d5-137">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="015d5-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="015d5-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="015d5-138">Request</span></span>
-<span data-ttu-id="015d5-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="015d5-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="e7770-136">Пример</span><span class="sxs-lookup"><span data-stu-id="e7770-136">Example</span></span>
+<span data-ttu-id="e7770-137">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="e7770-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="e7770-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="e7770-138">Request</span></span>
+<span data-ttu-id="e7770-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e7770-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "orgcontact_getmembergroups"
@@ -62,8 +64,8 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="015d5-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="015d5-140">Response</span></span>
-<span data-ttu-id="015d5-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="015d5-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e7770-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="e7770-140">Response</span></span>
+<span data-ttu-id="e7770-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="e7770-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

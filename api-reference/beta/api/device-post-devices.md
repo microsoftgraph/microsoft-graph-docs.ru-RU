@@ -1,53 +1,54 @@
 ---
 title: Создание устройства
 description: Создание нового устройства.
-author: tfitzmac
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: 4749b8cbd40a05de4d7b6c43b5cef7907d345add
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 0d24829a057326d35b2b35e0ba72d736e3afb15c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833259"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27971601"
 ---
-# <a name="create-device"></a><span data-ttu-id="cc296-103">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="cc296-103">Create device</span></span>
+# <a name="create-device"></a><span data-ttu-id="88aec-103">Создание устройства</span><span class="sxs-lookup"><span data-stu-id="88aec-103">Create device</span></span>
 
-> <span data-ttu-id="cc296-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="cc296-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cc296-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc296-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="88aec-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="88aec-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="88aec-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="88aec-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="cc296-106">Создание нового устройства.</span><span class="sxs-lookup"><span data-stu-id="cc296-106">Create a new device.</span></span>
-## <a name="permissions"></a><span data-ttu-id="cc296-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cc296-107">Permissions</span></span>
-<span data-ttu-id="cc296-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cc296-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="88aec-106">Создание нового устройства.</span><span class="sxs-lookup"><span data-stu-id="88aec-106">Create a new device.</span></span>
+## <a name="permissions"></a><span data-ttu-id="88aec-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="88aec-107">Permissions</span></span>
+<span data-ttu-id="88aec-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="88aec-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="cc296-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cc296-110">Permission type</span></span>      | <span data-ttu-id="cc296-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cc296-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="88aec-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="88aec-110">Permission type</span></span>      | <span data-ttu-id="88aec-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="88aec-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cc296-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cc296-112">Delegated (work or school account)</span></span> | <span data-ttu-id="cc296-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="cc296-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="cc296-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cc296-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cc296-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc296-115">Not supported.</span></span>    |
-|<span data-ttu-id="cc296-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cc296-116">Application</span></span> | <span data-ttu-id="cc296-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cc296-117">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="88aec-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="88aec-112">Delegated (work or school account)</span></span> | <span data-ttu-id="88aec-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="88aec-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="88aec-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="88aec-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="88aec-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="88aec-115">Not supported.</span></span>    |
+|<span data-ttu-id="88aec-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="88aec-116">Application</span></span> | <span data-ttu-id="88aec-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="88aec-117">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cc296-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cc296-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="88aec-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="88aec-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /devices
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="cc296-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cc296-119">Request headers</span></span>
-| <span data-ttu-id="cc296-120">Имя</span><span class="sxs-lookup"><span data-stu-id="cc296-120">Name</span></span>       | <span data-ttu-id="cc296-121">Тип</span><span class="sxs-lookup"><span data-stu-id="cc296-121">Type</span></span> | <span data-ttu-id="cc296-122">Описание</span><span class="sxs-lookup"><span data-stu-id="cc296-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="88aec-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="88aec-119">Request headers</span></span>
+| <span data-ttu-id="88aec-120">Имя</span><span class="sxs-lookup"><span data-stu-id="88aec-120">Name</span></span>       | <span data-ttu-id="88aec-121">Тип</span><span class="sxs-lookup"><span data-stu-id="88aec-121">Type</span></span> | <span data-ttu-id="88aec-122">Описание</span><span class="sxs-lookup"><span data-stu-id="88aec-122">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="cc296-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="cc296-123">Authorization</span></span>  | <span data-ttu-id="cc296-124">string</span><span class="sxs-lookup"><span data-stu-id="cc296-124">string</span></span>  | <span data-ttu-id="cc296-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cc296-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="88aec-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="88aec-123">Authorization</span></span>  | <span data-ttu-id="88aec-124">string</span><span class="sxs-lookup"><span data-stu-id="88aec-124">string</span></span>  | <span data-ttu-id="88aec-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="88aec-p103">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cc296-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cc296-127">Request body</span></span>
-<span data-ttu-id="cc296-128">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cc296-128">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="88aec-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="88aec-127">Request body</span></span>
+<span data-ttu-id="88aec-128">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88aec-128">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
 
-<span data-ttu-id="cc296-129">Поскольку ресурсов **устройство** поддерживает [расширения](/graph/extensibility-overview), можно использовать `POST` операции и Добавление настраиваемых свойств с собственными данными в экземпляр устройства при его создании.</span><span class="sxs-lookup"><span data-stu-id="cc296-129">Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.</span></span>
+<span data-ttu-id="88aec-129">Поскольку ресурсов **устройство** поддерживает [расширения](/graph/extensibility-overview), можно использовать `POST` операции и Добавление настраиваемых свойств с собственными данными в экземпляр устройства при его создании.</span><span class="sxs-lookup"><span data-stu-id="88aec-129">Since the **device** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the device instance while creating it.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cc296-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc296-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="88aec-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="88aec-130">Response</span></span>
 
-<span data-ttu-id="cc296-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="cc296-131">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
+<span data-ttu-id="88aec-131">В случае успеха этот метод возвращает код отклика `201 Created` и объект [device](../resources/device.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="88aec-131">If successful, this method returns `201 Created` response code and [device](../resources/device.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="cc296-132">Пример</span><span class="sxs-lookup"><span data-stu-id="cc296-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cc296-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="cc296-133">Request</span></span>
-<span data-ttu-id="cc296-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cc296-134">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="88aec-132">Пример</span><span class="sxs-lookup"><span data-stu-id="88aec-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="88aec-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="88aec-133">Request</span></span>
+<span data-ttu-id="88aec-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="88aec-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_device_from_devices"
@@ -72,9 +73,9 @@ Content-length: 364
   "deviceVersion": 99
 }
 ```
-<span data-ttu-id="cc296-135">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cc296-135">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="cc296-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="cc296-136">Response</span></span>
-<span data-ttu-id="cc296-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="cc296-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="88aec-135">Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="88aec-135">In the request body, supply a JSON representation of [device](../resources/device.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="88aec-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="88aec-136">Response</span></span>
+<span data-ttu-id="88aec-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="88aec-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -101,11 +102,11 @@ Content-length: 364
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="cc296-140">См. также</span><span class="sxs-lookup"><span data-stu-id="cc296-140">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="88aec-140">См. также</span><span class="sxs-lookup"><span data-stu-id="88aec-140">See also</span></span>
 
-- [<span data-ttu-id="cc296-141">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="cc296-141">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
-- [<span data-ttu-id="cc296-142">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="cc296-142">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
-- [<span data-ttu-id="cc296-143">Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="cc296-143">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
+- [<span data-ttu-id="88aec-141">Добавление пользовательских данных в ресурсы с помощью расширений</span><span class="sxs-lookup"><span data-stu-id="88aec-141">Add custom data to resources using extensions</span></span>](/graph/extensibility-overview)
+- [<span data-ttu-id="88aec-142">Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="88aec-142">Add custom data to users using open extensions (preview)</span></span>](/graph/extensibility-open-users)
+- [<span data-ttu-id="88aec-143">Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)</span><span class="sxs-lookup"><span data-stu-id="88aec-143">Add custom data to groups using schema extensions (preview)</span></span>](/graph/extensibility-schema-groups)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
