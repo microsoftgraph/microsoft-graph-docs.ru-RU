@@ -3,30 +3,31 @@ title: Получение activeDirectoryWindowsAutopilotDeploymentProfile
 description: Чтение свойства и связи объекта activeDirectoryWindowsAutopilotDeploymentProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 05cb2d6a85522748a481d985e73a69e03e6a5033
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 193000e92491f4f4d434db57b1305fd22c85d32f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847455"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27934102"
 ---
-# <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a><span data-ttu-id="9c586-103">Получение activeDirectoryWindowsAutopilotDeploymentProfile</span><span class="sxs-lookup"><span data-stu-id="9c586-103">Get activeDirectoryWindowsAutopilotDeploymentProfile</span></span>
+# <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a><span data-ttu-id="14856-103">Получение activeDirectoryWindowsAutopilotDeploymentProfile</span><span class="sxs-lookup"><span data-stu-id="14856-103">Get activeDirectoryWindowsAutopilotDeploymentProfile</span></span>
 
-> <span data-ttu-id="9c586-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9c586-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9c586-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c586-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="14856-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="14856-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="14856-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14856-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="9c586-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="9c586-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="14856-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="14856-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="9c586-107">Чтение свойства и связи объекта [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="9c586-107">Read properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="9c586-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="9c586-108">Prerequisites</span></span>
-<span data-ttu-id="9c586-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9c586-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="14856-107">Чтение свойства и связи объекта [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="14856-107">Read properties and relationships of the [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object.</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="14856-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="14856-108">Prerequisites</span></span>
+<span data-ttu-id="14856-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="14856-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="9c586-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9c586-111">Permission type</span></span>|<span data-ttu-id="9c586-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="9c586-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="14856-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="14856-111">Permission type</span></span>|<span data-ttu-id="14856-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="14856-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c586-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9c586-113">Delegated (work or school account)</span></span>|<span data-ttu-id="9c586-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="9c586-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
-|<span data-ttu-id="9c586-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9c586-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="9c586-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c586-116">Not supported.</span></span>|
-|<span data-ttu-id="9c586-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9c586-117">Application</span></span>|<span data-ttu-id="9c586-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9c586-118">Not supported.</span></span>|
+|<span data-ttu-id="14856-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="14856-113">Delegated (work or school account)</span></span>|<span data-ttu-id="14856-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span><span class="sxs-lookup"><span data-stu-id="14856-114">DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All</span></span>|
+|<span data-ttu-id="14856-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="14856-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="14856-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14856-116">Not supported.</span></span>|
+|<span data-ttu-id="14856-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="14856-117">Application</span></span>|<span data-ttu-id="14856-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="14856-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="9c586-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9c586-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="14856-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="14856-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,30 +38,30 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/intendedDeploymentProfile
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="9c586-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9c586-120">Optional query parameters</span></span>
-<span data-ttu-id="9c586-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="9c586-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="9c586-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9c586-122">Request headers</span></span>
-|<span data-ttu-id="9c586-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="9c586-123">Header</span></span>|<span data-ttu-id="9c586-124">Значение</span><span class="sxs-lookup"><span data-stu-id="9c586-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="14856-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="14856-120">Optional query parameters</span></span>
+<span data-ttu-id="14856-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="14856-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="request-headers"></a><span data-ttu-id="14856-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="14856-122">Request headers</span></span>
+|<span data-ttu-id="14856-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="14856-123">Header</span></span>|<span data-ttu-id="14856-124">Значение</span><span class="sxs-lookup"><span data-stu-id="14856-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="9c586-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="9c586-125">Authorization</span></span>|<span data-ttu-id="9c586-126">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="9c586-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="9c586-127">Accept</span><span class="sxs-lookup"><span data-stu-id="9c586-127">Accept</span></span>|<span data-ttu-id="9c586-128">application/json</span><span class="sxs-lookup"><span data-stu-id="9c586-128">application/json</span></span>|
+|<span data-ttu-id="14856-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="14856-125">Authorization</span></span>|<span data-ttu-id="14856-126">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="14856-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="14856-127">Accept</span><span class="sxs-lookup"><span data-stu-id="14856-127">Accept</span></span>|<span data-ttu-id="14856-128">application/json</span><span class="sxs-lookup"><span data-stu-id="14856-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="9c586-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9c586-129">Request body</span></span>
-<span data-ttu-id="9c586-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="9c586-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="14856-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="14856-129">Request body</span></span>
+<span data-ttu-id="14856-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="14856-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="9c586-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="9c586-131">Response</span></span>
-<span data-ttu-id="9c586-132">Успешно завершена, этот метод возвращает `200 OK` объект [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="9c586-132">If successful, this method returns a `200 OK` response code and [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="14856-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="14856-131">Response</span></span>
+<span data-ttu-id="14856-132">Успешно завершена, этот метод возвращает `200 OK` объект [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="14856-132">If successful, this method returns a `200 OK` response code and [activeDirectoryWindowsAutopilotDeploymentProfile](../resources/intune-enrollment-activedirectorywindowsautopilotdeploymentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="9c586-133">Пример</span><span class="sxs-lookup"><span data-stu-id="9c586-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="9c586-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="9c586-134">Request</span></span>
-<span data-ttu-id="9c586-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9c586-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="14856-133">Пример</span><span class="sxs-lookup"><span data-stu-id="14856-133">Example</span></span>
+### <a name="request"></a><span data-ttu-id="14856-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="14856-134">Request</span></span>
+<span data-ttu-id="14856-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="14856-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeploymentProfiles/{windowsAutopilotDeploymentProfileId}
 ```
 
-### <a name="response"></a><span data-ttu-id="9c586-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="9c586-136">Response</span></span>
-<span data-ttu-id="9c586-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="9c586-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="14856-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="14856-136">Response</span></span>
+<span data-ttu-id="14856-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="14856-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

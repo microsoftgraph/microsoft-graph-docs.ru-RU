@@ -3,32 +3,33 @@ title: Тип ресурса windowsKioskActiveDirectoryGroup
 description: Класс, используемый для идентификации группу Azure Directory для базовой конфигурации
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dc9db9aa120411c423492efa162973e33cc4c303
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 632396b727448032f198a54b97ba0a46b961abe5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850528"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27955235"
 ---
-# <a name="windowskioskactivedirectorygroup-resource-type"></a><span data-ttu-id="45ccd-103">Тип ресурса windowsKioskActiveDirectoryGroup</span><span class="sxs-lookup"><span data-stu-id="45ccd-103">windowsKioskActiveDirectoryGroup resource type</span></span>
+# <a name="windowskioskactivedirectorygroup-resource-type"></a><span data-ttu-id="aa608-103">Тип ресурса windowsKioskActiveDirectoryGroup</span><span class="sxs-lookup"><span data-stu-id="aa608-103">windowsKioskActiveDirectoryGroup resource type</span></span>
 
-> <span data-ttu-id="45ccd-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="45ccd-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="45ccd-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="45ccd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="aa608-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="aa608-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="aa608-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aa608-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="45ccd-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="45ccd-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="aa608-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="aa608-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="45ccd-107">Класс, используемый для идентификации группу Azure Directory для базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="45ccd-107">The class used to identify an Azure Directory group for the kiosk configuration</span></span>
+<span data-ttu-id="aa608-107">Класс, используемый для идентификации группу Azure Directory для базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="aa608-107">The class used to identify an Azure Directory group for the kiosk configuration</span></span>
 
-<span data-ttu-id="45ccd-108">Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="45ccd-108">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
+<span data-ttu-id="aa608-108">Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="aa608-108">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="45ccd-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="45ccd-109">Properties</span></span>
-|<span data-ttu-id="45ccd-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="45ccd-110">Property</span></span>|<span data-ttu-id="45ccd-111">Тип</span><span class="sxs-lookup"><span data-stu-id="45ccd-111">Type</span></span>|<span data-ttu-id="45ccd-112">Описание</span><span class="sxs-lookup"><span data-stu-id="45ccd-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="aa608-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="aa608-109">Properties</span></span>
+|<span data-ttu-id="aa608-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="aa608-110">Property</span></span>|<span data-ttu-id="aa608-111">Тип</span><span class="sxs-lookup"><span data-stu-id="aa608-111">Type</span></span>|<span data-ttu-id="aa608-112">Описание</span><span class="sxs-lookup"><span data-stu-id="aa608-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="45ccd-113">groupName</span><span class="sxs-lookup"><span data-stu-id="45ccd-113">groupName</span></span>|<span data-ttu-id="45ccd-114">Строка</span><span class="sxs-lookup"><span data-stu-id="45ccd-114">String</span></span>|<span data-ttu-id="45ccd-115">Имя группы AD, которая будет заблокирована этой базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="45ccd-115">The name of the AD group that will be locked to this kiosk configuration</span></span>|
+|<span data-ttu-id="aa608-113">groupName</span><span class="sxs-lookup"><span data-stu-id="aa608-113">groupName</span></span>|<span data-ttu-id="aa608-114">Строка</span><span class="sxs-lookup"><span data-stu-id="aa608-114">String</span></span>|<span data-ttu-id="aa608-115">Имя группы AD, которая будет заблокирована этой базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="aa608-115">The name of the AD group that will be locked to this kiosk configuration</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="45ccd-116">Связи</span><span class="sxs-lookup"><span data-stu-id="45ccd-116">Relationships</span></span>
-<span data-ttu-id="45ccd-117">Нет</span><span class="sxs-lookup"><span data-stu-id="45ccd-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="45ccd-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="45ccd-118">JSON Representation</span></span>
-<span data-ttu-id="45ccd-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="45ccd-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="aa608-116">Связи</span><span class="sxs-lookup"><span data-stu-id="aa608-116">Relationships</span></span>
+<span data-ttu-id="aa608-117">Нет</span><span class="sxs-lookup"><span data-stu-id="aa608-117">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="aa608-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="aa608-118">JSON Representation</span></span>
+<span data-ttu-id="aa608-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="aa608-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskActiveDirectoryGroup"
