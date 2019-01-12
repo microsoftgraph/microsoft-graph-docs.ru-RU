@@ -3,50 +3,51 @@ title: 'TableColumn: delete'
 description: Удаляет столбец из таблицы.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: 3b7e30f4e958d72753ddf6bdc49cda9689cbd38c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a873bf10dcc2b652cee532378d44fcd299b32ae1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851004"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27923700"
 ---
-# <a name="tablecolumn-delete"></a><span data-ttu-id="fd50d-103">TableColumn: delete</span><span class="sxs-lookup"><span data-stu-id="fd50d-103">TableColumn: delete</span></span>
+# <a name="tablecolumn-delete"></a><span data-ttu-id="9bf91-103">TableColumn: delete</span><span class="sxs-lookup"><span data-stu-id="9bf91-103">TableColumn: delete</span></span>
 
-> <span data-ttu-id="fd50d-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="fd50d-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fd50d-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd50d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="9bf91-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9bf91-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="9bf91-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9bf91-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="fd50d-106">Удаляет столбец из таблицы.</span><span class="sxs-lookup"><span data-stu-id="fd50d-106">Deletes the column from the table.</span></span>
-## <a name="permissions"></a><span data-ttu-id="fd50d-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fd50d-107">Permissions</span></span>
-<span data-ttu-id="fd50d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fd50d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9bf91-106">Удаляет столбец из таблицы.</span><span class="sxs-lookup"><span data-stu-id="9bf91-106">Deletes the column from the table.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9bf91-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9bf91-107">Permissions</span></span>
+<span data-ttu-id="9bf91-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9bf91-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fd50d-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fd50d-110">Permission type</span></span>      | <span data-ttu-id="fd50d-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fd50d-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9bf91-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9bf91-110">Permission type</span></span>      | <span data-ttu-id="9bf91-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9bf91-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fd50d-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fd50d-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fd50d-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd50d-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="fd50d-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fd50d-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd50d-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd50d-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="fd50d-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fd50d-116">Application</span></span> | <span data-ttu-id="fd50d-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd50d-117">Not supported.</span></span> |
+|<span data-ttu-id="9bf91-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9bf91-112">Delegated (work or school account)</span></span> | <span data-ttu-id="9bf91-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9bf91-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9bf91-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9bf91-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9bf91-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9bf91-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9bf91-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9bf91-116">Application</span></span> | <span data-ttu-id="9bf91-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9bf91-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fd50d-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fd50d-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9bf91-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9bf91-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/tables/{id|name}/columns/{id|name}/delete
 POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="fd50d-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fd50d-119">Request headers</span></span>
-| <span data-ttu-id="fd50d-120">Имя</span><span class="sxs-lookup"><span data-stu-id="fd50d-120">Name</span></span>       | <span data-ttu-id="fd50d-121">Описание</span><span class="sxs-lookup"><span data-stu-id="fd50d-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9bf91-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9bf91-119">Request headers</span></span>
+| <span data-ttu-id="9bf91-120">Имя</span><span class="sxs-lookup"><span data-stu-id="9bf91-120">Name</span></span>       | <span data-ttu-id="9bf91-121">Описание</span><span class="sxs-lookup"><span data-stu-id="9bf91-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fd50d-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fd50d-122">Authorization</span></span>  | <span data-ttu-id="fd50d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fd50d-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fd50d-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="fd50d-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="fd50d-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="fd50d-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="9bf91-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9bf91-122">Authorization</span></span>  | <span data-ttu-id="9bf91-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9bf91-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9bf91-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="9bf91-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="9bf91-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="9bf91-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fd50d-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fd50d-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="9bf91-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="9bf91-128">Request body</span></span>
 
-## <a name="response"></a><span data-ttu-id="fd50d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="fd50d-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9bf91-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="9bf91-129">Response</span></span>
 
-<span data-ttu-id="fd50d-p105">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fd50d-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="9bf91-p105">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="9bf91-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fd50d-132">Пример</span><span class="sxs-lookup"><span data-stu-id="fd50d-132">Example</span></span>
-<span data-ttu-id="fd50d-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="fd50d-133">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="fd50d-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd50d-134">Request</span></span>
-<span data-ttu-id="fd50d-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fd50d-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9bf91-132">Пример</span><span class="sxs-lookup"><span data-stu-id="9bf91-132">Example</span></span>
+<span data-ttu-id="9bf91-133">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="9bf91-133">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="9bf91-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="9bf91-134">Request</span></span>
+<span data-ttu-id="9bf91-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9bf91-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "tablecolumn_delete"
@@ -55,8 +56,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/delete
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/delete
 ```
 
-##### <a name="response"></a><span data-ttu-id="fd50d-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="fd50d-136">Response</span></span>
-<span data-ttu-id="fd50d-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="fd50d-137">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="9bf91-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="9bf91-136">Response</span></span>
+<span data-ttu-id="9bf91-137">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9bf91-137">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true,

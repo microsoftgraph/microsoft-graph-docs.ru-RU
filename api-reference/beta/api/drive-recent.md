@@ -4,30 +4,31 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Создание списка последних файлов
 localization_priority: Normal
-ms.openlocfilehash: 9c5b61e0e86325aba7a6b468cba2262dd8fd4dfc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: d99caa91bc0b5d7140d3628db42955e558de3598
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879389"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27915404"
 ---
-# <a name="list-recent-files"></a><span data-ttu-id="fee6f-102">Создание списка последних файлов</span><span class="sxs-lookup"><span data-stu-id="fee6f-102">List recent files</span></span>
+# <a name="list-recent-files"></a><span data-ttu-id="189b2-102">Создание списка последних файлов</span><span class="sxs-lookup"><span data-stu-id="189b2-102">List recent files</span></span>
 
-> <span data-ttu-id="fee6f-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="fee6f-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="fee6f-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fee6f-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="189b2-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="189b2-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="189b2-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="189b2-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="fee6f-p102">Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.</span><span class="sxs-lookup"><span data-stu-id="fee6f-p102">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
+<span data-ttu-id="189b2-p102">Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.</span><span class="sxs-lookup"><span data-stu-id="189b2-p102">List a set of items that have been recently used by the signed in user. This collection includes items that are in the user's drive as well as items they have access to from other drives.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fee6f-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fee6f-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="189b2-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="189b2-107">Permissions</span></span>
 
-<span data-ttu-id="fee6f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fee6f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="189b2-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="189b2-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fee6f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fee6f-110">Permission type</span></span>      | <span data-ttu-id="fee6f-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fee6f-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="189b2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="189b2-110">Permission type</span></span>      | <span data-ttu-id="189b2-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="189b2-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fee6f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fee6f-112">Delegated (work or school account)</span></span> | <span data-ttu-id="fee6f-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fee6f-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fee6f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fee6f-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fee6f-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fee6f-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="fee6f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fee6f-116">Application</span></span> | <span data-ttu-id="fee6f-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="fee6f-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="189b2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="189b2-112">Delegated (work or school account)</span></span> | <span data-ttu-id="189b2-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="189b2-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="189b2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="189b2-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="189b2-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="189b2-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="189b2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="189b2-116">Application</span></span> | <span data-ttu-id="189b2-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="189b2-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fee6f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fee6f-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="189b2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="189b2-118">HTTP request</span></span>
 
 <!-- { "blockType": "request",
        "name": "view-recent-files", 
@@ -38,9 +39,9 @@ ms.locfileid: "27879389"
 GET /me/drive/recent
 ```
 
-## <a name="response"></a><span data-ttu-id="fee6f-119">Ответ</span><span class="sxs-lookup"><span data-stu-id="fee6f-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="189b2-119">Ответ</span><span class="sxs-lookup"><span data-stu-id="189b2-119">Response</span></span>
 
-<span data-ttu-id="fee6f-120">Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.</span><span class="sxs-lookup"><span data-stu-id="fee6f-120">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
+<span data-ttu-id="189b2-120">Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.</span><span class="sxs-lookup"><span data-stu-id="189b2-120">This method returns a collection of [DriveItem](../resources/driveitem.md) resources for items which the owner of the drive has recently accessed.</span></span>
 
 <!-- { "blockType": "response",
        "@odata.type": "Collection(microsoft.graph.driveItem)",
@@ -86,9 +87,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="fee6f-121">Примечания</span><span class="sxs-lookup"><span data-stu-id="fee6f-121">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="189b2-121">Примечания</span><span class="sxs-lookup"><span data-stu-id="189b2-121">Remarks</span></span>
 
-<span data-ttu-id="fee6f-p104">Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="fee6f-p104">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
+<span data-ttu-id="189b2-p104">Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="189b2-p104">Some driveItems returned from the **recent** action will include the **remoteItem** facet which indicates they are items from another drive. To access the original driveItem object, you will need to make a request using the information provided in **remoteItem** in the following format:</span></span>
 
 <!-- { "blockType": "ignored", "name": "drives-get-remoteitem" } -->
 
