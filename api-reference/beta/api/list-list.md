@@ -4,42 +4,43 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: Создание списка списков SharePoint на сайте
 localization_priority: Normal
-ms.openlocfilehash: fbba85c9bb1807955670d19398e2175c3805f64f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: fa13fc93dcfcfc807671082be43a7c4b4eafd63d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851709"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27957874"
 ---
-# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="44c20-102">Перечисление списков на сайте</span><span class="sxs-lookup"><span data-stu-id="44c20-102">Enumerate lists in a site</span></span>
+# <a name="enumerate-lists-in-a-site"></a><span data-ttu-id="645fd-102">Перечисление списков на сайте</span><span class="sxs-lookup"><span data-stu-id="645fd-102">Enumerate lists in a site</span></span>
 
-> <span data-ttu-id="44c20-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="44c20-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="44c20-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44c20-104">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="645fd-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="645fd-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="645fd-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="645fd-104">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="44c20-105">Получение коллекции [списков][] для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="44c20-105">Get the collection of [lists][] for a [site][].</span></span>
+<span data-ttu-id="645fd-105">Получение коллекции [списков][] для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="645fd-105">Get the collection of [lists][] for a [site][].</span></span>
 
 [списков]: ../resources/list.md
 [lists]: ../resources/list.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="44c20-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="44c20-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="645fd-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="645fd-108">Permissions</span></span>
 
-<span data-ttu-id="44c20-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44c20-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="645fd-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="645fd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="44c20-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44c20-111">Permission type</span></span>      | <span data-ttu-id="44c20-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="44c20-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="645fd-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="645fd-111">Permission type</span></span>      | <span data-ttu-id="645fd-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="645fd-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="44c20-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44c20-113">Delegated (work or school account)</span></span> | <span data-ttu-id="44c20-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44c20-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="44c20-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44c20-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="44c20-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44c20-116">Not supported.</span></span>    |
-|<span data-ttu-id="44c20-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="44c20-117">Application</span></span> | <span data-ttu-id="44c20-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44c20-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="645fd-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="645fd-113">Delegated (work or school account)</span></span> | <span data-ttu-id="645fd-114">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="645fd-114">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="645fd-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="645fd-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="645fd-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="645fd-116">Not supported.</span></span>    |
+|<span data-ttu-id="645fd-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="645fd-117">Application</span></span> | <span data-ttu-id="645fd-118">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="645fd-118">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="44c20-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44c20-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="645fd-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="645fd-119">HTTP request</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="example"></a><span data-ttu-id="44c20-120">Пример</span><span class="sxs-lookup"><span data-stu-id="44c20-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="645fd-120">Пример</span><span class="sxs-lookup"><span data-stu-id="645fd-120">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="44c20-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="44c20-121">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="645fd-121">Запрос</span><span class="sxs-lookup"><span data-stu-id="645fd-121">Request</span></span>
 
 <!-- { "blockType": "request", "name": "enum-lists", "scopes": "sites.read.all service.sharepoint" } -->
 
@@ -47,7 +48,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-##### <a name="response"></a><span data-ttu-id="44c20-122">Ответ</span><span class="sxs-lookup"><span data-stu-id="44c20-122">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="645fd-122">Ответ</span><span class="sxs-lookup"><span data-stu-id="645fd-122">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
@@ -81,10 +82,10 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="44c20-123">Заметки</span><span class="sxs-lookup"><span data-stu-id="44c20-123">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="645fd-123">Заметки</span><span class="sxs-lookup"><span data-stu-id="645fd-123">Remarks</span></span>
 
-<span data-ttu-id="44c20-124">По умолчанию ресурсы list с аспектом [system][] скрыты.</span><span class="sxs-lookup"><span data-stu-id="44c20-124">Lists with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="44c20-125">Чтобы перечислить их, включите `system` в оператор `$select`.</span><span class="sxs-lookup"><span data-stu-id="44c20-125">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="645fd-124">По умолчанию ресурсы list с аспектом [system][] скрыты.</span><span class="sxs-lookup"><span data-stu-id="645fd-124">Lists with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="645fd-125">Чтобы перечислить их, включите `system` в оператор `$select`.</span><span class="sxs-lookup"><span data-stu-id="645fd-125">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 

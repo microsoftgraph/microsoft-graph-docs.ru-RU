@@ -2,34 +2,36 @@
 title: 'outlookUser: supportedTimeZones'
 description: Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 9c44d79cbadebb5842bb3940e3ca41ae14672375
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: f54457169b4f4f214488727fa94b7402b0f33724
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852005"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963565"
 ---
-# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="0279f-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="0279f-103">outlookUser: supportedTimeZones</span></span>
+# <a name="outlookuser-supportedtimezones"></a><span data-ttu-id="d079f-103">outlookUser: supportedTimeZones</span><span class="sxs-lookup"><span data-stu-id="d079f-103">outlookUser: supportedTimeZones</span></span>
 
-> <span data-ttu-id="0279f-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0279f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0279f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0279f-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d079f-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d079f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d079f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d079f-105">Use of these APIs in production applications is not supported.</span></span>
 
-<span data-ttu-id="0279f-106">Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.</span><span class="sxs-lookup"><span data-stu-id="0279f-106">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
+<span data-ttu-id="d079f-106">Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.</span><span class="sxs-lookup"><span data-stu-id="d079f-106">Get the list of time zones that are supported for the user, as configured on the user's mailbox server.</span></span>
 
-<span data-ttu-id="0279f-107">Вы можете явно указать, что часовые пояса должны возвращаться в формате часовых поясов Windows или [Администрации адресного пространства Интернета](https://www.iana.org/time-zones) (IANA, другое название — часовой пояс Олсона).</span><span class="sxs-lookup"><span data-stu-id="0279f-107">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="0279f-108">Формат Windows используется по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="0279f-108">The Windows format is the default.</span></span>
+<span data-ttu-id="d079f-107">Вы можете явно указать, что часовые пояса должны возвращаться в формате часовых поясов Windows или [Администрации адресного пространства Интернета](https://www.iana.org/time-zones) (IANA, другое название — часовой пояс Олсона).</span><span class="sxs-lookup"><span data-stu-id="d079f-107">You can explicitly specify to have time zones returned in the Windows time zone format or  [Internet Assigned Numbers Authority (IANA) time zone](https://www.iana.org/time-zones) (also known as Olson time zone) format.</span></span> <span data-ttu-id="d079f-108">Формат Windows используется по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="d079f-108">The Windows format is the default.</span></span>
 
-<span data-ttu-id="0279f-109">Настраивая клиент Outlook, пользователь выбирает часовой пояс из этого списка.</span><span class="sxs-lookup"><span data-stu-id="0279f-109">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="0279f-110">После этого вы можете получить выбранный часовой пояс вместе с [ настройками почтового ящика пользователя](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="0279f-110">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
+<span data-ttu-id="d079f-109">Настраивая клиент Outlook, пользователь выбирает часовой пояс из этого списка.</span><span class="sxs-lookup"><span data-stu-id="d079f-109">When setting up an Outlook client, the user selects the preferred time zone from this supported list.</span></span> <span data-ttu-id="d079f-110">После этого вы можете получить выбранный часовой пояс вместе с [ настройками почтового ящика пользователя](user-get-mailboxsettings.md).</span><span class="sxs-lookup"><span data-stu-id="d079f-110">You can subsequently get the preferred time zone by [getting the user's mailbox settings](user-get-mailboxsettings.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="0279f-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0279f-111">Permissions</span></span>
-<span data-ttu-id="0279f-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0279f-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="d079f-111">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d079f-111">Permissions</span></span>
+<span data-ttu-id="d079f-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d079f-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0279f-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0279f-114">Permission type</span></span>      | <span data-ttu-id="0279f-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0279f-115">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="d079f-114">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d079f-114">Permission type</span></span>      | <span data-ttu-id="d079f-115">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d079f-115">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0279f-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0279f-116">Delegated (work or school account)</span></span> | <span data-ttu-id="0279f-117">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="0279f-117">User.Read, User.ReadBasic.All</span></span>    |
-|<span data-ttu-id="0279f-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0279f-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0279f-119">User.Read</span><span class="sxs-lookup"><span data-stu-id="0279f-119">User.Read</span></span>    |
-|<span data-ttu-id="0279f-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0279f-120">Application</span></span> | <span data-ttu-id="0279f-121">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="0279f-121">User.Read.All</span></span> |
+|<span data-ttu-id="d079f-116">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d079f-116">Delegated (work or school account)</span></span> | <span data-ttu-id="d079f-117">User.Read, User.ReadBasic.All</span><span class="sxs-lookup"><span data-stu-id="d079f-117">User.Read, User.ReadBasic.All</span></span>    |
+|<span data-ttu-id="d079f-118">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d079f-118">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d079f-119">User.Read</span><span class="sxs-lookup"><span data-stu-id="d079f-119">User.Read</span></span>    |
+|<span data-ttu-id="d079f-120">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d079f-120">Application</span></span> | <span data-ttu-id="d079f-121">User.Read.All</span><span class="sxs-lookup"><span data-stu-id="d079f-121">User.Read.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="0279f-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="0279f-122">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d079f-122">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d079f-122">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/supportedTimeZones
@@ -39,26 +41,26 @@ GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStan
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="0279f-123">Параметры функций</span><span class="sxs-lookup"><span data-stu-id="0279f-123">Function parameters</span></span>
-| <span data-ttu-id="0279f-124">Параметр</span><span class="sxs-lookup"><span data-stu-id="0279f-124">Parameter</span></span>      | <span data-ttu-id="0279f-125">Тип</span><span class="sxs-lookup"><span data-stu-id="0279f-125">Type</span></span>    | <span data-ttu-id="0279f-126">Описание</span><span class="sxs-lookup"><span data-stu-id="0279f-126">Description</span></span>|
+## <a name="function-parameters"></a><span data-ttu-id="d079f-123">Параметры функций</span><span class="sxs-lookup"><span data-stu-id="d079f-123">Function parameters</span></span>
+| <span data-ttu-id="d079f-124">Параметр</span><span class="sxs-lookup"><span data-stu-id="d079f-124">Parameter</span></span>      | <span data-ttu-id="d079f-125">Тип</span><span class="sxs-lookup"><span data-stu-id="d079f-125">Type</span></span>    | <span data-ttu-id="d079f-126">Описание</span><span class="sxs-lookup"><span data-stu-id="d079f-126">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="0279f-127">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="0279f-127">TimeZoneStandard</span></span>  | <span data-ttu-id="0279f-128">Строка</span><span class="sxs-lookup"><span data-stu-id="0279f-128">String</span></span>  | <span data-ttu-id="0279f-129">Формат часовых поясов.</span><span class="sxs-lookup"><span data-stu-id="0279f-129">A time zone format.</span></span> <span data-ttu-id="0279f-130">Поддерживаемые значение: `Windows` и `Iana`.</span><span class="sxs-lookup"><span data-stu-id="0279f-130">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="0279f-131">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="0279f-131">Optional.</span></span> |
+| <span data-ttu-id="d079f-127">TimeZoneStandard</span><span class="sxs-lookup"><span data-stu-id="d079f-127">TimeZoneStandard</span></span>  | <span data-ttu-id="d079f-128">Строка</span><span class="sxs-lookup"><span data-stu-id="d079f-128">String</span></span>  | <span data-ttu-id="d079f-129">Формат часовых поясов.</span><span class="sxs-lookup"><span data-stu-id="d079f-129">A time zone format.</span></span> <span data-ttu-id="d079f-130">Поддерживаемые значение: `Windows` и `Iana`.</span><span class="sxs-lookup"><span data-stu-id="d079f-130">Supported values are: `Windows`, and `Iana`.</span></span> <span data-ttu-id="d079f-131">Необязательный.</span><span class="sxs-lookup"><span data-stu-id="d079f-131">Optional.</span></span> |
 
-## <a name="request-headers"></a><span data-ttu-id="0279f-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="0279f-132">Request headers</span></span>
-| <span data-ttu-id="0279f-133">Имя</span><span class="sxs-lookup"><span data-stu-id="0279f-133">Name</span></span>       | <span data-ttu-id="0279f-134">Тип</span><span class="sxs-lookup"><span data-stu-id="0279f-134">Type</span></span> | <span data-ttu-id="0279f-135">Описание</span><span class="sxs-lookup"><span data-stu-id="0279f-135">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d079f-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d079f-132">Request headers</span></span>
+| <span data-ttu-id="d079f-133">Имя</span><span class="sxs-lookup"><span data-stu-id="d079f-133">Name</span></span>       | <span data-ttu-id="d079f-134">Тип</span><span class="sxs-lookup"><span data-stu-id="d079f-134">Type</span></span> | <span data-ttu-id="d079f-135">Описание</span><span class="sxs-lookup"><span data-stu-id="d079f-135">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="0279f-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="0279f-136">Authorization</span></span>  | <span data-ttu-id="0279f-137">string</span><span class="sxs-lookup"><span data-stu-id="0279f-137">string</span></span>  | <span data-ttu-id="0279f-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="0279f-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="d079f-136">Authorization</span><span class="sxs-lookup"><span data-stu-id="d079f-136">Authorization</span></span>  | <span data-ttu-id="d079f-137">string</span><span class="sxs-lookup"><span data-stu-id="d079f-137">string</span></span>  | <span data-ttu-id="d079f-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d079f-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="0279f-140">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="0279f-140">Request body</span></span>
-<span data-ttu-id="0279f-141">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="0279f-141">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d079f-140">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="d079f-140">Request body</span></span>
+<span data-ttu-id="d079f-141">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d079f-141">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="0279f-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="0279f-142">Response</span></span>
-<span data-ttu-id="0279f-143">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [timeZoneInformation](../resources/timezoneinformation.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="0279f-143">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d079f-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="d079f-142">Response</span></span>
+<span data-ttu-id="d079f-143">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [timeZoneInformation](../resources/timezoneinformation.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="d079f-143">If successful, this method returns `200 OK` response code and a collection of [timeZoneInformation](../resources/timezoneinformation.md) objects in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="0279f-144">Пример</span><span class="sxs-lookup"><span data-stu-id="0279f-144">Example</span></span>
+## <a name="example"></a><span data-ttu-id="d079f-144">Пример</span><span class="sxs-lookup"><span data-stu-id="d079f-144">Example</span></span>
 
-##### <a name="request-1"></a><span data-ttu-id="0279f-145">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="0279f-145">Request 1</span></span>
-<span data-ttu-id="0279f-146">В приведенном ниже примере не указывается параметр `timeZoneStandard` и считывается список поддерживаемых часовых поясов, представленных в формате часовых поясов Windows.</span><span class="sxs-lookup"><span data-stu-id="0279f-146">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
+##### <a name="request-1"></a><span data-ttu-id="d079f-145">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="d079f-145">Request 1</span></span>
+<span data-ttu-id="d079f-146">В приведенном ниже примере не указывается параметр `timeZoneStandard` и считывается список поддерживаемых часовых поясов, представленных в формате часовых поясов Windows.</span><span class="sxs-lookup"><span data-stu-id="d079f-146">The following example does not specify the `timeZoneStandard` parameter, and gets the list of supported time zones represented in the Windows time zone format.</span></span> 
 <!-- {
   "blockType": "request",
   "name": "user_supportedtimezones_default"
@@ -67,8 +69,8 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a><span data-ttu-id="0279f-147">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="0279f-147">Response 1</span></span>
-<span data-ttu-id="0279f-148">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="0279f-148">Here is an example of the response.</span></span> 
+##### <a name="response-1"></a><span data-ttu-id="d079f-147">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="d079f-147">Response 1</span></span>
+<span data-ttu-id="d079f-148">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="d079f-148">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "name": "user_supportedtimezones_default",
@@ -103,8 +105,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="request-2"></a><span data-ttu-id="0279f-149">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="0279f-149">Request 2</span></span>
-<span data-ttu-id="0279f-150">В приведенном ниже примере для параметра `TimeZoneStandard` задается значение `Iana` и считывается список поддерживаемых часовых поясов в формате IANA.</span><span class="sxs-lookup"><span data-stu-id="0279f-150">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
+##### <a name="request-2"></a><span data-ttu-id="d079f-149">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="d079f-149">Request 2</span></span>
+<span data-ttu-id="d079f-150">В приведенном ниже примере для параметра `TimeZoneStandard` задается значение `Iana` и считывается список поддерживаемых часовых поясов в формате IANA.</span><span class="sxs-lookup"><span data-stu-id="d079f-150">The following example specifies `Iana` for the `TimeZoneStandard` parameter, and gets the list of supported time zones represented in IANA format.</span></span> 
 
 <!-- {
   "blockType": "request",
@@ -115,8 +117,8 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'Iana')
 ```
 
-##### <a name="response-2"></a><span data-ttu-id="0279f-151">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="0279f-151">Response 2</span></span>
-<span data-ttu-id="0279f-152">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="0279f-152">Here is an example of the response.</span></span> 
+##### <a name="response-2"></a><span data-ttu-id="d079f-151">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="d079f-151">Response 2</span></span>
+<span data-ttu-id="d079f-152">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d079f-152">Here is an example of the response.</span></span> 
 
 <!-- {
   "blockType": "response",

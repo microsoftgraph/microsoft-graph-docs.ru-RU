@@ -3,27 +3,28 @@ title: Тип ресурса uri
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b1696d8020d467e0ba49f21b301aead4dfb502d4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2d7ff44e2963fff861756876fa960f2d52a90168
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877226"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27966799"
 ---
-# <a name="uri-resource-type"></a><span data-ttu-id="b65ce-103">Тип ресурса uri</span><span class="sxs-lookup"><span data-stu-id="b65ce-103">uri resource type</span></span>
+# <a name="uri-resource-type"></a><span data-ttu-id="5a304-103">Тип ресурса uri</span><span class="sxs-lookup"><span data-stu-id="5a304-103">uri resource type</span></span>
 
-> <span data-ttu-id="b65ce-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="b65ce-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5a304-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="5a304-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
 
-<span data-ttu-id="b65ce-105">Н/Д</span><span class="sxs-lookup"><span data-stu-id="b65ce-105">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="b65ce-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="b65ce-106">Properties</span></span>
-|<span data-ttu-id="b65ce-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="b65ce-107">Property</span></span>|<span data-ttu-id="b65ce-108">Тип</span><span class="sxs-lookup"><span data-stu-id="b65ce-108">Type</span></span>|<span data-ttu-id="b65ce-109">Описание</span><span class="sxs-lookup"><span data-stu-id="b65ce-109">Description</span></span>|
+<span data-ttu-id="5a304-105">Н/Д</span><span class="sxs-lookup"><span data-stu-id="5a304-105">Not yet documented</span></span>
+## <a name="properties"></a><span data-ttu-id="5a304-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="5a304-106">Properties</span></span>
+|<span data-ttu-id="5a304-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="5a304-107">Property</span></span>|<span data-ttu-id="5a304-108">Тип</span><span class="sxs-lookup"><span data-stu-id="5a304-108">Type</span></span>|<span data-ttu-id="5a304-109">Описание</span><span class="sxs-lookup"><span data-stu-id="5a304-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b65ce-110">segments</span><span class="sxs-lookup"><span data-stu-id="b65ce-110">segments</span></span>|<span data-ttu-id="b65ce-111">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="b65ce-111">String collection</span></span>|<span data-ttu-id="b65ce-112">Н/Д</span><span class="sxs-lookup"><span data-stu-id="b65ce-112">Not yet documented</span></span>|
+|<span data-ttu-id="5a304-110">segments</span><span class="sxs-lookup"><span data-stu-id="5a304-110">segments</span></span>|<span data-ttu-id="5a304-111">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="5a304-111">String collection</span></span>|<span data-ttu-id="5a304-112">Н/Д</span><span class="sxs-lookup"><span data-stu-id="5a304-112">Not yet documented</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="b65ce-113">Связи</span><span class="sxs-lookup"><span data-stu-id="b65ce-113">Relationships</span></span>
-<span data-ttu-id="b65ce-114">Нет</span><span class="sxs-lookup"><span data-stu-id="b65ce-114">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="b65ce-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b65ce-115">JSON Representation</span></span>
-<span data-ttu-id="b65ce-116">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b65ce-116">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="5a304-113">Связи</span><span class="sxs-lookup"><span data-stu-id="5a304-113">Relationships</span></span>
+<span data-ttu-id="5a304-114">Нет</span><span class="sxs-lookup"><span data-stu-id="5a304-114">None</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5a304-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5a304-115">JSON Representation</span></span>
+<span data-ttu-id="5a304-116">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5a304-116">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.uri"
