@@ -3,12 +3,13 @@ title: Получение cartToClassAssociation
 description: Чтение свойства и связи объекта cartToClassAssociation.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 38c31d28e361c06e6178a8943a345287d6c5f529
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: f3990b2f72d3b0bbd3c3b2f02821346a040affa2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978097"
 ---
 # <a name="get-carttoclassassociation"></a>Получение cartToClassAssociation
 
@@ -47,7 +48,7 @@ GET /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -57,7 +58,7 @@ GET /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 GET https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

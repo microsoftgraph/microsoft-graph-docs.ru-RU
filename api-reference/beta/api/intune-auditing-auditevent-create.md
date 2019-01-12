@@ -3,12 +3,13 @@ title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: dcc7a84e22b86e4ec0f9e5d17eb05f75cbe83c6a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b6b673e2c7090ecfee3368d76f4690dd309ffdd0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837886"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980281"
 ---
 # <a name="create-auditevent"></a>Создание объекта auditEvent
 
@@ -49,7 +50,7 @@ POST /deviceManagement/auditEvents
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |displayName|String|Отображаемое имя события.|
 |componentName|String|Имя компонента.|
 |actor|[auditActor](../resources/intune-auditing-auditactor.md)|Пользователь AAD и приложение, связанные с событием аудита.|
@@ -118,7 +119,7 @@ Content-length: 1390
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

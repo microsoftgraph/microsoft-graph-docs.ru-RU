@@ -3,12 +3,13 @@ title: Обновление deviceConfigurationConflictSummary
 description: Обновление свойства объекта deviceConfigurationConflictSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 4fb01b5fe7321d25e6b1d7e346a029e830375247
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 2f9bc6beef2fac86f0be79189db3bcf91f787237
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812763"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978307"
 ---
 # <a name="update-deviceconfigurationconflictsummary"></a>Обновление deviceConfigurationConflictSummary
 
@@ -50,7 +51,7 @@ PATCH /deviceManagement/deviceConfigurationConflictSummary/{deviceConfigurationC
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик конфликтует с данного параметра|
-|id|Строка|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
+|id|String|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
 |contributingSettings|Коллекция String|Набор параметров конфликтует с указанной политики|
 |deviceCheckinsImpacted|Int32|Count возвраты, на которые оказывает влияние конфликтующие политики и параметры|
 

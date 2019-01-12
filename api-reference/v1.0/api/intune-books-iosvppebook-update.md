@@ -3,12 +3,13 @@ title: Обновление объекта iosVppEBook
 description: Обновление свойств объекта iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ac75fef4b902c77f36f3a8559b40bad252a5336a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c3565a104c1f970293a9d6fc6b9ea5fcdd470228
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836094"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982346"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
@@ -47,9 +48,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
-|описание|Строка|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|описание|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|

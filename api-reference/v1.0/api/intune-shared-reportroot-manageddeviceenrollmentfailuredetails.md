@@ -3,12 +3,13 @@ title: функция managedDeviceEnrollmentFailureDetails
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d7e3ad342ad19314e10ae5e2987143646e5796c3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 128ad6e3985649b3dbaffa101c19f0b2440b0838
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27840371"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980379"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>функция managedDeviceEnrollmentFailureDetails
 
@@ -49,12 +50,12 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |:---|:---|:---|
 |skip|Int32|Н/Д|
 |top|Int32|Н/Д|
-|filter|Строка|Н/Д|
-|skipToken|Строка|Н/Д|
+|filter|String|Н/Д|
+|skipToken|String|Н/Д|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -64,7 +65,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails(skip=4,top=3,filter='parameterValue',skipToken='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Для краткости может усекаться объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
 
 ``` http

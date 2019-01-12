@@ -2,12 +2,14 @@
 title: Тип ресурса roleDefinition
 description: 'Ресурс "Определение роли". Определение роли лежит в основе доступа на основе ролей в Intune. Роль сочетает в себе ресурс Intune, например мобильное приложение, и связанные разрешения роли для ресурса, такие как создание или чтение. Есть роли двух типов: встроенные и настраиваемые. Встроенные роли невозможно изменить. Как встроенные, так и настраиваемые роли должны включать применяемые назначения. Создайте настраиваемые роли, чтобы определить роль, которая позволяет объединить любые доступные ресурсы и разрешения роли.'
 localization_priority: Normal
-ms.openlocfilehash: 27ded12110b7db9e329afc8c90ac114e9296646d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: e2394fdd260f895d9da3dc36df8579490f0382b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835674"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982907"
 ---
 # <a name="roledefinition-resource-type"></a>Тип ресурса roleDefinition
 
@@ -28,7 +30,7 @@ ms.locfileid: "27835674"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое имя определения роли.|
 |описание|String|Описание определения роли.|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|

@@ -3,12 +3,13 @@ title: функция getLicensesForApp
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a568350cacac5ca640857aeaa8fb6f6d91e5b3fc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b5d12b905e698e511a6dc05bf35fcc898d0a51bb
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831474"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978405"
 ---
 # <a name="getlicensesforapp-function"></a>функция getLicensesForApp
 

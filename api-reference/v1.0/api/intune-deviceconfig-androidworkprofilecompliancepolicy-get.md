@@ -3,12 +3,13 @@ title: Получение androidWorkProfileCompliancePolicy
 description: Чтение свойства и связи объекта androidWorkProfileCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e83a7e2404b880d7ada68f5e778ba5acc1186e58
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 7a8697ac22c32780b51dd38f986e5b8701c27b4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872032"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978930"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Получение androidWorkProfileCompliancePolicy
 
@@ -45,7 +46,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [androidWorkProfileCompliancePolicy](../resources/intune-deviceconfig-androidworkprofilecompliancepolicy.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 GET https://graph.microsoft.com/v1.0/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: Действие assign
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d938a70438e901e3135e3505fd581de820266870
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d1661b0a6a3a22e1ae08e54f33836aa065d430f2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870345"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977901"
 ---
 # <a name="assign-action"></a>Действие assign
 
@@ -55,7 +56,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -74,7 +75,7 @@ Content-length: 51
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

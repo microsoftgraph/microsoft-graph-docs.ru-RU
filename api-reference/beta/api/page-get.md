@@ -2,12 +2,14 @@
 title: Получение страницы
 description: Получение свойств и связей объекта page.
 localization_priority: Normal
-ms.openlocfilehash: 117f4d15d676f0be26e75a610d87b2de2581b17a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: jewan-microsoft
+ms.prod: onenote
+ms.openlocfilehash: 4d583ec28b96b9ec537aaf067371f4ae68fa3375
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890827"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979308"
 ---
 # <a name="get-page"></a>Получение страницы
 
@@ -59,7 +61,7 @@ GET /sites/{id}/onenote/pages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса

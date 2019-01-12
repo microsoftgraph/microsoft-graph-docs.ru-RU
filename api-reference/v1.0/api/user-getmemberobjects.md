@@ -2,12 +2,14 @@
 title: 'user: getMemberObjects'
 description: Возвращение всех групп, ролей каталога и административных подразделений, в которых состоит пользователь. Это транзитивная проверка.
 localization_priority: Priority
-ms.openlocfilehash: 2d2c28ab41e7f9798ff1f77e1750e6303a52de34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6b737ee5115060d02ee476b9bd0f1af4a6424e12
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811384"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978153"
 ---
 # <a name="user-getmemberobjects"></a>user: getMemberObjects
 Возвращение всех групп, ролей каталога и административных подразделений, в которых состоит пользователь. Это транзитивная проверка.
@@ -62,7 +64,7 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

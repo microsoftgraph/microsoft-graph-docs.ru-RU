@@ -3,12 +3,13 @@ title: Список managedDeviceCertificateStates
 description: Свойства списка и связей объектов managedDeviceCertificateState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e3e47a0d363ad50411f15d2b95f36d3e523569f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 9ad2f848e3bddfe8014513d603957fbf4be105c8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27812140"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979490"
 ---
 # <a name="list-manageddevicecertificatestates"></a>Список managedDeviceCertificateStates
 
@@ -61,7 +62,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [managedDeviceCertificateState](../resources/intune-deviceconfig-manageddevicecertificatestate.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -71,7 +72,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.iosPkcsCertificateProfile/managedDeviceCertificateStates
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -3,12 +3,13 @@ title: 'group: resetUnseenCount'
 description: Сброс unseenCount всех записей, которые текущий пользователь не просматривал со времени своего предыдущего посещения. Поддерживается только для групп Office 365.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 360f3aef68cb8ddd44f68982f3da494b42b616c6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: groups
+ms.openlocfilehash: 0c875615fb9650ecafafd503d37e88b0473fd482
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874853"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981982"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 Сброс unseenCount всех записей, которые текущий пользователь не просматривал со времени своего предыдущего посещения. Поддерживается только для групп Office 365.
@@ -50,7 +51,7 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/v1.0/groups/{id}/resetUnseenCount
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

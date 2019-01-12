@@ -3,12 +3,13 @@ title: educationPowerSchoolDataProvider ресурсов
 description: Используется для настройки синхронизации профилей данных school при PowerSchool используется в качестве источника ввода.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 48a23a2e2a50e2e235b5722466c67094275236a1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a22c3cf68a4a5b4c12dc4e7105f17eed4fc006f3
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868784"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982759"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider ресурсов
 
@@ -22,12 +23,12 @@ ms.locfileid: "27868784"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **connectionUrl** | Строка | URL-адрес подключения к экземпляру PowerSchool. |
-| **clientId** | Строка |  Идентификатор клиента, используемого для подключения к PowerSchool. |
-| **clientSecret** | Строка |  Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool. |
+| **connectionUrl** | String | URL-адрес подключения к экземпляру PowerSchool. |
+| **clientId** | String |  Идентификатор клиента, используемого для подключения к PowerSchool. |
+| **clientSecret** | String |  Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool. |
 | **schoolsIds** | Коллекция String |  Список школы для синхронизации. |
-| **schoolYear** | Строка |  Учебный год для синхронизации. |
-| **allowTeachersInMultipleSchools** | Логический |  Указывает, имеет ли источник несколько идентификаторов для одного студент и преподаватель. |
+| **schoolYear** | String |  Учебный год для синхронизации. |
+| **allowTeachersInMultipleSchools** | Boolean |  Указывает, имеет ли источник несколько идентификаторов для одного студент и преподаватель. |
 | **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
 
 ## <a name="json-representation"></a>Представление JSON

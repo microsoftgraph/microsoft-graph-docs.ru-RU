@@ -3,12 +3,13 @@ title: Get iosGeneralDeviceConfiguration
 description: Чтение свойств и связей объекта iosGeneralDeviceConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ec94dc1c2e50ac3881aebda5a5d05d7f6c2014bc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 37ec590344b693b0b2fbc161cdf2fb8e4de29af9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869134"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979252"
 ---
 # <a name="get-iosgeneraldeviceconfiguration"></a>Get iosGeneralDeviceConfiguration
 
@@ -59,7 +60,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

@@ -2,12 +2,14 @@
 title: 'outlookUser: supportedTimeZones'
 description: Получение списка поддерживаемых часовых поясов, которые настроены на сервере почтовых ящиков пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 01ee7d7df928e68bd34793ced3b6d3e2a8cc5502
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: c9c90ea56b1c0924ec91436733c99c67333b99d5
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848204"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981716"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -45,7 +47,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

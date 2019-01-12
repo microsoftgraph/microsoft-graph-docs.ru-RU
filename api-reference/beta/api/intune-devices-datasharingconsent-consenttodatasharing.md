@@ -3,12 +3,13 @@ title: Действие consentToDataSharing
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7106cc8289c2d14f6eddb102146d26e2032b0b2e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 85a0b7a19fba7fca26916b888c53cf24157ec594
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890876"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979441"
 ---
 # <a name="consenttodatasharing-action"></a>Действие consentToDataSharing
 

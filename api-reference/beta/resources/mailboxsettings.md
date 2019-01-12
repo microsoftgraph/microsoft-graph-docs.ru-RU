@@ -2,12 +2,14 @@
 title: Тип ресурса mailboxSettings
 description: Параметры основного параметра вошедшего пользователя.
 localization_priority: Normal
-ms.openlocfilehash: 83bb3fffce2c4d61c92b9110c88d05fbba86893a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6ad2a215270e712e8438e9d2b4b8ce2803477192
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887726"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980127"
 ---
 # <a name="mailboxsettings-resource-type"></a>Тип ресурса mailboxSettings
 
@@ -19,10 +21,10 @@ ms.locfileid: "27887726"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|archiveFolder|string|Идентификатор архивной папки пользователя.|
+|archiveFolder|строка|Идентификатор архивной папки пользователя.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Параметры конфигурации для автоматического уведомления отправителя о входящем письме с помощью сообщения от пользователя, вошедшего в систему.|
 |language|[localeInfo](localeinfo.md)|Сведения о языковом стандарте пользователя, в том числе о предпочитаемом языке и стране или регионе.|
-|timeZone|string|Часовой пояс почтового ящика пользователя по умолчанию.|
+|timeZone|строка|Часовой пояс почтового ящика пользователя по умолчанию.|
 |workingHours|[workingHours](workinghours.md)|Дни недели и часы работы пользователя в определенном часовом поясе.|
 
 ## <a name="json-representation"></a>Представление JSON

@@ -3,12 +3,13 @@ title: Create deviceCompliancePolicySettingStateSummary
 description: Создание объекта deviceCompliancePolicySettingStateSummary.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bae242af036d4aa6c0613b4ee60be9c21b24becd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: cf6fc766bfc54f452f9198dcbe3cee983b30f125
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818454"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980428"
 ---
 # <a name="create-devicecompliancepolicysettingstatesummary"></a>Create deviceCompliancePolicySettingStateSummary
 
@@ -47,7 +48,7 @@ POST /deviceManagement/deviceCompliancePolicySettingStateSummaries
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |setting|String|Имя класса параметров и свойства.|
 |settingName|String|Имя параметра.|
 |platformType|[policyPlatformType](../resources/intune-deviceconfig-policyplatformtype.md)|Параметр платформы. Возможные значения: `android`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`, `all`.|
@@ -87,7 +88,7 @@ Content-length: 391
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

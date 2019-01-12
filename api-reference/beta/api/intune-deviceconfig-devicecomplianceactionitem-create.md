@@ -3,12 +3,13 @@ title: Создание объекта deviceComplianceActionItem
 description: Создание объекта deviceComplianceActionItem.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 282babf1cf567752885858bbb397977b095a7a34
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 788677e6cdf8259cfea3850be3745904e5371220
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873614"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982675"
 ---
 # <a name="create-devicecomplianceactionitem"></a>Создание объекта deviceComplianceActionItem
 
@@ -49,7 +50,7 @@ POST /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/sched
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |gracePeriodHours|Int32|Время ожидания (в часах) до применения действия. Допустимые значения: от 0 до 8760.|
 |actionType|[deviceComplianceActionType](../resources/intune-deviceconfig-devicecomplianceactiontype.md)|Какое действие необходимо выполнить. Возможные значения: `noAction`, `notification`, `block`, `retire`, `wipe`, `removeResourceAccessProfiles`, `pushNotification`, `remoteLock`.|
 |notificationTemplateId|String|Используемый шаблон сообщения уведомления|
@@ -79,7 +80,7 @@ Content-length: 271
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

@@ -3,12 +3,13 @@ title: Создание roleDefinition
 description: Создание объекта roleDefinition.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: cb1e4b80388ecb74a4bd521e4b910a24ffb22af6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e7ac933fb0fd6bb7256e312e3cf9117866152088
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858984"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979567"
 ---
 # <a name="create-roledefinition"></a>Создание roleDefinition
 
@@ -49,7 +50,7 @@ POST /deviceManagement/roleDefinitions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое имя определения роли.|
 |описание|String|Описание определения роли.|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|

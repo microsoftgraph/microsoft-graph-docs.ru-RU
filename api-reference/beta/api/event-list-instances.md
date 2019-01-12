@@ -2,12 +2,14 @@
 title: Список экземпляров
 description: Получение экземпляров (вхождений) события для заданного интервала времени. Если событие `SeriesMaster` типа, при этом будет получен
 localization_priority: Normal
-ms.openlocfilehash: 79f6f5832a30f37a4f66e07eb44c2d31a39f7546
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7a40e6f468c8541748adbc7d8dd588541318c30c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843444"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980932"
 ---
 # <a name="list-instances"></a>экземпляры списков;
 
@@ -57,8 +59,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
-| Authorization  | string | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
+| Authorization  | строка | Bearer {токен}. Обязательный.  |
+| Prefer: outlook.timezone  | строка | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -76,7 +78,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}/instances
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

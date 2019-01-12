@@ -3,12 +3,13 @@ title: Тип ресурса importedWindowsAutopilotDeviceIdentityUpload
 description: Импорт автопилот устройства windows, с помощью отправки.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c0b30b8fc76aa38f6e8a39c4dd3fb1b73bde8be8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4419b81e1d67dc5932f0d48f6c762c6b9c1c7bf1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878060"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982038"
 ---
 # <a name="importedwindowsautopilotdeviceidentityupload-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentityUpload
 
@@ -25,7 +26,7 @@ ms.locfileid: "27878060"
 |[Создание importedWindowsAutopilotDeviceIdentityUpload](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-create.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Создание нового объекта [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .|
 |[Удаление importedWindowsAutopilotDeviceIdentityUpload](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-delete.md)|Нет|Удаляет [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md).|
 |[Обновление importedWindowsAutopilotDeviceIdentityUpload](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-update.md)|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)|Обновление свойства объекта [importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) .|
-|[функция autopilotDeviceStream](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|Строка|Создание запроса загрузки с потоком автопилот устройство в нем.|
+|[функция autopilotDeviceStream](../api/intune-enrollment-importedwindowsautopilotdeviceidentityupload-autopilotdevicestream.md)|String|Создание запроса загрузки с потоком автопилот устройство в нем.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

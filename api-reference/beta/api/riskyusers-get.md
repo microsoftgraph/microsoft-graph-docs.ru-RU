@@ -2,12 +2,14 @@
 title: Получение riskyUsers
 description: Извлечение свойств и связи объекта **riskyUsers** .
 localization_priority: Normal
-ms.openlocfilehash: da26be10b5a1aa631bd55f977ead806ed89c1406
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: cloudhandler
+ms.prod: security
+ms.openlocfilehash: cde236c0b4328e39f91c7a023f1fa8dbf95fcff7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891128"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977783"
 ---
 # <a name="get-riskyusers"></a>Получение riskyUsers
 
@@ -42,7 +44,7 @@ GET /riskyUsers/{query}
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [riskyUser](../resources/riskyuser.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -55,7 +57,7 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

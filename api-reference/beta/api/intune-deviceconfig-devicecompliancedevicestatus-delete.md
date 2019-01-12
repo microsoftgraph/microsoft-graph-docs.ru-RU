@@ -3,12 +3,13 @@ title: Удаление объекта deviceComplianceDeviceStatus
 description: Удаляет объект deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ee965b8fab7f6857ab0fc6385a9777a0acd89212
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 3b9d6a224ce0e2ddbbeff2caf9316e36463edb47
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853272"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980757"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Удаление объекта deviceComplianceDeviceStatus
 
@@ -45,7 +46,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +56,7 @@ DELETE /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/dev
 DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/deviceStatuses/{deviceComplianceDeviceStatusId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

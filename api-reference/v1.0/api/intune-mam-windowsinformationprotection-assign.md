@@ -3,12 +3,13 @@ title: Действие assign
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 1e013038603a1d92595b50b5929be9954e1b280d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: bb4833f41e3f9bd7e6530005a3f96923608892d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876960"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981569"
 ---
 # <a name="assign-action"></a>Действие assign
 
@@ -53,7 +54,7 @@ POST /deviceAppManagement/managedAppRegistrations/{managedAppRegistrationId}/int
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -78,7 +79,7 @@ Content-length: 282
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

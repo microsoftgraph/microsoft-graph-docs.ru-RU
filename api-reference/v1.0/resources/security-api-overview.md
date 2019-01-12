@@ -2,12 +2,14 @@
 title: Использование API безопасности Microsoft Graph
 description: 'API-Интерфейс безопасности Microsoft Graph предоставляет единый интерфейс и схемы можно интегрировать с решения по обеспечению безопасности корпорации Майкрософт и экосистема партнеров. Это позволяет предоставить клиентам для оптимизации операции по безопасности и более надежную защиту от увеличение угрозы, связанные с через Интернет. API Microsoft Graph безопасности можно использовать как службы объединение федеративных безопасности для отправки запросов для всех поставщиков безопасности onboarded для получения групп ответов. Использовать Microsoft Graph безопасности API для создания приложений, который:'
 localization_priority: Priority
-ms.openlocfilehash: 79a4af5f340bbaf8b8d93938e83a60b524f9be2e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: preetikr
+ms.prod: security
+ms.openlocfilehash: 7e693bdfb71f41597d77f40ce8c4ac5490d4ef06
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823802"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977880"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование API безопасности Microsoft Graph
 

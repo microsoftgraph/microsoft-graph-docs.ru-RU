@@ -3,12 +3,13 @@ title: Тип ресурса audioRoutingGroup
 description: Аудио группы маршрутизации хранит закрытый звука маршрута между участниками в многосторонней беседе. Источник — это участник самого и приемники являются подмножеством других участников в многосторонней беседе.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: cb1b8b67404ef6a3c8f397a6b5debe9acc252b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: 0e18a9beb660b9bae0c1bbe1034ec64790d369fa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860650"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980190"
 ---
 # <a name="audioroutinggroup-resource-type"></a>Тип ресурса audioRoutingGroup
 
@@ -30,9 +31,9 @@ ms.locfileid: "27860650"
 
 | Свойство      | Тип              | Описание                                                          |
 | :----------   | :---------------- | :--------------------------------------------------------------------|
-| id            | Строка            | Только для чтения. Сервер, созданный.                                         |
+| id            | String            | Только для чтения. Сервер, созданный.                                         |
 | Приемники     | Коллекция строк | Список получения участников идентификаторы.                                   |
-| routingMode   | Строка            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
+| routingMode   | String            | Режим группы маршрутизации.  Возможные значения: `oneToOne`, `multicast`.   |
 | sources       | Коллекция строк | Список идентификаторов участников источника.                                      |
 
 > **Примечание:** Режим маршрутизации определяет ограничения на доступ к источникам и приемников. Поддерживаются только следующие группы маршрутизации.

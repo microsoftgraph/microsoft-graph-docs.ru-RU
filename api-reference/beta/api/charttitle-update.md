@@ -3,12 +3,13 @@ title: Обновление объекта ChartTitle
 description: Обновление свойств объекта charttitle.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: dbd940a51f8987f6a2d3b7a45b163aca23051386
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 4d0beb65acb208d6f04d495a98b3c48a046b29ba
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813610"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980806"
 ---
 # <a name="update-charttitle"></a>Обновление объекта ChartTitle
 
@@ -65,7 +66,7 @@ Content-length: 64
   "visible": true
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

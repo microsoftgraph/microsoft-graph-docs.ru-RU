@@ -3,12 +3,13 @@ title: Обновление windowsManagementApp
 description: Обновление свойства объекта windowsManagementApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 182dd2ef39a322c38497dd8b714945724bf5b12e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: fe6412c08ba05bb26985cc5fd6a8ab0b58bc8e59
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886753"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980246"
 ---
 # <a name="update-windowsmanagementapp"></a>Обновление windowsManagementApp
 
@@ -49,8 +50,8 @@ PATCH /deviceAppManagement/windowsManagementApp
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для приложения управления Windows|
-|availableVersion|Строка|Управление приложения доступные версии Windows.|
+|id|String|Уникальный идентификатор для приложения управления Windows|
+|availableVersion|String|Управление приложения доступные версии Windows.|
 
 
 

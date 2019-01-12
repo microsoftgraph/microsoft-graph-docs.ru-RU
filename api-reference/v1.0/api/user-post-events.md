@@ -2,12 +2,14 @@
 title: Создание события
 description: Создайте событие в календаре пользователя по умолчанию или указанном календаре.
 localization_priority: Priority
-ms.openlocfilehash: 178891392d32e97bb8f3db85f9f32acc43a177a6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ef3ac07ba64115a10862cbdfb98dfbd63d2023ad
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836472"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978615"
 ---
 # <a name="create-event"></a>Создание события
 

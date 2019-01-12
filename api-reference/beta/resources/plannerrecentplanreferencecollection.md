@@ -2,12 +2,14 @@
 title: Тип ресурса plannerRecentPlanReferenceCollection
 description: Ресурс **plannerRecentPlanReferenceCollection** представляет коллекцию ссылок на планы, которые были недавно просмотре пользователем. Этот ресурс является открытым и является частью объекта plannerUser. Имя свойства — это идентификатор соответствующего плана. Значение в паре значение свойства — это объект plannerRecentPlanReference.
 localization_priority: Normal
-ms.openlocfilehash: e77769cbe3a7e53dce518c73cd7c5228d1077dac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 84eaedb2f37aefae32b5efac1e5a4a5dfb38e0d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877345"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980764"
 ---
 # <a name="plannerrecentplanreferencecollection-resource-type"></a>Тип ресурса plannerRecentPlanReferenceCollection
 

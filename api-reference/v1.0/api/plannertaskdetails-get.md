@@ -2,12 +2,14 @@
 title: Получение объекта plannerTaskDetails
 description: Получение свойств и связей объекта **plannertaskdetails**.
 localization_priority: Normal
-ms.openlocfilehash: 1ff08ac00125b1a1bb71ccaa95ef7385eb5b5ee7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: TarkanSevilmis
+ms.prod: planner
+ms.openlocfilehash: 715003e84e635d1e2aa9108b4dafa5a3145afa3e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804664"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978601"
 ---
 # <a name="get-plannertaskdetails"></a>Получение объекта plannerTaskDetails
 
@@ -51,7 +53,7 @@ GET /planner/tasks/{id}/details
 ```http
 GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/details
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

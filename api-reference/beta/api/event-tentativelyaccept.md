@@ -3,12 +3,13 @@ title: 'event: tentativelyAccept'
 description: Примите под вопросом события, указанного в календаре пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: cfa285659695bf17bfc7e3eea05343714951d761
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: d947e5feaa6a420087cb4acf285fb196ca834eb0
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833756"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980596"
 ---
 # <a name="event-tentativelyaccept"></a>event: tentativelyAccept
 
@@ -46,15 +47,15 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|comment|Строка|Текст, включенный в ответ. Необязательный.|
+|comment|String|Текст, включенный в ответ. Необязательный.|
 |sendResponse|Boolean|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик

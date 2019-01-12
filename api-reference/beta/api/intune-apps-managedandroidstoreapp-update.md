@@ -3,12 +3,13 @@ title: Update managedAndroidStoreApp
 description: Обновление свойств объекта managedAndroidStoreApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: de0301bb2bf56f71008eb6764d35fbb7479bafe7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 00b9988df08715d469f3bd0ed1d3b47529620b69
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849023"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980533"
 ---
 # <a name="update-managedandroidstoreapp"></a>Update managedAndroidStoreApp
 
@@ -51,7 +52,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

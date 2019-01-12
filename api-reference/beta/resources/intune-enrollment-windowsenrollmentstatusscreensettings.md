@@ -3,12 +3,13 @@ title: Тип ресурса windowsEnrollmentStatusScreenSettings
 description: Параметр экрана состояния подачи заявок
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7263fdd8ab3d9a39d5081322c62cfcf76a4c7aa0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: abc48a1d63cc514d2ec887a7758e69a0ea8112a7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877450"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978573"
 ---
 # <a name="windowsenrollmentstatusscreensettings-resource-type"></a>Тип ресурса windowsEnrollmentStatusScreenSettings
 
@@ -20,13 +21,13 @@ ms.locfileid: "27877450"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|hideInstallationProgress|Логический|Показать или скрыть выполнения установки для пользователей|
-|allowDeviceUseBeforeProfileAndAppInstallComplete|Логический|Разрешить или заблокировать пользователя для использования устройств до завершения установки приложения и профилей|
-|blockDeviceSetupRetryByUser|Логический|Пользователь может повторно запустите программу установки на сбой установки|
-|allowLogCollectionOnInstallFailure|Логический|Разрешить или заблокировать семейства журнала на сбой установки|
-|customErrorMessage|Строка|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
+|hideInstallationProgress|Boolean|Показать или скрыть выполнения установки для пользователей|
+|allowDeviceUseBeforeProfileAndAppInstallComplete|Boolean|Разрешить или заблокировать пользователя для использования устройств до завершения установки приложения и профилей|
+|blockDeviceSetupRetryByUser|Boolean|Пользователь может повторно запустите программу установки на сбой установки|
+|allowLogCollectionOnInstallFailure|Boolean|Разрешить или заблокировать семейства журнала на сбой установки|
+|customErrorMessage|String|Задать пользовательское сообщение об ошибке для отображения после сбоя установки|
 |installProgressTimeoutInMinutes|Int32|Задать время ожидания ход выполнения установки в минутах|
-|allowDeviceUseOnInstallFailure|Логический|Разрешает пользователю продолжить использование устройства на сбой установки|
+|allowDeviceUseOnInstallFailure|Boolean|Разрешает пользователю продолжить использование устройства на сбой установки|
 
 ## <a name="relationships"></a>Связи
 Нет

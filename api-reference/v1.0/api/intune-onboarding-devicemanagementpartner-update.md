@@ -3,12 +3,13 @@ title: Обновление объекта deviceManagementPartner
 description: Обновление свойств объекта deviceManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: c8e9425968d00805eb8640ff3a7e19380a92c6dd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 068a0ffb3c0411a238a803f3876874f8902e3b35
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27838782"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27981863"
 ---
 # <a name="update-devicemanagementpartner"></a>Обновление объекта deviceManagementPartner
 
@@ -47,7 +48,7 @@ PATCH /deviceManagement/deviceManagementPartners/{deviceManagementPartnerId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Н/Д|
+|id|String|Н/Д|
 |lastHeartbeatDateTime|DateTimeOffset|Метка времени последнего пульса после того, как администратор включил параметр "Подключиться к партнеру по управлению устройствами".|
 |partnerState|[deviceManagementPartnerTenantState](../resources/intune-onboarding-devicemanagementpartnertenantstate.md)|Состояние партнера клиента. Возможные значения: `unknown`, `unavailable`, `enabled`, `terminated`, `rejected`, `unresponsive`.|
 |partnerAppType|[deviceManagementPartnerAppType](../resources/intune-onboarding-devicemanagementpartnerapptype.md)|Партнерские типа приложения. Возможные значения: `unknown`, `singleTenantApp`, `multiTenantApp`.|
@@ -83,7 +84,7 @@ Content-length: 502
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

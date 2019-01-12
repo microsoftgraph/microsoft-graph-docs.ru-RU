@@ -3,12 +3,13 @@ title: Получение message
 description: Извлечение свойств и связи объекта message.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 5c83d0e9a59a69ebf0e20cfa0f883301b827c84f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 0ed3eaf35b2d7ce01c98d8c21fde72aaf2e44ad1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852390"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979455"
 ---
 # <a name="get-message"></a>Получение message
 
@@ -63,8 +64,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.body-content-type | string | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Prefer: outlook.body-content-type | строка | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.

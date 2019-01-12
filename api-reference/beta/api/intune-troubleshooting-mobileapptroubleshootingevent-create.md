@@ -3,12 +3,13 @@ title: Создание mobileAppTroubleshootingEvent
 description: Создание нового объекта mobileAppTroubleshootingEvent.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bb29e9de5bcebf0d40421280e779f12275ab7274
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 59eea166285f55de32df2728f9bbc834e0eecac8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886347"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978146"
 ---
 # <a name="create-mobileapptroubleshootingevent"></a>Создание mobileAppTroubleshootingEvent
 
@@ -59,7 +60,7 @@ POST /users/{usersId}/mobileAppTroubleshootingEvents
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [mobileAppTroubleshootingEvent](../resources/intune-troubleshooting-mobileapptroubleshootingevent.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -86,7 +87,7 @@ Content-length: 489
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

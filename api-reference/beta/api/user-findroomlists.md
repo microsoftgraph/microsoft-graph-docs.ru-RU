@@ -3,12 +3,13 @@ title: 'пользователь: findRoomLists'
 description: Получение списков комнат, определенных в клиент.
 author: dkershaw10
 localization_priority: Priority
-ms.openlocfilehash: 55ff393e828d324035050e33cf194cb49d302080
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855736"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979294"
 ---
 # <a name="user-findroomlists"></a>пользователь: findRoomLists
 
@@ -41,14 +42,14 @@ GET /users/<id>/findRoomLists
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type  | строка  | application/json. Обязательный. |
 
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` кода и [emailAddress](../resources/emailaddress.md) коллекции объект ответа в теле ответа.
 
@@ -67,7 +68,7 @@ GET /users/<id>/findRoomLists
 GET https://graph.microsoft.com/beta/me/findRoomLists
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.

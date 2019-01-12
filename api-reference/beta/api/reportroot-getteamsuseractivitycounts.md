@@ -2,12 +2,13 @@
 title: 'reportRoot: getTeamsUserActivityCounts'
 description: Получение количества действий в Microsoft Teams по каждому типу. К типам действий относятся сообщения в чатах групп, сообщения в приватных чатах, звонки и собрания.
 localization_priority: Normal
-ms.openlocfilehash: 34c059a262ba01b66b9e7ecc3489e4cfd5da0b5f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: reports
+ms.openlocfilehash: 614a8cc5f6e52b770d905c439cc9441cce7c6494
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857606"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982451"
 ---
 # <a name="reportroot-getteamsuseractivitycounts"></a>reportRoot: getTeamsUserActivityCounts
 
@@ -49,7 +50,7 @@ GET /reports/getTeamsUserActivityCounts(period='D7')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -90,7 +91,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа.
 
@@ -133,7 +134,7 @@ Report Refresh Date,Report Date,Team Chat Messages,Private Chat Messages,Calls,M
 GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

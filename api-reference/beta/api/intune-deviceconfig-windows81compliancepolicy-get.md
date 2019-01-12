@@ -3,12 +3,13 @@ title: Получение windows81CompliancePolicy
 description: Чтение свойств и связей объекта windows81CompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 68d72ff0e8d7a43df7e2622b0781f81b0418a485
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 664249c28c4a03b4fa7c721d300aed65c716cf43
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809256"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27977817"
 ---
 # <a name="get-windows81compliancepolicy"></a>Получение windows81CompliancePolicy
 
@@ -57,7 +58,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

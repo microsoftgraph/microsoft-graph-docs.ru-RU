@@ -3,12 +3,13 @@ title: Удаление объекта managedMobileApp
 description: Удаляет объект managedMobileApp.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b678efab2333a759edaf620fe19193f589ca7e10
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: e8b22f0fa21b9d5777e0b93a5c04be679fe3a079
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890442"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27979553"
 ---
 # <a name="delete-managedmobileapp"></a>Удаление объекта managedMobileApp
 
@@ -48,7 +49,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -58,7 +59,7 @@ DELETE /deviceAppManagement/targetedManagedAppConfigurations/{targetedManagedApp
 DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 204 No Content

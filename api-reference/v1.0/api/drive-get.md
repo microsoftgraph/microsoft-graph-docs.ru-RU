@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение доступа к ресурсу Drive
 localization_priority: Priority
-ms.openlocfilehash: ffa7162b700fc4f3e9a13b98ca3cef501d870291
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: aaa670111b61fe0ecd1c111e5fd3be650d115435
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846314"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27978678"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 
@@ -117,7 +118,7 @@ GET /drives/{drive-id}
 
 Эти методы поддерживают [параметр запроса $select][odata-query-parameters] для формирования отклика.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Каждый из этих методов возвращает [ресурс Drive][drive-resource] для соответствующего объекта drive в теле отклика.
 

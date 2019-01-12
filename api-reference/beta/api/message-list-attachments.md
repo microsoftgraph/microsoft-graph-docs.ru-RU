@@ -3,12 +3,13 @@ title: Список вложений
 description: Получение списка объектов attachment, вложенных в сообщение.
 author: angelgolfer-ms
 localization_priority: Normal
-ms.openlocfilehash: 0d89d05c80a8d2437f4940ace2a046f93ba67b82
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: outlook
+ms.openlocfilehash: 584b01114f22466673568d991c824a94c6d73dd2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806687"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27983486"
 ---
 # <a name="list-attachments"></a>Список вложений
 
@@ -43,7 +44,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-В частности, можно использовать $разверните параметр запроса для включения всех встроенного вложений сообщений с помощью rest свойства сообщения. Пример:
+В частности, можно использовать $разверните параметр запроса для включения всех встроенного вложений сообщений с помощью rest свойства сообщения. Примеры:
 
 ```
 GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
@@ -51,7 +52,7 @@ GET https://graph.microsoft.com/beta/me/messages/{id}?$expand=attachments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
