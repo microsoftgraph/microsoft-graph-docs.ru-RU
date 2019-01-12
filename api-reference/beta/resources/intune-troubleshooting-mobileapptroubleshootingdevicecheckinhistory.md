@@ -3,12 +3,13 @@ title: Тип ресурса mobileAppTroubleshootingDeviceCheckinHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6b9d900e712e3c3b126dd36671049e8935f09a83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c2fc4cd56b1f900eb3198cbfc078af1e894f2035
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844949"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940964"
 ---
 # <a name="mobileapptroubleshootingdevicecheckinhistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingDeviceCheckinHistory
 

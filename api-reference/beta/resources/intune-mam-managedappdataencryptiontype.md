@@ -3,12 +3,13 @@ title: Тип перечисления managedAppDataEncryptionType
 description: Представляет уровень, на который приложение шифрование для управляемых приложений
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: d2c494b6822a2a85cd4a3d295ac70b80efffcd10
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4417d488a1590f8d8e9c40e13118e6ef0dc044d1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885948"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944434"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>Тип перечисления managedAppDataEncryptionType
 

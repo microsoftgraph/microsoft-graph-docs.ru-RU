@@ -3,12 +3,13 @@ title: Получение объекта Table
 description: Получение свойств и связей объекта таблицы.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: ebc992781bad510a9594b0791700ada658610177
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: a83d0b13ec6955832ba0d9b70fccde687b804c75
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850920"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27943419"
 ---
 # <a name="get-table"></a>Получение объекта Table
 

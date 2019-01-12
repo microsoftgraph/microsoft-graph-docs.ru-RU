@@ -3,12 +3,13 @@ title: Тип ресурса deviceManagementScriptUserState
 description: Содержит свойства для пользователя, состояние сценарий управления устройства выполнения.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: bf355a6ab2c217fa802288f6d2f4f062a3c47f4b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d74e8276603355af58ccff50401f742c56147d7f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27806029"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942250"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Тип ресурса deviceManagementScriptUserState
 

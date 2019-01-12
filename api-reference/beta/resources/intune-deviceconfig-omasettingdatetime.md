@@ -3,12 +3,13 @@ title: Тип ресурса omaSettingDateTime
 description: Определение даты и времени параметра OMA.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 193a1d377da387b32a47f4a4e67cb75c5dc39e93
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4552eef8ec9237c45b1e2b98404977a48e99a896
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27862190"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27942544"
 ---
 # <a name="omasettingdatetime-resource-type"></a>Тип ресурса omaSettingDateTime
 

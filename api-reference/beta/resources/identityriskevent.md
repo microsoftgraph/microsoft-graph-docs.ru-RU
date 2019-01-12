@@ -3,12 +3,13 @@ title: Тип ресурса identityRiskEvent
 description: 'Событие риск, обнаруживается Azure Active Directory защиту. Это базовый тип для каждого типа события, определенные риски:'
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: 0735599c260fac178b54ee4ba54a17f5ea027e23
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: be5e4afaa5bf85581c904ed94f07433243651ee9
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858998"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953653"
 ---
 # <a name="identityriskevent-resource-type"></a>Тип ресурса identityRiskEvent
 

@@ -3,12 +3,13 @@ title: Обновление объекта windowsInformationProtectionPolicy
 description: Обновление свойств объекта windowsInformationProtectionPolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: e00efb7b1f4647b50d4bc7531c368fd2a4274211
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: be1572ee72dad3bca83390290d4b45a39c82404c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845222"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27949208"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Обновление объекта windowsInformationProtectionPolicy
 

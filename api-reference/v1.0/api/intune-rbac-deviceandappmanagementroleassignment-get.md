@@ -3,12 +3,13 @@ title: Получение объекта deviceAndAppManagementRoleAssignment
 description: Чтение свойств и связей объекта deviceAndAppManagementRoleAssignment.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7e45c10cb612edc9731b0ed197728956c96717bd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 8e16bbb45d9d391df9921281cd5739e6ccf4a7d2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866901"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27947983"
 ---
 # <a name="get-deviceandappmanagementroleassignment"></a>Получение объекта deviceAndAppManagementRoleAssignment
 

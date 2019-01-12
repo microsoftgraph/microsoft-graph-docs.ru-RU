@@ -3,12 +3,13 @@ title: Тип перечисления defenderSubmitSamplesConsentType
 description: Возможные значения для DefenderSubmitSamplesConsentType
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 48088f9bc24b3a1dc8d7a9ead1d8ad86f89572da
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 4eb46d335abe9219b47fa74c0564acb8260fd535
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842170"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954144"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>Тип перечисления defenderSubmitSamplesConsentType
 

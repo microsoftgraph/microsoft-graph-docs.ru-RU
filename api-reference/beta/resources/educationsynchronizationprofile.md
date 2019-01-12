@@ -3,12 +3,13 @@ title: Тип ресурса educationSynchronizationProfile
 description: Представляет набор, использовавшееся для синхронизации education объектов и данных участников из исходного каталога в Azure Active Directory (Azure AD). Этот ресурс содержит программного представления, используемые в синхронизации данных School.
 author: mmast-msft
 localization_priority: Normal
-ms.openlocfilehash: 7ed8cf39ff8ccd2b8cb4c5b5e31350fec6202d01
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: education
+ms.openlocfilehash: a9976538923d35c38bda001d73cabc1b4c3f6814
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882924"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940899"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Тип ресурса educationSynchronizationProfile
 

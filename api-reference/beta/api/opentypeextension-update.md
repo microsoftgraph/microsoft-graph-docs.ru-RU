@@ -2,12 +2,13 @@
 title: Обновление открытого расширения
 description: Обновление открытого расширения (объекта openTypeExtension) с использованием свойств, указанных в теле запроса.
 localization_priority: Normal
-ms.openlocfilehash: 7f7d132d04096600b093c251ac8fd991d58d7d2d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.openlocfilehash: 9aa2d69b4d285eb2ee290ed18a7da3d5e199859a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27835464"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953212"
 ---
 # <a name="update-open-extension"></a>Обновление открытого расширения
 

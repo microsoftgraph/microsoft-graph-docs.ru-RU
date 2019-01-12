@@ -2,12 +2,14 @@
 title: 'directoryObject: дельты'
 description: 'Get вновь созданных, обновлении или удалении объектов каталога из следующих типов: пользователей, группы и организационной контакт в запросе единого дельты. Отслеживание изменений для получения дополнительных сведений см.'
 localization_priority: Normal
-ms.openlocfilehash: 823107bce56d77c4e9c29a77405ac014443f5190
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 59ab4f819072120533215277b8b14ac1f3c94bf7
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854497"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956201"
 ---
 # <a name="directoryobject-delta"></a>directoryObject: дельты
 

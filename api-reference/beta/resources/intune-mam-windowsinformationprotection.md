@@ -3,12 +3,13 @@ title: Тип ресурса windowsInformationProtection
 description: Политика для Windows Information Protection, которая используется для настройки расширенных параметров управления.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ea46d80d2d1c94be92dff92cc7c40eb01135254a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 422bc13c8546d72c2a8ab04c6b684d69f0ed6f85
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845103"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953205"
 ---
 # <a name="windowsinformationprotection-resource-type"></a>Тип ресурса windowsInformationProtection
 

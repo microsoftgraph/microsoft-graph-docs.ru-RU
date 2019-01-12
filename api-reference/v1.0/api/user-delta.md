@@ -2,12 +2,14 @@
 title: 'user: delta'
 description: Get вновь созданных, обновлении или удалении пользователей без необходимости выполнять полное чтение коллекции всей пользователя. Отслеживание изменений для получения дополнительных сведений см.
 localization_priority: Priority
-ms.openlocfilehash: a1c923ced46de39085fabbdc8e58dde167741ed5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: dkershaw10
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 6464e8ad975a5fc996c671df5a01df2988dbf79d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885808"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27945617"
 ---
 # <a name="user-delta"></a>user: delta
 

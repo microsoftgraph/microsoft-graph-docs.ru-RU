@@ -3,12 +3,13 @@ title: Тип ресурса androidDeviceOwnerWiFiConfiguration
 description: С указанием конфигураций в этом профиле можно указать Android устройства, чтобы подключиться к конечной точке желаемую Wi-Fi. Путем указания типов безопасности и метод проверки подлинности ожидаемого Wi-Fi конечной точкой подключения Wi-Fi можно сделать полностью для конечных пользователей. Этот профиль предоставляет типы безопасности ограниченный и проще, чем Enterprise Wi-Fi профиль.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: f0db7889058816a6c09d754d068a851a7612407d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c80c535b248091cbef270e546dc9a401809f2f15
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880173"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27958455"
 ---
 # <a name="androiddeviceownerwificonfiguration-resource-type"></a>Тип ресурса androidDeviceOwnerWiFiConfiguration
 

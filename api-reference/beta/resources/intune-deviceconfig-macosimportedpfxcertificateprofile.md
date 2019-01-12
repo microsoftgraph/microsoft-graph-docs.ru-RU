@@ -3,12 +3,13 @@ title: Тип ресурса macOSImportedPFXCertificateProfile
 description: Профиль MacOS PFX импорта сертификата
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: a9724bae0c93bf377916d067ae383013aa082b90
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 94b367fd4f24c3dd79b34d9a9ab79df299d28caa
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27886228"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27963110"
 ---
 # <a name="macosimportedpfxcertificateprofile-resource-type"></a>Тип ресурса macOSImportedPFXCertificateProfile
 

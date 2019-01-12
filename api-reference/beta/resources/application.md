@@ -2,12 +2,14 @@
 title: Тип ресурса приложения
 description: 'Представляет приложение. Любое приложение, которое outsources проверка подлинности Azure Active Directory (Azure AD) должны быть зарегистрированы в каталоге. Регистрация приложения включает в себя Azure AD сообщает о приложении, включая URL-адрес, где он находится, URL-адрес для отправки ответов после проверки подлинности, URI для идентификации приложения и многое другое. Для получения дополнительных сведений см. основные сведения о регистрации приложения в Azure AD. Наследуется от directoryObject. '
 localization_priority: Priority
-ms.openlocfilehash: b64de5670ccb9deebbabe32bb691d15b5a621f30
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 9fb5722640149471f6728ec6ab893cf388fa9b6d
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805672"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946681"
 ---
 # <a name="application-resource-type"></a>Тип ресурса приложения
 

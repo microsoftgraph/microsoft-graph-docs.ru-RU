@@ -3,12 +3,13 @@ title: Получение windowsPhone81TrustedRootCertificate
 description: Чтение свойства и связи объекта windowsPhone81TrustedRootCertificate.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 6a10578c6d1f70cb088b4d90f1c75207e1b00294
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 239cbed9018393014153f3eb4fb68158ab3413ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890666"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27950398"
 ---
 # <a name="get-windowsphone81trustedrootcertificate"></a>Получение windowsPhone81TrustedRootCertificate
 

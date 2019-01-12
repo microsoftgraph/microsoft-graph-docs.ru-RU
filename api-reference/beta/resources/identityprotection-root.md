@@ -3,12 +3,13 @@ title: Защита от удостоверения Azure AD API (Предвар
 description: Microsoft Graph можно использовать для запроса ресурсов identityRiskEvent для каждого типа события риска выявлено системой защиты удостоверения Azure AD. Эти события доступны для клиентов с Azure AD Premium P2. Подмножество событий доступен для клиентов с P1 Azure AD Premium.
 author: cloudhandler
 localization_priority: Normal
-ms.openlocfilehash: 8ae87a13565f660b06179712220806f11f611d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: security
+ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27849779"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953625"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Защита от удостоверения Azure AD API (Предварительная версия)
 

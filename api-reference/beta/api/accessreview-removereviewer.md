@@ -2,12 +2,14 @@
 title: Удаление accessReview редактор
 description: 'В Azure AD access дается обзор компонента "," Обновление существующего объекта accessReview для удаления пользователя в качестве читателя.  Эта операция допускается только рецензию доступа, который еще не завершено и только доступа рецензию где явным образом указаны рецензентов. Эта операция — это не разрешено рецензию доступа, в котором пользователи просмотрите собственные доступа и не предназначены рецензию доступа, назначенных группе владельцев как рецензентов. '
 localization_priority: Normal
-ms.openlocfilehash: d33c1c2409b866a48d0684612f8c878e14dedb68
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 84bf3d973820067e0d4561e9647f688c025d957f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866026"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27956691"
 ---
 # <a name="remove-accessreview-reviewer"></a>Удаление accessReview редактор
 

@@ -3,12 +3,13 @@ title: Создать поток разговора
 description: Создайте новый поток чата в указанном канала, передав корневой сообщения.
 author: nkramer
 localization_priority: Priority
-ms.openlocfilehash: edd3c99376a93b2c4405d97b6435cfd9a128ae8b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-teams
+ms.openlocfilehash: d748826b98336feffcded345f356663f8fb80f4f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809074"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27946359"
 ---
 # <a name="create-chat-thread"></a>Создать поток разговора
 

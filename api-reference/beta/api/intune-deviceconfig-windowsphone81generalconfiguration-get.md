@@ -3,12 +3,13 @@ title: Get windowsPhone81GeneralConfiguration
 description: Чтение свойств и связей объекта windowsPhone81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 5e83dbc5ea295ec71f7beaf2b3ca73fd02e92d96
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a623fbf19d2d779ecfb7dce755a320544f28f0fd
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27877597"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944714"
 ---
 # <a name="get-windowsphone81generalconfiguration"></a>Get windowsPhone81GeneralConfiguration
 

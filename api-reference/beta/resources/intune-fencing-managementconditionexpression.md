@@ -2,12 +2,14 @@
 title: Тип ресурса managementConditionExpression
 description: Выражение условия управления — это выражение, результатом является значение типа boolean, при вычислении, то есть одно из значение true или false, указывающего на то, что условная инструкция управления активируется или деактивируется. Выражение условия управления может включать в себя сочетание выражения переменных и выражения логические операторы.
 localization_priority: Normal
-ms.openlocfilehash: f7f370b348ab13ef964eab1cc7025868e4380bac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: b25469c3efb9f7985bf21ad47e83c34b47f96b64
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857066"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27941879"
 ---
 # <a name="managementconditionexpression-resource-type"></a>Тип ресурса managementConditionExpression
 

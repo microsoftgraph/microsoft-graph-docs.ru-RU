@@ -2,12 +2,14 @@
 title: Тип ресурса sharedPCConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом sharedPCConfiguration.
 localization_priority: Normal
-ms.openlocfilehash: 8671d4a5241439eaec12e09e250eff1b2caa4592
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: 18c249a775631324f99d146fe9c358f0504284b4
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831138"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27962487"
 ---
 # <a name="sharedpcconfiguration-resource-type"></a>Тип ресурса sharedPCConfiguration
 

@@ -2,12 +2,14 @@
 title: Тип ресурса educationPowerPointResource
 description: 'Подкласс educationResource. Это ресурсов PowerPoint. Необходимо отправить файл PowerPoint в каталоге **fileResource** , связанный с '
 localization_priority: Normal
-ms.openlocfilehash: 763a529e97b12c93d8f10aa6855c20818c02da67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: mmast-msft
+ms.prod: education
+ms.openlocfilehash: f92d74d8e3dfb7cebcecd607bbd4bd8e2f3b43da
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845460"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27940668"
 ---
 # <a name="educationpowerpointresource-resource-type"></a>Тип ресурса educationPowerPointResource
 

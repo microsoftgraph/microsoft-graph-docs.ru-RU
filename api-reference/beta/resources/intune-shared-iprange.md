@@ -2,12 +2,14 @@
 title: Тип ресурса ipRange
 description: Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов
 localization_priority: Normal
-ms.openlocfilehash: 3281f42d563a5c702700d10fdc2acd60142935b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: d457333c488120bca41059f936d6fb411e0b6868
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872849"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27944805"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
