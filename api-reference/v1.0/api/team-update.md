@@ -4,12 +4,12 @@ description: Обновление свойств указанной группы
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1185ad9d835f660c98d12fac8472bd6325463858
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a6dd8e38261cb2e64c3717ea3bee26ca96bd8958
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991876"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016620"
 ---
 # <a name="update-team"></a>Группа обновления
 
@@ -44,7 +44,7 @@ PATCH /teams/{id}
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -56,7 +56,7 @@ PATCH /teams/{id}
   "name": "update_team"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -74,7 +74,7 @@ Content-length: 211
   }
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,

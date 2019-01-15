@@ -4,12 +4,12 @@ description: Создайте новый канал в группы разраб
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 09d058d9dc64fff053cd0ec507357f2990aeb353
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9021ed45cb187b8db64ec2a3270b6a7f840134ba
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957342"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016690"
 ---
 # <a name="create-channel"></a>Создание канала
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [канала](../resources/channel.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `201 Created` объект [канала](../resources/channel.md) и кода ответа в теле ответа.
 
@@ -57,7 +57,7 @@ POST /teams/{id}/channels
   "name": "create_channel_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels
+POST https://graph.microsoft.com/v1.0/teams/{id}/channels
 Content-type: application/json
 
 {
@@ -65,7 +65,7 @@ Content-type: application/json
   "description": "This channel is where we debate all future architecture plans"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

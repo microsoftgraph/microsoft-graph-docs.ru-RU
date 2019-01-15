@@ -4,12 +4,12 @@ description: В Azure AD доступа к функции проверки, со
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2bb8db52dd3e5086ba9559ef318a94b8ac3a3918
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: de8574566a8ca1eedb1f0f55230fb91053370ccc
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942271"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016725"
 ---
 # <a name="create-accessreview"></a>Создание accessReview
 
@@ -17,7 +17,7 @@ ms.locfileid: "27942271"
 
 В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD создайте новый объект [accessReview](../resources/accessreview.md) .
 
-До внесения этого запроса, вызывающий должен иметь ранее [извлекается список бизнес-поток шаблонов](businessflowtemplate-list.md), иметь значение `businessFlowTemplateId` необходимо включить в запрос.
+Перед выполнением этого запроса, вызывающий должен иметь ранее [извлекается список бизнес-поток шаблонов](businessflowtemplate-list.md), иметь значение `businessFlowTemplateId` необходимо включить в запрос.
 
 После выполнения этого запроса, вызывающего следует [Создать programControl](programcontrol-create.md), чтобы связать с программой проверки доступа.  
 
@@ -38,7 +38,7 @@ POST /accessReviews
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Носителя \{маркеров\}. Обязательная часть. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [accessReview](../resources/accessreview.md) .
@@ -52,16 +52,16 @@ POST /accessReviews
 | `endDateTime`             |`DateTimeOffset`                                                | Дата и время после запланированного окончания проверки. Это должно быть более поздней, чем дата начала по крайней мере один день.   |
 | `description`             |`String`                                                        | Описание, чтобы показать рецензентов. |
 | `businessFlowTemplateId`  |`String`                                                        | Business поток идентификатор шаблона, полученный из [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | Тип отношения рецензент права доступа проверенные объекта, один из `self`, `delegate` или `entityOwners`. | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | Объект, для которого создается проверки доступа, такие как члены группы или назначения пользователей для приложения. | 
+| `reviewerType`            |`String`                                                        | Тип отношения рецензент права доступа проверенные объекта, один из `self`, `delegated`, или `entityOwners`. | 
+| `reviewedEntity`          |`microsoft.graph.identity`                                      | Объект, для которого создается проверки доступа, например, членство в группе или назначения пользователей в приложение. | 
 
 
-Если значение равно reviewerType, указанное `delegate`, а затем вызывающий объект должен также включать `reviewers` свойство с семейством [удостоверению пользователя](../resources/useridentity.md) рецензентов.
+Если значение равно reviewerType, указанное `delegated`, а затем вызывающий объект должен также включать `reviewers` свойство с семейством [удостоверению пользователя](../resources/useridentity.md) рецензентов.
 
 Кроме того вызывающего может включать параметры для создания серии повторяющихся review или для изменения поведения проверки по умолчанию. В частности, для создания повторяющихся review вызывающего необходимо включить `accessReviewRecurrenceSettings` в access Проверьте параметры,
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201, Created` код ответа и объект [accessReview](../resources/accessreview.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -86,7 +86,7 @@ Content-type: application/json
     "reviewedEntity": {
         "id": "99025615-a0b1-47ec-9117-35377b10998b",
     },
-    "reviewerType" : "delegate",
+    "reviewerType" : "delegated",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "description":"Sample description",
     "reviewers":
@@ -100,10 +100,22 @@ Content-type: application/json
     ],
     "settings":
     {
-        "justificationRequiredOnApproval": true,
-        "activityHistoryInDays":30,
-        "mailNotificationsEnabled":true,
-        "remindersEnabled":true
+        "mailNotificationsEnabled": true,
+        "remindersEnabled": true,
+        "justificationRequiredOnApproval":true,
+        "autoReviewEnabled":false,
+        "activityDurationInDays":30,
+        "autoApplyReviewResultsEnabled":false,
+        "accessRecommendationsEnabled":false,
+        "recurrenceSettings":{
+            "recurrenceType":"onetime",
+            "recurrenceEndType":"endBy",
+            "durationInDays":0,
+            "recurrenceCount":0
+        },
+        "autoReviewSettings":{
+            "notReviewedResult":"Deny"
+        }
     }
 }
 ```
@@ -126,7 +138,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

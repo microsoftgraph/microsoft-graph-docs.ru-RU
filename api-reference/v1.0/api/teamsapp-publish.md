@@ -1,15 +1,15 @@
 ---
-title: Permissions
+title: Разрешения
 description: 'Публикация приложения в каталоге приложений группами Майкрософт. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7faf5847b78d6221b5167c775def75ae9a2ce629
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911877"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016746"
 ---
 # <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений организации
 
@@ -46,7 +46,7 @@ POST /appCatalogs/teamsApps
 
 Zip полезных команд манифеста. Для приложения группы ZIP-файл, [перейдите в раздел Create пакет приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Не удается создать приложения для организации, которая имеет тот же идентификатор манифеста в качестве другого приложения в организации.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [teamsCatalogApp](../resources/teamsapp.md) .
 
@@ -55,7 +55,7 @@ Zip полезных команд манифеста. Для приложени�
 ### <a name="request"></a>Запрос
 
 ```http
-POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
+POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 
@@ -64,7 +64,7 @@ Content-length: 244
 
 Сведения о создании ZIP-файл приложения группами Майкрософт перейдите в раздел [Create пакет приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```
 HTTP/1.1 201 Created

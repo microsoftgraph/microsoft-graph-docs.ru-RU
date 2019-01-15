@@ -4,12 +4,12 @@ description: 'В Azure AD access дается обзор компонента, �
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: be946e07a7714dc744847d73ee49718237fac92e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a13776b9aa215d752797b6ba2de2f477660ed31d
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926661"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016662"
 ---
 # <a name="get-accessreview"></a>Получение accessReview
 
@@ -26,7 +26,7 @@ ms.locfileid: "27926661"
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  Также должен быть выполнен вход пользователя в роль каталог, который позволяет им читать проверки доступа или назначен в качестве проверяющего проверки доступа. |
+|Делегированные (рабочая или учебная учетная запись)     | `AccessReview.Read.All`, `AccessReview.ReadWrite.All`.  Также должен быть выполнен вход пользователя в роль каталог, который позволяет им читать проверки доступа или назначен в качестве проверяющего на странице проверьте доступ. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -38,12 +38,12 @@ GET /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | строка | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Носителя \{маркеров\}. Обязательная часть. |
 
 ## <a name="request-body"></a>Тело запроса
 Нет текста запроса должен задаваться.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200, OK` код ответа и объект [accessReview](../resources/accessreview.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -77,16 +77,23 @@ Content-type: application/json
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
     "reviewerType": "self",
     "description": "",
+    "reviewedEntity":{"id":"3b4f7e74-eb82-4120-9ff5-ba429c1ea6df","displayName":"Salesforce"},
     "settings": {
-        "reviewId": "2b83cc42-09db-46f6-8c6e-16fec466a82d",
         "mailNotificationsEnabled": true,
         "remindersEnabled": true,
         "justificationRequiredOnApproval": true,
+        "autoReviewEnabled": false,
+        "activityDurationInDays": 30,
+        "autoApplyReviewResultsEnabled": false,
+        "accessRecommendationsEnabled": false,
         "recurrenceSettings": {
             "recurrenceType": "onetime",
             "recurrenceEndType": "endBy",
             "durationInDays": 0,
             "recurrenceCount": 0
+        },
+        "autoReviewSettings": {
+            "notReviewedResult": "Deny"
         }
     }
 }

@@ -4,12 +4,12 @@ description: Получить список каналов в данной гру
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 609b83032877b77923e8444926aec785e4ae84db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9d6d149a0e38fb5e02a2c32f9ad218fb95f32911
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932695"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016648"
 ---
 # <a name="list-channels"></a>Список каналов
 
@@ -46,7 +46,7 @@ GET /teams/{id}/channels
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [канала](../resources/channel.md) в теле ответа.
 
@@ -58,9 +58,9 @@ GET /teams/{id}/channels
   "name": "get_channels"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

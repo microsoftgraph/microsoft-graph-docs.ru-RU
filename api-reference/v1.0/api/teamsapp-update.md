@@ -1,15 +1,15 @@
 ---
-title: Permissions
+title: Разрешения
 description: 'Обновление приложения ранее опубликованы в каталоге приложений группами Майкрософт. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 44ca5870fd585ef7cd5aa0c0282eac42d41c1a18
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b89380a423bf01f6a2bd7e56086cc9290be094cb
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948524"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016627"
 ---
 # <a name="update-apps-published-to-your-organizations-app-catalog"></a>Обновление приложений, опубликованной в каталоге приложений организации
 
@@ -48,7 +48,7 @@ Zip полезных команд манифеста: Для приложени�
 
 >**Примечание:** Используйте код, возвращенный вызова [списка публикации приложений](./teamsapp-list.md) для ссылок на приложением, которое вы хотите обновить. Не используйте код из манифеста приложения ZIP-архив.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ```
 HTTP/1.1 204 No Content
@@ -59,7 +59,7 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>Запрос
 
 ```
-PUT https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+PUT https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 Content-type: application/zip
 Content-length: 244
 
@@ -68,7 +68,7 @@ Content-length: 244
 
 Для приложения группы ZIP-файл [видеть создать пакет приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package)
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```
 HTTP/1.1 204 No Content

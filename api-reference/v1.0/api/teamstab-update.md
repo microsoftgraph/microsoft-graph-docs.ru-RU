@@ -4,12 +4,12 @@ description: Обновляет свойства указанной вкладк
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: f7bb00fb58513c32c66f72a9ef852e799674a52e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 342026dc592dc447c85d3885b4706e5c0891ef26
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944707"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016732"
 ---
 # <a name="update-tab"></a>Вкладка "обновления"
 
@@ -44,7 +44,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [вкладки](../resources/teamstab.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -52,7 +52,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -60,7 +60,7 @@ Content-length: 211
   "name": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json

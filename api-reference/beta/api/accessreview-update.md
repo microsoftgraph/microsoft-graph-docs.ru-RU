@@ -4,12 +4,12 @@ description: В Azure AD access дается обзор компонента ","
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: e09219c1979f974b62f17c52163fc93b5d2d3c2a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e4e74daa092c6f18c845c7f0c468af90385b899b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941360"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016753"
 ---
 # <a name="update-accessreview"></a>Обновление accessReview
 
@@ -17,7 +17,7 @@ ms.locfileid: "27941360"
 
 В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD обновите существующий объект [accessReview](../resources/accessreview.md) изменение одно или несколько свойств.
 
-Этот интерфейс API не предназначен для изменения рецензентов или решения, принимаемые проверки.  Чтобы изменить рецензентов, используйте [addReviewer](accessreview-addreviewer.md) или [removeReviewer](accessreview-removereviewer.md) API-интерфейсы.  Остановка одноразовый review уже запущенной или уже запущен экземпляр повторяющейся проверки, раньше, использовать [Остановить](accessreview-stop.md) API и применение решения целевой группы или приложения права доступа, используйте [Применение](accessreview-apply.md) API. 
+Этот интерфейс API не предназначен для изменения рецензентов или решения, принимаемые проверки.  Чтобы изменить рецензентов, используйте [addReviewer](accessreview-addreviewer.md) или [removeReviewer](accessreview-removereviewer.md) API-интерфейсы.  Чтобы остановить одноразовый review уже запущенной или уже запущен экземпляр повторяющейся проверки, раньше, используйте [Остановить](accessreview-stop.md) API. Чтобы применить решения для целевой группы или приложения права доступа, используйте [Применение](accessreview-apply.md) API. 
 
 
 ## <a name="permissions"></a>Разрешения
@@ -37,7 +37,7 @@ PATCH /accessReviews('{reviewId}')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Носителя \{маркеров\}. Обязательная часть. |
 
 ## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON параметров объекта [accessReview](../resources/accessreview.md) .
@@ -53,7 +53,7 @@ PATCH /accessReviews('{reviewId}')
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `204, Accepted` код ответа и объект [accessReview](../resources/accessreview.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -94,7 +94,7 @@ Content-type: application/json
     "endDateTime": "2017-03-12T00:35:53.214Z",
     "status": "Initializing",
     "businessFlowTemplateId": "6e4f3d20-c5c3-407f-9695-8460952bcc68",
-    "reviewerType": "delegate",
+    "reviewerType": "delegated",
     "description": "Sample description"
 }
 ```

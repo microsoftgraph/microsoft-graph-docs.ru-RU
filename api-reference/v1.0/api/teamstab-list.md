@@ -4,12 +4,12 @@ description: 'Получить список вкладок в указанный
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d481b34036cc68d59b044c29b21bcdc9461af5ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d731ff9218efd5db240084a462b2acf08641c46b
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981093"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016634"
 ---
 # <a name="list-tabs-in-channel"></a>Список вкладок в канале
 
@@ -46,17 +46,17 @@ GET /teams/{id}/channels/{id}/tabs
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [вкладок](../resources/teamstab.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 ```http

@@ -4,12 +4,12 @@ description: 'Извлечение свойств и отношения межд
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 70782682e2e87de50459384d782a56ccb7e6cfe8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dd23ffc6bcfdeb8821e2227331e2be801f348ce8
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945603"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016676"
 ---
 # <a name="get-tab"></a>Получить вкладки
 
@@ -52,7 +52,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
