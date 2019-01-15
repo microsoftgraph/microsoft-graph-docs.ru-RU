@@ -2,4 +2,4 @@
 
 Возможно, введен неправильный URL-адрес, или эта страница больше недоступна.
 
-Дополнительные сведения о Microsoft Graph см. в [документации по Microsoft Graph](https://developer.microsoft.com/en-us/graph/docs/overview/overview).
+Дополнительные сведения о Microsoft Graph см. в [документации по Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/overview).

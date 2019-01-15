@@ -4,12 +4,12 @@ description: Повторяющиеся события — важная сост
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 27c407ccd288323866fbd6599050f0036b9d363d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9cdd7e7170dc48c2739514674786893efeae1b4e
+ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961794"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28016767"
 ---
 # <a name="schedule-repeating-appointments-as-recurring-events-in-outlook"></a>Планирование повторных встреч как повторяющихся событий в Outlook
 
@@ -203,7 +203,7 @@ ms.locfileid: "27961794"
 | **index** | Необязательный | Указывает, в какой из разрешенных дней, указанных в **daysOfsWeek**, происходит событие (начиная с первого экземпляра за месяц). Возможные значения: `first`, `second`, `third`, `fourth` и `last`. Значение по умолчанию: `first`. |
 | **month** | Обязательный | Указывает, в какой месяц происходит событие. |
 | **interval** | Обязательный | Задает количество лет между повторениями. |
-| **type** | Обязательный | Необходимо указать значение `relativeMonthly`. |
+| **type** | Обязательный | Необходимо указать значение `relativeYearly`. |
 
 #### <a name="examples"></a>Примеры
 
