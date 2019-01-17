@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение эскизов файла или папки
 localization_priority: Normal
-ms.openlocfilehash: 48ea0b1f876fff28affc68895aed58a063df1513
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: 2a64b8b7af4a1be82d4f14b4eedc17efd9839bab
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27813715"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27975388"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -56,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ThumbnailSet](../resources/thumbnailset.md) в теле отклика.
 
@@ -76,7 +77,7 @@ GET /me/drive/items/{item-id}/thumbnails
 Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -168,7 +169,7 @@ URL-адреса эскизов не кэшируются. Если в резу�
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Служба возвращает список ресурсов DriveItem и их эскизов.
 
@@ -262,7 +263,7 @@ Content-Type: application/json
 **Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.
 В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 **Примечание.** В OneDrive для бизнеса и SharePoint:
 

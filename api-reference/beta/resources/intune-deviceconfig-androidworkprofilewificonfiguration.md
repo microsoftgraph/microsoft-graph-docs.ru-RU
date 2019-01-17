@@ -3,12 +3,13 @@ title: Тип ресурса androidWorkProfileWiFiConfiguration
 description: С указанием конфигураций в этот профиль может проинструктировать устройства Android рабочих профилей для подключения к конечной точке желаемую Wi-Fi. Путем указания типов безопасности и метод проверки подлинности ожидаемого Wi-Fi конечной точкой подключения Wi-Fi можно сделать полностью для конечных пользователей. Этот профиль предоставляет типы безопасности ограниченный и проще, чем Enterprise Wi-Fi профиль.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: b4b95e6c80d892d14001e8dc2d6c60125971ad51
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b874f4f1d1ba20cfe588c88895cded13e114ad45
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851256"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27980463"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>Тип ресурса androidWorkProfileWiFiConfiguration
 

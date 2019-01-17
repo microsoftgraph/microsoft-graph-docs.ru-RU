@@ -3,12 +3,13 @@ title: Тип ресурса windowsMobileMSI
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений, к которым применяется MSI Windows Mobile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 123b449e2dd94582bbd2c485a121a81f91f58e94
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 511d8c86a6e7c3e0e7d937104364eaae2c688c9b
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888342"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27921495"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Тип ресурса windowsMobileMSI
 

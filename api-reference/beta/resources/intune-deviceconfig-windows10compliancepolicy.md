@@ -3,12 +3,13 @@ title: Тип ресурса windows10CompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Windows 10.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 786898d47cc574ce07d59d267293496b226f846d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: d3c0f23cf182af20c46686941b809fdd9ae28631
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841169"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27985363"
 ---
 # <a name="windows10compliancepolicy-resource-type"></a>Тип ресурса windows10CompliancePolicy
 

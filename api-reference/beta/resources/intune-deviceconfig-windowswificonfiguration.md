@@ -3,12 +3,13 @@ title: Тип ресурса windowsWifiConfiguration
 description: Конфигурация устройства
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 50f73a6a736aea5cac06c05d360c8f0c80bb41ce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: c3261d873d4b5fbd6a704946be7cdc0e1b693b32
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872718"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27972770"
 ---
 # <a name="windowswificonfiguration-resource-type"></a>Тип ресурса windowsWifiConfiguration
 

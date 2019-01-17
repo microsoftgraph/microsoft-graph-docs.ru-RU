@@ -3,12 +3,13 @@ title: Тип ресурса macOSVpnConfiguration
 description: С указанием конфигураций в этот профиль может проинструктировать Mac устройства для подключения к требуемой конечной точки VPN. Путем указания типов безопасности и метод проверки подлинности ожидаемого конечной точкой виртуальной частной сети VPN-подключение можно сделать полностью для конечных пользователей.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 2bc4ae56f7b355cec5edc27007ece27f2b3a7d9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: a97a23d5ea68c3387c2a84c6d25a171fb5c2cc03
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851634"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27973722"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>Тип ресурса macOSVpnConfiguration
 

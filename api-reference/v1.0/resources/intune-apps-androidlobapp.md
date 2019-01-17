@@ -3,12 +3,13 @@ title: Тип ресурса androidLobApp
 description: Содержит свойства, в том числе унаследованные, для бизнес-приложений Android.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: ad4bfc027b9c141226489d5e73ab473ea456ab26
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 5e1c59c94bdbca5d216132ec146633beeac3baa8
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873124"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27954080"
 ---
 # <a name="androidlobapp-resource-type"></a>Тип ресурса androidLobApp
 

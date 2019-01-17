@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
 localization_priority: Normal
-ms.openlocfilehash: c8ab45f9915b16f75e8b44ad50215c4e73c13fff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: sharepoint
+ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865182"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936832"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
@@ -83,7 +84,7 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`. |
 
-## <a name="parameters"></a>Параметры
+## <a name="parameters"></a>Parameters
 
 | Параметр            | Тип                          | Описание
 |:---------------------|:------------------------------|:---------------------------------
@@ -116,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).
 
@@ -166,7 +167,7 @@ Content-Range: bytes 0-25/128
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.
 Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
@@ -203,7 +204,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * В свойстве `nextExpectedRanges` не всегда указываются все отсутствующие диапазоны.
 * При успешной записи фрагментов оно возвращает следующий диапазон (например, "523-").
@@ -296,7 +297,7 @@ Content-Type: application/json
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приводится пример отклика.
 

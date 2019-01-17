@@ -2,12 +2,14 @@
 title: Тип ресурса deviceManagement
 description: 'Ресурс deviceManagement представляет контейнер, содержимое которого различаться в зависимости от рабочего процесса, включая:  '
 localization_priority: Normal
-ms.openlocfilehash: 72c8cde688e95d3ffda07e6e698e8fd5f0f08fc0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: tfitzmac
+ms.prod: intune
+ms.openlocfilehash: a2f4348da007a3d69d1618151718789d1b72e3e1
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823249"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27961339"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -59,7 +61,7 @@ ms.locfileid: "27823249"
 |maximumDepTokens|Int32|Максимальное число DEP маркеры могут каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
-|accountMoveCompletionDateTime|DateTimeOffset|Дата и время, когда данные клиента перемещать между ScaleUnits строкового.|
+|accountMoveCompletionDateTime|DateTimeOffset|Время & даты, при перемещении данные клиента между ScaleUnits строкового.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о разрешения администратора.|
 |deviceProtectionOverview;|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Общие сведения о защите устройств.|
 |managedDeviceCleanupSettings;|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md);|Правила очистки устройства|

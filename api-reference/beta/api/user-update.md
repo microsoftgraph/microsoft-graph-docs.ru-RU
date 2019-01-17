@@ -3,12 +3,13 @@ title: Обновление пользователя
 description: Обновление свойств объекта пользователя.
 author: dkershaw10
 localization_priority: Normal
-ms.openlocfilehash: 5bccf297bb26a6d6bcea9a8c2f82f7853a6afd83
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 00efdeed6fdb85aeccde5fae63e813b8b5e65961
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807331"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27939114"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -35,7 +36,7 @@ PATCH /users/{id | userPrincipalName}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -76,7 +77,7 @@ PATCH /users/{id | userPrincipalName}
 
 Поскольку **пользовательский** ресурс поддерживает [расширения](/graph/extensibility-overview), можно использовать `PATCH` операции для добавления, обновления или удаления данных конкретного приложения в настраиваемых свойств расширения в существующий экземпляр **пользователя** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 ## <a name="example"></a>Пример

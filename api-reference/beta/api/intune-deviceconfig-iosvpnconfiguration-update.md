@@ -3,12 +3,13 @@ title: Обновление iosVpnConfiguration
 description: Обновление свойства объекта iosVpnConfiguration.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 7a07d1e60cdc3437aada5296aeefd86a6e45ae9d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 49004ef3bf7cd3efeb82dffc462161b80ef2f3ef
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858452"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924652"
 ---
 # <a name="update-iosvpnconfiguration"></a>Обновление iosVpnConfiguration
 
@@ -17,7 +18,7 @@ ms.locfileid: "27858452"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Обновление свойства объекта [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,11 +41,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md).

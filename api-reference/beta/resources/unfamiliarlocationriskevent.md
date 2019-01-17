@@ -1,12 +1,13 @@
 ---
 title: Тип ресурса unfamiliarLocationRiskEvent
 description: Событие риск, обнаруженных защитой Azure Active Directory Identity которых учетной записи входа в предпринимается попытка из новое расположение для этого пользователя. Полные сведения о событиях риска можно найти в документации по Azure AD защиту.
-ms.openlocfilehash: 7fa75c28fcc6432a5f8e32bff695e32d76c5acdc
-ms.sourcegitcommit: 334e84b4aed63162bcc31831cffd6d363dafee02
+localization_priority: Normal
+ms.openlocfilehash: 130d68bfb23bdb23b6a9de81fa988d38db1d8c10
+ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 11/29/2018
-ms.locfileid: "27076060"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "27868742"
 ---
 # <a name="unfamiliarlocationriskevent-resource-type"></a>Тип ресурса unfamiliarLocationRiskEvent
 
@@ -22,7 +23,7 @@ ms.locfileid: "27076060"
 |[Получение unfamiliarLocationRiskEvent](../api/unfamiliarlocationriskevent-get.md) | [unfamiliarLocationRiskEvent](unfamiliarlocationriskevent.md) |Чтение свойства и связи объекта unfamiliarLocationRiskEvent.|
 
 ## <a name="properties"></a>Свойства
-| Свойство     | Тип   |Description|
+| Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно datetime самого события риска. Это правильное свойство для использования в качестве фильтра при запросе события рисков.|
@@ -38,7 +39,7 @@ ms.locfileid: "27076060"
 |userPrincipalName|string| Имя участника-пользователя пользователя в группу риска|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Description|
+| Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
 

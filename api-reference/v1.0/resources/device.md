@@ -2,12 +2,14 @@
 title: Тип ресурса device
 description: Представляет устройство, зарегистрированное в организации. Экземпляры device создаются в облаке с помощью службы Device Registration Service или Intune. Их используют политики условного доступа для многофакторной проверки подлинности. Представленными устройствами могут быть компьютеры и ноутбуки, смартфоны и планшеты. Наследуется от directoryObject.
 localization_priority: Normal
-ms.openlocfilehash: 4b28b27439f911ff98f13e7d1ae88b873b1286f4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: lleonard-msft
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: ab03eed26f5e34c2ac149815b3ba66b37fc2090c
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811713"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27984999"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 

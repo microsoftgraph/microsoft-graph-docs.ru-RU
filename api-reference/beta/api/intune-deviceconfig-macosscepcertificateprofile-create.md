@@ -3,12 +3,13 @@ title: Создание macOSScepCertificateProfile
 description: Создание нового объекта macOSScepCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 44afadca83c5151d23866268f2d54e8f39d16cee
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: b62fb3e8be2c83bfedacabda12f29c6f4ee89afe
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847735"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27924988"
 ---
 # <a name="create-macosscepcertificateprofile"></a>Создание macOSScepCertificateProfile
 
@@ -17,7 +18,7 @@ ms.locfileid: "27847735"
 > **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
 
 Создание нового объекта [macOSScepCertificateProfile](../resources/intune-deviceconfig-macosscepcertificateprofile.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
+## <a name="prerequisites"></a>Предварительные требования
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -39,11 +40,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта macOSScepCertificateProfile.
 
 В следующей таблице показаны свойства, которые необходимы для создания macOSScepCertificateProfile.

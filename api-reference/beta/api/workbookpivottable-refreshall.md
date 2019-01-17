@@ -3,12 +3,13 @@ title: 'workbookPivotTable: refreshAll'
 description: Обновляет сводную таблицу на заданном листе.
 author: lumine2008
 localization_priority: Normal
-ms.openlocfilehash: cd70ed9a0f0681ac8b1f90d2839e85a419762653
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: excel
+ms.openlocfilehash: 6edad0def37d67dddb6258814c6d4a4004a93366
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822304"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27982241"
 ---
 # <a name="workbookpivottable-refreshall"></a>workbookPivotTable: refreshAll
 
@@ -37,7 +38,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 
@@ -55,7 +56,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTables/refreshAll
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

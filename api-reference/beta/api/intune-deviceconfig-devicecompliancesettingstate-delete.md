@@ -3,12 +3,13 @@ title: Удаление объекта deviceComplianceSettingState
 description: Удаляет объект deviceComplianceSettingState.
 author: tfitzmac
 localization_priority: Normal
-ms.openlocfilehash: 9ece2315ef2417da52c35ee53359e9d21b482ba6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: intune
+ms.openlocfilehash: 81abff2306119ba23b9a60952dd4ff8d44edae8f
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27836927"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27953282"
 ---
 # <a name="delete-devicecompliancesettingstate"></a>Удаление объекта deviceComplianceSettingState
 
@@ -38,14 +39,14 @@ DELETE /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceComp
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
