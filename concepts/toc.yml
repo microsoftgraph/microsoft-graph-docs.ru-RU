@@ -102,7 +102,9 @@ items:
                 href: outlook-share-messages-folders.md
               - name: Неизменяемый идентификатор (предварительная версия)
                 href: outlook-immutable-id.md
-          - name: Заметки
+              - name: Отправка почты от имени другого пользователя
+                href: outlook-send-mail-from-other-user.md
+          - name: Примечания
             href: integrate-with-onenote.md
             items:
               - name: Получение содержимого OneNote
