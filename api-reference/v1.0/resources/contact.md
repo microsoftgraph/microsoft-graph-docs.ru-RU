@@ -3,12 +3,13 @@ title: Тип ресурса contact
 description: Контакт — элемент в Outlook, в котором вы можете упорядочить и хранить сведения о людях и организациях, с которыми поддерживаете связь. Контакты содержатся в папках контактов.
 author: angelgolfer-ms
 localization_priority: Priority
-ms.openlocfilehash: 6ff19278e6cf120404b892bb95881326ce281a72
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: outlook
+ms.openlocfilehash: 7b60333bec9bfca9d67fedc379e4a51ce768fba2
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854378"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27936839"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -16,8 +17,8 @@ ms.locfileid: "27854378"
 
 Этот ресурс поддерживает:
 
-- Добавление настраиваемых свойств данные как [расширения](/graph/extensibility-overview).
-- Подписка на [уведомления об изменении](/graph/webhooks).
+- добавление собственных данных к настраиваемым свойствам в виде [расширений](/graph/extensibility-overview);
+- подписку на [уведомления об изменениях](/graph/webhooks);
 - отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](/graph/delta-query-overview) (функция [delta](../api/contact-delta.md)).
 
 
@@ -55,7 +56,7 @@ ms.locfileid: "27854378"
 |companyName|String|Название компании контакта.|
 |createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |отделу;|String|Отдел контакта.|
-|displayName|String|Отображаемое имя контакта. В ходе операции [создания](../api/user-post-contacts.md) или [обновления](../api/contact-update.md) можно указать отображаемое имя. Обратите внимание, что более поздние обновления для других свойств может стать причиной автоматически подставленное значение для перезаписи значение displayName, заданные. Чтобы сохранить существующие значения, всегда включите его в качестве displayName в рамках одной операции [обновления](../api/contact-update.md) .|
+|displayName|String|Отображаемое имя контакта. Отображаемое имя можно указать в операции [создания](../api/user-post-contacts.md) или [обновления](../api/contact-update.md). Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию [обновления](../api/contact-update.md).|
 |emailAddresses|Коллекция [EmailAddress](emailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |generation|String|Поколение контакта.|
@@ -88,7 +89,8 @@ ms.locfileid: "27854378"
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для контакта. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для контакта. Только для чтения. Допускается значение null.|
-|photo|[profilePhoto](profilephoto.md)| Необязательное фото контакта. Можно получить или задать фото для контакта.|
+|Фотография
+|[profilePhoto](profilephoto.md)| Необязательное фото контакта. Можно получить или задать фото для контакта.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для контакта. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON

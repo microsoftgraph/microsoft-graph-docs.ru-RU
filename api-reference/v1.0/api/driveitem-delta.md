@@ -4,12 +4,13 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
 localization_priority: Priority
-ms.openlocfilehash: edf47b1ab6ecd910a5ad2dbc2e87454963a12555
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.prod: sharepoint
+ms.openlocfilehash: 727877f0fde95586f8223557aa1b841507b91c02
+ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815990"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "27987848"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -45,11 +46,11 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 | Параметр   | Тип  | Описание                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| токен  | string | Необязательный параметр. Если не указано, перечисляет текущее состояние иерархии. Если `latest`, возвращается пустая ответа с последнего разностного маркер. Если маркер предыдущей дельты возвращает новое состояние с момента маркер.
+| token  | string | Необязательный параметр. Если не указан, перечисляет текущее состояние иерархии. Если используется значение `latest`, возвращает пустой ответ с последним разностным маркером. Если используется предыдущий разностный маркер, возвращает новое состояние с момента того маркера.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -184,7 +185,7 @@ Content-type: application/json
 GET /me/drive/root/delta?token=latest
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "isEmpty": true, "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
