@@ -4,73 +4,24 @@ description: Получение свойств и связей объекта г
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 99215af564be186edaf57563ae493f363c9cc2fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 51a3f6a8b135c7a898381180c9da2ad22a4d9527
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941053"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726591"
 ---
 # <a name="get-group"></a>Вывод группы
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в рабочих приложениях не поддерживается.
 
-Получите свойства и связи объекта [группы](../resources/group.md) .
+Получение свойств и связей объекта [группы](../resources/group.md).
 
-##### <a name="default-properties"></a>Свойства по умолчанию
+Это действие по умолчанию возвращает только подмножество всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties). 
 
-Ниже показан набор свойств, используемый по умолчанию и возвращаемый при получении групп или выводе списка групп. Это подмножество всех доступных свойств. 
+Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. См. [пример](#request-2) для `$select`. Исключением является свойство **hasMembersWithLicenseErrors**. См. [пример](group-list.md#request-2) использования этого свойства.
 
-* classification
-* createdDateTime
-* description
-* displayName
-* groupTypes
-* id
-* mail
-* mailEnabled
-* mailNickname
-* membershipRule
-* membershipRuleProcessingState
-* onPremisesLastSyncDateTime
-* onPremisesSecurityIdentifier
-* onPremisesSyncEnabled
-* preferredLanguage - не поддерживается; значение для этого свойства не может быть набора и возвращает `null` при вызове.
-* proxyAddresses
-* renewedDateTime
-* securityEnabled
-* темы
-* visibility
-
-По умолчанию следующие свойства групп не возвращаются:
-
-* accessType
-* allowExternalSenders
-* autoSubscribeNewMembers
-* hasMembersWithLicenseErrors
-* isSubscribedByMail
-* isFavorite
-* unseenConversationsCount
-* unseenCount
-* unseenMessagesCount
-
-Для получения этих свойств (за исключением **isFavorite** и **hasMembersWithLicenseErrors**), воспользуйтесь `$select` параметр запроса. Ниже представлены примеры. 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/beta/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-Чтобы вернуть группы, содержащие элементы с ошибками лицензии, используйте параметр **$filter** запроса:
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErrors+eq+true
-```
-
-Поскольку **группы** ресурсов поддерживает [расширения](/graph/extensibility-overview), вы также можете использовать `GET` операции для получения данных расширения и настраиваемых свойств в экземпляре **группы** .
+Так как ресурс **группы** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` вы можете также получить настраиваемые свойства и данные расширения в экземпляре **группы**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -86,62 +37,114 @@ GET GET https://graph.microsoft.com/beta/groups?$filter=hasMembersWithLicenseErr
 ```http
 GET /groups/{id}
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
+Вы можете использовать `$select` для получения свойств определенной группы, включая те, которые не возвращаются по умолчанию. См. [пример](#request-2) ниже.
+
+Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+#### <a name="request-1"></a>Запрос 1
+Ниже приведен пример запроса GET. 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/groups/{id}
+GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
->**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства по умолчанию, как описано ранее.
+#### <a name="response-1"></a>Ответ 1
+Ниже приведен пример ответа. Он включает только стандартные свойства.
+
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. В реальном вызове возвращаются все свойства по умолчанию.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "id": "45b7d2e7-b882-4a80-ba97-10b7a63b8fa4",
+  "deletedDateTime": null,
+  "classification": null,
+  "createdDateTime": "2018-12-22T02:21:05Z",
+  "description": "Self help community for golf",
+  "displayName": "Golf Assist",
+  "expirationDateTime": null,
   "groupTypes": [
-    "groupTypes-value"
+      "Unified"
   ],
-  "mail": "mail-value",
+  "mail": "golfassist@contoso.com",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
+  "mailNickname": "golfassist",
+  "membershipRule": null,
+  "membershipRuleProcessingState": null,
+  "onPremisesLastSyncDateTime": null,
+  "onPremisesSecurityIdentifier": null,
+  "onPremisesSyncEnabled": null,
+  "preferredDataLocation": "CAN",
+  "preferredLanguage": null,
   "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+      "smtp:golfassist@contoso.onmicrosoft.com",
+      "SMTP:golfassist@contoso.com"
+  ],
+  "renewedDateTime": "2018-12-22T02:21:05Z",
+  "resourceBehaviorOptions": [],
+  "resourceProvisioningOptions": [],
+  "securityEnabled": false,
+  "theme": null,
+  "visibility": "Public",
+  "onPremisesProvisioningErrors": []
+}
+```
+
+#### <a name="request-2"></a>Запрос 2
+В следующем примере используется параметр запрос `$select`, чтобы получить несколько свойств, которые не найдены по умолчанию. 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/beta/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a>Ответ 2
+Ниже приведен пример ответа, содержащий запрашиваемые свойства, которые не заданы по умолчанию.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 
