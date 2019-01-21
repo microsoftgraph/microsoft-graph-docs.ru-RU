@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 34db44b1048431f8d1bf0be715e35bcdab6ae80b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3f5ed08c25fad9b285397307f6c8e7f1d6cc70a1
+ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970754"
+ms.lasthandoff: 01/18/2019
+ms.locfileid: "28726542"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -60,7 +60,7 @@ ms.locfileid: "27970754"
 ## <a name="microsoft-forms-tabs"></a>Вкладки Microsoft Forms
 
 Для вкладок Microsoft Forms объекту `teamsAppId` соответствует `81fef3a6-72aa-4648-a763-de824aeafb7d`.
-Конфигурация:
+Ниже приведена конфигурация.
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
@@ -80,13 +80,38 @@ ms.locfileid: "27970754"
 | PowerPoint  | `com.microsoft.teamspace.tab.file.staticviewer.powerpoint` | `pptx` |
 | PDF | `com.microsoft.teamspace.tab.file.staticviewer.pdf` | `pdf` |
 
-Конфигурация не поддерживается.
+Ниже приведена конфигурация.
+
+| Свойство   | Тип        | Описание                                              |
+| ---------- | ----------- | -------------------------------------------------------- |
+| entityId   | string      | Идентификатор sourceDoc для файла. Вы найдете его, открыв файл в SharePoint и посмотрев на адресную строку — URL-адрес будет иметь предложение `sourcedoc=%7B{sourceDocId}%7D`. Вы также можете получить эти данные из webUrl адреса элемента диска SharePoint для документа. Дополнительные сведения см.[GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| contentUrl | string      | URL-адрес документ в формате `{folder-webUrl}/{item-name}`. {folder-webUrl} - это webUrl адрес папки SharePoint, содержащей файл, который можно найти путем открытия файла в SharePoint и просмотра адресной строки, либо с помощью свойства webUrl из [GET /groups/{group-id}/drive/items/{folder-item-id}](/graph/api/driveitem-get?view=graph-rest-beta). {item-name} соответствует имени файла (например, file.docx), которое является свойством `name` в [GET /groups/{group-id}/drive/items/{item-id}](/graph/api/driveitem-get?view=graph-rest-beta). |
+| removeUrl  | строка      | NULL                                                     |
+| websiteUrl | string      | Null                                       |
+
+### <a name="example-create-a-configured-word-tab"></a>Пример: создание настроенной вкладки Word
+
+Приведенный ниже пример создает настроенную вкладку Word.
+
+```http
+POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
+{
+  "displayName": "word",
+  "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/com.microsoft.teamspace.tab.file.staticviewer.word",
+  "configuration": {
+     "entityId": "115A90F4-AC9C-4F79-9837-36D1EFB3BE08",
+     "contentUrl": "https://m365x165177.sharepoint.com/sites/4NewCloneWithClonableParts/Shared%20Documents/General/Employee Handbook.docx",
+     "removeUrl": null,
+     "websiteUrl": null
+  }
+}
+```
 
 ## <a name="wiki-tabs"></a>Вкладки вики-сайта
 
 Для вкладок вики-сайта объекту `teamsAppId` соответствует `com.microsoft.teamspace.tab.wiki`.
 Вкладки вики-сайта не поддерживают конфигурацию через Graph.
-Однако обратите внимание, что практически отсутствуют параметры для конфигурации — в ненастроенной вкладке вики-сайта первому пользователю просто нужно щелкнуть пункт **Настройка вкладки**, чтобы выполнить ее настройку.
+Однако обратите внимание, что практически отсутствуют параметры для конфигурации — в ненастроенной вкладке вики-сайта первому пользователю просто нужно выбрать **Настройка вкладки**, чтобы выполнить ее настройку.
 
 ## <a name="document-library-tabs"></a>Вкладки библиотеки документов
 
@@ -112,4 +137,4 @@ ms.locfileid: "27970754"
 
 Для вкладок страниц и списков SharePoint объекту `teamsAppId` соответствует `2a527703-1f6f-4559-a332-d8a7d288cd88`.
 Конфигурация не поддерживается.
-Если нужна конфигурация, рекомендуется использовать вкладку веб-сайта.
+Если вы хотите настроить вкладку, попробуйте использовать вкладку веб-сайта.
