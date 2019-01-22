@@ -167,6 +167,10 @@ items:
           - name: Командная работа
             href: teams-concept-overview.md
             items:
+              - name: Создание группы и команды
+                href: teams-create-group-and-team.md
+              - name: Перечисление всех команд
+                href: teams-list-all-teams.md
               - name: Настройка встроенных вкладок
                 href: teams-configuring-builtin-tabs.md
           - name: Книги и диаграммы
