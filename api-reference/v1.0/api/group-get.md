@@ -4,123 +4,137 @@ description: Получение свойств и связей объекта г
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 7de0b9dac4d1bf3295cd01bbd522d1f18314c098
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917190"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353092"
 ---
-# <a name="get-group"></a><span data-ttu-id="c0d1f-103">Вывод группы</span><span class="sxs-lookup"><span data-stu-id="c0d1f-103">Get group</span></span>
-<span data-ttu-id="c0d1f-104">Получение свойств и связей объекта группы.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-104">Get the properties and relationships of a group object.</span></span>
+# <a name="get-group"></a><span data-ttu-id="5669f-103">Вывод группы</span><span class="sxs-lookup"><span data-stu-id="5669f-103">Get group</span></span>
+<span data-ttu-id="5669f-104">Получение свойств и связей объекта группы.</span><span class="sxs-lookup"><span data-stu-id="5669f-104">Get the properties and relationships of a group object.</span></span>
 
-##### <a name="default-properties"></a><span data-ttu-id="c0d1f-105">Свойства по умолчанию</span><span class="sxs-lookup"><span data-stu-id="c0d1f-105">Default properties</span></span>
+<span data-ttu-id="5669f-105">Это действие по умолчанию возвращает только часть всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties).</span><span class="sxs-lookup"><span data-stu-id="5669f-105">This operation returns by default only a subset of all the available properties, as noted in the [Properties](../resources/group.md#properties) section.</span></span> <span data-ttu-id="5669f-106">Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`.</span><span class="sxs-lookup"><span data-stu-id="5669f-106">To get properties that are _not_ returned by default, specify them in a `$select` OData query option.</span></span> <span data-ttu-id="5669f-107">См. [пример](#request-2).</span><span class="sxs-lookup"><span data-stu-id="5669f-107">See an [example](#request-2).</span></span>
 
-<span data-ttu-id="c0d1f-p101">Ниже показан набор свойств, используемый по умолчанию и возвращаемый при получении групп или выводе списка групп. Это подмножество всех доступных свойств.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-p101">The following represent the default set of properties that are returned when getting or listing groups. These are a subset of all available properties.</span></span>
+## <a name="permissions"></a><span data-ttu-id="5669f-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5669f-108">Permissions</span></span>
+<span data-ttu-id="5669f-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5669f-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="c0d1f-108">description</span><span class="sxs-lookup"><span data-stu-id="c0d1f-108">description</span></span>
-* <span data-ttu-id="c0d1f-109">displayName</span><span class="sxs-lookup"><span data-stu-id="c0d1f-109">displayName</span></span>
-* <span data-ttu-id="c0d1f-110">groupTypes</span><span class="sxs-lookup"><span data-stu-id="c0d1f-110">groupTypes</span></span>
-* <span data-ttu-id="c0d1f-111">id</span><span class="sxs-lookup"><span data-stu-id="c0d1f-111">id</span></span>
-* <span data-ttu-id="c0d1f-112">mail</span><span class="sxs-lookup"><span data-stu-id="c0d1f-112">mail</span></span>
-* <span data-ttu-id="c0d1f-113">mailEnabled</span><span class="sxs-lookup"><span data-stu-id="c0d1f-113">mailEnabled</span></span>
-* <span data-ttu-id="c0d1f-114">mailNickname</span><span class="sxs-lookup"><span data-stu-id="c0d1f-114">mailNickname</span></span>
-* <span data-ttu-id="c0d1f-115">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="c0d1f-115">onPremisesLastSyncDateTime</span></span>
-* <span data-ttu-id="c0d1f-116">onPremisesSecurityIdentifier</span><span class="sxs-lookup"><span data-stu-id="c0d1f-116">onPremisesSecurityIdentifier</span></span>
-* <span data-ttu-id="c0d1f-117">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="c0d1f-117">onPremisesSyncEnabled</span></span>
-* <span data-ttu-id="c0d1f-118">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="c0d1f-118">proxyAddresses</span></span>
-* <span data-ttu-id="c0d1f-119">securityEnabled</span><span class="sxs-lookup"><span data-stu-id="c0d1f-119">securityEnabled</span></span>
-* <span data-ttu-id="c0d1f-120">visibility</span><span class="sxs-lookup"><span data-stu-id="c0d1f-120">visibility</span></span>
-
-<span data-ttu-id="c0d1f-121">По умолчанию следующие свойства групп не возвращаются:</span><span class="sxs-lookup"><span data-stu-id="c0d1f-121">The following group properties are not returned by default:</span></span>
-
-* <span data-ttu-id="c0d1f-122">allowExternalSenders</span><span class="sxs-lookup"><span data-stu-id="c0d1f-122">allowExternalSenders</span></span>
-* <span data-ttu-id="c0d1f-123">autoSubscribeNewMembers</span><span class="sxs-lookup"><span data-stu-id="c0d1f-123">autoSubscribeNewMembers</span></span>
-* <span data-ttu-id="c0d1f-124">isSubscribedByMail</span><span class="sxs-lookup"><span data-stu-id="c0d1f-124">isSubscribedByMail</span></span>
-* <span data-ttu-id="c0d1f-125">unseenCount</span><span class="sxs-lookup"><span data-stu-id="c0d1f-125">unseenCount</span></span>
-
-<span data-ttu-id="c0d1f-p102">Для их получения используйте параметр запроса **$select**. Примеры.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-p102">To get these properties, use the **$select** query parameter. The following are examples:</span></span> 
-
-<!-- { "blockType": "ignored" } -->
-```http
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
-
-GET https://graph.microsoft.com/v1.0/groups/c28c1cc9-e1ab-4c4d-98d1-d8fdf128b60f?$select=description,allowExternalSenders
-```
-
-
-## <a name="permissions"></a><span data-ttu-id="c0d1f-128">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c0d1f-128">Permissions</span></span>
-<span data-ttu-id="c0d1f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c0d1f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="c0d1f-131">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c0d1f-131">Permission type</span></span>      | <span data-ttu-id="c0d1f-132">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c0d1f-132">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5669f-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5669f-111">Permission type</span></span>      | <span data-ttu-id="5669f-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5669f-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c0d1f-133">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c0d1f-133">Delegated (work or school account)</span></span> | <span data-ttu-id="c0d1f-134">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0d1f-134">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c0d1f-135">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c0d1f-135">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c0d1f-136">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-136">Not supported.</span></span>    |
-|<span data-ttu-id="c0d1f-137">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c0d1f-137">Application</span></span> | <span data-ttu-id="c0d1f-138">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c0d1f-138">Group.Read.All, Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="5669f-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5669f-113">Delegated (work or school account)</span></span> | <span data-ttu-id="5669f-114">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5669f-114">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5669f-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5669f-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5669f-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5669f-116">Not supported.</span></span>    |
+|<span data-ttu-id="5669f-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5669f-117">Application</span></span> | <span data-ttu-id="5669f-118">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5669f-118">Group.Read.All, Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c0d1f-139">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c0d1f-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5669f-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5669f-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c0d1f-140">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c0d1f-140">Optional query parameters</span></span>
-<span data-ttu-id="c0d1f-141">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-141">This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="5669f-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="5669f-120">Optional query parameters</span></span>
+<span data-ttu-id="5669f-121">Вы можете использовать `$select` для получения свойств определенной группы, включая те, которые не возвращаются по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="5669f-121">You can use `$select` to get specific group properties, including those that are not returned by default.</span></span> <span data-ttu-id="5669f-122">См. [пример](#request-2) ниже.</span><span class="sxs-lookup"><span data-stu-id="5669f-122">See an [example](#request-2).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c0d1f-142">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c0d1f-142">Request headers</span></span>
-| <span data-ttu-id="c0d1f-143">Имя</span><span class="sxs-lookup"><span data-stu-id="c0d1f-143">Name</span></span>       | <span data-ttu-id="c0d1f-144">Тип</span><span class="sxs-lookup"><span data-stu-id="c0d1f-144">Type</span></span> | <span data-ttu-id="c0d1f-145">Описание</span><span class="sxs-lookup"><span data-stu-id="c0d1f-145">Description</span></span>|
+<span data-ttu-id="5669f-123">Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="5669f-123">For more information on OData query options, see [OData Query Parameters](/graph/query-parameters).</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="5669f-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5669f-124">Request headers</span></span>
+| <span data-ttu-id="5669f-125">Имя</span><span class="sxs-lookup"><span data-stu-id="5669f-125">Name</span></span>       | <span data-ttu-id="5669f-126">Тип</span><span class="sxs-lookup"><span data-stu-id="5669f-126">Type</span></span> | <span data-ttu-id="5669f-127">Описание</span><span class="sxs-lookup"><span data-stu-id="5669f-127">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="c0d1f-146">Authorization</span><span class="sxs-lookup"><span data-stu-id="c0d1f-146">Authorization</span></span>  | <span data-ttu-id="c0d1f-147">string</span><span class="sxs-lookup"><span data-stu-id="c0d1f-147">string</span></span>  | <span data-ttu-id="c0d1f-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5669f-128">Authorization</span><span class="sxs-lookup"><span data-stu-id="5669f-128">Authorization</span></span>  | <span data-ttu-id="5669f-129">string</span><span class="sxs-lookup"><span data-stu-id="5669f-129">string</span></span>  | <span data-ttu-id="5669f-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5669f-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="c0d1f-150">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c0d1f-150">Request body</span></span>
-<span data-ttu-id="c0d1f-151">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-151">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5669f-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5669f-132">Request body</span></span>
+<span data-ttu-id="5669f-133">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="5669f-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c0d1f-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="c0d1f-152">Response</span></span>
-<span data-ttu-id="c0d1f-153">В случае успеха этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-153">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="5669f-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="5669f-134">Response</span></span>
+<span data-ttu-id="5669f-135">В случае успеха этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="5669f-135">If successful, this method returns a `200 OK` response code and [group](../resources/group.md) object in the response body.</span></span> <span data-ttu-id="5669f-136">Он возвращает параметры по умолчанию, если не используется параметр `$select` для указания конкретных свойств.</span><span class="sxs-lookup"><span data-stu-id="5669f-136">It returns the default properties unless you use `$select` to specify specific properties.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c0d1f-154">Пример</span><span class="sxs-lookup"><span data-stu-id="c0d1f-154">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="c0d1f-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="c0d1f-155">Request</span></span>
-<span data-ttu-id="c0d1f-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-156">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5669f-137">Пример</span><span class="sxs-lookup"><span data-stu-id="5669f-137">Example</span></span>
+#### <a name="request-1"></a><span data-ttu-id="5669f-138">Запрос 1</span><span class="sxs-lookup"><span data-stu-id="5669f-138">Request 1</span></span>
+<span data-ttu-id="5669f-139">Ниже приведен пример запроса GET.</span><span class="sxs-lookup"><span data-stu-id="5669f-139">The following is an example of the GET request with sample query string values.</span></span> 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
   "name": "get_group"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/groups/{id}
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd
 ```
 
-#### <a name="response"></a><span data-ttu-id="c0d1f-157">Ответ</span><span class="sxs-lookup"><span data-stu-id="c0d1f-157">Response</span></span>
-<span data-ttu-id="c0d1f-158">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-158">The following is an example of the response.</span></span>
+#### <a name="response-1"></a><span data-ttu-id="5669f-140">Ответ 1</span><span class="sxs-lookup"><span data-stu-id="5669f-140">Response 1</span></span>
+<span data-ttu-id="5669f-141">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="5669f-141">The following is an example of the response.</span></span> <span data-ttu-id="5669f-142">Он включает только стандартные свойства.</span><span class="sxs-lookup"><span data-stu-id="5669f-142">It includes only the default properties.</span></span>
 
-><span data-ttu-id="c0d1f-159">**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="c0d1f-160">При фактическом вызове будут возвращены все свойства по умолчанию, как описано ранее.</span><span class="sxs-lookup"><span data-stu-id="c0d1f-160">The default properties will be returned from an actual call, as described before.</span></span>
+><span data-ttu-id="5669f-143">**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="5669f-143">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="5669f-144">В реальном вызове возвращаются все свойства по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="5669f-144">All the default properties are returned in an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group"
 } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: xxx
 
 {
-  "id": "id-value",
-  "description": "description-value",
-  "displayName": "displayName-value",
-  "groupTypes": [
-    "groupTypes-value"
-  ],
-  "mail": "mail-value",
-  "mailEnabled": true,
-  "mailNickname": "mailNickname-value",
-  "onPremisesLastSyncDateTime": "onPremisesLastSyncDateTime-value",
-  "onPremisesSecurityIdentifier": "onPremisesSecurityIdentifier-value",
-  "onPremisesSyncEnabled": true,
-  "proxyAddresses": [
-    "proxyAddresses-value"
-   ],
-   "securityEnabled": true,
-   "visibility": "visibility-value"
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "deletedDateTime": null,
+    "classification": null,
+    "createdDateTime": "2018-12-22T00:51:37Z",
+    "creationOptions": [],
+    "description": "Self help community for library",
+    "displayName": "Library Assist",
+    "groupTypes": [
+        "Unified"
+    ],
+    "mail": "library2@contoso.com",
+    "mailEnabled": true,
+    "mailNickname": "library",
+    "onPremisesLastSyncDateTime": null,
+    "onPremisesSecurityIdentifier": null,
+    "onPremisesSyncEnabled": null,
+    "preferredDataLocation": "CAN",
+    "proxyAddresses": [
+        "smtp:library7423@contoso.com",
+        "SMTP:library2@contoso.com"
+    ],
+    "renewedDateTime": "2018-12-22T00:51:37Z",
+    "resourceBehaviorOptions": [],
+    "resourceProvisioningOptions": [],
+    "securityEnabled": false,
+    "visibility": "Public",
+    "onPremisesProvisioningErrors": []
+}
+```
+
+#### <a name="request-2"></a><span data-ttu-id="5669f-145">Запрос 2</span><span class="sxs-lookup"><span data-stu-id="5669f-145">Request 2</span></span>
+<span data-ttu-id="5669f-146">В следующем примере используется параметр запрос `$select`, чтобы получить несколько свойств, которые не найдены по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="5669f-146">The next example uses a `$select` query option to get a few properties that are not returned by default.</span></span> 
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["b320ee12-b1cd-4cca-b648-a437be61c5cd"],
+  "name": "get_group_non_default"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/groups/b320ee12-b1cd-4cca-b648-a437be61c5cd?$select=allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount
+```
+
+#### <a name="response-2"></a><span data-ttu-id="5669f-147">Ответ 2</span><span class="sxs-lookup"><span data-stu-id="5669f-147">Response 2</span></span>
+<span data-ttu-id="5669f-148">Ниже приведен пример ответа, содержащий запрашиваемые свойства, которые не заданы по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="5669f-148">The following is an example of the response which includes the requested non-default properties.</span></span>
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "get_group_non_default"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groups(allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount)/$entity",
+    "id": "b320ee12-b1cd-4cca-b648-a437be61c5cd",
+    "allowExternalSenders": false,
+    "autoSubscribeNewMembers": false,
+    "isSubscribedByMail": false,
+    "unseenCount": 0
 }
 ```
 
