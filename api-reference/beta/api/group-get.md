@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта г
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 51a3f6a8b135c7a898381180c9da2ad22a4d9527
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 18eb80938247d56326620a6ac866073acad6f715
+ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726591"
+ms.lasthandoff: 01/19/2019
+ms.locfileid: "29353078"
 ---
 # <a name="get-group"></a>Вывод группы
 
@@ -51,7 +51,7 @@ GET /groups/{id}
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в тексте отклика. Он возвращает параметры по умолчанию, если не используется параметр `$select` для указания конкретных свойств.
 
 ## <a name="example"></a>Пример
 #### <a name="request-1"></a>Запрос 1
