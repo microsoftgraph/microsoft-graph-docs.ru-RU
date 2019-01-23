@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса bitLockerSystemDrivePolicy
 description: Базовый политики шифрования BitLocker.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 28c3b597f25e7ea83577c18620280885f4149dcf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9b63d075538508941d012df1e44f7cb563fed20d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924659"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425710"
 ---
 # <a name="bitlockersystemdrivepolicy-resource-type"></a>Тип ресурса bitLockerSystemDrivePolicy
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Базовый политики шифрования BitLocker.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -31,11 +32,12 @@ ms.locfileid: "27924659"
 |minimumPinLength|Int32|Указывает минимальную длину ПИН-кодов запуска. Допустимые значения 4 до 20|
 |recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Разрешает Восстановление зашифрованного BitLocker дисков операционной системы в случае отсутствия данные ключа требуется запуска. Этот параметр политики применяется при включении BitLocker.|
 |prebootRecoveryEnableMessageAndUrl|Логический|Включение восстановления до загрузки сообщение и URL-адрес. Если requireStartupAuthentication имеет значение false, это значение не влияет на.|
-|prebootRecoveryMessage|Строка|Определяет сообщение настраиваемого восстановления.|
-|prebootRecoveryUrl|Строка|Определяет URL-адрес настраиваемого восстановления.|
+|prebootRecoveryMessage|String|Определяет сообщение настраиваемого восстановления.|
+|prebootRecoveryUrl|String|Определяет URL-адрес настраиваемого восстановления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -69,7 +71,6 @@ ms.locfileid: "27924659"
   "prebootRecoveryUrl": "String"
 }
 ```
-
 
 
 

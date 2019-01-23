@@ -1,33 +1,35 @@
 ---
 title: Тип ресурса windowsKioskLocalGroup
 description: Класс, используемый для идентификации в локальную группу для базовой конфигурации
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f9c5d467e70b4e2e7f60bc4898be35a2e9fefadc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1134b6a842b54dc49fcd15a92d21aef227b35182
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964755"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424632"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Тип ресурса windowsKioskLocalGroup
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, используемый для идентификации в локальную группу для базовой конфигурации
+
 
 Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|Строка|Имя локальной группы, которая будет заблокирована этой базовой конфигурации|
+|groupName|String|Имя локальной группы, которая будет заблокирована этой базовой конфигурации|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -41,7 +43,6 @@ ms.locfileid: "27964755"
   "groupName": "String"
 }
 ```
-
 
 
 

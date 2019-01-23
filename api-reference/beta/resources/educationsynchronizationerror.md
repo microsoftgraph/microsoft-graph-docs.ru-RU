@@ -4,12 +4,12 @@ description: Представляет ошибку во время провер�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 2808ba0fd633fcdcbbaa32ce63162ac1cd4531ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 397ac305fcacd789174c05ea36ab026826227475
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425815"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>Тип ресурса educationSynchronizationError
 
@@ -40,7 +40,7 @@ ms.locfileid: "27944728"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationError"
+  "@odata.type": "microsoft.graph.educationSynchronizationError"
 }-->
 
 ```json

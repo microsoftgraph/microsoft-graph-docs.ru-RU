@@ -4,12 +4,12 @@ description: Используется для настройки синхрони
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 681a3331aba7bc84ac80911c4be8076d104f8a58
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ccfb74cdac64a147adb8ed7d3a0ad4b3fa3c83cd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938148"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425990"
 ---
 # <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider ресурсов
 
@@ -23,11 +23,11 @@ ms.locfileid: "27938148"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **connectionUrl** | Строка | URL-адрес подключения к экземпляру OneRoster. |
+| **connectionUrl** | String | URL-адрес подключения к экземпляру OneRoster. |
 | **schoolsIds** | Коллекция String |  Список sourcedIds school для синхронизации. |
-| **providerName** | Строка | Имя поставщика услуг OneRoster, определенный в [спецификации OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
-| **connectionsettings используется для определения** | [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
-| **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
+| **providerName** | String | Имя поставщика услуг OneRoster, определенный в [спецификации OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
+| **connectionsettings используется для определения** | [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [microsoft.graph.educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
+| **пользовательских настроек** | [microsoft.graph.educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {
@@ -35,19 +35,19 @@ ms.locfileid: "27938148"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationoneRosterApiDataProvider"
+  "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationoneRosterApiDataProvider",
+    "@odata.type": "microsoft.graph.educationoneRosterApiDataProvider",
     "connectionUrl": "String",
     "providerName": "String",
     "schoolsIds": [
         "String"
     ],
     "connectionSettings": {
-        "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+        "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
         "clientId": "String",
         "clientSecret": "String",
     },

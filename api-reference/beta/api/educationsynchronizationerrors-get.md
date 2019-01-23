@@ -4,12 +4,12 @@ description: 'Получите ошибки, возникающие во вре�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 6a15070b68e9cf249a6b6a7841ea24b0e265a24e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425129"
 ---
 # <a name="get-educationsynchronizationerrors"></a>Получение educationSynchronizationErrors
 
@@ -35,11 +35,11 @@ GET /synchronizationProfiles/{id}/errors
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный.  |
+| Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [Ошибка синхронизации](../resources/educationsynchronizationerror.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -53,14 +53,14 @@ GET /synchronizationProfiles/{id}/errors
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/errors
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
-  "@odata.type": "#microsoft.graph.educationSynchronizationError",
+  "@odata.type": "microsoft.graph.educationSynchronizationError",
   "isCollection": true
 } -->
 ```http
