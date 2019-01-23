@@ -1,31 +1,31 @@
 ---
 title: Тип перечисления localSecurityOptionsMinimumSessionSecurity
 description: Возможные значения для LocalSecurityOptionsMinimumSessionSecurity
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 822c996d788fd5edb5c92f876c725b771b051c15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c39f2bb6d0bab2aff09fc05bb0492e81102e1b7c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952484"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396086"
 ---
-# <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a><span data-ttu-id="8cb53-103">Тип перечисления localSecurityOptionsMinimumSessionSecurity</span><span class="sxs-lookup"><span data-stu-id="8cb53-103">localSecurityOptionsMinimumSessionSecurity enum type</span></span>
+# <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a><span data-ttu-id="f56d9-103">Тип перечисления localSecurityOptionsMinimumSessionSecurity</span><span class="sxs-lookup"><span data-stu-id="f56d9-103">localSecurityOptionsMinimumSessionSecurity enum type</span></span>
 
-> <span data-ttu-id="8cb53-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="8cb53-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="8cb53-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8cb53-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="f56d9-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f56d9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="f56d9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f56d9-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="8cb53-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="8cb53-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f56d9-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f56d9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8cb53-107">Возможные значения для LocalSecurityOptionsMinimumSessionSecurity</span><span class="sxs-lookup"><span data-stu-id="8cb53-107">Possible values for LocalSecurityOptionsMinimumSessionSecurity</span></span>
-## <a name="members"></a><span data-ttu-id="8cb53-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="8cb53-108">Members</span></span>
-|<span data-ttu-id="8cb53-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="8cb53-109">Member</span></span>|<span data-ttu-id="8cb53-110">Значение</span><span class="sxs-lookup"><span data-stu-id="8cb53-110">Value</span></span>|<span data-ttu-id="8cb53-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8cb53-111">Description</span></span>|
+<span data-ttu-id="f56d9-107">Возможные значения для LocalSecurityOptionsMinimumSessionSecurity</span><span class="sxs-lookup"><span data-stu-id="f56d9-107">Possible values for LocalSecurityOptionsMinimumSessionSecurity</span></span>
+
+## <a name="members"></a><span data-ttu-id="f56d9-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="f56d9-108">Members</span></span>
+|<span data-ttu-id="f56d9-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="f56d9-109">Member</span></span>|<span data-ttu-id="f56d9-110">Значение</span><span class="sxs-lookup"><span data-stu-id="f56d9-110">Value</span></span>|<span data-ttu-id="f56d9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f56d9-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8cb53-112">Нет</span><span class="sxs-lookup"><span data-stu-id="8cb53-112">none</span></span>|<span data-ttu-id="8cb53-113">0</span><span class="sxs-lookup"><span data-stu-id="8cb53-113">0</span></span>|<span data-ttu-id="8cb53-114">Отправлять ответы LM и NTLM</span><span class="sxs-lookup"><span data-stu-id="8cb53-114">Send LM & NTLM responses</span></span>|
-|<span data-ttu-id="8cb53-115">requireNtmlV2SessionSecurity</span><span class="sxs-lookup"><span data-stu-id="8cb53-115">requireNtmlV2SessionSecurity</span></span>|<span data-ttu-id="8cb53-116">1</span><span class="sxs-lookup"><span data-stu-id="8cb53-116">1</span></span>|<span data-ttu-id="8cb53-117">Отправлять LM и NTLM использования NTLMv2 сеансовая безопасность, если согласование</span><span class="sxs-lookup"><span data-stu-id="8cb53-117">Send LM & NTLM-use NTLMv2 session security if negotiated</span></span>|
-|<span data-ttu-id="8cb53-118">require128BitEncryption</span><span class="sxs-lookup"><span data-stu-id="8cb53-118">require128BitEncryption</span></span>|<span data-ttu-id="8cb53-119">2</span><span class="sxs-lookup"><span data-stu-id="8cb53-119">2</span></span>|<span data-ttu-id="8cb53-120">Отправлять LM и NTLM ответы</span><span class="sxs-lookup"><span data-stu-id="8cb53-120">Send LM & NTLM responses only</span></span>|
-|<span data-ttu-id="8cb53-121">ntlmV2And128BitEncryption</span><span class="sxs-lookup"><span data-stu-id="8cb53-121">ntlmV2And128BitEncryption</span></span>|<span data-ttu-id="8cb53-122">3</span><span class="sxs-lookup"><span data-stu-id="8cb53-122">3</span></span>|<span data-ttu-id="8cb53-123">Отправлять LM и NTLMv2 ответы</span><span class="sxs-lookup"><span data-stu-id="8cb53-123">Send LM & NTLMv2 responses only</span></span>|
-
+|<span data-ttu-id="f56d9-112">none</span><span class="sxs-lookup"><span data-stu-id="f56d9-112">none</span></span>|<span data-ttu-id="f56d9-113">0</span><span class="sxs-lookup"><span data-stu-id="f56d9-113">0</span></span>|<span data-ttu-id="f56d9-114">Отправить LM & NTLM ответы</span><span class="sxs-lookup"><span data-stu-id="f56d9-114">Send LM & NTLM responses</span></span>|
+|<span data-ttu-id="f56d9-115">requireNtmlV2SessionSecurity</span><span class="sxs-lookup"><span data-stu-id="f56d9-115">requireNtmlV2SessionSecurity</span></span>|<span data-ttu-id="f56d9-116">1</span><span class="sxs-lookup"><span data-stu-id="f56d9-116">1</span></span>|<span data-ttu-id="f56d9-117">Отправлять LM & использование NTLM сеансовая безопасность NTLMv2 при согласовании</span><span class="sxs-lookup"><span data-stu-id="f56d9-117">Send LM & NTLM-use NTLMv2 session security if negotiated</span></span>|
+|<span data-ttu-id="f56d9-118">require128BitEncryption</span><span class="sxs-lookup"><span data-stu-id="f56d9-118">require128BitEncryption</span></span>|<span data-ttu-id="f56d9-119">2</span><span class="sxs-lookup"><span data-stu-id="f56d9-119">2</span></span>|<span data-ttu-id="f56d9-120">Отправлять LM & только NTLM ответы</span><span class="sxs-lookup"><span data-stu-id="f56d9-120">Send LM & NTLM responses only</span></span>|
+|<span data-ttu-id="f56d9-121">ntlmV2And128BitEncryption</span><span class="sxs-lookup"><span data-stu-id="f56d9-121">ntlmV2And128BitEncryption</span></span>|<span data-ttu-id="f56d9-122">3</span><span class="sxs-lookup"><span data-stu-id="f56d9-122">3</span></span>|<span data-ttu-id="f56d9-123">Отправлять LM & только ответы NTLMv2</span><span class="sxs-lookup"><span data-stu-id="f56d9-123">Send LM & NTLMv2 responses only</span></span>|
 
 
 
