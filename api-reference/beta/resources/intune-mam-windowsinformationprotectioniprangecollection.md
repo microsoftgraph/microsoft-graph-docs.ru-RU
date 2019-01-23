@@ -1,33 +1,35 @@
 ---
 title: Тип ресурса windowsInformationProtectionIPRangeCollection
 description: Коллекция диапазонов IP-адресов Windows Information Protection
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9981b585818bb6db712b0088b2fde275179917ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e844c2da60babdcad5fad4a522a750bb2f013721
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911828"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418787"
 ---
-# <a name="windowsinformationprotectioniprangecollection-resource-type"></a><span data-ttu-id="07c29-103">Тип ресурса windowsInformationProtectionIPRangeCollection</span><span class="sxs-lookup"><span data-stu-id="07c29-103">windowsInformationProtectionIPRangeCollection resource type</span></span>
+# <a name="windowsinformationprotectioniprangecollection-resource-type"></a><span data-ttu-id="bfd40-103">Тип ресурса windowsInformationProtectionIPRangeCollection</span><span class="sxs-lookup"><span data-stu-id="bfd40-103">windowsInformationProtectionIPRangeCollection resource type</span></span>
 
-> <span data-ttu-id="07c29-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="07c29-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="07c29-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="07c29-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bfd40-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="bfd40-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bfd40-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bfd40-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="07c29-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="07c29-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bfd40-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bfd40-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="07c29-107">Коллекция диапазонов IP-адресов Windows Information Protection</span><span class="sxs-lookup"><span data-stu-id="07c29-107">Windows Information Protection IP Range Collection</span></span>
-## <a name="properties"></a><span data-ttu-id="07c29-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="07c29-108">Properties</span></span>
-|<span data-ttu-id="07c29-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="07c29-109">Property</span></span>|<span data-ttu-id="07c29-110">Тип</span><span class="sxs-lookup"><span data-stu-id="07c29-110">Type</span></span>|<span data-ttu-id="07c29-111">Описание</span><span class="sxs-lookup"><span data-stu-id="07c29-111">Description</span></span>|
+<span data-ttu-id="bfd40-107">Коллекция диапазонов IP-адресов Windows Information Protection</span><span class="sxs-lookup"><span data-stu-id="bfd40-107">Windows Information Protection IP Range Collection</span></span>
+
+## <a name="properties"></a><span data-ttu-id="bfd40-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="bfd40-108">Properties</span></span>
+|<span data-ttu-id="bfd40-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="bfd40-109">Property</span></span>|<span data-ttu-id="bfd40-110">Тип</span><span class="sxs-lookup"><span data-stu-id="bfd40-110">Type</span></span>|<span data-ttu-id="bfd40-111">Описание</span><span class="sxs-lookup"><span data-stu-id="bfd40-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="07c29-112">displayName</span><span class="sxs-lookup"><span data-stu-id="07c29-112">displayName</span></span>|<span data-ttu-id="07c29-113">Строка</span><span class="sxs-lookup"><span data-stu-id="07c29-113">String</span></span>|<span data-ttu-id="07c29-114">Отображаемое имя</span><span class="sxs-lookup"><span data-stu-id="07c29-114">Display name</span></span>|
-|<span data-ttu-id="07c29-115">ranges</span><span class="sxs-lookup"><span data-stu-id="07c29-115">ranges</span></span>|<span data-ttu-id="07c29-116">Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="07c29-116">[ipRange](../resources/intune-shared-iprange.md) collection</span></span>|<span data-ttu-id="07c29-117">Коллекция диапазонов IP-адресов</span><span class="sxs-lookup"><span data-stu-id="07c29-117">Collection of ip ranges</span></span>|
+|<span data-ttu-id="bfd40-112">displayName</span><span class="sxs-lookup"><span data-stu-id="bfd40-112">displayName</span></span>|<span data-ttu-id="bfd40-113">Строка</span><span class="sxs-lookup"><span data-stu-id="bfd40-113">String</span></span>|<span data-ttu-id="bfd40-114">Отображаемое имя</span><span class="sxs-lookup"><span data-stu-id="bfd40-114">Display name</span></span>|
+|<span data-ttu-id="bfd40-115">ranges</span><span class="sxs-lookup"><span data-stu-id="bfd40-115">ranges</span></span>|<span data-ttu-id="bfd40-116">Коллекция объектов [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="bfd40-116">[ipRange](../resources/intune-shared-iprange.md) collection</span></span>|<span data-ttu-id="bfd40-117">Коллекция диапазонов IP-адресов</span><span class="sxs-lookup"><span data-stu-id="bfd40-117">Collection of ip ranges</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="07c29-118">Связи</span><span class="sxs-lookup"><span data-stu-id="07c29-118">Relationships</span></span>
-<span data-ttu-id="07c29-119">Нет</span><span class="sxs-lookup"><span data-stu-id="07c29-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="07c29-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="07c29-120">JSON Representation</span></span>
-<span data-ttu-id="07c29-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="07c29-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="bfd40-118">Связи</span><span class="sxs-lookup"><span data-stu-id="bfd40-118">Relationships</span></span>
+<span data-ttu-id="bfd40-119">Нет</span><span class="sxs-lookup"><span data-stu-id="bfd40-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="bfd40-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bfd40-120">JSON Representation</span></span>
+<span data-ttu-id="bfd40-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bfd40-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsInformationProtectionIPRangeCollection"
@@ -46,7 +48,6 @@ ms.locfileid: "27911828"
   ]
 }
 ```
-
 
 
 

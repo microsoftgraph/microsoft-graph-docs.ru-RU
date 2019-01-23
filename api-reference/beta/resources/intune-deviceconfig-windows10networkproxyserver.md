@@ -1,34 +1,36 @@
 ---
 title: Тип ресурса windows10NetworkProxyServer
 description: Политика прокси-сервера сети.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c193c5b5d1ba61626bb348f52caf39ded58a77c8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 673cfe99e9cafe1b57fde5c70b7059286a6cc554
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951917"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418584"
 ---
-# <a name="windows10networkproxyserver-resource-type"></a><span data-ttu-id="78a45-103">Тип ресурса windows10NetworkProxyServer</span><span class="sxs-lookup"><span data-stu-id="78a45-103">windows10NetworkProxyServer resource type</span></span>
+# <a name="windows10networkproxyserver-resource-type"></a><span data-ttu-id="bf387-103">Тип ресурса windows10NetworkProxyServer</span><span class="sxs-lookup"><span data-stu-id="bf387-103">windows10NetworkProxyServer resource type</span></span>
 
-> <span data-ttu-id="78a45-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="78a45-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="78a45-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78a45-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bf387-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="bf387-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bf387-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bf387-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="78a45-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="78a45-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bf387-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bf387-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="78a45-107">Политика прокси-сервера сети.</span><span class="sxs-lookup"><span data-stu-id="78a45-107">Network Proxy Server Policy.</span></span>
-## <a name="properties"></a><span data-ttu-id="78a45-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="78a45-108">Properties</span></span>
-|<span data-ttu-id="78a45-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="78a45-109">Property</span></span>|<span data-ttu-id="78a45-110">Тип</span><span class="sxs-lookup"><span data-stu-id="78a45-110">Type</span></span>|<span data-ttu-id="78a45-111">Описание</span><span class="sxs-lookup"><span data-stu-id="78a45-111">Description</span></span>|
+<span data-ttu-id="bf387-107">Политика прокси-сервера сети.</span><span class="sxs-lookup"><span data-stu-id="bf387-107">Network Proxy Server Policy.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="bf387-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="bf387-108">Properties</span></span>
+|<span data-ttu-id="bf387-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="bf387-109">Property</span></span>|<span data-ttu-id="bf387-110">Тип</span><span class="sxs-lookup"><span data-stu-id="bf387-110">Type</span></span>|<span data-ttu-id="bf387-111">Описание</span><span class="sxs-lookup"><span data-stu-id="bf387-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="78a45-112">address</span><span class="sxs-lookup"><span data-stu-id="78a45-112">address</span></span>|<span data-ttu-id="78a45-113">String</span><span class="sxs-lookup"><span data-stu-id="78a45-113">String</span></span>|<span data-ttu-id="78a45-114">Адрес прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="78a45-114">Address to the proxy server.</span></span> <span data-ttu-id="78a45-115">Укажите адрес в формате <server>\[":"<port>\]</span><span class="sxs-lookup"><span data-stu-id="78a45-115">Specify an address in the format <server>\[“:”<port>\]</span></span>|
-|<span data-ttu-id="78a45-116">exceptions</span><span class="sxs-lookup"><span data-stu-id="78a45-116">exceptions</span></span>|<span data-ttu-id="78a45-117">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="78a45-117">String collection</span></span>|<span data-ttu-id="78a45-118">Адреса, которые не должны использовать прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="78a45-118">Addresses that should not use the proxy server.</span></span> <span data-ttu-id="78a45-119">Система не использует прокси-сервер для адресов, начинающихся, как указано в этом узле.</span><span class="sxs-lookup"><span data-stu-id="78a45-119">The system will not use the proxy server for addresses beginning with what is specified in this node.</span></span>|
-|<span data-ttu-id="78a45-120">useForLocalAddresses</span><span class="sxs-lookup"><span data-stu-id="78a45-120">useForLocalAddresses</span></span>|<span data-ttu-id="78a45-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="78a45-121">Boolean</span></span>|<span data-ttu-id="78a45-122">Определяет необходимость использования прокси-сервера для локальных адресов (в интрасети).</span><span class="sxs-lookup"><span data-stu-id="78a45-122">Specifies whether the proxy server should be used for local (intranet) addresses.</span></span>|
+|<span data-ttu-id="bf387-112">address</span><span class="sxs-lookup"><span data-stu-id="bf387-112">address</span></span>|<span data-ttu-id="bf387-113">String</span><span class="sxs-lookup"><span data-stu-id="bf387-113">String</span></span>|<span data-ttu-id="bf387-114">Адрес прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="bf387-114">Address to the proxy server.</span></span> <span data-ttu-id="bf387-115">Укажите адрес в формате <server>\[":"<port>\]</span><span class="sxs-lookup"><span data-stu-id="bf387-115">Specify an address in the format <server>\[“:”<port>\]</span></span>|
+|<span data-ttu-id="bf387-116">exceptions</span><span class="sxs-lookup"><span data-stu-id="bf387-116">exceptions</span></span>|<span data-ttu-id="bf387-117">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="bf387-117">String collection</span></span>|<span data-ttu-id="bf387-118">Адреса, которые не должны использовать прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="bf387-118">Addresses that should not use the proxy server.</span></span> <span data-ttu-id="bf387-119">Система не использует прокси-сервер для адресов, начинающихся, как указано в этом узле.</span><span class="sxs-lookup"><span data-stu-id="bf387-119">The system will not use the proxy server for addresses beginning with what is specified in this node.</span></span>|
+|<span data-ttu-id="bf387-120">useForLocalAddresses</span><span class="sxs-lookup"><span data-stu-id="bf387-120">useForLocalAddresses</span></span>|<span data-ttu-id="bf387-121">Boolean</span><span class="sxs-lookup"><span data-stu-id="bf387-121">Boolean</span></span>|<span data-ttu-id="bf387-122">Определяет необходимость использования прокси-сервера для локальных адресов (в интрасети).</span><span class="sxs-lookup"><span data-stu-id="bf387-122">Specifies whether the proxy server should be used for local (intranet) addresses.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="78a45-123">Связи</span><span class="sxs-lookup"><span data-stu-id="78a45-123">Relationships</span></span>
-<span data-ttu-id="78a45-124">Нет</span><span class="sxs-lookup"><span data-stu-id="78a45-124">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="78a45-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="78a45-125">JSON Representation</span></span>
-<span data-ttu-id="78a45-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="78a45-126">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="bf387-123">Связи</span><span class="sxs-lookup"><span data-stu-id="bf387-123">Relationships</span></span>
+<span data-ttu-id="bf387-124">Нет</span><span class="sxs-lookup"><span data-stu-id="bf387-124">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="bf387-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bf387-125">JSON Representation</span></span>
+<span data-ttu-id="bf387-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bf387-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows10NetworkProxyServer"
@@ -44,7 +46,6 @@ ms.locfileid: "27951917"
   "useForLocalAddresses": true
 }
 ```
-
 
 
 
