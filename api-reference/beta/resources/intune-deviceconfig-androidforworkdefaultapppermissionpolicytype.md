@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления androidForWorkDefaultAppPermissionPolicyType
 description: Тип политики разрешений приложения по умолчанию Android для работы.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d493fc3877acd4d98f79768d04a86c7b3bfe2a55
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: eb815b18bb6f12d6e9a27c66993aa59193495d6c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982878"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421979"
 ---
 # <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidForWorkDefaultAppPermissionPolicyType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип политики разрешений приложения по умолчанию Android для работы.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ ms.locfileid: "27982878"
 |строки|1|Запрос.|
 |autoGrant|2|Автоматическое предоставление.|
 |autoDeny|3|Запрещать автоматически.|
-
 
 
 

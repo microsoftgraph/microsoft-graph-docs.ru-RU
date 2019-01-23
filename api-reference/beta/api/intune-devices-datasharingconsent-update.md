@@ -1,25 +1,26 @@
 ---
 title: Обновление dataSharingConsent
 description: Обновление свойства объекта dataSharingConsent.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b3893a272e2fc369bf3528bb1bb5878775add521
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 143e2c655adac2403f49bb92afff2aca30a3653f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421118"
 ---
 # <a name="update-datasharingconsent"></a>Обновление dataSharingConsent
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -39,39 +40,41 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|Строка|Отображаемое имя службы рабочих процессов|
-|termsUrl|Строка|TermsUrl для данных, общий доступ к согласия|
+|id|String|Разрешения общего доступа данных идентификатор|
+|Отображаемое_имя_службы|String|Отображаемое имя службы рабочих процессов|
+|termsUrl|String|TermsUrl для данных, общий доступ к согласия|
 |предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
 |grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|Строка|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|Строка|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|grantedByUpn|String|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
+|grantedByUserId|String|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/dataSharingConsents/{dataSharingConsentId}
 Content-type: application/json
-Content-length: 276
+Content-length: 333
 
 {
+  "@odata.type": "#microsoft.graph.dataSharingConsent",
   "serviceDisplayName": "Service Display Name value",
   "termsUrl": "https://example.com/termsUrl/",
   "granted": true,
@@ -81,7 +84,7 @@ Content-length: 276
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
@@ -99,7 +102,6 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
-
 
 
 

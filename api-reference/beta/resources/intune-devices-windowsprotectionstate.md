@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса windowsProtectionState
 description: Устройство защиты состояния сущности.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7f15044f597fb04e98571de7aec8796e9a9ddf74
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ef6c86983475abc687055ac2322ba02fae27ecd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423589"
 ---
 # <a name="windowsprotectionstate-resource-type"></a>Тип ресурса windowsProtectionState
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Устройство защиты состояния сущности.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -27,7 +28,7 @@ ms.locfileid: "27954528"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для объекта состояния защиты устройств. — Идентификатор устройства, устройства|
+|id|String|Уникальный идентификатор для объекта состояния защиты устройств. — Идентификатор устройства, устройства|
 |malwareProtectionEnabled|Логический|Защита от вредоносных программ включен или не|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистить или Ожидание полного сканирования или помещенных в очередь перезагрузки и т.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Логический|Защита в режиме реального времени включено или нет?|
@@ -37,16 +38,16 @@ ms.locfileid: "27954528"
 |signatureUpdateOverdue|Логический|Устаревший подписи или нет?|
 |rebootRequired|Логический|Требуется ли перезагрузка?|
 |fullScanRequired|Логический|Полная проверка, требуется или нет?|
-|engineVersion|Строка|Версия текущей конечной точки защиты ядра|
-|signatureVersion|Строка|Текущая версия определения вредоносных программ|
-|antiMalwareVersion|Строка|Текущая платформа защита от вредоносных программ версии|
+|engineVersion|String|Версия текущей конечной точки защиты ядра|
+|signatureVersion|String|Текущая версия определения вредоносных программ|
+|antiMalwareVersion|String|Текущая платформа защита от вредоносных программ версии|
 |lastQuickScanDateTime|DateTimeOffset|Даты и времени последнего быстрого сканирования|
 |lastFullScanDateTime|DateTimeOffset|Даты и времени последнего быстрого сканирования|
-|lastQuickScanSignatureVersion|Строка|Последняя версия подписи быстрого сканирования|
-|lastFullScanSignatureVersion|Строка|Последняя версия полная проверка подписи|
+|lastQuickScanSignatureVersion|String|Последняя версия подписи быстрого сканирования|
+|lastFullScanSignatureVersion|String|Последняя версия полная проверка подписи|
 |lastReportedDateTime|DateTimeOffset|Последнее состояние работоспособности устройства, обнаруженных времени|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |detectedMalwareState|[windowsDeviceMalwareState](../resources/intune-devices-windowsdevicemalwarestate.md) коллекции|Список устройств вредоносных программ|
@@ -82,7 +83,6 @@ ms.locfileid: "27954528"
   "lastReportedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления wiFiSecurityType
 description: Типы безопасности Wi-Fi.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6ddadaa31febaea08050ad49ffa540de53ff4819
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 73724041c223d50d0030bf27b780d6b694792a16
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920221"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422133"
 ---
 # <a name="wifisecuritytype-enum-type"></a>Тип перечисления wiFiSecurityType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Типы безопасности Wi-Fi.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27920221"
 |WEP|3|Шифрования WEP.|
 |wpa2Personal|4|WPA2-личное.|
 |wpa2Enterprise|5|WPA2-предприятие. Необходимо использовать тип WindowsWifiEnterpriseEAPConfiguration позволяет настроить параметры enterprise.|
-
 
 
 

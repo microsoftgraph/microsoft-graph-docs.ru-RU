@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления win32LobAppFileSystemDetectionType
 description: Содержит тип обнаружения все поддерживаемые файловой системы.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 407bc9ae603f72419133cdfb7eb234fcf92d8fe6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d5848e59f00b3fd6b995815ab7a595fbf0ca820f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422518"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>Тип перечисления win32LobAppFileSystemDetectionType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит тип обнаружения все поддерживаемые файловой системы.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27947899"
 |Дата создания|3|Дата создания, дата.|
 |version|4|Тип значения версии.|
 |sizeInMB|5|Тип определения размера.|
-
 
 
 

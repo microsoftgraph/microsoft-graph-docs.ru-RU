@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления windows10EditionType
 description: Тип 10 версии Windows.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1bef365a70c6d63fca307b47b2971aca490c6658
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0cc19a0e4fcd5f291b143e48393a992d03ce7f75
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932492"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422343"
 ---
 # <a name="windows10editiontype-enum-type"></a>Тип перечисления windows10EditionType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип 10 версии Windows.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -34,7 +35,6 @@ ms.locfileid: "27932492"
 |windows10ProfessionalWorkstation|10|Windows 10 Professional для рабочих станций|
 |windows10ProfessionalWorkstationN|11|Windows 10 Professional для рабочих станций N|
 |notConfigured|12|NotConfigured|
-
 
 
 

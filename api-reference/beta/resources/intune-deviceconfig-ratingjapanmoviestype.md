@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления ratingJapanMoviesType
 description: Фильмы рейтинг метки в Японии
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 80dd4689b13f12a94f68f6a229e8dc177a22d933
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: bc8b5a6ba4790f749fb2da5c1e8c6ec1c000b962
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973526"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422042"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>Тип перечисления ratingJapanMoviesType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Фильмы рейтинг метки в Японии
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27973526"
 |parentalGuidance|3|Классификация стр-12 запрашивает родительского участия молодых людей в разделе 12|
 |agesAbove15|4|Классификация R15 + подходит для средства просмотра из 15 или более ранней версии|
 |agesAbove18|5|Классификация R18 + подходит для средства просмотра 18 или более ранней версии|
-
 
 
 

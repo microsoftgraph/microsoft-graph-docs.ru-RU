@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса officeConfigurationGroupAssignmentTarget
 description: Настройка клиента Office AAD группы конечного назначения.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9d59a6adc5478d619187e5414ac92170cbdedd49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 411af117999498050288405874bd6b5baff5b6b5
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926381"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29422749"
 ---
 # <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Тип ресурса officeConfigurationGroupAssignmentTarget
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Настройка клиента Office AAD группы конечного назначения.
 
@@ -24,10 +24,11 @@ ms.locfileid: "27926381"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|Строка|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|groupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

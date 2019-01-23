@@ -1,29 +1,29 @@
 ---
 title: Тип перечисления deviceManagementExchangeAccessRuleType
 description: Критерии, которые определяет тип устройства применения правила доступа к
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fdac604543c2870eacafe58a057d348569ef0217
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4d9e8aac67184d8633484fc8b1e111cea64ae7af
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972392"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421636"
 ---
 # <a name="devicemanagementexchangeaccessruletype-enum-type"></a>Тип перечисления deviceManagementExchangeAccessRuleType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Критерии, которые определяет тип устройства применения правила доступа к
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |семейства|0|Семейства устройств|
 |model|1|Модели устройства|
-
 
 
 

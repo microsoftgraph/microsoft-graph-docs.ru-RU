@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления adminConsentState
 description: Состояние разрешения администратора.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 31ad2e2cbec6accdb7d1f9ced4dc152510b2289f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: be144dae700c1555a3641f821402e90c58c1673c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964244"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29421895"
 ---
 # <a name="adminconsentstate-enum-type"></a>Тип перечисления adminConsentState
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние разрешения администратора.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Администратор не настроены, элемент|
 |предоставлено|1|Администратор, предоставленные элемента|
 |notGranted|2|Типы Admin предоставляет элемента|
-
 
 
 
