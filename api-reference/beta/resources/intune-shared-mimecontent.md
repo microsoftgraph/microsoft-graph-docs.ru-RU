@@ -1,33 +1,35 @@
 ---
 title: Тип ресурса mimeContent
 description: Содержит свойства обычного содержимого MIME.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ee38eee9100982f6dc5f22315af480a783cc4252
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 62132b9e55b8130f82fc8414cbb6e90ba34bb70f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962123"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29413460"
 ---
-# <a name="mimecontent-resource-type"></a><span data-ttu-id="65c31-103">Тип ресурса mimeContent</span><span class="sxs-lookup"><span data-stu-id="65c31-103">mimeContent resource type</span></span>
+# <a name="mimecontent-resource-type"></a><span data-ttu-id="dad64-103">Тип ресурса mimeContent</span><span class="sxs-lookup"><span data-stu-id="dad64-103">mimeContent resource type</span></span>
 
-> <span data-ttu-id="65c31-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="65c31-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="65c31-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="65c31-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dad64-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="dad64-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="dad64-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dad64-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="65c31-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="65c31-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="dad64-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dad64-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="65c31-107">Содержит свойства обычного содержимого MIME.</span><span class="sxs-lookup"><span data-stu-id="65c31-107">Contains properties for a generic mime content.</span></span>
-## <a name="properties"></a><span data-ttu-id="65c31-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="65c31-108">Properties</span></span>
-|<span data-ttu-id="65c31-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="65c31-109">Property</span></span>|<span data-ttu-id="65c31-110">Тип</span><span class="sxs-lookup"><span data-stu-id="65c31-110">Type</span></span>|<span data-ttu-id="65c31-111">Описание</span><span class="sxs-lookup"><span data-stu-id="65c31-111">Description</span></span>|
+<span data-ttu-id="dad64-107">Содержит свойства обычного содержимого MIME.</span><span class="sxs-lookup"><span data-stu-id="dad64-107">Contains properties for a generic mime content.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="dad64-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="dad64-108">Properties</span></span>
+|<span data-ttu-id="dad64-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="dad64-109">Property</span></span>|<span data-ttu-id="dad64-110">Тип</span><span class="sxs-lookup"><span data-stu-id="dad64-110">Type</span></span>|<span data-ttu-id="dad64-111">Описание</span><span class="sxs-lookup"><span data-stu-id="dad64-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="65c31-112">type</span><span class="sxs-lookup"><span data-stu-id="65c31-112">type</span></span>|<span data-ttu-id="65c31-113">Строка</span><span class="sxs-lookup"><span data-stu-id="65c31-113">String</span></span>|<span data-ttu-id="65c31-114">Указывает MIME-тип содержимого.</span><span class="sxs-lookup"><span data-stu-id="65c31-114">Indicates the content mime type.</span></span>|
-|<span data-ttu-id="65c31-115">value</span><span class="sxs-lookup"><span data-stu-id="65c31-115">value</span></span>|<span data-ttu-id="65c31-116">Binary</span><span class="sxs-lookup"><span data-stu-id="65c31-116">Binary</span></span>|<span data-ttu-id="65c31-117">Массив байтов содержимого.</span><span class="sxs-lookup"><span data-stu-id="65c31-117">The byte array that contains the actual content.</span></span>|
+|<span data-ttu-id="dad64-112">type</span><span class="sxs-lookup"><span data-stu-id="dad64-112">type</span></span>|<span data-ttu-id="dad64-113">String</span><span class="sxs-lookup"><span data-stu-id="dad64-113">String</span></span>|<span data-ttu-id="dad64-114">Указывает MIME-тип содержимого.</span><span class="sxs-lookup"><span data-stu-id="dad64-114">Indicates the content mime type.</span></span>|
+|<span data-ttu-id="dad64-115">value</span><span class="sxs-lookup"><span data-stu-id="dad64-115">value</span></span>|<span data-ttu-id="dad64-116">Binary</span><span class="sxs-lookup"><span data-stu-id="dad64-116">Binary</span></span>|<span data-ttu-id="dad64-117">Массив байтов содержимого.</span><span class="sxs-lookup"><span data-stu-id="dad64-117">The byte array that contains the actual content.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="65c31-118">Связи</span><span class="sxs-lookup"><span data-stu-id="65c31-118">Relationships</span></span>
-<span data-ttu-id="65c31-119">Нет</span><span class="sxs-lookup"><span data-stu-id="65c31-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="65c31-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="65c31-120">JSON Representation</span></span>
-<span data-ttu-id="65c31-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="65c31-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="dad64-118">Связи</span><span class="sxs-lookup"><span data-stu-id="dad64-118">Relationships</span></span>
+<span data-ttu-id="dad64-119">Нет</span><span class="sxs-lookup"><span data-stu-id="dad64-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="dad64-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dad64-120">JSON Representation</span></span>
+<span data-ttu-id="dad64-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dad64-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mimeContent"
@@ -40,7 +42,6 @@ ms.locfileid: "27962123"
   "value": "binary"
 }
 ```
-
 
 
 

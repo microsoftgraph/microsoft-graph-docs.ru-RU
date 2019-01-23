@@ -1,33 +1,34 @@
 ---
 title: Update termsAndConditions
 description: Обновление свойств объекта termsAndConditions.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3a713e2d2af3ebf5218ed27d6e30cdeb5239bd9e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3eca58812eb4032113e968ad054a7a11bf110b81
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929489"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409491"
 ---
-# <a name="update-termsandconditions"></a><span data-ttu-id="f3d46-103">Update termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="f3d46-103">Update termsAndConditions</span></span>
+# <a name="update-termsandconditions"></a><span data-ttu-id="7f524-103">Update termsAndConditions</span><span class="sxs-lookup"><span data-stu-id="7f524-103">Update termsAndConditions</span></span>
 
-> <span data-ttu-id="f3d46-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f3d46-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f3d46-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f3d46-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7f524-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7f524-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7f524-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f524-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="f3d46-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="f3d46-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="7f524-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7f524-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f3d46-107">Обновление свойств объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span><span class="sxs-lookup"><span data-stu-id="f3d46-107">Update the properties of a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="f3d46-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="f3d46-108">Prerequisites</span></span>
-<span data-ttu-id="f3d46-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f3d46-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7f524-107">Обновление свойств объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span><span class="sxs-lookup"><span data-stu-id="7f524-107">Update the properties of a [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
 
-|<span data-ttu-id="f3d46-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f3d46-111">Permission type</span></span>|<span data-ttu-id="f3d46-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f3d46-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="7f524-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="7f524-108">Prerequisites</span></span>
+<span data-ttu-id="7f524-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="7f524-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="7f524-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7f524-111">Permission type</span></span>|<span data-ttu-id="7f524-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7f524-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f3d46-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f3d46-113">Delegated (work or school account)</span></span>|<span data-ttu-id="f3d46-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f3d46-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="f3d46-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f3d46-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f3d46-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f3d46-116">Not supported.</span></span>|
-|<span data-ttu-id="f3d46-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f3d46-117">Application</span></span>|<span data-ttu-id="f3d46-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f3d46-118">Not supported.</span></span>|
+|<span data-ttu-id="7f524-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7f524-113">Delegated (work or school account)</span></span>|<span data-ttu-id="7f524-114">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7f524-114">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="7f524-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7f524-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7f524-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f524-116">Not supported.</span></span>|
+|<span data-ttu-id="7f524-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7f524-117">Application</span></span>|<span data-ttu-id="7f524-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f524-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f3d46-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f3d46-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7f524-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7f524-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,46 +39,47 @@ PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignmen
 PATCH /deviceManagement/termsAndConditions/{termsAndConditionsId}/acceptanceStatuses/{termsAndConditionsAcceptanceStatusId}/termsAndConditions
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f3d46-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f3d46-120">Request headers</span></span>
-|<span data-ttu-id="f3d46-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f3d46-121">Header</span></span>|<span data-ttu-id="f3d46-122">Значение</span><span class="sxs-lookup"><span data-stu-id="f3d46-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7f524-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7f524-120">Request headers</span></span>
+|<span data-ttu-id="7f524-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7f524-121">Header</span></span>|<span data-ttu-id="7f524-122">Значение</span><span class="sxs-lookup"><span data-stu-id="7f524-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f3d46-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="f3d46-123">Authorization</span></span>|<span data-ttu-id="f3d46-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="f3d46-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f3d46-125">Accept</span><span class="sxs-lookup"><span data-stu-id="f3d46-125">Accept</span></span>|<span data-ttu-id="f3d46-126">application/json</span><span class="sxs-lookup"><span data-stu-id="f3d46-126">application/json</span></span>|
+|<span data-ttu-id="7f524-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="7f524-123">Authorization</span></span>|<span data-ttu-id="7f524-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="7f524-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7f524-125">Accept</span><span class="sxs-lookup"><span data-stu-id="7f524-125">Accept</span></span>|<span data-ttu-id="7f524-126">application/json</span><span class="sxs-lookup"><span data-stu-id="7f524-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f3d46-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f3d46-127">Request body</span></span>
-<span data-ttu-id="f3d46-128">В тексте запроса добавьте представление объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f3d46-128">In the request body, supply a JSON representation for the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7f524-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7f524-127">Request body</span></span>
+<span data-ttu-id="7f524-128">В тексте запроса добавьте представление объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7f524-128">In the request body, supply a JSON representation for the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object.</span></span>
 
-<span data-ttu-id="f3d46-129">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span><span class="sxs-lookup"><span data-stu-id="f3d46-129">The following table shows the properties that are required when you create the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span></span>
+<span data-ttu-id="7f524-129">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span><span class="sxs-lookup"><span data-stu-id="7f524-129">The following table shows the properties that are required when you create the [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).</span></span>
 
-|<span data-ttu-id="f3d46-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="f3d46-130">Property</span></span>|<span data-ttu-id="f3d46-131">Тип</span><span class="sxs-lookup"><span data-stu-id="f3d46-131">Type</span></span>|<span data-ttu-id="f3d46-132">Описание</span><span class="sxs-lookup"><span data-stu-id="f3d46-132">Description</span></span>|
+|<span data-ttu-id="7f524-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="7f524-130">Property</span></span>|<span data-ttu-id="7f524-131">Тип</span><span class="sxs-lookup"><span data-stu-id="7f524-131">Type</span></span>|<span data-ttu-id="7f524-132">Описание</span><span class="sxs-lookup"><span data-stu-id="7f524-132">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f3d46-133">id</span><span class="sxs-lookup"><span data-stu-id="f3d46-133">id</span></span>|<span data-ttu-id="f3d46-134">String</span><span class="sxs-lookup"><span data-stu-id="f3d46-134">String</span></span>|<span data-ttu-id="f3d46-135">Уникальный идентификатор политики использования.</span><span class="sxs-lookup"><span data-stu-id="f3d46-135">Unique identifier of the T&C policy.</span></span>|
-|<span data-ttu-id="f3d46-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="f3d46-136">createdDateTime</span></span>|<span data-ttu-id="f3d46-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f3d46-137">DateTimeOffset</span></span>|<span data-ttu-id="f3d46-138">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="f3d46-138">DateTime the object was created.</span></span>|
-|<span data-ttu-id="f3d46-139">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f3d46-139">modifiedDateTime</span></span>|<span data-ttu-id="f3d46-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f3d46-140">DateTimeOffset</span></span>|<span data-ttu-id="f3d46-141">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="f3d46-141">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="f3d46-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f3d46-142">lastModifiedDateTime</span></span>|<span data-ttu-id="f3d46-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f3d46-143">DateTimeOffset</span></span>|<span data-ttu-id="f3d46-144">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="f3d46-144">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="f3d46-145">displayName</span><span class="sxs-lookup"><span data-stu-id="f3d46-145">displayName</span></span>|<span data-ttu-id="f3d46-146">String</span><span class="sxs-lookup"><span data-stu-id="f3d46-146">String</span></span>|<span data-ttu-id="f3d46-147">Имя политики использования, указанное администратором.</span><span class="sxs-lookup"><span data-stu-id="f3d46-147">Administrator-supplied name for the T&C policy.</span></span> |
-|<span data-ttu-id="f3d46-148">описание</span><span class="sxs-lookup"><span data-stu-id="f3d46-148">description</span></span>|<span data-ttu-id="f3d46-149">String</span><span class="sxs-lookup"><span data-stu-id="f3d46-149">String</span></span>|<span data-ttu-id="f3d46-150">Описание политики использования, указанное администратором.</span><span class="sxs-lookup"><span data-stu-id="f3d46-150">Administrator-supplied description of the T&C policy.</span></span>|
-|<span data-ttu-id="f3d46-151">title</span><span class="sxs-lookup"><span data-stu-id="f3d46-151">title</span></span>|<span data-ttu-id="f3d46-152">String</span><span class="sxs-lookup"><span data-stu-id="f3d46-152">String</span></span>|<span data-ttu-id="f3d46-153">Название условий, указанное администратором.</span><span class="sxs-lookup"><span data-stu-id="f3d46-153">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="f3d46-154">Показывается пользователю при запросе на принятие политики использования.</span><span class="sxs-lookup"><span data-stu-id="f3d46-154">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="f3d46-155">bodyText</span><span class="sxs-lookup"><span data-stu-id="f3d46-155">bodyText</span></span>|<span data-ttu-id="f3d46-156">String</span><span class="sxs-lookup"><span data-stu-id="f3d46-156">String</span></span>|<span data-ttu-id="f3d46-157">Основной текст условий, заданный администратором (как правило, сами условия).</span><span class="sxs-lookup"><span data-stu-id="f3d46-157">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="f3d46-158">Показывается пользователю при запросе на принятие политики использования.</span><span class="sxs-lookup"><span data-stu-id="f3d46-158">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="f3d46-159">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="f3d46-159">acceptanceStatement</span></span>|<span data-ttu-id="f3d46-160">String</span><span class="sxs-lookup"><span data-stu-id="f3d46-160">String</span></span>|<span data-ttu-id="f3d46-161">Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике.</span><span class="sxs-lookup"><span data-stu-id="f3d46-161">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="f3d46-162">Показывается пользователю при запросе на принятие политики использования.</span><span class="sxs-lookup"><span data-stu-id="f3d46-162">This is shown to the user on prompts to accept the T&C policy.</span></span>|
-|<span data-ttu-id="f3d46-163">version</span><span class="sxs-lookup"><span data-stu-id="f3d46-163">version</span></span>|<span data-ttu-id="f3d46-164">Int32</span><span class="sxs-lookup"><span data-stu-id="f3d46-164">Int32</span></span>|<span data-ttu-id="f3d46-165">Целое число, указывающее текущую версию условий.</span><span class="sxs-lookup"><span data-stu-id="f3d46-165">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="f3d46-166">Увеличивается, когда администратор вносит изменения в условия и хочет, чтобы пользователи повторно приняли измененную политику.</span><span class="sxs-lookup"><span data-stu-id="f3d46-166">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
+|<span data-ttu-id="7f524-133">id</span><span class="sxs-lookup"><span data-stu-id="7f524-133">id</span></span>|<span data-ttu-id="7f524-134">String</span><span class="sxs-lookup"><span data-stu-id="7f524-134">String</span></span>|<span data-ttu-id="7f524-135">Уникальный идентификатор политики использования.</span><span class="sxs-lookup"><span data-stu-id="7f524-135">Unique identifier of the T&C policy.</span></span>|
+|<span data-ttu-id="7f524-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="7f524-136">createdDateTime</span></span>|<span data-ttu-id="7f524-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7f524-137">DateTimeOffset</span></span>|<span data-ttu-id="7f524-138">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="7f524-138">DateTime the object was created.</span></span>|
+|<span data-ttu-id="7f524-139">modifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7f524-139">modifiedDateTime</span></span>|<span data-ttu-id="7f524-140">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7f524-140">DateTimeOffset</span></span>|<span data-ttu-id="7f524-141">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="7f524-141">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="7f524-142">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7f524-142">lastModifiedDateTime</span></span>|<span data-ttu-id="7f524-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7f524-143">DateTimeOffset</span></span>|<span data-ttu-id="7f524-144">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="7f524-144">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="7f524-145">displayName</span><span class="sxs-lookup"><span data-stu-id="7f524-145">displayName</span></span>|<span data-ttu-id="7f524-146">String</span><span class="sxs-lookup"><span data-stu-id="7f524-146">String</span></span>|<span data-ttu-id="7f524-147">Имя политики использования, указанное администратором.</span><span class="sxs-lookup"><span data-stu-id="7f524-147">Administrator-supplied name for the T&C policy.</span></span> |
+|<span data-ttu-id="7f524-148">description</span><span class="sxs-lookup"><span data-stu-id="7f524-148">description</span></span>|<span data-ttu-id="7f524-149">String</span><span class="sxs-lookup"><span data-stu-id="7f524-149">String</span></span>|<span data-ttu-id="7f524-150">Описание политики использования, указанное администратором.</span><span class="sxs-lookup"><span data-stu-id="7f524-150">Administrator-supplied description of the T&C policy.</span></span>|
+|<span data-ttu-id="7f524-151">title</span><span class="sxs-lookup"><span data-stu-id="7f524-151">title</span></span>|<span data-ttu-id="7f524-152">String</span><span class="sxs-lookup"><span data-stu-id="7f524-152">String</span></span>|<span data-ttu-id="7f524-153">Название условий, указанное администратором.</span><span class="sxs-lookup"><span data-stu-id="7f524-153">Administrator-supplied title of the terms and conditions.</span></span> <span data-ttu-id="7f524-154">Показывается пользователю при запросе на принятие политики использования.</span><span class="sxs-lookup"><span data-stu-id="7f524-154">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="7f524-155">bodyText</span><span class="sxs-lookup"><span data-stu-id="7f524-155">bodyText</span></span>|<span data-ttu-id="7f524-156">String</span><span class="sxs-lookup"><span data-stu-id="7f524-156">String</span></span>|<span data-ttu-id="7f524-157">Основной текст условий, заданный администратором (как правило, сами условия).</span><span class="sxs-lookup"><span data-stu-id="7f524-157">Administrator-supplied body text of the terms and conditions, typically the terms themselves.</span></span> <span data-ttu-id="7f524-158">Показывается пользователю при запросе на принятие политики использования.</span><span class="sxs-lookup"><span data-stu-id="7f524-158">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="7f524-159">acceptanceStatement</span><span class="sxs-lookup"><span data-stu-id="7f524-159">acceptanceStatement</span></span>|<span data-ttu-id="7f524-160">String</span><span class="sxs-lookup"><span data-stu-id="7f524-160">String</span></span>|<span data-ttu-id="7f524-161">Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике.</span><span class="sxs-lookup"><span data-stu-id="7f524-161">Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy.</span></span> <span data-ttu-id="7f524-162">Показывается пользователю при запросе на принятие политики использования.</span><span class="sxs-lookup"><span data-stu-id="7f524-162">This is shown to the user on prompts to accept the T&C policy.</span></span>|
+|<span data-ttu-id="7f524-163">version</span><span class="sxs-lookup"><span data-stu-id="7f524-163">version</span></span>|<span data-ttu-id="7f524-164">Int32</span><span class="sxs-lookup"><span data-stu-id="7f524-164">Int32</span></span>|<span data-ttu-id="7f524-165">Целое число, указывающее текущую версию условий.</span><span class="sxs-lookup"><span data-stu-id="7f524-165">Integer indicating the current version of the terms.</span></span> <span data-ttu-id="7f524-166">Увеличивается, когда администратор вносит изменения в условия и хочет, чтобы пользователи повторно приняли измененную политику.</span><span class="sxs-lookup"><span data-stu-id="7f524-166">Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="f3d46-167">Ответ</span><span class="sxs-lookup"><span data-stu-id="f3d46-167">Response</span></span>
-<span data-ttu-id="f3d46-168">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="f3d46-168">If successful, this method returns a `200 OK` response code and an updated [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="7f524-167">Ответ</span><span class="sxs-lookup"><span data-stu-id="7f524-167">Response</span></span>
+<span data-ttu-id="7f524-168">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="7f524-168">If successful, this method returns a `200 OK` response code and an updated [termsAndConditions](../resources/intune-companyterms-termsandconditions.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f3d46-169">Пример</span><span class="sxs-lookup"><span data-stu-id="f3d46-169">Example</span></span>
-### <a name="request"></a><span data-ttu-id="f3d46-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="f3d46-170">Request</span></span>
-<span data-ttu-id="f3d46-171">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f3d46-171">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="7f524-169">Пример</span><span class="sxs-lookup"><span data-stu-id="7f524-169">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="7f524-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="7f524-170">Request</span></span>
+<span data-ttu-id="7f524-171">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7f524-171">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/termsAndConditions/{termsAndConditionsId}
 Content-type: application/json
-Content-length: 280
+Content-length: 273
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.termsAndConditions",
   "displayName": "Display Name value",
   "description": "Description value",
   "title": "Title value",
@@ -87,8 +89,8 @@ Content-length: 280
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="f3d46-172">Ответ</span><span class="sxs-lookup"><span data-stu-id="f3d46-172">Response</span></span>
-<span data-ttu-id="f3d46-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f3d46-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7f524-172">Отклик</span><span class="sxs-lookup"><span data-stu-id="7f524-172">Response</span></span>
+<span data-ttu-id="7f524-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="7f524-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -108,7 +110,6 @@ Content-Length: 505
   "version": 7
 }
 ```
-
 
 
 

@@ -1,33 +1,36 @@
 ---
 title: Тип ресурса windowsKioskAppBase
 description: Базовый класс для типов приложений
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 9b13807fdb0319b3c9a15248fa2d50ffc46ac164
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8ca86969eb32a1a1d129fb5ba4cd48bbb04ffd78
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977026"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407146"
 ---
-# <a name="windowskioskappbase-resource-type"></a><span data-ttu-id="d6f7a-103">Тип ресурса windowsKioskAppBase</span><span class="sxs-lookup"><span data-stu-id="d6f7a-103">windowsKioskAppBase resource type</span></span>
+# <a name="windowskioskappbase-resource-type"></a><span data-ttu-id="d544f-103">Тип ресурса windowsKioskAppBase</span><span class="sxs-lookup"><span data-stu-id="d544f-103">windowsKioskAppBase resource type</span></span>
 
-> <span data-ttu-id="d6f7a-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d6f7a-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d6f7a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d6f7a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="d544f-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d544f-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d544f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d544f-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="d6f7a-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="d6f7a-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="d544f-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d544f-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d6f7a-107">Базовый класс для типов приложений</span><span class="sxs-lookup"><span data-stu-id="d6f7a-107">The base class for a type of apps</span></span>
-## <a name="properties"></a><span data-ttu-id="d6f7a-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d6f7a-108">Properties</span></span>
-|<span data-ttu-id="d6f7a-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d6f7a-109">Property</span></span>|<span data-ttu-id="d6f7a-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d6f7a-110">Type</span></span>|<span data-ttu-id="d6f7a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d6f7a-111">Description</span></span>|
+<span data-ttu-id="d544f-107">Базовый класс для типов приложений</span><span class="sxs-lookup"><span data-stu-id="d544f-107">The base class for a type of apps</span></span>
+
+## <a name="properties"></a><span data-ttu-id="d544f-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="d544f-108">Properties</span></span>
+|<span data-ttu-id="d544f-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="d544f-109">Property</span></span>|<span data-ttu-id="d544f-110">Тип</span><span class="sxs-lookup"><span data-stu-id="d544f-110">Type</span></span>|<span data-ttu-id="d544f-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d544f-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d6f7a-112">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="d6f7a-112">startLayoutTileSize</span></span>|[<span data-ttu-id="d6f7a-113">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="d6f7a-113">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="d6f7a-114">Размер плитку приложение для макета Пуск.</span><span class="sxs-lookup"><span data-stu-id="d6f7a-114">The app tile size for the start layout.</span></span> <span data-ttu-id="d6f7a-115">Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.</span><span class="sxs-lookup"><span data-stu-id="d6f7a-115">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
-|<span data-ttu-id="d6f7a-116">name</span><span class="sxs-lookup"><span data-stu-id="d6f7a-116">name</span></span>|<span data-ttu-id="d6f7a-117">Строка</span><span class="sxs-lookup"><span data-stu-id="d6f7a-117">String</span></span>|<span data-ttu-id="d6f7a-118">Представляет понятное имя приложения</span><span class="sxs-lookup"><span data-stu-id="d6f7a-118">Represents the friendly name of an app</span></span>|
+|<span data-ttu-id="d544f-112">startLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="d544f-112">startLayoutTileSize</span></span>|[<span data-ttu-id="d544f-113">windowsAppStartLayoutTileSize</span><span class="sxs-lookup"><span data-stu-id="d544f-113">windowsAppStartLayoutTileSize</span></span>](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|<span data-ttu-id="d544f-114">Размер плитку приложение для макета Пуск.</span><span class="sxs-lookup"><span data-stu-id="d544f-114">The app tile size for the start layout.</span></span> <span data-ttu-id="d544f-115">Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.</span><span class="sxs-lookup"><span data-stu-id="d544f-115">Possible values are: `hidden`, `small`, `medium`, `wide`, `large`.</span></span>|
+|<span data-ttu-id="d544f-116">name</span><span class="sxs-lookup"><span data-stu-id="d544f-116">name</span></span>|<span data-ttu-id="d544f-117">String</span><span class="sxs-lookup"><span data-stu-id="d544f-117">String</span></span>|<span data-ttu-id="d544f-118">Представляет понятное имя приложения</span><span class="sxs-lookup"><span data-stu-id="d544f-118">Represents the friendly name of an app</span></span>|
+|<span data-ttu-id="d544f-119">Тип</span><span class="sxs-lookup"><span data-stu-id="d544f-119">appType</span></span>|[<span data-ttu-id="d544f-120">windowsKioskAppType</span><span class="sxs-lookup"><span data-stu-id="d544f-120">windowsKioskAppType</span></span>](../resources/intune-deviceconfig-windowskioskapptype.md)|<span data-ttu-id="d544f-121">Тип приложения.</span><span class="sxs-lookup"><span data-stu-id="d544f-121">The app type.</span></span> <span data-ttu-id="d544f-122">Возможные значения: `unknown`, `store`, `desktop`, `aumId`.</span><span class="sxs-lookup"><span data-stu-id="d544f-122">Possible values are: `unknown`, `store`, `desktop`, `aumId`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d6f7a-119">Связи</span><span class="sxs-lookup"><span data-stu-id="d6f7a-119">Relationships</span></span>
-<span data-ttu-id="d6f7a-120">Нет</span><span class="sxs-lookup"><span data-stu-id="d6f7a-120">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="d6f7a-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d6f7a-121">JSON Representation</span></span>
-<span data-ttu-id="d6f7a-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d6f7a-122">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="d544f-123">Связи</span><span class="sxs-lookup"><span data-stu-id="d544f-123">Relationships</span></span>
+<span data-ttu-id="d544f-124">Нет</span><span class="sxs-lookup"><span data-stu-id="d544f-124">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="d544f-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d544f-125">JSON Representation</span></span>
+<span data-ttu-id="d544f-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d544f-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskAppBase"
@@ -37,10 +40,10 @@ ms.locfileid: "27977026"
 {
   "@odata.type": "#microsoft.graph.windowsKioskAppBase",
   "startLayoutTileSize": "String",
-  "name": "String"
+  "name": "String",
+  "appType": "String"
 }
 ```
-
 
 
 

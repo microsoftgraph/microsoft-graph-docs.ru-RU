@@ -1,29 +1,29 @@
 ---
 title: Тип перечисления restrictedAppsState
 description: Состояние ограниченных приложений
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8bd653b6e32a94accd9b57677443e871b282630f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9d5d69694dccd186f1f0fc78d2a9884002da9167
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920179"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410835"
 ---
-# <a name="restrictedappsstate-enum-type"></a><span data-ttu-id="e2b9c-103">Тип перечисления restrictedAppsState</span><span class="sxs-lookup"><span data-stu-id="e2b9c-103">restrictedAppsState enum type</span></span>
+# <a name="restrictedappsstate-enum-type"></a><span data-ttu-id="3e305-103">Тип перечисления restrictedAppsState</span><span class="sxs-lookup"><span data-stu-id="3e305-103">restrictedAppsState enum type</span></span>
 
-> <span data-ttu-id="e2b9c-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e2b9c-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="e2b9c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e2b9c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3e305-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="3e305-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="3e305-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3e305-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="e2b9c-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="e2b9c-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="3e305-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3e305-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e2b9c-107">Состояние ограниченных приложений</span><span class="sxs-lookup"><span data-stu-id="e2b9c-107">Restricted apps state</span></span>
-## <a name="members"></a><span data-ttu-id="e2b9c-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="e2b9c-108">Members</span></span>
-|<span data-ttu-id="e2b9c-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="e2b9c-109">Member</span></span>|<span data-ttu-id="e2b9c-110">Значение</span><span class="sxs-lookup"><span data-stu-id="e2b9c-110">Value</span></span>|<span data-ttu-id="e2b9c-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e2b9c-111">Description</span></span>|
+<span data-ttu-id="3e305-107">Состояние ограниченных приложений</span><span class="sxs-lookup"><span data-stu-id="3e305-107">Restricted apps state</span></span>
+
+## <a name="members"></a><span data-ttu-id="3e305-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="3e305-108">Members</span></span>
+|<span data-ttu-id="3e305-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="3e305-109">Member</span></span>|<span data-ttu-id="3e305-110">Значение</span><span class="sxs-lookup"><span data-stu-id="3e305-110">Value</span></span>|<span data-ttu-id="3e305-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3e305-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e2b9c-112">prohibitedApps</span><span class="sxs-lookup"><span data-stu-id="e2b9c-112">prohibitedApps</span></span>|<span data-ttu-id="e2b9c-113">0</span><span class="sxs-lookup"><span data-stu-id="e2b9c-113">0</span></span>|<span data-ttu-id="e2b9c-114">Prohibited приложений</span><span class="sxs-lookup"><span data-stu-id="e2b9c-114">Prohibited apps</span></span>|
-|<span data-ttu-id="e2b9c-115">notApprovedApps</span><span class="sxs-lookup"><span data-stu-id="e2b9c-115">notApprovedApps</span></span>|<span data-ttu-id="e2b9c-116">1</span><span class="sxs-lookup"><span data-stu-id="e2b9c-116">1</span></span>|<span data-ttu-id="e2b9c-117">Не утверждено приложений</span><span class="sxs-lookup"><span data-stu-id="e2b9c-117">Not approved apps</span></span>|
-
+|<span data-ttu-id="3e305-112">prohibitedApps</span><span class="sxs-lookup"><span data-stu-id="3e305-112">prohibitedApps</span></span>|<span data-ttu-id="3e305-113">0</span><span class="sxs-lookup"><span data-stu-id="3e305-113">0</span></span>|<span data-ttu-id="3e305-114">Prohibited приложений</span><span class="sxs-lookup"><span data-stu-id="3e305-114">Prohibited apps</span></span>|
+|<span data-ttu-id="3e305-115">notApprovedApps</span><span class="sxs-lookup"><span data-stu-id="3e305-115">notApprovedApps</span></span>|<span data-ttu-id="3e305-116">1</span><span class="sxs-lookup"><span data-stu-id="3e305-116">1</span></span>|<span data-ttu-id="3e305-117">Не утверждено приложений</span><span class="sxs-lookup"><span data-stu-id="3e305-117">Not approved apps</span></span>|
 
 
 

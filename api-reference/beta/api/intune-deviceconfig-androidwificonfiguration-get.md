@@ -1,33 +1,34 @@
 ---
 title: Получение androidWiFiConfiguration
 description: Чтение свойства и связи объекта androidWiFiConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f0fc454563c6dac28aceccc34af66064118ec853
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5a220c9b9235aa843819f57aacb8175b4df94004
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913396"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410590"
 ---
-# <a name="get-androidwificonfiguration"></a><span data-ttu-id="dd952-103">Получение androidWiFiConfiguration</span><span class="sxs-lookup"><span data-stu-id="dd952-103">Get androidWiFiConfiguration</span></span>
+# <a name="get-androidwificonfiguration"></a><span data-ttu-id="64c42-103">Получение androidWiFiConfiguration</span><span class="sxs-lookup"><span data-stu-id="64c42-103">Get androidWiFiConfiguration</span></span>
 
-> <span data-ttu-id="dd952-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="dd952-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="dd952-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dd952-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="64c42-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="64c42-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="64c42-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64c42-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="dd952-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="dd952-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="64c42-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="64c42-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dd952-107">Чтение свойства и связи объекта [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="dd952-107">Read properties and relationships of the [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="dd952-108">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="dd952-108">Prerequisites</span></span>
-<span data-ttu-id="dd952-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dd952-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="64c42-107">Чтение свойства и связи объекта [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) .</span><span class="sxs-lookup"><span data-stu-id="64c42-107">Read properties and relationships of the [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) object.</span></span>
 
-|<span data-ttu-id="dd952-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dd952-111">Permission type</span></span>|<span data-ttu-id="dd952-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="dd952-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="64c42-108">Предварительные требования</span><span class="sxs-lookup"><span data-stu-id="64c42-108">Prerequisites</span></span>
+<span data-ttu-id="64c42-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="64c42-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="64c42-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64c42-111">Permission type</span></span>|<span data-ttu-id="64c42-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="64c42-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="dd952-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dd952-113">Delegated (work or school account)</span></span>|<span data-ttu-id="dd952-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="dd952-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
-|<span data-ttu-id="dd952-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dd952-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="dd952-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dd952-116">Not supported.</span></span>|
-|<span data-ttu-id="dd952-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dd952-117">Application</span></span>|<span data-ttu-id="dd952-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dd952-118">Not supported.</span></span>|
+|<span data-ttu-id="64c42-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64c42-113">Delegated (work or school account)</span></span>|<span data-ttu-id="64c42-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span><span class="sxs-lookup"><span data-stu-id="64c42-114">DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All</span></span>|
+|<span data-ttu-id="64c42-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="64c42-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="64c42-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64c42-116">Not supported.</span></span>|
+|<span data-ttu-id="64c42-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64c42-117">Application</span></span>|<span data-ttu-id="64c42-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64c42-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="dd952-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dd952-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="64c42-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64c42-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,30 +39,32 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignme
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="dd952-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="dd952-120">Optional query parameters</span></span>
-<span data-ttu-id="dd952-121">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="dd952-121">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
-## <a name="request-headers"></a><span data-ttu-id="dd952-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dd952-122">Request headers</span></span>
-|<span data-ttu-id="dd952-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="dd952-123">Header</span></span>|<span data-ttu-id="dd952-124">Значение</span><span class="sxs-lookup"><span data-stu-id="dd952-124">Value</span></span>|
+## <a name="optional-query-parameters"></a><span data-ttu-id="64c42-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="64c42-120">Optional query parameters</span></span>
+<span data-ttu-id="64c42-121">Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="64c42-121">This method supports the [OData Query Parameters](https://docs.microsoft.com/en-us/graph/query-parameters) to help customize the response.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="64c42-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="64c42-122">Request headers</span></span>
+|<span data-ttu-id="64c42-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="64c42-123">Header</span></span>|<span data-ttu-id="64c42-124">Значение</span><span class="sxs-lookup"><span data-stu-id="64c42-124">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="dd952-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="dd952-125">Authorization</span></span>|<span data-ttu-id="dd952-126">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="dd952-126">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="dd952-127">Accept</span><span class="sxs-lookup"><span data-stu-id="dd952-127">Accept</span></span>|<span data-ttu-id="dd952-128">application/json</span><span class="sxs-lookup"><span data-stu-id="dd952-128">application/json</span></span>|
+|<span data-ttu-id="64c42-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="64c42-125">Authorization</span></span>|<span data-ttu-id="64c42-126">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="64c42-126">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="64c42-127">Accept</span><span class="sxs-lookup"><span data-stu-id="64c42-127">Accept</span></span>|<span data-ttu-id="64c42-128">application/json</span><span class="sxs-lookup"><span data-stu-id="64c42-128">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="dd952-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="dd952-129">Request body</span></span>
-<span data-ttu-id="dd952-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="dd952-130">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="64c42-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="64c42-129">Request body</span></span>
+<span data-ttu-id="64c42-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="64c42-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="dd952-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="dd952-131">Response</span></span>
-<span data-ttu-id="dd952-132">Успешно завершена, этот метод возвращает `200 OK` объект [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="dd952-132">If successful, this method returns a `200 OK` response code and [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="64c42-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="64c42-131">Response</span></span>
+<span data-ttu-id="64c42-132">Успешно завершена, этот метод возвращает `200 OK` объект [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="64c42-132">If successful, this method returns a `200 OK` response code and [androidWiFiConfiguration](../resources/intune-deviceconfig-androidwificonfiguration.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="dd952-133">Пример</span><span class="sxs-lookup"><span data-stu-id="dd952-133">Example</span></span>
-### <a name="request"></a><span data-ttu-id="dd952-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="dd952-134">Request</span></span>
-<span data-ttu-id="dd952-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="dd952-135">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="64c42-133">Пример</span><span class="sxs-lookup"><span data-stu-id="64c42-133">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="64c42-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="64c42-134">Request</span></span>
+<span data-ttu-id="64c42-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="64c42-135">Here is an example of the request.</span></span>
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a><span data-ttu-id="dd952-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="dd952-136">Response</span></span>
-<span data-ttu-id="dd952-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="dd952-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="64c42-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="64c42-136">Response</span></span>
+<span data-ttu-id="64c42-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="64c42-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -88,7 +91,6 @@ Content-Length: 658
   }
 }
 ```
-
 
 
 
