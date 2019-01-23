@@ -1,25 +1,26 @@
 ---
 title: Создание sideLoadingKey
 description: Создание нового объекта sideLoadingKey.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 140dc11778bad432d388f8d22173cd31cbdef915
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3aa9efa7018a99f3e9f8d5f9a3d9e8569b895d0b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400363"
 ---
 # <a name="create-sideloadingkey"></a>Создание sideLoadingKey
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,7 +44,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта sideLoadingKey.
 
 В следующей таблице показаны свойства, которые необходимы для создания sideLoadingKey.
@@ -53,7 +54,7 @@ POST /deviceAppManagement/sideLoadingKeys
 |id|String|Со стороны загрузка уникальный идентификатор ключа.|
 |value|String|Со стороны загрузки ключ значение — значение 5 x 5, разделенных hiphens.|
 |displayName|String|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
-|описание|String|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
+|description|String|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
 |totalActivation|Int32|Со стороны загрузки ключ общее активация отображаются для администраторов для ИТ-специалистов.|
 |lastUpdatedDateTime|String|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
 
@@ -63,6 +64,7 @@ POST /deviceAppManagement/sideLoadingKeys
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
@@ -97,7 +99,6 @@ Content-Length: 295
   "lastUpdatedDateTime": "Last Updated Date Time value"
 }
 ```
-
 
 
 

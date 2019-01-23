@@ -1,29 +1,29 @@
 ---
 title: Тип перечисления officeSuiteInstallProgressDisplayLevel
 description: Перечисление для определения уровня отображения для пользовательского интерфейса программы установки ход выполнения установки на устройстве.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 062e880ad6e525e3ca667a484fa71f1b01ff65f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e45dfded50c5274404cb9c6fd71c66ef785043fe
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952183"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401224"
 ---
 # <a name="officesuiteinstallprogressdisplaylevel-enum-type"></a>Тип перечисления officeSuiteInstallProgressDisplayLevel
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Перечисление для определения уровня отображения для пользовательского интерфейса программы установки ход выполнения установки на устройстве.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Н/Д|
+|none|0|Н/Д|
 |Полный|1|Н/Д|
-
 
 
 

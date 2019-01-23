@@ -3,27 +3,27 @@ title: Тип перечисления managedAppAvailability
 description: Доступность управляемых приложений (MAM).
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: a0b4974c7e9797d1fc66cf0b48b9c4524f3ee246
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 028a3b94597a98ecdf841f5ae72eb485b0a66398
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957615"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400041"
 ---
 # <a name="managedappavailability-enum-type"></a>Тип перечисления managedAppAvailability
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Доступность управляемых приложений (MAM).
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |глобальные|0|Приложение доступно для всех клиентов.|
 |lineOfBusiness|1|Строка закрытый организации бизнес-приложений.|
-
 
 
 

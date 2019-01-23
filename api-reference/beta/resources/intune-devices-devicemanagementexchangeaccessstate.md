@@ -1,32 +1,32 @@
 ---
 title: Тип перечисления deviceManagementExchangeAccessState
 description: Состояние доступа устройств Exchange.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 03a407d0971059ed7a0a8bb0ffae2773bc788b31
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f66f8372b5bd087ad620fa86d8e0beff8b3eb3a0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928397"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29401070"
 ---
 # <a name="devicemanagementexchangeaccessstate-enum-type"></a>Тип перечисления deviceManagementExchangeAccessState
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние доступа устройств Exchange.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Состояние не доступа, обнаруженные в Exchange|
+|none|0|Состояние не доступа, обнаруженные в Exchange|
 |unknown|1|Состояние доступа устройства к серверу Exchange не известен|
 |разрешено|2|Устройство имеет доступ к Exchange|
 |заблокировано|3|Устройство будет заблокировано в Exchange|
 |в карантин|4|Находится в карантине в Exchange|
-
 
 
 

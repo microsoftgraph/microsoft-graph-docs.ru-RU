@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления eapFastConfiguration
 description: Доступные параметры для конфигурации EAP-FAST.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 65165929d388ed57f2651a0d277996e56d2f046e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1fa2c3c3a4cf0bc245ea7c9fbc4294d69215deee
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399390"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>Тип перечисления eapFastConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Доступные параметры для конфигурации EAP-FAST.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ ms.locfileid: "27954458"
 |useProtectedAccessCredential|1|Использование защиты безопасного доступа (PAC).|
 |useProtectedAccessCredentialAndProvision|2|Использование защищенного доступа учетные данные (PAC) и подготовки идентификационные|
 |useProtectedAccessCredentialAndProvisionAnonymously|3|Использование защищенного доступа учетные данные (PAC), PAC подготовки и делать это анонимного доступа.|
-
 
 
 

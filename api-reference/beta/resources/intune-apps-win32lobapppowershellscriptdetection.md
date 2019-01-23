@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса win32LobAppPowerShellScriptDetection
 description: Содержит свойства сценария PowerShell для обнаружения приложений Win32
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 38a3df87ca5492b89000fc1090395d94c64e1888
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c5c02228589042d0abf36c34c5818c5a4610514e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926969"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399642"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства сценария PowerShell для обнаружения приложений Win32
+
 
 Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
@@ -26,10 +27,11 @@ ms.locfileid: "27926969"
 |:---|:---|:---|
 |enforceSignatureCheck|Логический|Значение, указывающее, применяется ли проверка подписи|
 |runAs32Bit|Логический|Значение, указывающее, будет ли этот скрипт должна запускаться в 32-разрядная версия|
-|scriptContent|Строка|Содержимое сценария для обнаружения Win32 строки из бизнес-приложения в кодировке base64|
+|scriptContent|String|Содержимое сценария для обнаружения Win32 строки из бизнес-приложения в кодировке base64|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -45,7 +47,6 @@ ms.locfileid: "27926969"
   "scriptContent": "String"
 }
 ```
-
 
 
 

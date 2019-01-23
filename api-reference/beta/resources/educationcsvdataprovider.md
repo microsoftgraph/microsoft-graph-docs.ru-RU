@@ -4,12 +4,12 @@ description: 'Используется для настройки синхрон�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 19ef77671f862a0b59b5697b76bb54dc20e42856
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c9211d5f7ca25b78c6e76c3744f6941e3b172bb3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952757"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29399348"
 ---
 # <a name="educationcsvdataprovider-resource-type"></a>Тип ресурса educationCsvDataProvider
 
@@ -32,12 +32,12 @@ ms.locfileid: "27952757"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationCsvDataProvider"
+  "@odata.type": "microsoft.graph.educationCsvDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+    "@odata.type": "microsoft.graph.educationCsvDataProvider",
     "customizations": { "@odata.type": "microsoft.graph.educationSynchronizationCustomizations" }
 }
 ```
