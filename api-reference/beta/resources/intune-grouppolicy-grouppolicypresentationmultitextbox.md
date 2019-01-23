@@ -1,0 +1,71 @@
+---
+title: Тип ресурса groupPolicyPresentationMultiTextBox
+description: Представляет элемент multiTextBox ADMX и ADMX multiText элемента.
+localization_priority: Normal
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 85253b6a1af70e75dcba3849fc06dc50935de306
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29430688"
+---
+# <a name="grouppolicypresentationmultitextbox-resource-type"></a><span data-ttu-id="dee19-103">Тип ресурса groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-103">groupPolicyPresentationMultiTextBox resource type</span></span>
+
+> <span data-ttu-id="dee19-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="dee19-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="dee19-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dee19-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="dee19-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dee19-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="dee19-107">Представляет элемент multiTextBox ADMX и ADMX multiText элемента.</span><span class="sxs-lookup"><span data-stu-id="dee19-107">Represents an ADMX multiTextBox element and an ADMX multiText element.</span></span>
+
+
+<span data-ttu-id="dee19-108">Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="dee19-108">Inherits from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="dee19-109">Методы</span><span class="sxs-lookup"><span data-stu-id="dee19-109">Methods</span></span>
+|<span data-ttu-id="dee19-110">Метод</span><span class="sxs-lookup"><span data-stu-id="dee19-110">Method</span></span>|<span data-ttu-id="dee19-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="dee19-111">Return Type</span></span>|<span data-ttu-id="dee19-112">Описание</span><span class="sxs-lookup"><span data-stu-id="dee19-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="dee19-113">Список groupPolicyPresentationMultiTextBoxes</span><span class="sxs-lookup"><span data-stu-id="dee19-113">List groupPolicyPresentationMultiTextBoxes</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-list.md)|<span data-ttu-id="dee19-114">[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="dee19-114">[groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) collection</span></span>|<span data-ttu-id="dee19-115">Свойства списка и связей объектов [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="dee19-115">List properties and relationships of the [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) objects.</span></span>|
+|[<span data-ttu-id="dee19-116">Получение groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-116">Get groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-get.md)|[<span data-ttu-id="dee19-117">groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-117">groupPolicyPresentationMultiTextBox</span></span>](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|<span data-ttu-id="dee19-118">Чтение свойства и связи объекта [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="dee19-118">Read properties and relationships of the [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) object.</span></span>|
+|[<span data-ttu-id="dee19-119">Создание groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-119">Create groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-create.md)|[<span data-ttu-id="dee19-120">groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-120">groupPolicyPresentationMultiTextBox</span></span>](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|<span data-ttu-id="dee19-121">Создание нового объекта [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="dee19-121">Create a new [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) object.</span></span>|
+|[<span data-ttu-id="dee19-122">Удаление groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-122">Delete groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-delete.md)|<span data-ttu-id="dee19-123">Нет</span><span class="sxs-lookup"><span data-stu-id="dee19-123">None</span></span>|<span data-ttu-id="dee19-124">Удаляет [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md).</span><span class="sxs-lookup"><span data-stu-id="dee19-124">Deletes a [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md).</span></span>|
+|[<span data-ttu-id="dee19-125">Обновление groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-125">Update groupPolicyPresentationMultiTextBox</span></span>](../api/intune-grouppolicy-grouppolicypresentationmultitextbox-update.md)|[<span data-ttu-id="dee19-126">groupPolicyPresentationMultiTextBox</span><span class="sxs-lookup"><span data-stu-id="dee19-126">groupPolicyPresentationMultiTextBox</span></span>](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md)|<span data-ttu-id="dee19-127">Обновление свойства объекта [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) .</span><span class="sxs-lookup"><span data-stu-id="dee19-127">Update the properties of a [groupPolicyPresentationMultiTextBox](../resources/intune-grouppolicy-grouppolicypresentationmultitextbox.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="dee19-128">Свойства</span><span class="sxs-lookup"><span data-stu-id="dee19-128">Properties</span></span>
+|<span data-ttu-id="dee19-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="dee19-129">Property</span></span>|<span data-ttu-id="dee19-130">Тип</span><span class="sxs-lookup"><span data-stu-id="dee19-130">Type</span></span>|<span data-ttu-id="dee19-131">Описание</span><span class="sxs-lookup"><span data-stu-id="dee19-131">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="dee19-132">label</span><span class="sxs-lookup"><span data-stu-id="dee19-132">label</span></span>|<span data-ttu-id="dee19-133">String</span><span class="sxs-lookup"><span data-stu-id="dee19-133">String</span></span>|<span data-ttu-id="dee19-134">Метка локализованный текст для любого объекта презентации.</span><span class="sxs-lookup"><span data-stu-id="dee19-134">Localized text label for any presentation entity.</span></span> <span data-ttu-id="dee19-135">Значение по умолчанию будет пустым.</span><span class="sxs-lookup"><span data-stu-id="dee19-135">The default value is empty.</span></span> <span data-ttu-id="dee19-136">Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="dee19-136">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="dee19-137">id</span><span class="sxs-lookup"><span data-stu-id="dee19-137">id</span></span>|<span data-ttu-id="dee19-138">String</span><span class="sxs-lookup"><span data-stu-id="dee19-138">String</span></span>|<span data-ttu-id="dee19-139">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="dee19-139">Key of the entity.</span></span> <span data-ttu-id="dee19-140">Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="dee19-140">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="dee19-141">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="dee19-141">lastModifiedDateTime</span></span>|<span data-ttu-id="dee19-142">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="dee19-142">DateTimeOffset</span></span>|<span data-ttu-id="dee19-143">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="dee19-143">The date and time the entity was last modified.</span></span> <span data-ttu-id="dee19-144">Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="dee19-144">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+|<span data-ttu-id="dee19-145">Обязательный</span><span class="sxs-lookup"><span data-stu-id="dee19-145">required</span></span>|<span data-ttu-id="dee19-146">Логический</span><span class="sxs-lookup"><span data-stu-id="dee19-146">Boolean</span></span>|<span data-ttu-id="dee19-147">Требование ввести значение в текстовом поле.</span><span class="sxs-lookup"><span data-stu-id="dee19-147">Requirement to enter a value in the text box.</span></span> <span data-ttu-id="dee19-148">Значение по умолчанию — False.</span><span class="sxs-lookup"><span data-stu-id="dee19-148">Default value is false.</span></span>|
+|<span data-ttu-id="dee19-149">maxLength</span><span class="sxs-lookup"><span data-stu-id="dee19-149">maxLength</span></span>|<span data-ttu-id="dee19-150">Int64</span><span class="sxs-lookup"><span data-stu-id="dee19-150">Int64</span></span>|<span data-ttu-id="dee19-151">Целое число без знака, задающее максимальное количество текстовых символов.</span><span class="sxs-lookup"><span data-stu-id="dee19-151">An unsigned integer that specifies the maximum number of text characters.</span></span> <span data-ttu-id="dee19-152">Значение по умолчанию — 1023.</span><span class="sxs-lookup"><span data-stu-id="dee19-152">Default value is 1023.</span></span>|
+|<span data-ttu-id="dee19-153">maxStrings</span><span class="sxs-lookup"><span data-stu-id="dee19-153">maxStrings</span></span>|<span data-ttu-id="dee19-154">Int64</span><span class="sxs-lookup"><span data-stu-id="dee19-154">Int64</span></span>|<span data-ttu-id="dee19-155">Целое число без знака, задающее максимальное число строк.</span><span class="sxs-lookup"><span data-stu-id="dee19-155">An unsigned integer that specifies the maximum number of strings.</span></span> <span data-ttu-id="dee19-156">Значение по умолчанию равно 0.</span><span class="sxs-lookup"><span data-stu-id="dee19-156">Default value is 0.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="dee19-157">Отношения</span><span class="sxs-lookup"><span data-stu-id="dee19-157">Relationships</span></span>
+|<span data-ttu-id="dee19-158">Связь</span><span class="sxs-lookup"><span data-stu-id="dee19-158">Relationship</span></span>|<span data-ttu-id="dee19-159">Тип</span><span class="sxs-lookup"><span data-stu-id="dee19-159">Type</span></span>|<span data-ttu-id="dee19-160">Описание</span><span class="sxs-lookup"><span data-stu-id="dee19-160">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="dee19-161">definition</span><span class="sxs-lookup"><span data-stu-id="dee19-161">definition</span></span>|[<span data-ttu-id="dee19-162">groupPolicyDefinition</span><span class="sxs-lookup"><span data-stu-id="dee19-162">groupPolicyDefinition</span></span>](../resources/intune-grouppolicy-grouppolicydefinition.md)|<span data-ttu-id="dee19-163">Определение политики группы, связанные с презентации.</span><span class="sxs-lookup"><span data-stu-id="dee19-163">The group policy definition associated with the presentation.</span></span> <span data-ttu-id="dee19-164">Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span><span class="sxs-lookup"><span data-stu-id="dee19-164">Inherited from [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="dee19-165">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dee19-165">JSON Representation</span></span>
+<span data-ttu-id="dee19-166">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dee19-166">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.groupPolicyPresentationMultiTextBox"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.groupPolicyPresentationMultiTextBox",
+  "label": "String",
+  "id": "String (identifier)",
+  "lastModifiedDateTime": "String (timestamp)",
+  "required": true,
+  "maxLength": 1024,
+  "maxStrings": 1024
+}
+```
+
+
+
+

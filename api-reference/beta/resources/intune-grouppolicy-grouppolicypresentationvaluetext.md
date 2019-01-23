@@ -1,0 +1,68 @@
+---
+title: Тип ресурса groupPolicyPresentationValueText
+description: Объект представляет значение string для раскрывающегося списка, поля со списком или текстовое поле презентации на определение политики.
+localization_priority: Normal
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5d9083040ac9b0505012c4a41f767796f75a99a0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29431706"
+---
+# <a name="grouppolicypresentationvaluetext-resource-type"></a><span data-ttu-id="ee7e0-103">Тип ресурса groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-103">groupPolicyPresentationValueText resource type</span></span>
+
+> <span data-ttu-id="ee7e0-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ee7e0-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-105">Use of these APIs in production applications is not supported.</span></span>
+
+> <span data-ttu-id="ee7e0-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+
+<span data-ttu-id="ee7e0-107">Объект представляет значение string для раскрывающегося списка, поля со списком или текстовое поле презентации на определение политики.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-107">The entity represents a string value for a drop-down list, combo box, or text box presentation on a policy definition.</span></span>
+
+
+<span data-ttu-id="ee7e0-108">Наследуется от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ee7e0-108">Inherits from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>
+
+## <a name="methods"></a><span data-ttu-id="ee7e0-109">Методы</span><span class="sxs-lookup"><span data-stu-id="ee7e0-109">Methods</span></span>
+|<span data-ttu-id="ee7e0-110">Метод</span><span class="sxs-lookup"><span data-stu-id="ee7e0-110">Method</span></span>|<span data-ttu-id="ee7e0-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="ee7e0-111">Return Type</span></span>|<span data-ttu-id="ee7e0-112">Описание</span><span class="sxs-lookup"><span data-stu-id="ee7e0-112">Description</span></span>|
+|:---|:---|:---|
+|[<span data-ttu-id="ee7e0-113">Список groupPolicyPresentationValueTexts</span><span class="sxs-lookup"><span data-stu-id="ee7e0-113">List groupPolicyPresentationValueTexts</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluetext-list.md)|<span data-ttu-id="ee7e0-114">[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="ee7e0-114">[groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) collection</span></span>|<span data-ttu-id="ee7e0-115">Свойства списка и связей объектов [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) .</span><span class="sxs-lookup"><span data-stu-id="ee7e0-115">List properties and relationships of the [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) objects.</span></span>|
+|[<span data-ttu-id="ee7e0-116">Получение groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-116">Get groupPolicyPresentationValueText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluetext-get.md)|[<span data-ttu-id="ee7e0-117">groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-117">groupPolicyPresentationValueText</span></span>](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)|<span data-ttu-id="ee7e0-118">Чтение свойства и связи объекта [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) .</span><span class="sxs-lookup"><span data-stu-id="ee7e0-118">Read properties and relationships of the [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) object.</span></span>|
+|[<span data-ttu-id="ee7e0-119">Создание groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-119">Create groupPolicyPresentationValueText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluetext-create.md)|[<span data-ttu-id="ee7e0-120">groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-120">groupPolicyPresentationValueText</span></span>](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)|<span data-ttu-id="ee7e0-121">Создание нового объекта [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) .</span><span class="sxs-lookup"><span data-stu-id="ee7e0-121">Create a new [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) object.</span></span>|
+|[<span data-ttu-id="ee7e0-122">Удаление groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-122">Delete groupPolicyPresentationValueText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluetext-delete.md)|<span data-ttu-id="ee7e0-123">Нет</span><span class="sxs-lookup"><span data-stu-id="ee7e0-123">None</span></span>|<span data-ttu-id="ee7e0-124">Удаляет [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md).</span><span class="sxs-lookup"><span data-stu-id="ee7e0-124">Deletes a [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md).</span></span>|
+|[<span data-ttu-id="ee7e0-125">Обновление groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-125">Update groupPolicyPresentationValueText</span></span>](../api/intune-grouppolicy-grouppolicypresentationvaluetext-update.md)|[<span data-ttu-id="ee7e0-126">groupPolicyPresentationValueText</span><span class="sxs-lookup"><span data-stu-id="ee7e0-126">groupPolicyPresentationValueText</span></span>](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md)|<span data-ttu-id="ee7e0-127">Обновление свойства объекта [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) .</span><span class="sxs-lookup"><span data-stu-id="ee7e0-127">Update the properties of a [groupPolicyPresentationValueText](../resources/intune-grouppolicy-grouppolicypresentationvaluetext.md) object.</span></span>|
+
+## <a name="properties"></a><span data-ttu-id="ee7e0-128">Свойства</span><span class="sxs-lookup"><span data-stu-id="ee7e0-128">Properties</span></span>
+|<span data-ttu-id="ee7e0-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="ee7e0-129">Property</span></span>|<span data-ttu-id="ee7e0-130">Тип</span><span class="sxs-lookup"><span data-stu-id="ee7e0-130">Type</span></span>|<span data-ttu-id="ee7e0-131">Описание</span><span class="sxs-lookup"><span data-stu-id="ee7e0-131">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="ee7e0-132">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="ee7e0-132">lastModifiedDateTime</span></span>|<span data-ttu-id="ee7e0-133">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee7e0-133">DateTimeOffset</span></span>|<span data-ttu-id="ee7e0-134">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-134">The date and time the object was last modified.</span></span> <span data-ttu-id="ee7e0-135">Наследуется от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ee7e0-135">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="ee7e0-136">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="ee7e0-136">createdDateTime</span></span>|<span data-ttu-id="ee7e0-137">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ee7e0-137">DateTimeOffset</span></span>|<span data-ttu-id="ee7e0-138">Дата и время создания объекта.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-138">The date and time the object was created.</span></span> <span data-ttu-id="ee7e0-139">Наследуется от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ee7e0-139">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="ee7e0-140">id</span><span class="sxs-lookup"><span data-stu-id="ee7e0-140">id</span></span>|<span data-ttu-id="ee7e0-141">String</span><span class="sxs-lookup"><span data-stu-id="ee7e0-141">String</span></span>|<span data-ttu-id="ee7e0-142">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-142">Key of the entity.</span></span> <span data-ttu-id="ee7e0-143">Наследуется от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ee7e0-143">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="ee7e0-144">value</span><span class="sxs-lookup"><span data-stu-id="ee7e0-144">value</span></span>|<span data-ttu-id="ee7e0-145">String</span><span class="sxs-lookup"><span data-stu-id="ee7e0-145">String</span></span>|<span data-ttu-id="ee7e0-146">Строковое значение для связанного презентации.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-146">A string value for the associated presentation.</span></span>|
+
+## <a name="relationships"></a><span data-ttu-id="ee7e0-147">Отношения</span><span class="sxs-lookup"><span data-stu-id="ee7e0-147">Relationships</span></span>
+|<span data-ttu-id="ee7e0-148">Связь</span><span class="sxs-lookup"><span data-stu-id="ee7e0-148">Relationship</span></span>|<span data-ttu-id="ee7e0-149">Тип</span><span class="sxs-lookup"><span data-stu-id="ee7e0-149">Type</span></span>|<span data-ttu-id="ee7e0-150">Описание</span><span class="sxs-lookup"><span data-stu-id="ee7e0-150">Description</span></span>|
+|:---|:---|:---|
+|<span data-ttu-id="ee7e0-151">definitionValue</span><span class="sxs-lookup"><span data-stu-id="ee7e0-151">definitionValue</span></span>|[<span data-ttu-id="ee7e0-152">groupPolicyDefinitionValue</span><span class="sxs-lookup"><span data-stu-id="ee7e0-152">groupPolicyDefinitionValue</span></span>](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|<span data-ttu-id="ee7e0-153">Значение определения групповой политики, связанное со значением, презентации.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-153">The group policy definition value associated with the presentation value.</span></span> <span data-ttu-id="ee7e0-154">Наследуется от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ee7e0-154">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+|<span data-ttu-id="ee7e0-155">презентация</span><span class="sxs-lookup"><span data-stu-id="ee7e0-155">presentation</span></span>|[<span data-ttu-id="ee7e0-156">groupPolicyPresentation</span><span class="sxs-lookup"><span data-stu-id="ee7e0-156">groupPolicyPresentation</span></span>](../resources/intune-grouppolicy-grouppolicypresentation.md)|<span data-ttu-id="ee7e0-157">Презентации групповой политики, связанное со значением, презентации.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-157">The group policy presentation associated with the presentation value.</span></span> <span data-ttu-id="ee7e0-158">Наследуется от [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span><span class="sxs-lookup"><span data-stu-id="ee7e0-158">Inherited from [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)</span></span>|
+
+## <a name="json-representation"></a><span data-ttu-id="ee7e0-159">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ee7e0-159">JSON Representation</span></span>
+<span data-ttu-id="ee7e0-160">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ee7e0-160">Here is a JSON representation of the resource.</span></span>
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.groupPolicyPresentationValueText"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.groupPolicyPresentationValueText",
+  "lastModifiedDateTime": "String (timestamp)",
+  "createdDateTime": "String (timestamp)",
+  "id": "String (identifier)",
+  "value": "String"
+}
+```
+
+
+
+
