@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления autoRestartNotificationDismissalMethod
 description: Метод увольнение Auto требуется перезагрузка уведомления
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dec301e5c864eb06b84265a8adbb0382219c5e48
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 41201fdf6b1c8484ecb808d3d8e0a2e069dededd
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393132"
 ---
-# <a name="autorestartnotificationdismissalmethod-enum-type"></a><span data-ttu-id="cf1a7-103">Тип перечисления autoRestartNotificationDismissalMethod</span><span class="sxs-lookup"><span data-stu-id="cf1a7-103">autoRestartNotificationDismissalMethod enum type</span></span>
+# <a name="autorestartnotificationdismissalmethod-enum-type"></a><span data-ttu-id="0d2cf-103">Тип перечисления autoRestartNotificationDismissalMethod</span><span class="sxs-lookup"><span data-stu-id="0d2cf-103">autoRestartNotificationDismissalMethod enum type</span></span>
 
-> <span data-ttu-id="cf1a7-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="cf1a7-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cf1a7-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cf1a7-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0d2cf-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0d2cf-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0d2cf-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0d2cf-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="cf1a7-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="cf1a7-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0d2cf-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0d2cf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="cf1a7-107">Метод увольнение Auto требуется перезагрузка уведомления</span><span class="sxs-lookup"><span data-stu-id="cf1a7-107">Auto restart required notification dismissal method</span></span>
-## <a name="members"></a><span data-ttu-id="cf1a7-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="cf1a7-108">Members</span></span>
-|<span data-ttu-id="cf1a7-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="cf1a7-109">Member</span></span>|<span data-ttu-id="cf1a7-110">Значение</span><span class="sxs-lookup"><span data-stu-id="cf1a7-110">Value</span></span>|<span data-ttu-id="cf1a7-111">Описание</span><span class="sxs-lookup"><span data-stu-id="cf1a7-111">Description</span></span>|
+<span data-ttu-id="0d2cf-107">Метод увольнение Auto требуется перезагрузка уведомления</span><span class="sxs-lookup"><span data-stu-id="0d2cf-107">Auto restart required notification dismissal method</span></span>
+
+## <a name="members"></a><span data-ttu-id="0d2cf-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="0d2cf-108">Members</span></span>
+|<span data-ttu-id="0d2cf-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="0d2cf-109">Member</span></span>|<span data-ttu-id="0d2cf-110">Значение</span><span class="sxs-lookup"><span data-stu-id="0d2cf-110">Value</span></span>|<span data-ttu-id="0d2cf-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0d2cf-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="cf1a7-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="cf1a7-112">notConfigured</span></span>|<span data-ttu-id="cf1a7-113">0</span><span class="sxs-lookup"><span data-stu-id="cf1a7-113">0</span></span>|<span data-ttu-id="cf1a7-114">Не настроен</span><span class="sxs-lookup"><span data-stu-id="cf1a7-114">Not configured</span></span>|
-|<span data-ttu-id="cf1a7-115">Автоматически</span><span class="sxs-lookup"><span data-stu-id="cf1a7-115">automatic</span></span>|<span data-ttu-id="cf1a7-116">1</span><span class="sxs-lookup"><span data-stu-id="cf1a7-116">1</span></span>|<span data-ttu-id="cf1a7-117">Увольнение Auto</span><span class="sxs-lookup"><span data-stu-id="cf1a7-117">Auto dismissal</span></span>|
-|<span data-ttu-id="cf1a7-118">user</span><span class="sxs-lookup"><span data-stu-id="cf1a7-118">user</span></span>|<span data-ttu-id="cf1a7-119">2</span><span class="sxs-lookup"><span data-stu-id="cf1a7-119">2</span></span>|<span data-ttu-id="cf1a7-120">Увольнение пользователей</span><span class="sxs-lookup"><span data-stu-id="cf1a7-120">User dismissal</span></span>|
-
+|<span data-ttu-id="0d2cf-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="0d2cf-112">notConfigured</span></span>|<span data-ttu-id="0d2cf-113">0</span><span class="sxs-lookup"><span data-stu-id="0d2cf-113">0</span></span>|<span data-ttu-id="0d2cf-114">Не настроен</span><span class="sxs-lookup"><span data-stu-id="0d2cf-114">Not configured</span></span>|
+|<span data-ttu-id="0d2cf-115">Автоматически</span><span class="sxs-lookup"><span data-stu-id="0d2cf-115">automatic</span></span>|<span data-ttu-id="0d2cf-116">1</span><span class="sxs-lookup"><span data-stu-id="0d2cf-116">1</span></span>|<span data-ttu-id="0d2cf-117">Увольнение Auto</span><span class="sxs-lookup"><span data-stu-id="0d2cf-117">Auto dismissal</span></span>|
+|<span data-ttu-id="0d2cf-118">user</span><span class="sxs-lookup"><span data-stu-id="0d2cf-118">user</span></span>|<span data-ttu-id="0d2cf-119">2</span><span class="sxs-lookup"><span data-stu-id="0d2cf-119">2</span></span>|<span data-ttu-id="0d2cf-120">Увольнение пользователей</span><span class="sxs-lookup"><span data-stu-id="0d2cf-120">User dismissal</span></span>|
 
 
 
