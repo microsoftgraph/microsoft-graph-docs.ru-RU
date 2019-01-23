@@ -3,21 +3,22 @@ title: Тип ресурса iosEasEmailProfileConfiguration
 description: С указанием конфигураций в этом профиле можно указать собственного почтового клиента на устройствах iOS для взаимодействия с Exchange server и получение электронной почты, контакты, календарь, напоминаний и заметки. Кроме того можно также указать объем электронной почты для синхронизации и как часто следует синхронизировать устройства.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 050970bc5b1e3835d0b3ad801969d42c79505992
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 220be246b359c353ff4bd2294000a7f43205106d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938344"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402162"
 ---
 # <a name="ioseasemailprofileconfiguration-resource-type"></a>Тип ресурса iosEasEmailProfileConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 С указанием конфигураций в этом профиле можно указать собственного почтового клиента на устройствах iOS для взаимодействия с Exchange server и получение электронной почты, контакты, календарь, напоминаний и заметки. Кроме того можно также указать объем электронной почты для синхронизации и как часто следует синхронизировать устройства.
+
 
 Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)
 
@@ -33,19 +34,19 @@ ms.locfileid: "27938344"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |usernameSource;|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Атрибут имени пользователя, выбирать из AAD и вставлен в этот профиль перед установкой на устройстве. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |usernameAADSource|[usernameSource](../resources/intune-deviceconfig-usernamesource.md);|Имя поля AAD, который будет использоваться для получения имени пользователя для профиля электронной почты. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
 |userDomainNameSource|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md);|Атрибут UserDomainname, выбирать из AAD и вставлен в этот профиль перед установкой на устройстве. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `fullDomainName`, `netBiosDomainName`.|
-|customDomainName|Строка|Значение имени личного домена используется при создании профиля электронной почты перед установкой на устройстве. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
-|Имя учетной записи|Строка|Имя учетной записи.|
+|customDomainName|String|Значение имени личного домена используется при создании профиля электронной почты перед установкой на устройстве. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
+|Имя учетной записи|String|Имя учетной записи.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Метод проверки подлинности для этого профиля электронной почты. Возможные значения: `usernameAndPassword`, `certificate`.|
 |blockMovingMessagesToOtherEmailAccounts|Логический|Указывает, следует ли блокировать перемещение сообщений для других учетных записей электронной почты.|
 |blockSendingEmailFromThirdPartyApps|Логический|Указывает, следует ли блокировать отправку электронной почты из приложений сторонних производителей.|
@@ -55,10 +56,16 @@ ms.locfileid: "27938344"
 |hostName|String|Exchange расположение (URL), который подключается собственного почтового приложения.|
 |requireSmime|Логический|Указывает, следует ли использовать сертификат S/MIME.|
 |smimeEnablePerMessageSwitch|Логический|Указывает, следует ли разрешить незашифрованные по электронной почте.|
+|smimeEncryptByDefaultEnabled|Логический|Если параметр имеет значение true, шифрование S/MIME включена по умолчанию.|
+|smimeSigningEnabled|Логический|Если этот параметр включен параметр имеет значение true, S/MIME для подписи для этой учетной записи|
+|smimeSigningUserOverrideEnabled|Логический|Если параметр имеет значение true, пользователь может включения и отключения S/MIME для подписи включено или отключено.|
+|smimeEncryptByDefaultUserOverrideEnabled|Логический|Если параметр имеет значение true, пользователь может включения и отключения шифрования по умолчанию.|
+|smimeSigningCertificateUserOverrideEnabled|Логический|Если параметр имеет значение true, пользователь может подписи удостоверения.|
+|smimeEncryptionCertificateUserOverrideEnabled|Логический|Если параметр имеет значение true пользователя можно выбрать удостоверение шифрования S/MIME. |
 |requireSsl|Логический|Указывает, следует ли использовать протокол SSL.|
 |useOAuth|Логический|Указывает, должен ли подключение использовать OAuth для проверки подлинности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -107,11 +114,16 @@ ms.locfileid: "27938344"
   "hostName": "String",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
   "useOAuth": true
 }
 ```
-
 
 
 

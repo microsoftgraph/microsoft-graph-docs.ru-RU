@@ -1,25 +1,26 @@
 ---
 title: Обновление embeddedSIMDeviceState
 description: Обновление свойства объекта embeddedSIMDeviceState.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 95182cdf8ac35e59428b34888e4376422344c479
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: f29da78f3a0a614ce5e2bdb79ab7e88e5018a403
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408707"
 ---
 # <a name="update-embeddedsimdevicestate"></a>Обновление embeddedSIMDeviceState
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,37 +44,39 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для внедренных состояние устройства диспетчера установки. Значение, назначенное при создании создаваемый системой.|
+|id|String|Уникальный идентификатор для внедренных состояние устройства диспетчера установки. Значение, назначенное при создании создаваемый системой.|
 |createdDateTime|DateTimeOffset|Время создания внедренных состояние устройства диспетчера установки. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения внедренного состояние устройства диспетчера установки. Обновление со стороны службы.|
 |lastSyncDateTime|DateTimeOffset|Время, внедренные устройства диспетчера установки последнего возврата. Обновление со стороны службы.|
-|universalIntegratedCircuitCardIdentifier|Строка|Универсальные интегральной карточки идентификатор (UICCID) Идентификация оборудования, на котором профиль — для развертывания.|
+|universalIntegratedCircuitCardIdentifier|String|Универсальные интегральной карточки идентификатор (UICCID) Идентификация оборудования, на котором профиль — для развертывания.|
 |deviceName|String|Имя устройства, к которому был подписки например рабочего СТОЛА ДЖО подготовить к работе|
 |userName|String|Имя пользователя, который был подписки подготовлен к например joe@contoso.com|
 |state|[embeddedSIMDeviceStateValue](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профилей, применяемые к устройства. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
-|stateDetails|Строка|Строка Описание подготовки состояния.|
+|stateDetails|String|Строка Описание подготовки состояния.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [embeddedSIMDeviceState](../resources/intune-esim-embeddedsimdevicestate.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCodePoolId}/deviceStates/{embeddedSIMDeviceStateId}
 Content-type: application/json
-Content-length: 300
+Content-length: 361
 
 {
+  "@odata.type": "#microsoft.graph.embeddedSIMDeviceState",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "universalIntegratedCircuitCardIdentifier": "Universal Integrated Circuit Card Identifier value",
   "deviceName": "Device Name value",
@@ -83,7 +86,7 @@ Content-length: 300
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
@@ -103,7 +106,6 @@ Content-Length: 529
   "stateDetails": "State Details value"
 }
 ```
-
 
 
 

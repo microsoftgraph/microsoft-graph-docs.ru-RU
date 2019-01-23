@@ -1,25 +1,26 @@
 ---
 title: Создание win32LobApp
 description: Создание нового объекта win32LobApp.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3ac82ba6d546fe64cb472686af2fcd0ee642d1eb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 089f84f3578c70e3d83b9f7bbfae11e2e72e1eab
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409029"
 ---
 # <a name="create-win32lobapp"></a>Создание win32LobApp
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,16 +44,16 @@ POST /deviceAppManagement/mobileApps
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта win32LobApp.
 
 В следующей таблице показаны свойства, которые необходимы для создания win32LobApp.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -65,12 +66,14 @@ POST /deviceAppManagement/mobileApps
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|Строка|Командной строки для установки этого приложения|
-|uninstallCommandLine|Строка|В командной строке команду Удалить это приложение|
-|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|installCommandLine|String|Командной строки для установки этого приложения|
+|uninstallCommandLine|String|В командной строке команду Удалить это приложение|
+|applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
 |minimumFreeDiskSpaceInMB|Int32|Значение для минимального свободного дискового пространства, которая требуется для установки этого приложения.|
 |minimumMemoryInMB|Int32|Значение для минимального физической памяти, которая требуется для установки этого приложения.|
@@ -80,20 +83,21 @@ POST /deviceAppManagement/mobileApps
 |installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Опыт установки для этого приложения.|
 |returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) коллекции|Коды возврата для записи поведение при установке.|
 |msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Подробности MSI, если это приложение Win32 представляет собой приложение MSI.|
-|setupFilePath|Строка|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
+|setupFilePath|String|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [win32LobApp](../resources/intune-apps-win32lobapp.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2264
+Content-length: 2285
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -105,7 +109,6 @@ Content-length: 2264
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "isFeatured": true,
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "informationUrl": "https://example.com/informationUrl/",
@@ -114,6 +117,10 @@ Content-length: 2264
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -168,12 +175,12 @@ Content-length: 2264
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2372
+Content-Length: 2457
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -196,6 +203,10 @@ Content-Length: 2372
   "notes": "Notes value",
   "uploadState": 11,
   "publishingState": "processing",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -249,7 +260,6 @@ Content-Length: 2372
   "setupFilePath": "Setup File Path value"
 }
 ```
-
 
 
 

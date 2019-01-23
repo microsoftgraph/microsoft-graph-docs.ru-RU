@@ -1,25 +1,26 @@
 ---
 title: Обновление depOnboardingSetting
 description: Обновление свойства объекта depOnboardingSetting.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a7624c99b812f67e76551e9f082da0af49c03bc5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 78d3138950776dd74a055fbb00339e9e69b5f0f1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412291"
 ---
 # <a name="update-deponboardingsetting"></a>Обновление depOnboardingSetting
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,7 +44,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md).
@@ -56,31 +57,31 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |lastModifiedDateTime|DateTimeOffset|Когда служба была onboarded.|
 |lastSuccessfulSyncDateTime|DateTimeOffset|При последней syned службы с помощью Intune|
 |lastSyncTriggeredDateTime|DateTimeOffset|Когда Intune запрашивает последней синхронизации.|
-|shareTokenWithSchoolDataSyncService|Boolean|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
+|shareTokenWithSchoolDataSyncService|Логический|Ли Dep маркеров общий доступ к включается со службой синхронизации данных School.|
 |lastSyncErrorCode|Int32|Код ошибки Apple во время последней синхронизации dep.|
 |tokenType|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена Dep. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
 |tokenName|String|Понятное имя для маркера Dep|
 |syncedDeviceCount|Int32|Получает количество синхронизированных устройства|
-|defaultProfileDisplayName|String|Получает количество синхронизированных устройства|
-|dataSharingConsentGranted|Boolean|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
+|dataSharingConsentGranted|Логический|Предоставляются разрешения для данных, общий доступ к службе Dep Apple|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 Content-type: application/json
-Content-length: 589
+Content-length: 514
 
 {
+  "@odata.type": "#microsoft.graph.depOnboardingSetting",
   "appleIdentifier": "Apple Identifier value",
   "tokenExpirationDateTime": "2016-12-31T23:59:54.0590989-08:00",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "lastSuccessfulSyncDateTime": "2017-01-01T00:03:28.120883-08:00",
   "lastSyncTriggeredDateTime": "2017-01-01T00:00:02.0916369-08:00",
   "shareTokenWithSchoolDataSyncService": true,
@@ -88,17 +89,16 @@ Content-length: 589
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "defaultProfileDisplayName": "Default Profile Display Name value",
   "dataSharingConsentGranted": true
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 697
+Content-Length: 627
 
 {
   "@odata.type": "#microsoft.graph.depOnboardingSetting",
@@ -113,11 +113,9 @@ Content-Length: 697
   "tokenType": "dep",
   "tokenName": "Token Name value",
   "syncedDeviceCount": 1,
-  "defaultProfileDisplayName": "Default Profile Display Name value",
   "dataSharingConsentGranted": true
 }
 ```
-
 
 
 

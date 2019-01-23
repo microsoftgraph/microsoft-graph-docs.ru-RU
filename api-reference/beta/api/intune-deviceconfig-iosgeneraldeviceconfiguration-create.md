@@ -1,25 +1,26 @@
 ---
 title: Create iosGeneralDeviceConfiguration
 description: Создание объекта iosGeneralDeviceConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d80dd2be597965ae89065c1e2c92316c7672537e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4f373a49a07ff4caa0f0a02839b73f5b936b9e96
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917204"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404164"
 ---
 # <a name="create-iosgeneraldeviceconfiguration"></a>Create iosGeneralDeviceConfiguration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).
+
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -51,13 +52,13 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountBlockModification|Логический|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Логический|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
@@ -135,14 +136,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |kioskModeAllowVolumeButtons|Логический|Указывает, можно ли использовать кнопки громкости в режиме киоска.|
 |kioskModeBlockVolumeButtons|Boolean|Указывает, следует ли блокировать кнопки громкости в режиме терминала.|
 |kioskModeAllowZoomSettings|Логический|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
-|kioskModeAppStoreUrl|Строка|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|kioskModeBuiltInAppId|Строка|КОД для встроенных приложений для использования в полноэкранном режиме. Используется при KioskModeManagedAppId и KioskModeAppStoreUrl не установлен.|
+|kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
+|kioskModeBuiltInAppId|String|КОД для встроенных приложений для использования в полноэкранном режиме. Используется при KioskModeManagedAppId и KioskModeAppStoreUrl не установлен.|
 |kioskModeRequireAssistiveTouch|Логический|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Логический|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Логический|Указывает, обязательно ли использовать монозвук в режиме киоска.|
 |kioskModeRequireVoiceOver|Логический|Указывает, обязательно ли использовать VoiceOver в режиме киоска.|
 |kioskModeRequireZoom|Логический|Указывает, обязательно ли использовать масштабирование в режиме киоска.|
-|kioskModeManagedAppId|Строка|Идентификатор управляемого приложения для использования в режиме киоска. Если указано свойство KioskModeManagedAppId, KioskModeAppStoreUrl игнорируется.|
+|kioskModeManagedAppId|String|Идентификатор управляемого приложения для использования в режиме киоска. Если указано свойство KioskModeManagedAppId, KioskModeAppStoreUrl игнорируется.|
 |lockScreenBlockControlCenter|Логический|Указывает, следует ли запретить использовать центр управления на заблокированном экране.|
 |lockScreenBlockNotificationView|Логический|Указывает, следует ли запретить использовать представление уведомлений на заблокированном экране.|
 |lockScreenBlockPassbook|Логический|Указывает, следует ли запретить использовать Passbook, когда устройство заблокировано.|
@@ -203,6 +204,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокирован ли обнаружения iBeacon AirPrint принтеров. Это позволяет предотвратить ложных маяки AirPrint Bluetooth от фишинга для сетевого трафика (операций ввода-вывода 11.0 и более поздних версий).|
 |blockSystemAppRemoval|Логический|Указывает, заблокирован ли удаления приложений системы с устройства на контролируемом устройства (операций ввода-вывода 11.0 и более поздних версий).|
 |vpnBlockCreation|Логический|Указывает, является ли создание конфигурации VPN заблокированных (операций ввода-вывода 11.0 и более поздних версий).|
+|appRemovalBlocked|Логический|Указывает, разрешено ли удаление приложений.|
+|usbRestrictedModeBlocked|Логический|Указывает, разрешено ли подключение стандартные USB, хотя устройство заблокировано (операций ввода-вывода 11.4.1 и более поздних версий).|
+|passwordBlockAutoFill|Логический|Указывает, разрешено ли функцию автозаполнения паролей (операций ввода-вывода 12.0 и более поздних версий).|
+|passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающая пароли с рядом устройств (операций ввода-вывода 12.0 и более поздних версий).|
+|passwordBlockAirDropSharing|Логический|Указывает ли блокировать общего доступа пароли с AirDrop iOS компонента пароли 12.0 и более поздних версий).|
+|dateAndTimeForceSetAutomatically|Логический|Указывает ли даты и времени «Задать автоматически» компонент включен и не может быть отключена пользователем (операций ввода-вывода 12.0 и более поздних версий).|
+|contactsAllowManagedToUnmanagedWrite|Логический|Указывает, следует ли управляемых приложений можно записи контактов к учетным записям неуправляемые контакты (операций ввода-вывода 12.0 и более поздних версий).|
+|contactsAllowUnmanagedToManagedRead|Логический|Указывает ли неуправляемые приложения может выполнять чтение из контактов управляемых учетных записей (операций ввода-вывода 12.0 или более поздней версии).|
 
 
 
@@ -210,16 +219,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 8496
+Content-length: 8758
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -451,16 +460,24 @@ Content-length: 8496
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 8604
+Content-Length: 8930
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -698,10 +715,17 @@ Content-Length: 8604
   "airPrintForceTrustedTLS": true,
   "airPrintBlockiBeaconDiscovery": true,
   "blockSystemAppRemoval": true,
-  "vpnBlockCreation": true
+  "vpnBlockCreation": true,
+  "appRemovalBlocked": true,
+  "usbRestrictedModeBlocked": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true,
+  "dateAndTimeForceSetAutomatically": true,
+  "contactsAllowManagedToUnmanagedWrite": true,
+  "contactsAllowUnmanagedToManagedRead": true
 }
 ```
-
 
 
 

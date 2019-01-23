@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса androidManagedStoreAccountEnterpriseSettings
 description: Корпоративные параметры для Android управляемой учетной записи хранилища.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a14f0327c4a4c4cf2bc78e56b63686208e97d4b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0deee2d3bbf816371a6331c000383398390e6610
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933816"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406383"
 ---
 # <a name="androidmanagedstoreaccountenterprisesettings-resource-type"></a>Тип ресурса androidManagedStoreAccountEnterpriseSettings
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Корпоративные параметры для Android управляемой учетной записи хранилища.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -28,6 +29,7 @@ ms.locfileid: "27933816"
 |[Действие syncApps](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-syncapps.md)|Нет|Н/Д|
 |[Действие unbind](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-unbind.md)|Нет|Н/Д|
 |[Действие createGooglePlayWebToken](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-creategoogleplaywebtoken.md)|String|Создает веб-маркера, который используется в встраиваемые компонента.|
+|[Действие setAndroidDeviceOwnerFullyManagedEnrollmentState](../api/intune-androidforwork-androidmanagedstoreaccountenterprisesettings-setandroiddeviceownerfullymanagedenrollmentstate.md)|Нет|Задает AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled в заданное значение.|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -41,10 +43,13 @@ ms.locfileid: "27933816"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения для Android Корпоративные параметры|
 |enrollmentTarget|[androidManagedStoreAccountEnrollmentTarget](../resources/intune-androidforwork-androidmanagedstoreaccountenrollmenttarget.md)|Указывает пользователей, которые можно зарегистрировать устройств в управление устройствами Android предприятия. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|deviceOwnerManagementEnabled|Boolean|Указывает, если эта учетная запись flighting для Android владелец управление устройствами с CloudDPC.|
+|deviceOwnerManagementEnabled|Логический|Указывает, если эта учетная запись flighting для Android владелец управление устройствами с CloudDPC.|
+|companyCodes|[androidEnrollmentCompanyCode](../resources/intune-androidforwork-androidenrollmentcompanycode.md) коллекции|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
+|androidDeviceOwnerFullyManagedEnrollmentEnabled|Логический|Коды компании для AndroidManagedStoreAccountEnterpriseSettings|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -67,10 +72,22 @@ ms.locfileid: "27933816"
   "targetGroupIds": [
     "String"
   ],
-  "deviceOwnerManagementEnabled": true
+  "deviceOwnerManagementEnabled": true,
+  "companyCodes": [
+    {
+      "@odata.type": "microsoft.graph.androidEnrollmentCompanyCode",
+      "enrollmentToken": "String",
+      "qrCodeContent": "String",
+      "qrCodeImage": {
+        "@odata.type": "microsoft.graph.mimeContent",
+        "type": "String",
+        "value": "binary"
+      }
+    }
+  ],
+  "androidDeviceOwnerFullyManagedEnrollmentEnabled": true
 }
 ```
-
 
 
 

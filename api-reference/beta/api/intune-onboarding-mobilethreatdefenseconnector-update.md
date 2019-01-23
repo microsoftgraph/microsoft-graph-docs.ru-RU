@@ -1,25 +1,26 @@
 ---
 title: Обновление mobileThreatDefenseConnector
 description: Обновление свойств объекта mobileThreatDefenseConnector.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d39a051f3c6dcf74715d98743f067be4f4223f9d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c8ed44a29f3e56f602689b58e3f58071998cde21
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945862"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411213"
 ---
 # <a name="update-mobilethreatdefenseconnector"></a>Обновление mobileThreatDefenseConnector
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md).
+
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -55,15 +56,15 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 |partnerState|[mobileThreatPartnerTenantState](../resources/intune-onboarding-mobilethreatpartnertenantstate.md)|Состояние партнера синхронизации данных для этой учетной записи. Возможные значения: `unavailable`, `available`, `enabled`, `unresponsive`.|
 |androidEnabled|Логическое|Для ОС Android следует указать, необходимо ли использовать данные партнера по синхронизации данных в ходе оценки соответствия требованиям|
 |iosEnabled|Логическое|Для ОС IOS следует указать, использовать ли данные партнера по синхронизации данных в ходе оценок соответствия требованиям|
-|windowsEnabled|Boolean|Для Windows получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
-|macEnabled|Boolean|Для Mac получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
+|windowsEnabled|Логический|Для Windows получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
+|macEnabled|Логический|Для Mac получить или задать ли данные из партнер синхронизации данных можно использовать во время оценки соответствия требованиям|
 |androidDeviceBlockedOnMissingPartnerData|Логическое|Для ОС Android следует указать, получать ли Intune данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
 |iosDeviceBlockedOnMissingPartnerData|Логическое|Для ОС IOS следует указать, получать ли Intune данные от партнера по синхронизации данных, прежде чем отметить устройство как соответствующее требованиям|
-|windowsDeviceBlockedOnMissingPartnerData|Boolean|Для Windows установите ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
-|macDeviceBlockedOnMissingPartnerData|Boolean|Для Mac получить или задать ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
+|windowsDeviceBlockedOnMissingPartnerData|Логический|Для Windows установите ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
+|macDeviceBlockedOnMissingPartnerData|Логический|Для Mac получить или задать ли Intune необходимо получать данные из партнер синхронизации данных до пометки совместимые устройства|
 |partnerUnsupportedOsVersionBlocked|Логическое|Получение или задание настроек, следует ли на включенных платформах блокировать устройства, которые не соответствуют минимальным требованиям партнера по синхронизации данных к версии|
 |partnerUnresponsivenessThresholdInDays|Int32|Получает или задает количество дней устойчивости к отсутствию отклика для клиента при этой интеграции партнера.|
-|allowPartnerToCollectIOSApplicationMetadata|Boolean|Для операций ввода-ВЫВОДА устройств позволяет администратору настроить ли партнер синхронизации данных также может собирать метаданные об установленных приложениях из Intune|
+|allowPartnerToCollectIOSApplicationMetadata|Логический|Для операций ввода-ВЫВОДА устройств позволяет администратору настроить ли партнер синхронизации данных также может собирать метаданные об установленных приложениях из Intune|
 
 
 
@@ -71,14 +72,16 @@ PATCH /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnec
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConnectorId}
 Content-type: application/json
-Content-length: 555
+Content-length: 622
 
 {
+  "@odata.type": "#microsoft.graph.mobileThreatDefenseConnector",
   "lastHeartbeatDateTime": "2016-12-31T23:59:37.9174975-08:00",
   "partnerState": "available",
   "androidEnabled": true,
@@ -120,7 +123,6 @@ Content-Length: 671
   "allowPartnerToCollectIOSApplicationMetadata": true
 }
 ```
-
 
 
 

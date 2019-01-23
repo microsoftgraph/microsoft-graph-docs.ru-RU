@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления ratingAppsType
 description: Оценка как и мультимедийного контента приложения
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 709734a36010ded195a93b383adefc80f729c4fe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2b8abf9bd3c1c8e0a0fdf9fb4aaada295c22f5cb
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953408"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406565"
 ---
 # <a name="ratingappstype-enum-type"></a>Тип перечисления ratingAppsType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Оценка как и мультимедийного контента приложения
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27953408"
 |agesAbove9|3|9 + возраст 9 и выше|
 |agesAbove12|4|12 + до 12 лет и выше |
 |agesAbove17|5|17 + возраст 17 и выше|
-
 
 
 

@@ -4,12 +4,12 @@ description: Извлечение профиля синхронизации да
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 7e40008baaddb592c24c52262f3e99feb045d223
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 0c4d06583b7ba892cf2ae4bddd8de16cd8612082
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406334"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Получение educationSynchronizationProfile
 
@@ -37,9 +37,9 @@ GET /synchronizationProfiles/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -53,7 +53,7 @@ GET /synchronizationProfiles/{id}
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 <!-- {
   "blockType": "ignored",
   "truncated": true,
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile",
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile",
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -74,7 +74,7 @@ Content-length: 2487
     "state": "provisioned",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "dataProvider": {
-        "@odata.type": "#microsoft.graph.educationCsvDataProvider",
+        "@odata.type": "microsoft.graph.educationCsvDataProvider",
         "customizations": {
             "student": {
                 "optionalPropertiesToSync": [
@@ -114,7 +114,7 @@ Content-length: 2487
         }
     },
     "identitySynchronizationConfiguration": {
-        "@odata.type": "#microsoft.graph.educationIdentityCreationConfiguration",
+        "@odata.type": "microsoft.graph.educationIdentityCreationConfiguration",
         "userDomains": [
             {
                 "appliesTo": "student",
@@ -129,14 +129,14 @@ Content-length: 2487
     "licensesToAssign": 
          [
             {
-                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+                "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
                 "appliesTo": "teacher",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"
                 ]
             },
             {
-                "@odata.type": "#microsoft.graph.educationSynchronizationLicenseAssignment",
+                "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment",
                 "appliesTo": "student",
                 "skuIds": [
                     "6fd2c87f-b296-42f0-b197-1e91e994b900"

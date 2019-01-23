@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса auditResource
 description: Класс, содержащий свойства ресурса аудита.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ac7da99203631696b8c93fbde62db906143ffe38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: bba8aa9cfe10d17cefdcfe28d25c4d8c2dfa429f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952246"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412480"
 ---
 # <a name="auditresource-resource-type"></a>Тип ресурса auditResource
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства ресурса аудита.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -28,6 +29,7 @@ ms.locfileid: "27952246"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -51,7 +53,6 @@ ms.locfileid: "27952246"
   "resourceId": "String"
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: Создание объекта enrollmentTroubleshootingEvent
 description: Создание объекта enrollmentTroubleshootingEvent.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8ae80e2084945b1dd5fb0259b16b178ab2d38ec5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a9eefb12628bf3d95c94b913ec8ae66a90108d08
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924568"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418976"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Создание объекта enrollmentTroubleshootingEvent
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -53,6 +54,9 @@ POST /deviceManagement/troubleshootingEvents
 |id|String|UUID объекта. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |eventDateTime|DateTimeOffset|Время возникновения события. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
+|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее обновлений. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
+|элемент eventName|String|Имя события, соответствующее событию устранения неполадок. Это необязательное поле унаследованные от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор ключ строки и пар строковое значение которой содержатся дополнительные сведения на устранение неполадок события унаследованные от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |operatingSystem|String|Операционная система.|
 |osVersion|String|Версия ОС.|
@@ -68,17 +72,40 @@ POST /deviceManagement/troubleshootingEvents
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [enrollmentTroubleshootingEvent](../resources/intune-troubleshooting-enrollmenttroubleshootingevent.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/troubleshootingEvents
 Content-type: application/json
-Content-length: 509
+Content-length: 1182
 
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "managedDeviceIdentifier": "Managed Device Identifier value",
   "operatingSystem": "Operating System value",
   "osVersion": "Os Version value",
@@ -90,18 +117,40 @@ Content-length: 509
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 558
+Content-Length: 1231
 
 {
   "@odata.type": "#microsoft.graph.enrollmentTroubleshootingEvent",
   "id": "c4a623f5-23f5-c4a6-f523-a6c4f523a6c4",
   "eventDateTime": "2016-12-31T23:59:23.3984029-08:00",
   "correlationId": "Correlation Id value",
+  "troubleshootingErrorDetails": {
+    "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorDetails",
+    "context": "Context value",
+    "failure": "Failure value",
+    "failureDetails": "Failure Details value",
+    "remediation": "Remediation value",
+    "resources": [
+      {
+        "@odata.type": "microsoft.graph.deviceManagementTroubleshootingErrorResource",
+        "text": "Text value",
+        "link": "Link value"
+      }
+    ]
+  },
+  "eventName": "Event Name value",
+  "additionalInformation": [
+    {
+      "@odata.type": "microsoft.graph.keyValuePair",
+      "name": "Name value",
+      "value": "Value value"
+    }
+  ],
   "managedDeviceIdentifier": "Managed Device Identifier value",
   "operatingSystem": "Operating System value",
   "osVersion": "Os Version value",
@@ -112,7 +161,6 @@ Content-Length: 558
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

@@ -1,25 +1,26 @@
 ---
 title: Создание iosLobAppProvisioningConfiguration
 description: Создание нового объекта iosLobAppProvisioningConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d5a39a91156ebba649a3463568517d9b55a7fdfa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9821b36ef52080f752adf89be1b6959e6c920b25
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405445"
 ---
 # <a name="create-ioslobappprovisioningconfiguration"></a>Создание iosLobAppProvisioningConfiguration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,7 +44,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта iosLobAppProvisioningConfiguration.
 
 В следующей таблице показаны свойства, которые необходимы для создания iosLobAppProvisioningConfiguration.
@@ -55,7 +56,7 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 |payloadFileName|String|Имя файла полезной нагрузки (*.mobileprovision | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|String|Указанное администратором описание конфигурации устройства.|
+|description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
@@ -66,12 +67,13 @@ POST /deviceAppManagement/iosLobAppProvisioningConfigurations
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
 Content-type: application/json
-Content-length: 377
+Content-length: 313
 
 {
   "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
@@ -79,7 +81,6 @@ Content-length: 377
   "payloadFileName": "Payload File Name value",
   "payload": "cGF5bG9hZA==",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "version": 7
 }
@@ -105,7 +106,6 @@ Content-Length: 485
   "version": 7
 }
 ```
-
 
 
 

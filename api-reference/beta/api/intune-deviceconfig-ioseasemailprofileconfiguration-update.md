@@ -1,25 +1,26 @@
 ---
 title: Обновление iosEasEmailProfileConfiguration
 description: Обновление свойства объекта iosEasEmailProfileConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6a82c5efe6a9967de2f20a2e97bbe4b4999ae34a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 91ce27d0db1edcad3beee03c9069f60683d69b11
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916763"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419683"
 ---
 # <a name="update-ioseasemailprofileconfiguration"></a>Обновление iosEasEmailProfileConfiguration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -41,11 +42,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md).
@@ -55,9 +56,9 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |usernameSource;|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Атрибут имени пользователя, выбирать из AAD и вставлен в этот профиль перед установкой на устройстве. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md). Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
@@ -66,32 +67,39 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |customDomainName|String|Значение имени личного домена используется при создании профиля электронной почты перед установкой на устройстве. Наследуется от [easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|
 |Имя учетной записи|String|Имя учетной записи.|
 |authenticationMethod|[easAuthenticationMethod](../resources/intune-deviceconfig-easauthenticationmethod.md)|Метод проверки подлинности для этого профиля электронной почты. Возможные значения: `usernameAndPassword`, `certificate`.|
-|blockMovingMessagesToOtherEmailAccounts|Boolean|Указывает, следует ли блокировать перемещение сообщений для других учетных записей электронной почты.|
-|blockSendingEmailFromThirdPartyApps|Boolean|Указывает, следует ли блокировать отправку электронной почты из приложений сторонних производителей.|
-|blockSyncingRecentlyUsedEmailAddresses|Boolean|Указывает, следует ли блокировать выполняется синхронизация недавно использовавшихся адресов электронной почты, например - при создании новых сообщений электронной почты.|
+|blockMovingMessagesToOtherEmailAccounts|Логический|Указывает, следует ли блокировать перемещение сообщений для других учетных записей электронной почты.|
+|blockSendingEmailFromThirdPartyApps|Логический|Указывает, следует ли блокировать отправку электронной почты из приложений сторонних производителей.|
+|blockSyncingRecentlyUsedEmailAddresses|Логический|Указывает, следует ли блокировать выполняется синхронизация недавно использовавшихся адресов электронной почты, например - при создании новых сообщений электронной почты.|
 |durationOfEmailToSync|[emailSyncDuration](../resources/intune-deviceconfig-emailsyncduration.md)|Продолжительность времени сообщений электронной почты следует синхронизирован обратно. . Возможные значения: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |emailAddressSource|[userEmailSource](../resources/intune-deviceconfig-useremailsource.md)|Атрибут электронной почты, выбирать из AAD и вставлен в этот профиль перед установкой на устройстве. Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |hostName|String|Exchange расположение (URL), который подключается собственного почтового приложения.|
-|requireSmime|Boolean|Указывает, следует ли использовать сертификат S/MIME.|
-|smimeEnablePerMessageSwitch|Boolean|Указывает, следует ли разрешить незашифрованные по электронной почте.|
-|requireSsl|Boolean|Указывает, следует ли использовать протокол SSL.|
-|useOAuth|Boolean|Указывает, должен ли подключение использовать OAuth для проверки подлинности.|
+|requireSmime|Логический|Указывает, следует ли использовать сертификат S/MIME.|
+|smimeEnablePerMessageSwitch|Логический|Указывает, следует ли разрешить незашифрованные по электронной почте.|
+|smimeEncryptByDefaultEnabled|Логический|Если параметр имеет значение true, шифрование S/MIME включена по умолчанию.|
+|smimeSigningEnabled|Логический|Если этот параметр включен параметр имеет значение true, S/MIME для подписи для этой учетной записи|
+|smimeSigningUserOverrideEnabled|Логический|Если параметр имеет значение true, пользователь может включения и отключения S/MIME для подписи включено или отключено.|
+|smimeEncryptByDefaultUserOverrideEnabled|Логический|Если параметр имеет значение true, пользователь может включения и отключения шифрования по умолчанию.|
+|smimeSigningCertificateUserOverrideEnabled|Логический|Если параметр имеет значение true, пользователь может подписи удостоверения.|
+|smimeEncryptionCertificateUserOverrideEnabled|Логический|Если параметр имеет значение true пользователя можно выбрать удостоверение шифрования S/MIME. |
+|requireSsl|Логический|Указывает, следует ли использовать протокол SSL.|
+|useOAuth|Логический|Указывает, должен ли подключение использовать OAuth для проверки подлинности.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [iosEasEmailProfileConfiguration](../resources/intune-deviceconfig-ioseasemailprofileconfiguration.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 904
+Content-length: 1193
 
 {
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -113,17 +121,23 @@ Content-length: 904
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
   "useOAuth": true
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1082
+Content-Length: 1365
 
 {
   "@odata.type": "#microsoft.graph.iosEasEmailProfileConfiguration",
@@ -151,11 +165,16 @@ Content-Length: 1082
   "hostName": "Host Name value",
   "requireSmime": true,
   "smimeEnablePerMessageSwitch": true,
+  "smimeEncryptByDefaultEnabled": true,
+  "smimeSigningEnabled": true,
+  "smimeSigningUserOverrideEnabled": true,
+  "smimeEncryptByDefaultUserOverrideEnabled": true,
+  "smimeSigningCertificateUserOverrideEnabled": true,
+  "smimeEncryptionCertificateUserOverrideEnabled": true,
   "requireSsl": true,
   "useOAuth": true
 }
 ```
-
 
 
 

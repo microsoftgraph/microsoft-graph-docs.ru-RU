@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса vppToken
 description: Вы приобрели несколько лицензий для приложений для iOS по программе корпоративных покупок Apple Volume Purchase Program для бизнеса или образовательных учреждений. Это включает настройку учетной записи Apple VPP с веб-сайта Apple и передачу токена Apple VPP для бизнеса или образовательных учреждений в Intune. Затем вы можете синхронизировать данные корпоративных покупок с помощью Intune и отслеживать использование приложения, приобретенного по программе корпоративных покупок. Вы можете передать несколько токенов Apple VPP для бизнеса или образовательных учреждений.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c69329cefc99d2a57907c8bc0fe34beb8371f1d9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a21ac5a85094692fe52c7817ee31636c872e131e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912360"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419879"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Вы приобрели несколько лицензий для приложений для iOS по программе корпоративных покупок Apple Volume Purchase Program для бизнеса или образовательных учреждений. Это включает настройку учетной записи Apple VPP с веб-сайта Apple и передачу токена Apple VPP для бизнеса или образовательных учреждений в Intune. Затем вы можете синхронизировать данные корпоративных покупок с помощью Intune и отслеживать использование приложения, приобретенного по программе корпоративных покупок. Вы можете передать несколько токенов Apple VPP для бизнеса или образовательных учреждений.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -47,12 +48,14 @@ ms.locfileid: "27912360"
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
 |dataSharingConsentGranted|Логический|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
-|displayName|Строка|Администратор указанного маркера понятное имя.|
-|locationName|Строка|Маркер расположение, возвращенные Apple VPP.|
+|displayName|String|Администратор указанного маркера понятное имя.|
+|locationName|String|Маркер расположение, возвращенные Apple VPP.|
 |claimTokenManagementFromExternalMdm|Логический|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
+|roleScopeTagIds|Коллекция String|Роль область теги идентификаторов для этой сущности.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -88,10 +91,12 @@ ms.locfileid: "27912360"
   "dataSharingConsentGranted": true,
   "displayName": "String",
   "locationName": "String",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "String"
+  ]
 }
 ```
-
 
 
 

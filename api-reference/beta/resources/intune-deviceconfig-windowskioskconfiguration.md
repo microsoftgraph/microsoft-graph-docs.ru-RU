@@ -3,21 +3,22 @@ title: Тип ресурса windowsKioskConfiguration
 description: Этот объект содержит описания объявленные методы, свойства и связи, предоставляемые элементом киоска ресурсов.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 2eecf86346af0d0f029b800347eb7a3ba08f4e19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f091d9700721a1be1baf5982b0fb8ce0fe3b00ec
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937938"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403961"
 ---
 # <a name="windowskioskconfiguration-resource-type"></a>Тип ресурса windowsKioskConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Этот объект содержит описания объявленные методы, свойства и связи, предоставляемые элементом киоска ресурсов.
+
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
@@ -33,24 +34,26 @@ ms.locfileid: "27937938"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) коллекции|Этот параметр политики позволяет определить список профилей киоска для базовой конфигурации. Эта коллекция может содержать не более 500 элементов.|
-|kioskBrowserDefaultUrl|Строка|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
+|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) коллекции|Этот параметр политики позволяет определить список профилей киоска для базовой конфигурации. В этом семействе может содержать не более 3 элементы.|
+|kioskBrowserDefaultUrl|String|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
 |kioskBrowserEnableHomeButton|Логический|Кнопка браузера киоска Домашняя страница. По умолчанию домашняя страница кнопка отключена.|
 |kioskBrowserEnableNavigationButtons|Логический|Включите buttons(forward/back) навигации киоска браузера. По умолчанию отключены кнопки перехода.|
 |kioskBrowserEnableEndSessionButton|Логический|Кнопка браузера киоска окончания сеанса. По умолчанию отключена кнопка окончания сеанса.|
 |kioskBrowserRestartOnIdleTimeInMinutes|Int32|Укажите время в минутах, сеанс находится в состоянии простоя до перезапуска браузера киоска новым состояние.  Допустимые значения: 1-1440. Допустимые значения 1 до 1440|
 |kioskBrowserBlockedURLs|Коллекция String|Укажите URL-адреса, не должен перейти киоска браузеры|
 |kioskBrowserBlockedUrlExceptions|Коллекция String|Укажите URL-адресов, которые может киоска браузера перейдите на|
+|edgeKioskEnablePublicBrowsing|Логический|Включение общей обзора полноэкранном режиме для браузера Microsoft пограничного сервера. Значение по умолчанию — false.|
+|edgeKioskResetAfterIdleTimeInMinutes|Int32|Задает время в минутах из последнего действия пользователя перед базовая Подписка пограничного сервера Microsoft восстанавливаются значения по умолчанию.  Допустимые значения: 0-1440. Значение по умолчанию равно 5. 0 указывает не reset. Допустимые значения 0 до 1440|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -94,6 +97,7 @@ ms.locfileid: "27937938"
             "@odata.type": "microsoft.graph.windowsKioskUWPApp",
             "startLayoutTileSize": "String",
             "name": "String",
+            "appType": "String",
             "appUserModelId": "String",
             "appId": "String",
             "containedAppId": "String"
@@ -120,10 +124,11 @@ ms.locfileid: "27937938"
   ],
   "kioskBrowserBlockedUrlExceptions": [
     "String"
-  ]
+  ],
+  "edgeKioskEnablePublicBrowsing": true,
+  "edgeKioskResetAfterIdleTimeInMinutes": 1024
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления eapType
 description: Расширяемые типы конфигурации протокола проверки подлинности (EAP).
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1e894e10356711fd4522ff816750e986d8b8e57d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 268a3190b06834d24c63d7ca5117a00fe7dc70d8
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957811"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405830"
 ---
 # <a name="eaptype-enum-type"></a>Тип перечисления eapType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Расширяемые типы конфигурации протокола проверки подлинности (EAP).
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -27,7 +28,6 @@ ms.locfileid: "27957811"
 |eapTtls|21|Туннелирование EAP Transport Layer Security (EAP-TTLS).|
 |PEAP|25|Протокол расширенной проверки подлинности (PEAP).|
 |eapFast|43|Гибкие EAP проверки подлинности с помощью Secure туннелирование (EAP-FAST).|
-
 
 
 

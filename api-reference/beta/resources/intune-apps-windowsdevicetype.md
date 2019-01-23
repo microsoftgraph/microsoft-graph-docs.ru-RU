@@ -1,32 +1,32 @@
 ---
 title: Тип перечисления windowsDeviceType
 description: Содержит свойства для типа устройства Windows.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 90dc42f3747a3f5b6da036ed418561105ce4bd57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 64bd296224c747e3042e6077bfc54aa5732fef02
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946527"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406327"
 ---
 # <a name="windowsdevicetype-enum-type"></a>Тип перечисления windowsDeviceType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства для типа устройства Windows.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Нет установленных флагов.|
+|none|0|Нет установленных флагов.|
 |рабочий стол|1|Поддерживается ли тип устройства рабочий стол Windows.|
-|мобильных устройств|2|Поддерживается ли тип устройства Mobile Windows.|
+|mobile|2|Поддерживается ли тип устройства Mobile Windows.|
 |Голографическая|4|Поддерживается ли тип устройства голографическая Windows.|
 |Группа|8|Поддерживается ли тип устройства группы Windows.|
-
 
 
 

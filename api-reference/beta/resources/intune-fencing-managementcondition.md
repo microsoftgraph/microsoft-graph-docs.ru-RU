@@ -3,21 +3,22 @@ title: Тип ресурса managementCondition
 description: События, например географически границы, может быть запущено динамически выполняются условия управления временные границы и границы сети.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: e0aeb73a93cd4c61b6d4680f73c2a9b8cee830c6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c41b4cb3143349ba0fdd97633a70ec7b38e266ec
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986744"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29405858"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса managementCondition
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 События, например географически границы, может быть запущено динамически выполняются условия управления временные границы и границы сети.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -28,16 +29,16 @@ ms.locfileid: "27986744"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для управления условия. Значение, назначенное при создании создаваемый системой.|
-|уникального имени|Строка|Уникальное имя для управления условия. Используется в выражениях условие управления.|
-|displayName|Строка|Имя условия управления определенные администратором.|
-|описание|Строка|Описание управления условия, определенные администратором.|
+|id|String|Уникальный идентификатор для управления условия. Значение, назначенное при создании создаваемый системой.|
+|уникального имени|String|Уникальное имя для управления условия. Используется в выражениях условие управления.|
+|displayName|String|Имя условия управления определенные администратором.|
+|description|String|Описание управления условия, определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания условие управления. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условие управления. Обновление со стороны службы.|
 |eTag|String|ETag условие управления. Обновление со стороны службы.|
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) коллекции|Применимые платформ для этого условия управления.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managementConditionStatements|[managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) коллекции|Операторы условие управления, связанные с условием управления.|
@@ -65,7 +66,6 @@ ms.locfileid: "27986744"
   ]
 }
 ```
-
 
 
 
