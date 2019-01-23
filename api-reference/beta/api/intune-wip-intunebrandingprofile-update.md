@@ -1,25 +1,26 @@
 ---
 title: Обновление intuneBrandingProfile
 description: Обновление свойства объекта intuneBrandingProfile.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0840852d0668cc6e2b4d18b4345792166a2d5193
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: fa1382101012bb202286f75489532a80a87bb381
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964468"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403093"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление intuneBrandingProfile
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,7 +44,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).
@@ -53,7 +54,7 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |id|String|Клавиша профилей|
 |Имя_профиля|String|Имя профиля|
 |profileDescription|String|Описание профиля|
-|isDefaultProfile|Boolean|Представляет при использовании профиля по умолчанию.|
+|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
@@ -77,18 +78,19 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 Content-type: application/json
-Content-length: 1209
+Content-length: 1205
 
 {
+  "@odata.type": "#microsoft.graph.intuneBrandingProfile",
   "profileName": "Profile Name value",
   "profileDescription": "Profile Description value",
   "isDefaultProfile": true,
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "displayName": "Display Name value",
   "contactITName": "Contact ITName value",
   "contactITPhoneNumber": "Contact ITPhone Number value",
@@ -171,7 +173,6 @@ Content-Length: 1377
   }
 }
 ```
-
 
 
 
