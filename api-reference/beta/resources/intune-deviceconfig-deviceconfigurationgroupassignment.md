@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса deviceConfigurationGroupAssignment
 description: Назначение группы конфигурации устройства.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 53e998044760dba40f40f3658b141d8aa05d7082
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ed94f08fb33fe4a999e71b85808f58853d40cad4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943118"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406824"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Назначение группы конфигурации устройства.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -32,9 +33,9 @@ ms.locfileid: "27943118"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |targetGroupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
-|excludeGroup|Boolean|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
+|excludeGroup|Логический|Указывает, является ли эта группа следует исключить. Параметры по умолчанию, что группы должны быть включены|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md);|Навигационная ссылка для целевой настройки устройств.|
@@ -55,7 +56,6 @@ ms.locfileid: "27943118"
   "excludeGroup": true
 }
 ```
-
 
 
 

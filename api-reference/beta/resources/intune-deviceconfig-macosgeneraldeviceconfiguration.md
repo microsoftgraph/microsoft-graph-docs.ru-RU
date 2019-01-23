@@ -3,21 +3,22 @@ title: Тип ресурса macOSGeneralDeviceConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом macOSGeneralDeviceConfiguration.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 02bdcf72a9b01c9fd2ec0dcb45f7c743e51f941b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 38e99c1df2f570e06fec22e47e0286eeb4dc76ad
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404794"
 ---
 # <a name="macosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса macOSGeneralDeviceConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом macOSGeneralDeviceConfiguration.
+
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
@@ -36,9 +37,9 @@ ms.locfileid: "27983928"
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
@@ -53,30 +54,33 @@ ms.locfileid: "27983928"
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
 |passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
-|keychainBlockCloudSync|Boolean|Указывает, является ли iCloud ключей синхронизации заблокированных (macOS 10.12 и более поздних версий).|
-|airPrintBlocked|Boolean|Указывает, является ли AirPrint заблокированных (macOS 10.12 и более поздних версий).|
-|airPrintForceTrustedTLS|Boolean|Указывает, являются ли доверенные сертификаты для печати обмена данными TLS (macOS 10.13 и более поздних версий).|
-|airPrintBlockiBeaconDiscovery|Boolean|Указывает, заблокирован ли обнаружения iBeacon AirPrint принтеров. Это позволяет предотвратить ложных маяки AirPrint Bluetooth от фишинга для сетевого трафика (macOS 10.3 и более поздних версий).|
-|safariBlockAutofill|Boolean|Указывает, следует ли запретить использовать автозаполнение в Safari.|
-|cameraBlocked|Boolean|Указывает, следует ли запретить доступ к камере устройства.|
-|iTunesBlockMusicService|Boolean|Указывает, следует ли блокировать службы музыки и вернуться музыки приложения в классическом режиме.|
-|spotlightBlockInternetResults|Boolean|Указывает, следует ли запретить возвращение результатов из и поиск в Интернете в центре внимания.|
+|keychainBlockCloudSync|Логический|Указывает, является ли iCloud ключей синхронизации заблокированных (macOS 10.12 и более поздних версий).|
+|airPrintBlocked|Логический|Указывает, является ли AirPrint заблокированных (macOS 10.12 и более поздних версий).|
+|airPrintForceTrustedTLS|Логический|Указывает, являются ли доверенные сертификаты для печати обмена данными TLS (macOS 10.13 и более поздних версий).|
+|airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокирован ли обнаружения iBeacon AirPrint принтеров. Это позволяет предотвратить ложных маяки AirPrint Bluetooth от фишинга для сетевого трафика (macOS 10.3 и более поздних версий).|
+|safariBlockAutofill|Логический|Указывает, следует ли запретить использовать автозаполнение в Safari.|
+|cameraBlocked|Логический|Указывает, следует ли запретить доступ к камере устройства.|
+|iTunesBlockMusicService|Логический|Указывает, следует ли блокировать службы музыки и вернуться музыки приложения в классическом режиме.|
+|spotlightBlockInternetResults|Логический|Указывает, следует ли запретить возвращение результатов из и поиск в Интернете в центре внимания.|
 |keyboardBlockDictation|Логический|Указывает, следует ли пользователь с помощью диктовки входные данные.|
 |definitionLookupBlocked|Логический|Указывает, следует ли блокировать определение подстановки.|
-|appleWatchBlockAutoUnlock|Boolean|Указывает, является ли или чтобы запретить пользователям разблокирование их Mac с Apple Watch.|
-|iTunesBlockFileSharing|Boolean|Указывает ли для блокировки файлов, из которых передаются с помощью iTunes.|
-|iCloudBlockDocumentSync|Boolean|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|iCloudBlockMail|Boolean|Указывает, следует ли блокировать iCloud синхронизацию почты.|
-|iCloudBlockAddressBook|Boolean|Указывает, следует ли блокировать iCloud синхронизацию контактов.|
-|iCloudBlockCalendar|Boolean|Указывает, следует ли блокировать iCloud из списка синхронизации календарей.|
-|iCloudBlockReminders|Boolean|Указывает, следует ли блокировать iCloud синхронизацию напоминания.|
-|iCloudBlockBookmarks|Boolean|Указывает, следует ли блокировать iCloud синхронизацию закладки.|
-|iCloudBlockNotes|Boolean|Указывает, следует ли блокировать iCloud синхронизацию заметки.|
-|airDropBlocked|Boolean|Указывает, следует ли разрешить AirDrop.|
-|passwordBlockModification|Boolean|Указывает, следует ли разрешить изменения секретный код.|
+|appleWatchBlockAutoUnlock|Логический|Указывает, является ли или чтобы запретить пользователям разблокирование их Mac с Apple Watch.|
+|iTunesBlockFileSharing|Логический|Указывает ли для блокировки файлов, из которых передаются с помощью iTunes.|
+|iCloudBlockDocumentSync|Логический|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
+|iCloudBlockMail|Логический|Указывает, следует ли блокировать iCloud синхронизацию почты.|
+|iCloudBlockAddressBook|Логический|Указывает, следует ли блокировать iCloud синхронизацию контактов.|
+|iCloudBlockCalendar|Логический|Указывает, следует ли блокировать iCloud из списка синхронизации календарей.|
+|iCloudBlockReminders|Логический|Указывает, следует ли блокировать iCloud синхронизацию напоминания.|
+|iCloudBlockBookmarks|Логический|Указывает, следует ли блокировать iCloud синхронизацию закладки.|
+|iCloudBlockNotes|Логический|Указывает, следует ли блокировать iCloud синхронизацию заметки.|
+|airDropBlocked|Логический|Указывает, следует ли разрешить AirDrop.|
+|passwordBlockModification|Логический|Указывает, следует ли разрешить изменения секретный код.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
+|passwordBlockAutoFill|Логический|Указывает, следует ли блокировать функцию автозаполнения паролей.|
+|passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающая пароли с рядом устройств.|
+|passwordBlockAirDropSharing|Логический|Указывает, следует ли блокировать общего доступа паролей с помощью функции AirDrop паролей.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -151,10 +155,12 @@ ms.locfileid: "27983928"
   "iCloudBlockNotes": true,
   "airDropBlocked": true,
   "passwordBlockModification": true,
-  "passwordBlockFingerprintUnlock": true
+  "passwordBlockFingerprintUnlock": true,
+  "passwordBlockAutoFill": true,
+  "passwordBlockProximityRequests": true,
+  "passwordBlockAirDropSharing": true
 }
 ```
-
 
 
 

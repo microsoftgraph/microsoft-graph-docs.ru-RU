@@ -1,25 +1,26 @@
 ---
 title: Create windows10GeneralConfiguration
 description: Создание объекта windows10GeneralConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7cd5c8d2a12ba3407a2c4b2086b0debda5b891fc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ee8922e8704f1e28be4ca6441de67b3a852a3174
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919178"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411584"
 ---
 # <a name="create-windows10generalconfiguration"></a>Create windows10GeneralConfiguration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
+
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -51,35 +52,35 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|taskManagerBlockEndTask|Логический|Укажите, будет ли не администраторы могут использовать диспетчер задач для окончания задачи.|
 |windows10AppsForceUpdateSchedule|[windows10AppsForceUpdateSchedule](../resources/intune-deviceconfig-windows10appsforceupdateschedule.md)|Расписание обновления force Windows 10 для приложения.|
 |enableAutomaticRedeployment|Логический|Пользователи с правами администратора для удаления всех данных и параметров пользователя с помощью клавиши CTRL + Win + R на экран блокировки устройств, чтобы устройства можно автоматически повторно настройки и подать заявку в management.|
-|assignedAccessSingleModeUserName|Строка|Этот параметр политики позволяет определить учетную запись пользователя, будут блокироваться в полноэкранном режиме одного приложения.|
-|assignedAccessSingleModeAppUserModelId|Строка|Этот параметр политики позволяет определить приложения пользователя модели ID (AUMID), который будет заблокирован в полноэкранном режиме одного приложения.|
 |microsoftAccountSignInAssistantSettings|[signInAssistantOptions](../resources/intune-deviceconfig-signinassistantoptions.md)|Определяет, служба Microsoft учетная запись помощника по входу (wlidsvc) NT. Возможные значения: `notConfigured`, `disabled`.|
 |authenticationAllowSecondaryDevice|Логический|Позволяет устройствам дополнительного проверки подлинности для работы с Windows.|
-|authenticationAllowFIDODevice|Логический|Указывает ли разрешить проверку подлинности с помощью FIDO устройства)https://fidoalliance.org/)|
+|authenticationPreferredAzureADTenantDomainName|String|Указывает основной домен среди доступных доменов в Azure AD для клиентов.|
 |cryptographyAllowFipsAlgorithmPolicy|Логический|Укажите, нужно ли разрешить или запретить политики Федеральное обработки информации Standard (FIPS).|
 |displayAppListWithGdiDPIScalingTurnedOn|Коллекция String|Список прежних версий приложений, которые имеют масштабирование Разрешения GDI включен.|
 |displayAppListWithGdiDPIScalingTurnedOff|Коллекция String|Список прежних версий приложений, которые имеют масштабирование Разрешения GDI отключена.|
-|enterpriseCloudPrintDiscoveryEndPoint|Строка|Конечная точка для обнаружения облачных принтеров.|
-|enterpriseCloudPrintOAuthAuthority|Строка|Конечная точка аутентификации для получения токенов OAuth.|
-|enterpriseCloudPrintOAuthClientIdentifier|Строка|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
-|enterpriseCloudPrintResourceIdentifier|Строка|URI ресурса OAuth для службы печати, настроенный на портале Azure.|
+|enterpriseCloudPrintDiscoveryEndPoint|String|Конечная точка для обнаружения облачных принтеров.|
+|enterpriseCloudPrintOAuthAuthority|String|Конечная точка аутентификации для получения токенов OAuth.|
+|enterpriseCloudPrintOAuthClientIdentifier|String|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
+|enterpriseCloudPrintResourceIdentifier|String|URI ресурса OAuth для службы печати, настроенный на портале Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Максимальное количество принтеров, запрашиваемых с конечной точки обнаружения. Этот параметр применяется только к мобильным устройствам. Допустимые значения: от 1 до 65 535.|
-|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|Строка|URI ресурса OAuth для службы обнаружения принтеров, настроенный на портале Azure.|
+|enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI ресурса OAuth для службы обнаружения принтеров, настроенный на портале Azure.|
+|experienceDoNotSyncBrowserSettings|[browserSyncSetting](../resources/intune-deviceconfig-browsersyncsetting.md)|Разрешить или запретить синхронизацию параметров браузера Microsoft пограничного сервера. Параметр для ИТ-администраторам запретить синхронизацию между устройствами, но разрешить переопределение пользователя. Возможные значения: `notConfigured`, `blockedWithUserOverride`, `blocked`.|
 |messagingBlockSync|Логический|Указывает необходимость заблокировать текстовое сообщение резервного копирования и восстановления и системы обмена сообщениями везде.|
 |messagingBlockMMS|Логический|Указывает ли блокировать MMS отправки и получения функциональные возможности на устройстве.|
 |messagingBlockRichCommunicationServices|Логический|Указывает ли блокировать Консольные отправки и получения функциональные возможности на устройстве.|
 |printerNames|Коллекция String|Автоматическое развертывание принтеров на основании их имена (имена узлов сети).|
-|printerDefaultName|Строка|Имя (имя узла сети) установленного принтера.|
+|printerDefaultName|String|Имя (имя узла сети) установленного принтера.|
 |printerBlockAddition|Логический|Запретить установку пользователя дополнительные принтеры из параметров принтеров.|
 |searchBlockDiacritics|Логический|Указывает, можно ли использовать диакритические знаки в поиске.|
 |searchDisableAutoLanguageDetection|Логический|Указывает, следует ли использовать автоматическое определение языка при индексировании контента и свойств.|
@@ -94,15 +95,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |securityBlockAzureADJoinedDevicesAutoEncryption|Логический|Укажите, нужно ли разрешить шифрование автоматического устройства во время OOBE, когда устройство Azure AD в состав (только на рабочий стол).|
 |diagnosticsDataSubmissionMode|[diagnosticDataSubmissionMode](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Логический|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|systemTelemetryProxyServer|Строка|Получает или задает полное доменное имя (FQDN) или IP-адрес прокси-сервера для переадресации запросов телеметрии и подключение взаимодействия с пользователем.|
+|systemTelemetryProxyServer|String|Получает или задает полное доменное имя (FQDN) или IP-адрес прокси-сервера для переадресации запросов телеметрии и подключение взаимодействия с пользователем.|
+|edgeTelemetryForMicrosoft365Analytics|[edgeTelemetryMode](../resources/intune-deviceconfig-edgetelemetrymode.md)|Указывает, какой тип данных телеметрии (нет, интрасеть, Интернет, оба) отправляется 365 аналитики Microsoft. Возможные значения: `notConfigured`, `intranet`, `internet`, `intranetAndInternet`.|
 |inkWorkspaceAccess|[inkAccessSetting](../resources/intune-deviceconfig-inkaccesssetting.md)|Управление доступом пользователей в рабочую область рукописного ввода, с рабочего стола и выше экран блокировки. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |inkWorkspaceAccessState|[stateManagementSetting](../resources/intune-deviceconfig-statemanagementsetting.md)|Управление доступом пользователей в рабочую область рукописного ввода, с рабочего стола и выше экран блокировки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
 |inkWorkspaceBlockSuggestedApps|Логический|Укажите, нужно ли отображать варианты Рекомендуемые приложения в рабочей области рукописного ввода.|
 |smartScreenEnableAppInstallControl|Логический|Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
-|personalizationDesktopImageUrl|Строка|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
-|personalizationLockScreenImageUrl|Строка|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
+|personalizationDesktopImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
+|personalizationLockScreenImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
 |bluetoothAllowedServices|Коллекция String|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
 |bluetoothBlockAdvertising|Логический|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
+|bluetoothBlockPromptedProximalConnections|Логический|Заблокировать для пользователей с помощью пары Swift и других близости или не на основе сценариев.|
 |bluetoothBlockDiscoverableMode|Логический|Указывает, следует ли запретить использовать режим обнаружения по Bluetooth.|
 |bluetoothBlockPrePairing|Логический|Указывает, следует ли заблокировать автоматическое связывание отдельных пакетных периферийных устройств Bluetooth с главным устройством.|
 |edgeBlockAutofill|Логический|Указывает, следует ли заблокировать автозаполнение.|
@@ -121,8 +124,23 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |edgeDisableFirstRunPage|Логический|Позволяет заблокировать веб-страницу Майкрософт, которая открывается при первом запуске Microsoft Edge. Эта политика позволяет предприятиям, зарегистрированным в конфигурациях с нулевым выбросом, блокировать эту страницу.|
 |edgeBlockLiveTileDataCollection|Логический|Позволяет запретить Майкрософт собирать информацию о создании живых плиток, когда пользователи закрепляют сайты из Microsoft Edge на начальном экране.|
 |edgeSyncFavoritesWithInternetExplorer|Логический|Указывает, следует ли включить синхронизацию избранного между Internet Explorer и Microsoft Edge. Браузеры обмениваются данными о добавлении, удалении и изменении избранных элементов, а также их порядка.|
-|edgeFavoritesListLocation|Строка|Расположение списка "Избранное" для подготовки. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
+|edgeFavoritesListLocation|String|Расположение списка "Избранное" для подготовки. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
 |edgeBlockEditFavorites|Логический|Указывает, следует ли пользователь не может вносить изменения в "Избранное".|
+|edgeNewTabPageURL|String|Укажите страницы открывается при создании новой вкладки.|
+|edgeHomeButtonConfiguration|[edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)|Вызывает кнопку Home, чтобы скрыть, загрузить начальная страница по умолчанию, для загрузки новой страницы вкладки или настраиваемый URL-адрес|
+|edgeHomeButtonConfigurationEnabled|Логический|Включение конфигурации кнопка дома.|
+|edgeOpensWith|[edgeOpenOptions](../resources/intune-deviceconfig-edgeopenoptions.md)|Укажите, какой тип страницы открыты во время запуска. Возможные значения: `notConfigured`, `startPage`, `newTabPage`, `previousPages`, `specificPages`.|
+|edgeBlockSideloadingExtensions|Логический|Указывает, может ли пользователь sideload расширений.|
+|edgeRequiredExtensionPackageFamilyNames|Коллекция String|Укажите список имен семья пакета расширения обозревателя, которые являются обязательными и не может быть отключена пользователем.|
+|edgeBlockPrinting|Логический|Настройка пограничного сервера, чтобы разрешить или заблокировать печати.|
+|edgeFavoritesBarVisibility|[visibilitySetting](../resources/intune-deviceconfig-visibilitysetting.md)|Получить или задать значение, указывающее, требуется ли задавать на панели "Избранное", чтобы всегда иметь видимым или скрытым на любой странице. Возможные значения: `notConfigured`, `hide`, `show`.|
+|edgeBlockSavingHistory|Логический|Настройка пограничного сервера, чтобы разрешить просмотр журнала будет сохранен или никогда не сохранить историю обзора.|
+|edgeBlockFullScreenMode|Логический|Разрешить или запретить переход в режим полноэкранного пограничного сервера.|
+|edgeBlockWebContentOnNewTabPage|Логический|Настройка, отображаемых при открытии пограничного сервера Microsoft новую вкладку.|
+|edgeBlockTabPreloading|Логический|Настройте пограничный предварительно загружает страницу новой вкладки при запуске системы Windows.|
+|edgeBlockPrelaunch|Логический|Решите, является ли пограничного сервера Microsoft prelaunched при запуске системы Windows.|
+|edgeShowMessageWhenOpeningInternetExplorerSites|[internetExplorerMessageSetting](../resources/intune-deviceconfig-internetexplorermessagesetting.md)|Управляет сообщения, отображаемого пограничного сервера перед переключением в Internet Explorer. Возможные значения: `notConfigured`, `disabled`, `enabled`, `keepGoing`.|
+|edgePreventCertificateErrorOverride|Логический|Разрешение или запрет на переопределение ошибки сертификата.|
 |cellularBlockDataWhenRoaming|Логический|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
 |cellularBlockVpn|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети.|
 |cellularBlockVpnWhenRoaming|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
@@ -231,7 +249,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |windowsSpotlightConfigureOnLockScreen|[windowsSpotlightEnablementSettings](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|Указывает тип в центре внимания. Возможные значения: `notConfigured`, `disabled`, `enabled`.|
 |networkProxyApplySettingsDeviceWide|Логический|Если этот параметр включен, настройки прокси-сервера применяются ко всем процессам и учетным записям на устройстве. В противном случае они применяются к учетной записи пользователя, зарегистрированной в системе MDM.|
 |networkProxyDisableAutoDetect|Логический|Позволяет отключить автоматическое обнаружение настроек. Если этот параметр включен, система попытается найти путь к сценарию автонастройки прокси-сервера (PAC).|
-|networkProxyAutomaticConfigurationUrl|Строка|Адрес сценария автонастройки прокси-сервера (PAC).|
+|networkProxyAutomaticConfigurationUrl|String|Адрес сценария автонастройки прокси-сервера (PAC).|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Определяет ручные настройки прокси-сервера.|
 |accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
 |antiTheftModeBlocked|Логический|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
@@ -246,10 +264,11 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |safeSearchFilter|[safeSearchFilterType](../resources/intune-deviceconfig-safesearchfiltertype.md)|Определяет необходимый уровень фильтрации для безопасного поиска. Возможные значения: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Логический|Указывает, следует ли блокировать всплывающие окна.|
 |edgeBlockSearchSuggestions|Логический|Указывает, следует ли запретить использовать варианты поиска в адресной строке.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли запретить пользователю отправлять трафик интрасети в Internet Explorer из Edge.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли переключение интрасети трафика из пограничного сервера для Internet Explorer. Примечание: имя это свойство является неправильным; свойство является устаревшим, вместо этого использовать EdgeSendIntranetTrafficToInternetExplorer.|
+|edgeSendIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли переключение интрасети трафика из пограничного сервера для Internet Explorer.|
 |edgeRequireSmartScreen|Логический|Указывает, обязательно ли использовать фильтр Smart Screen.|
-|edgeEnterpriseModeSiteListLocation|Строка|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
-|edgeFirstRunUrl|Строка|URL-адрес, открываемый в браузере Edge при первом запуске.|
+|edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
+|edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для управляемых с помощью системы MDM устройств. Пользователи могут переопределять эту настройку и изменять поисковую систему по умолчанию, если не установлена политика AllowSearchEngineCustomization.|
 |edgeHomepageUrls|Коллекция String|Список URL-адресов домашних страниц, показываемых на зарегистрированных в системе MDM устройствах в браузере Edge.|
 |edgeBlockAccessToAboutFlags|Логический|Указывает, следует ли запретить доступ к странице about flags в браузере Edge.|
@@ -306,16 +325,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 12202
+Content-length: 13056
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -323,6 +342,7 @@ Content-length: 12202
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -330,11 +350,9 @@ Content-length: 12202
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -348,6 +366,7 @@ Content-length: 12202
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -370,6 +389,7 @@ Content-length: 12202
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -380,6 +400,7 @@ Content-length: 12202
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -400,6 +421,25 @@ Content-length: 12202
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -543,6 +583,7 @@ Content-length: 12202
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -602,12 +643,12 @@ Content-length: 12202
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 12310
+Content-Length: 13228
 
 {
   "@odata.type": "#microsoft.graph.windows10GeneralConfiguration",
@@ -621,6 +662,7 @@ Content-Length: 12310
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "taskManagerBlockEndTask": true,
   "windows10AppsForceUpdateSchedule": {
     "@odata.type": "microsoft.graph.windows10AppsForceUpdateSchedule",
     "startDateTime": "2016-12-31T23:58:46.7156189-08:00",
@@ -628,11 +670,9 @@ Content-Length: 12310
     "runImmediatelyIfAfterStartDateTime": true
   },
   "enableAutomaticRedeployment": true,
-  "assignedAccessSingleModeUserName": "Assigned Access Single Mode User Name value",
-  "assignedAccessSingleModeAppUserModelId": "Assigned Access Single Mode App User Model Id value",
   "microsoftAccountSignInAssistantSettings": "disabled",
   "authenticationAllowSecondaryDevice": true,
-  "authenticationAllowFIDODevice": true,
+  "authenticationPreferredAzureADTenantDomainName": "Authentication Preferred Azure ADTenant Domain Name value",
   "cryptographyAllowFipsAlgorithmPolicy": true,
   "displayAppListWithGdiDPIScalingTurnedOn": [
     "Display App List With Gdi DPIScaling Turned On value"
@@ -646,6 +686,7 @@ Content-Length: 12310
   "enterpriseCloudPrintResourceIdentifier": "Enterprise Cloud Print Resource Identifier value",
   "enterpriseCloudPrintDiscoveryMaxLimit": 5,
   "enterpriseCloudPrintMopriaDiscoveryResourceIdentifier": "Enterprise Cloud Print Mopria Discovery Resource Identifier value",
+  "experienceDoNotSyncBrowserSettings": "blockedWithUserOverride",
   "messagingBlockSync": true,
   "messagingBlockMMS": true,
   "messagingBlockRichCommunicationServices": true,
@@ -668,6 +709,7 @@ Content-Length: 12310
   "diagnosticsDataSubmissionMode": "none",
   "oneDriveDisableFileSync": true,
   "systemTelemetryProxyServer": "System Telemetry Proxy Server value",
+  "edgeTelemetryForMicrosoft365Analytics": "intranet",
   "inkWorkspaceAccess": "enabled",
   "inkWorkspaceAccessState": "blocked",
   "inkWorkspaceBlockSuggestedApps": true,
@@ -678,6 +720,7 @@ Content-Length: 12310
     "Bluetooth Allowed Services value"
   ],
   "bluetoothBlockAdvertising": true,
+  "bluetoothBlockPromptedProximalConnections": true,
   "bluetoothBlockDiscoverableMode": true,
   "bluetoothBlockPrePairing": true,
   "edgeBlockAutofill": true,
@@ -698,6 +741,25 @@ Content-Length: 12310
   "edgeSyncFavoritesWithInternetExplorer": true,
   "edgeFavoritesListLocation": "Edge Favorites List Location value",
   "edgeBlockEditFavorites": true,
+  "edgeNewTabPageURL": "Edge New Tab Page URL value",
+  "edgeHomeButtonConfiguration": {
+    "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"
+  },
+  "edgeHomeButtonConfigurationEnabled": true,
+  "edgeOpensWith": "startPage",
+  "edgeBlockSideloadingExtensions": true,
+  "edgeRequiredExtensionPackageFamilyNames": [
+    "Edge Required Extension Package Family Names value"
+  ],
+  "edgeBlockPrinting": true,
+  "edgeFavoritesBarVisibility": "hide",
+  "edgeBlockSavingHistory": true,
+  "edgeBlockFullScreenMode": true,
+  "edgeBlockWebContentOnNewTabPage": true,
+  "edgeBlockTabPreloading": true,
+  "edgeBlockPrelaunch": true,
+  "edgeShowMessageWhenOpeningInternetExplorerSites": "disabled",
+  "edgePreventCertificateErrorOverride": true,
   "cellularBlockDataWhenRoaming": true,
   "cellularBlockVpn": true,
   "cellularBlockVpnWhenRoaming": true,
@@ -841,6 +903,7 @@ Content-Length: 12310
   "edgeBlockPopups": true,
   "edgeBlockSearchSuggestions": true,
   "edgeBlockSendingIntranetTrafficToInternetExplorer": true,
+  "edgeSendIntranetTrafficToInternetExplorer": true,
   "edgeRequireSmartScreen": true,
   "edgeEnterpriseModeSiteListLocation": "Edge Enterprise Mode Site List Location value",
   "edgeFirstRunUrl": "https://example.com/edgeFirstRunUrl/",
@@ -899,7 +962,6 @@ Content-Length: 12310
   "dataProtectionBlockDirectMemoryAccess": true
 }
 ```
-
 
 
 

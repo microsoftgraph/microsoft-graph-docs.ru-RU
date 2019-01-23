@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса intuneBrandingProfile
 description: Этот объект содержит данные, используемые в настройке уровня внешнего клиента приложения портала компании, а также веб-портала конечного пользователя.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: eb52fd3eabda300dff92bac35a0e6aae50974d15
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411101"
 ---
 # <a name="intunebrandingprofile-resource-type"></a>Тип ресурса intuneBrandingProfile
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Этот объект содержит данные, используемые в настройке уровня внешнего клиента приложения портала компании, а также веб-портала конечного пользователя.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ ms.locfileid: "27930266"
 |[Создание intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Создание нового объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
 |[Удаление intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|Нет|Удаляет [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
 |[Обновление intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Обновление свойства объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Действие assign](../api/intune-wip-intunebrandingprofile-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -33,7 +35,7 @@ ms.locfileid: "27930266"
 |id|String|Клавиша профилей|
 |Имя_профиля|String|Имя профиля|
 |profileDescription|String|Описание профиля|
-|isDefaultProfile|Boolean|Представляет при использовании профиля по умолчанию.|
+|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании BrandingProfile.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
@@ -51,8 +53,11 @@ ms.locfileid: "27930266"
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображения эмблемы, отображаемые в приложениях портала компании на светлый фон.|
 |landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемая изображение, отображаемое в приложениях портал "Компания" Главная страница|
 
-## <a name="relationships"></a>Связи
-Нет
+## <a name="relationships"></a>Отношения
+|Связь|Тип|Описание|
+|:---|:---|:---|
+|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) коллекции|Список назначений группы для фирменной настройки профиля.|
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -103,7 +108,6 @@ ms.locfileid: "27930266"
   }
 }
 ```
-
 
 
 

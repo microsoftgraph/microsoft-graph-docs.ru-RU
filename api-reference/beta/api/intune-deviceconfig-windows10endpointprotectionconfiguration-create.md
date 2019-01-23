@@ -1,25 +1,26 @@
 ---
 title: Создание windows10EndpointProtectionConfiguration
 description: Создание объекта windows10EndpointProtectionConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e0a9ccd6e6e675614e21ddcca947db87cf76b52b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9bdc31fed7797a448239bc7ed19ac57750692646
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940780"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402589"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Создание windows10EndpointProtectionConfiguration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,7 +41,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -51,14 +52,15 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|dmaGuardDeviceEnumerationPolicy|[dmaGuardDeviceEnumerationPolicyType](../resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md)|Эта политика предназначена для обеспечения повышенной безопасности для внешних устройств с поддержкой DMA. Она позволяет лучше контролировать перечисление внешних устройств с поддержкой DMA несовместимым с DMA Remapping и устройства памяти изоляции и "песочницы". Эта политика только вступает в силу при включены встроенного по и поддерживаются защиты DMA ядра. Защита от DMA ядра — это платформа функциональная возможность, которая не может управляться с помощью политики или конечный пользователь. Он должен поддерживаться системой во время производства. Чтобы проверить, поддерживает ли система защиты DMA ядра, проверьте защиты DMA ядра поля на странице сводки MSINFO32.exe. Возможные значения: `deviceDefault`, `blockAll`, `allowAll`.|
 |userRightsAccessCredentialManagerAsTrustedCaller|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право используется диспетчером учетных данных во время резервного копирования и восстановления. Сохраненные учетные данные пользователей могут быть раскрыты, если эта привилегия предоставляется другим лицам. Поддерживаются только состояния NotConfigured и разрешено|
 |userRightsAllowAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы могут подключаться к компьютеру по сети. Поддерживается состояний разрешено.|
 |userRightsBlockAccessFromNetwork|[deviceManagementUserRightsSetting](../resources/intune-deviceconfig-devicemanagementuserrightssetting.md)|Это право пользователя определяет, какие пользователи и группы, блока из подключение к компьютеру по сети. Поддерживаемые состояния блокировки.|
@@ -95,10 +97,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |xboxServicesLiveNetworkingServiceStartupMode|[serviceStartType](../resources/intune-deviceconfig-servicestarttype.md)|Этот параметр определяет, является ли тип запуска службы сети Automatic(2), Manual(3), Disabled(4). Значение по умолчанию: вручную. Возможные значения: `manual`, `automatic`, `disabled`.|
 |localSecurityOptionsBlockMicrosoftAccounts|Логический|Запретить пользователям добавление новых учетных записей Майкрософт для этого компьютера.|
 |localSecurityOptionsBlockRemoteLogonWithBlankPassword|Логический|Включение локальных учетных записей, которые не являются войти в систему из мест, отличных от физическое устройство защищены паролем. По умолчанию — включена|
-|localSecurityOptionsEnableAdministratorAccount|Логический|Определяет, включена ли учетная запись локального администратора.|
-|localSecurityOptionsAdministratorAccountName|Строка|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Администратор».|
-|localSecurityOptionsEnableGuestAccount|Логический|Определяет, включен ли гостевая учетная запись.|
-|localSecurityOptionsGuestAccountName|Строка|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Гость».|
+|localSecurityOptionsDisableAdministratorAccount|Логический|Определяет, включена ли учетная запись локального администратора.|
+|localSecurityOptionsAdministratorAccountName|String|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Администратор».|
+|localSecurityOptionsDisableGuestAccount|Логический|Определяет, включен ли гостевая учетная запись.|
+|localSecurityOptionsGuestAccountName|String|Определите имя другой учетной записи необходимо сопоставить с идентификатором безопасности (SID) для учетной записи «Гость».|
 |localSecurityOptionsAllowUndockWithoutHavingToLogon|Логический|Запретить портативных компьютеров извлечения без необходимости входа.|
 |localSecurityOptionsBlockUsersInstallingPrinterDrivers|Логический|Следует ограничьте Установка драйверов принтера как часть подключение к принтеру только администраторам.|
 |localSecurityOptionsBlockRemoteOpticalDriveAccess|Логический|Включение этот параметр позволяет только интерактивно пользователя для доступа к компакт-диска носителя.|
@@ -108,15 +110,15 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |localSecurityOptionsDoNotRequireCtrlAltDel|Логический|Требуется сочетание клавиш CTRL + ALT + DEL нажатие, прежде чем пользователь сможет войти.|
 |localSecurityOptionsHideLastSignedInUser|Логический|Не отображать username последнего человека, который в системе на это устройство.|
 |localSecurityOptionsHideUsernameAtSignIn|Логический|Не отображать имя пользователя человека, вход в это устройство после ввода учетных данных и перед отображением рабочий стол устройства.|
-|localSecurityOptionsLogOnMessageTitle|Строка|Задайте заголовок сообщения для пользователей при входе в.|
-|localSecurityOptionsLogOnMessageText|Строка|Задайте текст сообщения для пользователей при входе в.|
+|localSecurityOptionsLogOnMessageTitle|String|Задайте заголовок сообщения для пользователей при входе в.|
+|localSecurityOptionsLogOnMessageText|String|Задайте текст сообщения для пользователей при входе в.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Логический|Блок PKU2U запросы проверки подлинности для этого устройства для использования online удостоверения.|
 |localSecurityOptionsAllowRemoteCallsToSecurityAccountsManagerHelperBool|Логический|Пользовательский Интерфейс вспомогательных логическое для сущности LocalSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|
-|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|Строка|Измените строку языке по умолчанию, которую нужно разрешить или запретить пользователей и групп для удаленных вызовов для SAM.|
+|localSecurityOptionsAllowRemoteCallsToSecurityAccountsManager|String|Измените строку языке по умолчанию, которую нужно разрешить или запретить пользователей и групп для удаленных вызовов для SAM.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет клиенту требовать согласования 128-битового шифрования и/или безопасность сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет серверу требовать согласования 128-битового шифрования и/или безопасность сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Этот параметр безопасности определяет, какой протокол проверки подлинности на запрос и ответ используется для регистрации в сети. Возможные значения: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
-|lanManagerWorkstationEnableInsecureGuestLogons|Логический|Если этот параметр включен, клиент SMB позволяет уязвимость гостевые входы в систему. Если не настроена, клиент SMB будет отклонить уязвимость гостевые входы в систему.|
+|lanManagerWorkstationDisableInsecureGuestLogons|Логический|Если этот параметр включен, клиент SMB позволяет уязвимость гостевые входы в систему. Если не настроена, клиент SMB будет отклонить уязвимость гостевые входы в систему.|
 |localSecurityOptionsClearVirtualMemoryPageFile|Логический|Этот параметр безопасности определяет снят ли файл подкачки виртуальной памяти при завершении работы системы.|
 |localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn|Логический|Этот параметр безопасности определяет, можно ли завершать работу компьютера, без необходимости входа в Windows.|
 |localSecurityOptionsAllowUIAccessApplicationElevation|Логический|Разрешить UIAccess приложения запрашивать повышение прав без использования безопасного рабочего стола.|
@@ -151,10 +153,10 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |defenderSecurityCenterDisableRansomwareUI|Логический|Используется для отключения отображения области ransomware защиты. |
 |defenderSecurityCenterDisableSecureBootUI|Логический|Используется для отключения отображения области безопасной загрузки в разделе Безопасность устройств.|
 |defenderSecurityCenterDisableTroubleshootingUI|Логический|Используется для отключения отображения процесса обеспечения безопасности, устранение неполадок в разделе Безопасность устройств.|
-|defenderSecurityCenterOrganizationDisplayName|Строка|Имя компании, которая отображается для пользователей.|
-|defenderSecurityCenterHelpEmail|Строка|Адрес электронной почты, который отображается для пользователей.|
-|defenderSecurityCenterHelpPhone|Строка|Номер телефона или Скайп код, который отображается для пользователей.|
-|defenderSecurityCenterHelpURL|Строка|Портал справки URL-адрес, оно отображается для пользователей.|
+|defenderSecurityCenterOrganizationDisplayName|String|Имя компании, которая отображается для пользователей.|
+|defenderSecurityCenterHelpEmail|String|Адрес электронной почты, который отображается для пользователей.|
+|defenderSecurityCenterHelpPhone|String|Номер телефона или Скайп код, который отображается для пользователей.|
+|defenderSecurityCenterHelpURL|String|Портал справки URL-адрес, оно отображается для пользователей.|
 |defenderSecurityCenterNotificationsFromApp|[defenderSecurityCenterNotificationsFromAppType](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления для отображения из отображаемой области приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |defenderSecurityCenterITContactDisplay|[defenderSecurityCenterITContactDisplayType](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактов ИТ сведения для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Boolean|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
@@ -204,6 +206,8 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Включение защиты учетных данных, если платформа уровень безопасности с помощью Secure загрузки и виртуализации на основе безопасности включены. Возможные значения: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Логический|Включение виртуализации на основе Security(VBS).|
 |deviceGuardEnableSecureBootWithDMA|Логический|Указывает, включена ли уровень безопасности платформы при следующей перезагрузке.|
+|deviceGuardLaunchSystemGuard|[Включение] (.. /Resources/Intune-Shared-enablement
+публикацию повторно)|Позволяет ИТ-администратор для настройки запуска системы защиты. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 |smartScreenEnableInShell|Boolean|Позволяет ИТ-администраторам настраивать SmartScreen для Windows.|
 |smartScreenBlockOverrideForFiles|Boolean|Позволяет ИТ-администраторам указывать, могут ли пользователи игнорировать предупреждения SmartScreen и запускать вредоносные файлы.|
 |applicationGuardEnabled|Boolean|Включение Application Guard в Защитнике Windows|
@@ -219,6 +223,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Позволяет разрешить печать на сетевых принтерах из контейнера.|
 |applicationGuardAllowVirtualGPU|Логический|Разрешить безопасности приложения, чтобы использовать графического виртуальных Процессора|
 |applicationGuardAllowFileSaveOnHost|Логический|Разрешить пользователям загружать файлы из пограничного сервера в контейнере guard приложения и сохранение их на узле файловой системы|
+|bitLockerAllowStandardUserEncryption|Логический|Позволяет администраторам стандартные пользователи могут включить encrpytion во время присоединения к Azure AD.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Позволяет администратору отключить предупреждение о другом методе шифрования диска на компьютерах пользователей.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker. Эта политика действительна только для мобильных устройств.|
 |bitLockerEncryptDevice|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker.|
@@ -232,16 +237,16 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 26391
+Content-length: 26475
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
@@ -249,6 +254,7 @@ Content-length: 26391
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -604,9 +610,9 @@ Content-length: 26391
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -625,7 +631,7 @@ Content-length: 26391
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -794,6 +800,7 @@ Content-length: 26391
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -809,6 +816,7 @@ Content-length: 26391
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -860,12 +868,12 @@ Content-length: 26391
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 26499
+Content-Length: 26647
 
 {
   "@odata.type": "#microsoft.graph.windows10EndpointProtectionConfiguration",
@@ -879,6 +887,7 @@ Content-Length: 26499
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "dmaGuardDeviceEnumerationPolicy": "blockAll",
   "userRightsAccessCredentialManagerAsTrustedCaller": {
     "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
     "state": "blocked",
@@ -1234,9 +1243,9 @@ Content-Length: 26499
   "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
   "localSecurityOptionsBlockMicrosoftAccounts": true,
   "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-  "localSecurityOptionsEnableAdministratorAccount": true,
+  "localSecurityOptionsDisableAdministratorAccount": true,
   "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-  "localSecurityOptionsEnableGuestAccount": true,
+  "localSecurityOptionsDisableGuestAccount": true,
   "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
   "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
   "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -1255,7 +1264,7 @@ Content-Length: 26499
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
   "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
   "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-  "lanManagerWorkstationEnableInsecureGuestLogons": true,
+  "lanManagerWorkstationDisableInsecureGuestLogons": true,
   "localSecurityOptionsClearVirtualMemoryPageFile": true,
   "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
   "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -1424,6 +1433,7 @@ Content-Length: 26499
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
   "deviceGuardEnableSecureBootWithDMA": true,
+  "deviceGuardLaunchSystemGuard": "enabled",
   "smartScreenEnableInShell": true,
   "smartScreenBlockOverrideForFiles": true,
   "applicationGuardEnabled": true,
@@ -1439,6 +1449,7 @@ Content-Length: 26499
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,
   "bitLockerEncryptDevice": true,
@@ -1489,7 +1500,6 @@ Content-Length: 26499
   }
 }
 ```
-
 
 
 

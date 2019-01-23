@@ -1,25 +1,26 @@
 ---
 title: Создание объекта androidManagedAppRegistration
 description: Создание объекта androidManagedAppRegistration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 21215cddf0966a6a209e10609ac5620053daa919
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 83a2fd4c1967da5bdb401ab57bf603dace128f05
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974205"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29408497"
 ---
 # <a name="create-androidmanagedappregistration"></a>Создание объекта androidManagedAppRegistration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -58,15 +59,16 @@ POST /deviceAppManagement/managedAppRegistrations
 |deviceType|String|Тип главного устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceTag|String|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceName|String|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|managedDeviceId|Строка|Управляемые устройства идентификатор устройства узла. Значение может быть пустой, даже в том случае, если управляемые устройства узла. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|managedDeviceId|String|Управляемые устройства идентификатор устройства узла. Значение может быть пустой, даже в том случае, если управляемые устройства узла. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |azureADDeviceId|String|Идентификатор Azure Active Directory устройства устройства узла. Значение может быть пустым, даже в том случае, если устройство узла — это Azure Active Directory зарегистрирован. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceModel|String|Модель устройства для текущего приложения регистрация Inherited [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|Строка|Производитель устройства для текущего приложения регистрация Inherited [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|deviceManufacturer|String|Производитель устройства для текущего приложения регистрация Inherited [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) коллекции|Причины, по которым помечается регистрация приложения (если они есть). Пример: приложения, работающего на устройстве корневые унаследованные от [managedAppRegistration](../resources/intune-mam-managedappregistration.md). Возможные значения: `none`, `rootedDevice`.|
 |userId|String|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|id|Строка|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|version|Строка|Версия объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|id|String|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|version|String|Версия объекта. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|patchVersion|String|Версия исправления для текущей регистрации приложения для android|
 
 
 
@@ -74,12 +76,13 @@ POST /deviceAppManagement/managedAppRegistrations
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppRegistrations
 Content-type: application/json
-Content-length: 837
+Content-length: 879
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -102,16 +105,17 @@ Content-length: 837
     "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
     "packageId": "Package Id value"
   },
-  "version": "Version value"
+  "version": "Version value",
+  "patchVersion": "Patch Version value"
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 945
+Content-Length: 987
 
 {
   "@odata.type": "#microsoft.graph.androidManagedAppRegistration",
@@ -136,10 +140,10 @@ Content-Length: 945
     "packageId": "Package Id value"
   },
   "id": "0e064997-4997-0e06-9749-060e9749060e",
-  "version": "Version value"
+  "version": "Version value",
+  "patchVersion": "Patch Version value"
 }
 ```
-
 
 
 

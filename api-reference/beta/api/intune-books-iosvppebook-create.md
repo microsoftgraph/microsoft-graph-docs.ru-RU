@@ -1,25 +1,26 @@
 ---
 title: Create iosVppEBook
 description: Создание объекта iosVppEBook.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 96fb518c3ecc9434aaa1c0bd4da1cf18271a8a57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930007"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409757"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).
+
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -52,7 +53,7 @@ POST /deviceAppManagement/managedEBooks
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
-|описание|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|description|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
@@ -68,6 +69,7 @@ POST /deviceAppManagement/managedEBooks
 |seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности.|
 
 
 
@@ -75,12 +77,13 @@ POST /deviceAppManagement/managedEBooks
 В случае успешного выполнения этот метод возвращает код ответа `201 Created` и объект [iosVppEBook](../resources/intune-books-iosvppebook.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks
 Content-type: application/json
-Content-length: 856
+Content-length: 854
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -93,7 +96,6 @@ Content-length: 856
     "type": "Type value",
     "value": "dmFsdWU="
   },
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "informationUrl": "https://example.com/informationUrl/",
   "privacyInformationUrl": "https://example.com/privacyInformationUrl/",
   "vppTokenId": "9148ac60-ac60-9148-60ac-489160ac4891",
@@ -105,7 +107,10 @@ Content-length: 856
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -114,7 +119,7 @@ Content-length: 856
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 964
+Content-Length: 1026
 
 {
   "@odata.type": "#microsoft.graph.iosVppEBook",
@@ -141,10 +146,12 @@ Content-Length: 964
   "language": "Language value",
   "seller": "Seller value",
   "totalLicenseCount": 1,
-  "usedLicenseCount": 0
+  "usedLicenseCount": 0,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса windowsKioskSingleUWPApp
 description: Класс, используемый для идентификации информация приложения UWP для базовой конфигурации
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c59af9f5828a56d6d55e0f2bc0dc486e45321e8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e62dc6393cc2dc6a9133732a42527abdfadbd91e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959094"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409379"
 ---
 # <a name="windowskiosksingleuwpapp-resource-type"></a>Тип ресурса windowsKioskSingleUWPApp
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, используемый для идентификации информация приложения UWP для базовой конфигурации
+
 
 Наследуется от [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
@@ -26,8 +27,9 @@ ms.locfileid: "27959094"
 |:---|:---|:---|
 |uwpApp|[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -42,13 +44,13 @@ ms.locfileid: "27959094"
     "@odata.type": "microsoft.graph.windowsKioskUWPApp",
     "startLayoutTileSize": "String",
     "name": "String",
+    "appType": "String",
     "appUserModelId": "String",
     "appId": "String",
     "containedAppId": "String"
   }
 }
 ```
-
 
 
 

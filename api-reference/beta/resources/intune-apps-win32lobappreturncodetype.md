@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления win32LobAppReturnCodeType
 description: Указывает тип кода возврата.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ad1fc25c3194d7bb6e930fa81660fcc4b882f0ca
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 42491bd49759dbb7642fc968cd8957d5a2948305
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990133"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412389"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>Тип перечисления win32LobAppReturnCodeType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Указывает тип кода возврата.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -26,7 +27,6 @@ ms.locfileid: "27990133"
 |softReboot|2|Необходима перезагрузка обратимо.|
 |hardReboot|3|Аппаратной перезагрузки является обязательным.|
 |Число повторов|4|Повторите попытку.|
-
 
 
 

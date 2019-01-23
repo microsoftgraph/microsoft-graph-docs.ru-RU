@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса androidCompliancePolicy
 description: Этот класс содержит параметры обеспечения соответствия требованиям для Android.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6c4978480243826f8461b4ca723c1afd57a0122c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5f73c150a1b27dc11aa3fe7ab900711e3cff1780
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969669"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410814"
 ---
 # <a name="androidcompliancepolicy-resource-type"></a>Тип ресурса androidCompliancePolicy
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Этот класс содержит параметры обеспечения соответствия требованиям для Android.
+
 
 Наследуется от [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).
 
@@ -34,18 +35,19 @@ ms.locfileid: "27969669"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
 |passwordRequired|Boolean|Указывает, что для разблокировки устройства требуется указывать пароль.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Тип символов в поле пароль. Возможные значения: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться ввод пароля.|
-|passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 65 535.|
-|passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
+|passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля. Допустимые значения: от 1 до 365.|
+|passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать. Допустимые значения: от 1 до 24.|
+|passwordSignInFailureCountBeforeFactoryReset|Int32|Число сбоев входа, разрешенное reset фабрики. Допустимые значения 1 до 16|
 |securityPreventInstallAppsFromUnknownSources|Boolean|Указывает, что для устройств требуется запретить установку приложений из неизвестных источников.|
 |securityDisableUsbDebugging|Boolean|Запрещает USB-отладку на устройствах с Android.|
 |securityRequireVerifyApps|Boolean|Указывает, что требуется включить функцию проверки приложений для Android.|
@@ -61,10 +63,10 @@ ms.locfileid: "27969669"
 |securityRequireGooglePlayServices|Boolean|Указывает, что на устройстве требуется установить и включить Сервисы Google Play.|
 |securityRequireUpToDateSecurityProviders|Boolean|Указывает, что на устройстве требуется использовать обновленных поставщиков безопасности. Указывает, что устройству требуется включить и обновлять Сервисы Google Play.|
 |securityRequireCompanyPortalAppIntegrity|Boolean|Указывает, обязательна ли проверка целостности среды выполнения в клиентском приложении "Корпоративный портал".|
-|conditionStatementId|Строка|ИД условие оператора.|
-|restrictedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Требуется устройство, чтобы отказаться от указанного приложения, установленные. Эта коллекция может содержать не более 10 000 элементов.|
+|conditionStatementId|String|ИД условие оператора.|
+|restrictedApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Требуется устройство, чтобы отказаться от указанного приложения, установленные. Эта коллекция может содержать не более 100 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |scheduledActionsForRule|Коллекция [deviceComplianceScheduledActionForRule](../resources/intune-deviceconfig-devicecompliancescheduledactionforrule.md)|Список запланированных действий для этого правила. Наследуется от объекта [deviceCompliancePolicy](../resources/intune-deviceconfig-devicecompliancepolicy.md).|
@@ -101,6 +103,7 @@ ms.locfileid: "27969669"
   "passwordMinutesOfInactivityBeforeLock": 1024,
   "passwordExpirationDays": 1024,
   "passwordPreviousPasswordBlockCount": 1024,
+  "passwordSignInFailureCountBeforeFactoryReset": 1024,
   "securityPreventInstallAppsFromUnknownSources": true,
   "securityDisableUsbDebugging": true,
   "securityRequireVerifyApps": true,
@@ -128,7 +131,6 @@ ms.locfileid: "27969669"
   ]
 }
 ```
-
 
 
 

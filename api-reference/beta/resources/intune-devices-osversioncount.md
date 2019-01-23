@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса osVersionCount
 description: Количество устройств с вредоносных программ для каждой версии операционной системы
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: de841e679ede22492d26f2a1587e775179c45761
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cbe0d8ac149ad84ba4cd1286fb0f2303cdfb52a1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410464"
 ---
 # <a name="osversioncount-resource-type"></a>Тип ресурса osVersionCount
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Количество устройств с вредоносных программ для каждой версии операционной системы
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -25,8 +26,9 @@ ms.locfileid: "27911842"
 |deviceCount|Int32|Количество устройств с вредоносных программ для версии операционной системы|
 |lastUpdateDateTime|DateTimeOffset|Метка времени последнего обновления для счетчик устройства в формате UTC|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -42,7 +44,6 @@ ms.locfileid: "27911842"
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
-
 
 
 

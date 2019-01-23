@@ -1,25 +1,26 @@
 ---
 title: Get windows10EndpointProtectionConfiguration
 description: Чтение свойств и связей объекта windows10EndpointProtectionConfiguration.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ea83798f97196d4dde87240778e9fbaf0eae6a63
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 02154edb6b16e76e9908d8a31ffe94fc96fd581d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412704"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Чтение свойств и связей объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).
+
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -39,7 +40,8 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](https://docs.microsoft.com/en-us/graph/query-parameters) для настройки ответа.
+
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
@@ -47,25 +49,26 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 27756
+Content-Length: 27910
 
 {
   "value": {
@@ -80,6 +83,7 @@ Content-Length: 27756
     "description": "Description value",
     "displayName": "Display Name value",
     "version": 7,
+    "dmaGuardDeviceEnumerationPolicy": "blockAll",
     "userRightsAccessCredentialManagerAsTrustedCaller": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",
@@ -435,9 +439,9 @@ Content-Length: 27756
     "xboxServicesLiveNetworkingServiceStartupMode": "automatic",
     "localSecurityOptionsBlockMicrosoftAccounts": true,
     "localSecurityOptionsBlockRemoteLogonWithBlankPassword": true,
-    "localSecurityOptionsEnableAdministratorAccount": true,
+    "localSecurityOptionsDisableAdministratorAccount": true,
     "localSecurityOptionsAdministratorAccountName": "Local Security Options Administrator Account Name value",
-    "localSecurityOptionsEnableGuestAccount": true,
+    "localSecurityOptionsDisableGuestAccount": true,
     "localSecurityOptionsGuestAccountName": "Local Security Options Guest Account Name value",
     "localSecurityOptionsAllowUndockWithoutHavingToLogon": true,
     "localSecurityOptionsBlockUsersInstallingPrinterDrivers": true,
@@ -456,7 +460,7 @@ Content-Length: 27756
     "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedClients": "requireNtmlV2SessionSecurity",
     "localSecurityOptionsMinimumSessionSecurityForNtlmSspBasedServers": "requireNtmlV2SessionSecurity",
     "lanManagerAuthenticationLevel": "lmNtlmAndNtlmV2",
-    "lanManagerWorkstationEnableInsecureGuestLogons": true,
+    "lanManagerWorkstationDisableInsecureGuestLogons": true,
     "localSecurityOptionsClearVirtualMemoryPageFile": true,
     "localSecurityOptionsAllowSystemToBeShutDownWithoutHavingToLogOn": true,
     "localSecurityOptionsAllowUIAccessApplicationElevation": true,
@@ -625,6 +629,7 @@ Content-Length: 27756
     "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
     "deviceGuardEnableVirtualizationBasedSecurity": true,
     "deviceGuardEnableSecureBootWithDMA": true,
+    "deviceGuardLaunchSystemGuard": "enabled",
     "smartScreenEnableInShell": true,
     "smartScreenBlockOverrideForFiles": true,
     "applicationGuardEnabled": true,
@@ -640,6 +645,7 @@ Content-Length: 27756
     "applicationGuardAllowPrintToNetworkPrinters": true,
     "applicationGuardAllowVirtualGPU": true,
     "applicationGuardAllowFileSaveOnHost": true,
+    "bitLockerAllowStandardUserEncryption": true,
     "bitLockerDisableWarningForOtherDiskEncryption": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,
     "bitLockerEncryptDevice": true,
@@ -691,7 +697,6 @@ Content-Length: 27756
   }
 }
 ```
-
 
 
 

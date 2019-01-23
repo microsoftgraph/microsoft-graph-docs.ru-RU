@@ -1,25 +1,26 @@
 ---
 title: Список macOSLobApps
 description: Свойства списка и связей объектов macOSLobApp.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0425a1444deac68baf69d698b622133dec5d0205
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 073d3e529c7dba13f086085c23997945e8a28a4f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969361"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409498"
 ---
 # <a name="list-macoslobapps"></a>Список macOSLobApps
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Свойства списка и связей объектов [macOSLobApp](../resources/intune-apps-macoslobapp.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,25 +44,26 @@ GET /deviceAppManagement/mobileApps
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [macOSLobApp](../resources/intune-apps-macoslobapp.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1867
+Content-Length: 1968
 
 {
   "value": [
@@ -86,6 +88,10 @@ Content-Length: 1867
       "notes": "Notes value",
       "uploadState": 11,
       "publishingState": "processing",
+      "isAssigned": true,
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ],
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -120,7 +126,6 @@ Content-Length: 1867
   ]
 }
 ```
-
 
 
 

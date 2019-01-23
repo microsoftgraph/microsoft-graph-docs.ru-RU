@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса mobileAppTroubleshootingAppStateHistory
 description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 03a7cd7a67790dca8824b7e446b5add5304c6f0a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 57e10fcabc0aa3def07872c0e520f09c6ee90fc3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411241"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppStateHistory
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
+
 
 Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
@@ -29,8 +30,9 @@ ms.locfileid: "27917743"
 |runState|[runState](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки сбоя, пустой, если нет сбоев.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -47,7 +49,6 @@ ms.locfileid: "27917743"
   "errorCode": "String"
 }
 ```
-
 
 
 

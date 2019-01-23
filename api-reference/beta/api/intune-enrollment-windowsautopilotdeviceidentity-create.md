@@ -1,25 +1,26 @@
 ---
 title: Создание windowsAutopilotDeviceIdentity
 description: Создание нового объекта windowsAutopilotDeviceIdentity.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 56d200bd53e94715ba102f6c96bba3e3b5dd892b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 9d9287738b33b1afe55a3f22c441b888ae7d77b4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406397"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание windowsAutopilotDeviceIdentity
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание нового объекта [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -44,7 +45,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта windowsAutopilotDeviceIdentity.
 
 В следующей таблице показаны свойства, которые необходимы для создания windowsAutopilotDeviceIdentity.
@@ -56,22 +57,23 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Назначение профиля подробное описание состояния устройства автопилот Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Профиль задания времени автопилот устройства Windows.|
 |orderIdentifier|Строка|Порядок идентификатор устройства автопилот Windows.|
-|purchaseOrderIdentifier|Строка|Идентификатор заказа на покупку автопилот устройства Windows.|
+|purchaseOrderIdentifier|String|Идентификатор заказа на покупку автопилот устройства Windows.|
 |serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |manufacturer|String|Изготовителей автопилот устройства Windows.|
 |model|String|Имя модели устройства автопилот Windows.|
 |enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние регистрации автопилот устройства Windows Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |lastContactedDateTime|DateTimeOffset|Intune связаться с даты последнего устройства автопилот Windows.|
-|addressableUserName|Строка|Имя адресации пользователя.|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|addressableUserName|String|Имя адресации пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
@@ -97,7 +99,7 @@ Content-length: 755
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
@@ -122,7 +124,6 @@ Content-Length: 804
   "userPrincipalName": "User Principal Name value"
 }
 ```
-
 
 
 

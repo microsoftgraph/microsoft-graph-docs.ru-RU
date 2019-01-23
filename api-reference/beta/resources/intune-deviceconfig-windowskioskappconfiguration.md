@@ -1,29 +1,31 @@
 ---
 title: Тип ресурса windowsKioskAppConfiguration
 description: Базовый класс приложение, используемое для идентификации сведения о приложении для базовой конфигурации
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b2ac7de8bc2accd08b2508f4930a8ae6b7aa0909
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 287e88c23e1eaa260aa2d4be6a819fcba72b6cff
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919892"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412690"
 ---
 # <a name="windowskioskappconfiguration-resource-type"></a>Тип ресурса windowsKioskAppConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Базовый класс приложение, используемое для идентификации сведения о приложении для базовой конфигурации
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -36,7 +38,6 @@ ms.locfileid: "27919892"
   "@odata.type": "#microsoft.graph.windowsKioskAppConfiguration"
 }
 ```
-
 
 
 

@@ -3,21 +3,22 @@ title: Тип ресурса androidForWorkEnrollmentProfile
 description: Профиль регистрации, используемый для регистрации устройств COSU с помощью управления облачными клиентами от Google.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: fbb497bbf56aaa830f2932a31e39ef61981ae2dc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1cf839526d54dc0bc157254ed4817075af7c3b64
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957580"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29409645"
 ---
 # <a name="androidforworkenrollmentprofile-resource-type"></a>Тип ресурса androidForWorkEnrollmentProfile
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Профиль регистрации, используемый для регистрации устройств COSU с помощью управления облачными клиентами от Google.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -35,7 +36,7 @@ ms.locfileid: "27957580"
 |accountId|String|GUID клиента, которому принадлежит профиль регистрации.|
 |id|String|Уникальный GUID профиля регистрации.|
 |displayName|String|Отображаемое имя профиля регистрации.|
-|описание|String|Описание профиля регистрации.|
+|description|String|Описание профиля регистрации.|
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
@@ -46,6 +47,7 @@ ms.locfileid: "27957580"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -74,7 +76,6 @@ ms.locfileid: "27957580"
   }
 }
 ```
-
 
 
 

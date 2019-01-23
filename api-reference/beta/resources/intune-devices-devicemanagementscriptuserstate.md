@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса deviceManagementScriptUserState
 description: Содержит свойства для пользователя, состояние сценарий управления устройства выполнения.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d74e8276603355af58ccff50401f742c56147d7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d1884967707be8e126724148afa5d04b07f80a48
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942250"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407286"
 ---
 # <a name="devicemanagementscriptuserstate-resource-type"></a>Тип ресурса deviceManagementScriptUserState
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства для пользователя, состояние сценарий управления устройства выполнения.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -30,12 +31,12 @@ ms.locfileid: "27942250"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ сущности состояние пользователя устройства управления скрипта.|
+|id|String|Ключ сущности состояние пользователя устройства управления скрипта.|
 |successDeviceCount|Int32|Число допустимых устройства для определенного пользователя.|
 |errorDeviceCount|Int32|Число ошибок устройства для определенного пользователя.|
-|userPrincipalName|Строка|Имени участника-пользователя для определенного пользователя.|
+|userPrincipalName|String|Имени участника-пользователя для определенного пользователя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) коллекции|Список выполнения состояний для этого скрипта на всех устройствах определенного пользователя.|
@@ -57,7 +58,6 @@ ms.locfileid: "27942250"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

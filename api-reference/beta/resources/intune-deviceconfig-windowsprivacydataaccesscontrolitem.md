@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса windowsPrivacyDataAccessControlItem
 description: Задать уровень доступа элемента управления по категориям конфиденциальности данных
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dfce1de413168da685d7460f56a8ee98972c27e1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a772ab511cd57272da8fb1a3a72a17eb1d06737f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407118"
 ---
 # <a name="windowsprivacydataaccesscontrolitem-resource-type"></a>Тип ресурса windowsPrivacyDataAccessControlItem
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Задать уровень доступа элемента управления по категориям конфиденциальности данных
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -30,14 +31,15 @@ ms.locfileid: "27952120"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ WindowsPrivacyDataAccessControlItem.|
+|id|String|Ключ WindowsPrivacyDataAccessControlItem.|
 |accessLevel|[windowsPrivacyDataAccessLevel](../resources/intune-deviceconfig-windowsprivacydataaccesslevel.md)|Указывает уровень доступа для категории конфиденциальности данных, к которому будет предоставлен указанного приложения к. Возможные значения: `notConfigured`, `forceAllow`, `forceDeny`, `userInControl`.|
 |dataCategory|[windowsPrivacyDataCategory](../resources/intune-deviceconfig-windowsprivacydatacategory.md)|Указывает категорию конфиденциальности данных, к которому будет применяться контроля доступа к определенным. Возможные значения: `notConfigured`, `accountInfo`, `appsRunInBackground`, `calendar`, `callHistory`, `camera`, `contacts`, `diagnosticsInfo`, `email`, `location`, `messaging`, `microphone`, `motion`, `notifications`, `phone`, `radios`, `tasks`, `syncWithDevices`, `trustedDevices` .|
-|appPackageFamilyName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
-|appDisplayName|Строка|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appPackageFamilyName|String|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
+|appDisplayName|String|Имя семейства пакет приложения Windows. Если задано, уровень доступа применяется к указанному приложению.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -56,7 +58,6 @@ ms.locfileid: "27952120"
   "appDisplayName": "String"
 }
 ```
-
 
 
 

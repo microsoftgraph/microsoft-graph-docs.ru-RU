@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления ratingUnitedStatesMoviesType
 description: Оценка метки в Соединенных Штатах Америки кино
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5aeb2279d2f8379a4adb17277adf0da278e1c7ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c14fcc87c949e3f16403ca4654ec987423f8b647
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952239"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412228"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>Тип перечисления ratingUnitedStatesMoviesType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Оценка метки в Соединенных Штатах Америки кино
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -28,7 +29,6 @@ ms.locfileid: "27952239"
 |parentalGuidance13|4|PG13, некоторые материалы может не подходят для дочерних элементов в списке 13|
 |ограниченного доступа|5|R, просматривающих отчеты пользователей 17 требуют наглядные родителем или опекуном взрослых|
 |для взрослых|6|NC17 только для взрослых|
-
 
 
 

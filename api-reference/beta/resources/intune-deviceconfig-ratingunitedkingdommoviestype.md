@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления ratingUnitedKingdomMoviesType
 description: Фильмы рейтинг метки в Соединенное Королевство
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1b1c29e579d3a22bdf848b6bd01bdf2261541938
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 62194038006b011fdc8a70c4b399beef5e8c742b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952694"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412536"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>Тип перечисления ratingUnitedKingdomMoviesType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Фильмы рейтинг метки в Соединенное Королевство
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -30,7 +31,6 @@ ms.locfileid: "27952694"
 |agesAbove12Cinema|6|12 a, кино выпуске подходящего 12 лет и через|
 |agesAbove15|7|15, подходит только для 15 лет и старше|
 |для взрослых|8|Подходит только для взрослых|
-
 
 
 

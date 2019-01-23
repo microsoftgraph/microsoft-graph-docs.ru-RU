@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса androidManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве Android
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d3b2137dfbfd712dcebcab3c9d0c78c569135ddb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 28815cbc7dc272fff8564014d01a64f138143495
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933752"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410401"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве Android
+
 
 Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).
 
@@ -34,9 +35,10 @@ ms.locfileid: "27933752"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|описание|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
@@ -69,8 +71,8 @@ ms.locfileid: "27933752"
 |minimumWipeAppVersion|String|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировки или очистки, когда устройства либо корневого или jailbroken, если DeviceComplianceRequired задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, либо блок или стирание, на основании максимальное количество повторных попыток неправильный ПИН-код. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
-|pinRequiredInsteadOfBiometricTimeout|Продолжительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
-|isAssigned|Boolean|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
+|pinRequiredInsteadOfBiometricTimeout|Длительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Уровни управления требуемого приложения для данной политики унаследованные от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |screenCaptureBlocked|Boolean|Указывает, может ли управляемый пользователь делать снимки экрана управляемых приложений.|
 |disableAppEncryptionIfDeviceEncryptionIsEnabled|Boolean|Если этот параметр включен, шифрование на уровне приложения отключается, если включено шифрование на уровне устройства.|
@@ -105,6 +107,9 @@ ms.locfileid: "27933752"
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -160,7 +165,6 @@ ms.locfileid: "27933752"
   "appActionIfAndroidDeviceManufacturerNotAllowed": "String"
 }
 ```
-
 
 
 

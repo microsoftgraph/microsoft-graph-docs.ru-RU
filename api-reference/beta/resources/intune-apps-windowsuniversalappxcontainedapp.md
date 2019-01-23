@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса windowsUniversalAppXContainedApp
 description: Класс, представляющий автономные приложения WindowsUniversalAppX приложения.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ee4d8a08fe182322412c228b04da56339be93f54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 397d2b706bcf3e7fbbf223a5af5e567c83ce47f7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950762"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410912"
 ---
 # <a name="windowsuniversalappxcontainedapp-resource-type"></a>Тип ресурса windowsUniversalAppXContainedApp
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, представляющий автономные приложения WindowsUniversalAppX приложения.
+
 
 Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)
 
@@ -33,11 +34,12 @@ ms.locfileid: "27950762"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
-|appUserModelId|Строка|Идентификатор модели пользователя приложения автономные приложения WindowsUniversalAppX приложения.|
+|id|String|Ключ объекта. Наследуется от [mobileContainedApp](../resources/intune-apps-mobilecontainedapp.md)|
+|appUserModelId|String|Идентификатор модели пользователя приложения автономные приложения WindowsUniversalAppX приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -53,7 +55,6 @@ ms.locfileid: "27950762"
   "appUserModelId": "String"
 }
 ```
-
 
 
 

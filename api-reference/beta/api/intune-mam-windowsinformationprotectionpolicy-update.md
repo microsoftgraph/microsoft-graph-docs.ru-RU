@@ -1,25 +1,26 @@
 ---
 title: Обновление объекта windowsInformationProtectionPolicy
 description: Обновление свойств объекта windowsInformationProtectionPolicy.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: be1572ee72dad3bca83390290d4b45a39c82404c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ab65b8415ed569bed31caf81d1faa2a2d895a7b4
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949208"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29411780"
 ---
 # <a name="update-windowsinformationprotectionpolicy"></a>Обновление объекта windowsInformationProtectionPolicy
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md).
+
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -50,14 +51,15 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|описание|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Принудительное применение уровень НЗП. В разделе Определение перечисления для поддерживаемых значений унаследованные от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
-|enterpriseDomain|Строка|Основной домен предприятия. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
+|enterpriseDomain|String|Основной домен предприятия. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |enterpriseProtectedDomainNames|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Список доменов предприятия, подлежащих защите. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |protectionUnderLockConfigRequired|Логический|Указывает, следует ли настроить функцию защиты с блокировкой (другое название — шифрование с ПИН-кодом). Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |dataRecoveryCertificate|[windowsInformationProtectionDataRecoveryCertificate](../resources/intune-mam-windowsinformationprotectiondatarecoverycertificate.md)|Указывает сертификат, который можно использовать для восстановления данных из зашифрованных файлов. То же, что сертификат DRA для шифрованной файловой системы (EFS). Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
@@ -79,7 +81,7 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 |smbAutoEncryptedFileExtensions|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Задает список расширений. Файлы с этими расширениями шифруются при копировании из общей папки SMB в пределах предприятия. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |revokeOnMdmHandoffDisabled|Логический|Новое свойство в RS2, документация готовится.|
-|mdmEnrollmentUrl|Строка|URL-адрес регистрации в системе MDM.|
+|mdmEnrollmentUrl|String|URL-адрес регистрации в системе MDM.|
 |windowsHelloForBusinessBlocked|Логический|Логическое значение, которое определяет Windows Hello для бизнеса как способ входа в Windows.|
 |pinMinimumLength|Int32|Целое число, которое определяет минимальное количество символов в ПИН-коде. Значение по умолчанию — 4. Для этого параметра политики можно установить значение в диапазоне от 4 до 127 (или числа, заданного в параметре политики "Максимальная длина ПИН-кода", если оно меньше).|
 |pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Целое число, которое настраивает использование прописных букв в ПИН-коде Windows Hello для бизнеса. Значение по умолчанию — NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
@@ -97,17 +99,21 @@ PATCH /deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformat
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [windowsInformationProtectionPolicy](../resources/intune-mam-windowsinformationprotectionpolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}
 Content-type: application/json
-Content-length: 4396
+Content-length: 4467
 
 {
+  "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
   "displayName": "Display Name value",
   "description": "Description value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "version": "Version value",
   "enforcementLevel": "encryptAndAuditOnly",
   "enterpriseDomain": "Enterprise Domain value",
@@ -242,12 +248,12 @@ Content-length: 4396
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4577
+Content-Length: 4639
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionPolicy",
@@ -255,6 +261,9 @@ Content-Length: 4577
   "description": "Description value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ],
   "id": "6397be61-be61-6397-61be-976361be9763",
   "version": "Version value",
   "enforcementLevel": "encryptAndAuditOnly",
@@ -389,7 +398,6 @@ Content-Length: 4577
   "daysWithoutContactBeforeUnenroll": 0
 }
 ```
-
 
 
 

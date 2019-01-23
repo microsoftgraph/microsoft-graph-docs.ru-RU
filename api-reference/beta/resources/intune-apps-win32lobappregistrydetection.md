@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса win32LobAppRegistryDetection
 description: Содержит свойства реестра для определения приложения Win32
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 23362d7613d198bdd848205cbf20944e9a592f04
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: bb10a96a14d3c26503b33191fbb3c1b883245da7
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29402666"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Тип ресурса win32LobAppRegistryDetection
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства реестра для определения приложения Win32
+
 
 Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
@@ -25,14 +26,15 @@ ms.locfileid: "27923903"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |check32BitOn64System|Логический|Значение, указывающее, является ли этот путь в реестре для проверки 32-разрядная версия приложения на 64-разрядных систем|
-|ключевого пути|Строка|Путь к разделу реестра для определения Win32 строки из бизнес-приложения|
-|Имени|Строка|Имя значения реестра|
+|ключевого пути|String|Путь к разделу реестра для определения Win32 строки из бизнес-приложения|
+|Имени|String|Имя значения реестра|
 |detectionType|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных реестра. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
 |operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения данных реестра. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|Строка|Определение значения реестра|
+|detectionValue|String|Определение значения реестра|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -51,7 +53,6 @@ ms.locfileid: "27923903"
   "detectionValue": "String"
 }
 ```
-
 
 
 

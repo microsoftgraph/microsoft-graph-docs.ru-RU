@@ -3,21 +3,22 @@ title: Тип ресурса androidDeviceOwnerGeneralDeviceConfiguration
 description: В этом разделе описаны объявленные методы, свойства и связи, предоставляемые элементом androidDeviceOwnerGeneralDeviceConfiguration ресурсов.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: ba0da32f6a5a3914b30fa7c0a2f13d0d583d7899
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9ac403bd13091a9db61b7f27462caecf6934b452
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978279"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403751"
 ---
 # <a name="androiddeviceownergeneraldeviceconfiguration-resource-type"></a>Тип ресурса androidDeviceOwnerGeneralDeviceConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этом разделе описаны объявленные методы, свойства и связи, предоставляемые элементом androidDeviceOwnerGeneralDeviceConfiguration ресурсов.
+
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
@@ -33,18 +34,19 @@ ms.locfileid: "27978279"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountsBlockModification|Логический|Указывает, отключена ли добавлять и удалять учетные записи.|
 |appsAllowInstallFromUnknownSources|Логический|Указывает, может ли пользователь для включения неизвестных источников установки.|
 |appsAutoUpdatePolicy|[androidDeviceOwnerAppAutoUpdatePolicyType](../resources/intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)|Указывает значение политики app автоматическое обновление. Возможные значения: `notConfigured`, `userChoice`, `never`, `wiFiOnly`, `always`.|
 |appsDefaultPermissionPolicy|[androidDeviceOwnerDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)|Указывает политику разрешений для запросов для разрешения среды выполнения, если один не определен для приложения, в частности. Возможные значения: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|appsRecommendSkippingFirstUseHints|Логический|Рекомендуется все приложения или не пропустить все первого время использования подсказки, которые могут добавлены.|
 |bluetoothBlockConfiguration|Логический|Указывает, следует ли запретить пользователю Настройка bluetooth.|
 |bluetoothBlockContactSharing|Логический|Указывает, следует ли запретить совместное использование контактов с помощью bluetooth пользователю.|
 |cameraBlocked|Логический|Указывает, следует ли отключить использование камеры.|
@@ -54,10 +56,14 @@ ms.locfileid: "27978279"
 |factoryResetDeviceAdministratorEmails|Коллекция String|Список Google учетной записи по электронной почте, которые понадобятся для проверки подлинности после фабрики сбросить, прежде чем выполнить настройку устройства.|
 |factoryResetBlocked|Boolean|Указывает, отключена ли параметр сброса фабрики в параметрах.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список управляемых приложений, которые будут отображаться, если устройство находится в полноэкранном режиме. Эта коллекция может содержать не более 500 элементов.|
+|kioskModeWallpaperUrl|String|URL-адрес в образ общего доступа для использования для фонового рисунка, когда устройство в полноэкранном режиме.|
+|kioskModeExitCode|String|Выйдите из кода, чтобы позволить пользователю для выхода в полноэкранном режиме, когда устройство в полноэкранном режиме.|
+|kioskModeVirtualHomeButtonEnabled|Логический|Следует ли отображение виртуальных Домашняя страница кнопки, если устройство находится в полноэкранном режиме.|
 |microphoneForceMute|Логический|Указывает, следует ли блокировать выключения звука микрофона на устройстве.|
 |networkEscapeHatchAllowed|Логический|Указывает, будет ли устройства разрешить подключение к временной сетевое подключение во время загрузки.|
 |nfcBlockOutgoingBeam|Логический|Указывает, следует ли блокировать исходящей балки NFC.|
 |passwordBlockKeyguard|Логический|Указывает, отключена ли keyguard.|
+|passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) коллекции|Список компонентов keyguard устройства для блокировки. Эта коллекция может содержать не более 7 элементов.|
 |passwordExpirationDays|Int32|Указывает время в секундах, пароль может быть задан для до истечения срока действия и требуется указать новый пароль. Допустимые значения: от 1 до 365.|
 |passwordMinimumLength|Int32|Указывает минимальную длину пароля на устройстве. Допустимые значения: от 4 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Простоя перед экрана времени ожидания в миллисекундах.|
@@ -76,13 +82,16 @@ ms.locfileid: "27978279"
 |systemUpdateWindowStartMinutesAfterMidnight|Int32|Указывает количество минут после полуночи, начинающимся окно обновление системы. Допустимые значения 0 до 1440|
 |systemUpdateWindowEndMinutesAfterMidnight|Int32|Указывает количество минут после полуночи, завершающей окне обновление системы. Допустимые значения 0 до 1440|
 |systemUpdateInstallType|[androidDeviceOwnerSystemUpdateInstallType](../resources/intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)|Тип обновления конфигурации системы. Возможные значения: `deviceDefault`, `postpone`, `windowed`, `automatic`.|
+|systemWindowsBlocked|Логический|Блокировать Android системы или не запрашивать пользователя windows, как всплывающие уведомления, phone действия и оповещения системы.|
 |usersBlockAdd|Логический|Указывает, отключена ли добавление пользователей и профилей.|
 |usersBlockRemove|Логический|Указывает, следует ли отключить удаление других пользователей с устройства.|
 |volumeBlockAdjustment|Логический|Указывает, следует ли настройка отключенные громкости.|
+|vpnAlwaysOnPackageIdentifier|String|Имя пакета приложения для Android для приложения, которое будет обрабатывать всегда на через VPN.|
+|vpnAlwaysOnLockdownMode|Логический|Если всегда на VPN упаковка имя заданной, ли для блокировки сетевого трафика при отключении этого VPN.|
 |wifiBlockEditConfigurations|Логический|Указывает, следует ли пользователь не может изменять параметры подключения wifi.|
 |wifiBlockEditPolicyDefinedConfigurations|Логический|Указывает, следует ли пользователь не может изменять только что сетей, определенные политикой.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -118,6 +127,7 @@ ms.locfileid: "27978279"
   "appsAllowInstallFromUnknownSources": true,
   "appsAutoUpdatePolicy": "String",
   "appsDefaultPermissionPolicy": "String",
+  "appsRecommendSkippingFirstUseHints": true,
   "bluetoothBlockConfiguration": true,
   "bluetoothBlockContactSharing": true,
   "cameraBlocked": true,
@@ -137,10 +147,16 @@ ms.locfileid: "27978279"
       "appId": "String"
     }
   ],
+  "kioskModeWallpaperUrl": "String",
+  "kioskModeExitCode": "String",
+  "kioskModeVirtualHomeButtonEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
   "passwordBlockKeyguard": true,
+  "passwordBlockKeyguardFeatures": [
+    "String"
+  ],
   "passwordExpirationDays": 1024,
   "passwordMinimumLength": 1024,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 1024,
@@ -161,14 +177,16 @@ ms.locfileid: "27978279"
   "systemUpdateWindowStartMinutesAfterMidnight": 1024,
   "systemUpdateWindowEndMinutesAfterMidnight": 1024,
   "systemUpdateInstallType": "String",
+  "systemWindowsBlocked": true,
   "usersBlockAdd": true,
   "usersBlockRemove": true,
   "volumeBlockAdjustment": true,
+  "vpnAlwaysOnPackageIdentifier": "String",
+  "vpnAlwaysOnLockdownMode": true,
   "wifiBlockEditConfigurations": true,
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
-
 
 
 

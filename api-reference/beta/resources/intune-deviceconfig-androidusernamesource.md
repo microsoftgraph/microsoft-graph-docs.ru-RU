@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления androidUsernameSource
 description: Источник Android имя пользователя.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 78094ae5221f02a0357de0398db11e05ef12e610
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: e3a6e50820938386bfecb647d4ab9f8b756e51cf
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938023"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404248"
 ---
 # <a name="androidusernamesource-enum-type"></a>Тип перечисления androidUsernameSource
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Источник Android имя пользователя.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -25,7 +26,6 @@ ms.locfileid: "27938023"
 |userPrincipalName|1|Имя участника-пользователя.|
 |samAccountName|2|Имя учетной записи sam пользователя.|
 |primarySmtpAddress|3|Основной SMTP-адрес.|
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса deviceConfiguration
 description: Конфигурация устройства
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 497d382b5b4b1a16c67144883be2b3d82362c4d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8bc06a2475dfd5e3a6837d0a7812893df03892a0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957594"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29410940"
 ---
 # <a name="deviceconfiguration-resource-type"></a>Тип ресурса deviceConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Конфигурация устройства
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -34,9 +35,9 @@ ms.locfileid: "27957594"
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности.|
-|supportsScopeTags|Boolean|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения.|
+|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|описание|String|Указанное администратором описание конфигурации устройства.|
+|description|String|Указанное администратором описание конфигурации устройства.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |version|Int32|Версия конфигурации устройства.|
 
@@ -74,7 +75,6 @@ ms.locfileid: "27957594"
   "version": 1024
 }
 ```
-
 
 
 

@@ -4,12 +4,12 @@ description: Используется для настройки синхрони
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a22c3cf68a4a5b4c12dc4e7105f17eed4fc006f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4028170c2780cee426ec961a44b51e0362b0187f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982759"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406922"
 ---
 # <a name="educationpowerschooldataprovider-resource"></a>educationPowerSchoolDataProvider ресурсов
 
@@ -28,7 +28,7 @@ ms.locfileid: "27982759"
 | **clientSecret** | String |  Секрет клиента для проверки подлинности подключения к экземпляру PowerSchool. |
 | **schoolsIds** | Коллекция String |  Список школы для синхронизации. |
 | **schoolYear** | String |  Учебный год для синхронизации. |
-| **allowTeachersInMultipleSchools** | Boolean |  Указывает, имеет ли источник несколько идентификаторов для одного студент и преподаватель. |
+| **allowTeachersInMultipleSchools** | Логический |  Указывает, имеет ли источник несколько идентификаторов для одного студент и преподаватель. |
 | **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -37,12 +37,12 @@ ms.locfileid: "27982759"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider"
+  "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider"
 }-->
 
 ```json
 {
-    "@odata.type": "#microsoft.graph.educationPowerSchoolDataProvider",
+    "@odata.type": "microsoft.graph.educationPowerSchoolDataProvider",
     "connectionUrl": "String",
     "clientId": "String",
     "clientSecret": "String",

@@ -1,25 +1,26 @@
 ---
 title: Обновление объекта roleDefinition
 description: Обновление свойств объекта roleDefinition.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3afe285537bc6ff3476b2aadf70d104801baa793
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b13f82e30e8bf67a78bd31db678de5b5a46051c3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934186"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412627"
 ---
 # <a name="update-roledefinition"></a>Обновление объекта roleDefinition
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -53,11 +54,12 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 |:---|:---|:---|
 |id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое имя определения роли.|
-|описание|String|Описание определения роли.|
+|description|String|Описание определения роли.|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |isBuiltInRoleDefinition|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности.|
 
 
 
@@ -65,14 +67,16 @@ PATCH /deviceManagement/roleDefinitions/{roleDefinitionId}/roleAssignments/{role
 При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [roleDefinition](../resources/intune-rbac-roledefinition.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/roleDefinitions/{roleDefinitionId}
 Content-type: application/json
-Content-length: 1092
+Content-length: 1207
 
 {
+  "@odata.type": "#microsoft.graph.roleDefinition",
   "displayName": "Display Name value",
   "description": "Description value",
   "permissions": [
@@ -114,7 +118,10 @@ Content-length: 1092
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -123,7 +130,7 @@ Content-length: 1092
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1194
+Content-Length: 1256
 
 {
   "@odata.type": "#microsoft.graph.roleDefinition",
@@ -169,10 +176,12 @@ Content-Length: 1194
     }
   ],
   "isBuiltInRoleDefinition": true,
-  "isBuiltIn": true
+  "isBuiltIn": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

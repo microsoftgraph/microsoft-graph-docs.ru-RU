@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса deviceManagementScript
 description: Intune будет предоставлять возможности выполнения их скриптов Powershell на устройствах 10 зарегистрированных windows Azure Active Directory в состав клиента. Скрипт может выполняться периодически или один раз.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0f2747b966384e5e0abaf165ca463174b60ced8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4fda826ec8033cd51ad4dd13dbc5b523a21e9e3a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932310"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29412529"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Intune будет предоставлять возможности выполнения их скриптов Powershell на устройствах 10 зарегистрированных windows Azure Active Directory в состав клиента. Скрипт может выполняться периодически или один раз.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -31,9 +32,9 @@ Intune будет предоставлять возможности выполн
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для сценарий управления устройства.|
-|displayName|Строка|Имя скрипта управления устройства.|
-|описание|Строка|Необязательное описание сценарий управления устройства.|
+|id|String|Уникальный идентификатор для сценарий управления устройства.|
+|displayName|String|Имя скрипта управления устройства.|
+|description|String|Необязательное описание сценарий управления устройства.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска сценария. Если не определена сценарий будет выполняться один раз|
 |scriptContent|Binary|Содержимое сценария.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
@@ -41,8 +42,10 @@ Intune будет предоставлять возможности выполн
 |runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
 |enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
 |fileName|String|Имя файла сценария.|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого экземпляра PowerShellScript.|
+|runAs32Bit|Логический|Значение, указывающее ли сценарий PowerShell должна запускаться в 32-разрядная версия|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) коллекции|Список назначений группы для скрипта управления устройства.|
@@ -73,10 +76,13 @@ Intune будет предоставлять возможности выполн
   "lastModifiedDateTime": "String (timestamp)",
   "runAsAccount": "String",
   "enforceSignatureCheck": true,
-  "fileName": "String"
+  "fileName": "String",
+  "roleScopeTagIds": [
+    "String"
+  ],
+  "runAs32Bit": true
 }
 ```
-
 
 
 
