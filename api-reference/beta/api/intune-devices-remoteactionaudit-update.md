@@ -1,25 +1,26 @@
 ---
 title: Обновление remoteActionAudit
 description: Обновление свойства объекта remoteActionAudit.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 76c61651ab18b838f2cd403036b21b3895614b19
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 6078b3f6fd5236bd0e6e1a51f5f52cbf69a59c83
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958483"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396191"
 ---
 # <a name="update-remoteactionaudit"></a>Обновление remoteActionAudit
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,7 +44,7 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md).
@@ -66,14 +67,16 @@ PATCH /deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/remoteActionAudits/{remoteActionAuditId}
 Content-type: application/json
-Content-length: 399
+Content-length: 455
 
 {
+  "@odata.type": "#microsoft.graph.remoteActionAudit",
   "deviceDisplayName": "Device Display Name value",
   "userName": "User Name value",
   "initiatedByUserPrincipalName": "Initiated By User Principal Name value",
@@ -105,7 +108,6 @@ Content-Length: 504
   "actionState": "pending"
 }
 ```
-
 
 
 

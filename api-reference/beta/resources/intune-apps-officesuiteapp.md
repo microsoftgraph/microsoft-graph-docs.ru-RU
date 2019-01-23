@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса officeSuiteApp
 description: Содержит свойства и наследуемые свойства для приложения набора приложений Office 365.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f4e59f9e9167d26a626b1de44c89ca8ce6328de1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2be565af88961ebafe4ed978524763797a3fe475
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916175"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395533"
 ---
 # <a name="officesuiteapp-resource-type"></a>Тип ресурса officeSuiteApp
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства и наследуемые свойства для приложения набора приложений Office 365.
+
 
 Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).
 
@@ -33,9 +34,9 @@ ms.locfileid: "27916175"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -48,19 +49,22 @@ ms.locfileid: "27916175"
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |autoAcceptEula|Логический|Значение, чтобы принять условия лицензионного соглашения автоматически на устройстве enduser.|
 |productIds|[officeProductId](../resources/intune-apps-officeproductid.md) коллекции|Коды продуктов, представляющих SKU набора приложений Office 365.|
 |excludedApps;|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложения, исключенных из выбранного продукта Office 365 идентификатор.|
 |useSharedComputerActivation|Логический|Свойство для представления, является ли активация совместно используемый компьютер используется не для набора приложений Office 365.|
 |updateChannel|[officeUpdateChannel](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office 365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
-|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версию пакета приложения Office 365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`.|
+|officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версию пакета приложения Office 365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |localesToInstall|Коллекция String|Свойство для представления языковых стандартов, которые устанавливаются при установке приложения из Office 365. Используется стандартный 6033 RFC. Параметры REF:https://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |installProgressDisplayLevel|[officeSuiteInstallProgressDisplayLevel](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Чтобы задать уровень отображения для пользовательского интерфейса программы установки ход выполнения установки на устройстве. Возможные значения: `none`, `full`.|
 |shouldUninstallOlderVersionsOfOffice|Логический|Свойство, позволяющее определить, нужно ли удалить существующий MSI Office, если пакет приложений Office 365 развертывается на устройство или нет.|
-|targetVersion|Строка|Свойство для представления конкретной версия набора приложений Office 365, должны оставаться развернутое на устройствах.|
-|updateVersion|Строка|Свойство для представления версии обновления, в котором версия целевой доступна для набора приложений Office 365.|
+|targetVersion|String|Свойство для представления конкретной версия набора приложений Office 365, должны оставаться развернутое на устройствах.|
+|updateVersion|String|Свойство для представления версии обновления, в котором версия целевой доступна для набора приложений Office 365.|
+|officeConfigurationXml|Binary|Свойство для представления XML-файл конфигурации, который может использоваться для приложений Office профессиональный плюс. Приоритет над другие свойства. Если этот параметр указан, XML-файл конфигурации будет использоваться для создания приложения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -99,6 +103,10 @@ ms.locfileid: "27916175"
   "notes": "String",
   "uploadState": 1024,
   "publishingState": "String",
+  "isAssigned": true,
+  "roleScopeTagIds": [
+    "String"
+  ],
   "autoAcceptEula": true,
   "productIds": [
     "String"
@@ -128,10 +136,10 @@ ms.locfileid: "27916175"
   "installProgressDisplayLevel": "String",
   "shouldUninstallOlderVersionsOfOffice": true,
   "targetVersion": "String",
-  "updateVersion": "String"
+  "updateVersion": "String",
+  "officeConfigurationXml": "binary"
 }
 ```
-
 
 
 

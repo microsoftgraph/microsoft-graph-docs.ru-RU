@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса iosDeviceType
 description: Содержит свойства возможных типов устройств iOS, на которых может работать мобильное приложение.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2fe1f686052468bbab5d7115541a631b77073d6e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b68c7ce163dbf0f9232bf53d919ae84c7906c997
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977166"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395386"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства возможных типов устройств iOS, на которых может работать мобильное приложение.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -26,6 +27,7 @@ ms.locfileid: "27977166"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -40,7 +42,6 @@ ms.locfileid: "27977166"
   "iPhoneAndIPod": true
 }
 ```
-
 
 
 

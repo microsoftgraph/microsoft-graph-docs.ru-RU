@@ -1,27 +1,28 @@
 ---
 title: Тип перечисления deviceManagementExchangeAccessStateReason
 description: Причина состояния доступа устройства Exchange.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 25d5ac8a5624352b9c474caf4088709ca1453387
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b7a076239e49c59cb95cd1c1f644bc9a2f1f906e
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981849"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395862"
 ---
 # <a name="devicemanagementexchangeaccessstatereason-enum-type"></a>Тип перечисления deviceManagementExchangeAccessStateReason
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Причина состояния доступа устройства Exchange.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Нет причин состояние доступа, обнаруженные в Exchange|
+|none|0|Нет причин состояние доступа, обнаруженные в Exchange|
 |unknown|1|Причина состояния Неизвестный доступ|
 |exchangeGlobalRule|2|Определяет, какие Exchange глобальное правило состояние доступа|
 |exchangeIndividualRule|3|Определяет, какие Exchange отдельное правило состояние доступа|
@@ -37,7 +38,6 @@ ms.locfileid: "27981849"
 |azureADBlockDueToAccessPolicy|14|Состояние доступа отозван политикой доступа AAD|
 |compromisedPassword|15|Состояние доступа отозван компрометации пароля|
 |deviceNotKnownWithManagedApp|16|Состояние доступа отозван запрос управляемых приложений|
-
 
 
 

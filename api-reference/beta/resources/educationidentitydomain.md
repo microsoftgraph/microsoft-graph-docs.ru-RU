@@ -4,12 +4,12 @@ description: 'Представляет сопоставление между т�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 280ae1a65e0c14e7960d316cc21154e405f2ee0d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4eb9e5b58f62a23dbe1b450c2ec6b9d2f94970ac
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982031"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395652"
 ---
 # <a name="educationidentitydomain-resource-type"></a>Тип ресурса educationIdentityDomain
 
@@ -30,12 +30,12 @@ ms.locfileid: "27982031"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationIdentityDomain"
+  "@odata.type": "microsoft.graph.educationIdentityDomain"
 }-->
 
 ```json
 {
-    "appliesTo": {"@odata.type": "#microsoft.graph.educationUserRole"},
+    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
     "name": "String"
 }
 ```

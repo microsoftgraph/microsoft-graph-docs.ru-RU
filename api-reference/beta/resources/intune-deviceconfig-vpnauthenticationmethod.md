@@ -1,29 +1,29 @@
 ---
 title: Тип перечисления vpnAuthenticationMethod
 description: Метод проверки подлинности через VPN.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c946f531502bd3361068c813eefc39416537e942
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 33400d7fcd94cd0aec0111b0627704a75e9729aa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986182"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396107"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>Тип перечисления vpnAuthenticationMethod
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Метод проверки подлинности через VPN.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |certificate|0|Проверка подлинности с помощью сертификата.|
 |usernameAndPassword|1|Использовать имя пользователя и пароль для проверки подлинности.|
-
 
 
 

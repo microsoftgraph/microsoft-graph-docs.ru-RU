@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления managedAppDataStorageLocation
 description: Места хранения, где управляемых приложений могут потенциально хранят свои данные
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f7d54d5dfe1e1fc272e78b8ff0258a20e6f3c2db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: acb9c820670cdf0781de0be576152f25c2a131db
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979322"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395778"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>Тип перечисления managedAppDataStorageLocation
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Места хранения, где управляемых приложений могут потенциально хранят свои данные
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |oneDriveForBusiness|1|OneDrive для бизнеса|
 |sharePoint|2|SharePoint|
 |localStorage|6|Локальное хранилище на устройстве|
-
 
 
 

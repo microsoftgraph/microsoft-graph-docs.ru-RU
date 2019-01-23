@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса managementConditionStatement
 description: Условная инструкция управления — это группа управления условий, включения или отключения конфигурации устройства или приложение при все содержащиеся управления условий.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 82a99e878337cf04659b8bc7da7e821bd8afb6aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3292dae241a3f79cc7d3417c93ccc1187c8b8d17
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929986"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395995"
 ---
 # <a name="managementconditionstatement-resource-type"></a>Тип ресурса managementConditionStatement
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Условная инструкция управления — это группа управления условий, включения или отключения конфигурации устройства или приложение при все содержащиеся управления условий.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -32,9 +33,9 @@ ms.locfileid: "27929986"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
-|displayName|Строка|Имя оператора условия управления определенные администратором.|
-|описание|Строка|Описание управления условная инструкция определенные администратором.|
+|id|String|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
+|displayName|String|Имя оператора условия управления определенные администратором.|
+|description|String|Описание управления условная инструкция определенные администратором.|
 |createdDateTime|DateTimeOffset|Время создания условная инструкция управления. Создан со стороны службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условная инструкция управления. Обновление со стороны службы.|
 |выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используется для оценки Если инструкции с условием управления был активирован деактивирован.|
@@ -42,7 +43,7 @@ ms.locfileid: "27929986"
 |applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) коллекции|Применимые платформы для этой условная инструкция управления.
 Отсчитывается от нужна условия управления, связанные с управлением условие оператора и поиск пересечения применимых платформ.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |managementConditions|[managementCondition](../resources/intune-fencing-managementcondition.md) коллекции|Условия управления, связанный со условная инструкция управления.|
@@ -72,7 +73,6 @@ ms.locfileid: "27929986"
   ]
 }
 ```
-
 
 
 

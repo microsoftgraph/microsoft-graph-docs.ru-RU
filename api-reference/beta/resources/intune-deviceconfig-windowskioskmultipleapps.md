@@ -1,36 +1,38 @@
 ---
 title: Тип ресурса windowsKioskMultipleApps
 description: Класс, используемый для идентификации конфигурацию разных приложения для базовой конфигурации
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3770f8c63be230dff97e43d3706ed35d79826751
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: b71b8a57151b08d0297a89dfd815f72d66c2d12a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977131"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396030"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, используемый для идентификации конфигурацию разных приложения для базовой конфигурации
+
 
 Наследуется от [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) коллекции|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск.|
-|showTaskBar|Boolean|Этот параметр позволяет администратору задать, отображается ли панель задач.|
-|disallowDesktopApps|Boolean|Этот параметр показывает, что приложений для настольных систем. По умолчанию установлено значение true.|
+|apps|[windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md) коллекции|Это единственный приложений для магазина Windows, чтобы оно было доступно для запуска в меню Пуск. Эта коллекция может содержать не более 128 элементов.|
+|showTaskBar|Логический|Этот параметр позволяет администратору задать, отображается ли панель задач.|
+|disallowDesktopApps|Логический|Этот параметр показывает, что приложений для настольных систем. По умолчанию установлено значение true.|
 |startMenuLayoutXml|Binary|Позволяет администраторам переопределить макет Пуск по умолчанию и не позволяет пользователю изменять его.Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML должен быть в двоичном формате.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -46,6 +48,7 @@ ms.locfileid: "27977131"
       "@odata.type": "microsoft.graph.windowsKioskUWPApp",
       "startLayoutTileSize": "String",
       "name": "String",
+      "appType": "String",
       "appUserModelId": "String",
       "appId": "String",
       "containedAppId": "String"
@@ -56,7 +59,6 @@ ms.locfileid: "27977131"
   "startMenuLayoutXml": "binary"
 }
 ```
-
 
 
 

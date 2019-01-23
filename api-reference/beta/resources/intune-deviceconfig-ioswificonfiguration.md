@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса iosWiFiConfiguration
 description: С указанием конфигураций в этом профиле можно указать устройство операций ввода-вывода для подключения к конечной точке желаемую Wi-Fi. Путем указания типов безопасности и метод проверки подлинности ожидаемого Wi-Fi конечной точкой подключения Wi-Fi можно сделать полностью для конечных пользователей. Этот профиль предоставляет типы безопасности ограниченный и проще, чем Enterprise Wi-Fi профиль.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a0d08c131a33c5a1a33853d7eb37b563a7723637
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 416384bc74da70058c502159b07173859518ae21
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927928"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396597"
 ---
 # <a name="ioswificonfiguration-resource-type"></a>Тип ресурса iosWiFiConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 С указанием конфигураций в этом профиле можно указать устройство операций ввода-вывода для подключения к конечной точке желаемую Wi-Fi. Путем указания типов безопасности и метод проверки подлинности ожидаемого Wi-Fi конечной точкой подключения Wi-Fi можно сделать полностью для конечных пользователей. Этот профиль предоставляет типы безопасности ограниченный и проще, чем Enterprise Wi-Fi профиль.
+
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
@@ -33,26 +34,26 @@ ms.locfileid: "27927928"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|networkName|Строка|Сетевое имя|
-|SSID|Строка|Это имя в сети Wi-Fi, который передается на все устройства.|
+|networkName|String|Сетевое имя|
+|SSID|String|Это имя в сети Wi-Fi, который передается на все устройства.|
 |connectAutomatically|Логический|Автоматическое подключение, сети, если она в диапазоне. Установка значения true пропустите строке пользователя и автоматически подключаться к сети Wi-Fi устройства.|
 |connectWhenNetworkNameIsHidden|Логический|Если для сети не передают свое имя (SSID) подключиться. Когда установлено значение true, этот профиль принудительно устройства для подключения к сети, в которой не передает свое имя SSID для всех устройств.|
 |wiFiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Указывает, используется ли конечная точка Wi-Fi тип безопасности на основе внешних Приложений. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
 |proxySettings|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Тип прокси-сервера для этого подключения Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
-|proxyManualAddress|Строка|IP-адрес или DNS-имя узла прокси-сервера при выборе ручной настройки.|
+|proxyManualAddress|String|IP-адрес или DNS-имя узла прокси-сервера при выборе ручной настройки.|
 |proxyManualPort|Int32|Порт прокси-сервера при выборе ручной настройки.|
-|proxyAutomaticConfigurationUrl|Строка|URL-адрес прокси-сервера сценарий автоматической настройки сервера при выборе автоматической настройки. Этот URL-адрес обычно имеет расположение файла PAC (автоматической конфигурации прокси-сервера).|
-|preSharedKey|Строка|Это предварительный ключ для WPA личных Сеть Wi-Fi.|
+|proxyAutomaticConfigurationUrl|String|URL-адрес прокси-сервера сценарий автоматической настройки сервера при выборе автоматической настройки. Этот URL-адрес обычно имеет расположение файла PAC (автоматической конфигурации прокси-сервера).|
+|preSharedKey|String|Это предварительный ключ для WPA личных Сеть Wi-Fi.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -96,7 +97,6 @@ ms.locfileid: "27927928"
   "preSharedKey": "String"
 }
 ```
-
 
 
 

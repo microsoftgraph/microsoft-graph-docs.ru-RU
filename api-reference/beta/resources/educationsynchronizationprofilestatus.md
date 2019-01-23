@@ -4,12 +4,12 @@ description: 'Представляет состояние синхронизац
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d16619b0cf1e2c09358cf585b896b0c7c7d4f318
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1fd77f48544e5e6bc0c582e4ce9fb2a5b1b6601a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396156"
 ---
 # <a name="educationsynchronizationprofilestatus-resource-type"></a>Тип ресурса educationSynchronizationProfileStatus
 
@@ -29,7 +29,7 @@ ms.locfileid: "27928929"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **status** | string | Состояние синхронизации. Возможные значения: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
+| **status** | educationSynchronizationStatus | Состояние синхронизации. Возможные значения: `paused`, `inProgress`, `success`, `error`, `quarantined`, `validationError`. |
 | **lastSynchronizationDateTime** | DateTimeOffset | Представляет время, когда наблюдались последних изменений в каталоге.  |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,7 +38,7 @@ ms.locfileid: "27928929"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfileStatus"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"
 }-->
 
 ```json

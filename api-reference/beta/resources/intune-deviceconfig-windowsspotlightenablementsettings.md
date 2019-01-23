@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления windowsSpotlightEnablementSettings
 description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4327f60cb5f5154ed3f1c6754e693b5809c610b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d23e481ff6d5ae7b1c36bf09a31753f4a7c6d734
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923049"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395470"
 ---
 # <a name="windowsspotlightenablementsettings-enum-type"></a>Тип перечисления windowsSpotlightEnablementSettings
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|В центре внимания на экран блокировки не настроен|
 |Этот параметр отключен|1|Отключение Windows в центре внимания на экран блокировки|
 |enabled|2|Включить Windows в центре внимания на экран блокировки|
-
 
 
 

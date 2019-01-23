@@ -4,12 +4,12 @@ description: Политики защиты приложений в Microsoft Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 2a701dfc36615facdf64e7588f8688eb495906a3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90764386d1241a0cec7552435ebd605d61dcae5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991155"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29395008"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -24,6 +24,7 @@ ms.locfileid: "27991155"
 Для управления политиками защиты приложений в Intune используются перечисленные ниже ресурсы Graph.
 
 - [Android устройства владельцем регистрации профилей](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Код компании Android подачи заявок](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android (en), для работы приложения](intune-apps-androidforworkapp.md)
 - [Схема конфигурации приложения Android for Work](intune-androidforwork-androidforworkappconfigurationschema.md)
 - [Элемент схемы конфигурации приложения Android for Work](intune-androidforwork-androidforworkappconfigurationschemaitem.md)
@@ -73,6 +74,10 @@ ms.locfileid: "27991155"
 - [приложение VPP iOS отозвать результат действия лицензий](intune-apps-iosvppapprevokelicensesactionresult.md)
 - [Электронная книга VPP для iOS](intune-books-iosvppebook.md)
 - [Назначение электронной книги VPP для iOS](intune-books-iosvppebookassignment.md)
+- [Mac os VPP приложения](intune-apps-macosvppapp.md)
+- [Mac os VPP назначенных лицензия](intune-apps-macosvppappassignedlicense.md)
+- [Настройки назначения приложения VPP Mac os](intune-apps-macosvppappassignmentsettings.md)
+- [Mac os VPP приложения отозвать результат действия лицензий](intune-apps-macosvppapprevokelicensesactionresult.md)
 - [приложение macOS LOB](intune-apps-macoslobapp.md)
 - [приложение дочерних macOS LOB](intune-apps-macoslobchildapp.md)
 - [macOS минимальной операционной системы](intune-apps-macosminimumoperatingsystem.md)
@@ -111,10 +116,17 @@ ms.locfileid: "27991155"
 - [Состояние публикации мобильного приложения](intune-apps-mobileapppublishingstate.md)
 - [Содержащийся мобильного приложения](intune-apps-mobilecontainedapp.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
+- [Состояние записи клиента Office](intune-cirrus-officeclientcheckinstatus.md)
+- [Настройка клиента Office](intune-cirrus-officeclientconfiguration.md)
+- [Назначение конфигурации клиента Office](intune-cirrus-officeclientconfigurationassignment.md)
+- [Настройки Office](intune-cirrus-officeconfiguration.md)
+- [Цель назначения конфигурации Office](intune-cirrus-officeconfigurationassignmenttarget.md)
+- [Цель назначения группы конфигурации Office](intune-cirrus-officeconfigurationgroupassignmenttarget.md)
 - [Код продукта Office](intune-apps-officeproductid.md)
 - [Набор приложений Office](intune-apps-officesuiteapp.md)
 - [Набор приложений Office установите уровень отображения хода выполнения](intune-apps-officesuiteinstallprogressdisplaylevel.md)
 - [Канал обновления Office](intune-apps-officeupdatechannel.md)
+- [Сводка checkin пользователя Office](intune-cirrus-officeusercheckinsummary.md)
 - [Конечное приложение сведений о состоянии](intune-apps-resultantappstatedetail.md)
 - [Сертификат подписи кода Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Состояние установки пользователя](intune-apps-userappinstallstatus.md)
@@ -122,6 +134,7 @@ ms.locfileid: "27991155"
 - [Тип лицензирования VPP](intune-apps-vpplicensingtype.md)
 - [Веб-приложение](intune-apps-webapp.md)
 - [Приложение Win32 LOB](intune-apps-win32lobapp.md)
+- [Настройки для назначения Win32 бизнес-приложения](intune-apps-win32lobappassignmentsettings.md)
 - [Обнаружение Win32 бизнес-приложения](intune-apps-win32lobappdetection.md)
 - [Бизнес-Win32 оператор определения приложения](intune-apps-win32lobappdetectionoperator.md)
 - [Бизнес-Win32 обнаружения системы файл приложения](intune-apps-win32lobappfilesystemdetection.md)
@@ -129,6 +142,7 @@ ms.locfileid: "27991155"
 - [Установка возможностей Win32 бизнес-приложения](intune-apps-win32lobappinstallexperience.md)
 - [Win32 бизнес-информации о приложении msi](intune-apps-win32lobappmsiinformation.md)
 - [Win32 бизнес-тип пакета msi приложения](intune-apps-win32lobappmsipackagetype.md)
+- [Уведомление Win32 бизнес-приложения](intune-apps-win32lobappnotification.md)
 - [Бизнес-Win32 обнаружения сценария командной консоли приложение power](intune-apps-win32lobapppowershellscriptdetection.md)
 - [Бизнес-Win32 обнаружения кода приложения продукта](intune-apps-win32lobappproductcodedetection.md)
 - [Бизнес-Win32 обнаружения реестра приложений](intune-apps-win32lobappregistrydetection.md)
@@ -141,6 +155,8 @@ ms.locfileid: "27991155"
 - [Тип устройства Windows](intune-apps-windowsdevicetype.md)
 - [Минимальная версия операционной системы Windows](intune-apps-windowsminimumoperatingsystem.md)
 - [Windows Mobile MSI](intune-apps-windowsmobilemsi.md)
+- [Настройка клиента office Windows](intune-cirrus-windowsofficeclientconfiguration.md)
+- [Настройка безопасности клиента office Windows](intune-cirrus-windowsofficeclientsecurityconfiguration.md)
 - [Сведения о пакете Windows](intune-apps-windowspackageinformation.md)
 - [AppX 8.1 Windows Phone](intune-apps-windowsphone81appx.md)
 - [Набор AppX 8.1 Windows Phone](intune-apps-windowsphone81appxbundle.md)

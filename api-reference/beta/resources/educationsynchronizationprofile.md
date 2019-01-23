@@ -4,12 +4,12 @@ description: Представляет набор, использовавшеес
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: a9976538923d35c38bda001d73cabc1b4c3f6814
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b753e904a0c70d5c0ae83dbb3d9a88aff8401eac
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940899"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29396954"
 ---
 # <a name="educationsynchronizationprofile-resource-type"></a>Тип ресурса educationSynchronizationProfile
 
@@ -39,11 +39,11 @@ ms.locfileid: "27940899"
 |:-|:-|:-|
 | **displayName** | строка |  Имя профиля конфигурации синхронизации удостоверения.         |
 | **dataProvider** | [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md) |  Поставщик данных, используемый для профиля.         |
-| **identitysynchronizationconfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Конфигурация [создания](educationidentitycreationconfiguration.md) или [соответствия](educationidentitymatchingconfiguration.md) удостоверений.        |
+| **identitySynchronizationConfiguration** | [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md) | Конфигурация [создания](educationidentitycreationconfiguration.md) или [соответствия](educationidentitymatchingconfiguration.md) удостоверений.        |
 | **licensesToAssign** | [educationSynchronizationLicenseAssignment](educationsynchronizationlicenseassignment.md) коллекции|  Настройка установки лицензии.        |
-| **state** | строка |  Состояние профиля. Возможные значения: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
+| **state** | educationSynchronizationProfileState |  Состояние профиля. Возможные значения: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`.          |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
@@ -58,7 +58,7 @@ ms.locfileid: "27940899"
   "optionalProperties": [
 
   ],
-  "@odata.type": "#microsoft.graph.educationSynchronizationProfile"
+  "@odata.type": "microsoft.graph.educationSynchronizationProfile"
 }-->
 
 ```json
@@ -67,8 +67,8 @@ ms.locfileid: "27940899"
     "state": { "@odata.type": "microsoft.graph.educationSynchronizationProfileState" },
     "profileStatus": {"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus"},
     "errors": [{"@odata.type": "microsoft.graph.educationSynchronizationProfileStatus" }],
-    "dataProvider": { "@odata.type": "#microsoft.graph.educationcsvdataprovider" },
-    "identitySynchronizationConfiguration": { "@odata.type": "#microsoft.graph.educationIdentitySynchronizationConfiguration" },
+    "dataProvider": { "@odata.type": "microsoft.graph.educationCsvDataProvider" },
+    "identitySynchronizationConfiguration": { "@odata.type": "microsoft.graph.educationIdentitySynchronizationConfiguration" },
     "licensesToAssign": [{"@odata.type":"microsoft.graph.educationSynchronizationLicenseAssignment"}],
     "handleSpecialCharacterConstraint": "Boolean"
 }
