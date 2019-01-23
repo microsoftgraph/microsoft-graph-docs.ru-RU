@@ -1,15 +1,15 @@
 ---
 title: 'user: getMemberGroups'
-description: Возвращает все группы, в которые входит пользователь. Проверка доверия транзитивных, в отличие от чтения
+description: 'Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: fb8caefae8b7c3ced9630309cae51a3b74b45937
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: d850b515a52ef60f10d694f358f45b616957e214
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969207"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415140"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
@@ -23,11 +23,11 @@ ms.locfileid: "27969207"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                                                                          |
 | :------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Делегированное (рабочая или учебная учетная запись)     | ~~User.Read и Group.Read.All~~, ~~User.ReadBasic.All и Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
-| Для приложения                            | _Group.Read.All_, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
+| Делегированные (рабочая или учебная учетная запись)     |  User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
+| Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
 
-> **Примечание:** Этот интерфейс API в настоящее время требует `Directory.Read.All` разрешений или выше. С помощью разрешений Group.Read.All, отдельно или в сочетании с `User.` разрешений, возвращается ошибка. Мы знаем об этой проблеме.
+> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. При использовании разрешения Group.Read.All отдельно или вместе с разрешением `User.` возникает ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -81,7 +81,8 @@ Content-length: 33
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 
 <!-- {
   "blockType": "response",
