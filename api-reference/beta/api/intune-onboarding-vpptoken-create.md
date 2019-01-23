@@ -1,25 +1,26 @@
 ---
 title: Создать VPP токен
 description: Создайте новый объект vppToken.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fc4313f5e1d83a8ed202eac47ed070cf8dc1804c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7536e9c78245aecec3acf1985593277007398740
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914914"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419837"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создайте новый объект [vppToken](../resources/intune-onboarding-vpptoken.md).
+
 ## <a name="prerequisites"></a>Обязательные требования
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -64,9 +65,10 @@ POST /deviceAppManagement/vppTokens
 |automaticallyUpdateApps|Логическое|Автоматически обновятся все приложения, не только для токена VPP.|
 |countryOrRegion|Строка|Автоматически обновятся все приложения, не только для токена VPP.|
 |dataSharingConsentGranted|Логический|Согласны полномочия для данных, общий доступ для покупки программа корпоративного Apple.|
-|displayName|Строка|Администратор указанного маркера понятное имя.|
-|locationName|Строка|Маркер расположение, возвращенные Apple VPP.|
+|displayName|String|Администратор указанного маркера понятное имя.|
+|locationName|String|Маркер расположение, возвращенные Apple VPP.|
 |claimTokenManagementFromExternalMdm|Логический|Admin разрешаете разрешить информация по получению маркеров управления из внешнего MDM.|
+|roleScopeTagIds|Коллекция String|Роль область теги идентификаторов для этой сущности.|
 
 
 
@@ -74,12 +76,13 @@ POST /deviceAppManagement/vppTokens
 В случае успешного выполнения данный метод возвращает`201 Created` код отклика и объект [vppToken](../resources/intune-onboarding-vpptoken.md) в форме для обратной связи.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/vppTokens
 Content-type: application/json
-Content-length: 1004
+Content-length: 1002
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -89,7 +92,6 @@ Content-length: 1004
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
   "lastSyncDateTime": "2017-01-01T00:02:49.3205976-08:00",
   "token": "Token value",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "state": "valid",
   "tokenActionResults": [
     {
@@ -106,16 +108,19 @@ Content-length: 1004
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1053
+Content-Length: 1115
 
 {
   "@odata.type": "#microsoft.graph.vppToken",
@@ -143,10 +148,12 @@ Content-Length: 1053
   "dataSharingConsentGranted": true,
   "displayName": "Display Name value",
   "locationName": "Location Name value",
-  "claimTokenManagementFromExternalMdm": true
+  "claimTokenManagementFromExternalMdm": true,
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
-
 
 
 

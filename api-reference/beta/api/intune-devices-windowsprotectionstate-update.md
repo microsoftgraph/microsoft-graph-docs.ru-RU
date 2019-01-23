@@ -1,25 +1,26 @@
 ---
 title: Обновление windowsProtectionState
 description: Обновление свойства объекта windowsProtectionState.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ce3c4fcd46e2d627f94e1728d38e9a8f0f91ad30
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: faad744f1a7910b693ea7f87ea0e2ab5dddd7a25
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939877"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29406208"
 ---
 # <a name="update-windowsprotectionstate"></a>Обновление windowsProtectionState
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойства объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
-## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+## <a name="prerequisites"></a>Предварительные требования
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -44,14 +45,14 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON для объекта [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) .
 
 В следующей таблице показаны свойства, которые необходимы для создания [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор для объекта состояния защиты устройств. — Идентификатор устройства, устройства|
+|id|String|Уникальный идентификатор для объекта состояния защиты устройств. — Идентификатор устройства, устройства|
 |malwareProtectionEnabled|Логический|Защита от вредоносных программ включен или не|
 |deviceState|[windowsDeviceHealthState](../resources/intune-devices-windowsdevicehealthstate.md)|Состояние компьютера (например, очистить или Ожидание полного сканирования или помещенных в очередь перезагрузки и т.). Возможные значения: `clean`, `fullScanPending`, `rebootPending`, `manualStepsPending`, `offlineScanPending`, `critical`.|
 |realTimeProtectionEnabled|Логический|Защита в режиме реального времени включено или нет?|
@@ -61,29 +62,31 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |signatureUpdateOverdue|Логический|Устаревший подписи или нет?|
 |rebootRequired|Логический|Требуется ли перезагрузка?|
 |fullScanRequired|Логический|Полная проверка, требуется или нет?|
-|engineVersion|Строка|Версия текущей конечной точки защиты ядра|
-|signatureVersion|Строка|Текущая версия определения вредоносных программ|
-|antiMalwareVersion|Строка|Текущая платформа защита от вредоносных программ версии|
+|engineVersion|String|Версия текущей конечной точки защиты ядра|
+|signatureVersion|String|Текущая версия определения вредоносных программ|
+|antiMalwareVersion|String|Текущая платформа защита от вредоносных программ версии|
 |lastQuickScanDateTime|DateTimeOffset|Даты и времени последнего быстрого сканирования|
 |lastFullScanDateTime|DateTimeOffset|Даты и времени последнего быстрого сканирования|
-|lastQuickScanSignatureVersion|Строка|Последняя версия подписи быстрого сканирования|
-|lastFullScanSignatureVersion|Строка|Последняя версия полная проверка подписи|
+|lastQuickScanSignatureVersion|String|Последняя версия подписи быстрого сканирования|
+|lastFullScanSignatureVersion|String|Последняя версия полная проверка подписи|
 |lastReportedDateTime|DateTimeOffset|Последнее состояние работоспособности устройства, обнаруженных времени|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md) объекта в теле ответа.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsMalwareInformation/{windowsMalwareInformationId}/windowsDevicesProtectionState/{windowsProtectionStateId}
 Content-type: application/json
-Content-length: 804
+Content-length: 865
 
 {
+  "@odata.type": "#microsoft.graph.windowsProtectionState",
   "malwareProtectionEnabled": true,
   "deviceState": "fullScanPending",
   "realTimeProtectionEnabled": true,
@@ -104,7 +107,7 @@ Content-length: 804
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
@@ -133,7 +136,6 @@ Content-Length: 914
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
 
 
 

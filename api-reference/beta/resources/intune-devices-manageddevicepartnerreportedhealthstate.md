@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления managedDevicePartnerReportedHealthState
 description: Состояния работоспособности недоступны для API состояния устройства
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 14fe3c6769e717abb3d899e6ce7da33215a04a78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: cb5b13ceceab27e1e88a69310a3198159f5e24c1
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991764"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418829"
 ---
 # <a name="manageddevicepartnerreportedhealthstate-enum-type"></a>Тип перечисления managedDevicePartnerReportedHealthState
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояния работоспособности недоступны для API состояния устройства
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -31,7 +32,6 @@ ms.locfileid: "27991764"
 |не отвечает|7|Устройство считается не отвечает партнером защиты мобильных угроз. Неизвестный работоспособности устройства.|
 |раскрыты|8|Устройство считается раскрыты вторжений партнером. Это означает, устройство имеет active угроз или риск, который неустранимых легко конечным пользователем и пользователя, обратившись администратор свои ИТ.|
 |неправильно настроено|9|Устройство считается неправильно настроено с партнером защита от угроз. Это означает, что устройства отсутствует обязательный профиль или конфигурации для партнера зашиты угрозы для правильной и, следовательно, угроз или анализ рисков не сможет выполнить.|
-
 
 
 

@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса windowsInformationProtectionPolicy
 description: Политика для Windows Information Protection без MDM
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fbb324a0bafbbd0a35a9a5b9490c4f86f9eee919
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: a0da31cd2f487e3e9acaf97c543781a5ec316169
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962809"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419305"
 ---
 # <a name="windowsinformationprotectionpolicy-resource-type"></a>Тип ресурса windowsInformationProtectionPolicy
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Политика для Windows Information Protection без MDM
+
 
 Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).
 
@@ -33,14 +34,15 @@ ms.locfileid: "27962809"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|описание|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |enforcementLevel|[windowsInformationProtectionEnforcementLevel](../resources/intune-mam-windowsinformationprotectionenforcementlevel.md)|Принудительное применение уровень НЗП. В разделе Определение перечисления для поддерживаемых значений унаследованные от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md). Возможные значения: `noProtection`, `encryptAndAuditOnly`, `encryptAuditAndPrompt`, `encryptAuditAndBlock`.|
-|enterpriseDomain|Строка|Основной домен предприятия. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
+|enterpriseDomain|String|Основной домен предприятия. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |enterpriseProtectedDomainNames|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Список доменов предприятия, подлежащих защите. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |protectionUnderLockConfigRequired|Логический|Указывает, следует ли настроить функцию защиты с блокировкой (другое название — шифрование с ПИН-кодом). Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |dataRecoveryCertificate|[windowsInformationProtectionDataRecoveryCertificate](../resources/intune-mam-windowsinformationprotectiondatarecoverycertificate.md)|Указывает сертификат, который можно использовать для восстановления данных из зашифрованных файлов. То же, что сертификат DRA для шифрованной файловой системы (EFS). Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
@@ -62,7 +64,7 @@ ms.locfileid: "27962809"
 |smbAutoEncryptedFileExtensions|Коллекция [windowsInformationProtectionResourceCollection](../resources/intune-mam-windowsinformationprotectionresourcecollection.md)|Задает список расширений. Файлы с этими расширениями шифруются при копировании из общей папки SMB в пределах предприятия. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [windowsInformationProtection](../resources/intune-mam-windowsinformationprotection.md).|
 |revokeOnMdmHandoffDisabled|Логический|Новое свойство в RS2, документация готовится.|
-|mdmEnrollmentUrl|Строка|URL-адрес регистрации в системе MDM.|
+|mdmEnrollmentUrl|String|URL-адрес регистрации в системе MDM.|
 |windowsHelloForBusinessBlocked|Логический|Логическое значение, которое определяет Windows Hello для бизнеса как способ входа в Windows.|
 |pinMinimumLength|Int32|Целое число, которое определяет минимальное количество символов в ПИН-коде. Значение по умолчанию — 4. Для этого параметра политики можно установить значение в диапазоне от 4 до 127 (или числа, заданного в параметре политики "Максимальная длина ПИН-кода", если оно меньше).|
 |pinUppercaseLetters|[windowsInformationProtectionPinCharacterRequirements](../resources/intune-mam-windowsinformationprotectionpincharacterrequirements.md)|Целое число, которое настраивает использование прописных букв в ПИН-коде Windows Hello для бизнеса. Значение по умолчанию — NotAllow. Возможные значения: `notAllow`, `requireAtLeastOne`, `allow`.|
@@ -96,6 +98,9 @@ ms.locfileid: "27962809"
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "enforcementLevel": "String",
@@ -230,7 +235,6 @@ ms.locfileid: "27962809"
   "daysWithoutContactBeforeUnenroll": 1024
 }
 ```
-
 
 
 

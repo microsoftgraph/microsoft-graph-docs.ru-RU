@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 00859a4d9c230682a9ac66f5d46e9852ba141ce5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c6a984e0d6671416f84c51211019854a808f9728
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990875"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420075"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -19,7 +19,12 @@ ms.locfileid: "27990875"
 
 - [Согласие администратора](intune-devices-adminconsent.md)
 - [Состояние разрешения администратора](intune-devices-adminconsentstate.md)
+- [Сведения о загрузке семейства журнала приложений](intune-devices-applogcollectiondownloaddetails.md)
+- [Запрос семейства журнала приложения](intune-devices-applogcollectionrequest.md)
+- [Алгоритм расшифровки журнала приложения](intune-devices-applogdecryptionalgorithm.md)
+- [Отправка состояния журнала приложения](intune-devices-apploguploadstate.md)
 - [Сертификат push-уведомлений Apple](intune-devices-applepushnotificationcertificate.md)
+- [Apple VPP маркеров события по устранению неполадок](intune-troubleshooting-applevpptokentroubleshootingevent.md)
 - [Субъект аудита](intune-auditing-auditactor.md)
 - [Событие аудита](intune-auditing-auditevent.md)
 - [Свойство аудита](intune-auditing-auditproperty.md)
@@ -55,15 +60,17 @@ ms.locfileid: "27990875"
 - [Устройство управления сценарий пользовательской среды](intune-devices-devicemanagementscriptuserstate.md)
 - [Состояния подписки управления устройства](intune-devices-devicemanagementsubscriptionstate.md)
 - [Устройство управления подписками](intune-devices-devicemanagementsubscriptions.md)
+- [Сведения об ошибке устранения неполадок устройства управления](intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)
+- [Устройства управления устранению ошибки ресурсов](intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)
 - [Событие устранения проблем с управлением устройствами](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Сводка по операционной системе устройства](intune-devices-deviceoperatingsystemsummary.md)
 - [Общие сведения о защите устройств](intune-devices-deviceprotectionoverview.md)
 - [Состояние регистрации устройства](intune-devices-deviceregistrationstate.md)
-- [Внедренные s я код активации m](intune-esim-embeddedsimactivationcode.md)
-- [Внедренные s я m активации кода пула](intune-esim-embeddedsimactivationcodepool.md)
-- [Внедренные s я m активации кода пул назначений](intune-esim-embeddedsimactivationcodepoolassignment.md)
-- [Внедренные s я m состояния устройства](intune-esim-embeddedsimdevicestate.md)
-- [Внедренные s я m значение состояния устройства](intune-esim-embeddedsimdevicestatevalue.md)
+- [Встроенный код активации диспетчера установки](intune-esim-embeddedsimactivationcode.md)
+- [Внедренные пула кода активации диспетчера установки](intune-esim-embeddedsimactivationcodepool.md)
+- [Диспетчер установки активации кода пул назначений](intune-esim-embeddedsimactivationcodepoolassignment.md)
+- [Внедренные диспетчера установки состояния устройства](intune-esim-embeddedsimdevicestate.md)
+- [Значение состояния устройства внедренных диспетчера установки](intune-esim-embeddedsimdevicestatevalue.md)
 - [Событие устранения проблем с регистрацией](intune-troubleshooting-enrollmenttroubleshootingevent.md)
 - [Сведения об оборудовании](intune-devices-hardwareinformation.md)
 - [Состояние работоспособности](intune-devices-healthstate.md)
@@ -97,7 +104,6 @@ ms.locfileid: "27990875"
 - [Устранение неполадок в журнал конечного приложения мобильного приложения](intune-troubleshooting-mobileapptroubleshootingapptargethistory.md)
 - [Устранение неполадок в журнал обновления приложения мобильного приложения](intune-troubleshooting-mobileapptroubleshootingappupdatehistory.md)
 - [Устранение неполадок в журнал checkin устройства мобильного приложения](intune-troubleshooting-mobileapptroubleshootingdevicecheckinhistory.md)
-- [Событие устранения неполадок мобильного приложения](intune-troubleshooting-mobileapptroubleshootingevent.md)
 - [Элемент журнала устранения неполадок мобильного приложения](intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 - [Сеть IPv4 конфигурацию управления условие](intune-fencing-networkipv4configurationmanagementcondition.md)
 - [Сеть условия управления конфигурации IP версии 6](intune-fencing-networkipv6configurationmanagementcondition.md)

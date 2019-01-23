@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса deviceConfigurationConflictSummary
 description: Конфликт сводки для набора политик конфигурации устройства.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6f366a36b2b24eafee8e3685821688f2ac85a2bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 7e5f90ddc1b12f052dd603a6979d6838051504aa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948662"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418682"
 ---
 # <a name="deviceconfigurationconflictsummary-resource-type"></a>Тип ресурса deviceConfigurationConflictSummary
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Конфликт сводки для набора политик конфигурации устройства.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -31,12 +32,13 @@ ms.locfileid: "27948662"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |conflictingDeviceConfigurations|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик конфликтует с данного параметра|
-|id|Строка|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
+|id|String|Идентификатор для этого набора конфликтующие политики. Этот идентификатор — идентификаторы всех политик в ConflictingDeviceConfigurations в лексикографических порядке, разделенных точкой с подчеркивания.|
 |contributingSettings|Коллекция String|Набор параметров конфликтует с указанной политики|
 |deviceCheckinsImpacted|Int32|Count возвраты, на которые оказывает влияние конфликтующие политики и параметры|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -62,7 +64,6 @@ ms.locfileid: "27948662"
   "deviceCheckinsImpacted": 1024
 }
 ```
-
 
 
 

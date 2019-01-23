@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса termsAndConditionsGroupAssignment
-description: C) политики к определенной группе. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
-author: tfitzmac
+description: Сущность termsAndConditionsGroupAssignment представляет назначение присвоенное сроками и условиями (T&C) политики к определенной группе. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3efd219e175743afdca35d1b4348de0c6f571540
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 0cdb629c380898af078bf0b5eaeb3c39344a5657
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954115"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29418577"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Тип ресурса termsAndConditionsGroupAssignment
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность termsAndConditionsGroupAssignment представляет назначения сроками и условиями (T & C) групповой политики для указанной группы. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
+Сущность termsAndConditionsGroupAssignment представляет назначение присвоенное сроками и условиями (T&C) политики к определенной группе. Чтобы зарегистрировать устройства в Intune, пользователям в группе необходимо принять условия.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -31,9 +32,9 @@ ms.locfileid: "27954115"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|targetGroupId|Строка|Уникальный идентификатор группы, которая назначена политика T & C.|
+|targetGroupId|String|Уникальный идентификатор группы, которая назначена политика T&C.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|
@@ -53,7 +54,6 @@ ms.locfileid: "27954115"
   "targetGroupId": "String"
 }
 ```
-
 
 
 

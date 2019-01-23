@@ -4,12 +4,12 @@ description: Политики защиты приложений в Microsoft Int
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: ca628b81015527cb5ab7e508bebbb2808cdcde7e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 563f787f2eb37b278a16c35639e0d607d3d9ee68
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29419004"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -30,6 +30,7 @@ ms.locfileid: "27925457"
 - [Тип приложения](intune-wip-applicationtype.md)
 - [Защита управляемых приложений по умолчанию](intune-mam-defaultmanagedappprotection.md)
 - [Intune фирменной настройки профиля](intune-wip-intunebrandingprofile.md)
+- [Назначение фирменной настройки профиля Intune](intune-wip-intunebrandingprofileassignment.md)
 - [Защита управляемых приложений для iOS](intune-mam-iosmanagedappprotection.md)
 - [Регистрация управляемых приложений для iOS](intune-mam-iosmanagedappregistration.md)
 - [Идентификатор мобильных приложений для iOS](intune-mam-iosmobileappidentifier.md)
@@ -63,6 +64,7 @@ ms.locfileid: "27925457"
 - [Файл AppLocker для Windows Information Protection](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Сертификат восстановления данных Windows Information Protection](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Классическое приложение Windows Information Protection](intune-mam-windowsinformationprotectiondesktopapp.md)
+- [Защита устройства Windows сведения о регистрации](intune-mam-windowsinformationprotectiondeviceregistration.md)
 - [Уровень принудительное применение защиты сведения о Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Коллекция диапазонов IP-адресов Windows Information Protection](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Сводка по обучению сети Windows Information Protection](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
@@ -71,3 +73,4 @@ ms.locfileid: "27925457"
 - [Коллекция проксируемых доменов Windows Information Protection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Коллекция ресурсов Windows Information Protection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Приложение из магазина Windows Information Protection](intune-mam-windowsinformationprotectionstoreapp.md)
+- [Действие очистки защиты сведения о Windows](intune-mam-windowsinformationprotectionwipeaction.md)
