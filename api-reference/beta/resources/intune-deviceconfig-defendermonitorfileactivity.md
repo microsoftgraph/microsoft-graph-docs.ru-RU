@@ -1,32 +1,32 @@
 ---
 title: Тип перечисления defenderMonitorFileActivity
 description: Возможные значения для наблюдение за активностью файла.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: df973c06456484263b6346b5eaa48ac466de41f4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: d9b0f91d0a2d802fd573d7825da016dc8850e941
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967996"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29414958"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a><span data-ttu-id="b74f3-103">Тип перечисления defenderMonitorFileActivity</span><span class="sxs-lookup"><span data-stu-id="b74f3-103">defenderMonitorFileActivity enum type</span></span>
+# <a name="defendermonitorfileactivity-enum-type"></a><span data-ttu-id="0a6c7-103">Тип перечисления defenderMonitorFileActivity</span><span class="sxs-lookup"><span data-stu-id="0a6c7-103">defenderMonitorFileActivity enum type</span></span>
 
-> <span data-ttu-id="b74f3-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b74f3-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b74f3-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b74f3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0a6c7-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0a6c7-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="b74f3-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="b74f3-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="0a6c7-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b74f3-107">Возможные значения для наблюдение за активностью файла.</span><span class="sxs-lookup"><span data-stu-id="b74f3-107">Possible values for monitoring file activity.</span></span>
-## <a name="members"></a><span data-ttu-id="b74f3-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="b74f3-108">Members</span></span>
-|<span data-ttu-id="b74f3-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="b74f3-109">Member</span></span>|<span data-ttu-id="b74f3-110">Значение</span><span class="sxs-lookup"><span data-stu-id="b74f3-110">Value</span></span>|<span data-ttu-id="b74f3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b74f3-111">Description</span></span>|
+<span data-ttu-id="0a6c7-107">Возможные значения для наблюдение за активностью файла.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-107">Possible values for monitoring file activity.</span></span>
+
+## <a name="members"></a><span data-ttu-id="0a6c7-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="0a6c7-108">Members</span></span>
+|<span data-ttu-id="0a6c7-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="0a6c7-109">Member</span></span>|<span data-ttu-id="0a6c7-110">Значение</span><span class="sxs-lookup"><span data-stu-id="0a6c7-110">Value</span></span>|<span data-ttu-id="0a6c7-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0a6c7-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b74f3-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="b74f3-112">userDefined</span></span>|<span data-ttu-id="b74f3-113">0</span><span class="sxs-lookup"><span data-stu-id="b74f3-113">0</span></span>|<span data-ttu-id="b74f3-114">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="b74f3-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="b74f3-115">disable</span><span class="sxs-lookup"><span data-stu-id="b74f3-115">disable</span></span>|<span data-ttu-id="b74f3-116">1</span><span class="sxs-lookup"><span data-stu-id="b74f3-116">1</span></span>|<span data-ttu-id="b74f3-117">Отключение мониторинга активности файла.</span><span class="sxs-lookup"><span data-stu-id="b74f3-117">Disable monitoring file activity.</span></span>|
-|<span data-ttu-id="b74f3-118">monitorAllFiles</span><span class="sxs-lookup"><span data-stu-id="b74f3-118">monitorAllFiles</span></span>|<span data-ttu-id="b74f3-119">2</span><span class="sxs-lookup"><span data-stu-id="b74f3-119">2</span></span>|<span data-ttu-id="b74f3-120">Отслеживать все файлы.</span><span class="sxs-lookup"><span data-stu-id="b74f3-120">Monitor all files.</span></span>|
-|<span data-ttu-id="b74f3-121">monitorIncomingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="b74f3-121">monitorIncomingFilesOnly</span></span>|<span data-ttu-id="b74f3-122">3</span><span class="sxs-lookup"><span data-stu-id="b74f3-122">3</span></span>| <span data-ttu-id="b74f3-123">Отслеживание только входящих файлов.</span><span class="sxs-lookup"><span data-stu-id="b74f3-123">Monitor incoming files only.</span></span>|
-|<span data-ttu-id="b74f3-124">monitorOutgoingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="b74f3-124">monitorOutgoingFilesOnly</span></span>|<span data-ttu-id="b74f3-125">4</span><span class="sxs-lookup"><span data-stu-id="b74f3-125">4</span></span>|<span data-ttu-id="b74f3-126">Мониторинг только исходящих файлов.</span><span class="sxs-lookup"><span data-stu-id="b74f3-126">Monitor outgoing files only.</span></span>|
-
+|<span data-ttu-id="0a6c7-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="0a6c7-112">userDefined</span></span>|<span data-ttu-id="0a6c7-113">0</span><span class="sxs-lookup"><span data-stu-id="0a6c7-113">0</span></span>|<span data-ttu-id="0a6c7-114">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-114">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="0a6c7-115">Отключение</span><span class="sxs-lookup"><span data-stu-id="0a6c7-115">disable</span></span>|<span data-ttu-id="0a6c7-116">1</span><span class="sxs-lookup"><span data-stu-id="0a6c7-116">1</span></span>|<span data-ttu-id="0a6c7-117">Отключение мониторинга активности файла.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-117">Disable monitoring file activity.</span></span>|
+|<span data-ttu-id="0a6c7-118">monitorAllFiles</span><span class="sxs-lookup"><span data-stu-id="0a6c7-118">monitorAllFiles</span></span>|<span data-ttu-id="0a6c7-119">2</span><span class="sxs-lookup"><span data-stu-id="0a6c7-119">2</span></span>|<span data-ttu-id="0a6c7-120">Отслеживать все файлы.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-120">Monitor all files.</span></span>|
+|<span data-ttu-id="0a6c7-121">monitorIncomingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="0a6c7-121">monitorIncomingFilesOnly</span></span>|<span data-ttu-id="0a6c7-122">3</span><span class="sxs-lookup"><span data-stu-id="0a6c7-122">3</span></span>| <span data-ttu-id="0a6c7-123">Отслеживание только входящих файлов.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-123">Monitor incoming files only.</span></span>|
+|<span data-ttu-id="0a6c7-124">monitorOutgoingFilesOnly</span><span class="sxs-lookup"><span data-stu-id="0a6c7-124">monitorOutgoingFilesOnly</span></span>|<span data-ttu-id="0a6c7-125">4</span><span class="sxs-lookup"><span data-stu-id="0a6c7-125">4</span></span>|<span data-ttu-id="0a6c7-126">Мониторинг только исходящих файлов.</span><span class="sxs-lookup"><span data-stu-id="0a6c7-126">Monitor outgoing files only.</span></span>|
 
 
 
