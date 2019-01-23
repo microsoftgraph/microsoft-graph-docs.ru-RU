@@ -1,32 +1,34 @@
 ---
 title: Тип ресурса operatingSystemVersionRange
 description: Диапазон версии операционной системы.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c0b81482ad4b48ad5fe59b1ec0109fcd3bf03f83
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: aaac008b013a8bf2cfd1a88d1fab06a523abb949
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27918548"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398529"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Тип ресурса operatingSystemVersionRange
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Диапазон версии операционной системы.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|описание|Строка|Описание этого диапазона (например действительно 1702 сборок)|
-|lowestVersion|Строка|Низший включительно версия, которая содержит этот диапазон.|
-|highestVersion|Строка|Наибольший включительно версию, которая содержит этот диапазон.|
+|description|String|Описание этого диапазона (например действительно 1702 сборок)|
+|lowestVersion|String|Низший включительно версия, которая содержит этот диапазон.|
+|highestVersion|String|Наибольший включительно версию, которая содержит этот диапазон.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -42,7 +44,6 @@ ms.locfileid: "27918548"
   "highestVersion": "String"
 }
 ```
-
 
 
 

@@ -3,21 +3,22 @@ title: Тип ресурса windowsIdentityProtectionConfiguration
 description: Этот объект содержит описания объявленные методы, свойства и связи, предоставляемые Windows Hello для бизнеса.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 30cb45c30e59db0cfd0310bde019c8a4b5b26ab7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 431e85e0daddb10e2726dd65e5a6770cf80a0452
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957867"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398599"
 ---
 # <a name="windowsidentityprotectionconfiguration-resource-type"></a>Тип ресурса windowsIdentityProtectionConfiguration
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Этот объект содержит описания объявленные методы, свойства и связи, предоставляемые Windows Hello для бизнеса.
+
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
@@ -33,14 +34,15 @@ ms.locfileid: "27957867"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|useSecurityKeyForSignin|Логический|Логическое значение, используемое для включения Windows Hello безопасности ключа в виде учетные данные входа в систему.|
 |enhancedAntiSpoofingForFacialFeaturesEnabled|Логический|Логическое значение, используемое для включения усовершенствованные спуфинг anti для распознавания лица компонента на Windows Hello лицевой проверки подлинности.|
 |pinMinimumLength|Int32|Целое значение, задает минимальное число символов, необходимое для Windows Hello для бизнеса ПИН-кода. Допустимые значения: 4 до 127 включительно и меньше или равно значению набор для максимального ПИН-кода. Допустимые значения 4 до 127|
 |pinMaximumLength|Int32|Целое значение, которое задает максимальное число символов, допустимое для работы ПИН-кода. Допустимые значения: 4 до 127 включительно и больше или равно значение, установленное для минимальные ПИН-кода. Допустимые значения 4 до 127|
@@ -55,7 +57,7 @@ ms.locfileid: "27957867"
 |useCertificatesForOnPremisesAuthEnabled|Логический|Логическое значение, включающее Windows Hello для бизнеса для использования сертификатов для проверки подлинности локальным ресурсам.|
 |windowsHelloForBusinessBlocked|Логический|Логическое значение, которое блокирует Windows Hello для бизнеса, как метод для входа в Windows.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -87,6 +89,7 @@ ms.locfileid: "27957867"
   "description": "String",
   "displayName": "String",
   "version": 1024,
+  "useSecurityKeyForSignin": true,
   "enhancedAntiSpoofingForFacialFeaturesEnabled": true,
   "pinMinimumLength": 1024,
   "pinMaximumLength": 1024,
@@ -102,7 +105,6 @@ ms.locfileid: "27957867"
   "windowsHelloForBusinessBlocked": true
 }
 ```
-
 
 
 

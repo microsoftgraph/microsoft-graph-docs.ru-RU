@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления deviceGuardLocalSystemAuthorityCredentialGuardType
 description: Возможные значения параметров защиты учетных данных.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d284b81632c5ba48fa4c658719203a74fdf52837
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 8d8643744e1f5c36cf6c620ac85a6a99c9a77548
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952743"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398095"
 ---
 # <a name="deviceguardlocalsystemauthoritycredentialguardtype-enum-type"></a>Тип перечисления deviceGuardLocalSystemAuthorityCredentialGuardType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения параметров защиты учетных данных.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|0|Отключает защиты учетных данных удаленно Если ранее настроили без UEFI блокировки.|
 |enableWithUEFILock|1|Включение защиты учетных данных с UEFI блокировки.|
 |enableWithoutUEFILock|2|Включение защиты учетных данных без блокировки UEFI.|
-
 
 
 

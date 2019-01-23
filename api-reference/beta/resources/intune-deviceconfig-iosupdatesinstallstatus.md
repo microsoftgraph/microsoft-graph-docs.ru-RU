@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления iosUpdatesInstallStatus
 description: Н/Д
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d3c4d2735879c382c4bc5c2fd67438b941bb1190
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 1ae8e2503808009e0266a16431709b3eb0674bc0
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938057"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398431"
 ---
 # <a name="iosupdatesinstallstatus-enum-type"></a>Тип перечисления iosUpdatesInstallStatus
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -38,7 +39,6 @@ ms.locfileid: "27938057"
 |installFailed|-2016330702|Н/Д|
 |notSupportedOperation|-2016330701|Н/Д|
 |sharedDeviceUserLoggedInError|-2016330699|Н/Д|
-
 
 
 

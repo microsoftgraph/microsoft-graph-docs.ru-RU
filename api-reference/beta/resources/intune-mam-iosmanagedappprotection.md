@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса iosManagedAppProtection
 description: Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве iOS
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0834b335df5188f1db0cf245d3911a40b2837522
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c7e04fa6f1a9f37721ab96d1f029233779528c14
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912724"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29398186"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Тип ресурса iosManagedAppProtection
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Политика, используемая для настройки расширенных параметров управления для определенных групп безопасности и определенного набора приложений на устройстве iOS
+
 
 Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).
 
@@ -33,12 +34,13 @@ ms.locfileid: "27912724"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|описание|Строка|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|displayName|String|Отображаемое имя политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|description|String|Описание политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|id|Строка|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|version|Строка|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|version|String|Версия объекта. Наследуется от объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |periodOfflineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство не подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |periodOnlineBeforeAccessCheck|Продолжительность|Время до проверки доступа, когда устройство подключено к Интернету. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |allowedInboundDataTransferSources|[managedAppDataTransferLevel](../resources/intune-mam-managedappdatatransferlevel.md)|Источники, из которых разрешена передача данных. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `allApps`, `managedApps`, `none`.|
@@ -65,11 +67,11 @@ ms.locfileid: "27912724"
 |minimumWarningOsVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение о доступе к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumRequiredAppVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |minimumWarningAppVersion|String|В более старых версиях в управляемом приложении будет отображаться предупреждающее сообщение. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeOsVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
-|minimumWipeAppVersion|Строка|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeOsVersion|String|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
+|minimumWipeAppVersion|String|Версии меньше или равно указанную версию будет удаления управляемых приложений и данных связанные компании. Наследуется от объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).|
 |appActionIfDeviceComplianceRequired|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировки или очистки, когда устройства либо корневого или jailbroken, если DeviceComplianceRequired задано значение true. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
 |appActionIfMaximumPinRetriesExceeded|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, либо блок или стирание, на основании максимальное количество повторных попыток неправильный ПИН-код. Наследуется от [managedAppProtection](../resources/intune-mam-managedappprotection.md). Возможные значения: `block`, `wipe`.|
-|pinRequiredInsteadOfBiometricTimeout|Продолжительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
+|pinRequiredInsteadOfBiometricTimeout|Длительность|Время ожидания в минутах для закрепления приложения вместо секретный код не биометрия унаследованные от [managedAppProtection](../resources/intune-mam-managedappprotection.md)|
 |isAssigned|Логический|Указывает, применена ли политика к группам включения. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
 |targetedAppManagementLevels|[appManagementLevel](../resources/intune-mam-appmanagementlevel.md)|Уровни управления требуемого приложения для данной политики унаследованные от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md). Возможные значения: `unspecified`, `unmanaged`, `mdm`, `androidEnterprise`.|
 |appDataEncryptionType|[managedAppDataEncryptionType](../resources/intune-mam-managedappdataencryptiontype.md)|Необходимый тип шифрования данных в управляемом приложении. Возможные значения: `useDeviceSettings`, `afterDeviceRestart`, `whenDeviceLockedExceptOpenFiles`, `whenDeviceLocked`.|
@@ -78,14 +80,14 @@ ms.locfileid: "27912724"
 |faceIdBlocked|Boolean|Указывает, можно ли использовать FaceID вместо ПИН-кода, если для параметра PinRequired установлено значение True.|
 |exemptedAppProtocols|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Приложения в этом списке будут исключены из политики и будет иметь возможность получать данные из управляемых приложений.|
 |minimumWipeSdkVersion|String|В более старых версиях управляемое приложение не сможет получить доступ к данным компании.|
-|allowedIosDeviceModels|Строка|Список разделенных точкой с запятой моделей устройств могут в виде строки, управляемых приложений для работы.|
+|allowedIosDeviceModels|String|Список разделенных точкой с запятой моделей устройств могут в виде строки, управляемых приложений для работы.|
 |appActionIfIosDeviceModelNotAllowed|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|Определяет поведение управляемых приложений, блокировать или очистки, если модели указанного устройства не допускается. Возможные значения: `block`, `wipe`.|
 |thirdPartyKeyboardsBlocked|Логический|Определяет, если клавиатуры сторонних производителей могут при доступе к управляемых приложений|
 |filterOpenInToOnlyManagedApps|Логический|Определяет, если операция открыть в поддерживается из управляемых приложений для выбранного расположения filesharing. Этот параметр применяется только в том случае, когда AllowedOutboundDataTransferDestinations задано значение ManagedApps и DisableProtectionOfManagedOutboundOpenInData имеет значение False.|
 |disableProtectionOfManagedOutboundOpenInData|Логический|Отключение защиты данных, переданных в другие приложения через параметр OpenIn операций ввода-ВЫВОДА. Этот параметр можно использовать только быть имеет значение True, если AllowedOutboundDataTransferDestinations равен ManagedApps.|
 |protectInboundDataFromUnknownSources|Логический|Для защиты входящих данных неизвестному источнику. Этот параметр можно использовать только быть имеет значение True, если AllowedInboundDataTransferSources равен AllApps.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [targetedManagedAppPolicyAssignment](../resources/intune-mam-targetedmanagedapppolicyassignment.md)|Список групп включения и исключения, к которым применяется политика. Наследуется от [targetedManagedAppProtection](../resources/intune-mam-targetedmanagedappprotection.md).|
@@ -107,6 +109,9 @@ ms.locfileid: "27912724"
   "description": "String",
   "createdDateTime": "String (timestamp)",
   "lastModifiedDateTime": "String (timestamp)",
+  "roleScopeTagIds": [
+    "String"
+  ],
   "id": "String (identifier)",
   "version": "String",
   "periodOfflineBeforeAccessCheck": "String (duration)",
@@ -164,7 +169,6 @@ ms.locfileid: "27912724"
   "protectInboundDataFromUnknownSources": true
 }
 ```
-
 
 
 
