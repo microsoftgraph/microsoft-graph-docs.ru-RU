@@ -1,25 +1,26 @@
 ---
 title: Обновление managedDevice
 description: Обновление свойств объекта managedDevice.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 255562cd7a5bbd5291a26b148b1e6c21a2869828
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 525623c99d8f3238ee548e634bc7ffe2c3162111
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977931"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29404388"
 ---
 # <a name="update-manageddevice"></a>Обновление managedDevice
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [managedDevice](../resources/intune-devices-manageddevice.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -114,8 +115,8 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
  Только для чтения. Возможные значения: `unknown`, `activated`, `deactivated`, `secured`, `lowSeverity`, `mediumSeverity`, `highSeverity`, `unresponsive`, `compromised`, `misconfigured`.|
 |usersLoggedOn|[loggedOnUser](../resources/intune-devices-loggedonuser.md) коллекции|Указывает последний вход в систему пользователей устройства|
 |preferMdmOverGroupPolicyAppliedDateTime|DateTimeOffset|Отчеты о DateTime параметр preferMdmOverGroupPolicy имеет значение.  Если задано, параметры Intune MDM переопределяет параметры групповой политики в случае конфликта. Только для чтения.|
-|autopilotEnrolled|Boolean|Отчеты при регистрации управляемой устройство через автопилот.|
-|requireUserEnrollmentApproval|Boolean|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
+|autopilotEnrolled|Логический|Отчеты при регистрации управляемой устройство через автопилот.|
+|requireUserEnrollmentApproval|Логический|Отчеты, если устройство управляемых iOS утверждения регистрации пользователя.|
 |managementCertificateExpirationDate|DateTimeOffset|Дата окончания срока действия сертификата управления устройства отчетов|
 |iccid|String|Идентификатор карты интегральной, это уникальный идентификационный номер карты диспетчера установки.|
 |UDID|String|Уникальный идентификатор устройства для операций ввода-вывода и macOS устройств.|
@@ -131,14 +132,16 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [managedDevice](../resources/intune-devices-manageddevice.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
 Content-type: application/json
-Content-length: 7114
+Content-length: 7166
 
 {
+  "@odata.type": "#microsoft.graph.managedDevice",
   "userId": "User Id value",
   "deviceName": "Device Name value",
   "hardwareInformation": {
@@ -303,7 +306,7 @@ Content-length: 7114
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK
@@ -476,7 +479,6 @@ Content-Length: 7215
   }
 }
 ```
-
 
 
 
