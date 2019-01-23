@@ -1,33 +1,34 @@
 ---
 title: Действие retire
 description: Прекращение использования устройства
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0071fb7f55b51a466249ee605604afa3a9a10bbb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 20e078500f1ca80d5beb3d3a81555dc5681c3dd3
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931141"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29423043"
 ---
-# <a name="retire-action"></a><span data-ttu-id="a9b94-103">Действие retire</span><span class="sxs-lookup"><span data-stu-id="a9b94-103">retire action</span></span>
+# <a name="retire-action"></a><span data-ttu-id="ad88d-103">Действие retire</span><span class="sxs-lookup"><span data-stu-id="ad88d-103">retire action</span></span>
 
-> <span data-ttu-id="a9b94-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a9b94-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a9b94-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a9b94-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ad88d-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ad88d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ad88d-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ad88d-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="a9b94-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a9b94-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ad88d-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ad88d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a9b94-107">Прекращение использования устройства</span><span class="sxs-lookup"><span data-stu-id="a9b94-107">Retire a device</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="a9b94-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="a9b94-108">Prerequisites</span></span>
-<span data-ttu-id="a9b94-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a9b94-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad88d-107">Прекращение использования устройства</span><span class="sxs-lookup"><span data-stu-id="ad88d-107">Retire a device</span></span>
 
-|<span data-ttu-id="a9b94-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a9b94-111">Permission type</span></span>|<span data-ttu-id="a9b94-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a9b94-112">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="ad88d-108">Необходимые разрешения</span><span class="sxs-lookup"><span data-stu-id="ad88d-108">Prerequisites</span></span>
+<span data-ttu-id="ad88d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="ad88d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="ad88d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ad88d-111">Permission type</span></span>|<span data-ttu-id="ad88d-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="ad88d-112">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="a9b94-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a9b94-113">Delegated (work or school account)</span></span>|<span data-ttu-id="a9b94-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="a9b94-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
-|<span data-ttu-id="a9b94-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a9b94-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a9b94-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a9b94-116">Not supported.</span></span>|
-|<span data-ttu-id="a9b94-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a9b94-117">Application</span></span>|<span data-ttu-id="a9b94-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a9b94-118">Not supported.</span></span>|
+|<span data-ttu-id="ad88d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ad88d-113">Delegated (work or school account)</span></span>|<span data-ttu-id="ad88d-114">DeviceManagementManagedDevices.PriviligedOperation.All</span><span class="sxs-lookup"><span data-stu-id="ad88d-114">DeviceManagementManagedDevices.PriviligedOperation.All</span></span>|
+|<span data-ttu-id="ad88d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ad88d-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="ad88d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ad88d-116">Not supported.</span></span>|
+|<span data-ttu-id="ad88d-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ad88d-117">Application</span></span>|<span data-ttu-id="ad88d-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ad88d-118">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="a9b94-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a9b94-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ad88d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ad88d-119">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -39,32 +40,32 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/retire
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a9b94-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a9b94-120">Request headers</span></span>
-|<span data-ttu-id="a9b94-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a9b94-121">Header</span></span>|<span data-ttu-id="a9b94-122">Значение</span><span class="sxs-lookup"><span data-stu-id="a9b94-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ad88d-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ad88d-120">Request headers</span></span>
+|<span data-ttu-id="ad88d-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="ad88d-121">Header</span></span>|<span data-ttu-id="ad88d-122">Значение</span><span class="sxs-lookup"><span data-stu-id="ad88d-122">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="a9b94-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a9b94-123">Authorization</span></span>|<span data-ttu-id="a9b94-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="a9b94-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="a9b94-125">Accept</span><span class="sxs-lookup"><span data-stu-id="a9b94-125">Accept</span></span>|<span data-ttu-id="a9b94-126">application/json</span><span class="sxs-lookup"><span data-stu-id="a9b94-126">application/json</span></span>|
+|<span data-ttu-id="ad88d-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ad88d-123">Authorization</span></span>|<span data-ttu-id="ad88d-124">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="ad88d-124">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="ad88d-125">Accept</span><span class="sxs-lookup"><span data-stu-id="ad88d-125">Accept</span></span>|<span data-ttu-id="ad88d-126">application/json</span><span class="sxs-lookup"><span data-stu-id="ad88d-126">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="a9b94-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a9b94-127">Request body</span></span>
-<span data-ttu-id="a9b94-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="a9b94-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ad88d-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ad88d-127">Request body</span></span>
+<span data-ttu-id="ad88d-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ad88d-128">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a9b94-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="a9b94-129">Response</span></span>
-<span data-ttu-id="a9b94-130">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="a9b94-130">If successful, this action returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="ad88d-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="ad88d-129">Response</span></span>
+<span data-ttu-id="ad88d-130">В случае успешного выполнения это действие возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="ad88d-130">If successful, this action returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a9b94-131">Пример</span><span class="sxs-lookup"><span data-stu-id="a9b94-131">Example</span></span>
-### <a name="request"></a><span data-ttu-id="a9b94-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="a9b94-132">Request</span></span>
-<span data-ttu-id="a9b94-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a9b94-133">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="ad88d-131">Пример</span><span class="sxs-lookup"><span data-stu-id="ad88d-131">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="ad88d-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="ad88d-132">Request</span></span>
+<span data-ttu-id="ad88d-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ad88d-133">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/retire
 ```
 
-### <a name="response"></a><span data-ttu-id="a9b94-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="a9b94-134">Response</span></span>
-<span data-ttu-id="a9b94-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="a9b94-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="ad88d-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="ad88d-134">Response</span></span>
+<span data-ttu-id="ad88d-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="ad88d-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
-
 
 
 
