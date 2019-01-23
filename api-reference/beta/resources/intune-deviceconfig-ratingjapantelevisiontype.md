@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления ratingJapanTelevisionType
 description: Метки TV оценки содержимого в Японии
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8bea20d7a7b2491bf60d6df61493f3f4ba1f711b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4e91be76e7f15a772dda9feca892645e79e2f990
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947570"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425850"
 ---
-# <a name="ratingjapantelevisiontype-enum-type"></a><span data-ttu-id="23102-103">Тип перечисления ratingJapanTelevisionType</span><span class="sxs-lookup"><span data-stu-id="23102-103">ratingJapanTelevisionType enum type</span></span>
+# <a name="ratingjapantelevisiontype-enum-type"></a><span data-ttu-id="347f5-103">Тип перечисления ratingJapanTelevisionType</span><span class="sxs-lookup"><span data-stu-id="347f5-103">ratingJapanTelevisionType enum type</span></span>
 
-> <span data-ttu-id="23102-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="23102-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="23102-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="23102-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="347f5-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="347f5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="347f5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="347f5-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="23102-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="23102-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="347f5-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="347f5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="23102-107">Метки TV оценки содержимого в Японии</span><span class="sxs-lookup"><span data-stu-id="23102-107">TV content rating labels in Japan</span></span>
-## <a name="members"></a><span data-ttu-id="23102-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="23102-108">Members</span></span>
-|<span data-ttu-id="23102-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="23102-109">Member</span></span>|<span data-ttu-id="23102-110">Значение</span><span class="sxs-lookup"><span data-stu-id="23102-110">Value</span></span>|<span data-ttu-id="23102-111">Описание</span><span class="sxs-lookup"><span data-stu-id="23102-111">Description</span></span>|
+<span data-ttu-id="347f5-107">Метки TV оценки содержимого в Японии</span><span class="sxs-lookup"><span data-stu-id="347f5-107">TV content rating labels in Japan</span></span>
+
+## <a name="members"></a><span data-ttu-id="347f5-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="347f5-108">Members</span></span>
+|<span data-ttu-id="347f5-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="347f5-109">Member</span></span>|<span data-ttu-id="347f5-110">Значение</span><span class="sxs-lookup"><span data-stu-id="347f5-110">Value</span></span>|<span data-ttu-id="347f5-111">Описание</span><span class="sxs-lookup"><span data-stu-id="347f5-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="23102-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="23102-112">allAllowed</span></span>|<span data-ttu-id="23102-113">0</span><span class="sxs-lookup"><span data-stu-id="23102-113">0</span></span>|<span data-ttu-id="23102-114">Значение по умолчанию, разрешить всем TV показывает контента</span><span class="sxs-lookup"><span data-stu-id="23102-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="23102-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="23102-115">allBlocked</span></span>|<span data-ttu-id="23102-116">1</span><span class="sxs-lookup"><span data-stu-id="23102-116">1</span></span>|<span data-ttu-id="23102-117">Не допускайте использование Любого показывает контента</span><span class="sxs-lookup"><span data-stu-id="23102-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="23102-118">explicitAllowed</span><span class="sxs-lookup"><span data-stu-id="23102-118">explicitAllowed</span></span>|<span data-ttu-id="23102-119">2</span><span class="sxs-lookup"><span data-stu-id="23102-119">2</span></span>|<span data-ttu-id="23102-120">Все содержимое TV явно разрешен</span><span class="sxs-lookup"><span data-stu-id="23102-120">All TV content is explicitly allowed</span></span>|
-
+|<span data-ttu-id="347f5-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="347f5-112">allAllowed</span></span>|<span data-ttu-id="347f5-113">0</span><span class="sxs-lookup"><span data-stu-id="347f5-113">0</span></span>|<span data-ttu-id="347f5-114">Значение по умолчанию, разрешить всем TV показывает контента</span><span class="sxs-lookup"><span data-stu-id="347f5-114">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="347f5-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="347f5-115">allBlocked</span></span>|<span data-ttu-id="347f5-116">1</span><span class="sxs-lookup"><span data-stu-id="347f5-116">1</span></span>|<span data-ttu-id="347f5-117">Не допускайте использование Любого показывает контента</span><span class="sxs-lookup"><span data-stu-id="347f5-117">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="347f5-118">explicitAllowed</span><span class="sxs-lookup"><span data-stu-id="347f5-118">explicitAllowed</span></span>|<span data-ttu-id="347f5-119">2</span><span class="sxs-lookup"><span data-stu-id="347f5-119">2</span></span>|<span data-ttu-id="347f5-120">Все содержимое TV явно разрешен</span><span class="sxs-lookup"><span data-stu-id="347f5-120">All TV content is explicitly allowed</span></span>|
 
 
 

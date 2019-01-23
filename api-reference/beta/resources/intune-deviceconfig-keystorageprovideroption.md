@@ -1,31 +1,31 @@
 ---
 title: Тип перечисления keyStorageProviderOption
 description: Параметры импорта хранилища ключей поставщика (поставщика хранилища КЛЮЧЕЙ).
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8f3a8169b4bb6cd2357f02aa7fec89ba640780f7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 6993d7e241ef94c572975c709c286a14f6eabf5b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946555"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29424226"
 ---
-# <a name="keystorageprovideroption-enum-type"></a><span data-ttu-id="43805-103">Тип перечисления keyStorageProviderOption</span><span class="sxs-lookup"><span data-stu-id="43805-103">keyStorageProviderOption enum type</span></span>
+# <a name="keystorageprovideroption-enum-type"></a><span data-ttu-id="5beee-103">Тип перечисления keyStorageProviderOption</span><span class="sxs-lookup"><span data-stu-id="5beee-103">keyStorageProviderOption enum type</span></span>
 
-> <span data-ttu-id="43805-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="43805-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="43805-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="43805-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="5beee-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="5beee-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="5beee-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5beee-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="43805-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="43805-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="5beee-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="5beee-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="43805-107">Параметры импорта хранилища ключей поставщика (поставщика хранилища КЛЮЧЕЙ).</span><span class="sxs-lookup"><span data-stu-id="43805-107">Key Storage Provider (KSP) Import Options.</span></span>
-## <a name="members"></a><span data-ttu-id="43805-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="43805-108">Members</span></span>
-|<span data-ttu-id="43805-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="43805-109">Member</span></span>|<span data-ttu-id="43805-110">Значение</span><span class="sxs-lookup"><span data-stu-id="43805-110">Value</span></span>|<span data-ttu-id="43805-111">Описание</span><span class="sxs-lookup"><span data-stu-id="43805-111">Description</span></span>|
+<span data-ttu-id="5beee-107">Параметры импорта хранилища ключей поставщика (поставщика хранилища КЛЮЧЕЙ).</span><span class="sxs-lookup"><span data-stu-id="5beee-107">Key Storage Provider (KSP) Import Options.</span></span>
+
+## <a name="members"></a><span data-ttu-id="5beee-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="5beee-108">Members</span></span>
+|<span data-ttu-id="5beee-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="5beee-109">Member</span></span>|<span data-ttu-id="5beee-110">Значение</span><span class="sxs-lookup"><span data-stu-id="5beee-110">Value</span></span>|<span data-ttu-id="5beee-111">Описание</span><span class="sxs-lookup"><span data-stu-id="5beee-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="43805-112">useTpmKspOtherwiseUseSoftwareKsp</span><span class="sxs-lookup"><span data-stu-id="43805-112">useTpmKspOtherwiseUseSoftwareKsp</span></span>|<span data-ttu-id="43805-113">0</span><span class="sxs-lookup"><span data-stu-id="43805-113">0</span></span>|<span data-ttu-id="43805-114">Импорта для доверенного платформы модуля (TPM) поставщика хранилища КЛЮЧЕЙ, если этот параметр указан, в противном случае — импорт поставщика хранилища КЛЮЧЕЙ программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="43805-114">Import to Trusted Platform Module (TPM) KSP if present, otherwise import to Software KSP.</span></span>|
-|<span data-ttu-id="43805-115">useTpmKspOtherwiseFail</span><span class="sxs-lookup"><span data-stu-id="43805-115">useTpmKspOtherwiseFail</span></span>|<span data-ttu-id="43805-116">1</span><span class="sxs-lookup"><span data-stu-id="43805-116">1</span></span>|<span data-ttu-id="43805-117">Импорт для доверенного платформы модуля (TPM) поставщика хранилища КЛЮЧЕЙ, если этот параметр указан, в противном случае — не удается.</span><span class="sxs-lookup"><span data-stu-id="43805-117">Import to Trusted Platform Module (TPM) KSP if present, otherwise fail.</span></span>|
-|<span data-ttu-id="43805-118">usePassportForWorkKspOtherwiseFail</span><span class="sxs-lookup"><span data-stu-id="43805-118">usePassportForWorkKspOtherwiseFail</span></span>|<span data-ttu-id="43805-119">2</span><span class="sxs-lookup"><span data-stu-id="43805-119">2</span></span>|<span data-ttu-id="43805-120">Импорт Passport для работы поставщика хранилища КЛЮЧЕЙ Если доступно, в противном случае — ошибка.</span><span class="sxs-lookup"><span data-stu-id="43805-120">Import to Passport for work KSP if available, otherwise fail.</span></span>|
-|<span data-ttu-id="43805-121">useSoftwareKsp</span><span class="sxs-lookup"><span data-stu-id="43805-121">useSoftwareKsp</span></span>|<span data-ttu-id="43805-122">3</span><span class="sxs-lookup"><span data-stu-id="43805-122">3</span></span>|<span data-ttu-id="43805-123">Импорт на программное обеспечение поставщика хранилища КЛЮЧЕЙ.</span><span class="sxs-lookup"><span data-stu-id="43805-123">Import to Software KSP.</span></span>|
-
+|<span data-ttu-id="5beee-112">useTpmKspOtherwiseUseSoftwareKsp</span><span class="sxs-lookup"><span data-stu-id="5beee-112">useTpmKspOtherwiseUseSoftwareKsp</span></span>|<span data-ttu-id="5beee-113">0</span><span class="sxs-lookup"><span data-stu-id="5beee-113">0</span></span>|<span data-ttu-id="5beee-114">Импорта для доверенного платформы модуля (TPM) поставщика хранилища КЛЮЧЕЙ, если этот параметр указан, в противном случае — импорт поставщика хранилища КЛЮЧЕЙ программного обеспечения.</span><span class="sxs-lookup"><span data-stu-id="5beee-114">Import to Trusted Platform Module (TPM) KSP if present, otherwise import to Software KSP.</span></span>|
+|<span data-ttu-id="5beee-115">useTpmKspOtherwiseFail</span><span class="sxs-lookup"><span data-stu-id="5beee-115">useTpmKspOtherwiseFail</span></span>|<span data-ttu-id="5beee-116">1</span><span class="sxs-lookup"><span data-stu-id="5beee-116">1</span></span>|<span data-ttu-id="5beee-117">Импорт для доверенного платформы модуля (TPM) поставщика хранилища КЛЮЧЕЙ, если этот параметр указан, в противном случае — не удается.</span><span class="sxs-lookup"><span data-stu-id="5beee-117">Import to Trusted Platform Module (TPM) KSP if present, otherwise fail.</span></span>|
+|<span data-ttu-id="5beee-118">usePassportForWorkKspOtherwiseFail</span><span class="sxs-lookup"><span data-stu-id="5beee-118">usePassportForWorkKspOtherwiseFail</span></span>|<span data-ttu-id="5beee-119">2</span><span class="sxs-lookup"><span data-stu-id="5beee-119">2</span></span>|<span data-ttu-id="5beee-120">Импорт Passport для работы поставщика хранилища КЛЮЧЕЙ Если доступно, в противном случае — ошибка.</span><span class="sxs-lookup"><span data-stu-id="5beee-120">Import to Passport for work KSP if available, otherwise fail.</span></span>|
+|<span data-ttu-id="5beee-121">useSoftwareKsp</span><span class="sxs-lookup"><span data-stu-id="5beee-121">useSoftwareKsp</span></span>|<span data-ttu-id="5beee-122">3</span><span class="sxs-lookup"><span data-stu-id="5beee-122">3</span></span>|<span data-ttu-id="5beee-123">Импорт на программное обеспечение поставщика хранилища КЛЮЧЕЙ.</span><span class="sxs-lookup"><span data-stu-id="5beee-123">Import to Software KSP.</span></span>|
 
 
 

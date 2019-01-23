@@ -1,34 +1,38 @@
 ---
 title: Тип ресурса vpnDnsRule
 description: Определение правила DNS VPN.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3c928542f749973ac3abea041c8ca60ee74ff8fe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: ae6141cc0579840a23a28be2dce951c160f90248
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964741"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29425584"
 ---
-# <a name="vpndnsrule-resource-type"></a><span data-ttu-id="3e7b4-103">Тип ресурса vpnDnsRule</span><span class="sxs-lookup"><span data-stu-id="3e7b4-103">vpnDnsRule resource type</span></span>
+# <a name="vpndnsrule-resource-type"></a><span data-ttu-id="e1286-103">Тип ресурса vpnDnsRule</span><span class="sxs-lookup"><span data-stu-id="e1286-103">vpnDnsRule resource type</span></span>
 
-> <span data-ttu-id="3e7b4-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="3e7b4-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e1286-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e1286-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e1286-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e1286-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="3e7b4-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="e1286-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e1286-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="3e7b4-107">Определение правила DNS VPN.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-107">VPN DNS Rule definition.</span></span>
-## <a name="properties"></a><span data-ttu-id="3e7b4-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="3e7b4-108">Properties</span></span>
-|<span data-ttu-id="3e7b4-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="3e7b4-109">Property</span></span>|<span data-ttu-id="3e7b4-110">Тип</span><span class="sxs-lookup"><span data-stu-id="3e7b4-110">Type</span></span>|<span data-ttu-id="3e7b4-111">Описание</span><span class="sxs-lookup"><span data-stu-id="3e7b4-111">Description</span></span>|
+<span data-ttu-id="e1286-107">Определение правила DNS VPN.</span><span class="sxs-lookup"><span data-stu-id="e1286-107">VPN DNS Rule definition.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="e1286-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="e1286-108">Properties</span></span>
+|<span data-ttu-id="e1286-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="e1286-109">Property</span></span>|<span data-ttu-id="e1286-110">Тип</span><span class="sxs-lookup"><span data-stu-id="e1286-110">Type</span></span>|<span data-ttu-id="e1286-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e1286-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="3e7b4-112">name</span><span class="sxs-lookup"><span data-stu-id="3e7b4-112">name</span></span>|<span data-ttu-id="3e7b4-113">Строка</span><span class="sxs-lookup"><span data-stu-id="3e7b4-113">String</span></span>|<span data-ttu-id="3e7b4-114">Имя.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-114">Name.</span></span>|
-|<span data-ttu-id="3e7b4-115">серверы</span><span class="sxs-lookup"><span data-stu-id="3e7b4-115">servers</span></span>|<span data-ttu-id="3e7b4-116">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="3e7b4-116">String collection</span></span>|<span data-ttu-id="3e7b4-117">Серверы.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-117">Servers.</span></span>|
-|<span data-ttu-id="3e7b4-118">proxyServerUri</span><span class="sxs-lookup"><span data-stu-id="3e7b4-118">proxyServerUri</span></span>|<span data-ttu-id="3e7b4-119">Строка</span><span class="sxs-lookup"><span data-stu-id="3e7b4-119">String</span></span>|<span data-ttu-id="3e7b4-120">Uri сервера прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-120">Proxy Server Uri.</span></span>|
+|<span data-ttu-id="e1286-112">name</span><span class="sxs-lookup"><span data-stu-id="e1286-112">name</span></span>|<span data-ttu-id="e1286-113">String</span><span class="sxs-lookup"><span data-stu-id="e1286-113">String</span></span>|<span data-ttu-id="e1286-114">Имя.</span><span class="sxs-lookup"><span data-stu-id="e1286-114">Name.</span></span>|
+|<span data-ttu-id="e1286-115">серверы</span><span class="sxs-lookup"><span data-stu-id="e1286-115">servers</span></span>|<span data-ttu-id="e1286-116">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="e1286-116">String collection</span></span>|<span data-ttu-id="e1286-117">Серверы.</span><span class="sxs-lookup"><span data-stu-id="e1286-117">Servers.</span></span>|
+|<span data-ttu-id="e1286-118">proxyServerUri</span><span class="sxs-lookup"><span data-stu-id="e1286-118">proxyServerUri</span></span>|<span data-ttu-id="e1286-119">String</span><span class="sxs-lookup"><span data-stu-id="e1286-119">String</span></span>|<span data-ttu-id="e1286-120">Uri сервера прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="e1286-120">Proxy Server Uri.</span></span>|
+|<span data-ttu-id="e1286-121">autoTrigger</span><span class="sxs-lookup"><span data-stu-id="e1286-121">autoTrigger</span></span>|<span data-ttu-id="e1286-122">Логический</span><span class="sxs-lookup"><span data-stu-id="e1286-122">Boolean</span></span>|<span data-ttu-id="e1286-123">Автоматическое подключение к виртуальной частной сети при подключении устройства к этому домену: значение по умолчанию False.</span><span class="sxs-lookup"><span data-stu-id="e1286-123">Automatically connect to the VPN when the device connects to this domain: Default False.</span></span>|
+|<span data-ttu-id="e1286-124">persistent</span><span class="sxs-lookup"><span data-stu-id="e1286-124">persistent</span></span>|<span data-ttu-id="e1286-125">Логический</span><span class="sxs-lookup"><span data-stu-id="e1286-125">Boolean</span></span>|<span data-ttu-id="e1286-126">Сохранить это правило active даже в том случае, если не подключен VPN-Подключение: значение по умолчанию False</span><span class="sxs-lookup"><span data-stu-id="e1286-126">Keep this rule active even when the VPN is not connected: Default False</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="3e7b4-121">Связи</span><span class="sxs-lookup"><span data-stu-id="3e7b4-121">Relationships</span></span>
-<span data-ttu-id="3e7b4-122">Нет</span><span class="sxs-lookup"><span data-stu-id="3e7b4-122">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="3e7b4-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3e7b4-123">JSON Representation</span></span>
-<span data-ttu-id="3e7b4-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3e7b4-124">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="e1286-127">Отношения</span><span class="sxs-lookup"><span data-stu-id="e1286-127">Relationships</span></span>
+<span data-ttu-id="e1286-128">Нет</span><span class="sxs-lookup"><span data-stu-id="e1286-128">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="e1286-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e1286-129">JSON Representation</span></span>
+<span data-ttu-id="e1286-130">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e1286-130">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vpnDnsRule"
@@ -41,10 +45,11 @@ ms.locfileid: "27964741"
   "servers": [
     "String"
   ],
-  "proxyServerUri": "String"
+  "proxyServerUri": "String",
+  "autoTrigger": true,
+  "persistent": true
 }
 ```
-
 
 
 
