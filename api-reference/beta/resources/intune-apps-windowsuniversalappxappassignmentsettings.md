@@ -1,35 +1,37 @@
 ---
 title: Тип ресурса windowsUniversalAppXAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильное приложение Windows AppX универсальные группы.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ebb9649460fbfa6da717ba099786eb7d4c2807da
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 27755a483be44584aeb82166f56e825df79f8eaa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987008"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400720"
 ---
-# <a name="windowsuniversalappxappassignmentsettings-resource-type"></a><span data-ttu-id="bded1-103">Тип ресурса windowsUniversalAppXAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="bded1-103">windowsUniversalAppXAppAssignmentSettings resource type</span></span>
+# <a name="windowsuniversalappxappassignmentsettings-resource-type"></a><span data-ttu-id="ae400-103">Тип ресурса windowsUniversalAppXAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="ae400-103">windowsUniversalAppXAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="bded1-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="bded1-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="bded1-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bded1-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ae400-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ae400-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ae400-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ae400-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="bded1-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="bded1-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ae400-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ae400-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bded1-107">Содержит свойства, используемые при назначении мобильное приложение Windows AppX универсальные группы.</span><span class="sxs-lookup"><span data-stu-id="bded1-107">Contains properties used when assigning a Windows Universal AppX mobile app to a group.</span></span>
+<span data-ttu-id="ae400-107">Содержит свойства, используемые при назначении мобильное приложение Windows AppX универсальные группы.</span><span class="sxs-lookup"><span data-stu-id="ae400-107">Contains properties used when assigning a Windows Universal AppX mobile app to a group.</span></span>
 
-<span data-ttu-id="bded1-108">Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="bded1-108">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bded1-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="bded1-109">Properties</span></span>
-|<span data-ttu-id="bded1-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="bded1-110">Property</span></span>|<span data-ttu-id="bded1-111">Тип</span><span class="sxs-lookup"><span data-stu-id="bded1-111">Type</span></span>|<span data-ttu-id="bded1-112">Описание</span><span class="sxs-lookup"><span data-stu-id="bded1-112">Description</span></span>|
+<span data-ttu-id="ae400-108">Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="ae400-108">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="ae400-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="ae400-109">Properties</span></span>
+|<span data-ttu-id="ae400-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="ae400-110">Property</span></span>|<span data-ttu-id="ae400-111">Тип</span><span class="sxs-lookup"><span data-stu-id="ae400-111">Type</span></span>|<span data-ttu-id="ae400-112">Описание</span><span class="sxs-lookup"><span data-stu-id="ae400-112">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bded1-113">useDeviceContext</span><span class="sxs-lookup"><span data-stu-id="bded1-113">useDeviceContext</span></span>|<span data-ttu-id="bded1-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="bded1-114">Boolean</span></span>|<span data-ttu-id="bded1-115">Следует ли использовать контекст выполнения устройства для мобильного приложения универсальные AppX Windows.</span><span class="sxs-lookup"><span data-stu-id="bded1-115">Whether or not to use device execution context for Windows Universal AppX mobile app.</span></span>|
+|<span data-ttu-id="ae400-113">useDeviceContext</span><span class="sxs-lookup"><span data-stu-id="ae400-113">useDeviceContext</span></span>|<span data-ttu-id="ae400-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="ae400-114">Boolean</span></span>|<span data-ttu-id="ae400-115">Следует ли использовать контекст выполнения устройства для мобильного приложения универсальные AppX Windows.</span><span class="sxs-lookup"><span data-stu-id="ae400-115">Whether or not to use device execution context for Windows Universal AppX mobile app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="bded1-116">Связи</span><span class="sxs-lookup"><span data-stu-id="bded1-116">Relationships</span></span>
-<span data-ttu-id="bded1-117">Нет</span><span class="sxs-lookup"><span data-stu-id="bded1-117">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="bded1-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bded1-118">JSON Representation</span></span>
-<span data-ttu-id="bded1-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bded1-119">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="ae400-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="ae400-116">Relationships</span></span>
+<span data-ttu-id="ae400-117">Нет</span><span class="sxs-lookup"><span data-stu-id="ae400-117">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="ae400-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ae400-118">JSON Representation</span></span>
+<span data-ttu-id="ae400-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ae400-119">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsUniversalAppXAppAssignmentSettings"
@@ -41,7 +43,6 @@ ms.locfileid: "27987008"
   "useDeviceContext": true
 }
 ```
-
 
 
 

@@ -1,33 +1,35 @@
 ---
 title: Тип ресурса unsupportedDeviceConfigurationDetail
 description: Описание причины сущности не поддерживается.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6b82dcf28652cbe54a4932a641579101cb392639
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: c03bdb20fc4c48fa7820e09b9212bf73250599aa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949775"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29400391"
 ---
-# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a><span data-ttu-id="a5d92-103">Тип ресурса unsupportedDeviceConfigurationDetail</span><span class="sxs-lookup"><span data-stu-id="a5d92-103">unsupportedDeviceConfigurationDetail resource type</span></span>
+# <a name="unsupporteddeviceconfigurationdetail-resource-type"></a><span data-ttu-id="bb0ad-103">Тип ресурса unsupportedDeviceConfigurationDetail</span><span class="sxs-lookup"><span data-stu-id="bb0ad-103">unsupportedDeviceConfigurationDetail resource type</span></span>
 
-> <span data-ttu-id="a5d92-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a5d92-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a5d92-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5d92-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="bb0ad-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bb0ad-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="a5d92-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a5d92-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="bb0ad-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a5d92-107">Описание причины сущности не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5d92-107">A description of why an entity is unsupported.</span></span>
-## <a name="properties"></a><span data-ttu-id="a5d92-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5d92-108">Properties</span></span>
-|<span data-ttu-id="a5d92-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="a5d92-109">Property</span></span>|<span data-ttu-id="a5d92-110">Тип</span><span class="sxs-lookup"><span data-stu-id="a5d92-110">Type</span></span>|<span data-ttu-id="a5d92-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a5d92-111">Description</span></span>|
+<span data-ttu-id="bb0ad-107">Описание причины сущности не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-107">A description of why an entity is unsupported.</span></span>
+
+## <a name="properties"></a><span data-ttu-id="bb0ad-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="bb0ad-108">Properties</span></span>
+|<span data-ttu-id="bb0ad-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="bb0ad-109">Property</span></span>|<span data-ttu-id="bb0ad-110">Тип</span><span class="sxs-lookup"><span data-stu-id="bb0ad-110">Type</span></span>|<span data-ttu-id="bb0ad-111">Описание</span><span class="sxs-lookup"><span data-stu-id="bb0ad-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a5d92-112">message</span><span class="sxs-lookup"><span data-stu-id="a5d92-112">message</span></span>|<span data-ttu-id="a5d92-113">String</span><span class="sxs-lookup"><span data-stu-id="a5d92-113">String</span></span>|<span data-ttu-id="a5d92-114">Сообщение о том, почему сущности не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a5d92-114">A message explaining why an entity is unsupported.</span></span>|
-|<span data-ttu-id="a5d92-115">propertyName</span><span class="sxs-lookup"><span data-stu-id="a5d92-115">propertyName</span></span>|<span data-ttu-id="a5d92-116">Строка</span><span class="sxs-lookup"><span data-stu-id="a5d92-116">String</span></span>|<span data-ttu-id="a5d92-117">Если сообщение относится к определенное свойство в исходной сущности, а затем имя этого свойства.</span><span class="sxs-lookup"><span data-stu-id="a5d92-117">If message is related to a specific property in the original entity, then the name of that property.</span></span>|
+|<span data-ttu-id="bb0ad-112">message</span><span class="sxs-lookup"><span data-stu-id="bb0ad-112">message</span></span>|<span data-ttu-id="bb0ad-113">String</span><span class="sxs-lookup"><span data-stu-id="bb0ad-113">String</span></span>|<span data-ttu-id="bb0ad-114">Сообщение о том, почему сущности не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-114">A message explaining why an entity is unsupported.</span></span>|
+|<span data-ttu-id="bb0ad-115">propertyName</span><span class="sxs-lookup"><span data-stu-id="bb0ad-115">propertyName</span></span>|<span data-ttu-id="bb0ad-116">String</span><span class="sxs-lookup"><span data-stu-id="bb0ad-116">String</span></span>|<span data-ttu-id="bb0ad-117">Если сообщение относится к определенное свойство в исходной сущности, а затем имя этого свойства.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-117">If message is related to a specific property in the original entity, then the name of that property.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a5d92-118">Связи</span><span class="sxs-lookup"><span data-stu-id="a5d92-118">Relationships</span></span>
-<span data-ttu-id="a5d92-119">Нет</span><span class="sxs-lookup"><span data-stu-id="a5d92-119">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="a5d92-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a5d92-120">JSON Representation</span></span>
-<span data-ttu-id="a5d92-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a5d92-121">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="bb0ad-118">Отношения</span><span class="sxs-lookup"><span data-stu-id="bb0ad-118">Relationships</span></span>
+<span data-ttu-id="bb0ad-119">Нет</span><span class="sxs-lookup"><span data-stu-id="bb0ad-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="bb0ad-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bb0ad-120">JSON Representation</span></span>
+<span data-ttu-id="bb0ad-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bb0ad-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.unsupportedDeviceConfigurationDetail"
@@ -40,7 +42,6 @@ ms.locfileid: "27949775"
   "propertyName": "String"
 }
 ```
-
 
 
 
