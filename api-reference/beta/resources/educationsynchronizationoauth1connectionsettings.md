@@ -4,12 +4,12 @@ description: При OAuth1 будет использоваться для под
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 80921488e1a5e0dd3e4ab4e21b2ea08e05ad9cee
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2cc8a0fee08826fef7d560a18f730bd7d58a2f6f
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29417233"
 ---
 # <a name="educationsynchronizationoauth1connectionsettings-resource"></a>educationSynchronizationOAuth1ConnectionSettings ресурсов
 
@@ -17,7 +17,7 @@ ms.locfileid: "27990266"
 
 При OAuth1 будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.
 
-На основе [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
+На основе [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
 
 ## <a name="properties"></a>Свойства
 
@@ -26,12 +26,12 @@ ms.locfileid: "27990266"
 ## <a name="json-representation"></a>Представление JSON
 <!-- {
   "blockType": "resource",
-  "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"
+  "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"
 }-->
 
 ```json
-"connectionSettings": {
-    "@odata.type": "#microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
+{
+    "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings",
     "clientId": "String",
     "clientSecret": "String"
 }

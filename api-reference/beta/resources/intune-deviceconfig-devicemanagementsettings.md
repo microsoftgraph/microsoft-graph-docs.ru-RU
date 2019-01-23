@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса deviceManagementSettings
 description: Н/Д
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4e92c8e88ecf620b4731bd3694dfb97e252d042f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 4f676eed1acbf6711f526e612bd6c073b749607d
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973029"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29417667"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -26,9 +27,12 @@ ms.locfileid: "27973029"
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
 |enhancedJailBreak|Логический|— Это функция включена или не для улучшения обнаружения jailbreak.|
 |deviceInactivityBeforeRetirementInDay|Int32|Когда устройство не проверяет, для указанного числа дней, компании данных может быть удален, устройство не будет в разделе Управление. Допустимые значения 30 на 270 градусов|
+|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Производные поставщик учетных данных для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
+|derivedCredentialUrl|String|URI самостоятельного производные поставщика учетных данных.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -43,10 +47,11 @@ ms.locfileid: "27973029"
   "isScheduledActionEnabled": true,
   "secureByDefault": true,
   "enhancedJailBreak": true,
-  "deviceInactivityBeforeRetirementInDay": 1024
+  "deviceInactivityBeforeRetirementInDay": 1024,
+  "derivedCredentialProvider": "String",
+  "derivedCredentialUrl": "String"
 }
 ```
-
 
 
 

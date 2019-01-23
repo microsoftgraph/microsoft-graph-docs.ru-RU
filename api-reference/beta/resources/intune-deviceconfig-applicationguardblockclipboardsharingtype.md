@@ -1,23 +1,24 @@
 ---
 title: Тип перечисления applicationGuardBlockClipboardSharingType
 description: Возможные значения для applicationGuardBlockClipboardSharingType
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cba0a3fcd25c9f4672d7590718c25e977edf635b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 3f9621db53e16231f710cccb12d79f65d22d4017
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415063"
 ---
 # <a name="applicationguardblockclipboardsharingtype-enum-type"></a>Тип перечисления applicationGuardBlockClipboardSharingType
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные значения для applicationGuardBlockClipboardSharingType
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -26,7 +27,6 @@ ms.locfileid: "27949145"
 |blockHostToContainer|2|Буфер обмена блокировки для совместного использования данных из узла, который контейнера|
 |blockContainerToHost|3|Буфер обмена блока совместный доступ к данным из контейнера для размещения|
 |blockNone|4|Буфер обмена блока совместный доступ к данным из узла в контейнер, ни из контейнера для размещения|
-
 
 
 

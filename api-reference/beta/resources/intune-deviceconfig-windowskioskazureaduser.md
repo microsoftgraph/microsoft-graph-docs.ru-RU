@@ -1,23 +1,24 @@
 ---
 title: Тип ресурса windowsKioskAzureADUser
 description: Класс, используемый для идентификации учетной записи пользователя в AzureAD для базовой конфигурации
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4497c6d42db45f518e3ef93e78e50d25f473ac00
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 08c5b53e8e208abac2801146ff70df6023eaedff
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984145"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29420187"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса windowsKioskAzureADUser
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, используемый для идентификации учетной записи пользователя в AzureAD для базовой конфигурации
+
 
 Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
 
@@ -25,10 +26,11 @@ ms.locfileid: "27984145"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя AzureAD, который будет заблокирована этой базовой конфигурации|
-|userPrincipalName|Строка|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
+|userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -43,7 +45,6 @@ ms.locfileid: "27984145"
   "userPrincipalName": "String"
 }
 ```
-
 
 
 

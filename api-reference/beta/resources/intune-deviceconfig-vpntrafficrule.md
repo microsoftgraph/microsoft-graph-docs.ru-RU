@@ -1,27 +1,28 @@
 ---
 title: Тип ресурса vpnTrafficRule
 description: Определение правила трафика через VPN.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5ebabdb491a9b41efdd6d3abb87fd41a0c803df3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 5b28d26356eea113f267c4eb0499f9600671f114
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923245"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29415287"
 ---
 # <a name="vpntrafficrule-resource-type"></a>Тип ресурса vpnTrafficRule
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Определение правила трафика через VPN.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|name|Строка|Имя.|
+|name|String|Имя.|
 |протоколы|Int32|Протоколы (0-255). Допустимые значения от 0 до 255|
 |localPortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md) коллекции|Диапазон портов для локального может устанавливаться только в том случае, если протокол TCP или UDP-ПОРТ (6 или 17). Эта коллекция может содержать не более 500 элементов.|
 |remotePortRanges|[numberRange](../resources/intune-deviceconfig-numberrange.md) коллекции|Диапазон портов для удаленного может устанавливаться только в том случае, если протокол TCP или UDP-ПОРТ (6 или 17). Эта коллекция может содержать не более 500 элементов.|
@@ -30,10 +31,11 @@ ms.locfileid: "27923245"
 |appId|String|Идентификатор приложения, если правило трафика используется приложением.|
 |Тип|[vpnTrafficRuleAppType](../resources/intune-deviceconfig-vpntrafficruleapptype.md)|Тип приложения, если правило трафика используется приложением. Возможные значения: `none`, `desktop`, `universal`.|
 |routingPolicyType|[vpnTrafficRuleRoutingPolicyType](../resources/intune-deviceconfig-vpntrafficruleroutingpolicytype.md)|При запуске приложения указывает, следует ли включить разделенное туннелирование по этому маршруту. Возможные значения: `none`, `splitTunnel`, `forceTunnel`.|
-|утверждения|Строка|Утверждений, связанный с этим правилом трафика.|
+|утверждения|String|Утверждений, связанный с этим правилом трафика.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -80,7 +82,6 @@ ms.locfileid: "27923245"
   "claims": "String"
 }
 ```
-
 
 
 
