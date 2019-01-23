@@ -4,12 +4,12 @@ description: 'Представляет курс в учебном заведен
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f651e695ddf0b7139a31d077dcf021fced91293a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962921"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393223"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -40,7 +40,7 @@ ms.locfileid: "27962921"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id| String| Уникальный идентификатор для курса.|
-|описание|String| Описание курса.|
+|description|String| Описание курса.|
 |displayName|String| Название курса.|
 |mailNickname|String| Почтовое имя для отправки почты всем участникам, если это возможно. |
 |createdBy|[identitySet](identityset.md)| Объект, который создал курс. |
@@ -82,7 +82,7 @@ ms.locfileid: "27962921"
   "externalName": "String",
   "externalSource": "string",
   "mailNickname": "String",
-  "term": {"@odata.type": "microsoft.graph.education.term"}
+  "term": {"@odata.type": "microsoft.graph.educationTerm"}
 }
 
 ```

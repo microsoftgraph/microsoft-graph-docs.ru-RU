@@ -3,21 +3,22 @@ title: Тип ресурса iosVppAppAssignedDeviceLicense
 description: операций ввода-вывода устройства программа покупки корпоративного лицензионного назначения. Этот класс не поддерживает операции создания, удаления и обновления.
 localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 6c02a708c0629b23a14458eb08e0e26208e121db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b18415b3a2d25990bc7202d96fc35f3289b56f4a
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948739"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29393615"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>Тип ресурса iosVppAppAssignedDeviceLicense
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 операций ввода-вывода устройства программа покупки корпоративного лицензионного назначения. Этот класс не поддерживает операции создания, удаления и обновления.
+
 
 Наследуется от [iosVppAppAssignedLicense](../resources/intune-apps-iosvppappassignedlicense.md)
 
@@ -41,8 +42,9 @@ ms.locfileid: "27948739"
 |managedDeviceId|String|С идентификатором управляемого устройства.|
 |deviceName|String|Имя устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
@@ -63,7 +65,6 @@ ms.locfileid: "27948739"
   "deviceName": "String"
 }
 ```
-
 
 
 
