@@ -1,30 +1,30 @@
 ---
 title: Тип перечисления vpnProviderType
 description: Тип поставщика для VPN-app.
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1eeb0acf2f6e7b0773cbf4697e5a27699d1f2f27
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: 2de8f78222ba0c945000b84f28039c2f6af58daa
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937728"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29407223"
 ---
-# <a name="vpnprovidertype-enum-type"></a><span data-ttu-id="7f6a9-103">Тип перечисления vpnProviderType</span><span class="sxs-lookup"><span data-stu-id="7f6a9-103">vpnProviderType enum type</span></span>
+# <a name="vpnprovidertype-enum-type"></a><span data-ttu-id="b8091-103">Тип перечисления vpnProviderType</span><span class="sxs-lookup"><span data-stu-id="b8091-103">vpnProviderType enum type</span></span>
 
-> <span data-ttu-id="7f6a9-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7f6a9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b8091-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b8091-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b8091-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b8091-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="7f6a9-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b8091-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b8091-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7f6a9-107">Тип поставщика для VPN-app.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-107">Provider type for per-app VPN.</span></span>
-## <a name="members"></a><span data-ttu-id="7f6a9-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="7f6a9-108">Members</span></span>
-|<span data-ttu-id="7f6a9-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="7f6a9-109">Member</span></span>|<span data-ttu-id="7f6a9-110">Значение</span><span class="sxs-lookup"><span data-stu-id="7f6a9-110">Value</span></span>|<span data-ttu-id="7f6a9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7f6a9-111">Description</span></span>|
+<span data-ttu-id="b8091-107">Тип поставщика для VPN-app.</span><span class="sxs-lookup"><span data-stu-id="b8091-107">Provider type for per-app VPN.</span></span>
+
+## <a name="members"></a><span data-ttu-id="b8091-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="b8091-108">Members</span></span>
+|<span data-ttu-id="b8091-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="b8091-109">Member</span></span>|<span data-ttu-id="b8091-110">Значение</span><span class="sxs-lookup"><span data-stu-id="b8091-110">Value</span></span>|<span data-ttu-id="b8091-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b8091-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7f6a9-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="7f6a9-112">notConfigured</span></span>|<span data-ttu-id="7f6a9-113">0</span><span class="sxs-lookup"><span data-stu-id="7f6a9-113">0</span></span>|<span data-ttu-id="7f6a9-114">Туннель трафика явно не настроен.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-114">Tunnel traffic is not explicitly configured.</span></span>|
-|<span data-ttu-id="7f6a9-115">appProxy</span><span class="sxs-lookup"><span data-stu-id="7f6a9-115">appProxy</span></span>|<span data-ttu-id="7f6a9-116">1</span><span class="sxs-lookup"><span data-stu-id="7f6a9-116">1</span></span>|<span data-ttu-id="7f6a9-117">Туннель трафика на уровне приложения.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-117">Tunnel traffic at the application layer.</span></span>|
-|<span data-ttu-id="7f6a9-118">packetTunnel</span><span class="sxs-lookup"><span data-stu-id="7f6a9-118">packetTunnel</span></span>|<span data-ttu-id="7f6a9-119">2</span><span class="sxs-lookup"><span data-stu-id="7f6a9-119">2</span></span>|<span data-ttu-id="7f6a9-120">Туннель трафика на уровне IP.</span><span class="sxs-lookup"><span data-stu-id="7f6a9-120">Tunnel traffic at the IP layer.</span></span>|
-
+|<span data-ttu-id="b8091-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="b8091-112">notConfigured</span></span>|<span data-ttu-id="b8091-113">0</span><span class="sxs-lookup"><span data-stu-id="b8091-113">0</span></span>|<span data-ttu-id="b8091-114">Туннель трафика явно не настроен.</span><span class="sxs-lookup"><span data-stu-id="b8091-114">Tunnel traffic is not explicitly configured.</span></span>|
+|<span data-ttu-id="b8091-115">appProxy</span><span class="sxs-lookup"><span data-stu-id="b8091-115">appProxy</span></span>|<span data-ttu-id="b8091-116">1</span><span class="sxs-lookup"><span data-stu-id="b8091-116">1</span></span>|<span data-ttu-id="b8091-117">Туннель трафика на уровне приложения.</span><span class="sxs-lookup"><span data-stu-id="b8091-117">Tunnel traffic at the application layer.</span></span>|
+|<span data-ttu-id="b8091-118">packetTunnel</span><span class="sxs-lookup"><span data-stu-id="b8091-118">packetTunnel</span></span>|<span data-ttu-id="b8091-119">2</span><span class="sxs-lookup"><span data-stu-id="b8091-119">2</span></span>|<span data-ttu-id="b8091-120">Туннель трафика на уровне IP.</span><span class="sxs-lookup"><span data-stu-id="b8091-120">Tunnel traffic at the IP layer.</span></span>|
 
 
 

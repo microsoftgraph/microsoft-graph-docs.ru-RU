@@ -1,33 +1,35 @@
 ---
 title: Тип ресурса mediaContentRatingNewZealand
 description: Н/Д
-author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a1866a6bf0c8d1849eb2fbf478b4f5d14fa3e5c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: tfitzmac
+ms.prod: Intune
+ms.openlocfilehash: adfc34cf65104f0bf370a4e1ba22cfcb78bf250b
+ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916938"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29403450"
 ---
-# <a name="mediacontentratingnewzealand-resource-type"></a><span data-ttu-id="de125-103">Тип ресурса mediaContentRatingNewZealand</span><span class="sxs-lookup"><span data-stu-id="de125-103">mediaContentRatingNewZealand resource type</span></span>
+# <a name="mediacontentratingnewzealand-resource-type"></a><span data-ttu-id="78a45-103">Тип ресурса mediaContentRatingNewZealand</span><span class="sxs-lookup"><span data-stu-id="78a45-103">mediaContentRatingNewZealand resource type</span></span>
 
-> <span data-ttu-id="de125-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="de125-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="de125-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="de125-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="78a45-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="78a45-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="78a45-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="78a45-105">Use of these APIs in production applications is not supported.</span></span>
 
-> <span data-ttu-id="de125-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="de125-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="78a45-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="78a45-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="de125-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="de125-107">Not yet documented</span></span>
-## <a name="properties"></a><span data-ttu-id="de125-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="de125-108">Properties</span></span>
-|<span data-ttu-id="de125-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="de125-109">Property</span></span>|<span data-ttu-id="de125-110">Тип</span><span class="sxs-lookup"><span data-stu-id="de125-110">Type</span></span>|<span data-ttu-id="de125-111">Описание</span><span class="sxs-lookup"><span data-stu-id="de125-111">Description</span></span>|
+<span data-ttu-id="78a45-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="78a45-107">Not yet documented</span></span>
+
+## <a name="properties"></a><span data-ttu-id="78a45-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="78a45-108">Properties</span></span>
+|<span data-ttu-id="78a45-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="78a45-109">Property</span></span>|<span data-ttu-id="78a45-110">Тип</span><span class="sxs-lookup"><span data-stu-id="78a45-110">Type</span></span>|<span data-ttu-id="78a45-111">Описание</span><span class="sxs-lookup"><span data-stu-id="78a45-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="de125-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="de125-112">movieRating</span></span>|[<span data-ttu-id="de125-113">ratingNewZealandMoviesType</span><span class="sxs-lookup"><span data-stu-id="de125-113">ratingNewZealandMoviesType</span></span>](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|<span data-ttu-id="de125-114">Оценка выбранных для новой Зеландии фильмы.</span><span class="sxs-lookup"><span data-stu-id="de125-114">Movies rating selected for New Zealand.</span></span> <span data-ttu-id="de125-115">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span><span class="sxs-lookup"><span data-stu-id="de125-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span></span>|
-|<span data-ttu-id="de125-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="de125-116">tvRating</span></span>|[<span data-ttu-id="de125-117">ratingNewZealandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="de125-117">ratingNewZealandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|<span data-ttu-id="de125-118">Оценка TV, выбранной для новой Зеландии.</span><span class="sxs-lookup"><span data-stu-id="de125-118">TV rating selected for New Zealand.</span></span> <span data-ttu-id="de125-119">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="de125-119">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span></span>|
+|<span data-ttu-id="78a45-112">movieRating</span><span class="sxs-lookup"><span data-stu-id="78a45-112">movieRating</span></span>|[<span data-ttu-id="78a45-113">ratingNewZealandMoviesType</span><span class="sxs-lookup"><span data-stu-id="78a45-113">ratingNewZealandMoviesType</span></span>](../resources/intune-deviceconfig-ratingnewzealandmoviestype.md)|<span data-ttu-id="78a45-114">Оценка выбранных для новой Зеландии фильмы.</span><span class="sxs-lookup"><span data-stu-id="78a45-114">Movies rating selected for New Zealand.</span></span> <span data-ttu-id="78a45-115">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span><span class="sxs-lookup"><span data-stu-id="78a45-115">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `mature`, `agesAbove13`, `agesAbove15`, `agesAbove16`, `agesAbove18`, `restricted`, `agesAbove16Restricted`.</span></span>|
+|<span data-ttu-id="78a45-116">tvRating</span><span class="sxs-lookup"><span data-stu-id="78a45-116">tvRating</span></span>|[<span data-ttu-id="78a45-117">ratingNewZealandTelevisionType</span><span class="sxs-lookup"><span data-stu-id="78a45-117">ratingNewZealandTelevisionType</span></span>](../resources/intune-deviceconfig-ratingnewzealandtelevisiontype.md)|<span data-ttu-id="78a45-118">Оценка TV, выбранной для новой Зеландии.</span><span class="sxs-lookup"><span data-stu-id="78a45-118">TV rating selected for New Zealand.</span></span> <span data-ttu-id="78a45-119">Возможные значения: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span><span class="sxs-lookup"><span data-stu-id="78a45-119">Possible values are: `allAllowed`, `allBlocked`, `general`, `parentalGuidance`, `adults`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="de125-120">Связи</span><span class="sxs-lookup"><span data-stu-id="de125-120">Relationships</span></span>
-<span data-ttu-id="de125-121">Нет</span><span class="sxs-lookup"><span data-stu-id="de125-121">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="de125-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="de125-122">JSON Representation</span></span>
-<span data-ttu-id="de125-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="de125-123">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="78a45-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="78a45-120">Relationships</span></span>
+<span data-ttu-id="78a45-121">Нет</span><span class="sxs-lookup"><span data-stu-id="78a45-121">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="78a45-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="78a45-122">JSON Representation</span></span>
+<span data-ttu-id="78a45-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="78a45-123">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mediaContentRatingNewZealand"
@@ -40,7 +42,6 @@ ms.locfileid: "27916938"
   "tvRating": "String"
 }
 ```
-
 
 
 
