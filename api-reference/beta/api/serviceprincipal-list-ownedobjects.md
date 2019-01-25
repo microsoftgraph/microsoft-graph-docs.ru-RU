@@ -2,50 +2,50 @@
 title: 'servicePrincipals: список ownedObjects'
 description: Получение списка объектов, владельцем которого servicePrincipal.  Это может включать приложения или групп.
 localization_priority: Normal
-ms.openlocfilehash: f061a99c6389651985779ac71df2ced5a91ba527
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 788ee23010825a657e8eb5664f11de1d2cf1b34a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882868"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514238"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a><span data-ttu-id="6e574-104">servicePrincipals: список ownedObjects</span><span class="sxs-lookup"><span data-stu-id="6e574-104">servicePrincipals: List ownedObjects</span></span>
+# <a name="serviceprincipals-list-ownedobjects"></a><span data-ttu-id="31085-104">servicePrincipals: список ownedObjects</span><span class="sxs-lookup"><span data-stu-id="31085-104">servicePrincipals: List ownedObjects</span></span>
 
-> <span data-ttu-id="6e574-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6e574-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6e574-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e574-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6e574-107">Получение списка объектов, владельцем которого servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="6e574-107">Retrieve a list of objects owned by the servicePrincipal.</span></span>  <span data-ttu-id="6e574-108">Это может включать приложения или групп.</span><span class="sxs-lookup"><span data-stu-id="6e574-108">This could include applications or groups.</span></span>
+<span data-ttu-id="31085-105">Получение списка объектов, владельцем которого servicePrincipal.</span><span class="sxs-lookup"><span data-stu-id="31085-105">Retrieve a list of objects owned by the servicePrincipal.</span></span>  <span data-ttu-id="31085-106">Это может включать приложения или групп.</span><span class="sxs-lookup"><span data-stu-id="31085-106">This could include applications or groups.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6e574-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="6e574-109">Permissions</span></span>
-<span data-ttu-id="6e574-p104">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="6e574-p104">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="31085-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="31085-107">Permissions</span></span>
+<span data-ttu-id="31085-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="31085-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="6e574-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="6e574-112">Permission type</span></span>      | <span data-ttu-id="6e574-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="6e574-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="31085-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="31085-110">Permission type</span></span>      | <span data-ttu-id="31085-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="31085-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="6e574-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="6e574-114">Delegated (work or school account)</span></span> | <span data-ttu-id="6e574-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="6e574-115">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="6e574-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="6e574-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="6e574-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e574-117">Not supported.</span></span>    |
-|<span data-ttu-id="6e574-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="6e574-118">Application</span></span> | <span data-ttu-id="6e574-119">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="6e574-119">Directory.Read.All, Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="31085-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="31085-112">Delegated (work or school account)</span></span> | <span data-ttu-id="31085-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="31085-113">Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="31085-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="31085-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31085-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31085-115">Not supported.</span></span>    |
+|<span data-ttu-id="31085-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="31085-116">Application</span></span> | <span data-ttu-id="31085-117">Directory.Read.All, Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31085-117">Directory.Read.All, Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="6e574-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="6e574-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31085-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="31085-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/ownedObjects
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="6e574-121">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="6e574-121">Optional query parameters</span></span>
-<span data-ttu-id="6e574-122">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="6e574-122">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="31085-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="31085-119">Optional query parameters</span></span>
+<span data-ttu-id="31085-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="31085-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="6e574-123">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="6e574-123">Request headers</span></span>
-| <span data-ttu-id="6e574-124">Имя</span><span class="sxs-lookup"><span data-stu-id="6e574-124">Name</span></span>       | <span data-ttu-id="6e574-125">Тип</span><span class="sxs-lookup"><span data-stu-id="6e574-125">Type</span></span> | <span data-ttu-id="6e574-126">Описание</span><span class="sxs-lookup"><span data-stu-id="6e574-126">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="31085-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="31085-121">Request headers</span></span>
+| <span data-ttu-id="31085-122">Имя</span><span class="sxs-lookup"><span data-stu-id="31085-122">Name</span></span>       | <span data-ttu-id="31085-123">Тип</span><span class="sxs-lookup"><span data-stu-id="31085-123">Type</span></span> | <span data-ttu-id="31085-124">Описание</span><span class="sxs-lookup"><span data-stu-id="31085-124">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="6e574-127">Authorization</span><span class="sxs-lookup"><span data-stu-id="6e574-127">Authorization</span></span>  | <span data-ttu-id="6e574-128">string</span><span class="sxs-lookup"><span data-stu-id="6e574-128">string</span></span>  | <span data-ttu-id="6e574-p105">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="6e574-p105">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="31085-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="31085-125">Authorization</span></span>  | <span data-ttu-id="31085-126">string</span><span class="sxs-lookup"><span data-stu-id="31085-126">string</span></span>  | <span data-ttu-id="31085-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="31085-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="6e574-131">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="6e574-131">Request body</span></span>
-<span data-ttu-id="6e574-132">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="6e574-132">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31085-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="31085-129">Request body</span></span>
+<span data-ttu-id="31085-130">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="31085-130">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="6e574-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="6e574-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="31085-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="31085-131">Response</span></span>
 
-<span data-ttu-id="6e574-134">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="6e574-134">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="6e574-135">Пример</span><span class="sxs-lookup"><span data-stu-id="6e574-135">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="6e574-136">Запрос</span><span class="sxs-lookup"><span data-stu-id="6e574-136">Request</span></span>
-<span data-ttu-id="6e574-137">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="6e574-137">Here is an example of the request.</span></span>
+<span data-ttu-id="31085-132">В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="31085-132">If successful, this method returns a `200 OK` response code and collection of [directoryObject](../resources/directoryobject.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="31085-133">Пример</span><span class="sxs-lookup"><span data-stu-id="31085-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="31085-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="31085-134">Request</span></span>
+<span data-ttu-id="31085-135">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="31085-135">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_ownedobjects"
@@ -53,8 +53,9 @@ GET /servicePrincipals/{id}/ownedObjects
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```
-##### <a name="response"></a><span data-ttu-id="6e574-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="6e574-138">Response</span></span>
-<span data-ttu-id="6e574-p106">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="6e574-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="31085-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="31085-136">Response</span></span>
+<span data-ttu-id="31085-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="31085-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -77,10 +78,15 @@ Content-length: 55
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List ownedObjects",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-list-ownedobjects.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

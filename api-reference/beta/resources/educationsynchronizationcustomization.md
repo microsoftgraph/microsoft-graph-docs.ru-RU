@@ -4,32 +4,32 @@ description: 'Содержит параметры для настройки си
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 51563255c11406c26cfa3b02b7b7bb868ed935c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8af6c5e2173a8b04e730529123b4608fd236f959
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415658"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513608"
 ---
-# <a name="educationsynchronizationcustomization-resource-type"></a><span data-ttu-id="2bbfe-104">Тип ресурса educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="2bbfe-104">educationSynchronizationCustomization resource type</span></span>
+# <a name="educationsynchronizationcustomization-resource-type"></a><span data-ttu-id="302e3-104">Тип ресурса educationSynchronizationCustomization</span><span class="sxs-lookup"><span data-stu-id="302e3-104">educationSynchronizationCustomization resource type</span></span>
 
-> <span data-ttu-id="2bbfe-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="2bbfe-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2bbfe-107">Содержит параметры для настройки синхронизации профилей данных school сущностей ресурсов.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-107">Provides settings for customizing the school data profile synchronization of the resource entities.</span></span> <span data-ttu-id="2bbfe-108">Настройка может применяться для всех сущностей, которые синхронизируются.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-108">The customization can be applied to all the entities being synchronized.</span></span> 
+<span data-ttu-id="302e3-105">Содержит параметры для настройки синхронизации профилей данных school сущностей ресурсов.</span><span class="sxs-lookup"><span data-stu-id="302e3-105">Provides settings for customizing the school data profile synchronization of the resource entities.</span></span> <span data-ttu-id="302e3-106">Настройка может применяться для всех сущностей, которые синхронизируются.</span><span class="sxs-lookup"><span data-stu-id="302e3-106">The customization can be applied to all the entities being synchronized.</span></span> 
 
-><span data-ttu-id="2bbfe-109">**Примечание:** Свойство **synchronizationStartDate** применяется только к **StudentEnrollment** сущности.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-109">**Note:** The **synchronizationStartDate** property only applies to the **StudentEnrollment** entity.</span></span>
+><span data-ttu-id="302e3-107">**Примечание:** Свойство **synchronizationStartDate** применяется только к **StudentEnrollment** сущности.</span><span class="sxs-lookup"><span data-stu-id="302e3-107">**Note:** The **synchronizationStartDate** property only applies to the **StudentEnrollment** entity.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2bbfe-110">Свойства</span><span class="sxs-lookup"><span data-stu-id="2bbfe-110">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="302e3-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="302e3-108">Properties</span></span>
 
-| <span data-ttu-id="2bbfe-111">Свойство</span><span class="sxs-lookup"><span data-stu-id="2bbfe-111">Property</span></span> | <span data-ttu-id="2bbfe-112">Тип</span><span class="sxs-lookup"><span data-stu-id="2bbfe-112">Type</span></span> | <span data-ttu-id="2bbfe-113">Описание</span><span class="sxs-lookup"><span data-stu-id="2bbfe-113">Description</span></span> |
+| <span data-ttu-id="302e3-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="302e3-109">Property</span></span> | <span data-ttu-id="302e3-110">Тип</span><span class="sxs-lookup"><span data-stu-id="302e3-110">Type</span></span> | <span data-ttu-id="302e3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="302e3-111">Description</span></span> |
 |:-|:-|:-|
-| <span data-ttu-id="2bbfe-114">**optionalPropertiesToSync**</span><span class="sxs-lookup"><span data-stu-id="2bbfe-114">**optionalPropertiesToSync**</span></span> | <span data-ttu-id="2bbfe-115">Набор типа string</span><span class="sxs-lookup"><span data-stu-id="2bbfe-115">collection of string</span></span> |  <span data-ttu-id="2bbfe-116">Коллекция имен свойств для синхронизации. Если задано значение null, все свойства будут синхронизированы.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-116">The collection of property names to sync. If set to null, all properties will be synchronized.</span></span>       |
-| <span data-ttu-id="2bbfe-117">**synchronizationStartDate**</span><span class="sxs-lookup"><span data-stu-id="2bbfe-117">**synchronizationStartDate**</span></span> | <span data-ttu-id="2bbfe-118">DateTime</span><span class="sxs-lookup"><span data-stu-id="2bbfe-118">DateTime</span></span> |  <span data-ttu-id="2bbfe-119">Дата начала для синхронизации.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-119">The date that the synchronization should start.</span></span> <span data-ttu-id="2bbfe-120">Это значение необходимо задать в будущем.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-120">This value should be set to a future date.</span></span> <span data-ttu-id="2bbfe-121">Если параметр имеет значение null, ресурс будет синхронизирован после завершения настройки профиля.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-121">If set to null, the resource will be synchronized when the profile setup completes.</span></span> <span data-ttu-id="2bbfe-122">**Примечание:** Применяется только к свойству **StudentEnrollment** .</span><span class="sxs-lookup"><span data-stu-id="2bbfe-122">**Note:** This only applies to the **StudentEnrollment** property.</span></span>      |
-|<span data-ttu-id="2bbfe-123">**isSyncDeferred**</span><span class="sxs-lookup"><span data-stu-id="2bbfe-123">**isSyncDeferred**</span></span> |<span data-ttu-id="2bbfe-124">Логический</span><span class="sxs-lookup"><span data-stu-id="2bbfe-124">Boolean</span></span> | <span data-ttu-id="2bbfe-125">Указывает, будет ли синхронизация родительской сущности откладывается на более позднюю дату.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-125">Indicates whether synchronization of the parent entity is deferred to a later date.</span></span> |
-| <span data-ttu-id="2bbfe-126">**allowDisplayNameUpdate**</span><span class="sxs-lookup"><span data-stu-id="2bbfe-126">**allowDisplayNameUpdate**</span></span> | <span data-ttu-id="2bbfe-127">Логический</span><span class="sxs-lookup"><span data-stu-id="2bbfe-127">Boolean</span></span> |  <span data-ttu-id="2bbfe-128">Указывает, является ли отображаемое имя ресурса может быть перезаписана при синхронизации.</span><span class="sxs-lookup"><span data-stu-id="2bbfe-128">Indicates whether the display name of the resource can be overwritten by the sync.</span></span>         |
+| <span data-ttu-id="302e3-112">**optionalPropertiesToSync**</span><span class="sxs-lookup"><span data-stu-id="302e3-112">**optionalPropertiesToSync**</span></span> | <span data-ttu-id="302e3-113">Коллекция строк.</span><span class="sxs-lookup"><span data-stu-id="302e3-113">collection of string</span></span> |  <span data-ttu-id="302e3-114">Коллекция имен свойств для синхронизации. Если задано значение null, все свойства будут синхронизированы.</span><span class="sxs-lookup"><span data-stu-id="302e3-114">The collection of property names to sync. If set to null, all properties will be synchronized.</span></span>       |
+| <span data-ttu-id="302e3-115">**synchronizationStartDate**</span><span class="sxs-lookup"><span data-stu-id="302e3-115">**synchronizationStartDate**</span></span> | <span data-ttu-id="302e3-116">DateTime</span><span class="sxs-lookup"><span data-stu-id="302e3-116">DateTime</span></span> |  <span data-ttu-id="302e3-117">Дата начала для синхронизации.</span><span class="sxs-lookup"><span data-stu-id="302e3-117">The date that the synchronization should start.</span></span> <span data-ttu-id="302e3-118">Это значение необходимо задать в будущем.</span><span class="sxs-lookup"><span data-stu-id="302e3-118">This value should be set to a future date.</span></span> <span data-ttu-id="302e3-119">Если параметр имеет значение null, ресурс будет синхронизирован после завершения настройки профиля.</span><span class="sxs-lookup"><span data-stu-id="302e3-119">If set to null, the resource will be synchronized when the profile setup completes.</span></span> <span data-ttu-id="302e3-120">**Примечание:** Применяется только к свойству **StudentEnrollment** .</span><span class="sxs-lookup"><span data-stu-id="302e3-120">**Note:** This only applies to the **StudentEnrollment** property.</span></span>      |
+|<span data-ttu-id="302e3-121">**isSyncDeferred**</span><span class="sxs-lookup"><span data-stu-id="302e3-121">**isSyncDeferred**</span></span> |<span data-ttu-id="302e3-122">Логическое</span><span class="sxs-lookup"><span data-stu-id="302e3-122">Boolean</span></span> | <span data-ttu-id="302e3-123">Указывает, будет ли синхронизация родительской сущности откладывается на более позднюю дату.</span><span class="sxs-lookup"><span data-stu-id="302e3-123">Indicates whether synchronization of the parent entity is deferred to a later date.</span></span> |
+| <span data-ttu-id="302e3-124">**allowDisplayNameUpdate**</span><span class="sxs-lookup"><span data-stu-id="302e3-124">**allowDisplayNameUpdate**</span></span> | <span data-ttu-id="302e3-125">Логическое</span><span class="sxs-lookup"><span data-stu-id="302e3-125">Boolean</span></span> |  <span data-ttu-id="302e3-126">Указывает, является ли отображаемое имя ресурса может быть перезаписана при синхронизации.</span><span class="sxs-lookup"><span data-stu-id="302e3-126">Indicates whether the display name of the resource can be overwritten by the sync.</span></span>         |
 
 
-## <a name="json-representation"></a><span data-ttu-id="2bbfe-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2bbfe-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="302e3-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="302e3-127">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -46,3 +46,11 @@ ms.locfileid: "29415658"
     "allowDisplayNameUpdate": "Boolean"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationcustomization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

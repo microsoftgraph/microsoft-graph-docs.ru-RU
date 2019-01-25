@@ -4,50 +4,50 @@ description: Получение свойств недавно удаленног
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 09996c27aec0183ded5b09b490c95fb95d57893a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d77161c19807ab99b3c9c8771ea910d1d6e90e42
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926430"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514455"
 ---
-# <a name="get-deleted-item"></a><span data-ttu-id="da9f9-103">Получение удаленного элемента</span><span class="sxs-lookup"><span data-stu-id="da9f9-103">Get deleted item</span></span>
+# <a name="get-deleted-item"></a><span data-ttu-id="e7654-103">Получение удаленного элемента</span><span class="sxs-lookup"><span data-stu-id="e7654-103">Get deleted item</span></span>
 
-> <span data-ttu-id="da9f9-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="da9f9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="da9f9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da9f9-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="da9f9-106">Получение свойств недавно [удаленного элемента](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="da9f9-106">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
+<span data-ttu-id="e7654-104">Получение свойств недавно [удаленного элемента](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="e7654-104">Retrieve the properties of a recently deleted item in [deleted items](../resources/directory.md).</span></span>
 
-<span data-ttu-id="da9f9-107">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="da9f9-107">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
+<span data-ttu-id="e7654-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="e7654-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="da9f9-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="da9f9-108">Permissions</span></span>
-<span data-ttu-id="da9f9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="da9f9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="e7654-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e7654-106">Permissions</span></span>
+<span data-ttu-id="e7654-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e7654-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="da9f9-111">Для пользователей: User.Read.All, User.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="da9f9-111">For users: User.Read.All, User.ReadWrite.All, Directory.Read.All</span></span>
-* <span data-ttu-id="da9f9-112">Для групп: Group.Read.All, Group.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="da9f9-112">For groups: Group.Read.All, Group.ReadWrite.All, Directory.Read.All</span></span>
+* <span data-ttu-id="e7654-109">Для пользователей: User.Read.All, User.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7654-109">For users: User.Read.All, User.ReadWrite.All, Directory.Read.All</span></span>
+* <span data-ttu-id="e7654-110">Для групп: Group.Read.All, Group.ReadWrite.All, Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="e7654-110">For groups: Group.Read.All, Group.ReadWrite.All, Directory.Read.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="da9f9-113">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="da9f9-113">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e7654-111">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e7654-111">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /directory/deleteditems/{id}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="da9f9-114">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="da9f9-114">Optional query parameters</span></span>
-<span data-ttu-id="da9f9-115">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="da9f9-115">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="e7654-112">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="e7654-112">Optional query parameters</span></span>
+<span data-ttu-id="e7654-113">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="e7654-113">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="da9f9-116">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="da9f9-116">Request headers</span></span>
-| <span data-ttu-id="da9f9-117">Имя</span><span class="sxs-lookup"><span data-stu-id="da9f9-117">Name</span></span>      |<span data-ttu-id="da9f9-118">Описание</span><span class="sxs-lookup"><span data-stu-id="da9f9-118">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e7654-114">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e7654-114">Request headers</span></span>
+| <span data-ttu-id="e7654-115">Имя</span><span class="sxs-lookup"><span data-stu-id="e7654-115">Name</span></span>      |<span data-ttu-id="e7654-116">Описание</span><span class="sxs-lookup"><span data-stu-id="e7654-116">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="da9f9-119">Authorization</span><span class="sxs-lookup"><span data-stu-id="da9f9-119">Authorization</span></span>  | <span data-ttu-id="da9f9-120">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="da9f9-120">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="da9f9-121">Accept</span><span class="sxs-lookup"><span data-stu-id="da9f9-121">Accept</span></span>  | <span data-ttu-id="da9f9-122">application/json</span><span class="sxs-lookup"><span data-stu-id="da9f9-122">application/json</span></span> |
+| <span data-ttu-id="e7654-117">Authorization</span><span class="sxs-lookup"><span data-stu-id="e7654-117">Authorization</span></span>  | <span data-ttu-id="e7654-118">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="e7654-118">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="e7654-119">Accept</span><span class="sxs-lookup"><span data-stu-id="e7654-119">Accept</span></span>  | <span data-ttu-id="e7654-120">application/json</span><span class="sxs-lookup"><span data-stu-id="e7654-120">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="da9f9-123">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="da9f9-123">Request body</span></span>
-<span data-ttu-id="da9f9-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="da9f9-124">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e7654-121">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e7654-121">Request body</span></span>
+<span data-ttu-id="e7654-122">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="e7654-122">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="da9f9-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="da9f9-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e7654-123">Отклик</span><span class="sxs-lookup"><span data-stu-id="e7654-123">Response</span></span>
 
-<span data-ttu-id="da9f9-126">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="da9f9-126">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="da9f9-127">Пример</span><span class="sxs-lookup"><span data-stu-id="da9f9-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="da9f9-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="da9f9-128">Request</span></span>
+<span data-ttu-id="e7654-124">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e7654-124">If successful, this method returns a `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="e7654-125">Пример</span><span class="sxs-lookup"><span data-stu-id="e7654-125">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="e7654-126">Запрос</span><span class="sxs-lookup"><span data-stu-id="e7654-126">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -56,8 +56,8 @@ GET /directory/deleteditems/{id}
 ```http
 GET https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb
 ```
-##### <a name="response"></a><span data-ttu-id="da9f9-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="da9f9-129">Response</span></span>
-<span data-ttu-id="da9f9-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="da9f9-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="e7654-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="e7654-127">Response</span></span>
+<span data-ttu-id="e7654-p102">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e7654-p102">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -82,10 +82,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get directory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/directory-deleteditems-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

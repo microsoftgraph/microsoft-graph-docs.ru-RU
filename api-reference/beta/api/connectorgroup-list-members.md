@@ -2,49 +2,49 @@
 title: Перечисление участников
 description: Получение списка объектов соединителя, связанных с connectorGroup.
 localization_priority: Normal
-ms.openlocfilehash: 5b8cd2d57f842e6c38d56ad25f53a4f80a9f1382
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0a35e2645d017d6c0ff23121a5f592438e575798
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27869981"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517059"
 ---
-# <a name="list-members"></a><span data-ttu-id="582fb-103">Перечисление участников</span><span class="sxs-lookup"><span data-stu-id="582fb-103">List members</span></span>
+# <a name="list-members"></a><span data-ttu-id="91fbd-103">Перечисление участников</span><span class="sxs-lookup"><span data-stu-id="91fbd-103">List members</span></span>
 
-> <span data-ttu-id="582fb-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="582fb-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="582fb-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="582fb-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="582fb-106">Получение списка объектов соединителя, связанных с connectorGroup.</span><span class="sxs-lookup"><span data-stu-id="582fb-106">Retrieve a list of connector objects associated with a connectorGroup.</span></span>
-## <a name="permissions"></a><span data-ttu-id="582fb-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="582fb-107">Permissions</span></span>
-<span data-ttu-id="582fb-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="582fb-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="91fbd-104">Получение списка объектов соединителя, связанных с connectorGroup.</span><span class="sxs-lookup"><span data-stu-id="91fbd-104">Retrieve a list of connector objects associated with a connectorGroup.</span></span>
+## <a name="permissions"></a><span data-ttu-id="91fbd-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="91fbd-105">Permissions</span></span>
+<span data-ttu-id="91fbd-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="91fbd-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="582fb-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="582fb-110">Permission type</span></span>      | <span data-ttu-id="582fb-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="582fb-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="91fbd-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="91fbd-108">Permission type</span></span>      | <span data-ttu-id="91fbd-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="91fbd-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="582fb-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="582fb-112">Delegated (work or school account)</span></span> | <span data-ttu-id="582fb-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="582fb-113">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="582fb-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="582fb-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="582fb-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="582fb-115">Not supported.</span></span>    |
-|<span data-ttu-id="582fb-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="582fb-116">Application</span></span> | <span data-ttu-id="582fb-117">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="582fb-117">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="91fbd-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="91fbd-110">Delegated (work or school account)</span></span> | <span data-ttu-id="91fbd-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="91fbd-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="91fbd-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="91fbd-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="91fbd-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="91fbd-113">Not supported.</span></span>    |
+|<span data-ttu-id="91fbd-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="91fbd-114">Application</span></span> | <span data-ttu-id="91fbd-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="91fbd-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="582fb-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="582fb-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="91fbd-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="91fbd-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /connectorGroups/{id}/members
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="582fb-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="582fb-119">Optional query parameters</span></span>
-<span data-ttu-id="582fb-120">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="582fb-120">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="91fbd-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="91fbd-117">Optional query parameters</span></span>
+<span data-ttu-id="91fbd-118">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="91fbd-118">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="582fb-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="582fb-121">Request headers</span></span>
-| <span data-ttu-id="582fb-122">Имя</span><span class="sxs-lookup"><span data-stu-id="582fb-122">Name</span></span>      |<span data-ttu-id="582fb-123">Описание</span><span class="sxs-lookup"><span data-stu-id="582fb-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="91fbd-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="91fbd-119">Request headers</span></span>
+| <span data-ttu-id="91fbd-120">Имя</span><span class="sxs-lookup"><span data-stu-id="91fbd-120">Name</span></span>      |<span data-ttu-id="91fbd-121">Описание</span><span class="sxs-lookup"><span data-stu-id="91fbd-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="582fb-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="582fb-124">Authorization</span></span>  | <span data-ttu-id="582fb-125">Носителя.</span><span class="sxs-lookup"><span data-stu-id="582fb-125">Bearer.</span></span> <span data-ttu-id="582fb-126">Обязательное</span><span class="sxs-lookup"><span data-stu-id="582fb-126">Required</span></span>|
+| <span data-ttu-id="91fbd-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="91fbd-122">Authorization</span></span>  | <span data-ttu-id="91fbd-123">Токен носителя.</span><span class="sxs-lookup"><span data-stu-id="91fbd-123">Bearer.</span></span> <span data-ttu-id="91fbd-124">Обязательный</span><span class="sxs-lookup"><span data-stu-id="91fbd-124">Required</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="582fb-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="582fb-127">Request body</span></span>
-<span data-ttu-id="582fb-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="582fb-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="91fbd-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="91fbd-125">Request body</span></span>
+<span data-ttu-id="91fbd-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="91fbd-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="582fb-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="582fb-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="91fbd-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="91fbd-127">Response</span></span>
 
-<span data-ttu-id="582fb-130">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [соединителя](../resources/connector.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="582fb-130">If successful, this method returns a `200 OK` response code and collection of [connector](../resources/connector.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="582fb-131">Пример</span><span class="sxs-lookup"><span data-stu-id="582fb-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="582fb-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="582fb-132">Request</span></span>
-<span data-ttu-id="582fb-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="582fb-133">Here is an example of the request.</span></span>
+<span data-ttu-id="91fbd-128">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [соединителя](../resources/connector.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="91fbd-128">If successful, this method returns a `200 OK` response code and collection of [connector](../resources/connector.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="91fbd-129">Пример</span><span class="sxs-lookup"><span data-stu-id="91fbd-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="91fbd-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="91fbd-130">Request</span></span>
+<span data-ttu-id="91fbd-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="91fbd-131">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_members"
@@ -52,8 +52,9 @@ GET /connectorGroups/{id}/members
 ```http
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/members
 ```
-##### <a name="response"></a><span data-ttu-id="582fb-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="582fb-134">Response</span></span>
-<span data-ttu-id="582fb-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="582fb-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="91fbd-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="91fbd-132">Response</span></span>
+<span data-ttu-id="91fbd-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="91fbd-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,10 +80,15 @@ Content-length: 169
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List members",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/connectorgroup-list-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

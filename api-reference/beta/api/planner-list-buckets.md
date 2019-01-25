@@ -4,52 +4,52 @@ description: Получение списка объектов **plannerbucket**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: c0648d659dbb33c3e7d51b38999648637721ca7b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9c5da6e715ae49539a31078e1e9ece9c85e1d861
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928733"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514294"
 ---
-# <a name="list-buckets"></a><span data-ttu-id="cb37a-103">Перечисление сегментов</span><span class="sxs-lookup"><span data-stu-id="cb37a-103">List buckets</span></span>
+# <a name="list-buckets"></a><span data-ttu-id="16698-103">Перечисление сегментов</span><span class="sxs-lookup"><span data-stu-id="16698-103">List buckets</span></span>
 
-> <span data-ttu-id="cb37a-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="cb37a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="cb37a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb37a-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb37a-106">Получение списка объектов **plannerbucket**.</span><span class="sxs-lookup"><span data-stu-id="cb37a-106">Retrieve a list of **plannerbucket** objects.</span></span>
+<span data-ttu-id="16698-104">Получение списка объектов **plannerbucket**.</span><span class="sxs-lookup"><span data-stu-id="16698-104">Retrieve a list of **plannerbucket** objects.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="cb37a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cb37a-107">Permissions</span></span>
-<span data-ttu-id="cb37a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="cb37a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="16698-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="16698-105">Permissions</span></span>
+<span data-ttu-id="16698-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="16698-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="cb37a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cb37a-110">Permission type</span></span>      | <span data-ttu-id="cb37a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cb37a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="16698-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="16698-108">Permission type</span></span>      | <span data-ttu-id="16698-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="16698-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="cb37a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cb37a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="cb37a-113">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cb37a-113">Group.Read.All, Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="cb37a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cb37a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cb37a-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb37a-115">Not supported.</span></span>    |
-|<span data-ttu-id="cb37a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cb37a-116">Application</span></span> | <span data-ttu-id="cb37a-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cb37a-117">Not supported.</span></span> |
+|<span data-ttu-id="16698-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="16698-110">Delegated (work or school account)</span></span> | <span data-ttu-id="16698-111">Group.Read.All, Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="16698-111">Group.Read.All, Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="16698-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="16698-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="16698-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16698-113">Not supported.</span></span>    |
+|<span data-ttu-id="16698-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="16698-114">Application</span></span> | <span data-ttu-id="16698-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="16698-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="cb37a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cb37a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="16698-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="16698-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /planner/buckets
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="cb37a-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cb37a-119">Optional query parameters</span></span>
-<span data-ttu-id="cb37a-120">Этот метод требует указания [фильтра](https://developer.microsoft.com/graph/docs/concepts/query_parameters) по идентификатору плана.</span><span class="sxs-lookup"><span data-stu-id="cb37a-120">This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="16698-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="16698-117">Optional query parameters</span></span>
+<span data-ttu-id="16698-118">Этот метод требует указания [фильтра](https://developer.microsoft.com/graph/docs/concepts/query_parameters) по идентификатору плана.</span><span class="sxs-lookup"><span data-stu-id="16698-118">This method requires planId [filter](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to be specified.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="cb37a-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cb37a-121">Request headers</span></span>
-| <span data-ttu-id="cb37a-122">Имя</span><span class="sxs-lookup"><span data-stu-id="cb37a-122">Name</span></span>      |<span data-ttu-id="cb37a-123">Описание</span><span class="sxs-lookup"><span data-stu-id="cb37a-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="16698-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="16698-119">Request headers</span></span>
+| <span data-ttu-id="16698-120">Имя</span><span class="sxs-lookup"><span data-stu-id="16698-120">Name</span></span>      |<span data-ttu-id="16698-121">Описание</span><span class="sxs-lookup"><span data-stu-id="16698-121">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="cb37a-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cb37a-124">Authorization</span></span>  | <span data-ttu-id="cb37a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cb37a-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="16698-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="16698-122">Authorization</span></span>  | <span data-ttu-id="16698-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="16698-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="cb37a-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="cb37a-127">Request body</span></span>
-<span data-ttu-id="cb37a-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="cb37a-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="16698-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="16698-125">Request body</span></span>
+<span data-ttu-id="16698-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="16698-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="cb37a-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="cb37a-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="16698-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="16698-127">Response</span></span>
 
-<span data-ttu-id="cb37a-130">В случае успеха этот метод возвращает код ответа `200 OK` и коллекцию объектов [plannerBucket](../resources/plannerbucket.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="cb37a-130">If successful, this method returns a `200 OK` response code and collection of [plannerBucket](../resources/plannerbucket.md) objects in the response body.</span></span>
+<span data-ttu-id="16698-128">В случае успеха этот метод возвращает код ответа `200 OK` и коллекцию объектов [plannerBucket](../resources/plannerbucket.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="16698-128">If successful, this method returns a `200 OK` response code and collection of [plannerBucket](../resources/plannerbucket.md) objects in the response body.</span></span>
 
-<span data-ttu-id="cb37a-p104">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="cb37a-p104">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
-## <a name="example"></a><span data-ttu-id="cb37a-134">Пример</span><span class="sxs-lookup"><span data-stu-id="cb37a-134">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="cb37a-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="cb37a-135">Request</span></span>
-<span data-ttu-id="cb37a-136">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="cb37a-136">Here is an example of the request.</span></span>
+<span data-ttu-id="16698-p103">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 403 и 404, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="16698-p103">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 403 and 404 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+## <a name="example"></a><span data-ttu-id="16698-132">Пример</span><span class="sxs-lookup"><span data-stu-id="16698-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="16698-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="16698-133">Request</span></span>
+<span data-ttu-id="16698-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="16698-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_buckets"
@@ -57,8 +57,9 @@ GET /planner/buckets
 ```http
 GET https://graph.microsoft.com/beta/planner/buckets
 ```
-##### <a name="response"></a><span data-ttu-id="cb37a-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="cb37a-137">Response</span></span>
-<span data-ttu-id="cb37a-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="cb37a-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="16698-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="16698-135">Response</span></span>
+<span data-ttu-id="16698-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="16698-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,10 +86,15 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List buckets",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/planner-list-buckets.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

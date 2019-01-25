@@ -4,27 +4,27 @@ description: Ресурс **plannerPlanContextCollection** представля�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 3281a7664561ac32c3908ca059209a1b89b4ea7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6ec515a164c5b0fca6334930b55a4b5d4e73b7d9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951812"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516499"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="f0620-105">Тип ресурса plannerPlanContextCollection</span><span class="sxs-lookup"><span data-stu-id="f0620-105">plannerPlanContextCollection resource type</span></span>
+# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="ecd55-105">Тип ресурса plannerPlanContextCollection</span><span class="sxs-lookup"><span data-stu-id="ecd55-105">plannerPlanContextCollection resource type</span></span>
 
-> <span data-ttu-id="f0620-106">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f0620-106">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="f0620-107">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f0620-107">Use of these APIs in production applications is not supported.</span></span>
-
-
-<span data-ttu-id="f0620-108">Ресурс **plannerPlanContextCollection** представляет коллекцию внешних контекстах, с которыми связан плана.</span><span class="sxs-lookup"><span data-stu-id="f0620-108">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="f0620-109">Этот ресурс является открытым и является частью объекта [plannerPlan](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="f0620-109">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="f0620-110">Значение в паре значение свойства — это объект [plannerPlanContext](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="f0620-110">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-## <a name="properties"></a><span data-ttu-id="f0620-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="f0620-111">Properties</span></span>
-<span data-ttu-id="f0620-112">Можно определить свойства этого типа open.</span><span class="sxs-lookup"><span data-stu-id="f0620-112">You can define the properties of this open type.</span></span> <span data-ttu-id="f0620-113">Значения свойства должны быть особый идентификатор, представляющий внешнего контекста как имя свойства.</span><span class="sxs-lookup"><span data-stu-id="f0620-113">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="f0620-114">Значения свойства должны быть [plannerPlanContext](plannerplancontext.md) объектов.</span><span class="sxs-lookup"><span data-stu-id="f0620-114">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="f0620-115">На основании требований к OData, имена свойств в открытые типы не может содержать следующие символы: `.`, `:`, `%`, `@`.</span><span class="sxs-lookup"><span data-stu-id="f0620-115">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="f0620-116">Эти символы должны быть закодированы с помощью Кодировка URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="f0620-116">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="f0620-117">Чтобы удалить элемент в списке "Избранное", задайте значение свойства, которое должно `null`.</span><span class="sxs-lookup"><span data-stu-id="f0620-117">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+<span data-ttu-id="ecd55-106">Ресурс **plannerPlanContextCollection** представляет коллекцию внешних контекстах, с которыми связан плана.</span><span class="sxs-lookup"><span data-stu-id="ecd55-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="ecd55-107">Этот ресурс является открытым и является частью объекта [plannerPlan](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="ecd55-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="ecd55-108">Значение в паре значение свойства — это объект [plannerPlanContext](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="ecd55-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="f0620-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f0620-118">JSON representation</span></span>
 
-<span data-ttu-id="f0620-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f0620-119">The following is a JSON representation of the resource.</span></span>
+## <a name="properties"></a><span data-ttu-id="ecd55-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="ecd55-109">Properties</span></span>
+<span data-ttu-id="ecd55-110">Можно определить свойства этого типа open.</span><span class="sxs-lookup"><span data-stu-id="ecd55-110">You can define the properties of this open type.</span></span> <span data-ttu-id="ecd55-111">Значения свойства должны быть особый идентификатор, представляющий внешнего контекста как имя свойства.</span><span class="sxs-lookup"><span data-stu-id="ecd55-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="ecd55-112">Значения свойства должны быть [plannerPlanContext](plannerplancontext.md) объектов.</span><span class="sxs-lookup"><span data-stu-id="ecd55-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="ecd55-113">На основании требований к OData, имена свойств в открытые типы не может содержать следующие символы: `.`, `:`, `%`, `@`.</span><span class="sxs-lookup"><span data-stu-id="ecd55-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="ecd55-114">Эти символы должны быть закодированы с помощью Кодировка URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="ecd55-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="ecd55-115">Чтобы удалить элемент в списке "Избранное", задайте значение свойства, которое должно `null`.</span><span class="sxs-lookup"><span data-stu-id="ecd55-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="ecd55-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ecd55-116">JSON representation</span></span>
+
+<span data-ttu-id="ecd55-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ecd55-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,10 +51,15 @@ ms.locfileid: "27951812"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerPlanContextCollection resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerplancontextcollection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

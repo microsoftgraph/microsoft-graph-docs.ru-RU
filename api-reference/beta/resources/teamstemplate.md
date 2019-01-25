@@ -4,26 +4,26 @@ description: Описание сущности teamsTemplate.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9bd5047950ed1ed3c57950d2c4b708a78b570649
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e75b3d8df318b116d5d908a40d4f756d9ee70864
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940087"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513048"
 ---
-# <a name="teamstemplate-resource-type"></a><span data-ttu-id="1e0ab-103">Тип ресурса teamsTemplate</span><span class="sxs-lookup"><span data-stu-id="1e0ab-103">teamsTemplate resource type</span></span>
+# <a name="teamstemplate-resource-type"></a><span data-ttu-id="d6444-103">Тип ресурса teamsTemplate</span><span class="sxs-lookup"><span data-stu-id="d6444-103">teamsTemplate resource type</span></span>
 
-> <span data-ttu-id="1e0ab-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="1e0ab-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1e0ab-106">Шаблон группы — это план для создания [группы](../resources/team.md) в группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-106">A team template is a blueprint for creating a [team](../resources/team.md) in Microsoft Teams.</span></span> <span data-ttu-id="1e0ab-107">Шаблон указывает структуры, параметры и даже контента, который следует предоставить в новые группы, созданные на основе шаблона.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-107">A template specifies the structure, settings, and even content that should be provisioned in a new team created using the template.</span></span> <span data-ttu-id="1e0ab-108">Корпорация Майкрософт предоставляет набор базовых шаблонов и пользователи могут сохранять свои собственные пользовательские шаблоны.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-108">Microsoft provides a suite of base templates and customers can save their own custom templates.</span></span>
+<span data-ttu-id="d6444-104">Шаблон группы — это план для создания [группы](../resources/team.md) в группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="d6444-104">A team template is a blueprint for creating a [team](../resources/team.md) in Microsoft Teams.</span></span> <span data-ttu-id="d6444-105">Шаблон указывает структуры, параметры и даже контента, который следует предоставить в новые группы, созданные на основе шаблона.</span><span class="sxs-lookup"><span data-stu-id="d6444-105">A template specifies the structure, settings, and even content that should be provisioned in a new team created using the template.</span></span> <span data-ttu-id="d6444-106">Корпорация Майкрософт предоставляет набор базовых шаблонов и пользователи могут сохранять свои собственные пользовательские шаблоны.</span><span class="sxs-lookup"><span data-stu-id="d6444-106">Microsoft provides a suite of base templates and customers can save their own custom templates.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="1e0ab-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="1e0ab-109">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d6444-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="d6444-107">Properties</span></span>
 
-| <span data-ttu-id="1e0ab-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="1e0ab-110">Property</span></span>            | <span data-ttu-id="1e0ab-111">Тип</span><span class="sxs-lookup"><span data-stu-id="1e0ab-111">Type</span></span>     | <span data-ttu-id="1e0ab-112">Описание</span><span class="sxs-lookup"><span data-stu-id="1e0ab-112">Description</span></span> |
+| <span data-ttu-id="d6444-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="d6444-108">Property</span></span>            | <span data-ttu-id="d6444-109">Тип</span><span class="sxs-lookup"><span data-stu-id="d6444-109">Type</span></span>     | <span data-ttu-id="d6444-110">Описание</span><span class="sxs-lookup"><span data-stu-id="d6444-110">Description</span></span> |
 |:------------------- |:-------- |:----------- |
-| <span data-ttu-id="1e0ab-113">id</span><span class="sxs-lookup"><span data-stu-id="1e0ab-113">id</span></span>                  | <span data-ttu-id="1e0ab-114">Строка</span><span class="sxs-lookup"><span data-stu-id="1e0ab-114">String</span></span>   | <span data-ttu-id="1e0ab-115">Уникальный идентификатор шаблона.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-115">Unique identifier of the template.</span></span> <span data-ttu-id="1e0ab-116">Не может быть null.</span><span class="sxs-lookup"><span data-stu-id="1e0ab-116">Cannot be null.</span></span> |
+| <span data-ttu-id="d6444-111">id</span><span class="sxs-lookup"><span data-stu-id="d6444-111">id</span></span>                  | <span data-ttu-id="d6444-112">String</span><span class="sxs-lookup"><span data-stu-id="d6444-112">String</span></span>   | <span data-ttu-id="d6444-113">Уникальный идентификатор шаблона.</span><span class="sxs-lookup"><span data-stu-id="d6444-113">Unique identifier of the template.</span></span> <span data-ttu-id="d6444-114">Не может быть null.</span><span class="sxs-lookup"><span data-stu-id="d6444-114">Cannot be null.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="1e0ab-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="1e0ab-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d6444-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d6444-115">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -37,7 +37,15 @@ ms.locfileid: "27940087"
 }
 ```
 
-# <a name="see-also"></a><span data-ttu-id="1e0ab-118">См. также</span><span class="sxs-lookup"><span data-stu-id="1e0ab-118">See also</span></span>
+# <a name="see-also"></a><span data-ttu-id="d6444-116">См. также</span><span class="sxs-lookup"><span data-stu-id="d6444-116">See also</span></span>
 
-- [<span data-ttu-id="1e0ab-119">Группа</span><span class="sxs-lookup"><span data-stu-id="1e0ab-119">team</span></span>](team.md)
+- <span data-ttu-id="d6444-117">Команда</span><span class="sxs-lookup"><span data-stu-id="d6444-117">[team](team.md)</span></span>
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

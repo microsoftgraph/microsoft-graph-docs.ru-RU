@@ -4,26 +4,34 @@ description: Типы teamsAsyncOperation. Участники будут доб�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1770f642970575647dd1216038202fca15f82117
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4de95db194bf41939521b53f06614b46b6afae99
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987309"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516569"
 ---
-# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="ac806-104">Тип перечисления teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="ac806-104">teamsAsyncOperationType enum type</span></span>
+# <a name="teamsasyncoperationtype-enum-type"></a><span data-ttu-id="397f7-104">Тип перечисления teamsAsyncOperationType</span><span class="sxs-lookup"><span data-stu-id="397f7-104">teamsAsyncOperationType enum type</span></span>
 
-> <span data-ttu-id="ac806-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ac806-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ac806-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ac806-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ac806-107">Типы [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="ac806-107">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="ac806-108">Участники будут добавляться здесь дополнительных async поддерживают операции.</span><span class="sxs-lookup"><span data-stu-id="ac806-108">Members will be added here as more async operations are supported.</span></span>
+<span data-ttu-id="397f7-105">Типы [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="397f7-105">Types of [teamsAsyncOperation](teamsasyncoperation.md).</span></span> <span data-ttu-id="397f7-106">Участники будут добавляться здесь дополнительных async поддерживают операции.</span><span class="sxs-lookup"><span data-stu-id="397f7-106">Members will be added here as more async operations are supported.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ac806-109">Элементы</span><span class="sxs-lookup"><span data-stu-id="ac806-109">Members</span></span>
+## <a name="members"></a><span data-ttu-id="397f7-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="397f7-107">Members</span></span>
 
-| <span data-ttu-id="ac806-110">Элемент</span><span class="sxs-lookup"><span data-stu-id="ac806-110">Member</span></span> | <span data-ttu-id="ac806-111">Значение</span><span class="sxs-lookup"><span data-stu-id="ac806-111">Value</span></span>| <span data-ttu-id="ac806-112">Описание</span><span class="sxs-lookup"><span data-stu-id="ac806-112">Description</span></span> |
+| <span data-ttu-id="397f7-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="397f7-108">Member</span></span> | <span data-ttu-id="397f7-109">Значение</span><span class="sxs-lookup"><span data-stu-id="397f7-109">Value</span></span>| <span data-ttu-id="397f7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="397f7-110">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="ac806-113">Недопустимый</span><span class="sxs-lookup"><span data-stu-id="ac806-113">invalid</span></span>|<span data-ttu-id="ac806-114">0</span><span class="sxs-lookup"><span data-stu-id="ac806-114">0</span></span>|<span data-ttu-id="ac806-115">Недопустимое значение.</span><span class="sxs-lookup"><span data-stu-id="ac806-115">Invalid value.</span></span>|
-|<span data-ttu-id="ac806-116">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="ac806-116">cloneTeam</span></span>|<span data-ttu-id="ac806-117">1</span><span class="sxs-lookup"><span data-stu-id="ac806-117">1</span></span>|<span data-ttu-id="ac806-118">Операция следует скопировать группы.</span><span class="sxs-lookup"><span data-stu-id="ac806-118">Operation to clone a team.</span></span>|
-|<span data-ttu-id="ac806-119">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="ac806-119">archiveTeam</span></span>|<span data-ttu-id="ac806-120">2</span><span class="sxs-lookup"><span data-stu-id="ac806-120">2</span></span>|<span data-ttu-id="ac806-121">Операции в архив группы.</span><span class="sxs-lookup"><span data-stu-id="ac806-121">Operation to archive a team.</span></span>|
-|<span data-ttu-id="ac806-122">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="ac806-122">unarchiveTeam</span></span>|<span data-ttu-id="ac806-123">3</span><span class="sxs-lookup"><span data-stu-id="ac806-123">3</span></span>|<span data-ttu-id="ac806-124">Операция восстановление архивированных группы.</span><span class="sxs-lookup"><span data-stu-id="ac806-124">Operation to restore an archived team.</span></span>|
-|<span data-ttu-id="ac806-125">createTeam</span><span class="sxs-lookup"><span data-stu-id="ac806-125">createTeam</span></span>|<span data-ttu-id="ac806-126">3</span><span class="sxs-lookup"><span data-stu-id="ac806-126">3</span></span>|<span data-ttu-id="ac806-127">Операция создать группу «с нуля».</span><span class="sxs-lookup"><span data-stu-id="ac806-127">Operation to create a team from scratch.</span></span>|
+|<span data-ttu-id="397f7-111">Invalid</span><span class="sxs-lookup"><span data-stu-id="397f7-111">invalid</span></span>|<span data-ttu-id="397f7-112">(0)</span><span class="sxs-lookup"><span data-stu-id="397f7-112">0</span></span>|<span data-ttu-id="397f7-113">Недопустимое значение</span><span class="sxs-lookup"><span data-stu-id="397f7-113">Invalid value.</span></span>|
+|<span data-ttu-id="397f7-114">cloneTeam</span><span class="sxs-lookup"><span data-stu-id="397f7-114">cloneTeam</span></span>|<span data-ttu-id="397f7-115">$1</span><span class="sxs-lookup"><span data-stu-id="397f7-115">1</span></span>|<span data-ttu-id="397f7-116">Операция следует скопировать группы.</span><span class="sxs-lookup"><span data-stu-id="397f7-116">Operation to clone a team.</span></span>|
+|<span data-ttu-id="397f7-117">archiveTeam</span><span class="sxs-lookup"><span data-stu-id="397f7-117">archiveTeam</span></span>|<span data-ttu-id="397f7-118">–2</span><span class="sxs-lookup"><span data-stu-id="397f7-118">2</span></span>|<span data-ttu-id="397f7-119">Операции в архив группы.</span><span class="sxs-lookup"><span data-stu-id="397f7-119">Operation to archive a team.</span></span>|
+|<span data-ttu-id="397f7-120">unarchiveTeam</span><span class="sxs-lookup"><span data-stu-id="397f7-120">unarchiveTeam</span></span>|<span data-ttu-id="397f7-121">–3</span><span class="sxs-lookup"><span data-stu-id="397f7-121">3</span></span>|<span data-ttu-id="397f7-122">Операция восстановление архивированных группы.</span><span class="sxs-lookup"><span data-stu-id="397f7-122">Operation to restore an archived team.</span></span>|
+|<span data-ttu-id="397f7-123">createTeam</span><span class="sxs-lookup"><span data-stu-id="397f7-123">createTeam</span></span>|<span data-ttu-id="397f7-124">–3</span><span class="sxs-lookup"><span data-stu-id="397f7-124">3</span></span>|<span data-ttu-id="397f7-125">Операция создать группу «с нуля».</span><span class="sxs-lookup"><span data-stu-id="397f7-125">Operation to create a team from scratch.</span></span>|
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperationtype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
