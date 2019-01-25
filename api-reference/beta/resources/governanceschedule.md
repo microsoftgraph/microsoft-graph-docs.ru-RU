@@ -2,32 +2,32 @@
 title: Тип ресурса governanceSchedule
 description: 'Представляет расписание для governanceRoleAssignmentRequest. Для запроса назначений ролей, расписание определяет, когда следует выполнить операцию назначения ролей, время завершения назначения ролей и как часто следует выполнить операцию назначения ролей. '
 localization_priority: Normal
-ms.openlocfilehash: 8bf36b786adbd8064ee0c00c0ce293408c6e2b7f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d7ccfe74804166ad2204ea02c072d79341cf75e7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882315"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508029"
 ---
-# <a name="governanceschedule-resource-type"></a><span data-ttu-id="0ea33-104">Тип ресурса governanceSchedule</span><span class="sxs-lookup"><span data-stu-id="0ea33-104">governanceSchedule resource type</span></span>
+# <a name="governanceschedule-resource-type"></a><span data-ttu-id="0cac5-104">Тип ресурса governanceSchedule</span><span class="sxs-lookup"><span data-stu-id="0cac5-104">governanceSchedule resource type</span></span>
 
-> <span data-ttu-id="0ea33-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0ea33-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0ea33-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ea33-106">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0ea33-107">Представляет расписание для [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span><span class="sxs-lookup"><span data-stu-id="0ea33-107">Represents the schedule for a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span> <span data-ttu-id="0ea33-108">Для запроса назначений ролей, расписание определяет, когда следует выполнить операцию назначения ролей, время завершения назначения ролей и как часто следует выполнить операцию назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0ea33-108">For a role assignment request, the schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequently to do the role assignment operation.</span></span> 
+<span data-ttu-id="0cac5-105">Представляет расписание для [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span><span class="sxs-lookup"><span data-stu-id="0cac5-105">Represents the schedule for a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span> <span data-ttu-id="0cac5-106">Для запроса назначений ролей, расписание определяет, когда следует выполнить операцию назначения ролей, время завершения назначения ролей и как часто следует выполнить операцию назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0cac5-106">For a role assignment request, the schedule controls when to perform the role assignment operation, when to stop the role assignment, and how frequently to do the role assignment operation.</span></span> 
 
 
 
-## <a name="properties"></a><span data-ttu-id="0ea33-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="0ea33-109">Properties</span></span>
-| <span data-ttu-id="0ea33-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="0ea33-110">Property</span></span>     | <span data-ttu-id="0ea33-111">Тип</span><span class="sxs-lookup"><span data-stu-id="0ea33-111">Type</span></span>   |<span data-ttu-id="0ea33-112">Описание</span><span class="sxs-lookup"><span data-stu-id="0ea33-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0cac5-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0cac5-107">Properties</span></span>
+| <span data-ttu-id="0cac5-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="0cac5-108">Property</span></span>     | <span data-ttu-id="0cac5-109">Тип</span><span class="sxs-lookup"><span data-stu-id="0cac5-109">Type</span></span>   |<span data-ttu-id="0cac5-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0cac5-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0ea33-113">startDateTime</span><span class="sxs-lookup"><span data-stu-id="0ea33-113">startDateTime</span></span>|<span data-ttu-id="0ea33-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0ea33-114">DateTimeOffset</span></span>|<span data-ttu-id="0ea33-115">Время начала назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0ea33-115">The start time of the role assignment.</span></span> <span data-ttu-id="0ea33-116">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="0ea33-116">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="0ea33-117">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="0ea33-117">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
-|<span data-ttu-id="0ea33-118">endDateTime</span><span class="sxs-lookup"><span data-stu-id="0ea33-118">endDateTime</span></span>|<span data-ttu-id="0ea33-119">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0ea33-119">DateTimeOffset</span></span>|<span data-ttu-id="0ea33-120">Время окончания назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0ea33-120">The end time of the role assignment.</span></span> <span data-ttu-id="0ea33-121">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="0ea33-121">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="0ea33-122">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="0ea33-122">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="0ea33-123">*Примечание: Если значение равно `null`, указывает постоянное назначение.*</span><span class="sxs-lookup"><span data-stu-id="0ea33-123">*Note: if the value is `null`, it indicates a permanent assignment.*</span></span>|
-|<span data-ttu-id="0ea33-124">type</span><span class="sxs-lookup"><span data-stu-id="0ea33-124">type</span></span>|<span data-ttu-id="0ea33-125">Строка</span><span class="sxs-lookup"><span data-stu-id="0ea33-125">String</span></span>|<span data-ttu-id="0ea33-126">Тип расписания назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0ea33-126">The role assignment schedule type.</span></span> <span data-ttu-id="0ea33-127">Только `Once` поддерживается в данный момент.</span><span class="sxs-lookup"><span data-stu-id="0ea33-127">Only `Once` is supported for now.</span></span>
-|<span data-ttu-id="0ea33-128">duration</span><span class="sxs-lookup"><span data-stu-id="0ea33-128">duration</span></span>|<span data-ttu-id="0ea33-129">Продолжительность</span><span class="sxs-lookup"><span data-stu-id="0ea33-129">Duration</span></span>|<span data-ttu-id="0ea33-130">Длительность назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0ea33-130">The duration of a role assignment.</span></span> <span data-ttu-id="0ea33-131">Это в формате интервал времени.</span><span class="sxs-lookup"><span data-stu-id="0ea33-131">It is in format of a TimeSpan.</span></span>|
+|<span data-ttu-id="0cac5-111">startDateTime</span><span class="sxs-lookup"><span data-stu-id="0cac5-111">startDateTime</span></span>|<span data-ttu-id="0cac5-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0cac5-112">DateTimeOffset</span></span>|<span data-ttu-id="0cac5-113">Время начала назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0cac5-113">The start time of the role assignment.</span></span> <span data-ttu-id="0cac5-114">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="0cac5-114">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="0cac5-115">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="0cac5-115">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>|
+|<span data-ttu-id="0cac5-116">endDateTime</span><span class="sxs-lookup"><span data-stu-id="0cac5-116">endDateTime</span></span>|<span data-ttu-id="0cac5-117">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="0cac5-117">DateTimeOffset</span></span>|<span data-ttu-id="0cac5-118">Время окончания назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0cac5-118">The end time of the role assignment.</span></span> <span data-ttu-id="0cac5-119">Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="0cac5-119">The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="0cac5-120">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="0cac5-120">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="0cac5-121">*Примечание: Если значение равно `null`, указывает постоянное назначение.*</span><span class="sxs-lookup"><span data-stu-id="0cac5-121">*Note: if the value is `null`, it indicates a permanent assignment.*</span></span>|
+|<span data-ttu-id="0cac5-122">type</span><span class="sxs-lookup"><span data-stu-id="0cac5-122">type</span></span>|<span data-ttu-id="0cac5-123">String</span><span class="sxs-lookup"><span data-stu-id="0cac5-123">String</span></span>|<span data-ttu-id="0cac5-124">Тип расписания назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0cac5-124">The role assignment schedule type.</span></span> <span data-ttu-id="0cac5-125">Только `Once` поддерживается в данный момент.</span><span class="sxs-lookup"><span data-stu-id="0cac5-125">Only `Once` is supported for now.</span></span>
+|<span data-ttu-id="0cac5-126">duration</span><span class="sxs-lookup"><span data-stu-id="0cac5-126">duration</span></span>|<span data-ttu-id="0cac5-127">Длительность</span><span class="sxs-lookup"><span data-stu-id="0cac5-127">Duration</span></span>|<span data-ttu-id="0cac5-128">Длительность назначения ролей.</span><span class="sxs-lookup"><span data-stu-id="0cac5-128">The duration of a role assignment.</span></span> <span data-ttu-id="0cac5-129">Это в формате интервал времени.</span><span class="sxs-lookup"><span data-stu-id="0cac5-129">It is in format of a TimeSpan.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="0ea33-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0ea33-132">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0cac5-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0cac5-130">JSON representation</span></span>
 
-<span data-ttu-id="0ea33-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0ea33-133">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0cac5-131">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0cac5-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,10 +49,15 @@ ms.locfileid: "27882315"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governanceschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
