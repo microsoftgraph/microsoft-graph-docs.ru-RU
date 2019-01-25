@@ -4,16 +4,16 @@ description: 'Microsoft Graph позволяет приложения могут
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: ff17f7fbe5f15752bc272b79f3f741180f8d6417
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7db3024224dde7ee4c95d2e3840187709471cecd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953002"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525628"
 ---
 # <a name="use-the-onenote-rest-api"></a>Использование REST API для OneNote
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph позволяет приложения могут получить авторизованные пользователя OneNote записные книжки, разделы и страницы в личный или организации учетной записи. С [соответствующими разрешениями делегированные или приложения](/graph/permissions-reference#notes-permissions)приложение может доступ к данным OneNote любого пользователя в клиент или пользователь выполнил вход. 
 
@@ -28,7 +28,7 @@ https://graph.microsoft.com/{version}/{location}/onenote/
 - Значение `v1.0` предназначено для стабильного производственного кода.
 - Используйте значение `beta`, чтобы опробовать функцию, находящуюся на стадии разработки. Возможности и функции в конечной точке бета-версии может изменяться; не рекомендуется использовать в рабочем коде.
 
-Расположение может быть записных книжек пользователя на Office 365 или потребитель OneDrive, группа записных книжек или записных книжек размещенного сайта группы SharePoint на Office 365. 
+В качестве расположений можно задавать записные книжки пользователя в Office 365 или личные хранилища OneDrive, записные книжки группы (в том числе размещенные на сайте SharePoint) в Office 365. 
 
 ![Стек разработки API-интерфейса OneNote](https://cdn.graph.office.net/prod/GraphDocuments/en-us/concepts/images/onenote-dev-diagram.png)
 
@@ -43,7 +43,7 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 - Значение `me` предназначено для содержимого OneNote, доступного текущему пользователю (если он является владельцем или с ним поделились этим содержимым).
 - Значение `users/{id}` предназначено для содержимого OneNote, которым указанный (в URL-адресе) пользователь поделился с текущим пользователем. С помощью API [пользователей](users.md) .
-> **Примечание:** Идентификаторы пользователей можно получить, выбрав запрос GET на `https://graph.microsoft.com/v1.0/users`.
+> **Примечание.** Вы можете получить идентификаторы пользователей, отправив запрос GET к конечной точке `https://graph.microsoft.com/v1.0/users`.
 
 ### <a name="group-notebooks"></a>Группа записных книжек
 
@@ -58,3 +58,11 @@ https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections 
 ```
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onenote-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

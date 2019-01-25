@@ -2,16 +2,16 @@
 title: Тип ресурса Общая ошибка
 description: Это ошибка.
 localization_priority: Normal
-ms.openlocfilehash: 744266ef8ffb17c4af4168d6239e5a5a30561936
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d3c7e9cd7ff7be635adfbf329170068cd944f0b2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823571"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524130"
 ---
 # <a name="genericerror-resource-type"></a>Тип ресурса Общая ошибка
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Это ошибка.
 
@@ -20,7 +20,7 @@ ms.locfileid: "27823571"
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 | message | String | Сообщение об ошибке. |
-| code | Строка | Код ошибки. |
+| code | String | Код ошибки. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,3 +39,11 @@ ms.locfileid: "27823571"
   "code": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/genericerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

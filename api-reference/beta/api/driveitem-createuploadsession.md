@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Возобновляемая отправка файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bfab657f2127b730fd361a17b8fd60e9325984ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b121fb2f1cbeda13cd67f3f37ba06c67304e6ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936832"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525341"
 ---
 # <a name="upload-large-files-with-an-upload-session"></a>Отправка больших файлов с помощью сеанса отправки
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте сеанс отправки, чтобы приложение могло отправлять файлы, размер которых не превышает максимальный. С помощью сеанса отправки приложение может отправлять диапазоны файла при последовательных запросах API, что позволяет возобновить передачу, если во время отправки соединение будет разорвано.
 
@@ -84,19 +84,19 @@ POST /users/{userId}/drive/items/{itemId}/createUploadSession
 |:-----------|:------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | *if-match* | etag  | Если указан заголовок запроса, а предоставленное значение eTag (или cTag) не совпадает с текущим значением eTag элемента, то возвращается ошибка `412 Precondition Failed`. |
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>Параметры
 
-| Параметр            | Тип                          | Описание
+| Параметр            | Тип                          | object
 |:---------------------|:------------------------------|:---------------------------------
 | item                 | driveItemUploadableProperties | Данные о выгружаемого файла
-| deferCommit          | Логический                       | Если параметр имеет значение true, окончательный Создание файла в месте назначения будут требуют явного запроса. Только на OneDrive для бизнеса.
+| deferCommit          | Логическое                       | Если параметр имеет значение true, окончательный Создание файла в месте назначения будут требуют явного запроса. Только на OneDrive для бизнеса.
 
 ## <a name="item-properties"></a>Свойства элемента
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| описание          | Строка             | Предоставляет видимыми описание элемента. Чтение и запись. Только на личные OneDrive.
-| name                 | Строка             | Имя элемента (имя и расширение файла). Чтение и запись.
+| description          | String             | Предоставляет видимое пользователю описание элемента. Чтение и запись. Только в личном хранилище OneDrive
+| name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 
 ### <a name="request"></a>Запрос
 
@@ -117,7 +117,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 В случае успешного выполнения запроса ответ будет содержать сведения о том, куда отправлять остальные запросы (в виде ресурса [UploadSession](../resources/uploadsession.md)).
 
@@ -167,7 +167,7 @@ Content-Range: bytes 0-25/128
 **Важно!** Приложение должно указывать в заголовках **Content-Range** всех запросов один и тот же общий размер файла.
 Если объявить для диапазона байтов другой размер файла, запрос не будет выполнен.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 После выполнения запроса сервер отправит в ответ код `202 Accepted`, если требуется отправить дополнительные диапазоны байтов.
 
@@ -297,7 +297,7 @@ Content-Type: application/json
 DELETE https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приводится пример отклика.
 
@@ -406,9 +406,14 @@ Content-Type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
-  "section": "documentation"
-} -->
+  "section": "documentation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createuploadsession.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,17 +1,17 @@
 ---
 title: Получение объекта multiValueLegacyExtendedProperty
-description: Разверните узел ".
+description: Expand
 localization_priority: Normal
-ms.openlocfilehash: 2dd97797fb15641e772d27d6ffb9652fabe3c04b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27837746"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525243"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение экземпляра ресурса, который содержит расширенное свойство с несколькими значениями, с использованием параметра `$expand`.
 
@@ -22,10 +22,10 @@ ms.locfileid: "27837746"
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
 - [contactFolder](../resources/contactfolder.md). 
-- [событие](../resources/event.md)
+- [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md) 
-- [Задачи Outlook](../resources/outlooktask.md)
+- [Задача Outlook](../resources/outlooktask.md)
 - [Папки задач Outlook](../resources/outlooktaskfolder.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
@@ -39,54 +39,54 @@ ms.locfileid: "27837746"
 ## <a name="permissions"></a>Разрешения
 В зависимости от ресурса они будут расширенные свойства из и разрешение введите (делегированные или приложения) вы запроса, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Application |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [calendar](../resources/calendar.md) | Calendars.Read | Calendars.Read | Calendars.Read |
-| [контакт](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
+| [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md). | Contacts.Read | Contacts.Read | Contacts.Read |
-| [событие](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
+| [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
 | [calendar](../resources/calendar.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
 | [event](../resources/event.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
 | [post](../resources/post.md) для групп. | Group.Read.All | Не поддерживается | Group.Read.All |
 | [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Задачи Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Не поддерживается |
+| [Задача Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Не поддерживается |
 | [Папки задач Outlook](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Не поддерживается |
  
 ## <a name="http-request"></a>HTTP-запрос
 
 Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
-Получение экземпляра **сообщения** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **message**:
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **mailFolder** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **mailFolder**:
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **событий** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **event**:
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **календаря** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **calendar**:
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **контактов** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **contact**:
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **contactFolder** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **contactFolder**:
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -109,12 +109,12 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **события** группы:<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **event** для группы:
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **публиковать** группы:<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **post** для группы:
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -130,7 +130,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -192,10 +192,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get multiValueLegacyExtendedProperty",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

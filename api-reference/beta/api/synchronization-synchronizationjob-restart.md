@@ -2,16 +2,16 @@
 title: Перезапустите synchronizationJob
 description: Перезапустите задание синхронизации, заставить его повторно обработать все объекты в каталоге. При необходимости удаляет существующие состояние синхронизации и предыдущих ошибок.
 localization_priority: Normal
-ms.openlocfilehash: 154ae4234eea6fb3499d36720e71b40cac727f9c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 169f95c3662fd774207584b54fcf27fb2548c795
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27841029"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526727"
 ---
 # <a name="restart-synchronizationjob"></a>Перезапустите synchronizationJob
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Перезапустите задание синхронизации, заставить его повторно обработать все объекты в каталоге. При необходимости удаляет существующие состояние синхронизации и предыдущих ошибок.
 
@@ -36,7 +36,7 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 |:---------------|:--------|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Предоставить объект JSON в тексте запроса следующий параметр.
 
@@ -82,10 +82,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob: restart",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationjob-restart.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

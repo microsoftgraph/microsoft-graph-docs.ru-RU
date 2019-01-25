@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: quota
 localization_priority: Normal
-ms.openlocfilehash: a63b41253569dbb3d666a76b0a7495839ef61b12
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882413"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525488"
 ---
-# <a name="quota-resource-type"></a>Тип ресурса квот
+# <a name="quota-resource-type"></a>Тип ресурса quota
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Квота** ресурсов предоставляет подробные сведения о пространстве ограничивает от ресурса [диска](drive.md) .
+Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -48,7 +48,7 @@ ms.locfileid: "27882413"
 | used          | Int64  | Общий объем использованного дискового пространства в байтах. Только для чтения.                                      |
 | remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
 | deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
-| state         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
+| состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
 | storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты хранилища диска. Только в личных OneDrive.|
 
 ### <a name="state-enumeration-values"></a>Значения состояний перечисления
@@ -60,10 +60,15 @@ ms.locfileid: "27882413"
 | `critical` | Объем свободного дискового пространства менее 1 % общего объема дискового пространства.                                                                                                                       |
 | `exceeded` | Объем использованного дискового пространства превышает максимально допустимый объем дискового пространства. Вам не удастся добавлять новые файлы или папки на диск, пока объем использованного дискового пространства не станет меньше общего объема дискового пространства или пока вы не приобретете дополнительное дисковое пространство. |
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The quota facet provides information about how much space the OneDrive has available.",
   "keywords": "quota,available,remaining,used",
   "section": "documentation",
-  "tocPath": "Facets/Quota"
-} -->
+  "tocPath": "Facets/Quota",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/quota.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

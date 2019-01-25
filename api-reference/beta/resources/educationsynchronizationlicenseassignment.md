@@ -4,16 +4,16 @@ description: Представляет информацию о лицензии �
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 5c60b868ab8d973f6249d7e9ea2b30415d4b8a1b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ce1ae196ba4f014a039e81713119b01fa69e6170
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409680"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525824"
 ---
 # <a name="educationsynchronizationlicenseassignment-resource-type"></a>Тип ресурса educationSynchronizationLicenseAssignment
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет информацию о лицензии для назначения учетных записей пользователей. Ресурс будет использоваться для настройки назначения лицензий при создании новых учетных записей пользователей.
 
@@ -21,7 +21,7 @@ ms.locfileid: "29409680"
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **appliesTo** | string | Тип роли пользователя для назначения лицензий. Возможные значения: `student`, `teacher`.         |
+| appliesTo | string | Тип роли пользователя для назначения лицензий. Возможные значения: `student`, `teacher`.         |
 | **skuIds** | набор строк |  Представляет идентификаторы SKU лицензий для назначения.        |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -39,3 +39,11 @@ ms.locfileid: "29409680"
     "skuIds": ["String"]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationlicenseassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

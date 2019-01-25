@@ -1,21 +1,21 @@
 ---
 title: 'group: resetUnseenCount'
-description: Сброс unseenCount все сообщения, которые текущий пользователь не с момента их последнего посетить. Поддерживается только в Office 365 группы.
+description: Сброс unseenCount всех записей, которые текущий пользователь не просматривал со времени своего предыдущего посещения. Поддерживается только для групп Office 365.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 3d85dc82efd67311b81d69f2f99e63c47155f15a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: aa37261a536437d0e82195ecfaae06de9e1c6a3a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926283"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524816"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сброс unseenCount все сообщения, которые текущий пользователь не с момента их последнего посетить. Поддерживается только в Office 365 группы.
+Сброс unseenCount все сообщения, которые текущий пользователь не с момента их последнего посетить. Поддерживается только для групп Office 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ POST /groups/{id}/resetUnseenCount
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -55,7 +55,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 ```
 
 #### <a name="response"></a>Ответ
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -66,10 +66,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: resetUnseenCount",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-resetunseencount.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

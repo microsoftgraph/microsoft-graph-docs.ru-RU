@@ -3,16 +3,16 @@ title: 'reportRoot: getOneDriveUsageAccountDetail'
 description: Получите сведения об использовании OneDrive с разбивкой по учетным записям.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 1aa7de008f1791908786111a87c1ab046df7f42e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 51fe0d89b8ad4e8bb783c901fba101135a296834
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960303"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525754"
 ---
 # <a name="reportroot-getonedriveusageaccountdetail"></a>reportRoot: getOneDriveUsageAccountDetail
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите сведения об использовании OneDrive с разбивкой по учетным записям.
 
@@ -37,7 +37,7 @@ GET /reports/getOneDriveUsageAccountDetail(period='{period_value}')
 GET /reports/getOneDriveUsageAccountDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите один из следующих параметров и действительное значение.
 
@@ -102,7 +102,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 
@@ -146,7 +146,7 @@ Report Refresh Date,Site URL,Owner Display Name,Is Deleted,Last Activity Date,Fi
 GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -181,3 +181,11 @@ Content-Length: 400
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getonedriveusageaccountdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

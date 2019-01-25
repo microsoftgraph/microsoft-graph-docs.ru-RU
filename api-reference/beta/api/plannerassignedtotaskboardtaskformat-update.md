@@ -4,16 +4,16 @@ description: Обновление свойств объекта **plannerAssigne
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: b388d3d19287c4a5c039763ce812c22b87515622
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915706"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524851"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств объекта **plannerAssignedToTaskBoardTaskFormat**.
 ## <a name="permissions"></a>Разрешения
@@ -42,7 +42,7 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказки используется для задачи заказа на просмотр AssignedTo панели задач. Ключ каждой записи — один пользователей, которым назначена эта задача, а значение — подсказка order. Формат каждое значение определяется в [с помощью подсказки порядке в планировщике (.. / resources/planner_order_hint_format.md).|
-|unassignedOrderHint|Строка|Присваивается значение подсказку для упорядочивания задачи в представлении AssignedTo Доска задач при всем пользователям, не назначена задача или orderHintsByAssignee словаря не предоставляет подсказку порядке для пользователя задачи. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
+|unassignedOrderHint|String|Присваивается значение подсказку для упорядочивания задачи в представлении AssignedTo Доска задач при всем пользователям, не назначена задача или orderHintsByAssignee словаря не предоставляет подсказку порядке для пользователя задачи. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -70,7 +70,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -93,10 +94,15 @@ Content-length: 225
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update plannerassignedtotaskboardtaskformat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/plannerassignedtotaskboardtaskformat-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

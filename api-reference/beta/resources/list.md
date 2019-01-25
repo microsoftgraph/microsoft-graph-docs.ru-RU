@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: List
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 419f35226c09c1bde500994b6e023f764c54b3cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1cb3b6e74bd95929c392f4789ab916ae0e5569e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953618"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527663"
 ---
 # <a name="list-resource"></a>Ресурс List
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **list** представляет список в ресурсе [site][].
 Этот ресурс содержит высокоуровневые свойства списка, включая определения шаблонов и полей.
@@ -96,7 +96,7 @@ ms.locfileid: "27953618"
 
 | Имя свойства            | Тип             | Описание
 |:-------------------------|:-----------------|:-------------------------------
-| **id**                   | строка           | Уникальный идентификатор элемента. Только для чтения.
+| **id**                   | string           | Уникальный идентификатор элемента. Только для чтения.
 | **name**                 | строка           | Имя элемента.
 | **createdBy**            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
@@ -127,7 +127,8 @@ ms.locfileid: "27953618"
 [site]: site.md
 [systemFacet]: systemfacet.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ ms.locfileid: "27953618"
   "tocPath": "Resources/Lists",
   "tocBookmarks": {
     "Lists": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

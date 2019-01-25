@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: currencyColumn
 localization_priority: Normal
-ms.openlocfilehash: 179c0bb1e5c82d7f2af17dcbcae08be8726f2ecd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c89d709c93eeee0003d193d620166f8abffd9d41
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27888937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524501"
 ---
 # <a name="currencycolumn-resource-type"></a>Тип ресурса currencyColumn
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **currencyColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют денежные значения.
 
@@ -32,12 +32,17 @@ ms.locfileid: "27888937"
 
 | Имя свойства | Тип   | Описание
 |:--------------|:-------|:----------------------------------------------------
-| **locale**    | строка | Указывает языковой стандарт, на основании которого требуется выбрать обозначение денежной единицы.
+| **locale**    | string | Указывает языковой стандарт, на основании которого требуется выбрать обозначение денежной единицы.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/CurrencyColumn"
-} -->
+  "tocPath": "Resources/CurrencyColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/currencycolumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

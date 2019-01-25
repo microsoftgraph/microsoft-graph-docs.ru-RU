@@ -4,16 +4,16 @@ description: 'Представляет курс в учебном заведен
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: 4ccec95dbe04c5482328223214f446fbb580279c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a4bbc0560f2a40b5a438ec8276bbcf984a22721
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393223"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526734"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет курс в учебном заведении. Ресурс **educationClass** соответствует группе Office 365, для него используется тот же идентификатор. Учащиеся — постоянные участники курса, а преподаватели являются владельцами и обладают соответствующими правами. Чтобы решения для Office работали правильно, преподаватели должны быть включены как в коллекцию teachers, так и в коллекцию members.  
 
@@ -40,7 +40,7 @@ ms.locfileid: "29393223"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id| String| Уникальный идентификатор для курса.|
-|description|String| Описание курса.|
+|description|Строка| Описание курса.|
 |displayName|String| Название курса.|
 |mailNickname|String| Почтовое имя для отправки почты всем участникам, если это возможно. |
 |createdBy|[identitySet](identityset.md)| Объект, который создал курс. |
@@ -54,8 +54,8 @@ ms.locfileid: "29393223"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение NULL.|
-|schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL.|
+|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|
+|schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение null.|
 |teachers|Коллекция [educationUser](../resources/educationuser.md)|  Все преподаватели для этого курса. Допускается значение NULL.|
 |assignments|[educationAssignment](../resources/educationassignment.md) коллекции| Все назначения, связанных с этим классом. Допускается значение null.|
 
@@ -89,10 +89,15 @@ ms.locfileid: "29393223"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationClass resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationclass.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

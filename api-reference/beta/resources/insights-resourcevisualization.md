@@ -4,16 +4,16 @@ description: Сложный тип, содержащий свойства сре
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: f8426d13968e5bea929c8e26f71346fa554a5242
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990658"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526762"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса resourceVisualization
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложный тип, содержащий свойства [средствами](insights.md).
 
@@ -40,12 +40,12 @@ ms.locfileid: "27990658"
 | -------------         |---------------| -------------|
 | title                 | String        | Текст заголовка элемента.               |
 | type              | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для конкретного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| Тип носителя             | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
-| previewImageUrl       | String        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
+| MediaType             | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
+| PreviewImageUrl       | String        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
 | previewText           | String        | Предварительная версия текст для элемента. |
 | containerWebUrl       | String        | Путь, приводя к папке, в которой хранится элемент. |
 | containerDisplayName  | String        | Строка, описывающая, где хранится элемент. Например имя сайт SharePoint или имя пользователя, определение владельца OneDrive, хранения элемента.  |
-| containerType         | String | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
+| ContainerType         | String | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
 
 ## <a name="type-property-values"></a>Тип значения свойств
 -   PowerPoint
@@ -66,13 +66,13 @@ ms.locfileid: "27990658"
 -   Audio (аудио)
 -   Video (видео)
 -   Изображение
--   Веб
+-   Web
 -   Текст
 -   Xml
 -   Story
 -   ExternalContent
 -   Folder
--   Другое
+-   Other
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -87,3 +87,11 @@ ms.locfileid: "27990658"
 -   GDrive
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-resourcevisualization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

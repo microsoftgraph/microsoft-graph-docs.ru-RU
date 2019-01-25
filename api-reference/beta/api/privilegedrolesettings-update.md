@@ -2,16 +2,16 @@
 title: Обновление privilegedRoleSettings
 description: Обновление параметров ролей для параметров указанного ролей. Объект privilegedRoleSettings будут возвращены.
 localization_priority: Normal
-ms.openlocfilehash: 7c117abfe774eae60e42dcbc5f748c10cacf5cd6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 09464c878c76ed557f30d0eac21e0572fae05062
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819322"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527656"
 ---
 # <a name="update-privilegedrolesettings"></a>Обновление privilegedRoleSettings
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление параметров ролей для параметров указанного ролей. Объект [privilegedRoleSettings](../resources/privilegedrolesettings.md) будут возвращены.
 ## <a name="permissions"></a>Разрешения
@@ -37,23 +37,23 @@ PUT /privilegedRoles/{id}/settings
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [privilegedRoleSettings](../resources/privilegedrolesettings.md) .
 
 В следующей таблице приведены свойства, которые можно указать при обновлении параметров ролей.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|Длительность, при активации роли. Обязательный.|
-|id|строка|Уникальный идентификатор для параметров роли. Только для чтения. Обязательный.|
+|ElevationDuration|duration|Длительность, при активации роли. Обязательный.|
+|id|string|Уникальный идентификатор для параметров роли. Только для чтения. Обязательный.|
 |isMfaOnElevationConfigurable|boolean|**значение true,** Если mfaOnElevation может быть настроен. **значение false,** Если mfaOnElevation не настраивается. Обязательный.|
-|lastGlobalAdmin|Логический|Только для внутреннего использования.|
+|lastGlobalAdmin|Логическое|Только для внутреннего использования.|
 |maxElavationDuration|duration|Максимальная длительность для активации роли. Обязательный.|
-|mfaOnElevation|Логический|**значение true,** Если необходимо активировать роль многофакторной проверкой Подлинности. **значение false,** Если многофакторной проверкой Подлинности не требуется для включения роли. Обязательный.|
+|mfaOnElevation|Логическое|**значение true,** Если необходимо активировать роль многофакторной проверкой Подлинности. **значение false,** Если многофакторной проверкой Подлинности не требуется для включения роли. Обязательный.|
 |minElevationDuration|duration|Минимальная продолжительность активированные роли. Обязательный.|
-|notificationToUserOnElevation|Логический|**значение true,** Если отправить уведомление конечному пользователю при активации роли. **значение false,** Если не отправлять уведомления при активации роли. Обязательный.|
-|ticketingInfoOnElevation|Логический|**значение true,** Если отдела сведения требуется при активации роли. **значение false,** Если отдела сведения не является обязательным, когда активировать роль. Обязательный.|
-|approvalOnElevation|Логический|**значение true,** Если требуется утверждение при активации роли. **значение false,** Если утверждение не является обязательным, когда активировать роль. Обязательный.|
+|notificationToUserOnElevation|Логическое|**значение true,** Если отправить уведомление конечному пользователю при активации роли. **значение false,** Если не отправлять уведомления при активации роли. Обязательный.|
+|ticketingInfoOnElevation|Логическое|**значение true,** Если отдела сведения требуется при активации роли. **значение false,** Если отдела сведения не является обязательным, когда активировать роль. Обязательный.|
+|approvalOnElevation|Логическое|**значение true,** Если требуется утверждение при активации роли. **значение false,** Если утверждение не является обязательным, когда активировать роль. Обязательный.|
 |approverIds|array|Список идентификаторов утверждения, если требуется для активации утверждение.|
 
 ## <a name="response"></a>Ответ
@@ -95,10 +95,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update privilegedRoleSettings",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedrolesettings-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

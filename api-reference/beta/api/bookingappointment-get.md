@@ -1,20 +1,20 @@
 ---
 title: Получение bookingAppointment
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Получите свойства и связи объекта bookingAppointment в указанном bookingbusiness.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: b97c1fc6b45a9380fa3fb37e092a2a11ac3437a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e9e9fffa3101656d4e426578185683065b4f5e5a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951308"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525271"
 ---
 # <a name="get-bookingappointment"></a>Получение bookingAppointment
 
- > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
- 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получите свойства и связи объекта [bookingAppointment](../resources/bookingappointment.md) в указанном [bookingbusiness](../resources/bookingbusiness.md).
 
 Свойства **start** и **end** всегда возвращаются в формате UTC.
@@ -25,7 +25,7 @@ ms.locfileid: "27951308"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  | 
+|Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,9 +40,9 @@ GET /bookingBusinesses/{id}/appointments/{id}
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [bookingAppointment](../resources/bookingappointment.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -54,8 +54,8 @@ GET /bookingBusinesses/{id}/appointments/{id}
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/appointments/AAMkADKnAAA=
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -170,10 +170,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get bookingAppointment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

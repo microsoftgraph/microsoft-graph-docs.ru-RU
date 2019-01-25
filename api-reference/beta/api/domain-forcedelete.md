@@ -4,16 +4,16 @@ description: Удаление домена, с помощью асинхронн
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 6c3d942352a0db20d6e46a4b00686ad948bd6798
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a1a2b2510f0c79f2be4e70deb9efabc65f8dfc4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965126"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527691"
 ---
 # <a name="domain-forcedelete"></a>домен: forceDelete
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление домена, с помощью асинхронной операции.
 
@@ -58,13 +58,13 @@ POST /domains/{id}/forceDelete
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|disableUserAccounts|Логический| Параметр, чтобы отключить переименованной учетных записей. Если учетная запись пользователя отключена, пользователь не разрешено вход.<br>*Значение true* (по умолчанию) — переименовано в рамках этой операции учетными записями пользователей.<br>*False* — переименовано в рамках этой операции учетные записи пользователей не отключены. |
+|disableUserAccounts|Логическое| Параметр, чтобы отключить переименованной учетных записей. Если учетная запись пользователя отключена, пользователь не разрешено вход.<br>*Значение true* (по умолчанию) — переименовано в рамках этой операции учетными записями пользователей.<br>*False* — переименовано в рамках этой операции учетные записи пользователей не отключены. |
 
 ## <a name="response"></a>Ответ
 
@@ -99,10 +99,15 @@ HTTP/1.1 200 OK
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domain: forcedelete",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/domain-forcedelete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

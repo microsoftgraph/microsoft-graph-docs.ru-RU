@@ -2,16 +2,16 @@
 title: Обновление privilegedapproval
 description: Обновление свойства объекта privilegedapproval.
 localization_priority: Normal
-ms.openlocfilehash: 0ddab7d7a628be8513c27114e1e4ec3d13477784
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cb108ca35b07138f84a9fd969bfe7c7241e9672e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866887"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524900"
 ---
 # <a name="update-privilegedapproval"></a>Обновление privilegedapproval
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойства объекта privilegedapproval.
 ## <a name="permissions"></a>Разрешения
@@ -34,24 +34,24 @@ PATCH /privilegedApproval/<id>
 |:-----------|:-----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|approvalDuration|Продолжительность||
+|approvalDuration|Длительность||
 |approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|Строка||
-|approverReason|Строка||
+|approvalType|String||
+|approverReason|String||
 |endDateTime|DateTimeOffset||
-|requestorReason|Строка||
-|roleId|Строка||
+|requestorReason|String||
+|roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `204 No Content` код ответа
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
 
@@ -73,7 +73,8 @@ Content-length: 180
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,10 +86,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update privilegedapproval",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedapproval-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

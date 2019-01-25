@@ -4,16 +4,16 @@ description: Обновление свойства объекта события
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 50711c6e2533f7a99e742542b1376faf78fff8e9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956579"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524977"
 ---
 # <a name="update-event"></a>Обновление события
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойства объекта [события](../resources/event.md) .
 ## <a name="permissions"></a>Разрешения
@@ -50,7 +50,7 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство       | Тип    | Описание |
@@ -60,14 +60,14 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | categories|String|Категории, связанные с событием.|
 | end|DateTimeTimeZone|Дата и время завершения события.<br/><br/>По умолчанию время завершения указано в формате UTC. Можно дополнительно указать часовой пояс в элементе EndTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете EndTimeZone, следует также указать значение StartTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 21:34 по тихоокеанскому поясному времени): "2015-02-25T21:34:00-08:00". |
 | importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
-| isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
+| isAllDay|Логическое|Задайте значение true, если событие длится весь день.|
 | isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 | location|Location|Место проведения события.|
 |locations|[Расположение](../resources/location.md) семейства сайтов|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
 | recurrence|PatternedRecurrence|Расписание повторения события.|
 | reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 | responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
-| sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|Строка| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|Отображаемое состояние. Возможные значения: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 | start|DateTimeTimeZone|Время начала события. <br/><br/>По умолчанию время начала указано в формате UTC. Можно дополнительно указать часовой пояс в элементе StartTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете StartTimeZone, следует также указать значение EndTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 19:34 по тихоокеанскому поясному времени): "2015-02-25T19:34:00-08:00".  |
 | subject|String|Текст в строке темы сообщения о событии.|
@@ -146,10 +146,15 @@ Content-length: 285
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/event-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

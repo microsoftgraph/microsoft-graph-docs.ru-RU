@@ -2,16 +2,16 @@
 title: Отправка команды устройства
 description: 'Этот интерфейс API обеспечивает возможности рим проекта для передачи команд устройство, связанное с учетной записью Майкрософт. После выполнения на вызов GET `me/devices`, передайте идентификатор устройства, чтобы выполнить команду на устройство. Поддерживаются два типа из команд: LaunchURI и AppServices. Если вы используете LaunchURI, указания параметров *типа* и *полезных данных* . Для вызова AppService, укажите '
 localization_priority: Normal
-ms.openlocfilehash: 54349e2f43a776523614b0cd2abbc209e89305fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d0c25200933a4a87a66349e457c500c496272b08
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891989"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526244"
 ---
 # <a name="send-device-command"></a>Отправка команды устройства
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Этот интерфейс API обеспечивает возможности рим проекта для передачи команд устройство, связанное с учетной записью Майкрософт. После выполнения на вызов GET `me/devices`, передайте идентификатор устройства, чтобы выполнить команду на устройство. Поддерживаются два типа из команд: LaunchURI и AppServices. Если вы используете LaunchURI, указания параметров *типа* и *полезных данных* . Для вызова AppService укажите *Тип*, *полезных данных*, *packageFamilyName*и *appServiceName* параметры.
 
@@ -42,7 +42,7 @@ POST me/devices/{id}/commands
 |Авторизация| Bearer {токен}. Обязательный. |
 |Accept | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите представление JSON свойства команды.
 
@@ -82,13 +82,13 @@ HTTP/1.1 201 OK
 |:----|:------|:------|
 |payload | Microsoft.Graph.JSON| Полезные данные для отправки приложения-службы или для запуска URI на устройстве. |
 |responsePayload | Microsoft.Graph.JSON| Полезные данные, возвращаемые целевого устройства. |
-|postBackURI | Строка | Публикация резервного URI для отправки последующих уведомлений об обновлениях. |
-|packageFamilyName | Строка | Имя семейства Windows пакет приложения. |
-|appServiceName | Строка | Имя приложения-службы, определенные в конечное приложение. Требуется при запуске приложения-службы. |
-|type| Строка | LaunchURI или AppService. |
-|id| Строка | Идентификатор команды, полученного на устройство. |
-|actionStatus | Строка | [Состояние](get-device-command-status.md) команды. |
-|error| Строка| Все ошибки, связанные с запросом от целевого приложения. |
+|postBackURI | String | Публикация резервного URI для отправки последующих уведомлений об обновлениях. |
+|packageFamilyName | String | Имя семейства Windows пакет приложения. |
+|appServiceName | String | Имя приложения-службы, определенные в конечное приложение. Требуется при запуске приложения-службы. |
+|type| String | LaunchURI или AppService. |
+|id| String | Идентификатор команды, полученного на устройство. |
+|actionStatus | String | [Состояние](get-device-command-status.md) команды. |
+|error| String| Все ошибки, связанные с запросом от целевого приложения. |
 
 ## <a name="launch-uri-example"></a>Запуск примера URI
 
@@ -115,7 +115,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Ответ 
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "ignored",
@@ -150,7 +150,7 @@ HTTP/1.1 201 OK
 
 Несколько дополнительных свойств необходимо установить в вызове. *Тип* должен иметь значение *AppService*, *AppServiceName* должно быть присвоено имя службы приложения, определенные в приложении, *PackageFamilyName* должно быть присвоено имя пакета семейства, определенные в манифесте приложения и *полезных данных* содержит ключи и значения для службы вызова в конечном приложении.
 
-#### <a name="request"></a>Запрос
+#### <a name="request"></a>Запросить
 
 <!-- {
   "blockType": "ignored",
@@ -174,7 +174,7 @@ Content-Type: application/json; charset=utf-8
 
 #### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "ignored",
@@ -202,3 +202,11 @@ HTTP/1.1 201 OK
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/send-device-command.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

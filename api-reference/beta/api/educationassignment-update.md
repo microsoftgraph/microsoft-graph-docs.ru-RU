@@ -4,16 +4,16 @@ description: Обновите объект назначения. Это можн
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: f8d79e11628e3a02a20c9ecdcd46bcd1bff05e7f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb5762f86e1572f9a9d5876199c945154a25293b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960352"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524963"
 ---
 # <a name="update-educationassignment"></a>Обновление educationassignment
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновите объект назначения. Это можно сделать только преподавателей в классе. Обратите внимание на то, что запрос на исправление нельзя использовать для изменения состояния назначения. Используется для изменения состояния назначения действие [Опубликовать](../api/educationassignment-publish.md) .
 
@@ -42,14 +42,14 @@ PATCH /education/classes/{id}/assignments/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowLateSubmissions|Логический| Является ли отправленные данные можно отправлять после даты выполнения.|
-|allowStudentsToAddResourcesToSubmission|Логический| Является ли студента можно добавить ресурсы для отправки. Указывает, является ли только элементов на отправку поступил из списка назначений ресурсов. |
+|allowLateSubmissions|Логическое| Является ли отправленные данные можно отправлять после даты выполнения.|
+|allowStudentsToAddResourcesToSubmission|Логическое| Является ли студента можно добавить ресурсы для отправки. Указывает, является ли только элементов на отправку поступил из списка назначений ресурсов. |
 |assignDateTime|DateTimeOffset| Дата назначения должны быть опубликованы для студентов. |
 |assignTo|educationAssignmentRecipient| Студентов, получение назначения.|
-|displayName|Строка| Имя назначения. |
+|displayName|String| Имя назначения. |
 |dueDateTime|DateTimeOffset| Дата назначения должно быть выполнено. |
 |Оценка успеваемости|educationAssignmentGradeType| Как будет выражаемым числом назначения.|
-|инструкции|itemBody| Инструкции для студентов, а также назначения. |
+|Инструкции|item.body| Инструкции для студентов, а также назначения. |
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [educationAssignment](../resources/educationassignment.md) объекта в теле ответа.
@@ -75,7 +75,7 @@ Content-length: 279
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -104,10 +104,15 @@ Content-length: 279
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update educationassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

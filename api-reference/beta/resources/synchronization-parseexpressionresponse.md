@@ -2,16 +2,16 @@
 title: Тип ресурса parseExpressionResponse
 description: 'Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.'
 localization_priority: Normal
-ms.openlocfilehash: 550a46b0c27c2ca8d2d4c01baa975d8a204546f2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27832951"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523892"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса parseExpressionResponse
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.
 
@@ -20,9 +20,9 @@ ms.locfileid: "27832951"
 |:---------------|:--------|:----------|
 |error|OData.Error|Дополнительные сведения об ошибке, если вычисление выражения возникла ошибка.|
 |evaluationResult|Коллекция String|Коллекция значений, созданные средством оценки выражения.|
-|evaluationSucceeded|Логический|`true`При оценке прошла успешно.|
+|evaluationSucceeded|Логическое|`true`При оценке прошла успешно.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Объект [attributeMappingSource](synchronization-attributemappingsource.md) , представляющий проанализированного выражения.|
-|parsingSucceeded|Логический|`true`Если выражение успешно обработан.|
+|parsingSucceeded|Логическое|`true`Если выражение успешно обработан.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,10 +49,15 @@ ms.locfileid: "27832951"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "parseExpressionResponse resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-parseexpressionresponse.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

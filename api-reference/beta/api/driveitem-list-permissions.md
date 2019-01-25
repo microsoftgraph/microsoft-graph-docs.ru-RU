@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Создание списка пользователей, имеющих доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 224674d15f77794da798b3f5690c492089a932f1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: efd09838771adb656f5c32ade47d7b7de55ff6b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956498"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524928"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений совместного доступа в элементе DriveItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание списка действующих разрешений на общий доступ в элементе [DriveItem](../resources/driveitem.md).
 
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Связи между **разрешениями** ресурса DriveItem невозможно развернуть как часть запроса на [получение DriveItem](driveitem-get.md) или коллекции DriveItems. Необходимо открыть доступ непосредственно к свойству разрешений.
 
@@ -142,10 +142,15 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List an item's permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "Sharing/Permissions"
-} -->
+  "tocPath": "Sharing/Permissions",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-permissions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

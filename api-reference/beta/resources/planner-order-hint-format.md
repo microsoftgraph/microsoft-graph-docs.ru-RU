@@ -4,16 +4,16 @@ description: '`)'
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
-ms.openlocfilehash: fa518e3820437ec02ee2b28e1b9a93fab3d4b100
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 22596f7e9fea5954fc9b6fceb8dae117cf762cb5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977691"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525985"
 ---
 # <a name="using-order-hints-in-planner"></a>Использование подсказок порядка в Планировщике
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Порядок сортировки объектов в Планировщике определяется подсказками порядка. Значения подсказок порядка — строки. Чтобы определить порядок следования элементов, клиенты могут сортировать эти строки по порядковому значению символов в них. Сравниваются символы с начала строки и до тех пор, пока не будет обнаружена разница в порядковом значении символов, либо пока одна из строк не закончится — в таком случае короткая строка будет расположена выше длинной. Значения могут содержать любой символ с порядковым номером от 32 (пробел) до 126 (`~`).
 
@@ -81,3 +81,11 @@ ms.locfileid: "27977691"
 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/planner-order-hint-format.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

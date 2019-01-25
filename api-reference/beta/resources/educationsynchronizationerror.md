@@ -4,16 +4,16 @@ description: Представляет ошибку во время провер�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 397ac305fcacd789174c05ea36ab026826227475
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5c937e95441132e4633b0f5e48a75b0597b8f08d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425815"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525145"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>Тип ресурса educationSynchronizationError
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет ошибку во время проверки данных профиля school и/или синхронизации. Уникальный ошибка создается для каждой записи, не удается проверить и/или синхронизация с Azure Active Directory (Azure AD).
 
@@ -28,10 +28,10 @@ ms.locfileid: "29425815"
 | Свойство | Тип | Описание |
 |:-|:-|:-|
 | **entryType** | string |  Представляет сущности синхронизации (школа, раздел, учебы, преподаватель).       |
-| **errorCode** | string |  Представляет код ошибки для этой ошибки.         |
-| **сообщение об ошибке** | string |  Содержит описание ошибки.        |
+| errorCode | string |  Представляет код ошибки для этой ошибки.         |
+| **ErrorMessage** | string |  Содержит описание ошибки.        |
 | **joiningValue** | string |  Уникальный идентификатор для записи.         |
-| **recordedDateTime** | DateTimeOffset | Время возникновения этой ошибки.         |
+| recordedDateTime | DateTimeOffset | Время возникновения этой ошибки.         |
 | **reportableIdentifier** | string | Идентификатор элемента в этой записи об ошибках.       |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -53,3 +53,11 @@ ms.locfileid: "29425815"
     "reportableIdentifier": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationsynchronizationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

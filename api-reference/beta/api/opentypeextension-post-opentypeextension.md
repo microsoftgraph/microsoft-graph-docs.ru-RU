@@ -3,26 +3,26 @@ title: Создание открытого расширения
 description: Создание расширения open (объект openTypeExtension) и Добавление настраиваемых свойств
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 58df4ab2898abe0e49563de4b655eccacfdc91fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948571"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526111"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте расширение open (объект[openTypeExtension](../resources/opentypeextension.md) ) и добавьте настраиваемых свойств в новый или существующий экземпляр поддерживаемые ресурсов.
 
-> **Примечание:** При создании open расширения Outlook ресурсов, содержатся в разделе **относящиеся к Outlook** в разделе [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
+> **Примечание.** Если вы создаете открытые расширения для ресурсов Outlook, см. раздел **Рекомендации, касающиеся Outlook** в статье [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от разрешений и ресурсов, которое вы создаете расширения в тип (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, в котором создается расширение, и типа требующегося разрешения (делегированное или для приложения) разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Application |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.AccessAsUser.All | Не поддерживается | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
@@ -38,7 +38,7 @@ ms.locfileid: "27948571"
 
 ### <a name="create-an-extension-in-a-new-resource-instance"></a>Создание расширения в новом экземпляре ресурса
 
-Использование того же запроса REST, которая используется для создания экземпляра.
+Используйте такой же запрос REST, как для создания экземпляра.
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -49,9 +49,9 @@ POST /groups/{id}/threads/{id}/posts/{id}/reply
 POST /users/{id|userPrincipalName}/contacts
 ```
 
->**Примечание:** Этот синтаксис показаны наиболее распространенные способы создания экземпляров поддерживаемые ресурсов. Все синтаксис POST, которые можно создавать экземпляры этих ресурсов поддерживает создание open расширения в их аналогичным образом.
+>**Примечание.** В этом синтаксисе показаны некоторые распространенные способы создания поддерживаемых экземпляров ресурса. Все другие варианты синтаксиса POST, позволяющие создавать эти экземпляры ресурса, поддерживают создание открытых расширений этих экземпляров подобным образом.
 
-В разделе [Тело запроса](#request-body) показано, как включить свойства нового экземпляра ресурса _и расширение_ в тело запроса.
+В разделе [Текст запроса](#request-body) показано, как включить свойства нового экземпляра ресурса _и расширение_ в текст запроса.
 
 ### <a name="create-an-extension-in-an-existing-resource-instance"></a>Создание расширения в существующем экземпляре ресурса
 
@@ -71,15 +71,15 @@ POST /users/{id|userPrincipalName}/contacts/{id}/extensions
 POST /users/{id|userPrincipalName}/extensions
 ```
 
->**Примечание:** Этот синтаксис показаны наиболее распространенные способы идентификации экземпляра ресурсов, чтобы создать расширение в его. Все другие синтаксисы, позволяет легко идентифицировать экземпляры этих ресурсов поддерживает создание open расширений в их аналогичным образом.
+>**Примечание.** В этом синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно создать. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают создание открытых расширений этих экземпляров подобным образом.
 
-В разделе [Тело запроса](#request-body) показано, как включить _расширение_ в тело запроса.
+В разделе [Текст запроса](#request-body) показано, как включить _расширение_ в текст запроса.
 
 ## <a name="path-parameters"></a>Параметры пути
 
 |**Параметр**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
-|id|строка|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
+|id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -88,7 +88,7 @@ POST /users/{id|userPrincipalName}/extensions
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Предоставьте JSON в тексте [openTypeExtension](../resources/opentypeextension.md)следующие обязательные пар имя значение и любые дополнительные пользовательские данные. JSON полезных данных может быть простых типов или массивами простых типов.
 
@@ -103,14 +103,14 @@ POST /users/{id|userPrincipalName}/extensions
 
 ### <a name="response-code"></a>Код ответа
 
-В зависимости от операции, можно использовать код ответа `201 Created` или `202 Accepted`.
+В зависимости от операции можно использовать код ответа `201 Created` или `202 Accepted`.
 
-При создании расширения с помощью той же операции, которая используется для создания экземпляра ресурсов, операция возвращает один и тот же код ответа, который возвращается при использовании операции для создания экземпляра ресурсов без расширения.
-Ссылки на соответствующие разделы для создания экземпляра как перечисленных [выше](#create-an-extension-in-a-new-resource-instance).
+При создании расширения с использованием такой же операции, как для создания экземпляра ресурса, операция возвращает такой же код ответа, что и при создании экземпляра ресурса без расширения.
+Изучите соответствующие статьи о создании экземпляров, перечисленные [выше](#create-an-extension-in-a-new-resource-instance).
 
-### <a name="response-body"></a>Текст ответа
+### <a name="response-body"></a>Текст отклика
 
-| Сценарий       | Ресурс  | Тело отклика |
+| Сценарий       | Ресурс  | Текст отклика |
 |:---------------|:----------|:--------------|
 | Создание расширения с явным созданием _нового_ экземпляра ресурса | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Включает новый экземпляр, дополненный объектом [openTypeExtension](../resources/opentypeextension.md). |
 | Создание расширения с неявным созданием экземпляра ресурса | [post](../resources/post.md) | Ответ содержит только код ответа без текста. |
@@ -127,7 +127,7 @@ POST /users/{id|userPrincipalName}/extensions
 
   - Тип `Microsoft.Graph.OpenTypeExtension`.
   - Имя расширения "Com.Contoso.Referral".
-  - Дополнительные данные, хранимых в три настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate`, и `dealValue`.
+  - Дополнительные данные, хранящиеся в виде трех настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и `dealValue`.
 
 <!-- {
   "blockType": "request",
@@ -161,7 +161,7 @@ POST https://graph.microsoft.com/beta/me/messages
 }
 ```
 
-### <a name="response-1"></a>Отклик 1
+### <a name="response-1"></a>Отклик 1
 
 Ниже представлен отклик для первого примера. Текст отклика включает свойства нового сообщения и следующие данные для нового расширения:
 
@@ -481,10 +481,15 @@ Content-type: application/json
 <!-- This page was manually created. -->
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create extension",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/opentypeextension-post-opentypeextension.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

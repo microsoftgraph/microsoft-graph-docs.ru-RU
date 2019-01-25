@@ -2,16 +2,16 @@
 title: Тип ресурса objectMapping
 description: Определяет, как того или иного объекта должны быть синхронизированы из исходного каталога в конечный каталог. В частности, определяются как объект в исходный каталог должны совпадать с помощью объекта в целевой каталог, что (если они имеются) области Фильтры следует использовать в том, если его нужно подготовить к данному объекту, и как атрибуты объектов должен быть преобразован переход от Источник конечный каталог.
 localization_priority: Normal
-ms.openlocfilehash: 21e996b72be7df93c86f9e5f78a0033c9203cd2c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 274d401c28abc25d904c259b00a673f3c0a53888
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851753"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526916"
 ---
 # <a name="objectmapping-resource-type"></a>Тип ресурса objectMapping
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Определяет, как того или иного объекта должны быть синхронизированы из исходного каталога в конечный каталог. В частности, определяются как объект в исходный каталог должны совпадать с помощью объекта в целевой каталог, что (если они имеются) области Фильтры следует использовать в том, если его нужно подготовить к данному объекту, и как атрибуты объектов должен быть преобразован переход от Источник конечный каталог.
 
@@ -22,13 +22,13 @@ ms.locfileid: "27851753"
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
 |attributeMappings  |[attributeMapping](synchronization-attributemapping.md) коллекции    | Сопоставление атрибут определяет атрибуты для сопоставления из исходного объекта в целевой объект и как поток. Ряд функций доступны для поддержки преобразования исходных значений источника.|
-|enabled        |Логический    |При `true`, это сопоставление объектов будут обрабатываться во время синхронизации. При `false`, это сопоставление объектов будет пропущено.|
+|enabled        |Boolean    |При `true`, это сопоставление объектов будут обрабатываться во время синхронизации. При `false`, это сопоставление объектов будет пропущено.|
 |flowTypes      |objectFlowType    |Какие типы потока включены для данного объекта сопоставления. `Add`создает новые объекты в целевой каталог `Update` изменяет существующие объекты и `Delete` deprovisions существующих пользователей. Значение по умолчанию — `Add, Update, Delete`. |
-|метаданные       |metadataEntry коллекции    |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
-|name           |Строка     |Отдел понятное имя объекта сопоставления.|
+|Метаданные       |metadataEntry коллекции    |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
+|name           |String     |Отдел понятное имя объекта сопоставления.|
 |scope          |[filter](synchronization-filter.md)     |Определяет фильтр для использования при принятии решения должны быть подготовлен того или иного объекта. Например может потребоваться только подготовки пользователей, которые расположены в США.|
-|sourceObjectName           |Строка     |Имя объекта в исходный каталог. Должно совпадать с именем объекта из исходного [каталога определения](synchronization-directorydefinition.md).|
-|targetObjectName           |Строка     |Имя объекта в целевой каталог. Должно совпадать с именем объекта из целевого [каталога определения](synchronization-directorydefinition.md).|
+|sourceObjectName           |String     |Имя объекта в исходный каталог. Должно совпадать с именем объекта из исходного [каталога определения](synchronization-directorydefinition.md).|
+|targetObjectName           |String     |Имя объекта в целевой каталог. Должно совпадать с именем объекта из целевого [каталога определения](synchronization-directorydefinition.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -348,10 +348,15 @@ ms.locfileid: "27851753"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "objectMapping resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-objectmapping.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

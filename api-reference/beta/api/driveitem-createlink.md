@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Предоставление доступа к файлу посредством ссылки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 75403c44a0d69269d7fe11b947da2f17b013dd3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b4b86621579b945af01eb1dc517b7525220aae8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940409"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526223"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используя действие **createLink**, вы можете поделиться ресурсом [DriveItem](../resources/driveitem.md) с помощью ссылки для совместного доступа.
 
@@ -51,8 +51,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   Имя    |  Тип  |                                 Описание                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
-| **scope** | строка | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
+| **type**  | строка | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
+| **scope** | string | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 
 ### <a name="link-types"></a>Типы ссылок
@@ -75,7 +75,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 | `anonymous`    | Создает ссылку на объект DriveItem, доступный всем, кому она предоставлена. Администратор может отключить ссылки, не требующие проверки подлинности.                 |
 | `organization` | Создает ссылку на объект DriveItem, доступный всем в организации пользователя. Область организации для ссылок недоступна в личных учетных записях OneDrive. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает в тексте ответа один ресурс [Permission](../resources/permission.md), представляющий запрашиваемые разрешения для совместного доступа.
 
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -146,7 +146,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -188,7 +188,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -211,16 +211,21 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 * Срок действия ссылок, созданных с помощью этого действия, не истекает при условии, что в организации не включена политика срока действия.
 * Ссылки отображаются в разрешениях на совместное использование для элемента и могут быть удалены владельцем элемента.
 * Они всегда указывают на текущую версию элемента, если он не был извлечен (только в SharePoint).
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new sharing link for an item.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
-  "tocPath": "Sharing/Create link"
-} -->
+  "tocPath": "Sharing/Create link",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-createlink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Список ресурсов, связанных с этой от�
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: bff80bd7975171f277cb8e6e6ee08cfd250a67ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b9069cb6ec20f65b82cacca8f862a05ff0af7b5d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975377"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526188"
 ---
 # <a name="list-resources"></a>Список ресурсов
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Список ресурсов, связанных с этой отправки. Объект **submissionResource** — оболочкой вокруг объекта фактический ресурсов студент работает в. Если это скопированный из назначения во время процесса назначить программы-оболочки для также указатель ресурсов для назначения. Эти ресурсы, рабочую копию назначения. **SubmittedResources** представлены ресурсы, чтобы быть выражаемым числом отправленных официально.
 
@@ -39,7 +39,7 @@ GET /educationClasses/assignments/{id}/submissions/{id}/resources
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSubmissionResource](../resources/educationsubmissionresource.md) в теле ответа.
@@ -104,10 +104,15 @@ Content-length: 1045
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List resources",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-list-resources.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: В компоненте обзоры доступа Azure AD изв
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 037b916bca45c74d1918b45e4e9e21b685bd8ae0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e19e3b0581c995f1b0ef52369d3a3e7545696d1c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941501"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525327"
 ---
 # <a name="list-my-accessreview-decisions"></a>Мои accessReview решения
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD извлечение решения объект [accessReview](../resources/accessreview.md) для вызывающего пользователя в виде редактор.
 ## <a name="permissions"></a>Разрешения
@@ -33,12 +33,12 @@ GET /accessReviews('{reviewId}')/myDecisions
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | строка | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Нет текста запроса должен задаваться.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200, OK` код ответа и массив объектов [accessReviewDecision](../resources/accessreviewdecision.md) в теле ответа, для которого вызывающего пользователя — это назначенный редактор.
 
 ## <a name="example"></a>Пример
@@ -85,10 +85,15 @@ Content-type: application/json
 |[Список accessReview решения](accessreview-listdecisions.md) |     [accessReviewDecision](../resources/accessreviewdecision.md) коллекции|    Получите все решения accessReview.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview decisions",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listmydecisions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

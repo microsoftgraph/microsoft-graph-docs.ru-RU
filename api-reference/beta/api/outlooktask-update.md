@@ -4,16 +4,16 @@ description: Изменения для записи свойств задачи 
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: c0d2ff13f3e7971e686389709fbdde027458ef67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1908d9b918b13f87b1d5ab61dab912577f06da64
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964937"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526888"
 ---
 # <a name="update-outlooktask"></a>Обновление outlooktask
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Изменения для записи свойств задачи Outlook.
 
@@ -53,25 +53,25 @@ PATCH /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|assignedTo|Строка|Имя пользователя, которому назначена задача.|
+|AssignedTo|String|Имя пользователя, которому назначена задача.|
 |body|[itemBody](../resources/itembody.md)|Основная задача, который обычно содержит сведения о задаче. Обратите внимание на то, что поддерживается только тип HTML-код.|
 |categories|Коллекция String|Категории, связанные с задачей.|
-|changeKey|Строка|Версия задачи.|
+|changeKey|String|Версия задачи.|
 |completedDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанный часовой пояс, окончания задачи.|
 |createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства используется формат ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |dueDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанный часовой пояс, которую требуется завершения задачи.|
-|hasAttachments|Логический|Значение true, если у задачи вложения.|
+|hasAttachments|Логическое|Значение true, если у задачи вложения.|
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Значение true, если оповещение установлено значение Напоминать пользователю задачи.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|owner|Строка|Имя человека, создавшего задачу.|
-|parentFolderId|Строка|Уникальный идентификатор родительской папки задач.|
+|owner|String|Имя человека, создавшего задачу.|
+|parentFolderId|String|Уникальный идентификатор родительской папки задач.|
 |recurrence|[patternedRecurrence](../resources/patternedrecurrence.md)|Шаблон повторения для задачи.|
 |reminderDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата и время оповещения напоминание задачи, будет выполнена.|
 |sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата в указанном часовом поясе после начала задачи.|
 |status|string|Указывает состояние или хода выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|Строка|Краткое описание или название задачи.|
+|subject|String|Краткое описание или название задачи.|
 
 ## <a name="response"></a>Ответ
 
@@ -104,7 +104,8 @@ Content-length: 76
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -153,10 +154,15 @@ Content-length: 376
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update outlooktask",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/outlooktask-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

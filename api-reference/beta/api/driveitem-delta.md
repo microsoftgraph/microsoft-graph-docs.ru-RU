@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b879b99fb03ab17af4701c96c4be973f1f752be9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 14cc73d9e90c71815e6c72047fe78bf2b325abdd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991295"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525320"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 С помощью этого метода приложение может отслеживать изменения drive и соответствующих дочерних элементов.
 
@@ -48,11 +48,11 @@ GET /sites/{siteId}/drive/root/delta
 GET /users/{userId}/drive/root/delta
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 | Параметр   | Тип  | Описание                                                                                                                          |
 |:-------|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|
-| токен  | string | Необязательный параметр. Если не указано, перечисляет текущее состояние иерархии. Если `latest`, возвращается пустая ответа с последнего разностного маркер. Если маркер предыдущей дельты возвращает новое состояние с момента маркер.
+| token  | string | Необязательный параметр. Если не указан, перечисляет текущее состояние иерархии. Если используется значение `latest`, возвращает пустой ответ с последним разностным маркером. Если используется предыдущий разностный маркер, возвращает новое состояние с момента того маркера.
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
@@ -187,7 +187,7 @@ Content-type: application/json
 GET /me/drive/root/delta?token=latest
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)" } -->
 
@@ -221,10 +221,15 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes"
-} -->
+  "tocPath": "Items/Sync changes",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

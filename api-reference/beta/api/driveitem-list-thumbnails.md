@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Получение эскизов файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a64b8b7af4a1be82d4f14b4eedc17efd9839bab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 53401c261a69872d57084b845e391615ef768fcb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975388"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525236"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции ресурсов [ThumbnailSet](../resources/thumbnailset.md) для ресурса [DriveItem](../resources/driveitem.md).
 
@@ -57,7 +57,7 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 
 Этот метод поддерживает [параметр запросов OData](/graph/query-parameters) `$select` для настройки отклика.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ThumbnailSet](../resources/thumbnailset.md) в теле отклика.
 
@@ -77,7 +77,7 @@ GET /me/drive/items/{item-id}/thumbnails
 Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
 
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -142,7 +142,7 @@ Content-Type: application/json
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 В ответ служба выполняет перенаправление на URL-адрес эскиза.
 
@@ -169,7 +169,7 @@ URL-адреса эскизов не кэшируются. Если в резу�
 GET /me/drive/items/{item-id}/children?$expand=thumbnails
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Служба возвращает список ресурсов DriveItem и их эскизов.
 
@@ -213,7 +213,7 @@ Content-type: application/json
 
 В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.
 
-| Имя           | Разрешение  | Пропорции | Описание                                                          |
+| Имя           | Решение  | Пропорции | Описание                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 для большей стороны  | Исходные     | Небольшой эскиз с сильным сжатием, обрезанный до квадрата. |
 | `medium`       | 176 для большей стороны | Исходные     | Обрезан до стандартного размера элемента для веб-представления OneDrive.         |
@@ -280,10 +280,15 @@ Content-Type: application/json
 
 [error-response]: /graph/errors
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get metadata and content for thumbnails of multiple sizes for OneDrive items.",
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
-  "tocPath": "Items/Thumbnails"
-} -->
+  "tocPath": "Items/Thumbnails",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-thumbnails.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

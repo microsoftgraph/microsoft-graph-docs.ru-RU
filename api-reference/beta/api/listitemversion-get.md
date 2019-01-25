@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: 'Получение предыдущей версии элемента списка: API SharePoint'
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4068ebd1e8a245f2418954ce04bad1f78530acd0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a23a8218b2be3ff36d719ee25e6fb0c960c5750f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983880"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526258"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>Получение ресурса ListItemVersion (ознакомительная версия)
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В этой статье рассказывается, как получить метаданные для определенной версии ресурса [ListItem](../resources/listitem.md).
 
@@ -39,7 +39,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 
@@ -79,10 +79,15 @@ Content-Type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitemversion-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
