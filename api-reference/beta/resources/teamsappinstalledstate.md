@@ -1,19 +1,19 @@
 ---
-title: Элементы
+title: Members
 description: Описывает текущее состояние установки teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ca42b56e2c374dbaea1df676e3a84569b192e78c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 82e46faccd2a91a82ba4fb7352391f58a42c33a9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937175"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517276"
 ---
 #<a name="teamsappinstalledstate-enum-type"></a>Тип перечисления teamsAppInstalledState
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Описывает текущее состояние установки [teamsApp](teamsapp.md).
 
@@ -21,7 +21,15 @@ ms.locfileid: "27937175"
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|notInstalled|0|Приложение не установлено в группу.|
-|установлен|1|Приложение устанавливается в обычном режиме.|
-|installedAndHidden|2|Приложение установлен, но скрыты.|
-|installedAndPermanent|3|Приложение устанавливается без возможности восстановления и не могут быть удалены.|
+|notInstalled|(0)|Приложение не установлено в группу.|
+|Installed|$1|Приложение устанавливается в обычном режиме.|
+|installedAndHidden|–2|Приложение установлен, но скрыты.|
+|installedAndPermanent|–3|Приложение устанавливается без возможности восстановления и не могут быть удалены.|
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsappinstalledstate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

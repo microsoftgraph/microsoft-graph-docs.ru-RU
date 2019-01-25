@@ -2,16 +2,16 @@
 title: Обновление approleassignment
 description: Обновление свойства объекта approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: 3d0f95e5413354a28e7b9b26e9b440f147c45931
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27809634"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527922"
 ---
 # <a name="update-approleassignment"></a>Обновление approleassignment
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойства объекта approleassignment.
 ## <a name="permissions"></a>Разрешения
@@ -35,17 +35,17 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|Время создания разрешений.|
 |id|Guid|Идентификатор роли, которая была назначена субъекта.  Эта роль должны быть объявлены с приложения ресурсов конечного **Ид_ресурса** в своем свойстве **appRoles** . Где ресурса не объявляет никаких разрешений, должен быть указан идентификатор по умолчанию (нулевое значение GUID).                            **Примечание.** Значение NULL не допускается.            |
-|principalDisplayName|Строка|Отображаемое имя субъекта, который был предоставлен доступ.|
+|principalDisplayName|String|Отображаемое имя субъекта, который был предоставлен доступ.|
 |principalId|Guid|Уникальный идентификатор (**objectId**) для участника, которому предоставляется доступ.                            **Примечания**: обязательные.            |
-|principalType|Строка|Тип субъекта.  Это может быть «User», «Группы» или «ServicePrincipal».|
-|resourceDisplayName|Строка|Отображаемое имя ресурса, к которому назначения.|
+|principalType|String|Тип субъекта.  Это может быть «User», «Группы» или «ServicePrincipal».|
+|resourceDisplayName|String|Отображаемое имя ресурса, к которому назначения.|
 |resourceId|Guid|Уникальный идентификатор (**objectId**) целевой ресурс, для которого было выполнено назначение (участников-служб).|
 
 ## <a name="response"></a>Ответ
@@ -72,7 +72,8 @@ Content-length: 233
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -95,10 +96,15 @@ Content-length: 253
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update approleassignment",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/approleassignment-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: 'reportRoot: getSkypeForBusinessDeviceUsageUserDetail'
 description: Получите сведения об использовании устройств со Skype для бизнеса с разбивкой по пользователям.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: b5aa997c6127d0dd0748898ef76d743ab08499bd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8162acdbfc1cb8387e4920bb12cb15be4ef549f9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967569"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526818"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusageuserdetail"></a>reportRoot: getSkypeForBusinessDeviceUsageUserDetail
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите сведения об использовании устройств со Skype для бизнеса с разбивкой по пользователям.
 
@@ -37,7 +37,7 @@ GET /reports/getSkypeForBusinessDeviceUsageUserDetail(period='{period_value}')
 GET /reports/getSkypeForBusinessDeviceUsageUserDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите один из следующих параметров и действительное значение.
 
@@ -56,7 +56,7 @@ GET /reports/getSkypeForBusinessDeviceUsageUserDetail(date={date_value})
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 ### <a name="csv"></a>CSV
 
@@ -101,7 +101,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessDeviceUsageUserDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 
@@ -145,7 +145,7 @@ Report Refresh Date,User Principal Name,Last Activity Date,Used Windows,Used Win
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessDeviceUsageUserDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -179,3 +179,11 @@ Content-Length: 356
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getskypeforbusinessdeviceusageuserdetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

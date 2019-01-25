@@ -4,16 +4,16 @@ description: Описание варианта использования спе
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 02a2272ee085d0c265adc9ce2e3f1c598e45be21
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9e19c6b2242256f0d1b7a23c89aa07787bfc1913
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930287"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522653"
 ---
 # <a name="teamspecialization-enum-type"></a>Тип перечисления teamSpecialization
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Указывает, будет ли [группы](../resources/team.md) для конкретного варианта использования. Специализация каждой [группы](../resources/team.md) имеет доступ к уникальное поведение и каждый раз, нацелено на пример его использования. Значение по умолчанию — «none».
 
@@ -21,5 +21,13 @@ ms.locfileid: "27930287"
 
 | Элемент             | Значение | Описание                                                                |
 | :----------------- | :---- | :------------------------------------------------------------------------- |
-| Нет               | 0     | Тип для группы, которая предоставляет опыт стандартной рабочей группы по умолчанию.          |
+| none               | (0)     | Тип для группы, которая предоставляет опыт стандартной рабочей группы по умолчанию.          |
 | unknownFutureValue | 7     | Sentinel значение зарезервировано для выполнения будущее расширение перечисления. |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamspecialization.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

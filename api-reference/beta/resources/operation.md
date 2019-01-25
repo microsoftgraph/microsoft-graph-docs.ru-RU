@@ -2,16 +2,16 @@
 title: Тип ресурса операции
 description: Состояние выполнения длительной операции.
 localization_priority: Normal
-ms.openlocfilehash: 760aeedb67b987fc22a5eef969e2214f6dfd05b6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3ad9848387dab2de928f7ace2fa4b905720be615
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830347"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520188"
 ---
 # <a name="operation-resource-type"></a>Тип ресурса операции
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Состояние выполнения длительной операции.
 
@@ -24,11 +24,11 @@ ms.locfileid: "27830347"
 | Свойство           | Тип            | Описание                                                                     |
 | :----------------- | :-------------- | :-------------------------------------------------------------------------------|
 | createdDateTime    | DateTimeOffset  | Время начала операции.                                                |
-| id                 | Строка          | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
+| id                 | String          | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
 | lastActionDateTime | DateTimeOffset  | Время последнего действия операции.                                   |
-| status             | Строка          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
+| status             | String          | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -68,10 +68,15 @@ ms.locfileid: "27830347"
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/operation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

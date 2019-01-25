@@ -4,21 +4,21 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Normal
-ms.openlocfilehash: 34798437f1bf27c68c390b0f04618985de5cecf3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6a5a0af9c95900232ff87aa7aedb731a83a91cc5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843318"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518851"
 ---
-# <a name="permission-resource-type"></a>Тип ресурса разрешения
+# <a name="permission-resource-type"></a>Тип ресурса Permission
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Разрешение** ресурсов предоставляет сведения о общего доступа разрешение дается для [driveItem](driveitem.md) ресурсов.
+Ресурс **Permission** предоставляет сведения о разрешении на совместный доступ, предоставленном для ресурса [DriveItem](driveitem.md).
 
 Разрешения на совместный доступ могут принимать самые различные формы.
-**Разрешение** ресурсов представляет этих различных форм через аспектов для ресурса.
+Ресурс **Permission** представляет эти формы с помощью аспектов ресурса.
 
 >**Примечание:** OneDrive для бизнеса и SharePoint библиотек документов не возвращают свойство **inheritedFrom** .
 
@@ -62,16 +62,16 @@ ms.locfileid: "27843318"
 
 | Свойство            | Тип                        | Описание
 |:--------------------|:----------------------------|:-------------------------
-| id                  | Строка                      | Уникальный идентификатор разрешения среди всех разрешений для элемента. Только для чтения.
+| id                  | String                      | Уникальный идентификатор разрешения среди всех разрешений для элемента. Только для чтения.
 | grantedTo           | [IdentitySet][]             | Для разрешений типа user: сведения о пользователях и приложениях для этого разрешения. Только для чтения.
 | grantedToIdentities | Коллекции ([IdentitySet][]) | Для разрешения ссылок типа сведения о пользователях, которым были предоставлены разрешения. Только для чтения.
 | invitation          | [SharingInvitation][]       | Сведения обо всех сопоставленных приглашениях к совместному использованию для данного разрешения. Только для чтения.
 | inheritedFrom       | [ItemReference][]           | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
 | ссылка                | [SharingLink][]             | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
 | roles               | Collection(String)          | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
-| shareId             | Строка                      | Уникальный маркер, который можно использовать для доступа к этой общий элемент через **[общий API][]**. Только для чтения.
-| expirationDateTime  | DateTimeOffset              | В формате гггг-мм-Ддвчч DateTimeOffset указывает время истечения срока действия разрешения. DateTime.MinValue указывает на наличие задано без ограничения срока действия для этого разрешения. Необязательное.
-| hasPassword         | Логический                     | Указывает, будет ли для этого разрешения, задать пароль, отображаются в ответ. Необязательный и только для чтения и только личные OneDrive.
+| shareId             | String                      | Уникальный токен, с помощью которого можно получить доступ к общему элементу через **API [shares][]**. Только для чтения.
+| expirationDateTime  | DateTimeOffset              | В формате гггг-мм-Ддвчч DateTimeOffset указывает время истечения срока действия разрешения. DateTime.MinValue указывает на наличие задано без ограничения срока действия для этого разрешения. Необязательный параметр.
+| HasPassword         | Логическое                     | Указывает, будет ли для этого разрешения, задать пароль, отображаются в ответ. Необязательный и только для чтения и только личные OneDrive.
 
 ### <a name="roles-enumeration-values"></a>Значения перечисления роли
 
@@ -99,7 +99,7 @@ ms.locfileid: "27843318"
 
 Ниже приведены некоторые примеры того, общий доступ к ссылки.
 
-### <a name="view-link"></a>Просмотр ссылки
+### <a name="view-link"></a>Ссылка для просмотра
 
 В этом представлении ссылку предоставляет доступ только для чтения всем пользователям, с помощью ссылки.
 
@@ -232,7 +232,7 @@ ms.locfileid: "27843318"
 
 [команду createLink]: ../api/driveitem-createlink.md
 [IdentitySet]: identityset.md
-[приглашение]: ../api/driveitem-invite.md
+[Приглашение]: ../api/driveitem-invite.md
 [ItemReference]: itemreference.md
 [API общих папок]: ../api/shares-get.md
 [SharingInvitation]: sharinginvitation.md
@@ -240,10 +240,15 @@ ms.locfileid: "27843318"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The permission object provides information about permissions and roles and sharing information.",
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
-  "tocPath": "Resources/Permission"
-} -->
+  "tocPath": "Resources/Permission",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

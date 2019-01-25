@@ -5,18 +5,18 @@ ms.date: 09/10/2017
 title: Загрузите предыдущей версии
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b0d8125f86459caa0fd9fd863a1a4f280e0ad89e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980113"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528020"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Скачивание содержимого ресурса DriveItemVersion (ознакомительная версия)
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение содержимого части определенной версии [driveItem](../resources/driveitem.md). 
+В этой статье рассказывается, как получить содержимое определенной версии ресурса [DriveItem](../resources/driveitem.md). 
 
 >**Примечание:** Получение содержимого текущей версии не поддерживается. Используйте [driveItem контента конечной точки](driveitem-get-content.md).
 
@@ -43,7 +43,7 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Возвращает отклик `302 Found`, который выполняет перенаправление на URL-адрес, прошедший предварительную проверку подлинности и предназначенный для скачивания байтов файла.
 
@@ -81,10 +81,15 @@ OneDrive не сохраняет полные метаданные для пре
 
 Если ваше приложение получает список доступных версий файла, [driveItemVersion](../resources/driveitemversion.md) ресурсов возвращается, предоставляющий доступные сведения об определенной версии.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitemversion-get-contents.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: 'privilegedRoleAssignment: makeEligible'
 description: Сделайте назначения ролей как подходящими. Если назначения ролей подходящими перед выполнением звонка, не выполняет никаких действий. Если постоянное назначение ролей и инициатора запроса отличается от конечного пользователя, становится доступным назначения роли и роли будут отключены для конечного пользователя. Если инициатора запроса конечного пользователя и роль имеет права администратора безопасности или привилегированной роль администратора, роль будет активировать истечение срока действия по умолчанию.
 localization_priority: Normal
-ms.openlocfilehash: 90f606ed1550f6341251e5185e620c29838a9ac9
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 54260da3f69819a1f7a351e072f8af851f0e3d3a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27822591"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527238"
 ---
 # <a name="privilegedroleassignment-makeeligible"></a>privilegedRoleAssignment: makeEligible
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сделайте назначения ролей как подходящими. Если назначения ролей подходящими перед выполнением звонка, не выполняет никаких действий. Если постоянное назначение ролей и инициатора запроса отличается от конечного пользователя, становится доступным назначения роли и роли будут отключены для конечного пользователя. Если инициатора запроса конечного пользователя и роль имеет права администратора безопасности или привилегированной роль администратора, роль будет активировать истечение срока действия по умолчанию.
 
@@ -36,7 +36,7 @@ POST /privilegedRoleAssignments/{id}/makeEligible
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -57,7 +57,8 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}/makeEligibl
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,10 +81,15 @@ Content-length: 184
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleAssignment: makeEligible",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignment-makeeligible.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

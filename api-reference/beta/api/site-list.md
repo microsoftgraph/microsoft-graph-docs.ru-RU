@@ -3,16 +3,16 @@ title: Перечисление сайтов
 description: Список [] доступных [сайтов] в организации, соответствующих указанным критериям фильтра и запроса.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 05c3480181126d528657d0efacde97051a178bfd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939569"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520342"
 ---
 # <a name="enumerate-sites"></a>Перечисление сайтов
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Список доступных [сайтов][] в организации, которая соответствуют указанным отбора и запроса.
 
@@ -24,7 +24,7 @@ ms.locfileid: "27939569"
 
 Кроме того могут используйте запрос **[поиска][]** семейства сайтов «/ sites» для поиска сайты, соответствующие заданным ключевые слова.
 
-[Поиск]: site-search.md
+[Search]: site-search.md
 [sites]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
@@ -91,10 +91,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Site/List sites"
-} -->
+  "tocPath": "Site/List sites",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

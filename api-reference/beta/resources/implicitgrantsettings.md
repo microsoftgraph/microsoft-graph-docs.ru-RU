@@ -2,16 +2,16 @@
 title: Тип ресурса implicitGrantSettings
 description: Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения. Отдельные свойства доступны для запроса маркеры идентификатор и доступа как часть неявных потока. Чтобы включить неявных поток, по крайней мере одного из следующих свойств необходимо установить значение true.
 localization_priority: Normal
-ms.openlocfilehash: 93a54ac0c0e4c6c32ebb99c9747d44d75f98af07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6714b9448f2e49419e41fa62822498ceaa232170
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834267"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520566"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>Тип ресурса implicitGrantSettings
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения. Отдельные свойства доступны для запроса маркеры идентификатор и доступа как часть неявных потока. Чтобы включить неявных поток, по крайней мере одного из следующих свойств необходимо установить значение true.
 
@@ -19,8 +19,8 @@ ms.locfileid: "27834267"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-|enableIdTokenIssuance| Логический | Разрешение запроса с помощью поток неявных OAuth 2.0 маркера Идентификации данного веб-приложения.|
-|enableAccessTokenIssuance| Логический | Разрешение запроса маркер доступа с помощью поток неявных OAuth 2.0 этого веб-приложения.|
+|enableIdTokenIssuance| Логическое | Разрешение запроса с помощью поток неявных OAuth 2.0 маркера Идентификации данного веб-приложения.|
+|enableAccessTokenIssuance| Логическое | Разрешение запроса маркер доступа с помощью поток неявных OAuth 2.0 этого веб-приложения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -32,3 +32,11 @@ ms.locfileid: "27834267"
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/implicitgrantsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 641b4f5b8d78a38324b7b19c9136e8a53532a9d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 22bf6b1101be9d60ff350e0b04f7627e2b8fb529
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979938"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524032"
 ---
 # <a name="sharepointids-resource-type"></a>Тип ресурса SharePointIds
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **SharePointIds** — это единая структура, объединяющая различные идентификаторы элемента, хранящегося на сайте SharePoint или в OneDrive для бизнеса.
 
@@ -48,7 +48,7 @@ ms.locfileid: "27979938"
 |:-----------------|:-------------|:-------------------------------------------
 | listId           | string       | Уникальный идентификатор (GUID) списка, содержащего элемент, в SharePoint.
 | listItemId       | string       | Целочисленный идентификатор элемента в списке.
-| listItemUniqueId | строка       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.
+| listItemUniqueId | string       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.
 | siteId           | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
 | siteUrl          | string (url) | URL-адрес SharePoint для сайта, содержащего элемент.
 | tenantId         | string       | Уникальный идентификатор (guid) аренды.
@@ -62,10 +62,15 @@ ms.locfileid: "27979938"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The SharepointIds facet provides Sharepoint ids associated with an item.",
   "keywords": "item, unique, id, csom, facet",
   "section": "documentation",
-  "tocPath": "Facets/SharepointIds"
-} -->
+  "tocPath": "Facets/SharepointIds",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sharepointids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

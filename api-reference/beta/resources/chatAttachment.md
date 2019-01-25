@@ -2,16 +2,16 @@
 title: Тип ресурса chatMessageAttachment
 description: Представляет вложение к сущностям сообщения чата.
 localization_priority: Normal
-ms.openlocfilehash: 83574a7dbbb35f9c8b95474fac1154154f413470
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8163f94f7f891d76b8f0f1961b8c5f72e3b2e368
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805560"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526125"
 ---
 # <a name="chatmessageattachment-resource-type"></a>Тип ресурса chatMessageAttachment
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет вложение к сущностям сообщения чата.
 
@@ -20,15 +20,15 @@ ms.locfileid: "27805560"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка| Только для чтения. Уникальный идентификатор вложения|
+|id|string| Только для чтения. Уникальный идентификатор вложения|
 |contentType| Строковый | Тип носителя содержимого вложения. Он может принимать следующие значения: <br><ul><li>Справочник по: вложение представляет ссылку на другой файл. Заполнение contentURL со ссылкой на объект<br></li><li>файл: необработанные файла вложения. Заполните поля contenturl с использованием кодировки base64 файла данных: формат<br></li><li>изображение /: тип "изображение" с типом указываемое изображение: изображение/png, изображение/jpeg, изображения и gif. Заполните поля contentUrl с использованием кодировки base64 файла данных: формат<br></li><li>видео /: тип видео с помощью указанного формата. Пример: видео/MP4 (en). Заполните поля contentUrl с использованием кодировки base64 файла данных: формат<br></li><li>аудио /: тип звука с помощью указанного формата. Пример: аудио/wmw. Заполните поля contentUrl с использованием кодировки base64 файла данных: формат<br></li><li>Тип приложения/карты: тип вложения с типом карточки указании точное карточки формат для использования карты полнофункциональные. Задайте содержимого в формате json карточки. Поддерживаются для типа карты следующие значения:<br><ul><li>Application/vnd.Microsoft.Card.Adaptive: расширенный карточки, которое может содержать любое сочетание текста, речи, изображений,, кнопки и поля ввода. Присвойте свойству контента на объект AdaptiveCard.</li><li>Application/vnd.Microsoft.Card.Animation: расширенный карточку для воспроизведения анимации. Присвойте свойству контента для AnimationCardobject.</li><li>Application/vnd.Microsoft.Card.Audio: расширенный карточку для воспроизведения звуковых файлов. Присвойте свойству контента на объект AudioCard.</li><li>Application/vnd.Microsoft.Card.Video: расширенный карточку для воспроизведения видео. Присвойте свойству контента в объект VideoCard.</li><li>Application/vnd.Microsoft.Card.Hero: герой карточки. Присвойте свойству контента в объект HeroCard.</li><li>Application/vnd.Microsoft.Card.Thumbnail: эскиз карточки. Присвойте свойству контента в объект ThumbnailCard.</li><li>Application/vnd.Microsoft.com.Card.Receipt: поступления карточки. Присвойте свойству контента в объект ReceiptCard.</li><li>Application/vnd.Microsoft.com.Card.signin: карточки входа пользователя. Присвойте свойству контента в объект SignInCard.</ul></ul>|
-|contentUrl|строка|URL-адрес для содержимого вложения. Поддерживаемые протоколы: http, https, файлов и данных|
+|contentUrl|string|URL-адрес для содержимого вложения. Поддерживаемые протоколы: http, https, файлов и данных|
 |content|string|Содержимое вложения. Если вложение — это полнофункциональный карточки, присвойте свойству объект расширенными возможностями карточки. Это свойство и contentUrl являются взаимоисключающими|
-|name|строка|Имя вложения|
+|name|string|Имя вложения|
 |thumbnailUrl| string |URL-адрес для эскиза, канал можно использовать, если он поддерживает использование альтернативных меньшего размера формы, содержимого или contentUrl. Например если вы contentType для приложения и word, поэтому значение contentUrl расположение документа Word, можно включить эскизное изображение, представляющий документ. Канал может отображать вместо документа его эскизное изображение. При нажатии кнопки изображения канала будет откройте документ.|
 
 ## <a name="json-representation"></a>Представление JSON
- Ниже представлена JSON ресурса
+ Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -55,10 +55,15 @@ ms.locfileid: "27805560"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "chat attachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chatAttachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

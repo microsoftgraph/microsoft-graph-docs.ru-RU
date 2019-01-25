@@ -2,16 +2,16 @@
 title: 'servicePrincipal: дельты'
 description: Get вновь созданных, обновлении или удалении субъектов-служб без необходимости выполнения полного чтения коллекции всей ресурсов. Для получения дополнительных сведений в разделе с помощью запроса дельты.
 localization_priority: Normal
-ms.openlocfilehash: f1801f98950f132e8fdc94770d616fc2e523a2de
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed0cf279d1d076e324d24e1774734e9aa14a6b34
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27868294"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520076"
 ---
 # <a name="serviceprincipal-delta"></a>servicePrincipal: дельты
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get вновь созданных, обновлении или удалении субъектов-служб без необходимости выполнения полного чтения коллекции всей ресурсов. Для получения дополнительных сведений в разделе [С помощью запроса дельты](/graph/delta-query-overview) .
 
@@ -41,7 +41,7 @@ GET /servicePrincipals/delta
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | строка | [Состояние токен](/graph/delta-query-overview) , возвращенный в `deltaLink` URL-адрес предыдущей вызов функции **дельты** для одной коллекции ресурсов, указывающее, завершения этого цикла отслеживания изменений. Сохранить и применить весь `deltaLink` URL-адрес, включая этот маркер в первый запрос следующего цикла отслеживания изменений для этой коллекции.|
+| $deltatoken | string | [Состояние токен](/graph/delta-query-overview) , возвращенный в `deltaLink` URL-адрес предыдущей вызов функции **дельты** для одной коллекции ресурсов, указывающее, завершения этого цикла отслеживания изменений. Сохранить и применить весь `deltaLink` URL-адрес, включая этот маркер в первый запрос следующего цикла отслеживания изменений для этой коллекции.|
 | $skiptoken | строка | [Состояние токен](/graph/delta-query-overview) , возвращенный в `nextLink` URL-адрес предыдущей вызов функции **дельты** , показывающее, есть дополнительные изменения в отслеживаются в одном семействе ресурсов. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -60,7 +60,7 @@ GET /servicePrincipals/delta
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ### <a name="response"></a>Ответ
@@ -126,10 +126,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/serviceprincipal-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

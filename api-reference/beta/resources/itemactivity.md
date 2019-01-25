@@ -2,21 +2,21 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: ItemActivity
+title: itemActivity
 localization_priority: Normal
-ms.openlocfilehash: a29bdad0ae5e06d3d1b55f1fb7ceb630bec1b564
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27819672"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517297"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса ItemActivity
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **ItemActivity** предоставляет сведения о действиях, выполненных с элементом или в контейнере.
-В настоящее время он доступен только в SharePoint и OneDrive для бизнеса.
+В настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -45,7 +45,7 @@ ms.locfileid: "27819672"
 
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
-| id       | строка                  | Уникальный идентификатор действия. Только для чтения.
+| id       | string                  | Уникальный идентификатор действия. Только для чтения.
 | Access   | [accessAction][]        | Обращения к элемента.
 | action   | [itemActionSet][]       | Сведения о выполненном действии. Только для чтения.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
@@ -102,10 +102,15 @@ ms.locfileid: "27819672"
 
 В настоящее время ресурс **ItemActivity** доступен только в SharePoint и OneDrive для бизнеса.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivity object provides information about an activity that took place on an item.",
   "keywords": "activities,activity,action",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivity"
-} -->
+  "tocPath": "Resources/ItemActivity",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

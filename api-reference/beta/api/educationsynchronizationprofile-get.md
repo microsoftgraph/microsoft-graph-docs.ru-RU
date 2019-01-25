@@ -4,16 +4,16 @@ description: Извлечение профиля синхронизации да
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 0c4d06583b7ba892cf2ae4bddd8de16cd8612082
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47757956db9e93bb13f4167ef330c7b79d7851b1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406334"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530183"
 ---
 # <a name="get-an-educationsynchronizationprofile"></a>Получение educationSynchronizationProfile
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение в школе данных [синхронизации профилей](../resources/educationsynchronizationprofile.md) на основе идентификатора клиента.
 
@@ -23,7 +23,7 @@ ms.locfileid: "29406334"
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| EduAdministration.Read.All EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,7 +39,7 @@ GET /synchronizationProfiles/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -53,7 +53,7 @@ GET /synchronizationProfiles/{id}
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -145,3 +145,11 @@ Content-length: 2487
         ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

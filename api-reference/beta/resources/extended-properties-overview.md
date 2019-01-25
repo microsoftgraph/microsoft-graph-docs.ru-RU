@@ -4,16 +4,16 @@ description: 'Разрешить хранение пользовательски
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 4aae656b996fb9d3a2acdc2ac1b77602e32d2073
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ead40279547fa838b7224a25c3605d0825c3f797
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966666"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517997"
 ---
 # <a name="outlook-extended-properties-overview"></a>Общие сведения о расширенных свойствах Outlook
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Расширенные свойства позволяют хранить пользовательские данные и специально служат в качестве резервного механизма для приложений, чтобы получать доступ к пользовательским данным для свойств Outlook MAPI, когда эти свойства _еще не представлены в метаданных API Microsoft Graph_. Можно использовать расширенные свойства API REST, чтобы хранить или получать такие пользовательские данные в следующих пользовательских ресурсах:
 
@@ -23,7 +23,7 @@ ms.locfileid: "27966666"
 - [calendar](../resources/calendar.md);
 - [contact](../resources/contact.md);
 - [contactFolder](../resources/contactfolder.md).
-- [Задачи Outlook](../resources/outlooktask.md)
+- [Задача Outlook](../resources/outlooktask.md)
 - [Папки задач Outlook](../resources/outlooktaskfolder.md) 
 
 Или в следующих ресурсах группы Office 365:
@@ -47,7 +47,7 @@ ms.locfileid: "27966666"
 **Примечание.** Невозможно использовать API REST для получения всех расширенных свойств конкретного экземпляра в одном вызове.
   
 
-### <a name="id-formats"></a>форматы идентификатора
+### <a name="id-formats"></a>Форматы идентификаторов
 
 **Идентификатор** расширенного свойства можно указать в одном из трех форматах:
 
@@ -94,3 +94,11 @@ ms.locfileid: "27966666"
 - [Создание расширенного свойства в новом или существующем экземпляре ресурса](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`](../api/multivaluelegacyextendedproperty-get.md)
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/extended-properties-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Ресурс **plannerPlan** представляет план в O
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: b5d95b1bfab7404007c3139833e54f155c10d9aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f37f6ea08f2951256e2d7f94cf9abad7e8ac60b2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529553"
 ---
 # <a name="plannerplan-resource-type"></a>Тип ресурса plannerPlan
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **plannerPlan** представляет план в Office 365. План может принадлежать [группе](group.md) и содержит коллекцию [plannerTasks](plannertask.md). Он также может иметь коллекцию [plannerBuckets](plannerbucket.md). Каждый объект плана имеет [сведения о](plannerplandetails.md) объекта, которое может содержать дополнительные сведения о плане. Дополнительные сведения о связях между группами, планы и задачи можно [Планировщик работы](planner-overview.md).
 
@@ -23,10 +23,10 @@ ms.locfileid: "27950524"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение plannerPlan](../api/plannerplan-get.md) | [plannerPlan](plannerplan.md) |Считывание свойств и связей объекта **plannerPlan**.|
-|[Перечисление сегментов](../api/plannerplan-list-buckets.md) |Коллекция объектов [plannerBucket](plannerbucket.md)| Получение коллекции объектов **plannerBucket**.|
+|Получение plannerPlan | [plannerPlan](plannerplan.md) |Считывание свойств и связей объекта plannerPlan.|
+|Перечисление сегментов |Коллекция объектов [plannerBucket](plannerbucket.md)| Получение коллекции объектов plannerBucket.|
 |[Перечисление задач](../api/plannerplan-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[обновление](../api/plannerplan-update.md). | [plannerPlan](plannerplan.md) |Обновление объекта **plannerPlan**. |
+|[Update](../api/plannerplan-update.md) | [plannerPlan](plannerplan.md) |Обновление объекта plannerPlan. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -38,7 +38,7 @@ ms.locfileid: "27950524"
 |createdBy|[identitySet](identityset.md)|Только для чтения. Пользователь, создавший этот план.|
 |контекстов|[plannerPlanContextCollection](plannerplancontextcollection.md);| Только для чтения. Дополнительные пользовательских интерфейсов, в которых используется этот план, представленные в виде [plannerPlanContext](plannerplancontext.md) записей.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |buckets|Коллекция объектов [plannerBucket](plannerbucket.md)| Только для чтения. Допускает значение null. Коллекция контейнеров в плане.|
@@ -82,10 +82,15 @@ ms.locfileid: "27950524"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "plannerPlan resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/plannerplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

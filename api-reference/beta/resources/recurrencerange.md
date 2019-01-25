@@ -2,16 +2,16 @@
 title: Тип ресурса recurrenceRange
 description: 'Описывает диапазон дат, согласно которому повторяется событие. '
 localization_priority: Normal
-ms.openlocfilehash: 7e45c60e9ea0669f2a3f11313ab54723a2493762
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: cee5a06d8f76264cd7c98924c532c8f864cab87d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853588"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518970"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Описывает диапазон дат, согласно которому повторяется [событие](event.md). 
 
@@ -22,7 +22,7 @@ ms.locfileid: "27853588"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|endDate|Date|Дата, с которой перестает применяться расписание повторения. В зависимости от того, каково расписание повторения события, последний экземпляр собрания может приходиться на другую дату. Обязательное, если для **type** задано значение `endDate`.|
+|endDate|дата;|Дата, с которой перестает применяться расписание повторения. В зависимости от того, каково расписание повторения события, последний экземпляр собрания может приходиться на другую дату. Обязательное, если для **type** задано значение `endDate`.|
 |numberOfOccurrences|Int32|Количество повторений события. Обязательное свойство, которое должно быть положительным, если для **type** задано значение `numbered`.|
 |recurrenceTimeZone|String |Часовой пояс для свойств **startDate** и **endDate**. Необязательное. Если это свойство не задано, используется часовой пояс события.|
 |startDate|Date|Дата, с которой начинает применяться расписание повторения. В зависимости от того, каково расписание повторения события, первый экземпляр собрания может приходиться на эту или более позднюю дату. Должно быть задано то же значение, что и для свойства **start** повторяющегося [события](event.md). Обязательное.|
@@ -61,14 +61,16 @@ ms.locfileid: "27853588"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "recurrenceRange resource",
   "keywords": "",
   "section": "documentation",
+  "tocPath": "",
   "suppressions": [
-      "Warning: /api-reference/beta/resources/recurrencerange.md:
-      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
-  ],
-  "tocPath": ""
-}-->
+    "Warning: /api-reference/beta/resources/recurrencerange.md:\r\n      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |",
+    "Error: /api-reference/beta/resources/recurrencerange.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

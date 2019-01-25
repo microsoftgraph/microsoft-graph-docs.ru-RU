@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: fieldValueSet
 localization_priority: Normal
-ms.openlocfilehash: 7108c47aecf842f31382ad170fbb058a1aabb39d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 6bfd882cd799806548831919af7eda9ba6505094
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815661"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520202"
 ---
 # <a name="fieldvalueset-resource"></a>Ресурс fieldValueSet
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет значения столбца в ресурсе [listItem](listitem.md).
 
@@ -52,10 +52,15 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expan
 
 В одном запросе вы можете запросить до 12 полей подстановки, а также любое количество "обычных" полей.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/FieldValueSet"
-} -->
+  "tocPath": "Resources/FieldValueSet",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/fieldvalueset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

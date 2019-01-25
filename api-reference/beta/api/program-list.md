@@ -2,16 +2,16 @@
 title: Список программ
 description: В Azure AD доступ к функции проверки, список всех объектов программы.
 localization_priority: Normal
-ms.openlocfilehash: 9ea71e5377b7dcfe7ca6de7cfaf221e2c6dfcd98
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 71073f2469087e92b43823e89881406fb17a666b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876295"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526979"
 ---
 # <a name="list-programs"></a>Список программ
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В функции [доступа дается обзор](../resources/accessreviews-root.md) Azure AD список всех объектов [программы](../resources/program.md) .
 ## <a name="permissions"></a>Разрешения
@@ -31,9 +31,9 @@ GET /programs
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -86,10 +86,15 @@ Content-type: application/json
 |[Список programControls программы](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) коллекции|    Получите коллекцию элементов управления из программы.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List programs",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

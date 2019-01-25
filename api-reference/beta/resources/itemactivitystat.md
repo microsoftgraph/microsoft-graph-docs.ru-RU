@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemActivityStat
 localization_priority: Normal
-ms.openlocfilehash: d0917d0100d33abee1095e2a7d06a4732d382937
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1362116c0dbe997eda941cb790e00e9ddb078ae4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854252"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517633"
 ---
 # <a name="itemactivitystat-resource-type"></a>Тип ресурса itemActivityStat
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **itemActivityStat** содержит сведения о действиях, выполняемых в течение интервала времени.
 
@@ -46,7 +46,7 @@ ms.locfileid: "27854252"
 | Свойство         | Тип                    | Описание
 |:-----------------|:------------------------|:----------------------------------------
 | incompleteData   | [incompleteData][]      | Указывает, что Статистика ожидания основаны на неполные данные. Только для чтения.
-| isTrending       | Логический                 | Указывает, является ли элемент «прибора.» Только для чтения.
+| isTrending       | Логическое                 | Указывает, является ли элемент «прибора.» Только для чтения.
 | startDateTime    | DateTimeOffset          | При запуске интервала. Только для чтения.
 | endDateTime      | DateTimeOffset          | Окончания интервала. Только для чтения.
 | create           | [itemActionStat][]      | Сведения о действия **Создание** ожидания. Только для чтения.
@@ -66,12 +66,17 @@ ms.locfileid: "27854252"
 
 [itemActivity]: itemactivity.md
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemActivityStat object provides information about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemActivityStat"
-} -->
+  "tocPath": "Resources/ItemActivityStat",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemactivitystat.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Представляет запись SRV, добавленную �
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: db8b64397bd8d2904567555759a40186f740a1ed
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: bdbc2246340d5cd15529dd05101567bc04d1e607
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962816"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524480"
 ---
 # <a name="domaindnssrvrecord-resource-type"></a>Тип ресурса domainDnsSrvRecord
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет запись SRV, добавленную в файл зоны DNS определенного домена в клиенте. Наследуется от объекта [DomainDnsRecord](domaindnsrecord.md).
 
@@ -23,7 +23,7 @@ ms.locfileid: "27962816"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
+|id|String| Уникальный идентификатор, назначенный этому объекту. Не допускает значения null, только для чтения.|
 |isOptional|Boolean| Если указано значение false, для правильной работы Microsoft Online Services с доменом пользователь должен настроить запись SRV на узле DNS. |
 |label|String| Значение, используемое при настройке свойства *name* записи SRV на узле DNS. |
 |nameTarget|String| Значение, используемое при настройке свойства *Target* записи SRV на узле DNS. |
@@ -32,7 +32,7 @@ ms.locfileid: "27962816"
 |protocol|String| Значение, используемое при настройке свойства *protocol* для записи SRV на узле DNS. |
 |recordType|String|  Тип записи DNS. Это свойство всегда имеет значение *Srv*. Ключ. |
 |service|String| Значение, используемое при настройке свойства *service* для записи SRV на узле DNS. |
-|supportedService|String| Служба или компонент Microsoft Online Services, зависящие от этой записи типа SRV.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*. |
+|supportedService|Строка| Служба или компонент Microsoft Online Services, зависящие от этой записи типа SRV.</br></br>Возможные значения: **null**, *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*. |
 |ttl|Int32| Значение, используемое при настройке свойства *ttl* (срока жизни) для записи SRV на узле DNS. Не допускает значения null. |
 |weight|Int32| Значение, используемое при настройке свойства *weight* записи SRV на узле DNS. |
 
@@ -72,10 +72,15 @@ ms.locfileid: "27962816"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsSrvRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/domaindnssrvrecord.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

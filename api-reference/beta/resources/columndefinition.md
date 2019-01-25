@@ -4,18 +4,18 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
-ms.openlocfilehash: 5db835b9720f9fa711d683dd505e8325b27d79d8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: f4e0c3002068ec7dc8ee280b8e8143af621f178c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844494"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528937"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлена JSON columnDefinition ресурса.
 
@@ -61,13 +61,13 @@ ms.locfileid: "27844494"
 
 | Имя свойства           | Тип    | Описание
 |:------------------------|:--------|:-----------------------------------------
-| **columnGroup**         | строка  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.
-| **description**         | строка  | Описание столбца, которое видит пользователь.
+| **columnGroup**         | string  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.
+| **description**         | string  | Описание столбца, которое видит пользователь.
 | **displayName**         | строка  | Имя столбца, которое видит пользователь.
-| **enforceUniqueValues** | логический | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
-| **hidden**              | логический | Указывает, отображается ли столбец в пользовательском интерфейсе.
-| **id**                  | строка  | Уникальный идентификатор столбца.
-| **indexed**             | логический | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
+| **enforceUniqueValues** | boolean | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
+| **hidden**              | boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.
+| **id**                  | string  | Уникальный идентификатор столбца.
+| **indexed**             | boolean | Указывает, можно ли использовать значения столбцов для сортировки и поиска.
 | **name**                | строка  | Используемое в API имя столбца из свойства [fields][] объекта [listItem][]. Имя, которое видит пользователь, указывается в свойстве **displayName**.
 | **readOnly**            | логический    | Указывает, можно ли менять значения в столбце.
 | **required**            | логический | Указывает, является ли значение в столбце обязательным.
@@ -77,13 +77,13 @@ ms.locfileid: "27844494"
 | **currency**      | [currencyColumn][]      | В этом столбце хранятся денежные значения.
 | **dateTime**      | [dateTimeColumn][]      | В этом столбце хранятся значения даты и времени.
 | **defaultValue**  | [defaultColumnValue][]  | Значение по умолчанию для этого столбца.
-| **географическое положение**   | [geolocationColumn][]   | В этом столбце хранятся географического расположения.
+| Географическое положение   | [geolocationColumn][]   | В этом столбце хранятся географического расположения.
 | **lookup**        | [lookupColumn][]        | Данные в этом столбце берутся из другого источника на сайте.
 | **number**        | [numberColumn][]        | В этом столбце хранятся числовые значения.
 | **personOrGroup** | [personOrGroupColumn][] | В этом столбце хранятся значения людей или групп.
 | **text**          | [textColumn][]          | В этом столбце хранятся текстовые значения.
 
->**Примечание:** Эти свойства соответствуют перечисление [SPFieldType][] SharePoint.
+>Примечание. Эти свойства соответствуют перечислению **SPFieldType** в SharePoint.
 Хотя в предыдущей таблице представлены наиболее распространенные типы полей, бета-версии API по-прежнему отсутствует некоторые.
 При использовании этих типов не заполняются никакие аспекты типа столбца, а сам столбец обладает только основными свойствами.
 
@@ -110,10 +110,15 @@ ms.locfileid: "27844494"
 
 [SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ColumnDefinition"
-} -->
+  "tocPath": "Resources/ColumnDefinition",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/columndefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

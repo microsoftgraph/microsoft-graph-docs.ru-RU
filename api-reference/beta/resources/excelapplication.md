@@ -4,16 +4,16 @@ description: Представляет приложение Excel, которое
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 250141ff6c6da3a81a1b3492908bc2e04b5a0605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 48ee13a67d97f9c5c1a96a6ef6e104c5629f4108
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921978"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517619"
 ---
 # <a name="application-resource-type"></a>Тип ресурса приложения
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет приложение Excel, которое управляет книгой.
 
@@ -28,9 +28,9 @@ ms.locfileid: "27921978"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|calculationMode|строка|Возвращает режим вычисления, используемый в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`. Только для чтения.|
+|calculationMode|string|Возвращает режим вычисления, используемый в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`. Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -55,10 +55,15 @@ ms.locfileid: "27921978"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Application resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/excelapplication.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

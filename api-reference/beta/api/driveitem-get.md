@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 977209dba7284bb8f4f1abe5037d229f4a5a34c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f9b159e4686a22b759e2f2a42776df8dafb3a2b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945463"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518109"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение метаданных для [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) по пути в файловой системе или идентификатору.
 
@@ -57,7 +57,7 @@ GET /users/{userId}/drive/root:/{item-path}
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | if-none-match | String | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
@@ -73,7 +73,7 @@ GET /users/{userId}/drive/root:/{item-path}
 GET /me/drive/root
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -109,7 +109,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Дополнительные сведения о возвращении ошибок см. в статье об [откликах с ошибками][error-response].
 
@@ -118,10 +118,15 @@ Content-type: application/json
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
-} -->
+  "tocPath": "Items/Get item",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

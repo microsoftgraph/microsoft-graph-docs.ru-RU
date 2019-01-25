@@ -4,16 +4,16 @@ description: Вычисляемые представление, которое �
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: c40f6ba80a39fb7db3b959bc78f317d86f3de8e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2eef2a9b306984a8ad05bcf8fefca2458d609ab1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921782"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517353"
 ---
 # <a name="list-shared"></a>Список общих
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Вычисляемые представление, которое возвращает список файлов, совместно с пользователем.
 
@@ -57,7 +57,7 @@ GET /users/<id | userPrincipalName>/insights/shared
 | Авторизация  | Bearer {токен}. Обязательный.|
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -74,7 +74,8 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 
 ##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ```http
 {
     "value": [
@@ -116,3 +117,11 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/insights-list-shared.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

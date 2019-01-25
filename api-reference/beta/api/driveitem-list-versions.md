@@ -3,16 +3,16 @@ title: Список версий DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 52df6b0f7e452d358160de886ed61824fd2d48d0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b51982c9aff9f8be8c801b6f0e0fc16e9ff47852
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915727"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518473"
 ---
 # <a name="listing-versions-of-a-driveitem"></a>Список версий DriveItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 В зависимости от того, каковы служба и конфигурация, новую версию можно создавать при каждом изменении или сохранении, создавать вручную или не создавать никогда.
@@ -59,7 +59,7 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Возвращается коллекция версий:
 
@@ -116,10 +116,15 @@ OneDrive не сохраняет полные метаданные для пре
 Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history"
-} -->
+  "tocPath": "Items/Version history",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-list-versions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

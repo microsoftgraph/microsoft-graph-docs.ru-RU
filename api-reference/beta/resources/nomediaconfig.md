@@ -4,16 +4,16 @@ description: Конфигурация мультимедиа, указывающ
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 64ab5c5bb6cbff6d9af677be9c85c13bfcd78d75
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983389"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526874"
 ---
 # <a name="nomediaconfig-resource-type"></a>Тип ресурса noMediaConfig
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Конфигурация мультимедиа, указывающие нет носителя.
 
@@ -21,7 +21,7 @@ ms.locfileid: "27983389"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Логический |  |
+| removeFromDefaultAudioGroup | Логическое |  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,10 +42,15 @@ ms.locfileid: "27983389"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "noMediaConfig resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/nomediaconfig.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
