@@ -4,16 +4,16 @@ description: С помощью этого API можно создать черн
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 95fb4c385da7115480a2e1e63135bd875a80b598
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4c15bfc0a29909b1e7a7ba27b5ac221c0d11f815
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952904"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509751"
 ---
 # <a name="create-message"></a>Создание объекта Message
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 С помощью этого API можно создать черновик нового сообщения. Черновики можно создавать в любой папке и при необходимости изменять перед отправкой. Для сохранения в папке "Черновики" используйте ярлык /messages.
 
@@ -45,7 +45,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление объекта [message](../resources/message.md) с JSON.
 
 Если вы хотите использовать **упомянуть** помечать другого пользователя в новое сообщение:
@@ -191,7 +191,7 @@ Content-type: application/json
 ```
 
 
-##### <a name="response-2"></a>Ответ 2
+##### <a name="response-2"></a>Отклик 2
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -287,7 +287,7 @@ Content-type: application/json
 }
 ```
 Предоставьте в теле запроса описание объекта [message](../resources/message.md) в формате JSON.
-##### <a name="response-3"></a>Ответ 3
+##### <a name="response-3"></a>Отклик 3
 Ниже приведен пример отклика. Примечание: Заголовки сообщений Интернета не возвращаются в ответа POST по умолчанию. Объект ответа, показанный здесь также может усекаться для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -364,10 +364,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Message",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-post-messages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

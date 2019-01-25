@@ -2,16 +2,16 @@
 title: Тип ресурса identityProvider
 description: Представляет имя поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может быть Microsoft, Google, Facebook, Amazon или LinkedIn.
 localization_priority: Normal
-ms.openlocfilehash: 0a465b1c7b4ad7f74e6357e77da3692d64294e7e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: afd21635d932582f2a9ee6c2cde1cf45a9d4260f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858543"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511620"
 ---
 # <a name="identityprovider-resource-type"></a>Тип ресурса identityProvider
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет имя поставщика удостоверений Azure Active Directory (Azure AD). Поставщик удостоверений может быть Microsoft, Google, Facebook, Amazon или LinkedIn.
 
@@ -36,11 +36,11 @@ ms.locfileid: "27858543"
 
 |Свойство|Тип|Обязательный|Nullable|Описание|
 |:---------------|:--------|:--------|:--------|:----------|
-|clientId|Строка|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученные при регистрации приложения с поставщиком удостоверений.|
-|clientSecret|Строка|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученные при регистрации приложения с поставщиком удостоверений. Это только для записи. Возвращает операции чтения "\*\*\*\*«.|
-|id|Строка|Нет|Нет|Идентификатор поставщика удостоверений.|
-|name|Строка|Нет|Нет|Отображаемое имя поставщика удостоверений.|
-|type|Строка|Да|Нет|Тип поставщика удостоверений. Оно должно быть одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|clientId|String|Да|Нет|Идентификатор клиента для приложения. Это идентификатор клиента, полученные при регистрации приложения с поставщиком удостоверений.|
+|client_secret|String|Да|Нет|Секрет клиента для приложения. Это секрет клиента, полученные при регистрации приложения с поставщиком удостоверений. Это только для записи. Возвращает операции чтения "\*\*\*\*«.|
+|id|Строка|Нет|НЕТ|Идентификатор поставщика удостоверений.|
+|name|String|Нет|НЕТ|Отображаемое имя поставщика удостоверений.|
+|type|String|Да|Нет|Тип поставщика удостоверений. Оно должно быть одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
 ### <a name="where-to-get-the-client-id-and-secret"></a>Где можно получить клиента идентификатора и секрета
 
@@ -64,3 +64,11 @@ ms.locfileid: "27858543"
     "clientSecret": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprovider.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

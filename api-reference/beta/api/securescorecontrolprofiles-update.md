@@ -1,17 +1,17 @@
 ---
 title: Обновление secureScoreControlProfiles
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Обновите свойство редактируемого secureScoreControlProfiles в любой интегрированное решение для изменения различных свойств, например assignedTo или tenantNote.
 localization_priority: Normal
-ms.openlocfilehash: b89a5e147d4882dbe25456cd2acc42b56924d12b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817656"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510955"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление secureScoreControlProfiles
 
- > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновите свойство редактируемого **secureScoreControlProfiles** в любой интегрированное решение для изменения различных свойств, например **assignedTo** или **tenantNote**.
 
@@ -21,9 +21,9 @@ ms.locfileid: "27817656"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All.  |
+|Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All. |
+|Для приложений | SecurityEvents.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -40,15 +40,15 @@ PATCH /security/secureScoreControlProfiles/{id}
 | Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
 |Prefer | Возвращает = представление. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите представление JSON значений для соответствующие поля, которые должны обновляться. В следующей таблице приведены поля, которые могут быть обновлены для secureScoreControlProfile. Значения для существующих свойств, которые не включены в тексте запроса остаются без изменений. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|Строка|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
-|tenantNote|Строка|Комментарии аналитик на элементе управления (для управления клиента).|
-|controlStateUpdates| Строка|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|AssignedTo|String|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
+|tenantNote|String|Комментарии аналитик на элементе управления (для управления клиента).|
+|controlStateUpdates| String|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик
@@ -80,7 +80,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример успешного ответа.
+Ниже представлен пример успешного отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,10 +94,15 @@ HTTP/1.1 204 No Content
 
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescorecontrolprofiles-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

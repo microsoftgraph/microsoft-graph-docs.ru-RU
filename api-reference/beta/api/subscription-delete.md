@@ -3,16 +3,16 @@ title: Удаление подписки
 description: Удаление подписки.
 localization_priority: Normal
 author: piotrci
-ms.openlocfilehash: 79ffce638036414469953d6d729229e00cb1662f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9ca4c772cb6d7de088550a16262275b4c43fb9c9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945876"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509464"
 ---
 # <a name="delete-subscription"></a>Удаление подписки
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление подписки.
 
@@ -27,7 +27,7 @@ ms.locfileid: "27945876"
 | События                      | Calendars.Read      |
 | Сообщения                    | Mail.Read           |
 | Группы                      | Group.Read.All      |
-| Users                       | User.Read.All       |
+| Пользователи                       | User.Read.All       |
 | Диск (хранилище OneDrive пользователя)    | Files.ReadWrite.     |
 | На дисках (содержимое общих SharePoint и диски) | Files.ReadWrite.All |
 | Предупреждение системы безопасности              | SecurityEvents.ReadWrite.All |
@@ -46,9 +46,9 @@ DELETE /subscriptions/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -83,10 +83,15 @@ DELETE https://graph.microsoft.com/beta/subscriptions/{id}
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

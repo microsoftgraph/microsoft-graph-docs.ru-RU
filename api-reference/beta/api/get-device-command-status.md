@@ -2,16 +2,16 @@
 title: Получение состояния команды устройства
 description: Получение состояния команды на устройстве. Полный список кодов состояния списка actionStatus см.
 localization_priority: Normal
-ms.openlocfilehash: 9dca743a50f248abee76fb4d54352df3d400ada1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ae5fe1f2b6b48c0a739911bd20370562e8540f18
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883134"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510115"
 ---
 # <a name="get-device-command-status"></a>Получение состояния команды устройства
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение состояния команды на устройстве. Полный список кодов состояния [списка actionStatus](#list-of-actionstatus)см.
 
@@ -212,3 +212,11 @@ HTTP/1.1 200 OK
   "Type":"Ok"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/get-device-command-status.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

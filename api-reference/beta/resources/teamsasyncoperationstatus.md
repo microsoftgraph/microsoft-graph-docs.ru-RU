@@ -4,16 +4,16 @@ description: Описывает текущее состояние teamsAsyncOper
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e136d043cf58480d93888374558a1be06ca9053d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e9138adcc646677955a12091a3fb15badfd39f13
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914823"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511711"
 ---
 # <a name="teamsasyncoperationstatus-enum-type"></a>Тип перечисления teamsAsyncOperationStatus
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Описывает текущее состояние [teamsAsyncOperation](teamsasyncoperation.md).
 
@@ -21,8 +21,16 @@ ms.locfileid: "27914823"
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|Недопустимый|0|Недопустимое значение.|
-|notStarted|1|Эта операция не запущена.|
-|inProgress|2|Выполнение операции.|
-|succeeded|3|Операция успешно завершена.|
+|Invalid|(0)|Недопустимое значение|
+|notStarted|$1|Эта операция не запущена.|
+|InProgress|–2|Выполнение операции.|
+|succeeded|–3|Операция успешно завершена.|
 |failed|4|Сбой операции.|
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

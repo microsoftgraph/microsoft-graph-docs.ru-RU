@@ -4,16 +4,16 @@ description: Get вновь созданных, обновлении или уд
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f63a426c97aaf695447de9075b91fb2c534309db
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6fd8eb71c1b647550219ae6686a0bc814420b2fa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984635"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508904"
 ---
 # <a name="user-delta"></a>user: delta
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Get вновь созданных, обновлении или удалении пользователей без необходимости выполнять полное чтение коллекции всей пользователя. Дополнительные сведения см [Отслеживание изменений](/graph/delta-query-overview) .
 
@@ -47,7 +47,7 @@ GET /users/delta
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | строка | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции пользователей и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $deltatoken | string | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` предыдущего вызова функции **delta** для той же коллекции пользователей и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
 | $skiptoken | строка | Этот [токен состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` предыдущего вызова функции **delta** и указывает, что в коллекции пользователей остаются неотслеженные изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
@@ -63,7 +63,7 @@ GET /users/delta
 |:---------------|:----------|
 | Authorization  | Bearer &lt;token&gt;|
 | Content-Type  | application/json |
-| Prefer | Возвращает = минимальный <br><br>Указание этот заголовок с запросом, который использует `deltaLink` возвращает свойства объекта, которые были изменены с момента последнего цикла. Необязательный параметр. |
+| Prefer | return=minimal. <br><br>Указание этот заголовок с запросом, который использует `deltaLink` возвращает свойства объекта, которые были изменены с момента последнего цикла. Необязательный параметр. |
 
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
@@ -166,7 +166,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mobilePhone
 ```
 
-#### <a name="response-2"></a>Ответ 2
+#### <a name="response-2"></a>Отклик 2
 
 Ниже приведен пример ответа при использовании `deltaLink` полученных при инициализации запроса. Обратите внимание на то, что все свойства 3 включенных в ответ и не известно, какие из них были изменены с момента `deltaLink` был получен.
 
@@ -207,7 +207,7 @@ GET https://graph.microsoft.com/beta/users/delta?$select=displayName,jobTitle,mo
 Prefer: return=minimal
 ```
 
-#### <a name="response-3"></a>Ответ 3
+#### <a name="response-3"></a>Отклик 3
 
 Ниже приведен пример ответа при использовании `deltaLink` полученных при инициализации запроса. Обратите внимание, что `mobilePhone` свойство не указан, то есть не был изменен с момента последнего разностного запроса; `displayName` и `jobTitle` включены, что означает их значения были изменены.
 
@@ -234,15 +234,20 @@ Content-type: application/json
 }
 ```
 
-- [Использование разностного запроса для отслеживания изменений в данных Microsoft Graph](/graph/delta-query-overview).
-- [Получение добавочные изменения для пользователей](/graph/delta-query-users).
+- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- Получение добавочных изменений для пользователей
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: delta",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-delta.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

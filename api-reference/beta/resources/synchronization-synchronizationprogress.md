@@ -2,16 +2,16 @@
 title: Тип ресурса synchronizationProgress
 description: Представляет ход выполнения synchronizationJob к завершению.
 localization_priority: Normal
-ms.openlocfilehash: 3c1168cdac6a073842cb5e08d165572591d2d8e0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885388"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510976"
 ---
 # <a name="synchronizationprogress-resource-type"></a>Тип ресурса synchronizationProgress
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет ход выполнения [synchronizationJob](synchronization-synchronizationjob.md) к завершению.
 
@@ -22,7 +22,7 @@ ms.locfileid: "27885388"
 |completedUnits|Int32|Числитель соотношение хода выполнения; Количество единиц уже обработки изменений.|
 |progressObservationDateTime|DateTimeOffset|Время наблюдения хода выполнения как смещение в минутах от времени UTC.|
 |totalUnits|Int32|Делителя соотношение хода выполнения; Количество единиц изменения обработки для выполнения синхронизации.|
-|единицы|Строка|Необязательное описание единицы измерения.|
+|Units|String|Необязательное описание единицы измерения.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -50,10 +50,15 @@ ms.locfileid: "27885388"
 
 <!-- uuid: 15571993-7e2f-4842-84d5-01ceb67cdc05
 20185-08-14 22:30:00 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationProcess resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationprogress.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

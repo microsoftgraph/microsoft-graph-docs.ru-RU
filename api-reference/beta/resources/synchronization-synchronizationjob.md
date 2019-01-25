@@ -2,16 +2,16 @@
 title: Тип ресурса synchronizationJob
 description: Выполняет синхронизацию с периодически выполняется в фоновом режиме, опроса для изменения в один каталог и помещает их в другой каталог. Задание синхронизации всегда специально для конкретного экземпляра приложения клиента. Как часть процесса установки задания синхронизации необходимо предоставить разрешение на чтение и запись в целевом каталоге объекты и настройке задания синхронизации схемы.
 localization_priority: Normal
-ms.openlocfilehash: 4d65f39cd63357c8fc7c1e22d3d3871eb1646d53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892150"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510570"
 ---
 # <a name="synchronizationjob-resource-type"></a>Тип ресурса synchronizationJob
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Выполняет синхронизацию с периодически выполняется в фоновом режиме, опроса для изменения в один каталог и помещает их в другой каталог. Задание синхронизации всегда специально для конкретного экземпляра приложения клиента. Как часть процесса установки задания синхронизации необходимо предоставить разрешение на чтение и запись в целевом каталоге объекты и настройке задания синхронизации схемы.
 
@@ -21,7 +21,7 @@ ms.locfileid: "27892150"
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md) коллекции  |Список существующих заданий для экземпляра данного приложения (участников-служб).|
 |[Получение synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |Чтение свойства и связи объекта synchronizationJob.|
-|[создание](../api/synchronization-synchronizationjob-post.md);         |[synchronizationJob](synchronization-synchronizationjob.md)   |Создание нового задания для данного приложения.|
+|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Создание нового задания для данного приложения.|
 |[Start](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание находится в приостановленном состоянии, он по-прежнему производится из точки, где был приостановлен задания. Если задание находится в карантине, состояние карантина снят.|
 |[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительное задание, чтобы начать заново и повторно обрабатывать все объекты в каталоге.|
 |[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временно приостановить синхронизации. Сохраняются все текущие, включая состояние задания и задание продолжит работу с где оно было прервано Если [запустить](../api/synchronization-synchronizationjob-start.md) вызов.|
@@ -34,12 +34,12 @@ ms.locfileid: "27892150"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|id             |Строка                     |Идентификатор задания уникальных синхронизации. Только для чтения.|
-|расписание       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Расписание выполнения задания. Только для чтения.|
+|id             |String                     |Идентификатор задания уникальных синхронизации. Только для чтения.|
+|Расписание       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Расписание выполнения задания. Только для чтения.|
 |status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Состояние задания, которое включает в себя после последнего выполнения задания, текущее состояние задания и ошибках.|
 |templateId     |String    |Идентификатор [шаблона синхронизации](synchronization-synchronizationtemplate.md) на основе этого задания.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |схема|[synchronizationSchema](synchronization-synchronizationschema.md)| Схема синхронизации, настроенных для задания.|
@@ -68,10 +68,15 @@ ms.locfileid: "27892150"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationJob resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationjob.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

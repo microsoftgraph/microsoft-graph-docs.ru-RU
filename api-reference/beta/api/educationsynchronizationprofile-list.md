@@ -4,16 +4,16 @@ description: Получение коллекции школа данных си�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: ed001a7c265f16057ea216d21f7a05f672df7065
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1907b0ef08473a79d66e79fcb4751b281e9a18ad
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425073"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509555"
 ---
 # <a name="list-educationsynchronizationprofiles"></a>Список educationSynchronizationProfiles
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.
 
@@ -23,7 +23,7 @@ ms.locfileid: "29425073"
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -42,7 +42,7 @@ GET /synchronizationProfiles
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -56,7 +56,7 @@ GET /synchronizationProfiles
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -165,3 +165,11 @@ Content-length: 3296
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

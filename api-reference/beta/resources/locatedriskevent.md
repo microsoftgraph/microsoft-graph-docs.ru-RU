@@ -2,16 +2,16 @@
 title: Тип ресурса locatedRiskEvent
 description: 'Событие риск, обнаруживается Azure Active Directory защиту, основанный на данные о размещении. Типы событий расположены риска:'
 localization_priority: Normal
-ms.openlocfilehash: 256c7a980fb9540e7e80337a5b8aad29fe73f26a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 20fe76099c511483144b42e33fc260910debb5ed
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867559"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510262"
 ---
 # <a name="locatedriskevent-resource-type"></a>Тип ресурса locatedRiskEvent
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Событие риск, обнаруживается [Azure Active Directory защиту](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) , основанный на данные о размещении. Типы событий расположены риска:
 * [войти в систему с анонимным IP-адресов](anonymousipriskevent.md)
@@ -32,7 +32,7 @@ ms.locfileid: "27867559"
 |:---------------|:--------|:----------|
 |closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
 |createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно datetime самого события риска. Это правильное свойство для использования в качестве фильтра при запросе события рисков.|
-|id|строка| Только для чтения|
+|id|string| Только чтение|
 |ipAddress|string| IP-адрес входа в|
 |location|string| Расположение, подключенного к IP-адрес входа в|
 |riskEventDateTime|dateTimeOffset| Дата и время возникновения события риска|
@@ -43,7 +43,7 @@ ms.locfileid: "27867559"
 |userId|string| Идентификатор пользователя в группу риска|
 |userPrincipalName|string| Имя участника-пользователя пользователя в группу риска|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
@@ -80,10 +80,15 @@ ms.locfileid: "27867559"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "locatedRiskEvent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/locatedriskevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -3,16 +3,16 @@ title: Использование интерфейса API REST канале а�
 description: 'Веб-канал API в Microsoft Graph активности можно использовать для возобновления активности пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью делегированы разрешения и разрешение активности пользователей, которую можно использовать с учетными записями личных или рабочих и школы. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 7b921114dd5ff8d7bffba77fa2191fde5fa33bdb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a522d4caa29aa5227f5030ed2663972e8b8d1660
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943398"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509968"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование интерфейса API REST канале активности
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
 Веб-канал API в Microsoft Graph активности можно использовать для возобновления активности пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью [делегированных разрешений](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) и [разрешений активности пользователя](/graph/permissions-reference), который можно использовать с личных или рабочих и школы учетных записей. 
@@ -72,3 +72,11 @@ Each activity represents a unique...
 
 - В разделе [как Microsoft среды взаимодействия с пользователем с помощью действия](https://channel9.msdn.com/events/Build/2017/B8108).
 - Сведения о [действия веб-канала API и трубку с я места](https://channel9.msdn.com/Events/Windows/Windows-Developer-Day-Fall-Creators-Update/WinDev011).
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/activity-feed-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

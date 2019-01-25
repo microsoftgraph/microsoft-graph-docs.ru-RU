@@ -4,16 +4,16 @@ description: Представляет таблицу Excel.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 7d1f6debdbdab3047d55bebe6fc5ec848adcb832
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2e3e9c93f7459d666fbe7f28a67241c2831b7079
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956992"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510668"
 ---
 # <a name="table-resource-type"></a>Тип ресурса Table
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет таблицу Excel.
 
@@ -33,7 +33,7 @@ ms.locfileid: "27956992"
 |[Totalrowrange](../api/table-totalrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой итогов таблицы.|
 |[Clearfilters](../api/table-clearfilters.md)|Нет|Удаляет все фильтры, примененные к таблице.|
 |[Converttorange](../api/table-converttorange.md)|[Range](range.md)|Преобразовывает таблицу в обычный диапазон ячеек. Все данные сохраняются.|
-|[Delete](../api/table-delete.md)|Нет|Удаляет таблицу.|
+|[Delete](../api/table-delete.md)|Отсутствует|Удаляет таблицу.|
 |[Reapplyfilters](../api/table-reapplyfilters.md)|Нет|Повторно применяет все текущие фильтры к таблице.|
 |[Список](../api/table-list.md) | Коллекция объектов [Table](table.md) |Получение коллекции объектов table. |
 |[Add](../api/tablecollection-add.md)|[Table](table.md)|Создание таблицы. Исходный адрес диапазона определяет лист, на который будет добавлена таблица. Если не удается добавить таблицу (например, если адрес недействителен или одна таблица будет перекрываться другой), выводится сообщение об ошибке.|
@@ -41,19 +41,19 @@ ms.locfileid: "27956992"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|строка|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
-|name|строка|Имя таблицы.|
+|id|string|Возвращает значение, однозначно идентифицирующее таблицу в данной книге. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.|
+|name|string|Имя таблицы.|
 |showHeaders|boolean|Указывает, отображается ли строка заголовков. Можно задать это значение, чтобы отобразить или скрыть строку заголовков.|
 |showTotals|boolean|Указывает, отображается ли строка итогов. Можно задать это значение, чтобы отобразить или скрыть строку итогов.|
 |style|строка|Постоянное значение, представляющее стиль таблицы. Возможные значения: от TableStyleLight1 до TableStyleLight21, от TableStyleMedium1 до TableStyleMedium28, от TableStyleStyleDark1 до TableStyleStyleDark11. Также можно указать настраиваемый пользовательский стиль, имеющийся в книге.|
-|highlightFirstColumn|Boolean|Указывает, содержит ли первый столбец специальное форматирование.   |
-|highlightLastColumn|Boolean|Указывает, содержит ли последний столбец специальное форматирование. |
-|showBandedColumns|Boolean|Указывает, чередуется ли форматирование четных и нечетных столбцов для более удобного просмотра таблицы.   |
-|showBandedRows|Boolean|Указывает, чередуется ли форматирование четных и нечетных строк для более удобного просмотра таблицы.    |
+|highlightFirstColumn|Логическое|Указывает, содержит ли первый столбец специальное форматирование.   |
+|highlightLastColumn|Логическое|Указывает, содержит ли последний столбец специальное форматирование. |
+|showBandedColumns|Логическое|Указывает, чередуется ли форматирование четных и нечетных столбцов для более удобного просмотра таблицы.   |
+|showBandedRows|Логическое|Указывает, чередуется ли форматирование четных и нечетных строк для более удобного просмотра таблицы.    |
 |showFilterButton|Boolean|Указывает, видны ли кнопки фильтрации в верхней части заголовков столбцов. Это свойство можно использовать, только если таблица содержит строку заголовков.   |
 |legacyId|String|Устаревший идентификатор, используемый в старых клиентах Excel. Значение идентификатора остается прежним, даже если переименовать таблицу. Это свойство должно интерпретироваться как непрозрачное строковое значение и не должно преобразовываться в любой другой тип. Только для чтения.   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columns|Коллекция объектов [TableColumn](tablecolumn.md)|Представляет коллекцию всех столбцов в таблице. Только для чтения.|
@@ -92,10 +92,15 @@ ms.locfileid: "27956992"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Table resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/table.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

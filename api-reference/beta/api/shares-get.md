@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Доступ к общим элементам
 localization_priority: Normal
-ms.openlocfilehash: 46779e40862c7056cc60ef4be55595da5615e9f6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 62a2b15fbd0715c719e0fefc6a0b02162bc4fdec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864241"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509583"
 ---
 # <a name="accessing-shared-driveitems"></a>Доступ к общим элементам DriveItem
 
@@ -32,14 +32,14 @@ ms.locfileid: "27864241"
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
 ### <a name="path-parameters"></a>Параметры пути
 
-| Имя параметра        | Значение    | Описание                                                                         |
-|:----------------------|:---------|:------------------------------------------------------------------------------------|
-| **sharingTokenOrUrl** | `string` | Обязательный. Маркер общего доступа, возвращенный API, или правильно закодированный URL-адрес для общего доступа. |
+| Имя параметра                 | Значение    | Описание                                                                         |
+|:-------------------------------|:---------|:------------------------------------------------------------------------------------|
+| **shareIdOrEncodedSharingUrl** | `string` | Обязательный. Маркер общего доступа, возвращенный API, или правильно закодированный URL-адрес для общего доступа. |
 
 ### <a name="encoding-sharing-urls"></a>Кодирование URL-адресов для общего доступа
 
@@ -57,6 +57,21 @@ string base64Value = System.Convert.ToBase64String(System.Text.Encoding.UTF8.Get
 string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+','-');
 ```
 
+## <a name="optional-request-headers"></a>Необязательные заголовки запросов
+
+| Имя       | Тип   | Описание                                                    |
+|:-----------|:-------|:---------------------------------------------------------------|
+| **Prefer** | строка | Необязательный параметр. Установите один из `prefer` значения описано ниже.  |
+
+### <a name="prefer-header-values"></a>Ниже приведена значения заголовка
+
+| Имя                          | Описание                                                                                             |
+|:------------------------------|:--------------------------------------------------------------------------------------------------------|
+| redeemSharingLink             | Если **shareIdOrEncodedSharingUrl** является ссылкой общего доступа, предоставьте ему разрешение прочная доступ к элементу    |
+| redeemSharingLinkIfNecessary  | То же, что redeemSharingLink, но доступ только гарантированно предоставить во время выполнения этого запроса |
+
+redeemSharingLink должны рассматриваться как эквивалент вызывающему переход к общего доступа ссылку браузера (принятие жестам общего доступа), а redeemSharingLinkIfNecessary предназначена для сценариев, где планируется просто Просмотр ссылок метаданные.
+
 ## <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и ресурс [sharedDriveItem](../resources/shareddriveitem.md) в тексте отклика.
@@ -70,10 +85,10 @@ string encodedUrl = "u!" + base64Value.TrimEnd('=').Replace('/','_').Replace('+'
 <!-- { "blockType": "request", "name": "get-shared-root" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrEncodedSharingUrl}
+GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -91,10 +106,6 @@ Content-type: application/json
       "id": "98E88F1C-F8DC-47CC-A406-C090248B30E5",
       "displayName": "Ryan Gregg"
     }
-  },
-  "remoteItem": { 
-    "driveId": "",
-    "id": ""
   }
 }
 ```
@@ -141,7 +152,7 @@ Content-Type: application/json
 <!-- { "blockType": "request", "name": "get-shared-driveitem-expand-children" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/shares/{shareIdOrUrl}/driveItem?$expand=children
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ```
 
 ### <a name="response"></a>Ответ
@@ -175,9 +186,15 @@ Content-Type: application/json
 }
 ```
 
+## <a name="error-responses"></a>Отклики с ошибками
+
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+
 ## <a name="remarks"></a>Замечания
 
 * В случае OneDrive для бизнеса и SharePoint API общих ресурсов всегда требует аутентификации. С его помощью невозможно обращаться к содержимому, доступ к которому предоставлен анонимно, без контекста пользователя.
+
+[error-response]: /graph/errors
 
 <!-- {
   "type": "#page.annotation",

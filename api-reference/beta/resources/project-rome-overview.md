@@ -2,16 +2,16 @@
 title: 'Использование Microsoft Graph API для работы с Project рим '
 description: 'Проект рим является корпорации Майкрософт для построения на платформе, что позволяет разработчикам создавать между устройствами возможностей приложения. Рим Project позволяет различных возможностей, если пользователь выполнит с одной Microsoft учетной записи или работы или школе учетной записи подключиться различных служб и конечные точки клиентов. Это позволяет реализовать взаимодействия между устройствами и кроссплатформенный центральным задач пользователя, а не устройств. '
 localization_priority: Normal
-ms.openlocfilehash: 9f3b923bff5bad93036a1784090c8ce00763650f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 57c5189f3caf64ec048d000d5e9108811bd88145
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830004"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509695"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-project-rome"></a>Использование Microsoft Graph API для работы с Project рим 
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Проект рим](https://developer.microsoft.com/en-us/windows/project-rome) является корпорации Майкрософт для построения на платформе, что позволяет разработчикам создавать между устройствами возможностей приложения. Рим Project позволяет различных возможностей, если пользователь выполнит с одной Microsoft учетной записи или работы или школе учетной записи подключиться различных служб и конечные точки клиентов. Это позволяет реализовать взаимодействия между устройствами и кроссплатформенный центральным задач пользователя, а не устройств. 
 
@@ -62,3 +62,11 @@ API-интерфейсы рим проекта можно использоват
 
 Дополнительные сведения см [создания и отправки уведомлений](../api/projectrome-notification-post.md).
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/project-rome-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

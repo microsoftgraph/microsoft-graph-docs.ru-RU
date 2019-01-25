@@ -4,16 +4,16 @@ description: Получите сведения о состоянии опред�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 394bb03760e33b4581f5d29e90a4c8fd875c26d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a2d3dffd715d78bb96794808da39255db0164b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418136"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510199"
 ---
 # <a name="get-the-status-of-an-educationsynchronizationprofile"></a>Получить сведения о состоянии educationSynchronizationProfile
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите сведения о состоянии данных конкретного школа [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов. Ответ будет указывают состояние синхронизации.
 
@@ -23,7 +23,7 @@ ms.locfileid: "29418136"
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений| EduAdministration.Read.All EduAdministration.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,7 +39,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [educationsynchronizationprofilestatus](../resources/educationsynchronizationprofilestatus.md) в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -53,7 +53,7 @@ GET /synchronizationProfiles/{id}/profileStatus
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/profileStatus
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -73,3 +73,11 @@ Content-length: 232
     "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofilestatus-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

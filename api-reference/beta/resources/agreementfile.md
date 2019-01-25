@@ -2,16 +2,16 @@
 title: Тип ресурса agreementFile
 description: Представляет настраиваемое условия использования соглашения файл, который управляет клиента с помощью Azure Active Directory (Azure AD). Содержит метаданные о файле соглашения (например, имя, язык, и его файл по умолчанию).
 localization_priority: Normal
-ms.openlocfilehash: f06792d63deabf25659a09e8aec5ed0e8f036472
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 446173e83d32af96f938cbee15964ea204a62f7e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804510"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511431"
 ---
 # <a name="agreementfile-resource-type"></a>Тип ресурса agreementFile
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет настраиваемое условия использования соглашения файл, который управляет клиента с помощью Azure Active Directory (Azure AD). Содержит метаданные о файле соглашения (например, имя, язык, и его файл по умолчанию).
 
@@ -31,10 +31,10 @@ ms.locfileid: "27804510"
 |fileData|[agreementFileData](agreementfiledata.md)|Данные, представляющие условия использования PDF-документа. Только для чтения.|
 |fileName|String|Имя файла соглашения (например, TOU.pdf). Только для чтения.|
 |id|Строка|Только для чтения.|
-|isDefault|Логический|Указывает, является ли файл соглашения по умолчанию Если ни одна из культур совпадает с клиентом. Если ни один из файлов помечены как по умолчанию, первый будет рассматриваться как значение по умолчанию. Только для чтения.|
+|isDefault|Boolean|Указывает, является ли файл соглашения по умолчанию Если ни одна из культур совпадает с клиентом. Если ни один из файлов помечены как по умолчанию, первый будет рассматриваться как значение по умолчанию. Только для чтения.|
 |language|String|Язык и региональные параметры соглашения файла в формате languagecode2-страны/regioncode2. languagecode2 — это строчная двухбуквенный код, производный от ISO 639-1. Страна/regioncode2 является производным от ISO 3166 и обычно состоит из двух прописных букв или тег языка BCP 47 (например, en US). Только для чтения.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 
@@ -63,10 +63,15 @@ ms.locfileid: "27804510"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "agreementFile resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/agreementfile.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

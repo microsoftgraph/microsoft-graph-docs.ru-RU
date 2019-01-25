@@ -2,16 +2,16 @@
 title: Тип ресурса expressionInputObject
 description: 'Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.'
 localization_priority: Normal
-ms.openlocfilehash: acf0fa5125d863224de6df76d46109b9888f8ddf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820113"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510780"
 ---
 # <a name="expressioninputobject-resource-type"></a>Тип ресурса expressionInputObject
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.
 
@@ -19,7 +19,7 @@ ms.locfileid: "27820113"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |definition|[objectDefinition](synchronization-objectdefinition.md)|Определение объекта теста.|
-|свойства|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции|Значения свойств объекта теста.|
+|properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции|Значения свойств объекта теста.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,10 +43,15 @@ ms.locfileid: "27820113"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "expressionInputObject resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-expressioninputobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

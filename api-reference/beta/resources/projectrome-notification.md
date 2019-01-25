@@ -3,15 +3,15 @@ title: Тип ресурса уведомлений
 description: 'Представляет уведомления, который был опубликован на сервере приложений, предназначенное для указанного пользователя. Уведомление, сохраненных в Microsoft Graph и распространять на разные устройства конечных точек владеет пользователь. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: e920645e0d526893eff197b42ed5d6ef7f7c7b93
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: af130c9806511b0afbdaedb602790c7c40d3ca2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973078"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509261"
 ---
 # <a name="notification-resource-type"></a>Тип ресурса уведомлений
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет уведомления, который был опубликован на сервере приложений, предназначенное для указанного пользователя. Уведомление, сохраненных в Microsoft Graph и распространять на разные устройства конечных точек владеет пользователь. 
 
@@ -22,7 +22,7 @@ ms.locfileid: "27973078"
 ## <a name="methods"></a>Методы
 |Метод | Возвращаемый тип | Описание|
 |:------|:------------|:-----------|
-|[Создание уведомлений](../api/projectrome-notification-post.md) | [уведомления](projectrome-notification.md) |Создание и отправка уведомления. |
+|[Создание уведомлений](../api/projectrome-notification-post.md) | Уведомление |Создание и отправка уведомления. |
 
 ## <a name="properties"></a>Свойства
 |Имя | Тип | Описание|
@@ -37,11 +37,11 @@ ms.locfileid: "27973078"
 | payload.Visual.Body | String | Основная часть visual пользовательского уведомления. Необходимо иметь заголовок или текст. |
 | displayTimeToLive | Int | Задает, сколько времени (в секундах) этот контент уведомления будут оставаться в средстве просмотра уведомления для каждой платформы. Например при доставке уведомления в устройства Windows, значение этого свойства передается ToastNotification.ExpirationTime, который определяет, сколько времени всплывающее уведомление будут оставаться в центр поддержки пользователя Windows. |
 | priority | EnumType | Указывает приоритет необработанные пользовательского уведомления. Визуальные уведомления отправляются с наивысший приоритет по умолчанию. Допустимые значения: максимальное и минимальное. |
-| groupName | String | Имя группы, к которой принадлежит это уведомление. Оно установлено разработчика для группирования уведомлений. |
+| GroupName | String | Имя группы, к которой принадлежит это уведомление. Оно установлено разработчика для группирования уведомлений. |
 | targetPolicy | Edm.ComplexType, объект JSON | Целевой объект политики обрабатывает политики доставки уведомлений на двух уровнях - типы конечной точки (Windows, iOS и Android), которые должны быть сделаны и конкретных конечных точках (определяются по подписке идентификаторы), которые должны быть сделаны. |
 | targetPolicy.platformTypes | Edm.ComplexType коллекции (EnumType) | Используйте для фильтрации рассылки уведомлений для конкретных платформ или платформ. По умолчанию включены все типы конечных точек push (операций ввода-вывода, Windows и Android). |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 ## <a name="json-representation"></a>Представление в формате JSON
@@ -93,3 +93,11 @@ ms.locfileid: "27973078"
   }
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-notification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Представляет коллекцию всех меток д�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 16e2e3acafc98a4066b8620f41f15c7cae1667cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: bda2c1849f154435608f311671026e224b0c7e3c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954682"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510339"
 ---
 # <a name="chartdatalabels-resource-type"></a>Тип ресурса ChartDataLabels
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет коллекцию всех меток данных в точке диаграммы.
 
@@ -22,8 +22,8 @@ ms.locfileid: "27954682"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
-|[обновление](../api/chartdatalabels-update.md). | [ChartDataLabels](chartdatalabels.md) |Обновление объекта chartDataLabels. |
+|Получение объекта ChartDataLabels | [chartDataLabels](chartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
+|[Update](../api/chartdatalabels-update.md) | ChartDataLabels |Обновление объекта chartDataLabels. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -70,10 +70,15 @@ ms.locfileid: "27954682"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ChartDataLabels resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/chartdatalabels.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

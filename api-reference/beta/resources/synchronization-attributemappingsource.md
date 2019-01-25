@@ -2,16 +2,16 @@
 title: Тип ресурса attributeMappingSource
 description: 'Определяет, как должно быть значение извлечены (или преобразовать) из исходного объекта. Например может быть простой значение из заданного атрибута для объекта источника, или она может быть более сложного выражения string объединения и извлечения/замену на основе нескольких атрибутов источника. '
 localization_priority: Normal
-ms.openlocfilehash: a7c1493f27f34230d4305fe95b2d2f03a5ad25e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1d15cd82c0a58ac8bdd3ac5805abc166322f27fe
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825013"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510409"
 ---
 # <a name="attributemappingsource-resource-type"></a>Тип ресурса attributeMappingSource
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Определяет, как должно быть значение извлечены (или преобразовать) из исходного объекта. Например может быть простой значение из заданного атрибута для объекта источника, или она может быть более сложного выражения string объединения и извлечения/замену на основе нескольких атрибутов источника. 
 
@@ -19,10 +19,10 @@ ms.locfileid: "27825013"
 
 | Свойство              | Тип                      | Описание               |
 |:----------------------|:--------------------------|:--------------------------|
-|выражение             |Строка                     |Представление эквивалентное выражение объекта **attributeMappingSource** .|
-|name                   |Строка                     |Имя параметра источник сопоставления. В зависимости от значения свойства **типа** это может быть имя функции, имя исходного атрибута или постоянное значение для использования. |
+|выражение             |String                     |Представление эквивалентное выражение объекта **attributeMappingSource** .|
+|name                   |String                     |Имя параметра источник сопоставления. В зависимости от значения свойства **типа** это может быть имя функции, имя исходного атрибута или постоянное значение для использования. |
 |parameters             |[stringKeyAttributeMappingSourceValuePair](synchronization-stringkeyattributemappingsourcevaluepair.md) коллекции | Если этот объект представляет функцию, список параметров функции. Параметры состоят из объектов **attributeMappingSource** сами, позволяя для сложных выражений. Если **Тип** не `Function`, это свойство будет иметь значение null или пустой массив. |
-|type                   | Строка                    |Тип сопоставления этого атрибута источника. Возможные значения: `Attribute`, `Constant`, `Function`. Значение по умолчанию: `Attribute`.| 
+|type                   | String                    |Тип сопоставления этого атрибута источника. Возможные значения: `Attribute`, `Constant`, `Function`. Значение по умолчанию: `Attribute`.| 
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -114,10 +114,15 @@ ms.locfileid: "27825013"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attributeMappingSource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-attributemappingsource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

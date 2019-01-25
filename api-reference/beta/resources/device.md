@@ -4,16 +4,16 @@ description: Представляет устройство, зарегистри
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9a699134be1189700fd4689668db6021260835ad
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1279a39f7aa8983697b980fd6cce44c203d1883e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944196"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511753"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет устройство, зарегистрированные в каталоге. Экземпляры device создаются в облаке с помощью службы Device Registration Service или Intune. Их используют политики условного доступа для многофакторной проверки подлинности. Представленными устройствами могут быть компьютеры и ноутбуки, смартфоны и планшеты. Наследуется от [directoryObject](directoryobject.md).
 
@@ -28,7 +28,7 @@ ms.locfileid: "27944196"
 |[Обновление device](../api/device-update.md) | [device](device.md)  |Обновляет свойства объекта устройств. |
 |[Удаление device](../api/device-delete.md) | Нет |Удалите объект устройства. |
 |[Перечисление memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, которые устройство является непосредственным членом. |
-|[Доверия транзитивных член списка](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, которые устройства. Эта операция транзитивное. |
+|[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, которые устройства. Эта операция транзитивное. |
 |[Перечисление registeredOwners](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
 |**Открытые расширения**| | |
@@ -40,7 +40,7 @@ ms.locfileid: "27944196"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Boolean| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. значение по умолчанию — true.|
+|accountEnabled|Логическое| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. значение по умолчанию — true.|
 |alternativeSecurityIds|Коллекция alternativeSecurityId| Только для внутреннего использования. Значение NULL не допускается. |
 |approximateLastSignInDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
 |deviceId|Guid| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. |
@@ -48,22 +48,22 @@ ms.locfileid: "27944196"
 |deviceVersion|Int32| Только для внутреннего использования. |
 |displayName|String| Отображаемое имя устройства. Обязательный параметр. |
 |id|String|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения.|
-|isCompliant|Boolean|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. Только для чтения. Это можно обновить, путем Intune для любого типа операционная система устройства или [утвержденных MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows.|
+|isCompliant|Логическое|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. Только для чтения. Это можно обновить, путем Intune для любого типа операционная система устройства или [утвержденных MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows.|
 |isManaged|Boolean|Используется значение **true**, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM). В противном случае используется значение **false**. Это можно обновить, путем Intune для любого типа операционная система устройства или [утвержденных MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Время последней синхронизации объекта с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-|onPremisesSyncEnabled|Boolean|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения.|
+|onPremisesSyncEnabled|Логическое|Значение **true** указывает, что этот объект синхронизируется из локального каталога. Значение **false** указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения|
 |operatingSystem|String| Тип операционной системы на устройстве. Обязательный параметр. |
-|operatingSystemVersion|String| Версия операционной системы устройства. Обязательный. |
+|operatingSystemVersion|Строка| Версия операционной системы устройства. Обязательный. |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. |
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction). |
 |Имя| String | Понятное имя устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
-|Status | String| Устройство является сетевым и автономным. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
+|Состояние | String| Устройство является сетевым и автономным. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
 |Платформа |String|Платформа устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта.|
-|Тип| String| Форм-фактора устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
+|Kind| String| Форм-фактора устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
 |Model| String| Модель устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
-|Производитель| String| Производителя устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
+|manufacturer| String| Производителя устройства. Возвращается только при входе пользователя с учетной записью Майкрософт в составе рим проекта. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
@@ -72,7 +72,7 @@ ms.locfileid: "27944196"
 |extensions|Коллекция [extension](extension.md)|Коллекция open расширения, определенные для устройства. Допускается значение null.|
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователи, относящиеся к зарегистрированным владельцам устройства. Только для чтения. Допускается значение null.|
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)|Зарегистрированные пользователи устройства. Только для чтения. Допускается значение null.|
-|команды | Collection(Microsoft.Graph.Command) | Набор команд, отправленные на это устройство|
+|Команды | Collection(Microsoft.Graph.Command) | Набор команд, отправленные на это устройство|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -123,10 +123,15 @@ ms.locfileid: "27944196"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "device resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/device.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

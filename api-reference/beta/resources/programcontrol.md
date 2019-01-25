@@ -2,16 +2,16 @@
 title: Тип ресурса programControl
 description: В Azure AD access дается обзор компонента, объект элемента управления программа представляет элемент управления, связывание проверки доступа к программе.
 localization_priority: Normal
-ms.openlocfilehash: ddf6e978277ca1801f9126597ac4b3561fe5bfb7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817824"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511417"
 ---
 # <a name="programcontrol-resource-type"></a>Тип ресурса programControl
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В компоненте [дается обзор доступа](accessreviews-root.md) Azure AD объект элемента управления программа представляет элемент управления, связывание проверки доступа к программе.
 
@@ -24,7 +24,7 @@ ms.locfileid: "27817824"
 |[Удаление programControl](../api/programcontrol-delete.md) |     Нет.   |   Удалите programControl из программы.|
 |[Список programControls](../api/programcontrol-list.md) | [programControl](programcontrol.md) коллекции| Список элементов управления для всех программ в клиентов.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -45,7 +45,7 @@ ms.locfileid: "27817824"
 | `owner`                  |[удостоверению пользователя](useridentity.md)   | Пользователь, создавший элемент управления программы.                                               |
 | `resource`               |`programResource`       | Ресурс, группы или приложения, входят в целевую этот элемент управления программы проверки доступа.                   |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `program`                |[Программа](program.md)               | Программа этот элемент управления является частью.                                                |
@@ -59,7 +59,7 @@ ms.locfileid: "27817824"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -95,10 +95,15 @@ ms.locfileid: "27817824"
 | `type`               |`String`  | Тип ресурса, которое показывает, является ли группы или приложения. |     
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "programControl resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

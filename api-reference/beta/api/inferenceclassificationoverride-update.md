@@ -1,17 +1,17 @@
 ---
-title: Обновление inferenceClassificationOverride
+title: Обновление объекта inferenceclassificationoverride
 description: 'Изменение поля **classifyAs** фокус папки "Входящие" переопределять значение, как указано. '
 localization_priority: Normal
-ms.openlocfilehash: b9d462bc09f69b07d5b6b4bce031932e1b702b44
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0cb3eab7f8a4efece8099ca8f65577d8a06b18d6
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27887908"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508519"
 ---
-# <a name="update-inferenceclassificationoverride"></a>Обновление inferenceClassificationOverride
+# <a name="update-inferenceclassificationoverride"></a>Обновление объекта inferenceclassificationoverride
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Изменение поля **classifyAs** [Фокус папки "Входящие"](../resources/manage-focused-inbox.md) переопределять значение, как указано. 
 
@@ -69,8 +69,9 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,10 +93,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update inferenceclassificationoverride",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/inferenceclassificationoverride-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

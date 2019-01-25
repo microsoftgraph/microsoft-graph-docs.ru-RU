@@ -2,16 +2,16 @@
 title: Получение фотографии
 description: Получение свойств и связей объекта фотографии.
 localization_priority: Normal
-ms.openlocfilehash: ff46fca695140cabf363f9bccfcc61bc4fb50279
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ffe127cf7e59a4cf29275a7673cb95e1ce7e4581
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824467"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510353"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств и связей объекта фотографии.
 ## <a name="permissions"></a>Разрешения
@@ -38,10 +38,10 @@ GET /drive/root/createdByUser/photo
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
@@ -54,7 +54,7 @@ GET /drive/root/createdByUser/photo
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -81,8 +81,8 @@ Content-length: 53
 ```http
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример отклика.
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа.
 
 <!-- { "blockType": "ignored","@odata.type": "stream" } -->
 
@@ -108,10 +108,15 @@ Content-Length: 250526
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/photo-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
