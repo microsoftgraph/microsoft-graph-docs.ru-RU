@@ -4,16 +4,16 @@ description: Вычисляемые insight для списка пользова
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5f9445dcee294f20f5eadf18cdd648805142c53d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ca5fdd4602d109d98002c0ef54fde5ad341e1903
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953565"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521623"
 ---
 # <a name="list-workingwith"></a>Список workingWith
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Вычисляемые insight для списка пользователей, которые пользователь работает с.
 
@@ -42,7 +42,7 @@ GET /drive/root/lastModifiedByUser/workingWith
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type   | application/json           |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Ответ
@@ -55,7 +55,8 @@ GET /drive/root/lastModifiedByUser/workingWith
 GET https://graph.microsoft.com/beta/me/workingWith
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -67,3 +68,11 @@ Content-length: 98
   "Email": "Email-value",
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-workingwith.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

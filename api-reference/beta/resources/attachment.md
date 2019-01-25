@@ -2,16 +2,16 @@
 title: Тип ресурса attachment
 description: Связанное содержимое можно добавить на событие
 localization_priority: Normal
-ms.openlocfilehash: 5648194b0f636c8757d1b20c492abc099dce377d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842793"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526944"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Связанное содержимое можно добавить для [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md) в виде вложения.
 
@@ -45,7 +45,7 @@ ms.locfileid: "27842793"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип MIME.|
-|id|Строка| Только для чтения.|
+|id|String| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |имя|String|Отображаемое имя вложения. Она не обязательно должна находиться фактическое имя файла.|
@@ -82,10 +82,15 @@ ms.locfileid: "27842793"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "attachment resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/attachment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

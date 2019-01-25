@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/11/2017
 title: dateTimeColumn
 localization_priority: Normal
-ms.openlocfilehash: 03ebb78adda52a9f98aec6635bbda48dd61e37e2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e49b749adeaf7b04f9324fe00f9c73bf61f8b2dc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889217"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518683"
 ---
 # <a name="datetimecolumn-resource-type"></a>Тип ресурса dateTimeColumn
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **dateTimeColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют собой даты или время.
 
@@ -33,8 +33,8 @@ ms.locfileid: "27889217"
 
 | Имя свойства      | Тип               | Описание
 |:-------------------|:-------------------|:----------------------------------------------
-| **displayAs**      | строка             | Способ отображения значения в пользовательском интерфейсе. Должно иметь один из типов `default`, `friendly` или `standard`. Дополнительные сведения см. ниже. Если тип не указан, считается, что значение имеет тип `default`.
-| **format**         | строка             | Указывает способ представления значения: только в виде даты либо в виде даты и времени. Должно иметь тип `dateOnly` или `dateTime`
+| **displayAs**      | string             | Способ отображения значения в пользовательском интерфейсе. Должно иметь один из типов `default`, `friendly` или `standard`. Дополнительные сведения см. ниже. Если тип не указан, считается, что значение имеет тип `default`.
+| **format**         | string             | Указывает способ представления значения: только в виде даты либо в виде даты и времени. Должно иметь тип `dateOnly` или `dateTime`
 
 ## <a name="displayas-values"></a>Значения DisplayAs
 
@@ -45,10 +45,15 @@ ms.locfileid: "27889217"
 | **standard** | Использование стандартного абсолютного представления (например, "10.05.2017 15:20")
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/DateTimeColumn"
-} -->
+  "tocPath": "Resources/DateTimeColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/datetimecolumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

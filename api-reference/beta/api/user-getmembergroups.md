@@ -1,19 +1,19 @@
 ---
 title: 'user: getMemberGroups'
-description: Возвращает все группы, в которые входит пользователь. Проверка доверия транзитивных, в отличие от чтения
+description: 'Возвращает все группы, в которых состоит пользователь. Это промежуточная проверка, в отличие от считывания '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: cb6a10a80503d8842442e2678bcf52ee6154e3f5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d4f9042be8be7f736ac585efaab0f2ebb16a6aab
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424212"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523703"
 ---
 # <a name="user-getmembergroups"></a>user: getMemberGroups
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возвращение всех названий групп, в которых состоит пользователь. Проверка промежуточная, в отличие от считывания свойства навигации [memberOf](../api/user-list-memberof.md) (возвращаются только группы, для которых пользователь является непосредственным членом).
 
@@ -28,8 +28,6 @@ ms.locfileid: "29424212"
 | Делегированные (рабочая или учебная учетная запись)     | User.Read, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                                                                       |
 | Для приложений                            | Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                                                                                        |
-
-> **Примечание:** Этот интерфейс API в настоящее время требует `Directory.Read.All` разрешений или выше. С помощью разрешений Group.Read.All, отдельно или в сочетании с `User.` разрешений, возвращается ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -81,9 +79,10 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 
 <!-- {
   "blockType": "response",
@@ -107,10 +106,15 @@ Content-length: 39
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: getMemberGroups",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-getmembergroups.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

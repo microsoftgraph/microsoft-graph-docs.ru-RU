@@ -4,16 +4,16 @@ description: Используйте этот интерфейс API для со�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 626bf3a2e8bc77ba929895eed74ac0bb803aa5d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517731"
 ---
 # <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот интерфейс API для создания нового [mailSearchFolder](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
 
@@ -45,17 +45,17 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 | Authorization | `Bearer {token}`. Обязательный. |
 | Content-Type | `application/json`. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | Строка | Тип создать папку. Задайте значение «microsoft.graph.mailSearchFolder». |
+| @odata.type | String | Тип создать папку. Задайте значение «microsoft.graph.mailSearchFolder». |
 | displayName | String | Отображаемое имя новой папки.|
-| includeNestedFolders | Логический | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
+| includeNestedFolders | Логическое | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
 | sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | Строка | Запросов OData для фильтрации сообщений. |
+| filterQuery | String | Запросов OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Ответ
 
@@ -87,9 +87,9 @@ Content-length: 159
 
 #### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
->**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства.
+>**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,10 +121,15 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create mailSearchFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

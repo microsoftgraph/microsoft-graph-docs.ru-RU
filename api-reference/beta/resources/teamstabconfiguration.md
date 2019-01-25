@@ -4,16 +4,16 @@ description: Параметры, определяющие содержимое �
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 515e5896591b58054f161ff740f68b0ca4913663
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 10cc22e70288d1643a3a2cdebe23a012e22e3879
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913487"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519201"
 ---
 # <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration ресурсов (тип Open)
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Параметры, определяющие содержимое [вкладки](teamstab.md). Если вкладки интерактивно настроено, эти сведения задается приложение поставщика вкладки.
 В дополнение к указанные ниже свойства некоторые приложения поставщика вкладки укажите дополнительные настраиваемые свойства.
@@ -22,10 +22,10 @@ ms.locfileid: "27913487"
 
 |Свойство|Тип|Описание|
 |-|-|-|
-|  entityId   |   строка |  Идентификатор для сущности, размещенного поставщиком вкладки.     |
-|  contentUrl |   строка |  URL-адрес, используемый для отображения содержимого вкладки в группах. Обязательный.    |
-|  removeUrl  |   строка |  URL-адрес, вызванный клиентом команды при удалении вкладки с помощью команды клиента.     |
-|  websiteUrl |   строка |  URL-адрес для отображения содержимого вкладки вне группы.     |
+|  entityId   |   string |  Идентификатор для сущности, размещенного поставщиком вкладки.     |
+|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в группах. Обязательный.    |
+|  removeUrl  |   string |  URL-адрес, вызванный клиентом команды при удалении вкладки с помощью команды клиента.     |
+|  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне группы.     |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,10 +46,15 @@ ms.locfileid: "27913487"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsTabConfiguration complex type (Open Type)",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamstabconfiguration.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,19 +1,19 @@
 ---
-title: Элементы
+title: Members
 description: 'Описывает видимость группы. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b469a4db4bf535eaa4a7c6300a393381c92158fc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7e77fbd2667f8656a4c2f66046636ff73ac8891d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986447"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521350"
 ---
 # <a name="teamvisibilitytype-enum-type"></a>Тип перечисления teamVisibilityType
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Описывает видимость [группы](../resources/team.md). 
 
@@ -21,5 +21,13 @@ ms.locfileid: "27986447"
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|закрытый|0|Любой пользователь может просматривать группы, но только владелец можно добавить пользователя в группу.|
-|public|1|Для присоединения к группе.|
+|Private|(0)|Любой пользователь может просматривать группы, но только владелец можно добавить пользователя в группу.|
+|public|$1|Для присоединения к группе.|
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamvisibilitytype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

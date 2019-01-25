@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fbac6451ff08e2176b1893c8604db8957c826572
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950727"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517444"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Этот ресурс представляет элемент объекта **[list][]** в SharePoint.
 Значения столбцов в списке доступны через словарь `fieldValueSet`.
@@ -38,9 +38,9 @@ ms.locfileid: "27950727"
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервал]: ../api/itemactivity-getbyinterval.md
-[Создание]: ../api/listitem-create.md
+[Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
-[Обновление]: ../api/listitem-update.md
+[Update]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -91,8 +91,8 @@ ms.locfileid: "27950727"
 
 | Имя свойства        | Тип              | Описание
 |:---------------------|:------------------|:----------------------------------
-| id                   | строка            | Уникальный идентификатор элемента. Только для чтения.
-| name                 | строка            | Имя или название элемента.
+| id                   | string            | Уникальный идентификатор элемента. Только для чтения.
+| name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
 | description          | строка            | Текст с описанием элемента.
@@ -127,7 +127,8 @@ ms.locfileid: "27950727"
 [listItemVersion]: listitemversion.md.
 [sharepointIds]: sharepointids.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -135,5 +136,9 @@ ms.locfileid: "27950727"
   "tocPath": "Resources/ListItem",
   "tocBookmarks": {
     "ListItem": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/listitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

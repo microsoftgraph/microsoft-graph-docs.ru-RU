@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: baseItem
 localization_priority: Normal
-ms.openlocfilehash: ac119ab0b63aecba384d34014f3d0d18111b05ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866250"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521588"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 **baseItem** — это абстрактный ресурс, который содержит стандартный набор свойств, также используемых несколькими другими типами ресурсов. Ниже перечислены ресурсы, производные от ресурса **baseItem**.
 
@@ -52,13 +52,13 @@ ms.locfileid: "27866250"
 
 | Свойство             | Тип              | Описание                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | строка            | Уникальный идентификатор диска. Только для чтения.                                         |
+| id                   | string            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
-| name                 | строка            | Имя элемента. Чтение и запись.                                                      |
+| name                 | string            | Имя элемента. Чтение и запись.                                                      |
 | parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                              |
 | webUrl               | строка (url-адрес)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
 
@@ -71,10 +71,15 @@ ms.locfileid: "27866250"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/BaseItem"
-} -->
+  "tocPath": "Resources/BaseItem",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/baseitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

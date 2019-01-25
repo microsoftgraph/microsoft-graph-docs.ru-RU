@@ -5,16 +5,16 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a756929212dbca04f16e9e4701e34bbd8d4de28f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939240"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522303"
 ---
 # <a name="sitepage-resource"></a>sitePage ресурсов
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Этот ресурс представляет страницу SitePages [списка][].
 Он содержит заголовок, макет и коллекцию s [веб-части][].
@@ -22,21 +22,21 @@ ms.locfileid: "27939240"
 ## <a name="tasks-on-a-page"></a>Задачи на странице
 
 Для **sitePage** ресурсов доступны следующие задачи.
-Всех приведенных ниже примерах относительны [сайта][], например: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+Все приведенные ниже примеры относятся к сайту, например [][].
 
 | Стандартная задача                     | Метод HTTP
 |:--------------------------------|:------------------------------
-| [Перечисление страниц][]                  | Получение /pages
+| [Перечисление страниц][]                  | Запрос GET для страниц
 | [Получение страницы][]                    | Получение /pages/ {идентификатор страницы}
-| [создание][];                      | POST /pages
-| [удаление][];                      | Удаление /pages/ {идентификатор страницы}
-| [публикация][];                     | Учет /pages/ {идентификатор страницы} аудио- и публикация
+| [Create][]                      | POST pages
+| [Delete][]                      | Удаление /pages/ {идентификатор страницы}
+| [Publish][]                     | Учет /pages/ {идентификатор страницы} аудио- и публикация
 
 [Перечисление страниц]: ../api/sitepage-list.md
 [Получение страницы]: ../api/sitepage-get.md
-[Создание]: ../api/sitepage-create.md
+[Create]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
-[публикация]: ../api/sitepage-publish.md;
+[Publish]: ../api/sitepage-publish.md
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -81,15 +81,15 @@ ms.locfileid: "27939240"
 |:-----------------|:-----------------------------|:---------------------------
 | contentType      | [contentTypeInfo][]          | Тип страницы содержимого.
 
-## <a name="page-content"></a>Контент страницы
+## <a name="page-content"></a>Содержимое страницы
 
 Ресурс **sitePage** имеет следующие поля содержимого.
 
 | Имя свойства      | Тип                       | Описание
 |:-------------------|:---------------------------|:---------------------------
 | должности.              | строка                     | Заголовок страницы.
-| pageLayout         | строка                     | Имя страницы макета страницы.
-| веб-части           | [веб-части][]                | Веб-частей на странице.
+| pageLayout         | string                     | Имя страницы макета страницы.
+| веб-части           | веб-часть                | Веб-частей на странице.
 
 ## <a name="authoring-metadata"></a>Создание метаданных
 
@@ -103,10 +103,10 @@ ms.locfileid: "27939240"
 
 | Имя свойства        | Тип              | Описание
 |:---------------------|:------------------|:----------------------------------
-| id                   | строка            | Уникальный идентификатор элемента. Только для чтения.
-| name                 | строка            | Имя или название элемента.
+| id                   | string            | Уникальный идентификатор элемента. Только для чтения.
+| name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
-| eTag                 | строка            | ETag для элемента. Только для чтения.
+| eTag                 | string            | ETag для элемента. Только для чтения.
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
 | parentReference      | [itemReference][] | Дата и время последнего изменения элемента. Только для чтения.
@@ -126,9 +126,10 @@ ms.locfileid: "27939240"
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md.
 [site]: site.md
-[веб-части]: webpart.md
+веб-часть
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
@@ -136,8 +137,12 @@ ms.locfileid: "27939240"
   "tocPath": "Resources/Page",
   "tocBookmarks": {
     "Page": "#"
-  }
-} -->
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/sitepage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 <!--
 TODO:

@@ -4,16 +4,16 @@ ms.date: 09/11/2017
 title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a1eb5b36f2af7b66da7fd891ccd324fa325504c3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a3136d7c5b9563999eb9b21a9235317afdaeb63e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923469"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519299"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **personOrGroupColumn** в ресурсе [columnDefinition](columndefinition.md) указывает, что значения столбца представляют человека или группу, выбранные в каталоге.
 
@@ -34,9 +34,9 @@ ms.locfileid: "27923469"
 
 | Имя свойства              | Тип    | Описание
 |:---------------------------|:--------|:--------------------------------------
-| **allowMultipleSelection** | логический | Указывает, можно ли выбрать несколько значений в источнике.
-| **displayAs**              | строка  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
-| **chooseFromType**         | строка  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
+| **allowMultipleSelection** | boolean | Указывает, можно ли выбрать несколько значений в источнике.
+| **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
+| **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
 
 ## <a name="displayas-values"></a>Значения DisplayAs
 
@@ -63,10 +63,15 @@ ms.locfileid: "27923469"
 
 Примечание. Система может возвращать дополнительные типы DisplayAs.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/PersonOrGroupColumn"
-} -->
+  "tocPath": "Resources/PersonOrGroupColumn",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/personOrGroupColumn.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

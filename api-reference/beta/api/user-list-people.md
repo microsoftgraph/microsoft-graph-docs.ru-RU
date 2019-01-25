@@ -4,16 +4,16 @@ description: Получение списка объектов person, упоря
 author: dkershaw10
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4233c0bc4015525bb474499366c084483ceaefe7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: deb9fd929a2b0b8ce4da9392cb465497c2236b0c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925044"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517815"
 ---
 # <a name="list-people"></a>Список людей
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов [person](../resources/person.md) , упорядоченные по их важности для [пользователя](../resources/user.md), который определяет, какие связи и совместной работы шаблоны и устанавливать деловые контакты пользователя.
 
@@ -51,12 +51,12 @@ GET /users/{id | userPrincipalName}/people
 
 ## <a name="request-headers"></a>Заголовки запроса
 
-| Имя      |Описание|
+| Название      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Accept | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте тело запроса для этого метода.
 
@@ -273,10 +273,15 @@ GET https://graph.microsoft.com/beta/users('nestork@contoso.com')/people/
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List people",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-people.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

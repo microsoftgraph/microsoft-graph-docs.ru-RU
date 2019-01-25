@@ -3,16 +3,16 @@ title: Тип ресурса resultInfo
 description: Тип resultInfo.
 author: VinodRavichandran
 localization_priority: Normal
-ms.openlocfilehash: ca814fd5c44f0f811099faed53354d08ce8befdc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0c924798715448e87c30cf2b65cc923c6ddc20bc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27855281"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521084"
 ---
 # <a name="resultinfo-resource-type"></a>Тип ресурса resultInfo
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Тип resultInfo.
 
@@ -20,9 +20,9 @@ ms.locfileid: "27855281"
 
 | Свойство | Тип   | Описание          |
 | :------- | :----- | :------------------  |
-| code     | Строка | Код результата.     |
+| code     | String | Код результата.     |
 | message  | String | Сообщение.         |
-| дополнительный код  | Строка | Вложенный код результата. |
+| дополнительный код  | String | Вложенный код результата. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -87,10 +87,15 @@ ms.locfileid: "27855281"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "resultInfo resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/resultinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

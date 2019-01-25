@@ -4,16 +4,16 @@ description: В Azure AD access дается обзор компонента, О
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d71796272cf9852683688a47f3d78eebd849357
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 070f91faa411fcc6d98db419d1683a7fb6493859
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941466"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521840"
 ---
 # <a name="stop-accessreview"></a>Остановка accessReview
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD Остановка текущего активного [accessReview](../resources/accessreview.md).  Конечный объект может быть review однократного доступа или экземпляр повторяющейся проверки доступа.  (Чтобы предотвратить повторяющихся проверки доступа запуск будущих экземпляры, [обновите его](accessreview-update.md) , чтобы изменить его дату окончания).  После обеспечения доступа просмотрите останавливается, рецензентов больше не могут предоставить входные данные и решения проверки доступа можно применить.
 ## <a name="permissions"></a>Разрешения
@@ -33,13 +33,13 @@ POST /accessReviews('<id>')/stop()
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | строка | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -63,10 +63,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-25 00:00:01 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Stop accessReview",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-stop.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

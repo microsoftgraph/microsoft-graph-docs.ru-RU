@@ -4,16 +4,16 @@ ms.author: chackman
 title: Число элементов списка
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 0489c14b943b6fa6eafb41932bb9bb906fea3351
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: df38a11a09f4ec86eb029f236030cc4565e5d939
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921481"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523311"
 ---
 # <a name="list-followed-items"></a>Число элементов списка
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Список [элементов](../resources/driveitem.md) , следуют выполнен вход пользователя.
 Данная коллекция включает элементов, находящихся в диске компьютера пользователя, а также элементы, которые получают доступ из других дисков.
@@ -65,10 +65,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List the items a user is following.",
   "keywords": "drive,onedrive.drive,list followed items",
   "section": "documentation",
-  "tocPath": "Drives/List followed items"
-} -->
+  "tocPath": "Drives/List followed items",
+  "suppressions": [
+    "Error: /api-reference/beta/api/drive-list-following.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

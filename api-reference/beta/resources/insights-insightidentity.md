@@ -4,16 +4,16 @@ description: Сложный тип, содержащий свойства общ
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: a263caa68280128a67a027b75682407fd4932605
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938939"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523059"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложный тип, содержащий свойства [общих](insights-shared.md) элементов. 
 
@@ -32,6 +32,14 @@ ms.locfileid: "27938939"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |-----------    | -------------|
-| displayName       | Строка          | Отображаемое имя пользователя, который общих элемента. |
+| displayName       | String          | Отображаемое имя пользователя, который общих элемента. |
 | id              | Строка        | Идентификатор пользователя, который общих элемента.     |
 | address             | String      | Адрес электронной почты пользователя, который общих элемента.  |
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

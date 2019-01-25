@@ -2,16 +2,16 @@
 title: Создание privilegedRoleAssignmentRequest
 description: Создайте объект privilegedroleassignmentrequest.
 localization_priority: Normal
-ms.openlocfilehash: 3f1b88415e5671e38ad557cc28200569a42a9630
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27847772"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521070"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте объект [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) .
 
@@ -35,16 +35,16 @@ POST /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
-|roleId|Строка|Идентификатор роли. Обязательное.|
-|type|Строка|Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей. Обязательный.|
-|assignmentState|Строка|Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
-|Причина|Строка|Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Расписание для запроса назначений ролей.|
+|roleId|String|Идентификатор роли. Обязательное.|
+|type|String|Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей. Обязательный.|
+|assignmentState|String|Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
+|Reason|String|Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Расписание для запроса назначений ролей.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в теле ответа.
@@ -96,7 +96,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -133,10 +133,15 @@ Content-length: 304
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post privilegedRoleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/privilegedroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

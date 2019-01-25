@@ -2,20 +2,20 @@
 title: Создание governanceRoleAssignmentRequest
 description: Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
 localization_priority: Normal
-ms.openlocfilehash: 09adb824147dba745649efc7589ca763f815278d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823774"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523241"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
 
-| Операция       | Тип | 
+| Operation       | Тип | 
 |:---------------|:----------|
 | Назначение назначения ролей| AdminAdd |
 | Активация назначение подходящими роли| UserAdd | 
@@ -31,7 +31,7 @@ ms.locfileid: "27823774"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Permissions              |
+|Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
@@ -49,18 +49,18 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 | Authorization  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |Обязательный|  Описание|
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|Идентификатор ресурса.|
-|roleDefinitionId|Строка|Да|Идентификатор определения роли.|
-|subjectId|Строка|Да|Идентификатор субъекта.|
-|assignmentState|Строка|Да|Состояние назначения. Значение может быть ``Eligible`` и ``Active``.|
-|type|Строка|Да|Тип запроса. Значение может быть `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`и `AdminExtend`.|
-|Причина|Строка| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
-|расписание|[governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
+|resourceId|String|Да|Идентификатор ресурса.|
+|roleDefinitionId|String|Да|Идентификатор определения роли.|
+|subjectId|String|Да|Идентификатор субъекта.|
+|assignmentState|String|Да|Состояние назначения. Значение может быть ``Eligible`` и ``Active``.|
+|type|String|Да|Тип запроса. Значение может быть `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`и `AdminExtend`.|
+|Reason|String| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
@@ -88,13 +88,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
-|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
-|subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Допустимость / Active|
-|type|Строка|Да| AdminAdd|
-|Причина|Строка| зависит от роли параметров||
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|String|Да|\<|
+|roleDefinitionId|String|Да|\<roleDefinitionId\>|
+|subjectId|String|Да|\<subjectId\>|
+|assignmentState|String|Да| Допустимость / Active|
+|type|String|Да| AdminAdd|
+|Reason|String| зависит от роли параметров||
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -171,13 +171,13 @@ Content-length: 226
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
-|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
-|subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Активное|
-|type|Строка|Да| UserAdd|
-|Причина|Строка| зависит от роли параметров||
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|String|Да|\<|
+|roleDefinitionId|String|Да|\<roleDefinitionId\>|
+|subjectId|String|Да|\<subjectId\>|
+|assignmentState|String|Да| Активное|
+|type|String|Да| UserAdd|
+|Reason|String| зависит от роли параметров||
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -266,13 +266,13 @@ Content-type: application/json
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
-|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
-|subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Активное|
-|type|Строка|Да| UserRemove|
-|Причина|Строка| Нет||
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
+|resourceId|String|Да|\<|
+|roleDefinitionId|String|Да|\<roleDefinitionId\>|
+|subjectId|String|Да|\<subjectId\>|
+|assignmentState|String|Да| Активное|
+|type|String|Да| UserRemove|
+|Reason|Строка| Нет||
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -322,20 +322,20 @@ Content-length: 226
 }
 ```
 
-### <a name="example-4"></a>Пример 4
+### <a name="example-4"></a>---------------------ПРИМЕР 4-----------------------
 В этом примере администраторам удалить nawu@fimdev.net пользователя из роли выставления счетов чтения.
 
  >**Примечание:** В дополнение к разрешение, в этом примере требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
-|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
-|subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Допустимость / Active|
-|type|Строка|Да| AdminRemove|
-|Причина|Строка| Нет||
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
+|resourceId|String|Да|\<|
+|roleDefinitionId|String|Да|\<roleDefinitionId\>|
+|subjectId|String|Да|\<subjectId\>|
+|assignmentState|String|Да| Допустимость / Active|
+|type|String|Да| AdminRemove|
+|Reason|Строка| Нет||
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -391,13 +391,13 @@ Content-length: 226
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
-|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
-|subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Допустимость / Active|
-|type|Строка|Да| AdminUpdate|
-|Причина|Строка| зависит от roleSettings||
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|String|Да|\<|
+|roleDefinitionId|String|Да|\<roleDefinitionId\>|
+|subjectId|String|Да|\<subjectId\>|
+|assignmentState|String|Да| Допустимость / Active|
+|type|String|Да| AdminUpdate|
+|Reason|String| зависит от roleSettings||
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -471,13 +471,13 @@ Content-length: 226
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
-|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
-|subjectId|Строка|Да|\<subjectId\>|
-|assignmentState|Строка|Да| Допустимость / Active |
-|type|Строка|Да| AdminExtend|
-|Причина|Строка| зависит от roleSettings||
-|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|String|Да|\<|
+|roleDefinitionId|String|Да|\<roleDefinitionId\>|
+|subjectId|String|Да|\<subjectId\>|
+|assignmentState|String|Да| Допустимость / Active |
+|type|String|Да| AdminExtend|
+|Reason|String| зависит от roleSettings||
+|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -547,10 +547,15 @@ Content-length: 226
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Post roleAssignmentRequest",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroleassignmentrequest-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Удаление группы из списка избранных 
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 9ed755add4771b062d004aaa35c55b9afd23a390
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4fad30c2cff494739e759567332e89a3d630954a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951021"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517339"
 ---
 # <a name="group-removefavorite"></a>group: removeFavorite
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление группы из списка избранных групп текущего пользователя. Поддерживается только для Групп Office 365.
 
@@ -41,7 +41,7 @@ POST /groups/{id}/removeFavorite
 ## <a name="request-body"></a>Тело запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/beta/groups/{id}/removeFavorite
 ```
 
 #### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -68,10 +68,15 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "group: removeFavorite",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/group-removefavorite.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

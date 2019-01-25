@@ -2,16 +2,16 @@
 title: Тип ресурса governanceRuleSetting
 description: Представляет правила, которые предоставляют параметры роли.
 localization_priority: Normal
-ms.openlocfilehash: 7554c96daec70a95cde5ab0c3faedfba74764cff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894259"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522240"
 ---
 # <a name="governancerulesetting-resource-type"></a>Тип ресурса governanceRuleSetting
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет правила, которые предоставляют параметры роли.
 
@@ -19,8 +19,8 @@ ms.locfileid: "27894259"
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|Строка        |Идентификатор правила. Например ``ExpirationRule`` и ``MfaRule``.|
-|setting       |String        |Параметры правила. Значение — это строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Например, `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|ruleIdentifier|String        |Идентификатор правила. Например ``ExpirationRule`` и ``MfaRule``.|
+|setting       |String        |Параметры правила. Значение — это строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,10 +42,15 @@ ms.locfileid: "27894259"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "governanceRuleSetting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governancerulesetting.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

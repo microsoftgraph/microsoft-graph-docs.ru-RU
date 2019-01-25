@@ -2,16 +2,16 @@
 title: 'synchronizationSchema: parseExpression'
 description: '(.. / resources/synchronization_attributemappingsource.md) объекта. '
 localization_priority: Normal
-ms.openlocfilehash: dbde03b9ae85377801ad894c8b8ca22c6baebc85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 27545333c6ff7b3c9ffde3e1c59abd09465db1c2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27811027"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522968"
 ---
 # <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Синтаксический анализ указанного строковое выражение в [attributeMappingSource | (.. / resources/synchronization_attributemappingsource.md) объекта. 
 
@@ -38,13 +38,13 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|выражение               |Строка               |Выражение для синтаксического разбора.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Объект данных тестирования для оценки выражения. Необязательное.|
+|выражение               |String               |Выражение для синтаксического разбора.|
+|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Объект данных тестирования для оценки выражения. Необязательный параметр.|
 |targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этого выражения. Необязательный параметр.|
 
 ## <a name="response"></a>Ответ
@@ -173,10 +173,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationSchema: parseExpression",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/synchronization-synchronizationschema-parseexpression.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

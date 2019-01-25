@@ -2,16 +2,16 @@
 title: Создание программы
 description: В Azure AD доступа к функции проверки, создайте новый объект.
 localization_priority: Normal
-ms.openlocfilehash: b982242bbdddb9769d64c9757d9041fddc215d53
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a6e9ab300cf44a2f3973c468679af7fa48262680
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27844018"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521301"
 ---
 # <a name="create-program"></a>Создание программы
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD создайте [новый объект](../resources/program.md) .
 ## <a name="permissions"></a>Разрешения
@@ -31,9 +31,9 @@ POST /programs
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [программы](../resources/program.md) .
 
 Ниже приведены свойства, которые необходимы для создания программы.
@@ -92,10 +92,15 @@ Content-type: application/json
 |[Обновите программу](program-update.md) |  [Программа](../resources/program.md)| Обновите программу.|
 |[Создание programControl](programcontrol-create.md) |        [programControl](../resources/programcontrol.md)    |   Добавьте programControl программы.|
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create program",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/program-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

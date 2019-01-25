@@ -4,16 +4,16 @@ description: MailSearchFolder является виртуальной папки
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1ba9ce248071e3d806383b4cd7e7550c1e3aa145
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: ba76029b69d91be39c9d63ca755e8a4603aec0b9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920914"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520986"
 ---
 # <a name="mailsearchfolder-resource-type"></a>Тип ресурса mailSearchFolder
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 MailSearchFolder является виртуальной папки в почтовом ящике пользователя, который содержит все элементы электронной почты, соответствующие заданным критериям поиска. mailSearchFolder наследует от [mailFolder](mailfolder.md).
 
@@ -32,10 +32,10 @@ MailSearchFolder является виртуальной папки в почт�
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-| isSupported | Логический | Указывает, является ли папки поиска редактирования с помощью API-интерфейсы REST. |
-| includeNestedFolders | Логический | Указывает, как должен выполняться иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
+| isSupported | Логическое | Указывает, является ли папки поиска редактирования с помощью API-интерфейсы REST. |
+| includeNestedFolders | Логическое | Указывает, как должен выполняться иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
 | sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | Строка | Запросов OData для фильтрации сообщений. |
+| filterQuery | String | Запросов OData для фильтрации сообщений. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -58,10 +58,15 @@ MailSearchFolder является виртуальной папки в почт�
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2018-01-23 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailSearchFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailsearchfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

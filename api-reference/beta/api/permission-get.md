@@ -4,16 +4,16 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Получение разрешений
 localization_priority: Normal
-ms.openlocfilehash: efc92c94350f391c980e72cf57fb8ad12108a832
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1af1cdaa434a95ed77da360334c88dd653d8747a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808353"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520027"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В этой статье рассказывается, как возвратить действующее разрешение на общий доступ для конкретного ресурса разрешения.
 
@@ -86,7 +86,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Ресурс [Permission](../resources/permission.md) использует _аспекты_ для предоставления сведений о типе разрешения, представленного ресурсом.
 
@@ -96,10 +96,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get a DriveItem's sharing permissions",
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
-  "tocPath": "OneDrive/Item/Get permission"
-}-->
+  "tocPath": "OneDrive/Item/Get permission",
+  "suppressions": [
+    "Error: /api-reference/beta/api/permission-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

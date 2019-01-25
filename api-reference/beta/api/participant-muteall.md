@@ -4,16 +4,16 @@ description: Отключение всех участников в вызове.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e8cd6478aeb0b467d65f452417d5de43d335d89f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920151"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522835"
 ---
 # <a name="participant-muteall"></a>Участник: muteAll
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Отключение всех участников в вызове.
 
@@ -24,7 +24,7 @@ ms.locfileid: "27920151"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Application                            | Нет                                        |
+| Для приложений                            | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,13 +38,13 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
 |participants|Коллекция String|Участники, выключен.|
-|clientContext|String|Контекст клиента.|
+|ClientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
 Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
@@ -96,10 +96,15 @@ Content-Length: 259
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "participant: muteAll",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/participant-muteall.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Обновляет сводную таблицу.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: fbc007c8d4048b7bc49f50d01802068b8e644b88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4fc107f7b9b1679d89900a102e84e156443a38fc
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968094"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523353"
 ---
 # <a name="workbookpivottable-refresh"></a>workbookPivotTable: refresh
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновляет сводную таблицу.
 
@@ -39,7 +39,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 
@@ -57,7 +57,7 @@ POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -67,3 +67,11 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 ```http
 HTTP/1.1 200 OK
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/workbookpivottable-refresh.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
