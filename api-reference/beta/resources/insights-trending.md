@@ -4,16 +4,16 @@ description: Расширенный отношения подключения п
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 6a5bd678124a4768303d3cd3ffd4449f4d47bb69
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 07fe0f50d6961f0fce6c426c7fb2431f17127bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950748"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29507497"
 ---
 # <a name="trending-resource-type"></a>тенденции тип ресурса
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Расширенный отношения подключения пользователя к документам, которые прибора вокруг пользователя (являются предназначенных для пользователя). Файлы OneDrive и файлов, хранящихся на сайтах группы SharePoint могут тенденций вокруг пользователя.
 
@@ -27,12 +27,12 @@ ms.locfileid: "27950748"
 
 | Свойство      | Тип                              | Описание  |
 | ------------- |---------------                    | -------------|
-| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
 | weight                | Double                    | Значение, указывающее, какой объем документ в настоящее время прибора. Чем больше число, тем больше документ — это в настоящее время прибора вокруг пользователя (более качественных это). Возвращенный документы сортируются по это значение.  |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)    | Свойства, которые можно использовать для визуализации документа в работу. |
 | resourceReference     | [resourceReference](insights-resourcereference.md)        | Справочник по свойства тенденции документа, например URL-адрес и тип документа. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
@@ -52,3 +52,11 @@ ms.locfileid: "27950748"
   "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/insights-trending.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

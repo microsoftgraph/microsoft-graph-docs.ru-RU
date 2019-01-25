@@ -2,16 +2,16 @@
 title: Тип ресурса directoryDefinition
 description: Предоставляет синхронизации сведения о каталоге и его объекты. Этот ресурс сообщает о том, обработчик синхронизации, например, что папка содержит объекты с именами **пользователей** и **группы**, какие атрибуты поддерживаются для этих объектов и типы для этих атрибутов. Чтобы объектов и атрибутов для участия в объект сопоставления и правила синхронизации они должны быть определены как часть определения каталогов.
 localization_priority: Normal
-ms.openlocfilehash: e6b2b55fb9e9e7963b01403c6aed2f0997e2318b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 22ba4a7f3b5b5d3154ec6b3f5d42bd6f1b8f09d7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27874524"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29508127"
 ---
 # <a name="directorydefinition-resource-type"></a>Тип ресурса directoryDefinition
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Предоставляет синхронизации сведения о каталоге и его объекты. Этот ресурс сообщает о том, обработчик синхронизации, например, что папка содержит объекты с именами **пользователей** и **группы**, какие атрибуты поддерживаются для этих объектов и типы для этих атрибутов. Чтобы объектов и атрибутов для участия в [объект сопоставления](synchronization-objectmapping.md)и [правила синхронизации](synchronization-synchronizationrule.md) они должны быть определены как часть определения каталогов.
 
@@ -23,10 +23,10 @@ ms.locfileid: "27874524"
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|id           |Строка     |Идентификатор папки. Значение null не допускается.|
-|метаданные       |metadataEntry коллекции    |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
-|name           |Строка     |Имя каталога. Должно быть уникальным в рамках [схемы синхронизации](synchronization-synchronizationschema.md). Значение null не допускается.|
-|объекты        |[objectDefinition](synchronization-objectdefinition.md) коллекции    |Коллекция объектов, поддерживаемых в каталоге.|
+|id           |String     |Идентификатор папки. Значение null не допускается.|
+|Метаданные       |metadataEntry коллекции    |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
+|name           |String     |Имя каталога. Должно быть уникальным в рамках [схемы синхронизации](synchronization-synchronizationschema.md). Значение null не допускается.|
+|Объекты        |[objectDefinition](synchronization-objectdefinition.md) коллекции    |Коллекция объектов, поддерживаемых в каталоге.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -260,10 +260,15 @@ ms.locfileid: "27874524"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "directoryDefinition resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-directorydefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
