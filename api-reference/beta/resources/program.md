@@ -2,16 +2,16 @@
 title: Тип ресурса программы
 description: 'В Azure AD access дается обзор компонента, программа является контейнером, удерживая программы элементов управления. Клиент может иметь одну или несколько программ.  Все элементы управления, привязывающего проверки доступа к программе, чтобы упростить поиск связанных с ними доступа дается обзор.  '
 localization_priority: Normal
-ms.openlocfilehash: a342fd159bba3f7e31c55ffab9a64a72353bc7ac
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863905"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515190"
 ---
 # <a name="program-resource-type"></a>Тип ресурса программы
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В компоненте [дается обзор доступа](accessreviews-root.md) Azure AD программы является контейнером, удерживая программы элементов управления. Клиент может иметь одну или несколько программ.  Все элементы управления, привязывающего проверки доступа к программе, чтобы упростить поиск связанных с ними доступа дается обзор.  
 
@@ -28,7 +28,7 @@ ms.locfileid: "27863905"
 |[Список programControls программы](../api/program-listcontrols.md) |      [programControl](programcontrol.md) коллекции| Получите коллекцию элементов управления из программы.|
 |[Обновите программу](../api/program-update.md) |   [Программа](program.md)|  Обновите программу.|
 
-## <a name="permissions"></a>Permissions
+## <a name="permissions"></a>Разрешения
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
@@ -44,7 +44,7 @@ ms.locfileid: "27863905"
 | `displayName`               |`String`                              |  Имя программы.  Требуется при создании.                  |
 | `description`               |`String`                              |  Описание программы.           |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 | `controls`                  |[programControl](programcontrol.md) | Элементы управления, связанные с программой. |
@@ -70,10 +70,15 @@ ms.locfileid: "27863905"
 
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "program resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/program.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

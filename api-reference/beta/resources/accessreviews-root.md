@@ -4,16 +4,16 @@ description: Можно использовать Azure AD доступ к обз
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 24571e8d83d6d321ba2bf20d9beae9ba6487e286
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 212af4ad8519f7ec54fb56ceffee0a0d4de16027
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975353"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516415"
 ---
 # <a name="azure-ad-access-reviews"></a>Дается обзор доступа Microsoft Azure AD
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 [Дается обзор Azure AD access](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) можно использовать для настройки одноразовый или дается обзор повторяющихся доступа для аттестации права доступа.
 
@@ -29,7 +29,7 @@ ms.locfileid: "27975353"
 
 Обратите внимание, что функции проверки доступа, в том числе к интерфейсам API, включен в P2 Azure AD Premium. 
 
-## <a name="methods"></a>Methods
+## <a name="methods"></a>Методы
 
 Ниже приведен список методов, предоставляемых Azure AD доступ к обзоры.  
 
@@ -67,10 +67,15 @@ ms.locfileid: "27975353"
 - [Как администратор может управлять программы и обзоры доступ к элементам управления для Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-azure-ad-controls-manage-programs-controls)
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Service root",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/accessreviews-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

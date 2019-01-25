@@ -3,16 +3,16 @@ title: 'reportRoot: getOffice365GroupsActivityDetail'
 description: Получите сведения об активности в группах Office 365.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c70f8ccdb2d27c96a652c0db4d16ee0ca70ec132
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3d99cd7c80dd16c6ded518f7e1cbe9fecd0b3230
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983592"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515449"
 ---
 # <a name="reportroot-getoffice365groupsactivitydetail"></a>reportRoot: getOffice365GroupsActivityDetail
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получите сведения об активности в группах Office 365.
 
@@ -37,7 +37,7 @@ GET /reports/getOffice365GroupsActivityDetail(period='{period_value}')
 GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите один из следующих параметров и действительное значение.
 
@@ -56,7 +56,7 @@ GET /reports/getOffice365GroupsActivityDetail(date={date_value})
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 ### <a name="csv"></a>CSV
 
@@ -122,7 +122,7 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа.
 
@@ -166,7 +166,7 @@ Report Refresh Date,Group Display Name,Is Deleted,Owner Principal Name,Last Acti
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 
@@ -209,3 +209,11 @@ Content-Length: 674
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/reportroot-getoffice365groupsactivitydetail.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,16 +5,16 @@ ms.date: 09/11/2017
 title: Изменение записи в списке SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 393d8031f5dafd61e6b41d584aad988fa610b7b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e85cf419640ae6055f225b51c08ccaa68a008df7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966638"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512523"
 ---
 # <a name="update-an-item-in-a-list"></a>Изменение элемента в списке
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Изменение свойств ресурса **[listItem][]**.
 
@@ -84,10 +84,15 @@ Content-type: application/json
 [fieldValueSet]: ../resources/fieldvalueset.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Update"
-} -->
+  "tocPath": "ListItem/Update",
+  "suppressions": [
+    "Error: /api-reference/beta/api/listitem-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

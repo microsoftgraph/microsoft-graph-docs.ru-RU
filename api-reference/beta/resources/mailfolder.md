@@ -4,16 +4,16 @@ description: Почтовая папка в почтовом ящике поль
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: eaccaf02a3d81d184b3c0bf9eae737790c2709d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923259"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513090"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Почтовая папка в почтовом ящике пользователя, например "Входящие" или "Черновики". Почтовые папки могут содержать сообщения, другие элементы Outlook и дочерние почтовые папки.
 
@@ -32,13 +32,13 @@ GET /me/mailFolders/drafts
 
 | Имя хорошо известные папки | Описание |
 |:-----------------------|:------------|
-| архив | Сообщения папки архива отправляются при использовании функции архивации One_Click в клиентах Outlook, которые поддерживают его. **Примечание:** это не то же, что компонент архивного почтового ящика из Exchange online. |
+| Archive | Сообщения папки архива отправляются при использовании функции архивации One_Click в клиентах Outlook, которые поддерживают его. **Примечание:** это не то же, что компонент архивного почтового ящика из Exchange online. |
 | засорение | Сообщения с низким приоритетом папки засорение перемещаются при использовании функции беспорядок. |
-| конфликтов | Папка, содержащая конфликтующих элементов в почтовом ящике. |
+| Conflicts | Папка, содержащая конфликтующих элементов в почтовом ящике. |
 | conversationhistory | Папка, где Скайп сохраняет мгновенные сообщения (если Скайп настроен для этого). |
 | deleteditems | Элементы папки перемещаются при удалении. |
 | черновики | Папка, содержащая неотправленные сообщения. |
-| папки «Входящие» | Папка "Входящие". |
+| Inbox | Папка "Входящие". |
 | junkemail | В папку нежелательной почты. |
 | localfailures | Папка, содержащая элементы, которые существуют на локальных клиентов, но не удалось загрузить на сервер. |
 | msgfolderroot | Папка «Хранилища». Эта папка является родительской папки для папок, которые отображаются в обычном почтовых клиентах, таких как папки «Входящие». |
@@ -75,12 +75,12 @@ GET /me/mailFolders/drafts
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
-|displayName|Строка|Отображаемое имя элемента mailFolder.|
-|id|Строка|Уникальный идентификатор mailFolder.|
+|displayName|String|Отображаемое имя элемента mailFolder.|
+|id|String|Уникальный идентификатор mailFolder.|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|
-|wellKnownName|Строка|Хорошо известные папки имя папки. Возможные значения перечислены выше. Это свойство принимает значение только для папок по умолчанию, созданные в Outlook. Для других папок это свойство имеет **значение null**.|
+|wellKnownName|String|Хорошо известные папки имя папки. Возможные значения перечислены выше. Это свойство принимает значение только для папок по умолчанию, созданные в Outlook. Для других папок это свойство имеет **значение null**.|
 
 **Эффективный доступ к сведениям о количестве элементов**
 
@@ -93,7 +93,7 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Почтовые папки в Outlook может содержать несколько типов элементов, например, может содержать папки «Входящие» элементы запроса, которые отличаются от почтовых элементов собрания. `TotalItemCount`и `UnreadItemCount` включать элементы в папке почты независимо от их типов элементов.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 | Связь | Тип | Описание |
 |:-------------|:-----|:------------|
@@ -144,10 +144,15 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "mailFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mailfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

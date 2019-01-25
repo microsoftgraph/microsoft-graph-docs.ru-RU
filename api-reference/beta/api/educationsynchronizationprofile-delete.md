@@ -4,16 +4,16 @@ description: Удаление профиля синхронизации данн
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: d3c55cd90734fa78654baf10c940cd0debc57c50
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2aaa0d47bcc98c814ad525deb781ac7a7df28d87
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976158"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512474"
 ---
 # <a name="delete-a-educationsynchronizationprofile"></a>Удаление educationSynchronizationProfile
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов на основе идентификатора.
 
@@ -33,11 +33,11 @@ DELETE /synchronizationProfiles/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный.  |
-|Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
+| Authorization  | string  | Bearer {токен}. Обязательный.  |
+|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `202 Accepted` и не возвращает тело отклика.
@@ -62,3 +62,11 @@ DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```http
 HTTP/1.1 202 Accepted
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsynchronizationprofile-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

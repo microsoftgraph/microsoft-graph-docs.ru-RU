@@ -5,16 +5,16 @@ ms.date: 09/14/2017
 title: MentionAction
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 48ac49c80a39fd6bc51b048a8eb7dab6e62da810
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9101ffed094fd78189b73eab511be88c8bf449de
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974142"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513013"
 ---
 # <a name="mentionaction-resource-type"></a>Тип ресурса MentionAction
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **MentionAction** предоставляет сведения о ресурсе [activity][], в котором есть упоминания пользователей.
 
@@ -46,10 +46,15 @@ ms.locfileid: "27974142"
 
 На данный момент записи о действиях над элементом доступны только в SharePoint и OneDrive для бизнеса.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The MentionAction object provides information about who was mentioned during an activity.",
   "keywords": "activities,activity,action,mention",
   "section": "documentation",
-  "tocPath": "Resources/MentionAction"
-} -->
+  "tocPath": "Resources/MentionAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/mentionaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

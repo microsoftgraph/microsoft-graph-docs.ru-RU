@@ -4,16 +4,16 @@ description: Обновление свойств объекта сообщени
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6553365ffd31c56348c930be5562ebd65abc734d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977768"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515687"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновляет свойства объекта message.
 ## <a name="permissions"></a>Разрешения
@@ -43,23 +43,23 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|Получателей скрытой копии сообщения. |
-|Основной текст|ItemBody|Текст сообщения. Обновляемые только если isDraft = true.|
+|bccRecipients|Recipient|Получатели скрытой копии сообщения. |
+|Основной текст|ItemBody|Текст сообщения. Это свойство можно обновить, только если параметр IsDraft имеет значение true.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
-|ccRecipients|Коллекция объектов Recipient|Получателей копии сообщения. |
+|ccRecipients|Коллекция объектов Recipient|Получатели копии сообщения. |
 |from|Recipient|Владелец почтового ящика и отправитель сообщения. Должно соответствовать фактический почтового ящика, используемого. |
 |importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
 |inferenceClassification | String | Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Возможные значения: `focused` или `other`. |
-|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Обновляемые только если isDraft = true.|
+|internetMessageId |String |Идентификатор сообщения в формате, определенном в документе [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Это свойство можно обновить, только если параметр IsDraft имеет значение true.|
 |isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
 |replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Обновляемые только если isDraft = true.|
 |sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
-|subject|String|Тема сообщения. Обновляемые только если isDraft = true.|
-|toRecipients|Коллекция объектов Recipient|Кому получателей сообщения. |
+|subject|String|Тема сообщения. Это свойство можно обновить, только если параметр IsDraft имеет значение true.|
+|toRecipients|Коллекция объектов Recipient|Получатели сообщения, указанные в поле "Кому". |
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `PATCH` можно добавлять, обновлять или удалять собственные данные, касающиеся определенных приложений, в настраиваемых свойствах расширения в существующем экземпляре **message**.
 
@@ -121,10 +121,15 @@ Content-length: 248
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update message",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/message-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

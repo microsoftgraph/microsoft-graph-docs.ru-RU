@@ -4,16 +4,16 @@ description: Интерфейсы API в Microsoft Graph education Улучши�
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
-ms.openlocfilehash: f5803a5a74933bfe4f09661e68288bc11954a65b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9e106da7eb717a091941e16f4a70af8a012802f3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958091"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516933"
 ---
 # <a name="working-with-education-apis-in-microsoft-graph"></a>Работа с интерфейсами API для образования в Microsoft Graph
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Интерфейсы API в Microsoft Graph education Улучшите ресурсов Office 365 и данных с помощью сведений, имеющих отношение к education сценарии, включая школ, студентов, преподавателей, классы, регистрации и назначений. Это упрощает создание решений, интегрируемых с образовательными ресурсами.
 
@@ -75,7 +75,7 @@ API для работы со списком поддерживают следу�
 
 <!-- Should you list delete scenarios here as well? -->
 
-## <a name="assignments"></a>назначения; 
+## <a name="assignments"></a>Assignments 
 
 Можно использовать education связанные назначения API-интерфейсы для интеграции с назначениями в группах Майкрософт. Группами Майкрософт в Office 365 для образовательных заведений на основании же образование интерфейсы API и обеспечивает пример использования что можно сделать с помощью интерфейсов API. Ваше приложение могут использовать эти API-интерфейсы для взаимодействия с назначениями на протяжении жизненного цикла назначения. 
 
@@ -129,3 +129,11 @@ API для работы со списком поддерживают следу�
 - Изучите ресурсы и методы, наиболее полезные для вашего сценария.
 - опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/education-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

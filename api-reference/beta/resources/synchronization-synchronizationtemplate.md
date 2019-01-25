@@ -2,16 +2,16 @@
 title: Тип ресурса synchronizationTemplate
 description: " всем пользователям можно извлечь шаблон, чтобы увидеть параметры по умолчанию, включая схемы синхронизации."
 localization_priority: Normal
-ms.openlocfilehash: e98d3fa16d0a80ac9353aaa75200d8cb24d3e904
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 75df13d55cfb58aafe8a751279e103424aa29367
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833077"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516555"
 ---
 # <a name="synchronizationtemplate-resource-type"></a>Тип ресурса synchronizationTemplate
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Предоставляет параметры предварительно настроенным синхронизации для конкретного приложения. Эти параметры будет использоваться по умолчанию для каждого [задания синхронизации](synchronization-synchronizationjob.md) , основанный на шаблоне. Разработчик приложений задает шаблон; всем пользователям можно извлечь шаблон, чтобы увидеть параметры по умолчанию, включая [схемы синхронизации](synchronization-synchronizationschema.md).
 
@@ -22,7 +22,7 @@ ms.locfileid: "27833077"
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
 |[List](../api/synchronization-synchronizationtemplate-list.md)    |[synchronizationTemplate](synchronization-synchronizationtemplate.md) коллекции  |Список шаблонов, доступных для приложения или экземпляра приложения (участников-служб).|
-|[получение](../api/synchronization-synchronizationtemplate-get.md);      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Чтение свойства и связи объекта **synchronizationTemplate** .|
+|[Get](../api/synchronization-synchronizationtemplate-get.md)      |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Чтение свойства и связи объекта **synchronizationTemplate** .|
 <!-- 
 |[Create](../api/synchronization-synchronizationtemplate-post.md) |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Create a new template for an application.|
 |[Update](../api/synchronization-synchronizationtemplate-put.md)   |[synchronizationTemplate](synchronization-synchronizationtemplate.md)   |Update the template.| 
@@ -32,15 +32,15 @@ ms.locfileid: "27833077"
 
 | Свойство      | Тип                      | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|id             |Строка                     |Шаблон уникальный идентификатор.|
+|id             |String                     |Шаблон уникальный идентификатор.|
 |applicationId  |String                     |Идентификатор приложения, к которому принадлежит этот шаблон.|
-|по умолчанию        |Логический                    |`true`Если этот шаблон рекомендуется по умолчанию для приложения.|
-|описание    |String                     |Описание шаблона.|
-|обнаруживаемые   |Строка                     |`true`Если этот шаблон должен отображаться в коллекцию шаблонов, доступных для экземпляра приложения (участников-служб).|
-|factoryTag     |Строка                     |Один из известных фабрики тегов, поддерживаемые обработчиком синхронизации. **FactoryTag** сообщает о том, обработчик синхронизации реализация для использования при обработке задания на основе этого шаблона.|
-|метаданные       |metadataEntry коллекции   |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
+|по умолчанию        |Логическое                    |`true`Если этот шаблон рекомендуется по умолчанию для приложения.|
+|description    |String                     |Описание шаблона.|
+|обнаруживаемые   |String                     |`true`Если этот шаблон должен отображаться в коллекцию шаблонов, доступных для экземпляра приложения (участников-служб).|
+|factoryTag     |String                     |Один из известных фабрики тегов, поддерживаемые обработчиком синхронизации. **FactoryTag** сообщает о том, обработчик синхронизации реализация для использования при обработке задания на основе этого шаблона.|
+|Метаданные       |metadataEntry коллекции   |Расширение дополнительные свойства. Если не указан явно, значения метаданных не должно изменяться.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь      | Тип      |Описание|
 |:------------------|:----------|:----------|
 |схема             |[synchronizationSchema](synchronization-synchronizationschema.md)     |Схема синхронизации по умолчанию для заданий на основе этого шаблона.|
@@ -73,10 +73,15 @@ ms.locfileid: "27833077"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "synchronizationTemplate resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-synchronizationtemplate.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

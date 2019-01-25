@@ -2,16 +2,16 @@
 title: Список programControlTypes
 description: В Azure AD доступа к функции проверки, список всех объектов programControlType.
 localization_priority: Normal
-ms.openlocfilehash: ae5a2298d3c0f542f7d8fd766f412b8cf5648730
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 00983cadf4bd1e0cf136c594f06ac3ee6fbb1de5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860888"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515694"
 ---
 # <a name="list-programcontroltypes"></a>Список programControlTypes
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В функции [доступа дается обзор](../resources/accessreviews-root.md) Azure AD список всех объектов [programControlType](../resources/programcontroltype.md) .
 ## <a name="permissions"></a>Разрешения
@@ -31,9 +31,9 @@ GET /programControlTypes
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -92,10 +92,15 @@ Content-type: application/json
 |[Список programControls программы](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) коллекции|    Получите коллекцию элементов управления из программы.|
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List program control types",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/programcontroltype-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

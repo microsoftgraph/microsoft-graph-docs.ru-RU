@@ -2,16 +2,16 @@
 title: Добавление соединителя connectorGroup
 description: Используйте этот интерфейс API для добавления нового connectorGroup соединитель.
 localization_priority: Normal
-ms.openlocfilehash: 13967fc31bbf482a8eba6db9fe5e4dc1d7bf305d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 097f24233ec1c540885d67b60a4b471ff1c64f65
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27854623"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514630"
 ---
 # <a name="add-connector-to-connectorgroup"></a>Добавление соединителя connectorGroup
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот интерфейс API для добавления нового connectorGroup соединитель.
 ## <a name="permissions"></a>Разрешения
@@ -32,9 +32,9 @@ POST /connectors/{id}/memberOf
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Носителя. Обязательное|
+| Authorization  | Токен носителя. Обязательный|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 
 ## <a name="response"></a>Ответ
@@ -59,7 +59,8 @@ Content-length: 99
 ```
 В тексте запроса укажите представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -80,10 +81,15 @@ Content-length: 119
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create connectorGroup",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/connector-post-memberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

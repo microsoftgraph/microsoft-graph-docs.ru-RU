@@ -3,16 +3,16 @@ title: Тип ресурса historyItem
 description: Представляет элемент журнала для действия в приложении. Действия пользователя представляют одну целевую в вашем приложении -, например Показать TV, документа или текущей кампании в игру. Когда пользователь подключает с помощью этого действия, деловые регистрируются как элемента журнала, которое указывает время начала и окончания для этого действия. Как пользователь повторно массовых с этой операции со временем, несколько элементов журнала записываются действия одного пользователя.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 168587aa54446aeee78107deaa9087c6bffb8586
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 640b2e777337182b95572ba086f1caf3459ef57e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976956"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514700"
 ---
 # <a name="historyitem-resource-type"></a>Тип ресурса historyItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет элемент журнала для [действия](projectrome-activity.md) в приложении. Действия пользователя представляют одну целевую в вашем приложении -, например Показать TV, документа или текущей кампании в игру. Когда пользователь подключает с помощью этого действия, деловые регистрируются как элемента журнала, которое указывает время начала и окончания для этого действия. Как пользователь повторно массовых с этой операции со временем, несколько элементов журнала записываются действия одного пользователя.
 
@@ -30,20 +30,20 @@ ms.locfileid: "27976956"
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
 |status | EnumType | Установка с сервера. Код состояния, используемое для идентификации допустимый объекты. Значения: активный, обновления, удаления, игнорируются.|
-|userTimezone | Строка | Необязательный параметр. Часовой пояс, в котором устройством пользователя, используемый для создания операции находился во время создания активности. Значения, указанные как Олсон идентификаторы для поддержки различных платформах представление.|
+|userTimezone | String | Необязательный параметр. Часовой пояс, в котором устройством пользователя, используемый для создания операции находился во время создания активности. Значения, указанные как Олсон идентификаторы для поддержки различных платформах представление.|
 |createdDateTime | DateTimeOffset | Установка с сервера. Дата и время в формате UTC, когда объект был создан на сервере.|
 |lastModifiedDateTime | DateTimeOffset | Установка с сервера. Дата и время в формате UTC, когда объект был изменен на сервере.|
-|id | Строка | Обязательный. Идентификатор GUID набора клиента для объекта **historyItem** .|
+|id | String | Обязательный. Идентификатор GUID набора клиента для объекта **historyItem** .|
 |startedDateTime | DateTimeOffset | Обязательный. При запуске **historyItem** (активности сеанса) UTC даты и времени. Требуется для журнал временной шкалы.|
-|lastActiveDateTime | DateTimeOffset | Необязательное. При **historyItem** (активности сеанса) последнего был распознан как активных, так и по завершении работы — Если значение null, **historyItem** состояние UTC даты и времени должны быть Ongoing.|
-|expirationDateTime | DateTimeOffset | Необязательное. Даты-времени UTC при **historyItem** подвергнется окончательного удаления. Можно задать клиентом.|
-|activeDurationSeconds | int | Необязательное. Продолжительность сотрудничества активных пользователей. Если не указано, отсчитывается от **startedDateTime** и **lastActiveDateTime**.|
+|lastActiveDateTime | DateTimeOffset | Необязательный параметр. При **historyItem** (активности сеанса) последнего был распознан как активных, так и по завершении работы — Если значение null, **historyItem** состояние UTC даты и времени должны быть Ongoing.|
+|expirationDateTime | DateTimeOffset | Необязательный параметр. Даты-времени UTC при **historyItem** подвергнется окончательного удаления. Можно задать клиентом.|
+|activeDurationSeconds | int | Необязательный параметр. Продолжительность сотрудничества активных пользователей. Если не указано, отсчитывается от **startedDateTime** и **lastActiveDateTime**.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 |Связь | Тип | Описание|
 |:------------|:-----|:-----------|
-|activity| [действии](../resources/projectrome-activity.md) | Необязательное. NavigationProperty/вложенности; свойство навигации для связанного действия.|
+|activity| [действии](../resources/projectrome-activity.md) | Необязательный параметр. NavigationProperty/вложенности; свойство навигации для связанного действия.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -75,10 +75,15 @@ ms.locfileid: "27976956"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "historyitem resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/projectrome-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

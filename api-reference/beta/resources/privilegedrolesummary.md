@@ -2,16 +2,16 @@
 title: Тип ресурса privilegedRoleSummary
 description: Статистика для определенной роли.
 localization_priority: Normal
-ms.openlocfilehash: b74b562a992f7795f3ae8e317608f1e370bc2a4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 2ed34f556f52c41729bfa108fbb6eb0c608f6b67
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27858620"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513741"
 ---
 # <a name="privilegedrolesummary-resource-type"></a>Тип ресурса privilegedRoleSummary
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Статистика для определенной роли.
 
@@ -26,13 +26,13 @@ ms.locfileid: "27858620"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |elevatedCount|int32|Число пользователей, имеющих роли, назначенной и роль активирован.|
-|id|строка| Уникальный идентификатор для роли. Только для чтения.|
+|id|string| Уникальный идентификатор для роли. Только для чтения.|
 |managedCount|int32|Число пользователей, имеющих роли, назначенной, но роль отключена.|
 |mfaEnabled|boolean|**значение true,** Если требуется для активации роли многофакторной проверкой Подлинности. **значение false,** Если роль активации не требует многофакторной проверкой Подлинности.|
 |status|string| Возможные значения: `ok`, `bad`. Значение зависит от отношение числа (managedCount / usersCount). Если отношение меньше, чем пороговых, `ok` возвращается. В противном случае `bad` возвращается.|
 |usersCount|int32|Число пользователей, которым назначен роли.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -62,10 +62,15 @@ ms.locfileid: "27858620"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "privilegedRoleSummary resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/privilegedrolesummary.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

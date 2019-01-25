@@ -2,16 +2,16 @@
 title: Обновление политики
 description: Обновление свойств в уже существующей политики.
 localization_priority: Normal
-ms.openlocfilehash: 2992f2f76c0e8b213ad8aabca1bfd0fe59883989
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d99aa42c4a67f6b874cbc1e266da76287388c05e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27857157"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515414"
 ---
 # <a name="update-policy"></a>Обновление политики
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств в уже существующей [политики](../resources/policy.md).
 
@@ -35,15 +35,15 @@ PATCH /policies/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | application/json  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите объект JSON вместе с параметрами, которые должны быть обновлены. В следующей таблице показаны возможные параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|definition|Строка|Stringified версия объекта [политики](../resources/policy.md) .|
-|displayName|Строка|Пользовательское имя для политики.|
-|isOrganizationDefault|Логический|Указывает, если эта политика будет применяться по умолчанию.|
-|type|Строка|Указывает тип политики. В настоящее время должен быть «TokenLifetimePolicy»|
+|definition|String|Stringified версия объекта [политики](../resources/policy.md) .|
+|displayName|String|Пользовательское имя для политики.|
+|isOrganizationDefault|Логическое|Указывает, если эта политика будет применяться по умолчанию.|
+|type|String|Указывает тип политики. В настоящее время должен быть «TokenLifetimePolicy»|
 
 ## <a name="response"></a>Ответ
 
@@ -65,8 +65,17 @@ Content-Type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 
 ```http
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/policy-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

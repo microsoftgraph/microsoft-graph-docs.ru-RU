@@ -5,16 +5,16 @@ ms.date: 09/10/2017
 title: Обновление файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e634cbba53a3eeca2f86f8bbfb63beb4ac0baa08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 5a10caf65846418013712e89ade7a182726c80a8
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985531"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514602"
 ---
 # <a name="update-driveitem-properties"></a>Обновление свойств ресурса DriveItem
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление метаданных ресурса [DriveItem](../resources/driveitem.md) по идентификатору или пути.
 
@@ -55,7 +55,7 @@ PATCH /users/{user-id}/drive/items/{item-id}
 Предыдущие значения существующих свойств, не включенных в текст запроса, будут сохранены или вычислены повторно с учетом изменений, внесенных в значения других свойств.
 Для достижения максимальной оптимальной производительности в приложении не следует указывать свойства, которые не были изменены.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
@@ -74,7 +74,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле отклика.
 
@@ -98,10 +98,15 @@ Content-type: application/json
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update or replace the contents or properties of an item.",
   "keywords": "update,replace,contents,item",
   "section": "documentation",
-  "tocPath": "Items/Update"
-} -->
+  "tocPath": "Items/Update",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

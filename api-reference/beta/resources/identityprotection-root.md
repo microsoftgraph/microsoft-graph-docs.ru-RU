@@ -4,16 +4,16 @@ description: Microsoft Graph можно использовать для запр
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 9c92be83fd3248ad10578446f91b38176913da1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 597ff7ed156dede995b10f07ee6ac6945745b83c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953625"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515099"
 ---
 # <a name="use-the-azure-ad-identity-protection-api-preview"></a>Защита от удостоверения Azure AD API (Предварительная версия)
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Microsoft Graph можно использовать для запроса ресурсов [identityRiskEvent](identityriskevent.md) для каждого типа события риска выявлено системой [защиты удостоверения Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection). Эти события доступны для клиентов с Azure AD Premium P2. Подмножество событий доступен для клиентов с P1 Azure AD Premium.
 
@@ -47,3 +47,11 @@ Microsoft Graph можно использовать для запроса рес
 
 * [О защите от удостоверения Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection)
 * [Начало работы с Microsoft Graph и защиты удостоверения Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-identityprotection-graph-getting-started)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/identityprotection-root.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,20 +4,20 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: Folder
 localization_priority: Normal
-ms.openlocfilehash: 98c477ebeda436c57db3eaac5cb062639a2447d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: af22487f017830481af6f39e113b80009f2e567f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27856499"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512754"
 ---
 # <a name="folder-resource-type"></a>Тип ресурса Folder
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **Folder** — это единая структура, объединяющая данные элемента, связанные с папками. Ресурсы [**DriveItem**](driveitem.md) с ненулевым аспектом **folder** являются контейнерами для других ресурсов DriveItem.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -44,17 +44,22 @@ ms.locfileid: "27856499"
 | **view**       | [folderView][] | Коллекция свойств, определяющих рекомендуемое представление для папки.
 
 
-## <a name="remarks"></a>Примечания 
+## <a name="remarks"></a>Замечания 
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem][].
 
 [folderView]: folderview.md
 [DriveItem]: driveitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "folder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/folder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

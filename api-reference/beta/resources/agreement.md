@@ -2,16 +2,16 @@
 title: Тип ресурса соглашения
 description: Представляет клиента настраиваемый соглашение об условиях использования, который создается и управляется с помощью Azure Active Directory (Azure AD). Можно использовать следующие методы для создания и управления компонента Azure Active Directory условия использования согласно сценарию.
 localization_priority: Normal
-ms.openlocfilehash: 8c082ed6229b44cc3a3d4cba6dd8645feee5d07c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27845348"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513853"
 ---
 # <a name="agreement-resource-type"></a>Тип ресурса соглашения
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет клиента настраиваемый соглашение об условиях использования, который создается и управляется с помощью Azure Active Directory (Azure AD). Можно использовать следующие методы для создания и управления [Azure Active Directory условия использования компонента](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) согласно сценарию.
 
@@ -32,11 +32,11 @@ ms.locfileid: "27845348"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемое имя соглашения.|
-|id|Строка| Только для чтения.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, есть ли у пользователя можно развернуть и отобразить соглашения перед подтверждением.|
+|displayName|String|Отображаемое имя соглашения.|
+|id|String| Только для чтения.|
+|isViewingBeforeAcceptanceRequired|Логическое|Указывает, есть ли у пользователя можно развернуть и отобразить соглашения перед подтверждением.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип        | Описание |
 |:-------------|:------------|:------------|
 |files|[agreementFile](agreementfile.md) коллекции|Только для чтения. PDF-файлы, связанные с этого соглашения.|
@@ -64,10 +64,15 @@ ms.locfileid: "27845348"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "agreement resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/agreement.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: ItemAnalytics
 localization_priority: Normal
-ms.openlocfilehash: 03626b5dad041181558af076b5dc0ac05b684e13
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 72e7f4de752ec04fbc5ebd98655254e2597fa499
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842415"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514966"
 ---
 # <a name="itemanalytics-resource-type"></a>Тип ресурса itemAnalytics
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **itemAnalytics** предоставляет analytics о действиях, выполняемых над элементом. Этот ресурс в данный момент доступна только на сервере SharePoint и OneDrive для бизнеса.
 
@@ -49,10 +49,15 @@ ms.locfileid: "27842415"
 
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The ItemAnalytics object provides analytics about activities that took place on an item.",
   "keywords": "activities,activity,action,analytics",
   "section": "documentation",
-  "tocPath": "Resources/ItemAnalytics"
-} -->
+  "tocPath": "Resources/ItemAnalytics",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/itemanalytics.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

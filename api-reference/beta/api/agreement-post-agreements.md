@@ -2,16 +2,16 @@
 title: Создание соглашения
 description: Создайте новый объект соглашения.
 localization_priority: Normal
-ms.openlocfilehash: 4768912a7c5be722878d6b910d6d68ded460c702
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 5040651e032a4f5d0ef2340646f11eb51bfff5eb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870639"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514427"
 ---
 # <a name="create-agreement"></a>Создание соглашения
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создайте новый объект [соглашения](../resources/agreement.md) .
 ## <a name="permissions"></a>Разрешения
@@ -31,20 +31,20 @@ POST /agreements
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление объекта [соглашение](../resources/agreement.md) с JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|displayName|Строка|Отображаемое имя соглашения.|
-|isViewingBeforeAcceptanceRequired|Логический|Указывает, есть ли у пользователя можно развернуть и отобразить соглашения перед подтверждением.|
-|файлы и имя файла|Строка|Имя файла соглашения (например, TOU.pdf).|
-|файлы/isDefault|Логический|Указывает, является ли файл соглашения по умолчанию Если ни одна из языка и региональных параметров соответствует предпочтений клиента. Если ни одна из файл помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
-|файлы/языка|Строка|Язык и региональные параметры соглашения файла в формате languagecode2-страны/regioncode2. languagecode2 — это строчная двухбуквенный код, производный от ISO 639-1. Страна/regioncode2 является производным от ISO 3166 и обычно состоит из двух прописных букв или тег языка BCP 47 (например, en US).|
+|displayName|String|Отображаемое имя соглашения.|
+|isViewingBeforeAcceptanceRequired|Логическое|Указывает, есть ли у пользователя можно развернуть и отобразить соглашения перед подтверждением.|
+|файлы и имя файла|String|Имя файла соглашения (например, TOU.pdf).|
+|файлы/isDefault|Логическое|Указывает, является ли файл соглашения по умолчанию Если ни одна из языка и региональных параметров соответствует предпочтений клиента. Если ни одна из файл помечен как по умолчанию, первый будет рассматриваться как по умолчанию.|
+|файлы/языка|String|Язык и региональные параметры соглашения файла в формате languagecode2-страны/regioncode2. languagecode2 — это строчная двухбуквенный код, производный от ISO 639-1. Страна/regioncode2 является производным от ISO 3166 и обычно состоит из двух прописных букв или тег языка BCP 47 (например, en US).|
 |файлы/fileData/БД|Binary|Данные, представляющие условия использования PDF-документа.|
 
 ## <a name="response"></a>Ответ
@@ -98,10 +98,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create agreement",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/agreement-post-agreements.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/13/2017
 title: contentTypeOrder
 localization_priority: Normal
-ms.openlocfilehash: ad25ececa9a32a1aaab7f25bf909f7e1ef640dec
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 9b92a8234c493ae9b0f396db7010e7bf717d5959
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825755"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514371"
 ---
 # <a name="contenttypeorder-resource-type"></a>Тип ресурса contentTypeOrder
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **contentTypeOrder** указывает, в каком порядке тип контента будет отображаться в пользовательском интерфейсе выбора.
 
@@ -33,13 +33,18 @@ ms.locfileid: "27825755"
 
 | Имя свойства | Тип    | Описание
 |:--------------|:--------|:----------------------------------------------------
-| **default**   | логический | Указывает, используется ли этот тип контента по умолчанию.
+| **default**   | boolean | Указывает, используется ли этот тип контента по умолчанию.
 | **position**  | Int32   | Указывает позицию, в которой тип контента отображается в пользовательском интерфейсе выбора.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Resources/ContentTypeOrder"
-} -->
+  "tocPath": "Resources/ContentTypeOrder",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/contentTypeOrder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

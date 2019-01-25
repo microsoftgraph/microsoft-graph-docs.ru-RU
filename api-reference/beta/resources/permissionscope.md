@@ -2,16 +2,16 @@
 title: Тип ресурса permissionScope
 description: Представляет OAuth 2.0 делегировать область разрешений. Указанный OAuth 2.0, области делегированных разрешений может быть затребованы клиентских приложений (через коллекцию **requiredResourceAccess** для объекта Application) при вызове ресурса приложения. Свойство **oauth2Permissions** ServicePrincipal сущности и сущности приложения — это коллекция **OAuth2Permission**.
 localization_priority: Normal
-ms.openlocfilehash: a294316f5c6255d0873ce0dbe809c33dad89ae08
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 00629a6e123ef19290d3c1bd4797e4bab3ce95c0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818153"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517080"
 ---
 # <a name="permissionscope-resource-type"></a>Тип ресурса permissionScope
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет OAuth 2.0 делегировать область разрешений. Указанный OAuth 2.0, области делегированных разрешений может быть затребованы клиентских приложений (через коллекцию **requiredResourceAccess** для объекта [Application](application.md) ) при вызове ресурса приложения. Свойство **oauth2Permissions** [ServicePrincipal](serviceprincipal.md) сущности и сущности [приложения](application.md) — это коллекция **OAuth2Permission**.
 
@@ -19,15 +19,15 @@ ms.locfileid: "27818153"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|adminConsentDescription|Строка| Текст справки разрешение, которое отображается в admin согласия и приложение назначения приемы и способы работы. |
-|adminConsentDisplayName|Строка| Отображаемое имя для разрешения, которое отображается в admin согласия и приложение назначения приемы и способы работы. |
+|adminConsentDescription|String| Текст справки разрешение, которое отображается в admin согласия и приложение назначения приемы и способы работы. |
+|adminConsentDisplayName|String| Отображаемое имя для разрешения, которое отображается в admin согласия и приложение назначения приемы и способы работы. |
 |id|Guid| Идентификатор уникальные области разрешений внутри семейства oauth2Permissions. |
 |isEnabled|Логический| При создании или обновлении разрешение, это свойство должно быть присвоено **значение true** (по умолчанию). Чтобы удалить разрешение, это свойство необходимо сначала задать значение **false**. На этом этапе в последующих вызовов, могут быть удалены разрешения. |
-|Происхождение|Строка| Для внутреннего использования. |
-|type|Строка| Указывает, является ли это разрешение области можно consented конечным пользователем или, будет ли это разрешение всей клиента, в котором должен быть consented для администратором компании. Возможные значения: *пользователь* или *администратор*. |
-|userConsentDescription|Строка| Текст справки разрешение, которое отображается в разрешения для конечных пользователей. |
-|userConsentDisplayName|Строка| Отображаемое имя для разрешения, которое отображается в разрешения для конечных пользователей. |
-|value|Строка| Значение утверждения область, должно привести к приложению ресурсов в маркер доступа OAuth 2.0. |
+|Происхождение|String| Для внутреннего использования. |
+|type|String| Указывает, является ли это разрешение области можно consented конечным пользователем или, будет ли это разрешение всей клиента, в котором должен быть consented для администратором компании. Возможные значения: *пользователь* или *администратор*. |
+|userConsentDescription|String| Текст справки разрешение, которое отображается в разрешения для конечных пользователей. |
+|userConsentDisplayName|String| Отображаемое имя для разрешения, которое отображается в разрешения для конечных пользователей. |
+|value|String| Значение утверждения область, должно привести к приложению ресурсов в маркер доступа OAuth 2.0. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -58,10 +58,15 @@ ms.locfileid: "27818153"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "permissionScope resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/permissionscope.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

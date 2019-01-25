@@ -4,16 +4,16 @@ description: 'Папка, содержащая задачи Outlook (колле�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 6e5b1297bfae4d03c42988329e661979e899e2bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937693"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29515302"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Тип ресурса outlookTaskFolder
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Папка, содержащая задачи Outlook (коллекцию объектов [outlookTask](outlooktask.md) ). 
 
@@ -27,7 +27,7 @@ ms.locfileid: "27937693"
 |[Получение outlookTaskFolder](../api/outlooktaskfolder-get.md) | [outlookTaskFolder](outlooktaskfolder.md) |Получите свойства и связи указанной папки задач Outlook.|
 |[Создание outlookTask](../api/outlooktaskfolder-post-tasks.md) |[outlookTask](outlooktask.md)| Создание задачи Outlook в папке указанной задачи.|
 |[Перечисление задач](../api/outlooktaskfolder-list-tasks.md) |[outlookTask](outlooktask.md) коллекции| Получите все задачи Outlook в указанной папке.|
-|[обновление](../api/outlooktaskfolder-update.md). | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление для записи свойств папки задач Outlook. |
+|[Update](../api/outlooktaskfolder-update.md) | [outlookTaskFolder](outlooktaskfolder.md)   |Обновление для записи свойств папки задач Outlook. |
 |[Delete](../api/outlooktaskfolder-delete.md) | Нет |Удаление указанной папки задач Outlook.|
 |**Расширенные свойства**| | |
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTaskFolder](outlooktaskfolder.md)  |Создайте один или несколько расширенных свойств одно значение в новую или существующую папку задач Outlook.   |
@@ -38,13 +38,13 @@ ms.locfileid: "27937693"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|changeKey|Строка|Версия папки задач.|
-|id|Строка|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
-|isDefaultFolder|Логический|Значение true, если папка является папки задач по умолчанию.|
-|name|Строка|Имя папки задач.|
+|changeKey|String|Версия папки задач.|
+|id|String|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
+|isDefaultFolder|Логическое|Значение true, если папка является папки задач по умолчанию.|
+|name|String|Имя папки задач.|
 |parentGroupKey|Guid|Уникальный идентификатор GUID для родительской папки задач группы.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция Многозначный расширенные свойства для папки задач. Только для чтения. Допускается значение null.|
@@ -77,10 +77,15 @@ ms.locfileid: "27937693"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTaskFolder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/outlooktaskfolder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

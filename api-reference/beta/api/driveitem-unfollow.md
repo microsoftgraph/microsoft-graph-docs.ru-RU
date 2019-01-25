@@ -4,16 +4,16 @@ ms.author: chackman
 title: Отменить подписку на диске элемента
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a42f740b3ea6f706529a5353e9cbb846bb7a4e6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 064ab2d5ad86df5341a0f2f5a46fe7c227ff35fb
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945953"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513111"
 ---
 # <a name="unfollow-drive-item"></a>Отменить подписку на диске элемента
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Отменить подписку на [driveItem](../resources/driveitem.md).
 
@@ -63,10 +63,15 @@ DELETE /me/drive/following/{item-id}
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unfollow an item that the user is following.",
   "keywords": "unfollow item",
   "section": "documentation",
-  "tocPath": "Items/Unfollow"
-} -->
+  "tocPath": "Items/Unfollow",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-unfollow.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

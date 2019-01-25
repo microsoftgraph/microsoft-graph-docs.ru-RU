@@ -1,20 +1,20 @@
 ---
 title: 'bookingAppointment: Отмена'
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Отменить указанного bookingAppointment в указанном bookingbusiness и отправить сообщение участвующего элементы клиента и персонала.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 2ea1baae613188037ab806a81a6341daecaddc65
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c202ea309641bdcda3e1124792fdc04ad97e02ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917253"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514686"
 ---
 # <a name="bookingappointment-cancel"></a>bookingAppointment: Отмена
 
- > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
- 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Отменить указанного [bookingAppointment](../resources/bookingappointment.md) в указанном [bookingbusiness](../resources/bookingbusiness.md)и отправить сообщение связанных клиентов и сотрудников.
 
 ## <a name="permissions"></a>Разрешения
@@ -24,7 +24,7 @@ ms.locfileid: "27917253"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  | 
+|Для приложений | Не поддерживается.  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,14 +37,14 @@ POST /bookingBusinesses/{id}/appointments/{id}/cancel
 |:---------------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|cancellationMessage|Строка|Сообщение для подтверждения с клиентом отменена встречи.|
+|cancellationMessage|String|Сообщение для подтверждения с клиентом отменена встречи.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
 При попытке отменить встречи, которая не существует, этот метод возвращает `HTTP 404 Not found`.
@@ -67,7 +67,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,10 +79,15 @@ HTTP/1.1 204 No content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingAppointment: cancel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingappointment-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

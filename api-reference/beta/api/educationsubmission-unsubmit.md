@@ -4,16 +4,16 @@ description: 'Действие, которое указывает, что сту
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: fc17216800c39f0a094ba5f8d9f281394ba7e2de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e8ce4c5d4bf68dca22f686a1b3647c67d7836bed
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945470"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513510"
 ---
 # <a name="educationsubmission-unsubmit"></a>educationSubmission: unsubmit
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Действие, которое указывает, что студента работает на отправки назначения после включения. Это действие может быть занято только учащегося. Состояние отправки из «отправленные» изменится на «работа». Во время процесса отправки все ресурсы копируются из submittedResources интервалов workingResources. Преподаватель выполнит поиск в списке ресурсы рабочее для ранжирования.
 
@@ -37,10 +37,10 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/unsubmit
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -56,7 +56,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -69,10 +69,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationSubmission: unsubmit",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/educationsubmission-unsubmit.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
