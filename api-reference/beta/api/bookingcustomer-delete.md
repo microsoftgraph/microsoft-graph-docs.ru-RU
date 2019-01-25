@@ -1,51 +1,51 @@
 ---
 title: Удаление bookingCustomer
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Удаление указанного bookingCustomer объекта.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 1e2c303733b850d45b8c805f40fc42bc835cc313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 767dea301d554e2ec0131d373b2206b0ef87db6a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941550"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29525915"
 ---
-# <a name="delete-bookingcustomer"></a><span data-ttu-id="c6c23-104">Удаление bookingCustomer</span><span class="sxs-lookup"><span data-stu-id="c6c23-104">Delete bookingCustomer</span></span>
+# <a name="delete-bookingcustomer"></a><span data-ttu-id="62a4d-103">Удаление bookingCustomer</span><span class="sxs-lookup"><span data-stu-id="62a4d-103">Delete bookingCustomer</span></span>
 
- > <span data-ttu-id="c6c23-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c6c23-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c6c23-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6c23-106">Use of these APIs in production applications is not supported.</span></span>
- 
-<span data-ttu-id="c6c23-107">Удаление указанного [bookingCustomer](../resources/bookingcustomer.md) объекта.</span><span class="sxs-lookup"><span data-stu-id="c6c23-107">Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c6c23-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c6c23-108">Permissions</span></span>
-<span data-ttu-id="c6c23-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6c23-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-|<span data-ttu-id="c6c23-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c6c23-111">Permission type</span></span>      | <span data-ttu-id="c6c23-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c6c23-112">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="62a4d-104">Удаление указанного [bookingCustomer](../resources/bookingcustomer.md) объекта.</span><span class="sxs-lookup"><span data-stu-id="62a4d-104">Delete the specified [bookingCustomer](../resources/bookingcustomer.md) object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="62a4d-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="62a4d-105">Permissions</span></span>
+<span data-ttu-id="62a4d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="62a4d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="62a4d-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="62a4d-108">Permission type</span></span>      | <span data-ttu-id="62a4d-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="62a4d-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c6c23-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c6c23-113">Delegated (work or school account)</span></span> | <span data-ttu-id="c6c23-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="c6c23-114">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
-|<span data-ttu-id="c6c23-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c6c23-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6c23-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6c23-116">Not supported.</span></span>   |
-|<span data-ttu-id="c6c23-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c6c23-117">Application</span></span> | <span data-ttu-id="c6c23-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c6c23-118">Not supported.</span></span>  | 
+|<span data-ttu-id="62a4d-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="62a4d-110">Delegated (work or school account)</span></span> | <span data-ttu-id="62a4d-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="62a4d-111">BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All</span></span>   |
+|<span data-ttu-id="62a4d-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="62a4d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62a4d-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="62a4d-113">Not supported.</span></span>   |
+|<span data-ttu-id="62a4d-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="62a4d-114">Application</span></span> | <span data-ttu-id="62a4d-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="62a4d-115">Not supported.</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="c6c23-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c6c23-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="62a4d-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="62a4d-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /bookingBusinesses/{id}/customers/{id}
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c6c23-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c6c23-120">Request headers</span></span>
-| <span data-ttu-id="c6c23-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c6c23-121">Name</span></span>       | <span data-ttu-id="c6c23-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c6c23-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="62a4d-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="62a4d-117">Request headers</span></span>
+| <span data-ttu-id="62a4d-118">Имя</span><span class="sxs-lookup"><span data-stu-id="62a4d-118">Name</span></span>       | <span data-ttu-id="62a4d-119">Описание</span><span class="sxs-lookup"><span data-stu-id="62a4d-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c6c23-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6c23-123">Authorization</span></span>  | <span data-ttu-id="c6c23-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="c6c23-124">Bearer {code}</span></span>|
+| <span data-ttu-id="62a4d-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="62a4d-120">Authorization</span></span>  | <span data-ttu-id="62a4d-121">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="62a4d-121">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c6c23-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c6c23-125">Request body</span></span>
-<span data-ttu-id="c6c23-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c6c23-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="62a4d-122">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="62a4d-122">Request body</span></span>
+<span data-ttu-id="62a4d-123">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="62a4d-123">Do not supply a request body for this method.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="c6c23-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6c23-127">Response</span></span>
-<span data-ttu-id="c6c23-p104">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c6c23-p104">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="62a4d-124">Ответ</span><span class="sxs-lookup"><span data-stu-id="62a4d-124">Response</span></span>
+<span data-ttu-id="62a4d-p102">В случае успешного выполнения этот метод возвращает код отклика `204, No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="62a4d-p102">If successful, this method returns `204, No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c6c23-130">Пример</span><span class="sxs-lookup"><span data-stu-id="c6c23-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="c6c23-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c6c23-131">Request</span></span>
-<span data-ttu-id="c6c23-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c6c23-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="62a4d-127">Пример</span><span class="sxs-lookup"><span data-stu-id="62a4d-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="62a4d-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="62a4d-128">Request</span></span>
+<span data-ttu-id="62a4d-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="62a4d-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_bookingcustomer"
@@ -53,8 +53,8 @@ DELETE /bookingBusinesses/{id}/customers/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/customers/80b5ddda-1e3b-4c9d-abe2-d606cc075e2e
 ```
-##### <a name="response"></a><span data-ttu-id="c6c23-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6c23-133">Response</span></span>
-<span data-ttu-id="c6c23-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c6c23-134">The following is an example of the response.</span></span> <span data-ttu-id="c6c23-135">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="c6c23-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="c6c23-136">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c6c23-136">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="62a4d-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="62a4d-130">Response</span></span>
+<span data-ttu-id="62a4d-131">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="62a4d-131">The following is an example of the response.</span></span> <span data-ttu-id="62a4d-132">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="62a4d-132">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="62a4d-133">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="62a4d-133">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -65,10 +65,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete bookingCustomer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/bookingcustomer-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

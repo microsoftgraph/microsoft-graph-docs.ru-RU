@@ -5,32 +5,32 @@ ms.date: 09/10/2017
 title: Поиск сайтов SharePoint по ключевому слову
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5a8f31080b2f06ccfb293f631fd18a716b3f2b09
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 16dae8ceab07c2902d1bdd17fa2b9dc045ffd021
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942852"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524186"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="b5c1b-102">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="b5c1b-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="7ebb8-102">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="7ebb8-102">Search for sites</span></span>
 
-> <span data-ttu-id="b5c1b-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b5c1b-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b5c1b-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b5c1b-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b5c1b-105">Поиск [сайтов][], соответствующих указанным ключевым словам, в клиенте SharePoint.</span><span class="sxs-lookup"><span data-stu-id="b5c1b-105">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="7ebb8-103">Поиск [сайтов][], соответствующих указанным ключевым словам, в клиенте SharePoint.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="b5c1b-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b5c1b-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="7ebb8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7ebb8-105">Permissions</span></span>
 
-<span data-ttu-id="b5c1b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b5c1b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="7ebb8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b5c1b-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b5c1b-110">Permission type</span></span>                        | <span data-ttu-id="b5c1b-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b5c1b-111">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="7ebb8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ebb8-108">Permission type</span></span>                        | <span data-ttu-id="7ebb8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="b5c1b-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b5c1b-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="b5c1b-113">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5c1b-113">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="b5c1b-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b5c1b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b5c1b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b5c1b-115">Not supported.</span></span>
-|<span data-ttu-id="b5c1b-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b5c1b-116">Application</span></span>                            | <span data-ttu-id="b5c1b-117">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b5c1b-117">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="7ebb8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7ebb8-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ebb8-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="7ebb8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ebb8-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-113">Not supported.</span></span>
+|<span data-ttu-id="7ebb8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ebb8-114">Application</span></span>                            | <span data-ttu-id="7ebb8-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ebb8-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="b5c1b-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b5c1b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ebb8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ebb8-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "27942852"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="b5c1b-119">Ответ</span><span class="sxs-lookup"><span data-stu-id="b5c1b-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="7ebb8-117">Ответ</span><span class="sxs-lookup"><span data-stu-id="7ebb8-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -68,10 +68,15 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Sites/Search"
-} -->
+  "tocPath": "Sites/Search",
+  "suppressions": [
+    "Error: /api-reference/beta/api/site-search.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

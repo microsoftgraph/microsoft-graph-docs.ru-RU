@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса importStatusModel
-description: Ниже представлено описание ресурса в формате JSON.
+description: Ниже показано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 47dbcdc97d0b70a1f7240e39fa73527ff12fae49
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c3fe64245d0fbce98db3ba87c3c39694e998c7e1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882938"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526055"
 ---
-# <a name="importstatusmodel-resource-type"></a><span data-ttu-id="b6d0a-103">Тип ресурса importStatusModel</span><span class="sxs-lookup"><span data-stu-id="b6d0a-103">importStatusModel resource type</span></span>
+# <a name="importstatusmodel-resource-type"></a><span data-ttu-id="4aa8a-103">Тип ресурса importStatusModel</span><span class="sxs-lookup"><span data-stu-id="4aa8a-103">importStatusModel resource type</span></span>
 
-> <span data-ttu-id="b6d0a-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b6d0a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b6d0a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6d0a-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="b6d0a-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b6d0a-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4aa8a-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4aa8a-104">JSON representation</span></span>
 
-<span data-ttu-id="b6d0a-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b6d0a-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4aa8a-105">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4aa8a-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -33,19 +33,24 @@ ms.locfileid: "27882938"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="b6d0a-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="b6d0a-108">Properties</span></span>
-| <span data-ttu-id="b6d0a-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="b6d0a-109">Property</span></span>     | <span data-ttu-id="b6d0a-110">Тип</span><span class="sxs-lookup"><span data-stu-id="b6d0a-110">Type</span></span>   |<span data-ttu-id="b6d0a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b6d0a-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4aa8a-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="4aa8a-106">Properties</span></span>
+| <span data-ttu-id="4aa8a-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="4aa8a-107">Property</span></span>     | <span data-ttu-id="4aa8a-108">Тип</span><span class="sxs-lookup"><span data-stu-id="4aa8a-108">Type</span></span>   |<span data-ttu-id="4aa8a-109">Описание</span><span class="sxs-lookup"><span data-stu-id="4aa8a-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b6d0a-112">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b6d0a-112">createdDateTime</span></span>| <span data-ttu-id="b6d0a-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b6d0a-113">DateTimeOffset</span></span> ||
-|<span data-ttu-id="b6d0a-114">id</span><span class="sxs-lookup"><span data-stu-id="b6d0a-114">id</span></span>|<span data-ttu-id="b6d0a-115">строка</span><span class="sxs-lookup"><span data-stu-id="b6d0a-115">string</span></span>||
-|<span data-ttu-id="b6d0a-116">status</span><span class="sxs-lookup"><span data-stu-id="b6d0a-116">status</span></span>|<span data-ttu-id="b6d0a-117">string</span><span class="sxs-lookup"><span data-stu-id="b6d0a-117">string</span></span>||
+|<span data-ttu-id="4aa8a-110">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="4aa8a-110">createdDateTime</span></span>| <span data-ttu-id="4aa8a-111">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4aa8a-111">DateTimeOffset</span></span> ||
+|<span data-ttu-id="4aa8a-112">id</span><span class="sxs-lookup"><span data-stu-id="4aa8a-112">id</span></span>|<span data-ttu-id="4aa8a-113">string</span><span class="sxs-lookup"><span data-stu-id="4aa8a-113">string</span></span>||
+|<span data-ttu-id="4aa8a-114">status</span><span class="sxs-lookup"><span data-stu-id="4aa8a-114">status</span></span>|<span data-ttu-id="4aa8a-115">string</span><span class="sxs-lookup"><span data-stu-id="4aa8a-115">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "importStatusModel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/importstatusmodel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

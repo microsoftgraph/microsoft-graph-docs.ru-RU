@@ -4,55 +4,55 @@ description: Позволяет отключить самого приложен
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fa4baed5af378c58f8e25dbdc5413c1bef743c32
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2f619cdc42ff914999ad8826ff31452ff82ea6a1
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956663"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524081"
 ---
-# <a name="call-mute"></a><span data-ttu-id="a74dc-103">Вызовите: Выкл.</span><span class="sxs-lookup"><span data-stu-id="a74dc-103">call: mute</span></span>
+# <a name="call-mute"></a><span data-ttu-id="c01c3-103">Вызовите: Выкл.</span><span class="sxs-lookup"><span data-stu-id="c01c3-103">call: mute</span></span>
 
-> <span data-ttu-id="a74dc-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a74dc-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a74dc-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74dc-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a74dc-106">Позволяет отключить самого приложения.</span><span class="sxs-lookup"><span data-stu-id="a74dc-106">Allows the application to mute itself.</span></span>
+<span data-ttu-id="c01c3-104">Позволяет отключить самого приложения.</span><span class="sxs-lookup"><span data-stu-id="c01c3-104">Allows the application to mute itself.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a74dc-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a74dc-107">Permissions</span></span>
-<span data-ttu-id="a74dc-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a74dc-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="c01c3-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c01c3-105">Permissions</span></span>
+<span data-ttu-id="c01c3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c01c3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="a74dc-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a74dc-110">Permission type</span></span>                        | <span data-ttu-id="a74dc-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a74dc-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c01c3-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c01c3-108">Permission type</span></span>                        | <span data-ttu-id="c01c3-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c01c3-109">Permissions (from least to most privileged)</span></span> |
 |:---------------------------------------|:--------------------------------------------|
-| <span data-ttu-id="a74dc-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a74dc-112">Delegated (work or school account)</span></span>     | <span data-ttu-id="a74dc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74dc-113">Not Supported.</span></span>                               |
-| <span data-ttu-id="a74dc-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a74dc-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a74dc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a74dc-115">Not Supported.</span></span>                               |
-| <span data-ttu-id="a74dc-116">Приложение</span><span class="sxs-lookup"><span data-stu-id="a74dc-116">Application</span></span>                            | <span data-ttu-id="a74dc-117">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="a74dc-117">None.</span></span>                                        |
+| <span data-ttu-id="c01c3-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c01c3-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="c01c3-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c01c3-111">Not Supported.</span></span>                               |
+| <span data-ttu-id="c01c3-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c01c3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c01c3-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c01c3-113">Not Supported.</span></span>                               |
+| <span data-ttu-id="c01c3-114">Приложение</span><span class="sxs-lookup"><span data-stu-id="c01c3-114">Application</span></span>                            | <span data-ttu-id="c01c3-115">Отсутствуют.</span><span class="sxs-lookup"><span data-stu-id="c01c3-115">None.</span></span>                                        |
 
-## <a name="http-request"></a><span data-ttu-id="a74dc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a74dc-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c01c3-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c01c3-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /app/calls/{id}/mute
 POST /applications/{id}/calls/{id}/mute
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="a74dc-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a74dc-119">Request headers</span></span>
-| <span data-ttu-id="a74dc-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a74dc-120">Name</span></span>          | <span data-ttu-id="a74dc-121">Описание</span><span class="sxs-lookup"><span data-stu-id="a74dc-121">Description</span></span>               |
+## <a name="request-headers"></a><span data-ttu-id="c01c3-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c01c3-117">Request headers</span></span>
+| <span data-ttu-id="c01c3-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c01c3-118">Name</span></span>          | <span data-ttu-id="c01c3-119">Описание</span><span class="sxs-lookup"><span data-stu-id="c01c3-119">Description</span></span>               |
 |:--------------|:--------------------------|
-| <span data-ttu-id="a74dc-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a74dc-122">Authorization</span></span> | <span data-ttu-id="a74dc-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a74dc-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c01c3-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c01c3-120">Authorization</span></span> | <span data-ttu-id="c01c3-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c01c3-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a74dc-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a74dc-125">Request body</span></span>
-<span data-ttu-id="a74dc-126">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a74dc-126">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c01c3-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c01c3-123">Request body</span></span>
+<span data-ttu-id="c01c3-124">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c01c3-124">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="a74dc-127">Параметр</span><span class="sxs-lookup"><span data-stu-id="a74dc-127">Parameter</span></span>      | <span data-ttu-id="a74dc-128">Тип</span><span class="sxs-lookup"><span data-stu-id="a74dc-128">Type</span></span>    |<span data-ttu-id="a74dc-129">Описание</span><span class="sxs-lookup"><span data-stu-id="a74dc-129">Description</span></span>|
+| <span data-ttu-id="c01c3-125">Параметр</span><span class="sxs-lookup"><span data-stu-id="c01c3-125">Parameter</span></span>      | <span data-ttu-id="c01c3-126">Тип</span><span class="sxs-lookup"><span data-stu-id="c01c3-126">Type</span></span>    |<span data-ttu-id="c01c3-127">Описание</span><span class="sxs-lookup"><span data-stu-id="c01c3-127">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a74dc-130">clientContext</span><span class="sxs-lookup"><span data-stu-id="a74dc-130">clientContext</span></span>|<span data-ttu-id="a74dc-131">Строка</span><span class="sxs-lookup"><span data-stu-id="a74dc-131">String</span></span>|<span data-ttu-id="a74dc-132">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="a74dc-132">The client context.</span></span>|
+|<span data-ttu-id="c01c3-128">ClientContext</span><span class="sxs-lookup"><span data-stu-id="c01c3-128">clientContext</span></span>|<span data-ttu-id="c01c3-129">String</span><span class="sxs-lookup"><span data-stu-id="c01c3-129">String</span></span>|<span data-ttu-id="c01c3-130">Контекст клиента.</span><span class="sxs-lookup"><span data-stu-id="c01c3-130">The client context.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="a74dc-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="a74dc-133">Response</span></span>
-<span data-ttu-id="a74dc-134">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [commsOperation](../resources/commsoperation.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a74dc-134">If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="c01c3-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="c01c3-131">Response</span></span>
+<span data-ttu-id="c01c3-132">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [commsOperation](../resources/commsoperation.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="c01c3-132">If successful, this method returns `200 OK` response code and a [commsOperation](../resources/commsoperation.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a74dc-135">Пример</span><span class="sxs-lookup"><span data-stu-id="a74dc-135">Example</span></span>
-<span data-ttu-id="a74dc-136">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="a74dc-136">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="c01c3-133">Пример</span><span class="sxs-lookup"><span data-stu-id="c01c3-133">Example</span></span>
+<span data-ttu-id="c01c3-134">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="c01c3-134">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="a74dc-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="a74dc-137">Request</span></span>
-<span data-ttu-id="a74dc-138">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a74dc-138">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="c01c3-135">Запрос</span><span class="sxs-lookup"><span data-stu-id="c01c3-135">Request</span></span>
+<span data-ttu-id="c01c3-136">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c01c3-136">The following example shows the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -68,9 +68,9 @@ Content-Length: 46
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="a74dc-139">Ответ</span><span class="sxs-lookup"><span data-stu-id="a74dc-139">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="c01c3-137">Ответ</span><span class="sxs-lookup"><span data-stu-id="c01c3-137">Response</span></span>
 
-> <span data-ttu-id="a74dc-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a74dc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="c01c3-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c01c3-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -93,10 +93,15 @@ Content-Length: 259
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: mute",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-mute.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
