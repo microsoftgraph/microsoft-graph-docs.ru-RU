@@ -1,31 +1,31 @@
 ---
 title: Перечисление объектов secureScores
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+description: Извлечение свойств и связи объекта secureScores.
 localization_priority: Normal
-ms.openlocfilehash: 6bf0a1e1964c93043bad4a81ab812786627ea737
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831817"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521483"
 ---
-# <a name="list-securescores"></a><span data-ttu-id="b9e19-104">Перечисление объектов secureScores</span><span class="sxs-lookup"><span data-stu-id="b9e19-104">List secureScores</span></span>
+# <a name="list-securescores"></a><span data-ttu-id="dfc3c-103">Перечисление объектов secureScores</span><span class="sxs-lookup"><span data-stu-id="dfc3c-103">List secureScores</span></span>
 
- > <span data-ttu-id="b9e19-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b9e19-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b9e19-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b9e19-106">Use of these APIs in production applications is not supported.</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b9e19-107">Извлечение свойств и связи объекта [secureScores](../resources/securescores.md) .</span><span class="sxs-lookup"><span data-stu-id="b9e19-107">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
+<span data-ttu-id="dfc3c-104">Извлечение свойств и связи объекта [secureScores](../resources/securescores.md) .</span><span class="sxs-lookup"><span data-stu-id="dfc3c-104">Retrieve the properties and relationships of a [secureScores](../resources/securescores.md) object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b9e19-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b9e19-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="dfc3c-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="dfc3c-105">Permissions</span></span>
 
-<span data-ttu-id="b9e19-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9e19-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="dfc3c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="dfc3c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b9e19-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b9e19-111">Permission type</span></span>      | <span data-ttu-id="b9e19-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b9e19-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="dfc3c-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="dfc3c-108">Permission type</span></span>      | <span data-ttu-id="dfc3c-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="dfc3c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b9e19-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b9e19-113">Delegated (work or school account)</span></span> |  <span data-ttu-id="b9e19-114">SecurityEvents.Read.All SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="b9e19-114">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
-|<span data-ttu-id="b9e19-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b9e19-115">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="b9e19-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b9e19-116">Not supported.</span></span>  |
-|<span data-ttu-id="b9e19-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b9e19-117">Application</span></span> | <span data-ttu-id="b9e19-118">SecurityEvents.Read.All SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="b9e19-118">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
+|<span data-ttu-id="dfc3c-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="dfc3c-110">Delegated (work or school account)</span></span> |  <span data-ttu-id="dfc3c-111">SecurityEvents.Read.All SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-111">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span>   |
+|<span data-ttu-id="dfc3c-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="dfc3c-112">Delegated (personal Microsoft account)</span></span> |  <span data-ttu-id="dfc3c-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-113">Not supported.</span></span>  |
+|<span data-ttu-id="dfc3c-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="dfc3c-114">Application</span></span> | <span data-ttu-id="dfc3c-115">SecurityEvents.Read.All SecurityEvents.ReadWrite.All.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-115">SecurityEvents.Read.All, SecurityEvents.ReadWrite.All.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b9e19-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b9e19-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="dfc3c-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="dfc3c-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,25 +33,25 @@ ms.locfileid: "27831817"
 GET /security/secureScores
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b9e19-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b9e19-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="dfc3c-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="dfc3c-117">Request headers</span></span>
 
-| <span data-ttu-id="b9e19-121">Имя</span><span class="sxs-lookup"><span data-stu-id="b9e19-121">Name</span></span>      |<span data-ttu-id="b9e19-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b9e19-122">Description</span></span>|
+| <span data-ttu-id="dfc3c-118">Имя</span><span class="sxs-lookup"><span data-stu-id="dfc3c-118">Name</span></span>      |<span data-ttu-id="dfc3c-119">Описание</span><span class="sxs-lookup"><span data-stu-id="dfc3c-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="b9e19-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b9e19-123">Authorization</span></span>  | <span data-ttu-id="b9e19-p104">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b9e19-p104">Bearer {code}. Required.</span></span>|
+| <span data-ttu-id="dfc3c-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="dfc3c-120">Authorization</span></span>  | <span data-ttu-id="dfc3c-p102">В заголовке указывается "Bearer {код}". Обязательный.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-p102">Bearer {code}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b9e19-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b9e19-126">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="dfc3c-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="dfc3c-123">Request body</span></span>
 
-<span data-ttu-id="b9e19-127">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="b9e19-127">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="dfc3c-124">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b9e19-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="b9e19-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="dfc3c-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="dfc3c-125">Response</span></span>
 
-<span data-ttu-id="b9e19-129">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **secureScores** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="b9e19-129">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
+<span data-ttu-id="dfc3c-126">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **secureScores** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-126">If successful, this method returns a `200 OK` response code and a **secureScores** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b9e19-130">Пример</span><span class="sxs-lookup"><span data-stu-id="b9e19-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="dfc3c-127">Пример</span><span class="sxs-lookup"><span data-stu-id="dfc3c-127">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="b9e19-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="b9e19-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="dfc3c-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="dfc3c-128">Request</span></span>
 
-<span data-ttu-id="b9e19-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b9e19-132">The following is an example of the request.</span></span>
+<span data-ttu-id="dfc3c-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-129">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "securescores_list"
@@ -61,9 +61,9 @@ GET /security/secureScores
 GET https://graph.microsoft.com/beta/security/secureScores?$top=1
 ```
 
-### <a name="response"></a><span data-ttu-id="b9e19-133">Ответ</span><span class="sxs-lookup"><span data-stu-id="b9e19-133">Response</span></span>
+### <a name="response"></a><span data-ttu-id="dfc3c-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="dfc3c-130">Response</span></span>
 
-<span data-ttu-id="b9e19-134">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="b9e19-134">The following is an example of the response.</span></span>
+<span data-ttu-id="dfc3c-131">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="dfc3c-131">The following is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -124,16 +124,21 @@ Content-type: application/json
                 }
             ]
         }
-    ]            
+    ]
 }
 
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List secureScores",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/securescores-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

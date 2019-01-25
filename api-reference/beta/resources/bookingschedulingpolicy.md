@@ -4,31 +4,31 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 039d76b00787c9bf2e4f0bee4eb927a7628a9e76
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3dee3314818d46c4131526dc92565eb4f8ca6ea2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914640"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523451"
 ---
-# <a name="bookingschedulingpolicy-resource-type"></a><span data-ttu-id="7d5ac-104">Тип ресурса bookingSchedulingPolicy</span><span class="sxs-lookup"><span data-stu-id="7d5ac-104">bookingSchedulingPolicy resource type</span></span>
+# <a name="bookingschedulingpolicy-resource-type"></a><span data-ttu-id="9a072-104">Тип ресурса bookingSchedulingPolicy</span><span class="sxs-lookup"><span data-stu-id="9a072-104">bookingSchedulingPolicy resource type</span></span>
 
- > <span data-ttu-id="7d5ac-105">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-105">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="7d5ac-106">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-106">Use of these APIs in production applications is not supported.</span></span>
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-<span data-ttu-id="7d5ac-107">Представляет набор политик, определяющие способ создания встреч в календаре Microsoft резервирования.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-107">Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar.</span></span>
+<span data-ttu-id="9a072-105">Представляет набор политик, определяющие способ создания встреч в календаре Microsoft резервирования.</span><span class="sxs-lookup"><span data-stu-id="9a072-105">Represents the set of policies that determine how appointments should be created in a Microsoft Bookings calendar.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7d5ac-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="7d5ac-108">Properties</span></span>
-| <span data-ttu-id="7d5ac-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="7d5ac-109">Property</span></span>     | <span data-ttu-id="7d5ac-110">Тип</span><span class="sxs-lookup"><span data-stu-id="7d5ac-110">Type</span></span>   |<span data-ttu-id="7d5ac-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7d5ac-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9a072-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="9a072-106">Properties</span></span>
+| <span data-ttu-id="9a072-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="9a072-107">Property</span></span>     | <span data-ttu-id="9a072-108">Тип</span><span class="sxs-lookup"><span data-stu-id="9a072-108">Type</span></span>   |<span data-ttu-id="9a072-109">Описание</span><span class="sxs-lookup"><span data-stu-id="9a072-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="7d5ac-112">allowStaffSelection</span><span class="sxs-lookup"><span data-stu-id="7d5ac-112">allowStaffSelection</span></span>|<span data-ttu-id="7d5ac-113">Логический</span><span class="sxs-lookup"><span data-stu-id="7d5ac-113">Boolean</span></span>|<span data-ttu-id="7d5ac-114">True, если разрешить пользователям выбрать определенным человеком резервирования.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-114">True if to allow customers to choose a specific person for the booking.</span></span>|
-|<span data-ttu-id="7d5ac-115">maximumAdvance</span><span class="sxs-lookup"><span data-stu-id="7d5ac-115">maximumAdvance</span></span>|<span data-ttu-id="7d5ac-116">Продолжительность</span><span class="sxs-lookup"><span data-stu-id="7d5ac-116">Duration</span></span>|<span data-ttu-id="7d5ac-117">Максимальное количество дней, которые могут поступать резервирования.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-117">Maximum number of days in advance that a booking can be made.</span></span> <span data-ttu-id="7d5ac-118">Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="7d5ac-118">It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
-|<span data-ttu-id="7d5ac-119">minimumLeadTime</span><span class="sxs-lookup"><span data-stu-id="7d5ac-119">minimumLeadTime</span></span>|<span data-ttu-id="7d5ac-120">Продолжительность</span><span class="sxs-lookup"><span data-stu-id="7d5ac-120">Duration</span></span>|<span data-ttu-id="7d5ac-121">Минимальное количество времени, созданные ранее которой должна состоять резервирования и отмены ресурса.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-121">The minimum amount of time before which bookings and cancellations must be made.</span></span> <span data-ttu-id="7d5ac-122">Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="7d5ac-122">It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
-|<span data-ttu-id="7d5ac-123">sendConfirmationsToOwner</span><span class="sxs-lookup"><span data-stu-id="7d5ac-123">sendConfirmationsToOwner</span></span>|<span data-ttu-id="7d5ac-124">Логический</span><span class="sxs-lookup"><span data-stu-id="7d5ac-124">Boolean</span></span>| <span data-ttu-id="7d5ac-125">Значение true для уведомления business по электронной почте при создании или изменении резервирования.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-125">True to notify the business via email when a booking is created or changed.</span></span> <span data-ttu-id="7d5ac-126">Используйте адрес электронной почты, указанных в свойстве **электронной почты** объекта **bookingBusiness** для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-126">Use the email address specified in the **email** property of the **bookingBusiness** entity for the business.</span></span> |
-|<span data-ttu-id="7d5ac-127">timeSlotInterval</span><span class="sxs-lookup"><span data-stu-id="7d5ac-127">timeSlotInterval</span></span>|<span data-ttu-id="7d5ac-128">Продолжительность</span><span class="sxs-lookup"><span data-stu-id="7d5ac-128">Duration</span></span>|<span data-ttu-id="7d5ac-129">Продолжительность каждого промежуток времени, идентификаторами в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="7d5ac-129">Duration of each time slot, denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
+|<span data-ttu-id="9a072-110">allowStaffSelection</span><span class="sxs-lookup"><span data-stu-id="9a072-110">allowStaffSelection</span></span>|<span data-ttu-id="9a072-111">Логическое</span><span class="sxs-lookup"><span data-stu-id="9a072-111">Boolean</span></span>|<span data-ttu-id="9a072-112">True, если разрешить пользователям выбрать определенным человеком резервирования.</span><span class="sxs-lookup"><span data-stu-id="9a072-112">True if to allow customers to choose a specific person for the booking.</span></span>|
+|<span data-ttu-id="9a072-113">maximumAdvance</span><span class="sxs-lookup"><span data-stu-id="9a072-113">maximumAdvance</span></span>|<span data-ttu-id="9a072-114">Длительность</span><span class="sxs-lookup"><span data-stu-id="9a072-114">Duration</span></span>|<span data-ttu-id="9a072-115">Максимальное количество дней, которые могут поступать резервирования.</span><span class="sxs-lookup"><span data-stu-id="9a072-115">Maximum number of days in advance that a booking can be made.</span></span> <span data-ttu-id="9a072-116">Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="9a072-116">It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
+|<span data-ttu-id="9a072-117">minimumLeadTime</span><span class="sxs-lookup"><span data-stu-id="9a072-117">minimumLeadTime</span></span>|<span data-ttu-id="9a072-118">Длительность</span><span class="sxs-lookup"><span data-stu-id="9a072-118">Duration</span></span>|<span data-ttu-id="9a072-119">Минимальное количество времени, созданные ранее которой должна состоять резервирования и отмены ресурса.</span><span class="sxs-lookup"><span data-stu-id="9a072-119">The minimum amount of time before which bookings and cancellations must be made.</span></span> <span data-ttu-id="9a072-120">Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="9a072-120">It follows the [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
+|<span data-ttu-id="9a072-121">sendConfirmationsToOwner</span><span class="sxs-lookup"><span data-stu-id="9a072-121">sendConfirmationsToOwner</span></span>|<span data-ttu-id="9a072-122">Логическое</span><span class="sxs-lookup"><span data-stu-id="9a072-122">Boolean</span></span>| <span data-ttu-id="9a072-123">Значение true для уведомления business по электронной почте при создании или изменении резервирования.</span><span class="sxs-lookup"><span data-stu-id="9a072-123">True to notify the business via email when a booking is created or changed.</span></span> <span data-ttu-id="9a072-124">Используйте адрес электронной почты, указанных в свойстве **электронной почты** объекта **bookingBusiness** для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="9a072-124">Use the email address specified in the **email** property of the **bookingBusiness** entity for the business.</span></span> |
+|<span data-ttu-id="9a072-125">timeSlotInterval</span><span class="sxs-lookup"><span data-stu-id="9a072-125">timeSlotInterval</span></span>|<span data-ttu-id="9a072-126">Длительность</span><span class="sxs-lookup"><span data-stu-id="9a072-126">Duration</span></span>|<span data-ttu-id="9a072-127">Продолжительность каждого промежуток времени, идентификаторами в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .</span><span class="sxs-lookup"><span data-stu-id="9a072-127">Duration of each time slot, denoted in [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) format.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="7d5ac-130">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7d5ac-130">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9a072-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9a072-128">JSON representation</span></span>
 
-<span data-ttu-id="7d5ac-131">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7d5ac-131">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="9a072-129">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9a072-129">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -51,10 +51,15 @@ ms.locfileid: "27914640"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingSchedulingPolicy resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingschedulingpolicy.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

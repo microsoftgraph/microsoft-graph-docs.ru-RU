@@ -5,30 +5,30 @@ ms.date: 09/10/2017
 title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 977209dba7284bb8f4f1abe5037d229f4a5a34c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: f9b159e4686a22b759e2f2a42776df8dafb3a2b0
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945463"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29518109"
 ---
-# <a name="get-a-driveitem-resource"></a><span data-ttu-id="c773d-102">Получение ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="c773d-102">Get a DriveItem resource</span></span>
+# <a name="get-a-driveitem-resource"></a><span data-ttu-id="9a8dc-102">Получение ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="9a8dc-102">Get a DriveItem resource</span></span>
 
-> <span data-ttu-id="c773d-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c773d-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c773d-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c773d-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c773d-105">Получение метаданных для [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) по пути в файловой системе или идентификатору.</span><span class="sxs-lookup"><span data-stu-id="c773d-105">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
+<span data-ttu-id="9a8dc-103">Получение метаданных для [DriveItem](../resources/driveitem.md) в объекте [Drive](../resources/drive.md) по пути в файловой системе или идентификатору.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-103">Retrieve the metadata for a [DriveItem](../resources/driveitem.md) in a [Drive](../resources/drive.md) by file system path or ID.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c773d-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c773d-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="9a8dc-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9a8dc-104">Permissions</span></span>
 
-<span data-ttu-id="c773d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c773d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9a8dc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9a8dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c773d-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c773d-109">Permission type</span></span>      | <span data-ttu-id="c773d-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c773d-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9a8dc-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9a8dc-107">Permission type</span></span>      | <span data-ttu-id="9a8dc-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9a8dc-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c773d-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c773d-111">Delegated (work or school account)</span></span> | <span data-ttu-id="c773d-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c773d-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c773d-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c773d-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c773d-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c773d-114">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="c773d-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c773d-115">Application</span></span> | <span data-ttu-id="c773d-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c773d-116">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="9a8dc-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9a8dc-109">Delegated (work or school account)</span></span> | <span data-ttu-id="9a8dc-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9a8dc-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9a8dc-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9a8dc-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9a8dc-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9a8dc-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="9a8dc-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9a8dc-113">Application</span></span> | <span data-ttu-id="9a8dc-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="9a8dc-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c773d-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c773d-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9a8dc-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9a8dc-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -45,27 +45,27 @@ GET /users/{userId}/drive/items/{itemId}
 GET /users/{userId}/drive/root:/{item-path}
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="c773d-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c773d-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="9a8dc-116">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="9a8dc-116">Optional query parameters</span></span>
 
-<span data-ttu-id="c773d-119">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand` и `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="c773d-119">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="9a8dc-117">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand` и `$select` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-117">This method supports the `$expand` and `$select` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-<span data-ttu-id="c773d-120">С помощью [`$expand`параметра строки запроса](/graph/query-parameters) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.</span><span class="sxs-lookup"><span data-stu-id="c773d-120">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
+<span data-ttu-id="9a8dc-118">С помощью [`$expand`параметра строки запроса](/graph/query-parameters) вы можете включить дочерние элементы запрос на получение метаданных элемента при наличии **дочерней** связи.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-118">You can use the [`$expand` query string parameter](/graph/query-parameters) to include the children of an item in the same call as retrieving the metadata of an item if the item has a **children** relationship.</span></span>
 
-## <a name="optional-request-headers"></a><span data-ttu-id="c773d-121">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c773d-121">Optional request headers</span></span>
+## <a name="optional-request-headers"></a><span data-ttu-id="9a8dc-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9a8dc-119">Optional request headers</span></span>
 
-| <span data-ttu-id="c773d-122">Имя</span><span class="sxs-lookup"><span data-stu-id="c773d-122">Name</span></span>          | <span data-ttu-id="c773d-123">Значение</span><span class="sxs-lookup"><span data-stu-id="c773d-123">Value</span></span>  | <span data-ttu-id="c773d-124">Описание</span><span class="sxs-lookup"><span data-stu-id="c773d-124">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="9a8dc-120">Имя</span><span class="sxs-lookup"><span data-stu-id="9a8dc-120">Name</span></span>          | <span data-ttu-id="9a8dc-121">Значение</span><span class="sxs-lookup"><span data-stu-id="9a8dc-121">Value</span></span>  | <span data-ttu-id="9a8dc-122">Описание</span><span class="sxs-lookup"><span data-stu-id="9a8dc-122">Description</span></span>                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="c773d-125">if-none-match</span><span class="sxs-lookup"><span data-stu-id="c773d-125">if-none-match</span></span> | <span data-ttu-id="c773d-126">String</span><span class="sxs-lookup"><span data-stu-id="c773d-126">String</span></span> | <span data-ttu-id="c773d-127">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="c773d-127">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="9a8dc-123">if-none-match</span><span class="sxs-lookup"><span data-stu-id="9a8dc-123">if-none-match</span></span> | <span data-ttu-id="9a8dc-124">String</span><span class="sxs-lookup"><span data-stu-id="9a8dc-124">String</span></span> | <span data-ttu-id="9a8dc-125">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="c773d-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="c773d-128">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9a8dc-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="9a8dc-126">Response</span></span>
 
-<span data-ttu-id="c773d-129">В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c773d-129">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
+<span data-ttu-id="9a8dc-127">В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-127">If successful, this method returns a `200 OK` response code and the [DriveItem](../resources/driveitem.md) resource in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c773d-130">Пример</span><span class="sxs-lookup"><span data-stu-id="c773d-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9a8dc-128">Пример</span><span class="sxs-lookup"><span data-stu-id="9a8dc-128">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="c773d-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c773d-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="9a8dc-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="9a8dc-129">Request</span></span>
 
-<span data-ttu-id="c773d-132">Ниже приведен пример запроса к корневой папке OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="c773d-132">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
+<span data-ttu-id="9a8dc-130">Ниже приведен пример запроса к корневой папке OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-130">Here is an example of the request to the root folder of the user's OneDrive.</span></span>
 
 <!-- { "blockType": "request", "name": "get-item-metadata" }-->
 
@@ -73,9 +73,9 @@ GET /users/{userId}/drive/root:/{item-path}
 GET /me/drive/root
 ```
 
-## <a name="response"></a><span data-ttu-id="c773d-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="c773d-133">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9a8dc-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="9a8dc-131">Response</span></span>
 
-<span data-ttu-id="c773d-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c773d-134">Here is an example of the response.</span></span>
+<span data-ttu-id="9a8dc-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="9a8dc-132">Here is an example of the response.</span></span>
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -109,19 +109,24 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="c773d-135">Примечания</span><span class="sxs-lookup"><span data-stu-id="c773d-135">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="9a8dc-133">Замечания</span><span class="sxs-lookup"><span data-stu-id="9a8dc-133">Remarks</span></span>
 
-<span data-ttu-id="c773d-136">Дополнительные сведения о возвращении ошибок см. в статье об [откликах с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="c773d-136">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="9a8dc-134">Дополнительные сведения о возвращении ошибок см. в статье об [откликах с ошибками][error-response].</span><span class="sxs-lookup"><span data-stu-id="9a8dc-134">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [odata-parameters]: /graph/query-parameters
 [item-resource]: ../resources/driveitem.md
 [special-folder]: ../api/drive-get-specialfolder.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Retrieve metadata about an item and its children in OneDrive",
   "keywords": "retrieve,item,metadata",
   "section": "documentation",
-  "tocPath": "Items/Get item"
-} -->
+  "tocPath": "Items/Get item",
+  "suppressions": [
+    "Error: /api-reference/beta/api/driveitem-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

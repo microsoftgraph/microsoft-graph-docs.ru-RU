@@ -3,31 +3,31 @@ title: Удаление historyItem
 description: Удаление существующего элемента журнала для существующего действия пользователя.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 30e7ee53e6546d6c70e3d576e0e2eb57965cf46f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: b3e9a505c47c4d43aff71d5b4e40f08e3fe29d2b
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979861"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520426"
 ---
-# <a name="delete-a-historyitem"></a><span data-ttu-id="b7877-103">Удаление historyItem</span><span class="sxs-lookup"><span data-stu-id="b7877-103">Delete a historyItem</span></span>
+# <a name="delete-a-historyitem"></a><span data-ttu-id="70990-103">Удаление historyItem</span><span class="sxs-lookup"><span data-stu-id="70990-103">Delete a historyItem</span></span>
 
-> <span data-ttu-id="b7877-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b7877-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="b7877-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b7877-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b7877-106">Удаление существующего элемента журнала для существующего действия пользователя.</span><span class="sxs-lookup"><span data-stu-id="b7877-106">Delete an existing history item for an existing user activity.</span></span>
+<span data-ttu-id="70990-104">Удаление существующего элемента журнала для существующего действия пользователя.</span><span class="sxs-lookup"><span data-stu-id="70990-104">Delete an existing history item for an existing user activity.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="b7877-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b7877-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="70990-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="70990-105">Permissions</span></span>
 
-<span data-ttu-id="b7877-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b7877-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="70990-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70990-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="b7877-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b7877-110">Permission type</span></span>      | <span data-ttu-id="b7877-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b7877-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70990-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="70990-108">Permission type</span></span>      | <span data-ttu-id="70990-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="70990-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b7877-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b7877-112">Delegated (work or school account)</span></span> | <span data-ttu-id="b7877-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="b7877-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="b7877-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b7877-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b7877-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="b7877-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="b7877-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b7877-116">Application</span></span> | <span data-ttu-id="b7877-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b7877-117">Not supported.</span></span> |
+|<span data-ttu-id="70990-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="70990-110">Delegated (work or school account)</span></span> | <span data-ttu-id="70990-111">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="70990-111">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="70990-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="70990-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70990-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="70990-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="70990-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="70990-114">Application</span></span> | <span data-ttu-id="70990-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70990-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b7877-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b7877-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70990-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="70990-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -35,25 +35,25 @@ ms.locfileid: "27979861"
 DELETE /me/activities/{id}/historyItems/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="b7877-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b7877-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="70990-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="70990-117">Request headers</span></span>
 
-|<span data-ttu-id="b7877-120">Имя</span><span class="sxs-lookup"><span data-stu-id="b7877-120">Name</span></span> | <span data-ttu-id="b7877-121">Тип</span><span class="sxs-lookup"><span data-stu-id="b7877-121">Type</span></span> | <span data-ttu-id="b7877-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b7877-122">Description</span></span>|
+|<span data-ttu-id="70990-118">Имя</span><span class="sxs-lookup"><span data-stu-id="70990-118">Name</span></span> | <span data-ttu-id="70990-119">Тип</span><span class="sxs-lookup"><span data-stu-id="70990-119">Type</span></span> | <span data-ttu-id="70990-120">Описание</span><span class="sxs-lookup"><span data-stu-id="70990-120">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="b7877-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="b7877-123">Authorization</span></span> | <span data-ttu-id="b7877-124">строка</span><span class="sxs-lookup"><span data-stu-id="b7877-124">string</span></span> | <span data-ttu-id="b7877-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b7877-p103">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="70990-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="70990-121">Authorization</span></span> | <span data-ttu-id="70990-122">string</span><span class="sxs-lookup"><span data-stu-id="70990-122">string</span></span> | <span data-ttu-id="70990-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="70990-p102">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="b7877-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="b7877-127">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="70990-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="70990-125">Request body</span></span>
 
-<span data-ttu-id="b7877-128">Нет текста запроса.</span><span class="sxs-lookup"><span data-stu-id="b7877-128">No request body.</span></span>
+<span data-ttu-id="70990-126">Нет текста запроса.</span><span class="sxs-lookup"><span data-stu-id="70990-126">No request body.</span></span>
 
-## <a name="response"></a><span data-ttu-id="b7877-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="b7877-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="70990-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="70990-127">Response</span></span>
 
-<span data-ttu-id="b7877-130">Успешно завершена, этот метод возвращает `204 No Content` код ответа, если журнал элемент был удален.</span><span class="sxs-lookup"><span data-stu-id="b7877-130">If successful, this method returns the `204 No Content` response code if the history item was deleted.</span></span>
+<span data-ttu-id="70990-128">Успешно завершена, этот метод возвращает `204 No Content` код ответа, если журнал элемент был удален.</span><span class="sxs-lookup"><span data-stu-id="70990-128">If successful, this method returns the `204 No Content` response code if the history item was deleted.</span></span>
 
-## <a name="example"></a><span data-ttu-id="b7877-131">Пример</span><span class="sxs-lookup"><span data-stu-id="b7877-131">Example</span></span>
+## <a name="example"></a><span data-ttu-id="70990-129">Пример</span><span class="sxs-lookup"><span data-stu-id="70990-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="b7877-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="b7877-132">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="70990-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="70990-130">Request</span></span>
 
-<span data-ttu-id="b7877-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b7877-133">Here is an example of the request.</span></span>
+<span data-ttu-id="70990-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="70990-131">Here is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -64,9 +64,9 @@ DELETE /me/activities/{id}/historyItems/{id}
 PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
 ```
 
-##### <a name="response"></a><span data-ttu-id="b7877-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="b7877-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="70990-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="70990-132">Response</span></span>
 
-<span data-ttu-id="b7877-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b7877-135">Here is an example of the response.</span></span>
+<span data-ttu-id="70990-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="70990-133">Here is an example of the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -79,10 +79,15 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete historyitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-delete-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

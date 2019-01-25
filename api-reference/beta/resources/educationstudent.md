@@ -1,35 +1,35 @@
 ---
 title: Тип ресурса educationStudent
-description: Добавляются дополнительные сведения в файл educationUser, который присутствует, когда значение параметра primaryRole для пользователя — `student`.
+description: Добавляются дополнительные сведения в файл `student`, который присутствует, когда значение параметра primaryRole для пользователя — .
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: 19ce3e28ccedc5f6165c8c333afb2ccd10343f14
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 554763d41c4ce48a09334394330e05fcd6dd4152
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406908"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29522037"
 ---
-# <a name="educationstudent-resource-type"></a><span data-ttu-id="c734b-103">Тип ресурса educationStudent</span><span class="sxs-lookup"><span data-stu-id="c734b-103">educationStudent resource type</span></span>
+# <a name="educationstudent-resource-type"></a><span data-ttu-id="40fdf-103">Тип ресурса educationStudent</span><span class="sxs-lookup"><span data-stu-id="40fdf-103">educationStudent resource type</span></span>
 
-> <span data-ttu-id="c734b-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c734b-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="c734b-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c734b-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c734b-106">Дополнительные сведения, добавляемые в объект [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.</span><span class="sxs-lookup"><span data-stu-id="c734b-106">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.</span></span>
+<span data-ttu-id="40fdf-104">Добавляются дополнительные сведения в файл [educationUser](educationuser.md), который присутствует, когда значение параметра primaryRole для пользователя — `student`.</span><span class="sxs-lookup"><span data-stu-id="40fdf-104">Additional information added to an [educationUser](educationuser.md) that is present when the primaryRole of a user is `student`.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c734b-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="c734b-107">Properties</span></span>
-| <span data-ttu-id="c734b-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="c734b-108">Property</span></span>     | <span data-ttu-id="c734b-109">Тип</span><span class="sxs-lookup"><span data-stu-id="c734b-109">Type</span></span>   |<span data-ttu-id="c734b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="c734b-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="40fdf-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="40fdf-105">Properties</span></span>
+| <span data-ttu-id="40fdf-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="40fdf-106">Property</span></span>     | <span data-ttu-id="40fdf-107">Тип</span><span class="sxs-lookup"><span data-stu-id="40fdf-107">Type</span></span>   |<span data-ttu-id="40fdf-108">Описание</span><span class="sxs-lookup"><span data-stu-id="40fdf-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c734b-111">birthDate</span><span class="sxs-lookup"><span data-stu-id="c734b-111">birthDate</span></span>|<span data-ttu-id="c734b-112">Date</span><span class="sxs-lookup"><span data-stu-id="c734b-112">Date</span></span>| <span data-ttu-id="c734b-113">Дата рождения учащегося.</span><span class="sxs-lookup"><span data-stu-id="c734b-113">Birth date of the student.</span></span>|
-|<span data-ttu-id="c734b-114">externalId</span><span class="sxs-lookup"><span data-stu-id="c734b-114">externalId</span></span>|<span data-ttu-id="c734b-115">String</span><span class="sxs-lookup"><span data-stu-id="c734b-115">String</span></span>| <span data-ttu-id="c734b-116">Идентификатор учащегося в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="c734b-116">ID of the student in the source system.</span></span>|
-|<span data-ttu-id="c734b-117">gender</span><span class="sxs-lookup"><span data-stu-id="c734b-117">gender</span></span>|<span data-ttu-id="c734b-118">educationGender</span><span class="sxs-lookup"><span data-stu-id="c734b-118">educationGender</span></span>| <span data-ttu-id="c734b-119">Возможные значения: `female`, `male`, `other`, `unkownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="c734b-119">Possible values are: `female`, `male`, `other`, `unkownFutureValue`.</span></span>|
-|<span data-ttu-id="c734b-120">оценка</span><span class="sxs-lookup"><span data-stu-id="c734b-120">grade</span></span>|<span data-ttu-id="c734b-121">String</span><span class="sxs-lookup"><span data-stu-id="c734b-121">String</span></span>|<span data-ttu-id="c734b-122">Текущий уровень оценок учащегося.</span><span class="sxs-lookup"><span data-stu-id="c734b-122">Current grade level of the student.</span></span>|
-|<span data-ttu-id="c734b-123">graduationYear</span><span class="sxs-lookup"><span data-stu-id="c734b-123">graduationYear</span></span>|<span data-ttu-id="c734b-124">String</span><span class="sxs-lookup"><span data-stu-id="c734b-124">String</span></span>| <span data-ttu-id="c734b-125">Год выпуска учащегося из школы.</span><span class="sxs-lookup"><span data-stu-id="c734b-125">Year the student is graduating from the school.</span></span>|
-|<span data-ttu-id="c734b-126">studentNumber</span><span class="sxs-lookup"><span data-stu-id="c734b-126">studentNumber</span></span>|<span data-ttu-id="c734b-127">String</span><span class="sxs-lookup"><span data-stu-id="c734b-127">String</span></span>| <span data-ttu-id="c734b-128">Student Number.</span><span class="sxs-lookup"><span data-stu-id="c734b-128">Student Number.</span></span>|
+|<span data-ttu-id="40fdf-109">birthDate</span><span class="sxs-lookup"><span data-stu-id="40fdf-109">birthDate</span></span>|<span data-ttu-id="40fdf-110">Date</span><span class="sxs-lookup"><span data-stu-id="40fdf-110">Date</span></span>| <span data-ttu-id="40fdf-111">Дата рождения учащегося.</span><span class="sxs-lookup"><span data-stu-id="40fdf-111">Birth date of the student.</span></span>|
+|<span data-ttu-id="40fdf-112">externalId</span><span class="sxs-lookup"><span data-stu-id="40fdf-112">externalId</span></span>|<span data-ttu-id="40fdf-113">String</span><span class="sxs-lookup"><span data-stu-id="40fdf-113">String</span></span>| <span data-ttu-id="40fdf-114">Идентификатор учащегося в исходной системе.</span><span class="sxs-lookup"><span data-stu-id="40fdf-114">ID of the student in the source system.</span></span>|
+|<span data-ttu-id="40fdf-115">gender</span><span class="sxs-lookup"><span data-stu-id="40fdf-115">gender</span></span>|<span data-ttu-id="40fdf-116">educationGender</span><span class="sxs-lookup"><span data-stu-id="40fdf-116">educationGender</span></span>| <span data-ttu-id="40fdf-117">Возможные значения: `female`, `male`, `other`, `unkownFutureValue`.</span><span class="sxs-lookup"><span data-stu-id="40fdf-117">Possible values are: `female`, `male`, `other`, `unkownFutureValue`.</span></span>|
+|<span data-ttu-id="40fdf-118">оценка</span><span class="sxs-lookup"><span data-stu-id="40fdf-118">grade</span></span>|<span data-ttu-id="40fdf-119">String</span><span class="sxs-lookup"><span data-stu-id="40fdf-119">String</span></span>|<span data-ttu-id="40fdf-120">Текущий уровень оценок учащегося.</span><span class="sxs-lookup"><span data-stu-id="40fdf-120">Current grade level of the student.</span></span>|
+|<span data-ttu-id="40fdf-121">graduationYear</span><span class="sxs-lookup"><span data-stu-id="40fdf-121">graduationYear</span></span>|<span data-ttu-id="40fdf-122">String</span><span class="sxs-lookup"><span data-stu-id="40fdf-122">String</span></span>| <span data-ttu-id="40fdf-123">Год выпуска учащегося из школы.</span><span class="sxs-lookup"><span data-stu-id="40fdf-123">Year the student is graduating from the school.</span></span>|
+|<span data-ttu-id="40fdf-124">studentNumber</span><span class="sxs-lookup"><span data-stu-id="40fdf-124">studentNumber</span></span>|<span data-ttu-id="40fdf-125">String</span><span class="sxs-lookup"><span data-stu-id="40fdf-125">String</span></span>| <span data-ttu-id="40fdf-126">Student Number.</span><span class="sxs-lookup"><span data-stu-id="40fdf-126">Student Number.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c734b-129">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c734b-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="40fdf-127">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="40fdf-127">JSON representation</span></span>
 
-<span data-ttu-id="c734b-130">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c734b-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="40fdf-128">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="40fdf-128">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -52,10 +52,15 @@ ms.locfileid: "29406908"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationStudent resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationstudent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

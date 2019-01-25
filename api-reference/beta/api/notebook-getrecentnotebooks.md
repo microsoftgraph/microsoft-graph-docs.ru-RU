@@ -4,29 +4,29 @@ description: Получите список экземпляров recentNotebook
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 978b1aeecb8b65fe8fa54e053dc63488dc7b7ac9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 90f620a82794bb575d9dfa35f2ad31b062b2faf4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963600"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29527705"
 ---
-# <a name="notebook-getrecentnotebooks"></a><span data-ttu-id="62b94-103">notebook: getRecentNotebooks</span><span class="sxs-lookup"><span data-stu-id="62b94-103">notebook: getRecentNotebooks</span></span>
+# <a name="notebook-getrecentnotebooks"></a><span data-ttu-id="ea3fb-103">notebook: getRecentNotebooks</span><span class="sxs-lookup"><span data-stu-id="ea3fb-103">notebook: getRecentNotebooks</span></span>
 
-> <span data-ttu-id="62b94-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="62b94-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="62b94-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="62b94-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="62b94-106">Получите список экземпляров [recentNotebook](../resources/recentnotebook.md), которые недавно открывал вошедший в систему пользователь.</span><span class="sxs-lookup"><span data-stu-id="62b94-106">Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.</span></span>
+<span data-ttu-id="ea3fb-104">Получите список экземпляров [recentNotebook](../resources/recentnotebook.md), которые недавно открывал вошедший в систему пользователь.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-104">Get a list of [recentNotebook](../resources/recentnotebook.md) instances that have been accessed by the signed-in user.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="62b94-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="62b94-107">Permissions</span></span>
-<span data-ttu-id="62b94-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="62b94-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ea3fb-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ea3fb-105">Permissions</span></span>
+<span data-ttu-id="ea3fb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea3fb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="62b94-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="62b94-110">Permission type</span></span>      | <span data-ttu-id="62b94-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="62b94-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ea3fb-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ea3fb-108">Permission type</span></span>      | <span data-ttu-id="ea3fb-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ea3fb-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="62b94-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="62b94-112">Delegated (work or school account)</span></span> | <span data-ttu-id="62b94-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="62b94-113">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,</span></span>|
-|<span data-ttu-id="62b94-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="62b94-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="62b94-115">Notes.Create, Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="62b94-115">Notes.Create, Notes.Read, Notes.ReadWrite</span></span> |
-|<span data-ttu-id="62b94-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="62b94-116">Application</span></span> | <span data-ttu-id="62b94-117">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="62b94-117">Notes.Read.All, Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="ea3fb-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ea3fb-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ea3fb-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea3fb-111">Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All,</span></span>|
+|<span data-ttu-id="ea3fb-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ea3fb-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea3fb-113">Notes.Create, Notes.Read, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="ea3fb-113">Notes.Create, Notes.Read, Notes.ReadWrite</span></span> |
+|<span data-ttu-id="ea3fb-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ea3fb-114">Application</span></span> | <span data-ttu-id="ea3fb-115">Notes.Read.All, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ea3fb-115">Notes.Read.All, Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="62b94-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="62b94-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ea3fb-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ea3fb-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -34,37 +34,37 @@ GET /me/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePer
 GET /users/<id | userPrincipalName>/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks=includePersonalNotebooks-value)
 ```
 
-<span data-ttu-id="62b94-119">Идентификатор `<id | userPrincipalName>` должен соответствовать пользователю, закодированному в токене авторизации, используемом для выполнения запроса.</span><span class="sxs-lookup"><span data-stu-id="62b94-119">The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.</span></span>
+<span data-ttu-id="ea3fb-117">Идентификатор `<id | userPrincipalName>` должен соответствовать пользователю, закодированному в токене авторизации, используемом для выполнения запроса.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-117">The `<id | userPrincipalName>` for the user must match the user encoded in the authorization token used to make the request.</span></span>
 
-## <a name="function-parameters"></a><span data-ttu-id="62b94-120">Параметры функций</span><span class="sxs-lookup"><span data-stu-id="62b94-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="ea3fb-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="ea3fb-118">Function parameters</span></span>
 
-| <span data-ttu-id="62b94-121">Параметр</span><span class="sxs-lookup"><span data-stu-id="62b94-121">Parameter</span></span>    | <span data-ttu-id="62b94-122">Тип</span><span class="sxs-lookup"><span data-stu-id="62b94-122">Type</span></span>   |<span data-ttu-id="62b94-123">Описание</span><span class="sxs-lookup"><span data-stu-id="62b94-123">Description</span></span>|
+| <span data-ttu-id="ea3fb-119">Параметр</span><span class="sxs-lookup"><span data-stu-id="ea3fb-119">Parameter</span></span>    | <span data-ttu-id="ea3fb-120">Тип</span><span class="sxs-lookup"><span data-stu-id="ea3fb-120">Type</span></span>   |<span data-ttu-id="ea3fb-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ea3fb-121">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="62b94-124">includePersonalNotebooks</span><span class="sxs-lookup"><span data-stu-id="62b94-124">includePersonalNotebooks</span></span>|<span data-ttu-id="62b94-125">Boolean</span><span class="sxs-lookup"><span data-stu-id="62b94-125">Boolean</span></span>|<span data-ttu-id="62b94-126">Включите записные книжки, принадлежащие пользователю.</span><span class="sxs-lookup"><span data-stu-id="62b94-126">Include notebooks owned by the user.</span></span> <span data-ttu-id="62b94-127">Установите значение `true`, чтобы включить записные книжки, принадлежащие пользователю; в противном случае установите значение `false`.</span><span class="sxs-lookup"><span data-stu-id="62b94-127">Set to `true` to include notebooks owned by the user; otherwise, set to `false`.</span></span> <span data-ttu-id="62b94-128">Если вы не включите параметр `includePersonalNotebooks`, запрос вернет ошибку `400`.</span><span class="sxs-lookup"><span data-stu-id="62b94-128">If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.</span></span>|
+|<span data-ttu-id="ea3fb-122">includePersonalNotebooks</span><span class="sxs-lookup"><span data-stu-id="ea3fb-122">includePersonalNotebooks</span></span>|<span data-ttu-id="ea3fb-123">Boolean</span><span class="sxs-lookup"><span data-stu-id="ea3fb-123">Boolean</span></span>|<span data-ttu-id="ea3fb-124">Включите записные книжки, принадлежащие пользователю.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-124">Include notebooks owned by the user.</span></span> <span data-ttu-id="ea3fb-125">Установите значение `true`, чтобы включить записные книжки, принадлежащие пользователю; в противном случае установите значение `false`.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-125">Set to `true` to include notebooks owned by the user; otherwise, set to `false`.</span></span> <span data-ttu-id="ea3fb-126">Если вы не включите параметр `includePersonalNotebooks`, запрос вернет ошибку `400`.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-126">If you don't include the `includePersonalNotebooks` parameter, your request will return a `400` error response.</span></span>|
 
-## <a name="request-headers"></a><span data-ttu-id="62b94-129">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="62b94-129">Request headers</span></span>
-| <span data-ttu-id="62b94-130">Имя</span><span class="sxs-lookup"><span data-stu-id="62b94-130">Name</span></span>       | <span data-ttu-id="62b94-131">Описание</span><span class="sxs-lookup"><span data-stu-id="62b94-131">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="ea3fb-127">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ea3fb-127">Request headers</span></span>
+| <span data-ttu-id="ea3fb-128">Имя</span><span class="sxs-lookup"><span data-stu-id="ea3fb-128">Name</span></span>       | <span data-ttu-id="ea3fb-129">Описание</span><span class="sxs-lookup"><span data-stu-id="ea3fb-129">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="62b94-132">Authorization</span><span class="sxs-lookup"><span data-stu-id="62b94-132">Authorization</span></span>  | <span data-ttu-id="62b94-133">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="62b94-133">Bearer {code}</span></span>|
+| <span data-ttu-id="ea3fb-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="ea3fb-130">Authorization</span></span>  | <span data-ttu-id="ea3fb-131">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="ea3fb-131">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="62b94-134">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="62b94-134">Request body</span></span>
-<span data-ttu-id="62b94-135">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="62b94-135">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="ea3fb-132">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ea3fb-132">Request body</span></span>
+<span data-ttu-id="ea3fb-133">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-133">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="62b94-136">Ответ</span><span class="sxs-lookup"><span data-stu-id="62b94-136">Response</span></span>
-<span data-ttu-id="62b94-137">В случае успеха возвращается ответ с кодом `200 OK`, который содержит JSON-коллекцию ресурсов **recentNotebook**.</span><span class="sxs-lookup"><span data-stu-id="62b94-137">A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.</span></span>
+## <a name="response"></a><span data-ttu-id="ea3fb-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea3fb-134">Response</span></span>
+<span data-ttu-id="ea3fb-135">В случае успеха возвращается ответ с кодом `200 OK`, который содержит JSON-коллекцию ресурсов **recentNotebook**.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-135">A successful response returns a `200 OK` that contains a JSON collection of **recentNotebooks**.</span></span>
 
-## <a name="example"></a><span data-ttu-id="62b94-138">Пример</span><span class="sxs-lookup"><span data-stu-id="62b94-138">Example</span></span>
-<span data-ttu-id="62b94-139">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="62b94-139">The following example shows how to call this API.</span></span>
+## <a name="example"></a><span data-ttu-id="ea3fb-136">Пример</span><span class="sxs-lookup"><span data-stu-id="ea3fb-136">Example</span></span>
+<span data-ttu-id="ea3fb-137">В приведенном ниже примере показано, как вызывать этот API.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-137">The following example shows how to call this API.</span></span>
 
-##### <a name="request"></a><span data-ttu-id="62b94-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="62b94-140">Request</span></span>
-<span data-ttu-id="62b94-141">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="62b94-141">The following example shows the request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ea3fb-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="ea3fb-138">Request</span></span>
+<span data-ttu-id="ea3fb-139">Ниже показан пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-139">The following example shows the request.</span></span>
 <!-- { "blockType": "request", "name": "recent_notebooks", "scopes": "notes.read" } -->
 ```http
 GET https://graph.microsoft.com/v1.0/onenote/notebooks/getrecentnotebooks(includePersonalNotebooks=true)
 ```
 
-##### <a name="response"></a><span data-ttu-id="62b94-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="62b94-142">Response</span></span>
-<span data-ttu-id="62b94-143">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="62b94-143">The following example shows the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="ea3fb-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="ea3fb-140">Response</span></span>
+<span data-ttu-id="ea3fb-141">Ниже приводится пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ea3fb-141">The following example shows the response.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -99,3 +99,11 @@ Content-Length: 1110
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/notebook-getrecentnotebooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

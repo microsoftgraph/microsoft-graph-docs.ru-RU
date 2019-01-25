@@ -4,67 +4,67 @@ description: Обновление свойства объекта orgcontact.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2f7943234dbff62da070b51a3ae6d92d2bdb28d9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 50a0d50d4905c19b152302ee908cbece5eff399a
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938820"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517885"
 ---
-# <a name="update-orgcontact"></a><span data-ttu-id="a32ae-103">Обновление orgcontact</span><span class="sxs-lookup"><span data-stu-id="a32ae-103">Update orgcontact</span></span>
+# <a name="update-orgcontact"></a><span data-ttu-id="8f431-103">Обновление orgcontact</span><span class="sxs-lookup"><span data-stu-id="8f431-103">Update orgcontact</span></span>
 
-> <span data-ttu-id="a32ae-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a32ae-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a32ae-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a32ae-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a32ae-106">Обновление свойства объекта orgcontact.</span><span class="sxs-lookup"><span data-stu-id="a32ae-106">Update the properties of orgcontact object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="a32ae-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a32ae-107">Permissions</span></span>
-<span data-ttu-id="a32ae-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a32ae-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8f431-104">Обновление свойства объекта orgcontact.</span><span class="sxs-lookup"><span data-stu-id="8f431-104">Update the properties of orgcontact object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="8f431-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8f431-105">Permissions</span></span>
+<span data-ttu-id="8f431-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8f431-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a32ae-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a32ae-110">Permission type</span></span>      | <span data-ttu-id="a32ae-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a32ae-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="8f431-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8f431-108">Permission type</span></span>      | <span data-ttu-id="8f431-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8f431-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a32ae-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a32ae-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a32ae-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a32ae-113">Not supported.</span></span>    |
-|<span data-ttu-id="a32ae-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a32ae-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a32ae-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a32ae-115">Not supported.</span></span>    |
-|<span data-ttu-id="a32ae-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a32ae-116">Application</span></span> | <span data-ttu-id="a32ae-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a32ae-117">Not supported.</span></span> |
+|<span data-ttu-id="8f431-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8f431-110">Delegated (work or school account)</span></span> | <span data-ttu-id="8f431-111">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8f431-111">Not supported.</span></span>    |
+|<span data-ttu-id="8f431-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8f431-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8f431-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8f431-113">Not supported.</span></span>    |
+|<span data-ttu-id="8f431-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8f431-114">Application</span></span> | <span data-ttu-id="8f431-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8f431-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a32ae-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a32ae-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8f431-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8f431-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /contacts/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="a32ae-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a32ae-119">Request headers</span></span>
-| <span data-ttu-id="a32ae-120">Имя</span><span class="sxs-lookup"><span data-stu-id="a32ae-120">Name</span></span>       | <span data-ttu-id="a32ae-121">Тип</span><span class="sxs-lookup"><span data-stu-id="a32ae-121">Type</span></span> | <span data-ttu-id="a32ae-122">Описание</span><span class="sxs-lookup"><span data-stu-id="a32ae-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8f431-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8f431-117">Request headers</span></span>
+| <span data-ttu-id="8f431-118">Имя</span><span class="sxs-lookup"><span data-stu-id="8f431-118">Name</span></span>       | <span data-ttu-id="8f431-119">Тип</span><span class="sxs-lookup"><span data-stu-id="8f431-119">Type</span></span> | <span data-ttu-id="8f431-120">Описание</span><span class="sxs-lookup"><span data-stu-id="8f431-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="a32ae-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="a32ae-123">Authorization</span></span>  | <span data-ttu-id="a32ae-124">строка</span><span class="sxs-lookup"><span data-stu-id="a32ae-124">string</span></span>  | <span data-ttu-id="a32ae-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a32ae-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="8f431-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="8f431-121">Authorization</span></span>  | <span data-ttu-id="8f431-122">string</span><span class="sxs-lookup"><span data-stu-id="8f431-122">string</span></span>  | <span data-ttu-id="8f431-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8f431-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="a32ae-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a32ae-127">Request body</span></span>
-<span data-ttu-id="a32ae-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="a32ae-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8f431-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8f431-125">Request body</span></span>
+<span data-ttu-id="8f431-p103">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="8f431-p103">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="a32ae-131">Свойство</span><span class="sxs-lookup"><span data-stu-id="a32ae-131">Property</span></span>     | <span data-ttu-id="a32ae-132">Тип</span><span class="sxs-lookup"><span data-stu-id="a32ae-132">Type</span></span>   |<span data-ttu-id="a32ae-133">Описание</span><span class="sxs-lookup"><span data-stu-id="a32ae-133">Description</span></span>|
+| <span data-ttu-id="8f431-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="8f431-129">Property</span></span>     | <span data-ttu-id="8f431-130">Тип</span><span class="sxs-lookup"><span data-stu-id="8f431-130">Type</span></span>   |<span data-ttu-id="8f431-131">Описание</span><span class="sxs-lookup"><span data-stu-id="8f431-131">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a32ae-134">city</span><span class="sxs-lookup"><span data-stu-id="a32ae-134">city</span></span>|<span data-ttu-id="a32ae-135">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-135">String</span></span>||
-|<span data-ttu-id="a32ae-136">country</span><span class="sxs-lookup"><span data-stu-id="a32ae-136">country</span></span>|<span data-ttu-id="a32ae-137">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-137">String</span></span>||
-|<span data-ttu-id="a32ae-138">department</span><span class="sxs-lookup"><span data-stu-id="a32ae-138">department</span></span>|<span data-ttu-id="a32ae-139">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-139">String</span></span>||
-|<span data-ttu-id="a32ae-140">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="a32ae-140">onPremisesSyncEnabled</span></span>|<span data-ttu-id="a32ae-141">Boolean</span><span class="sxs-lookup"><span data-stu-id="a32ae-141">Boolean</span></span>||
-|<span data-ttu-id="a32ae-142">displayName</span><span class="sxs-lookup"><span data-stu-id="a32ae-142">displayName</span></span>|<span data-ttu-id="a32ae-143">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-143">String</span></span>||
-|<span data-ttu-id="a32ae-144">givenName</span><span class="sxs-lookup"><span data-stu-id="a32ae-144">givenName</span></span>|<span data-ttu-id="a32ae-145">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-145">String</span></span>||
-|<span data-ttu-id="a32ae-146">jobTitle</span><span class="sxs-lookup"><span data-stu-id="a32ae-146">jobTitle</span></span>|<span data-ttu-id="a32ae-147">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-147">String</span></span>||
-|<span data-ttu-id="a32ae-148">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="a32ae-148">onPremisesLastSyncDateTime</span></span>|<span data-ttu-id="a32ae-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="a32ae-149">DateTimeOffset</span></span>||
-|<span data-ttu-id="a32ae-150">mail</span><span class="sxs-lookup"><span data-stu-id="a32ae-150">mail</span></span>|<span data-ttu-id="a32ae-151">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-151">String</span></span>||
-|<span data-ttu-id="a32ae-152">mailNickname</span><span class="sxs-lookup"><span data-stu-id="a32ae-152">mailNickname</span></span>|<span data-ttu-id="a32ae-153">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-153">String</span></span>||
-|<span data-ttu-id="a32ae-154">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="a32ae-154">mobilePhone</span></span>|<span data-ttu-id="a32ae-155">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-155">String</span></span>||
-|<span data-ttu-id="a32ae-156">officeLocation</span><span class="sxs-lookup"><span data-stu-id="a32ae-156">officeLocation</span></span>|<span data-ttu-id="a32ae-157">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-157">String</span></span>||
-|<span data-ttu-id="a32ae-158">postalCode</span><span class="sxs-lookup"><span data-stu-id="a32ae-158">postalCode</span></span>|<span data-ttu-id="a32ae-159">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-159">String</span></span>||
-|<span data-ttu-id="a32ae-160">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="a32ae-160">proxyAddresses</span></span>|<span data-ttu-id="a32ae-161">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-161">String</span></span>||
-|<span data-ttu-id="a32ae-162">state</span><span class="sxs-lookup"><span data-stu-id="a32ae-162">state</span></span>|<span data-ttu-id="a32ae-163">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-163">String</span></span>||
-|<span data-ttu-id="a32ae-164">streetAddress</span><span class="sxs-lookup"><span data-stu-id="a32ae-164">streetAddress</span></span>|<span data-ttu-id="a32ae-165">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-165">String</span></span>||
-|<span data-ttu-id="a32ae-166">surname</span><span class="sxs-lookup"><span data-stu-id="a32ae-166">surname</span></span>|<span data-ttu-id="a32ae-167">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-167">String</span></span>||
-|<span data-ttu-id="a32ae-168">businessPhones</span><span class="sxs-lookup"><span data-stu-id="a32ae-168">businessPhones</span></span>|<span data-ttu-id="a32ae-169">String</span><span class="sxs-lookup"><span data-stu-id="a32ae-169">String</span></span>||
+|<span data-ttu-id="8f431-132">city</span><span class="sxs-lookup"><span data-stu-id="8f431-132">city</span></span>|<span data-ttu-id="8f431-133">String</span><span class="sxs-lookup"><span data-stu-id="8f431-133">String</span></span>||
+|<span data-ttu-id="8f431-134">country</span><span class="sxs-lookup"><span data-stu-id="8f431-134">country</span></span>|<span data-ttu-id="8f431-135">String</span><span class="sxs-lookup"><span data-stu-id="8f431-135">String</span></span>||
+|<span data-ttu-id="8f431-136">отделу;</span><span class="sxs-lookup"><span data-stu-id="8f431-136">department</span></span>|<span data-ttu-id="8f431-137">String</span><span class="sxs-lookup"><span data-stu-id="8f431-137">String</span></span>||
+|<span data-ttu-id="8f431-138">onPremisesSyncEnabled</span><span class="sxs-lookup"><span data-stu-id="8f431-138">onPremisesSyncEnabled</span></span>|<span data-ttu-id="8f431-139">Логическое</span><span class="sxs-lookup"><span data-stu-id="8f431-139">Boolean</span></span>||
+|<span data-ttu-id="8f431-140">displayName</span><span class="sxs-lookup"><span data-stu-id="8f431-140">displayName</span></span>|<span data-ttu-id="8f431-141">String</span><span class="sxs-lookup"><span data-stu-id="8f431-141">String</span></span>||
+|<span data-ttu-id="8f431-142">givenName</span><span class="sxs-lookup"><span data-stu-id="8f431-142">givenName</span></span>|<span data-ttu-id="8f431-143">String</span><span class="sxs-lookup"><span data-stu-id="8f431-143">String</span></span>||
+|<span data-ttu-id="8f431-144">jobTitle</span><span class="sxs-lookup"><span data-stu-id="8f431-144">jobTitle</span></span>|<span data-ttu-id="8f431-145">String</span><span class="sxs-lookup"><span data-stu-id="8f431-145">String</span></span>||
+|<span data-ttu-id="8f431-146">onPremisesLastSyncDateTime</span><span class="sxs-lookup"><span data-stu-id="8f431-146">onPremisesLastSyncDateTime</span></span>|<span data-ttu-id="8f431-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8f431-147">DateTimeOffset</span></span>||
+|<span data-ttu-id="8f431-148">mail</span><span class="sxs-lookup"><span data-stu-id="8f431-148">mail</span></span>|<span data-ttu-id="8f431-149">String</span><span class="sxs-lookup"><span data-stu-id="8f431-149">String</span></span>||
+|<span data-ttu-id="8f431-150">mailNickname</span><span class="sxs-lookup"><span data-stu-id="8f431-150">mailNickname</span></span>|<span data-ttu-id="8f431-151">String</span><span class="sxs-lookup"><span data-stu-id="8f431-151">String</span></span>||
+|<span data-ttu-id="8f431-152">mobilePhone</span><span class="sxs-lookup"><span data-stu-id="8f431-152">mobilePhone</span></span>|<span data-ttu-id="8f431-153">String</span><span class="sxs-lookup"><span data-stu-id="8f431-153">String</span></span>||
+|<span data-ttu-id="8f431-154">officeLocation</span><span class="sxs-lookup"><span data-stu-id="8f431-154">officeLocation</span></span>|<span data-ttu-id="8f431-155">String</span><span class="sxs-lookup"><span data-stu-id="8f431-155">String</span></span>||
+|<span data-ttu-id="8f431-156">postalCode</span><span class="sxs-lookup"><span data-stu-id="8f431-156">postalCode</span></span>|<span data-ttu-id="8f431-157">String</span><span class="sxs-lookup"><span data-stu-id="8f431-157">String</span></span>||
+|<span data-ttu-id="8f431-158">proxyAddresses</span><span class="sxs-lookup"><span data-stu-id="8f431-158">proxyAddresses</span></span>|<span data-ttu-id="8f431-159">String</span><span class="sxs-lookup"><span data-stu-id="8f431-159">String</span></span>||
+|<span data-ttu-id="8f431-160">state</span><span class="sxs-lookup"><span data-stu-id="8f431-160">state</span></span>|<span data-ttu-id="8f431-161">Строка</span><span class="sxs-lookup"><span data-stu-id="8f431-161">String</span></span>||
+|<span data-ttu-id="8f431-162">streetAddress</span><span class="sxs-lookup"><span data-stu-id="8f431-162">streetAddress</span></span>|<span data-ttu-id="8f431-163">String</span><span class="sxs-lookup"><span data-stu-id="8f431-163">String</span></span>||
+|<span data-ttu-id="8f431-164">surname</span><span class="sxs-lookup"><span data-stu-id="8f431-164">surname</span></span>|<span data-ttu-id="8f431-165">String</span><span class="sxs-lookup"><span data-stu-id="8f431-165">String</span></span>||
+|<span data-ttu-id="8f431-166">businessPhones</span><span class="sxs-lookup"><span data-stu-id="8f431-166">businessPhones</span></span>|<span data-ttu-id="8f431-167">String</span><span class="sxs-lookup"><span data-stu-id="8f431-167">String</span></span>||
 
-## <a name="response"></a><span data-ttu-id="a32ae-170">Отклик</span><span class="sxs-lookup"><span data-stu-id="a32ae-170">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8f431-168">Ответ</span><span class="sxs-lookup"><span data-stu-id="8f431-168">Response</span></span>
 
-<span data-ttu-id="a32ae-171">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [orgContact](../resources/orgcontact.md) объект в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a32ae-171">If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="a32ae-172">Пример</span><span class="sxs-lookup"><span data-stu-id="a32ae-172">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="a32ae-173">Запрос</span><span class="sxs-lookup"><span data-stu-id="a32ae-173">Request</span></span>
-<span data-ttu-id="a32ae-174">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a32ae-174">Here is an example of the request.</span></span>
+<span data-ttu-id="8f431-169">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [orgContact](../resources/orgcontact.md) объект в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="8f431-169">If successful, this method returns a `200 OK` response code and updated [orgContact](../resources/orgcontact.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="8f431-170">Пример</span><span class="sxs-lookup"><span data-stu-id="8f431-170">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="8f431-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="8f431-171">Request</span></span>
+<span data-ttu-id="8f431-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8f431-172">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_orgcontact"
@@ -85,8 +85,9 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="a32ae-175">Отклик</span><span class="sxs-lookup"><span data-stu-id="a32ae-175">Response</span></span>
-<span data-ttu-id="a32ae-p105">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="a32ae-p105">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="8f431-173">Ответ</span><span class="sxs-lookup"><span data-stu-id="8f431-173">Response</span></span>
+<span data-ttu-id="8f431-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="8f431-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -111,10 +112,15 @@ Content-length: 222
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update orgcontact",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/orgcontact-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,64 +4,64 @@ description: 'Список приложений из каталога прило
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6f130d1842e8d860265adbdc82d8a5add9da025a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d43f9a8cca7c16bab3b0dec90b26d4c9c6d4d33c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963698"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519271"
 ---
-# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a><span data-ttu-id="4d4e5-103">Список опубликованных приложений из каталога приложений группами Майкрософт</span><span class="sxs-lookup"><span data-stu-id="4d4e5-103">List the published apps from the Microsoft Teams app catalog</span></span>
+# <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a><span data-ttu-id="cd57d-103">Список опубликованных приложений из каталога приложений группами Майкрософт</span><span class="sxs-lookup"><span data-stu-id="cd57d-103">List the published apps from the Microsoft Teams app catalog</span></span>
 
-> <span data-ttu-id="4d4e5-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="4d4e5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4d4e5-106">Список [приложений](../resources/teamsapp.md) из каталога приложений группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-106">List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.</span></span> <span data-ttu-id="4d4e5-107">Этот компонент включает приложений из магазина группами Майкрософт, а также приложений из каталога приложений организации (каталог приложений клиента).</span><span class="sxs-lookup"><span data-stu-id="4d4e5-107">This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog).</span></span> <span data-ttu-id="4d4e5-108">Приобретать приложения в вашей организации только каталог приложений, укажите `Organization` как **distributionMethod** в [teamsCatalogApp](../resources/teamsapp.md) ресурсов.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-108">To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
+<span data-ttu-id="cd57d-104">Список [приложений](../resources/teamsapp.md) из каталога приложений группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="cd57d-104">List [apps](../resources/teamsapp.md) from the Microsoft Teams app catalog.</span></span> <span data-ttu-id="cd57d-105">Этот компонент включает приложений из магазина группами Майкрософт, а также приложений из каталога приложений организации (каталог приложений клиента).</span><span class="sxs-lookup"><span data-stu-id="cd57d-105">This includes apps from the Microsoft Teams store, as well as apps from your organization's app catalog (the tenant app catalog).</span></span> <span data-ttu-id="cd57d-106">Приобретать приложения в вашей организации только каталог приложений, укажите `Organization` как **distributionMethod** в [teamsCatalogApp](../resources/teamsapp.md) ресурсов.</span><span class="sxs-lookup"><span data-stu-id="cd57d-106">To get apps from your organization's app catalog only, specify `Organization` as the **distributionMethod** in the [teamsCatalogApp](../resources/teamsapp.md) resource.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4d4e5-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4d4e5-109">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="cd57d-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="cd57d-107">Permissions</span></span>
 
-<span data-ttu-id="4d4e5-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="4d4e5-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
+<span data-ttu-id="cd57d-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span><span class="sxs-lookup"><span data-stu-id="cd57d-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).</span></span>
 
-><span data-ttu-id="4d4e5-112">**Примечание:** Только глобальный администратор может вызывать этот интерфейс API.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-112">**Note:** Only global administrators can call this API.</span></span> 
+><span data-ttu-id="cd57d-110">**Примечание:** Только глобальный администратор может вызывать этот интерфейс API.</span><span class="sxs-lookup"><span data-stu-id="cd57d-110">**Note:** Only global administrators can call this API.</span></span> 
 
-| <span data-ttu-id="4d4e5-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4d4e5-113">Permission Type</span></span>                        | <span data-ttu-id="4d4e5-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4d4e5-114">Permissions (from least to most privileged)</span></span>|
+| <span data-ttu-id="cd57d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="cd57d-111">Permission Type</span></span>                        | <span data-ttu-id="cd57d-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="cd57d-112">Permissions (from least to most privileged)</span></span>|
 |:----------------------------------     |:-------------|
-| <span data-ttu-id="4d4e5-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4d4e5-115">Delegated (work or school account)</span></span>     | <span data-ttu-id="4d4e5-116">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4d4e5-116">AppCatalog.ReadWrite.All</span></span> |
-| <span data-ttu-id="4d4e5-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4d4e5-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4d4e5-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="4d4e5-118">Not supported</span></span>|
-| <span data-ttu-id="4d4e5-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4d4e5-119">Application</span></span>                            | <span data-ttu-id="4d4e5-120">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="4d4e5-120">Not supported</span></span>|
+| <span data-ttu-id="cd57d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="cd57d-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="cd57d-114">AppCatalog.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="cd57d-114">AppCatalog.ReadWrite.All</span></span> |
+| <span data-ttu-id="cd57d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="cd57d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="cd57d-116">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="cd57d-116">Not supported</span></span>|
+| <span data-ttu-id="cd57d-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="cd57d-117">Application</span></span>                            | <span data-ttu-id="cd57d-118">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="cd57d-118">Not supported</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4d4e5-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4d4e5-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="cd57d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="cd57d-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /appCatalogs/teamsApps
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="4d4e5-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="4d4e5-122">Optional query parameters</span></span>
-<span data-ttu-id="4d4e5-123">Этот метод поддерживает $filter $select, и $разверните [Параметры запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-123">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="cd57d-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="cd57d-120">Optional query parameters</span></span>
+<span data-ttu-id="cd57d-121">Этот метод поддерживает $filter $select, и $разверните [Параметры запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="cd57d-121">This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="4d4e5-124">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4d4e5-124">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="cd57d-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="cd57d-122">Request headers</span></span>
 
-| <span data-ttu-id="4d4e5-125">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4d4e5-125">Header</span></span>        | <span data-ttu-id="4d4e5-126">Значение</span><span class="sxs-lookup"><span data-stu-id="4d4e5-126">Value</span></span>           |
+| <span data-ttu-id="cd57d-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="cd57d-123">Header</span></span>        | <span data-ttu-id="cd57d-124">Значение</span><span class="sxs-lookup"><span data-stu-id="cd57d-124">Value</span></span>           |
 |:--------------|:--------------  |
-| <span data-ttu-id="4d4e5-127">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4d4e5-127">Authorization</span></span> | <span data-ttu-id="4d4e5-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="cd57d-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="cd57d-125">Authorization</span></span> | <span data-ttu-id="cd57d-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="cd57d-p103">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="4d4e5-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="4d4e5-130">Request body</span></span>
-<span data-ttu-id="4d4e5-131">Нет.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-131">None.</span></span>
+## <a name="request-body"></a><span data-ttu-id="cd57d-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="cd57d-128">Request body</span></span>
+<span data-ttu-id="cd57d-129">Нет.</span><span class="sxs-lookup"><span data-stu-id="cd57d-129">None.</span></span>
 
-><span data-ttu-id="4d4e5-132">**Примечание:** Можно отфильтровать поля объекта [teamsCatalogApp](../resources/teamsapp.md) для сокращения списка результатов.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-132">**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results.</span></span> <span data-ttu-id="4d4e5-133">Можно использовать любой из следующих операций фильтра: равно, не равно и, или, а не.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-133">You can use any of the following filter operations: Equal, not-equal, and, or, and not.</span></span>
+><span data-ttu-id="cd57d-130">**Примечание:** Можно отфильтровать поля объекта [teamsCatalogApp](../resources/teamsapp.md) для сокращения списка результатов.</span><span class="sxs-lookup"><span data-stu-id="cd57d-130">**Note:** You can filter on any of the fields of the [teamsCatalogApp](../resources/teamsapp.md) object to shorten the list of results.</span></span> <span data-ttu-id="cd57d-131">Можно использовать любой из следующих операций фильтра: равно, не равно и, или, а не.</span><span class="sxs-lookup"><span data-stu-id="cd57d-131">You can use any of the following filter operations: Equal, not-equal, and, or, and not.</span></span>
 
-## <a name="response"></a><span data-ttu-id="4d4e5-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="4d4e5-134">Response</span></span>
-<span data-ttu-id="4d4e5-135">Успешно завершена, этот метод возвращает `200 OK` код ответа и список объектов [teamsCatalogApp](../resources/teamsapp.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-135">If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="cd57d-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="cd57d-132">Response</span></span>
+<span data-ttu-id="cd57d-133">Успешно завершена, этот метод возвращает `200 OK` код ответа и список объектов [teamsCatalogApp](../resources/teamsapp.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="cd57d-133">If successful, this method returns a `200 OK` response code and a list of [teamsCatalogApp](../resources/teamsapp.md) objects in the response body.</span></span>
 
-## <a name="examples"></a><span data-ttu-id="4d4e5-136">Примеры</span><span class="sxs-lookup"><span data-stu-id="4d4e5-136">Examples</span></span>
-### <a name="example-1"></a><span data-ttu-id="4d4e5-137">Пример 1</span><span class="sxs-lookup"><span data-stu-id="4d4e5-137">Example 1</span></span>
-<span data-ttu-id="4d4e5-138">В следующем примере перечисляются все приложения, которые специфичны для вашего клиента.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-138">The following example lists all applications that are specific to your tenant.</span></span>
+## <a name="examples"></a><span data-ttu-id="cd57d-134">Примеры</span><span class="sxs-lookup"><span data-stu-id="cd57d-134">Examples</span></span>
+### <a name="example-1"></a><span data-ttu-id="cd57d-135">Пример 1</span><span class="sxs-lookup"><span data-stu-id="cd57d-135">Example 1</span></span>
+<span data-ttu-id="cd57d-136">В следующем примере перечисляются все приложения, которые специфичны для вашего клиента.</span><span class="sxs-lookup"><span data-stu-id="cd57d-136">The following example lists all applications that are specific to your tenant.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4d4e5-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="4d4e5-139">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cd57d-137">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd57d-137">Request</span></span>
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
-#### <a name="response"></a><span data-ttu-id="4d4e5-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="4d4e5-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cd57d-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="cd57d-138">Response</span></span>
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -79,16 +79,16 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2"></a><span data-ttu-id="4d4e5-141">Пример 2</span><span class="sxs-lookup"><span data-stu-id="4d4e5-141">Example 2</span></span>
+### <a name="example-2"></a><span data-ttu-id="cd57d-139">Пример 2</span><span class="sxs-lookup"><span data-stu-id="cd57d-139">Example 2</span></span>
 
-<span data-ttu-id="4d4e5-142">В следующем примере перечисляются приложений с указанным идентификатором.</span><span class="sxs-lookup"><span data-stu-id="4d4e5-142">The following example lists applications with a given ID.</span></span>
+<span data-ttu-id="cd57d-140">В следующем примере перечисляются приложений с указанным идентификатором.</span><span class="sxs-lookup"><span data-stu-id="cd57d-140">The following example lists applications with a given ID.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="4d4e5-143">Запрос</span><span class="sxs-lookup"><span data-stu-id="4d4e5-143">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="cd57d-141">Запрос</span><span class="sxs-lookup"><span data-stu-id="cd57d-141">Request</span></span>
 ```
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
-#### <a name="response"></a><span data-ttu-id="4d4e5-144">Ответ</span><span class="sxs-lookup"><span data-stu-id="4d4e5-144">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="cd57d-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="cd57d-142">Response</span></span>
 ```
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -106,3 +106,11 @@ Content-Type: application/json
 }
 ```
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
