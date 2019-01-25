@@ -4,16 +4,16 @@ description: Объект оболочки, в которой хранятся �
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: eb0879737d0375bf2463268fe29f2c98f2b6ed51
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4d05cf5307e77dc6a7ac438c1bd4f4af4e73784e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529231"
 ---
 # <a name="educationassignmentresource-resource-type"></a>Тип ресурса educationAssignmentResource
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Объект оболочки, в которой хранятся ресурсы, связанные с назначением. Программа-оболочка добавляет свойство **distributeForStudentWork** и указывает, что ресурс будет скопировать для отправки учебы.  Если объект не копируется, каждого студента появится ссылка на ресурс для назначения. Студент не сможет обновлять этот ресурс. Это выдаче преподаватель учебы ничего не включены. Если распространяется ресурса, каждого студента будет получать копию этого ресурса в списке ресурсов их отправки. Каждый студент будет изменять их копию и отправьте его для ранжирования.
 
@@ -23,17 +23,17 @@ ms.locfileid: "27991351"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойства и связи объекта **educationAssignmentResource** .|
-|[обновление](../api/educationassignmentresource-update.md); | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
+|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
 |[Delete](../api/educationassignmentresource-delete.md) | Нет |Удаление объекта **educationAssignmentResource** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Boolean|Указывает, будет ли этот ресурс необходимо копировать в каждой учебы отправки для изменения и отправки.|
+|distributeForStudentWork|Логическое|Указывает, будет ли этот ресурс необходимо копировать в каждой учебы отправки для изменения и отправки.|
 |id|String| Идентификатор ресурса. Только для чтения.|
 |resource|[educationResource](educationresource.md)|Объект ресурса, связанный с этим назначением.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Отсутствуют.
 
 
@@ -60,10 +60,15 @@ ms.locfileid: "27991351"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "educationAssignmentResource resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationassignmentresource.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

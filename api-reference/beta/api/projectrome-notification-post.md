@@ -3,15 +3,15 @@ title: Создание и отправка уведомления
 description: 'Создание и отправка уведомления, предназначенные для пользователей через Microsoft Graph. Уведомление, сохраненных в Microsoft Graph уведомление, веб-канала хранилища и отправляется всем клиентам приложения на всех конечных точках устройства, которые пользователь входит в систему.  '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: d8258e0da04f199a0f40bdb2a2ec85e01d5d5faf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 70c7992a6fd323b909d948976132304fa04393c4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975934"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528447"
 ---
 # <a name="create-and-send-a-notification"></a>Создание и отправка уведомления
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Создание и отправка уведомления, предназначенные для пользователей через Microsoft Graph. Уведомление, сохраненных в Microsoft Graph уведомление, веб-канала хранилища и отправляется всем клиентам приложения на всех конечных точках устройства, которые пользователь входит в систему.  
 ## <a name="permissions"></a>Разрешения
@@ -32,8 +32,8 @@ POST /me/notifications/
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | строка |Заголовок authorization используется для передачи учетных данных вызывающей стороны. Носителя {маркер}. Обязательный. |
-## <a name="request-body"></a>Тело запроса
+|Authorization | string |Заголовок authorization используется для передачи учетных данных вызывающей стороны. Маркер носителя Обязательный. |
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [уведомлений](../resources/projectrome-notification.md) .
 
 ## <a name="response"></a>Ответ
@@ -69,7 +69,7 @@ Content-type: application/json
 ```
 
 #### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 ```http
 HTTP/1.1 201
@@ -94,3 +94,11 @@ location: https://graph.microsoft.com/beta/me/notifications/518c4fb1-c565-4d67-9
 ```
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/projectrome-notification-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

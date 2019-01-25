@@ -3,16 +3,16 @@ title: Создание условий для работы на разных у�
 description: '{Это выпуска бета-версии. Содержимое похож на существующий project_rome_overview.md.}'
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 3d1f40da43ff4b2ee2d958224f395247db2e5f77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9a365198edc337bbd6baf1b7a688e0bbeaa74cd5
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916343"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529378"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>Создание условий для работы на разных устройствах с помощью API Microsoft Graph
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 {Это выпуска бета-версии. Содержимое похож на существующий project_rome_overview.md.}
 
@@ -22,3 +22,11 @@ ms.locfileid: "27916343"
 - [Использование API веб-канала активности для возобновления активности пользователя на разных устройствах](activity-feed-api-overview.md)
 - [Общие сведения о включении взаимодействия между устройствами с помощью API преобразования устройства в Microsoft Graph](/graph/device-relay-concept-overview)
 - [Используйте устройство реле API для передачи взаимодействие с пользователем через устройств](device-relay-api-overview.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/cross-device-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

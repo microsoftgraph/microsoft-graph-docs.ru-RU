@@ -4,16 +4,16 @@ description: Представляет ошибки, возвращенной к�
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
-ms.openlocfilehash: cda1d5d3ac56c50cdeb94ada091e8ae2975b8813
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 26f96c83ce14539011664b446265328f714ed402
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914481"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529896"
 ---
 # <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Тип ресурса educationFileSynchronizationVerificationMessage
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет ошибки, возвращенной клиенту в ответ на запрос на [Запуск синхронизации](../api/educationsynchronizationprofile-start.md) профилей на основе CSV школа данных. Этот ресурс будет содержать ошибки, которые возникают из проверки. Пользователям необходимо исправить источника данных, перед перезапуском запроса для синхронизации с Azure Active Directory (Azure AD).
 
@@ -22,7 +22,7 @@ ms.locfileid: "27914481"
 | Свойство | Тип | Описание |
 |:-|:-|:-|
 | **type** | string | Тип сообщения. Возможные значения: `error`, `warning`, `information`. | 
-| **Имя файла** | string | Исходный файл, который содержит ошибки. |
+| **fileName** | string | Исходный файл, который содержит ошибки. |
 | **description** | строка | Подробные сведения о типе сообщения. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,3 +42,11 @@ ms.locfileid: "27914481"
     "description": "String"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/educationfilesynchronizationverificationmessage.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

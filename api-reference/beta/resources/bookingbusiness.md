@@ -4,16 +4,16 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: cf00239802cec9a705c24548649e38f3022383a0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986217"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528923"
 ---
 # <a name="bookingbusiness-resource-type"></a>Тип ресурса bookingBusiness
 
- > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
 Представляет бизнеса в Microsoft резервирования. Это объект верхнего уровня в API-Интерфейс Microsoft резервирования. Он содержит бизнес-данных и связанных с ними бизнес-объекты например встреч, клиенты, службы и сотрудников.
 
@@ -24,7 +24,7 @@ ms.locfileid: "27986217"
 |[Список bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) коллекции |Получите коллекцию объектов bookingbusiness в клиента. |
 |[Создание bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Создание нового резервирования Microsoft business. |
 |[Получение bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Чтение свойства и связи объекта bookingBusiness.|
-|[обновление](../api/bookingbusiness-update.md). | [bookingBusiness](bookingbusiness.md) |Обновление свойств в объект **bookingBusiness** . |
+|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств в объект **bookingBusiness** . |
 |[Delete](../api/bookingbusiness-delete.md) | Нет |Удалите объект **bookingBusiness** . |
 |[Создание bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Создайте новый bookingAppointment, отправку сообщений в коллекцию встреч.|
 |[Список встреч](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) коллекции| Получите коллекцию объектов bookingAppointment.|
@@ -35,8 +35,8 @@ ms.locfileid: "27986217"
 |[Создание bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Создайте новый bookingStaffMember, отправку сообщений в коллекцию staffMembers.|
 |[Список staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) коллекции| Получите коллекцию объектов bookingStaffMember.|
 |[Список calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) коллекции|Получите коллекцию объектов **bookingAppointment** , что происходит в за указанный диапазон дат.|
-|[Публикация](../api/bookingbusiness-publish.md)|Нет|Сделайте доступными странице планирования бизнеса внешним клиентам. Свойства **isPublished** значение true, а свойство **publicUrl** URL-адрес страницы планирования.|
-|[Отмена публикации](../api/bookingbusiness-unpublish.md)|Нет| Доступность планирования страницы бизнеса не для внешних клиентов. Присвойте свойству **isPublished** значение false и свойство **publicUrl** значения NULL.|
+|[Publish](../api/bookingbusiness-publish.md)|Нет|Сделайте доступными странице планирования бизнеса внешним клиентам. Свойства **isPublished** значение true, а свойство **publicUrl** URL-адрес страницы планирования.|
+|[отмена публикации](../api/bookingbusiness-unpublish.md).|Нет| Доступность планирования страницы бизнеса не для внешних клиентов. Присвойте свойству **isPublished** значение false и свойство **publicUrl** значения NULL.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -47,14 +47,14 @@ ms.locfileid: "27986217"
 |defaultCurrencyIso|String|Код для валюты, предприятию работает в Microsoft резервирования.|
 |displayName|String|Название организации, который взаимодействует с клиентами. Это имя отображается в верхней части бизнеса, планирование страницы.|
 |email|String|Адрес электронной почты для бизнеса.|
-|id|String|Уникальный программный идентификатор для бизнеса. Только для чтения.|
-|isPublished|Boolean|Страница расписания предоставленной внешним клиентам. Для установки этого свойства используется действий **Публикация** и **Отмена публикации** . Только для чтения.|
+|id|Строка|Уникальный программный идентификатор для бизнеса. Только для чтения.|
+|IsPublished|Логическое|Страница расписания предоставленной внешним клиентам. Для установки этого свойства используется действий **Публикация** и **Отмена публикации** . Только для чтения.|
 |phone|String|Номер телефона для бизнеса. Свойство **phone** вместе с **адресом** и **webSiteUrl**отображаются в нижнем колонтитуле предприятие планирования страницы.|
 |publicUrl|String|URL-адрес для планирования страницы, которая задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
 |schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создать резервирования для бизнеса.|
-|webSiteUrl|String|URL-адрес веб-сайта бизнеса. Свойство **webSiteUrl** вместе с **адреса**, **Телефон**, отображаются в нижней части страницы планирования бизнес.|
+|websiteUrl|String|URL-адрес веб-сайта бизнеса. Свойство **webSiteUrl** вместе с **адреса**, **Телефон**, отображаются в нижней части страницы планирования бизнес.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appointments|[bookingAppointment](bookingappointment.md) коллекции| Все встречи бизнеса. Только для чтения. Допускается значение null.|
@@ -98,10 +98,15 @@ ms.locfileid: "27986217"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "bookingBusiness resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/bookingbusiness.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

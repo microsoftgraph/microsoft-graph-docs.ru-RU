@@ -2,16 +2,16 @@
 title: Тип ресурса secureScores
 description: 'в начало = n, где n — число дней данных, которую необходимо получить. '
 localization_priority: Normal
-ms.openlocfilehash: 332a9656d8237bb07d5c7739b666e09539cf984f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828737"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528664"
 ---
 # <a name="securescores-resource-type"></a>Тип ресурса secureScores
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет безопасной счета клиента в день для оценки данных, на уровне клиента и элемента управления. По умолчанию проводится данных в течение 90 дней. Эти данные сортируются по **createdDateTime**от поздних к ранним. Это позволит вам для запросов с помощью $top = n, где n — число дней данных, которую необходимо получить. 
 
@@ -28,9 +28,9 @@ ms.locfileid: "27828737"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|   azureTenantId   |   Строка  |   Идентификатор GUID строки для клиента.  |
+|   azureTenantId   |   String  |   Идентификатор GUID строки для клиента.  |
 |   createdDateTime |   DateTimeOffset  |   Дата создания объекта.  |
-|   id  |   Строка  |   Сочетание azureTenantId_createdDateTime.   |
+|   id  |   String  |   Сочетание azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Число пользователей данного клиента с корпоративным лицензированием.    |
 |   activeUserCount |   Int32   |   Число активных пользователей указанного клиента.  |
 |   currentScore    |   Double  |   Оценка текущего обновления клиента на указанной даты.    |
@@ -40,7 +40,7 @@ ms.locfileid: "27828737"
 |   controlScores | [controlScore](controlscore.md) коллекции  |   Содержит показателям клиента для набора элементов управления.   |
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Отсутствуют.
 
@@ -74,10 +74,15 @@ ms.locfileid: "27828737"
 ```
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "secureScores resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/securescores.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

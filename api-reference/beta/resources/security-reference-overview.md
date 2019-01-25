@@ -4,16 +4,16 @@ description: Сложность угрозы безопасности по-пр�
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 42891aa53da23cc27b046f6d282fd2add3015739
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 37e98203e8f031aa98b35d82110a69e434c22a3f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980288"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529931"
 ---
 # <a name="use-the-microsoft-graph-api-for-security-threat-detection-and-protection-preview"></a>Использование Microsoft Graph API для обнаружения угроз безопасности и защиты (Предварительная версия)
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сложность угрозы безопасности по-прежнему производится перевод, влияния на глобальной экономики. Повреждение чаще всего осуществляется за срок перед организациями даже обнаружения его. Microsoft Graph можно использовать для построения или расширить, объединение и соотнесения оповещение системы безопасности из нескольких источников, обнаружения угроз, которые пытаются злоумышленнику удостоверения пользователя, unlock контекстных данных для автоматизации и информирование расследований решения по обеспечению безопасности операции по безопасности для повышения эффективности.
 
@@ -25,5 +25,13 @@ ms.locfileid: "27980288"
 
 - [Причины использования безопасности API?](/graph/security-concept-overview#why-use-the-security-api-and-connect-with-microsoft-intelligent-security-graph)
 - [Использование безопасности API для интеграции с Intelligent график безопасности](security-api-overview.md)
-- [Зачем использовать Azure AD для защиты удостоверений в организации?](/graph/security-concept-overview#why-use-azure-ad-to-protect-identities-in-your-organization)
+- Зачем использовать Azure AD для защиты удостоверений в организации?
 - [Использование API защиты идентификации Azure AD](identityprotection-root.md)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/security-reference-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,16 +2,16 @@
 title: Тип ресурса governancePermission
 description: 'Представляет, governanceSubject имеет разрешение на доступ к определенным governanceResource.  '
 localization_priority: Normal
-ms.openlocfilehash: e082ca50e5642e865b3e30859eea607df63a03b4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27882875"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529840"
 ---
 # <a name="governancepermission-resource-type"></a>Тип ресурса governancePermission
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет, [governanceSubject](../resources/governancesubject.md) имеет разрешение на доступ к определенным [governanceResource](../resources/governanceresource.md).  
 
@@ -19,9 +19,9 @@ ms.locfileid: "27882875"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accessLevel|Строка|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
-|isActive|Логический|Указывает, если инициатора запроса имеет назначения активная роль на уровне доступа.|
-|isEligible|Логический|Указывает, имеет ли инициатора запроса все назначения ролей право на уровне доступа.|
+|AccessLevel|String|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
+|isActive|Логическое|Указывает, если инициатора запроса имеет назначения активная роль на уровне доступа.|
+|isEligible|Логическое|Указывает, имеет ли инициатора запроса все назначения ролей право на уровне доступа.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -35,3 +35,11 @@ ms.locfileid: "27882875"
 }
 
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/governancepermission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

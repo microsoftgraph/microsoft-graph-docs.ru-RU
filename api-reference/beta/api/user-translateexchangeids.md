@@ -4,16 +4,16 @@ description: Переведите идентификаторы, связанны
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d613a6c27df1b53c5a41462276f67cc1991a3c88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957629"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528230"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Переведите идентификаторы, связанные с Outlook ресурсов форматов.
 
@@ -25,7 +25,7 @@ ms.locfileid: "27957629"
 |:----------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись) | User.ReadBasic, User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | User.ReadBasic, User.Read, User.ReadWrite |
-| Приложение | User.Read.All, User.ReadWrite.All |
+| Для приложений | User.Read.All, User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-----|:------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Значения | Описание |
 |:-------|:------------|
-| Идентификатор записи | Формат идентификатора двоичные запись, используемого клиентами MAPI. |
+| EntryID | Формат идентификатора двоичные запись, используемого клиентами MAPI. |
 | ewsId | Идентификатор формата, используемого клиентами веб-служб Exchange. |
 | immutableEntryId | Двоичные MAPI-совместимое постоянные идентификатор формата. |
 | restId | По умолчанию идентификатор формата Microsoft Graph. |
@@ -62,12 +62,12 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 Двоичные форматы (`entryId` и `immutableEntryId`) являются кодировке base64 safe URL-адрес. URL-адрес safeness осуществляется путем изменения Кодировка base64 двоичных данных следующим образом:
 
-- Замените `+` с`-`
-- Замените `/` с`_`
+- `+`
+- `/`
 - Удалите все конечные знаки внутренние поля (`=`)
 - Добавление целое число в конец строки, показывающее, сколько символов заполнения были в исходной (`0`, `1`, или `2`)
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и семейства [convertIdResult](../resources/convertidresult.md) в теле ответа.
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа
 <!-- {
@@ -124,3 +124,11 @@ Content-type: application/json
   ]
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-translateexchangeids.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

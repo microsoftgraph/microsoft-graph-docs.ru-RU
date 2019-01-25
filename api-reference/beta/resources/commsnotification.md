@@ -4,24 +4,24 @@ description: Связь уведомлений базовый тип, котор
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e5b929997cf17d13043264d42421418321aae84e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977698"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529518"
 ---
 # <a name="commsnotification-resource-type"></a>Тип ресурса commsNotification
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Связь уведомлений базовый тип, который был опубликован серверами коммуникаций для уведомление об изменениях.
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
-| changeType     | Строка  | Возможные значения: `created`, `updated`, `deleted`.      |
-| resource       | Строка  | URI-идентификатор ресурса, который был изменен.                      |
+| changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
+| resource       | String  | URI-идентификатор ресурса, который был изменен.                      |
 
 > **Примечание:** `resourceData` доступен в качестве дополнительных данных. Это объект или Collection(entity) в зависимости от изменений, упакованный в уведомления.
 
@@ -93,10 +93,15 @@ ms.locfileid: "27977698"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "commsNotification resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/commsnotification.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

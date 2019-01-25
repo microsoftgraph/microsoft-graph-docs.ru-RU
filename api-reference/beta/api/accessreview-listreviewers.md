@@ -4,16 +4,16 @@ description: В Azure AD access дается обзор компонента, п
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8dca759f71f13af18c291f1af9843da6729ef701
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d2227ed6343900780df57aeece2fe511f07da04f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946814"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529280"
 ---
 # <a name="list-accessreview-reviewers"></a>Список accessReview рецензентов
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD извлечения рецензентов объект [accessReview](../resources/accessreview.md) .
 ## <a name="permissions"></a>Разрешения
@@ -33,9 +33,9 @@ GET /accessReviews('{reviewId}')/reviewers
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Носителя \{маркеров\}. Обязательный. |
+| Authorization | string | Маркер носителя Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Нет текста запроса должен задаваться.
 
 ## <a name="response"></a>Ответ
@@ -82,10 +82,15 @@ Content-type: application/json
 |[Удаление accessReview редактор](accessreview-removereviewer.md) | Нет. |   Удаление рецензента из accessReview. |
 
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get accessReview reviewers",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/accessreview-listreviewers.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

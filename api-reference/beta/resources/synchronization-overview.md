@@ -2,16 +2,16 @@
 title: Обзор синхронизации API Azure AD
 description: ') позволяет автоматизировать создания, обслуживания и удаления удостоверений в облако (программное обеспечение как службы или SaaS) приложениями, такими как общего банка данных, Salesforce, ServiceNow и многое другое. API синхронизации можно использовать в Microsoft Graph для управления синхронизацией identity программным путем, включая:'
 localization_priority: Normal
-ms.openlocfilehash: aada94f39c67fb1174924d49c6e57650f4961cc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884688"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529560"
 ---
 # <a name="azure-ad-synchronization-api-overview"></a>Обзор синхронизации API Azure AD
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Azure (Azure AD) удостоверений синхронизации с Active Directory (также называемая «Подготовка») позволяет автоматизировать создания, обслуживания и удаления удостоверений в облаке (программное обеспечение как службы или SaaS) приложениями, такими как общего банка данных, Salesforce, ServiceNow, и многое другое. API синхронизации можно использовать в Microsoft Graph для управления синхронизацией identity программным путем, включая:
 
@@ -62,7 +62,7 @@ Azure (Azure AD) удостоверений синхронизации с Active
 
 Следующем примере показано, как для объекта-участника службы поиска по отображаемому имени.
 
-**Запрос** 
+Запрос 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -94,14 +94,12 @@ HTTP/1.1 200 OK
 
 Следующем примере показано, как найти объекта участника-службы с идентификатором приложения.
 
-**Запрос** 
-<!-- { "blockType": "ignored" } -->
+Запрос
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-**Ответа**
-<!-- { "blockType": "ignored" } -->
+Ответ
 ```http
 HTTP/1.1 200 OK
 {
@@ -119,15 +117,13 @@ HTTP/1.1 200 OK
 
 Следующем примере показано, как список существующих заданий синхронизации.
 
-**Запрос**
-<!-- { "blockType": "ignored" } -->
+Запрос
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-**Ответа**
-<!-- { "blockType": "ignored" } -->
+Ответ
 ```http
 HTTP/1.1 200 OK
 {
@@ -149,16 +145,14 @@ HTTP/1.1 200 OK
 ### <a name="get-synchronization-job-status"></a>Получить сведения о состоянии задания синхронизации
 Следующем примере показано, как получить сведения о состоянии задания синхронизации.
 
-**Запрос**
-<!-- { "blockType": "ignored" } -->
+Запрос
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-**Ответа**
-<!-- { "blockType": "ignored" } -->
+Ответ
 ```http
     HTTP/1.1 200 OK
     {
@@ -176,14 +170,12 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ### <a name="get-synchronization-schema"></a>Получение схемы синхронизации
 Следующем примере показано, как получить схему синхронизации.
 
-**Запрос**
-<!-- { "blockType": "ignored" } -->
+Запрос
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-**Ответа**
-<!-- { "blockType": "ignored" } -->
+Ответ
 ```http
 HTTP/1.1 200 OK
 {
@@ -198,3 +190,11 @@ HTTP/1.1 200 OK
 
 
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,16 +4,16 @@ description: Ответ на входящий звонок.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d3927c41df6558b1c0d266afbdb25f1c12ac1e49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971615"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530050"
 ---
 # <a name="call-answer"></a>Вызовите: ответ
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ответ на входящий звонок.
 
@@ -24,7 +24,7 @@ ms.locfileid: "27971615"
 | :-------------- | :-----------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
-| Application     | Нет                                                        |
+| Для приложений     | Нет                                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,14 +38,14 @@ POST /applications/{id}/calls/{id}/answer
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |Строка                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. (Обязательно)                                                               |
-|acceptedModalities|Коллекция String                         |Список принимать модальности. Приведены возможные значения: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. (Обязательно) |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Конфигурация мультимедиа. (Обязательно)                                                                                                            |
+|callbackUri       |String                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. Обязательный.                                                               |
+|acceptedModalities|Коллекция String                         |Список принимать модальности. Приведены возможные значения: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. Обязательный. |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Конфигурация мультимедиа. Обязательный.                                                                                                            |
 
 ## <a name="response"></a>Ответ
 Этот метод возвращает `202 Accepted` код ответа.
@@ -159,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+##### <a name="request"></a>Запросить
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -191,7 +191,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 202 Accepted
@@ -312,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запрос
+##### <a name="request"></a>Запросить
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -335,7 +335,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 202 Accepted
@@ -401,10 +401,15 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "call: answer",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/call-answer.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

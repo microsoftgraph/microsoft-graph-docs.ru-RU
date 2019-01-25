@@ -4,16 +4,16 @@ ms.author: dspektor
 ms.date: 09/14/2017
 title: MoveAction
 localization_priority: Normal
-ms.openlocfilehash: 40049b506c72af5aacddf461b22e1ddd280d7ad4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aa20816165ed4f41e8b89af106e3f781b1be8dd7
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27852901"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29530085"
 ---
 # <a name="moveaction-resource-type"></a>Тип ресурса MoveAction
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Наличие ресурса **MoveAction** в ресурсе [**itemActivity**][activity] указывает, что в результате выполнения действия элемент был перемещен.
 
@@ -45,10 +45,15 @@ ms.locfileid: "27852901"
 
 На данный момент записи о действиях над элементом доступны только в SharePoint и OneDrive для бизнеса.
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "The MoveAction object provides information about an activity that moved an item.",
   "keywords": "activities,activity,action,move,moved",
   "section": "documentation",
-  "tocPath": "Resources/MoveAction"
-} -->
+  "tocPath": "Resources/MoveAction",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/moveaction.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
