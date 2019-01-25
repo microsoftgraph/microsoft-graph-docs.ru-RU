@@ -4,25 +4,33 @@ description: Описывает текущее состояние teamsAsyncOper
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: e136d043cf58480d93888374558a1be06ca9053d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e9138adcc646677955a12091a3fb15badfd39f13
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914823"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511711"
 ---
-# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="a0a43-103">Тип перечисления teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="a0a43-103">teamsAsyncOperationStatus enum type</span></span>
+# <a name="teamsasyncoperationstatus-enum-type"></a><span data-ttu-id="07da5-103">Тип перечисления teamsAsyncOperationStatus</span><span class="sxs-lookup"><span data-stu-id="07da5-103">teamsAsyncOperationStatus enum type</span></span>
 
-> <span data-ttu-id="a0a43-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a0a43-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="a0a43-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a0a43-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a0a43-106">Описывает текущее состояние [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="a0a43-106">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="07da5-104">Описывает текущее состояние [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="07da5-104">Describes the current status of a [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="members"></a><span data-ttu-id="a0a43-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="a0a43-107">Members</span></span>
+## <a name="members"></a><span data-ttu-id="07da5-105">Элементы</span><span class="sxs-lookup"><span data-stu-id="07da5-105">Members</span></span>
 
-| <span data-ttu-id="a0a43-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="a0a43-108">Member</span></span> | <span data-ttu-id="a0a43-109">Значение</span><span class="sxs-lookup"><span data-stu-id="a0a43-109">Value</span></span>| <span data-ttu-id="a0a43-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a0a43-110">Description</span></span> |
+| <span data-ttu-id="07da5-106">Элемент</span><span class="sxs-lookup"><span data-stu-id="07da5-106">Member</span></span> | <span data-ttu-id="07da5-107">Значение</span><span class="sxs-lookup"><span data-stu-id="07da5-107">Value</span></span>| <span data-ttu-id="07da5-108">Описание</span><span class="sxs-lookup"><span data-stu-id="07da5-108">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a0a43-111">Недопустимый</span><span class="sxs-lookup"><span data-stu-id="a0a43-111">invalid</span></span>|<span data-ttu-id="a0a43-112">0</span><span class="sxs-lookup"><span data-stu-id="a0a43-112">0</span></span>|<span data-ttu-id="a0a43-113">Недопустимое значение.</span><span class="sxs-lookup"><span data-stu-id="a0a43-113">Invalid value.</span></span>|
-|<span data-ttu-id="a0a43-114">notStarted</span><span class="sxs-lookup"><span data-stu-id="a0a43-114">notStarted</span></span>|<span data-ttu-id="a0a43-115">1</span><span class="sxs-lookup"><span data-stu-id="a0a43-115">1</span></span>|<span data-ttu-id="a0a43-116">Эта операция не запущена.</span><span class="sxs-lookup"><span data-stu-id="a0a43-116">The operation has not started.</span></span>|
-|<span data-ttu-id="a0a43-117">inProgress</span><span class="sxs-lookup"><span data-stu-id="a0a43-117">inProgress</span></span>|<span data-ttu-id="a0a43-118">2</span><span class="sxs-lookup"><span data-stu-id="a0a43-118">2</span></span>|<span data-ttu-id="a0a43-119">Выполнение операции.</span><span class="sxs-lookup"><span data-stu-id="a0a43-119">The operation is running.</span></span>|
-|<span data-ttu-id="a0a43-120">succeeded</span><span class="sxs-lookup"><span data-stu-id="a0a43-120">succeeded</span></span>|<span data-ttu-id="a0a43-121">3</span><span class="sxs-lookup"><span data-stu-id="a0a43-121">3</span></span>|<span data-ttu-id="a0a43-122">Операция успешно завершена.</span><span class="sxs-lookup"><span data-stu-id="a0a43-122">The operation succeeded.</span></span>|
-|<span data-ttu-id="a0a43-123">failed</span><span class="sxs-lookup"><span data-stu-id="a0a43-123">failed</span></span>|<span data-ttu-id="a0a43-124">4</span><span class="sxs-lookup"><span data-stu-id="a0a43-124">4</span></span>|<span data-ttu-id="a0a43-125">Сбой операции.</span><span class="sxs-lookup"><span data-stu-id="a0a43-125">The operation failed.</span></span>|
+|<span data-ttu-id="07da5-109">Invalid</span><span class="sxs-lookup"><span data-stu-id="07da5-109">invalid</span></span>|<span data-ttu-id="07da5-110">(0)</span><span class="sxs-lookup"><span data-stu-id="07da5-110">0</span></span>|<span data-ttu-id="07da5-111">Недопустимое значение</span><span class="sxs-lookup"><span data-stu-id="07da5-111">Invalid value.</span></span>|
+|<span data-ttu-id="07da5-112">notStarted</span><span class="sxs-lookup"><span data-stu-id="07da5-112">notStarted</span></span>|<span data-ttu-id="07da5-113">$1</span><span class="sxs-lookup"><span data-stu-id="07da5-113">1</span></span>|<span data-ttu-id="07da5-114">Эта операция не запущена.</span><span class="sxs-lookup"><span data-stu-id="07da5-114">The operation has not started.</span></span>|
+|<span data-ttu-id="07da5-115">InProgress</span><span class="sxs-lookup"><span data-stu-id="07da5-115">inProgress</span></span>|<span data-ttu-id="07da5-116">–2</span><span class="sxs-lookup"><span data-stu-id="07da5-116">2</span></span>|<span data-ttu-id="07da5-117">Выполнение операции.</span><span class="sxs-lookup"><span data-stu-id="07da5-117">The operation is running.</span></span>|
+|<span data-ttu-id="07da5-118">succeeded</span><span class="sxs-lookup"><span data-stu-id="07da5-118">succeeded</span></span>|<span data-ttu-id="07da5-119">–3</span><span class="sxs-lookup"><span data-stu-id="07da5-119">3</span></span>|<span data-ttu-id="07da5-120">Операция успешно завершена.</span><span class="sxs-lookup"><span data-stu-id="07da5-120">The operation succeeded.</span></span>|
+|<span data-ttu-id="07da5-121">failed</span><span class="sxs-lookup"><span data-stu-id="07da5-121">failed</span></span>|<span data-ttu-id="07da5-122">4</span><span class="sxs-lookup"><span data-stu-id="07da5-122">4</span></span>|<span data-ttu-id="07da5-123">Сбой операции.</span><span class="sxs-lookup"><span data-stu-id="07da5-123">The operation failed.</span></span>|
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperationstatus.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -4,58 +4,58 @@ description: Обновление свойств объекта chartfont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 729c5e20fef7c4c2c411cfede3a28e512286457c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971496"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511935"
 ---
-# <a name="update-chartfont"></a><span data-ttu-id="64f1a-103">Обновление объекта ChartFont</span><span class="sxs-lookup"><span data-stu-id="64f1a-103">Update chartfont</span></span>
+# <a name="update-chartfont"></a><span data-ttu-id="a474b-103">Обновление объекта ChartFont</span><span class="sxs-lookup"><span data-stu-id="a474b-103">Update chartfont</span></span>
 
-> <span data-ttu-id="64f1a-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="64f1a-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="64f1a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64f1a-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="64f1a-106">Обновление свойств объекта chartfont.</span><span class="sxs-lookup"><span data-stu-id="64f1a-106">Update the properties of chartfont object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="64f1a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="64f1a-107">Permissions</span></span>
-<span data-ttu-id="64f1a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="64f1a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a474b-104">Обновление свойств объекта chartfont.</span><span class="sxs-lookup"><span data-stu-id="a474b-104">Update the properties of chartfont object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a474b-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a474b-105">Permissions</span></span>
+<span data-ttu-id="a474b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a474b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="64f1a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="64f1a-110">Permission type</span></span>      | <span data-ttu-id="64f1a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="64f1a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a474b-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a474b-108">Permission type</span></span>      | <span data-ttu-id="a474b-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a474b-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="64f1a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="64f1a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="64f1a-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64f1a-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="64f1a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="64f1a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="64f1a-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="64f1a-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="64f1a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="64f1a-116">Application</span></span> | <span data-ttu-id="64f1a-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="64f1a-117">Not supported.</span></span> |
+|<span data-ttu-id="a474b-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a474b-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a474b-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a474b-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a474b-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a474b-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a474b-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a474b-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a474b-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a474b-114">Application</span></span> | <span data-ttu-id="a474b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a474b-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="64f1a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="64f1a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a474b-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a474b-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/format/font
 PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="64f1a-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="64f1a-119">Optional request headers</span></span>
-| <span data-ttu-id="64f1a-120">Имя</span><span class="sxs-lookup"><span data-stu-id="64f1a-120">Name</span></span>       | <span data-ttu-id="64f1a-121">Описание</span><span class="sxs-lookup"><span data-stu-id="64f1a-121">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="a474b-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a474b-117">Optional request headers</span></span>
+| <span data-ttu-id="a474b-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a474b-118">Name</span></span>       | <span data-ttu-id="a474b-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a474b-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="64f1a-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="64f1a-122">Authorization</span></span>  | <span data-ttu-id="64f1a-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="64f1a-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="64f1a-125">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="64f1a-125">Workbook-Session-Id</span></span>  | <span data-ttu-id="64f1a-p104">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="64f1a-p104">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a474b-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a474b-120">Authorization</span></span>  | <span data-ttu-id="a474b-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a474b-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a474b-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a474b-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a474b-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="a474b-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="64f1a-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="64f1a-128">Request body</span></span>
-<span data-ttu-id="64f1a-p105">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="64f1a-p105">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a474b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a474b-126">Request body</span></span>
+<span data-ttu-id="a474b-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="a474b-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="64f1a-132">Свойство</span><span class="sxs-lookup"><span data-stu-id="64f1a-132">Property</span></span>     | <span data-ttu-id="64f1a-133">Тип</span><span class="sxs-lookup"><span data-stu-id="64f1a-133">Type</span></span>   |<span data-ttu-id="64f1a-134">Описание</span><span class="sxs-lookup"><span data-stu-id="64f1a-134">Description</span></span>|
+| <span data-ttu-id="a474b-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="a474b-130">Property</span></span>     | <span data-ttu-id="a474b-131">Тип</span><span class="sxs-lookup"><span data-stu-id="a474b-131">Type</span></span>   |<span data-ttu-id="a474b-132">Описание</span><span class="sxs-lookup"><span data-stu-id="a474b-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="64f1a-135">bold</span><span class="sxs-lookup"><span data-stu-id="64f1a-135">bold</span></span>|<span data-ttu-id="64f1a-136">boolean</span><span class="sxs-lookup"><span data-stu-id="64f1a-136">boolean</span></span>|<span data-ttu-id="64f1a-137">Указывает, является ли шрифт полужирным.</span><span class="sxs-lookup"><span data-stu-id="64f1a-137">Represents the bold status of font.</span></span>|
-|<span data-ttu-id="64f1a-138">color</span><span class="sxs-lookup"><span data-stu-id="64f1a-138">color</span></span>|<span data-ttu-id="64f1a-139">строка</span><span class="sxs-lookup"><span data-stu-id="64f1a-139">string</span></span>|<span data-ttu-id="64f1a-p106">HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.</span><span class="sxs-lookup"><span data-stu-id="64f1a-p106">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
-|<span data-ttu-id="64f1a-143">italic</span><span class="sxs-lookup"><span data-stu-id="64f1a-143">italic</span></span>|<span data-ttu-id="64f1a-144">boolean</span><span class="sxs-lookup"><span data-stu-id="64f1a-144">boolean</span></span>|<span data-ttu-id="64f1a-145">Указывает, применяется ли курсив.</span><span class="sxs-lookup"><span data-stu-id="64f1a-145">Represents the italic status of the font.</span></span>|
-|<span data-ttu-id="64f1a-146">name</span><span class="sxs-lookup"><span data-stu-id="64f1a-146">name</span></span>|<span data-ttu-id="64f1a-147">строка</span><span class="sxs-lookup"><span data-stu-id="64f1a-147">string</span></span>|<span data-ttu-id="64f1a-148">Имя шрифта (например, Calibri)</span><span class="sxs-lookup"><span data-stu-id="64f1a-148">Font name (e.g. "Calibri")</span></span>|
-|<span data-ttu-id="64f1a-149">size</span><span class="sxs-lookup"><span data-stu-id="64f1a-149">size</span></span>|<span data-ttu-id="64f1a-150">Double</span><span class="sxs-lookup"><span data-stu-id="64f1a-150">double</span></span>|<span data-ttu-id="64f1a-151">Размер шрифта (например, 11)</span><span class="sxs-lookup"><span data-stu-id="64f1a-151">Size of the font (e.g. 11)</span></span>|
-|<span data-ttu-id="64f1a-152">underline</span><span class="sxs-lookup"><span data-stu-id="64f1a-152">underline</span></span>|<span data-ttu-id="64f1a-153">строка</span><span class="sxs-lookup"><span data-stu-id="64f1a-153">string</span></span>|<span data-ttu-id="64f1a-p107">Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.</span><span class="sxs-lookup"><span data-stu-id="64f1a-p107">Type of underline applied to the font. Possible values are: `None`, `Single`.</span></span>|
+|<span data-ttu-id="a474b-133">bold</span><span class="sxs-lookup"><span data-stu-id="a474b-133">bold</span></span>|<span data-ttu-id="a474b-134">boolean</span><span class="sxs-lookup"><span data-stu-id="a474b-134">boolean</span></span>|<span data-ttu-id="a474b-135">Указывает, является ли шрифт полужирным.</span><span class="sxs-lookup"><span data-stu-id="a474b-135">Represents the bold status of font.</span></span>|
+|<span data-ttu-id="a474b-136">color</span><span class="sxs-lookup"><span data-stu-id="a474b-136">color</span></span>|<span data-ttu-id="a474b-137">строка</span><span class="sxs-lookup"><span data-stu-id="a474b-137">string</span></span>|<span data-ttu-id="a474b-p105">HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.</span><span class="sxs-lookup"><span data-stu-id="a474b-p105">HTML color code representation of the text color. E.g. #FF0000 represents Red.</span></span>|
+|<span data-ttu-id="a474b-141">italic</span><span class="sxs-lookup"><span data-stu-id="a474b-141">italic</span></span>|<span data-ttu-id="a474b-142">boolean</span><span class="sxs-lookup"><span data-stu-id="a474b-142">boolean</span></span>|<span data-ttu-id="a474b-143">Указывает, применяется ли курсив.</span><span class="sxs-lookup"><span data-stu-id="a474b-143">Represents the italic status of the font.</span></span>|
+|<span data-ttu-id="a474b-144">name</span><span class="sxs-lookup"><span data-stu-id="a474b-144">name</span></span>|<span data-ttu-id="a474b-145">string</span><span class="sxs-lookup"><span data-stu-id="a474b-145">string</span></span>|<span data-ttu-id="a474b-146">Имя шрифта (например, Calibri)</span><span class="sxs-lookup"><span data-stu-id="a474b-146">Font name (e.g. "Calibri")</span></span>|
+|<span data-ttu-id="a474b-147">size</span><span class="sxs-lookup"><span data-stu-id="a474b-147">size</span></span>|<span data-ttu-id="a474b-148">Double</span><span class="sxs-lookup"><span data-stu-id="a474b-148">double</span></span>|<span data-ttu-id="a474b-149">Размер шрифта (например, 11)</span><span class="sxs-lookup"><span data-stu-id="a474b-149">Size of the font (e.g. 11)</span></span>|
+|<span data-ttu-id="a474b-150">underline</span><span class="sxs-lookup"><span data-stu-id="a474b-150">underline</span></span>|<span data-ttu-id="a474b-151">string</span><span class="sxs-lookup"><span data-stu-id="a474b-151">string</span></span>|<span data-ttu-id="a474b-p106">Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.</span><span class="sxs-lookup"><span data-stu-id="a474b-p106">Type of underline applied to the font. Possible values are: `None`, `Single`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="64f1a-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="64f1a-156">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a474b-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="a474b-154">Response</span></span>
 
-<span data-ttu-id="64f1a-157">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartFont](../resources/chartfont.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="64f1a-157">If successful, this method returns a `200 OK` response code and updated [ChartFont](../resources/chartfont.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="64f1a-158">Пример</span><span class="sxs-lookup"><span data-stu-id="64f1a-158">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="64f1a-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="64f1a-159">Request</span></span>
-<span data-ttu-id="64f1a-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="64f1a-160">Here is an example of the request.</span></span>
+<span data-ttu-id="a474b-155">В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartFont](../resources/chartfont.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a474b-155">If successful, this method returns a `200 OK` response code and updated [ChartFont](../resources/chartfont.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="a474b-156">Пример</span><span class="sxs-lookup"><span data-stu-id="a474b-156">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a474b-157">Запрос</span><span class="sxs-lookup"><span data-stu-id="a474b-157">Request</span></span>
+<span data-ttu-id="a474b-158">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a474b-158">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_chartfont"
@@ -74,8 +74,9 @@ Content-length: 134
   "underline": "underline-value"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="64f1a-161">Ответ</span><span class="sxs-lookup"><span data-stu-id="64f1a-161">Response</span></span>
-<span data-ttu-id="64f1a-p108">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="64f1a-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a474b-159">Ответ</span><span class="sxs-lookup"><span data-stu-id="a474b-159">Response</span></span>
+<span data-ttu-id="a474b-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+</span><span class="sxs-lookup"><span data-stu-id="a474b-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -98,10 +99,15 @@ Content-length: 134
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update chartfont",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/chartfont-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,60 +2,60 @@
 title: Получение governanceRoleDefinition
 description: Извлечение свойств и отношения governanceRoleDefinition.
 localization_priority: Normal
-ms.openlocfilehash: 99f19e1942c198259d9df7dd6e0f9e5a7685bc09
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e6a057816a8e07a355941f272325c30078327ab9
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27865067"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511928"
 ---
-# <a name="get-governanceroledefinition"></a><span data-ttu-id="32606-103">Получение governanceRoleDefinition</span><span class="sxs-lookup"><span data-stu-id="32606-103">Get governanceRoleDefinition</span></span>
+# <a name="get-governanceroledefinition"></a><span data-ttu-id="aae67-103">Получение governanceRoleDefinition</span><span class="sxs-lookup"><span data-stu-id="aae67-103">Get governanceRoleDefinition</span></span>
 
-> <span data-ttu-id="32606-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="32606-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="32606-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="32606-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="32606-106">Извлечение свойств и отношения [governanceRoleDefinition](../resources/governanceroledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="32606-106">Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).</span></span>
+<span data-ttu-id="aae67-104">Извлечение свойств и отношения [governanceRoleDefinition](../resources/governanceroledefinition.md).</span><span class="sxs-lookup"><span data-stu-id="aae67-104">Retrieve the properties and relationships of a [governanceRoleDefinition](../resources/governanceroledefinition.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="32606-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="32606-107">Permissions</span></span>
-<span data-ttu-id="32606-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="32606-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="aae67-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aae67-105">Permissions</span></span>
+<span data-ttu-id="aae67-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="aae67-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="32606-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="32606-110">Permission type</span></span>      | <span data-ttu-id="32606-111">Permissions</span><span class="sxs-lookup"><span data-stu-id="32606-111">Permissions</span></span>              |
+|<span data-ttu-id="aae67-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="aae67-108">Permission type</span></span>      | <span data-ttu-id="aae67-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="aae67-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="32606-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="32606-112">Delegated (work or school account)</span></span> | <span data-ttu-id="32606-113">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="32606-113">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="32606-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="32606-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="32606-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="32606-115">Not supported.</span></span>    |
-|<span data-ttu-id="32606-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="32606-116">Application</span></span> | <span data-ttu-id="32606-117">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="32606-117">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="aae67-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="aae67-110">Delegated (work or school account)</span></span> | <span data-ttu-id="aae67-111">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="aae67-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="aae67-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="aae67-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="aae67-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="aae67-113">Not supported.</span></span>    |
+|<span data-ttu-id="aae67-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="aae67-114">Application</span></span> | <span data-ttu-id="aae67-115">PrivilegedAccess.ReadWrite.AzureResources</span><span class="sxs-lookup"><span data-stu-id="aae67-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-<span data-ttu-id="32606-118">Помимо области разрешений этот интерфейс API требует инициатор запроса может иметь по крайней мере одно назначение роли на ресурс, который принадлежит [governanceRoleDefinition](../resources/governanceroledefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="32606-118">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.</span></span>
+<span data-ttu-id="aae67-116">Помимо области разрешений этот интерфейс API требует инициатор запроса может иметь по крайней мере одно назначение роли на ресурс, который принадлежит [governanceRoleDefinition](../resources/governanceroledefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="aae67-116">Besides the permission scope, this API requires the requestor to have at least one role assignment on the resource, which the [governanceRoleDefinition](../resources/governanceroledefinition.md) belongs to.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="32606-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="32606-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="aae67-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="aae67-117">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions/{id}
 GET /privilegedAccess/azureResources/roleDefinitions/{id}?$filter=resourceId+eq+'{resourceId}'
 ```
-## <a name="optional-query-parameters"></a><span data-ttu-id="32606-120">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="32606-120">Optional query parameters</span></span>
-<span data-ttu-id="32606-121">Метод не **поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа** .</span><span class="sxs-lookup"><span data-stu-id="32606-121">This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="aae67-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="aae67-118">Optional query parameters</span></span>
+<span data-ttu-id="aae67-119">Метод не **поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа** .</span><span class="sxs-lookup"><span data-stu-id="aae67-119">This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="32606-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="32606-122">Request headers</span></span>
-| <span data-ttu-id="32606-123">Имя</span><span class="sxs-lookup"><span data-stu-id="32606-123">Name</span></span>      |<span data-ttu-id="32606-124">Описание</span><span class="sxs-lookup"><span data-stu-id="32606-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="aae67-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="aae67-120">Request headers</span></span>
+| <span data-ttu-id="aae67-121">Имя</span><span class="sxs-lookup"><span data-stu-id="aae67-121">Name</span></span>      |<span data-ttu-id="aae67-122">Описание</span><span class="sxs-lookup"><span data-stu-id="aae67-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="32606-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="32606-125">Authorization</span></span>  | <span data-ttu-id="32606-126">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="32606-126">Bearer {code}</span></span>|
+| <span data-ttu-id="aae67-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="aae67-123">Authorization</span></span>  | <span data-ttu-id="aae67-124">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="aae67-124">Bearer {code}</span></span>|
 
 
-## <a name="request-body"></a><span data-ttu-id="32606-127">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="32606-127">Request body</span></span>
-<span data-ttu-id="32606-128">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="32606-128">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="32606-129">Ответ</span><span class="sxs-lookup"><span data-stu-id="32606-129">Response</span></span>
-<span data-ttu-id="32606-130">Успешно завершена, этот метод возвращает `200 OK` объект [governanceRoleDefinition](../resources/governanceroledefinition.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="32606-130">If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="32606-131">Пример</span><span class="sxs-lookup"><span data-stu-id="32606-131">Example</span></span>
-<span data-ttu-id="32606-132">В этом примере показано, как получить сведения о определение роли корреспондента зону DNS в подписке Wingtip Toys - производственного.</span><span class="sxs-lookup"><span data-stu-id="32606-132">This example shows how to get details of role definition DNS Zone Contributor in the subscription Wingtip Toys - Prod.</span></span>
+## <a name="request-body"></a><span data-ttu-id="aae67-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="aae67-125">Request body</span></span>
+<span data-ttu-id="aae67-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="aae67-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="aae67-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="aae67-127">Response</span></span>
+<span data-ttu-id="aae67-128">Успешно завершена, этот метод возвращает `200 OK` объект [governanceRoleDefinition](../resources/governanceroledefinition.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="aae67-128">If successful, this method returns a `200 OK` response code and [governanceRoleDefinition](../resources/governanceroledefinition.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="aae67-129">Пример</span><span class="sxs-lookup"><span data-stu-id="aae67-129">Example</span></span>
+<span data-ttu-id="aae67-130">В этом примере показано, как получить сведения о определение роли корреспондента зону DNS в подписке Wingtip Toys - производственного.</span><span class="sxs-lookup"><span data-stu-id="aae67-130">This example shows how to get details of role definition DNS Zone Contributor in the subscription Wingtip Toys - Prod.</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinition"
 }-->
-##### <a name="request"></a><span data-ttu-id="32606-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="32606-133">Request</span></span>
+##### <a name="request"></a><span data-ttu-id="aae67-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="aae67-131">Request</span></span>
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions/00efc9e0-1b96-4e9a-99a3-a3df0735cf88
 ```
-##### <a name="response"></a><span data-ttu-id="32606-134">Ответ</span><span class="sxs-lookup"><span data-stu-id="32606-134">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="aae67-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="aae67-132">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -78,10 +78,15 @@ Content-length: 174
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get governanceRoleDefinition",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/governanceroledefinition-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

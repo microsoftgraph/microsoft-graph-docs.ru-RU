@@ -4,51 +4,51 @@ description: Используйте этот интерфейс API для до�
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f64ca4c00265903fa1b4ebc467f2d70274628078
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946828"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509485"
 ---
-# <a name="add-a-member"></a><span data-ttu-id="ea860-103">Добавить участника</span><span class="sxs-lookup"><span data-stu-id="ea860-103">Add a member</span></span>
+# <a name="add-a-member"></a><span data-ttu-id="af652-103">Добавить участника</span><span class="sxs-lookup"><span data-stu-id="af652-103">Add a member</span></span>
 
-> <span data-ttu-id="ea860-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ea860-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="ea860-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea860-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ea860-106">Используйте этот интерфейс API для добавления элемента (пользователя или группы) для административного подразделения.</span><span class="sxs-lookup"><span data-stu-id="ea860-106">Use this API to add a member (user or group) to an administrative unit.</span></span>
+<span data-ttu-id="af652-104">Используйте этот интерфейс API для добавления элемента (пользователя или группы) для административного подразделения.</span><span class="sxs-lookup"><span data-stu-id="af652-104">Use this API to add a member (user or group) to an administrative unit.</span></span>
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
-## <a name="permissions"></a><span data-ttu-id="ea860-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ea860-107">Permissions</span></span>
-<span data-ttu-id="ea860-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ea860-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="af652-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="af652-105">Permissions</span></span>
+<span data-ttu-id="af652-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="af652-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="ea860-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ea860-110">Permission type</span></span>      | <span data-ttu-id="ea860-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ea860-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="af652-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="af652-108">Permission type</span></span>      | <span data-ttu-id="af652-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="af652-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ea860-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ea860-112">Delegated (work or school account)</span></span> | <span data-ttu-id="ea860-113">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ea860-113">Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ea860-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ea860-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ea860-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea860-115">Not supported.</span></span>    |
-|<span data-ttu-id="ea860-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ea860-116">Application</span></span> | <span data-ttu-id="ea860-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ea860-117">Not supported.</span></span> |
+|<span data-ttu-id="af652-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="af652-110">Delegated (work or school account)</span></span> | <span data-ttu-id="af652-111">Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="af652-111">Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="af652-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="af652-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="af652-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="af652-113">Not supported.</span></span>    |
+|<span data-ttu-id="af652-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="af652-114">Application</span></span> | <span data-ttu-id="af652-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="af652-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ea860-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ea860-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="af652-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="af652-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members/$ref
 ```
-## <a name="request-headers"></a><span data-ttu-id="ea860-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ea860-119">Request headers</span></span>
-| <span data-ttu-id="ea860-120">Имя</span><span class="sxs-lookup"><span data-stu-id="ea860-120">Name</span></span>      |<span data-ttu-id="ea860-121">Описание</span><span class="sxs-lookup"><span data-stu-id="ea860-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="af652-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="af652-117">Request headers</span></span>
+| <span data-ttu-id="af652-118">Имя</span><span class="sxs-lookup"><span data-stu-id="af652-118">Name</span></span>      |<span data-ttu-id="af652-119">Описание</span><span class="sxs-lookup"><span data-stu-id="af652-119">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="ea860-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="ea860-122">Authorization</span></span>  | <span data-ttu-id="ea860-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ea860-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="af652-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="af652-120">Authorization</span></span>  | <span data-ttu-id="af652-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="af652-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="ea860-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ea860-125">Request body</span></span>
-<span data-ttu-id="ea860-126">В тексте запроса укажите представление JSON [пользователя](../resources/user.md), [группы](../resources/group.md) или [directoryObject](../resources/directoryobject.md) для добавления.</span><span class="sxs-lookup"><span data-stu-id="ea860-126">In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.</span></span>
+## <a name="request-body"></a><span data-ttu-id="af652-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="af652-123">Request body</span></span>
+<span data-ttu-id="af652-124">В тексте запроса укажите представление JSON [пользователя](../resources/user.md), [группы](../resources/group.md) или [directoryObject](../resources/directoryobject.md) для добавления.</span><span class="sxs-lookup"><span data-stu-id="af652-124">In the request body, supply a JSON representation of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ea860-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea860-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="af652-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="af652-125">Response</span></span>
 
-<span data-ttu-id="ea860-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="ea860-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="af652-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="af652-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ea860-130">Пример</span><span class="sxs-lookup"><span data-stu-id="ea860-130">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ea860-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="ea860-131">Request</span></span>
-<span data-ttu-id="ea860-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ea860-132">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="af652-128">Пример</span><span class="sxs-lookup"><span data-stu-id="af652-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="af652-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="af652-129">Request</span></span>
+<span data-ttu-id="af652-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="af652-130">Here is an example of the request.</span></span>
 
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
@@ -60,11 +60,19 @@ Content-length: 109
 }
 
 ```
-<span data-ttu-id="ea860-133">В тексте запроса укажите представление JSON `id` объекта [пользователя](../resources/user.md) или [группы](../resources/group.md) , необходимо добавить.</span><span class="sxs-lookup"><span data-stu-id="ea860-133">In the request body, supply a JSON representation of the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.</span></span>
+<span data-ttu-id="af652-131">В тексте запроса укажите представление JSON `id` объекта [пользователя](../resources/user.md) или [группы](../resources/group.md) , необходимо добавить.</span><span class="sxs-lookup"><span data-stu-id="af652-131">In the request body, supply a JSON representation of the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.</span></span>
 
-##### <a name="response"></a><span data-ttu-id="ea860-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="ea860-134">Response</span></span>
-<span data-ttu-id="ea860-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="ea860-135">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="af652-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="af652-132">Response</span></span>
+<span data-ttu-id="af652-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="af652-133">Here is an example of the response.</span></span>
  
 ```http
 HTTP/1.1 204 No Content
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/administrativeunit-post-members.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -2,28 +2,28 @@
 title: Тип ресурса expressionInputObject
 description: 'Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.'
 localization_priority: Normal
-ms.openlocfilehash: acf0fa5125d863224de6df76d46109b9888f8ddf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820113"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29510780"
 ---
-# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="6100f-103">Тип ресурса expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="6100f-103">expressionInputObject resource type</span></span>
+# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="4054e-103">Тип ресурса expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="4054e-103">expressionInputObject resource type</span></span>
 
-> <span data-ttu-id="6100f-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6100f-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="6100f-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6100f-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6100f-106">Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.</span><span class="sxs-lookup"><span data-stu-id="6100f-106">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation.</span></span>
+<span data-ttu-id="4054e-104">Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.</span><span class="sxs-lookup"><span data-stu-id="4054e-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="6100f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6100f-107">Properties</span></span>
-| <span data-ttu-id="6100f-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6100f-108">Property</span></span>     | <span data-ttu-id="6100f-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6100f-109">Type</span></span>   |<span data-ttu-id="6100f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6100f-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4054e-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="4054e-105">Properties</span></span>
+| <span data-ttu-id="4054e-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="4054e-106">Property</span></span>     | <span data-ttu-id="4054e-107">Тип</span><span class="sxs-lookup"><span data-stu-id="4054e-107">Type</span></span>   |<span data-ttu-id="4054e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="4054e-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6100f-111">definition</span><span class="sxs-lookup"><span data-stu-id="6100f-111">definition</span></span>|[<span data-ttu-id="6100f-112">objectDefinition</span><span class="sxs-lookup"><span data-stu-id="6100f-112">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="6100f-113">Определение объекта теста.</span><span class="sxs-lookup"><span data-stu-id="6100f-113">Definition of the test object.</span></span>|
-|<span data-ttu-id="6100f-114">свойства</span><span class="sxs-lookup"><span data-stu-id="6100f-114">properties</span></span>|<span data-ttu-id="6100f-115">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="6100f-115">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="6100f-116">Значения свойств объекта теста.</span><span class="sxs-lookup"><span data-stu-id="6100f-116">Property values of the test object.</span></span>|
+|<span data-ttu-id="4054e-109">definition</span><span class="sxs-lookup"><span data-stu-id="4054e-109">definition</span></span>|[<span data-ttu-id="4054e-110">objectDefinition</span><span class="sxs-lookup"><span data-stu-id="4054e-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="4054e-111">Определение объекта теста.</span><span class="sxs-lookup"><span data-stu-id="4054e-111">Definition of the test object.</span></span>|
+|<span data-ttu-id="4054e-112">properties</span><span class="sxs-lookup"><span data-stu-id="4054e-112">properties</span></span>|<span data-ttu-id="4054e-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="4054e-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="4054e-114">Значения свойств объекта теста.</span><span class="sxs-lookup"><span data-stu-id="4054e-114">Property values of the test object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="6100f-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6100f-117">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4054e-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4054e-115">JSON representation</span></span>
 
-<span data-ttu-id="6100f-118">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6100f-118">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4054e-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4054e-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,10 +43,15 @@ ms.locfileid: "27820113"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "expressionInputObject resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/synchronization-expressioninputobject.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
