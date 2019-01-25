@@ -4,30 +4,30 @@ description: Используйте этот интерфейс API для со�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 626bf3a2e8bc77ba929895eed74ac0bb803aa5d4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912878"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29517731"
 ---
-# <a name="create-mailsearchfolder"></a><span data-ttu-id="500f9-103">Создание mailSearchFolder</span><span class="sxs-lookup"><span data-stu-id="500f9-103">Create mailSearchFolder</span></span>
+# <a name="create-mailsearchfolder"></a><span data-ttu-id="c4722-103">Создание mailSearchFolder</span><span class="sxs-lookup"><span data-stu-id="c4722-103">Create mailSearchFolder</span></span>
 
-> <span data-ttu-id="500f9-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="500f9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="500f9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="500f9-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="500f9-106">Используйте этот интерфейс API для создания нового [mailSearchFolder](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="500f9-106">Use this API to create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.</span></span>
+<span data-ttu-id="c4722-104">Используйте этот интерфейс API для создания нового [mailSearchFolder](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.</span><span class="sxs-lookup"><span data-stu-id="c4722-104">Use this API to create a new [mailSearchFolder](../resources/mailsearchfolder.md) in the specified user's mailbox.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="500f9-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="500f9-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c4722-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c4722-105">Permissions</span></span>
 
-<span data-ttu-id="500f9-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="500f9-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c4722-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c4722-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="500f9-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="500f9-110">Permission type</span></span> | <span data-ttu-id="500f9-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="500f9-111">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="c4722-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c4722-108">Permission type</span></span> | <span data-ttu-id="c4722-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c4722-109">Permissions (from least to most privileged)</span></span> |
 |:----------------|:--------------------------------------------|
-|<span data-ttu-id="500f9-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="500f9-112">Delegated (work or school account)</span></span> | <span data-ttu-id="500f9-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="500f9-113">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="500f9-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="500f9-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="500f9-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="500f9-115">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="500f9-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="500f9-116">Application</span></span> | <span data-ttu-id="500f9-117">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="500f9-117">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="c4722-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c4722-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c4722-111">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4722-111">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="c4722-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c4722-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c4722-113">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4722-113">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="c4722-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c4722-114">Application</span></span> | <span data-ttu-id="c4722-115">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c4722-115">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="500f9-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="500f9-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c4722-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c4722-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,36 +36,36 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-<span data-ttu-id="500f9-119">Укажите родительской папки в URL-АДРЕСЕ запроса как идентификатор папки или имя известных папки.</span><span class="sxs-lookup"><span data-stu-id="500f9-119">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="500f9-120">Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="500f9-120">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
+<span data-ttu-id="c4722-117">Укажите родительской папки в URL-АДРЕСЕ запроса как идентификатор папки или имя известных папки.</span><span class="sxs-lookup"><span data-stu-id="c4722-117">Specify the parent folder in the query URL as a folder ID, or a well-known folder name.</span></span> <span data-ttu-id="c4722-118">Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).</span><span class="sxs-lookup"><span data-stu-id="c4722-118">For a list of supported well-known folder names, see [mailFolder resource type](../resources/mailfolder.md).</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="500f9-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="500f9-121">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c4722-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c4722-119">Request headers</span></span>
 
-| <span data-ttu-id="500f9-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="500f9-122">Header</span></span> | <span data-ttu-id="500f9-123">Значение</span><span class="sxs-lookup"><span data-stu-id="500f9-123">Value</span></span> |
+| <span data-ttu-id="c4722-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c4722-120">Header</span></span> | <span data-ttu-id="c4722-121">Значение</span><span class="sxs-lookup"><span data-stu-id="c4722-121">Value</span></span> |
 |:-------|:------|
-| <span data-ttu-id="500f9-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="500f9-124">Authorization</span></span> | <span data-ttu-id="500f9-125">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="500f9-125"></span></span> <span data-ttu-id="500f9-126">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="500f9-126">Required.</span></span> |
-| <span data-ttu-id="500f9-127">Content-Type</span><span class="sxs-lookup"><span data-stu-id="500f9-127">Content-Type</span></span> | <span data-ttu-id="500f9-128">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="500f9-128"></span></span> <span data-ttu-id="500f9-129">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="500f9-129">Required.</span></span> |
+| <span data-ttu-id="c4722-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="c4722-122">Authorization</span></span> | <span data-ttu-id="c4722-123">`Bearer {token}`.</span><span class="sxs-lookup"><span data-stu-id="c4722-123"></span></span> <span data-ttu-id="c4722-124">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c4722-124">Required.</span></span> |
+| <span data-ttu-id="c4722-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c4722-125">Content-Type</span></span> | <span data-ttu-id="c4722-126">`application/json`.</span><span class="sxs-lookup"><span data-stu-id="c4722-126"></span></span> <span data-ttu-id="c4722-127">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c4722-127">Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="500f9-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="500f9-130">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="c4722-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c4722-128">Request body</span></span>
 
-<span data-ttu-id="500f9-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="500f9-131">In the request body, provide a JSON object with the following parameters.</span></span>
+<span data-ttu-id="c4722-129">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c4722-129">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="500f9-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="500f9-132">Parameter</span></span> | <span data-ttu-id="500f9-133">Тип</span><span class="sxs-lookup"><span data-stu-id="500f9-133">Type</span></span> | <span data-ttu-id="500f9-134">Описание</span><span class="sxs-lookup"><span data-stu-id="500f9-134">Description</span></span> |
+| <span data-ttu-id="c4722-130">Параметр</span><span class="sxs-lookup"><span data-stu-id="c4722-130">Parameter</span></span> | <span data-ttu-id="c4722-131">Тип</span><span class="sxs-lookup"><span data-stu-id="c4722-131">Type</span></span> | <span data-ttu-id="c4722-132">Описание</span><span class="sxs-lookup"><span data-stu-id="c4722-132">Description</span></span> |
 |:----------|:-----|:------------|
-| <span data-ttu-id="500f9-135">@odata.type</span><span class="sxs-lookup"><span data-stu-id="500f9-135">@odata.type</span></span> | <span data-ttu-id="500f9-136">Строка</span><span class="sxs-lookup"><span data-stu-id="500f9-136">String</span></span> | <span data-ttu-id="500f9-137">Тип создать папку.</span><span class="sxs-lookup"><span data-stu-id="500f9-137">The type of folder to be created.</span></span> <span data-ttu-id="500f9-138">Задайте значение «microsoft.graph.mailSearchFolder».</span><span class="sxs-lookup"><span data-stu-id="500f9-138">Set to "microsoft.graph.mailSearchFolder".</span></span> |
-| <span data-ttu-id="500f9-139">displayName</span><span class="sxs-lookup"><span data-stu-id="500f9-139">displayName</span></span> | <span data-ttu-id="500f9-140">String</span><span class="sxs-lookup"><span data-stu-id="500f9-140">String</span></span> | <span data-ttu-id="500f9-141">Отображаемое имя новой папки.</span><span class="sxs-lookup"><span data-stu-id="500f9-141">The display name of the new folder.</span></span>|
-| <span data-ttu-id="500f9-142">includeNestedFolders</span><span class="sxs-lookup"><span data-stu-id="500f9-142">includeNestedFolders</span></span> | <span data-ttu-id="500f9-143">Логический</span><span class="sxs-lookup"><span data-stu-id="500f9-143">Boolean</span></span> | <span data-ttu-id="500f9-144">Как следует обход иерархии папок почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="500f9-144">How the mailbox folder hierarchy should be traversed.</span></span> <span data-ttu-id="500f9-145">`true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска.</span><span class="sxs-lookup"><span data-stu-id="500f9-145">`true` means that a deep search should be done while `false` means a shallow search should be done instead.</span></span> |
-| <span data-ttu-id="500f9-146">sourceFolderIDs</span><span class="sxs-lookup"><span data-stu-id="500f9-146">sourceFolderIDs</span></span> | <span data-ttu-id="500f9-147">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="500f9-147">String collection</span></span> | <span data-ttu-id="500f9-148">Папки почтовых ящиков, которые должны быть получены.</span><span class="sxs-lookup"><span data-stu-id="500f9-148">The mailbox folders that should be mined.</span></span> |
-| <span data-ttu-id="500f9-149">filterQuery</span><span class="sxs-lookup"><span data-stu-id="500f9-149">filterQuery</span></span> | <span data-ttu-id="500f9-150">Строка</span><span class="sxs-lookup"><span data-stu-id="500f9-150">String</span></span> | <span data-ttu-id="500f9-151">Запросов OData для фильтрации сообщений.</span><span class="sxs-lookup"><span data-stu-id="500f9-151">The OData query to filter the messages.</span></span> |
+| <span data-ttu-id="c4722-133">@odata.type</span><span class="sxs-lookup"><span data-stu-id="c4722-133">@odata.type</span></span> | <span data-ttu-id="c4722-134">String</span><span class="sxs-lookup"><span data-stu-id="c4722-134">String</span></span> | <span data-ttu-id="c4722-135">Тип создать папку.</span><span class="sxs-lookup"><span data-stu-id="c4722-135">The type of folder to be created.</span></span> <span data-ttu-id="c4722-136">Задайте значение «microsoft.graph.mailSearchFolder».</span><span class="sxs-lookup"><span data-stu-id="c4722-136">Set to "microsoft.graph.mailSearchFolder".</span></span> |
+| <span data-ttu-id="c4722-137">displayName</span><span class="sxs-lookup"><span data-stu-id="c4722-137">displayName</span></span> | <span data-ttu-id="c4722-138">String</span><span class="sxs-lookup"><span data-stu-id="c4722-138">String</span></span> | <span data-ttu-id="c4722-139">Отображаемое имя новой папки.</span><span class="sxs-lookup"><span data-stu-id="c4722-139">The display name of the new folder.</span></span>|
+| <span data-ttu-id="c4722-140">includeNestedFolders</span><span class="sxs-lookup"><span data-stu-id="c4722-140">includeNestedFolders</span></span> | <span data-ttu-id="c4722-141">Логическое</span><span class="sxs-lookup"><span data-stu-id="c4722-141">Boolean</span></span> | <span data-ttu-id="c4722-142">Как следует обход иерархии папок почтового ящика.</span><span class="sxs-lookup"><span data-stu-id="c4722-142">How the mailbox folder hierarchy should be traversed.</span></span> <span data-ttu-id="c4722-143">`true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска.</span><span class="sxs-lookup"><span data-stu-id="c4722-143">`true` means that a deep search should be done while `false` means a shallow search should be done instead.</span></span> |
+| <span data-ttu-id="c4722-144">sourceFolderIDs</span><span class="sxs-lookup"><span data-stu-id="c4722-144">sourceFolderIDs</span></span> | <span data-ttu-id="c4722-145">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="c4722-145">String collection</span></span> | <span data-ttu-id="c4722-146">Папки почтовых ящиков, которые должны быть получены.</span><span class="sxs-lookup"><span data-stu-id="c4722-146">The mailbox folders that should be mined.</span></span> |
+| <span data-ttu-id="c4722-147">filterQuery</span><span class="sxs-lookup"><span data-stu-id="c4722-147">filterQuery</span></span> | <span data-ttu-id="c4722-148">String</span><span class="sxs-lookup"><span data-stu-id="c4722-148">String</span></span> | <span data-ttu-id="c4722-149">Запросов OData для фильтрации сообщений.</span><span class="sxs-lookup"><span data-stu-id="c4722-149">The OData query to filter the messages.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="500f9-152">Ответ</span><span class="sxs-lookup"><span data-stu-id="500f9-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c4722-150">Ответ</span><span class="sxs-lookup"><span data-stu-id="c4722-150">Response</span></span>
 
-<span data-ttu-id="500f9-153">Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [mailSearchFolder](../resources/mailsearchfolder.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="500f9-153">If successful, this method returns `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.</span></span>
+<span data-ttu-id="c4722-151">Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [mailSearchFolder](../resources/mailsearchfolder.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="c4722-151">If successful, this method returns `201 Created` response code and a [mailSearchFolder](../resources/mailsearchfolder.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="500f9-154">Пример</span><span class="sxs-lookup"><span data-stu-id="500f9-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c4722-152">Пример</span><span class="sxs-lookup"><span data-stu-id="c4722-152">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="500f9-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="500f9-155">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="c4722-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="c4722-153">Request</span></span>
 
-<span data-ttu-id="500f9-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="500f9-156">The following is an example of the request.</span></span>
+<span data-ttu-id="c4722-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c4722-154">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_mailsearchfolder"
@@ -85,11 +85,11 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="500f9-157">Ответ</span><span class="sxs-lookup"><span data-stu-id="500f9-157">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="c4722-155">Ответ</span><span class="sxs-lookup"><span data-stu-id="c4722-155">Response</span></span>
 
-<span data-ttu-id="500f9-158">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="500f9-158">The following is an example of the response.</span></span>
+<span data-ttu-id="c4722-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c4722-156">The following is an example of the response.</span></span>
 
-><span data-ttu-id="500f9-159">**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения.</span><span class="sxs-lookup"><span data-stu-id="500f9-159">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="500f9-160">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="500f9-160">All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c4722-157">**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="c4722-157">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="c4722-158">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c4722-158">All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,10 +121,15 @@ Content-length: 179
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create mailSearchFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/mailsearchfolder-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

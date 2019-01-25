@@ -5,30 +5,30 @@ ms.date: 09/11/2017
 title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 112a6a1a735bb527bdd2af7c64f02e4848b6e5f3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 2a6798b57b0988d46cad939276c0bc9a6bbfc44c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963978"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29519929"
 ---
-# <a name="create-a-new-list"></a><span data-ttu-id="18360-102">Создание списка</span><span class="sxs-lookup"><span data-stu-id="18360-102">Create a new list</span></span>
+# <a name="create-a-new-list"></a><span data-ttu-id="ed690-102">Создание списка</span><span class="sxs-lookup"><span data-stu-id="ed690-102">Create a new list</span></span>
 
-> <span data-ttu-id="18360-103">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="18360-103">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="18360-104">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18360-104">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="18360-105">Создание [списка][] на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="18360-105">Create a new [list][] in a [site][].</span></span>
+<span data-ttu-id="ed690-103">Создание [списка][] на [сайте][].</span><span class="sxs-lookup"><span data-stu-id="ed690-103">Create a new [list][] in a [site][].</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="18360-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="18360-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ed690-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ed690-104">Permissions</span></span>
 
-<span data-ttu-id="18360-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18360-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ed690-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ed690-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="18360-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18360-109">Permission type</span></span>             | <span data-ttu-id="18360-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="18360-110">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="ed690-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ed690-107">Permission type</span></span>             | <span data-ttu-id="ed690-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ed690-108">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="18360-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18360-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="18360-112">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="18360-112">Sites.Manage.All</span></span>                            |
-| <span data-ttu-id="18360-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18360-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18360-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18360-114">Not supported.</span></span>                              |
-| <span data-ttu-id="18360-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18360-115">Application</span></span>                            | <span data-ttu-id="18360-116">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18360-116">Sites.ReadWrite.All</span></span>                         |
+| <span data-ttu-id="ed690-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ed690-109">Delegated (work or school account)</span></span>     | <span data-ttu-id="ed690-110">Sites.Manage.All</span><span class="sxs-lookup"><span data-stu-id="ed690-110">Sites.Manage.All</span></span>                            |
+| <span data-ttu-id="ed690-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ed690-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ed690-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed690-112">Not supported.</span></span>                              |
+| <span data-ttu-id="ed690-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ed690-113">Application</span></span>                            | <span data-ttu-id="ed690-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ed690-114">Sites.ReadWrite.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="18360-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18360-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ed690-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ed690-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -36,13 +36,13 @@ ms.locfileid: "27963978"
 POST https://graph.microsoft.com/beta/sites/{site-id}/lists
 ```
 
-## <a name="request-body"></a><span data-ttu-id="18360-118">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="18360-118">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ed690-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ed690-116">Request body</span></span>
 
-<span data-ttu-id="18360-119">В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="18360-119">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
+<span data-ttu-id="ed690-117">В теле запроса укажите представление ресурса [списка][], который необходимо создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ed690-117">In the request body, supply a JSON representation of the [list][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18360-120">Пример</span><span class="sxs-lookup"><span data-stu-id="18360-120">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ed690-118">Пример</span><span class="sxs-lookup"><span data-stu-id="ed690-118">Example</span></span>
 
-<span data-ttu-id="18360-121">В примере ниже показано, как создать список общего назначения.</span><span class="sxs-lookup"><span data-stu-id="18360-121">Here is an example of how to create a new generic list.</span></span>
+<span data-ttu-id="ed690-119">В примере ниже показано, как создать список общего назначения.</span><span class="sxs-lookup"><span data-stu-id="ed690-119">Here is an example of how to create a new generic list.</span></span>
 
 <!-- { "blockType": "request", "name": "create-list", "scopes": "sites.readwrite.all" } -->
 
@@ -68,14 +68,14 @@ Content-Type: application/json
 }
 ```
 
-<span data-ttu-id="18360-122">**Примечание.** Настраиваемые столбцы являются необязательными.</span><span class="sxs-lookup"><span data-stu-id="18360-122">**Note:** Custom columns are optional.</span></span>
+<span data-ttu-id="ed690-120">**Примечание.** Настраиваемые столбцы являются необязательными.</span><span class="sxs-lookup"><span data-stu-id="ed690-120">**Note:** Custom columns are optional.</span></span>
 
-<span data-ttu-id="18360-123">Помимо столбцов, указанных здесь, в создаваемых списках используются столбцы, заданные в соответствующем **шаблоне**.</span><span class="sxs-lookup"><span data-stu-id="18360-123">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
-<span data-ttu-id="18360-124">Если аспект или **шаблон** **списка** не указаны, то по умолчанию для списка используется шаблон `genericList`, включающий столбец _Title_ (Название).</span><span class="sxs-lookup"><span data-stu-id="18360-124">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
+<span data-ttu-id="ed690-121">Помимо столбцов, указанных здесь, в создаваемых списках используются столбцы, заданные в соответствующем **шаблоне**.</span><span class="sxs-lookup"><span data-stu-id="ed690-121">In addition to any columns specified here, new lists are created with columns defined in the referenced **template**.</span></span>
+<span data-ttu-id="ed690-122">Если аспект или **шаблон** **списка** не указаны, то по умолчанию для списка используется шаблон `genericList`, включающий столбец _Title_ (Название).</span><span class="sxs-lookup"><span data-stu-id="ed690-122">If the **list** facet or **template** is unspecified, the list defaults to the `genericList` template, which includes a _Title_ column.</span></span>
 
-## <a name="response"></a><span data-ttu-id="18360-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="18360-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ed690-123">Ответ</span><span class="sxs-lookup"><span data-stu-id="ed690-123">Response</span></span>
 
-<span data-ttu-id="18360-126">При успешном выполнении этот метод возвращает объект [списка][] для вновь созданного списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="18360-126">If successful, this method returns a [list][] in the response body for the created list.</span></span>
+<span data-ttu-id="ed690-124">При успешном выполнении этот метод возвращает объект [списка][] для вновь созданного списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ed690-124">If successful, this method returns a [list][] in the response body for the created list.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.list", "truncated": true } -->
 
@@ -102,16 +102,21 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="18360-127">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="18360-127">**Note:** The response object is truncated for clarity.</span></span>
-<span data-ttu-id="18360-128">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="18360-128">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="ed690-125">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="ed690-125">**Note:** The response object is truncated for clarity.</span></span>
+<span data-ttu-id="ed690-126">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="ed690-126">Default properties will be returned from the actual call.</span></span>
 
 [list]: ../resources/list.md
 [site]: ../resources/site.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create a new SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "List/Create"
-} -->
+  "tocPath": "List/Create",
+  "suppressions": [
+    "Error: /api-reference/beta/api/list-create.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

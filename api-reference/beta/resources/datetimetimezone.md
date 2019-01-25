@@ -2,228 +2,228 @@
 title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
 localization_priority: Normal
-ms.openlocfilehash: 5090edce8d86ff12470cc1bb39f92ef13b42ba15
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aad1318e1623b41a67eb23c20ad42dc48553d81c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876071"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521280"
 ---
-# <a name="datetimetimezone-resource-type"></a><span data-ttu-id="0c3f9-103">Тип ресурса dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="0c3f9-103">dateTimeTimeZone resource type</span></span>
+# <a name="datetimetimezone-resource-type"></a><span data-ttu-id="f4095-103">Тип ресурса dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="f4095-103">dateTimeTimeZone resource type</span></span>
 
-> <span data-ttu-id="0c3f9-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0c3f9-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="0c3f9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0c3f9-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0c3f9-106">Описывает дату, время и часовой пояс для определенного момента.</span><span class="sxs-lookup"><span data-stu-id="0c3f9-106">Describes the date, time, and time zone of a point in time.</span></span>
+<span data-ttu-id="f4095-104">Описывает дату, время и часовой пояс для определенного момента.</span><span class="sxs-lookup"><span data-stu-id="f4095-104">Describes the date, time, and time zone of a point in time.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0c3f9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0c3f9-107">Properties</span></span>
-| <span data-ttu-id="0c3f9-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="0c3f9-108">Property</span></span>     | <span data-ttu-id="0c3f9-109">Тип</span><span class="sxs-lookup"><span data-stu-id="0c3f9-109">Type</span></span>   |<span data-ttu-id="0c3f9-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0c3f9-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f4095-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f4095-105">Properties</span></span>
+| <span data-ttu-id="f4095-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f4095-106">Property</span></span>     | <span data-ttu-id="f4095-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f4095-107">Type</span></span>   |<span data-ttu-id="f4095-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f4095-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="0c3f9-111">DateTime</span><span class="sxs-lookup"><span data-stu-id="0c3f9-111">DateTime</span></span>|<span data-ttu-id="0c3f9-112">String</span><span class="sxs-lookup"><span data-stu-id="0c3f9-112">String</span></span>|<span data-ttu-id="0c3f9-113">Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).</span><span class="sxs-lookup"><span data-stu-id="0c3f9-113">A single point of time in a combined date and time representation (`<date>T<time>`).</span></span>|
-|<span data-ttu-id="0c3f9-114">TimeZone</span><span class="sxs-lookup"><span data-stu-id="0c3f9-114">TimeZone</span></span>|<span data-ttu-id="0c3f9-115">String</span><span class="sxs-lookup"><span data-stu-id="0c3f9-115">String</span></span>|<span data-ttu-id="0c3f9-116">Один из указанных ниже часовых поясов.</span><span class="sxs-lookup"><span data-stu-id="0c3f9-116">One of the following time zone names.</span></span>|
+|<span data-ttu-id="f4095-109">DateTime</span><span class="sxs-lookup"><span data-stu-id="f4095-109">DateTime</span></span>|<span data-ttu-id="f4095-110">String</span><span class="sxs-lookup"><span data-stu-id="f4095-110">String</span></span>|<span data-ttu-id="f4095-111">Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).</span><span class="sxs-lookup"><span data-stu-id="f4095-111">A single point of time in a combined date and time representation (`<date>T<time>`).</span></span>|
+|<span data-ttu-id="f4095-112">TimeZone</span><span class="sxs-lookup"><span data-stu-id="f4095-112">TimeZone</span></span>|<span data-ttu-id="f4095-113">String</span><span class="sxs-lookup"><span data-stu-id="f4095-113">String</span></span>|<span data-ttu-id="f4095-114">Один из указанных ниже часовых поясов.</span><span class="sxs-lookup"><span data-stu-id="f4095-114">One of the following time zone names.</span></span>|
 
-<span data-ttu-id="0c3f9-117">Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.</span><span class="sxs-lookup"><span data-stu-id="0c3f9-117">The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.</span></span>
+<span data-ttu-id="f4095-115">Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.</span><span class="sxs-lookup"><span data-stu-id="f4095-115">The _TimeZone_ property can be set to any of the time zones supported by Windows, as well as the following time zones names.</span></span>
 
-<span data-ttu-id="0c3f9-118">Etc/GMT+12</span><span class="sxs-lookup"><span data-stu-id="0c3f9-118">Etc/GMT+12</span></span>
+<span data-ttu-id="f4095-116">Etc/GMT+12</span><span class="sxs-lookup"><span data-stu-id="f4095-116">Etc/GMT+12</span></span>
 
-<span data-ttu-id="0c3f9-119">Etc/GMT+11</span><span class="sxs-lookup"><span data-stu-id="0c3f9-119">Etc/GMT+11</span></span>
+<span data-ttu-id="f4095-117">Etc/GMT+11</span><span class="sxs-lookup"><span data-stu-id="f4095-117">Etc/GMT+11</span></span>
 
-<span data-ttu-id="0c3f9-120">Pacific/Honolulu</span><span class="sxs-lookup"><span data-stu-id="0c3f9-120">Pacific/Honolulu</span></span>
+<span data-ttu-id="f4095-118">Pacific/Honolulu</span><span class="sxs-lookup"><span data-stu-id="f4095-118">Pacific/Honolulu</span></span>
 
-<span data-ttu-id="0c3f9-121">America/Anchorage</span><span class="sxs-lookup"><span data-stu-id="0c3f9-121">America/Anchorage</span></span>
+<span data-ttu-id="f4095-119">America/Anchorage</span><span class="sxs-lookup"><span data-stu-id="f4095-119">America/Anchorage</span></span>
 
-<span data-ttu-id="0c3f9-122">America/Santa_Isabel</span><span class="sxs-lookup"><span data-stu-id="0c3f9-122">America/Santa_Isabel</span></span>
+<span data-ttu-id="f4095-120">America/Santa_Isabel</span><span class="sxs-lookup"><span data-stu-id="f4095-120">America/Santa_Isabel</span></span>
 
-<span data-ttu-id="0c3f9-123">America/Los_Angeles</span><span class="sxs-lookup"><span data-stu-id="0c3f9-123">America/Los_Angeles</span></span>
+<span data-ttu-id="f4095-121">America/Los_Angeles</span><span class="sxs-lookup"><span data-stu-id="f4095-121">America/Los_Angeles</span></span>
 
-<span data-ttu-id="0c3f9-124">America/Phoenix</span><span class="sxs-lookup"><span data-stu-id="0c3f9-124">America/Phoenix</span></span>
+<span data-ttu-id="f4095-122">America/Phoenix</span><span class="sxs-lookup"><span data-stu-id="f4095-122">America/Phoenix</span></span>
 
-<span data-ttu-id="0c3f9-125">America/Chihuahua</span><span class="sxs-lookup"><span data-stu-id="0c3f9-125">America/Chihuahua</span></span>
+<span data-ttu-id="f4095-123">America/Chihuahua</span><span class="sxs-lookup"><span data-stu-id="f4095-123">America/Chihuahua</span></span>
 
-<span data-ttu-id="0c3f9-126">America/Denver</span><span class="sxs-lookup"><span data-stu-id="0c3f9-126">America/Denver</span></span>
+<span data-ttu-id="f4095-124">America/Denver</span><span class="sxs-lookup"><span data-stu-id="f4095-124">America/Denver</span></span>
 
-<span data-ttu-id="0c3f9-127">America/Guatemala</span><span class="sxs-lookup"><span data-stu-id="0c3f9-127">America/Guatemala</span></span>
+<span data-ttu-id="f4095-125">America/Guatemala</span><span class="sxs-lookup"><span data-stu-id="f4095-125">America/Guatemala</span></span>
 
-<span data-ttu-id="0c3f9-128">America/Chicago</span><span class="sxs-lookup"><span data-stu-id="0c3f9-128">America/Chicago</span></span>
+<span data-ttu-id="f4095-126">America/Chicago</span><span class="sxs-lookup"><span data-stu-id="f4095-126">America/Chicago</span></span>
 
-<span data-ttu-id="0c3f9-129">America/Mexico_City</span><span class="sxs-lookup"><span data-stu-id="0c3f9-129">America/Mexico_City</span></span>
+<span data-ttu-id="f4095-127">America/Mexico_City</span><span class="sxs-lookup"><span data-stu-id="f4095-127">America/Mexico_City</span></span>
 
-<span data-ttu-id="0c3f9-130">America/Regina</span><span class="sxs-lookup"><span data-stu-id="0c3f9-130">America/Regina</span></span>
+<span data-ttu-id="f4095-128">America/Regina</span><span class="sxs-lookup"><span data-stu-id="f4095-128">America/Regina</span></span>
 
-<span data-ttu-id="0c3f9-131">America/Bogota</span><span class="sxs-lookup"><span data-stu-id="0c3f9-131">America/Bogota</span></span>
+<span data-ttu-id="f4095-129">America/Bogota</span><span class="sxs-lookup"><span data-stu-id="f4095-129">America/Bogota</span></span>
 
-<span data-ttu-id="0c3f9-132">America/New_York</span><span class="sxs-lookup"><span data-stu-id="0c3f9-132">America/New_York</span></span>
+<span data-ttu-id="f4095-130">America/New_York</span><span class="sxs-lookup"><span data-stu-id="f4095-130">America/New_York</span></span>
 
-<span data-ttu-id="0c3f9-133">America/Indiana/Indianapolis</span><span class="sxs-lookup"><span data-stu-id="0c3f9-133">America/Indiana/Indianapolis</span></span>
+<span data-ttu-id="f4095-131">America/Indiana/Indianapolis</span><span class="sxs-lookup"><span data-stu-id="f4095-131">America/Indiana/Indianapolis</span></span>
 
-<span data-ttu-id="0c3f9-134">America/Caracas</span><span class="sxs-lookup"><span data-stu-id="0c3f9-134">America/Caracas</span></span>
+<span data-ttu-id="f4095-132">America/Caracas</span><span class="sxs-lookup"><span data-stu-id="f4095-132">America/Caracas</span></span>
 
-<span data-ttu-id="0c3f9-135">America/Asuncion</span><span class="sxs-lookup"><span data-stu-id="0c3f9-135">America/Asuncion</span></span>
+<span data-ttu-id="f4095-133">America/Asuncion</span><span class="sxs-lookup"><span data-stu-id="f4095-133">America/Asuncion</span></span>
 
-<span data-ttu-id="0c3f9-136">America/Halifax</span><span class="sxs-lookup"><span data-stu-id="0c3f9-136">America/Halifax</span></span>
+<span data-ttu-id="f4095-134">America/Halifax</span><span class="sxs-lookup"><span data-stu-id="f4095-134">America/Halifax</span></span>
 
-<span data-ttu-id="0c3f9-137">America/Cuiaba</span><span class="sxs-lookup"><span data-stu-id="0c3f9-137">America/Cuiaba</span></span>
+<span data-ttu-id="f4095-135">America/Cuiaba</span><span class="sxs-lookup"><span data-stu-id="f4095-135">America/Cuiaba</span></span>
 
-<span data-ttu-id="0c3f9-138">America/La_Paz</span><span class="sxs-lookup"><span data-stu-id="0c3f9-138">America/La_Paz</span></span>
+<span data-ttu-id="f4095-136">America/La_Paz</span><span class="sxs-lookup"><span data-stu-id="f4095-136">America/La_Paz</span></span>
 
-<span data-ttu-id="0c3f9-139">America/Santiago</span><span class="sxs-lookup"><span data-stu-id="0c3f9-139">America/Santiago</span></span>
+<span data-ttu-id="f4095-137">America/Santiago</span><span class="sxs-lookup"><span data-stu-id="f4095-137">America/Santiago</span></span>
 
-<span data-ttu-id="0c3f9-140">America/St_Johns</span><span class="sxs-lookup"><span data-stu-id="0c3f9-140">America/St_Johns</span></span>
+<span data-ttu-id="f4095-138">America/St_Johns</span><span class="sxs-lookup"><span data-stu-id="f4095-138">America/St_Johns</span></span>
 
-<span data-ttu-id="0c3f9-141">America/Sao_Paulo</span><span class="sxs-lookup"><span data-stu-id="0c3f9-141">America/Sao_Paulo</span></span>
+<span data-ttu-id="f4095-139">America/Sao_Paulo</span><span class="sxs-lookup"><span data-stu-id="f4095-139">America/Sao_Paulo</span></span>
 
-<span data-ttu-id="0c3f9-142">America/Argentina/Buenos_Aires</span><span class="sxs-lookup"><span data-stu-id="0c3f9-142">America/Argentina/Buenos_Aires</span></span>
+<span data-ttu-id="f4095-140">America/Argentina/Buenos_Aires</span><span class="sxs-lookup"><span data-stu-id="f4095-140">America/Argentina/Buenos_Aires</span></span>
 
-<span data-ttu-id="0c3f9-143">America/Cayenne</span><span class="sxs-lookup"><span data-stu-id="0c3f9-143">America/Cayenne</span></span>
+<span data-ttu-id="f4095-141">America/Cayenne</span><span class="sxs-lookup"><span data-stu-id="f4095-141">America/Cayenne</span></span>
 
-<span data-ttu-id="0c3f9-144">America/Godthab</span><span class="sxs-lookup"><span data-stu-id="0c3f9-144">America/Godthab</span></span>
+<span data-ttu-id="f4095-142">America/Godthab</span><span class="sxs-lookup"><span data-stu-id="f4095-142">America/Godthab</span></span>
 
-<span data-ttu-id="0c3f9-145">America/Montevideo</span><span class="sxs-lookup"><span data-stu-id="0c3f9-145">America/Montevideo</span></span>
+<span data-ttu-id="f4095-143">America/Montevideo</span><span class="sxs-lookup"><span data-stu-id="f4095-143">America/Montevideo</span></span>
 
-<span data-ttu-id="0c3f9-146">America/Bahia</span><span class="sxs-lookup"><span data-stu-id="0c3f9-146">America/Bahia</span></span>
+<span data-ttu-id="f4095-144">America/Bahia</span><span class="sxs-lookup"><span data-stu-id="f4095-144">America/Bahia</span></span>
 
-<span data-ttu-id="0c3f9-147">Etc/GMT+2</span><span class="sxs-lookup"><span data-stu-id="0c3f9-147">Etc/GMT+2</span></span>
+<span data-ttu-id="f4095-145">Etc/GMT+2</span><span class="sxs-lookup"><span data-stu-id="f4095-145">Etc/GMT+2</span></span>
 
-<span data-ttu-id="0c3f9-148">Atlantic/Azores</span><span class="sxs-lookup"><span data-stu-id="0c3f9-148">Atlantic/Azores</span></span>
+<span data-ttu-id="f4095-146">Atlantic/Azores</span><span class="sxs-lookup"><span data-stu-id="f4095-146">Atlantic/Azores</span></span>
 
-<span data-ttu-id="0c3f9-149">Atlantic/Cape_Verde</span><span class="sxs-lookup"><span data-stu-id="0c3f9-149">Atlantic/Cape_Verde</span></span>
+<span data-ttu-id="f4095-147">Atlantic/Cape_Verde</span><span class="sxs-lookup"><span data-stu-id="f4095-147">Atlantic/Cape_Verde</span></span>
 
-<span data-ttu-id="0c3f9-150">Africa/Casablanca</span><span class="sxs-lookup"><span data-stu-id="0c3f9-150">Africa/Casablanca</span></span>
+<span data-ttu-id="f4095-148">Africa/Casablanca</span><span class="sxs-lookup"><span data-stu-id="f4095-148">Africa/Casablanca</span></span>
 
-<span data-ttu-id="0c3f9-151">Etc/GMT</span><span class="sxs-lookup"><span data-stu-id="0c3f9-151">Etc/GMT</span></span>
+<span data-ttu-id="f4095-149">Etc/GMT</span><span class="sxs-lookup"><span data-stu-id="f4095-149">Etc/GMT</span></span>
 
-<span data-ttu-id="0c3f9-152">Europe/London</span><span class="sxs-lookup"><span data-stu-id="0c3f9-152">Europe/London</span></span>
+<span data-ttu-id="f4095-150">Europe/London</span><span class="sxs-lookup"><span data-stu-id="f4095-150">Europe/London</span></span>
 
-<span data-ttu-id="0c3f9-153">Atlantic/Reykjavik</span><span class="sxs-lookup"><span data-stu-id="0c3f9-153">Atlantic/Reykjavik</span></span>
+<span data-ttu-id="f4095-151">Atlantic/Reykjavik</span><span class="sxs-lookup"><span data-stu-id="f4095-151">Atlantic/Reykjavik</span></span>
 
-<span data-ttu-id="0c3f9-154">Europe/Berlin</span><span class="sxs-lookup"><span data-stu-id="0c3f9-154">Europe/Berlin</span></span>
+<span data-ttu-id="f4095-152">Europe/Berlin</span><span class="sxs-lookup"><span data-stu-id="f4095-152">Europe/Berlin</span></span>
 
-<span data-ttu-id="0c3f9-155">Europe/Budapest</span><span class="sxs-lookup"><span data-stu-id="0c3f9-155">Europe/Budapest</span></span>
+<span data-ttu-id="f4095-153">Europe/Budapest</span><span class="sxs-lookup"><span data-stu-id="f4095-153">Europe/Budapest</span></span>
 
-<span data-ttu-id="0c3f9-156">Europe/Paris</span><span class="sxs-lookup"><span data-stu-id="0c3f9-156">Europe/Paris</span></span>
+<span data-ttu-id="f4095-154">Europe/Paris</span><span class="sxs-lookup"><span data-stu-id="f4095-154">Europe/Paris</span></span>
 
-<span data-ttu-id="0c3f9-157">Europe/Warsaw</span><span class="sxs-lookup"><span data-stu-id="0c3f9-157">Europe/Warsaw</span></span>
+<span data-ttu-id="f4095-155">Europe/Warsaw</span><span class="sxs-lookup"><span data-stu-id="f4095-155">Europe/Warsaw</span></span>
 
-<span data-ttu-id="0c3f9-158">Africa/Lagos</span><span class="sxs-lookup"><span data-stu-id="0c3f9-158">Africa/Lagos</span></span>
+<span data-ttu-id="f4095-156">Africa/Lagos</span><span class="sxs-lookup"><span data-stu-id="f4095-156">Africa/Lagos</span></span>
 
-<span data-ttu-id="0c3f9-159">Africa/Windhoek</span><span class="sxs-lookup"><span data-stu-id="0c3f9-159">Africa/Windhoek</span></span>
+<span data-ttu-id="f4095-157">Africa/Windhoek</span><span class="sxs-lookup"><span data-stu-id="f4095-157">Africa/Windhoek</span></span>
 
-<span data-ttu-id="0c3f9-160">Europe/Bucharest</span><span class="sxs-lookup"><span data-stu-id="0c3f9-160">Europe/Bucharest</span></span>
+<span data-ttu-id="f4095-158">Europe/Bucharest</span><span class="sxs-lookup"><span data-stu-id="f4095-158">Europe/Bucharest</span></span>
 
-<span data-ttu-id="0c3f9-161">Asia/Beirut</span><span class="sxs-lookup"><span data-stu-id="0c3f9-161">Asia/Beirut</span></span>
+<span data-ttu-id="f4095-159">Asia/Beirut</span><span class="sxs-lookup"><span data-stu-id="f4095-159">Asia/Beirut</span></span>
 
-<span data-ttu-id="0c3f9-162">Africa/Cairo</span><span class="sxs-lookup"><span data-stu-id="0c3f9-162">Africa/Cairo</span></span>
+<span data-ttu-id="f4095-160">Africa/Cairo</span><span class="sxs-lookup"><span data-stu-id="f4095-160">Africa/Cairo</span></span>
 
-<span data-ttu-id="0c3f9-163">Asia/Damascus</span><span class="sxs-lookup"><span data-stu-id="0c3f9-163">Asia/Damascus</span></span>
+<span data-ttu-id="f4095-161">Asia/Damascus</span><span class="sxs-lookup"><span data-stu-id="f4095-161">Asia/Damascus</span></span>
 
-<span data-ttu-id="0c3f9-164">Африка, Йоханнесбург</span><span class="sxs-lookup"><span data-stu-id="0c3f9-164">Africa/Johannesburg</span></span>
+<span data-ttu-id="f4095-162">Африка, Йоханнесбург</span><span class="sxs-lookup"><span data-stu-id="f4095-162">Africa/Johannesburg</span></span>
 
-<span data-ttu-id="0c3f9-165">Европа, Киев</span><span class="sxs-lookup"><span data-stu-id="0c3f9-165">Europe/Kyiv (Kiev)</span></span>
+<span data-ttu-id="f4095-163">Европа, Киев</span><span class="sxs-lookup"><span data-stu-id="f4095-163">Europe/Kyiv (Kiev)</span></span>
 
-<span data-ttu-id="0c3f9-166">Европа, Стамбул</span><span class="sxs-lookup"><span data-stu-id="0c3f9-166">Europe/Istanbul</span></span>
+<span data-ttu-id="f4095-164">Европа, Стамбул</span><span class="sxs-lookup"><span data-stu-id="f4095-164">Europe/Istanbul</span></span>
 
-<span data-ttu-id="0c3f9-167">Asia/Jerusalem</span><span class="sxs-lookup"><span data-stu-id="0c3f9-167">Asia/Jerusalem</span></span>
+<span data-ttu-id="f4095-165">Asia/Jerusalem</span><span class="sxs-lookup"><span data-stu-id="f4095-165">Asia/Jerusalem</span></span>
 
-<span data-ttu-id="0c3f9-168">Asia/Amman</span><span class="sxs-lookup"><span data-stu-id="0c3f9-168">Asia/Amman</span></span>
+<span data-ttu-id="f4095-166">Asia/Amman</span><span class="sxs-lookup"><span data-stu-id="f4095-166">Asia/Amman</span></span>
 
-<span data-ttu-id="0c3f9-169">Asia/Baghdad</span><span class="sxs-lookup"><span data-stu-id="0c3f9-169">Asia/Baghdad</span></span>
+<span data-ttu-id="f4095-167">Asia/Baghdad</span><span class="sxs-lookup"><span data-stu-id="f4095-167">Asia/Baghdad</span></span>
 
-<span data-ttu-id="0c3f9-170">Europe/Kaliningrad</span><span class="sxs-lookup"><span data-stu-id="0c3f9-170">Europe/Kaliningrad</span></span>
+<span data-ttu-id="f4095-168">Europe/Kaliningrad</span><span class="sxs-lookup"><span data-stu-id="f4095-168">Europe/Kaliningrad</span></span>
 
-<span data-ttu-id="0c3f9-171">Asia/Riyadh</span><span class="sxs-lookup"><span data-stu-id="0c3f9-171">Asia/Riyadh</span></span>
+<span data-ttu-id="f4095-169">Asia/Riyadh</span><span class="sxs-lookup"><span data-stu-id="f4095-169">Asia/Riyadh</span></span>
 
-<span data-ttu-id="0c3f9-172">Africa/Nairobi</span><span class="sxs-lookup"><span data-stu-id="0c3f9-172">Africa/Nairobi</span></span>
+<span data-ttu-id="f4095-170">Africa/Nairobi</span><span class="sxs-lookup"><span data-stu-id="f4095-170">Africa/Nairobi</span></span>
 
-<span data-ttu-id="0c3f9-173">Asia/Tehran</span><span class="sxs-lookup"><span data-stu-id="0c3f9-173">Asia/Tehran</span></span>
+<span data-ttu-id="f4095-171">Asia/Tehran</span><span class="sxs-lookup"><span data-stu-id="f4095-171">Asia/Tehran</span></span>
 
-<span data-ttu-id="0c3f9-174">Asia/Dubai</span><span class="sxs-lookup"><span data-stu-id="0c3f9-174">Asia/Dubai</span></span>
+<span data-ttu-id="f4095-172">Asia/Dubai</span><span class="sxs-lookup"><span data-stu-id="f4095-172">Asia/Dubai</span></span>
 
-<span data-ttu-id="0c3f9-175">Asia/Baku</span><span class="sxs-lookup"><span data-stu-id="0c3f9-175">Asia/Baku</span></span>
+<span data-ttu-id="f4095-173">Asia/Baku</span><span class="sxs-lookup"><span data-stu-id="f4095-173">Asia/Baku</span></span>
 
-<span data-ttu-id="0c3f9-176">Europe/Moscow</span><span class="sxs-lookup"><span data-stu-id="0c3f9-176">Europe/Moscow</span></span>
+<span data-ttu-id="f4095-174">Europe/Moscow</span><span class="sxs-lookup"><span data-stu-id="f4095-174">Europe/Moscow</span></span>
 
-<span data-ttu-id="0c3f9-177">Indian/Mauritius</span><span class="sxs-lookup"><span data-stu-id="0c3f9-177">Indian/Mauritius</span></span>
+<span data-ttu-id="f4095-175">Indian/Mauritius</span><span class="sxs-lookup"><span data-stu-id="f4095-175">Indian/Mauritius</span></span>
 
-<span data-ttu-id="0c3f9-178">Asia/Tbilisi</span><span class="sxs-lookup"><span data-stu-id="0c3f9-178">Asia/Tbilisi</span></span>
+<span data-ttu-id="f4095-176">Asia/Tbilisi</span><span class="sxs-lookup"><span data-stu-id="f4095-176">Asia/Tbilisi</span></span>
 
-<span data-ttu-id="0c3f9-179">Asia/Yerevan</span><span class="sxs-lookup"><span data-stu-id="0c3f9-179">Asia/Yerevan</span></span>
+<span data-ttu-id="f4095-177">Asia/Yerevan</span><span class="sxs-lookup"><span data-stu-id="f4095-177">Asia/Yerevan</span></span>
 
-<span data-ttu-id="0c3f9-180">Asia/Kabul</span><span class="sxs-lookup"><span data-stu-id="0c3f9-180">Asia/Kabul</span></span>
+<span data-ttu-id="f4095-178">Asia/Kabul</span><span class="sxs-lookup"><span data-stu-id="f4095-178">Asia/Kabul</span></span>
 
-<span data-ttu-id="0c3f9-181">Азия, Карачи</span><span class="sxs-lookup"><span data-stu-id="0c3f9-181">Asia/Karachi</span></span>
+<span data-ttu-id="f4095-179">Азия, Карачи</span><span class="sxs-lookup"><span data-stu-id="f4095-179">Asia/Karachi</span></span>
 
-<span data-ttu-id="0c3f9-182">Азия, Ташкент</span><span class="sxs-lookup"><span data-stu-id="0c3f9-182">Asia/Toshkent (Tashkent)</span></span>
+<span data-ttu-id="f4095-180">Азия, Ташкент</span><span class="sxs-lookup"><span data-stu-id="f4095-180">Asia/Toshkent (Tashkent)</span></span>
 
-<span data-ttu-id="0c3f9-183">Азия, Колката</span><span class="sxs-lookup"><span data-stu-id="0c3f9-183">Asia/Kolkata</span></span>
+<span data-ttu-id="f4095-181">Азия, Колката</span><span class="sxs-lookup"><span data-stu-id="f4095-181">Asia/Kolkata</span></span>
 
-<span data-ttu-id="0c3f9-184">Asia/Colombo</span><span class="sxs-lookup"><span data-stu-id="0c3f9-184">Asia/Colombo</span></span>
+<span data-ttu-id="f4095-182">Asia/Colombo</span><span class="sxs-lookup"><span data-stu-id="f4095-182">Asia/Colombo</span></span>
 
-<span data-ttu-id="0c3f9-185">Азия, Катманду</span><span class="sxs-lookup"><span data-stu-id="0c3f9-185">Asia/Kathmandu</span></span>
+<span data-ttu-id="f4095-183">Азия, Катманду</span><span class="sxs-lookup"><span data-stu-id="f4095-183">Asia/Kathmandu</span></span>
 
-<span data-ttu-id="0c3f9-186">Азия, Астана</span><span class="sxs-lookup"><span data-stu-id="0c3f9-186">Asia/Astana (Almaty)</span></span>
+<span data-ttu-id="f4095-184">Азия, Астана</span><span class="sxs-lookup"><span data-stu-id="f4095-184">Asia/Astana (Almaty)</span></span>
 
-<span data-ttu-id="0c3f9-187">Азия, Дакка</span><span class="sxs-lookup"><span data-stu-id="0c3f9-187">Asia/Dhaka</span></span>
+<span data-ttu-id="f4095-185">Азия, Дакка</span><span class="sxs-lookup"><span data-stu-id="f4095-185">Asia/Dhaka</span></span>
 
-<span data-ttu-id="0c3f9-188">Азия, Екатеринбург</span><span class="sxs-lookup"><span data-stu-id="0c3f9-188">Asia/Yekaterinburg</span></span>
+<span data-ttu-id="f4095-186">Азия, Екатеринбург</span><span class="sxs-lookup"><span data-stu-id="f4095-186">Asia/Yekaterinburg</span></span>
 
-<span data-ttu-id="0c3f9-189">Азия, Янгон (Рангун)</span><span class="sxs-lookup"><span data-stu-id="0c3f9-189">Asia/Yangon (Rangoon)</span></span>
+<span data-ttu-id="f4095-187">Азия, Янгон (Рангун)</span><span class="sxs-lookup"><span data-stu-id="f4095-187">Asia/Yangon (Rangoon)</span></span>
 
-<span data-ttu-id="0c3f9-190">Азия, Бангкок</span><span class="sxs-lookup"><span data-stu-id="0c3f9-190">Asia/Bangkok</span></span>
+<span data-ttu-id="f4095-188">Азия, Бангкок</span><span class="sxs-lookup"><span data-stu-id="f4095-188">Asia/Bangkok</span></span>
 
-<span data-ttu-id="0c3f9-191">Asia/Novosibirsk</span><span class="sxs-lookup"><span data-stu-id="0c3f9-191">Asia/Novosibirsk</span></span>
+<span data-ttu-id="f4095-189">Asia/Novosibirsk</span><span class="sxs-lookup"><span data-stu-id="f4095-189">Asia/Novosibirsk</span></span>
 
-<span data-ttu-id="0c3f9-192">Asia/Shanghai</span><span class="sxs-lookup"><span data-stu-id="0c3f9-192">Asia/Shanghai</span></span>
+<span data-ttu-id="f4095-190">Asia/Shanghai</span><span class="sxs-lookup"><span data-stu-id="f4095-190">Asia/Shanghai</span></span>
 
-<span data-ttu-id="0c3f9-193">Asia/Krasnoyarsk</span><span class="sxs-lookup"><span data-stu-id="0c3f9-193">Asia/Krasnoyarsk</span></span>
+<span data-ttu-id="f4095-191">Asia/Krasnoyarsk</span><span class="sxs-lookup"><span data-stu-id="f4095-191">Asia/Krasnoyarsk</span></span>
 
-<span data-ttu-id="0c3f9-194">Asia/Singapore</span><span class="sxs-lookup"><span data-stu-id="0c3f9-194">Asia/Singapore</span></span>
+<span data-ttu-id="f4095-192">Asia/Singapore</span><span class="sxs-lookup"><span data-stu-id="f4095-192">Asia/Singapore</span></span>
 
-<span data-ttu-id="0c3f9-195">Australia/Perth</span><span class="sxs-lookup"><span data-stu-id="0c3f9-195">Australia/Perth</span></span>
+<span data-ttu-id="f4095-193">Australia/Perth</span><span class="sxs-lookup"><span data-stu-id="f4095-193">Australia/Perth</span></span>
 
-<span data-ttu-id="0c3f9-196">Asia/Taipei</span><span class="sxs-lookup"><span data-stu-id="0c3f9-196">Asia/Taipei</span></span>
+<span data-ttu-id="f4095-194">Asia/Taipei</span><span class="sxs-lookup"><span data-stu-id="f4095-194">Asia/Taipei</span></span>
 
-<span data-ttu-id="0c3f9-197">Asia/Ulaanbaatar</span><span class="sxs-lookup"><span data-stu-id="0c3f9-197">Asia/Ulaanbaatar</span></span>
+<span data-ttu-id="f4095-195">Asia/Ulaanbaatar</span><span class="sxs-lookup"><span data-stu-id="f4095-195">Asia/Ulaanbaatar</span></span>
 
-<span data-ttu-id="0c3f9-198">Asia/Irkutsk</span><span class="sxs-lookup"><span data-stu-id="0c3f9-198">Asia/Irkutsk</span></span>
+<span data-ttu-id="f4095-196">Asia/Irkutsk</span><span class="sxs-lookup"><span data-stu-id="f4095-196">Asia/Irkutsk</span></span>
 
-<span data-ttu-id="0c3f9-199">Asia/Tokyo</span><span class="sxs-lookup"><span data-stu-id="0c3f9-199">Asia/Tokyo</span></span>
+<span data-ttu-id="f4095-197">Asia/Tokyo</span><span class="sxs-lookup"><span data-stu-id="f4095-197">Asia/Tokyo</span></span>
 
-<span data-ttu-id="0c3f9-200">Asia/Seoul</span><span class="sxs-lookup"><span data-stu-id="0c3f9-200">Asia/Seoul</span></span>
+<span data-ttu-id="f4095-198">Asia/Seoul</span><span class="sxs-lookup"><span data-stu-id="f4095-198">Asia/Seoul</span></span>
 
-<span data-ttu-id="0c3f9-201">Australia/Adelaide</span><span class="sxs-lookup"><span data-stu-id="0c3f9-201">Australia/Adelaide</span></span>
+<span data-ttu-id="f4095-199">Australia/Adelaide</span><span class="sxs-lookup"><span data-stu-id="f4095-199">Australia/Adelaide</span></span>
 
-<span data-ttu-id="0c3f9-202">Australia/Darwin</span><span class="sxs-lookup"><span data-stu-id="0c3f9-202">Australia/Darwin</span></span>
+<span data-ttu-id="f4095-200">Australia/Darwin</span><span class="sxs-lookup"><span data-stu-id="f4095-200">Australia/Darwin</span></span>
 
-<span data-ttu-id="0c3f9-203">Australia/Brisbane</span><span class="sxs-lookup"><span data-stu-id="0c3f9-203">Australia/Brisbane</span></span>
+<span data-ttu-id="f4095-201">Australia/Brisbane</span><span class="sxs-lookup"><span data-stu-id="f4095-201">Australia/Brisbane</span></span>
 
-<span data-ttu-id="0c3f9-204">Australia/Sydney</span><span class="sxs-lookup"><span data-stu-id="0c3f9-204">Australia/Sydney</span></span>
+<span data-ttu-id="f4095-202">Australia/Sydney</span><span class="sxs-lookup"><span data-stu-id="f4095-202">Australia/Sydney</span></span>
 
-<span data-ttu-id="0c3f9-205">Pacific/Port_Moresby</span><span class="sxs-lookup"><span data-stu-id="0c3f9-205">Pacific/Port_Moresby</span></span>
+<span data-ttu-id="f4095-203">Pacific/Port_Moresby</span><span class="sxs-lookup"><span data-stu-id="f4095-203">Pacific/Port_Moresby</span></span>
 
-<span data-ttu-id="0c3f9-206">Australia/Hobart</span><span class="sxs-lookup"><span data-stu-id="0c3f9-206">Australia/Hobart</span></span>
+<span data-ttu-id="f4095-204">Australia/Hobart</span><span class="sxs-lookup"><span data-stu-id="f4095-204">Australia/Hobart</span></span>
 
-<span data-ttu-id="0c3f9-207">Asia/Yakutsk</span><span class="sxs-lookup"><span data-stu-id="0c3f9-207">Asia/Yakutsk</span></span>
+<span data-ttu-id="f4095-205">Asia/Yakutsk</span><span class="sxs-lookup"><span data-stu-id="f4095-205">Asia/Yakutsk</span></span>
 
-<span data-ttu-id="0c3f9-208">Pacific/Guadalcanal</span><span class="sxs-lookup"><span data-stu-id="0c3f9-208">Pacific/Guadalcanal</span></span>
+<span data-ttu-id="f4095-206">Pacific/Guadalcanal</span><span class="sxs-lookup"><span data-stu-id="f4095-206">Pacific/Guadalcanal</span></span>
 
-<span data-ttu-id="0c3f9-209">Asia/Vladivostok</span><span class="sxs-lookup"><span data-stu-id="0c3f9-209">Asia/Vladivostok</span></span>
+<span data-ttu-id="f4095-207">Asia/Vladivostok</span><span class="sxs-lookup"><span data-stu-id="f4095-207">Asia/Vladivostok</span></span>
 
-<span data-ttu-id="0c3f9-210">Pacific/Auckland</span><span class="sxs-lookup"><span data-stu-id="0c3f9-210">Pacific/Auckland</span></span>
+<span data-ttu-id="f4095-208">Pacific/Auckland</span><span class="sxs-lookup"><span data-stu-id="f4095-208">Pacific/Auckland</span></span>
 
-<span data-ttu-id="0c3f9-211">Etc/GMT-12</span><span class="sxs-lookup"><span data-stu-id="0c3f9-211">Etc/GMT-12</span></span>
+<span data-ttu-id="f4095-209">Etc/GMT-12</span><span class="sxs-lookup"><span data-stu-id="f4095-209">Etc/GMT-12</span></span>
 
-<span data-ttu-id="0c3f9-212">Pacific/Fiji</span><span class="sxs-lookup"><span data-stu-id="0c3f9-212">Pacific/Fiji</span></span>
+<span data-ttu-id="f4095-210">Pacific/Fiji</span><span class="sxs-lookup"><span data-stu-id="f4095-210">Pacific/Fiji</span></span>
 
-<span data-ttu-id="0c3f9-213">Asia/Magadan</span><span class="sxs-lookup"><span data-stu-id="0c3f9-213">Asia/Magadan</span></span>
+<span data-ttu-id="f4095-211">Asia/Magadan</span><span class="sxs-lookup"><span data-stu-id="f4095-211">Asia/Magadan</span></span>
 
-<span data-ttu-id="0c3f9-214">Pacific/Tongatapu</span><span class="sxs-lookup"><span data-stu-id="0c3f9-214">Pacific/Tongatapu</span></span>
+<span data-ttu-id="f4095-212">Pacific/Tongatapu</span><span class="sxs-lookup"><span data-stu-id="f4095-212">Pacific/Tongatapu</span></span>
 
-<span data-ttu-id="0c3f9-215">Pacific/Apia</span><span class="sxs-lookup"><span data-stu-id="0c3f9-215">Pacific/Apia</span></span>
+<span data-ttu-id="f4095-213">Pacific/Apia</span><span class="sxs-lookup"><span data-stu-id="f4095-213">Pacific/Apia</span></span>
 
-<span data-ttu-id="0c3f9-216">Pacific/Kiritimati</span><span class="sxs-lookup"><span data-stu-id="0c3f9-216">Pacific/Kiritimati</span></span>
+<span data-ttu-id="f4095-214">Pacific/Kiritimati</span><span class="sxs-lookup"><span data-stu-id="f4095-214">Pacific/Kiritimati</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0c3f9-217">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="0c3f9-217">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f4095-215">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="f4095-215">JSON representation</span></span>
 
-<span data-ttu-id="0c3f9-218">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0c3f9-218">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="f4095-216">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f4095-216">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -243,10 +243,15 @@ ms.locfileid: "27876071"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "dateTimeTimeZone resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/datetimetimezone.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
