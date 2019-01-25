@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса keyValue
-description: Ниже представлено описание ресурса в формате JSON.
+description: Ниже показано представление ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 6f81d5aaef6e045abec02ebb5a55c4eb19db2665
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 4223df85f9f120ba6477480f943d65a2511b6f2e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27833847"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528531"
 ---
-# <a name="keyvalue-resource-type"></a><span data-ttu-id="11308-103">Тип ресурса keyValue</span><span class="sxs-lookup"><span data-stu-id="11308-103">keyValue resource type</span></span>
+# <a name="keyvalue-resource-type"></a><span data-ttu-id="c3992-103">Тип ресурса keyValue</span><span class="sxs-lookup"><span data-stu-id="c3992-103">keyValue resource type</span></span>
 
-> <span data-ttu-id="11308-104">**Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="11308-104">**Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="11308-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="11308-105">Use of these APIs in production applications is not supported.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="11308-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="11308-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c3992-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c3992-104">JSON representation</span></span>
 
-<span data-ttu-id="11308-107">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="11308-107">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="c3992-105">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c3992-105">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -32,18 +32,23 @@ ms.locfileid: "27833847"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="11308-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="11308-108">Properties</span></span>
-| <span data-ttu-id="11308-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="11308-109">Property</span></span>     | <span data-ttu-id="11308-110">Тип</span><span class="sxs-lookup"><span data-stu-id="11308-110">Type</span></span>   |<span data-ttu-id="11308-111">Описание</span><span class="sxs-lookup"><span data-stu-id="11308-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c3992-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="c3992-106">Properties</span></span>
+| <span data-ttu-id="c3992-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="c3992-107">Property</span></span>     | <span data-ttu-id="c3992-108">Тип</span><span class="sxs-lookup"><span data-stu-id="c3992-108">Type</span></span>   |<span data-ttu-id="c3992-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c3992-109">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="11308-112">key</span><span class="sxs-lookup"><span data-stu-id="11308-112">key</span></span>|<span data-ttu-id="11308-113">строка</span><span class="sxs-lookup"><span data-stu-id="11308-113">string</span></span>||
-|<span data-ttu-id="11308-114">value</span><span class="sxs-lookup"><span data-stu-id="11308-114">value</span></span>|<span data-ttu-id="11308-115">строка</span><span class="sxs-lookup"><span data-stu-id="11308-115">string</span></span>||
+|<span data-ttu-id="c3992-110">key</span><span class="sxs-lookup"><span data-stu-id="c3992-110">key</span></span>|<span data-ttu-id="c3992-111">string</span><span class="sxs-lookup"><span data-stu-id="c3992-111">string</span></span>||
+|<span data-ttu-id="c3992-112">value</span><span class="sxs-lookup"><span data-stu-id="c3992-112">value</span></span>|<span data-ttu-id="c3992-113">строка</span><span class="sxs-lookup"><span data-stu-id="c3992-113">string</span></span>||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "keyValue resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/keyvalue.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
