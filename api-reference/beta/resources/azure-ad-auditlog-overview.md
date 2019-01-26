@@ -1,67 +1,75 @@
 ---
-title: Общие сведения о интерфейс API журнала аудита Azure AD
-description: Azure Active Directory (Azure AD) отслеживает показатели активности и входа пользователя и создает аудита отчеты по журналу, которые помогут вам понять, как пользователям доступ к и эффективного использования служб Azure AD. Используйте Microsoft Graph API для Azure AD для анализа данных базового этих отчетов и для создания пользовательских решений для конкретных требованиям вашей организации.
+title: Обзор API журнала аудита Azure AD
+description: Azure Active Directory (Azure AD) отслеживает действия пользователя, регистрирует показатели и создает отчеты журнала аудита, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные, лежащие в основе этих отчетов, и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
 localization_priority: Priority
-ms.openlocfilehash: 07d285ce4e7fbf736900c1d6d4acdf159b451424
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 89be0007ae6c13fb48ba165ca991f5dfa9d9b9cf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826224"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509604"
 ---
-# <a name="azure-ad-audit-log-api-overview"></a>Общие сведения о интерфейс API журнала аудита Azure AD
+# <a name="azure-ad-audit-log-api-overview"></a>Обзор API журнала аудита Azure AD
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure Active Directory (Azure AD) отслеживает показатели активности и входа пользователя и создает аудита отчеты по журналу, которые помогут вам понять, как пользователям доступ к и эффективного использования служб Azure AD. Используйте Microsoft Graph API для Azure AD для анализа данных базового этих отчетов и для создания пользовательских решений для конкретных требованиям вашей организации.
+Azure Active Directory (Azure AD) отслеживает действия пользователя, регистрирует показатели и создает отчеты журнала аудита, помогающие понять, как пользователи переходят к службам Azure AD и используют их. Чтобы анализировать данные, лежащие в основе этих отчетов, и создавать настраиваемые решения в соответствии с конкретными требованиями организации, используйте API Microsoft Graph в Azure AD.
 
-## <a name="what-are-azure-ad-activity-logs"></a>Что такое действие Azure AD журналы?
+## <a name="what-are-azure-ad-activity-logs"></a>Что такое журналы аудита Azure AD?
 
-Azure AD обеспечивает два типа журналы активности.
+Azure AD предоставляет два типа журналов активности:
 
-- журналы аудита 
-- журналы входа
+- журналы аудита; 
+- журналы входа.
 
 ### <a name="audit-logs"></a>Журналы аудита
 
-Отчете журналы аудита предоставляет доступ к журналу каждой задачи выполняется в вашего клиента. Отчет о журналы аудита предоставляет записей действий системы для соответствия требованиям. Помимо прочего предоставленных данных позволяет вам устранения распространенных сценариев, таких как:
+Отчет об активности журналов аудита предоставляет доступ к истории всех выполненных задач в клиенте. Отчет журналов аудита предоставляет записи о действиях системы для соответствия требованиям. Помимо прочего, предоставляемые данные позволяют рассматривать типичные сценарии, например:
 
-- Доступ к группе администрирования, предоставленные пользователю каталога?
+- Кто предоставил доступ группе администраторов к каталогу пользователя?
 
-- Пользователей, которые вход с использованием недавно приобретенного приложения?
+- Какие пользователи входят в недавно приобретенное приложение?
 
-- Сбрасывает пароли сколько были внесены в пределах каталога?
+- Сколько сбросов паролей выполнено в каталоге?
 
-### <a name="sign-in-logs"></a>Войдите в журналах
+### <a name="sign-in-logs"></a>Журналы входа
 
-Войти в отчете приводятся рекомендации по определению, выполнения задач, о которых сообщает отчеты по журналу аудита. Войти в отчете помогает ответить на вопросы:
+Отчет о действиях входа помогает определить, кто выполнял задачи, указанные в отчетах журнала аудита. Отчет о действиях входа помогает ответить на представленные ниже вопросы.
 
-- Что такое входа в шаблоне пользователя?
-- Сколько пользователей вышли ходе за прошлую неделю?
-- Что такое состояние этих войти в систему?
+- Какой шаблон входа использует пользователь?
+- Сколько пользователей выполнило вход за прошлую неделю?
+- Какое состояние у этих входов?
 
-## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a>Что можно сделать с помощью журнала аудита интерфейсы API в Microsoft Graph
+## <a name="what-can-i-do-with-audit-log-apis-in-microsoft-graph"></a>Как можно использовать API журнала аудита в Microsoft Graph?
 
-Вот популярные запросы для работы с данными журнала аудита.
+Ниже приведены популярные запросы для работы с данными журнала аудита.
 
 Операция | URL-адрес
 :----------|:----
-Получение клиентом действия пользователя | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
-Получение клиентом входы | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
+Получение действий пользователей клиента | [https://graph.microsoft.com/beta/auditLogs/directoryAudits](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/directoryAudits&version=beta)
+Получение входов пользователей клиента | [https://graph.microsoft.com/beta/auditLogs/signIns](https://developer.microsoft.com/graph/graph-explorer?request=auditLogs/signIns&version=beta)
 
-## <a name="what-licenses-do-i-need"></a>Какие лицензий требуется?
+## <a name="what-licenses-do-i-need"></a>Какие лицензии нужны?
 
-Отчеты по журналу аудита, доступных для функции, которые ли применена лицензия.  Если у вас есть лицензии для конкретного компонента, также имеют доступ к его журналы аудита.
+Отчеты журнала аудита доступны для компонентов, на которые у вас есть лицензии.  Если у вас есть лицензия на определенный компонент, вам будет предоставлен доступ к соответствующим журналам аудита.
 
-Например требуется лицензия P1 Azure AD Premium для доступа к отчетам аудита самостоятельного пароль.  Для получения дополнительных сведений см. [: Лицензирование Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
+Например, вам нужна лицензия на Azure AD Premium P1, чтобы получить доступ к отчетам аудита самостоятельного изменения паролей.  Дополнительные сведения см. на странице [лицензий Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Входа в отчетах требуется лицензия на Azure AD Premium.
+Для отчетов входов требуется лицензия на Azure AD Premium.
 
-Для получения дополнительных сведений см [Цена Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
+Дополнительные сведения см. на странице [Цены на Azure AD](https://azure.microsoft.com/pricing/details/active-directory/).
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- [Регистрация приложения](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для удовлетворения необходимых компонентов журнала аудита. 
-- Сведения из [журнала аудита](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) и [примеры, вход](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
-- Ознакомьтесь с [directoryAudit](directoryaudit.md) ресурсов и действия.
-- Просмотрите [входить](signin.md) ресурсов и действия. 
+- [Зарегистрируйте приложение](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal), чтобы соответствовать предварительным требованиям журнала аудита. 
+- Ознакомьтесь с примерами журналов [аудита](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-audit-samples) и [входа](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- Изучите действия и ресурс [directoryAudit](directoryaudit.md).
+- Изучите действия и ресурс [signIn](signin.md). 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/azure-ad-auditlog-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,32 +1,32 @@
 ---
-title: Использование Microsoft Graph API для интеграции социальных аналитики в приложении
-description: Microsoft Graph поддерживает социальных жесты в социальных контекста пользователя и предоставляет доступ к полезным пользователей и социального контента.
+title: Интегрирование социальной аналитики в приложение с помощью Microsoft Graph API
+description: Microsoft Graph поддерживает социальные жесты в социальном контексте пользователя и предоставляет доступ к полезным сведениям о пользователях и социальным данным.
 localization_priority: Priority
 author: simonhult
 ms.prod: insights
-ms.openlocfilehash: 3ccc574a966c5a0dc81f62fe4fa0a595fb25a982
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b5a89f46c8480fb90cd019e5b4fb370e0a6592bf
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27944882"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509597"
 ---
-# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Использование Microsoft Graph API для интеграции социальных аналитики в приложении
+# <a name="use-the-microsoft-graph-api-to-integrate-social-intelligence-in-an-app"></a>Интегрирование социальной аналитики в приложение с помощью Microsoft Graph API
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Microsoft Graph поддерживает социальных жесты в социальных контекста пользователя и предоставляет доступ к полезным пользователей и социального контента.
+Microsoft Graph поддерживает социальные жесты в социальном контексте пользователя и предоставляет доступ к полезным сведениям о пользователях и социальным данным.
 
-## <a name="aggregate-and-extract-specific-information-about-people"></a>Статистические и извлеките конкретные сведения о пользователях
+## <a name="aggregate-and-extract-specific-information-about-people"></a>Сбор и извлечение определенных сведений о пользователях
 
-Использование ресурсов [человека](../resources/person.md) и API людей и статистические данные о сотруднике из почты, контакты и социальными сетями. Результаты сортируются по релевантности, их на основе нескольких связи, совместной работы и деловыми отношениями. Этот API позволяет Обзор сортировки, выбор, фильтра и поиска для пользователей на основе критериев.
+Используйте ресурс [person](../resources/person.md) и API службы "Люди" для сбора сведений о пользователе, полученных из его почты, контактов и социальных сетей. Результаты упорядочиваются по релевантности на основании множества отношений общения, совместной работы и бизнес-связей. Вы можете просматривать, сортировать, отбирать, фильтровать или искать сведения о пользователях, основываясь на заданных условиях.
 
-- [List people](../api/user-list-people.md)
+- [Получение списка людей](../api/user-list-people.md)
 
-## <a name="manage--mentions"></a>Управление частотой упоминания
+## <a name="manage--mentions"></a>Управление @упоминаниями
 
-Вызов получателя для уведомления и получение внимания получателя в сообщение — это общие социальных жестам.
-Ресурс [упомянуть](../resources/mention.md) и API упоминания предоставление механизма простых выноска получателя в [сообщение](../resources/message.md), получение всех сообщений, в которых пользователь получает уведомление с помощью @ Упоминание или получение каждого упоминаются в сообщение.
+Упоминание получателя в сообщении для уведомления и привлечения его внимания является распространенным социальным жестом.
+Ресурс [mention](../resources/mention.md) и API упоминаний предоставляют простой механизм для упоминания получателя в [сообщении](../resources/message.md), получения всех сообщений, в которых пользователь отмечен с помощью @упоминания, или получения всех упоминаний в сообщении.
 
 <!--
 Include the next sentence when supporting events.
@@ -35,21 +35,29 @@ Include the next sentence when supporting events.
 
 -->
 
-- Создание упоминания в новые сообщения
+- Создание упоминаний в новом сообщении
 
-  - [Создание и отправка упоминания как часть нового сообщения](../api/user-sendmail.md#request-2)
-  - [Создание упоминания как часть черновика сообщения](../api/user-post-messages.md#request-2)
+  - [Создание и отправка упоминаний в составе нового сообщения](../api/user-sendmail.md#request-2)
+  - [Создание упоминания в составе черновика сообщения](../api/user-post-messages.md#request-2)
 
-- Получение сведений о упоминания в сообщение
+- Получение сведений об упоминаниях в сообщении
 
-  - [Получение всех сообщений в почтовый ящик пользователя выполнил вход, упомянуть пользователя](../api/user-list-messages.md#request-2)
-  - [Подробные сведения о каждом упоминаются в сообщение](../api/message-get.md#request-2)
+  - [Получение всех сообщений в почтовом ящике вошедшего пользователя, в которых упоминается пользователь](../api/user-list-messages.md#request-2)
+  - [Получение сведений о каждом упоминании в сообщении](../api/message-get.md#request-2)
 
-- [Удаление упоминаются](../api/message-delete.md#request-2) в сообщение
+- [Удаление упоминания](../api/message-delete.md#request-2) в сообщении
 
-## <a name="access-social-data-around-and-about-a-user"></a>Access социального контента решения, а также о пользователя
+## <a name="access-social-data-around-and-about-a-user"></a>Доступ к социальным данным о пользователе
 
-Графическое представление Office инкапсулирует связи между разными организациями в Office 365. Использование Office график для получения наблюдения из социальных сетей в отдельных пользователей в Office 365.
+Office Graph собирает отношения между различными объектами в Office 365. С помощью Office Graph можно получать социальную аналитику по отдельным пользователям в Office 365.
 
-- Список элементов [тенденции вокруг](../api/insights-list-trending.md) пользователя
-- Список пользователей, которые были [Работа с](../api/user-list-people.md) пользователем
+- Перечисление [популярных](../api/insights-list-trending.md) элементов, связанных с пользователем
+- Перечисление пользователей, [работавших](../api/user-list-people.md) с пользователем
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/social-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

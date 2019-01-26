@@ -1,21 +1,21 @@
 ---
 title: Получение фотографии
-description: Получите указанный profilePhoto или метаданных (**profilePhoto** свойства).
+description: Получение указанного объекта profilePhoto или его метаданных (свойств **profilePhoto**).
 localization_priority: Priority
-ms.openlocfilehash: be20e243a89d258c8db2105efe0c53cbea0abebf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 759c0ff3ac2585f43ea38963e10b001250702c56
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851739"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29509632"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите указанный [profilePhoto](../resources/profilephoto.md) или метаданных (**profilePhoto** свойства).
+Получение указанного объекта [profilePhoto](../resources/profilephoto.md) или его метаданных (свойств **profilePhoto**).
 
-GET фотографий операция первая попытка получить указанного фотографий с Office 365. Если фотографии не поддерживается в Office 365, API пытается получить фотографии из Azure Active Directory.
+Операция GET photo сначала пытается получить указанную фотографию из Office 365. Если фотография недоступна в Office 365, API пытается получить ее из Azure Active Directory.
 
 Поддерживаемые размеры фотографий в формате HD для Office 365: 48 x 48, 64 x 64, 96 x 96, 120 x 120, 240 x 240, 360 x 360, 432 x 432, 504 x 504 и 648 x 648. Фотографии могут быть любого размера, если они хранятся в Azure Active Directory.
 
@@ -27,17 +27,17 @@ GET фотографий операция первая попытка получ
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-> **Примечание:** Операцию GET фотографий в бета-версии поддерживает работой, школа или личных учетных записей пользователя. Операцию GET метаданных фотографий тем не менее, поддерживает только пользователя рабочий или школа учетных записей и не личных учетных записей.
+> **Примечание.** Операция GET photo в бета-версии поддерживается для рабочих, учебных и личных учетных записей пользователя. Однако операция GET photo metadata поддерживается только для рабочих или учебных, но не личных учетных записей пользователя.
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Для ресурса **user**:<br/>User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт)  <br /> **Примечание**: операция метаданных не поддерживается. | Для ресурса **user**:<br/>User.Read, User.ReadWrite<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
-|Для приложений                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+|Делегированные (личная учетная запись Майкрософт)  <br /> **Примечание**. Операция получения метаданных не поддерживается. | Для ресурса **user**:<br/>User.Read, User.ReadWrite<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
+|Для приложения                        | Для ресурса **user**:<br/>User.Read.All, User.ReadWrite.All<br /><br />Для ресурса **group**:<br />Group.Read.All, Group.ReadWrite.All<br /><br />Для ресурса **contact**:<br />Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос 
 
-### <a name="get-the-photo"></a>Получение фотографий
+### <a name="get-the-photo"></a>Получение фотографии
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photo/$value
@@ -60,7 +60,7 @@ GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
 ```
 
-### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получить метаданные для определенного размера фотографии
+### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получение метаданных фотографии определенного размера
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/photos/{size}
@@ -86,10 +86,10 @@ GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{i
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 ### <a name="response-for-getting-the-photo"></a>Отклик для запроса на получение фотографии
 При успешном выполнении этот метод возвращает код отклика `200 OK` и двоичные данные запрашиваемой фотографии.  Если фотография не существует, операция возвратит отклик `404 Not Found`.
 ### <a name="response-for-getting-the-metadata-of-the-photo"></a>Отклик для запроса на получение метаданных фотографии
@@ -121,7 +121,7 @@ GET https://graph.microsoft.com/beta/me/photos/48x48/$value
 Content-Type: image/jpg
 ```
 
-##### <a name="response-2"></a>Ответ 2
+##### <a name="response-2"></a>Отклик 2
 Содержит двоичные данные запрошенной фотографии 48 x 48. Код HTTP-ответа: 200.
 
 ##### <a name="request-3"></a>Запрос 3
@@ -134,8 +134,8 @@ Content-Type: image/jpg
 GET https://graph.microsoft.com/beta/me/photo
 ```
 
-##### <a name="response-3"></a>Ответ 3
-В данных указанного ниже ответа содержатся метаданные фотографии. Примечание. Показанный здесь объект ответа может быть усечен для краткости.
+##### <a name="response-3"></a>Отклик 3
+В данных указанного ниже отклика содержатся метаданные фотографии. Примечание. Показанный здесь объект отклика может быть усечен для краткости.
 
 <!-- {
   "blockType": "ignored"
@@ -194,10 +194,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get photo",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/profilephoto-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
