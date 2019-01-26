@@ -4,12 +4,12 @@ description: Тип tokenMeetingInfo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513370"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571074"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса tokenMeetingInfo
 
@@ -21,7 +21,7 @@ ms.locfileid: "29513370"
 
 | Свойство                     | Тип    | Описание                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Логическое | Указывает, если беседы можно продолжить после покидает узла беседы. |
+| allowConversationWithoutHost | Boolean | Указывает, если беседы можно продолжить после покидает узла беседы. |
 | токен                        | Строка  | Маркер для присоединения к/активации собрания.                                        |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -33,6 +33,7 @@ ms.locfileid: "29513370"
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

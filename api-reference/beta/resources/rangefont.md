@@ -4,12 +4,12 @@ description: Этот объект представляет атрибуты ш�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 2dee07b7d2573081650bdd15799e4884c774e171
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5500ad7a2ea16336e9be617678c4c85562e04bb3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507966"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571137"
 ---
 # <a name="rangefont-resource-type"></a>Тип ресурса RangeFont
 
@@ -22,8 +22,8 @@ ms.locfileid: "29507966"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|Получение объекта RangeFont | RangeFont |Чтение свойств и связей объекта rangeFont.|
-|[Update](../api/rangefont-update.md) | RangeFont   |Обновление объекта RangeFont. |
+|[Получение объекта RangeFont](../api/rangefont-get.md) | [RangeFont](rangefont.md) |Чтение свойств и связей объекта rangeFont.|
+|[Update](../api/rangefont-update.md) | [RangeFont](rangefont.md)   |Обновление объекта RangeFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,11 +31,11 @@ ms.locfileid: "29507966"
 |bold|boolean|Указывает, является ли шрифт полужирным.|
 |color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
-|name|string|Имя шрифта (например, Calibri)|
+|name|строка|Имя шрифта (например, Calibri)|
 |size|double|font-size|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|underline| Строка перечисления |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -58,7 +58,7 @@ ms.locfileid: "29507966"
   "italic": true,
   "name": "string",
   "size": 1024,
-  "underline": "string"
+  "underline": "None | Single | Double | SingleAccountant | DoubleAccountant"
 }
 
 ```

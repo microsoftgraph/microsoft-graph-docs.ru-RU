@@ -4,18 +4,18 @@ description: Создание объекта page в указанном разд
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f397b10e914a779a153e78e1e10e906925aec9a1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510878"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570920"
 ---
 # <a name="create-page"></a>Создание страницы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [page](../resources/page.md) в указанном разделе.
+Создание объекта [page](../resources/onenotepage.md) в указанном разделе.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -46,7 +46,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [page](../resources/page.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [page](../resources/onenotepage.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -92,7 +92,7 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
 <!-- { "blockType": "ignored" } -->
 ```http

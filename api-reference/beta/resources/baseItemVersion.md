@@ -2,14 +2,14 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: baseItemVersion;
+title: BaseItemVersion
 localization_priority: Normal
-ms.openlocfilehash: fcf427300007277f7ea6382579ad3a0929ca97d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 92784fd9836c0ffd8fe748c2daee0947edefbbdc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519411"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571109"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
 
@@ -20,7 +20,13 @@ ms.locfileid: "29519411"
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
-<!-- { "blockType": "resource", "@odata.type": "microsoft.graph.baseItemVersion", "@type.aka": "oneDrive.baseItemVersion" } -->
+<!--{
+  "blockType": "resource",
+  "abstract": true,
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.baseItemVersion",
+  "@type.aka": "oneDrive.baseItemVersion"
+}-->
 
 ```json
 {
@@ -39,7 +45,7 @@ ms.locfileid: "29519411"
 | **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
-| publication          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 
 
 <!--
