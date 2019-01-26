@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: Получение страницы на сайте
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b6f7196040897d225ccb17d3d6bad6318c76590e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522716"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575928"
 ---
 # <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получение страницы в списке страниц сайта узла
 
@@ -48,7 +48,7 @@ GET /sites/{site-id}/pages/{page-id}
 GET /sites/{site-id}/pages/{page-id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
@@ -57,7 +57,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": 2,
+    "id": "2",
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",

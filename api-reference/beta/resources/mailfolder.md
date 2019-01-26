@@ -4,12 +4,12 @@ description: Почтовая папка в почтовом ящике поль
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 1cd48c866ea6384aa18631732065380e898b8bf7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 25a491a23840de009386d7fbb2e9ee8d0fef7b4e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513090"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576733"
 ---
 # <a name="mailfolder-resource-type"></a>Тип ресурса mailFolder
 
@@ -32,13 +32,13 @@ GET /me/mailFolders/drafts
 
 | Имя хорошо известные папки | Описание |
 |:-----------------------|:------------|
-| Archive | Сообщения папки архива отправляются при использовании функции архивации One_Click в клиентах Outlook, которые поддерживают его. **Примечание:** это не то же, что компонент архивного почтового ящика из Exchange online. |
+| архив | Сообщения папки архива отправляются при использовании функции архивации One_Click в клиентах Outlook, которые поддерживают его. **Примечание:** это не то же, что компонент архивного почтового ящика из Exchange online. |
 | засорение | Сообщения с низким приоритетом папки засорение перемещаются при использовании функции беспорядок. |
-| Conflicts | Папка, содержащая конфликтующих элементов в почтовом ящике. |
+| конфликтов | Папка, содержащая конфликтующих элементов в почтовом ящике. |
 | conversationhistory | Папка, где Скайп сохраняет мгновенные сообщения (если Скайп настроен для этого). |
 | deleteditems | Элементы папки перемещаются при удалении. |
 | черновики | Папка, содержащая неотправленные сообщения. |
-| Inbox | Папка "Входящие". |
+| папки «Входящие» | Папка "Входящие". |
 | junkemail | В папку нежелательной почты. |
 | localfailures | Папка, содержащая элементы, которые существуют на локальных клиентов, но не удалось загрузить на сервер. |
 | msgfolderroot | Папка «Хранилища». Эта папка является родительской папки для папок, которые отображаются в обычном почтовых клиентах, таких как папки «Входящие». |
@@ -75,12 +75,12 @@ GET /me/mailFolders/drafts
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |childFolderCount|Int32|Количество непосредственных дочерних элементов mailFolder в текущем элементе mailFolder.|
-|displayName|String|Отображаемое имя элемента mailFolder.|
-|id|String|Уникальный идентификатор mailFolder.|
+|displayName|Строка|Отображаемое имя элемента mailFolder.|
+|id|Строка|Уникальный идентификатор mailFolder.|
 |parentFolderId|Строка|Уникальный идентификатор родительского элемента mailFolder для элемента mailFolder.|
 |totalItemCount|Int32|Количество элементов в элементе mailFolder.|
 |unreadItemCount|Int32|Количество элементов, помеченных как непрочитанные, в элементе mailFolder.|
-|wellKnownName|String|Хорошо известные папки имя папки. Возможные значения перечислены выше. Это свойство принимает значение только для папок по умолчанию, созданные в Outlook. Для других папок это свойство имеет **значение null**.|
+|wellKnownName|Строка|Хорошо известные папки имя папки. Возможные значения перечислены выше. Это свойство принимает значение только для папок по умолчанию, созданные в Outlook. Для других папок это свойство имеет **значение null**.|
 
 **Эффективный доступ к сведениям о количестве элементов**
 
@@ -93,15 +93,15 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
 
 Почтовые папки в Outlook может содержать несколько типов элементов, например, может содержать папки «Входящие» элементы запроса, которые отличаются от почтовых элементов собрания. `TotalItemCount`и `UnreadItemCount` включать элементы в папке почты независимо от их типов элементов.
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип | Описание |
 |:-------------|:-----|:------------|
 |childFolders|Коллекция объектов [MailFolder](mailfolder.md)|Коллекция дочерних папок в элементе mailFolder.|
 |messageRules | Коллекция [messageRule](messagerule.md) | Коллекция правил, которые применяются к папке пользователя "Входящие". |
 |messages|Коллекция объектов [Message](message.md)|Коллекция сообщений в элементе mailFolder.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
+|multiValueLegacyExtendedProperty|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
+|singleValueLegacyExtendedProperty|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для элемента mailFolder. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -113,8 +113,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
     "childFolders",
     "messageRules",
     "messages",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.mailFolder"
@@ -132,8 +132,8 @@ https://outlook.office.com/api/beta/me/folders/inbox/messages?$count=true&$filte
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],
-  "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
-  "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
+  "multiValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }],
+  "singleValueLegacyExtendedProperty": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }]
 }
 ```
 

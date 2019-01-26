@@ -4,12 +4,12 @@ description: Получите список членов группы. Групп
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: e1dc5c2b89305373b22b6ef87cfaee25d6669750
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed3d4e4a927181f6bf8ea2c90edf337b0f8f32d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523626"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576299"
 ---
 # <a name="list-group-transitive-members"></a>Доверия транзитивных членов группы списка
 
@@ -51,7 +51,7 @@ GET /groups/{id}/transitiveMembers
 
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
@@ -69,7 +69,7 @@ GET /groups/{id}/transitiveMembers
 GET https://graph.microsoft.com/beta/groups/{id}/transitiveMembers
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -85,8 +85,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

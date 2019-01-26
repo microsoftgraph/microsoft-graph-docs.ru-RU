@@ -4,12 +4,12 @@ description: Группа разделов в записной книжке OneN
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 65e420d014add658a538deb42c01518cd94d611c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b7368f18058c0c8b00c5b34e5a804521dc64682
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523710"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575522"
 ---
 # <a name="sectiongroup-resource-type"></a>Тип ресурса sectionGroup
 
@@ -29,7 +29,7 @@ ms.locfileid: "29523710"
     "sectionGroups",
     "sections"
   ],
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 }-->
 
 ```json
@@ -51,21 +51,21 @@ ms.locfileid: "29523710"
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время создания группы разделов. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|id|String|Уникальный идентификатор группы разделов. Только для чтения.|
+|id|Строка|Уникальный идентификатор группы разделов. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения группы разделов. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|displayName|String|Имя группы разделов.|
-|sectionGroupsUrl|String|URL-адрес для свойства навигации `sectionGroups`, который возвращает все группы разделов в группе разделов. Только для чтения.|
+|displayName|Строка|Имя группы разделов.|
+|sectionGroupsUrl|Строка|URL-адрес для свойства навигации `sectionGroups`, который возвращает все группы разделов в группе разделов. Только для чтения.|
 |sectionsUrl|Строка|URL-адрес для свойства навигации `sections`, который возвращает все разделы в группе разделов. Только для чтения.|
-|self|String|Конечная точка, в которой можно получить сведения о группе разделов. Только для чтения.|
+|self|Строка|Конечная точка, в которой можно получить сведения о группе разделов. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|parentNotebook|[Notebook](notebook.md)|Записная книжка, содержащая группу разделов. Только для чтения.|
-|parentSectionGroup|[SectionGroup](sectiongroup.md)|Группа разделов, содержащая группу разделов. Только для чтения.|
-|sectionGroups|Коллекция объектов [SectionGroup](sectiongroup.md)|Группы разделов в разделе. Только для чтения. Допускает значение null.|
-|sections|Коллекция объектов [Section](section.md)|Разделы в группе разделов. Только для чтения. Допускается значение null.|
+|parentNotebook|[записная книжка](notebook.md)|Записная книжка, содержащая группу разделов. Только для чтения.|
+|parentSectionGroup|[sectionGroup](sectiongroup.md)|Группа разделов, содержащая группу разделов. Только для чтения.|
+|sectionGroups|[sectionGroup](sectiongroup.md) семейства сайтов|Группы разделов в разделе. Только для чтения. Допускает значение null.|
+|sections|[onenoteSection](section.md) коллекции|Разделы в группе разделов. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 

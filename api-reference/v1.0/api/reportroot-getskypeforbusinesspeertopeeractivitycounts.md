@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessPeerToPeerActivityCounts'
 description: Отслеживайте динамику использования по количеству и типу проведенных в организации сеансов (обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям и передача файлов).
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c1efbb6b152004d6aec7112ef7d3941e3bcdc89d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 39941a8f0bcf93be838eb1d20a7e21b2133f87a5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940535"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577265"
 ---
 # <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a>reportRoot: getSkypeForBusinessPeerToPeerActivityCounts
 
@@ -34,7 +35,7 @@ ms.locfileid: "27940535"
 GET /reports/getSkypeForBusinessPeerToPeerActivityCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите следующий параметр и действительное значение.
 
@@ -84,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSkypeForBusinessPeerToPeerActivi
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

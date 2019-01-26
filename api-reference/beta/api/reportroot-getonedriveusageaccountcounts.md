@@ -3,12 +3,13 @@ title: 'reportRoot: getOneDriveUsageAccountCounts'
 description: Отслеживайте, как меняется количество активных сайтов OneDrive для бизнеса. Активным считается сайт, на котором пользователи просматривали, изменяли, добавляли, скачивали, отправляли или синхронизировали файлы.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f6fae6f8ab5e94c0ee89a0ee3b88a216d1f0c6c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 76b489a4ceb1fb721ec7ebb4d8892e6e11fc53d2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529602"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576460"
 ---
 # <a name="reportroot-getonedriveusageaccountcounts"></a>reportRoot: getOneDriveUsageAccountCounts
 
@@ -52,7 +53,7 @@ GET /reports/getOneDriveUsageAccountCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -92,9 +93,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -136,7 +137,7 @@ Report Refresh Date,Site Type,Total,Active,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getOneDriveUsageAccountCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

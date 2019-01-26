@@ -4,12 +4,12 @@ description: Представляет форматирование заливк�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ca968737007e5c1dfc223a45d2c2aeb3a0d12c3e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17c123a3fb8c1fe2f2dd6f09b1fda3695bad0404
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520237"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577139"
 ---
 # <a name="chartfill-resource-type"></a>Тип ресурса ChartFill
 
@@ -30,6 +30,21 @@ ms.locfileid: "29520237"
 
 ## <a name="relationships"></a>Связи
 Нет
+
+
+## <a name="json-representation"></a>Представление JSON
+
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbookChartFill"
+}-->
+
+```json
+{
+}
+```
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

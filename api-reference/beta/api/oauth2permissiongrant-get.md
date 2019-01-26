@@ -2,12 +2,12 @@
 title: Получение oAuth2Permissiongrant
 description: Извлечение свойств и связи объекта oAuth2Permissiongrant.
 localization_priority: Normal
-ms.openlocfilehash: 2b389e7f811444b9dc9fb1d9c2f619006611e11e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17719e175e29bbc7167fd295fb982a37f22ada52
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518046"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576698"
 ---
 # <a name="get-oauth2permissiongrant"></a>Получение oAuth2Permissiongrant
 
@@ -43,7 +43,7 @@ GET /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` объект [oAuth2Permissiongrant](../resources/oauth2permissiongrant.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
@@ -56,13 +56,13 @@ GET /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ```http
 GET https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
+  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
 } -->
 ```http
 HTTP/1.1 200 OK

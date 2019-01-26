@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1912cc6ea38eef71d8ecade964b976725b91b5d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ce8b7d9518df01ec04b1191a9784ea015e83c7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515015"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576145"
 ---
 # <a name="get-chartaxistitle"></a>Получение объекта ChartAxisTitle
 
@@ -46,7 +46,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartAxisTitle](../resources/chartaxistitle.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChartAxisTitle](../resources/chartaxistitle.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -57,13 +57,13 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

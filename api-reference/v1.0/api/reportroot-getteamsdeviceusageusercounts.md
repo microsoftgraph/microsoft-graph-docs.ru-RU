@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsDeviceUsageUserCounts'
 description: Получение сведений о количестве уникальных пользователей Microsoft Teams в день с сортировкой по типам устройств.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 9cb1756494b2882163e7912ccd0c5657f8966adf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 2fe75e1842d6b735a07fa014d778978e1b3d2c92
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921313"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577069"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -32,7 +33,7 @@ ms.locfileid: "27921313"
 GET /reports/getTeamsDeviceUsageUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите следующий параметр и действительное значение.
 
@@ -46,7 +47,7 @@ GET /reports/getTeamsDeviceUsageUserCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета. Этот URL-адрес можно найти в заголовке `Location` отклика.
 
@@ -79,9 +80,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getTeamsDeviceUsageUserCounts(period='D7')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

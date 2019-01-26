@@ -4,12 +4,12 @@ description: Стек мультимедиа, размещенных в прил
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2545d02301233dbe1657d94ec3cf4f953a43531b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511088"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575774"
 ---
 # <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса appHostedMediaConfig
 
@@ -21,8 +21,8 @@ ms.locfileid: "29511088"
 
 | Свойство                          | Тип    | Описание                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| blob()                              | String  | Blob конфигурации мультимедиа, созданные агентом смарт-мультимедиа.    |
-| removeFromDefaultAudioGroup       | Логическое | Удаление звук из группы по умолчанию звука                       |
+| BLOB-объектов                              | Строка  | Blob конфигурации мультимедиа, созданные агентом смарт-мультимедиа.    |
+| removeFromDefaultAudioGroup       | Boolean | Удаление звук из группы по умолчанию звука                       |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,6 +33,7 @@ ms.locfileid: "29511088"
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.appHostedMediaConfig"
 }-->
 ```json

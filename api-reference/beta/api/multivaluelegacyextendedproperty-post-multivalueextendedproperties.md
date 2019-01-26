@@ -2,12 +2,12 @@
 title: Создание многозначного расширенного свойства
 description: 'Создание одного или нескольких многозначных расширенных свойств в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
-ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4ed9af6fda2117fee7ef1ac50c69c4f006abd45d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510871"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576264"
 ---
 # <a name="create-multi-value-extended-property"></a>Создание многозначного расширенного свойства
 
@@ -23,7 +23,7 @@ ms.locfileid: "29510871"
 - [event](../resources/event.md)
 - [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
-- [Задача Outlook](../resources/outlooktask.md)
+- [Задачи Outlook](../resources/outlooktask.md)
 - [Папки задач Outlook](../resources/outlooktaskfolder.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
@@ -48,7 +48,7 @@ ms.locfileid: "29510871"
 | [post](../resources/post.md) для групп. | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
-| [Задача Outlook](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
+| [Задачи Outlook](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [Папки задач Outlook](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -148,17 +148,17 @@ PATCH /groups/{id}/events/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Предоставьте тело в формате JSON для каждого объекта [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) в свойстве коллекции **multiValueExtendedProperties** для экземпляра ресурса.
+Предоставление текста JSON каждого объекта [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) в свойства коллекции **multiValueLegacyExtendedProperty** экземпляра ресурса.
 
 |**Свойство**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Массив из одного или нескольких многозначных расширенных свойств. |
-|id|String|Чтобы идентифицировать свойства в коллекции **multiValueExtendedProperties**, укажите этот параметр для каждого из них. Свойство должно относиться к одному из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
-|значение|строка|Укажите значение для каждого свойства в коллекции **multiValueExtendedProperties**. Обязательный параметр.|
+|multiValueLegacyExtendedProperty|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Массив из одного или нескольких многозначных расширенных свойств. |
+|id|Строка|Для каждого свойства в коллекции **multiValueLegacyExtendedProperty** укажите это для идентификации свойство. Его необходимо выполнить один из поддерживаемых форматов. Для получения дополнительных сведений в разделе [Общие сведения о свойствах расширенные Outlook](../resources/extended-properties-overview.md) . Обязательный.|
+|value|строка|Для каждого свойства в коллекции **multiValueLegacyExtendedProperty** укажите значение свойства. Обязательный.|
 
-При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **multiValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.
+При создании расширенных свойств в _новый_ экземпляр ресурсов, в дополнение к новой коллекции **multiValueLegacyExtendedProperty** , для представления JSON этого экземпляра ресурсов (то есть, [сообщения](../resources/message.md), [mailFolder](../resources/mailfolder.md) [событие](../resources/event.md), и т.д.)
 
 ## <a name="response"></a>Отклик
 
@@ -178,7 +178,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
 
-В первом примере в новом экземпляре event создается многозначное расширенное свойство с помощью одной операции POST. Помимо свойств, которые обычно указываются для нового события, тело запроса включает коллекцию **multiValueExtendedProperties**, которая содержит одно расширенное свойство. Тело запроса включает следующие данные для многозначного расширенного свойства:
+В первом примере создается Многозначный расширенные свойства в новое событие в одной и той же операции POST. За исключением свойства, которое обычно содержит новые события текст запроса включает в себя коллекцию **multiValueLegacyExtendedProperty** , которая содержит один расширенных свойств. Текст запроса включает в себя следующие параметры для многозначного свойства расширенного:
 
 - **id**. Задает свойство в виде массива строк с заданным идентификатором GUID и именем `Recreation`. 
 - **value**. Задает `Recreation` в виде массива из 3 строковых значений, `["Food", "Hiking", "Swimming"]`.
@@ -219,7 +219,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "multiValueExtendedProperties": [
+  "multiValueLegacyExtendedProperty": [
      {
            "id":"StringArray {66f5a359-4659-4830-9070-00050ec6ac6e} Name Recreation",
            "value": ["Food", "Hiking", "Swimming"]
@@ -239,7 +239,7 @@ Content-Type: application/json
 
 ##### <a name="request-2"></a>Запрос 2
 
-Во втором примере создается многозначное расширенное свойство для указанного сообщения. Это расширенное свойство — единственный элемент в коллекции **multiValueExtendedProperties**. Тело запроса включает следующие данные для расширенного свойства:
+Во втором примере создает один Многозначный расширенные свойства для указанного сообщения. Расширенные свойства это единственный элемент коллекции **multiValueLegacyExtendedProperty** . Текст запроса включает в себя следующие параметры для расширенного свойства:
 
 - **id**. Задает свойство в виде массива строк с указанным идентификатором GUID и именем `Palette`.
 - **value**. Задает `Palette` в виде массива 3 строковых значений, `["Green", "Aqua", "Blue"]`.
@@ -251,7 +251,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_as77AACHsLrBBBA='
 Content-Type: application/json
 
 {
-  "multiValueExtendedProperties": [
+  "multiValueLegacyExtendedProperty": [
       {
          "id":"StringArray {66f5a359-4659-4830-9070-00049ec6ac6e} Name Palette",
          "value":["Green", "Aqua", "Blue"]

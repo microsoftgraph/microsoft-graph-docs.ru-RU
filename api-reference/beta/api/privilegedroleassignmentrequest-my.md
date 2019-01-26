@@ -2,12 +2,12 @@
 title: 'privilegedRoleAssignmentRequest: Мой'
 description: Получите запросы назначений привилегированной роль инициатора.
 localization_priority: Normal
-ms.openlocfilehash: 79545b5ea0ad88c55d7a09eb5c77982e812721eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2107256f9ead89950ba23bec49a81839347f7b7e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508869"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577370"
 ---
 # <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: Мой
 
@@ -40,7 +40,7 @@ POST /privilegedRoleAssignmentRequests/my
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` кода и [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) коллекции объект ответа в теле ответа.
 
 ## <a name="example"></a>Пример
@@ -48,13 +48,13 @@ POST /privilegedRoleAssignmentRequests/my
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "privilegedroleassignmentrequest_my)"
+  "name": "privilegedroleassignmentrequest_my"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/my
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -77,7 +77,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "e13ef8a0-c1cb-4d03-aaae-9cd1c8ede2d1",
-         "userId": "Self"，
+         "userId": "Self",
          "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",
@@ -101,7 +101,7 @@ Content-length: 304
             "duration" : null
         },
         "id": "03ea0c3d-90a0-42d4-b220-11c049c506fb",
-        "userId": "Self"，
+        "userId": "Self",
         "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b",
         "evaluateOnly": false,
         "type": "UserAdd",

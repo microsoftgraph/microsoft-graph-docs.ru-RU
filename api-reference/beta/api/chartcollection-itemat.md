@@ -4,12 +4,12 @@ description: Возвращает диаграмму на основании с�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 82e5d79ee4498a5b5b4e2fc2adc0461aec13cae4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 089977be0993f8ed5930b5a29c3b5ee880c6bc34
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521714"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575942"
 ---
 # <a name="chartcollection-itemat"></a>ChartCollection: ItemAt
 
@@ -42,11 +42,11 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|index|число|Значение индекса получаемого объекта. Используется нулевой индекс.|
+|index|Int32|Значение индекса получаемого объекта. Используется нулевой индекс.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [Chart](../resources/chart.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChart](../resources/chart.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -54,7 +54,10 @@ POST /workbook/worksheets/{id|name}/charts/ItemAt
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "chartcollection_itemat"
+  "isComposable": true,
+  "name": "chartcollection_itemat",
+  "idempotent": true,
+  "@type": "requestBodyResourceFor.chartcollection_itemat"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/ItemAt
@@ -62,18 +65,17 @@ Content-type: application/json
 Content-length: 20
 
 {
-  "index": {
-  }
+  "index": 8
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

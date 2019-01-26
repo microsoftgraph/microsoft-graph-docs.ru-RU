@@ -3,12 +3,13 @@ title: Отчеты об использовании устройств с Yammer
 description: Отчеты об использовании устройств с Yammer содержат сведения о том, какие устройства с Yammer есть у пользователей. Вы можете просматривать сведения о количестве пользователей за указанный период с разбивкой по типам устройств и по пользователям.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: f5b24d6d235a8719f5f4b7df0389b5e5971dd8cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 57dcba3a91b15b4980d9e76b7aad6251008f5966
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521868"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577433"
 ---
 # <a name="yammer-device-usage-reports"></a>Отчеты об использовании устройств с Yammer
 
@@ -24,7 +25,7 @@ ms.locfileid: "29521868"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getyammerdeviceusageuserdetail.md) | Stream          | [yammerDeviceUsageUserDetail](../resources/yammerdeviceusageuserdetail.md) | Получение сведений об использовании устройств с Yammer с разбивкой по пользователям. |
 | [Получение количества пользователей с разбивкой по устройствам](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream          | [yammerDeviceUsageDistributionUserCounts](../resources/yammerdeviceusagedistributionusercounts.md) | Получение сведений о количестве пользователей с разбивкой по типам устройств.  |
-| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Поток          | [yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md) | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |
+| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Stream          | [yammerDeviceUsageUserCounts](../resources/yammerdeviceusageusercounts.md) | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |
 <!--
 {
   "type": "#page.annotation",

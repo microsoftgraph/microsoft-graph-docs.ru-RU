@@ -3,12 +3,13 @@ title: Отчеты о работе со Skype для бизнеса
 description: Можно получить подробные сведения об активности внутри организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: a81e27d58316cb415d6296b4f77519a3f2125643
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 3f843efc6834ee59872e7bf750174558cdb0a103
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512397"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577384"
 ---
 # <a name="skype-for-business-activity-reports"></a>Отчеты о работе со Skype для бизнеса
 
@@ -24,7 +25,7 @@ ms.locfileid: "29512397"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getskypeforbusinessactivityuserdetail.md) | Stream          | [skypeForBusinessActivityUserDetail](../resources/skypeforbusinessactivityuserdetail.md) | Получите сведения о действиях пользователей в Skype для бизнеса. |
 | [Получение количества действий](../api/reportroot-getskypeforbusinessactivitycounts.md) | Stream          | [skypeForBusinessActivityCounts](../resources/skypeforbusinessactivitycounts.md) | Узнайте, как меняется количество организаторов и участников сеансов конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
-| [Получение количества пользователей](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Поток          | [skypeForBusinessActivityUserCounts](../resources/skypeforbusinessactivityusercounts.md) | Отследите, как меняется количество уникальных организаторов и участников сеансов конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
+| [Получение количества пользователей](../api/reportroot-getskypeforbusinessactivityusercounts.md) | Stream          | [skypeForBusinessActivityUserCounts](../resources/skypeforbusinessactivityusercounts.md) | Отследите, как меняется количество уникальных организаторов и участников сеансов конференций, проводимых в вашей организации через Skype для бизнеса. Отчет также включает количество одноранговых сеансов. |
 <!--
 {
   "type": "#page.annotation",

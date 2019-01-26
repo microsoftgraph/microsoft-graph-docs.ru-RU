@@ -2,12 +2,12 @@
 title: Список политики, назначенные для приложения или участника-службы
 description: Получение объектов политики, назначенных для приложения или участника службы.
 localization_priority: Normal
-ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 417d59228aadd3c6a54c4634416fd577fce11f18
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518585"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575963"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Список политики, назначенные для приложения или участника-службы
 
@@ -40,7 +40,7 @@ GET /applications/{id}/policies
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` ответа кода и [политики](../resources/policy.md) объекты в теле ответа. В случае неудачи `4xx` будут возвращены с подробные сведения об ошибке.
 
@@ -54,7 +54,7 @@ GET /applications/{id}/policies
 GET https://graph.microsoft.com/beta/applications/{id}/policies
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 
@@ -71,7 +71,7 @@ Content-Type: application/json
             "alternativeIdentifier":null,
             "definition":["policy-definition"],
             "displayName":"name-value",
-            "isOrganizationDefault":boolean-value,
+            "isOrganizationDefault": true | false,
             "keyCredentials":[key-credentials],
             "type":"type-value"
         }

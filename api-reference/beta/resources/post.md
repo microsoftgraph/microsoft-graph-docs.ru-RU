@@ -4,12 +4,12 @@ description: Представляет элемент отдельных post в 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 554892bdfed45d0fba9b90a084db67c0bb329486
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 007eb540ef4a4f99742a745dcf257f2cd39d5ef9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519957"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576915"
 ---
 # <a name="post-resource-type"></a>Тип ресурса Post
 
@@ -36,8 +36,8 @@ ms.locfileid: "29519957"
     "attachments",
     "extensions",
     "inReplyTo",
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties"
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.post"
 }-->
@@ -66,14 +66,14 @@ ms.locfileid: "29519957"
 |:---------------|:--------|:----------|
 |Основной текст|[itemBody](itembody.md)|Содержимое публикации. Это свойство используется по умолчанию. Это свойство может иметь значение null.|
 |categories|Коллекция строк|Категории, сопоставленные с публикацией. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , который был задан для пользователя.|
-|changeKey|String|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
-|conversationId|String|Уникальный идентификатор беседы. Только для чтения.|
-|conversationThreadId|String|Уникальный идентификатор цепочки беседы. Только для чтения.|
+|changeKey|Строка|Указывает версию публикации. При каждом изменении публикации также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
+|conversationId|Строка|Уникальный идентификатор беседы. Только для чтения.|
+|conversationThreadId|Строка|Уникальный идентификатор цепочки беседы. Только для чтения.|
 |createdDateTime|DateTimeOffset|Указывает, когда была создана публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |from|[recipient](recipient.md)|Используется в сценариях делегированного доступа. Указывает, кто опубликовал сообщение от имени другого пользователя. Это свойство используется по умолчанию.|
-|hasAttachments|Логическое|Указывает, есть ли в публикации хотя бы одно вложение. Это свойство используется по умолчанию.|
-|id|String| Только для чтения.|
-|importance | String | Важность post группа: `low`, `normal`, `high`. |
+|hasAttachments|Логический|Указывает, есть ли в публикации хотя бы одно вложение. Это свойство используется по умолчанию.|
+|id|Строка| Только для чтения.|
+|importance | Строка | Важность post группа: `low`, `normal`, `high`. |
 |lastModifiedDateTime|DateTimeOffset|Указывает дату и время последнего изменения публикации. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |newParticipants|Коллекция объектов [recipient](recipient.md)|Участники беседы, которые были добавлены в цепочку в рамках этой публикации.|
 |receivedDateTime|DateTimeOffset|Указывает, когда была получена публикация. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -85,8 +85,8 @@ ms.locfileid: "29519957"
 |attachments|Коллекция объектов [attachment](attachment.md)|Коллекция [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) вложений для post. Только для чтения. Допускается значение null.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для публикации. Только для чтения. Допускается значение null.|
 |inReplyTo|[Post](post.md)|Более ранних post, эта публикация — это ответ на приглашение в [conversationThread](conversationthread.md). Только для чтения.|
-|multiValueExtendedProperties|Коллекция объектов [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция объектов [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|
+|multiValueLegacyExtendedProperty|Коллекция объектов [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для публикации. Только для чтения. Допускается значение null.|
+|singleValueLegacyExtendedProperty|Коллекция объектов [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для публикации. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 

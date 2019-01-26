@@ -4,12 +4,12 @@ description: Получение списка scopedRoleMembership ресурсо
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 4254723a4902772cf45b1af024058a32192bc8fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06ed1a4f06b3d348e81039b5701f5adff9e3b85b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521042"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576138"
 ---
 # <a name="list-scopedrolemembers"></a>Список scopedRoleMembers
 
@@ -42,7 +42,7 @@ GET /administrativeUnits/{id}/scopedRoleMembers
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [scopedRoleMembership](../resources/scopedrolemembership.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -55,13 +55,13 @@ GET /administrativeUnits/{id}/scopedRoleMembers
 ```http
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/scopedRoleMembers
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedrolemembership",
+  "@odata.type": "microsoft.graph.scopedRoleMembership",
   "isCollection": true
 } -->
 ```http

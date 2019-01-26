@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 245e64d5182b4807ffe435026aefe75cf9a672eb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e9e62cbed37e150737e2b26def90000309d4e346
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530127"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577307"
 ---
 # <a name="get-chartdatalabels"></a>Получение объекта ChartDataLabels
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartDataLabels](../resources/chartdatalabels.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChartDataLabels](../resources/chartdatalabels.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,13 +55,13 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/datalabels
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

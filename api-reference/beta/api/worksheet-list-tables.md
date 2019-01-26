@@ -4,12 +4,12 @@ description: Получение списка объектов таблиц.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 417a1118bbfc7ea1fd1b35edacd9cbd3aa05b942
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c285c44ad8cdefe1647649dec55fb7ee6f500ad9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529973"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576173"
 ---
 # <a name="list-tables"></a>Список таблиц
 
@@ -44,7 +44,7 @@ GET /workbook/worksheets/{id|name}/tables
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Table](../resources/table.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [workbookTable](../resources/table.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,13 +55,13 @@ GET /workbook/worksheets/{id|name}/tables
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/tables
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table",
+  "@odata.type": "microsoft.graph.workbookTable",
   "isCollection": true
 } -->
 ```http

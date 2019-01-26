@@ -2,12 +2,12 @@
 title: Тип ресурса multiValueLegacyExtendedProperty
 description: Расширенное свойство, содержащее коллекцию значений.
 localization_priority: Normal
-ms.openlocfilehash: 86ba1969e06dc549d1fca00148cbea96f94cf4b6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: de77f94076fe6bb2f0aa3ded3b1839b8d25ce752
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512950"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575893"
 ---
 # <a name="multivaluelegacyextendedproperty-resource-type"></a>Тип ресурса multiValueLegacyExtendedProperty
 
@@ -21,7 +21,7 @@ ms.locfileid: "29512950"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Поддерживаемые ресурсов экземпляра: [сообщения](../resources/message.md), [mailFolder](../resources/mailfolder.md), [события](../resources/event.md), [календаря](../resources/calendar.md), [контактов](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [задачи Outlook](../resources/outlooktask.md)или [папки задач Outlook](../resources/outlooktaskfolder.md). Обратите внимание, что, группа [записи](../resources/post.md) не поддерживается. | Создание объекта multiValueLegacyExtendedProperty в новом или существующем экземпляре поддерживаемого ресурса. |
+|[Post](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | Поддерживаемые ресурсов экземпляра: [сообщения](../resources/message.md), [mailFolder](../resources/mailfolder.md), [события](../resources/event.md), [календаря](../resources/calendar.md), [контактов](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [задачи Outlook](../resources/outlooktask.md)или [папки задач Outlook](../resources/outlooktaskfolder.md). Обратите внимание, что, группа [записи](../resources/post.md) не поддерживается. | Создание объекта **multiValueLegacyExtendedProperty** в новом или существующем экземпляре поддерживаемого ресурса. |
 |[Get](../api/multivaluelegacyextendedproperty-get.md) |Экземпляр поддерживаемые ресурсов ([сообщение](../resources/message.md), [mailFolder](../resources/mailfolder.md), [события](../resources/event.md), [календаря](../resources/calendar.md), [контактов](../resources/contact.md), [contactFolder](../resources/contactfolder.md), [задачи Outlook](../resources/outlooktask.md), [папки задач Outlook](../resources/outlooktaskfolder.md)или группа [учета](../resources/post.md)), включающим [ multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) объекта. |Получение экземпляра ресурса с расширенным свойством с помощью параметра `$expand`.|
 
 ## <a name="properties"></a>Свойства
@@ -43,7 +43,7 @@ ms.locfileid: "29512950"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.multivaluelegacyextendedproperty"
+  "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"
 }-->
 
 ```json

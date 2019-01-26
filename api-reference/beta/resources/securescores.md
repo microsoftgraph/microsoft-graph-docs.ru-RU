@@ -2,12 +2,12 @@
 title: Тип ресурса secureScores
 description: 'в начало = n, где n — число дней данных, которую необходимо получить. '
 localization_priority: Normal
-ms.openlocfilehash: 8b4be9822b782303efe38dbdf5bd43e1ee543421
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fef5c43130aecf1604677d07f785a0cee0539568
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528664"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576082"
 ---
 # <a name="securescores-resource-type"></a>Тип ресурса secureScores
 
@@ -28,9 +28,9 @@ ms.locfileid: "29528664"
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|   azureTenantId   |   String  |   Идентификатор GUID строки для клиента.  |
+|   azureTenantId   |   Строка  |   Идентификатор GUID строки для клиента.  |
 |   createdDateTime |   DateTimeOffset  |   Дата создания объекта.  |
-|   id  |   String  |   Сочетание azureTenantId_createdDateTime.   |
+|   id  |   Строка  |   Сочетание azureTenantId_createdDateTime.   |
 |   licensedUserCount   |   Int32   |   Число пользователей данного клиента с корпоративным лицензированием.    |
 |   activeUserCount |   Int32   |   Число активных пользователей указанного клиента.  |
 |   currentScore    |   Double  |   Оценка текущего обновления клиента на указанной даты.    |
@@ -38,9 +38,9 @@ ms.locfileid: "29528664"
 |   enabledServices |   Коллекция String   |   Службы Майкрософт для клиента (например, Exchange online, Скайп, Sharepoint).   |
 |   averageComparativeScores |  [averageComparativeScore](averagecomparativescore.md) коллекции    |Средняя оценка по различные области (например, среднее число разных отраслей, среднее, число) и элемент управления категории (удостоверения, данные, устройства, приложения, инфраструктуры) в области действия. |
 |   controlScores | [controlScore](controlscore.md) коллекции  |   Содержит показателям клиента для набора элементов управления.   |
+|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | Содержит сведения о безопасности продуктов и услуг поставщика, поставщик и subprovider (например, поставщика = корпорации Майкрософт; поставщика = ATP Защитник Windows; subProvider = AppLocker).|
 
-
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Отсутствуют.
 
@@ -53,24 +53,23 @@ ms.locfileid: "29528664"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScores"
+  "@odata.type": "microsoft.graph.secureScore"
 }-->
 
 ```json
 {
-"id": "String",
-"azureTenantId": "Guid",
-"createdDate": "DateTimeOffset",
-"licensedUserCount": "Int32",
-"activeUserCount": "Int32",
-"currentScore": "Int32",
-"maxScore": "Int32",
-"averageScore": "Double",
-"enabledServices": "Collection(string)",
-"averageComparativeScores": "Collection(microsoft.graph.SecureScore.averageComparativeScores)",
-"controlScores": "Collection(microsoft.graph.SecureScore.controlScores)",
+    "id": "String",
+    "azureTenantId": "String (identifier)",
+    "createdDateTime": "DateTimeOffset",
+    "licensedUserCount": "Int32",
+    "activeUserCount": "Int32",
+    "currentScore": "Double",
+    "maxScore": "Double",    
+    "enabledServices": ["String"],
+    "averageComparativeScores": [{ "@odata.type":"microsoft.graph.averageComparativeScores"}],
+    "controlScores": [{"@odata.type":"microsoft.graph.controlScores"}],
+    "vendorInformation" : "microsoft.graph.securityVendorInformation"
 }
-
 ```
 
 

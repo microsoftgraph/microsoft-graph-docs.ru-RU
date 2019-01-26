@@ -3,12 +3,13 @@ title: 'reportRoot: getYammerGroupsActivityGroupCounts'
 description: Узнайте, сколько всего существовало групп и в скольких из них выполнялись действия с беседами.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d6851daeceb437bc8c80bdebc23f0b1de8106bd7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 74666e660270e0f43aca21158991fe092a87534f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529595"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577440"
 ---
 # <a name="reportroot-getyammergroupsactivitygroupcounts"></a>reportRoot: getYammerGroupsActivityGroupCounts
 
@@ -52,7 +53,7 @@ GET /reports/getYammerGroupsActivityGroupCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -91,9 +92,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityGroupCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -135,7 +136,7 @@ Report Refresh Date,Total,Active,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getYammerGroupsActivityGroupCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

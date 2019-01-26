@@ -4,12 +4,12 @@ description: Ознакомьтесь со списком прямое член�
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: f1643aa759926cd466d121d1c20ec1ae40bbc7cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 07004a315bc2b35777c080f7bbdbab8f433f0942
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509247"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577454"
 ---
 # <a name="list-group-members"></a>Список членов группы
 
@@ -46,7 +46,7 @@ GET /groups/{id}/members
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -60,7 +60,7 @@ GET /groups/{id}/members
 GET https://graph.microsoft.com/beta/groups/{id}/members
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -75,8 +75,9 @@ Content-type: application/json
 
 {
   "value": [
-    "@odata.type": "#microsoft.graph.user",
     {
+    "@odata.type": "#microsoft.graph.user",
+    
       "businessPhones": [
         "businessPhones-value"
       ],

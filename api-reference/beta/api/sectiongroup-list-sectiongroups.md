@@ -4,12 +4,12 @@ description: Получение списка групп разделов из у
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: df313533154862017e0cb2dc96a5a75d83ba27ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6f774699398f7df3c56f09fd8469510a5d10cbe5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522338"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576131"
 ---
 # <a name="list-sectiongroups"></a>Перечисление sectionGroups
 
@@ -44,7 +44,7 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Accept | string | `application/json` |
+| Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
@@ -62,12 +62,12 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup",
+  "@odata.type": "microsoft.graph.sectionGroup",
   "isCollection": true
 } -->
 ```http

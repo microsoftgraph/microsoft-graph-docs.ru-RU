@@ -3,12 +3,13 @@ title: 'reportRoot: getSkypeForBusinessActivityUserDetail'
 description: Получите сведения о действиях пользователей в Skype для бизнеса.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 50f364bf13d8d7f11bfa5ea7c676ef96596bfb53
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 45b6eec0ac5d9d8523999fae763acb653bfd3a56
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508799"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575456"
 ---
 # <a name="reportroot-getskypeforbusinessactivityuserdetail"></a>reportRoot: getSkypeForBusinessActivityUserDetail
 
@@ -56,7 +57,7 @@ GET /reports/getSkypeForBusinessActivityUserDetail(date={date_value})
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -127,9 +128,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityUserDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -171,7 +172,7 @@ Report Refresh Date,User Principal Name,Is Deleted,Deleted Date,Last Activity Da
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessActivityUserDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

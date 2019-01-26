@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 89022d8468f842753a4b74ace2f802f4ee23ad09
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 901a6ff0d8305f0ef8b7eb92aab0d0eea6c40e6e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516086"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576705"
 ---
 # <a name="create-chartseries"></a>Создание объекта ChartSeries
 
@@ -60,14 +60,14 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-Предоставьте в тексте запроса описание объекта [ChartSeries](../resources/chartseries.md) в формате JSON.
-##### <a name="response"></a>Ответ
+В тексте запроса укажите представление объекта [ChartSeries ряд](../resources/chartseries.md) с JSON.
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 201 Created

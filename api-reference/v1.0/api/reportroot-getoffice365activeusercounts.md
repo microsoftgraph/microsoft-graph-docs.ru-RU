@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: Получение количества активных пользователей за каждый день отчетного периода по продукту.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 3469cbcf2dee789ca848f88d43d8eb3ff640f9c7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 287e6656b3f505e96bf91bfa614ab2fa37c744d1
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980036"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577503"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -34,7 +35,7 @@ ms.locfileid: "27980036"
 GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите следующий параметр и действительное значение.
 
@@ -48,7 +49,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета. Этот URL-адрес можно найти в заголовке `Location` отклика.
 
@@ -83,9 +84,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActiveUserCounts(period='D7')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

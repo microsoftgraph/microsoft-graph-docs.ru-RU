@@ -4,12 +4,12 @@ description: Сложный тип, содержащий свойства исп
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 4df15bf635785aba054d52beb89b5ac04d48d3d3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 04e064d5ebf8599466218722d89f46ececc5e58c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526832"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577489"
 ---
 # <a name="usagedetails-resource-type"></a>Тип ресурса usageDetails
 
@@ -20,7 +20,13 @@ ms.locfileid: "29526832"
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.usageDetails"
+}-->
 ```json
 {
   "lastAccessedDateTime": "DateTimeOffset",

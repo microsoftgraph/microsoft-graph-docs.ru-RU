@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageMailboxCounts'
 description: Узнайте, сколько всего почтовых ящиков в организации и сколько из них были активный в отчетный период. Почтовый ящик считается активным, если пользователь отправил или прочитал по крайней мере одно письмо.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 8d9e99de7a69d62dd7ab24e6cefee9a7c35044f7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 851eb456d9a8b099251f3937f9993b2150ffb594
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528986"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575970"
 ---
 # <a name="reportroot-getmailboxusagemailboxcounts"></a>reportRoot: getMailboxUsageMailboxCounts
 
@@ -52,7 +53,7 @@ GET /reports/getMailboxUsageMailboxCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -91,9 +92,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -135,7 +136,7 @@ Report Refresh Date,Total,Active,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

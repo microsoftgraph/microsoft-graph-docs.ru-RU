@@ -4,12 +4,12 @@ description: Обновление свойств объекта chartlineformat.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a75e93fd43d476f983da6aed8102675e0e8f5350
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 654dc4be9f0e2463100a6b61ac7bfe646a4ceb11
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529623"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576229"
 ---
 # <a name="update-chartlineformat"></a>Обновление объекта ChartLineFormat
 
@@ -47,7 +47,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/seriesaxis/majorgridlin
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartLineFormat](../resources/chartlineformat.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [workbookChartLineFormat](../resources/chartlineformat.md) объект в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -64,13 +64,13 @@ Content-length: 28
   "color": "color-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartLineFormat"
+  "@odata.type": "microsoft.graph.workbookChartLineFormat"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 67f34a0310fcfd0ba6641eeecbbb8c3e6fc2a05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f88a7e931aa1d3b0991c4e749268ca70ea32082e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528594"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577013"
 ---
 # <a name="create-table"></a>Создание таблицы
 
@@ -47,7 +47,7 @@ POST /workbook/tables/$/add
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код ответа `201 Created` и объект [Table](../resources/table.md) в тексте ответа.
+Успешно завершена, этот метод возвращает `201 Created` объект [workbookTable](../resources/table.md) и кода ответа в теле ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -66,13 +66,13 @@ Content-length: 109
   "hasHeaders": false
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.table"
+  "@odata.type": "microsoft.graph.workbookTable"
 } -->
 ```http
 HTTP/1.1 201 Created

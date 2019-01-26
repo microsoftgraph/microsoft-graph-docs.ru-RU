@@ -4,12 +4,12 @@ description: Состояние определенных длительных о
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5a82020741033f81d5a4394f2e32b3f0f76a6e03
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515750"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575648"
 ---
 # <a name="commsoperation-resource-type"></a>Тип ресурса commsOperation
 
@@ -24,14 +24,14 @@ ms.locfileid: "29515750"
 
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| ClientContext      | String                      | Контекст клиента.                                                             |
+| clientContext      | Строка                      | Контекст клиента.                                                             |
 | createdDateTime    | DateTimeOffset              | Время начала операции.                                                |
-| id                 | String                      | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
+| id                 | String (идентификатор)         | Идентификатор операции. Только для чтения. Сервер, созданный.                                  |
 | lastActionDateTime | DateTimeOffset              | Время последнего действия операции.                                   |
-| resultInfo         | [resultInfo](resultinfo.md) | Сведения о результатов. Только для чтения. Сервер, созданный.                            |
-| status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
+| errorInfo          | [resultInfo](resultinfo.md) | Сведения о результатов. Только для чтения. Сервер, созданный.                            |
+| status             | operationStatus             | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "29515750"
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.commsOperation"
 }-->
 ```json
@@ -51,8 +52,8 @@ ms.locfileid: "29515750"
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
-  "resultInfo": { "@odata.type": "#microsoft.graph.resultInfo" },
-  "status": "notStarted | running | completed | failed"
+  "errorInfo": { "@odata.type": "microsoft.graph.resultInfo" },
+  "status": "operationStatus"
 }
 ```
 
@@ -69,7 +70,7 @@ ms.locfileid: "29515750"
   "id": "ABB33D04-3A2C-4D78-996F-9EEEF55EF119",
   "lastActionDateTime": "2018-09-06T15:58:41Z",
   "resultInfo": {
-    "@odata.type": "#microsoft.graph.resultInfo",
+    "@odata.type": "microsoft.graph.resultInfo",
     "code": "200"
   },
   "status": "completed"

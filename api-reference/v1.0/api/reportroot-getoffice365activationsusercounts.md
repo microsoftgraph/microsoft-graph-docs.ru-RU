@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActivationsUserCounts'
 description: Получение числа пользователей, для которых включено и те, которые активации подписки Office на настольных ПК или устройства или на общедоступном компьютере.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 9b284793ba4031c9354e9134b81798e738410f38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 9a150911e9234cde7258acbeed7f825fb9db4c66
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921124"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576103"
 ---
 # <a name="reportroot-getoffice365activationsusercounts"></a>reportRoot: getOffice365ActivationsUserCounts
 
@@ -41,7 +42,7 @@ GET /reports/getOffice365ActivationsUserCounts
 | Авторизация | Bearer {токен}. Обязательный.                |
 | If-None-Match | Если этот заголовок запроса включен, а указанный eTag совпадает с текущим тегом файла, то будет возвращен код отклика `304 Not Modified`. Необязательный параметр. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета. Этот URL-адрес можно найти в заголовке `Location` отклика.
 
@@ -71,9 +72,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/v1.0/reports/getOffice365ActivationsUserCounts
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

@@ -2,12 +2,12 @@
 title: Тип ресурса scopedRoleMembership
 description: Членство в пределах роли описывает принадлежности пользователя к роли каталога, с дальнейшей областью действия, чтобы административные единицы (AU).  Это обеспечивает механизм, позволяющий adminsistrator клиента всей компании делегировать административные полномочия для пользователя для управления пользователями и группами в подмножества организации (подмножество, определяемым AU).
 localization_priority: Normal
-ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c3af7a44221c4cf2822440a6025706c8bd4a93ac
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521504"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575662"
 ---
 # <a name="scopedrolemembership-resource-type"></a>Тип ресурса scopedRoleMembership
 
@@ -26,7 +26,7 @@ ms.locfileid: "29521504"
 |roleId|string| Уникальный идентификатор для роли каталога, элемент.|
 |roleMemberInfo|[identity](identity.md)| Сведения о удостоверение члена роли. Представляет пользователя, который является членом этой области определения роли.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -39,7 +39,7 @@ ms.locfileid: "29521504"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedrolemembership"
+  "@odata.type": "microsoft.graph.scopedRoleMembership"
 }-->
 
 ```json

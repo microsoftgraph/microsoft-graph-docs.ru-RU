@@ -4,12 +4,12 @@ description: Получение списка объектов конечной �
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: d8bb01d00fbac03a2b52d95179ec22ca769f9df2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f6d5d1fc8578f390dce0fece668a851c47032a7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529833"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575858"
 ---
 # <a name="list-endpoints"></a>Перечисление конечных точек
 
@@ -43,7 +43,7 @@ GET /groups/{id}/endpoints
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [конечной точки](../resources/endpoint.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -61,7 +61,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/endpoints
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Endpoint",
+  "@odata.type": "microsoft.graph.endpoint",
   "isCollection": true
 } -->
 ```http

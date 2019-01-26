@@ -2,12 +2,12 @@
 title: Тип ресурса privilegedRoleSettings
 description: Представляет параметры для привилегированной роли.
 localization_priority: Normal
-ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 673327e3c83a4111eb469ca48550836433dbdf0a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525698"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577153"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Тип ресурса privilegedRoleSettings
 
@@ -25,19 +25,19 @@ ms.locfileid: "29525698"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ElevationDuration|duration|Длительность, при активации роли.|
-|id|string| Уникальный идентификатор для параметров роли. Только для чтения.|
+|elevationDuration| String (метка времени) |Длительность, при активации роли.|
+|id| String (идентификатор)| Уникальный идентификатор для параметров роли. Только для чтения.|
 |isMfaOnElevationConfigurable|boolean|**значение true,** Если mfaOnElevation может быть настроен. **значение false,** Если mfaOnElevation не настраивается.|
 |lastGlobalAdmin|boolean|Для внутреннего использования используется только.|
-|maxElavationDuration|duration|Максимальной длительности для активации роли.|
+|maxElavationDuration| String (идентификатор)| |Максимальной длительности для активации роли.|
 |mfaOnElevation|boolean|**значение true,** Если необходимо активировать роль многофакторной проверкой Подлинности. **значение false,** Если многофакторной проверкой Подлинности не требуется для включения роли.|
-|minElevationDuration|duration|Минимальная продолжительность активированные роли.|
+|minElevationDuration|String (идентификатор)||Минимальная продолжительность активированные роли.|
 |notificationToUserOnElevation|boolean|**значение true,** Если отправить уведомление конечному пользователю при активации роли. **значение false,** Если не отправлять уведомления при активации роли.|
 |ticketingInfoOnElevation|boolean|**значение true,** Если отдела сведения требуется при активации роли. **значение false,** Если отдела сведения не является обязательным, когда активировать роль.|
 |approvalOnElevation|boolean|**значение true,** Если требуется утверждение при активации роли. **значение false,** Если утверждение не является обязательным, когда активировать роль.|
-|approverIds|array|Список идентификаторов утверждения, если требуется для активации утверждение.|
+|approverIds| Коллекция String |Список идентификаторов утверждения, если требуется для активации утверждение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -65,7 +65,7 @@ ms.locfileid: "29525698"
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": [ "String (identifier)" ]
 }
 
 ```

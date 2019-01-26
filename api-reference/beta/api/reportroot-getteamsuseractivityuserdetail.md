@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsUserActivityUserDetail'
 description: Получение сведения о действиях отдельных пользователей Microsoft Teams.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: eb884bce47943da0f3f0a3047a65295353fa3252
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 7ca084fbae4ca7714a207364bdf0e9f525a39ff4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521539"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576418"
 ---
 # <a name="reportroot-getteamsuseractivityuserdetail"></a>reportRoot: getTeamsUserActivityUserDetail
 
@@ -54,7 +55,7 @@ GET /reports/getTeamsUserActivityUserDetail(date=2017-09-01)
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -102,9 +103,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -146,7 +147,7 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
 GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -2,12 +2,12 @@
 title: Обновление объекта NamedItem
 description: Обновление свойств объекта nameditem.
 localization_priority: Normal
-ms.openlocfilehash: ffb01e0998b3b94706e50ed461014fcfd11ce927
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b25657a6913a9fe56ce7068b9318fa7390f139f8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514049"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577496"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -44,7 +44,7 @@ PATCH /workbook/names(<name>)
 
 ## <a name="response"></a>Ответ
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [NamedItem](../resources/nameditem.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [workbookNamedItem](../resources/workbooknameditem.md) объект в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -72,7 +72,7 @@ Content-length: 87
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.namedItem"
+  "@odata.type": "microsoft.graph.workbookNamedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

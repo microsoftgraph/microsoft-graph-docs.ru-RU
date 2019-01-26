@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта se
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 2bacba09167724935123becbb5d8194385b5b215
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7b0f0b0ec19c64a6e703ce41d024b3112c354da7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515568"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575690"
 ---
 # <a name="get-sectiongroup"></a>Получение объекта sectionGroup
 
@@ -42,12 +42,12 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Accept | string | `application/json` |
+| Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [sectionGroup](../resources/sectiongroup.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -60,12 +60,12 @@ GET /sites/{id}/onenote/sectionGroups/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectiongroup"
+  "@odata.type": "microsoft.graph.sectionGroup"
 } -->
 ```http
 HTTP/1.1 200 OK

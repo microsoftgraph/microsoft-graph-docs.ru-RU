@@ -3,12 +3,13 @@ title: 'reportRoot: getMailboxUsageStorage'
 description: Узнайте, сколько места занято в хранилище организации.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 23a5de57ba9a57b7e35e7cc1760c0cb284c98000
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: cda3efc8993b0d4098aaedcc05dab8e73c4af9b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521700"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577167"
 ---
 # <a name="reportroot-getmailboxusagestorage"></a>reportRoot: getMailboxUsageStorage
 
@@ -52,7 +53,7 @@ GET /reports/getMailboxUsageStorage(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -90,9 +91,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -134,7 +135,7 @@ Report Refresh Date,Storage Used (Byte),Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

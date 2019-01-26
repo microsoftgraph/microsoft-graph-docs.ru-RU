@@ -4,12 +4,12 @@ description: 'Папка, содержащая задачи Outlook (колле�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eb61936b9ede67d35127db07c92ba8b7517fe623
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a117e14ea1cfe4b69cbbf69720a22a0094fb0b72
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515302"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575669"
 ---
 # <a name="outlooktaskfolder-resource-type"></a>Тип ресурса outlookTaskFolder
 
@@ -38,17 +38,17 @@ ms.locfileid: "29515302"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|changeKey|String|Версия папки задач.|
-|id|String|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
-|isDefaultFolder|Логическое|Значение true, если папка является папки задач по умолчанию.|
-|name|String|Имя папки задач.|
+|changeKey|Строка|Версия папки задач.|
+|id|Строка|Идентификатор папки задач, уникальные в почтовом ящике пользователя. Только для чтения.|
+|isDefaultFolder|Boolean|Значение true, если папка является папки задач по умолчанию.|
+|name|Строка|Имя папки задач.|
 |parentGroupKey|Guid|Уникальный идентификатор GUID для родительской папки задач группы.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция Многозначный расширенные свойства для папки задач. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенные свойства одно значение, определенное для папки задач. Только для чтения. Допускается значение null.|
+|multiValueLegacyExtendedProperty|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция Многозначный расширенные свойства для папки задач. Только для чтения. Допускается значение null.|
+|singleValueLegacyExtendedProperty|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенные свойства одно значение, определенное для папки задач. Только для чтения. Допускается значение null.|
 |tasks|[outlookTask](outlooktask.md) коллекции|Задачи в этой папке задач. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -57,8 +57,8 @@ ms.locfileid: "29515302"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "multiValueExtendedProperties",
-    "singleValueExtendedProperties",
+    "multiValueLegacyExtendedProperty",
+    "singleValueLegacyExtendedProperty",
     "tasks"
   ],
   "@odata.type": "microsoft.graph.outlookTaskFolder"

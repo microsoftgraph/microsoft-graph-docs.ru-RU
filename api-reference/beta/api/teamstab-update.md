@@ -4,12 +4,12 @@ description: Обновляет свойства указанной вкладк
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75166f403a197f0abc32d4bc9f79f43a905fea43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 031f6f91576df2b19382e78461e6a42e2274ae0c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529917"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576180"
 ---
 # <a name="update-tab"></a>Вкладка "обновления"
 
@@ -43,7 +43,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [вкладки](../resources/teamstab.md) .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -59,7 +59,7 @@ Content-length: 211
   "name": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
@@ -74,7 +74,7 @@ Content-type: application/json
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
-  "sortOrderIndex": 20,
+  "sortOrderIndex": "20",
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```

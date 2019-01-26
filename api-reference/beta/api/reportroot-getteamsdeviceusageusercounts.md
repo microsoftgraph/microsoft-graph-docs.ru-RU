@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsDeviceUsageUserCounts'
 description: Получение сведений о количестве уникальных пользователей Microsoft Teams в день с сортировкой по типам устройств.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: e2f12c626cd7a7aa36fbd3f2c33b2f1b520fb881
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 1b0100f1f7db4602e23ab5477fb9b9ed678d80fd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522520"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577363"
 ---
 # <a name="reportroot-getteamsdeviceusageusercounts"></a>reportRoot: getTeamsDeviceUsageUserCounts
 
@@ -50,7 +51,7 @@ GET /reports/getTeamsDeviceUsageUserCounts(period='D7')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -93,9 +94,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -137,7 +138,7 @@ Report Refresh Date,Web,Windows Phone,Android Phone,iOS,Mac,Windows,Report Date,
 GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта chartseries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 312c2a0a219cd1f88ede106f253c0c9019109253
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d00a3c56e70ebce30d5763e7db7e94669cf7bb7e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514581"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577244"
 ---
 # <a name="update-chartseries"></a>Обновление объекта ChartSeries
 
@@ -45,7 +45,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartSeries](../resources/chartseries.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [workbookChartSeries](../resources/chartseries.md) объект в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -62,13 +62,13 @@ Content-length: 26
   "name": "name-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries"
+  "@odata.type": "microsoft.graph.workbookChartSeries"
 } -->
 ```http
 HTTP/1.1 200 OK

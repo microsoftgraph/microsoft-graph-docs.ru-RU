@@ -4,12 +4,12 @@ description: Представляет коллекцию всех меток д�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bda2c1849f154435608f311671026e224b0c7e3c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f722dccd84d1861ff47e0aa073fe66f50372ad4f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510339"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576404"
 ---
 # <a name="chartdatalabels-resource-type"></a>Тип ресурса ChartDataLabels
 
@@ -22,13 +22,13 @@ ms.locfileid: "29510339"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|Получение объекта ChartDataLabels | [chartDataLabels](chartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
-|[Update](../api/chartdatalabels-update.md) | ChartDataLabels |Обновление объекта chartDataLabels. |
+|[Получение объекта ChartDataLabels](../api/chartdatalabels-get.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
+|[Update](../api/chartdatalabels-update.md) | [WorkbookChartDataLabels](chartdatalabels.md) |Обновление объекта chartDataLabels. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|position|string|DataLabelPosition значение, представляющее положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
 |разделитель|string|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
@@ -40,18 +40,17 @@ ms.locfileid: "29510339"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[ChartDataLabelFormat](chartdatalabelformat.md)|Представляет формат меток данных диаграммы, включая форматирование заливки и шрифтов. Только для чтения.|
+|format|[WorkbookChartDataLabelFormat](chartdatalabelformat.md)|Представляет формат меток данных диаграммы, включая форматирование заливки и шрифтов. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartDataLabels"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartDataLabels"
 }-->
 
 ```json

@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 10af5ceb844c165e453422f22e0f7f52a4b66112
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d62f81270c6da12e728b040019c7bca20159ddf0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511501"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576579"
 ---
 # <a name="get-charttitle"></a>Получение объекта ChartTitle
 
@@ -55,13 +55,13 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/title
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/title
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartTitle"
+  "@odata.type": "microsoft.graph.workbookChartTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

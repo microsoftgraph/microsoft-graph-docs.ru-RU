@@ -2,12 +2,12 @@
 title: Обновление governanceRoleAssignmentRequests
 description: Администраторы могли обновлять свои решения (`AdminApproved` или `AdminDenied`) на governanceRoleAssignmentRequests, находятся в состоянии `PendingAdminDecision`.
 localization_priority: Normal
-ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 01178492517ae0ce1e2ed011e749e54af8e5d805
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514616"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576530"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
@@ -42,11 +42,11 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|Причина        |String                 |✓        |Причины, предоставленный администратором для его решение.|
-|решение        |String                 |✓        |Администратор решение для запроса назначений ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied`.|
-|Расписание      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание для запроса назначений ролей. Состояние `AdminApproved`, это необходимо.|
-|assignmentState      |String|         | Состояние назначения и значения, может быть `Eligible` или `Active`. Для принятия решений о `AdminApproved`, это необходимо. |
-### <a name="response"></a>Ответ
+|Причина        |Строка                 |✓        |Причины, предоставленный администратором для его решение.|
+|решение        |Строка                 |✓        |Администратор решение для запроса назначений ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied`.|
+|расписание      |[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|        | Расписание для запроса назначений ролей. Состояние `AdminApproved`, это необходимо.|
+|assignmentState      |Строка|         | Состояние назначения и значения, может быть `Eligible` или `Active`. Для принятия решений о `AdminApproved`, это необходимо. |
+### <a name="response"></a>Отклик
 Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision`.
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
