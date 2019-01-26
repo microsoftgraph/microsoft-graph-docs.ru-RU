@@ -4,12 +4,12 @@ description: Очищает цвет заливки элемента диагр�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8edef56f24d09877265b510ae067b59f1eae923
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a053814b1be4fdee947d4d28911263b7e53d55d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530057"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573041"
 ---
 # <a name="chartfill-clear"></a>ChartFill: clear
 
@@ -40,6 +40,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
+Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,12 +58,11 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/legend/format/fill/clear
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/format/fill/clear
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

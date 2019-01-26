@@ -2,23 +2,23 @@
 title: Тип ресурса synchronizationJobRestartCriteria
 description: 'Определяет область [synchronizationJob: перезапустите](../api/synchronization_synchronizationjob_restart.md) действие.'
 localization_priority: Normal
-ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 960bfa56d0bb6921ca971722d894d1b837bfab49
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512642"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572306"
 ---
 # <a name="synchronizationjobrestartcriteria-resource-type"></a>Тип ресурса synchronizationJobRestartCriteria
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Определяет область [synchronizationJob: перезапустите](../api/synchronization_synchronizationjob_restart.md) действие.
+Определяет область [synchronizationJob: перезапустите](../api/synchronization-synchronizationjob-restart.md) действие.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|resetScope|String| Разделенный запятыми сочетание следующих значений: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Использование `Full` Если вы хотите, чтобы все параметры.|
+|resetScope|Строка| Разделенный запятыми сочетание следующих значений: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`. Использование `Full` Если вы хотите, чтобы все параметры.|
 
 ## <a name="json-representation"></a>Представление JSON
 

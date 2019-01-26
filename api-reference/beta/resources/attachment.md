@@ -2,12 +2,12 @@
 title: Тип ресурса attachment
 description: Связанное содержимое можно добавить на событие
 localization_priority: Normal
-ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8f7a6f9392d376995a53d9a4c06083780b0437b9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526944"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573426"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
@@ -45,7 +45,7 @@ ms.locfileid: "29526944"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип MIME.|
-|id|String| Только для чтения.|
+|id|Строка| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |имя|String|Отображаемое имя вложения. Она не обязательно должна находиться фактическое имя файла.|
@@ -60,6 +60,8 @@ ms.locfileid: "29526944"
 
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
+  "abstract": true,
   "optionalProperties": [
 
   ],

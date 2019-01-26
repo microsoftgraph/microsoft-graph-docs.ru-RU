@@ -4,12 +4,12 @@ description: Обновление свойств объекта tablecolumn.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 1287cb8c7c8e9b477d1e103a1dc845cbb37b3b87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b56a37cd0fa55c2d996b8df16a7bf326daaa0da3
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521406"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575239"
 ---
 # <a name="update-tablecolumn"></a>Обновление объекта TableColumn
 
@@ -42,7 +42,7 @@ PATCH /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|values|json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
+|values|microsoft.graph.Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +65,7 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {

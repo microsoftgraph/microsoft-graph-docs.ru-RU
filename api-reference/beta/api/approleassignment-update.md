@@ -2,12 +2,12 @@
 title: Обновление approleassignment
 description: Обновление свойства объекта approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: 54c256e3b94a5bb2d62c2ffe31ecf777d472b93c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 89147651b1a3ea182247cf3620efba9464c4b055
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527922"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572915"
 ---
 # <a name="update-approleassignment"></a>Обновление approleassignment
 
@@ -42,13 +42,13 @@ PATCH /groups/{id}/appRoleAssignments/{id}
 |:---------------|:--------|:----------|
 |creationTimestamp|DateTimeOffset|Время создания разрешений.|
 |id|Guid|Идентификатор роли, которая была назначена субъекта.  Эта роль должны быть объявлены с приложения ресурсов конечного **Ид_ресурса** в своем свойстве **appRoles** . Где ресурса не объявляет никаких разрешений, должен быть указан идентификатор по умолчанию (нулевое значение GUID).                            **Примечание.** Значение NULL не допускается.            |
-|principalDisplayName|String|Отображаемое имя субъекта, который был предоставлен доступ.|
+|principalDisplayName|Строка|Отображаемое имя субъекта, который был предоставлен доступ.|
 |principalId|Guid|Уникальный идентификатор (**objectId**) для участника, которому предоставляется доступ.                            **Примечания**: обязательные.            |
-|principalType|String|Тип субъекта.  Это может быть «User», «Группы» или «ServicePrincipal».|
-|resourceDisplayName|String|Отображаемое имя ресурса, к которому назначения.|
+|principalType|Строка|Тип субъекта.  Это может быть «User», «Группы» или «ServicePrincipal».|
+|resourceDisplayName|Строка|Отображаемое имя ресурса, к которому назначения.|
 |resourceId|Guid|Уникальный идентификатор (**objectId**) целевой ресурс, для которого было выполнено назначение (участников-служб).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [appRoleAssignment](../resources/approleassignment.md) объект в теле ответа.
 ## <a name="example"></a>Пример
@@ -71,13 +71,13 @@ Content-length: 233
   "resourceDisplayName": "resourceDisplayName-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK

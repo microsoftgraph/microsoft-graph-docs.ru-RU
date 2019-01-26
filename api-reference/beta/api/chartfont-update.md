@@ -4,12 +4,12 @@ description: Обновление свойств объекта chartfont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a8e7d2665ce93a62ea27c1a5459382ab07e1184d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511935"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574973"
 ---
 # <a name="update-chartfont"></a>Обновление объекта ChartFont
 
@@ -43,16 +43,16 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|bold|boolean|Указывает, является ли шрифт полужирным.|
-|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
-|italic|boolean|Указывает, применяется ли курсив.|
-|name|string|Имя шрифта (например, Calibri)|
-|size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|bold| boolean |Указывает, является ли шрифт полужирным.|
+|color| строка |HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|italic| boolean |Указывает, применяется ли курсив.|
+|name| строка |Имя шрифта (например, Calibri)|
+|size| Double |Размер шрифта (например, 11)|
+|underline| Строка перечисления |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartFont](../resources/chartfont.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [workbookChartFont](../resources/chartfont.md) объект в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -71,16 +71,16 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartFont"
+  "@odata.type": "microsoft.graph.workbookChartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -93,7 +93,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "underline-value"
+  "underline": "None"
 }
 ```
 

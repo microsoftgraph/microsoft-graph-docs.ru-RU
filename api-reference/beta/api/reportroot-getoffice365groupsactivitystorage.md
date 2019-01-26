@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365GroupsActivityStorage'
 description: Узнайте, сколько места в хранилище занято всеми почтовыми ящиками и сайтами групп.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 034fd610dd321f09600c28e599cc43aebb8cda0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 4248251bac7146334dc97e8101f29d53faacf2d5
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528510"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571676"
 ---
 # <a name="reportroot-getoffice365groupsactivitystorage"></a>reportRoot: getOffice365GroupsActivityStorage
 
@@ -52,7 +53,7 @@ GET /reports/getOffice365GroupsActivityStorage(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -91,9 +92,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityStorage(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -135,7 +136,7 @@ Report Refresh Date,Mailbox Storage Used (Byte),Site Storage Used (Byte),Report 
 GET https://graph.microsoft.com/beta/reports/getOffice365GroupsActivityStorage(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

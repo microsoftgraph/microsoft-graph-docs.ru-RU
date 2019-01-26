@@ -4,12 +4,12 @@ description: Этот объект представляет атрибуты ш�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7e9815d5d6d9bf7e7b0ef4ae97881e12c7ba9181
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518326"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573629"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
@@ -22,8 +22,8 @@ ms.locfileid: "29518326"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|Получение объекта ChartFont | ChartFont |Чтение свойств и связей объекта chartFont.|
-|[Update](../api/chartfont-update.md) | ChartFont   |Обновление объекта ChartFont. |
+|[Получение объекта ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
+|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,11 +31,11 @@ ms.locfileid: "29518326"
 |bold|boolean|Указывает, является ли шрифт полужирным.|
 |color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
-|name|string|Имя шрифта (например, Calibri)|
+|name|строка|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|underline|строка|Тип подчеркивание шрифта. Возможные значения: `None`, `Single`.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -43,12 +43,11 @@ ms.locfileid: "29518326"
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.chartFont"
+  "baseType": "microsoft.graph.entity",
+  "optionalProperties": [],
+  "@odata.type": "microsoft.graph.workbookChartFont"
 }-->
 
 ```json

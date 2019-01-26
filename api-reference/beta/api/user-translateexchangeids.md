@@ -4,12 +4,12 @@ description: Переведите идентификаторы, связанны
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528230"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571291"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
@@ -54,7 +54,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 | Значения | Описание |
 |:-------|:------------|
-| EntryID | Формат идентификатора двоичные запись, используемого клиентами MAPI. |
+| Идентификатор записи | Формат идентификатора двоичные запись, используемого клиентами MAPI. |
 | ewsId | Идентификатор формата, используемого клиентами веб-служб Exchange. |
 | immutableEntryId | Двоичные MAPI-совместимое постоянные идентификатор формата. |
 | restId | По умолчанию идентификатор формата Microsoft Graph. |
@@ -62,12 +62,12 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 Двоичные форматы (`entryId` и `immutableEntryId`) являются кодировке base64 safe URL-адрес. URL-адрес safeness осуществляется путем изменения Кодировка base64 двоичных данных следующим образом:
 
-- `+`
-- `/`
+- Замените `+` с`-`
+- Замените `/` с`_`
 - Удалите все конечные знаки внутренние поля (`=`)
 - Добавление целое число в конец строки, показывающее, сколько символов заполнения были в исходной (`0`, `1`, или `2`)
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и семейства [convertIdResult](../resources/convertidresult.md) в теле ответа.
 
@@ -97,7 +97,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа
 <!-- {
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1},
+      "sourceId": "{rest-formatted-id-1}",
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2},
+      "sourceId": "{rest-formatted-id-2}",
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

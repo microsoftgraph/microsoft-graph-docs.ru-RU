@@ -2,12 +2,12 @@
 title: Тип ресурса fileAttachment
 description: Файл (например, текстовый файл или документ Word), подключенного к событию
 localization_priority: Normal
-ms.openlocfilehash: 7032bcd234d07f0f3fdce0787968d72530a0a442
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5f7be9bca3114fc7e74be711dc606a278e0025ff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510766"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572803"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -32,10 +32,10 @@ ms.locfileid: "29510766"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contentBytes|Двоичный|Содержимое файла в кодировке base64.|
+|contentBytes|Строка|Содержимое файла в кодировке base64.|
 |contentId|String|Идентификатор вложения в хранилище Exchange.|
-|contentLocation|String|Универсальный код ресурса (URI), который соответствует расположению содержимого вложения.|
-|contentType|Строка|Тип контента этого вложения.|
+|contentLocation|String|Не используйте это свойство, а не поддерживается.|
+|contentType|String|Тип контента этого вложения.|
 |id|String|Идентификатор вложения.|
 |isInline|Boolean|Задано значение true, если это встроенное вложение.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения.|
@@ -60,7 +60,7 @@ ms.locfileid: "29510766"
 
 ```json
 {
-  "contentBytes": "binary",
+  "contentBytes": "String",
   "contentId": "string",
   "contentLocation": "string",
   "contentType": "string",

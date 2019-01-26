@@ -2,12 +2,12 @@
 title: Тип ресурса governancePermission
 description: 'Представляет, governanceSubject имеет разрешение на доступ к определенным governanceResource.  '
 localization_priority: Normal
-ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9b6e920d92d7010fb325be05cf0b645f9b8d81cd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529840"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570724"
 ---
 # <a name="governancepermission-resource-type"></a>Тип ресурса governancePermission
 
@@ -19,14 +19,21 @@ ms.locfileid: "29529840"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|AccessLevel|String|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
-|isActive|Логическое|Указывает, если инициатора запроса имеет назначения активная роль на уровне доступа.|
-|isEligible|Логическое|Указывает, имеет ли инициатора запроса все назначения ролей право на уровне доступа.|
+|accessLevel|Строка|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
+|isActive|Boolean|Указывает, если инициатора запроса имеет назначения активная роль на уровне доступа.|
+|isEligible|Boolean|Указывает, имеет ли инициатора запроса все назначения ролей право на уровне доступа.|
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.governancePermission"
+}-->
 ```json
 {
   "accessLevel": "String",

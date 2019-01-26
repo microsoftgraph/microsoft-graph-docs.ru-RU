@@ -3,12 +3,13 @@ title: Отчеты об организации конференций Skype д�
 description: Подробные сведения можно получить упорядоченный конференций действия внутри организации. Эти данные могут пригодиться при проведении анализа, планировании и принятии других бизнес-решений для организации.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 706e9d88e52756ac8df4db8fd5c738a50d545e37
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 8254221fc32b299b4d1a1de48165f6349b739f22
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514056"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572698"
 ---
 # <a name="skype-for-business-organizer-activity-reports"></a>Отчеты об организации конференций Skype для бизнеса
 

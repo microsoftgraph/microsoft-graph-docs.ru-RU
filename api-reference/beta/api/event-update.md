@@ -4,12 +4,12 @@ description: Обновление свойства объекта события
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b3f101c14a69c6dc2b3687e9d4a1509e6ac7a531
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ec895230ab981e4ccf9b2520a83f40a159386d64
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524977"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571823"
 ---
 # <a name="update-event"></a>Обновление события
 
@@ -60,14 +60,14 @@ PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/
 | categories|String|Категории, связанные с событием.|
 | end|DateTimeTimeZone|Дата и время завершения события.<br/><br/>По умолчанию время завершения указано в формате UTC. Можно дополнительно указать часовой пояс в элементе EndTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете EndTimeZone, следует также указать значение StartTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 21:34 по тихоокеанскому поясному времени): "2015-02-25T21:34:00-08:00". |
 | importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
-| isAllDay|Логическое|Задайте значение true, если событие длится весь день.|
+| isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 | isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
-| location|Location|Место проведения события.|
-|locations|[Расположение](../resources/location.md) семейства сайтов|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
-| recurrence|PatternedRecurrence|Расписание повторения события.|
+| location| [location](../resources/location.md) |Место проведения события.|
+| locations| Коллекция [location](../resources/location.md)|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
+| recurrence| [patternedRecurrence](../resources/patternedrecurrence.md) |Расписание повторения события.|
 | reminderMinutesBeforeStart|Int32|Позволяет указать, за сколько минут до начала события появляется напоминание.|
 | responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
-| sensitivity|Строка| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
+| sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
 | showAs|String|Отображаемое состояние. Возможные значения: `free` , `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 | start|DateTimeTimeZone|Время начала события. <br/><br/>По умолчанию время начала указано в формате UTC. Можно дополнительно указать часовой пояс в элементе StartTimeZone, задать время завершения согласно этому часовому поясу и UTC-смещение. Обратите внимание, что если вы используете StartTimeZone, следует также указать значение EndTimeZone.<br/><br/>Пример указания даты (25 февраля 2015 г., 19:34 по тихоокеанскому поясному времени): "2015-02-25T19:34:00-08:00".  |
 | subject|String|Текст в строке темы сообщения о событии.|
@@ -110,7 +110,7 @@ Content-length: 285
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

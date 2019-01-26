@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса Shared
+title: тип общего ресурса
 description: 'Возможность получения, представляющих файлы совместно с помощью или отдельного пользователя. Поддерживаются следующие общие файлы:'
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 11a6989e0130e7eedca7fff6f6cc9790d8109d84
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 49e18318c1e93d2393b957b404ff4617b334f237
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524690"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573181"
 ---
-# <a name="shared-resource-type"></a>Тип ресурса Shared
+# <a name="shared-resource-type"></a>тип общего ресурса
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -32,20 +32,26 @@ ms.locfileid: "29524690"
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
 | lastShared            | [sharingDetail](insights-sharingdetail.md)                | Сведения об общих элементов. Только для чтения.        |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для визуализации документа в работу. Только чтение      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Свойства ссылки общих документов, таких как URL-адрес и тип документа. Только чтение       |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| resource      | Entity        | Используется для перехода к элементу, предоставлен общий доступ. Для файлов вложений тип — *fileAttachment*. Для связанного вложения тип — *driveItem*. |
+| resource      | Коллекция сущностей | Используется для перехода к элементу, предоставлен общий доступ. Для файлов вложений тип — *fileAttachment*. Для связанного вложения тип — *driveItem*. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.shared"
+}-->
 ```json
 {
   "id": "string",

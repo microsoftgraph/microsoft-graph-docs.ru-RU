@@ -2,12 +2,12 @@
 title: Тип ресурса privilegedApproval
 description: Представляет утверждения, запрашиваемых в привилегированной управления удостоверениями для получения в роли.
 localization_priority: Normal
-ms.openlocfilehash: 283236d945e9a71a4ae0461bbefe66260efa88a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 03cdba4eee7b031645928b2f512288a18ba18bf8
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516891"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571019"
 ---
 # <a name="privilegedapproval-resource-type"></a>Тип ресурса privilegedApproval
 
@@ -31,20 +31,20 @@ ms.locfileid: "29516891"
 |:---------------|:--------|:----------|
 |approvalDuration|Длительность||
 |approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|approvalType|Строка||
+|approverReason|Строка||
 |endDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|Строка| Только для чтения.|
-|requestorReason|String||
-|roleId|String||
+|requestorReason|Строка||
+|roleId|Строка||
 |startDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |userId|String||
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null.|
-|Запрос|[privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md)| Только для чтения. Запрос назначения ролей для данного объекта утверждения|
+|roleInfo| [privilegedRole](privilegedrole.md) | Только для чтения. Допускается значение null.|
+|запрос| [privilegedRoleAssignmentRequest](privilegedroleassignmentrequest.md) | Только для чтения. Запрос назначения ролей для данного объекта утверждения|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

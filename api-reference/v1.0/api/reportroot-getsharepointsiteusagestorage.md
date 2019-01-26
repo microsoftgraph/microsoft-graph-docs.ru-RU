@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointSiteUsageStorage'
 description: Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: c8f99317bbbb122140a9478a14ed6db52c8ed859
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: b9e5a470bab02f21ec253c0df747e4d4aa91ac1b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965840"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575393"
 ---
 # <a name="reportroot-getsharepointsiteusagestorage"></a>reportRoot: getSharePointSiteUsageStorage
 
@@ -34,7 +35,7 @@ ms.locfileid: "27965840"
 GET /reports/getSharePointSiteUsageStorage(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите следующий параметр и действительное значение.
 
@@ -81,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointSiteUsageStorage(perio
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

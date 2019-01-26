@@ -4,12 +4,12 @@ description: 'Представляет клиента Azure Active Directory. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529427"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574994"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -51,16 +51,16 @@ ms.locfileid: "29529427"
 |postalCode|String| Почтовый индекс в адресе организации |
 |preferredLanguage|String| Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1. Пример: ru. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Профиль конфиденциальности организации.            |
-|provisionedPlans|Коллекция [ProvisionedPlan](provisionedplan.md)| Значение null не допускается.            |
-|provisioningErrors|Коллекция ProvisioningError| Значение null не допускается.            |
+|provisionedPlans|[provisionedPlan](provisionedplan.md) коллекции| Значение null не допускается.            |
+|provisioningErrors|Коллекция onPremisesProvisioningError| Значение null не допускается.            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||
-|state|Строка| Название республики, области или края в адресе организации |
+|state|String| Название республики, области или края в адресе организации |
 |street|String| Название улицы в адресе организации |
 |technicalNotificationMails|Коллекция String| Значение null не допускается. |
 |verifiedDomains|Коллекция [VerifiedDomain](verifieddomain.md)|Коллекция доменов, сопоставленных с этим клиентом. Значение null не допускается.            |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь     | Тип   |Описание|
 |:---------------|:--------|:----------|

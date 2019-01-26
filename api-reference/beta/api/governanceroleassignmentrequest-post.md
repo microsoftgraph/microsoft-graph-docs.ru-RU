@@ -2,12 +2,12 @@
 title: Создание governanceRoleAssignmentRequest
 description: Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
 localization_priority: Normal
-ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523241"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572369"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -54,15 +54,15 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство     | Тип    |Обязательный|  Описание|
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|Идентификатор ресурса.|
-|roleDefinitionId|String|Да|Идентификатор определения роли.|
-|subjectId|String|Да|Идентификатор субъекта.|
-|assignmentState|String|Да|Состояние назначения. Значение может быть ``Eligible`` и ``Active``.|
-|type|String|Да|Тип запроса. Значение может быть `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`и `AdminExtend`.|
-|Reason|String| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
+|resourceId|Строка|Да|Идентификатор ресурса.|
+|roleDefinitionId|Строка|Да|Идентификатор определения роли.|
+|subjectId|Строка|Да|Идентификатор субъекта.|
+|assignmentState|Строка|Да|Состояние назначения. Значение может быть ``Eligible`` и ``Active``.|
+|type|Строка|Да|Тип запроса. Значение может быть `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`и `AdminExtend`.|
+|Причина|Строка| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
 
 ### <a name="error-codes"></a>Коды ошибок
@@ -88,13 +88,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<|
-|roleDefinitionId|String|Да|\<roleDefinitionId\>|
-|subjectId|String|Да|\<subjectId\>|
-|assignmentState|String|Да| Допустимость / Active|
-|type|String|Да| AdminAdd|
-|Reason|String| зависит от роли параметров||
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|Строка|Да|\<Ид_ресурса\>|
+|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
+|subjectId|Строка|Да|\<subjectId\>|
+|assignmentState|Строка|Да| Допустимость / Active|
+|type|Строка|Да| AdminAdd|
+|Причина|Строка| зависит от роли параметров||
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -117,7 +117,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -171,13 +171,13 @@ Content-length: 226
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<|
-|roleDefinitionId|String|Да|\<roleDefinitionId\>|
-|subjectId|String|Да|\<subjectId\>|
-|assignmentState|String|Да| Активное|
-|type|String|Да| UserAdd|
-|Reason|String| зависит от роли параметров||
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|Строка|Да|\<Ид_ресурса\>|
+|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
+|subjectId|Строка|Да|\<subjectId\>|
+|assignmentState|Строка|Да| Активное|
+|type|Строка|Да| UserAdd|
+|Причина|Строка| зависит от роли параметров||
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -201,7 +201,7 @@ Content-type: application/json
 "linkedEligibleRoleAssignmentId":"e327f4be-42a0-47a2-8579-0a39b025b394"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -266,13 +266,13 @@ Content-type: application/json
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<|
-|roleDefinitionId|String|Да|\<roleDefinitionId\>|
-|subjectId|String|Да|\<subjectId\>|
-|assignmentState|String|Да| Активное|
-|type|String|Да| UserRemove|
-|Reason|Строка| Нет||
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
+|resourceId|Строка|Да|\<Ид_ресурса\>|
+|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
+|subjectId|Строка|Да|\<subjectId\>|
+|assignmentState|Строка|Да| Активное|
+|type|Строка|Да| UserRemove|
+|Причина|Строка| Нет||
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Нет|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -291,7 +291,7 @@ Content-type: application/json
 "linkedEligibleRoleAssignmentId":"cb8a533e-02d5-42ad-8499-916b1e4822ec"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -322,20 +322,20 @@ Content-length: 226
 }
 ```
 
-### <a name="example-4"></a>---------------------ПРИМЕР 4-----------------------
+### <a name="example-4"></a>Пример 4
 В этом примере администраторам удалить nawu@fimdev.net пользователя из роли выставления счетов чтения.
 
  >**Примечание:** В дополнение к разрешение, в этом примере требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<|
-|roleDefinitionId|String|Да|\<roleDefinitionId\>|
-|subjectId|String|Да|\<subjectId\>|
-|assignmentState|String|Да| Допустимость / Active|
-|type|String|Да| AdminRemove|
-|Reason|Строка| Нет||
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
+|resourceId|Строка|Да|\<Ид_ресурса\>|
+|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
+|subjectId|Строка|Да|\<subjectId\>|
+|assignmentState|Строка|Да| Допустимость / Active|
+|type|Строка|Да| AdminRemove|
+|Причина|Строка| Нет||
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Нет|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -353,7 +353,7 @@ Content-type: application/json
   "type":"AdminRemove"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -391,13 +391,13 @@ Content-length: 226
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<|
-|roleDefinitionId|String|Да|\<roleDefinitionId\>|
-|subjectId|String|Да|\<subjectId\>|
-|assignmentState|String|Да| Допустимость / Active|
-|type|String|Да| AdminUpdate|
-|Reason|String| зависит от roleSettings||
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|Строка|Да|\<Ид_ресурса\>|
+|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
+|subjectId|Строка|Да|\<subjectId\>|
+|assignmentState|Строка|Да| Допустимость / Active|
+|type|Строка|Да| AdminUpdate|
+|Причина|Строка| зависит от roleSettings||
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -420,7 +420,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -471,13 +471,13 @@ Content-length: 226
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|String|Да|\<|
-|roleDefinitionId|String|Да|\<roleDefinitionId\>|
-|subjectId|String|Да|\<subjectId\>|
-|assignmentState|String|Да| Допустимость / Active |
-|type|String|Да| AdminExtend|
-|Reason|String| зависит от roleSettings||
-|Расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|resourceId|Строка|Да|\<Ид_ресурса\>|
+|roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
+|subjectId|Строка|Да|\<subjectId\>|
+|assignmentState|Строка|Да| Допустимость / Active |
+|type|Строка|Да| AdminExtend|
+|Причина|Строка| зависит от roleSettings||
+|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -501,7 +501,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": false,

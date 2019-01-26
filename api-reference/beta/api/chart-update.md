@@ -4,12 +4,12 @@ description: Обновление свойств объекта диаграмм
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2d1377a0a8c19538ea1c0c19483512736e129559
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e668b8d9d6184398729ed5079be27f75ae5d3e03
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516387"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572887"
 ---
 # <a name="update-chart"></a>Обновление диаграммы
 
@@ -49,7 +49,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [Chart](../resources/chart.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookChart](../resources/chart.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -67,13 +67,13 @@ Content-length: 52
   "left": 99
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

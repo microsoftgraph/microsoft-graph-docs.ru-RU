@@ -4,12 +4,12 @@ description: Обновление свойств объекта листа.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 85f027020f11b43ffd22aeaddd89cd5852d6eaff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519586"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571718"
 ---
 # <a name="update-worksheet"></a>Обновление листа
 
@@ -66,13 +66,13 @@ Content-length: 100
   "visibility": "visibility-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet"
+  "@odata.type": "microsoft.graph.workbookWorksheet"
 } -->
 ```http
 HTTP/1.1 200 OK

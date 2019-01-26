@@ -4,12 +4,12 @@ description: Объект rangeView представляет набор види
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d01ab0b8b21814a363d838b61fca29aa90357156
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520832"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574364"
 ---
 # <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 
@@ -28,6 +28,7 @@ ms.locfileid: "29520832"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
+|cellAddresses|Json|Представляет адреса ячеек
 |columnCount|Int32|Возвращает количество видимых столбцов. Только для чтения.|
 |formulas|Json|Представляет формулу в формате A1. |
 |formulasLocal|Json|Представляет формулу в формате A1 на языке пользователя и в соответствии с его языковым стандартом. Например, английская формула "=SUM(A1, 1.5)" превратится в "=СУММ(A1;1,5)" на русском языке.    |
@@ -36,7 +37,7 @@ ms.locfileid: "29520832"
 |numberFormat|Json|Представляет код в числовом формате Excel для заданной ячейки. Только для чтения. |
 |rowCount|Int32|Возвращает количество видимых строк. Только для чтения.  |
 |text|Json|Текстовые значения указанного диапазона. Текстовое значение не зависит от ширины ячейки. Замена знака #, которая происходит в пользовательском интерфейсе Excel, не повлияет на текстовое значение, возвращаемое API. Только для чтения.    |
-|valueTypes|Json|Представляет тип данных каждой ячейки. Только для чтения. Возможные значения: Unknown, Empty, String, Integer, Double, Boolean, Error. |
+|valueTypes|Json|Представляет тип данных для каждой ячейки. Только для чтения. Возможные значения: неизвестно, пустой, строка, целое число, двойное, Boolean, ошибка. |
 |values|Json|Представляет необработанные значения указанного объекта rangeView. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.   |
 
 ## <a name="relationships"></a>Связи
@@ -48,6 +49,7 @@ ms.locfileid: "29520832"
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
+  "baseType": "microsoft.graph.entity",
   "optionalProperties": [  ],
   "@odata.type": "microsoft.graph.workbookRangeView"
 }-->

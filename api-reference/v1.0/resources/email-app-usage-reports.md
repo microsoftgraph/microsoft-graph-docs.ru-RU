@@ -2,14 +2,14 @@
 title: Отчеты об использовании почтовых приложений
 description: Эти отчеты позволяют узнать, сколько почтовых приложений используется для подключения к Exchange Online. Вы также можете посмотреть, какие версии приложений Outlook используются, что позволит вам выявить пользователей старых версий и связаться с ними по поводу обновления.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: d9d40ed06aae777ad403142a808035d57b078992
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00adbec446cda1ea6855c7f52e847f88f42c65bd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919908"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574441"
 ---
 # <a name="email-app-usage-reports"></a>Отчеты об использовании почтовых приложений
 

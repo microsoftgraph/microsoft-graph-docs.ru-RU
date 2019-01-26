@@ -2,12 +2,12 @@
 title: Обновление secureScoreControlProfiles
 description: Обновите свойство редактируемого secureScoreControlProfiles в любой интегрированное решение для изменения различных свойств, например assignedTo или tenantNote.
 localization_priority: Normal
-ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510955"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573363"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление secureScoreControlProfiles
 
@@ -21,9 +21,9 @@ ms.locfileid: "29510955"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись) |   SecurityEvents.ReadWrite.All.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.ReadWrite.All |
+|Для приложений | SecurityEvents.ReadWrite.All. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -46,9 +46,9 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|AssignedTo|String|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
-|tenantNote|String|Комментарии аналитик на элементе управления (для управления клиента).|
-|controlStateUpdates| String|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|assignedTo|Строка|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
+|tenantNote|Строка|Комментарии аналитик на элементе управления (для управления клиента).|
+|controlStateUpdates| Строка|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик
@@ -78,26 +78,22 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже представлен пример успешного отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
+  "@odata.type": "microsoft.graph.secureScoreControlProfile"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-
-
-
-<!--
-{
+<!-- {
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfiles",
+  "description": "Update secureScoreControlProfile",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

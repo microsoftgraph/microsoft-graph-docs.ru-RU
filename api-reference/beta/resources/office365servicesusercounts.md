@@ -3,12 +3,13 @@ title: Тип ресурса office365ServicesUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 54ae2020a5c02bba1469e3c6c0728024c72046bc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 36fd043be3cef36951f7651d625f4a93d3b5f8cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957307"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573895"
 ---
 # <a name="office365servicesusercounts-resource-type"></a>Тип ресурса office365ServicesUserCounts
 
@@ -27,8 +28,10 @@ ms.locfileid: "27957307"
 | skypeForBusinessInactive | Int64  | Количество неактивных пользователей на Скайп для бизнеса. |
 | yammerActive             | Int64  | Число активных пользователей в Yammer. Любой пользователь, который можно публиковать, чтение или как сообщения считается активного пользователя. |
 | yammerInactive           | Int64  | Количество неактивных пользователей в Yammer.  |
-| teamsActive              | Int64  | Число активных пользователей в группы. Любой пользователь, который сообщений, помещенных в каналы группы, отправленных сообщений в сеансах частной беседы или являлся участником собрания или вызовы считается активного пользователя. |
-| teamsInactive            | Int64  | Число активных пользователей в группы.     |
+| teamsActive              | Int64  | Число активных пользователей в группы Microsoft. Любой пользователь, который сообщений, помещенных в каналы группы, отправленных сообщений в сеансах частной беседы или являлся участником собрания или вызовы считается активного пользователя. |
+| teamsInactive            | Int64  | Количество неактивных пользователей на группами Майкрософт.     |
+| office365Active          | Int64  | Число активных пользователей в Office 365.   |
+| office365Inactive        | Int64  | Количество неактивных пользователей на Office 365.     |
 | reportPeriod             | Строка | Количество дней, на которое отчета.    |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -55,6 +58,8 @@ ms.locfileid: "27957307"
   "yammerInactive": 1024, 
   "teamsActive": 1024, 
   "teamsInactive": 1024, 
+  "office365Active": 1024,
+  "office365Inactive": 1024,
   "reportPeriod": "String"
 }
 ```

@@ -3,12 +3,13 @@ title: Отчеты о действиях в Yammer
 description: Вы понимаете обязательства вашей организации с помощью Yammer с активности создается в организации и число уникальных пользователей, публиковать, такие как и читать сообщения в Yammer.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 252748b639f256467b2a01336488e1df086c69cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: d5953d8bd53158b2ec0532deb47c48028ba1b8c9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509940"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571802"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
 
@@ -24,7 +25,7 @@ ms.locfileid: "29509940"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getyammeractivityuserdetail.md) | Stream          | [yammerActivityUserDetail](../resources/yammeractivityuserdetail.md) | Получение сведений о действиях в Yammer с разбивкой по пользователям. |
 | [Получение количества действий](../api/reportroot-getyammeractivitycounts.md) | Stream          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Отследите динамику использования Yammer в организации по количеству опубликованных, прочитанных и понравившихся сообщений. |
-| [Получение количества пользователей](../api/reportroot-getyammeractivityusercounts.md) | Поток          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Отследите динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer. |
+| [Получение количества пользователей](../api/reportroot-getyammeractivityusercounts.md) | Stream          | [yammerActivitySummary](../resources/yammeractivitysummary.md) | Отследите динамику по количеству уникальных пользователей, которые опубликовали, прочитали и оценили сообщения Yammer. |
 <!--
 {
   "type": "#page.annotation",

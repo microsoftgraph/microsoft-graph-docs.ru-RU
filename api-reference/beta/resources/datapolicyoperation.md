@@ -4,12 +4,12 @@ description: Представляет операцию политики отпр
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0d3ec392bb30614346d2726262851eebc29ee779
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4547221c8c1b859d4738a5468603ac6890246263
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938750"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570927"
 ---
 # <a name="datapolicyoperation-resource-type"></a>Тип ресурса dataPolicyOperation
 
@@ -28,12 +28,11 @@ ms.locfileid: "27938750"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|DateTimeOffset|Представляет, когда запрос для этой операции политики данных был выполнен, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. NULL до завершения операции.|
-|id|String| Уникальный ключ для этой операции. |
-|status|строка| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
-|storageLocation|String|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
+|id|Строка| Уникальный ключ для этой операции. |
+|status|string| Возможные значения: `notStarted`, `running`, `complete`, `failed`, `unknownFutureValue`.|
+|storageLocation|Строка|URL-адрес расположения, в котором выполняется экспорт данных для запросы на экспорт.|
 |userId|String|Идентификатор пользователя, для которого выполняется операция.|
 |submittedDateTime|DateTimeOffset|Представляет, когда для этой операции с данными был отправлен запрос, в формате UTC, в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|progress|Double|Указывает ход выполнения операции.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -58,8 +57,7 @@ ms.locfileid: "27938750"
   "status": "string",
   "storageLocation": "String",
   "userId": "String",
-  "submittedDateTime": "String (timestamp)",
-  "progress": "Double"
+  "submittedDateTime": "String (timestamp)"
 }
 
 ```

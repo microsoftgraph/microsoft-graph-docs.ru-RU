@@ -2,12 +2,12 @@
 title: Тип ресурса stringKeyObjectValuePair
 description: Представляет пару ключ значение, где ключ — это строка, а значение — это произвольный объект JSON. Это открытого типа OData, который будет использовать свойство с именем `value` то есть допустимый объект JSON.
 localization_priority: Normal
-ms.openlocfilehash: 8f939c177f2130813c6080d46ad78664f6118857
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 819a2e004ee712f1250652ce0b3811940545e643
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516968"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572173"
 ---
 # <a name="stringkeyobjectvaluepair-resource-type"></a>Тип ресурса stringKeyObjectValuePair
 
@@ -18,8 +18,8 @@ ms.locfileid: "29516968"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|key|String|Ключ.|
-|value|Любой|Произвольный объект JSON.|
+|key|Строка|Ключ.|
+|value|Json|Произвольный объект JSON.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -35,7 +35,8 @@ ms.locfileid: "29516968"
 
 ```json
 {
-  "key": "String"
+  "key": "String",
+  "value":"Json"
 }
 
 ```

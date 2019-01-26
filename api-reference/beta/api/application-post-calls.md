@@ -4,12 +4,12 @@ description: Создайте новый звонок.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 60bd69bbef636f9e46f8f50a124b9a5a246dbe63
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513825"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573944"
 ---
 # <a name="create-call"></a>Создание вызова
 
@@ -45,7 +45,7 @@ POST /applications/{id}/calls
 
 > **Примечание:** Свойства помечены как `Server generated` игнорируются при обработке `POST` на `app/calls`.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [call](../resources/call.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
@@ -105,7 +105,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -117,7 +117,6 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
-
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

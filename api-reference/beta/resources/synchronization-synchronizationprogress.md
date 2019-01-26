@@ -2,12 +2,12 @@
 title: Тип ресурса synchronizationProgress
 description: Представляет ход выполнения synchronizationJob к завершению.
 localization_priority: Normal
-ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 39351f07720d44679675396f9e995f5e78e25fcc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510976"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572747"
 ---
 # <a name="synchronizationprogress-resource-type"></a>Тип ресурса synchronizationProgress
 
@@ -22,7 +22,7 @@ ms.locfileid: "29510976"
 |completedUnits|Int32|Числитель соотношение хода выполнения; Количество единиц уже обработки изменений.|
 |progressObservationDateTime|DateTimeOffset|Время наблюдения хода выполнения как смещение в минутах от времени UTC.|
 |totalUnits|Int32|Делителя соотношение хода выполнения; Количество единиц изменения обработки для выполнения синхронизации.|
-|Units|String|Необязательное описание единицы измерения.|
+|единицы|Строка|Необязательное описание единицы измерения.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
@@ -35,7 +35,7 @@ ms.locfileid: "29510976"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.synchronizationStatus"
+  "@odata.type": "microsoft.graph.synchronizationProgress"
 }-->
 
 ```json

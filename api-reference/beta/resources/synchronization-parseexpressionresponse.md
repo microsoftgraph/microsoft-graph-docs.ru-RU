@@ -2,27 +2,27 @@
 title: Тип ресурса parseExpressionResponse
 description: 'Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.'
 localization_priority: Normal
-ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: fc37c963e9c9588241d84570edc73a933eec49fc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523892"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572880"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса parseExpressionResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.
+Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) действие.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|error|OData.Error|Дополнительные сведения об ошибке, если вычисление выражения возникла ошибка.|
+|error| publicError |Дополнительные сведения об ошибке, если вычисление выражения возникла ошибка.|
 |evaluationResult|Коллекция String|Коллекция значений, созданные средством оценки выражения.|
-|evaluationSucceeded|Логическое|`true`При оценке прошла успешно.|
+|evaluationSucceeded|Boolean|`true`При оценке прошла успешно.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Объект [attributeMappingSource](synchronization-attributemappingsource.md) , представляющий проанализированного выражения.|
-|parsingSucceeded|Логическое|`true`Если выражение успешно обработан.|
+|parsingSucceeded|Boolean|`true`Если выражение успешно обработан.|
 
 ## <a name="json-representation"></a>Представление JSON
 

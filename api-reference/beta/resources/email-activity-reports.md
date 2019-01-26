@@ -2,14 +2,14 @@
 title: Отчеты о работе с электронной почтой
 description: Высокоуровневое представление трафика электронной почты можно получить в рамках организации на странице отчеты. Вы также можете перейти в мини-приложения электронной почты активности понять тенденции и сведения на одного пользователя действия электронной почты в вашей организации.
 localization_priority: Normal
-author: angelgolfer-ms
+author: pranoychaudhuri
 ms.prod: reports
-ms.openlocfilehash: e11de43f197e520d653961af9b9090d06b085369
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 748199a2e846cc71a3f04c3ea1bda97dcf2c7301
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528307"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573902"
 ---
 # <a name="email-activity-reports"></a>Отчеты о работе с электронной почтой
 
@@ -25,7 +25,7 @@ ms.locfileid: "29528307"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getemailactivityuserdetail.md) | Stream          | [emailActivityUserDetail](../resources/emailactivityuserdetail.md) | Узнайте, какие действия пользователи выполняли с электронной почтой. |
 | [Получение количества действий](../api/reportroot-getemailactivitycounts.md) | Stream          | [emailActivitySummary](../resources/emailactivitysummary.md) | Позволяет понять динамику работы с электронной почтой (сколько писем было отправлено, прочитано и получено) в организации. |
-| [Получение количества пользователей](../api/reportroot-getemailactivityusercounts.md) | Поток          | [emailActivitySummary](../resources/emailactivitysummary.md) | Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма. |
+| [Получение количества пользователей](../api/reportroot-getemailactivityusercounts.md) | Stream          | [emailActivitySummary](../resources/emailactivitysummary.md) | Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма. |
 <!--
 {
   "type": "#page.annotation",

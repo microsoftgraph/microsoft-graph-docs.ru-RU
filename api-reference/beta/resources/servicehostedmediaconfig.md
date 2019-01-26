@@ -4,12 +4,12 @@ description: Тип serviceHostedMediaConfig.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 127450b569a37f00a76696a749c269f55c15b7aa
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520867"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572453"
 ---
 # <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса serviceHostedMediaConfig
 
@@ -22,7 +22,7 @@ ms.locfileid: "29520867"
 | Свойство                    | Тип                                                        | Описание                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
 | preFetchMedia               | [mediaInfo](mediainfo.md) коллекции                        | Список мультимедиа для предварительно выборки.                   |
-| removeFromDefaultAudioGroup | Логическое                                                     | Удалите собственный участника из группы по умолчанию звука. |
+| removeFromDefaultAudioGroup | Boolean                                                     | Удалите собственный участника из группы по умолчанию звука. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,11 +33,12 @@ ms.locfileid: "29520867"
   "optionalProperties": [
     "preFetchMedia"
   ],
+   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```

@@ -3,12 +3,13 @@ title: Отчеты о действиях в Yammer
 description: Благодаря отчетам о действиях в Yammer вы сможете узнать уровень активности использования этой сети в организации, просматривая количество действий, выполняемых в организации, и уникальных пользователей, которые публикуют, оценивают и читают сообщения в Yammer.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2a97b0d8020a5fce8777d93588e1a38a7ccd8355
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 3ceda4e5771e442f4b664de71b595f8c5b6aeaf7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937623"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573608"
 ---
 # <a name="yammer-activity-reports"></a>Отчеты о действиях в Yammer
 

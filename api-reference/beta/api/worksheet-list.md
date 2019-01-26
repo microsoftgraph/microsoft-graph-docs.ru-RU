@@ -4,12 +4,12 @@ description: Получение списка объектов листов.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 585faae105955f24b80a64b834dba207f740d67a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d1d3b2872b87b587adec3958c2447d3cc04ef27c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530134"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574329"
 ---
 # <a name="list-worksheetcollection"></a>Список WorksheetCollection
 
@@ -55,13 +55,13 @@ GET /workbook/worksheets
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.worksheet",
+  "@odata.type": "microsoft.graph.workbookWorksheet",
   "isCollection": true
 } -->
 ```http

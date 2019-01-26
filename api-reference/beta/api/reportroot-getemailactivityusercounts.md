@@ -3,12 +3,13 @@ title: 'reportRoot: getEmailActivityUserCounts'
 description: Позволяет понять, как меняется количество уникальных пользователей, которые отправляют, читают и получают письма.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 8091cb94c29afd7a76379f1e91116440bc152b4a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: f1f0c807582cd3f3694779b832dad6d143b44f62
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511564"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572922"
 ---
 # <a name="reportroot-getemailactivityusercounts"></a>reportRoot: getEmailActivityUserCounts
 
@@ -52,7 +53,7 @@ GET /reports/getEmailActivityUserCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -92,9 +93,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getEmailActivityUserCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -136,7 +137,7 @@ Report Refresh Date,Send,Receive,Read,Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getEmailActivityUserCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

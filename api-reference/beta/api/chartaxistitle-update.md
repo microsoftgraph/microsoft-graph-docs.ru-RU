@@ -4,12 +4,12 @@ description: Обновление свойств объекта chartaxistitle.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6f8e1ba265246678bb930c1135fbf465147c1c7b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1c06cb996838adc82105a278d4f1182acccdc8a0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522618"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574077"
 ---
 # <a name="update-chartaxistitle"></a>Обновление объекта chartaxistitle
 
@@ -48,7 +48,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartAxisTitle](../resources/chartaxistitle.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookChartAxisTitle](../resources/chartaxistitle.md) в теле ответа.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -66,13 +66,13 @@ Content-length: 45
   "visible": true
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartAxisTitle"
+  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

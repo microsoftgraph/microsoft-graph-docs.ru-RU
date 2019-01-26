@@ -1,13 +1,13 @@
 ---
 title: Тип ресурса provisionedPlan
-description: Свойство **provisionedPlans** объектов **user** и organization представляет собой коллекцию объектов provisionedPlan.
+description: Свойство **provisionedPlans** объектов user и organization представляет собой коллекцию объектов **provisionedPlan**.
 localization_priority: Normal
-ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: be19bb49409751ae5d7a0f11387e74770fde333b
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527817"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572551"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 
@@ -19,7 +19,7 @@ ms.locfileid: "29527817"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|capabilityStatus|Строка|Пример: "Enabled".|
+|capabilityStatus|String|Пример: "Enabled".|
 |provisioningStatus|String|Пример: "Success".|
 |service|String|Имя службы, например “AccessControlS2S”.|
 
@@ -32,7 +32,7 @@ ms.locfileid: "29527817"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json

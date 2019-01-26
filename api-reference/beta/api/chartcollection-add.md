@@ -4,12 +4,12 @@ description: Создает диаграмму.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: cdb3ff01b0741f0f1a4a0bff22e3a8e3dc32335c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f552e4d8f0c8dc9f1257baf02ebe7a449c98a348
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516338"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572117"
 ---
 # <a name="chartcollection-add"></a>ChartCollection: add
 
@@ -43,12 +43,12 @@ POST /workbook/worksheets/{id|name}/charts/add
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |type|строка|Представляет тип диаграммы.  Возможные значения: `ColumnClustered`, `ColumnStacked`, `ColumnStacked100`, `BarClustered`, `BarStacked`, `BarStacked100`, `LineStacked`, `LineStacked100`, `LineMarkers`, `LineMarkersStacked`, `LineMarkersStacked100`, `PieOfPie`, `etc.`.|
-|sourceData|string|Объект Range, соответствующий исходным данным.|
-|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
+|sourceData|Json|Объект Range, соответствующий исходным данным.|
+|seriesBy|string|Необязательный параметр. Указывает, что способ столбцы или строки используются в качестве рядов данных на диаграмме.  Возможные значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [Chart](../resources/chart.md) в тексте отклика.
+Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChart](../resources/chart.md) в теле ответа.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -70,13 +70,13 @@ Content-length: 94
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chart"
+  "@odata.type": "microsoft.graph.workbookChart"
 } -->
 ```http
 HTTP/1.1 200 OK

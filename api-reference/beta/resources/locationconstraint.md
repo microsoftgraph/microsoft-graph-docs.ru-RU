@@ -2,12 +2,12 @@
 title: Тип ресурсов locationConstraint
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 localization_priority: Normal
-ms.openlocfilehash: f311ceae1718333ba6ffca55f046317d6da53705
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e15acbac529179b0d79fd8b9b52f691fa9ef1322
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522744"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573034"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -24,7 +24,7 @@ ms.locfileid: "29522744"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationconstraint"
+  "@odata.type": "microsoft.graph.locationConstraint"
 }-->
 
 ```json

@@ -2,18 +2,18 @@
 title: Тип ресурса expressionInputObject
 description: 'Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.'
 localization_priority: Normal
-ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510780"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570962"
 ---
 # <a name="expressioninputobject-resource-type"></a>Тип ресурса expressionInputObject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.
+Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) действие выполняется вычисление выражения.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

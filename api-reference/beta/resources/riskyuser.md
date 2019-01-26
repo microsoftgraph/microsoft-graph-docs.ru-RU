@@ -4,12 +4,12 @@ description: Представляет пользователей Azure AD, в г
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515715"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572187"
 ---
 # <a name="riskyusers-resource-type"></a>Тип ресурса riskyUsers
 
@@ -42,13 +42,13 @@ ms.locfileid: "29515715"
 |`userDisplayName`|`string`|Отображаемое имя рискованный пользователя|
 |`userPrincipalName`|`string`|Имя участника-пользователя рискующий|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|UserObjectId| Уникальный идентификатор пользователя, с которым связано событие данного риска с.|
-|isGuest|isGuest| Рискованный пользователя может быть Домашняя страница пользователя (B2E) или Гость (B2B, B2C).|
-|isDeleted|isDeleted| Пользователь может или не может быть удалена. |
+|id|string| Уникальный идентификатор пользователя, с которым связано событие данного риска с.|
+|isGuest|boolean| Рискованный пользователя может быть Домашняя страница пользователя (B2E) или Гость (B2B, B2C).|
+|isDeleted|boolean| Пользователь может или не может быть удалена. |
 |riskState|riskState| Рискованный пользователя может присутствовать в одном из нескольких состояний. |
 |riskDetail|riskDetail| Рискованный пользователь сможет в определенном состоянии нескольким причинам. |
 |riskLevel|riskLevel| Рискованный пользователь может рассматриваться как один из нескольких уровней риска. |
@@ -60,9 +60,8 @@ ms.locfileid: "29515715"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-
   ],
-  "@odata.type": "microsoft.graph.riskyusers"
+  "@odata.type": "microsoft.graph.riskyUser"
 }-->
 
 ```json

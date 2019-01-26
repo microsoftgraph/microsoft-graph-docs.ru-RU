@@ -3,12 +3,13 @@ title: 'reportRoot: getSharePointActivityFileCounts'
 description: Узнайте, сколько уникальных пользователей с лицензиями работали с хранящимися на сайтах SharePoint файлами.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 8da5e12ec4bf620f0101d81aaeadf5ab61c90d18
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 3e9f577bd4847def41803083c49efa2679c65369
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954829"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571739"
 ---
 # <a name="reportroot-getsharepointactivityfilecounts"></a>reportRoot: getSharePointActivityFileCounts
 
@@ -34,7 +35,7 @@ ms.locfileid: "27954829"
 GET /reports/getSharePointActivityFileCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 В URL-адресе запроса укажите следующий параметр и действительное значение.
 
@@ -83,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/reports/getSharePointActivityFileCounts(per
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

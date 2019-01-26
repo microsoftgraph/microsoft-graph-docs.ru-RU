@@ -3,12 +3,13 @@ title: Отчеты об активных пользователях Office 365
 description: Отчет активных пользователей Office 365 используется для получения числа лицензий продукта используются с пользователями в организации и детализации для получения сведений о том, какие пользователи используют какие продукты. В этом отчете может помочь администраторам определение использования продуктов или пользователей, которым могут понадобиться дополнительные учебные курсы или сведения.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: e85924b7066dde92f0db5fd0b3f1f83dd32fd0c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 638550fbc44acd0154a2dab5c062e2061fa9c582
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516212"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29571767"
 ---
 # <a name="office-365-active-users-reports"></a>Отчеты об активных пользователях Office 365
 

@@ -4,18 +4,18 @@ description: Получение свойств и связей объекта pa
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 57a2c75bbe671086c89818a84f7f8266b90713c6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1cafa1b430f20fc74d045c498d7bba81eb160463
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528517"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572635"
 ---
 # <a name="get-page"></a>Получение страницы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [page](../resources/page.md).
+Получение свойств и связей объекта [page](../resources/onenotepage.md).
 
 **Получение сведений о странице**
 
@@ -62,14 +62,14 @@ GET /sites/{id}/onenote/pages/{id}
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Accept | string | `application/json` |
+| Accept | строка | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [page](../resources/page.md) в теле отклика.
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [page](../resources/onenotepage.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -77,7 +77,7 @@ GET /sites/{id}/onenote/pages/{id}
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
  <!-- { "blockType": "ignored" } -->
 ```http

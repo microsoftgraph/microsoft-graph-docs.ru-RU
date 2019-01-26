@@ -3,12 +3,13 @@ title: Тип ресурса office365GroupsActivityDetail
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2968a3a5459f286e4aac69e2fd606adc1b38e39b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 1b467f73ed2a4a5e48cb1243c5b1326591bcd707
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951826"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575120"
 ---
 # <a name="office365groupsactivitydetail-resource-type"></a>Тип ресурса office365GroupsActivityDetail
 
@@ -18,7 +19,7 @@ ms.locfileid: "27951826"
 | :-------------------------------- | :------ | ---------------------------------------- |
 | reportRefreshDate                 | Date    | Последняя дата контента.          |
 | groupDisplayName                  | Строка  | Отображаемое имя группы.           |
-| isDeleted                         | Логический | Был ли этот пользователь удаленного или программных удалены. |
+| isDeleted                         | Boolean | Был ли этот пользователь удаленного или программных удалены. |
 | ownerPrincipalName                | Строка  | Имя участника группы владельца.          |
 | lastActivityDate                  | Date    | Дата последнего действия для следующих сценариев: групповой полученных почтового ящика электронной почты; пользователю просматривать, редактировать, общих или синхронизирован файлы в библиотеке документов SharePoint. пользователь просматривает страницы SharePoint; пользователь учтена, чтение или оцененных сообщений в группах Yammer. |
 | groupType                         | Строка  | Тип группы. Возможные значения: **Public** или **Private**. |

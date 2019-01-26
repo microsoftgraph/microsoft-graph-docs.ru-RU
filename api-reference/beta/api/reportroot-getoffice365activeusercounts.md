@@ -3,12 +3,13 @@ title: 'reportRoot: getOffice365ActiveUserCounts'
 description: Получение количества активных пользователей за каждый день отчетного периода по продукту.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 409c489ca985c7a357be13ae0ee0a487b54f1eac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 9b24008a3ea13308f0d83a2ac6a6ef31ece32469
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528174"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575316"
 ---
 # <a name="reportroot-getoffice365activeusercounts"></a>reportRoot: getOffice365ActiveUserCounts
 
@@ -52,7 +53,7 @@ GET /reports/getOffice365ActiveUserCounts(period='{period_value}')
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -85,7 +86,7 @@ CSV-файл содержит столбцы со следующими заго�
 Следующие свойства объекта **[office365ActiveUserCounts](../resources/office365activeusercounts.md)** не поддерживаются в Китае Microsoft Graph обслуживается 21Vianet:
 
 - Yammer
-- Команды
+- группы
 
 ## <a name="example"></a>Пример
 
@@ -106,9 +107,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -150,7 +151,7 @@ Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Y
 GET https://graph.microsoft.com/beta/reports/getOffice365ActiveUserCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

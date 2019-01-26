@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса RangeFormat
+title: Тип ресурса rangeFormat
 description: Объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1394153a09a30c273280dab5469a40e2e0c2c4ad
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511361"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572425"
 ---
 # <a name="rangeformat-resource-type"></a>Тип ресурса RangeFormat
 
@@ -22,10 +22,10 @@ ms.locfileid: "29511361"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|Получение объекта RangeFormat | [RangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
-|Создание объекта RangeBorder |RangeBorder| Создание объекта RangeBorder путем добавления в коллекцию границ.|
-|Список границ |Коллекция объектов RangeBorder| Получение коллекции объектов RangeBorder.|
-|[Update](../api/rangeformat-update.md) | [RangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
+|[Получение объекта RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
+|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
+|[Список границ](../api/rangeformat-list-borders.md) |[rangeBorder](rangeborder.md) коллекции| Получение коллекции объектов RangeBorder.|
+|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 
@@ -41,10 +41,10 @@ ms.locfileid: "29511361"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|borders|Коллекция объектов [RangeBorder](rangeborder.md)|Коллекция объектов границ, которые применяются к общему выделенному диапазону. Только для чтения.|
-|fill|[RangeFill](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
-|font|[RangeFont](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
-|protection|[FormatProtection](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
+|borders|[rangeBorder](rangeborder.md) коллекции|Коллекция объектов границ, которые применяются к общему выделенному диапазону. Только для чтения.|
+|fill|[rangeFill](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
+|font|[rangeFont](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
+|protection|[formatProtection](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

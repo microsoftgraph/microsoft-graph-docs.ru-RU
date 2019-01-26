@@ -3,12 +3,13 @@ title: 'reportRoot: getTeamsDeviceUsageUserDetail'
 description: Получение сведений об использовании устройств Microsoft Teams по каждому пользователю.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 0e24a66905afa0ccb20c30fb4414e621cb4a1683
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 06689e29143afbc318ad1c9e0866db7c6f7658ff
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522282"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573174"
 ---
 # <a name="reportroot-getteamsdeviceusageuserdetail"></a>reportRoot: getTeamsDeviceUsageUserDetail
 
@@ -54,7 +55,7 @@ GET /reports/getTeamsDeviceUsageUserDetail(date=2017-09-01)
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 ### <a name="csv"></a>CSV
 
@@ -102,9 +103,9 @@ CSV-файл содержит столбцы со следующими заго�
 GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -146,7 +147,7 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
 GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

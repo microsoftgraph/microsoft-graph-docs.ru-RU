@@ -2,14 +2,14 @@
 title: Тип ресурса governanceSchedule
 description: 'Представляет расписание для governanceRoleAssignmentRequest. Для запроса назначений ролей, расписание определяет, когда следует выполнить операцию назначения ролей, время завершения назначения ролей и как часто следует выполнить операцию назначения ролей. '
 localization_priority: Normal
-ms.openlocfilehash: d7ccfe74804166ad2204ea02c072d79341cf75e7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 11ac010829309c9b701e20da8ad40ebf905e02ba
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508029"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575253"
 ---
-# <a name="governanceschedule-resource-type"></a>Тип ресурса governanceSchedule
+# <a name="microsoftgraphgovernanceschedule-resource-type"></a>Тип ресурса microsoft.graph.governanceSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -22,7 +22,7 @@ ms.locfileid: "29508029"
 |:---------------|:--------|:----------|
 |startDateTime|DateTimeOffset|Время начала назначения ролей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |endDateTime|DateTimeOffset|Время окончания назначения ролей. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. *Примечание: Если значение равно `null`, указывает постоянное назначение.*|
-|type|String|Тип расписания назначения ролей. Только `Once` поддерживается в данный момент.
+|type|Строка|Тип расписания назначения ролей. Только `Once` поддерживается в данный момент.
 |duration|Длительность|Длительность назначения ролей. Это в формате интервал времени.|
 
 ## <a name="json-representation"></a>Представление JSON

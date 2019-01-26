@@ -2,12 +2,12 @@
 title: 'servicePrincipal: список appRoleAssignments'
 description: Получение списка объектов approleassignment.
 localization_priority: Normal
-ms.openlocfilehash: af98d4b92e936a961d0edefe6a4f00c71a5a75ed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d9134985359a76b3d26b93aa675cdd82284a17b4
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508596"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574658"
 ---
 # <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: список appRoleAssignments
 
@@ -40,7 +40,7 @@ GET /servicePrincipals/{id}/appRoleAssignments
 ## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле ответа.
 ## <a name="example"></a>Пример
@@ -53,13 +53,13 @@ GET /servicePrincipals/{id}/appRoleAssignments
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment",
+  "@odata.type": "microsoft.graph.appRoleAssignment",
   "isCollection": true
 } -->
 ```http

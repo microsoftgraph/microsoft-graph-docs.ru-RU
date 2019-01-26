@@ -3,12 +3,13 @@ title: Тип ресурса office365ActiveUserCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 2eaeccb1fa3b67c6b3e1d2d7c88a1dfad4e40e88
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: bbc51e4859b005c01b0f8d2cfb2db3ca902d60e2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27959127"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572208"
 ---
 # <a name="office365activeusercounts-resource-type"></a>Тип ресурса office365ActiveUserCounts
 
@@ -25,7 +26,7 @@ ms.locfileid: "27959127"
 | Yammer            | Int64  | Число активных пользователей в Yammer. Любой пользователь, который можно публиковать, чтение или как сообщения считается активного пользователя. |
 | группы             | Int64  | Число активных пользователей в группы Microsoft. Любой пользователь, который сообщений, помещенных в каналы группы, отправленных сообщений в сеансах частной беседы или являлся участником собрания или вызовы считается активного пользователя. |
 | reportDate        | Date   | Дата, на котором выполнялись число пользователей. |
-| reportPeriod      | String | Количество дней, на которое отчета.    |
+| reportPeriod      | Строка | Количество дней, на которое отчета.    |
 
 ## <a name="json-representation"></a>Представление JSON
 

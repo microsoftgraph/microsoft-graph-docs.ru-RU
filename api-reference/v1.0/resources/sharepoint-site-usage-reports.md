@@ -3,12 +3,13 @@ title: Отчеты об использовании сайтов SharePoint
 description: Эти отчеты позволяют получить общее представление об отдаче от SharePoint на основе общего количества хранимых на сайтах SharePoint файлов, количества активно используемых файлов и объема хранилища, занятого всеми этими сайтами. После этого вы можете посмотреть развернутые отчеты, чтобы выявить тенденции и особенности для каждого сайта.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: b5fdcf5c264fcbcc499759cf955cc49cdac2976b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: 999be8cc10eb0bfa3c937d2fe3e5a849e7423a34
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954395"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575071"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Отчеты об использовании сайтов SharePoint
 

@@ -2,12 +2,12 @@
 title: тип веб-ресурса
 description: Задает параметры для веб-приложения.
 localization_priority: Normal
-ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 281a3f23dd0e22cae6b3ca2b67e2e9cd8b400740
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527670"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572719"
 ---
 # <a name="web-resource-type"></a>тип веб-ресурса
 
@@ -20,8 +20,8 @@ ms.locfileid: "29527670"
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения.|
-|logoutUrl|String| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML. |
-|oauth2AllowImplicitFlow|Логическое| Нерекомендуемое Не используйте. | 
+|logoutUrl|Строка| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML. |
+|oauth2AllowImplicitFlow|Boolean| Рекомендуется использовать. Не используйте. | 
 |redirectUris|Коллекция String| Указывает URL-адресов, которые будут отправлены маркеры пользователя для входа в или отправки коды авторизации коды URI, OAuth 2.0 и маркеры доступа для перенаправления. |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -32,7 +32,7 @@ ms.locfileid: "29527670"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.web"
+  "@odata.type": "microsoft.graph.webApplication"
 }-->
 
 ```json

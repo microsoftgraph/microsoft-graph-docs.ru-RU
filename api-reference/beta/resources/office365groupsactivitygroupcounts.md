@@ -3,12 +3,13 @@ title: Тип ресурса office365GroupsActivityGroupCounts
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: d3c1272f9bd99c3e7ee0f29a4c303e1c8ca95525
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: pranoychaudhuri
+ms.openlocfilehash: b202d5189c1edeeeaa45d447aa7cc078dd263858
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975885"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572488"
 ---
 # <a name="office365groupsactivitygroupcounts-resource-type"></a>Тип ресурса office365GroupsActivityGroupCounts
 

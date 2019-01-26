@@ -4,12 +4,12 @@ description: Получение списка объектов chartseries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d7b730ceed812d6496dfcaa29eaac9cc87de8c39
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69e84b83456d1c1f962e2c20bdadae81d9276917
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527831"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572138"
 ---
 # <a name="list-series"></a>Список рядов
 
@@ -55,13 +55,13 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.chartSeries",
+  "@odata.type": "microsoft.graph.workbookChartSeries",
   "isCollection": true
 } -->
 ```http

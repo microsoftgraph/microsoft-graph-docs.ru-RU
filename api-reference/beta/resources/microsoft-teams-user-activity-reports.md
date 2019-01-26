@@ -3,12 +3,13 @@ title: Отчеты о действиях пользователей Microsoft T
 description: Использование отчетов об активности пользователей группами Майкрософт для получения полезные сведения о в действие пользователя группами Майкрософт в вашей организации.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 447aa9d36208ae9c966d86e733e99f81ab01e6ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: 4a071fb38ce9fd76aff4ccdc648201f91a600f24
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517703"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574721"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Отчеты о действиях пользователей Microsoft Teams
 

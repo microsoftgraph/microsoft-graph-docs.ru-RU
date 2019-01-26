@@ -1,15 +1,15 @@
 ---
-title: используемый тип ресурса
+title: Тип ресурса usedInsight
 description: Возможность получения, представляющее документы, используемые для определенного пользователя. Возвращает полезные сведения о наиболее важные документы, которые пользователь просматривать или доступны.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 35698741cd457f4e8d202b13dd9099bb2669b6e1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 056654a5e467e202b2bde5ac8ee98dccab93d7c9
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525859"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574231"
 ---
 # <a name="used-resource-type"></a>используемый тип ресурса
 
@@ -30,20 +30,26 @@ ms.locfileid: "29525859"
 
 | Свойство              | Тип                      | Описание  |
 | -------------         |---------------            | -------------|
-| id                    | String                    | Уникальный идентификатор связи. Только для чтения.        |
+| id                    | Строка                    | Уникальный идентификатор связи. Только для чтения.        |
 | lastUsed              | [usageDetails](insights-usagedetails.md)              | Сведения о последнего элемента просматривать и изменять пользователем. Только для чтения.     |
 | resourceVisualization | [resourceVisualization](insights-resourcevisualization.md)                | Свойства, которые можно использовать для визуализации документа в работу. Только чтение      |
 | resourceReference     | [resourceReference](insights-resourcereference.md)                      | Справочник по свойства используется документа, например URL-адрес и тип документа. Только чтение     |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| resource      | Entity        | Используется для перехода к элементу, который использовался. Для файлов вложений тип — *fileAttachment*. Для связанного вложения тип — *driveItem*. |
+| resource      | Коллекция сущностей | Используется для перехода к элементу, который использовался. Для файлов вложений тип — *fileAttachment*. Для связанного вложения тип — *driveItem*. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
 
+  ],
+  "@odata.type": "microsoft.graph.usedInsight"
+}-->
 ```json
 {
   "id": "string",
