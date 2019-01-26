@@ -1,25 +1,25 @@
 ---
 title: Тип ресурса outlookTask
-description: 'Элемент Outlook, можно отслеживать рабочего элемента. '
+description: 'Элемент Outlook, который может отслеживать рабочий элемент. '
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: f49c74af92037f430b72d7b9fffa4a85aba00942
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943275"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29513349"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Элемент Outlook, можно отслеживать рабочего элемента. 
+Элемент Outlook, который может отслеживать рабочий элемент. 
 
-Задачи можно использовать для отслеживания начала, из-за и фактических завершения даты и времени, ее хода выполнения или состоянии, является ли он повторяется и требует получает напоминание.
+Вы можете использовать задачу для отслеживания начала, запланированной и фактической даты и времени выполнения, хода выполнения или состояния, а также является ли она повторяющейся и требует ли напоминания.
 
-Свойства, связанные с даты в ресурсе **outlookTask** относятся следующие:
+Свойства, связанные с датами в ресурсе **outlookTask**, включают указанные ниже:
 
 - completedDateTime
 - createdDateTime
@@ -28,7 +28,7 @@ ms.locfileid: "27943275"
 - reminderDateTime
 - startDateTime
 
-По умолчанию POST, GET, ИСПРАВЛЕНИЙ и [завершения](../api/outlooktask-complete.md) операции возврата свойства, связанные с даты в их REST ответы в формате UTC. Можно использовать `Prefer: outlook.timezone` заголовок, чтобы все свойства, связанный с данными в ответ, представленного в часовом поясе, отличного от UTC. Следующий пример возвращает свойства, связанные с даты в EST в соответствующем ответа:
+По умолчанию операции POST, GET, PATCH и [complete](../api/outlooktask-complete.md) возвращают связанные с датами свойства в откликах REST в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC. В приведенном ниже примере связанные с датами свойства возвращаются в соответствующем отклике в часовом поясе EST:
 
 ```
 Prefer: outlook.timezone="Eastern Standard Time"
@@ -38,49 +38,49 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Получите свойства и связи задачи Outlook в почтовом ящике пользователя.|
-|[обновление](../api/outlooktask-update.md). | [outlookTask](outlooktask.md) |Измените записываемые свойства задачи Outlook. |
-|[Delete](../api/outlooktask-delete.md) | Нет |Удаление указанной задачи в почтовом ящике пользователя. |
-|[Complete](../api/outlooktask-complete.md)|[outlookTask](outlooktask.md) коллекции|Завершить задачу Outlook, которая устанавливает для свойства **completedDateTime** значение текущей датой и свойство **состояние** для `completed`.|
+|[Получение outlookTask](../api/outlooktask-get.md) | [outlookTask](outlooktask.md) |Получение свойств и связей задачи Outlook в почтовом ящике пользователя.|
+|[Обновление](../api/outlooktask-update.md) | [outlookTask](outlooktask.md) |Изменение записываемых свойств задачи Outlook. |
+|[Удаление](../api/outlooktask-delete.md) | Нет |Удаление определенной задачи в почтовом ящике пользователя. |
+|[Завершение](../api/outlooktask-complete.md)|Коллекция [outlookTask](outlooktask.md)|Завершение задачи Outlook с присвоением свойству **completedDateTime** значения текущей даты, а свойству **status** — значения `completed`.|
 |**Вложения**| | |
-|[Список вложений](../api/outlooktask-list-attachments.md) |Коллекция [attachment](attachment.md) | Получение всех вложений на задачи Outlook.|
-|[Добавление вложения](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Добавление файла, элемент (сообщение, события или контакт) или ссылку в файл как вложение в задачу.|
+|[Список вложений](../api/outlooktask-list-attachments.md) |Коллекция [attachment](attachment.md) | Получение всех вложений для задачи Outlook.|
+|[Добавление вложения](../api/outlooktask-post-attachments.md) |[attachment](attachment.md)| Добавление файла, элемента (сообщения, события или контакта) или ссылки на файл в виде вложения в задачу.|
 |**Расширенные свойства**| | |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Создайте один или несколько расширенных свойств одно значение в новой или существующей задачи Outlook.   |
-|[Задачи с одним значением расширенных свойств](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Получение задачи Outlook, которые содержат одно значение расширенные свойства с помощью `$expand` или `$filter`. |
-|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Создайте один или несколько расширенных свойств Многозначный в новой или существующей задачи Outlook.  |
-|[Задачи с несколькими значениями расширенных свойств](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Получение задачи Outlook, которая содержит свойство расширенного Многозначный с помощью `$expand`. |
+|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[outlookTask](outlooktask.md)  |Создание одного или нескольких расширенных свойств с одним значением в новой или существующей задаче Outlook.   |
+|[Получение задачи с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Получение задач Outlook, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
+|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [outlookTask](outlooktask.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новой или существующей задаче Outlook.  |
+|[Получение задачи с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [outlookTask](outlooktask.md) | Получение задачи Outlook, которая содержит расширенное свойство с несколькими значениями, с помощью параметра `$expand`. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|Строка|Имя пользователя, которому назначена задача.|
-|body|[itemBody](itembody.md)|Основная задача, который обычно содержит сведения о задаче. Обратите внимание на то, что поддерживается только тип HTML-код.|
-|categories|Коллекция String|Категории, связанные с задачей. Свойство **displayName** [outlookCategory](outlookcategory.md) , определяемые соответствует каждой категории.|
-|changeKey|Строка|Версия задачи.|
-|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанный часовой пояс, окончания задачи.|
-|createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства используется формат ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанный часовой пояс, которую требуется завершения задачи.|
-|hasAttachments|Логический|Значение true, если у задачи вложения.|
-|id|Строка|Уникальный идентификатор задачи. Только для чтения.|
+|assignedTo|String|Имя пользователя, которому назначена задача.|
+|body|[itemBody](itembody.md)|Текст задачи, который обычно содержит сведения о задаче. Обратите внимание, что поддерживается только тип HTML.|
+|categories|Коллекция String|Категории, связанные с задачей. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенному пользователем.|
+|changeKey|String|Версия задачи.|
+|completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача была завершена.|
+|createdDateTime|DateTimeOffset|Дата и время создания задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть завершена.|
+|hasAttachments|Boolean|Присвоено значение true, если у задачи есть вложения.|
+|id|String|Уникальный идентификатор задачи. Только для чтения.|
 |importance|string|Важность события. Возможные значения: `low`, `normal`, `high`.|
-|isReminderOn|Boolean|Значение true, если оповещение установлено значение Напоминать пользователю задачи.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию он не в формате UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства в формате ISO 8601 и всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|owner|Строка|Имя человека, создавшего задачу.|
-|parentFolderId|Строка|Уникальный идентификатор родительской папки задач.|
-|recurrence|[patternedRecurrence](patternedrecurrence.md)|Шаблон повторения для задачи.|
-|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время оповещения напоминание задачи, будет выполнена.|
+|isReminderOn|Boolean|Присвоено значение true, если установлено напоминание пользователю о задаче.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения задачи. По умолчанию используется формат UTC. Можно указать пользовательский часовой пояс в заголовке запроса. Значение свойства представлено в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|owner|String|Имя пользователя, создавшего задачу.|
+|parentFolderId|String|Уникальный идентификатор родительской папки задачи.|
+|recurrence|[patternedRecurrence](patternedrecurrence.md)|Расписание повторения задачи.|
+|reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время появления напоминания о задаче.|
 |sensitivity|string|Указывает уровень конфиденциальности для задачи. Возможные значения: `normal`, `personal`, `private`, `confidential`.|
-|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе после начала задачи.|
-|status|string|Указывает состояние или хода выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
-|subject|Строка|Краткое описание или название задачи.|
+|startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата в указанном часовом поясе, когда задача должна быть начата.|
+|status|string|Указывает состояние или ход выполнения задачи. Возможные значения: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|subject|String|Краткое описание или название задачи.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md) |Коллекция [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) вложений для задачи.  Только для чтения. Допускается значение null.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция Многозначный расширенных свойств, определенных для задачи. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенные свойства одно значение, определенное для задачи. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md) для задачи.  Только для чтения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для задачи. Только для чтения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенных свойств с одним значением, определенных для задачи. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -123,10 +123,15 @@ Prefer: outlook.timezone="Eastern Standard Time"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "outlookTask resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/outlooktask.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

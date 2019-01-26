@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса канала
-description: 'Канал представляет коллекцию chatMessages в группе. '
+title: Тип ресурса channel
+description: 'Канал — это коллекция объектов chatMessages в команде. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6529c555e418589cb757a1bc52bda520bd792745
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 73775cb446e9cd90eaf31ade28f25638465c884e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952330"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29511004"
 ---
-# <a name="channel-resource-type"></a>Тип ресурса канала
+# <a name="channel-resource-type"></a>Тип ресурса channel
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Канал представляет коллекцию [chatMessages](chatmessage.md) внутри [групп](../resources/team.md). Канал представляет раздел и логическая изоляции обсуждения в группе. Примеры может быть канала «Пятница Lunch группы» и «Архитектура обсуждений» канала.
+Канал — это коллекция объектов [chatMessages](chatmessage.md) в [команде](../resources/team.md). Канал представляет тему и логически обособляет обсуждение в команде. Примеры: канал "Пятничный обед команды" и канал "Обсуждение архитектуры".
 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список каналов](../api/channel-list.md) | Коллекция [канала](channel.md) | Получите список каналов в данной группы.|
-|[Создание канала](../api/channel-post.md) | [канал](channel.md) | Создайте новый канал, включая отображаемое имя и описание.|
-|[Получение канала](../api/channel-get.md) | [канал](channel.md) | Чтение свойства и связи канала.|
-|[Обновление канала](../api/channel-patch.md) | [канал](channel.md) | Обновление свойств канала.|
+|[Перечисление каналов](../api/channel-list.md) | Коллекция [channel](channel.md) | Получение списка каналов в команде.|
+|[Создание канала](../api/channel-post.md) | [channel](channel.md) | Создание нового канала путем добавления отображаемого имени и описания.|
+|[Получение канала](../api/channel-get.md) | [channel](channel.md) | Чтение свойств и связей канала.|
+|[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
-|[Список сообщения](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
-|[Создать поток разговора](../api/channel-post-chatthreads.md) | [chatThread](chatthread.md) коллекции| Создайте поток разговора в указанном канала.|
+|[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
+|[Создание беседы в чате](../api/channel-post-chatthreads.md) | Коллекция [chatThread](chatthread.md)| Создание беседы в чате указанного канала.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|описание|String|Необязательное текстовое описание для канала.|
-|displayName|String|Имя канала, как оно будет отображаться для пользователей в группах Майкрософт.|
-|id|String|Уникальный идентификатор, каналов. Только для чтения.|
-|isFavoriteByDefault|Boolean|Является ли канал должен автоматически помечаются «Избранное» для всех членов группы. Значение по умолчанию: `false`.|
-|email|Boolean| Адрес электронной почты для отправки сообщений на канал. Только для чтения.|
-|webUrl|String|Гиперссылка, можно перейти к канала в группах Майкрософт. Это URL-адрес, который вы получаете при щелкните правой кнопкой мыши канала в группах Майкрософт и выберите ссылку Get для канала. Этот URL-адрес должен быть обрабатываются как непрозрачный больших двоичных объектов и не синтаксический анализ. Только для чтения.|
+|description|String|Необязательное текстовое описание канала.|
+|displayName|String|Имя канала, отображаемое для пользователя в Microsoft Teams.|
+|id|String|Уникальный идентификатор канала. Только для чтения.|
+|isFavoriteByDefault|Boolean|Должен ли канал автоматически помечаться как "Избранное" для всех участников команды. Значение по умолчанию: `false`.|
+|email|Boolean| Адрес электронной почты для отправки сообщений в канал. Только для чтения.|
+|webUrl|String|Гиперссылка, ведущая к каналу в Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по каналу в Microsoft Teams и выборе пункта "Получить ссылку на канал". Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. Только для чтения.|
 
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|messages|[chatMessage](chatmessage.md) коллекции|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null. В настоящее время этот интерфейс API только поддерживает чтение, но со временем будут поддерживать сообщения о записи слишком.|
-|chatThreads|[chatThread](chatthread.md) коллекции|(Это постепенно пользу свойства сообщения) chatThreads поддерживает создание новых сообщений, но не чтение сообщений. ChatThreads — это свойство навигации, а значение NULL.|
-|вкладки|[teamsTab](../resources/teamstab.md) коллекции|Коллекция всех вкладок в канале. Свойство навигации.|
+|messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null. В настоящее время этот API поддерживает чтение, но в конечном итоге будет также поддерживать написание сообщений.|
+|chatThreads|Коллекция [chatThread](chatthread.md)|(Заменено свойством сообщения). chatThreads поддерживает создание новых сообщений, но не чтение сообщений. ChatThreads — это свойство навигации. Допускает значение null.|
+|tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -74,10 +74,15 @@ ms.locfileid: "27952330"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "channel resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/channel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса servicePrincipal
-description: Представляет экземпляр объекта приложения в каталоге. Наследуется от directoryObject.
+description: Представляет экземпляр приложения в каталоге. Наследуется от directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: 2df27225f62e7c2b7b026bb3d829abf546241267
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27880208"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29512117"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет экземпляр объекта приложения в каталоге. Наследуется от [directoryObject](directoryobject.md).
+Представляет экземпляр приложения в каталоге. Наследуется от [directoryObject](directoryobject.md).
 
 Этот ресурс поддерживает:
 
@@ -65,67 +65,72 @@ ms.locfileid: "27880208"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Логический| **значение true,** Если включена участника учетной записи службы. в противном случае — **false**.            |
-|appDisplayName|Строка|Отображаемое имя, предоставляемые элементом соответствующего приложения.|
-|appId|String|Уникальный идентификатор для соответствующего приложения (его свойство **appId** ).|
-|appRoleAssignmentRequired|Логический|Указывает, будет ли **appRoleAssignment** пользователю или группе требуется перед Azure AD выпустит пользователя или маркер доступа к приложению. Значение null не допускается. |
-|appRoles|Коллекция [роли приложения](approle.md)|Роли приложений, предоставляемые элементом соответствующего приложения. Дополнительные сведения см в определении свойств **appRoles** на сущность [приложения](application.md) . Значение null не допускается. |
-|displayName|Строка|Отображаемое имя участника-службы.|
-|errorUrl|Строка|            |
-|Домашняя страница|Строка|URL-адрес домашней страницы соответствующего приложения.|
-|keyCredentials|[keyCredential](keycredential.md) коллекции|Коллекция ключей учетные данные, связанные со службой участника. Значение null не допускается.            |
-|logoutUrl|Строка| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML.  |
-|oauth2Permissions|[oAuth2Permission](oauth2permission.md) коллекции|Разрешения OAuth 2.0, предоставляемые элементом соответствующего приложения. Дополнительные сведения см в определении свойств **oauth2Permissions** на сущность [приложения](application.md) . Значение null не допускается.            |
-|id|Строка|Уникальный идентификатор для участников-служб. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
-|passwordCredentials|[passwordCredential](passwordcredential.md) коллекции|Коллекция пароль учетных данных, связанных с участников-служб. Значение null не допускается. |
-|preferredTokenSigningKeyThumbprint|Строка|Зарезервировано для внутреннего пользования. Не записывать или в противном случае использовать это свойство. Могут быть удалены в будущих версиях. |
-|publisherName|String|Отображаемое имя клиента, в котором указаны соответствующего приложения.|
-|replyUrls|Коллекция String|URL-адреса, что маркеры пользователей будут отправлены для входа с ним приложении или перенаправления коды авторизации коды URI, OAuth 2.0, и будут отправлены маркеры доступа для соответствующего приложения. Значение null не допускается. |
-|samlMetadataUrl|Строка| |
-|servicePrincipalNames|Коллекция String|Коды URI, определение соответствующего приложения. Дополнительные сведения содержатся, [приложения и объекты участников-служб](https://msdn.microsoft.com/library/azure/dn132633.aspx). **Любой** оператор является обязательным для выражения фильтра с несколькими значениями свойств.  Значение null не допускается. |
-|теги|Коллекция String| Значение null не допускается. |
+|accountEnabled|Boolean| Значение **true**, если учетная запись субъекта-службы включена. В противном случае используется значение **false**.            |
+|appDisplayName|String|Отображаемое имя, предоставляемое связанным приложением.|
+|appId|String|Уникальный идентификатор для связанного приложения (его свойство **appId**).|
+|appRoleAssignmentRequired|Boolean|Указывает, требуется ли объект **appRoleAssignment** для пользователя или группы, перед тем как Azure AD выпустит маркер пользователя или доступа для приложения. Значение null не допускается. |
+|appRoles|Коллекция [appRole](approle.md)|Роли приложения, предоставляемые связанным приложением. Дополнительные сведения см. в определении свойства **appRoles** для объекта [application](application.md). Значение null не допускается. |
+|displayName|String|Отображаемое имя для субъекта-службы.|
+|errorUrl|String|            |
+|homepage|String|URL-адрес домашней страницы связанного приложения.|
+|keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с субъектом-службой. Значение null не допускается.            |
+|logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML.  |
+|oauth2Permissions|Коллекция [oAuth2Permission](oauth2permission.md)|Разрешения OAuth 2.0, предоставляемые связанным приложением. Дополнительные сведения см. в определении свойства **oauth2Permissions** для объекта [application](application.md). Значение null не допускается.            |
+|id|String|Уникальный идентификатор для субъекта-службы. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
+|passwordCredentials|Коллекция [passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с субъектом-службой. Значение null не допускается. |
+|preferredTokenSigningKeyThumbprint|String|Зарезервировано только для внутреннего использования. Не записывайте и не используйте иным образом это свойство. Может быть удалено в будущих версиях. |
+|publisherName|String|Отображаемое имя клиента, в котором указано связанное приложение.|
+|replyUrls|Коллекция String|URL-адреса, которым отправляются маркеры пользователей для входа с помощью связанного приложения, или URI перенаправления, которым отправляются коды авторизации OAuth 2.0 и маркеры доступа для связанного приложения. Значение null не допускается. |
+|samlMetadataUrl|String| |
+|ServicePrincipalNames|Коллекция String|URI, определяющие связанное приложение. Дополнительные сведения см. в статье [Объекты приложения и объекты субъекта-службы](https://msdn.microsoft.com/library/azure/dn132633.aspx). Для выражений фильтра в случае многозначных свойств требуется оператор **any**.  Значение null не допускается. |
+|tags|Коллекция String| Значение null не допускается. |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъектов-служб), назначенные этой участников-служб. Только для чтения.|
-|appRoleAssignments|[appRoleAssignment](approleassignment.md) коллекции|Приложения, которым назначена участников-служб. Только для чтения. Допускается значение null.|
-|createdObjects|Коллекция [directoryObject](directoryobject.md)|Каталог объекты, созданные в этом участников-служб. Только для чтения. Допускается значение null.|
-|memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, которые участника-службы является членом. Методы HTTP: GET только для чтения. Допускается значение null.|
-|oauth2PermissionGrants|[oAuth2PermissionGrant](oauth2permissiongrant.md) коллекции|Предоставляет олицетворения пользователя, связанные с этой участников-служб. Только для чтения. Допускается значение null.|
-|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, принадлежащие участников-служб. Только для чтения. Допускается значение null.|
-|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, являющиеся владельцами участников-служб. Владельцы — это набор пользователей без прав администратора, которые могут изменять этот объект. Только для чтения. Допускается значение null.|
-|политика|[политики](policy.md) семейства сайтов|Политики, назначенные для участников-служб.|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
+|appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен субъект-служба. Только для чтения. Допускается значение null.|
+|createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
+|memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
+|oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Олицетворения пользователя, связанные с субъектом-службой. Только для чтения. Допускается значение null.|
+|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Допускается значение null.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие субъектом-службой. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Только для чтения. Допускается значение null.|
+|policy|Коллекция [policy](policy.md)|Политики, назначенные субъекту-службе.|
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Чтение свойства и связи объекта servicePrincipal.|
-|[Список servicePrincipals](../api/serviceprincipal-list.md) | [servicePrincipal](serviceprincipal.md) коллекции | Получение списка объектов servicePrincipal. |
-|[Создание appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Создайте новый appRoleAssignment, отправку сообщений в коллекцию appRoleAssignments.|
-|[Список appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |[appRoleAssignment](approleassignment.md) коллекции| Получите коллекцию объектов appRoleAssignment.|
-|[Список createdObjects](../api/serviceprincipal-list-createdobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получите коллекцию объектов createdObject.|
-|[Перечисление memberOf](../api/serviceprincipal-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, которые эта служба участника непосредственно входит из из свойства навигации член групп.|
-|[Доверия транзитивных член списка](../api/serviceprincipal-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, которые участника-службы является членом. Эта операция доверия транзитивных и включает в себя группы, которые эта служба участника, вложенных входит. |
-|[Список назначенных политик](../api/policy-list-assigned.md)| [политики](policy.md) семейства сайтов| Получите все политики, назначенные для этого объекта.|
-|[Список oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |[oAuth2PermissionGrant](oauth2permissiongrant.md) коллекции| Получите коллекцию объектов oAuth2PermissionGrant.|
-|[Список ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получите коллекцию объектов ownedObject.|
-|[Добавление владельца](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Создайте новый владелец, отправку сообщений владельцев семейства.|
-|[Список владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получите владельцем коллекции объектов.|
-|[обновление](../api/serviceprincipal-update.md). | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
-|[Delete](../api/serviceprincipal-delete.md) | Нет |Удалите объект servicePrincipal. |
+|[Получение объекта servicePrincipal](../api/serviceprincipal-get.md) | [servicePrincipal](serviceprincipal.md) |Чтение свойств и связей объекта servicePrincipal.|
+|[Перечисление servicePrincipals](../api/serviceprincipal-list.md) | Коллекция [servicePrincipal](serviceprincipal.md) | Получение списка объектов servicePrincipal. |
+|[Создание объекта appRoleAssignment](../api/serviceprincipal-post-approleassignments.md) |[appRoleAssignment](approleassignment.md)| Создание объекта appRoleAssignment путем добавления в коллекцию appRoleAssignments.|
+|[Перечисление appRoleAssignments](../api/serviceprincipal-list-approleassignments.md) |Коллекция [appRoleAssignment](approleassignment.md)| Получение коллекции объектов appRoleAssignment.|
+|[Перечисление createdObjects](../api/serviceprincipal-list-createdobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов createdObject.|
+|[Перечисление memberOf](../api/serviceprincipal-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп, непосредственным участником которых является субъект-служба, из свойства навигации memberOf.|
+|[Перечисление транзитивных свойств memberOf](../api/serviceprincipal-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, в которых участвует субъект-служба. Эта операция является транзитивной и включает группы, в которых состоит субъект-служба. |
+|[Перечисление назначенных политик](../api/policy-list-assigned.md)| Коллекция [policy](policy.md)| Получение всех политик, назначенных объекту.|
+|[Перечисление oauth2PermissionGrants](../api/serviceprincipal-list-oauth2permissiongrants.md) |Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)| Получение коллекции объектов oAuth2PermissionGrant.|
+|[Перечисление ownedObjects](../api/serviceprincipal-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов ownedObject.|
+|[Добавление владельца](../api/serviceprincipal-post-owners.md) |[directoryObject](directoryobject.md)| Создание владельца путем добавления в коллекцию владельцев.|
+|[Перечисление владельцев](../api/serviceprincipal-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение коллекции объектов owner.|
+|[Обновление](../api/serviceprincipal-update.md) | [servicePrincipal](serviceprincipal.md)  |Обновление объекта servicePrincipal. |
+|[Удаление](../api/serviceprincipal-delete.md) | Нет. |Удаление объекта servicePrincipal. |
 |[checkMemberGroups](../api/serviceprincipal-checkmembergroups.md)|Коллекция String||
 |[getMemberGroups](../api/serviceprincipal-getmembergroups.md)|Коллекция String||
 |[getMemberObjects](../api/serviceprincipal-getmemberobjects.md)|Коллекция String||
-|[delta](../api/serviceprincipal-delta.md)|servicePrincipal коллекции| Получите добавочные изменения субъектов-служб. |
+|[delta](../api/serviceprincipal-delta.md)|Коллекция servicePrincipal| Получение добавочных изменений для субъектов-служб. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "servicePrincipal resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/serviceprincipal.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
