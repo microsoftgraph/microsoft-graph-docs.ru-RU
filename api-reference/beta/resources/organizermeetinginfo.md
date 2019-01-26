@@ -4,45 +4,46 @@ description: Сведения о собрании, содержащий орга
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1aa72e37e1f2332b10fd5aecc38b1b8d42ce1303
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512243"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575008"
 ---
-# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="d4761-103">Тип ресурса organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="d4761-103">organizerMeetingInfo resource type</span></span>
+# <a name="organizermeetinginfo-resource-type"></a><span data-ttu-id="0244b-103">Тип ресурса organizerMeetingInfo</span><span class="sxs-lookup"><span data-stu-id="0244b-103">organizerMeetingInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d4761-104">Сведения о собрании, содержащий организатора собрания.</span><span class="sxs-lookup"><span data-stu-id="d4761-104">Meeting information containing the organizer of the meeting.</span></span>
+<span data-ttu-id="0244b-104">Сведения о собрании, содержащий организатора собрания.</span><span class="sxs-lookup"><span data-stu-id="0244b-104">Meeting information containing the organizer of the meeting.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d4761-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d4761-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="0244b-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="0244b-105">Properties</span></span>
 
-| <span data-ttu-id="d4761-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d4761-106">Property</span></span>                     | <span data-ttu-id="d4761-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d4761-107">Type</span></span>                          | <span data-ttu-id="d4761-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d4761-108">Description</span></span>                                     |
+| <span data-ttu-id="0244b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="0244b-106">Property</span></span>                     | <span data-ttu-id="0244b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="0244b-107">Type</span></span>                          | <span data-ttu-id="0244b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="0244b-108">Description</span></span>                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| <span data-ttu-id="d4761-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="d4761-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="d4761-110">Логическое</span><span class="sxs-lookup"><span data-stu-id="d4761-110">Boolean</span></span>                       | <span data-ttu-id="d4761-111">Указывает, если беседы можно продолжить после покидает узла беседы.</span><span class="sxs-lookup"><span data-stu-id="d4761-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
-| <span data-ttu-id="d4761-112">organizer</span><span class="sxs-lookup"><span data-stu-id="d4761-112">organizer</span></span>                    | [<span data-ttu-id="d4761-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="d4761-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="d4761-114">Организатор identity Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="d4761-114">The organizer Azure Active Directory identity.</span></span>  |
+| <span data-ttu-id="0244b-109">allowConversationWithoutHost</span><span class="sxs-lookup"><span data-stu-id="0244b-109">allowConversationWithoutHost</span></span> | <span data-ttu-id="0244b-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="0244b-110">Boolean</span></span>                       | <span data-ttu-id="0244b-111">Указывает, если беседы можно продолжить после покидает узла беседы.</span><span class="sxs-lookup"><span data-stu-id="0244b-111">Indicates if a conversation can continue once the host of the conversation leaves.</span></span> |
+| <span data-ttu-id="0244b-112">organizer</span><span class="sxs-lookup"><span data-stu-id="0244b-112">organizer</span></span>                    | [<span data-ttu-id="0244b-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="0244b-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="0244b-114">Организатор identity Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="0244b-114">The organizer Azure Active Directory identity.</span></span>  |
 
-## <a name="json-representation"></a><span data-ttu-id="d4761-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d4761-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0244b-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0244b-115">JSON representation</span></span>
 
-<span data-ttu-id="d4761-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d4761-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="0244b-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0244b-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
 
   ],
+  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="d4761-117">Пример</span><span class="sxs-lookup"><span data-stu-id="d4761-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="0244b-117">Пример</span><span class="sxs-lookup"><span data-stu-id="0244b-117">Example</span></span>
 
 <!-- {
   "blockType": "example",

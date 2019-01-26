@@ -2,29 +2,29 @@
 title: 'synchronizationSchema: filterOperators'
 description: Список всех операторы, поддерживаемые в области видимости фильтров.
 localization_priority: Normal
-ms.openlocfilehash: 68e0c9f583e92989213d1442aee1610b1495bae0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c564142aa6a26b3f83fa5f82036e3b97dc13e672
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516471"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573230"
 ---
-# <a name="synchronizationschema-filteroperators"></a><span data-ttu-id="44921-103">synchronizationSchema: filterOperators</span><span class="sxs-lookup"><span data-stu-id="44921-103">synchronizationSchema: filterOperators</span></span>
+# <a name="synchronizationschema-filteroperators"></a><span data-ttu-id="ef8e4-103">synchronizationSchema: filterOperators</span><span class="sxs-lookup"><span data-stu-id="ef8e4-103">synchronizationSchema: filterOperators</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="44921-104">Список всех операторы, поддерживаемые в [области видимости фильтров](../resources/synchronization-filter.md).</span><span class="sxs-lookup"><span data-stu-id="44921-104">List all operators supported in the [scoping filters](../resources/synchronization-filter.md).</span></span>
+<span data-ttu-id="ef8e4-104">Список всех операторы, поддерживаемые в [области видимости фильтров](../resources/synchronization-filter.md).</span><span class="sxs-lookup"><span data-stu-id="ef8e4-104">List all operators supported in the [scoping filters](../resources/synchronization-filter.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="44921-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="44921-105">Permissions</span></span>
-<span data-ttu-id="44921-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="44921-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="ef8e4-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ef8e4-105">Permissions</span></span>
+<span data-ttu-id="ef8e4-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ef8e4-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="44921-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="44921-108">Permission type</span></span>                        | <span data-ttu-id="44921-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="44921-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ef8e4-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ef8e4-108">Permission type</span></span>                        | <span data-ttu-id="ef8e4-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ef8e4-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="44921-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="44921-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="44921-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="44921-111">Directory.ReadWrite.All</span></span>  |
-|<span data-ttu-id="44921-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="44921-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="44921-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44921-113">Not supported.</span></span>|
-|<span data-ttu-id="44921-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="44921-114">Application</span></span>                            |<span data-ttu-id="44921-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="44921-115">Not supported.</span></span> | 
+|<span data-ttu-id="ef8e4-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ef8e4-110">Delegated (work or school account)</span></span>     |<span data-ttu-id="ef8e4-111">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef8e4-111">Directory.ReadWrite.All</span></span>  |
+|<span data-ttu-id="ef8e4-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ef8e4-112">Delegated (personal Microsoft account)</span></span> |<span data-ttu-id="ef8e4-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-113">Not supported.</span></span>|
+|<span data-ttu-id="ef8e4-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ef8e4-114">Application</span></span>                            |<span data-ttu-id="ef8e4-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-115">Not supported.</span></span> | 
 
-## <a name="http-request"></a><span data-ttu-id="44921-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="44921-116">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ef8e4-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ef8e4-116">HTTP Request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
@@ -32,24 +32,24 @@ GET /servicePrincipals/{id}/synchronization/templates/{templateId}/schema/filter
 GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOperators
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="44921-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="44921-117">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="ef8e4-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ef8e4-117">Request headers</span></span>
 
-| <span data-ttu-id="44921-118">Имя</span><span class="sxs-lookup"><span data-stu-id="44921-118">Name</span></span>           | <span data-ttu-id="44921-119">Тип</span><span class="sxs-lookup"><span data-stu-id="44921-119">Type</span></span>    | <span data-ttu-id="44921-120">Описание</span><span class="sxs-lookup"><span data-stu-id="44921-120">Description</span></span>|
+| <span data-ttu-id="ef8e4-118">Имя</span><span class="sxs-lookup"><span data-stu-id="ef8e4-118">Name</span></span>           | <span data-ttu-id="ef8e4-119">Тип</span><span class="sxs-lookup"><span data-stu-id="ef8e4-119">Type</span></span>    | <span data-ttu-id="ef8e4-120">Описание</span><span class="sxs-lookup"><span data-stu-id="ef8e4-120">Description</span></span>|
 |:---------------|:--------|:-----------|
-| <span data-ttu-id="44921-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="44921-121">Authorization</span></span>  | <span data-ttu-id="44921-122">string</span><span class="sxs-lookup"><span data-stu-id="44921-122">string</span></span>  | <span data-ttu-id="44921-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="44921-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="ef8e4-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="ef8e4-121">Authorization</span></span>  | <span data-ttu-id="ef8e4-122">string</span><span class="sxs-lookup"><span data-stu-id="ef8e4-122">string</span></span>  | <span data-ttu-id="ef8e4-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="44921-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="44921-125">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="ef8e4-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ef8e4-125">Request body</span></span>
 
-<span data-ttu-id="44921-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="44921-126">Do not supply a request body for this method.</span></span>
+<span data-ttu-id="ef8e4-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-126">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="44921-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="44921-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ef8e4-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef8e4-127">Response</span></span>
 
-<span data-ttu-id="44921-128">Успешно завершена, этот метод возвращает `200, OK` код ответа и объект коллекции [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="44921-128">If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.</span></span>
+<span data-ttu-id="ef8e4-128">Успешно завершена, этот метод возвращает `200, OK` код ответа и объект коллекции [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-128">If successful, this method returns a `200, OK` response code and a [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) collection object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="44921-129">Пример</span><span class="sxs-lookup"><span data-stu-id="44921-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ef8e4-129">Пример</span><span class="sxs-lookup"><span data-stu-id="ef8e4-129">Example</span></span>
 
-##### <a name="request"></a><span data-ttu-id="44921-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="44921-130">Request</span></span>
-<span data-ttu-id="44921-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="44921-131">The following is an example of a request.</span></span>
+##### <a name="request"></a><span data-ttu-id="ef8e4-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="ef8e4-130">Request</span></span>
+<span data-ttu-id="ef8e4-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-131">The following is an example of a request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "synchronizationschema_filteroperators"
@@ -58,10 +58,10 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema/filterOperators
 ```
 
-##### <a name="response"></a><span data-ttu-id="44921-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="44921-132">Response</span></span>
-<span data-ttu-id="44921-133">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="44921-133">The following is an example of a response.</span></span>
+##### <a name="response"></a><span data-ttu-id="ef8e4-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef8e4-132">Response</span></span>
+<span data-ttu-id="ef8e4-133">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-133">The following is an example of a response.</span></span>
 
-><span data-ttu-id="44921-134">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="44921-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="44921-135">Будут возвращены все свойства в фактический вызов.</span><span class="sxs-lookup"><span data-stu-id="44921-135">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="ef8e4-134">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-134">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="ef8e4-135">Будут возвращены все свойства в фактический вызов.</span><span class="sxs-lookup"><span data-stu-id="ef8e4-135">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -76,13 +76,11 @@ Content-type: application/json
 {
     "value": [
         {
-            "name": "EQUALS",
-            "arity": "Binary",
+            "arity": "Unary",
             "multivaluedComparisonType": "All",
-            "supportedAttributeTypes": [
-                "String",
-                "Integer"
-            ]
+            "supportedAttributeTypes": [                
+                "@string"
+             ]
         }
     ]
 }
@@ -98,8 +96,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+               "Boolean"
             ]
         },
         {
@@ -107,7 +104,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Boolean"
+              "Boolean"
             ]
         },
         {
@@ -115,9 +112,6 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String",
-                "Binary",
                 "Boolean"
             ]
         },
@@ -126,9 +120,6 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Unary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String",
-                "Binary",
                 "Boolean"
             ]
         },
@@ -145,8 +136,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         },
         {
@@ -154,8 +144,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         },
         {
@@ -163,8 +152,7 @@ non-string type names like "Integer" or "Boolean"
             "arity": "Binary",
             "multivaluedComparisonType": "All",
             "supportedAttributeTypes": [
-                "Integer",
-                "String"
+                "Boolean"
             ]
         }
     ]

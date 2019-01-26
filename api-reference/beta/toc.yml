@@ -256,7 +256,7 @@ items:
       - name: Группы
         href: resources/groups-overview.md
         items:
-          - name: группа.
+          - name: Группа
             href: resources/group.md
             items:
               - name: Добавление в Избранное
@@ -6765,7 +6765,7 @@ items:
                 href: api/directory-deleteditems-restore.md
               - name: Список "Удаленные" пользователя
                 href: api/directory-deleteditems-user-owned.md
-          - name: Device
+          - name: Устройство
             href: resources/device.md
             items:
               - name: Список устройств
@@ -7409,8 +7409,8 @@ items:
                 href: api/sectiongroup-list-sections.md
               - name: Создание раздела
                 href: api/sectiongroup-post-sections.md
-          - name: Страницы
-            href: resources/page.md
+          - name: Страницы OneNote
+            href: resources/onenotepage.md
             items:
               - name: Перечисление страниц
                 href: api/onenote-list-pages.md
@@ -7705,7 +7705,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitygroupcounts.md
               - name: Получение количества действий
                 href: api/reportroot-getyammergroupsactivitycounts.md
-      - name: Безопасность
+      - name: Система безопасности
         href: resources/security-api-overview.md
         items:
           - name: Оповещения
@@ -7836,7 +7836,7 @@ items:
                 href: api/planneruser-list-favoriteplans.md
               - name: Список последних планов пользователя
                 href: api/planneruser-list-recentplans.md
-          - name: Задачи
+          - name: Задача
             href: resources/plannertask.md
             items:
               - name: Создание задачи
@@ -8174,7 +8174,7 @@ items:
       - name: Книги и диаграммы
         href: resources/excel.md
         items:
-          - name: Workbook
+          - name: Книга
             href: resources/workbook.md
             items:
               - name: Создание сеанса
@@ -8273,8 +8273,8 @@ items:
                 href: api/chart-setdata.md
               - name: Положение набора данных
                 href: api/chart-setposition.md
-          - name: Именованный элемент
-            href: resources/nameditem.md
+          - name: Именованный элемент Workbook
+            href: resources/workbooknameditem.md
             items:
               - name: Список с именем элемента
                 href: api/nameditem-get.md

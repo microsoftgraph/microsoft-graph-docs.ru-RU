@@ -2,30 +2,30 @@
 title: тип ресурса website
 description: Представляет веб-сайта.
 localization_priority: Normal
-ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 74f8d9807ad2627b8f6df1b22af795308ff0e430
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511228"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572383"
 ---
-# <a name="website-resource-type"></a><span data-ttu-id="c610d-103">тип ресурса website</span><span class="sxs-lookup"><span data-stu-id="c610d-103">website resource type</span></span>
+# <a name="website-resource-type"></a><span data-ttu-id="95dfb-103">тип ресурса website</span><span class="sxs-lookup"><span data-stu-id="95dfb-103">website resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c610d-104">Представляет веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="c610d-104">Represents a web site.</span></span>
+<span data-ttu-id="95dfb-104">Представляет веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="95dfb-104">Represents a web site.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="c610d-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="c610d-105">Properties</span></span>
-| <span data-ttu-id="c610d-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="c610d-106">Property</span></span>     | <span data-ttu-id="c610d-107">Тип</span><span class="sxs-lookup"><span data-stu-id="c610d-107">Type</span></span>   |<span data-ttu-id="c610d-108">Описание</span><span class="sxs-lookup"><span data-stu-id="c610d-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="95dfb-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="95dfb-105">Properties</span></span>
+| <span data-ttu-id="95dfb-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="95dfb-106">Property</span></span>     | <span data-ttu-id="95dfb-107">Тип</span><span class="sxs-lookup"><span data-stu-id="95dfb-107">Type</span></span>   |<span data-ttu-id="95dfb-108">Описание</span><span class="sxs-lookup"><span data-stu-id="95dfb-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c610d-109">type</span><span class="sxs-lookup"><span data-stu-id="c610d-109">type</span></span>|<span data-ttu-id="c610d-110">String</span><span class="sxs-lookup"><span data-stu-id="c610d-110">String</span></span>| <span data-ttu-id="c610d-111">Возможные значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="c610d-111">Possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
-|<span data-ttu-id="c610d-112">address</span><span class="sxs-lookup"><span data-stu-id="c610d-112">address</span></span>|<span data-ttu-id="c610d-113">string</span><span class="sxs-lookup"><span data-stu-id="c610d-113">string</span></span>|<span data-ttu-id="c610d-114">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="c610d-114">The URL of the website.</span></span>|
-|<span data-ttu-id="c610d-115">displayName</span><span class="sxs-lookup"><span data-stu-id="c610d-115">displayName</span></span>|<span data-ttu-id="c610d-116">string</span><span class="sxs-lookup"><span data-stu-id="c610d-116">string</span></span>|<span data-ttu-id="c610d-117">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="c610d-117">The display name of the web site.</span></span>|
+|<span data-ttu-id="95dfb-109">type</span><span class="sxs-lookup"><span data-stu-id="95dfb-109">type</span></span>|<span data-ttu-id="95dfb-110">websiteType</span><span class="sxs-lookup"><span data-stu-id="95dfb-110">websiteType</span></span>| <span data-ttu-id="95dfb-111">Возможные значения: `other`, `home`, `work`, `blog`, `profile`.</span><span class="sxs-lookup"><span data-stu-id="95dfb-111">The possible values are: `other`, `home`, `work`, `blog`, `profile`.</span></span>|
+|<span data-ttu-id="95dfb-112">address</span><span class="sxs-lookup"><span data-stu-id="95dfb-112">address</span></span>|<span data-ttu-id="95dfb-113">string</span><span class="sxs-lookup"><span data-stu-id="95dfb-113">string</span></span>|<span data-ttu-id="95dfb-114">URL-адрес веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="95dfb-114">The URL of the website.</span></span>|
+|<span data-ttu-id="95dfb-115">displayName</span><span class="sxs-lookup"><span data-stu-id="95dfb-115">displayName</span></span>|<span data-ttu-id="95dfb-116">string</span><span class="sxs-lookup"><span data-stu-id="95dfb-116">string</span></span>|<span data-ttu-id="95dfb-117">Отображаемое имя веб-сайта.</span><span class="sxs-lookup"><span data-stu-id="95dfb-117">The display name of the web site.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="c610d-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="c610d-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="95dfb-118">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="95dfb-118">JSON representation</span></span>
 
-<span data-ttu-id="c610d-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c610d-119">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="95dfb-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="95dfb-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -2,28 +2,28 @@
 title: Тип ресурса expressionInputObject
 description: 'Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.'
 localization_priority: Normal
-ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4f0ba06651fdd8a296b0939d05ecefe996f0089f
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510780"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29570962"
 ---
-# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="4054e-103">Тип ресурса expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="4054e-103">expressionInputObject resource type</span></span>
+# <a name="expressioninputobject-resource-type"></a><span data-ttu-id="8cf36-103">Тип ресурса expressionInputObject</span><span class="sxs-lookup"><span data-stu-id="8cf36-103">expressionInputObject resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="4054e-104">Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.</span><span class="sxs-lookup"><span data-stu-id="4054e-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) action performs an expression evaluation.</span></span>
+<span data-ttu-id="8cf36-104">Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) действие выполняется вычисление выражения.</span><span class="sxs-lookup"><span data-stu-id="8cf36-104">Represents an object to be used as input test data when the [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) action performs an expression evaluation.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="4054e-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="4054e-105">Properties</span></span>
-| <span data-ttu-id="4054e-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="4054e-106">Property</span></span>     | <span data-ttu-id="4054e-107">Тип</span><span class="sxs-lookup"><span data-stu-id="4054e-107">Type</span></span>   |<span data-ttu-id="4054e-108">Описание</span><span class="sxs-lookup"><span data-stu-id="4054e-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8cf36-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="8cf36-105">Properties</span></span>
+| <span data-ttu-id="8cf36-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="8cf36-106">Property</span></span>     | <span data-ttu-id="8cf36-107">Тип</span><span class="sxs-lookup"><span data-stu-id="8cf36-107">Type</span></span>   |<span data-ttu-id="8cf36-108">Описание</span><span class="sxs-lookup"><span data-stu-id="8cf36-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="4054e-109">definition</span><span class="sxs-lookup"><span data-stu-id="4054e-109">definition</span></span>|[<span data-ttu-id="4054e-110">objectDefinition</span><span class="sxs-lookup"><span data-stu-id="4054e-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="4054e-111">Определение объекта теста.</span><span class="sxs-lookup"><span data-stu-id="4054e-111">Definition of the test object.</span></span>|
-|<span data-ttu-id="4054e-112">properties</span><span class="sxs-lookup"><span data-stu-id="4054e-112">properties</span></span>|<span data-ttu-id="4054e-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="4054e-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="4054e-114">Значения свойств объекта теста.</span><span class="sxs-lookup"><span data-stu-id="4054e-114">Property values of the test object.</span></span>|
+|<span data-ttu-id="8cf36-109">definition</span><span class="sxs-lookup"><span data-stu-id="8cf36-109">definition</span></span>|[<span data-ttu-id="8cf36-110">objectDefinition</span><span class="sxs-lookup"><span data-stu-id="8cf36-110">objectDefinition</span></span>](synchronization-objectdefinition.md)|<span data-ttu-id="8cf36-111">Определение объекта теста.</span><span class="sxs-lookup"><span data-stu-id="8cf36-111">Definition of the test object.</span></span>|
+|<span data-ttu-id="8cf36-112">properties</span><span class="sxs-lookup"><span data-stu-id="8cf36-112">properties</span></span>|<span data-ttu-id="8cf36-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="8cf36-113">[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) collection</span></span>|<span data-ttu-id="8cf36-114">Значения свойств объекта теста.</span><span class="sxs-lookup"><span data-stu-id="8cf36-114">Property values of the test object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="4054e-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4054e-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8cf36-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8cf36-115">JSON representation</span></span>
 
-<span data-ttu-id="4054e-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4054e-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="8cf36-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8cf36-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
