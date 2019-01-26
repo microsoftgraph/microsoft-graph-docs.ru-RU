@@ -3,32 +3,33 @@ title: 'reportRoot: getMailboxUsageStorage'
 description: Узнайте, сколько места занято в хранилище организации.
 localization_priority: Normal
 ms.prod: reports
-ms.openlocfilehash: 23a5de57ba9a57b7e35e7cc1760c0cb284c98000
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: pranoychaudhuri
+ms.openlocfilehash: cda3efc8993b0d4098aaedcc05dab8e73c4af9b7
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521700"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577167"
 ---
-# <a name="reportroot-getmailboxusagestorage"></a><span data-ttu-id="c3012-103">reportRoot: getMailboxUsageStorage</span><span class="sxs-lookup"><span data-stu-id="c3012-103">reportRoot: getMailboxUsageStorage</span></span>
+# <a name="reportroot-getmailboxusagestorage"></a><span data-ttu-id="4b02c-103">reportRoot: getMailboxUsageStorage</span><span class="sxs-lookup"><span data-stu-id="4b02c-103">reportRoot: getMailboxUsageStorage</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="c3012-104">Узнайте, сколько места занято в хранилище организации.</span><span class="sxs-lookup"><span data-stu-id="c3012-104">Get the amount of storage used in your organization.</span></span>
+<span data-ttu-id="4b02c-104">Узнайте, сколько места занято в хранилище организации.</span><span class="sxs-lookup"><span data-stu-id="4b02c-104">Get the amount of storage used in your organization.</span></span>
 
-> <span data-ttu-id="c3012-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: использование почтовых ящиков](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span><span class="sxs-lookup"><span data-stu-id="c3012-105">**Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span></span>
+> <span data-ttu-id="4b02c-105">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в статье [Отчеты в Office 365: использование почтовых ящиков](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span><span class="sxs-lookup"><span data-stu-id="4b02c-105">**Note:** For details about different report views and names, see [Office 365 Reports - Mailbox usage](https://support.office.com/client/Mailbox-usage-beffbe01-ce2d-4614-9ae5-7898868e2729).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c3012-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c3012-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="4b02c-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4b02c-106">Permissions</span></span>
 
-<span data-ttu-id="c3012-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c3012-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="4b02c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4b02c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="c3012-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c3012-109">Permission type</span></span>                        | <span data-ttu-id="c3012-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c3012-110">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="4b02c-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4b02c-109">Permission type</span></span>                        | <span data-ttu-id="4b02c-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="4b02c-110">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="c3012-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c3012-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="c3012-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="c3012-112">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="c3012-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c3012-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3012-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c3012-114">Not supported.</span></span>                           |
-| <span data-ttu-id="c3012-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c3012-115">Application</span></span>                            | <span data-ttu-id="c3012-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="c3012-116">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4b02c-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4b02c-111">Delegated (work or school account)</span></span>     | <span data-ttu-id="4b02c-112">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4b02c-112">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="4b02c-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4b02c-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="4b02c-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4b02c-114">Not supported.</span></span>                           |
+| <span data-ttu-id="4b02c-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4b02c-115">Application</span></span>                            | <span data-ttu-id="4b02c-116">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="4b02c-116">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="c3012-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c3012-117">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4b02c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4b02c-117">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -36,50 +37,50 @@ ms.locfileid: "29521700"
 GET /reports/getMailboxUsageStorage(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="c3012-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="c3012-118">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="4b02c-118">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="4b02c-118">Function parameters</span></span>
 
-<span data-ttu-id="c3012-119">В URL-адресе запроса укажите следующий параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="c3012-119">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="4b02c-119">В URL-адресе запроса укажите следующий параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="4b02c-119">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="c3012-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="c3012-120">Parameter</span></span> | <span data-ttu-id="c3012-121">Тип</span><span class="sxs-lookup"><span data-stu-id="c3012-121">Type</span></span>   | <span data-ttu-id="c3012-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c3012-122">Description</span></span>                              |
+| <span data-ttu-id="4b02c-120">Параметр</span><span class="sxs-lookup"><span data-stu-id="4b02c-120">Parameter</span></span> | <span data-ttu-id="4b02c-121">Тип</span><span class="sxs-lookup"><span data-stu-id="4b02c-121">Type</span></span>   | <span data-ttu-id="4b02c-122">Описание</span><span class="sxs-lookup"><span data-stu-id="4b02c-122">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="c3012-123">period</span><span class="sxs-lookup"><span data-stu-id="c3012-123">period</span></span>    | <span data-ttu-id="c3012-124">строка</span><span class="sxs-lookup"><span data-stu-id="c3012-124">string</span></span> | <span data-ttu-id="c3012-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="c3012-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="c3012-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="c3012-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="c3012-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="c3012-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="c3012-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c3012-128">Required.</span></span> |
+| <span data-ttu-id="4b02c-123">period</span><span class="sxs-lookup"><span data-stu-id="4b02c-123">period</span></span>    | <span data-ttu-id="4b02c-124">строка</span><span class="sxs-lookup"><span data-stu-id="4b02c-124">string</span></span> | <span data-ttu-id="4b02c-125">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="4b02c-125">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="4b02c-126">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="4b02c-126">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="4b02c-127">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="4b02c-127">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="4b02c-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4b02c-128">Required.</span></span> |
 
-<span data-ttu-id="c3012-129">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c3012-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="c3012-130">Выходной тип по умолчанию — текст и csv.</span><span class="sxs-lookup"><span data-stu-id="c3012-130">The default output type is text/csv.</span></span> <span data-ttu-id="c3012-131">Тем не менее если вы хотите указать тип выходных данных, можно использовать параметр $format запроса OData, задайте значение text/CSV-файла или приложение/json.</span><span class="sxs-lookup"><span data-stu-id="c3012-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="4b02c-129">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="4b02c-129">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="4b02c-130">Выходной тип по умолчанию — текст и csv.</span><span class="sxs-lookup"><span data-stu-id="4b02c-130">The default output type is text/csv.</span></span> <span data-ttu-id="4b02c-131">Тем не менее если вы хотите указать тип выходных данных, можно использовать параметр $format запроса OData, задайте значение text/CSV-файла или приложение/json.</span><span class="sxs-lookup"><span data-stu-id="4b02c-131">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c3012-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c3012-132">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="4b02c-132">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4b02c-132">Request headers</span></span>
 
-| <span data-ttu-id="c3012-133">Имя</span><span class="sxs-lookup"><span data-stu-id="c3012-133">Name</span></span>          | <span data-ttu-id="c3012-134">Описание</span><span class="sxs-lookup"><span data-stu-id="c3012-134">Description</span></span>               |
+| <span data-ttu-id="4b02c-133">Имя</span><span class="sxs-lookup"><span data-stu-id="4b02c-133">Name</span></span>          | <span data-ttu-id="4b02c-134">Описание</span><span class="sxs-lookup"><span data-stu-id="4b02c-134">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="c3012-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c3012-135">Authorization</span></span> | <span data-ttu-id="c3012-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c3012-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="4b02c-135">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4b02c-135">Authorization</span></span> | <span data-ttu-id="4b02c-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4b02c-p104">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="c3012-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3012-138">Response</span></span>
+## <a name="response"></a><span data-ttu-id="4b02c-138">Отклик</span><span class="sxs-lookup"><span data-stu-id="4b02c-138">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="c3012-139">CSV</span><span class="sxs-lookup"><span data-stu-id="c3012-139">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="4b02c-139">CSV</span><span class="sxs-lookup"><span data-stu-id="4b02c-139">CSV</span></span>
 
-<span data-ttu-id="c3012-140">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="c3012-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="c3012-141">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="c3012-141">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="4b02c-140">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="4b02c-140">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="4b02c-141">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="4b02c-141">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="c3012-142">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="c3012-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="4b02c-142">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="4b02c-142">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="c3012-143">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="c3012-143">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="4b02c-143">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="4b02c-143">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="c3012-144">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="c3012-144">Report Refresh Date</span></span>
-- <span data-ttu-id="c3012-145">"Storage Used (Byte)" (Используемый объем хранилища в байтах);</span><span class="sxs-lookup"><span data-stu-id="c3012-145">Storage Used (Byte)</span></span>
-- <span data-ttu-id="c3012-146">"Report Date" (Дата отчета);</span><span class="sxs-lookup"><span data-stu-id="c3012-146">Report Date</span></span>
-- <span data-ttu-id="c3012-147">"Report Period" (Отчетный период).</span><span class="sxs-lookup"><span data-stu-id="c3012-147">Report Period</span></span>
+- <span data-ttu-id="4b02c-144">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="4b02c-144">Report Refresh Date</span></span>
+- <span data-ttu-id="4b02c-145">"Storage Used (Byte)" (Используемый объем хранилища в байтах);</span><span class="sxs-lookup"><span data-stu-id="4b02c-145">Storage Used (Byte)</span></span>
+- <span data-ttu-id="4b02c-146">"Report Date" (Дата отчета);</span><span class="sxs-lookup"><span data-stu-id="4b02c-146">Report Date</span></span>
+- <span data-ttu-id="4b02c-147">"Report Period" (Отчетный период).</span><span class="sxs-lookup"><span data-stu-id="4b02c-147">Report Period</span></span>
 
-### <a name="json"></a><span data-ttu-id="c3012-148">JSON</span><span class="sxs-lookup"><span data-stu-id="c3012-148">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="4b02c-148">JSON</span><span class="sxs-lookup"><span data-stu-id="4b02c-148">JSON</span></span>
 
-<span data-ttu-id="c3012-149">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **[mailboxUsageStorage](../resources/mailboxusagestorage.md)** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="c3012-149">If successful, this method returns a `200 OK` response code and a **[mailboxUsageStorage](../resources/mailboxusagestorage.md)** object in the response body.</span></span>
+<span data-ttu-id="4b02c-149">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **[mailboxUsageStorage](../resources/mailboxusagestorage.md)** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="4b02c-149">If successful, this method returns a `200 OK` response code and a **[mailboxUsageStorage](../resources/mailboxusagestorage.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c3012-150">Пример</span><span class="sxs-lookup"><span data-stu-id="c3012-150">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4b02c-150">Пример</span><span class="sxs-lookup"><span data-stu-id="4b02c-150">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="c3012-151">CSV</span><span class="sxs-lookup"><span data-stu-id="c3012-151">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="4b02c-151">CSV</span><span class="sxs-lookup"><span data-stu-id="4b02c-151">CSV</span></span>
 
-<span data-ttu-id="c3012-152">Ниже приведен пример выводит CSV.</span><span class="sxs-lookup"><span data-stu-id="c3012-152">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="4b02c-152">Ниже приведен пример выводит CSV.</span><span class="sxs-lookup"><span data-stu-id="4b02c-152">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c3012-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3012-153">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4b02c-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="4b02c-153">Request</span></span>
 
-<span data-ttu-id="c3012-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c3012-154">The following is an example of the request.</span></span>
+<span data-ttu-id="4b02c-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4b02c-154">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -90,9 +91,9 @@ GET /reports/getMailboxUsageStorage(period='{period_value}')
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="c3012-155">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3012-155">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4b02c-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="4b02c-155">Response</span></span>
 
-<span data-ttu-id="c3012-156">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c3012-156">The following is an example of the response.</span></span>
+<span data-ttu-id="4b02c-156">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4b02c-156">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -102,7 +103,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="c3012-157">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="c3012-157">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="4b02c-157">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="4b02c-157">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -117,13 +118,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Storage Used (Byte),Report Date,Report Period
 ```
 
-### <a name="json"></a><span data-ttu-id="c3012-158">JSON</span><span class="sxs-lookup"><span data-stu-id="c3012-158">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="4b02c-158">JSON</span><span class="sxs-lookup"><span data-stu-id="4b02c-158">JSON</span></span>
 
-<span data-ttu-id="c3012-159">Ниже приведен пример, в котором возвращает JSON.</span><span class="sxs-lookup"><span data-stu-id="c3012-159">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="4b02c-159">Ниже приведен пример, в котором возвращает JSON.</span><span class="sxs-lookup"><span data-stu-id="4b02c-159">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c3012-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3012-160">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="4b02c-160">Запрос</span><span class="sxs-lookup"><span data-stu-id="4b02c-160">Request</span></span>
 
-<span data-ttu-id="c3012-161">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c3012-161">The following is an example of the request.</span></span>
+<span data-ttu-id="4b02c-161">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4b02c-161">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -134,11 +135,11 @@ Report Refresh Date,Storage Used (Byte),Report Date,Report Period
 GET https://graph.microsoft.com/beta/reports/getMailboxUsageStorage(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="c3012-162">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3012-162">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="4b02c-162">Отклик</span><span class="sxs-lookup"><span data-stu-id="4b02c-162">Response</span></span>
 
-<span data-ttu-id="c3012-163">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c3012-163">The following is an example of the response.</span></span>
+<span data-ttu-id="4b02c-163">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="4b02c-163">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="c3012-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c3012-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="4b02c-p106">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4b02c-p106">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
