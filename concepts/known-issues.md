@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 65a38e8852c878811d609b56b0f7f0ad1d4e73ff
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27820225"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576789"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -370,6 +370,3 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 Некоторые функции еще не доступны в Microsoft Graph. Если вы не нашли нужную функцию, можете использовать специальные [REST API Office 365](https://msdn.microsoft.com/office/office365/api/api-catalog). Сведения о функциях, доступных только через API Azure AD Graph, читайте в записи [Microsoft Graph или Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) в блоге.
 
-## <a name="feedback"></a>Отзывы
-
-> Ваш отзыв важен для нас. Для связи с нами используйте сайт [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph).

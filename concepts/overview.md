@@ -3,12 +3,12 @@ title: Обзор Microsoft Graph
 description: Microsoft Graph открывает доступ к данным и средствам искусственного интеллекта в Microsoft 365. С помощью единой модели программируемости Microsoft Graph можно работать с колоссальным объемом данных в Office 365, Enterprise Mobility + Security и Windows 10.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: d4cb238090abd5b8b78f5589b36db75ef090506f
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b8256cebe9e8e706a655221c3e1acc5947f9eecd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879914"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573713"
 ---
 # <a name="overview-of-microsoft-graph"></a>Обзор Microsoft Graph
 
@@ -105,7 +105,4 @@ Microsoft Graph Data Connect предоставляет новый способ 
 - Узнайте, как [получить маркер аутентификации](auth-overview.md) в приложении.
 - Начните [использовать API](use-the-api.md).
 
-## <a name="feedback"></a>Отзывы
-
-Ваш отзыв важен для нас. Для связи с нами используйте сайт [Stack Overflow](https://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Помечайте свои вопросы тегом {MicrosoftGraph}.
 

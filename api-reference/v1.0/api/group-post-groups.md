@@ -4,12 +4,12 @@ description: 'Используйте этот API, чтобы создать г�
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: bc83ccc3c32dbde12b93c1d22eb7640e4e72fcb8
-ms.sourcegitcommit: 71368f59d267c8188567529e74486e54cc122804
+ms.openlocfilehash: 8bf432d30ba000641654d8c5d457096f5bfcb70e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29442320"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574868"
 ---
 # <a name="create-group"></a>Создание группы
 Используйте этот API, чтобы создать группу согласно инструкциям в тексте запроса. Можно создать один из трех типов групп:
@@ -43,6 +43,7 @@ POST /groups
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
 В приведенной ниже таблице показаны свойства ресурса [group](../resources/group.md), которые необходимо указать при создании группы. 
