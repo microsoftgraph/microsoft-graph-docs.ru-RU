@@ -1,25 +1,25 @@
 ---
-title: Создание группы из группы
-description: Создание новой группы из группы.
+title: Создание команды из группы
+description: Создание новой команды из группы.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 277a889201f6a161b2ed4191721616a11ead2f41
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a28036cfb253405fab55eca80fa2b0a17232a96c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938694"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524795"
 ---
-# <a name="create-team-from-group"></a>Создание группы из группы
+# <a name="create-team-from-group"></a>Создание команды из группы
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание новой [группы](../resources/team.md) из [группы](../resources/group.md).
+Создание новой [команды](../resources/team.md) из [группы](../resources/group.md).
 
-Чтобы создать группу, группа должна иметь как минимум одной владелец.
+Чтобы создать команду, в группе должен быть хотя бы один владелец.
 
-Если группа была создана не превышает 15 минут, можно для вызова команды Создать завершаются с кодом 404 ошибки из-за задержки репликации. Рекомендуемый шаблон является попыток вызова команды Создать в три раза с 10 секунда между вызовами.
+Если группа создана менее 15 минут назад, вызов метода "Создание команды" может завершиться ошибкой с кодом 404 из-за задержек репликации. В качестве рекомендуемого шаблона следует повторить вызов метода "Создание команды" три раза с 10-секундной задержкой между вызовами.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,7 +31,7 @@ ms.locfileid: "27938694"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к групп, которые они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к группам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -48,13 +48,13 @@ PUT /groups/{id}/team
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON объекта [группы](../resources/team.md) .
+Предоставьте в тексте запроса описание объекта [team](../resources/team.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-Если успешно завершена, этот метод должен возвращать `201 Created` код ответа и объекта [группы](../resources/team.md) в теле ответа.
+При успешном выполнении этот метод должен вернуть код отклика `201 Created` и объект [team](../resources/team.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -88,7 +88,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика. 
 
->**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -130,14 +130,19 @@ Content-length: 401
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create Team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-put-teams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>См. также
 
-- [Создание группы с группой](/graph/teams-create-group-and-team)
+- [Создание группы с командой](/graph/teams-create-group-and-team)

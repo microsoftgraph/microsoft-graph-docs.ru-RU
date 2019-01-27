@@ -1,72 +1,72 @@
 ---
-title: Тип ресурса группы
-description: 'Группы в группах Microsoft — это коллекция каналов. '
+title: Тип ресурса team
+description: 'Команда в Microsoft Teams — это коллекция каналов. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 921b1367afe8e12d10d69cb16577ce73ba70c9f2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0e8f5a7644e56d1f6f2be08385fc1e9a280828ac
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972511"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29526209"
 ---
-# <a name="team-resource-type"></a>Тип ресурса группы
+# <a name="team-resource-type"></a>Тип ресурса team
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Группы в группах Microsoft — это коллекция [каналов](channel.md). Канал представляет раздел и логическая изоляции обсуждения в группе.
+Команда в Microsoft Teams — это коллекция [каналов](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
 
-Для любой группы связан с [группы](../resources/group.md).
-Группа имеет тот же идентификатор, как команда — например, /groups/ {идентификатор} / team совпадает с /teams/ {идентификатор}.
-Дополнительные сведения о работе с группами и участниками групп показано [Использование интерфейса API REST графическое представление Microsoft для работы с группами Майкрософт](teams-api-overview.md).
+Каждая команда связана с [группой](../resources/group.md).
+У группы такой же идентификатор, как у команды. Например, /groups/{id}/team совпадает с /teams/{id}.
+Дополнительные сведения о работе с группами и участниками в командах см. в статье [Работа с Microsoft Teams при помощи REST API Microsoft Graph](teams-api-overview.md).
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание группы](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Создание группы «с нуля». |
-|[Создание группы из группы](../api/team-put-teams.md) | [Группа](team.md) | Создание новой группы или добавление группы к существующей группе.|
-|[Получение группы](../api/team-get.md) | [Группа](team.md) | Извлечение свойств и связи из указанной группы.|
-|[Группа обновления](../api/team-update.md) | [Группа](team.md) |Обновление свойств указанной группы. |
-|[Удаление группы](/graph/api/group-delete?view=graph-rest-1.0) | Нет |Удаление группы и его связанную группу. |
-|[Клонирование группы](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Скопируйте группа и его связанную группу. |
-|[Группа архива](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Поместите группа в состояние только для чтения. |
-|[Unarchive группы](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановите группа в состояние чтение запись. |
-|[Список рабочих групп](../api/user-list-joinedteams.md) | семейства сайтов [групп](team.md) | Список групп, которые вы являетесь членом. |
-|[Список всех групп](/graph/teams-list-all-teams) | Коллекция объектов [group](group.md) | Список всех групп, которые имеют группами. |
-|[Публикация приложений для вашей организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание групп приложений видимым только для вашей организации. |
-|[Добавление приложения в группу](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Добавляет (установить) приложения в группу.|
-|[Добавление вкладки канала](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (установить) вкладки канал группы.|
-|[Список сообщения](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
+|[Создание команды](../api/team-post.md) | [teamsAsyncOperation](teamsasyncoperation.md) | Создание команды с нуля. |
+|[Создание команды из группы](../api/team-put-teams.md) | [team](team.md) | Создание команды или добавление команды в существующую группу.|
+|[Получение команды](../api/team-get.md) | [team](team.md) | Получение свойств и связей указанной команды.|
+|[Обновление команды](../api/team-update.md) | [team](team.md) |Обновление свойств указанной команды. |
+|[Удаление команды](/graph/api/group-delete?view=graph-rest-1.0) | Нет |Удаление команды и ее связанной группы. |
+|[Клонирование команды](../api/team-clone.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Копирование команды и ее связанной группы. |
+|[Архивация команды](../api/team-archive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Перевод команды в состояние только для чтения. |
+|[Распаковка команды](../api/team-unarchive.md) | [teamsAsyncOperation](../resources/teamsasyncoperation.md) |Восстановление команды в состояние чтения и записи. |
+|[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
+|[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
+|[Публикация приложений в организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание приложений Teams, видимых только для вашей организации. |
+|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
+|[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
+|[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание |
 |:---------------|:--------|:----------|
-|displayName|строка| Имя группы. |
-|description|строка| Необязательное описание для группы. |
-|classification|string| Дополнительные метки. Обычно описывает конфиденциальности данных или бизнес-рабочей группы. Должно соответствовать одному из набора предварительно настроенные в каталоге клиента. |
-|специализации|[teamSpecialization](teamspecialization.md)| Необязательное. Указывает, будет ли команда предназначена для конкретного варианта использования.  Специализация каждой группы имеет доступ к уникальное поведение и каждый раз, нацелено на пример его использования. |
-|visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и группы. Значения по умолчанию на Public. |
-|funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, memes и наклейки рабочих групп.|
-|guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки ли гости могут создать, обновить или удалить каналы рабочих групп.|
-|isArchived|Логический|Является ли эта группа в режиме только для чтения. |
-|memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки ли члены могут выполнять определенные действия, например, создание каналов и добавьте программы-роботы, рабочих групп.|
-|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки системы обмена сообщениями и упоминания рабочих групп.|
-|webUrl|String (только для чтения) | Гиперссылка, будут поступать на группы в клиенте группами Майкрософт. Это URL-адрес, который вы получаете при щелкните правой кнопкой мыши группы в клиенте Microsoft группы и выберите **получить ссылку на группы**. Этот URL-адрес должен быть обрабатываются как непрозрачный больших двоичных объектов и не синтаксический анализ. |
+|displayName|string| Имя команды. |
+|description|string| Необязательное описание для команды. |
+|classification|string| Необязательная метка. Обычно описывает конфиденциальность данных или работы команды. Должно соответствовать одному из предварительно настроенных наборов в каталоге клиента. |
+|specialization|[teamSpecialization](teamspecialization.md)| Необязательное свойство. Указывает, предназначена ли команда для определенного варианта использования.  У каждой специализации команды есть доступ к уникальным действиям и возможностям, предназначенным для своего варианта использования. |
+|visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и команды. Значение по умолчанию: Public. |
+|funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, мемов и наклеек в команде.|
+|guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.|
+|isArchived|Boolean|Находится ли команда в режиме только для чтения. |
+|memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
+|messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
+|webUrl|string (только для чтения) | Гиперссылка, ведущая к команде в клиенте Microsoft Teams. Это URL-адрес, получаемый при щелчке правой кнопкой мыши по команде в клиенте Microsoft Teams и выборе пункта **Получить ссылку на команду**. Этот URL-адрес должен обрабатываться как непрозрачный BLOB-объект и не должен анализироваться. |
 
 ## <a name="relationships"></a>Связи
 
 | Связь | Тип   | Описание |
 |:---------------|:--------|:----------|
-|apps|[teamsApp](teamsapp.md) коллекции| (Устаревший) Приложения, установленные в этой группе.|
-|каналы|Коллекция [канала](channel.md)|Коллекция каналы & сообщения, связанный с группой.|
-|installedApps|[teamsAppInstallation](teamsappinstallation.md) коллекции|Приложения, установленные в этой группе.|
-|owners|[user](user.md)| Список владельцев в эту группу. |
-|template|[teamsTemplate](teamstemplate.md)| Шаблон, который был создан в эту группу. |
+|apps|Коллекция [teamsApp](teamsapp.md)| (Устарело) Приложения, установленные в команде.|
+|channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
+|installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
+|owners|[user](user.md)| Список владельцев команды. |
+|template|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -90,14 +90,19 @@ ms.locfileid: "27972511"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "team resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/team.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 
 ## <a name="see-also"></a>См. также
-- [Создание группы с группой](/graph/teams-create-group-and-team)
-- [Обзор API групп](teams-api-overview.md)
+- [Создание группы с командой](/graph/teams-create-group-and-team)
+- [Обзор API Teams](teams-api-overview.md)

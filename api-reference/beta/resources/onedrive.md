@@ -3,16 +3,16 @@ title: Работа с файлами в Microsoft Graph
 description: С помощью Microsoft Graph можно создать приложение, которое подключается к файлам в OneDrive, OneDrive для бизнеса и библиотеках документов SharePoint. Используя Microsoft Graph, вы можете создавать различные решения для работы с файлами в Office 365. Возможны варианты как для простого хранения документов пользователей, так и сложные сценарии совместного использования файлов.
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 7d791f983573f56744a47952aff282f822568785
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8ed01ced4f1aa42f5e3d71b1ec07d6d5f746cb31
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965896"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521995"
 ---
 # <a name="working-with-files-in-microsoft-graph"></a>Работа с файлами в Microsoft Graph
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 С помощью Microsoft Graph можно создать приложение, которое подключается к файлам в OneDrive, OneDrive для бизнеса и библиотеках документов SharePoint. Используя Microsoft Graph, вы можете создавать различные решения для работы с файлами в Office 365. Возможны варианты как для простого хранения документов пользователей, так и сложные сценарии совместного использования файлов.
 
@@ -54,7 +54,7 @@ ms.locfileid: "27965896"
 
 * Как _свойства_ (например, **id** и **name**), которые представляют простые значения (строки, числа, логические значения).
 * Как _аспекты_ (например, **file** и **photo**), которые представляют сложные значения. Наличие аспекта **file** или **folder** указывает поведение и свойства ресурса **DriveItem**.
-* _Ссылки_ (например, **children** и **thumbnails**) указывают на коллекции других ресурсов.
+* Как _ссылки_ (например, **children** и **thumbnails**), которые указывают на коллекции других ресурсов.
 
 ## <a name="commonly-accessed-resources"></a>Часто используемые ресурсы
 
@@ -72,11 +72,9 @@ ms.locfileid: "27965896"
 | `/groups/{group-id}/drive` | Доступ к стандартной библиотеке документов группы по уникальному идентификатору этой группы. |
 | `/shares/{share-id}` | Доступ к ресурсу **DriveItem** по свойству **sharedId** или URL-адресу для совместного доступа. |
 
-Ваше приложение может обращаться к элементу **DriveItem** в ресурсе **Drive** не только по уникальному идентификатору, но и по относительному пути от известного ресурса.
-Чтобы путь не был относительным, используйте двоеточие (`:`).
-В этой таблице представлены примеры различных способов использования двоеточия для обращения к элементу по пути.
+Ваше приложение может получать доступ к **DriveItem** в ресурсе **Drive** не только по уникальному идентификатору, но и по относительному пути от известного ресурса. Чтобы путь не был относительным, используйте двоеточие (`:`). В этой таблице представлены примеры различных применений двоеточия для обращения к элементу по пути.
 
-| Путь | Ресурс |
+| Path | Ресурс |
 |---|---|
 | `/me/drive/root:/path/to/file` | Доступ к ресурсу **DriveItem** по относительному пути для корневой папки OneDrive пользователя. |
 | `/me/drive/items/{item-id}:/path/to/file` | Доступ к ресурсу **DriveItem** по относительному пути для другого элемента (экземпляра **DriveItem** с аспектом **folder**). |
@@ -93,7 +91,7 @@ ms.locfileid: "27965896"
 
 Ресурсы [DriveItem](driveitem.md) — это объекты в файловой системе диска. К ним можно обращаться по свойству **id** с использованием синтаксиса `/items/{item-id}` или по пути в файловой системе с использованием синтаксиса `/root:/path/to/item/`.
 
-У ресурсов DriveItem есть _аспекты_, предоставляющие данные об удостоверении и возможностях элемента.
+У ресурсов DriveItem есть _аспекты_, предоставляющие данные об особенностях и возможностях элемента.
 
 Ресурсы DriveItem с аспектом **folder** действуют как контейнеры элементов и содержат ссылку **children**, указывающую на коллекцию элементов в папке.
 
@@ -110,3 +108,11 @@ ms.locfileid: "27965896"
 Кроме того, с помощью Microsoft Graph ваше приложение может [получать доступ к общему содержимому](../api/shares-get.md) непосредственно по ссылке для совместного доступа.
 
  
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/onedrive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

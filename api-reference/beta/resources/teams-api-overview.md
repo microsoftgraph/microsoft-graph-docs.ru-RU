@@ -1,87 +1,95 @@
 ---
 title: Работа с Microsoft Teams при помощи API Microsoft Graph
-description: Группами Майкрософт — это рабочая область на основе чата в Office 365, который предоставляет встроенные доступ к календарей конкретных групп, файлы, заметки OneNote, планировщик работы планы и др.
+description: Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 8b14d975c1d1f58fd9c4724428b4800c567a5606
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2f101560bf716fcb3455346f7d6a3e01912e5451
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924526"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29523178"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Группами Майкрософт — это рабочая область на основе чата в Office 365, который предоставляет встроенные доступ к календарей конкретных групп, файлы, заметки OneNote, планировщик работы планы и др.
+Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
 
-## <a name="key-resources-in-microsoft-teams"></a>Основные ресурсы в группах Майкрософт
+## <a name="key-resources-in-microsoft-teams"></a>Основные ресурсы в Microsoft Teams
 
-| Resource | Methods |
+| Ресурс | Методы |
 |:---------------|:--------|
-|[Группа](../resources/team.md)| [список рабочих групп](../api/user-list-joinedteams.md), [список всех групп](/graph/teams-list-all-teams), [Создание](../api/team-put-teams.md), [Чтение](../api/team-get.md), [обновление](../api/team-update.md), [Удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонированной](../api/team-clone.md), [архив](../api/team-archive.md), [unarchive](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Добавить элемент](../api/group-post-members.md), [Удалить элемент](../api/group-delete-members.md), [Добавьте владельца](../api/group-post-owners.md), [Удалить владельца](../api/group-delete-owners.md), [Получение файлов](drive.md), [Получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [Получение планы](plannergroup.md), [Получение календаря](event.md) |
-|[канал](../resources/channel.md)|[список](../api/channel-list.md), [Создание](../api/channel-post.md), [Чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [Удаление](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[список](../api/teamstab-list.md), [Создание](../api/teamstab-add.md), [Чтение](../api/teamstab-get.md), [обновление](../api/teamstab-update.md), [Удаление](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[список](../api/teamsapp-list.md), [Публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [Удаление](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [список](../api/teamsappinstallation-list.md), [Установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [Удаление](../api/teamsappinstallation-delete.md) |
-| (Предварительная версия) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) и [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [список](/graph/api/channel-list-messages?view=graph-rest-beta), [Создание](/graph/api/channel-post-chatthreads?view=graph-rest-beta), [Чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
-| (Предварительная версия) [звонок](/graph/api/resources/call?view=graph-rest-beta) | [ответ](/graph/api/call-answer?view=graph-rest-beta), [Отклонить](/graph/api/call-reject?view=graph-rest-beta), [Перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключить звук](/graph/api/call-mute?view=graph-rest-beta), [Включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [Изменить экрана, общий доступ к роли](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [список участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашения участников](/graph/api/participant-invite?view=graph-rest-beta), [Отключить всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[team](../resources/team.md)| [перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [получение планов](plannergroup.md), [получение календаря](event.md) |
+|[channel](../resources/channel.md)|[список](../api/channel-list.md), [создание](../api/channel-post.md), [чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
+|[teamsTab](../resources/teamstab.md) |[список](../api/teamstab-list.md), [создание](../api/teamstab-add.md), [чтение](../api/teamstab-get.md), [обновление](../api/teamstab-update.md), [удаление](../api/teamstab-delete.md) |
+|[teamsApp](../resources/teamsapp.md)|[список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
+| (Предварительная версия) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) и [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [список](/graph/api/channel-list-messages?view=graph-rest-beta), [создание](/graph/api/channel-post-chatthreads?view=graph-rest-beta), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
+| (Предварительная версия) [call](/graph/api/resources/call?view=graph-rest-beta) | [ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
 
-## <a name="teams-and-groups"></a>Группы и группы
+## <a name="teams-and-groups"></a>Команды и группы
 
-В Microsoft Graph группами Майкрософт представлены [группы](../resources/group.md) ресурсов. Группы группами Майкрософт и Office 365 устранения различные потребности совместной работы групп. Почти все групповые функции применяются к группам Майкрософт и группы Office 365, например группового календаря, файлы, заметки, фотографии, планы и т. д. Основное различие между [team](team.md) и группы с Office 365 — режим обмена данными между членами. Участники группы общаться с сохраняемого чата в контексте конкретными группами. Office 365 сгруппировать элементы общаться по беседам группы, которые являются бесед электронной почты, которые происходят в контексте группы в Outlook.
+В Microsoft Graph приложение Microsoft Teams представлено ресурсом [group](../resources/group.md). Группы Microsoft Teams и Office 365 предназначены для различных требований совместной работы в группе. Почти всех групповые функции применимы к группам Microsoft Teams и Office 365, например календарь группы, файлы, заметки, фотографии, планы и т. д. Основное различие между [командой](team.md) и группой Office 365 состоит в режиме общения участников. Участники команды общаются в сохраняемом чате в контексте определенной команды. Участники группы Office 365 общаются с помощью групповых бесед, которые являются беседами по электронной почте, осуществляемыми в контексте группы в Outlook.
 
-Любой группы, имеющей группы имеет свойство **resourceProvisioningOptions** , содержащий «Группа». 
+У любой группы, содержащей команду, есть свойство **resourceProvisioningOptions** со значением Team. 
 
->**Примечание:** Свойство **Group.resourceProvisioningOptions** может быть изменено.
-Не добавлять или удалять «Группа» из этой коллекции; в противном случае вы получите неверные результаты, когда список всех групп.
+>**Примечание.** Свойство **Group.resourceProvisioningOptions** можно изменить.
+Не добавляйте и не удаляйте значение Team из этой коллекции; в противном случае вы получите неправильные результаты при перечислении всех команд.
 
-Ниже приведены различия между группами и группы на уровне API.
+Ниже указаны различия на уровне API между командами и группами.
 
-- Сохраняемый чат доступен только для групп Майкрософт. Эта функция иерархически представлены ресурсы [канала](../resources/channel.md), [chatThread](../resources/chatthread.md)и [chatMessage](../resources/chatmessage.md) .
-- Групповой беседы, доступные только для группы Office 365. Эта функция иерархически представлены ресурсы [, [conversationThread](../resources/conversationthread.md)и [публиковать](../resources/post.md) ](../resources/conversation.md). 
-- Метод [списка в состав группы](../api/user-list-joinedteams.md) применяется только к группами Майкрософт.
-- [Звонков и собрания по сети API-интерфейсы](./calls-api-overview.md) применяются только к группами Майкрософт.
-- В разделе также [Известные проблемы](/graph/known-issues) эти интерфейсы API.
+- Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md), [chatThread](../resources/chatthread.md) и [chatMessage](../resources/chatmessage.md).
+- Групповые беседы доступны только в группах Office 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md). 
+- Метод [Перечисление команд, к которым присоединился пользователь](../api/user-list-joinedteams.md) применяется только к Microsoft Teams.
+- [API звонков и собраний по сети](./calls-api-overview.md) применяются только к Microsoft Teams.
+- См. также [известные проблемы](/graph/known-issues) для этих API.
 
->**Примечание:** Если вы используете группы API в [приложение группами Майкрософт](https://docs.microsoft.com/en-us/microsoftteams/platform/#apps-in-microsoft-teams) , а не в отдельных приложения — например как часть tab или программа-робот под управлением Microsoft групп - следуйте указаниям в статье [С помощью Microsoft Graph на страницах группами Майкрософт](https://docs.microsoft.com/en-us/microsoftteams/platform/resources/microsoft-graph).
+>Примечание. Если вы используете интерфейсы API для групп в приложении Microsoft Teams, а не в отдельном приложении (например, для вкладки или бота в Microsoft Teams), следуйте инструкциям из статьи Использование Microsoft Graph на страницах Microsoft Teams.
 
-## <a name="membership-changes-in-microsoft-teams"></a>Изменения членства в группах Майкрософт
+## <a name="membership-changes-in-microsoft-teams"></a>Изменение состава участников в Microsoft Teams
 
-Чтобы добавить участников и владельцев группы, изменения членства [группы](../resources/group.md) с тем же идентификатором.
+Чтобы добавить участников и владельцев в команду, измените состав участников [группы](../resources/group.md) с таким же идентификатором.
 
 | Вариант использования      | Глагол      | URL-адрес |
 | ------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [Добавление члена](../api/group-post-members.md)    | POST      | параметры ref $/members/ /Groups/ {идентификатор}  |
-| [Удаление члена](../api/group-delete-members.md)   | DELETE    | /members/ /Groups/ {идентификатор} {userId} / $ref |
-| [Добавление владельца](../api/group-post-owners.md)     | POST       | параметры ref $/owners/ /Groups/ {идентификатор} |
-| [Удаление владельца](../api/group-delete-owners.md) | DELETE    | /owners/ /Groups/ {идентификатор} {userId} / $ref |
-| [Группа обновления](../api/team-update.md)  | PATCH     | /teams/ {идентификатор} |
+| [Добавление участника](../api/group-post-members.md)    | POST      | /groups/{id}/members/$ref  |
+| [Удаление участника](../api/group-delete-members.md)   | DELETE    | /groups/{id}/members/{userId}/$ref |
+| [Добавление владельца](../api/group-post-owners.md)     | POST       | /groups/{id}/owners/$ref |
+| [Удаление владельца](../api/group-delete-owners.md) | DELETE    | /groups/{id}/owners/{userId}/$ref |
+| [Обновление команды](../api/team-update.md)  | PATCH     | /teams/{id} |
 
-Мы рекомендуем при добавлении владельца также добавлять этого пользователя как члена группы. Если владелец, который не является участником группы, владельца и членство в изменения могут не отображаться немедленно в группами Майкрософт. Кроме того различных приложений и интерфейсы API будет обрабатывать, по-разному. Например группами Майкрософт покажут группам, что пользователь является участником или владельца, хотя командлеты PowerShell группами Майкрософт и joinedTeams/me/API отображаются только группы, в которой находится пользователь. Чтобы избежать путаницы, добавьте всех владельцев в список участников. 
+При добавлении владельца также рекомендуется добавить этого пользователя в качестве участника. Если владелец группы не является ее участником, изменения состава владельцев и участников могут сразу не отображаться в Microsoft Teams. Кроме того, разные приложения и API обрабатывают их по-разному. Например, Microsoft Teams отображает команды, в которых пользователь является участником или владельцем, а командлеты PowerShell Microsoft Teams и API /me/joinedTeams отображают только команды, в которых пользователь является участником. Чтобы избежать путаницы, добавьте всех владельцев в список участников. 
 
-Известная проблема: при удаление /groups/ {идентификатор} аудио- и вызывается владельцев, пользователь также удаляется из /groups/ {идентификатор} / элементы списка. Чтобы обойти это, рекомендуется удалить пользователя из владельцы и участники, а затем подождите 10 секунд, затем добавить их члены.
+Известная проблема: если вызвать запрос DELETE /groups/{id}/owners, пользователь также удаляется из списка /groups/{id}/members. Чтобы устранить эту проблему, рекомендуется удалить пользователя из владельцев и участников, подождать 10 секунд и снова добавить его к участникам.
 
-Добавление и удаление участников и владельцев, не ввода в фигурные скобки {}, применимую к идентификатору.
+При добавлении и удалении участников и владельцев, не применяйте фигурные скобки {} вокруг идентификатора.
 
-| Speed | Синтаксис | 
+| Скорость | Синтаксис | 
 | ------ | ----- |
 | Быстро | https://graph.microsoft.com/beta/groups/02bd9fd6-8f93-4758-87c3-1fb73740a315/members/48d31887-5fad-4d73-a9f5-3c356e68a038/$ref | 
-| Медленное | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
+| Медленно | https://graph.microsoft.com/beta/groups/{02bd9fd6-8f93-4758-87c3-1fb73740a315}/members/{48d31887-5fad-4d73-a9f5-3c356e68a038}/$ref | 
 
-Аналогично Если `userId` в URL-адрес или полезных данных выражается в виде имени участника-пользователя, а не как код GUID, будет работать медленнее.
+Аналогичным образом, если параметр `userId` в URL-адресе или полезных данных выражается как имя участника-пользователя (UPN), а не как идентификатор GUID, производительность будет ниже.
 
-| Speed | Синтаксис | 
+| Скорость | Синтаксис | 
 | ------ | ----- |
 | Быстро | 48d31887-5fad-4d73-a9f5-3c356e68a038 | 
-| Медленное | John@example.com | 
+| Медленно | alexeyorekhov@example.com | 
 
-При переводе медленнее пути, если текущий участник группы или владелец входит в систему группами Майкрософт приложений и веб-сайт, изменения будут отражены в течение часа.
-Если ни один из этих пользователей вход в систему группами Майкрософт приложений и веб-сайт, изменения не будут отражены до того времени, в течение часа после их входе в.
+При выборе медленного пути, если текущий участник или владелец команды вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения отразятся в течение часа.
+Если ни один из таких пользователей не вошел в систему в приложении или на веб-сайте Microsoft Teams, изменения не отразятся, пока не пройдет час после входа одного из них.
 
 ## <a name="see-also"></a>См. также
 
 [Обзор API Microsoft Teams](/graph/teams-concept-overview)
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teams-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

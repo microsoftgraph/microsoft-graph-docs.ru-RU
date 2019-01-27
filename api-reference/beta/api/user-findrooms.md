@@ -1,23 +1,23 @@
 ---
-title: 'пользователь: findRooms'
-description: 'Получение всех комнатах для собраний в клиент пользователя или в списке конкретных комнаты. '
+title: 'user: findRooms'
+description: 'Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. '
 localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 0be6034056b20473b65e9a04c70419b3e4e1ba95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 70bd060f3c2d5722dca365e4d5f4c7595eab26cd
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934011"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29524172"
 ---
-# <a name="user-findrooms"></a>пользователь: findRooms
+# <a name="user-findrooms"></a>user: findRooms
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех комнатах для собраний в клиент пользователя или в списке конкретных комнаты. 
+Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. 
 
-Клиенты можно упорядочить по комнаты для собраний списков комнат. Экземпляр [emailAddress](../resources/emailaddress.md) представлены каждого зала заседаний и список помещений. Можно [получить все списки помещения](user-findroomlists.md) в клиентов, получение всех комнатах в клиентов или получение всех комнатах в списке конкретных комнаты. Вы можете получить регистрация первые 100 комнат в клиентов.
+Клиенты могут упорядочивать помещения для собраний в списках помещений. Каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md). Можно [получить все списки помещений](user-findroomlists.md) в клиенте, получить все помещения в клиенте или получить все помещения в определенном списке помещений. Можно получить до 100 первых помещений в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -25,13 +25,13 @@ ms.locfileid: "27934011"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All User.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для получения всех комнатах клиента:
+Получение всех помещений в клиенте:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ GET /me/findRooms
 GET /users/<id>/findRooms
 ```
 
-Чтобы получить все помещения в список помещений конкретного клиента:
+Получение всех помещений в определенном списке помещений клиента:
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -51,28 +51,28 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 
 | Параметр запроса       | Тип | Описание |
 |:---------------|:----------|:----------|
-| RoomList | строка | SMTP-адрес, связанный с список помещений. Каждый список помещений представляется экземпляром [emailAddress](../resources/emailaddress.md) , которое включает в себя SMTP-адрес. |
+| RoomList | string | SMTP-адрес, связанный со списком помещений. Каждый список помещений представлен экземпляром [emailAddress](../resources/emailaddress.md), включающим SMTP-адрес. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` кода и [emailAddress](../resources/emailaddress.md) коллекции объект ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [emailAddress](../resources/emailaddress.md) в тексте отклика.
 
 
 ## <a name="example"></a>Пример
 
 ##### <a name="request-1"></a>Запрос 1
 
-В первом примере выполняется получение всех комнатах, определенные в пользователь выполнил вход для клиентов.
+В первом примере возвращаются все помещения, определенные в клиенте вошедшего пользователя.
 
 <!-- {
   "blockType": "request",
@@ -82,10 +82,10 @@ GET /users/<id>/findRooms(RoomList='{room_list}')
 GET https://graph.microsoft.com/beta/me/findRooms
 ```
 
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Отклик 1
 Ниже приведен пример отклика. 
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "user_get_rooms_in_tenant",
@@ -130,7 +130,7 @@ Content-type: application/json
 
 ##### <a name="request-2"></a>Запрос 2
 
-Во втором примере возвращает комнат в списке указанного комнаты, с адресом электронной почты Building2Rooms@contoso.onmicrosoft.com.
+Во втором примере возвращаются все помещения в указанном списке помещений, определенном по электронному адресу Building2Rooms@contoso.onmicrosoft.com.
 
 <!-- {
   "blockType": "request",
@@ -140,7 +140,7 @@ Content-type: application/json
 GET https://graph.microsoft.com/beta/me/findRooms(RoomList='Building2Rooms@contoso.onmicrosoft.com') 
 ```
 
-##### <a name="response-2"></a>Ответ 2
+##### <a name="response-2"></a>Отклик 2
 Ниже приведен пример отклика. 
 
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -177,10 +177,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRooms",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findrooms.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
