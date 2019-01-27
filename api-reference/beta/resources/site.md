@@ -2,19 +2,19 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/10/2017
-title: site
+title: Site
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1676a314b7c1283918518655b3180cbc70ca193e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 17b9b8731a2b4e4ce39fa2ee10535bcb302f1be3
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952351"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29514805"
 ---
-# <a name="site-resource-type"></a>Тип ресурса сайта
+# <a name="site-resource-type"></a>Тип ресурса site
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **site** предоставляет метаданные и связи для сайта SharePoint.
 
@@ -26,10 +26,10 @@ ms.locfileid: "27952351"
 | [Получение сайта][]                   | GET /sites/{site-id}
 | [Получение сайта по пути][]           | GET /sites/{hostname}:/{site-path}
 | [Получение сайта для группы][]       | GET /groups/{group-id}/sites/root
-| [Получение аналитики][]              | GET/Sites / {идентификатор сайта} / аналитики
-| [Получение действий по интервал][] | GET/Sites / {идентификатор сайта} / getActivitiesByInterval
-| [Перечисление страниц][]                 | GET/Sites / {идентификатор сайта} / pages
-| [Узлы корневого списка][]            | / Sites GET? фильтра = ne корневой значение null и выделить = siteCollection, webUrl
+| [Получение аналитики][]              | GET /sites/{site-id}/analytics
+| [Получение действий по интервалу][] | GET /sites/{site-id}/getActivitiesByInterval
+| [Перечисление страниц][]                 | GET /sites/{site-id}/pages
+| [Перечисление корневых сайтов][]            | GET /sites?filter=root ne null&select=siteCollection,webUrl
 | [Поиск сайтов][]           | GET /sites?search={query}
 
 [Получение сайта]: ../api/site-get.md
@@ -37,9 +37,9 @@ ms.locfileid: "27952351"
 [Получение сайта по пути]: ../api/site-getbypath.md
 [Получение сайта для группы]: ../api/site-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
-[Получение действий по интервал]: ../api/itemactivity-getbyinterval.md
+[Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 [Перечисление страниц]: ../api/sitepage-list.md
-[Узлы корневого списка]: ../api/site-list.md
+[Перечисление корневых сайтов]: ../api/site-list.md
 [Поиск сайтов]: ../api/site-search.md
 
 
@@ -47,13 +47,13 @@ ms.locfileid: "27952351"
 
 | Имя свойства            | Тип               | Описание
 |:-------------------------|:-------------------|:-----------------------------
-| **id**                   | строка             | Уникальный идентификатор элемента. Только для чтения.
+| **id**                   | string             | Уникальный идентификатор элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
-| **description**          | строка             | Текст с описанием сайта.
-| **eTag**;                 | string             | ETag для элемента. Только для чтения.                                                                  |
-| **displayName**          | строка             | Полное название сайта. Только для чтения.
+| **description**          | string             | Текст с описанием сайта.
+| **eTag**                 | string             | ETag для элемента. Только для чтения.                                                                  |
+| **displayName**          | string             | Полное название сайта. Только для чтения.
 | **lastModifiedDateTime** | DateTimeOffset     | Дата и время последнего изменения элемента. Только для чтения.
-| **name**                 | строка             | Имя или название элемента.
+| **name**                 | string             | Имя или название элемента.
 | **root**                 | [root][]           | Если это свойство присутствует, оно указывает на то, что сайт — корневой в семействе веб-сайтов. Только для чтения.
 | **sharepointIds**        | [sharepointIds][]  | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **siteCollection**       | [siteCollection][] | Предоставляет сведения о семействе веб-сайтов сайта. Доступно только на корневом сайте. Только для чтения.
@@ -63,14 +63,14 @@ ms.locfileid: "27952351"
 
 | Имя связи | Тип                             | Описание
 |:------------------|:---------------------------------|:----------------------
-| **Аналитика**     | [itemAnalytics][] ресурсов       | Аналитика о Просмотр действий, выполняемых на данном сайте.
-| **columns**       | Коллекция ([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
-| **contentTypes**  | Коллекция ([contentType][])      | Коллекция типов контента, определенных для этого сайта.
+| **analytics**     | Ресурс [itemAnalytics][]       | Аналитические данные о действиях просмотра, выполненных на этом сайте.
+| **columns**       | Collection([columnDefinition][]) | Коллекция определений столбцов, которые можно повторно использовать в разных списках на этом сайте.
+| **contentTypes**  | Collection([contentType][])      | Коллекция типов контента, определенных для этого сайта.
 | **drive**         | [drive][]                        | Диск по умолчанию (библиотека документов) для этого сайта.
 | **drives**        | Collection([drive][])            | Коллекция дисков (библиотек документов) на этом сайте.
 | **items**         | Collection([baseItem][])         | Используется для адресации любого элемента, содержащегося на этом сайте. Вам не удастся выполнить перечисление этой коллекции.
 | **lists**         | Collection([list][])             | Коллекция списков на этом сайте.
-| **страницы**         | Коллекции ([sitePage][])         | Набор страниц в списке SitePages на данном сайте.
+| **pages**         | Collection([sitePage][])         | Коллекция страниц в списке SitePages на этом сайте.
 | **sites**         | Collection([site][])             | Коллекция дочерних сайтов этого сайта.
 
 [columnDefinition]: columndefinition.md
@@ -79,7 +79,7 @@ ms.locfileid: "27952351"
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
-[списки]: list.md
+[list]: list.md
 [sitePage]: sitepage.md
 [root]: root.md
 [site]: site.md
@@ -135,11 +135,18 @@ ms.locfileid: "27952351"
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites",
-  "tocBookmarks": { "Resources/Site": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Site": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/site.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

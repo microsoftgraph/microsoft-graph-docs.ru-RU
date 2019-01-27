@@ -4,30 +4,30 @@ description: Событие в календаре.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 3a42bd4c87b6c4d8cb26160ae3c36bc7d6380b79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 3db8b53cd6ebb6b04cc0ad4f20db5c20a60f9e79
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981149"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516051"
 ---
 # <a name="event-resource-type"></a>Тип ресурса event
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Событие в календаре [пользователя](user.md) или календаря по умолчанию для [группы](group.md)с Office 365.
+Событие в календаре ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Office 365.
 
 Этот ресурс поддерживает:
 
-- Добавление настраиваемых свойств данные как [расширения](/graph/extensibility-overview).
-- Подписка на [уведомления об изменении](/graph/webhooks).
+- добавление собственных данных к настраиваемым свойствам в виде [расширений](/graph/extensibility-overview);
+- подписку на [уведомления об изменениях](/graph/webhooks);
 - отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](/graph/delta-query-overview) (функция [delta](../api/event-delta.md)).
 
-> **Примечание:** Существуют небольшие отличия таким способом, который может взаимодействовать с календарей пользователей, группы календарей и их событий:
+> **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей, календарями групп и их событиями:
 
- - Их можно организовать только календарей пользователей в [calendarGroup](calendargroup.md).
- - Outlook автоматически принимает все приглашения на собрания от имени группы. Для календарей _пользователей_ только можно [принять](../api/event-accept.md), [под вопросом принятие](../api/event-tentativelyaccept.md)или [отклонение](../api/event-decline.md) приглашения на собрания.
-  - Outlook не поддерживает напоминания о событиях группы. Можно [отложить](../api/event-snoozereminder.md) или [отклонение](../api/event-dismissreminder.md) [напоминание](reminder.md) для только календарей _пользователей_ .
+ - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+ - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях _пользователя_.
+  - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей _пользователя_.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -95,15 +95,15 @@ ms.locfileid: "27981149"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attendees|Коллекция [ATTENDEE](attendee.md)|Коллекция участников события.|
+|attendees|Коллекция [Attendee](attendee.md)|Коллекция участников события.|
 |body|[ItemBody](itembody.md)|Текст сообщения, связанного с событием. В формате HTML или текстовом формате.|
 |bodyPreview|Строка|Предварительный просмотр сообщения, связанного с событием. В текстовом формате.|
-|categories|Коллекция String|Категории, связанные с событием. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , определенные для этого пользователя.|
+|categories|Коллекция String|Категории, связанные с событием. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя.|
 |changeKey|String|Указывает версию объекта события. При каждом изменении события также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |end|[DateTimeTimeZone](datetimetimezone.md)|Дата и время завершения события.|
 |hasAttachments|Boolean|Задайте значение true, если у события есть вложения.|
-|id|Строка| Только для чтения.|
+|id|String| Только для чтения.|
 |importance|String|Важность события. Возможные значения: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Задайте значение true, если событие длится весь день.|
 |isCancelled|Boolean|Задайте значение true, если событие отменено.|
@@ -111,8 +111,8 @@ ms.locfileid: "27981149"
 |isReminderOn|Boolean|Задайте значение true, если установлено напоминание пользователю о событии.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |location|[Location](location.md)|Место проведения события.|
-|locations|[Расположение](location.md) семейства сайтов|Места проведения мероприятия или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
-|onlineMeetingUrl|String|URL-адрес для собрания по сети. Свойство имеет значение только в том случае, когда инициатора задает событие как собрание, такие как Скайп. Только для чтения.|
+|locations|Коллекция [Location](location.md)|Места проведения события или участия в нем. Свойства **location** и **locations** всегда совпадают друг с другом. Если вы обновите свойство **location**, предыдущие места в коллекции **locations** будут удалены и заменены новым значением **location**. |
+|onlineMeetingUrl|String|URL-адрес для собрания по сети. Свойство установлено только в том случае, если организатор определяет событие как собрание по сети, например в Skype. Только для чтения.|
 |organizer|[Recipient](recipient.md)|Организатор события.|
 |originalEndTimeZone|String|Часовой пояс завершения, указанный при создании события. Значение `tzone://Microsoft/Custom` указывает, что традиционный часовой пояс был задан в классическом приложении Outlook.|
 |originalStart|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -122,20 +122,20 @@ ms.locfileid: "27981149"
 |responseRequested|Boolean|Задайте значение true, если отправитель желает получить сообщение о согласии участвовать в событии или отклонении соответствующего приглашения.|
 |responseStatus|[ResponseStatus](responsestatus.md)|Указывает тип отклика, отправленного в ответ на сообщение о событии.|
 |sensitivity|String| Возможные значения: `normal`, `personal`, `private`, `confidential`.|
-|seriesMasterId|String|Идентификатор для повторяющихся серии главных элемента, если это событие является частью серии повторяющихся.|
+|seriesMasterId|String|Идентификатор для элемента образца повторяющегося ряда, если это событие входит в повторяющийся ряд.|
 |showAs|String|Отображаемое состояние. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |start|[DateTimeTimeZone](datetimetimezone.md)|Время начала события.|
 |subject|String|Текст в строке темы сообщения о событии.|
 |type|String|Тип события. Возможные значения: `singleInstance`, `occurrence`, `exception`, `seriesMaster`. Только для чтения|
-|ИД пользователя|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях. **Примечание:** это свойство выполняет те же функции, как `iCalUid` свойства [событий ресурсов](/graph/api/resources/event?view=graph-rest-1.0) на конечной версии 1.0, но не обязательно имеют одинаковые значения.|
+|uid|String|Уникальный идентификатор, совместно используемый всеми экземплярами события в разных календарях. **Примечание.** Предназначение этого свойства совпадает с предназначением свойства `iCalUid` для [ресурса события](/graph/api/resources/event?view=graph-rest-1.0) в конечной точке версии 1.0, но не гарантирует получение такого же значения.|
 |webLink|String|URL-адрес для открытия события в Outlook Web App.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция объектов [attachment](attachment.md)|Коллекция [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) вложений для события. Свойство навигации. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [Attachment](attachment.md)|Коллекция вложений [FileAttachment](fileattachment.md), [ItemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md) для события. Свойство навигации. Только для чтения. Допускается значение null.|
 |calendar|[Calendar](calendar.md)|Календарь, который содержит событие. Свойство навигации. Только для чтения.|
-|extensions|Коллекция [extension](extension.md)|Коллекция open расширения, определенные для события. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для события. Допускается значение null.|
 |instances|Коллекция [Event](event.md)|Экземпляры события. Свойство навигации. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для события. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для события. Только для чтения. Допускается значение null.|
@@ -144,20 +144,20 @@ ms.locfileid: "27981149"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список событий](../api/user-list-events.md)|Коллекция [Event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих сериях.|
+|[Перечисление событий](../api/user-list-events.md)|Коллекция [Event](event.md) |Получение списка объектов [event](../resources/event.md) в почтовом ящике пользователя. В этом списке указаны единичные собрания и главные собрания в соответствующих рядах.|
 |[Создание события](../api/user-post-events.md) |[event](event.md)| Создание события путем записи в коллекцию экземпляров.|
 |[Получение события](../api/event-get.md) | [event](event.md) |Считывание свойств и отношений объекта event.|
 |[Обновление](../api/event-update.md) | [event](event.md)   |Обновление объекта event. |
 |[Удаление](../api/event-delete.md) | Нет |Удаление объекта event. |
-|[cancel](../api/event-cancel.md) | Нет | Отправить сообщение об отмене из организатора для всех участников и Отмена указанного собрания. |
-|[accept](../api/event-accept.md)|Нет|Примите события, указанного в календаре пользователя.|
-|[tentativelyAccept](../api/event-tentativelyaccept.md)|Нет|Примите под вопросом события, указанного в календаре пользователя.|
-|[decline](../api/event-decline.md)|Нет|Отклонить приглашение на события, указанного в календаре пользователя.|
-|[forward](../api/event-forward.md)|Нет|Позволяет Организатор или участник собрания события пересылать запрос на собрание на нового получателя.|
+|[cancel](../api/event-cancel.md) | Нет | Отправка сообщения об отмене от организатора всем участникам и отмена указанного собрания. |
+|[accept](../api/event-accept.md)|Нет|Принятие указанного события в календаре пользователя.|
+|[tentativelyAccept](../api/event-tentativelyaccept.md)|Нет|Принятие под вопросом указанного события в календаре пользователя.|
+|[decline](../api/event-decline.md)|Нет|Отклонение приглашения на указанное событие в календаре пользователя.|
+|[forward](../api/event-forward.md)|Нет|Позволяет организатору или участнику собрания пересылать приглашение на собрание новому получателю.|
 |[delta](../api/event-delta.md)|Коллекция объектов [event](event.md)|Получение списка событий, которые были добавлены в **calendarView** (диапазон событий) основного календаря пользователя, обновлены в нем или удалены из него.|
-|[dismissReminder](../api/event-dismissreminder.md)|Нет|Отклонение напоминание для указанного события в календаре пользователя.|
-|[snoozeReminder](../api/event-snoozereminder.md)|Нет|Отложить напоминание для указанного события в календаре пользователя до нового времени.|
-|[Список экземпляров](../api/event-list-instances.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
+|[dismissReminder](../api/event-dismissreminder.md)|Нет|Отключение напоминания для указанного события в календаре пользователя.|
+|[snoozeReminder](../api/event-snoozereminder.md)|Нет|Откладывание напоминания для указанного события в календаре пользователя на другое время.|
+|[Перечисление экземпляров](../api/event-list-instances.md) |Коллекция [Event](event.md)| Получение коллекции объектов Event.|
 |**Вложения**| | |
 |[Список вложений](../api/event-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение всех вложений, добавленных к данным о событии.|
 |[Добавление вложения](../api/event-post-attachments.md) |[Attachment](attachment.md)| Добавление нового вложения к данным о событии путем публикации в коллекции вложений.|
@@ -182,10 +182,15 @@ ms.locfileid: "27981149"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/event.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

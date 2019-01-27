@@ -1,23 +1,23 @@
 ---
 title: Создание собрания по сети
-description: Создает собрания от имени пользователя, указанного в тексте запроса.
+description: Создание собрания по сети от имени пользователя, указанного в тексте запроса.
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: ac4fb9b378f644e5cf5ba5e9d6412a6ca1fd1b45
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: dc6521a09bcfaf52b7240d5ad63129fa729d7899
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946933"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29516870"
 ---
 # <a name="create-online-meeting"></a>Создание собрания по сети
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создает собрания от имени пользователя, указанного в тексте запроса.
+Создание собрания по сети от имени пользователя, указанного в тексте запроса.
 
-> **Примечание**: собрания не отображается на календарь пользователя.
+> **Примечание.** Собрание не отображается в календаре пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "27946933"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Application                            | OnlineMeetings.ReadWrite.All                |
+| Для приложений                            | OnlineMeetings.ReadWrite.All                |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,11 +40,11 @@ POST /applications/{id}/onlineMeetings
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [onlineMeeting](../resources/onlinemeeting.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [onlineMeeting](../resources/onlinemeeting.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [onlineMeeting](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -75,7 +75,7 @@ Content-Length: 1553
 }
 ```
 
-В тексте запроса укажите представление объекта [onlineMeeting](../resources/onlinemeeting.md) с JSON.
+В тексте запроса должно быть представление объекта [onlineMeeting](../resources/onlinemeeting.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
 
@@ -133,10 +133,15 @@ Content-Length: 1574
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create onlineMeeting",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/application-post-onlinemeetings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
