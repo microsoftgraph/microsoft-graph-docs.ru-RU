@@ -1,27 +1,27 @@
 ---
 title: Тип ресурса calendar
-description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для ресурса user или стандартный календарь для ресурса group, представляющего группу Office 365.
+description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для пользователя или стандартный календарь для группы Office 365.
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 9a4e260e95caacbb806883a760b113937fa1af86
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 162c2a4787d7b89b55135f61f4334c580b224051
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942285"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520272"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Office 365.
 
-> **Примечание:** Существуют небольшие отличия таким способом, который может взаимодействовать с календарей пользователей и группы календаря:
+> **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей и календарями групп:
 
- - Их можно организовать только календарей пользователей в [calendarGroup](calendargroup.md).
- - Outlook автоматически принимает все приглашения на собрания от имени группы. Для календарей пользователей только можно [принять](../api/event-accept.md), [под вопросом принятие](../api/event-tentativelyaccept.md)или [отклонение](../api/event-decline.md) приглашения на собрания.
-  - Outlook не поддерживает напоминания о событиях группы. Можно [отложить](../api/event-snoozereminder.md) или [отклонение](../api/event-dismissreminder.md) [напоминание](reminder.md) для только календарей пользователей.
+ - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+ - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях пользователя.
+  - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей пользователя.
 
 ## <a name="methods"></a>Методы
 
@@ -33,10 +33,10 @@ ms.locfileid: "27942285"
 |[Обновление](../api/calendar-update.md) | [calendar](calendar.md)  |Обновление свойств объекта **calendar**. Это может быть календарь для пользователя или стандартный календарь для группы Office 365. |
 |[Удаление](../api/calendar-delete.md) | Нет |Удаление объекта calendar. |
 |[Список экземпляров calendarView](../api/calendar-list-calendarview.md) |Коллекция [event](event.md)| Получение в представлении календаря повторений, исключений и отдельных экземпляров событий за определенный диапазон времени, указанных в основном календаре пользователя `(../me/calendarview)` или в другом заданном календаре.|
-|[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Получение списка событий в календаре.  Этот список содержит собрания с одним экземпляром и образцы рядов.|
-|[Создание события](../api/calendar-post-events.md) |[event](event.md)| Создайте новое событие в по умолчанию или указанного календаря.|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Предложите совещаний и расположений на основе доступности организатора и участников и ограничения времени или расположение. |
-|[getSchedule (Предварительная версия)](../api/calendar-getschedule.md) |[scheduleInformation](scheduleinformation.md) коллекции|Получение сведений о доступности данных о доступности для коллекции пользователей, списки рассылки и ресурсы, для заданного периода времени. |
+|[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Получение списка событий в календаре. Этот список содержит собрания с одним экземпляром и образцы рядов.|
+|[Создание события](../api/calendar-post-events.md) |[event](event.md)| Создание события в стандартном или указанном календаре.|
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени. |
+|[getSchedule (предварительная версия)](../api/calendar-getschedule.md) |Коллекция [scheduleInformation](scheduleinformation.md)|Получение сведений о доступности коллекции пользователей, списков распределения или ресурсов для определенного периода времени. |
 |[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем календаре.   |
 |[Получение календаря с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Получение календарей, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [calendar](calendar.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем календаре.  |
@@ -49,12 +49,12 @@ ms.locfileid: "27942285"
 |canShare |Boolean |Значение true, если у пользователя есть разрешение на совместное использование календаря, в противном случае — значение false. Только пользователь, создавший календарь, может предоставлять общий доступ к нему. |
 |canViewPrivateItems |Boolean |Значение true, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение false. |
 |changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
-|color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue = 0, LightGreen = 1, LightOrange = 2, LightGray = 3, LightYellow = 4, LightTeal = 5, LightPink = 6, LightBrown = 7, LightRed = 8, MaxColor = 9, Auto = -1.|
-|hexColor|Строка|Цвет, представляющий календаря. 6-значного, 3-байтовых шестнадцатеричный номер представлены цвета. Каждый байт представляет один из компонентов красного, зеленого и синего цвета, в диапазоне от 00 до FF в шестнадцатеричном формате. |
+|color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|hexColor|String|Цвет, представляющий календарь. Цвет представлен 6-значным, 3-байтовым шестнадцатеричным числом. Каждый байт представляет один красный, зеленый или синий компонент цвета в интервале от 00 до FF в шестнадцатеричном представлении. |
 |id|Строка|Уникальный идентификатор группы. Только для чтения.|
-|isDefaultCalendar|Логический|Значение true, если этот календарь является пользователя по умолчанию, значение false в противном случае.|
-|IsShared |Логический |Значение true, если пользователь общих календаря с другими пользователями, значение false в противном случае. Так как пользователь, создавший календаря могут совместно использовать ее, **isShared** и **isSharedWithMe** не может быть значение true для одного пользователя. |
-|isSharedWithMe |Логический |Значение true, если пользователь был общих календарю, значение false в противном случае. Это свойство всегда имеет значение false для владельца календаря.  |
+|isDefaultCalendar|Boolean|Значение true, если это используемый по умолчанию календарь пользователя. В противном случае используется значение false.|
+|IsShared |Boolean |Значение true, если пользователь поделился календарем с другими пользователями. В противном случае используется значение false. Только пользователь, создавший календарь, может им поделиться, поэтому свойства **isShared** и **isSharedWithMe** не могут иметь значения true для одного пользователя. |
+|isSharedWithMe |Boolean |Значение true, если пользователю предоставлен общий доступ к этому календарю. В противном случае используется значение false. Для календаря владельца этому свойству всегда присвоено значение false.  |
 |name|String|Имя календаря.|
 |owner |[emailAddress](emailaddress.md) | Если это свойство задано, оно указывает на пользователя, создавшего или добавившего календарь. В календаре, созданном или добавленном пользователем, свойство **owner** установлено для этого пользователя. В календаре, который используется совместно с пользователем, свойство **owner** установлено для лица, предоставившего пользователю общий доступ к этому календарю. |
 
@@ -101,10 +101,15 @@ ms.locfileid: "27942285"
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "calendar resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/calendar.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

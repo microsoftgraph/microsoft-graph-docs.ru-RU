@@ -4,24 +4,24 @@ description: Сообщение в папке почтового ящика.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ed94610fb4b09f264ea9be90ac5914daedfe76e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970281"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521967"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сообщение в папке почтового ящика.
 
 Этот ресурс поддерживает:
 
-- Добавление собственных данных в качестве настраиваемых заголовков сообщений Интернета. Добавление пользовательских заголовков только при создании сообщения и назвать их начинающиеся с «x-». После отправки сообщения не может изменить заголовки. Чтобы получить заголовки сообщений, применение `$select` параметр в [сообщение](../api/message-get.md) операции запроса.
-- Добавление данные как настраиваемые свойства в качестве [расширения](/graph/extensibility-overview).
-- Подписка на [уведомления об изменении](/graph/webhooks).
+- добавление собственных данных как настраиваемых заголовков сообщений Интернета. Добавляйте настраиваемые заголовки только при создании сообщения и выбирайте для них имя, начинающееся с "x-". После отправки сообщения невозможно изменить заголовки. Чтобы получить заголовки сообщения, примените параметр запроса `$select` в операции [получения сообщения](../api/message-get.md);
+- добавление собственных данных как настраиваемых свойств в виде [расширений](/graph/extensibility-overview);
+- подписку на [уведомления об изменениях](/graph/webhooks);
 - отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](/graph/delta-query-overview) (функция [delta](../api/message-delta.md)).
 
 ## <a name="json-representation"></a>Представление JSON
@@ -89,49 +89,49 @@ ms.locfileid: "27970281"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
-|body|[itemBody](itembody.md)|Текст сообщения. Она может быть в формате HTML или текст. Узнайте о [безопасном HTML в тексте сообщения](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
-|bodyPreview|String|Первые 255 символов в тексте сообщения. Это в текстовом формате. Если сообщение содержит экземпляры [упомянуть](mention.md), это свойство будет содержать объединения этих упоминания о. |
-|categories|Коллекция String|Категории, сопоставленные с сообщением. Каждой категории соответствует свойству **displayName** [outlookCategory](outlookcategory.md) , определенные для этого пользователя. |
+|body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате. Сведения о [надежном формате HTML в тексте сообщения](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
+|bodyPreview|String|Первые 255 символов в тексте сообщения. В текстовом формате. Если сообщение содержит экземпляры [упоминаний](mention.md), это свойство будет также содержать объединение этих упоминаний. |
+|categories|Коллекция String|Категории, связанные с сообщением. Каждая категория соответствует свойству **displayName** объекта [outlookCategory](outlookcategory.md), определенного для пользователя. |
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
-|conversationIndex|Binary|Индекс беседы, к которому принадлежит сообщение электронной почты.|
+|conversationIndex|Binary|Индекс беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
-|from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактический почтового ящика, используемого. Узнать больше о [параметр из свойства отправителя и](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
+|from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении. Это свойство не включает встроенные вложения, поэтому, если сообщение содержит только встроенные вложения, это свойство имеет значение false. Чтобы проверить наличие встроенных вложений, проанализируйте свойство **body** на наличие атрибута `src`, например `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
-|inferenceClassification|Строка| Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused`, `other`.|
-|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовки сообщений, определенные в [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор включает заголовки сообщений, указывая сетевой путь, по сообщение от отправителя получателю. Он также может содержать заголовки настраиваемого сообщения, в которых содержатся данные приложения для сообщения. |
-|internetMessageId | Строка | Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Обновляемые только в том случае, если **isDraft** имеет значение true.|
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|inferenceClassification|String| Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Возможные значения: `focused`, `other`.|
+|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, определенных документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор содержит заголовки сообщений, указывающие сетевой путь, пройденный сообщением от отправителя до получателя. Он также может содержать настраиваемые заголовки сообщений, содержащие данные приложения для сообщения. |
+|internetMessageId | String | Идентификатор сообщения в формате, установленном документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Можно обновить, только если параметр **isDraft** имеет значение true.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
-|mentionsPreview|[mentionsPreview](mentionspreview.md)|Сведения о упоминания в сообщении. При обработке `GET` /messages запрос, сервер задает для этого свойства и включает в себя ее в ответ по умолчанию. Сервер возвращает значение null, если нет упоминания в сообщении. Необязательное. |
+|mentionsPreview|[mentionsPreview](mentionspreview.md)|Сведения об упоминаниях в сообщении. При обработке запроса `GET` /messages сервер устанавливает это свойство и включает его в отклик по умолчанию. Сервер возвращает значение null, если в сообщении нет упоминаний. Необязательное свойство. |
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
-|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение — то же, что свойство **из** . Это свойство можно задать значение при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого. Узнать больше о [параметр из свойства отправителя и](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
+|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Этому свойству можно присвоить другое значение при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/ru-RU/exchange/collaboration/shared-mailboxes/shared-mailboxes) или отправке сообщения в качестве [представителя](https://support.office.com/ru-RU/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая уникальна для текущего сообщения. Экземпляр **uniqueBody** не возвращается по умолчанию, но может быть получен для заданного сообщения с помощью запроса `?$select=uniqueBody`. В формате HTML или текстовом формате.|
-|unsubscribeData|Строка|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
-|unsubscribeEnabled|Логический|Указывает, включена ли сообщение для отказа от подписки.  Его valueTrue Если отписаться списка заголовок соответствует rfc 2369.|
+|unsubscribeData|String|Допустимые объекты, анализируемые из заголовка List-Unsubscribe  Это данные для почтовой команды в заголовке List-Unsubscribe, если свойству UnsubscribeEnabled присвоено значение true.|
+|unsubscribeEnabled|Boolean|Указывает, допускает ли сообщение отмену подписки.  Имеет значение True, если заголовок List-Unsubscribe соответствует документу RFC-2369.|
 |webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция объектов [attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
-|extensions|Коллекция [extension](extension.md)| Коллекция open расширения, определенные для сообщения. Допускается значение null.|
-|упоминания|[отметить](mention.md) семейства сайтов | Коллекцию упоминания в сообщении, упорядоченные по **createdDateTime** от новых к старым. По умолчанию `GET` /сообщения не возвращает это свойство, если не применяется `$expand` свойство.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
+|attachments|Коллекция [Attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
+|extensions|Коллекция [Extension](extension.md)| Коллекция открытых расширений, определенных для сообщения. Допускается значение null.|
+|mentions|Коллекция [mention](mention.md) | Коллекция упоминаний в сообщении, упорядоченных по свойству **createdDateTime** от новых к старым. По умолчанию запрос `GET` /messages не возвращает это свойство, если к свойству не применен параметр `$expand`.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
@@ -143,18 +143,18 @@ ms.locfileid: "27970281"
 |[Обновление](../api/message-update.md) | [message](message.md) |Обновление объекта message. |
 |[Удаление](../api/message-delete.md) | Нет |Удаление объекта message. |
 |[copy](../api/message-copy.md)|[Message](message.md)|Копирование сообщения в папку.|
-|[createForward](../api/message-createforward.md)|[Message](message.md)|Создайте черновик прямого сообщения добавить примечание или обновить все свойства сообщения в одном вызове **createForward** . После этого можно [Обновить](../api/message-update.md) или [Отправить](../api/message-send.md) черновик.|
-|[createReply](../api/message-createreply.md)|[Message](message.md)|Создание черновика сообщения ответа, чтобы добавить примечание или обновить все свойства сообщения в одном вызове **createReply** . После этого можно [Обновить](../api/message-update.md) или [Отправить](../api/message-send.md) черновик.|
-|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)|Создание черновика сообщения ответить всем добавить примечание или обновить все свойства сообщения в одном вызове **createReplyAll** . После этого можно [Обновить](../api/message-update.md) или [Отправить](../api/message-send.md) черновик.|
+|[createForward](../api/message-createforward.md)|[Сообщение](message.md)|Создание черновика пересылаемого сообщения, чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createForward**. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
+|[createReply](../api/message-createreply.md)|[Сообщение](message.md)|Создание черновика ответного сообщения, чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createReply**. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
+|[createReplyAll](../api/message-createreplyall.md)|[Сообщение](message.md)|Создание черновика сообщения "Ответить всем", чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createReplyAll**. После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.|
 |[delta](../api/message-delta.md)|Коллекция объектов [message](message.md)| Получение списка сообщений, которые были добавлены в указанную папку, обновлены в ней или удалены из нее.|
-|[forward](../api/message-forward.md)|Нет|Переслать сообщение, добавьте комментарий или изменения любых обновляемых свойств в одном вызове **вперед** . Затем сообщение сохраняется в папке «Отправленные».|
+|[forward](../api/message-forward.md)|Нет|Пересылка сообщения, добавление комментария или изменение любого обновляемого свойства одновременно в одном вызове **forward**. После этого сообщение сохраняется в папке "Отправленные".|
 |[move](../api/message-move.md)|[Message](message.md)|Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения.|
-|[reply](../api/message-reply.md)|Нет|Отправителю сообщения, добавьте комментарий или изменить любые обновляемые свойства в вызове один **ответ** . Затем сообщение сохраняется в папке «Отправленные».|
-|[replyAll](../api/message-replyall.md)|Нет|Ответить всем получателям сообщения, указав комментария и изменение любого обновляемых свойств для ответа с помощью метода **replyAll** . Затем сообщение сохраняется в папке «Отправленные».|
+|[reply](../api/message-reply.md)|Нет|Ответ отправителю сообщения, добавление комментария или изменение любых обновляемых свойств одновременно в одном вызове **reply**. После этого сообщение сохраняется в папке "Отправленные".|
+|[replyAll](../api/message-replyall.md)|Нет|Ответ всем получателям сообщения путем указания комментария и изменения любых обновляемых свойств ответа с помощью метода **replyAll**. После этого сообщение сохраняется в папке "Отправленные".|
 |[send](../api/message-send.md)|Нет|Отправка ранее созданного черновика сообщения. После этого сообщение сохраняется в папке "Отправленные".|
-|[отписаться](../api/message-unsubscribe.md)|Нет|Отправка сообщений с помощью данных и адрес, указанный в первой команде mailto в заголовке отписаться списка.|
+|[unsubscribe](../api/message-unsubscribe.md)|Нет|Отправка сообщения, используя данные и адрес, указанные в это первой команде mailto заголовка List-Unsubscribe.|
 |**Вложения**| | |
-|[Список вложений](../api/message-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получите все вложения в сообщение.|
+|[Список вложений](../api/message-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение всех вложений сообщения.|
 |[Добавление вложения](../api/message-post-attachments.md) |[Attachment](attachment.md)| Добавление нового вложения к сообщению путем публикации в коллекции вложений.|
 |**Открытые расширения**| | |
 |[Создание открытого расширения](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Создание открытого расширения и добавление настраиваемых свойств в новый или существующий ресурс.|
@@ -179,10 +179,15 @@ ms.locfileid: "27970281"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "message resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

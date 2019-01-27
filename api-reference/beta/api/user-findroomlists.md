@@ -1,24 +1,24 @@
 ---
-title: 'пользователь: findRoomLists'
-description: Получение списков комнат, определенных в клиент.
+title: 'user: findRoomLists'
+description: Получение списка помещений, определенных в клиенте.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f170b40689b09f54ea53632ca113018de1671b4e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1cc26367c9cecd16604f7cfefb3be5ce265e3c2c
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27979294"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29520580"
 ---
-# <a name="user-findroomlists"></a>пользователь: findRoomLists
+# <a name="user-findroomlists"></a>user: findRoomLists
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списков комнат, определенных в клиент.
+Получение списка помещений, определенных в клиенте.
 
-Клиенты можно упорядочить по комнаты для собраний списков комнат. Экземпляр [emailAddress](../resources/emailaddress.md) представлены каждого зала заседаний и список помещений.
-Можно получить все списки комнаты клиента, [Получение всех комнатах](user-findrooms.md) в клиентов или [Получение всех комнатах](user-findrooms.md) в список помещений определенных.
+Клиенты могут упорядочивать помещения для собраний в списках помещений. Каждое помещение для собрания и список помещений представлены экземпляром [emailAddress](../resources/emailaddress.md).
+Можно получить все списки помещений в клиенте, [получить все помещения](user-findrooms.md) в клиенте или [получить все помещения](user-findrooms.md) в определенном списке помещений.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -27,7 +27,7 @@ ms.locfileid: "27979294"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All User.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | User.ReadBasic.All, User.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All |
 
@@ -42,18 +42,18 @@ GET /users/<id>/findRoomLists
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json. Обязательный. |
 
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` кода и [emailAddress](../resources/emailaddress.md) коллекции объект ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект коллекции [emailAddress](../resources/emailaddress.md) в тексте отклика.
 
-Если нет списков определены в клиентов, возвращается пустой массив.
+Если в клиенте не определены списки, возвращается пустой массив.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -101,10 +101,15 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "user: findRoomLists",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-findroomlists.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

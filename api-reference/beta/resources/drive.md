@@ -5,22 +5,22 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 581a611fa077eab6d44db01d998d5ea42886f052
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938190"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29521273"
 ---
-# <a name="drive-resource-type"></a>Тип ресурса диска
+# <a name="drive-resource-type"></a>Тип ресурса drive
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс Drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
+Ресурс drive — объект верхнего уровня, представляющий хранилище OneDrive пользователя или библиотеку документов в SharePoint.
 
 Для пользователей OneDrive всегда будет доступен хотя бы один диск (диск по умолчанию). Для пользователей, у которых нет лицензии на OneDrive, такой диск может быть недоступен.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже показано представление ресурса Drive в формате JSON.
 
@@ -75,16 +75,16 @@ ms.locfileid: "27938190"
 | :------------------- | :---------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | createdBy            | [identitySet][]               | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.                                                                                                                                                  |
 | createdDateTime      | dateTimeOffset                | Дата и время создания элемента. Только для чтения.                                                                                                                                                                                       |
-| описание          | String                        | Предоставляет описание объекта drive, которое видит пользователь. Чтение и запись.
+| description          | String                        | Предоставляет отображаемое для пользователя описание диска. Чтение и запись.
 | driveType            | Строка                        | Описывает тип диска, представленного данным ресурсом. Для личных дисков OneDrive возвращается `personal`. В случае дисков OneDrive для бизнеса возвращается `business`. В случае библиотек документов SharePoint возвращается `documentLibrary`. Только для чтения. |
 | id                   | String                        | Уникальный идентификатор диска. Только для чтения.                                                                                                                                                                                   |
 | lastModifiedBy       | [identitySet][]               | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.                                                                                                                                           |
 | lastModifiedDateTime | dateTimeOffset                | Дата и время последнего изменения элемента. Только для чтения.                                                                                                                                                                             |
-| name                 | строка                        | Имя элемента. Чтение и запись.                                                                                                                                                                                                |
+| name                 | string                        | Имя элемента. Чтение и запись.                                                                                                                                                                                                |
 | owner                | [identitySet](identityset.md) | Необязательный параметр. Учетная запись пользователя, которому принадлежит диск. Только для чтения.                                                                                                                                                                       |
 | quota                | [quota](quota.md)             | Необязательный параметр. Сведения о квоте на дисковое пространство. Только для чтения.                                                                                                                                                          |
 | sharepointIds        | [sharepointIds][]             | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.                                                                                                                                                         |
-| system               | [systemFacet][]               | Если это свойство задано, оно указывает, что данным объектом drive управляет система. Только для чтения.
+| system               | [systemFacet][]               | Если имеется это свойство, оно указывает, что данным диском управляет система. Только для чтения.
 | webUrl               | строка (url-адрес)                  | URL-адрес для отображения ресурса в браузере. Только для чтения.                                                                                                                                                                        |
 
 [identitySet]: identityset.md
@@ -99,7 +99,7 @@ ms.locfileid: "27938190"
 | items        | Коллекция [driveitem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
 | root         | [driveitem](driveitem.md)            | Корневая папка на диске. Только для чтения.
 | special      | Коллекция [driveitem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
-| следующие    | [DriveItem](driveitem.md) коллекции | Список элементов, которые подписан пользователь. Только в OneDrive для бизнеса.
+| following    | Коллекция [DriveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
 
 ## <a name="methods"></a>Методы
 
@@ -107,14 +107,14 @@ ms.locfileid: "27938190"
 | :--------------------------------------------------------- | :-------------------------- |
 | [Получение метаданных другого ресурса Drive][drive-get]           | `GET /drives/{drive-id}`    |
 | [Получение корневой папки для ресурса Drive, используемого по умолчанию для пользователя][item-get]       | `GET /drive/root`           |
-| [Список действий для ресурса Drive][drive-activities]        | `GET /drive/activities`     |
-| [Список, а затем элементов][drive-following]                     | `GET /drive/following`      |
+| [Перечисление действий для ресурса Drive][drive-activities]        | `GET /drive/activities`     |
+| [Перечисление отслеживаемых элементов][drive-following]                     | `GET /drive/following`      |
 | [Получение списка дочерних элементов ресурса Drive][item-children]             | `GET /drive/root/children`  |
 | [Получение списка изменений для всех элементов в ресурсе Drive][item-changes]    | `GET /drive/root/delta`     |
 | [Поиск элементов в ресурсе Drive][item-search]               | `GET /drive/root/search`    |
 | [Доступ к специальной папке](../api/drive-get-specialfolder.md) | `GET /drive/special/{name}` |
 
-В предыдущей таблице, используйте приведенные примеры `/drive`, но другие пути являются допустимыми слишком.
+В примерах в предыдущей таблице используется каталог `/drive`, но можно использовать и другие пути.
 
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
@@ -132,11 +132,18 @@ ms.locfileid: "27938190"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Drive is a top level object for OneDrive API that provides access to the contents of a drive. ",
   "keywords": "drive,objects,resources",
   "section": "documentation",
   "tocPath": "Drives",
-  "tocBookmarks": { "Resources/Drive": "#" }
-} -->
+  "tocBookmarks": {
+    "Resources/Drive": "#"
+  },
+  "suppressions": [
+    "Error: /api-reference/beta/resources/drive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
