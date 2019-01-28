@@ -1,21 +1,21 @@
 ---
 title: Перечисление объектов joinedTeams
-description: Загрузите группами Майкрософт, который пользователь является непосредственным членом группы.
+description: Получение команд в Microsoft Teams, непосредственным участником которых является пользователь.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 839b6531318ca9fc8abb3fd3544566622d02a78b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8695d97120da8d50bcc329bfec1aa0ee0c2b5434
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938204"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29528762"
 ---
 # <a name="list-joinedteams"></a>Перечисление объектов joinedTeams
 
-> **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Загрузите группами Майкрософт, который пользователь является непосредственным членом [групп](../resources/team.md) .
+Получение [команд](../resources/team.md) в Microsoft Teams, непосредственным участником которых является пользователь.
  
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,8 +26,8 @@ ms.locfileid: "27938204"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.Read.All, User.ReadWrite.All |
 
-> На данный момент с разрешениями пользователя делегированной эта операция работает только для «me» пользователя. 
-> Имея разрешения приложения это работает для всех пользователей, указав идентификатор определенного пользователя. («обо мне» псевдоним не поддерживается с разрешениями приложения) Дополнительные сведения см [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
+> В настоящее время при использовании делегированных разрешений эта операция поддерживается только для пользователя "Я". 
+> При использовании разрешений для приложений она поддерживается для всех пользователей путем указания определенного идентификатора пользователя. (Псевдоним "Я" не поддерживается при использовании разрешений для приложений). Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues#microsoft-teams-users-list-of-joined-teams-preview).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -46,7 +46,7 @@ GET /users/{id}/joinedTeams
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Accept  | application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -62,7 +62,7 @@ GET /users/{id}/joinedTeams
 ```http
 GET https://graph.microsoft.com/beta/me/joinedTeams
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
@@ -85,14 +85,19 @@ Content-length: 55
 ```
 
 ## <a name="see-also"></a>См. также
-[Список всех групп](/graph/teams-list-all-teams)
+[Перечисление всех команд](/graph/teams-list-all-teams)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List joinedTeams",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/user-list-joinedteams.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

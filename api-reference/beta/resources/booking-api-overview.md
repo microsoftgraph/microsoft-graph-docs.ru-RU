@@ -1,35 +1,35 @@
 ---
-title: Использование Microsoft резервирования API в Microsoft Graph
+title: Использование API Microsoft Bookings в Microsoft Graph
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: bookings
-ms.openlocfilehash: 494b13016c20124e1a81f996d332c97c15e46852
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 7fc58a4fe0fb616963fd91d83a401d4ad8e1c43e
+ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915734"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "29529861"
 ---
-# <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование Microsoft резервирования API в Microsoft Graph
+# <a name="use-the-microsoft-bookings-api-in-microsoft-graph"></a>Использование API Microsoft Bookings в Microsoft Graph
 
- > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Microsoft резервирования позволяет управлять резервирования клиента и данных с помощью минимальной установки владельцев для малого бизнеса. Владелец business можно создать один или несколько организаций, с каждой бизнеса, предоставляющая набор служб. Владелец можно настроить персонал и укажите службы, которые выполняет каждый сотрудник. В этой организации в приложении online или мобильного клиента можно книги встречи для определенной службы. Резервирования гарантирует, что, время встречи актуальность для бизнеса, сотрудниками и клиентами участвующие.
+Microsoft Bookings позволяет владельцам малого бизнеса управлять резервированиями и сведениями клиентов с минимальной настройкой. Владелец бизнеса можно создать одну или несколько компаний, каждая из которых предлагает набор услуг. Владелец может настроить сотрудников и указать услуги, оказываемые каждым из них. Клиент может зарезервировать встречу для определенной услуги в этой компании в сетевом или мобильном приложении. Приложение Bookings обеспечивает обновление времени встречи для компании, сотрудников и соответствующих клиентов.
 
-Программным способом, [bookingBusiness](bookingbusiness.md) в интерфейсе API резервирования состоит из следующих объектов:
+На программном уровне объект [bookingBusiness](bookingbusiness.md) в API Bookings включает указанные ниже объекты:
  
-- Один или несколько объектов [bookingStaffMember](bookingstaffmember.md)
-- Один или несколько объектов [bookingService](bookingservice.md)
-- Набор экземпляров [bookingAppointment](bookingappointment.md)
-- Набор объектов [bookingCustomer](bookingcustomer.md)
+- один или несколько объектов [bookingStaffMember](bookingstaffmember.md);
+- один или несколько объектов [bookingService](bookingservice.md);
+- набор экземпляров [bookingAppointment](bookingappointment.md);
+- набор объектов [bookingCustomer](bookingcustomer.md).
 
-## <a name="using-the-bookings-rest-api"></a>С помощью API-Интерфейс REST резервирования
+## <a name="using-the-bookings-rest-api"></a>Использование REST API Bookings
 
-Познакомьтесь с помощью следующих действий перед резервирования встречи для бизнеса в первый раз. Убедитесь, что соответствующие [маркеры доступа](/graph/auth-overview) обеспечения соответствующие операции.
+Выполните указанные ниже действия перед первым резервированием встреч клиента с компанией. Убедитесь, что предоставлены подходящие [маркеры доступа](/graph/auth-overview) для соответствующих операций.
 
-1. Убедитесь в том, что подписка на [Office 365 бизнеса расширенный](https://products.office.com/en-us/business/office-365-business-premium) для бизнеса.
-2. Создание нового **bookingBusiness** , отправив операция POST набора сущностей. Как минимум необходимо указать имя для нового предприятия, которое клиенты будут видеть:<!-- { "blockType": "ignored" } -->
+1. Убедитесь, что у компании есть подписка на [Office 365 бизнес премиум](https://products.office.com/ru-RU/business/office-365-business-premium).
+2. Создайте новый объект **bookingBusiness**, отправив операцию POST в набор объектов. Как минимум, следует указать имя новой компании, отображаемое для клиентов: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
@@ -39,9 +39,9 @@ Content-Type: application/json
     "displayName":"Contoso"
 }
 ```
-Свойство **id** нового **bookingBusiness** , возвращаемого в ответе POST для продолжения [Настройка](../api/bookingbusiness-update.md) параметров business и добавьте персонал и службы для бизнеса.
+Используйте свойство **id** нового объекта **bookingBusiness**, возвращенного в отклике POST, чтобы продолжить [настройку](../api/bookingbusiness-update.md) бизнес-параметров и добавить сотрудников и услуги для компании.
 
-3. Добавление отдельных сотрудников для бизнеса:<!-- { "blockType": "ignored" } -->
+3. Добавьте отдельных сотрудников для компании: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/staffMembers
 Authorization: Bearer {access token}
@@ -53,7 +53,7 @@ Content-Type: application/json
     "role": "externalGuest"
 }
 ```
-4. Определение каждой службы, предлагаемыми бизнеса:<!-- { "blockType": "ignored" } -->
+4. Определите каждую услугу, предлагаемую компанией: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/services
 Authorization: Bearer {access token}
@@ -63,36 +63,44 @@ Content-Type: application/json
     "displayName":"Bento"
 }
 ```
-5. Опубликуйте страницу планирования для бизнеса, чтобы позволить клиентам и операторы business начать назначения встреч:<!-- { "blockType": "ignored" } -->
+5. Опубликуйте страницу расписания для компании, чтобы у клиентов и бизнес-операторов была возможность начать резервирование встреч: <!-- { "blockType": "ignored" } -->
 ```http
 POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-Как правило чтобы получить список всех резервирование бизнеса в Office 365 клиентов:<!-- { "blockType": "ignored" } -->
+Как правило, можно указать список всех компаний для резервирования в клиенте Office 365: <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
 Authorization: Bearer {access token}
 ```
 
-## <a name="common-use-cases"></a>Основные сценарии выполнения 
+## <a name="common-use-cases"></a>Основные варианты использования 
 
-В следующей таблице перечислены типичные операции для бизнеса в API резервирования.
+В таблице ниже перечислены распространенные операции для бизнеса в API Bookings.
 
 | Варианты использования        | Ресурсы REST | См. также |
 |:---------------|:--------|:----------|
-| Создание, получение, обновление и удаление предприятие | [bookingBusiness](bookingbusiness.md) | [Методы bookingBusiness](bookingbusiness.md#methods) |
+| Создание, получение, обновление или удаление компании | [bookingBusiness](bookingbusiness.md) | [Методы ресурса bookingBusiness](bookingbusiness.md#methods) |
 | Обновление политики планирования | [bookingSchedulingPolicy](bookingschedulingpolicy.md) | [Обновление bookingBusiness](../api/bookingbusiness-update.md) |
-| Добавление, получение, обновление и удаление сотрудников | [bookingStaffMember](bookingstaffmember.md) | [Методы bookingStaffMember](bookingstaffmember.md#methods)  |
-| Добавление, получение, обновление и удаление служб | [bookingService](bookingservice.md) | [Методы bookingService](bookingservice.md#methods)  |
-| Публикации или отмены публикации планирования страницы | [bookingBusiness](bookingbusiness.md) | [Публикация](../api/bookingbusiness-publish.md) <br> [Отмена публикации](../api/bookingbusiness-unpublish.md) |
-| Создание, получение, обновление, удаление или Отмена встречи | [bookingAppointment](bookingappointment.md) | [Методы bookingAppointment](bookingappointment.md#methods)  |
-| Получение встреч в диапазон дат | [bookingBusiness](bookingbusiness.md) | [Список резервирования представления календаря](../api/bookingbusiness-list-calendarview.md) |
-| Получение валюты | [bookingCurrency](bookingcurrency.md) | [Методы bookingCurrency](bookingcurrency.md#methods) |
+| Добавление, получение, обновление или удаление сотрудников | [bookingStaffMember](bookingstaffmember.md) | [Методы ресурса bookingStaffMember](bookingstaffmember.md#methods)  |
+| Добавление, получение, обновление или удаление услуг | [bookingService](bookingservice.md) | [Методы ресурса bookingService](bookingservice.md#methods)  |
+| Публикация или отмена публикации страницы расписания | [bookingBusiness](bookingbusiness.md) | [publish](../api/bookingbusiness-publish.md) <br> [unpublish](../api/bookingbusiness-unpublish.md) |
+| Создание, получение, обновление, удаление или отмена встречи | [bookingAppointment](bookingappointment.md) | [Методы ресурса bookingAppointment](bookingappointment.md#methods)  |
+| Получение встреч в диапазоне дат | [bookingBusiness](bookingbusiness.md) | [Представление календаря "Список резервирований"](../api/bookingbusiness-list-calendarview.md) |
+| Получение валюты | [bookingCurrency](bookingcurrency.md) | [Методы ресурса bookingCurrency](bookingcurrency.md#methods) |
 
 
 ## <a name="see-also"></a>См. также
 
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
-- В разделе [как партнеров используется Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+- Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Узнайте, как выбрать [разрешения](/graph/permissions-reference) в Microsoft Graph.
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/booking-api-overview.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
