@@ -4,12 +4,12 @@ description: Представляет объект Azure Active Directory. Ти�
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87fb1c21e2fa1e9788890d97f6afbd0b494c555e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5ba2454a5eda90ec50dbd6a0c152383bb42a437d
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521595"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573958"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
@@ -25,12 +25,12 @@ ms.locfileid: "29521595"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта directoryObject](../api/directoryobject-get.md) | [directoryObject](directoryobject.md) |Чтение свойств объекта каталога.|
+|[Получение объекта directoryObject](../api/directoryobject-get.md) | [directoryObject](../resources/directoryobject.md) |Чтение свойств объекта каталога.|
 |[Удаление](../api/directoryobject-delete.md) | Нет |Удаление объекта каталога. |
 |[checkMemberGroups](../api/directoryobject-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|Коллекция строк|Возвращает все группы, в которых состоит пользователь, группа или объект каталога. Это транзитивная проверка.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|Коллекция строк| Возвращает все группы и роли каталога, участником которых является пользователь, группа или объект каталога. Это транзитивная проверка. |
-|[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
+|[getByIds](../api/directoryobject-getbyids.md) | Коллекция [directoryObject](../resources/directoryobject.md) | Получение набора объектов каталога на основе указанных идентификаторов. |
 |[validateProperties](../api/directoryobject-validateproperties.md)|JSON| Проверка соответствия отображаемого имени или почтового псевдонима группы Office 365 политикам именования. |
 |[delta](../api/directoryobject-delta.md)|Коллекция directoryObject| Получение добавочных изменений для объектов каталога. Поддерживает фильтрацию по производному типу. |
 
@@ -61,7 +61,6 @@ ms.locfileid: "29521595"
 {
   "id": "string (identifier)"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
