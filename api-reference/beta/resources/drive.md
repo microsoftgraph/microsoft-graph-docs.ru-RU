@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Drive
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 220f68d2888b29100fdcbb671b5085d3606ec3c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e788765c3405a1455eda55f6fefdc21ade3da8fd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521273"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573930"
 ---
 # <a name="drive-resource-type"></a>Тип ресурса drive
 
@@ -96,10 +96,10 @@ ms.locfileid: "29521273"
 | Связь | Тип                                 | Описание
 |:-------------|:-------------------------------------|:-----------------------
 | activities   | Коллекция [itemActivity][]          | Список последних действий, выполненных для этого объекта drive.
-| items        | Коллекция [driveitem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
-| root         | [driveitem](driveitem.md)            | Корневая папка на диске. Только для чтения.
-| special      | Коллекция [driveitem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
-| following    | Коллекция [DriveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
+| items        | Коллекция [driveItem](driveitem.md) | Все элементы, содержащиеся на диске. Только для чтения. Допускается значение null.
+| root         | [driveItem](driveitem.md)            | Корневая папка на диске. Только для чтения.
+| special      | Коллекция [driveItem](driveitem.md) | Коллекция общих папок, доступных в OneDrive. Только для чтения. Допускается значение null.
+| following    | Коллекция [driveItem](driveitem.md) | Список элементов, которые отслеживает пользователь. Только в OneDrive для бизнеса.
 
 ## <a name="methods"></a>Методы
 

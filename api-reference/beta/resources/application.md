@@ -4,12 +4,12 @@ description: 'Представляет приложение. Любое прил
 localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 694f6b12dd8fe1fd59f12cafebd47c842a4077cb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0ba7bebb1165710c68f4714050109b5c927bddbd
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529224"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29575057"
 ---
 # <a name="application-resource-type"></a>Тип ресурса application
 
@@ -43,25 +43,25 @@ ms.locfileid: "29529224"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|api|[api](api.md)| Указывает параметры для приложения API. |
+|api|[microsoft.graph.api](api.md)| Указывает параметры для приложения API. |
 |appId| String | Уникальный идентификатор, назначенный для приложения с помощью Azure AD. Значение null не допускается. Только для чтения. |
-|appRoles|Коллекция [appRole](approle.md)|Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается.|
+|appRoles|Коллекция [microsoft.graph.entity](approle.md)|Коллекция ролей приложения, которые могут быть объявлены приложением. Эти роли могут назначаться пользователям, группам или субъектам-службам. Значение null не допускается.|
 |createdDateTime|DateTimeOffset| Дата и время регистрации приложения. |
 |deletedDateTime|DateTimeOffset| Дата и время удаления приложения. |
 |displayName|String|Отображаемое имя приложения. |
-|id|String|Уникальный идентификатор приложения. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения. |
+|id|String|Уникальный идентификатор приложения. Наследуется от [microsoft.graph.directoryObject](directoryobject.md). Ключевое. Значение null не допускается. Только для чтения. |
 |identifierUris|Коллекция String| URI, определяющие приложение. Дополнительные сведения см. в статье [Объекты приложения и субъекта-службы](https://azure.microsoft.com/documentation/articles/active-directory-application-objects/). Для выражений фильтра в случае многозначных свойств требуется оператор *any*. Значение null не допускается. |
-|info|[informationalUrl](informationalurl.md)| Основные сведения о профиле приложения. |
+|info|[microsoft.graph.informationalUrl](informationalurl.md)| Основные сведения о профиле приложения. |
 |isFallbackPublicClient|Boolean| Указывает резервный тип приложения как общедоступный клиент, например установленное приложение, запущенное на мобильном устройстве. Значение по умолчанию: *false*. Это означает, что резервный тип приложения является конфиденциальным клиентом, например веб-приложение. Существуют определенные сценарии, при которых Azure AD не удается определить тип приложения клиента (например, поток [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) с настройкой без указания URI перенаправления). В таких случаях Azure AD будет интерпретировать тип приложения на основе значения этого свойства.|
-|keyCredentials|Коллекция [keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
+|keyCredentials|Коллекция [microsoft.graph.keyCredential](keycredential.md)|Коллекция ключевых учетных данных, связанных с приложением. Значение null не допускается. |
 |logo|Stream|Основной логотип для приложения. Значение null не допускается. |
-|optionalClaims|optionalClaims| Зарезервировано для последующего использования. |
+|optionalClaims|Коллекция [microsoft.graph.entity](entity.md)| Зарезервировано на будущее. |
 |orgRestrictions|Коллекция String| Зарезервировано для последующего использования. |
-|parentalControlSettings|[parentalControlSettings](parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения.|
-|passwordCredentials|Коллекция [passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|
-|publicClient|[publicClient](publicclient.md)| Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
+|parentalControlSettings|Коллекция [microsoft.graph.parentalControlSettings](parentalcontrolsettings.md) |Указывает параметры родительского контроля для приложения.|
+|passwordCredentials|Коллекция [microsoft.graph.passwordCredential](passwordcredential.md)|Коллекция учетных данных паролей, связанных с приложением. Значение null не допускается.|
+|publicClient|[microsoft.graph.publicClient](publicclient.md)| Указывает параметры для установленных клиентов, например классических или мобильных устройств. |
 |publisherDomain| String | Проверенный домен издателя для приложения. Только для чтения.|
-|requiredResourceAccess|Коллекция [requiredResourceAccess](requiredresourceaccess.md)|Указывает ресурсы, к которым приложению требуется доступ, и устанавливает области разрешений OAuth и роли приложения, требующиеся приложению для каждого из этих ресурсов. Эта предварительная настройка доступа к необходимым ресурсам определяет интерфейс предоставления согласия. Значение null не допускается.|
+|requiredResourceAccess|Коллекция [microsoft.graph.requiredResourceAccess](requiredresourceaccess.md)|Указывает ресурсы, к которым приложению требуется доступ, и устанавливает области разрешений OAuth и роли приложения, требующиеся приложению для каждого из этих ресурсов. Эта предварительная настройка доступа к необходимым ресурсам определяет интерфейс предоставления согласия. Значение null не допускается.|
 |signInAudience | String | Указывает, какие учетные записи Майкрософт поддерживаются для текущего приложения. Поддерживаемые значения:<ul><li>**AzureADMyOrg**: пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD моей организации (т. е. один клиент)</li><li>**AzureADMultipleOrgs**: пользователи с рабочей или учебной учетной записью Майкрософт в клиенте Azure AD любой организации (т. е. несколько клиентов)</li> <li>**AzureADandPersonalMicrosoftAccount**: пользователи с личной учетной записью Майкрософт, рабочей или учебной учетной записью в клиенте Azure AD любой организации</li></ul> | `AzureADandPersonalMicrosoftAccount` |
 |tags|Коллекция String| Настраиваемые строки, которые можно использовать для классификации и определения приложения. |
 |web|[web](web.md)| Указывает параметры для веб-приложения. |
@@ -92,29 +92,29 @@ ms.locfileid: "29529224"
 
 ```json
 {
-  "api": {"@odata.type": "microsoft.graph.apiApplication"},
+  "api": {"@odata.type": "#microsoft.graph.application"},
   "appId": "String",
-  "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "appRoles": [{"@odata.type": "#microsoft.graph.approle"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
   "identifierUris": ["String"],
-  "info": {"@odata.type": "microsoft.graph.informationalUrl"},
+  "info": {"@odata.type": "#microsoft.graph.informationalUrl"},
   "isFallbackPublicClient": true,
-  "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
+  "keyCredentials": [{"@odata.type": "#microsoft.graph.keyCredential"}],
   "logo": "Stream",
-  "optionalClaims": [{"@odata.type": "microsoft.graph.optionalClaims"}],
+  "optionalClaims": [{"@odata.type": "#microsoft.graph.entity"}],
   "orgRestrictions": ["Guid"],
   "parentalControlSettings": [{"@odata.type": "microsoft.graph.parentalControlSettings"}],
-  "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
-  "preAuthorizedApplications": [{"@odata.type": "microsoft.graph.preAuthorizedApplication"}],
-  "publicClient": {"@odata.type": "microsoft.graph.publicClientApplication"},
+  "passwordCredentials": [{"@odata.type": "#microsoft.graph.passwordCredential"}],
+  "preAuthorizedApplications": [{"@odata.type": "#microsoft.graph.preAuthorizedApplication"}],
+  "publicClient": {"@odata.type": "#microsoft.graph.publicClientApplication"},
   "publisherDomain": "String",
-  "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
+  "requiredResourceAccess": [{"@odata.type": "#microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
   "tags": ["String"],
-  "web": {"@odata.type": "microsoft.graph.webApplication"}
+  "web": {"@odata.type": "#microsoft.graph.webApplication"}
 }
 ```
 

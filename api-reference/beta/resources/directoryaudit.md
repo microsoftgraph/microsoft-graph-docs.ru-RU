@@ -1,42 +1,42 @@
 ---
 title: Тип ресурса directoryAudit
-description: Этот ресурс представляет элементы аудита каталогов и ее коллекцию
+description: Этот ресурс представляет элементы аудита каталога и их коллекцию
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 1f980208788731206dc58870635644a1f3edc4c7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 0f56dea1b07f0814c4b9f1295498c2555c98a2df
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991785"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29573160"
 ---
 # <a name="directoryaudit-resource-type"></a>Тип ресурса directoryAudit
-Этот ресурс представляет элементы аудита каталогов и ее коллекцию
+Этот ресурс представляет элементы аудита каталога и их коллекцию
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |Список элементов аудита каталога в коллекции и их свойства.|
-|[Получение directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Получение элемента аудита конкретного каталога и его свойства.|
+|[Перечисление directoryAudits](../api/directoryaudit-list.md) | [directoryAudit](directoryaudit.md) |Перечисление элементов аудита каталога в коллекции и их свойства.|
+|[Получение directoryAudit](../api/directoryaudit-get.md) | [directoryAudit](directoryaudit.md) |Получение определенного элемента аудита каталога и его свойств.|
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityDateTime|DateTimeOffset|Указывает дату и время выполнения операции. Тип метки времени — всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|activityDisplayName|String|Указывает имя действия или имя операции (например: «Создание пользователя», «Добавить члена в группу»). Список действий вход можно получить [список активности Azure Ad](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
-|additionalDetails|Коллекция [keyValue](keyvalue.md)|Указывает Дополнительные сведения для действия.|
-|category|String|Показывает, какая категория ресурсов, целевым с помощью этого действия. (Например: управление пользователей, группы управления и т.д..)|
-|correlationId|GUID|Указывает уникальный идентификатор, и приводятся рекомендации по их действия, охватывающих различных служб. Можно использовать для журналов трассировки в службах.|
+|activityDateTime|DateTimeOffset|Указывает дату и время выполнения действия. Тип Timestamp всегда представлен в формате времени UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|activityDisplayName|String|Указывает имя действия или операции (например, "Создание пользователя", "Добавление участника в группу"). Список зарегистрированных действий см. в [списке действий Azure AD](https://docs.microsoft.com/ru-RU/azure/active-directory/active-directory-reporting-activity-audit-logs#azure-ad-audit-activity-list).|
+|additionalDetails|Коллекция [keyvalue](keyvalue.md)|Указывает дополнительные сведения о действии.|
+|category|String|Указывает, для какой категории ресурса предназначено действие. (Пример: управление пользователями, управление группами и т. д.)|
+|correlationId| String (идентификатор) |Указывает уникальный идентификатор, помогающий соотносить действия, происходящие в различных службах. Можно использовать для отслеживания журналов в службах.|
 |id|String| Указывает уникальный идентификатор для действия. Это идентификатор GUID.|
-|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Указывает, что сведения о пользователе или приложение инициировал действие.|
-|loggedByService|String|Указывает сведения, на котором служба инициировал действие (например: управление средствами самостоятельного создания пароля, основная служба каталогов, B2C, приглашение пользователей, Microsoft Identity Manager, привилегированной управления удостоверениями.|
-|result|строка| Указывает результат операции. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.||
-|resultReason|String|Указывает причину сбоя, если результат является «Ошибка» или «время ожидания».|
-|targetResources|[targetResource](targetresource.md) коллекции|Указывает на данные, на котором был изменен ресурсов из-за загрузки. Тип ресурса конечного может быть пользователя, устройства, каталог, приложение, роли, группы, политики или другое.
+|initiatedBy|[auditActivityInitiator](auditactivityinitiator.md)|Указывает сведения о пользователе или приложении, запустившем действие.|
+|loggedByService|String|Указывает, в какой службе запущено действие (например: самостоятельное управление паролями, основной каталог, B2C, приглашенные пользователи, Microsoft Identity Manager, Privileged Identity Management).|
+|result|string| Указывает результат действия. Возможные значения: `success`, `failure`, `timeout`, `unknownFutureValue`.||
+|resultReason|String|Указывает причину сбоя, если результатом является Failure (Сбой) или timeout (время ожидания).|
+|targetResources|Коллекция [targetResource](targetresource.md)|Указывает, какой ресурс был изменен в результате действия. Возможные типы целевых ресурсов: User, Device, Directory, App, Role, Group, Policy или Other.
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -60,7 +60,7 @@ ms.locfileid: "27991785"
   "activityDisplayName": "String",
   "additionalDetails": [{"@odata.type": "microsoft.graph.keyValue"}],
   "category": "String",
-  "correlationId": "Guid",
+  "correlationId": "String (identifier)",
   "id": "String (identifier)",
   "initiatedBy": {"@odata.type": "microsoft.graph.auditActivityInitiator"},
   "loggedByService": "String",

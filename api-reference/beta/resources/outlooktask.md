@@ -4,12 +4,12 @@ description: 'Элемент Outlook, который может отслежив
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 63ab43dd33cb50ff643316865a942659e92304d4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a6d5809f2634f4b9e0f1e30e3fddb0c798f0f6c
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513349"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576439"
 ---
 # <a name="outlooktask-resource-type"></a>Тип ресурса outlookTask
 
@@ -79,8 +79,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Коллекция вложений [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md) и [referenceAttachment](referenceattachment.md) для задачи.  Только для чтения. Допускается значение null.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для задачи. Только для чтения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенных свойств с одним значением, определенных для задачи. Только для чтения. Допускается значение null.|
+|multiValueLegacyExtendedProperty|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)|Коллекция расширенных свойств с несколькими значениями, определенных для задачи. Только для чтения. Допускается значение null.|
+|singleValueLegacyExtendedProperty|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)|Коллекция расширенных свойств с одним значением, определенных для задачи. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -89,8 +89,8 @@ Prefer: outlook.timezone="Eastern Standard Time"
   "blockType": "resource",
   "optionalProperties": [
     "attachments",
-    "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "singleValueLegacyExtendedProperty",
+    "multiValueLegacyExtendedProperty"
   ],
   "@odata.type": "microsoft.graph.outlookTask"
 }-->

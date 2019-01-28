@@ -4,12 +4,12 @@ description: Ресурс **call** создается при наличии вх
 author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a7eb47d65d07cbdb88712a3b71b7de24b7d366cc
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510717"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572964"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -54,23 +54,23 @@ ms.locfileid: "29510717"
 
 | Свойство            | Тип                                                                                                   | Описание                                                                                                                                                                                         |
 | :------------------ | :------------------------------------------------------------------------------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| activeModalities    | Коллекция String                                                                                      | Список активных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Только для чтения. Создается сервером.                                                    |
+| activeModalities    | Коллекция modality                                                                                      | Список активных модальностей. Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`. Только для чтения. Создается сервером.                                                    |
 | answeredBy          | [participantInfo](participantinfo.md)                                                                  | Участник, ответивший на вызов. Только для чтения. Создается сервером.                                                                                                                                |
 | callRoutes          | Коллекция [callRoute](callroute.md)                                                                   | Сведения маршрутизации о том, как был перенаправлен вызов. Только для чтения. Создается сервером.                                                                                                                |
 | callbackUri         | String                                                                                                 | Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы.                                                                                                                               |
 | chatInfo            | [chatInfo](chatinfo.md)                                                                                | Сведения о чате.                                                                                                                                                                               |
-| direction           | String                                                                                                 | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения. Создается сервером.                                                                                            |
+| direction           | callDirection                                                                                          | Направление вызова. Возможные значения: `incoming` или `outgoing`. Только для чтения. Создается сервером.                                                                                            |
 | id                  | String                                                                                                 | Только для чтения. Создается сервером.                                                                                                                                                                        |
-| mediaConfig         | [appHostedMediaConfig](apphostedmediaconfig.md) или [serviceHostedMediaConfig](servicehostedmediaconfig.md) | Настройка мультимедиа.                                                                                                                                                                        |
+| mediaConfig         | [mediaConfig](mediaconfig.md)                                                                          | Конфигурация мультимедиа.                                                                                                                                                                        |
 | meetingCapability   | [meetingCapability](meetingcapability.md)                                                              | Содержит возможности собрания.                                                                                                                                                             |
-| meetingInfo         | [organizerMeetingInfo](organizermeetinginfo.md) или [tokenMeetingInfo](tokenmeetinginfo.md)             | Сведения о собрании.                                                                                                                                                                            |
+| meetingInfo         | [meetingInfo](meetinginfo.md)                                                                          | Информация о собрании.                                                                                                                                                                            |
 | myParticipantId     | String                                                                                                 | Только для чтения. Создается сервером.                                                                                                                                                                        |
-| requestedModalities | Коллекция String                                                                                      | Список запрошенных модальностей. | Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
+| requestedModalities | Коллекция modality                                                                                      | Список запрошенных модальностей. | Возможные значения: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.                                                                            |
 | resultInfo          | [resultInfo](resultinfo.md)                                                                            | Сведения о результате. Например, может содержать причину прекращения. Только для чтения. Создается сервером.                                                                                                       |
 | ringingTimeoutInSeconds | Int32                                                                                              | Время ожидания звонков для исходящих одноранговых вызовов                                                                                                                                                     |
-| routingPolicies     | Коллекция String                                                                                      | Возможные значения: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`.                                                                                                   |
+| routingPolicies     | Коллекция routingPolicy                                                                                      | Возможные значения: `none`, `noMissedCall`, `disableForwardingExceptPhone`, `disableForwarding`.                                                                                                   |
 | source              | [participantInfo](participantinfo.md)                                                                  | Создатель вызова.                                                                                                                                                                         |
-| state               | String                                                                                                 | Состояние вызова. Возможные значения: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Только для чтения. Создается сервером.                         |
+| state               | callState                                                                                                 | Состояние вызова. Возможные значения: `incoming`, `establishing`, `ringing`, `established`, `hold`, `transferring`, `transferAccepted`, `redirecting`, `terminating`, `terminated`. Только для чтения. Создается сервером.                         |
 | subject             | String                                                                                                 | Тема беседы.                                                                                                                                                                    |
 | targets             | Коллекция [participantInfo](participantinfo.md)                                                       | Целевые объекты вызова.                                                                                                                                                                            |
 | tenantId            | String                                                                                                 | tenantId в Azure Active Directory.                                                                                                                                                                 |
@@ -100,6 +100,7 @@ ms.locfileid: "29510717"
     "chatInfo",
     "direction",
     "id",
+    "mediaConfig",
     "meetingCapability",
     "meetingInfo",
     "myParticipantId",
@@ -116,28 +117,28 @@ ms.locfileid: "29510717"
 }-->
 ```json
 {
-  "activeModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "answeredBy": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "callRoutes": [{"@odata.type": "#microsoft.graph.callRoute"}],
+  "activeModalities": ["modality"],
+  "answeredBy": {"@odata.type": "microsoft.graph.participantInfo"},
+  "callRoutes": [{"@odata.type": "microsoft.graph.callRoute"}],
   "callbackUri": "String",
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
-  "direction": "incoming | outgoing",
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
+  "direction": "callDirection",
   "id": "String (identifier)",
-  "mediaConfig": {"@odata.type": "#microsoft.graph.mediaConfig"},
-  "meetingCapability": {"@odata.type": "#microsoft.graph.meetingCapability"},
-  "meetingInfo": {"@odata.type": "#microsoft.graph.meetingInfo"},
+  "mediaConfig": {"@odata.type": "microsoft.graph.mediaConfig"},
+  "meetingCapability": {"@odata.type": "microsoft.graph.meetingCapability"},
+  "meetingInfo": {"@odata.type": "microsoft.graph.meetingInfo"},
   "myParticipantId": "String",
-  "requestedModalities": ["unknown | audio | video | videoBasedScreenSharing | data"],
-  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "requestedModalities": ["modality"],
+  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"},
   "ringingTimeoutInSeconds": 1024,
-  "routingPolicies": ["none | noMissedCall | disableForwardingExceptPhone | disableForwarding"],
-  "source": {"@odata.type": "#microsoft.graph.participantInfo"},
-  "state": "incoming | establishing | ringing | established | hold | transferring | transferAccepted | redirecting | terminating | terminated",
+  "routingPolicies": ["routingPolicy"],
+  "source": {"@odata.type": "microsoft.graph.participantInfo"},
+  "state": "callState",
   "subject": "String",
-  "targets": [{"@odata.type": "#microsoft.graph.participantInfo"}],
+  "targets": [{"@odata.type": "microsoft.graph.participantInfo"}],
   "tenantId": "String",
   "terminationReason": "String",
-  "toneInfo": {"@odata.type": "#microsoft.graph.toneInfo"}
+  "toneInfo": {"@odata.type": "microsoft.graph.toneInfo"}
 }
 ```
 
@@ -152,7 +153,7 @@ https://teams.microsoft.com/l/meetup-join/19:meeting_NTg0NmQ3NTctZDVkZC00YzRhLTh
 <!-- {
   "blockType": "example",
   "@odata.type": "microsoft.graph.call",
-  truncated: true
+  "truncated": true
 }-->
 ```json
 {
