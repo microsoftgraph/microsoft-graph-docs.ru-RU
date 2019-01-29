@@ -3,12 +3,13 @@ title: Отчеты о действиях пользователей Microsoft T
 description: С помощью отчетов о действиях пользователей Microsoft Teams можно анализировать действия пользователей Microsoft Teams в организации.
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 8ecf68174edb85b2bbf91a6052a6d96ad425dbe6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: 519094d2c569f418143420909ba871425a4b4af2
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966337"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29572229"
 ---
 # <a name="microsoft-teams-user-activity-reports"></a>Отчеты о действиях пользователей Microsoft Teams
 
