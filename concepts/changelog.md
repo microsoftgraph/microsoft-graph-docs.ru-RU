@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 0870b95d917e3ac5b5e93600062411d768dab39b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ccb86dc58bd45329996fd02a439dfd06bf312bcb
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514070"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577202"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,12 @@ ms.locfileid: "29514070"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="january-2019"></a>Январь 2019 г.
+
+### <a name="reports-apis"></a>API отчетов
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | бета  | Добавлены свойства **office365Active** и **office365Inactive** для объекта [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
 
 ### <a name="directory-apis"></a>API каталогов
 
@@ -1602,7 +1608,7 @@ ms.locfileid: "29514070"
 | Изменение      | Бета    | Удалено свойство **kioskModeManagedApps** объекта [androidGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidgeneraldeviceconfiguration?view=graph-rest-beta). |
 | Изменение      | Бета-версия    | Удалены свойства **cloudPkiProvider**, **createdDateTime**, **description**, **lastModifiedDateTime**, **displayName**, **syncStatus**, **lastSyncError**, **lastSyncDateTime**, **credentials**, **trustedRootCertificate** и **version** объекта cloudPkiSubscription. |
 | Изменение      | Бета-версия    | Удалены свойства **assignmentStatus**, **assignmentProgress** и **assignmentErrorMessage** объекта [deviceConfiguration](/graph/api/resources/intune-deviceconfig-deviceconfiguration?view=graph-rest-beta). |
-| Изменение      | Бета-версия    | Добавлено свойство **adminConsent** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
+| Изменение      | бета    | Добавлено свойство **adminConsent** для объекта [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлены свойства **vppTokenOrganizationName**, **vppTokenAccountType** и **vppTokenAppleId** для объекта [iosVppApp](/graph/api/resources/intune-apps-iosvppapp?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлены свойства **deviceEnrollmentType**, **wiFiMacAddress** и **deviceHealthAttestationState** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлено свойство **legacyAppConfiguration** для объекта [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta). |
@@ -2106,7 +2112,7 @@ ms.locfileid: "29514070"
 | Изменение      | Бета    | Для объекта [deviceComplianceSettingState](/graph/api/resources/intune-deviceconfig-devicecompliancesettingstate?view=graph-rest-beta) добавлены свойства **platformType**, **setting**, **userId** и **userEmail** |
 | Изменение      | Бета    | Для объекта [deviceCompliancePolicyDeviceStateSummary](/graph/api/resources/intune-deviceconfig-devicecompliancepolicydevicestatesummary?view=graph-rest-beta) добавлено свойство **inGracePeriodCount** |
 | Изменение      | Бета    | Добавлены свойства **userName**, **deviceModel** и **platform** для объекта [deviceConfigurationDeviceStatus](/graph/api/resources/intune-deviceconfig-deviceconfigurationdevicestatus?view=graph-rest-beta). |
-| Изменение      | Бета    | Удалено свойство **creationOptions** для объекта [event](/graph/api/resources/event?view=graph-rest-beta). |
+| Изменение      | Бета    | Удалено свойство **creationOptions** из объекта [event](/graph/api/resources/event?view=graph-rest-beta) |
 | Изменение      | Бета    | Удалено свойство **isDelegated** для объекта [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-beta). |
 | Изменение      | Бета    | Удалены свойства **unseenConversationsCount** и **unseenMessagesCount** для объекта [group](/graph/api/resources/group?view=graph-rest-beta). |
 | Изменение      | Бета    | Добавлены свойства **settingXml** и **settings** для объекта [iosMobileAppConfiguration](/graph/api/resources/intune-apps-iosmobileappconfiguration?view=graph-rest-beta). |
