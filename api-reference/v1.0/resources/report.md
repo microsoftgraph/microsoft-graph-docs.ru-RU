@@ -3,12 +3,13 @@ title: Работа с отчетами об использовании Office 3
 description: Microsoft Graph позволяет получить доступ к отчетам Office 365 и узнать, как сотрудники компании используют службы Office 365. Например, вы можете определить, кто использует службу по максимуму, а кому вообще не нужна лицензия Office 365.
 localization_priority: Priority
 ms.prod: reports
-ms.openlocfilehash: 4e1a139b000eb1d4f1175ddc05f818aaa0072b01
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: pranoychaudhuri
+ms.openlocfilehash: c786d2a6c26a667f44037e1bcb2834dee757ae94
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987134"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29577258"
 ---
 # <a name="working-with-office-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Office 365 в Microsoft Graph
 

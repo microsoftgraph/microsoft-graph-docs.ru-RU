@@ -1,16 +1,16 @@
 ---
-title: Получение вход
-description: Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.
+title: Получение объекта signIn
+description: Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
 localization_priority: Priority
-ms.openlocfilehash: 5d2d0513f44196d48aa863ac19838af13d960f85
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 79bebfda40b15a5524aecfc99e5b6d83a168b28e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27894497"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29576614"
 ---
-# <a name="get-signin"></a>Получение вход
-Извлекает Azure AD входы для клиента. Войти в систему, взаимодействующих в характер (где имя пользователя и пароль передается как часть маркера авторизации) и успешные федеративных войти в систему в данный момент включены в журналы входа.
+# <a name="get-signin"></a>Получение объекта signIn
+Извлекает входы пользователей Azure AD для клиента. Входы интерактивного типа (где имя пользователя и пароль передаются в составе маркера проверки подлинности) и успешные федеративные входы в настоящее время включаются в журналы входов.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -22,7 +22,7 @@ ms.locfileid: "27894497"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All | 
 
-Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.
+Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -30,29 +30,28 @@ ms.locfileid: "27894497"
 GET /auditLogs/signIns/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Проверьте [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для порядок использования этих параметров.
+Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [входить](../resources/signin.md) и кода ответа в теле ответа.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
+## <a name="response"></a>Отклик
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [signIn](../resources/signin.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
-  "blockType": "reque|location/city| eq, startswith|
-st",
+  "blockType": "request",
   "name": "get_signin"
 }-->
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/signIns/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

@@ -1,13 +1,13 @@
 ---
 title: Тип ресурса fileAttachment
-description: 'Файл (например, текстовый файл или документ Word) подключенного к события, сообщение или post. **ContentBytes** '
+description: 'Файл (например, текстовый файл или документ Word), вложенный в сведения о событии, сообщение или запись. **contentBytes** '
 localization_priority: Priority
-ms.openlocfilehash: 81de7a12ca371158d7f6369861a8a197fd544821
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 07dcdac0497caa106eac38d1248661218a7fcc5e
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27870058"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574819"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
@@ -32,7 +32,7 @@ ms.locfileid: "27870058"
 |:---------------|:--------|:----------|
 |contentBytes|Двоичный|Содержимое файла в кодировке base64.|
 |contentId|String|Идентификатор вложения в хранилище Exchange.|
-|contentLocation|String|Универсальный код ресурса (URI), который соответствует расположению содержимого вложения.|
+|contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
 |id|String|Идентификатор вложения.|
 |isInline|Boolean|Задано значение true, если это встроенное вложение.|

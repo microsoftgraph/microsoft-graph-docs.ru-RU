@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 85a921449a57b3e65d4a10e2d0439542f7bb1810
+ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526181"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "29574413"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -162,8 +162,8 @@ ms.locfileid: "29526181"
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы и административные единицы, в которых состоит группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)| Пользователи, контакты и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
-|membersWithLicenseErrors|Коллекция [User](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
-|onenote|[OneNote](onenote.md)| Только для чтения.|
+|membersWithLicenseErrors|Коллекция объектов [user](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
+|onenote|[oneNote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается только для групп безопасности). Только для чтения. Допускается значение null.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
 |photos|Коллекция объектов [profilePhoto](profilephoto.md)| Фотографии профиля, принадлежащие группе. Только для чтения. Допускается значение null.|
@@ -190,7 +190,7 @@ ms.locfileid: "29526181"
     "extensions",
     "memberOf",
     "members",
-    "onenote",
+    "oneNote",
     "owners",
     "photo",
     "photos",    
@@ -224,7 +224,7 @@ ms.locfileid: "29526181"
   "onPremisesProvisioningErrors": [{"@odata.type": "microsoft.graph.onPremisesProvisioningError"}],
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
-  "preferredDataLocation": ["string"],
+  "preferredDataLocation": "string",
   "proxyAddresses": ["string"],
   "renewedDateTime": "String (timestamp)",
   "securityEnabled": true,
