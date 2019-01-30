@@ -4,12 +4,12 @@ description: Тип tokenMeetingInfo.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 717bfbd14c92ea44987cbdadc25eef06ed31a0cc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571074"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642592"
 ---
 # <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса tokenMeetingInfo
 
@@ -33,7 +33,6 @@ ms.locfileid: "29571074"
   "optionalProperties": [
 
   ],
-  "baseType":"microsoft.graph.meetingInfo",
   "@odata.type": "microsoft.graph.tokenMeetingInfo"
 }-->
 ```json

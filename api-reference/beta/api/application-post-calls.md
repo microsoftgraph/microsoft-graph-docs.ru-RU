@@ -1,17 +1,17 @@
 ---
-title: Создание вызова
+title: Создание звонка
 description: Создайте новый звонок.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 60bd69bbef636f9e46f8f50a124b9a5a246dbe63
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573944"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643575"
 ---
-# <a name="create-call"></a>Создание вызова
+# <a name="create-call"></a>Создание звонка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ POST /applications/{id}/calls
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [вызова](../resources/call.md) .
 
 > **Примечание:** Свойства помечены как `Server generated` игнорируются при обработке `POST` на `app/calls`.
@@ -117,6 +117,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 201 Created
 Content-Type: application/json
+
 
 {
   "id": "57DAB8B1894C409AB240BD8BEAE78896",

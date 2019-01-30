@@ -1,15 +1,15 @@
 ---
-title: Список oauth2PermissionGrants
+title: Перечисление oauth2PermissionGrants
 description: Получение списка объектов oauth2PermissionGrant.
 localization_priority: Normal
-ms.openlocfilehash: 4a3ab48b4ab3162fd2222bc98f261d4f12c8d39a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9af84b4af64466658058259a665d426484511526
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572642"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643257"
 ---
-# <a name="list-oauth2permissiongrants"></a>Список oauth2PermissionGrants
+# <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -37,10 +37,10 @@ GET /oauth2PermissionGrants
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant",
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant",
   "isCollection": true
 } -->
 ```http

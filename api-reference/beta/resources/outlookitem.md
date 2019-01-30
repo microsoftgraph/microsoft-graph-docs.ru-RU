@@ -4,12 +4,12 @@ description: Ниже представлено описание ресурса �
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: fe582c4568995710d882ab22ebb7f4683469fc0f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8a44f9a2e568991c6803ebf72baf5f712f39ba64
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574749"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643799"
 ---
 # <a name="outlookitem-resource-type"></a>Тип ресурса outlookItem
 
@@ -24,7 +24,7 @@ ms.locfileid: "29574749"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.outlookItem"
+  "@odata.type": "microsoft.graph.outlookitem"
 }-->
 
 ```json
@@ -43,7 +43,7 @@ ms.locfileid: "29574749"
 |categories|Коллекция строк||
 |changeKey|String||
 |createdDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|id|Строка| Только для чтения.|
+|id|String| Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 
 ## <a name="relationships"></a>Связи

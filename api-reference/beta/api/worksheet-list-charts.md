@@ -4,12 +4,12 @@ description: Получение списка объектов диаграмм.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 3485d1e1c3e31a83489b64c6a94f0a35479611dd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9f3b293f0f52086e7d34bd9dff3c909fe4c5b85b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571158"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641605"
 ---
 # <a name="list-charts"></a>Список диаграмм
 
@@ -39,12 +39,12 @@ GET /workbook/worksheets/{id|name}/charts
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [workbookChart](../resources/chart.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Chart](../resources/chart.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -56,12 +56,11 @@ GET /workbook/worksheets/{id|name}/charts
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart",
+  "@odata.type": "microsoft.graph.chart",
   "isCollection": true
 } -->
 ```http

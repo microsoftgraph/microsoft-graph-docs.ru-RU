@@ -2,12 +2,12 @@
 title: Обновление governanceRoleAssignmentRequests
 description: Администраторы могли обновлять свои решения (`AdminApproved` или `AdminDenied`) на governanceRoleAssignmentRequests, находятся в состоянии `PendingAdminDecision`.
 localization_priority: Normal
-ms.openlocfilehash: 01178492517ae0ce1e2ed011e749e54af8e5d805
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 870cd685aade9bb722660b550ae210c6e10d1fe8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576530"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643264"
 ---
 # <a name="update-governanceroleassignmentrequests"></a>Обновление governanceRoleAssignmentRequests
 
@@ -35,17 +35,17 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя           | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 |Параметры      |Тип                   |Обязательный |Описание|
 |:-------------|:----------------------|:--------|:----------|
-|Причина        |Строка                 |✓        |Причины, предоставленный администратором для его решение.|
-|решение        |Строка                 |✓        |Администратор решение для запроса назначений ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied`.|
-|расписание      |[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|        | Расписание для запроса назначений ролей. Состояние `AdminApproved`, это необходимо.|
-|assignmentState      |Строка|         | Состояние назначения и значения, может быть `Eligible` или `Active`. Для принятия решений о `AdminApproved`, это необходимо. |
+|Причина        |String                 |✓        |Причины, предоставленный администратором для его решение.|
+|решение        |String                 |✓        |Администратор решение для запроса назначений ролей. Значение должно быть обновлено как `AdminApproved` или `AdminDenied`.|
+|расписание      |[governanceSchedule](../resources/governanceschedule.md)|        | Расписание для запроса назначений ролей. Состояние `AdminApproved`, это необходимо.|
+|assignmentState      |String|         | Состояние назначения и значения, может быть `Eligible` или `Active`. Для принятия решений о `AdminApproved`, это необходимо. |
 ### <a name="response"></a>Отклик
 Этот метод может применяться только к запросам, которые находятся в состоянии `PendingAdminDecision`.
 
@@ -60,7 +60,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/updateRequest
 ```http
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/updateRequest
 ```
-##### <a name="request-body"></a>Текст запроса
+##### <a name="request-body"></a>Тело запроса
 ```json
 {
   "reason":"approve the request to extend role assignment",

@@ -4,12 +4,12 @@ description: Инкапсулирует свойства формата для �
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a82e88bd8ba083271a821dc86435b0ce55364cec
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ced4e03cf715efdddac9570dbd00c4dc0b59b9bb
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572607"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641017"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Тип ресурса ChartDataLabelFormat
 
@@ -27,28 +27,8 @@ ms.locfileid: "29572607"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fill|[WorkbookChartFill](chartfill.md)|Представляет формат заливки для текущей метки данных диаграммы. Только для чтения.|
-|font|[WorkbookChartFont](chartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для метки данных диаграммы. Только для чтения.|
-
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartDataLabelFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "font": {"@odata.type": "microsoft.graph.workbookChartFont"}
-}
-```
-
+|fill|[ChartFill](chartfill.md)|Представляет формат заливки для текущей метки данных диаграммы. Только для чтения.|
+|font|[ChartFont](chartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для метки данных диаграммы. Только для чтения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

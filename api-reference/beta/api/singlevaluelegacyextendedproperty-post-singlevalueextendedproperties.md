@@ -2,12 +2,12 @@
 title: Создание расширенного свойства с одним значением
 description: 'Создайте одно или несколько свойств с одним значением в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
-ms.openlocfilehash: 6a9ddee699cac0e11a5656fc12174a9d4fb610c3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3b122eb1a02ddd9e413f5c58bf840b912dd8365f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575449"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641395"
 ---
 # <a name="create-single-value-extended-property"></a>Создание расширенного свойства с одним значением
 
@@ -148,17 +148,17 @@ PATCH /groups/{id}/events/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 | Content-Type | application/json |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Предоставление текста JSON каждого объекта [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) в свойства коллекции **singleValueLegacyExtendedProperty** экземпляра ресурса.
+Предоставьте тело JSON каждого объекта [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md) в свойстве коллекции **singleValueExtendedProperties** для экземпляра ресурса.
 
 |**Свойство**|**Тип**|**Описание**|
 |:-----|:-----|:-----|
-|singleValueLegacyExtendedProperty|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
-|id|Строка|Для каждого свойства в коллекции **singleValueLegacyExtendedProperty** укажите это для идентификации свойство. Его необходимо выполнить один из поддерживаемых форматов. Для получения дополнительных сведений в разделе [Общие сведения о свойствах расширенные Outlook](../resources/extended-properties-overview.md) . Обязательный.|
-|value|строка|Для каждого свойства в коллекции **singleValueLegacyExtendedProperty** укажите значение свойства. Обязательный.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Массив из одного или нескольких расширенных свойств с одним значением. |
+|id|Строка|Чтобы идентифицировать свойства в коллекции **singleValueExtendedProperties**, для каждого из них укажите этот параметр. Свойство должно быть одного из поддерживаемых форматов. Дополнительные сведения см. в статье [Обзор расширенных свойств Outlook](../resources/extended-properties-overview.md). Обязательный параметр.|
+|значение|строка|Для каждого свойства из коллекции **singleValueExtendedProperties** следует указать значение. Обязательный параметр.|
 
-При создании расширенных свойств в _новый_ экземпляр ресурсов, в дополнение к новой коллекции **singleValueLegacyExtendedProperty** , для представления JSON этого экземпляра ресурсов (то есть, [сообщения](../resources/message.md), [mailFolder ](../resources/mailfolder.md), [событие](../resources/event.md), и т.д.)
+При создании расширенного свойства в _новом_ экземпляре ресурса, помимо новой коллекции **singleValueExtendedProperties**, нужно указать описание этого экземпляра ресурса (то есть [message](../resources/message.md), [mailFolder](../resources/mailfolder.md), [event](../resources/event.md) и т. д.) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -179,7 +179,7 @@ PATCH /groups/{id}/events/{id}
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
 
-В первом примере создается новое событие и расширенное свойство одно значение в той же операции POST. За исключением свойства, которое обычно содержит новые события текст запроса включает в себя **singleValueLegacyExtendedProperty** коллекцию, содержащую одно свойство расширенного одно значение, а также следующие свойства:
+Первый пример показывает создание нового события и расширенного свойства с одним значением с помощью одной и той же операции POST. Помимо свойств, которые вы обычно указываете для нового события, тело запроса включает коллекцию **singleValueExtendedProperties**, которая содержит одно расширенное свойство с одним значением, и следующие данные для этого свойства:
 
 - **id** (указывает тип свойства как `String`), GUID и свойство `Fun`.
 - **value** (указывает `Food` как значение свойства `Fun`). 
@@ -212,7 +212,7 @@ Content-Type: application/json
       "type": "Required"
     }
   ],
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
      {
            "id":"String {66f5a359-4659-4830-9070-00040ec6ac6e} Name Fun",
            "value":"Food"
@@ -232,7 +232,7 @@ Content-Type: application/json
 
 ##### <a name="request-2"></a>Запрос 2
 
-Во втором примере создает один одно значение расширенные свойства для указанного существующее сообщение. Расширенные свойства это единственный элемент массива **singleValueLegacyExtendedProperty** . Текст запроса включает в себя следующие параметры для расширенного свойства:
+Второй пример показывает создание расширенного свойства с одним значением для указанного существующего сообщения. Это расширенное свойство — единственный элемент в массиве **singleValueExtendedProperties**. Тело запроса включает следующие данные для расширенного свойства:
 - **id** (указывает тип свойства как `String`), GUID и свойство `Color`.
 - **value** (указывает `Green` как значение свойства `Color`).
 
@@ -243,7 +243,7 @@ PATCH https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2_bs88AACHsLqWAAA='
 Content-Type: application/json
 
 {
-  "singleValueLegacyExtendedProperty": [
+  "singleValueExtendedProperties": [
       {
          "id":"String {66f5a359-4659-4830-9070-00047ec6ac6e} Name Color",
          "value":"Green"

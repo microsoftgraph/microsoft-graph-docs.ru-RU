@@ -4,12 +4,12 @@ description: Извлечение свойств и связи объекта **
 localization_priority: Normal
 author: cloudhandler
 ms.prod: security
-ms.openlocfilehash: 18798df27ebccb3e56afa4e0f479ced4b4029863
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 586e76cd57e720741c6a63bc00374cd0973a1cf3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575302"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642347"
 ---
 # <a name="get-riskyusers"></a>Получение riskyUsers
 
@@ -41,8 +41,8 @@ GET /riskyUsers/{query}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,27 +55,25 @@ GET /riskyUsers/{query}
   "name": "get_identityriskevent"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/riskyUsers/c2b6c2b9-dddc-acd0-2b39-d519d803dbc3
+GET https://graph.microsoft.com/beta/riskyUsers/{id}
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyUsers"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": true,
-  "isDeleted": true,
+  "isGuest": "true",
+  "isDeleted": "true",
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk",
+  "riskState": "atRisk"
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }

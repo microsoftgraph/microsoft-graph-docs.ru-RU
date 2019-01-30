@@ -2,12 +2,12 @@
 title: Тип ресурса filterOperatorSchema
 description: Описывает оператор, который может использоваться в фильтре.
 localization_priority: Normal
-ms.openlocfilehash: 366e00b5d21efeaf67e3e799c5b1c2412a68e268
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573685"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641822"
 ---
 # <a name="filteroperatorschema-resource-type"></a>Тип ресурса filterOperatorSchema
 
@@ -19,9 +19,10 @@ ms.locfileid: "29573685"
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|арность                       | microsoft.graph.scopeOperatorType         |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию — `Binary`.|
-|multivaluedComparisonType   | microsoft.graph.scopeOperatorMultiValuedComparisonType          |Возможные значения: `All`, `Any`. Применяется только к многозначных атрибутов. `All`означает, что все значения должны соответствовать условие. `Any`означает, что по крайней мере одно значение должен удовлетворяют условию. Значение по умолчанию — `All`.|
-|supportedAttributeTypes     | attributeType семейства сайтов         |Атрибут типы, которые поддерживаются оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|арность                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию — `Binary`.|
+|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Возможные значения: `All`, `Any`. Применяется только к многозначных атрибутов. `All`означает, что все значения должны соответствовать условие. `Any`означает, что по крайней мере одно значение должен удовлетворяют условию. Значение по умолчанию — `All`.|
+|name                        |String                     |Имя оператора. |
+|supportedAttributeTypes     |Коллекция String         |Атрибут типы, которые поддерживаются оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -37,10 +38,12 @@ ms.locfileid: "29573685"
 
 ```json
 {
-  "arity": "microsoft.graph.scopeOperatorType",
-  "multivaluedComparisonType": "microsoft.graph.scopeOperatorMultiValuedComparisonType",  
-  "supportedAttributeTypes": ["attributeType"]
+  "arity": "String",
+  "multivaluedComparisonType": "String",
+  "name": "String",
+  "supportedAttributeTypes": ["String"]
 }
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

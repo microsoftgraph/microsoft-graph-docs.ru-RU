@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ra
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: d01003edd44853221c9285876c819d4f97a18717
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 79eeb6379c4268ae3d429eb100df79abb93cb757
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576537"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640702"
 ---
 # <a name="get-rangefont"></a>Получение объекта RangeFont
 
@@ -41,8 +41,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -58,8 +58,7 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/font
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -76,7 +75,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

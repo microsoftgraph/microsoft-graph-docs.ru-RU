@@ -2,12 +2,12 @@
 title: Тип ресурса attributeMapping
 description: Определяет, как значения для атрибута заданный целевой поток во время синхронизации.
 localization_priority: Normal
-ms.openlocfilehash: 9f33aa9a784ba3e40fd8d38650737a9064a0831c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 16235cce73a17b462f6f44aedf0c8759277983c1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573664"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641878"
 ---
 # <a name="attributemapping-resource-type"></a>Тип ресурса attributeMapping
 
@@ -20,12 +20,12 @@ ms.locfileid: "29573664"
 | Свойство                  | Тип                      | Описание    |
 |:--------------------------|:--------------------------|:---------------|
 |defaultValue               | String                    |По умолчанию значение для использования в случае, если свойство **source** проверялись `null`. Необязательный параметр.|
-|exportMissingReferences    |Строка                     |Только для внутреннего использования.|
-|flowBehavior               | Строка перечисления      |Определяет, когда этот атрибут, должны быть экспортированы в конечный каталог. Возможные значения: `FlowWhenChanged` и `FlowAlways`. Значение по умолчанию: `FlowWhenChanged`. |
-|flowType                   | Строка ennum          |Определяет, когда этот атрибут следует обновить в целевой каталог. Возможные значения: `Always` (по умолчанию), `ObjectAddOnly` (только если создается новый объект), `MultiValueAddOnly` (только при изменении добавляет новые значения это многозначный атрибут). |
+|exportMissingReferences    |String                     |Только для внутреннего использования.|
+|flowBehavior               |attributeFlowBehavior      |Определяет, когда этот атрибут, должны быть экспортированы в конечный каталог. Возможные значения: `FlowWhenChanged` и `FlowAlways`. Значение по умолчанию: `FlowWhenChanged`. |
+|flowType                   |attributeFlowType          |Определяет, когда этот атрибут следует обновить в целевой каталог. Возможные значения: `Always` (по умолчанию), `ObjectAddOnly` (только если создается новый объект), `MultiValueAddOnly` (только при изменении добавляет новые значения это многозначный атрибут). |
 |matchingPriority           |Int32                      |Если больше 0, этот атрибут будет использоваться для выполнения первоначальной совпадение объектов между исходный и конечный каталоги. Обработчик синхронизации попытается найти соответствующий объект, с помощью атрибута с наименьшее значение сначала совпадающих приоритет. Если не найден, атрибута с помощью следующего соответствия приоритет будет использоваться и так далее до совпадения или исключаются соответствующие атрибуты. Только атрибуты, которые должны иметь уникальные значения, такие как электронной почтой, следует использовать в качестве соответствующие атрибуты.|
 |source                     |[attributeMappingSource](synchronization-attributemappingsource.md)     | Определяет, как должно быть значение извлечены (или преобразовать) из исходного объекта. |
-|targetAttributeName        |Строка                     |Имя атрибута для конечного объекта. |
+|targetAttributeName        |String                     |Имя атрибута для конечного объекта. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,8 +43,8 @@ ms.locfileid: "29573664"
 {
   "defaultValue": "String",
   "exportMissingReferences": true,
-  "flowBehavior": "FlowWhenChanged | FlowAlways",
-  "flowType": "Always |  ObjectAddOnly | MultiValueAddOnly ",
+  "flowBehavior": "String",
+  "flowType": "String",
   "matchingPriority": 1024,
   "source": {"@odata.type": "microsoft.graph.attributeMappingSource"},
   "targetAttributeName": "String"

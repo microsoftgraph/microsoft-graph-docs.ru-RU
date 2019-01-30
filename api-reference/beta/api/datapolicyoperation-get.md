@@ -4,12 +4,12 @@ description: Извлечение свойств объекта dataPolicyOperat
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 46839a9b2bf45cb54342de86f3db476de24689e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5fff5d25ed83c6cfdf889c364630399acdeecb9e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577398"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640758"
 ---
 # <a name="get-datapolicyoperation"></a>Получение dataPolicyOperation
 
@@ -36,7 +36,7 @@ GET /dataPolicyOperations/{id}
 | Authorization  | Bearer {token}|
 
 ## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` объект [dataPolicyOperation](../resources/datapolicyoperation.md) и кода ответа в теле ответа.
 ## <a name="example"></a>Пример
@@ -66,7 +66,8 @@ Content-length: 212
   "status": "status-value",
   "storageLocation": "storageLocation-value",
   "userId": "userId-value",
-  "submittedDateTime": "datetime-value"
+  "submittedDateTime": "datetime-value",
+  "progress": "progress-value"
 }
 ```
 

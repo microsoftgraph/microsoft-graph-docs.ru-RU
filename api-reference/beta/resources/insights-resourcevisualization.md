@@ -4,31 +4,33 @@ description: Сложный тип, содержащий свойства сре
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 9dc2d50a5bc694204317f8c3332263ce5259e2fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575106"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641297"
 ---
 # <a name="resourcevisualization-resource-type"></a>Тип ресурса resourceVisualization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип, содержащий свойства [officeGraphInsights](insights.md).
+Сложный тип, содержащий свойства [средствами](insights.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-  ],  
-  "@odata.type": "microsoft.graph.resourceVisualization"
-}-->
 ```json
 {
+  "title": "string",
+  "type"  : "string",
+  "mediaType": "string",
+  "previewImageUrl": "string",
+  "previewText": "string",
+  "containerWebUrl": "string",
+  "containerDisplayName": "string",
+  "containerType": "string"
 }
 ```
 
@@ -36,14 +38,14 @@ ms.locfileid: "29575106"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |---------------| -------------|
-| title                 | Строка        | Текст заголовка элемента.               |
-| type              | Строка        | Тип элемента мультимедиа. Можно использовать для фильтрации для конкретного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| Тип носителя             | Строка        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
-| previewImageUrl       | Строка        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
-| previewText           | Строка        | Предварительная версия текст для элемента. |
-| containerWebUrl       | Строка        | Путь, приводя к папке, в которой хранится элемент. |
-| containerDisplayName  | Строка        | Строка, описывающая, где хранится элемент. Например имя сайт SharePoint или имя пользователя, определение владельца OneDrive, хранения элемента.  |
-| containerType         | Строка | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
+| title                 | String        | Текст заголовка элемента.               |
+| type              | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для конкретного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
+| Тип носителя             | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
+| previewImageUrl       | String        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
+| previewText           | String        | Предварительная версия текст для элемента. |
+| containerWebUrl       | String        | Путь, приводя к папке, в которой хранится элемент. |
+| containerDisplayName  | String        | Строка, описывающая, где хранится элемент. Например имя сайт SharePoint или имя пользователя, определение владельца OneDrive, хранения элемента.  |
+| containerType         | String | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
 
 ## <a name="type-property-values"></a>Тип значения свойств
 -   PowerPoint

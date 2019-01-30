@@ -1,12 +1,12 @@
 ---
 title: timeZoneStandard значения
 description: " Значение"
-ms.openlocfilehash: fae641b0dbb7f87a55d5bca3db36c1f24c23ad29
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574763"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640982"
 ---
 ### <a name="timezonestandard-values"></a>timeZoneStandard значения
 
@@ -265,7 +265,7 @@ ms.locfileid: "29574763"
 | Ответственный       | 0
 | Участник | 1
 | Средство чтения      | 2
-| Нет        | –1
+| None;        | –1
 
 
 ### <a name="operationstatus-values"></a>operationStatus значения
@@ -612,7 +612,7 @@ ms.locfileid: "29574763"
 |:---|:---|:---|
 |unknown|0|Неизвестная роль.|
 |sender|1|Отправитель сообщения электронной почты.|
-|Получатель|2|Получатель электронной почты.|
+|recipient|2|Получатель электронной почты.|
 
 # <a name="logontype-enum-type"></a>Тип перечисления logonType
 
@@ -641,210 +641,3 @@ ms.locfileid: "29574763"
 |стандартный|0|Участник группы обычными пользователями.|
 |Power|1| Быть членом группы опытных пользователей.|
 |Администратор|2| Быть членом группы "Администраторы".|
-
-
-
-### <a name="scopeoperatortype-values"></a>scopeOperatorType значения
-
-| Элемент            |Значение
-|:------------------|:-------
-| двоичный файл              | 0
-| унарный         | 1
-
-
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType значения
-
-| Элемент            |Значение
-|:------------------|:-------
-| all              | 0
-| любой         | 1
-
-
-### <a name="scopeoperatormultivaluedcomparisontype-values"></a>scopeOperatorMultiValuedComparisonType значения
-
-| Элемент            |Значение
-|:------------------|:-------
-| Низкая              | 0
-| medium         | 1
-| Высокая         | 2
-
-### <a name="exchangeidformat-values"></a>exchangeIdFormat значения
-
-| Элемент            |Значение
-|:------------------|:-------
-| Идентификатор записи              | 0
-| ewsId         | 1
-| immutableEntryId         | 2
-| restId         | 2
-| restImmutableEntryId         | 2
-
-### <a name="risklevel-values"></a>riskLevel значения
-
-| Значение           
-|:------------------
-| none
-| Низкая
-| medium
-| Высокая
-| hidden
-| unknownFutureValue
-
-### <a name="riskstate-values"></a>riskState значения
-
-| Значение           
-|:------------------
-| none
-| Низкая
-| medium
-| Высокая
-| hidden
-| unknownFutureValue
-
-### <a name="riskdetail-values"></a>riskDetail значения
-
-| Значение           
-|:------------------
-| none
-| adminGeneratedTemporaryPassword
-| userPerformedSecuredPasswordChange
-| userPerformedSecuredPasswordReset
-| adminConfirmedSigninSafe
-| aiConfirmedSigninSafe
-| userPassedMFADrivenByRiskBasedPolicy
-| adminDismissedAllRiskForUser
-| adminConfirmedSigninCompromised
-| unknownFutureValue
-
-# <a name="securitynetworkprotocol-values"></a>securityNetworkProtocol значения
-
-|Элемент|Значение|Описание|
-|:---|:---|:---|
-|unknown|–1|Неизвестный протокол.|
-|IP-адресов|0|Протокол Интернета.|
-|ICMP|1| Протокол ICMP.|
-|IGMP|2| Протокол IGMP.|
-|решение GGP|3| Протокол шлюз-шлюз.|
-|IPv4|4| Протокол IP версии 4.|
-|TCP|6| Протокол.|
-|PUP|12| Протокол универсальные пакетов PARC.|
-|UDP-порт|17| Протокол.|
-|IDP|22| Протокол Интернета.|
-|IP версии 6|41| Протокол IP версии 6 (ipv6).|
-|ipv6RoutingHeader|43| Заголовок маршрутизации IPv6.|
-|ipv6FragmentHeader|44| Заголовок IPv6 фрагмент кода.|
-|ipSecEncapsulatingSecurityPayload|50| Инкапсуляция полезных данных безопасности заголовка IPv6.|
-|ipSecAuthenticationHeader|51| Заголовок проверки подлинности IPv6.|
-|icmpV6|58| Протокол ICMP для ipv6.|
-|ipv6NoNextHeader|59| IPv6 не следующий заголовок.|
-|ipv6DestinationOptions|60| Параметры места назначения заголовка IPv6.|
-|конец|77| NET протокол диска (неофициальный).|
-|необработанные|255| Необработанные пакетов протокола IP-адресов.|
-|протокол IPX|1000| Протокол Exchange пакетов.|
-|SPX|1256| Протокол виртуализированный пакет Exchange.|
-|spxII|1257| Виртуализированный пакет Exchange версии 2 протокола.|
-
-
-
-### <a name="referenceattachmentpermission-values"></a>referenceAttachmentPermission значения
-
-| Элемент            |Значение
-|:------------------|:-------
-| другие             | 0
-| view              | 1
-| edit              | 2
-| anonymousView     | 3
-| anonymousEdit     | 4
-| organizationView  | 5
-| organizationEdit  | 6
-
-
-### <a name="referenceattachmentprovider-values"></a>referenceAttachmentProvider значения
-
-| Элемент            |Значение
-|:------------------|:-------
-| другие             | 0
-| oneDriveBusiness  | 1
-| oneDriveConsumer  | 2
-| общего банка данных           | 3
-
-### <a name="modality-values"></a>модальность значения
-
-| Элемент                    |Значение
-|:--------------------------|:-------
-| unknown                   | 0
-| audio                     | 1
-| video                     | 2
-| videoBasedScreenSharing   | 3
-| data                      | 4
-
-### <a name="routingpolicy-values"></a>routingPolicy значения
-
-| Элемент                        |Значение
-|:------------------------------|:-------
-| none                          | 0
-| noMissedCall                  | 1
-| disableForwardingExceptPhone  | 2
-| disableForwarding             | 3
-
-### <a name="callstate-values"></a>callState значения
-
-| Элемент               |Значение
-|:---------------------|:-------
-| incoming             | 0
-| Установление         | 1
-| звонок              | 2
-| установить          | 3
-| Удержание                 | 4
-| Передача         | 5
-| transferAccepted     | 6
-| перенаправление          | 7
-| Завершение работы          | 8
-| завершен           | 9
-
-### <a name="calldirection-values"></a>callDirection значения
-
-| Элемент               |Значение
-|:---------------------|:-------
-| incoming             | 0
-| Исходящие             | 1
-
-### <a name="attributetype-values"></a>значения attributeType
-
-| Элемент               |Значение
-|:---------------------|:-------
-| dateTime             | 5
-| boolean              | 4
-| двоичный файл               | 3
-| ссылка            | 2
-| целое число              | 1
-| @string              | 0
-
-### <a name="operationstatus-values"></a>operationStatus значения
-
-| Элемент               |Значение
-|:---------------------|:-------
-| notStarted           | 0
-| под управлением              | 1
-| завершена            | 2
-| failed               | 3
-
-### <a name="operationstatus-values"></a>operationStatus значения
-
-| Элемент               |Значение
-|:---------------------|:-------
-| по умолчанию              | 0
-| Голосовая почта 1
-
-### <a name="recordcompletionreason-values"></a>recordCompletionReason значения
-
-| Элемент                    |Значение
-|:--------------------------|:-------
-| operationCanceled         | 0
-| stopToneDetected          | 1
-| maxRecordDurationReached  | 2
-| initialSilenceTimeout     | 3
-| maxSilenceTimeout         | 4
-| playPromptFailed          | 5
-| playBeepFailed            | 6
-| mediaReceiveTimeout       | 7
-| unspecifiedError          | 8

@@ -1,21 +1,21 @@
 ---
 title: 'Вызовите: записи'
-description: Запишите вызова.
+description: Запись вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1f119cfece969c01e68773e5985eab4010dc9874
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4dc409a502b18da9c0e897054a7c1d6386fa096f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574861"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641906"
 ---
 # <a name="call-record"></a>Вызовите: записи
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Запишите вызова.
+Запись вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,12 +38,12 @@ POST /applications/{id}/calls/{id}/record
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|запросы|[mediaPrompt](../resources/mediaprompt.md) коллекции | Коллекция запросы на воспроизведение (если они имеются) перед записи запускается. Клиенты могут вести указывает действие «playPrompt» отдельно или как часть «запись» - большей части все записи, перед с помощью строки |
+|запросы|[mediaprompt](../resources/mediaprompt.md) коллекции | Коллекция запросы на воспроизведение (если они имеются) перед записи запускается. Клиенты могут вести указывает действие «playPrompt» отдельно или как часть «запись» - большей части все записи, перед с помощью строки |
 |bargeInAllowed|Boolean| Разрешить пользователям вариант до завершения строки.                                                                 |
 |initialSilenceTimeoutInSeconds | Int32| Допускается с момента времени ожидания и происходит сбой операции начинаем операцию записи, прежде чем мы максимальное начальной бездействия. Если воспроизводится запрос этот таймер запускается после завершения строки. |
 |maxSilenceTimeoutInSeconds|Int32| Бездействия максимальное время ожидания в секундах.|
@@ -51,7 +51,7 @@ POST /applications/{id}/calls/{id}/record
 |playBeep|Boolean| Воспроизводит звуковой сигнал после воспроизведения в строке.|
 |streamWhileRecording|Boolean|Если значение равно true, расположение ресурсов будет предоставляются как только начнется регистрация. |
 |stopTones|Коллекция String|Остановите мелодии, для которого требуется завершить запись.|
-|clientContext|Строка|Контекст клиента.|
+|clientContext|String|Контекст клиента.|
 
 ## <a name="response"></a>Отклик
 Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.

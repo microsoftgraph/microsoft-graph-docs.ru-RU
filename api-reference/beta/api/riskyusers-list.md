@@ -4,12 +4,12 @@ description: Извлечение свойств и связи объекта **
 localization_priority: Normal
 author: cloudhandler
 ms.prod: security
-ms.openlocfilehash: 0987a45aafdb31cad17728851ce1ac1ddb066aa0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5c0c0557a5cd84312ef9d6381d8cf3018ab8ce7d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576376"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640940"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 
@@ -42,8 +42,8 @@ GET /riskyUsers/{query}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -58,25 +58,23 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Отклик 1
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyUsers"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-
 {
   "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
   "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": true,
-  "isDeleted": true,
+  "isGuest": "true",
+  "isDeleted": "true",
   "riskDetail": "adminConfirmedSigninCompromised",
   "riskLevel": "high",
-  "riskState": "atRisk",
+  "riskState": "atRisk"
   "userDisplayName": "Jon Doe",
   "userPrincipalName": "jon@contoso.com"
 }
@@ -104,12 +102,10 @@ GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.g
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyUsers"
 } -->
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-
 {
       "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
       "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
@@ -119,9 +115,9 @@ Content-type: application/json
       "riskLevel": "medium",
       "riskState": "atRisk",
       "userDisplayName": "Jon Doe",
-      "userPrincipalName": "jon@contoso.com"
-      
-}
+      "userPrincipalName": "jon@contoso.com",
+      }
+    }
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

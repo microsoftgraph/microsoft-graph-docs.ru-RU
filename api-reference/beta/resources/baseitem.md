@@ -4,12 +4,12 @@ ms.author: rgregg
 ms.date: 09/10/2017
 title: baseItem
 localization_priority: Normal
-ms.openlocfilehash: bf1b0c71491f502f6a047f7c174516d2dcbf0f6e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577419"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641563"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -30,8 +30,6 @@ ms.locfileid: "29577419"
   "blockType": "resource",
   "optionalProperties": [ "createdBy", "lastModifiedBy", "description", "parentReference", "webUrl" ],
   "keyProperty": "id",
-  "abstract": true,
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.baseItem"
 }-->
 
@@ -57,24 +55,15 @@ ms.locfileid: "29577419"
 | id                   | string            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
-| description          | Строка            | Предоставляет видимыми описание элемента. Необязательный параметр.                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
-| name                 | строка            | Имя элемента. Чтение и запись.                                                      |
+| name                 | string            | Имя элемента. Чтение и запись.                                                      |
 | parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                              |
 | webUrl               | строка (url-адрес)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
 
-## <a name="relationships"></a>Связи
-
-| Связь       | Тип     | Описание
-|:-------------------|:---------|:---------------------------------------------
-| createdByUser      | [user][] | Удостоверение пользователя, создавшего элемент. Только для чтения.
-| lastModifiedByUser | [user][] | Удостоверение пользователя, который последним изменил элемент. Только для чтения.
-
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[user]: user.md
 
 ## <a name="remarks"></a>Примечания
 

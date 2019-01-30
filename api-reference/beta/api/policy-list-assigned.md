@@ -2,12 +2,12 @@
 title: Список политики, назначенные для приложения или участника-службы
 description: Получение объектов политики, назначенных для приложения или участника службы.
 localization_priority: Normal
-ms.openlocfilehash: 417d59228aadd3c6a54c4634416fd577fce11f18
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1ed39f376b7d090b784f867a59fcb93558bd5f1a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575963"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640016"
 ---
 # <a name="list-policies-assigned-to-application-or-service-principal"></a>Список политики, назначенные для приложения или участника-службы
 
@@ -35,10 +35,10 @@ GET /applications/{id}/policies
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,8 +55,7 @@ GET https://graph.microsoft.com/beta/applications/{id}/policies
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 200 OK
@@ -71,7 +70,7 @@ Content-Type: application/json
             "alternativeIdentifier":null,
             "definition":["policy-definition"],
             "displayName":"name-value",
-            "isOrganizationDefault": true | false,
+            "isOrganizationDefault":boolean-value,
             "keyCredentials":[key-credentials],
             "type":"type-value"
         }

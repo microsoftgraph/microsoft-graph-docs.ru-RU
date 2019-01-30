@@ -2,12 +2,12 @@
 title: Тип ресурса secureScoreControlProfiles
 description: Представляет безопасной счета клиента в данные элемента управления. По умолчанию он возвращает все элементы управления для клиента, а можно явно по запросу отдельных элементов управления.
 localization_priority: Normal
-ms.openlocfilehash: 4e599bbffd291de51ba478f8661999d01c8c8998
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3e800271f1ef5f8ac7847d14d97ae6f24f1e01cf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576061"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641612"
 ---
 # <a name="securescorecontrolprofiles-resource-type"></a>Тип ресурса secureScoreControlProfiles
 
@@ -20,32 +20,31 @@ ms.locfileid: "29576061"
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Перечисление объектов secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfile](securescorecontrolprofiles.md) |Чтение свойства и метаданные объекта secureScoreControlProfiles.|
+|[Перечисление объектов secureScoreControlProfiles](../api/securescorecontrolprofiles-list.md) | [secureScoreControlProfiles](securescorecontrolprofiles.md) |Чтение свойства и метаданные объекта secureScoreControlProfiles.|
 
 
 ## <a name="properties"></a>Свойства
 
 |Имя |Тип |Описание |
 |:--|:--|:--|
-|   azureTenantId   |   Строка  |   Идентификатор GUID строки для клиента.  |
-|   ИмяЭлементаУправления |   Строка  |   Имя элемента управления. |
-|   title   |   Строка  |   Заголовок элемента управления.   |
-|   controlCategory |   Строка  |   Категория действие элемента управления (учетная запись, данные, устройства, приложения, инфраструктуры).  |
+|   azureTenantId   |   String  |   Идентификатор GUID строки для клиента.  |
+|   ИмяЭлементаУправления |   String  |   Имя элемента управления. |
+|   title   |   String  |   Заголовок элемента управления.   |
+| complianceInformation | [complianceInformation](complianceinformation.md) коллекции | Коллекции данных соответствия требованиям, связанных с безопасного элемента управления счета |
+|   controlCategory |   String  |   Категория действие элемента управления (учетная запись, данные, устройства, приложения, инфраструктуры).  |
 |   actionType  |   String  |   Действие типа (Config, просмотр, поведение) элемента управления. |
 |   service |   String  |   Службы, которому принадлежит элемент управления (Exchange, Sharepoint, Azure AD). |
-|   maxScore |  Double  |   Текущая платформа получить максимальный показатель на указанной даты.   |
-|   уровень |  Строка  |   Уровень элемента управления (Core, защите подробно, Дополнительно.)    |
-|   userImpact |    Строка  | Влияние пользователей реализации управления (низкий, средний, высокий).    |
-|   implementationCost |    Строка  |   Стоимость ресурса элемента управления implemmentating (низкий, средний, высокий). |
+|   maxScore |  String  |   Текущая платформа получить максимальный показатель на указанной даты.   |
+|   уровень |  String  |   Уровень элемента управления (Core, защите подробно, Дополнительно.)    |
+|   userImpact |    String  | Влияние пользователей реализации управления (низкий, средний, высокий).    |
+|   implementationCost |    String  |   Стоимость ресурса элемента управления implemmentating (низкий, средний, высокий). |
 |   rank |  Int32   |   Стек корпорации Майкрософт ранжирования элемента управления.   |
-|   угрозы безопасности |   Коллекция строк   |   Список управления устраняет угрозы (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, спуфинг). |
+|   угрозы безопасности |   Коллекция String   |   Список управления устраняет угрозы (accountBreach, dataDeletion, dataExfiltration, dataSpillage, elevationOfPrivilege, maliciousInsider, passwordCracking, phishingOrWhaling, спуфинг). |
 |   устаревшие |    Boolean |   Флаг, указывающий, если элемент управления амортизации.   |
-|   исправление |   Строка  |   Описание элемента управления, какие представлены сведения о устранение. |
-|   remediationImpact | Строка  |   Описание влияния на пользователей исправлению. |
-|   actionUrl | Строка  |   URL-адрес, где элемент управления может быть actioned. |
-|   lastModifiedDateTime |  String (DateTimeOffset) |   Дата последнего изменения |
-|   controlStateUpdates |   [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) коллекции |  Флаг, указывающий, где клиент отметил элемента управления (игнорировать, сторонних анализа) (поддерживает [обновление](../api/securescorecontrolprofiles-update.md)). |
-|   vendorInformation | [securityVendorInformation](securityvendorinformation.md) | Содержит сведения о безопасности продуктов и услуг поставщика, поставщик и subprovider (например, поставщика = корпорации Майкрософт; поставщика = ATP Защитник Windows; subProvider = AppLocker).|
+|   исправление |   String  |   Описание элемента управления, какие представлены сведения о устранение. |
+|   remediationImpact | String  |   Описание влияния на пользователей исправлению. |
+|   actionUrl | String  |   URL-адрес, где элемент управления может быть actioned. |
+|   controlStateUpdates |   [secureScoreControlStateUpdate](securescorecontrolstateupdate.md) коллекции |    Флаг, указывающий, где клиент отметил элемента управления (игнорировать, сторонних анализа) (поддерживает [обновление](../api/securescorecontrolprofiles-update.md)). |
 
 ## <a name="relationships"></a>Связи
 
@@ -60,32 +59,32 @@ ms.locfileid: "29576061"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "@odata.type": "microsoft.graph.secureScores"
 }-->
 
 ```json
 {
-    "title": "String", 
-    "azureTenantId": "String (identifier)", 
-    "referenceId": "String", 
-    "controlName": "String", 
-    "maxScore": "Double",
-    "controlCategory": "string",
-    "actionType": "string",
-    "service": "String",
-    "tier": "string",
-    "userImpact": "string",
-    "implementationCost ": "string",
-    "rank ": "Int32",
-    "deprecated ": "Boolean",
-    "remediation": "String",
-    "remediationImpact ": "String",
-    "actionUrl": "String",
-    "lastModifiedDateTime": "   String (DateTimeOffset)",
-    "controlStateUpdates": [{"odata.type":"microsoft.graph.secureScorecontrolStateUpdates"}],
-    "tenantNotes": "String",
-    "upn": "String",    
-    "vendorInformation" : "microsoft.graph.securityVendorInformation"
+"title": "String", 
+"azureTenantId": "Guid", 
+"referenceId": "String", 
+"controlName": "String", 
+"maxScore": "Int32",
+"actionCategory": "Collection(microsoft.graph.SecureScore.actionCategory)",
+"actionType": "Collection(microsoft.graph.SecureScore.actionType)",
+"service": "String",
+"tier": "Collection(microsoft.graph.SecureScore.tier)",
+"userImpact": "Collection(microsoft.graph.SecureScore.ranking)",
+"implementationCost ": "Collection(microsoft.graph.SecureScore.ranking)",
+"rank ": "Int32",
+"threats": "Collection(microsoft.graph.SecureScore.threat)",
+"deprecated ": "Boolean",
+"remediation": "String",
+"remediationImpact ": "String",
+"actionUrl": "String",
+"controlStateUpdates": "Collection(microsoft.graph.SecureScore.controlStateUpdates)",
+"tenantNotes": "String",
+"upn": "String",
+"comments": "String",
 }
 
 

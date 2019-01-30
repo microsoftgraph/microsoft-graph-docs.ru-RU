@@ -1,26 +1,26 @@
 ---
 title: тип веб-ресурса
-description: Задает параметры для веб-приложения.
+description: Указывает параметры для веб-приложения.
 localization_priority: Normal
-ms.openlocfilehash: 281a3f23dd0e22cae6b3ca2b67e2e9cd8b400740
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572719"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643512"
 ---
 # <a name="web-resource-type"></a>тип веб-ресурса
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает параметры для веб-приложения.
+Указывает параметры для веб-приложения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
 |implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения.|
-|logoutUrl|Строка| Задает URL-адрес, который будет использоваться службой авторизации корпорации Майкрософт для выхода из системы на пользователя, с помощью [канала передний план](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [снова канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколы выхода SAML. |
+|logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
 |oauth2AllowImplicitFlow|Boolean| Рекомендуется использовать. Не используйте. | 
 |redirectUris|Коллекция String| Указывает URL-адресов, которые будут отправлены маркеры пользователя для входа в или отправки коды авторизации коды URI, OAuth 2.0 и маркеры доступа для перенаправления. |
 
@@ -32,7 +32,7 @@ ms.locfileid: "29572719"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.webApplication"
+  "@odata.type": "microsoft.graph.web"
 }-->
 
 ```json

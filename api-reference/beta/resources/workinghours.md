@@ -2,12 +2,12 @@
 title: Тип ресурса workingHours
 description: Представляет дни недели и часы работы пользователя в определенном часовом поясе.
 localization_priority: Normal
-ms.openlocfilehash: 8d0c0c96838af63cd0e1c665d23e54938b4ea34d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 40a74cd1446dc2553e30ebd0616b0b0e33192778
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573825"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642095"
 ---
 # <a name="workinghours-resource-type"></a>Тип ресурса workingHours
 
@@ -25,9 +25,9 @@ ms.locfileid: "29573825"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| daysOfWeek | Коллекция dayOfWeek | Дни недели, в которые работает пользователь. |
-| startTime | String (TimeOfDay) | Время дня, в которое пользователь начинает работать. |
-| endTime | String (TimeOfDay) | Время дня, в которое пользователь заканчивает работать. |
+| daysOfWeek | Коллекция строк | Дни недели, в которые работает пользователь. |
+| startTime | Edm.TimeOfDay | Время дня, в которое пользователь начинает работать. |
+| endTime | Edm.TimeOfDay | Время дня, в которое пользователь заканчивает работать. |
 | timeZone | [timeZoneBase](timezonebase.md) | Часовой пояс, к которому относится рабочее время. |
 
 
@@ -45,9 +45,9 @@ ms.locfileid: "29573825"
 
 ```json
 {
-  "daysOfWeek": ["dayOfWeek"],
-  "startTime": "String (TimeOfDay)",
-  "endTime": "String (TimeOfDay)",
+  "daysOfWeek": ["string"],
+  "startTime": "TimeOfDay",
+  "endTime": "TimeOfDay",
   "timeZone": {"@odata.type": "microsoft.graph.timeZoneBase"}
 }
 

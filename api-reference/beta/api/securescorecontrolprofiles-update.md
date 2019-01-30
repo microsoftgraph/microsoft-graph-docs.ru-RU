@@ -2,12 +2,12 @@
 title: Обновление secureScoreControlProfiles
 description: Обновите свойство редактируемого secureScoreControlProfiles в любой интегрированное решение для изменения различных свойств, например assignedTo или tenantNote.
 localization_priority: Normal
-ms.openlocfilehash: 2be11c6b369d9dc411afa5af2219c3bfa8605c8a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 711fd29e906822def0a5f4b5fbca13a1d73732d6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573363"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642032"
 ---
 # <a name="update-securescorecontrolprofiles"></a>Обновление secureScoreControlProfiles
 
@@ -37,18 +37,18 @@ PATCH /security/secureScoreControlProfiles/{id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
 |Prefer | Возвращает = представление. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление JSON значений для соответствующие поля, которые должны обновляться. В следующей таблице приведены поля, которые могут быть обновлены для secureScoreControlProfile. Значения для существующих свойств, которые не включены в тексте запроса остаются без изменений. Для достижения оптимальной производительности не включайте существующие значения, которые не изменились.
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|assignedTo|Строка|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
-|tenantNote|Строка|Комментарии аналитик на элементе управления (для управления клиента).|
-|controlStateUpdates| Строка|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
+|assignedTo|String|Имя элемента управления аналитик назначается для рассмотрения, реализации или исправления.|
+|tenantNote|String|Комментарии аналитик на элементе управления (для управления клиента).|
+|controlStateUpdates| String|Аналитик, управляемых с помощью параметра на элементе управления. Возможные значения: `ignore`, `thirdParty`, `reviewed`.|
 
 
 ## <a name="response"></a>Отклик
@@ -84,16 +84,20 @@ Content-type: application/json
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "@odata.type": "microsoft.graph.secureScoreControlProfiles"
 } -->
 
 ```http
 HTTP/1.1 204 No Content
 ```
 
-<!-- {
+
+
+
+<!--
+{
   "type": "#page.annotation",
-  "description": "Update secureScoreControlProfile",
+  "description": "Update secureScoreControlProfiles",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

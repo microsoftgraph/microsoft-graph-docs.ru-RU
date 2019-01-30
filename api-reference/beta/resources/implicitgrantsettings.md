@@ -2,12 +2,12 @@
 title: Тип ресурса implicitGrantSettings
 description: Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения. Отдельные свойства доступны для запроса маркеры идентификатор и доступа как часть неявных потока. Чтобы включить неявных поток, по крайней мере одного из следующих свойств необходимо установить значение true.
 localization_priority: Normal
-ms.openlocfilehash: 82051c3605d9815fef8a0852e0ffa9075f4a6d78
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6714b9448f2e49419e41fa62822498ceaa232170
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574518"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642767"
 ---
 # <a name="implicitgrantsettings-resource-type"></a>Тип ресурса implicitGrantSettings
 
@@ -24,13 +24,7 @@ ms.locfileid: "29574518"
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
 
-  ],
-  "@odata.type": "microsoft.graph.implicitGrantSettings"
-}-->
 ```json
 {
   "enableIdTokenIssuance": "Boolean",

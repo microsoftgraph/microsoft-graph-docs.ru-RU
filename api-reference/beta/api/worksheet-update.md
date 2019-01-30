@@ -4,12 +4,12 @@ description: Обновление свойств объекта листа.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 85f027020f11b43ffd22aeaddd89cd5852d6eaff
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: bf726ce3ad9bff427b3ec78d572017f6aea162e4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571718"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641542"
 ---
 # <a name="update-worksheet"></a>Обновление листа
 
@@ -36,14 +36,14 @@ PATCH /workbook/worksheets/{id|name}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|строка|Отображаемое имя листа.|
 |position|int|Положение листа (начиная с нуля) в книге.|
-|visibility|string|Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
+|visibility|строка|Видимость листа. Возможные значения: `Visible`, `Hidden`, `VeryHidden`.|
 
 ## <a name="response"></a>Отклик
 
@@ -67,12 +67,11 @@ Content-length: 100
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheet"
+  "@odata.type": "microsoft.graph.worksheet"
 } -->
 ```http
 HTTP/1.1 200 OK
