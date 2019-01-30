@@ -4,32 +4,32 @@ description: Создание страницы OneNote в разделе по у
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: c55a3f023ddaa50e7917aed8f1ec1b8bc9b8b6e7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573461"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640814"
 ---
-# <a name="create-page"></a><span data-ttu-id="f9c5a-103">Создание страницы</span><span class="sxs-lookup"><span data-stu-id="f9c5a-103">Create page</span></span>
+# <a name="create-page"></a><span data-ttu-id="c6f3f-103">Создание страницы</span><span class="sxs-lookup"><span data-stu-id="c6f3f-103">Create page</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="f9c5a-104">Создание страницы OneNote в разделе по умолчанию записной книжки по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-104">Create a new OneNote page in the default section of the default notebook.</span></span>
+<span data-ttu-id="c6f3f-104">Создание страницы OneNote в разделе по умолчанию записной книжки по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-104">Create a new OneNote page in the default section of the default notebook.</span></span>
 
-<span data-ttu-id="f9c5a-p101">Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`.  Пример: `../onenote/pages?sectionName=My%20section`</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p101">To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`</span></span>
+<span data-ttu-id="c6f3f-p101">Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`.  Пример: `../onenote/pages?sectionName=My%20section`</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p101">To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.  Example: `../onenote/pages?sectionName=My%20section`</span></span>
 
-<span data-ttu-id="f9c5a-p102">Операция `POST /onenote/pages` используется только для создания страниц в записной книжке текущего пользователя, используемой по умолчанию. Если вы хотите сделать это в других записных книжках, вы можете [создать страницы в определенном разделе](../api/section-post-pages.md).</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p102">The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).</span></span>           
-## <a name="permissions"></a><span data-ttu-id="f9c5a-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="f9c5a-109">Permissions</span></span>
-<span data-ttu-id="f9c5a-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c6f3f-p102">Операция `POST /onenote/pages` используется только для создания страниц в записной книжке текущего пользователя, используемой по умолчанию. Если вы хотите сделать это в других записных книжках, вы можете [создать страницы в определенном разделе](../api/section-post-pages.md).</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p102">The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook. If you're targeting other notebooks, you can [create pages in a specified section](../api/section-post-pages.md).</span></span>           
+## <a name="permissions"></a><span data-ttu-id="c6f3f-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c6f3f-109">Permissions</span></span>
+<span data-ttu-id="c6f3f-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f9c5a-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f9c5a-112">Permission type</span></span>      | <span data-ttu-id="f9c5a-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="f9c5a-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c6f3f-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c6f3f-112">Permission type</span></span>      | <span data-ttu-id="c6f3f-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c6f3f-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="f9c5a-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f9c5a-114">Delegated (work or school account)</span></span> | <span data-ttu-id="f9c5a-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9c5a-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="f9c5a-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f9c5a-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="f9c5a-117">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="f9c5a-117">Notes.Create, Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="f9c5a-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f9c5a-118">Application</span></span> | <span data-ttu-id="f9c5a-119">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f9c5a-119">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="c6f3f-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c6f3f-114">Delegated (work or school account)</span></span> | <span data-ttu-id="c6f3f-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6f3f-115">Notes.Create, Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c6f3f-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c6f3f-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c6f3f-117">Notes.Create, Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c6f3f-117">Notes.Create, Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="c6f3f-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c6f3f-118">Application</span></span> | <span data-ttu-id="c6f3f-119">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c6f3f-119">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="f9c5a-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f9c5a-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c6f3f-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c6f3f-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -39,26 +39,26 @@ POST /groups/{id}/onenote/pages
 POST /sites/{id}/onenote/pages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f9c5a-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f9c5a-121">Request headers</span></span>  
-| <span data-ttu-id="f9c5a-122">Имя</span><span class="sxs-lookup"><span data-stu-id="f9c5a-122">Name</span></span>       | <span data-ttu-id="f9c5a-123">Тип</span><span class="sxs-lookup"><span data-stu-id="f9c5a-123">Type</span></span> | <span data-ttu-id="f9c5a-124">Описание</span><span class="sxs-lookup"><span data-stu-id="f9c5a-124">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="c6f3f-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c6f3f-121">Request headers</span></span>  
+| <span data-ttu-id="c6f3f-122">Имя</span><span class="sxs-lookup"><span data-stu-id="c6f3f-122">Name</span></span>       | <span data-ttu-id="c6f3f-123">Тип</span><span class="sxs-lookup"><span data-stu-id="c6f3f-123">Type</span></span> | <span data-ttu-id="c6f3f-124">Описание</span><span class="sxs-lookup"><span data-stu-id="c6f3f-124">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="f9c5a-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="f9c5a-125">Authorization</span></span>  | <span data-ttu-id="f9c5a-126">string</span><span class="sxs-lookup"><span data-stu-id="f9c5a-126">string</span></span>  | <span data-ttu-id="f9c5a-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="f9c5a-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="f9c5a-129">Content-Type</span></span> | <span data-ttu-id="f9c5a-130">строка</span><span class="sxs-lookup"><span data-stu-id="f9c5a-130">string</span></span> | <span data-ttu-id="f9c5a-p105">`text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p105">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
+| <span data-ttu-id="c6f3f-125">Authorization</span><span class="sxs-lookup"><span data-stu-id="c6f3f-125">Authorization</span></span>  | <span data-ttu-id="c6f3f-126">строка</span><span class="sxs-lookup"><span data-stu-id="c6f3f-126">string</span></span>  | <span data-ttu-id="c6f3f-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c6f3f-129">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c6f3f-129">Content-Type</span></span> | <span data-ttu-id="c6f3f-130">строка</span><span class="sxs-lookup"><span data-stu-id="c6f3f-130">string</span></span> | <span data-ttu-id="c6f3f-p105">`text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p105">`text/html` or `application/xhtml+xml` for the HTML content, including for the required "Presentation" part of multipart requests. Multipart requests use the `multipart/form-data; boundary=your-boundary` content type.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="f9c5a-133">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f9c5a-133">Request body</span></span>
-<span data-ttu-id="f9c5a-134">В теле запроса укажите содержимое HTML для страницы.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-134">In the request body, supply the HTML content for the page.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c6f3f-133">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c6f3f-133">Request body</span></span>
+<span data-ttu-id="c6f3f-134">В теле запроса укажите содержимое HTML для страницы.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-134">In the request body, supply the HTML content for the page.</span></span>
 
-<span data-ttu-id="f9c5a-p106">Тело может содержать HTML-код, размещенный непосредственно в теле запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p106">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
+<span data-ttu-id="c6f3f-p106">Тело может содержать HTML-код, размещенный непосредственно в теле запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p106">The body can contain HTML placed directly in the request body, or it can contain a multipart message format as shown in the example. If you're sending binary data, then you must send a multipart request.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f9c5a-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9c5a-137">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c6f3f-137">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6f3f-137">Response</span></span>
 
-<span data-ttu-id="f9c5a-138">Успешно завершена, этот метод возвращает `201 Created` код ответа и новый объект [onenotePage](../resources/onenotepage.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-138">If successful, this method returns a `201 Created` response code and the new [onenotePage](../resources/onenotepage.md) object in the response body.</span></span>
+<span data-ttu-id="c6f3f-138">При успешном выполнении этот метод возвращает код отклика `201 Created` и новый объект [page](../resources/page.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-138">If successful, this method returns a `201 Created` response code and the new [page](../resources/page.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f9c5a-139">Пример</span><span class="sxs-lookup"><span data-stu-id="f9c5a-139">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="f9c5a-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="f9c5a-140">Request</span></span>
-<span data-ttu-id="f9c5a-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="c6f3f-139">Пример</span><span class="sxs-lookup"><span data-stu-id="c6f3f-139">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c6f3f-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="c6f3f-140">Request</span></span>
+<span data-ttu-id="c6f3f-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-141">Here is an example of the request.</span></span>
 
-<span data-ttu-id="f9c5a-p107">В случае пути `../onenote/pages`, чтобы создать страницу в определенном разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (либо был переименован), API создаст другой раздел.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-p107">In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.</span></span>
+<span data-ttu-id="c6f3f-p107">В случае пути `../onenote/pages`, чтобы создать страницу в определенном разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (либо был переименован), API создаст другой раздел.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-p107">In the `../onenote/pages` path, you can use the `sectionName` query parameter to create a page in a specific section in the default notebook. Example: `../onenote/pages?sectionName=My%20section`. If the section doesn't exist (or was renamed), the API will create a new section.</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -100,8 +100,8 @@ Content-Type:application/pdf
 
 --MyPartBoundary198374--
 ```
-##### <a name="response"></a><span data-ttu-id="f9c5a-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="f9c5a-145">Response</span></span>
-<span data-ttu-id="f9c5a-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-146">Here is an example of the response.</span></span> <span data-ttu-id="f9c5a-147">Примечание: Для краткости усекается объект ответа, показано ниже.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-147">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="f9c5a-148">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f9c5a-148">All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c6f3f-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="c6f3f-145">Response</span></span>
+<span data-ttu-id="c6f3f-146">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-146">Here is an example of the response.</span></span> <span data-ttu-id="c6f3f-147">Примечание: Для краткости усекается объект ответа, показано ниже.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-147">Note: The response object shown here is truncated for brevity.</span></span> <span data-ttu-id="c6f3f-148">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c6f3f-148">All of the properties will be returned from an actual call.</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

@@ -4,35 +4,34 @@ description: Конфигурация мультимедиа, используе
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0b2d8b8063307660b0d4cce459e1906f0b0a99c5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573965"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642620"
 ---
-# <a name="mediaconfig-resource-type"></a><span data-ttu-id="67670-103">Тип ресурса mediaConfig</span><span class="sxs-lookup"><span data-stu-id="67670-103">mediaConfig resource type</span></span>
+# <a name="mediaconfig-resource-type"></a><span data-ttu-id="b3be9-103">Тип ресурса mediaConfig</span><span class="sxs-lookup"><span data-stu-id="b3be9-103">mediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="67670-104">Конфигурация мультимедиа, используемый для подключения к звонку.</span><span class="sxs-lookup"><span data-stu-id="67670-104">The media configuration used to connect to a call.</span></span>
+<span data-ttu-id="b3be9-104">Конфигурация мультимедиа, используемый для подключения к звонку.</span><span class="sxs-lookup"><span data-stu-id="b3be9-104">The media configuration used to connect to a call.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="67670-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="67670-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="b3be9-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="b3be9-105">Properties</span></span>
 
-| <span data-ttu-id="67670-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="67670-106">Property</span></span>       | <span data-ttu-id="67670-107">Тип</span><span class="sxs-lookup"><span data-stu-id="67670-107">Type</span></span>    | <span data-ttu-id="67670-108">Описание</span><span class="sxs-lookup"><span data-stu-id="67670-108">Description</span></span>|
+| <span data-ttu-id="b3be9-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="b3be9-106">Property</span></span>       | <span data-ttu-id="b3be9-107">Тип</span><span class="sxs-lookup"><span data-stu-id="b3be9-107">Type</span></span>    | <span data-ttu-id="b3be9-108">Описание</span><span class="sxs-lookup"><span data-stu-id="b3be9-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="67670-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="67670-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="67670-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="67670-110">Boolean</span></span> |  |
+| <span data-ttu-id="b3be9-109">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="b3be9-109">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="b3be9-110">Boolean</span><span class="sxs-lookup"><span data-stu-id="b3be9-110">Boolean</span></span> |  |
 
-## <a name="json-representation"></a><span data-ttu-id="67670-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="67670-111">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="b3be9-111">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b3be9-111">JSON representation</span></span>
 
-<span data-ttu-id="67670-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="67670-112">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="b3be9-112">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b3be9-112">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
     "removeFromDefaultAudioGroup"
   ],
-  "abstract": true,
   "@odata.type": "microsoft.graph.mediaConfig"
 }-->
 ```json

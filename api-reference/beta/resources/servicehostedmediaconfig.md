@@ -4,46 +4,45 @@ description: Тип serviceHostedMediaConfig.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 127450b569a37f00a76696a749c269f55c15b7aa
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572453"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642228"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="cb054-103">Тип ресурса serviceHostedMediaConfig</span><span class="sxs-lookup"><span data-stu-id="cb054-103">serviceHostedMediaConfig resource type</span></span>
+# <a name="servicehostedmediaconfig-resource-type"></a><span data-ttu-id="69f43-103">Тип ресурса serviceHostedMediaConfig</span><span class="sxs-lookup"><span data-stu-id="69f43-103">serviceHostedMediaConfig resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb054-104">Тип serviceHostedMediaConfig.</span><span class="sxs-lookup"><span data-stu-id="cb054-104">The serviceHostedMediaConfig type.</span></span>
+<span data-ttu-id="69f43-104">Тип serviceHostedMediaConfig.</span><span class="sxs-lookup"><span data-stu-id="69f43-104">The serviceHostedMediaConfig type.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="cb054-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cb054-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="69f43-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="69f43-105">Properties</span></span>
 
-| <span data-ttu-id="cb054-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cb054-106">Property</span></span>                    | <span data-ttu-id="cb054-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cb054-107">Type</span></span>                                                        | <span data-ttu-id="cb054-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cb054-108">Description</span></span>                                       |
+| <span data-ttu-id="69f43-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="69f43-106">Property</span></span>                    | <span data-ttu-id="69f43-107">Тип</span><span class="sxs-lookup"><span data-stu-id="69f43-107">Type</span></span>                                                        | <span data-ttu-id="69f43-108">Описание</span><span class="sxs-lookup"><span data-stu-id="69f43-108">Description</span></span>                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| <span data-ttu-id="cb054-109">preFetchMedia</span><span class="sxs-lookup"><span data-stu-id="cb054-109">preFetchMedia</span></span>               | <span data-ttu-id="cb054-110">[mediaInfo](mediainfo.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="cb054-110">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="cb054-111">Список мультимедиа для предварительно выборки.</span><span class="sxs-lookup"><span data-stu-id="cb054-111">The list of media to pre-fetch.</span></span>                   |
-| <span data-ttu-id="cb054-112">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="cb054-112">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="cb054-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="cb054-113">Boolean</span></span>                                                     | <span data-ttu-id="cb054-114">Удалите собственный участника из группы по умолчанию звука.</span><span class="sxs-lookup"><span data-stu-id="cb054-114">Remove self participant from default audio group.</span></span> |
+| <span data-ttu-id="69f43-109">preFetchMedia</span><span class="sxs-lookup"><span data-stu-id="69f43-109">preFetchMedia</span></span>               | <span data-ttu-id="69f43-110">[mediaInfo](mediainfo.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="69f43-110">[mediaInfo](mediainfo.md) collection</span></span>                        | <span data-ttu-id="69f43-111">Список мультимедиа для предварительно выборки.</span><span class="sxs-lookup"><span data-stu-id="69f43-111">The list of media to pre-fetch.</span></span>                   |
+| <span data-ttu-id="69f43-112">removeFromDefaultAudioGroup</span><span class="sxs-lookup"><span data-stu-id="69f43-112">removeFromDefaultAudioGroup</span></span> | <span data-ttu-id="69f43-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="69f43-113">Boolean</span></span>                                                     | <span data-ttu-id="69f43-114">Удалите собственный участника из группы по умолчанию звука.</span><span class="sxs-lookup"><span data-stu-id="69f43-114">Remove self participant from default audio group.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="cb054-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cb054-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="69f43-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="69f43-115">JSON representation</span></span>
 
-<span data-ttu-id="cb054-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cb054-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="69f43-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="69f43-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
     "preFetchMedia"
   ],
-   "baseType":"microsoft.graph.mediaConfig",
   "@odata.type": "microsoft.graph.serviceHostedMediaConfig"
 }-->
 ```json
 {
-  "preFetchMedia": [ { "@odata.type": "microsoft.graph.mediaInfo" } ],
+  "preFetchMedia": [ { "@odata.type": "#microsoft.graph.mediaInfo" } ],
   "removeFromDefaultAudioGroup": true
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="cb054-117">Пример</span><span class="sxs-lookup"><span data-stu-id="cb054-117">Example</span></span>
+## <a name="example"></a><span data-ttu-id="69f43-117">Пример</span><span class="sxs-lookup"><span data-stu-id="69f43-117">Example</span></span>
 
 <!-- {
   "blockType": "example",

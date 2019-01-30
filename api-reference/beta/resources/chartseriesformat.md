@@ -4,51 +4,31 @@ description: Инкапсулирует свойства формата для �
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c5fdfffdf5bcf6aeefc5068392f689cbf66d683d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 739da09fccc1d2c40b103397b8a10e91eab39fdf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573587"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643208"
 ---
-# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="95f90-103">Тип ресурса ChartSeriesFormat</span><span class="sxs-lookup"><span data-stu-id="95f90-103">ChartSeriesFormat resource type</span></span>
+# <a name="chartseriesformat-resource-type"></a><span data-ttu-id="48dd9-103">Тип ресурса ChartSeriesFormat</span><span class="sxs-lookup"><span data-stu-id="48dd9-103">ChartSeriesFormat resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95f90-104">Инкапсулирует свойства формата для ряда диаграммы.</span><span class="sxs-lookup"><span data-stu-id="95f90-104">encapsulates the format properties for the chart series</span></span>
+<span data-ttu-id="48dd9-104">Инкапсулирует свойства формата для ряда диаграммы.</span><span class="sxs-lookup"><span data-stu-id="48dd9-104">encapsulates the format properties for the chart series</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="95f90-105">Методы</span><span class="sxs-lookup"><span data-stu-id="95f90-105">Methods</span></span>
-<span data-ttu-id="95f90-106">Нет</span><span class="sxs-lookup"><span data-stu-id="95f90-106">None</span></span>
+## <a name="methods"></a><span data-ttu-id="48dd9-105">Методы</span><span class="sxs-lookup"><span data-stu-id="48dd9-105">Methods</span></span>
+<span data-ttu-id="48dd9-106">Нет</span><span class="sxs-lookup"><span data-stu-id="48dd9-106">None</span></span>
 
-## <a name="properties"></a><span data-ttu-id="95f90-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="95f90-107">Properties</span></span>
-<span data-ttu-id="95f90-108">Нет</span><span class="sxs-lookup"><span data-stu-id="95f90-108">None</span></span>
+## <a name="properties"></a><span data-ttu-id="48dd9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="48dd9-107">Properties</span></span>
+<span data-ttu-id="48dd9-108">Нет</span><span class="sxs-lookup"><span data-stu-id="48dd9-108">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="95f90-109">Связи</span><span class="sxs-lookup"><span data-stu-id="95f90-109">Relationships</span></span>
-| <span data-ttu-id="95f90-110">Связь</span><span class="sxs-lookup"><span data-stu-id="95f90-110">Relationship</span></span> | <span data-ttu-id="95f90-111">Тип</span><span class="sxs-lookup"><span data-stu-id="95f90-111">Type</span></span>   |<span data-ttu-id="95f90-112">Описание</span><span class="sxs-lookup"><span data-stu-id="95f90-112">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="48dd9-109">Связи</span><span class="sxs-lookup"><span data-stu-id="48dd9-109">Relationships</span></span>
+| <span data-ttu-id="48dd9-110">Связь</span><span class="sxs-lookup"><span data-stu-id="48dd9-110">Relationship</span></span> | <span data-ttu-id="48dd9-111">Тип</span><span class="sxs-lookup"><span data-stu-id="48dd9-111">Type</span></span>   |<span data-ttu-id="48dd9-112">Описание</span><span class="sxs-lookup"><span data-stu-id="48dd9-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="95f90-113">fill</span><span class="sxs-lookup"><span data-stu-id="95f90-113">fill</span></span>|[<span data-ttu-id="95f90-114">WorkbookChartFill</span><span class="sxs-lookup"><span data-stu-id="95f90-114">WorkbookChartFill</span></span>](chartfill.md)|<span data-ttu-id="95f90-p101">Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="95f90-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
-|<span data-ttu-id="95f90-117">line</span><span class="sxs-lookup"><span data-stu-id="95f90-117">line</span></span>|[<span data-ttu-id="95f90-118">WorkbookChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="95f90-118">WorkbookChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="95f90-p102">Представляет форматирование линий. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="95f90-p102">Represents line formatting. Read-only.</span></span>|
-
-
-## <a name="json-representation"></a><span data-ttu-id="95f90-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="95f90-121">JSON representation</span></span>
-
-<span data-ttu-id="95f90-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="95f90-122">Here is a JSON representation of the resource.</span></span>
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartSeriesFormat"
-}-->
-
-```json
-{
-  "fill": {"@odata.type": "microsoft.graph.workbookChartFill"},
-  "line": {"@odata.type": "microsoft.graph.workbookChartLineFormat"}
-}
-```
-
+|<span data-ttu-id="48dd9-113">fill</span><span class="sxs-lookup"><span data-stu-id="48dd9-113">fill</span></span>|[<span data-ttu-id="48dd9-114">ChartFill</span><span class="sxs-lookup"><span data-stu-id="48dd9-114">ChartFill</span></span>](chartfill.md)|<span data-ttu-id="48dd9-p101">Представляет формат заливки ряда диаграммы, включая сведения о форматировании фона. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="48dd9-p101">Represents the fill format of a chart series, which includes background formating information. Read-only.</span></span>|
+|<span data-ttu-id="48dd9-117">line</span><span class="sxs-lookup"><span data-stu-id="48dd9-117">line</span></span>|[<span data-ttu-id="48dd9-118">ChartLineFormat</span><span class="sxs-lookup"><span data-stu-id="48dd9-118">ChartLineFormat</span></span>](chartlineformat.md)|<span data-ttu-id="48dd9-p102">Представляет форматирование линий. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="48dd9-p102">Represents line formatting. Read-only.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
