@@ -2,12 +2,12 @@
 title: Тип ресурса publicClient
 description: Задает параметры для без веб-приложения или веб-Api. (например, Mobile или других общедоступных клиентом, например установленные приложения, запущенного на устройстве настольных систем)
 localization_priority: Normal
-ms.openlocfilehash: 866e27b4ea3e1386b7cc69f967635d38641f121c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ff1d77709293a7167868451671e1660196c9a4db
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571844"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644058"
 ---
 # <a name="publicclient-resource-type"></a>Тип ресурса publicClient
 
@@ -29,7 +29,7 @@ ms.locfileid: "29571844"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.publicClientApplication"
+  "@odata.type": "microsoft.graph.installedClient"
 }-->
 
 ```json

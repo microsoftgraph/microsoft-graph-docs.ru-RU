@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6ce8b7d9518df01ec04b1191a9784ea015e83c7d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1912cc6ea38eef71d8ecade964b976725b91b5d9
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576145"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644002"
 ---
 # <a name="get-chartaxistitle"></a>Получение объекта ChartAxisTitle
 
@@ -41,12 +41,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChartAxisTitle](../resources/chartaxistitle.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartAxisTitle](../resources/chartaxistitle.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -58,12 +58,11 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/title
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/title
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 } -->
 ```http
 HTTP/1.1 200 OK

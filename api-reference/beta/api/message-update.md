@@ -4,12 +4,12 @@ description: Обновление свойств объекта сообщени
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 78f030e49f5e9caad5cf505be0118eee5b732752
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5a42e9d6a10e79a4ae801cca464c912dc6fade7b
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573671"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644051"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
@@ -36,8 +36,8 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string  | Характер данных в теле объекта. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка  | Характер данных в теле объекта. Обязательный. |
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились. Следующие свойства могут быть обновлены.
 
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:---------------|:--------|:----------|
 |bccRecipients|Recipient|Получателей скрытой копии сообщения. |
 |Основной текст|ItemBody|Текст сообщения. Обновляемые только если isDraft = true.|
-|categories|Коллекция String|Категории, сопоставленные с сообщением.|
+|categories|Коллекция String|Категории, связанные с сообщением.|
 |ccRecipients|Коллекция объектов Recipient|Получателей копии сообщения. |
 |from|Recipient|Владелец почтового ящика и отправитель сообщения. Должно соответствовать фактический почтового ящика, используемого. |
 |importance|String|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
@@ -54,10 +54,10 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|multiValueLegacyExtendedProperty| Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
 |replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Обновляемые только если isDraft = true.|
-|sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого.|
-|singleValueLegacyExtendedProperty| Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
+|sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактически используемому почтовому ящику.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
 |subject|String|Тема сообщения. Обновляемые только если isDraft = true.|
 |toRecipients|Коллекция объектов Recipient|Кому получателей сообщения. |
 

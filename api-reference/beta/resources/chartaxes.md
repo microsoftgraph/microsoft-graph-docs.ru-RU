@@ -4,12 +4,12 @@ description: Представляет оси диаграммы.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f2a3744e38ffebef0c28784c0fd4be8f35b8af23
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df18ff1902dd750ef44311e2924a7e63e0ba0e58
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570864"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644079"
 ---
 # <a name="chartaxes-resource-type"></a>Тип ресурса ChartAxes
 
@@ -27,29 +27,9 @@ ms.locfileid: "29570864"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|categoryAxis|[WorkbookChartAxis](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
-|seriesAxis|[WorkbookChartAxis](chartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
-|valueAxis|[WorkbookChartAxis](chartaxis.md)|Представляет ось значений для оси. Только для чтения.|
-
-## <a name="json-representation"></a>Представление JSON
-
-Ниже представлено описание ресурса в формате JSON.
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartAxes"
-}-->
-
-```json
-{
-  "categoryAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"},
-  "seriesAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"},
-  "valueAxis": {"@odata.type": "microsoft.graph.workbookChartAxis"}
-}
-
-```
+|categoryAxis|[ChartAxis](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
+|seriesAxis|[ChartAxis](chartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
+|valueAxis|[ChartAxis](chartaxis.md)|Представляет ось значений для оси. Только для чтения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

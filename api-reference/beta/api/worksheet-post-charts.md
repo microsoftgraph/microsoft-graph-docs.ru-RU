@@ -4,12 +4,12 @@ description: С помощью этого API можно создать объе
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 07d310471aef6560557a8a78c62b8aa15767c90f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 27bd441e6002d69cf94f79b8e3de40f9614ad6a6
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570871"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644065"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -38,11 +38,11 @@ POST /workbook/worksheets/{id|name}/charts/
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [workbookChart](../resources/chart.md) .
+Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` объект [workbookChart](../resources/chart.md) и кода ответа в теле ответа.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [Chart](../resources/chart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -62,14 +62,13 @@ Content-length: 52
   "left": 99
 }
 ```
-В тексте запроса укажите представление JSON объекта [workbookChart](../resources/chart.md) .
+Предоставьте в тексте запроса описание объекта [Chart](../resources/chart.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChart"
+  "@odata.type": "microsoft.graph.chart"
 } -->
 ```http
 HTTP/1.1 201 Created

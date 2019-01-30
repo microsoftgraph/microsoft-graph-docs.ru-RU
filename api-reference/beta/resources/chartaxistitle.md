@@ -4,12 +4,12 @@ description: Представляет название оси диаграммы
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e0ad1385bb46dc4ff0e3f6bc9a3acfb861e7af88
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572712"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644086"
 ---
 # <a name="chartaxistitle-resource-type"></a>Тип ресурса ChartAxisTitle
 
@@ -22,8 +22,8 @@ ms.locfileid: "29572712"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [WorkbookChartAxisTitle](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
-|[Update](../api/chartaxistitle-update.md) | [WorkbookChartAxisTitle](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
+|[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
+|[обновление](../api/chartaxistitle-update.md). | [ChartAxisTitle](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -34,24 +34,24 @@ ms.locfileid: "29572712"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartAxisTitleFormat](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
+|format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartAxisTitle"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartAxisTitle"
 }-->
 
 ```json
 {
   "text": "string",
-  "visible": true,
-  "format": {"@odata.type":"microsoft.graph.workbookChartAxisTitleFormat"}
+  "visible": true
 }
 
 ```
