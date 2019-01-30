@@ -2,12 +2,12 @@
 title: Тип ресурса automaticRepliesSetting
 description: 'Параметры конфигурации для автоматического уведомления отправителя о входящей электронной почты с сообщением '
 localization_priority: Normal
-ms.openlocfilehash: 6755fda99f7a6186316b6198bfa975d73e14b09b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5ff16aa93042e0d66063cb62de7a8dcdf870c892
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576775"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641255"
 ---
 # <a name="automaticrepliessetting-resource-type"></a>Тип ресурса automaticRepliesSetting
 
@@ -19,12 +19,12 @@ ms.locfileid: "29576775"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|externalAudience|externalAudienceScope| Набор аудитории, внешними по отношению к организации пользователь выполнил вход пользователей, которые будут иметь **ExternalReplyMessage**, если **состояние** `AlwaysEnabled` или `Scheduled`. Возможные значения: `none`, `contactsOnly`, `all`.|
-|externalReplyMessage|string|Автоматический ответ, который нужно отправить указанной внешней аудитории, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`.|
-|internalReplyMessage|string|Автоматический ответ, который нужно отправить сотрудникам организации пользователя, выполнившего вход, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`. |
+|externalAudience|String| Внешняя аудитория по отношению к организации пользователя, выполнившего вход, которая получит сообщение **ExternalReplyMessage**, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`. Возможные значения: `none`, `contactsOnly`, `all`.|
+|externalReplyMessage|строка|Автоматический ответ, который нужно отправить указанной внешней аудитории, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`.|
+|internalReplyMessage|строка|Автоматический ответ, который нужно отправить сотрудникам организации пользователя, выполнившего вход, если для параметра **Status** задано значение `AlwaysEnabled` или `Scheduled`. |
 |scheduledEndDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время завершения отправки автоматических ответов, если для параметра **Status** установлено значение `Scheduled`. |
 |scheduledStartDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время начала отправки автоматических ответов, если для параметра **Status** установлено значение `Scheduled`.|
-|status|automaticRepliesStatus|Состояние конфигурации для автоматических ответов. Возможные значения: `disabled`, `alwaysEnabled`, `scheduled`.|
+|status|String|Состояние настройки автоматических ответов. Возможные значения: `disabled`, `alwaysEnabled`, `scheduled`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

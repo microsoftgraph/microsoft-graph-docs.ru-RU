@@ -4,12 +4,12 @@ description: Представляет пользователей Azure AD, в г
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
-ms.openlocfilehash: 875df6db36e4075d0d02a682ede5c177d49cfe7d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572187"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643911"
 ---
 # <a name="riskyusers-resource-type"></a>Тип ресурса riskyUsers
 
@@ -35,9 +35,9 @@ ms.locfileid: "29572187"
 |`id`|`string`|Уникальный идентификатор пользователя, под угрозой|
 |`isDeleted`|`bool`|Указывает, является ли пользователь удаляется. Возможные значения: `true`,`false`|
 |`isGuest`|`bool`|Указывает, является ли пользователь Гость. Возможные значения: `true`, `false`. Значение true, если удостоверение пользователя находится за пределами клиента в расчет. Этот пользователь может быть B2B или B2C пользователя с удостоверением в Azure AD, MSA или стороннего поставщика удостоверений. False, если удостоверение пользователя размещен внутри клиента в расчет|
-|`riskDetail`|`riskDetail`|Предоставляет «причина» за с определенным состоянием рискованный пользователя, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что никакие действия не выполнены на пользователя или входа в данный момент.|
-|`riskLevel`|`riskLevel`|Предоставляет общий уровень риска рискованный пользователя, входа или события риска. Возможные значения: `none`, `low`, `medium`, `high`, `hidden`, и `unknownFutureValue`. Значение `hidden` означает, что пользователь или входа в не был включен для защиты удостоверения Azure AD.|
-|`riskState`|`riskState`|Предоставляет «состояние риска» рискованный пользователя, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
+|`riskDetail`|`riskDetail`|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись.|
+|`riskLevel`|`riskLevel`|Предоставляет общий уровень риска рискованный пользователя, входа или события риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD.|
+|`riskState`|`riskState`|Представляет "состояние риска" пользователя с риском, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованный пользователя|
 |`userDisplayName`|`string`|Отображаемое имя рискованный пользователя|
 |`userPrincipalName`|`string`|Имя участника-пользователя рискующий|
@@ -46,9 +46,9 @@ ms.locfileid: "29572187"
 
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|id|string| Уникальный идентификатор пользователя, с которым связано событие данного риска с.|
-|isGuest|boolean| Рискованный пользователя может быть Домашняя страница пользователя (B2E) или Гость (B2B, B2C).|
-|isDeleted|boolean| Пользователь может или не может быть удалена. |
+|id|UserObjectId| Уникальный идентификатор пользователя, с которым связано событие данного риска с.|
+|isGuest|isGuest| Рискованный пользователя может быть Домашняя страница пользователя (B2E) или Гость (B2B, B2C).|
+|isDeleted|isDeleted| Пользователь может или не может быть удалена. |
 |riskState|riskState| Рискованный пользователя может присутствовать в одном из нескольких состояний. |
 |riskDetail|riskDetail| Рискованный пользователь сможет в определенном состоянии нескольким причинам. |
 |riskLevel|riskLevel| Рискованный пользователь может рассматриваться как один из нескольких уровней риска. |
@@ -60,8 +60,9 @@ ms.locfileid: "29572187"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
+
   ],
-  "@odata.type": "microsoft.graph.riskyUser"
+  "@odata.type": "microsoft.graph.riskyusers"
 }-->
 
 ```json

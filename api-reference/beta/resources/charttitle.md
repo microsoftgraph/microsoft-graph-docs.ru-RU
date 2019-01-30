@@ -4,12 +4,12 @@ description: Представляет объект заголовка диагр
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: f0b669593bd9ca0768ad977ace8d54f5531301a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573097"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643316"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
@@ -22,8 +22,8 @@ ms.locfileid: "29573097"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartTitle](../api/charttitle-get.md) | [WorkbookChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[Update](../api/charttitle-update.md) | [WorkbookChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Получение объекта ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
+|[обновление](../api/charttitle-update.md). | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -35,7 +35,7 @@ ms.locfileid: "29573097"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[WorkbookChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
+|format|[ChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,11 +43,10 @@ ms.locfileid: "29573097"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartTitle"
+  "@odata.type": "microsoft.graph.chartTitle"
 }-->
 
 ```json

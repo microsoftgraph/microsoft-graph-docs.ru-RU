@@ -4,12 +4,12 @@ description: Представляет ряд в диаграмме.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: eccd0d970ffeff7b41ceb0f9af810bb7a420d663
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570661"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643117"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -22,12 +22,12 @@ ms.locfileid: "29570661"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartSeries](../api/chartseries-get.md) | [workbookChartSeries](chartseries.md) |Чтение свойств и связей объекта chartSeries.|
-|[Создание объекта ChartPoints](../api/chartseries-post-points.md) |[chartPoints](chartpoint.md)| Создание объекта ChartPoints путем добавления в коллекцию точек.|
-|[Список точек](../api/chartseries-list-points.md) |[chartPoints](chartpoint.md) коллекции| Получение коллекции объектов ChartPoints.|
-|[Update](../api/chartseries-update.md) | [workbookChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
-|[List](../api/chartseries-list.md) | [workbookChartSeries](chartseries.md) коллекции |Получение коллекции объектов chartSeries. |
-|[ItemAt](../api/chartseriescollection-itemat.md)|[workbookChartSeries](chartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
+|[Получение объекта ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Чтение свойств и связей объекта chartSeries.|
+|[Создание объекта ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Создание объекта ChartPoints путем добавления в коллекцию точек.|
+|[Список точек](../api/chartseries-list-points.md) |Коллекция объектов [ChartPoints](chartpoint.md)| Получение коллекции объектов ChartPoints.|
+|[обновление](../api/chartseries-update.md). | [ChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
+|[List](../api/chartseries-list.md) | Коллекция объектов [ChartSeries](chartseries.md) |Получение коллекции объектов chartSeries. |
+|[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -37,8 +37,8 @@ ms.locfileid: "29570661"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[workbookChartSeriesFormat](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
-|points|[workbookChartPoint](chartpoint.md) коллекции|Представляет коллекцию всех точек в ряду. Только для чтения.|
+|format|[ChartSeriesFormat](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
+|points|Коллекция объектов [ChartPoints](chartpoint.md)|Представляет коллекцию всех точек в ряду. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,11 +46,10 @@ ms.locfileid: "29570661"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.workbookChartSeries"
+  "@odata.type": "microsoft.graph.chartSeries"
 }-->
 
 ```json

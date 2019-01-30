@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a9eeb85a444a691c0bacfcf87142569ff36a83a3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d1150c2698f6842c8513977d8d49da264104a350
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573251"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640499"
 ---
 # <a name="get-chartpoint"></a>Получение объекта ChartPoint
 
@@ -39,8 +39,8 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points(<un
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -56,12 +56,11 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points(<un
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)/points(<undefined>)
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "@odata.type": "microsoft.graph.chartPoint"
 } -->
 ```http
 HTTP/1.1 200 OK

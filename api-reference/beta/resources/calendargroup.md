@@ -4,12 +4,12 @@ description: Группа пользователей календарей.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a40b01136df2bb20a143a8de01188efaa2585191
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574798"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643715"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
@@ -34,9 +34,9 @@ ms.locfileid: "29574798"
 | Свойство  | Тип   | Описание                                                                                                                                                                                               |
 | :-------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name      | String | Имя группы.                                                                                                                                                                                           |
-| changeKey | Строка | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
+| changeKey | String | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
-| id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
+| id        | String | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Связи
 
@@ -54,19 +54,7 @@ ms.locfileid: "29574798"
     "calendars"
   ],
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.calendarGroup",
-  "@odata.annotations": [
-    {
-      "property": "calendars",
-      "capabilities": {
-        "changeTracking": false,
-        "expandable": false,
-        "navigability": "single",
-        "searchable": false
-      }
-    }
-  ]
+  "@odata.type": "microsoft.graph.calendarGroup"
 }-->
 
 ```json

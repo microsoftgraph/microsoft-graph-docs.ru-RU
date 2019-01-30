@@ -4,12 +4,12 @@ description: Получение списка групп разделов из у
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 6f774699398f7df3c56f09fd8469510a5d10cbe5
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: df313533154862017e0cb2dc96a5a75d83ba27ca
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576131"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643484"
 ---
 # <a name="list-sectiongroups"></a>Перечисление sectionGroups
 
@@ -43,11 +43,11 @@ GET /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Accept | строка | `application/json` |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/me/onenote/sectionGroups/{id}/sectionGroups
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup",
+  "@odata.type": "microsoft.graph.sectiongroup",
   "isCollection": true
 } -->
 ```http

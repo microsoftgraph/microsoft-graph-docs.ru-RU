@@ -1,17 +1,17 @@
 ---
-title: Начало звонка
+title: Получение вызова
 description: Извлечение свойств и связи объекта вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 549c53c5e7dedc4d52cce9bbe5e592dc8622c4c7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f5f530fac12ae61c47a5a5e3e0f900720aac4c4e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575428"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640345"
 ---
-# <a name="get-call"></a>Начало звонка
+# <a name="get-call"></a>Получение вызова
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,8 +41,8 @@ GET /applications/{id}/calls/{id}
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [call](../resources/call.md) в теле ответа.
@@ -115,7 +115,7 @@ Content-Length: 2821
   "direction": "incoming",
   "id": "id-value",
   "mediaConfig": {
-    "@odata.type": "microsoft.graph.appHostedMediaConfig",
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
     "blob": "<media config blob>"
   },
   "meetingCapability": {
@@ -124,7 +124,7 @@ Content-Length: 2821
     "autoAdmittedUsers": "everyoneInCompany"
   },
   "meetingInfo": {
-    "@odata.type": "microsoft.graph.organizerMeetingInfo",
+    "@odata.type": "#microsoft.graph.organizerMeetingInfo",
     "organizer": {
       "user": {
         "id": "550fae72-d251-43ec-868c-373732c2704f",

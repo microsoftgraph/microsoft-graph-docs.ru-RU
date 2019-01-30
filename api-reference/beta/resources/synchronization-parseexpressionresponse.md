@@ -2,23 +2,23 @@
 title: Тип ресурса parseExpressionResponse
 description: 'Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.'
 localization_priority: Normal
-ms.openlocfilehash: fc37c963e9c9588241d84570edc73a933eec49fc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572880"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641059"
 ---
 # <a name="parseexpressionresponse-resource-type"></a>Тип ресурса parseExpressionResponse
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization-synchronizationschema-parseexpression.md) действие.
+Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|error| publicError |Дополнительные сведения об ошибке, если вычисление выражения возникла ошибка.|
+|error|OData.Error|Дополнительные сведения об ошибке, если вычисление выражения возникла ошибка.|
 |evaluationResult|Коллекция String|Коллекция значений, созданные средством оценки выражения.|
 |evaluationSucceeded|Boolean|`true`При оценке прошла успешно.|
 |parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Объект [attributeMappingSource](synchronization-attributemappingsource.md) , представляющий проанализированного выражения.|

@@ -1,13 +1,13 @@
 ---
 title: Тип ресурса addIn
-description: Ниже показано представление ресурса в формате JSON.
+description: Ниже представлено описание ресурса в формате JSON.
 localization_priority: Normal
-ms.openlocfilehash: 4e930ef3073cd3ea242522b537170aece8d49e0d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d2a63d4428cbb3bcc7cc169711eb6cc6b9e00a6f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570619"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643722"
 ---
 # <a name="addin-resource-type"></a>Тип ресурса addIn
 
@@ -37,7 +37,7 @@ ms.locfileid: "29570619"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|Идентификатор GUID||
-|properties|Коллекция [KeyValue](keyvalue.md)||
+|properties|Коллекция [keyValue](keyvalue.md)||
 |type|строка||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

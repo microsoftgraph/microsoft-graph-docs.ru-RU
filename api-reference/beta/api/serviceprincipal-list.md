@@ -1,15 +1,15 @@
 ---
-title: Список servicePrincipals
+title: Перечисление servicePrincipals
 description: Получение списка объектов servicePrincipal.
 localization_priority: Normal
-ms.openlocfilehash: e8698e9715b4443d49224afcac8a5b363132db93
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cd61b69e330ac376d15bfaf99c1147b8f9402d7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574259"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643631"
 ---
-# <a name="list-serviceprincipals"></a>Список servicePrincipals
+# <a name="list-serviceprincipals"></a>Перечисление servicePrincipals
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,7 +24,7 @@ ms.locfileid: "29574259"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Application.ReadWrite.All Directory.Read.All |
+|Для приложений | Application.ReadWrite.All, Directory.Read.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,11 +39,11 @@ GET /servicePrincipals
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:----------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.servicePrincipal",
+  "@odata.type": "microsoft.graph.serviceprincipal",
   "isCollection": true
 } -->
 ```http

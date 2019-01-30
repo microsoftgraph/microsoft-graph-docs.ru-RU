@@ -4,12 +4,12 @@ description: Создание группы разделов в указанно�
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: daf45947e2f4da41b57b9590dd8831647a196022
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 998aa16ecf269c072a80bdc8b6e6d28ea9c572fa
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577482"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640695"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 
@@ -36,8 +36,8 @@ POST /sites/{id}/onenote/notebooks/{id}/sectionGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type | string | `application/json` |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Content-Type | строка | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите имя группы разделов.
@@ -70,7 +70,7 @@ Content-length: 30
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.sectionGroup"
+  "@odata.type": "microsoft.graph.sectiongroup"
 } -->
 ```http
 HTTP/1.1 200 OK

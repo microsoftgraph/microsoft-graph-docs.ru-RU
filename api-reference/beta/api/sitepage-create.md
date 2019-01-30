@@ -5,12 +5,12 @@ ms.date: 05/07/2018
 title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: be3f24f3d4795c473562ddc01d75d54117dcedd3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572789"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640156"
 ---
 # <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создайте страницу в списке страниц сайта узла
 
@@ -36,7 +36,7 @@ ms.locfileid: "29572789"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса укажите представление JSON [sitePage][] ресурсов для создания.
 
@@ -110,7 +110,7 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "id": "2",
+    "id": 2,
     "eTag": "75bc70e2-6587-45be-8493-c99a956b2e05,7",
     "createdDateTime": "2016-12-06T20:04:40Z",
     "lastModifiedDateTime": "2016-12-06T20:05:09Z",

@@ -4,12 +4,12 @@ description: Создание нового устройства.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 30c4852d3e44e9318fef38018f1a99823e362112
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4ad0400a74deec35daa4e28f91cafde5310c65c1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577062"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640520"
 ---
 # <a name="create-device"></a>Создание устройства
 
@@ -35,7 +35,7 @@ POST /devices
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [device](../resources/device.md) в формате JSON.
@@ -92,7 +92,7 @@ Content-length: 364
     {
       "type": 99,
       "identityProvider": "identityProvider-value",
-      "key": "binary"
+      "key": "key-value"
     }
   ],
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",

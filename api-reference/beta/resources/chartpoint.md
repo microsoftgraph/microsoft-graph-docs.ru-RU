@@ -4,12 +4,12 @@ description: Представляет точку из ряда в диаграм
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: e8ede39ef53bfc39574ebfc86c8138a70fc31ad6
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573069"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641969"
 ---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 
@@ -22,37 +22,35 @@ ms.locfileid: "29573069"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartPoint](../api/chartpoint-get.md) | [workbookChartPoint](chartpoint.md) |Чтение свойств и связей объекта chartPoint.|
-|[List](../api/chartpoint-list.md) | [workbookChartPoint](chartpoint.md) коллекции |Получение коллекции объектов chartPoint. |
-|[ItemAt](../api/chartpointscollection-itemat.md)|[workbookChartPoint](chartpoint.md)|Получение точки на основании ее положения в ряду.|
+|[Получение объекта ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |Чтение свойств и связей объекта chartPoint.|
+|[List](../api/chartpoint-list.md) | Коллекция объектов [ChartPoint](chartpoint.md) |Получение коллекции объектов chartPoint. |
+|[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|Получение точки на основании ее положения в ряду.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|value|Json|Возвращает значение точки диаграммы. Только для чтения.|
-|id|string|Уникальный идентификатор|
+|value|object|Возвращает значение точки диаграммы. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|format|[workbookChartPointFormat](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
+|format|[ChartPointFormat](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [],
-  "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookChartPoint"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartPoint"
 }-->
 
 ```json
 {
-  "value": "string",
-  "id": "string"
+  "value": "string"
 }
 
 ```

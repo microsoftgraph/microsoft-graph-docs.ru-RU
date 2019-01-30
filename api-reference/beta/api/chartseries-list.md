@@ -4,12 +4,12 @@ description: Получение списка объектов chartseries.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2c3d8cfbe604145965ad31ea951d7bb399468210
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 158446a1164dfbde5ae249fdd8e506f8aa99cf51
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571004"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643897"
 ---
 # <a name="list-chartseriescollection"></a>Список ChartSeriesCollection
 
@@ -39,8 +39,8 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -56,12 +56,11 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/series
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/series
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartSeries",
+  "@odata.type": "microsoft.graph.chartSeries",
   "isCollection": true
 } -->
 ```http

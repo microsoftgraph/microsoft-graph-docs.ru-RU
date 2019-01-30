@@ -2,12 +2,12 @@
 title: Тип ресурсов locationConstraint
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 localization_priority: Normal
-ms.openlocfilehash: e15acbac529179b0d79fd8b9b52f691fa9ef1322
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f311ceae1718333ba6ffca55f046317d6da53705
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573034"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642802"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -24,7 +24,7 @@ ms.locfileid: "29573034"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.locationConstraint"
+  "@odata.type": "microsoft.graph.locationconstraint"
 }-->
 
 ```json
@@ -38,7 +38,7 @@ ms.locfileid: "29573034"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|isRequired|Логическое|Клиент запрашивает у службы включение в отклик данных о расположении для проведения собрания. Если задано значение true и все ресурсы заняты, [findMeetingTimes](../api/user-findmeetingtimes.md) не вернет вариантов времени для проведения собрания. Если задано значение false и все ресурсы заняты, **findMeetingTimes** все равно будет искать варианты времени для проведения собрания, но без указания расположений. |
+|isRequired|Boolean|Клиент запрашивает у службы включение в отклик данных о расположении для проведения собрания. Если задано значение true и все ресурсы заняты, [findMeetingTimes](../api/user-findmeetingtimes.md) не вернет вариантов времени для проведения собрания. Если задано значение false и все ресурсы заняты, **findMeetingTimes** все равно будет искать варианты времени для проведения собрания, но без указания расположений. |
 |locations|Коллекция [locationConstraintItem](locationconstraintitem.md)|Ограниченные сведения об одном или нескольких расположениях, которые клиент запрашивает для собрания.|
 |suggestLocation|Boolean|Клиент запрашивает у службы один или несколько вариантов расположений для проведения собрания.|
 

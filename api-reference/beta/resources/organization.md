@@ -4,12 +4,12 @@ description: 'Представляет клиента Azure Active Directory. '
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: b0e1e0563b0e29d49fbf5dece0f62f70e7a71c52
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d06ba07c3cee402b88ad5e85e1b0bacc59b9810c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574994"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642144"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -51,8 +51,8 @@ ms.locfileid: "29574994"
 |postalCode|String| Почтовый индекс в адресе организации |
 |preferredLanguage|String| Предпочитаемый язык для организации. Он должен быть представлен в формате ISO 639-1. Пример: ru. |
 |privacyProfile|[privacyProfile](privacyprofile.md)| Профиль конфиденциальности организации.            |
-|provisionedPlans|[provisionedPlan](provisionedplan.md) коллекции| Значение null не допускается.            |
-|provisioningErrors|Коллекция onPremisesProvisioningError| Значение null не допускается.            |
+|provisionedPlans|Коллекция [ProvisionedPlan](provisionedplan.md)| Значение null не допускается.            |
+|provisioningErrors|Коллекция ProvisioningError| Значение null не допускается.            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||
 |state|String| Название республики, области или края в адресе организации |

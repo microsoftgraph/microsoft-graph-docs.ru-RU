@@ -2,15 +2,15 @@
 author: rgregg
 ms.author: rgregg
 ms.date: 09/17/2017
-title: driveItemVersion;
+title: DriveItemVersion
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 25b480a22b93ce454927177d2d842390496f54de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 69c4ed030d090dce9d8bfd8e7ad7a410ad2d4b27
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528972"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642025"
 ---
 # <a name="driveitemversion-resource-type"></a>Тип ресурса DriveItemVersion
 
@@ -28,7 +28,7 @@ ms.locfileid: "29528972"
 | [List versions][version-list]      | `GET /drive/items/{item-id}/versions`  |
 | [Get version][version-get]         | `GET /drive/items/{item-id}/versions/{version-id}`     |
 | [Get contents][content-get]        | `GET /drive/items/{item-id}/versions/{version-id}/content` |
-| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restore` |
+| [Restore version][version-restore] | `POST /drive/items/{item-id}/versions/{version-id}/restoreversion` |
 
 [version-list]: ../api/driveitem-list-versions.md
 [version-get]: ../api/driveitemversion-get.md
@@ -58,7 +58,7 @@ ms.locfileid: "29528972"
 | **id**                   | string                                               | Идентификатор версии. Только для чтения.                                       |
 | **lastModifiedBy**;       | [IdentitySet](../resources/identityset.md)           | Удостоверение пользователя, который последним изменил версию. Только для чтения.        |
 | **lastModifiedDateTime** | [DateTimeOffset](../resources/timestamp.md)          | Дата и время последнего изменения версии. Только для чтения.                 |
-| publication          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
+| **publication**          | [PublicationFacet](../resources/publicationfacet.md) | Указывает состояние публикации конкретной версии. Только для чтения. |
 | **size**                 | Int64                                                | Указывает размер потока контента для этой версии элемента.  |
 
 ## <a name="relationships"></a>Связи

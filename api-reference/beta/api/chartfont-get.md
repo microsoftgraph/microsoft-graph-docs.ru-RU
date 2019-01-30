@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 45901dbbc011e99785bc585e128115aae740d09f
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3440b4c01988cfad6af10e40a36da6551f5ec854
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573279"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643131"
 ---
 # <a name="get-chartfont"></a>Получение объекта ChartFont
 
@@ -41,12 +41,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChartFont](../resources/chartfont.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartFont](../resources/chartfont.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -58,12 +58,11 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/font
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/axes/valueaxis/format/font
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK

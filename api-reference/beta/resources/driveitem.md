@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b2b09ddfd99da7094ae25addf95985fdf8c6cf99
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572069"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641381"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -38,22 +38,16 @@ ms.locfileid: "29572069"
 
 Ресурс **driveItem** является производным от ресурса [**baseItem**][baseItem] и наследует его свойства.
 
-<!-- { 
-       "blockType": "resource", 
-       "@odata.type": "microsoft.graph.driveItem", 
-       "@type.aka": "oneDrive.item",
+<!-- { "blockType": "resource", "@type": "microsoft.graph.driveItem", "@type.aka": "oneDrive.item",
        "baseType": "microsoft.graph.baseItem",
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
        "sharepointIds"],
-       "keyProperty": "id", "openType": true 
-    } 
--->
+       "keyProperty": "id", "openType": true } -->
 
 ```json
 {
-  "@odata.type": "microsoft.graph.driveItem", 
   "audio": { "@odata.type": "microsoft.graph.audio" },
   "cTag": "string (etag)",
   "deleted": { "@odata.type": "microsoft.graph.deleted"},
@@ -106,7 +100,7 @@ ms.locfileid: "29572069"
 
 | Свойство             | Тип               | Описание
 |:---------------------|:-------------------|:---------------------------------
-| audio                | [audio](audio.md)  | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения.
+| audio                | [audio][]          | Метаданные звукового файла, если элемент — звуковой файл. Только для чтения.
 | createdBy            | [identitySet][]    | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.
 | createdDateTime      | DateTimeOffset     | Дата и время создания элемента. Только для чтения.
 | cTag                 | String             | ETag для содержимого элемента. Такой тег сущности не изменяется, если изменяются только метаданные. **Примечание.** Это свойство не возвращается, если в роли элемента выступает папка. Только для чтения.
@@ -145,9 +139,9 @@ ms.locfileid: "29572069"
 | Связь       | Тип                            | Описание
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | Коллекция [itemActivity][]     | Список последних действий, выполненных с элементом.
-| Аналитика          | [itemAnalytics][] ресурсов      | Аналитика о Просмотр действий, выполняемых по этому элементу.
+| analytics          | Ресурс [itemAnalytics][]      | Аналитика о Просмотр действий, выполняемых по этому элементу.
 | content            | Поток                          | Поток содержимого, если элемент представляет файл.
-| children           | driveItem коллекции            | Коллекция, содержащая объекты Item для непосредственных дочерних элементов данного ресурса Item. Дочерние элементы есть только у элементов, представляющих папки. Только для чтения. Допускается значение null.
+| children           | Коллекция объектов driveItem            | Коллекция, содержащая объекты Item для непосредственных дочерних элементов данного ресурса Item. Дочерние элементы есть только у элементов, представляющих папки. Только для чтения. Допускается значение null.
 | listItem           | [listItem][]                    | Для дисков в SharePoint, элемент списка библиотеки связанного с ним документа. Только для чтения. Допускается значение null.
 | permissions        | Коллекция объектов [permission][]       | Набор разрешений для элемента. Только для чтения. Допускается значение null.
 | thumbnails         | Коллекция объектов [thumbnailSet][]     | Коллекция, содержащая объекты [ThumbnailSet][], связанные с элементом. Дополнительные сведения см. в статье о [получении эскизов][]. Только для чтения. Допускается значение null.
@@ -159,9 +153,9 @@ ms.locfileid: "29572069"
 
 | Имя свойства                     | Тип   | Описание
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | string | Определяет поведение для разрешения конфликтов, возникающих при создании элементов. Вы можете использовать значения *fail*, *replace* или *rename*. Значение по умолчанию для метода PUT: *replace*. Элементы никогда не возвращаются с такой заметкой. Только для записи.
-| @microsoft.graph.downloadUrl      | string | URL-адрес, который можно использовать для скачивания содержимого этого файла. Проверка подлинности не является обязательным условием, если используется такой URL-адрес. Только для чтения.
-| @microsoft.graph.sourceUrl        | string | При создании запроса PUT такую заметку экземпляра можно использовать, чтобы указать службе скачать содержимое по URL-адресу и сохранить его как файл. Только для записи.
+| @microsoft.graph.conflictBehavior | строка | Определяет поведение для разрешения конфликтов, возникающих при создании элементов. Вы можете использовать значения *fail*, *replace* или *rename*. Значение по умолчанию для метода PUT: *replace*. Элементы никогда не возвращаются с такой заметкой. Только для записи.
+| @microsoft.graph.downloadUrl      | строка | URL-адрес, который можно использовать для скачивания содержимого этого файла. Проверка подлинности не является обязательным условием, если используется такой URL-адрес. Только для чтения.
+| @microsoft.graph.sourceUrl        | строка | При создании запроса PUT такую заметку экземпляра можно использовать, чтобы указать службе скачать содержимое по URL-адресу и сохранить его как файл. Только для записи.
 
 **Примечание:** Значение @microsoft.graph.downloadUrl кратковременного URL-адрес и не может быть кэширования.
 URL-адрес будет доступно только на короткое время (1 час) перед их недействительными. Удаление файла разрешения для пользователя может не делают недействительными сразу же URL-адрес.
@@ -173,7 +167,7 @@ URL-адрес будет доступно только на короткое в
 | [Получение элемента](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
 | [Список действий](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
 | [Получение аналитики][]                                        | `GET /drive/items/{item-id}/analytics`
-| [Получение действий по интервал][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
+| [Получение действий по интервалу][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [Список дочерних элементов](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
 | [Список версий](../api/driveitem-list-versions.md)       | `GET /drive/items/{item-id}/versions`
 | [Создание элемента](../api/driveitem-post-children.md)         | `POST /drive/items/{item-id}/children`
@@ -196,7 +190,7 @@ URL-адрес будет доступно только на короткое в
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md
-[Получение действий по интервал]: ../api/itemactivity-getbyinterval.md
+[Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 
 ## <a name="remarks"></a>Заметки
 

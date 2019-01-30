@@ -4,12 +4,12 @@ description: Представляет строку в таблице.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: ea675724af64517fe68d6d79638056a446e53b46
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e1c9dc0f9aad61d815098b76da8620d808c2538a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577225"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643750"
 ---
 # <a name="tablerow-resource-type"></a>Тип ресурса TableRow
 
@@ -23,7 +23,7 @@ ms.locfileid: "29577225"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта TableRow](../api/tablerow-get.md) | [TableRow](tablerow.md) |Чтение свойств и связей объекта tableRow.|
-|[Update](../api/tablerow-update.md) | [TableRow](tablerow.md)  |Обновление объекта tableRow. |
+|[обновление](../api/tablerow-update.md). | [TableRow](tablerow.md)  |Обновление объекта tableRow. |
 |[Range](../api/tablerow-range.md)|[Range](range.md)|Возвращает объект диапазона, связанный со всей строкой.|
 |[Delete](../api/tablerow-delete.md)|Нет|Удаляет строку из таблицы.|
 |[List](../api/tablerow-list.md) | Коллекция объектов [TableRow](tablerow.md) |Получение коллекции объектов tableRow. |
@@ -34,7 +34,7 @@ ms.locfileid: "29577225"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |index|int|Возвращает номер индекса строки в коллекции строк таблицы. Используется нулевой индекс. Только для чтения.|
-|values|Json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
+|values|json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="relationships"></a>Связи
 Нет

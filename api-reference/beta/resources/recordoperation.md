@@ -4,12 +4,12 @@ description: Тип recordOperation
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 914b8d819fdbcc132d4e04cd12f5c0db9980f659
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6b9deb566e5b527a9f20db69441fa96908212a38
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577188"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641598"
 ---
 # <a name="recordoperation-resource-type"></a>Тип ресурса recordOperation
 
@@ -21,14 +21,15 @@ ms.locfileid: "29577188"
 
 | Свойство                       | Тип                        | Описание                                                                                                                                       |
 | :----------------------------- | :---------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| clientContext                  | Строка                      | Контекст клиента.                                                                                                                               |
-| completionReason               | Строка                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
+| clientContext                  | String                      | Контекст клиента.                                                                                                                               |
+| completionReason               | String                      | Возможные значения: `operationCanceled`, `stopToneDetected`, `maxRecordDurationReached`, `initialSilenceTimeout`, `maxSilenceTimeout`, `playPromptFailed`, `playBeepFailed`, `mediaReceiveTimeout`, `unspecifiedError`, `none`. |
 | createdDateTime                | DateTimeOffset              | Время создания записи.                                                                                                          |
-| id                             | Строка                      | Идентификатор операции сервера. Только для чтения. Сервер, созданный.                                                                                             |
+| id                             | String                      | Идентификатор операции сервера. Только для чтения. Создается сервером.                                                                                             |
 | lastActionDateTime             | DateTimeOffset              | Время последнего действия операции.                                                                                                     |
-| recordResourceAccessToken      | Строка                      | Маркер доступа, необходимые для извлечения записи.                                                                                              |
-| recordResourceLocation         | Строка                      | Расположение, где расположена записи.                                                                                                      |
-| resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результатов.  Только для чтения. Сервер, созданный.                                                                                             |
+| recordResourceAccessToken      | String                      | Маркер доступа, необходимые для извлечения записи.                                                                                              |
+| recordResourceLocation         | String                      | Расположение, где расположена записи.                                                                                                      |
+| resultInfo                     | [resultInfo](resultinfo.md) | Сведения о результате.  Только для чтения. Создается сервером.                                                                                             |
+| status                         | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. Создается сервером.                                                 |
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -47,13 +48,14 @@ ms.locfileid: "29577188"
 ```json
 {
   "clientContext": "String",
-  "completionReason": "recordCompletionReason",
+  "completionReason": "operationCanceled | stopToneDetected | maxRecordDurationReached | initialSilenceTimeout | maxSilenceTimeout | playPromptFailed | playBeepFailed | mediaReceiveTimeout | unspecifiedError | none",
   "createdDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "lastActionDateTime": "String (timestamp)",
   "recordResourceAccessToken": "String",
   "recordResourceLocation": "String",
-  "resultInfo": {"@odata.type": "microsoft.graph.resultInfo"}
+  "resultInfo": {"@odata.type": "#microsoft.graph.resultInfo"},
+  "status": "notStarted | running | completed | failed"
 }
 ```
 

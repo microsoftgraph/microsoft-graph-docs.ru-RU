@@ -4,18 +4,18 @@ description: Создание объекта page в указанном разд
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: f397b10e914a779a153e78e1e10e906925aec9a1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570920"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640289"
 ---
 # <a name="create-page"></a>Создание страницы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [page](../resources/onenotepage.md) в указанном разделе.
+Создание объекта [page](../resources/page.md) в указанном разделе.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,7 +36,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,7 +46,7 @@ POST /sites/{id}/onenote/sections/{id}/pages
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [page](../resources/onenotepage.md) в тексте ответа.
+В случае успешного выполнения этот метод возвращает код ответа `201 Created` и новый объект [page](../resources/page.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

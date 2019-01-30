@@ -5,12 +5,12 @@ ms.date: 03/15/2018
 title: SitePage
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 9ecc23abbee165bce9fd4d9a2a5d8aac8aa02f41
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7b1634e79214f1cece85a78af29db6422ac03a81
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576243"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640660"
 ---
 # <a name="sitepage-resource"></a>sitePage ресурсов
 
@@ -28,15 +28,15 @@ ms.locfileid: "29576243"
 |:--------------------------------|:------------------------------
 | [Перечисление страниц][]                  | Получение /pages
 | [Получение страницы][]                    | Получение /pages/ {идентификатор страницы}
-| [Create][]                      | POST /pages
-| [Delete][]                      | Удаление /pages/ {идентификатор страницы}
-| [Publish][]                     | Учет /pages/ {идентификатор страницы} аудио- и публикация
+| [создание][];                      | POST /pages
+| [удаление][];                      | Удаление /pages/ {идентификатор страницы}
+| [публикация][];                     | Учет /pages/ {идентификатор страницы} аудио- и публикация
 
 [Перечисление страниц]: ../api/sitepage-list.md
 [Получение страницы]: ../api/sitepage-get.md
-[Create]: ../api/sitepage-create.md
+[Создание]: ../api/sitepage-create.md
 [Delete]: ../api/sitepage-delete.md
-[Publish]: ../api/sitepage-publish.md
+[публикация]: ../api/sitepage-publish.md;
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,7 +56,7 @@ ms.locfileid: "29576243"
   /* page content */
   "title": "string",
   "pageLayout": "Article",
-  "webParts": [{ "@odata.type": "microsoft.graph.webPart" }],
+  "webParts": [{ "@odata.type": "microsoft.graph.sitePageWebParts" }],
 
   /* authoring metadata */
   "publishingState": { "@odata.type": "microsoft.graph.publicationFacet" },
@@ -88,7 +88,7 @@ ms.locfileid: "29576243"
 | Имя свойства      | Тип                       | Описание
 |:-------------------|:---------------------------|:---------------------------
 | должности.              | строка                     | Заголовок страницы.
-| pageLayout         | string                     | Имя страницы макета страницы.
+| pageLayout         | строка                     | Имя страницы макета страницы.
 | веб-части           | [веб-части][]                | Веб-частей на странице.
 
 ## <a name="authoring-metadata"></a>Создание метаданных
@@ -104,7 +104,7 @@ ms.locfileid: "29576243"
 | Имя свойства        | Тип              | Описание
 |:---------------------|:------------------|:----------------------------------
 | id                   | string            | Уникальный идентификатор элемента. Только для чтения.
-| name                 | строка            | Имя или название элемента.
+| name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | eTag                 | string            | ETag для элемента. Только для чтения.
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
@@ -121,7 +121,7 @@ ms.locfileid: "29576243"
 [columnDefinition]: columndefinition.md
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
-[списки]: list.md
+[list]: list.md
 [listInfo]: listinfo.md
 [listItem]: listitem.md
 [publicationFacet]: publicationfacet.md.

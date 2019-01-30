@@ -4,12 +4,12 @@ description: Представляет службы Outlook, доступные �
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: f8265f9da285ce0f52e6201ffdb1298893b86753
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a649de502728bbc51ac53e072c08d95291d20853
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574098"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643547"
 ---
 # <a name="outlookuser-resource-type"></a>Тип ресурса outlookUser
 
@@ -29,7 +29,7 @@ ms.locfileid: "29574098"
 |[Создание outlookTaskGroup](../api/outlookuser-post-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md)| Создайте группу задач Outlook в почтовом ящике пользователя.|
 |[Список taskGroups](../api/outlookuser-list-taskgroups.md) |[outlookTaskGroup](outlooktaskgroup.md) коллекции| Получение всех групп задач Outlook в почтовом ящике пользователя.|
 |[Создание outlookTask](../api/outlookuser-post-tasks.md) |[outlookTask](outlooktask.md)| Создание задачи Outlook в группе задач по умолчанию (`My Tasks`) и папки задач по умолчанию (`Tasks`) в почтовом ящике пользователя.|
-|[Перечисление задач](../api/outlookuser-list-tasks.md) |[outlookTask](outlooktask.md) коллекции| Получите все задачи Outlook в почтовом ящике пользователя.|
+|[Перечисление задач](../api/outlookuser-list-tasks.md) |Коллекция [outlookTask](outlooktask.md)| Получите все задачи Outlook в почтовом ящике пользователя.|
 |[supportedLanguages](../api/outlookuser-supportedlanguages.md) | Коллекция [localeInfo](localeinfo.md) | Получение списка языковых стандартов и языков, который поддерживается для пользователя, в соответствии с настройкой на сервере почтовых ящиков этого пользователя. |
 |[supportedTimeZones](../api/outlookuser-supportedtimezones.md) | Коллекция [timeZoneInformation](timezoneinformation.md) | Получение списка часовых поясов, который поддерживается для пользователя, в соответствии с настройкой на сервере почтовых ящиков этого пользователя. |
 
@@ -43,19 +43,8 @@ ms.locfileid: "29574098"
 |masterCategories|Коллекция [outlookCategory](../resources/outlookcategory.md)| Список категорий, определенных для пользователя. | 
 |taskFolders|[outlookTaskFolder](outlooktaskfolder.md) коллекции| Папки задач Outlook пользователя. Только для чтения. Допускается значение null.|
 |taskGroups|[outlookTaskGroup](outlooktaskgroup.md) коллекции| Группы задач пользователя Outlook. Только для чтения. Допускается значение null.|
-|tasks|[outlookTask](outlooktask.md) коллекции| Задачи Outlook пользователя. Только для чтения. Допускается значение null.|
+|tasks|Коллекция [outlookTask](outlooktask.md)| Задачи Outlook пользователя. Только для чтения. Допускается значение null.|
 
-
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.outlookUser"
-}-->
-```json
-{
-}
-
-```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--

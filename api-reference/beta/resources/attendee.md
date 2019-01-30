@@ -2,12 +2,12 @@
 title: Тип ресурса attendee
 description: Участник события. Это может быть человек или ресурс (например конференц-зал или оборудование), настроенный в качестве ресурса на сервере Exchange Server клиента.
 localization_priority: Normal
-ms.openlocfilehash: a59868477629c36995a38f736c7087a16791cac3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: d50b6756c7d0077ec95f10988d06fa2ff81631fc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576516"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642879"
 ---
 # <a name="attendee-resource-type"></a>Тип ресурса attendee
 
@@ -30,7 +30,6 @@ ms.locfileid: "29576516"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.attendeeBase",
   "optionalProperties": [
 
   ],

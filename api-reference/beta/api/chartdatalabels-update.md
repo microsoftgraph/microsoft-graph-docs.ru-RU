@@ -4,12 +4,12 @@ description: Обновление свойств объекта chartdatalabels.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 194d48075f143670488c6ae1ab0ff7a92934e4c4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b7eb067bed747ae2532939e61a9e0dec58ff4655
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573244"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640135"
 ---
 # <a name="update-chartdatalabels"></a>Обновление объекта chartdatalabels
 
@@ -36,13 +36,13 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|string|DataLabelPosition значение, представляющее положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|разделитель|string|Строка, представляющая разделитель для меток данных на диаграмме.|
+|position|строка|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|разделитель|строка|Строка, представляющая разделитель для меток данных на диаграмме.|
 |showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
 |showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
 |showLegendKey|boolean|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|
@@ -52,7 +52,7 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/datalabels
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленный объект [WorkbookChartDataLabels](../resources/chartdatalabels.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartDataLabels](../resources/chartdatalabels.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -74,12 +74,11 @@ Content-length: 134
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartDataLabels"
+  "@odata.type": "microsoft.graph.chartDataLabels"
 } -->
 ```http
 HTTP/1.1 200 OK

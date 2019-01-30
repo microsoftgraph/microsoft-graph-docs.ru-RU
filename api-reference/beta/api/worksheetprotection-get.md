@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта wo
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a175eb5bf4804c294807428405255b7627e54a73
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 8c3de9aa039b824cff5e5e746c599452b6cfed79
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577391"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643813"
 ---
 # <a name="get-worksheetprotection"></a>Получение объекта WorksheetProtection
 
@@ -39,8 +39,8 @@ GET /workbook/worksheets/{id|name}/protection
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -56,12 +56,11 @@ GET /workbook/worksheets/{id|name}/protection
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/protection
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
+  "@odata.type": "microsoft.graph.worksheetProtection"
 } -->
 ```http
 HTTP/1.1 200 OK

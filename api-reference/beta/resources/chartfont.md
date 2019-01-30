@@ -4,12 +4,12 @@ description: Этот объект представляет атрибуты ш�
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 7e9815d5d6d9bf7e7b0ef4ae97881e12c7ba9181
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c507a966dc6b29e46935c5c77a85b557a84cc69c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573629"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641171"
 ---
 # <a name="chartfont-resource-type"></a>Тип ресурса ChartFont
 
@@ -22,8 +22,8 @@ ms.locfileid: "29573629"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartFont](../api/chartfont-get.md) | [WorkbookChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
-|[Update](../api/chartfont-update.md) | [WorkbookChartFont](chartfont.md)   |Обновление объекта ChartFont. |
+|[Получение объекта ChartFont](../api/chartfont-get.md) | [ChartFont](chartfont.md) |Чтение свойств и связей объекта chartFont.|
+|[обновление](../api/chartfont-update.md). | [ChartFont](chartfont.md)   |Обновление объекта ChartFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,7 +33,7 @@ ms.locfileid: "29573629"
 |italic|boolean|Указывает, применяется ли курсив.|
 |name|строка|Имя шрифта (например, Calibri)|
 |size|Double|Размер шрифта (например, 11)|
-|underline|строка|Тип подчеркивание шрифта. Возможные значения: `None`, `Single`.|
+|underline|строка|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
 
 ## <a name="relationships"></a>Связи
 Нет
@@ -43,11 +43,12 @@ ms.locfileid: "29573629"
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!--{
+<!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "optionalProperties": [],
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.chartFont"
 }-->
 
 ```json

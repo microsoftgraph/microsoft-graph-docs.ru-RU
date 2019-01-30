@@ -4,12 +4,12 @@ description: '**InvitationParticipant** используется для пред
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 666de597d40570a567ea88a375ab15d1e5f09038
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573601"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641920"
 ---
 # <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса invitationParticipantInfo
 
@@ -21,11 +21,11 @@ ms.locfileid: "29573601"
 
 | Свойство                           | Тип                          | Описание                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | operationStatus               | Возможные значения: `default`, `voicemail`. |
+| endpointType                       | String                        | Возможные значения: `default`, `voicemail`. |
 | identity                           | [identitySet](identityset.md) | [IdentitySet](identityset.md) , связанной с приглашением.                   |
-| languageId                         | Строка                        | Строка языка и региональных параметров языка.                                                                                     |
-| область                             | Строка                        | Область участника.                                                           |
-| replacesCallId                     | Строка                        | Необязательный параметр. Вызов которого idenity целевой в настоящее время является частью. Этот звонок будет удалена, после добавления участника. |
+| languageId                         | String                        | Строка языка и региональных параметров языка.                                                                                     |
+| область                             | String                        | Область участника.                                                           |
+| replacesCallId                     | String                        | Необязательный параметр. Вызов которого idenity целевой в настоящее время является частью. Этот звонок будет удалена, после добавления участника. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -40,7 +40,7 @@ ms.locfileid: "29573601"
 }-->
 ```json
 {
-  "endpointType": "operationStatus",
+  "endpointType": "default | voicemail",
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
   "languageId": "String",
   "region": "String",

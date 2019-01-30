@@ -2,12 +2,12 @@
 title: Тип ресурса itemBody
 description: Представляет свойства основного текста элемента, например сообщения, события или записи группы.
 localization_priority: Normal
-ms.openlocfilehash: 2eaf3b5e13833665c452eeecd74169915f5ac2fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: df2e7e8cea9e1b2e6a6d1011029a1898e2794f45
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27805231"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642564"
 ---
 # <a name="itembody-resource-type"></a>Тип ресурса itemBody
 
@@ -17,7 +17,7 @@ ms.locfileid: "27805231"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |content|String|Содержимое элемента.|
-|contentType|bodyType|Тип контента. Возможные значения: `Text` и `HTML`.|
+|contentType|bodyType|Тип контента. Возможные значения: `text` и `HTML`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

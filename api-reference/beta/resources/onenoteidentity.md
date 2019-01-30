@@ -4,12 +4,12 @@ description: '**Поддержка готовится к выпуску**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
-ms.openlocfilehash: 33cb7d63ab103723ae5bb8d24c19add4bb7ef5ac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: f1b03ad907a0b8f6f3cf2674d74f1ee8722357ea
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576880"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642137"
 ---
 # <a name="onenoteidentity-resource-type"></a>Тип ресурса oneNoteIdentity
 
@@ -31,7 +31,7 @@ ms.locfileid: "29576880"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.oneNoteIdentity"
+  "@odata.type": "microsoft.graph.onenoteidentity"
 }-->
 
 ```json
@@ -44,8 +44,8 @@ ms.locfileid: "29576880"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|string|Отображаемое имя удостоверения.|
-|id|string|Уникальный идентификатор удостоверения.|
+|displayName|строка|Отображаемое имя удостоверения.|
+|id|строка|Уникальный идентификатор удостоверения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

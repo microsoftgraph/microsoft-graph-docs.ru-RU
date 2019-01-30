@@ -2,12 +2,12 @@
 title: Отменить privilegedRoleAssignmentRequest
 description: Отмена privilegedRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 2d717f0ca6fccc274b4ee80cda6b65f02f01abec
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 0cca3f33e6e027c18e24862dc4736006058f8e41
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577510"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642809"
 ---
 # <a name="cancel-privilegedroleassignmentrequest"></a>Отменить privilegedRoleAssignmentRequest
 
@@ -36,11 +36,11 @@ POST /privilegedRoleAssignmentRequests({requestid})/cancel
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Она возвращает [privilegedRoleAssignmentRequest](../resources/privilegedRoleAssignmentRequest.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 Ok`. Возвращает [privilegedRoleAssignmentRequest] (.. / resources/privilegedRoleAssignmentRequest.md) в тексте ответа.
 
 ### <a name="error-codes"></a>Коды ошибок
 Этот интерфейс API возвращает стандартные коды ошибок HTTP. Кроме того он возвращает коды пользовательских ошибок, перечисленных в следующей таблице.
@@ -67,7 +67,7 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests('7c53453e
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequest"
+  "@odata.type": "microsoft.graph.privilegedRoleAssignmentRequests"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -92,7 +92,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self",
+    "userId": "Self"，
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

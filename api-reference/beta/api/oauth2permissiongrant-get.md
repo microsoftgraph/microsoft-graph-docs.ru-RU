@@ -2,12 +2,12 @@
 title: Получение oAuth2Permissiongrant
 description: Извлечение свойств и связи объекта oAuth2Permissiongrant.
 localization_priority: Normal
-ms.openlocfilehash: 17719e175e29bbc7167fd295fb982a37f22ada52
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2b389e7f811444b9dc9fb1d9c2f619006611e11e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576698"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640541"
 ---
 # <a name="get-oauth2permissiongrant"></a>Получение oAuth2Permissiongrant
 
@@ -38,10 +38,10 @@ GET /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,12 +57,11 @@ GET /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 GET https://graph.microsoft.com/beta/oAuth2Permissiongrants/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.oAuth2PermissionGrant"
+  "@odata.type": "microsoft.graph.oAuth2Permissiongrant"
 } -->
 ```http
 HTTP/1.1 200 OK

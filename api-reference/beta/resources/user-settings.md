@@ -4,12 +4,12 @@ description: 'Параметры текущего пользователя. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5812141d21a32b8ab1835a75c05cbd57ea25a3a4
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 208d232af609f92d5924267ae26831b9929e357a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571816"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640513"
 ---
 # <a name="settings-resource-type"></a>параметры типа ресурсов
 
@@ -25,8 +25,8 @@ ms.locfileid: "29571816"
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение параметров пользователя](../api/user-get-settings.md) |[settings](../resources/user-settings.md)| Получите параметры пользователей и организаций. |
-|[Изменение параметров пользователей](../api/user-update-settings.md) |[settings](../resources/user-settings.md)| Обновление текущих параметров пользователя. |
+|[Получение параметров пользователя](../api/user-get-settings.md) |[Параметры](../resources/user-settings.md)| Получите параметры пользователей и организаций. |
+|[Изменение параметров пользователей](../api/user-update-settings.md) |[Параметры](../resources/user-settings.md)| Обновление текущих параметров пользователя. |
 
 ## <a name="properties"></a>Свойства
 
@@ -38,11 +38,7 @@ ms.locfileid: "29571816"
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [ ],
-  "@type": "microsoft.graph.userSettings"
-}-->
+
 ```json
 {
   "contributionToContentDiscoveryDisabled": false,

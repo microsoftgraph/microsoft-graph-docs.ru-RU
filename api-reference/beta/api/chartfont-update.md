@@ -4,12 +4,12 @@ description: Обновление свойств объекта chartfont.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: a8e7d2665ce93a62ea27c1a5459382ab07e1184d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 4878e78690cc0b28f686d4f0c3c678325397cc07
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574973"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642305"
 ---
 # <a name="update-chartfont"></a>Обновление объекта ChartFont
 
@@ -38,21 +38,21 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/axes/categoryaxis/format/fon
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|bold| boolean |Указывает, является ли шрифт полужирным.|
-|color| строка |HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
-|italic| boolean |Указывает, применяется ли курсив.|
-|name| строка |Имя шрифта (например, Calibri)|
-|size| Double |Размер шрифта (например, 11)|
-|underline| Строка перечисления |Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
+|bold|boolean|Указывает, является ли шрифт полужирным.|
+|color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
+|italic|boolean|Указывает, применяется ли курсив.|
+|name|строка|Имя шрифта (например, Calibri)|
+|size|Double|Размер шрифта (например, 11)|
+|underline|строка|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`.|
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [workbookChartFont](../resources/chartfont.md) объект в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [ChartFont](../resources/chartfont.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -71,16 +71,15 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartFont"
+  "@odata.type": "microsoft.graph.chartFont"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -93,7 +92,7 @@ Content-length: 134
   "italic": true,
   "name": "name-value",
   "size": 99,
-  "underline": "None"
+  "underline": "underline-value"
 }
 ```
 

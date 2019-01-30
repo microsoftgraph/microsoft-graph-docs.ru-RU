@@ -4,12 +4,12 @@ description: Сложный тип, содержащий свойства общ
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 47283a82260d4f03a271a16660d58aca60da94e1
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577230"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643890"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -19,15 +19,7 @@ ms.locfileid: "29577230"
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже показано представление JSON ресурса.
-<!-- {
-  "blockType": "resource",
-  "optionalProperties": [
-    "attachments",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty"
-  ],
-  "@odata.type": "microsoft.graph.insightIdentity"
-}-->
+
 ```json
 {
   "displayName": "string",
@@ -40,8 +32,8 @@ ms.locfileid: "29577230"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |-----------    | -------------|
-| displayName       | Строка          | Отображаемое имя пользователя, который общих элемента. |
-| id              | Строка        | Идентификатор пользователя, который общих элемента.     |
+| displayName       | String          | Отображаемое имя пользователя, который общих элемента. |
+| id              | String        | Идентификатор пользователя, который общих элемента.     |
 | address             | String      | Адрес электронной почты пользователя, который общих элемента.  |
 <!--
 {

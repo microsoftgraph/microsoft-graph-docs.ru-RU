@@ -4,12 +4,12 @@ description: Получение списка объектов таблиц.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: c285c44ad8cdefe1647649dec55fb7ee6f500ad9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 417a1118bbfc7ea1fd1b35edacd9cbd3aa05b942
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576173"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639974"
 ---
 # <a name="list-tables"></a>Список таблиц
 
@@ -39,12 +39,12 @@ GET /workbook/worksheets/{id|name}/tables
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [workbookTable](../resources/table.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Table](../resources/table.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -56,12 +56,11 @@ GET /workbook/worksheets/{id|name}/tables
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/tables
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookTable",
+  "@odata.type": "microsoft.graph.table",
   "isCollection": true
 } -->
 ```http

@@ -1,18 +1,18 @@
 ---
 title: Использование интерфейса API REST канале активности
-description: 'Веб-канал API в Microsoft Graph активности можно использовать для возобновления actiity пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью делегированы разрешения и разрешение активности пользователей, которую можно использовать с учетными записями личных или рабочих и школы. '
+description: 'Веб-канал API в Microsoft Graph активности можно использовать для возобновления активности пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью делегированы разрешения и разрешение активности пользователей, которую можно использовать с учетными записями личных или рабочих и школы. '
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: a229a5231894598fce0ff11f15926256987caa84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 00b1ac90bd4a1a9fe7cef2a9ffaebcebc2d8d5f4
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971846"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641073"
 ---
 # <a name="use-the-activity-feed-rest-api"></a>Использование интерфейса API REST канале активности
 
-Веб-канал API в Microsoft Graph активности можно использовать для возобновления actiity пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью [делегированных разрешений](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) и [разрешений активности пользователя](/graph/permissions-reference), который можно использовать с личных или рабочих и школы учетных записей. 
+Веб-канал API в Microsoft Graph активности можно использовать для возобновления активности пользователя между устройствами и платформами. Запросы API веб-канала активности выполняются от имени пользователя с помощью [делегированных разрешений](/graph/permissions-reference#delegated-permissions-application-permissions-and-effective-permissions) и [разрешений активности пользователя](/graph/permissions-reference), который можно использовать с личных или рабочих и школы учетных записей. 
 
 Действия пользователя представлены [действия](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) ресурсов и организованы в веб-канал на основе времени представленной коллекции me / действий. 
 <!-- Add missing content.
@@ -63,7 +63,7 @@ Each activity represents a unique...
 
 - Просмотр [активности ресурсов](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/projectrome_activity) и определите ваше приложение действия, которые помогут пользователям возобновления важные задачи.
 - Изучите примеры [Примеры адаптивный карточки](https://adaptivecards.io/samples/) идеи сделать вашей действия **pop**.  
-- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
+- Опробуйте API в [песочнице Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 **Найти дополнительные сведения?** 
 

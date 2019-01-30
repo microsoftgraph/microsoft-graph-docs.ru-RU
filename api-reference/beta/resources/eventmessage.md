@@ -4,12 +4,12 @@ description: 'Сообщение, которое представляет соб
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 669f1a81f76decf8103b7d6e6acba2fb93c458dc
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 926a9adc1a66ca912aff9a5ccea8db189eb4dae1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575746"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643421"
 ---
 # <a name="eventmessage-resource-type"></a>Тип ресурса eventMessage
 
@@ -35,8 +35,8 @@ ms.locfileid: "29575746"
     "attachments",
     "event",
     "extensions",
-    "multiValueLegacyExtendedProperty",
-    "singleValueLegacyExtendedProperty"
+    "multiValueExtendedProperties",
+    "singleValueExtendedProperties"
   ],
   "@odata.type": "microsoft.graph.eventMessage"
 }-->
@@ -69,10 +69,10 @@ ms.locfileid: "29575746"
   "isReadReceiptRequested": true,
   "lastModifiedDateTime": "DateTimeOffset",
   "location": {"@odata.type": "microsoft.graph.location"},
-  "meetingMessageType": "none | meetingRequest | meetingCancelled | meetingAccepted | meetingTenativelyAccepted | meetingDeclined",
+  "meetingMessageType": {"@odata.type": "microsoft.graph.meetingMessageType"},
   "parentFolderId": "string",
   "receivedDateTime": "DateTimeOffset",
-  "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
+  "recurrence": {"@odata.type": "microsoft.graph.patternedrecurrence"},
   "replyTo": [{"@odata.type": "microsoft.graph.recipient"}],
   "sender": {"@odata.type": "microsoft.graph.recipient"},
   "sentDateTime": "DateTimeOffset",
@@ -94,11 +94,11 @@ ms.locfileid: "29575746"
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
 |body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате.|
 |bodyPreview|String|Первые 255 символов в тексте сообщения. В текстовом формате. |
-|categories|Коллекция String|Категории, сопоставленные с сообщением.|
+|categories|Коллекция String|Категории, связанные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
-|conversationIndex|Binary|Индекс беседы, к которому принадлежит сообщение электронной почты.|
+|conversationIndex|Binary|Индекс беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[dateTimeTimeZone](datetimetimezone.md)|Время окончания собрания запрошенного.|
 |flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
@@ -108,16 +108,16 @@ ms.locfileid: "29575746"
 |importance|String| Важность сообщения: `low`, `normal`, `high`.|
 |inferenceClassification|String| Возможные значения: `focused`, `other`.|
 |internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, установленных по [RFC 5322](https://www.ietf.org/rfc/rfc5322.txt), которые содержат информацию о маршруте прохождения сообщения. Только для чтения.|
-|internetMessageId |Строка |Идентификатор сообщения в формате, указанном [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
+|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). |
 |isAllDay |Boolean|Указывает, является ли событие длится весь день. Изменяет значения этого свойства требует настройки свойств **startDateTime** и **endDateTime** , а также события.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
+|isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
 |isOutOfDate|Boolean|Указывает ли этот запрос на собрание было выполнено устаревших последних запроса.|
 |isRead|Boolean|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[location](location.md)|Место собрания запрошенного.|
-|meetingMessageType| Строка перечисления | Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
+|meetingMessageType|String| Тип сообщения о событии: `none`, `meetingRequest`, `meetingCancelled`, `meetingAccepted`, `meetingTenativelyAccepted`, `meetingDeclined`.|
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|Шаблон повторения запрошенные собрания.|
@@ -127,20 +127,20 @@ ms.locfileid: "29575746"
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|Время начала запрошенные собрания.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
-|type|Строка|Тип запрошенного собрания: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
+|type|String|Тип запрошенного собрания: `singleInstance`, `occurence`, `exception`, `seriesMaster`.|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
-|UnsubscribeData|Строка|Синтаксический анализ вводимых из заголовка отписаться списка.  Это данных для команды почты в заголовке отписаться списка, если свойство UnsubscribeEnabled имеет значение true.|
-|UnsubscribeEnabled|Boolean|Указывает, включена ли сообщение для отказа от подписки.  Его valueTrue Если отписаться списка заголовок соответствует rfc 2369.|
+|UnsubscribeData|String|Допустимые объекты, анализируемые из заголовка List-Unsubscribe  Это данные для почтовой команды в заголовке List-Unsubscribe, если свойству UnsubscribeEnabled присвоено значение true.|
+|UnsubscribeEnabled|Boolean|Указывает, допускает ли сообщение отмену подписки.  Имеет значение True, если заголовок List-Unsubscribe соответствует документу RFC-2369.|
 |webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция [attachment](attachment.md) |Коллекция [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) вложений для сообщения. Только для чтения. Допускается значение null.|
+|attachments|Коллекция [attachment](attachment.md)|Коллекция [fileAttachment](fileattachment.md), [itemAttachment](itemattachment.md)и [referenceAttachment](referenceattachment.md) вложений для сообщения. Только для чтения. Допускается значение null.|
 |event|[event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
 |extensions|Коллекция [extension](extension.md)| Коллекция открытых расширений, определенных для сообщения о событии. Только для чтения. Допускается значение null.|
-|multiValueLegacyExtendedProperty|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
-|singleValueLegacyExtendedProperty|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для eventMessage. Только для чтения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для eventMessage. Только для чтения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для eventMessage. Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
@@ -158,7 +158,7 @@ ms.locfileid: "29575746"
 |[reply](../api/message-reply.md)|Нет|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[replyAll](../api/message-replyall.md)|Нет|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[send](../api/message-send.md)|Нет|Отправка ранее созданного черновика сообщения. После этого сообщение сохраняется в папке "Отправленные".|
-|[отписаться](../api/message-unsubscribe.md)|Нет|Отправка сообщений с помощью данных и адрес, указанный в первой команде mailto в заголовке отписаться списка.|
+|[unsubscribe](../api/message-unsubscribe.md)|Нет|Отправка сообщения, используя данные и адрес, указанные в это первой команде mailto заголовка List-Unsubscribe.|
 |**Вложения**| | |
 |[Список вложений](../api/eventmessage-list-attachments.md) |Коллекция [attachment](attachment.md)| Получение всех файлов, вложенных в сообщение о событии.|
 |[Добавление вложения](../api/eventmessage-post-attachments.md) |[attachment](attachment.md)| Вложение в сообщение о событии нового файла путем публикации в коллекции вложений.|

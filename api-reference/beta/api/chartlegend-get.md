@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта ch
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 2b237e894b45a3b558c2dbfe9d3a0e36056e0915
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 17938f77d2ace3548fa7781e0797dd7a5956afc3
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571431"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643855"
 ---
 # <a name="get-chartlegend"></a>Получение объекта ChartLegend
 
@@ -39,12 +39,12 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/legend
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [WorkbookChartLegend](../resources/chartlegend.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [ChartLegend](../resources/chartlegend.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -56,12 +56,11 @@ GET /workbook/worksheets/{id|name}/charts(<name>)/legend
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/worksheets/{id|name}/charts(<name>)/legend
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookChartLegend"
+  "@odata.type": "microsoft.graph.chartLegend"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -2,12 +2,12 @@
 title: Тип ресурса scopedRoleMembership
 description: Членство в пределах роли описывает принадлежности пользователя к роли каталога, с дальнейшей областью действия, чтобы административные единицы (AU).  Это обеспечивает механизм, позволяющий adminsistrator клиента всей компании делегировать административные полномочия для пользователя для управления пользователями и группами в подмножества организации (подмножество, определяемым AU).
 localization_priority: Normal
-ms.openlocfilehash: c3af7a44221c4cf2822440a6025706c8bd4a93ac
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2d51ad696487e7daafb9b0f4fcef0934e4f6d6e2
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575662"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640793"
 ---
 # <a name="scopedrolemembership-resource-type"></a>Тип ресурса scopedRoleMembership
 
@@ -21,9 +21,9 @@ ms.locfileid: "29575662"
 ## <a name="properties"></a>Свойства
 | Свойство   | Тип | Описание |
 |:---------------|:--------|:----------|
-|administrativeUnitId|string|Уникальный идентификатор административного подразделения, пределах роли каталога|
-|id|string| Уникальный идентификатор для членство в области определения роли. Только для чтения.|
-|roleId|string| Уникальный идентификатор для роли каталога, элемент.|
+|administrativeUnitId|строка|Уникальный идентификатор административного подразделения, пределах роли каталога|
+|id|строка| Уникальный идентификатор для членство в области определения роли. Только для чтения.|
+|roleId|строка| Уникальный идентификатор для роли каталога, элемент.|
 |roleMemberInfo|[identity](identity.md)| Сведения о удостоверение члена роли. Представляет пользователя, который является членом этой области определения роли.|
 
 ## <a name="relationships"></a>Связи
@@ -39,7 +39,7 @@ ms.locfileid: "29575662"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.scopedRoleMembership"
+  "@odata.type": "microsoft.graph.scopedrolemembership"
 }-->
 
 ```json

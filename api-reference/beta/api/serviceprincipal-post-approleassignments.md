@@ -1,15 +1,15 @@
 ---
-title: Создание appRoleAssignment
+title: Создание объекта appRoleAssignment
 description: Используйте этот интерфейс API для создания нового appRoleAssignment.
 localization_priority: Normal
-ms.openlocfilehash: 33bf7a577b01b2f23132a2b761bd80f24e8268c7
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574343"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643652"
 ---
-# <a name="create-approleassignment"></a>Создание appRoleAssignment
+# <a name="create-approleassignment"></a>Создание объекта appRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -33,9 +33,9 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md) .
 
 ## <a name="response"></a>Отклик
@@ -64,12 +64,11 @@ Content-length: 233
 ```
 В тексте запроса укажите представление JSON объекта [appRoleAssignment](../resources/approleassignment.md) .
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

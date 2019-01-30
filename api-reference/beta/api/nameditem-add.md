@@ -2,12 +2,12 @@
 title: Add Named Item
 description: Добавляет новое имя в определенную коллекцию, используя языковой стандарт пользователя для формулы.
 localization_priority: Normal
-ms.openlocfilehash: 6d27f081c4f8327e02acf4b3004c771848a5a5e0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: dd35f2ded1c08c5f6b99a017b89dd6b5b50026b7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575487"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643862"
 ---
 # <a name="add-named-item"></a>Add Named Item
 
@@ -37,18 +37,18 @@ POST /workbook/worksheets({id|name})/names/add
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |name|строка|Имя именованного элемента.|
-|ссылка|string|Формула или диапазон, на которые будет ссылаться имя.|
+|ссылка|строка|Формула или диапазон, на которые будет ссылаться имя.|
 |примечание|строка|Комментарий, связанный с именованным элементом|
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `200 OK` и объект [NamedItem](../resources/workbooknameditem.md) в тексте отклика.
+В случае успеха этот метод возвращает код отклика `200 OK` и объект [NamedItem](../resources/nameditem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -74,12 +74,11 @@ Content-length: 54
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookNamedItem"
+  "@odata.type": "microsoft.graph.namedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

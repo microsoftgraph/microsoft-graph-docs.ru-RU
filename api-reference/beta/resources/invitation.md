@@ -4,12 +4,12 @@ description: 'С помощью диспетчера приглашений мо
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 05330d0a8d62dc3afdff5c90301ed4d4a60b2be0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577447"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640555"
 ---
 # <a name="invitation-manager"></a>Диспетчер приглашений
 
@@ -30,14 +30,14 @@ ms.locfileid: "29577447"
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-| [Создание приглашений](../api/invitation-post.md) | invitation | Запись свойств и отношений объекта приглашения.|
+|[Создание приглашений](../api/invitation-post.md) | invitation | Запись свойств и отношений объекта приглашения.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |invitedUserDisplayName|String|Отображаемое имя приглашаемого пользователя.|
 |invitedUserEmailAddress|String|Адрес электронной почты приглашаемого пользователя. Указывать обязательно.|
-|invitedUserMessageInfo| [invitedUserMessageInfo](../resources/invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
+|invitedUserMessageInfo|[invitedUserMessageInfo](invitedusermessageinfo.md)|Дополнительные настройки сообщения, которое отправляется приглашаемому пользователю, в том числе настройка текста, языка и списка получателей копии сообщения.|
 |sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
 |inviteRedeemUrl|String|URL-адрес для активации приглашения. Только для чтения.|
@@ -47,7 +47,7 @@ ms.locfileid: "29577447"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|invitedUser| Коллекция [User](../resources/user.md)|Пользователь, создаваемый при создании приглашения. Только для чтения.|
+|invitedUser|[User](user.md)|Пользователь, создаваемый при создании приглашения. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -57,13 +57,13 @@ ms.locfileid: "29577447"
 {
   "invitedUserDisplayName": "string",
   "invitedUserEmailAddress": "string",
-  "invitedUserMessageInfo": {"@odata.type": "#microsoft.graph.invitedUserMessageInfo"},
+  "invitedUserMessageInfo": {"@odata.type": "microsoft.graph.invitedUserMessageInfo"},
   "sendInvitationMessage": false,
   "inviteRedirectUrl": "string",
   "inviteRedeemUrl": "string",
   "status": "string",
 
-  "invitedUser": [{"@odata.type": "#microsoft.graph.user"}]
+  "invitedUser": [{"@odata.type": "microsoft.graph.user"}]
 }
 ```
 

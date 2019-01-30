@@ -4,12 +4,12 @@ description: Получение списка объектов scopedRoleMembersh
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 188e3f0d49252c469a77b2f8903dc4be5b188801
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ab6b68ac96e35249ef216266fafed76be68f40b7
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571760"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642480"
 ---
 # <a name="list-scopedmembers-for-a-directory-role"></a>Список scopedMembers для роли каталога
 
@@ -38,8 +38,8 @@ GET /directoryroles/{id}/scopedMembers
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,12 +55,11 @@ GET /directoryroles/{id}/scopedMembers
 GET https://graph.microsoft.com/beta/directoryRoles/{id}/scopedMembers
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.scopedRoleMembership",
+  "@odata.type": "microsoft.graph.scopedrolemembership",
   "isCollection": true
 } -->
 ```http

@@ -2,12 +2,12 @@
 title: Тип ресурса privilegedRoleAssignmentRequest
 description: Представляет запрос для операций назначения роли управления удостоверениями Privilegd.
 localization_priority: Normal
-ms.openlocfilehash: a0cb0bc03d8bb2436e45139bc9db5322cc3970cf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571751"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642431"
 ---
 # <a name="privilegedroleassignmentrequest-resource-type"></a>Тип ресурса privilegedRoleAssignmentRequest
 
@@ -21,26 +21,26 @@ ms.locfileid: "29571751"
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) коллекции|Список запросов назначения ролей.|
-|[Create](../api/privilegedroleassignmentrequest-post.md)|  [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md)|Создание запроса для управления жизненным циклом существующего или нового назначения роли.|
-|[Cancel](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена назначения запроса ожидающие роли.|
-|[My](../api/privilegedroleassignmentrequest-my.md)|  |Получите запрос назначения ролей для текущего запрашивающего.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) коллекции|Список запросов назначения ролей.|
+|[создание](../api/privilegedroleassignmentrequest-post.md);|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Создание запроса для управления жизненным циклом существующего или нового назначения роли.|
+|[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена назначения запроса ожидающие роли.|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |Получите запрос назначения ролей для текущего requstor.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|Строка| Только для чтения. Идентификатор запроса назначений ролей.|
-|assignmentState|Строка| Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей.|
-|duration|Строка| Длительность назначения ролей.|
-|Причина|Строка| Причина для назначения ролей.|
+|id|String| Только для чтения. Идентификатор запроса назначений ролей.|
+|assignmentState|String| Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей.|
+|duration|String| Длительность назначения ролей.|
+|Причина|String| Причина для назначения ролей.|
 |requestedDateTime|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|roleId|Строка| Идентификатор роли.|
-|расписание|[microsoft.graph.governanceSchedule](governanceschedule.md)| Объект расписание запрос назначения ролей.|
-|status|Строка| Состояние чтения only.The запрос назначения ролей. Значение может быть `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
-|ticketNumber|Строка| TicketNumber назначения роли. |
-|ticketSystem|Строка| TicketSystem назначения роли.|
-|type|Строка| Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей.|
+|roleId|String| Идентификатор роли.|
+|расписание|[governanceSchedule](governanceschedule.md)| Объект расписание запрос назначения ролей.|
+|status|String| Состояние чтения only.The запрос назначения ролей. Значение может быть `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
+|ticketNumber|String| TicketNumber назначения роли. |
+|ticketSystem|String| TicketSystem назначения роли.|
+|type|String| Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей.|
 |userId|String| Идентификатор пользователя.|
 
 ## <a name="relationships"></a>Связи

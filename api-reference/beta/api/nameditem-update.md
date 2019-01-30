@@ -2,12 +2,12 @@
 title: Обновление объекта NamedItem
 description: Обновление свойств объекта nameditem.
 localization_priority: Normal
-ms.openlocfilehash: b25657a6913a9fe56ce7068b9318fa7390f139f8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ffb01e0998b3b94706e50ed461014fcfd11ce927
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577496"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640632"
 ---
 # <a name="update-nameditem"></a>Обновление объекта NamedItem
 
@@ -34,7 +34,7 @@ PATCH /workbook/names(<name>)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
@@ -44,7 +44,7 @@ PATCH /workbook/names(<name>)
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [workbookNamedItem](../resources/workbooknameditem.md) объект в теле ответа.
+В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [NamedItem](../resources/nameditem.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -67,12 +67,11 @@ Content-length: 87
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.workbookNamedItem"
+  "@odata.type": "microsoft.graph.namedItem"
 } -->
 ```http
 HTTP/1.1 200 OK

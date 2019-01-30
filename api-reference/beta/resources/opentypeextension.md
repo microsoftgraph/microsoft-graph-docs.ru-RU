@@ -3,12 +3,12 @@ title: Тип ресурсов openTypeExtension (открытые расшир�
 description: Открыть extensions (ранее называлась расширения данные Office 365) предоставляют простой способ добавлять нетипизированный свойства непосредственно к ресурсам в Microsoft Graph.
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: 6a0be3c794fcfc880a99c5fd81e498b8121de68a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ba5dbcd6c5ae1705ffe7e89ca6f529280d98adf5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574910"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643841"
 ---
 # <a name="opentypeextension-resource-type-open-extensions"></a>Тип ресурсов openTypeExtension (открытые расширения)
 
@@ -54,11 +54,9 @@ ms.locfileid: "29574910"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-       "companyName",
-        "dealValue",
-        "expirationDate"
+
   ],
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 }-->
 
 ```json
@@ -73,8 +71,8 @@ ms.locfileid: "29574910"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|extensionName|Строка|Уникальный текстовый идентификатор для модуля обработки данных открытого типа. Обязательный.|
-|id|Строка| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
+|extensionName|String|Уникальный текстовый идентификатор для модуля обработки данных открытого типа. Обязательный.|
+|id|String| Полный идентификатор, в котором сцеплены тип расширения и свойство **extensionName**. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
 

@@ -2,12 +2,12 @@
 title: Создание governanceRoleAssignmentRequest
 description: Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
 localization_priority: Normal
-ms.openlocfilehash: 0fc8d96585daf63f53bc6b33985a289e8f810d6b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: c936a6cd0ba061fc1dd3758533781d7270673939
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572369"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641269"
 ---
 # <a name="create-governanceroleassignmentrequest"></a>Создание governanceRoleAssignmentRequest
 
@@ -15,7 +15,7 @@ ms.locfileid: "29572369"
 
 Создание роли назначения запроса для представления операции, требуется на назначения ролей. В следующей таблице перечислены операции.
 
-| Operation       | Тип | 
+| Операция       | Тип | 
 |:---------------|:----------|
 | Назначение назначения ролей| AdminAdd |
 | Активация назначение подходящими роли| UserAdd | 
@@ -46,21 +46,21 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |Обязательный|  Описание|
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|Идентификатор ресурса.|
+|resourceId|String|Да|Идентификатор ресурса.|
 |roleDefinitionId|Строка|Да|Идентификатор определения роли.|
 |subjectId|Строка|Да|Идентификатор субъекта.|
 |assignmentState|Строка|Да|Состояние назначения. Значение может быть ``Eligible`` и ``Active``.|
 |type|Строка|Да|Тип запроса. Значение может быть `AdminAdd`, `UserAdd`, `AdminUpdate`, `AdminRemove`, `UserRemove`, `UserExtend`, `UserRenew`, `AdminRenew`и `AdminExtend`.|
-|Причина|Строка| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
+|Причина|String| |Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|расписание|[governanceSchedule](../resources/governanceschedule.md)| | Расписание для запроса назначений ролей. Для запроса типа `UserAdd`, `AdminAdd`, `AdminUpdate`, и `AdminExtend`, это необходимо.|
 
 ## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
@@ -88,13 +88,13 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
+|resourceId|String|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active|
 |type|Строка|Да| AdminAdd|
-|Причина|Строка| зависит от роли параметров||
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|Причина|String| зависит от роли параметров||
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -171,13 +171,13 @@ Content-length: 226
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
+|resourceId|String|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Активное|
 |type|Строка|Да| UserAdd|
-|Причина|Строка| зависит от роли параметров||
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|Причина|String| зависит от роли параметров||
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -266,13 +266,13 @@ Content-type: application/json
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
+|resourceId|String|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Активное|
 |type|Строка|Да| UserRemove|
 |Причина|Строка| Нет||
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Нет|        |
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -329,13 +329,13 @@ Content-length: 226
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
+|resourceId|String|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active|
 |type|Строка|Да| AdminRemove|
 |Причина|Строка| Нет||
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Нет|        |
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Нет|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -391,13 +391,13 @@ Content-length: 226
 
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
+|resourceId|String|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active|
 |type|Строка|Да| AdminUpdate|
-|Причина|Строка| зависит от roleSettings||
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|Причина|String| зависит от roleSettings||
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -471,13 +471,13 @@ Content-length: 226
  
 | Свойство     | Тип    |Обязательный|  Значение |
 |:---------------|:--------|:----------|:----------|
-|resourceId|Строка|Да|\<Ид_ресурса\>|
+|resourceId|String|Да|\<Ид_ресурса\>|
 |roleDefinitionId|Строка|Да|\<roleDefinitionId\>|
 |subjectId|Строка|Да|\<subjectId\>|
 |assignmentState|Строка|Да| Допустимость / Active |
 |type|Строка|Да| AdminExtend|
-|Причина|Строка| зависит от roleSettings||
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Да|        |
+|Причина|String| зависит от roleSettings||
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Да|        |
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",

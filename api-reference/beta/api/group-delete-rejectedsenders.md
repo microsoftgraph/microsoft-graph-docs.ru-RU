@@ -4,12 +4,12 @@ description: Удаление пользователя или группы из 
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 841b7fc1a58b0ec77b240bfdbfe9c286ac38b310
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e8b5a0a6a0c6a4f72805845f7c7c579043c05c0e
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570648"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643946"
 ---
 # <a name="remove-rejectedsender"></a>Удаление объекта rejectedSender
 
@@ -38,8 +38,8 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  
 
-## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Тело запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
@@ -54,6 +54,7 @@ DELETE /groups/{id}/rejectedSenders/$ref?$id=<id>
 ```http
 DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/users/{id}
 
+DELETE https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref?$id=https://graph.microsoft.com/beta/groups/{id}
 ```
 
 #### <a name="response"></a>Отклик

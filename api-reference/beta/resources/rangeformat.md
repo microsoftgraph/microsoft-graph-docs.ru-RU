@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса rangeFormat
+title: Тип ресурса RangeFormat
 description: Объект формата, в который включены шрифт, заливка, границы, выравнивание и другие свойства диапазона.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 1394153a09a30c273280dab5469a40e2e0c2c4ad
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 58ed56b11b571237211307c8fb0dd1abaf27761f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572425"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643932"
 ---
 # <a name="rangeformat-resource-type"></a>Тип ресурса RangeFormat
 
@@ -23,9 +23,9 @@ ms.locfileid: "29572425"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта RangeFormat](../api/rangeformat-get.md) | [RangeFormat](rangeformat.md) |Чтение свойств и связей объекта rangeFormat.|
-|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[rangeBorder](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
-|[Список границ](../api/rangeformat-list-borders.md) |[rangeBorder](rangeborder.md) коллекции| Получение коллекции объектов RangeBorder.|
-|[Update](../api/rangeformat-update.md) | [rangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
+|[Создание объекта RangeBorder](../api/rangeformat-post-borders.md) |[RangeBorder](rangeborder.md)| Создание объекта RangeBorder путем добавления в коллекцию границ.|
+|[Список границ](../api/rangeformat-list-borders.md) |Коллекция объектов [RangeBorder](rangeborder.md)| Получение коллекции объектов RangeBorder.|
+|[обновление](../api/rangeformat-update.md). | [RangeFormat](rangeformat.md) |Обновление объекта RangeFormat. |
 |[Autofitcolumns](../api/rangeformat-autofitcolumns.md)|Нет|Изменяет ширину столбцов текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 |[Autofitrows](../api/rangeformat-autofitrows.md)|Нет|Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.|
 
@@ -33,18 +33,18 @@ ms.locfileid: "29572425"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |columnWidth|double|Возвращает или задает ширину всех столбцов в пределах диапазона. Если столбцы разной ширины, будет возвращено значение NULL.|
-|horizontalAlignment|string|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
+|horizontalAlignment|строка|Представляет горизонтальное выравнивание для указанного объекта. Возможные значения: `General`, `Left`, `Center`, `Right`, `Fill`, `Justify`, `CenterAcrossSelection`, `Distributed`.|
 |rowHeight|double|Возвращает или задает высоту всех строк в диапазоне. Если строки разной высоты, будет возвращено значение NULL.|
-|verticalAlignment|string|Представляет вертикальное выравнивание для указанного объекта. Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
+|verticalAlignment|строка|Представляет вертикальное выравнивание для указанного объекта. Возможные значения: `Top`, `Center`, `Bottom`, `Justify`, `Distributed`.|
 |wrapText|boolean|Указывает, использует ли Excel обтекание текстом для объекта. Значение null указывает, что для диапазона в целом не применяется согласованный параметр обтекания.|
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|borders|[rangeBorder](rangeborder.md) коллекции|Коллекция объектов границ, которые применяются к общему выделенному диапазону. Только для чтения.|
-|fill|[rangeFill](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
-|font|[rangeFont](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
-|protection|[formatProtection](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
+|borders|Коллекция объектов [RangeBorder](rangeborder.md)|Коллекция объектов границ, которые применяются к общему выделенному диапазону. Только для чтения.|
+|fill|[RangeFill](rangefill.md)|Возвращает объект заливки, определенный для всего диапазона. Только для чтения.|
+|font|[RangeFont](rangefont.md)|Возвращает объект шрифта, определенный для общего выбранного диапазона. Только для чтения.|
+|protection|[FormatProtection](formatprotection.md)|Возвращает объект защиты формата для диапазона. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

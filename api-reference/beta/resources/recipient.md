@@ -2,12 +2,12 @@
 title: Тип ресурса recipient
 description: 'Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. '
 localization_priority: Normal
-ms.openlocfilehash: 1ae49432e0ef6ab5881b41d9de5adebd306a4da8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 9718d7e6ce09a42e742303aaed484fa6335f3cbc
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574945"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642585"
 ---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 
@@ -34,7 +34,7 @@ ms.locfileid: "29574945"
 
 ```json
 {
-  "emailAddress": {"@odata.type": "#microsoft.graph.emailAddress"}
+  "emailAddress": {"@odata.type": "microsoft.graph.emailAddress"}
 }
 
 ```

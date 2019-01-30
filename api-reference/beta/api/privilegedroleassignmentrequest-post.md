@@ -2,12 +2,12 @@
 title: Создание privilegedRoleAssignmentRequest
 description: Создайте объект privilegedroleassignmentrequest.
 localization_priority: Normal
-ms.openlocfilehash: 69e095e13d89ed780feeb7ea32b7aa9ac10de055
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: e3158e918d061f09dec9e74c9e3bfd66d95fa48d
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575295"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641689"
 ---
 # <a name="create-privilegedroleassignmentrequest"></a>Создание privilegedRoleAssignmentRequest
 
@@ -35,16 +35,16 @@ POST /privilegedRoleAssignmentRequests
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В тексте запроса укажите представление JSON объекта [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) . 
 
 | Свойство     | Тип    |  Описание|
 |:---------------|:--------|:----------|
-|roleId|Строка|Идентификатор роли. Обязательное.|
-|type|Строка|Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей. Обязательный.|
-|assignmentState|Строка|Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
-|Причина|Строка|Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
-|расписание|[microsoft.graph.governanceSchedule](../resources/governanceschedule.md)|Расписание для запроса назначений ролей.|
+|roleId|String|Идентификатор роли. Обязательное.|
+|type|String|Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей. Обязательный.|
+|assignmentState|String|Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей. Возможные значения: ``NotStarted``, `Completed`, `RequestedApproval`, `Scheduled`, `Approved`, `ApprovalDenied`, `ApprovalAborted`, `Cancelling`, `Cancelled`, `Revoked`, `RequestExpired`. Обязательный.|
+|Причина|String|Причину должно предоставляться для запроса назначений ролей для аудита и предварительный просмотр цели.|
+|расписание|[governanceSchedule](../resources/governanceschedule.md)|Расписание для запроса назначений ролей.|
 
 ## <a name="response"></a>Отклик
 Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в теле ответа.
@@ -107,6 +107,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 304
 
+
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#privilegedRoleAssignmentRequests/$entity",
     "schedule": {
@@ -125,7 +126,7 @@ Content-length: 304
     "reason": "Activate the role for business purpose",
     "ticketNumber": "234",
     "ticketSystem": "system",
-    "userId": "Self",
+    "userId": "Self"，
     "roleId": "88d8e3e3-8f55-4a1e-953a-9b9898b8876b"
 }
 ```

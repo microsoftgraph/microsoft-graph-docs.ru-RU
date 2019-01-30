@@ -3,12 +3,12 @@ title: Создание открытого расширения
 description: Создание расширения open (объект openTypeExtension) и Добавление настраиваемых свойств
 localization_priority: Normal
 author: dkershaw10
-ms.openlocfilehash: cce327258ac0cf4e0bf626cbaed33d6d125c8acf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571752"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29642711"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
@@ -94,7 +94,7 @@ POST /users/{id|userPrincipalName}/extensions
 
 | Имя       | Значение |
 |:---------------|:----------|
-| @odata.type | microsoft.graph.openTypeExtension |
+| @odata.type | Microsoft.Graph.OpenTypeExtension |
 | extensionName | %уникальная_строка% |
 
 При создании расширения в _новом_ экземпляре ресурса предоставьте не только объект **openTypeExtension**, но и представление JSON соответствующих свойств для создания этого экземпляра ресурса.
@@ -125,7 +125,7 @@ POST /users/{id|userPrincipalName}/extensions
 - Свойства **subject**, **body** и **toRecipients**, характерные для нового сообщения.
 - Данные для расширения:
 
-  - Тип `microsoft.graph.openTypeExtension`.
+  - Тип `Microsoft.Graph.OpenTypeExtension`.
   - Имя расширения "Com.Contoso.Referral".
   - Дополнительные данные, хранящиеся в виде трех настраиваемых свойств в полезных данных JSON: `companyName`, `expirationDate` и `dealValue`.
 
@@ -151,7 +151,7 @@ POST https://graph.microsoft.com/beta/me/messages
   ],
   "extensions": [
     {
-      "@odata.type": "microsoft.graph.openTypeExtension",
+      "@odata.type": "Microsoft.Graph.OpenTypeExtension",
       "extensionName": "Com.Contoso.Referral",
       "companyName": "Wingtip Toys",
       "expirationDate": "2015-12-30T11:00:00.000Z",
@@ -228,7 +228,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 ('AAMkAGEbs88AAB84uLuAAA%3D')/extensions",
   "extensions": [
     {
-      "@odata.type": "microsoft.graph.openTypeExtension",
+      "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
       "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df800e5@1717f226-49d1-4d0c-9d74-709fad664b77')/messages
 ('AAMkAGEbs88AAB84uLuAAA=')/extensions('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
       "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral",
@@ -247,7 +247,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 
 Во втором примере показано создание расширения в указанном сообщении. Текст запроса включает следующие данные для расширения:
 
-- Тип `microsoft.graph.openTypeExtension`.
+- Тип `Microsoft.Graph.OpenTypeExtension`.
 - Имя расширения "Com.Contoso.Referral".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.
 
@@ -259,7 +259,7 @@ ItemID=AAMkAGEbs88AAB84uLuAAA%3D&exvsurl=1&viewmodel=ReadMessageItem",
 POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 
 {
-  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
   "extensionName" : "Com.Contoso.Referral",
   "companyName" : "Wingtip Toys",
   "dealValue" : 500050,
@@ -278,7 +278,7 @@ POST https://graph.microsoft.com/beta/me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZ
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -286,7 +286,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#Me/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
     "@odata.id": "https://graph.microsoft.com/beta/users('ddfc984d-b826-40d7-b48b-57002df85e00@1717f226-49d1-4d0c-9d74-709fad6677b4')/messages('AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl===')/extensions
 ('Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')",
     "extensionName": "Com.Contoso.Referral",
@@ -303,7 +303,7 @@ Content-type: application/json
 
 В третьем примере показано создание расширения в указанном событии группы. Текст запроса включает следующие данные для расширения:
 
-- Тип `microsoft.graph.openTypeExtension`.
+- Тип `Microsoft.Graph.OpenTypeExtension`.
 - Имя расширения "Com.Contoso.Deal".
 - Дополнительные данные, хранящиеся в виде 3 настраиваемых свойств в полезных данных JSON: `companyName`, `dealValue` и `expirationDate`.
 
@@ -315,7 +315,7 @@ Content-type: application/json
 POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl17IsAAA=')/extensions
 
 {
-  "@odata.type" : "microsoft.graph.openTypeExtension",
+  "@odata.type" : "Microsoft.Graph.OpenTypeExtension",
   "extensionName" : "Com.Contoso.Deal",
   "companyName" : "Alpine Skis",
   "dealValue" : 1010100,
@@ -330,7 +330,7 @@ POST https://graph.microsoft.com/beta/groups('f5480dfd-7d77-4d0b-ba2e-3391953cc7
 <!-- {
   "blockType": "response",
   "truncated": false,
-  "@odata.type": "microsoft.graph.openTypeExtension"
+  "@odata.type": "microsoft.graph.opentypeextension"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -338,7 +338,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups('f5480dfd-7d77-4d0b-ba2e-3391953cc74a')/events('AAMkADVl7IsAAA%3D')/extensions/$entity",
-    "@odata.type": "microsoft.graph.openTypeExtension",
+    "@odata.type": "#Microsoft.Graph.OpenTypeExtension",
     "id": "Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Deal",
     "extensionName": "Com.Contoso.Deal",
     "companyName": "Alpine Skis",
@@ -372,7 +372,7 @@ POST https://graph.microsoft.com/beta/groups('37df2ff0-0de0-4c33-8aee-75289364ae
     },
   "extensions": [
     {
-      "@odata.type": "microsoft.outlookServices.openTypeExtension",
+      "@odata.type": "Microsoft.OutlookServices.OpenTypeExtension",
       "extensionName": "Com.Contoso.HR",
       "companyName": "Contoso",
       "expirationDate": "2015-07-03T13:04:00.000Z",

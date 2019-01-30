@@ -2,12 +2,12 @@
 title: Вывод вложения
 description: Чтение свойства и связи вложения, подключенного к события, сообщения, задачи Outlook или post.
 localization_priority: Normal
-ms.openlocfilehash: 650892a13fd4977697fa17788c509542b4f1b415
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: b346461dad8b0a15d12d0882e0fe8aa4cc2d4774
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574351"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641164"
 ---
 # <a name="get-attachment"></a>Вывод вложения
 
@@ -99,11 +99,11 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -138,7 +138,7 @@ Content-type: application/json
 Content-length: 199
 
 {
-  "@odata.type": "microsoft.graph.fileAttachment",
+  "@odata.type": "#microsoft.graph.fileAttachment",
   "contentType": "contentType-value",
   "contentLocation": "contentLocation-value",
   "contentBytes": "contentBytes-value",

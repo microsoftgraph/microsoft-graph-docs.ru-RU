@@ -2,12 +2,12 @@
 title: Тип ресурса programControl
 description: В Azure AD access дается обзор компонента, объект элемента управления программа представляет элемент управления, связывание проверки доступа к программе.
 localization_priority: Normal
-ms.openlocfilehash: 82d9263a909fb11e688ffa6b27f0cf92601ae9e9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576558"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29644009"
 ---
 # <a name="programcontrol-resource-type"></a>Тип ресурса programControl
 
@@ -43,7 +43,7 @@ ms.locfileid: "29576558"
 | `status`                 |`String`                | Состояние жизненного цикла элемента управления.                                                 |
 | `createdDateTime`        |`DateTimeOffset`        | Дату и время создания элемента управления программы.                                        |
 | `owner`                  |[удостоверению пользователя](useridentity.md)   | Пользователь, создавший элемент управления программы.                                               |
-| `resource`               | [programResource](programresource.md)       | Ресурс, группы или приложения, входят в целевую этот элемент управления программы проверки доступа.                   |
+| `resource`               |`programResource`       | Ресурс, группы или приложения, входят в целевую этот элемент управления программы проверки доступа.                   |
 
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
@@ -59,7 +59,7 @@ ms.locfileid: "29576558"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

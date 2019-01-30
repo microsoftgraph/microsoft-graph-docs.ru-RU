@@ -1,21 +1,21 @@
 ---
 title: 'пользователь: translateExchangeIds'
-description: Переведите идентификаторы, связанные с Outlook ресурсов форматов.
+description: Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3b09ae9bf6a1cbf1967a900770b07d8c9750ba21
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: a00368c918685f6f94020dbea655232bae58ad57
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571291"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643617"
 ---
 # <a name="user-translateexchangeids"></a>пользователь: translateExchangeIds
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Переведите идентификаторы, связанные с Outlook ресурсов форматов.
+Перевод идентификаторов ресурсов, связанных с Outlook, между форматами.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 |:-----|:------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
@@ -114,11 +114,11 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/testexchangebeta/$metadata#Collection(microsoft.graph.convertIdResult)",
   "value": [
     {
-      "sourceId": "{rest-formatted-id-1}",
+      "sourceId": "{rest-formatted-id-1},
       "targetId": "{rest-immutable-formatted-id-1}"
     },
     {
-      "sourceId": "{rest-formatted-id-2}",
+      "sourceId": "{rest-formatted-id-2},
       "targetId": "{rest-immutable-formatted-id-2}"
     }
   ]

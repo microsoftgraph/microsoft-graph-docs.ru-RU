@@ -4,12 +4,12 @@ description: Представляет защиту объекта листа.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 6f32ad7b1cc25d9a937f2de68f1bd930d92ec8f9
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572936"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29639946"
 ---
 # <a name="worksheetprotection-resource-type"></a>Тип ресурса WorksheetProtection
 
@@ -22,7 +22,7 @@ ms.locfileid: "29572936"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Чтение свойств и связей объекта worksheetProtection.|
+|[Получение объекта WorksheetProtection](../api/worksheetprotection-get.md) | [WorksheetProtection](worksheetprotection.md) |Чтение свойств и связей объекта worksheetProtection.|
 |[Protect](../api/worksheetprotection-protect.md)|Нет|Защита листа. Выдает исключение, если лист защищен.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|Нет|Снятие защиты с листа|
 
@@ -34,7 +34,7 @@ ms.locfileid: "29572936"
 ## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|[workbookWorksheetProtection](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
+|options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -43,16 +43,14 @@ ms.locfileid: "29572936"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-  "options"
+
   ],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbookWorksheetProtection"
+  "@odata.type": "microsoft.graph.worksheetProtection"
 }-->
 
 ```json
 {
-  "protected": true,
-  "options": { "@odata.type": "microsoft.graph.workbookWorksheetProtectionOptions" }
+  "protected": true
 }
 
 ```
