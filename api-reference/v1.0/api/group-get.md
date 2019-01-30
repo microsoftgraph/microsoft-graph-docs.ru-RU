@@ -1,20 +1,20 @@
 ---
 title: Вывод группы
-description: Получение свойств и связей объекта группы.
+description: Получение свойств и связей объекта group.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
-ms.openlocfilehash: 92b9c8de30f0070491d84acf9cfc56225c1a7981
-ms.sourcegitcommit: 7d94b581f7c6dc1995efecf6ee21b604c0b80998
+ms.openlocfilehash: 4954ee99b52d3d932421651d17e6b7a8b906f3bf
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/19/2019
-ms.locfileid: "29353092"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641339"
 ---
 # <a name="get-group"></a>Вывод группы
 Получение свойств и связей объекта группы.
 
-Это действие по умолчанию возвращает только часть всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. См. [пример](#request-2).
+Это действие по умолчанию возвращает только часть всех доступных свойств, как указано в разделе [Свойства](../resources/group.md#properties). Чтобы получить свойства, которые _не_ возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. См. [пример](#request-2) для `$select`. Исключением является свойство **hasMembersWithLicenseErrors**. См. [пример](group-list.md#request-2) использования этого свойства.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -42,7 +42,7 @@ GET /groups/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [group](../resources/group.md) в тексте отклика. Он возвращает параметры по умолчанию, если не используется параметр `$select` для указания конкретных свойств.

@@ -4,12 +4,12 @@ description: Сообщение в папке почтового ящика.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ffcd2bc0b61cd53285110b1700fd789124d893e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573650"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641220"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -33,8 +33,8 @@ ms.locfileid: "29573650"
   "optionalProperties": [
     "attachments",
     "extensions",
-    "singleValueLegacyExtendedProperty",
-    "multiValueLegacyExtendedProperty",
+    "singleValueExtendedProperties",
+    "multiValueExtendedProperties",
     "mentions"
   ],
   "@odata.type": "microsoft.graph.message"
@@ -49,7 +49,7 @@ ms.locfileid: "29573650"
   "ccRecipients": [{"@odata.type": "microsoft.graph.recipient"}],
   "changeKey": "string",
   "conversationId": "string",
-  "conversationIndex": { "type":"String", "format":"base64"},
+  "conversationIndex": "binary",
   "createdDateTime": "String (timestamp)",
   "flag": {"@odata.type": "microsoft.graph.followupFlag"},
   "from": {"@odata.type": "microsoft.graph.recipient"},
@@ -80,8 +80,8 @@ ms.locfileid: "29573650"
   "attachments": [{"@odata.type": "microsoft.graph.attachment"}],
   "extensions": [{"@odata.type": "microsoft.graph.extension"}],
   "mentions": [{"@odata.type": "microsoft.graph.mention"}],
-  "multiValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
-  "singleValueLegacyExtendedProperty": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
+  "multiValueExtendedProperties": [{"@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty"}],
+  "singleValueExtendedProperties": [{"@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty"}]
 }
 
 ```
@@ -130,8 +130,8 @@ ms.locfileid: "29573650"
 |attachments|Коллекция [Attachment](attachment.md)|Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
 |extensions|Коллекция [Extension](extension.md)| Коллекция открытых расширений, определенных для сообщения. Допускается значение null.|
 |mentions|Коллекция [mention](mention.md) | Коллекция упоминаний в сообщении, упорядоченных по свойству **createdDateTime** от новых к старым. По умолчанию запрос `GET` /messages не возвращает это свойство, если к свойству не применен параметр `$expand`.|
-|multiValueLegacyExtendedProperty|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
-|singleValueLegacyExtendedProperty|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 

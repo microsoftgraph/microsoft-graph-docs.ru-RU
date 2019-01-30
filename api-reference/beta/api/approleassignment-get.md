@@ -2,12 +2,12 @@
 title: Получение объекта appRoleAssignment
 description: Получение свойств и связей объекта appRoleAssignment.
 localization_priority: Priority
-ms.openlocfilehash: 610120c2c72b89f5af5555d59b2d58bcc09e5f1d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 35537c45e4f156a0b78ffc708eaa39fec8625754
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29577006"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29640331"
 ---
 # <a name="get-approleassignment"></a>Получение объекта appRoleAssignment
 
@@ -55,12 +55,11 @@ GET /groups/{id}/appRoleAssignments/{id}
 GET https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.appRoleAssignment"
+  "@odata.type": "microsoft.graph.approleassignment"
 } -->
 ```http
 HTTP/1.1 200 OK

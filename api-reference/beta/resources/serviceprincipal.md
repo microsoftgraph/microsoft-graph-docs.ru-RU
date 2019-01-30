@@ -2,12 +2,12 @@
 title: Тип ресурса servicePrincipal
 description: Представляет экземпляр приложения в каталоге. Наследуется от directoryObject.
 localization_priority: Priority
-ms.openlocfilehash: d36a82ae885725387e788cf280442afe09fa63de
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: cd0ac4d440b2e10f935c02393419754989394816
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574189"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641157"
 ---
 # <a name="serviceprincipal-resource-type"></a>Тип ресурса servicePrincipal
 
@@ -34,7 +34,7 @@ ms.locfileid: "29574189"
     "ownedObjects",
     "owners"
   ],
-  "@odata.type": "microsoft.graph.servicePrincipal"
+  "@odata.type": "microsoft.graph.serviceprincipal"
 }-->
 
 ```json
@@ -88,14 +88,14 @@ ms.locfileid: "29574189"
 ## <a name="relationships"></a>Связи
 | Связь | Тип |Описание|
 |:---------------|:--------|:----------|
-|appRoleAssignedTo| [appRoleAssignment](approleassignment.md) |Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
+|appRoleAssignedTo|[appRoleAssignment](approleassignment.md)|Субъекты (пользователи, группы и субъекты-службы), которые назначены для субъекта-службы. Только для чтения.|
 |appRoleAssignments|Коллекция [appRoleAssignment](approleassignment.md)|Приложения, которым назначен субъект-служба. Только для чтения. Допускается значение null.|
 |createdObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталога, созданные субъектом-службой. Только для чтения. Допускается значение null.|
-|memberOf| Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
-|oauth2PermissionGrants| Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Олицетворения пользователя, связанные с субъектом-службой. Только для чтения. Допускается значение null.|
-|ownedObjects| Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Допускается значение null.|
-|owners| Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие субъектом-службой. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Только для чтения. Допускается значение null.|
-|policy| Коллекция [policy](policy.md)|Политики, назначенные субъекту-службе.|
+|memberOf|Коллекция [directoryObject](directoryobject.md)|Роли, в которых участвует субъект-служба. Методы HTTP: GET. Только для чтения. Допускается значение null.|
+|oauth2PermissionGrants|Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md)|Олицетворения пользователя, связанные с субъектом-службой. Только для чтения. Допускается значение null.|
+|ownedObjects|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, принадлежащие субъекту-службе. Только для чтения. Допускается значение null.|
+|owners|Коллекция [directoryObject](directoryobject.md)|Объекты каталогов, владеющие субъектом-службой. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Только для чтения. Допускается значение null.|
+|policy|Коллекция [policy](policy.md)|Политики, назначенные субъекту-службе.|
 
 ## <a name="methods"></a>Методы
 

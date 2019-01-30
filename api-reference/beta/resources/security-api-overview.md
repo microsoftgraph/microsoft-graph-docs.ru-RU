@@ -4,12 +4,12 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: cd55b2d26d7460e7421b9da19658990b53dd7580
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 042c63cfee833a1f9c7493a9e35a6bbb8eb2fbaa
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571697"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643089"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -44,7 +44,7 @@ Microsoft Graph Security API включает указанные ниже клю
 
 ## <a name="secure-score-preview"></a>Оценка безопасности (предварительная версия)
 
-[Оценка безопасности (Майкрософт)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) — это решение аналитики безопасности, обеспечивающее обзор вашего набора решений безопасности и способов его улучшения. С помощью одной оценки можно лучше понять, что сделано для снижения риска в решениях Майкрософт. Также можно сравнить свою оценку с другими организациями и просмотреть ее изменение со временем. Объекты [secureScore](securescores.md) и [secureScoreControlProfile](securescorecontrolprofiles.md) системы безопасности Microsoft Graph помогают обеспечить баланс между требованиями по безопасности и производительности в организации, позволяя совмещать соответствующие функции безопасности. Вы также можете спрогнозировать значение оцени после внедрения функций безопасности.
+[Оценка безопасности (Майкрософт)](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Office-365-Secure-Score-is-now-Microsoft-Secure-Score/ba-p/182358) — это решение аналитики безопасности, обеспечивающее обзор вашего набора решений безопасности и способов его улучшения. С помощью одной оценки можно лучше понять, что сделано для снижения риска в решениях Майкрософт. Также можно сравнить свою оценку с другими организациями и просмотреть ее изменение со временем. Объекты [secureScore](securescores.md) и [secureScoreControlProfiles](securescorecontrolprofiles.md) системы безопасности Microsoft Graph помогают обеспечить баланс между требованиями по безопасности и производительности в организации, позволяя совмещать соответствующие функции безопасности. Вы также можете спрогнозировать значение оцени после внедрения функций безопасности.
 
 ## <a name="common-use-cases"></a>Основные варианты использования
 
@@ -64,7 +64,7 @@ Microsoft Graph Security API включает указанные ниже клю
 
 Microsoft Graph Security API раскрывает новые способы взаимодействия с решениями для обеспечения безопасности от корпорации Майкрософт и партнеров. Чтобы приступить к работе, следуйте указанным ниже инструкциям.
 
-- Подробно изучите [оповещения](alert.md), [secureScore](securescores.md) (предварительная версия) и [secureScoreControlProfile](securescorecontrolprofiles.md) (предварительная версия).
+- Подробно изучите [оповещения](alert.md), [secureScore](securescores.md) (предварительная версия) и [secureScoreControlProfiles](securescorecontrolprofiles.md) (предварительная версия).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). В разделе **Примеры запросов** выберите элемент **Показать другие примеры** и установите категорию безопасности в положение **Вкл.**
 - Попробуйте [подписаться на получение уведомлений](/graph/webhooks) об изменениях объекта.
 
