@@ -3,29 +3,29 @@ title: Создание или замена действия
 description: Создание новой или заменить существующий активности пользователей для вашего приложения. Если вы хотите создать действие пользователя и его связанных с ними **historyItems** в один запрос, можно использовать глубокой вставки.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 1e5a7956ab5ac151613ac3559415b16570a2b087
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4875c54ff6dc0b90f5f25afecedac9d4f5529094
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966687"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643344"
 ---
-# <a name="create-or-replace-an-activity"></a><span data-ttu-id="c3994-104">Создание или замена действия</span><span class="sxs-lookup"><span data-stu-id="c3994-104">Create or replace an activity</span></span>
+# <a name="create-or-replace-an-activity"></a><span data-ttu-id="77819-104">Создание или замена действия</span><span class="sxs-lookup"><span data-stu-id="77819-104">Create or replace an activity</span></span>
 
-<span data-ttu-id="c3994-105">Создание новой или заменить существующий активности пользователей для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="c3994-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="c3994-106">Если вы хотите создать действие пользователя и его связанных с ними **historyItems** в один запрос, можно использовать [глубоко вставки](projectrome-put-activity.md#example-2---deep-insert).</span><span class="sxs-lookup"><span data-stu-id="c3994-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
+<span data-ttu-id="77819-105">Создание новой или заменить существующий активности пользователей для вашего приложения.</span><span class="sxs-lookup"><span data-stu-id="77819-105">Create a new or replace an existing user activity for your app.</span></span> <span data-ttu-id="77819-106">Если вы хотите создать действие пользователя и его связанных с ними **historyItems** в один запрос, можно использовать [глубоко вставки](projectrome-put-activity.md#example-2---deep-insert).</span><span class="sxs-lookup"><span data-stu-id="77819-106">If you'd like to create a user activity and its related **historyItems** in one request, you can use [deep insert](projectrome-put-activity.md#example-2---deep-insert).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="c3994-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c3994-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="77819-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="77819-107">Permissions</span></span>
 
-<span data-ttu-id="c3994-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c3994-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="77819-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="77819-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="c3994-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c3994-110">Permission type</span></span>      | <span data-ttu-id="c3994-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c3994-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="77819-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="77819-110">Permission type</span></span>      | <span data-ttu-id="77819-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="77819-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c3994-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c3994-112">Delegated (work or school account)</span></span> | <span data-ttu-id="c3994-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="c3994-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="c3994-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c3994-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3994-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="c3994-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
-|<span data-ttu-id="c3994-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c3994-116">Application</span></span> | <span data-ttu-id="c3994-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c3994-117">Not supported.</span></span> |
+|<span data-ttu-id="77819-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="77819-112">Delegated (work or school account)</span></span> | <span data-ttu-id="77819-113">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="77819-113">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="77819-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="77819-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="77819-115">UserActivity.ReadWrite.CreatedByApp</span><span class="sxs-lookup"><span data-stu-id="77819-115">UserActivity.ReadWrite.CreatedByApp</span></span>    |
+|<span data-ttu-id="77819-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="77819-116">Application</span></span> | <span data-ttu-id="77819-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="77819-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c3994-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c3994-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="77819-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="77819-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -33,27 +33,27 @@ ms.locfileid: "27966687"
 PUT /me/activities/{appActivityId}
 ```
 
-><span data-ttu-id="c3994-119">**Примечание:** AppActivityId в URL-адрес должен быть URL-безопасными (все символы, за исключением RFC 2396 незарезервированные символы должны быть преобразованы в их шестнадцатеричное представление), но исходного appActivityId не должен быть безопасно URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="c3994-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
+><span data-ttu-id="77819-119">**Примечание:** AppActivityId в URL-адрес должен быть URL-безопасными (все символы, за исключением RFC 2396 незарезервированные символы должны быть преобразованы в их шестнадцатеричное представление), но исходного appActivityId не должен быть безопасно URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="77819-119">**Note:** The appActivityId in the URL needs to be URL-safe (all characters except for RFC 2396 unreserved characters must be converted to their hexadecimal representation), but the original appActivityId does not have to be URL-safe.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="c3994-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c3994-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="77819-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="77819-120">Request headers</span></span>
 
-|<span data-ttu-id="c3994-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c3994-121">Name</span></span> | <span data-ttu-id="c3994-122">Тип</span><span class="sxs-lookup"><span data-stu-id="c3994-122">Type</span></span> | <span data-ttu-id="c3994-123">Описание</span><span class="sxs-lookup"><span data-stu-id="c3994-123">Description</span></span>|
+|<span data-ttu-id="77819-121">Имя</span><span class="sxs-lookup"><span data-stu-id="77819-121">Name</span></span> | <span data-ttu-id="77819-122">Тип</span><span class="sxs-lookup"><span data-stu-id="77819-122">Type</span></span> | <span data-ttu-id="77819-123">Описание</span><span class="sxs-lookup"><span data-stu-id="77819-123">Description</span></span>|
 |:----|:-----|:-----------|
-|<span data-ttu-id="c3994-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="c3994-124">Authorization</span></span> | <span data-ttu-id="c3994-125">string</span><span class="sxs-lookup"><span data-stu-id="c3994-125">string</span></span> | <span data-ttu-id="c3994-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c3994-p104">Bearer {token}. Required.</span></span>|
+|<span data-ttu-id="77819-124">Authorization</span><span class="sxs-lookup"><span data-stu-id="77819-124">Authorization</span></span> | <span data-ttu-id="77819-125">строка</span><span class="sxs-lookup"><span data-stu-id="77819-125">string</span></span> | <span data-ttu-id="77819-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="77819-p104">Bearer {token}. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c3994-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c3994-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="77819-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="77819-128">Request body</span></span>
 
-<span data-ttu-id="c3994-129">В тексте запроса укажите представление JSON объекта [активности](../resources/projectrome-activity.md) .</span><span class="sxs-lookup"><span data-stu-id="c3994-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
+<span data-ttu-id="77819-129">В тексте запроса укажите представление JSON объекта [активности](../resources/projectrome-activity.md) .</span><span class="sxs-lookup"><span data-stu-id="77819-129">In the request body, supply a JSON representation of an [activity](../resources/projectrome-activity.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="c3994-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3994-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="77819-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="77819-130">Response</span></span>
 
-<span data-ttu-id="c3994-131">Успешно завершена, этот метод возвращает `201 Created` код ответа, если действие было создано или `200 OK` при замене действия.</span><span class="sxs-lookup"><span data-stu-id="c3994-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
+<span data-ttu-id="77819-131">Успешно завершена, этот метод возвращает `201 Created` код ответа, если действие было создано или `200 OK` при замене действия.</span><span class="sxs-lookup"><span data-stu-id="77819-131">If successful, this method returns the `201 Created` response code if the activity was created or `200 OK` if the activity was replaced.</span></span>
 
-## <a name="example-1"></a><span data-ttu-id="c3994-132">Пример 1</span><span class="sxs-lookup"><span data-stu-id="c3994-132">Example 1</span></span>
+## <a name="example-1"></a><span data-ttu-id="77819-132">Пример 1</span><span class="sxs-lookup"><span data-stu-id="77819-132">Example 1</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c3994-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3994-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="77819-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="77819-133">Request</span></span>
 
-<span data-ttu-id="c3994-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c3994-134">The following is an example of the request.</span></span>
+<span data-ttu-id="77819-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="77819-134">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -83,7 +83,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false,
+            "addImageQuery": "false",
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -101,9 +101,9 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="c3994-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3994-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="77819-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="77819-135">Response</span></span>
 
-<span data-ttu-id="c3994-136">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c3994-136">The following is an example of the response.</span></span>
+<span data-ttu-id="77819-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="77819-136">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -131,7 +131,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {
@@ -158,11 +158,11 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
 }
 ```
 
-## <a name="example-2---deep-insert"></a><span data-ttu-id="c3994-137">В примере 2 - глубокой insert</span><span class="sxs-lookup"><span data-stu-id="c3994-137">Example 2 - Deep insert</span></span>
+## <a name="example-2---deep-insert"></a><span data-ttu-id="77819-137">В примере 2 - глубокой insert</span><span class="sxs-lookup"><span data-stu-id="77819-137">Example 2 - Deep insert</span></span>
 
-#### <a name="request"></a><span data-ttu-id="c3994-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="c3994-138">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="77819-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="77819-138">Request</span></span>
 
-<span data-ttu-id="c3994-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c3994-139">The following is an example of the request.</span></span>
+<span data-ttu-id="77819-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="77819-139">The following is an example of the request.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -192,7 +192,7 @@ Content-length: 364
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false,
+            "addImageQuery": "false",
         },
         "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
         "backgroundColor": "#ff0000",
@@ -211,15 +211,15 @@ Content-length: 364
         {
             "userTimezone": "Africa/Casablanca",
             "startedDateTime": "2018-02-26T20:54:04.345Z",
-            "lastActiveDateTime": "2018-02-26T20:54:24.345Z",
+            "lastActiveDateTime": "2018-02-26T20:54:24.345Z"
         }
     ]
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="c3994-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="c3994-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="77819-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="77819-140">Response</span></span>
 
-<span data-ttu-id="c3994-141">Ниже приведен пример ответа.</span><span class="sxs-lookup"><span data-stu-id="c3994-141">The following is an example of the response.</span></span>
+<span data-ttu-id="77819-141">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="77819-141">The following is an example of the response.</span></span>
 
 <!-- {
     "blockType": "ignored",
@@ -247,7 +247,7 @@ Location: https://graph.microsoft.com/v1.0/me/activities/14332800362997268276
         "attribution": {
             "iconUrl": "https://www.contoso.com/icon",
             "alternateText": "Contoso, Ltd.",
-            "addImageQuery": false
+            "addImageQuery": "false"
         },
         "backgroundColor": "#ff0000",
         "content": {

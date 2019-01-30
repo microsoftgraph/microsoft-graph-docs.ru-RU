@@ -2,28 +2,28 @@
 title: Тип ресурса itemBody
 description: Представляет свойства основного текста элемента, например сообщения, события или записи группы.
 localization_priority: Normal
-ms.openlocfilehash: f316beda82f292e62d5063f45363e08eeeff7111
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1cf79f78caa7b2772bc44b99c6b9bdc526340a87
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526146"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643194"
 ---
-# <a name="itembody-resource-type"></a><span data-ttu-id="02578-103">Тип ресурса itemBody</span><span class="sxs-lookup"><span data-stu-id="02578-103">itemBody resource type</span></span>
+# <a name="itembody-resource-type"></a><span data-ttu-id="f3403-103">Тип ресурса itemBody</span><span class="sxs-lookup"><span data-stu-id="f3403-103">itemBody resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="02578-104">Представляет свойства основного текста элемента, например сообщения, события или записи группы.</span><span class="sxs-lookup"><span data-stu-id="02578-104">Represents properties of the body of an item, such as a message, event or group post.</span></span>
+<span data-ttu-id="f3403-104">Представляет свойства основного текста элемента, например сообщения, события или записи группы.</span><span class="sxs-lookup"><span data-stu-id="f3403-104">Represents properties of the body of an item, such as a message, event or group post.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="02578-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="02578-105">Properties</span></span>
-| <span data-ttu-id="02578-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="02578-106">Property</span></span>     | <span data-ttu-id="02578-107">Тип</span><span class="sxs-lookup"><span data-stu-id="02578-107">Type</span></span>   |<span data-ttu-id="02578-108">Описание</span><span class="sxs-lookup"><span data-stu-id="02578-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f3403-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f3403-105">Properties</span></span>
+| <span data-ttu-id="f3403-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f3403-106">Property</span></span>     | <span data-ttu-id="f3403-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f3403-107">Type</span></span>   |<span data-ttu-id="f3403-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f3403-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="02578-109">content</span><span class="sxs-lookup"><span data-stu-id="02578-109">content</span></span>|<span data-ttu-id="02578-110">String</span><span class="sxs-lookup"><span data-stu-id="02578-110">String</span></span>|<span data-ttu-id="02578-111">Содержимое элемента.</span><span class="sxs-lookup"><span data-stu-id="02578-111">The content of the item.</span></span>|
-|<span data-ttu-id="02578-112">contentType</span><span class="sxs-lookup"><span data-stu-id="02578-112">contentType</span></span>|<span data-ttu-id="02578-113">String</span><span class="sxs-lookup"><span data-stu-id="02578-113">String</span></span>|<span data-ttu-id="02578-p101">Тип контента. Возможные значения: `Text` и `HTML`.</span><span class="sxs-lookup"><span data-stu-id="02578-p101">The type of the content. Possible values are `Text` and `HTML`.</span></span>|
+|<span data-ttu-id="f3403-109">content</span><span class="sxs-lookup"><span data-stu-id="f3403-109">content</span></span>|<span data-ttu-id="f3403-110">String</span><span class="sxs-lookup"><span data-stu-id="f3403-110">String</span></span>|<span data-ttu-id="f3403-111">Содержимое элемента.</span><span class="sxs-lookup"><span data-stu-id="f3403-111">The content of the item.</span></span>|
+|<span data-ttu-id="f3403-112">contentType</span><span class="sxs-lookup"><span data-stu-id="f3403-112">contentType</span></span>|<span data-ttu-id="f3403-113">String</span><span class="sxs-lookup"><span data-stu-id="f3403-113">String</span></span>|<span data-ttu-id="f3403-p101">Тип контента. Возможные значения: `text` и `HTML`.</span><span class="sxs-lookup"><span data-stu-id="f3403-p101">The type of the content. Possible values are `text` and `HTML`.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="02578-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="02578-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f3403-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f3403-116">JSON representation</span></span>
 
-<span data-ttu-id="02578-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="02578-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="f3403-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f3403-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
