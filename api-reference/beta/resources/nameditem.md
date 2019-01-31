@@ -3,11 +3,11 @@ title: Тип ресурса NamedItem
 description: Представляет определенное имя для диапазона ячеек или значения. Имена могут быть простыми именованными объектами (как показано ниже в столбце "Тип"), объектом диапазона и ссылкой на диапазон. Этот объект может использоваться для получения объекта диапазона, связанного с именами.
 localization_priority: Normal
 ms.openlocfilehash: 5dd093976b2c09ae93c608144c8d6c2b7d7161c2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815374"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649450"
 ---
 # <a name="nameditem-resource-type"></a>Тип ресурса NamedItem
 

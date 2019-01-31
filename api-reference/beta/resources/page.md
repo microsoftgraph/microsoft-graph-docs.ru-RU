@@ -3,11 +3,11 @@ title: Тип ресурса page
 description: Страница в записной книжке OneNote.
 localization_priority: Normal
 ms.openlocfilehash: d8c27cdc144e9b192bd0205f256653ff7f04df5f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519243"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29649451"
 ---
 # <a name="page-resource-type"></a>Тип ресурса page
 
@@ -57,7 +57,7 @@ ms.locfileid: "29519243"
 |links|[PageLinks](pagelinks.md)|Ссылки для открытия страницы. Ссылка `oneNoteClientURL` открывает страницу в клиенте OneNote, если он установлен. Ссылка `oneNoteWebUrl` открывает страницу в OneNote Online. Только для чтения.|
 |order|Int32|Расположение страницы в родительском разделе. Только для чтения.|
 |self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
-|title|String|Заголовок страницы. |
+|title|Строка|Заголовок страницы. |
 
 ## <a name="relationships"></a>Отношения
 | Связь | Тип   |Описание|
