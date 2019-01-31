@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 910af8e2eb87d2e36d39fbf1873477ecfc114c38
-ms.sourcegitcommit: 02a3ae7f3070d38d949158808545003e85ae8fe7
+ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/18/2019
-ms.locfileid: "28726612"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29641283"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -98,14 +98,17 @@ ms.locfileid: "28726612"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Логический| Указывает, могут ли пользователи за пределами организации отправлять сообщения в группу. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select. |
+|assignedLicenses|Коллекция [assignedLicense](assignedlicense.md)|Лицензии, назначенные группе. <br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |autoSubscribeNewMembers|Логический|Указывает, будут ли новые участники группы автоматически подписаны на получение уведомлений по электронной почте. Это свойство можно задать в запросе PATCH для группы. Не задавайте его в первоначальном запросе POST, создающем группу. Значение по умолчанию: **false**. <br><br>Возвращается только с помощью оператора $select.|
 |classification|String|Описывает классификацию для группы (например, незначительное, среднее или значительное влияние на бизнес). Допустимые значения для этого свойства определяются созданием значения [setting](groupsetting.md) ClassificationList на базе [определения шаблона](groupsettingtemplate.md).<br><br>Возвращается по умолчанию.|
 |createdDateTime|DateTimeOffset| Метка времени создания группы. Значение не может изменяться и заполняется автоматически, когда создается группа. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. <br><br>Возвращается по умолчанию. Только для чтения. |
 |description|String|Необязательное описание для группы. <br><br>Возвращается по умолчанию.|
 |displayName|String|Отображаемое имя для группы. Это свойство необходимо при создании группы и не может быть удалено во время обновления. <br><br>Возвращается по умолчанию. Поддерживает параметры $filter и $orderby. |
 |groupTypes|Коллекция String| Указывает тип создаваемой группы. Возможные значения: `Unified` для создания группы Office 365 или `DynamicMembership` для создания динамических групп.  Для остальных типов групп, таких как группы с включенной поддержкой безопасности и группы безопасности с включенной поддержкой электронной почты, это свойство не задается. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
+|hasMembersWithLicenseErrors|Логический|Указывает, есть ли в этой группе участники с ошибками лицензий после группового назначения лицензий. <br><br>Это свойство никогда не возвращается при использовании операции GET. Его можно использовать в качестве аргумента $filter для получения групп, включающих участников с ошибками лицензии (т. е. фильтру для этого свойства присвоено значчение true). См. [пример](../api/group-list.md).|
 |id|String|Уникальный идентификатор группы. <br><br>Возвращается по умолчанию. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
 |isSubscribedByMail|Логический|Указывает, подписан ли вошедший пользователь на получение бесед по электронной почте. Значение по умолчанию: **true**. <br><br>Возвращается только с помощью оператора $select. |
+|licenseProcessingState|String|Указывает состояние назначения лицензии группы для всех участников группы. Значение по умолчанию: **false**. Только для чтения. Возможные значения: `QueuedForProcessing`, `ProcessingInProgress` и `ProcessingComplete`.<br><br>Возвращается только с помощью оператора $select. Только для чтения.|
 |mail|String|SMTP-адрес группы, например "serviceadmins@contoso.onmicrosoft.com". <br><br>Возвращается по умолчанию. Только для чтения. Поддерживает параметр $filter.|
 |mailEnabled|Логический|Указывает, включена ли для этой группы поддержка почты. Если для свойства **securityEnabled** также задано значение **true**, это группа безопасности с включенной поддержкой почты. В противном случае это группа рассылки Microsoft Exchange. <br><br>Возвращается по умолчанию.|
 |mailNickname|String|Почтовый псевдоним для группы (уникальный в организации). Это свойство должно быть указано при создании группы. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
@@ -119,6 +122,7 @@ ms.locfileid: "28726612"
 |securityEnabled|Логический|Указывает, является ли эта группа группой безопасности. Если для свойства **mailEnabled** также задано значение true, это группа безопасности с включенной поддержкой почты. В противном случае это обычная группа безопасности. Для групп Office 365 должно быть задано значение **false**. <br><br>Возвращается по умолчанию. Поддерживает параметр $filter.|
 |unseenCount|Int32|Количество бесед с новыми сообщениями, полученными с момента последнего посещения группы вошедшим в систему пользователем. <br><br>Возвращается только с помощью оператора $select. |
 |visibility|String| Определяет видимость группы Office 365. Возможные значения: `private`, `public` или `hiddenmembership`. Пустые значения считаются общедоступными.  Дополнительные сведения см. в разделе [Параметры видимости группы](#group-visibility-options).<br>Видимость можно настроить только при создании группы. Ее нельзя изменить.<br>Видимость поддерживается только для единых групп. Она не поддерживается для групп безопасности. <br><br>Возвращается по умолчанию.|
+
 
 ### <a name="group-visibility-options"></a>Параметры видимости группы
 
@@ -146,6 +150,7 @@ ms.locfileid: "28726612"
 |groupLifecyclePolicies|Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md)|Коллекция политик жизненного цикла для этой группы. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
 |members|Коллекция [directoryObject](directoryobject.md)| Пользователи и группы, состоящие в этой группе. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Office 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Office 365 и групп безопасности). Допускается значение null.|
+|membersWithLicenseErrors|Коллекция [User](user.md)|Список участников группы с ошибками лицензий после группового назначения лицензий. Только для чтения.|
 |onenote|[Onenote](onenote.md)| Только для чтения.|
 |owners|Коллекция [directoryObject](directoryobject.md)|Владельцы группы. Владельцы — это группа пользователей, которые не являются администраторами и которым разрешено изменять объект. Максимальное количество владельцев: 10. Методы HTTP: GET (поддерживается для всех групп), POST (поддерживается для групп Office 365 и групп безопасности, в том числе с включенной поддержкой почты), DELETE (поддерживается для групп Office 365 и групп безопасности). Допускается значение null.|
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля группы. |
@@ -282,14 +287,17 @@ ms.locfileid: "28726612"
 ```json
 {
   "allowExternalSenders": false,
+  "assignedLicenses": [{"@odata.type": "microsoft.graph.assignedLicense"}],
   "autoSubscribeNewMembers": true,
   "classification": "string",
   "createdDateTime": "String (timestamp)",
   "description": "string",
   "displayName": "string",
   "groupTypes": ["string"],
+  "hasMembersWithLicenseErrors": "Boolean",
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
   "mailNickname": "string",
@@ -312,6 +320,7 @@ ms.locfileid: "28726612"
   "events": [ { "@odata.type": "microsoft.graph.event" }],
   "memberOf": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "members": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
+  "membersWithLicenseErrors": [{"@odata.type": "microsoft.graph.user"}],
   "owners": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "photo": { "@odata.type": "microsoft.graph.profilePhoto" },
   "rejectedSenders": [ { "@odata.type": "microsoft.graph.directoryObject" } ],

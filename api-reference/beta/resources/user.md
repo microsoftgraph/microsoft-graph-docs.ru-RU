@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a75ab891be60c163a57be23e1203ca05949952fe
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 2feb77d02e575d378ad54bde9d10e98a9f5db093
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576481"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643820"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -92,7 +92,8 @@ ms.locfileid: "29576481"
 |city|String|Город, в котором находится пользователь. Поддерживает параметр $filter.|
 |companyName| String | Название организации, с которой связан пользователь. Только для чтения.
 |consentProvidedForMinor|String|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
-|country|Строка|Страна или регион, в котором находится пользователь, например "US" или "UK". Поддерживает параметр $filter.|
+|country|String|Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". Поддерживает параметр $filter.|
+|createdDateTime|DateTimeOffset|Дата и время создания пользователя. Значение не может изменяться и заполняется автоматически при создании сущности. Тип DateTimeOffset представляет сведения о дате и времени с использованием формата ISO 8601 и всегда указывает время в формате UTC. Свойство допускает значение null. Значение null означает, что для пользователя невозможно точно определить время создания. Только для чтения. Поддерживает параметр $filter.|
 |deletedDateTime|DateTimeOffset| Дата и время удаления пользователя. |
 |department|String|Название отдела, в котором работает пользователь. Поддерживает параметр $filter.|
 |displayName|String|Имя пользователя, отображаемое в адресной книге. Это значение обычно является сочетанием имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.|
@@ -115,7 +116,7 @@ ms.locfileid: "29576481"
 |officeLocation|String|Расположение офиса на месте работы пользователя.|
 |onPremisesDistinguishedName|String| Содержит параметры локальной службы Active Directory `distinguished name` или `DN`. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |onPremisesDomainName|String| Содержит локальный параметр `domainFQDN`, также называемый dnsDomainName, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
-|onPremisesExtensionAttributes|[onPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит свойства extensionAttribute 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для пользователей `onPremisesSyncEnabled` этот набор свойств управляется локально и предназначен только для чтения. Для исключительно облачных пользователей (где значением для `onPremisesSyncEnabled` является false) эти свойства можно задать при создании или обновлении. |
+|onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит объекты extensionAttributes 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для пользователей `onPremisesSyncEnabled` этот набор свойств управляется локально и предназначен только для чтения. Для исключительно облачных пользователей (где значением для `onPremisesSyncEnabled` является false) эти свойства можно задать при создании или обновлении. |
 |onPremisesImmutableId|String|Это свойство используется для сопоставления локальной учетной записи Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если в качестве свойства `userPrincipalName` (имени участника-пользователя) используется федеративный домен. **Важно!** В этом свойстве не допускается использование символов **$** и **_**. Поддерживает параметр $filter. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Указывает время последней синхронизации объекта с локальным каталогом, например: "2013-02-16T03:04:54Z". Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
 |onPremisesProvisioningErrors|Коллекция [onPremisesProvisioningError](onpremisesprovisioningerror.md)| Ошибки при использовании продукта синхронизации Майкрософт во время подготовки. |
@@ -125,13 +126,13 @@ ms.locfileid: "29576481"
 |onPremisesUserPrincipalName|String| Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |otherMails|String| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. Поддерживает параметр $filter.|
 |passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением — "DisableStrongPassword". Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение "DisablePasswordExpiration". Эти значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword".|
-|passwordProfile|[passwordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
+|passwordProfile|[PasswordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
 |preferredDataLocation|String|Предпочитаемое расположение данных для пользователя. Дополнительные сведения см. в статье [OneDrive Online с поддержкой нескольких регионов](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-introduction).|
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU".|
 |preferredName|String|Предпочитаемое имя пользователя.|
-|provisionedPlans|Коллекция [provisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение NULL не допускается. |
+|provisionedPlans|Коллекция [ProvisionedPlan](provisionedplan.md)|Планы, подготовленные для пользователя. Только для чтения. Значение null не допускается. |
 |proxyAddresses|Коллекция строк|Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. В выражениях фильтра для свойств с несколькими значениями требуется оператор **any**. Только для чтения. Значение null не допускается. Поддерживает параметр $filter.          |
 |refreshTokensValidFromDateTime|DateTimeOffset| Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [invalidateAllRefreshTokens](../api/user-invalidateallrefreshtokens.md).|
 |responsibilities|Коллекция строк|Список обязанностей пользователя.|
@@ -143,9 +144,9 @@ ms.locfileid: "29576481"
 |surname|String|Фамилия пользователя. Поддерживает параметр $filter.|
 |usageLocation|String|Двухбуквенный код страны (по стандарту ISO 3166). Необходим для пользователей, которым будут назначены лицензии, в связи с законодательным требованием проверять доступность служб в разных странах.  Примеры: "RU", "JP" и "GB". Значение null не допускается. Поддерживает параметр $filter.|
 |userPrincipalName|String|Имя участника-пользователя. Это имя для входа через Интернет по стандарту RFC 822. В соответствии с соглашением оно должно указывать на имя пользователя для электронной почты. Общий формат: псевдоним@домен. При этом домен должен входить в коллекцию проверенных доменов клиента. Это свойство обязательно указывать при создании пользователя. Доступ к проверенным доменам клиента можно получить с помощью свойства **verifiedDomains** объекта [organization](organization.md). Поддерживает параметры $filter и $orderby.
-|userType|Строка|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Member" и "Guest". Поддерживает параметр $filter.          |
+|userType|String|Строковое значение, с помощью которого можно классифицировать типы пользователей в каталоге, например "Участник" и "Гость". Поддерживает параметр $filter.          |
 
-### <a name="legal-age-group-property-definitions"></a>Определения свойств возрастных групп
+### <a name="legal-age-group-property-definitions"></a>Определения свойств юридических возрастных групп
 
 В этом разделе объясняется, как три свойства возрастных групп (`legalAgeGroupClassification`, `ageGroup` и `consentProvidedForMinor`) используются администраторами Azure AD и разработчиками корпоративных приложений для соблюдения нормативных требований, связанных с возрастом.
 
@@ -203,7 +204,7 @@ ms.locfileid: "29576481"
 |events|Коллекция [event](event.md)|События пользователя. По умолчанию отображаются события в стандартном календаре. Только для чтения. Допускается значение null.|
 |extensions|Коллекция объектов [extension](extension.md)|Коллекция открытых расширений, определенных для пользователя. Допускается значение null.|
 |inferenceClassification|[inferenceClassification](inferenceclassification.md)| Классификация релевантности для сообщений пользователя, основанная на явных обозначениях, переопределяющих заданные релевантность или важность. |
-|insights|Коллекция [officeGraphInsights](insights.md)| Только для чтения. Допускается значение null.|
+|insights|Коллекция [insights](insights.md)| Только для чтения. Допускается значение null.|
 |joinedGroups|Коллекция [group](group.md)| Только для чтения. Допускается значение null.|
 |mailFolders|Коллекция [mailFolder](mailfolder.md)| Почтовые папки пользователя. Только для чтения. Допускается значение null.|
 |manager|[directoryObject](directoryobject.md)|Пользователь или контакт, являющийся руководителем пользователя. Только для чтения. (Методы HTTP: GET, PUT, DELETE.)|
@@ -218,8 +219,9 @@ ms.locfileid: "29576481"
 |photo|[profilePhoto](profilephoto.md)| Фотография профиля пользователя. Только для чтения.|
 |photos|Коллекция [Photo](photo.md)| Только для чтения. Допускается значение null.|
 |planner|[plannerUser](planneruser.md)| Выборочные службы Планировщика, доступные пользователю. Только для чтения. Допускается значение null. |
+|sharepoint|[sharepoint](sharepoint.md)| Доступ к сайту SharePoint пользователя. Только для чтения. |
 |scopedRoleMemberOf|Коллекция [scopedRoleMembership](scopedrolemembership.md)| Участие пользователя в административных единицах с ролью в заданной области. Только для чтения. Допускается значение null.|
-|settings|Коллекция [userSettings](user-settings.md)| Только для чтения. Допускается значение null.|
+|settings|Коллекция [settings](user-settings.md)| Только для чтения. Допускается значение null.|
 |registeredDevices|Коллекция [directoryObject](directoryobject.md)|Устройства, зарегистрированные для пользователя. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -324,8 +326,8 @@ ms.locfileid: "29576481"
   "createdObjects": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "directReports": [ { "@odata.type": "microsoft.graph.directoryObject" } ],
   "drive": { "@odata.type": "microsoft.graph.drive" },
-  "insights": [{ "@odata.type": "microsoft.graph.officeGraphInsights" }],
-  "settings": [{ "@odata.type": "microsoft.graph.userSettings" }],
+  "insights": { "@odata.type": "microsoft.graph.officeGraphInsights" },
+  "settings": { "@odata.type": "microsoft.graph.userSettings" },
   "events": [ { "@odata.type": "microsoft.graph.event" } ],
   "extensions": [ { "@odata.type": "microsoft.graph.extension" } ],
   "inferenceClassification": { "@odata.type": "microsoft.graph.inferenceClassification" },

@@ -4,12 +4,12 @@ description: Создание новой команды.
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 3e901225f5a8f94abb61a6b4052b0db2d47865c3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0798ca15e61dcb9522019ba855f5b2e329b97356
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519614"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643848"
 ---
 # <a name="create-team"></a>Создание команды
 
@@ -52,7 +52,7 @@ POST /teams
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example---delegated-permissions"></a>Пример: делегированные разрешения
+### <a name="example-1-delegated-permissions"></a>Пример 1. Делегированные разрешения
 
 Ниже приведен пример минимального запроса. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`.
 
@@ -64,7 +64,7 @@ Content-Type: application/json
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
   "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
+  "description": "My Sample Team’s Description"
 }
 ```
 
@@ -79,9 +79,39 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Пример: создание команды с помощью установленного приложения с несколькими каналами с закрепленными вкладками при использовании делегированных разрешений
+### <a name="example-2-application-permissions"></a>Пример 2. Разрешения для приложения
 
-Ниже приведен запрос с указанием полного набора полезных данных. Клиент может переопределить значения в базовом шаблоне и добавить элементы со значениями массива в пределах, допускаемых правилами проверки для объекта `specialization`.
+Ниже приведен пример минимального запроса с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `owners`.
+
+#### <a name="request"></a>Запрос
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
+  "displayName": "My Sample Team",
+  "description": "My Sample Team’s Description",
+  "owners@odata.bind": [
+    "https://graph.microsoft.com/beta/users('abc123')"
+  ]
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-3-create-a-team-with-an-app-installed-multiple-channels-with-pinned-tabs-using-delegated-permissions"></a>Пример 3. Создание команды с установленным приложением и несколькими каналами с закрепленными вкладками с использованием делегированных разрешений
+
+Ниже приведен запрос с указанием полного набора полезных данных. Клиент может переопределить значения в базовом шаблоне и добавить элементы со значениями массива в пределах, допускаемых правилами проверки для объекта `specialization`. 
 
 #### <a name="request"></a>Запрос
 
@@ -177,9 +207,13 @@ Content-Location: /teams/{teamId}
 }
 ```
 
-### <a name="example---application-permissions"></a>Пример: разрешения для приложений
+### <a name="example-4-create-a-team-with-a-non-standard-base-template-type"></a>Пример 4. Создание команды с использованием нестандартного базового типа шаблона
 
-Ниже приведен минимальный запрос с использованием разрешений для приложения. Исключив другие свойства, клиент неявно принимает значения по умолчанию из готового шаблона, представленного объектом `template`. При отправке запроса с разрешениями для приложения ресурс [user](../resources/user.md) должен быть указан в коллекции `owners`.
+Базовые типы шаблонов — это специальные шаблоны, созданные корпорацией Майкрософт для определенных отраслей. Эти базовые шаблоны зачастую содержат защищаемые приложения, недоступные в свойствах хранилища и команды, которые еще не поддерживаются по отдельности в шаблонах Microsoft Teams.
+
+Чтобы создать команду на основе нестандартного базового шаблона, потребуется изменить значение свойства `template@odata.bind` со `standard` на название этого шаблона.
+
+Дополнительные сведения о поддерживаемых базовых типах шаблонов см. в статье [Начало работы с шаблонами Teams](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates).
 
 #### <a name="request"></a>Запрос
 
@@ -187,12 +221,63 @@ Content-Location: /teams/{teamId}
 POST https://graph.microsoft.com/beta/teams
 Content-Type: application/json
 {
-  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/standard",
-  "displayName": "My Sample Team",
-  "description": "My Sample Team’s Description",
-  "owners@odata.bind": [
-    "https://graph.microsoft.com/beta/users('abc123')"
-  ]
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "displayName": "My Class Team",
+  "description": "My Class Team’s Description"
+}
+```
+
+#### <a name="response"></a>Отклик
+
+```http
+HTTP/1.1 202 Accepted
+Content-Type: application/json
+Location: /teams/{teamId}/operations/{operationId}
+Content-Location: /teams/{teamId}
+{
+}
+```
+
+### <a name="example-5-create-a-team-with-a-non-standard-base-template-type-with-extended-properties"></a>Пример 5. Создание команды с использованием нестандартного базового типа шаблона с расширенными свойствами
+
+Базовые типы шаблонов могут быть расширены с помощью дополнительных свойств. Это позволяет дополнить существующий базовый шаблон дополнительными каналами, приложениями, вкладками и параметрами команды.
+
+Дополнительные сведения о поддерживаемых базовых типах шаблонов и свойствах см. в статье [Начало работы с шаблонами Teams](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates).
+
+#### <a name="request"></a>Запрос
+
+```http
+POST https://graph.microsoft.com/beta/teams
+Content-Type: application/json
+{
+  "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates/educationClass",
+  "displayName": "My Class Team",
+  "description": "My Class Team’s Description",
+  "channels": [
+        {
+            "displayName": "Class Announcements 📢",
+            "isFavoriteByDefault": true
+        },
+        {
+            "displayName": "Homework 🏋️",
+            "isFavoriteByDefault": true,
+        }
+    ],
+    "memberSettings": {
+        "allowCreateUpdateChannels": false,
+        "allowDeleteChannels": false,
+        "allowAddRemoveApps": false,
+        "allowCreateUpdateRemoveTabs": false,
+        "allowCreateUpdateRemoveConnectors": false
+    },
+    "installedApps": [
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.vsts')"
+        },
+        {
+            "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('1542629c-01b3-4a6d-8f76-1938b779e48d')"
+        }
+    ]
 }
 ```
 
@@ -210,11 +295,8 @@ Content-Location: /teams/{teamId}
 ## <a name="see-also"></a>См. также
 
 - [Создание группы с командой](/graph/teams-create-group-and-team)
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/api/team-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Error:{/api-reference/beta/api/team-post.md}:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+}-->

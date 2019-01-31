@@ -4,12 +4,12 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0e8f5a7644e56d1f6f2be08385fc1e9a280828ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
+ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526209"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29643778"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -64,6 +64,7 @@ ms.locfileid: "29526209"
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
 |owners|[user](user.md)| Список владельцев команды. |
+|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
 |template|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. |
 
 ## <a name="json-representation"></a>Представление в формате JSON
