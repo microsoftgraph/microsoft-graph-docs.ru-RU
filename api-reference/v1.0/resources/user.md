@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3eabe2fc411362a8c10337748205aff7a38509bb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 64c8cb0c580af0692ddc4aacca984774bc76ab2f
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642536"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690961"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -49,6 +49,7 @@ ms.locfileid: "29642536"
 |[Список directReports](../api/user-list-directreports.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и контактов, являющихся подчиненными данного пользователя, из свойства навигации directReports.|
 |[Получение руководителя](../api/user-list-manager.md) |[directoryObject](directoryobject.md) | Получение пользователя или контакта, являющегося руководителем пользователя, из свойства навигации manager.|
 |[Список memberOf](../api/user-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и ролей каталога, непосредственным участником которых является пользователь, из свойства навигации memberOf.|
+|[Перечисление транзитивных свойств memberOf](../api/user-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп и ролей каталога, участником которых является пользователь. Эта операция является транзитивной и включает группы, в которых пользователь является вложенным элементом. |
 |[Список ownedDevices](../api/user-list-owneddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, принадлежащих пользователю, из свойства навигации ownedDevices.|
 |[Список ownedObjects](../api/user-list-ownedobjects.md) |Коллекция [directoryObject](directoryobject.md)| Получение объектов каталога, принадлежащих пользователю, из свойства навигации ownedObjects.|
 |[Список registeredDevices](../api/user-list-registereddevices.md) |Коллекция [directoryObject](directoryobject.md)| Получение устройств, зарегистрированных для пользователя, из свойства навигации registeredDevices.|
@@ -84,6 +85,8 @@ ms.locfileid: "29642536"
 |createdDateTime | DateTimeOffset |Дата создания объекта пользователя. |
 |department|String|Название отдела, в котором работает пользователь. Поддерживает параметр $filter.|
 |displayName|String|Отображаемое имя пользователя в адресной книге. Обычно это сочетание имени, отчества и фамилии пользователя. Это свойство необходимо указывать при создании пользователя. Его невозможно удалить при обновлении. Поддерживает параметры $filter и $orderby.|
+|employeeId|String|Идентификатор сотрудника, назначенный пользователю организацией. Поддерживает параметр $filter.|
+|faxNumber|String|Номер факса пользователя.|
 |givenName|String|Простое имя пользователя. Поддерживает параметр $filter.|
 |hireDate|DateTimeOffset|Дата найма пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |id|String|Уникальный идентификатор пользователя. Наследуется от [directoryObject](directoryobject.md). Ключ. Значение null не допускается. Только для чтения.|
@@ -98,6 +101,7 @@ ms.locfileid: "29642536"
 |mobilePhone|String|Основной сотовый телефон пользователя.|
 |mySite|String|URL-адрес личного сайта пользователя.|
 |officeLocation|String|Расположение офиса на месте работы пользователя.|
+|onPremisesDistinguishedName|String| Содержит параметры локальной службы Active Directory `distinguished name` или `DN`. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |onPremisesDomainName|String| Содержит локальный параметр `domainFQDN`, также называемый dnsDomainName, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
 |onPremisesExtensionAttributes|[OnPremisesExtensionAttributes](onpremisesextensionattributes.md)|Содержит объекты extensionAttributes 1–15 для пользователя. Обратите внимание, что отдельные атрибуты расширения нельзя выбирать и фильтровать. Для пользователей `onPremisesSyncEnabled` этот набор свойств управляется локально и предназначен только для чтения. Для исключительно облачных пользователей (где значением для `onPremisesSyncEnabled` является false) эти свойства можно задать при создании или обновлении. |
 |onPremisesImmutableId|String|Это свойство используется для сопоставления локальной учетной записи Active Directory с объектом пользователя Azure AD. Его необходимо указывать при создании учетной записи пользователя в Graph, если в качестве свойства **userPrincipalName** (имени участника-пользователя) используется федеративный домен. **Важно!** В этом свойстве не допускается использование символов **$** и **\_**. Поддерживает параметр $filter.                            |
@@ -107,6 +111,7 @@ ms.locfileid: "29642536"
 |onPremisesSecurityIdentifier|String|Содержит локальный идентификатор безопасности (SID) локальной группы, синхронизированной с облаком. Только для чтения.|
 |onPremisesSyncEnabled|Логическое| Значение **true** указывает, что этот объект синхронизируется из локального каталога. Значение **false** указывает, что этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Значение **null** указывает, что этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения |
 |onPremisesUserPrincipalName|String| Содержит локальный параметр `userPrincipalName`, синхронизированный из локального каталога. Свойство заполняется только для клиентов, синхронизирующих свой локальный каталог с Azure Active Directory через Azure AD Connect. Только для чтения. |
+|otherMails|String| Список дополнительных адресов электронной почты для пользователя. Например: `["bob@contoso.com", "Robert@fabrikam.com"]`. Поддерживает параметр $filter.|
 |passwordPolicies|String|Задает политики паролей для пользователя. Это свойство представляет собой перечисление с единственным возможным значением — "DisableStrongPassword". Оно позволяет использовать менее надежные пароли, чем предусмотрено политикой по умолчанию. Вы также можете указать значение "DisablePasswordExpiration". Эти значения можно указать одновременно. Пример: "DisablePasswordExpiration, DisableStrongPassword".|
 |passwordProfile|[PasswordProfile](passwordprofile.md)|Задает профиль пароля для пользователя. Профиль содержит пароль пользователя. Это свойство обязательно указывать при создании пользователя. Пароль в профиле должен соответствовать минимальным требованиям, указанным в свойстве **passwordPolicies**. По умолчанию требуется надежный пароль.|
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
@@ -118,6 +123,7 @@ ms.locfileid: "29642536"
 |proxyAddresses|Коллекция строк|Пример: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. В выражениях фильтра для свойств с несколькими значениями требуется оператор **any**. Только для чтения. Значение null не допускается. Поддерживает параметр $filter.          |
 |responsibilities|Коллекция строк|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
+|showInAddressList|Boolean|Значение **true**, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение **false**. Если не задано, будет считаться, что присвоено значение **true**. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение **false**.|
 |skills|Коллекция строк|Список навыков пользователя.|
 |state|String|Область, республика, край или округ в адресе пользователя. Поддерживает параметр $filter.|
 |streetAddress|String|Почтовый адрес места работы пользователя.|
@@ -375,6 +381,8 @@ ms.locfileid: "29642536"
   "country": "string",
   "department": "string",
   "displayName": "string",
+  "employeeId": "string",
+  "faxNumber" : "string",
   "givenName": "string",
   "hireDate": "String (timestamp)",
   "id": "string (identifier)",
@@ -389,6 +397,7 @@ ms.locfileid: "29642536"
   "mobilePhone": "string",
   "mySite": "string",
   "officeLocation": "string",
+  "onPremisesDistinguishedName": "string",
   "onPremisesDomainName": "string",
   "onPremisesExtensionAttributes": {"@odata.type": "microsoft.graph.onPremisesExtensionAttributes"},
   "onPremisesImmutableId": "string",
@@ -398,6 +407,7 @@ ms.locfileid: "29642536"
   "onPremisesSecurityIdentifier": "string",
   "onPremisesSyncEnabled": true,
   "onPremisesUserPrincipalName": "string",
+  "otherMails": "string",
   "passwordPolicies": "string",
   "passwordProfile": {"@odata.type": "microsoft.graph.passwordProfile"},
   "pastProjects": ["string"],
@@ -409,6 +419,7 @@ ms.locfileid: "29642536"
   "proxyAddresses": ["string"],
   "responsibilities": ["string"],
   "schools": ["string"],
+  "showInAddressList": true,
   "skills": ["string"],
   "state": "string",
   "streetAddress": "string",

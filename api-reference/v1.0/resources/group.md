@@ -4,12 +4,12 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: 68f3c5d9f1ee8086ce6f008e621feb8ca4598e7f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: aa3dd6974a0e75661b91d155a19bd197d3fe742e
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641283"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690954"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
@@ -41,8 +41,10 @@ ms.locfileid: "29641283"
 |[Список владельцев](../api/group-list-owners.md) |Коллекция [directoryObject](directoryobject.md)| Получение владельцев группы из свойства навигации **owners**.|
 |[Удаление владельца](../api/group-delete-owners.md) | Нет |Удаление владельца из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **owners**.|
 |[Добавление члена](../api/group-post-members.md) |Нет| Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
-|[Список членов](../api/group-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и групп, являющихся непосредственными членами этой группы, из свойства навигации **members**.|
-|[Удаление члена](../api/group-delete-members.md) | Нет |Удаление члена из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
+|[Список членов](../api/group-list-members.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей и групп, являющихся непосредственными участниками этой группы, из свойства навигации **members**.|
+|[Перечисление транзитивных участников](../api/group-list-transitivemembers.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, групп и устройств, являющихся участниками, включая вложенных участников этой группы.|
+|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп, участником которых является пользователь. Эта операция является транзитивной и включает группы, в которых состоит группа. |
+|[Удаление участника](../api/group-delete-members.md) | Нет |Удаление участника из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Коллекция String|Проверка данной группы на членство в списке групп. Это транзитивная функция.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Коллекция String|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция.|
 |[getMemberObjects](../api/group-getmemberobjects.md)|Коллекция String|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция. |
