@@ -1,13 +1,26 @@
 ---
-title: timeZoneStandard значения
-description: " Значение"
-ms.openlocfilehash: d011f204d1439d312c961445a0b1663b6ac8d60c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+title: Значения перечисления
+description: Значения перечисления Microsoft Graph
+ms.openlocfilehash: ab73a185b9e37f99a413486ef4fcdf50bbced7b2
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640982"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690940"
 ---
+### <a name="contactrelationship-values"></a>contactRelationship значения
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|родительский|0|Родительский объект пользователя.|
+|относительное|1| Относительное пользователя.|
+|средство|2| Средство пользователя.|
+|врач|3| Врач пользователя.|
+|опекуном|4| Опекуном пользователя.|
+|дочерние|5| Дочерний элемент пользователя.|
+|другие|6| Не определено отношение к пользователю.|
+|unknownFutureValue|7| Значение маркера для совместимости с будущими версиями.|
+
 ### <a name="timezonestandard-values"></a>timeZoneStandard значения
 
 | Значение
@@ -265,7 +278,7 @@ ms.locfileid: "29640982"
 | Ответственный       | 0
 | Участник | 1
 | Средство чтения      | 2
-| None;        | –1
+| Нет        | –1
 
 
 ### <a name="operationstatus-values"></a>operationStatus значения
@@ -451,13 +464,9 @@ ms.locfileid: "29640982"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>Перечисления API безопасности
-
-# <a name="alertfeedback-enum-type"></a>Тип перечисления alertFeedback
+### <a name="alertfeedback-values"></a>alertFeedback значения
 
 Обратная связь значения оповещения, предоставленные аналитика.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -466,11 +475,7 @@ ms.locfileid: "29640982"
 |falsePositive|2| Оповещение о ложном срабатывании.|
 |benignPositive|3| Оповещение о опасности срабатывание.|
 
-# <a name="filehashtype-enum-type"></a>Тип перечисления fileHashType
-
-Перечисление для типов файлов хэш-функции.
-
-## <a name="members"></a>Элементы
+### <a name="filehashtype-values"></a>fileHashType значения
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -484,11 +489,7 @@ ms.locfileid: "29640982"
 |peSha1|7| Тип PESHA1 хэш-функции.|
 |peSha256|8| Тип PESHA256 хэш-функции.|
 
-# <a name="connectiondirection-enum-type"></a>Тип перечисления connectionDirection
-
-Перечисление для направления сетевого подключения (входящих и исходящих).
-
-## <a name="members"></a>Элементы
+### <a name="connectiondirection-values"></a>connectionDirection значения
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -496,11 +497,7 @@ ms.locfileid: "29640982"
 |входящие данные|1|Входящие подключения.|
 |исходящий|2| Исходящие подключения.|
 
-# <a name="connectionstatus-enum-type"></a>Тип перечисления connectionStatus
-
-Перечисление для состояния подключения.
-
-## <a name="members"></a>Элементы
+### <a name="connectionstatus-values"></a>connectionStatus значения
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -510,11 +507,7 @@ ms.locfileid: "29640982"
 |заблокировано|3| Подключение заблокировано.|
 |failed|4| Сбой подключения.|
 
-# <a name="processintegritylevel-enum-type"></a>Тип перечисления processIntegrityLevel
-
-Возможные целостности уровня значений процесса.
-
-## <a name="members"></a>Элементы
+### <a name="processintegritylevel-values"></a>processIntegrityLevel значения
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -525,11 +518,9 @@ ms.locfileid: "29640982"
 |Высокая|40| Уровень целостности данных — высокий.|
 |system|50| Уровень целостности — системы.|
 
-# <a name="registryhive-enum-type"></a>Тип перечисления registryHive
+### <a name="registryhive-values"></a>registryHive значения
 
 Перечисление для реестра кусты в соответствии с определением [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -541,11 +532,9 @@ ms.locfileid: "29640982"
 |localMachineSystem|5| Куст HKEY_LOCAL_MACHINE\System.|
 |usersDefault|6| HKEY_USERS\\. Куст по умолчанию.|
 
-# <a name="registryoperation-enum-type"></a>Тип перечисления registryOperation
+### <a name="registryoperation-values"></a>registryOperation значения
 
 Операция, изменено имя раздела реестра и/или значение.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -554,11 +543,9 @@ ms.locfileid: "29640982"
 |Изменение|2|Изменение реестра.|
 |delete|3|Удалите реестра.|
 
-# <a name="registryvaluetype-enum-type"></a>Тип перечисления registryValueType
+### <a name="registryvaluetype-values"></a>registryValueType значения
 
 Типы перечисления для значения реестра в соответствии с определением [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -575,11 +562,9 @@ ms.locfileid: "29640982"
 |qwordlittleEndian|10| Тип значения реестра REG_QWORD_LITTLE_ENDIAN.|
 |sz|11| Тип значения реестра REG_SZ.|
 
-# <a name="alertseverity-enum-type"></a>Тип перечисления alertSeverity
+### <a name="alertseverity-values"></a>alertSeverity значения
 
 Перечисление серьезность оповещения.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -589,11 +574,9 @@ ms.locfileid: "29640982"
 |medium|3| Уровень серьезности: medium.|
 |Высокая|4| Высокий уровень серьезности.|
 
-# <a name="alertstatus-enum-type"></a>Тип перечисления alertStatus
+### <a name="alertstatus-values"></a>alertStatus значения
 
 Возможные значения статуса оповещения жизненного цикла (рабочей области).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -602,11 +585,9 @@ ms.locfileid: "29640982"
 |inProgress|20|Оповещение о находится в стадии разработки.|
 |Разрешить|30|Оповещение о решена.|
 
-# <a name="emailrole-enum-type"></a>Тип перечисления emailRole
+### <a name="emailrole-values"></a>emailRole значения
 
 Возможные значения для роли электронной почты.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -614,11 +595,9 @@ ms.locfileid: "29640982"
 |sender|1|Отправитель сообщения электронной почты.|
 |recipient|2|Получатель электронной почты.|
 
-# <a name="logontype-enum-type"></a>Тип перечисления logonType
+### <a name="logontype-values"></a>logonType значения
 
 Возможные значения для метода вход пользователя.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -629,11 +608,9 @@ ms.locfileid: "29640982"
 |batch|3| Вход в систему является пакета.|
 |service|4| Вход в систему — службы.|
 
-# <a name="useraccountsecuritytype-enum-type"></a>Тип перечисления userAccountSecurityType
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType значения
 
 Возможные значения для типы учетных записей пользователей (членство в группе) для определения Windows.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|

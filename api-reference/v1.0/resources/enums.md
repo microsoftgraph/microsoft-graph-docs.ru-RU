@@ -1,14 +1,27 @@
 ---
-title: timeZoneStandard значения
-description: " Значение"
+title: Значения перечисления
+description: Значения перечисления Microsoft Graph.
 localization_priority: Normal
-ms.openlocfilehash: 6f9a08a7f20ff9b4f5463c6d7e4877568c49eee1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 8022af214f9de374fcb7bc384a5557eb5625ede9
+ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825734"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690947"
 ---
+### <a name="contactrelationship-values"></a>contactRelationship значения
+
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|родительский|0|Родительский объект пользователя.|
+|относительное|1| Относительное пользователя.|
+|средство|2| Средство пользователя.|
+|врач|3| Врач пользователя.|
+|опекуном|4| Опекуном пользователя.|
+|дочерние|5| Дочерний элемент пользователя.|
+|другие|6| Не определено отношение к пользователю.|
+|unknownFutureValue|7| Значение маркера для совместимости с будущими версиями.|
+
 ### <a name="timezonestandard-values"></a>timeZoneStandard значения
 
 | Значение
@@ -19,7 +32,7 @@ ms.locfileid: "27825734"
 
 ### <a name="freebusystatus-values"></a>freeBusyStatus значения
 
-| Член            |Значение
+| Элемент            |Значение
 |:------------------|:-------
 | Бесплатная загрузка              | 0
 | под вопросом         | 1
@@ -42,7 +55,7 @@ ms.locfileid: "27825734"
 
 | Значение
 |:-------------------------
-| Нет
+| none
 | contactsOnly
 | all
 
@@ -58,7 +71,7 @@ ms.locfileid: "27825734"
 
 ### <a name="calendarcolor-values"></a>calendarColor значения
 
-| Член     | Значение
+| Элемент     | Значение
 |:-----------|:----------
 | Авто       | –1
 | цвет lightBlue  | 0
@@ -126,7 +139,7 @@ ms.locfileid: "27825734"
 |:---------------------
 | student
 | teacher
-| Нет
+| none
 | unknownFutureValue
 
 
@@ -134,7 +147,7 @@ ms.locfileid: "27825734"
 
 | Значение
 |:-----------------
-| Нет
+| none
 | meetingRequest
 | meetingCancelled
 | meetingAccepted
@@ -166,7 +179,7 @@ ms.locfileid: "27825734"
 | deviceDefault
 | баннер
 | модальный
-| Нет
+| none
 
 ### <a name="deviceenrollmentfailurereason-values"></a>deviceEnrollmentFailureReason значения
 
@@ -237,9 +250,9 @@ ms.locfileid: "27825734"
 
 ### <a name="onenoteuserrole-values"></a>onenoteUserRole значения
 
-| Член      | Значение
+| Элемент      | Значение
 |:------------|:------------
-| Owner       | 0
+| Ответственный       | 0
 | Участник | 1
 | Средство чтения      | 2
 | Нет        | –1
@@ -270,7 +283,7 @@ ms.locfileid: "27825734"
 | Значение
 |:-------------------------
 | After
-| Прежде чем
+| Before
 
 
 ### <a name="phonetype-values"></a>phoneType значения
@@ -279,7 +292,7 @@ ms.locfileid: "27825734"
 |:-------------------------
 | Домашняя страница
 | Business
-| мобильных устройств
+| mobile
 | другие
 | Помощник по
 | Домашний факс
@@ -368,7 +381,7 @@ ms.locfileid: "27825734"
 
 | Значение
 |:-------------------------
-| Нет
+| none
 | organizer
 | tentativelyAccepted
 | принято
@@ -399,9 +412,9 @@ ms.locfileid: "27825734"
 
 ### <a name="categorycolor-values"></a>categoryColor значения
 
-| Член   |Значение    
+| Элемент   |Значение    
 |:---------|:--------
-| Нет     | –1      
+| none     | –1      
 | preset0  | 0       
 | preset1  | 1       
 | preset2  | 2       
@@ -428,13 +441,9 @@ ms.locfileid: "27825734"
 | preset23 | 23      
 | preset24 | 24      
 
-# <a name="security-api-enums"></a>Перечисления API безопасности
-
-# <a name="alertfeedback-enum-type"></a>Тип перечисления alertFeedback
+### <a name="alertfeedback-values"></a>alertFeedback значения
 
 Обратная связь значения оповещения, предоставленные аналитика.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -443,11 +452,9 @@ ms.locfileid: "27825734"
 |falsePositive|2| Оповещение о ложном срабатывании.|
 |benignPositive|3| Оповещение о опасности срабатывание.|
 
-# <a name="filehashtype-enum-type"></a>Тип перечисления fileHashType
+### <a name="filehashtype-values"></a>fileHashType значения
 
 Перечисление для типов файлов хэш-функции.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -461,11 +468,9 @@ ms.locfileid: "27825734"
 |peSha1|7| Тип PESHA1 хэш-функции.|
 |peSha256|8| Тип PESHA256 хэш-функции.|
 
-# <a name="connectiondirection-enum-type"></a>Тип перечисления connectionDirection
+### <a name="connectiondirection-values"></a>connectionDirection значения
 
 Перечисление для направления сетевого подключения (входящих и исходящих).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -473,11 +478,9 @@ ms.locfileid: "27825734"
 |входящие данные|1|Входящие подключения.|
 |исходящий|2| Исходящие подключения.|
 
-# <a name="connectionstatus-enum-type"></a>Тип перечисления connectionStatus
+### <a name="connectionstatus-values"></a>connectionStatus значения
 
 Перечисление для состояния подключения.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -487,11 +490,9 @@ ms.locfileid: "27825734"
 |заблокировано|3| Подключение заблокировано.|
 |failed|4| Сбой подключения.|
 
-# <a name="processintegritylevel-enum-type"></a>Тип перечисления processIntegrityLevel
+### <a name="processintegritylevel-values"></a>processIntegrityLevel значения
 
 Возможные целостности уровня значений процесса.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -502,11 +503,9 @@ ms.locfileid: "27825734"
 |Высокая|40| Уровень целостности данных — высокий.|
 |system|50| Уровень целостности — системы.|
 
-# <a name="registryhive-enum-type"></a>Тип перечисления registryHive
+### <a name="registryhive-values"></a>registryHive значения
 
 Перечисление для реестра кусты в соответствии с определением [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -518,11 +517,9 @@ ms.locfileid: "27825734"
 |localMachineSystem|5| Куст HKEY_LOCAL_MACHINE\System.|
 |usersDefault|6| HKEY_USERS\\. Куст по умолчанию.|
 
-# <a name="registryoperation-enum-type"></a>Тип перечисления registryOperation
+### <a name="registryoperation-values"></a>registryOperation значения
 
 Операция, изменено имя раздела реестра и/или значение.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -531,11 +528,9 @@ ms.locfileid: "27825734"
 |Изменение|2|Изменение реестра.|
 |delete|3|Удалите реестра.|
 
-# <a name="registryvaluetype-enum-type"></a>Тип перечисления registryValueType
+### <a name="registryvaluetype-values"></a>registryValueType значения
 
 Типы перечисления для значения реестра в соответствии с определением [https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -547,16 +542,14 @@ ms.locfileid: "27825734"
 |expandSz|5| Тип значения реестра REG_EXPAND_SZ.|
 |ссылка|6| Тип значения реестра REG_LINK.|
 |multiSz|7| Тип значения реестра REG_MULTI_SZ.|
-|Нет|8| Тип значения реестра REG_NONE.|
+|none|8| Тип значения реестра REG_NONE.|
 |QWORD|9| Тип значения реестра REG_QWORD интерфейса.|
 |qwordlittleEndian|10| Тип значения реестра REG_QWORD_LITTLE_ENDIAN.|
 |sz|11| Тип значения реестра REG_SZ.|
 
-# <a name="alertseverity-enum-type"></a>Тип перечисления alertSeverity
+### <a name="alertseverity-values"></a>alertSeverity значения
 
 Перечисление серьезность оповещения.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -566,11 +559,9 @@ ms.locfileid: "27825734"
 |medium|3| Уровень серьезности: medium.|
 |Высокая|4| Высокий уровень серьезности.|
 
-# <a name="alertstatus-enum-type"></a>Тип перечисления alertStatus
+### <a name="alertstatus-values"></a>alertStatus значения
 
 Возможные значения статуса оповещения жизненного цикла (рабочей области).
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -579,23 +570,18 @@ ms.locfileid: "27825734"
 |inProgress|20|Оповещение о находится в стадии разработки.|
 |Разрешить|30|Оповещение о решена.|
 
-# <a name="emailrole-enum-type"></a>Тип перечисления emailRole
-
+### <a name="emailrole-values"></a>emailRole значения
 Возможные значения для роли электронной почты.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|0|Неизвестная роль.|
 |sender|1|Отправитель сообщения электронной почты.|
-|Получатель|2|Получатель электронной почты.|
+|recipient|2|Получатель электронной почты.|
 
-# <a name="logontype-enum-type"></a>Тип перечисления logonType
+### <a name="logontype-values"></a>logonType значения
 
 Возможные значения для метода вход пользователя.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
@@ -606,11 +592,9 @@ ms.locfileid: "27825734"
 |batch|3| Вход в систему является пакета.|
 |service|4| Вход в систему — службы.|
 
-# <a name="useraccountsecuritytype-enum-type"></a>Тип перечисления userAccountSecurityType
+### <a name="useraccountsecuritytype-values"></a>userAccountSecurityType значения
 
 Возможные значения для типы учетных записей пользователей (членство в группе) для определения Windows.
-
-## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
