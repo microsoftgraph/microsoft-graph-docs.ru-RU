@@ -4,12 +4,12 @@ description: Обновляет свойства указанной вкладк
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fcfbf2e0b3ce44e91f709645108abe90ea781f0d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: ee0de37fbf5c29399136625431a164cf50eceda6
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573622"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735567"
 ---
 # <a name="update-tab"></a>Вкладка "обновления"
 
@@ -27,7 +27,7 @@ ms.locfileid: "29573622"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений                            | Group.ReadWrite.All                         |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,7 +44,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите представление JSON объекта [вкладки](../resources/teamstab.md) .
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
@@ -57,17 +57,17 @@ Content-type: application/json
 Content-length: 211
 
 {
-  "name": "My Contoso Tab - updated"
+  "displayName": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 ```http
 HTTP/1.1 200 Success
 Content-type: application/json
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
+  "displayName": "My Contoso Tab - updated",
   "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-[Настройка типов встроенную вкладку](/graph/teams-configuring-builtin-tabs)
+[Настройка встроенных типов вкладок](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

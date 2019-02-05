@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Синхронизация содержимого ресурса drive
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 14cc73d9e90c71815e6c72047fe78bf2b325abdd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 17dc3a718260a5a40f1b9b8e778247354085f711
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525320"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735588"
 ---
 # <a name="track-changes-for-a-drive"></a>Отслеживание изменений для Drive
 
@@ -208,11 +208,22 @@ Content-type: application/json
 * Свойство `parentReference` элементов не включает значение **path**. Это вызвано тем, что при переименовании папки ее потомки не возвращаются с помощью **delta**. **При использовании delta следует всегда отслеживать элементы по идентификатору**.
 * В OneDrive для бизнеса и SharePoint функция `delta` поддерживается только для папки `root`.
 
-* Функция delta не возвращает следующие свойства ресурса DriveItem:
+* Запрос дельты вернет некоторые свойства DriveItem, в зависимости от операции и тип службы, как показано в следующих таблицах.
 
-* **cTag**;
-* **lastModifiedBy**;
-* **size**.
+    **OneDrive для бизнеса**;
+    
+    | Тип операции | Свойства опускается, если по запросу дельты |
+    |---------|----------|
+    | Создание и изменение | `ctag`, `lastModifiedBy` |
+    | Delete | `ctag`, `lastModifiedBy`, `name` |
+
+
+    **OneDrive (получатель)**
+    
+    | Тип операции | Свойства опускается, если по запросу дельты |
+    |---------|----------|
+    | Создание и изменение | Н/д |
+    | Delete | `ctag`, `size` |
 
 ## <a name="error-responses"></a>Ответы с ошибками
 
