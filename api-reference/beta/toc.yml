@@ -6645,13 +6645,13 @@ items:
                 href: resources/program.md
                 items:
                   - name: Create
-                    href: api/program-list.md
+                    href: api/program-create.md
                   - name: Delete
-                    href: api/program-list.md
+                    href: api/program-delete.md
                   - name: Список
                     href: api/program-list.md
                   - name: Update
-                    href: api/program-list.md
+                    href: api/program-update.md
                   - name: Список элементов управления
                     href: api/program-listcontrols.md
               - name: Программа управления
