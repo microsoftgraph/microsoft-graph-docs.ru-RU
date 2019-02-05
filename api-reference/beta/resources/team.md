@@ -4,12 +4,12 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 6ed8b298336563d2b07ce2d6a83b90c9400fe53f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 80283edd8d0a4ea2f9abca2a51fda3f96752d96e
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643778"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735602"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -51,6 +51,7 @@ ms.locfileid: "29643778"
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| Видимость группы и команды. Значение по умолчанию: Public. |
 |funSettings|[teamFunSettings](teamfunsettings.md) |Параметры для настройки использования Giphy, мемов и наклеек в команде.|
 |guestSettings|[teamGuestSettings](teamguestsettings.md) |Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.|
+|internalId | string | Уникальный идентификатор для команды, используемый в нескольких местах, например в журнале аудита или [API действий управления Office 365](https://docs.microsoft.com/ru-RU/office/office-365-management-api/office-365-management-activity-api-reference). |
 |isArchived|Boolean|Находится ли команда в режиме только для чтения. |
 |memberSettings|[teamMemberSettings](teammembersettings.md) |Параметры для настройки того, могут ли участники выполнять определенные действия, например создавать каналы и добавлять ботов в команде.|
 |messagingSettings|[teamMessagingSettings](teammessagingsettings.md) |Параметры для настройки обмена сообщениями и упоминаний в команде.|
@@ -83,6 +84,7 @@ ms.locfileid: "29643778"
   "memberSettings": {"@odata.type": "microsoft.graph.teamMemberSettings"},
   "messagingSettings": {"@odata.type": "microsoft.graph.teamMessagingSettings"},
   "funSettings": {"@odata.type": "microsoft.graph.teamFunSettings"},
+  "internalId": "19:...big.number...@thread.skype",
   "isArchived": false,
   "webUrl": "https://...longUrl..."
 }

@@ -2,12 +2,12 @@
 title: Тип ресурса chatMessage
 description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 localization_priority: Priority
-ms.openlocfilehash: 98b9918d5763d6003a3c9a177057abe2e7b415ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ef91281eff0cc61f992f659bd33debec03841bb4
+ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517969"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29735581"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -34,7 +34,7 @@ ms.locfileid: "29517969"
 |messageType|String|Тип сообщения. Поддерживаемые в настоящее время значения: message, chatEvent, Typing|
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения|
-|isDeleted|boolean|Представляет обратимое удаление сообщения|
+|deleted|Boolean|Указывает, удалено ли сообщение с возможностью восстановления|
 |deletedDateTime|dateTimeOffset|Только для чтения. Метка времени удаления сообщения |
 |subject|string|Строка темы сообщения. Необязательное|
 |body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Возвращает неформатированный текст по умолчанию. Приложение может выбрать формат HTML в составе параметров запроса|
@@ -53,7 +53,7 @@ ms.locfileid: "29517969"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "isDeleted",
+    "deleted",
     "deletedDateTime",
     "attachments",
     "importance",
