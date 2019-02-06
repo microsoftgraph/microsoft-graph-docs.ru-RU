@@ -4,12 +4,12 @@ description: Сообщение в папке почтового ящика.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 6aae5af68f055c8d10c48024ff8db083a51451da
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: b842fafe3ac1ef79a1ad211d30ca7acabbe5faa4
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641220"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745540"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -35,7 +35,9 @@ ms.locfileid: "29641220"
     "extensions",
     "singleValueExtendedProperties",
     "multiValueExtendedProperties",
-    "mentions"
+    "mentions",
+
+    "internetMessageHeaders"
   ],
   "@odata.type": "microsoft.graph.message"
 }-->
@@ -103,7 +105,7 @@ ms.locfileid: "29641220"
 |id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Возможные значения: `focused`, `other`.|
-|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, определенных документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор содержит заголовки сообщений, указывающие сетевой путь, пройденный сообщением от отправителя до получателя. Он также может содержать настраиваемые заголовки сообщений, содержащие данные приложения для сообщения. |
+|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, определенных документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор содержит заголовки сообщений, указывающие сетевой путь, пройденный сообщением от отправителя до получателя. Он также может содержать настраиваемые заголовки сообщений, содержащие данные приложения для сообщения. <br><br> Возвращается только при применении параметра запроса `$select`. Только для чтения.|
 |internetMessageId | String | Идентификатор сообщения в формате, установленном документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Можно обновить, только если параметр **isDraft** имеет значение true.|
 |isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
@@ -190,4 +192,4 @@ ms.locfileid: "29641220"
     "Error: /api-reference/beta/resources/message.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
   ]
 }
--->
+

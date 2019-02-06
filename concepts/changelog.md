@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c6cb4b23e6fa383074a0f1ff377060b4cdd9403f
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 8ab58d47fc40434c17d6adf181724823e2f27da7
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735623"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745596"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,12 @@ ms.locfileid: "29735623"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="february-2019"></a>Февраль 2019 г.
+
+### <a name="directory-apis"></a>API каталогов
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+|Изменение |Бета-версия и версия 1.0| Обновлено свойство **companyName** ресурса [user](/graph/api/resources/user?view=graph-rest-v1.0) для обеспечения возможности записи.|
 
 ### <a name="education-apis"></a>API для образования
 

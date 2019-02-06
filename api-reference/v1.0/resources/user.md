@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 64c8cb0c580af0692ddc4aacca984774bc76ab2f
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: 735ed7688dec1ef8cd79d9590981d0c3793ea996
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690961"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745568"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -79,7 +79,7 @@ ms.locfileid: "29690961"
 |birthday|DateTimeOffset|День рождения пользователя. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |businessPhones|Коллекция строк|Номера телефонов пользователя. ПРИМЕЧАНИЕ. Несмотря на то что это коллекция строк, в качестве этого свойства можно указать только одно число.|
 |city|String|Город, в котором находится пользователь. Поддерживает параметр $filter.|
-|companyName | String | Название организации, с которой связан пользователь. Только для чтения. |
+|companyName | String | Название организации, с которой связан пользователь. Это свойство может быть полезно для описания компании внешнего пользователя. |
 |consentProvidedForMinor|String|Устанавливает, получено ли согласие для несовершеннолетних. Допустимые значения: `null`, `granted`, `denied` и `notRequired`. Дополнительные сведения см. в разделе [Определения свойств юридических возрастных групп](#legal-age-group-property-definitions).|
 |country|String|Страна или регион, в котором находится пользователь, например "США" или "Соединенное Королевство". Поддерживает параметр $filter.|
 |createdDateTime | DateTimeOffset |Дата создания объекта пользователя. |

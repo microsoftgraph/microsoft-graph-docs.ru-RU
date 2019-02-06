@@ -4,19 +4,18 @@ description: Представляет группу Azure Active Directory (Azure
 localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
-ms.openlocfilehash: ef94dc2b6fc6b86e3cae810dd25167b2a6eda8c4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: e350ebe21b9db1f4e0b9b954a6621a1d26e81d29
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641766"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745561"
 ---
 # <a name="group-resource-type"></a>Тип ресурса group
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет группу Azure Active Directory (Azure AD), которая может быть группой Office 365, командой в Microsoft Teams, группой безопасности или динамической группой.
-Наследуется от [directoryObject](directoryobject.md).
+Представляет группу Azure Active Directory (Azure AD), которая может быть группой Office 365, командой в Microsoft Teams, группой безопасности или динамической группой. Наследуется от [directoryObject](directoryobject.md).
 
 Чтобы повысить производительность, операции [create](../api/group-post-groups.md), [get](../api/group-get.md) и [list](../api/group-list.md) возвращают только подмножество часто используемых свойств по умолчанию. Эти свойства _по умолчанию_ указаны в разделе [Свойства](#properties). Чтобы получить любые свойства, которые не возвращаются по умолчанию, укажите их в параметре запроса OData `$select`. См. [пример](../api/group-get.md#request-2).
 
@@ -47,11 +46,11 @@ ms.locfileid: "29641766"
 |[Добавление участника](../api/group-post-members.md) |[directoryObject](directoryobject.md)| Добавление пользователя или группы в данную группу путем помещения в свойство навигации **members** (поддерживается только для групп безопасности, в том числе с включенной поддержкой почты).|
 |[Удаление участника](../api/group-delete-members.md) | Нет |Удаление члена из группы Office 365 или группы безопасности (в том числе с включенной поддержкой почты) с помощью свойства навигации **members**. Вы можете удалять пользователей или другие группы. |
 |[Список memberOf](../api/group-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Получение групп и административных единиц, непосредственным участником которых является группа, из свойства навигации memberOf.|
-|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп и административных единиц, в которых состоит пользователь. Эта операция является транзитивной и включает группы, в которых состоит группа. |
+|[Перечисление транзитивных свойств memberOf](../api/group-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Перечисление групп и административных единиц, в которых состоит пользователь. Эта операция является транзитивной и включает группы, в которых эта группа является вложенным элементом. |
 |[checkMemberGroups](../api/group-checkmembergroups.md)|Коллекция String|Проверка участия в списке групп. Это транзитивная функция.|
 |[getMemberGroups](../api/group-getmembergroups.md)|Коллекция String|Возврат всех групп, в которых состоит эта группа. Это транзитивная функция.|
 |[getMemberObjects](../api/group-getmemberobjects.md)|Коллекция String|Возвращение всех групп и административных единиц, в которых состоит группа. Это транзитивная функция. |
-|[Создание параметра](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Создание объекта setting на основе directorySettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. В случае этой операции могут использоваться только шаблоны специально для групп.|
+|[Создание параметра](../api/directorysetting-post-settings.md) | [directorySetting](directorysetting.md) |Создание объекта setting на основе directorySettingTemplate. POST-запрос должен предоставлять объекты settingValue для всех параметров, определенных в шаблоне. Для этой операции могут использоваться только специальные шаблоны для групп.|
 |[Получение параметра](../api/directorysetting-get.md) | [directorySetting](directorysetting.md) |Считывание свойств определенного объекта setting.|
 |[Перечисление параметров](../api/directorysetting-list.md) | Коллекция [directorySetting](directorysetting.md) |Перечисление свойств всех объектов setting.|
 |[Обновление параметра](../api/directorysetting-update.md) | [directorySetting](directorysetting.md)  |Обновление объекта setting. |
@@ -180,22 +179,38 @@ ms.locfileid: "29641766"
   "blockType": "resource",
   "optionalProperties": [
     "acceptedSenders",
-    "appRoleAssignments",
     "calendar",
     "calendarView",
     "conversations",
     "createdOnBehalfOf",
     "drive",
+    "drives",
+    "endpoints",
     "events",
     "extensions",
+    "groupLifecyclePolicies",
     "memberOf",
     "members",
+    "membersWithLicenseErrors",
     "onenote",
     "owners",
     "photo",
-    "photos",    
+    "photos",
+    "planner",    
     "rejectedSenders",
-    "threads"
+    "settings",
+    "sites",
+    "threads",
+
+    "allowExternalSenders",
+    "assignedLicenses",
+    "autoSubscribeNewMembers",
+    "hasMembersWithLicenseErrors",
+    "isSubscribedByMail",
+    "licenseProcessingState",
+    "unseenConversationsCount",
+    "unseenCount",
+    "unseenMessagesCount"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.group"

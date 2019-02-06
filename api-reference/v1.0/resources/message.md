@@ -4,12 +4,12 @@ description: Сообщение в mailFolder.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ea66839fe756fc6ecd57008c775fd20a9a23633a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
+ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966456"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29745554"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -17,9 +17,9 @@ ms.locfileid: "27966456"
 
 Этот ресурс поддерживает:
 
-- Добавление собственных данных в качестве настраиваемых заголовков сообщений Интернета. Добавление пользовательских заголовков только при создании сообщения и назвать их начинающиеся с «x-». После отправки сообщения не может изменить заголовки. Чтобы получить заголовки сообщений, применение `$select` параметр в [сообщение](../api/message-get.md) операции запроса.
-- Добавление данные как настраиваемые свойства в качестве [расширения](/graph/extensibility-overview).
-- Подписка на [уведомления об изменении](/graph/webhooks).
+- добавление собственных данных как настраиваемых заголовков сообщений Интернета. Добавляйте настраиваемые заголовки только при создании сообщения и выбирайте для них имя, начинающееся с "x-". После отправки сообщения невозможно изменить заголовки. Чтобы получить заголовки сообщения, примените параметр запроса `$select` в операции [получения сообщения](../api/message-get.md);
+- добавление собственных данных как настраиваемых свойств в виде [расширений](/graph/extensibility-overview);
+- подписку на [уведомления об изменениях](/graph/webhooks);
 - отслеживание дополнений, удалений и обновлений с помощью [запроса изменений](/graph/delta-query-overview) (функция [delta](../api/message-delta.md)).
 
 ## <a name="methods"></a>Методы
@@ -59,7 +59,7 @@ ms.locfileid: "27966456"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
-|body|[itemBody](itembody.md)|Текст сообщения. Она может быть в формате HTML или текст. Узнайте о [безопасном HTML в тексте сообщения](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
+|body|[itemBody](itembody.md)|Текст сообщения. В формате HTML или текстовом формате. Сведения о [надежном формате HTML в тексте сообщения](/graph/outlook-create-send-messages#reading-messages-with-control-over-the-body-format-returned).|
 |bodyPreview|String|Первые 255 символов в тексте сообщения. В текстовом формате.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
@@ -67,22 +67,22 @@ ms.locfileid: "27966456"
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
-|from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактический почтового ящика, используемого. Узнать больше о [параметр из свойства отправителя и](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
+|from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении. Это свойство не включает встроенные вложения, поэтому, если сообщение содержит только встроенные вложения, это свойство имеет значение false. Чтобы проверить наличие встроенных вложений, проанализируйте свойство **body** на наличие атрибута `src`, например `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`.|
 |id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|
 |importance|importance| Важность сообщения: `Low`, `Normal`, `High`.|
-|inferenceClassification | inferenceClassificationType | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
-|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовки сообщений, определенные в [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор включает заголовки сообщений, указывая сетевой путь, по сообщение от отправителя получателю. Он также может содержать заголовки настраиваемого сообщения, в которых содержатся данные приложения для сообщения. |
+|inferenceClassification | inferenceClassificationType | Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Допустимые значения: `focused` или `other`. |
+|internetMessageHeaders | Коллекция [internetMessageHeader](internetmessageheader.md) | Коллекция заголовков сообщений, определенных документом [RFC5322](https://www.ietf.org/rfc/rfc5322.txt). Набор содержит заголовки сообщений, указывающие сетевой путь, пройденный сообщением от отправителя до получателя. Он также может содержать настраиваемые заголовки сообщений, содержащие данные приложения для сообщения. <br><br> Возвращается только при применении параметра запроса `$select`. Только для чтения. |
 |internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). |
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |parentFolderId|String|Уникальный идентификатор родительского ресурса mailFolder для сообщения.|
 |receivedDateTime|DateTimeOffset|Дата и время получения сообщения.|
 |replyTo|Коллекция [recipient](recipient.md)|Электронные адреса, которые необходимо использовать при ответе.|
-|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение — то же, что свойство **из** . Это свойство можно задать значение при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого. Узнать больше о [параметр из свойства отправителя и](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
+|sender|[recipient](recipient.md)|Учетная запись, которая фактически используется для создания сообщения. В большинстве случаев это значение совпадает со значением свойства **from**. Этому свойству можно присвоить другое значение при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/ru-RU/exchange/collaboration/shared-mailboxes/shared-mailboxes) или отправке сообщения в качестве [представителя](https://support.office.com/ru-RU/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |sentDateTime|DateTimeOffset|Дата и время отправки сообщения.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
@@ -94,11 +94,11 @@ ms.locfileid: "27966456"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
-|extensions|Коллекция [extension](extension.md)|Коллекция open расширения, определенные для сообщения. Допускается значение null.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для сообщения. Допускается значение null.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
@@ -110,7 +110,9 @@ ms.locfileid: "27966456"
     "attachments",
     "extensions",
     "singleValueExtendedProperties",
-    "multiValueExtendedProperties"
+    "multiValueExtendedProperties",
+
+    "internetMessageHeaders"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.message",
