@@ -55,6 +55,7 @@ items:
             href: office365-groups-concept-overview.md
           - name: Календарь
             href: outlook-calendar-concept-overview.md
+            displayName: Outlook
             items:
               - name: Поиск времени для собрания
                 href: findmeetingtimes-example.md
@@ -68,6 +69,7 @@ items:
                 href: outlook-immutable-id.md
           - name: Взаимодействие с разными устройствами
             href: cross-device-concept-overview.md
+            displayName: Project Rome
             items:
               - name: Веб-канал активности
                 href: activity-feed-concept-overview.md
@@ -79,21 +81,27 @@ items:
                 href: cross-device-app-configuration.md
           - name: Запись клиентов (предварительная версия)
             href: booking-concept-overview.md
+            displayName: 'Bookings, Microsoft Bookings'
           - name: Доступ к данным (предварительная версия)
             href: data-connect-concept-overview.md
+            displayName: Microsoft Graph data connect
             items:
               - name: Начало работы
                 href: data-connect-get-started.md
           - name: Устройства и приложения
             href: intune-concept-overview.md
+            displayName: Intune
           - name: Образование
             href: education-concept-overview.md
           - name: Файлы
             href: onedrive-concept-overview.md
+            displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
           - name: Удостоверения и доступ
             href: azuread-identity-access-management-concept-overview.md
+            displaName: 'Azure AD, Microsoft identity platform'
           - name: Почта
             href: outlook-mail-concept-overview.md
+            displayName: 'Outlook, Outlook mail'
             items:
               - name: Автоматизация обмена сообщениями
                 href: outlook-create-send-messages.md
@@ -107,6 +115,7 @@ items:
                 href: outlook-send-mail-from-other-user.md
           - name: Примечания
             href: integrate-with-onenote.md
+            idsplayName: OneNote
             items:
               - name: Получение содержимого OneNote
                 href: onenote-get-content.md
@@ -135,6 +144,7 @@ items:
                 href: onenote-error-codes.md
           - name: Личные контакты.
             href: outlook-contacts-concept-overview.md
+            displayName: 'Outlook, Outlook contacts, Outlook contact, People'
             items:
               - name: Получение общих контактов
                 href: outlook-get-shared-contacts-folders.md
@@ -158,6 +168,7 @@ items:
                     href: security-qradar-siemintegration.md
           - name: Сайты и списки
             href: sharepoint-concept-overview.md
+            displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
           - name: Социальная аналитика
             href: social-intel-concept-overview.md
             items:
@@ -165,8 +176,10 @@ items:
                 href: people-example.md
           - name: Задачи и планы
             href: planner-concept-overview.md
+            displayName: Planner
           - name: Командная работа
             href: teams-concept-overview.md
+            displayName: Microsoft Teams
             items:
               - name: Создание группы и команды
                 href: teams-create-group-and-team.md
@@ -176,6 +189,7 @@ items:
                 href: teams-configuring-builtin-tabs.md
           - name: Книги и диаграммы
             href: excel-concept-overview.md
+            displayName: Excel
             items:
               - name: Управление сеансами
                 href: excel-manage-sessions.md
@@ -216,8 +230,10 @@ items:
                 href: throttling.md
               - name: Уведомления об изменениях
                 href: webhooks.md
+                displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
               - name: Отслеживание изменений
                 href: delta-query-overview.md
+                displayName: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
                 items:
                   - name: Получение изменений для событий (пример)
                     href: delta-query-events.md
@@ -229,6 +245,7 @@ items:
                     href: delta-query-users.md
               - name: Добавление пользовательских данных
                 href: extensibility-overview.md
+                displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
                 items:
                   - name: Использование открытых расширений (пример)
                     href: extensibility-open-users.md
