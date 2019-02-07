@@ -28,8 +28,10 @@ items:
         href: /graph/throttling?toc=./ref/toc.json
       - name: Уведомления об изменениях
         href: /graph/webhooks?toc=./ref/toc.json
+        displayname: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
       - name: Отслеживание изменений
         href: /graph/delta-query-overview?toc=./ref/toc.json
+        displayname: 'Delta query, Outlook calendar, Groups, Outlook mail, Users'
         items:
           - name: Получение изменений для событий (пример)
             href: /graph/delta-query-events?toc=./ref/toc.json
@@ -41,6 +43,7 @@ items:
             href: /graph/delta-query-users?toc=./ref/toc.json
       - name: Добавление пользовательских данных
         href: /graph/extensibility-overview?toc=./ref/toc.json
+        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
           - name: Использование открытых расширений (пример)
             href: /graph/extensibility-open-users?toc=./ref/toc.json
@@ -63,7 +66,7 @@ items:
       - name: Пользователи
         href: resources/users.md
         items:
-          - name: Пользователь
+          - name: User
             href: resources/user.md
             items:
               - name: Перечисление пользователей
@@ -80,6 +83,7 @@ items:
                 href: api/user-delta.md
           - name: Календарь
             href: resources/event.md
+            displayName: 'Outlook, Outlook calendar'
             items:
               - name: Перечисление событий
                 href: api/user-list-events.md
@@ -592,6 +596,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Взаимодействие с разными устройствами
         href: resources/project-rome-overview.md
+        displayName: Project Rome
         items:
           - name: Веб-канал активности
             href: resources/activity-feed-api-overview.md
@@ -616,6 +621,7 @@ items:
                     href: api/projectrome-delete-historyitem.md
       - name: Устройства и приложения
         href: resources/intune-graph-overview.md
+        displayName: Intune
         items:
           - name: Управление приложениями
             href: resources/intune-app-conceptual.md
@@ -2863,7 +2869,7 @@ items:
                 href: resources/intune-shared-saveduistategenerationoptions.md
               - name: Универсальный код ресурса
                 href: resources/intune-shared-uri.md
-              - name: Пользователь
+              - name: User
                 href: resources/intune-shared-user.md
                 items:
                   - name: Список
@@ -2966,6 +2972,7 @@ items:
                 href: api/educationuser-delete.md
       - name: Файлы
         href: resources/onedrive.md
+        displayName: 'OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint'
         items:
           - name: Drives
             href: resources/drive.md
@@ -3036,6 +3043,7 @@ items:
                 href: api/permission-delete.md
       - name: Удостоверения и доступ
         href: resources/azure-ad-overview.md
+        displayName: 'Azure AD, Microsoft identity platform'
         items:
           - name: Контракты
             href: resources/contract.md
@@ -3062,7 +3070,7 @@ items:
                 href: api/directory-deleteditems-restore.md
               - name: Список "Удаленные" пользователя
                 href: api/directory-deleteditems-user-owned.md
-          - name: Устройство
+          - name: Device
             href: resources/device.md
             items:
               - name: Список устройств
@@ -3191,6 +3199,7 @@ items:
                 href: api/subscribedsku-get.md
       - name: Почта
         href: resources/mail-api-overview.md
+        displayName: 'Outlook, Outlook mail'
         items:
           - name: Сообщение
             href: resources/message.md
@@ -3301,7 +3310,7 @@ items:
                 href: api/outlookcategory-update.md
               - name: Удаление категории
                 href: api/outlookcategory-delete.md
-          - name: Правила
+          - name: Rules
             href: resources/messagerule.md
             items:
               - name: Перечисление правил
@@ -3333,6 +3342,7 @@ items:
                     href: api/multivaluelegacyextendedproperty-get.md
       - name: Примечания
         href: resources/onenote-api-overview.md
+        displayName: OneNote
         items:
           - name: Примечания
             href: resources/onenote.md
@@ -3422,6 +3432,7 @@ items:
                 href: api/resource-get.md
       - name: Личные контакты.
         href: resources/contact.md
+        displayName: 'Outlook, Outlook contacts, Outlook contact, People'
         items:
           - name: Контакт
             href: resources/contact.md
@@ -3712,6 +3723,7 @@ items:
             href: resources/security-error-codes.md
       - name: Сайты и списки
         href: resources/sharepoint.md
+        displayName: 'SharePoint, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal'
         items:
           - name: Сайты
             href: resources/site.md
@@ -3754,6 +3766,7 @@ items:
                 href: api/user-list-people.md
       - name: Задачи и планы
         href: resources/planner-overview.md
+        displayName: Planner
         items:
           - name: Планирование
             href: resources/plannerplan.md
@@ -3833,6 +3846,7 @@ items:
                 href: api/plannerprogresstaskboardtaskformat-update.md
       - name: Командная работа
         href: resources/teams-api-overview.md
+        displayName: Microsoft Teams
         items:
           - name: Команда
             href: resources/team.md
@@ -3976,6 +3990,7 @@ items:
                 href: api/onenote-post-notebooks.md
       - name: Книги и диаграммы
         href: resources/excel.md
+        displayName: Excel
         items:
           - name: Книга
             href: resources/workbook.md
@@ -4092,6 +4107,7 @@ items:
       - name: Инструменты
       - name: Открытые расширения
         href: resources/opentypeextension.md
+        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
           - name: Создание открытого расширения
             href: api/opentypeextension-post-opentypeextension.md
@@ -4103,6 +4119,7 @@ items:
             href: api/opentypeextension-delete.md
       - name: Расширения схемы
         href: resources/schemaextension.md
+        displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
           - name: Расширения схемы списка
             href: api/schemaextension-list.md
@@ -4116,6 +4133,7 @@ items:
             href: api/schemaextension-delete.md
       - name: Уведомления об изменениях
         href: resources/webhooks.md
+        displayName: 'Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, People, Microsoft Teams, Teams, OneDrive, OneDrive for Buisness, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups'
         items:
           - name: Подписка
             href: resources/subscription.md

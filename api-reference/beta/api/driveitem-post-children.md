@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Создание папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ac78cc2e223f532c8c97fd413b799bd5cfd594cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2ccbedabb6fc7e6ec179e8ab5c97dd07959252c0
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522989"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760848"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 
@@ -44,7 +44,7 @@ POST /users/{user-id}/drive/items/{parent-item-id}/children
 
 Предоставьте в тексте запроса описание создаваемого ресурса [DriveItem](../resources/driveitem.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает созданную папку в виде ресурса [DriveItem][item-resource].
+Если успешно завершена, этот метод возвращает только что созданная папка как [DriveItem] [ item-resource] ресурсов.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,10 +108,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-response"></a>Отклик с ошибкой
+## <a name="error-response"></a>Ошибка
 
-Дополнительные сведения о возвращении ошибок см. в статье [Error Responses][error-response].
-[-отклик]: / график и сообщения об ошибках [элемента ресурс]:... /Resources/driveitem.MD [аспект папки]:... /Resources/Folder.md
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!--
 {

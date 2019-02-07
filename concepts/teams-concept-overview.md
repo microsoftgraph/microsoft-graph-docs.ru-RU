@@ -4,12 +4,12 @@ description: 'Microsoft Teams — это единый центр для раб�
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: eb87d270822193632fde376950ab4d52515237b6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e1ac6977add3de95b76f27a5e9184ee9f79e798a
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967982"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760820"
 ---
 # <a name="microsoft-teams-api-overview"></a>Обзор API Microsoft Teams
 
@@ -82,7 +82,7 @@ API Microsoft Teams могут расширять возможности при�
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-- Просмотрите [видеообзор](http://aka.ms/teamsgraph/v1/video).
+- Просмотрите [видеообзор](https://aka.ms/teamsgraph/v1/video).
 - Узнайте, как [использовать API Microsoft Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0).
 - Узнайте больше о методах, свойствах и связях ресурсов [team](/graph/api/resources/team?view=graph-rest-1.0), [channel](/graph/api/resources/channel?view=graph-rest-1.0) и [group](/graph/api/resources/group?view=graph-rest-1.0).
 - Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer).
