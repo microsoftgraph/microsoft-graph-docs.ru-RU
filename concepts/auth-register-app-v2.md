@@ -1,15 +1,15 @@
 ---
 title: Регистрация приложения с помощью конечной точки Azure AD версии 2.0
-description: 'Приложение должно быть зарегистрировано в Azure AD. При регистрации приложения создается уникальный идентификатор и другие значения, используемые приложением для проверки подлинности в Azure AD и получения маркеров. Для конечной точки Azure AD версии 2.0 приложение регистрируется на портале Майкрософт для регистрации приложений. Для регистрации приложения можно использовать либо учетную запись Майкрософт, либо рабочую или учебную учетную запись. В зависимости от типа создаваемого приложения, во время регистрации вам может потребоваться скопировать одно или несколько свойств, чтобы использовать их при настройке проверки подлинности и авторизации для приложения. '
+description: Приложение должно быть зарегистрировано в Azure AD. При регистрации приложения создается уникальный идентификатор и другие значения, используемые приложением для проверки подлинности в Azure AD и получения маркеров.
 author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 87bff46dcb18585ba0814a5848f3cd67deb855d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: d62fb12c094307fcd09f3e4600046b818ec4bbaa
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930560"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760960"
 ---
 # <a name="register-your-app-with-the-azure-ad-v20-endpoint"></a>Регистрация приложения с помощью конечной точки Azure AD версии 2.0
 
@@ -91,4 +91,4 @@ ms.locfileid: "27930560"
 - Если приложение является мультитенантным, необходимо в явной форме настроить его как таковое на портале.
 - Все необходимые приложению разрешения (включая разрешения Microsoft Graph) необходимо заранее настроить на портале. 
 
-Рекомендации по добавлению приложения на портале Azure см. в разделе [Интеграция приложений с Azure Active Directory: добавление приложения](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications#adding-an-application).
+Рекомендации по добавлению приложения на портале Azure см. в разделе [Регистрация приложения в Azure Active Directory версии 2.0](https://docs.microsoft.com/ru-RU/azure/active-directory/develop/quickstart-v2-register-an-app).

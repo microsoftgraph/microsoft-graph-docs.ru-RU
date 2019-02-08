@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Создание папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 26a87aefdf692562491f0bda1fcc87a48b4079fa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 4771782804f5fc69db0cf25b6e3f30f176a68e6b
+ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986714"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "29760869"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 
@@ -50,8 +50,8 @@ POST /users/{user-id}/drive/items/{parent-item-id}/children
 
 ### <a name="request"></a>Запрос
 
-Ниже показан пример запроса на создание папки в корневой папке OneDrive пользователя, вошедшего в систему.
-Используемое свойство `@microsoft.graph.conflictBehavior` указывает, что если уже существует элемент с таким именем, служба должна выбрать новое имя папки при создании папки.
+Ниже показан пример запроса на создание папки в корневой папке OneDrive пользователя, выполнившего вход в систему.
+Используемое свойство `@microsoft.graph.conflictBehavior` указывает, что если при создании папки оказалось, что уже существует элемент с таким именем, служба должна выбрать новое имя папки.
 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает созданную папку в виде ресурса [DriveItem][item-resource].
+При успешном выполнении этот метод возвращает заново созданную папку в виде ресурса [DriveItem][item-resource].
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -106,10 +106,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-response"></a>Отклик с ошибкой
+## <a name="error-response"></a>Ответ с ошибкой
 
-Дополнительные сведения о возвращении ошибок см. в статье [Error Responses][error-response].
-[-отклик]: / график и сообщения об ошибках [элемента ресурс]:... /Resources/driveitem.MD [аспект папки]:... /Resources/Folder.md
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ответы с ошибкой][error-response].
+
+[error-response]: /graph/errors
+[item-resource]: ../resources/driveitem.md
+[folder-facet]: ../resources/folder.md
 
 <!-- {
   "type": "#page.annotation",
