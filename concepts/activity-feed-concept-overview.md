@@ -4,10 +4,10 @@ description: Если вы используете действия, эти во�
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 8e65615d46e795f1bd4d11d68ff291d938ac6c82
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.sourcegitcommit: 889145f924d50e7fe6abf3f59261197826b532a1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 02/11/2019
 ms.locfileid: "29760862"
 ---
 # <a name="using-the-activity-feed-api-in-microsoft-graph-to-enable-cross-device-experiences"></a>Создание условий для работы на разных устройствах с помощью API веб-канала активности

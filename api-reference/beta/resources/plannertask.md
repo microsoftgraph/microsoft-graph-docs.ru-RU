@@ -4,12 +4,12 @@ description: Ресурс **plannerTask** представляет задачу 
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 2313b31e0a962f27fa728af8c8953b646210397a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: daa5b451211b442fb1b5b197f323baa4cd37cda7
+ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511214"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "29892507"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
 
@@ -29,7 +29,7 @@ ms.locfileid: "29511214"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activeChecklistItemCount|Int32|Количество элементов контрольного списка со значением false, указывающим, что задача не выполнена.|
+|activeChecklistItemCount|Int32|Количество контрольный список элементов со значением, равным `false`, представляющее неполный элементов.|
 |appliedCategories|[plannerAppliedCategories](plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](plannerappliedcategories.md).|
 |assigneePriority|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |assignments|[plannerAssignments](plannerassignments.md)|Список исполнителей, которым назначена задача.|
@@ -46,12 +46,12 @@ ms.locfileid: "29511214"
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
 |planId|String|Идентификатор плана, к которому относится задача.|
-|previewType|строка|Устанавливает тип предварительного просмотра задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
+|previewType|String|Устанавливает тип предварительного просмотра задачи. Возможные значения: `automatic`, `noPreview`, `checklist`, `description`, `reference`.|
 |referenceCount|Int32|Количество внешних ссылок на задачу.|
 |startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |title|String|Название задачи.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md)| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по свойству assignedTo.|
@@ -89,7 +89,7 @@ ms.locfileid: "29511214"
   "orderHint": "String",
   "percentComplete": 1024,
   "planId": "String",
-  "previewType": "string",
+  "previewType": "String",
   "referenceCount": 1024,
   "startDateTime": "String (timestamp)",
   "title": "String"
