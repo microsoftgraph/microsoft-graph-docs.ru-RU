@@ -4,12 +4,12 @@ description: Записная книжка OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: df7793208aa3ba752f1da0bc84903733b79871c9
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 24e9a7a4b87a59af27166121aff2847f5f15d894
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641626"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967279"
 ---
 # <a name="notebook-resource-type"></a>Тип ресурса notebook
 
@@ -53,7 +53,7 @@ ms.locfileid: "29641626"
 |:---------------|:--------|:----------|
 |createdBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |createdDateTime|DateTimeOffset|Дата и время создания записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|id|String|Уникальный идентификатор записной книжки. Только для чтения.|
+|id|Строка|Уникальный идентификатор записной книжки. Только для чтения.|
 |isDefault|Boolean|Указывает, является ли эта записная книжка записной книжкой пользователя по умолчанию. Только для чтения.|
 |IsShared|Boolean|Указывает, является ли записная книжка общей. Если вы укажете значение true, содержимое записной книжки сможет видеть не только владелец. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
@@ -62,7 +62,7 @@ ms.locfileid: "29641626"
 |displayName|String|Имя записной книжки.|
 |sectionGroupsUrl|Строка|URL-адрес для свойства навигации `sectionGroups`, который возвращает все группы разделов в записной книжке. Только для чтения.|
 |sectionsUrl|Строка|URL-адрес для свойства навигации `sections`, который возвращает все разделы в записной книжке. Только для чтения.|
-|self|String|Конечная точка, в которой можно получить сведения о записной книжке. Только для чтения.|
+|self|Строка|Конечная точка, в которой можно получить сведения о записной книжке. Только для чтения.|
 |userRole|Строка|Возможные значения: `Owner`, `Contributor`, `Reader`, `None`. Owner — доступ к записной книжке на уровне владельца. Contributor — доступ к записной книжке для чтения и записи. Reader — доступ к записной книжке только для чтения. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
@@ -77,6 +77,7 @@ ms.locfileid: "29641626"
 |:---------------|:--------|:----------|
 |[Получение записной книжки](../api/notebook-get.md) | [Notebook](notebook.md) |Считывание свойств и связей записной книжки.|
 |[getRecentNotebooks](../api/notebook-getrecentnotebooks.md) | Коллекция [recentNotebook](recentnotebook.md) | Получение коллекции недавно открывавшихся записных книжек для пользователя. |
+|[getNotebookFromWebUrl](../api/notebook-getnotebookfromweburl.md) | [Notebook](notebook.md) | Извлечение свойств и связи объекта записной книжки, с помощью его URL-адрес. |
 |[Создание группы разделов](../api/notebook-post-sectiongroups.md) |[SectionGroup](sectiongroup.md)| Создайте группу разделов, отправив запрос POST в коллекцию sectionGroups в указанной записной книжке.|
 |[Перечисление групп разделов](../api/notebook-list-sectiongroups.md) |Коллекция объектов [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов в указанной записной книжке.|
 |[Создание раздела](../api/notebook-post-sections.md) |[Section](section.md)| Создайте раздел, отправив запрос POST в коллекцию sections в указанной записной книжке.|

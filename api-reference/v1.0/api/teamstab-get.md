@@ -1,17 +1,17 @@
 ---
-title: Получить вкладки
+title: Получение вкладки
 description: 'Извлечение свойств и отношения между заданной вкладки. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9bf9a41154b57a5f76f3cce3c8754e27e34c0837
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 1513893907d6448287f2541ffdc4617ab94ef455
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571186"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967020"
 ---
-# <a name="get-tab"></a>Получить вкладки
+# <a name="get-tab"></a>Получение вкладки
 
 
 
@@ -26,7 +26,7 @@ ms.locfileid: "29571186"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.Read.All, Group.ReadWrite.All |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 ```http
@@ -43,16 +43,16 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [tab](../resources/teamstab.md) в теле ответа.
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -65,23 +65,31 @@ Content-length: 401
 
 {
   "id": "tabId",
-  "name": "My Contoso Tab - updated",
-  "teamsAppId": "06805b9e-77e3-4b93-ac81-525eb87513b8",
+  "displayName": "My Contoso Tab - updated",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
     "websiteUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154",
     "removeUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/uninstallTab"
   },
+  "teamsApp": {
+      "id": "0d820ecd-def2-4297-adad-78056cde7c78",
+      "externalId": null,
+      "displayName": "Contoso",
+      "distributionMethod": "store"
+  },
+  "sortOrderIndex": "20",
   "webUrl": "https://teams.microsoft.com/l/channel/19%3ac2e36757ee744c569e70b385e6dd79b6%40thread.skype/tab%3a%3afd736d46-51ed-4c0b-9b23-e67ca354bb24?label=my%20%contoso%to%tab"
 }
 ```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get a channel tab",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->
+}
+-->

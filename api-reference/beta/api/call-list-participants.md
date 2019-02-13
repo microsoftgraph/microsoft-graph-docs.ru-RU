@@ -4,12 +4,12 @@ description: Получение списка участников объекто
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4f4eb95e4aed03dfd9809f8afb0e3f3557717430
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507623"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967349"
 ---
 # <a name="list-participants"></a>Список участников
 
@@ -18,6 +18,7 @@ ms.locfileid: "29507623"
 Получение списка участников объектов в вызове.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
@@ -27,42 +28,49 @@ ms.locfileid: "29507623"
 | Для приложений     | Нет                                        |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /app/calls/{id}/participants
 GET /applications/{id}/calls/{id}/participants
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя          | Описание               |
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
+
 Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [участника](../resources/participant.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1"></a>Пример 1
-
-##### <a name="request"></a>Запрос
-Ниже показан пример запроса.
+### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
   "name": "get-participants"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/app/calls/{id}/participants
+GET https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
+Authorization: Bearer <TOKEN>
 ```
 
-##### <a name="response"></a>Ответ
+<!-- markdownlint-disable MD024 -->
+
+### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -73,66 +81,11 @@ GET https://graph.microsoft.com/beta/app/calls/{id}/participants
   "isCollection": true,
   "truncated": true
 } -->
-```http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 1152
-
-{
-  "value": [
-    {
-      "id": "id-value",
-      "info": {
-        "identity": {
-          "user": {
-            "id": "550fae72-d251-43ec-868c-373732c2704f",
-            "tenantId": "72f988bf-86f1-41af-91ab-2d7cd011db47",
-            "displayName": "Heidi Steen"
-          }
-        },
-        "languageId": "languageId-value",
-        "region": "region-value"
-      },
-      "isInLobby": false,
-      "isMuted": true,
-      "mediaStreams": [
-        {
-          "sourceId": "1",
-          "direction": "sendReceive",
-          "label": "main-audio",
-          "mediaType": "audio",
-          "serverMuted": false
-        }
-      ],
-      "metadata": "metadata-value"
-    }
-  ]
-}
-```
-
-### <a name="example-2"></a>Пример 2
-
-##### <a name="request"></a>Запросить
-
-```http
-GET /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants
-Authorization: Bearer <TOKEN>
-```
-
-##### <a name="response"></a>Ответ
 
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-```
 
-<!-- {
-  "blockType": "example",
-  "@odata.type": "microsoft.graph.participant",
-  "isCollection": true,
-  "truncated": true
-}-->
-```json
 {
   "value": [
     {

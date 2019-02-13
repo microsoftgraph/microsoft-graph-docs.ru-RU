@@ -4,65 +4,77 @@ description: 'Список приложений из каталога прило
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: d43f9a8cca7c16bab3b0dec90b26d4c9c6d4d33c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1e4d9348cbb28ed0daf1ec48459378935d78e0a2
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519271"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967258"
 ---
 # <a name="list-the-published-apps-from-the-microsoft-teams-app-catalog"></a>Список опубликованных приложений из каталога приложений группами Майкрософт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список [приложений](../resources/teamsapp.md) из каталога приложений группами Майкрософт. Этот компонент включает приложений из магазина группами Майкрософт, а также приложений из каталога приложений организации (каталог приложений клиента). Приобретать приложения в вашей организации только каталог приложений, укажите `Organization` как **distributionMethod** в [teamsCatalogApp](../resources/teamsapp.md) ресурсов.
+Список [приложений](../resources/teamsapp.md) из каталога приложений группами Майкрософт.
+Этот компонент включает приложений из магазина группами Майкрософт, а также приложений из каталога приложений организации (каталог приложений клиента). Приобретать приложения в вашей организации только каталог приложений, укажите `Organization` как **distributionMethod** в [teamsCatalogApp](../resources/teamsapp.md) ресурсов.
 
 ## <a name="permissions"></a>Разрешения
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions_reference).
 
->**Примечание:** Только глобальный администратор может вызывать этот интерфейс API. 
+> **Примечание:** Только глобальный администратор может вызывать этот интерфейс API.
 
-| Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
-|:----------------------------------     |:-------------|
-| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All |
-| Делегированные (личная учетная запись Майкрософт) | Не поддерживается|
-| Для приложений                            | Не поддерживается|
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | AppCatalog.ReadWrite.All            |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
+| Для приложений                            | Не поддерживается                       |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /appCatalogs/teamsApps
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает $filter $select, и $разверните [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
+
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) $filter, $select и $expand для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Заголовок        | Значение           |
-|:--------------|:--------------  |
-| Авторизация | Bearer {токен}. Обязательный.  |
+| Заголовок        | Значение                     |
+|:--------------|:--------------------------|
+| Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
+
 Нет.
 
->**Примечание:** Можно отфильтровать поля объекта [teamsCatalogApp](../resources/teamsapp.md) для сокращения списка результатов. Можно использовать любой из следующих операций фильтра: равно, не равно и, или, а не.
+> **Примечание:** Можно отфильтровать поля объекта [teamsCatalogApp](../resources/teamsapp.md) для сокращения списка результатов. Можно использовать любой из следующих операций фильтра: равно, не равно и, или, а не.
 
 ## <a name="response"></a>Ответ
+
 Успешно завершена, этот метод возвращает `200 OK` код ответа и список объектов [teamsCatalogApp](../resources/teamsapp.md) в теле ответа.
 
 ## <a name="examples"></a>Примеры
-### <a name="example-1"></a>Пример 1
+
+### <a name="example-1-list-all-applications"></a>В примере 1: Список всех приложений
+
 В следующем примере перечисляются все приложения, которые специфичны для вашего клиента.
 
 #### <a name="request"></a>Запрос
-```
+
+```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=distributionMethod eq 'organization'
 ```
 
+<!-- markdownlint-disable MD024 -->
+
 #### <a name="response"></a>Ответ
-```
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -73,23 +85,25 @@ Content-Type: application/json
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
-      "distributionMethod":"Organization"
+      "distributionMethod": "Organization"
     }
   ]
 }
 ```
 
-### <a name="example-2"></a>Пример 2
+### <a name="example-2-list-applications-with-a-given-id"></a>Пример 2: Список приложений с заданным Идентификатором
 
 В следующем примере перечисляются приложений с указанным идентификатором.
 
 #### <a name="request"></a>Запрос
-```
+
+```http
 GET https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id%20eq%20'b1c5353a-7aca-41b3-830f-27d5218fe0e5'
 ```
 
-#### <a name="response"></a>Ответ
-```
+#### <a name="response"></a>Отклик
+
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -100,7 +114,7 @@ Content-Type: application/json
       "externalId": "f31b1263-ba99-435a-a679-911d24850d7c",
       "name": "Test App",
       "version": "1.0.1",
-      "distributionMethod":"Organization"
+      "distributionMethod": "Organization"
     }
   ]
 }

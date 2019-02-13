@@ -1,21 +1,21 @@
 ---
-title: Добавление вкладки канала
-description: 'Добавляет (PIN) вкладку для указанного канала в группе. '
+title: Добавление вкладки в канал
+description: 'Добавляет (закрепляет) вкладку в указанный канал в команде. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1de8cfe1d553a6e0f70653aa4fe1d978c8d92323
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 5235cc7dd99098fce1bdad437a74d65e6a437742
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570934"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967230"
 ---
-# <a name="add-tab-to-channel"></a>Добавление вкладки канала
+# <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавляет (PIN) [вкладки](../resources/teamstab.md) для указанного [канала](../resources/channel.md) в пределах [группы](../resources/team.md). Соответствующие приложения уже должен быть [установлен в группе](../api/teamsappinstallation-add.md).
+Добавляет (закрепляет) [вкладку](../resources/teamstab.md) в указанный [канал](../resources/channel.md) в [команде](../resources/team.md). Соответствующее приложение уже должно быть [установлено в команде](../api/teamsappinstallation-add.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +26,7 @@ ms.locfileid: "29570934"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 | Для приложений                            | Group.ReadWrite.All                         |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,7 +41,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="request-body"></a>Текст запроса
 
-[TeamsTab](../resources/teamstab.md).
+[teamsTab](../resources/teamstab.md).
 
 ## <a name="response"></a>Отклик
 
@@ -59,7 +59,7 @@ POST /teams/{id}/channels/{id}/tabs
 ```http
 POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 {
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "teamsApp@odata.bind" : "https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
@@ -85,7 +85,7 @@ Content-type: application/json
 
 {
   "id": "794f0e4e-4d10-4bb5-9079-3a465a629eff",
-  "name": "My Contoso Tab",
+  "displayName": "My Contoso Tab",
   "configuration": {
     "entityId": "2DCA2E6C7A10415CAF6B8AB6661B3154",
     "contentUrl": "https://www.contoso.com/Orders/2DCA2E6C7A10415CAF6B8AB6661B3154/tabView",
@@ -99,7 +99,7 @@ Content-type: application/json
 
 ## <a name="see-also"></a>См. также
 
-[Настройка типов встроенную вкладку](/graph/teams-configuring-builtin-tabs)
+[Настройка встроенных типов вкладок](/graph/teams-configuring-builtin-tabs)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

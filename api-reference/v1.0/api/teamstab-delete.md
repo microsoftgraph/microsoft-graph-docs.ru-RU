@@ -4,12 +4,12 @@ description: 'Удаляет (отключит) вкладки с указанн
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9b66bf69645c9a76ea11375984cf8c56e0dff6bd
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.openlocfilehash: a5cb2334c250c63d0644c8fab3f97d35c481a515
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016697"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967307"
 ---
 # <a name="delete-tab-from-channel"></a>Удалить вкладку с канала
 
@@ -26,7 +26,7 @@ ms.locfileid: "28016697"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,10 +39,10 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -57,17 +57,19 @@ DELETE /teams/{id}/channels/{id}/tabs/{id}
 DELETE https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
 ```
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete tab from channel",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
-}-->
+}
+-->

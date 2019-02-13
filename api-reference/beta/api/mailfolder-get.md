@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта п
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: eee7adf677696fbf2dc969262604b817c7cddabe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: af2cc42c2ee72f1a57a1e0f9402209c107e259f4
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529910"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967300"
 ---
 # <a name="get-mailfolder"></a>Получение объекта mailFolder
 
@@ -19,11 +19,11 @@ ms.locfileid: "29529910"
 
 Существует два сценария, где приложение может получить почтовой папки другого пользователя.
 
-* Если приложение имеет разрешения приложения, или,
-* Если приложение имеет соответствующий делегированных [разрешений](#permissions) от одного пользователя и другой пользователь доступ к папке почты с этим пользователем или, предоставленное делегированный доступ для пользователя, который. В разделе [сведения и примеры](/graph/outlook-share-messages-folders).
-
+* если у приложения есть разрешения для приложений;
+* Если приложение имеет соответствующий делегированных [разрешений](#permissions) от одного пользователя и другой пользователь доступ к папке почты с этим пользователем или, предоставленное делегированный доступ для пользователя, который. См. [подробные сведения и пример](/graph/outlook-share-messages-folders).
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -33,93 +33,124 @@ ms.locfileid: "29529910"
 |Для приложений | Mail.Read, Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /me/mailFolders/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
-| Имя       | Тип | Описание|
-|:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+
+| Имя          | Тип   | Описание               |
+|:--------------|:-------|:--------------------------|
+| Authorization | string | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
 
-## <a name="response"></a>Отклик
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Ответ
+
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
-## <a name="example-1"></a>Пример 1
-#### <a name="request-1"></a>Запрос 1
+## <a name="examples"></a>Примеры
+
+### <a name="example-1-get-a-mail-folder"></a>В примере 1: Получение папки почты
+
+#### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "get_mailfolder"
 }-->
+
 ```http
 GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 ```
 
-#### <a name="response-1"></a>Отклик 1
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика.
- >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+> **Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-    "id": "AAMkAGVmMDEzM",
-    "displayName": "Inbox",
-    "parentFolderId": "AAMkAGVmMDEzI",
-    "childFolderCount": 2,
-    "unreadItemCount": 59,
-    "totalItemCount": 60,
-    "wellKnownName": "inbox"
+  "id": "AAMkAGVmMDEzM",
+  "displayName": "Inbox",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 2,
+  "unreadItemCount": 59,
+  "totalItemCount": 60,
+  "wellKnownName": "inbox"
 }
 ```
 
-## <a name="example-2"></a>Пример 2
-#### <a name="request-2"></a>Запрос 2
-Ниже приведен пример папки поиска запроса.
+### <a name="example-2-get-a-mail-search-folder"></a>Пример 2: Получение папки поиска почты
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "get_mailSearchfolder"
 }-->
+
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 ```
 
-#### <a name="response-2"></a>Ответ 2
-Ниже приведен пример ответа.
- >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailSearchFolder"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 179
 
 {
-    "id": "AAMkAGVmMDEzM",
-    "displayName": "Inbox",
-    "parentFolderId": "AAMkAGVmMDEzI",
-    "childFolderCount": 2,
-    "unreadItemCount": 59,
-    "totalItemCount": 60,
-    "wellKnownName": "inbox"
+  "@odata.type": "#microsoft.graph.mailSearchFolder",
+  "id": "AAMkAGVmMDEzN",
+  "displayName": "Get MyAnalytics",
+  "parentFolderId": "AAMkAGVmMDEzI",
+  "childFolderCount": 0,
+  "unreadItemCount": 6,
+  "totalItemCount": 6,
+  "wellKnownName": null,
+  "isSupported": true,
+  "includeNestedFolders": true,
+  "sourceFolderIDs": [
+    "AAMkAGVmMDEzM"
+  ],
+  "filterQuery": "contains(subject, 'MyAnalytics')"
 }
 ```
 

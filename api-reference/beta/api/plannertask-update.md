@@ -4,12 +4,12 @@ description: Обновление свойств объекта **plannertask**.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: d33df32ace59884298ca6f8773cbbe2100f32f85
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ae2551165405161e071d23cf704851ac18fbf73e
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523815"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967244"
 ---
 # <a name="update-plannertask"></a>Обновление объекта plannertask
 
@@ -42,16 +42,15 @@ PATCH /planner/tasks/<id>
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |appliedCategories|[plannerAppliedCategories](../resources/plannerappliedcategories.md)|Категории, к которым применена задача. Возможные значения см. [здесь](../resources/plannerappliedcategories.md).|
-|assigneePriority|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
+|assigneePriority|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |assignments|[plannerAssignments](../resources/plannerassignments.md)|Список пользователей, которым назначена задача.|
-|bucketId|String|Код сегмента, к которой принадлежит задачи. Должен быть в плане, задача находится в сегменте. Это 28 знаков без учета регистра. [Формат](../resources/tasks-identifiers-disclaimer.md) проверяются на службу. |
-|conversationThreadId|String|Идентификатор беседы в задаче. Это идентификатор объекта беседы, созданной в группе.|
+|bucketId|Строка|Код сегмента, к которой принадлежит задачи. Сегмент должен находиться в том же плане, что и задача. Содержит 28 знаков, учитывается регистр. [Проверка формата](../resources/tasks-identifiers-disclaimer.md) проводится для службы. |
+|conversationThreadId|Строка|Идентификатор беседы в задаче. Это идентификатор объекта беседы, созданной в группе.|
 |dueDateTime|DateTimeOffset|Срок выполнения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](../resources/planner-order-hint-format.md).|
 |percentComplete|Int32|Процент выполнения задачи. Если установлено значение `100`, задача считается выполненной. |
-|planId|String|Идентификатор плана, к которому относится задача.|
 |startDateTime|DateTimeOffset|Дата и время начала задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|title|String|Название задачи.|
+|title|Строка|Название задачи.|
 
 ## <a name="response"></a>Ответ
 
@@ -85,9 +84,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

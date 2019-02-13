@@ -1,33 +1,33 @@
 ---
 title: Получение outlookTask
-description: Получите свойства и связи задачи Outlook в почтовом ящике пользователя.
+description: Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 47c6a24ccb76eb7752736386cf6ec17330832780
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f140734b6e5fa3e6488b71dbe183a9e3d82fc795
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526321"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967293"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите свойства и связи задачи Outlook в почтовом ящике пользователя.
+Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 
-По умолчанию эта операция (и POST, ИСПРАВЛЕНИЙ и [выполнения](../api/outlooktask-complete.md) операции задачи) возвращает свойства, связанные с даты в формате UTC. Можно использовать `Prefer: outlook.timezone` заголовок, чтобы все свойства, связанный с данными в ответ, представленного в часовом поясе, отличного от UTC.
+По умолчанию эта операция (и POST, ИСПРАВЛЕНИЙ и [выполнения](../api/outlooktask-complete.md) операции задачи) возвращает свойства, связанные с даты в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
-|:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Tasks.Read    |
-|Делегированные (личная учетная запись Майкрософт) | Tasks.Read    |
-|Для приложений | Не поддерживается. |
+| Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
+|:---------------------------------------|:------------------------------------|
+| Делегированные (рабочая или учебная учетная запись)     | Tasks.Read                          |
+| Делегированные (личная учетная запись Майкрософт) | Tasks.Read                          |
+| Для приложений                            | Не поддерживается.                      |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -44,22 +44,24 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="request-headers"></a>Заголовки запросов
 
-| Имя      |Описание|
-|:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответ, который может быть в формате UTC, если не указан этот заголовок. Необязательный параметр.|
+| Имя                     | Описание                                       |
+|:-------------------------|:--------------------------------------------------|
+| Авторизация            | Bearer {токен}. Обязательный.                         |
+| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответ, который может быть в формате UTC, если не указан этот заголовок. Необязательное свойство. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
 Успешно завершена, этот метод возвращает `200 OK` объект [outlookTask](../resources/outlooktask.md) и кода ответа в теле ответа.
 
-## <a name="example-1"></a>Пример 1
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-get-an-outlook-task"></a>В примере 1: Получение задачи Outlook
+
+#### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 <!-- {
@@ -71,11 +73,14 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 ```
 
-### <a name="response"></a>Ответ
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.
 
-> Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,14 +90,13 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 376
 
 {
   "id": "AAMkADA1MTrgAAA=",
   "createdDateTime": "2016-04-22T06:03:35.9279794Z",
   "lastModifiedDateTime": "2016-04-22T06:03:35.9436052Z",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIOJMyQ==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": null,
   "body": {
     "contentType": "text",
@@ -103,7 +107,7 @@ Content-length: 376
     "dateTime": "2016-04-27T04:00:00.0000000",
     "timeZone": "UTC"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",
@@ -120,11 +124,12 @@ Content-length: 376
 }
 ```
 
-## <a name="example-2"></a>Пример 2
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2: Получение задачи Outlook с помощью свойства даты и времени в Тихоокеанское время
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
-В этом примере используется `Prefer: outlook.timezone` заголовка для указания отображение свойства даты и времени в ответ в Тихоокеанское время.
+В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать свойства даты и времени в ответ в Тихоокеанское время.
+
 <!-- {
   "blockType": "request",
   "name": "get_outlooktask"
@@ -135,11 +140,12 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. В указанном Тихоокеанское время отображения свойств даты и времени в ответе.
+Ниже приведен пример отклика. Свойства даты и времени в ответе возвращаются в указанном Тихоокеанское время.
 
-> Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -149,14 +155,13 @@ Prefer: outlook.timezone="Pacific Standard Time"
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 576
 
 {
   "id": "AAMkADA1MHgwAAA=",
   "createdDateTime": "2016-04-22T15:19:18.9526004-07:00",
   "lastModifiedDateTime": "2016-04-22T15:19:19.015101-07:00",
   "changeKey": "1/KC9Vmu40G3DwB6Lgs7MAAAIW9XXA==",
-  "categories": [ ],
+  "categories": [],
   "assignedTo": "Dana Swope",
   "body": {
     "contentType": "text",
@@ -167,7 +172,7 @@ Content-length: 576
     "dateTime": "2016-05-04T021:00:00.0000000",
     "timeZone": "Pacific Standard Time"
   },
-  "hasAttachments":false,
+  "hasAttachments": false,
   "importance": "normal",
   "isReminderOn": false,
   "owner": "Administrator",

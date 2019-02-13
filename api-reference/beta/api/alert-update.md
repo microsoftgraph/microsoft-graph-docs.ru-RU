@@ -1,17 +1,17 @@
 ---
-title: обновление оповещения.
+title: Обновление оповещения
 description: Обновите редактируемых свойств оповещения в любой интегрированное решение для синхронизации состояний оповещений и назначений в решениях.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: fc0bc88dad83024d3da2d6f2adf3f16288719cb2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8b1fec6bfca2ce116bc35c4a7c8a115418b15012
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517416"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29967328"
 ---
-# <a name="update-alert"></a>обновление оповещения.
+# <a name="update-alert"></a>Обновление оповещения
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -40,7 +40,7 @@ PATCH /security/alerts/{alert_id}
 
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
 |Prefer | Возвращает = представление |
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,25 +49,27 @@ PATCH /security/alerts/{alert_id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|AssignedTo|String|Имя аналитик оповещение будет назначен для рассмотрения исследования и исправления.|
+|assignedTo|String|Имя аналитик оповещение будет назначен для рассмотрения исследования и исправления.|
 |closedDateTime|DateTimeOffset|Время закрытия оповещение. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|comments|Коллекция String|Комментарии аналитик оповещения (для управления предупреждениями клиента).|
-|Отзывы|Перечисление alertFeedback|Отзыв аналитик на оповещение. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
+|comments|Коллекция строк|Комментарии аналитик оповещения (для управления предупреждениями клиента).|
+|свои отзывы и предложения|Перечисление alertFeedback|Отзыв аналитик на оповещение. Возможные значения: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|Перечисление alertStatus|Состояние оповещений жизненного цикла (рабочей области). Возможные значения: `unknown`, `newAlert`, `inProgress`, `resolved`.|
 |tags|Коллекция String|Определяемые пользователем меток, которые могут применяться к оповещения и может выступать в качестве условий фильтра (например, «HVA», «ЗАФИКСИРОВАЛА).|
 |vendorInformation |[securityVendorInformation](../resources/securityvendorinformation.md)|Сложный тип, содержащий сведения о безопасности продуктов и услуг поставщика, поставщик и subprovider (например, поставщика = Майкрософт; поставщика = ATP Защитник Windows; subProvider = AppLocker). **Поставщик и поставщика поля являются обязательными.**|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 Если используется запрос на необязательный заголовок, метод возвращает `200 OK` код ответа и объект обновленные [оповещения](../resources/alert.md) в теле ответа.
 
-## <a name="example-1"></a>Пример 1
+## <a name="examples"></a>Примеры
 
-### <a name="request"></a>Запрос
+### <a name="example-1-request-without-prefer-header"></a>В примере 1: Запрос без Prefer заголовка
 
-Ниже приведен пример запроса.
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса без `Prefer` заголовка.
 <!-- {
   "blockType": "request",
   "name": "update_alert"
@@ -92,7 +94,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+<!-- markdownlint-disable MD024 -->
+
+#### <a name="response"></a>Ответ
 
 Ниже представлен пример успешного отклика.
 <!-- {
@@ -105,9 +109,9 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-## <a name="example-2"></a>Пример 2
+### <a name="example-2-request-with-prefer-header"></a>Пример 2: Запрос с заголовком, Prefer
 
-### <a name="request"></a>Запрос
+#### <a name="request"></a>Запрос
 
 В следующем примере показан запрос, который включает в себя `Prefer` заголовка запроса.
 
@@ -136,7 +140,7 @@ Prefer: return=representation
 }
 ```
 
-### <a name="response"></a>Ответ
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример ответа при Дополнительно `Prefer: return=representation` используется заголовка запроса.
 
