@@ -7383,6 +7383,8 @@ items:
                 href: api/notebook-copynotebook.md
               - name: Получение последних записных книжек
                 href: api/notebook-getrecentnotebooks.md
+              - name: Получение записной книжки с сайта по URL-адресу
+                href: api/notebook-getnotebookfromweburl.md
               - name: Список разделов
                 href: api/notebook-list-sections.md
               - name: Создание раздела
