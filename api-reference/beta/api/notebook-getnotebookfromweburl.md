@@ -1,0 +1,103 @@
+---
+title: 'записная книжка: getNotebookFromWebUrl'
+description: Извлечение свойств и связи объекта записной книжки, с помощью его URL-адрес.
+author: jewan-microsoft
+localization_priority: Normal
+ms.prod: onenote
+ms.openlocfilehash: 226cbd70343feaf8fe5404aac6077f9b2438aba8
+ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29982071"
+---
+# <a name="notebook-getnotebookfromweburl"></a>записная книжка: getNotebookFromWebUrl
+
+[! ВКЛЮЧИТЬ бета-версии-заявление об отказе]
+
+Извлечение свойств и связи объекта [записной книжки](../resources/notebook.md) с помощью его URL-адрес.
+
+Расположение может быть записных книжек пользователя в Office 365, группа записных книжек или записных книжек размещенного сайта группы SharePoint на Office 365.
+## <a name="permissions"></a>Разрешения
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+
+|Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
+|:--------------------|:---------------------------------------------------------|
+|Делегированные (рабочая или учебная учетная запись) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Для приложений | Notes.Read.All, Notes.ReadWrite.All |
+
+## <a name="http-request"></a>HTTP-запрос
+<!-- { "blockType": "ignored" } -->
+```http
+POST /me/onenote/notebooks/GetNotebookFromWebUrl
+POST /users/{id | userPrincipalName}/onenote/notebooks/GetNotebookFromWebUrl
+POST /groups/{id}/onenote/notebooks/GetNotebookFromWebUrl
+POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
+```
+## <a name="request-headers"></a>Заголовки запросов
+| Имя       | Тип | Описание|
+|:-----------|:------|:----------|
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Accept | string | `application/json` |
+
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите JSON, представляющую полный путь URL-адрес к записной книжки, которую требуется получить.
+
+| Свойство     | Тип        | Описание |
+|:-------------|:------------|:------------|
+| `webUrl`     |`String`     | Путь к URL-адрес записной книжки для извлечения. Он также может содержать «onenote:» префикс.|
+
+## <a name="response"></a>Отклик
+
+При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [notebook](../resources/notebook.md) в теле отклика.
+## <a name="example"></a>Пример
+##### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+<!-- {
+  "blockType": "request",
+  "name": "notebook_fromweburl"
+}-->
+```http
+POST https://graph.microsoft.com/beta/me/onenote/notebooks/GetNotebookFromWebUrl
+Content-type: application/json
+
+{"webUrl":"webUrl value"}
+```
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. 
+
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.notebook"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json; odata.metadata=minimal
+Content-Length: 544
+
+{
+    "isDefault": true,
+    "userRole": "userRole-value",
+    "isShared": true,
+    "sectionsUrl": "sectionUrl-value",
+    "sectionGroupsUrl": "sectionGroupUrl-value",
+    "links": {
+        "oneNoteClientUrl": {
+            "href": "href-value"
+        },
+        "oneNoteWebUrl": {
+            "href": "href-value"
+        }
+    },
+    "id": "id-value",
+    "self": "self-value",
+}
+```
+<!-- {
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error:{notebook-getnotebookfromweburl.md}:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+}-->
