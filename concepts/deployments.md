@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти версии национальный облаке, физической и логической изолированной экземпляры Microsoft enterprise облачных служб, которые находятся в границах географическое границы конкретных стран и обслуживается локальной персонала.
-ms.openlocfilehash: 06ca3c24cba17e2d18fc4755f00a2c754e508f88
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.openlocfilehash: e32330397a75670238f090599635ca68a89f115e
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892500"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994393"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -60,15 +60,15 @@ Microsoft Graph доступны следующие функции обычно 
 | Пользователи | ✔ | ✔ | ✔ |
 | Группы | ✔ | ✔ | ✔ |
 | Excel | ✔| ✔* | ✔ |
-| OneDrive; | ✔ | ✔* | ✔ |
+| OneDrive | ✔ | ✔* | ✔ |
 | Почта | ✔ | ✔ | ✔ |
 | Календарь Outlook | ✔ | ✔ | ✔ |
 | Личные контакты | ✔ | ✔ | ✔ |
-| SharePoint| ✔ | ✔* | ✔ |
+| SharePoint| ✔ | ✔ | ✔ |
 | Планировщик|✔ |✔ |✔ |
 | Отчеты  |➖| ✔ |➖|
+| Веб-перехватчики  | ➖|✔* |✔* |
 | Запрос на получение различий | ➖ | ➖| ➖ |
-| Веб-перехватчики  | ➖| ➖| ➖
 |Расширения схемы каталога |➖|➖|➖|
 | Расширения открытого типа|➖|➖|➖|
   
@@ -78,7 +78,7 @@ Microsoft Graph доступны следующие функции обычно 
 * Приложения
 * Субъекты-службы
 
-(*) Ограниченная поддержка API в этом облака.
+(*) Ограниченная поддержка для Exchange и OneDrive служб. Служб Azure AD не поддерживаются. 
 
  > **Важно:** Некоторых служб и компонентов, которые находятся в отдельных областей глобальной службы не становятся доступны во всех национальный облака. Чтобы узнать, какие службы доступны, обратитесь [продуктов, доступных по регионам](https://azure.microsoft.com/global-infrastructure/services/?products=all&regions=usgov-non-regional,us-dod-central,us-dod-east,usgov-arizona,usgov-iowa,usgov-texas,usgov-virginia,china-non-regional,china-east,china-east-2,china-north,china-north-2,germany-non-regional,germany-central,germany-northeast).
 
