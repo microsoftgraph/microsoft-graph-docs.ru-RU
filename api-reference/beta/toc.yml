@@ -2174,7 +2174,7 @@ items:
               - name: Импортированное удостоверение устройства с Windows Autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
                 items:
-                  - name: Список
+                  - name: Перечисление
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-list.md
                   - name: Получение
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-get.md
@@ -4318,7 +4318,7 @@ items:
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-list.md
                   - name: Получение
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-get.md
-                  - name: Создать
+                  - name: Создание
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-create.md
                   - name: Удаление
                     href: api/intune-deviceconfig-windows10easemailprofileconfiguration-delete.md
@@ -5387,7 +5387,7 @@ items:
                     href: api/intune-notification-notificationmessagetemplate-list.md
                   - name: Получение
                     href: api/intune-notification-notificationmessagetemplate-get.md
-                  - name: Создать
+                  - name: Создание
                     href: api/intune-notification-notificationmessagetemplate-create.md
                   - name: Удаление
                     href: api/intune-notification-notificationmessagetemplate-delete.md
@@ -8014,11 +8014,10 @@ items:
                 href: api/channel-list-messagereplies.md
               - name: Получение ответа на сообщения
                 href: api/channel-get-messagereply.md
-          - name: Цепочка сообщений чата
-            href: resources/chatthread.md
-            items:
-              - name: Создание беседы в чате
-                href: api/channel-post-chatthreads.md
+              - name: Создание сообщения
+                href: api/channel-post-chatmessage.md
+              - name: Ответ на сообщение
+                href: api/channel-post-messagereply.md
           - name: Приложения
             href: resources/teamsapp.md
             items:
