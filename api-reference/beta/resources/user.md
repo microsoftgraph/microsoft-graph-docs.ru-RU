@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c8184f858dceec1904678829d54817e86dff3606
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 5b9d3def25d4039b1c5c7efd520671333c69ae55
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745582"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057080"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -63,7 +63,7 @@ ms.locfileid: "29745582"
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
 |[Перечисление licenseDetails](../api/user-list-licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.|
 |[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка участия в списке групп. Это транзитивная проверка.|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[meetingTimeCandidate](meetingtimecandidate.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
+|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
 |[findRoomLists](../api/user-findroomlists.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение списка помещений, определенных в клиенте.|
 |[findRooms](../api/user-findrooms.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. |
 |[getMailTips](../api/user-getmailtips.md)|Коллекия [mailTips](mailtips.md)|Возвращение подсказок о доступности одного или нескольких получателей для вошедшего пользователя. |
