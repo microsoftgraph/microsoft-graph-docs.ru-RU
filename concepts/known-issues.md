@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 351b02e3d423458fba8dbaec2050530ccaba4df0
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576789"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994400"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -38,10 +38,6 @@ ms.locfileid: "29576789"
 Об известных проблемах, связанных с запросом изменений, можно узнать в [соответствующем разделе](#delta-query) этой статьи.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
-
-### <a name="create-chat-thread-api"></a>API создания беседы в чате
-
-Текущий интерфейс API для [создания беседы в чате](/graph/api/channel-post-chatthreads?view=graph-rest-beta) будет заменен более функциональным API, соответствующим схеме для [перечисления сообщений в канале](/graph/api/channel-list-messages?view=graph-rest-beta).
 
 ### <a name="graph-explorer-and-global-admins"></a>Песочница Graph и глобальные администраторы
 

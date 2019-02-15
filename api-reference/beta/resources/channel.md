@@ -4,12 +4,12 @@ description: 'Канал — это коллекция объектов chatMess
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 73775cb446e9cd90eaf31ade28f25638465c884e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: d58a3e0b867a675e378fa126108331fd5b27856c
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511004"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994470"
 ---
 # <a name="channel-resource-type"></a>Тип ресурса channel
 
@@ -28,7 +28,8 @@ ms.locfileid: "29511004"
 |[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Получение сообщений в канале |
-|[Создание беседы в чате](../api/channel-post-chatthreads.md) | Коллекция [chatThread](chatthread.md)| Создание беседы в чате указанного канала.|
+|[Отправка сообщения канала](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Отправка сообщения в канал](../api/channel-post-chatmessage.md) |
+
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -45,7 +46,6 @@ ms.locfileid: "29511004"
 | Связь | Тип   |Описание|
 |:---------------|:--------|:----------|
 |messages|Коллекция [chatMessage](chatmessage.md)|Коллекция всех сообщений в канале. Свойство навигации. Допускается значение null. В настоящее время этот API поддерживает чтение, но в конечном итоге будет также поддерживать написание сообщений.|
-|chatThreads|Коллекция [chatThread](chatthread.md)|(Заменено свойством сообщения). chatThreads поддерживает создание новых сообщений, но не чтение сообщений. ChatThreads — это свойство навигации. Допускает значение null.|
 |tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 
 
@@ -56,7 +56,7 @@ ms.locfileid: "29511004"
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "chatthreads"
+    "messages"
   ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"

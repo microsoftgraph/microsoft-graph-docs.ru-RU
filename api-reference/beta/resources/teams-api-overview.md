@@ -4,12 +4,12 @@ description: Microsoft Teams — это рабочее пространство 
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 2f101560bf716fcb3455346f7d6a3e01912e5451
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7e902300a52773a7a177ee590b49c1cb615f7e2f
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523178"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994435"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -21,14 +21,14 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Ресурс | Методы |
 |:---------------|:--------|
-|[team](../resources/team.md)| [перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [получение планов](plannergroup.md), [получение календаря](event.md) |
-|[channel](../resources/channel.md)|[список](../api/channel-list.md), [создание](../api/channel-post.md), [чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[список](../api/teamstab-list.md), [создание](../api/teamstab-add.md), [чтение](../api/teamstab-get.md), [обновление](../api/teamstab-update.md), [удаление](../api/teamstab-delete.md) |
-|[teamsApp](../resources/teamsapp.md)|[список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
-| (Предварительная версия) [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) и [chatThread](/graph/api/resources/chatthread?view=graph-rest-beta) | [список](/graph/api/channel-list-messages?view=graph-rest-beta), [создание](/graph/api/channel-post-chatthreads?view=graph-rest-beta), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
-| (Предварительная версия) [call](/graph/api/resources/call?view=graph-rest-beta) | [ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[team](../resources/team.md)| [Перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](/graph/api/group-delete?view=graph-rest-1.0), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
+|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](/graph/api/resources/notebook?view=graph-rest-1.0), [получение планов](plannergroup.md), [получение календаря](event.md) |
+|[channel](../resources/channel.md)|[Список](../api/channel-list.md), [создание](../api/channel-post.md), [чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
+|[teamsTab](../resources/teamstab.md) |[Список](../api/teamstab-list.md), [создание](../api/teamstab-add.md), [чтение](../api/teamstab-get.md), [обновление](../api/teamstab-update.md), [удаление](../api/teamstab-delete.md) |
+|[teamsApp](../resources/teamsapp.md)|[Список](../api/teamsapp-list.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
+| [chatMessage](../resources/chatmessage.md) (предварительная версия)| [Список](../api/channel-list-messages.md), [отправка](../api/channel-post-chatmessage.md), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
+| [call](/graph/api/resources/call?view=graph-rest-beta) (предварительная версия) | [Ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
@@ -41,7 +41,7 @@ Microsoft Teams — это рабочее пространство с чатам
 
 Ниже указаны различия на уровне API между командами и группами.
 
-- Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md), [chatThread](../resources/chatthread.md) и [chatMessage](../resources/chatmessage.md).
+- Сохраняемый чат доступен только в Microsoft Teams. Эта функция иерархически представлена ресурсами [channel](../resources/channel.md) и [chatMessage](../resources/chatmessage.md).
 - Групповые беседы доступны только в группах Office 365. Эта функция иерархически представлена ресурсами [conversation](../resources/conversation.md), [conversationThread](../resources/conversationthread.md) и [post](../resources/post.md). 
 - Метод [Перечисление команд, к которым присоединился пользователь](../api/user-list-joinedteams.md) применяется только к Microsoft Teams.
 - [API звонков и собраний по сети](./calls-api-overview.md) применяются только к Microsoft Teams.

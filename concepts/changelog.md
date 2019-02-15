@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 8c97053db703709a172cc8403d3fb2fb1973aa71
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 8b0cc10c46487bbce281ee2233e5c69880cb4156
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967216"
+ms.locfileid: "29994484"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -43,6 +43,10 @@ ms.locfileid: "29967216"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |Бета-версия и версия 1.0| Добавлено свойство **internalId** для ресурса [team](/graph/api/resources/team?view=graph-rest-v1.0).|
 |Дополнение |Бета-версия и версия 1.0| Добавлена поддержка для настройки Word, Excel, PowerPoint, PDF и [вкладок](teams-configuring-builtin-tabs.md) библиотек документов. |
+|Дополнение |бета| Представлен API [создания сообщения в канале](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
+|Дополнение |бета| Представлен API [ответа на сообщение в канале](/graph/api/channel-post-messagereply?view=graph-rest-beta). |
+|Удаление |бета| Удален API POST /teams/{id}/channels/{id}/chatThreads. Вместо него можно использовать [создание сообщения в канале](/graph/api/channel-post-chatmessage?view=graph-rest-beta). |
+
 
 ## <a name="january-2019"></a>Январь 2019 г.
 
@@ -135,32 +139,32 @@ ms.locfileid: "29967216"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |бета| Представлен новый тип ресурса [teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
 |Дополнение |бета| Представлен новый тип ресурса [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлены свойства isFavoriteByDefault, mail и webUrl для [канала](/graph/api/resources/channel?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлено свойство displayName для [команды](/graph/api/resources/team?view=graph-rest-beta)|
-|Дополнение |Бета-версия| Добавлены свойство описание для [команды](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлены свойство классификация для [команды](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлены свойство [специализация](/graph/api/resources/teamspecialization?view=graph-rest-beta) для [команды](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлено свойство [видимость](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлено свойство [шаблон](/graph/api/resources/teamstemplate?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Добавлено семейство владельцы для [группы](/graph/api/resources/team?view=graph-rest-beta).|
-|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamVisibilityType.|
-|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта giphyRatingType.|
-|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationType.|
-|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationStatus.|
-|Дополнение |Бета-версия| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAppDistributionMethod.|
-|Дополнение |Бета-версия| Представлен новый тип ресурса [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
+|Дополнение |бета| Добавлены свойства isFavoriteByDefault, mail и webUrl для [канала](/graph/api/resources/channel?view=graph-rest-beta).|
+|Дополнение |бета| Добавлено свойство displayName для [команды](/graph/api/resources/team?view=graph-rest-beta)|
+|Дополнение |бета| Добавлены свойство описание для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |бета| Добавлены свойство классификация для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |бета| Добавлены свойство [специализация](/graph/api/resources/teamspecialization?view=graph-rest-beta) для [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |бета| Добавлено свойство [видимость](/graph/api/resources/teamvisibilitytype?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |бета| Добавлено свойство [шаблон](/graph/api/resources/teamstemplate?view=graph-rest-beta) для [группы](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |бета| Добавлено семейство владельцы для [группы](/graph/api/resources/team?view=graph-rest-beta).|
+|Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamVisibilityType.|
+|Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта giphyRatingType.|
+|Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationType.|
+|Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAsyncOperationStatus.|
+|Дополнение |бета| Представлен новый элемент перечисления unknownFutureValue для объекта teamsAppDistributionMethod.|
+|Дополнение |бета| Представлен новый тип ресурса [/teamsTemplates](/graph/api/resources/teamstemplate?view=graph-rest-beta).|
 |Дополнение | 1.0 | Добавлена поддержка разрешений администратора для операций c [командами](/graph/api/resources/team?view=graph-rest-1.0), [каналами](/graph/api/resources/channel?view=graph-rest-1.0) и [вкладками](/graph/api/resources/teamstab?view=graph-rest-1.0). |
 
 ### <a name="privileged-identity-management-apis"></a>API управления привилегированными пользователями
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | Бета-версия | Добавлено свойство `registeredRoot` для объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta).|
-| Изменение | Бета-версия | Переименовано свойство `onboardDateTime` объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) для `registeredDateTime`.|
-| Дополнение | Бета-версия | Добавлено новое действие [регистрация ресурсов](/graph/api/governanceresource-register?view=graph-rest-beta).|
-| Удаление | Бета-версия | Удалено свойство`isPermanent` для объекта [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
-| Удаление | Бета-версия | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
-| Удаление | Бета-версия | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Дополнение | бета | Добавлено свойство `registeredRoot` для объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta).|
+| Изменение | бета | Переименовано свойство `onboardDateTime` объекта [governanceResource](/graph/api/resources/governanceresource?view=graph-rest-beta) для `registeredDateTime`.|
+| Дополнение | бета | Добавлено новое действие [регистрация ресурсов](/graph/api/governanceresource-register?view=graph-rest-beta).|
+| Удаление | бета | Удалено свойство`isPermanent` для объекта [governanceRoleAssignment](/graph/api/resources/governanceroleassignment?view=graph-rest-beta).|
+| Удаление | бета | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
+| Удаление | бета | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 
 ## <a name="november-2018"></a>Ноябрь 2018 г.
 
@@ -630,7 +634,7 @@ ms.locfileid: "29967216"
 |Дополнение|Бета-версия|Добавлен тип ресурса [вложения для чата](/graph/api/resources/chatattachment?view=graph-rest-beta)|
 |Дополнение|Бета-версия|Добавлен тип ресурса [упоминания для чата](/graph/api/resources/chatattachment?view=graph-rest-beta)|
 |Дополнение|Бета-версия|Добавлен тип ресурса [реакции для чата](/graph/api/resources/chatattachment?view=graph-rest-beta)|
-|Дополнение|Бета-версия|Добавлена возможность [получения всех API сообщений в канале](/graph/api/channel-list-messages?view=graph-rest-beta) |
+|Дополнение|Бета-версия|Добавлен [API получения всех сообщений в канале](/graph/api/channel-list-messages?view=graph-rest-beta) |
 |Дополнение|Бета-версия|Добавлена возможность [получения API сообщений в канале](/graph/api/channel-get-message?view=graph-rest-beta) |
 |Дополнение|Бета-версия|Добавлена возможность [получения всех API ответов на сообщения](/graph/api/channel-list-messagereplies?view=graph-rest-beta) |
 |Дополнение|Бета-версия|Добавлена возможность [получения ответа для API сообщений](/graph/api/channel-get-messagereply?view=graph-rest-beta) |
@@ -2321,7 +2325,7 @@ ms.locfileid: "29967216"
 | Изменение          | Бета-версия        | Добавлены свойства **osMinimumVersion** и **osMaximumVersion** к сложному типу [deviceEnrollmentPlatformRestrictions](/graph/api/resources/intune-onboarding-deviceenrollmentplatformrestrictions?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Добавлены свойства **isSharedDevice** и **sharedDeviceCachedUsers** к сложному типу [hardwareInformation](/graph/api/resources/intune-deviceconfig-hardwareinformation?view=graph-rest-beta). |
 | Изменение          | Бета-версия        | Изменены следующие свойства сложного типа [omaSettingBase64](/graph/api/resources/intune-deviceconfig-omasettingbase64?view=graph-rest-beta):<br/>**fileName** больше не обязательно указывать.<br/> |
-| Изменение          | Бета-версия        | Изменены следующие свойства сложного типа [omaSettingStringXml](/graph/api/resources/intune-deviceconfig-omasettingstringxml?view=graph-rest-beta):<br/>**fileName** больше не обязательно указывать.<br/> |
+| Изменение          | бета        | Изменены следующие свойства сложного типа [omaSettingStringXml](/graph/api/resources/intune-deviceconfig-omasettingstringxml?view=graph-rest-beta):<br/>**fileName** больше не обязательно указывать.<br/> |
 
 ## <a name="march-2017"></a>Март 2017 г.
 
