@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса teamsAppInstallation
-description: 'TeamsApp, установленные в группе. '
+title: Тип ресурса Теамсаппинсталлатион
+description: 'TeamsApp, установленный в команде. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b4cf14c36fc0ab0b33f88d4b330e76957e65164a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f6ff72ab99d20eba9880630248e4b61fca5c2521
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512838"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057017"
 ---
-# <a name="teamsappinstallation-resource-type"></a>Тип ресурса teamsAppInstallation
+# <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-[TeamsApp](teamsapp.md) установлен в [группы](team.md). Любой программы-роботы, являющихся частью приложения становится частью любой группы добавляется приложение.
+[TeamsApp](teamsapp.md) , установленный в [команде](team.md). Все боты, которые входят в состав приложения, станут частью любой команды, в которую добавляется приложение.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Список приложений, установленные в группе.|
-|[Добавить приложение](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Добавляет (установить) приложения в группу.|
-|[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет (удаление) приложения из группы.|
-|[Обновление приложения](../api/teamsappinstallation-delete.md) | Нет | Обновление до последней версии приложения.|
+|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Список приложений, установленных в команде.|
+|[Добавление приложения](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Добавляет (устанавливает) приложение в команду.|
+|[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
+|[Обновление приложения](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | Уникальный идентификатор (не appid команды). |
+| id                  | string   | Уникальный идентификатор (а не идентификаторы Teams). |
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 | Связь   | Тип    | Описание |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md)| Приложения, которая устанавливается. |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| Подробные сведения о данной версии приложения. |
+|teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
+|Теамсаппдефинитион|[Теамсаппдефинитион](teamsapp.md)| Сведения о данной версии приложения. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,7 +56,7 @@ ms.locfileid: "29512838"
 # <a name="see-also"></a>См. также
 
 - [teamsApp](teamsapp.md)
-- [teamsAppDefinition](teamsappdefinition.md)
+- [Теамсаппдефинитион](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 
 

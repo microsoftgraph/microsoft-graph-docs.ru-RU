@@ -1,15 +1,15 @@
 ---
 title: Тип ресурсов meetingTimeSuggestion
-description: 'Предложения о собрании, который содержит сведения, например, время собрания, вероятность присутствия, отдельных '
+description: 'Предложение о собрании, которое включает такие сведения, как время собрания, вероятность посещения, Индивидуальная '
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: 029e579ce5cba0a578741cb4ce30886090a71cd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 379bb4ac4be8e2d8d1bec494cf4d573550d46b55
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523185"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057031"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Тип ресурсов meetingTimeSuggestion
 
@@ -31,10 +31,11 @@ ms.locfileid: "29523185"
 
 ```json
 {
-  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailability"}],
+  "attendeeAvailability": [{"@odata.type": "microsoft.graph.attendeeAvailabilityDataModel"}],
   "confidence": 1024.0,
-  "locations": [{"@odata.type": "microsoft.graph.location"}],
-  "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+  "locations": [{"@odata.type": "microsoft.graph.locationDataModel"}],
+  "meetingTimeSlot": {"@odata.type": "microsoft.graph.meetingTimeSlotDataModel"},
+  "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
 }
@@ -43,11 +44,11 @@ ms.locfileid: "29523185"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attendeeAvailability|Коллекция [attendeeAvailability](attendeeavailability.md)|Массив, показывающий состояние занятости каждого участника для этого варианта собрания.|
+|attendeeAvailability|Коллекция [аттендиаваилабилитидатамодел](attendeeavailabilitydatamodel.md)|Массив, показывающий состояние занятости каждого участника для этого варианта собрания.|
 |confidence|Double|Процент вероятности того, что все участники будут присутствовать на собрании.|
-|locations|Коллекция [location](location.md)|Массив, в котором указано имя и географические данные каждого расположения для проведения этого варианта собрания.|
-|meetingTimeSlot|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
-|organizerAvailability|Строка| Доступность организатора собрания для этого варианта собрания. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|locations|Коллекция [локатиондатамодел](locationdatamodel.md)|Массив, в котором указано имя и географические данные каждого расположения для проведения этого варианта собрания.|
+|meetingTimeSlot|[Митингтимеслотдатамодел](meetingtimeslotdatamodel.md)|Период времени, предложенный для собрания.|
+|organizerAvailability|availabilityStatus| Доступность организатора собрания для этого варианта собрания. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
 |suggestionReason|String|Обоснование предложенного времени для проведения собрания.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

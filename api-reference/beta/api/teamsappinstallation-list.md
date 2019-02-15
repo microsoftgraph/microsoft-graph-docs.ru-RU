@@ -1,21 +1,21 @@
 ---
-title: Список приложений в группы
-description: Получить список приложений, установленные в указанной группы.
+title: Список приложений в команде
+description: Получение списка приложений, установленных в указанной команде.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: fe3ba5cd3be91c7e69b77f67cb53ab702741c6f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 749a0c0e0c3a93b54487d9dea8823ad59a2658fd
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524613"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057010"
 ---
-# <a name="list-apps-in-team"></a>Список приложений в группы
+# <a name="list-apps-in-team"></a>Список приложений в команде
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечь список [приложений установлен](../resources/teamsappinstallation.md) в указанной [группы](../resources/team.md).
+Получение списка приложений, [установленных](../resources/teamsappinstallation.md) в указанной [команде](../resources/team.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "29524613"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.Read.All, Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Group.Read.All, Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,7 +37,7 @@ GET /teams/{id}/installedApps
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает $filter $select, и $разверните [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов](/graph/query-parameters) $filter, $select и $Expand OData для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -47,11 +47,11 @@ GET /teams/{id}/installedApps
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [teamsApp](../resources/teamsapp.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [teamsApp](../resources/teamsapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -67,7 +67,7 @@ GET /teams/{id}/installedApps
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -92,7 +92,7 @@ Content-length: 55
 }
 ```
 
-## <a name="example----getting-the-names-of-the-installed-apps"></a>Пример — начало имен установленные приложения
+## <a name="example----getting-the-names-of-the-installed-apps"></a>Пример: извлечение имен установленных приложений
 
 ### <a name="request"></a>Запрос
 
@@ -106,7 +106,7 @@ Content-length: 55
 GET https://graph.microsoft.com/beta/teams/{id}/installedApps?$expand=teamsAppDefinition
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

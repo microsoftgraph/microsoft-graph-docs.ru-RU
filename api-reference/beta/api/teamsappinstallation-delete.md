@@ -1,21 +1,23 @@
 ---
 title: Удаление приложения из группы
-description: Удаление приложения из указанной группы.
+description: Удаляет приложение из указанной команды.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 47db9ece65eea6d91d03b4c4652a8c5df59e9e7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aa75f72375432609afb748959cb82ff63fa1b721
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521988"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057024"
 ---
 # <a name="delete-app-from-team"></a>Удаление приложения из группы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [приложения](../resources/teamsappinstallation.md) из указанной [группы](../resources/team.md).
+Удаляет [приложение](../resources/teamsappinstallation.md) из указанной [команды](../resources/team.md).
+
+>**Примечание:** Если вы используете разрешения приложения, произойдет известная ошибка. Дополнительные сведения см. в статье [Известные проблемы](graph/concepts/known-issues.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +26,7 @@ ms.locfileid: "29521988"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Не поддерживается. |
+|Для приложений | Group.ReadWrite.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +40,7 @@ DELETE /teams/{id}/installedApps/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
@@ -54,7 +56,7 @@ DELETE /teams/{id}/installedApps/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",

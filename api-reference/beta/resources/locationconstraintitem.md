@@ -2,12 +2,14 @@
 title: Тип ресурсов locationConstraintItem
 description: Условия, заданные клиентом в отношении расположения для проведения собрания.
 localization_priority: Normal
-ms.openlocfilehash: 9752b3acec2dd9071e31b743245d662168ecdfd6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 8e0b14096d8be66a6aab6d4e73cf0941d7db7b5c
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508855"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057003"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
@@ -15,7 +17,7 @@ ms.locfileid: "29508855"
 
 Условия, заданные клиентом в отношении расположения для проведения собрания.
 
-Тип, производный от [location](location.md).
+Производный от [локатиондатамодел](locationdatamodel.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -48,7 +50,7 @@ ms.locfileid: "29508855"
 | displayName  | String | Имя, связанное с расположением.                       |
 | locationEmailAddress | String | Необязательный электронный адрес для расположения. |
 | locationUri | String | Необязательный URI, представляющий местоположение. |
-| resolveAvailability | Логическое | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
+| resolveAvailability | Boolean | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

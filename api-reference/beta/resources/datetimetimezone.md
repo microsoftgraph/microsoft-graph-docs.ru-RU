@@ -2,12 +2,12 @@
 title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
 localization_priority: Normal
-ms.openlocfilehash: aad1318e1623b41a67eb23c20ad42dc48553d81c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee5359c0ababad2a4f785d17a02ac5bb618d2681
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521280"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30057045"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
@@ -18,10 +18,10 @@ ms.locfileid: "29521280"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|DateTime|String|Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).|
-|TimeZone|String|Один из указанных ниже часовых поясов.|
+|dateTime|String|Один момент времени в объединенном представлении даты и времени (`{date}T{time}`). Пример: "2019 – 04 – 16T09:00:00".|
+|timeZone|String|Название часового пояса, как описано ниже.|
 
-Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.
+Для свойства **TimeZone** можно задать любой часовой пояс, поддерживаемый Windows, а также следующие имена часовых поясов.
 
 Etc/GMT+12
 
@@ -223,7 +223,7 @@ Pacific/Kiritimati
 
 ## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
