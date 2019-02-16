@@ -4,12 +4,12 @@ description: Устанавливает приложение в указанну
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 35d2521d9bff37ea45f7496a825429762daaf8f7
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
+ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056996"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "30070829"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
@@ -17,7 +17,7 @@ ms.locfileid: "30056996"
 
 Устанавливает [приложение](../resources/teamsapp.md) в указанную [группу](../resources/team.md).
 
->**Примечание:** Если вы используете разрешения приложения, произойдет известная ошибка. Дополнительные сведения см. в статье [Известные проблемы](graph/concepts/known-issues.md).
+>**Примечание:** Если вы используете разрешения приложения, произойдет известная ошибка. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
