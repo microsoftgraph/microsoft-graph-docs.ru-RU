@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 21667092deabf8a0c078da114325c25dbe223045
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
+ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994400"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "30056968"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -39,10 +39,6 @@ ms.locfileid: "29994400"
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-### <a name="graph-explorer-and-global-admins"></a>Песочница Graph и глобальные администраторы
-
-В настоящее время песочница Graph позволяет глобальным администраторам управлять командами, если они не являются ее владельцами или участниками. Но когда другие приложения попытаются выполнить аналогичные действия, вызовы API завершатся сбоем, если текущий пользователь не является участником или владельцем группы.
-
 ### <a name="get-teams-and-post-teams-are-not-supported"></a>Методы GET /teams и POST /teams не поддерживаются
 
 Сведения о получении списка команд см. в статьях [Перечисление всех команд](teams-list-all-teams.md) и [Перечисление ваших команд](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
@@ -54,6 +50,12 @@ ms.locfileid: "29994400"
 Новые команды будут перечислены.
 У некоторых старых команд нет свойства **resourceProvisioningOptions**, содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
 В будущем свойство **resourceProvisioningOptions** будет присваиваться существующим командам, не открывавшимся в Microsoft Teams.
+
+### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>Установка и удаление приложений с помощью разрешений приложений
+
+При удалении приложения из команды с использованием разрешений API будет возвращать ошибку с кодом 500 несмотря на то, что приложение было успешно удалено.
+
+При установке, обновлении и удалении приложений в команде с помощью разрешений не выполняется запись событий журнала аудита.
 
 ## <a name="groups"></a>Группы
 
