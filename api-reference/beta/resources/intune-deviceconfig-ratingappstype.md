@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления ratingAppsType
-description: Оценка как и мультимедийного контента приложения
-localization_priority: Normal
+title: тип перечисления Ратингаппстипе
+description: Оценка приложений как в мультимедийном контенте
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b8abf9bd3c1c8e0a0fdf9fb4aaada295c22f5cb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 301d8dc3c41865e86c8d997e329cfa5f57a7cbc9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406565"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155323"
 ---
-# <a name="ratingappstype-enum-type"></a><span data-ttu-id="475f8-103">Тип перечисления ratingAppsType</span><span class="sxs-lookup"><span data-stu-id="475f8-103">ratingAppsType enum type</span></span>
+# <a name="ratingappstype-enum-type"></a><span data-ttu-id="2b898-103">тип перечисления Ратингаппстипе</span><span class="sxs-lookup"><span data-stu-id="2b898-103">ratingAppsType enum type</span></span>
 
-> <span data-ttu-id="475f8-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="475f8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="475f8-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="475f8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2b898-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2b898-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="475f8-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="475f8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2b898-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2b898-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="475f8-107">Оценка как и мультимедийного контента приложения</span><span class="sxs-lookup"><span data-stu-id="475f8-107">Apps rating as in media content</span></span>
+<span data-ttu-id="2b898-106">Оценка приложений как в мультимедийном контенте</span><span class="sxs-lookup"><span data-stu-id="2b898-106">Apps rating as in media content</span></span>
 
-## <a name="members"></a><span data-ttu-id="475f8-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="475f8-108">Members</span></span>
-|<span data-ttu-id="475f8-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="475f8-109">Member</span></span>|<span data-ttu-id="475f8-110">Значение</span><span class="sxs-lookup"><span data-stu-id="475f8-110">Value</span></span>|<span data-ttu-id="475f8-111">Описание</span><span class="sxs-lookup"><span data-stu-id="475f8-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="2b898-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="2b898-107">Members</span></span>
+|<span data-ttu-id="2b898-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="2b898-108">Member</span></span>|<span data-ttu-id="2b898-109">Значение</span><span class="sxs-lookup"><span data-stu-id="2b898-109">Value</span></span>|<span data-ttu-id="2b898-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2b898-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="475f8-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="475f8-112">allAllowed</span></span>|<span data-ttu-id="475f8-113">0</span><span class="sxs-lookup"><span data-stu-id="475f8-113">0</span></span>|<span data-ttu-id="475f8-114">Значение по умолчанию, разрешать все содержимое приложения</span><span class="sxs-lookup"><span data-stu-id="475f8-114">Default value, allow all apps content</span></span>|
-|<span data-ttu-id="475f8-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="475f8-115">allBlocked</span></span>|<span data-ttu-id="475f8-116">1</span><span class="sxs-lookup"><span data-stu-id="475f8-116">1</span></span>|<span data-ttu-id="475f8-117">Не разрешать контента приложения</span><span class="sxs-lookup"><span data-stu-id="475f8-117">Do not allow any apps content</span></span>|
-|<span data-ttu-id="475f8-118">agesAbove4</span><span class="sxs-lookup"><span data-stu-id="475f8-118">agesAbove4</span></span>|<span data-ttu-id="475f8-119">2</span><span class="sxs-lookup"><span data-stu-id="475f8-119">2</span></span>|<span data-ttu-id="475f8-120">4 + срок действия 4 и выше</span><span class="sxs-lookup"><span data-stu-id="475f8-120">4+, age 4 and above</span></span>|
-|<span data-ttu-id="475f8-121">agesAbove9</span><span class="sxs-lookup"><span data-stu-id="475f8-121">agesAbove9</span></span>|<span data-ttu-id="475f8-122">3</span><span class="sxs-lookup"><span data-stu-id="475f8-122">3</span></span>|<span data-ttu-id="475f8-123">9 + возраст 9 и выше</span><span class="sxs-lookup"><span data-stu-id="475f8-123">9+, age 9 and above</span></span>|
-|<span data-ttu-id="475f8-124">agesAbove12</span><span class="sxs-lookup"><span data-stu-id="475f8-124">agesAbove12</span></span>|<span data-ttu-id="475f8-125">4</span><span class="sxs-lookup"><span data-stu-id="475f8-125">4</span></span>|<span data-ttu-id="475f8-126">12 + до 12 лет и выше</span><span class="sxs-lookup"><span data-stu-id="475f8-126">12+, age 12 and above</span></span> |
-|<span data-ttu-id="475f8-127">agesAbove17</span><span class="sxs-lookup"><span data-stu-id="475f8-127">agesAbove17</span></span>|<span data-ttu-id="475f8-128">5</span><span class="sxs-lookup"><span data-stu-id="475f8-128">5</span></span>|<span data-ttu-id="475f8-129">17 + возраст 17 и выше</span><span class="sxs-lookup"><span data-stu-id="475f8-129">17+, age 17 and above</span></span>|
+|<span data-ttu-id="2b898-111">Аллалловед</span><span class="sxs-lookup"><span data-stu-id="2b898-111">allAllowed</span></span>|<span data-ttu-id="2b898-112">нуль</span><span class="sxs-lookup"><span data-stu-id="2b898-112">0</span></span>|<span data-ttu-id="2b898-113">Значение по умолчанию, разрешить все содержимое приложений</span><span class="sxs-lookup"><span data-stu-id="2b898-113">Default value, allow all apps content</span></span>|
+|<span data-ttu-id="2b898-114">Аллблоккед</span><span class="sxs-lookup"><span data-stu-id="2b898-114">allBlocked</span></span>|<span data-ttu-id="2b898-115">1,1</span><span class="sxs-lookup"><span data-stu-id="2b898-115">1</span></span>|<span data-ttu-id="2b898-116">Не разрешать контент приложений</span><span class="sxs-lookup"><span data-stu-id="2b898-116">Do not allow any apps content</span></span>|
+|<span data-ttu-id="2b898-117">agesAbove4</span><span class="sxs-lookup"><span data-stu-id="2b898-117">agesAbove4</span></span>|<span data-ttu-id="2b898-118">2</span><span class="sxs-lookup"><span data-stu-id="2b898-118">2</span></span>|<span data-ttu-id="2b898-119">4 +, возраст 4 и выше</span><span class="sxs-lookup"><span data-stu-id="2b898-119">4+, age 4 and above</span></span>|
+|<span data-ttu-id="2b898-120">agesAbove9</span><span class="sxs-lookup"><span data-stu-id="2b898-120">agesAbove9</span></span>|<span data-ttu-id="2b898-121">4</span><span class="sxs-lookup"><span data-stu-id="2b898-121">3</span></span>|<span data-ttu-id="2b898-122">9 +, возраст 9 и более поздних версий</span><span class="sxs-lookup"><span data-stu-id="2b898-122">9+, age 9 and above</span></span>|
+|<span data-ttu-id="2b898-123">agesAbove12</span><span class="sxs-lookup"><span data-stu-id="2b898-123">agesAbove12</span></span>|<span data-ttu-id="2b898-124">4</span><span class="sxs-lookup"><span data-stu-id="2b898-124">4</span></span>|<span data-ttu-id="2b898-125">12 +, 12 лет и более</span><span class="sxs-lookup"><span data-stu-id="2b898-125">12+, age 12 and above</span></span> |
+|<span data-ttu-id="2b898-126">agesAbove17</span><span class="sxs-lookup"><span data-stu-id="2b898-126">agesAbove17</span></span>|<span data-ttu-id="2b898-127">17:00</span><span class="sxs-lookup"><span data-stu-id="2b898-127">5</span></span>|<span data-ttu-id="2b898-128">17 +, возраст 17 и выше</span><span class="sxs-lookup"><span data-stu-id="2b898-128">17+, age 17 and above</span></span>|
 
 
 

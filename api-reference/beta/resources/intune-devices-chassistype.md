@@ -1,36 +1,36 @@
 ---
-title: Тип перечисления тип корпуса
+title: тип перечисления Чассистипе
 description: Тип корпуса.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29daba2a6e1c9aacf97b3b5b946d925c4163ea69
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1e925dcf502c28951bb8636652e5d429d0cd0916
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422385"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161525"
 ---
-# <a name="chassistype-enum-type"></a><span data-ttu-id="b8dd4-103">Тип перечисления тип корпуса</span><span class="sxs-lookup"><span data-stu-id="b8dd4-103">chassisType enum type</span></span>
+# <a name="chassistype-enum-type"></a><span data-ttu-id="dcb77-103">тип перечисления Чассистипе</span><span class="sxs-lookup"><span data-stu-id="dcb77-103">chassisType enum type</span></span>
 
-> <span data-ttu-id="b8dd4-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="b8dd4-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="dcb77-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="dcb77-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="b8dd4-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="dcb77-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="dcb77-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="b8dd4-107">Тип корпуса.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-107">Chassis type.</span></span>
+<span data-ttu-id="dcb77-106">Тип корпуса.</span><span class="sxs-lookup"><span data-stu-id="dcb77-106">Chassis type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="b8dd4-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="b8dd4-108">Members</span></span>
-|<span data-ttu-id="b8dd4-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="b8dd4-109">Member</span></span>|<span data-ttu-id="b8dd4-110">Значение</span><span class="sxs-lookup"><span data-stu-id="b8dd4-110">Value</span></span>|<span data-ttu-id="b8dd4-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b8dd4-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="dcb77-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="dcb77-107">Members</span></span>
+|<span data-ttu-id="dcb77-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="dcb77-108">Member</span></span>|<span data-ttu-id="dcb77-109">Значение</span><span class="sxs-lookup"><span data-stu-id="dcb77-109">Value</span></span>|<span data-ttu-id="dcb77-110">Описание</span><span class="sxs-lookup"><span data-stu-id="dcb77-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="b8dd4-112">unknown</span><span class="sxs-lookup"><span data-stu-id="b8dd4-112">unknown</span></span>|<span data-ttu-id="b8dd4-113">0</span><span class="sxs-lookup"><span data-stu-id="b8dd4-113">0</span></span>|<span data-ttu-id="b8dd4-114">Неизвестно.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-114">Unknown.</span></span>|
-|<span data-ttu-id="b8dd4-115">рабочий стол</span><span class="sxs-lookup"><span data-stu-id="b8dd4-115">desktop</span></span>|<span data-ttu-id="b8dd4-116">1</span><span class="sxs-lookup"><span data-stu-id="b8dd4-116">1</span></span>|<span data-ttu-id="b8dd4-117">Рабочий стол.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-117">Desktop.</span></span>|
-|<span data-ttu-id="b8dd4-118">ноутбуков</span><span class="sxs-lookup"><span data-stu-id="b8dd4-118">laptop</span></span>|<span data-ttu-id="b8dd4-119">2</span><span class="sxs-lookup"><span data-stu-id="b8dd4-119">2</span></span>|<span data-ttu-id="b8dd4-120">Ноутбуков.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-120">Laptop.</span></span>|
-|<span data-ttu-id="b8dd4-121">worksWorkstation</span><span class="sxs-lookup"><span data-stu-id="b8dd4-121">worksWorkstation</span></span>|<span data-ttu-id="b8dd4-122">3</span><span class="sxs-lookup"><span data-stu-id="b8dd4-122">3</span></span>|<span data-ttu-id="b8dd4-123">Рабочей станции.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-123">Workstation.</span></span>|
-|<span data-ttu-id="b8dd4-124">enterpriseServer</span><span class="sxs-lookup"><span data-stu-id="b8dd4-124">enterpriseServer</span></span>|<span data-ttu-id="b8dd4-125">4</span><span class="sxs-lookup"><span data-stu-id="b8dd4-125">4</span></span>|<span data-ttu-id="b8dd4-126">Сервер предприятия.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-126">Enterprise server.</span></span>|
-|<span data-ttu-id="b8dd4-127">phone</span><span class="sxs-lookup"><span data-stu-id="b8dd4-127">phone</span></span>|<span data-ttu-id="b8dd4-128">100</span><span class="sxs-lookup"><span data-stu-id="b8dd4-128">100</span></span>|<span data-ttu-id="b8dd4-129">Телефон.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-129">Phone.</span></span>|
-|<span data-ttu-id="b8dd4-130">планшет</span><span class="sxs-lookup"><span data-stu-id="b8dd4-130">tablet</span></span>|<span data-ttu-id="b8dd4-131">101</span><span class="sxs-lookup"><span data-stu-id="b8dd4-131">101</span></span>|<span data-ttu-id="b8dd4-132">Мобильные планшетного ПК.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-132">Mobile tablet.</span></span>|
-|<span data-ttu-id="b8dd4-133">mobileOther</span><span class="sxs-lookup"><span data-stu-id="b8dd4-133">mobileOther</span></span>|<span data-ttu-id="b8dd4-134">102</span><span class="sxs-lookup"><span data-stu-id="b8dd4-134">102</span></span>|<span data-ttu-id="b8dd4-135">Другие mobile.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-135">Other mobile.</span></span>|
-|<span data-ttu-id="b8dd4-136">mobileUnknown</span><span class="sxs-lookup"><span data-stu-id="b8dd4-136">mobileUnknown</span></span>|<span data-ttu-id="b8dd4-137">103</span><span class="sxs-lookup"><span data-stu-id="b8dd4-137">103</span></span>|<span data-ttu-id="b8dd4-138">Неизвестный мобильных устройств.</span><span class="sxs-lookup"><span data-stu-id="b8dd4-138">Unknown mobile.</span></span>|
+|<span data-ttu-id="dcb77-111">unknown</span><span class="sxs-lookup"><span data-stu-id="dcb77-111">unknown</span></span>|<span data-ttu-id="dcb77-112">нуль</span><span class="sxs-lookup"><span data-stu-id="dcb77-112">0</span></span>|<span data-ttu-id="dcb77-113">Найден.</span><span class="sxs-lookup"><span data-stu-id="dcb77-113">Unknown.</span></span>|
+|<span data-ttu-id="dcb77-114">системной</span><span class="sxs-lookup"><span data-stu-id="dcb77-114">desktop</span></span>|<span data-ttu-id="dcb77-115">1,1</span><span class="sxs-lookup"><span data-stu-id="dcb77-115">1</span></span>|<span data-ttu-id="dcb77-116">Системной.</span><span class="sxs-lookup"><span data-stu-id="dcb77-116">Desktop.</span></span>|
+|<span data-ttu-id="dcb77-117">ноутбуков</span><span class="sxs-lookup"><span data-stu-id="dcb77-117">laptop</span></span>|<span data-ttu-id="dcb77-118">2</span><span class="sxs-lookup"><span data-stu-id="dcb77-118">2</span></span>|<span data-ttu-id="dcb77-119">Ноутбуков.</span><span class="sxs-lookup"><span data-stu-id="dcb77-119">Laptop.</span></span>|
+|<span data-ttu-id="dcb77-120">Ворксворкстатион</span><span class="sxs-lookup"><span data-stu-id="dcb77-120">worksWorkstation</span></span>|<span data-ttu-id="dcb77-121">4</span><span class="sxs-lookup"><span data-stu-id="dcb77-121">3</span></span>|<span data-ttu-id="dcb77-122">Рабочие.</span><span class="sxs-lookup"><span data-stu-id="dcb77-122">Workstation.</span></span>|
+|<span data-ttu-id="dcb77-123">Ентерприсесервер</span><span class="sxs-lookup"><span data-stu-id="dcb77-123">enterpriseServer</span></span>|<span data-ttu-id="dcb77-124">4</span><span class="sxs-lookup"><span data-stu-id="dcb77-124">4</span></span>|<span data-ttu-id="dcb77-125">Сервер предприятия.</span><span class="sxs-lookup"><span data-stu-id="dcb77-125">Enterprise server.</span></span>|
+|<span data-ttu-id="dcb77-126">phone</span><span class="sxs-lookup"><span data-stu-id="dcb77-126">phone</span></span>|<span data-ttu-id="dcb77-127">100</span><span class="sxs-lookup"><span data-stu-id="dcb77-127">100</span></span>|<span data-ttu-id="dcb77-128">Звонков.</span><span class="sxs-lookup"><span data-stu-id="dcb77-128">Phone.</span></span>|
+|<span data-ttu-id="dcb77-129">ПК</span><span class="sxs-lookup"><span data-stu-id="dcb77-129">tablet</span></span>|<span data-ttu-id="dcb77-130">101</span><span class="sxs-lookup"><span data-stu-id="dcb77-130">101</span></span>|<span data-ttu-id="dcb77-131">Мобильный планшет.</span><span class="sxs-lookup"><span data-stu-id="dcb77-131">Mobile tablet.</span></span>|
+|<span data-ttu-id="dcb77-132">Мобилеосер</span><span class="sxs-lookup"><span data-stu-id="dcb77-132">mobileOther</span></span>|<span data-ttu-id="dcb77-133">102</span><span class="sxs-lookup"><span data-stu-id="dcb77-133">102</span></span>|<span data-ttu-id="dcb77-134">Другой мобильный.</span><span class="sxs-lookup"><span data-stu-id="dcb77-134">Other mobile.</span></span>|
+|<span data-ttu-id="dcb77-135">Мобилеункновн</span><span class="sxs-lookup"><span data-stu-id="dcb77-135">mobileUnknown</span></span>|<span data-ttu-id="dcb77-136">103</span><span class="sxs-lookup"><span data-stu-id="dcb77-136">103</span></span>|<span data-ttu-id="dcb77-137">НеИзвестный мобильный телефон.</span><span class="sxs-lookup"><span data-stu-id="dcb77-137">Unknown mobile.</span></span>|
 
 
 

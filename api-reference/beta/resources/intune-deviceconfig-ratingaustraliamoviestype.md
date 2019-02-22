@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления ratingAustraliaMoviesType
-description: Фильмы рейтинг метки в Австралии
-localization_priority: Normal
+title: тип перечисления Ратингаустралиамовиестипе
+description: Метки оценки фильмов в Австралии
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee94e37275d0a97729ea3de12264067ecf1e2d3d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 150f5612e0f904c5fda251d630fa3a9df749e5d5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408413"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162666"
 ---
-# <a name="ratingaustraliamoviestype-enum-type"></a><span data-ttu-id="298cb-103">Тип перечисления ratingAustraliaMoviesType</span><span class="sxs-lookup"><span data-stu-id="298cb-103">ratingAustraliaMoviesType enum type</span></span>
+# <a name="ratingaustraliamoviestype-enum-type"></a><span data-ttu-id="ed1ef-103">тип перечисления Ратингаустралиамовиестипе</span><span class="sxs-lookup"><span data-stu-id="ed1ef-103">ratingAustraliaMoviesType enum type</span></span>
 
-> <span data-ttu-id="298cb-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="298cb-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="298cb-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="298cb-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ed1ef-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed1ef-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="298cb-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="298cb-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ed1ef-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ed1ef-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="298cb-107">Фильмы рейтинг метки в Австралии</span><span class="sxs-lookup"><span data-stu-id="298cb-107">Movies rating labels in Australia</span></span>
+<span data-ttu-id="ed1ef-106">Метки оценки фильмов в Австралии</span><span class="sxs-lookup"><span data-stu-id="ed1ef-106">Movies rating labels in Australia</span></span>
 
-## <a name="members"></a><span data-ttu-id="298cb-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="298cb-108">Members</span></span>
-|<span data-ttu-id="298cb-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="298cb-109">Member</span></span>|<span data-ttu-id="298cb-110">Значение</span><span class="sxs-lookup"><span data-stu-id="298cb-110">Value</span></span>|<span data-ttu-id="298cb-111">Описание</span><span class="sxs-lookup"><span data-stu-id="298cb-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ed1ef-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="ed1ef-107">Members</span></span>
+|<span data-ttu-id="ed1ef-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="ed1ef-108">Member</span></span>|<span data-ttu-id="ed1ef-109">Значение</span><span class="sxs-lookup"><span data-stu-id="ed1ef-109">Value</span></span>|<span data-ttu-id="ed1ef-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ed1ef-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="298cb-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="298cb-112">allAllowed</span></span>|<span data-ttu-id="298cb-113">0</span><span class="sxs-lookup"><span data-stu-id="298cb-113">0</span></span>|<span data-ttu-id="298cb-114">Значение по умолчанию, разрешать все содержимое кино</span><span class="sxs-lookup"><span data-stu-id="298cb-114">Default value, allow all movies content</span></span>|
-|<span data-ttu-id="298cb-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="298cb-115">allBlocked</span></span>|<span data-ttu-id="298cb-116">1</span><span class="sxs-lookup"><span data-stu-id="298cb-116">1</span></span>|<span data-ttu-id="298cb-117">Не разрешать любое содержимое кино</span><span class="sxs-lookup"><span data-stu-id="298cb-117">Do not allow any movies content</span></span>|
-|<span data-ttu-id="298cb-118">Общие</span><span class="sxs-lookup"><span data-stu-id="298cb-118">general</span></span>|<span data-ttu-id="298cb-119">2</span><span class="sxs-lookup"><span data-stu-id="298cb-119">2</span></span>|<span data-ttu-id="298cb-120">Классификация G подходит для всех пользователей</span><span class="sxs-lookup"><span data-stu-id="298cb-120">The G classification is suitable for everyone</span></span>|
-|<span data-ttu-id="298cb-121">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="298cb-121">parentalGuidance</span></span>|<span data-ttu-id="298cb-122">3</span><span class="sxs-lookup"><span data-stu-id="298cb-122">3</span></span>|<span data-ttu-id="298cb-123">СТРАНИЦА рекомендует средств просмотра в списке 15 руководство по из родителей или опекунов</span><span class="sxs-lookup"><span data-stu-id="298cb-123">The PG recommends viewers under 15 with guidance from parents or guardians</span></span>|
-|<span data-ttu-id="298cb-124">для взрослых</span><span class="sxs-lookup"><span data-stu-id="298cb-124">mature</span></span>|<span data-ttu-id="298cb-125">4</span><span class="sxs-lookup"><span data-stu-id="298cb-125">4</span></span>|<span data-ttu-id="298cb-126">Классификация M не рекомендуется для средств просмотра в списке 15</span><span class="sxs-lookup"><span data-stu-id="298cb-126">The M classification is not recommended for viewers under 15</span></span>|
-|<span data-ttu-id="298cb-127">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="298cb-127">agesAbove15</span></span>|<span data-ttu-id="298cb-128">5</span><span class="sxs-lookup"><span data-stu-id="298cb-128">5</span></span>|<span data-ttu-id="298cb-129">Классификация MA15 + не подходит для средств просмотра в списке 15</span><span class="sxs-lookup"><span data-stu-id="298cb-129">The MA15+ classification is not suitable for viewers under 15</span></span>|
-|<span data-ttu-id="298cb-130">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="298cb-130">agesAbove18</span></span>|<span data-ttu-id="298cb-131">6</span><span class="sxs-lookup"><span data-stu-id="298cb-131">6</span></span>|<span data-ttu-id="298cb-132">Классификация R18 + не подходит для средств просмотра в списке 18</span><span class="sxs-lookup"><span data-stu-id="298cb-132">The R18+ classification is not suitable for viewers under 18</span></span>|
+|<span data-ttu-id="ed1ef-111">Аллалловед</span><span class="sxs-lookup"><span data-stu-id="ed1ef-111">allAllowed</span></span>|<span data-ttu-id="ed1ef-112">нуль</span><span class="sxs-lookup"><span data-stu-id="ed1ef-112">0</span></span>|<span data-ttu-id="ed1ef-113">Значение по умолчанию, разрешить все содержимое фильмов</span><span class="sxs-lookup"><span data-stu-id="ed1ef-113">Default value, allow all movies content</span></span>|
+|<span data-ttu-id="ed1ef-114">Аллблоккед</span><span class="sxs-lookup"><span data-stu-id="ed1ef-114">allBlocked</span></span>|<span data-ttu-id="ed1ef-115">1,1</span><span class="sxs-lookup"><span data-stu-id="ed1ef-115">1</span></span>|<span data-ttu-id="ed1ef-116">Не разрешать никакие видеоролики</span><span class="sxs-lookup"><span data-stu-id="ed1ef-116">Do not allow any movies content</span></span>|
+|<span data-ttu-id="ed1ef-117">обобщен</span><span class="sxs-lookup"><span data-stu-id="ed1ef-117">general</span></span>|<span data-ttu-id="ed1ef-118">2</span><span class="sxs-lookup"><span data-stu-id="ed1ef-118">2</span></span>|<span data-ttu-id="ed1ef-119">Классификация "G" подходит для всех пользователей</span><span class="sxs-lookup"><span data-stu-id="ed1ef-119">The G classification is suitable for everyone</span></span>|
+|<span data-ttu-id="ed1ef-120">Паренталгуиданце</span><span class="sxs-lookup"><span data-stu-id="ed1ef-120">parentalGuidance</span></span>|<span data-ttu-id="ed1ef-121">4</span><span class="sxs-lookup"><span data-stu-id="ed1ef-121">3</span></span>|<span data-ttu-id="ed1ef-122">Рекомендации на странице PG рекомендуются для просмотра в соответствии с рекомендациями от родителей и опекунов.</span><span class="sxs-lookup"><span data-stu-id="ed1ef-122">The PG recommends viewers under 15 with guidance from parents or guardians</span></span>|
+|<span data-ttu-id="ed1ef-123">обнаружен</span><span class="sxs-lookup"><span data-stu-id="ed1ef-123">mature</span></span>|<span data-ttu-id="ed1ef-124">4</span><span class="sxs-lookup"><span data-stu-id="ed1ef-124">4</span></span>|<span data-ttu-id="ed1ef-125">Не рекомендуется использовать классификацию M для зрителей с 15</span><span class="sxs-lookup"><span data-stu-id="ed1ef-125">The M classification is not recommended for viewers under 15</span></span>|
+|<span data-ttu-id="ed1ef-126">agesAbove15</span><span class="sxs-lookup"><span data-stu-id="ed1ef-126">agesAbove15</span></span>|<span data-ttu-id="ed1ef-127">17:00</span><span class="sxs-lookup"><span data-stu-id="ed1ef-127">5</span></span>|<span data-ttu-id="ed1ef-128">MA15 + Classification не подходит для зрителей в течение 15</span><span class="sxs-lookup"><span data-stu-id="ed1ef-128">The MA15+ classification is not suitable for viewers under 15</span></span>|
+|<span data-ttu-id="ed1ef-129">agesAbove18</span><span class="sxs-lookup"><span data-stu-id="ed1ef-129">agesAbove18</span></span>|<span data-ttu-id="ed1ef-130">6</span><span class="sxs-lookup"><span data-stu-id="ed1ef-130">6</span></span>|<span data-ttu-id="ed1ef-131">R18 + Classification не подходит для зрителей в 18</span><span class="sxs-lookup"><span data-stu-id="ed1ef-131">The R18+ classification is not suitable for viewers under 18</span></span>|
 
 
 

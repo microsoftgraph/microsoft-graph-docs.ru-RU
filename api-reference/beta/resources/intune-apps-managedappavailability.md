@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления managedAppAvailability
-description: Доступность управляемых приложений (MAM).
-localization_priority: Normal
+title: тип перечисления Манажедаппаваилабилити
+description: Доступность управляемого приложения (MAM).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 028a3b94597a98ecdf841f5ae72eb485b0a66398
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e99e870ee1ee7f5fdcd4478963126a22127183e4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400041"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162393"
 ---
-# <a name="managedappavailability-enum-type"></a><span data-ttu-id="20383-103">Тип перечисления managedAppAvailability</span><span class="sxs-lookup"><span data-stu-id="20383-103">managedAppAvailability enum type</span></span>
+# <a name="managedappavailability-enum-type"></a><span data-ttu-id="68a27-103">тип перечисления Манажедаппаваилабилити</span><span class="sxs-lookup"><span data-stu-id="68a27-103">managedAppAvailability enum type</span></span>
 
-> <span data-ttu-id="20383-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="20383-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="20383-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="20383-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="68a27-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="68a27-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="20383-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="20383-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="68a27-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="68a27-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="20383-107">Доступность управляемых приложений (MAM).</span><span class="sxs-lookup"><span data-stu-id="20383-107">A managed (MAM) application's availability.</span></span>
+<span data-ttu-id="68a27-106">Доступность управляемого приложения (MAM).</span><span class="sxs-lookup"><span data-stu-id="68a27-106">A managed (MAM) application's availability.</span></span>
 
-## <a name="members"></a><span data-ttu-id="20383-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="20383-108">Members</span></span>
-|<span data-ttu-id="20383-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="20383-109">Member</span></span>|<span data-ttu-id="20383-110">Значение</span><span class="sxs-lookup"><span data-stu-id="20383-110">Value</span></span>|<span data-ttu-id="20383-111">Описание</span><span class="sxs-lookup"><span data-stu-id="20383-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="68a27-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="68a27-107">Members</span></span>
+|<span data-ttu-id="68a27-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="68a27-108">Member</span></span>|<span data-ttu-id="68a27-109">Значение</span><span class="sxs-lookup"><span data-stu-id="68a27-109">Value</span></span>|<span data-ttu-id="68a27-110">Описание</span><span class="sxs-lookup"><span data-stu-id="68a27-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="20383-112">глобальные</span><span class="sxs-lookup"><span data-stu-id="20383-112">global</span></span>|<span data-ttu-id="20383-113">0</span><span class="sxs-lookup"><span data-stu-id="20383-113">0</span></span>|<span data-ttu-id="20383-114">Приложение доступно для всех клиентов.</span><span class="sxs-lookup"><span data-stu-id="20383-114">A globally available app to all tenants.</span></span>|
-|<span data-ttu-id="20383-115">lineOfBusiness</span><span class="sxs-lookup"><span data-stu-id="20383-115">lineOfBusiness</span></span>|<span data-ttu-id="20383-116">1</span><span class="sxs-lookup"><span data-stu-id="20383-116">1</span></span>|<span data-ttu-id="20383-117">Строка закрытый организации бизнес-приложений.</span><span class="sxs-lookup"><span data-stu-id="20383-117">A line of business apps private to an organization.</span></span>|
+|<span data-ttu-id="68a27-111">глобального</span><span class="sxs-lookup"><span data-stu-id="68a27-111">global</span></span>|<span data-ttu-id="68a27-112">нуль</span><span class="sxs-lookup"><span data-stu-id="68a27-112">0</span></span>|<span data-ttu-id="68a27-113">Глобальное доступное приложение ко всем клиентам.</span><span class="sxs-lookup"><span data-stu-id="68a27-113">A globally available app to all tenants.</span></span>|
+|<span data-ttu-id="68a27-114">Линеофбусинесс</span><span class="sxs-lookup"><span data-stu-id="68a27-114">lineOfBusiness</span></span>|<span data-ttu-id="68a27-115">1,1</span><span class="sxs-lookup"><span data-stu-id="68a27-115">1</span></span>|<span data-ttu-id="68a27-116">Частные бизнес-приложения, частные для Организации.</span><span class="sxs-lookup"><span data-stu-id="68a27-116">A line of business apps private to an organization.</span></span>|
 
 
 
