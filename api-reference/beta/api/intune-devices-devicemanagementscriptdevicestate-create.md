@@ -1,34 +1,34 @@
 ---
-title: Создание deviceManagementScriptDeviceState
-description: Создание нового объекта deviceManagementScriptDeviceState.
-localization_priority: Normal
+title: Создание Девицеманажементскриптдевицестате
+description: Создание нового объекта Девицеманажементскриптдевицестате.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3fbf8d69f7d421407b239a9265f51156a97bd6aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 93bd605b64b652346fbcba03e0fc2952ad6dfaa4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412865"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175082"
 ---
-# <a name="create-devicemanagementscriptdevicestate"></a><span data-ttu-id="bce9c-103">Создание deviceManagementScriptDeviceState</span><span class="sxs-lookup"><span data-stu-id="bce9c-103">Create deviceManagementScriptDeviceState</span></span>
+# <a name="create-devicemanagementscriptdevicestate"></a><span data-ttu-id="e01fc-103">Создание Девицеманажементскриптдевицестате</span><span class="sxs-lookup"><span data-stu-id="e01fc-103">Create deviceManagementScriptDeviceState</span></span>
 
-> <span data-ttu-id="bce9c-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="bce9c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bce9c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bce9c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e01fc-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e01fc-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bce9c-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bce9c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e01fc-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e01fc-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bce9c-107">Создание нового объекта [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="bce9c-107">Create a new [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
+<span data-ttu-id="e01fc-106">Создание нового объекта [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) .</span><span class="sxs-lookup"><span data-stu-id="e01fc-106">Create a new [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="bce9c-108">Предварительные требования</span><span class="sxs-lookup"><span data-stu-id="bce9c-108">Prerequisites</span></span>
-<span data-ttu-id="bce9c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="bce9c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="e01fc-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="e01fc-107">Prerequisites</span></span>
+<span data-ttu-id="e01fc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="e01fc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="bce9c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bce9c-111">Permission type</span></span>|<span data-ttu-id="bce9c-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="bce9c-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="e01fc-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e01fc-110">Permission type</span></span>|<span data-ttu-id="e01fc-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="e01fc-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bce9c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bce9c-113">Delegated (work or school account)</span></span>|<span data-ttu-id="bce9c-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bce9c-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="bce9c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bce9c-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bce9c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bce9c-116">Not supported.</span></span>|
-|<span data-ttu-id="bce9c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bce9c-117">Application</span></span>|<span data-ttu-id="bce9c-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bce9c-118">Not supported.</span></span>|
+|<span data-ttu-id="e01fc-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e01fc-112">Delegated (work or school account)</span></span>|<span data-ttu-id="e01fc-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e01fc-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="e01fc-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e01fc-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="e01fc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e01fc-115">Not supported.</span></span>|
+|<span data-ttu-id="e01fc-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e01fc-116">Application</span></span>|<span data-ttu-id="e01fc-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e01fc-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bce9c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bce9c-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e01fc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e01fc-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,36 +38,36 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bce9c-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bce9c-120">Request headers</span></span>
-|<span data-ttu-id="bce9c-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bce9c-121">Header</span></span>|<span data-ttu-id="bce9c-122">Значение</span><span class="sxs-lookup"><span data-stu-id="bce9c-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="e01fc-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e01fc-119">Request headers</span></span>
+|<span data-ttu-id="e01fc-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e01fc-120">Header</span></span>|<span data-ttu-id="e01fc-121">Значение</span><span class="sxs-lookup"><span data-stu-id="e01fc-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="bce9c-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="bce9c-123">Authorization</span></span>|<span data-ttu-id="bce9c-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="bce9c-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="bce9c-125">Accept</span><span class="sxs-lookup"><span data-stu-id="bce9c-125">Accept</span></span>|<span data-ttu-id="bce9c-126">application/json</span><span class="sxs-lookup"><span data-stu-id="bce9c-126">application/json</span></span>|
+|<span data-ttu-id="e01fc-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e01fc-122">Authorization</span></span>|<span data-ttu-id="e01fc-123">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="e01fc-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="e01fc-124">Accept</span><span class="sxs-lookup"><span data-stu-id="e01fc-124">Accept</span></span>|<span data-ttu-id="e01fc-125">application/json</span><span class="sxs-lookup"><span data-stu-id="e01fc-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bce9c-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="bce9c-127">Request body</span></span>
-<span data-ttu-id="bce9c-128">В тексте запроса укажите представление JSON для объекта deviceManagementScriptDeviceState.</span><span class="sxs-lookup"><span data-stu-id="bce9c-128">In the request body, supply a JSON representation for the deviceManagementScriptDeviceState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="e01fc-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e01fc-126">Request body</span></span>
+<span data-ttu-id="e01fc-127">В тексте запроса добавьте представление объекта Девицеманажементскриптдевицестате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e01fc-127">In the request body, supply a JSON representation for the deviceManagementScriptDeviceState object.</span></span>
 
-<span data-ttu-id="bce9c-129">В следующей таблице показаны свойства, которые необходимы для создания deviceManagementScriptDeviceState.</span><span class="sxs-lookup"><span data-stu-id="bce9c-129">The following table shows the properties that are required when you create the deviceManagementScriptDeviceState.</span></span>
+<span data-ttu-id="e01fc-128">В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптдевицестате.</span><span class="sxs-lookup"><span data-stu-id="e01fc-128">The following table shows the properties that are required when you create the deviceManagementScriptDeviceState.</span></span>
 
-|<span data-ttu-id="bce9c-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="bce9c-130">Property</span></span>|<span data-ttu-id="bce9c-131">Тип</span><span class="sxs-lookup"><span data-stu-id="bce9c-131">Type</span></span>|<span data-ttu-id="bce9c-132">Описание</span><span class="sxs-lookup"><span data-stu-id="bce9c-132">Description</span></span>|
+|<span data-ttu-id="e01fc-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="e01fc-129">Property</span></span>|<span data-ttu-id="e01fc-130">Тип</span><span class="sxs-lookup"><span data-stu-id="e01fc-130">Type</span></span>|<span data-ttu-id="e01fc-131">Описание</span><span class="sxs-lookup"><span data-stu-id="e01fc-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bce9c-133">id</span><span class="sxs-lookup"><span data-stu-id="bce9c-133">id</span></span>|<span data-ttu-id="bce9c-134">String</span><span class="sxs-lookup"><span data-stu-id="bce9c-134">String</span></span>|<span data-ttu-id="bce9c-135">Ключ сущности состояния устройства устройства управления скрипта.</span><span class="sxs-lookup"><span data-stu-id="bce9c-135">Key of the device management script device state entity.</span></span>|
-|<span data-ttu-id="bce9c-136">runState</span><span class="sxs-lookup"><span data-stu-id="bce9c-136">runState</span></span>|[<span data-ttu-id="bce9c-137">runState</span><span class="sxs-lookup"><span data-stu-id="bce9c-137">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="bce9c-138">Состояние последнего выполнения сценарий управления устройства.</span><span class="sxs-lookup"><span data-stu-id="bce9c-138">State of latest run of the device management script.</span></span> <span data-ttu-id="bce9c-139">Возможные значения: `unknown`, `success`, `fail`.</span><span class="sxs-lookup"><span data-stu-id="bce9c-139">Possible values are: `unknown`, `success`, `fail`.</span></span>|
-|<span data-ttu-id="bce9c-140">resultMessage</span><span class="sxs-lookup"><span data-stu-id="bce9c-140">resultMessage</span></span>|<span data-ttu-id="bce9c-141">String</span><span class="sxs-lookup"><span data-stu-id="bce9c-141">String</span></span>|<span data-ttu-id="bce9c-142">Подробные сведения о результатов выполнения.</span><span class="sxs-lookup"><span data-stu-id="bce9c-142">Details of execution output.</span></span>|
-|<span data-ttu-id="bce9c-143">lastStateUpdateDateTime</span><span class="sxs-lookup"><span data-stu-id="bce9c-143">lastStateUpdateDateTime</span></span>|<span data-ttu-id="bce9c-144">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bce9c-144">DateTimeOffset</span></span>|<span data-ttu-id="bce9c-145">Время последнего выполняет сценарий управления устройства.</span><span class="sxs-lookup"><span data-stu-id="bce9c-145">Latest time the device management script executes.</span></span>|
-|<span data-ttu-id="bce9c-146">errorCode</span><span class="sxs-lookup"><span data-stu-id="bce9c-146">errorCode</span></span>|<span data-ttu-id="bce9c-147">Int32</span><span class="sxs-lookup"><span data-stu-id="bce9c-147">Int32</span></span>|<span data-ttu-id="bce9c-148">Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.</span><span class="sxs-lookup"><span data-stu-id="bce9c-148">Error code corresponding to erroneous execution of the device management script.</span></span>|
-|<span data-ttu-id="bce9c-149">errorDescription</span><span class="sxs-lookup"><span data-stu-id="bce9c-149">errorDescription</span></span>|<span data-ttu-id="bce9c-150">String</span><span class="sxs-lookup"><span data-stu-id="bce9c-150">String</span></span>|<span data-ttu-id="bce9c-151">Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.</span><span class="sxs-lookup"><span data-stu-id="bce9c-151">Error description corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="e01fc-132">id</span><span class="sxs-lookup"><span data-stu-id="e01fc-132">id</span></span>|<span data-ttu-id="e01fc-133">String</span><span class="sxs-lookup"><span data-stu-id="e01fc-133">String</span></span>|<span data-ttu-id="e01fc-134">Ключ объекта состояния устройства сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="e01fc-134">Key of the device management script device state entity.</span></span>|
+|<span data-ttu-id="e01fc-135">Рунстате</span><span class="sxs-lookup"><span data-stu-id="e01fc-135">runState</span></span>|[<span data-ttu-id="e01fc-136">Рунстате</span><span class="sxs-lookup"><span data-stu-id="e01fc-136">runState</span></span>](../resources/intune-shared-runstate.md)|<span data-ttu-id="e01fc-137">Состояние последнего запуска скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="e01fc-137">State of latest run of the device management script.</span></span> <span data-ttu-id="e01fc-138">Возможные значения: `unknown`, `success`, `fail`.</span><span class="sxs-lookup"><span data-stu-id="e01fc-138">Possible values are: `unknown`, `success`, `fail`.</span></span>|
+|<span data-ttu-id="e01fc-139">Ресултмессаже</span><span class="sxs-lookup"><span data-stu-id="e01fc-139">resultMessage</span></span>|<span data-ttu-id="e01fc-140">String</span><span class="sxs-lookup"><span data-stu-id="e01fc-140">String</span></span>|<span data-ttu-id="e01fc-141">Сведения о выходных данных выполнения.</span><span class="sxs-lookup"><span data-stu-id="e01fc-141">Details of execution output.</span></span>|
+|<span data-ttu-id="e01fc-142">Ластстатеупдатедатетиме</span><span class="sxs-lookup"><span data-stu-id="e01fc-142">lastStateUpdateDateTime</span></span>|<span data-ttu-id="e01fc-143">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="e01fc-143">DateTimeOffset</span></span>|<span data-ttu-id="e01fc-144">Последнее время выполнения скрипта управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="e01fc-144">Latest time the device management script executes.</span></span>|
+|<span data-ttu-id="e01fc-145">errorCode</span><span class="sxs-lookup"><span data-stu-id="e01fc-145">errorCode</span></span>|<span data-ttu-id="e01fc-146">Int32</span><span class="sxs-lookup"><span data-stu-id="e01fc-146">Int32</span></span>|<span data-ttu-id="e01fc-147">Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="e01fc-147">Error code corresponding to erroneous execution of the device management script.</span></span>|
+|<span data-ttu-id="e01fc-148">errorDescription</span><span class="sxs-lookup"><span data-stu-id="e01fc-148">errorDescription</span></span>|<span data-ttu-id="e01fc-149">String</span><span class="sxs-lookup"><span data-stu-id="e01fc-149">String</span></span>|<span data-ttu-id="e01fc-150">Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.</span><span class="sxs-lookup"><span data-stu-id="e01fc-150">Error description corresponding to erroneous execution of the device management script.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="bce9c-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="bce9c-152">Response</span></span>
-<span data-ttu-id="bce9c-153">Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="bce9c-153">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="e01fc-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="e01fc-151">Response</span></span>
+<span data-ttu-id="e01fc-152">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e01fc-152">If successful, this method returns a `201 Created` response code and a [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bce9c-154">Пример</span><span class="sxs-lookup"><span data-stu-id="bce9c-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e01fc-153">Пример</span><span class="sxs-lookup"><span data-stu-id="e01fc-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bce9c-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="bce9c-155">Request</span></span>
-<span data-ttu-id="bce9c-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bce9c-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="e01fc-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="e01fc-154">Request</span></span>
+<span data-ttu-id="e01fc-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e01fc-155">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
 Content-type: application/json
@@ -83,8 +83,8 @@ Content-length: 281
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bce9c-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="bce9c-157">Response</span></span>
-<span data-ttu-id="bce9c-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="bce9c-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="e01fc-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="e01fc-156">Response</span></span>
+<span data-ttu-id="e01fc-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e01fc-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

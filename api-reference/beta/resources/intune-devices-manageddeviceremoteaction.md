@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления managedDeviceRemoteAction
+title: тип перечисления Манажеддевицеремотеактион
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31d92c7797ae671dc1eb6af86cea398b9b91edc0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7aafc5402ceeebb56f948a669d4bf1f461578d0c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413698"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172802"
 ---
-# <a name="manageddeviceremoteaction-enum-type"></a><span data-ttu-id="6eff8-103">Тип перечисления managedDeviceRemoteAction</span><span class="sxs-lookup"><span data-stu-id="6eff8-103">managedDeviceRemoteAction enum type</span></span>
+# <a name="manageddeviceremoteaction-enum-type"></a><span data-ttu-id="728a8-103">тип перечисления Манажеддевицеремотеактион</span><span class="sxs-lookup"><span data-stu-id="728a8-103">managedDeviceRemoteAction enum type</span></span>
 
-> <span data-ttu-id="6eff8-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6eff8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6eff8-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6eff8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="728a8-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="728a8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6eff8-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6eff8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="728a8-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="728a8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6eff8-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6eff8-107">Not yet documented</span></span>
+<span data-ttu-id="728a8-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="728a8-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="6eff8-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="6eff8-108">Members</span></span>
-|<span data-ttu-id="6eff8-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="6eff8-109">Member</span></span>|<span data-ttu-id="6eff8-110">Значение</span><span class="sxs-lookup"><span data-stu-id="6eff8-110">Value</span></span>|<span data-ttu-id="6eff8-111">Описание</span><span class="sxs-lookup"><span data-stu-id="6eff8-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="728a8-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="728a8-107">Members</span></span>
+|<span data-ttu-id="728a8-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="728a8-108">Member</span></span>|<span data-ttu-id="728a8-109">Значение</span><span class="sxs-lookup"><span data-stu-id="728a8-109">Value</span></span>|<span data-ttu-id="728a8-110">Описание</span><span class="sxs-lookup"><span data-stu-id="728a8-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6eff8-112">Удаление</span><span class="sxs-lookup"><span data-stu-id="6eff8-112">retire</span></span>|<span data-ttu-id="6eff8-113">0</span><span class="sxs-lookup"><span data-stu-id="6eff8-113">0</span></span>|<span data-ttu-id="6eff8-114">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6eff8-114">Not yet documented</span></span>|
-|<span data-ttu-id="6eff8-115">delete</span><span class="sxs-lookup"><span data-stu-id="6eff8-115">delete</span></span>|<span data-ttu-id="6eff8-116">1</span><span class="sxs-lookup"><span data-stu-id="6eff8-116">1</span></span>|<span data-ttu-id="6eff8-117">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6eff8-117">Not yet documented</span></span>|
-|<span data-ttu-id="6eff8-118">fullScan</span><span class="sxs-lookup"><span data-stu-id="6eff8-118">fullScan</span></span>|<span data-ttu-id="6eff8-119">2</span><span class="sxs-lookup"><span data-stu-id="6eff8-119">2</span></span>|<span data-ttu-id="6eff8-120">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6eff8-120">Not yet documented</span></span>|
-|<span data-ttu-id="6eff8-121">quickScan</span><span class="sxs-lookup"><span data-stu-id="6eff8-121">quickScan</span></span>|<span data-ttu-id="6eff8-122">3</span><span class="sxs-lookup"><span data-stu-id="6eff8-122">3</span></span>|<span data-ttu-id="6eff8-123">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6eff8-123">Not yet documented</span></span>|
-|<span data-ttu-id="6eff8-124">signatureUpdate</span><span class="sxs-lookup"><span data-stu-id="6eff8-124">signatureUpdate</span></span>|<span data-ttu-id="6eff8-125">4</span><span class="sxs-lookup"><span data-stu-id="6eff8-125">4</span></span>|<span data-ttu-id="6eff8-126">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6eff8-126">Not yet documented</span></span>|
+|<span data-ttu-id="728a8-111">снять</span><span class="sxs-lookup"><span data-stu-id="728a8-111">retire</span></span>|<span data-ttu-id="728a8-112">нуль</span><span class="sxs-lookup"><span data-stu-id="728a8-112">0</span></span>|<span data-ttu-id="728a8-113">Н/Д</span><span class="sxs-lookup"><span data-stu-id="728a8-113">Not yet documented</span></span>|
+|<span data-ttu-id="728a8-114">delete</span><span class="sxs-lookup"><span data-stu-id="728a8-114">delete</span></span>|<span data-ttu-id="728a8-115">1,1</span><span class="sxs-lookup"><span data-stu-id="728a8-115">1</span></span>|<span data-ttu-id="728a8-116">Н/Д</span><span class="sxs-lookup"><span data-stu-id="728a8-116">Not yet documented</span></span>|
+|<span data-ttu-id="728a8-117">fullScan</span><span class="sxs-lookup"><span data-stu-id="728a8-117">fullScan</span></span>|<span data-ttu-id="728a8-118">2</span><span class="sxs-lookup"><span data-stu-id="728a8-118">2</span></span>|<span data-ttu-id="728a8-119">Н/Д</span><span class="sxs-lookup"><span data-stu-id="728a8-119">Not yet documented</span></span>|
+|<span data-ttu-id="728a8-120">quickScan</span><span class="sxs-lookup"><span data-stu-id="728a8-120">quickScan</span></span>|<span data-ttu-id="728a8-121">4</span><span class="sxs-lookup"><span data-stu-id="728a8-121">3</span></span>|<span data-ttu-id="728a8-122">Н/Д</span><span class="sxs-lookup"><span data-stu-id="728a8-122">Not yet documented</span></span>|
+|<span data-ttu-id="728a8-123">Сигнатуреупдате</span><span class="sxs-lookup"><span data-stu-id="728a8-123">signatureUpdate</span></span>|<span data-ttu-id="728a8-124">4</span><span class="sxs-lookup"><span data-stu-id="728a8-124">4</span></span>|<span data-ttu-id="728a8-125">Н/Д</span><span class="sxs-lookup"><span data-stu-id="728a8-125">Not yet documented</span></span>|
 
 
 

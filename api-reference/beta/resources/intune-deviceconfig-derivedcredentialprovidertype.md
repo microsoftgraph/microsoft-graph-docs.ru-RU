@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления derivedCredentialProviderType
-description: Тип поставщика производные учетных данных.
-localization_priority: Normal
+title: тип перечисления Дериведкредентиалпровидертипе
+description: Тип поставщика для произВодных учетных данных.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431763"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175313"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a><span data-ttu-id="268fc-103">Тип перечисления derivedCredentialProviderType</span><span class="sxs-lookup"><span data-stu-id="268fc-103">derivedCredentialProviderType enum type</span></span>
+# <a name="derivedcredentialprovidertype-enum-type"></a><span data-ttu-id="42477-103">тип перечисления Дериведкредентиалпровидертипе</span><span class="sxs-lookup"><span data-stu-id="42477-103">derivedCredentialProviderType enum type</span></span>
 
-> <span data-ttu-id="268fc-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="268fc-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="268fc-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="268fc-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="42477-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="42477-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="268fc-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="268fc-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="42477-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="42477-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="268fc-107">Тип поставщика производные учетных данных.</span><span class="sxs-lookup"><span data-stu-id="268fc-107">Provider type for Derived Credentials.</span></span>
+<span data-ttu-id="42477-106">Тип поставщика для произВодных учетных данных.</span><span class="sxs-lookup"><span data-stu-id="42477-106">Provider type for Derived Credentials.</span></span>
 
-## <a name="members"></a><span data-ttu-id="268fc-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="268fc-108">Members</span></span>
-|<span data-ttu-id="268fc-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="268fc-109">Member</span></span>|<span data-ttu-id="268fc-110">Значение</span><span class="sxs-lookup"><span data-stu-id="268fc-110">Value</span></span>|<span data-ttu-id="268fc-111">Описание</span><span class="sxs-lookup"><span data-stu-id="268fc-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="42477-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="42477-107">Members</span></span>
+|<span data-ttu-id="42477-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="42477-108">Member</span></span>|<span data-ttu-id="42477-109">Значение</span><span class="sxs-lookup"><span data-stu-id="42477-109">Value</span></span>|<span data-ttu-id="42477-110">Описание</span><span class="sxs-lookup"><span data-stu-id="42477-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="268fc-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="268fc-112">notConfigured</span></span>|<span data-ttu-id="268fc-113">0</span><span class="sxs-lookup"><span data-stu-id="268fc-113">0</span></span>|<span data-ttu-id="268fc-114">Не настроен поставщик производные учетных данных.</span><span class="sxs-lookup"><span data-stu-id="268fc-114">No Derived Credential Provider Configured.</span></span>|
-|<span data-ttu-id="268fc-115">entrustDataCard</span><span class="sxs-lookup"><span data-stu-id="268fc-115">entrustDataCard</span></span>|<span data-ttu-id="268fc-116">1</span><span class="sxs-lookup"><span data-stu-id="268fc-116">1</span></span>|<span data-ttu-id="268fc-117">Доверенный DataCard.</span><span class="sxs-lookup"><span data-stu-id="268fc-117">Entrust DataCard.</span></span>|
-|<span data-ttu-id="268fc-118">purebred</span><span class="sxs-lookup"><span data-stu-id="268fc-118">purebred</span></span>|<span data-ttu-id="268fc-119">2</span><span class="sxs-lookup"><span data-stu-id="268fc-119">2</span></span>|<span data-ttu-id="268fc-120">Purebred - Корпорация Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="268fc-120">Purebred - Defense Information Systems Agency.</span></span>|
-|<span data-ttu-id="268fc-121">xTec</span><span class="sxs-lookup"><span data-stu-id="268fc-121">xTec</span></span>|<span data-ttu-id="268fc-122">3</span><span class="sxs-lookup"><span data-stu-id="268fc-122">3</span></span>|<span data-ttu-id="268fc-123">Xtec - AuthentX.</span><span class="sxs-lookup"><span data-stu-id="268fc-123">Xtec - AuthentX.</span></span>|
-|<span data-ttu-id="268fc-124">внедрения</span><span class="sxs-lookup"><span data-stu-id="268fc-124">intercede</span></span>|<span data-ttu-id="268fc-125">4</span><span class="sxs-lookup"><span data-stu-id="268fc-125">4</span></span>|<span data-ttu-id="268fc-126">Внедрения.</span><span class="sxs-lookup"><span data-stu-id="268fc-126">Intercede.</span></span>|
+|<span data-ttu-id="42477-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="42477-111">notConfigured</span></span>|<span data-ttu-id="42477-112">нуль</span><span class="sxs-lookup"><span data-stu-id="42477-112">0</span></span>|<span data-ttu-id="42477-113">Не настроен производный поставщик учетных данных.</span><span class="sxs-lookup"><span data-stu-id="42477-113">No Derived Credential Provider Configured.</span></span>|
+|<span data-ttu-id="42477-114">Ентрустдатакард</span><span class="sxs-lookup"><span data-stu-id="42477-114">entrustDataCard</span></span>|<span data-ttu-id="42477-115">1,1</span><span class="sxs-lookup"><span data-stu-id="42477-115">1</span></span>|<span data-ttu-id="42477-116">Ентруст.</span><span class="sxs-lookup"><span data-stu-id="42477-116">Entrust DataCard.</span></span>|
+|<span data-ttu-id="42477-117">пуребред</span><span class="sxs-lookup"><span data-stu-id="42477-117">purebred</span></span>|<span data-ttu-id="42477-118">2</span><span class="sxs-lookup"><span data-stu-id="42477-118">2</span></span>|<span data-ttu-id="42477-119">Агентство по оборонным информационным системам Пуребред.</span><span class="sxs-lookup"><span data-stu-id="42477-119">Purebred - Defense Information Systems Agency.</span></span>|
+|<span data-ttu-id="42477-120">Кстек</span><span class="sxs-lookup"><span data-stu-id="42477-120">xTec</span></span>|<span data-ttu-id="42477-121">4</span><span class="sxs-lookup"><span data-stu-id="42477-121">3</span></span>|<span data-ttu-id="42477-122">Кстек — Аусенткс.</span><span class="sxs-lookup"><span data-stu-id="42477-122">Xtec - AuthentX.</span></span>|
+|<span data-ttu-id="42477-123">интерцеде</span><span class="sxs-lookup"><span data-stu-id="42477-123">intercede</span></span>|<span data-ttu-id="42477-124">4</span><span class="sxs-lookup"><span data-stu-id="42477-124">4</span></span>|<span data-ttu-id="42477-125">Интерцеде.</span><span class="sxs-lookup"><span data-stu-id="42477-125">Intercede.</span></span>|
 
 
 

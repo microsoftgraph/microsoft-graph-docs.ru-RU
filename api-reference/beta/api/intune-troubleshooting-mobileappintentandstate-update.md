@@ -1,34 +1,34 @@
 ---
-title: Обновление mobileAppIntentAndState
-description: Обновление свойства объекта mobileAppIntentAndState.
-localization_priority: Normal
+title: Обновление Мобилеаппинтентандстате
+description: Обновление свойств объекта Мобилеаппинтентандстате.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7157711819e4a5b3d4fbeb6ea6c8fce136da9380
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc6226237b1ebc8d080642b0cfe9bd6fd3f2b500
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405193"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173334"
 ---
-# <a name="update-mobileappintentandstate"></a><span data-ttu-id="de5ae-103">Обновление mobileAppIntentAndState</span><span class="sxs-lookup"><span data-stu-id="de5ae-103">Update mobileAppIntentAndState</span></span>
+# <a name="update-mobileappintentandstate"></a><span data-ttu-id="a7e4e-103">Обновление Мобилеаппинтентандстате</span><span class="sxs-lookup"><span data-stu-id="a7e4e-103">Update mobileAppIntentAndState</span></span>
 
-> <span data-ttu-id="de5ae-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="de5ae-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="de5ae-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="de5ae-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a7e4e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="de5ae-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="de5ae-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a7e4e-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="de5ae-107">Обновление свойства объекта [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .</span><span class="sxs-lookup"><span data-stu-id="de5ae-107">Update the properties of a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
+<span data-ttu-id="a7e4e-106">Обновление свойств объекта [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .</span><span class="sxs-lookup"><span data-stu-id="a7e4e-106">Update the properties of a [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="de5ae-108">Предварительные требования</span><span class="sxs-lookup"><span data-stu-id="de5ae-108">Prerequisites</span></span>
-<span data-ttu-id="de5ae-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="de5ae-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="a7e4e-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="a7e4e-107">Prerequisites</span></span>
+<span data-ttu-id="a7e4e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="a7e4e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="de5ae-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="de5ae-111">Permission type</span></span>|<span data-ttu-id="de5ae-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="de5ae-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="a7e4e-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a7e4e-110">Permission type</span></span>|<span data-ttu-id="a7e4e-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="a7e4e-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="de5ae-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="de5ae-113">Delegated (work or school account)</span></span>|<span data-ttu-id="de5ae-114">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="de5ae-114">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="de5ae-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="de5ae-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="de5ae-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="de5ae-116">Not supported.</span></span>|
-|<span data-ttu-id="de5ae-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="de5ae-117">Application</span></span>|<span data-ttu-id="de5ae-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="de5ae-118">Not supported.</span></span>|
+|<span data-ttu-id="a7e4e-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a7e4e-112">Delegated (work or school account)</span></span>|<span data-ttu-id="a7e4e-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a7e4e-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="a7e4e-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a7e4e-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="a7e4e-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-115">Not supported.</span></span>|
+|<span data-ttu-id="a7e4e-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a7e4e-116">Application</span></span>|<span data-ttu-id="a7e4e-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="de5ae-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="de5ae-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a7e4e-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a7e4e-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,34 +37,34 @@ ms.locfileid: "29405193"
 PATCH /users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="de5ae-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="de5ae-120">Request headers</span></span>
-|<span data-ttu-id="de5ae-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="de5ae-121">Header</span></span>|<span data-ttu-id="de5ae-122">Значение</span><span class="sxs-lookup"><span data-stu-id="de5ae-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a7e4e-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a7e4e-119">Request headers</span></span>
+|<span data-ttu-id="a7e4e-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="a7e4e-120">Header</span></span>|<span data-ttu-id="a7e4e-121">Значение</span><span class="sxs-lookup"><span data-stu-id="a7e4e-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="de5ae-123">Authorization</span><span class="sxs-lookup"><span data-stu-id="de5ae-123">Authorization</span></span>|<span data-ttu-id="de5ae-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="de5ae-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="de5ae-125">Accept</span><span class="sxs-lookup"><span data-stu-id="de5ae-125">Accept</span></span>|<span data-ttu-id="de5ae-126">application/json</span><span class="sxs-lookup"><span data-stu-id="de5ae-126">application/json</span></span>|
+|<span data-ttu-id="a7e4e-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a7e4e-122">Authorization</span></span>|<span data-ttu-id="a7e4e-123">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="a7e4e-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="a7e4e-124">Accept</span><span class="sxs-lookup"><span data-stu-id="a7e4e-124">Accept</span></span>|<span data-ttu-id="a7e4e-125">application/json</span><span class="sxs-lookup"><span data-stu-id="a7e4e-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="de5ae-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="de5ae-127">Request body</span></span>
-<span data-ttu-id="de5ae-128">В тексте запроса укажите представление JSON для объекта [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .</span><span class="sxs-lookup"><span data-stu-id="de5ae-128">In the request body, supply a JSON representation for the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a7e4e-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a7e4e-126">Request body</span></span>
+<span data-ttu-id="a7e4e-127">В тексте запроса добавьте представление объекта [Мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-127">In the request body, supply a JSON representation for the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object.</span></span>
 
-<span data-ttu-id="de5ae-129">В следующей таблице показаны свойства, которые необходимы для создания [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).</span><span class="sxs-lookup"><span data-stu-id="de5ae-129">The following table shows the properties that are required when you create the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).</span></span>
+<span data-ttu-id="a7e4e-128">В следующей таблице приведены свойства, необходимые при создании [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md).</span><span class="sxs-lookup"><span data-stu-id="a7e4e-128">The following table shows the properties that are required when you create the [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md).</span></span>
 
-|<span data-ttu-id="de5ae-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="de5ae-130">Property</span></span>|<span data-ttu-id="de5ae-131">Тип</span><span class="sxs-lookup"><span data-stu-id="de5ae-131">Type</span></span>|<span data-ttu-id="de5ae-132">Описание</span><span class="sxs-lookup"><span data-stu-id="de5ae-132">Description</span></span>|
+|<span data-ttu-id="a7e4e-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="a7e4e-129">Property</span></span>|<span data-ttu-id="a7e4e-130">Тип</span><span class="sxs-lookup"><span data-stu-id="a7e4e-130">Type</span></span>|<span data-ttu-id="a7e4e-131">Описание</span><span class="sxs-lookup"><span data-stu-id="a7e4e-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="de5ae-133">id</span><span class="sxs-lookup"><span data-stu-id="de5ae-133">id</span></span>|<span data-ttu-id="de5ae-134">String</span><span class="sxs-lookup"><span data-stu-id="de5ae-134">String</span></span>|<span data-ttu-id="de5ae-135">UUID объекта.</span><span class="sxs-lookup"><span data-stu-id="de5ae-135">UUID for the object</span></span>|
-|<span data-ttu-id="de5ae-136">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="de5ae-136">managedDeviceIdentifier</span></span>|<span data-ttu-id="de5ae-137">String</span><span class="sxs-lookup"><span data-stu-id="de5ae-137">String</span></span>|<span data-ttu-id="de5ae-138">Идентификатор события, созданный или полученный службой Intune.</span><span class="sxs-lookup"><span data-stu-id="de5ae-138">Device identifier created or collected by Intune.</span></span>|
-|<span data-ttu-id="de5ae-139">userId</span><span class="sxs-lookup"><span data-stu-id="de5ae-139">userId</span></span>|<span data-ttu-id="de5ae-140">String</span><span class="sxs-lookup"><span data-stu-id="de5ae-140">String</span></span>|<span data-ttu-id="de5ae-141">Идентификатор пользователя, который пытался зарегистрировать устройство.</span><span class="sxs-lookup"><span data-stu-id="de5ae-141">Identifier for the user that tried to enroll the device.</span></span>|
-|<span data-ttu-id="de5ae-142">mobileAppList</span><span class="sxs-lookup"><span data-stu-id="de5ae-142">mobileAppList</span></span>|<span data-ttu-id="de5ae-143">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="de5ae-143">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection</span></span>|<span data-ttu-id="de5ae-144">Список целей полезных данных и состояния для клиента.</span><span class="sxs-lookup"><span data-stu-id="de5ae-144">The list of payload intents and states for the tenant.</span></span>|
+|<span data-ttu-id="a7e4e-132">id</span><span class="sxs-lookup"><span data-stu-id="a7e4e-132">id</span></span>|<span data-ttu-id="a7e4e-133">String</span><span class="sxs-lookup"><span data-stu-id="a7e4e-133">String</span></span>|<span data-ttu-id="a7e4e-134">UUID объекта.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-134">UUID for the object</span></span>|
+|<span data-ttu-id="a7e4e-135">managedDeviceIdentifier</span><span class="sxs-lookup"><span data-stu-id="a7e4e-135">managedDeviceIdentifier</span></span>|<span data-ttu-id="a7e4e-136">String</span><span class="sxs-lookup"><span data-stu-id="a7e4e-136">String</span></span>|<span data-ttu-id="a7e4e-137">Идентификатор события, созданный или полученный службой Intune.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-137">Device identifier created or collected by Intune.</span></span>|
+|<span data-ttu-id="a7e4e-138">userId</span><span class="sxs-lookup"><span data-stu-id="a7e4e-138">userId</span></span>|<span data-ttu-id="a7e4e-139">String</span><span class="sxs-lookup"><span data-stu-id="a7e4e-139">String</span></span>|<span data-ttu-id="a7e4e-140">Идентификатор пользователя, который пытался зарегистрировать устройство.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-140">Identifier for the user that tried to enroll the device.</span></span>|
+|<span data-ttu-id="a7e4e-141">Мобилеапплист</span><span class="sxs-lookup"><span data-stu-id="a7e4e-141">mobileAppList</span></span>|<span data-ttu-id="a7e4e-142">Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)</span><span class="sxs-lookup"><span data-stu-id="a7e4e-142">[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) collection</span></span>|<span data-ttu-id="a7e4e-143">Список целей и состояний полезных данных для клиента.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-143">The list of payload intents and states for the tenant.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="de5ae-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="de5ae-145">Response</span></span>
-<span data-ttu-id="de5ae-146">Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) объекта в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="de5ae-146">If successful, this method returns a `200 OK` response code and an updated [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="a7e4e-144">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7e4e-144">Response</span></span>
+<span data-ttu-id="a7e4e-145">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-145">If successful, this method returns a `200 OK` response code and an updated [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="de5ae-147">Пример</span><span class="sxs-lookup"><span data-stu-id="de5ae-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a7e4e-146">Пример</span><span class="sxs-lookup"><span data-stu-id="a7e4e-146">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="de5ae-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="de5ae-148">Request</span></span>
-<span data-ttu-id="de5ae-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="de5ae-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="a7e4e-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="a7e4e-147">Request</span></span>
+<span data-ttu-id="a7e4e-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-148">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/users/{usersId}/mobileAppIntentAndStates/{mobileAppIntentAndStateId}
 Content-type: application/json
@@ -95,8 +95,8 @@ Content-length: 831
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="de5ae-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="de5ae-150">Response</span></span>
-<span data-ttu-id="de5ae-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="de5ae-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="a7e4e-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="a7e4e-149">Response</span></span>
+<span data-ttu-id="a7e4e-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a7e4e-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
