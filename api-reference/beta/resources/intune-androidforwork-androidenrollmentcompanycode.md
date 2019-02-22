@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса androidEnrollmentCompanyCode
-description: Класс для хранения данных регистрации специальные, используемые на выдачу через компании Google Android API для управления, такие как маркер, URL-адрес и QR кода содержимого
-localization_priority: Normal
+title: Тип ресурса Андроиденроллменткомпаникоде
+description: Класс для хранения специализированных регистрационных данных, используемых для регистрации через API управления Android для Google, таких как маркер, URL-адрес и содержимое QR-кода
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be5b2a94445e95fe18271467b6661320d8204d76
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a0cd3ede4193ea3fdb33d33010349812150848e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430609"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169344"
 ---
-# <a name="androidenrollmentcompanycode-resource-type"></a>Тип ресурса androidEnrollmentCompanyCode
+# <a name="androidenrollmentcompanycode-resource-type"></a>Тип ресурса Андроиденроллменткомпаникоде
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс для хранения данных регистрации специальные, используемые на выдачу через компании Google Android API для управления, такие как маркер, URL-адрес и QR кода содержимого
+Класс для хранения специализированных регистрационных данных, используемых для регистрации через API управления Android для Google, таких как маркер, URL-адрес и содержимое QR-кода
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enrollmentToken|String|Регистрации маркер, используемый пользователем, чтобы зарегистрировать свое устройство.|
+|Енроллменттокен|String|Маркер регистрации, используемый пользователем для регистрации своего устройства.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
-|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный код QR для маркера.|
+|qrCodeImage|[mimeContent](../resources/intune-shared-mimecontent.md)|Созданный QR код для маркера.|
 
 ## <a name="relationships"></a>Отношения
 Нет

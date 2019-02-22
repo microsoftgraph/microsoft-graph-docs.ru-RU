@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления meteredConnectionLimitType
-description: Чтобы ограничение параметры подключения.
-localization_priority: Normal
+title: тип перечисления Метередконнектионлимиттипе
+description: Параметры ограничения лимитного подключения.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7d6a54efc4e223f1bc9322186ff57639b0c8d597
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 110d0eacaaa1662dcec4d3e626f5ccb2359c5328
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412165"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169799"
 ---
-# <a name="meteredconnectionlimittype-enum-type"></a>Тип перечисления meteredConnectionLimitType
+# <a name="meteredconnectionlimittype-enum-type"></a>тип перечисления Метередконнектионлимиттипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтобы ограничение параметры подключения.
+Параметры ограничения лимитного подключения.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unrestricted|0|Без ограничений|
-|Предопределенная|1|Фиксация|
+|unrestricted|нуль|Unrestricted|
+|стандарт|1,1|Фиксация|
 |переменная|2|Переменная|
 
 

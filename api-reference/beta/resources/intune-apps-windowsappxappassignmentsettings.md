@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса windowsAppXAppAssignmentSettings
-description: Содержит свойства, используемые при назначении мобильного приложения Windows AppX в группу.
-localization_priority: Normal
+title: Тип ресурса Виндовсаппксаппассигнментсеттингс
+description: Содержит свойства, используемые при назначении мобильного приложения Windows AppX группе.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0f55400b0e17884a4e6ca3de0692e69d388c46e2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 83e384167984f1eda640ef1faa1f4241b1badbbb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410926"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167580"
 ---
-# <a name="windowsappxappassignmentsettings-resource-type"></a>Тип ресурса windowsAppXAppAssignmentSettings
+# <a name="windowsappxappassignmentsettings-resource-type"></a>Тип ресурса Виндовсаппксаппассигнментсеттингс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства, используемые при назначении мобильного приложения Windows AppX в группу.
+Содержит свойства, используемые при назначении мобильного приложения Windows AppX группе.
 
 
 Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)
@@ -25,7 +25,7 @@ ms.locfileid: "29410926"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|useDeviceContext|Boolean|Следует ли использовать контекст выполнения устройства для мобильного приложения Windows AppX.|
+|useDeviceContext|Boolean|Указывает, следует ли использовать контекст выполнения устройства для мобильного приложения Windows AppX.|
 
 ## <a name="relationships"></a>Отношения
 Нет

@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления configurationManagerClientState
-description: Состояние клиента диспетчер конфигурации
-localization_priority: Normal
+title: тип перечисления Конфигуратионманажерклиентстате
+description: Состояние клиента Configuration Manager
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82f4b677001346f9bd32c1bc54bed6e7fbac253d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe8474e6886c1312fde4ce3afde3c3fe0185574c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170702"
 ---
-# <a name="configurationmanagerclientstate-enum-type"></a>Тип перечисления configurationManagerClientState
+# <a name="configurationmanagerclientstate-enum-type"></a>тип перечисления Конфигуратионманажерклиентстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние клиента диспетчер конфигурации
+Состояние клиента Configuration Manager
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Диспетчер конфигурации агента старше 1806 или не установлена или это устройство не возвращенных в Intune старше 30 дней.|
-|установлен|1|Агент диспетчера конфигурации установлен, но может быть отображаются в консоли диспетчера конфигурации еще. Подождите несколько часов для ее обновление.|
-|работоспособны|7|Это устройство удалось успешно проверить с помощью службы диспетчера конфигурации.|
-|installFailed|8|Не удается установить агент диспетчер конфигурации.|
-|updateFailed|11|Не удалось обновить версии x в y версия агента диспетчер конфигурации. |
-|communicationError|19|Агент диспетчера конфигурации удалось для доступа к службе Диспетчер конфигурации в прошлом, но теперь больше не является возможность. |
+|unknown|нуль|Агент диспетчера конфигурации старше 1806 или не установлен, или это устройство не проверялось в Intune более 30 дней.|
+|устанавлива|1,1|Агент Configuration Manager установлен, но он еще не отображается в консоли Configuration Manager. Подождите несколько часов, пока оно не будет обновлено.|
+|рабочее|7|Этому устройству удалось успешно вернуть службу Configuration Manager.|
+|Инсталлфаилед|8,5|Не удалось установить агент диспетчера конфигураций.|
+|Упдатефаилед|-11:00|Ошибка обновления от версии x до версии y агента Configuration Manager. |
+|Коммуникатионеррор|19|Агенту диспетчера конфигураций удалось подключиться к службе Configuration Manager ранее, но теперь она больше не может. |
 
 
 

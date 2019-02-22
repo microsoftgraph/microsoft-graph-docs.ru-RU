@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления serviceStartType
-description: Возможные значения xbox службы тип запуска
-localization_priority: Normal
+title: тип перечисления Сервицестарттипе
+description: Возможные значения типа запуска службы Xbox
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78651de02db6f07d63549b3f1edff5bb6503069b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7d078db092dd6cc316fc2c48f6b0bd9889957088
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422525"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168763"
 ---
-# <a name="servicestarttype-enum-type"></a>Тип перечисления serviceStartType
+# <a name="servicestarttype-enum-type"></a>тип перечисления Сервицестарттипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения xbox службы тип запуска
+Возможные значения типа запуска службы Xbox
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Вручную|0|Type(default) запустить вручную службы|
-|Автоматически|1|Тип запуска автоматической службы|
-|Этот параметр отключен|2|Тип запуска службы отключены|
+|Вручную|нуль|Тип запуска службы вручную (по умолчанию)|
+|Автоматически|1,1|Автоматический тип запуска службы|
+|активирован|2|Отключенный тип запуска службы|
 
 
 

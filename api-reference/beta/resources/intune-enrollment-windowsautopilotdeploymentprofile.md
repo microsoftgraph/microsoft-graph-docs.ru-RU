@@ -1,49 +1,50 @@
 ---
 title: Тип ресурса windowsAutopilotDeploymentProfile
-description: Windows автопилот развертывания профилей
-localization_priority: Normal
+description: Профиль развертывания Windows для автопилота
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f97603980f4e76c4dd2f63287822a1e8e984ded
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b3b815e0184ab9969af348338c07c3fabf0b0597
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394112"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168875"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Windows автопилот развертывания профилей
+Профиль развертывания Windows для автопилота
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Чтение свойства и связи объекта [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) .|
+|[Получение windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Чтение свойств и связей объекта [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) .|
 |[Действие assign](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
+|id|String|Ключ профиля|
 |displayName|String|Имя профиля|
-|description|String|Описание профиля|
-|language|String|Язык, настроенных на устройстве|
-|createdDateTime|DateTimeOffset|Время создания профилей|
+|description|Строка|Описание профиля|
+|language|String|Язык, настроенный на устройстве|
+|createdDateTime|DateTimeOffset|Время создания профиля|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения профиля|
-|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|В соответствующем взаимодействия параметр|
-|enrollmentStatusScreenSettings|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр экрана состояния подачи заявок|
-|extractHardwareHash|Логический|Извлечение HardwareHash для профиля|
-|deviceNameTemplate|String|Шаблон, используемый для имя устройства автопилот. Это может быть настраиваемого текста, а также может содержать серийный номер устройства или случайное число. Общая длина текста, созданной с помощью шаблона может быть не более 15 символов.|
+|outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "нет на месте"|
+|Енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Настройка экрана состояния регистрации|
+|Екстраксардварехаш|Логический|Извлечение Хардварехаш для профиля|
+|Девиценаметемплате|String|Шаблон, используемый для именования автоПилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов.|
+|Енаблевхитеглове|Логический|Включите для профиля белый Глове для автопилотного развертывания.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|assignedDevices|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) коллекции|Список устройств, назначенных для профиля.|
-|assignments|[windowsAutopilotDeploymentProfileAssignment](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) коллекции|Список назначений группы для профиля.|
+|Ассигнеддевицес|Коллекция [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Список назначенных устройств для профиля.|
+|assignments|Коллекция [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md)|Список назначений групп для профиля.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -82,7 +83,8 @@ Windows автопилот развертывания профилей
     "allowDeviceUseOnInstallFailure": true
   },
   "extractHardwareHash": true,
-  "deviceNameTemplate": "String"
+  "deviceNameTemplate": "String",
+  "enableWhiteGlove": true
 }
 ```
 

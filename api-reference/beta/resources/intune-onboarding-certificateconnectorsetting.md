@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса certificateConnectorSetting
-description: Параметры соединителя сертификата.
-localization_priority: Normal
+title: Тип ресурса Цертификатеконнекторсеттинг
+description: Параметры соединителя сертификатов.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5886418aaddede43f2397ad626028598a63a0066
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 09f4baf9ddd8be630c432fcec5d7df71c442bbe2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398655"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168308"
 ---
-# <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса certificateConnectorSetting
+# <a name="certificateconnectorsetting-resource-type"></a>Тип ресурса Цертификатеконнекторсеттинг
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры соединителя сертификата.
+Параметры соединителя сертификатов.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|status|Int32|Состояние соединителя сертификата|
-|certExpiryTime|DateTimeOffset|Срок действия сертификата времени|
-|enrollmentError|String|Ошибка регистрации сертификата соединителя|
-|lastConnectorConnectionTime|DateTimeOffset|Время последнего сертификата подключенных соединителя|
-|connectorVersion|String|Версия сертификата соединителя|
-|lastUploadVersion|Int64|Версия последнего загруженного сертификата соединителя|
+|status|Int32|Состояние соединителя сертификатов|
+|Цертекспиритиме|DateTimeOffset|Время истечения срока действия сертификата|
+|Енроллментеррор|String|Ошибка регистрации соединителя сертификатов|
+|Ластконнекторконнектионтиме|DateTimeOffset|Время последнего подключения к соединителю сертификата|
+|Коннекторверсион|String|Версия соединителя сертификатов|
+|Ластуплоадверсион|Int64|Версия последнего отправленного соединителя сертификатов|
 
 ## <a name="relationships"></a>Отношения
 Нет

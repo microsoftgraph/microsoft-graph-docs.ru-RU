@@ -1,25 +1,25 @@
 ---
-title: Создание androidManagedStoreAppConfiguration
-description: Создание нового объекта androidManagedStoreAppConfiguration.
-localization_priority: Normal
+title: Создание Андроидманажедстореаппконфигуратион
+description: Создание нового объекта Андроидманажедстореаппконфигуратион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac1d204f5e71965746ce3057c901b4cea0e4a3af
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1f83097929793df891a17ceb1de5c08892fa32c9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405424"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169463"
 ---
-# <a name="create-androidmanagedstoreappconfiguration"></a>Создание androidManagedStoreAppConfiguration
+# <a name="create-androidmanagedstoreappconfiguration"></a>Создание Андроидманажедстореаппконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .
+Создание нового объекта [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,33 +40,33 @@ POST /deviceAppManagement/mobileAppConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта androidManagedStoreAppConfiguration.
+В тексте запроса добавьте представление объекта Андроидманажедстореаппконфигуратион в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания androidManagedStoreAppConfiguration.
+В следующей таблице приведены свойства, необходимые при создании Андроидманажедстореаппконфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |targetedMobileApps|Коллекция String|приложение-обработчик Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного объекта конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этой сущности конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |описание|String|Администратор предоставил описание конфигурация устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |displayName|String|Администратор предоставил название конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
 |версия|Int32|Версия конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md);|
-|packageId|String|Идентификатор приложения пакета конфигурации Android предприятия.|
-|payloadJson|String|Android корпоративного приложения конфигурации JSON полезных данных.|
-|permissionActions|[androidPermissionAction](../resources/intune-apps-androidpermissionaction.md) коллекции|Список разрешений для Android и соответствующие действия разрешений.|
+|packageId|String|Идентификатор пакета конфигурации корпоративных приложений Android.|
+|Пайлоаджсон|String|Полезные данные JSON конфигурации корпоративных приложений Android.|
+|Пермиссионактионс|Коллекция [андроидпермиссионактион](../resources/intune-apps-androidpermissionaction.md)|Список разрешений приложений для Android и соответствующие действия с разрешениями.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [androidManagedStoreAppConfiguration](../resources/intune-apps-androidmanagedstoreappconfiguration.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [андроидманажедстореаппконфигуратион](../resources/intune-apps-androidmanagedstoreappconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -101,7 +101,7 @@ Content-length: 559
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

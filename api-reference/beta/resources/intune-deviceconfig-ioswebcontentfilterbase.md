@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса iosWebContentFilterBase
-description: Представляет операций ввода-вывода базового типа параметра фильтра веб-содержимого. Пустой и абстрактный базовый. Звонящий следует использовать один из производных типов для конфигураций.
-localization_priority: Normal
+title: Тип ресурса Иосвебконтентфилтербасе
+description: Представляет базовый тип параметра фильтра веб-содержимого iOS. Пустой и абстрактный базовый. Вызывающий абонент должен использовать один из производных типов для конфигураций.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70d3619ead1e9a8748153a094960580773318a1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 440d85a8d3f07e61eb7936f31b01138ca6a74d53
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409092"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167629"
 ---
-# <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса iosWebContentFilterBase
+# <a name="ioswebcontentfilterbase-resource-type"></a>Тип ресурса Иосвебконтентфилтербасе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет операций ввода-вывода базового типа параметра фильтра веб-содержимого. Пустой и абстрактный базовый. Звонящий следует использовать один из производных типов для конфигураций.
+Представляет базовый тип параметра фильтра веб-содержимого iOS. Пустой и абстрактный базовый. Вызывающий абонент должен использовать один из производных типов для конфигураций.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

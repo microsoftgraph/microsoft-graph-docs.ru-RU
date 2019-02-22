@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления defenderSecurityCenterITContactDisplayType
-description: Возможные значения для defenderSecurityCenterITContactDisplay
-localization_priority: Normal
+title: тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
+description: Возможные значения для Дефендерсекуритицентеритконтактдисплай
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dccc00207990b021630ee3677e57874d13514b81
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c9a91b83f14226cd3272939deb99139e312b1689
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418402"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170037"
 ---
-# <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>Тип перечисления defenderSecurityCenterITContactDisplayType
+# <a name="defendersecuritycenteritcontactdisplaytype-enum-type"></a>тип перечисления Дефендерсекуритицентеритконтактдисплайтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для defenderSecurityCenterITContactDisplay
+Возможные значения для Дефендерсекуритицентеритконтактдисплай
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен|
-|displayInAppAndInNotifications|1|Отображение в приложения и уведомления|
-|displayOnlyInApp|2|Отображение только в приложении|
-|displayOnlyInNotifications|3|Отображение только в уведомления|
+|notConfigured|нуль|Не настроено|
+|Дисплайинаппандиннотификатионс|1,1|Отображение в приложении и в уведомлениях|
+|Дисплайонлинапп|2|Отображение только в приложении|
+|Дисплайонлиннотификатионс|4|Отображение только в уведомлениях|
 
 
 

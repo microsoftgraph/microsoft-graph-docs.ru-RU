@@ -1,25 +1,25 @@
 ---
-title: Обновление groupPolicyDefinitionFile
-description: Обновление свойства объекта groupPolicyDefinitionFile.
-localization_priority: Normal
+title: Обновление Граупполицидефинитионфиле
+description: Обновление свойств объекта Граупполицидефинитионфиле.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be713dba2d503f19cd565fe5e53d252ed20667e0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e204382f9237428b30362f7464264f732e13541a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430791"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169414"
 ---
-# <a name="update-grouppolicydefinitionfile"></a>Обновление groupPolicyDefinitionFile
+# <a name="update-grouppolicydefinitionfile"></a>Обновление Граупполицидефинитионфиле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .
+Обновление свойств объекта [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -46,25 +46,25 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) .
+В тексте запроса добавьте представление объекта [Граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).
+В следующей таблице приведены свойства, необходимые при создании [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Локализованные понятное имя файла ADMX.|
-|description|String|Локализованное описание параметров политики в ADMX-файле. Значение по умолчанию будет пустым.|
-|languageCodes|Коллекция String|Коды поддерживаемых языков для файлов ADMX.|
-|targetPrefix|String|Задает логическое имя, которое относится к области имен файлах.|
-|targetNamespace|String|Указывает URI, используемый для идентификации пространства имен в файле ADMX.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|displayName|String|Локализованное понятное имя файла ADMX.|
+|description|String|Локализованное описание параметров политики в файле ADMX. Значение по умолчанию — пустое значение.|
+|Лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
+|Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
+|Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
+|Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -89,7 +89,7 @@ Content-length: 325
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

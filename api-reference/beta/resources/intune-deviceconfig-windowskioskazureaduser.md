@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса windowsKioskAzureADUser
-description: Класс, используемый для идентификации учетной записи пользователя в AzureAD для базовой конфигурации
-localization_priority: Normal
+title: Тип ресурса Виндовскиосказуреадусер
+description: Класс, используемый для определения учетной записи пользователя AzureAD для конфигурации киоска
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08c5b53e8e208abac2801146ff70df6023eaedff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: feda393a6bee1b3cfc55d16cc91d321a5b99d54d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420187"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168252"
 ---
-# <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса windowsKioskAzureADUser
+# <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса Виндовскиосказуреадусер
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Класс, используемый для идентификации учетной записи пользователя в AzureAD для базовой конфигурации
+Класс, используемый для определения учетной записи пользователя AzureAD для конфигурации киоска
 
 
-Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)
+НаСледуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userId|String|Идентификатор пользователя AzureAD, который будет заблокирована этой базовой конфигурации|
-|userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
+|userId|String|Идентификатор пользователя AzureAD, который будет заблокирован для этой конфигурации киоска|
+|userPrincipalName|Строка|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
 ## <a name="relationships"></a>Отношения
 Нет

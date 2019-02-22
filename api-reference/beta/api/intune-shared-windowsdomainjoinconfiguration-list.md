@@ -1,30 +1,30 @@
 ---
-title: Список windowsDomainJoinConfigurations
-description: Свойства списка и связей объектов windowsDomainJoinConfiguration.
+title: Список Виндовсдомаинжоинконфигуратионс
+description: Список свойств и связей объектов Виндовсдомаинжоинконфигуратион.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 19f4687039e2a07b32994d855f3e215da2af85c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e52b5fffef3a86f4cdbd6442de546c35079cfce4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392999"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167937"
 ---
-# <a name="list-windowsdomainjoinconfigurations"></a>Список windowsDomainJoinConfigurations
+# <a name="list-windowsdomainjoinconfigurations"></a>Список Виндовсдомаинжоинконфигуратионс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Свойства списка и связей объектов [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) .
-## <a name="prerequisites"></a>Предварительные требования
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Список свойств и связей объектов [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) .
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Конфигурация устройств** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+| &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -41,15 +41,15 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [windowsDomainJoinConfiguration](../resources/intune-shared-windowsdomainjoinconfiguration.md) в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

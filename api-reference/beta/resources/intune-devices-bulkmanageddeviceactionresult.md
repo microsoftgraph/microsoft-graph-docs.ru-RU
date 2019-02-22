@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса bulkManagedDeviceActionResult
+title: Тип ресурса Булкманажеддевицеактионресулт
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d1b23efdb5b8eed16c6c66d72a13efaef9e38d9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 199fe08b4eaf339f17fdb67bb6dbcc0243fd90f9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425843"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168336"
 ---
-# <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса bulkManagedDeviceActionResult
+# <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|successfulDeviceIds|Коллекция String|Успешные устройств|
-|failedDeviceIds|Коллекция String|Сбой устройств|
-|notFoundDeviceIds|Коллекция String|Не найден устройств|
-|notSupportedDeviceIds|Коллекция String|Не поддерживаемые устройства|
+|Сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
+|Фаиледдевицеидс|Коллекция строк|Неисправные устройства|
+|Нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
+|Нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
 
 ## <a name="relationships"></a>Отношения
 Нет

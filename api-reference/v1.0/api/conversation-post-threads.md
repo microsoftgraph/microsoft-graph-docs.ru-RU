@@ -4,12 +4,12 @@ description: 'Создание цепочки в указанной беседе
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 2a1e5335a68377a876a9de124c8b3418a28df105
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 6887b27a32f561d005b2c86eeb71eaeda9abb8a7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990882"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169085"
 ---
 # <a name="create-thread"></a>Создание цепочки
 
@@ -26,7 +26,7 @@ ms.locfileid: "27990882"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->

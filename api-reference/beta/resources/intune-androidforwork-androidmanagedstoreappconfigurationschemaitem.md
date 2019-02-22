@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса androidManagedStoreAppConfigurationSchemaItem
-description: Конфигурация отдельного элемента внутри схемы настраиваемой конфигурации Android приложения.
-localization_priority: Normal
+title: Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
+description: Один элемент конфигурации внутри настраиваемой схемы конфигурации приложения Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a12c8f4dc0a07dbf74c92193ac73fdcfe9bfd883
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8acd3dc2eddbab3433c30289a8273fd8ca397848
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398921"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169204"
 ---
-# <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса androidManagedStoreAppConfigurationSchemaItem
+# <a name="androidmanagedstoreappconfigurationschemaitem-resource-type"></a>Тип ресурса Андроидманажедстореаппконфигуратионсчемаитем
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Конфигурация отдельного элемента внутри схемы настраиваемой конфигурации Android приложения.
+Один элемент конфигурации внутри настраиваемой схемы конфигурации приложения Android.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -29,7 +29,7 @@ ms.locfileid: "29398921"
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
 |defaultStringValue|String|Значение по умолчанию для элементов строкового типа, если указано разработчиком приложения.|
 |defaultStringArrayValue|Коллекция объектов string|Значение по умолчанию для элементов типа "массив строк", если указано разработчиком приложения.|
-|dataType|[androidManagedStoreAppConfigurationSchemaItemDataType](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|Введите значение, которое описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
+|dataType|[Андроидманажедстореаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
 |selections|Коллекция объектов [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список понятных человеку пар имя-значение для допустимых значений, которые можно задать для этого элемента (только для элементов одиночного и множественного выбора).|
 
 ## <a name="relationships"></a>Связи

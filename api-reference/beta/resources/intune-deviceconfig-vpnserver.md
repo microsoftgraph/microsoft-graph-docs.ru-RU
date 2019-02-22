@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса vpnServer
-description: Определение VPN-сервер.
-localization_priority: Normal
+title: Тип ресурса Vpnserver.
+description: Определение VPN-сервера.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0febdae5745f1295e9c690213d4a51b79d7d3bdb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406810"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170464"
 ---
-# <a name="vpnserver-resource-type"></a>Тип ресурса vpnServer
+# <a name="vpnserver-resource-type"></a>Тип ресурса Vpnserver.
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определение VPN-сервер.
+Определение VPN-сервера.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |description|String|Описание.|
-|address|String|Адрес (IP-адрес, URL-адрес или полное доменное имя)|
-|isDefaultServer|Логический|Сервер по умолчанию.|
+|address|String|Адрес (IP-адрес, полное ДОМЕНное имя или URL-адрес)|
+|Исдефаултсервер|Логический|Сервер по умолчанию.|
 
 ## <a name="relationships"></a>Отношения
 Нет

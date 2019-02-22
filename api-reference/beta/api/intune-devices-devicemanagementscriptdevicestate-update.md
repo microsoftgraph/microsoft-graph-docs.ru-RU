@@ -1,25 +1,25 @@
 ---
-title: Обновление deviceManagementScriptDeviceState
-description: Обновление свойства объекта deviceManagementScriptDeviceState.
-localization_priority: Normal
+title: Обновление Девицеманажементскриптдевицестате
+description: Обновление свойств объекта Девицеманажементскриптдевицестате.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35768793279cdb96494a26dac8854f74e3c267ad
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 65da8583b854c2cd912e877729bbe3ec7735c92a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395155"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170611"
 ---
-# <a name="update-devicemanagementscriptdevicestate"></a>Обновление deviceManagementScriptDeviceState
+# <a name="update-devicemanagementscriptdevicestate"></a>Обновление Девицеманажементскриптдевицестате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
+Обновление свойств объекта [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -41,28 +41,28 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userR
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) .
+В тексте запроса добавьте представление объекта [Девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md).
+В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности состояния устройства устройства управления скрипта.|
-|runState|[runState](../resources/intune-shared-runstate.md)|Состояние последнего выполнения сценарий управления устройства. Возможные значения: `unknown`, `success`, `fail`.|
-|resultMessage|String|Подробные сведения о результатов выполнения.|
-|lastStateUpdateDateTime|DateTimeOffset|Время последнего выполняет сценарий управления устройства.|
-|errorCode|Int32|Код ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
-|errorDescription|String|Описание ошибки, соответствующий ошибочный выполнение сценария управления устройства.|
+|id|String|Ключ объекта состояния устройства сценария управления устройствами.|
+|Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние последнего запуска скрипта управления устройствами. Возможные значения: `unknown`, `success`, `fail`.|
+|Ресултмессаже|String|Сведения о выходных данных выполнения.|
+|Ластстатеупдатедатетиме|DateTimeOffset|Последнее время выполнения скрипта управления устройствами.|
+|errorCode|Int32|Код ошибки, соответствующий ошибочному выполнению сценария управления устройствами.|
+|errorDescription|String|Описание ошибки, соответствующее ошибочному выполнению сценария управления устройствами.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -84,7 +84,7 @@ Content-length: 281
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления vppTokenSyncStatus
-description: Возможности синхронизации статусов связанный с маркером покупки программы корпоративного Apple.
-localization_priority: Normal
+title: тип перечисления Впптокенсинкстатус
+description: Возможные состояния синхронизации, связанные с токеном Apple Volume Purchase Program.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a53906018d45181bd16750e4ed3f0dac9dcb0d1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 46de00423a08e7edc6f5ac9c62d1caf0165e1d94
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398816"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170429"
 ---
-# <a name="vpptokensyncstatus-enum-type"></a>Тип перечисления vppTokenSyncStatus
+# <a name="vpptokensyncstatus-enum-type"></a>тип перечисления Впптокенсинкстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможности синхронизации статусов связанный с маркером покупки программы корпоративного Apple.
+Возможные состояния синхронизации, связанные с токеном Apple Volume Purchase Program.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Состояние по умолчанию.|
-|inProgress|1|Последняя синхронизация в стадии разработки.|
-|завершена|2|Последняя синхронизация успешно завершена.|
-|failed|3|Не удалось последней синхронизации.|
+|Нет|нуль|Состояние по умолчанию.|
+|inProgress|1,1|Выполняется Последняя синхронизация.|
+|готовы|2|Последняя синхронизация выполнена успешно.|
+|failed|4|Не удалось выполнить последнюю синхронизацию.|
 
 
 

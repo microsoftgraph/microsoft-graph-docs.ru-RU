@@ -1,25 +1,25 @@
 ---
-title: Обновление windowsInformationProtectionDeviceRegistration
-description: Обновление свойства объекта windowsInformationProtectionDeviceRegistration.
-localization_priority: Normal
+title: Обновление Виндовсинформатионпротектиондевицерегистратион
+description: Обновление свойств объекта Виндовсинформатионпротектиондевицерегистратион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0c84f81dd8d9df54c6f05b1435ee4644a1a75342
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc11fe9ce1bf16c53259e352087be4e1a9849c5a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430720"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30167846"
 ---
-# <a name="update-windowsinformationprotectiondeviceregistration"></a>Обновление windowsInformationProtectionDeviceRegistration
+# <a name="update-windowsinformationprotectiondeviceregistration"></a>Обновление Виндовсинформатионпротектиондевицерегистратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .
+Обновление свойств объекта [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,24 +45,24 @@ PATCH /deviceAppManagement/windowsInformationProtectionDeviceRegistrations/{wind
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) .
+В тексте запроса добавьте представление объекта [Виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).
+В следующей таблице приведены свойства, необходимые при создании [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|userId|String|Идентификатор пользователя, связанного с этой записи регистрации устройства.|
-|deviceRegistrationId|Строка|Идентификатор устройства для этой записи регистрации устройства.|
+|id|Строка|Ключ объекта.|
+|userId|String|UserId, связанный с этой записью регистрации устройства.|
+|deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
-|deviceType|String|Тип устройства, например, Windows ноутбуков — и Windows phone.|
-|deviceMacAddress|String|Mac-адрес устройства.|
-|lastCheckInDateTime|DateTimeOffset|Время последнего checkin устройства.|
+|deviceType|String|Тип устройства, например Windows для портативного компьютера Windows и Windows Phone.|
+|Девицемакаддресс|String|Mac-адрес устройства.|
+|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windowsInformationProtectionDeviceRegistration](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсинформатионпротектиондевицерегистратион](../resources/intune-mam-windowsinformationprotectiondeviceregistration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -85,7 +85,7 @@ Content-length: 366
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

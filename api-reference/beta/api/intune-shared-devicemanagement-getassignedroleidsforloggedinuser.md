@@ -1,30 +1,30 @@
 ---
-title: функция getAssignedRoleIdsForLoggedInUser
-description: Извлекает назначенной роли определения и назначения ролей текущего прошедшего проверку пользователя.
+title: Функция Жетассигнедролеидсфорлогжединусер
+description: Извлекает назначенные определения ролей и назначения ролей для текущего пользователя, прошедшего проверку подлинности.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c8d1618aeece15fc482d0d850f8938d45cb53edd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2927568b3363dc012070aae89a2dc3108fe7fa17
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408294"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170296"
 ---
-# <a name="getassignedroleidsforloggedinuser-function"></a>функция getAssignedRoleIdsForLoggedInUser
+# <a name="getassignedroleidsforloggedinuser-function"></a>Функция Жетассигнедролеидсфорлогжединусер
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Извлекает назначенной роли определения и назначения ролей текущего прошедшего проверку пользователя.
-## <a name="prerequisites"></a>Предварительные требования
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Извлекает назначенные определения ролей и назначения ролей для текущего пользователя, прошедшего проверку подлинности.
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Управления доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
+| &nbsp;&nbsp; **Управление доступом на основе ролей (RBAC)** | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -40,15 +40,15 @@ GET /deviceManagement/getAssignedRoleIdsForLoggedInUser
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Если успешно завершена, эта функция возвращает `200 OK` код ответа и **deviceAndAppManagementAssignedRoleId** в теле ответа.
+## <a name="response"></a>Ответ
+В случае успеха эта функция возвращает код `200 OK` отклика и объект **девицеандаппманажементассигнедролеид** в тексте отклика.
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/getAssignedRoleIdsForLogge
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

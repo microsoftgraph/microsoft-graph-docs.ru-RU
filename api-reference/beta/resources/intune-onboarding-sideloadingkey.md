@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса sideLoadingKey
-description: SideLoadingKey сущность является обязательным для Windows 8 и 8.1 устройств для установите строку бизнес-приложений для клиента.
-localization_priority: Normal
+title: Тип ресурса Сиделоадингкэй
+description: Объект Сиделоадингкэй требуется для устройств с Windows 8 и 8,1, чтобы получить доступ к корпоративным бизнес-приложениям для клиента.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7be853faae78e0ac7528d0127fd11b928164ee9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7897a50861910b67763b7d694a30096509c6c56c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410044"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170527"
 ---
-# <a name="sideloadingkey-resource-type"></a>Тип ресурса sideLoadingKey
+# <a name="sideloadingkey-resource-type"></a>Тип ресурса Сиделоадингкэй
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-SideLoadingKey сущность является обязательным для Windows 8 и 8.1 устройств для установите строку бизнес-приложений для клиента.
+Объект Сиделоадингкэй требуется для устройств с Windows 8 и 8,1, чтобы получить доступ к корпоративным бизнес-приложениям для клиента.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список sideLoadingKeies](../api/intune-onboarding-sideloadingkey-list.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) коллекции|Свойства списка и связей объектов [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .|
-|[Получение sideLoadingKey](../api/intune-onboarding-sideloadingkey-get.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Чтение свойства и связи объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .|
-|[Создание sideLoadingKey](../api/intune-onboarding-sideloadingkey-create.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Создание нового объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .|
-|[Удаление sideLoadingKey](../api/intune-onboarding-sideloadingkey-delete.md)|Нет|Удаляет [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).|
-|[Обновление sideLoadingKey](../api/intune-onboarding-sideloadingkey-update.md)|[sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md)|Обновление свойства объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .|
+|[Список Сиделоадингкеиес](../api/intune-onboarding-sideloadingkey-list.md)|Коллекция [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md)|Список свойств и связей объектов [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) .|
+|[Получение Сиделоадингкэй](../api/intune-onboarding-sideloadingkey-get.md)|[Сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md)|Чтение свойств и связей объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) .|
+|[Создание Сиделоадингкэй](../api/intune-onboarding-sideloadingkey-create.md)|[Сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md)|Создание нового объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) .|
+|[Удаление Сиделоадингкэй](../api/intune-onboarding-sideloadingkey-delete.md)|Нет|Удаляет объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md).|
+|[Обновление Сиделоадингкэй](../api/intune-onboarding-sideloadingkey-update.md)|[Сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md)|Обновление свойств объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Со стороны загрузка уникальный идентификатор ключа.|
-|value|String|Со стороны загрузки ключ значение — значение 5 x 5, разделенных hiphens.|
-|displayName|String|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
-|description|String|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
-|totalActivation|Int32|Со стороны загрузки ключ общее активация отображаются для администраторов для ИТ-специалистов.|
-|lastUpdatedDateTime|String|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
+|id|String|Уникальный идентификатор ключа загрузки на стороне.|
+|value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
+|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
+|description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
+|Тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 ## <a name="relationships"></a>Отношения
 Нет

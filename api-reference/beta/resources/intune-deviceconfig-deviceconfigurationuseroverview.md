@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса deviceConfigurationUserOverview
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3a100c5d7acfa352641e0d009f22bb498a8dbce
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 46454f41526c87df765ac060c019cd91ec44a24b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415497"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170016"
 ---
 # <a name="deviceconfigurationuseroverview-resource-type"></a>Тип ресурса deviceConfigurationUserOverview
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -30,11 +30,11 @@ ms.locfileid: "29415497"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
-|notApplicableCount|Int32|Число пользователей не применим|
+|notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
 |errorCount|Int32|Количество пользователей с ошибками.|
 |failedCount|Int32|Количество пользователей со сбоями.|
-|conflictCount|Int32|Количество пользователей в конфликта|
+|conflictCount|Int32|Количество пользователей в конфликте|
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 

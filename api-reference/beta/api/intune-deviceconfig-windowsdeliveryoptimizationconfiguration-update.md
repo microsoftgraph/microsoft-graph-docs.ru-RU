@@ -1,25 +1,25 @@
 ---
-title: Обновление windowsDeliveryOptimizationConfiguration
-description: Обновление свойства объекта windowsDeliveryOptimizationConfiguration.
-localization_priority: Normal
+title: Обновление Виндовсделиверйоптимизатионконфигуратион
+description: Обновление свойств объекта Виндовсделиверйоптимизатионконфигуратион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82e2a225d8492f78d908a3c52987ae24037e5b59
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 844cb46a4696b3eacad842e7b938734e412ce572
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430633"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168532"
 ---
-# <a name="update-windowsdeliveryoptimizationconfiguration"></a>Обновление windowsDeliveryOptimizationConfiguration
+# <a name="update-windowsdeliveryoptimizationconfiguration"></a>Обновление Виндовсделиверйоптимизатионконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) .
+Обновление свойств объекта [виндовсделиверйоптимизатионконфигуратион](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -47,26 +47,45 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) .
+В тексте запроса добавьте представление объекта [Виндовсделиверйоптимизатионконфигуратион](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md).
+В следующей таблице приведены свойства, необходимые при создании [виндовсделиверйоптимизатионконфигуратион](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deliveryOptimizationMode|[windowsDeliveryOptimizationMode](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Указывает метод загрузки, Оптимизация доставки можно использовать для управления использования пропускной способности сети для сценариев больших распределения контента. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
+|deliveryOptimizationMode|[Виндовсделиверйоптимизатионмоде](../resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md)|Указывает метод загрузки, который можно использовать для управления пропускной способностью сети для сценариев распространения большого контента. Возможные значения: `userDefined`, `httpOnly`, `httpWithPeeringNat`, `httpWithPeeringPrivateGroup`, `httpWithInternetPeering`, `simpleDownload`, `bypassMode`.|
+|Рестриктпирселектионби|[Деливерйоптимизатионрестриктпирселектионбйоптионс](../resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md)|Задает ограничение выбора однорангового узла с помощью выбранного параметра.
+Вариант 1 (маска подСети) применяется только к режимам оптимизации доставки LAN (1) и Group (2). Возможные значения: `notConfigured`, `subnetMask`.|
+|Граупидсаурце|[Деливерйоптимизатионграупидсаурце](../resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md)|Задает ограничение выбора однорангового узла для источника получать.
+Параметры, заданные в этой политике, применяются только к режиму загрузки группы режима оптимизации доставки (2). Если группа (2) не установлена в режиме загрузки, эта политика будет игнорироваться. Для варианта 3 — идентификатор параметра DHCP клиент будет запрашивать параметр DHCP с ИДЕНТИФИКАТОРом 234 и использовать возвращенное значение GUID в качестве идентификатора группы.|
+|Бандвидсмоде|[Деливерйоптимизатионбандвидс](../resources/intune-deviceconfig-deliveryoptimizationbandwidth.md)|Указывает фоновую и фоновую пропускную способность при использовании процентных значений, абсолютных или часов.|
+|Баккграунддовнлоадфромхттпделайинсекондс|Int64|Указывает время в секундах, в течение которого HTTP-источник задерживается в фоновой загрузке, для которого разрешено использование однорангового подключения. Допустимые значения — от 0 до 4294967295|
+|Фореграунддовнлоадфромхттпделайинсекондс|Int64|Указывает время (в секундах), в течение которого источник HTTP загружается в фоновом режиме загрузки, для которого разрешено использование одноранговой сети (0-86400). Допустимые значения — от 0 до 86400
+Значение 0 задает оптимизацию доставки для управления этим параметром с помощью облачной службы. Допустимые значения — от 0 до 86400|
+|Минимумрамалловедтопирингигабитес|Int32|Указывает минимальный размер ОЗУ в ГБ для использования одноРангового кэширования (1-100000). Допустимые значения — от 1 до 100000|
+|Минимумдисксизеалловедтопирингигабитес|Int32|Указывает минимальный размер диска в ГБ для использования одноРангового кэширования (1-100000). Допустимые значения — от 1 до 100000
+Рекомендуемые значения: 64 ГБ до 256 ГБ. Допустимые значения — от 1 до 100000|
+|Минимумфилесизетокачеинмегабитес|Int32|Указывает минимальный размер файла контента в МЕГАБАЙТах, поддерживающий одноранговое кэширование (1-100000). Допустимые значения — от 1 до 100000
+Рекомендуемые значения: от 1 МБ до 100 000 МБ. Допустимые значения — от 1 до 100000|
+|Минимумбаттериперцентажеалловедтауплоад|Int32|Указывает минимальный процент батареи, позволяющий устройству отправлять данные (0-100). Допустимые значения: от 0 до 100
+Значение по умолчанию равно 0. Значение 0 (ноль) означает "не ограничено", будет использоваться значение по умолчанию для облачной службы. Допустимые значения: от 0 до 100|
+|Модификачелокатион|String|Указывает диск, который должна использовать оптимизация доставки для своего кэша.|
+|Максимумкачеажеиндайс|Int32|Указывает максимальное время (в днях), в течение которого каждый файл хранится в кэше оптимизации доставки после успешного скачивания (0-49710). Допустимые значения — от 0 до 49710|
+|Максимумкачесизе|[Деливерйоптимизатионмакскачесизе](../resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md)|Задает максимальный размер кэша для оптимизации доставки: в процентах или в ГБ.|
+|Впнпиркачинг|[Включение](../resources/intune-shared-enablement.md)|Указывает, разрешено ли устройству принимать участие в одноранговом кэшировании при подключении через VPN к доменной сети. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windowsDeliveryOptimizationConfiguration](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсделиверйоптимизатионконфигуратион](../resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -75,7 +94,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 313
+Content-length: 1060
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -86,16 +105,35 @@ Content-length: 313
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 485
+Content-Length: 1232
 
 {
   "@odata.type": "#microsoft.graph.windowsDeliveryOptimizationConfiguration",
@@ -109,7 +147,26 @@ Content-Length: 485
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
-  "deliveryOptimizationMode": "httpOnly"
+  "deliveryOptimizationMode": "httpOnly",
+  "restrictPeerSelectionBy": "subnetMask",
+  "groupIdSource": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationGroupIdSource"
+  },
+  "bandwidthMode": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationBandwidth"
+  },
+  "backgroundDownloadFromHttpDelayInSeconds": 8,
+  "foregroundDownloadFromHttpDelayInSeconds": 8,
+  "minimumRamAllowedToPeerInGigabytes": 2,
+  "minimumDiskSizeAllowedToPeerInGigabytes": 7,
+  "minimumFileSizeToCacheInMegabytes": 1,
+  "minimumBatteryPercentageAllowedToUpload": 7,
+  "modifyCacheLocation": "Modify Cache Location value",
+  "maximumCacheAgeInDays": 5,
+  "maximumCacheSize": {
+    "@odata.type": "microsoft.graph.deliveryOptimizationMaxCacheSize"
+  },
+  "vpnPeerCaching": "enabled"
 }
 ```
 

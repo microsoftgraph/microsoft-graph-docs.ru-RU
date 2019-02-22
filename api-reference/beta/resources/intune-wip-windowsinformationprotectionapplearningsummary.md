@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса windowsInformationProtectionAppLearningSummary
 description: Объект сводки по обучению Windows Information Protection для приложений.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 40be7bdac0ae1d68299c60fcde8a96cf30f211d5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4c42fbe9da221e9c41a29291d6a279b1144cd355
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396219"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169491"
 ---
 # <a name="windowsinformationprotectionapplearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionAppLearningSummary
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Объект сводки по обучению Windows Information Protection для приложений.
 
@@ -31,13 +31,13 @@ ms.locfileid: "29396219"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
+|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionAppLearningSummary.|
 |applicationName|String|Имя приложения|
 |applicationType|[applicationType](../resources/intune-wip-applicationtype.md)|Тип приложения. Возможные значения: `universal`, `desktop`.|
 |deviceCount|Int32|Количество устройств|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

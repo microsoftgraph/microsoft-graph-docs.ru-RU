@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления windowsUpdateType
-description: Какие устройства филиала будет получать обновления из
-localization_priority: Normal
+title: тип перечисления Виндовсупдатетипе
+description: Какие устройства филиала будут получать обновления от
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d3dd0f6d8ba46d7f1cc803b217a98a862602149
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 17aad82b25982b90ecea348d959e2ed2ec94a483
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400139"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169162"
 ---
-# <a name="windowsupdatetype-enum-type"></a>Тип перечисления windowsUpdateType
+# <a name="windowsupdatetype-enum-type"></a>тип перечисления Виндовсупдатетипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Какие устройства филиала будет получать обновления из
+Какие устройства филиала будут получать обновления от
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Пользователь может задать.|
-|all|1|Разделитель годовая канала (целевой). Устройства получает все обновления компонента, которые применяются с точками годовая канала (требуемой).|
-|businessReadyOnly|2|Разделитель годовая канала. Устройства получает обновления компонента точками годовая канала.|
-|windowsInsiderBuildFast|3|Построение изнутри Windows - Fast|
-|windowsInsiderBuildSlow|4|Построение изнутри Windows - снижение производительности|
-|windowsInsiderBuildRelease|5|Построение выпуска Windows изнутри|
+|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
+|all|1,1|Половина ежегодного канала (нацеленная). Device получает все подходящее обновление компонентов из Полугодого канала (нацелено).|
+|Бусинессреадйонли|2|Половина ежегодного канала. Устройство получает обновления компонентов из Полугодого канала.|
+|Виндовсинсидербуилдфаст|4|Предварительная сборка Windows для предварительной сборки — Быстрая|
+|Виндовсинсидербуилдслов|4|Сборка для предварительной оценки Windows — низкая|
+|Виндовсинсидербуилдрелеасе|17:00|Выпуск сборки предварительной оценки Windows|
 
 
 

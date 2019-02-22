@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления firewallCertificateRevocationListCheckMethodType
-description: Возможные значения для firewallCertificateRevocationListCheckMethod
-localization_priority: Normal
+title: тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
+description: Возможные значения для Фиреваллцертификатеревокатионлистчеккмесод
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4585c30c0a910befd8df8482636916af9ad9c0d6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 74989961978ddd10f2c14e57cfe31e25ac831703
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396415"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170079"
 ---
-# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>Тип перечисления firewallCertificateRevocationListCheckMethodType
+# <a name="firewallcertificaterevocationlistcheckmethodtype-enum-type"></a>тип перечисления Фиреваллцертификатеревокатионлистчеккмесодтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для firewallCertificateRevocationListCheckMethod
+Возможные значения для Фиреваллцертификатеревокатионлистчеккмесод
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение не настраивается с Intune, не переопределяют настраиваемых пользователем устройства по умолчанию|
-|none|1|Не проверять списка отзыва сертификатов|
-|Попытка|2|Попытайтесь проверки списка отзыва Сертификатов и разрешить сертификат только в том случае, если сертификат подтверждается при проверке|
-|Требовать|3|Требовать успешной проверки списка отзыва Сертификатов, перед тем как разрешить сертификата|
+|Девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
+|Нет|1,1|Не проверять список отзыва сертификатов|
+|произошл|2|Проверка списка ОТЗЫВА сертификатов и предоставление сертификата только в том случае, если сертификат подтвержден подтверждением|
+|необходимость|4|Требовать успешную проверку списка ОТЗЫВА сертификатов перед предоставлением сертификата|
 
 
 

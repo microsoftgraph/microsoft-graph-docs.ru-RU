@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса macOSMinimumOperatingSystem
-description: Минимальные операционной системы, необходимые для приложения MacOS.
-localization_priority: Normal
+title: Тип ресурса Макосминимумоператингсистем
+description: Минимальная операционная система, необходимая для приложения MacOS.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1b5bb3c31f876cb7444ff90cad5060c08d2f60b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f6975690361c981d6b5aaf1d9dae959ad6f8be5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425927"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169939"
 ---
-# <a name="macosminimumoperatingsystem-resource-type"></a>Тип ресурса macOSMinimumOperatingSystem
+# <a name="macosminimumoperatingsystem-resource-type"></a>Тип ресурса Макосминимумоператингсистем
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Минимальные операционной системы, необходимые для приложения MacOS.
+Минимальная операционная система, необходимая для приложения MacOS.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |v10_7|Логический|Mac OS 10,7 или более поздней версии.|
 |v10_8|Логический|Mac OS 10,8 или более поздней версии.|
-|v10_9|Логический|Mac OS 10.9 или более поздней версии.|
-|v10_10|Логический|Mac OS 10.10 или более поздней версии.|
-|v10_11|Логический|Mac OS 10.11 или более поздней версии.|
-|v10_12|Логический|Mac OS 10.12 или более поздней версии.|
-|v10_13|Логический|Mac OS 10.13 или более поздней версии.|
+|v10_9|Логический|Mac OS 10,9 или более поздней версии.|
+|v10_10|Логический|Mac OS 10,10 или более поздней версии.|
+|v10_11|Логический|Mac OS 10,11 или более поздней версии.|
+|v10_12|Логический|Mac OS 10,12 или более поздней версии.|
+|v10_13|Логический|Mac OS 10,13 или более поздней версии.|
 
 ## <a name="relationships"></a>Отношения
 Нет
