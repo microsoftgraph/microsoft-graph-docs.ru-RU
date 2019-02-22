@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса windowsInformationProtectionApp
 description: Защита данных приложений для Windows
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 45d428ee18e92e76f5a13c568373219f904fd886
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e2b8739fd045d4b8e6293164fc7e9b14154a475c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403688"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139286"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Тип ресурса windowsInformationProtectionApp
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Защита данных приложений для Windows
 
@@ -23,7 +23,7 @@ ms.locfileid: "29403688"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Отображаемое имя приложения.|
-|description|String|Описание приложения.|
+|description|Строка|Описание приложения.|
 |publisherName|String|Имя издателя|
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|

@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса officeUserCheckinSummary
-description: Сущности, которая описывает клиента возврат stats.
+title: Тип ресурса Оффицеусерчеккинсуммари
+description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: d44c978ff1442c98038bf627397de5ca3a0ca3bf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b74d7508c9ef3b1d7183c806783e567cb75859ff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411010"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143360"
 ---
-# <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса officeUserCheckinSummary
+# <a name="officeusercheckinsummary-resource-type"></a>Тип ресурса Оффицеусерчеккинсуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущности, которая описывает клиента возврат stats.
+Сущность, описывающая статистику по возврату клиента.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|succeededUserCount|Int32|Всего успешных пользователя проверьте ins за последние три месяца.|
-|failedUserCount|Int32|Всего неудачных пользователя проверьте ins за последние три месяца.|
+|Сукцеедедусеркаунт|Int32|Общее количество успешных проверок пользователей за последние 3 месяца.|
+|failedUserCount|Int32|Общее число неудачных проверок пользователей за последние 3 месяца.|
 
 ## <a name="relationships"></a>Отношения
 Нет

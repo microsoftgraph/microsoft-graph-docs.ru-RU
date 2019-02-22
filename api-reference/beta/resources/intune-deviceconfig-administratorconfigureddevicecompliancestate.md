@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления administratorConfiguredDeviceComplianceState
-description: Администратор настроил состояния устройства соответствия Enum
-localization_priority: Normal
+title: тип перечисления Администраторконфигуреддевицекомплианцестате
+description: ПереЧисление состояния соответствия устройства, настроенного администратором
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9075a578dc2dc2a1f511975631e5239c733c1a22
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0735c93122972b7961cef86cd6bc0e0acdff4b4d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402421"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144312"
 ---
-# <a name="administratorconfigureddevicecompliancestate-enum-type"></a>Тип перечисления administratorConfiguredDeviceComplianceState
+# <a name="administratorconfigureddevicecompliancestate-enum-type"></a>тип перечисления Администраторконфигуреддевицекомплианцестате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Администратор настроил состояния устройства соответствия Enum
+ПереЧисление состояния соответствия устройства, настроенного администратором
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|basedOnDeviceCompliancePolicy|0|На основании других соответствия состояние соответствия набор политик|
-|Несовместимый|1|Набор соответствия требованиям к несовместимой|
+|Баседондевицекомплианцеполици|нуль|Задание состояния соответствия на основе других политик соответствия требованиям|
+|Несоответствующих|1,1|Установка соответствия неСоответствующим требованиям|
 
 
 

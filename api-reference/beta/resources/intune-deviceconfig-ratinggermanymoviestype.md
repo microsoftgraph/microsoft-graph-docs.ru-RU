@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления ratingGermanyMoviesType
-description: Оценка метки в Германии кино
-localization_priority: Normal
+title: тип перечисления Ратингжерманимовиестипе
+description: Метки оценок фильмов в Германии
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfa8211b562fac95e5c325c9afe682c38e5272db
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3a8543c0dd565edd12fcb0db4e523e5273570d5b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395876"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139524"
 ---
-# <a name="ratinggermanymoviestype-enum-type"></a>Тип перечисления ratingGermanyMoviesType
+# <a name="ratinggermanymoviestype-enum-type"></a>тип перечисления Ратингжерманимовиестипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Оценка метки в Германии кино
+Метки оценок фильмов в Германии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешать все содержимое кино|
-|allBlocked|1|Не разрешать любое содержимое кино|
-|Общие|2|Jahren AB 0, без ограничения срока хранения|
-|agesAbove6|3|Лет AB 6 Jahren, 6 и старые|
-|agesAbove12|4|AB 12 Jahren, лет 12 и старые|
-|agesAbove16|5|AB 16 Jahren, лет 16 и старые|
-|для взрослых|6|Jahren 18 AB, только для взрослых|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
+|Аллблоккед|1,1|Не разрешать никакие видеоролики|
+|обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
+|agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
+|agesAbove12|4|AB 12 Жахрен, от 12 лет до 12 лет|
+|agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
+|взрослые|6|Только для Жахрен, только для взрослых|
 
 
 

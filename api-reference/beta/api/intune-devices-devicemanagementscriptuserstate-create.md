@@ -1,25 +1,25 @@
 ---
-title: Создание deviceManagementScriptUserState
-description: Создание нового объекта deviceManagementScriptUserState.
-localization_priority: Normal
+title: Создание Девицеманажементскриптусерстате
+description: Создание нового объекта Девицеманажементскриптусерстате.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01ab54a736a5e9d1a305bff44a601494e8ec8860
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4e7e0a0f7f8c3f837d6125b6c91eee51f1bfed7e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424268"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139349"
 ---
-# <a name="create-devicemanagementscriptuserstate"></a>Создание deviceManagementScriptUserState
+# <a name="create-devicemanagementscriptuserstate"></a>Создание Девицеманажементскриптусерстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) .
+Создание нового объекта [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,21 +45,21 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRu
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта deviceManagementScriptUserState.
+В тексте запроса добавьте представление объекта Девицеманажементскриптусерстате в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания deviceManagementScriptUserState.
+В следующей таблице приведены свойства, необходимые при создании Девицеманажементскриптусерстате.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности состояние пользователя устройства управления скрипта.|
-|successDeviceCount|Int32|Число допустимых устройства для определенного пользователя.|
-|errorDeviceCount|Int32|Число ошибок устройства для определенного пользователя.|
-|userPrincipalName|String|Имени участника-пользователя для определенного пользователя.|
+|id|String|Ключ объекта состояния пользователя скрипта управления устройствами.|
+|Сукцессдевицекаунт|Int32|Число устройств для указанного пользователя.|
+|errorDeviceCount|Int32|Количество устройств с ошибками для определенного пользователя.|
+|userPrincipalName|String|Имя участника, указанного пользователем.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -79,7 +79,7 @@ Content-length: 180
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

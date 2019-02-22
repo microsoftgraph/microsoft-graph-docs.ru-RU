@@ -1,25 +1,25 @@
 ---
 title: Обновление deviceManagementScript
-description: Обновление свойства объекта deviceManagementScript.
-localization_priority: Normal
+description: Обновление свойств объекта deviceManagementScript.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7cdf0364745f97beec777b6971ab096e43e916ff
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fafb11f61f6e98eba90de9054550e673b6d6cbdd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399012"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141792"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
+Обновление свойств объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,34 +40,34 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
+В тексте запроса добавьте представление объекта [DeviceManagementScript](../resources/intune-devices-devicemanagementscript.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).
+В следующей таблице приведены свойства, необходимые при создании [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сценарий управления устройства.|
-|displayName|String|Имя скрипта управления устройства.|
-|description|String|Необязательное описание сценарий управления устройства.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска сценария. Если не определена сценарий будет выполняться один раз|
-|scriptContent|Binary|Содержимое сценария.|
-|createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
+|id|String|Уникальный идентификатор для сценария управления устройствами.|
+|displayName|String|Имя скрипта управления устройствами.|
+|description|Строка|НеОбязательное описание скрипта управления устройствами.|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
+|Скриптконтент|Binary|Содержимое скрипта.|
+|createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
+|runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором выполняется скрипт управления устройствами. Возможные значения: `system`, `user`.|
+|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Логический|Значение, указывающее ли сценарий PowerShell должна запускаться в 32-разрядная версия|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -97,7 +97,7 @@ Content-length: 443
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса outOfBoxExperienceSettings
-description: В соответствующем взаимодействия параметр
-localization_priority: Normal
+title: Тип ресурса Outofboxexperiencesettings.
+description: Настройка "нет на месте"
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5d2b48fef00c9c3a291a0a2fdfe680b9f4e21030
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1148ba609a6533dcc6cedb9abd50e9191dceb5d2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404605"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145530"
 ---
-# <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса outOfBoxExperienceSettings
+# <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса Outofboxexperiencesettings.
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-В соответствующем взаимодействия параметр
+Настройка "нет на месте"
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|hidePrivacySettings|Логический|Показать или скрыть параметры конфиденциальности для пользователя|
-|hideEULA|Логический|Показать или скрыть лицензионное соглашение для пользователя|
-|userType|[windowsUserType](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
-|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности соединения AAD. Возможные значения: `singleUser`, `shared`.|
-|skipKeyboardSelectionPage|Логический|Если набор, а затем пропустить раскладка клавиатуры страницы Если значение языка и региона|
-|hideEscapeLink|Логический|Если параметр имеет значение true, затем пользователь не может запуститься через с другой учетной записи для входа в компании|
+|Хидепривацисеттингс|Логический|Отображение или скрытие параметров конфиденциальности для пользователя|
+|Хидиула|Логический|Отображение или скрытие ЛИЦЕНЗИОНного соглашения для пользователя|
+|userType|[Виндовсусертипе](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности присоединения AAD. Возможные значения: `singleUser`, `shared`.|
+|Скипкэйбоардселектионпаже|Логический|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
+|Хидискапелинк|Логический|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
 
 ## <a name="relationships"></a>Отношения
 Нет

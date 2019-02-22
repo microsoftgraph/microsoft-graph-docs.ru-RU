@@ -1,25 +1,25 @@
 ---
-title: Создание intuneBrandingProfile
-description: Создание нового объекта intuneBrandingProfile.
-localization_priority: Normal
+title: Создание Интунебрандингпрофиле
+description: Создание нового объекта Интунебрандингпрофиле.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a613d6d98aee2b17624e7894cafa712c7d6b66ed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: de4786920476794d370a33d8275c347c909cf538
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399537"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142058"
 ---
-# <a name="create-intunebrandingprofile"></a>Создание intuneBrandingProfile
+# <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .
+Создание нового объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,23 +40,23 @@ POST /deviceManagement/intuneBrandingProfiles
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта intuneBrandingProfile.
+В тексте запроса добавьте представление объекта Интунебрандингпрофиле в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания intuneBrandingProfile.
+В следующей таблице приведены свойства, необходимые при создании Интунебрандингпрофиле.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
-|Имя_профиля|String|Имя профиля|
-|profileDescription|String|Описание профиля|
-|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
-|createdDateTime|DateTimeOffset|При создании BrandingProfile.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
+|id|Строка|Ключ профиля|
+|имя_профиля|String|Имя профиля|
+|Профиледескриптион|String|Описание профиля|
+|Исдефаултпрофиле|Логический|Показывает, используется ли профиль по умолчанию.|
+|createdDateTime|DateTimeOffset|При создании Брандингпрофиле.|
+|lastModifiedDateTime|DateTimeOffset|При последнем изменении Брандингпрофиле.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
 |contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
 |contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
@@ -66,16 +66,16 @@ POST /deviceManagement/intuneBrandingProfiles
 |onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
-|showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
+|showLogo|Логический|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображения эмблемы, отображаемые в приложениях портала компании на темы цвет фона.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображения эмблемы, отображаемые в приложениях портала компании на светлый фон.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемая изображение, отображаемое в приложениях портал "Компания" Главная страница|
+|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на светлом фоне.|
+|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -126,7 +126,7 @@ Content-length: 1205
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

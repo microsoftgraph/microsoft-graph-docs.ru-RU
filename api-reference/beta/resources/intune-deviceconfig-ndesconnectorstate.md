@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления ndesConnectorState
-description: Текущее состояние Ndes соединителя.
-localization_priority: Normal
+title: тип перечисления Ндесконнекторстате
+description: Текущее состояние соединителя NDES Connector.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9cfb0ec31bccd853b3ff2b2965c83fb6813a82e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 99ce6b85f08e929189a7dbdf4eb802fbf79f584f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409386"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146440"
 ---
-# <a name="ndesconnectorstate-enum-type"></a>Тип перечисления ndesConnectorState
+# <a name="ndesconnectorstate-enum-type"></a>тип перечисления Ндесконнекторстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Текущее состояние Ndes соединителя.
+Текущее состояние соединителя NDES Connector.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Состояние недоступно еще для этого соединителя.|
-|активных|1|Соединитель NDES подключился недавно|
-|Неактивные|2|Нет последнее действие для соединителя Ndes|
+|Нет|нуль|Для этого соединителя пока недоступно состояние.|
+|ASP|1,1|Соединитель NDES Connector недавно подключился|
+|отсутств|2|Нет недавних действий для соединителя NDES Connector|
 
 
 

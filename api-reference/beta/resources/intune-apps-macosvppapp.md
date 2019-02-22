@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса macOsVppApp
-description: Содержит свойства и свойства, наследуемые для MacOS Volume-Purchased программы (VPP) приложения.
-localization_priority: Normal
+title: Тип ресурса Макосвппапп
+description: Содержит свойства и наследуемые свойства для приложений MacOS Program (VPP), которые были приобретены.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c62db9d72be9f303d86468a333257a29765e88cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c07be079c6a1ee29b693344887ea5d0db3099b5f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430703"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140560"
 ---
-# <a name="macosvppapp-resource-type"></a>Тип ресурса macOsVppApp
+# <a name="macosvppapp-resource-type"></a>Тип ресурса Макосвппапп
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и свойства, наследуемые для MacOS Volume-Purchased программы (VPP) приложения.
+Содержит свойства и наследуемые свойства для приложений MacOS Program (VPP), которые были приобретены.
 
 
 Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).
@@ -25,18 +25,18 @@ ms.locfileid: "29430703"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список macOsVppApps](../api/intune-apps-macosvppapp-list.md)|[macOsVppApp](../resources/intune-apps-macosvppapp.md) коллекции|Свойства списка и связей объектов [macOsVppApp](../resources/intune-apps-macosvppapp.md) .|
-|[Получение macOsVppApp](../api/intune-apps-macosvppapp-get.md)|[macOsVppApp](../resources/intune-apps-macosvppapp.md)|Чтение свойства и связи объекта [macOsVppApp](../resources/intune-apps-macosvppapp.md) .|
-|[Создание macOsVppApp](../api/intune-apps-macosvppapp-create.md)|[macOsVppApp](../resources/intune-apps-macosvppapp.md)|Создание нового объекта [macOsVppApp](../resources/intune-apps-macosvppapp.md) .|
-|[Удаление macOsVppApp](../api/intune-apps-macosvppapp-delete.md)|Нет|Удаляет [macOsVppApp](../resources/intune-apps-macosvppapp.md).|
-|[Обновление macOsVppApp](../api/intune-apps-macosvppapp-update.md)|[macOsVppApp](../resources/intune-apps-macosvppapp.md)|Обновление свойства объекта [macOsVppApp](../resources/intune-apps-macosvppapp.md) .|
+|[Список Макосвппаппс](../api/intune-apps-macosvppapp-list.md)|Коллекция [макосвппапп](../resources/intune-apps-macosvppapp.md)|Список свойств и связей объектов [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
+|[Получение Макосвппапп](../api/intune-apps-macosvppapp-get.md)|[Макосвппапп](../resources/intune-apps-macosvppapp.md)|Чтение свойств и связей объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
+|[Создание Макосвппапп](../api/intune-apps-macosvppapp-create.md)|[Макосвппапп](../resources/intune-apps-macosvppapp.md)|Создание нового объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
+|[Удаление Макосвппапп](../api/intune-apps-macosvppapp-delete.md)|Нет|Удаляет объект [макосвппапп](../resources/intune-apps-macosvppapp.md).|
+|[Обновление Макосвппапп](../api/intune-apps-macosvppapp-update.md)|[Макосвппапп](../resources/intune-apps-macosvppapp.md)|Обновление свойств объекта [макосвппапп](../resources/intune-apps-macosvppapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,21 +47,21 @@ ms.locfileid: "29430703"
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |releaseDateTime|DateTimeOffset|Дата и время выпуска приложения, на которое распространяется программа VPP.|
 |appStoreUrl|String|URL-адрес магазина.|
 |licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Поддерживаемый тип лицензии.|
-|vppTokenOrganizationName|String|Организация, связанная с токеном Apple Volume Purchase Program.|
+|vppTokenOrganizationName|Строка|Организация, связанная с токеном Apple Volume Purchase Program.|
 |vppTokenAccountType|[vppTokenAccountType](../resources/intune-shared-vpptokenaccounttype.md)|Тип программы оптовых покупок, с которой связан заданный токен Apple Volume Purchase Program. Возможные значения: `business`, `education`. Возможные значения: `business`, `education`.|
 |vppTokenAppleId|String|Идентификатор Apple ID, связанный с заданным токеном Apple Volume Purchase Program.|
 |bundleId|String|Имя удостоверения.|
-|vppTokenId|String|Идентификатор VPP маркер, связанный с этого приложения.|
-|revokeLicenseActionResults|[macOsVppAppRevokeLicensesActionResult](../resources/intune-apps-macosvppapprevokelicensesactionresult.md) коллекции|Результаты отозвать действия лицензии на это приложение.|
+|vppTokenId|String|Идентификатор токена VPP, связанного с этим приложением.|
+|Ревокелиценсеактионресултс|Коллекция [макосвппаппревокелиценсесактионресулт](../resources/intune-apps-macosvppapprevokelicensesactionresult.md)|Результаты отзыва действий лицензии в этом приложении.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
@@ -69,9 +69,9 @@ ms.locfileid: "29430703"
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Сводка по установке мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|assignedLicenses|[macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) коллекции|Назначение для этого приложения лицензий.|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|assignedLicenses|Коллекция [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md)|Лицензии, назначенные этому приложению.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

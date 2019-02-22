@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления nonEapAuthenticationMethodForEapTtlsType
-description: Методы EAP без проверки подлинности.
-localization_priority: Normal
+title: тип перечисления Нонеапаусентикатионмесодфореапттлстипе
+description: Методы, отличные от EAP, для проверки подлинности.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f14c98118541e6eeb6cb48fd54ac3fb69a722b0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 14ac915d14816a678aa395054548a1b1b5f035ee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145516"
 ---
-# <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>Тип перечисления nonEapAuthenticationMethodForEapTtlsType
+# <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>тип перечисления Нонеапаусентикатионмесодфореапттлстипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Методы EAP без проверки подлинности.
+Методы, отличные от EAP, для проверки подлинности.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|незашифрованными|0|Незашифрованный пароль (РАР).|
-|challengeHandshakeAuthenticationProtocol|1|Проверка подлинности протокола пароля (CHAP).|
-|microsoftChap|2| CHAP Microsoft (MS-CHAP).|
-|microsoftChapVersionTwo|3|Версии 2 CHAP Microsoft (MS-CHAP v2).|
+|Уненкриптедпассворд|нуль|Незашифрованный пароль (PAP).|
+|Чалленжехандшакеаусентикатионпротокол|1,1|Протокол проверки поДлинности подтверждения связи (CHAP).|
+|Микрософтчап|2| Microsoft CHAP (MS-CHAP).|
+|Микрософтчапверсионтво|4|Microsoft CHAP версии 2 (MS-CHAP v2).|
 
 
 

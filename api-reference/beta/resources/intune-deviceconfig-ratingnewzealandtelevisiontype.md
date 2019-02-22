@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления ratingNewZealandTelevisionType
-description: Метки TV оценки содержимого в новой Зеландии
-localization_priority: Normal
+title: тип перечисления Ратингневзеаландтелевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Новой Зеландии
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4030ce62a3ae37166c0f9f64d62e513db5a22baf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a6f758007a7d964e443c576cbdca4a8e4bc0fee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399110"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144599"
 ---
-# <a name="ratingnewzealandtelevisiontype-enum-type"></a>Тип перечисления ratingNewZealandTelevisionType
+# <a name="ratingnewzealandtelevisiontype-enum-type"></a>тип перечисления Ратингневзеаландтелевисионтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки TV оценки содержимого в новой Зеландии
+Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Новой Зеландии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
-|allBlocked|1|Не допускайте использование Любого показывает контента|
-|Общие|2|Классификация G исключает материалы, скорее всего вред дочерних элементов в списке 14|
-|parentalGuidance|3|Классификация PGR рекомендует родителям и заменяющим для контроля за молодых средства просмотра|
-|для взрослых|4|Классификация AO не подходит для дочерних элементов|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
+|Аллблоккед|1,1|Не разрешать показ контента|
+|обобщен|2|Классификация G исключает материалы, которые, вероятнее всего, пострадали детей до 14|
+|Паренталгуиданце|4|Классификация ПГР способствует родителям и хранителям для просмотра моложе детей|
+|взрослые|4|Классификация АО не подходит для детей|
 
 
 
