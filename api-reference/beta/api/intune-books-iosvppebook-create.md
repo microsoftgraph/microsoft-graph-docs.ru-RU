@@ -1,21 +1,21 @@
 ---
 title: Create iosVppEBook
 description: Создание объекта iosVppEBook.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 121f686e5709bcfe59ffab7151afcb9e5f48c127
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bf780e1bc3bcb15392a6f2a1b164ef3c94ab1cc2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409757"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165221"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).
 
@@ -40,7 +40,7 @@ POST /deviceAppManagement/managedEBooks
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -51,9 +51,9 @@ POST /deviceAppManagement/managedEBooks
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
-|description|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|description|Строка|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
@@ -62,14 +62,14 @@ POST /deviceAppManagement/managedEBooks
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
-|appleId|String|Идентификатор Apple ID, связанный с токеном VPP.|
+|appleId|Строка|Идентификатор Apple ID, связанный с токеном VPP.|
 |vppOrganizationName|String|Название организации для токена VPP.|
 |genres|Коллекция String|Жанры.|
 |language|String|Язык.|
 |seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности.|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -115,7 +115,7 @@ Content-length: 854
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

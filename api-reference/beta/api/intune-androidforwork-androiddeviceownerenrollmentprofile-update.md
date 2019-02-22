@@ -1,25 +1,25 @@
 ---
-title: Обновление androidDeviceOwnerEnrollmentProfile
-description: Обновление свойства объекта androidDeviceOwnerEnrollmentProfile.
-localization_priority: Normal
+title: Обновление Андроиддевицеовнеренроллментпрофиле
+description: Обновление свойств объекта Андроиддевицеовнеренроллментпрофиле.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 966b538b161dca2bc5c85390cab5cd8bd371b236
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 67f60eb1adc0ba20354fb1f1d0fb3499c2fde231
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413831"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163100"
 ---
-# <a name="update-androiddeviceownerenrollmentprofile"></a>Обновление androidDeviceOwnerEnrollmentProfile
+# <a name="update-androiddeviceownerenrollmentprofile"></a>Обновление Андроиддевицеовнеренроллментпрофиле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
+Обновление свойств объекта [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,14 +40,14 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) .
+В тексте запроса добавьте представление объекта [Андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).
+В следующей таблице приведены свойства, необходимые при создании [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 |createdDateTime|DateTimeOffset|Дата и время создания профиля регистрации.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения профиля регистрации.|
 |tokenValue|String|Значение последнего созданного маркера для этого профиля регистрации.|
-|tokenCreationDateTime|DateTimeOffset|Дата и время создания недавно созданного маркер.|
+|Токенкреатиондатетиме|DateTimeOffset|Дата и время создания последнего созданного маркера.|
 |tokenExpirationDateTime|DateTimeOffset|Дата и время, когда истекает срок действия последнего созданного маркера.|
 |enrolledDeviceCount|Int32|Общее количество устройств с Android, зарегистрированных через этот профиль регистрации.|
 |qrCodeContent|String|Строка, используемая для создания QR-кода маркера.|
@@ -67,7 +67,7 @@ PATCH /deviceManagement/androidDeviceOwnerEnrollmentProfiles/{androidDeviceOwner
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [androidDeviceOwnerEnrollmentProfile](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -96,8 +96,8 @@ Content-length: 565
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

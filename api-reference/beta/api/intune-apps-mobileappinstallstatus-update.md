@@ -1,25 +1,25 @@
 ---
 title: Обновление mobileAppInstallStatus
-description: Обновление свойства объекта mobileAppInstallStatus.
-localization_priority: Normal
+description: Обновление свойств объекта mobileAppInstallStatus.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e28404181248cef1deae4bec2752de51f553373b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1efc73e81894cb6fdd7d352cb067cf164f8bb33c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394546"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165746"
 ---
 # <a name="update-mobileappinstallstatus"></a>Обновление mobileAppInstallStatus
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .
+Обновление свойств объекта [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -41,35 +41,35 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) .
+В тексте запроса добавьте представление объекта [MobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).
+В следующей таблице приведены свойства, необходимые при создании [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |deviceName|String|Имя устройства|
-|deviceId|String|Идентификатор устройства|
+|deviceId|String|ИДЕНТИФИКАТОР устройства|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации|
-|mobileAppInstallStatusValue|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|installStateDetail|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Сведений о состоянии установки приложения. Возможные значения: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
-|errorCode|Int32|Сообщение об ошибке примеры кода для установки или удаления сбоев.|
-|osVersion|String|Версия операционной системы|
-|osDescription|String|Описание операционная система|
+|Mobileappinstallstatusvalue (|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|installState|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|Инсталлстатедетаил|[resultantAppStateDetail](../resources/intune-apps-resultantappstatedetail.md)|Сведения о состоянии установки приложения. Возможные значения: `noAdditionalDetails`, `seeInstallErrorCode`, `seeUninstallErrorCode`, `pendingReboot`, `platformNotApplicable`, `minimumCpuSpeedNotMet`, `minimumLogicalProcessorCountNotMet`, `minimumPhysicalMemoryNotMet`, `minimumOsVersionNotMet`, `minimumDiskSpaceNotMet`, `processorArchitectureNotApplicable`.|
+|errorCode|Int32|Код ошибки для установки или удаления сбоев.|
+|osVersion|String|Версия ОС|
+|osDescription|String|Описание ОС|
 |userName|String|Имя пользователя устройства|
-|userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|displayVersion|String|Человеческого для чтения версию приложения|
+|userPrincipalName|Строка|"User Principal Name" (Имя участника-пользователя);|
+|Дисплайверсион|String|Доступная для человека версия приложения|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -98,7 +98,7 @@ Content-length: 549
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

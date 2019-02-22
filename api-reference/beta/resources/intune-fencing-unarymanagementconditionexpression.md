@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса unaryManagementConditionExpression
-description: Выражение условия управления, который вычисляется с использованием унарного.
-localization_priority: Normal
+title: Тип ресурса Унариманажементкондитионекспрессион
+description: Выражение условия управления, вычисляемое с использованием унарной операции.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1224a869ec2ec9cae2f38273f7a68b64d3d7333
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9802cb8162973ecdaa387a29c70d1baa7aec4b8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164220"
 ---
-# <a name="unarymanagementconditionexpression-resource-type"></a>Тип ресурса unaryManagementConditionExpression
+# <a name="unarymanagementconditionexpression-resource-type"></a>Тип ресурса Унариманажементкондитионекспрессион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Выражение условия управления, который вычисляется с использованием унарного.
+Выражение условия управления, вычисляемое с использованием унарной операции.
 
 
-Наследуется от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)
+НаСледуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|operator|[unaryManagementConditionExpressionOperatorType](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|Оператор, используемый в оценке унарного. Возможные значения: `not`.|
-|операнд|[managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)|Операнд унарного.|
+|operator|[Унариманажементкондитионекспрессионоператортипе](../resources/intune-fencing-unarymanagementconditionexpressionoperatortype.md)|Оператор, используемый в оценке унарной операции. Возможные значения: `not`.|
+|начинается|[Манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)|Операнд унарной операции.|
 
 ## <a name="relationships"></a>Отношения
 Нет

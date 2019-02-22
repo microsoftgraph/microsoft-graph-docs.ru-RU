@@ -1,25 +1,25 @@
 ---
-title: Создание windowsOfficeClientConfiguration
-description: Создайте новую политику не безопасности при указании на группы.
+title: Создание Виндовсоффицеклиентконфигуратион
+description: Создайте новую политику, не являющуюся политикой безопасности, с целевыми группами.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: a915447ad22438d021bb4577fc856bbe89db1fdc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a8e11fcf9728a554c8938d3ccf2314bf5e1999c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394378"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164164"
 ---
-# <a name="create-windowsofficeclientconfiguration"></a>Создание windowsOfficeClientConfiguration
+# <a name="create-windowsofficeclientconfiguration"></a>Создание Виндовсоффицеклиентконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создайте новую политику не безопасности при указании на группы.
+Создайте новую политику, не являющуюся политикой безопасности, с целевыми группами.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,32 +40,32 @@ POST /officeConfiguration/clientConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) .
+В тексте запроса добавьте представление объекта [Виндовсоффицеклиентконфигуратион](../resources/intune-cirrus-windowsofficeclientconfiguration.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md).
+В следующей таблице приведены свойства, необходимые при создании [виндовсоффицеклиентконфигуратион](../resources/intune-cirrus-windowsofficeclientconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики конфигурации клиента office. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userPreferencePayload|Stream|Строка настройки JSON в двоичном формате, эти значения можно переопределить пользователем. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|policyPayload|Stream|Параметры политики JSON string в двоичном формате, пользователь не может изменить эти значения. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|description|String|Admin предоставляются описание клиента office конфигурации политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|displayName|String|Admin предоставлено имя политики конфигурации клиента office. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|assignments|[officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) коллекции|Список назначений групповой политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|priority|Int32|Значение приоритета должно быть уникальное значение для каждой политики в области клиента и будет использоваться для разрешения конфликтов, меньшее значение означает, что высокого приоритета. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|lastModifiedDateTime|DateTime|Отметка измененные даты и времени последнего политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|userCheckinSummary|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Возврат Сводка пользователей для политики. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
-|checkinStatuses|[officeClientCheckinStatus](../resources/intune-cirrus-officeclientcheckinstatus.md) коллекции|Список office состояние возврата клиента. Наследуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|String|Идентификатор политики конфигурации клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|Усерпреференцепайлоад|Stream|Строка JSON параметров настройки в двоичном формате. Эти значения могут быть переопределены пользователем. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|Полиципайлоад|Stream|Строка JSON параметров политики в двоичном формате эти значения не могут быть изменены пользователем. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|description|String|Администратор предоставил описание политики конфигурации клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|displayName|String|Предоставленное администратором имя политики конфигурации клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|assignments|Коллекция [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md)|Список назначений групп для политики.. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|priority|Int32|Значение Priority должно быть уникальным для каждой политики в клиенте и использоваться для разрешения конфликтов, низкие значения имеют высокий приоритет. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|lastModifiedDateTime|DateTime|Метка даты и времени последнего изменения политики. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|Усерчеккинсуммари|[officeUserCheckinSummary](../resources/intune-cirrus-officeusercheckinsummary.md)|Сводка по возврату пользователя для политики. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|Чеккинстатусес|Коллекция [оффицеклиентчеккинстатус](../resources/intune-cirrus-officeclientcheckinstatus.md)|Список состояния возврата клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [windowsOfficeClientConfiguration](../resources/intune-cirrus-windowsofficeclientconfiguration.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсоффицеклиентконфигуратион](../resources/intune-cirrus-windowsofficeclientconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -108,7 +108,7 @@ Content-length: 1020
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

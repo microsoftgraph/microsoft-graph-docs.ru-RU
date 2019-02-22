@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления signInAssistantOptions
-description: Значения для SignInAssistantSettings.
-localization_priority: Normal
+title: тип перечисления Сигнинассистантоптионс
+description: Значения для параметра Сигнинассистантсеттингс.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8d8d299e7e61677d6dd34ec28b53b486609a231
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9a672343e0c5d62133ef0dce40e7969e24e69b1c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393062"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163758"
 ---
-# <a name="signinassistantoptions-enum-type"></a>Тип перечисления signInAssistantOptions
+# <a name="signinassistantoptions-enum-type"></a>тип перечисления Сигнинассистантоптионс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значения для SignInAssistantSettings.
+Значения для параметра Сигнинассистантсеттингс.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен - wlidsvc, Пуск будет иметь значение SERVICE_DEMAND_START.|
-|Этот параметр отключен|1|Этот параметр отключен - wlidsvc Пуск будет иметь значение SERVICE_DISABLED.|
+|notConfigured|нуль|Не настроено — влидсвк для запуска будет установлено значение СЕРВИЦЕ_ДЕМАНД_СТАРТ.|
+|активирован|1,1|Disabled — для запуска влидсвк будет задано значение СЕРВИЦЕ_ДИСАБЛЕД.|
 
 
 

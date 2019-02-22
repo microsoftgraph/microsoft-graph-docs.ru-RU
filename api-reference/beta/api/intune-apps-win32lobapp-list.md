@@ -1,25 +1,25 @@
 ---
 title: Список win32LobApps
-description: Свойства списка и связей объектов win32LobApp.
-localization_priority: Normal
+description: Список свойств и связей объектов win32LobApp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8e9678b0c4833fd3aaccec36e78bade1d03b7c3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0e9c5f6ef45fcb42c6f251f8b2cc2207e6b34439
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417611"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165445"
 ---
 # <a name="list-win32lobapps"></a>Список win32LobApps
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Свойства списка и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .
+Список свойств и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,15 +40,15 @@ GET /deviceAppManagement/mobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -59,11 +59,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2790
+Content-Length: 2877
 
 {
   "value": [
@@ -140,7 +140,9 @@ Content-Length: 2790
         "productVersion": "Product Version value",
         "upgradeCode": "Upgrade Code value",
         "requiresReboot": true,
-        "packageType": "perUser"
+        "packageType": "perUser",
+        "productName": "Product Name value",
+        "publisher": "Publisher value"
       },
       "setupFilePath": "Setup File Path value"
     }

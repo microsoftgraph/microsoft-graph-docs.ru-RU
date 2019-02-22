@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления win32LobAppDetectionOperator
-description: Содержит свойства для обнаружения оператора.
-localization_priority: Normal
+title: тип перечисления win32LobAppDetectionOperator
+description: Содержит свойства для оператора обнаружения.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f600d545691741c37d8a315f8af3f5e12ec435c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 477306e8f4ed5029d9f504ca80ed7126ee1093f2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393048"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165942"
 ---
-# <a name="win32lobappdetectionoperator-enum-type"></a>Тип перечисления win32LobAppDetectionOperator
+# <a name="win32lobappdetectionoperator-enum-type"></a>тип перечисления win32LobAppDetectionOperator
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для обнаружения оператора.
+Содержит свойства для оператора обнаружения.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроено.|
-|равно|1|Оператор равно.|
-|Неравенство|2|Не равно оператор.|
-|Значение|4|Больше, чем оператор.|
-|greaterThanOrEqual|5|Оператор "больше или равно".|
-|Число|8|Меньше, чем оператор.|
-|lessThanOrEqual|9|Меньше или равно оператор.|
+|notConfigured|нуль|Не настроен.|
+|одинаков|1,1|Оператор Equals.|
+|notEqual|2|Оператор Not Equal.|
+|greaterThan|4|Оператор "больше чем".|
+|Греатерсанорекуал|17:00|Оператор "больше или равно".|
+|Лесссан|8,5|Оператор "меньше чем".|
+|Лесссанорекуал|10|Оператор "меньше или равно".|
 
 
 

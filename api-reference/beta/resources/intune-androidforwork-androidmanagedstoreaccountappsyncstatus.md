@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления androidManagedStoreAccountAppSyncStatus
-description: Состояние синхронизации клиента с помощью API EMM Google
-localization_priority: Normal
+title: тип перечисления Андроидманажедстореаккаунтаппсинкстатус
+description: Состояние синхронизации клиента с помощью API Google EMM
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 00eff60547b7d68655cd6aec80c4d3a6f7475bef
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: db29d059d0e8b57c69bfe24a4ab9bdd07c58781f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422329"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164318"
 ---
-# <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>Тип перечисления androidManagedStoreAccountAppSyncStatus
+# <a name="androidmanagedstoreaccountappsyncstatus-enum-type"></a>тип перечисления Андроидманажедстореаккаунтаппсинкстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние синхронизации клиента с помощью API EMM Google
+Состояние синхронизации клиента с помощью API Google EMM
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Н/Д|
-|credentialsNotValid|1|Н/Д|
-|androidForWorkApiError|2|Н/Д|
-|managementServiceError|3|Н/Д|
-|unknownError|4|Н/Д|
-|none|5|Н/Д|
+|success|нуль|Н/Д|
+|Кредентиалснотвалид|1,1|Н/Д|
+|Андроидфорворкапиеррор|2|Н/Д|
+|Манажементсервицееррор|4|Н/Д|
+|Ункновнеррор|4|Н/Д|
+|Нет|17:00|Н/Д|
 
 
 

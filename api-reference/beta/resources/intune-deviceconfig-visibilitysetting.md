@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления visibilitySetting
-description: Состояние универсальный видимости.
-localization_priority: Normal
+title: тип перечисления Висибилитисеттинг
+description: Универсальное состояние видимости.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc01cf2120f58a1364346b515e1b84ca64c1f2a6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8b89256c1e483e8ef0e8c3da9762c46449f09056
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407398"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163359"
 ---
-# <a name="visibilitysetting-enum-type"></a>Тип перечисления visibilitySetting
+# <a name="visibilitysetting-enum-type"></a>тип перечисления Висибилитисеттинг
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние универсальный видимости.
+Универсальное состояние видимости.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроено.|
-|скрытие|1|Скрытие.|
-|Показать|2|Показать.|
+|notConfigured|нуль|Не настроен.|
+|скрытых|1,1|Скрытых.|
+|отобразит|2|Отобразит.|
 
 
 

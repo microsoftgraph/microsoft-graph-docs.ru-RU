@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления localSecurityOptionsSmartCardRemovalBehaviorType
-description: Возможные значения для LocalSecurityOptionsSmartCardRemovalBehaviorType
-localization_priority: Normal
+title: тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе
+description: Возможные значения для Локалсекуритйоптионссмарткардремовалбехавиортипе
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6c2dd85ba053c3b1493dc598741f2417eb6c0aa
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 18a7e37d0dcd38b44b1ba9edc22e026f6e4a7be7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412361"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163814"
 ---
-# <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>Тип перечисления localSecurityOptionsSmartCardRemovalBehaviorType
+# <a name="localsecurityoptionssmartcardremovalbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионссмарткардремовалбехавиортипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для LocalSecurityOptionsSmartCardRemovalBehaviorType
+Возможные значения для Локалсекуритйоптионссмарткардремовалбехавиортипе
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|lockWorkstation|0|Никаких действий|
-|noAction|1|Блокировка рабочей станции|
-|forceLogoff|2|Принудительный выход из системы|
-|disconnectRemoteDesktopSession|3|Отключите Если удаленный сеанс служб удаленных рабочих столов|
+|Локкворкстатион|нуль|Без действий|
+|noAction|1,1|Блокировка рабочей станции|
+|Форцелогофф|2|Принудительный выход|
+|Дисконнектремотедесктопсессион|4|Отключение при удаленном сеансе служб удаленных рабочих столов|
 
 
 

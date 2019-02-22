@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления networkSingleSignOnType
-description: Единый вход Wi-Fi сети на параметры типа.
-localization_priority: Normal
+title: тип перечисления Нетворксинглесигнонтипе
+description: Параметры типа единого входа сети Wi – Fi.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c7e2bec7a792abf9594b5a25446c159b96c78660
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 54e84b884c36c39d6f33c8a8f9a7c5754c06b4d8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415245"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163982"
 ---
-# <a name="networksinglesignontype-enum-type"></a>Тип перечисления networkSingleSignOnType
+# <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Единый вход Wi-Fi сети на параметры типа.
+Параметры типа единого входа сети Wi – Fi.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Этот параметр отключен|0|Disabled|
-|Предварительное подключение|1|Предварительное|
-|postlogon|2|После входа в систему|
+|активирован|нуль|Отключена|
+|Предварительный вход|1,1|Предварительный вход|
+|Вход в систему|2|После входа|
 
 
 

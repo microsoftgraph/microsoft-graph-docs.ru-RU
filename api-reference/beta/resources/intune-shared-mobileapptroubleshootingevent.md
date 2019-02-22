@@ -1,53 +1,53 @@
 ---
-title: Тип ресурса mobileAppTroubleshootingEvent
-description: Описание ресурсов mobileAppTroubleshootingEvent из Microsoft Graph API для Intune, которая поддерживает несколько рабочих процессов.
+title: Тип ресурса Мобилеапптраублешутинжевент
+description: Описывает ресурс Мобилеапптраублешутинжевент API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: bb519309f68f732a28ed8f26235f01f37d9628b9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cfa126fea86c7edb302953efc3b88376f2d68a09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430839"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162946"
 ---
-# <a name="mobileapptroubleshootingevent-resource-type"></a>Тип ресурса mobileAppTroubleshootingEvent
+# <a name="mobileapptroubleshootingevent-resource-type"></a>Тип ресурса Мобилеапптраублешутинжевент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Событие, представляющее приложение устройства пользователей установить состояние для управления устройствами и устранение неполадок события рабочих процессов.
+Событие, представляющее состояние установки приложения для устройства "Пользователи" для управления устройствами и устранения неполадок обработки событий.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список mobileAppTroubleshootingEvents](../api/intune-shared-mobileapptroubleshootingevent-list.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) коллекции|Свойства списка и связей объектов [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
-|[Получение mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md);|Чтение свойства и связи объекта [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
-|[Создание mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md);|Создание нового объекта [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
-|[Удаление mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-delete.md)|Нет|Удаляет [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md).|
-|[Обновление mobileAppTroubleshootingEvent](../api/intune-shared-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md);|Обновление свойства объекта [mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
+|[Список Мобилеапптраублешутинжевентс](../api/intune-shared-mobileapptroubleshootingevent-list.md)|Коллекция [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md)|Список свойств и связей объектов [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
+|[Получение Мобилеапптраублешутинжевент](../api/intune-shared-mobileapptroubleshootingevent-get.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md);|Чтение свойств и связей объекта [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
+|[Создание Мобилеапптраублешутинжевент](../api/intune-shared-mobileapptroubleshootingevent-create.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md);|Создание нового объекта [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
+|[Удаление Мобилеапптраублешутинжевент](../api/intune-shared-mobileapptroubleshootingevent-delete.md)|Нет|Удаляет объект [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md).|
+|[Обновление Мобилеапптраублешутинжевент](../api/intune-shared-mobileapptroubleshootingevent-update.md)|[mobileAppTroubleshootingEvent](../resources/intune-shared-mobileapptroubleshootingevent.md);|Обновление свойств объекта [мобилеапптраублешутинжевент](../resources/intune-shared-mobileapptroubleshootingevent.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|UUID для объекта.|
+|id|Строка|UUID для объекта.|
 |**Устранение неполадок**|
-|additionalInformation|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор ключ строки и пар строковое значение которой содержатся дополнительные сведения на устранение неполадок события унаследованные от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
+|Аддитионалинформатион|Коллекция [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Набор пар строкового ключа и строкового значения, предоставляющий дополнительные сведения о событии устранения неполадок, наСледуемом от [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md)|
 |applicationId|String|Идентификатор приложения Intune.|
-|correlationId|String|Идентификатор, используемый для отслеживания сбоев в службе. |
+|correlationId|String|Идентификатор, используемый для трассировки сбоя в службе. |
 |eventDateTime|DateTimeOffset|Время возникновения события. |
-|элемент eventName|String|Имя события, соответствующее событию устранения неполадок. Необязательно заполнять.|
-|журнал|[mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md) коллекции|Устранение неполадок в элемент журнала Intune мобильного приложения|
+|eventName|String|Имя события, соответствующее соБытию устранения неполадок. При необходимости|
+|лист|Коллекция [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|Элемент журнала устранения неполадок мобильных приложений Intune|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
-|troubleshootingErrorDetails|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее обновлений. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
+|Траублешутинжеррордетаилс|[deviceManagementTroubleshootingErrorDetails](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md)|Объект, содержащий подробные сведения об ошибке и ее исправлении. Наследуется от объекта [deviceManagementTroubleshootingEvent](../resources/intune-troubleshooting-devicemanagementtroubleshootingevent.md).|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
 |**Управление устройствами**|
-|appLogCollectionRequests|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) коллекции|Свойство collection AppLogUploadRequest.|
+|Апплогколлектионрекуестс|Коллекция [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Свойство Collection объекта Апплогуплоадрекуест.|
 
 
 ## <a name="json-representation"></a>Представление JSON

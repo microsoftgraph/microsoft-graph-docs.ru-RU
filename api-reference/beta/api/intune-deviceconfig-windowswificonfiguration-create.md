@@ -1,25 +1,25 @@
 ---
-title: Создание windowsWifiConfiguration
-description: Создание нового объекта windowsWifiConfiguration.
-localization_priority: Normal
+title: Создание Виндовсвификонфигуратион
+description: Создание нового объекта Виндовсвификонфигуратион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 208b772e702efc6b22420efda15a45a0af18330a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 39b5cf192fbb294818d2fb9fb23b49ed0c866739
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409960"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163779"
 ---
-# <a name="create-windowswificonfiguration"></a>Создание windowsWifiConfiguration
+# <a name="create-windowswificonfiguration"></a>Создание Виндовсвификонфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) .
+Создание нового объекта [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -41,43 +41,43 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта windowsWifiConfiguration.
+В тексте запроса добавьте представление объекта Виндовсвификонфигуратион в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания windowsWifiConfiguration.
+В следующей таблице приведены свойства, необходимые при создании Виндовсвификонфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|preSharedKey|String|Это предварительный ключ для WPA личных Сеть Wi-Fi.|
-|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Укажите тип безопасности Wifi. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
-|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Задать тип ограничение лимитным тарифным планом подключения для Wi-Fi. Возможные значения: `unrestricted`, `fixed`, `variable`.|
-|SSID|String|Укажите SSID Wi-Fi.|
-|networkName|String|Укажите имя конфигурации сети.|
-|connectAutomatically|Логический|Укажите, будет ли Wi-Fi следует автоматически подключаться при работе в диапазоне.|
-|connectToPreferredNetwork|Логический|Укажите, должны ли Wi-Fi подключаться к более подходящей сети, если уже подключен этой.  Требуется ConnectAutomatically значение true.|
-|connectWhenNetworkNameIsHidden|Логический|Укажите, автоматически подключения Wi-Fi даже когда не передают SSID.|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Укажите параметры для Wi-Fi конфигурации прокси-сервера. Возможные значения: `none`, `manual`, `automatic`.|
-|proxyManualAddress|String|Укажите IP-адрес прокси-сервера.|
-|proxyManualPort|Int32|Указание порта для прокси-сервера.|
-|proxyAutomaticConfigurationUrl|String|Укажите URL-адрес для сценария настройки сервера прокси-сервера.|
-|forceFIPSCompliance|Логический|Укажите необходимость проверки соответствия требованиям FIPS.|
+|preSharedKey|String|Это предварительно общий ключ для частной сети Wi-Fi WPA.|
+|Вифисекурититипе|[Вифисекурититипе](../resources/intune-deviceconfig-wifisecuritytype.md)|Укажите тип безопасности Wi-Fi. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|Метередконнектионлимит|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Указать тип лимита межлимитного подключения для подключения WiFi. Возможные значения: `unrestricted`, `fixed`, `variable`.|
+|SSID|String|Укажите идентификатор SSID подключения WiFi.|
+|Нетворкнаме|String|Укажите имя конфигурации сети.|
+|Коннектаутоматикалли|Логический|Указывает, должно ли подключение WiFi автоматически подключаться к сети в пределах диапазона.|
+|Коннекттопреферреднетворк|Логический|Укажите, должно ли подключение WiFi подключаться к более предпочтительным сетям, если оно уже подключено к этому.  Необходимо, чтобы Коннектаутоматикалли был true.|
+|Коннектвхеннетворкнамеишидден|Логический|Укажите, должно ли подключение WiFi автоматически подключаться, даже если идентификатор SSID не является широковещательным.|
+|Проксисеттинг|[Вифипроксисеттинг](../resources/intune-deviceconfig-wifiproxysetting.md)|Укажите параметры прокси-сервера для конфигурации Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
+|Проксимануаладдресс|String|Укажите IP-адрес прокси-сервера.|
+|Проксимануалпорт|Int32|Укажите порт прокси-сервера.|
+|Проксяутоматикконфигуратионурл|String|Укажите URL-адрес скрипта настройки прокси-сервера.|
+|Форцефипскомплианце|Логический|Укажите, следует ли применять соответствие требованиям FIPS.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -114,7 +114,7 @@ Content-length: 786
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

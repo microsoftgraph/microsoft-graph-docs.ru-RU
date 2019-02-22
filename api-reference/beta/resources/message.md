@@ -4,12 +4,12 @@ description: Сообщение в папке почтового ящика.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: b842fafe3ac1ef79a1ad211d30ca7acabbe5faa4
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 487427e13d06bc703728986505de789aab65963f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745540"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166796"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -99,7 +99,7 @@ ms.locfileid: "29745540"
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |conversationIndex|Binary|Индекс беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
-|flag|[followUpFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
+|flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения. Значение должно соответствовать фактически используемому почтовому ящику. Дополнительные сведения о [задании свойств from и sender](/graph/outlook-create-send-messages#setting-the-from-and-sender-properties) сообщения.|
 |hasAttachments|Boolean|Указывает на наличие вложений в сообщении. Это свойство не включает встроенные вложения, поэтому, если сообщение содержит только встроенные вложения, это свойство имеет значение false. Чтобы проверить наличие встроенных вложений, проанализируйте свойство **body** на наличие атрибута `src`, например `<IMG src="cid:image001.jpg@01D26CD8.6C05F070">`. |
 |id|String|Уникальный идентификатор сообщения (обратите внимание, что это значение может меняться при перемещении и изменении сообщения).|

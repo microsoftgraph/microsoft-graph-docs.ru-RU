@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса windowsKioskProfile
+title: Тип ресурса Виндовскиоскпрофиле
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55d8c23d3bfae2baf9d632c33390b8aafb5e7ef8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f1c7107982a33452cd9dd00829cba08f108c6394
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420250"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164752"
 ---
-# <a name="windowskioskprofile-resource-type"></a>Тип ресурса windowsKioskProfile
+# <a name="windowskioskprofile-resource-type"></a>Тип ресурса Виндовскиоскпрофиле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|profileId|String|Ключ объекта.|
-|Имя_профиля|String|Это понятное имя, используемое для идентификации групп приложений, макет эти приложения в меню Пуск и пользователи, которым назначена эта конфигурация киоска.|
-|appConfiguration|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md);|Настройка приложения, который будет использоваться для этой базовой конфигурации.|
-|userAccountsConfiguration|[windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md) коллекции|Учетные записи пользователей, которые будут заблокированы для этой базовой конфигурации. Эта коллекция может содержать не более 100 элементов.|
+|Профилеид|String|Ключ объекта.|
+|имя_профиля|String|Это понятное имя, используемое для идентификации группы приложений, макета этих приложений в меню "Пуск" и пользователей, которым назначена эта конфигурация киоска.|
+|Аппконфигуратион|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md);|Конфигурация приложения, которая будет использоваться для этой конфигурации киоска.|
+|Усераккаунтсконфигуратион|Коллекция [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска. Эта коллекция может содержать не более 100 элементов.|
 
 ## <a name="relationships"></a>Отношения
 Нет

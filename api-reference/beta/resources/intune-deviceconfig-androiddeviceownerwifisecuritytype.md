@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления androidDeviceOwnerWiFiSecurityType
-description: Типы безопасности Wi-Fi Android устройства владельцем.
-localization_priority: Normal
+title: тип перечисления Андроиддевицеовнервифисекурититипе
+description: Типы безопасности Wi/Fi для владельца устройств Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49835ca419afef82369ee5b339782bc1dd3b96b8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b4cc9e90c4b28069f7731c4f24ae8e5dd6ae7043
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396121"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165599"
 ---
-# <a name="androiddeviceownerwifisecuritytype-enum-type"></a>Тип перечисления androidDeviceOwnerWiFiSecurityType
+# <a name="androiddeviceownerwifisecuritytype-enum-type"></a>тип перечисления Андроиддевицеовнервифисекурититипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Типы безопасности Wi-Fi Android устройства владельцем.
+Типы безопасности Wi/Fi для владельца устройств Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Откройте|0|Откройте (без проверки подлинности).|
-|WEP|1|Шифрования WEP.|
-|wpaPersonal|2|WPA-личные/WPA2 Personal.|
+|окно|нуль|Открыть (без проверки поДлинности).|
+|WEP|1,1|WEP-шифрование.|
+|Впаперсонал|2|WPA-личное/WPA2-личное.|
 
 
 

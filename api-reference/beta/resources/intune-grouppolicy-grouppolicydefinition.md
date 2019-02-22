@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса groupPolicyDefinition
-description: Сущность описаны все сведения об одном групповой политики.
-localization_priority: Normal
+title: Тип ресурса Граупполицидефинитион
+description: Сущность описывает все сведения об одной групповой политике.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 502312f7a39dd5dc93fd8e39203f56d47a9ebf27
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e7649d249a034278741199e1f858f07ea34c7137
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430815"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164059"
 ---
-# <a name="grouppolicydefinition-resource-type"></a>Тип ресурса groupPolicyDefinition
+# <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность описаны все сведения об одном групповой политики.
+Сущность описывает все сведения об одной групповой политике.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение groupPolicyDefinition](../api/intune-grouppolicy-grouppolicydefinition-get.md)|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|Чтение свойства и связи объекта [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) .|
-|[Обновление groupPolicyDefinition](../api/intune-grouppolicy-grouppolicydefinition-update.md)|[groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md)|Обновление свойства объекта [groupPolicyDefinition](../resources/intune-grouppolicy-grouppolicydefinition.md) .|
+|[Получение Граупполицидефинитион](../api/intune-grouppolicy-grouppolicydefinition-get.md)|[Граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Чтение свойств и связей объекта [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md) .|
+|[Обновление Граупполицидефинитион](../api/intune-grouppolicy-grouppolicydefinition-update.md)|[Граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Обновление свойств объекта [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|classType|[groupPolicyDefinitionClassType](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Идентифицирует тип групп, которые могут применена политика. Возможные значения: `user`, `machine`, `both`.|
-|displayName|String|Имя политики локализованные.|
-|explainText|String|Локализованные объяснение или справки текст, связанного с политикой. Значение по умолчанию будет пустым.|
-|categoryPath|String|Локализованные категории полный путь для политики.|
-|supportedOn|String|Локализованные строки, используется, чтобы указать, какие приложения версия операционной системы или определяется политики.|
-|policyType|[groupPolicyType](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
+|Класстипе|[Граупполицидефинитионкласстипе](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которым можно применить политику. Возможные значения: `user`, `machine`, `both`.|
+|displayName|String|Имя локализованной политики.|
+|Експлаинтекст|String|Локализованное объяснение или текст справки, связанный с политикой. Значение по умолчанию — пустое значение.|
+|Категорипас|String|Локализованный полный путь к категории для политики.|
+|Суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
+|Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|definitionFile|[groupPolicyDefinitionFile](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
-|презентации|[groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md) коллекции|Презентаций групповой политики, связанные с определением.|
+|Дефинитионфиле|[Граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
+|материалы|Коллекция [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Презентации групповой политики, связанные с определением.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

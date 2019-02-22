@@ -1,21 +1,21 @@
 ---
 title: Действие createDownloadUrl
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7ef3f0798a6ffcfed74f8ae0e43f54ef23e5672
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1ed7e111dc99e3db3f44accdbaaee9b205e8c5ae
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430629"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164122"
 ---
 # <a name="createdownloadurl-action"></a>Действие createDownloadUrl
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -45,10 +45,10 @@ POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingE
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Если успешно завершена, это действие возвращает `200 OK` код ответа и [appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md) в теле ответа.
+## <a name="response"></a>Ответ
+При успешном выполнении это действие возвращает `200 OK` код отклика и объект [апплогколлектиондовнлоаддетаилс](../resources/intune-devices-applogcollectiondownloaddetails.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -59,7 +59,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingE
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

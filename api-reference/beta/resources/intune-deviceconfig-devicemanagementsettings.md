@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса deviceManagementSettings
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4f676eed1acbf6711f526e612bd6c073b749607d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8238ec075189a138552cb524a22facd99f4d5401
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417667"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164269"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
@@ -23,12 +23,12 @@ ms.locfileid: "29417667"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|Количество дней, в течение которых устройство может считаться соответствующим требованиям, несмотря на отсутствие записей после изменения. Допустимые значения: от 0 до 120|
-|isScheduledActionEnabled|Boolean|Включена ли функция для запланированного действия для правила.|
+|isScheduledActionEnabled|Логический|Включена ли функция для запланированного действия для правила.|
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
-|enhancedJailBreak|Логический|— Это функция включена или не для улучшения обнаружения jailbreak.|
-|deviceInactivityBeforeRetirementInDay|Int32|Когда устройство не проверяет, для указанного числа дней, компании данных может быть удален, устройство не будет в разделе Управление. Допустимые значения 30 на 270 градусов|
-|derivedCredentialProvider|[derivedCredentialProviderType](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Производные поставщик учетных данных для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
-|derivedCredentialUrl|String|URI самостоятельного производные поставщика учетных данных.|
+|Енханцеджаилбреак|Логический|Функция включена или не включена для обнаружения расширенной жаилбреак.|
+|Девицеинактивитибефореретирементиндай|Int32|Когда устройство не будет возвращать указанное количество дней, данные компании могут быть удалены, а устройство не будет управляться. Допустимые значения — от 30 до 270|
+|Дериведкредентиалпровидер|[Дериведкредентиалпровидертипе](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Производный поставщик учетных данных, который будет использоваться для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
+|Дериведкредентиалурл|String|URI самообслуживания поставщика произВодных учетных данных.|
 
 ## <a name="relationships"></a>Отношения
 Нет

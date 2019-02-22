@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления win32LobAppFileSystemDetectionType
-description: Содержит тип обнаружения все поддерживаемые файловой системы.
-localization_priority: Normal
+title: тип перечисления win32LobAppFileSystemDetectionType
+description: Содержит все поддерживаемые типы обнаружения файловой системы.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d5848e59f00b3fd6b995815ab7a595fbf0ca820f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fc62005b02c30902937035199faffe663e232f4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422518"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163499"
 ---
-# <a name="win32lobappfilesystemdetectiontype-enum-type"></a>Тип перечисления win32LobAppFileSystemDetectionType
+# <a name="win32lobappfilesystemdetectiontype-enum-type"></a>тип перечисления win32LobAppFileSystemDetectionType
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит тип обнаружения все поддерживаемые файловой системы.
+Содержит все поддерживаемые типы обнаружения файловой системы.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроено.|
-|существует|1|Является ли указанный файл или папка существует.|
+|notConfigured|нуль|Не настроен.|
+|Существует|1,1|Существует ли указанный файл или папка.|
 |modifiedDate|2|Дата последнего изменения.|
-|Дата создания|3|Дата создания, дата.|
-|version|4|Тип значения версии.|
-|sizeInMB|5|Тип определения размера.|
+|createdDate|4|Дата создания.|
+|version|4|Тип значения Version.|
+|Сизеинмб|17:00|Тип определения размера.|
 
 
 

@@ -1,58 +1,58 @@
 ---
 title: Тип ресурса deviceManagementScript
-description: Intune будет предоставлять возможности выполнения их скриптов Powershell на устройствах 10 зарегистрированных windows Azure Active Directory в состав клиента. Скрипт может выполняться периодически или один раз.
-localization_priority: Normal
+description: Intune предоставит клиенту возможность запускать свои сценарии PowerShell на зарегистрированных устройствах, подключенных к системе Windows 10 Azure Active Directory. Сценарий можно выполнить один раз или периодически.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fda826ec8033cd51ad4dd13dbc5b523a21e9e3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3fffd6bec8866066824725f1477e6de0e71ebf9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412529"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164066"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Intune будет предоставлять возможности выполнения их скриптов Powershell на устройствах 10 зарегистрированных windows Azure Active Directory в состав клиента. Скрипт может выполняться периодически или один раз.
+Intune предоставит клиенту возможность запускать свои сценарии PowerShell на зарегистрированных устройствах, подключенных к системе Windows 10 Azure Active Directory. Сценарий можно выполнить один раз или периодически.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) коллекции|Свойства списка и связей объектов [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
-|[Получение deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Чтение свойства и связи объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
+|[Список deviceManagementScripts](../api/intune-devices-devicemanagementscript-list.md)|Коллекция [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Список свойств и связей объектов [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
+|[Получение deviceManagementScript](../api/intune-devices-devicemanagementscript-get.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Чтение свойств и связей объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
 |[Создание deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Создание нового объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
-|[Удаление deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|Нет|Удаляет [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
-|[Обновление deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Обновление свойства объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
+|[Удаление deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|Нет|Удаляет объект [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
+|[Обновление deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Обновление свойств объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
 |[Действие assign](../api/intune-devices-devicemanagementscript-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сценарий управления устройства.|
-|displayName|String|Имя скрипта управления устройства.|
-|description|String|Необязательное описание сценарий управления устройства.|
-|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска сценария. Если не определена сценарий будет выполняться один раз|
-|scriptContent|Binary|Содержимое сценария.|
-|createdDateTime|DateTimeOffset|Дата и время создания сценарий управления устройства.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сценарий управления устройства.|
-|runAsAccount|[runAsAccountType](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения скрипта управления устройства выполняется в. Возможные значения: `system`, `user`.|
-|enforceSignatureCheck|Логический|Указывает, должно быть извлеченных подписи скрипта.|
+|id|String|Уникальный идентификатор для сценария управления устройствами.|
+|displayName|String|Имя скрипта управления устройствами.|
+|description|Строка|НеОбязательное описание скрипта управления устройствами.|
+|runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
+|Скриптконтент|Binary|Содержимое скрипта.|
+|createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
+|runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения, в котором выполняется скрипт управления устройствами. Возможные значения: `system`, `user`.|
+|Свойства enforcesignaturecheck|Логический|Указывает, нужно ли проверять подпись скрипта.|
 |fileName|String|Имя файла сценария.|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для этого экземпляра PowerShellScript.|
-|runAs32Bit|Логический|Значение, указывающее ли сценарий PowerShell должна запускаться в 32-разрядная версия|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра Повершеллскрипт.|
+|runAs32Bit|Логический|Значение, указывающее, должен ли скрипт PowerShell выполняться как 32 бит|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|[deviceManagementScriptGroupAssignment](../resources/intune-devices-devicemanagementscriptgroupassignment.md) коллекции|Список назначений группы для скрипта управления устройства.|
-|assignments|[deviceManagementScriptAssignment](../resources/intune-devices-devicemanagementscriptassignment.md) коллекции|Список назначений группы для скрипта управления устройства.|
-|runSummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Запустите сводки по сценарий управления устройства.|
-|deviceRunStates|[deviceManagementScriptDeviceState](../resources/intune-devices-devicemanagementscriptdevicestate.md) коллекции|Список выполнения состояний для этого скрипта на всех устройствах.|
-|userRunStates|[deviceManagementScriptUserState](../resources/intune-devices-devicemanagementscriptuserstate.md) коллекции|Список выполнения состояний для этого скрипта для всех пользователей.|
+|groupAssignments|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список назначений групп для сценария управления устройствами.|
+|assignments|Коллекция [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md)|Список назначений групп для сценария управления устройствами.|
+|Свойства навигации runsummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Сводка по запуску для сценария управления устройствами.|
+|deviceRunStates|Коллекция [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояний запуска для этого сценария на всех устройствах.|
+|userRunStates|Коллекция [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md)|Список состояний запуска этого сценария для всех пользователей.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

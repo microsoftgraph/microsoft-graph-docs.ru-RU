@@ -1,31 +1,31 @@
 ---
 title: Тип ресурса report
-description: Описание отчетов ресурсов из Microsoft Graph API для Intune, которая поддерживает несколько рабочих процессов.
+description: Описывает ресурс отчета API Microsoft Graph для Intune, который поддерживает несколько рабочих процессов.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 098c20b2460324c4975533902e1b71fde1af41c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f523f6df0b8b90cb6649ac81f1e433d6df227aea
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407475"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165753"
 ---
 # <a name="report-resource-type"></a>Тип ресурса report
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возвращает содержимое контексту, включая:
+Возвращает содержимое, подходящее для контекста, в том числе:
 
-- Отчеты журнала профиля конфигурации устройства.
-- Отчеты заявок через Интернет.
+- Отчеты об истории профилей конфигурации устройств.
+- Отчеты о сбоях регистрации.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|content|Stream|Отчет о содержимого; сведения в зависимости от типа отчета.|
+|content|Stream|Содержимое отчета; сведения зависят от типа отчета.|
 
 ## <a name="relationships"></a>Отношения
 Нет

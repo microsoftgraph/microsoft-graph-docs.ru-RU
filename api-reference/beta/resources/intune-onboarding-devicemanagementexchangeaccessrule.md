@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса deviceManagementExchangeAccessRule
-description: Правила доступа устройств в Exchange.
-localization_priority: Normal
+title: Тип ресурса Девицеманажементексчанжеакцессруле
+description: Правила доступа к устройству в Exchange.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c46bff30bf5f88723a789bb13160bf5aedb1ef2a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 38b021bc2f0a4ffa19ca551c2621b08f21e8a35e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409442"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30165781"
 ---
-# <a name="devicemanagementexchangeaccessrule-resource-type"></a>Тип ресурса deviceManagementExchangeAccessRule
+# <a name="devicemanagementexchangeaccessrule-resource-type"></a>Тип ресурса Девицеманажементексчанжеакцессруле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Правила доступа устройств в Exchange.
+Правила доступа к устройству в Exchange.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceClass|[deviceManagementExchangeDeviceClass](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Класс устройства, который будет затронут этого правила.|
-|accessLevel|[deviceManagementExchangeAccessLevel](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Уровень доступа для Exchange, предоставленных с этого правила. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
+|Девицекласс|[Девицеманажементексчанжедевицекласс](../resources/intune-onboarding-devicemanagementexchangedeviceclass.md)|Класс устройства, на который влияет это правило.|
+|accessLevel|[Девицеманажементексчанжеакцесслевел](../resources/intune-onboarding-devicemanagementexchangeaccesslevel.md)|Уровень доступа для Exchange, предоставляемый этим правилом. Возможные значения: `none`, `allow`, `block`, `quarantine`.|
 
 ## <a name="relationships"></a>Связи
 Нет

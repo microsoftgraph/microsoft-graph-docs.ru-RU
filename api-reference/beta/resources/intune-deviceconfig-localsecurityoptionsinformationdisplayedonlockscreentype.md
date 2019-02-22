@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления localSecurityOptionsInformationDisplayedOnLockScreenType
-description: Возможные значения для LocalSecurityOptionsInformationDisplayedOnLockScreen
-localization_priority: Normal
+title: тип перечисления Локалсекуритйоптионсинформатиондисплайедонлоккскринтипе
+description: Возможные значения для Локалсекуритйоптионсинформатиондисплайедонлоккскрин
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac9c00098a881a30abb4348de6bc88b2346adb0f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5b44d24e5235251b5232ecb1bd5b2ab21059e32a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166719"
 ---
-# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>Тип перечисления localSecurityOptionsInformationDisplayedOnLockScreenType
+# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a>тип перечисления Локалсекуритйоптионсинформатиондисплайедонлоккскринтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для LocalSecurityOptionsInformationDisplayedOnLockScreen
+Возможные значения для Локалсекуритйоптионсинформатиондисплайедонлоккскрин
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен|
-|Администраторы|1|Отображаемое имя пользователя, домен и имена|
-|administratorsAndPowerUsers|2|Только имя пользователя|
-|administratorsAndInteractiveUsers|3|Не отображать сведения о пользователе|
+|notConfigured|нуль|Не настроено|
+|«|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
+|Администраторсандповерусерс|2|Только отображаемое имя пользователя|
+|Администраторсандинтерактивеусерс|4|Не отображать сведения о пользователе|
 
 
 

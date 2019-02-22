@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidDeviceOwnerSystemUpdateInstallType
-description: Системные типы обновлений для Android устройства владельцем.
-localization_priority: Normal
+title: тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
+description: Типы системных обновлений для владельца устройства Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d7caaa3c79062bba6b8aa06ea11389e1370fba5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6f99ba32a5461913579a23e7fe8f29a3c0b6950
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419179"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163660"
 ---
-# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>Тип перечисления androidDeviceOwnerSystemUpdateInstallType
+# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a>тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Системные типы обновлений для Android устройства владельцем.
+Типы системных обновлений для владельца устройства Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Поведение по умолчанию устройство, которое обычно выдает запрос пользователю принимать обновления системы.|
-|отложить|1|Отложить автоматическую установку обновлений вверх до 30 дней.|
-|оконного|2|Внутри ежедневного периода обслуживания автоматической установки.|
-|Автоматически|3|Как можно скорее автоматическую установку обновлений.|
+|Девицедефаулт|нуль|Поведение устройства по умолчанию, которое обычно предлагает пользователю принимать обновления системы.|
+|отсрочки|1,1|ОтЛожить автоматическую установку обновлений до 30 дней.|
+|окнами|2|Автоматическая установка в период ежедневного обслуживания.|
+|Автоматически|4|Автоматическая установка обновлений как можно скорее.|
 
 
 

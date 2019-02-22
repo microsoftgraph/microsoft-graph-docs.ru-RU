@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления macOSGatekeeperAppSources
-description: Параметры исходного приложения macOS Привратник.
-localization_priority: Normal
+title: тип перечисления Макосгатекипераппсаурцес
+description: Параметры источника приложения для привратника macOS.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18ab6884d211faccb81e93a40ee91f742d03475f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3e43505a745e87e52f2f1c12a5cc5ff08825c09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394392"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166208"
 ---
-# <a name="macosgatekeeperappsources-enum-type"></a>Тип перечисления macOSGatekeeperAppSources
+# <a name="macosgatekeeperappsources-enum-type"></a>тип перечисления Макосгатекипераппсаурцес
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры исходного приложения macOS Привратник.
+Параметры источника приложения для привратника macOS.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Значение по умолчанию устройства, без цели.|
-|macAppStore|1|Можно выполнять только приложения из Mac AppStore.|
-|macAppStoreAndIdentifiedDevelopers|2|Можно выполнять только приложения из Mac AppStore и разработчиков (en) определенного.|
-|в любом месте|3|Приложения в любом месте можно запускать.|
+|notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
+|Макаппсторе|1,1|Можно запускать только приложения из Mac аппсторе.|
+|Макаппстореандидентифиеддевелоперс|2|Можно запускать только приложения из Mac аппсторе и идентифицированных разработчиков.|
+|всей|4|Приложения из любого места могут быть запущены.|
 
 
 

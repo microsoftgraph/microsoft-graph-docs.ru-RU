@@ -1,41 +1,41 @@
 ---
-title: Тип ресурса deviceConfigurationUserStateSummary
+title: Тип ресурса Девицеконфигуратионусерстатесуммари
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09b6bc36bb78583025378af4610e5cbb6fabea0c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 170b84d58d17bfbf8eea7d402c26b78019be3958
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402988"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163023"
 ---
-# <a name="deviceconfigurationuserstatesummary-resource-type"></a>Тип ресурса deviceConfigurationUserStateSummary
+# <a name="deviceconfigurationuserstatesummary-resource-type"></a>Тип ресурса Девицеконфигуратионусерстатесуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Чтение свойства и связи объекта [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .|
-|[Обновление deviceConfigurationUserStateSummary](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Обновление свойства объекта [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .|
+|[Получение Девицеконфигуратионусерстатесуммари](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-get.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Чтение свойств и связей объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .|
+|[Обновление Девицеконфигуратионусерстатесуммари](../api/intune-deviceconfig-deviceconfigurationuserstatesummary-update.md)|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Обновление свойств объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|unknownUserCount|Int32|Число неизвестным пользователям|
-|notApplicableUserCount|Int32|Число пользователей не применим|
-|compliantUserCount|Int32|Количество требованиям пользователей|
-|remediatedUserCount|Int32|Количество проверка пользователей|
-|nonCompliantUserCount|Int32|Количество несовместимой пользователей|
-|errorUserCount|Int32|Число пользователей об ошибках|
-|conflictUserCount|Int32|Число пользователей конфликта|
+|unknownUserCount|Int32|Количество неизвестных пользователей|
+|notApplicableUserCount|Int32|Количество неприменимых пользователей|
+|compliantUserCount|Int32|Число соответствующих пользователей|
+|remediatedUserCount|Int32|Количество исправленных пользователей|
+|nonCompliantUserCount|Int32|Количество неСоответствующих пользователей|
+|errorUserCount|Int32|Количество пользователей с ошибками|
+|conflictUserCount|Int32|Количество конфликтующих пользователей|
 
 ## <a name="relationships"></a>Отношения
 Нет

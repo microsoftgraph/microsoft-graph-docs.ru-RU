@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса bitLockerSystemDrivePolicy
-description: Базовый политики шифрования BitLocker.
-localization_priority: Normal
+title: Тип ресурса Bitlockersystemdrivepolicy.
+description: Основные политики шифрования BitLocker.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b63d075538508941d012df1e44f7cb563fed20d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 27b4492dd6df2821cfdeb885d3412536c0d3991c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425710"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30164892"
 ---
-# <a name="bitlockersystemdrivepolicy-resource-type"></a>Тип ресурса bitLockerSystemDrivePolicy
+# <a name="bitlockersystemdrivepolicy-resource-type"></a>Тип ресурса Bitlockersystemdrivepolicy.
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Базовый политики шифрования BitLocker.
+Основные политики шифрования BitLocker.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|encryptionMethod|[bitLockerEncryptionMethod](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Выберите метод шифрования для дисков операционной системы. Возможные значения: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
-|startupAuthenticationRequired|Логический|Требовать дополнительную проверку подлинности при запуске системы.|
-|startupAuthenticationBlockWithoutTpmChip|Логический|Указывает, следует ли разрешить BitLocker без совместимого TPM (требуется пароль или ключ запуска на флэш-накопитель USB).|
-|startupAuthenticationTpmUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, является ли запуска TPM разрешенных/необходимые/не разрешены. Возможные значения: `blocked`, `required`, `allowed`.|
-|startupAuthenticationTpmPinUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, является ли ПИН-кода запуска TPM разрешенных/необходимые/не разрешены. Возможные значения: `blocked`, `required`, `allowed`.|
-|startupAuthenticationTpmKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, является ли ключ запуска TPM разрешенных/необходимые/не разрешены. Возможные значения: `blocked`, `required`, `allowed`.|
-|startupAuthenticationTpmPinAndKeyUsage|[configurationUsage](../resources/intune-deviceconfig-configurationusage.md)|Указывает, если прикрепление запуска TPM и ключ разрешенных/необходимые/не разрешены. Возможные значения: `blocked`, `required`, `allowed`.|
-|minimumPinLength|Int32|Указывает минимальную длину ПИН-кодов запуска. Допустимые значения 4 до 20|
-|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Разрешает Восстановление зашифрованного BitLocker дисков операционной системы в случае отсутствия данные ключа требуется запуска. Этот параметр политики применяется при включении BitLocker.|
-|prebootRecoveryEnableMessageAndUrl|Логический|Включение восстановления до загрузки сообщение и URL-адрес. Если requireStartupAuthentication имеет значение false, это значение не влияет на.|
-|prebootRecoveryMessage|String|Определяет сообщение настраиваемого восстановления.|
-|prebootRecoveryUrl|String|Определяет URL-адрес настраиваемого восстановления.|
+|encryptionMethod|[Битлоккеренкриптионмесод](../resources/intune-deviceconfig-bitlockerencryptionmethod.md)|Выберите метод шифрования для дисков операционной системы. Возможные значения: `aesCbc128`, `aesCbc256`, `xtsAes128`, `xtsAes256`.|
+|startupAuthenticationRequired|Логический|Требовать дополнительной проверки подлинности при запуске.|
+|startupAuthenticationBlockWithoutTpmChip|Логический|Указывает, следует ли разрешить BitLocker без совместимого ДОВЕРЕНного ПЛАТФОРМЕНного модуля (требуется пароль или ключ запуска на USB флэш-накопителе).|
+|startupAuthenticationTpmUsage|[Конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешена или не разрешена или необязательная Загрузка TPM. Возможные значения: `blocked`, `required`, `allowed`.|
+|startupAuthenticationTpmPinUsage|[Конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешен ли ПИН-код для запуска TPM, обязательный или запрещенный. Возможные значения: `blocked`, `required`, `allowed`.|
+|startupAuthenticationTpmKeyUsage|[Конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешен ли ключ запуска TPM, обязательный, обязательный или запрещенный. Возможные значения: `blocked`, `required`, `allowed`.|
+|startupAuthenticationTpmPinAndKeyUsage|[Конфигуратионусаже](../resources/intune-deviceconfig-configurationusage.md)|Указывает, разрешены ли ключ и ключ ПИН-кода для запуска TPM, а какие — обязательные или запрещенные. Возможные значения: `blocked`, `required`, `allowed`.|
+|minimumPinLength|Int32|Указывает минимальную длину ПИН-кода для запуска. Допустимые значения — от 4 до 20.|
+|recoveryOptions|[bitLockerRecoveryOptions](../resources/intune-deviceconfig-bitlockerrecoveryoptions.md);|Позволяет восстанавливать зашифрованные диски операционной системы BitLocker в отсутствие требуемых сведений о ключе запуска. Этот параметр политики применяется при включении BitLocker.|
+|prebootRecoveryEnableMessageAndUrl|Логический|Включение сообщения о восстановлении перед загрузкой и URL-адреса. Если Рекуирестартупаусентикатион имеет значение false, это значение не влияет.|
+|Пребутрековеримессаже|String|Определяет настраиваемое сообщение о восстановлении.|
+|Пребутрековерюрл|String|Определяет настраиваемый URL-адрес для восстановления.|
 
 ## <a name="relationships"></a>Отношения
 Нет
