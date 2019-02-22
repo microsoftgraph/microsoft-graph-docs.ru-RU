@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления certificateValidityPeriodScale
-description: Параметров срока действия сертификата.
-localization_priority: Normal
+title: тип перечисления certificateValidityPeriodScale
+description: Параметры периода действия сертификата.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b6e090743ec8096254adbded3be8cd3279b5cdc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c573605a0aa91955b52ea65e62af1ff326545374
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402897"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170065"
 ---
-# <a name="certificatevalidityperiodscale-enum-type"></a><span data-ttu-id="20bb6-103">Тип перечисления certificateValidityPeriodScale</span><span class="sxs-lookup"><span data-stu-id="20bb6-103">certificateValidityPeriodScale enum type</span></span>
+# <a name="certificatevalidityperiodscale-enum-type"></a><span data-ttu-id="73cba-103">тип перечисления certificateValidityPeriodScale</span><span class="sxs-lookup"><span data-stu-id="73cba-103">certificateValidityPeriodScale enum type</span></span>
 
-> <span data-ttu-id="20bb6-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="20bb6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="20bb6-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="20bb6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="73cba-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="73cba-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="20bb6-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="20bb6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="73cba-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="73cba-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="20bb6-107">Параметров срока действия сертификата.</span><span class="sxs-lookup"><span data-stu-id="20bb6-107">Certificate Validity Period Options.</span></span>
+<span data-ttu-id="73cba-106">Параметры периода действия сертификата.</span><span class="sxs-lookup"><span data-stu-id="73cba-106">Certificate Validity Period Options.</span></span>
 
-## <a name="members"></a><span data-ttu-id="20bb6-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="20bb6-108">Members</span></span>
-|<span data-ttu-id="20bb6-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="20bb6-109">Member</span></span>|<span data-ttu-id="20bb6-110">Значение</span><span class="sxs-lookup"><span data-stu-id="20bb6-110">Value</span></span>|<span data-ttu-id="20bb6-111">Описание</span><span class="sxs-lookup"><span data-stu-id="20bb6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="73cba-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="73cba-107">Members</span></span>
+|<span data-ttu-id="73cba-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="73cba-108">Member</span></span>|<span data-ttu-id="73cba-109">Значение</span><span class="sxs-lookup"><span data-stu-id="73cba-109">Value</span></span>|<span data-ttu-id="73cba-110">Описание</span><span class="sxs-lookup"><span data-stu-id="73cba-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="20bb6-112">дней</span><span class="sxs-lookup"><span data-stu-id="20bb6-112">days</span></span>|<span data-ttu-id="20bb6-113">0</span><span class="sxs-lookup"><span data-stu-id="20bb6-113">0</span></span>|<span data-ttu-id="20bb6-114">Число дней.</span><span class="sxs-lookup"><span data-stu-id="20bb6-114">Days.</span></span>|
-|<span data-ttu-id="20bb6-115">месяцев</span><span class="sxs-lookup"><span data-stu-id="20bb6-115">months</span></span>|<span data-ttu-id="20bb6-116">1</span><span class="sxs-lookup"><span data-stu-id="20bb6-116">1</span></span>|<span data-ttu-id="20bb6-117">Месяцев.</span><span class="sxs-lookup"><span data-stu-id="20bb6-117">Months.</span></span>|
-|<span data-ttu-id="20bb6-118">лет</span><span class="sxs-lookup"><span data-stu-id="20bb6-118">years</span></span>|<span data-ttu-id="20bb6-119">2</span><span class="sxs-lookup"><span data-stu-id="20bb6-119">2</span></span>|<span data-ttu-id="20bb6-120">Лет.</span><span class="sxs-lookup"><span data-stu-id="20bb6-120">Years.</span></span>|
+|<span data-ttu-id="73cba-111">срок</span><span class="sxs-lookup"><span data-stu-id="73cba-111">days</span></span>|<span data-ttu-id="73cba-112">нуль</span><span class="sxs-lookup"><span data-stu-id="73cba-112">0</span></span>|<span data-ttu-id="73cba-113">Срок.</span><span class="sxs-lookup"><span data-stu-id="73cba-113">Days.</span></span>|
+|<span data-ttu-id="73cba-114">полугод</span><span class="sxs-lookup"><span data-stu-id="73cba-114">months</span></span>|<span data-ttu-id="73cba-115">1,1</span><span class="sxs-lookup"><span data-stu-id="73cba-115">1</span></span>|<span data-ttu-id="73cba-116">Полугод.</span><span class="sxs-lookup"><span data-stu-id="73cba-116">Months.</span></span>|
+|<span data-ttu-id="73cba-117">годе</span><span class="sxs-lookup"><span data-stu-id="73cba-117">years</span></span>|<span data-ttu-id="73cba-118">2</span><span class="sxs-lookup"><span data-stu-id="73cba-118">2</span></span>|<span data-ttu-id="73cba-119">Годе.</span><span class="sxs-lookup"><span data-stu-id="73cba-119">Years.</span></span>|
 
 
 

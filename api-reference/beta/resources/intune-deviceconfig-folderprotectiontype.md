@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления folderProtectionType
-description: Возможные значения защиты папки
-localization_priority: Normal
+title: тип перечисления Фолдерпротектионтипе
+description: Возможные значения защиты папок
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2abbb719ab93b53ad276f8391d4028c4f8b40b4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0682f5bfbef65b982762e10a9425a8381d645d7d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405718"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30170338"
 ---
-# <a name="folderprotectiontype-enum-type"></a><span data-ttu-id="6d084-103">Тип перечисления folderProtectionType</span><span class="sxs-lookup"><span data-stu-id="6d084-103">folderProtectionType enum type</span></span>
+# <a name="folderprotectiontype-enum-type"></a><span data-ttu-id="ed77a-103">тип перечисления Фолдерпротектионтипе</span><span class="sxs-lookup"><span data-stu-id="ed77a-103">folderProtectionType enum type</span></span>
 
-> <span data-ttu-id="6d084-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6d084-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6d084-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6d084-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ed77a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed77a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6d084-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6d084-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ed77a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ed77a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6d084-107">Возможные значения защиты папки</span><span class="sxs-lookup"><span data-stu-id="6d084-107">Possible values of Folder Protection</span></span>
+<span data-ttu-id="ed77a-106">Возможные значения защиты папок</span><span class="sxs-lookup"><span data-stu-id="ed77a-106">Possible values of Folder Protection</span></span>
 
-## <a name="members"></a><span data-ttu-id="6d084-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="6d084-108">Members</span></span>
-|<span data-ttu-id="6d084-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="6d084-109">Member</span></span>|<span data-ttu-id="6d084-110">Значение</span><span class="sxs-lookup"><span data-stu-id="6d084-110">Value</span></span>|<span data-ttu-id="6d084-111">Описание</span><span class="sxs-lookup"><span data-stu-id="6d084-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ed77a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="ed77a-107">Members</span></span>
+|<span data-ttu-id="ed77a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="ed77a-108">Member</span></span>|<span data-ttu-id="ed77a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="ed77a-109">Value</span></span>|<span data-ttu-id="ed77a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ed77a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6d084-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="6d084-112">userDefined</span></span>|<span data-ttu-id="6d084-113">0</span><span class="sxs-lookup"><span data-stu-id="6d084-113">0</span></span>|<span data-ttu-id="6d084-114">Значение по умолчанию устройства, без цели.</span><span class="sxs-lookup"><span data-stu-id="6d084-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="6d084-115">Включение</span><span class="sxs-lookup"><span data-stu-id="6d084-115">enable</span></span>|<span data-ttu-id="6d084-116">1</span><span class="sxs-lookup"><span data-stu-id="6d084-116">1</span></span>|<span data-ttu-id="6d084-117">Функциональные возможности блока.</span><span class="sxs-lookup"><span data-stu-id="6d084-117">Block functionality.</span></span>|
-|<span data-ttu-id="6d084-118">auditMode</span><span class="sxs-lookup"><span data-stu-id="6d084-118">auditMode</span></span>|<span data-ttu-id="6d084-119">2</span><span class="sxs-lookup"><span data-stu-id="6d084-119">2</span></span>|<span data-ttu-id="6d084-120">Разрешить функциональные возможности, но создать журналы.</span><span class="sxs-lookup"><span data-stu-id="6d084-120">Allow functionality but generate logs.</span></span>|
-|<span data-ttu-id="6d084-121">blockDiskModification</span><span class="sxs-lookup"><span data-stu-id="6d084-121">blockDiskModification</span></span>|<span data-ttu-id="6d084-122">3</span><span class="sxs-lookup"><span data-stu-id="6d084-122">3</span></span>|<span data-ttu-id="6d084-123">Блокировка ненадежные приложения из записи сектора диска.</span><span class="sxs-lookup"><span data-stu-id="6d084-123">Block untrusted apps from writing to disk sectors.</span></span>|
-|<span data-ttu-id="6d084-124">auditDiskModification</span><span class="sxs-lookup"><span data-stu-id="6d084-124">auditDiskModification</span></span>|<span data-ttu-id="6d084-125">4</span><span class="sxs-lookup"><span data-stu-id="6d084-125">4</span></span>|<span data-ttu-id="6d084-126">Создание журналов ненадежные приложения записи сектора диска.</span><span class="sxs-lookup"><span data-stu-id="6d084-126">Generate logs when untrusted apps write to disk sectors.</span></span>|
+|<span data-ttu-id="ed77a-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="ed77a-111">userDefined</span></span>|<span data-ttu-id="ed77a-112">нуль</span><span class="sxs-lookup"><span data-stu-id="ed77a-112">0</span></span>|<span data-ttu-id="ed77a-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="ed77a-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="ed77a-114">подключить</span><span class="sxs-lookup"><span data-stu-id="ed77a-114">enable</span></span>|<span data-ttu-id="ed77a-115">1,1</span><span class="sxs-lookup"><span data-stu-id="ed77a-115">1</span></span>|<span data-ttu-id="ed77a-116">Функциональная возможность блока.</span><span class="sxs-lookup"><span data-stu-id="ed77a-116">Block functionality.</span></span>|
+|<span data-ttu-id="ed77a-117">Аудитмоде</span><span class="sxs-lookup"><span data-stu-id="ed77a-117">auditMode</span></span>|<span data-ttu-id="ed77a-118">2</span><span class="sxs-lookup"><span data-stu-id="ed77a-118">2</span></span>|<span data-ttu-id="ed77a-119">РазРешите функциональные возможности, но Создайте журналы.</span><span class="sxs-lookup"><span data-stu-id="ed77a-119">Allow functionality but generate logs.</span></span>|
+|<span data-ttu-id="ed77a-120">Блоккдискмодификатион</span><span class="sxs-lookup"><span data-stu-id="ed77a-120">blockDiskModification</span></span>|<span data-ttu-id="ed77a-121">4</span><span class="sxs-lookup"><span data-stu-id="ed77a-121">3</span></span>|<span data-ttu-id="ed77a-122">Блокировать запись недоверенных приложений в секторах диска.</span><span class="sxs-lookup"><span data-stu-id="ed77a-122">Block untrusted apps from writing to disk sectors.</span></span>|
+|<span data-ttu-id="ed77a-123">Аудитдискмодификатион</span><span class="sxs-lookup"><span data-stu-id="ed77a-123">auditDiskModification</span></span>|<span data-ttu-id="ed77a-124">4</span><span class="sxs-lookup"><span data-stu-id="ed77a-124">4</span></span>|<span data-ttu-id="ed77a-125">Создание журналов при записи недоверенных приложений в секторах диска.</span><span class="sxs-lookup"><span data-stu-id="ed77a-125">Generate logs when untrusted apps write to disk sectors.</span></span>|
 
 
 

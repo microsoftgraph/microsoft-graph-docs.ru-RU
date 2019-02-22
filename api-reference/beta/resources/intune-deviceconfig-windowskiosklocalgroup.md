@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса windowsKioskLocalGroup
-description: Класс, используемый для идентификации в локальную группу для базовой конфигурации
-localization_priority: Normal
+title: Тип ресурса Виндовскиосклокалграуп
+description: Класс, используемый для идентификации локальной группы для конфигурации киоска
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1134b6a842b54dc49fcd15a92d21aef227b35182
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e3479226d770c7030fefed1a7f2f65a02808479d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424632"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30169526"
 ---
-# <a name="windowskiosklocalgroup-resource-type"></a><span data-ttu-id="d0908-103">Тип ресурса windowsKioskLocalGroup</span><span class="sxs-lookup"><span data-stu-id="d0908-103">windowsKioskLocalGroup resource type</span></span>
+# <a name="windowskiosklocalgroup-resource-type"></a><span data-ttu-id="c9325-103">Тип ресурса Виндовскиосклокалграуп</span><span class="sxs-lookup"><span data-stu-id="c9325-103">windowsKioskLocalGroup resource type</span></span>
 
-> <span data-ttu-id="d0908-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d0908-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d0908-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d0908-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c9325-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c9325-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d0908-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d0908-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c9325-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c9325-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d0908-107">Класс, используемый для идентификации в локальную группу для базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="d0908-107">The class used to identify a local group for the kiosk configuration</span></span>
+<span data-ttu-id="c9325-106">Класс, используемый для идентификации локальной группы для конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="c9325-106">The class used to identify a local group for the kiosk configuration</span></span>
 
 
-<span data-ttu-id="d0908-108">Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="d0908-108">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
+<span data-ttu-id="c9325-107">НаСледуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="c9325-107">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d0908-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="d0908-109">Properties</span></span>
-|<span data-ttu-id="d0908-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="d0908-110">Property</span></span>|<span data-ttu-id="d0908-111">Тип</span><span class="sxs-lookup"><span data-stu-id="d0908-111">Type</span></span>|<span data-ttu-id="d0908-112">Описание</span><span class="sxs-lookup"><span data-stu-id="d0908-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="c9325-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="c9325-108">Properties</span></span>
+|<span data-ttu-id="c9325-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="c9325-109">Property</span></span>|<span data-ttu-id="c9325-110">Тип</span><span class="sxs-lookup"><span data-stu-id="c9325-110">Type</span></span>|<span data-ttu-id="c9325-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c9325-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d0908-113">groupName</span><span class="sxs-lookup"><span data-stu-id="d0908-113">groupName</span></span>|<span data-ttu-id="d0908-114">String</span><span class="sxs-lookup"><span data-stu-id="d0908-114">String</span></span>|<span data-ttu-id="d0908-115">Имя локальной группы, которая будет заблокирована этой базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="d0908-115">The name of the local group that will be locked to this kiosk configuration</span></span>|
+|<span data-ttu-id="c9325-112">groupName</span><span class="sxs-lookup"><span data-stu-id="c9325-112">groupName</span></span>|<span data-ttu-id="c9325-113">String</span><span class="sxs-lookup"><span data-stu-id="c9325-113">String</span></span>|<span data-ttu-id="c9325-114">Имя локальной группы, которая будет заблокирована для этой конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="c9325-114">The name of the local group that will be locked to this kiosk configuration</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d0908-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="d0908-116">Relationships</span></span>
-<span data-ttu-id="d0908-117">Нет</span><span class="sxs-lookup"><span data-stu-id="d0908-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="c9325-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="c9325-115">Relationships</span></span>
+<span data-ttu-id="c9325-116">Нет</span><span class="sxs-lookup"><span data-stu-id="c9325-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d0908-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d0908-118">JSON Representation</span></span>
-<span data-ttu-id="d0908-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d0908-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="c9325-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c9325-117">JSON Representation</span></span>
+<span data-ttu-id="c9325-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c9325-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskLocalGroup"

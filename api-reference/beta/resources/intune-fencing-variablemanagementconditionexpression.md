@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса variableManagementConditionExpression
-description: Оценивает условие состояние управления как логическое выражение.
-localization_priority: Normal
+title: Тип ресурса Вариаблеманажементкондитионекспрессион
+description: Оценивает состояние условия управления как логическое выражение.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a5e7efd0c8213f40d1dfb5f86d2f86c999069d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fab070cc9d2c51fbe1dc4b33c82fb823a849b7cc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399628"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168231"
 ---
-# <a name="variablemanagementconditionexpression-resource-type"></a><span data-ttu-id="416b8-103">Тип ресурса variableManagementConditionExpression</span><span class="sxs-lookup"><span data-stu-id="416b8-103">variableManagementConditionExpression resource type</span></span>
+# <a name="variablemanagementconditionexpression-resource-type"></a><span data-ttu-id="08bbb-103">Тип ресурса Вариаблеманажементкондитионекспрессион</span><span class="sxs-lookup"><span data-stu-id="08bbb-103">variableManagementConditionExpression resource type</span></span>
 
-> <span data-ttu-id="416b8-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="416b8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="416b8-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="416b8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="08bbb-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08bbb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="416b8-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="416b8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="08bbb-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="08bbb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="416b8-107">Оценивает условие состояние управления как логическое выражение.</span><span class="sxs-lookup"><span data-stu-id="416b8-107">Evaluates the management condition state as a Boolean expression.</span></span>
+<span data-ttu-id="08bbb-106">Оценивает состояние условия управления как логическое выражение.</span><span class="sxs-lookup"><span data-stu-id="08bbb-106">Evaluates the management condition state as a Boolean expression.</span></span>
 
 
-<span data-ttu-id="416b8-108">Наследуется от [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span><span class="sxs-lookup"><span data-stu-id="416b8-108">Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span></span>
+<span data-ttu-id="08bbb-107">НаСледуется от [манажементкондитионекспрессионмодел](../resources/intune-fencing-managementconditionexpressionmodel.md)</span><span class="sxs-lookup"><span data-stu-id="08bbb-107">Inherits from [managementConditionExpressionModel](../resources/intune-fencing-managementconditionexpressionmodel.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="416b8-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="416b8-109">Properties</span></span>
-|<span data-ttu-id="416b8-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="416b8-110">Property</span></span>|<span data-ttu-id="416b8-111">Тип</span><span class="sxs-lookup"><span data-stu-id="416b8-111">Type</span></span>|<span data-ttu-id="416b8-112">Описание</span><span class="sxs-lookup"><span data-stu-id="416b8-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="08bbb-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="08bbb-108">Properties</span></span>
+|<span data-ttu-id="08bbb-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="08bbb-109">Property</span></span>|<span data-ttu-id="08bbb-110">Тип</span><span class="sxs-lookup"><span data-stu-id="08bbb-110">Type</span></span>|<span data-ttu-id="08bbb-111">Описание</span><span class="sxs-lookup"><span data-stu-id="08bbb-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="416b8-113">managementConditionId</span><span class="sxs-lookup"><span data-stu-id="416b8-113">managementConditionId</span></span>|<span data-ttu-id="416b8-114">String</span><span class="sxs-lookup"><span data-stu-id="416b8-114">String</span></span>|<span data-ttu-id="416b8-115">Идентификатор условия управления, которая используется для оценки выражения.</span><span class="sxs-lookup"><span data-stu-id="416b8-115">The management condition id that is used to evaluate the expression.</span></span>|
+|<span data-ttu-id="08bbb-112">Манажементкондитионид</span><span class="sxs-lookup"><span data-stu-id="08bbb-112">managementConditionId</span></span>|<span data-ttu-id="08bbb-113">String</span><span class="sxs-lookup"><span data-stu-id="08bbb-113">String</span></span>|<span data-ttu-id="08bbb-114">Идентификатор условия управления, используемый для оценки выражения.</span><span class="sxs-lookup"><span data-stu-id="08bbb-114">The management condition id that is used to evaluate the expression.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="416b8-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="416b8-116">Relationships</span></span>
-<span data-ttu-id="416b8-117">Нет</span><span class="sxs-lookup"><span data-stu-id="416b8-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="08bbb-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="08bbb-115">Relationships</span></span>
+<span data-ttu-id="08bbb-116">Нет</span><span class="sxs-lookup"><span data-stu-id="08bbb-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="416b8-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="416b8-118">JSON Representation</span></span>
-<span data-ttu-id="416b8-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="416b8-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="08bbb-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="08bbb-117">JSON Representation</span></span>
+<span data-ttu-id="08bbb-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="08bbb-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.variableManagementConditionExpression"
