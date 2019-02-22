@@ -1,25 +1,25 @@
 ---
-title: Создание managedEBookCategory
-description: Создание нового объекта managedEBookCategory.
-localization_priority: Normal
+title: Создание Манажедебуккатегори
+description: Создание нового объекта Манажедебуккатегори.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17005e88792a17c3c9fa71d0ecc999e3b43813f2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fd23f14bab5db4ef0d0fbae7f3ff2d752a28595c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421055"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147637"
 ---
-# <a name="create-managedebookcategory"></a>Создание managedEBookCategory
+# <a name="create-managedebookcategory"></a>Создание Манажедебуккатегори
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [managedEBookCategory](../resources/intune-books-managedebookcategory.md) .
+Создание нового объекта [манажедебуккатегори](../resources/intune-books-managedebookcategory.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -46,20 +46,20 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/categories
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта managedEBookCategory.
+В тексте запроса добавьте представление объекта Манажедебуккатегори в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания managedEBookCategory.
+В следующей таблице приведены свойства, необходимые при создании Манажедебуккатегори.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|displayName|String|Имя категории электронная книга.|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения ManagedEBookCategory.|
+|displayName|String|Имя категории электронной книги.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения Манажедебуккатегори.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [managedEBookCategory](../resources/intune-books-managedebookcategory.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажедебуккатегори](../resources/intune-books-managedebookcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -77,7 +77,7 @@ Content-length: 102
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

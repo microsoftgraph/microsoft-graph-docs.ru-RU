@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса mobileAppIntentAndStateDetail
-description: Цель мобильные приложения и состояние установки для данного устройства.
-localization_priority: Normal
+title: Тип ресурса Мобилеаппинтентандстатедетаил
+description: Цель мобильного приложения и состояние установки для данного устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ef88a1fa346784ae00a125a487ca844c58d62eb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76db364b53c9ccb6b4057835b853705cd49ca410
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414258"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146755"
 ---
-# <a name="mobileappintentandstatedetail-resource-type"></a>Тип ресурса mobileAppIntentAndStateDetail
+# <a name="mobileappintentandstatedetail-resource-type"></a>Тип ресурса Мобилеаппинтентандстатедетаил
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Цель мобильные приложения и состояние установки для данного устройства.
+Цель мобильного приложения и состояние установки для данного устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|applicationId|String|Идентификатор MobieApp.|
+|applicationId|String|Идентификатор Мобиеапп.|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор.|
-|mobileAppIntent;|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md);|Цель мобильных приложений. Возможные значения: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
-|displayVersion|String|Человеческого для чтения версию приложения|
-|installState|[resultantAppState](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
-|supportedDeviceTypes|[mobileAppSupportedDeviceType](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md) коллекции|Поддерживаемые платформы для приложения.|
+|mobileAppIntent;|[mobileAppIntent](../resources/intune-troubleshooting-mobileappintent.md);|Цель для мобильного приложения. Возможные значения: `available`, `notAvailable`, `requiredInstall`, `requiredUninstall`, `requiredAndAvailableInstall`, `availableInstallWithoutEnrollment`, `exclude`.|
+|Дисплайверсион|String|Доступная для человека версия приложения|
+|installState|[Ресултантаппстате](../resources/intune-shared-resultantappstate.md)|Состояние установки приложения. Возможные значения: `installed`, `failed`, `notInstalled`, `uninstallFailed`, `pendingInstall`, `unknown`, `notApplicable`.|
+|Суппортеддевицетипес|Коллекция [мобилеаппсуппортеддевицетипе](../resources/intune-troubleshooting-mobileappsupporteddevicetype.md)|Поддерживаемые платформы для приложения.|
 
 ## <a name="relationships"></a>Отношения
 Нет

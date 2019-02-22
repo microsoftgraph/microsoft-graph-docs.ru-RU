@@ -1,25 +1,25 @@
 ---
-title: Обновление managementConditionStatement
-description: Обновление свойства объекта managementConditionStatement.
-localization_priority: Normal
+title: Обновление Манажементкондитионстатемент
+description: Обновление свойств объекта Манажементкондитионстатемент.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02d5301ca81bf5b1479454f65a6c9e9630a8f284
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 933d3f7c60f78b5ea6f115f6388881a434ef3484
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417044"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151900"
 ---
-# <a name="update-managementconditionstatement"></a>Обновление managementConditionStatement
+# <a name="update-managementconditionstatement"></a>Обновление Манажементкондитионстатемент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
+Обновление свойств объекта [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -41,31 +41,31 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) .
+В тексте запроса добавьте представление объекта [Манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md).
+В следующей таблице приведены свойства, необходимые при создании [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для управления условная инструкция. Значение, назначенное при создании создаваемый системой.|
-|displayName|String|Имя оператора условия управления определенные администратором.|
-|description|String|Описание управления условная инструкция определенные администратором.|
-|createdDateTime|DateTimeOffset|Время создания условная инструкция управления. Создан со стороны службы.|
-|modifiedDateTime|DateTimeOffset|Время последнего изменения условная инструкция управления. Обновление со стороны службы.|
-|выражение|[managementConditionExpression](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используется для оценки Если инструкции с условием управления был активирован деактивирован.|
-|eTag|String|ETag условная инструкция управления. Обновление со стороны службы.|
-|applicablePlatforms|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md) коллекции|Применимые платформы для этой условная инструкция управления.
-Отсчитывается от нужна условия управления, связанные с управлением условие оператора и поиск пересечения применимых платформ. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
+|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|displayName|String|Имя, определенное администратором оператора условия управления.|
+|description|Строка|Заданное администратором описание оператора условия управления.|
+|createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
+|modifiedDateTime|DateTimeOffset|Время последнего изменения оператора условия управления. Обновленная сторона службы.|
+|выражение|[Манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
+|eTag|String|Тег ETag оператора условия управления. Обновленная сторона службы.|
+|Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого оператора условия управления.
+Это рассчитывается на основе условий управления, связанных с оператором условия управления, и поиском пересечения соответствующих платформ. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -90,8 +90,8 @@ Content-length: 323
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

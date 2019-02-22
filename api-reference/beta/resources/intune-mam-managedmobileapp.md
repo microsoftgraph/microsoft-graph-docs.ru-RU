@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса managedMobileApp
 description: Идентификатор для развертывания приложения.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1b8de88976937a967f60a0842eeb9f24b465e50f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 842987c0ed12322d77e0f28fc71d197950452dfe
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419256"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148638"
 ---
 # <a name="managedmobileapp-resource-type"></a>Тип ресурса managedMobileApp
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Идентификатор для развертывания приложения.
 
@@ -36,7 +36,7 @@ ms.locfileid: "29419256"
 |version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

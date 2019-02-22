@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления windowsAutopilotProfileAssignmentDetailedStatus
+title: тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eed07765242aaa9900b5c08c03c994f051341dcb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 814f8eaf6e2e5a35cc2fd7128507f5b811d9458a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425731"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147973"
 ---
-# <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>Тип перечисления windowsAutopilotProfileAssignmentDetailedStatus
+# <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Назначение не подробное описание состояния|
-|hardwareRequirementsNotMet|1|Требования к аппаратному обеспечению не выполняются. Это может произойти, если устройство без TPM 2.0 назначен самостоятельно развертывание профиль автопилот.|
+|Нет|нуль|Нет подробного отчета о состоянии назначения|
+|Хардваререкуирементснотмет|1,1|Требования к оборудованию не выполнены. Это может произойти, если устройство с автоматическим развертыванием автоматически пилотного профиля назначено устройству без ДОВЕРЕНного ПЛАТФОРМЕНного модуля 2,0.|
 
 
 

@@ -1,29 +1,29 @@
 ---
 title: Тип ресурса windows10AssociatedApps
-description: Определение приложения связанного 10 Windows.
-localization_priority: Normal
+description: Определение приложения, связанного с Windows 10.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5dd5b664bde2970caa4b09c027592684b9ecd5e2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 95f0114bbd39e85c137da2a71b7640ba8051b6dc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425920"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146685"
 ---
 # <a name="windows10associatedapps-resource-type"></a>Тип ресурса windows10AssociatedApps
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определение приложения связанного 10 Windows.
+Определение приложения, связанного с Windows 10.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Тип|[windows10AppType](../resources/intune-deviceconfig-windows10apptype.md)|Тип приложения. Возможные значения: `desktop`, `universal`.|
-|идентификатор|String|Идентификатор.|
+|идентификатор|String|Идентификацион.|
 
 ## <a name="relationships"></a>Отношения
 Нет

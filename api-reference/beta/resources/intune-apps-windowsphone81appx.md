@@ -1,23 +1,23 @@
 ---
 title: Тип ресурса windowsPhone81AppX
-description: Содержит свойства и наследуемые свойства для приложений Windows Phone 8.1 AppX бизнес-систем.
-localization_priority: Normal
+description: Содержит свойства и унаследованные свойства для бизнес-приложений Windows Phone 8,1 AppX.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fcefaad9909a31daedd2cab0fd48667afd89793b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f4bb02a6baa311233e2c82fdb14a054e7bec0d3c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154014"
 ---
 # <a name="windowsphone81appx-resource-type"></a>Тип ресурса windowsPhone81AppX
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и наследуемые свойства для приложений Windows Phone 8.1 AppX бизнес-систем.
+Содержит свойства и унаследованные свойства для бизнес-приложений Windows Phone 8,1 AppX.
 
 
 Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
@@ -25,18 +25,18 @@ ms.locfileid: "29418717"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список windowsPhone81AppXs](../api/intune-apps-windowsphone81appx-list.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) коллекции|Свойства списка и связей объектов [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
-|[Получение windowsPhone81AppX](../api/intune-apps-windowsphone81appx-get.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Чтение свойства и связи объекта [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
+|[Список windowsPhone81AppXs](../api/intune-apps-windowsphone81appx-list.md)|Коллекция [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Список свойств и связей объектов [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
+|[Получение windowsPhone81AppX](../api/intune-apps-windowsphone81appx-get.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Чтение свойств и связей объекта [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
 |[Создание windowsPhone81AppX](../api/intune-apps-windowsphone81appx-create.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Создание нового объекта [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
-|[Удаление windowsPhone81AppX](../api/intune-apps-windowsphone81appx-delete.md)|Нет|Удаляет [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md).|
-|[Обновление windowsPhone81AppX](../api/intune-apps-windowsphone81appx-update.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Обновление свойства объекта [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
+|[Удаление windowsPhone81AppX](../api/intune-apps-windowsphone81appx-delete.md)|Нет|Удаляет объект [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md).|
+|[Обновление windowsPhone81AppX](../api/intune-apps-windowsphone81appx-update.md)|[windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md)|Обновление свойств объекта [windowsPhone81AppX](../resources/intune-apps-windowsphone81appx.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,10 +47,10 @@ ms.locfileid: "29418717"
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -59,8 +59,8 @@ ms.locfileid: "29418717"
 |identityPublisherHash|String|Хэш издателей удостоверений.|
 |identityResourceIdentifier|String|Идентификатор ресурса Identity.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|phoneProductIdentifier|String|Идентификатор продукта телефона.|
-|phonePublisherId|String|Publisher с идентификатором телефона.|
+|Фонепродуктидентифиер|String|Идентификатор телефонного продукта.|
+|Фонепублишерид|String|Идентификатор издателя телефона.|
 |identityVersion|String|Версия удостоверения.|
 
 ## <a name="relationships"></a>Связи
@@ -69,8 +69,8 @@ ms.locfileid: "29418717"
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Сводка по установке мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |contentVersions|Коллекция объектов [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|Список версий содержимого для этого приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON

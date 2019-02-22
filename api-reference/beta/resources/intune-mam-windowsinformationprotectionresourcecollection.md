@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса windowsInformationProtectionResourceCollection
 description: Коллекция ресурсов Windows Information Protection
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4a8ad51177507613c3fd84b524503d0e79c208f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cbeb58464ccfd7aff3dfc6066ab276a2bd73f5c6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424681"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149751"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Тип ресурса windowsInformationProtectionResourceCollection
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Коллекция ресурсов Windows Information Protection
 

@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса applePushNotificationCertificate
 description: Сертификат push-уведомлений Apple
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8a5df851f1826cd3e1e124bf8c2cda89b24da8e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4c1bf303a3d0acee799819177bfca4b186a69ee3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395589"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154959"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Сертификат push-уведомлений Apple
 
@@ -29,13 +29,13 @@ ms.locfileid: "29395589"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор сертификата|
+|id|Строка|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
 |expirationDateTime|DateTimeOffset|Дата и время окончания срока действия для сертификата push-уведомлений Apple.|
-|certificateUploadStatus|String|Состояние загрузки сертификата.|
-|certificateUploadFailureReason|String|Не удалось причине отправки сертификата.|
+|Цертификатеуплоадстатус|String|Состояние отправки сертификата.|
+|Цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
 |certificate|String|Н/Д|
 
 ## <a name="relationships"></a>Связи

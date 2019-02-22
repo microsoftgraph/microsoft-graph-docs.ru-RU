@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса appLogCollectionDownloadDetails
+title: Тип ресурса Апплогколлектиондовнлоаддетаилс
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6946b3cd1aa60c4025859bd8d41d2dc4775bf39d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430568"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147756"
 ---
-# <a name="applogcollectiondownloaddetails-resource-type"></a>Тип ресурса appLogCollectionDownloadDetails
+# <a name="applogcollectiondownloaddetails-resource-type"></a>Тип ресурса Апплогколлектиондовнлоаддетаилс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|downloadUrl|String|URL-адрес SAS загрузки для завершения AppLogUploadRequest|
-|decryptionKey|String|DecryptionKey как строка|
-|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|DecryptionAlgorithm для содержимого. Возможные значения: `aes256`.|
+|Довнлоадурл|String|Скачать URL-адрес SAS для завершенного Апплогуплоадрекуест|
+|Декриптионкэй|String|Декриптионкэй как строка|
+|appLogDecryptionAlgorithm|[appLogDecryptionAlgorithm](../resources/intune-devices-applogdecryptionalgorithm.md)|Декриптионалгорисм для контента. Возможные значения: `aes256`.|
 
 ## <a name="relationships"></a>Отношения
 Нет

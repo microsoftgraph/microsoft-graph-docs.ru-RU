@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления microsoftStoreForBusinessPortalSelectionOptions
-description: Портала, к которому admin синхронизирует доступные хранилища Майкрософт для бизнес-приложений. Этот параметр доступен в консоли администрирования Intune.
-localization_priority: Normal
+title: тип перечисления Микрософтсторефорбусинесспорталселектионоптионс
+description: Портал, на котором администратор синхронизирует доступные приложения Microsoft Store для бизнеса. Это доступно в консоли администрирования Intune.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 589a6058a7ff2c30a967192b90c700f30068ab3c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419333"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147945"
 ---
-# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>Тип перечисления microsoftStoreForBusinessPortalSelectionOptions
+# <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>тип перечисления Микрософтсторефорбусинесспорталселектионоптионс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Портала, к которому admin синхронизирует доступные хранилища Майкрософт для бизнес-приложений. Этот параметр доступен в консоли администрирования Intune.
+Портал, на котором администратор синхронизирует доступные приложения Microsoft Store для бизнеса. Это доступно в консоли администрирования Intune.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Этот параметр недоступен для учетной записи|
-|companyPortal|1|Компания Intune портала.|
-|privateStore|2|Частный MSFB хранилище.|
+|Нет|нуль|Этот параметр недоступен для учетной записи|
+|Компанипортал|1,1|Только корпоративный портал Intune.|
+|Приватесторе|2|Только частный магазин МСФБ.|
 
 
 

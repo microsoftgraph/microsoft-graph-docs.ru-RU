@@ -1,23 +1,23 @@
 ---
-title: функция getManagementConditionStatementsForPlatform
+title: Функция Жетманажементкондитионстатементсфорплатформ
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf8e3daec196adc6b9124d91e66b82ab78a03337
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9b0b3131df9b7edd1652885fe8415f3862eaf6ef
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419669"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149044"
 ---
-# <a name="getmanagementconditionstatementsforplatform-function"></a>функция getManagementConditionStatementsForPlatform
+# <a name="getmanagementconditionstatementsforplatform-function"></a>Функция Жетманажементкондитионстатементсфорплатформ
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
@@ -51,12 +51,12 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platform|[devicePlatformType](../resources/intune-shared-deviceplatformtype.md)|Н/Д|
+|platform|[Девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Н/Д|
 
 
 
 ## <a name="response"></a>Отклик
-Если успешно завершена, эта функция возвращает `200 OK` код ответа и семейства [managementConditionStatement](../resources/intune-fencing-managementconditionstatement.md) в теле ответа.
+В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -66,8 +66,8 @@ GET /deviceManagement/managementConditions/{managementConditionId}/managementCon
 GET https://graph.microsoft.com/beta/deviceManagement/managementConditionStatements/getManagementConditionStatementsForPlatform(platform='parameterValue')
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

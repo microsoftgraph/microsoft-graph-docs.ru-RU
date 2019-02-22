@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления windows10VpnAuthenticationMethod
-description: Типы подключений к виртуальной частной сети Windows 10.
-localization_priority: Normal
+title: тип перечисления windows10VpnAuthenticationMethod
+description: Типы VPN-подключений для Windows 10.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa011b6231f6b430fcefcc36affbf92c2fd5d717
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 771186b28b2c6fc1c4ecee2e3cb58518f2a27d10
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418493"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148561"
 ---
-# <a name="windows10vpnauthenticationmethod-enum-type"></a>Тип перечисления windows10VpnAuthenticationMethod
+# <a name="windows10vpnauthenticationmethod-enum-type"></a>тип перечисления windows10VpnAuthenticationMethod
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Типы подключений к виртуальной частной сети Windows 10.
+Типы VPN-подключений для Windows 10.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|certificate|0|Проверка подлинности с помощью сертификата.|
-|usernameAndPassword|1|Использовать имя пользователя и пароль для проверки подлинности.|
-|customEapXml|2|Метод проверки подлинности указан в XML настраиваемого поставщика внешних Приложений.|
+|certificate|нуль|Проверка поДлинности с помощью сертификата.|
+|Усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
+|Кустомеапксмл|2|Метод проверки поДлинности указывается в пользовательском XML-коде EAP.|
 
 
 

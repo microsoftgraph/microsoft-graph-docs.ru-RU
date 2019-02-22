@@ -1,21 +1,21 @@
 ---
 title: Обновление объекта deviceConfigurationDeviceOverview
 description: Обновление свойств объекта deviceConfigurationDeviceOverview.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 180778580f7737141efa935a2dfe87b412b677e3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fcb04aaa007bcab0a625d3f8cfb437bbe71f4a89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147182"
 ---
 # <a name="update-deviceconfigurationdeviceoverview"></a>Обновление объекта deviceConfigurationDeviceOverview
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).
 
@@ -62,11 +62,11 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих устройств.|
 |notApplicableCount|Int32|Количество неприменимых устройств.|
-|notApplicablePlatformCount|Int32|Число неприменимо устройств из-за несоответствие платформы и политики|
+|Свойства notapplicableplatformcount|Int32|Количество неприменимых устройств из-за несовпадения платформы и политики|
 |successCount|Int32|Количество успешных устройств.|
 |errorCount|Int32|Количество устройств с ошибками.|
 |failedCount|Int32|Число устройств со сбоями.|
-|conflictCount|Int32|Количество устройств в конфликта|
+|conflictCount|Int32|Количество конфликтующих устройств|
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора.|
 
@@ -98,8 +98,8 @@ Content-length: 345
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,25 +1,25 @@
 ---
-title: Обновление mobileAppInstallSummary
-description: Обновление свойства объекта mobileAppInstallSummary.
-localization_priority: Normal
+title: Обновление Мобилеаппинсталлсуммари
+description: Обновление свойств объекта Мобилеаппинсталлсуммари.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1975e8dae02876f6d083279e814f5199530aa1ab
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6065083d5ceb5892a95a6b12bc99657eca7d3eeb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413299"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152957"
 ---
-# <a name="update-mobileappinstallsummary"></a>Обновление mobileAppInstallSummary
+# <a name="update-mobileappinstallsummary"></a>Обновление Мобилеаппинсталлсуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .
+Обновление свойств объекта [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,33 +40,33 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/installSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .
+В тексте запроса добавьте представление объекта [Мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md).
+В следующей таблице приведены свойства, необходимые при создании [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|installedDeviceCount|Int32|Количество устройств, которые были успешно установлены этого приложения.|
+|installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
-|notApplicableDeviceCount|Int32|Количество устройств, которые не применимы для этого приложения.|
-|notInstalledDeviceCount|Int32|Количество устройств, для которого не установлено приложение.|
-|pendingInstallDeviceCount|Int32|Количество устройств, которые были уведомлены для установки этого приложения.|
-|installedUserCount|Int32|Число пользователей, чьи устройств успешно для установки этого приложения.|
-|failedUserCount|Int32|Число пользователей, имеющих 1 или другие устройства, который не удалось установить это приложение.|
-|notApplicableUserCount|Int32|Число пользователей, которых устройства не все для этого приложения.|
-|notInstalledUserCount|Int32|Число пользователей, которые имеют 1 или более устройства, на которых не установлено приложение.|
-|pendingInstallUserCount|Int32|Число пользователей, имеющих 1 или другие устройства, уведомлены для установки этого приложения и 0 устройств со сбоями.|
+|notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
+|notInstalledDeviceCount|Int32|Количество устройств, на которых не установлено это приложение.|
+|Пендингинсталлдевицекаунт|Int32|Количество устройств, которые были уведомлены об установке этого приложения.|
+|installedUserCount|Int32|Количество пользователей, чьи устройства успешно выполнили установку этого приложения.|
+|failedUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не удалось установить это приложение.|
+|notApplicableUserCount|Int32|Количество пользователей, чьи устройства были неприменимы к этому приложению.|
+|notInstalledUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не установили это приложение.|
+|Пендингинсталлусеркаунт|Int32|Количество пользователей с 1 или больше устройств, которые были уведомлены об установке этого приложения и имеют 0 устройств с ошибками.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -93,7 +93,7 @@ Content-length: 374
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

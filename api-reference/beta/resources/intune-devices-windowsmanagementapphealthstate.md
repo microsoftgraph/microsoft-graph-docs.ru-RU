@@ -1,42 +1,42 @@
 ---
-title: Тип ресурса windowsManagementAppHealthState
-description: Сущность состояние работоспособности приложения управления Windows.
-localization_priority: Normal
+title: Тип ресурса Виндовсманажементапфеалсстате
+description: Объект состояния работоспособности приложения управления Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 171ae2492eb5077567f4398af678d14044a0b7e2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8841b79b9a284a15999db701e82a2b5062e2930b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395736"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148540"
 ---
-# <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса windowsManagementAppHealthState
+# <a name="windowsmanagementapphealthstate-resource-type"></a>Тип ресурса Виндовсманажементапфеалсстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущность состояние работоспособности приложения управления Windows.
+Объект состояния работоспособности приложения управления Windows.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список windowsManagementAppHealthStates](../api/intune-devices-windowsmanagementapphealthstate-list.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) коллекции|Свойства списка и связей объектов [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
-|[Получение windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-get.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Чтение свойства и связи объекта [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
-|[Создание windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-create.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Создание нового объекта [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
-|[Удаление windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-delete.md)|Нет|Удаляет [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md).|
-|[Обновление windowsManagementAppHealthState](../api/intune-devices-windowsmanagementapphealthstate-update.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Обновление свойства объекта [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
+|[Список Виндовсманажементапфеалсстатес](../api/intune-devices-windowsmanagementapphealthstate-list.md)|Коллекция [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md)|Список свойств и связей объектов [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
+|[Получение Виндовсманажементапфеалсстате](../api/intune-devices-windowsmanagementapphealthstate-get.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Чтение свойств и связей объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
+|[Создание Виндовсманажементапфеалсстате](../api/intune-devices-windowsmanagementapphealthstate-create.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Создание нового объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
+|[Удаление Виндовсманажементапфеалсстате](../api/intune-devices-windowsmanagementapphealthstate-delete.md)|Нет|Удаляет объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md).|
+|[Обновление Виндовсманажементапфеалсстате](../api/intune-devices-windowsmanagementapphealthstate-update.md)|[windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md)|Обновление свойств объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Управление приложения установленной версии Windows.|
-|lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
-|deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|String|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
+|Инсталледверсион|String|Установленная версия приложения управления Windows.|
+|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
+|deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
+|Девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 ## <a name="relationships"></a>Отношения
 Нет

@@ -1,21 +1,21 @@
 ---
-title: Тип ресурса windowsWifiConfiguration
+title: Тип ресурса Виндовсвификонфигуратион
 description: Конфигурация устройства
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6e7a151c9847315fdf3f160ba0355e5bb2f0605e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b4ec447d0e77803f939b9aafb413f05d3e90987e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425857"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153790"
 ---
-# <a name="windowswificonfiguration-resource-type"></a>Тип ресурса windowsWifiConfiguration
+# <a name="windowswificonfiguration-resource-type"></a>Тип ресурса Виндовсвификонфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Конфигурация устройства
 
@@ -25,44 +25,44 @@ ms.locfileid: "29425857"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список windowsWifiConfigurations](../api/intune-deviceconfig-windowswificonfiguration-list.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) коллекции|Свойства списка и связей объектов [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
-|[Получение windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-get.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Чтение свойства и связи объекта [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
-|[Создание windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-create.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Создание нового объекта [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
-|[Удаление windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|Нет|Удаляет [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md).|
-|[Обновление windowsWifiConfiguration](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md)|Обновление свойства объекта [windowsWifiConfiguration](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
+|[Список Виндовсвификонфигуратионс](../api/intune-deviceconfig-windowswificonfiguration-list.md)|Коллекция [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md)|Список свойств и связей объектов [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
+|[Получение Виндовсвификонфигуратион](../api/intune-deviceconfig-windowswificonfiguration-get.md)|[Виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md)|Чтение свойств и связей объекта [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
+|[Создание Виндовсвификонфигуратион](../api/intune-deviceconfig-windowswificonfiguration-create.md)|[Виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md)|Создание нового объекта [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
+|[Удаление Виндовсвификонфигуратион](../api/intune-deviceconfig-windowswificonfiguration-delete.md)|Нет|Удаляет объект [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md).|
+|[Обновление Виндовсвификонфигуратион](../api/intune-deviceconfig-windowswificonfiguration-update.md)|[Виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md)|Обновление свойств объекта [виндовсвификонфигуратион](../resources/intune-deviceconfig-windowswificonfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|preSharedKey|String|Это предварительный ключ для WPA личных Сеть Wi-Fi.|
-|wifiSecurityType|[wiFiSecurityType](../resources/intune-deviceconfig-wifisecuritytype.md)|Укажите тип безопасности Wifi. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
-|meteredConnectionLimit|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Задать тип ограничение лимитным тарифным планом подключения для Wi-Fi. Возможные значения: `unrestricted`, `fixed`, `variable`.|
-|SSID|String|Укажите SSID Wi-Fi.|
-|networkName|String|Укажите имя конфигурации сети.|
-|connectAutomatically|Логический|Укажите, будет ли Wi-Fi следует автоматически подключаться при работе в диапазоне.|
-|connectToPreferredNetwork|Логический|Укажите, должны ли Wi-Fi подключаться к более подходящей сети, если уже подключен этой.  Требуется ConnectAutomatically значение true.|
-|connectWhenNetworkNameIsHidden|Логический|Укажите, автоматически подключения Wi-Fi даже когда не передают SSID.|
-|proxySetting|[wiFiProxySetting](../resources/intune-deviceconfig-wifiproxysetting.md)|Укажите параметры для Wi-Fi конфигурации прокси-сервера. Возможные значения: `none`, `manual`, `automatic`.|
-|proxyManualAddress|String|Укажите IP-адрес прокси-сервера.|
-|proxyManualPort|Int32|Указание порта для прокси-сервера.|
-|proxyAutomaticConfigurationUrl|String|Укажите URL-адрес для сценария настройки сервера прокси-сервера.|
-|forceFIPSCompliance|Логический|Укажите необходимость проверки соответствия требованиям FIPS.|
+|preSharedKey|String|Это предварительно общий ключ для частной сети Wi-Fi WPA.|
+|Вифисекурититипе|[Вифисекурититипе](../resources/intune-deviceconfig-wifisecuritytype.md)|Укажите тип безопасности Wi-Fi. Возможные значения: `open`, `wpaPersonal`, `wpaEnterprise`, `wep`, `wpa2Personal`, `wpa2Enterprise`.|
+|Метередконнектионлимит|[meteredConnectionLimitType](../resources/intune-deviceconfig-meteredconnectionlimittype.md)|Указать тип лимита межлимитного подключения для подключения WiFi. Возможные значения: `unrestricted`, `fixed`, `variable`.|
+|SSID|String|Укажите идентификатор SSID подключения WiFi.|
+|Нетворкнаме|String|Укажите имя конфигурации сети.|
+|Коннектаутоматикалли|Логический|Указывает, должно ли подключение WiFi автоматически подключаться к сети в пределах диапазона.|
+|Коннекттопреферреднетворк|Логический|Укажите, должно ли подключение WiFi подключаться к более предпочтительным сетям, если оно уже подключено к этому.  Необходимо, чтобы Коннектаутоматикалли был true.|
+|Коннектвхеннетворкнамеишидден|Логический|Укажите, должно ли подключение WiFi автоматически подключаться, даже если идентификатор SSID не является широковещательным.|
+|Проксисеттинг|[Вифипроксисеттинг](../resources/intune-deviceconfig-wifiproxysetting.md)|Укажите параметры прокси-сервера для конфигурации Wi-Fi. Возможные значения: `none`, `manual`, `automatic`.|
+|Проксимануаладдресс|String|Укажите IP-адрес прокси-сервера.|
+|Проксимануалпорт|Int32|Укажите порт прокси-сервера.|
+|Проксяутоматикконфигуратионурл|String|Укажите URL-адрес скрипта настройки прокси-сервера.|
+|Форцефипскомплианце|Логический|Укажите, следует ли применять соответствие требованиям FIPS.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|groupAssignments|[deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md) коллекции|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|groupAssignments|Коллекция [deviceConfigurationGroupAssignment](../resources/intune-deviceconfig-deviceconfigurationgroupassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации по устройствам. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Обзор состояния параметров конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

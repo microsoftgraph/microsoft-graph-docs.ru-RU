@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления managedAppFlaggedReason
-description: Причины, для которого отмеченные пользователя
-localization_priority: Normal
+title: тип перечисления Манажедаппфлагжедреасон
+description: Причина, по которой пользователю был применен флаг
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9d2d956107d8a8ecbc40f90d29260c2ac06064f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 13b5cdb11725452c78543a9a8d08823eafd426b5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424954"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154070"
 ---
-# <a name="managedappflaggedreason-enum-type"></a>Тип перечисления managedAppFlaggedReason
+# <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Причины, для которого отмеченные пользователя
+Причина, по которой пользователю был применен флаг
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Отсутствие ошибок.|
-|rootedDevice|1|Регистрация приложения работает на устройстве в качестве корневого блокируется.|
+|Нет|нуль|Нет ошибок.|
+|Рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
 
 
 

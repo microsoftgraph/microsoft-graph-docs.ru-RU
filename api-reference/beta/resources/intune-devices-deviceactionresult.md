@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса deviceActionResult
-description: Результат действия, касающегося устройства
-localization_priority: Normal
+description: Результат действия с устройством
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 518d0d09d7ef4f9fea67ce8d600f97be0345fa63
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4c435241056f5e29166355829d1c40438b525a92
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404710"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151431"
 ---
 # <a name="deviceactionresult-resource-type"></a>Тип ресурса deviceActionResult
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Результат действия, касающегося устройства
 

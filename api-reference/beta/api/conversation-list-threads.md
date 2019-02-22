@@ -4,12 +4,12 @@ description: Получение всех цепочек в групповой б
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: bdef7c4a5fe6d28772cff5ed0f286065595e1088
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0b4aba1fd9018c95f2067605b07c0f73d6f02e3f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519404"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153881"
 ---
 # <a name="list-threads"></a>Список цепочек
 
@@ -25,7 +25,7 @@ ms.locfileid: "29519404"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Group.Read.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All, Group.Read.All |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,7 +40,7 @@ GET /groups/{id}/conversations/{id}/threads
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -56,8 +56,7 @@ GET /groups/{id}/conversations/{id}/threads
 GET https://graph.microsoft.com/beta/groups/{id}/conversations/{id}/threads
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

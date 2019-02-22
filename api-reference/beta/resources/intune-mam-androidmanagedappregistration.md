@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса androidManagedAppRegistration
 description: Представляет собой сведения о синхронизации управляемого приложения Android для определенного пользователя. Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 627de31a0d51aea6f91a10adf9c2cfb3da95b588
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 74e86b2218d40b46da161a0faf49f15c5118bc5b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395540"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148106"
 ---
 # <a name="androidmanagedappregistration-resource-type"></a>Тип ресурса androidManagedAppRegistration
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет собой сведения о синхронизации управляемого приложения Android для определенного пользователя.
 Ресурс ManagedAppRegistration представляет собой сведения об управляемом приложении, используемом членом организации.
@@ -27,7 +27,7 @@ ms.locfileid: "29395540"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление androidManagedAppRegistrations](../api/intune-mam-androidmanagedappregistration-list.md)|Коллекция [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Список свойств и связей объектов [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
-|[Получение androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-get.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Считывание свойств и связей объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
+|[Получение androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-get.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md);|Считывание свойств и связей объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
 |[Создание androidManagedAppRegistration](../api/intune-mam-androidmanagedappregistration-create.md)|[androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md)|Создание нового объекта [androidManagedAppRegistration](../resources/intune-mam-androidmanagedappregistration.md).|
 
 ## <a name="properties"></a>Свойства
@@ -41,16 +41,16 @@ ms.locfileid: "29395540"
 |deviceType|String|Тип главного устройства. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceTag|String|Тег, который создан с использованием пакета SDK для управления приложениями и помогает связывать приложения, размещенные на одном устройстве. Мы не гарантируем, что приложения будут связаны во всех состояниях. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |deviceName|String|Имя устройства узла. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|managedDeviceId|String|Управляемые устройства идентификатор устройства узла. Значение может быть пустой, даже в том случае, если управляемые устройства узла. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|azureADDeviceId|String|Идентификатор Azure Active Directory устройства устройства узла. Значение может быть пустым, даже в том случае, если устройство узла — это Azure Active Directory зарегистрирован. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|deviceModel|String|Модель устройства для текущего приложения регистрация Inherited [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|deviceManufacturer|String|Производитель устройства для текущего приложения регистрация Inherited [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
-|flaggedReasons|[managedAppFlaggedReason](../resources/intune-mam-managedappflaggedreason.md) коллекции|Причины, по которым помечается регистрация приложения (если они есть). Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|Манажеддевицеид|String|Управляемый идентификатор устройства хоста. Значение может быть пустым, даже если ведущее устройство управляется. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|azureADDeviceId|String|Идентификатор устройства Azure Active Directory ведущего устройства. Значение может быть пустым, даже если ведущее устройство является зарегистрированным Azure Active Directory. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|deviceModel|String|Модель устройства для текущей регистрации приложения наСледуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|Девицемануфактурер|String|Производитель устройства для текущей регистрации приложения, унаследованный от [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|flaggedReasons|Коллекция [манажедаппфлагжедреасон](../resources/intune-mam-managedappflaggedreason.md)|Причины, по которым помечается регистрация приложения (если они есть). Пример: приложение запускается на рутованном устройстве. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |userId|String|ИД пользователя, к которому относится эта регистрация приложения. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
 |appIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Идентификатор пакета приложения. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|id|String|Ключ объекта. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|version|String|Версия объекта. Наследуется от [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
-|patchVersion|String|Версия исправления для текущей регистрации приложения для android|
+|id|String|Ключ объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|version|Строка|Версия объекта. Наследуется от объекта [managedAppRegistration](../resources/intune-mam-managedappregistration.md).|
+|Патчверсион|String|Версия исправления для текущей регистрации приложений Android|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|

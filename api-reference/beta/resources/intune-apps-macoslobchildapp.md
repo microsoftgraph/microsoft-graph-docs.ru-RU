@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса macOSLobChildApp
-description: Содержит свойства MacOS бизнес-приложения в пакете пакета
-localization_priority: Normal
+title: Тип ресурса Макослобчилдапп
+description: Содержит свойства бизнес-приложения MacOS в пакете набора
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6a8cafc0f9b47f40fe7e922130a41d37a427e5e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f4bf8a8715bb681d1737a2fb1b39e5bac61fb9d7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147000"
 ---
-# <a name="macoslobchildapp-resource-type"></a>Тип ресурса macOSLobChildApp
+# <a name="macoslobchildapp-resource-type"></a>Тип ресурса Макослобчилдапп
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства MacOS бизнес-приложения в пакете пакета
+Содержит свойства бизнес-приложения MacOS в пакете набора
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |bundleId|String|Имя удостоверения.|
-|buildNumber|String|Номер построения строки MacOS бизнес-приложения.|
-|versionNumber|String|Номер версии строки MacOS бизнес-приложения.|
+|buildNumber|String|Номер сборки бизнес-приложения MacOS бизнес (LoB).|
+|versionNumber|String|Номер версии приложения MacOS для бизнеса (LoB).|
 
 ## <a name="relationships"></a>Отношения
 Нет

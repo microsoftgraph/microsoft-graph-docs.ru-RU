@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса windowsKioskUWPApp
-description: Базовый класс для типов приложений
-localization_priority: Normal
+title: Тип ресурса Виндовскиоскувпапп
+description: Базовый класс для типа приложений
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7ba5367721890f02af3b348ad469b15024de4800
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1dbaf8dfd7f2cd488de37378f934ca3f31daedd6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392684"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147329"
 ---
-# <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса windowsKioskUWPApp
+# <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса Виндовскиоскувпапп
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Базовый класс для типов приложений
+Базовый класс для типа приложений
 
 
-Наследуется от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)
+НаСледуется от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|startLayoutTileSize|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитку приложение для макета Пуск унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
-|name|String|Представляет понятное имя приложения унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md)|
-|Тип|[windowsKioskAppType](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения унаследованные от [windowsKioskAppBase](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|appUserModelId|String|Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска|
-|appId|String|Это ссылается на Intune приложения, который будет целевой для те же назначения как базовой конфигурации|
-|containedAppId|String|Это ссылается автономные приложения из приложения для Intune|
+|Стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета, унаследованного от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
+|name|String|Представляет понятное имя приложения, наСледуемого от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
+|Тип|[Виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наСледуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
+|Модели|String|Это единственный идентификатор пользовательской модели приложения (AUMID), который будет доступен для запуска в режиме киоска|
+|appId|String|Это указывает на приложение Intune, которое будет нацелено на те же назначения, что и настройка киоска|
+|Контаинедаппид|String|Это указывает на автономное приложение из приложения Intune|
 
 ## <a name="relationships"></a>Отношения
 Нет

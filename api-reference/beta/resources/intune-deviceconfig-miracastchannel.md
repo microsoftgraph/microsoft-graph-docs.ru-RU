@@ -1,48 +1,48 @@
 ---
-title: Тип перечисления miracastChannel
-description: Возможные значения для Miracast канала.
-localization_priority: Normal
+title: тип перечисления Миракастчаннел
+description: Возможные значения для канала Miracast.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b516a0e5e54737c0857aba137be3614cecd60292
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0527aac2e78c7abdbc9f816f2a16d549f781947e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405004"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148876"
 ---
-# <a name="miracastchannel-enum-type"></a>Тип перечисления miracastChannel
+# <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для Miracast канала.
+Возможные значения для канала Miracast.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|User Defined, значение по умолчанию, без цели.|
-|one|1|Один.|
-|two|2|Два.|
-|three|3|Три.|
+|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
+|one|1,1|Один.|
+|two|2|2.|
+|three|4|Трёх.|
 |four|4|Четыре.|
-|пять|5|Пять.|
-|Шесть|6|Шесть.|
-|Семь|7|7.|
-|Восемь|8|8.|
-|Девять|9|9.|
-|Десять|10|Десять.|
-|Одиннадцать|11|Одиннадцать.|
-|thirtySix|36|30-6.|
+|пять|17:00|Следующих.|
+|Шесть|6|Шест.|
+|Семь|7|Неделю.|
+|Восемь|8,5|Основными.|
+|Девять|10|9.|
+|Десять|десяти|Раз.|
+|Eleven|-11:00|Eleven.|
+|Сиртисикс|36|36.|
 |40|40|40.|
-|fortyFour|44|Сорока четырех.|
-|fortyEight|48|40-8.|
-|oneHundredFortyNine|149|OneHundredForty 9.|
-|oneHundredFiftyThree|153|Три OneHundredFifty.|
-|oneHundredFiftySeven|157|OneHundredFifty 7.|
-|oneHundredSixtyOne|161|Один OneHundredSixty.|
-|oneHundredSixtyFive|165|Пять OneHundredSixty.|
+|Фортифаур|44|44.|
+|Фортеигхт|48|48.|
+|Онехундредфортинине|149|Онехундредфорти — девять.|
+|Онехундредфифтисри|153|Онехундредфифти — три.|
+|Онехундредфифтисевен|157|Онехундредфифти — семь.|
+|Онехундредсикстйоне|161|Онехундредсиксти — один.|
+|Онехундредсикстифиве|165|Онехундредсиксти — пять.|
 
 
 

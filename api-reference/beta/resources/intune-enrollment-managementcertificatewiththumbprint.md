@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса managementCertificateWithThumbprint
+title: Тип ресурса Манажементцертификатевиссумбпринт
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 765d3b9370e4b0f5eda481883956c72bf261e65a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 36adab8de1cebe884f6932e2a99b3aba9174d518
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418857"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151263"
 ---
-# <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса managementCertificateWithThumbprint
+# <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса Манажементцертификатевиссумбпринт
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|отпечаток|String|Отпечаток сертификата, управление|
-|certificate|String|Управление сертификат кодировке Base 64|
+|отпечаток|String|Отпечаток сертификата управления|
+|certificate|String|Сертификат управления Base 64 с шифрованием|
 
 ## <a name="relationships"></a>Отношения
 Нет

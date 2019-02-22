@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления deviceManagementExchangeConnectorStatus
-description: Текущее состояние соединителя Exchange.
-localization_priority: Normal
+title: тип перечисления Девицеманажементексчанжеконнекторстатус
+description: Текущее состояние соединителя Exchange Connector.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 16181c49b05c74ef680f456b4bffd11b435299fb
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: acfb4bccf0cbf9a2fc7b1074c119ac2f9c74855f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29397773"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149814"
 ---
-# <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>Тип перечисления deviceManagementExchangeConnectorStatus
+# <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Текущее состояние соединителя Exchange.
+Текущее состояние соединителя Exchange Connector.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Не соединитель отсутствует.|
-|connectionPending|1|Ожидание подключения в среду Exchange.|
-|подключение|2|Подключения к среде Exchange|
-|отключен|3|Отключение от среды Exchange|
+|Нет|нуль|Соединитель не существует.|
+|Коннектионпендинг|1,1|Ожидание подключения к среде Exchange.|
+|присоединен|2|Подключение к среде Exchange|
+|подключения|4|Отключено от среды Exchange|
 
 
 

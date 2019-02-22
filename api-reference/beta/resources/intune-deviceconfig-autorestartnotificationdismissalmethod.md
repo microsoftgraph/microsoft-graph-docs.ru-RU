@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления autoRestartNotificationDismissalMethod
-description: Метод увольнение Auto требуется перезагрузка уведомления
-localization_priority: Normal
+title: тип перечисления Ауторестартнотификатиондисмиссалмесод
+description: Метод увольнения уведомления о необходимости автоматического перезапуска
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 41201fdf6b1c8484ecb808d3d8e0a2e069dededd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 49d09923bcd0648b225666937820f86f4a73525f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393132"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151606"
 ---
-# <a name="autorestartnotificationdismissalmethod-enum-type"></a>Тип перечисления autoRestartNotificationDismissalMethod
+# <a name="autorestartnotificationdismissalmethod-enum-type"></a>тип перечисления Ауторестартнотификатиондисмиссалмесод
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метод увольнение Auto требуется перезагрузка уведомления
+Метод увольнения уведомления о необходимости автоматического перезапуска
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен|
-|Автоматически|1|Увольнение Auto|
+|notConfigured|нуль|Не настроено|
+|Автоматически|1,1|Автоматическое закрытие|
 |user|2|Увольнение пользователей|
 
 

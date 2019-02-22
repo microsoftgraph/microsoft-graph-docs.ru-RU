@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidManagedStoreAccountBindStatus
-description: Привязка состояния клиента с помощью API EMM Google
-localization_priority: Normal
+title: тип перечисления Андроидманажедстореаккаунтбиндстатус
+description: Состояние BIND клиента с помощью API Google EMM
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03e45104379dba72d5aa72a1b78667d5d2504db0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76f80f03d2a91b831542b113f552e14f6e8c9b41
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424926"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151991"
 ---
-# <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>Тип перечисления androidManagedStoreAccountBindStatus
+# <a name="androidmanagedstoreaccountbindstatus-enum-type"></a>тип перечисления Андроидманажедстореаккаунтбиндстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Привязка состояния клиента с помощью API EMM Google
+Состояние BIND клиента с помощью API Google EMM
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notBound|0|Н/Д|
-|bound (привязка)|1|Н/Д|
-|boundAndValidated|2|Н/Д|
-|Отмена привязки|3|Н/Д|
+|Нотбаунд|нуль|Н/Д|
+|bound (привязка)|1,1|Н/Д|
+|Баундандвалидатед|2|Н/Д|
+|Отмена привязки|4|Н/Д|
 
 
 

@@ -1,28 +1,28 @@
 ---
-title: Тип перечисления managedAppDataStorageLocation
-description: Места хранения, где управляемых приложений могут потенциально хранят свои данные
-localization_priority: Normal
+title: тип перечисления Манажедаппдатасторажелокатион
+description: Места хранения, в которых управляемые приложения потенциально могут хранить свои данные
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: acb9c820670cdf0781de0be576152f25c2a131db
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cd1031027f1a2d7c21acff4781484be79f7183fb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395778"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148552"
 ---
-# <a name="managedappdatastoragelocation-enum-type"></a>Тип перечисления managedAppDataStorageLocation
+# <a name="managedappdatastoragelocation-enum-type"></a>тип перечисления Манажедаппдатасторажелокатион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Места хранения, где управляемых приложений могут потенциально хранят свои данные
+Места хранения, в которых управляемые приложения потенциально могут хранить свои данные
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|oneDriveForBusiness|1|OneDrive для бизнеса|
+|Онедривефорбусинесс|1,1|OneDrive для бизнеса|
 |sharePoint|2|SharePoint|
 |localStorage|6|Локальное хранилище на устройстве|
 

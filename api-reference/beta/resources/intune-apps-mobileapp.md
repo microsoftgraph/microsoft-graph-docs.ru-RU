@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса mobileApp
 description: Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0e1e68ede0e4beef689d753aca9af8292812d64c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 94481902b7038ab9de9c845c938aac9bc9d409b9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408336"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154924"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
 
@@ -25,15 +25,15 @@ ms.locfileid: "29408336"
 |[Список mobileApps](../api/intune-apps-mobileapp-list.md)|Коллекция [mobileApp](../resources/intune-apps-mobileapp.md)|Список свойств и связей объектов [mobileApp](../resources/intune-apps-mobileapp.md).|
 |[Получение объекта mobileApp](../api/intune-apps-mobileapp-get.md)|[mobileApp](../resources/intune-apps-mobileapp.md)|Чтение свойств и связей объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |[assign action](../api/intune-apps-mobileapp-assign.md)|Нет|Н/Д|
-|[функция getMobileAppCount](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|Н/Д|
-|[функция getTopMobileApps](../api/intune-apps-mobileapp-gettopmobileapps.md)|Коллекция [mobileApp](../resources/intune-apps-mobileapp.md)|Н/Д|
+|[Функция getMobileAppCount](../api/intune-apps-mobileapp-getmobileappcount.md)|Int64|Н/Д|
+|[Функция getTopMobileApps](../api/intune-apps-mobileapp-gettopmobileapps.md)|Коллекция [mobileApp](../resources/intune-apps-mobileapp.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|String|Администратор предоставил или импортировал название приложения.|
-|description|String|Описание приложения.|
+|description|Строка|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
@@ -44,10 +44,10 @@ ms.locfileid: "29408336"
 |owner|String|Владелец приложения.|
 |developer|String|Разработчик приложения.|
 |notes|String|Примечания к приложению.|
-|uploadState|Int32|Состояние передачи.|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы.|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения.|
+|uploadState|Int32|Состояние отправки.|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе.|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
@@ -55,8 +55,8 @@ ms.locfileid: "29408336"
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения.|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Сводка по установке мобильного приложения.|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения.|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения.|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения.|
+|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -1,35 +1,35 @@
 ---
-title: Тип перечисления androidRequiredPasswordType
-description: Тип Android пароль.
-localization_priority: Normal
+title: тип перечисления Андроидрекуиредпассвордтипе
+description: Требуемый тип пароля для Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eebc6b0ad6eed346927fd48a2dc1f82b5e529b28
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1845656d43ec2a8f567506ed61b5ee3bc6d8a9ad
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392915"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151522"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>Тип перечисления androidRequiredPasswordType
+# <a name="androidrequiredpasswordtype-enum-type"></a>тип перечисления Андроидрекуиредпассвордтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип Android пароль.
+Требуемый тип пароля для Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|к буквам и цифрам|1|К буквам и цифрам пароль.|
-|буквенно-цифровые;|2|Буквенно-цифровой пароль.|
-|alphanumericWithSymbols|3|Буквы или цифры с символы пароль.|
-|lowSecurityBiometric|4|Биометрия низкой безопасности на основе пароль.|
-|числовое|5|Числовой пароль.|
-|numericComplex|6|Числовой сложный пароль.|
-|любой|7|Пароль или шаблон является обязательным, а какие-либо допустима.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|буквы|1,1|Необходим алфавитный пароль.|
+|буквенно-цифровые;|2|Необходимо указать буквенно-цифровой пароль.|
+|Алфанумериквиссимболс|4|Требуются буквенно-цифровые символы с паролем.|
+|Ловсекуритибиометрик|4|Необходим пароль на основе биометрического уровня безопасности.|
+|числовых|17:00|Необходим числовой пароль.|
+|Нумериккомплекс|6|Необходим числовой сложный пароль.|
+|любой|7|Необходим пароль или шаблон, а любой из них приемлем.|
 
 
 

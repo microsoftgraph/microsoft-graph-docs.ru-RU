@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления edgeSearchEngineType
-description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
-localization_priority: Normal
+title: тип перечисления Еджесеарченгинетипе
+description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d4a0e8dc580d7dc173bdc97b875f6d62a755afbc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eea8310d26e5b89e068efc927835b437423a1d8b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425717"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150164"
 ---
-# <a name="edgesearchenginetype-enum-type"></a>Тип перечисления edgeSearchEngineType
+# <a name="edgesearchenginetype-enum-type"></a>тип перечисления Еджесеарченгинетипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
+Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|по умолчанию|0|Назначение средство поиска по умолчанию на рынке пользователя может иметь значения фабрики пограничного транспортного сервера|
-|Bing|1|Задает Bing как средство поиска по умолчанию|
+|по умолчанию|нуль|Использует заводские настройки поГраничного сервера, чтобы назначить поисковую систему по умолчанию для рынка пользователей|
+|Bing|1,1|Устанавливает Bing как поисковую систему по умолчанию|
 
 
 

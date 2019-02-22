@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления officeUpdateChannel
-description: Перечисление для указания канала обновлений Office 365.
-localization_priority: Normal
+title: тип перечисления Оффицеупдатечаннел
+description: ПереЧисление, указывающее канал обновлений Office365.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3bf761eafbf04085e20dbd0018cfdf1e8c25abc7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 62b91cc33ecce517015e7070caacd4dab8b9fbcf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396660"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147861"
 ---
-# <a name="officeupdatechannel-enum-type"></a>Тип перечисления officeUpdateChannel
+# <a name="officeupdatechannel-enum-type"></a>тип перечисления Оффицеупдатечаннел
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Перечисление для указания канала обновлений Office 365.
+ПереЧисление, указывающее канал обновлений Office365.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Н/Д|
-|текущий|1|Н/Д|
-|отложенное|2|Н/Д|
-|firstReleaseCurrent|3|Н/Д|
+|Нет|нуль|Н/Д|
+|этой|1,1|Н/Д|
+|deferred|2|Н/Д|
+|Firstreleasecurrent —|4|Н/Д|
 |firstReleaseDeferred|4|Н/Д|
 
 

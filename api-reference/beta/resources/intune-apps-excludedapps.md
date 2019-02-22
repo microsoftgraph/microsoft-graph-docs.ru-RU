@@ -1,40 +1,40 @@
 ---
-title: Тип ресурса excludedApps
-description: Содержит свойства для исключенных приложений Office 365.
-localization_priority: Normal
+title: Тип ресурса Excludedapps к объекту
+description: Содержит свойства исключенных приложений Office365.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d3cd9a159597689a64070181640415a6ce2fc61
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395680"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154028"
 ---
-# <a name="excludedapps-resource-type"></a>Тип ресурса excludedApps
+# <a name="excludedapps-resource-type"></a>Тип ресурса Excludedapps к объекту
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для исключенных приложений Office 365.
+Содержит свойства исключенных приложений Office365.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Access|Логический|Значение для Если MS Office Access следует исключить или нет.|
-|в приложении Excel|Логический|Значение для Если MS Office Excel следует исключить или нет.|
-|Groove|Логический|Значение для Если MS Office OneDrive для бизнеса - Groove следует исключить или нет.|
-|infoPath|Логический|Значение для Если MS Office InfoPath следует исключить или нет.|
-|Lync|Логический|Значение для Если Скайп MS Office для бизнес - Lync следует исключить или нет.|
-|oneDrive|Логический|Значение для Если MS Office OneDrive следует исключить или нет.|
-|oneNote|Логический|Значение для Если MS Office OneNote следует исключить или нет.|
-|Outlook|Логический|Значение для Если MS Office Outlook следует исключить или нет.|
-|powerPoint|Логический|Значение для Если MS Office PowerPoint следует исключить или нет.|
-|publisher|Логический|Значение для Если MS Office Publisher следует исключить или нет.|
-|sharePointDesigner|Логический|Значение для Если MS Office SharePointDesigner следует исключить или нет.|
-|visio|Логический|Значение для Если MS Office Visio следует исключить или нет.|
-|Word|Логический|Значение для Если MS Office Word следует исключить или нет.|
+|обращения|Логический|Значение, если доступ к MS Office должен быть исключен или нет.|
+|невозможно|Логический|Значение, заДанное в поле IF MS Office Excel, не должно быть исключено.|
+|тень|Логический|Значение, которое должно быть исключено, если MS Office OneDrive для бизнеса — Groove.|
+|infoPath|Логический|Значение, если MS Office InfoPath следует исключить.|
+|Lync|Логический|Значение, если MS Office Skype для бизнеса — не следует исключать.|
+|oneDrive|Логический|Значение, которое должно быть исключено, если MS Office OneDrive должен быть исключен.|
+|Microsoft|Логический|Значение, если MS Office OneNote должен быть исключен или нет.|
+|outlook|Логический|Значение, если MS Office Outlook следует исключить из проверки.|
+|powerPoint|Логический|Значение, если MS Office PowerPoint следует исключить из проверки.|
+|publisher|Логический|Значение, если MS Office Publisher должен быть исключен или нет.|
+|Шарепоинтдесигнер|Логический|Значение для параметра if MS Office Шарепоинтдесигнер должно быть исключено или нет.|
+|visio|Логический|Значение, заДанное для if MS Office Visio, должно быть исключено.|
+|текстовых|Логический|Значение, заДанное для if MS Office Word, должно быть исключено.|
 
 ## <a name="relationships"></a>Отношения
 Нет

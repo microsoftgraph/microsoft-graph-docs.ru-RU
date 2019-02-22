@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса managedDeviceCleanupSettings
-description: Определение правила, когда администратор хочет устройств, чтобы очистить.
-localization_priority: Normal
+title: Тип ресурса Манажеддевицеклеанупсеттингс
+description: Определите правило, когда администратор хочет очистить устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bf756072dcc3cd13bda2fda59b8688b63f3cd43
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76abaf4cb06156881a530d50e3322e649eedde51
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424569"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148484"
 ---
-# <a name="manageddevicecleanupsettings-resource-type"></a>Тип ресурса managedDeviceCleanupSettings
+# <a name="manageddevicecleanupsettings-resource-type"></a>Тип ресурса Манажеддевицеклеанупсеттингс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определение правила, когда администратор хочет устройств, чтобы очистить.
+Определите правило, когда администратор хочет очистить устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceInactivityBeforeRetirementInDays|String|Количество дней, когда устройство имеет не связаться с Intune.|
+|Девицеинактивитибефореретирементиндайс|String|Количество дней, когда устройство не связывалось с Intune.|
 
 ## <a name="relationships"></a>Отношения
 Нет

@@ -1,25 +1,25 @@
 ---
 title: Действие setAndroidDeviceOwnerFullyManagedEnrollmentState
-description: Задает AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled в заданное значение.
-localization_priority: Normal
+description: Задает для ресурса androidmanagedstoreaccountenterprisesettings Андроиддевицеовнерфуллиманажеденроллментенаблед заданное значение.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 840c4a3781a993648abb77ad46f1967073c1b3e8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9a2517b59705ae8f46294b521aa5132c8bd8b1f4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430875"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148918"
 ---
 # <a name="setandroiddeviceownerfullymanagedenrollmentstate-action"></a>Действие setAndroidDeviceOwnerFullyManagedEnrollmentState
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Задает AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled в заданное значение.
+Задает для ресурса androidmanagedstoreaccountenterprisesettings Андроиддевицеовнерфуллиманажеденроллментенаблед заданное значение.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -51,7 +51,7 @@ POST /deviceManagement/androidManagedStoreAccountEnterpriseSettings/setAndroidDe
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|enabled|Логический|Значение, которое присвоено значение AndroidDeviceOwnerFullyManagedEnrollmentEnabled.|
+|enabled|Логический|Значение, с которым устанавливается Андроиддевицеовнерфуллиманажеденроллментенаблед.|
 
 
 
@@ -73,8 +73,8 @@ Content-length: 23
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```

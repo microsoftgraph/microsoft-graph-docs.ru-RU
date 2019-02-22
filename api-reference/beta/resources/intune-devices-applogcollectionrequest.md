@@ -1,42 +1,42 @@
 ---
 title: Тип ресурса appLogCollectionRequest
-description: AppLogCollectionRequest сущности.
-localization_priority: Normal
+description: Объект AppLogCollectionRequest.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 795b80b0194f2c3a1d314cbb317af954fb675063
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ed0512340431be0456ebbbc5a3bffbb2713fda89
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431708"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30151704"
 ---
 # <a name="applogcollectionrequest-resource-type"></a>Тип ресурса appLogCollectionRequest
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-AppLogCollectionRequest сущности.
+Объект AppLogCollectionRequest.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список appLogCollectionRequests](../api/intune-devices-applogcollectionrequest-list.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) коллекции|Свойства списка и связей объектов [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
-|[Получение appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Чтение свойства и связи объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[Список Апплогколлектионрекуестс](../api/intune-devices-applogcollectionrequest-list.md)|Коллекция [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Список свойств и связей объектов [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[Получение appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-get.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Чтение свойств и связей объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
 |[Создание appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-create.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Создание нового объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
-|[Удаление appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|Нет|Удаляет [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).|
-|[Обновление appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Обновление свойства объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
+|[Удаление appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-delete.md)|Нет|Удаляет объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).|
+|[Обновление appLogCollectionRequest](../api/intune-devices-applogcollectionrequest-update.md)|[appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md)|Обновление свойств объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .|
 |[Действие createDownloadUrl](../api/intune-devices-applogcollectionrequest-createdownloadurl.md)|[appLogCollectionDownloadDetails](../resources/intune-devices-applogcollectiondownloaddetails.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. — Идентификатор userId_DeviceId_AppId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Статус отправки журнала. Возможные значения: `pending`, `completed`, `failed`.|
-|сообщение об ошибке|String|Сообщение об ошибке, если они существуют в процессе загрузки|
-|customLogFolders|Коллекция String|Список папок, журнала. |
-|completedDateTime|DateTimeOffset|Время, в которой запроса журнала загрузки связаться с вами состоянии|
+|id|String|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
+|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Кустомлогфолдерс|Коллекция строк|Список папок журналов. |
+|completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
 ## <a name="relationships"></a>Отношения
 Нет

@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса deviceProtectionOverview
-description: Сведения об оборудовании данного устройства.
-localization_priority: Normal
+title: Тип ресурса Девицепротектионовервиев
+description: Сведения об оборудовании для данного устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 902e3a6062d2aa50c96c27eb9d542905bf9a029d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2d6cd5cc1eef939476a6fa3b5c46a7cfa315607b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418990"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154091"
 ---
-# <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса deviceProtectionOverview
+# <a name="deviceprotectionoverview-resource-type"></a>Тип ресурса Девицепротектионовервиев
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сведения об оборудовании данного устройства.
+Сведения об оборудовании для данного устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|totalReportedDeviceCount|Int32|Счетчик общее устройства.|
-|inactiveThreatAgentDeviceCount|Int32|Устройства со счетчиком агента неактивных угроз|
-|unknownStateThreatAgentDeviceCount|Int32|Устройство с состоянием агента угроз, как число неизвестно.|
-|pendingSignatureUpdateDeviceCount|Int32|Устройство со старой счетчиком подписи.|
-|cleanDeviceCount|Int32|Счетчик чистой устройства.|
-|pendingFullScanDeviceCount|Int32|Счетчик устройства ожидающие полную проверку.|
-|pendingRestartDeviceCount|Int32|Счетчик отложенная перезагрузка устройства.|
-|pendingManualStepsDeviceCount|Int32|Счетчик устройства ожидающие ручные операции.|
-|pendingOfflineScanDeviceCount|Int32|Число ожидающих автономной проверки устройства.|
-|criticalFailuresDeviceCount|Int32|Счетчик устройства критические ошибки.|
+|Тоталрепортеддевицекаунт|Int32|Общее количество устройств.|
+|Инактивесреатажентдевицекаунт|Int32|Устройство с неактивным числом агентов угроз|
+|Ункновнстатесреатажентдевицекаунт|Int32|Устройство с состоянием агента угроз "неизвестное количество".|
+|Пендингсигнатуреупдатедевицекаунт|Int32|Устройство со старым количеством подписей.|
+|Клеандевицекаунт|Int32|Очистка числа устройств.|
+|Пендингфуллскандевицекаунт|Int32|Количество устройств, ожидающих полного сканирования.|
+|Пендингрестартдевицекаунт|Int32|Количество устройств, ожидающих перезапуска.|
+|Пендингмануалстепсдевицекаунт|Int32|Количество устройств, ожидающих действий, выполняемых вручную.|
+|Пендингоффлинескандевицекаунт|Int32|Количество устройств, ожидающих автономной проверки.|
+|Критикалфаилуресдевицекаунт|Int32|Количество устройств критических сбоев.|
 
 ## <a name="relationships"></a>Отношения
 Нет
