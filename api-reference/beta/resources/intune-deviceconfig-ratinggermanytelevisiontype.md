@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления ratingGermanyTelevisionType
-description: Метки TV оценки содержимого в Германии
-localization_priority: Normal
+title: тип перечисления Ратингжерманителевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9bbe383b13e5a6f3d9ec704977b284eaf740aed
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5efdbf5f9bd9aa3d29c366a0e3769aa29b6f411c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424618"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158144"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a>Тип перечисления ratingGermanyTelevisionType
+# <a name="ratinggermanytelevisiontype-enum-type"></a>тип перечисления Ратингжерманителевисионтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки TV оценки содержимого в Германии
+Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
-|allBlocked|1|Не допускайте использование Любого показывает контента|
-|Общие|2|Jahren AB 0, без ограничения срока хранения|
-|agesAbove6|3|Лет AB 6 Jahren, 6 и старые|
-|agesAbove12|4|AB 12 Jahren, лет 12 и старые|
-|agesAbove16|5|AB 16 Jahren, лет 16 и старые|
-|для взрослых|6|Jahren 18 AB, только для взрослых|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
+|Аллблоккед|1,1|Не разрешать показ контента|
+|обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
+|agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
+|agesAbove12|4|AB 12 Жахрен, от 12 лет до 12 лет|
+|agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
+|взрослые|6|Только для Жахрен, только для взрослых|
 
 
 

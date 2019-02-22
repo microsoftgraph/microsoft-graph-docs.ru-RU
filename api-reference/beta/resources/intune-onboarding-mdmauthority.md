@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления mdmAuthority
+title: тип перечисления Мдмаусорити
 description: Центр управления мобильными устройствами.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2464e446b157c64e23dbf44783a50a4c491f0764
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 57d4b9de9dc5d77482e13d4d09686edf37a363e2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411066"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159432"
 ---
-# <a name="mdmauthority-enum-type"></a>Тип перечисления mdmAuthority
+# <a name="mdmauthority-enum-type"></a>тип перечисления Мдмаусорити
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Центр управления мобильными устройствами.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестно|
-|Intune|1|Intune|
+|unknown|нуль|Неизвестно|
+|корпоративного|1,1|Intune|
 |SCCM|2|SCCM|
-|Office 365|3|Office 365|
+|Office365|4|Office365|
 
 
 

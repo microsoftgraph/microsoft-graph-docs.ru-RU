@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления androidVpnConnectionType
-description: Android тип подключения через VPN.
-localization_priority: Normal
+title: тип перечисления Androidvpnconnectiontype.
+description: Тип VPN-подключения Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 84e4100e04613119d4dd7ab4dce85eecd715f08f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 430ec2beaf0bdc4ff05fb077bf7d23c19a735495
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407671"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159957"
 ---
-# <a name="androidvpnconnectiontype-enum-type"></a>Тип перечисления androidVpnConnectionType
+# <a name="androidvpnconnectiontype-enum-type"></a>тип перечисления Androidvpnconnectiontype.
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Android тип подключения через VPN.
+Тип VPN-подключения Android.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1|Обеспечение безопасной Pulse.|
-|f5EdgeClient|2|F5 Клиент пограничного сервера.|
-|dellSonicWallMobileConnect|3|Подключение мобильного устройства SonicWALL Dell.|
-|checkPointCapsuleVpn|4|Проверьте точку капсула VPN.|
-|Citrix|5|Citrix|
+|Цискоаниконнект|нуль|Cisco Аниконнект.|
+|Пулсесекуре|1,1|Безопасный импульс.|
+|f5EdgeClient|2|ПоГраничный клиент F5.|
+|Деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
+|Чеккпоинткапсулевпн|4|Проверка поКапсулы VPN.|
+|клиентов|17:00|Клиентов|
 
 
 

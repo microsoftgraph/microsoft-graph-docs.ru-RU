@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidForWorkDefaultAppPermissionPolicyType
-description: Тип политики разрешений приложения по умолчанию Android для работы.
-localization_priority: Normal
+title: тип перечисления Андроидфорворкдефаултапппермиссионполицитипе
+description: Тип политики разрешений по умолчанию для приложений Android для рабочих приложений.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb815b18bb6f12d6e9a27c66993aa59193495d6c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 08285d504b5d022a5154c58082530b94b1cf9ee0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421979"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157213"
 ---
-# <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidForWorkDefaultAppPermissionPolicyType
+# <a name="androidforworkdefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидфорворкдефаултапппермиссионполицитипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип политики разрешений приложения по умолчанию Android для работы.
+Тип политики разрешений по умолчанию для приложений Android для рабочих приложений.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|строки|1|Запрос.|
-|autoGrant|2|Автоматическое предоставление.|
-|autoDeny|3|Запрещать автоматически.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|появляется|1,1|Появляется.|
+|автоПредоставление|2|Автоматическое предоставление.|
+|автоЗапрет|4|Автоматическое отклонение.|
 
 
 

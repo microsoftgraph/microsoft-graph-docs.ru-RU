@@ -1,25 +1,25 @@
 ---
-title: Список ndesConnectors
-description: Свойства списка и связей объектов ndesConnector.
-localization_priority: Normal
+title: Список Ндесконнекторс
+description: Список свойств и связей объектов Ндесконнектор.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52da3f3cf0936a13cc210c4be4092d24dd5b6317
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 90ec5bf0a02f3b4ceb58dc0a27ecfecea14d8f7e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402414"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160384"
 ---
-# <a name="list-ndesconnectors"></a>Список ndesConnectors
+# <a name="list-ndesconnectors"></a>Список Ндесконнекторс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Свойства списка и связей объектов [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) .
+Список свойств и связей объектов [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,15 +40,15 @@ GET /deviceManagement/ndesConnectors
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [ndesConnector](../resources/intune-deviceconfig-ndesconnector.md) в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/ndesConnectors
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

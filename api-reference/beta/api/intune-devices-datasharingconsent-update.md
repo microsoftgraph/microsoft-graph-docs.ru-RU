@@ -1,25 +1,25 @@
 ---
-title: Обновление dataSharingConsent
-description: Обновление свойства объекта dataSharingConsent.
-localization_priority: Normal
+title: Обновление Даташарингконсент
+description: Обновление свойств объекта Даташарингконсент.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 143e2c655adac2403f49bb92afff2aca30a3653f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 42be19a02b5839023a76568a1457df105036c4de
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421118"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157997"
 ---
-# <a name="update-datasharingconsent"></a>Обновление dataSharingConsent
+# <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
+Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,24 +45,24 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .
+В тексте запроса добавьте представление объекта [Даташарингконсент](../resources/intune-devices-datasharingconsent.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).
+В следующей таблице приведены свойства, необходимые при создании [даташарингконсент](../resources/intune-devices-datasharingconsent.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|String|Отображаемое имя службы рабочих процессов|
-|termsUrl|String|TermsUrl для данных, общий доступ к согласия|
-|предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
-|grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|String|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|String|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|id|String|Идентификатор согласия общего доступа к данным|
+|Сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|Термсурл|String|Термсурл для согласия общего доступа к данным|
+|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|Грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
+|Грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|Грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -85,7 +85,7 @@ Content-length: 333
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

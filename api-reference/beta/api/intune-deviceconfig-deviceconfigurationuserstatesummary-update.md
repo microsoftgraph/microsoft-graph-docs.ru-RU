@@ -1,25 +1,25 @@
 ---
-title: Обновление deviceConfigurationUserStateSummary
-description: Обновление свойства объекта deviceConfigurationUserStateSummary.
-localization_priority: Normal
+title: Обновление Девицеконфигуратионусерстатесуммари
+description: Обновление свойств объекта Девицеконфигуратионусерстатесуммари.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 425ac4f2697363f92f61bdd627172fd074bf94b6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4be67e51768e82a9077fe52b718f7b747152e41e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420663"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159929"
 ---
-# <a name="update-deviceconfigurationuserstatesummary"></a>Обновление deviceConfigurationUserStateSummary
+# <a name="update-deviceconfigurationuserstatesummary"></a>Обновление Девицеконфигуратионусерстатесуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
+Обновление свойств объекта [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,25 +45,25 @@ PATCH /deviceManagement/deviceConfigurationUserStateSummaries
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) .
+В тексте запроса добавьте представление объекта [Девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
+В следующей таблице приведены свойства, необходимые при создании [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|unknownUserCount|Int32|Число неизвестным пользователям|
-|notApplicableUserCount|Int32|Число пользователей не применим|
-|compliantUserCount|Int32|Количество требованиям пользователей|
-|remediatedUserCount|Int32|Количество проверка пользователей|
-|nonCompliantUserCount|Int32|Количество несовместимой пользователей|
-|errorUserCount|Int32|Число пользователей об ошибках|
-|conflictUserCount|Int32|Число пользователей конфликта|
+|unknownUserCount|Int32|Количество неизвестных пользователей|
+|notApplicableUserCount|Int32|Количество неприменимых пользователей|
+|compliantUserCount|Int32|Число соответствующих пользователей|
+|remediatedUserCount|Int32|Количество исправленных пользователей|
+|nonCompliantUserCount|Int32|Количество неСоответствующих пользователей|
+|errorUserCount|Int32|Количество пользователей с ошибками|
+|conflictUserCount|Int32|Количество конфликтующих пользователей|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [девицеконфигуратионусерстатесуммари](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -87,7 +87,7 @@ Content-length: 275
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления certificateDestinationStore
-description: Возможные значения для назначения хранилище сертификатов.
-localization_priority: Normal
+title: тип перечисления Цертификатедестинатионсторе
+description: Возможные значения для хранилища назначения сертификатов.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0be59a4fb105c7bfc3662cf3f06fedba6903b635
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4a3e625ab3a1c2feaa2766ba120d59a9982b365a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403338"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156709"
 ---
-# <a name="certificatedestinationstore-enum-type"></a>Тип перечисления certificateDestinationStore
+# <a name="certificatedestinationstore-enum-type"></a>тип перечисления Цертификатедестинатионсторе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для назначения хранилище сертификатов.
+Возможные значения для хранилища назначения сертификатов.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|computerCertStoreRoot|0|Хранилище сертификатов - корневой.|
-|computerCertStoreIntermediate|1|Хранилище сертификатов - промежуточного.|
-|userCertStoreIntermediate|2|Хранилище сертификатов пользователя - промежуточного.|
+|Компутерцертсторерут|нуль|Хранилище сертификатов компьютера — корневой каталог.|
+|Компутерцертстореинтермедиате|1,1|Хранилище сертификатов компьютера — промежуточное хранилище.|
+|Усерцертстореинтермедиате|2|Хранилище сертификатов пользователей — промежуточный.|
 
 
 

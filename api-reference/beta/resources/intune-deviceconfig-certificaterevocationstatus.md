@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления certificateRevocationStatus
-description: Сертификат отозван.
-localization_priority: Normal
+title: тип перечисления Цертификатеревокатионстатус
+description: Состояние отзыва сертификата.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 373cb6247a695a5912d02d4fb1a353c40aeac581
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c182cf2317f185108570116a283973d481f17ab2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421972"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159446"
 ---
-# <a name="certificaterevocationstatus-enum-type"></a>Тип перечисления certificateRevocationStatus
+# <a name="certificaterevocationstatus-enum-type"></a>тип перечисления Цертификатеревокатионстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сертификат отозван.
+Состояние отзыва сертификата.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Не был отозван.|
-|Ожидание|1|Отзыва ожидающие.|
-|выдан|2|Отзыва команды.|
-|failed|3|Не удалось отзыва.|
-|отменено|4|Был отозван.|
+|Нет|нуль|Не отозван.|
+|закончен|1,1|Отзыв ожидается.|
+|опубликован|2|Выдана команда отзыва.|
+|failed|4|Не удалось выполнить отзыв.|
+|отозван|4|Отозван.|
 
 
 

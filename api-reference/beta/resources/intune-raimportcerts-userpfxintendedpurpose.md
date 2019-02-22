@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления userPfxIntendedPurpose
-description: Поддерживаемые значения по назначению сертификата PFX пользователя.
-localization_priority: Normal
+title: тип перечисления Усерпфксинтендедпурпосе
+description: Поддерживаемые значения для назначения сертификата пользователя PFX.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c67d831e3ebc1e96b7056eb8e42cbd485e1b081c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 858cd2ad98185c677236200c43ed09933e0300b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392936"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160713"
 ---
-# <a name="userpfxintendedpurpose-enum-type"></a>Тип перечисления userPfxIntendedPurpose
+# <a name="userpfxintendedpurpose-enum-type"></a>тип перечисления Усерпфксинтендедпурпосе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Поддерживаемые значения по назначению сертификата PFX пользователя.
+Поддерживаемые значения для назначения сертификата пользователя PFX.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|неназначенных|0|Н/Д|
-|smimeEncryption|1|Н/Д|
-|smimeSigning|2|Н/Д|
-|через VPN|4|Н/Д|
-|WiFi|8|Н/Д|
+|неназначенных|нуль|Н/Д|
+|Смиминкриптион|1,1|Н/Д|
+|Смимесигнинг|2|Н/Д|
+|виртуального|4|Н/Д|
+|подключений|8,5|Н/Д|
 
 
 

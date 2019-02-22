@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса androidForWorkApp
-description: Содержит свойства и свойства, наследуемые для Android для работы (AFW) приложения.
-localization_priority: Normal
+title: Тип ресурса Андроидфорворкапп
+description: Содержит свойства и унаследованные свойства для приложений Android для работы (АФВ).
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ce3736d256d4b5b20d1b19883d7f0781f386365
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 05abddaf19fd8a4717ac03ed505a479cfb8a675f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161518"
 ---
-# <a name="androidforworkapp-resource-type"></a>Тип ресурса androidForWorkApp
+# <a name="androidforworkapp-resource-type"></a>Тип ресурса Андроидфорворкапп
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и свойства, наследуемые для Android для работы (AFW) приложения.
+Содержит свойства и унаследованные свойства для приложений Android для работы (АФВ).
 
 
 Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).
@@ -25,18 +25,18 @@ ms.locfileid: "29400090"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список androidForWorkApps](../api/intune-apps-androidforworkapp-list.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md) коллекции|Свойства списка и связей объектов [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .|
-|[Получение androidForWorkApp](../api/intune-apps-androidforworkapp-get.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Чтение свойства и связи объекта [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .|
-|[Создание androidForWorkApp](../api/intune-apps-androidforworkapp-create.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Создание нового объекта [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .|
-|[Удаление androidForWorkApp](../api/intune-apps-androidforworkapp-delete.md)|Нет|Удаляет [androidForWorkApp](../resources/intune-apps-androidforworkapp.md).|
-|[Обновление androidForWorkApp](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Обновление свойства объекта [androidForWorkApp](../resources/intune-apps-androidforworkapp.md) .|
+|[Список Андроидфорворкаппс](../api/intune-apps-androidforworkapp-list.md)|Коллекция [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md)|Список свойств и связей объектов [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
+|[Получение Андроидфорворкапп](../api/intune-apps-androidforworkapp-get.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Чтение свойств и связей объекта [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
+|[Создание Андроидфорворкапп](../api/intune-apps-androidforworkapp-create.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Создание нового объекта [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
+|[Удаление Андроидфорворкапп](../api/intune-apps-androidforworkapp-delete.md)|Нет|Удаляет объект [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md).|
+|[Обновление Андроидфорворкапп](../api/intune-apps-androidforworkapp-update.md)|[androidForWorkApp](../resources/intune-apps-androidforworkapp.md);|Обновление свойств объекта [андроидфорворкапп](../resources/intune-apps-androidforworkapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,15 +47,15 @@ ms.locfileid: "29400090"
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |packageId|String|Идентификатор пакета.|
 |appIdentifier|String|Имя удостоверения.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
-|appStoreUrl|String|Воспроизведение для URL-адреса приложения рабочих хранилища.|
+|appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
@@ -63,8 +63,8 @@ ms.locfileid: "29400090"
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Сводка по установке мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

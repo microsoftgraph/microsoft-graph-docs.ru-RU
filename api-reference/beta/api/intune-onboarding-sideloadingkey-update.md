@@ -1,25 +1,25 @@
 ---
-title: Обновление sideLoadingKey
-description: Обновление свойства объекта sideLoadingKey.
-localization_priority: Normal
+title: Обновление Сиделоадингкэй
+description: Обновление свойств объекта Сиделоадингкэй.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4fd498404543353c45714f739a68b0195ae3d3dd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 96484084533e4a72d4cb3fb7430e41048d2defa2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156821"
 ---
-# <a name="update-sideloadingkey"></a>Обновление sideLoadingKey
+# <a name="update-sideloadingkey"></a>Обновление Сиделоадингкэй
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+Обновление свойств объекта [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,28 +40,28 @@ PATCH /deviceAppManagement/sideLoadingKeys/{sideLoadingKeyId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) .
+В тексте запроса добавьте представление объекта [Сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md).
+В следующей таблице приведены свойства, необходимые при создании [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Со стороны загрузка уникальный идентификатор ключа.|
-|value|String|Со стороны загрузки ключ значение — значение 5 x 5, разделенных hiphens.|
-|displayName|String|Со стороны загрузка ключа имя, отображаемое для администраторов для ИТ-специалистов.|
-|description|String|Со стороны загрузки ключ описание, отображаемое для администраторов для ИТ-специалистов.|
-|totalActivation|Int32|Со стороны загрузки ключ общее активация отображаются для администраторов для ИТ-специалистов.|
-|lastUpdatedDateTime|String|Со стороны загрузки ключ обновлен Дата последнего отображаются для администраторов для ИТ-специалистов.|
+|id|String|Уникальный идентификатор ключа загрузки на стороне.|
+|value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
+|displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
+|description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
+|Тоталактиватион|Int32|Клавиша загрузки на боковой стороне общая активация отображается для администраторов ИТ-специалистов.|
+|lastUpdatedDateTime|String|Клавиша загрузки на боковой стороне Дата последнего обновления отображается для администраторов ИТ-специалистов.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [sideLoadingKey](../resources/intune-onboarding-sideloadingkey.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [сиделоадингкэй](../resources/intune-onboarding-sideloadingkey.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -83,7 +83,7 @@ Content-length: 246
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса vpnOnDemandRule
-description: Определение правила по запросу VPN.
-localization_priority: Normal
+title: Тип ресурса Впнондемандруле
+description: Определение правила VPN по запросу.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8164d1c12aeb172120bb9803d7f3dd98366ec948
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b1bccd015e45291b344e7c77df4ac5c0a0af07d0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421461"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161588"
 ---
-# <a name="vpnondemandrule-resource-type"></a>Тип ресурса vpnOnDemandRule
+# <a name="vpnondemandrule-resource-type"></a>Тип ресурса Впнондемандруле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Определение правила по запросу VPN.
+Определение правила VPN по запросу.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|идентификаторов SSID|Коллекция String|Сетевая служба задайте идентификаторов SSID.|
-|dnsSearchDomains|Коллекция String|Домены поиска DNS.|
-|probeUrl|String|URL-адрес для поиска. Если этот URL-адрес был успешно извлечь (возврат 200 код состояния HTTP) без в режиме одобрения администратором, соответствует данное правило.|
-|action|[vpnOnDemandRuleConnectionAction](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Действие. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
-|domainAction|[vpnOnDemandRuleConnectionDomainAction](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (возможно, только когда действие оценка подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
-|домены|Коллекция String|Домены (возможно, только когда действие оценка подключения).|
-|probeRequiredUrl|String|Поиск необходимых URL-адреса (возможно, только если действие оценка подключения и DomainAction — это подключение при необходимости).|
+|Идентификатор|Коллекция строк|Идентификаторы набора сетевых служб (SSID).|
+|Днссеарчдомаинс|Коллекция строк|Домены поиска DNS.|
+|Пробеурл|String|URL-адрес для зонда. Если этот URL-адрес успешно извлекается (возвращается код состояния HTTP 200) без перенаправления, это правило соответствует этому правилу.|
+|action|[Впнондемандрулеконнектионактион](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Меры. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
+|Домаинактион|[Впнондемандрулеконнектиондомаинактион](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применяется только при оценке подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
+|домена|Коллекция строк|Домены (применяется только при оценке подключения).|
+|Проберекуиредурл|String|Обязательный URL-адрес для зонда (применяется только при оценке действия Connection и при необходимости Домаинактион подключается).|
 
 ## <a name="relationships"></a>Отношения
 Нет

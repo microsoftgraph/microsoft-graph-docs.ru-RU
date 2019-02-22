@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса vppTokenRevokeLicensesActionResult
-description: Состояние действия лицензий revoke выполнить на маркер покупки программы корпоративного Apple.
-localization_priority: Normal
+title: Тип ресурса Впптокенревокелиценсесактионресулт
+description: Состояние действия отзыва лицензий, выполняемого в токене Apple Volume Purchase Program.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 75c75c6b8bcdc06ede0f71b19956155becc4d478
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ec3ccf2bfd72ae9f6aeb85e3a7228faac09a8b2c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418227"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158172"
 ---
-# <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса vppTokenRevokeLicensesActionResult
+# <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние действия лицензий revoke выполнить на маркер покупки программы корпоративного Apple.
+Состояние действия отзыва лицензий, выполняемого в токене Apple Volume Purchase Program.
 
 
-Наследуется от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)
+НаСледуется от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actionName|String|Имя действия унаследованные от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
-|actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действие унаследованные от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|startDateTime|DateTimeOffset|Время началось наследуется от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
-|lastUpdatedDateTime|DateTimeOffset|Время последнего состояния действия обновления унаследованные от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
-|totalLicensesCount|Int32|Подсчет числа лицензий, которые были пытались отменить.|
-|failedLicensesCount|Int32|Подсчет числа лицензий, которые не удалось отозвать.|
-|actionFailureReason|[vppTokenActionFailureReason](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина ошибки действие revoke лицензий. Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
+|actionName|String|Имя действия наСледуется от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия, унаследованного от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md). Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|startDateTime|DateTimeOffset|Время начала действия, унаследованное от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия, унаследованного от [vppTokenActionResult](../resources/intune-onboarding-vpptokenactionresult.md)|
+|Тоталлиценсескаунт|Int32|Число неудачных попыток отзыва лицензий.|
+|Фаиледлиценсескаунт|Int32|Количество лицензий, которые не удалось отозвать.|
+|Актионфаилуререасон|[Впптокенактионфаилуререасон](../resources/intune-shared-vpptokenactionfailurereason.md)|Причина сбоя действия "отзыв лицензий". Возможные значения: `none`, `appleFailure`, `internalError`, `expiredVppToken`, `expiredApplePushNotificationCertificate`.|
 
 ## <a name="relationships"></a>Отношения
 Нет

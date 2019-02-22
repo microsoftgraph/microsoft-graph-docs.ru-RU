@@ -1,50 +1,50 @@
 ---
-title: Тип перечисления certificateIssuanceStates
-description: Параметры состояния выдачи сертификатов.
-localization_priority: Normal
+title: тип перечисления Цертификатеиссуанцестатес
+description: Параметры состояния выДачи сертификатов.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa17337a72d00135e75af13c7d111900a710e9d3
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6c4414a7e3b1f2ed2806b9f7f695426e0bc73b7b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424702"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157094"
 ---
-# <a name="certificateissuancestates-enum-type"></a>Тип перечисления certificateIssuanceStates
+# <a name="certificateissuancestates-enum-type"></a>тип перечисления Цертификатеиссуанцестатес
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Параметры состояния выдачи сертификатов.
+Параметры состояния выДачи сертификатов.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Н/Д|
-|challengeIssued|1|Н/Д|
-|challengeIssueFailed|2|Н/Д|
-|requestCreationFailed|3|Н/Д|
-|requestSubmitFailed|4|Н/Д|
-|challengeValidationSucceeded|5|Н/Д|
-|challengeValidationFailed|6|Н/Д|
-|issueFailed|7|Н/Д|
-|issuePending|8|Н/Д|
-|выдан|9|Н/Д|
-|responseProcessingFailed|10|Н/Д|
-|responsePending|11|Н/Д|
-|enrollmentSucceeded|12|Н/Д|
-|enrollmentNotNeeded|13|Н/Д|
-|отменено|14|Н/Д|
-|removedFromCollection|15|Н/Д|
-|renewVerified|16|Н/Д|
-|installFailed|17|Н/Д|
-|установлен|18|Н/Д|
-|deleteFailed|19|Н/Д|
-|deleted|20|Н/Д|
-|renewalRequested|21|Н/Д|
-|Запрошено|22|Н/Д|
+|unknown|нуль|Н/Д|
+|Чалленжеиссуед|1,1|Н/Д|
+|Чалленжеиссуефаилед|2|Н/Д|
+|Рекуесткреатионфаилед|4|Н/Д|
+|Рекуестсубмитфаилед|4|Н/Д|
+|Чалленжевалидатионсукцеедед|17:00|Н/Д|
+|Чалленжевалидатионфаилед|6|Н/Д|
+|Иссуефаилед|7|Н/Д|
+|Иссуепендинг|8,5|Н/Д|
+|опубликован|10|Н/Д|
+|Респонсепроцессингфаилед|десяти|Н/Д|
+|Респонсепендинг|-11:00|Н/Д|
+|Енроллментсукцеедед|12|Н/Д|
+|Енроллментнотнидед|13|Н/Д|
+|отозван|14|Н/Д|
+|Ремоведфромколлектион|означает|Н/Д|
+|Реневверифиед|столбцов|Н/Д|
+|Инсталлфаилед|17|Н/Д|
+|устанавлива|0,18|Н/Д|
+|Делетефаилед|19|Н/Д|
+|deleted|двадцать|Н/Д|
+|Реневалрекуестед|21|Н/Д|
+|нужный|22|Н/Д|
 
 
 

@@ -1,41 +1,41 @@
 ---
-title: Тип перечисления appleVpnConnectionType
-description: Тип подключения Apple VPN.
-localization_priority: Normal
+title: тип перечисления Апплевпнконнектионтипе
+description: Тип VPN-подключения Apple.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f40281934aa241f245772e0bc4c5cd5bbbd0ec33
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 53ed413b05e29a10cebf151c718e55c75de702c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415679"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155603"
 ---
-# <a name="applevpnconnectiontype-enum-type"></a>Тип перечисления appleVpnConnectionType
+# <a name="applevpnconnectiontype-enum-type"></a>тип перечисления Апплевпнконнектионтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип подключения Apple VPN.
+Тип VPN-подключения Apple.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|ciscoAnyConnect|0|Cisco AnyConnect.|
-|pulseSecure|1|Обеспечение безопасной Pulse.|
-|f5EdgeClient|2|F5 Клиент пограничного сервера.|
-|dellSonicWallMobileConnect|3|Подключение мобильного устройства SonicWALL Dell.|
-|checkPointCapsuleVpn|4|Проверьте точку капсула VPN.|
-|customVpn|5|Настройка сети VPN.|
-|ciscoIPSec|6|Cisco (IP IPSec).|
-|Citrix|7|Citrix.|
-|ciscoAnyConnectV2|8|Cisco AnyConnect версии 2.|
-|paloAltoGlobalProtect|9|GlobalProtect Пало сети компьютер.|
-|zscalerPrivateAccess|10|Zscaler доступ Private.|
-|f5Access2018|11|F5 2018 доступа.|
-|citrixSso|12|Citrix единого входа.|
-|paloAltoGlobalProtectV2|13|Компьютер Пало сетей GlobalProtect версии 2.|
+|Цискоаниконнект|нуль|Cisco Аниконнект.|
+|Пулсесекуре|1,1|Безопасный импульс.|
+|f5EdgeClient|2|ПоГраничный клиент F5.|
+|Деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
+|Чеккпоинткапсулевпн|4|Проверка поКапсулы VPN.|
+|Кустомвпн|17:00|Пользовательская сеть VPN.|
+|Цискоипсек|6|Cisco (IPSec).|
+|клиентов|7|Клиентов.|
+|ciscoAnyConnectV2|8,5|Cisco Аниконнект v2.|
+|Элемент paloaltoglobalprotect|10|Palo Alto сети Глобалпротект.|
+|Зскалерприватеакцесс|десяти|Частный доступ Зскалер.|
+|f5Access2018|-11:00|F5 доступ 2018.|
+|Цитриксссо|12|Единый вход Citrix.|
+|paloAltoGlobalProtectV2|13|Palo Alto сети Глобалпротект v2.|
 
 
 

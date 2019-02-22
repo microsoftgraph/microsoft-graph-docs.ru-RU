@@ -112,7 +112,7 @@ items:
                 href: api/user-post-contacts.md
               - name: 'Вывод списка, включающего папки контактов'
                 href: api/user-list-contactfolders.md
-              - name: Создание папки контактов
+              - name: Создание папки контакта
                 href: api/user-post-contactfolders.md
           - name: Объекты каталога
             href: resources/directoryobject.md
@@ -220,7 +220,7 @@ items:
             items:
               - name: Получение параметров
                 href: api/user-get-settings.md
-              - name: Настройки обновления
+              - name: Обновление параметров
                 href: api/user-update-settings.md
       - name: Группы
         href: resources/groups-overview.md
@@ -230,7 +230,7 @@ items:
             items:
               - name: Добавление в избранное
                 href: api/group-addfavorite.md
-              - name: Добавление элемента
+              - name: Добавление члена
                 href: api/group-post-members.md
               - name: Добавление владельца
                 href: api/group-post-owners.md
@@ -242,7 +242,7 @@ items:
                 href: api/group-delete.md
               - name: Получение дельты
                 href: api/group-delta.md
-              - name: Получение группы
+              - name: Вывод группы
                 href: api/group-get.md
               - name: Вывод групп пользователя
                 href: api/group-getmembergroups.md
@@ -355,7 +355,7 @@ items:
           - name: Цепочка беседы
             href: resources/conversationthread.md
             items:
-              - name: Список цепочек бесед
+              - name: Список цепочек
                 href: api/group-list-threads.md
               - name: Создание цепочки беседы
                 href: api/group-post-threads.md
@@ -410,10 +410,10 @@ items:
             items:
               - name: Список планов
                 href: api/plannergroup-list-plans.md
-          - name: Запись
+          - name: Публикация
             href: resources/post.md
             items:
-              - name: Список записей
+              - name: Список публикаций
                 href: api/conversationthread-list-posts.md
               - name: Вывод записи
                 href: api/post-get.md
@@ -431,6 +431,7 @@ items:
                 href: api/opentypeextension-get.md
       - name: Календарь
         href: resources/calendar.md
+        displayname: Outlook calendar
         items:
           - name: Событие
             href: resources/event.md
@@ -1150,7 +1151,7 @@ items:
                     href: api/intune-enrollment-importedwindowsautopilotdeviceidentity-update.md
               - name: Состояние импорта удостоверения устройства с Windows Autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md
-              - name: Состояние импортированного удостоверения устройства Windows AutoPilot
+              - name: Состояние импортированного удостоверения устройства с Windows Autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md
               - name: Загрузка импортированного удостоверения устройства Windows AutoPilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md
@@ -3378,7 +3379,7 @@ items:
                 href: api/notebook-post-sections.md
               - name: Вывод списка групп разделов
                 href: api/notebook-list-sectiongroups.md
-              - name: Создание группы раздела
+              - name: Создание группы разделов
                 href: api/notebook-post-sectiongroups.md
           - name: Разделы
             href: resources/section.md
@@ -3709,6 +3710,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Безопасность
         href: resources/security-api-overview.md
+        displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
           - name: Оповещения
             href: resources/alert.md
@@ -3872,7 +3874,7 @@ items:
             items:
               - name: Создание группы
                 href: api/group-post-groups.md
-              - name: Получение группы
+              - name: Вывод группы
                 href: api/group-get.md
               - name: Список групп
                 href: api/group-list.md
@@ -3936,7 +3938,7 @@ items:
                 href: api/teamsapp-update.md
               - name: Удаление приложения из каталога
                 href: api/teamsapp-delete.md
-              - name: Список вкладки
+              - name: Список вкладок
                 href: api/teamstab-list.md
               - name: Получение вкладки
                 href: api/teamstab-get.md
@@ -4102,7 +4104,7 @@ items:
                 href: api/nameditem-update.md
               - name: Добавление именованного элемента
                 href: api/nameditem-add.md
-              - name: Список элементов диапазона
+              - name: Список диапазона
                 href: api/nameditem-range.md
       - name: Средства
       - name: Открытые расширения
@@ -4121,7 +4123,7 @@ items:
         href: resources/schemaextension.md
         displayname: 'Outlook calendar, Groups, Outlook mail, Outlook contacts, Outlook contact, People, Users'
         items:
-          - name: Список расширений схемы
+          - name: Перечисление расширений схемы
             href: api/schemaextension-list.md
           - name: Создание расширения схемы
             href: api/schemaextension-post-schemaextensions.md
@@ -4138,7 +4140,7 @@ items:
           - name: Подписка
             href: resources/subscription.md
             items:
-              - name: Список подписок
+              - name: Список подписки
                 href: api/subscription-list.md
               - name: Получение подписки
                 href: api/subscription-get.md

@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления deviceManagementExchangeAccessState
-description: Состояние доступа устройств Exchange.
-localization_priority: Normal
+title: тип перечисления Девицеманажементексчанжеакцессстате
+description: Состояние доступа к Exchange для устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f66f8372b5bd087ad620fa86d8e0beff8b3eb3a0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 15b0dd7b99d8395b7c66171969bad1cb79bce0b8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401070"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30159586"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a>Тип перечисления deviceManagementExchangeAccessState
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние доступа устройств Exchange.
+Состояние доступа к Exchange для устройства.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Состояние не доступа, обнаруженные в Exchange|
-|unknown|1|Состояние доступа устройства к серверу Exchange не известен|
-|разрешено|2|Устройство имеет доступ к Exchange|
-|заблокировано|3|Устройство будет заблокировано в Exchange|
-|в карантин|4|Находится в карантине в Exchange|
+|Нет|нуль|Не обнаружено состояние доступа в Exchange|
+|unknown|1,1|Неизвестный режим доступа к устройству Exchange|
+|разрешенных|2|Устройство имеет доступ к Exchange|
+|заблокировано|4|Устройство заблокировано в Exchange|
+|карантин|4|Устройство помещено в карантин в Exchange|
 
 
 
