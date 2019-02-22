@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType
-description: Android рабочих профилей по умолчанию приложения политики тип разрешения.
-localization_priority: Normal
+title: тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
+description: Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7318a6ff004db63b35f715b53d754a237b490c4f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0b56a6d7817d3dc67976248f7f9a800ed71ef2d9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411171"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166327"
 ---
-# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a><span data-ttu-id="6a3d5-103">Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType</span><span class="sxs-lookup"><span data-stu-id="6a3d5-103">androidWorkProfileDefaultAppPermissionPolicyType enum type</span></span>
+# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a><span data-ttu-id="e74d5-103">тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе</span><span class="sxs-lookup"><span data-stu-id="e74d5-103">androidWorkProfileDefaultAppPermissionPolicyType enum type</span></span>
 
-> <span data-ttu-id="6a3d5-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6a3d5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e74d5-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e74d5-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6a3d5-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e74d5-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e74d5-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6a3d5-107">Android рабочих профилей по умолчанию приложения политики тип разрешения.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-107">Android Work Profile default app permission policy type.</span></span>
+<span data-ttu-id="e74d5-106">Тип политики разрешений приложений для рабочего профиля Android по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="e74d5-106">Android Work Profile default app permission policy type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="6a3d5-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="6a3d5-108">Members</span></span>
-|<span data-ttu-id="6a3d5-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="6a3d5-109">Member</span></span>|<span data-ttu-id="6a3d5-110">Значение</span><span class="sxs-lookup"><span data-stu-id="6a3d5-110">Value</span></span>|<span data-ttu-id="6a3d5-111">Описание</span><span class="sxs-lookup"><span data-stu-id="6a3d5-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e74d5-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="e74d5-107">Members</span></span>
+|<span data-ttu-id="e74d5-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="e74d5-108">Member</span></span>|<span data-ttu-id="e74d5-109">Значение</span><span class="sxs-lookup"><span data-stu-id="e74d5-109">Value</span></span>|<span data-ttu-id="e74d5-110">Описание</span><span class="sxs-lookup"><span data-stu-id="e74d5-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6a3d5-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="6a3d5-112">deviceDefault</span></span>|<span data-ttu-id="6a3d5-113">0</span><span class="sxs-lookup"><span data-stu-id="6a3d5-113">0</span></span>|<span data-ttu-id="6a3d5-114">Значение по умолчанию устройства, без цели.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="6a3d5-115">строки</span><span class="sxs-lookup"><span data-stu-id="6a3d5-115">prompt</span></span>|<span data-ttu-id="6a3d5-116">1</span><span class="sxs-lookup"><span data-stu-id="6a3d5-116">1</span></span>|<span data-ttu-id="6a3d5-117">Запрос.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-117">Prompt.</span></span>|
-|<span data-ttu-id="6a3d5-118">autoGrant</span><span class="sxs-lookup"><span data-stu-id="6a3d5-118">autoGrant</span></span>|<span data-ttu-id="6a3d5-119">2</span><span class="sxs-lookup"><span data-stu-id="6a3d5-119">2</span></span>|<span data-ttu-id="6a3d5-120">Автоматическое предоставление.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-120">Auto grant.</span></span>|
-|<span data-ttu-id="6a3d5-121">autoDeny</span><span class="sxs-lookup"><span data-stu-id="6a3d5-121">autoDeny</span></span>|<span data-ttu-id="6a3d5-122">3</span><span class="sxs-lookup"><span data-stu-id="6a3d5-122">3</span></span>|<span data-ttu-id="6a3d5-123">Запрещать автоматически.</span><span class="sxs-lookup"><span data-stu-id="6a3d5-123">Auto deny.</span></span>|
+|<span data-ttu-id="e74d5-111">Девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="e74d5-111">deviceDefault</span></span>|<span data-ttu-id="e74d5-112">нуль</span><span class="sxs-lookup"><span data-stu-id="e74d5-112">0</span></span>|<span data-ttu-id="e74d5-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="e74d5-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="e74d5-114">появляется</span><span class="sxs-lookup"><span data-stu-id="e74d5-114">prompt</span></span>|<span data-ttu-id="e74d5-115">1,1</span><span class="sxs-lookup"><span data-stu-id="e74d5-115">1</span></span>|<span data-ttu-id="e74d5-116">Появляется.</span><span class="sxs-lookup"><span data-stu-id="e74d5-116">Prompt.</span></span>|
+|<span data-ttu-id="e74d5-117">автоПредоставление</span><span class="sxs-lookup"><span data-stu-id="e74d5-117">autoGrant</span></span>|<span data-ttu-id="e74d5-118">2</span><span class="sxs-lookup"><span data-stu-id="e74d5-118">2</span></span>|<span data-ttu-id="e74d5-119">Автоматическое предоставление.</span><span class="sxs-lookup"><span data-stu-id="e74d5-119">Auto grant.</span></span>|
+|<span data-ttu-id="e74d5-120">автоЗапрет</span><span class="sxs-lookup"><span data-stu-id="e74d5-120">autoDeny</span></span>|<span data-ttu-id="e74d5-121">4</span><span class="sxs-lookup"><span data-stu-id="e74d5-121">3</span></span>|<span data-ttu-id="e74d5-122">Автоматическое отклонение.</span><span class="sxs-lookup"><span data-stu-id="e74d5-122">Auto deny.</span></span>|
 
 
 

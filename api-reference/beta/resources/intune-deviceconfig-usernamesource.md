@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления usernameSource
+title: тип перечисления usernameSource
 description: Источник имени пользователя.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98a1d9860a1c4e6610f0ad750a573c656fe6219e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 001fb659c86b3403e6a206daa72f9d12d8bdb383
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399516"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166236"
 ---
-# <a name="usernamesource-enum-type"></a><span data-ttu-id="970b0-103">Тип перечисления usernameSource</span><span class="sxs-lookup"><span data-stu-id="970b0-103">usernameSource enum type</span></span>
+# <a name="usernamesource-enum-type"></a><span data-ttu-id="c53cd-103">тип перечисления usernameSource</span><span class="sxs-lookup"><span data-stu-id="c53cd-103">usernameSource enum type</span></span>
 
-> <span data-ttu-id="970b0-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="970b0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="970b0-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="970b0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c53cd-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c53cd-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="970b0-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="970b0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c53cd-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c53cd-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="970b0-107">Источник имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="970b0-107">Username source.</span></span>
+<span data-ttu-id="c53cd-106">Источник имени пользователя.</span><span class="sxs-lookup"><span data-stu-id="c53cd-106">Username source.</span></span>
 
-## <a name="members"></a><span data-ttu-id="970b0-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="970b0-108">Members</span></span>
-|<span data-ttu-id="970b0-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="970b0-109">Member</span></span>|<span data-ttu-id="970b0-110">Значение</span><span class="sxs-lookup"><span data-stu-id="970b0-110">Value</span></span>|<span data-ttu-id="970b0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="970b0-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c53cd-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="c53cd-107">Members</span></span>
+|<span data-ttu-id="c53cd-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="c53cd-108">Member</span></span>|<span data-ttu-id="c53cd-109">Значение</span><span class="sxs-lookup"><span data-stu-id="c53cd-109">Value</span></span>|<span data-ttu-id="c53cd-110">Описание</span><span class="sxs-lookup"><span data-stu-id="c53cd-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="970b0-112">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="970b0-112">userPrincipalName</span></span>|<span data-ttu-id="970b0-113">0</span><span class="sxs-lookup"><span data-stu-id="970b0-113">0</span></span>|<span data-ttu-id="970b0-114">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="970b0-114">User principal name.</span></span>|
-|<span data-ttu-id="970b0-115">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="970b0-115">primarySmtpAddress</span></span>|<span data-ttu-id="970b0-116">1</span><span class="sxs-lookup"><span data-stu-id="970b0-116">1</span></span>|<span data-ttu-id="970b0-117">Основной SMTP-адрес.</span><span class="sxs-lookup"><span data-stu-id="970b0-117">Primary SMTP address.</span></span>|
-|<span data-ttu-id="970b0-118">samAccountName</span><span class="sxs-lookup"><span data-stu-id="970b0-118">samAccountName</span></span>|<span data-ttu-id="970b0-119">2</span><span class="sxs-lookup"><span data-stu-id="970b0-119">2</span></span>|<span data-ttu-id="970b0-120">Имя учетной записи sam пользователя.</span><span class="sxs-lookup"><span data-stu-id="970b0-120">The user sam account name.</span></span>|
+|<span data-ttu-id="c53cd-111">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="c53cd-111">userPrincipalName</span></span>|<span data-ttu-id="c53cd-112">нуль</span><span class="sxs-lookup"><span data-stu-id="c53cd-112">0</span></span>|<span data-ttu-id="c53cd-113">Имя участника пользователя.</span><span class="sxs-lookup"><span data-stu-id="c53cd-113">User principal name.</span></span>|
+|<span data-ttu-id="c53cd-114">primarySmtpAddress</span><span class="sxs-lookup"><span data-stu-id="c53cd-114">primarySmtpAddress</span></span>|<span data-ttu-id="c53cd-115">1,1</span><span class="sxs-lookup"><span data-stu-id="c53cd-115">1</span></span>|<span data-ttu-id="c53cd-116">Основной SMTP-адрес.</span><span class="sxs-lookup"><span data-stu-id="c53cd-116">Primary SMTP address.</span></span>|
+|<span data-ttu-id="c53cd-117">samAccountName</span><span class="sxs-lookup"><span data-stu-id="c53cd-117">samAccountName</span></span>|<span data-ttu-id="c53cd-118">2</span><span class="sxs-lookup"><span data-stu-id="c53cd-118">2</span></span>|<span data-ttu-id="c53cd-119">Имя учетной записи SAM пользователя.</span><span class="sxs-lookup"><span data-stu-id="c53cd-119">The user sam account name.</span></span>|
 
 
 

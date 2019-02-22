@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidDeviceOwnerSystemUpdateInstallType
-description: Системные типы обновлений для Android устройства владельцем.
-localization_priority: Normal
+title: тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе
+description: Типы системных обновлений для владельца устройства Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d7caaa3c79062bba6b8aa06ea11389e1370fba5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b6f99ba32a5461913579a23e7fe8f29a3c0b6950
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419179"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163660"
 ---
-# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a><span data-ttu-id="c1c70-103">Тип перечисления androidDeviceOwnerSystemUpdateInstallType</span><span class="sxs-lookup"><span data-stu-id="c1c70-103">androidDeviceOwnerSystemUpdateInstallType enum type</span></span>
+# <a name="androiddeviceownersystemupdateinstalltype-enum-type"></a><span data-ttu-id="b3216-103">тип перечисления Андроиддевицеовнерсистемупдатеинсталлтипе</span><span class="sxs-lookup"><span data-stu-id="b3216-103">androidDeviceOwnerSystemUpdateInstallType enum type</span></span>
 
-> <span data-ttu-id="c1c70-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c1c70-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c1c70-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c1c70-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b3216-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b3216-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c1c70-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c1c70-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b3216-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b3216-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c1c70-107">Системные типы обновлений для Android устройства владельцем.</span><span class="sxs-lookup"><span data-stu-id="c1c70-107">System Update Types for Android Device Owner.</span></span>
+<span data-ttu-id="b3216-106">Типы системных обновлений для владельца устройства Android.</span><span class="sxs-lookup"><span data-stu-id="b3216-106">System Update Types for Android Device Owner.</span></span>
 
-## <a name="members"></a><span data-ttu-id="c1c70-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="c1c70-108">Members</span></span>
-|<span data-ttu-id="c1c70-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="c1c70-109">Member</span></span>|<span data-ttu-id="c1c70-110">Значение</span><span class="sxs-lookup"><span data-stu-id="c1c70-110">Value</span></span>|<span data-ttu-id="c1c70-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c1c70-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="b3216-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="b3216-107">Members</span></span>
+|<span data-ttu-id="b3216-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="b3216-108">Member</span></span>|<span data-ttu-id="b3216-109">Значение</span><span class="sxs-lookup"><span data-stu-id="b3216-109">Value</span></span>|<span data-ttu-id="b3216-110">Описание</span><span class="sxs-lookup"><span data-stu-id="b3216-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c1c70-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="c1c70-112">deviceDefault</span></span>|<span data-ttu-id="c1c70-113">0</span><span class="sxs-lookup"><span data-stu-id="c1c70-113">0</span></span>|<span data-ttu-id="c1c70-114">Поведение по умолчанию устройство, которое обычно выдает запрос пользователю принимать обновления системы.</span><span class="sxs-lookup"><span data-stu-id="c1c70-114">Device default behavior, which typically prompts the user to accept system updates.</span></span>|
-|<span data-ttu-id="c1c70-115">отложить</span><span class="sxs-lookup"><span data-stu-id="c1c70-115">postpone</span></span>|<span data-ttu-id="c1c70-116">1</span><span class="sxs-lookup"><span data-stu-id="c1c70-116">1</span></span>|<span data-ttu-id="c1c70-117">Отложить автоматическую установку обновлений вверх до 30 дней.</span><span class="sxs-lookup"><span data-stu-id="c1c70-117">Postpone automatic install of updates up to 30 days.</span></span>|
-|<span data-ttu-id="c1c70-118">оконного</span><span class="sxs-lookup"><span data-stu-id="c1c70-118">windowed</span></span>|<span data-ttu-id="c1c70-119">2</span><span class="sxs-lookup"><span data-stu-id="c1c70-119">2</span></span>|<span data-ttu-id="c1c70-120">Внутри ежедневного периода обслуживания автоматической установки.</span><span class="sxs-lookup"><span data-stu-id="c1c70-120">Install automatically inside a daily maintenance window.</span></span>|
-|<span data-ttu-id="c1c70-121">Автоматически</span><span class="sxs-lookup"><span data-stu-id="c1c70-121">automatic</span></span>|<span data-ttu-id="c1c70-122">3</span><span class="sxs-lookup"><span data-stu-id="c1c70-122">3</span></span>|<span data-ttu-id="c1c70-123">Как можно скорее автоматическую установку обновлений.</span><span class="sxs-lookup"><span data-stu-id="c1c70-123">Automatically install updates as soon as possible.</span></span>|
+|<span data-ttu-id="b3216-111">Девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="b3216-111">deviceDefault</span></span>|<span data-ttu-id="b3216-112">нуль</span><span class="sxs-lookup"><span data-stu-id="b3216-112">0</span></span>|<span data-ttu-id="b3216-113">Поведение устройства по умолчанию, которое обычно предлагает пользователю принимать обновления системы.</span><span class="sxs-lookup"><span data-stu-id="b3216-113">Device default behavior, which typically prompts the user to accept system updates.</span></span>|
+|<span data-ttu-id="b3216-114">отсрочки</span><span class="sxs-lookup"><span data-stu-id="b3216-114">postpone</span></span>|<span data-ttu-id="b3216-115">1,1</span><span class="sxs-lookup"><span data-stu-id="b3216-115">1</span></span>|<span data-ttu-id="b3216-116">ОтЛожить автоматическую установку обновлений до 30 дней.</span><span class="sxs-lookup"><span data-stu-id="b3216-116">Postpone automatic install of updates up to 30 days.</span></span>|
+|<span data-ttu-id="b3216-117">окнами</span><span class="sxs-lookup"><span data-stu-id="b3216-117">windowed</span></span>|<span data-ttu-id="b3216-118">2</span><span class="sxs-lookup"><span data-stu-id="b3216-118">2</span></span>|<span data-ttu-id="b3216-119">Автоматическая установка в период ежедневного обслуживания.</span><span class="sxs-lookup"><span data-stu-id="b3216-119">Install automatically inside a daily maintenance window.</span></span>|
+|<span data-ttu-id="b3216-120">Автоматически</span><span class="sxs-lookup"><span data-stu-id="b3216-120">automatic</span></span>|<span data-ttu-id="b3216-121">4</span><span class="sxs-lookup"><span data-stu-id="b3216-121">3</span></span>|<span data-ttu-id="b3216-122">Автоматическая установка обновлений как можно скорее.</span><span class="sxs-lookup"><span data-stu-id="b3216-122">Automatically install updates as soon as possible.</span></span>|
 
 
 

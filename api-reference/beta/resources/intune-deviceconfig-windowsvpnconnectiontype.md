@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления windowsVpnConnectionType
-description: Тип подключения к виртуальной частной сети Windows.
-localization_priority: Normal
+title: тип перечисления Виндовсвпнконнектионтипе
+description: Тип подключения VPN Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3680582b11d5cfd6c9d64e5a19e12ccbe96bfe1f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f0be1f939a86825b71cddf31f88c435c94e5e776
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403646"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166950"
 ---
-# <a name="windowsvpnconnectiontype-enum-type"></a><span data-ttu-id="12942-103">Тип перечисления windowsVpnConnectionType</span><span class="sxs-lookup"><span data-stu-id="12942-103">windowsVpnConnectionType enum type</span></span>
+# <a name="windowsvpnconnectiontype-enum-type"></a><span data-ttu-id="37424-103">тип перечисления Виндовсвпнконнектионтипе</span><span class="sxs-lookup"><span data-stu-id="37424-103">windowsVpnConnectionType enum type</span></span>
 
-> <span data-ttu-id="12942-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="12942-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="12942-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12942-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="37424-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="37424-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="12942-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="12942-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="37424-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="37424-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="12942-107">Тип подключения к виртуальной частной сети Windows.</span><span class="sxs-lookup"><span data-stu-id="12942-107">Windows VPN connection type.</span></span>
+<span data-ttu-id="37424-106">Тип подключения VPN Windows.</span><span class="sxs-lookup"><span data-stu-id="37424-106">Windows VPN connection type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="12942-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="12942-108">Members</span></span>
-|<span data-ttu-id="12942-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="12942-109">Member</span></span>|<span data-ttu-id="12942-110">Значение</span><span class="sxs-lookup"><span data-stu-id="12942-110">Value</span></span>|<span data-ttu-id="12942-111">Описание</span><span class="sxs-lookup"><span data-stu-id="12942-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="37424-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="37424-107">Members</span></span>
+|<span data-ttu-id="37424-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="37424-108">Member</span></span>|<span data-ttu-id="37424-109">Значение</span><span class="sxs-lookup"><span data-stu-id="37424-109">Value</span></span>|<span data-ttu-id="37424-110">Описание</span><span class="sxs-lookup"><span data-stu-id="37424-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="12942-112">pulseSecure</span><span class="sxs-lookup"><span data-stu-id="12942-112">pulseSecure</span></span>|<span data-ttu-id="12942-113">0</span><span class="sxs-lookup"><span data-stu-id="12942-113">0</span></span>|<span data-ttu-id="12942-114">Обеспечение безопасной Pulse.</span><span class="sxs-lookup"><span data-stu-id="12942-114">Pulse Secure.</span></span>|
-|<span data-ttu-id="12942-115">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="12942-115">f5EdgeClient</span></span>|<span data-ttu-id="12942-116">1</span><span class="sxs-lookup"><span data-stu-id="12942-116">1</span></span>|<span data-ttu-id="12942-117">F5 Клиент пограничного сервера.</span><span class="sxs-lookup"><span data-stu-id="12942-117">F5 Edge Client.</span></span>|
-|<span data-ttu-id="12942-118">dellSonicWallMobileConnect</span><span class="sxs-lookup"><span data-stu-id="12942-118">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="12942-119">2</span><span class="sxs-lookup"><span data-stu-id="12942-119">2</span></span>|<span data-ttu-id="12942-120">Подключение мобильного устройства SonicWALL Dell.</span><span class="sxs-lookup"><span data-stu-id="12942-120">Dell SonicWALL Mobile Connection.</span></span>|
-|<span data-ttu-id="12942-121">checkPointCapsuleVpn</span><span class="sxs-lookup"><span data-stu-id="12942-121">checkPointCapsuleVpn</span></span>|<span data-ttu-id="12942-122">3</span><span class="sxs-lookup"><span data-stu-id="12942-122">3</span></span>|<span data-ttu-id="12942-123">Проверьте точку капсула VPN.</span><span class="sxs-lookup"><span data-stu-id="12942-123">Check Point Capsule VPN.</span></span>|
+|<span data-ttu-id="37424-111">Пулсесекуре</span><span class="sxs-lookup"><span data-stu-id="37424-111">pulseSecure</span></span>|<span data-ttu-id="37424-112">нуль</span><span class="sxs-lookup"><span data-stu-id="37424-112">0</span></span>|<span data-ttu-id="37424-113">Безопасный импульс.</span><span class="sxs-lookup"><span data-stu-id="37424-113">Pulse Secure.</span></span>|
+|<span data-ttu-id="37424-114">f5EdgeClient</span><span class="sxs-lookup"><span data-stu-id="37424-114">f5EdgeClient</span></span>|<span data-ttu-id="37424-115">1,1</span><span class="sxs-lookup"><span data-stu-id="37424-115">1</span></span>|<span data-ttu-id="37424-116">ПоГраничный клиент F5.</span><span class="sxs-lookup"><span data-stu-id="37424-116">F5 Edge Client.</span></span>|
+|<span data-ttu-id="37424-117">Деллсоникваллмобилеконнект</span><span class="sxs-lookup"><span data-stu-id="37424-117">dellSonicWallMobileConnect</span></span>|<span data-ttu-id="37424-118">2</span><span class="sxs-lookup"><span data-stu-id="37424-118">2</span></span>|<span data-ttu-id="37424-119">Мобильное подключение Dell Сониквалл.</span><span class="sxs-lookup"><span data-stu-id="37424-119">Dell SonicWALL Mobile Connection.</span></span>|
+|<span data-ttu-id="37424-120">Чеккпоинткапсулевпн</span><span class="sxs-lookup"><span data-stu-id="37424-120">checkPointCapsuleVpn</span></span>|<span data-ttu-id="37424-121">4</span><span class="sxs-lookup"><span data-stu-id="37424-121">3</span></span>|<span data-ttu-id="37424-122">Проверка поКапсулы VPN.</span><span class="sxs-lookup"><span data-stu-id="37424-122">Check Point Capsule VPN.</span></span>|
 
 
 

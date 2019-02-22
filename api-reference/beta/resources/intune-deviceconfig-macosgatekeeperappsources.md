@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления macOSGatekeeperAppSources
-description: Параметры исходного приложения macOS Привратник.
-localization_priority: Normal
+title: тип перечисления Макосгатекипераппсаурцес
+description: Параметры источника приложения для привратника macOS.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18ab6884d211faccb81e93a40ee91f742d03475f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f3e43505a745e87e52f2f1c12a5cc5ff08825c09
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394392"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166208"
 ---
-# <a name="macosgatekeeperappsources-enum-type"></a><span data-ttu-id="354a4-103">Тип перечисления macOSGatekeeperAppSources</span><span class="sxs-lookup"><span data-stu-id="354a4-103">macOSGatekeeperAppSources enum type</span></span>
+# <a name="macosgatekeeperappsources-enum-type"></a><span data-ttu-id="6bc43-103">тип перечисления Макосгатекипераппсаурцес</span><span class="sxs-lookup"><span data-stu-id="6bc43-103">macOSGatekeeperAppSources enum type</span></span>
 
-> <span data-ttu-id="354a4-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="354a4-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="354a4-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="354a4-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6bc43-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6bc43-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="354a4-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="354a4-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6bc43-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6bc43-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="354a4-107">Параметры исходного приложения macOS Привратник.</span><span class="sxs-lookup"><span data-stu-id="354a4-107">App source options for macOS Gatekeeper.</span></span>
+<span data-ttu-id="6bc43-106">Параметры источника приложения для привратника macOS.</span><span class="sxs-lookup"><span data-stu-id="6bc43-106">App source options for macOS Gatekeeper.</span></span>
 
-## <a name="members"></a><span data-ttu-id="354a4-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="354a4-108">Members</span></span>
-|<span data-ttu-id="354a4-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="354a4-109">Member</span></span>|<span data-ttu-id="354a4-110">Значение</span><span class="sxs-lookup"><span data-stu-id="354a4-110">Value</span></span>|<span data-ttu-id="354a4-111">Описание</span><span class="sxs-lookup"><span data-stu-id="354a4-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="6bc43-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="6bc43-107">Members</span></span>
+|<span data-ttu-id="6bc43-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="6bc43-108">Member</span></span>|<span data-ttu-id="6bc43-109">Значение</span><span class="sxs-lookup"><span data-stu-id="6bc43-109">Value</span></span>|<span data-ttu-id="6bc43-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6bc43-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="354a4-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="354a4-112">notConfigured</span></span>|<span data-ttu-id="354a4-113">0</span><span class="sxs-lookup"><span data-stu-id="354a4-113">0</span></span>|<span data-ttu-id="354a4-114">Значение по умолчанию устройства, без цели.</span><span class="sxs-lookup"><span data-stu-id="354a4-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="354a4-115">macAppStore</span><span class="sxs-lookup"><span data-stu-id="354a4-115">macAppStore</span></span>|<span data-ttu-id="354a4-116">1</span><span class="sxs-lookup"><span data-stu-id="354a4-116">1</span></span>|<span data-ttu-id="354a4-117">Можно выполнять только приложения из Mac AppStore.</span><span class="sxs-lookup"><span data-stu-id="354a4-117">Only apps from the Mac AppStore can be run.</span></span>|
-|<span data-ttu-id="354a4-118">macAppStoreAndIdentifiedDevelopers</span><span class="sxs-lookup"><span data-stu-id="354a4-118">macAppStoreAndIdentifiedDevelopers</span></span>|<span data-ttu-id="354a4-119">2</span><span class="sxs-lookup"><span data-stu-id="354a4-119">2</span></span>|<span data-ttu-id="354a4-120">Можно выполнять только приложения из Mac AppStore и разработчиков (en) определенного.</span><span class="sxs-lookup"><span data-stu-id="354a4-120">Only apps from the Mac AppStore and identified developers can be run.</span></span>|
-|<span data-ttu-id="354a4-121">в любом месте</span><span class="sxs-lookup"><span data-stu-id="354a4-121">anywhere</span></span>|<span data-ttu-id="354a4-122">3</span><span class="sxs-lookup"><span data-stu-id="354a4-122">3</span></span>|<span data-ttu-id="354a4-123">Приложения в любом месте можно запускать.</span><span class="sxs-lookup"><span data-stu-id="354a4-123">Apps from anywhere can be run.</span></span>|
+|<span data-ttu-id="6bc43-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="6bc43-111">notConfigured</span></span>|<span data-ttu-id="6bc43-112">нуль</span><span class="sxs-lookup"><span data-stu-id="6bc43-112">0</span></span>|<span data-ttu-id="6bc43-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="6bc43-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="6bc43-114">Макаппсторе</span><span class="sxs-lookup"><span data-stu-id="6bc43-114">macAppStore</span></span>|<span data-ttu-id="6bc43-115">1,1</span><span class="sxs-lookup"><span data-stu-id="6bc43-115">1</span></span>|<span data-ttu-id="6bc43-116">Можно запускать только приложения из Mac аппсторе.</span><span class="sxs-lookup"><span data-stu-id="6bc43-116">Only apps from the Mac AppStore can be run.</span></span>|
+|<span data-ttu-id="6bc43-117">Макаппстореандидентифиеддевелоперс</span><span class="sxs-lookup"><span data-stu-id="6bc43-117">macAppStoreAndIdentifiedDevelopers</span></span>|<span data-ttu-id="6bc43-118">2</span><span class="sxs-lookup"><span data-stu-id="6bc43-118">2</span></span>|<span data-ttu-id="6bc43-119">Можно запускать только приложения из Mac аппсторе и идентифицированных разработчиков.</span><span class="sxs-lookup"><span data-stu-id="6bc43-119">Only apps from the Mac AppStore and identified developers can be run.</span></span>|
+|<span data-ttu-id="6bc43-120">всей</span><span class="sxs-lookup"><span data-stu-id="6bc43-120">anywhere</span></span>|<span data-ttu-id="6bc43-121">4</span><span class="sxs-lookup"><span data-stu-id="6bc43-121">3</span></span>|<span data-ttu-id="6bc43-122">Приложения из любого места могут быть запущены.</span><span class="sxs-lookup"><span data-stu-id="6bc43-122">Apps from anywhere can be run.</span></span>|
 
 
 

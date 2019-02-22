@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления localSecurityOptionsInformationDisplayedOnLockScreenType
-description: Возможные значения для LocalSecurityOptionsInformationDisplayedOnLockScreen
-localization_priority: Normal
+title: тип перечисления Локалсекуритйоптионсинформатиондисплайедонлоккскринтипе
+description: Возможные значения для Локалсекуритйоптионсинформатиондисплайедонлоккскрин
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac9c00098a881a30abb4348de6bc88b2346adb0f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5b44d24e5235251b5232ecb1bd5b2ab21059e32a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166719"
 ---
-# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a><span data-ttu-id="72299-103">Тип перечисления localSecurityOptionsInformationDisplayedOnLockScreenType</span><span class="sxs-lookup"><span data-stu-id="72299-103">localSecurityOptionsInformationDisplayedOnLockScreenType enum type</span></span>
+# <a name="localsecurityoptionsinformationdisplayedonlockscreentype-enum-type"></a><span data-ttu-id="e8647-103">тип перечисления Локалсекуритйоптионсинформатиондисплайедонлоккскринтипе</span><span class="sxs-lookup"><span data-stu-id="e8647-103">localSecurityOptionsInformationDisplayedOnLockScreenType enum type</span></span>
 
-> <span data-ttu-id="72299-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="72299-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="72299-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="72299-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e8647-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e8647-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="72299-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="72299-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e8647-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e8647-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="72299-107">Возможные значения для LocalSecurityOptionsInformationDisplayedOnLockScreen</span><span class="sxs-lookup"><span data-stu-id="72299-107">Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen</span></span>
+<span data-ttu-id="e8647-106">Возможные значения для Локалсекуритйоптионсинформатиондисплайедонлоккскрин</span><span class="sxs-lookup"><span data-stu-id="e8647-106">Possible values for LocalSecurityOptionsInformationDisplayedOnLockScreen</span></span>
 
-## <a name="members"></a><span data-ttu-id="72299-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="72299-108">Members</span></span>
-|<span data-ttu-id="72299-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="72299-109">Member</span></span>|<span data-ttu-id="72299-110">Значение</span><span class="sxs-lookup"><span data-stu-id="72299-110">Value</span></span>|<span data-ttu-id="72299-111">Описание</span><span class="sxs-lookup"><span data-stu-id="72299-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e8647-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="e8647-107">Members</span></span>
+|<span data-ttu-id="e8647-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="e8647-108">Member</span></span>|<span data-ttu-id="e8647-109">Значение</span><span class="sxs-lookup"><span data-stu-id="e8647-109">Value</span></span>|<span data-ttu-id="e8647-110">Описание</span><span class="sxs-lookup"><span data-stu-id="e8647-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="72299-112">notConfigured</span><span class="sxs-lookup"><span data-stu-id="72299-112">notConfigured</span></span>|<span data-ttu-id="72299-113">0</span><span class="sxs-lookup"><span data-stu-id="72299-113">0</span></span>|<span data-ttu-id="72299-114">Не настроен</span><span class="sxs-lookup"><span data-stu-id="72299-114">Not Configured</span></span>|
-|<span data-ttu-id="72299-115">Администраторы</span><span class="sxs-lookup"><span data-stu-id="72299-115">administrators</span></span>|<span data-ttu-id="72299-116">1</span><span class="sxs-lookup"><span data-stu-id="72299-116">1</span></span>|<span data-ttu-id="72299-117">Отображаемое имя пользователя, домен и имена</span><span class="sxs-lookup"><span data-stu-id="72299-117">User display name, domain and user names</span></span>|
-|<span data-ttu-id="72299-118">administratorsAndPowerUsers</span><span class="sxs-lookup"><span data-stu-id="72299-118">administratorsAndPowerUsers</span></span>|<span data-ttu-id="72299-119">2</span><span class="sxs-lookup"><span data-stu-id="72299-119">2</span></span>|<span data-ttu-id="72299-120">Только имя пользователя</span><span class="sxs-lookup"><span data-stu-id="72299-120">User display name only</span></span>|
-|<span data-ttu-id="72299-121">administratorsAndInteractiveUsers</span><span class="sxs-lookup"><span data-stu-id="72299-121">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="72299-122">3</span><span class="sxs-lookup"><span data-stu-id="72299-122">3</span></span>|<span data-ttu-id="72299-123">Не отображать сведения о пользователе</span><span class="sxs-lookup"><span data-stu-id="72299-123">Do not display user information</span></span>|
+|<span data-ttu-id="e8647-111">notConfigured</span><span class="sxs-lookup"><span data-stu-id="e8647-111">notConfigured</span></span>|<span data-ttu-id="e8647-112">нуль</span><span class="sxs-lookup"><span data-stu-id="e8647-112">0</span></span>|<span data-ttu-id="e8647-113">Не настроено</span><span class="sxs-lookup"><span data-stu-id="e8647-113">Not Configured</span></span>|
+|<span data-ttu-id="e8647-114">«</span><span class="sxs-lookup"><span data-stu-id="e8647-114">administrators</span></span>|<span data-ttu-id="e8647-115">1,1</span><span class="sxs-lookup"><span data-stu-id="e8647-115">1</span></span>|<span data-ttu-id="e8647-116">Отображаемое имя пользователя, имена доменов и пользователей</span><span class="sxs-lookup"><span data-stu-id="e8647-116">User display name, domain and user names</span></span>|
+|<span data-ttu-id="e8647-117">Администраторсандповерусерс</span><span class="sxs-lookup"><span data-stu-id="e8647-117">administratorsAndPowerUsers</span></span>|<span data-ttu-id="e8647-118">2</span><span class="sxs-lookup"><span data-stu-id="e8647-118">2</span></span>|<span data-ttu-id="e8647-119">Только отображаемое имя пользователя</span><span class="sxs-lookup"><span data-stu-id="e8647-119">User display name only</span></span>|
+|<span data-ttu-id="e8647-120">Администраторсандинтерактивеусерс</span><span class="sxs-lookup"><span data-stu-id="e8647-120">administratorsAndInteractiveUsers</span></span>|<span data-ttu-id="e8647-121">4</span><span class="sxs-lookup"><span data-stu-id="e8647-121">3</span></span>|<span data-ttu-id="e8647-122">Не отображать сведения о пользователе</span><span class="sxs-lookup"><span data-stu-id="e8647-122">Do not display user information</span></span>|
 
 
 

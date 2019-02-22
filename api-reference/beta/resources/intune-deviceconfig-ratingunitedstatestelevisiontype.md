@@ -1,35 +1,35 @@
 ---
-title: Тип перечисления ratingUnitedStatesTelevisionType
-description: Метки TV оценки содержимого в США
-localization_priority: Normal
+title: тип перечисления Ратингунитедстатестелевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 405aad7e63d1c323503dde0b0bd8829702a7dcaf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d016565ba9fdbb62ea24d39d52f0e2931bab3117
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403359"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30166838"
 ---
-# <a name="ratingunitedstatestelevisiontype-enum-type"></a><span data-ttu-id="f5d67-103">Тип перечисления ratingUnitedStatesTelevisionType</span><span class="sxs-lookup"><span data-stu-id="f5d67-103">ratingUnitedStatesTelevisionType enum type</span></span>
+# <a name="ratingunitedstatestelevisiontype-enum-type"></a><span data-ttu-id="3d236-103">тип перечисления Ратингунитедстатестелевисионтипе</span><span class="sxs-lookup"><span data-stu-id="3d236-103">ratingUnitedStatesTelevisionType enum type</span></span>
 
-> <span data-ttu-id="f5d67-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="f5d67-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="f5d67-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f5d67-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3d236-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d236-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f5d67-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f5d67-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3d236-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3d236-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f5d67-107">Метки TV оценки содержимого в США</span><span class="sxs-lookup"><span data-stu-id="f5d67-107">TV content rating labels in United States</span></span>
+<span data-ttu-id="3d236-106">Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах</span><span class="sxs-lookup"><span data-stu-id="3d236-106">TV content rating labels in United States</span></span>
 
-## <a name="members"></a><span data-ttu-id="f5d67-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="f5d67-108">Members</span></span>
-|<span data-ttu-id="f5d67-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="f5d67-109">Member</span></span>|<span data-ttu-id="f5d67-110">Значение</span><span class="sxs-lookup"><span data-stu-id="f5d67-110">Value</span></span>|<span data-ttu-id="f5d67-111">Описание</span><span class="sxs-lookup"><span data-stu-id="f5d67-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3d236-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="3d236-107">Members</span></span>
+|<span data-ttu-id="3d236-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="3d236-108">Member</span></span>|<span data-ttu-id="3d236-109">Значение</span><span class="sxs-lookup"><span data-stu-id="3d236-109">Value</span></span>|<span data-ttu-id="3d236-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3d236-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="f5d67-112">allAllowed</span><span class="sxs-lookup"><span data-stu-id="f5d67-112">allAllowed</span></span>|<span data-ttu-id="f5d67-113">0</span><span class="sxs-lookup"><span data-stu-id="f5d67-113">0</span></span>|<span data-ttu-id="f5d67-114">Значение по умолчанию, разрешить всем TV показывает контента</span><span class="sxs-lookup"><span data-stu-id="f5d67-114">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="f5d67-115">allBlocked</span><span class="sxs-lookup"><span data-stu-id="f5d67-115">allBlocked</span></span>|<span data-ttu-id="f5d67-116">1</span><span class="sxs-lookup"><span data-stu-id="f5d67-116">1</span></span>|<span data-ttu-id="f5d67-117">Не допускайте использование Любого показывает контента</span><span class="sxs-lookup"><span data-stu-id="f5d67-117">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="f5d67-118">childrenAll</span><span class="sxs-lookup"><span data-stu-id="f5d67-118">childrenAll</span></span>|<span data-ttu-id="f5d67-119">2</span><span class="sxs-lookup"><span data-stu-id="f5d67-119">2</span></span>|<span data-ttu-id="f5d67-120">TV-Y, все дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="f5d67-120">TV-Y, all children</span></span>|
-|<span data-ttu-id="f5d67-121">childrenAbove7</span><span class="sxs-lookup"><span data-stu-id="f5d67-121">childrenAbove7</span></span>|<span data-ttu-id="f5d67-122">3</span><span class="sxs-lookup"><span data-stu-id="f5d67-122">3</span></span>|<span data-ttu-id="f5d67-123">TV-Y7 дочерние элементы, срок действия 7 и выше</span><span class="sxs-lookup"><span data-stu-id="f5d67-123">TV-Y7, children age 7 and above</span></span>|
-|<span data-ttu-id="f5d67-124">Общие</span><span class="sxs-lookup"><span data-stu-id="f5d67-124">general</span></span>|<span data-ttu-id="f5d67-125">4</span><span class="sxs-lookup"><span data-stu-id="f5d67-125">4</span></span>|<span data-ttu-id="f5d67-126">TV-G, подходящее для любого возраста</span><span class="sxs-lookup"><span data-stu-id="f5d67-126">TV-G, suitable for all ages</span></span>|
-|<span data-ttu-id="f5d67-127">parentalGuidance</span><span class="sxs-lookup"><span data-stu-id="f5d67-127">parentalGuidance</span></span>|<span data-ttu-id="f5d67-128">5</span><span class="sxs-lookup"><span data-stu-id="f5d67-128">5</span></span>|<span data-ttu-id="f5d67-129">TV страница, родительского участия</span><span class="sxs-lookup"><span data-stu-id="f5d67-129">TV-PG, parental guidance</span></span>|
-|<span data-ttu-id="f5d67-130">childrenAbove14</span><span class="sxs-lookup"><span data-stu-id="f5d67-130">childrenAbove14</span></span>|<span data-ttu-id="f5d67-131">6</span><span class="sxs-lookup"><span data-stu-id="f5d67-131">6</span></span>|<span data-ttu-id="f5d67-132">TV-14, дочерние элементы, срок действия 14 и выше</span><span class="sxs-lookup"><span data-stu-id="f5d67-132">TV-14, children age 14 and above</span></span>|
-|<span data-ttu-id="f5d67-133">для взрослых</span><span class="sxs-lookup"><span data-stu-id="f5d67-133">adults</span></span>|<span data-ttu-id="f5d67-134">7</span><span class="sxs-lookup"><span data-stu-id="f5d67-134">7</span></span>|<span data-ttu-id="f5d67-135">TV-агент Управления, только для взрослых</span><span class="sxs-lookup"><span data-stu-id="f5d67-135">TV-MA, adults only</span></span>|
+|<span data-ttu-id="3d236-111">Аллалловед</span><span class="sxs-lookup"><span data-stu-id="3d236-111">allAllowed</span></span>|<span data-ttu-id="3d236-112">нуль</span><span class="sxs-lookup"><span data-stu-id="3d236-112">0</span></span>|<span data-ttu-id="3d236-113">Значение по умолчанию, разрешить все показы контента</span><span class="sxs-lookup"><span data-stu-id="3d236-113">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="3d236-114">Аллблоккед</span><span class="sxs-lookup"><span data-stu-id="3d236-114">allBlocked</span></span>|<span data-ttu-id="3d236-115">1,1</span><span class="sxs-lookup"><span data-stu-id="3d236-115">1</span></span>|<span data-ttu-id="3d236-116">Не разрешать показ контента</span><span class="sxs-lookup"><span data-stu-id="3d236-116">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="3d236-117">Чилдреналл</span><span class="sxs-lookup"><span data-stu-id="3d236-117">childrenAll</span></span>|<span data-ttu-id="3d236-118">2</span><span class="sxs-lookup"><span data-stu-id="3d236-118">2</span></span>|<span data-ttu-id="3d236-119">ТВ-Y, все дочерние элементы</span><span class="sxs-lookup"><span data-stu-id="3d236-119">TV-Y, all children</span></span>|
+|<span data-ttu-id="3d236-120">childrenAbove7</span><span class="sxs-lookup"><span data-stu-id="3d236-120">childrenAbove7</span></span>|<span data-ttu-id="3d236-121">4</span><span class="sxs-lookup"><span data-stu-id="3d236-121">3</span></span>|<span data-ttu-id="3d236-122">ТВ-Y7, детей от 7 лет и выше</span><span class="sxs-lookup"><span data-stu-id="3d236-122">TV-Y7, children age 7 and above</span></span>|
+|<span data-ttu-id="3d236-123">обобщен</span><span class="sxs-lookup"><span data-stu-id="3d236-123">general</span></span>|<span data-ttu-id="3d236-124">4</span><span class="sxs-lookup"><span data-stu-id="3d236-124">4</span></span>|<span data-ttu-id="3d236-125">ТЕЛЕВИДЕНИЕ (TV-G), пригодный для всех лет</span><span class="sxs-lookup"><span data-stu-id="3d236-125">TV-G, suitable for all ages</span></span>|
+|<span data-ttu-id="3d236-126">Паренталгуиданце</span><span class="sxs-lookup"><span data-stu-id="3d236-126">parentalGuidance</span></span>|<span data-ttu-id="3d236-127">17:00</span><span class="sxs-lookup"><span data-stu-id="3d236-127">5</span></span>|<span data-ttu-id="3d236-128">TV-PG, родительский совет</span><span class="sxs-lookup"><span data-stu-id="3d236-128">TV-PG, parental guidance</span></span>|
+|<span data-ttu-id="3d236-129">childrenAbove14</span><span class="sxs-lookup"><span data-stu-id="3d236-129">childrenAbove14</span></span>|<span data-ttu-id="3d236-130">6</span><span class="sxs-lookup"><span data-stu-id="3d236-130">6</span></span>|<span data-ttu-id="3d236-131">TV-14, детей от 14 лет и выше</span><span class="sxs-lookup"><span data-stu-id="3d236-131">TV-14, children age 14 and above</span></span>|
+|<span data-ttu-id="3d236-132">взрослые</span><span class="sxs-lookup"><span data-stu-id="3d236-132">adults</span></span>|<span data-ttu-id="3d236-133">7</span><span class="sxs-lookup"><span data-stu-id="3d236-133">7</span></span>|<span data-ttu-id="3d236-134">Только для передачи ТЕЛЕПЕРЕДАЧ-мА</span><span class="sxs-lookup"><span data-stu-id="3d236-134">TV-MA, adults only</span></span>|
 
 
 
