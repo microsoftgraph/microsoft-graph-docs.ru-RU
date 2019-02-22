@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления defenderPromptForSampleSubmission
-description: Возможные значения для запроса пользователя для отправки примеров.
-localization_priority: Normal
+title: тип перечисления Дефендерпромптфорсамплесубмиссион
+description: Возможные значения для подтверждения пользователя при отправке образцов.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b706c0086791543a5cbb13d26ae1d86a2e3b1760
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4eb469516dd4ae960ae351843df31f07ead90edf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403317"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30146342"
 ---
-# <a name="defenderpromptforsamplesubmission-enum-type"></a><span data-ttu-id="da443-103">Тип перечисления defenderPromptForSampleSubmission</span><span class="sxs-lookup"><span data-stu-id="da443-103">defenderPromptForSampleSubmission enum type</span></span>
+# <a name="defenderpromptforsamplesubmission-enum-type"></a><span data-ttu-id="81787-103">тип перечисления Дефендерпромптфорсамплесубмиссион</span><span class="sxs-lookup"><span data-stu-id="81787-103">defenderPromptForSampleSubmission enum type</span></span>
 
-> <span data-ttu-id="da443-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="da443-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="da443-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="da443-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="81787-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="81787-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="da443-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="da443-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="81787-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="81787-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="da443-107">Возможные значения для запроса пользователя для отправки примеров.</span><span class="sxs-lookup"><span data-stu-id="da443-107">Possible values for prompting user for samples submission.</span></span>
+<span data-ttu-id="81787-106">Возможные значения для подтверждения пользователя при отправке образцов.</span><span class="sxs-lookup"><span data-stu-id="81787-106">Possible values for prompting user for samples submission.</span></span>
 
-## <a name="members"></a><span data-ttu-id="da443-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="da443-108">Members</span></span>
-|<span data-ttu-id="da443-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="da443-109">Member</span></span>|<span data-ttu-id="da443-110">Значение</span><span class="sxs-lookup"><span data-stu-id="da443-110">Value</span></span>|<span data-ttu-id="da443-111">Описание</span><span class="sxs-lookup"><span data-stu-id="da443-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="81787-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="81787-107">Members</span></span>
+|<span data-ttu-id="81787-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="81787-108">Member</span></span>|<span data-ttu-id="81787-109">Значение</span><span class="sxs-lookup"><span data-stu-id="81787-109">Value</span></span>|<span data-ttu-id="81787-110">Описание</span><span class="sxs-lookup"><span data-stu-id="81787-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="da443-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="da443-112">userDefined</span></span>|<span data-ttu-id="da443-113">0</span><span class="sxs-lookup"><span data-stu-id="da443-113">0</span></span>|<span data-ttu-id="da443-114">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="da443-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="da443-115">alwaysPrompt</span><span class="sxs-lookup"><span data-stu-id="da443-115">alwaysPrompt</span></span>|<span data-ttu-id="da443-116">1</span><span class="sxs-lookup"><span data-stu-id="da443-116">1</span></span>|<span data-ttu-id="da443-117">Всегда запрашивать пользователя.</span><span class="sxs-lookup"><span data-stu-id="da443-117">Always prompt.</span></span>|
-|<span data-ttu-id="da443-118">promptBeforeSendingPersonalData</span><span class="sxs-lookup"><span data-stu-id="da443-118">promptBeforeSendingPersonalData</span></span>|<span data-ttu-id="da443-119">2</span><span class="sxs-lookup"><span data-stu-id="da443-119">2</span></span>|<span data-ttu-id="da443-120">Запрашивать перед отправкой личных данных.</span><span class="sxs-lookup"><span data-stu-id="da443-120">Prompt before sending personal data.</span></span>|
-|<span data-ttu-id="da443-121">neverSendData</span><span class="sxs-lookup"><span data-stu-id="da443-121">neverSendData</span></span>|<span data-ttu-id="da443-122">3</span><span class="sxs-lookup"><span data-stu-id="da443-122">3</span></span>|<span data-ttu-id="da443-123">Никогда не отправлять данные.</span><span class="sxs-lookup"><span data-stu-id="da443-123">Never send data.</span></span>|
-|<span data-ttu-id="da443-124">sendAllDataWithoutPrompting</span><span class="sxs-lookup"><span data-stu-id="da443-124">sendAllDataWithoutPrompting</span></span>|<span data-ttu-id="da443-125">4</span><span class="sxs-lookup"><span data-stu-id="da443-125">4</span></span>|<span data-ttu-id="da443-126">Отправьте все данные без запроса.</span><span class="sxs-lookup"><span data-stu-id="da443-126">Send all data without prompting.</span></span>|
+|<span data-ttu-id="81787-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="81787-111">userDefined</span></span>|<span data-ttu-id="81787-112">нуль</span><span class="sxs-lookup"><span data-stu-id="81787-112">0</span></span>|<span data-ttu-id="81787-113">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="81787-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="81787-114">Алвайспромпт</span><span class="sxs-lookup"><span data-stu-id="81787-114">alwaysPrompt</span></span>|<span data-ttu-id="81787-115">1,1</span><span class="sxs-lookup"><span data-stu-id="81787-115">1</span></span>|<span data-ttu-id="81787-116">Всегда запрашивать.</span><span class="sxs-lookup"><span data-stu-id="81787-116">Always prompt.</span></span>|
+|<span data-ttu-id="81787-117">Промптбефоресендингперсоналдата</span><span class="sxs-lookup"><span data-stu-id="81787-117">promptBeforeSendingPersonalData</span></span>|<span data-ttu-id="81787-118">2</span><span class="sxs-lookup"><span data-stu-id="81787-118">2</span></span>|<span data-ttu-id="81787-119">ВыДавать запрос перед отправкой персональных данных.</span><span class="sxs-lookup"><span data-stu-id="81787-119">Prompt before sending personal data.</span></span>|
+|<span data-ttu-id="81787-120">Неверсенддата</span><span class="sxs-lookup"><span data-stu-id="81787-120">neverSendData</span></span>|<span data-ttu-id="81787-121">4</span><span class="sxs-lookup"><span data-stu-id="81787-121">3</span></span>|<span data-ttu-id="81787-122">Никогда не отправлять данные.</span><span class="sxs-lookup"><span data-stu-id="81787-122">Never send data.</span></span>|
+|<span data-ttu-id="81787-123">Сендаллдатависаутпромптинг</span><span class="sxs-lookup"><span data-stu-id="81787-123">sendAllDataWithoutPrompting</span></span>|<span data-ttu-id="81787-124">4</span><span class="sxs-lookup"><span data-stu-id="81787-124">4</span></span>|<span data-ttu-id="81787-125">Отправлять все данные без выдачи запросов.</span><span class="sxs-lookup"><span data-stu-id="81787-125">Send all data without prompting.</span></span>|
 
 
 

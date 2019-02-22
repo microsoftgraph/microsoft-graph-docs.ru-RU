@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления windowsUserType
+title: тип перечисления Виндовсусертипе
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a86de22dddf84cb32b1558d3f6b26294f60f4187
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f2272e293d2cc74185376707bdc002031624a9c2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406117"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139153"
 ---
-# <a name="windowsusertype-enum-type"></a><span data-ttu-id="17746-103">Тип перечисления windowsUserType</span><span class="sxs-lookup"><span data-stu-id="17746-103">windowsUserType enum type</span></span>
+# <a name="windowsusertype-enum-type"></a><span data-ttu-id="3671e-103">тип перечисления Виндовсусертипе</span><span class="sxs-lookup"><span data-stu-id="3671e-103">windowsUserType enum type</span></span>
 
-> <span data-ttu-id="17746-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="17746-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="17746-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="17746-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3671e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3671e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="17746-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="17746-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3671e-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3671e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="17746-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="17746-107">Not yet documented</span></span>
+<span data-ttu-id="3671e-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="3671e-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="17746-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="17746-108">Members</span></span>
-|<span data-ttu-id="17746-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="17746-109">Member</span></span>|<span data-ttu-id="17746-110">Значение</span><span class="sxs-lookup"><span data-stu-id="17746-110">Value</span></span>|<span data-ttu-id="17746-111">Описание</span><span class="sxs-lookup"><span data-stu-id="17746-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3671e-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="3671e-107">Members</span></span>
+|<span data-ttu-id="3671e-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="3671e-108">Member</span></span>|<span data-ttu-id="3671e-109">Значение</span><span class="sxs-lookup"><span data-stu-id="3671e-109">Value</span></span>|<span data-ttu-id="3671e-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3671e-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="17746-112">Администратор</span><span class="sxs-lookup"><span data-stu-id="17746-112">administrator</span></span>|<span data-ttu-id="17746-113">0</span><span class="sxs-lookup"><span data-stu-id="17746-113">0</span></span>|<span data-ttu-id="17746-114">Н/Д</span><span class="sxs-lookup"><span data-stu-id="17746-114">Not yet documented</span></span>|
-|<span data-ttu-id="17746-115">стандартный</span><span class="sxs-lookup"><span data-stu-id="17746-115">standard</span></span>|<span data-ttu-id="17746-116">1</span><span class="sxs-lookup"><span data-stu-id="17746-116">1</span></span>|<span data-ttu-id="17746-117">Н/Д</span><span class="sxs-lookup"><span data-stu-id="17746-117">Not yet documented</span></span>|
+|<span data-ttu-id="3671e-111">имени</span><span class="sxs-lookup"><span data-stu-id="3671e-111">administrator</span></span>|<span data-ttu-id="3671e-112">нуль</span><span class="sxs-lookup"><span data-stu-id="3671e-112">0</span></span>|<span data-ttu-id="3671e-113">Н/Д</span><span class="sxs-lookup"><span data-stu-id="3671e-113">Not yet documented</span></span>|
+|<span data-ttu-id="3671e-114">Стандартный</span><span class="sxs-lookup"><span data-stu-id="3671e-114">standard</span></span>|<span data-ttu-id="3671e-115">1,1</span><span class="sxs-lookup"><span data-stu-id="3671e-115">1</span></span>|<span data-ttu-id="3671e-116">Н/Д</span><span class="sxs-lookup"><span data-stu-id="3671e-116">Not yet documented</span></span>|
 
 
 

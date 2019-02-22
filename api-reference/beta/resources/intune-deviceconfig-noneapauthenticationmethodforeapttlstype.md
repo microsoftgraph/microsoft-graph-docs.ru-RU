@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления nonEapAuthenticationMethodForEapTtlsType
-description: Методы EAP без проверки подлинности.
-localization_priority: Normal
+title: тип перечисления Нонеапаусентикатионмесодфореапттлстипе
+description: Методы, отличные от EAP, для проверки подлинности.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2f14c98118541e6eeb6cb48fd54ac3fb69a722b0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 14ac915d14816a678aa395054548a1b1b5f035ee
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145516"
 ---
-# <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a><span data-ttu-id="691cd-103">Тип перечисления nonEapAuthenticationMethodForEapTtlsType</span><span class="sxs-lookup"><span data-stu-id="691cd-103">nonEapAuthenticationMethodForEapTtlsType enum type</span></span>
+# <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a><span data-ttu-id="38616-103">тип перечисления Нонеапаусентикатионмесодфореапттлстипе</span><span class="sxs-lookup"><span data-stu-id="38616-103">nonEapAuthenticationMethodForEapTtlsType enum type</span></span>
 
-> <span data-ttu-id="691cd-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="691cd-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="691cd-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="691cd-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="38616-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="38616-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="691cd-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="691cd-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="38616-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="38616-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="691cd-107">Методы EAP без проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="691cd-107">Non-EAP methods for authentication.</span></span>
+<span data-ttu-id="38616-106">Методы, отличные от EAP, для проверки подлинности.</span><span class="sxs-lookup"><span data-stu-id="38616-106">Non-EAP methods for authentication.</span></span>
 
-## <a name="members"></a><span data-ttu-id="691cd-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="691cd-108">Members</span></span>
-|<span data-ttu-id="691cd-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="691cd-109">Member</span></span>|<span data-ttu-id="691cd-110">Значение</span><span class="sxs-lookup"><span data-stu-id="691cd-110">Value</span></span>|<span data-ttu-id="691cd-111">Описание</span><span class="sxs-lookup"><span data-stu-id="691cd-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="38616-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="38616-107">Members</span></span>
+|<span data-ttu-id="38616-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="38616-108">Member</span></span>|<span data-ttu-id="38616-109">Значение</span><span class="sxs-lookup"><span data-stu-id="38616-109">Value</span></span>|<span data-ttu-id="38616-110">Описание</span><span class="sxs-lookup"><span data-stu-id="38616-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="691cd-112">незашифрованными</span><span class="sxs-lookup"><span data-stu-id="691cd-112">unencryptedPassword</span></span>|<span data-ttu-id="691cd-113">0</span><span class="sxs-lookup"><span data-stu-id="691cd-113">0</span></span>|<span data-ttu-id="691cd-114">Незашифрованный пароль (РАР).</span><span class="sxs-lookup"><span data-stu-id="691cd-114">Unencrypted password (PAP).</span></span>|
-|<span data-ttu-id="691cd-115">challengeHandshakeAuthenticationProtocol</span><span class="sxs-lookup"><span data-stu-id="691cd-115">challengeHandshakeAuthenticationProtocol</span></span>|<span data-ttu-id="691cd-116">1</span><span class="sxs-lookup"><span data-stu-id="691cd-116">1</span></span>|<span data-ttu-id="691cd-117">Проверка подлинности протокола пароля (CHAP).</span><span class="sxs-lookup"><span data-stu-id="691cd-117">Challenge Handshake Authentication Protocol (CHAP).</span></span>|
-|<span data-ttu-id="691cd-118">microsoftChap</span><span class="sxs-lookup"><span data-stu-id="691cd-118">microsoftChap</span></span>|<span data-ttu-id="691cd-119">2</span><span class="sxs-lookup"><span data-stu-id="691cd-119">2</span></span>| <span data-ttu-id="691cd-120">CHAP Microsoft (MS-CHAP).</span><span class="sxs-lookup"><span data-stu-id="691cd-120">Microsoft CHAP (MS-CHAP).</span></span>|
-|<span data-ttu-id="691cd-121">microsoftChapVersionTwo</span><span class="sxs-lookup"><span data-stu-id="691cd-121">microsoftChapVersionTwo</span></span>|<span data-ttu-id="691cd-122">3</span><span class="sxs-lookup"><span data-stu-id="691cd-122">3</span></span>|<span data-ttu-id="691cd-123">Версии 2 CHAP Microsoft (MS-CHAP v2).</span><span class="sxs-lookup"><span data-stu-id="691cd-123">Microsoft CHAP Version 2 (MS-CHAP v2).</span></span>|
+|<span data-ttu-id="38616-111">Уненкриптедпассворд</span><span class="sxs-lookup"><span data-stu-id="38616-111">unencryptedPassword</span></span>|<span data-ttu-id="38616-112">нуль</span><span class="sxs-lookup"><span data-stu-id="38616-112">0</span></span>|<span data-ttu-id="38616-113">Незашифрованный пароль (PAP).</span><span class="sxs-lookup"><span data-stu-id="38616-113">Unencrypted password (PAP).</span></span>|
+|<span data-ttu-id="38616-114">Чалленжехандшакеаусентикатионпротокол</span><span class="sxs-lookup"><span data-stu-id="38616-114">challengeHandshakeAuthenticationProtocol</span></span>|<span data-ttu-id="38616-115">1,1</span><span class="sxs-lookup"><span data-stu-id="38616-115">1</span></span>|<span data-ttu-id="38616-116">Протокол проверки поДлинности подтверждения связи (CHAP).</span><span class="sxs-lookup"><span data-stu-id="38616-116">Challenge Handshake Authentication Protocol (CHAP).</span></span>|
+|<span data-ttu-id="38616-117">Микрософтчап</span><span class="sxs-lookup"><span data-stu-id="38616-117">microsoftChap</span></span>|<span data-ttu-id="38616-118">2</span><span class="sxs-lookup"><span data-stu-id="38616-118">2</span></span>| <span data-ttu-id="38616-119">Microsoft CHAP (MS-CHAP).</span><span class="sxs-lookup"><span data-stu-id="38616-119">Microsoft CHAP (MS-CHAP).</span></span>|
+|<span data-ttu-id="38616-120">Микрософтчапверсионтво</span><span class="sxs-lookup"><span data-stu-id="38616-120">microsoftChapVersionTwo</span></span>|<span data-ttu-id="38616-121">4</span><span class="sxs-lookup"><span data-stu-id="38616-121">3</span></span>|<span data-ttu-id="38616-122">Microsoft CHAP версии 2 (MS-CHAP v2).</span><span class="sxs-lookup"><span data-stu-id="38616-122">Microsoft CHAP Version 2 (MS-CHAP v2).</span></span>|
 
 
 
