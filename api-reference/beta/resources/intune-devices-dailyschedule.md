@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса dailySchedule
-description: График ежедневного выполнения повторяющихся сценарий управления устройства.
-localization_priority: Normal
+title: Тип ресурса Даилисчедуле
+description: Расписание ежедневного запуска сценария управления для повторяющегося устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c4cbe48aecf3fe561becad4734f7de0b5f68ffa0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 310d9a4dbd995dfc162591547a40ace8c596f54b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415252"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152663"
 ---
-# <a name="dailyschedule-resource-type"></a><span data-ttu-id="bdbd2-103">Тип ресурса dailySchedule</span><span class="sxs-lookup"><span data-stu-id="bdbd2-103">dailySchedule resource type</span></span>
+# <a name="dailyschedule-resource-type"></a><span data-ttu-id="cc0f9-103">Тип ресурса Даилисчедуле</span><span class="sxs-lookup"><span data-stu-id="cc0f9-103">dailySchedule resource type</span></span>
 
-> <span data-ttu-id="bdbd2-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="bdbd2-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="bdbd2-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bdbd2-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cc0f9-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc0f9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="bdbd2-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bdbd2-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cc0f9-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cc0f9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bdbd2-107">График ежедневного выполнения повторяющихся сценарий управления устройства.</span><span class="sxs-lookup"><span data-stu-id="bdbd2-107">Daily run schedule of a recurring device management script.</span></span>
+<span data-ttu-id="cc0f9-106">Расписание ежедневного запуска сценария управления для повторяющегося устройства.</span><span class="sxs-lookup"><span data-stu-id="cc0f9-106">Daily run schedule of a recurring device management script.</span></span>
 
 
-<span data-ttu-id="bdbd2-108">Наследуется от [runSchedule](../resources/intune-devices-runschedule.md)</span><span class="sxs-lookup"><span data-stu-id="bdbd2-108">Inherits from [runSchedule](../resources/intune-devices-runschedule.md)</span></span>
+<span data-ttu-id="cc0f9-107">НаСледуется от [рунсчедуле](../resources/intune-devices-runschedule.md)</span><span class="sxs-lookup"><span data-stu-id="cc0f9-107">Inherits from [runSchedule](../resources/intune-devices-runschedule.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="bdbd2-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="bdbd2-109">Properties</span></span>
-|<span data-ttu-id="bdbd2-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="bdbd2-110">Property</span></span>|<span data-ttu-id="bdbd2-111">Тип</span><span class="sxs-lookup"><span data-stu-id="bdbd2-111">Type</span></span>|<span data-ttu-id="bdbd2-112">Описание</span><span class="sxs-lookup"><span data-stu-id="bdbd2-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cc0f9-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="cc0f9-108">Properties</span></span>
+|<span data-ttu-id="cc0f9-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="cc0f9-109">Property</span></span>|<span data-ttu-id="cc0f9-110">Тип</span><span class="sxs-lookup"><span data-stu-id="cc0f9-110">Type</span></span>|<span data-ttu-id="cc0f9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="cc0f9-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bdbd2-113">interval</span><span class="sxs-lookup"><span data-stu-id="bdbd2-113">interval</span></span>|<span data-ttu-id="bdbd2-114">Int32</span><span class="sxs-lookup"><span data-stu-id="bdbd2-114">Int32</span></span>|<span data-ttu-id="bdbd2-115">Интервал в днях</span><span class="sxs-lookup"><span data-stu-id="bdbd2-115">Interval in number of days</span></span>|
+|<span data-ttu-id="cc0f9-112">interval</span><span class="sxs-lookup"><span data-stu-id="cc0f9-112">interval</span></span>|<span data-ttu-id="cc0f9-113">Int32</span><span class="sxs-lookup"><span data-stu-id="cc0f9-113">Int32</span></span>|<span data-ttu-id="cc0f9-114">Интервал (количество дней)</span><span class="sxs-lookup"><span data-stu-id="cc0f9-114">Interval in number of days</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="bdbd2-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="bdbd2-116">Relationships</span></span>
-<span data-ttu-id="bdbd2-117">Нет</span><span class="sxs-lookup"><span data-stu-id="bdbd2-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="cc0f9-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="cc0f9-115">Relationships</span></span>
+<span data-ttu-id="cc0f9-116">Нет</span><span class="sxs-lookup"><span data-stu-id="cc0f9-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="bdbd2-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bdbd2-118">JSON Representation</span></span>
-<span data-ttu-id="bdbd2-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bdbd2-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cc0f9-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cc0f9-117">JSON Representation</span></span>
+<span data-ttu-id="cc0f9-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cc0f9-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.dailySchedule"

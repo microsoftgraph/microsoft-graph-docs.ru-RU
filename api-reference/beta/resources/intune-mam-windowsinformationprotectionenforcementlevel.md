@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления windowsInformationProtectionEnforcementLevel
-description: Возможные значения для защиты НЗП принудительное применение уровней
-localization_priority: Normal
+title: тип перечисления Виндовсинформатионпротектионенфорцементлевел
+description: Возможные значения для уровней принудительной защиты НЗП
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37ec9c781ea4a804260f7dff7b6586c042dcad48
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 184f5b6d296a37f9356c2cfeefe7c3ecdbdb6973
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417674"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150150"
 ---
-# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a><span data-ttu-id="1030a-103">Тип перечисления windowsInformationProtectionEnforcementLevel</span><span class="sxs-lookup"><span data-stu-id="1030a-103">windowsInformationProtectionEnforcementLevel enum type</span></span>
+# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a><span data-ttu-id="1e2d4-103">тип перечисления Виндовсинформатионпротектионенфорцементлевел</span><span class="sxs-lookup"><span data-stu-id="1e2d4-103">windowsInformationProtectionEnforcementLevel enum type</span></span>
 
-> <span data-ttu-id="1030a-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="1030a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="1030a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1030a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="1e2d4-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1e2d4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="1030a-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1030a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1e2d4-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1e2d4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="1030a-107">Возможные значения для защиты НЗП принудительное применение уровней</span><span class="sxs-lookup"><span data-stu-id="1030a-107">Possible values for WIP Protection enforcement levels</span></span>
+<span data-ttu-id="1e2d4-106">Возможные значения для уровней принудительной защиты НЗП</span><span class="sxs-lookup"><span data-stu-id="1e2d4-106">Possible values for WIP Protection enforcement levels</span></span>
 
-## <a name="members"></a><span data-ttu-id="1030a-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="1030a-108">Members</span></span>
-|<span data-ttu-id="1030a-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="1030a-109">Member</span></span>|<span data-ttu-id="1030a-110">Значение</span><span class="sxs-lookup"><span data-stu-id="1030a-110">Value</span></span>|<span data-ttu-id="1030a-111">Описание</span><span class="sxs-lookup"><span data-stu-id="1030a-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="1e2d4-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="1e2d4-107">Members</span></span>
+|<span data-ttu-id="1e2d4-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="1e2d4-108">Member</span></span>|<span data-ttu-id="1e2d4-109">Значение</span><span class="sxs-lookup"><span data-stu-id="1e2d4-109">Value</span></span>|<span data-ttu-id="1e2d4-110">Описание</span><span class="sxs-lookup"><span data-stu-id="1e2d4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="1030a-112">noProtection</span><span class="sxs-lookup"><span data-stu-id="1030a-112">noProtection</span></span>|<span data-ttu-id="1030a-113">0</span><span class="sxs-lookup"><span data-stu-id="1030a-113">0</span></span>|<span data-ttu-id="1030a-114">Принудительное применение без защиты</span><span class="sxs-lookup"><span data-stu-id="1030a-114">No protection enforcement</span></span>|
-|<span data-ttu-id="1030a-115">encryptAndAuditOnly</span><span class="sxs-lookup"><span data-stu-id="1030a-115">encryptAndAuditOnly</span></span>|<span data-ttu-id="1030a-116">1</span><span class="sxs-lookup"><span data-stu-id="1030a-116">1</span></span>|<span data-ttu-id="1030a-117">Шифрование и только аудита</span><span class="sxs-lookup"><span data-stu-id="1030a-117">Encrypt and Audit only</span></span>|
-|<span data-ttu-id="1030a-118">encryptAuditAndPrompt</span><span class="sxs-lookup"><span data-stu-id="1030a-118">encryptAuditAndPrompt</span></span>|<span data-ttu-id="1030a-119">2</span><span class="sxs-lookup"><span data-stu-id="1030a-119">2</span></span>|<span data-ttu-id="1030a-120">Шифрование, аудита и запрашивать пользователя</span><span class="sxs-lookup"><span data-stu-id="1030a-120">Encrypt, Audit and Prompt</span></span>|
-|<span data-ttu-id="1030a-121">encryptAuditAndBlock</span><span class="sxs-lookup"><span data-stu-id="1030a-121">encryptAuditAndBlock</span></span>|<span data-ttu-id="1030a-122">3</span><span class="sxs-lookup"><span data-stu-id="1030a-122">3</span></span>|<span data-ttu-id="1030a-123">Шифрование, аудита и блокировки</span><span class="sxs-lookup"><span data-stu-id="1030a-123">Encrypt, Audit and Block</span></span>|
+|<span data-ttu-id="1e2d4-111">Защита от неЗащищенных</span><span class="sxs-lookup"><span data-stu-id="1e2d4-111">noProtection</span></span>|<span data-ttu-id="1e2d4-112">нуль</span><span class="sxs-lookup"><span data-stu-id="1e2d4-112">0</span></span>|<span data-ttu-id="1e2d4-113">Защита не включена</span><span class="sxs-lookup"><span data-stu-id="1e2d4-113">No protection enforcement</span></span>|
+|<span data-ttu-id="1e2d4-114">Енкриптандаудитонли</span><span class="sxs-lookup"><span data-stu-id="1e2d4-114">encryptAndAuditOnly</span></span>|<span data-ttu-id="1e2d4-115">1,1</span><span class="sxs-lookup"><span data-stu-id="1e2d4-115">1</span></span>|<span data-ttu-id="1e2d4-116">Только шифрование и аудит</span><span class="sxs-lookup"><span data-stu-id="1e2d4-116">Encrypt and Audit only</span></span>|
+|<span data-ttu-id="1e2d4-117">Енкриптаудитандпромпт</span><span class="sxs-lookup"><span data-stu-id="1e2d4-117">encryptAuditAndPrompt</span></span>|<span data-ttu-id="1e2d4-118">2</span><span class="sxs-lookup"><span data-stu-id="1e2d4-118">2</span></span>|<span data-ttu-id="1e2d4-119">Шифрование, аудит и запрос</span><span class="sxs-lookup"><span data-stu-id="1e2d4-119">Encrypt, Audit and Prompt</span></span>|
+|<span data-ttu-id="1e2d4-120">Енкриптаудитандблокк</span><span class="sxs-lookup"><span data-stu-id="1e2d4-120">encryptAuditAndBlock</span></span>|<span data-ttu-id="1e2d4-121">4</span><span class="sxs-lookup"><span data-stu-id="1e2d4-121">3</span></span>|<span data-ttu-id="1e2d4-122">Шифрование, аудит и блокировка</span><span class="sxs-lookup"><span data-stu-id="1e2d4-122">Encrypt, Audit and Block</span></span>|
 
 
 

@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления siteSecurityLevel
+title: тип перечисления Ситесекуритилевел
 description: Возможные значения для уровня безопасности сайта.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c60e57907d83c84044e92f41da591474477f3c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d65ce6c6e3a57185b1daddcef4bec1732333bcc1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396653"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152831"
 ---
-# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="9832d-103">Тип перечисления siteSecurityLevel</span><span class="sxs-lookup"><span data-stu-id="9832d-103">siteSecurityLevel enum type</span></span>
+# <a name="sitesecuritylevel-enum-type"></a><span data-ttu-id="8264a-103">тип перечисления Ситесекуритилевел</span><span class="sxs-lookup"><span data-stu-id="8264a-103">siteSecurityLevel enum type</span></span>
 
-> <span data-ttu-id="9832d-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="9832d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="9832d-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9832d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8264a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8264a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9832d-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9832d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8264a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8264a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9832d-107">Возможные значения для уровня безопасности сайта.</span><span class="sxs-lookup"><span data-stu-id="9832d-107">Possible values for site security level.</span></span>
+<span data-ttu-id="8264a-106">Возможные значения для уровня безопасности сайта.</span><span class="sxs-lookup"><span data-stu-id="8264a-106">Possible values for site security level.</span></span>
 
-## <a name="members"></a><span data-ttu-id="9832d-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="9832d-108">Members</span></span>
-|<span data-ttu-id="9832d-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="9832d-109">Member</span></span>|<span data-ttu-id="9832d-110">Значение</span><span class="sxs-lookup"><span data-stu-id="9832d-110">Value</span></span>|<span data-ttu-id="9832d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="9832d-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="8264a-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="8264a-107">Members</span></span>
+|<span data-ttu-id="8264a-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="8264a-108">Member</span></span>|<span data-ttu-id="8264a-109">Значение</span><span class="sxs-lookup"><span data-stu-id="8264a-109">Value</span></span>|<span data-ttu-id="8264a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8264a-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9832d-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="9832d-112">userDefined</span></span>|<span data-ttu-id="9832d-113">0</span><span class="sxs-lookup"><span data-stu-id="9832d-113">0</span></span>|<span data-ttu-id="9832d-114">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="9832d-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="9832d-115">Низкая</span><span class="sxs-lookup"><span data-stu-id="9832d-115">low</span></span>|<span data-ttu-id="9832d-116">1</span><span class="sxs-lookup"><span data-stu-id="9832d-116">1</span></span>|<span data-ttu-id="9832d-117">Low.</span><span class="sxs-lookup"><span data-stu-id="9832d-117">Low.</span></span>|
-|<span data-ttu-id="9832d-118">mediumLow</span><span class="sxs-lookup"><span data-stu-id="9832d-118">mediumLow</span></span>|<span data-ttu-id="9832d-119">2</span><span class="sxs-lookup"><span data-stu-id="9832d-119">2</span></span>|<span data-ttu-id="9832d-120">Ниже среднего.</span><span class="sxs-lookup"><span data-stu-id="9832d-120">Medium-low.</span></span>|
-|<span data-ttu-id="9832d-121">medium</span><span class="sxs-lookup"><span data-stu-id="9832d-121">medium</span></span>|<span data-ttu-id="9832d-122">3</span><span class="sxs-lookup"><span data-stu-id="9832d-122">3</span></span>|<span data-ttu-id="9832d-123">От среднего.</span><span class="sxs-lookup"><span data-stu-id="9832d-123">Medium.</span></span>|
-|<span data-ttu-id="9832d-124">mediumHigh</span><span class="sxs-lookup"><span data-stu-id="9832d-124">mediumHigh</span></span>|<span data-ttu-id="9832d-125">4</span><span class="sxs-lookup"><span data-stu-id="9832d-125">4</span></span>|<span data-ttu-id="9832d-126">Выше среднего.</span><span class="sxs-lookup"><span data-stu-id="9832d-126">Medium-high.</span></span>|
-|<span data-ttu-id="9832d-127">Высокая</span><span class="sxs-lookup"><span data-stu-id="9832d-127">high</span></span>|<span data-ttu-id="9832d-128">5</span><span class="sxs-lookup"><span data-stu-id="9832d-128">5</span></span>|<span data-ttu-id="9832d-129">Высокая.</span><span class="sxs-lookup"><span data-stu-id="9832d-129">High.</span></span>|
+|<span data-ttu-id="8264a-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="8264a-111">userDefined</span></span>|<span data-ttu-id="8264a-112">нуль</span><span class="sxs-lookup"><span data-stu-id="8264a-112">0</span></span>|<span data-ttu-id="8264a-113">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="8264a-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="8264a-114">потребление</span><span class="sxs-lookup"><span data-stu-id="8264a-114">low</span></span>|<span data-ttu-id="8264a-115">1,1</span><span class="sxs-lookup"><span data-stu-id="8264a-115">1</span></span>|<span data-ttu-id="8264a-116">Потребление.</span><span class="sxs-lookup"><span data-stu-id="8264a-116">Low.</span></span>|
+|<span data-ttu-id="8264a-117">Медиумлов</span><span class="sxs-lookup"><span data-stu-id="8264a-117">mediumLow</span></span>|<span data-ttu-id="8264a-118">2</span><span class="sxs-lookup"><span data-stu-id="8264a-118">2</span></span>|<span data-ttu-id="8264a-119">Средняя — минимальная.</span><span class="sxs-lookup"><span data-stu-id="8264a-119">Medium-low.</span></span>|
+|<span data-ttu-id="8264a-120">medium</span><span class="sxs-lookup"><span data-stu-id="8264a-120">medium</span></span>|<span data-ttu-id="8264a-121">4</span><span class="sxs-lookup"><span data-stu-id="8264a-121">3</span></span>|<span data-ttu-id="8264a-122">Информации.</span><span class="sxs-lookup"><span data-stu-id="8264a-122">Medium.</span></span>|
+|<span data-ttu-id="8264a-123">Медиумхигх</span><span class="sxs-lookup"><span data-stu-id="8264a-123">mediumHigh</span></span>|<span data-ttu-id="8264a-124">4</span><span class="sxs-lookup"><span data-stu-id="8264a-124">4</span></span>|<span data-ttu-id="8264a-125">Умеренно высокий.</span><span class="sxs-lookup"><span data-stu-id="8264a-125">Medium-high.</span></span>|
+|<span data-ttu-id="8264a-126">высокоуровневых</span><span class="sxs-lookup"><span data-stu-id="8264a-126">high</span></span>|<span data-ttu-id="8264a-127">17:00</span><span class="sxs-lookup"><span data-stu-id="8264a-127">5</span></span>|<span data-ttu-id="8264a-128">Высокоуровневых.</span><span class="sxs-lookup"><span data-stu-id="8264a-128">High.</span></span>|
 
 
 

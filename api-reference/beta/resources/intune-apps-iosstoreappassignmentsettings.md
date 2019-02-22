@@ -1,37 +1,37 @@
 ---
 title: Тип ресурса iosStoreAppAssignmentSettings
 description: Содержит свойства, используемые при назначении мобильного приложения из магазина iOS группе.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 34a57d5aee554ddd47c0df863ff7fff373a7251a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4d700b6a736f7d4a33362a66aeb8b75e6df7c605
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29408028"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153965"
 ---
-# <a name="iosstoreappassignmentsettings-resource-type"></a><span data-ttu-id="8a249-103">Тип ресурса iosStoreAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="8a249-103">iosStoreAppAssignmentSettings resource type</span></span>
+# <a name="iosstoreappassignmentsettings-resource-type"></a><span data-ttu-id="a81f2-103">Тип ресурса iosStoreAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="a81f2-103">iosStoreAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="8a249-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="8a249-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8a249-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a249-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a81f2-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a81f2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8a249-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8a249-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a81f2-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a81f2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8a249-107">Содержит свойства, используемые при назначении мобильного приложения из магазина iOS группе.</span><span class="sxs-lookup"><span data-stu-id="8a249-107">Contains properties used to assign an iOS Store mobile app to a group.</span></span>
+<span data-ttu-id="a81f2-106">Содержит свойства, используемые при назначении мобильного приложения из магазина iOS группе.</span><span class="sxs-lookup"><span data-stu-id="a81f2-106">Contains properties used to assign an iOS Store mobile app to a group.</span></span>
 
 
-<span data-ttu-id="8a249-108">Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="8a249-108">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
+<span data-ttu-id="a81f2-107">Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="a81f2-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8a249-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="8a249-109">Properties</span></span>
-|<span data-ttu-id="8a249-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a249-110">Property</span></span>|<span data-ttu-id="8a249-111">Тип</span><span class="sxs-lookup"><span data-stu-id="8a249-111">Type</span></span>|<span data-ttu-id="8a249-112">Описание</span><span class="sxs-lookup"><span data-stu-id="8a249-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a81f2-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a81f2-108">Properties</span></span>
+|<span data-ttu-id="a81f2-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="a81f2-109">Property</span></span>|<span data-ttu-id="a81f2-110">Тип</span><span class="sxs-lookup"><span data-stu-id="a81f2-110">Type</span></span>|<span data-ttu-id="a81f2-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a81f2-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8a249-113">vpnConfigurationId</span><span class="sxs-lookup"><span data-stu-id="8a249-113">vpnConfigurationId</span></span>|<span data-ttu-id="8a249-114">String</span><span class="sxs-lookup"><span data-stu-id="8a249-114">String</span></span>|<span data-ttu-id="8a249-115">ИД конфигурации VPN, применяемой к этому приложению.</span><span class="sxs-lookup"><span data-stu-id="8a249-115">The VPN Configuration Id to apply for this app.</span></span>|
+|<span data-ttu-id="a81f2-112">vpnConfigurationId</span><span class="sxs-lookup"><span data-stu-id="a81f2-112">vpnConfigurationId</span></span>|<span data-ttu-id="a81f2-113">String</span><span class="sxs-lookup"><span data-stu-id="a81f2-113">String</span></span>|<span data-ttu-id="a81f2-114">ИД конфигурации VPN, применяемой к этому приложению.</span><span class="sxs-lookup"><span data-stu-id="a81f2-114">The VPN Configuration Id to apply for this app.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="8a249-116">Связи</span><span class="sxs-lookup"><span data-stu-id="8a249-116">Relationships</span></span>
-<span data-ttu-id="8a249-117">Нет</span><span class="sxs-lookup"><span data-stu-id="8a249-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="a81f2-115">Связи</span><span class="sxs-lookup"><span data-stu-id="a81f2-115">Relationships</span></span>
+<span data-ttu-id="a81f2-116">Нет</span><span class="sxs-lookup"><span data-stu-id="a81f2-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8a249-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8a249-118">JSON Representation</span></span>
-<span data-ttu-id="8a249-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8a249-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a81f2-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a81f2-117">JSON Representation</span></span>
+<span data-ttu-id="a81f2-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a81f2-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.iosStoreAppAssignmentSettings"

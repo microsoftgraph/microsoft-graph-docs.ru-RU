@@ -1,36 +1,36 @@
 ---
-title: Тип ресурса appLogCollectionDownloadDetails
+title: Тип ресурса Апплогколлектиондовнлоаддетаилс
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6946b3cd1aa60c4025859bd8d41d2dc4775bf39d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430568"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147756"
 ---
-# <a name="applogcollectiondownloaddetails-resource-type"></a><span data-ttu-id="c0ae9-103">Тип ресурса appLogCollectionDownloadDetails</span><span class="sxs-lookup"><span data-stu-id="c0ae9-103">appLogCollectionDownloadDetails resource type</span></span>
+# <a name="applogcollectiondownloaddetails-resource-type"></a><span data-ttu-id="6e0d9-103">Тип ресурса Апплогколлектиондовнлоаддетаилс</span><span class="sxs-lookup"><span data-stu-id="6e0d9-103">appLogCollectionDownloadDetails resource type</span></span>
 
-> <span data-ttu-id="c0ae9-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="c0ae9-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="c0ae9-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c0ae9-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="6e0d9-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6e0d9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="c0ae9-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c0ae9-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="6e0d9-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6e0d9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c0ae9-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="c0ae9-107">Not yet documented</span></span>
+<span data-ttu-id="6e0d9-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="6e0d9-106">Not yet documented</span></span>
 
-## <a name="properties"></a><span data-ttu-id="c0ae9-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="c0ae9-108">Properties</span></span>
-|<span data-ttu-id="c0ae9-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="c0ae9-109">Property</span></span>|<span data-ttu-id="c0ae9-110">Тип</span><span class="sxs-lookup"><span data-stu-id="c0ae9-110">Type</span></span>|<span data-ttu-id="c0ae9-111">Описание</span><span class="sxs-lookup"><span data-stu-id="c0ae9-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="6e0d9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6e0d9-107">Properties</span></span>
+|<span data-ttu-id="6e0d9-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6e0d9-108">Property</span></span>|<span data-ttu-id="6e0d9-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6e0d9-109">Type</span></span>|<span data-ttu-id="6e0d9-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6e0d9-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c0ae9-112">downloadUrl</span><span class="sxs-lookup"><span data-stu-id="c0ae9-112">downloadUrl</span></span>|<span data-ttu-id="c0ae9-113">String</span><span class="sxs-lookup"><span data-stu-id="c0ae9-113">String</span></span>|<span data-ttu-id="c0ae9-114">URL-адрес SAS загрузки для завершения AppLogUploadRequest</span><span class="sxs-lookup"><span data-stu-id="c0ae9-114">Download SAS Url for completed AppLogUploadRequest</span></span>|
-|<span data-ttu-id="c0ae9-115">decryptionKey</span><span class="sxs-lookup"><span data-stu-id="c0ae9-115">decryptionKey</span></span>|<span data-ttu-id="c0ae9-116">String</span><span class="sxs-lookup"><span data-stu-id="c0ae9-116">String</span></span>|<span data-ttu-id="c0ae9-117">DecryptionKey как строка</span><span class="sxs-lookup"><span data-stu-id="c0ae9-117">DecryptionKey as string</span></span>|
-|<span data-ttu-id="c0ae9-118">appLogDecryptionAlgorithm</span><span class="sxs-lookup"><span data-stu-id="c0ae9-118">appLogDecryptionAlgorithm</span></span>|[<span data-ttu-id="c0ae9-119">appLogDecryptionAlgorithm</span><span class="sxs-lookup"><span data-stu-id="c0ae9-119">appLogDecryptionAlgorithm</span></span>](../resources/intune-devices-applogdecryptionalgorithm.md)|<span data-ttu-id="c0ae9-120">DecryptionAlgorithm для содержимого.</span><span class="sxs-lookup"><span data-stu-id="c0ae9-120">DecryptionAlgorithm for Content.</span></span> <span data-ttu-id="c0ae9-121">Возможные значения: `aes256`.</span><span class="sxs-lookup"><span data-stu-id="c0ae9-121">Possible values are: `aes256`.</span></span>|
+|<span data-ttu-id="6e0d9-111">Довнлоадурл</span><span class="sxs-lookup"><span data-stu-id="6e0d9-111">downloadUrl</span></span>|<span data-ttu-id="6e0d9-112">String</span><span class="sxs-lookup"><span data-stu-id="6e0d9-112">String</span></span>|<span data-ttu-id="6e0d9-113">Скачать URL-адрес SAS для завершенного Апплогуплоадрекуест</span><span class="sxs-lookup"><span data-stu-id="6e0d9-113">Download SAS Url for completed AppLogUploadRequest</span></span>|
+|<span data-ttu-id="6e0d9-114">Декриптионкэй</span><span class="sxs-lookup"><span data-stu-id="6e0d9-114">decryptionKey</span></span>|<span data-ttu-id="6e0d9-115">String</span><span class="sxs-lookup"><span data-stu-id="6e0d9-115">String</span></span>|<span data-ttu-id="6e0d9-116">Декриптионкэй как строка</span><span class="sxs-lookup"><span data-stu-id="6e0d9-116">DecryptionKey as string</span></span>|
+|<span data-ttu-id="6e0d9-117">appLogDecryptionAlgorithm</span><span class="sxs-lookup"><span data-stu-id="6e0d9-117">appLogDecryptionAlgorithm</span></span>|[<span data-ttu-id="6e0d9-118">appLogDecryptionAlgorithm</span><span class="sxs-lookup"><span data-stu-id="6e0d9-118">appLogDecryptionAlgorithm</span></span>](../resources/intune-devices-applogdecryptionalgorithm.md)|<span data-ttu-id="6e0d9-119">Декриптионалгорисм для контента.</span><span class="sxs-lookup"><span data-stu-id="6e0d9-119">DecryptionAlgorithm for Content.</span></span> <span data-ttu-id="6e0d9-120">Возможные значения: `aes256`.</span><span class="sxs-lookup"><span data-stu-id="6e0d9-120">Possible values are: `aes256`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="c0ae9-122">Отношения</span><span class="sxs-lookup"><span data-stu-id="c0ae9-122">Relationships</span></span>
-<span data-ttu-id="c0ae9-123">Нет</span><span class="sxs-lookup"><span data-stu-id="c0ae9-123">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="6e0d9-121">Отношения</span><span class="sxs-lookup"><span data-stu-id="6e0d9-121">Relationships</span></span>
+<span data-ttu-id="6e0d9-122">Нет</span><span class="sxs-lookup"><span data-stu-id="6e0d9-122">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="c0ae9-124">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c0ae9-124">JSON Representation</span></span>
-<span data-ttu-id="c0ae9-125">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c0ae9-125">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="6e0d9-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="6e0d9-123">JSON Representation</span></span>
+<span data-ttu-id="6e0d9-124">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="6e0d9-124">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.appLogCollectionDownloadDetails"

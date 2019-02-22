@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса edgeHomeButtonConfiguration
-description: Домашняя страница кнопка конфигурации базовый класс, используемый для идентификации доступные параметры
-localization_priority: Normal
+title: Тип ресурса Еджехомебуттонконфигуратион
+description: Базовый класс конфигурации кнопки "Домашняя страница", используемый для определения доступных параметров
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 78a57388fa698c137c27393896bbba657089fff5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f42b28a537aa591556d453475898d8a8cc4884e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430733"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149471"
 ---
-# <a name="edgehomebuttonconfiguration-resource-type"></a><span data-ttu-id="264b5-103">Тип ресурса edgeHomeButtonConfiguration</span><span class="sxs-lookup"><span data-stu-id="264b5-103">edgeHomeButtonConfiguration resource type</span></span>
+# <a name="edgehomebuttonconfiguration-resource-type"></a><span data-ttu-id="3789a-103">Тип ресурса Еджехомебуттонконфигуратион</span><span class="sxs-lookup"><span data-stu-id="3789a-103">edgeHomeButtonConfiguration resource type</span></span>
 
-> <span data-ttu-id="264b5-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="264b5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="264b5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="264b5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3789a-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3789a-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="264b5-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="264b5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3789a-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3789a-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="264b5-107">Домашняя страница кнопка конфигурации базовый класс, используемый для идентификации доступные параметры</span><span class="sxs-lookup"><span data-stu-id="264b5-107">The home button configuration base class used to identify the available options</span></span>
+<span data-ttu-id="3789a-106">Базовый класс конфигурации кнопки "Домашняя страница", используемый для определения доступных параметров</span><span class="sxs-lookup"><span data-stu-id="3789a-106">The home button configuration base class used to identify the available options</span></span>
 
-## <a name="properties"></a><span data-ttu-id="264b5-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="264b5-108">Properties</span></span>
-|<span data-ttu-id="264b5-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="264b5-109">Property</span></span>|<span data-ttu-id="264b5-110">Тип</span><span class="sxs-lookup"><span data-stu-id="264b5-110">Type</span></span>|<span data-ttu-id="264b5-111">Описание</span><span class="sxs-lookup"><span data-stu-id="264b5-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3789a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="3789a-107">Properties</span></span>
+|<span data-ttu-id="3789a-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="3789a-108">Property</span></span>|<span data-ttu-id="3789a-109">Тип</span><span class="sxs-lookup"><span data-stu-id="3789a-109">Type</span></span>|<span data-ttu-id="3789a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3789a-110">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="264b5-112">Связи</span><span class="sxs-lookup"><span data-stu-id="264b5-112">Relationships</span></span>
-<span data-ttu-id="264b5-113">Нет</span><span class="sxs-lookup"><span data-stu-id="264b5-113">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="3789a-111">Связи</span><span class="sxs-lookup"><span data-stu-id="3789a-111">Relationships</span></span>
+<span data-ttu-id="3789a-112">Нет</span><span class="sxs-lookup"><span data-stu-id="3789a-112">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="264b5-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="264b5-114">JSON Representation</span></span>
-<span data-ttu-id="264b5-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="264b5-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3789a-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3789a-113">JSON Representation</span></span>
+<span data-ttu-id="3789a-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3789a-114">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.edgeHomeButtonConfiguration"

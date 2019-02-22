@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса windowsKioskActiveDirectoryGroup
-description: Класс, используемый для идентификации группу Azure Directory для базовой конфигурации
-localization_priority: Normal
+title: Тип ресурса Виндовскиоскактиведиректориграуп
+description: Класс, используемый для определения группы каталогов Azure для конфигурации киоска
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88b151b856809247cfa6e5e211cc45c6f33c4c53
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e9f3345462583ab24850449d4a6178df7d5e3688
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415714"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147077"
 ---
-# <a name="windowskioskactivedirectorygroup-resource-type"></a><span data-ttu-id="0da65-103">Тип ресурса windowsKioskActiveDirectoryGroup</span><span class="sxs-lookup"><span data-stu-id="0da65-103">windowsKioskActiveDirectoryGroup resource type</span></span>
+# <a name="windowskioskactivedirectorygroup-resource-type"></a><span data-ttu-id="8786c-103">Тип ресурса Виндовскиоскактиведиректориграуп</span><span class="sxs-lookup"><span data-stu-id="8786c-103">windowsKioskActiveDirectoryGroup resource type</span></span>
 
-> <span data-ttu-id="0da65-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0da65-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0da65-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0da65-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8786c-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8786c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0da65-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0da65-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8786c-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8786c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0da65-107">Класс, используемый для идентификации группу Azure Directory для базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="0da65-107">The class used to identify an Azure Directory group for the kiosk configuration</span></span>
+<span data-ttu-id="8786c-106">Класс, используемый для определения группы каталогов Azure для конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="8786c-106">The class used to identify an Azure Directory group for the kiosk configuration</span></span>
 
 
-<span data-ttu-id="0da65-108">Наследуется от [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="0da65-108">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
+<span data-ttu-id="8786c-107">НаСледуется от [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)</span><span class="sxs-lookup"><span data-stu-id="8786c-107">Inherits from [windowsKioskUser](../resources/intune-deviceconfig-windowskioskuser.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0da65-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="0da65-109">Properties</span></span>
-|<span data-ttu-id="0da65-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="0da65-110">Property</span></span>|<span data-ttu-id="0da65-111">Тип</span><span class="sxs-lookup"><span data-stu-id="0da65-111">Type</span></span>|<span data-ttu-id="0da65-112">Описание</span><span class="sxs-lookup"><span data-stu-id="0da65-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="8786c-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="8786c-108">Properties</span></span>
+|<span data-ttu-id="8786c-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="8786c-109">Property</span></span>|<span data-ttu-id="8786c-110">Тип</span><span class="sxs-lookup"><span data-stu-id="8786c-110">Type</span></span>|<span data-ttu-id="8786c-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8786c-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0da65-113">groupName</span><span class="sxs-lookup"><span data-stu-id="0da65-113">groupName</span></span>|<span data-ttu-id="0da65-114">String</span><span class="sxs-lookup"><span data-stu-id="0da65-114">String</span></span>|<span data-ttu-id="0da65-115">Имя группы AD, которая будет заблокирована этой базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="0da65-115">The name of the AD group that will be locked to this kiosk configuration</span></span>|
+|<span data-ttu-id="8786c-112">groupName</span><span class="sxs-lookup"><span data-stu-id="8786c-112">groupName</span></span>|<span data-ttu-id="8786c-113">String</span><span class="sxs-lookup"><span data-stu-id="8786c-113">String</span></span>|<span data-ttu-id="8786c-114">Имя группы Active Directory, которая будет заблокирована для этой конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="8786c-114">The name of the AD group that will be locked to this kiosk configuration</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0da65-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="0da65-116">Relationships</span></span>
-<span data-ttu-id="0da65-117">Нет</span><span class="sxs-lookup"><span data-stu-id="0da65-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="8786c-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="8786c-115">Relationships</span></span>
+<span data-ttu-id="8786c-116">Нет</span><span class="sxs-lookup"><span data-stu-id="8786c-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0da65-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0da65-118">JSON Representation</span></span>
-<span data-ttu-id="0da65-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0da65-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8786c-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8786c-117">JSON Representation</span></span>
+<span data-ttu-id="8786c-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8786c-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskActiveDirectoryGroup"

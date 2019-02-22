@@ -1,36 +1,36 @@
 ---
-title: Тип перечисления policyPlatformType
-description: Типы платформ Suppoorted для политик.
-localization_priority: Normal
+title: тип перечисления Полициплатформтипе
+description: Типы платформы Суппуртед для политик.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5e075c0974a315cfabd3238379278266a2f7fb8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8f78d8b885f8468a550a0a6e5e9e5017bd9b258a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399733"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149506"
 ---
-# <a name="policyplatformtype-enum-type"></a><span data-ttu-id="868c3-103">Тип перечисления policyPlatformType</span><span class="sxs-lookup"><span data-stu-id="868c3-103">policyPlatformType enum type</span></span>
+# <a name="policyplatformtype-enum-type"></a><span data-ttu-id="8b89c-103">тип перечисления Полициплатформтипе</span><span class="sxs-lookup"><span data-stu-id="8b89c-103">policyPlatformType enum type</span></span>
 
-> <span data-ttu-id="868c3-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="868c3-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="868c3-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="868c3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8b89c-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8b89c-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="868c3-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="868c3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8b89c-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8b89c-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="868c3-107">Типы платформ Suppoorted для политик.</span><span class="sxs-lookup"><span data-stu-id="868c3-107">Suppoorted platform types for policies.</span></span>
+<span data-ttu-id="8b89c-106">Типы платформы Суппуртед для политик.</span><span class="sxs-lookup"><span data-stu-id="8b89c-106">Suppoorted platform types for policies.</span></span>
 
-## <a name="members"></a><span data-ttu-id="868c3-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="868c3-108">Members</span></span>
-|<span data-ttu-id="868c3-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="868c3-109">Member</span></span>|<span data-ttu-id="868c3-110">Значение</span><span class="sxs-lookup"><span data-stu-id="868c3-110">Value</span></span>|<span data-ttu-id="868c3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="868c3-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="8b89c-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="8b89c-107">Members</span></span>
+|<span data-ttu-id="8b89c-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="8b89c-108">Member</span></span>|<span data-ttu-id="8b89c-109">Значение</span><span class="sxs-lookup"><span data-stu-id="8b89c-109">Value</span></span>|<span data-ttu-id="8b89c-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8b89c-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="868c3-112">Android (en)</span><span class="sxs-lookup"><span data-stu-id="868c3-112">android</span></span>|<span data-ttu-id="868c3-113">0</span><span class="sxs-lookup"><span data-stu-id="868c3-113">0</span></span>|<span data-ttu-id="868c3-114">Android (en).</span><span class="sxs-lookup"><span data-stu-id="868c3-114">Android.</span></span>|
-|<span data-ttu-id="868c3-115">androidForWork</span><span class="sxs-lookup"><span data-stu-id="868c3-115">androidForWork</span></span>|<span data-ttu-id="868c3-116">1</span><span class="sxs-lookup"><span data-stu-id="868c3-116">1</span></span>|<span data-ttu-id="868c3-117">AndroidForWork.</span><span class="sxs-lookup"><span data-stu-id="868c3-117">AndroidForWork.</span></span>|
-|<span data-ttu-id="868c3-118">iOS</span><span class="sxs-lookup"><span data-stu-id="868c3-118">iOS</span></span>|<span data-ttu-id="868c3-119">2</span><span class="sxs-lookup"><span data-stu-id="868c3-119">2</span></span>|<span data-ttu-id="868c3-120">операций ввода-вывода.</span><span class="sxs-lookup"><span data-stu-id="868c3-120">iOS.</span></span>|
-|<span data-ttu-id="868c3-121">macOS</span><span class="sxs-lookup"><span data-stu-id="868c3-121">macOS</span></span>|<span data-ttu-id="868c3-122">3</span><span class="sxs-lookup"><span data-stu-id="868c3-122">3</span></span>|<span data-ttu-id="868c3-123">MacOS.</span><span class="sxs-lookup"><span data-stu-id="868c3-123">MacOS.</span></span>|
-|<span data-ttu-id="868c3-124">windowsPhone81</span><span class="sxs-lookup"><span data-stu-id="868c3-124">windowsPhone81</span></span>|<span data-ttu-id="868c3-125">4</span><span class="sxs-lookup"><span data-stu-id="868c3-125">4</span></span>|<span data-ttu-id="868c3-126">WindowsPhone 8.1.</span><span class="sxs-lookup"><span data-stu-id="868c3-126">WindowsPhone 8.1.</span></span>|
-|<span data-ttu-id="868c3-127">windows81AndLater</span><span class="sxs-lookup"><span data-stu-id="868c3-127">windows81AndLater</span></span>|<span data-ttu-id="868c3-128">5</span><span class="sxs-lookup"><span data-stu-id="868c3-128">5</span></span>|<span data-ttu-id="868c3-129">Windows 8.1 и более поздних версий</span><span class="sxs-lookup"><span data-stu-id="868c3-129">Windows 8.1 and later</span></span>|
-|<span data-ttu-id="868c3-130">windows10AndLater</span><span class="sxs-lookup"><span data-stu-id="868c3-130">windows10AndLater</span></span>|<span data-ttu-id="868c3-131">6</span><span class="sxs-lookup"><span data-stu-id="868c3-131">6</span></span>|<span data-ttu-id="868c3-132">Windows 10 и более поздних версий.</span><span class="sxs-lookup"><span data-stu-id="868c3-132">Windows 10 and later.</span></span>|
-|<span data-ttu-id="868c3-133">androidWorkProfile</span><span class="sxs-lookup"><span data-stu-id="868c3-133">androidWorkProfile</span></span>|<span data-ttu-id="868c3-134">7</span><span class="sxs-lookup"><span data-stu-id="868c3-134">7</span></span>|<span data-ttu-id="868c3-135">AndroidWorkProfile.</span><span class="sxs-lookup"><span data-stu-id="868c3-135">AndroidWorkProfile.</span></span>|
-|<span data-ttu-id="868c3-136">all</span><span class="sxs-lookup"><span data-stu-id="868c3-136">all</span></span>|<span data-ttu-id="868c3-137">100</span><span class="sxs-lookup"><span data-stu-id="868c3-137">100</span></span>|<span data-ttu-id="868c3-138">Все платформы.</span><span class="sxs-lookup"><span data-stu-id="868c3-138">All platforms.</span></span>|
+|<span data-ttu-id="8b89c-111">ОС</span><span class="sxs-lookup"><span data-stu-id="8b89c-111">android</span></span>|<span data-ttu-id="8b89c-112">нуль</span><span class="sxs-lookup"><span data-stu-id="8b89c-112">0</span></span>|<span data-ttu-id="8b89c-113">ОС.</span><span class="sxs-lookup"><span data-stu-id="8b89c-113">Android.</span></span>|
+|<span data-ttu-id="8b89c-114">Андроидфорворк</span><span class="sxs-lookup"><span data-stu-id="8b89c-114">androidForWork</span></span>|<span data-ttu-id="8b89c-115">1,1</span><span class="sxs-lookup"><span data-stu-id="8b89c-115">1</span></span>|<span data-ttu-id="8b89c-116">Андроидфорворк.</span><span class="sxs-lookup"><span data-stu-id="8b89c-116">AndroidForWork.</span></span>|
+|<span data-ttu-id="8b89c-117">iOS</span><span class="sxs-lookup"><span data-stu-id="8b89c-117">iOS</span></span>|<span data-ttu-id="8b89c-118">2</span><span class="sxs-lookup"><span data-stu-id="8b89c-118">2</span></span>|<span data-ttu-id="8b89c-119">модуле.</span><span class="sxs-lookup"><span data-stu-id="8b89c-119">iOS.</span></span>|
+|<span data-ttu-id="8b89c-120">macOS</span><span class="sxs-lookup"><span data-stu-id="8b89c-120">macOS</span></span>|<span data-ttu-id="8b89c-121">4</span><span class="sxs-lookup"><span data-stu-id="8b89c-121">3</span></span>|<span data-ttu-id="8b89c-122">MacOS.</span><span class="sxs-lookup"><span data-stu-id="8b89c-122">MacOS.</span></span>|
+|<span data-ttu-id="8b89c-123">windowsPhone81</span><span class="sxs-lookup"><span data-stu-id="8b89c-123">windowsPhone81</span></span>|<span data-ttu-id="8b89c-124">4</span><span class="sxs-lookup"><span data-stu-id="8b89c-124">4</span></span>|<span data-ttu-id="8b89c-125">WindowsPhone 8,1.</span><span class="sxs-lookup"><span data-stu-id="8b89c-125">WindowsPhone 8.1.</span></span>|
+|<span data-ttu-id="8b89c-126">windows81AndLater</span><span class="sxs-lookup"><span data-stu-id="8b89c-126">windows81AndLater</span></span>|<span data-ttu-id="8b89c-127">17:00</span><span class="sxs-lookup"><span data-stu-id="8b89c-127">5</span></span>|<span data-ttu-id="8b89c-128">Windows 8,1 и более поздние версии</span><span class="sxs-lookup"><span data-stu-id="8b89c-128">Windows 8.1 and later</span></span>|
+|<span data-ttu-id="8b89c-129">windows10AndLater</span><span class="sxs-lookup"><span data-stu-id="8b89c-129">windows10AndLater</span></span>|<span data-ttu-id="8b89c-130">6</span><span class="sxs-lookup"><span data-stu-id="8b89c-130">6</span></span>|<span data-ttu-id="8b89c-131">Windows 10 и более поздних версий.</span><span class="sxs-lookup"><span data-stu-id="8b89c-131">Windows 10 and later.</span></span>|
+|<span data-ttu-id="8b89c-132">Андроидворкпрофиле</span><span class="sxs-lookup"><span data-stu-id="8b89c-132">androidWorkProfile</span></span>|<span data-ttu-id="8b89c-133">7</span><span class="sxs-lookup"><span data-stu-id="8b89c-133">7</span></span>|<span data-ttu-id="8b89c-134">Андроидворкпрофиле.</span><span class="sxs-lookup"><span data-stu-id="8b89c-134">AndroidWorkProfile.</span></span>|
+|<span data-ttu-id="8b89c-135">all</span><span class="sxs-lookup"><span data-stu-id="8b89c-135">all</span></span>|<span data-ttu-id="8b89c-136">100</span><span class="sxs-lookup"><span data-stu-id="8b89c-136">100</span></span>|<span data-ttu-id="8b89c-137">Все платформы.</span><span class="sxs-lookup"><span data-stu-id="8b89c-137">All platforms.</span></span>|
 
 
 

@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления managedAppPinCharacterSet
-description: Набор символов, который будет использоваться для пользователя приложения ПИН-кода
-localization_priority: Normal
+title: тип перечисления Манажедапппинчарактерсет
+description: Набор знаков, который будет использоваться для ПИН-кода приложения пользователя
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e4528e75ed86fe22a9258277b24f3febd005cc20
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7e75f9f6100e37ae0be0daf910f65eccc61ea82a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401889"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30148575"
 ---
-# <a name="managedapppincharacterset-enum-type"></a><span data-ttu-id="6d39c-103">Тип перечисления managedAppPinCharacterSet</span><span class="sxs-lookup"><span data-stu-id="6d39c-103">managedAppPinCharacterSet enum type</span></span>
+# <a name="managedapppincharacterset-enum-type"></a><span data-ttu-id="cf496-103">тип перечисления Манажедапппинчарактерсет</span><span class="sxs-lookup"><span data-stu-id="cf496-103">managedAppPinCharacterSet enum type</span></span>
 
-> <span data-ttu-id="6d39c-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="6d39c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="6d39c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6d39c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cf496-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cf496-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="6d39c-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="6d39c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cf496-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cf496-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6d39c-107">Набор символов, который будет использоваться для пользователя приложения ПИН-кода</span><span class="sxs-lookup"><span data-stu-id="6d39c-107">Character set which is to be used for a user's app PIN</span></span>
+<span data-ttu-id="cf496-106">Набор знаков, который будет использоваться для ПИН-кода приложения пользователя</span><span class="sxs-lookup"><span data-stu-id="cf496-106">Character set which is to be used for a user's app PIN</span></span>
 
-## <a name="members"></a><span data-ttu-id="6d39c-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="6d39c-108">Members</span></span>
-|<span data-ttu-id="6d39c-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="6d39c-109">Member</span></span>|<span data-ttu-id="6d39c-110">Значение</span><span class="sxs-lookup"><span data-stu-id="6d39c-110">Value</span></span>|<span data-ttu-id="6d39c-111">Описание</span><span class="sxs-lookup"><span data-stu-id="6d39c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="cf496-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="cf496-107">Members</span></span>
+|<span data-ttu-id="cf496-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="cf496-108">Member</span></span>|<span data-ttu-id="cf496-109">Значение</span><span class="sxs-lookup"><span data-stu-id="cf496-109">Value</span></span>|<span data-ttu-id="cf496-110">Описание</span><span class="sxs-lookup"><span data-stu-id="cf496-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6d39c-112">числовое</span><span class="sxs-lookup"><span data-stu-id="6d39c-112">numeric</span></span>|<span data-ttu-id="6d39c-113">0</span><span class="sxs-lookup"><span data-stu-id="6d39c-113">0</span></span>|<span data-ttu-id="6d39c-114">Числовые символы</span><span class="sxs-lookup"><span data-stu-id="6d39c-114">Numeric characters</span></span>|
-|<span data-ttu-id="6d39c-115">alphanumericAndSymbol</span><span class="sxs-lookup"><span data-stu-id="6d39c-115">alphanumericAndSymbol</span></span>|<span data-ttu-id="6d39c-116">1</span><span class="sxs-lookup"><span data-stu-id="6d39c-116">1</span></span>|<span data-ttu-id="6d39c-117">Символические и буквенно-цифровых символов</span><span class="sxs-lookup"><span data-stu-id="6d39c-117">Alphanumeric and symbolic characters</span></span>|
+|<span data-ttu-id="cf496-111">числовых</span><span class="sxs-lookup"><span data-stu-id="cf496-111">numeric</span></span>|<span data-ttu-id="cf496-112">нуль</span><span class="sxs-lookup"><span data-stu-id="cf496-112">0</span></span>|<span data-ttu-id="cf496-113">Числовые символы</span><span class="sxs-lookup"><span data-stu-id="cf496-113">Numeric characters</span></span>|
+|<span data-ttu-id="cf496-114">Алфанумерикандсимбол</span><span class="sxs-lookup"><span data-stu-id="cf496-114">alphanumericAndSymbol</span></span>|<span data-ttu-id="cf496-115">1,1</span><span class="sxs-lookup"><span data-stu-id="cf496-115">1</span></span>|<span data-ttu-id="cf496-116">Буквенно-цифровые и символьные символы</span><span class="sxs-lookup"><span data-stu-id="cf496-116">Alphanumeric and symbolic characters</span></span>|
 
 
 

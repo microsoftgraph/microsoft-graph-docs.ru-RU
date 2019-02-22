@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления importedDeviceIdentityType
+title: тип перечисления Импортеддевицеидентититипе
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e9674172e99fa6e26c3998c8f797e4bc972c94e4
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d2fba97d83cf59add652c05fb7cf315d6885e29c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404598"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30147882"
 ---
-# <a name="importeddeviceidentitytype-enum-type"></a><span data-ttu-id="e0b59-103">Тип перечисления importedDeviceIdentityType</span><span class="sxs-lookup"><span data-stu-id="e0b59-103">importedDeviceIdentityType enum type</span></span>
+# <a name="importeddeviceidentitytype-enum-type"></a><span data-ttu-id="3a0d4-103">тип перечисления Импортеддевицеидентититипе</span><span class="sxs-lookup"><span data-stu-id="3a0d4-103">importedDeviceIdentityType enum type</span></span>
 
-> <span data-ttu-id="e0b59-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e0b59-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e0b59-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e0b59-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="3a0d4-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3a0d4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e0b59-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e0b59-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="3a0d4-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="3a0d4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e0b59-107">Н/Д</span><span class="sxs-lookup"><span data-stu-id="e0b59-107">Not yet documented</span></span>
+<span data-ttu-id="3a0d4-106">Н/Д</span><span class="sxs-lookup"><span data-stu-id="3a0d4-106">Not yet documented</span></span>
 
-## <a name="members"></a><span data-ttu-id="e0b59-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="e0b59-108">Members</span></span>
-|<span data-ttu-id="e0b59-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="e0b59-109">Member</span></span>|<span data-ttu-id="e0b59-110">Значение</span><span class="sxs-lookup"><span data-stu-id="e0b59-110">Value</span></span>|<span data-ttu-id="e0b59-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e0b59-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="3a0d4-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="3a0d4-107">Members</span></span>
+|<span data-ttu-id="3a0d4-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="3a0d4-108">Member</span></span>|<span data-ttu-id="3a0d4-109">Значение</span><span class="sxs-lookup"><span data-stu-id="3a0d4-109">Value</span></span>|<span data-ttu-id="3a0d4-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3a0d4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e0b59-112">unknown</span><span class="sxs-lookup"><span data-stu-id="e0b59-112">unknown</span></span>|<span data-ttu-id="e0b59-113">0</span><span class="sxs-lookup"><span data-stu-id="e0b59-113">0</span></span>|<span data-ttu-id="e0b59-114">Неизвестное значение importedDeviceIdentityType.</span><span class="sxs-lookup"><span data-stu-id="e0b59-114">Unknown value of importedDeviceIdentityType.</span></span>|
-|<span data-ttu-id="e0b59-115">imei</span><span class="sxs-lookup"><span data-stu-id="e0b59-115">imei</span></span>|<span data-ttu-id="e0b59-116">1</span><span class="sxs-lookup"><span data-stu-id="e0b59-116">1</span></span>|<span data-ttu-id="e0b59-117">Идентификатор устройства имеет тип imei.</span><span class="sxs-lookup"><span data-stu-id="e0b59-117">Device Identity is of type imei.</span></span>|
-|<span data-ttu-id="e0b59-118">serialNumber</span><span class="sxs-lookup"><span data-stu-id="e0b59-118">serialNumber</span></span>|<span data-ttu-id="e0b59-119">2</span><span class="sxs-lookup"><span data-stu-id="e0b59-119">2</span></span>|<span data-ttu-id="e0b59-120">Идентификатор устройства имеет тип серийный номер.</span><span class="sxs-lookup"><span data-stu-id="e0b59-120">Device Identity is of type serial number.</span></span>|
+|<span data-ttu-id="3a0d4-111">unknown</span><span class="sxs-lookup"><span data-stu-id="3a0d4-111">unknown</span></span>|<span data-ttu-id="3a0d4-112">нуль</span><span class="sxs-lookup"><span data-stu-id="3a0d4-112">0</span></span>|<span data-ttu-id="3a0d4-113">НеИзвестное значение Импортеддевицеидентититипе.</span><span class="sxs-lookup"><span data-stu-id="3a0d4-113">Unknown value of importedDeviceIdentityType.</span></span>|
+|<span data-ttu-id="3a0d4-114">imei</span><span class="sxs-lookup"><span data-stu-id="3a0d4-114">imei</span></span>|<span data-ttu-id="3a0d4-115">1,1</span><span class="sxs-lookup"><span data-stu-id="3a0d4-115">1</span></span>|<span data-ttu-id="3a0d4-116">Удостоверение устройства имеет тип IMEI.</span><span class="sxs-lookup"><span data-stu-id="3a0d4-116">Device Identity is of type imei.</span></span>|
+|<span data-ttu-id="3a0d4-117">serialNumber</span><span class="sxs-lookup"><span data-stu-id="3a0d4-117">serialNumber</span></span>|<span data-ttu-id="3a0d4-118">2</span><span class="sxs-lookup"><span data-stu-id="3a0d4-118">2</span></span>|<span data-ttu-id="3a0d4-119">Идентификатор устройства имеет тип "серийный номер".</span><span class="sxs-lookup"><span data-stu-id="3a0d4-119">Device Identity is of type serial number.</span></span>|
 
 
 
