@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса windowsManagementAppHealthSummary
-description: Содержит свойства для Сводка работоспособности приложения управления Windows.
-localization_priority: Normal
+title: Тип ресурса Виндовсманажементапфеалссуммари
+description: Содержит свойства для сводки о работоспособности приложения управления Windows.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3ca46f61259b8b956439c541bf8d5703a35aa93b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f62f5967702143149176cecd2513478256ead6d3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29393853"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172060"
 ---
-# <a name="windowsmanagementapphealthsummary-resource-type"></a>Тип ресурса windowsManagementAppHealthSummary
+# <a name="windowsmanagementapphealthsummary-resource-type"></a>Тип ресурса Виндовсманажементапфеалссуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для Сводка работоспособности приложения управления Windows.
+Содержит свойства для сводки о работоспособности приложения управления Windows.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Чтение свойства и связи объекта [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
-|[Обновление windowsManagementAppHealthSummary](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Обновление свойства объекта [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
+|[Получение Виндовсманажементапфеалссуммари](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Чтение свойств и связей объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
+|[Обновление Виндовсманажементапфеалссуммари](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).|Обновление свойств объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ сущности сводки работоспособности приложения управления, Windows.|
-|healthyDeviceCount|Int32|Счетчик работоспособном устройства.|
-|unhealthyDeviceCount|Int32|Счетчик неработоспособные устройства.|
-|unknownDeviceCount|Int32|Счетчик неизвестные устройства.|
+|id|String|Ключ объекта сводки работоспособности приложения управления Windows.|
+|Хеалсидевицекаунт|Int32|Работоспособное число устройств.|
+|Унхеалсидевицекаунт|Int32|Неработоспособное число устройств.|
+|unknownDeviceCount|Int32|Количество неИзвестных устройств.|
 
 ## <a name="relationships"></a>Отношения
 Нет

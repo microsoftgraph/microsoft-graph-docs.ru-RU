@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления domainNameSource
-description: Источник DomainName.
-localization_priority: Normal
+title: тип перечисления Домаиннамесаурце
+description: Имя_домена источник.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 933d0d61597ca315616bf94d62b2706725503799
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: f88b2e9a99b423421aaec694eb62f66a2a827a87
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418395"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175292"
 ---
-# <a name="domainnamesource-enum-type"></a>Тип перечисления domainNameSource
+# <a name="domainnamesource-enum-type"></a>тип перечисления Домаиннамесаурце
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Источник DomainName.
+Имя_домена источник.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|fullDomainName|0|Полное доменное имя.|
-|netBiosDomainName|1|NET bios доменное имя.|
+|Фуллдомаиннаме|нуль|Полное доменное имя.|
+|Нетбиосдомаиннаме|1,1|имя домена сети BIOS.|
 
 
 

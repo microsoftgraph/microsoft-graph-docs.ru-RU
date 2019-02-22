@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления mobileAppIntent
+title: тип перечисления Мобилеаппинтент
 description: Указывает состояние мобильного приложения на устройстве.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a807e89ec949c2c48f04af46b26f43b393cc4b0a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1df0b41636668e0ebcc38dfb6b399a73551658d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29419263"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30171045"
 ---
-# <a name="mobileappintent-enum-type"></a>Тип перечисления mobileAppIntent
+# <a name="mobileappintent-enum-type"></a>тип перечисления Мобилеаппинтент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Указывает состояние мобильного приложения на устройстве.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|доступен|0|Available|
-|notAvailable|1|Недоступно|
-|requiredInstall|2|Требуется установка|
-|requiredUninstall|3|Требуется удалить|
-|requiredAndAvailableInstall|4|RequiredAndAvailableInstall|
-|availableInstallWithoutEnrollment|5|AvailableInstallWithoutEnrollment|
-|исключение|6|Исключение|
+|доступен|нуль|Available|
+|Нотаваилабле|1,1|НеДоступно|
+|Рекуирединсталл|2|Обязательная установка|
+|Рекуиредунинсталл|4|Обязательное удаление|
+|Рекуиредандаваилаблеинсталл|4|Рекуиредандаваилаблеинсталл|
+|Аваилаблеинсталлвисаутенроллмент|17:00|Аваилаблеинсталлвисаутенроллмент|
+|Отличающ|6|Отличающ|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса macOSLobApp
-description: Содержит свойства и свойства, наследуемые MacOS бизнес-приложения.
-localization_priority: Normal
+title: Тип ресурса Макослобапп
+description: Содержит свойства и наследуемые свойства для бизнес-приложения MacOS.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6a9f76cfe32261cb01d286ef0bc0f898d04943a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 49ee1f1ca3b9e9f05d2f9106dac4b9cf59309b9a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402848"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173453"
 ---
-# <a name="macoslobapp-resource-type"></a>Тип ресурса macOSLobApp
+# <a name="macoslobapp-resource-type"></a>Тип ресурса Макослобапп
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства и свойства, наследуемые MacOS бизнес-приложения.
+Содержит свойства и наследуемые свойства для бизнес-приложения MacOS.
 
 
 Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).
@@ -25,18 +25,18 @@ ms.locfileid: "29402848"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список macOSLobApps](../api/intune-apps-macoslobapp-list.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md) коллекции|Свойства списка и связей объектов [macOSLobApp](../resources/intune-apps-macoslobapp.md) .|
-|[Получение macOSLobApp](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Чтение свойства и связи объекта [macOSLobApp](../resources/intune-apps-macoslobapp.md) .|
-|[Создание macOSLobApp](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Создание нового объекта [macOSLobApp](../resources/intune-apps-macoslobapp.md) .|
-|[Удаление macOSLobApp](../api/intune-apps-macoslobapp-delete.md)|Нет|Удаляет [macOSLobApp](../resources/intune-apps-macoslobapp.md).|
-|[Обновление macOSLobApp](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Обновление свойства объекта [macOSLobApp](../resources/intune-apps-macoslobapp.md) .|
+|[Список Макослобаппс](../api/intune-apps-macoslobapp-list.md)|Коллекция [макослобапп](../resources/intune-apps-macoslobapp.md)|Список свойств и связей объектов [макослобапп](../resources/intune-apps-macoslobapp.md) .|
+|[Получение Макослобапп](../api/intune-apps-macoslobapp-get.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Чтение свойств и связей объекта [макослобапп](../resources/intune-apps-macoslobapp.md) .|
+|[Создание Макослобапп](../api/intune-apps-macoslobapp-create.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Создание нового объекта [макослобапп](../resources/intune-apps-macoslobapp.md) .|
+|[Удаление Макослобапп](../api/intune-apps-macoslobapp-delete.md)|Нет|Удаляет объект [макослобапп](../resources/intune-apps-macoslobapp.md).|
+|[Обновление Макослобапп](../api/intune-apps-macoslobapp-update.md)|[macOSLobApp](../resources/intune-apps-macoslobapp.md).|Обновление свойств объекта [макослобапп](../resources/intune-apps-macoslobapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,22 +47,22 @@ ms.locfileid: "29402848"
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
+|size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |bundleId|String|Идентификатор пакета.|
 |minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md);|Значение, указывающее минимальную применимую версию операционной системы.|
-|buildNumber|String|Номер построения строки MacOS бизнес-приложения.|
-|versionNumber|String|Номер версии строки MacOS бизнес-приложения.|
-|childApps|[macOSLobChildApp](../resources/intune-apps-macoslobchildapp.md) коллекции|Список приложения в этот пакет пакета|
+|buildNumber|String|Номер сборки бизнес-приложения MacOS бизнес (LoB).|
+|versionNumber|String|Номер версии приложения MacOS для бизнеса (LoB).|
+|Чилдаппс|Коллекция [макослобчилдапп](../resources/intune-apps-macoslobchildapp.md)|Список приложений в этом пакете набора|
 |identityVersion|String|Версия удостоверения.|
-|md5HashChunkSize|Int32|Размер блока для хеша MD5|
-|md5Hash|Коллекция String|MD5 хэш-кодов|
-|ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск приложения по его версии после установки на устройстве. Задайте значение true для macOS строки из бизнес-приложений, использующих функции самостоятельного обновления.|
+|md5HashChunkSize|Int32|Размер фрагмента для хеша MD5|
+|md5Hash|Коллекция строк|Хэш-коды MD5|
+|ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск приложения по его версии после установки на устройстве. Установите для этого параметра значение true для бизнес-приложений macOS (LoB), использующих функцию самостоятельного обновления.|
 
 ## <a name="relationships"></a>Отношения
 |Связь|Тип|Описание|
@@ -70,8 +70,8 @@ ms.locfileid: "29402848"
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Сводка по установке мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |contentVersions|Коллекция объектов [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|Список версий содержимого для этого приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON

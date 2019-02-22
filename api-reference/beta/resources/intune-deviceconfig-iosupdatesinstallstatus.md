@@ -1,44 +1,44 @@
 ---
-title: Тип перечисления iosUpdatesInstallStatus
+title: тип перечисления Иосупдатесинсталлстатус
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ae8e2503808009e0266a16431709b3eb0674bc0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b4fdd0e857976d6e9721c3f50e9af6f7960454c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398431"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173061"
 ---
-# <a name="iosupdatesinstallstatus-enum-type"></a>Тип перечисления iosUpdatesInstallStatus
+# <a name="iosupdatesinstallstatus-enum-type"></a>тип перечисления Иосупдатесинсталлстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Н/Д|
-|доступен|1|Н/Д|
+|success|нуль|Н/Д|
+|доступен|1,1|Н/Д|
 |простоя|2|Н/Д|
-|unknown|3|Н/Д|
-|Загрузка|-2016330712|Н/Д|
-|downloadFailed|-2016330711|Н/Д|
-|downloadRequiresComputer|-2016330710|Н/Д|
-|downloadInsufficientSpace|-2016330709|Н/Д|
-|downloadInsufficientPower|-2016330708|Н/Д|
-|downloadInsufficientNetwork|-2016330707|Н/Д|
-|Установка|-2016330706|Н/Д|
-|installInsufficientSpace|-2016330705|Н/Д|
-|installInsufficientPower|-2016330704|Н/Д|
-|installPhoneCallInProgress|-2016330703|Н/Д|
-|installFailed|-2016330702|Н/Д|
-|notSupportedOperation|-2016330701|Н/Д|
-|sharedDeviceUserLoggedInError|-2016330699|Н/Д|
+|unknown|4|Н/Д|
+|скачивание|— 2016330712|Н/Д|
+|Довнлоадфаилед|— 2016330711|Н/Д|
+|Довнлоадрекуирескомпутер|— 2016330710|Н/Д|
+|ДовнлоадинсуффиЦиентспаце|— 2016330709|Н/Д|
+|ДовнлоадинсуффиЦиентповер|— 2016330708|Н/Д|
+|ДовнлоадинсуффиЦиентнетворк|— 2016330707|Н/Д|
+|устанавливать|— 2016330706|Н/Д|
+|ИнсталлинсуффиЦиентспаце|— 2016330705|Н/Д|
+|ИнсталлинсуффиЦиентповер|— 2016330704|Н/Д|
+|Инсталлфонекаллинпрогресс|— 2016330703|Н/Д|
+|Инсталлфаилед|— 2016330702|Н/Д|
+|Нотсуппортедоператион|— 2016330701|Н/Д|
+|Шареддевицеусерлогжединеррор|— 2016330699|Н/Д|
 
 
 

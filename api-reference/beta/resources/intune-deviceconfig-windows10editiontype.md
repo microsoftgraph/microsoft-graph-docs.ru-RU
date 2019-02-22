@@ -1,39 +1,39 @@
 ---
-title: Тип перечисления windows10EditionType
-description: Тип 10 версии Windows.
-localization_priority: Normal
+title: тип перечисления windows10EditionType
+description: Тип выпуска Windows 10.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cc19a0e4fcd5f291b143e48393a992d03ce7f75
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 18fba8f5fc663ff00b07a6338badf87e4ab5d875
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422343"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173383"
 ---
-# <a name="windows10editiontype-enum-type"></a>Тип перечисления windows10EditionType
+# <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип 10 версии Windows.
+Тип выпуска Windows 10.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|windows10Enterprise|0|Windows 10 Enterprise|
-|windows10EnterpriseN|1|EnterpriseN Windows 10|
-|windows10Education|2|Windows 10 образования|
-|windows10EducationN|3|EducationN Windows 10|
-|windows10MobileEnterprise|4|Windows 10 мобильных устройств предприятия|
-|windows10HolographicEnterprise|5|Windows 10 голографическая Enterprise|
-|windows10Professional|6|Профессиональный Windows 10|
-|windows10ProfessionalN|7|ProfessionalN Windows 10|
-|windows10ProfessionalEducation|8|Профессиональный Education Windows 10|
-|windows10ProfessionalEducationN|9|Профессиональный EducationN Windows 10|
-|windows10ProfessionalWorkstation|10|Windows 10 Professional для рабочих станций|
-|windows10ProfessionalWorkstationN|11|Windows 10 Professional для рабочих станций N|
+|windows10Enterprise|нуль|Windows 10 Корпоративная|
+|windows10EnterpriseN|1,1|Windows 10 Ентерприсен|
+|windows10Education|2|Windows 10 для образовательных учреждений|
+|windows10EducationN|4|Windows 10 Едукатионн|
+|windows10MobileEnterprise|4|Windows 10 Mobile корпоративный|
+|windows10HolographicEnterprise|17:00|Windows 10 holographic Корпоративная|
+|windows10Professional|6|Windows 10 профессиональная|
+|windows10ProfessionalN|7|Windows 10 Профессионалн|
+|windows10ProfessionalEducation|8,5|Windows 10 профессиональная образование|
+|windows10ProfessionalEducationN|10|Windows 10 профессиональная Едукатионн|
+|windows10ProfessionalWorkstation|десяти|Windows 10 профессиональная для рабочих станций|
+|windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
 |notConfigured|12|NotConfigured|
 
 

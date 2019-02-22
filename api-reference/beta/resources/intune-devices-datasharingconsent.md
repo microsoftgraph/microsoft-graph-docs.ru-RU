@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса dataSharingConsent
-description: Совместное использование данных соглашаетесь сведения.
-localization_priority: Normal
+title: Тип ресурса Даташарингконсент
+description: Сведения о согласии общего доступа к данным.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf77a252c323ce83c2dcda44ac294161a4fd4747
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 75ef8b899c6fa7645b31cd77ada7420b0f753a60
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425696"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174652"
 ---
-# <a name="datasharingconsent-resource-type"></a>Тип ресурса dataSharingConsent
+# <a name="datasharingconsent-resource-type"></a>Тип ресурса Даташарингконсент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Совместное использование данных соглашаетесь сведения.
+Сведения о согласии общего доступа к данным.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список dataSharingConsents](../api/intune-devices-datasharingconsent-list.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md) коллекции|Свойства списка и связей объектов [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .|
-|[Получение dataSharingConsent](../api/intune-devices-datasharingconsent-get.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Чтение свойства и связи объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .|
-|[Создание dataSharingConsent](../api/intune-devices-datasharingconsent-create.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Создание нового объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .|
-|[Удаление dataSharingConsent](../api/intune-devices-datasharingconsent-delete.md)|Нет|Удаляет [dataSharingConsent](../resources/intune-devices-datasharingconsent.md).|
-|[Обновление dataSharingConsent](../api/intune-devices-datasharingconsent-update.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Обновление свойства объекта [dataSharingConsent](../resources/intune-devices-datasharingconsent.md) .|
+|[Список Даташарингконсентс](../api/intune-devices-datasharingconsent-list.md)|Коллекция [даташарингконсент](../resources/intune-devices-datasharingconsent.md)|Список свойств и связей объектов [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .|
+|[Получение Даташарингконсент](../api/intune-devices-datasharingconsent-get.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Чтение свойств и связей объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .|
+|[Создание Даташарингконсент](../api/intune-devices-datasharingconsent-create.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Создание нового объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .|
+|[Удаление Даташарингконсент](../api/intune-devices-datasharingconsent-delete.md)|Нет|Удаляет объект [даташарингконсент](../resources/intune-devices-datasharingconsent.md).|
+|[Обновление Даташарингконсент](../api/intune-devices-datasharingconsent-update.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .|
 |[Действие consentToDataSharing](../api/intune-devices-datasharingconsent-consenttodatasharing.md)|[dataSharingConsent](../resources/intune-devices-datasharingconsent.md);|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Разрешения общего доступа данных идентификатор|
-|Отображаемое_имя_службы|String|Отображаемое имя службы рабочих процессов|
-|termsUrl|String|TermsUrl для данных, общий доступ к согласия|
-|предоставлено|Логический|Предоставленные состояний для данных, общий доступ к согласия|
-|grantDateTime|DateTimeOffset|Были предоставлены разрешения времени для этой учетной записи|
-|grantedByUpn|String|Имя участника-пользователя, которой предоставлены разрешения для этой учетной записи|
-|grantedByUserId|String|Идентификатор пользователя, который предоставлены разрешения для этой учетной записи пользователя|
+|id|String|Идентификатор согласия общего доступа к данным|
+|Сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
+|Термсурл|String|Термсурл для согласия общего доступа к данным|
+|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|Грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
+|Грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
+|Грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|
 
 ## <a name="relationships"></a>Отношения
 Нет

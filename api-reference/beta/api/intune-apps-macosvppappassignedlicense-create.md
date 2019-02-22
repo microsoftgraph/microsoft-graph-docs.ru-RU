@@ -1,25 +1,25 @@
 ---
-title: Создание macOsVppAppAssignedLicense
-description: Создание нового объекта macOsVppAppAssignedLicense.
-localization_priority: Normal
+title: Создание Макосвппаппассигнедлиценсе
+description: Создание нового объекта Макосвппаппассигнедлиценсе.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 07c0bafef2eb86128c8d9bc8cfb071b45bc1e913
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0de84c4e5cd7e4e9baefacbf4e1834fb01f736b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430726"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172613"
 ---
-# <a name="create-macosvppappassignedlicense"></a>Создание macOsVppAppAssignedLicense
+# <a name="create-macosvppappassignedlicense"></a>Создание Макосвппаппассигнедлиценсе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) .
+Создание нового объекта [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,22 +45,22 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.macOsVppApp/a
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта macOsVppAppAssignedLicense.
+В тексте запроса добавьте представление объекта Макосвппаппассигнедлиценсе в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания macOsVppAppAssignedLicense.
+В следующей таблице приведены свойства, необходимые при создании Макосвппаппассигнедлиценсе.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|userEmailAddress|String|Адрес электронной почты пользователя.|
+|Усеремаиладдресс|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|userPrincipalName|Строка|Имя участника-пользователя.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [macOsVppAppAssignedLicense](../resources/intune-apps-macosvppappassignedlicense.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [макосвппаппассигнедлиценсе](../resources/intune-apps-macosvppappassignedlicense.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -81,7 +81,7 @@ Content-length: 236
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

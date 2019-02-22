@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления derivedCredentialProviderType
-description: Тип поставщика производные учетных данных.
-localization_priority: Normal
+title: тип перечисления Дериведкредентиалпровидертипе
+description: Тип поставщика для произВодных учетных данных.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ad4f77b23e1d5b89a39c39fb174c953ebe422bd1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8e57a9874d1870a01a4be445bd23ca6210af18d1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431763"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30175313"
 ---
-# <a name="derivedcredentialprovidertype-enum-type"></a>Тип перечисления derivedCredentialProviderType
+# <a name="derivedcredentialprovidertype-enum-type"></a>тип перечисления Дериведкредентиалпровидертипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип поставщика производные учетных данных.
+Тип поставщика для произВодных учетных данных.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен поставщик производные учетных данных.|
-|entrustDataCard|1|Доверенный DataCard.|
-|purebred|2|Purebred - Корпорация Майкрософт.|
-|xTec|3|Xtec - AuthentX.|
-|внедрения|4|Внедрения.|
+|notConfigured|нуль|Не настроен производный поставщик учетных данных.|
+|Ентрустдатакард|1,1|Ентруст.|
+|пуребред|2|Агентство по оборонным информационным системам Пуребред.|
+|Кстек|4|Кстек — Аусенткс.|
+|интерцеде|4|Интерцеде.|
 
 
 

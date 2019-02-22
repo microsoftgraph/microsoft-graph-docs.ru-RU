@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления complianceState
+title: тип перечисления Комплианцестате
 description: Состояние соответствия требованиям.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 04f77da451970a302dbf249e8820aa5a2a8f0ebc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 29357c5248aea78ffca8af464ecf4c3af17bdbc3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392740"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172928"
 ---
-# <a name="compliancestate-enum-type"></a>Тип перечисления complianceState
+# <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние соответствия требованиям.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестно.|
-|спецификации|1|Спецификации.|
-|несовместимый|2|Устройство не соответствует спецификации и запретом корпоративным ресурсам.|
-|конфликта|3|Конфликт с другими правилами.|
+|unknown|нуль|Найден.|
+|совместимо|1,1|Совместимо.|
+|несоответствующих|2|Устройство не совместимо и заблокировано из корпоративных ресурсов.|
+|противоречивы|4|Конфликт с другими правилами.|
 |error|4|Ошибка|
-|inGracePeriod|254|Устройство, не соответствует спецификации, но по-прежнему имеет доступ к корпоративным ресурсам|
-|configManager|255|Управляет диспетчер конфигурации|
+|Инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
+|Конфигманажер|255|Управление с помощью диспетчера конфигураций|
 
 
 

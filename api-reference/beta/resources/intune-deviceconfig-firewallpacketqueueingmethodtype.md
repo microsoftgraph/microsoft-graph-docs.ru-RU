@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления firewallPacketQueueingMethodType
-description: Возможные значения для firewallPacketQueueingMethod
-localization_priority: Normal
+title: тип перечисления Фиреваллпаккеткуеуеингмесодтипе
+description: Возможные значения для Фиреваллпаккеткуеуеингмесод
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc40b93eebc17b1d1abcd9c317da1ffa538512a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e1b8543df5fa2a50cfdfa56c7cb2d96199ba44e7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425759"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172207"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>Тип перечисления firewallPacketQueueingMethodType
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>тип перечисления Фиреваллпаккеткуеуеингмесодтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для firewallPacketQueueingMethod
+Возможные значения для Фиреваллпаккеткуеуеингмесод
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение не настраивается с Intune, не переопределяют настраиваемых пользователем устройства по умолчанию|
-|Этот параметр отключен|1|Отключение очереди пакетов|
-|queueInbound|2|В очередь входящие зашифрованные пакеты|
-|queueOutbound|3|Очередь расшифрован исходящих пакетов для пересылки|
-|queueBoth|4|Очередь входящих и исходящих пакетов|
+|Девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
+|активирован|1,1|Отключение очереди пакетов|
+|Куеуеинбаунд|2|Очередь входящих зашифрованных пакетов|
+|Куеуеаутбаунд|4|Очередь расшифрованных исходящих пакетов для пересылки|
+|Куеуебос|4|ПоСтановка в очередь входящих и исходящих пакетов|
 
 
 

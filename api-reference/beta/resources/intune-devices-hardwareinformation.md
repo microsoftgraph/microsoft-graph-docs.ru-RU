@@ -1,49 +1,49 @@
 ---
-title: Тип ресурса hardwareInformation
-description: Сведения об оборудовании данного устройства.
-localization_priority: Normal
+title: Тип ресурса Hardwareinformation.
+description: Сведения об оборудовании для данного устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 32b6d0e637c477265a6d23f39e531ca89c7e490c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: be7d87f1d596a4756b3e964cd57f29da60f1c468
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394826"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172879"
 ---
-# <a name="hardwareinformation-resource-type"></a>Тип ресурса hardwareInformation
+# <a name="hardwareinformation-resource-type"></a>Тип ресурса Hardwareinformation.
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сведения об оборудовании данного устройства.
+Сведения об оборудовании для данного устройства.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |serialNumber|String|Серийный номер.|
-|totalStorageSpace|Int64|Общий объем хранилища на диске устройства.|
-|freeStorageSpace|Int64|Свободное дисковое пространство устройства.|
+|Тоталсторажеспаце|Int64|Общий объем хранилища устройства.|
+|Фристоражеспаце|Int64|Свободное место на устройстве.|
 |imei|String|IMEI|
 |meid|String|MEID|
 |manufacturer|String|Производитель устройства|
 |model|String|Модель устройства|
 |phoneNumber|String|Номер телефона устройства|
-|subscriberCarrier|String|Подписчик на поставщика устройства|
-|cellularTechnology|String|Сотовой связи технология устройства|
-|wifiMac|String|WiFi MAC-адрес устройства|
-|operatingSystemLanguage|String|Язык операционной системы устройства|
-|isSupervised|Boolean|Контролируемом режим устройства|
+|subscriberCarrier|String|Абонентская перевозчик устройства|
+|Целлулартечнологи|String|Технология сотовой связи устройства|
+|Вифимак|String|MAC-адрес устройства Wi-Fi|
+|Оператингсистемлангуаже|String|Язык операционной системы устройства|
+|isSupervised|Логический|Контролируемый режим устройства|
 |isEncrypted|Boolean|Состояние шифрования устройства|
-|isSharedDevice|Логический|Общие iPad|
-|sharedDeviceCachedUsers|[sharedAppleDeviceUser](../resources/intune-devices-sharedappledeviceuser.md) коллекции|Всем пользователям, включенным общего устройства Apple|
-|tpmSpecificationVersion|String|Строка, которая указывает версию спецификации.|
-|operatingSystemEdition|String|Строка, определяющая версии операционной системы.|
-|deviceFullQualifiedDomainName|String|Возвращает полное доменное имя устройства (при его наличии). Если устройство не присоединенный к домену, возвращает пустую строку. |
-|deviceGuardVirtualizationBasedSecurityHardwareRequirementState|[deviceGuardVirtualizationBasedSecurityHardwareRequirementState](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования безопасности на основе виртуализации оборудования. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
-|deviceGuardVirtualizationBasedSecurityState|[deviceGuardVirtualizationBasedSecurityState](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
-|deviceGuardLocalSystemAuthorityCredentialGuardState|[deviceGuardLocalSystemAuthorityCredentialGuardState](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние защиты локальной системы Администратор учетных данных. . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
+|Свойства isshareddevice|Логический|Общие iPad|
+|Шареддевицекачедусерс|Коллекция [шаредаппледевицеусер](../resources/intune-devices-sharedappledeviceuser.md)|Все пользователи на общем устройстве Apple|
+|ТпмспеЦификатионверсион|String|Строка, указывающая версию спецификации.|
+|Оператингсистемедитион|String|Строка, задающая выпуск операционной системы.|
+|Девицефуллкуалифиеддомаиннаме|String|Возвращает полное доменное имя устройства (при наличии). Если устройство не присоединено к домену, возвращается пустая строка. |
+|Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате|[Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате](../resources/intune-devices-deviceguardvirtualizationbasedsecurityhardwarerequirementstate.md)|Состояние требования к оборудованию для обеспечения безопасности на основе виртуализации. Возможные значения: `meetHardwareRequirements`, `secureBootRequired`, `dmaProtectionRequired`, `hyperVNotSupportedForGuestVM`, `hyperVNotAvailable`.|
+|Девицегуардвиртуализатионбаседсекуритистате|[Девицегуардвиртуализатионбаседсекуритистате](../resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md)|Состояние безопасности на основе виртуализации. . Возможные значения: `running`, `rebootRequired`, `require64BitArchitecture`, `notLicensed`, `notConfigured`, `doesNotMeetHardwareRequirements`, `other`.|
+|Девицегуардлокалсистемаусоритикредентиалгуардстате|[Девицегуардлокалсистемаусоритикредентиалгуардстате](../resources/intune-devices-deviceguardlocalsystemauthoritycredentialguardstate.md)|Состояние Credential Guard в администраторе локальной системы (LSA). . Возможные значения: `running`, `rebootRequired`, `notLicensed`, `notConfigured`, `virtualizationBasedSecurityNotRunning`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
