@@ -478,6 +478,7 @@ items:
                 href: api/opentypeextension-get.md
       - name: Календарь
         href: resources/calendar.md
+        displayname: Outlook calendar
         items:
           - name: Событие
             href: resources/event.md
@@ -1260,36 +1261,6 @@ items:
                     href: api/intune-books-iosvppebookassignment-delete.md
                   - name: Обновление
                     href: api/intune-books-iosvppebookassignment-update.md
-              - name: 'Приложение macOS, приобретенное по программе VPP'
-                href: resources/intune-apps-macosvppapp.md
-                items:
-                  - name: Список
-                    href: api/intune-apps-macosvppapp-list.md
-                  - name: Получение
-                    href: api/intune-apps-macosvppapp-get.md
-                  - name: Создание
-                    href: api/intune-apps-macosvppapp-create.md
-                  - name: Удаление
-                    href: api/intune-apps-macosvppapp-delete.md
-                  - name: Обновление
-                    href: api/intune-apps-macosvppapp-update.md
-              - name: 'Лицензия, назначенная приложению macOS, которое приобретено по программе VPP'
-                href: resources/intune-apps-macosvppappassignedlicense.md
-                items:
-                  - name: Список
-                    href: api/intune-apps-macosvppappassignedlicense-list.md
-                  - name: Получение
-                    href: api/intune-apps-macosvppappassignedlicense-get.md
-                  - name: Создание
-                    href: api/intune-apps-macosvppappassignedlicense-create.md
-                  - name: Удаление
-                    href: api/intune-apps-macosvppappassignedlicense-delete.md
-                  - name: Обновление
-                    href: api/intune-apps-macosvppappassignedlicense-update.md
-              - name: 'Настройки назначения приложения macOS, приобретенного по программе VPP'
-                href: resources/intune-apps-macosvppappassignmentsettings.md
-              - name: 'Результат действия "Отзыв лицензии для приложения macOS, приобретенного по программе VPP"'
-                href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
               - name: Бизнес-приложение macOS
                 href: resources/intune-apps-macoslobapp.md
                 items:
@@ -1320,6 +1291,36 @@ items:
                     href: api/intune-apps-macosofficesuiteapp-delete.md
                   - name: Обновление
                     href: api/intune-apps-macosofficesuiteapp-update.md
+              - name: 'Приложение macOS, приобретенное по программе VPP'
+                href: resources/intune-apps-macosvppapp.md
+                items:
+                  - name: Список
+                    href: api/intune-apps-macosvppapp-list.md
+                  - name: Получение
+                    href: api/intune-apps-macosvppapp-get.md
+                  - name: Создание
+                    href: api/intune-apps-macosvppapp-create.md
+                  - name: Удаление
+                    href: api/intune-apps-macosvppapp-delete.md
+                  - name: Обновление
+                    href: api/intune-apps-macosvppapp-update.md
+              - name: 'Лицензия, назначенная приложению macOS, которое приобретено по программе VPP'
+                href: resources/intune-apps-macosvppappassignedlicense.md
+                items:
+                  - name: Список
+                    href: api/intune-apps-macosvppappassignedlicense-list.md
+                  - name: Получение
+                    href: api/intune-apps-macosvppappassignedlicense-get.md
+                  - name: Создание
+                    href: api/intune-apps-macosvppappassignedlicense-create.md
+                  - name: Удаление
+                    href: api/intune-apps-macosvppappassignedlicense-delete.md
+                  - name: Обновление
+                    href: api/intune-apps-macosvppappassignedlicense-update.md
+              - name: 'Настройки назначения приложения macOS, приобретенного по программе VPP'
+                href: resources/intune-apps-macosvppappassignmentsettings.md
+              - name: 'Результат действия "Отзыв лицензии для приложения macOS, приобретенного по программе VPP"'
+                href: resources/intune-apps-macosvppapprevokelicensesactionresult.md
               - name: Управляемое бизнес-приложение Android
                 href: resources/intune-apps-managedandroidlobapp.md
                 items:
@@ -2274,6 +2275,8 @@ items:
             items:
               - name: 'Состояние соответствия требованиям настроенного администратором устройства '
                 href: resources/intune-deviceconfig-administratorconfigureddevicecompliancestate.md
+              - name: Состояние расширенного шифрования BitLocker
+                href: resources/intune-deviceconfig-advancedbitlockerstate.md
               - name: Состояние расширенной защиты от угроз регистрируемого устройства
                 href: resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md
                 items:
@@ -2601,6 +2604,19 @@ items:
                     href: api/intune-deviceconfig-androidimportedpfxcertificateprofile-update.md
               - name: Функция клавиатуры Android
                 href: resources/intune-deviceconfig-androidkeyguardfeature.md
+              - name: Настройка OMA cp на Android
+                href: resources/intune-deviceconfig-androidomacpconfiguration.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceconfig-androidomacpconfiguration-list.md
+                  - name: Получение
+                    href: api/intune-deviceconfig-androidomacpconfiguration-get.md
+                  - name: Создание
+                    href: api/intune-deviceconfig-androidomacpconfiguration-create.md
+                  - name: Удаление
+                    href: api/intune-deviceconfig-androidomacpconfiguration-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceconfig-androidomacpconfiguration-update.md
               - name: Профиль сертификата PKCS Android
                 href: resources/intune-deviceconfig-androidpkcscertificateprofile.md
                 items:
@@ -2955,6 +2971,32 @@ items:
                 href: resources/intune-deviceconfig-defendersubmitsamplesconsenttype.md
               - name: Действие защитника при обнаружении угрозы
                 href: resources/intune-deviceconfig-defenderthreataction.md
+              - name: Пропускная способность оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidth.md
+              - name: Абсолютная пропускная способность оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute.md
+              - name: Ограничение пропускной способности оптимизации доставки в рабочие часы
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md
+              - name: Время и процентное значение пропускной способности оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage.md
+              - name: Процентное значение пропускной способности оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage.md
+              - name: Настраиваемый ИД группы оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidcustom.md
+              - name: Тип параметров ИД группы оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype.md
+              - name: Источник ИД группы оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidsource.md
+              - name: Параметры источника ИД группы оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions.md
+              - name: Максимальный размер кэша оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesize.md
+              - name: Абсолютное значение максимального размера кэша оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute.md
+              - name: Процентное значение максимального размера кэша оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage.md
+              - name: Параметры ограничения выбора кэширующего узла оптимизации доставки
+                href: resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions.md
               - name: Тип поставщика производных учетных данных
                 href: resources/intune-deviceconfig-derivedcredentialprovidertype.md
               - name: 'Элемент действия, касающегося соответствия устройства требованиям'
@@ -3208,9 +3250,11 @@ items:
                 href: resources/intune-deviceconfig-devicemanagementuserrightssetting.md
               - name: Уровень защиты устройства от угроз
                 href: resources/intune-deviceconfig-devicethreatprotectionlevel.md
+              - name: Типы устройств
+                href: resources/intune-deviceconfig-devicetypes.md
               - name: Режим отправки диагностических данных
                 href: resources/intune-deviceconfig-diagnosticdatasubmissionmode.md
-              - name: Тип политики перечисление устройства защиты DMA
+              - name: Тип политики перечисления устройства защиты DMA
                 href: resources/intune-deviceconfig-dmaguarddeviceenumerationpolicytype.md
               - name: Источник доменных имен
                 href: resources/intune-deviceconfig-domainnamesource.md
@@ -3239,6 +3283,8 @@ items:
                 href: resources/intune-deviceconfig-edgehomebuttonopenscustomurl.md
               - name: Кнопка "Домой" в Edge открывает новую вкладку
                 href: resources/intune-deviceconfig-edgehomebuttonopensnewtab.md
+              - name: Тип ограничения режима терминала в Edge
+                href: resources/intune-deviceconfig-edgekioskmoderestrictiontype.md
               - name: Параметры открытия Edge
                 href: resources/intune-deviceconfig-edgeopenoptions.md
               - name: Поисковая система Edge
@@ -3270,6 +3316,12 @@ items:
                 href: resources/intune-deviceconfig-emailsyncduration.md
               - name: Расписание синхронизации электронной почты
                 href: resources/intune-deviceconfig-emailsyncschedule.md
+              - name: Состояние готовности шифрования
+                href: resources/intune-deviceconfig-encryptionreadinessstate.md
+              - name: Сведения о политике отчетов шифрования
+                href: resources/intune-deviceconfig-encryptionreportpolicydetails.md
+              - name: Состояние шифрования
+                href: resources/intune-deviceconfig-encryptionstate.md
               - name: Расширенное использование ключа
                 href: resources/intune-deviceconfig-extendedkeyusage.md
               - name: Тип метода проверки для списка отзыва сертификатов в брандмауэре
@@ -4013,6 +4065,19 @@ items:
                     href: api/intune-deviceconfig-manageddevicecertificatestate-delete.md
                   - name: Обновление
                     href: api/intune-deviceconfig-manageddevicecertificatestate-update.md
+              - name: Состояние шифрования управляемого устройства
+                href: resources/intune-deviceconfig-manageddeviceencryptionstate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-list.md
+                  - name: Получение
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-get.md
+                  - name: Создание
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceconfig-manageddeviceencryptionstate-update.md
               - name: Сообщение из отчета для управляемого устройства
                 href: resources/intune-deviceconfig-manageddevicereportedapp.md
               - name: Рейтинг мультимедийного содержимого для Австралии
@@ -4826,8 +4891,6 @@ items:
                 href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
               - name: Запланированная установка с использованием Центра обновления Windows
                 href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
-              - name: Состояние обновления Windows
-                href: resources/intune-deviceconfig-windowsupdatestate.md
               - name: Статус обновления Windows
                 href: resources/intune-deviceconfig-windowsupdatestatus.md
               - name: Тип обновления Windows
@@ -7722,6 +7785,7 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Безопасность
         href: resources/security-api-overview.md
+        displayname: 'Security API, Microsoft Intelligent Security Graph'
         items:
           - name: Оповещения
             href: resources/alert.md
