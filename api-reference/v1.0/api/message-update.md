@@ -4,16 +4,16 @@ description: Обновление свойств объекта сообщени
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: c3564d5f48cb3b3e12e18a07d605fcd3eba01291
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 53d7f6425088eb6ed7bbaac17d3dbe7a08c955e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922545"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149086"
 ---
 # <a name="update-message"></a>Обновление сообщения
 
-Обновляет свойства объекта message.
+Обновление свойств объекта сообщения.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,27 +37,28 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились. Следующие свойства могут быть обновлены.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились. Могут быть обновлены перечисленные ниже свойства.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|bccRecipients|Recipient|Получателей скрытой копии сообщения. |
-|Основной текст|ItemBody|Текст сообщения. Обновляемые только если isDraft = true.|
+|bccRecipients|Recipient|Получатели скрытой копии сообщения. |
+|body|ItemBody|Текст сообщения. Можно обновить, только если параметр IsDraft имеет значение true.|
 |categories|Коллекция String|Категории, сопоставленные с сообщением.|
-|ccRecipients|Коллекция объектов Recipient|Получателей копии сообщения. |
-|from|Recipient|Владелец почтового ящика и отправитель сообщения. Должно соответствовать фактический почтового ящика, используемого.|
-|importance|Строка|Важность сообщения. Возможные значения: `Low`, `Normal`, `High`.|
-|inferenceClassification | Строка | Классификация сообщений для пользователя, на основе предполагаемых релевантность или важность, или явное переопределение. Возможные значения: `focused` или `other`. |
-|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Обновляемые только если isDraft = true.|
-|isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isRead|Логический|Указывает, прочитано ли сообщение.|
-|isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция Многозначный расширенных свойств, определенных для сообщения. Допускается значение null.|
-|replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Обновляемые только если isDraft = true.|
-|sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Обновляемые при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/en-us/exchange/collaboration/shared-mailboxes/shared-mailboxes)или отправка сообщения [Делегирование](https://support.office.com/en-us/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактический почтового ящика, используемого.|
-|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Коллекция расширенные свойства одно значение, определенное для сообщения. Допускается значение null.|
-|subject|String|Тема сообщения. Обновляемые только если isDraft = true.|
-|toRecipients|Коллекция объектов Recipient|Кому получателей сообщения.|
+|ccRecipients|Коллекция объектов Recipient|Получатели копии сообщения. |
+|flag|[followupFlag](../resources/followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения сообщения.|
+|from|Recipient|Владелец почтового ящика и отправитель сообщения. Должно соответствовать фактически используемому почтовому ящику.|
+|importance|String|Важность сообщения. Допустимые значения: `Low`, `Normal`, `High`.|
+|inferenceClassification | String | Классификация сообщения для пользователя на основании подразумеваемой релевантности или важности либо явного переопределения. Допустимые значения: `focused` или `other`. |
+|internetMessageId |String |Идентификатор сообщения в формате, установленном документом [RFC2822](https://www.ietf.org/rfc/rfc2822.txt). Можно обновить, только если параметр IsDraft имеет значение true.|
+|isDeliveryReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isReadReceiptRequested|Boolean|Указывает, запрашивается ли уведомление о прочтении сообщения.|
+|multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md)| Коллекция многозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|replyTo|Коллекция объектов Recipient|Электронные адреса, которые необходимо использовать при ответе. Можно обновить, только если параметр IsDraft имеет значение true.|
+|sender|Recipient|Учетная запись, которая фактически используется для создания сообщения. Можно изменять при отправке сообщения из [общего почтового ящика](https://docs.microsoft.com/ru-RU/exchange/collaboration/shared-mailboxes/shared-mailboxes) или отправке сообщения в качестве [представителя](https://support.office.com/ru-RU/article/allow-someone-else-to-manage-your-mail-and-calendar-41c40c04-3bd1-4d22-963a-28eafec25926). В любом случае значение должно соответствовать фактически используемому почтовому ящику.|
+|singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md)| Коллекция однозначных расширенных свойств, определенных для сообщения. Допускается значение null.|
+|subject|String|Тема сообщения. Можно обновить, только если параметр IsDraft имеет значение true.|
+|toRecipients|Коллекция объектов Recipient|Получатели сообщения, указанные в поле "Кому".|
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `PATCH` можно добавлять, обновлять или удалять собственные данные, касающиеся определенных приложений, в настраиваемых свойствах расширения в существующем экземпляре **message**.
 
@@ -85,7 +86,7 @@ Content-length: 248
   "inferenceClassification": "other"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",
