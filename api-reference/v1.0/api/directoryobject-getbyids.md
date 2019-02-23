@@ -1,15 +1,15 @@
 ---
 title: Получение объектов каталога из списка идентификаторов
-description: Выберите "параметр запроса не поддерживается для этой операции.
+description: Параметр запроса select недоступен для этой операции.
 author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2fab85844d810627ca4e44395477716eb0828ffa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: a209d391c72edd453bbfe9232b7d02121ca98128
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986819"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212391"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -44,7 +44,7 @@ POST /directoryObjects/getByIds
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка | application/json  |
+| Content-Type  | string | application/json  |
 
 ## <a name="request-body"></a>Тело запроса
 
@@ -53,7 +53,7 @@ POST /directoryObjects/getByIds
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
 |ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция String| Коллекция типов ресурсов, определяющий набор ресурсов семейств сайтов для поиска. Если не указан, по умолчанию — [directoryObject](../resources/directoryobject.md), которая содержит все типы ресурсов, определенные в каталоге. Любого объекта, производного от `directoryObject` может быть указано в коллекции; Например: [пользователей](../resources/user.md), [группы](../resources/group.md), [устройства](../resources/device.md)и т. д. Значения не учитывают регистр.|
+|types|Коллекция объектов string| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0). Пример: [user](/graph/api/resources/user?view=graph-rest-v1.0), [group](/graph/api/resources/group?view=graph-rest-v1.0), [device](/graph/api/resources/device?view=graph-rest-v1.0). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/ru-RU/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-v1.0), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/ru-RU/cloud-solution-provider). В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 

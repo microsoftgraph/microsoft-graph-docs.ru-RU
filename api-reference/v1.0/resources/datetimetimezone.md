@@ -2,12 +2,12 @@
 title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
 localization_priority: Priority
-ms.openlocfilehash: 9bec62c21f97c58b915ecc40010f8030ea760825
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: 9e031b053ebc185ee02fa11571019529a870cf04
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27827330"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212363"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
@@ -16,7 +16,7 @@ ms.locfileid: "27827330"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|dateTime|String|Один момент времени в объединенном представлении даты и времени (`<date>T<time>`).|
+|dateTime|String|Один момент времени в объединенном представлении даты и времени (`{date}T{time}`; например, `2017-08-29T04:00:00.0000000`).|
 |timeZone|String|Один из указанных ниже часовых поясов.|
 
 Свойство _TimeZone_ можно задать для каждого из часовых поясов, которые поддерживаются в Windows, а также для указанных ниже часовых поясов.

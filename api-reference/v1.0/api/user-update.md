@@ -4,12 +4,12 @@ description: Обновление свойств объекта пользова
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 48b10fae8b98912981f7132c8bd9761c832c5339
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 544e88f119963132116f88bc4b41ca730387aa8a
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945638"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212384"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
@@ -62,7 +62,6 @@ PATCH /users/{id | userPrincipalName}
 |pastProjects|Коллекция строк|Список предыдущих проектов пользователя.|
 |postalCode|String|Почтовый индекс адреса пользователя. Формат почтового индекса зависит от страны или региона пользователя. В США для этого атрибута используется ZIP-код.|
 |preferredLanguage|String|Предпочитаемый язык для пользователя. Он должен быть представлен в формате ISO 639-1, например "ru-RU".|
-|preferredName|String|Предпочитаемое имя пользователя.|
 |responsibilities|Коллекция строк|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
 |skills|Коллекция строк|Список навыков пользователя.|
@@ -96,7 +95,7 @@ Content-length: 491
   "city": "city-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
