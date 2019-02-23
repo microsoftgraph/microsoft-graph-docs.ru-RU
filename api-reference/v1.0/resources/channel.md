@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса канала
-description: 'Канал представляет коллекцию сообщений в группе. '
+title: Тип ресурса channel
+description: 'Канал — это коллекция сообщений в команде. '
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: f513a0c8de51cdfb8ca692098cab403dd74d747a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 2bebf78e4ad31047289bff77e681c34d92a94abf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986350"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30163716"
 ---
-# <a name="channel-resource-type"></a>Тип ресурса канала
+# <a name="channel-resource-type"></a>Тип ресурса channel
 
 
 
-Канал представляет коллекцию сообщений в пределах [группы](../resources/team.md). Канал представляет раздел и логическая изоляции обсуждения в группе. Примеры может быть канала «Пятница Lunch группы» и «Архитектура обсуждений» канала.
+Канал — это коллекция сообщений в [команде](../resources/team.md). Канал представляет тему и логически обособляет обсуждение в команде. Примеры: канал "Пятничный обед команды" и канал "Обсуждение архитектуры".
 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список каналов](../api/channel-list.md) | Коллекция [канала](channel.md) | Получите список каналов в данной группы.|
-|[Создание канала](../api/channel-post.md) | [канал](channel.md) | Создайте новый канал, включая отображаемое имя и описание.|
-|[Получение канала](../api/channel-get.md) | [канал](channel.md) | Чтение свойства и связи канала.|
-|[Обновление канала](../api/channel-patch.md) | [канал](channel.md) | Обновление свойств канала.|
+|[Перечисление каналов](../api/channel-list.md) | Коллекция [channel](channel.md) | Получение списка каналов в команде.|
+|[Создание канала](../api/channel-post.md) | [channel](channel.md) | Создание нового канала путем добавления отображаемого имени и описания.|
+|[Получение канала](../api/channel-get.md) | [channel](channel.md) | Чтение свойств и связей канала.|
+|[Обновление канала](../api/channel-patch.md) | [channel](channel.md) | Обновление свойств канала.|
 |[Удаление канала](../api/channel-delete.md) | Нет | Удаление канала.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|описание|Строка|Необязательное текстовое описание для канала.|
-|displayName|Строка|Имя канала, как оно будет отображаться для пользователей в группах Майкрософт.|
-|id|Строка|Уникальный идентификатор, каналов. Только для чтения.|
+|description|String|Необязательное текстовое описание канала.|
+|displayName|String|Имя канала, отображаемое для пользователя в Microsoft Teams.|
+|id|String|Уникальный идентификатор канала. Только для чтения.|
 
-## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Отношения
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|вкладки|[teamsTab](../resources/teamstab.md) коллекции|Коллекция всех вкладок в канале. Свойство навигации.|
+|tabs|Коллекция [teamsTab](../resources/teamstab.md)|Коллекция всех вкладок в канале. Свойство навигации.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,9 +47,6 @@ ms.locfileid: "27986350"
 
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "chatthreads"
-  ],
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.channel"
 }-->
@@ -58,7 +55,7 @@ ms.locfileid: "27986350"
 {
   "description": "string",
   "displayName": "string",
-  "id": "string (identifier)",
+  "id": "string (identifier)"
 }
 
 ```
