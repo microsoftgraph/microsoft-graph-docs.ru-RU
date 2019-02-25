@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: dc4c2d62bbbf3191c2472891e828c13a386e3c7c
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057073"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30139678"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -36,6 +36,27 @@ ms.locfileid: "30057073"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |бета|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta).|
 |Дополнение |1.0|Представлено новое свойство relatedContacts для ресурса [educationUser](/graph/api/resources/educationUser?view=graph-rest-v1.0).|
+
+### <a name="microsoft-intune-apis"></a>API Microsoft Intune
+
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены новые объекты:<br/>[androidOmaCpConfiguration](/graph/api/resources/intune-deviceconfig-androidomacpconfiguration?view=graph-rest-beta)<br/>[managedDeviceEncryptionState](/graph/api/resources/intune-deviceconfig-manageddeviceencryptionstate?view=graph-rest-beta)<br/>|
+|Дополнение|Бета|Добавлены новые сложные типы:<br/>[deliveryOptimizationBandwidth](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidth?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthBusinessHoursLimit](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthHoursWithPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthhourswithpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationBandwidthPercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationbandwidthpercentage?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdCustom](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidcustom?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSource](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsource?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdSourceOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidsourceoptions?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSize](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesize?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizeAbsolute](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizeabsolute?view=graph-rest-beta)<br/>[deliveryOptimizationMaxCacheSizePercentage](/graph/api/resources/intune-deviceconfig-deliveryoptimizationmaxcachesizepercentage?view=graph-rest-beta)<br/>[encryptionReportPolicyDetails](/graph/api/resources/intune-deviceconfig-encryptionreportpolicydetails?view=graph-rest-beta)<br/>|
+|Дополнение|Бета|Добавлены новые типы перечисления:<br/>[advancedBitLockerState](/graph/api/resources/intune-deviceconfig-advancedbitlockerstate?view=graph-rest-beta)<br/>[deliveryOptimizationGroupIdOptionsType](/graph/api/resources/intune-deviceconfig-deliveryoptimizationgroupidoptionstype?view=graph-rest-beta)<br/>[deliveryOptimizationRestrictPeerSelectionByOptions](/graph/api/resources/intune-deviceconfig-deliveryoptimizationrestrictpeerselectionbyoptions?view=graph-rest-beta)<br/>[deviceTypes](/graph/api/resources/intune-deviceconfig-devicetypes?view=graph-rest-beta)<br/>[edgeKioskModeRestrictionType](/graph/api/resources/intune-deviceconfig-edgekioskmoderestrictiontype?view=graph-rest-beta)<br/>[encryptionReadinessState](/graph/api/resources/intune-deviceconfig-encryptionreadinessstate?view=graph-rest-beta)<br/>[encryptionState](/graph/api/resources/intune-deviceconfig-encryptionstate?view=graph-rest-beta)<br/>|
+|Дополнение|бета|Добавлено свойство **roleScopeTagIds** для объекта [depOnboardingSetting](/graph/api/resources/intune-enrollment-deponboardingsetting?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **autoFillForceAuthentication**, **cellularBlockPlanModification**, **classroomForceAutomaticallyJoinClasses**, **classroomForceUnpromptedAppAndDeviceLock**, **esimBlockModification**, **proximityBlockSetupToNewDevice**, **softwareUpdatesEnforcedDelayInDays** and **softwareUpdatesForceDelayed** для объекта [iosGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-iosgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **softwareUpdatesEnforcedDelayInDays**, **softwareUpdatesForceDelayed** и **contentCachingBlocked** для объекта [macOSGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-macosgeneraldeviceconfiguration?view=graph-rest-beta)|
+|Дополнение|бета|Добавлено свойство **licensingType** для объекта [microsoftStoreForBusinessApp](/graph/api/resources/intune-apps-microsoftstoreforbusinessapp?view=graph-rest-beta).|
+|Дополнение|бета|Добавлены свойства **defenderSecurityCenterDisableClearTpmUI**, **defenderSecurityCenterDisableNotificationAreaUI**, **defenderSecurityCenterDisableVulnerableTpmFirmwareUpdateUI**, **defenderAdobeReaderLaunchChildProcess** и **defenderOfficeCommunicationAppsLaunchChildProcess** для объекта [windows10EndpointProtectionConfiguration](/graph/api/resources/intune-deviceconfig-windows10endpointprotectionconfiguration?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **edgeKioskModeRestriction**, **edgeKioskResetAfterIdleTimeInMinutes**, **defenderScheduleScanEnableLowCpuPriority**, **defenderDisableCatchupQuickScan**, **defenderDisableCatchupFullScan** и **edgeBlockSearchEngineCustomization** для объекта [windows10GeneralConfiguration](/graph/api/resources/intune-deviceconfig-windows10generalconfiguration?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойство **enableWhiteGlove** для объекта [windowsAutopilotDeploymentProfile](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofile?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойства **restrictPeerSelectionBy**, **groupIdSource**, **bandwidthMode**, **backgroundDownloadFromHttpDelayInSeconds**, **foregroundDownloadFromHttpDelayInSeconds**, **minimumRamAllowedToPeerInGigabytes**, **minimumDiskSizeAllowedToPeerInGigabytes**, **minimumFileSizeToCacheInMegabytes**, **minimumBatteryPercentageAllowedToUpload**, **modifyCacheLocation**, **maximumCacheAgeInDays**, **maximumCacheSize** и **vpnPeerCaching** для объекта [windowsDeliveryOptimizationConfiguration](/graph/api/resources/intune-deviceconfig-windowsdeliveryoptimizationconfiguration?view=graph-rest-beta).|
+|Дополнение|бета|Добавлено свойство **lastCheckInDateTime** для объекта [windowsInformationProtectionWipeAction](/graph/api/resources/intune-mam-windowsinformationprotectionwipeaction?view=graph-rest-beta)|
+|Дополнение|бета|Добавлено свойство навигации **managedDeviceEncryptionStates** для объекта [deviceManagement](/graph/api/resources/intune-androidforwork-devicemanagement?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **endpointProtection** и **officeApps** для сложного типа [configurationManagerClientEnabledFeatures](/graph/api/resources/intune-devices-configurationmanagerclientenabledfeatures?view=graph-rest-beta)|
+|Дополнение|бета|Добавлены свойства **productName** и **publisher** для сложного типа [win32LobAppMsiInformation](/graph/api/resources/intune-apps-win32lobappmsiinformation?view=graph-rest-beta)|
+|Дополнение|бета|Добавлен элемент **warn** для типа перечисления [managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta)|
 
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
@@ -807,7 +828,7 @@ ms.locfileid: "30057073"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Изменение          | 1.0 и бета | Разрешение **Members.Read.Hidden** необходимо для чтения или обновления коллекции **Members** в объекте [educationClass](/graph/api/resources/educationclass?view=graph-rest-1.0) с помощью маркеров только для приложения. |
+| Изменение          | 1.0 и бета-версия | Разрешение **Members.Read.Hidden** необходимо для чтения или обновления коллекции **Members** в объекте [educationClass](/graph/api/resources/educationclass?view=graph-rest-1.0) с помощью маркеров только для приложения. |
 |Изменение           |Бета-версия           |Обновлены возможные значения типа **educationSubmissionStatus** в свойстве status объекта [educationsubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta).|
 |Изменение           |Бета-версия           |Добавлен сложный тип **educationAssignmentIndividualRecipient** к свойству assignTo объекта [educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta).|
 |Изменение           |Бета-версия           |Добавлены свойства **unsubmittedBy**, **unsubmittedDate**, **returnedBy**, **returnedDate** объекта [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta).|
@@ -829,7 +850,7 @@ ms.locfileid: "30057073"
 | Дополнение        | Бета          | Добавлены объект [bookingCurrency](/graph/api/resources/bookingcurrency?view=graph-rest-beta) и следующие методы: <br> [перечисление](/graph/api/bookingcurrency-list?view=graph-rest-beta); <br> [получение](/graph/api/bookingcurrency-get?view=graph-rest-beta). |
 | Дополнение        | Бета          | Добавлены объект [bookingCustomer](/graph/api/resources/bookingcustomer?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-customers?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-customers?view=graph-rest-beta); <br> [получение](/graph/api/bookingcustomer-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingcustomer-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingcustomer-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены объект [bookingService](/graph/api/resources/bookingservice?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-services?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-services?view=graph-rest-beta); <br> [получение](/graph/api/bookingservice-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingservice-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingservice-delete?view=graph-rest-beta).|
-| Дополнение        | Бета          | Добавлены объект [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta); <br> [Создание](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) <br> [получение](/graph/api/bookingstaffmember-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingstaffmember-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).|
+| Дополнение        | Бета          | Добавлены объект [bookingStaffMember](/graph/api/resources/bookingstaffmember?view=graph-rest-beta) и следующие методы CRUD: <br> [перечисление](/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta); <br> [создание](/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta); <br> [получение](/graph/api/bookingstaffmember-get?view=graph-rest-beta); <br> [обновление](/graph/api/bookingstaffmember-update?view=graph-rest-beta); <br> [удаление](/graph/api/bookingstaffmember-delete?view=graph-rest-beta).|
 | Дополнение        | Бета          | Добавлены следующие сложные типы: <br> [bookingNamedEntity](/graph/api/resources/bookingnamedentity?view=graph-rest-beta); <br> [bookingPerson](/graph/api/resources/bookingperson?view=graph-rest-beta); <br> [bookingReminder](/graph/api/resources/bookingreminder?view=graph-rest-beta); <br> [bookingWorkHours](/graph/api/resources/bookingworkhours?view=graph-rest-beta); <br> [bookingWorkTimeSlot](/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
@@ -2451,7 +2472,7 @@ ms.locfileid: "30057073"
 
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета        | Добавление данных приложения в Microsoft Graph с помощью [расширений схемы](extensibility-overview.md#schema-extensions)  поддерживается для следующих ресурсов:<br/>administrative unit;<br/>calendar event;<br/>device;<br/>group;<br/>message;<br/>organization;<br/>personal contact;<br/>post;<br/>user.<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](extensibility-schema-groups.md). |
+| Дополнение        | Бета        | Добавление данных приложения в Microsoft Graph с помощью [расширений схемы](extensibility-overview.md#schema-extensions)  поддерживается для следующих ресурсов:<br/>administrative unit;<br/>calendar event;<br/>device;<br/>group;<br/>message;<br/>organization;<br/>personal contact;<br/>post;<br/>user<br/>Пример приведен в следующей статье:<br/>[Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](extensibility-schema-groups.md). |
 | Дополнение        | Бета        | Предоставлен альтернативный способ создания определения расширения схемы без подтвержденного личного домена .com. Подробности см. в разделе [Расширения схемы](extensibility-overview.md#schema-extensions). |
 
 ### <a name="add-custom-data-to-microsoft-graph-using-open-extensions"></a>Добавление пользовательских данных в Microsoft Graph с помощью открытых расширений
@@ -3027,6 +3048,6 @@ ms.locfileid: "30057073"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Исправление             | 1.0 и бета | Исправлена возможность выбирать определенные свойства другого пользователя, когда на него ссылаются по имени участника-пользователя. Пример: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
+| Исправление             | 1.0 и бета-версия | Исправлена возможность выбирать определенные свойства другого пользователя, когда на него ссылаются по имени участника-пользователя. Пример: https://graph.microsoft.com/v1.0/users/anotherUser@contoso.com?$select=aboutMe |
 | Исправление             | 1.0 и бета-версия | Исправлен вызов функции _microsoft.graph.reminderView_, привязанной к пользователю, при котором возникал сбой и отображалось следующее сообщение об ошибке: "Не удалось найти свойство с именем businessPhones в типе Microsoft.OutlookServices.Reminder". |
 | Исправление             | 1.0 и бета-версия | Устранена проблема, из-за которой при создании и обновлении пользователей (POST/PATCH /v1.0/users) возникала ошибка 400. |
