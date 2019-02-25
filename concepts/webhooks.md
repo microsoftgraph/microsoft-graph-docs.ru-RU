@@ -3,12 +3,12 @@ title: Настройка уведомлений об изменениях в п
 description: API Microsoft Graph использует механизм веб-перехватчиков для доставки уведомлений клиентам. Клиент — это веб-служба, которая настраивает свой URL-адрес для получения уведомлений. С помощью уведомлений клиентские приложения обновляют свое состояние в случае изменений.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: e6cd96f155ad88fa858c9c494538af8c31afa919
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 545a2470e85d82ad3e56ab99943d7487f5df3ca3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818510"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30168497"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 
@@ -20,28 +20,28 @@ API Microsoft Graph использует механизм веб-перехва�
 
 С помощью API Microsoft Graph приложение может подписаться на изменения для следующих ресурсов:
 
-- Сообщения
-- События
-- Контакты
-- пользователи;
-- Группы
-- Беседы группы
-- Контент с общим доступом в OneDrive, включая диски, сопоставленные с сайтами SharePoint
-- Личные папки пользователя в OneDrive
-- Оповещения системы безопасности
+- [Сообщение][] Outlook
+- [Событие][] Outlook
+- Личный [контакт][] Outlook
+- [user][]
+- [group][]
+- Групповой [чат][] Office 365 
+- Контент внутри иерархии _любой папки_ [driveItem][] на персональном хранилище OneDrive пользователя
+- Контент внутри иерархии _корневой папки_ [driveItem][] на персональном хранилище OneDrive для бизнеса
+- [Оповещение][] безопасности
 
-Например, вы можете создать подписку на определенную папку: `me/mailFolders('inbox')/messages`;
+Например, вы можете создать подписку на определенную папку Outlook, например, папку Входящие: `me/mailFolders('inbox')/messages`
 
 либо на ресурс верхнего уровня: `me/messages`, `me/contacts`, `me/events`, `users` или `groups`;
 
 либо на определенный экземпляр ресурса: `users/{id}`, `groups/{id}`, `groups/{id}/conversations`;
 
-либо на диск SharePoint/OneDrive для бизнеса: `/drive/root`;
-
-либо на личный OneDrive пользователя: `/drives/{id}/root`
+либо на личное хранилище OneDrive пользователя: `/drives/{id}/root`
 `/drives/{id}/root/subfolder`.
 
-либо на новое [оповещение API безопасности](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`.
+либо на корневую папку диска SharePoint/OneDrive для бизнеса: `/drive/root`
+
+либо на новое оповещение [API безопасности](security-concept-overview.md): `/security/alerts?$filter=status eq ‘New’`, `/security/alerts?$filter=vendorInformation/provider eq ‘ASC’`
 
 ### <a name="azure-ad-resource-limitations"></a>Ограничения ресурсов Azure AD
 
@@ -242,6 +242,9 @@ DELETE https://graph.microsoft.com/v1.0/subscriptions/{id}
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[drive]: /graph/api/resources/drive?view=graph-rest-1.0
+[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
 [event]: /graph/api/resources/event?view=graph-rest-1.0
+[group]: /graph/api/resources/group?view=graph-rest-1.0
 [message]: /graph/api/resources/message?view=graph-rest-1.0
+[user]: /graph/api/resources/user?view=graph-rest-1.0
+[alert]: /graph/api/resources/alert?view=graph-rest-1.0
