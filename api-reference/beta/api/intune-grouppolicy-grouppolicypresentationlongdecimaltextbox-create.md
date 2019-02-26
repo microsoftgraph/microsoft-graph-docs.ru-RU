@@ -1,25 +1,25 @@
 ---
-title: Создание groupPolicyPresentationLongDecimalTextBox
-description: Создание нового объекта groupPolicyPresentationLongDecimalTextBox.
-localization_priority: Normal
+title: Создание ГраупполиципресентатионлонгдеЦималтекстбокс
+description: Создание нового объекта ГраупполиципресентатионлонгдеЦималтекстбокс.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1fd47d422358dd0cd4a23ff35137654787498bf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 648418020dde6327a10c9a4885c99b5a7287ddf0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430668"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158809"
 ---
-# <a name="create-grouppolicypresentationlongdecimaltextbox"></a>Создание groupPolicyPresentationLongDecimalTextBox
+# <a name="create-grouppolicypresentationlongdecimaltextbox"></a>Создание ГраупполиципресентатионлонгдеЦималтекстбокс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .
+Создание нового объекта [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,31 +40,31 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта groupPolicyPresentationLongDecimalTextBox.
+В тексте запроса добавьте представление объекта ГраупполиципресентатионлонгдеЦималтекстбокс в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания groupPolicyPresentationLongDecimalTextBox.
+В следующей таблице приведены свойства, необходимые при создании ГраупполиципресентатионлонгдеЦималтекстбокс.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|label|String|Метка локализованный текст для любого объекта презентации. Значение по умолчанию будет пустым. Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|id|String|Ключ объекта. Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [groupPolicyPresentation](../resources/intune-grouppolicy-grouppolicypresentation.md)|
-|defaultValue|Int64|Целое число без знака, задающее начальное значение для целой и дробной текстовое поле. Значение по умолчанию — 1.|
-|Счетчик|Логический|Если значение true, создание элемента управления "Счетчик"; в противном случае следует создайте текстовое поле для числовых записей. Значение по умолчанию — true.|
-|spinStep|Int64|Целое число без знака, задающее шаг изменений элементов. Значение по умолчанию — 1.|
-|Обязательный|Логический|Требование ввести значение в поле параметра. Значение по умолчанию — false.|
-|minValue|Int64|Неподписанный long, задающее минимальное значение. Значение по умолчанию равно 0.|
-|maxValue|Int64|Неподписанный long, указывающее максимальное значение. Значение по умолчанию — 9999.|
+|label|String|Локализованная текстовая подпись для любой сущности презентации. Значение по умолчанию — пустое значение. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|id|String|Ключ объекта. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
+|defaultValue|Int64|Целое число без знака, задающее начальное значение для десятичного текстового поля. Значение по умолчанию — 1.|
+|повернуть|Логический|Если значение — true, создайте элемент управления "Счетчик"; в противном случае создайте текстовое поле для числового элемента. Значение по умолчанию — true.|
+|Спинстеп|Int64|Целое число без знака, которое указывает приращение изменения элемента управления "Счетчик". Значение по умолчанию — 1.|
+|Обязательный|Логический|Требование ввести значение в поле параметр. Значение по умолчанию — false.|
+|minValue|Int64|Длинное целое число без знака, задающее минимальное допустимое значение. Значение по умолчанию равно 0.|
+|maxValue|Int64|Длинное целое число без знака, задающее максимальное допустимое значение. Значение по умолчанию — 9999.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [groupPolicyPresentationLongDecimalTextBox](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионлонгдеЦималтекстбокс](../resources/intune-grouppolicy-grouppolicypresentationlongdecimaltextbox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

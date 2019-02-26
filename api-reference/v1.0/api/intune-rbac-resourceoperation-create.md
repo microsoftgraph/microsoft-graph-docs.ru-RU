@@ -3,21 +3,22 @@ title: Создание объекта resourceOperation
 description: Создание объекта resourceOperation.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a78ed11164c3bd2991d755d334bb503b3131b7da
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e8cd246c1355bc99e1076495c638ff2309bd9dfa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921138"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251232"
 ---
 # <a name="create-resourceoperation"></a>Создание объекта resourceOperation
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -51,7 +52,7 @@ POST /deviceManagement/resourceOperations
 |id|String|Ключ операции с ресурсом. Доступен только для чтения и создается автоматически.|
 |resourceName|String|Имя ресурса, с которым выполняется эта операция.|
 |actionName|String|Тип действия, которое выполнит эта операция. Свойство actionName должно быть максимально кратким (только несколько слов).|
-|описание|String|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
+|description|Строка|Описание операции с ресурсом. Используется в тексте, который отображается над обозначением операции при наведении указателя мыши на портале Azure.|
 
 
 
@@ -59,6 +60,7 @@ POST /deviceManagement/resourceOperations
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [resourceOperation](../resources/intune-rbac-resourceoperation.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http

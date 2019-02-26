@@ -1,27 +1,28 @@
 ---
 title: Тип ресурса termsAndConditions
-description: Содержимое C политик, изучите пользователям при их первая попытка возможность зачисления в Intune, а затем после изменения которой необходимо re приемки администратора. Благодаря им администраторы могут огласить условия, с которыми должен согласиться пользователь для регистрации устройств в Intune.
-localization_priority: Normal
+description: Объект termsAndConditions представляет метаданные и содержимое определенной политики условий. Содержимое политик условий предоставляется пользователю при первой попытке регистрации в Intune, а после этого — при правках, которые нужно повторно принять по требованию администратора. Благодаря им администраторы могут огласить условия, с которыми должен согласиться пользователь для регистрации устройств в Intune.
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 9dc1e8b2ea6c8b00296cb3a55aba6e8059e5728a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: e9d4366ef5f9e72d6ea3e217fb71eb796bfa20cc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935474"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254781"
 ---
 # <a name="termsandconditions-resource-type"></a>Тип ресурса termsAndConditions
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Объект termsAndConditions представляет метаданные и содержимое определенной политики условий. Содержимое политик условий предоставляется пользователю при первой попытке регистрации в Intune, а после этого — при правках, которые нужно повторно принять по требованию администратора. Благодаря им администраторы могут огласить условия, с которыми должен согласиться пользователь для регистрации устройств в Intune.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов termsAndConditions](../api/intune-companyterms-termsandconditions-list.md)|Коллекция объектов [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Список свойств и связей объектов [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
-|[Получение объекта termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Чтение свойств и связей объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
-|[Создание объекта termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Создание объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
+|[Получение объекта termsAndConditions](../api/intune-companyterms-termsandconditions-get.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md);|Чтение свойств и связей объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
+|[Создание объекта termsAndConditions](../api/intune-companyterms-termsandconditions-create.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md);|Создание объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
 |[Удаление объекта termsAndConditions](../api/intune-companyterms-termsandconditions-delete.md)|Нет|Удаление объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
 |[Обновление объекта termsAndConditions](../api/intune-companyterms-termsandconditions-update.md)|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Обновление свойств объекта [termsAndConditions](../resources/intune-companyterms-termsandconditions.md).|
 
@@ -32,14 +33,14 @@ ms.locfileid: "27935474"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 |displayName|String|Имя политики использования, указанное администратором. |
-|описание|String|Описание политики использования, указанное администратором.|
+|description|String|Описание политики использования, указанное администратором.|
 |title|String|Название условий, указанное администратором. Показывается пользователю при запросе на принятие политики использования.|
 |bodyText|String|Основной текст условий, заданный администратором (как правило, сами условия). Показывается пользователю при запросе на принятие политики использования.|
 |acceptanceStatement|String|Указанное администратором объяснение условий. Как правило, пользователю объясняется, с чем связано принятие условий, изложенных в соответствующей политике. Показывается пользователю при запросе на принятие политики использования.|
 |version|Int32|Целое число, указывающее текущую версию условий. Увеличивается, когда администратор вносит изменения в условия и запрашивает повторное принятие измененной политики у пользователей.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция объектов [termsAndConditionsAssignment](../resources/intune-companyterms-termsandconditionsassignment.md)|Список назначений для этой политики условий.|
 |acceptanceStatuses|Коллекция объектов [termsAndConditionsAcceptanceStatus](../resources/intune-companyterms-termsandconditionsacceptancestatus.md)|Список состояний принятия для этой политики условий.|

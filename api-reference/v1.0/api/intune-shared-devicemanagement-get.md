@@ -4,37 +4,37 @@ description: Чтение свойств и связей объекта deviceMa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: af4dc08832b09387774ad3ad1642b0103b3b7db9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7ae3300ffa73aa42481930e5701755d2551a6076
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936930"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250637"
 ---
 # <a name="get-devicemanagement"></a>Получение объекта deviceManagement
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).
 
-## <a name="prerequisites"></a>Необходимые разрешения
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Разрешение&nbsp;тип&nbsp;(с&nbsp;рабочего процесса) | Разрешения (в порядке убывания привилегий) |
+| Тип&nbsp;&nbsp;разрешения (по&nbsp;рабочим процессам) | Разрешения (в порядке убывания привилегий) |
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
-| &nbsp;&nbsp; Аудита | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
-| &nbsp;&nbsp; Компании термины | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; Конфигурация устройств | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
+| &nbsp;&nbsp; Аудит | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All |
+| &nbsp;&nbsp; Условия компании | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All |
 | &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
-| &nbsp;&nbsp; Подачи заявок | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; Уведомлений | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; Адаптация новых сотрудников | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Регистрация | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Уведомление | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; RBAC | DeviceManagementRBAC.ReadWrite.All, DeviceManagementRBAC.Read.All |
-| &nbsp;&nbsp; Удаленный помощник | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
-| &nbsp;&nbsp; Управления расходами телекоммуникации | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Удаленная помощь | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
+| &nbsp;&nbsp; Управление расходами по телекоммуникационной связи | DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All |
 | &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-| &nbsp;&nbsp; Защита информации Windows | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+| &nbsp;&nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений | Не поддерживается. |
 
@@ -58,8 +58,8 @@ GET /deviceManagement
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceManagement](../resources/intune-shared-devicemanagement.md) в теле отклика.
@@ -72,6 +72,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

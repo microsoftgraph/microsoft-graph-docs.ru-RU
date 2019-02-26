@@ -1,20 +1,24 @@
 ---
-title: Удаление группы
-description: Удаление группы.
+title: Delete Group — API Microsoft Graph
+description: Описывает метод Delete ресурса Group (Entity) API Microsoft Graph (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 65fd34fe01a2543389356e86334e986332210b08
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968612"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251197"
 ---
 # <a name="delete-group"></a>Удаление группы
-Удаление группы.
+
+Удаление группы.  
+
+После удаления группы Office 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По исТечении этого времени они безвозвратно удаляются.  Дополнительные сведения см. в разделе [deletedItems](../resources/directory.md).  Это применимо только к группам Office 365.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -24,24 +28,30 @@ ms.locfileid: "27968612"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
 
-## <a name="response"></a>Отклик
+Не указывайте текст запроса для этого метода.
+
+## <a name="response"></a>Ответ
+
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -51,7 +61,8 @@ DELETE /groups/{id}
 DELETE https://graph.microsoft.com/v1.0/groups/{id}
 ```
 
-#### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
