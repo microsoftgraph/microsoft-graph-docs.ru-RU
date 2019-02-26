@@ -3,21 +3,22 @@ title: Обновление объекта iosVppEBook
 description: Обновление свойств объекта iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c3565a104c1f970293a9d6fc6b9ea5fcdd470228
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0f4b307d54840549caf821defc736a68f90e7556
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982346"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253367"
 ---
 # <a name="update-iosvppebook"></a>Обновление объекта iosVppEBook
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [iosVppEBook](../resources/intune-books-iosvppebook.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -48,9 +49,9 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|id|Строка|Ключ объекта. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |displayName|String|Имя электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
-|описание|String|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
+|description|Строка|Описание. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publisher|String|Издатель. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |largeCover|[mimeContent](../resources/intune-shared-mimecontent.md)|Обложка книги. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
@@ -59,7 +60,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [managedEBook](../resources/intune-books-managedebook.md).|
 |vppTokenId|Guid|Идентификатор токена VPP.|
-|appleId|String|Идентификатор Apple ID, связанный с токеном VPP.|
+|appleId|Строка|Идентификатор Apple ID, связанный с токеном VPP.|
 |vppOrganizationName|String|Название организации для токена VPP.|
 |genres|Коллекция String|Жанры.|
 |language|String|Язык.|
@@ -73,6 +74,7 @@ PATCH /deviceAppManagement/managedEBooks/{managedEBookId}
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [iosVppEBook](../resources/intune-books-iosvppebook.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http

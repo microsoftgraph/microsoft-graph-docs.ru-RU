@@ -1,32 +1,33 @@
 ---
-title: Тип перечисления androidRequiredPasswordType
-description: Тип Android пароль.
+title: тип перечисления Андроидрекуиредпассвордтипе
+description: Требуемый тип пароля для Android.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c85466cf722848efa684fc7b5643293d49de2459
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 59a95c74f19fa6e14440eaedd06d385b05d81e5d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964090"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255404"
 ---
-# <a name="androidrequiredpasswordtype-enum-type"></a>Тип перечисления androidRequiredPasswordType
+# <a name="androidrequiredpasswordtype-enum-type"></a>тип перечисления Андроидрекуиредпассвордтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип Android пароль.
+Требуемый тип пароля для Android.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|к буквам и цифрам|1|К буквам и цифрам пароль.|
-|буквенно-цифровые;|2|Буквенно-цифровой пароль.|
-|alphanumericWithSymbols|3|Буквы или цифры с символы пароль.|
-|lowSecurityBiometric|4|Биометрия низкой безопасности на основе пароль.|
-|числовое|5|Числовой пароль.|
-|numericComplex|6|Числовой сложный пароль.|
-|любой|7|Пароль или шаблон является обязательным, а какие-либо допустима.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|буквы|1,1|Необходим алфавитный пароль.|
+|буквенно-цифровые;|2|Необходимо указать буквенно-цифровой пароль.|
+|Алфанумериквиссимболс|4|Требуются буквенно-цифровые символы с паролем.|
+|Ловсекуритибиометрик|4|Необходим пароль на основе биометрического уровня безопасности.|
+|числовых|17:00|Необходим числовой пароль.|
+|Нумериккомплекс|6|Необходим числовой сложный пароль.|
+|любой|7|Необходим пароль или шаблон, а любой из них приемлем.|
 
 
 

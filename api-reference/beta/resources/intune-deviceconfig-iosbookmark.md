@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса iosBookmark
-description: URL-адрес закладку операций ввода-вывода
-localization_priority: Normal
+title: Тип ресурса Иосбукмарк
+description: Закладка URL-адреса iOS
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e95f3bfd40bdf5ca5782aa9233a020623d32d6a5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9de5d95cd14931da850ab9bdaf5c581fd17f09dc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395911"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174998"
 ---
-# <a name="iosbookmark-resource-type"></a>Тип ресурса iosBookmark
+# <a name="iosbookmark-resource-type"></a>Тип ресурса Иосбукмарк
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-URL-адрес закладку операций ввода-вывода
+Закладка URL-адреса iOS
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|url|String|Разрешен доступ к URL-адрес|
-|bookmarkFolder|String|Папка, в которую будет добавлен закладки в Safari|
-|displayName|String|Отображаемое имя закладки|
+|url|String|URL-адрес, разрешенный для доступа|
+|Букмаркфолдер|String|Папка, в которую следует добавить закладку в Safari|
+|displayName|Строка|Отображаемое имя закладки|
 
 ## <a name="relationships"></a>Отношения
 Нет

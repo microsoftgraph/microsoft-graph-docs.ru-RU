@@ -1,25 +1,25 @@
 ---
-title: Получение appleVppTokenTroubleshootingEvent
-description: Чтение свойства и связи объекта appleVppTokenTroubleshootingEvent.
-localization_priority: Normal
+title: Получение Апплевпптокентраублешутинжевент
+description: Чтение свойств и связей объекта Апплевпптокентраублешутинжевент.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fce083d7a29f8cf0e69c0fb81d0c0cc13f8e58dd
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ef73f390a7b331a9c3c9b98f9c0c3d701b379182
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430712"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174342"
 ---
-# <a name="get-applevpptokentroubleshootingevent"></a>Получение appleVppTokenTroubleshootingEvent
+# <a name="get-applevpptokentroubleshootingevent"></a>Получение Апплевпптокентраублешутинжевент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойства и связи объекта [appleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) .
+Чтение свойств и связей объекта [апплевпптокентраублешутинжевент](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -43,15 +43,15 @@ GET /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingEven
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` объект [appleVppTokenTroubleshootingEvent](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) и кода ответа в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [апплевпптокентраублешутинжевент](../resources/intune-troubleshooting-applevpptokentroubleshootingevent.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

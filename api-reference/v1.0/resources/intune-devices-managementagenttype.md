@@ -1,35 +1,36 @@
 ---
-title: Тип перечисления managementAgentType
+title: тип перечисления Манажементаженттипе
 description: Тип агента управления.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b76231a2781a153c5384c1dc3efdf8facec04dcc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 9743c9c83e34a0c58dee78e73839f8fdcaaf2cda
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966169"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251568"
 ---
-# <a name="managementagenttype-enum-type"></a>Тип перечисления managementAgentType
+# <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип агента управления.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|EAS|1|Устройство управляется сервером Exchange server.|
-|MDM|2|Устройство является управляемым путем MDM. Intune|
-|easMdm|3|Устройство управляется сервером Exchange server и Intune MDM.|
-|intuneClient|4|Управляемые клиентами Intune.|
-|easIntuneClient|5|Устройство является EAS и Intune двойной управляемые клиентами.|
-|configurationManagerClient|8|Устройство является управляемым, диспетчер конфигураций.|
-|configurationManagerClientMdm|10|Устройство управляется Configuration Manager и MDM.|
-|configurationManagerClientMdmEas|11|Устройство является управляемым, диспетчер конфигураций, MDM и Eas.|
-|unknown|16|Тип агента управления UNKNOWN.|
-|jamf|32|Атрибуты устройства полученные от Jamf.|
-|googleCloudDevicePolicyController|64|Устройство управляется CloudDPC компании Google.|
+|атрибутов|1,1|Управление устройством осуществляется с помощью Exchange Server.|
+|Корпоратив|2|Управление устройством осуществляется с помощью Intune MDM.|
+|Еасмдм|4|Устройство управляется как в Exchange Server, так и в Intune MDM.|
+|Интунеклиент|4|Управление клиентом Intune.|
+|Еасинтунеклиент|17:00|Устройство — это EAS и двойное управление клиентом Intune.|
+|Конфигуратионманажерклиент|8,5|Управление устройством осуществляется с помощью Configuration Manager.|
+|Конфигуратионманажерклиентмдм|десяти|Управление устройством осуществляется с помощью Configuration Manager и MDM.|
+|Конфигуратионманажерклиентмдмеас|-11:00|Управление устройством осуществляется с помощью Configuration Manager, MDM и EAS.|
+|unknown|столбцов|НеИзвестный тип агента управления.|
+|жамф|32|Атрибуты устройства извлекаются из Жамф.|
+|Гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
 
 
 

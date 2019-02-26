@@ -1,21 +1,21 @@
 ---
 title: Create microsoftStoreForBusinessApp
 description: Создание объекта microsoftStoreForBusinessApp.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9b866c2ada395144c779b59fb4b0fc096117ff7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3471bb6e06d3c201ed21c4b120ca4f37c8c4c2ab
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404759"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174963"
 ---
 # <a name="create-microsoftstoreforbusinessapp"></a>Create microsoftStoreForBusinessApp
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md).
 
@@ -51,9 +51,9 @@ POST /deviceAppManagement/mobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -64,15 +64,16 @@ POST /deviceAppManagement/mobileApps
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий Microsoft Store для бизнеса.|
 |totalLicenseCount|Int32|Общее количество лицензий Microsoft Store для бизнеса.|
-|productKey|String|Ключ продукта для приложения.|
-|licenseType|[microsoftStoreForBusinessLicenseType](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|Тип лицензии приложения. Возможные значения: `offline`, `online`.|
+|productKey|Строка|Ключ продукта для приложения.|
+|licenseType|[Микрософтсторефорбусинесслиценсетипе](../resources/intune-apps-microsoftstoreforbusinesslicensetype.md)|Тип лицензии приложения. Возможные значения: `offline`, `online`.|
 |packageIdentityName|String|Идентификатор пакета приложения.|
+|licensingType|[vppLicensingType](../resources/intune-apps-vpplicensingtype.md)|Поддерживаемый тип лицензии.|
 
 
 
@@ -86,7 +87,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 876
+Content-length: 1105
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -114,7 +115,14 @@ Content-length: 876
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
   "licenseType": "online",
-  "packageIdentityName": "Package Identity Name value"
+  "packageIdentityName": "Package Identity Name value",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 
@@ -123,7 +131,7 @@ Content-length: 876
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1277
 
 {
   "@odata.type": "#microsoft.graph.microsoftStoreForBusinessApp",
@@ -154,7 +162,14 @@ Content-Length: 1048
   "totalLicenseCount": 1,
   "productKey": "Product Key value",
   "licenseType": "online",
-  "packageIdentityName": "Package Identity Name value"
+  "packageIdentityName": "Package Identity Name value",
+  "licensingType": {
+    "@odata.type": "microsoft.graph.vppLicensingType",
+    "supportUserLicensing": true,
+    "supportDeviceLicensing": true,
+    "supportsUserLicensing": true,
+    "supportsDeviceLicensing": true
+  }
 }
 ```
 

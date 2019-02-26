@@ -1,26 +1,27 @@
 ---
-title: Тип перечисления edgeSearchEngineType
-description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
+title: тип перечисления Еджесеарченгинетипе
+description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c528479d0cb3a04e5ff4cddf082f22616fba2111
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27919927"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253920"
 ---
-# <a name="edgesearchenginetype-enum-type"></a>Тип перечисления edgeSearchEngineType
+# <a name="edgesearchenginetype-enum-type"></a>тип перечисления Еджесеарченгинетипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
+Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|по умолчанию|0|Назначение средство поиска по умолчанию на рынке пользователя может иметь значения фабрики пограничного транспортного сервера|
-|Bing|1|Задает Bing как средство поиска по умолчанию|
+|по умолчанию|нуль|Использует заводские настройки поГраничного сервера, чтобы назначить поисковую систему по умолчанию для рынка пользователей|
+|Bing|1,1|Устанавливает Bing как поисковую систему по умолчанию|
 
 
 

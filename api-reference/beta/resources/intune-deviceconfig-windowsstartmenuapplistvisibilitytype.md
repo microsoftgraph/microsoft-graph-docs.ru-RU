@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления windowsStartMenuAppListVisibilityType
-description: Тип видимости списка приложения меню Пуск.
-localization_priority: Normal
+title: тип перечисления Виндовсстартменуапплиствисибилититипе
+description: Тип отображения списка приложений меню "Пуск".
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ee1d42f74217a2c1f1629b9e2e779307fdb29c7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bed7086b2aeaaf1aeb6cfbd735b17268ae616fcc
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395967"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174568"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>Тип перечисления windowsStartMenuAppListVisibilityType
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип видимости списка приложения меню Пуск.
+Тип отображения списка приложений меню "Пуск".
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Определенные пользователем. Значение по умолчанию.|
-|Свернуть|1|Сверните список приложения в меню Пуск.|
-|удалить|2|Удаляет список приложения из меню «Пуск».|
-|disableSettingsApp|4|Отключает соответствующий переключателя (свернуть или удалить) в окне параметров приложения.|
+|UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
+|свертываются|1,1|Свертывание списка приложений в меню "Пуск".|
+|удалить|2|Полностью удаляет список приложений из меню "Пуск".|
+|Дисаблесеттингсапп|4|Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
 
 
 

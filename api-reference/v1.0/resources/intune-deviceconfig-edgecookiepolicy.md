@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления edgeCookiePolicy
-description: Возможные значения, чтобы указать, какие файлы cookie разрешены в Microsoft пограничного сервера.
+title: тип перечисления Еджекукиеполици
+description: Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b9fcb0d338239976b8e52ab34015c9687cb39276
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f11514978e187d87d9f8fae2990925ec8ea3f193
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991813"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251519"
 ---
-# <a name="edgecookiepolicy-enum-type"></a>Тип перечисления edgeCookiePolicy
+# <a name="edgecookiepolicy-enum-type"></a>тип перечисления Еджекукиеполици
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения, чтобы указать, какие файлы cookie разрешены в Microsoft пограничного сервера.
+Возможные значения, указывающие, какие файлы cookie разрешено использовать в Microsoft Edge.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Пользователь может задать.|
-|Разрешить|1|Разрешить.|
-|blockThirdParty|2|Блокировать только файлы cookie сторонних производителей.|
-|blockAll|3|Блокировать все файлы cookie.|
+|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
+|разрешить|1,1|Разрешить.|
+|Блокксирдпарти|2|Блокировать только сторонние файлы cookie.|
+|Блоккалл|4|Блокировать все файлы cookie.|
 
 
 

@@ -3,19 +3,20 @@ title: Тип ресурса mobileApp
 description: Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 69992ad07c5a0d97168db44cca8474c021d9a230
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 91167967a543ea4556c1704a2bba4ec9a10a4c3d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947479"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254067"
 ---
 # <a name="mobileapp-resource-type"></a>Тип ресурса mobileApp
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Абстрактный класс, содержащий базовые свойства мобильных приложений Intune.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -26,9 +27,9 @@ ms.locfileid: "27947479"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |displayName|String|Администратор предоставил или импортировал название приложения.|
-|описание|String|Описание приложения.|
+|description|Строка|Описание приложения.|
 |publisher|String|Издатель приложения.|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, отображается в сведениях о приложении и используется для отправки значка.|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения.|
@@ -39,10 +40,10 @@ ms.locfileid: "27947479"
 |owner|String|Владелец приложения.|
 |developer|String|Разработчик приложения.|
 |notes|String|Заметки для приложения.|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение не может быть назначено, если оно не опубликовано. Возможные значения: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения.|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения.|

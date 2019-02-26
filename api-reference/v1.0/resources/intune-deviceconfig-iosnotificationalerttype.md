@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления iosNotificationAlertType
-description: Тип предупреждения параметров уведомления.
+title: тип перечисления Иоснотификатионалерттипе
+description: Тип оповещения о параметрах уведомлений.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 647727bd993daaab09d644c10e9d27b72406776a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6165149ea01f91720ba9b65d185ca2ecdf8820a0
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27960541"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253283"
 ---
-# <a name="iosnotificationalerttype-enum-type"></a>Тип перечисления iosNotificationAlertType
+# <a name="iosnotificationalerttype-enum-type"></a>тип перечисления Иоснотификатионалерттипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип предупреждения параметров уведомления.
+Тип оповещения о параметрах уведомлений.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|баннер|1|Заголовок.|
-|модальный|2|Модальные окна.|
-|Нет|3|Нет.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|заголовок|1,1|Заголовок.|
+|модальный|2|Модаль.|
+|Нет|4|Нет.|
 
 
 

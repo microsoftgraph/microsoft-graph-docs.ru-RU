@@ -4,27 +4,28 @@ description: Обновление свойств объекта пользова
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 455a3e0c68fadc9768c434f5893dbc950a371bab
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 8fb82586ea0fda24297179963b730a097b2d81fa
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922524"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251351"
 ---
 # <a name="update-user"></a>Обновление пользователя
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [user](../resources/intune-shared-user.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)| _изменяется в соответствии с контекста_|
+|Делегированные (рабочая или учебная учетная запись)| _зависит от контекста_|
 | &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; MAM | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Адаптация новых сотрудников | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
@@ -53,7 +54,7 @@ PATCH /users/{usersId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор пользователя.|
-|**Адаптация новых сотрудников**|
+|**Входящая миграция**|
 |deviceEnrollmentLimit|Int32|Максимальное количество устройств, которые разрешено зарегистрировать пользователю. Допустимые значения: 5 или 1000.|
 
 ## <a name="response"></a>Отклик

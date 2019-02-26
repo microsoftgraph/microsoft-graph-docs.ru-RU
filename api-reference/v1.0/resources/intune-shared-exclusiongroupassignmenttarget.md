@@ -3,29 +3,31 @@ title: Тип ресурса exclusionGroupAssignmentTarget
 description: Представляет группу, которую следует исключить из назначения.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2d2d6b004b6dbd78b43d4cab1c06e960d43f30d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7fbfa4e6df9dae514a99fa96aace073bd702def9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917225"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254088"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет группу, которую следует исключить из назначения.
+
 
 Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|Строка|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
+|groupId|String|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

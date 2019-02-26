@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления windowsInformationProtectionEnforcementLevel
-description: Возможные значения для защиты НЗП принудительное применение уровней
+title: тип перечисления Виндовсинформатионпротектионенфорцементлевел
+description: Возможные значения для уровней принудительной защиты НЗП
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 4661c80655defe85f27ac8259a961955552f7021
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b1901059ef45141b0dc40d91dcbf4d9237cd6fc5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964174"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254816"
 ---
-# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>Тип перечисления windowsInformationProtectionEnforcementLevel
+# <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>тип перечисления Виндовсинформатионпротектионенфорцементлевел
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для защиты НЗП принудительное применение уровней
+Возможные значения для уровней принудительной защиты НЗП
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|noProtection|0|Принудительное применение без защиты|
-|encryptAndAuditOnly|1|Шифрование и только аудита|
-|encryptAuditAndPrompt|2|Шифрование, аудита и запрашивать пользователя|
-|encryptAuditAndBlock|3|Шифрование, аудита и блокировки|
+|Защита от неЗащищенных|нуль|Защита не включена|
+|Енкриптандаудитонли|1,1|Только шифрование и аудит|
+|Енкриптаудитандпромпт|2|Шифрование, аудит и запрос|
+|Енкриптаудитандблокк|4|Шифрование, аудит и блокировка|
 
 
 

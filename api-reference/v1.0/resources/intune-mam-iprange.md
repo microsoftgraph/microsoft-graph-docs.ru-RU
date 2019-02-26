@@ -1,27 +1,29 @@
 ---
 title: Тип ресурса ipRange
 description: Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 3d89ee22be38764d6eacadcb28a26a3a83c03bc8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 11208723f62a84e371c37160bdbd0ab251fa2546
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982087"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254592"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

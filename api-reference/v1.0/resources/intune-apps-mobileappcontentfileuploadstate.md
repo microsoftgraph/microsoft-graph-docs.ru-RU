@@ -1,40 +1,41 @@
 ---
-title: Тип перечисления mobileAppContentFileUploadState
-description: Содержит свойства для отправки запроса состояний.
+title: тип перечисления Мобилеаппконтентфилеуплоадстате
+description: Содержит свойства для состояний запроса на отправку.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 801708a519f71ee04dbca2cdc66173d727f47299
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 50e17bbd002d42b439c8b4377a38532e13ed9f4b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973050"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255523"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>Тип перечисления mobileAppContentFileUploadState
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для отправки запроса состояний.
+Содержит свойства для состояний запроса на отправку.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Н/Д|
-|transientError|1|Н/Д|
+|success|нуль|Н/Д|
+|Трансиентеррор|1,1|Н/Д|
 |error|2|Н/Д|
-|unknown|3|Н/Д|
-|azureStorageUriRequestSuccess|100|Н/Д|
-|azureStorageUriRequestPending|101|Н/Д|
-|azureStorageUriRequestFailed|102|Н/Д|
-|azureStorageUriRequestTimedOut|103|Н/Д|
-|azureStorageUriRenewalSuccess|200|Н/Д|
-|azureStorageUriRenewalPending|201|Н/Д|
-|azureStorageUriRenewalFailed|202|Н/Д|
-|azureStorageUriRenewalTimedOut|203|Н/Д|
-|commitFileSuccess|300|Н/Д|
-|commitFilePending|301|Н/Д|
-|commitFileFailed|302|Н/Д|
-|commitFileTimedOut|303|Н/Д|
+|unknown|4|Н/Д|
+|Азуресторажеурирекуестсукцесс|100|Н/Д|
+|Азуресторажеурирекуестпендинг|101|Н/Д|
+|Азуресторажеурирекуестфаилед|102|Н/Д|
+|Азуресторажеурирекуесттимедаут|103|Н/Д|
+|Азуресторажеуриреневалсукцесс|200|Н/Д|
+|Азуресторажеуриреневалпендинг|201|Н/Д|
+|Азуресторажеуриреневалфаилед|202|Н/Д|
+|Азуресторажеуриреневалтимедаут|203|Н/Д|
+|Коммитфилесукцесс|300|Н/Д|
+|Коммитфилепендинг|301|Н/Д|
+|Коммитфилефаилед|302|Н/Д|
+|Коммитфилетимедаут|303|Н/Д|
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Обновление windowsKioskConfiguration
-description: Обновление свойства объекта windowsKioskConfiguration.
-localization_priority: Normal
+title: Обновление Виндовскиоскконфигуратион
+description: Обновление свойств объекта Виндовскиоскконфигуратион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 767acd4136226e2687977cf09d2c08f6c413fcb8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cee7c118ba4e78670c0fdef8dd512bcfdc063d5c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414888"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160545"
 ---
-# <a name="update-windowskioskconfiguration"></a>Обновление windowsKioskConfiguration
+# <a name="update-windowskioskconfiguration"></a>Обновление Виндовскиоскконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) .
+Обновление свойств объекта [виндовскиоскконфигуратион](../resources/intune-deviceconfig-windowskioskconfiguration.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -47,35 +47,35 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) .
+В тексте запроса добавьте представление объекта [Виндовскиоскконфигуратион](../resources/intune-deviceconfig-windowskioskconfiguration.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md).
+В следующей таблице приведены свойства, необходимые при создании [виндовскиоскконфигуратион](../resources/intune-deviceconfig-windowskioskconfiguration.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|kioskProfiles|[windowsKioskProfile](../resources/intune-deviceconfig-windowskioskprofile.md) коллекции|Этот параметр политики позволяет определить список профилей киоска для базовой конфигурации. В этом семействе может содержать не более 3 элементы.|
-|kioskBrowserDefaultUrl|String|Укажите URL-адрес по умолчанию, должен перейти браузер при запуске.|
-|kioskBrowserEnableHomeButton|Логический|Кнопка браузера киоска Домашняя страница. По умолчанию домашняя страница кнопка отключена.|
-|kioskBrowserEnableNavigationButtons|Логический|Включите buttons(forward/back) навигации киоска браузера. По умолчанию отключены кнопки перехода.|
-|kioskBrowserEnableEndSessionButton|Логический|Кнопка браузера киоска окончания сеанса. По умолчанию отключена кнопка окончания сеанса.|
-|kioskBrowserRestartOnIdleTimeInMinutes|Int32|Укажите время в минутах, сеанс находится в состоянии простоя до перезапуска браузера киоска новым состояние.  Допустимые значения: 1-1440. Допустимые значения 1 до 1440|
-|kioskBrowserBlockedURLs|Коллекция String|Укажите URL-адреса, не должен перейти киоска браузеры|
-|kioskBrowserBlockedUrlExceptions|Коллекция String|Укажите URL-адресов, которые может киоска браузера перейдите на|
-|edgeKioskEnablePublicBrowsing|Логический|Включение общей обзора полноэкранном режиме для браузера Microsoft пограничного сервера. Значение по умолчанию — false.|
-|edgeKioskResetAfterIdleTimeInMinutes|Int32|Задает время в минутах из последнего действия пользователя перед базовая Подписка пограничного сервера Microsoft восстанавливаются значения по умолчанию.  Допустимые значения: 0-1440. Значение по умолчанию равно 5. 0 указывает не reset. Допустимые значения 0 до 1440|
+|Киоскпрофилес|Коллекция [виндовскиоскпрофиле](../resources/intune-deviceconfig-windowskioskprofile.md)|Этот параметр политики позволяет определить список профилей киоска для конфигурации киоска. Эта коллекция может содержать не более 3 элементов.|
+|Киоскбровсердефаултурл|String|Укажите URL-адрес по умолчанию, на который должен переходить браузер при запуске.|
+|Киоскбровсеренаблехомебуттон|Логический|Включите кнопку Главная в браузере киоска. По умолчанию кнопка "домой" отключена.|
+|Киоскбровсеренабленавигатионбуттонс|Логический|Включение кнопок навигации в браузере киосков (вперед и назад). По умолчанию кнопки навигации отключены.|
+|Киоскбровсеренаблиндсессионбуттон|Логический|Включите кнопку End Session (завершить сеанс) в обозревателе киосков. По умолчанию кнопка End Session отключена.|
+|Киоскбровсеррестартонидлетимеинминутес|Int32|Укажите время в минутах, в течение которого сеанс простаивает до тех пор, пока обозреватель киоска не перезапустится в обновленном состоянии.  Допустимые значения: 1-1440. Допустимые значения — от 1 до 1440|
+|Киоскбровсерблоккедурлс|Коллекция строк|Указание URL-адресов, к которым не должны переходить браузеры киоска|
+|Киоскбровсерблоккедурлексцептионс|Коллекция строк|Указание URL-адресов, на которые может перейти браузер с киоском|
+|Еджекиоскенаблепубликбровсинг|Логический|Включение режима "общедоступный" в режиме киоска браузера для браузера Microsoft Edge. Значение по умолчанию — false.|
+|Еджекиоскресетафтеридлетимеинминутес|Int32|Задает время (в минутах) от последнего действия пользователя до сброса Microsoft Edge киоска.  Допустимые значения: 0-1440. Значение по умолчанию — 5. 0 указывает на отсутствие сброса. Допустимые значения — от 0 до 1440|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windowsKioskConfiguration](../resources/intune-deviceconfig-windowskioskconfiguration.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовскиоскконфигуратион](../resources/intune-deviceconfig-windowskioskconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

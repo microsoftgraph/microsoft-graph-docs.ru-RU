@@ -3,19 +3,20 @@ title: Тип ресурса auditActor
 description: Класс, содержащий свойства субъекта аудита.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ba63fd04d917a464933e749622a5abf959c2859e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 632e3018f606b62171461b4b1235ccdafc6b1b5a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948704"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254459"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства субъекта аудита.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -23,13 +24,14 @@ ms.locfileid: "27948704"
 |userPermissions|Коллекция строк|Список разрешений пользователей во время аудита.|
 |applicationId|String|ИД приложения AAD.|
 |applicationDisplayName|String|Имя приложения.|
-|userPrincipalName|String|Имя участника-пользователя (UPN).|
+|userPrincipalName|Строка|Имя участника-пользователя (UPN).|
 |servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

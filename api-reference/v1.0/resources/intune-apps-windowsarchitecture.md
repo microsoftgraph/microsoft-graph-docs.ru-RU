@@ -1,29 +1,30 @@
 ---
-title: Тип перечисления windowsArchitecture
+title: тип перечисления Виндовсарчитектуре
 description: Содержит свойства для архитектуры Windows.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6e675a670ca0e4cf01f43e3338bf35e7e342b673
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e88fcfbb0b3c1ee71d66301e849439bda96ed5d5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937112"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251561"
 ---
-# <a name="windowsarchitecture-enum-type"></a>Тип перечисления windowsArchitecture
+# <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства для архитектуры Windows.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Нет установленных флагов.|
-|x86|1|Ли X86 поддерживаемый тип архитектуры Windows.|
-|x64|2|Ли X64 поддерживаемый тип архитектуры Windows.|
-|ARM|4|Поддерживается ли тип архитектуры Arm Windows.|
-|neutral|8|Поддерживается ли тип архитектуры Neutral Windows.|
+|Нет|нуль|Флаги не заданы.|
+|платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
+|x|2|Поддерживается ли тип архитектуры Windows x64.|
+|руки|4|Поддерживается ли тип архитектуры Windows ARM.|
+|neutral|8,5|Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
 
 
 

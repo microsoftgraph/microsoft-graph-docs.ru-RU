@@ -1,25 +1,25 @@
 ---
-title: Создание groupPolicyConfiguration
-description: Создание нового объекта groupPolicyConfiguration.
-localization_priority: Normal
+title: Создание Граупполициконфигуратион
+description: Создание нового объекта Граупполициконфигуратион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f5ce3f8408d8a6e404ac17e865cc81bb2094c0cc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 307c12d5b91759618c01f9fa219f50779394a0bf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430862"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174715"
 ---
-# <a name="create-grouppolicyconfiguration"></a>Создание groupPolicyConfiguration
+# <a name="create-grouppolicyconfiguration"></a>Создание Граупполициконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
+Создание нового объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,27 +40,27 @@ POST /deviceManagement/groupPolicyConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта groupPolicyConfiguration.
+В тексте запроса добавьте представление объекта Граупполициконфигуратион в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания groupPolicyConfiguration.
+В следующей таблице приведены свойства, необходимые при создании Граупполициконфигуратион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
-|displayName|String|Имя объекта ресурса, предоставляемые пользователями.|
-|description|String|Описание для объекта ресурса, предоставляемые пользователями.|
+|displayName|String|Предоставленное пользователем имя объекта ресурса.|
+|description|String|Предоставленное пользователем описание объекта ресурса.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [groupPolicyConfiguration](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

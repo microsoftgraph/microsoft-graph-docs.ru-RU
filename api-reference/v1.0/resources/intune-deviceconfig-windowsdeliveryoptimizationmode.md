@@ -1,31 +1,32 @@
 ---
-title: Тип перечисления windowsDeliveryOptimizationMode
-description: Режим оптимизации доставки для распространения peer
+title: тип перечисления Виндовсделиверйоптимизатионмоде
+description: Режим оптимизации доставки для распределения одноранговой сети
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f80c6b5cbe7316c851954154bdb559f370f02b79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c9034c7c90257a7ca622cd203d4ab84387fd2014
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951518"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30251505"
 ---
-# <a name="windowsdeliveryoptimizationmode-enum-type"></a>Тип перечисления windowsDeliveryOptimizationMode
+# <a name="windowsdeliveryoptimizationmode-enum-type"></a>тип перечисления Виндовсделиверйоптимизатионмоде
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Режим оптимизации доставки для распространения peer
+Режим оптимизации доставки для распределения одноранговой сети
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Пользователь может задать.|
-|httpOnly|1|HTTP, не авторами|
-|httpWithPeeringNat|2|Операционная система по умолчанию — Http смешиваются, авторами за же преобразования сетевых адресов|
-|httpWithPeeringPrivateGroup|3|HTTP смешиваются, авторами в частной группой|
-|httpWithInternetPeering|4|HTTP смешиваются, авторами Интернета|
-|simpleDownload|99|Режим простой файл для загрузки с не авторами|
-|bypassMode|100|Режим сервера-посредника. Не используйте оптимизации доставки и вместо этого использовать бит|
+|UserDefined типа|нуль|Разрешить пользователю устанавливать.|
+|httpOnly|1,1|Только HTTP, без пиринга|
+|Хттпвиспирингнат|2|ОПЕРАЦИОННАЯ система по умолчанию — HTTP, смешанная с одноранговым устройством с одним транслятором сетевых адресов|
+|Хттпвиспирингприватеграуп|4|HTTP-смешение с одноранговым элементом в частной группе|
+|Хттпвисинтернетпиринг|4|HTTP-смешение с подключением к Интернету|
+|Симпледовнлоад|99|Простой режим загрузки без пиринга|
+|Бипассмоде|100|Режим обхода. Не используйте оптимизацию доставки и не используйте BITS|
 
 
 

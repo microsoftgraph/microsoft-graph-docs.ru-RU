@@ -4,30 +4,30 @@ description: Чтение свойств и связей объекта deviceCa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 213265a4f9127c9095dd382688a98ce7154e099a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b62523d4a17571c0ff6931b8ee462f21b4a1daa4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406285"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174540"
 ---
 # <a name="get-devicecategory"></a>Получение объекта deviceCategory
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Чтение свойств и связей объекта [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
-| &nbsp;&nbsp; **Адаптация новых сотрудников** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+| &nbsp; &nbsp; **Входящая миграция** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -43,7 +43,7 @@ ms.locfileid: "29406285"
 GET /deviceManagement/deviceCategories/{deviceCategoryId}
 ```
 
-**Адаптация новых сотрудников**
+**Входящая миграция**
 
 <!-- {
   "blockType": "ignored"
@@ -67,7 +67,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCa
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства, возвращенные фактический вызов различаться в зависимости от контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства, возвращаемые при фактическом вызове, меняются в зависимости от контекста.
 
 ``` http
 HTTP/1.1 200 OK
