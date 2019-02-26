@@ -3,19 +3,20 @@ title: Тип ресурса auditProperty
 description: Класс, содержащий свойства для свойства аудита.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 290aae8c245fd09c17fc766cedd7c2e253626943
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 18e819234fd4ee7065378046f8ec977276a8c9f2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912031"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260615"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства для свойства аудита.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -25,6 +26,7 @@ ms.locfileid: "27912031"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

@@ -1,32 +1,33 @@
 ---
-title: Тип перечисления ratingUnitedStatesTelevisionType
-description: Метки TV оценки содержимого в США
+title: тип перечисления Ратингунитедстатестелевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 562caf44391eabc400d0296602d7e359d683983c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 86ee28f600ae9f1e55f09d3d7db794fd55c79281
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969473"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263072"
 ---
-# <a name="ratingunitedstatestelevisiontype-enum-type"></a>Тип перечисления ratingUnitedStatesTelevisionType
+# <a name="ratingunitedstatestelevisiontype-enum-type"></a>тип перечисления Ратингунитедстатестелевисионтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки TV оценки содержимого в США
+Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Соединенных Штатах
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
-|allBlocked|1|Не допускайте использование Любого показывает контента|
-|childrenAll|2|TV-Y, все дочерние элементы|
-|childrenAbove7|3|TV-Y7 дочерние элементы, срок действия 7 и выше|
-|Общие|4|TV-G, подходящее для любого возраста|
-|parentalGuidance|5|TV страница, родительского участия|
-|childrenAbove14|6|TV-14, дочерние элементы, срок действия 14 и выше|
-|для взрослых|7|TV-агент Управления, только для взрослых|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
+|Аллблоккед|1,1|Не разрешать показ контента|
+|Чилдреналл|2|ТВ-Y, все дочерние элементы|
+|childrenAbove7|4|ТВ-Y7, детей от 7 лет и выше|
+|обобщен|4|ТЕЛЕВИДЕНИЕ (TV-G), пригодный для всех лет|
+|Паренталгуиданце|17:00|TV-PG, родительский совет|
+|childrenAbove14|6|TV-14, детей от 14 лет и выше|
+|взрослые|7|Только для передачи ТЕЛЕПЕРЕДАЧ-мА|
 
 
 

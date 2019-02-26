@@ -1,26 +1,27 @@
 ---
-title: Тип перечисления sharedPCAllowedAccountType
-description: Тип учетных записей, которые могут совместно использовать ПК.
+title: тип перечисления Шаредпкалловедаккаунттипе
+description: Тип учетных записей, которым разрешено предоставлять общий доступ к компьютеру.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 37a651bda4283bc5f1bb43482fc527cc3a579343
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7528b79652be799e2cc8b9b6d30622f10b5c6a0e
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940024"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263177"
 ---
-# <a name="sharedpcallowedaccounttype-enum-type"></a>Тип перечисления sharedPCAllowedAccountType
+# <a name="sharedpcallowedaccounttype-enum-type"></a>тип перечисления Шаредпкалловедаккаунттипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип учетных записей, которые могут совместно использовать ПК.
+Тип учетных записей, которым разрешено предоставлять общий доступ к компьютеру.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Гостевая|1|Только гостевых учетных записей. Значение по умолчанию.|
-|domain;|2|Только присоединенный к домену учетных записей.|
+|книге|1,1|Только учетные записи гостя.|
+|domain;|2|Только учетные записи, присоединенные к домену.|
 
 
 

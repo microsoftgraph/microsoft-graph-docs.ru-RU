@@ -1,33 +1,34 @@
 ---
-title: Тип перечисления weeklySchedule
-description: Возможные значения для задание каждую неделю.
+title: тип перечисления Виклисчедуле
+description: Возможные значения для еженедельного расписания.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35f41be7d53017072b399fa4c82192897c804fe2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 04773d2c23dde1d103e2865e6cc8d731337e38a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934662"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263023"
 ---
-# <a name="weeklyschedule-enum-type"></a>Тип перечисления weeklySchedule
+# <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для задание каждую неделю.
+Возможные значения для еженедельного расписания.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|User Defined, значение по умолчанию, без цели.|
-|повседневных|1|Каждый день.|
-|воскресенье|2|Воскресенье.|
-|Понедельник|3|Понедельник.|
+|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
+|решения|1,1|Решения.|
+|воскресеньям|2|Воскресеньям.|
 |Вторник|4|Вторник.|
-|Среда|5|Среда.|
-|Четверг|6|Четверг.|
-|Пятница|7|Пятница.|
-|Суббота|8|Суббота.|
+|во|4|Во.|
+|Четверг|17:00|Четверг.|
+|Пятница|6|Пятница.|
+|пятницам|7|Пятницам.|
+|субботу|8,5|Субботу.|
 
 
 
