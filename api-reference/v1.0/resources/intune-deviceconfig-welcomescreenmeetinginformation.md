@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления welcomeScreenMeetingInformation
-description: Возможные значения для сведений о собраниях экран приветствия.
+title: тип перечисления Велкомескринмитингинформатион
+description: Возможные значения для сведений о собрании на экране приветствия.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 1bdec076eae34adddf9846df5d29436dd20100d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5eb28fba08ce30d32cb37fe35efaf7471db558e2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937658"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264073"
 ---
-# <a name="welcomescreenmeetinginformation-enum-type"></a>Тип перечисления welcomeScreenMeetingInformation
+# <a name="welcomescreenmeetinginformation-enum-type"></a>тип перечисления Велкомескринмитингинформатион
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для сведений о собраниях экран приветствия.
+Возможные значения для сведений о собрании на экране приветствия.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|User Defined, значение по умолчанию, без цели.|
-|showOrganizerAndTimeOnly|1|Показать организатора и только раз.|
-|showOrganizerAndTimeAndSubject|2|Показать организатора, времени и subject (тема скрыто для частных собраний).|
+|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
+|Шоворганизерандтимеонли|1,1|Показывать только организатор и время.|
+|Шоворганизерандтимеандсубжект|2|Отображение организатора, времени и темы (тема скрыта для частных собраний).|
 
 
 

@@ -1,31 +1,32 @@
 ---
-title: Тип перечисления ratingGermanyTelevisionType
-description: Метки TV оценки содержимого в Германии
+title: тип перечисления Ратингжерманителевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dafa3b5b3bfec5c67b87dc10d3162f2c9e24b4bf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a1cdc5fdc8b52f52c62da1a4cd66f3322089edeb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911618"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264458"
 ---
-# <a name="ratinggermanytelevisiontype-enum-type"></a>Тип перечисления ratingGermanyTelevisionType
+# <a name="ratinggermanytelevisiontype-enum-type"></a>тип перечисления Ратингжерманителевисионтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки TV оценки содержимого в Германии
+Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Германии
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
-|allBlocked|1|Не допускайте использование Любого показывает контента|
-|Общие|2|Jahren AB 0, без ограничения срока хранения|
-|agesAbove6|3|Лет AB 6 Jahren, 6 и старые|
-|agesAbove12|4|AB 12 Jahren, лет 12 и старые|
-|agesAbove16|5|AB 16 Jahren, лет 16 и старые|
-|для взрослых|6|Jahren 18 AB, только для взрослых|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
+|Аллблоккед|1,1|Не разрешать показ контента|
+|обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
+|agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
+|agesAbove12|4|AB 12 Жахрен, от 12 лет до 12 лет|
+|agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
+|взрослые|6|Только для Жахрен, только для взрослых|
 
 
 

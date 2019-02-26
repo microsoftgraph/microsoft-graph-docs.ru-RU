@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления installState
-description: Возможные значения для состояние установки.
+title: тип перечисления Инсталлстате
+description: Возможные значения для состояния установки.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b50fb44c2af31efff81f2dd7097505f71bc791d5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1672872dfe355bdd034d829a1d3b387fc9dadbcb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947554"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264367"
 ---
-# <a name="installstate-enum-type"></a>Тип перечисления installState
+# <a name="installstate-enum-type"></a>тип перечисления Инсталлстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для состояние установки.
+Возможные значения для состояния установки.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notApplicable|0|Не применимо.|
-|установлен|1|Установить.|
-|failed|2|Не удалось.|
-|notInstalled|3|Не установлен.|
-|uninstallFailed|4|Удаление не удалось.|
-|unknown|5|Неизвестно.|
+|Нотаппликабле|нуль|НеПрименимо.|
+|устанавлива|1,1|Устанавлива.|
+|failed|2|Сбоев.|
+|Нотинсталлед|4|Не установлено.|
+|Унинсталлфаилед|4|Не удалось выполнить удаление.|
+|unknown|17:00|Найден.|
 
 
 

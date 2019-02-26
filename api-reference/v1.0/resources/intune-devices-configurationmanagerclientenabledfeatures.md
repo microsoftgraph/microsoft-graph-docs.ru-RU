@@ -3,31 +3,33 @@ title: Тип ресурса configurationManagerClientEnabledFeatures
 description: Включенные клиентом функции диспетчера конфигураций
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dc1b994615c89b1a6e73785a5ebcdc85f0638953
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 91ffd0180660b33e9ead5210f9b23870af18e29a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987595"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264423"
 ---
 # <a name="configurationmanagerclientenabledfeatures-resource-type"></a>Тип ресурса configurationManagerClientEnabledFeatures
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Включенные клиентом функции диспетчера конфигураций
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|inventory|Boolean|Управляет ли Intune данными инвентаризации|
-|modernApps|Boolean|Управляет ли Intune современным приложением|
-|resourceAccess|Boolean|Управляет ли Intune доступом к ресурсам|
-|deviceConfiguration|Boolean|Управляет ли Intune конфигурацией устройства|
-|compliancePolicy|Boolean|Управляется ли Intune политикой соответствия требованиям|
+|inventory|Логический|Управляет ли Intune данными инвентаризации|
+|modernApps|Логический|Управляет ли Intune современным приложением|
+|resourceAccess|Логический|Управляет ли Intune доступом к ресурсам|
+|deviceConfiguration|Логический|Управляет ли Intune конфигурацией устройства|
+|compliancePolicy|Логический|Управляется ли Intune политикой соответствия требованиям|
 |windowsUpdateForBusiness|Boolean|Управляет ли Intune Центром обновления Windows для бизнеса|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

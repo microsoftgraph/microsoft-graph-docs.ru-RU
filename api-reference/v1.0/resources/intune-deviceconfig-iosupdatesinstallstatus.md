@@ -1,41 +1,42 @@
 ---
-title: Тип перечисления iosUpdatesInstallStatus
+title: тип перечисления Иосупдатесинсталлстатус
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fb8fde1b6eec6483ea71d4f4cbf3b401dd427cf8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0cb94689fb4345fec41cd584b3b636ffbdeea325
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930511"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264143"
 ---
-# <a name="iosupdatesinstallstatus-enum-type"></a>Тип перечисления iosUpdatesInstallStatus
+# <a name="iosupdatesinstallstatus-enum-type"></a>тип перечисления Иосупдатесинсталлстатус
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Н/Д|
-|доступен|1|Н/Д|
+|success|нуль|Н/Д|
+|доступен|1,1|Н/Д|
 |простоя|2|Н/Д|
-|unknown|3|Н/Д|
-|Загрузка|-2016330712|Н/Д|
-|downloadFailed|-2016330711|Н/Д|
-|downloadRequiresComputer|-2016330710|Н/Д|
-|downloadInsufficientSpace|-2016330709|Н/Д|
-|downloadInsufficientPower|-2016330708|Н/Д|
-|downloadInsufficientNetwork|-2016330707|Н/Д|
-|Установка|-2016330706|Н/Д|
-|installInsufficientSpace|-2016330705|Н/Д|
-|installInsufficientPower|-2016330704|Н/Д|
-|installPhoneCallInProgress|-2016330703|Н/Д|
-|installFailed|-2016330702|Н/Д|
-|notSupportedOperation|-2016330701|Н/Д|
-|sharedDeviceUserLoggedInError|-2016330699|Н/Д|
+|unknown|4|Н/Д|
+|скачивание|— 2016330712|Н/Д|
+|Довнлоадфаилед|— 2016330711|Н/Д|
+|Довнлоадрекуирескомпутер|— 2016330710|Н/Д|
+|ДовнлоадинсуффиЦиентспаце|— 2016330709|Н/Д|
+|ДовнлоадинсуффиЦиентповер|— 2016330708|Н/Д|
+|ДовнлоадинсуффиЦиентнетворк|— 2016330707|Н/Д|
+|устанавливать|— 2016330706|Н/Д|
+|ИнсталлинсуффиЦиентспаце|— 2016330705|Н/Д|
+|ИнсталлинсуффиЦиентповер|— 2016330704|Н/Д|
+|Инсталлфонекаллинпрогресс|— 2016330703|Н/Д|
+|Инсталлфаилед|— 2016330702|Н/Д|
+|Нотсуппортедоператион|— 2016330701|Н/Д|
+|Шареддевицеусерлогжединеррор|— 2016330699|Н/Д|
 
 
 

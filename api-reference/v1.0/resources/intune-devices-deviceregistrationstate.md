@@ -1,32 +1,33 @@
 ---
-title: Тип перечисления deviceRegistrationState
+title: тип перечисления deviceRegistrationState
 description: Состояние регистрации устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5b0048385930166de3329ef9d407f5ddd19efc77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4b3bee7ab56f07dd6f27c20c771329ba84edbb19
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911898"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264136"
 ---
-# <a name="deviceregistrationstate-enum-type"></a>Тип перечисления deviceRegistrationState
+# <a name="deviceregistrationstate-enum-type"></a>тип перечисления deviceRegistrationState
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние регистрации устройства.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notRegistered|0|Устройство не зарегистрирован.|
-|зарегистрирована|2|Зарегистрированные устройства.|
-|отменено|3|Устройства был заблокирован, очистить или не поддерживается.|
-|keyConflict|4|Устройство имеет конфликты ключа.|
-|approvalPending|5|Устройство ожидает утверждения.|
-|certificateReset|6|Устройство сертификат был изменен.|
-|notRegisteredPendingEnrollment|7|Устройства не зарегистрирована и ожидающие заявок через Интернет.|
-|unknown|8|Состояние регистрации устройства неизвестно.|
+|Нотрегистеред|нуль|Устройство не зарегистрировано.|
+|охраняем|2|Устройство зарегистрировано.|
+|отозван|4|Устройство заблокировано, очищено или снято.|
+|Кэйконфликт|4|У устройства есть конфликт ключей.|
+|Аппровалпендинг|17:00|Устройство ожидает утверждения.|
+|Цертификатересет|6|Сертификат устройства сброшен.|
+|Нотрегистередпендинженроллмент|7|Устройство не зарегистрировано и находится в состоянии ожидания регистрации.|
+|unknown|8,5|Состояние регистрации устройства неизвестно.|
 
 
 

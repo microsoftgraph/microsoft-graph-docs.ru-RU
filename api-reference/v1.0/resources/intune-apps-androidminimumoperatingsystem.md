@@ -3,33 +3,35 @@ title: Тип ресурса androidMinimumOperatingSystem
 description: Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения Android.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 764d075489930cacea6463af2d0687a5a92227a4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f2402ad007b794e7d6824e52cce8ff7144c6c33b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952029"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264521"
 ---
 # <a name="androidminimumoperatingsystem-resource-type"></a>Тип ресурса androidMinimumOperatingSystem
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства для минимальной версии операционной системы, необходимой для мобильного приложения Android.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v4_0|Boolean|Версия 4.0 или выше.|
-|v4_0_3|Boolean|Версия 4.0.3 или выше.|
-|v4_1|Boolean|Версия 4.1 или выше.|
-|v4_2|Boolean|Версия 4.2 или выше.|
-|v4_3|Boolean|Версия 4.3 или выше.|
-|v4_4|Boolean|Версия 4.4 или выше.|
-|v5_0|Boolean|Версия 5.0 или выше.|
+|v4_0|Логический|Версия 4.0 или выше.|
+|v4_0_3|Логический|Версия 4.0.3 или выше.|
+|v4_1|Логический|Версия 4.1 или выше.|
+|v4_2|Логический|Версия 4.2 или выше.|
+|v4_3|Логический|Версия 4.3 или выше.|
+|v4_4|Логический|Версия 4.4 или выше.|
+|v5_0|Логический|Версия 5.0 или выше.|
 |v5_1|Boolean|Версия 5.1 или выше.|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
