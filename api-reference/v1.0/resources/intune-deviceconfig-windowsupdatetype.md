@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления windowsUpdateType
-description: Какие устройства филиала будет получать обновления из
+title: тип перечисления Виндовсупдатетипе
+description: Какие устройства филиала будут получать обновления от
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 90d1f946dd497e650df5eb07004560dda028e14f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: f91657cabec59cf1307253d707ba632bf4f99463
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27930343"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260223"
 ---
-# <a name="windowsupdatetype-enum-type"></a><span data-ttu-id="33331-103">Тип перечисления windowsUpdateType</span><span class="sxs-lookup"><span data-stu-id="33331-103">windowsUpdateType enum type</span></span>
+# <a name="windowsupdatetype-enum-type"></a><span data-ttu-id="ba531-103">тип перечисления Виндовсупдатетипе</span><span class="sxs-lookup"><span data-stu-id="ba531-103">windowsUpdateType enum type</span></span>
 
-> <span data-ttu-id="33331-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="33331-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ba531-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ba531-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="33331-105">Какие устройства филиала будет получать обновления из</span><span class="sxs-lookup"><span data-stu-id="33331-105">Which branch devices will receive their updates from</span></span>
-## <a name="members"></a><span data-ttu-id="33331-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="33331-106">Members</span></span>
-|<span data-ttu-id="33331-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="33331-107">Member</span></span>|<span data-ttu-id="33331-108">Значение</span><span class="sxs-lookup"><span data-stu-id="33331-108">Value</span></span>|<span data-ttu-id="33331-109">Описание</span><span class="sxs-lookup"><span data-stu-id="33331-109">Description</span></span>|
+<span data-ttu-id="ba531-105">Какие устройства филиала будут получать обновления от</span><span class="sxs-lookup"><span data-stu-id="ba531-105">Which branch devices will receive their updates from</span></span>
+
+## <a name="members"></a><span data-ttu-id="ba531-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="ba531-106">Members</span></span>
+|<span data-ttu-id="ba531-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="ba531-107">Member</span></span>|<span data-ttu-id="ba531-108">Значение</span><span class="sxs-lookup"><span data-stu-id="ba531-108">Value</span></span>|<span data-ttu-id="ba531-109">Описание</span><span class="sxs-lookup"><span data-stu-id="ba531-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="33331-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="33331-110">userDefined</span></span>|<span data-ttu-id="33331-111">0</span><span class="sxs-lookup"><span data-stu-id="33331-111">0</span></span>|<span data-ttu-id="33331-112">Пользователь может задать.</span><span class="sxs-lookup"><span data-stu-id="33331-112">Allow the user to set.</span></span>|
-|<span data-ttu-id="33331-113">all</span><span class="sxs-lookup"><span data-stu-id="33331-113">all</span></span>|<span data-ttu-id="33331-114">1</span><span class="sxs-lookup"><span data-stu-id="33331-114">1</span></span>|<span data-ttu-id="33331-115">Разделитель годовая канала (целевой).</span><span class="sxs-lookup"><span data-stu-id="33331-115">Semi-annual Channel (Targeted).</span></span> <span data-ttu-id="33331-116">Устройства получает все обновления компонента, которые применяются с точками годовая канала (требуемой).</span><span class="sxs-lookup"><span data-stu-id="33331-116">Device gets all applicable feature updates from Semi-annual Channel (Targeted).</span></span>|
-|<span data-ttu-id="33331-117">businessReadyOnly</span><span class="sxs-lookup"><span data-stu-id="33331-117">businessReadyOnly</span></span>|<span data-ttu-id="33331-118">2</span><span class="sxs-lookup"><span data-stu-id="33331-118">2</span></span>|<span data-ttu-id="33331-119">Разделитель годовая канала.</span><span class="sxs-lookup"><span data-stu-id="33331-119">Semi-annual Channel.</span></span> <span data-ttu-id="33331-120">Устройства получает обновления компонента точками годовая канала.</span><span class="sxs-lookup"><span data-stu-id="33331-120">Device gets feature updates from Semi-annual Channel.</span></span>|
-|<span data-ttu-id="33331-121">windowsInsiderBuildFast</span><span class="sxs-lookup"><span data-stu-id="33331-121">windowsInsiderBuildFast</span></span>|<span data-ttu-id="33331-122">3</span><span class="sxs-lookup"><span data-stu-id="33331-122">3</span></span>|<span data-ttu-id="33331-123">Построение изнутри Windows - Fast</span><span class="sxs-lookup"><span data-stu-id="33331-123">Windows Insider build - Fast</span></span>|
-|<span data-ttu-id="33331-124">windowsInsiderBuildSlow</span><span class="sxs-lookup"><span data-stu-id="33331-124">windowsInsiderBuildSlow</span></span>|<span data-ttu-id="33331-125">4</span><span class="sxs-lookup"><span data-stu-id="33331-125">4</span></span>|<span data-ttu-id="33331-126">Построение изнутри Windows - снижение производительности</span><span class="sxs-lookup"><span data-stu-id="33331-126">Windows Insider build - Slow</span></span>|
-|<span data-ttu-id="33331-127">windowsInsiderBuildRelease</span><span class="sxs-lookup"><span data-stu-id="33331-127">windowsInsiderBuildRelease</span></span>|<span data-ttu-id="33331-128">5</span><span class="sxs-lookup"><span data-stu-id="33331-128">5</span></span>|<span data-ttu-id="33331-129">Построение выпуска Windows изнутри</span><span class="sxs-lookup"><span data-stu-id="33331-129">Release Windows Insider build</span></span>|
+|<span data-ttu-id="ba531-110">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="ba531-110">userDefined</span></span>|<span data-ttu-id="ba531-111">нуль</span><span class="sxs-lookup"><span data-stu-id="ba531-111">0</span></span>|<span data-ttu-id="ba531-112">Разрешить пользователю устанавливать.</span><span class="sxs-lookup"><span data-stu-id="ba531-112">Allow the user to set.</span></span>|
+|<span data-ttu-id="ba531-113">all</span><span class="sxs-lookup"><span data-stu-id="ba531-113">all</span></span>|<span data-ttu-id="ba531-114">1,1</span><span class="sxs-lookup"><span data-stu-id="ba531-114">1</span></span>|<span data-ttu-id="ba531-115">Половина ежегодного канала (нацеленная).</span><span class="sxs-lookup"><span data-stu-id="ba531-115">Semi-annual Channel (Targeted).</span></span> <span data-ttu-id="ba531-116">Device получает все подходящее обновление компонентов из Полугодого канала (нацелено).</span><span class="sxs-lookup"><span data-stu-id="ba531-116">Device gets all applicable feature updates from Semi-annual Channel (Targeted).</span></span>|
+|<span data-ttu-id="ba531-117">Бусинессреадйонли</span><span class="sxs-lookup"><span data-stu-id="ba531-117">businessReadyOnly</span></span>|<span data-ttu-id="ba531-118">2</span><span class="sxs-lookup"><span data-stu-id="ba531-118">2</span></span>|<span data-ttu-id="ba531-119">Половина ежегодного канала.</span><span class="sxs-lookup"><span data-stu-id="ba531-119">Semi-annual Channel.</span></span> <span data-ttu-id="ba531-120">Устройство получает обновления компонентов из Полугодого канала.</span><span class="sxs-lookup"><span data-stu-id="ba531-120">Device gets feature updates from Semi-annual Channel.</span></span>|
+|<span data-ttu-id="ba531-121">Виндовсинсидербуилдфаст</span><span class="sxs-lookup"><span data-stu-id="ba531-121">windowsInsiderBuildFast</span></span>|<span data-ttu-id="ba531-122">4</span><span class="sxs-lookup"><span data-stu-id="ba531-122">3</span></span>|<span data-ttu-id="ba531-123">Предварительная сборка Windows для предварительной сборки — Быстрая</span><span class="sxs-lookup"><span data-stu-id="ba531-123">Windows Insider build - Fast</span></span>|
+|<span data-ttu-id="ba531-124">Виндовсинсидербуилдслов</span><span class="sxs-lookup"><span data-stu-id="ba531-124">windowsInsiderBuildSlow</span></span>|<span data-ttu-id="ba531-125">4</span><span class="sxs-lookup"><span data-stu-id="ba531-125">4</span></span>|<span data-ttu-id="ba531-126">Сборка для предварительной оценки Windows — низкая</span><span class="sxs-lookup"><span data-stu-id="ba531-126">Windows Insider build - Slow</span></span>|
+|<span data-ttu-id="ba531-127">Виндовсинсидербуилдрелеасе</span><span class="sxs-lookup"><span data-stu-id="ba531-127">windowsInsiderBuildRelease</span></span>|<span data-ttu-id="ba531-128">17:00</span><span class="sxs-lookup"><span data-stu-id="ba531-128">5</span></span>|<span data-ttu-id="ba531-129">Выпуск сборки предварительной оценки Windows</span><span class="sxs-lookup"><span data-stu-id="ba531-129">Release Windows Insider build</span></span>|
 
 
 
