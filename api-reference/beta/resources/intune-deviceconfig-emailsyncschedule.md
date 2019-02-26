@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления emailSyncSchedule
-description: Возможные значения для расписание синхронизации электронной почты.
-localization_priority: Normal
+title: тип перечисления Емаилсинксчедуле
+description: Возможные значения для расписания синхронизации электронной почты.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8285b9a34e208b86b7c53c38e6aa015fd8c37560
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ad725c393b68805c2d6ac2470718fd68a7b0f16d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425185"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30174848"
 ---
-# <a name="emailsyncschedule-enum-type"></a><span data-ttu-id="034ca-103">Тип перечисления emailSyncSchedule</span><span class="sxs-lookup"><span data-stu-id="034ca-103">emailSyncSchedule enum type</span></span>
+# <a name="emailsyncschedule-enum-type"></a><span data-ttu-id="8203b-103">тип перечисления Емаилсинксчедуле</span><span class="sxs-lookup"><span data-stu-id="8203b-103">emailSyncSchedule enum type</span></span>
 
-> <span data-ttu-id="034ca-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="034ca-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="034ca-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="034ca-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="8203b-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8203b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="034ca-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="034ca-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8203b-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8203b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="034ca-107">Возможные значения для расписание синхронизации электронной почты.</span><span class="sxs-lookup"><span data-stu-id="034ca-107">Possible values for email sync schedule.</span></span>
+<span data-ttu-id="8203b-106">Возможные значения для расписания синхронизации электронной почты.</span><span class="sxs-lookup"><span data-stu-id="8203b-106">Possible values for email sync schedule.</span></span>
 
-## <a name="members"></a><span data-ttu-id="034ca-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="034ca-108">Members</span></span>
-|<span data-ttu-id="034ca-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="034ca-109">Member</span></span>|<span data-ttu-id="034ca-110">Значение</span><span class="sxs-lookup"><span data-stu-id="034ca-110">Value</span></span>|<span data-ttu-id="034ca-111">Описание</span><span class="sxs-lookup"><span data-stu-id="034ca-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="8203b-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="8203b-107">Members</span></span>
+|<span data-ttu-id="8203b-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="8203b-108">Member</span></span>|<span data-ttu-id="8203b-109">Значение</span><span class="sxs-lookup"><span data-stu-id="8203b-109">Value</span></span>|<span data-ttu-id="8203b-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8203b-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="034ca-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="034ca-112">userDefined</span></span>|<span data-ttu-id="034ca-113">0</span><span class="sxs-lookup"><span data-stu-id="034ca-113">0</span></span>|<span data-ttu-id="034ca-114">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="034ca-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="034ca-115">asMessagesArrive</span><span class="sxs-lookup"><span data-stu-id="034ca-115">asMessagesArrive</span></span>|<span data-ttu-id="034ca-116">1</span><span class="sxs-lookup"><span data-stu-id="034ca-116">1</span></span>|<span data-ttu-id="034ca-117">Синхронизация по мере поступления сообщений.</span><span class="sxs-lookup"><span data-stu-id="034ca-117">Sync as messages arrive.</span></span>|
-|<span data-ttu-id="034ca-118">Вручную</span><span class="sxs-lookup"><span data-stu-id="034ca-118">manual</span></span>|<span data-ttu-id="034ca-119">2</span><span class="sxs-lookup"><span data-stu-id="034ca-119">2</span></span>|<span data-ttu-id="034ca-120">Синхронизируйте вручную.</span><span class="sxs-lookup"><span data-stu-id="034ca-120">Sync manually.</span></span>|
-|<span data-ttu-id="034ca-121">fifteenMinutes</span><span class="sxs-lookup"><span data-stu-id="034ca-121">fifteenMinutes</span></span>|<span data-ttu-id="034ca-122">3</span><span class="sxs-lookup"><span data-stu-id="034ca-122">3</span></span>|<span data-ttu-id="034ca-123">Синхронизация каждые 15 минут.</span><span class="sxs-lookup"><span data-stu-id="034ca-123">Sync every fifteen minutes.</span></span>|
-|<span data-ttu-id="034ca-124">thirtyMinutes</span><span class="sxs-lookup"><span data-stu-id="034ca-124">thirtyMinutes</span></span>|<span data-ttu-id="034ca-125">4</span><span class="sxs-lookup"><span data-stu-id="034ca-125">4</span></span>|<span data-ttu-id="034ca-126">Синхронизация каждые 30 минут.</span><span class="sxs-lookup"><span data-stu-id="034ca-126">Sync every thirty minutes.</span></span>|
-|<span data-ttu-id="034ca-127">sixtyMinutes</span><span class="sxs-lookup"><span data-stu-id="034ca-127">sixtyMinutes</span></span>|<span data-ttu-id="034ca-128">5</span><span class="sxs-lookup"><span data-stu-id="034ca-128">5</span></span>|<span data-ttu-id="034ca-129">Синхронизация каждые 60 минут.</span><span class="sxs-lookup"><span data-stu-id="034ca-129">Sync every sixty minutes.</span></span>|
-|<span data-ttu-id="034ca-130">basedOnMyUsage</span><span class="sxs-lookup"><span data-stu-id="034ca-130">basedOnMyUsage</span></span>|<span data-ttu-id="034ca-131">6</span><span class="sxs-lookup"><span data-stu-id="034ca-131">6</span></span>|<span data-ttu-id="034ca-132">Синхронизация на основе Мои использования.</span><span class="sxs-lookup"><span data-stu-id="034ca-132">Sync based on my usage.</span></span>|
+|<span data-ttu-id="8203b-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="8203b-111">userDefined</span></span>|<span data-ttu-id="8203b-112">нуль</span><span class="sxs-lookup"><span data-stu-id="8203b-112">0</span></span>|<span data-ttu-id="8203b-113">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="8203b-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="8203b-114">Асмессажесарриве</span><span class="sxs-lookup"><span data-stu-id="8203b-114">asMessagesArrive</span></span>|<span data-ttu-id="8203b-115">1,1</span><span class="sxs-lookup"><span data-stu-id="8203b-115">1</span></span>|<span data-ttu-id="8203b-116">Синхронизация по мере поступления сообщений.</span><span class="sxs-lookup"><span data-stu-id="8203b-116">Sync as messages arrive.</span></span>|
+|<span data-ttu-id="8203b-117">Вручную</span><span class="sxs-lookup"><span data-stu-id="8203b-117">manual</span></span>|<span data-ttu-id="8203b-118">2</span><span class="sxs-lookup"><span data-stu-id="8203b-118">2</span></span>|<span data-ttu-id="8203b-119">Синхронизация вручную.</span><span class="sxs-lookup"><span data-stu-id="8203b-119">Sync manually.</span></span>|
+|<span data-ttu-id="8203b-120">Фифтинминутес</span><span class="sxs-lookup"><span data-stu-id="8203b-120">fifteenMinutes</span></span>|<span data-ttu-id="8203b-121">4</span><span class="sxs-lookup"><span data-stu-id="8203b-121">3</span></span>|<span data-ttu-id="8203b-122">Синхронизация каждые пятнадцать минут.</span><span class="sxs-lookup"><span data-stu-id="8203b-122">Sync every fifteen minutes.</span></span>|
+|<span data-ttu-id="8203b-123">thirtyMinutes</span><span class="sxs-lookup"><span data-stu-id="8203b-123">thirtyMinutes</span></span>|<span data-ttu-id="8203b-124">4</span><span class="sxs-lookup"><span data-stu-id="8203b-124">4</span></span>|<span data-ttu-id="8203b-125">Синхронизация каждые 30 минут.</span><span class="sxs-lookup"><span data-stu-id="8203b-125">Sync every thirty minutes.</span></span>|
+|<span data-ttu-id="8203b-126">Сикстиминутес</span><span class="sxs-lookup"><span data-stu-id="8203b-126">sixtyMinutes</span></span>|<span data-ttu-id="8203b-127">17:00</span><span class="sxs-lookup"><span data-stu-id="8203b-127">5</span></span>|<span data-ttu-id="8203b-128">Синхронизация каждые 60 минут.</span><span class="sxs-lookup"><span data-stu-id="8203b-128">Sync every sixty minutes.</span></span>|
+|<span data-ttu-id="8203b-129">Баседонмюсаже</span><span class="sxs-lookup"><span data-stu-id="8203b-129">basedOnMyUsage</span></span>|<span data-ttu-id="8203b-130">6</span><span class="sxs-lookup"><span data-stu-id="8203b-130">6</span></span>|<span data-ttu-id="8203b-131">Синхронизация с учетом использования.</span><span class="sxs-lookup"><span data-stu-id="8203b-131">Sync based on my usage.</span></span>|
 
 
 

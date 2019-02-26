@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления sharedPCAccountDeletionPolicyType
-description: Возможные значения для при удалении учетных записей на общую ПК.
+title: тип перечисления Шаредпкаккаунтделетионполицитипе
+description: Возможные значения для удаления учетных записей на общем компьютере.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5dc216d20becdc233bd1664250a958aa7208f1c2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0c547a59c02e3c4cad9bd8140a2e11ca6e3c84a7
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937630"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253234"
 ---
-# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="beb75-103">Тип перечисления sharedPCAccountDeletionPolicyType</span><span class="sxs-lookup"><span data-stu-id="beb75-103">sharedPCAccountDeletionPolicyType enum type</span></span>
+# <a name="sharedpcaccountdeletionpolicytype-enum-type"></a><span data-ttu-id="7d0a1-103">тип перечисления Шаредпкаккаунтделетионполицитипе</span><span class="sxs-lookup"><span data-stu-id="7d0a1-103">sharedPCAccountDeletionPolicyType enum type</span></span>
 
-> <span data-ttu-id="beb75-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="beb75-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="7d0a1-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7d0a1-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="beb75-105">Возможные значения для при удалении учетных записей на общую ПК.</span><span class="sxs-lookup"><span data-stu-id="beb75-105">Possible values for when accounts are deleted on a shared PC.</span></span>
-## <a name="members"></a><span data-ttu-id="beb75-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="beb75-106">Members</span></span>
-|<span data-ttu-id="beb75-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="beb75-107">Member</span></span>|<span data-ttu-id="beb75-108">Значение</span><span class="sxs-lookup"><span data-stu-id="beb75-108">Value</span></span>|<span data-ttu-id="beb75-109">Описание</span><span class="sxs-lookup"><span data-stu-id="beb75-109">Description</span></span>|
+<span data-ttu-id="7d0a1-105">Возможные значения для удаления учетных записей на общем компьютере.</span><span class="sxs-lookup"><span data-stu-id="7d0a1-105">Possible values for when accounts are deleted on a shared PC.</span></span>
+
+## <a name="members"></a><span data-ttu-id="7d0a1-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="7d0a1-106">Members</span></span>
+|<span data-ttu-id="7d0a1-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="7d0a1-107">Member</span></span>|<span data-ttu-id="7d0a1-108">Значение</span><span class="sxs-lookup"><span data-stu-id="7d0a1-108">Value</span></span>|<span data-ttu-id="7d0a1-109">Описание</span><span class="sxs-lookup"><span data-stu-id="7d0a1-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="beb75-110">Интерпретация</span><span class="sxs-lookup"><span data-stu-id="beb75-110">immediate</span></span>|<span data-ttu-id="beb75-111">0</span><span class="sxs-lookup"><span data-stu-id="beb75-111">0</span></span>|<span data-ttu-id="beb75-112">Удаление немедленно.</span><span class="sxs-lookup"><span data-stu-id="beb75-112">Delete immediately.</span></span>|
-|<span data-ttu-id="beb75-113">diskSpaceThreshold</span><span class="sxs-lookup"><span data-stu-id="beb75-113">diskSpaceThreshold</span></span>|<span data-ttu-id="beb75-114">1</span><span class="sxs-lookup"><span data-stu-id="beb75-114">1</span></span>|<span data-ttu-id="beb75-115">Удалите в порога места на диске.</span><span class="sxs-lookup"><span data-stu-id="beb75-115">Delete at disk space threshold.</span></span>|
-|<span data-ttu-id="beb75-116">diskSpaceThresholdOrInactiveThreshold</span><span class="sxs-lookup"><span data-stu-id="beb75-116">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="beb75-117">2</span><span class="sxs-lookup"><span data-stu-id="beb75-117">2</span></span>|<span data-ttu-id="beb75-118">Удалите порога места на диске, так и неактивных пороговое значение.</span><span class="sxs-lookup"><span data-stu-id="beb75-118">Delete at disk space threshold or inactive threshold.</span></span>|
+|<span data-ttu-id="7d0a1-110">операнд</span><span class="sxs-lookup"><span data-stu-id="7d0a1-110">immediate</span></span>|<span data-ttu-id="7d0a1-111">нуль</span><span class="sxs-lookup"><span data-stu-id="7d0a1-111">0</span></span>|<span data-ttu-id="7d0a1-112">Немедленное удаление.</span><span class="sxs-lookup"><span data-stu-id="7d0a1-112">Delete immediately.</span></span>|
+|<span data-ttu-id="7d0a1-113">Дискспацесрешолд</span><span class="sxs-lookup"><span data-stu-id="7d0a1-113">diskSpaceThreshold</span></span>|<span data-ttu-id="7d0a1-114">1,1</span><span class="sxs-lookup"><span data-stu-id="7d0a1-114">1</span></span>|<span data-ttu-id="7d0a1-115">Удалить с порогового места на диске.</span><span class="sxs-lookup"><span data-stu-id="7d0a1-115">Delete at disk space threshold.</span></span>|
+|<span data-ttu-id="7d0a1-116">Дискспацесрешолдоринактивесрешолд</span><span class="sxs-lookup"><span data-stu-id="7d0a1-116">diskSpaceThresholdOrInactiveThreshold</span></span>|<span data-ttu-id="7d0a1-117">2</span><span class="sxs-lookup"><span data-stu-id="7d0a1-117">2</span></span>|<span data-ttu-id="7d0a1-118">Удаление при пороговом значении или неактивном пороге места на диске.</span><span class="sxs-lookup"><span data-stu-id="7d0a1-118">Delete at disk space threshold or inactive threshold.</span></span>|
 
 
 

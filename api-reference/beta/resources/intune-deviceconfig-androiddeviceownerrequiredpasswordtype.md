@@ -1,34 +1,34 @@
 ---
-title: Тип перечисления androidDeviceOwnerRequiredPasswordType
-description: Android политики устройства владельцем требуется тип пароль.
-localization_priority: Normal
+title: тип перечисления Андроиддевицеовнеррекуиредпассвордтипе
+description: Обязательный тип пароля для политики владельца устройств Android.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c405cf3a69597994d5539427698baa92cabd3904
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 79d71fbabc4597c87c9cee782904334e2f12d7e8
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403541"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172592"
 ---
-# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a><span data-ttu-id="a97f5-103">Тип перечисления androidDeviceOwnerRequiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="a97f5-103">androidDeviceOwnerRequiredPasswordType enum type</span></span>
+# <a name="androiddeviceownerrequiredpasswordtype-enum-type"></a><span data-ttu-id="e6ff4-103">тип перечисления Андроиддевицеовнеррекуиредпассвордтипе</span><span class="sxs-lookup"><span data-stu-id="e6ff4-103">androidDeviceOwnerRequiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="a97f5-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="a97f5-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="a97f5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a97f5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="e6ff4-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="a97f5-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a97f5-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="e6ff4-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a97f5-107">Android политики устройства владельцем требуется тип пароль.</span><span class="sxs-lookup"><span data-stu-id="a97f5-107">Android Device Owner policy required password type.</span></span>
+<span data-ttu-id="e6ff4-106">Обязательный тип пароля для политики владельца устройств Android.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-106">Android Device Owner policy required password type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="a97f5-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="a97f5-108">Members</span></span>
-|<span data-ttu-id="a97f5-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="a97f5-109">Member</span></span>|<span data-ttu-id="a97f5-110">Значение</span><span class="sxs-lookup"><span data-stu-id="a97f5-110">Value</span></span>|<span data-ttu-id="a97f5-111">Описание</span><span class="sxs-lookup"><span data-stu-id="a97f5-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="e6ff4-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="e6ff4-107">Members</span></span>
+|<span data-ttu-id="e6ff4-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="e6ff4-108">Member</span></span>|<span data-ttu-id="e6ff4-109">Значение</span><span class="sxs-lookup"><span data-stu-id="e6ff4-109">Value</span></span>|<span data-ttu-id="e6ff4-110">Описание</span><span class="sxs-lookup"><span data-stu-id="e6ff4-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a97f5-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="a97f5-112">deviceDefault</span></span>|<span data-ttu-id="a97f5-113">0</span><span class="sxs-lookup"><span data-stu-id="a97f5-113">0</span></span>|<span data-ttu-id="a97f5-114">Значение по умолчанию устройства, без цели.</span><span class="sxs-lookup"><span data-stu-id="a97f5-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="a97f5-115">Обязательный</span><span class="sxs-lookup"><span data-stu-id="a97f5-115">required</span></span>|<span data-ttu-id="a97f5-116">1</span><span class="sxs-lookup"><span data-stu-id="a97f5-116">1</span></span>|<span data-ttu-id="a97f5-117">Необходимо задать пароль, но не существует ограничений на тип.</span><span class="sxs-lookup"><span data-stu-id="a97f5-117">There must be a password set, but there are no restrictions on type.</span></span>|
-|<span data-ttu-id="a97f5-118">числовое</span><span class="sxs-lookup"><span data-stu-id="a97f5-118">numeric</span></span>|<span data-ttu-id="a97f5-119">2</span><span class="sxs-lookup"><span data-stu-id="a97f5-119">2</span></span>|<span data-ttu-id="a97f5-120">AT бы числовое.</span><span class="sxs-lookup"><span data-stu-id="a97f5-120">At least numeric.</span></span>|
-|<span data-ttu-id="a97f5-121">numericComplex</span><span class="sxs-lookup"><span data-stu-id="a97f5-121">numericComplex</span></span>|<span data-ttu-id="a97f5-122">3</span><span class="sxs-lookup"><span data-stu-id="a97f5-122">3</span></span>|<span data-ttu-id="a97f5-123">AT бы числовое с последовательности не повторяющиеся или упорядоченном.</span><span class="sxs-lookup"><span data-stu-id="a97f5-123">At least numeric with no repeating or ordered sequences.</span></span>|
-|<span data-ttu-id="a97f5-124">к буквам и цифрам</span><span class="sxs-lookup"><span data-stu-id="a97f5-124">alphabetic</span></span>|<span data-ttu-id="a97f5-125">4</span><span class="sxs-lookup"><span data-stu-id="a97f5-125">4</span></span>|<span data-ttu-id="a97f5-126">По крайней мере к буквам и цифрам пароль.</span><span class="sxs-lookup"><span data-stu-id="a97f5-126">At least alphabetic password.</span></span>|
-|<span data-ttu-id="a97f5-127">буквенно-цифровые;</span><span class="sxs-lookup"><span data-stu-id="a97f5-127">alphanumeric</span></span>|<span data-ttu-id="a97f5-128">5</span><span class="sxs-lookup"><span data-stu-id="a97f5-128">5</span></span>|<span data-ttu-id="a97f5-129">По крайней мере буквенно-цифровой пароль</span><span class="sxs-lookup"><span data-stu-id="a97f5-129">At least alphanumeric password</span></span>|
-|<span data-ttu-id="a97f5-130">alphanumericWithSymbols</span><span class="sxs-lookup"><span data-stu-id="a97f5-130">alphanumericWithSymbols</span></span>|<span data-ttu-id="a97f5-131">6</span><span class="sxs-lookup"><span data-stu-id="a97f5-131">6</span></span>|<span data-ttu-id="a97f5-132">По крайней мере буквенно-цифровые символы.</span><span class="sxs-lookup"><span data-stu-id="a97f5-132">At least alphanumeric with symbols.</span></span>|
+|<span data-ttu-id="e6ff4-111">Девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="e6ff4-111">deviceDefault</span></span>|<span data-ttu-id="e6ff4-112">нуль</span><span class="sxs-lookup"><span data-stu-id="e6ff4-112">0</span></span>|<span data-ttu-id="e6ff4-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="e6ff4-114">Обязательный</span><span class="sxs-lookup"><span data-stu-id="e6ff4-114">required</span></span>|<span data-ttu-id="e6ff4-115">1,1</span><span class="sxs-lookup"><span data-stu-id="e6ff4-115">1</span></span>|<span data-ttu-id="e6ff4-116">Должен быть задан пароль, но не существует ограничений на тип.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-116">There must be a password set, but there are no restrictions on type.</span></span>|
+|<span data-ttu-id="e6ff4-117">числовых</span><span class="sxs-lookup"><span data-stu-id="e6ff4-117">numeric</span></span>|<span data-ttu-id="e6ff4-118">2</span><span class="sxs-lookup"><span data-stu-id="e6ff4-118">2</span></span>|<span data-ttu-id="e6ff4-119">По крайней мере число цифр.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-119">At least numeric.</span></span>|
+|<span data-ttu-id="e6ff4-120">Нумериккомплекс</span><span class="sxs-lookup"><span data-stu-id="e6ff4-120">numericComplex</span></span>|<span data-ttu-id="e6ff4-121">4</span><span class="sxs-lookup"><span data-stu-id="e6ff4-121">3</span></span>|<span data-ttu-id="e6ff4-122">По крайней мере цифры без повторяющихся или упорядоченных последовательностей.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-122">At least numeric with no repeating or ordered sequences.</span></span>|
+|<span data-ttu-id="e6ff4-123">буквы</span><span class="sxs-lookup"><span data-stu-id="e6ff4-123">alphabetic</span></span>|<span data-ttu-id="e6ff4-124">4</span><span class="sxs-lookup"><span data-stu-id="e6ff4-124">4</span></span>|<span data-ttu-id="e6ff4-125">По крайней мере буквенно — пароль.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-125">At least alphabetic password.</span></span>|
+|<span data-ttu-id="e6ff4-126">буквенно-цифровые;</span><span class="sxs-lookup"><span data-stu-id="e6ff4-126">alphanumeric</span></span>|<span data-ttu-id="e6ff4-127">17:00</span><span class="sxs-lookup"><span data-stu-id="e6ff4-127">5</span></span>|<span data-ttu-id="e6ff4-128">По крайней мере буквенно-цифровые пароли</span><span class="sxs-lookup"><span data-stu-id="e6ff4-128">At least alphanumeric password</span></span>|
+|<span data-ttu-id="e6ff4-129">Алфанумериквиссимболс</span><span class="sxs-lookup"><span data-stu-id="e6ff4-129">alphanumericWithSymbols</span></span>|<span data-ttu-id="e6ff4-130">6</span><span class="sxs-lookup"><span data-stu-id="e6ff4-130">6</span></span>|<span data-ttu-id="e6ff4-131">По крайней мере буквенно-цифровые символы.</span><span class="sxs-lookup"><span data-stu-id="e6ff4-131">At least alphanumeric with symbols.</span></span>|
 
 
 

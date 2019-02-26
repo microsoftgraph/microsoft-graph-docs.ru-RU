@@ -1,29 +1,31 @@
 ---
 title: Тип ресурса ipRange
 description: Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 3d89ee22be38764d6eacadcb28a26a3a83c03bc8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 11208723f62a84e371c37160bdbd0ab251fa2546
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982087"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254592"
 ---
-# <a name="iprange-resource-type"></a><span data-ttu-id="bdce5-103">Тип ресурса ipRange</span><span class="sxs-lookup"><span data-stu-id="bdce5-103">ipRange resource type</span></span>
+# <a name="iprange-resource-type"></a><span data-ttu-id="80fb4-103">Тип ресурса ipRange</span><span class="sxs-lookup"><span data-stu-id="80fb4-103">ipRange resource type</span></span>
 
-> <span data-ttu-id="bdce5-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="bdce5-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="80fb4-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="80fb4-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bdce5-105">Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов</span><span class="sxs-lookup"><span data-stu-id="bdce5-105">IP range base class for representing IPV4, IPV6 address ranges</span></span>
-## <a name="properties"></a><span data-ttu-id="bdce5-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="bdce5-106">Properties</span></span>
-|<span data-ttu-id="bdce5-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="bdce5-107">Property</span></span>|<span data-ttu-id="bdce5-108">Тип</span><span class="sxs-lookup"><span data-stu-id="bdce5-108">Type</span></span>|<span data-ttu-id="bdce5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="bdce5-109">Description</span></span>|
+<span data-ttu-id="80fb4-105">Базовый класс диапазона IP-адресов для представления диапазонов IPv4- и IPv6-адресов</span><span class="sxs-lookup"><span data-stu-id="80fb4-105">IP range base class for representing IPV4, IPV6 address ranges</span></span>
+
+## <a name="properties"></a><span data-ttu-id="80fb4-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="80fb4-106">Properties</span></span>
+|<span data-ttu-id="80fb4-107">Свойство</span><span class="sxs-lookup"><span data-stu-id="80fb4-107">Property</span></span>|<span data-ttu-id="80fb4-108">Тип</span><span class="sxs-lookup"><span data-stu-id="80fb4-108">Type</span></span>|<span data-ttu-id="80fb4-109">Описание</span><span class="sxs-lookup"><span data-stu-id="80fb4-109">Description</span></span>|
 |:---|:---|:---|
 
-## <a name="relationships"></a><span data-ttu-id="bdce5-110">Связи</span><span class="sxs-lookup"><span data-stu-id="bdce5-110">Relationships</span></span>
-<span data-ttu-id="bdce5-111">Нет</span><span class="sxs-lookup"><span data-stu-id="bdce5-111">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="bdce5-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bdce5-112">JSON Representation</span></span>
-<span data-ttu-id="bdce5-113">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bdce5-113">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="80fb4-110">Связи</span><span class="sxs-lookup"><span data-stu-id="80fb4-110">Relationships</span></span>
+<span data-ttu-id="80fb4-111">Нет</span><span class="sxs-lookup"><span data-stu-id="80fb4-111">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="80fb4-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80fb4-112">JSON Representation</span></span>
+<span data-ttu-id="80fb4-113">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80fb4-113">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.ipRange"
