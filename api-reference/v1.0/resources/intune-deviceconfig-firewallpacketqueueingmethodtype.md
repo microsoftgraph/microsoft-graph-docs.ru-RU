@@ -1,29 +1,30 @@
 ---
-title: Тип перечисления firewallPacketQueueingMethodType
-description: Возможные значения для firewallPacketQueueingMethod
+title: тип перечисления Фиреваллпаккеткуеуеингмесодтипе
+description: Возможные значения для Фиреваллпаккеткуеуеингмесод
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 3700df6d2eaf0dd0d2dde8a3f4a90be2e3684951
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cdd9dc0279abc332bbf7b686f7f429fbd8db8883
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940101"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258928"
 ---
-# <a name="firewallpacketqueueingmethodtype-enum-type"></a>Тип перечисления firewallPacketQueueingMethodType
+# <a name="firewallpacketqueueingmethodtype-enum-type"></a>тип перечисления Фиреваллпаккеткуеуеингмесодтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для firewallPacketQueueingMethod
+Возможные значения для Фиреваллпаккеткуеуеингмесод
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение не настраивается с Intune, не переопределяют настраиваемых пользователем устройства по умолчанию|
-|Этот параметр отключен|1|Отключение очереди пакетов|
-|queueInbound|2|В очередь входящие зашифрованные пакеты|
-|queueOutbound|3|Очередь расшифрован исходящих пакетов для пересылки|
-|queueBoth|4|Очередь входящих и исходящих пакетов|
+|Девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
+|активирован|1,1|Отключение очереди пакетов|
+|Куеуеинбаунд|2|Очередь входящих зашифрованных пакетов|
+|Куеуеаутбаунд|4|Очередь расшифрованных исходящих пакетов для пересылки|
+|Куеуебос|4|ПоСтановка в очередь входящих и исходящих пакетов|
 
 
 

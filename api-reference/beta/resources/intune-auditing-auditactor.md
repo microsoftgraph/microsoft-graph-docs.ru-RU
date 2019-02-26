@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса auditActor
 description: Класс, содержащий свойства субъекта аудита.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fcb9ededd9d1a2bb93f970f9f0da0c41a248e840
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9b748eaea907bc2f763bb5567d7963c33b31bddd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425801"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141127"
 ---
 # <a name="auditactor-resource-type"></a>Тип ресурса auditActor
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Класс, содержащий свойства субъекта аудита.
 
@@ -26,7 +26,7 @@ ms.locfileid: "29425801"
 |userPermissions|Коллекция строк|Список разрешений пользователей во время аудита.|
 |applicationId|String|ИД приложения AAD.|
 |applicationDisplayName|String|Имя приложения.|
-|userPrincipalName|String|Имя участника-пользователя (UPN).|
+|userPrincipalName|Строка|Имя участника-пользователя (UPN).|
 |servicePrincipalName|String|Имя субъекта-службы (SPN).|
 |ipAddress|String|IP-адрес.|
 |userId|String|ИД пользователя.|

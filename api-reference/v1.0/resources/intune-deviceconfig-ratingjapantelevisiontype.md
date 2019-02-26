@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления ratingJapanTelevisionType
-description: Метки TV оценки содержимого в Японии
+title: тип перечисления Ратингжапантелевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c78b05ad0787737f0d468d63b6da78902cf8700f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: a13e7d529ab2378c9df6a4b7466f1b063040f474
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27920235"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258382"
 ---
-# <a name="ratingjapantelevisiontype-enum-type"></a>Тип перечисления ratingJapanTelevisionType
+# <a name="ratingjapantelevisiontype-enum-type"></a>тип перечисления Ратингжапантелевисионтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Метки TV оценки содержимого в Японии
+Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Японии
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешить всем TV показывает контента|
-|allBlocked|1|Не допускайте использование Любого показывает контента|
-|explicitAllowed|2|Все содержимое TV явно разрешен|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все показы контента|
+|Аллблоккед|1,1|Не разрешать показ контента|
+|ЕксплиЦиталловед|2|Все ТЕЛЕВИЗИОНные материалы явно разрешены|
 
 
 

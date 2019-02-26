@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления deviceManagementPartnerTenantState
-description: Состояние партнера клиента.
+title: тип перечисления Девицеманажементпартнертенантстате
+description: Состояние партнера этого клиента.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 814fe428ff5b016b1f344743d1c2d06e2b076c76
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c14c1806e65ba180837082288b76e047055f8a9f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981485"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257983"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>Тип перечисления deviceManagementPartnerTenantState
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>тип перечисления Девицеманажементпартнертенантстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние партнера клиента.
+Состояние партнера этого клиента.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Состояние партнера неизвестно.|
-|недоступен|1|Участник недоступен.|
-|enabled|2|Включить партнера.|
-|завершен|3|Подключение к партнера разрывается.|
-|Отклонено|4|Отклоняются сообщения партнера.|
-|не отвечает|5|Партнер не отвечает.|
+|unknown|нуль|Состояние партнера неизвестно.|
+|выходе|1,1|Партнер недоступен.|
+|enabled|2|Партнер включен.|
+|нулем|4|Подключение к партнеру завершается.|
+|клоняет|4|Партнерские сообщения отклоняются.|
+|не отвечает|17:00|Партнер не отвечает.|
 
 
 

@@ -1,26 +1,27 @@
 ---
-title: Тип перечисления savedUIStateGenerationOptions
+title: тип перечисления Саведуистатеженератионоптионс
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c987f91b3bcb686cb853b81514a487b8c9aa0625
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4939061dc18ef7fbea6f8945f74226b363a3bc3c
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932163"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259285"
 ---
-# <a name="saveduistategenerationoptions-enum-type"></a>Тип перечисления savedUIStateGenerationOptions
+# <a name="saveduistategenerationoptions-enum-type"></a>тип перечисления Саведуистатеженератионоптионс
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Н/Д|
-|omitSilverlightPolicyReferences|1|Н/Д|
+|Нет|нуль|Н/Д|
+|Омитсилверлигхтполициреференцес|1,1|Н/Д|
 
 
 

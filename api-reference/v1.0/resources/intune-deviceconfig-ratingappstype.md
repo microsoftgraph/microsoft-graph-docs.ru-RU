@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления ratingAppsType
-description: Оценка как и мультимедийного контента приложения
+title: тип перечисления Ратингаппстипе
+description: Оценка приложений как в мультимедийном контенте
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 0d497efb475cde1e43ee5adfa14aab0d4a3cedc5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 7117955c3c28c1cf58ac11d0eceeca090afd9fcb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951574"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259726"
 ---
-# <a name="ratingappstype-enum-type"></a>Тип перечисления ratingAppsType
+# <a name="ratingappstype-enum-type"></a>тип перечисления Ратингаппстипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Оценка как и мультимедийного контента приложения
+Оценка приложений как в мультимедийном контенте
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешать все содержимое приложения|
-|allBlocked|1|Не разрешать контента приложения|
-|agesAbove4|2|4 + срок действия 4 и выше|
-|agesAbove9|3|9 + возраст 9 и выше|
-|agesAbove12|4|12 + до 12 лет и выше |
-|agesAbove17|5|17 + возраст 17 и выше|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое приложений|
+|Аллблоккед|1,1|Не разрешать контент приложений|
+|agesAbove4|2|4 +, возраст 4 и выше|
+|agesAbove9|4|9 +, возраст 9 и более поздних версий|
+|agesAbove12|4|12 +, 12 лет и более |
+|agesAbove17|17:00|17 +, возраст 17 и выше|
 
 
 

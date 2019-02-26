@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса iosSingleSignOnSettings
-description: операций ввода-вывода параметров проверки подлинности Kerberos для единого входа
-localization_priority: Normal
+title: Тип ресурса Иоссинглесигнонсеттингс
+description: Параметры проверки подлинности Kerberos для iOS для единого входа
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 189fb79be741bdf6b731b1e3c2b336934db8c86b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b438ea8fadc30a0bf5fa3786e9b4cec3344093c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421321"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142625"
 ---
-# <a name="iossinglesignonsettings-resource-type"></a>Тип ресурса iosSingleSignOnSettings
+# <a name="iossinglesignonsettings-resource-type"></a>Тип ресурса Иоссинглесигнонсеттингс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-операций ввода-вывода параметров проверки подлинности Kerberos для единого входа
+Параметры проверки подлинности Kerberos для iOS для единого входа
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|allowedAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список идентификаторов приложения, которые могут использовать это имя входа. Если это поле указан, имя входа применяется ко всем приложениям на устройстве. Эта коллекция может содержать не более 500 элементов.|
-|allowedUrls|Коллекция String|Список URL-адресов HTTP для соответствия для использования этим именем входа. С помощью операций ввода-вывода 9.0 или более поздней версии могут быть использованы подстановочные знаки.|
-|displayName|String|Отображаемое имя параметры входа в систему на получающей устройства.|
-|kerberosPrincipalName|String|Имя участника Kerberos. Если этот параметр не указан, пользователю предлагается ввести один во время установки профиля.|
-|kerberosRealm|String|Имя сферы Kerberos. С учетом регистра.|
+|Алловедаппслист|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список идентификаторов приложений, которым разрешено использовать это имя для входа. Если это поле опущено, имя входа применяется ко всем приложениям на устройстве. Эта коллекция может содержать не более 500 элементов.|
+|Алловедурлс|Коллекция строк|Список URL-адресов HTTP, которые должны быть сопоставлены для использования этого имени входа. При использовании iOS 9,0 или более поздних версий можно использовать подстановочные знаки.|
+|displayName|String|Отображаемое имя параметров входа, отображаемое на принимающем устройстве.|
+|КербероспринЦипалнаме|String|Имя субъекта Kerberos. Если этот параметр не указан, пользователю предлагается указать один во время установки профиля.|
+|Керберосреалм|String|Имя области Kerberos. С учетом регистра.|
 
 ## <a name="relationships"></a>Отношения
 Нет

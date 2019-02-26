@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления appLockerApplicationControlType
-description: Возможные значения элемента управления типов AppLocker приложений
-localization_priority: Normal
+title: тип перечисления Апплоккераппликатионконтролтипе
+description: Возможные значения типов элементов управления приложения AppLocker
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b3bc89620a6dd13a65cfe40f37ba2f775e6a9c83
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 22d108dd3bad90341031d1e965948a9daa59efa1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425724"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141358"
 ---
-# <a name="applockerapplicationcontroltype-enum-type"></a>Тип перечисления appLockerApplicationControlType
+# <a name="applockerapplicationcontroltype-enum-type"></a>тип перечисления Апплоккераппликатионконтролтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения элемента управления типов AppLocker приложений
+Возможные значения типов элементов управления приложения AppLocker
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Значение по умолчанию устройства, тип элемента управления приложениями, не выбран.|
-|enforceComponentsAndStoreApps|1|Принудительное применение компонента и хранилища приложений Windows.|
-|auditComponentsAndStoreApps|2|Аудит компонента и хранилища приложений Windows.|
-|enforceComponentsStoreAppsAndSmartlocker|3|Принудительное применение компонентов Windows, хранилища приложений и смарт-корзины.|
-|auditComponentsStoreAppsAndSmartlocker|4|Аудит компонентов Windows, хранилища приложений и смарт-корзины.|
+|notConfigured|нуль|Значение по умолчанию для устройства, тип элемента управления приложения не выбран.|
+|Енфорцекомпонентсандстореаппс|1,1|Принудительное применение компонентов Windows и сохранение приложений.|
+|Аудиткомпонентсандстореаппс|2|Аудит компонентов Windows и хранение приложений.|
+|Енфорцекомпонентсстореаппсандсмартлоккер|4|Принудительное применение компонентов Windows, хранение приложений и интеллектуальных блокировок.|
+|Аудиткомпонентсстореаппсандсмартлоккер|4|Аудит компонентов Windows, хранение приложений и интеллектуальных блокировок.|
 
 
 

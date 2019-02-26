@@ -1,21 +1,21 @@
 ---
 title: Перечисление объектов deviceCompliancePolicySettingStateSummary
 description: Список свойств и связей объектов deviceCompliancePolicySettingStateSummary.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f079f75b8583cc5c057bad26ccf79ce734beed7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7362e21bfd6be96e3864cf82e98e1e7dbaa16e37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406845"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142534"
 ---
 # <a name="list-devicecompliancepolicysettingstatesummaries"></a>Перечисление объектов deviceCompliancePolicySettingStateSummary
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Список свойств и связей объектов [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md).
 
@@ -45,7 +45,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [deviceCompliancePolicySettingStateSummary](../resources/intune-deviceconfig-devicecompliancepolicysettingstatesummary.md) в тексте отклика.
@@ -58,7 +58,7 @@ GET /deviceManagement/deviceCompliancePolicySettingStateSummaries
 GET https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicySettingStateSummaries
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

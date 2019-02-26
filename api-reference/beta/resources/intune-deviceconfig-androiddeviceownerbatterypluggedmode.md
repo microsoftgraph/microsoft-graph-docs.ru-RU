@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidDeviceOwnerBatteryPluggedMode
-description: Android устройства владельцем допустимые значения состояния устройства питания от сети в режимах.
-localization_priority: Normal
+title: тип перечисления Андроиддевицеовнербаттериплугжедмоде
+description: Допустимые значения владельца устройств Android для состояний подключаемых режимов питания устройства.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7291a687d5d179a1af2d7ba2dfdcd04b598b465f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 529359a0227c208f0904e8bd84408208329f52a9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392992"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30141134"
 ---
-# <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>Тип перечисления androidDeviceOwnerBatteryPluggedMode
+# <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>тип перечисления Андроиддевицеовнербаттериплугжедмоде
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Android устройства владельцем допустимые значения состояния устройства питания от сети в режимах.
+Допустимые значения владельца устройств Android для состояний подключаемых режимов питания устройства.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен; Это значение игнорируется.|
-|AC|1|Источник питания является AC зарядного устройства.|
-|USB|2|Источник питания является USB-порту.|
-|беспроводной сети|3|Источник питания — беспроводной.|
+|notConfigured|нуль|Не настроен; Это значение игнорируется.|
+|питания|1,1|Источник питания является подзарядом сети ПЕРЕМЕНного тока.|
+|Порт|2|Источник электроСети — USB-порт.|
+|инфракрас|4|Источник энергоПотребления беспроводной сети.|
 
 
 

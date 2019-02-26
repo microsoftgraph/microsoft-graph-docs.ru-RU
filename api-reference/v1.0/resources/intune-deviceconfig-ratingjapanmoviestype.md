@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления ratingJapanMoviesType
-description: Фильмы рейтинг метки в Японии
+title: тип перечисления Ратингжапанмовиестипе
+description: Метки оценок фильмов в Японии
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fedb2a824151a1548d8a91471e3094077fb63b95
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 407c725b958c45fc395ba9adbe9634e78a288f53
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957300"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259278"
 ---
-# <a name="ratingjapanmoviestype-enum-type"></a>Тип перечисления ratingJapanMoviesType
+# <a name="ratingjapanmoviestype-enum-type"></a>тип перечисления Ратингжапанмовиестипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Фильмы рейтинг метки в Японии
+Метки оценок фильмов в Японии
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешать все содержимое кино|
-|allBlocked|1|Не разрешать любое содержимое кино|
-|Общие|2|Подходит для всех от|
-|parentalGuidance|3|Классификация стр-12 запрашивает родительского участия молодых людей в разделе 12|
-|agesAbove15|4|Классификация R15 + подходит для средства просмотра из 15 или более ранней версии|
-|agesAbove18|5|Классификация R18 + подходит для средства просмотра 18 или более ранней версии|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
+|Аллблоккед|1,1|Не разрешать никакие видеоролики|
+|обобщен|2|Подходит для всех возраста|
+|Паренталгуиданце|4|Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
+|agesAbove15|4|R15 + Classification подходит для зрителей от 15 или более ранних версий|
+|agesAbove18|17:00|R18 + Classification подходит для зрителей от 18 лет и старше|
 
 
 

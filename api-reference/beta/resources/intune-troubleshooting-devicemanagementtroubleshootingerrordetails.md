@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса deviceManagementTroubleshootingErrorDetails
-description: Объект, содержащий подробные сведения об ошибке и ее обновлений.
-localization_priority: Normal
+title: Тип ресурса Девицеманажементтраублешутинжеррордетаилс
+description: Объект, содержащий подробные сведения об ошибке и ее исправлении.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cdda64170afc739c23f1b258e5f2f1b31158662
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 08ad43b717a5e08229054bc10aa81a0786f4e344
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430658"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142583"
 ---
-# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса deviceManagementTroubleshootingErrorDetails
+# <a name="devicemanagementtroubleshootingerrordetails-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррордетаилс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Объект, содержащий подробные сведения об ошибке и ее обновлений.
+Объект, содержащий подробные сведения об ошибке и ее исправлении.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |context|String|Н/Д|
 |failure|String|Н/Д|
-|failureDetails|String|Подробное описание причины.|
-|исправление|String|Подробное описание способов устранения этой проблемы.|
-|resources|[deviceManagementTroubleshootingErrorResource](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md) коллекции|Ссылки на полезные документация по Эта ошибка.|
+|Фаилуредетаилс|String|Подробное описание того, что пошло не так.|
+|исправления|String|Подробное описание этой проблемы.|
+|resources|Коллекция [девицеманажементтраублешутинжеррорресаурце](../resources/intune-troubleshooting-devicemanagementtroubleshootingerrorresource.md)|Ссылки на полезную документацию об этой ошибке.|
 
 ## <a name="relationships"></a>Отношения
 Нет

@@ -1,29 +1,30 @@
 ---
-title: Тип перечисления deviceManagementExchangeAccessState
-description: Состояние доступа устройств Exchange.
+title: тип перечисления Девицеманажементексчанжеакцессстате
+description: Состояние доступа к Exchange для устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dbfa7b9396a1100f2e3c7e4e78cf697233d840cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fedbd157c4668397256971c57a4cb5fa355f78c1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947017"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257605"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a>Тип перечисления deviceManagementExchangeAccessState
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a>тип перечисления Девицеманажементексчанжеакцессстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние доступа устройств Exchange.
+Состояние доступа к Exchange для устройства.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Состояние не доступа, обнаруженные в Exchange|
-|unknown|1|Состояние доступа устройства к серверу Exchange не известен|
-|разрешено|2|Устройство имеет доступ к Exchange|
-|заблокировано|3|Устройство будет заблокировано в Exchange|
-|в карантин|4|Находится в карантине в Exchange|
+|Нет|нуль|Не обнаружено состояние доступа в Exchange|
+|unknown|1,1|Неизвестный режим доступа к устройству Exchange|
+|разрешенных|2|Устройство имеет доступ к Exchange|
+|заблокировано|4|Устройство заблокировано в Exchange|
+|карантин|4|Устройство помещено в карантин в Exchange|
 
 
 

@@ -1,26 +1,27 @@
 ---
-title: Тип перечисления deviceManagementExchangeConnectorSyncType
-description: Тип соединителя Exchange запрошенную синхронизацию.
+title: тип перечисления Девицеманажементексчанжеконнекторсинктипе
+description: Тип запрошенной синхронизации соединителя Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5af14006bd6f3cc8733faecc8e0219cc02e7fcd9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: cfdd1da2ecec6fb7848787386991ee09741d0b67
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983284"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257584"
 ---
-# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>Тип перечисления deviceManagementExchangeConnectorSyncType
+# <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторсинктипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип соединителя Exchange запрошенную синхронизацию.
+Тип запрошенной синхронизации соединителя Exchange.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|fullSync|0|Обнаружение всех устройств в Exchange.|
-|deltaSync|1|Обнаружение только устройств в Exchange, которая обновления во время синхронизации дельты.|
+|Профиль выполнения FullSync|нуль|Обнаружение устройства в Exchange.|
+|Профиль выполнения deltasync|1,1|Обнаружение только устройства в Exchange, которое обновилось в окне "разностная синхронизация".|
 
 
 

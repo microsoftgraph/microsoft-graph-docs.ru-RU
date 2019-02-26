@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления deviceManagementPartnerAppType
-description: Тип приложения партнера.
+title: тип перечисления Девицеманажементпартнерапптипе
+description: Тип партнерского приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 683846129f63a2185772bb3b400fc4abd3d7b1cb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: d3ff9fe66a987b0ae460724f36485839b97ff933
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990175"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30259950"
 ---
-# <a name="devicemanagementpartnerapptype-enum-type"></a>Тип перечисления deviceManagementPartnerAppType
+# <a name="devicemanagementpartnerapptype-enum-type"></a>тип перечисления Девицеманажементпартнерапптипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип приложения партнера.
+Тип партнерского приложения.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Тип приложения партнера неизвестен.|
-|singleTenantApp|1|Партнерского приложения является одним клиентом в AAD.|
-|multiTenantApp|2|Партнер приложения — нескольких клиентов в AAD.|
+|unknown|нуль|Неизвестный тип партнерского приложения.|
+|Синглетенантапп|1,1|Партнерское приложение — это один клиент в AAD.|
+|Мултитенантапп|2|Партнерское приложение является несколькими клиентами в AAD.|
 
 
 
