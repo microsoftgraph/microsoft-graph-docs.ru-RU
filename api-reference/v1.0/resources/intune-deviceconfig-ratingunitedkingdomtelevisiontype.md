@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления ratingUnitedKingdomTelevisionType
-description: Метки TV оценки содержимого в Соединенное Королевство
+title: тип перечисления Ратингунитедкингдомтелевисионтипе
+description: Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Великобритании
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 259dfa943b594994ec19ee34eb42e6f406a7103f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4b65561cd54a347e03bbe895d70fec7edfc1b602
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954976"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257129"
 ---
-# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a><span data-ttu-id="dd546-103">Тип перечисления ratingUnitedKingdomTelevisionType</span><span class="sxs-lookup"><span data-stu-id="dd546-103">ratingUnitedKingdomTelevisionType enum type</span></span>
+# <a name="ratingunitedkingdomtelevisiontype-enum-type"></a><span data-ttu-id="aa694-103">тип перечисления Ратингунитедкингдомтелевисионтипе</span><span class="sxs-lookup"><span data-stu-id="aa694-103">ratingUnitedKingdomTelevisionType enum type</span></span>
 
-> <span data-ttu-id="dd546-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="dd546-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="aa694-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="aa694-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="dd546-105">Метки TV оценки содержимого в Соединенное Королевство</span><span class="sxs-lookup"><span data-stu-id="dd546-105">TV content rating labels in United Kingdom</span></span>
-## <a name="members"></a><span data-ttu-id="dd546-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="dd546-106">Members</span></span>
-|<span data-ttu-id="dd546-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="dd546-107">Member</span></span>|<span data-ttu-id="dd546-108">Значение</span><span class="sxs-lookup"><span data-stu-id="dd546-108">Value</span></span>|<span data-ttu-id="dd546-109">Описание</span><span class="sxs-lookup"><span data-stu-id="dd546-109">Description</span></span>|
+<span data-ttu-id="aa694-105">Метки рейтинга ТЕЛЕВИЗИОНного содержимого в Великобритании</span><span class="sxs-lookup"><span data-stu-id="aa694-105">TV content rating labels in United Kingdom</span></span>
+
+## <a name="members"></a><span data-ttu-id="aa694-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="aa694-106">Members</span></span>
+|<span data-ttu-id="aa694-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="aa694-107">Member</span></span>|<span data-ttu-id="aa694-108">Значение</span><span class="sxs-lookup"><span data-stu-id="aa694-108">Value</span></span>|<span data-ttu-id="aa694-109">Описание</span><span class="sxs-lookup"><span data-stu-id="aa694-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="dd546-110">allAllowed</span><span class="sxs-lookup"><span data-stu-id="dd546-110">allAllowed</span></span>|<span data-ttu-id="dd546-111">0</span><span class="sxs-lookup"><span data-stu-id="dd546-111">0</span></span>|<span data-ttu-id="dd546-112">Значение по умолчанию, разрешить всем TV показывает контента</span><span class="sxs-lookup"><span data-stu-id="dd546-112">Default value, allow all TV shows content</span></span>|
-|<span data-ttu-id="dd546-113">allBlocked</span><span class="sxs-lookup"><span data-stu-id="dd546-113">allBlocked</span></span>|<span data-ttu-id="dd546-114">1</span><span class="sxs-lookup"><span data-stu-id="dd546-114">1</span></span>|<span data-ttu-id="dd546-115">Не допускайте использование Любого показывает контента</span><span class="sxs-lookup"><span data-stu-id="dd546-115">Do not allow any TV shows content</span></span>|
-|<span data-ttu-id="dd546-116">caution</span><span class="sxs-lookup"><span data-stu-id="dd546-116">caution</span></span>|<span data-ttu-id="dd546-117">2</span><span class="sxs-lookup"><span data-stu-id="dd546-117">2</span></span>|<span data-ttu-id="dd546-118">Разрешение TV содержимое с предупреждение</span><span class="sxs-lookup"><span data-stu-id="dd546-118">Allowing TV contents with a warning message</span></span>|
+|<span data-ttu-id="aa694-110">Аллалловед</span><span class="sxs-lookup"><span data-stu-id="aa694-110">allAllowed</span></span>|<span data-ttu-id="aa694-111">нуль</span><span class="sxs-lookup"><span data-stu-id="aa694-111">0</span></span>|<span data-ttu-id="aa694-112">Значение по умолчанию, разрешить все показы контента</span><span class="sxs-lookup"><span data-stu-id="aa694-112">Default value, allow all TV shows content</span></span>|
+|<span data-ttu-id="aa694-113">Аллблоккед</span><span class="sxs-lookup"><span data-stu-id="aa694-113">allBlocked</span></span>|<span data-ttu-id="aa694-114">1,1</span><span class="sxs-lookup"><span data-stu-id="aa694-114">1</span></span>|<span data-ttu-id="aa694-115">Не разрешать показ контента</span><span class="sxs-lookup"><span data-stu-id="aa694-115">Do not allow any TV shows content</span></span>|
+|<span data-ttu-id="aa694-116">caution</span><span class="sxs-lookup"><span data-stu-id="aa694-116">caution</span></span>|<span data-ttu-id="aa694-117">2</span><span class="sxs-lookup"><span data-stu-id="aa694-117">2</span></span>|<span data-ttu-id="aa694-118">Разрешение ТВ-содержимого с предупреждающим сообщением</span><span class="sxs-lookup"><span data-stu-id="aa694-118">Allowing TV contents with a warning message</span></span>|
 
 
 

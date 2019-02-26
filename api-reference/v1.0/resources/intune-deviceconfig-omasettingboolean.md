@@ -3,34 +3,36 @@ title: Тип ресурса omaSettingBoolean
 description: Логическое определение параметров OMA.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: f0b3f2d04c9476cc10a67c1e68ba9a29288e8875
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1d202997cdf0c1325e887337842513cc30dd2941
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986637"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30256394"
 ---
-# <a name="omasettingboolean-resource-type"></a><span data-ttu-id="a9891-103">Тип ресурса omaSettingBoolean</span><span class="sxs-lookup"><span data-stu-id="a9891-103">omaSettingBoolean resource type</span></span>
+# <a name="omasettingboolean-resource-type"></a><span data-ttu-id="ea971-103">Тип ресурса omaSettingBoolean</span><span class="sxs-lookup"><span data-stu-id="ea971-103">omaSettingBoolean resource type</span></span>
 
-> <span data-ttu-id="a9891-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a9891-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="ea971-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ea971-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a9891-105">Логическое определение параметров OMA.</span><span class="sxs-lookup"><span data-stu-id="a9891-105">OMA Settings Boolean definition.</span></span>
+<span data-ttu-id="ea971-105">Логическое определение параметров OMA.</span><span class="sxs-lookup"><span data-stu-id="ea971-105">OMA Settings Boolean definition.</span></span>
 
-<span data-ttu-id="a9891-106">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a9891-106">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="a9891-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="a9891-107">Properties</span></span>
-|<span data-ttu-id="a9891-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="a9891-108">Property</span></span>|<span data-ttu-id="a9891-109">Тип</span><span class="sxs-lookup"><span data-stu-id="a9891-109">Type</span></span>|<span data-ttu-id="a9891-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a9891-110">Description</span></span>|
+<span data-ttu-id="ea971-106">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="ea971-106">Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="ea971-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ea971-107">Properties</span></span>
+|<span data-ttu-id="ea971-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="ea971-108">Property</span></span>|<span data-ttu-id="ea971-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ea971-109">Type</span></span>|<span data-ttu-id="ea971-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ea971-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a9891-111">displayName</span><span class="sxs-lookup"><span data-stu-id="a9891-111">displayName</span></span>|<span data-ttu-id="a9891-112">Строка</span><span class="sxs-lookup"><span data-stu-id="a9891-112">String</span></span>|<span data-ttu-id="a9891-113">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="a9891-113">Display Name.</span></span> <span data-ttu-id="a9891-114">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a9891-114">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="a9891-115">описание</span><span class="sxs-lookup"><span data-stu-id="a9891-115">description</span></span>|<span data-ttu-id="a9891-116">Строка</span><span class="sxs-lookup"><span data-stu-id="a9891-116">String</span></span>|<span data-ttu-id="a9891-117">Описание.</span><span class="sxs-lookup"><span data-stu-id="a9891-117">Description.</span></span> <span data-ttu-id="a9891-118">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a9891-118">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="a9891-119">omaUri</span><span class="sxs-lookup"><span data-stu-id="a9891-119">omaUri</span></span>|<span data-ttu-id="a9891-120">Строка</span><span class="sxs-lookup"><span data-stu-id="a9891-120">String</span></span>|<span data-ttu-id="a9891-121">OMA.</span><span class="sxs-lookup"><span data-stu-id="a9891-121">OMA.</span></span> <span data-ttu-id="a9891-122">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="a9891-122">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
-|<span data-ttu-id="a9891-123">value</span><span class="sxs-lookup"><span data-stu-id="a9891-123">value</span></span>|<span data-ttu-id="a9891-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="a9891-124">Boolean</span></span>|<span data-ttu-id="a9891-125">Значение</span><span class="sxs-lookup"><span data-stu-id="a9891-125">Value.</span></span>|
+|<span data-ttu-id="ea971-111">displayName</span><span class="sxs-lookup"><span data-stu-id="ea971-111">displayName</span></span>|<span data-ttu-id="ea971-112">String</span><span class="sxs-lookup"><span data-stu-id="ea971-112">String</span></span>|<span data-ttu-id="ea971-113">Отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="ea971-113">Display Name.</span></span> <span data-ttu-id="ea971-114">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="ea971-114">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="ea971-115">description</span><span class="sxs-lookup"><span data-stu-id="ea971-115">description</span></span>|<span data-ttu-id="ea971-116">String</span><span class="sxs-lookup"><span data-stu-id="ea971-116">String</span></span>|<span data-ttu-id="ea971-117">Описание.</span><span class="sxs-lookup"><span data-stu-id="ea971-117">Description.</span></span> <span data-ttu-id="ea971-118">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="ea971-118">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="ea971-119">omaUri</span><span class="sxs-lookup"><span data-stu-id="ea971-119">omaUri</span></span>|<span data-ttu-id="ea971-120">String</span><span class="sxs-lookup"><span data-stu-id="ea971-120">String</span></span>|<span data-ttu-id="ea971-121">OMA.</span><span class="sxs-lookup"><span data-stu-id="ea971-121">OMA.</span></span> <span data-ttu-id="ea971-122">Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span><span class="sxs-lookup"><span data-stu-id="ea971-122">Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)</span></span>|
+|<span data-ttu-id="ea971-123">value</span><span class="sxs-lookup"><span data-stu-id="ea971-123">value</span></span>|<span data-ttu-id="ea971-124">Boolean</span><span class="sxs-lookup"><span data-stu-id="ea971-124">Boolean</span></span>|<span data-ttu-id="ea971-125">Значение</span><span class="sxs-lookup"><span data-stu-id="ea971-125">Value.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="a9891-126">Связи</span><span class="sxs-lookup"><span data-stu-id="a9891-126">Relationships</span></span>
-<span data-ttu-id="a9891-127">Нет</span><span class="sxs-lookup"><span data-stu-id="a9891-127">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="a9891-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a9891-128">JSON Representation</span></span>
-<span data-ttu-id="a9891-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a9891-129">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="ea971-126">Связи</span><span class="sxs-lookup"><span data-stu-id="ea971-126">Relationships</span></span>
+<span data-ttu-id="ea971-127">Нет</span><span class="sxs-lookup"><span data-stu-id="ea971-127">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="ea971-128">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ea971-128">JSON Representation</span></span>
+<span data-ttu-id="ea971-129">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ea971-129">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.omaSettingBoolean"

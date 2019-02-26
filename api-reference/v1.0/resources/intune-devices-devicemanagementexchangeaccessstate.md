@@ -1,29 +1,30 @@
 ---
-title: Тип перечисления deviceManagementExchangeAccessState
-description: Состояние доступа устройств Exchange.
+title: тип перечисления Девицеманажементексчанжеакцессстате
+description: Состояние доступа к Exchange для устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: dbfa7b9396a1100f2e3c7e4e78cf697233d840cc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: fedbd157c4668397256971c57a4cb5fa355f78c1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947017"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30257605"
 ---
-# <a name="devicemanagementexchangeaccessstate-enum-type"></a><span data-ttu-id="14fbf-103">Тип перечисления deviceManagementExchangeAccessState</span><span class="sxs-lookup"><span data-stu-id="14fbf-103">deviceManagementExchangeAccessState enum type</span></span>
+# <a name="devicemanagementexchangeaccessstate-enum-type"></a><span data-ttu-id="1b03a-103">тип перечисления Девицеманажементексчанжеакцессстате</span><span class="sxs-lookup"><span data-stu-id="1b03a-103">deviceManagementExchangeAccessState enum type</span></span>
 
-> <span data-ttu-id="14fbf-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="14fbf-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="1b03a-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1b03a-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="14fbf-105">Состояние доступа устройств Exchange.</span><span class="sxs-lookup"><span data-stu-id="14fbf-105">Device Exchange Access State.</span></span>
-## <a name="members"></a><span data-ttu-id="14fbf-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="14fbf-106">Members</span></span>
-|<span data-ttu-id="14fbf-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="14fbf-107">Member</span></span>|<span data-ttu-id="14fbf-108">Значение</span><span class="sxs-lookup"><span data-stu-id="14fbf-108">Value</span></span>|<span data-ttu-id="14fbf-109">Описание</span><span class="sxs-lookup"><span data-stu-id="14fbf-109">Description</span></span>|
+<span data-ttu-id="1b03a-105">Состояние доступа к Exchange для устройства.</span><span class="sxs-lookup"><span data-stu-id="1b03a-105">Device Exchange Access State.</span></span>
+
+## <a name="members"></a><span data-ttu-id="1b03a-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="1b03a-106">Members</span></span>
+|<span data-ttu-id="1b03a-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="1b03a-107">Member</span></span>|<span data-ttu-id="1b03a-108">Значение</span><span class="sxs-lookup"><span data-stu-id="1b03a-108">Value</span></span>|<span data-ttu-id="1b03a-109">Описание</span><span class="sxs-lookup"><span data-stu-id="1b03a-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="14fbf-110">Нет</span><span class="sxs-lookup"><span data-stu-id="14fbf-110">none</span></span>|<span data-ttu-id="14fbf-111">0</span><span class="sxs-lookup"><span data-stu-id="14fbf-111">0</span></span>|<span data-ttu-id="14fbf-112">Состояние не доступа, обнаруженные в Exchange</span><span class="sxs-lookup"><span data-stu-id="14fbf-112">No access state discovered from Exchange</span></span>|
-|<span data-ttu-id="14fbf-113">unknown</span><span class="sxs-lookup"><span data-stu-id="14fbf-113">unknown</span></span>|<span data-ttu-id="14fbf-114">1</span><span class="sxs-lookup"><span data-stu-id="14fbf-114">1</span></span>|<span data-ttu-id="14fbf-115">Состояние доступа устройства к серверу Exchange не известен</span><span class="sxs-lookup"><span data-stu-id="14fbf-115">Device access state to Exchange is unknown</span></span>|
-|<span data-ttu-id="14fbf-116">разрешено</span><span class="sxs-lookup"><span data-stu-id="14fbf-116">allowed</span></span>|<span data-ttu-id="14fbf-117">2</span><span class="sxs-lookup"><span data-stu-id="14fbf-117">2</span></span>|<span data-ttu-id="14fbf-118">Устройство имеет доступ к Exchange</span><span class="sxs-lookup"><span data-stu-id="14fbf-118">Device has access to Exchange</span></span>|
-|<span data-ttu-id="14fbf-119">заблокировано</span><span class="sxs-lookup"><span data-stu-id="14fbf-119">blocked</span></span>|<span data-ttu-id="14fbf-120">3</span><span class="sxs-lookup"><span data-stu-id="14fbf-120">3</span></span>|<span data-ttu-id="14fbf-121">Устройство будет заблокировано в Exchange</span><span class="sxs-lookup"><span data-stu-id="14fbf-121">Device is Blocked in Exchange</span></span>|
-|<span data-ttu-id="14fbf-122">в карантин</span><span class="sxs-lookup"><span data-stu-id="14fbf-122">quarantined</span></span>|<span data-ttu-id="14fbf-123">4</span><span class="sxs-lookup"><span data-stu-id="14fbf-123">4</span></span>|<span data-ttu-id="14fbf-124">Находится в карантине в Exchange</span><span class="sxs-lookup"><span data-stu-id="14fbf-124">Device is Quarantined in Exchange</span></span>|
+|<span data-ttu-id="1b03a-110">Нет</span><span class="sxs-lookup"><span data-stu-id="1b03a-110">none</span></span>|<span data-ttu-id="1b03a-111">нуль</span><span class="sxs-lookup"><span data-stu-id="1b03a-111">0</span></span>|<span data-ttu-id="1b03a-112">Не обнаружено состояние доступа в Exchange</span><span class="sxs-lookup"><span data-stu-id="1b03a-112">No access state discovered from Exchange</span></span>|
+|<span data-ttu-id="1b03a-113">unknown</span><span class="sxs-lookup"><span data-stu-id="1b03a-113">unknown</span></span>|<span data-ttu-id="1b03a-114">1,1</span><span class="sxs-lookup"><span data-stu-id="1b03a-114">1</span></span>|<span data-ttu-id="1b03a-115">Неизвестный режим доступа к устройству Exchange</span><span class="sxs-lookup"><span data-stu-id="1b03a-115">Device access state to Exchange is unknown</span></span>|
+|<span data-ttu-id="1b03a-116">разрешенных</span><span class="sxs-lookup"><span data-stu-id="1b03a-116">allowed</span></span>|<span data-ttu-id="1b03a-117">2</span><span class="sxs-lookup"><span data-stu-id="1b03a-117">2</span></span>|<span data-ttu-id="1b03a-118">Устройство имеет доступ к Exchange</span><span class="sxs-lookup"><span data-stu-id="1b03a-118">Device has access to Exchange</span></span>|
+|<span data-ttu-id="1b03a-119">заблокировано</span><span class="sxs-lookup"><span data-stu-id="1b03a-119">blocked</span></span>|<span data-ttu-id="1b03a-120">4</span><span class="sxs-lookup"><span data-stu-id="1b03a-120">3</span></span>|<span data-ttu-id="1b03a-121">Устройство заблокировано в Exchange</span><span class="sxs-lookup"><span data-stu-id="1b03a-121">Device is Blocked in Exchange</span></span>|
+|<span data-ttu-id="1b03a-122">карантин</span><span class="sxs-lookup"><span data-stu-id="1b03a-122">quarantined</span></span>|<span data-ttu-id="1b03a-123">4</span><span class="sxs-lookup"><span data-stu-id="1b03a-123">4</span></span>|<span data-ttu-id="1b03a-124">Устройство помещено в карантин в Exchange</span><span class="sxs-lookup"><span data-stu-id="1b03a-124">Device is Quarantined in Exchange</span></span>|
 
 
 
