@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления appListType
-description: Возможные значения список соответствия требованиям приложения.
-localization_priority: Normal
+title: тип перечисления Апплисттипе
+description: Возможные значения списка приложений для обеспечения соответствия требованиям.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cf8930136b00b7b5579ec5e7266b6a77a9a11968
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3b7d11107ca3ea2b698e28cd288f163ec190b0a6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415224"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172676"
 ---
-# <a name="applisttype-enum-type"></a><span data-ttu-id="39da0-103">Тип перечисления appListType</span><span class="sxs-lookup"><span data-stu-id="39da0-103">appListType enum type</span></span>
+# <a name="applisttype-enum-type"></a><span data-ttu-id="cc915-103">тип перечисления Апплисттипе</span><span class="sxs-lookup"><span data-stu-id="cc915-103">appListType enum type</span></span>
 
-> <span data-ttu-id="39da0-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="39da0-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="39da0-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="39da0-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="cc915-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="cc915-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="39da0-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="39da0-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="cc915-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="cc915-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="39da0-107">Возможные значения список соответствия требованиям приложения.</span><span class="sxs-lookup"><span data-stu-id="39da0-107">Possible values of the compliance app list.</span></span>
+<span data-ttu-id="cc915-106">Возможные значения списка приложений для обеспечения соответствия требованиям.</span><span class="sxs-lookup"><span data-stu-id="cc915-106">Possible values of the compliance app list.</span></span>
 
-## <a name="members"></a><span data-ttu-id="39da0-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="39da0-108">Members</span></span>
-|<span data-ttu-id="39da0-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="39da0-109">Member</span></span>|<span data-ttu-id="39da0-110">Значение</span><span class="sxs-lookup"><span data-stu-id="39da0-110">Value</span></span>|<span data-ttu-id="39da0-111">Описание</span><span class="sxs-lookup"><span data-stu-id="39da0-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="cc915-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="cc915-107">Members</span></span>
+|<span data-ttu-id="cc915-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="cc915-108">Member</span></span>|<span data-ttu-id="cc915-109">Значение</span><span class="sxs-lookup"><span data-stu-id="cc915-109">Value</span></span>|<span data-ttu-id="cc915-110">Описание</span><span class="sxs-lookup"><span data-stu-id="cc915-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="39da0-112">none</span><span class="sxs-lookup"><span data-stu-id="39da0-112">none</span></span>|<span data-ttu-id="39da0-113">0</span><span class="sxs-lookup"><span data-stu-id="39da0-113">0</span></span>|<span data-ttu-id="39da0-114">Значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="39da0-114">Default value, no intent.</span></span>|
-|<span data-ttu-id="39da0-115">appsInListCompliant</span><span class="sxs-lookup"><span data-stu-id="39da0-115">appsInListCompliant</span></span>|<span data-ttu-id="39da0-116">1</span><span class="sxs-lookup"><span data-stu-id="39da0-116">1</span></span>|<span data-ttu-id="39da0-117">Список представляет приложений, которые будут считаться спецификации (только для приложений в списке совместимых).</span><span class="sxs-lookup"><span data-stu-id="39da0-117">The list represents the apps that will be considered compliant (only apps on the list are compliant).</span></span>|
-|<span data-ttu-id="39da0-118">appsNotInListCompliant</span><span class="sxs-lookup"><span data-stu-id="39da0-118">appsNotInListCompliant</span></span>|<span data-ttu-id="39da0-119">2</span><span class="sxs-lookup"><span data-stu-id="39da0-119">2</span></span>|<span data-ttu-id="39da0-120">Представляет список приложений, которые будут считаться несовместимой (все приложения совместимых за исключением приложений в списке).</span><span class="sxs-lookup"><span data-stu-id="39da0-120">The list represents the apps that will be considered non compliant (all apps are compliant except apps on the list).</span></span>|
+|<span data-ttu-id="cc915-111">Нет</span><span class="sxs-lookup"><span data-stu-id="cc915-111">none</span></span>|<span data-ttu-id="cc915-112">нуль</span><span class="sxs-lookup"><span data-stu-id="cc915-112">0</span></span>|<span data-ttu-id="cc915-113">Значение по умолчанию без намерения.</span><span class="sxs-lookup"><span data-stu-id="cc915-113">Default value, no intent.</span></span>|
+|<span data-ttu-id="cc915-114">Аппсинлисткомплиант</span><span class="sxs-lookup"><span data-stu-id="cc915-114">appsInListCompliant</span></span>|<span data-ttu-id="cc915-115">1,1</span><span class="sxs-lookup"><span data-stu-id="cc915-115">1</span></span>|<span data-ttu-id="cc915-116">Список представляет приложения, которые будут считаться совместимыми (только приложения в списке соответствуют требованиям).</span><span class="sxs-lookup"><span data-stu-id="cc915-116">The list represents the apps that will be considered compliant (only apps on the list are compliant).</span></span>|
+|<span data-ttu-id="cc915-117">Аппснотинлисткомплиант</span><span class="sxs-lookup"><span data-stu-id="cc915-117">appsNotInListCompliant</span></span>|<span data-ttu-id="cc915-118">2</span><span class="sxs-lookup"><span data-stu-id="cc915-118">2</span></span>|<span data-ttu-id="cc915-119">Список представляет приложения, которые будут считаться несовместимыми (все приложения являются совместимыми, кроме приложений в списке).</span><span class="sxs-lookup"><span data-stu-id="cc915-119">The list represents the apps that will be considered non compliant (all apps are compliant except apps on the list).</span></span>|
 
 
 

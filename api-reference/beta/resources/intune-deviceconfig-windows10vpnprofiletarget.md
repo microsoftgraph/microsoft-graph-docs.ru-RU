@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления windows10VpnProfileTarget
-description: Типы назначения профилей Windows 10 VPN.
-localization_priority: Normal
+title: тип перечисления windows10VpnProfileTarget
+description: Конечные типы профилей VPN Windows 10.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81c5f5a1f288ad1af3d682e5bbdee9325ac17053
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: cc2d6e19a50002c8985d1b29be040c4fa2339bf6
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392629"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161812"
 ---
-# <a name="windows10vpnprofiletarget-enum-type"></a><span data-ttu-id="e0ab6-103">Тип перечисления windows10VpnProfileTarget</span><span class="sxs-lookup"><span data-stu-id="e0ab6-103">windows10VpnProfileTarget enum type</span></span>
+# <a name="windows10vpnprofiletarget-enum-type"></a><span data-ttu-id="466e8-103">тип перечисления windows10VpnProfileTarget</span><span class="sxs-lookup"><span data-stu-id="466e8-103">windows10VpnProfileTarget enum type</span></span>
 
-> <span data-ttu-id="e0ab6-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e0ab6-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="466e8-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="466e8-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e0ab6-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="466e8-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="466e8-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e0ab6-107">Типы назначения профилей Windows 10 VPN.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-107">Windows 10 VPN profile target types.</span></span>
+<span data-ttu-id="466e8-106">Конечные типы профилей VPN Windows 10.</span><span class="sxs-lookup"><span data-stu-id="466e8-106">Windows 10 VPN profile target types.</span></span>
 
-## <a name="members"></a><span data-ttu-id="e0ab6-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="e0ab6-108">Members</span></span>
-|<span data-ttu-id="e0ab6-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="e0ab6-109">Member</span></span>|<span data-ttu-id="e0ab6-110">Значение</span><span class="sxs-lookup"><span data-stu-id="e0ab6-110">Value</span></span>|<span data-ttu-id="e0ab6-111">Описание</span><span class="sxs-lookup"><span data-stu-id="e0ab6-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="466e8-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="466e8-107">Members</span></span>
+|<span data-ttu-id="466e8-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="466e8-108">Member</span></span>|<span data-ttu-id="466e8-109">Значение</span><span class="sxs-lookup"><span data-stu-id="466e8-109">Value</span></span>|<span data-ttu-id="466e8-110">Описание</span><span class="sxs-lookup"><span data-stu-id="466e8-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e0ab6-112">user</span><span class="sxs-lookup"><span data-stu-id="e0ab6-112">user</span></span>|<span data-ttu-id="e0ab6-113">0</span><span class="sxs-lookup"><span data-stu-id="e0ab6-113">0</span></span>|<span data-ttu-id="e0ab6-114">Пользователь целевой профиля через VPN.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-114">User targeted VPN profile.</span></span>|
-|<span data-ttu-id="e0ab6-115">device;</span><span class="sxs-lookup"><span data-stu-id="e0ab6-115">device</span></span>|<span data-ttu-id="e0ab6-116">1</span><span class="sxs-lookup"><span data-stu-id="e0ab6-116">1</span></span>|<span data-ttu-id="e0ab6-117">Устройство целевой профиля через VPN.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-117">Device targeted VPN profile.</span></span>|
-|<span data-ttu-id="e0ab6-118">autoPilotDevice</span><span class="sxs-lookup"><span data-stu-id="e0ab6-118">autoPilotDevice</span></span>|<span data-ttu-id="e0ab6-119">2</span><span class="sxs-lookup"><span data-stu-id="e0ab6-119">2</span></span>|<span data-ttu-id="e0ab6-120">Устройство автопилот целевой профиля через VPN.</span><span class="sxs-lookup"><span data-stu-id="e0ab6-120">AutoPilot Device targeted VPN profile.</span></span>|
+|<span data-ttu-id="466e8-111">user</span><span class="sxs-lookup"><span data-stu-id="466e8-111">user</span></span>|<span data-ttu-id="466e8-112">нуль</span><span class="sxs-lookup"><span data-stu-id="466e8-112">0</span></span>|<span data-ttu-id="466e8-113">Профиль конечного пользователя VPN.</span><span class="sxs-lookup"><span data-stu-id="466e8-113">User targeted VPN profile.</span></span>|
+|<span data-ttu-id="466e8-114">device;</span><span class="sxs-lookup"><span data-stu-id="466e8-114">device</span></span>|<span data-ttu-id="466e8-115">1,1</span><span class="sxs-lookup"><span data-stu-id="466e8-115">1</span></span>|<span data-ttu-id="466e8-116">Конечный профиль VPN для устройства.</span><span class="sxs-lookup"><span data-stu-id="466e8-116">Device targeted VPN profile.</span></span>|
+|<span data-ttu-id="466e8-117">Аутопилотдевице</span><span class="sxs-lookup"><span data-stu-id="466e8-117">autoPilotDevice</span></span>|<span data-ttu-id="466e8-118">2</span><span class="sxs-lookup"><span data-stu-id="466e8-118">2</span></span>|<span data-ttu-id="466e8-119">Целевой профиль VPN для устройства автоПилота.</span><span class="sxs-lookup"><span data-stu-id="466e8-119">AutoPilot Device targeted VPN profile.</span></span>|
 
 
 

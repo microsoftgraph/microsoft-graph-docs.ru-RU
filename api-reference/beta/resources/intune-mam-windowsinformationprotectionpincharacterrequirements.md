@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления windowsInformationProtectionPinCharacterRequirements
-description: Требования к ПИН-код знака
-localization_priority: Normal
+title: тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
+description: Требования к ПИН-символам
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 203f5c7d52fb72346d099949ea5880fa9b82726c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1147f597a1c2bcaf18a29d783b42722195c79407
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160811"
 ---
-# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a><span data-ttu-id="8d971-103">Тип перечисления windowsInformationProtectionPinCharacterRequirements</span><span class="sxs-lookup"><span data-stu-id="8d971-103">windowsInformationProtectionPinCharacterRequirements enum type</span></span>
+# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a><span data-ttu-id="2c248-103">тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс</span><span class="sxs-lookup"><span data-stu-id="2c248-103">windowsInformationProtectionPinCharacterRequirements enum type</span></span>
 
-> <span data-ttu-id="8d971-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="8d971-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="8d971-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8d971-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="2c248-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c248-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="8d971-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8d971-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2c248-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2c248-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="8d971-107">Требования к ПИН-код знака</span><span class="sxs-lookup"><span data-stu-id="8d971-107">Pin Character Requirements</span></span>
+<span data-ttu-id="2c248-106">Требования к ПИН-символам</span><span class="sxs-lookup"><span data-stu-id="2c248-106">Pin Character Requirements</span></span>
 
-## <a name="members"></a><span data-ttu-id="8d971-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="8d971-108">Members</span></span>
-|<span data-ttu-id="8d971-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="8d971-109">Member</span></span>|<span data-ttu-id="8d971-110">Значение</span><span class="sxs-lookup"><span data-stu-id="8d971-110">Value</span></span>|<span data-ttu-id="8d971-111">Описание</span><span class="sxs-lookup"><span data-stu-id="8d971-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="2c248-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="2c248-107">Members</span></span>
+|<span data-ttu-id="2c248-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="2c248-108">Member</span></span>|<span data-ttu-id="2c248-109">Значение</span><span class="sxs-lookup"><span data-stu-id="2c248-109">Value</span></span>|<span data-ttu-id="2c248-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2c248-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="8d971-112">notAllow</span><span class="sxs-lookup"><span data-stu-id="8d971-112">notAllow</span></span>|<span data-ttu-id="8d971-113">0</span><span class="sxs-lookup"><span data-stu-id="8d971-113">0</span></span>|<span data-ttu-id="8d971-114">Не разрешать</span><span class="sxs-lookup"><span data-stu-id="8d971-114">Not allow</span></span>|
-|<span data-ttu-id="8d971-115">requireAtLeastOne</span><span class="sxs-lookup"><span data-stu-id="8d971-115">requireAtLeastOne</span></span>|<span data-ttu-id="8d971-116">1</span><span class="sxs-lookup"><span data-stu-id="8d971-116">1</span></span>|<span data-ttu-id="8d971-117">Требуется хотя бы один</span><span class="sxs-lookup"><span data-stu-id="8d971-117">Require atleast one</span></span>|
-|<span data-ttu-id="8d971-118">Разрешить</span><span class="sxs-lookup"><span data-stu-id="8d971-118">allow</span></span>|<span data-ttu-id="8d971-119">2</span><span class="sxs-lookup"><span data-stu-id="8d971-119">2</span></span>|<span data-ttu-id="8d971-120">Разрешить любой номер</span><span class="sxs-lookup"><span data-stu-id="8d971-120">Allow any number</span></span>|
+|<span data-ttu-id="2c248-111">notAllow</span><span class="sxs-lookup"><span data-stu-id="2c248-111">notAllow</span></span>|<span data-ttu-id="2c248-112">нуль</span><span class="sxs-lookup"><span data-stu-id="2c248-112">0</span></span>|<span data-ttu-id="2c248-113">Не разрешать</span><span class="sxs-lookup"><span data-stu-id="2c248-113">Not allow</span></span>|
+|<span data-ttu-id="2c248-114">Рекуиреатлеастоне</span><span class="sxs-lookup"><span data-stu-id="2c248-114">requireAtLeastOne</span></span>|<span data-ttu-id="2c248-115">1,1</span><span class="sxs-lookup"><span data-stu-id="2c248-115">1</span></span>|<span data-ttu-id="2c248-116">Требуется хотя бы один</span><span class="sxs-lookup"><span data-stu-id="2c248-116">Require atleast one</span></span>|
+|<span data-ttu-id="2c248-117">разрешить</span><span class="sxs-lookup"><span data-stu-id="2c248-117">allow</span></span>|<span data-ttu-id="2c248-118">2</span><span class="sxs-lookup"><span data-stu-id="2c248-118">2</span></span>|<span data-ttu-id="2c248-119">Разрешить любой номер</span><span class="sxs-lookup"><span data-stu-id="2c248-119">Allow any number</span></span>|
 
 
 

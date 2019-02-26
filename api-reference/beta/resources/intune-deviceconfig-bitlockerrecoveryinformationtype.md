@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления bitLockerRecoveryInformationType
-description: Типы BitLockerRecoveryInformationType
-localization_priority: Normal
+title: тип перечисления Битлоккеррековеринформатионтипе
+description: Типы Битлоккеррековеринформатионтипе
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: edc78a432e1a2a51fcf4164c1c3a67aaf46c1587
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea36ffe652d9e881dc0b41af49a01a36c14460ec
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407300"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162442"
 ---
-# <a name="bitlockerrecoveryinformationtype-enum-type"></a><span data-ttu-id="41066-103">Тип перечисления bitLockerRecoveryInformationType</span><span class="sxs-lookup"><span data-stu-id="41066-103">bitLockerRecoveryInformationType enum type</span></span>
+# <a name="bitlockerrecoveryinformationtype-enum-type"></a><span data-ttu-id="53821-103">тип перечисления Битлоккеррековеринформатионтипе</span><span class="sxs-lookup"><span data-stu-id="53821-103">bitLockerRecoveryInformationType enum type</span></span>
 
-> <span data-ttu-id="41066-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="41066-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="41066-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="41066-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="53821-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="53821-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="41066-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="41066-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="53821-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="53821-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="41066-107">Типы BitLockerRecoveryInformationType</span><span class="sxs-lookup"><span data-stu-id="41066-107">BitLockerRecoveryInformationType types</span></span>
+<span data-ttu-id="53821-106">Типы Битлоккеррековеринформатионтипе</span><span class="sxs-lookup"><span data-stu-id="53821-106">BitLockerRecoveryInformationType types</span></span>
 
-## <a name="members"></a><span data-ttu-id="41066-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="41066-108">Members</span></span>
-|<span data-ttu-id="41066-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="41066-109">Member</span></span>|<span data-ttu-id="41066-110">Значение</span><span class="sxs-lookup"><span data-stu-id="41066-110">Value</span></span>|<span data-ttu-id="41066-111">Описание</span><span class="sxs-lookup"><span data-stu-id="41066-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="53821-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="53821-107">Members</span></span>
+|<span data-ttu-id="53821-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="53821-108">Member</span></span>|<span data-ttu-id="53821-109">Значение</span><span class="sxs-lookup"><span data-stu-id="53821-109">Value</span></span>|<span data-ttu-id="53821-110">Описание</span><span class="sxs-lookup"><span data-stu-id="53821-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="41066-112">passwordAndKey</span><span class="sxs-lookup"><span data-stu-id="41066-112">passwordAndKey</span></span>|<span data-ttu-id="41066-113">1</span><span class="sxs-lookup"><span data-stu-id="41066-113">1</span></span>|<span data-ttu-id="41066-114">Хранить пароли восстановления и пакеты ключей.</span><span class="sxs-lookup"><span data-stu-id="41066-114">Store recovery passwords and key packages.</span></span>|
-|<span data-ttu-id="41066-115">passwordOnly</span><span class="sxs-lookup"><span data-stu-id="41066-115">passwordOnly</span></span>|<span data-ttu-id="41066-116">2</span><span class="sxs-lookup"><span data-stu-id="41066-116">2</span></span>|<span data-ttu-id="41066-117">Хранить пароли восстановления только.</span><span class="sxs-lookup"><span data-stu-id="41066-117">Store recovery passwords only.</span></span>|
+|<span data-ttu-id="53821-111">Пассвордандкэй</span><span class="sxs-lookup"><span data-stu-id="53821-111">passwordAndKey</span></span>|<span data-ttu-id="53821-112">1,1</span><span class="sxs-lookup"><span data-stu-id="53821-112">1</span></span>|<span data-ttu-id="53821-113">Хранение паролей восстановления и пакетов ключевых ключей.</span><span class="sxs-lookup"><span data-stu-id="53821-113">Store recovery passwords and key packages.</span></span>|
+|<span data-ttu-id="53821-114">Пассвордонли</span><span class="sxs-lookup"><span data-stu-id="53821-114">passwordOnly</span></span>|<span data-ttu-id="53821-115">2</span><span class="sxs-lookup"><span data-stu-id="53821-115">2</span></span>|<span data-ttu-id="53821-116">Сохранять только пароли восстановления.</span><span class="sxs-lookup"><span data-stu-id="53821-116">Store recovery passwords only.</span></span>|
 
 
 

@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса mobileAppTroubleshootingHistoryItem
-description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-localization_priority: Normal
+title: Тип ресурса Мобилеапптраублешутингхисторитем
+description: Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28245267a7c05f03bedd21c8dc0de17198de213c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fbc37488f478c47b0b097c4fd8a54b09273bc5c3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160860"
 ---
-# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a><span data-ttu-id="7840d-103">Тип ресурса mobileAppTroubleshootingHistoryItem</span><span class="sxs-lookup"><span data-stu-id="7840d-103">mobileAppTroubleshootingHistoryItem resource type</span></span>
+# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a><span data-ttu-id="ab937-103">Тип ресурса Мобилеапптраублешутингхисторитем</span><span class="sxs-lookup"><span data-stu-id="ab937-103">mobileAppTroubleshootingHistoryItem resource type</span></span>
 
-> <span data-ttu-id="7840d-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7840d-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7840d-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7840d-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ab937-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ab937-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7840d-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7840d-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ab937-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ab937-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7840d-107">Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.</span><span class="sxs-lookup"><span data-stu-id="7840d-107">History Item contained in the Mobile App Troubleshooting Event.</span></span>
+<span data-ttu-id="ab937-106">Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.</span><span class="sxs-lookup"><span data-stu-id="ab937-106">History Item contained in the Mobile App Troubleshooting Event.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="7840d-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="7840d-108">Properties</span></span>
-|<span data-ttu-id="7840d-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="7840d-109">Property</span></span>|<span data-ttu-id="7840d-110">Тип</span><span class="sxs-lookup"><span data-stu-id="7840d-110">Type</span></span>|<span data-ttu-id="7840d-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7840d-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ab937-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ab937-107">Properties</span></span>
+|<span data-ttu-id="ab937-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="ab937-108">Property</span></span>|<span data-ttu-id="ab937-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ab937-109">Type</span></span>|<span data-ttu-id="ab937-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ab937-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7840d-112">occurrenceDateTime</span><span class="sxs-lookup"><span data-stu-id="7840d-112">occurrenceDateTime</span></span>|<span data-ttu-id="7840d-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7840d-113">DateTimeOffset</span></span>|<span data-ttu-id="7840d-114">Время возникновения элемент журнала.</span><span class="sxs-lookup"><span data-stu-id="7840d-114">Time when the history item occurred.</span></span>|
+|<span data-ttu-id="ab937-111">Оккурренцедатетиме</span><span class="sxs-lookup"><span data-stu-id="ab937-111">occurrenceDateTime</span></span>|<span data-ttu-id="ab937-112">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="ab937-112">DateTimeOffset</span></span>|<span data-ttu-id="ab937-113">Время возникновения элемента журнала.</span><span class="sxs-lookup"><span data-stu-id="ab937-113">Time when the history item occurred.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="7840d-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="7840d-115">Relationships</span></span>
-<span data-ttu-id="7840d-116">Нет</span><span class="sxs-lookup"><span data-stu-id="7840d-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ab937-114">Отношения</span><span class="sxs-lookup"><span data-stu-id="ab937-114">Relationships</span></span>
+<span data-ttu-id="ab937-115">Нет</span><span class="sxs-lookup"><span data-stu-id="ab937-115">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="7840d-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7840d-117">JSON Representation</span></span>
-<span data-ttu-id="7840d-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7840d-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ab937-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ab937-116">JSON Representation</span></span>
+<span data-ttu-id="ab937-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ab937-117">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.mobileAppTroubleshootingHistoryItem"

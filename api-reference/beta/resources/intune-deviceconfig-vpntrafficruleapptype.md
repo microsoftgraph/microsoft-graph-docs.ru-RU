@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления vpnTrafficRuleAppType
-description: Указывает тип приложения, с которым связана правило трафика через VPN.
-localization_priority: Normal
+title: тип перечисления Впнтраффикрулеапптипе
+description: Указывает тип приложения, с которым связано правило трафика VPN.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb8be06a43c64dcb766da479414fcc437ee49cb9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140532"
 ---
-# <a name="vpntrafficruleapptype-enum-type"></a><span data-ttu-id="ec63c-103">Тип перечисления vpnTrafficRuleAppType</span><span class="sxs-lookup"><span data-stu-id="ec63c-103">vpnTrafficRuleAppType enum type</span></span>
+# <a name="vpntrafficruleapptype-enum-type"></a><span data-ttu-id="c7572-103">тип перечисления Впнтраффикрулеапптипе</span><span class="sxs-lookup"><span data-stu-id="c7572-103">vpnTrafficRuleAppType enum type</span></span>
 
-> <span data-ttu-id="ec63c-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="ec63c-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="ec63c-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ec63c-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="c7572-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c7572-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="ec63c-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ec63c-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="c7572-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="c7572-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="ec63c-107">Указывает тип приложения, с которым связана правило трафика через VPN.</span><span class="sxs-lookup"><span data-stu-id="ec63c-107">Indicates the type of app that a VPN traffic rule is associated with.</span></span>
+<span data-ttu-id="c7572-106">Указывает тип приложения, с которым связано правило трафика VPN.</span><span class="sxs-lookup"><span data-stu-id="c7572-106">Indicates the type of app that a VPN traffic rule is associated with.</span></span>
 
-## <a name="members"></a><span data-ttu-id="ec63c-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="ec63c-108">Members</span></span>
-|<span data-ttu-id="ec63c-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="ec63c-109">Member</span></span>|<span data-ttu-id="ec63c-110">Значение</span><span class="sxs-lookup"><span data-stu-id="ec63c-110">Value</span></span>|<span data-ttu-id="ec63c-111">Описание</span><span class="sxs-lookup"><span data-stu-id="ec63c-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="c7572-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="c7572-107">Members</span></span>
+|<span data-ttu-id="c7572-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="c7572-108">Member</span></span>|<span data-ttu-id="c7572-109">Значение</span><span class="sxs-lookup"><span data-stu-id="c7572-109">Value</span></span>|<span data-ttu-id="c7572-110">Описание</span><span class="sxs-lookup"><span data-stu-id="c7572-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="ec63c-112">none</span><span class="sxs-lookup"><span data-stu-id="ec63c-112">none</span></span>|<span data-ttu-id="ec63c-113">0</span><span class="sxs-lookup"><span data-stu-id="ec63c-113">0</span></span>|<span data-ttu-id="ec63c-114">Правила трафика не связан с приложения.</span><span class="sxs-lookup"><span data-stu-id="ec63c-114">The traffic rule is not associated with an app.</span></span>|
-|<span data-ttu-id="ec63c-115">рабочий стол</span><span class="sxs-lookup"><span data-stu-id="ec63c-115">desktop</span></span>|<span data-ttu-id="ec63c-116">1</span><span class="sxs-lookup"><span data-stu-id="ec63c-116">1</span></span>|<span data-ttu-id="ec63c-117">Трафик правило связано с помощью классического приложения.</span><span class="sxs-lookup"><span data-stu-id="ec63c-117">The traffic rule is associated with a desktop app.</span></span>|
-|<span data-ttu-id="ec63c-118">Универсальные</span><span class="sxs-lookup"><span data-stu-id="ec63c-118">universal</span></span>|<span data-ttu-id="ec63c-119">2</span><span class="sxs-lookup"><span data-stu-id="ec63c-119">2</span></span>|<span data-ttu-id="ec63c-120">Трафик правило связано с помощью универсального приложения.</span><span class="sxs-lookup"><span data-stu-id="ec63c-120">The traffic rule is associated with a Universal app.</span></span>|
+|<span data-ttu-id="c7572-111">Нет</span><span class="sxs-lookup"><span data-stu-id="c7572-111">none</span></span>|<span data-ttu-id="c7572-112">нуль</span><span class="sxs-lookup"><span data-stu-id="c7572-112">0</span></span>|<span data-ttu-id="c7572-113">Правило трафика не связано с приложением.</span><span class="sxs-lookup"><span data-stu-id="c7572-113">The traffic rule is not associated with an app.</span></span>|
+|<span data-ttu-id="c7572-114">системной</span><span class="sxs-lookup"><span data-stu-id="c7572-114">desktop</span></span>|<span data-ttu-id="c7572-115">1,1</span><span class="sxs-lookup"><span data-stu-id="c7572-115">1</span></span>|<span data-ttu-id="c7572-116">Правило трафика связано с классическим приложением.</span><span class="sxs-lookup"><span data-stu-id="c7572-116">The traffic rule is associated with a desktop app.</span></span>|
+|<span data-ttu-id="c7572-117">Гринвич</span><span class="sxs-lookup"><span data-stu-id="c7572-117">universal</span></span>|<span data-ttu-id="c7572-118">2</span><span class="sxs-lookup"><span data-stu-id="c7572-118">2</span></span>|<span data-ttu-id="c7572-119">Правило трафика связано с универсальным приложением.</span><span class="sxs-lookup"><span data-stu-id="c7572-119">The traffic rule is associated with a Universal app.</span></span>|
 
 
 

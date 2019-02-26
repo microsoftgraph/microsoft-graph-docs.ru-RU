@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления vpnTrafficRuleRoutingPolicyType
-description: Указывает политику маршрутизации для правила трафика через VPN.
-localization_priority: Normal
+title: тип перечисления Впнтраффикрулераутингполицитипе
+description: Задает политику маршрутизации для правила трафика VPN.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 028e49085e4a1fa5f01ac59ff00fbafd8846dfb9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a7c6121b9adc47d116a7b3321ca150a8d42449a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415007"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157346"
 ---
-# <a name="vpntrafficruleroutingpolicytype-enum-type"></a><span data-ttu-id="26aa3-103">Тип перечисления vpnTrafficRuleRoutingPolicyType</span><span class="sxs-lookup"><span data-stu-id="26aa3-103">vpnTrafficRuleRoutingPolicyType enum type</span></span>
+# <a name="vpntrafficruleroutingpolicytype-enum-type"></a><span data-ttu-id="a83e6-103">тип перечисления Впнтраффикрулераутингполицитипе</span><span class="sxs-lookup"><span data-stu-id="a83e6-103">vpnTrafficRuleRoutingPolicyType enum type</span></span>
 
-> <span data-ttu-id="26aa3-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="26aa3-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="26aa3-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="26aa3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="a83e6-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a83e6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="26aa3-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="26aa3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="a83e6-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="a83e6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="26aa3-107">Указывает политику маршрутизации для правила трафика через VPN.</span><span class="sxs-lookup"><span data-stu-id="26aa3-107">Specifies the routing policy for a VPN traffic rule.</span></span>
+<span data-ttu-id="a83e6-106">Задает политику маршрутизации для правила трафика VPN.</span><span class="sxs-lookup"><span data-stu-id="a83e6-106">Specifies the routing policy for a VPN traffic rule.</span></span>
 
-## <a name="members"></a><span data-ttu-id="26aa3-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="26aa3-108">Members</span></span>
-|<span data-ttu-id="26aa3-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="26aa3-109">Member</span></span>|<span data-ttu-id="26aa3-110">Значение</span><span class="sxs-lookup"><span data-stu-id="26aa3-110">Value</span></span>|<span data-ttu-id="26aa3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="26aa3-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="a83e6-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="a83e6-107">Members</span></span>
+|<span data-ttu-id="a83e6-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="a83e6-108">Member</span></span>|<span data-ttu-id="a83e6-109">Значение</span><span class="sxs-lookup"><span data-stu-id="a83e6-109">Value</span></span>|<span data-ttu-id="a83e6-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a83e6-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="26aa3-112">none</span><span class="sxs-lookup"><span data-stu-id="26aa3-112">none</span></span>|<span data-ttu-id="26aa3-113">0</span><span class="sxs-lookup"><span data-stu-id="26aa3-113">0</span></span>|<span data-ttu-id="26aa3-114">Маршрутизация политика не указан.</span><span class="sxs-lookup"><span data-stu-id="26aa3-114">No routing policy specified.</span></span>|
-|<span data-ttu-id="26aa3-115">splitTunnel</span><span class="sxs-lookup"><span data-stu-id="26aa3-115">splitTunnel</span></span>|<span data-ttu-id="26aa3-116">1</span><span class="sxs-lookup"><span data-stu-id="26aa3-116">1</span></span>|<span data-ttu-id="26aa3-117">Сетевой трафик для указанного приложения будут направляться через VPN-Подключение.</span><span class="sxs-lookup"><span data-stu-id="26aa3-117">Network traffic for the specified app will be routed through the VPN.</span></span>|
-|<span data-ttu-id="26aa3-118">forceTunnel</span><span class="sxs-lookup"><span data-stu-id="26aa3-118">forceTunnel</span></span>|<span data-ttu-id="26aa3-119">2</span><span class="sxs-lookup"><span data-stu-id="26aa3-119">2</span></span>|<span data-ttu-id="26aa3-120">Сетевой трафик будут направляться через VPN-Подключение.</span><span class="sxs-lookup"><span data-stu-id="26aa3-120">All network traffic will be routed through the VPN.</span></span>|
+|<span data-ttu-id="a83e6-111">Нет</span><span class="sxs-lookup"><span data-stu-id="a83e6-111">none</span></span>|<span data-ttu-id="a83e6-112">нуль</span><span class="sxs-lookup"><span data-stu-id="a83e6-112">0</span></span>|<span data-ttu-id="a83e6-113">Политика маршрутизации не указана.</span><span class="sxs-lookup"><span data-stu-id="a83e6-113">No routing policy specified.</span></span>|
+|<span data-ttu-id="a83e6-114">Сплиттуннел</span><span class="sxs-lookup"><span data-stu-id="a83e6-114">splitTunnel</span></span>|<span data-ttu-id="a83e6-115">1,1</span><span class="sxs-lookup"><span data-stu-id="a83e6-115">1</span></span>|<span data-ttu-id="a83e6-116">Сетевой трафик для указанного приложения будет перенаправлен через VPN.</span><span class="sxs-lookup"><span data-stu-id="a83e6-116">Network traffic for the specified app will be routed through the VPN.</span></span>|
+|<span data-ttu-id="a83e6-117">Форцетуннел</span><span class="sxs-lookup"><span data-stu-id="a83e6-117">forceTunnel</span></span>|<span data-ttu-id="a83e6-118">2</span><span class="sxs-lookup"><span data-stu-id="a83e6-118">2</span></span>|<span data-ttu-id="a83e6-119">Весь сетевой трафик будет маршрутизироваться через VPN.</span><span class="sxs-lookup"><span data-stu-id="a83e6-119">All network traffic will be routed through the VPN.</span></span>|
 
 
 

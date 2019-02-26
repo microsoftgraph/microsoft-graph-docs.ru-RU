@@ -1,36 +1,36 @@
 ---
-title: Тип перечисления defenderScheduleScanDay
-description: 'Возможные значения DefenderScheduleScanDay '
-localization_priority: Normal
+title: тип перечисления Дефендерсчедулескандай
+description: 'Возможные значения Дефендерсчедулескандай '
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ee08566d0811666dacad158e380f86b30417a3a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5dc459479fb74214f0efe1913a3d281445bc49f7
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415182"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154560"
 ---
-# <a name="defenderschedulescanday-enum-type"></a><span data-ttu-id="d4467-103">Тип перечисления defenderScheduleScanDay</span><span class="sxs-lookup"><span data-stu-id="d4467-103">defenderScheduleScanDay enum type</span></span>
+# <a name="defenderschedulescanday-enum-type"></a><span data-ttu-id="ac270-103">тип перечисления Дефендерсчедулескандай</span><span class="sxs-lookup"><span data-stu-id="ac270-103">defenderScheduleScanDay enum type</span></span>
 
-> <span data-ttu-id="d4467-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d4467-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d4467-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d4467-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="ac270-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ac270-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d4467-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d4467-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ac270-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ac270-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d4467-107">Возможные значения DefenderScheduleScanDay</span><span class="sxs-lookup"><span data-stu-id="d4467-107">Possible values of DefenderScheduleScanDay</span></span> 
+<span data-ttu-id="ac270-106">Возможные значения Дефендерсчедулескандай</span><span class="sxs-lookup"><span data-stu-id="ac270-106">Possible values of DefenderScheduleScanDay</span></span> 
 
-## <a name="members"></a><span data-ttu-id="d4467-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="d4467-108">Members</span></span>
-|<span data-ttu-id="d4467-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="d4467-109">Member</span></span>|<span data-ttu-id="d4467-110">Значение</span><span class="sxs-lookup"><span data-stu-id="d4467-110">Value</span></span>|<span data-ttu-id="d4467-111">Описание</span><span class="sxs-lookup"><span data-stu-id="d4467-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="ac270-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="ac270-107">Members</span></span>
+|<span data-ttu-id="ac270-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="ac270-108">Member</span></span>|<span data-ttu-id="ac270-109">Значение</span><span class="sxs-lookup"><span data-stu-id="ac270-109">Value</span></span>|<span data-ttu-id="ac270-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ac270-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d4467-112">повседневных</span><span class="sxs-lookup"><span data-stu-id="d4467-112">everyday</span></span>|<span data-ttu-id="d4467-113">0</span><span class="sxs-lookup"><span data-stu-id="d4467-113">0</span></span>|<span data-ttu-id="d4467-114">Каждый день</span><span class="sxs-lookup"><span data-stu-id="d4467-114">Everyday</span></span>|
-|<span data-ttu-id="d4467-115">Понедельник</span><span class="sxs-lookup"><span data-stu-id="d4467-115">monday</span></span>|<span data-ttu-id="d4467-116">1</span><span class="sxs-lookup"><span data-stu-id="d4467-116">1</span></span>|<span data-ttu-id="d4467-117">Понедельник</span><span class="sxs-lookup"><span data-stu-id="d4467-117">Monday</span></span>|
-|<span data-ttu-id="d4467-118">Вторник</span><span class="sxs-lookup"><span data-stu-id="d4467-118">tuesday</span></span>|<span data-ttu-id="d4467-119">2</span><span class="sxs-lookup"><span data-stu-id="d4467-119">2</span></span>|<span data-ttu-id="d4467-120">Вторник</span><span class="sxs-lookup"><span data-stu-id="d4467-120">Tuesday</span></span>|
-|<span data-ttu-id="d4467-121">Среда</span><span class="sxs-lookup"><span data-stu-id="d4467-121">wednesday</span></span>|<span data-ttu-id="d4467-122">3</span><span class="sxs-lookup"><span data-stu-id="d4467-122">3</span></span>|<span data-ttu-id="d4467-123">Среда</span><span class="sxs-lookup"><span data-stu-id="d4467-123">Wednesday</span></span>|
-|<span data-ttu-id="d4467-124">Четверг</span><span class="sxs-lookup"><span data-stu-id="d4467-124">thursday</span></span>|<span data-ttu-id="d4467-125">4</span><span class="sxs-lookup"><span data-stu-id="d4467-125">4</span></span>|<span data-ttu-id="d4467-126">Четверг</span><span class="sxs-lookup"><span data-stu-id="d4467-126">Thursday</span></span>|
-|<span data-ttu-id="d4467-127">Пятница</span><span class="sxs-lookup"><span data-stu-id="d4467-127">friday</span></span>|<span data-ttu-id="d4467-128">5</span><span class="sxs-lookup"><span data-stu-id="d4467-128">5</span></span>|<span data-ttu-id="d4467-129">Пятница</span><span class="sxs-lookup"><span data-stu-id="d4467-129">Friday</span></span>|
-|<span data-ttu-id="d4467-130">Суббота</span><span class="sxs-lookup"><span data-stu-id="d4467-130">saturday</span></span>|<span data-ttu-id="d4467-131">6</span><span class="sxs-lookup"><span data-stu-id="d4467-131">6</span></span>|<span data-ttu-id="d4467-132">Суббота</span><span class="sxs-lookup"><span data-stu-id="d4467-132">Saturday</span></span>|
-|<span data-ttu-id="d4467-133">воскресенье</span><span class="sxs-lookup"><span data-stu-id="d4467-133">sunday</span></span>|<span data-ttu-id="d4467-134">7</span><span class="sxs-lookup"><span data-stu-id="d4467-134">7</span></span>|<span data-ttu-id="d4467-135">Воскресенье</span><span class="sxs-lookup"><span data-stu-id="d4467-135">Sunday</span></span>|
-|<span data-ttu-id="d4467-136">noScheduledScan</span><span class="sxs-lookup"><span data-stu-id="d4467-136">noScheduledScan</span></span>|<span data-ttu-id="d4467-137">8</span><span class="sxs-lookup"><span data-stu-id="d4467-137">8</span></span>|<span data-ttu-id="d4467-138">Нет запланированного сканирования</span><span class="sxs-lookup"><span data-stu-id="d4467-138">No Scheduled Scan</span></span>|
+|<span data-ttu-id="ac270-111">решения</span><span class="sxs-lookup"><span data-stu-id="ac270-111">everyday</span></span>|<span data-ttu-id="ac270-112">нуль</span><span class="sxs-lookup"><span data-stu-id="ac270-112">0</span></span>|<span data-ttu-id="ac270-113">Решения</span><span class="sxs-lookup"><span data-stu-id="ac270-113">Everyday</span></span>|
+|<span data-ttu-id="ac270-114">Вторник</span><span class="sxs-lookup"><span data-stu-id="ac270-114">monday</span></span>|<span data-ttu-id="ac270-115">1,1</span><span class="sxs-lookup"><span data-stu-id="ac270-115">1</span></span>|<span data-ttu-id="ac270-116">Понедельник</span><span class="sxs-lookup"><span data-stu-id="ac270-116">Monday</span></span>|
+|<span data-ttu-id="ac270-117">во</span><span class="sxs-lookup"><span data-stu-id="ac270-117">tuesday</span></span>|<span data-ttu-id="ac270-118">2</span><span class="sxs-lookup"><span data-stu-id="ac270-118">2</span></span>|<span data-ttu-id="ac270-119">Вторник</span><span class="sxs-lookup"><span data-stu-id="ac270-119">Tuesday</span></span>|
+|<span data-ttu-id="ac270-120">Четверг</span><span class="sxs-lookup"><span data-stu-id="ac270-120">wednesday</span></span>|<span data-ttu-id="ac270-121">4</span><span class="sxs-lookup"><span data-stu-id="ac270-121">3</span></span>|<span data-ttu-id="ac270-122">Среда</span><span class="sxs-lookup"><span data-stu-id="ac270-122">Wednesday</span></span>|
+|<span data-ttu-id="ac270-123">Пятница</span><span class="sxs-lookup"><span data-stu-id="ac270-123">thursday</span></span>|<span data-ttu-id="ac270-124">4</span><span class="sxs-lookup"><span data-stu-id="ac270-124">4</span></span>|<span data-ttu-id="ac270-125">Четверг</span><span class="sxs-lookup"><span data-stu-id="ac270-125">Thursday</span></span>|
+|<span data-ttu-id="ac270-126">пятницам</span><span class="sxs-lookup"><span data-stu-id="ac270-126">friday</span></span>|<span data-ttu-id="ac270-127">17:00</span><span class="sxs-lookup"><span data-stu-id="ac270-127">5</span></span>|<span data-ttu-id="ac270-128">Пятница</span><span class="sxs-lookup"><span data-stu-id="ac270-128">Friday</span></span>|
+|<span data-ttu-id="ac270-129">субботу</span><span class="sxs-lookup"><span data-stu-id="ac270-129">saturday</span></span>|<span data-ttu-id="ac270-130">6</span><span class="sxs-lookup"><span data-stu-id="ac270-130">6</span></span>|<span data-ttu-id="ac270-131">Суббота</span><span class="sxs-lookup"><span data-stu-id="ac270-131">Saturday</span></span>|
+|<span data-ttu-id="ac270-132">воскресеньям</span><span class="sxs-lookup"><span data-stu-id="ac270-132">sunday</span></span>|<span data-ttu-id="ac270-133">7</span><span class="sxs-lookup"><span data-stu-id="ac270-133">7</span></span>|<span data-ttu-id="ac270-134">Воскресенье</span><span class="sxs-lookup"><span data-stu-id="ac270-134">Sunday</span></span>|
+|<span data-ttu-id="ac270-135">Носчедуледскан</span><span class="sxs-lookup"><span data-stu-id="ac270-135">noScheduledScan</span></span>|<span data-ttu-id="ac270-136">8,5</span><span class="sxs-lookup"><span data-stu-id="ac270-136">8</span></span>|<span data-ttu-id="ac270-137">Без запланированного сканирования</span><span class="sxs-lookup"><span data-stu-id="ac270-137">No Scheduled Scan</span></span>|
 
 
 
