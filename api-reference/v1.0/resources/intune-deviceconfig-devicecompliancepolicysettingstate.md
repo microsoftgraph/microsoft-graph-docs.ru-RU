@@ -3,26 +3,27 @@ title: Тип ресурса deviceCompliancePolicySettingState
 description: Состояние параметров политики соответствия требованиям для определенного устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 85de06b5baa9ff840ab0e1fd18cb70b0f5676e8b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c4d291f84a8c4404ff5b4425680260997b6b452f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962214"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261749"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Состояние параметров политики соответствия требованиям для определенного устройства.
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |setting|String|Параметр для отчета|
 |settingName|String|Локализованное или понятное имя параметра для отчета|
 |instanceDisplayName|String|Имя экземпляра параметра для отчета|
-|state|[complianceStatus](../resources/intune-shared-compliancestatus.md)|Соответствие требованиям состояние параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
+|state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |errorCode|Int64|Код ошибки для параметра|
 |errorDescription|String|Описание ошибки|
 |userId|String|ИД пользователя|
@@ -34,6 +35,7 @@ ms.locfileid: "27962214"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

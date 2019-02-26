@@ -1,31 +1,32 @@
 ---
-title: Тип перечисления policyPlatformType
-description: Типы платформ Suppoorted для политик.
+title: тип перечисления Полициплатформтипе
+description: Типы платформы Суппуртед для политик.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6287fb458f0650e70f7767a646e36e8a3a64337e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 757cc2aa3b5e5b27a0b36d2d077da1c7a66f35ce
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917372"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260601"
 ---
-# <a name="policyplatformtype-enum-type"></a>Тип перечисления policyPlatformType
+# <a name="policyplatformtype-enum-type"></a>тип перечисления Полициплатформтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Типы платформ Suppoorted для политик.
+Типы платформы Суппуртед для политик.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Android (en)|0|Android (en).|
-|iOS|2|операций ввода-вывода.|
-|macOS|3|MacOS.|
-|windowsPhone81|4|WindowsPhone 8.1.|
-|windows81AndLater|5|Windows 8.1 и более поздних версий|
+|ОС|нуль|ОС.|
+|iOS|2|модуле.|
+|macOS|4|MacOS.|
+|windowsPhone81|4|WindowsPhone 8,1.|
+|windows81AndLater|17:00|Windows 8,1 и более поздние версии|
 |windows10AndLater|6|Windows 10 и более поздних версий.|
-|androidWorkProfile|7|AndroidWorkProfile.|
+|Андроидворкпрофиле|7|Андроидворкпрофиле.|
 |all|100|Все платформы.|
 
 

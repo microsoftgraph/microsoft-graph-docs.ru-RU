@@ -3,21 +3,22 @@ title: Перечисление объектов iosCompliancePolicy
 description: Список свойств и связей объектов iosCompliancePolicy.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 42c44fd4acfbde69982380a191c32a5c07bdd59e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6bde7a4054db9e6e04c82939080c6b2307b3c4ec
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924561"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261427"
 ---
 # <a name="list-ioscompliancepolicies"></a>Перечисление объектов iosCompliancePolicy
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Список свойств и связей объектов [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -41,13 +42,14 @@ GET /deviceManagement/deviceCompliancePolicies
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [iosCompliancePolicy](../resources/intune-deviceconfig-ioscompliancepolicy.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http

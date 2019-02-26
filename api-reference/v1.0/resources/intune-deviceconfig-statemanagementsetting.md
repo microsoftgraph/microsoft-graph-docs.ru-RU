@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления stateManagementSetting
-description: Состояние настройки управления.
+title: тип перечисления Статеманажементсеттинг
+description: Параметр управления состоянием.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 2fa80090a7434dc0683d69cecb99211abb37214d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5af70df2d1a873a670d36f02e4da9005a4b6b866
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937616"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261665"
 ---
-# <a name="statemanagementsetting-enum-type"></a>Тип перечисления stateManagementSetting
+# <a name="statemanagementsetting-enum-type"></a>тип перечисления Статеманажементсеттинг
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние настройки управления.
+Параметр управления состоянием.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроено.|
-|заблокировано|1|Заблокировано.|
-|разрешено|2|Допускается.|
+|notConfigured|нуль|Не настроен.|
+|заблокировано|1,1|Заблокированных.|
+|разрешенных|2|Разрешенных.|
 
 
 

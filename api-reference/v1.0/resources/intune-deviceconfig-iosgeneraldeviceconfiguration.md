@@ -1,21 +1,22 @@
 ---
 title: Тип ресурса iosGeneralDeviceConfiguration
 description: В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом iosGeneralDeviceConfiguration.
-localization_priority: Normal
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: d7b793557114fa53be36671f42a3364e1b545902
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: d3ede1a887fcac80b4645d771719f89124932ea8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27913508"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261735"
 ---
 # <a name="iosgeneraldeviceconfiguration-resource-type"></a>Тип ресурса iosGeneralDeviceConfiguration
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 В этой статье описаны объявляемые методы, свойства и связи, которые предоставляются ресурсом iosGeneralDeviceConfiguration.
+
 
 Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).
 
@@ -23,31 +24,31 @@ ms.locfileid: "27913508"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов IosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-list.md)|Коллекция [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md)|Перечисление свойств и связей объектов [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
-|[Получение объекта iosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md)|[iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md)|Чтение свойств и связей объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
-|[Создание объекта iosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md)|[iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md)|Создание объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
+|[Получение объекта iosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-get.md)|[iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md);|Чтение свойств и связей объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
+|[Создание объекта iosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-create.md)|[iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md);|Создание объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
 |[Удаление объекта iosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-delete.md)|Нет|Удаление объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
 |[Обновление объекта iosGeneralDeviceConfiguration](../api/intune-deviceconfig-iosgeneraldeviceconfiguration-update.md)|[iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md)|Обновление свойств объекта [iosGeneralDeviceConfiguration](../resources/intune-deviceconfig-iosgeneraldeviceconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|описание|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |accountBlockModification|Логический|Указывает, можно ли изменять учетную запись, когда устройство находится в защищенном режиме.|
 |activationLockAllowWhenSupervised|Логический|Указывает, следует ли запретить блокировку активации, когда устройство находится в защищенном режиме.|
 |airDropBlocked|Логический|Указывает, можно ли передавать файлы через AirDrop, когда устройство находится в защищенном режиме.|
 |airDropForceUnmanagedDropTarget|Логический|Указывает, следует ли считать AirDrop неуправляемым местом переноса (iOS 9.0 и более поздних версий).|
 |airPlayForcePairingPasswordForOutgoingRequests|Логический|Указывает, обязательно ли использовать пароль для связывания на всех устройствах, получающих запросы AirPlay с этого устройства.|
-|appleWatchBlockPairing|Логический|Указывает, следует ли запретить связывание с Apple Watch, когда устройство находится в защищенном режиме (iOS 9.0 и более поздних версий).|
+|appleWatchBlockPairing|Boolean|Указывает, следует ли запретить связывание с Apple Watch, когда устройство находится в защищенном режиме (iOS 9.0 и более поздних версий).|
 |appleWatchForceWristDetection|Логический|Указывает, обязательно ли использовать функцию распознавания запястья на связанном устройстве Apple Watch (iOS 8.2 и более поздних версий).|
 |appleNewsBlocked|Логический|Указывает, следует ли запретить использовать приложение "Новости", когда устройство находится в защищенном режиме (iOS 9.0 и более поздних версий).|
 |appsSingleAppModeList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Возвращает или задает список приложений iOS, которые могут самостоятельно переходить в режим одной программы. Только в защищенном режиме. iOS 7.0 и более поздних версий. Эта коллекция может содержать не более 500 элементов.|
 |appsVisibilityList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений в списке видимых/запускаемых приложений или списке скрытых/незапускаемых приложений (определяется свойством AppsVisibilityListType) (iOS 9.3 и более поздних версий). Эта коллекция может содержать не более 10 000 элементов.|
-|appsVisibilityListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством AppsVisibilityList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|appsVisibilityListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Тип списка, определенного свойством AppsVisibilityList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |appStoreBlockAutomaticDownloads|Логический|Указывает, следует ли запретить автоматическое скачивание приложений, приобретенных на других устройствах, когда устройство находится в защищенном режиме (iOS 9.0 и более поздних версий).|
 |appStoreBlocked|Логический|Указывает, следует ли запретить использовать App Store.|
 |appStoreBlockInAppPurchases|Логический|Указывает, следует ли запретить пользователю совершать покупки из приложения.|
@@ -64,7 +65,7 @@ ms.locfileid: "27913508"
 |classroomAppBlockRemoteScreenObservation|Логический|Указывает, следует ли запретить удаленное наблюдение за экраном в приложении "Класс", когда устройство находится в защищенном режиме (iOS 9.3 и более поздних версий).|
 |classroomAppForceUnpromptedScreenObservation|Логический|Указывает, следует ли предоставлять учителю управляемого курса в приложении "Класс" разрешение на просмотр экрана учащегося автоматически, когда устройство находится в защищенном режиме.|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
-|compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, указанный с помощью свойства AppComplianceList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
 |configurationProfileBlockChanges|Логический|Указывает, следует ли запретить интерактивную установку профилей и сертификатов конфигурации, когда устройство находится в защищенном режиме.|
 |definitionLookupBlocked|Логический|Указывает, следует ли заблокировать поиск определений, когда устройство находится в защищенном режиме (iOS 8.1.3 и более поздних версий).|
 |deviceBlockEnableRestrictions|Логический|Указывает, может ли пользователь включать ограничения в настройках устройства, когда оно находится в защищенном режиме.|
@@ -74,7 +75,7 @@ ms.locfileid: "27913508"
 |diagnosticDataBlockSubmissionModification|Логический|Указывает, можно ли изменять настройки отправки диагностической информации, когда устройство находится в защищенном режиме (iOS 9.3.2 и более поздних версий).|
 |documentsBlockManagedDocumentsInUnmanagedApps|Логический|Указывает, следует ли запретить пользователю просматривать управляемые документы в неуправляемых приложениях.|
 |documentsBlockUnmanagedDocumentsInManagedApps|Логический|Указывает, следует ли запретить пользователю просматривать неуправляемые документы в управляемых приложениях.|
-|emailInDomainSuffixes|Коллекция String|Адрес электронной почты без суффикса, соответствующего одной из этих строк, будет считаться внешним.|
+|emailInDomainSuffixes|Коллекция строк|Адрес электронной почты без суффикса, соответствующего одной из этих строк, будет считаться внешним.|
 |enterpriseAppBlockTrust|Логический|Указывает, следует ли запретить пользователю подтверждать доверие корпоративному приложению.|
 |enterpriseAppBlockTrustModification|Логический|Указывает, следует ли запретить пользователю изменять настройки доверия корпоративному приложению.|
 |faceTimeBlocked|Логический|Указывает, следует ли запретить использовать FaceTime.|
@@ -108,18 +109,18 @@ ms.locfileid: "27913508"
 |kioskModeAllowRingerSwitch|Логический|Указывает, можно ли использовать переключатель звонка в режиме киоска.|
 |kioskModeAllowScreenRotation|Логический|Указывает, следует ли запретить поворот экрана в режиме киоска.|
 |kioskModeAllowSleepButton|Логический|Указывает, можно ли использовать кнопку "Сон" в режиме киоска.|
-|kioskModeAllowTouchscreen|Логический|Указывает, можно ли использовать сенсорный экран в режиме киоска.|
+|kioskModeAllowTouchscreen|Boolean|Указывает, можно ли использовать сенсорный экран в режиме киоска.|
 |kioskModeAllowVoiceOverSettings|Логический|Указывает, следует ли запретить доступ к настройкам VoiceOver в режиме киоска.|
 |kioskModeAllowVolumeButtons|Логический|Указывает, можно ли использовать кнопки громкости в режиме киоска.|
 |kioskModeAllowZoomSettings|Логический|Указывает, следует ли запретить доступ к настройкам масштабирования в режиме киоска.|
-|kioskModeAppStoreUrl|Строка|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
-|kioskModeBuiltInAppId|Строка|КОД для встроенных приложений для использования в полноэкранном режиме. Используется при KioskModeManagedAppId и KioskModeAppStoreUrl не установлен.|
+|kioskModeAppStoreUrl|String|URL-адрес приложения в App Store для использования в режиме киоска. Используйте, если свойство KioskModeManagedAppId не известно.|
+|Киоскмодебуилтинаппид|String|Идентификатор встроенных приложений для использования в режиме киоска. Используется, когда KioskModeManagedAppId и KioskModeAppStoreUrl не заданы.|
 |kioskModeRequireAssistiveTouch|Логический|Указывает, обязательно ли использовать сенсорное управление со специальными возможностями в режиме киоска.|
 |kioskModeRequireColorInversion|Логический|Указывает, обязательно ли использовать инверсию цвета в режиме киоска.|
 |kioskModeRequireMonoAudio|Логический|Указывает, обязательно ли использовать монозвук в режиме киоска.|
 |kioskModeRequireVoiceOver|Логический|Указывает, обязательно ли использовать VoiceOver в режиме киоска.|
 |kioskModeRequireZoom|Логический|Указывает, обязательно ли использовать масштабирование в режиме киоска.|
-|kioskModeManagedAppId|Строка|Идентификатор управляемого приложения для использования в режиме киоска. Если указано свойство KioskModeManagedAppId, KioskModeAppStoreUrl игнорируется.|
+|kioskModeManagedAppId|String|Идентификатор управляемого приложения для использования в режиме киоска. Если указано свойство KioskModeManagedAppId, KioskModeAppStoreUrl игнорируется.|
 |lockScreenBlockControlCenter|Логический|Указывает, следует ли запретить использовать центр управления на заблокированном экране.|
 |lockScreenBlockNotificationView|Логический|Указывает, следует ли запретить использовать представление уведомлений на заблокированном экране.|
 |lockScreenBlockPassbook|Логический|Указывает, следует ли запретить использовать Passbook, когда устройство заблокировано.|
@@ -134,12 +135,12 @@ ms.locfileid: "27913508"
 |mediaContentRatingUnitedKingdom|[mediaContentRatingUnitedKingdom](../resources/intune-deviceconfig-mediacontentratingunitedkingdom.md)|Настройки возрастных ограничений для Соединенного Королевства|
 |mediaContentRatingUnitedStates|[mediaContentRatingUnitedStates](../resources/intune-deviceconfig-mediacontentratingunitedstates.md)|Настройки возрастных ограничений для Соединенных Штатов|
 |networkUsageRules|Коллекция [iosNetworkUsageRule](../resources/intune-deviceconfig-iosnetworkusagerule.md)|Список управляемых приложений и сетевых правил, которые к ним применяются. Эта коллекция может содержать не более 1000 элементов.|
-|mediaContentRatingApps|[ratingAppsType](../resources/intune-deviceconfig-ratingappstype.md)|Оценка параметры для приложений контента мультимедиа. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
+|mediaContentRatingApps|[Ратингаппстипе](../resources/intune-deviceconfig-ratingappstype.md)|Параметры оценки контента мультимедиа для приложений. Возможные значения: `allAllowed`, `allBlocked`, `agesAbove4`, `agesAbove9`, `agesAbove12`, `agesAbove17`.|
 |messagesBlocked|Логический|Указывает, следует ли запретить использовать приложение "Сообщения" на защищенном устройстве.|
 |notificationsBlockSettingsModification|Логический|Указывает, можно ли изменять настройки уведомлений (iOS 9.3 и более поздних версий).|
 |passcodeBlockFingerprintUnlock|Логический|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
 |passcodeBlockFingerprintModification|Логический|Позволяет заблокировать изменение зарегистрированных отпечатков пальцев Touch ID в защищенном режиме.|
-|passcodeBlockModification|Логический|Указывает, можно ли изменять секретный код на защищенном устройстве (iOS 9.0 и более поздних версий).|
+|passcodeBlockModification|Boolean|Указывает, можно ли изменять секретный код на защищенном устройстве (iOS 9.0 и более поздних версий).|
 |passcodeBlockSimple|Логический|Указывает, следует ли блокировать простые секретные коды.|
 |passcodeExpirationDays|Int32|Количество дней до окончания срока действия секретного кода. Допустимые значения: от 1 до 65 535.|
 |passcodeMinimumLength|Int32|Минимальная длина секретного кода. Допустимые значения: от 4 до 14.|
@@ -148,7 +149,7 @@ ms.locfileid: "27913508"
 |passcodeMinimumCharacterSetCount|Int32|Количество наборов символов, которые должен содержать секретный код. Допустимые значения: от 0 до 4.|
 |passcodePreviousPasscodeBlockCount|Int32|Количество предыдущих секретных кодов, которые следует блокировать. Допустимые значения: от 1 до 24.|
 |passcodeSignInFailureCountBeforeWipe|Int32|Количество неудачных попыток входа до очистки устройства. Допустимые значения: от 4 до 11|
-|passcodeRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passcodeRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Необходимый тип секретного кода. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passcodeRequired|Логический|Указывает, обязательно ли использовать секретный код.|
 |podcastsBlocked|Логический|Указывает, следует ли запретить использовать подкасты на защищенном устройстве (iOS 8.0 и более поздних версий).|
 |safariBlockAutofill|Логический|Указывает, следует ли запретить использовать автозаполнение в Safari.|
@@ -156,8 +157,8 @@ ms.locfileid: "27913508"
 |safariBlockPopups|Логический|Указывает, следует ли блокировать всплывающие окна в Safari.|
 |safariBlocked|Логический|Указывает, следует ли запретить использовать Safari.|
 |safariCookieSettings|[webBrowserCookieSettings](../resources/intune-deviceconfig-webbrowsercookiesettings.md)|Настройки файлов cookie для Safari. Возможные значения: `browserDefault`, `blockAlways`, `allowCurrentWebSite`, `allowFromWebsitesVisited`, `allowAlways`.|
-|safariManagedDomains|Коллекция String|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
-|safariPasswordAutoFillDomains|Коллекция String|Пользователи могут сохранять пароли в Safari только с URL-адресов, соответствующих приведенным здесь шаблонам. Применяется к устройствам в защищенном режиме (iOS 9.3 и более поздних версий).|
+|safariManagedDomains|Коллекция строк|URL-адреса, соответствующие приведенным здесь шаблонам, будут считаться управляемыми.|
+|safariPasswordAutoFillDomains|Коллекция строк|Пользователи могут сохранять пароли в Safari только с URL-адресов, соответствующих приведенным здесь шаблонам. Применяется к устройствам в защищенном режиме (iOS 9.3 и более поздних версий).|
 |safariRequireFraudWarning|Логический|Указывает, обязательно ли предупреждение о мошенничестве в Safari.|
 |screenCaptureBlocked|Логический|Указывает, следует ли запретить пользователю делать снимки экрана.|
 |siriBlocked|Логический|Указывает, следует ли запретить использовать Siri.|
@@ -165,16 +166,16 @@ ms.locfileid: "27913508"
 |siriBlockUserGeneratedContent|Логический|Указывает, следует ли запретить Siri запрашивать данные о пользовательском контенте на защищенном устройстве.|
 |siriRequireProfanityFilter|Логический|Указывает, следует ли запретить Siri записывать или произносить нецензурные выражения на защищенном устройстве.|
 |spotlightBlockInternetResults|Логический|Указывает, следует ли запретить показывать результаты из Интернета при поиске полезных сведений на защищенном устройстве.|
-|voiceDialingBlocked|Логический|Указывает, следует ли заблокировать голосовой набор.|
+|voiceDialingBlocked|Boolean|Указывает, следует ли заблокировать голосовой набор.|
 |wallpaperBlockModification|Логический|Указывает, можно ли изменять обои на защищенном устройстве (iOS 9.0 и более поздних версий).|
 |wiFiConnectOnlyToConfiguredNetworks|Логический|Указывает, обязательно ли использовать только сети Wi-Fi из профилей конфигурации, когда устройство находится в контролируемом режиме.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройства пользователем. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации по устройствам. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Обзор состояния параметров конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|

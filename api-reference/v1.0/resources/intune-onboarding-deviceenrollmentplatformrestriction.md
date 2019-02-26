@@ -3,29 +3,31 @@ title: Тип ресурса deviceEnrollmentPlatformRestriction
 description: Ограничения на регистрацию для определенных платформ
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7879b7f6585908aa760c3169e950cc5257bf49a7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 306f280928c843b596c57e7bdab454fd138851cc
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929069"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260839"
 ---
 # <a name="deviceenrollmentplatformrestriction-resource-type"></a>Тип ресурса deviceEnrollmentPlatformRestriction
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Ограничения на регистрацию для определенных платформ
+
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|platformBlocked|Boolean|Указывает, блокируется ли регистрация платформы|
+|platformBlocked|Логический|Указывает, блокируется ли регистрация платформы|
 |personalDeviceEnrollmentBlocked|Boolean|Указывает, блокируется ли регистрация личных устройств|
 |osMinimumVersion|String|Минимальная поддерживаемая версия ОС|
 |osMaximumVersion|String|Максимальная поддерживаемая версия ОС|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

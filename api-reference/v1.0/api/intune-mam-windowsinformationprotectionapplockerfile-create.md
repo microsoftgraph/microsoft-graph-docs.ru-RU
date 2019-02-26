@@ -3,21 +3,22 @@ title: Создание объекта windowsInformationProtectionAppLockerFile
 description: Создание объекта windowsInformationProtectionAppLockerFile.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: a7b6bfb8271e6b462be1d18fd509da33aea836b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 6f3b411e680a3df86b86517f63c8055cec8e4f17
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967597"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261840"
 ---
 # <a name="create-windowsinformationprotectionapplockerfile"></a>Создание объекта windowsInformationProtectionAppLockerFile
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -54,7 +55,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 |displayName|String|Понятное имя|
 |fileHash|String|Хэш SHA256 для файла|
 |file|Binary|Файл в виде массива байтов|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |version|Строка|Версия объекта.|
 
 
@@ -63,6 +64,7 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http

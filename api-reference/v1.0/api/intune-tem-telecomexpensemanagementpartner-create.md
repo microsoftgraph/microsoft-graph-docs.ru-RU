@@ -3,21 +3,22 @@ title: Создание telecomExpenseManagementPartner
 description: Создание объекта telecomExpenseManagementPartner.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ca3a94da0c908bec0af44075dcb15b6fa4f007a9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4c83b26e0f9d9c2a881ca37a4a56c2cc37883120
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984803"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262330"
 ---
 # <a name="create-telecomexpensemanagementpartner"></a>Создание telecomExpenseManagementPartner
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Создание объекта [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md).
+
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -48,11 +49,11 @@ POST /deviceManagement/telecomExpenseManagementPartners
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор партнера TEM.|
+|id|Строка|Уникальный идентификатор партнера TEM.|
 |displayName|String|Отображаемое имя партнера TEM.|
 |url|String|URL-адрес административной панели управления партнера TEM, где администратор может настроить службу TEM.|
 |appAuthorized|Boolean|Определяет, разрешен ли доступ к Intune партнерскому приложению AAD.|
-|enabled|Boolean|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
+|enabled|Логический|Определяет, включено или отключено сейчас подключение Intune к службе TEM.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
 
 
@@ -61,6 +62,7 @@ POST /deviceManagement/telecomExpenseManagementPartners
 В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [telecomExpenseManagementPartner](../resources/intune-tem-telecomexpensemanagementpartner.md) в теле отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http

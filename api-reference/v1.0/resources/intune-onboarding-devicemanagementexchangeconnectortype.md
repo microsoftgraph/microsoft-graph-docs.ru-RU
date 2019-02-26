@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления deviceManagementExchangeConnectorType
+title: тип перечисления Девицеманажементексчанжеконнектортипе
 description: Тип соединителя Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8e9e50a4475ca2d57b3f38567703046588d4fb3c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c358832db83e5f5b3e1fb0f5457f480d21ded996
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986434"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263562"
 ---
-# <a name="devicemanagementexchangeconnectortype-enum-type"></a>Тип перечисления deviceManagementExchangeConnectorType
+# <a name="devicemanagementexchangeconnectortype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнектортипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип соединителя Exchange.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|onPremises|0|Подключается к локальной среды Exchange.|
-|размещенные|1|Подключается к среде Exchange несколькими клиентами O365|
-|serviceToService|2|Служба Intune подключается непосредственно в среду Exchange несколькими клиентами O365|
-|выделенные|3|Подключается к среде Exchange выделенных O365.|
+|onPremises|нуль|ПодКлючается к локальной среде Exchange.|
+|хост|1,1|ПодКлючается к среде Exchange с несколькими клиентами Office 365|
+|Сервицетосервице|2|Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
+|уполномочен|4|ПодКлючается к выделенной среде Exchange O365.|
 
 
 

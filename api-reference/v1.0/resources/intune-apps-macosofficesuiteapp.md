@@ -3,19 +3,20 @@ title: Тип ресурса macOSOfficeSuiteApp
 description: Содержит свойства, в том числе унаследованные, для приложений из набора Office для MacOS.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7fb16e0e574dc5eca34c68f5a9400524a955e9ac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: dd2b5af7ac41ac808c30ff92b0ee9db8a1f6f606
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27983585"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260902"
 ---
 # <a name="macosofficesuiteapp-resource-type"></a>Тип ресурса macOSOfficeSuiteApp
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства, в том числе унаследованные, для приложений из набора Office для MacOS.
+
 
 Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).
 
@@ -23,8 +24,8 @@ ms.locfileid: "27983585"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список macOSOfficeSuiteApps](../api/intune-apps-macosofficesuiteapp-list.md)|Коллекция [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md)|Список свойств и связей объектов [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
-|[Получение macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-get.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md)|Считывание свойств и связей объекта [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
-|[Создание macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-create.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md)|Создание объекта [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
+|[Получение macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-get.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md);|Считывание свойств и связей объекта [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
+|[Создание macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-create.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md);|Создание объекта [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
 |[Удаление macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-delete.md)|None|Удаление экземпляра [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
 |[Обновление macOSOfficeSuiteApp](../api/intune-apps-macosofficesuiteapp-update.md)|[macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md)|Обновление свойств объекта [macOSOfficeSuiteApp](../resources/intune-apps-macosofficesuiteapp.md).|
 
@@ -33,7 +34,7 @@ ms.locfileid: "27983585"
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|описание|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -43,11 +44,11 @@ ms.locfileid: "27983585"
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|notes|String|Примечания к приложению. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|

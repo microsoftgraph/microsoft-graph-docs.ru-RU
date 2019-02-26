@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления mobileAppPublishingState
+title: тип перечисления Мобилеапппублишингстате
 description: Указывает состояние публикации приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 270dd416422c0f0b4dfc320937c749f4fe13c766
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937763"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263394"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a>Тип перечисления mobileAppPublishingState
+# <a name="mobileapppublishingstate-enum-type"></a>тип перечисления Мобилеапппублишингстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Указывает состояние публикации приложения.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notPublished|0|Приложение не публикуется.|
-|обработка|1|Приложение ожидает обработки на стороне службы.|
-|опубликованный|2|Приложение будет опубликовано.|
+|Нотпублишед|нуль|Приложение еще не опубликовано.|
+|обработка|1,1|Приложение ожидает обработки на стороне службы.|
+|опубликованный|2|Приложение публикуется.|
 
 
 

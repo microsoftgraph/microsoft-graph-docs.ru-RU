@@ -3,19 +3,20 @@ title: Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguratio
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 26eb1eb09ea4a32739794be9fea582ad3f790d44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4a2dbad17a731c8c63b6ef7705c97deab82a90da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929146"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260993"
 ---
 # <a name="deviceenrollmentwindowshelloforbusinessconfiguration-resource-type"></a>Тип ресурса deviceEnrollmentWindowsHelloForBusinessConfiguration
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
+
 
 Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)
 
@@ -33,26 +34,26 @@ ms.locfileid: "27929146"
 |:---|:---|:---|
 |id|String|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |displayName|String|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
-|описание|String|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
+|description|String|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |priority|Int32|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |createdDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Еще не задокументировано. Наследуется от объекта [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md).|
 |version|Int32|Еще не задокументировано. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 |pinMinimumLength|Int32|Н/Д|
 |pinMaximumLength|Int32|Н/Д|
-|pinUppercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не документированы. Возможные значения: `allowed`, `required`, `disallowed`.|
-|pinLowercaseCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не документированы. Возможные значения: `allowed`, `required`, `disallowed`.|
-|pinSpecialCharactersUsage|[windowsHelloForBusinessPinUsage](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не документированы. Возможные значения: `allowed`, `required`, `disallowed`.|
-|state|[Включение](../resources/intune-onboarding-enablement.md)|Еще не документированы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|securityDeviceRequired|Boolean|Н/Д|
-|unlockWithBiometricsEnabled|Boolean|Н/Д|
-|remotePassportEnabled|Boolean|Н/Д|
+|pinUppercaseCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не задокументировано. Возможные значения: `allowed`, `required`, `disallowed`.|
+|pinLowercaseCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не задокументировано. Возможные значения: `allowed`, `required`, `disallowed`.|
+|pinSpecialCharactersUsage|[Виндовшеллофорбусинесспинусаже](../resources/intune-onboarding-windowshelloforbusinesspinusage.md)|Еще не задокументировано. Возможные значения: `allowed`, `required`, `disallowed`.|
+|state|[Включение](../resources/intune-onboarding-enablement.md)|Еще не задокументировано. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|securityDeviceRequired|Boolean|Пока не задокументировано|
+|unlockWithBiometricsEnabled|Boolean|Пока не задокументировано|
+|remotePassportEnabled|Boolean|Пока не задокументировано|
 |pinPreviousBlockCount|Int32|Н/Д|
 |pinExpirationInDays|Int32|Н/Д|
-|enhancedBiometricsState|[Включение](../resources/intune-onboarding-enablement.md)|Еще не документированы. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
+|enhancedBiometricsState|[Включение](../resources/intune-onboarding-enablement.md)|Еще не задокументировано. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |assignments|Коллекция [enrollmentConfigurationAssignment](../resources/intune-onboarding-enrollmentconfigurationassignment.md)|Список назначений групп для профиля конфигурации устройства. Наследуется от [deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md)|
 

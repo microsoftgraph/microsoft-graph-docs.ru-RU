@@ -3,19 +3,20 @@ title: Тип ресурса deviceComplianceUserOverview
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 01596e7b4e5c4d5a661befadbffa00529d3314d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 177c66d9c09ce8ee1ac546e987e9475c5df3264f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27973197"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30260881"
 ---
 # <a name="devicecomplianceuseroverview-resource-type"></a>Тип ресурса deviceComplianceUserOverview
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -25,9 +26,9 @@ ms.locfileid: "27973197"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |pendingCount|Int32|Количество ожидающих пользователей.|
-|notApplicableCount|Int32|Число пользователей не применим|
+|notApplicableCount|Int32|Количество неприменимых пользователей|
 |successCount|Int32|Количество успешных пользователей.|
 |errorCount|Int32|Количество пользователей с ошибками.|
 |failedCount|Int32|Количество пользователей со сбоями.|
@@ -36,6 +37,7 @@ ms.locfileid: "27973197"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления состояние действия
-description: Состояние действие на устройстве
+title: тип перечисления actionState
+description: Состояние действия на устройстве
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5579d8de986a764cd96e42dff30c007449130b0b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: e06b492e41ffa5e2f9aa4b64782e96125ea746a2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922447"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261490"
 ---
-# <a name="actionstate-enum-type"></a>Тип перечисления состояние действия
+# <a name="actionstate-enum-type"></a>тип перечисления actionState
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние действие на устройстве
+Состояние действия на устройстве
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|0|Не имеет состояние допустимое действие|
-|Ожидание|1|Действие находится в состоянии ожидания|
-|отменено|2|Действие было отменено.|
-|активных|3|Действие — active.|
-|done|4|Действие завершается без ошибок.|
-|failed|5|Не удалось выполнить действие|
+|Нет|нуль|Недопустимое состояние действия|
+|закончен|1,1|Ожидается действие|
+|закрыт|2|Действие отменено.|
+|ASP|4|Действие активно.|
+|done|4|Действие выполнено без ошибок.|
+|failed|17:00|Не удалось выполнить действие|
 |notSupported|6|Действие не поддерживается.|
 
 

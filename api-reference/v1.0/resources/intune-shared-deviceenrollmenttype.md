@@ -1,35 +1,35 @@
 ---
-title: Тип перечисления deviceEnrollmentType
-description: Возможные способы добавления мобильного устройства для управления.
+title: тип перечисления Девицеенроллменттипе
+description: Возможные способы добавления мобильного устройства в управление.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 72acbdf412ebb91269fcdc3f851ffbc204e0274b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 62ff257e2f758776265f52a0d64cde52dbc26115
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987757"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261966"
 ---
-# <a name="deviceenrollmenttype-enum-type"></a>Тип перечисления deviceEnrollmentType
+# <a name="deviceenrollmenttype-enum-type"></a>тип перечисления Девицеенроллменттипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные способы добавления мобильного устройства для управления.
+Возможные способы добавления мобильного устройства в управление.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Тип регистрации значения по умолчанию не собираются.|
-|userEnrollment|1|Регистрация управляемых пользователя по каналу BYOD.|
-|deviceEnrollmentManager|2|Регистрация пользователя с учетной записью диспетчера устройств заявок через Интернет.|
-|appleBulkWithUser|3|Регистрация массового Apple с задачей пользователя (DEP, Apple Configurator).|
-|appleBulkWithoutUser|4|Apple массового заявок через Интернет без запроса пользователя (Config Mobile DEP конфигуратора Apple).|
-|windowsAzureADJoin|5|Присоединение к Windows Azure AD 10.|
-|windowsBulkUserless|6|Массовое 10 Windows подачи заявок через ICD с сертификатом.|
-|windowsAutoEnrollment|7|Windows 10 автоматической подачи заявок. (Добавление учетной записи работы)|
-|windowsBulkAzureDomainJoin|8|Windows 10 в пакетном режиме присоединиться к Azure AD.|
-|windowsCoManagement|9|Windows 10 совместного управления, вызванные автопилот или групповой политики.|
+|unknown|нуль|Значение по умолчанию: тип регистрации не был собран.|
+|Усеренроллмент|1,1|Управляемая пользователями регистрация через канал BYOD.|
+|Девицеенроллментманажер|2|Регистрация пользователей с помощью учетной записи менеджера регистрации устройств.|
+|Апплебулквисусер|4|Массовая регистрация Apple с задачей пользователя. (Предотвращение выполнения данных, Apple Configurator)|
+|Апплебулквисаутусер|4|Массовая регистрация Apple без задачи пользователя. (Предотвращение выполнения данных, Apple Configurator, Mobile config)|
+|Виндовсазуреаджоин|17:00|ПриСоединение к Windows 10 Azure AD.|
+|Виндовсбулкусерлесс|6|Массовая регистрация Windows 10 с помощью ICD с помощью сертификата.|
+|Виндовсаутоенроллмент|7|Автоматическая регистрация в Windows 10. (Добавление рабочей учетной записи)|
+|Виндовсбулказуредомаинжоин|8,5|Массовый приСоединение к Windows 10 Azure AD.|
+|Виндовскоманажемент|10|Управление с помощью Windows 10 инициировано с помощью автоПилота или групповой политики.|
 
 
 

@@ -1,22 +1,23 @@
 ---
-title: функция managedDeviceEnrollmentFailureDetails
+title: Функция Манажеддевицеенроллментфаилуредетаилс
 description: Н/Д
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 128ad6e3985649b3dbaffa101c19f0b2440b0838
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980379"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262995"
 ---
-# <a name="manageddeviceenrollmentfailuredetails-function"></a>функция managedDeviceEnrollmentFailureDetails
+# <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
-## <a name="prerequisites"></a>Необходимые разрешения
+Пока не задокументировано.
+
+## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -42,7 +43,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -65,8 +66,8 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails(skip=4,top=3,filter='parameterValue',skipToken='parameterValue')
 ```
 
-### <a name="response"></a>Отклик
-Для краткости может усекаться объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Ответ
+Объект Response, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ``` http
 HTTP/1.1 200 OK

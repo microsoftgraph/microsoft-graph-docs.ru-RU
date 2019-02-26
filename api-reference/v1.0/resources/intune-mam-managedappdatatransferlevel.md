@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления managedAppDataTransferLevel
-description: Данные могут быть перенесены из/эти классы приложений
+title: тип перечисления Манажедаппдататрансферлевел
+description: Данные можно переносить из/в эти классы приложений
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: c7a251e42425064030fd2cbab755bfa21867a43e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 65c6614e645de47141818a97b8ed2cbaddcb4a41
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917183"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262715"
 ---
-# <a name="managedappdatatransferlevel-enum-type"></a>Тип перечисления managedAppDataTransferLevel
+# <a name="managedappdatatransferlevel-enum-type"></a>тип перечисления Манажедаппдататрансферлевел
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Данные могут быть перенесены из/эти классы приложений
+Данные можно переносить из/в эти классы приложений
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allApps|0|Все приложения.|
-|managedApps|1|Управляемые приложения.|
-|Нет|2|Нет приложения.|
+|Аллаппс|нуль|Все приложения.|
+|managedApps|1,1|Управляемые приложения.|
+|Нет|2|Нет приложений.|
 
 
 

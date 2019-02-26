@@ -3,19 +3,20 @@ title: Тип ресурса iosVppEBookAssignment
 description: Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 126ae989df317ab01e1db17d319607abf13923c0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4f472714869d92bcaf2af148dd2f591c19c18425
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948697"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30262232"
 ---
 # <a name="iosvppebookassignment-resource-type"></a>Тип ресурса iosVppEBookAssignment
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства, используемые при назначении электронной книги в формате VPP для iOS группе.
+
 
 Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md)
 
@@ -33,10 +34,11 @@ ms.locfileid: "27948697"
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Цель назначения электронной книги. Наследуется от объекта [managedEBookAssignment](../resources/intune-books-managedebookassignment.md).|
-|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. Наследуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
+|installIntent|[installIntent](../resources/intune-shared-installintent.md)|Цель установки электронной книги. НаСледуется от [managedEBookAssignment](../resources/intune-books-managedebookassignment.md). Возможные значения: `available`, `required`, `uninstall`, `availableWithoutEnrollment`.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {
