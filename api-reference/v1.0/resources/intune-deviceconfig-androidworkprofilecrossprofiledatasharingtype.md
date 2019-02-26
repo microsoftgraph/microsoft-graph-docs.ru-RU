@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления androidWorkProfileCrossProfileDataSharingType
-description: Android профиля рабочего пересекать совместное использование типа данных профилей.
+title: тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
+description: Тип совместного использования данных профилей рабочих профилей для Android.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7aa701f2e19ae008b0306d1d3c52fdcf53cbf33c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ddfcfc6926005dff2f9befa400e5352d58f92b3b
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967275"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253017"
 ---
-# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>Тип перечисления androidWorkProfileCrossProfileDataSharingType
+# <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Android профиля рабочего пересекать совместное использование типа данных профилей.
+Тип совместного использования данных профилей рабочих профилей для Android.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|preventAny|1|Запретить все общего доступа.|
-|allowPersonalToWork|2|Разрешить запрос от личного профиля для работы профиля общего доступа к данным.|
-|noRestrictions|3|Отсутствуют ограничения на общий доступ.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|Превентани|1,1|Запретите общий доступ.|
+|Алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
+|Ограничения|4|Нет ограничений на общий доступ.|
 
 
 

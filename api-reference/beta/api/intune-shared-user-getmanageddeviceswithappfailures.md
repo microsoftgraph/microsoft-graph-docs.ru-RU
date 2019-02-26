@@ -1,25 +1,25 @@
 ---
-title: функция getManagedDevicesWithAppFailures
-description: Получает список устройств, при помощи неудачных приложений
+title: Функция Жетманажеддевицесвисаппфаилурес
+description: Получает список устройств с неудачными приложениями
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: d4f2800a187c62c1c6a894817f2405f88c6356d0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 44296ba60db476bd7c407ea4fbbc727ffca465ca
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396807"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172214"
 ---
-# <a name="getmanageddeviceswithappfailures-function"></a>функция getManagedDevicesWithAppFailures
+# <a name="getmanageddeviceswithappfailures-function"></a>Функция Жетманажеддевицесвисаппфаилурес
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Получает список устройств, при помощи неудачных приложений
-## <a name="prerequisites"></a>Предварительные требования
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Получает список устройств с неудачными приложениями
+## <a name="prerequisites"></a>Необходимые компоненты
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -45,7 +45,7 @@ GET /users/{usersId}/getManagedDevicesWithAppFailures
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в тексте отклика.
@@ -58,6 +58,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}/getManagedDevicesWithAppFai
 ```
 
 ### <a name="response"></a>Отклик
+
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

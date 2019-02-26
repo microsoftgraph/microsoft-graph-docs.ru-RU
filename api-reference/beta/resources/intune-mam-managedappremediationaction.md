@@ -1,29 +1,30 @@
 ---
-title: Тип перечисления managedAppRemediationAction
-description: Администратор инициировал действие, которое необходимо применить в управляемых приложений.
-localization_priority: Normal
+title: тип перечисления Манажедаппремедиатионактион
+description: Действие, инициированное администратором, для применения в управляемом приложении.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b46b0a9ca4afd3a086b04aa4db29c45383fcaaea
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eabaa59c9419193d6dd984eaaa791e395f67eb50
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394868"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161721"
 ---
-# <a name="managedappremediationaction-enum-type"></a>Тип перечисления managedAppRemediationAction
+# <a name="managedappremediationaction-enum-type"></a>тип перечисления Манажедаппремедиатионактион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Администратор инициировал действие, которое необходимо применить в управляемых приложений.
+Действие, инициированное администратором, для применения в управляемом приложении.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|блок|0|приложения и соответствующих данных организации будет заблокирована|
-|Очистка|1|приложения и соответствующие данные компании очистить|
+|блок|нуль|приложение и соответствующие данные компании, которые необходимо заблокировать|
+|Очистка|1,1|приложение и соответствующие данные компании для очистки|
+|пользователя|2|приложение и соответствующий пользователь для предупреждения|
 
 
 

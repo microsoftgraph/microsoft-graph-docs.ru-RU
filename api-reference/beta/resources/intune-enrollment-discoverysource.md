@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления discoverySource
+title: тип перечисления Дисковерисаурце
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b15dfeaf06058323c1b74e5c831f89b11e2e8085
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1999bfce9fa7057e133fa83f13ee5440d42f96b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29405683"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140504"
 ---
-# <a name="discoverysource-enum-type"></a>Тип перечисления discoverySource
+# <a name="discoverysource-enum-type"></a>тип перечисления Дисковерисаурце
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Н/Д
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|DiscoverySource — Неизвестный.|
-|adminImport|2|Устройство импортируется администратором.|
-|deviceEnrollmentProgram|4|Устройство добавляется программой Apple устройства подачи заявок (Dep).|
+|unknown|нуль|Дисковерисаурце неИзвестен.|
+|Админимпорт|2|Устройство импортируется администратором.|
+|Девицеенроллментпрограм|4|Устройство добавляется программой регистрации устройств Apple (DEP).|
 
 
 

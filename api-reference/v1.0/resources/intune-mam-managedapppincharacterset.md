@@ -1,26 +1,27 @@
 ---
-title: Тип перечисления managedAppPinCharacterSet
-description: Набор символов, который будет использоваться для пользователя приложения ПИН-кода
-localization_priority: Normal
+title: тип перечисления Манажедапппинчарактерсет
+description: Набор знаков, который будет использоваться для ПИН-кода приложения пользователя
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: d2d46e030224d21c8d0876a9f940d85e94a88591
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: cfc198a6f1db877ecee7b43eb4b07989c9967291
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978370"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250252"
 ---
-# <a name="managedapppincharacterset-enum-type"></a>Тип перечисления managedAppPinCharacterSet
+# <a name="managedapppincharacterset-enum-type"></a>тип перечисления Манажедапппинчарактерсет
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Набор символов, который будет использоваться для пользователя приложения ПИН-кода
+Набор знаков, который будет использоваться для ПИН-кода приложения пользователя
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|числовое|0|Числовые символы|
-|alphanumericAndSymbol|1|Символические и буквенно-цифровых символов|
+|числовых|нуль|Числовые символы|
+|Алфанумерикандсимбол|1,1|Буквенно-цифровые и символьные символы|
 
 
 

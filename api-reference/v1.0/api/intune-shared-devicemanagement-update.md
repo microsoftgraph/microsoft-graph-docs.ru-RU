@@ -4,37 +4,38 @@ description: Обновление свойств объекта deviceManagement
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: e7351eb15a194c68c4bd3b7abc59d866b5f4f237
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c96877d25476ede3cee6ce407c1df84f08448a9a
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985972"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253059"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Разрешение&nbsp;тип&nbsp;(с&nbsp;рабочего процесса) | Разрешения (в порядке убывания привилегий) |
+| Тип&nbsp;&nbsp;разрешения (по&nbsp;рабочим процессам) | Разрешения (в порядке убывания привилегий) |
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) |
-| &nbsp;&nbsp; Аудита | DeviceManagementApps.ReadWrite.All |
-| &nbsp;&nbsp; Компании термины | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Корпоративной подачи заявок | DeviceManagementServiceConfig.ReadWrite.All|
-| &nbsp;&nbsp; Конфигурация устройств | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; Аудит | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Условия компании | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Корпоративная регистрация | DeviceManagementServiceConfig.ReadWrite.All|
+| &nbsp;&nbsp; Конфигурация устройства | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; Управление устройствами | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Защиты конечной точки | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Уведомлений | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Адаптация новых сотрудников | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Управления доступом на основе ролей | DeviceManagementRBAC.ReadWrite.All |
-| &nbsp;&nbsp; Удаленный помощник | DeviceManagementServiceConfig.ReadWrite.All |
-| &nbsp;&nbsp; Управления расходами телекоммуникации | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Endpoint Protection | DeviceManagementManagedDevices.ReadWrite.All |
+| &nbsp;&nbsp; Уведомление | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Входящая миграция | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Управление доступом на основе ролей | DeviceManagementRBAC.ReadWrite.All |
+| &nbsp;&nbsp; Удаленная помощь | DeviceManagementServiceConfig.ReadWrite.All |
+| &nbsp;&nbsp; Управление расходами по телекоммуникационной связи | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; Устранение неполадок | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; Защита информации Windows | DeviceManagementApps.ReadWrite.All |
+| &nbsp;&nbsp; Windows Information Protection | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений | Не поддерживается. |
 
@@ -54,7 +55,7 @@ PATCH /deviceManagement
 |
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceManagement](../resources/intune-shared-devicemanagement.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).
@@ -62,14 +63,14 @@ PATCH /deviceManagement
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства.|
-|**Конфигурация устройств**|
+|**Настройка устройства**|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
-|subscriptionState|[deviceManagementSubscriptionState](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|**Адаптация новых сотрудников**|
+|subscriptionState|[Девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
+|**Входящая миграция**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложения "Корпоративный портал" и веб-портала пользователя.|
 
-Поддержка свойств текст запроса изменяется в зависимости от рабочего процесса.
+Поддержка свойств текста запроса зависит от рабочего процесса.
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и обновленный объект [deviceManagement](../resources/intune-shared-devicemanagement.md) в теле отклика.
@@ -107,9 +108,9 @@ Content-length: 751
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемых свойств различаться в зависимости от рабочего процесса и контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Возвращаемые свойства различаются в зависимости от рабочего процесса и контекста.
 
 ``` http
 HTTP/1.1 200 OK

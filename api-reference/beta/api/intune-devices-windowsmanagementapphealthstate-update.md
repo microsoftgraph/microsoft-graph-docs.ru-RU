@@ -1,25 +1,25 @@
 ---
-title: Обновление windowsManagementAppHealthState
-description: Обновление свойства объекта windowsManagementAppHealthState.
-localization_priority: Normal
+title: Обновление Виндовсманажементапфеалсстате
+description: Обновление свойств объекта Виндовсманажементапфеалсстате.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: de395bdeba104ea3c5c30b8f33e8670a5f2e5480
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: de6314de3699821f15125d75241d3df509d52c64
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423155"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160552"
 ---
-# <a name="update-windowsmanagementapphealthstate"></a>Обновление windowsManagementAppHealthState
+# <a name="update-windowsmanagementapphealthstate"></a>Обновление Виндовсманажементапфеалсстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .
+Обновление свойств объекта [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,28 +40,28 @@ PATCH /deviceAppManagement/windowsManagementApp/healthStates/{windowsManagementA
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) .
+В тексте запроса добавьте представление объекта [Виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md).
+В следующей таблице приведены свойства, необходимые при создании [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
-|healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояния работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
-|installedVersion|String|Управление приложения установленной версии Windows.|
-|lastCheckInDateTime|DateTimeOffset|Приложение управления Windows последний раз.|
-|deviceName|String|Имя устройства, на какие Windows установлено приложение управления.|
-|deviceOSVersion|String|10 версии Windows устройства, на какие Windows установлено приложение управления.|
+|id|Строка|Уникальный идентификатор для состояния работоспособности приложения управления Windows|
+|healthState|[healthState](../resources/intune-devices-healthstate.md)|Состояние работоспособности приложения управления Windows. Возможные значения: `unknown`, `healthy`, `unhealthy`.|
+|Инсталледверсион|String|Установленная версия приложения управления Windows.|
+|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата приложения управления Windows.|
+|deviceName|String|Имя устройства, на котором установлено приложение "Управление Windows".|
+|Девицеосверсион|String|Версия Windows 10 OS устройства, на котором установлено приложение "Управление Windows".|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [windowsManagementAppHealthState](../resources/intune-devices-windowsmanagementapphealthstate.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсманажементапфеалсстате](../resources/intune-devices-windowsmanagementapphealthstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

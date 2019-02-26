@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления editionUpgradeLicenseType
-description: Тип лицензии обновления версии
-localization_priority: Normal
+title: тип перечисления Едитионупграделиценсетипе
+description: Тип лицензии на обновление выпуска
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8641586492de039bf5bae93b41909156ec5ab921
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ab47ffc46dbaecd833830d797c8b341688b8dbec
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414090"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155785"
 ---
-# <a name="editionupgradelicensetype-enum-type"></a>Тип перечисления editionUpgradeLicenseType
+# <a name="editionupgradelicensetype-enum-type"></a>тип перечисления Едитионупграделиценсетипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип лицензии обновления версии
+Тип лицензии на обновление выпуска
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|productKey|0|Тип ключа продукта|
-|licenseFile|1|Тип файла лицензии|
+|productKey|нуль|Тип ключа продукта|
+|Лиценсефиле|1,1|Тип файла лицензии|
 |notConfigured|2|NotConfigured|
 
 

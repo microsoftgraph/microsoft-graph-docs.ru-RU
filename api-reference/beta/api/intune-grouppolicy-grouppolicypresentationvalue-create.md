@@ -1,25 +1,25 @@
 ---
-title: Создание groupPolicyPresentationValue
-description: Создание нового объекта groupPolicyPresentationValue.
-localization_priority: Normal
+title: Создание Граупполиципресентатионвалуе
+description: Создание нового объекта Граупполиципресентатионвалуе.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6fbf02bdf9fb1c5d7f5fe5790943a956f2200c2
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e8e657917d0c07173e9a4a4553a7deaecc0f06f1
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430739"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160902"
 ---
-# <a name="create-grouppolicypresentationvalue"></a>Создание groupPolicyPresentationValue
+# <a name="create-grouppolicypresentationvalue"></a>Создание Граупполиципресентатионвалуе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) .
+Создание нового объекта [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,14 +40,14 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта groupPolicyPresentationValue.
+В тексте запроса добавьте представление объекта Граупполиципресентатионвалуе в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания groupPolicyPresentationValue.
+В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуе.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -58,7 +58,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [groupPolicyPresentationValue](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -74,7 +74,7 @@ Content-length: 70
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 201 Created

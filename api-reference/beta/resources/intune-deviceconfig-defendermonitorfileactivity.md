@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления defenderMonitorFileActivity
-description: Возможные значения для наблюдение за активностью файла.
-localization_priority: Normal
+title: тип перечисления Дефендермониторфилеактивити
+description: Возможные значения для отслеживания действий с файлами.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9b0f91d0a2d802fd573d7825da016dc8850e941
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d04d7a34de9c08c12d17c994381683c160bef1c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414958"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30152593"
 ---
-# <a name="defendermonitorfileactivity-enum-type"></a>Тип перечисления defenderMonitorFileActivity
+# <a name="defendermonitorfileactivity-enum-type"></a>тип перечисления Дефендермониторфилеактивити
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для наблюдение за активностью файла.
+Возможные значения для отслеживания действий с файлами.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|User Defined, значение по умолчанию, без цели.|
-|Отключение|1|Отключение мониторинга активности файла.|
-|monitorAllFiles|2|Отслеживать все файлы.|
-|monitorIncomingFilesOnly|3| Отслеживание только входящих файлов.|
-|monitorOutgoingFilesOnly|4|Мониторинг только исходящих файлов.|
+|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
+|Запретите|1,1|Отключите мониторинг действий с файлами.|
+|Монитораллфилес|2|Отслеживайте все файлы.|
+|Мониторинкомингфилесонли|4| Отслеживайте только входящие файлы.|
+|Монитораутгоингфилесонли|4|Отслеживайте только исходящие файлы.|
 
 
 

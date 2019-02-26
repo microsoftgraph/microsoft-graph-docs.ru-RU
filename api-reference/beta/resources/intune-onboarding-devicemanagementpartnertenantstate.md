@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления deviceManagementPartnerTenantState
-description: Состояние партнера клиента.
-localization_priority: Normal
+title: тип перечисления Девицеманажементпартнертенантстате
+description: Состояние партнера этого клиента.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0044aae0069ceb87f8a8820e49a114b814da62c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 11276fa24b5128c52c39fcc4c8a944df39c865b2
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407293"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153335"
 ---
-# <a name="devicemanagementpartnertenantstate-enum-type"></a>Тип перечисления deviceManagementPartnerTenantState
+# <a name="devicemanagementpartnertenantstate-enum-type"></a>тип перечисления Девицеманажементпартнертенантстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние партнера клиента.
+Состояние партнера этого клиента.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Состояние партнера неизвестно.|
-|недоступен|1|Участник недоступен.|
-|enabled|2|Включить партнера.|
-|завершен|3|Подключение к партнера разрывается.|
-|Отклонено|4|Отклоняются сообщения партнера.|
-|не отвечает|5|Партнер не отвечает.|
+|unknown|нуль|Состояние партнера неизвестно.|
+|выходе|1,1|Партнер недоступен.|
+|enabled|2|Партнер включен.|
+|нулем|4|Подключение к партнеру завершается.|
+|клоняет|4|Партнерские сообщения отклоняются.|
+|не отвечает|17:00|Партнер не отвечает.|
 
 
 

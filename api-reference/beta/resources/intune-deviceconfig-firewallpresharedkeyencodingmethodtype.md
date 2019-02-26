@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления firewallPreSharedKeyEncodingMethodType
-description: Возможные значения для firewallPreSharedKeyEncodingMethod
-localization_priority: Normal
+title: тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
+description: Возможные значения для Фиреваллпрешаредкэйенкодингмесод
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 577925f141c6dd94b493664d3617df939d19c5c6
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9e3a74122f0b0a9fe1a6dfab40593123ec8709c5
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410954"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160818"
 ---
-# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>Тип перечисления firewallPreSharedKeyEncodingMethodType
+# <a name="firewallpresharedkeyencodingmethodtype-enum-type"></a>тип перечисления Фиреваллпрешаредкэйенкодингмесодтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для firewallPreSharedKeyEncodingMethod
+Возможные значения для Фиреваллпрешаредкэйенкодингмесод
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение не настраивается с Intune, не переопределяют настраиваемых пользователем устройства по умолчанию|
-|none|1|Предварительный ключ не кодируются. Вместо этого он будет храниться в формате Юникода|
-|utF8|2|Кодирование предварительный ключ, используя UTF-8|
+|Девицедефаулт|нуль|Значение не настроено Intune, не переопределять значение устройства по умолчанию, настроенное пользователем|
+|Нет|1,1|Общий ключ не кодируется. Вместо этого он хранится в расширенном формате символов|
+|utF8|2|Кодирование общего ключа с помощью UTF – 8|
 
 
 

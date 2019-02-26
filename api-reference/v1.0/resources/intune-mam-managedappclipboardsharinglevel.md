@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления managedAppClipboardSharingLevel
-description: Представляет уровень, на который устройство буфер обмена могут совместно использоваться приложений
-localization_priority: Normal
+title: тип перечисления Манажедаппклипбоардшаринглевел
+description: Представляет уровень, к которому может быть предоставлен общий доступ к буферу обмена устройства между приложениями
 author: tfitzmac
-ms.prod: intune
-ms.openlocfilehash: 349f0ee08b8e3bff4e627c58318e2c21fa00847c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: dcbee5e0b7aa6343e31d57d14557bc0f0586fb80
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27946786"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250028"
 ---
-# <a name="managedappclipboardsharinglevel-enum-type"></a>Тип перечисления managedAppClipboardSharingLevel
+# <a name="managedappclipboardsharinglevel-enum-type"></a>тип перечисления Манажедаппклипбоардшаринглевел
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет уровень, на который устройство буфер обмена могут совместно использоваться приложений
+Представляет уровень, к которому может быть предоставлен общий доступ к буферу обмена устройства между приложениями
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allApps|0|Общий доступ к может между всем приложениям, управляемых или нет|
-|managedAppsWithPasteIn|1|Общий доступ к может между все управляемые приложения с помощью вставки в включено|
-|managedApps|2|Общий доступ к может между все управляемые приложения|
-|заблокировано|3|Совместное использование приложений отключена|
+|Аллаппс|нуль|Общий доступ разрешен между всеми приложениями, управляемым или не|
+|Манажедаппсвиспастеин|1,1|Разрешен общий доступ для всех управляемых приложений с включенной вставкой|
+|managedApps|2|Общий доступ разрешен для всех управляемых приложений|
+|заблокировано|4|Совместное использование приложений отключено|
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Создание cartToClassAssociation
-description: Создание нового объекта cartToClassAssociation.
-localization_priority: Normal
+title: Создание КарттоклассассоЦиатион
+description: Создание нового объекта КарттоклассассоЦиатион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2368507adbf7e0065b10d4c0c93353d81d5d936
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a4fe03f073fec54db6f9136ed104033e1deaf857
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423673"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150087"
 ---
-# <a name="create-carttoclassassociation"></a>Создание cartToClassAssociation
+# <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) .
+Создание нового объекта [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,30 +40,30 @@ POST /deviceManagement/cartToClassAssociations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта cartToClassAssociation.
+В тексте запроса добавьте представление объекта КарттоклассассоЦиатион в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания cartToClassAssociation.
+В следующей таблице приведены свойства, необходимые при создании КарттоклассассоЦиатион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
-|version|Int32|Версия CartToClassAssociation.|
+|version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
-|description|String|Admin, предоставляемые описание CartToClassAssociation.|
-|deviceCartIds|Коллекция String|Идентификаторы корзины устройства необходимо сопоставить с классы.|
-|classroomIds|Коллекция String|Идентификаторы аудиторий необходимо сопоставить с устройства корзины.|
+|description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
+|Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [cartToClassAssociation](../resources/intune-deviceconfig-carttoclassassociation.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [карттоклассассоЦиатион](../resources/intune-deviceconfig-carttoclassassociation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

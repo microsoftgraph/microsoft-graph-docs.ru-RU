@@ -3,19 +3,20 @@ title: Тип ресурса iosMobileAppIdentifier
 description: Идентификатор приложения для iOS.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5e9305963654356c56bff31f6ffb9f97129f4980
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: eb0eaade90c88cc553072f30dd36c42db4f44513
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922790"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30249965"
 ---
 # <a name="iosmobileappidentifier-resource-type"></a>Тип ресурса iosMobileAppIdentifier
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Идентификатор приложения для iOS.
+
 
 Наследуется от [mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)
 
@@ -26,6 +27,7 @@ ms.locfileid: "27922790"
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

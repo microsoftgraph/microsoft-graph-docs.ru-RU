@@ -1,15 +1,15 @@
 ---
 title: Управление доступом на основе ролей в Microsoft Intune
-description: 'Управление доступом на основе ролей в Intune определяет, кто может выполнять действия с объектами Intune и вносить изменения в управляемые приложения, устройства и сведения о пользователях.   '
+description: Перечисляет API Microsoft Graph для конечных точек Intune (REST), которые определяют управление доступом на основе ролей (RBAC) для организации клиента и управляют им.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 4cdc5e875f698646288258fc225ad77f8c4c2ba8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 24280426585014f5e397dab39daa71f8930b26c4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395750"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160678"
 ---
 # <a name="role-based-access-control-in-microsoft-intune"></a>Управление доступом на основе ролей в Microsoft Intune
 
@@ -21,7 +21,7 @@ ms.locfileid: "29395750"
 
 Следующие ресурсы Graph помогут в управлении доступом на основе ролей в Intune:
 
-- [Устройства и приложения управления, назначенных сведения о роли](intune-rbac-deviceandappmanagementassignedroledetails.md)
+- [Данные назначенной роли для управления устройствами и приложениями](intune-rbac-deviceandappmanagementassignedroledetails.md)
 - [Назначение роли управления устройствами и приложениями](intune-rbac-deviceandappmanagementroleassignment.md)
 - [Определение роли управления устройствами и приложениями](intune-rbac-deviceandappmanagementroledefinition.md)
 - [Действие ресурса](intune-rbac-resourceaction.md)

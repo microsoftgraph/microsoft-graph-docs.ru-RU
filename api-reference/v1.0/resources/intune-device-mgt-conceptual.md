@@ -4,12 +4,12 @@ description: ''
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3d665b70f812a18f840ce43a029fe0729d454745
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4c8f6676647405e8186e9d27466266f6690e2cd1
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980645"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250070"
 ---
 # <a name="device-management-in-microsoft-intune"></a>Управление устройствами в Microsoft Intune
 
@@ -26,14 +26,13 @@ ms.locfileid: "27980645"
 - [Удаление пользователя из результата действия над общим устройством Apple](intune-devices-deleteuserfromsharedappledeviceactionresult.md)
 - [Обнаруженное приложение](intune-devices-detectedapp.md)
 - [Результат действия над устройством](intune-devices-deviceactionresult.md)
-- [Причина сбоя устройства подачи заявок](intune-troubleshooting-deviceenrollmentfailurereason.md)
-- [Тип регистрации устройства](intune-devices-deviceenrollmenttype.md)
+- [Причина сбоя регистрации устройства](intune-troubleshooting-deviceenrollmentfailurereason.md)
 - [Сводка по состоянию доступа к Exchange для устройств](intune-devices-deviceexchangeaccessstatesummary.md)
 - [Геолокация устройств](intune-devices-devicegeolocation.md)
 - [Состояние подтверждения работоспособности устройства](intune-devices-devicehealthattestationstate.md)
-- [Состояние доступа устройства управления exchange](intune-devices-devicemanagementexchangeaccessstate.md)
-- [Устройство управления exchange доступа состояние причине](intune-devices-devicemanagementexchangeaccessstatereason.md)
-- [Состояния подписки управления устройства](intune-devices-devicemanagementsubscriptionstate.md)
+- [Состояние доступа к Exchange для управления устройствами](intune-devices-devicemanagementexchangeaccessstate.md)
+- [Причина состояния доступа к Exchange для управления устройствами](intune-devices-devicemanagementexchangeaccessstatereason.md)
+- [Состояние подписки на управление устройствами](intune-devices-devicemanagementsubscriptionstate.md)
 - [Событие устранения проблем с управлением устройствами](intune-troubleshooting-devicemanagementtroubleshootingevent.md)
 - [Сводка по операционной системе устройства](intune-devices-deviceoperatingsystemsummary.md)
 - [Состояние регистрации устройства](intune-devices-deviceregistrationstate.md)
@@ -42,12 +41,12 @@ ms.locfileid: "27980645"
 - [Результат действия "Поиск устройства"](intune-devices-locatedeviceactionresult.md)
 - [Управляемое устройство](intune-devices-manageddevice.md)
 - [Обзор управляемых устройств](intune-devices-manageddeviceoverview.md)
-- [Управляемый тип устройства владельцем](intune-devices-manageddeviceownertype.md)
-- [Управляемые устройства партнера состояние работоспособности](intune-devices-manageddevicepartnerreportedhealthstate.md)
+- [Тип владельца управляемого устройства](intune-devices-manageddeviceownertype.md)
+- [Указанное состояние работоспособности партнера по управляемым устройствам](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Тип агента управления](intune-devices-managementagenttype.md)
 - [Шаблон сообщения уведомления](intune-notification-notificationmessagetemplate.md)
-- [Шаблон уведомления для фирменной настройки параметров](intune-notification-notificationtemplatebrandingoptions.md)
-- [Состояние на использование доски удаленный помощник](intune-remoteassistance-remoteassistanceonboardingstatus.md)
+- [Параметры фирменной символики для шаблона уведомления](intune-notification-notificationtemplatebrandingoptions.md)
+- [Состояние подключения удаленного помощника](intune-remoteassistance-remoteassistanceonboardingstatus.md)
 - [Партнерская служба удаленного помощника](intune-remoteassistance-remoteassistancepartner.md)
 - [Результат действия "Удаленная блокировка"](intune-devices-remotelockactionresult.md)
 - [Результат действия "Сброс секретного кода"](intune-devices-resetpasscodeactionresult.md)

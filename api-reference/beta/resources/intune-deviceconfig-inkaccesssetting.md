@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления inkAccessSetting
-description: Значения для параметра InkWorkspaceAccess.
-localization_priority: Normal
+title: тип перечисления Инкакцесссеттинг
+description: Значения параметра Инкворкспацеакцесс.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3637a6a0e5ab585193a1690325649a259071afa7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1920884b884c36b09b7bd4f196198229cabf374a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395491"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143871"
 ---
-# <a name="inkaccesssetting-enum-type"></a>Тип перечисления inkAccessSetting
+# <a name="inkaccesssetting-enum-type"></a>тип перечисления Инкакцесссеттинг
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значения для параметра InkWorkspaceAccess.
+Значения параметра Инкворкспацеакцесс.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроено.|
-|enabled|1|Включено.|
-|Этот параметр отключен|2|Отключено.|
+|notConfigured|нуль|Не настроен.|
+|enabled|1,1|Доступ.|
+|активирован|2|Активирован.|
 
 
 

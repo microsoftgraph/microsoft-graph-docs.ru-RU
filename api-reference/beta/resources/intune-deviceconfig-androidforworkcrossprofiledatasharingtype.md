@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления androidForWorkCrossProfileDataSharingType
-description: Android работы для кросс-совместное использование типа данных профилей.
-localization_priority: Normal
+title: тип перечисления Андроидфорворккросспрофиледаташарингтипе
+description: Тип общего доступа к данным для Android для работы с несколькими профилями.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a6b1aa7e9eb4f5a041469b3670d954394580b9cf
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7b9e27525b774678f0ff77d3d73f89b739f32918
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399978"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162169"
 ---
-# <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>Тип перечисления androidForWorkCrossProfileDataSharingType
+# <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидфорворккросспрофиледаташарингтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Android работы для кросс-совместное использование типа данных профилей.
+Тип общего доступа к данным для Android для работы с несколькими профилями.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|preventAny|1|Запретить все общего доступа.|
-|allowPersonalToWork|2|Разрешить запрос от личного профиля для работы профиля общего доступа к данным.|
-|noRestrictions|3|Отсутствуют ограничения на общий доступ.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|Превентани|1,1|Запретите общий доступ.|
+|Алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
+|Ограничения|4|Нет ограничений на общий доступ.|
 
 
 

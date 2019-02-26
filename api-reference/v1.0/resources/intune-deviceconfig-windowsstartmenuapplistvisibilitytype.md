@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления windowsStartMenuAppListVisibilityType
-description: Тип видимости списка приложения меню Пуск.
+title: тип перечисления Виндовсстартменуапплиствисибилититипе
+description: Тип отображения списка приложений меню "Пуск".
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: aaec41f28e14b4f14019bf62ef15db82baa5dbd5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 5df3350a0d1cda4d4b6d160025675a9485b1b882
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27940192"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252093"
 ---
-# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>Тип перечисления windowsStartMenuAppListVisibilityType
+# <a name="windowsstartmenuapplistvisibilitytype-enum-type"></a>тип перечисления Виндовсстартменуапплиствисибилититипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип видимости списка приложения меню Пуск.
+Тип отображения списка приложений меню "Пуск".
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Определенные пользователем. Значение по умолчанию.|
-|Свернуть|1|Сверните список приложения в меню Пуск.|
-|удалить|2|Удаляет список приложения из меню «Пуск».|
-|disableSettingsApp|4|Отключает соответствующий переключателя (свернуть или удалить) в окне параметров приложения.|
+|UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
+|свертываются|1,1|Свертывание списка приложений в меню "Пуск".|
+|удалить|2|Полностью удаляет список приложений из меню "Пуск".|
+|Дисаблесеттингсапп|4|Отключает соответствующий переключатель (сворачивать или удалить) в приложении "Параметры".|
 
 
 

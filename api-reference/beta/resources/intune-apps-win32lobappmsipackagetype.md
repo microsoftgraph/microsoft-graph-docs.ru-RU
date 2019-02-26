@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления win32LobAppMsiPackageType
-description: Указывает тип пакета MSI Win32LobApp.
-localization_priority: Normal
+title: тип перечисления win32LobAppMsiPackageType
+description: Указывает тип пакета для MSI Win32LobApp.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ec9245330f323ae6d52d46059643c6352f511d7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 637c694eda2bb46d869b3f7aadd40b469879468e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404689"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172767"
 ---
-# <a name="win32lobappmsipackagetype-enum-type"></a>Тип перечисления win32LobAppMsiPackageType
+# <a name="win32lobappmsipackagetype-enum-type"></a>тип перечисления win32LobAppMsiPackageType
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Указывает тип пакета MSI Win32LobApp.
+Указывает тип пакета для MSI Win32LobApp.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|perMachine|0|Указывает пакет приложения для компьютера.|
-|perUser|1|Указывает пакет приложения пользователя.|
-|dualPurpose|2|Указывает пакет в окне приложения.|
+|Пермачине|нуль|Указывает пакет приложений для компьютера.|
+|perUser|1,1|Указывает на пользовательский пакет приложения.|
+|Дуалпурпосе|2|Указывает пакет приложений с двумя целями.|
 
 
 

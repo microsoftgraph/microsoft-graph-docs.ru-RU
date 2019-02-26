@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса managedAppOperation
 description: Представляет операцию, примененную к регистрации приложения.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb72c4bf8cf7f2a4a55790087c3d46746c46a84a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5fb8ad24a86822b657e4f0239f78ab8f08656ee4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29424660"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30162211"
 ---
 # <a name="managedappoperation-resource-type"></a>Тип ресурса managedAppOperation
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет операцию, примененную к регистрации приложения.
 
@@ -23,8 +23,8 @@ ms.locfileid: "29424660"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список объектов List managedAppOperation](../api/intune-mam-managedappoperation-list.md)|Коллекция [managedAppOperation](../resources/intune-mam-managedappoperation.md)|Список свойств и связей объектов [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
-|[Получение объекта managedAppOperation](../api/intune-mam-managedappoperation-get.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|Чтение свойств и связей объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
-|[Создание объекта managedAppOperation](../api/intune-mam-managedappoperation-create.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|Создание объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
+|[Получение объекта managedAppOperation](../api/intune-mam-managedappoperation-get.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md);|Чтение свойств и связей объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
+|[Создание объекта managedAppOperation](../api/intune-mam-managedappoperation-create.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md);|Создание объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
 |[Удаление объекта managedAppOperation](../api/intune-mam-managedappoperation-delete.md)|Нет|Удаляет объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
 |[Обновление объекта managedAppOperation](../api/intune-mam-managedappoperation-update.md)|[managedAppOperation](../resources/intune-mam-managedappoperation.md)|Обновление свойств объекта [managedAppOperation](../resources/intune-mam-managedappoperation.md).|
 
@@ -38,7 +38,7 @@ ms.locfileid: "29424660"
 |version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
-Нет
+None
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

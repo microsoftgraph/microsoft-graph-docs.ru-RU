@@ -1,44 +1,44 @@
 ---
-title: Тип ресурса mobileAppInstallSummary
-description: Содержит свойства для установки сведениям о мобильных приложений.
-localization_priority: Normal
+title: Тип ресурса Мобилеаппинсталлсуммари
+description: Содержит свойства для сводки установки мобильного приложения.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a2bd7c30c1b00e83731766bcd80f9a9fafd8e8b7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 9747d53c56f9e505b61e1fa38bf5abdc27d14e42
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416715"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150766"
 ---
-# <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса mobileAppInstallSummary
+# <a name="mobileappinstallsummary-resource-type"></a>Тип ресурса Мобилеаппинсталлсуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для установки сведениям о мобильных приложений.
+Содержит свойства для сводки установки мобильного приложения.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Чтение свойства и связи объекта [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
-|[Обновление mobileAppInstallSummary](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Обновление свойства объекта [mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md) .|
+|[Получение Мобилеаппинсталлсуммари](../api/intune-apps-mobileappinstallsummary-get.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Чтение свойств и связей объекта [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) .|
+|[Обновление Мобилеаппинсталлсуммари](../api/intune-apps-mobileappinstallsummary-update.md)|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Обновление свойств объекта [мобилеаппинсталлсуммари](../resources/intune-apps-mobileappinstallsummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|installedDeviceCount|Int32|Количество устройств, которые были успешно установлены этого приложения.|
+|installedDeviceCount|Int32|Количество устройств, на которых успешно установлено это приложение.|
 |failedDeviceCount|Int32|Количество устройств, которые не удалось установить это приложение.|
-|notApplicableDeviceCount|Int32|Количество устройств, которые не применимы для этого приложения.|
-|notInstalledDeviceCount|Int32|Количество устройств, для которого не установлено приложение.|
-|pendingInstallDeviceCount|Int32|Количество устройств, которые были уведомлены для установки этого приложения.|
-|installedUserCount|Int32|Число пользователей, чьи устройств успешно для установки этого приложения.|
-|failedUserCount|Int32|Число пользователей, имеющих 1 или другие устройства, который не удалось установить это приложение.|
-|notApplicableUserCount|Int32|Число пользователей, которых устройства не все для этого приложения.|
-|notInstalledUserCount|Int32|Число пользователей, которые имеют 1 или более устройства, на которых не установлено приложение.|
-|pendingInstallUserCount|Int32|Число пользователей, имеющих 1 или другие устройства, уведомлены для установки этого приложения и 0 устройств со сбоями.|
+|notApplicableDeviceCount|Int32|Количество устройств, неприменимых к этому приложению.|
+|notInstalledDeviceCount|Int32|Количество устройств, на которых не установлено это приложение.|
+|Пендингинсталлдевицекаунт|Int32|Количество устройств, которые были уведомлены об установке этого приложения.|
+|installedUserCount|Int32|Количество пользователей, чьи устройства успешно выполнили установку этого приложения.|
+|failedUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не удалось установить это приложение.|
+|notApplicableUserCount|Int32|Количество пользователей, чьи устройства были неприменимы к этому приложению.|
+|notInstalledUserCount|Int32|Количество пользователей с 1 или больше устройств, которые не установили это приложение.|
+|Пендингинсталлусеркаунт|Int32|Количество пользователей с 1 или больше устройств, которые были уведомлены об установке этого приложения и имеют 0 устройств с ошибками.|
 
 ## <a name="relationships"></a>Отношения
 Нет

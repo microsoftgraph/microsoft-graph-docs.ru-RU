@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления appleSubjectNameFormat
+title: тип перечисления Апплесубжектнамеформат
 description: Параметры формата имени субъекта для устройств Apple.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b90588b9b1317ba08d5c14f3921d6310e35a8b31
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 4f58d1005e2b558e36572afffec1995c6b671e24
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415077"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155596"
 ---
-# <a name="applesubjectnameformat-enum-type"></a>Тип перечисления appleSubjectNameFormat
+# <a name="applesubjectnameformat-enum-type"></a>тип перечисления Апплесубжектнамеформат
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры формата имени субъекта для устройств Apple.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|_ общего _ имени|0|Общее имя.|
-|commonNameAsEmail|1|Общее имя по электронной почте.|
-|custom|2|Формат имени настраиваемой темы.|
-|commonNameIncludingEmail|3|Общее имя, включая электронной почты.|
-|commonNameAsIMEI|5|Общее имя как IMEI.|
-|commonNameAsSerialNumber|6|Общее имя как серийный номер.|
+|Коммоннаме|нуль|Общее имя.|
+|Коммоннамеасемаил|1,1|Общее имя как электронная почта.|
+|custom|2|Настраиваемый формат имени субъекта.|
+|Коммоннамеинклудинжемаил|4|Общее имя, включая электронную почту.|
+|Коммоннамеасимеи|17:00|Общее имя в виде IMEI.|
+|Коммоннамеассериалнумбер|6|Общее имя в виде порядкового номера.|
 
 
 

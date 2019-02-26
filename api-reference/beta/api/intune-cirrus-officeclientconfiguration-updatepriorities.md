@@ -1,25 +1,25 @@
 ---
 title: Действие updatePriorities
-description: Обновление политики приоритетов.
+description: Обновление приоритетов политики.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: a78ec2801522354709643dfdd88da0e6dd9756c8
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29412977"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154994"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление политики приоритетов.
+Обновление приоритетов политики.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -51,8 +51,8 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|officeConfigurationPolicyIds|Коллекция String|Список идентификаторов политики настройки office|
-|officeConfigurationPriorities|Коллекция Int32|Список приоритетов настройки office|
+|Оффицеконфигуратионполициидс|Коллекция строк|Список идентификаторов политик конфигурации Office|
+|Оффицеконфигуратионприоритиес|Коллекция Int32|Список приоритетов конфигурации Office|
 
 
 
@@ -79,7 +79,7 @@ Content-length: 143
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

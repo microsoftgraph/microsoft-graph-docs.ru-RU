@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса mobileAppSupportedDeviceType
+title: Тип ресурса Мобилеаппсуппортеддевицетипе
 description: Свойства устройства
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c01691b3f6fcb2ed5838c1c9103c99ad6fbe792f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 76b3ca431bc68f93144a33dd8c5e8e5f036764a0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399754"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140581"
 ---
-# <a name="mobileappsupporteddevicetype-resource-type"></a>Тип ресурса mobileAppSupportedDeviceType
+# <a name="mobileappsupporteddevicetype-resource-type"></a>Тип ресурса Мобилеаппсуппортеддевицетипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Свойства устройства
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|type|[deviceType](../resources/intune-shared-devicetype.md)|Тип устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise` , `blackberry`, `palm`, `unknown`.|
-|minimumOperatingSystemVersion|String|Минимальная версия операционной системы|
-|maximumOperatingSystemVersion|String|Максимальная версия ОС|
+|type|[deviceType](../resources/intune-shared-devicetype.md)|Тип устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
+|Минимумоператингсистемверсион|String|Минимальная версия ОС|
+|Максимумоператингсистемверсион|String|Максимальная версия ОС|
 
 ## <a name="relationships"></a>Отношения
 Нет

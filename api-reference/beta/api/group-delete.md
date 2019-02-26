@@ -1,25 +1,26 @@
 ---
-title: Удаление группы
-description: Удаляет группу.
+title: Delete Group — API Microsoft Graph
+description: Описывает метод Delete ресурса Group (Entity) API Microsoft Graph (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 349900cffa4b0df1763e1ed8b8213ce81ec27351
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 836f2c647fd9894a7d39bba80e5f15f3f11ef81f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529966"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255866"
 ---
 # <a name="delete-group"></a>Удаление группы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет группу.
+Удаляет группу.  
 
-При удалении группы элемент добавляется [удаленных элементов](../resources/directory.md). Группа будет храниться в удаленных элементов до 30 дней. Группы могут быть полностью восстановлены из удаленных элементов во время в течение 30 дней. Через 30 дней после удаленных элементов без возможности восстановления, удаляются.
+После удаления группы Office 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По исТечении этого времени они безвозвратно удаляются.  Дополнительные сведения см. в разделе [deletedItems](../resources/directory.md).  Это применимо только к группам Office 365.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -29,24 +30,30 @@ ms.locfileid: "29529966"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /groups/{id}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
+
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-#### <a name="request"></a>Запрос
+
+### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -56,8 +63,9 @@ DELETE /groups/{id}
 DELETE https://graph.microsoft.com/beta/groups/{id}
 ```
 
-#### <a name="response"></a>Ответ
-Ниже приведен пример отклика. 
+### <a name="response"></a>Отклик
+
+Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
   "truncated": true

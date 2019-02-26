@@ -1,25 +1,25 @@
 ---
-title: Обновление advancedThreatProtectionOnboardingStateSummary
-description: Обновление свойства объекта advancedThreatProtectionOnboardingStateSummary.
-localization_priority: Normal
+title: Обновление Адванцедсреатпротектиононбоардингстатесуммари
+description: Обновление свойств объекта Адванцедсреатпротектиононбоардингстатесуммари.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a94e5b0abee3d369148c2301942a1196ef9010c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 94d146bc9696e02e824af02732b6e22b70533535
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409281"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144858"
 ---
-# <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Обновление advancedThreatProtectionOnboardingStateSummary
+# <a name="update-advancedthreatprotectiononboardingstatesummary"></a>Обновление Адванцедсреатпротектиононбоардингстатесуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) .
+Обновление свойств объекта [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,9 +45,9 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) .
+В тексте запроса добавьте представление объекта [Адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md).
+В следующей таблице приведены свойства, необходимые при создании [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
@@ -59,12 +59,12 @@ PATCH /deviceManagement/advancedThreatProtectionOnboardingStateSummary
 |nonCompliantDeviceCount|Int32|Количество устройств, не соответствующих требованиям.|
 |errorDeviceCount|Int32|Количество устройств с ошибками.|
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
-|notAssignedDeviceCount|Int32|Число не назначенный устройств|
+|Нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [advancedThreatProtectionOnboardingStateSummary](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [адванцедсреатпротектиононбоардингстатесуммари](../resources/intune-deviceconfig-advancedthreatprotectiononboardingstatesummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

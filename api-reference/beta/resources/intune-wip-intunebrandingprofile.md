@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса intuneBrandingProfile
-description: Этот объект содержит данные, используемые в настройке уровня внешнего клиента приложения портала компании, а также веб-портала конечного пользователя.
-localization_priority: Normal
+title: Тип ресурса Интунебрандингпрофиле
+description: Эта сущность содержит данные, которые используются при настройке внешнего вида уровня клиента для приложений корпоративного портала и веб-портала конечных пользователей.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b299964627a89598c28f15dfeed8ce6e13bede8c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0f21cc97cd701f9826743475c4055aed6bafe9ca
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29411101"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144704"
 ---
-# <a name="intunebrandingprofile-resource-type"></a>Тип ресурса intuneBrandingProfile
+# <a name="intunebrandingprofile-resource-type"></a>Тип ресурса Интунебрандингпрофиле
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Этот объект содержит данные, используемые в настройке уровня внешнего клиента приложения портала компании, а также веб-портала конечного пользователя.
+Эта сущность содержит данные, которые используются при настройке внешнего вида уровня клиента для приложений корпоративного портала и веб-портала конечных пользователей.
 
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список intuneBrandingProfiles](../api/intune-wip-intunebrandingprofile-list.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) коллекции|Свойства списка и связей объектов [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Получение intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Чтение свойства и связи объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Создание intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Создание нового объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
-|[Удаление intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-delete.md)|Нет|Удаляет [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md).|
-|[Обновление intuneBrandingProfile](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Обновление свойства объекта [intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Список Интунебрандингпрофилес](../api/intune-wip-intunebrandingprofile-list.md)|Коллекция [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md)|Список свойств и связей объектов [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Получение Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-get.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Чтение свойств и связей объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Создание Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-create.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Создание нового объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
+|[Удаление Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-delete.md)|Нет|Удаляет объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md).|
+|[Обновление Интунебрандингпрофиле](../api/intune-wip-intunebrandingprofile-update.md)|[intuneBrandingProfile](../resources/intune-wip-intunebrandingprofile.md)|Обновление свойств объекта [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) .|
 |[Действие assign](../api/intune-wip-intunebrandingprofile-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Клавиша профилей|
-|Имя_профиля|String|Имя профиля|
-|profileDescription|String|Описание профиля|
-|isDefaultProfile|Логический|Представляет при использовании профиля по умолчанию.|
-|createdDateTime|DateTimeOffset|При создании BrandingProfile.|
-|lastModifiedDateTime|DateTimeOffset|Время последнего изменения BrandingProfile.|
+|id|Строка|Ключ профиля|
+|имя_профиля|String|Имя профиля|
+|Профиледескриптион|String|Описание профиля|
+|Исдефаултпрофиле|Логический|Показывает, используется ли профиль по умолчанию.|
+|createdDateTime|DateTimeOffset|При создании Брандингпрофиле.|
+|lastModifiedDateTime|DateTimeOffset|При последнем изменении Брандингпрофиле.|
 |displayName|String|Название компании или организации, которое отображается пользователям.|
 |contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
 |contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
@@ -47,16 +47,16 @@ ms.locfileid: "29411101"
 |onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
-|showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
+|showLogo|Логический|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|themeColorLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображения эмблемы, отображаемые в приложениях портала компании на темы цвет фона.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображения эмблемы, отображаемые в приложениях портала компании на светлый фон.|
-|landingPageCustomizedImage|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемая изображение, отображаемое в приложениях портал "Компания" Главная страница|
+|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на светлом фоне.|
+|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
 
 ## <a name="relationships"></a>Отношения
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
-|assignments|[intuneBrandingProfileAssignment](../resources/intune-wip-intunebrandingprofileassignment.md) коллекции|Список назначений группы для фирменной настройки профиля.|
+|assignments|Коллекция [интунебрандингпрофилеассигнмент](../resources/intune-wip-intunebrandingprofileassignment.md)|Список назначений групп для профиля фирменной символики.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

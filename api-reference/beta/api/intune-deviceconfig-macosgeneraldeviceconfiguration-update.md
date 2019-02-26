@@ -1,21 +1,21 @@
 ---
 title: Update macOSGeneralDeviceConfiguration
 description: Обновление свойств объекта macOSGeneralDeviceConfiguration.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dab8bbb23b2237be19556fc28bfb4cda2d466f4c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3626c77a3f1cb0d1bfd2a3a2aa13f19c2af958b9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29407566"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160951"
 ---
 # <a name="update-macosgeneraldeviceconfiguration"></a>Update macOSGeneralDeviceConfiguration
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [macOSGeneralDeviceConfiguration](../resources/intune-deviceconfig-macosgeneraldeviceconfiguration.md).
 
@@ -55,15 +55,15 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список областей теги для данного экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|supportsScopeTags|Логический|Указывает, поддерживает ли базовой конфигурации устройства назначения тегов области действия. Присвоение свойства ScopeTags не допускается, если это значение равно false и сущности не будут недоступны пользователям с заданной областью. Это происходит для политик прежних версий, созданные в Silverlight и можно устранить, удаление и повторное создание политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |compliantAppsList|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список приложений (разрешенных или заблокированных в зависимости от значения свойства CompliantAppListType). Эта коллекция может содержать не более 10 000 элементов.|
-|compliantAppListType|[appListType](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
-|emailInDomainSuffixes|Коллекция String|Электронный адрес без суффикса, соответствующего одной из этих строк, будет считаться не добавленным в домен.|
+|compliantAppListType|[Апплисттипе](../resources/intune-deviceconfig-applisttype.md)|Список, включенный в CompliantAppsList. Возможные значения: `none`, `appsInListCompliant`, `appsNotInListCompliant`.|
+|emailInDomainSuffixes|Коллекция строк|Электронный адрес без суффикса, соответствующего одной из этих строк, будет считаться не добавленным в домен.|
 |passwordBlockSimple|Boolean|Блокировка простых паролей.|
 |passwordExpirationDays|Int32|Количество дней до окончания срока действия пароля.|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые должен содержать пароль. Допустимые значения: от 0 до 4.|
@@ -71,33 +71,36 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |passwordMinutesOfInactivityBeforeLock|Int32|Период бездействия (в минутах), по истечении которого будет запрашиваться пароль.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Период бездействия (в минутах), по истечении которого гаснет экран.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, которые требуется блокировать.|
-|passwordRequiredType|[requiredPasswordType](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
+|passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
-|keychainBlockCloudSync|Логический|Указывает, является ли iCloud ключей синхронизации заблокированных (macOS 10.12 и более поздних версий).|
-|airPrintBlocked|Логический|Указывает, является ли AirPrint заблокированных (macOS 10.12 и более поздних версий).|
-|airPrintForceTrustedTLS|Логический|Указывает, являются ли доверенные сертификаты для печати обмена данными TLS (macOS 10.13 и более поздних версий).|
-|airPrintBlockiBeaconDiscovery|Логический|Указывает, заблокирован ли обнаружения iBeacon AirPrint принтеров. Это позволяет предотвратить ложных маяки AirPrint Bluetooth от фишинга для сетевого трафика (macOS 10.3 и более поздних версий).|
+|Кэйчаинблоккклаудсинк|Логический|Указывает, заблокирована ли синхронизация ключей iCloud для iCloud (macOS 10,12 и более поздних версий).|
+|airPrintBlocked|Логический|Указывает, заблокировано ли Аирпринт (macOS 10,12 и более поздних версий).|
+|airPrintForceTrustedTLS|Логический|Указывает, требуются ли доверенные сертификаты для обмена данными при печати TLS (macOS 10,13 и более поздних версий).|
+|airPrintBlockiBeaconDiscovery|Логический|Указывает, блокируется ли Ибеакон обнаружение принтеров Аирпринт. Это предотвращает ложные сигналы Аирпринт Bluetooth от фишинга для сетевого трафика (macOS 10,3 и более поздних версий).|
 |safariBlockAutofill|Логический|Указывает, следует ли запретить использовать автозаполнение в Safari.|
 |cameraBlocked|Логический|Указывает, следует ли запретить доступ к камере устройства.|
-|iTunesBlockMusicService|Логический|Указывает, следует ли блокировать службы музыки и вернуться музыки приложения в классическом режиме.|
-|spotlightBlockInternetResults|Логический|Указывает, следует ли запретить возвращение результатов из и поиск в Интернете в центре внимания.|
-|keyboardBlockDictation|Логический|Указывает, следует ли пользователь с помощью диктовки входные данные.|
-|definitionLookupBlocked|Логический|Указывает, следует ли блокировать определение подстановки.|
-|appleWatchBlockAutoUnlock|Логический|Указывает, является ли или чтобы запретить пользователям разблокирование их Mac с Apple Watch.|
-|iTunesBlockFileSharing|Логический|Указывает ли для блокировки файлов, из которых передаются с помощью iTunes.|
+|iTunesBlockMusicService|Логический|Указывает, следует ли заблокировать музыкальную службу и вернуть приложение "Музыка" в классический режим.|
+|spotlightBlockInternetResults|Логический|Указывает, следует ли запретить получение результатов из поиска в Интернете.|
+|keyboardBlockDictation|Логический|Указывает, следует ли запретить пользователю использовать диктовку.|
+|definitionLookupBlocked|Логический|Указывает, следует ли заблокировать Поиск определений.|
+|Апплеватчблоккаутаунлокк|Логический|Указывает, следует ли запретить пользователям разблокирование своего Mac-адреса с контрольной записью Apple.|
+|Итунесблоккфилешаринг|Логический|Указывает, следует ли запретить передачу файлов с помощью iTunes.|
 |iCloudBlockDocumentSync|Логический|Указывает, следует ли заблокировать синхронизацию документов iCloud.|
-|iCloudBlockMail|Логический|Указывает, следует ли блокировать iCloud синхронизацию почты.|
-|iCloudBlockAddressBook|Логический|Указывает, следует ли блокировать iCloud синхронизацию контактов.|
-|iCloudBlockCalendar|Логический|Указывает, следует ли блокировать iCloud из списка синхронизации календарей.|
-|iCloudBlockReminders|Логический|Указывает, следует ли блокировать iCloud синхронизацию напоминания.|
-|iCloudBlockBookmarks|Логический|Указывает, следует ли блокировать iCloud синхронизацию закладки.|
-|iCloudBlockNotes|Логический|Указывает, следует ли блокировать iCloud синхронизацию заметки.|
-|airDropBlocked|Логический|Указывает, следует ли разрешить AirDrop.|
-|passwordBlockModification|Логический|Указывает, следует ли разрешить изменения секретный код.|
+|Иклаудблоккмаил|Логический|Указывает, следует ли запретить синхронизацию почты для iCloud.|
+|Иклаудблоккаддрессбук|Логический|Указывает, следует ли запретить синхронизацию контактов с iCloud.|
+|Иклаудблокккалендар|Логический|Указывает, следует ли запретить синхронизацию календарей в iCloud.|
+|Иклаудблоккреминдерс|Логический|Указывает, следует ли запретить синхронизацию напоминаний для iCloud.|
+|Иклаудблоккбукмаркс|Логический|Указывает, следует ли блокировать синхронизацию закладок в iCloud.|
+|Иклаудблоккнотес|Логический|Указывает, следует ли запретить синхронизацию заметок в iCloud.|
+|airDropBlocked|Логический|Указывает, следует ли запретить AirDrop.|
+|Пассвордблоккмодификатион|Логический|Указывает, следует ли запретить изменение секретного кода.|
 |passwordBlockFingerprintUnlock|Boolean|Указывает, следует ли запретить разблокировку с помощью отпечатка пальца.|
-|passwordBlockAutoFill|Логический|Указывает, следует ли блокировать функцию автозаполнения паролей.|
-|passwordBlockProximityRequests|Логический|Указывает, следует ли блокировать запрашивающая пароли с рядом устройств.|
-|passwordBlockAirDropSharing|Логический|Указывает, следует ли блокировать общего доступа паролей с помощью функции AirDrop паролей.|
+|Пассвордблоккаутофилл|Логический|Указывает, следует ли заблокировать функцию автоЗаполнения паролей.|
+|Пассвордблоккпроксимитирекуестс|Логический|Указывает, следует ли запретить запрашивать пароли с ближайших устройств.|
+|Пассвордблоккаирдропшаринг|Логический|Указывает, следует ли заблокировать общий доступ к паролям с помощью функции паролей AirDrop.|
+|Софтвареупдатесенфорцедделайиндайс|Int32|Задает число дней, в течение которых обновление программного обеспечения будет делед для защищенного устройства. Допустимые значения: от 0 до 90.|
+|Софтвареупдатесфорцеделайед|Логический|Указывает, следует ли откладывать видимость обновлений программного обеспечения, когда устройство находится в защищенном режиме.|
+|Контенткачингблоккед|Логический|Указывает, следует ли запретить кэширование контента.|
 
 
 
@@ -111,7 +114,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 1870
+Content-length: 1988
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -168,7 +171,10 @@ Content-length: 1870
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true
 }
 ```
 
@@ -177,7 +183,7 @@ Content-length: 1870
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2042
+Content-Length: 2160
 
 {
   "@odata.type": "#microsoft.graph.macOSGeneralDeviceConfiguration",
@@ -237,7 +243,10 @@ Content-Length: 2042
   "passwordBlockFingerprintUnlock": true,
   "passwordBlockAutoFill": true,
   "passwordBlockProximityRequests": true,
-  "passwordBlockAirDropSharing": true
+  "passwordBlockAirDropSharing": true,
+  "softwareUpdatesEnforcedDelayInDays": 2,
+  "softwareUpdatesForceDelayed": true,
+  "contentCachingBlocked": true
 }
 ```
 

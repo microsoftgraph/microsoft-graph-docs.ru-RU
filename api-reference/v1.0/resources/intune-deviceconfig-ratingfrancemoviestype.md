@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления ratingFranceMoviesType
-description: Оценка меток во Франции кино
+title: тип перечисления Ратингфранцемовиестипе
+description: Метки оценок фильмов во Франции
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: e2445c885576e72a09bd0c70d3fb91c9ec039276
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 84099ef903c98ec565cdb60a2ac9d8b74b51123f
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942159"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250273"
 ---
-# <a name="ratingfrancemoviestype-enum-type"></a>Тип перечисления ratingFranceMoviesType
+# <a name="ratingfrancemoviestype-enum-type"></a>тип перечисления Ратингфранцемовиестипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Оценка меток во Франции кино
+Метки оценок фильмов во Франции
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|allAllowed|0|Значение по умолчанию, разрешать все содержимое кино|
-|allBlocked|1|Не разрешать любое содержимое кино|
-|agesAbove10|2|10 классификации запрещает отбора фильма для минорам в разделе 10|
-|agesAbove12|3|12 классификации запрещает отбора фильма для минорам в разделе 12|
-|agesAbove16|4|16 классификации запрещает отбора фильма для минорам в разделе 16|
-|agesAbove18|5|18 классификации запрещает блокировки минорам в разделе 18|
+|Аллалловед|нуль|Значение по умолчанию, разрешить все содержимое фильмов|
+|Аллблоккед|1,1|Не разрешать никакие видеоролики|
+|agesAbove10|2|10 классификация запрещает обблокировка пленки мелкими 10|
+|agesAbove12|4|Классификация не позволяет обменять пленку небольшими уровнями в соответствии с 12|
+|agesAbove16|4|Классификация "16" запрещает обблокировка пленки мелкими уровнями в 16|
+|agesAbove18|17:00|Категория "18" запрещает отбор незначительных элементов в 18|
 
 
 

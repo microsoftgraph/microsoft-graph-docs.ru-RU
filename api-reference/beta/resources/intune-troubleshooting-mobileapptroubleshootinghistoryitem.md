@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса mobileAppTroubleshootingHistoryItem
-description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-localization_priority: Normal
+title: Тип ресурса Мобилеапптраублешутингхисторитем
+description: Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28245267a7c05f03bedd21c8dc0de17198de213c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fbc37488f478c47b0b097c4fd8a54b09273bc5c3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29400069"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160860"
 ---
-# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Тип ресурса mobileAppTroubleshootingHistoryItem
+# <a name="mobileapptroubleshootinghistoryitem-resource-type"></a>Тип ресурса Мобилеапптраублешутингхисторитем
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
+Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала.|
+|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала.|
 
 ## <a name="relationships"></a>Отношения
 Нет

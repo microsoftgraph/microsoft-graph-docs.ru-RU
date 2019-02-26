@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления состояние действия
-description: Состояние действие на устройстве
-localization_priority: Normal
+title: тип перечисления actionState
+description: Состояние действия на устройстве
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54f9a636cb579a234097f86aba8cf4e8fb8fefd0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6d55ff0419c6178668bbee921c149c8bc797ebff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29421615"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143402"
 ---
-# <a name="actionstate-enum-type"></a>Тип перечисления состояние действия
+# <a name="actionstate-enum-type"></a>тип перечисления actionState
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние действие на устройстве
+Состояние действия на устройстве
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Не имеет состояние допустимое действие|
-|Ожидание|1|Действие находится в состоянии ожидания|
-|отменено|2|Действие было отменено.|
-|активных|3|Действие — active.|
-|done|4|Действие завершается без ошибок.|
-|failed|5|Не удалось выполнить действие|
+|Нет|нуль|Недопустимое состояние действия|
+|закончен|1,1|Ожидается действие|
+|закрыт|2|Действие отменено.|
+|ASP|4|Действие активно.|
+|done|4|Действие выполнено без ошибок.|
+|failed|17:00|Не удалось выполнить действие|
 |notSupported|6|Действие не поддерживается.|
 
 

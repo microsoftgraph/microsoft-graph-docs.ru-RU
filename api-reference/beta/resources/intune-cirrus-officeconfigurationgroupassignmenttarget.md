@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса officeConfigurationGroupAssignmentTarget
-description: Настройка клиента Office AAD группы конечного назначения.
+title: Тип ресурса Оффицеконфигуратионграупассигнменттаржет
+description: Целевой объект назначения группы AAD для группы клиентов Office.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: 411af117999498050288405874bd6b5baff5b6b5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 7a3451d4bddec96c1e21cd605b05cb34d96372ff
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422749"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153552"
 ---
-# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Тип ресурса officeConfigurationGroupAssignmentTarget
+# <a name="officeconfigurationgroupassignmenttarget-resource-type"></a>Тип ресурса Оффицеконфигуратионграупассигнменттаржет
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Настройка клиента Office AAD группы конечного назначения.
+Целевой объект назначения группы AAD для группы клиентов Office.
 
-Наследуется от [officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
+НаСледуется от [оффицеконфигуратионассигнменттаржет](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|String|Идентификатор группы AAD мы ориентация для настройки устройств.|
+|groupId|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
 
 ## <a name="relationships"></a>Отношения
 Нет

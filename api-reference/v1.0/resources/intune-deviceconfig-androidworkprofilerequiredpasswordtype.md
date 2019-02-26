@@ -1,32 +1,33 @@
 ---
-title: Тип перечисления androidWorkProfileRequiredPasswordType
-description: Android профиля рабочего требуется тип пароль.
+title: тип перечисления Андроидворкпрофилерекуиредпассвордтипе
+description: Необходимый тип пароля для рабочего профиля Android.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: cbe1eb1482e979d236c1f8bf92f687077fb189f0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: b1dbb0b7e523ea6ca3ac1be3328cf58e30d9a892
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986280"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30252940"
 ---
-# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>Тип перечисления androidWorkProfileRequiredPasswordType
+# <a name="androidworkprofilerequiredpasswordtype-enum-type"></a>тип перечисления Андроидворкпрофилерекуиредпассвордтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Android профиля рабочего требуется тип пароль.
+Необходимый тип пароля для рабочего профиля Android.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|lowSecurityBiometric|1|Биометрия низкой безопасности на основе пароль.|
-|Обязательный|2|Обязательный.|
-|atLeastNumeric|3|Требуется по крайней мере цифровой пароль.|
-|numericComplex|4|Числовой сложный пароль.|
-|atLeastAlphabetic|5|Требуется по крайней мере к буквам и цифрам пароль.|
-|atLeastAlphanumeric|6|Требуется по крайней мере буквенно-цифровой пароль.|
-|alphanumericWithSymbols|7|По крайней мере буквенно-цифровых с символы пароль.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|Ловсекуритибиометрик|1,1|Необходим пароль на основе биометрического уровня безопасности.|
+|Обязательный|2|Обязательно указывать.|
+|Атлеастнумерик|4|Необходим по крайней мере числовой пароль.|
+|Нумериккомплекс|4|Необходим числовой сложный пароль.|
+|Атлеасталфабетик|17:00|По крайней мере необходимо указать по крайней мере буквенный пароль.|
+|Атлеасталфанумерик|6|Необходимо указать по крайней мере буквенно-цифровые пароли.|
+|Алфанумериквиссимболс|7|По крайней мере буквенно-цифровые символы и пароль не требуются.|
 
 
 

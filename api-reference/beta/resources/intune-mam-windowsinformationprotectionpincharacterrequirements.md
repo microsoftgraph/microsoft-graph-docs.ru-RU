@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления windowsInformationProtectionPinCharacterRequirements
-description: Требования к ПИН-код знака
-localization_priority: Normal
+title: тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
+description: Требования к ПИН-символам
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 203f5c7d52fb72346d099949ea5880fa9b82726c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 1147f597a1c2bcaf18a29d783b42722195c79407
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29392782"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160811"
 ---
-# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>Тип перечисления windowsInformationProtectionPinCharacterRequirements
+# <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Требования к ПИН-код знака
+Требования к ПИН-символам
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notAllow|0|Не разрешать|
-|requireAtLeastOne|1|Требуется хотя бы один|
-|Разрешить|2|Разрешить любой номер|
+|notAllow|нуль|Не разрешать|
+|Рекуиреатлеастоне|1,1|Требуется хотя бы один|
+|разрешить|2|Разрешить любой номер|
 
 
 

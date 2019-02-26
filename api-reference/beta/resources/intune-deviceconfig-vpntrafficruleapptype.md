@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления vpnTrafficRuleAppType
-description: Указывает тип приложения, с которым связана правило трафика через VPN.
-localization_priority: Normal
+title: тип перечисления Впнтраффикрулеапптипе
+description: Указывает тип приложения, с которым связано правило трафика VPN.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 061cb5701830939576f5b9a649c73b4d44eada18
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb8be06a43c64dcb766da479414fcc437ee49cb9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396023"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140532"
 ---
-# <a name="vpntrafficruleapptype-enum-type"></a>Тип перечисления vpnTrafficRuleAppType
+# <a name="vpntrafficruleapptype-enum-type"></a>тип перечисления Впнтраффикрулеапптипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Указывает тип приложения, с которым связана правило трафика через VPN.
+Указывает тип приложения, с которым связано правило трафика VPN.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Правила трафика не связан с приложения.|
-|рабочий стол|1|Трафик правило связано с помощью классического приложения.|
-|Универсальные|2|Трафик правило связано с помощью универсального приложения.|
+|Нет|нуль|Правило трафика не связано с приложением.|
+|системной|1,1|Правило трафика связано с классическим приложением.|
+|Гринвич|2|Правило трафика связано с универсальным приложением.|
 
 
 

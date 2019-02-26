@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления windowsSModeConfiguration
-description: Возможные варианты для настройки режима S разблокировки
-localization_priority: Normal
+title: тип перечисления Виндовссмодеконфигуратион
+description: Возможные варианты настройки S режима разблокировки
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 858be5b3a55fbbf4454aa576785ba793f501079c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6a451108c6e55f8587317dfc43caf8bc84cca673
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415469"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144718"
 ---
-# <a name="windowssmodeconfiguration-enum-type"></a>Тип перечисления windowsSModeConfiguration
+# <a name="windowssmodeconfiguration-enum-type"></a>тип перечисления Виндовссмодеконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные варианты для настройки режима S разблокировки
+Возможные варианты настройки S режима разблокировки
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|noRestriction|0|Этот параметр удаляет все ограничения для разблокировки режим S - по умолчанию|
-|блок|1|Этот параметр, будет блокировать пользователя для разблокировки устройства из режима S|
-|Снятие блокировки|2|Этот параметр используется для открытия устройства из режима S|
+|Ограничение|нуль|Этот параметр удалит все ограничения для режима разблокировки S — значение по умолчанию|
+|блок|1,1|Этот параметр блокирует возможность пользователя разблокировать устройство в режиме S|
+|блокиру|2|Этот параметр позволяет разблокировать устройство в режиме S|
 
 
 

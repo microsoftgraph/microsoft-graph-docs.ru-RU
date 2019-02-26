@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления prereleaseFeatures
-description: Возможные значения для функции предварительного выпуска.
+title: тип перечисления prereleaseFeatures
+description: Возможные значения для предварительных версий функций.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 7e7d7a3aa6a54c063d3355f062f728462cf7031b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ed1db87b34e4a66c3800a7c10076486f547675da
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922849"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255915"
 ---
-# <a name="prereleasefeatures-enum-type"></a>Тип перечисления prereleaseFeatures
+# <a name="prereleasefeatures-enum-type"></a>тип перечисления prereleaseFeatures
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для функции предварительного выпуска.
+Возможные значения для предварительных версий функций.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|User Defined, значение по умолчанию, без цели.|
-|settingsOnly|1|Параметры только возможности.|
-|settingsAndExperimentations|2|Параметры и experimentations предварительных компонентов.|
-|notAllowed|3|Предварительные функции не допускается.|
+|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
+|Сеттингсонли|1,1|Только функции предварительной версии.|
+|Сеттингсандекспериментатионс|2|Параметры и эксперименты, которые предварительно выпускают функции.|
+|notAllowed|4|Функции предварительной версии не разрешены.|
 
 
 

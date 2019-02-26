@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType
-description: Android рабочих профилей по умолчанию приложения политики тип разрешения.
+title: тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
+description: Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5f4e3b7a01d92981b79311049fd2da46c058c0aa
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947514"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255943"
 ---
-# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>Тип перечисления androidWorkProfileDefaultAppPermissionPolicyType
+# <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Android рабочих профилей по умолчанию приложения политики тип разрешения.
+Тип политики разрешений приложений для рабочего профиля Android по умолчанию.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|строки|1|Запрос.|
-|autoGrant|2|Автоматическое предоставление.|
-|autoDeny|3|Запрещать автоматически.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|появляется|1,1|Появляется.|
+|автоПредоставление|2|Автоматическое предоставление.|
+|автоЗапрет|4|Автоматическое отклонение.|
 
 
 

@@ -1,25 +1,25 @@
 ---
-title: Получение windowsManagementAppHealthSummary
-description: Чтение свойства и связи объекта windowsManagementAppHealthSummary.
-localization_priority: Normal
+title: Получение Виндовсманажементапфеалссуммари
+description: Чтение свойств и связей объекта Виндовсманажементапфеалссуммари.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce27c42d3d3995220b9b43fa40aa8cb98c2b1f48
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 5a55031dbd3ac6eaa743ff1d42a091a65dfb5945
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29394357"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30160594"
 ---
-# <a name="get-windowsmanagementapphealthsummary"></a>Получение windowsManagementAppHealthSummary
+# <a name="get-windowsmanagementapphealthsummary"></a>Получение Виндовсманажементапфеалссуммари
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойства и связи объекта [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
+Чтение свойств и связей объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -48,10 +48,10 @@ GET /deviceAppManagement/windowsManagementApp/healthSummary
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` объект [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) и кода ответа в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

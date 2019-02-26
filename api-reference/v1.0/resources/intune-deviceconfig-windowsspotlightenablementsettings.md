@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления windowsSpotlightEnablementSettings
-description: Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
+title: тип перечисления Виндовсспотлигхтенаблементсеттингс
+description: Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 569c5df6a62326a4183bc773c48350751f7f8000
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 779db41264e2c0d499b6757fac0c1fee199c1a52
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951392"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253136"
 ---
-# <a name="windowsspotlightenablementsettings-enum-type"></a>Тип перечисления windowsSpotlightEnablementSettings
+# <a name="windowsspotlightenablementsettings-enum-type"></a>тип перечисления Виндовсспотлигхтенаблементсеттингс
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Позволяет admind ИТ установить модуль поиска по умолчанию для устройств под управлением MDM
+Позволяет ИТ для администраторов устанавливать предварительно определенную поисковую подсистему по умолчанию для устройств под управлением MDM
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|В центре внимания на экран блокировки не настроен|
-|Этот параметр отключен|1|Отключение Windows в центре внимания на экран блокировки|
-|enabled|2|Включить Windows в центре внимания на экран блокировки|
+|notConfigured|нуль|"Прожектор" на экране блокировки не настроен|
+|активирован|1,1|Отключить Windows Spotlight на экране блокировки|
+|enabled|2|Включить Windows Spotlight на экране блокировки|
 
 
 

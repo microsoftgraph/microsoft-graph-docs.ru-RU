@@ -1,25 +1,25 @@
 ---
-title: Создание officeClientConfigurationAssignment
-description: Добавьте целевой группе существующую политику.
+title: Создание Оффицеклиентконфигуратионассигнмент
+description: Добавление целевой группы в существующую политику.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: c1f09ba2dfabf85501120cb2099373e5664deb08
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3e646b70ea3e18a79aaee5b4129e54da833c5c4a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425199"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30155267"
 ---
-# <a name="create-officeclientconfigurationassignment"></a>Создание officeClientConfigurationAssignment
+# <a name="create-officeclientconfigurationassignment"></a>Создание Оффицеклиентконфигуратионассигнмент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Добавьте целевой группе существующую политику.
+Добавление целевой группы в существующую политику.
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,24 +40,24 @@ POST /officeConfiguration/clientConfigurations/{key}/assignments
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
+|Authorization|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта officeClientConfigurationAssignment.
+В тексте запроса добавьте представление объекта Оффицеклиентконфигуратионассигнмент в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания officeClientConfigurationAssignment.
+В следующей таблице приведены свойства, необходимые при создании Оффицеклиентконфигуратионассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор OfficeConfigurationAssignment.|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Назначение целевой, определенные администратором.|
+|id|String|Идентификатор объекта Оффицеконфигуратионассигнмент.|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Целевое назначение, заданное администратором.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 Created` код ответа и объект [officeClientConfigurationAssignment](../resources/intune-cirrus-officeclientconfigurationassignment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 Created` код отклика и объект [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

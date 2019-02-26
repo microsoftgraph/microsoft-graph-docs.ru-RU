@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления applicationGuardEnabledOptions
-description: Возможные значения для ApplicationGuardEnabledOptions
-localization_priority: Normal
+title: тип перечисления Аппликатионгуарденабледоптионс
+description: Возможные значения для Аппликатионгуарденабледоптионс
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cee8edec888f8a604f3346cc727aa541a284f3ec
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 0954121ca183cf6f189206820770bea57fcb88af
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29402134"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142639"
 ---
-# <a name="applicationguardenabledoptions-enum-type"></a>Тип перечисления applicationGuardEnabledOptions
+# <a name="applicationguardenabledoptions-enum-type"></a>тип перечисления Аппликатионгуарденабледоптионс
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для ApplicationGuardEnabledOptions
+Возможные значения для Аппликатионгуарденабледоптионс
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен|
-|enabledForEdge|1|Включен для пограничного сервера|
-|enabledForOffice|2|Включен для Office|
-|enabledForEdgeAndOffice|3|Включен для пограничных серверов и Office|
+|notConfigured|нуль|Не настроено|
+|Енабледфоредже|1,1|Включено для поГраничного сервера|
+|Енабледфороффице|2|Включено для Office|
+|Енабледфореджеандоффице|4|Включено для поГраничной и Office|
 
 
 

@@ -1,36 +1,36 @@
 ---
 title: Тип ресурса win32LobAppFileSystemDetection
-description: Содержит путь файла или папки для обнаружения приложений Win32
-localization_priority: Normal
+description: Содержит путь к файлу или папке для обнаружения приложения Win32
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5fb4e66ce17fb7a964f3210244e2f3a7027c578
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c8145e6196b6537eec4142d4412a11234913df7c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29415231"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157514"
 ---
 # <a name="win32lobappfilesystemdetection-resource-type"></a>Тип ресурса win32LobAppFileSystemDetection
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит путь файла или папки для обнаружения приложений Win32
+Содержит путь к файлу или папке для обнаружения приложения Win32
 
 
-Наследуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
+НаСледуется от [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|path|String|Путь файла или папки для обнаружения Win32 строки из бизнес-приложения|
-|fileOrFolderName|String|Имя файла или папки для обнаружения Win32 строки из бизнес-приложения|
-|check32BitOn64System|Логический|Значение, указывающее, является ли этот файл или папку для проверки 32-разрядная версия приложения на 64-разрядных систем|
-|detectionType|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Обнаружение тип файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
-|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файла или fodler. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
-|detectionValue|String|Значение обнаружения файла или папки|
+|path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
+|Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
+|check32BitOn64System|Логический|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
+|Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`.|
+|operator|[win32LobAppDetectionOperator](../resources/intune-apps-win32lobappdetectionoperator.md)|Оператор для обнаружения файлов или фодлер. Возможные значения: `notConfigured`, `equal`, `notEqual`, `greaterThan`, `greaterThanOrEqual`, `lessThan`, `lessThanOrEqual`.|
+|Детектионвалуе|String|Значение обнаружения файлов или папок|
 
 ## <a name="relationships"></a>Отношения
 Нет
