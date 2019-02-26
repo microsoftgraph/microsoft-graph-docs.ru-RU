@@ -1,23 +1,23 @@
 ---
 title: Тип ресурса updateWindowsDeviceAccountActionParameter
 description: Н/Д
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c305d3b2257d0e359f715fec9175bac2451308f
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 81c401509315535e163b3a32224ee3a91ac67a15
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399670"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145152"
 ---
 # <a name="updatewindowsdeviceaccountactionparameter-resource-type"></a>Тип ресурса updateWindowsDeviceAccountActionParameter
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -25,9 +25,9 @@ ms.locfileid: "29399670"
 |deviceAccount|[windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|Н/Д|
 |passwordRotationEnabled|Boolean|Н/Д|
 |calendarSyncEnabled|Boolean|Н/Д|
-|deviceAccountEmail|String|Н/Д|
+|deviceAccountEmail|String|Пока не задокументировано.|
 |exchangeServer|String|Н/Д|
-|sessionInitiationProtocalAddress|String|Н/Д|
+|sessionInitiationProtocalAddress|String|Пока не задокументировано.|
 
 ## <a name="relationships"></a>Связи
 Нет

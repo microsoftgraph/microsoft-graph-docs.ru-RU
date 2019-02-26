@@ -1,25 +1,25 @@
 ---
-title: Обновление userAppInstallStatus
-description: Обновление свойства объекта userAppInstallStatus.
-localization_priority: Normal
+title: Обновление Усераппинсталлстатус
+description: Обновление свойств объекта Усераппинсталлстатус.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 237e9f28f36fb25ea5ddad46f5a6a75242767c6b
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c3baa0d23be3b004fe32049cee0efe08e8f7d36d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29413838"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144907"
 ---
-# <a name="update-userappinstallstatus"></a>Обновление userAppInstallStatus
+# <a name="update-userappinstallstatus"></a>Обновление Усераппинсталлстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .
+Обновление свойств объекта [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,15 +45,15 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) .
+В тексте запроса добавьте представление объекта [Усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md).
+В следующей таблице приведены свойства, необходимые при создании [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|String|Имя участника-пользователя.|
+|userPrincipalName|Строка|Имя участника пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
@@ -61,7 +61,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/userStatuses/{userAppInstall
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) объекта в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -82,7 +82,7 @@ Content-length: 239
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 ``` http
 HTTP/1.1 200 OK

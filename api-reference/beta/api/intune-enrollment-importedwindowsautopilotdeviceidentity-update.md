@@ -1,21 +1,21 @@
 ---
 title: Обновление importedWindowsAutopilotDeviceIdentity
 description: Обновляет свойства объекта importedWindowsAutopilotDeviceIdentity.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5fa7434a5ee9e5218e6bfd40bad6b6497b5f4b47
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: af2e3e113c96f5b91a2c617f1c3d34dd26274bf0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29404787"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144249"
 ---
 # <a name="update-importedwindowsautopilotdeviceidentity"></a>Обновление importedWindowsAutopilotDeviceIdentity
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновляет свойства объекта [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md).
 
@@ -52,9 +52,9 @@ PATCH /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedW
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
-|orderIdentifier|Строка|Номер заказа устройства Windows Autopilot.|
-|serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
+|id|String|GUID объекта|
+|orderIdentifier|String|Номер заказа устройства Windows Autopilot.|
+|serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|

@@ -1,25 +1,25 @@
 ---
-title: Создание mobileAppIntentAndState
-description: Создание нового объекта mobileAppIntentAndState.
-localization_priority: Normal
+title: Создание Мобилеаппинтентандстате
+description: Создание нового объекта Мобилеаппинтентандстате.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94aeb4551fac9534cf2c88a973b0d37fd49aa048
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: ea3c005473c4979515ab7810a4ce1b16a06ebabf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399824"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145936"
 ---
-# <a name="create-mobileappintentandstate"></a>Создание mobileAppIntentAndState
+# <a name="create-mobileappintentandstate"></a>Создание Мобилеаппинтентандстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) .
+Создание нового объекта [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,21 +45,21 @@ POST /users/{usersId}/mobileAppIntentAndStates
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта mobileAppIntentAndState.
+В тексте запроса добавьте представление объекта Мобилеаппинтентандстате в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания mobileAppIntentAndState.
+В следующей таблице приведены свойства, необходимые при создании Мобилеаппинтентандстате.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|UUID объекта.|
 |managedDeviceIdentifier|String|Идентификатор события, созданный или полученный службой Intune.|
 |userId|String|Идентификатор пользователя, который пытался зарегистрировать устройство.|
-|mobileAppList|[mobileAppIntentAndStateDetail](../resources/intune-troubleshooting-mobileappintentandstatedetail.md) коллекции|Список целей полезных данных и состояния для клиента.|
+|Мобилеапплист|Коллекция [мобилеаппинтентандстатедетаил](../resources/intune-troubleshooting-mobileappintentandstatedetail.md)|Список целей и состояний полезных данных для клиента.|
 
 
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [mobileAppIntentAndState](../resources/intune-troubleshooting-mobileappintentandstate.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [мобилеаппинтентандстате](../resources/intune-troubleshooting-mobileappintentandstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса win32LobApp
 description: Содержит свойства и наследуемые свойства для приложений Win32.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 869c16e35148142106b7eb85ab57bf835c05bb67
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c272f9b74e099d9a5112ab558a75596763a33b1b
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420054"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145026"
 ---
 # <a name="win32lobapp-resource-type"></a>Тип ресурса win32LobApp
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Содержит свойства и наследуемые свойства для приложений Win32.
 
@@ -25,18 +25,18 @@ ms.locfileid: "29420054"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список win32LobApps](../api/intune-apps-win32lobapp-list.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md) коллекции|Свойства списка и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
-|[Получение win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Чтение свойства и связи объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
+|[Список win32LobApps](../api/intune-apps-win32lobapp-list.md)|Коллекция [win32LobApp](../resources/intune-apps-win32lobapp.md)|Список свойств и связей объектов [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
+|[Получение win32LobApp](../api/intune-apps-win32lobapp-get.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Чтение свойств и связей объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 |[Создание win32LobApp](../api/intune-apps-win32lobapp-create.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Создание нового объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
-|[Удаление win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Нет|Удаляет [win32LobApp](../resources/intune-apps-win32lobapp.md).|
-|[Обновление win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Обновление свойства объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
+|[Удаление win32LobApp](../api/intune-apps-win32lobapp-delete.md)|Нет|Удаляет объект [win32LobApp](../resources/intune-apps-win32lobapp.md).|
+|[Обновление win32LobApp](../api/intune-apps-win32lobapp-update.md)|[win32LobApp](../resources/intune-apps-win32lobapp.md)|Обновление свойств объекта [win32LobApp](../resources/intune-apps-win32lobapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|String|Название приложения, которое предоставил или импортировал администратор. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|description|String|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|description|Строка|Описание приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publisher|String|Издатель приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Большой значок, который отображается в сведениях о приложении и используется для отправки значка. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -47,35 +47,35 @@ ms.locfileid: "29420054"
 |owner|String|Владелец приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |developer|String|Разработчик приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Примечания к приложению. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|uploadState|Int32|Состояние передачи. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publishingState|[mobileAppPublishingState](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
-|isAssigned|Логический|Значение, указывающее, назначена ли приложение по крайней мере одной группы. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тег области для данного мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|uploadState|Int32|Состояние отправки. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
+|isAssigned|Логический|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
-|installCommandLine|String|Командной строки для установки этого приложения|
-|uninstallCommandLine|String|В командной строке команду Удалить это приложение|
+|Инсталлкоммандлине|String|Командная строка для установки приложения|
+|Унинсталлкоммандлине|String|Командная строка для удаления приложения|
 |applicableArchitectures|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Архитектура Windows, которая поддерживается этим приложением. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
 |minimumSupportedOperatingSystem|[windowsMinimumOperatingSystem](../resources/intune-apps-windowsminimumoperatingsystem.md)|Значение, указывающее минимальную применимую версию операционной системы.|
-|minimumFreeDiskSpaceInMB|Int32|Значение для минимального свободного дискового пространства, которая требуется для установки этого приложения.|
-|minimumMemoryInMB|Int32|Значение для минимального физической памяти, которая требуется для установки этого приложения.|
-|minimumNumberOfProcessors|Int32|Значение для минимальное число процессоров которая требуется для установки этого приложения.|
-|minimumCpuSpeedInMHz|Int32|Значение для минимальная скорость ЦП, которая требуется для установки этого приложения.|
-|detectionRules|[win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md) коллекции|Определение правил для обнаружения Win32 строки из бизнес-приложения.|
-|installExperience|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Опыт установки для этого приложения.|
-|returnCodes|[win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md) коллекции|Коды возврата для записи поведение при установке.|
-|msiInformation|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Подробности MSI, если это приложение Win32 представляет собой приложение MSI.|
-|setupFilePath|String|Относительный путь к файлу программы установки в пакете зашифрованные Win32LobApp.|
+|Минимумфридискспацеинмб|Int32|Минимальное свободное место на диске, необходимое для установки этого приложения.|
+|Минимуммеморинмб|Int32|Значение минимальной физической памяти, необходимой для установки этого приложения.|
+|Минимумнумберофпроцессорс|Int32|Значение минимального числа процессоров, необходимое для установки этого приложения.|
+|Минимумкпуспидинмхз|Int32|Значение минимальной скорости ЦП, необходимое для установки этого приложения.|
+|Детектионрулес|Коллекция [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для определения бизнес-приложения Win32 (LoB).|
+|Инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
+|Ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
+|Мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
+|Сетупфилепас|String|Относительный путь к файлу установки в зашифрованном пакете Win32LobApp.|
 
 ## <a name="relationships"></a>Отношения
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция объектов [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Сводка по установке мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|deviceStatuses|[mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|userStatuses|[userAppInstallStatus](../resources/intune-apps-userappinstallstatus.md) коллекции|Список состояния установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |contentVersions|Коллекция объектов [mobileAppContent](../resources/intune-apps-mobileappcontent.md)|Список версий содержимого для этого приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -160,7 +160,9 @@ ms.locfileid: "29420054"
     "productVersion": "String",
     "upgradeCode": "String",
     "requiresReboot": true,
-    "packageType": "String"
+    "packageType": "String",
+    "productName": "String",
+    "publisher": "String"
   },
   "setupFilePath": "String"
 }
