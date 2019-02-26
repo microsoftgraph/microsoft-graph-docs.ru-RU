@@ -1,32 +1,33 @@
 ---
-title: Тип перечисления deviceRegistrationState
+title: тип перечисления deviceRegistrationState
 description: Состояние регистрации устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 5b0048385930166de3329ef9d407f5ddd19efc77
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 4b3bee7ab56f07dd6f27c20c771329ba84edbb19
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911898"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264136"
 ---
-# <a name="deviceregistrationstate-enum-type"></a><span data-ttu-id="6c468-103">Тип перечисления deviceRegistrationState</span><span class="sxs-lookup"><span data-stu-id="6c468-103">deviceRegistrationState enum type</span></span>
+# <a name="deviceregistrationstate-enum-type"></a><span data-ttu-id="f6173-103">тип перечисления deviceRegistrationState</span><span class="sxs-lookup"><span data-stu-id="f6173-103">deviceRegistrationState enum type</span></span>
 
-> <span data-ttu-id="6c468-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="6c468-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f6173-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f6173-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="6c468-105">Состояние регистрации устройства.</span><span class="sxs-lookup"><span data-stu-id="6c468-105">Device registration status.</span></span>
-## <a name="members"></a><span data-ttu-id="6c468-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="6c468-106">Members</span></span>
-|<span data-ttu-id="6c468-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="6c468-107">Member</span></span>|<span data-ttu-id="6c468-108">Значение</span><span class="sxs-lookup"><span data-stu-id="6c468-108">Value</span></span>|<span data-ttu-id="6c468-109">Описание</span><span class="sxs-lookup"><span data-stu-id="6c468-109">Description</span></span>|
+<span data-ttu-id="f6173-105">Состояние регистрации устройства.</span><span class="sxs-lookup"><span data-stu-id="f6173-105">Device registration status.</span></span>
+
+## <a name="members"></a><span data-ttu-id="f6173-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="f6173-106">Members</span></span>
+|<span data-ttu-id="f6173-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="f6173-107">Member</span></span>|<span data-ttu-id="f6173-108">Значение</span><span class="sxs-lookup"><span data-stu-id="f6173-108">Value</span></span>|<span data-ttu-id="f6173-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f6173-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="6c468-110">notRegistered</span><span class="sxs-lookup"><span data-stu-id="6c468-110">notRegistered</span></span>|<span data-ttu-id="6c468-111">0</span><span class="sxs-lookup"><span data-stu-id="6c468-111">0</span></span>|<span data-ttu-id="6c468-112">Устройство не зарегистрирован.</span><span class="sxs-lookup"><span data-stu-id="6c468-112">The device is not registered.</span></span>|
-|<span data-ttu-id="6c468-113">зарегистрирована</span><span class="sxs-lookup"><span data-stu-id="6c468-113">registered</span></span>|<span data-ttu-id="6c468-114">2</span><span class="sxs-lookup"><span data-stu-id="6c468-114">2</span></span>|<span data-ttu-id="6c468-115">Зарегистрированные устройства.</span><span class="sxs-lookup"><span data-stu-id="6c468-115">The device is registered.</span></span>|
-|<span data-ttu-id="6c468-116">отменено</span><span class="sxs-lookup"><span data-stu-id="6c468-116">revoked</span></span>|<span data-ttu-id="6c468-117">3</span><span class="sxs-lookup"><span data-stu-id="6c468-117">3</span></span>|<span data-ttu-id="6c468-118">Устройства был заблокирован, очистить или не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="6c468-118">The device has been blocked, wiped or retired.</span></span>|
-|<span data-ttu-id="6c468-119">keyConflict</span><span class="sxs-lookup"><span data-stu-id="6c468-119">keyConflict</span></span>|<span data-ttu-id="6c468-120">4</span><span class="sxs-lookup"><span data-stu-id="6c468-120">4</span></span>|<span data-ttu-id="6c468-121">Устройство имеет конфликты ключа.</span><span class="sxs-lookup"><span data-stu-id="6c468-121">The device has a key conflict.</span></span>|
-|<span data-ttu-id="6c468-122">approvalPending</span><span class="sxs-lookup"><span data-stu-id="6c468-122">approvalPending</span></span>|<span data-ttu-id="6c468-123">5</span><span class="sxs-lookup"><span data-stu-id="6c468-123">5</span></span>|<span data-ttu-id="6c468-124">Устройство ожидает утверждения.</span><span class="sxs-lookup"><span data-stu-id="6c468-124">The device is pending approval.</span></span>|
-|<span data-ttu-id="6c468-125">certificateReset</span><span class="sxs-lookup"><span data-stu-id="6c468-125">certificateReset</span></span>|<span data-ttu-id="6c468-126">6</span><span class="sxs-lookup"><span data-stu-id="6c468-126">6</span></span>|<span data-ttu-id="6c468-127">Устройство сертификат был изменен.</span><span class="sxs-lookup"><span data-stu-id="6c468-127">The device certificate has been reset.</span></span>|
-|<span data-ttu-id="6c468-128">notRegisteredPendingEnrollment</span><span class="sxs-lookup"><span data-stu-id="6c468-128">notRegisteredPendingEnrollment</span></span>|<span data-ttu-id="6c468-129">7</span><span class="sxs-lookup"><span data-stu-id="6c468-129">7</span></span>|<span data-ttu-id="6c468-130">Устройства не зарегистрирована и ожидающие заявок через Интернет.</span><span class="sxs-lookup"><span data-stu-id="6c468-130">The device is not registered and pending enrollment.</span></span>|
-|<span data-ttu-id="6c468-131">unknown</span><span class="sxs-lookup"><span data-stu-id="6c468-131">unknown</span></span>|<span data-ttu-id="6c468-132">8</span><span class="sxs-lookup"><span data-stu-id="6c468-132">8</span></span>|<span data-ttu-id="6c468-133">Состояние регистрации устройства неизвестно.</span><span class="sxs-lookup"><span data-stu-id="6c468-133">The device registration status is unknown.</span></span>|
+|<span data-ttu-id="f6173-110">Нотрегистеред</span><span class="sxs-lookup"><span data-stu-id="f6173-110">notRegistered</span></span>|<span data-ttu-id="f6173-111">нуль</span><span class="sxs-lookup"><span data-stu-id="f6173-111">0</span></span>|<span data-ttu-id="f6173-112">Устройство не зарегистрировано.</span><span class="sxs-lookup"><span data-stu-id="f6173-112">The device is not registered.</span></span>|
+|<span data-ttu-id="f6173-113">охраняем</span><span class="sxs-lookup"><span data-stu-id="f6173-113">registered</span></span>|<span data-ttu-id="f6173-114">2</span><span class="sxs-lookup"><span data-stu-id="f6173-114">2</span></span>|<span data-ttu-id="f6173-115">Устройство зарегистрировано.</span><span class="sxs-lookup"><span data-stu-id="f6173-115">The device is registered.</span></span>|
+|<span data-ttu-id="f6173-116">отозван</span><span class="sxs-lookup"><span data-stu-id="f6173-116">revoked</span></span>|<span data-ttu-id="f6173-117">4</span><span class="sxs-lookup"><span data-stu-id="f6173-117">3</span></span>|<span data-ttu-id="f6173-118">Устройство заблокировано, очищено или снято.</span><span class="sxs-lookup"><span data-stu-id="f6173-118">The device has been blocked, wiped or retired.</span></span>|
+|<span data-ttu-id="f6173-119">Кэйконфликт</span><span class="sxs-lookup"><span data-stu-id="f6173-119">keyConflict</span></span>|<span data-ttu-id="f6173-120">4</span><span class="sxs-lookup"><span data-stu-id="f6173-120">4</span></span>|<span data-ttu-id="f6173-121">У устройства есть конфликт ключей.</span><span class="sxs-lookup"><span data-stu-id="f6173-121">The device has a key conflict.</span></span>|
+|<span data-ttu-id="f6173-122">Аппровалпендинг</span><span class="sxs-lookup"><span data-stu-id="f6173-122">approvalPending</span></span>|<span data-ttu-id="f6173-123">17:00</span><span class="sxs-lookup"><span data-stu-id="f6173-123">5</span></span>|<span data-ttu-id="f6173-124">Устройство ожидает утверждения.</span><span class="sxs-lookup"><span data-stu-id="f6173-124">The device is pending approval.</span></span>|
+|<span data-ttu-id="f6173-125">Цертификатересет</span><span class="sxs-lookup"><span data-stu-id="f6173-125">certificateReset</span></span>|<span data-ttu-id="f6173-126">6</span><span class="sxs-lookup"><span data-stu-id="f6173-126">6</span></span>|<span data-ttu-id="f6173-127">Сертификат устройства сброшен.</span><span class="sxs-lookup"><span data-stu-id="f6173-127">The device certificate has been reset.</span></span>|
+|<span data-ttu-id="f6173-128">Нотрегистередпендинженроллмент</span><span class="sxs-lookup"><span data-stu-id="f6173-128">notRegisteredPendingEnrollment</span></span>|<span data-ttu-id="f6173-129">7</span><span class="sxs-lookup"><span data-stu-id="f6173-129">7</span></span>|<span data-ttu-id="f6173-130">Устройство не зарегистрировано и находится в состоянии ожидания регистрации.</span><span class="sxs-lookup"><span data-stu-id="f6173-130">The device is not registered and pending enrollment.</span></span>|
+|<span data-ttu-id="f6173-131">unknown</span><span class="sxs-lookup"><span data-stu-id="f6173-131">unknown</span></span>|<span data-ttu-id="f6173-132">8,5</span><span class="sxs-lookup"><span data-stu-id="f6173-132">8</span></span>|<span data-ttu-id="f6173-133">Состояние регистрации устройства неизвестно.</span><span class="sxs-lookup"><span data-stu-id="f6173-133">The device registration status is unknown.</span></span>|
 
 
 

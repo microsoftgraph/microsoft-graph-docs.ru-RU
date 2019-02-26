@@ -1,30 +1,31 @@
 ---
-title: Тип перечисления installState
-description: Возможные значения для состояние установки.
+title: тип перечисления Инсталлстате
+description: Возможные значения для состояния установки.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b50fb44c2af31efff81f2dd7097505f71bc791d5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 1672872dfe355bdd034d829a1d3b387fc9dadbcb
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947554"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30264367"
 ---
-# <a name="installstate-enum-type"></a><span data-ttu-id="d0def-103">Тип перечисления installState</span><span class="sxs-lookup"><span data-stu-id="d0def-103">installState enum type</span></span>
+# <a name="installstate-enum-type"></a><span data-ttu-id="666af-103">тип перечисления Инсталлстате</span><span class="sxs-lookup"><span data-stu-id="666af-103">installState enum type</span></span>
 
-> <span data-ttu-id="d0def-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="d0def-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="666af-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="666af-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d0def-105">Возможные значения для состояние установки.</span><span class="sxs-lookup"><span data-stu-id="d0def-105">Possible values for install state.</span></span>
-## <a name="members"></a><span data-ttu-id="d0def-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="d0def-106">Members</span></span>
-|<span data-ttu-id="d0def-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="d0def-107">Member</span></span>|<span data-ttu-id="d0def-108">Значение</span><span class="sxs-lookup"><span data-stu-id="d0def-108">Value</span></span>|<span data-ttu-id="d0def-109">Описание</span><span class="sxs-lookup"><span data-stu-id="d0def-109">Description</span></span>|
+<span data-ttu-id="666af-105">Возможные значения для состояния установки.</span><span class="sxs-lookup"><span data-stu-id="666af-105">Possible values for install state.</span></span>
+
+## <a name="members"></a><span data-ttu-id="666af-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="666af-106">Members</span></span>
+|<span data-ttu-id="666af-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="666af-107">Member</span></span>|<span data-ttu-id="666af-108">Значение</span><span class="sxs-lookup"><span data-stu-id="666af-108">Value</span></span>|<span data-ttu-id="666af-109">Описание</span><span class="sxs-lookup"><span data-stu-id="666af-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d0def-110">notApplicable</span><span class="sxs-lookup"><span data-stu-id="d0def-110">notApplicable</span></span>|<span data-ttu-id="d0def-111">0</span><span class="sxs-lookup"><span data-stu-id="d0def-111">0</span></span>|<span data-ttu-id="d0def-112">Не применимо.</span><span class="sxs-lookup"><span data-stu-id="d0def-112">Not Applicable.</span></span>|
-|<span data-ttu-id="d0def-113">установлен</span><span class="sxs-lookup"><span data-stu-id="d0def-113">installed</span></span>|<span data-ttu-id="d0def-114">1</span><span class="sxs-lookup"><span data-stu-id="d0def-114">1</span></span>|<span data-ttu-id="d0def-115">Установить.</span><span class="sxs-lookup"><span data-stu-id="d0def-115">Installed.</span></span>|
-|<span data-ttu-id="d0def-116">failed</span><span class="sxs-lookup"><span data-stu-id="d0def-116">failed</span></span>|<span data-ttu-id="d0def-117">2</span><span class="sxs-lookup"><span data-stu-id="d0def-117">2</span></span>|<span data-ttu-id="d0def-118">Не удалось.</span><span class="sxs-lookup"><span data-stu-id="d0def-118">Failed.</span></span>|
-|<span data-ttu-id="d0def-119">notInstalled</span><span class="sxs-lookup"><span data-stu-id="d0def-119">notInstalled</span></span>|<span data-ttu-id="d0def-120">3</span><span class="sxs-lookup"><span data-stu-id="d0def-120">3</span></span>|<span data-ttu-id="d0def-121">Не установлен.</span><span class="sxs-lookup"><span data-stu-id="d0def-121">Not Installed.</span></span>|
-|<span data-ttu-id="d0def-122">uninstallFailed</span><span class="sxs-lookup"><span data-stu-id="d0def-122">uninstallFailed</span></span>|<span data-ttu-id="d0def-123">4</span><span class="sxs-lookup"><span data-stu-id="d0def-123">4</span></span>|<span data-ttu-id="d0def-124">Удаление не удалось.</span><span class="sxs-lookup"><span data-stu-id="d0def-124">Uninstall Failed.</span></span>|
-|<span data-ttu-id="d0def-125">unknown</span><span class="sxs-lookup"><span data-stu-id="d0def-125">unknown</span></span>|<span data-ttu-id="d0def-126">5</span><span class="sxs-lookup"><span data-stu-id="d0def-126">5</span></span>|<span data-ttu-id="d0def-127">Неизвестно.</span><span class="sxs-lookup"><span data-stu-id="d0def-127">Unknown.</span></span>|
+|<span data-ttu-id="666af-110">Нотаппликабле</span><span class="sxs-lookup"><span data-stu-id="666af-110">notApplicable</span></span>|<span data-ttu-id="666af-111">нуль</span><span class="sxs-lookup"><span data-stu-id="666af-111">0</span></span>|<span data-ttu-id="666af-112">НеПрименимо.</span><span class="sxs-lookup"><span data-stu-id="666af-112">Not Applicable.</span></span>|
+|<span data-ttu-id="666af-113">устанавлива</span><span class="sxs-lookup"><span data-stu-id="666af-113">installed</span></span>|<span data-ttu-id="666af-114">1,1</span><span class="sxs-lookup"><span data-stu-id="666af-114">1</span></span>|<span data-ttu-id="666af-115">Устанавлива.</span><span class="sxs-lookup"><span data-stu-id="666af-115">Installed.</span></span>|
+|<span data-ttu-id="666af-116">failed</span><span class="sxs-lookup"><span data-stu-id="666af-116">failed</span></span>|<span data-ttu-id="666af-117">2</span><span class="sxs-lookup"><span data-stu-id="666af-117">2</span></span>|<span data-ttu-id="666af-118">Сбоев.</span><span class="sxs-lookup"><span data-stu-id="666af-118">Failed.</span></span>|
+|<span data-ttu-id="666af-119">Нотинсталлед</span><span class="sxs-lookup"><span data-stu-id="666af-119">notInstalled</span></span>|<span data-ttu-id="666af-120">4</span><span class="sxs-lookup"><span data-stu-id="666af-120">3</span></span>|<span data-ttu-id="666af-121">Не установлено.</span><span class="sxs-lookup"><span data-stu-id="666af-121">Not Installed.</span></span>|
+|<span data-ttu-id="666af-122">Унинсталлфаилед</span><span class="sxs-lookup"><span data-stu-id="666af-122">uninstallFailed</span></span>|<span data-ttu-id="666af-123">4</span><span class="sxs-lookup"><span data-stu-id="666af-123">4</span></span>|<span data-ttu-id="666af-124">Не удалось выполнить удаление.</span><span class="sxs-lookup"><span data-stu-id="666af-124">Uninstall Failed.</span></span>|
+|<span data-ttu-id="666af-125">unknown</span><span class="sxs-lookup"><span data-stu-id="666af-125">unknown</span></span>|<span data-ttu-id="666af-126">17:00</span><span class="sxs-lookup"><span data-stu-id="666af-126">5</span></span>|<span data-ttu-id="666af-127">Найден.</span><span class="sxs-lookup"><span data-stu-id="666af-127">Unknown.</span></span>|
 
 
 
