@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления mobileAppPublishingState
+title: тип перечисления Мобилеапппублишингстате
 description: Указывает состояние публикации приложения.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 270dd416422c0f0b4dfc320937c749f4fe13c766
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 0b0823576dd1792b01193d600cdebbe171b47052
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937763"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263394"
 ---
-# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="872f7-103">Тип перечисления mobileAppPublishingState</span><span class="sxs-lookup"><span data-stu-id="872f7-103">mobileAppPublishingState enum type</span></span>
+# <a name="mobileapppublishingstate-enum-type"></a><span data-ttu-id="9cdd5-103">тип перечисления Мобилеапппублишингстате</span><span class="sxs-lookup"><span data-stu-id="9cdd5-103">mobileAppPublishingState enum type</span></span>
 
-> <span data-ttu-id="872f7-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="872f7-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="9cdd5-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9cdd5-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="872f7-105">Указывает состояние публикации приложения.</span><span class="sxs-lookup"><span data-stu-id="872f7-105">Indicates the publishing state of an app.</span></span>
-## <a name="members"></a><span data-ttu-id="872f7-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="872f7-106">Members</span></span>
-|<span data-ttu-id="872f7-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="872f7-107">Member</span></span>|<span data-ttu-id="872f7-108">Значение</span><span class="sxs-lookup"><span data-stu-id="872f7-108">Value</span></span>|<span data-ttu-id="872f7-109">Описание</span><span class="sxs-lookup"><span data-stu-id="872f7-109">Description</span></span>|
+<span data-ttu-id="9cdd5-105">Указывает состояние публикации приложения.</span><span class="sxs-lookup"><span data-stu-id="9cdd5-105">Indicates the publishing state of an app.</span></span>
+
+## <a name="members"></a><span data-ttu-id="9cdd5-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="9cdd5-106">Members</span></span>
+|<span data-ttu-id="9cdd5-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="9cdd5-107">Member</span></span>|<span data-ttu-id="9cdd5-108">Значение</span><span class="sxs-lookup"><span data-stu-id="9cdd5-108">Value</span></span>|<span data-ttu-id="9cdd5-109">Описание</span><span class="sxs-lookup"><span data-stu-id="9cdd5-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="872f7-110">notPublished</span><span class="sxs-lookup"><span data-stu-id="872f7-110">notPublished</span></span>|<span data-ttu-id="872f7-111">0</span><span class="sxs-lookup"><span data-stu-id="872f7-111">0</span></span>|<span data-ttu-id="872f7-112">Приложение не публикуется.</span><span class="sxs-lookup"><span data-stu-id="872f7-112">The app is not yet published.</span></span>|
-|<span data-ttu-id="872f7-113">обработка</span><span class="sxs-lookup"><span data-stu-id="872f7-113">processing</span></span>|<span data-ttu-id="872f7-114">1</span><span class="sxs-lookup"><span data-stu-id="872f7-114">1</span></span>|<span data-ttu-id="872f7-115">Приложение ожидает обработки на стороне службы.</span><span class="sxs-lookup"><span data-stu-id="872f7-115">The app is pending service-side processing.</span></span>|
-|<span data-ttu-id="872f7-116">опубликованный</span><span class="sxs-lookup"><span data-stu-id="872f7-116">published</span></span>|<span data-ttu-id="872f7-117">2</span><span class="sxs-lookup"><span data-stu-id="872f7-117">2</span></span>|<span data-ttu-id="872f7-118">Приложение будет опубликовано.</span><span class="sxs-lookup"><span data-stu-id="872f7-118">The app is published.</span></span>|
+|<span data-ttu-id="9cdd5-110">Нотпублишед</span><span class="sxs-lookup"><span data-stu-id="9cdd5-110">notPublished</span></span>|<span data-ttu-id="9cdd5-111">нуль</span><span class="sxs-lookup"><span data-stu-id="9cdd5-111">0</span></span>|<span data-ttu-id="9cdd5-112">Приложение еще не опубликовано.</span><span class="sxs-lookup"><span data-stu-id="9cdd5-112">The app is not yet published.</span></span>|
+|<span data-ttu-id="9cdd5-113">обработка</span><span class="sxs-lookup"><span data-stu-id="9cdd5-113">processing</span></span>|<span data-ttu-id="9cdd5-114">1,1</span><span class="sxs-lookup"><span data-stu-id="9cdd5-114">1</span></span>|<span data-ttu-id="9cdd5-115">Приложение ожидает обработки на стороне службы.</span><span class="sxs-lookup"><span data-stu-id="9cdd5-115">The app is pending service-side processing.</span></span>|
+|<span data-ttu-id="9cdd5-116">опубликованный</span><span class="sxs-lookup"><span data-stu-id="9cdd5-116">published</span></span>|<span data-ttu-id="9cdd5-117">2</span><span class="sxs-lookup"><span data-stu-id="9cdd5-117">2</span></span>|<span data-ttu-id="9cdd5-118">Приложение публикуется.</span><span class="sxs-lookup"><span data-stu-id="9cdd5-118">The app is published.</span></span>|
 
 
 

@@ -3,29 +3,30 @@ title: Обновление объекта onPremisesConditionalAccessSettings
 description: Обновляет свойства объекта onPremisesConditionalAccessSettings.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: ef2b2f012ab48b1ca034651e9d30284517f119d1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 52b1d4f688a2a925d5679e80720911067abe3fc2
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932107"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30261511"
 ---
-# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="141b6-103">Обновление объекта onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="141b6-103">Update onPremisesConditionalAccessSettings</span></span>
+# <a name="update-onpremisesconditionalaccesssettings"></a><span data-ttu-id="d5752-103">Обновление объекта onPremisesConditionalAccessSettings</span><span class="sxs-lookup"><span data-stu-id="d5752-103">Update onPremisesConditionalAccessSettings</span></span>
 
-> <span data-ttu-id="141b6-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="141b6-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="d5752-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d5752-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="141b6-105">Обновляет свойства объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="141b6-105">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
-## <a name="prerequisites"></a><span data-ttu-id="141b6-106">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="141b6-106">Prerequisites</span></span>
-<span data-ttu-id="141b6-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="141b6-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="d5752-105">Обновляет свойства объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="d5752-105">Update the properties of a [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-|<span data-ttu-id="141b6-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="141b6-109">Permission type</span></span>|<span data-ttu-id="141b6-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="141b6-110">Permissions (from most to least privileged)</span></span>|
+## <a name="prerequisites"></a><span data-ttu-id="d5752-106">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="d5752-106">Prerequisites</span></span>
+<span data-ttu-id="d5752-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="d5752-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+
+|<span data-ttu-id="d5752-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d5752-109">Permission type</span></span>|<span data-ttu-id="d5752-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="d5752-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="141b6-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="141b6-111">Delegated (work or school account)</span></span>|<span data-ttu-id="141b6-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="141b6-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="141b6-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="141b6-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="141b6-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="141b6-114">Not supported.</span></span>|
-|<span data-ttu-id="141b6-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="141b6-115">Application</span></span>|<span data-ttu-id="141b6-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="141b6-116">Not supported.</span></span>|
+|<span data-ttu-id="d5752-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d5752-111">Delegated (work or school account)</span></span>|<span data-ttu-id="d5752-112">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d5752-112">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="d5752-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d5752-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="d5752-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5752-114">Not supported.</span></span>|
+|<span data-ttu-id="d5752-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d5752-115">Application</span></span>|<span data-ttu-id="d5752-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d5752-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="141b6-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="141b6-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="d5752-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d5752-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -34,34 +35,35 @@ ms.locfileid: "27932107"
 PATCH /deviceManagement/conditionalAccessSettings
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="141b6-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="141b6-118">Request headers</span></span>
-|<span data-ttu-id="141b6-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="141b6-119">Header</span></span>|<span data-ttu-id="141b6-120">Значение</span><span class="sxs-lookup"><span data-stu-id="141b6-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="d5752-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d5752-118">Request headers</span></span>
+|<span data-ttu-id="d5752-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d5752-119">Header</span></span>|<span data-ttu-id="d5752-120">Значение</span><span class="sxs-lookup"><span data-stu-id="d5752-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="141b6-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="141b6-121">Authorization</span></span>|<span data-ttu-id="141b6-122">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="141b6-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="141b6-123">Accept</span><span class="sxs-lookup"><span data-stu-id="141b6-123">Accept</span></span>|<span data-ttu-id="141b6-124">application/json</span><span class="sxs-lookup"><span data-stu-id="141b6-124">application/json</span></span>|
+|<span data-ttu-id="d5752-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="d5752-121">Authorization</span></span>|<span data-ttu-id="d5752-122">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="d5752-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="d5752-123">Accept</span><span class="sxs-lookup"><span data-stu-id="d5752-123">Accept</span></span>|<span data-ttu-id="d5752-124">application/json</span><span class="sxs-lookup"><span data-stu-id="d5752-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="141b6-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="141b6-125">Request body</span></span>
-<span data-ttu-id="141b6-126">В теле запроса добавьте представление объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="141b6-126">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="d5752-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d5752-125">Request body</span></span>
+<span data-ttu-id="d5752-126">В теле запроса добавьте представление объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d5752-126">In the request body, supply a JSON representation for the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object.</span></span>
 
-<span data-ttu-id="141b6-127">Ниже показаны свойства, которые необходимо указывать при создании объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="141b6-127">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
+<span data-ttu-id="d5752-127">Ниже показаны свойства, которые необходимо указывать при создании объекта [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span><span class="sxs-lookup"><span data-stu-id="d5752-127">The following table shows the properties that are required when you create the [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md).</span></span>
 
-|<span data-ttu-id="141b6-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="141b6-128">Property</span></span>|<span data-ttu-id="141b6-129">Тип</span><span class="sxs-lookup"><span data-stu-id="141b6-129">Type</span></span>|<span data-ttu-id="141b6-130">Описание</span><span class="sxs-lookup"><span data-stu-id="141b6-130">Description</span></span>|
+|<span data-ttu-id="d5752-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="d5752-128">Property</span></span>|<span data-ttu-id="d5752-129">Тип</span><span class="sxs-lookup"><span data-stu-id="d5752-129">Type</span></span>|<span data-ttu-id="d5752-130">Описание</span><span class="sxs-lookup"><span data-stu-id="d5752-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="141b6-131">id</span><span class="sxs-lookup"><span data-stu-id="141b6-131">id</span></span>|<span data-ttu-id="141b6-132">Строка</span><span class="sxs-lookup"><span data-stu-id="141b6-132">String</span></span>|<span data-ttu-id="141b6-133">Н/Д</span><span class="sxs-lookup"><span data-stu-id="141b6-133">Not yet documented</span></span>|
-|<span data-ttu-id="141b6-134">enabled</span><span class="sxs-lookup"><span data-stu-id="141b6-134">enabled</span></span>|<span data-ttu-id="141b6-135">Boolean</span><span class="sxs-lookup"><span data-stu-id="141b6-135">Boolean</span></span>|<span data-ttu-id="141b6-136">Указывает, включен ли в этой организации условный доступ к локальной среде</span><span class="sxs-lookup"><span data-stu-id="141b6-136">Indicates if on premises conditional access is enabled for this organization</span></span>|
-|<span data-ttu-id="141b6-137">includedGroups</span><span class="sxs-lookup"><span data-stu-id="141b6-137">includedGroups</span></span>|<span data-ttu-id="141b6-138">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="141b6-138">Guid collection</span></span>|<span data-ttu-id="141b6-139">Группы пользователей, для которых включается условный доступ к локальной среде.</span><span class="sxs-lookup"><span data-stu-id="141b6-139">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="141b6-140">У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.</span><span class="sxs-lookup"><span data-stu-id="141b6-140">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
-|<span data-ttu-id="141b6-141">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="141b6-141">excludedGroups</span></span>|<span data-ttu-id="141b6-142">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="141b6-142">Guid collection</span></span>|<span data-ttu-id="141b6-143">Группы пользователей, на которые не распространяется условный доступ к локальной среде.</span><span class="sxs-lookup"><span data-stu-id="141b6-143">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="141b6-144">На всех пользователей из этих группах не будет распространяться политика условного доступа.</span><span class="sxs-lookup"><span data-stu-id="141b6-144">All users in these groups will be exempt from the conditional access policy.</span></span>|
-|<span data-ttu-id="141b6-145">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="141b6-145">overrideDefaultRule</span></span>|<span data-ttu-id="141b6-146">Boolean</span><span class="sxs-lookup"><span data-stu-id="141b6-146">Boolean</span></span>|<span data-ttu-id="141b6-147">Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.</span><span class="sxs-lookup"><span data-stu-id="141b6-147">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
+|<span data-ttu-id="d5752-131">id</span><span class="sxs-lookup"><span data-stu-id="d5752-131">id</span></span>|<span data-ttu-id="d5752-132">String</span><span class="sxs-lookup"><span data-stu-id="d5752-132">String</span></span>|<span data-ttu-id="d5752-133">Н/Д</span><span class="sxs-lookup"><span data-stu-id="d5752-133">Not yet documented</span></span>|
+|<span data-ttu-id="d5752-134">enabled</span><span class="sxs-lookup"><span data-stu-id="d5752-134">enabled</span></span>|<span data-ttu-id="d5752-135">Логический</span><span class="sxs-lookup"><span data-stu-id="d5752-135">Boolean</span></span>|<span data-ttu-id="d5752-136">Указывает, включен ли в этой организации условный доступ к локальной среде</span><span class="sxs-lookup"><span data-stu-id="d5752-136">Indicates if on premises conditional access is enabled for this organization</span></span>|
+|<span data-ttu-id="d5752-137">includedGroups</span><span class="sxs-lookup"><span data-stu-id="d5752-137">includedGroups</span></span>|<span data-ttu-id="d5752-138">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="d5752-138">Guid collection</span></span>|<span data-ttu-id="d5752-139">Группы пользователей, для которых включается условный доступ к локальной среде.</span><span class="sxs-lookup"><span data-stu-id="d5752-139">User groups that will be targeted by on premises conditional access.</span></span> <span data-ttu-id="d5752-140">У всех пользователей в этих группах должны быть управляемые мобильные устройства, соответствующие требованиям для доступа к почте.</span><span class="sxs-lookup"><span data-stu-id="d5752-140">All users in these groups will be required to have mobile device managed and compliant for mail access.</span></span>|
+|<span data-ttu-id="d5752-141">excludedGroups</span><span class="sxs-lookup"><span data-stu-id="d5752-141">excludedGroups</span></span>|<span data-ttu-id="d5752-142">Коллекция объектов Guid</span><span class="sxs-lookup"><span data-stu-id="d5752-142">Guid collection</span></span>|<span data-ttu-id="d5752-143">Группы пользователей, на которые не распространяется условный доступ к локальной среде.</span><span class="sxs-lookup"><span data-stu-id="d5752-143">User groups that will be exempt by on premises conditional access.</span></span> <span data-ttu-id="d5752-144">На всех пользователей из этих группах не будет распространяться политика условного доступа.</span><span class="sxs-lookup"><span data-stu-id="d5752-144">All users in these groups will be exempt from the conditional access policy.</span></span>|
+|<span data-ttu-id="d5752-145">overrideDefaultRule</span><span class="sxs-lookup"><span data-stu-id="d5752-145">overrideDefaultRule</span></span>|<span data-ttu-id="d5752-146">Boolean</span><span class="sxs-lookup"><span data-stu-id="d5752-146">Boolean</span></span>|<span data-ttu-id="d5752-147">Указывает, следует ли переопределять правило доступа по умолчанию при разрешении устройства, чтобы обеспечить предоставление доступа.</span><span class="sxs-lookup"><span data-stu-id="d5752-147">Override the default access rule when allowing a device to ensure access is granted.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="141b6-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="141b6-148">Response</span></span>
-<span data-ttu-id="141b6-149">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="141b6-149">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="d5752-148">Отклик</span><span class="sxs-lookup"><span data-stu-id="d5752-148">Response</span></span>
+<span data-ttu-id="d5752-149">В случае успешного выполнения этот метод возвращает код ответа `200 OK` и обновленный объект [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="d5752-149">If successful, this method returns a `200 OK` response code and an updated [onPremisesConditionalAccessSettings](../resources/intune-onboarding-onpremisesconditionalaccesssettings.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="141b6-150">Пример</span><span class="sxs-lookup"><span data-stu-id="141b6-150">Example</span></span>
-### <a name="request"></a><span data-ttu-id="141b6-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="141b6-151">Request</span></span>
-<span data-ttu-id="141b6-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="141b6-152">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="d5752-150">Пример</span><span class="sxs-lookup"><span data-stu-id="d5752-150">Example</span></span>
+
+### <a name="request"></a><span data-ttu-id="d5752-151">Запрос</span><span class="sxs-lookup"><span data-stu-id="d5752-151">Request</span></span>
+<span data-ttu-id="d5752-152">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d5752-152">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/conditionalAccessSettings
 Content-type: application/json
@@ -80,8 +82,8 @@ Content-length: 275
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="141b6-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="141b6-153">Response</span></span>
-<span data-ttu-id="141b6-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="141b6-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="d5752-153">Ответ</span><span class="sxs-lookup"><span data-stu-id="d5752-153">Response</span></span>
+<span data-ttu-id="d5752-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="d5752-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

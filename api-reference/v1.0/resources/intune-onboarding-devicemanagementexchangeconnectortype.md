@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления deviceManagementExchangeConnectorType
+title: тип перечисления Девицеманажементексчанжеконнектортипе
 description: Тип соединителя Exchange.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8e9e50a4475ca2d57b3f38567703046588d4fb3c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c358832db83e5f5b3e1fb0f5457f480d21ded996
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986434"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30263562"
 ---
-# <a name="devicemanagementexchangeconnectortype-enum-type"></a><span data-ttu-id="a3e6c-103">Тип перечисления deviceManagementExchangeConnectorType</span><span class="sxs-lookup"><span data-stu-id="a3e6c-103">deviceManagementExchangeConnectorType enum type</span></span>
+# <a name="devicemanagementexchangeconnectortype-enum-type"></a><span data-ttu-id="79127-103">тип перечисления Девицеманажементексчанжеконнектортипе</span><span class="sxs-lookup"><span data-stu-id="79127-103">deviceManagementExchangeConnectorType enum type</span></span>
 
-> <span data-ttu-id="a3e6c-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="a3e6c-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="79127-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="79127-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="a3e6c-105">Тип соединителя Exchange.</span><span class="sxs-lookup"><span data-stu-id="a3e6c-105">The type of Exchange Connector.</span></span>
-## <a name="members"></a><span data-ttu-id="a3e6c-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="a3e6c-106">Members</span></span>
-|<span data-ttu-id="a3e6c-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="a3e6c-107">Member</span></span>|<span data-ttu-id="a3e6c-108">Значение</span><span class="sxs-lookup"><span data-stu-id="a3e6c-108">Value</span></span>|<span data-ttu-id="a3e6c-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a3e6c-109">Description</span></span>|
+<span data-ttu-id="79127-105">Тип соединителя Exchange.</span><span class="sxs-lookup"><span data-stu-id="79127-105">The type of Exchange Connector.</span></span>
+
+## <a name="members"></a><span data-ttu-id="79127-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="79127-106">Members</span></span>
+|<span data-ttu-id="79127-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="79127-107">Member</span></span>|<span data-ttu-id="79127-108">Значение</span><span class="sxs-lookup"><span data-stu-id="79127-108">Value</span></span>|<span data-ttu-id="79127-109">Описание</span><span class="sxs-lookup"><span data-stu-id="79127-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="a3e6c-110">onPremises</span><span class="sxs-lookup"><span data-stu-id="a3e6c-110">onPremises</span></span>|<span data-ttu-id="a3e6c-111">0</span><span class="sxs-lookup"><span data-stu-id="a3e6c-111">0</span></span>|<span data-ttu-id="a3e6c-112">Подключается к локальной среды Exchange.</span><span class="sxs-lookup"><span data-stu-id="a3e6c-112">Connects to on-premises Exchange Environment.</span></span>|
-|<span data-ttu-id="a3e6c-113">размещенные</span><span class="sxs-lookup"><span data-stu-id="a3e6c-113">hosted</span></span>|<span data-ttu-id="a3e6c-114">1</span><span class="sxs-lookup"><span data-stu-id="a3e6c-114">1</span></span>|<span data-ttu-id="a3e6c-115">Подключается к среде Exchange несколькими клиентами O365</span><span class="sxs-lookup"><span data-stu-id="a3e6c-115">Connects to O365 multi-tenant Exchange environment</span></span>|
-|<span data-ttu-id="a3e6c-116">serviceToService</span><span class="sxs-lookup"><span data-stu-id="a3e6c-116">serviceToService</span></span>|<span data-ttu-id="a3e6c-117">2</span><span class="sxs-lookup"><span data-stu-id="a3e6c-117">2</span></span>|<span data-ttu-id="a3e6c-118">Служба Intune подключается непосредственно в среду Exchange несколькими клиентами O365</span><span class="sxs-lookup"><span data-stu-id="a3e6c-118">Intune Service connects directly to O365 multi-tenant Exchange environment</span></span>|
-|<span data-ttu-id="a3e6c-119">выделенные</span><span class="sxs-lookup"><span data-stu-id="a3e6c-119">dedicated</span></span>|<span data-ttu-id="a3e6c-120">3</span><span class="sxs-lookup"><span data-stu-id="a3e6c-120">3</span></span>|<span data-ttu-id="a3e6c-121">Подключается к среде Exchange выделенных O365.</span><span class="sxs-lookup"><span data-stu-id="a3e6c-121">Connects to O365 Dedicated Exchange environment.</span></span>|
+|<span data-ttu-id="79127-110">onPremises</span><span class="sxs-lookup"><span data-stu-id="79127-110">onPremises</span></span>|<span data-ttu-id="79127-111">нуль</span><span class="sxs-lookup"><span data-stu-id="79127-111">0</span></span>|<span data-ttu-id="79127-112">ПодКлючается к локальной среде Exchange.</span><span class="sxs-lookup"><span data-stu-id="79127-112">Connects to on-premises Exchange Environment.</span></span>|
+|<span data-ttu-id="79127-113">хост</span><span class="sxs-lookup"><span data-stu-id="79127-113">hosted</span></span>|<span data-ttu-id="79127-114">1,1</span><span class="sxs-lookup"><span data-stu-id="79127-114">1</span></span>|<span data-ttu-id="79127-115">ПодКлючается к среде Exchange с несколькими клиентами Office 365</span><span class="sxs-lookup"><span data-stu-id="79127-115">Connects to O365 multi-tenant Exchange environment</span></span>|
+|<span data-ttu-id="79127-116">Сервицетосервице</span><span class="sxs-lookup"><span data-stu-id="79127-116">serviceToService</span></span>|<span data-ttu-id="79127-117">2</span><span class="sxs-lookup"><span data-stu-id="79127-117">2</span></span>|<span data-ttu-id="79127-118">Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365</span><span class="sxs-lookup"><span data-stu-id="79127-118">Intune Service connects directly to O365 multi-tenant Exchange environment</span></span>|
+|<span data-ttu-id="79127-119">уполномочен</span><span class="sxs-lookup"><span data-stu-id="79127-119">dedicated</span></span>|<span data-ttu-id="79127-120">4</span><span class="sxs-lookup"><span data-stu-id="79127-120">3</span></span>|<span data-ttu-id="79127-121">ПодКлючается к выделенной среде Exchange O365.</span><span class="sxs-lookup"><span data-stu-id="79127-121">Connects to O365 Dedicated Exchange environment.</span></span>|
 
 
 
