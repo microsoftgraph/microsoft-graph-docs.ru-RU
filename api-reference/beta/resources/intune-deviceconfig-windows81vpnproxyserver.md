@@ -1,41 +1,41 @@
 ---
 title: Тип ресурса windows81VpnProxyServer
-description: VPN-сервер прокси-сервера.
-localization_priority: Normal
+description: VPN-прокси-сервер.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a400ed128a80e6fae11f090f7cdd445fe8c174b0
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: a6783502079ab3ce3adf3f8133662ab3eab578bd
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29398893"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145208"
 ---
-# <a name="windows81vpnproxyserver-resource-type"></a><span data-ttu-id="67dd8-103">Тип ресурса windows81VpnProxyServer</span><span class="sxs-lookup"><span data-stu-id="67dd8-103">windows81VpnProxyServer resource type</span></span>
+# <a name="windows81vpnproxyserver-resource-type"></a><span data-ttu-id="df792-103">Тип ресурса windows81VpnProxyServer</span><span class="sxs-lookup"><span data-stu-id="df792-103">windows81VpnProxyServer resource type</span></span>
 
-> <span data-ttu-id="67dd8-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="67dd8-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="67dd8-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="67dd8-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="df792-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="df792-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="67dd8-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="67dd8-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="df792-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="df792-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="67dd8-107">VPN-сервер прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="67dd8-107">VPN Proxy Server.</span></span>
+<span data-ttu-id="df792-106">VPN-прокси-сервер.</span><span class="sxs-lookup"><span data-stu-id="df792-106">VPN Proxy Server.</span></span>
 
 
-<span data-ttu-id="67dd8-108">Наследуется от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="67dd8-108">Inherits from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>
+<span data-ttu-id="df792-107">НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="df792-107">Inherits from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="67dd8-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="67dd8-109">Properties</span></span>
-|<span data-ttu-id="67dd8-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="67dd8-110">Property</span></span>|<span data-ttu-id="67dd8-111">Тип</span><span class="sxs-lookup"><span data-stu-id="67dd8-111">Type</span></span>|<span data-ttu-id="67dd8-112">Описание</span><span class="sxs-lookup"><span data-stu-id="67dd8-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="df792-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="df792-108">Properties</span></span>
+|<span data-ttu-id="df792-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="df792-109">Property</span></span>|<span data-ttu-id="df792-110">Тип</span><span class="sxs-lookup"><span data-stu-id="df792-110">Type</span></span>|<span data-ttu-id="df792-111">Описание</span><span class="sxs-lookup"><span data-stu-id="df792-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="67dd8-113">automaticConfigurationScriptUrl</span><span class="sxs-lookup"><span data-stu-id="67dd8-113">automaticConfigurationScriptUrl</span></span>|<span data-ttu-id="67dd8-114">String</span><span class="sxs-lookup"><span data-stu-id="67dd8-114">String</span></span>|<span data-ttu-id="67dd8-115">Прокси-Автоматическая настройка сценария URL-адрес.</span><span class="sxs-lookup"><span data-stu-id="67dd8-115">Proxy's automatic configuration script url.</span></span> <span data-ttu-id="67dd8-116">Наследуется от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="67dd8-116">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
-|<span data-ttu-id="67dd8-117">address</span><span class="sxs-lookup"><span data-stu-id="67dd8-117">address</span></span>|<span data-ttu-id="67dd8-118">String</span><span class="sxs-lookup"><span data-stu-id="67dd8-118">String</span></span>|<span data-ttu-id="67dd8-119">Адрес.</span><span class="sxs-lookup"><span data-stu-id="67dd8-119">Address.</span></span> <span data-ttu-id="67dd8-120">Наследуется от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="67dd8-120">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
-|<span data-ttu-id="67dd8-121">port</span><span class="sxs-lookup"><span data-stu-id="67dd8-121">port</span></span>|<span data-ttu-id="67dd8-122">Int32</span><span class="sxs-lookup"><span data-stu-id="67dd8-122">Int32</span></span>|<span data-ttu-id="67dd8-123">Порт.</span><span class="sxs-lookup"><span data-stu-id="67dd8-123">Port.</span></span> <span data-ttu-id="67dd8-124">Допустимыми значениями от 0 до 65535 унаследованные от [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="67dd8-124">Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
-|<span data-ttu-id="67dd8-125">automaticallyDetectProxySettings</span><span class="sxs-lookup"><span data-stu-id="67dd8-125">automaticallyDetectProxySettings</span></span>|<span data-ttu-id="67dd8-126">Логический</span><span class="sxs-lookup"><span data-stu-id="67dd8-126">Boolean</span></span>|<span data-ttu-id="67dd8-127">Автоматическое определение параметров прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="67dd8-127">Automatically detect proxy settings.</span></span>|
-|<span data-ttu-id="67dd8-128">bypassProxyServerForLocalAddress</span><span class="sxs-lookup"><span data-stu-id="67dd8-128">bypassProxyServerForLocalAddress</span></span>|<span data-ttu-id="67dd8-129">Логический</span><span class="sxs-lookup"><span data-stu-id="67dd8-129">Boolean</span></span>|<span data-ttu-id="67dd8-130">Использовать прокси-сервер для локальных адресов.</span><span class="sxs-lookup"><span data-stu-id="67dd8-130">Bypass proxy server for local address.</span></span>|
+|<span data-ttu-id="df792-112">Аутоматикконфигуратионскриптурл</span><span class="sxs-lookup"><span data-stu-id="df792-112">automaticConfigurationScriptUrl</span></span>|<span data-ttu-id="df792-113">String</span><span class="sxs-lookup"><span data-stu-id="df792-113">String</span></span>|<span data-ttu-id="df792-114">URL-адрес скрипта автоматической настройки прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="df792-114">Proxy's automatic configuration script url.</span></span> <span data-ttu-id="df792-115">НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="df792-115">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
+|<span data-ttu-id="df792-116">address</span><span class="sxs-lookup"><span data-stu-id="df792-116">address</span></span>|<span data-ttu-id="df792-117">String</span><span class="sxs-lookup"><span data-stu-id="df792-117">String</span></span>|<span data-ttu-id="df792-118">Address.</span><span class="sxs-lookup"><span data-stu-id="df792-118">Address.</span></span> <span data-ttu-id="df792-119">НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="df792-119">Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
+|<span data-ttu-id="df792-120">port</span><span class="sxs-lookup"><span data-stu-id="df792-120">port</span></span>|<span data-ttu-id="df792-121">Int32</span><span class="sxs-lookup"><span data-stu-id="df792-121">Int32</span></span>|<span data-ttu-id="df792-122">Порта.</span><span class="sxs-lookup"><span data-stu-id="df792-122">Port.</span></span> <span data-ttu-id="df792-123">Допустимые значения — от 0 до 65535, наСледуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)</span><span class="sxs-lookup"><span data-stu-id="df792-123">Valid values 0 to 65535 Inherited from [vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)</span></span>|
+|<span data-ttu-id="df792-124">Аутоматикаллидетектпроксисеттингс</span><span class="sxs-lookup"><span data-stu-id="df792-124">automaticallyDetectProxySettings</span></span>|<span data-ttu-id="df792-125">Логический</span><span class="sxs-lookup"><span data-stu-id="df792-125">Boolean</span></span>|<span data-ttu-id="df792-126">Автоматически определять параметры прокси-сервера.</span><span class="sxs-lookup"><span data-stu-id="df792-126">Automatically detect proxy settings.</span></span>|
+|<span data-ttu-id="df792-127">Бипасспроксисерверфорлокаладдресс</span><span class="sxs-lookup"><span data-stu-id="df792-127">bypassProxyServerForLocalAddress</span></span>|<span data-ttu-id="df792-128">Логический</span><span class="sxs-lookup"><span data-stu-id="df792-128">Boolean</span></span>|<span data-ttu-id="df792-129">Обход прокси-сервера для локального адреса.</span><span class="sxs-lookup"><span data-stu-id="df792-129">Bypass proxy server for local address.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="67dd8-131">Отношения</span><span class="sxs-lookup"><span data-stu-id="67dd8-131">Relationships</span></span>
-<span data-ttu-id="67dd8-132">Нет</span><span class="sxs-lookup"><span data-stu-id="67dd8-132">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="df792-130">Отношения</span><span class="sxs-lookup"><span data-stu-id="df792-130">Relationships</span></span>
+<span data-ttu-id="df792-131">Нет</span><span class="sxs-lookup"><span data-stu-id="df792-131">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="67dd8-133">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="67dd8-133">JSON Representation</span></span>
-<span data-ttu-id="67dd8-134">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="67dd8-134">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="df792-132">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="df792-132">JSON Representation</span></span>
+<span data-ttu-id="df792-133">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="df792-133">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windows81VpnProxyServer"
