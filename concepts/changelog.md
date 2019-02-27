@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c8962e6fce28776ab89c759d2e9a7789e82c4f02
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
+ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139678"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212398"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -28,6 +28,8 @@ ms.locfileid: "30139678"
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
+|Дополнение |Бета-версия и версия 1.0| Добавлено свойство **createdDateTime** для [organization](/graph/api/resources/organization?view=graph-rest-v1.0)|
+|Дополнение | v1.0 | Добавлен новый тип ресурса [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-v1.0).|
 |Изменение |Бета-версия и версия 1.0| Обновлено свойство **companyName** ресурса [user](/graph/api/resources/user?view=graph-rest-v1.0) для обеспечения возможности записи.|
 
 ### <a name="education-apis"></a>API для образования
@@ -2324,7 +2326,7 @@ ms.locfileid: "30139678"
 | Дополнение        | Бета-версия        | Добавлено действие [logoutSharedAppleDeviceActiveUser](/graph/api/intune-devices-manageddevice-logoutsharedappledeviceactiveuser?view=graph-rest-beta) к объекту [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлено действие [deleteUserFromSharedAppleDevice](/graph/api/intune-devices-manageddevice-deleteuserfromsharedappledevice?view=graph-rest-beta) к объекту [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлено действие [assign](/graph/api/intune-deviceconfig-devicemanagementscript-assign?view=graph-rest-beta) к объекту [deviceManagementScript](/graph/api/resources/intune-deviceconfig-devicemanagementscript?view=graph-rest-beta). |
-| Дополнение        | Бета-версия        | Добавлено действие [syncLicenses](/graph/api/intune-onboarding-applevolumepurchaseprogramtoken-synclicenses?view=graph-rest-beta) к объекту [appleVolumePurchaseProgramToken](/graph/api/resources/intune-apps-applevolumepurchaseprogramtoken?view=graph-rest-beta). |
+| Дополнение        | Бета        | Добавлено действие [syncLicenses](/graph/api/intune-onboarding-applevolumepurchaseprogramtoken-synclicenses?view=graph-rest-beta) к объекту [appleVolumePurchaseProgramToken](/graph/api/resources/intune-apps-applevolumepurchaseprogramtoken?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция **getTopMobileApps** для коллекции [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [downloadApplePushNotificationCertificateSigningRequest](/graph/api/intune-deviceconfig-applepushnotificationcertificate-downloadapplepushnotificationcertificatesigningrequest?view=graph-rest-beta) к объекту [applePushNotificationCertificate](/graph/api/resources/intune-deviceconfig-applepushnotificationcertificate?view=graph-rest-beta). |
 | Дополнение        | Бета-версия        | Добавлена функция [getDeviceComplianceSettingStates](/graph/api/intune-deviceconfig-devicemanagement-getdevicecompliancesettingstates?view=graph-rest-beta) к объекту [deviceManagement](/graph/api/resources/intune-shared-devicemanagement?view=graph-rest-beta). |
