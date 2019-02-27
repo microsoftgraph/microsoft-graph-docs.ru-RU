@@ -1093,6 +1093,7 @@ items:
                     href: api/intune-apps-windowsuniversalappx-update.md
           - name: Условия компании
             href: resources/intune-company-conceptual.md
+            displayName: Intune
             items:
               - name: Условия
                 href: resources/intune-companyterms-termsandconditions.md
@@ -1135,6 +1136,7 @@ items:
                     href: api/intune-companyterms-termsandconditionsassignment-update.md
           - name: Корпоративная регистрация
             href: resources/intune-enrollment-conceptual.md
+            displayName: Intune
             items:
               - name: Импортированное удостоверение устройства с Windows Autopilot
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md
@@ -1170,6 +1172,7 @@ items:
                 href: resources/intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md
           - name: Конфигурация устройства
             href: resources/intune-device-cfg-conceptual.md
+            displayName: Intune
             items:
               - name: Политика соответствия требованиям Android
                 href: resources/intune-deviceconfig-androidcompliancepolicy.md
@@ -2042,6 +2045,7 @@ items:
                 href: resources/intune-deviceconfig-windowsuseraccountcontrolsettings.md
           - name: Управление устройствами
             href: resources/intune-device-mgt-conceptual.md
+            displayName: Intune
             items:
               - name: Состояние действия
                 href: resources/intune-devices-actionstate.md
@@ -2094,8 +2098,6 @@ items:
                 href: resources/intune-devices-deviceactionresult.md
               - name: Причина сбоя регистрации устройства
                 href: resources/intune-troubleshooting-deviceenrollmentfailurereason.md
-              - name: Тип регистрации устройства
-                href: resources/intune-devices-deviceenrollmenttype.md
               - name: Сводка по состоянию доступа к Exchange с устройств
                 href: resources/intune-devices-deviceexchangeaccessstatesummary.md
               - name: Геолокация устройств
@@ -2265,8 +2267,9 @@ items:
                 href: resources/intune-devices-windowsdeviceadaccount.md
               - name: Учетная запись Azure AD устройства с Windows
                 href: resources/intune-devices-windowsdeviceazureadaccount.md
-          - name: Управление мобильным приложением
+          - name: Управление мобильным приложением (MAM)
             href: resources/intune-mam-conceptual.md
+            displayName: Intune
             items:
               - name: Защита управляемых приложений для Android
                 href: resources/intune-mam-androidmanagedappprotection.md
@@ -2569,6 +2572,7 @@ items:
                 href: resources/intune-mam-windowsinformationprotectionstoreapp.md
           - name: Подключение
             href: resources/intune-onboarding-conceptual.md
+            displayName: Intune
             items:
               - name: Конфигурация регистрации устройств
                 href: resources/intune-onboarding-deviceenrollmentconfiguration.md
@@ -2737,8 +2741,9 @@ items:
                 href: resources/intune-onboarding-vpptokensyncstatus.md
               - name: Использование ПИН-кода в Windows Hello для бизнеса
                 href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-          - name: Управление доступом на основе ролей
-            href: resources/intune-rbac-conceptual.md
+          - name: Управление доступом на основе ролей (RBAC)
+            href: /resources/intune-rbac-conceptual.md
+            displayName: Intune
             items:
               - name: Назначение роли управления устройствами и приложениями
                 href: resources/intune-rbac-deviceandappmanagementroleassignment.md
@@ -2811,6 +2816,7 @@ items:
                 href: resources/intune-rbac-rolepermission.md
           - name: Общие ресурсы
             href: resources/intune-shared-conceptual.md
+            displayName: Intune
             items:
               - name: Объект назначения для всех устройств
                 href: resources/intune-shared-alldevicesassignmenttarget.md
@@ -2842,6 +2848,8 @@ items:
                     href: api/intune-shared-devicecategory-delete.md
                   - name: Обновление
                     href: api/intune-shared-devicecategory-update.md
+              - name: Тип регистрации устройства
+                href: resources/intune-shared-deviceenrollmenttype.md
               - name: Управление устройствами
                 href: resources/intune-shared-devicemanagement.md
                 items:
@@ -2891,6 +2899,7 @@ items:
                 href: resources/intune-shared-vpptokenaccounttype.md
           - name: Затраты на телекоммуникации
             href: resources/intune-tem-conceptual.md
+            displayName: Intune
             items:
               - name: Партнер по управлению затратами на телекоммуникации
                 href: resources/intune-tem-telecomexpensemanagementpartner.md
