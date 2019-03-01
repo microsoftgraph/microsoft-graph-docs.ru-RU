@@ -4,12 +4,12 @@ description: Создание или настройка вкладки Microsoft
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: b14fa7fac0106d03e930ea8e6601616f81076955
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 2940edf1cef2adc6c240fe8dd737d91f434c27e8
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967195"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342284"
 ---
 # <a name="configuring-the-built-in-tab-types-in-microsoft-teams"></a>Настройка встроенных типов вкладок в Microsoft Teams
 
@@ -119,12 +119,12 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | Пустая строка (»»)                                        |
-| contentUrl | string      | URL-адрес в корневую папку библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, копирование URL-адрес и удаление «/ Forms/AllItems.aspx», а после. |
+| entityId   | строка      | Пустая строка ("")                                        |
+| contentUrl | строка      | URL-адрес корневой папки библиотеки документов. Этот URL-адрес можно найти, открыв папку SharePoint в браузере, скопировав URL-адрес и удалив "/Формс/аллитемс.аспкс" и все после этого. |
 | removeUrl  | string      | NULL                                                     |
 | websiteUrl | string      | Null                                                     |
 
-### <a name="example-create-a-configured-document-library-tab"></a>Пример: Создание вкладку библиотека настроенного документа
+### <a name="example-create-a-configured-document-library-tab"></a>Пример: создание настроенной вкладки библиотеки документов
 
 Приведенный ниже пример создает настроенную вкладку Word.
 
@@ -135,7 +135,7 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/com.microsoft.teamspace.tab.files.sharepoint",
     "configuration": {
         "entityId": "",
-        "contentUrl": "https://microsoft.sharepoint-df.com/teams/WWWtest/Shared%20Documents",
+        "contentUrl": "https://microsoft.sharepoint.com/teams/WWWtest/Shared%20Documents",
         "removeUrl": null,
         "websiteUrl": null
     }
@@ -148,9 +148,9 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 
 | Свойство   | Тип        | Описание                                              |
 | ---------- | ----------- | -------------------------------------------------------- |
-| entityId   | string      | `{randomGuid}_{notebookId}`, где {randomGuid} — это созданный вами идентификатор GUID.                                      |
-| contentUrl | string      | URL-адрес формы `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
-| removeUrl  | string      | URL-адрес формы `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| entityId   | строка      | `{randomGuid}_{notebookId}`, где {randomGuid} — это созданный вами идентификатор GUID.                                      |
+| contentUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabContent?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
+| removeUrl  | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRemove?entityid=%7BentityId%7D&subentityid=%7BsubEntityId%7D&auth_upn=%7Bupn%7D&notebookSource=New&notebookSelfUrl=https%3A%2F%2Fwww.onenote.com%2Fapi%2Fv1.0%2FmyOrganization%2Fgroups%2F{sectionsUrl}%2Fnotes%2Fnotebooks%2F{notebookId}&oneNoteWebUrl={oneNoteWebUrl}&notebookName=note&ui={locale}&tenantId={tid}`, где `{sectionsUrl}`, `{notebookId}` и `{oneNoteWebUrl}` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta). Символы косой черты необходимо пропустить. {locale} и {tid} являются литералами. |
 | websiteUrl | строка      | URL-адрес формы `https://www.onenote.com/teams/TabRedirect?redirectUrl={oneNoteWebUrl}`, где `oneNoteWebUrl` можно найти в [GET /groups/{id}/onenote/notebooks](/graph/api/onenote-list-notebooks?view=graph-rest-beta) |
 
 ## <a name="power-bi-tabs"></a>Вкладки Power BI
