@@ -1,19 +1,19 @@
 ---
-title: Создание объекта Event
-description: С помощью этого API можно создать объект Event в календаре по умолчанию или указанном календаре.
+title: Создание события
+description: С помощью этого API можно создать событие в календаре по умолчанию или указанном календаре.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: ea5cc094b3d81c544f4a20cfffc1771b417999ac
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: e974bd17b4fe1b1f43e743cbcacbb2104a3888fc
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969403"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342298"
 ---
-# <a name="create-event"></a>Создание объекта Event
+# <a name="create-event"></a>Создание события
 
-С помощью этого API можно создать объект Event в календаре по умолчанию или указанном календаре.
+С помощью этого API можно создать событие в календаре по умолчанию или указанном календаре.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -24,7 +24,7 @@ ms.locfileid: "27969403"
 |Для приложений | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Пользователя или группы по умолчанию [календаря](../resources/calendar.md).
+<!-- { "blockType": "ignored" } --> Экземпляр [calendar](../resources/calendar.md) по умолчанию для пользователя или группы.
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
@@ -49,59 +49,143 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Предоставьте в тексте запроса описание объекта [Event](../resources/event.md) в формате JSON.
+## <a name="request-body"></a>Текст запроса
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
 ## <a name="response"></a>Отклик
 
-В случае успеха этот метод возвращает код отклика `201 Created` и объект [Event](../resources/event.md) в тексте отклика.
+В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
+Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGViNDU7zAAAAAGtlAAA="],
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/calendar/events
+POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
+  "subject": "Let's go for lunch",
+  "body": {
+    "contentType": "HTML",
+    "content": "Does mid month work for you?"
   },
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+  "start": {
+      "dateTime": "2019-03-15T12:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "end": {
+      "dateTime": "2019-03-15T14:00:00",
+      "timeZone": "Pacific Standard Time"
+  },
+  "location":{
+      "displayName":"Harry's Bar"
+  },
+  "attendees": [
+    {
+      "emailAddress": {
+        "address":"adelev@contoso.onmicrosoft.com",
+        "name": "Adele Vance"
+      },
+      "type": "required"
+    }
+  ]
 }
 ```
-Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
+
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 285
 
 {
-  "originalStartTimeZone": "originalStartTimeZone-value",
-  "originalEndTimeZone": "originalEndTimeZone-value",
-  "responseStatus": {
-    "response": "",
-    "time": "datetime-value"
-  },
-  "iCalUId": "iCalUId-value",
-  "reminderMinutesBeforeStart": 99,
-  "isReminderOn": true
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjEpA==\"",
+    "id": "AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA=",
+    "createdDateTime": "2019-02-28T21:17:57.56197Z",
+    "lastModifiedDateTime": "2019-02-28T21:17:59.044919Z",
+    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjEpA==",
+    "categories": [],
+    "originalStartTimeZone": "Pacific Standard Time",
+    "originalEndTimeZone": "Pacific Standard Time",
+    "iCalUId": "040000008200E641B4C",
+    "reminderMinutesBeforeStart": 15,
+    "isReminderOn": true,
+    "hasAttachments": false,
+    "subject": "Let's go for lunch",
+    "bodyPreview": "Does mid month work for you?",
+    "importance": "normal",
+    "sensitivity": "normal",
+    "isAllDay": false,
+    "isCancelled": false,
+    "isOrganizer": true,
+    "responseRequested": true,
+    "seriesMasterId": null,
+    "showAs": "busy",
+    "type": "singleInstance",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
+    "onlineMeetingUrl": null,
+    "recurrence": null,
+    "responseStatus": {
+        "response": "organizer",
+        "time": "0001-01-01T00:00:00Z"
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes mid month work for you?\r\n</body>\r\n</html>\r\n"
+    },
+    "start": {
+        "dateTime": "2019-03-15T12:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "end": {
+        "dateTime": "2019-03-15T14:00:00.0000000",
+        "timeZone": "Pacific Standard Time"
+    },
+    "location": {
+        "displayName": "Harry's Bar",
+        "locationType": "default",
+        "uniqueId": "Harry's Bar",
+        "uniqueIdType": "private"
+    },
+    "locations": [
+        {
+            "displayName": "Harry's Bar",
+            "locationType": "default",
+            "uniqueId": "Harry's Bar",
+            "uniqueIdType": "private"
+        }
+    ],
+    "attendees": [
+        {
+            "type": "required",
+            "status": {
+                "response": "none",
+                "time": "0001-01-01T00:00:00Z"
+            },
+            "emailAddress": {
+                "name": "Adele Vance",
+                "address": "AdeleV@contoso.OnMicrosoft.com"
+            }
+        }
+    ],
+    "organizer": {
+        "emailAddress": {
+            "name": "Megan Bowen",
+            "address": "MeganB@contoso.OnMicrosoft.com"
+        }
+    }
 }
 ```
 
@@ -109,7 +193,7 @@ Content-length: 285
 2015-10-25 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "Create Event",
+  "description": "Create event",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""
