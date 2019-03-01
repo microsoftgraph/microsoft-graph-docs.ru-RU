@@ -1,43 +1,35 @@
 ---
-title: Тип ресурса targetResource
-description: Указывает коллекцию конечных типов ресурсов, связанные с действием аудита. Каждый тип целевого ресурса наследуют свойства, используйте следующий из данного ресурса.
+title: сложный тип ресурса targetResource — API Microsoft Graph
+description: Определяет сложный тип ресурса сущности targetResource API Microsoft Graph, который поддерживает действия Организации отчетности журнала аудита (клиента).
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: azure-ad
+ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828681"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342291"
 ---
-# <a name="targetresource-resource-type"></a><span data-ttu-id="92cc7-104">Тип ресурса targetResource</span><span class="sxs-lookup"><span data-stu-id="92cc7-104">targetResource resource type</span></span>
-<span data-ttu-id="92cc7-105">Указывает коллекцию конечных типов ресурсов, связанные с действием аудита.</span><span class="sxs-lookup"><span data-stu-id="92cc7-105">Indicates a collection of  target resource types associated with the audit activity.</span></span> <span data-ttu-id="92cc7-106">Каждый тип целевого ресурса наследуют свойства, используйте следующий из данного ресурса.</span><span class="sxs-lookup"><span data-stu-id="92cc7-106">Each target resource type will inherit the properties outlined below from this resource.</span></span>
+# <a name="targetresource-resource-type"></a><span data-ttu-id="f6c00-103">Тип ресурса targetResource</span><span class="sxs-lookup"><span data-stu-id="f6c00-103">targetResource resource type</span></span>
+
+<span data-ttu-id="f6c00-104">Представляет целевые типы ресурсов, связанные с действиями аудита.</span><span class="sxs-lookup"><span data-stu-id="f6c00-104">Represents target resource types associated with audit activity.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="92cc7-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="92cc7-107">Properties</span></span>
-| <span data-ttu-id="92cc7-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="92cc7-108">Property</span></span>     | <span data-ttu-id="92cc7-109">Тип</span><span class="sxs-lookup"><span data-stu-id="92cc7-109">Type</span></span>   |<span data-ttu-id="92cc7-110">Описание</span><span class="sxs-lookup"><span data-stu-id="92cc7-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f6c00-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="f6c00-105">Properties</span></span>
+
+| <span data-ttu-id="f6c00-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="f6c00-106">Property</span></span>     | <span data-ttu-id="f6c00-107">Тип</span><span class="sxs-lookup"><span data-stu-id="f6c00-107">Type</span></span>   |<span data-ttu-id="f6c00-108">Описание</span><span class="sxs-lookup"><span data-stu-id="f6c00-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="92cc7-111">displayName</span><span class="sxs-lookup"><span data-stu-id="92cc7-111">displayName</span></span>|<span data-ttu-id="92cc7-112">Строка</span><span class="sxs-lookup"><span data-stu-id="92cc7-112">String</span></span>|<span data-ttu-id="92cc7-113">Указывает отображаемое имя, описанные в разделе типы назначения ресурсов ниже ресурсов.</span><span class="sxs-lookup"><span data-stu-id="92cc7-113">Indicates the display name of the resources outlined under Target Resource Types below.</span></span>|
-|<span data-ttu-id="92cc7-114">id</span><span class="sxs-lookup"><span data-stu-id="92cc7-114">id</span></span>|<span data-ttu-id="92cc7-115">Строка</span><span class="sxs-lookup"><span data-stu-id="92cc7-115">String</span></span>|<span data-ttu-id="92cc7-116">Указывает уникальный идентификатор ресурса (например: идентификатор пользователя, AppId, RoleId.).</span><span class="sxs-lookup"><span data-stu-id="92cc7-116">Indicates the Unique Id of the resource (For example: UserId, AppId, RoleId.).</span></span>|
-|<span data-ttu-id="92cc7-117">modifiedProperties</span><span class="sxs-lookup"><span data-stu-id="92cc7-117">modifiedProperties</span></span>|<span data-ttu-id="92cc7-118">[modifiedProperty](modifiedproperty.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="92cc7-118">[modifiedProperty](modifiedproperty.md) collection</span></span>|<span data-ttu-id="92cc7-119">Указывает имя, старое значение и новое значение каждого атрибута, которые изменены.</span><span class="sxs-lookup"><span data-stu-id="92cc7-119">Indicates name, old value and new value of each attribute that changed.</span></span> <span data-ttu-id="92cc7-120">Этот параметр доступен для всех действий, «Обновить»</span><span class="sxs-lookup"><span data-stu-id="92cc7-120">This is applicable for any "Update" activities</span></span>|
+|<span data-ttu-id="f6c00-109">id</span><span class="sxs-lookup"><span data-stu-id="f6c00-109">id</span></span>|<span data-ttu-id="f6c00-110">String</span><span class="sxs-lookup"><span data-stu-id="f6c00-110">String</span></span>|<span data-ttu-id="f6c00-111">Указывает уникальный идентификатор ресурса.</span><span class="sxs-lookup"><span data-stu-id="f6c00-111">Indicates the unique ID of the resource.</span></span>|
+|<span data-ttu-id="f6c00-112">displayName</span><span class="sxs-lookup"><span data-stu-id="f6c00-112">displayName</span></span>|<span data-ttu-id="f6c00-113">String</span><span class="sxs-lookup"><span data-stu-id="f6c00-113">String</span></span>|<span data-ttu-id="f6c00-114">Указывает отображаемое имя, заданное для ресурса.</span><span class="sxs-lookup"><span data-stu-id="f6c00-114">Indicates the visible name defined for the resource.</span></span> <span data-ttu-id="f6c00-115">Обычно указывается при создании ресурса.</span><span class="sxs-lookup"><span data-stu-id="f6c00-115">Typically specified when the resource is created.</span></span>|
+|<span data-ttu-id="f6c00-116">type</span><span class="sxs-lookup"><span data-stu-id="f6c00-116">type</span></span>|<span data-ttu-id="f6c00-117">String</span><span class="sxs-lookup"><span data-stu-id="f6c00-117">String</span></span>|<span data-ttu-id="f6c00-118">Описывает тип ресурса.</span><span class="sxs-lookup"><span data-stu-id="f6c00-118">Describes the resource type.</span></span>  <span data-ttu-id="f6c00-119">Примеры значений: `Application`, `Group` `ServicePrincipal`, и `User`.</span><span class="sxs-lookup"><span data-stu-id="f6c00-119">Example values include `Application`, `Group`, `ServicePrincipal`, and `User`.</span></span>|
+|<span data-ttu-id="f6c00-120">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="f6c00-120">userPrincipalName</span></span>|<span data-ttu-id="f6c00-121">String</span><span class="sxs-lookup"><span data-stu-id="f6c00-121">String</span></span>|<span data-ttu-id="f6c00-122">Если \*\*\*\* для `User`параметра Type задано значение, включается имя пользователя, инициировавшего действие; `null` для других типов.</span><span class="sxs-lookup"><span data-stu-id="f6c00-122">When **type** is set to `User`, this includes the user name that initiated the action; `null` for other types.</span></span>|
+|<span data-ttu-id="f6c00-123">groupType</span><span class="sxs-lookup"><span data-stu-id="f6c00-123">groupType</span></span>|<span data-ttu-id="f6c00-124">String</span><span class="sxs-lookup"><span data-stu-id="f6c00-124">String</span></span>|<span data-ttu-id="f6c00-125">Если \*\*\*\* для `Group`параметра Type задано значение, это указывает тип группы.</span><span class="sxs-lookup"><span data-stu-id="f6c00-125">When **type** is set to `Group`, this indicates the group type.</span></span>|
+|<span data-ttu-id="f6c00-126">modifiedProperties</span><span class="sxs-lookup"><span data-stu-id="f6c00-126">modifiedProperties</span></span>|<span data-ttu-id="f6c00-127">Коллекция [модифиедпроперти](modifiedproperty.md)</span><span class="sxs-lookup"><span data-stu-id="f6c00-127">[modifiedProperty](modifiedproperty.md) collection</span></span>|<span data-ttu-id="f6c00-128">Указывает имя, старое значение и новое значение каждого атрибута, который изменился.</span><span class="sxs-lookup"><span data-stu-id="f6c00-128">Indicates name, old value and new value of each attribute that changed.</span></span> <span data-ttu-id="f6c00-129">Значения свойств зависят от **типа**операции.</span><span class="sxs-lookup"><span data-stu-id="f6c00-129">Property values depend on the operation **type**.</span></span>|
 
-### <a name="target-resource-types"></a><span data-ttu-id="92cc7-121">Типы назначения ресурсов</span><span class="sxs-lookup"><span data-stu-id="92cc7-121">Target Resource Types</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f6c00-130">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="f6c00-130">JSON representation</span></span>
 
-<span data-ttu-id="92cc7-122">Тип ресурса конечного зависит от базового ресурса:</span><span class="sxs-lookup"><span data-stu-id="92cc7-122">The target resource type varies according to the underlying resource:</span></span>
-
-|<span data-ttu-id="92cc7-123">Имя ресурса</span><span class="sxs-lookup"><span data-stu-id="92cc7-123">Resource Name</span></span>| <span data-ttu-id="92cc7-124">Справочные материалы</span><span class="sxs-lookup"><span data-stu-id="92cc7-124">Reference</span></span>|
-|-------------|----------|
-<span data-ttu-id="92cc7-125">Device</span><span class="sxs-lookup"><span data-stu-id="92cc7-125">Device</span></span>|[<span data-ttu-id="92cc7-126">targetResourceDevice</span><span class="sxs-lookup"><span data-stu-id="92cc7-126">targetResourceDevice</span></span>](targetresourcedevice.md)
-<span data-ttu-id="92cc7-127">Каталог</span><span class="sxs-lookup"><span data-stu-id="92cc7-127">Directory</span></span>|<span data-ttu-id="92cc7-128">[targetResourceDirectory] (targetresourcedirectory.md]</span><span class="sxs-lookup"><span data-stu-id="92cc7-128">[targetResourceDirectory](targetresourcedirectory.md]</span></span>
-<span data-ttu-id="92cc7-129">Group</span><span class="sxs-lookup"><span data-stu-id="92cc7-129">Group</span></span>|[<span data-ttu-id="92cc7-130">targetResourceGroup</span><span class="sxs-lookup"><span data-stu-id="92cc7-130">targetResourceGroup</span></span>](targetresourcegroup.md)
-<span data-ttu-id="92cc7-131">Политика</span><span class="sxs-lookup"><span data-stu-id="92cc7-131">Policy</span></span>|[<span data-ttu-id="92cc7-132">targetResourcePolicy</span><span class="sxs-lookup"><span data-stu-id="92cc7-132">targetResourcePolicy</span></span>](targetresourcepolicy.md)
-<span data-ttu-id="92cc7-133">Role</span><span class="sxs-lookup"><span data-stu-id="92cc7-133">Role</span></span>|[<span data-ttu-id="92cc7-134">targetResourceRole</span><span class="sxs-lookup"><span data-stu-id="92cc7-134">targetResourceRole</span></span>](targetresourcerole.md)
-<span data-ttu-id="92cc7-135">Участников-служб</span><span class="sxs-lookup"><span data-stu-id="92cc7-135">Service Principal</span></span>|[<span data-ttu-id="92cc7-136">targetResourceServicePrincipal</span><span class="sxs-lookup"><span data-stu-id="92cc7-136">targetResourceServicePrincipal</span></span>](targetresourceserviceprincipal.md)
-<span data-ttu-id="92cc7-137">Пользователь</span><span class="sxs-lookup"><span data-stu-id="92cc7-137">User</span></span>|[<span data-ttu-id="92cc7-138">targetResourceUser</span><span class="sxs-lookup"><span data-stu-id="92cc7-138">targetResourceUser</span></span>](targetresourceuser.md)
-<span data-ttu-id="92cc7-139">Другое</span><span class="sxs-lookup"><span data-stu-id="92cc7-139">Other</span></span>|[<span data-ttu-id="92cc7-140">targetResourceOther</span><span class="sxs-lookup"><span data-stu-id="92cc7-140">targetResourceOther</span></span>](targetresourceother.md)
-
-## <a name="json-representation"></a><span data-ttu-id="92cc7-141">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="92cc7-141">JSON representation</span></span>
-
-<span data-ttu-id="92cc7-142">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="92cc7-142">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="f6c00-131">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f6c00-131">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -49,12 +41,16 @@ ms.locfileid: "27828681"
 
 ```json
 {
-  "displayName": "String",
   "id": "String",
+  "displayName": "String",
+  "type": "String",
+  "userPrincipalName": "String",
+  "groupType": "String", 
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}]
 }
 
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
