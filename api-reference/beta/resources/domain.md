@@ -4,12 +4,12 @@ description: Представляет домен, связанный с клие
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8d19909679447e050ea639ee0fcb4cd31288efc0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6b349920f0849ec18b0d5e70fda0bcb16c41e63c
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518641"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342333"
 ---
 # <a name="domain-resource-type"></a>Тип ресурса domain
 
@@ -42,7 +42,7 @@ ms.locfileid: "29518641"
 |[Перечисление verificationDnsRecords](../api/domain-list-verificationdnsrecords.md) |Коллекция [domainDnsRecord](domaindnsrecord.md)|  Получение списка записей DNS домена для проверки домена.|
 |[Обновление домена](../api/domain-update.md) | [domain](domain.md); |Обновление домена.|
 |[Удаление домена](../api/domain-delete.md) | Нет |Удаление домена.|
-|[ForceDelete домена](../api/domain-forcedelete.md)|Нет|Удаление домена, с помощью асинхронной операции.|
+|[Домен Форцеделете](../api/domain-forcedelete.md)|Нет|Удаляет домен, используя асинхронную операцию.|
 |[Проверка домена](../api/domain-verify.md)|[domain](domain.md)|Проверка права собственности на домен.|
 
 ## <a name="properties"></a>Свойства
@@ -52,11 +52,13 @@ ms.locfileid: "29518641"
 |authenticationType|String| Указывает тип аутентификации, настроенный для домена. Возможные значения: *Managed* и *Federated*.<br> *Managed* означает управляемый домен, аутентификацию пользователей в котором выполняет Azure AD.<br>*Federated* означает, что аутентификацию выполняет поставщик удостоверений, например локальная служба Active Directory клиента, через службы федерации Active Directory (AD FS). Не допускает значение null. |
 |availabilityStatus|Строка| Это свойство всегда имеет значение null, когда не используется действие [verify](../api/domain-verify.md). Когда используется действие [verify](../api/domain-verify.md), в ответе возвращается объект **domain**. Свойство **availabilityStatus** объекта **domain** в ответе — либо *AvailableImmediately*, либо *EmailVerifiedDomainTakeoverScheduled*.|
 |id|String| Полное имя домена. Ключ, неизменяемое, не допускает значение null, уникальное. |
-|isAdminManaged|Логическое| Свойство имеет значение false, если управление записью DNS домена делегировано в Office 365. В противном случае возвращается значение true. Не допускает значение null. |
+|isAdminManaged|Логический| Свойство имеет значение false, если управление записью DNS домена делегировано в Office 365. В противном случае возвращается значение true. Не допускает значение null. |
 |isDefault|Boolean| Значение true, если это домен по умолчанию, который используется для создания пользователя. У компании может быть только один домен по умолчанию. Не допускает значение null. |
-|isInitial|Логическое| Значение true, если это исходный домен, созданный веб-службами Майкрософт (companyname.onmicrosoft.com). У компании может быть только один исходный домен. Не допускает значение null. |
-|isRoot|Логическое| Значение true, если это проверенный корневой домен. Значение false, если домен является поддоменом или не проверен. Не допускает значение null. |
-|isVerified|Boolean| Значение true, если право собственности на домен подтверждено. Не допускает значение null. |
+|isInitial|Логический| Значение true, если это исходный домен, созданный веб-службами Майкрософт (companyname.onmicrosoft.com). У компании может быть только один исходный домен. Не допускает значение null. |
+|isRoot|Логический| Значение true, если это проверенный корневой домен. Значение false, если домен является поддоменом или не проверен. Не допускает значение null. |
+|isVerified|Логический| Значение true, если право собственности на домен подтверждено. Не допускает значение null. |
+|Пассворднотификатионвиндовиндайс|Int32|Указывает количество дней до того, как пользователь получит уведомление о том, что срок действия пароля не истечет. Если свойство не задано, будет использоваться значение по умолчанию (14 дней).|
+|Пассвордвалидитипериодиндайс|Int32| Указывает период времени, в течение которого пароль должен быть действителен до его изменения. Если свойство не задано, будет использоваться значение по умолчанию (90 дней). |
 |supportedServices|Коллекция String| Возможности, назначенные домену.<br><br>Могут включать ноль, одно или несколько из следующих значений: *Email*, *Sharepoint*, *EmailInternalRelayOnly*, *OfficeCommunicationsOnline*, *SharePointDefaultDomain*, *FullRedelegation*, *SharePointPublic*, *OrgIdAuthentication*, *Yammer*, *Intune*.<br><br> Значения, которые можно добавлять и удалять с помощью API Graph: *Email*, *OfficeCommunicationsOnline*, *Yammer*.<br>Не допускает значение null.|
 |state|[domainState](domainstate.md)| Состояние асинхронных операций, запланированных для домена. |
 
@@ -64,7 +66,7 @@ ms.locfileid: "29518641"
 
 Отношения между доменом и другими объектами в каталоге, такими как записи проверки и записи конфигурации служб, предоставляются через свойства навигации. Сведения о таких отношениях можно прочесть, указав соответствующие свойства навигации в запросах.
 
-| Связь | Тип |Описание|
+| Отношение | Тип |Описание|
 |:---------------|:--------|:----------|
 |domainNameReferences|Коллекция [directoryObject](directoryobject.md)| Только для чтения, допускает значение null.|
 |serviceConfigurationRecords|Коллекция [domainDnsRecord](domaindnsrecord.md)| DNS-записи, которые клиент добавляет в файл зоны DNS домена, чтобы использовать домен с Microsoft Online Services.<br>Только для чтения, допускает значение null. |
@@ -91,6 +93,8 @@ ms.locfileid: "29518641"
   "isInitial": true,
   "isRoot": true,
   "isVerified": true,
+  "passwordNotificationWindowInDays": 14,
+  "passwordValidityPeriodInDays": 90,
   "state": {"@odata.type": "microsoft.graph.domainState"},
   "supportedServices": ["String"]
 }

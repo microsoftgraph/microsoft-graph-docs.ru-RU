@@ -1,41 +1,33 @@
 ---
-title: Тип ресурса targetResource
-description: Указывает коллекцию конечных типов ресурсов, связанные с действием аудита. Каждый тип целевого ресурса наследуют свойства, используйте следующий из данного ресурса.
+title: сложный тип ресурса targetResource — API Microsoft Graph
+description: Определяет сложный тип ресурса сущности targetResource API Microsoft Graph, который поддерживает действия Организации отчетности журнала аудита (клиента).
+author: lleonard-msft
 localization_priority: Normal
-ms.openlocfilehash: f86cfe45870292dae93327859c32d38aa2b252fd
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.prod: azure-ad
+ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
+ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828681"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30342291"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
-Указывает коллекцию конечных типов ресурсов, связанные с действием аудита. Каждый тип целевого ресурса наследуют свойства, используйте следующий из данного ресурса.
+
+Представляет целевые типы ресурсов, связанные с действиями аудита. 
 
 
 ## <a name="properties"></a>Свойства
+
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Указывает отображаемое имя, описанные в разделе типы назначения ресурсов ниже ресурсов.|
-|id|Строка|Указывает уникальный идентификатор ресурса (например: идентификатор пользователя, AppId, RoleId.).|
-|modifiedProperties|[modifiedProperty](modifiedproperty.md) коллекции|Указывает имя, старое значение и новое значение каждого атрибута, которые изменены. Этот параметр доступен для всех действий, «Обновить»|
+|id|String|Указывает уникальный идентификатор ресурса.|
+|displayName|String|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
+|type|String|Описывает тип ресурса.  Примеры значений: `Application`, `Group` `ServicePrincipal`, и `User`.|
+|userPrincipalName|String|Если **** для `User`параметра Type задано значение, включается имя пользователя, инициировавшего действие; `null` для других типов.|
+|groupType|String|Если **** для `Group`параметра Type задано значение, это указывает тип группы.|
+|modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
 
-### <a name="target-resource-types"></a>Типы назначения ресурсов
-
-Тип ресурса конечного зависит от базового ресурса:
-
-|Имя ресурса| Справочные материалы|
-|-------------|----------|
-Device|[targetResourceDevice](targetresourcedevice.md)
-Каталог|[targetResourceDirectory] (targetresourcedirectory.md]
-Group|[targetResourceGroup](targetresourcegroup.md)
-Политика|[targetResourcePolicy](targetresourcepolicy.md)
-Role|[targetResourceRole](targetresourcerole.md)
-Участников-служб|[targetResourceServicePrincipal](targetresourceserviceprincipal.md)
-Пользователь|[targetResourceUser](targetresourceuser.md)
-Другое|[targetResourceOther](targetresourceother.md)
-
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -49,12 +41,16 @@ Role|[targetResourceRole](targetresourcerole.md)
 
 ```json
 {
-  "displayName": "String",
   "id": "String",
+  "displayName": "String",
+  "type": "String",
+  "userPrincipalName": "String",
+  "groupType": "String", 
   "modifiedProperties": [{"@odata.type": "microsoft.graph.modifiedProperty"}]
 }
 
 ```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
