@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса securityVendorInformation
+title: Тип ресурса Секуритивендоринформатион
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e67a5306b1dd08933877dbe3e64cab766ccd6a96
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7f48c27ba94d8419ce244143a48cf6ab04dd080e
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512180"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364586"
 ---
-# <a name="securityvendorinformation-resource-type"></a>Тип ресурса securityVendorInformation
+# <a name="securityvendorinformation-resource-type"></a>Тип ресурса Секуритивендоринформатион
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о безопасности продуктов и услуг поставщика, поставщик и subprovider (например, поставщика = корпорации Майкрософт; поставщика = ATP Защитник Windows; subProvider = AppLocker).
+Содержит сведения о продуктах, поставщиках и подценнях безопасности (например, Vendor = Microsoft; Provider = защитник Windows ATP; подПредоставление = AppLocker).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|Поставщик |String|Определенного поставщика (продуктов и услуг - не поставщика организации); Например WindowsDefenderATP.|
-|providerVersion|String|Версия поставщика или subprovider, если он существует, создавшее оповещение. *Required*|
-|subProvider|String|Определенные subprovider (в разделе статистической обработки поставщика); Например WindowsDefenderATP.SmartScreen.|
-|поставщика |String|Имя оповещения поставщика (например, Microsoft, Dell, FireEye). *Required*|
+|поставщики |String|Конкретный поставщик (продукт или услуга — не компания поставщика); Например, Виндовсдефендератп.|
+|Провидерверсион|String|Версия поставщика или подСистемы, если она существует, создавшего оповещение. **Required**|
+|подПредоставление|String|Конкретный подпредоставленный поставщик (в разделе Поставщик статистической обработки); Например, Виндовсдефендератп. SmartScreen.|
+|поставщика |String|Имя поставщика оповещений (например, Microsoft, Dell, Фирие). **Required**|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Соответствовать является представлением JSON ресурса.
+Следующем — это представление ресурса в формате JSON.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
