@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 47e4cb6afc2b3057ecc17f85cdbca3672927a06d
-ms.sourcegitcommit: 7412dd2f2d5ed66afa2b0759c861ad23b4c6ecdf
+ms.openlocfilehash: 155059b2d16d072009dcbf8af4d24f1b2768fd67
+ms.sourcegitcommit: 98c3a9c791f82e5fab504f51f49a6835311381c6
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212398"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30314639"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -94,12 +94,6 @@ ms.locfileid: "30212398"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |1.0|Представлены новый тип ресурса [identityProvider](/graph/api/resources/identityprovider?view=graph-rest-v1.0) и операции [create](/graph/api/identityprovider-post-identityproviders?view=graph-rest-v1.0), [list](/graph/api/identityprovider-list?view=graph-rest-v1.0), [get](/graph/api/identityprovider-get?view=graph-rest-v1.0), [update](/graph/api/identityprovider-update?view=graph-rest-v1.0) и [delete](/graph/api/identityprovider-delete?view=graph-rest-v1.0).|
 
-### <a name="reports-apis"></a>API отчетов
-
-| **Тип изменения** | **Версия** | **Описание**                  |
-|:----------------|:------------|:-----------------------------------------|
-| Дополнение        | бета  | Добавлены свойства **office365Active** и **office365Inactive** для объекта [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
-
 ### <a name="directory-apis"></a>API каталогов
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -144,14 +138,13 @@ ms.locfileid: "30212398"
 | :-------------- | :------------ | :--------------------------------------- |
 |Дополнение |Бета| Добалены элементы educationStandard, educationClass, educationProfessionalLearningCommunity, educationStaff и unknownFutureValue в перечисление [teamSpecialization](/graph/api/resources/teamspecialization?view=graph-rest-beta).|
 
+### <a name="reports-apis"></a>API отчетов
+
+| **Тип изменения** | **Версия** | **Описание**                  |
+|:----------------|:------------|:-----------------------------------------|
+| Дополнение        | бета  | Добавлены свойства **office365Active** и **office365Inactive** для объекта [office365ServicesUserCounts](/graph/api/resources/office365ServicesUserCounts?view=graph-rest-beta).|
+
 ## <a name="december-2018"></a>Декабрь 2018 г.
-
-### <a name="security-apis"></a>API безопасности
-
-| **Тип изменения** | **Версия** | **Описание**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | бета        | Представлен новый сложный тип [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).|
-| Дополнение        | бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
 
 ### <a name="data-policy-api"></a>API политики данных
 
@@ -204,6 +197,13 @@ ms.locfileid: "30212398"
 | Удаление | бета | Удалено свойство `roleAssignmentStartDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 | Удаление | бета | Удалено свойство `roleAssignmentEndDateTime` для объекта [governanceRoleAssignmentRequest](/graph/api/resources/governanceroleassignmentrequest?view=graph-rest-beta).|
 
+### <a name="security-apis"></a>API безопасности
+
+| **Тип изменения** | **Версия** | **Описание**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | бета        | Представлен новый сложный тип [complianceInformation](/graph/api/complianceInformation/team?view=graph-rest-beta).|
+| Дополнение        | бета        | Представлен новый сложный тип [certificationControl](/graph/api/certificationControl/team?view=graph-rest-beta).|
+
 ## <a name="november-2018"></a>Ноябрь 2018 г.
 
 ### <a name="data-policy-operations-api"></a>API операций с политикой данных
@@ -211,6 +211,18 @@ ms.locfileid: "30212398"
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | бета        | Добавлено новое свойство **progress** для [dataPolicyOperation](/graph/api/resources/dataPolicyOperation?view=graph-rest-beta). Оно указывает ход выполнения операции.
+
+### <a name="directory-apis"></a>API каталогов
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 | Добавлено действие [forceDelete](/graph/api/domain-forcedelete?view=graph-rest-1.0) для объекта [domains](/graph/api/resources/domain?view=graph-rest-1.0).|
+| Дополнение | бета | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-beta). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
+| Дополнение | бета | Добавлен новый метод transitiveMemberOf для объектов [users](/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-beta) и [service principals](/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).|
+| Дополнение | бета | Добавлен метод memberOf, чтобы получить сведения о непосредственном [участии](/graph/api/device-list-members?view=graph-rest-beta) для устройств. Этот метод добавлен для получения списка участий, включая вложенные участия.|
+| Дополнение | бета | Добавлены новые свойства в объект [users](/graph/api/resources/user?view=graph-rest-beta): **faxNumber**, **onPremisesDistinguishedName** и **otherMails**.|
+| Дополнение | бета | Добавлено свойство **forceChangePasswordNextSignInWithMfa** в сложный тип [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-beta).|
+| Дополнение    | бета | Добавлены свойства externalUserState и externalUserStateChangeDateTime в объект [user](/graph/api/resources/user?view=graph-rest-beta).|
 
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
@@ -247,27 +259,11 @@ ms.locfileid: "30212398"
 |Дополнение |бета| Представлен новый элемент перечисления teamsAppDistributionMethod.|
 |Дополнение |бета| Представлено новое действие обновления приложения в [/teams/{id}/installedApps](/graph/api/resources/teamsappinstallation?view=graph-rest-beta). |
 
-### <a name="directory-apis"></a>API каталогов
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлено действие [forceDelete](/graph/api/domain-forcedelete?view=graph-rest-1.0) для объекта [domains](/graph/api/resources/domain?view=graph-rest-1.0).|
-| Дополнение | бета | Добавлен новый метод transitiveMembers для объекта [groups](/graph/api/group-list-transitivemembers?view=graph-rest-beta). Этот метод возвращает плоский список элементов, включая вложенные элементы.|
-| Дополнение | бета | Добавлен новый метод transitiveMemberOf для объектов [users](/graph/api/user-list-transitivemembersof?view=graph-rest-beta), [groups](/graph/api/group-list-transitivemembersof?view=graph-rest-beta), [devices](/graph/api/device-list-transitivemembersof?view=graph-rest-beta) и [service principals](/graph/api/serviceprincipal-list-transitivemembersof?view=graph-rest-beta).|
-| Дополнение | бета | Добавлен метод memberOf, чтобы получить сведения о непосредственном [участии](/graph/api/device-list-members?view=graph-rest-beta) для устройств. Этот метод добавлен для получения списка участий, включая вложенные участия.|
-| Дополнение | бета | Добавлены новые свойства в объект [users](/graph/api/resources/user?view=graph-rest-beta): **faxNumber**, **onPremisesDistinguishedName** и **otherMails**.|
-| Дополнение | бета | Добавлено свойство **forceChangePasswordNextSignInWithMfa** в сложный тип [passwordProfile](/graph/api/resources/passwordprofile?view=graph-rest-beta).|
-
 ### <a name="reports-apis"></a>API отчетов
 
 | Тип изменения | Версия                                    | Описание                              |
 | :---------- | :----------------------------------------- | :--------------------------------------- |
-| Дополнение    | Бета-версия Microsoft Graph для Китая под управлением 21Vianet | Добавлены следующие API:<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta);<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta);<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta);<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta);<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta);<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta);<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta);<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta);<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta);<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta);<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta);<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta);<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta);<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta);<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta);<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta);<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta);<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta);<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta);<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta);<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta);<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta);<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta);<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta);<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta);<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta);<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta);<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta);<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta);<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta);<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta);<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta);<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta);<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta);<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta);<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta);<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta);<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta);<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta);<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta);<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta);<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta);<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta); |
-
-### <a name="directory-apis"></a>API каталогов
-| Тип изменения | Версия                                    | Описание                              |
-| :---------- | :----------------------------------------- | :--------------------------------------- |
-| Дополнение    | бета | Добавлены свойства externalUserState и externalUserStateChangeDateTime в объект [user](/graph/api/resources/user?view=graph-rest-beta).|
+| Дополнение    | Бета-версия Microsoft Graph для Китая под управлением 21Vianet | Добавлены следующие API:<br>[getEmailActivityUserDetail](/graph/api/reportroot-getemailactivityuserdetail?view=graph-rest-beta);<br>[getEmailActivityCounts](/graph/api/reportroot-getemailactivitycounts?view=graph-rest-beta);<br>[getEmailActivityUserCounts](/graph/api/reportroot-getemailactivityusercounts?view=graph-rest-beta);<br>[getEmailAppUsageUserDetail](/graph/api/reportroot-getemailappusageuserdetail?view=graph-rest-beta);<br>[getEmailAppUsageAppsUserCounts](/graph/api/reportroot-getemailappusageappsusercounts?view=graph-rest-beta);<br>[getEmailAppUsageUserCounts](/graph/api/reportroot-getemailappusageusercounts?view=graph-rest-beta);<br>[getEmailAppUsageVersionsUserCounts](/graph/api/reportroot-getemailappusageversionsusercounts?view=graph-rest-beta);<br>[getMailboxUsageDetail](/graph/api/reportroot-getmailboxusagedetail?view=graph-rest-beta);<br>[getMailboxUsageMailboxCounts](/graph/api/reportroot-getmailboxusagemailboxcounts?view=graph-rest-beta);<br>[getMailboxUsageQuotaStatusMailboxCounts](/graph/api/reportroot-getmailboxusagequotastatusmailboxcounts?view=graph-rest-beta);<br>[getMailboxUsageStorage](/graph/api/reportroot-getmailboxusagestorage?view=graph-rest-beta);<br>[getOffice365ActivationsUserDetail](/graph/api/reportroot-getoffice365activationsuserdetail?view=graph-rest-beta);<br>[getOffice365ActivationCounts](/graph/api/reportroot-getoffice365activationcounts?view=graph-rest-beta);<br>[getOffice365ActivationsUserCounts](/graph/api/reportroot-getoffice365activationsusercounts?view=graph-rest-beta);<br>[getOffice365ActiveUserDetail](/graph/api/reportroot-getoffice365activeuserdetail?view=graph-rest-beta);<br>[getOffice365ActiveUserCounts](/graph/api/reportroot-getoffice365activeusercounts?view=graph-rest-beta);<br>[getOffice365ServicesUserCounts](/graph/api/reportroot-getoffice365servicesusercounts?view=graph-rest-beta);<br>[getOffice365GroupsActivityDetail](/graph/api/reportroot-getoffice365groupsactivitydetail?view=graph-rest-beta);<br> [getOffice365GroupsActivityCounts](/graph/api/reportroot-getoffice365groupsactivitycounts?view=graph-rest-beta);<br>[getOffice365GroupsActivityGroupCounts](/graph/api/reportroot-getoffice365groupsactivitygroupcounts?view=graph-rest-beta);<br>[getOffice365GroupsActivityStorage](/graph/api/reportroot-getoffice365groupsactivitystorage?view=graph-rest-beta);<br>[getOffice365GroupsActivityFileCounts](/graph/api/reportroot-getoffice365groupsactivityfilecounts?view=graph-rest-beta);<br>[getOneDriveActivityUserDetail](/graph/api/reportroot-getonedriveactivityuserdetail?view=graph-rest-beta);<br>[getOneDriveActivityUserCounts](/graph/api/reportroot-getonedriveactivityusercounts?view=graph-rest-beta);<br>[getOneDriveActivityFileCounts](/graph/api/reportroot-getonedriveactivityfilecounts?view=graph-rest-beta);<br>[getOneDriveUsageAccountDetail](/graph/api/reportroot-getonedriveusageaccountdetail?view=graph-rest-beta);<br>[getOneDriveUsageAccountCounts](/graph/api/reportroot-getonedriveusageaccountcounts?view=graph-rest-beta);<br>[getOneDriveUsageFileCounts](/graph/api/reportroot-getonedriveusagefilecounts?view=graph-rest-beta);<br>[getOneDriveUsageStorage](/graph/api/reportroot-getonedriveusagestorage?view=graph-rest-beta);<br>[getSharePointActivityUserDetail](/graph/api/reportroot-getsharepointactivityuserdetail?view=graph-rest-beta);<br>[getSharePointActivityFileCounts](/graph/api/reportroot-getsharepointactivityfilecounts?view=graph-rest-beta);<br>[getSharePointActivityUserCounts](/graph/api/reportroot-getsharepointactivityusercounts?view=graph-rest-beta);<br>[getSharePointActivityPages](/graph/api/reportroot-getsharepointactivitypages?view=graph-rest-beta);<br>[getSharePointSiteUsageDetail](/graph/api/reportroot-getsharepointsiteusagedetail?view=graph-rest-beta);<br>[getSharePointSiteUsageFileCounts](/graph/api/reportroot-getsharepointsiteusagefilecounts?view=graph-rest-beta);<br>[getSharePointSiteUsageSiteCounts](/graph/api/reportroot-getsharepointsiteusagesitecounts?view=graph-rest-beta);<br>[getSharePointSiteUsageStorage](/graph/api/reportroot-getsharepointsiteusagestorage?view=graph-rest-beta);<br>[getSharePointSiteUsagePages](/graph/api/reportroot-getsharepointsiteusagepages?view=graph-rest-beta);<br>[getSkypeForBusinessActivityUserDetail](/graph/api/reportroot-getskypeforbusinessactivityuserdetail?view=graph-rest-beta);<br>[getSkypeForBusinessActivityCounts](/graph/api/reportroot-getskypeforbusinessactivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessActivityUserCounts](/graph/api/reportroot-getskypeforbusinessactivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessDeviceUsageUserDetail](/graph/api/reportroot-getskypeforbusinessdeviceusageuserdetail?view=graph-rest-beta);<br>[getSkypeForBusinessDeviceUsageDistributionUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusagedistributionusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessDeviceUsageUserCounts](/graph/api/reportroot-getskypeforbusinessdeviceusageusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessOrganizerActivityCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessOrganizerActivityUserCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessOrganizerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessorganizeractivityminutecounts?view=graph-rest-beta);<br>[getSkypeForBusinessParticipantActivityCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessParticipantActivityUserCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessParticipantActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinessparticipantactivityminutecounts?view=graph-rest-beta);<br>[getSkypeForBusinessPeerToPeerActivityCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivitycounts?view=graph-rest-beta);<br>[getSkypeForBusinessPeerToPeerActivityUserCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityusercounts?view=graph-rest-beta);<br>[getSkypeForBusinessPeerToPeerActivityMinuteCounts](/graph/api/reportroot-getskypeforbusinesspeertopeeractivityminutecounts?view=graph-rest-beta). |
 
 ## <a name="october-2018"></a>Октябрь 2018 г.
 
@@ -355,15 +351,6 @@ ms.locfileid: "30212398"
 |Дополнение|бета|Добавлено свойство **lastUpdateDateTime** для сложного типа [windowsMalwareNameCount](/graph/api/resources/intune-devices-windowsmalwarenamecount?view=graph-rest-beta)|
 |Дополнение|бета|Добавлено свойство **lastUpdateDateTime** для сложного типа [windowsMalwareStateCount](/graph/api/resources/intune-devices-windowsmalwarestatecount?view=graph-rest-beta)|
 
-### <a name="privileged-identity-management-apis"></a>API управления привилегированными пользователями
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Изменение | бета | Изменен объект [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta).|
-| Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta), а также следующие методы и действия:<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [Create](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
-| Дополнение | бета | Добавлено [Update](/graph/api/privilegedrolesettings-update?view=graph-rest-beta) для [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)|
-| Удаление |бета| Удалена [самостоятельная активация назначения ролей](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)|
-
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -375,6 +362,15 @@ ms.locfileid: "30212398"
 | **Тип изменения** | **Версия** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Удаление         | 1.0        | Это исправление в документации: удалено свойство **flag** из статьи по объекту [contact](/graph/api/resources/contact?view=graph-rest-1.0). Свойство никогда не было доступным в объекте **contact**.|
+
+### <a name="privileged-identity-management-apis"></a>API управления привилегированными пользователями
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Изменение | бета | Изменен объект [privilegedapproval](/graph/api/resources/privilegedapproval?view=graph-rest-beta).|
+| Дополнение | бета | Добавлен объект [privilegedroleassignmentrequest](/graph/api/resources/privilegedroleassignmentrequest?view=graph-rest-beta), а также следующие методы и действия:<br> [List](/graph/api/privilegedroleassignmentrequest-list?view=graph-rest-beta) <br> [Create](/graph/api/privilegedroleassignmentrequest-post?view=graph-rest-beta) <br> [Cancel](/graph/api/privilegedroleassignmentrequest-cancel?view=graph-rest-beta) <br> [My](/graph/api/privilegedroleassignmentrequest-my?view=graph-rest-beta) |
+| Дополнение | бета | Добавлено [Update](/graph/api/privilegedrolesettings-update?view=graph-rest-beta) для [privilegedRoleSettings](/graph/api/resources/privilegedrolesettings?view=graph-rest-beta)|
+| Удаление |бета| Удалена [самостоятельная активация назначения ролей](/graph/api/privilegedrole_selfactivate?view=graph-rest-beta)|
 
 ### <a name="reports-apis"></a>API отчетов
 | Тип изменения | Версия | Описание                              |
@@ -467,29 +463,6 @@ ms.locfileid: "30212398"
 |Удаление|бета| Удалены свойства isBlocks и installedState из [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta).|
 |Изменение| бета | Свойство context в [teamsApp](/graph/api/resources/teamsapp?view=graph-rest-beta) переименовано на distributionMethod.|
 
-### <a name="outlook-mail"></a>Почта Outlook
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | 1.0 и бета | Свойство **InternetMessageHeaders** объекта [message](/graph/api/resources/message?view=graph-rest-1.0) теперь доступно для записи при создании сообщения. |
-
-
-### <a name="project-rome-notifications-api"></a>API уведомлений Project Rome
-
-| **Тип изменения** | **Версия** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение          | бета        | Добавлен тип ресурса [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta). |
-| Дополнение          | бета        | Добавлены API [создания и публикации уведомлений] (/graph/api/projectrome_notification_post?view=graph-rest-beta).|
-
-### <a name="security-apis"></a>API безопасности
-
-| **Тип изменения** | **Версия** | **Описание**              |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | бета       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), включающие следующие ресурсы и операции:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Обновление secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
-| Дополнение        | бета        | Представлен новый сложный тип [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
-
-
-
 ### <a name="onedrive-and-sharepoint-apis"></a>API OneDrive и SharePoint
 
 | **Тип изменения** | **Версия** | **Описание**                          |
@@ -520,6 +493,28 @@ ms.locfileid: "30212398"
 | Дополнение        | бета        | Добавлено свойство **location** для сложного типа [itemActivity](/graph/api/resources/itemactivity?view=graph-rest-beta) |
 | Дополнение        | 1.0        | Добавлено свойство **preview** для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
 | Дополнение        | 1.0        | Добавлен сложный тип [itemPreviewInfo](/graph/api/resources/itempreviewinfo?view=graph-rest-1.0) |
+
+### <a name="outlook-mail"></a>Почта Outlook
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | 1.0 и бета | Свойство **InternetMessageHeaders** объекта [message](/graph/api/resources/message?view=graph-rest-1.0) теперь доступно для записи при создании сообщения. |
+
+
+### <a name="project-rome-notifications-api"></a>API уведомлений Project Rome
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение          | бета        | Добавлен тип ресурса [notification](/graph/api/resources/projectrome-notification?view=graph-rest-beta). |
+| Дополнение          | бета        | Добавлены API [создания и публикации уведомлений] (/graph/api/projectrome_notification_post?view=graph-rest-beta).|
+
+### <a name="security-apis"></a>API безопасности
+
+| **Тип изменения** | **Версия** | **Описание**              |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | бета       | Добавлены API оценки безопасности для [API безопасности](/graph/api/resources/securescore-api-overview?view=graph-rest-beta), включающие следующие ресурсы и операции:<br/>[secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (и соответствующие объекты)<br/>[Перечисление объектов secureScores](/graph/api/securescores-list?view=graph-rest-beta)<br/>[secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta)<br/>[Перечисление объектов secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-list?view=graph-rest-beta)<br/>[Обновление secureScoreControlProfiles](/graph/api/securescorecontrolprofiles-update?view=graph-rest-beta) |
+| Дополнение        | бета        | Представлен новый сложный тип [secureScoreControlStateUpdate](/graph/api/resources/securescorecontrolstateupdate?view=graph-rest-beta) |
+
 
 ## <a name="august-2018"></a>Август 2018 г.
 
@@ -664,6 +659,12 @@ ms.locfileid: "30212398"
 
 ## <a name="july-2018"></a>Июль 2018 г.
 
+### <a name="application-and-serviceprincipal-api-changes"></a>Изменения в API application и servicePrincipal
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Изменение          | Бета-версия        | API [application](/graph/api/resources/application?view=graph-rest-beta) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) будут обновлены в предварительной (бета) версии. Первый набор изменений будет применен 16 мая 2018 г. Изменения включают в себя переименование и реструктуризацию свойств. Большинство существующих свойств будут доступны только после применения изменений. Будут добавлены новые свойства. Прежде чем выйдет версия 1.0 с изменениями, будет выпущена бета-версия. |
+
 ### <a name="directory-apis"></a>API каталогов
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -676,18 +677,6 @@ ms.locfileid: "30212398"
 |Дополнение|Бета-версия|Добавлена возможность [получения API сообщений в канале](/graph/api/channel-get-message?view=graph-rest-beta) |
 |Дополнение|Бета-версия|Добавлена возможность [получения всех API ответов на сообщения](/graph/api/channel-list-messagereplies?view=graph-rest-beta) |
 |Дополнение|Бета-версия|Добавлена возможность [получения ответа для API сообщений](/graph/api/channel-get-messagereply?view=graph-rest-beta) |
-
-### <a name="synchronization-apis"></a>API синхронизации
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлено свойство **progress** для объекта [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta), чтобы разрешить клиентам наблюдать за ходом выполнения задания синхронизации.|
-
-### <a name="application-and-serviceprincipal-api-changes"></a>Изменения в API application и servicePrincipal
-
-| **Тип изменения** | **Версия** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Изменение          | Бета-версия        | API [application](/graph/api/resources/application?view=graph-rest-beta) и [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) будут обновлены в предварительной (бета) версии. Первый набор изменений будет применен 16 мая 2018 г. Изменения включают в себя переименование и реструктуризацию свойств. Большинство существующих свойств будут доступны только после применения изменений. Будут добавлены новые свойства. Прежде чем выйдет версия 1.0 с изменениями, будет выпущена бета-версия. |
 
 ### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -722,6 +711,12 @@ ms.locfileid: "30212398"
 |Дополнение |Бета-версия | Добавлен сложный тип [typedEmailAddress](/graph/api/resources/typedemailaddress?view=graph-rest-beta). |
 |Изменение | Бета-версия | Изменен тип свойства **emailAddresses** для ресурса [contact](/graph/api/resources/contact?view=graph-rest-beta). Теперь это коллекция экземпляров **typedEmailAddress**.|
 
+### <a name="synchronization-apis"></a>API синхронизации
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлено свойство **progress** для объекта [sychronizationStatus](/graph/api/resources/synchronization-synchronizationstatus?view=graph-rest-beta), чтобы разрешить клиентам наблюдать за ходом выполнения задания синхронизации.|
+
 ### <a name="webhooks"></a>Веб-перехватчики
 | Тип изменения | Версия | Описание                              |
 |:------------|:--------|:-----------------------------------------|
@@ -730,18 +725,18 @@ ms.locfileid: "30212398"
 
 ## <a name="june-2018"></a>Июнь 2018 г.
 
-### <a name="identity-and-access-apis"></a>API удостоверений и доступа
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | бета | Добавлена функция [получения доступа к проверкам](/graph/api/resources/accessreviews-root?view=graph-rest-beta) в [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta). |
-
 ### <a name="directory-apis"></a>API каталогов
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение | Все | Новые разрешения приложений _Application.ReadWrite.All_ и _Application.ReadWrite.OwnedBy_, позволяющие клиентскому приложению создавать, читать, обновлять и удалять приложения и субъекты-службы, как описано в [статье о разрешениях](permissions-reference.md#application-resource-permissions). |
 | Дополнение | 1.0 | Добавлены свойства **ageGroup**, **legalAgeGroupClassification** и **ConsentRequiredForMinor** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0)
+
+### <a name="identity-and-access-apis"></a>API удостоверений и доступа
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | бета | Добавлена функция [получения доступа к проверкам](/graph/api/resources/accessreviews-root?view=graph-rest-beta) в [Azure AD](/graph/api/resources/azure-ad-overview?view=graph-rest-beta). |
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 
@@ -819,6 +814,12 @@ ms.locfileid: "30212398"
 
 ## <a name="may-2018"></a>Май 2018 г.
 
+### <a name="azure-ad-apis"></a>API Azure AD
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Изменение           | Бета          | Свойство **creatorUserId** сущности [subscription](/graph/api/resources/subscription?view=graph-rest-beta) переименовано в **creatorId** для лучшего отражения смысла. |
+
 ### <a name="directory-apis"></a>API каталогов
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
@@ -842,6 +843,12 @@ ms.locfileid: "30212398"
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | 1.0 и бета | Добавлено свойство **importance** в объект [post](/graph/api/resources/post?view=graph-rest-1.0). |
+
+### <a name="insights-api"></a>API аналитики
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение        | Бета          | Добавлены объект [settings](/graph/api/resources/user-settings?view=graph-rest-beta) и следующие методы CRUD: <br> [получение](/graph/api/user-get-settings?view=graph-rest-beta); <br> [обновление](/graph/api/user-update-settings?view=graph-rest-beta). |
 
 ### <a name="microsoft-bookings-api"></a>API Microsoft Bookings
 
@@ -904,19 +911,7 @@ ms.locfileid: "30212398"
 |Удаление|Бета-версия|Удален элемент **paloAltoGlobalProtect** из типа перечисления [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta).|
 |Дополнение|Бета-версия|Добавлен элемент **paloAltoGlobalProtect** к типу перечисления [windows10VpnConnectionType](/graph/api/resources/intune-deviceconfig-windows10vpnconnectiontype?view=graph-rest-beta).|
 
-### <a name="insights-api"></a>API аналитики
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Дополнение        | Бета          | Добавлены объект [settings](/graph/api/resources/user-settings?view=graph-rest-beta) и следующие методы CRUD: <br> [получение](/graph/api/user-get-settings?view=graph-rest-beta); <br> [обновление](/graph/api/user-update-settings?view=graph-rest-beta). |
-
-### <a name="azure-ad-apis"></a>API Azure AD
-
-| **Тип изменения** | **Версия**   | **Описание**                          |
-| :-------------- | :------------ | :--------------------------------------- |
-| Изменение           | Бета          | Свойство **creatorUserId** сущности [subscription](/graph/api/resources/subscription?view=graph-rest-beta) переименовано в **creatorId** для лучшего отражения смысла. |
-
-## <a name="april-2018"></a>Апрель 2018 г.
+## <a name="april-2018"></a>Апрель 2018 г.
 
 ### <a name="audit-log-api"></a>API журнала аудита
 
@@ -951,7 +946,7 @@ ms.locfileid: "30212398"
 |Дополнение|1.0|Добавлены новые типы перечисления:<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-1.0).<br/>|
 |Дополнение|1.0|Добавлено свойство **managedDeviceOwnerType** для объекта [managedDevice](/graph/api/resources/intune-devices-manageddevice?view=graph-rest-1.0).|
 |Дополнение|1.0|Добавлено свойство навигации **deviceStatuses** для объекта [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-1.0).|
-|Дополнение|1.0|Добавлен член **androidWorkProfile** для типа перечисления [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-1.0).|
+|Дополнение|1.0|Добавлен элемент **androidWorkProfile** для типа перечисления [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-1.0).|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[androidWorkProfileCertificateProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofilecertificateprofilebase?view=graph-rest-beta)<br/>[androidWorkProfileCustomConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilecustomconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileEasEmailProfileBase](/graph/api/resources/intune-deviceconfig-androidworkprofileeasemailprofilebase?view=graph-rest-beta)<br/>[androidWorkProfileEnterpriseWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofileenterprisewificonfiguration?view=graph-rest-beta)<br/>[androidWorkProfileGeneralDeviceConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegeneraldeviceconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileGmailEasConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilegmaileasconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileNineWorkEasConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilenineworkeasconfiguration?view=graph-rest-beta)<br/>[androidWorkProfilePkcsCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilepkcscertificateprofile?view=graph-rest-beta)<br/>[androidWorkProfileScepCertificateProfile](/graph/api/resources/intune-deviceconfig-androidworkprofilescepcertificateprofile?view=graph-rest-beta)<br/>[androidWorkProfileTrustedRootCertificate](/graph/api/resources/intune-deviceconfig-androidworkprofiletrustedrootcertificate?view=graph-rest-beta)<br/>[androidWorkProfileVpnConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconfiguration?view=graph-rest-beta)<br/>[androidWorkProfileWiFiConfiguration](/graph/api/resources/intune-deviceconfig-androidworkprofilewificonfiguration?view=graph-rest-beta)<br/>[restrictedAppsViolation](/graph/api/resources/intune-deviceconfig-restrictedappsviolation?view=graph-rest-beta)<br/>[windowsAutopilotDeploymentProfileAssignment](/graph/api/resources/intune-enrollment-windowsautopilotdeploymentprofileassignment?view=graph-rest-beta)<br/>|
 |Дополнение|Бета|Добавлены новые сложные типы:<br/>[managedDeviceModelsAndManufacturers](/graph/api/resources/intune-devices-manageddevicemodelsandmanufacturers?view=graph-rest-beta)<br/>[managedDeviceReportedApp](/graph/api/resources/intune-devices-manageddevicereportedapp?view=graph-rest-beta)<br/>[windowsEnrollmentStatusScreenSettings](/graph/api/resources/intune-enrollment-windowsenrollmentstatusscreensettings?view=graph-rest-beta)<br/>|
 |Дополнение|Бета|Добавлены новые типы перечисления:<br/>[androidWorkProfileCrossProfileDataSharingType](/graph/api/resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype?view=graph-rest-beta)<br/>[androidWorkProfileDefaultAppPermissionPolicyType](/graph/api/resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype?view=graph-rest-beta)<br/>[androidWorkProfileRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype?view=graph-rest-beta)<br/>[androidWorkProfileVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidworkprofilevpnconnectiontype?view=graph-rest-beta)<br/>[bitLockerRecoveryInformationType](/graph/api/resources/intune-deviceconfig-bitlockerrecoveryinformationtype?view=graph-rest-beta)<br/>[localSecurityOptionsInformationShownOnLockScreenType](/graph/api/resources/intune-deviceconfig-localsecurityoptionsinformationshownonlockscreentype?view=graph-rest-beta)<br/>[managedAppRemediationAction](/graph/api/resources/intune-mam-managedappremediationaction?view=graph-rest-beta)<br/>[managedDeviceOwnerType](/graph/api/resources/intune-devices-manageddeviceownertype?view=graph-rest-beta)<br/>[restrictedAppsState](/graph/api/resources/intune-deviceconfig-restrictedappsstate?view=graph-rest-beta)<br/>[windows10VpnProfileTarget](/graph/api/resources/intune-deviceconfig-windows10vpnprofiletarget?view=graph-rest-beta)<br/>|
@@ -980,10 +975,23 @@ ms.locfileid: "30212398"
 |Дополнение|Бета|Добавлено свойство **landingPageCustomizedImage** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta).|
 |Удаление|Бета|Удалено свойство **ipAddressOrFqdn** из сложного типа [vpnServer](/graph/api/resources/intune-deviceconfig-vpnserver?view=graph-rest-beta).|
 |Удаление|Бета|Удалено свойство **restartMode** из сложного типа [windowsUpdateScheduledInstall](/graph/api/resources/intune-deviceconfig-windowsupdatescheduledinstall?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен член **paloAltoGlobalProtect** для типа перечисления [androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен член **paloAltoGlobalProtect** для типа перечисления [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен член **paloAltoGlobalProtect** для типа перечисления [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен член **androidWorkProfile** для типа перечисления [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен элемент **paloAltoGlobalProtect** для типа перечисления [androidForWorkVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidforworkvpnconnectiontype?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен элемент **paloAltoGlobalProtect** для типа перечисления [androidVpnConnectionType](/graph/api/resources/intune-deviceconfig-androidvpnconnectiontype?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен элемент **paloAltoGlobalProtect** для типа перечисления [appleVpnConnectionType](/graph/api/resources/intune-deviceconfig-applevpnconnectiontype?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен элемент **androidWorkProfile** для типа перечисления [policyPlatformType](/graph/api/resources/intune-deviceconfig-policyplatformtype?view=graph-rest-beta).|
+
+### <a name="microsoft-teams"></a>Microsoft Teams
+
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлен новый объект [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен новый объект [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен новый объект [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлен новый объект [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлена новая операция [удаления канала](/graph/api/channel-delete?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлена новая операция [исправления канала](/graph/api/channel-patch?view=graph-rest-beta).|
+|Дополнение|Бета|Добавлено новое свойство webUrl для ресурса [команды](/graph/api/resources/team?view=graph-rest-beta).|
+|Изменение|Бета|Обновлен путь к объекту [channel](/graph/api/resources/channel?view=graph-rest-beta).|
 
 ### <a name="outlook-calendar"></a>Календарь Outlook
 
@@ -1029,20 +1037,6 @@ ms.locfileid: "30212398"
 |Дополнение | 1.0 | Добавлены следующие сложные типы: <br> [workingHours](/graph/api/resources/workinghours?view=graph-rest-1.0) <br> [timeZoneBase](/graph/api/resources/timezonebase?view=graph-rest-1.0) <br> [customTimeZone](/graph/api/resources/customtimezone?view=graph-rest-1.0) <br> [standardTimeZoneOffset](/graph/api/resources/standardtimezoneoffset?view=graph-rest-1.0) <br> [daylightTimeZoneOffset](/graph/api/resources/daylighttimezoneoffset?view=graph-rest-1.0)|
 
 
-### <a name="microsoft-teams"></a>Microsoft Teams
-
-|Тип изменения|Версия|Описание|
-|:---|:---|:---|
-|Дополнение|Бета|Добавлен новый объект [teamMemberSettings](/graph/api/resources/teammembersettings?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен новый объект [teamGuestSettings](/graph/api/resources/teamguestsettings?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен новый объект [teamMessagingSettings](/graph/api/resources/teammessagingsettings?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлен новый объект [teamFunSettings](/graph/api/resources/teamfunsettings?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлена новая операция [удаления канала](/graph/api/channel-delete?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлена новая операция [исправления канала](/graph/api/channel-patch?view=graph-rest-beta).|
-|Дополнение|Бета|Добавлено новое свойство webUrl для ресурса [команды](/graph/api/resources/team?view=graph-rest-beta).|
-|Изменение|Бета|Обновлен путь к объекту [channel](/graph/api/resources/channel?view=graph-rest-beta).|
-
-
 ### <a name="project-rome-apis"></a>API Project Rome
 
 | **Тип изменения** | **Версия** | **Описание**                          |
@@ -1075,14 +1069,7 @@ ms.locfileid: "30212398"
 
 ## <a name="march-2018"></a>Март 2018 г.
 
-### <a name="data-policy-operations"></a>Операции с политикой данных
-
-| **Тип изменения** | **Версия** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | бета        | Добавлен новый объект [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta). Он представляет собой отправленную операцию с политикой данных с целью отслеживания.
-| Дополнение        | Бета        | Добавлено действие [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) для [пользователей](/graph/api/resources/users?view=graph-rest-beta). Это действие отправляет запрос на экспорт персональных данных, которые корпорация Майкрософт хранит для пользователя. |
-
-### <a name="activityfeedservice-apis"></a>API ActivityFeedService
+### <a name="activityfeedservice-apis"></a>Интерфейсы API ActivityFeedService
 
 | **Тип изменения** | **Версия** | **Описание**              |
 | :-------------- | :---------- | :--------------------------------------- |
@@ -1103,6 +1090,12 @@ ms.locfileid: "30212398"
 |Изменение|Бета-версия|Добавлены свойства **applicationID** и **creatorUserID** ресурса [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
 |Изменение|Бета-версия|Добавлена операция [list](/graph/api/subscription-list?view=graph-rest-beta) для объекта [subscription](/graph/api/resources/subscription?view=graph-rest-beta). |
 
+### <a name="data-policy-operations"></a>Операции с политикой данных
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | бета        | Добавлен новый объект [dataPolicyOperation](/graph/api/resources/datapolicyoperation?view=graph-rest-beta). Он представляет собой отправленную операцию с политикой данных с целью отслеживания.
+| Дополнение        | Бета        | Добавлено действие [exportPersonalData](/graph/api/user-exportpersonaldata?view=graph-rest-beta) для [пользователей](/graph/api/resources/users?view=graph-rest-beta). Это действие отправляет запрос на экспорт персональных данных, которые корпорация Майкрософт хранит для пользователя. |
 
 ### <a name="directory-apis"></a>API каталогов
 
@@ -1118,12 +1111,6 @@ ms.locfileid: "30212398"
 | :-------------- | :---------- | :--------------------------------------- |
 |Изменение|1.0|Добавлено свойство **legacyId** для объекта [Excel Table](/graph/api/resources/table?view=graph-rest-1.0). Оно будет содержать числовой идентификатор (строковый тип данных), который будет оставаться постоянным для определенной таблицы Excel. Это свойство входит в состав дополнительных метаданных, если приложение использует устаревший идентификатор из старых клиентских приложений Excel. Примечание. Свойства `id` и `legacyId` должны интерпретироваться как непрозрачные строковые значения и не должны преобразовываться в другой тип в приложении. |
 
-### <a name="reports-apis"></a>API отчетов
-
-| **Тип изменения** | **Версия** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-|Дополнение|Бета-версия|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta).|
-
 ### <a name="group-lifecycle-policy"></a>Политика жизненного цикла группы
 
 | **Тип изменения** | **Версия** | **Описание**                          |
@@ -1132,14 +1119,6 @@ ms.locfileid: "30212398"
 | Дополнение        | 1.0        | Для политики жизненного цикла группы добавлены API [создания](/graph/api/grouplifecyclepolicy-post-grouplifecyclepolicies?view=graph-rest-1.0), [перечисления](/graph/api/grouplifecyclepolicy-list?view=graph-rest-1.0), [получения](/graph/api/grouplifecyclepolicy-get?view=graph-rest-1.0), [обновления](/graph/api/grouplifecyclepolicy-update?view=graph-rest-1.0), [удаления](/graph/api/grouplifecyclepolicy-delete?view=graph-rest-1.0), [добавления группы](/graph/api/grouplifecyclepolicy-addgroup?view=graph-rest-1.0), [удаления группы](/graph/api/grouplifecyclepolicy-removegroup?view=graph-rest-1.0) |
 | Дополнение        | 1.0        | Добавлена функция [перечисления groupLifecyclePolicies](/graph/api/group-list-grouplifecyclepolicies?view=graph-rest-1.0) для [group](/graph/api/resources/group?view=graph-rest-1.0) |
 | Изменение | 1.0 | Добавлено свойство renewedDateTime и [renew](/graph/api/group-renew?view=graph-rest-1.0) для [group](/graph/api/resources/group?view=graph-rest-1.0). |
-
-### <a name="terms-of-use"></a>Условия использования
-
-| **Тип изменения** | **Версия** | **Описание**                          |
-| :-------------- | :---------- | :--------------------------------------- |
-| Дополнение        | Бета-версия        | Добавлены ресурсы [agreement](/graph/api/resources/agreement?view=graph-rest-beta) и [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta). |
-| Дополнение        | Бета-версия        | Для ресурса [agreement](/graph/api/resources/agreement?view=graph-rest-beta) добавлены API [создания](/graph/api/greement-post-agreements?view=graph-rest-beta), [перечисления](/graph/api/agreement-list?view=graph-rest-beta), [получения](/graph/api/agreement-get?view=graph-rest-beta), [обновления](/graph/api/agreement-update?view=graph-rest-beta) и [удаления](/graph/api/agreement-delete?view=graph-rest-beta). |
-| Дополнение        | Бета-версия        | Для ресурса [user](/graph/api/resources/user?view=graph-rest-beta) добавлены отношения [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta). |
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 
@@ -1223,6 +1202,19 @@ ms.locfileid: "30212398"
 |Дополнение|Бета|Добавлено свойство <b>lastRecordedDateTime</b> для сложного типа [itemActivityTimeSet](/graph/api/resources/itemactivitytimeset?view=graph-rest-beta). |
 |Дополнение|Бета|Добавлено свойство [preview](/graph/api/driveitem-preview?view=graph-rest-beta) для объекта [driveItem](/graph/api/resources/driveitem?view=graph-rest-beta). |
 
+### <a name="reports-apis"></a>API отчетов
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+|Дополнение|Бета-версия|Добавлено свойство **siteId** для объекта [sharePointSiteUsageDetail](/graph/api/resources/sharepointsiteusagedetail?view=graph-rest-beta).|
+
+### <a name="terms-of-use"></a>Условия использования
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | Бета-версия        | Добавлены ресурсы [agreement](/graph/api/resources/agreement?view=graph-rest-beta) и [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta). |
+| Дополнение        | Бета-версия        | Для ресурса [agreement](/graph/api/resources/agreement?view=graph-rest-beta) добавлены API [создания](/graph/api/greement-post-agreements?view=graph-rest-beta), [перечисления](/graph/api/agreement-list?view=graph-rest-beta), [получения](/graph/api/agreement-get?view=graph-rest-beta), [обновления](/graph/api/agreement-update?view=graph-rest-beta) и [удаления](/graph/api/agreement-delete?view=graph-rest-beta). |
+| Дополнение        | Бета-версия        | Для ресурса [user](/graph/api/resources/user?view=graph-rest-beta) добавлены отношения [agreementAcceptance](/graph/api/resources/agreementacceptance?view=graph-rest-beta). |
 
 ## <a name="february-2018"></a>Февраль 2018 г.
 
@@ -1278,18 +1270,18 @@ ms.locfileid: "30212398"
 
 ## <a name="january-2018"></a>Январь 2018 г.
 
+### <a name="education-apis"></a>API для образования
+
+|Тип изменения|Версия|Описание|
+|:---|:---|:---|
+|Дополнение|Бета|Добавлены свойства навигации и улучшена поддержка фильтрации для [API списков](/graph/api/resources/education-overview?view=graph-rest-beta).|
+
 ### <a name="json-batching"></a>Пакетная обработка JSON
 
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Дополнение|Версия 1.0|Добавлена поддержка [пакетной обработки JSON](json-batching.md). Установлено ограничение в 20 внутренних запросов.|
 |Изменение|Бета-версия|Максимальное количество внутренних запросов при [пакетной обработке JSON](json-batching.md) увеличено с 5 до 20.|
-
-### <a name="education-apis"></a>API для образования
-
-|Тип изменения|Версия|Описание|
-|:---|:---|:---|
-|Дополнение|Бета|Добавлены свойства навигации и улучшена поддержка фильтрации для [API списков](/graph/api/resources/education-overview?view=graph-rest-beta).|
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 |Тип изменения|Версия|Описание|
