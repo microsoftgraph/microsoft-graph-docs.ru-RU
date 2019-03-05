@@ -1,75 +1,99 @@
 ---
-title: Использование API безопасности Microsoft Graph
-description: 'API-Интерфейс безопасности Microsoft Graph предоставляет единый интерфейс и схемы можно интегрировать с решения по обеспечению безопасности корпорации Майкрософт и экосистема партнеров. Это позволяет предоставить клиентам для оптимизации операции по безопасности и более надежную защиту от увеличение угрозы, связанные с через Интернет. API Microsoft Graph безопасности можно использовать как службы объединение федеративных безопасности для отправки запросов для всех поставщиков безопасности onboarded для получения групп ответов. Использовать Microsoft Graph безопасности API для создания приложений, который:'
+title: Использование Microsoft Graph Security API
+description: Microsoft Graph Security API обеспечивает единый интерфейс и схему интеграции с решениями безопасности от корпорации Майкрософт и партнеров экосистемы. Это позволяет клиентам упростить операции, связанные с безопасностью, и лучше защититься от возрастающих киберугроз. Microsoft Graph Security API можно использовать в качестве службы агрегирования федеративных данных о безопасности, чтобы отправлять запросы всем подключенным поставщикам безопасности для получения агрегированных откликов. Используйте Microsoft Graph Security API для создания приложений с указанными ниже возможностями.
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7e693bdfb71f41597d77f40ce8c4ac5490d4ef06
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b3f1d041d6b1a525ba9eff63aca19baf287376ae
+ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977880"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "30364593"
 ---
-# <a name="use-the-microsoft-graph-security-api"></a>Использование API безопасности Microsoft Graph
+# <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
-API-Интерфейс безопасности Microsoft Graph предоставляет единый интерфейс и схемы можно интегрировать с решения по обеспечению безопасности корпорации Майкрософт и экосистема партнеров. Это позволяет предоставить клиентам для оптимизации операции по безопасности и более надежную защиту от увеличение угрозы, связанные с через Интернет. API Microsoft Graph безопасности можно использовать как службы объединение федеративных безопасности для отправки запросов для всех поставщиков безопасности onboarded для получения групп ответов. Использовать Microsoft Graph безопасности API для создания приложений, который:
+Microsoft Graph Security API обеспечивает единый интерфейс и схему интеграции с решениями безопасности от корпорации Майкрософт и партнеров экосистемы. Это позволяет клиентам упростить операции, связанные с безопасностью, и лучше защититься от возрастающих киберугроз. Microsoft Graph Security API объединяет запросы для всех подключенных поставщиков безопасности и собирает ответы. Используйте Microsoft Graph Security API для создания приложений с указанными ниже возможностями.
 
-- Объединение и их оповещение системы безопасности из нескольких источников
-- Разблокировать контекстных данных для оповещения исследования
-- Операции по безопасности для повышения эффективности автоматизации
-- Обеспечивает возможность отслеживания данных безопасности для включения проактивное управление рисками
+- объединение и корреляция оповещений системы безопасности из нескольких источников;
+- разблокировка контекстных данных для получения сведений при расследованиях;
+- автоматизация задач безопасности, бизнес-процессов, рабочих процессов и создания отчетов;
+- отправка индикаторов угроз в продукты Майкрософт для настроенных обнаружений;
+- вызов действий в ответ на новые угрозы;
+- обеспечение видимости данных безопасности, чтобы использовать профилактическое управление рисками.
 
-API-Интерфейс Microsoft Graph безопасности включает в себя следующие основные сущности.
+Microsoft Graph Security API включает указанные ниже ключевые объекты.
 
 ## <a name="alerts"></a>Оповещения
 
-Оповещения, потенциальных проблем безопасности в клиент пользователя, который решения по обеспечению безопасности Майкрософт или партнер идентификации и отмеченные на действие или уведомление. С помощью объекта [оповещений](alert.md) безопасности Microsoft Graph можно объединяют в себе и оптимизируют проблемы безопасности через все интегрированные решения. Это также позволяет приложениям для корреляции оповещений и контекста для улучшения защиты от угроз и ответа. Эти разблокировать эффективность безопасности, сокращая время расследования и разрешения для обращения в службу. Возможность обновления оповещений можно синхронизировать состояние определенных предупреждений по безопасности продуктов и служб, интегрированных с Microsoft Graph безопасности API, изменив сущности [оповещения](alert.md) .
+Оповещения — это потенциальные проблемы безопасности в клиенте пользователя, выявленные решениями по обеспечению безопасности корпорации Майкрософт или партнеров и помеченные для действия или уведомления. С помощью объекта [alerts](alert.md) Microsoft Graph Security можно объединить и оптимизировать управление проблемами безопасности во всех интегрированных решениях. Это также позволит приложениям коррелировать оповещения и контекст для улучшения защиты от угроз и отклика на них. Благодаря функции обновления оповещений можно синхронизировать состояние определенных оповещений в разных продуктах и службах обеспечения безопасности, интегрированных с Microsoft Graph Security API, с помощью обновления объекта [alerts](alert.md).
 
-Интегрированное графическое представление безопасности решения Майкрософт будет получать оповещения от следующих поставщиков безопасности:
+При использовании Microsoft Graph Security API доступны оповещения от указанных ниже поставщиков. Поддержка оповещений GET, PATCH (обновления доступны при использовании Microsoft Graph Security API, но могут быть недоступны в интерфейсе управления поставщика) и подписки (с помощью веб-перехватчиков) представлена в таблице ниже.
 
-- [Центр безопасности для Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)
-- [Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook)
-- [Безопасность приложений Microsoft Cloud](https://docs.microsoft.com/cloud-app-security/monitor-alerts )
-- [Защитник Windows Advanced защиту от угроз](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)
-- [Защита информации Azure](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(Предварительная версия)**
-- Microsoft Intune **(закрытый Предварительная версия)**
-- Office 365 **(ожидается в ближайшее время)**
-- Azure расширенного защиту от угроз **(ожидается в ближайшее время)**
-- Решений партнеров, такими как компьютер Пало сетей приложения Framework
+| Поставщик безопасности | Оповещение GET| Оповещение PATCH| Подписка на оповещения|
+|:------------------|:---------|:-----------|:------------------|
+|[Центр безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| &#x2713; | &#x2713; | &#x2713; |
+|[Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | &#x2713; | &#x2713; | &#x2713; |
+| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | &#x2713; | &#x2713; | &#x2713; |
+|[Advanced Threat Protection в Защитнике Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| &#x2713; | &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Расширенная защита от угроз Azure](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|Office 365 </br> <li> [По умолчанию](https://docs.microsoft.com/ru-RU/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/ru-RU/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li> | &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| &#x2713; | &#x2713; | &#x2713; |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+> **Примечание.** К экосистеме безопасности Microsoft Graph постоянно подключаются новые поставщики. Чтобы запросить новых поставщиков или дополнительную поддержку у существующих поставщиков, [уведомите о проблеме в репозитории GitHub для Microsoft Graph Security](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
-> **Примечание:** Новые поставщики постоянно, входящая экосистемы Microsoft Graph безопасности.
+## <a name="common-use-cases"></a>Основные варианты использования
 
-## <a name="common-use-cases"></a>Основные сценарии выполнения
+Ниже приводятся некоторые из наиболее популярных запросов для работы с Microsoft Graph Security API.
 
-Ниже приведены некоторые из наиболее популярные запросы для работы с Microsoft Graph безопасности API.
-
-| **Варианты использования**   | **Ресурсы REST** | **Попробуйте прямо в обозревателе график** |
+| **Варианты использования**   | **Ресурсы REST** | **Попробовать в песочнице Graph** |
 |:---------------|:--------|:----------|
-| перечисление оповещений; | [перечисление оповещений](../api/alert-list.md); | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
-| Обновление оповещений | [обновление оповещения](../api/alert-update.md). | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| Перечисление оповещений | [Перечисление оповещений](../api/alert-list.md) | [https://graph.microsoft.com/v1.0/security/alerts](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com) |
+| Обновление оповещений | [Обновление оповещения](../api/alert-update.md) | [https://graph.microsoft.com/v1.0/security/alerts/{alert-id}](https://developer.microsoft.com/graph/graph-explorer?request=security/alerts/{alert-id}&method=PATCH&version=v1.0&GraphUrl=https://graph.microsoft.com) |
 
-Можно использовать Microsoft Graph [webhooks](/graph/webhooks) подписаться на и получать уведомления об обновлениях для сущности Microsoft Graph безопасности.
+Можно использовать [веб-перехватчиков](/graph/webhooks) Microsoft Graph, чтобы подписаться на получение уведомлений об обновлениях объектов системы безопасности Microsoft Graph.
 
 ## <a name="resources"></a>Ресурсы
 
-Примеры кода и внесение данных в этих примерах Microsoft Graph безопасности API:
+Создавайте код и внесите вклад в примеры Microsoft Graph Security API:
 
-- [Пример ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
-- [Пример с Python](https://github.com/microsoftgraph/python-security-rest-sample)
-- [Пример node.js (JavaScript)](https://github.com/microsoftgraph/nodejs-security-sample)
+- [Пример для ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Пример для Python](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Пример для Node.js (JavaScript)](https://github.com/microsoftgraph/nodejs-security-sample)
 
-Начните работать с сообществом:
+Взаимодействие с сообществом:
 
-- [Присоединяйтесь к сообществу Технический](https://aka.ms/graphsecuritycommunity)
-- [Обсудить на StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
+- [Присоединяйтесь к сообществу Tech Community](https://aka.ms/graphsecuritycommunity)
+- [Обсуждения на сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
 
 ## <a name="next-steps"></a>Дальнейшие действия
 
-API-Интерфейс безопасности Microsoft Graph может привести к возникновению новые способы работы с решениями безопасности, отличные от корпорации Майкрософт и партнеров. Выполните следующие действия, чтобы приступить к работе.
+Microsoft Graph Security API раскрывает новые способы взаимодействия с решениями для обеспечения безопасности от корпорации Майкрософт и партнеров. Чтобы приступить к работе, следуйте указанным ниже инструкциям.
 
-- Перейти к [оповещения](alert.md).
-- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). В разделе **Примеры запросов**выберите команду **Показать дополнительные примеры** и установите категории безопасности **на**.
-- Попробуйте [подпиской и получение уведомлений](/graph/webhooks) на изменения сущности.
+- Подробно изучите [оповещения](alert.md).
+- Опробуйте API в [песочнице Graph](https://developer.microsoft.com/graph/graph-explorer). В разделе **Примеры запросов** выберите элемент **Показать другие примеры** и установите категорию безопасности в положение **Вкл.**
+- Попробуйте [подписаться на получение уведомлений](/graph/webhooks) об изменениях объекта.
 
 Нужны идеи? Посмотрите, [как наши партнеры используют Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+## <a name="see-also"></a>См. также
+
+[Создавайте код и внесите вклад](https://github.com/microsoftgraph/security-api-solutions/blob/master/CONTRIBUTING.md) в примеры Microsoft Graph Security API:
+
+- [Пример для ASP.NET (C#)](https://github.com/microsoftgraph/aspnet-security-api-sample)
+- [Пример для Python](https://github.com/microsoftgraph/python-security-rest-sample)
+- [Пример для Node.js (JavaScript)](https://github.com/microsoftgraph/nodejs-security-sample)
+- [Пример для PowerShell](https://aka.ms/graphsecuritypowershellsample)
+- [Другие примеры или добавление нового примера](https://aka.ms/graphsecurityapicode)
+
+Ознакомьтесь с другими возможностями подключения с помощью Microsoft Graph Security API:
+
+- [Соединители Microsoft Graph Security для Logic Apps, Flow и PowerApps](https://aka.ms/graphsecurityconnectors)
+- [Соединитель Microsoft Graph Security для Power BI](https://aka.ms/graphsecuritypowerbiconnectordoc)
+- [Примеры записных книжек Jupyter](https://aka.ms/graphsecurityjupyternotebooks)
+
+Взаимодействие с сообществом:
+
+- [Присоединяйтесь к сообществу Tech Community](https://aka.ms/graphsecuritycommunity)
+- [Обсуждения на сайте StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-security)
