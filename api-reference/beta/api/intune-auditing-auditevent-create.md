@@ -1,34 +1,34 @@
 ---
 title: Создание объекта auditEvent
 description: Создание объекта auditEvent.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f7a8bac0030b65d61e1da7fbdadfe6920b44788
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: b45ba33b93ba56c3f07e1946ef8a7ae2e0df11ef
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29422154"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149877"
 ---
-# <a name="create-auditevent"></a><span data-ttu-id="18dbf-103">Создание объекта auditEvent</span><span class="sxs-lookup"><span data-stu-id="18dbf-103">Create auditEvent</span></span>
+# <a name="create-auditevent"></a><span data-ttu-id="baffa-103">Создание объекта auditEvent</span><span class="sxs-lookup"><span data-stu-id="baffa-103">Create auditEvent</span></span>
 
-> <span data-ttu-id="18dbf-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="18dbf-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="18dbf-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18dbf-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="baffa-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="baffa-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="18dbf-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="18dbf-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="baffa-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="baffa-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="18dbf-107">Создание объекта [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="18dbf-107">Create a new [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
+<span data-ttu-id="baffa-106">Создание объекта [auditEvent](../resources/intune-auditing-auditevent.md).</span><span class="sxs-lookup"><span data-stu-id="baffa-106">Create a new [auditEvent](../resources/intune-auditing-auditevent.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="18dbf-108">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="18dbf-108">Prerequisites</span></span>
-<span data-ttu-id="18dbf-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="18dbf-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="baffa-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="baffa-107">Prerequisites</span></span>
+<span data-ttu-id="baffa-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="baffa-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
 
-|<span data-ttu-id="18dbf-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18dbf-111">Permission type</span></span>|<span data-ttu-id="18dbf-112">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="18dbf-112">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="baffa-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="baffa-110">Permission type</span></span>|<span data-ttu-id="baffa-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="baffa-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="18dbf-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18dbf-113">Delegated (work or school account)</span></span>|<span data-ttu-id="18dbf-114">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18dbf-114">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="18dbf-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18dbf-115">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="18dbf-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18dbf-116">Not supported.</span></span>|
-|<span data-ttu-id="18dbf-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18dbf-117">Application</span></span>|<span data-ttu-id="18dbf-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="18dbf-118">Not supported.</span></span>|
+|<span data-ttu-id="baffa-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="baffa-112">Delegated (work or school account)</span></span>|<span data-ttu-id="baffa-113">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="baffa-113">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="baffa-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="baffa-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="baffa-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="baffa-115">Not supported.</span></span>|
+|<span data-ttu-id="baffa-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="baffa-116">Application</span></span>|<span data-ttu-id="baffa-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="baffa-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="18dbf-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18dbf-119">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="baffa-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="baffa-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,42 +37,42 @@ ms.locfileid: "29422154"
 POST /deviceManagement/auditEvents
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="18dbf-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="18dbf-120">Request headers</span></span>
-|<span data-ttu-id="18dbf-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="18dbf-121">Header</span></span>|<span data-ttu-id="18dbf-122">Значение</span><span class="sxs-lookup"><span data-stu-id="18dbf-122">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="baffa-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="baffa-119">Request headers</span></span>
+|<span data-ttu-id="baffa-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="baffa-120">Header</span></span>|<span data-ttu-id="baffa-121">Значение</span><span class="sxs-lookup"><span data-stu-id="baffa-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="18dbf-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="18dbf-123">Authorization</span></span>|<span data-ttu-id="18dbf-124">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="18dbf-124">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="18dbf-125">Accept</span><span class="sxs-lookup"><span data-stu-id="18dbf-125">Accept</span></span>|<span data-ttu-id="18dbf-126">application/json</span><span class="sxs-lookup"><span data-stu-id="18dbf-126">application/json</span></span>|
+|<span data-ttu-id="baffa-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="baffa-122">Authorization</span></span>|<span data-ttu-id="baffa-123">Требуется Bearer &lt;маркер&gt;
+</span><span class="sxs-lookup"><span data-stu-id="baffa-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="baffa-124">Accept</span><span class="sxs-lookup"><span data-stu-id="baffa-124">Accept</span></span>|<span data-ttu-id="baffa-125">application/json</span><span class="sxs-lookup"><span data-stu-id="baffa-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="18dbf-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="18dbf-127">Request body</span></span>
-<span data-ttu-id="18dbf-128">В тексте запроса добавьте представление объекта auditEvent в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="18dbf-128">In the request body, supply a JSON representation for the auditEvent object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="baffa-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="baffa-126">Request body</span></span>
+<span data-ttu-id="baffa-127">В тексте запроса добавьте представление объекта auditEvent в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="baffa-127">In the request body, supply a JSON representation for the auditEvent object.</span></span>
 
-<span data-ttu-id="18dbf-129">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта auditEvent.</span><span class="sxs-lookup"><span data-stu-id="18dbf-129">The following table shows the properties that are required when you create the auditEvent.</span></span>
+<span data-ttu-id="baffa-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта auditEvent.</span><span class="sxs-lookup"><span data-stu-id="baffa-128">The following table shows the properties that are required when you create the auditEvent.</span></span>
 
-|<span data-ttu-id="18dbf-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="18dbf-130">Property</span></span>|<span data-ttu-id="18dbf-131">Тип</span><span class="sxs-lookup"><span data-stu-id="18dbf-131">Type</span></span>|<span data-ttu-id="18dbf-132">Описание</span><span class="sxs-lookup"><span data-stu-id="18dbf-132">Description</span></span>|
+|<span data-ttu-id="baffa-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="baffa-129">Property</span></span>|<span data-ttu-id="baffa-130">Тип</span><span class="sxs-lookup"><span data-stu-id="baffa-130">Type</span></span>|<span data-ttu-id="baffa-131">Описание</span><span class="sxs-lookup"><span data-stu-id="baffa-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="18dbf-133">id</span><span class="sxs-lookup"><span data-stu-id="18dbf-133">id</span></span>|<span data-ttu-id="18dbf-134">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-134">String</span></span>|<span data-ttu-id="18dbf-135">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="18dbf-135">Key of the entity.</span></span>|
-|<span data-ttu-id="18dbf-136">displayName</span><span class="sxs-lookup"><span data-stu-id="18dbf-136">displayName</span></span>|<span data-ttu-id="18dbf-137">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-137">String</span></span>|<span data-ttu-id="18dbf-138">Отображаемое имя события.</span><span class="sxs-lookup"><span data-stu-id="18dbf-138">Event display name.</span></span>|
-|<span data-ttu-id="18dbf-139">componentName</span><span class="sxs-lookup"><span data-stu-id="18dbf-139">componentName</span></span>|<span data-ttu-id="18dbf-140">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-140">String</span></span>|<span data-ttu-id="18dbf-141">Имя компонента.</span><span class="sxs-lookup"><span data-stu-id="18dbf-141">Component name.</span></span>|
-|<span data-ttu-id="18dbf-142">actor</span><span class="sxs-lookup"><span data-stu-id="18dbf-142">actor</span></span>|[<span data-ttu-id="18dbf-143">auditActor</span><span class="sxs-lookup"><span data-stu-id="18dbf-143">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="18dbf-144">Пользователь AAD и приложение, связанные с событием аудита.</span><span class="sxs-lookup"><span data-stu-id="18dbf-144">AAD user and application that are associated with the audit event.</span></span>|
-|<span data-ttu-id="18dbf-145">activity</span><span class="sxs-lookup"><span data-stu-id="18dbf-145">activity</span></span>|<span data-ttu-id="18dbf-146">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-146">String</span></span>|<span data-ttu-id="18dbf-147">Понятное имя действия.</span><span class="sxs-lookup"><span data-stu-id="18dbf-147">Friendly name of the activity.</span></span>|
-|<span data-ttu-id="18dbf-148">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="18dbf-148">activityDateTime</span></span>|<span data-ttu-id="18dbf-149">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="18dbf-149">DateTimeOffset</span></span>|<span data-ttu-id="18dbf-150">Дата и время выполнения действия (в формате UTC).</span><span class="sxs-lookup"><span data-stu-id="18dbf-150">The date time in UTC when the activity was performed.</span></span>|
-|<span data-ttu-id="18dbf-151">activityType</span><span class="sxs-lookup"><span data-stu-id="18dbf-151">activityType</span></span>|<span data-ttu-id="18dbf-152">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-152">String</span></span>|<span data-ttu-id="18dbf-153">Тип выполненного действия.</span><span class="sxs-lookup"><span data-stu-id="18dbf-153">The type of activity that was being performed.</span></span>|
-|<span data-ttu-id="18dbf-154">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="18dbf-154">activityOperationType</span></span>|<span data-ttu-id="18dbf-155">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-155">String</span></span>|<span data-ttu-id="18dbf-156">Тип операции HTTP для действия.</span><span class="sxs-lookup"><span data-stu-id="18dbf-156">The HTTP operation type of the activity.</span></span>|
-|<span data-ttu-id="18dbf-157">activityResult</span><span class="sxs-lookup"><span data-stu-id="18dbf-157">activityResult</span></span>|<span data-ttu-id="18dbf-158">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-158">String</span></span>|<span data-ttu-id="18dbf-159">Результат действия.</span><span class="sxs-lookup"><span data-stu-id="18dbf-159">The result of the activity.</span></span>|
-|<span data-ttu-id="18dbf-160">correlationId</span><span class="sxs-lookup"><span data-stu-id="18dbf-160">correlationId</span></span>|<span data-ttu-id="18dbf-161">Guid</span><span class="sxs-lookup"><span data-stu-id="18dbf-161">Guid</span></span>|<span data-ttu-id="18dbf-162">Идентификатор клиентского запроса, используемый для согласования действий в системе.</span><span class="sxs-lookup"><span data-stu-id="18dbf-162">The client request Id that is used to correlate activity within the system.</span></span>|
-|<span data-ttu-id="18dbf-163">resources</span><span class="sxs-lookup"><span data-stu-id="18dbf-163">resources</span></span>|<span data-ttu-id="18dbf-164">Коллекция [auditResource](../resources/intune-auditing-auditresource.md)</span><span class="sxs-lookup"><span data-stu-id="18dbf-164">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="18dbf-165">Изменяемые ресурсы.</span><span class="sxs-lookup"><span data-stu-id="18dbf-165">Resources being modified.</span></span>|
-|<span data-ttu-id="18dbf-166">category</span><span class="sxs-lookup"><span data-stu-id="18dbf-166">category</span></span>|<span data-ttu-id="18dbf-167">String</span><span class="sxs-lookup"><span data-stu-id="18dbf-167">String</span></span>|<span data-ttu-id="18dbf-168">Категория аудита.</span><span class="sxs-lookup"><span data-stu-id="18dbf-168">Audit category.</span></span>|
+|<span data-ttu-id="baffa-132">id</span><span class="sxs-lookup"><span data-stu-id="baffa-132">id</span></span>|<span data-ttu-id="baffa-133">Строка</span><span class="sxs-lookup"><span data-stu-id="baffa-133">String</span></span>|<span data-ttu-id="baffa-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="baffa-134">Key of the entity.</span></span>|
+|<span data-ttu-id="baffa-135">displayName</span><span class="sxs-lookup"><span data-stu-id="baffa-135">displayName</span></span>|<span data-ttu-id="baffa-136">String</span><span class="sxs-lookup"><span data-stu-id="baffa-136">String</span></span>|<span data-ttu-id="baffa-137">Отображаемое имя события.</span><span class="sxs-lookup"><span data-stu-id="baffa-137">Event display name.</span></span>|
+|<span data-ttu-id="baffa-138">componentName</span><span class="sxs-lookup"><span data-stu-id="baffa-138">componentName</span></span>|<span data-ttu-id="baffa-139">String</span><span class="sxs-lookup"><span data-stu-id="baffa-139">String</span></span>|<span data-ttu-id="baffa-140">Имя компонента.</span><span class="sxs-lookup"><span data-stu-id="baffa-140">Component name.</span></span>|
+|<span data-ttu-id="baffa-141">actor</span><span class="sxs-lookup"><span data-stu-id="baffa-141">actor</span></span>|[<span data-ttu-id="baffa-142">auditActor</span><span class="sxs-lookup"><span data-stu-id="baffa-142">auditActor</span></span>](../resources/intune-auditing-auditactor.md)|<span data-ttu-id="baffa-143">Пользователь AAD и приложение, связанные с событием аудита.</span><span class="sxs-lookup"><span data-stu-id="baffa-143">AAD user and application that are associated with the audit event.</span></span>|
+|<span data-ttu-id="baffa-144">activity</span><span class="sxs-lookup"><span data-stu-id="baffa-144">activity</span></span>|<span data-ttu-id="baffa-145">String</span><span class="sxs-lookup"><span data-stu-id="baffa-145">String</span></span>|<span data-ttu-id="baffa-146">Понятное имя действия.</span><span class="sxs-lookup"><span data-stu-id="baffa-146">Friendly name of the activity.</span></span>|
+|<span data-ttu-id="baffa-147">activityDateTime</span><span class="sxs-lookup"><span data-stu-id="baffa-147">activityDateTime</span></span>|<span data-ttu-id="baffa-148">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="baffa-148">DateTimeOffset</span></span>|<span data-ttu-id="baffa-149">Дата и время выполнения действия (в формате UTC).</span><span class="sxs-lookup"><span data-stu-id="baffa-149">The date time in UTC when the activity was performed.</span></span>|
+|<span data-ttu-id="baffa-150">activityType</span><span class="sxs-lookup"><span data-stu-id="baffa-150">activityType</span></span>|<span data-ttu-id="baffa-151">String</span><span class="sxs-lookup"><span data-stu-id="baffa-151">String</span></span>|<span data-ttu-id="baffa-152">Тип выполненного действия.</span><span class="sxs-lookup"><span data-stu-id="baffa-152">The type of activity that was being performed.</span></span>|
+|<span data-ttu-id="baffa-153">activityOperationType</span><span class="sxs-lookup"><span data-stu-id="baffa-153">activityOperationType</span></span>|<span data-ttu-id="baffa-154">String</span><span class="sxs-lookup"><span data-stu-id="baffa-154">String</span></span>|<span data-ttu-id="baffa-155">Тип операции HTTP для действия.</span><span class="sxs-lookup"><span data-stu-id="baffa-155">The HTTP operation type of the activity.</span></span>|
+|<span data-ttu-id="baffa-156">activityResult</span><span class="sxs-lookup"><span data-stu-id="baffa-156">activityResult</span></span>|<span data-ttu-id="baffa-157">String</span><span class="sxs-lookup"><span data-stu-id="baffa-157">String</span></span>|<span data-ttu-id="baffa-158">Результат действия.</span><span class="sxs-lookup"><span data-stu-id="baffa-158">The result of the activity.</span></span>|
+|<span data-ttu-id="baffa-159">correlationId</span><span class="sxs-lookup"><span data-stu-id="baffa-159">correlationId</span></span>|<span data-ttu-id="baffa-160">Guid</span><span class="sxs-lookup"><span data-stu-id="baffa-160">Guid</span></span>|<span data-ttu-id="baffa-161">Идентификатор клиентского запроса, используемый для согласования действий в системе.</span><span class="sxs-lookup"><span data-stu-id="baffa-161">The client request Id that is used to correlate activity within the system.</span></span>|
+|<span data-ttu-id="baffa-162">resources</span><span class="sxs-lookup"><span data-stu-id="baffa-162">resources</span></span>|<span data-ttu-id="baffa-163">Коллекция [auditResource](../resources/intune-auditing-auditresource.md)</span><span class="sxs-lookup"><span data-stu-id="baffa-163">[auditResource](../resources/intune-auditing-auditresource.md) collection</span></span>|<span data-ttu-id="baffa-164">Изменяемые ресурсы.</span><span class="sxs-lookup"><span data-stu-id="baffa-164">Resources being modified.</span></span>|
+|<span data-ttu-id="baffa-165">category</span><span class="sxs-lookup"><span data-stu-id="baffa-165">category</span></span>|<span data-ttu-id="baffa-166">String</span><span class="sxs-lookup"><span data-stu-id="baffa-166">String</span></span>|<span data-ttu-id="baffa-167">Категория аудита.</span><span class="sxs-lookup"><span data-stu-id="baffa-167">Audit category.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="18dbf-169">Отклик</span><span class="sxs-lookup"><span data-stu-id="18dbf-169">Response</span></span>
-<span data-ttu-id="18dbf-170">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [auditEvent](../resources/intune-auditing-auditevent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="18dbf-170">If successful, this method returns a `201 Created` response code and a [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="baffa-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="baffa-168">Response</span></span>
+<span data-ttu-id="baffa-169">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [auditEvent](../resources/intune-auditing-auditevent.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="baffa-169">If successful, this method returns a `201 Created` response code and a [auditEvent](../resources/intune-auditing-auditevent.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="18dbf-171">Пример</span><span class="sxs-lookup"><span data-stu-id="18dbf-171">Example</span></span>
+## <a name="example"></a><span data-ttu-id="baffa-170">Пример</span><span class="sxs-lookup"><span data-stu-id="baffa-170">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="18dbf-172">Запрос</span><span class="sxs-lookup"><span data-stu-id="18dbf-172">Request</span></span>
-<span data-ttu-id="18dbf-173">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="18dbf-173">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="baffa-171">Запрос</span><span class="sxs-lookup"><span data-stu-id="baffa-171">Request</span></span>
+<span data-ttu-id="baffa-172">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="baffa-172">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/auditEvents
 Content-type: application/json
@@ -121,8 +121,8 @@ Content-length: 1390
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="18dbf-174">Отклик</span><span class="sxs-lookup"><span data-stu-id="18dbf-174">Response</span></span>
-<span data-ttu-id="18dbf-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="18dbf-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="baffa-173">Ответ</span><span class="sxs-lookup"><span data-stu-id="baffa-173">Response</span></span>
+<span data-ttu-id="baffa-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="baffa-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления safeSearchFilterType
-description: Указывает, какой уровень безопасного поиска (фильтрация содержимое для взрослых) является обязательным
+title: тип перечисления Сафесеарчфилтертипе
+description: Указывает, какой уровень безопасного поиска (фильтрация содержимого для взрослых) является обязательным
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 788a266cdd0161ce1cfef426a7fcf4d9726e3324
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c82f80f6081f57a88fcdf26f7639277d72b5e0d8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964615"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250588"
 ---
-# <a name="safesearchfiltertype-enum-type"></a><span data-ttu-id="c427b-103">Тип перечисления safeSearchFilterType</span><span class="sxs-lookup"><span data-stu-id="c427b-103">safeSearchFilterType enum type</span></span>
+# <a name="safesearchfiltertype-enum-type"></a><span data-ttu-id="aaf99-103">тип перечисления Сафесеарчфилтертипе</span><span class="sxs-lookup"><span data-stu-id="aaf99-103">safeSearchFilterType enum type</span></span>
 
-> <span data-ttu-id="c427b-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="c427b-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="aaf99-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="aaf99-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="c427b-105">Указывает, какой уровень безопасного поиска (фильтрация содержимое для взрослых) является обязательным</span><span class="sxs-lookup"><span data-stu-id="c427b-105">Specifies what level of safe search (filtering adult content) is required</span></span>
-## <a name="members"></a><span data-ttu-id="c427b-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="c427b-106">Members</span></span>
-|<span data-ttu-id="c427b-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="c427b-107">Member</span></span>|<span data-ttu-id="c427b-108">Значение</span><span class="sxs-lookup"><span data-stu-id="c427b-108">Value</span></span>|<span data-ttu-id="c427b-109">Описание</span><span class="sxs-lookup"><span data-stu-id="c427b-109">Description</span></span>|
+<span data-ttu-id="aaf99-105">Указывает, какой уровень безопасного поиска (фильтрация содержимого для взрослых) является обязательным</span><span class="sxs-lookup"><span data-stu-id="aaf99-105">Specifies what level of safe search (filtering adult content) is required</span></span>
+
+## <a name="members"></a><span data-ttu-id="aaf99-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="aaf99-106">Members</span></span>
+|<span data-ttu-id="aaf99-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="aaf99-107">Member</span></span>|<span data-ttu-id="aaf99-108">Значение</span><span class="sxs-lookup"><span data-stu-id="aaf99-108">Value</span></span>|<span data-ttu-id="aaf99-109">Описание</span><span class="sxs-lookup"><span data-stu-id="aaf99-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="c427b-110">userDefined</span><span class="sxs-lookup"><span data-stu-id="c427b-110">userDefined</span></span>|<span data-ttu-id="c427b-111">0</span><span class="sxs-lookup"><span data-stu-id="c427b-111">0</span></span>|<span data-ttu-id="c427b-112">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="c427b-112">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="c427b-113">строгое</span><span class="sxs-lookup"><span data-stu-id="c427b-113">strict</span></span>|<span data-ttu-id="c427b-114">1</span><span class="sxs-lookup"><span data-stu-id="c427b-114">1</span></span>|<span data-ttu-id="c427b-115">Строгий, наибольший фильтрации содержимое для взрослых.</span><span class="sxs-lookup"><span data-stu-id="c427b-115">Strict, highest filtering against adult content.</span></span>|
-|<span data-ttu-id="c427b-116">от среднего</span><span class="sxs-lookup"><span data-stu-id="c427b-116">moderate</span></span>|<span data-ttu-id="c427b-117">2</span><span class="sxs-lookup"><span data-stu-id="c427b-117">2</span></span>|<span data-ttu-id="c427b-118">От среднего фильтрации содержимое для взрослых (результаты поиска допустимый не фильтруются).</span><span class="sxs-lookup"><span data-stu-id="c427b-118">Moderate filtering against adult content (valid search results will not be filtered).</span></span>|
+|<span data-ttu-id="aaf99-110">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="aaf99-110">userDefined</span></span>|<span data-ttu-id="aaf99-111">нуль</span><span class="sxs-lookup"><span data-stu-id="aaf99-111">0</span></span>|<span data-ttu-id="aaf99-112">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="aaf99-112">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="aaf99-113">жестк</span><span class="sxs-lookup"><span data-stu-id="aaf99-113">strict</span></span>|<span data-ttu-id="aaf99-114">1,1</span><span class="sxs-lookup"><span data-stu-id="aaf99-114">1</span></span>|<span data-ttu-id="aaf99-115">Максимальная фильтрация с использованием содержимого для взрослых.</span><span class="sxs-lookup"><span data-stu-id="aaf99-115">Strict, highest filtering against adult content.</span></span>|
+|<span data-ttu-id="aaf99-116">средние</span><span class="sxs-lookup"><span data-stu-id="aaf99-116">moderate</span></span>|<span data-ttu-id="aaf99-117">2</span><span class="sxs-lookup"><span data-stu-id="aaf99-117">2</span></span>|<span data-ttu-id="aaf99-118">Умеренная фильтрация содержимого для взрослых (допустимые результаты поиска не будут фильтроваться).</span><span class="sxs-lookup"><span data-stu-id="aaf99-118">Moderate filtering against adult content (valid search results will not be filtered).</span></span>|
 
 
 

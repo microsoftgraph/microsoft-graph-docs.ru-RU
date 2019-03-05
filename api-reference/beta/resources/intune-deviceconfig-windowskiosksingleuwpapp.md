@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса windowsKioskSingleUWPApp
-description: Класс, используемый для идентификации информация приложения UWP для базовой конфигурации
-localization_priority: Normal
+title: Тип ресурса Виндовскиосксинглеувпапп
+description: Класс, используемый для определения сведений о приложении UWP для конфигурации киоска
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e62dc6393cc2dc6a9133732a42527abdfadbd91e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 804dd2f34416eecb956b322a0f178daaf39b2418
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29409379"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142044"
 ---
-# <a name="windowskiosksingleuwpapp-resource-type"></a><span data-ttu-id="e562a-103">Тип ресурса windowsKioskSingleUWPApp</span><span class="sxs-lookup"><span data-stu-id="e562a-103">windowsKioskSingleUWPApp resource type</span></span>
+# <a name="windowskiosksingleuwpapp-resource-type"></a><span data-ttu-id="7bfda-103">Тип ресурса Виндовскиосксинглеувпапп</span><span class="sxs-lookup"><span data-stu-id="7bfda-103">windowsKioskSingleUWPApp resource type</span></span>
 
-> <span data-ttu-id="e562a-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="e562a-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="e562a-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e562a-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7bfda-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7bfda-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="e562a-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="e562a-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7bfda-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7bfda-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="e562a-107">Класс, используемый для идентификации информация приложения UWP для базовой конфигурации</span><span class="sxs-lookup"><span data-stu-id="e562a-107">The class used to identify the UWP app info for the kiosk configuration</span></span>
+<span data-ttu-id="7bfda-106">Класс, используемый для определения сведений о приложении UWP для конфигурации киоска</span><span class="sxs-lookup"><span data-stu-id="7bfda-106">The class used to identify the UWP app info for the kiosk configuration</span></span>
 
 
-<span data-ttu-id="e562a-108">Наследуется от [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="e562a-108">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
+<span data-ttu-id="7bfda-107">НаСледуется от [виндовскиоскаппконфигуратион](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span><span class="sxs-lookup"><span data-stu-id="7bfda-107">Inherits from [windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="e562a-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="e562a-109">Properties</span></span>
-|<span data-ttu-id="e562a-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="e562a-110">Property</span></span>|<span data-ttu-id="e562a-111">Тип</span><span class="sxs-lookup"><span data-stu-id="e562a-111">Type</span></span>|<span data-ttu-id="e562a-112">Описание</span><span class="sxs-lookup"><span data-stu-id="e562a-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7bfda-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="7bfda-108">Properties</span></span>
+|<span data-ttu-id="7bfda-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="7bfda-109">Property</span></span>|<span data-ttu-id="7bfda-110">Тип</span><span class="sxs-lookup"><span data-stu-id="7bfda-110">Type</span></span>|<span data-ttu-id="7bfda-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7bfda-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="e562a-113">uwpApp</span><span class="sxs-lookup"><span data-stu-id="e562a-113">uwpApp</span></span>|<span data-ttu-id="e562a-114">[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);</span><span class="sxs-lookup"><span data-stu-id="e562a-114">[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)</span></span>|<span data-ttu-id="e562a-115">Это единственный идентификатор модели приложения пользователя (AUMID), чтобы оно было доступно для использования в полноэкранном режиме запуска</span><span class="sxs-lookup"><span data-stu-id="e562a-115">This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode</span></span>|
+|<span data-ttu-id="7bfda-112">Увпапп</span><span class="sxs-lookup"><span data-stu-id="7bfda-112">uwpApp</span></span>|<span data-ttu-id="7bfda-113">[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md);</span><span class="sxs-lookup"><span data-stu-id="7bfda-113">[windowsKioskUWPApp](../resources/intune-deviceconfig-windowskioskuwpapp.md)</span></span>|<span data-ttu-id="7bfda-114">Это единственный идентификатор пользовательской модели приложения (AUMID), который будет доступен для запуска в режиме киоска</span><span class="sxs-lookup"><span data-stu-id="7bfda-114">This is the only Application User Model ID (AUMID) that will be available to launch use while in Kiosk Mode</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="e562a-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="e562a-116">Relationships</span></span>
-<span data-ttu-id="e562a-117">Нет</span><span class="sxs-lookup"><span data-stu-id="e562a-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7bfda-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="7bfda-115">Relationships</span></span>
+<span data-ttu-id="7bfda-116">Нет</span><span class="sxs-lookup"><span data-stu-id="7bfda-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="e562a-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e562a-118">JSON Representation</span></span>
-<span data-ttu-id="e562a-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e562a-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7bfda-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7bfda-117">JSON Representation</span></span>
+<span data-ttu-id="7bfda-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7bfda-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.windowsKioskSingleUWPApp"

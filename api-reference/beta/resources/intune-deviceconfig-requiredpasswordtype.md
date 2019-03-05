@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления requiredPasswordType
-description: Возможные значения необходимые пароли.
-localization_priority: Normal
+title: тип перечисления Рекуиредпассвордтипе
+description: Возможные значения обязательных паролей.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d254c18fd827db961c1d31e962a506fb82d32cb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 756a4623e117b8925c682d4a599d0f6ec05ebde0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416155"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145474"
 ---
-# <a name="requiredpasswordtype-enum-type"></a><span data-ttu-id="7a90e-103">Тип перечисления requiredPasswordType</span><span class="sxs-lookup"><span data-stu-id="7a90e-103">requiredPasswordType enum type</span></span>
+# <a name="requiredpasswordtype-enum-type"></a><span data-ttu-id="79b95-103">тип перечисления Рекуиредпассвордтипе</span><span class="sxs-lookup"><span data-stu-id="79b95-103">requiredPasswordType enum type</span></span>
 
-> <span data-ttu-id="7a90e-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="7a90e-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="7a90e-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7a90e-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="79b95-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="79b95-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7a90e-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7a90e-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="79b95-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="79b95-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7a90e-107">Возможные значения необходимые пароли.</span><span class="sxs-lookup"><span data-stu-id="7a90e-107">Possible values of required passwords.</span></span>
+<span data-ttu-id="79b95-106">Возможные значения обязательных паролей.</span><span class="sxs-lookup"><span data-stu-id="79b95-106">Possible values of required passwords.</span></span>
 
-## <a name="members"></a><span data-ttu-id="7a90e-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="7a90e-108">Members</span></span>
-|<span data-ttu-id="7a90e-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="7a90e-109">Member</span></span>|<span data-ttu-id="7a90e-110">Значение</span><span class="sxs-lookup"><span data-stu-id="7a90e-110">Value</span></span>|<span data-ttu-id="7a90e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7a90e-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="79b95-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="79b95-107">Members</span></span>
+|<span data-ttu-id="79b95-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="79b95-108">Member</span></span>|<span data-ttu-id="79b95-109">Значение</span><span class="sxs-lookup"><span data-stu-id="79b95-109">Value</span></span>|<span data-ttu-id="79b95-110">Описание</span><span class="sxs-lookup"><span data-stu-id="79b95-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7a90e-112">deviceDefault</span><span class="sxs-lookup"><span data-stu-id="7a90e-112">deviceDefault</span></span>|<span data-ttu-id="7a90e-113">0</span><span class="sxs-lookup"><span data-stu-id="7a90e-113">0</span></span>|<span data-ttu-id="7a90e-114">Значение по умолчанию устройства, без цели.</span><span class="sxs-lookup"><span data-stu-id="7a90e-114">Device default value, no intent.</span></span>|
-|<span data-ttu-id="7a90e-115">буквенно-цифровые;</span><span class="sxs-lookup"><span data-stu-id="7a90e-115">alphanumeric</span></span>|<span data-ttu-id="7a90e-116">1</span><span class="sxs-lookup"><span data-stu-id="7a90e-116">1</span></span>|<span data-ttu-id="7a90e-117">Буквенно-цифровой пароль.</span><span class="sxs-lookup"><span data-stu-id="7a90e-117">Alphanumeric password required.</span></span>|
-|<span data-ttu-id="7a90e-118">числовое</span><span class="sxs-lookup"><span data-stu-id="7a90e-118">numeric</span></span>|<span data-ttu-id="7a90e-119">2</span><span class="sxs-lookup"><span data-stu-id="7a90e-119">2</span></span>|<span data-ttu-id="7a90e-120">Числовой пароль.</span><span class="sxs-lookup"><span data-stu-id="7a90e-120">Numeric password required.</span></span>|
+|<span data-ttu-id="79b95-111">Девицедефаулт</span><span class="sxs-lookup"><span data-stu-id="79b95-111">deviceDefault</span></span>|<span data-ttu-id="79b95-112">нуль</span><span class="sxs-lookup"><span data-stu-id="79b95-112">0</span></span>|<span data-ttu-id="79b95-113">Значение по умолчанию для устройства, без намерения.</span><span class="sxs-lookup"><span data-stu-id="79b95-113">Device default value, no intent.</span></span>|
+|<span data-ttu-id="79b95-114">буквенно-цифровые;</span><span class="sxs-lookup"><span data-stu-id="79b95-114">alphanumeric</span></span>|<span data-ttu-id="79b95-115">1,1</span><span class="sxs-lookup"><span data-stu-id="79b95-115">1</span></span>|<span data-ttu-id="79b95-116">Необходимо указать буквенно-цифровой пароль.</span><span class="sxs-lookup"><span data-stu-id="79b95-116">Alphanumeric password required.</span></span>|
+|<span data-ttu-id="79b95-117">числовых</span><span class="sxs-lookup"><span data-stu-id="79b95-117">numeric</span></span>|<span data-ttu-id="79b95-118">2</span><span class="sxs-lookup"><span data-stu-id="79b95-118">2</span></span>|<span data-ttu-id="79b95-119">Необходим числовой пароль.</span><span class="sxs-lookup"><span data-stu-id="79b95-119">Numeric password required.</span></span>|
 
 
 

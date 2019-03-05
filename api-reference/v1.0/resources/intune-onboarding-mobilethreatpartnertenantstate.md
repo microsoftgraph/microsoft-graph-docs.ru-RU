@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления mobileThreatPartnerTenantState
-description: Состояние партнера клиента.
+title: тип перечисления Мобилесреатпартнертенантстате
+description: Состояние партнера этого клиента.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 195fe8fcfac70bc0e98a0ac2f94c28a63b5c9983
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937455"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258095"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a><span data-ttu-id="476b3-103">Тип перечисления mobileThreatPartnerTenantState</span><span class="sxs-lookup"><span data-stu-id="476b3-103">mobileThreatPartnerTenantState enum type</span></span>
+# <a name="mobilethreatpartnertenantstate-enum-type"></a><span data-ttu-id="f9954-103">тип перечисления Мобилесреатпартнертенантстате</span><span class="sxs-lookup"><span data-stu-id="f9954-103">mobileThreatPartnerTenantState enum type</span></span>
 
-> <span data-ttu-id="476b3-104">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="476b3-104">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="f9954-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f9954-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="476b3-105">Состояние партнера клиента.</span><span class="sxs-lookup"><span data-stu-id="476b3-105">Partner state of this tenant.</span></span>
-## <a name="members"></a><span data-ttu-id="476b3-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="476b3-106">Members</span></span>
-|<span data-ttu-id="476b3-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="476b3-107">Member</span></span>|<span data-ttu-id="476b3-108">Значение</span><span class="sxs-lookup"><span data-stu-id="476b3-108">Value</span></span>|<span data-ttu-id="476b3-109">Описание</span><span class="sxs-lookup"><span data-stu-id="476b3-109">Description</span></span>|
+<span data-ttu-id="f9954-105">Состояние партнера этого клиента.</span><span class="sxs-lookup"><span data-stu-id="f9954-105">Partner state of this tenant.</span></span>
+
+## <a name="members"></a><span data-ttu-id="f9954-106">Элементы</span><span class="sxs-lookup"><span data-stu-id="f9954-106">Members</span></span>
+|<span data-ttu-id="f9954-107">Элемент</span><span class="sxs-lookup"><span data-stu-id="f9954-107">Member</span></span>|<span data-ttu-id="f9954-108">Значение</span><span class="sxs-lookup"><span data-stu-id="f9954-108">Value</span></span>|<span data-ttu-id="f9954-109">Описание</span><span class="sxs-lookup"><span data-stu-id="f9954-109">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="476b3-110">недоступен</span><span class="sxs-lookup"><span data-stu-id="476b3-110">unavailable</span></span>|<span data-ttu-id="476b3-111">0</span><span class="sxs-lookup"><span data-stu-id="476b3-111">0</span></span>|<span data-ttu-id="476b3-112">Участник недоступен.</span><span class="sxs-lookup"><span data-stu-id="476b3-112">Partner is unavailable.</span></span>|
-|<span data-ttu-id="476b3-113">доступен</span><span class="sxs-lookup"><span data-stu-id="476b3-113">available</span></span>|<span data-ttu-id="476b3-114">1</span><span class="sxs-lookup"><span data-stu-id="476b3-114">1</span></span>|<span data-ttu-id="476b3-115">Доступен партнера.</span><span class="sxs-lookup"><span data-stu-id="476b3-115">Partner is available.</span></span>|
-|<span data-ttu-id="476b3-116">enabled</span><span class="sxs-lookup"><span data-stu-id="476b3-116">enabled</span></span>|<span data-ttu-id="476b3-117">2</span><span class="sxs-lookup"><span data-stu-id="476b3-117">2</span></span>|<span data-ttu-id="476b3-118">Включить партнера.</span><span class="sxs-lookup"><span data-stu-id="476b3-118">Partner is enabled.</span></span>|
-|<span data-ttu-id="476b3-119">не отвечает</span><span class="sxs-lookup"><span data-stu-id="476b3-119">unresponsive</span></span>|<span data-ttu-id="476b3-120">3</span><span class="sxs-lookup"><span data-stu-id="476b3-120">3</span></span>|<span data-ttu-id="476b3-121">Партнер не отвечает.</span><span class="sxs-lookup"><span data-stu-id="476b3-121">Partner is unresponsive.</span></span>|
+|<span data-ttu-id="f9954-110">выходе</span><span class="sxs-lookup"><span data-stu-id="f9954-110">unavailable</span></span>|<span data-ttu-id="f9954-111">нуль</span><span class="sxs-lookup"><span data-stu-id="f9954-111">0</span></span>|<span data-ttu-id="f9954-112">Партнер недоступен.</span><span class="sxs-lookup"><span data-stu-id="f9954-112">Partner is unavailable.</span></span>|
+|<span data-ttu-id="f9954-113">доступен</span><span class="sxs-lookup"><span data-stu-id="f9954-113">available</span></span>|<span data-ttu-id="f9954-114">1,1</span><span class="sxs-lookup"><span data-stu-id="f9954-114">1</span></span>|<span data-ttu-id="f9954-115">Партнер доступен.</span><span class="sxs-lookup"><span data-stu-id="f9954-115">Partner is available.</span></span>|
+|<span data-ttu-id="f9954-116">enabled</span><span class="sxs-lookup"><span data-stu-id="f9954-116">enabled</span></span>|<span data-ttu-id="f9954-117">2</span><span class="sxs-lookup"><span data-stu-id="f9954-117">2</span></span>|<span data-ttu-id="f9954-118">Партнер включен.</span><span class="sxs-lookup"><span data-stu-id="f9954-118">Partner is enabled.</span></span>|
+|<span data-ttu-id="f9954-119">не отвечает</span><span class="sxs-lookup"><span data-stu-id="f9954-119">unresponsive</span></span>|<span data-ttu-id="f9954-120">4</span><span class="sxs-lookup"><span data-stu-id="f9954-120">3</span></span>|<span data-ttu-id="f9954-121">Партнер не отвечает.</span><span class="sxs-lookup"><span data-stu-id="f9954-121">Partner is unresponsive.</span></span>|
 
 
 

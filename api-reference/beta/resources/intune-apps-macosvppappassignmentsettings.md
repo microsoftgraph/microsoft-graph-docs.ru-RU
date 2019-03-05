@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса macOsVppAppAssignmentSettings
-description: Содержит свойства, используемые для назначения Mac VPP мобильного приложения в группу.
-localization_priority: Normal
+title: Тип ресурса Макосвппаппассигнментсеттингс
+description: Содержит свойства, используемые для назначения мобильному приложению Mac VPP группе.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0927277b11416da001ad826200bf4ec841341118
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 102869101b577eadb40eb4a3146c45e422d9c24a
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431762"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150983"
 ---
-# <a name="macosvppappassignmentsettings-resource-type"></a><span data-ttu-id="d35ea-103">Тип ресурса macOsVppAppAssignmentSettings</span><span class="sxs-lookup"><span data-stu-id="d35ea-103">macOsVppAppAssignmentSettings resource type</span></span>
+# <a name="macosvppappassignmentsettings-resource-type"></a><span data-ttu-id="7291b-103">Тип ресурса Макосвппаппассигнментсеттингс</span><span class="sxs-lookup"><span data-stu-id="7291b-103">macOsVppAppAssignmentSettings resource type</span></span>
 
-> <span data-ttu-id="d35ea-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d35ea-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="d35ea-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d35ea-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="7291b-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7291b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d35ea-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="d35ea-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7291b-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7291b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d35ea-107">Содержит свойства, используемые для назначения Mac VPP мобильного приложения в группу.</span><span class="sxs-lookup"><span data-stu-id="d35ea-107">Contains properties used to assign an Mac VPP mobile app to a group.</span></span>
+<span data-ttu-id="7291b-106">Содержит свойства, используемые для назначения мобильному приложению Mac VPP группе.</span><span class="sxs-lookup"><span data-stu-id="7291b-106">Contains properties used to assign an Mac VPP mobile app to a group.</span></span>
 
 
-<span data-ttu-id="d35ea-108">Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="d35ea-108">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
+<span data-ttu-id="7291b-107">Наследуется от [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span><span class="sxs-lookup"><span data-stu-id="7291b-107">Inherits from [mobileAppAssignmentSettings](../resources/intune-apps-mobileappassignmentsettings.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d35ea-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="d35ea-109">Properties</span></span>
-|<span data-ttu-id="d35ea-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="d35ea-110">Property</span></span>|<span data-ttu-id="d35ea-111">Тип</span><span class="sxs-lookup"><span data-stu-id="d35ea-111">Type</span></span>|<span data-ttu-id="d35ea-112">Описание</span><span class="sxs-lookup"><span data-stu-id="d35ea-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="7291b-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="7291b-108">Properties</span></span>
+|<span data-ttu-id="7291b-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="7291b-109">Property</span></span>|<span data-ttu-id="7291b-110">Тип</span><span class="sxs-lookup"><span data-stu-id="7291b-110">Type</span></span>|<span data-ttu-id="7291b-111">Описание</span><span class="sxs-lookup"><span data-stu-id="7291b-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d35ea-113">useDeviceLicensing</span><span class="sxs-lookup"><span data-stu-id="d35ea-113">useDeviceLicensing</span></span>|<span data-ttu-id="d35ea-114">Boolean</span><span class="sxs-lookup"><span data-stu-id="d35ea-114">Boolean</span></span>|<span data-ttu-id="d35ea-115">Указывает, используется ли лицензирование устройств.</span><span class="sxs-lookup"><span data-stu-id="d35ea-115">Whether or not to use device licensing.</span></span>|
+|<span data-ttu-id="7291b-112">useDeviceLicensing</span><span class="sxs-lookup"><span data-stu-id="7291b-112">useDeviceLicensing</span></span>|<span data-ttu-id="7291b-113">Boolean</span><span class="sxs-lookup"><span data-stu-id="7291b-113">Boolean</span></span>|<span data-ttu-id="7291b-114">Указывает, используется ли лицензирование устройств.</span><span class="sxs-lookup"><span data-stu-id="7291b-114">Whether or not to use device licensing.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d35ea-116">Отношения</span><span class="sxs-lookup"><span data-stu-id="d35ea-116">Relationships</span></span>
-<span data-ttu-id="d35ea-117">Нет</span><span class="sxs-lookup"><span data-stu-id="d35ea-117">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="7291b-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="7291b-115">Relationships</span></span>
+<span data-ttu-id="7291b-116">Нет</span><span class="sxs-lookup"><span data-stu-id="7291b-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d35ea-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d35ea-118">JSON Representation</span></span>
-<span data-ttu-id="d35ea-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d35ea-119">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7291b-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7291b-117">JSON Representation</span></span>
+<span data-ttu-id="7291b-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7291b-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.macOsVppAppAssignmentSettings"

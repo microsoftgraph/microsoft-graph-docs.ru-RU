@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления defenderScanType
-description: Возможные значения для системы проверки типа.
-localization_priority: Normal
+title: тип перечисления Дефендерскантипе
+description: Возможные значения для типа "сканирование системы".
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa60ef6358ac6d78a6b89f65b57345d127cc32e5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8871fca2c46d18ef1de3bab5a5ce88525109b234
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425864"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30150724"
 ---
-# <a name="defenderscantype-enum-type"></a><span data-ttu-id="db7b3-103">Тип перечисления defenderScanType</span><span class="sxs-lookup"><span data-stu-id="db7b3-103">defenderScanType enum type</span></span>
+# <a name="defenderscantype-enum-type"></a><span data-ttu-id="15853-103">тип перечисления Дефендерскантипе</span><span class="sxs-lookup"><span data-stu-id="15853-103">defenderScanType enum type</span></span>
 
-> <span data-ttu-id="db7b3-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="db7b3-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="db7b3-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="db7b3-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="15853-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="15853-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="db7b3-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="db7b3-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="15853-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="15853-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="db7b3-107">Возможные значения для системы проверки типа.</span><span class="sxs-lookup"><span data-stu-id="db7b3-107">Possible values for system scan type.</span></span>
+<span data-ttu-id="15853-106">Возможные значения для типа "сканирование системы".</span><span class="sxs-lookup"><span data-stu-id="15853-106">Possible values for system scan type.</span></span>
 
-## <a name="members"></a><span data-ttu-id="db7b3-108">Элементы</span><span class="sxs-lookup"><span data-stu-id="db7b3-108">Members</span></span>
-|<span data-ttu-id="db7b3-109">Элемент</span><span class="sxs-lookup"><span data-stu-id="db7b3-109">Member</span></span>|<span data-ttu-id="db7b3-110">Значение</span><span class="sxs-lookup"><span data-stu-id="db7b3-110">Value</span></span>|<span data-ttu-id="db7b3-111">Описание</span><span class="sxs-lookup"><span data-stu-id="db7b3-111">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="15853-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="15853-107">Members</span></span>
+|<span data-ttu-id="15853-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="15853-108">Member</span></span>|<span data-ttu-id="15853-109">Значение</span><span class="sxs-lookup"><span data-stu-id="15853-109">Value</span></span>|<span data-ttu-id="15853-110">Описание</span><span class="sxs-lookup"><span data-stu-id="15853-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="db7b3-112">userDefined</span><span class="sxs-lookup"><span data-stu-id="db7b3-112">userDefined</span></span>|<span data-ttu-id="db7b3-113">0</span><span class="sxs-lookup"><span data-stu-id="db7b3-113">0</span></span>|<span data-ttu-id="db7b3-114">User Defined, значение по умолчанию, без цели.</span><span class="sxs-lookup"><span data-stu-id="db7b3-114">User Defined, default value, no intent.</span></span>|
-|<span data-ttu-id="db7b3-115">Этот параметр отключен</span><span class="sxs-lookup"><span data-stu-id="db7b3-115">disabled</span></span>|<span data-ttu-id="db7b3-116">1</span><span class="sxs-lookup"><span data-stu-id="db7b3-116">1</span></span>|<span data-ttu-id="db7b3-117">Этот параметр отключен сканирование системы.</span><span class="sxs-lookup"><span data-stu-id="db7b3-117">System scan disabled.</span></span>|
-|<span data-ttu-id="db7b3-118">Быстрый</span><span class="sxs-lookup"><span data-stu-id="db7b3-118">quick</span></span>|<span data-ttu-id="db7b3-119">2</span><span class="sxs-lookup"><span data-stu-id="db7b3-119">2</span></span>|<span data-ttu-id="db7b3-120">Сканирование для быстрого системы.</span><span class="sxs-lookup"><span data-stu-id="db7b3-120">Quick system scan.</span></span>|
-|<span data-ttu-id="db7b3-121">Полный</span><span class="sxs-lookup"><span data-stu-id="db7b3-121">full</span></span>|<span data-ttu-id="db7b3-122">3</span><span class="sxs-lookup"><span data-stu-id="db7b3-122">3</span></span>|<span data-ttu-id="db7b3-123">Полная проверка системы.</span><span class="sxs-lookup"><span data-stu-id="db7b3-123">Full system scan.</span></span>|
+|<span data-ttu-id="15853-111">UserDefined типа</span><span class="sxs-lookup"><span data-stu-id="15853-111">userDefined</span></span>|<span data-ttu-id="15853-112">нуль</span><span class="sxs-lookup"><span data-stu-id="15853-112">0</span></span>|<span data-ttu-id="15853-113">Пользователь определен, значение по умолчанию, без намерения.</span><span class="sxs-lookup"><span data-stu-id="15853-113">User Defined, default value, no intent.</span></span>|
+|<span data-ttu-id="15853-114">активирован</span><span class="sxs-lookup"><span data-stu-id="15853-114">disabled</span></span>|<span data-ttu-id="15853-115">1,1</span><span class="sxs-lookup"><span data-stu-id="15853-115">1</span></span>|<span data-ttu-id="15853-116">Сканирование системы отключено.</span><span class="sxs-lookup"><span data-stu-id="15853-116">System scan disabled.</span></span>|
+|<span data-ttu-id="15853-117">Quick</span><span class="sxs-lookup"><span data-stu-id="15853-117">quick</span></span>|<span data-ttu-id="15853-118">2</span><span class="sxs-lookup"><span data-stu-id="15853-118">2</span></span>|<span data-ttu-id="15853-119">Быстрая проверка системы.</span><span class="sxs-lookup"><span data-stu-id="15853-119">Quick system scan.</span></span>|
+|<span data-ttu-id="15853-120">полный</span><span class="sxs-lookup"><span data-stu-id="15853-120">full</span></span>|<span data-ttu-id="15853-121">4</span><span class="sxs-lookup"><span data-stu-id="15853-121">3</span></span>|<span data-ttu-id="15853-122">Полное сканирование системы.</span><span class="sxs-lookup"><span data-stu-id="15853-122">Full system scan.</span></span>|
 
 
 

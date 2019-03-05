@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса vpnRoute
+title: Тип ресурса Впнрауте
 description: Определение маршрута VPN.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628e2f384b06dece13da1595a4111a2d1022a673
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 54706d47267eef8fff6c465f24e4e9caa183ccc3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423022"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154301"
 ---
-# <a name="vpnroute-resource-type"></a><span data-ttu-id="0b965-103">Тип ресурса vpnRoute</span><span class="sxs-lookup"><span data-stu-id="0b965-103">vpnRoute resource type</span></span>
+# <a name="vpnroute-resource-type"></a><span data-ttu-id="0ecac-103">Тип ресурса Впнрауте</span><span class="sxs-lookup"><span data-stu-id="0ecac-103">vpnRoute resource type</span></span>
 
-> <span data-ttu-id="0b965-104">**Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="0b965-104">**Important:** APIs under the /beta version in Microsoft Graph are subject to change.</span></span> <span data-ttu-id="0b965-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0b965-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="0ecac-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ecac-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="0b965-106">**Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0b965-106">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="0ecac-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="0ecac-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="0b965-107">Определение маршрута VPN.</span><span class="sxs-lookup"><span data-stu-id="0b965-107">VPN Route definition.</span></span>
+<span data-ttu-id="0ecac-106">Определение маршрута VPN.</span><span class="sxs-lookup"><span data-stu-id="0ecac-106">VPN Route definition.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="0b965-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="0b965-108">Properties</span></span>
-|<span data-ttu-id="0b965-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="0b965-109">Property</span></span>|<span data-ttu-id="0b965-110">Тип</span><span class="sxs-lookup"><span data-stu-id="0b965-110">Type</span></span>|<span data-ttu-id="0b965-111">Описание</span><span class="sxs-lookup"><span data-stu-id="0b965-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="0ecac-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0ecac-107">Properties</span></span>
+|<span data-ttu-id="0ecac-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="0ecac-108">Property</span></span>|<span data-ttu-id="0ecac-109">Тип</span><span class="sxs-lookup"><span data-stu-id="0ecac-109">Type</span></span>|<span data-ttu-id="0ecac-110">Описание</span><span class="sxs-lookup"><span data-stu-id="0ecac-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="0b965-112">destinationPrefix</span><span class="sxs-lookup"><span data-stu-id="0b965-112">destinationPrefix</span></span>|<span data-ttu-id="0b965-113">String</span><span class="sxs-lookup"><span data-stu-id="0b965-113">String</span></span>|<span data-ttu-id="0b965-114">Префикс назначения (адрес IPv4/v6).</span><span class="sxs-lookup"><span data-stu-id="0b965-114">Destination prefix (IPv4/v6 address).</span></span>|
-|<span data-ttu-id="0b965-115">prefixSize</span><span class="sxs-lookup"><span data-stu-id="0b965-115">prefixSize</span></span>|<span data-ttu-id="0b965-116">Int32</span><span class="sxs-lookup"><span data-stu-id="0b965-116">Int32</span></span>|<span data-ttu-id="0b965-117">Префикс размера.</span><span class="sxs-lookup"><span data-stu-id="0b965-117">Prefix size.</span></span> <span data-ttu-id="0b965-118">(1-32).</span><span class="sxs-lookup"><span data-stu-id="0b965-118">(1-32).</span></span> <span data-ttu-id="0b965-119">Допустимые значения 1 до 32</span><span class="sxs-lookup"><span data-stu-id="0b965-119">Valid values 1 to 32</span></span>|
+|<span data-ttu-id="0ecac-111">Дестинатионпрефикс</span><span class="sxs-lookup"><span data-stu-id="0ecac-111">destinationPrefix</span></span>|<span data-ttu-id="0ecac-112">String</span><span class="sxs-lookup"><span data-stu-id="0ecac-112">String</span></span>|<span data-ttu-id="0ecac-113">Префикс назначения (IPv4/V6-адрес).</span><span class="sxs-lookup"><span data-stu-id="0ecac-113">Destination prefix (IPv4/v6 address).</span></span>|
+|<span data-ttu-id="0ecac-114">Префикссизе</span><span class="sxs-lookup"><span data-stu-id="0ecac-114">prefixSize</span></span>|<span data-ttu-id="0ecac-115">Int32</span><span class="sxs-lookup"><span data-stu-id="0ecac-115">Int32</span></span>|<span data-ttu-id="0ecac-116">Размер префикса.</span><span class="sxs-lookup"><span data-stu-id="0ecac-116">Prefix size.</span></span> <span data-ttu-id="0ecac-117">(1-32).</span><span class="sxs-lookup"><span data-stu-id="0ecac-117">(1-32).</span></span> <span data-ttu-id="0ecac-118">Допустимые значения — от 1 до 32</span><span class="sxs-lookup"><span data-stu-id="0ecac-118">Valid values 1 to 32</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="0b965-120">Отношения</span><span class="sxs-lookup"><span data-stu-id="0b965-120">Relationships</span></span>
-<span data-ttu-id="0b965-121">Нет</span><span class="sxs-lookup"><span data-stu-id="0b965-121">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="0ecac-119">Отношения</span><span class="sxs-lookup"><span data-stu-id="0ecac-119">Relationships</span></span>
+<span data-ttu-id="0ecac-120">Нет</span><span class="sxs-lookup"><span data-stu-id="0ecac-120">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0b965-122">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0b965-122">JSON Representation</span></span>
-<span data-ttu-id="0b965-123">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0b965-123">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="0ecac-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0ecac-121">JSON Representation</span></span>
+<span data-ttu-id="0ecac-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="0ecac-122">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.vpnRoute"
