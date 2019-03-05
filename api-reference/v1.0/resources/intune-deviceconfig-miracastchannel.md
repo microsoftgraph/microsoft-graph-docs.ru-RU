@@ -1,45 +1,46 @@
 ---
-title: Тип перечисления miracastChannel
-description: Возможные значения для Miracast канала.
+title: тип перечисления Миракастчаннел
+description: Возможные значения для канала Miracast.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 468ee857968951171eef24087aec710657a413b4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 436036aa9b5945be94587622a2e6a5cfe4f5d027
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922692"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253913"
 ---
-# <a name="miracastchannel-enum-type"></a>Тип перечисления miracastChannel
+# <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для Miracast канала.
+Возможные значения для канала Miracast.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|User Defined, значение по умолчанию, без цели.|
-|one|1|Один.|
-|two|2|Два.|
-|three|3|Три.|
+|UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
+|one|1,1|Один.|
+|two|2|2.|
+|three|4|Трёх.|
 |four|4|Четыре.|
-|пять|5|Пять.|
-|Шесть|6|Шесть.|
-|Семь|7|7.|
-|Восемь|8|8.|
-|Девять|9|9.|
-|Десять|10|Десять.|
-|Одиннадцать|11|Одиннадцать.|
-|thirtySix|36|30-6.|
+|пять|17:00|Следующих.|
+|Шесть|6|Шест.|
+|Семь|7|Неделю.|
+|Восемь|8,5|Основными.|
+|Девять|10|9.|
+|Десять|десяти|Раз.|
+|Eleven|-11:00|Eleven.|
+|Сиртисикс|36|36.|
 |40|40|40.|
-|fortyFour|44|Сорока четырех.|
-|fortyEight|48|40-8.|
-|oneHundredFortyNine|149|OneHundredForty 9.|
-|oneHundredFiftyThree|153|Три OneHundredFifty.|
-|oneHundredFiftySeven|157|OneHundredFifty 7.|
-|oneHundredSixtyOne|161|Один OneHundredSixty.|
-|oneHundredSixtyFive|165|Пять OneHundredSixty.|
+|Фортифаур|44|44.|
+|Фортеигхт|48|48.|
+|Онехундредфортинине|149|Онехундредфорти — девять.|
+|Онехундредфифтисри|153|Онехундредфифти — три.|
+|Онехундредфифтисевен|157|Онехундредфифти — семь.|
+|Онехундредсикстйоне|161|Онехундредсиксти — один.|
+|Онехундредсикстифиве|165|Онехундредсиксти — пять.|
 
 
 

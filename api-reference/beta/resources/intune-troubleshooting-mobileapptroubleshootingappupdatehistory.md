@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса mobileAppTroubleshootingAppUpdateHistory
-description: Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
-localization_priority: Normal
+title: Тип ресурса Мобилеапптраублешутингаппупдатехистори
+description: Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 606fe9dcf282dd75992f5a936aa5f49dfbb61dc1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 3eadbec77e95dd90fd9ef819e468241bf8ef5c9e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29414209"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30153643"
 ---
-# <a name="mobileapptroubleshootingappupdatehistory-resource-type"></a>Тип ресурса mobileAppTroubleshootingAppUpdateHistory
+# <a name="mobileapptroubleshootingappupdatehistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппупдатехистори
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Элемент журнала, содержащихся в событии Устранение неполадок мобильного приложения.
+Элемент History, содержащийся в соБытии устранения неполадок мобильного приложения.
 
 
-Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
+НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|occurrenceDateTime|DateTimeOffset|Время возникновения элемент журнала. Наследуется от [mobileAppTroubleshootingHistoryItem](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
+|Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
 
 ## <a name="relationships"></a>Отношения
 Нет

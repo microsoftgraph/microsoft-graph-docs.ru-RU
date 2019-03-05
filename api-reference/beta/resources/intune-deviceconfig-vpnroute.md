@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса vpnRoute
+title: Тип ресурса Впнрауте
 description: Определение маршрута VPN.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 628e2f384b06dece13da1595a4111a2d1022a673
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 54706d47267eef8fff6c465f24e4e9caa183ccc3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29423022"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30154301"
 ---
-# <a name="vpnroute-resource-type"></a>Тип ресурса vpnRoute
+# <a name="vpnroute-resource-type"></a>Тип ресурса Впнрауте
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Определение маршрута VPN.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|destinationPrefix|String|Префикс назначения (адрес IPv4/v6).|
-|prefixSize|Int32|Префикс размера. (1-32). Допустимые значения 1 до 32|
+|Дестинатионпрефикс|String|Префикс назначения (IPv4/V6-адрес).|
+|Префикссизе|Int32|Размер префикса. (1-32). Допустимые значения — от 1 до 32|
 
 ## <a name="relationships"></a>Отношения
 Нет

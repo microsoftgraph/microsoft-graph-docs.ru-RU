@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления localSecurityOptionsMinimumSessionSecurity
-description: Возможные значения для LocalSecurityOptionsMinimumSessionSecurity
-localization_priority: Normal
+title: тип перечисления Локалсекуритйоптионсминимумсессионсекурити
+description: Возможные значения для Локалсекуритйоптионсминимумсессионсекурити
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c39f2bb6d0bab2aff09fc05bb0492e81102e1b7c
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: fe6007747aed1037a4dc3d5264bb432182a28c00
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396086"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145348"
 ---
-# <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>Тип перечисления localSecurityOptionsMinimumSessionSecurity
+# <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>тип перечисления Локалсекуритйоптионсминимумсессионсекурити
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для LocalSecurityOptionsMinimumSessionSecurity
+Возможные значения для Локалсекуритйоптионсминимумсессионсекурити
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|none|0|Отправить LM & NTLM ответы|
-|requireNtmlV2SessionSecurity|1|Отправлять LM & использование NTLM сеансовая безопасность NTLMv2 при согласовании|
-|require128BitEncryption|2|Отправлять LM & только NTLM ответы|
-|ntlmV2And128BitEncryption|3|Отправлять LM & только ответы NTLMv2|
+|Нет|нуль|Отправка ответов LM _Амп_ NTLM|
+|requireNtmlV2SessionSecurity|1,1|Отправлять LM _Амп_ NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
+|require128BitEncryption|2|Отправлять только LM _Амп_ NTLM ответы|
+|ntlmV2And128BitEncryption|4|Отправлять только LM _Амп_ NTLMv2 ответы|
 
 
 

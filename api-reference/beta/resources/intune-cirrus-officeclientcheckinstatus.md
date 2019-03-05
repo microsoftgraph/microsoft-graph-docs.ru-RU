@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса officeClientCheckinStatus
-description: Сущности, которая описывает клиента возврат stats.
+title: Тип ресурса Оффицеклиентчеккинстатус
+description: Сущность, описывающая статистику по возврату клиента.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
-ms.openlocfilehash: aebc534a6c424a9dac4316d0029e2fd35839f0a7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 465b07ba286b9ee3a58132424be2a25b1c7e564e
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29403261"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156058"
 ---
-# <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса officeClientCheckinStatus
+# <a name="officeclientcheckinstatus-resource-type"></a>Тип ресурса Оффицеклиентчеккинстатус
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Сущности, которая описывает клиента возврат stats.
+Сущность, описывающая статистику по возврату клиента.
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|userPrincipalName|String|Имя участника-пользователя с помощью устройства.|
-|deviceName|String|Имя устройства для возврата.|
-|devicePlatform|String|Устройство платформы для возврата.|
-|devicePlatformVersion|String|Для возврата версии платформы устройства.|
-|wasSuccessful|Логический|Если последний checkin прошла успешно.|
-|userId|String|Идентификатор пользователя, с помощью устройства.|
-|checkinDateTime|DateTimeOffset|Последний устройства возврат времени в формате UTC.|
-|сообщение об ошибке|String|Сообщение об ошибке, если какие-либо связанные для последнего checkin.|
-|appliedPolicies|Коллекция String|Список политик доставки на устройство как последний checkin.|
+|userPrincipalName|Строка|Имя участника пользователя, использующего устройство.|
+|deviceName|String|Имя устройства, пытающееся вернуть.|
+|devicePlatform|String|Платформа устройства пытается вернуться.|
+|Девицеплатформверсион|String|Версия платформы устройства, пытающаяся вернуть значение.|
+|Вассукцессфул|Логический|, Если последний возврат выполнен успешно.|
+|userId|String|Идентификатор пользователя, использующий устройство.|
+|Чеккиндатетиме|DateTimeOffset|Время последнего возврата устройства в формате UTC.|
+|Ошибк|String|Сообщение об ошибке, если оно связано с последним возвратом.|
+|appliedPolicies|Коллекция строк|Список политик, доставляемых на устройство при последнем возврате.|
 
 ## <a name="relationships"></a>Отношения
 Нет

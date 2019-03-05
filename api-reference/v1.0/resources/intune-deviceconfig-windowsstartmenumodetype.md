@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления windowsStartMenuModeType
-description: Тип режимы отображения меню "Пуск".
+title: тип перечисления Виндовсстартменумодетипе
+description: Тип режимов отображения для меню "Пуск".
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: d1339cfbd18f4df99c8f2f431d34ed68069ce0e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 43e077fe726a5d44558860140c0ac7098d59afa5
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986105"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250504"
 ---
-# <a name="windowsstartmenumodetype-enum-type"></a>Тип перечисления windowsStartMenuModeType
+# <a name="windowsstartmenumodetype-enum-type"></a>тип перечисления Виндовсстартменумодетипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Тип режимы отображения меню "Пуск".
+Тип режимов отображения для меню "Пуск".
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|userDefined|0|Определенные пользователем. Значение по умолчанию.|
-|во весь экран|1|Полноэкранный режим.|
-|nonFullScreen|2|Экран неполные.|
+|UserDefined типа|нуль|Определено пользователем. Значение по умолчанию.|
+|Перейти|1,1|Полноэкранный режим.|
+|неПолноэкранный режим|2|Не полный экран.|
 
 
 

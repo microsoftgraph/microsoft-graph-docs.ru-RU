@@ -1,29 +1,30 @@
 ---
-title: Тип перечисления vppTokenState
-description: Возможные состояния, связанный с маркером покупки программы корпоративного Apple.
+title: тип перечисления Впптокенстате
+description: Возможные состояния, связанные с токеном Apple Volume Purchase Program.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 6bdeb73b6491f3960ce30db91a35d06c0f8ffaf1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 573fe27064881f670e642e7c3727b8c9eb7db5a9
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986665"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30254935"
 ---
-# <a name="vpptokenstate-enum-type"></a>Тип перечисления vppTokenState
+# <a name="vpptokenstate-enum-type"></a>тип перечисления Впптокенстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные состояния, связанный с маркером покупки программы корпоративного Apple.
+Возможные состояния, связанные с токеном Apple Volume Purchase Program.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Состояние по умолчанию.|
-|допустимый|1|Маркер действителен.|
-|истек срок действия|2|Истек срок действия маркера.|
-|Недопустимый|3|Недопустимый маркер.|
-|assignedToExternalMDM|4|Маркер управляется другой MDM службы.|
+|unknown|нуль|Состояние по умолчанию.|
+|верно|1,1|Токен является допустимым.|
+|истек|2|Срок действия маркера истек.|
+|Недопустимый|4|Недопустимый маркер.|
+|Ассигнедтоекстерналмдм|4|Маркер управляется другой службой MDM.|
 
 
 

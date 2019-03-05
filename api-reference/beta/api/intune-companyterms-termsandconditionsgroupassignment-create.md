@@ -1,25 +1,25 @@
 ---
-title: Создание termsAndConditionsGroupAssignment
-description: Создание нового объекта termsAndConditionsGroupAssignment.
-localization_priority: Normal
+title: Создание Термсандкондитионсграупассигнмент
+description: Создание нового объекта Термсандкондитионсграупассигнмент.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1d5d9576e886530bd4cf8af345390e9b9170a80
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: c7688bb77a1b2feb33487aa7bbda33da052cea52
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29417121"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30140098"
 ---
-# <a name="create-termsandconditionsgroupassignment"></a>Создание termsAndConditionsGroupAssignment
+# <a name="create-termsandconditionsgroupassignment"></a>Создание Термсандкондитионсграупассигнмент
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
+Создание нового объекта [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -40,24 +40,24 @@ POST /deviceManagement/termsAndConditions/{termsAndConditionsId}/groupAssignment
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта termsAndConditionsGroupAssignment.
+В тексте запроса добавьте представление объекта Термсандкондитионсграупассигнмент в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания termsAndConditionsGroupAssignment.
+В следующей таблице приведены свойства, необходимые при создании Термсандкондитионсграупассигнмент.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта.|
-|targetGroupId|String|Уникальный идентификатор группы, которая назначена политика T&C.|
+|Таржетграупид|String|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
 
 
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [termsAndConditionsGroupAssignment](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [термсандкондитионсграупассигнмент](../resources/intune-companyterms-termsandconditionsgroupassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -74,8 +74,8 @@ Content-length: 120
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

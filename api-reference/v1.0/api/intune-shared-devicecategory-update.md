@@ -4,25 +4,26 @@ description: Обновление свойств объекта deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b055f8865592e935aaa32e8a3a541151886d36de
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986861"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30255180"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [deviceCategory](../resources/intune-shared-devicecategory.md).
+
 ## <a name="prerequisites"></a>Предварительные условия
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **Адаптация новых сотрудников** и <br> &nbsp;&nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **** Подключение и <br> &nbsp;&nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -39,7 +40,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -50,10 +51,10 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
-|**Адаптация новых сотрудников**|
+|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
+|**Подключение**|
 |displayName|String|Отображаемое имя категории устройств.|
-|описание|String|Необязательное описание категории устройств.|
+|description|String|Необязательное описание категории устройств.|
 
 
 
@@ -62,7 +63,7 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
-Ниже приведены примеры запроса.
+Ниже приведено несколько примеров запроса.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceCategories/{deviceCategoryId}
 Content-type: application/json
@@ -77,7 +78,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ```
 
 ### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будет отличаться в зависимости от контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будут зависеть от контекста.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

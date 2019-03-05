@@ -1,25 +1,25 @@
 ---
-title: Создание windowsInformationProtectionWipeAction
-description: Создание нового объекта windowsInformationProtectionWipeAction.
-localization_priority: Normal
+title: Создание Виндовсинформатионпротектионвипеактион
+description: Создание нового объекта Виндовсинформатионпротектионвипеактион.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43b1ffff119e86faa73276770916d5ac26b1ba1a
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 26a90166c82843ccb0584b8d720f053fe6378844
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431684"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158851"
 ---
-# <a name="create-windowsinformationprotectionwipeaction"></a>Создание windowsInformationProtectionWipeAction
+# <a name="create-windowsinformationprotectionwipeaction"></a>Создание Виндовсинформатионпротектионвипеактион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Создание нового объекта [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
+Создание нового объекта [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,23 +45,24 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта windowsInformationProtectionWipeAction.
+В тексте запроса добавьте представление объекта Виндовсинформатионпротектионвипеактион в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания windowsInformationProtectionWipeAction.
+В следующей таблице приведены свойства, необходимые при создании Виндовсинформатионпротектионвипеактион.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Ключ объекта.|
-|status|[actionState](../resources/intune-shared-actionstate.md)|Очистка состояние действия. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
-|targetedUserId|String|Идентификатор пользователя, с это действие очистки.|
-|targetedDeviceRegistrationId|String|DeviceRegistrationId с этой операции очистки.|
-|targetedDeviceName|String|Имя целевого устройства.|
-|targetedDeviceMacAddress|String|Целевые устройства Mac-адрес.|
+|status|[actionState](../resources/intune-shared-actionstate.md)|Состояние действия очистки. Возможные значения: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|Таржетедусерид|String|UserId, целевой для этого действия очистки.|
+|Таржетеддевицерегистратионид|String|Девицерегистратионид, предназначенный для этого действия очистки.|
+|Таржетеддевиценаме|String|Имя целевого устройства.|
+|Таржетеддевицемакаддресс|String|Mac-адрес целевого устройства.|
+|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства, которое было назначено для этого действия очистки.|
 
 
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [windowsInformationProtectionWipeAction](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [виндовсинформатионпротектионвипеактион](../resources/intune-mam-windowsinformationprotectionwipeaction.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +71,7 @@ POST /deviceAppManagement/windowsInformationProtectionWipeActions
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/windowsInformationProtectionWipeActions
 Content-type: application/json
-Content-length: 350
+Content-length: 412
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -78,16 +79,17 @@ Content-length: 350
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 399
+Content-Length: 461
 
 {
   "@odata.type": "#microsoft.graph.windowsInformationProtectionWipeAction",
@@ -96,7 +98,8 @@ Content-Length: 399
   "targetedUserId": "Targeted User Id value",
   "targetedDeviceRegistrationId": "Targeted Device Registration Id value",
   "targetedDeviceName": "Targeted Device Name value",
-  "targetedDeviceMacAddress": "Targeted Device Mac Address value"
+  "targetedDeviceMacAddress": "Targeted Device Mac Address value",
+  "lastCheckInDateTime": "2016-12-31T23:59:56.413532-08:00"
 }
 ```
 

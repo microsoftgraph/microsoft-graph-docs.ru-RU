@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления mdmAppConfigKeyType
-description: Основные типы конфигурации приложения.
-localization_priority: Normal
+title: тип перечисления Мдмаппконфигкэйтипе
+description: Типы ключей конфигурации приложений.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d5c7c87f91a538a6afce5e790b69f0ae09b364d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 220e3ebf0bb9482b64c894025f233404769bff8c
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418794"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145222"
 ---
-# <a name="mdmappconfigkeytype-enum-type"></a>Тип перечисления mdmAppConfigKeyType
+# <a name="mdmappconfigkeytype-enum-type"></a>тип перечисления Мдмаппконфигкэйтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Основные типы конфигурации приложения.
+Типы ключей конфигурации приложений.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|stringType|0|Н/Д|
-|integerType|1|Н/Д|
-|realType|2|Н/Д|
-|booleanType|3|Н/Д|
-|tokenType|4|Н/Д|
+|Стрингтипе|нуль|Н/Д|
+|Интежертипе|1,1|Н/Д|
+|Реалтипе|2|Н/Д|
+|Булеантипе|4|Н/Д|
+|Токентипе|4|Н/Д|
 
 
 

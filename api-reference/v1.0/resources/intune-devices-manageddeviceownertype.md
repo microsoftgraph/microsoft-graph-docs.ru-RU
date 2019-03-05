@@ -1,27 +1,28 @@
 ---
-title: Тип перечисления managedDeviceOwnerType
+title: тип перечисления Манажеддевицеовнертипе
 description: Тип владельца устройства.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 811b705ef181b4d905c735c8672bcf96059c8126
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: ad4a0df5e0fc79aec75245d908f505e824ce788d
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27934935"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258655"
 ---
-# <a name="manageddeviceownertype-enum-type"></a>Тип перечисления managedDeviceOwnerType
+# <a name="manageddeviceownertype-enum-type"></a>тип перечисления Манажеддевицеовнертипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип владельца устройства.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|0|Неизвестно.|
-|company|1|Принадлежащие компании.|
-|personal|2|Владельцем человека.|
+|unknown|нуль|Найден.|
+|company|1,1|Принадлежит компании.|
+|personal|2|Принадлежит пользователю.|
 
 
 

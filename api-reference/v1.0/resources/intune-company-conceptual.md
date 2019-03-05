@@ -1,15 +1,15 @@
 ---
-title: Корпоративные условия в Microsoft Intune
-description: Вы можете развернуть условия Intune для групп пользователей, чтобы показать, как регистрация, доступ к рабочим ресурсам и приложение "Корпоративный портал" влияют на устройства и пользователей. Пользователи должны принять условия, чтобы использовать Корпоративный портал для регистрации и доступа к своей рабочей среде.
+title: Условия и условия компании в Microsoft Intune — API Microsoft Graph
+description: ПереЧисление конечных точек API Microsoft Graph для Intune (REST), которые поддерживают условия и условия компании.
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: c9d5b41e0c672db5dfff82b6a70bc97214a56f4a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 3de3cdf4ac55177bceb56e59743d0bef9bd4cb50
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925933"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253535"
 ---
 # <a name="company-terms-and-conditions-in-microsoft-intune"></a>Корпоративные условия в Microsoft Intune
 

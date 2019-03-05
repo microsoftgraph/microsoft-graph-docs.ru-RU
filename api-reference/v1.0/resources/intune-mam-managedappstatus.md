@@ -3,19 +3,20 @@ title: Тип ресурса managedAppStatus
 description: Представляет состояние защиты и конфигурации приложений для организации.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: b06e52d34cbbfb1e358ee2353c3420f8d129a61e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 3bc6982161e204a4f2e5cac38b62d351ab417482
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956936"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258865"
 ---
 # <a name="managedappstatus-resource-type"></a>Тип ресурса managedAppStatus
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Представляет состояние защиты и конфигурации приложений для организации.
+
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
@@ -26,11 +27,12 @@ ms.locfileid: "27956936"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Понятное имя отчета о состоянии.|
-|id|Строка|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|id|String|Ключ объекта.|
+|version|String|Версия объекта.|
 
 ## <a name="relationships"></a>Связи
 Нет
+
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 <!-- {

@@ -1,35 +1,35 @@
 ---
-title: Тип перечисления androidKeyguardFeature
-description: Функциональная возможность, Android keyguard.
-localization_priority: Normal
+title: тип перечисления Андроидкэйгуардфеатуре
+description: Функция Android кэйгуард.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: df89e1e9170bf2e3691116e27125514c7e0a6de9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 2987a8220bbbcfc99238587a989b890aff958e47
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430666"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161952"
 ---
-# <a name="androidkeyguardfeature-enum-type"></a>Тип перечисления androidKeyguardFeature
+# <a name="androidkeyguardfeature-enum-type"></a>тип перечисления Андроидкэйгуардфеатуре
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Функциональная возможность, Android keyguard.
+Функция Android кэйгуард.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен; Это значение игнорируется.|
-|камера|1|Об использовании камеры при на экранах безопасной keyguard.|
-|уведомления|2|Отображение уведомлений при на экранах безопасной keyguard.|
-|unredactedNotifications|3|Отображение unredacted уведомлений при на экранах безопасной keyguard.|
-|trustAgents|4|Можно отметить состояние агента на экранах безопасной keyguard.|
-|отпечаток пальца|5|Отпечаток об использовании датчика на экранах безопасной keyguard.|
-|remoteInput|6|Запись текста уведомлений при на экранах безопасной keyguard.|
-|allFeatures|7|Все функции keyguard при на экранах безопасной keyguard.|
+|notConfigured|нуль|Не настроен; Это значение игнорируется.|
+|видеокамер|1,1|Использование камеры в защищенных экранах кэйгуард.|
+|уведомления|2|Отображение уведомлений при использовании экранов безопасного кэйгуард.|
+|Унредактеднотификатионс|4|Отображение уведомлений унредактед при использовании безопасного экрана кэйгуард.|
+|Трустажентс|4|Состояние агента доверия при использовании экранов безопасного кэйгуард.|
+|распознавания|17:00|Использование датчиков отпечатков пальцев в защищенных экранах кэйгуард.|
+|Ремотеинпут|6|Ввод текста уведомления при использовании экранов безопасного кэйгуард.|
+|Аллфеатурес|7|Все компоненты кэйгуард, когда на экранах безопасности кэйгуард.|
 
 
 

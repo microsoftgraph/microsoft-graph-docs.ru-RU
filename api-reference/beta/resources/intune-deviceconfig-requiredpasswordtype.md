@@ -1,30 +1,30 @@
 ---
-title: Тип перечисления requiredPasswordType
-description: Возможные значения необходимые пароли.
-localization_priority: Normal
+title: тип перечисления Рекуиредпассвордтипе
+description: Возможные значения обязательных паролей.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d254c18fd827db961c1d31e962a506fb82d32cb7
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 756a4623e117b8925c682d4a599d0f6ec05ebde0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416155"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30145474"
 ---
-# <a name="requiredpasswordtype-enum-type"></a>Тип перечисления requiredPasswordType
+# <a name="requiredpasswordtype-enum-type"></a>тип перечисления Рекуиредпассвордтипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения необходимые пароли.
+Возможные значения обязательных паролей.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|deviceDefault|0|Значение по умолчанию устройства, без цели.|
-|буквенно-цифровые;|1|Буквенно-цифровой пароль.|
-|числовое|2|Числовой пароль.|
+|Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
+|буквенно-цифровые;|1,1|Необходимо указать буквенно-цифровой пароль.|
+|числовых|2|Необходим числовой пароль.|
 
 
 

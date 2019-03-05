@@ -1,29 +1,29 @@
 ---
-title: Тип перечисления vppTokenAccountType
-description: Возможные типы маркер покупки программы корпоративного Apple.
-localization_priority: Normal
+title: тип перечисления Впптокенаккаунттипе
+description: Возможные типы маркера Apple Volume Purchase Program.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3fd5e8656a982deb28d92c19464b354708e503e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 109cbfee1153ec4ef547ac14ca5efd0a2c2054b3
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29406537"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143388"
 ---
-# <a name="vpptokenaccounttype-enum-type"></a>Тип перечисления vppTokenAccountType
+# <a name="vpptokenaccounttype-enum-type"></a>тип перечисления Впптокенаккаунттипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные типы маркер покупки программы корпоративного Apple.
+Возможные типы маркера Apple Volume Purchase Program.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Business|0|Программа покупки корпоративного Apple маркер, связанный с приложения business.|
-|образование|1|Программа покупки корпоративного Apple маркер, связанный с помощью программы обучения.|
+|подразделения|нуль|Токен Apple Volume Purchase Program, связанный с бизнес-программой.|
+|закончен|1,1|Токен Apple Volume Purchase Program, связанный с программой для образования.|
 
 
 

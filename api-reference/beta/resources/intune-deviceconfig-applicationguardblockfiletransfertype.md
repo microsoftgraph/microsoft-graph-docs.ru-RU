@@ -1,32 +1,32 @@
 ---
-title: Тип перечисления applicationGuardBlockFileTransferType
-description: Возможные значения для applicationGuardBlockFileTransfer
-localization_priority: Normal
+title: тип перечисления Аппликатионгуардблоккфилетрансфертипе
+description: Возможные значения для Аппликатионгуардблоккфилетрансфер
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9997956d192686a5287e181b25bd5f98184299c5
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 32b2d4ef3aabf8082074215825c8e3e08a44ba63
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396275"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30142318"
 ---
-# <a name="applicationguardblockfiletransfertype-enum-type"></a>Тип перечисления applicationGuardBlockFileTransferType
+# <a name="applicationguardblockfiletransfertype-enum-type"></a>тип перечисления Аппликатионгуардблоккфилетрансфертипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Возможные значения для applicationGuardBlockFileTransfer
+Возможные значения для Аппликатионгуардблоккфилетрансфер
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Не настроен|
-|blockImageAndTextFile|1|Буфер обмена блокировки для передачи файла изображения и текст|
-|blockImageFile|2|Буфер обмена блокировки для передачи файла изображения|
-|blockNone|3|Ни один из текстового файла или файла изображения заблокирована для передачи|
-|blockTextFile|4|Буфер обмена блокировки для передачи текстового файла|
+|notConfigured|нуль|Не настроено|
+|Блоккимажеандтекстфиле|1,1|Блокировка буфера обмена для передачи изображения и текстового файла|
+|Блоккимажефиле|2|Блокировка буфера обмена для передачи файла изображения|
+|Блоккноне|4|Ни текстовый файл, ни файл изображения не заблокирован для передачи|
+|Блокктекстфиле|4|Блокировка буфера обмена для передачи текстового файла|
 
 
 

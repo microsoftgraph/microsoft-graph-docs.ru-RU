@@ -4,12 +4,12 @@ description: Представляет устройство, зарегистри
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9b69f51e045bff43d4c250f2b00791000df1499e
-ms.sourcegitcommit: d6209114cbbe8072e3ecf7eba23819ae5ace7db5
+ms.openlocfilehash: e72777691f0c599067c885168c0c58bb49cec3cb
+ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690926"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30379530"
 ---
 # <a name="device-resource-type"></a>Тип ресурса device
 
@@ -26,7 +26,7 @@ ms.locfileid: "29690926"
 |[Список объектов device](../api/device-list.md) | Коллекция [device](device.md)| Получение списка устройств, зарегистрированных в каталоге. |
 |[Обновление device](../api/device-update.md) | [device](device.md) |Обновление свойств, принадлежащих объекту device. |
 |[Удаление device](../api/device-delete.md) | Нет |Удаление объекта device. |
-|[Список memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, которые устройство является непосредственным членом. |
+|[Список memberOf](../api/device-list-memberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, непосредственным участником которых является устройство. |
 |[Перечисление registeredOwners](../api/device-list-registeredowners.md) |Коллекция [directoryObject](directoryobject.md)| Получение пользователей, которые относятся к зарегистрированным владельцам устройства, из свойства навигации registeredOwners.|
 |[Перечисление registeredUsers](../api/device-list-registeredusers.md) |Коллекция [directoryObject](directoryobject.md)| Получение зарегистрированных пользователей устройства из свойства навигации registeredUsers.|
 |**Открытые расширения**| | |
@@ -38,33 +38,36 @@ ms.locfileid: "29690926"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accountEnabled|Логическое| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Обязательный параметр.|
-|alternativeSecurityIds|Коллекция alternativeSecurityId| Только для внутреннего использования. Значение null не допускается. |
-|approximateLastSignInDateTime|DateTimeOffset| Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
-|deviceId|string| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. |
+|accountEnabled|Boolean| Если учетная запись обеспечена — значение **true**, в противном случае — **false**. Обязательный параметр.|
+|alternativeSecurityIds|Коллекция alternativeSecurityId| Только для внутреннего использования. Значение NULL не допускается. |
+|approximateLastSignInDateTime|DateTimeOffset| Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|Комплианцеекспиратиондатетиме|DateTimeOffset| Временная метка, в которой устройство больше не считается совместимым. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения. |
+|deviceId|строка| Уникальный идентификатор, задаваемый службой Azure Device Registration Service при регистрации. |
 |deviceMetadata|String| Только для внутреннего использования. Задано значение NULL. |
 |deviceVersion|Int32| Только для внутреннего использования. |
 |displayName|String|Отображаемое имя устройства. Обязательный параметр. |
 |id|Строка|Уникальный идентификатор устройства. Наследуется из [directoryObject](directoryobject.md). Ключ, значение null не допускается. Только для чтения.|
-|isCompliant|Логическое|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. Только для чтения. Это можно обновить, путем Intune для любого типа операционная система устройства или [утвержденных MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows.|
-|isManaged|Boolean|Используется значение **true**, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM). В противном случае используется значение **false**. Это можно обновить, путем Intune для любого типа операционная система устройства или [утвержденных MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств ОС Windows. |
+|isCompliant|Логический|Используется значение **true**, если устройство соответствует требованиям политик управления мобильными устройствами (MDM). В противном случае используется значение **false**. Только для чтения. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS.|
+|isManaged|Boolean|Используется значение **true**, если устройство контролируется с помощью приложения для управления мобильными устройствами (MDM). В противном случае используется значение **false**. С помощью Intune можно обновлять любой тип ОС устройства или [утвержденное приложение MDM](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) для устройств Windows OS. |
 |onPremisesLastSyncDateTime|DateTimeOffset|Время последней синхронизации объекта с локальным каталогом. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|
-|onPremisesSyncEnabled|Логическое|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. |
+|onPremisesSyncEnabled|Логический|Используется значение **true**, если этот объект синхронизируется из локального каталога. Используется значение **false**, если этот объект ранее синхронизировался из локального каталога, но синхронизация больше не выполняется. Используется значение **null**, если этот объект никогда не синхронизировался из локального каталога (значение по умолчанию). Только для чтения. |
 |operatingSystem|String| Тип операционной системы на устройстве. Обязательный параметр. |
 |operatingSystemVersion|Строка|Версия операционной системы на устройстве. Обязательный параметр. |
 |physicalIds|Коллекция String| Только для внутреннего использования. Значение NULL не допускается. |
+|Профилетипе|String|Тип профиля устройства. Возможные значения:<br />**Регистереддевице** умолчани<br />**Секуревм**<br />**Printer**<br />**Shared**<br />**Интернета**|
+|Системлабелс|Коллекция строк| Список меток, примененных к устройству системой. |
 |trustType|String| Тип доверия для присоединенного устройства. Только для чтения. Возможные значения: <br />**Workplace**. *Принесенные личные устройства*.<br />**AzureAd**. Устройства, присоединенные только через облако.<br />**ServerAd**. Устройства, присоединенные к Azure Active Directory через локальный домен. Дополнительные сведения см. в статье [Общие сведения об управлении устройствами в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction). |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для устройства. Только для чтения. Допускается значение null.|
 |memberOf|Коллекция [directoryObject](directoryobject.md)|Группы, в которых состоит эта группа. Методы HTTP: GET (поддерживается для всех групп). Только для чтения. Допускается значение null.|
-|[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, которые устройства. Эта операция транзитивное. |
+|[Перечисление транзитивных свойств memberOf](../api/device-list-transitivememberof.md) |Коллекция [directoryObject](directoryobject.md)| Список групп, участником которых является устройство. Эта операция является транзитивным. |
 |registeredOwners|Коллекция [directoryObject](directoryobject.md)|Пользователь, который присоединил устройство через облако или зарегистрировал личное устройство. Зарегистрированный владелец задается при регистрации. Сейчас можно настроить лишь одного такого владельца. Только для чтения. Допускается значение null. |
 |registeredUsers|Коллекция [directoryObject](directoryobject.md)|Коллекция зарегистрированных пользователей устройства. В случае зарегистрированных личных устройств или устройств, присоединенных через облако, при регистрации для обычных пользователей задается то же значение, что и для владельцев. Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже этот ресурс представлен в формате JSON.
 
@@ -86,6 +89,7 @@ ms.locfileid: "29690926"
   "accountEnabled": true,
   "alternativeSecurityIds": [{"@odata.type": "microsoft.graph.alternativeSecurityId"}],
   "approximateLastSignInDateTime": "String (timestamp)",
+  "complianceExpirationDateTime": "String (timestamp)",
   "deviceId": "string",
   "deviceMetadata": "string",
   "deviceVersion": 1024,
@@ -98,6 +102,8 @@ ms.locfileid: "29690926"
   "operatingSystem": "string",
   "operatingSystemVersion": "string",
   "physicalIds": ["string"],
+  "profileType": "string",
+  "systemLabels": ["string"],
   "trustType": "string"
 }
 ```

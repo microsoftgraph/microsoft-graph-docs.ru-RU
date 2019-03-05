@@ -1,36 +1,36 @@
 ---
-title: Тип перечисления subjectNameFormat
+title: тип перечисления subjectNameFormat
 description: Параметры формата имени субъекта.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 22bbc03da6fd3e48925634704e78ffb22abef3bc
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 6f12068576ff78d74f2e1b6119a2030ff7835a7d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410331"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30158557"
 ---
-# <a name="subjectnameformat-enum-type"></a>Тип перечисления subjectNameFormat
+# <a name="subjectnameformat-enum-type"></a>тип перечисления subjectNameFormat
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Параметры формата имени субъекта.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|_ общего _ имени|0|Общее имя.|
-|commonNameIncludingEmail|1|Общее имя, включая электронной почты.|
-|commonNameAsEmail|2|Общее имя по электронной почте.|
-|custom|3|Формат имени настраиваемой темы.|
-|commonNameAsIMEI|5|Общее имя как IMEI.|
-|commonNameAsSerialNumber|6|Общее имя как серийный номер.|
-|commonNameAsAadDeviceId|7|Общее имя как серийный номер.|
-|commonNameAsIntuneDeviceId|8|Общее имя как серийный номер.|
-|commonNameAsDurableDeviceId|9|Общее имя как серийный номер.|
+|Коммоннаме|нуль|Общее имя.|
+|Коммоннамеинклудинжемаил|1,1|Общее имя, включая электронную почту.|
+|Коммоннамеасемаил|2|Общее имя как электронная почта.|
+|custom|4|Настраиваемый формат имени субъекта.|
+|Коммоннамеасимеи|17:00|Общее имя в виде IMEI.|
+|Коммоннамеассериалнумбер|6|Общее имя в виде порядкового номера.|
+|Коммоннамеасааддевицеид|7|Общее имя в виде порядкового номера.|
+|Коммоннамеасинтунедевицеид|8,5|Общее имя в виде порядкового номера.|
+|Коммоннамеасдурабледевицеид|10|Общее имя в виде порядкового номера.|
 
 
 

@@ -1,35 +1,35 @@
 ---
-title: Тип перечисления deviceComplianceActionType
-description: Запланировано действие типа Enum
-localization_priority: Normal
+title: тип перечисления deviceComplianceActionType
+description: ПереЧисление типов запланированных действий
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd0db68a21fff79ddbab924e8a1d9bd2ff2e542d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d824f579787bf24cc56704a1c8a9df280d969809
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425745"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173509"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a>Тип перечисления deviceComplianceActionType
+# <a name="devicecomplianceactiontype-enum-type"></a>тип перечисления deviceComplianceActionType
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Запланировано действие типа Enum
+ПереЧисление типов запланированных действий
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|noAction|0|Никаких действий|
-|уведомления|1|Отправить уведомление|
+|noAction|нуль|Без действий|
+|уведомляющее|1,1|Уведомление об отПравке|
 |блок|2|Блокировка устройства в AAD|
-|Удаление|3|Удаление устройства|
+|снять|4|Прекращение использования устройства|
 |Очистка|4|Очистка устройства|
-|removeResourceAccessProfiles|5|Удаление профилей доступа ресурсов с устройства|
-|pushNotification|9|Отправить push-уведомлений для устройств|
-|remoteLock|10|Удаленно блокировка устройства|
+|Ремовересаурцеакцесспрофилес|17:00|Удаление профилей доступа к ресурсам с устройства|
+|Пушнотификатион|10|Отправка push-уведомления на устройство|
+|remoteLock|десяти|Удаленная блокировка устройства|
 
 
 

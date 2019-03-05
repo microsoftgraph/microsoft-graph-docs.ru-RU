@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса deviceConfigurationTargetedUserAndDevice
-description: Конфликт сводки для набора политик конфигурации устройства.
-localization_priority: Normal
+title: Тип ресурса Девицеконфигуратионтаржетедусеранддевице
+description: Сводка по конфликтам для набора политик конфигурации устройств.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e246d9731f5ed9d2ea888ba2b53d335fcbca19f1
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 48d73a532f08b0effb6581373300728ad21c5b37
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29410744"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30144144"
 ---
-# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса deviceConfigurationTargetedUserAndDevice
+# <a name="deviceconfigurationtargeteduseranddevice-resource-type"></a>Тип ресурса Девицеконфигуратионтаржетедусеранддевице
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Конфликт сводки для набора политик конфигурации устройства.
+Сводка по конфликтам для набора политик конфигурации устройств.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|deviceId|String|Идентификатор устройства в возврата.|
-|deviceName|String|Имя устройства в возврата.|
-|userId|String|Идентификатор пользователя в записи.|
-|userDisplayName|String|Отображаемое имя пользователя в репозиторий|
-|userPrincipalName|String|Имя участника-пользователя в репозиторий.|
-|lastCheckinDateTime|DateTimeOffset|Время последнего checkin для этой пары пользователя и устройства.|
+|deviceId|String|Идентификатор устройства в возврате.|
+|deviceName|String|Имя устройства в возврате.|
+|userId|String|Идентификатор пользователя в возврате.|
+|userDisplayName|String|Отображаемое имя пользователя в репозитории|
+|userPrincipalName|Строка|ИМЯ участника-пользователя в возврате.|
+|Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата для этой связи пользователя и устройства.|
 
 ## <a name="relationships"></a>Отношения
 Нет

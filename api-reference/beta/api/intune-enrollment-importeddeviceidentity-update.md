@@ -1,25 +1,25 @@
 ---
-title: Обновление importedDeviceIdentity
-description: Обновление свойства объекта importedDeviceIdentity.
-localization_priority: Normal
+title: Обновление Импортеддевицеидентити
+description: Обновление свойств объекта Импортеддевицеидентити.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: abc82d0f5305c2cefcc76283e8836d8dacf6e626
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d4bf9585dca2df364d20a9bdbf26dd78a2e1e01d
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420390"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173712"
 ---
-# <a name="update-importeddeviceidentity"></a>Обновление importedDeviceIdentity
+# <a name="update-importeddeviceidentity"></a>Обновление Импортеддевицеидентити
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
+Обновление свойств объекта [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,26 +45,26 @@ PATCH /deviceManagement/importedDeviceIdentities/{importedDeviceIdentityId}
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) .
+В тексте запроса добавьте представление объекта [Импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md).
+В следующей таблице приведены свойства, необходимые при создании [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор идентификатор импортированных устройства|
-|importedDeviceIdentifier|String|Идентификатор импортированных устройства|
-|importedDeviceIdentityType|[importedDeviceIdentityType](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип удостоверения импортированных устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
-|lastModifiedDateTime|DateTimeOffset|Последние изменения даты и времени описания|
-|createdDateTime|DateTimeOffset|Время создания даты устройства|
-|lastContactedDateTime|DateTimeOffset|Связаться с даты последнего устройства|
+|id|String|Идентификатор импортированного удостоверения устройства|
+|Импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
+|Импортеддевицеидентититипе|[Импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
+|createdDateTime|DateTimeOffset|Дата и время создания устройства|
+|Ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
 |description|String|Описание устройства|
-|enrollmentState|[enrollmentState](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[Платформа](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|Енроллментстате|[Енроллментстате](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
+|platform|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [importedDeviceIdentity](../resources/intune-enrollment-importeddeviceidentity.md) объекта в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -86,8 +86,8 @@ Content-length: 332
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

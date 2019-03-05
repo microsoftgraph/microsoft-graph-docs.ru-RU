@@ -1,43 +1,43 @@
 ---
-title: Тип перечисления mobileAppContentFileUploadState
-description: Содержит свойства для отправки запроса состояний.
-localization_priority: Normal
+title: тип перечисления Мобилеаппконтентфилеуплоадстате
+description: Содержит свойства для состояний запроса на отправку.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b234c962bb6a2dfc107cbe06d1ee17ce1f5f851d
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e6bbda483d68690709c0e9bd084ecd407b10d479
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29418801"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156100"
 ---
-# <a name="mobileappcontentfileuploadstate-enum-type"></a>Тип перечисления mobileAppContentFileUploadState
+# <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Содержит свойства для отправки запроса состояний.
+Содержит свойства для состояний запроса на отправку.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|success|0|Н/Д|
-|transientError|1|Н/Д|
+|success|нуль|Н/Д|
+|Трансиентеррор|1,1|Н/Д|
 |error|2|Н/Д|
-|unknown|3|Н/Д|
-|azureStorageUriRequestSuccess|100|Н/Д|
-|azureStorageUriRequestPending|101|Н/Д|
-|azureStorageUriRequestFailed|102|Н/Д|
-|azureStorageUriRequestTimedOut|103|Н/Д|
-|azureStorageUriRenewalSuccess|200|Н/Д|
-|azureStorageUriRenewalPending|201|Н/Д|
-|azureStorageUriRenewalFailed|202|Н/Д|
-|azureStorageUriRenewalTimedOut|203|Н/Д|
-|commitFileSuccess|300|Н/Д|
-|commitFilePending|301|Н/Д|
-|commitFileFailed|302|Н/Д|
-|commitFileTimedOut|303|Н/Д|
+|unknown|4|Н/Д|
+|Азуресторажеурирекуестсукцесс|100|Н/Д|
+|Азуресторажеурирекуестпендинг|101|Н/Д|
+|Азуресторажеурирекуестфаилед|102|Н/Д|
+|Азуресторажеурирекуесттимедаут|103|Н/Д|
+|Азуресторажеуриреневалсукцесс|200|Н/Д|
+|Азуресторажеуриреневалпендинг|201|Н/Д|
+|Азуресторажеуриреневалфаилед|202|Н/Д|
+|Азуресторажеуриреневалтимедаут|203|Н/Д|
+|Коммитфилесукцесс|300|Н/Д|
+|Коммитфилепендинг|301|Н/Д|
+|Коммитфилефаилед|302|Н/Д|
+|Коммитфилетимедаут|303|Н/Д|
 
 
 

@@ -1,21 +1,21 @@
 ---
 title: Перечисление объектов microsoftStoreForBusinessApp
 description: Список свойств и связей объектов microsoftStoreForBusinessApp.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b02f6296e522fda6033cfddd5cb3b80c03614a22
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e4606ea6482fbeb774cee3ab29fcdb34b8d4b120
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29420726"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173467"
 ---
 # <a name="list-microsoftstoreforbusinessapps"></a>Перечисление объектов microsoftStoreForBusinessApp
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Список свойств и связей объектов [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md).
 
@@ -45,7 +45,7 @@ GET /deviceAppManagement/mobileApps
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [microsoftStoreForBusinessApp](../resources/intune-apps-microsoftstoreforbusinessapp.md) в тексте отклика.
@@ -58,12 +58,12 @@ GET /deviceAppManagement/mobileApps
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1197
+Content-Length: 1454
 
 {
   "value": [
@@ -96,7 +96,14 @@ Content-Length: 1197
       "totalLicenseCount": 1,
       "productKey": "Product Key value",
       "licenseType": "online",
-      "packageIdentityName": "Package Identity Name value"
+      "packageIdentityName": "Package Identity Name value",
+      "licensingType": {
+        "@odata.type": "microsoft.graph.vppLicensingType",
+        "supportUserLicensing": true,
+        "supportDeviceLicensing": true,
+        "supportsUserLicensing": true,
+        "supportsDeviceLicensing": true
+      }
     }
   ]
 }

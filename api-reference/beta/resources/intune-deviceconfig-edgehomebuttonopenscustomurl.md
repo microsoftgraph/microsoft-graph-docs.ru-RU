@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса edgeHomeButtonOpensCustomURL
-description: Кнопка "Показать Домашняя страница"; Нажатие кнопки Домой загружает определенного URL-адреса.
-localization_priority: Normal
+title: Тип ресурса Еджехомебуттонопенскустомурл
+description: Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 06f73375772f53b546e7e9b758a7513366949326
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: e83fd3dbb0961011584ef9d65e01c361ccf6a228
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29431765"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30143241"
 ---
-# <a name="edgehomebuttonopenscustomurl-resource-type"></a>Тип ресурса edgeHomeButtonOpensCustomURL
+# <a name="edgehomebuttonopenscustomurl-resource-type"></a>Тип ресурса Еджехомебуттонопенскустомурл
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Кнопка "Показать Домашняя страница"; Нажатие кнопки Домой загружает определенного URL-адреса.
+Отображение кнопки "домой"; Нажатие кнопки "домой" загружает определенный URL-адрес.
 
 
-Наследуется от [edgeHomeButtonConfiguration](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
+НаСледуется от [еджехомебуттонконфигуратион](../resources/intune-deviceconfig-edgehomebuttonconfiguration.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|homeButtonCustomURL|String|Определенного URL-адрес для загрузки.|
+|Хомебуттонкустомурл|String|Заданный URL-адрес для загрузки.|
 
 ## <a name="relationships"></a>Отношения
 Нет

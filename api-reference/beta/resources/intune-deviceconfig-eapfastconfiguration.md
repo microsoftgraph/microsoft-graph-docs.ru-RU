@@ -1,31 +1,31 @@
 ---
-title: Тип перечисления eapFastConfiguration
-description: Доступные параметры для конфигурации EAP-FAST.
-localization_priority: Normal
+title: тип перечисления Еапфастконфигуратион
+description: Доступные параметры настройки EAP – FAST.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1fa2c3c3a4cf0bc245ea7c9fbc4294d69215deee
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399390"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30173572"
 ---
-# <a name="eapfastconfiguration-enum-type"></a>Тип перечисления eapFastConfiguration
+# <a name="eapfastconfiguration-enum-type"></a>тип перечисления Еапфастконфигуратион
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Доступные параметры для конфигурации EAP-FAST.
+Доступные параметры настройки EAP – FAST.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|noProtectedAccessCredential|0|Используйте EAP-FAST без безопасного доступа (PAC).|
-|useProtectedAccessCredential|1|Использование защиты безопасного доступа (PAC).|
-|useProtectedAccessCredentialAndProvision|2|Использование защищенного доступа учетные данные (PAC) и подготовки идентификационные|
-|useProtectedAccessCredentialAndProvisionAnonymously|3|Использование защищенного доступа учетные данные (PAC), PAC подготовки и делать это анонимного доступа.|
+|Нопротектедакцесскредентиал|нуль|Используйте EAP-FAST без безопасного доступа (PAC).|
+|Усепротектедакцесскредентиал|1,1|Использование учетных данных безопасного доступа (PAC).|
+|Усепротектедакцесскредентиаландпровисион|2|Использование учетных данных безопасного доступа (PAC) и подготовка ключа PAC.|
+|Усепротектедакцесскредентиаландпровисионанонимаусли|4|Использование учетных данных безопасного доступа (PAC), подготовка ключа PAC и анонимное выполнение.|
 
 
 

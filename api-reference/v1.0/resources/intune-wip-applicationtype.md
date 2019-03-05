@@ -1,26 +1,27 @@
 ---
-title: Тип перечисления applicationType
+title: тип перечисления Аппликатионтипе
 description: Возможные типы приложений
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: fa191eaddfe89b99d7945a7f4b18b584beaf7f6a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: 179b9fbfc7ce1a7ebc880ceade39028ec9e42421
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981261"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30253948"
 ---
-# <a name="applicationtype-enum-type"></a>Тип перечисления applicationType
+# <a name="applicationtype-enum-type"></a>тип перечисления Аппликатионтипе
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Возможные типы приложений
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Универсальные|1|Универсальные приложения windows|
-|рабочий стол|2|Настольных приложений windows|
+|Гринвич|1,1|Универсальное приложение Windows|
+|системной|2|Классическое приложение Windows|
 
 
 

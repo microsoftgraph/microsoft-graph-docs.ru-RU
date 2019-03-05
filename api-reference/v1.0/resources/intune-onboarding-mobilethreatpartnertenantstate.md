@@ -1,28 +1,29 @@
 ---
-title: Тип перечисления mobileThreatPartnerTenantState
-description: Состояние партнера клиента.
+title: тип перечисления Мобилесреатпартнертенантстате
+description: Состояние партнера этого клиента.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 195fe8fcfac70bc0e98a0ac2f94c28a63b5c9983
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937455"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258095"
 ---
-# <a name="mobilethreatpartnertenantstate-enum-type"></a>Тип перечисления mobileThreatPartnerTenantState
+# <a name="mobilethreatpartnertenantstate-enum-type"></a>тип перечисления Мобилесреатпартнертенантстате
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние партнера клиента.
+Состояние партнера этого клиента.
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|недоступен|0|Участник недоступен.|
-|доступен|1|Доступен партнера.|
-|enabled|2|Включить партнера.|
-|не отвечает|3|Партнер не отвечает.|
+|выходе|нуль|Партнер недоступен.|
+|доступен|1,1|Партнер доступен.|
+|enabled|2|Партнер включен.|
+|не отвечает|4|Партнер не отвечает.|
 
 
 

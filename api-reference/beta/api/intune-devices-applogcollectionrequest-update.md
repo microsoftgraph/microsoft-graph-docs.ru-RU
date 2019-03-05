@@ -1,25 +1,25 @@
 ---
 title: Обновление appLogCollectionRequest
-description: Обновление свойства объекта appLogCollectionRequest.
-localization_priority: Normal
+description: Обновление свойств объекта appLogCollectionRequest.
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 55974ed3c5158d4b005402fe4d6350854a197656
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 8adcfb50cf48e8ad0d41c76addc29484232f3fa0
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29430784"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30157647"
 ---
 # <a name="update-applogcollectionrequest"></a>Обновление appLogCollectionRequest
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Обновление свойства объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
+Обновление свойств объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
 
-## <a name="prerequisites"></a>Предварительные требования
+## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
@@ -45,22 +45,22 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON для объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .
+В тексте запроса добавьте представление объекта [AppLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в формате JSON.
 
-В следующей таблице показаны свойства, которые необходимы для создания [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
+В следующей таблице приведены свойства, необходимые при создании [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор. — Идентификатор userId_DeviceId_AppId.|
-|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Статус отправки журнала. Возможные значения: `pending`, `completed`, `failed`.|
-|сообщение об ошибке|String|Сообщение об ошибке, если они существуют в процессе загрузки|
-|customLogFolders|Коллекция String|Список папок, журнала. |
-|completedDateTime|DateTimeOffset|Время, в которой запроса журнала загрузки связаться с вами состоянии|
+|id|String|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
+|status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
+|Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
+|Кустомлогфолдерс|Коллекция строк|Список папок журналов. |
+|completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
 
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) объекта в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -82,8 +82,8 @@ Content-length: 257
 }
 ```
 
-### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Ответ
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

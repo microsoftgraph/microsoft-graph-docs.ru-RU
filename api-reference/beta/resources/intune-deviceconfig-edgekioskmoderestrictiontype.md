@@ -1,0 +1,33 @@
+---
+title: тип перечисления Еджекиоскмодерестриктионтипе
+description: Укажите, как параметры Microsoft Edge будут ограничены в зависимости от режима киоска.
+author: tfitzmac
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: a0dcd1d30895acbdecf9d9cc706ee14b7907f14f
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30177961"
+---
+# <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
+
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+Укажите, как параметры Microsoft Edge будут ограничены в зависимости от режима киоска.
+
+## <a name="members"></a>Элементы
+|Элемент|Значение|Описание|
+|:---|:---|:---|
+|notConfigured|нуль|Не настроено (не ограничено).|
+|Дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
+|Нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
+|Публикбровсингсинглеапп|4|ОбщеДоступный обзор в режиме одного приложения.|
+|Публикбровсингмултиапп|4|ОбщеДоступный обзор (InPrivate) в режиме нескольких приложений.|
+
+
+
+

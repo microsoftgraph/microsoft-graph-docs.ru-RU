@@ -4,30 +4,30 @@ description: Обновление свойств объекта deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 90f5305e2fb52b5ecd184aad837f2c9d8f6334ef
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: 221b4700d91766040d899ef0c1048950d4e1d9cf
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29395015"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30161917"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API в версии/Beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Обновление свойств объекта [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All|
-| &nbsp;&nbsp; **Адаптация новых сотрудников** | DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp; &nbsp; **Подключение** | DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -43,7 +43,7 @@ ms.locfileid: "29395015"
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-**На использование доски**
+**Встроенное подключение**
 
 <!-- {
   "blockType": "ignored"
@@ -57,7 +57,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
+|Авторизация|Требуется Bearer &lt;маркер&gt;
 |
 |Accept|application/json|
 
@@ -70,7 +70,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор категории устройства. Только для чтения.|
-|**Адаптация новых сотрудников**|
+|**Подключение**|
 |description|String|Необязательное описание категории устройств.|
 |displayName|String|Отображаемое имя категории устройств.|
 
@@ -82,7 +82,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 
 ### <a name="request"></a>Запрос
 
-Ниже приведены примеры запроса.
+Ниже приведено несколько примеров запроса.
 
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceCategories/{deviceCategoryId}
@@ -97,9 +97,9 @@ Content-length: 82
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будет отличаться в зависимости от контекста.
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. Свойства ответа будут зависеть от контекста.
 
 ``` http
 HTTP/1.1 200 OK

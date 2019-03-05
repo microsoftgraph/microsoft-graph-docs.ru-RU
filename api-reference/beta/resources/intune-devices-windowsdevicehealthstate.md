@@ -1,33 +1,33 @@
 ---
-title: Тип перечисления windowsDeviceHealthState
-description: Состояние защиты компьютера конечной точки
-localization_priority: Normal
+title: тип перечисления Виндовсдевицехеалсстате
+description: Состояние Endpoint Protection
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2d971de9b20780bb51a19c3417384a0ca0563452
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: bb335cd39e6cbcd00f754faae8f7784001c424b4
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29416351"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30156170"
 ---
-# <a name="windowsdevicehealthstate-enum-type"></a>Тип перечисления windowsDeviceHealthState
+# <a name="windowsdevicehealthstate-enum-type"></a>тип перечисления Виндовсдевицехеалсстате
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Состояние защиты компьютера конечной точки
+Состояние Endpoint Protection
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|clean|0|Компьютер чистой и никаких действий не требуется|
-|fullScanPending|1|Компьютер находится в состоянии полную проверку ожидания|
-|rebootPending|2|Компьютер находится в состоянии перезагрузки ожидания|
-|manualStepsPending|4|Компьютер находится в состоянии ручные операции ожидания|
-|offlineScanPending|8|Компьютер находится в состоянии автономной проверки ожидания|
-|critical|16|Компьютер находится в состоянии критическая ошибка|
+|clean|нуль|Компьютер чист и никаких действий не требовалось|
+|Фуллсканпендинг|1,1|Компьютер находится в состоянии ожидания полного сканирования|
+|Ребутпендинг|2|Компьютер находится в состоянии ожидания перезагрузки|
+|Мануалстепспендинг|4|Компьютер находится в состоянии ожидания действий, выполняемых вручную|
+|Оффлинесканпендинг|8,5|Компьютер находится в состоянии ожидания автономной проверки|
+|critical|столбцов|Компьютер находится в состоянии критической ошибки|
 
 
 

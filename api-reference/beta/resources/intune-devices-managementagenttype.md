@@ -1,39 +1,39 @@
 ---
-title: Тип перечисления managementAgentType
+title: тип перечисления Манажементаженттипе
 description: Тип агента управления.
-localization_priority: Normal
 author: tfitzmac
+localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c42d4ea4a5114bc42966891e4cd60ea87ca303e
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.openlocfilehash: eb948626035bed2dac7ee18d103aa083bd0f2aeb
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29401007"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30172543"
 ---
-# <a name="managementagenttype-enum-type"></a>Тип перечисления managementAgentType
+# <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
-> **Важные:** Интерфейсы API в разделе версии /beta в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание:** Microsoft Graph API для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Тип агента управления.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|EAS|1|Устройство управляется сервером Exchange server.|
-|MDM|2|Устройство является управляемым путем MDM. Intune|
-|easMdm|3|Устройство управляется сервером Exchange server и Intune MDM.|
-|intuneClient|4|Управляемые клиентами Intune.|
-|easIntuneClient|5|Устройство является EAS и Intune двойной управляемые клиентами.|
-|configurationManagerClient|8|Устройство является управляемым, диспетчер конфигураций.|
-|configurationManagerClientMdm|10|Устройство управляется Configuration Manager и MDM.|
-|configurationManagerClientMdmEas|11|Устройство является управляемым, диспетчер конфигураций, MDM и Eas.|
-|unknown|16|Тип агента управления UNKNOWN.|
-|jamf|32|Атрибуты устройства полученные от Jamf.|
-|googleCloudDevicePolicyController|64|Устройство управляется CloudDPC компании Google.|
-|microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 через Intune.|
+|атрибутов|1,1|Управление устройством осуществляется с помощью Exchange Server.|
+|Корпоратив|2|Управление устройством осуществляется с помощью Intune MDM.|
+|Еасмдм|4|Устройство управляется как в Exchange Server, так и в Intune MDM.|
+|Интунеклиент|4|Управление клиентом Intune.|
+|Еасинтунеклиент|17:00|Устройство — это EAS и двойное управление клиентом Intune.|
+|Конфигуратионманажерклиент|8,5|Управление устройством осуществляется с помощью Configuration Manager.|
+|Конфигуратионманажерклиентмдм|десяти|Управление устройством осуществляется с помощью Configuration Manager и MDM.|
+|Конфигуратионманажерклиентмдмеас|-11:00|Управление устройством осуществляется с помощью Configuration Manager, MDM и EAS.|
+|unknown|столбцов|НеИзвестный тип агента управления.|
+|жамф|32|Атрибуты устройства извлекаются из Жамф.|
+|Гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
+|microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 с помощью Intune.|
 
 
 

@@ -1,31 +1,32 @@
 ---
-title: Тип перечисления deviceComplianceActionType
-description: Запланировано действие типа Enum
+title: тип перечисления deviceComplianceActionType
+description: ПереЧисление типов запланированных действий
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 8d725213790260ece51c02bb81f2394fc8602095
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.prod: Intune
+ms.openlocfilehash: bd370f9e706955d76de519a518b4659ba46c6d25
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917344"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30250917"
 ---
-# <a name="devicecomplianceactiontype-enum-type"></a>Тип перечисления deviceComplianceActionType
+# <a name="devicecomplianceactiontype-enum-type"></a>тип перечисления deviceComplianceActionType
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Запланировано действие типа Enum
+ПереЧисление типов запланированных действий
+
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|noAction|0|Никаких действий|
-|уведомления|1|Отправить уведомление|
+|noAction|нуль|Без действий|
+|уведомляющее|1,1|Уведомление об отПравке|
 |блок|2|Блокировка устройства в AAD|
-|Удаление|3|Удаление устройства|
+|снять|4|Прекращение использования устройства|
 |Очистка|4|Очистка устройства|
-|removeResourceAccessProfiles|5|Удаление профилей доступа ресурсов с устройства|
-|pushNotification|9|Отправить push-уведомлений для устройств|
+|Ремовересаурцеакцесспрофилес|17:00|Удаление профилей доступа к ресурсам с устройства|
+|Пушнотификатион|10|Отправка push-уведомления на устройство|
 
 
 

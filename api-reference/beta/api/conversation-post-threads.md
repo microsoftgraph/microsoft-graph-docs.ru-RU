@@ -4,12 +4,12 @@ description: Создание цепочки в указанной беседе.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: ad1bf0d6878404913c7de20fecb8d3433f06dd51
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 8a4284e51ee74b43ae3e678ed8a54300cf9b9fe9
+ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514217"
+ms.lasthandoff: 02/21/2019
+ms.locfileid: "30149828"
 ---
 # <a name="create-thread"></a>Создание цепочки
 
@@ -28,7 +28,7 @@ ms.locfileid: "29514217"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All |
+|Для приложений | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ POST /groups/{id}/conversations/{id}/threads
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 В теле запроса укажите описание объекта [ConversationThread](../resources/conversationthread.md) в формате JSON.
