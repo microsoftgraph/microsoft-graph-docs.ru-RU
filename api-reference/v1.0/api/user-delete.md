@@ -1,20 +1,24 @@
 ---
-title: Удаление пользователя
-description: Удаление пользователя.
+title: Удаление пользователя — API Microsoft Graph
+description: Описан метод удаления ресурса (объекта) user из API Microsoft Graph (REST).
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 93097c1d2f3f88e3e1f6b4a0166883728b402ba4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ba27c81e5cb6b8bc8738c419b467e686932bc7c8
+ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987094"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30258067"
 ---
-# <a name="delete-a-user"></a>Удаление пользователя
+# <a name="delete-a-user"></a>Удалить пользователя
 
-Удаление пользователя.
+Удаление пользователя.  
+
+При удалении ресурсы user перемещаются во временный контейнер, и их можно восстановить в течение 30 дней.  По истечении этого периода они удаляются без возможности восстановления.  Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -24,25 +28,30 @@ ms.locfileid: "27987094"
 |Для приложений | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
+
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /users/{id | userPrincipalName}
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Заголовок       | Значение|
 |:-----------|:------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-##### <a name="request"></a>Запрос
+
+## <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -51,7 +60,8 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/v1.0/users/{user-id}
 ```
-##### <a name="response"></a>Отклик
+### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
