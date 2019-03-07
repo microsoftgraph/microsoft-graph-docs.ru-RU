@@ -4,51 +4,49 @@ description: Удаляет приложение из указанной ком�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: a4857a5e56a16eb9ee0989108fcfe3b185bb5f0c
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 592f488ad73337cc89b92d5a57bd874664fba9cf
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070822"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458668"
 ---
-# <a name="delete-app-from-team"></a><span data-ttu-id="febe3-103">Удаление приложения из группы</span><span class="sxs-lookup"><span data-stu-id="febe3-103">Delete app from team</span></span>
+# <a name="delete-app-from-team"></a><span data-ttu-id="768f8-103">Удаление приложения из группы</span><span class="sxs-lookup"><span data-stu-id="768f8-103">Delete app from team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="febe3-104">Удаляет [приложение](../resources/teamsappinstallation.md) из указанной [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="febe3-104">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
+<span data-ttu-id="768f8-104">Удаляет [приложение](../resources/teamsappinstallation.md) из указанной [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="768f8-104">Uninstalls an [app](../resources/teamsappinstallation.md) from the specified [team](../resources/team.md).</span></span>
 
-><span data-ttu-id="febe3-105">**Примечание:** Если вы используете разрешения приложения, произойдет известная ошибка.</span><span class="sxs-lookup"><span data-stu-id="febe3-105">**Note:** If you're using application permissions, a known issue will occur.</span></span> <span data-ttu-id="febe3-106">Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues).</span><span class="sxs-lookup"><span data-stu-id="febe3-106">For details, see [known issues](/graph/known-issues).</span></span>
+## <a name="permissions"></a><span data-ttu-id="768f8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="768f8-105">Permissions</span></span>
+<span data-ttu-id="768f8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="768f8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="febe3-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="febe3-107">Permissions</span></span>
-<span data-ttu-id="febe3-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="febe3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="febe3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="febe3-110">Permission type</span></span>      | <span data-ttu-id="febe3-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="febe3-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="768f8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="768f8-108">Permission type</span></span>      | <span data-ttu-id="768f8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="768f8-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="febe3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="febe3-112">Delegated (work or school account)</span></span> | <span data-ttu-id="febe3-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="febe3-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="febe3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="febe3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="febe3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="febe3-115">Not supported.</span></span>    |
-|<span data-ttu-id="febe3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="febe3-116">Application</span></span> | <span data-ttu-id="febe3-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="febe3-117">Group.ReadWrite.All</span></span>  |
+|<span data-ttu-id="768f8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="768f8-110">Delegated (work or school account)</span></span> | <span data-ttu-id="768f8-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="768f8-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="768f8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="768f8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="768f8-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="768f8-113">Not supported.</span></span>    |
+|<span data-ttu-id="768f8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="768f8-114">Application</span></span> | <span data-ttu-id="768f8-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="768f8-115">Group.ReadWrite.All</span></span>  |
 
-## <a name="http-request"></a><span data-ttu-id="febe3-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="febe3-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="768f8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="768f8-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /teams/{id}/installedApps/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="febe3-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="febe3-119">Request headers</span></span>
-| <span data-ttu-id="febe3-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="febe3-120">Header</span></span>       | <span data-ttu-id="febe3-121">Значение</span><span class="sxs-lookup"><span data-stu-id="febe3-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="768f8-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="768f8-117">Request headers</span></span>
+| <span data-ttu-id="768f8-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="768f8-118">Header</span></span>       | <span data-ttu-id="768f8-119">Значение</span><span class="sxs-lookup"><span data-stu-id="768f8-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="febe3-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="febe3-122">Authorization</span></span>  | <span data-ttu-id="febe3-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="febe3-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="768f8-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="768f8-120">Authorization</span></span>  | <span data-ttu-id="768f8-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="768f8-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="febe3-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="febe3-125">Request body</span></span>
-<span data-ttu-id="febe3-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="febe3-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="768f8-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="768f8-123">Request body</span></span>
+<span data-ttu-id="768f8-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="768f8-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="febe3-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="febe3-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="768f8-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="768f8-125">Response</span></span>
 
-<span data-ttu-id="febe3-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="febe3-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="768f8-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="768f8-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="febe3-130">Пример</span><span class="sxs-lookup"><span data-stu-id="febe3-130">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="febe3-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="febe3-131">Request</span></span>
-<span data-ttu-id="febe3-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="febe3-132">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="768f8-128">Пример</span><span class="sxs-lookup"><span data-stu-id="768f8-128">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="768f8-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="768f8-129">Request</span></span>
+<span data-ttu-id="768f8-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="768f8-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -56,8 +54,8 @@ DELETE /teams/{id}/installedApps/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/teams/{id}/installedApps/{id}
 ```
-#### <a name="response"></a><span data-ttu-id="febe3-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="febe3-133">Response</span></span>
-<span data-ttu-id="febe3-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="febe3-134">The following is an example of the response.</span></span> <span data-ttu-id="febe3-135">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="febe3-135">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="febe3-136">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="febe3-136">All of the properties will be returned from an actual call.</span></span>
+#### <a name="response"></a><span data-ttu-id="768f8-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="768f8-131">Response</span></span>
+<span data-ttu-id="768f8-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="768f8-132">The following is an example of the response.</span></span> <span data-ttu-id="768f8-133">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="768f8-133">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="768f8-134">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="768f8-134">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,

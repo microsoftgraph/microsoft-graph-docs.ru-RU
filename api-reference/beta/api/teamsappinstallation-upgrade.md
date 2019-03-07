@@ -4,53 +4,51 @@ description: Обновление установки приложения в к�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 0ab151203e3b2ec3ee863bae34a8feed0c6d1064
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 1000bcbb8aeaa26cd1b580bd4c11a4018a3a82f9
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070808"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458647"
 ---
-# <a name="upgrade-an-app-in-a-team"></a><span data-ttu-id="d0766-103">Обновление приложения в команде</span><span class="sxs-lookup"><span data-stu-id="d0766-103">Upgrade an app in a team</span></span>
+# <a name="upgrade-an-app-in-a-team"></a><span data-ttu-id="17bcc-103">Обновление приложения в команде</span><span class="sxs-lookup"><span data-stu-id="17bcc-103">Upgrade an app in a team</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d0766-104">Обновляет [установку приложения](../resources/teamsappinstallation.md) в [команде](../resources/team.md) до последней версии приложения.</span><span class="sxs-lookup"><span data-stu-id="d0766-104">Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.</span></span>
+<span data-ttu-id="17bcc-104">Обновляет [установку приложения](../resources/teamsappinstallation.md) в [команде](../resources/team.md) до последней версии приложения.</span><span class="sxs-lookup"><span data-stu-id="17bcc-104">Upgrades an [app installation](../resources/teamsappinstallation.md) in a [team](../resources/team.md) to the latest version of the app.</span></span>
 
-><span data-ttu-id="d0766-105">**Примечание:** Если вы используете разрешения приложения, произойдет известная ошибка.</span><span class="sxs-lookup"><span data-stu-id="d0766-105">**Note:** If you're using application permissions, a known issue will occur.</span></span> <span data-ttu-id="d0766-106">Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues).</span><span class="sxs-lookup"><span data-stu-id="d0766-106">For details, see [known issues](/graph/known-issues).</span></span>
+## <a name="permissions"></a><span data-ttu-id="17bcc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="17bcc-105">Permissions</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d0766-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d0766-107">Permissions</span></span>
+<span data-ttu-id="17bcc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="17bcc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="d0766-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d0766-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="d0766-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d0766-110">Permission type</span></span>      | <span data-ttu-id="d0766-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d0766-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="17bcc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="17bcc-108">Permission type</span></span>      | <span data-ttu-id="17bcc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="17bcc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d0766-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d0766-112">Delegated (work or school account)</span></span> | <span data-ttu-id="d0766-113">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0766-113">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="d0766-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d0766-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d0766-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d0766-115">Not supported.</span></span>    |
-|<span data-ttu-id="d0766-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d0766-116">Application</span></span> | <span data-ttu-id="d0766-117">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="d0766-117">Group.ReadWrite.All</span></span> |
+|<span data-ttu-id="17bcc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="17bcc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="17bcc-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17bcc-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="17bcc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="17bcc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17bcc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="17bcc-113">Not supported.</span></span>    |
+|<span data-ttu-id="17bcc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="17bcc-114">Application</span></span> | <span data-ttu-id="17bcc-115">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="17bcc-115">Group.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d0766-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d0766-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="17bcc-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="17bcc-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d0766-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d0766-119">Request headers</span></span>
-| <span data-ttu-id="d0766-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="d0766-120">Header</span></span>       | <span data-ttu-id="d0766-121">Значение</span><span class="sxs-lookup"><span data-stu-id="d0766-121">Value</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="17bcc-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="17bcc-117">Request headers</span></span>
+| <span data-ttu-id="17bcc-118">Заголовок</span><span class="sxs-lookup"><span data-stu-id="17bcc-118">Header</span></span>       | <span data-ttu-id="17bcc-119">Значение</span><span class="sxs-lookup"><span data-stu-id="17bcc-119">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="d0766-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d0766-122">Authorization</span></span>  | <span data-ttu-id="d0766-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d0766-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="17bcc-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="17bcc-120">Authorization</span></span>  | <span data-ttu-id="17bcc-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="17bcc-p102">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="d0766-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d0766-125">Request body</span></span>
-<span data-ttu-id="d0766-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="d0766-126">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17bcc-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="17bcc-123">Request body</span></span>
+<span data-ttu-id="17bcc-124">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="17bcc-124">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="d0766-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="d0766-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="17bcc-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="17bcc-125">Response</span></span>
 
-<span data-ttu-id="d0766-p104">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="d0766-p104">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="17bcc-p103">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="17bcc-p103">If successful, this method returns `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d0766-130">Пример</span><span class="sxs-lookup"><span data-stu-id="d0766-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="17bcc-128">Пример</span><span class="sxs-lookup"><span data-stu-id="17bcc-128">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d0766-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="d0766-131">Request</span></span>
-<span data-ttu-id="d0766-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d0766-132">The following is an example of the request.</span></span>
+#### <a name="request"></a><span data-ttu-id="17bcc-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="17bcc-129">Request</span></span>
+<span data-ttu-id="17bcc-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="17bcc-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "ignored",
   "name": "get_team"
@@ -59,10 +57,10 @@ POST /teams/{id}/installedApps/{id}/upgrade
 ```http
 POST /teams/{id}/installedApps/{id}/upgrade
 ```
-#### <a name="response"></a><span data-ttu-id="d0766-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="d0766-133">Response</span></span>
-<span data-ttu-id="d0766-134">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d0766-134">The following is an example of the response.</span></span> 
+#### <a name="response"></a><span data-ttu-id="17bcc-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="17bcc-131">Response</span></span>
+<span data-ttu-id="17bcc-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="17bcc-132">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="d0766-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d0766-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="17bcc-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="17bcc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
