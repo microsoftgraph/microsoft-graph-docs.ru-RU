@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 1b71c7d1ee9181a766f8aa20b9b16a085fcf31a8
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056968"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458633"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -50,12 +50,6 @@ ms.locfileid: "30056968"
 Новые команды будут перечислены.
 У некоторых старых команд нет свойства **resourceProvisioningOptions**, содержащего значение "Team", которое присваивается недавно созданным командам и командам, посещаемым в Microsoft Teams.
 В будущем свойство **resourceProvisioningOptions** будет присваиваться существующим командам, не открывавшимся в Microsoft Teams.
-
-### <a name="installing-and-uninstalling-applications-using-application-permissions"></a>Установка и удаление приложений с помощью разрешений приложений
-
-При удалении приложения из команды с использованием разрешений API будет возвращать ошибку с кодом 500 несмотря на то, что приложение было успешно удалено.
-
-При установке, обновлении и удалении приложений в команде с помощью разрешений не выполняется запись событий журнала аудита.
 
 ## <a name="groups"></a>Группы
 

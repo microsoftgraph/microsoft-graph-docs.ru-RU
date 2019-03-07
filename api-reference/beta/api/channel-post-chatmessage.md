@@ -1,21 +1,21 @@
 ---
-title: Создайте сообщение в канале
-description: Создайте новое сообщение в указанный канал.
+title: Отправка сообщения в канале
+description: Отправка нового сообщения в указанном канале.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 891181c8797563fac6afb7862a27bd8b49628b5f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 42dcf26a5e67f58668f4bd321a68e684feef237f
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039568"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458640"
 ---
-# <a name="create-a-message-in-a-channel"></a>Создайте сообщение в канале
+# <a name="send-a-message-to-a-channel"></a>Отправка сообщения каналу
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новое [сообщение](../resources/chatmessage.md) в указанном [канала](../resources/channel.md).
+Создайте новое [сообщение](../resources/chatmessage.md) в заданном [канале](../resources/channel.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,17 +31,20 @@ ms.locfileid: "30039568"
 ```http
 POST /teams/{id}/channels/{id}/messages
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [сообщения](../resources/chatmessage.md) . Свойство body является обязательным, остальные свойства являются необязательными.
+В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
+
+> Note: отправка сообщений с вложениями и изображениями не поддерживается.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа с помощью [сообщения](../resources/chatmessage.md) , которая была создана.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика с созданным [сообщением](../resources/chatmessage.md) .
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -114,7 +117,7 @@ Content-length: 160
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create message",
+  "description": "Send message",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

@@ -4,20 +4,18 @@ description: Устанавливает приложение в указанну
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 261d186e23b516e58a428ecfdd2883f7a3bc111d
-ms.sourcegitcommit: 4e9acb8029aca36dfade509a25f1111e1bd0ec6d
+ms.openlocfilehash: 1a77d3b01c70273d0d93ca1e3b1b66d1de53f8f0
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "30070829"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458675"
 ---
 # <a name="add-app-to-team"></a>Добавление приложения в команду
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Устанавливает [приложение](../resources/teamsapp.md) в указанную [группу](../resources/team.md).
-
->**Примечание:** Если вы используете разрешения приложения, произойдет известная ошибка. Дополнительные сведения см. в статье [Известные проблемы](/graph/known-issues).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -62,7 +60,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/installedApps
    "teamsApp@odata.bind":"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
 ```
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
