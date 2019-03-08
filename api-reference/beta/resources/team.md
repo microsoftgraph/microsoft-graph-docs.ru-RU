@@ -4,12 +4,12 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 75afbbd61a1986ae4851326b4daba9264735379e
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
+ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745547"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30458682"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -39,6 +39,7 @@ ms.locfileid: "29745547"
 |[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
 |[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
+|[Отправка сообщения канала](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Отправка сообщения в канал](../api/channel-post-chatmessage.md) |
 
 ## <a name="properties"></a>Свойства
 
@@ -59,12 +60,12 @@ ms.locfileid: "29745547"
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип   | Описание |
+| Отношение | Тип   | Описание |
 |:---------------|:--------|:----------|
 |apps|Коллекция [teamsApp](teamsapp.md)| (Устарело) Приложения, установленные в команде.|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
-|owners|[user](user.md)| Список владельцев команды. |
+|owners|[user](user.md)| Список владельцев команды. В настоящее время при создании группы с использованием разрешений для приложения необходимо указать только одного владельца. При использовании делегированных разрешений нельзя указать владельца (владельцем является текущий пользователь). Владельца необходимо указать в виде ИД объекта (GUID), а не имени участника-пользователя (UPN). |
 |operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
 |template|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](https://docs.microsoft.com/ru-RU/MicrosoftTeams/get-started-with-teams-templates). |
 

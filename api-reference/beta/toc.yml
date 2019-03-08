@@ -6675,6 +6675,240 @@ items:
                 href: api/permission-update.md
               - name: Удаление разрешения
                 href: api/permission-delete.md
+      - name: Финансовые показатели
+        href: resources/dynamics-graph-reference.md
+        displayname: 'Dynamics, Dynamics 365 Business Central'
+        items:
+          - name: Учетная запись
+            href: resources/dynamics-account.md
+            items:
+              - name: Получение учетной записи
+                href: api/dynamics-account-get.md
+          - name: Кредиторская задолженность по срокам давности
+            href: resources/dynamics-agedaccountspayable.md
+            items:
+              - name: Получение кредиторской задолженности по срокам давности
+                href: api/dynamics-agedaccountspayable-get.md
+          - name: Дебиторская задолженность по срокам давности
+            href: resources/dynamics-agedaccountsreceivable.md
+            items:
+              - name: Получение кредиторской задолженности по срокам давности
+                href: api/dynamics-agedaccountsreceivable-get.md
+          - name: Компании
+            href: resources/dynamics-companies.md
+            items:
+              - name: Получение компаний
+                href: api/dynamics-companies-get.md
+          - name: Сведения о компании
+            href: resources/dynamics-companyinformation.md
+            items:
+              - name: Получение сведений о компании
+                href: api/dynamics-companyinformation-get.md
+              - name: Обновление сведений о компании
+                href: api/dynamics-companyinformation-update.md
+          - name: Страны и регионы
+            href: resources/dynamics-countriesregions.md
+            items:
+              - name: Получение стран и регионов
+                href: api/dynamics-countriesregions-get.md
+              - name: Создание стран и регионов
+                href: api/dynamics-create-countriesregions.md
+              - name: Удаление стран и регионов
+                href: api/dynamics-countriesregions-delete.md
+          - name: Валюты
+            href: resources/dynamics-currencies.md
+            items:
+              - name: Получение валют
+                href: api/dynamics-currencies-get.md
+              - name: Создание валют
+                href: api/dynamics-create-currencies.md
+              - name: Удаление валют
+                href: api/dynamics-currencies-delete.md
+          - name: Клиент
+            href: resources/dynamics-customer.md
+            items:
+              - name: Получение клиента
+                href: api/dynamics-customer-get.md
+              - name: Создание клиента
+                href: api/dynamics-create-customer.md
+              - name: Обновление клиента
+                href: api/dynamics-customer-update.md
+              - name: Удаление клиента
+                href: api/dynamics-customer-delete.md
+          - name: Платеж клиента
+            href: resources/dynamics-customerpayment.md
+            items:
+              - name: Получение платежа клиента
+                href: api/dynamics-customerpayment-get.md
+              - name: Создание платежа клиента
+                href: api/dynamics-create-customerpayment.md
+              - name: Обновление платежа клиента
+                href: api/dynamics-customerpayment-update.md
+              - name: Удаление платежа клиента
+                href: api/dynamics-customerpayment-delete.md
+          - name: Журнал платежей клиента
+            href: resources/dynamics-customerpaymentsjournal.md
+            items:
+              - name: Получение журнала платежей клиента
+                href: api/dynamics-customerpaymentsjournal-get.md
+              - name: Создание журнала платежей клиента
+                href: api/dynamics-create-customerpaymentsjournal.md
+              - name: Обновление журнала платежей клиента
+                href: api/dynamics-customerpaymentsjournal-update.md
+              - name: Удаление журнала платежей клиента
+                href: api/dynamics-customerpaymentsjournal-delete.md
+          - name: Измерение
+            href: resources/dynamics-dimension.md
+            items:
+              - name: Получение измерения
+                href: api/dynamics-dimension-get.md
+          - name: Значение измерения
+            href: resources/dynamics-dimensionvalue.md
+            items:
+              - name: Получение измерения
+                href: api/dynamics-dimensionvalue-get.md
+          - name: Сотрудник
+            href: resources/dynamics-employee.md
+            items:
+              - name: Получение сотрудника
+                href: api/dynamics-employee-get.md
+              - name: Создание сотрудника
+                href: api/dynamics-create-employee.md
+              - name: Обновление сотрудника
+                href: api/dynamics-employee-update.md
+              - name: Удаление сотрудника
+                href: api/dynamics-employee-delete.md
+          - name: Операции Главной книги
+            href: resources/dynamics-generalledgerentries.md
+            items:
+              - name: Получение операций Главной книги
+                href: api/dynamics-generalledgerentries-get.md
+          - name: Элемент
+            href: resources/dynamics-item.md
+            items:
+              - name: Получение элемента
+                href: api/dynamics-item-get.md
+              - name: Создание элемента
+                href: api/dynamics-create-item.md
+              - name: Обновление элемента
+                href: api/dynamics-item-update.md
+              - name: Удаление элемента
+                href: api/dynamics-item-delete.md
+          - name: Категории элементов
+            href: resources/dynamics-itemcategories.md
+            items:
+              - name: Получение категорий элементов
+                href: api/dynamics-itemcategories-get.md
+              - name: Создание категорий элементов
+                href: api/dynamics-create-itemcategories.md
+              - name: Обновление категорий элементов
+                href: api/dynamics-itemcategories-update.md
+              - name: Удаление категорий элементов
+                href: api/dynamics-itemcategories-delete.md
+          - name: Журнал
+            href: resources/dynamics-journal.md
+            items:
+              - name: Получение журнала
+                href: api/dynamics-journal-get.md
+              - name: Создание журнала
+                href: api/dynamics-create-journal.md
+              - name: Обновление журнала
+                href: api/dynamics-journal-update.md
+              - name: Удаление журнала
+                href: api/dynamics-journal-delete.md
+          - name: Строка журнала
+            href: resources/dynamics-journalline.md
+            items:
+              - name: Получение строки журнала
+                href: api/dynamics-journalline-get.md
+              - name: Создание строки журнала
+                href: api/dynamics-create-journalline.md
+              - name: Обновление строки журнала
+                href: api/dynamics-journalline-update.md
+              - name: Удаление строки журнала
+                href: api/dynamics-journalline-delete.md
+          - name: Методы оплаты
+            href: resources/dynamics-paymentmethods.md
+            items:
+              - name: Получение методов оплаты
+                href: api/dynamics-paymentmethods-get.md
+              - name: Создание методов оплаты
+                href: api/dynamics-create-paymentmethods.md
+              - name: Обновление методов оплаты
+                href: api/dynamics-paymentmethods-update.md
+              - name: Удаление методов оплаты
+                href: api/dynamics-paymentmethods-delete.md
+          - name: Условия оплаты
+            href: resources/dynamics-paymentterms.md
+            items:
+              - name: Получение условий оплаты
+                href: api/dynamics-paymentterms-get.md
+              - name: Создание условий оплаты
+                href: api/dynamics-create-paymentterms.md
+              - name: Обновление условий оплаты
+                href: api/dynamics-paymentterms-update.md
+              - name: Удаление условий оплаты
+                href: api/dynamics-paymentterms-delete.md
+          - name: Методы поставки
+            href: resources/dynamics-shipmentmethods.md
+            items:
+              - name: Получение методов поставки
+                href: api/dynamics-shipmentmethods-get.md
+              - name: Создание методов поставки
+                href: api/dynamics-create-shipmentmethods.md
+              - name: Обновление методов поставки
+                href: api/dynamics-shipmentmethods-update.md
+              - name: Удаление методов поставки
+                href: api/dynamics-shipmentmethods-delete.md
+          - name: Налоговая область
+            href: resources/dynamics-taxarea.md
+            items:
+              - name: Получение налоговой области
+                href: api/dynamics-taxarea-get.md
+              - name: Создание налоговой области
+                href: api/dynamics-create-taxarea.md
+              - name: Обновление налоговой области
+                href: api/dynamics-taxarea-update.md
+              - name: Удаление налоговой области
+                href: api/dynamics-taxarea-delete.md
+          - name: Налоговые группы
+            href: resources/dynamics-taxgroups.md
+            items:
+              - name: Получение налоговых групп
+                href: api/dynamics-taxgroups-get.md
+              - name: Создание налоговых групп
+                href: api/dynamics-create-taxgroups.md
+              - name: Обновление налоговых групп
+                href: api/dynamics-taxgroups-update.md
+              - name: Удаление налоговых групп
+                href: api/dynamics-taxgroups-delete.md
+          - name: Пробный баланс
+            href: resources/dynamics-trialbalance.md
+            items:
+              - name: Получение пробного баланса
+                href: api/dynamics-trialbalance-get.md
+          - name: Единицы измерения
+            href: resources/dynamics-unitsofmeasure.md
+            items:
+              - name: Получение единиц измерения
+                href: api/dynamics-unitsofmeasure-get.md
+              - name: Создание единиц измерения
+                href: api/dynamics-create-unitsofmeasure.md
+              - name: Обновление единиц измерения
+                href: api/dynamics-unitsofmeasure-update.md
+              - name: Удаление единиц измерения
+                href: api/dynamics-unitsofmeasure-delete.md
+          - name: Поставщик
+            href: resources/dynamics-vendor.md
+            items:
+              - name: Получение поставщика
+                href: api/dynamics-vendor-get.md
+              - name: Создание поставщика
+                href: api/dynamics-create-vendor.md
+              - name: Обновление поставщика
+                href: api/dynamics-vendor-update.md
+              - name: Удаление поставщика
+                href: api/dynamics-vendor-delete.md
       - name: Удостоверения и доступ
         href: resources/azure-ad-overview.md
         displayName: 'Azure AD, Microsoft identity platform'
@@ -7785,8 +8019,19 @@ items:
                 href: api/reportroot-getyammergroupsactivitycounts.md
       - name: Безопасность
         href: resources/security-api-overview.md
-        displayname: 'Security API, Microsoft Intelligent Security Graph'
+        displayname: 'Security API, Microsoft Graph Security API'
         items:
+          - name: Действия
+            href: resources/securityaction.md
+            items:
+              - name: Перечисление действий по обеспечению безопасности
+                href: api/securityactions-list.md
+              - name: Создание действия по обеспечению безопасности
+                href: api/securityactions-post.md
+              - name: Получение действия по обеспечению безопасности
+                href: api/securityaction-get.md
+              - name: Отмена действия по обеспечению безопасности
+                href: api/securityaction-cancelsecurityaction.md
           - name: Оповещения
             href: resources/alert.md
             items:
@@ -7796,6 +8041,8 @@ items:
                 href: api/alert-get.md
               - name: Обновление оповещения
                 href: api/alert-update.md
+              - name: Обновление нескольких оповещений
+                href: api/alert-updatealerts.md
           - name: Оценки безопасности
             href: resources/securescores.md
             items:
@@ -7808,6 +8055,27 @@ items:
                 href: api/securescorecontrolprofiles-list.md
               - name: Обновление профилей составляющих оценки безопасности
                 href: api/securescorecontrolprofiles-update.md
+          - name: Индикаторы аналитики угроз
+            href: resources/tiindicator.md
+            items:
+              - name: Перечисление
+                href: api/tiindicators-list.md
+              - name: Создание
+                href: api/tiindicators-post.md
+              - name: Отправка нескольких
+                href: api/tiindicator-submittiindicators.md
+              - name: Получение
+                href: api/tiindicator-get.md
+              - name: Обновление
+                href: api/tiindicator-update.md
+              - name: Обновление нескольких
+                href: api/tiindicator-updatetiindicators.md
+              - name: Удаление
+                href: api/tiindicator-delete.md
+              - name: Удаление нескольких
+                href: api/tiindicator-deletetiindicators.md
+              - name: Удаление нескольких по внешнему ИД
+                href: api/tiindicator-deletetiindicatorsbyexternalid.md
           - name: Ошибки
             href: resources/security-error-codes.md
       - name: Сайты и списки
@@ -8076,9 +8344,9 @@ items:
                 href: api/channel-get-message.md
               - name: Получение ответов на сообщения
                 href: api/channel-list-messagereplies.md
-              - name: Получение ответа на сообщения
+              - name: Получение ответа на сообщение
                 href: api/channel-get-messagereply.md
-              - name: Создание сообщения
+              - name: Отправка сообщения
                 href: api/channel-post-chatmessage.md
               - name: Ответ на сообщение
                 href: api/channel-post-messagereply.md
