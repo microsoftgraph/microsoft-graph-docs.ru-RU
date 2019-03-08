@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Изменение разрешений на общий доступ
 localization_priority: Normal
-ms.openlocfilehash: 0c12e42852d15dcd1cce7b18e8416ffc8d114299
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 64d6618b17b061293ab4e5b5296f7ad39d5a8512
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528881"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480728"
 ---
-# <a name="update-sharing-permission"></a>Изменение разрешений на общий доступ
+# <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +51,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.
 
-Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.
+Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.
 Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   | Описание                   |
@@ -77,7 +77,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md), представляющий обновленное состояние разрешения, в теле отклика.
 

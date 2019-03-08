@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2a405ad8a71c766642bd23adbce64c2b57b72e23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517444"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480882"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -28,8 +28,8 @@ ms.locfileid: "29517444"
 |:-------------------------------|:------------------------
 | [Получение][]                        | GET /items/{item-id}
 | [Получение значений столбцов][Получение]       | GET /items/{item-id}?expand=fields
-| [Получение аналитики][]              | GET /items/ {идентификатор элемента} / аналитики
-| [Получение действий по интервал][] | GET /items/ {идентификатор элемента} / getActivitiesByInterval
+| [Получение аналитики][]              | ПОЛУЧЕНИЕ/итемс/{итем-ИД}/Аналитикс
+| [Получение действий по интервалу][] | ПОЛУЧЕНИЕ/Итемс/{итем-ИД}/жетактивитиесбинтервал
 | [Создание][]                     | POST /items
 | [Удаление][]                     | DELETE /items/{item-id}
 | [Обновление][]                     | PATCH /items/{item-id}
@@ -37,7 +37,7 @@ ms.locfileid: "29517444"
 
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
-[Получение действий по интервал]: ../api/itemactivity-getbyinterval.md
+[Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
@@ -95,7 +95,7 @@ ms.locfileid: "29517444"
 | name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
-| description          | строка            | Текст с описанием элемента.
+| description          | string            | Текст с описанием элемента.
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
@@ -110,10 +110,10 @@ ms.locfileid: "29517444"
 | Имя связи | Тип                           | Описание
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.
-| Аналитика         | [itemAnalytics][] ресурсов     | Аналитика о Просмотр действий, выполняемых по этому элементу.
+| аналитическ         | Ресурс [itemAnalytics][]     | Аналитика сведений о действиях, которые были выполнены для этого элемента.
 | driveItem         | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]**
 | fields            | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.
-| версии          | [listItemVersion][] коллекции | Список предыдущих версий элемента списка.
+| Версия          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -123,7 +123,7 @@ ms.locfileid: "29517444"
 [itemActivity]: itemactivity.md
 [itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
-[списки]: list.md
+[list]: list.md
 [listItemVersion]: listitemversion.md.
 [sharepointIds]: sharepointids.md
 

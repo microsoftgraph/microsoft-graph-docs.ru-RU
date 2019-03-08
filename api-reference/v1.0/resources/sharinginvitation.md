@@ -1,19 +1,19 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: f51f08ad174c661df14b688dc111d9447708523c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0cb09136f4093b290f37ee851cb7d2d0ca10c1bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846700"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480546"
 ---
 # <a name="sharinginvitation-resource-type"></a>Тип ресурса SharingInvitation
 
-Ресурс **SharingInvitation** группирует элементы данных, связанных с приглашением в одной структуры.
+Ресурс **SharingInvitation** группирует элементы данных, связанные с приглашением, в единую структуру.
 
 ## <a name="json-representation"></a>Представление JSON
 

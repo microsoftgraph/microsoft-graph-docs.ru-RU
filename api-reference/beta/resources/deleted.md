@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Deleted
 localization_priority: Normal
-ms.openlocfilehash: de832eb4ecdf36081b00b94679dcafe9b94fe007
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06fe9835ef4b31d7a48bad955b17872142a94b2d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529441"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480784"
 ---
 # <a name="deleted-facet"></a>Аспект Deleted
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип ресурса Deleted указывает, что элемент был удален. В этой версии API наличие ненулевого значения ресурса указывает, что файл был удален. Нулевое (или отсутствующее) значение указывает, что файл не удален.
+Тип ресурса **Deleted** указывает, что элемент был удален. В этой версии API наличие ненулевого значения ресурса указывает, что файл был удален. Нулевое (или отсутствующее) значение указывает, что файл не удален.
 
 Дополнительные сведения об отслеживании изменений и поиске удаленных элементов см. в статье о том, как [просматривать изменения в элементах](../api/driveitem-delta.md).
 

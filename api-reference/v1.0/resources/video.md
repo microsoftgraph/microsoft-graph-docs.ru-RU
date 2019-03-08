@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Video
+title: Видео
 localization_priority: Normal
-ms.openlocfilehash: 0e26804991128363780ed4336849486c92fc5a07
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: deba8cccb5f0ab80ca03395ef9f798719d542b8d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27889259"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480805"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -17,9 +17,9 @@ ms.locfileid: "27889259"
 
 Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **video**, то этот ресурс представляет видеофайл. Свойства ресурса **Video** заполняются путем извлечения метаданных из такого файла.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -53,7 +53,7 @@ ms.locfileid: "27889259"
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.
 | **fourCC**                | string | Название формата видео в виде четырехзначного кода.
-| **частота кадров**             | double | Частота кадров видео.
+| **Частота**             | double | Частота кадров видео.
 | **height**                | Int32  | Высота видео в пикселях.
 | **width**                 | Int32  | Ширина видео в пикселях.
 

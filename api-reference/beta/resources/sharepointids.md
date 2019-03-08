@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 22bf6b1101be9d60ff350e0b04f7627e2b8fb529
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c9f4c3dc54b9eee6cc1ab24058e3fe238fed89a3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524032"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480602"
 ---
 # <a name="sharepointids-resource-type"></a>Тип ресурса SharePointIds
 
@@ -22,7 +22,7 @@ ms.locfileid: "29524032"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -51,7 +51,7 @@ ms.locfileid: "29524032"
 | listItemUniqueId | string       | Уникальный идентификатор (GUID) элемента в OneDrive для бизнеса или на сайте SharePoint.
 | siteId           | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPSite), содержащего элемент.
 | siteUrl          | string (url) | URL-адрес SharePoint для сайта, содержащего элемент.
-| tenantId         | string       | Уникальный идентификатор (guid) аренды.
+| tenantId         | string       | Уникальный идентификатор (GUID) для клиента.
 | webId            | string       | Уникальный идентификатор (GUID) семейства веб-сайтов (SPWeb), содержащего элемент.
 
 ## <a name="remarks"></a>Заметки

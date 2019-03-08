@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 32dc5154d8a799f01294e87f47c93879f0ce3222
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 7faabe9bddc806d4c416ebed439592ec8630e8af
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968598"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481141"
 ---
 # <a name="create-a-new-list"></a>Создание списка
 
@@ -103,8 +103,8 @@ Content-type: application/json
 **Примечание.** Ответ усечен для наглядности.
 При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[list]: ../resources/list.md
-[site]: ../resources/site.md
+[списка]: ../resources/list.md
+[сайте]: ../resources/site.md
 
 <!-- {
   "type": "#page.annotation",

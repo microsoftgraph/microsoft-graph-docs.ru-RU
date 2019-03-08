@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: textColumn
+title: TextColumn
 localization_priority: Normal
-ms.openlocfilehash: d064253cfad141d5879afb52451ca28fa2aeca67
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 1e10997bd70f97fa91177aee48a6ffcecff40ab5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860881"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480840"
 ---
 # <a name="textcolumn-resource-type"></a>Тип ресурса textColumn
 
@@ -34,10 +34,10 @@ ms.locfileid: "27860881"
 
 | Имя свойства                   | Тип    | Описание
 |:--------------------------------|:--------|:---------------------------------
-| **allowMultipleLines**          | boolean | Указывает, разрешено ли отображать несколько строк текста.
-| **appendChangesToExistingText** | boolean | Указывает, что должно происходить при обновлении данного столбца: новый текст должен заменять существующий либо дополнять его.
-| **linesForEditing**             | int32   | Размер текстового поля.
-| **maxLength**                   | int32   | Максимальное количество символов для значения.
+| **allowMultipleLines**          | логический | Указывает, разрешено ли отображать несколько строк текста.
+| **appendChangesToExistingText** | логический | Указывает, что должно происходить при обновлении данного столбца: новый текст должен заменять существующий либо дополнять его.
+| **linesForEditing**             | Int32   | Размер текстового поля.
+| **maxLength**                   | Int32   | Максимальное количество символов для значения.
 | **textType**                    | string  | Тип хранимого текста. Должно иметь тип `plain` или `richText`
 
 <!-- {

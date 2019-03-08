@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: sharedDriveItem
+title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 22e449d725b94b7be458261e82cfde0b5d6fdf9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b146fdf0f7ee2e2037fcb1d36511d0afa503005b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524123"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480630"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -50,7 +50,7 @@ ms.locfileid: "29524123"
 
 | Свойство | Тип                          | Описание                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | Строка                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
+| id       | String                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
 | name     | Строка                        | Отображаемое имя общего элемента.                             |
 | owner    | [IdentitySet](identityset.md) | Сведения о владельце общего элемента, ставшего объектом ссылки. |
 
@@ -61,7 +61,7 @@ ms.locfileid: "29524123"
 | **driveItem**     | [**driveItem**][driveItem] | Используется для доступа к базовому объекту **driveItem**
 | **list**          | [**list**][list]           | Используется для доступа к базовому объекту **list**
 | **listItem**      | [**listItem**][listItem]   | Используется для доступа к базовому объекту **listItem**
-| **permission**    | **Permission** | Используется для доступа к **разрешений** , представляющий базовый ссылку, общего доступа
+| **permission**    | [**права**][permission] | Используется для доступа к **разрешению** , представляющему базовую ссылку для совместного доступа
 | **site**          | [**site**][site]           | Используется для доступа к базовому объекту **site**
 
 Кроме того, для объектов **driveItem**, к которым предоставлен доступ в личных учетных записях OneDrive, можно использовать указанные ниже связи.

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f9b159e4686a22b759e2f2a42776df8dafb3a2b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 578d7bcbba51876390f9e0134d3c589d64b51e81
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518109"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480455"
 ---
 # <a name="get-a-driveitem-resource"></a>Получение ресурса DriveItem
 
@@ -55,9 +55,9 @@ GET /users/{userId}/drive/root:/{item-path}
 
 | Имя          | Значение  | Описание                                                                                                                                              |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| if-none-match | String | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
+| if-none-match | String | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом в файле, то будет возвращен отклик `HTTP 304 Not Modified`. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [DriveItem](../resources/driveitem.md) в тексте отклика.
 
@@ -73,7 +73,7 @@ GET /users/{userId}/drive/root:/{item-path}
 GET /me/drive/root
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

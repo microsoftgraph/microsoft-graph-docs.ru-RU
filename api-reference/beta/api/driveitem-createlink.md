@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Предоставление доступа к файлу посредством ссылки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 4b4b86621579b945af01eb1dc517b7525220aae8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526223"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480504"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 
@@ -51,8 +51,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 |   Имя    |  Тип  |                                 Описание                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| **type**  | строка | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
-| **scope** | string | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
+| **type**  | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
+| **scope** | string | Необязательно. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 
 ### <a name="link-types"></a>Типы ссылок
@@ -211,7 +211,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Замечания
+## <a name="remarks"></a>Примечания
 
 * Срок действия ссылок, созданных с помощью этого действия, не истекает при условии, что в организации не включена политика срока действия.
 * Ссылки отображаются в разрешениях на совместное использование для элемента и могут быть удалены владельцем элемента.

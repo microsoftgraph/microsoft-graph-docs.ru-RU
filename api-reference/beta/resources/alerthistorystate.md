@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса Алерсистористате
-description: Каждый раз, когда оповещение исправлено, оно сохраняется в новом объекте Алерсистористате и будет возвращено в составе измененного оповещения.
+description: Сохраняет изменения, внесенные в оповещения.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: a5dda54101264ee2ec4d01a283f96a93f1d6e5e3
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 1a7975d870389be5163a8f230f6a6cc4cd1425c3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366968"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480833"
 ---
 # <a name="alerthistorystate-resource-type"></a>Тип ресурса Алерсистористате
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Каждый раз, когда оповещение исправлено, оно сохраняется в новом объекте Алерсистористате и будет возвращено в составе измененного оповещения.
+Сохраняет изменения, внесенные в оповещения.
 
 ## <a name="properties"></a>Свойства
 
@@ -29,7 +29,7 @@ ms.locfileid: "30366968"
 |Упдатеддатетиме|DateTimeOffset| Дата и время обновления оповещения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |user|String| UPN пользователя, выполнившего вход, который обновил оповещение (берется из маркера носителя — если в режиме пользователя или делегированной проверки подлинности). |
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

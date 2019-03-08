@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка пользователей, имеющих доступ к файлу
+title: Список пользователей, имеющих доступ к файлу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: efd09838771adb656f5c32ade47d7b7de55ff6b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6917cb17cc9b6c1f04a63d85b05cd5d7e543fa84
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524928"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480847"
 ---
-# <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений совместного доступа в элементе DriveItem
+# <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений на общий доступ в элементе DriveItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -82,7 +82,7 @@ GET /users/{userId}/drive/items/{itemId}/permissions
 GET /me/drive/items/{item-id}/permissions
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Этот пример отклика включает три разрешения. Первое разрешение представляет собой ссылку для общего доступа с разрешениями на изменение, второе — явное разрешение для пользователя с именем John, которое унаследовано от родительской папки, а третье разрешение — это ссылка для общего доступа с правами на чтение и запись, созданная приложением.
 
@@ -136,7 +136,7 @@ Content-Type: application/json
 
 Связи между **разрешениями** ресурса DriveItem невозможно развернуть как часть запроса на [получение DriveItem](driveitem-get.md) или коллекции DriveItems. Необходимо открыть доступ непосредственно к свойству разрешений.
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка файлов, к которым мне предоставлен доступ
+title: Список файлов, к которым мне предоставлен доступ
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 5008843a90e405cd1d775286a86e47e6ea62769e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 06c6607de9fa36fd8b1dedc3bf5ded3cfad1228e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524277"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481015"
 ---
-# <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен доступ пользователю, выполнившему вход в систему
+# <a name="list-items-shared-with-the-signed-in-user"></a>Создание списка элементов, к которым предоставлен общий доступ для пользователя, выполнившего вход в систему
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -28,8 +28,8 @@ ms.locfileid: "29524277"
 |Делегированные (личная учетная запись Майкрософт) | Files.Read.All, Files.ReadWrite.All    |
 |Для приложений | Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All |
 
-**Примечание.** Несмотря на то что при наличии разрешений Files.Read или Files.ReadWrite запрос /sharedWithMe будет успешно выполнен, могут отсутствовать некоторые свойства.
-Кроме того, если отсутствует одно из разрешений **All**, общие элементы, возвращаемые этим API, будут недоступны.
+**Note:** хотя запрос/шаредвисме будет выполнен успешно с файлами. READS или Files. ReadWrite, некоторые свойства могут отсутствовать.
+Кроме того, если одно из разрешений **All** отсутствует, общие элементы, возвращаемые этим API, будут недоступны.
 
 ## <a name="http-request"></a>HTTP-запрос
 

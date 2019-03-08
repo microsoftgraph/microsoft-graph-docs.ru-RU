@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Предоставление доступа к файлу посредством ссылки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: e80e27860216227e80780f637daedf0cc8b095b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923042"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480693"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 
@@ -50,7 +50,7 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 |   Имя    |  Тип  |                                 Описание                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
 | **type**  | string | Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.       |
-| **scope** | строка | Необязательный параметр. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
+| **scope** | string | Необязательно. Область создаваемой ссылки. Возможные значения: `anonymous` или `organization`. |
 
 
 ### <a name="link-types"></a>Типы ссылок
@@ -70,8 +70,8 @@ POST /users/{userId}/drive/items/{itemId}/createLink
 
 | Значение          | Описание
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | Лица, имеющие ссылку имеет доступ, без необходимости входа. Сюда может входить пользователям за пределами вашей организации. Поддержка анонимных ссылка может быть отключена администратором.
-| `organization` | Любой пользователь вошел в вашей организации (клиента) используйте ссылку для доступа. Доступно только в OneDrive для бизнеса и SharePoint.
+| `anonymous`    | Любой пользователь, у которого есть ссылка, имеет доступ, не требуя входа в систему. Сюда могут относиться пользователи за прев Организации. Поддержка анонимных ссылок может быть отключена администратором.
+| `organization` | Любой пользователь, вошедший в организацию (клиент), может использовать эту ссылку для получения доступа. Доступно только в OneDrive для бизнеса и SharePoint.
 
 
 ## <a name="response"></a>Ответ
@@ -102,7 +102,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
