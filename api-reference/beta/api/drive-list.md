@@ -1,38 +1,38 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка ресурсов Drive
+title: Список дисков
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 937b537c4ca71b5cee39f60640ede984f1c5797a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6a5d716aef5a47acf3f0752d91a478f2d3299a24
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517136"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480322"
 ---
-# <a name="list-available-drives"></a><span data-ttu-id="a5a98-102">Создание списка доступных дисков</span><span class="sxs-lookup"><span data-stu-id="a5a98-102">List available drives</span></span>
+# <a name="list-available-drives"></a><span data-ttu-id="ad43c-102">Создание списка доступных объектов drive</span><span class="sxs-lookup"><span data-stu-id="ad43c-102">List available drives</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5a98-103">В этой статье рассказывается, как получить список ресурсов [Drive](../resources/drive.md), доступных для целевого объекта User, Group или [Site](../resources/site.md).</span><span class="sxs-lookup"><span data-stu-id="a5a98-103">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
+<span data-ttu-id="ad43c-103">В этой статье рассказывается, как получить список ресурсов [Drive](../resources/drive.md), доступных для целевого объекта User, Group или [Site](../resources/site.md).</span><span class="sxs-lookup"><span data-stu-id="ad43c-103">Retrieve the list of [Drive](../resources/drive.md) resources available for a target User, Group, or [Site](../resources/site.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a5a98-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a5a98-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ad43c-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ad43c-104">Permissions</span></span>
 
-<span data-ttu-id="a5a98-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a5a98-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ad43c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ad43c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a5a98-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a5a98-107">Permission type</span></span>      | <span data-ttu-id="a5a98-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a5a98-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ad43c-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ad43c-107">Permission type</span></span>      | <span data-ttu-id="ad43c-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ad43c-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a5a98-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a5a98-109">Delegated (work or school account)</span></span> | <span data-ttu-id="a5a98-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5a98-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a5a98-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a5a98-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a5a98-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5a98-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a5a98-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a5a98-113">Application</span></span> | <span data-ttu-id="a5a98-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a5a98-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ad43c-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ad43c-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ad43c-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad43c-110">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ad43c-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ad43c-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ad43c-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad43c-112">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ad43c-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ad43c-113">Application</span></span> | <span data-ttu-id="ad43c-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ad43c-114">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="list-a-groups-drives"></a><span data-ttu-id="a5a98-115">Создание списка дисков группы</span><span class="sxs-lookup"><span data-stu-id="a5a98-115">List a group's drives</span></span>
+## <a name="list-a-groups-drives"></a><span data-ttu-id="ad43c-115">Создание списка дисков группы</span><span class="sxs-lookup"><span data-stu-id="ad43c-115">List a group's drives</span></span>
 
-<span data-ttu-id="a5a98-116">Чтобы создать список библиотек документов для группы, ваше приложение должно запросить связь **drives** в объекте Group.</span><span class="sxs-lookup"><span data-stu-id="a5a98-116">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
+<span data-ttu-id="ad43c-116">Чтобы создать список библиотек документов для группы, ваше приложение должно запросить связь **drives** в объекте Group.</span><span class="sxs-lookup"><span data-stu-id="ad43c-116">To list the document libraries for a group, your app requests the **drives** relationship on the Group.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="a5a98-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a5a98-117">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="ad43c-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ad43c-117">HTTP request</span></span>
 
 <!-- {"blockType": "request", "name": "group-list-drives", "scopes": "groups.read.all" } -->
 
@@ -40,9 +40,9 @@ ms.locfileid: "29517136"
 GET /groups/{groupId}/drives
 ```
 
-## <a name="list-a-sites-drives"></a><span data-ttu-id="a5a98-118">Создание списка дисков сайта</span><span class="sxs-lookup"><span data-stu-id="a5a98-118">List a site's drives</span></span>
+## <a name="list-a-sites-drives"></a><span data-ttu-id="ad43c-118">Создание списка дисков сайта</span><span class="sxs-lookup"><span data-stu-id="ad43c-118">List a site's drives</span></span>
 
-<span data-ttu-id="a5a98-119">Чтобы создать список библиотек документов для сайта, ваше приложение должно запросить связь **drives** в объекте Site.</span><span class="sxs-lookup"><span data-stu-id="a5a98-119">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
+<span data-ttu-id="ad43c-119">Чтобы создать список библиотек документов для сайта, ваше приложение должно запросить связь **drives** в объекте Site.</span><span class="sxs-lookup"><span data-stu-id="ad43c-119">To list the document libraries for a site, your app requests the **drives** relationship on the Site.</span></span>
 
 <!-- {"blockType": "request", "name": "site-list-drives", "scopes": "sites.read.all" } -->
 
@@ -50,7 +50,7 @@ GET /groups/{groupId}/drives
 GET /sites/{siteId}/drives
 ```
 
-## <a name="list-a-users-drives"></a><span data-ttu-id="a5a98-120">Создание списка дисков пользователя</span><span class="sxs-lookup"><span data-stu-id="a5a98-120">List a user's drives</span></span>
+## <a name="list-a-users-drives"></a><span data-ttu-id="ad43c-120">Создание списка дисков пользователя</span><span class="sxs-lookup"><span data-stu-id="ad43c-120">List a user's drives</span></span>
 
 <!-- {"blockType": "request", "name": "user-list-drives", "scopes": "files.read.all" } -->
 
@@ -58,7 +58,7 @@ GET /sites/{siteId}/drives
 GET /users/{userId}/drives
 ```
 
-## <a name="list-the-current-users-drives"></a><span data-ttu-id="a5a98-121">Создание списка дисков текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="a5a98-121">List the current user's drives</span></span>
+## <a name="list-the-current-users-drives"></a><span data-ttu-id="ad43c-121">Создание списка дисков текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="ad43c-121">List the current user's drives</span></span>
 
 <!-- {"blockType": "request", "name": "enum-drives", "scopes": "files.read" } -->
 
@@ -66,13 +66,13 @@ GET /users/{userId}/drives
 GET /me/drives
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="a5a98-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="a5a98-122">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="ad43c-122">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="ad43c-122">Optional query parameters</span></span>
 
-<span data-ttu-id="a5a98-123">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="a5a98-123">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="ad43c-123">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="ad43c-123">This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-## <a name="response"></a><span data-ttu-id="a5a98-124">Ответ</span><span class="sxs-lookup"><span data-stu-id="a5a98-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ad43c-124">Ответ</span><span class="sxs-lookup"><span data-stu-id="ad43c-124">Response</span></span>
 
-<span data-ttu-id="a5a98-125">При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [Drive](../resources/drive.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a5a98-125">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
+<span data-ttu-id="ad43c-125">При успешном выполнении этот метод возвращает код ответа `200 OK` и коллекцию объектов [Drive](../resources/drive.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ad43c-125">If successful, this method returns a `200 OK` response code and collection of [Drive](../resources/drive.md) objects in the response body.</span></span>
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.drive)",
@@ -111,14 +111,14 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="a5a98-126">Замечания</span><span class="sxs-lookup"><span data-stu-id="a5a98-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="ad43c-126">Примечания</span><span class="sxs-lookup"><span data-stu-id="ad43c-126">Remarks</span></span>
 
-<span data-ttu-id="a5a98-127">У большинства пользователей имеется только один ресурс Drive.</span><span class="sxs-lookup"><span data-stu-id="a5a98-127">Most users will only have a single Drive resource.</span></span>
+<span data-ttu-id="ad43c-127">У большинства пользователей имеется только один ресурс Drive.</span><span class="sxs-lookup"><span data-stu-id="ad43c-127">Most users will only have a single Drive resource.</span></span>
 
-<span data-ttu-id="a5a98-128">Для групп и сайтов может быть доступно несколько ресурсов Drive.</span><span class="sxs-lookup"><span data-stu-id="a5a98-128">Groups and Sites may have multiple Drive resources available.</span></span>
+<span data-ttu-id="ad43c-128">Для групп и сайтов может быть доступно несколько ресурсов Drive.</span><span class="sxs-lookup"><span data-stu-id="ad43c-128">Groups and Sites may have multiple Drive resources available.</span></span>
 
-<span data-ttu-id="a5a98-129">По умолчанию ресурсы Drive с аспектом [system][] скрыты.</span><span class="sxs-lookup"><span data-stu-id="a5a98-129">Drives with the [system][] facet are hidden by default.</span></span>
-<span data-ttu-id="a5a98-130">Чтобы создать их список, включите параметр `system` в оператор `$select`.</span><span class="sxs-lookup"><span data-stu-id="a5a98-130">To list them, include `system` in your `$select` statement.</span></span>
+<span data-ttu-id="ad43c-129">По умолчанию ресурсы Drive с аспектом [system][] скрыты.</span><span class="sxs-lookup"><span data-stu-id="ad43c-129">Drives with the [system][] facet are hidden by default.</span></span>
+<span data-ttu-id="ad43c-130">Чтобы создать их список, включите параметр `system` в оператор `$select`.</span><span class="sxs-lookup"><span data-stu-id="ad43c-130">To list them, include `system` in your `$select` statement.</span></span>
 
 [system]: ../resources/systemfacet.md
 

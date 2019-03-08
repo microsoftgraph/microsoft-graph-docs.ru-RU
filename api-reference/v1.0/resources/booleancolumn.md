@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: booleanColumn
+title: BooleanColumn
 localization_priority: Normal
-ms.openlocfilehash: 395e2a2afe257ecb81f0333fa3145ac89e4ca88a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: a9f8ac1c7618e27f40e3019026c2f9bf8c0ebe84
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27808605"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480203"
 ---
-# <a name="booleancolumn-resource-type"></a><span data-ttu-id="aff16-102">Тип ресурса BooleanColumn</span><span class="sxs-lookup"><span data-stu-id="aff16-102">BooleanColumn resource type</span></span>
+# <a name="booleancolumn-resource-type"></a><span data-ttu-id="78832-102">Тип ресурса BooleanColumn</span><span class="sxs-lookup"><span data-stu-id="78832-102">BooleanColumn resource type</span></span>
 
-<span data-ttu-id="aff16-103">Аспект **booleanColumn** ресурса [columnDefinition](columndefinition.md) указывает, что столбец содержит логическое значение.</span><span class="sxs-lookup"><span data-stu-id="aff16-103">The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.</span></span>
+<span data-ttu-id="78832-103">Аспект **booleanColumn** ресурса [columnDefinition](columndefinition.md) указывает, что столбец содержит логическое значение.</span><span class="sxs-lookup"><span data-stu-id="78832-103">The **booleanColumn** on a [columnDefinition](columndefinition.md) resource indicates that the column holds a boolean value.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="aff16-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="aff16-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="78832-104">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="78832-104">JSON representation</span></span>
 
-<span data-ttu-id="aff16-105">Ниже показано представление ресурса **booleanColumn** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="aff16-105">Here is a JSON representation of a **booleanColumn** resource.</span></span>
+<span data-ttu-id="78832-105">Ниже показано представление ресурса **booleanColumn** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="78832-105">Here is a JSON representation of a **booleanColumn** resource.</span></span>
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.booleanColumn" } -->
 
 ```json
@@ -25,9 +25,9 @@ ms.locfileid: "27808605"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="aff16-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="aff16-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="78832-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="78832-106">Properties</span></span>
 
-<span data-ttu-id="aff16-107">У ресурса **booleanColumn** нет свойств.</span><span class="sxs-lookup"><span data-stu-id="aff16-107">The **booleanColumn** resource contains no properties.</span></span>
+<span data-ttu-id="78832-107">У ресурса **booleanColumn** нет свойств.</span><span class="sxs-lookup"><span data-stu-id="78832-107">The **booleanColumn** resource contains no properties.</span></span>
 
 <!-- {
   "type": "#page.annotation",

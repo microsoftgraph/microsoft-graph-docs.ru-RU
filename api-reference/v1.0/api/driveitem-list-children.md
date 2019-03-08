@@ -1,35 +1,35 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972483"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481050"
 ---
-# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="b9ac7-102">Создание списка дочерних элементов ресурса driveItem</span><span class="sxs-lookup"><span data-stu-id="b9ac7-102">List children of a driveItem</span></span>
+# <a name="list-children-of-a-driveitem"></a><span data-ttu-id="80989-102">Создание списка дочерних элементов ресурса driveItem</span><span class="sxs-lookup"><span data-stu-id="80989-102">List children of a driveItem</span></span>
 
-<span data-ttu-id="b9ac7-103">Возвращает коллекцию [DriveItems](../resources/driveitem.md) в **дочерние** элементы ресурса DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-103">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
+<span data-ttu-id="80989-103">Возвращает коллекцию [DriveItems](../resources/driveitem.md) в **дочерние** элементы ресурса DriveItem.</span><span class="sxs-lookup"><span data-stu-id="80989-103">Return a collection of [DriveItems](../resources/driveitem.md) in the **children** relationship of a DriveItem.</span></span>
 
-<span data-ttu-id="b9ac7-104">Ресурсы DriveItem с аспектом **папки** или **пакета**, отличным от NULL, могут содержать один или несколько дочерних элементов DriveItem.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-104">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
+<span data-ttu-id="80989-104">Ресурсы DriveItem с аспектом **папки** или **пакета**, отличным от NULL, могут содержать один или несколько дочерних элементов DriveItem.</span><span class="sxs-lookup"><span data-stu-id="80989-104">DriveItems with a non-null **folder** or **package** facet can have one or more child DriveItems.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="b9ac7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b9ac7-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="80989-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="80989-105">Permissions</span></span>
 
-<span data-ttu-id="b9ac7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b9ac7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="80989-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="80989-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="b9ac7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b9ac7-108">Permission type</span></span>      | <span data-ttu-id="b9ac7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b9ac7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="80989-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="80989-108">Permission type</span></span>      | <span data-ttu-id="80989-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="80989-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="b9ac7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b9ac7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b9ac7-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9ac7-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b9ac7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b9ac7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b9ac7-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9ac7-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="b9ac7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b9ac7-114">Application</span></span> | <span data-ttu-id="b9ac7-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b9ac7-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="80989-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="80989-110">Delegated (work or school account)</span></span> | <span data-ttu-id="80989-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80989-111">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="80989-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="80989-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="80989-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80989-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="80989-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="80989-114">Application</span></span> | <span data-ttu-id="80989-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="80989-115">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="b9ac7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b9ac7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="80989-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="80989-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -41,21 +41,21 @@ GET /sites/{site-id}/drive/items/{item-id}/children
 GET /users/{user-id}/drive/items/{item-id}/children
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="b9ac7-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="b9ac7-117">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="80989-117">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="80989-117">Optional query parameters</span></span>
 
-<span data-ttu-id="b9ac7-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-118">This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
+<span data-ttu-id="80989-118">Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="80989-118">This method supports the `$expand`, `$select`, `$skipToken`, `$top` and `$orderby` [OData query parameters](/graph/query-parameters) to customize the response.</span></span>
 
-### <a name="optional-request-headers"></a><span data-ttu-id="b9ac7-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b9ac7-119">Optional request headers</span></span>
+### <a name="optional-request-headers"></a><span data-ttu-id="80989-119">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="80989-119">Optional request headers</span></span>
 
-| <span data-ttu-id="b9ac7-120">Имя</span><span class="sxs-lookup"><span data-stu-id="b9ac7-120">Name</span></span>     | <span data-ttu-id="b9ac7-121">Значение</span><span class="sxs-lookup"><span data-stu-id="b9ac7-121">Value</span></span> | <span data-ttu-id="b9ac7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="b9ac7-122">Description</span></span>                                                                                                                                              |
+| <span data-ttu-id="80989-120">Имя</span><span class="sxs-lookup"><span data-stu-id="80989-120">Name</span></span>     | <span data-ttu-id="80989-121">Значение</span><span class="sxs-lookup"><span data-stu-id="80989-121">Value</span></span> | <span data-ttu-id="80989-122">Описание</span><span class="sxs-lookup"><span data-stu-id="80989-122">Description</span></span>                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="b9ac7-123">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="b9ac7-123">_if-none-match_</span></span> | <span data-ttu-id="b9ac7-124">etag</span><span class="sxs-lookup"><span data-stu-id="b9ac7-124">etag</span></span>  | <span data-ttu-id="b9ac7-125">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
+| <span data-ttu-id="80989-123">_if-none-match_</span><span class="sxs-lookup"><span data-stu-id="80989-123">_if-none-match_</span></span> | <span data-ttu-id="80989-124">etag</span><span class="sxs-lookup"><span data-stu-id="80989-124">etag</span></span>  | <span data-ttu-id="80989-125">Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`.</span><span class="sxs-lookup"><span data-stu-id="80989-125">If this request header is included and the eTag (or cTag) provided matches the current tag on the file, an `HTTP 304 Not Modified` response is returned.</span></span> |
 
-## <a name="examples"></a><span data-ttu-id="b9ac7-126">Примеры</span><span class="sxs-lookup"><span data-stu-id="b9ac7-126">Examples</span></span>
+## <a name="examples"></a><span data-ttu-id="80989-126">Примеры</span><span class="sxs-lookup"><span data-stu-id="80989-126">Examples</span></span>
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a><span data-ttu-id="b9ac7-127">Создание списка дочерних элементов в корневой папке объекта drive текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="b9ac7-127">List children in the root of the current user's drive</span></span>
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a><span data-ttu-id="80989-127">Создание списка дочерних элементов в корневой папке диска текущего пользователя</span><span class="sxs-lookup"><span data-stu-id="80989-127">List children in the root of the current user's drive</span></span>
 
-<span data-ttu-id="b9ac7-128">Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-128">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
+<span data-ttu-id="80989-128">Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.</span><span class="sxs-lookup"><span data-stu-id="80989-128">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -64,9 +64,9 @@ GET /me/drive/root/children
 ```
 
 
-### <a name="list-children-of-a-driveitem-with-a-known-id"></a><span data-ttu-id="b9ac7-129">Создание списка дочерних элементов ресурса driveItem с использованием известного идентификатора</span><span class="sxs-lookup"><span data-stu-id="b9ac7-129">List children of a DriveItem with a known ID</span></span>
+### <a name="list-children-of-a-driveitem-with-a-known-id"></a><span data-ttu-id="80989-129">Создание списка дочерних элементов ресурса driveItem с использованием известного идентификатора</span><span class="sxs-lookup"><span data-stu-id="80989-129">List children of a DriveItem with a known ID</span></span>
 
-<span data-ttu-id="b9ac7-130">Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-130">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
+<span data-ttu-id="80989-130">Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.</span><span class="sxs-lookup"><span data-stu-id="80989-130">To retrieve files in the root of the drive, use the `root` relationship on the drive, then access the children relationship.</span></span>
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
@@ -74,7 +74,7 @@ GET /me/drive/root/children
 GET /drives/{drive-id}/items/{item-id}/children
 ```
 
-### <a name="list-children-of-a-driveitem-with-a-known-path"></a><span data-ttu-id="b9ac7-131">Создание списка дочерних элементов ресурса driveItem с использованием известного пути</span><span class="sxs-lookup"><span data-stu-id="b9ac7-131">List children of a DriveItem with a known path</span></span>
+### <a name="list-children-of-a-driveitem-with-a-known-path"></a><span data-ttu-id="80989-131">Создание списка дочерних элементов ресурса driveItem с использованием известного пути</span><span class="sxs-lookup"><span data-stu-id="80989-131">List children of a DriveItem with a known path</span></span>
 
 <!-- { "blockType": "request", "name": "list-children-from-path", "scopes": "files.read" } -->
 
@@ -82,10 +82,9 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a><span data-ttu-id="b9ac7-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="b9ac7-132">Response</span></span>
+## <a name="response"></a><span data-ttu-id="80989-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="80989-132">Response</span></span>
 
-<span data-ttu-id="b9ac7-133">При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-133">If successful, this method returns the list of items in the children collection of the target item.</span></span>
-<span data-ttu-id="b9ac7-134">Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="b9ac7-134">The children collection will be composed of [driveItem][item-resource] resources.</span></span>
+<span data-ttu-id="80989-p102">При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента. Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].</span><span class="sxs-lookup"><span data-stu-id="80989-p102">If successful, this method returns the list of items in the children collection of the target item. The children collection will be composed of [driveItem][item-resource] resources.</span></span>
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -107,13 +106,13 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="b9ac7-135">**Примечание.** Если коллекция превышает размер страницы по умолчанию (200 элементов), свойство **@odata.nextLink** возвращается в отклике, чтобы указать доступность дополнительных элементов и предоставить запрашиваемый URL-адрес для следующей страницы элементов.</span><span class="sxs-lookup"><span data-stu-id="b9ac7-135">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
+<span data-ttu-id="80989-135">**Примечание.** Если коллекция превышает размер страницы по умолчанию (200 элементов), свойство **@odata.nextLink** возвращается в отклике, чтобы указать доступность дополнительных элементов и предоставить запрашиваемый URL-адрес для следующей страницы элементов.</span><span class="sxs-lookup"><span data-stu-id="80989-135">**Note:** If a collection exceeds the default page size (200 items), the **@odata.nextLink** property is returned in the response to indicate more items are available and provide the request URL for the next page of items.</span></span>
 
-<span data-ttu-id="b9ac7-136">Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span><span class="sxs-lookup"><span data-stu-id="b9ac7-136">You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span></span>
+<span data-ttu-id="80989-136">Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span><span class="sxs-lookup"><span data-stu-id="80989-136">You can control the page size through [optional query string parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters)</span></span>
 
-### <a name="error-responses"></a><span data-ttu-id="b9ac7-137">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="b9ac7-137">Error responses</span></span>
+### <a name="error-responses"></a><span data-ttu-id="80989-137">Ответы с ошибками</span><span class="sxs-lookup"><span data-stu-id="80989-137">Error responses</span></span>
 
-<span data-ttu-id="b9ac7-138">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="b9ac7-138">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
+<span data-ttu-id="80989-138">Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].</span><span class="sxs-lookup"><span data-stu-id="80989-138">See [Error Responses][error-response] for more info about how errors are returned.</span></span>
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

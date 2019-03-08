@@ -1,30 +1,30 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: baseItem
+title: BaseItem
 localization_priority: Normal
-ms.openlocfilehash: 5bc3aab8460c1d0c6774d2f8afda13c4fc89f69d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8e01d219fcc67c583fddba8d9893ed94a23c409b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641563"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481974"
 ---
-# <a name="baseitem-resource-type"></a><span data-ttu-id="b0b67-102">Тип ресурса baseItem</span><span class="sxs-lookup"><span data-stu-id="b0b67-102">BaseItem resource type</span></span>
+# <a name="baseitem-resource-type"></a><span data-ttu-id="71eb1-102">Тип ресурса baseItem</span><span class="sxs-lookup"><span data-stu-id="71eb1-102">BaseItem resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="b0b67-p101">**baseItem** — это абстрактный ресурс, который содержит стандартный набор свойств, также используемых несколькими другими типами ресурсов. Ниже перечислены ресурсы, производные от ресурса **baseItem**.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p101">The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types. Resources that derive from **baseItem** include:</span></span>
+<span data-ttu-id="71eb1-p101">**baseItem** — это абстрактный ресурс, который содержит стандартный набор свойств, также используемых несколькими другими типами ресурсов. Ниже перечислены ресурсы, производные от ресурса **baseItem**.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p101">The **baseItem** resource is an abstract resource that contains a common set of properties shared among several other resources types. Resources that derive from **baseItem** include:</span></span>
 
-* [<span data-ttu-id="b0b67-105">drive</span><span class="sxs-lookup"><span data-stu-id="b0b67-105">drive</span></span>](drive.md)
-* [<span data-ttu-id="b0b67-106">driveItem</span><span class="sxs-lookup"><span data-stu-id="b0b67-106">driveItem</span></span>](driveitem.md)
-* [<span data-ttu-id="b0b67-107">site</span><span class="sxs-lookup"><span data-stu-id="b0b67-107">site</span></span>](site.md)
-* [<span data-ttu-id="b0b67-108">sharedDriveItem</span><span class="sxs-lookup"><span data-stu-id="b0b67-108">sharedDriveItem</span></span>](shareddriveitem.md)
+* [<span data-ttu-id="71eb1-105">drive</span><span class="sxs-lookup"><span data-stu-id="71eb1-105">drive</span></span>](drive.md)
+* [<span data-ttu-id="71eb1-106">driveItem</span><span class="sxs-lookup"><span data-stu-id="71eb1-106">driveItem</span></span>](driveitem.md)
+* [<span data-ttu-id="71eb1-107">site</span><span class="sxs-lookup"><span data-stu-id="71eb1-107">site</span></span>](site.md)
+* [<span data-ttu-id="71eb1-108">sharedDriveItem</span><span class="sxs-lookup"><span data-stu-id="71eb1-108">sharedDriveItem</span></span>](shareddriveitem.md)
 
-## <a name="json-representation"></a><span data-ttu-id="b0b67-109">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="b0b67-109">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="71eb1-109">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="71eb1-109">JSON representation</span></span>
 
-<span data-ttu-id="b0b67-110">Ниже показано представление ресурса **baseItem** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b0b67-110">Here is a JSON representation of a **baseItem** resource.</span></span>
+<span data-ttu-id="71eb1-110">Ниже показано представление ресурса **baseItem** в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="71eb1-110">Here is a JSON representation of a **baseItem** resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,26 +48,26 @@ ms.locfileid: "29641563"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="b0b67-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="b0b67-111">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="71eb1-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="71eb1-111">Properties</span></span>
 
-| <span data-ttu-id="b0b67-112">Свойство</span><span class="sxs-lookup"><span data-stu-id="b0b67-112">Property</span></span>             | <span data-ttu-id="b0b67-113">Тип</span><span class="sxs-lookup"><span data-stu-id="b0b67-113">Type</span></span>              | <span data-ttu-id="b0b67-114">Описание</span><span class="sxs-lookup"><span data-stu-id="b0b67-114">Description</span></span>                                                                            |
+| <span data-ttu-id="71eb1-112">Свойство</span><span class="sxs-lookup"><span data-stu-id="71eb1-112">Property</span></span>             | <span data-ttu-id="71eb1-113">Тип</span><span class="sxs-lookup"><span data-stu-id="71eb1-113">Type</span></span>              | <span data-ttu-id="71eb1-114">Описание</span><span class="sxs-lookup"><span data-stu-id="71eb1-114">Description</span></span>                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| <span data-ttu-id="b0b67-115">id</span><span class="sxs-lookup"><span data-stu-id="b0b67-115">id</span></span>                   | <span data-ttu-id="b0b67-116">string</span><span class="sxs-lookup"><span data-stu-id="b0b67-116">string</span></span>            | <span data-ttu-id="b0b67-p102">Уникальный идентификатор диска. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p102">The unique identifier of the drive. Read-only.</span></span>                                         |
-| <span data-ttu-id="b0b67-119">createdBy</span><span class="sxs-lookup"><span data-stu-id="b0b67-119">createdBy</span></span>            | <span data-ttu-id="b0b67-120">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="b0b67-120">[identitySet][]</span></span>   | <span data-ttu-id="b0b67-p103">Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p103">Identity of the user, device, or application which created the item. Read-only.</span></span>        |
-| <span data-ttu-id="b0b67-123">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="b0b67-123">createdDateTime</span></span>      | <span data-ttu-id="b0b67-124">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b0b67-124">dateTimeOffset</span></span>    | <span data-ttu-id="b0b67-p104">Дата и время создания элемента. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p104">Date and time of item creation. Read-only.</span></span>                                             |
-| <span data-ttu-id="b0b67-127">eTag</span><span class="sxs-lookup"><span data-stu-id="b0b67-127">eTag</span></span>                 | <span data-ttu-id="b0b67-128">string</span><span class="sxs-lookup"><span data-stu-id="b0b67-128">string</span></span>            | <span data-ttu-id="b0b67-p105">ETag для элемента. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p105">ETag for the item. Read-only.</span></span>                                                          |
-| <span data-ttu-id="b0b67-131">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="b0b67-131">lastModifiedBy</span></span>       | <span data-ttu-id="b0b67-132">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="b0b67-132">[identitySet][]</span></span>   | <span data-ttu-id="b0b67-p106">Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p106">Identity of the user, device, and application which last modified the item. Read-only.</span></span> |
-| <span data-ttu-id="b0b67-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b0b67-135">lastModifiedDateTime</span></span> | <span data-ttu-id="b0b67-136">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b0b67-136">dateTimeOffset</span></span>    | <span data-ttu-id="b0b67-p107">Дата и время последнего изменения элемента. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p107">Date and time the item was last modified. Read-only.</span></span>                                   |
-| <span data-ttu-id="b0b67-139">name</span><span class="sxs-lookup"><span data-stu-id="b0b67-139">name</span></span>                 | <span data-ttu-id="b0b67-140">string</span><span class="sxs-lookup"><span data-stu-id="b0b67-140">string</span></span>            | <span data-ttu-id="b0b67-p108">Имя элемента. Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p108">The name of the item. Read-write.</span></span>                                                      |
-| <span data-ttu-id="b0b67-143">parentReference</span><span class="sxs-lookup"><span data-stu-id="b0b67-143">parentReference</span></span>      | <span data-ttu-id="b0b67-144">[itemReference][]</span><span class="sxs-lookup"><span data-stu-id="b0b67-144">[itemReference][]</span></span> | <span data-ttu-id="b0b67-p109">Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p109">Parent information, if the item has a parent. Read-write.</span></span>                              |
-| <span data-ttu-id="b0b67-147">webUrl</span><span class="sxs-lookup"><span data-stu-id="b0b67-147">webUrl</span></span>               | <span data-ttu-id="b0b67-148">строка (url-адрес)</span><span class="sxs-lookup"><span data-stu-id="b0b67-148">string (url)</span></span>      | <span data-ttu-id="b0b67-p110">URL-адрес для отображения ресурса в браузере. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b0b67-p110">URL that displays the resource in the browser. Read-only.</span></span>                              |
+| <span data-ttu-id="71eb1-115">id</span><span class="sxs-lookup"><span data-stu-id="71eb1-115">id</span></span>                   | <span data-ttu-id="71eb1-116">string</span><span class="sxs-lookup"><span data-stu-id="71eb1-116">string</span></span>            | <span data-ttu-id="71eb1-p102">Уникальный идентификатор диска. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p102">The unique identifier of the drive. Read-only.</span></span>                                         |
+| <span data-ttu-id="71eb1-119">createdBy</span><span class="sxs-lookup"><span data-stu-id="71eb1-119">createdBy</span></span>            | <span data-ttu-id="71eb1-120">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="71eb1-120">[identitySet][]</span></span>   | <span data-ttu-id="71eb1-p103">Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p103">Identity of the user, device, or application which created the item. Read-only.</span></span>        |
+| <span data-ttu-id="71eb1-123">createdDateTime</span><span class="sxs-lookup"><span data-stu-id="71eb1-123">createdDateTime</span></span>      | <span data-ttu-id="71eb1-124">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="71eb1-124">dateTimeOffset</span></span>    | <span data-ttu-id="71eb1-p104">Дата и время создания элемента. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p104">Date and time of item creation. Read-only.</span></span>                                             |
+| <span data-ttu-id="71eb1-127">eTag</span><span class="sxs-lookup"><span data-stu-id="71eb1-127">eTag</span></span>                 | <span data-ttu-id="71eb1-128">string</span><span class="sxs-lookup"><span data-stu-id="71eb1-128">string</span></span>            | <span data-ttu-id="71eb1-p105">ETag для элемента. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p105">ETag for the item. Read-only.</span></span>                                                          |
+| <span data-ttu-id="71eb1-131">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="71eb1-131">lastModifiedBy</span></span>       | <span data-ttu-id="71eb1-132">[identitySet][]</span><span class="sxs-lookup"><span data-stu-id="71eb1-132">[identitySet][]</span></span>   | <span data-ttu-id="71eb1-p106">Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p106">Identity of the user, device, and application which last modified the item. Read-only.</span></span> |
+| <span data-ttu-id="71eb1-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="71eb1-135">lastModifiedDateTime</span></span> | <span data-ttu-id="71eb1-136">dateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="71eb1-136">dateTimeOffset</span></span>    | <span data-ttu-id="71eb1-p107">Дата и время последнего изменения элемента. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p107">Date and time the item was last modified. Read-only.</span></span>                                   |
+| <span data-ttu-id="71eb1-139">name</span><span class="sxs-lookup"><span data-stu-id="71eb1-139">name</span></span>                 | <span data-ttu-id="71eb1-140">строка</span><span class="sxs-lookup"><span data-stu-id="71eb1-140">string</span></span>            | <span data-ttu-id="71eb1-p108">Имя элемента. Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p108">The name of the item. Read-write.</span></span>                                                      |
+| <span data-ttu-id="71eb1-143">parentReference</span><span class="sxs-lookup"><span data-stu-id="71eb1-143">parentReference</span></span>      | <span data-ttu-id="71eb1-144">[itemReference][]</span><span class="sxs-lookup"><span data-stu-id="71eb1-144">[itemReference][]</span></span> | <span data-ttu-id="71eb1-p109">Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p109">Parent information, if the item has a parent. Read-write.</span></span>                              |
+| <span data-ttu-id="71eb1-147">webUrl</span><span class="sxs-lookup"><span data-stu-id="71eb1-147">webUrl</span></span>               | <span data-ttu-id="71eb1-148">строка (url-адрес)</span><span class="sxs-lookup"><span data-stu-id="71eb1-148">string (url)</span></span>      | <span data-ttu-id="71eb1-p110">URL-адрес для отображения ресурса в браузере. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="71eb1-p110">URL that displays the resource in the browser. Read-only.</span></span>                              |
 
 [identitySet]: identityset.md
 [itemReference]: itemreference.md
 
-## <a name="remarks"></a><span data-ttu-id="b0b67-153">Примечания</span><span class="sxs-lookup"><span data-stu-id="b0b67-153">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="71eb1-153">Примечания</span><span class="sxs-lookup"><span data-stu-id="71eb1-153">Remarks</span></span>
 
-<span data-ttu-id="b0b67-154">Тип `baseItem` не предназначен для непосредственного использования.</span><span class="sxs-lookup"><span data-stu-id="b0b67-154">The `baseItem` type is not expected to be used directly.</span></span>
+<span data-ttu-id="71eb1-154">Тип `baseItem` не предназначен для непосредственного использования.</span><span class="sxs-lookup"><span data-stu-id="71eb1-154">The `baseItem` type is not expected to be used directly.</span></span>
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
