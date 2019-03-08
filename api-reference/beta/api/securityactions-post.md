@@ -1,17 +1,17 @@
 ---
-title: Создание действия по обеспечению безопасности
-description: Создание нового объекта "действие безопасности". "
+title: Создание объекта securityAction
+description: Создайте новый объект securityAction. "
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: e1958f80219234fcae54220491629a921dd8bcfd
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: c8f9e98e57a351bd17776c77449f7d1ff8d8a897
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366891"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482016"
 ---
-# <a name="create-security-action"></a>Создание действия по обеспечению безопасности
+# <a name="create-securityaction"></a>Создание объекта securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366891"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Секуритяктионс. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | SecurityActions.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Секуритяктионс. ReadWrite. ALL |
+| Для приложений                            | SecurityActions.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,7 +39,7 @@ POST /security/securityActions
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {code} |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -81,7 +81,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

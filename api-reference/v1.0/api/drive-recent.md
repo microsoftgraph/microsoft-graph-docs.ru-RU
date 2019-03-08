@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка последних файлов
+title: Список последних файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 3548a708084da5b5c22bd31be1130630a577d7bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: be4f6632f86c62a8672bb94728dee9771aafc540
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922727"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482128"
 ---
-# <a name="list-recent-files"></a>Создание списка последних файлов
+# <a name="list-recent-files"></a>Список последних файлов
 
 Указание набора элементов, которые недавно использовались пользователем, вошедшим в свою учетную запись. Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.
 
@@ -38,7 +38,7 @@ ms.locfileid: "27922727"
 GET /me/drive/recent
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.
 
@@ -86,7 +86,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Некоторые элементы driveItem, возвращенные **последним** действием, будут содержать аспект **remoteItem**, который указывает, что это элементы с другого диска. Чтобы получить доступ к исходному объекту driveItem, следует отправить запрос, используя данные, указанные в **remoteItem** в следующем формате:
 

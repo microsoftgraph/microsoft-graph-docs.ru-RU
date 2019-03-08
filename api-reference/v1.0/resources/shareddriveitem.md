@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: sharedDriveItem
+title: SharedDriveItem
 localization_priority: Normal
-ms.openlocfilehash: 6e20df0cf50a7fc2648f5df97fcfe84e83992d99
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0d0c5a34d12fe467196c0616befc7376835b632c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826196"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481729"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -47,7 +47,7 @@ ms.locfileid: "27826196"
 
 | Свойство | Тип                          | Описание                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | Строка                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
+| id       | String                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
 | name     | Строка                        | Отображаемое имя общего элемента.                             |
 | owner    | [IdentitySet](identityset.md) | Сведения о владельце общего элемента, ставшего объектом ссылки. |
 
@@ -65,7 +65,7 @@ ms.locfileid: "27826196"
 | Имя связи | Тип                         | Описание
 | ------------------|:-----------------------------|:-----------------------------------
 | **items**         | Коллекция объектов [**driveItem**][driveItem] | Все объекты driveItem, содержащиеся в корневой папке, используемой для общего доступа. Перечисление этой коллекции не поддерживается.
-| **root**          | [**driveItem**][driveItem]   | Используется для доступа к базовым **driveItem**. Устаревшие--использование `driveItem` вместо этого.
+| **root**          | [**driveItem**][driveItem]   | Используется для доступа к базовому **driveItem**. Рекомендуется использовать `driveItem` вместо этого.
 
 [driveItem]: driveitem.md
 [list]: list.md

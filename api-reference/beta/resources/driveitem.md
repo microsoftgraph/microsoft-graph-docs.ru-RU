@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: fa172301e633a6f001133d44cb3332a5e133efe2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 9fa2f5cb9d40b0f8f12a5d1a6709eb03bf2975ba
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641381"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481491"
 ---
 # <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
@@ -118,8 +118,7 @@ ms.locfileid: "29641381"
 | name                 | String             | Имя элемента (имя и расширение файла). Чтение и запись.
 | package              | [package][]        | В случае наличия указывает, что этот элемент — пакет, а не папка или файл. Пакеты обрабатываются как файлы в одном контексте, и как папки — в другом. Только для чтения.
 | parentReference      | [itemReference][]  | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
-| Фотография
-                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
+| Фотография                | [photo][]          | Метаданные фотографии, если в роли элемента выступает фотография. Только для чтения.
 | publication          | [publicationFacet][] | Предоставляет сведения о состоянии элемента (опубликован или получен для изменения) в расположениях, поддерживающих такие действия. Это свойство не возвращается по умолчанию. Только для чтения. |
 | remoteItem           | [remoteItem][]     | Данные удаленного элемента, если элемент используется совместно на диске, но не на том, к которому получен доступ в данный момент. Только для чтения.
 | root                 | [root][]           | Ненулевое значение этого свойства указывает, что ресурс driveItem является самым верхним на диске.
@@ -134,18 +133,18 @@ ms.locfileid: "29641381"
 
 **Примечание.** Свойства тегов eTag и cTag по-разному действуют на контейнеры (папки). Значение cTag изменяется при изменении содержимого или метаданных любого потомка папки. Значение eTag изменяется только при изменении свойств папки, за исключением свойств, которые являются производными от потомков (например, свойство **childCount** или **lastModifiedDateTime**).
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-| Связь       | Тип                            | Описание
+| Отношение       | Тип                            | Описание
 |:-------------------|:--------------------------------|:--------------------------
 | activities         | Коллекция [itemActivity][]     | Список последних действий, выполненных с элементом.
-| analytics          | Ресурс [itemAnalytics][]      | Аналитика о Просмотр действий, выполняемых по этому элементу.
+| аналитическ          | Ресурс [itemAnalytics][]      | Аналитика сведений о действиях, которые были выполнены для этого элемента.
 | content            | Поток                          | Поток содержимого, если элемент представляет файл.
 | children           | Коллекция объектов driveItem            | Коллекция, содержащая объекты Item для непосредственных дочерних элементов данного ресурса Item. Дочерние элементы есть только у элементов, представляющих папки. Только для чтения. Допускается значение null.
-| listItem           | [listItem][]                    | Для дисков в SharePoint, элемент списка библиотеки связанного с ним документа. Только для чтения. Допускается значение null.
-| permissions        | Коллекция объектов [permission][]       | Набор разрешений для элемента. Только для чтения. Допускается значение null.
+| listItem           | [listItem][]                    | Для дисков в SharePoint это связанный элемент списка библиотеки документов. Только для чтения. Допускается значение null.
+| разрешения        | Коллекция объектов [permission][]       | Набор разрешений для элемента. Только для чтения. Допускается значение null.
 | thumbnails         | Коллекция объектов [thumbnailSet][]     | Коллекция, содержащая объекты [ThumbnailSet][], связанные с элементом. Дополнительные сведения см. в статье о [получении эскизов][]. Только для чтения. Допускается значение null.
-| версии           | [driveItemVersion][] коллекции | Список предыдущих версий элемента. Дополнительные сведения см.в [Получение предыдущих версий][]. Только для чтения. Допускается значение null.
+| Версия           | Коллекция [driveItemVersion][] | Список предыдущих версий элемента. Более подробную информацию можно узнать в статье [Извлечение предыдущих версий][]. Только для чтения. Допускается значение null.
 
 ## <a name="instance-attributes"></a>Атрибуты экземпляра
 
@@ -153,19 +152,19 @@ ms.locfileid: "29641381"
 
 | Имя свойства                     | Тип   | Описание
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.conflictBehavior | строка | Определяет поведение для разрешения конфликтов, возникающих при создании элементов. Вы можете использовать значения *fail*, *replace* или *rename*. Значение по умолчанию для метода PUT: *replace*. Элементы никогда не возвращаются с такой заметкой. Только для записи.
-| @microsoft.graph.downloadUrl      | строка | URL-адрес, который можно использовать для скачивания содержимого этого файла. Проверка подлинности не является обязательным условием, если используется такой URL-адрес. Только для чтения.
-| @microsoft.graph.sourceUrl        | строка | При создании запроса PUT такую заметку экземпляра можно использовать, чтобы указать службе скачать содержимое по URL-адресу и сохранить его как файл. Только для записи.
+| @microsoft.graph.conflictBehavior | string | Определяет поведение для разрешения конфликтов, возникающих при создании элементов. Вы можете использовать значения *fail*, *replace* или *rename*. Значение по умолчанию для метода PUT: *replace*. Элементы никогда не возвращаются с такой заметкой. Только для записи.
+| @microsoft. Graph. Довнлоадурл      | string | URL-адрес, который можно использовать для скачивания содержимого этого файла. Проверка подлинности не является обязательным условием, если используется такой URL-адрес. Только для чтения.
+| @microsoft. Graph. sourceUrl        | string | При создании запроса PUT такую заметку экземпляра можно использовать, чтобы указать службе скачать содержимое по URL-адресу и сохранить его как файл. Только для записи.
 
-**Примечание:** Значение @microsoft.graph.downloadUrl кратковременного URL-адрес и не может быть кэширования.
-URL-адрес будет доступно только на короткое время (1 час) перед их недействительными. Удаление файла разрешения для пользователя может не делают недействительными сразу же URL-адрес.
+**Примечание:** Значение @microsoft. Graph. Довнлоадурл — это кратковременный URL-адрес, который невозможно кэшировать.
+URL-адрес будет доступен только в течение короткого периода времени (1 час) до того, как он станет недействительным. Удаление разрешений на доступ к файлам для пользователя может не сразу сделать этот URL-адрес недействительным.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                   | Путь REST
 |:---------------------------------------------------------|:------------------
 | [Получение элемента](../api/driveitem-get.md)                      | `GET /drive/items/{item-id}`
-| [Список действий](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
+| [Действия со списками](../api/activities-list.md)             | `GET /drive/items/{item-id}/activities`
 | [Получение аналитики][]                                        | `GET /drive/items/{item-id}/analytics`
 | [Получение действий по интервалу][]                           | `GET /drive/items/{item-id}/getActivitiesByInterval`
 | [Список дочерних элементов](../api/driveitem-list-children.md)       | `GET /drive/items/{item-id}/children`
@@ -179,20 +178,20 @@ URL-адрес будет доступно только на короткое в
 | [Перемещение элемента](../api/driveitem-move.md)                    | `PATCH /drive/items/{item-id}`
 | [Копирование элемента](../api/driveitem-copy.md)                    | `POST /drive/items/{item-id}/copy`
 | [Поиск элементов](../api/driveitem-search.md)               | `GET /drive/items/{item-id}/search(q='text')`
-| [Перечисление изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
-| [Перечисление эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
+| [Получение списка изменений на диске](../api/driveitem-delta.md)     | `GET /drive/root/delta`
+| [Получение списка эскизов](../api/driveitem-list-thumbnails.md)   | `GET /drive/items/{item-id}/thumbnails`
 | [Создание ссылки совместного доступа](../api/driveitem-createlink.md)    | `POST /drive/items/{item-id}/createLink`
 | [Добавление разрешений](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Список разрешений](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Удаление разрешения](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
-| [Получение WebSocket канала][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
-| [Просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
+| [Получение канала WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
+| [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
 
-## <a name="remarks"></a>Заметки
+## <a name="remarks"></a>Замечания
 
 В OneDrive для бизнеса и библиотеках документов SharePoint свойство **cTag** не возвращается, если у ресурса **driveItem** есть аспект [folder][].
 
@@ -202,10 +201,10 @@ URL-адрес будет доступно только на короткое в
 [download-format]: ../api/driveitem-get-content-format.md
 [driveItemVersion]: driveitemversion.md;
 [file]: file.md
-[fileSystemInfo]: filesysteminfo.md
+[fileSystemInfo]: filesysteminfo.md;
 [folder]: folder.md
-[Получение предыдущих версий.]: ../api/driveitem-list-versions.md
-[получении эскизов]: ../api/driveitem-list-thumbnails.md
+[Извлечение предыдущих версий]: ../api/driveitem-list-versions.md
+[Извлечение эскизов]: ../api/driveitem-list-thumbnails.md
 [getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
@@ -227,7 +226,7 @@ URL-адрес будет доступно только на короткое в
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [user]: https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/users
-[publicationFacet]: publicationfacet.md
+[publicationFacet]: publicationfacet.md.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

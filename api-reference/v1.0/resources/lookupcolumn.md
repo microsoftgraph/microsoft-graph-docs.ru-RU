@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: lookupColumn
+title: LookupColumn
 localization_priority: Normal
-ms.openlocfilehash: 41e643019d842a365c333efa3c3a6861c51a7fc7
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: dbb2fe0f651a269d69b880d18748b27a5b6f457c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892102"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480357"
 ---
 # <a name="lookupcolumn-resource-type"></a>Тип ресурса lookupColumn
 
@@ -34,7 +34,7 @@ ms.locfileid: "27892102"
 
 | Имя свойства             | Тип    | Описание
 |:--------------------------|:--------|:---------------------------------------
-| **allowMultipleValues**   | boolean | Указывает, можно ли выбрать несколько значений в источнике.
+| **allowMultipleValues**   | логический | Указывает, можно ли выбрать несколько значений в источнике.
 | **allowUnlimitedLength**  | boolean | Указывает, может ли длина значений в столбце превышать стандартное ограничение в 255 символов.
 | **columnName**            | string  | Имя исходного столбца подстановки.
 | **listId**                | string  | Уникальный идентификатор исходного списка подстановки.

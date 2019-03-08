@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение эскизов файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 53401c261a69872d57084b845e391615ef768fcb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 68c1adf275a6a8720aab4df638f69c7162e301a6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525236"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481316"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -73,11 +73,10 @@ GET /me/drive/items/{item-id}/thumbnails
 
 Этот запрос возвращает массив доступных объектов **thumbnailSet** для элемента. У любого элемента в объекте drive может быть один или несколько эскизов (либо ни одного эскиза).
 
-**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**.
-Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
+**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**. Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -274,7 +273,7 @@ Content-Type: application/json
 
 Эскизы не поддерживаются в SharePoint Server 2016.
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

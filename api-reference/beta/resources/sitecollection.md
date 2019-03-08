@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 865fc21691eb37811300caaf675b123d1a544ac0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e9525882b08aaae5500ce23a4b54e95d0b0e0d65
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528132"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481806"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
 
@@ -20,7 +20,7 @@ ms.locfileid: "29528132"
 
 Если для свойства **siteCollection** ресурса [**site**](site.md) задано значение, отличное от NULL, этот сайт является корневым для семейства веб-сайтов.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -45,8 +45,8 @@ ms.locfileid: "29528132"
 | Имя свойства        | Тип     | Описание
 |:---------------------|:---------|:---------------------------------------------------
 | **hostname**         | строка   | Имя узла для семейства веб-сайтов. Только для чтения.
-| **dataLocationCode** | string   | Код географического региона для размещения семейства веб-сайтов. Только для чтения.
-| **root**             | [root][] | Если этот параметр указан, указывает, что это корневого семейства сайтов в SharePoint. Только для чтения.
+| **Даталокатионкоде** | string   | Код географического региона, в котором располагается это семейство веб-сайтов. Только для чтения.
+| **root**             | [root][] | Если задано, это указывает на то, что это корневое семейство веб-сайтов в SharePoint. Только для чтения.
 
 [root]: root.md
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 4771782804f5fc69db0cf25b6e3f30f176a68e6b
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: 68d2f6db9868ac262ed65c21f27f60ed6f3d1230
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760869"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482247"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 

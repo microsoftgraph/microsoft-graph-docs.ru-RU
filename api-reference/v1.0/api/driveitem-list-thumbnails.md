@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение эскизов файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 7543a8177c146779c645d848292b1600a80c3398
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: e58cdf153ea1fab98eac1a903e402d80228be5d4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990595"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482177"
 ---
 # <a name="list-thumbnails-for-a-driveitem"></a>Список эскизов для ресурса DriveItem
 
@@ -70,11 +70,10 @@ GET /me/drive/items/{item-id}/thumbnails
 
 Этот запрос возвращает массив доступных объектов **thumbnailSet** для элемента. У любого элемента в объекте drive может быть один или несколько эскизов (либо ни одного эскиза).
 
-**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**.
-Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
+**Примечание.** С помощью параметра _select_ строки запроса вы можете указывать размеры эскизов, возвращаемых в объекте **ThumbnailSet**. Например, запрос `/thumbnails?select=medium` получает только эскизы среднего размера.
 
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.thumbnailSet)" } -->
 
@@ -139,7 +138,7 @@ Content-Type: application/json
 GET /me/drive/items/{item-id}/thumbnails/{thumb-id}/{size}/content
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 В ответ служба выполняет перенаправление на URL-адрес эскиза.
 
@@ -210,7 +209,7 @@ Content-type: application/json
 
 В этой таблице определены возможные размеры эскизов. Хотя вы можете указать в запросе произвольный размер эскиза, определенные значения встречаются намного чаще и позволяют быстрее получить результат.
 
-| Имя           | Разрешение  | Пропорции | Описание                                                          |
+| Имя           | Решение  | Пропорции | Описание                                                          |
 |:---------------|:------------|:-------------|:---------------------------------------------------------------------|
 | `small`        | 96 для большей стороны  | Исходные     | Небольшой эскиз с сильным сжатием, обрезанный до квадрата. |
 | `medium`       | 176 для большей стороны | Исходные     | Обрезан до стандартного размера элемента для веб-представления OneDrive.         |
@@ -260,7 +259,7 @@ Content-Type: application/json
 **Примечание.** Размер возвращаемого эскиза в пикселях может не полностью совпадать с запрашиваемым, но его пропорции будут соответствовать запросу.
 В некоторых случаях возвращаются эскизы большего размера, если эскиз уже существует и легко масштабируется до запрашиваемого разрешения.
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 **Примечание.** В OneDrive для бизнеса и SharePoint:
 
@@ -271,7 +270,7 @@ Content-Type: application/json
 
 Эскизы не поддерживаются в SharePoint Server 2016.
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

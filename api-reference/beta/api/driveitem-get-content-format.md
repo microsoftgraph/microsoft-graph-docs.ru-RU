@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 8d65b7604c2ec17d4225c9cb887cbbfad2223009
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: c3761525d0acbd5613a71519d9ebd56ab8475f03
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526307"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481827"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
@@ -19,7 +19,7 @@ ms.locfileid: "29526307"
 С помощью этого API вы можете получить содержимое элемента в определенном формате.
 Не все файлы можно преобразовать в любые форматы.
 
-Чтобы загрузить элемента в исходном формате, обратитесь к разделу [загрузить содержимое элемента](driveitem-get-content.md).
+Чтобы скачать элемент в исходном формате, ознакомьтесь со статьей [Загрузка содержимого элемента](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -41,14 +41,14 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | строка | Укажите формат, в котором следует скачать содержимое элемента. |
 
 
-Для параметра **Формат** допустимы следующие значения:
+Для параметра **Format** допустимы следующие значения:
 
 | Значение | Описание                        | Поддерживаемые расширения источника
 |:------|:-----------------------------------|---------------------------------
-| командной   | Преобразует элемент в формате Командной  | здорово, fbx, obj, лист, stl, 3mf
-| html  | Преобразует элемент в формате HTML | EML, md, сообщение
-| JPG   | Преобразует элемент в формат JPG  | 3g 2, 3gp, 3gp2, 3gpp, 3mf, ai, arw, asf, avi, bas, bash, bat, bmp, c, cbl, cmd, правда, cpp, cr2, crw, cs, css, csv, по, dcm, dcm30, dic, dicm, dicom, dng, doc, docx, документа, eml, epi, eps, epsf, epsi, epub, erf, fbx, fppx, gif, командной, h, hcp , heic, heif, htm, html, ico, значок, java, jfif, jpeg, jpg, js, json, ключ, журнала, m2ts, m4a, m4v, наценки, md, mef, mov, фильмов, mp3, MP4 (en), mp4v, mrw, msg, mts, nef, nrw, номера, obj, odp, odt, ogg, orf, страницы, pano, pdf, pef, php, pict, pl, лист, png, pot , potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, ps, ps1, низкое, psd, корректировка необработанные, rb, rtf, rw1, rw2, показывать, эскиз, sql, sr2, stl, временных файлов Интернета, tiff, служб терминалов, txt, vb, webm, wma, wmv, xaml, xbm, xcf, xd, xml, xpm, yaml, yml
-| PDF   | Преобразует элемент в формат PDF.  | doc, docx, epub, eml, htm, html, md, сообщение, odp, программ ods odt, pps, ppsx, ppt, pptx, rtf, временных файлов Интернета, tiff, xls, xlsm, xlsx
+| ГЛБ   | Преобразует элемент в формат ГЛБ  | крутой, фбкс, obj, лист, STL, 3mf
+| html  | Преобразует элемент в формат HTML | EML, MD, MSG
+| JPEG   | Преобразует элемент в формат JPG  | 3G2, 3GP, 3GP2, 3GPP, 3mf, AI, АРВ, ASF, AVI, BAS, bash, bat, BMP, c, КБЛ, cmd, Cool, CPP, CR2, КРВ, CS, CSS, CSV, cur, DCM, dcm30, DIC, ДИКМ, DICOM, ДНГ, doc, DOCX, DWG, EML, EPI,, епсф, епси, GIF, епуб, h, HCP , хеик, хеиф, htm, HTML, ICO, Icon, Java, жфиф, JPEG, JPG, JS, JSON, Key, log, M2TS, M4A, M4V, Markdown, MD, MEF, MOV, Movie, MP3, MP4, MP4V, МРВ, MSG, MTS, неф, НРВ, Number,, ODP,, ОГГ, в формате PICT , POTM, POTX, PPS, ppsx, ппсксм, PPT, PPTM, PPTX, PS, PS1, PSB, PSD, копировать, RAW, RB, RTF, RW1, RW2, sh,, SR2, STL, TIF, TIFF,,, ВебМ, в формате WMA, WMV, XAML, ксбм,, WMV, XML, КСКФ, КСПМ,, ямл
+| ]   | Преобразует элемент в формат PDF  | doc, DOCX, епуб, EML, htm, HTML, MD, MSG, ODP, ODS, ODT, PPS, ppsx, PPT, PPTX, RTF, TIF, TIFF, XLS, xlsm, XLSX
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
@@ -79,7 +79,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-### <a name="error-responses"></a>Ошибки
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

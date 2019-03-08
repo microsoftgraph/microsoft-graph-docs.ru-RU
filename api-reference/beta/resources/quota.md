@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: quota
+title: Квота
 localization_priority: Normal
-ms.openlocfilehash: ce07852592317568254217c7e869f1da7f296a2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525488"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480308"
 ---
-# <a name="quota-resource-type"></a>Тип ресурса quota
+# <a name="quota-resource-type"></a>Тип ресурса Quota
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **quota** предоставляет сведения об ограничениях дискового пространства в ресурсе [Drive](drive.md).
+Ресурс **Quota** предоставляет сведения об ограничениях дискового пространства для ресурса [Drive](drive.md) .
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -49,9 +49,9 @@ ms.locfileid: "29525488"
 | remaining     | Int64  | Общий объем дискового пространства, оставшегося до достижения максимальной квоты, в байтах. Только для чтения. |
 | deleted       | Int64  | Общий объем дискового пространства, занятого файлами в корзине, в байтах. Только для чтения.      |
 | состояние         | string | Значение перечисления, указывающее состояние дискового пространства. Только для чтения. |
-| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квоты хранилища диска. Только в личных OneDrive.|
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Сведения о планах квот хранилища диска. Только в личном хранилище OneDrive.|
 
-### <a name="state-enumeration-values"></a>Значения состояний перечисления
+### <a name="state-enumeration-values"></a>Значения перечисления State
 
 | Значение      | Описание                                                                                                                                                                 |
 |:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

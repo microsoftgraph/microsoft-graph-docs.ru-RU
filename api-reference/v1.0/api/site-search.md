@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Поиск сайтов SharePoint по ключевому слову
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c73b1e5650d14e55842aba83069f27cb98e6a1ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 03e5a43c80ff5107f4e3aca514b1b411d71eb61d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917379"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482121"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
 Поиск [сайтов][], соответствующих указанным ключевым словам, в клиенте SharePoint.
 
-[sites]: ../resources/site.md
+[сайтов]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,7 +36,7 @@ ms.locfileid: "27917379"
 GET /sites?search={query}
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 

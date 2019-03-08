@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Получение сайта SharePoint по его пути
+title: Получение сайта SharePoint по пути
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: baf8b4a8d319450d7558bdcf73c34dc7845d0c57
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4ecef58fb6d4ae63c5976bfce10aed0c47b408d1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948809"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481736"
 ---
 # <a name="get-a-site-resource-by-path"></a>Получение ресурса site по его пути
 

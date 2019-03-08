@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Получение списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f796d7b02750034be6d2205a4a25f51c2911f5f2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 6de9e2c5d74d4ce17b3393ec8649783b9c92d1fa
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521658"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481624"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
@@ -18,7 +18,7 @@ ms.locfileid: "29521658"
 
 Возвращает метаданные для [списка][].
 
-[list]: ../resources/list.md
+[списка]: ../resources/list.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -37,7 +37,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
 GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 Не указывайте текст запроса для этого метода.
 

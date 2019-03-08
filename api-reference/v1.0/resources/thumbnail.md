@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: thumbnail
+title: Thumbnail
 localization_priority: Normal
-ms.openlocfilehash: 9c972842515de15b726d4496f915806ca5298313
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d11f9eead6faf885bee579c634267e038f8a8ee4
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27839615"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482261"
 ---
 # <a name="thumbnail-resource-type"></a>Тип ресурса thumbnail
 

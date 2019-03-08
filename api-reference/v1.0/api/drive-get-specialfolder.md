@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение специальных папок
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a24b73e8f10c15e5bf8ab32ee99e193f7bddc1c1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 55b976a32583546d7ed5993083af82dc0a55121f
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932135"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482380"
 ---
-# <a name="get-a-special-folder-by-name"></a>Получение специальной папки по ее имени
+# <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по ее имени
 
 Используйте специальную коллекцию для доступа к специальной папке по имени.
 
@@ -57,7 +57,7 @@ GET /me/drive/special/{name}
 
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand` и `$select` для настройки отклика.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Этот метод возвращает код отклика `200 OK` и объект [driveItem](../resources/driveitem.md) в теле отклика.
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 > **Примечание.** Элементы DriveItem с аспектом `specialFolder` указывают, что элемент представляет собой специальную папку, и доступ к нему можно получить через коллекцию `special`.
 

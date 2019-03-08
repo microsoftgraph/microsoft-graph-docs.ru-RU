@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Удаление записи из списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 13c6504753eb5987db8c0282ef2f59bca72a8d43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 83a14c237b59c66c24bab2705520c84f3f0e090e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530148"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481932"
 ---
 # <a name="delete-an-item-from-a-list"></a>Удаление элемента из списка
 
@@ -18,7 +18,7 @@ ms.locfileid: "29530148"
 
 Удаление элемента из [списка][].
 
-[list]: ../resources/list.md
+[списка]: ../resources/list.md
 
 ## <a name="permissions"></a>Разрешения
 

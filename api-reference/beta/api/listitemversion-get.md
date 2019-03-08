@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: 'Получение предыдущей версии элемента списка: API SharePoint'
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a23a8218b2be3ff36d719ee25e6fb0c960c5750f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 88f442178d3e703c4861e3a6fe5746a7f0c5e8b8
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526258"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482107"
 ---
 # <a name="get-a-listitemversion-resource-preview"></a>Получение ресурса ListItemVersion (ознакомительная версия)
 
@@ -39,7 +39,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.
 
@@ -56,7 +56,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Возвращается коллекция версий:
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка дочерних сайтов для сайта SharePoint
+title: ПереЧисление дочерних сайтов для сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 93cfbe89804425eb49f21e6c0d178004c28ef3ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f5037373ab914dabe33f11892f90a3bcfad77d5b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513314"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480112"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 
@@ -18,7 +18,7 @@ ms.locfileid: "29513314"
 
 Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].
 
-[site]: ../resources/site.md
+[сайта]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,7 +38,7 @@ ms.locfileid: "29513314"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

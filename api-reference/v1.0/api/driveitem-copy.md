@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Копирование файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: db953e3221c03cbf094f84e2e36eb1e5b2d7d24b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a4a20a98badcf96848f5317d5625dc1b05750223
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961990"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481393"
 ---
 # <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
 
@@ -38,7 +38,7 @@ POST /sites/{siteId}/drive/items/{itemId}/copy
 POST /users/{userId}/drive/items/{itemId}/copy
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -46,7 +46,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 | Имя            | Значение                                          | Описание                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Необязательный. Отсылает к родительскому элементу, в котором будет создана копия.                                         |
-| name            | строка                                         | Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.    |
+| name            | string                                         | Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.    |
 
 **Примечание.** Элемент _parentReference_ должен включать параметры `driveId` и `id` для целевой папки.
 
@@ -81,10 +81,9 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.
-Вы можете использовать эти сведения, чтобы [определить, когда копирование будет завершено](/graph/long-running-actions-overview).
+В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования. Вы можете использовать эту информацию, чтобы [определить время окончания копирования](/graph/long-running-actions-overview).
 
-### <a name="remarks"></a>Примечания
+### <a name="remarks"></a>Замечания
 
 Во многих случаях копирование выполняется асинхронно. Отклик API указывает, что операция копирования принята или отклонена, например из-за использования имени конечного файла.
 

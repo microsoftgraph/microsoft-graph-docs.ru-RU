@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: calculatedColumn
+title: CalculatedColumn
 localization_priority: Normal
-ms.openlocfilehash: 402ec948344931a0506026e4ad6abfaaa0ee5539
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 66fbc59fa9fe4880c023086c9bd334e04650bc73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876932"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481715"
 ---
 # <a name="calculatedcolumn-resource-type"></a>Тип ресурса calculatedColumn
 
@@ -32,7 +32,7 @@ ms.locfileid: "27876932"
 
 | Имя свойства  | Тип    | Описание
 |:---------------|:--------|:--------------------------------------------------
-| **format**     | string  | Для типов выходных данных `dateTime` это свойство указывает формат значения. Должно иметь тип `dateOnly` или `dateTime`.
+| **format**     | строка  | Для типов выходных данных `dateTime` это свойство указывает формат значения. Должно иметь тип `dateOnly` или `dateTime`.
 | **formula**    | string  | Формула, используемая для вычисления значения для данного столбца.
 | **outputType** | string  | Тип выходных данных, используемый для форматирования значений в этом столбце. Должно иметь один из типов `boolean`, `currency`, `dateTime`, `number` или `text`.
 

@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка содержимого папки
+title: ПереЧисление содержимого папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: a5d31d39b393725c325a75b6a8ba7e52516938b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513132"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482191"
 ---
-# <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
+# <a name="list-children-of-a-driveitem"></a>Список дочерних элементов ресурса driveItem.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -51,7 +51,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 | Имя заголовка     | Значение | Описание                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
+| _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом в файле, то будет возвращен отклик `HTTP 304 Not Modified`. |
 
 ## <a name="examples"></a>Примеры
 
@@ -84,10 +84,9 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента.
-Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
+При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента. Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 
@@ -113,7 +112,7 @@ Content-type: application/json
 
 Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

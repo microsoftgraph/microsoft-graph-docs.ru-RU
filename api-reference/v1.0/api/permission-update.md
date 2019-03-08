@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Изменение разрешений на общий доступ
 localization_priority: Normal
-ms.openlocfilehash: d972dc436b23fb62bb3df544584008eada0e99ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: b2c3c41c9feecf7b2874ffdcc468593b6eeb7444
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27825342"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482072"
 ---
-# <a name="update-sharing-permission"></a>Изменение разрешений на общий доступ
+# <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
 В этой статье рассказывается, как обновить свойства разрешения на общий доступ путем обновления ресурса разрешения.
 
@@ -49,14 +49,14 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.
 
-Предыдущие значения существующих свойств, не включенных в тело запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.
+Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств.
 Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство | Тип              | Описание                   |
 |:---------|:------------------|:------------------------------|
-| roles    | Коллекция String | Массив типов разрешений. |
+| roles    | Коллекция строк | Массив типов разрешений. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.
 
@@ -75,7 +75,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md), представляющий обновленное состояние разрешения, в теле отклика.
 
@@ -97,7 +97,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

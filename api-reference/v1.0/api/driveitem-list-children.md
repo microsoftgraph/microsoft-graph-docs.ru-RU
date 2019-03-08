@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание списка содержимого папки
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: dea7edaa84076693b7217476f9ab2797296a5aef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f6e76ca362d8c200ee73b327cdd11ad4b0137e73
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972483"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481050"
 ---
 # <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
@@ -43,7 +43,7 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
 
 ### <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
@@ -53,9 +53,9 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="examples"></a>Примеры
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке объекта drive текущего пользователя
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке диска текущего пользователя
 
-Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -66,7 +66,7 @@ GET /me/drive/root/children
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>Создание списка дочерних элементов ресурса driveItem с использованием известного идентификатора
 
-Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
@@ -82,10 +82,9 @@ GET /drives/{drive-id}/items/{item-id}/children
 GET /drives/{drive-id}/root:/{path-relative-to-root}:/children
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента.
-Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
+При успешном выполнении этот метод возвращает список элементов в коллекции дочерних элементов для целевого элемента. Коллекция дочерних элементов будет состоять из ресурсов [driveItem][item-resource].
 
 <!-- { "blockType": "response", 
        "@odata.type": "Collection(microsoft.graph.driveItem)", 

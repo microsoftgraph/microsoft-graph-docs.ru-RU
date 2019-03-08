@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
-ms.openlocfilehash: fc03a25a790786c6d25d160a8b7f867c726dfc1b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3e97a6396f39db690be8a1cfe235bb21592da4e0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860706"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481554"
 ---
 # <a name="uploadsession-resource"></a>Ресурс UploadSession
 
@@ -17,7 +17,7 @@ ms.locfileid: "27860706"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

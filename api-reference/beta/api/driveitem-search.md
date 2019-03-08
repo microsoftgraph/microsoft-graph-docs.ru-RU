@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Поиск файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ce18912b0fd116f13e2bd32d999dd852d6cc5182
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 201102a5332bc6e4ae6fe7d43a71238bb849b21e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528223"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481378"
 ---
-# <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
+# <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem в объекте drive
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -63,7 +63,7 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 GET /me/drive/root/search(q='{search-query}')
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Этот метод возвращает объект, который содержит коллекцию элементов [DriveItem](../resources/driveitem.md), соответствующих условиям поиска. Если не будет найдено ни одного элемента, то будет возвращена пустая коллекция.
 
@@ -106,7 +106,7 @@ Content-type: application/json
 GET /me/drive/search(q='{search-query}')
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Отклики при поиске на ресурсе **Drive** могут включать элементы, расположенные за пределами диска (элементы, к которым текущему пользователю предоставлен доступ). Эти элементы будут содержать аспект [**remoteItem**](../resources/remoteitem.md), который указывает, что они хранятся не на целевом диске. 
 
@@ -136,7 +136,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

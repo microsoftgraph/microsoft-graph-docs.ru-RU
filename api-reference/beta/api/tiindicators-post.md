@@ -4,12 +4,12 @@ description: Создание нового Тииндикатор.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 893af5a56c517cbd4c100cbaa767aa42c70d74e2
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366982"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481442"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Создание индикатора для логики операций с угрозами
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366982"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Среатиндикаторс. ReadWrite. Овнедби  |
+| Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Среатиндикаторс. ReadWrite. Овнедби |
+| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -39,11 +39,11 @@ POST /security/tiIndicators
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Авторизация | Bearer {code} |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в формате JSON, содержащем хотя бы один наблюдаемый объект.
+В тексте запроса добавьте представление объекта [тииндикатор](../resources/tiindicator.md) в формате JSON, содержащий хотя бы один наблюдаемый [адрес электронной почты](../resources/tiindicator.md#indicator-observables---email), [файл](../resources/tiindicator.md#indicator-observables---file)или [сеть](../resources/tiindicator.md#indicator-observables---network) .
 
 ## <a name="response"></a>Ответ
 
@@ -84,7 +84,7 @@ Content-type: application/json
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

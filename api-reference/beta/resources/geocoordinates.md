@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
-ms.openlocfilehash: 45df506820ee242b53630c9d44ed390216bae141
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 221037578e055e5bb57987058a190bc3026b3e0c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525075"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482359"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса GeoCoordinates
 
@@ -19,7 +19,7 @@ ms.locfileid: "29525075"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

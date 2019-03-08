@@ -1,17 +1,17 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: IdentitySet
+title: Identity
 localization_priority: Normal
-ms.openlocfilehash: 63178fc9add3d097b7e8aaf0c5c2a697a91eaeed
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27807023"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482198"
 ---
-# <a name="identityset-resource-type"></a>Тип ресурса identitySet
+# <a name="identityset-resource-type"></a>Тип ресурса Identity
 
 Ресурс **IdentitySet** представляет собой коллекцию ресурсов [identity](identity.md) с ключами. Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
 
@@ -49,15 +49,14 @@ ms.locfileid: "27807023"
 
 | Свойство    | Тип                    | Описание                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
-| application | [Identity](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
-| Устройство
-      | [Identity](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
-| phone       | [identity](identity.md) | Необязательное. Номер телефона, связанного с этого действия. |
+| application | [Идентификация](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
+| Устройство      | [Идентификация](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
+| phone       | [identity](identity.md) | Необязательно. Номер телефона, связанный с этим действием. |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.         |
 
-## <a name="remarks"></a>Примечания 
+## <a name="remarks"></a>Заметки 
 
-В разделе [вызова](call.md) использования ресурсов **IdentitySet** .
+Ознакомьтесь со статьей [вызов](call.md) для использования ресурсов **удостоверений** .
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

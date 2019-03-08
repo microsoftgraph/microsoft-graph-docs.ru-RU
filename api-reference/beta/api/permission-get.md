@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение разрешений
 localization_priority: Normal
-ms.openlocfilehash: 1af1cdaa434a95ed77da360334c88dd653d8747a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 05faf2bdeccc5f1ed1dadc484cf690473902d941
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520027"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482296"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -64,7 +64,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{item-id}/permissions/{perm-id}
 ```
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md) для указанного идентификатора. 
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 Ресурс [Permission](../resources/permission.md) использует _аспекты_ для предоставления сведений о типе разрешения, представленного ресурсом.
 
-Разрешения с аспектом [**link**](../resources/sharinglink.md) представляют ссылки для предоставления общего доступа, созданные для элемента. Такие ссылки содержат уникальный токен, предоставляющий доступ к элементу для любого пользователя, воспользовавшегося ссылкой.
+Разрешения с аспектом [**link**](../resources/sharinglink.md) представляют ссылки для совместного доступа, созданные в элементе. Ссылки для совместного доступа содержат уникальный токен, предоставляющий доступ к элементу для любого пользователя, у которого есть такая ссылка.
 
 Разрешения с аспектом [**invitation**](../resources/sharinginvitation.md) представляют разрешения, добавленные при приглашении определенных пользователей или групп поработать с файлом.
 

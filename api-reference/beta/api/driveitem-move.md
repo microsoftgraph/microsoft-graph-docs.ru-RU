@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Перемещение файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: b88e170a9211da3df200955a98f078624eacbe34
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 18bd8493babed354576c5b8066b3bab5de537e65
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526048"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482037"
 ---
 # <a name="move-a-driveitem-to-a-new-folder"></a>Перемещение ресурса DriveItem в новую папку
 
@@ -18,8 +18,8 @@ ms.locfileid: "29526048"
 
 Чтобы переместить ресурс DriveItem в новый родительский элемент, вашему приложению требуется обновить элемент **parentReference** ресурса DriveItem, который необходимо переместить.
 
-Это особый случай метода [Update](driveitem-update.md).
-Ваше приложение может совместить процедуры перемещения элемента в новый контейнер и обновления других свойств элемента в одном запросе.
+Это особый случай, касающийся метода [Обновление](driveitem-update.md).
+Приложение может объединять процедуры перемещения элемента в новый контейнер и обновления других свойств элемента в один запрос.
 
 С помощью этого запроса не удастся переместить элементы между объектами [Drive](../resources/drive.md).
 
@@ -79,7 +79,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 В примере ниже показан отклик для этого запроса на перемещение.
 
@@ -101,7 +101,7 @@ Content-type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Ответы с ошибками
+## <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

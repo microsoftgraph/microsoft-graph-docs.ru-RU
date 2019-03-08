@@ -1,24 +1,24 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Загрузите предыдущей версии
+title: Загрузка предыдущей версии
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 57e280a1ecc371505ceda91596fdeb2d6be1abea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 13ff0148980d7331e713334d9f40df5ade33a259
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528020"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481484"
 ---
 # <a name="download-contents-of-a-driveitemversion-resource-preview"></a>Скачивание содержимого ресурса DriveItemVersion (ознакомительная версия)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В этой статье рассказывается, как получить содержимое определенной версии ресурса [DriveItem](../resources/driveitem.md). 
+Получение содержимого определенной версии [driveItem](../resources/driveitem.md). 
 
->**Примечание:** Получение содержимого текущей версии не поддерживается. Используйте [driveItem контента конечной точки](driveitem-get-content.md).
+>**Примечание:** Не поддерживается извлечение контента текущей версии. Вместо этого используйте [конечную точку содержимого driveItem](driveitem-get-content.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Возвращает отклик `302 Found`, который выполняет перенаправление на URL-адрес, прошедший предварительную проверку подлинности и предназначенный для скачивания байтов файла.
 
@@ -63,7 +63,7 @@ URL-адреса загрузки, прошедшие предварительн
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Возвращает перенаправление на расположение, из которого можно скачать содержимое версии.
 
@@ -79,7 +79,7 @@ Location: https://onedrive.com/34FF49D6...
 
 OneDrive не сохраняет полные метаданные для предыдущих версий файла.
 
-Если ваше приложение получает список доступных версий файла, [driveItemVersion](../resources/driveitemversion.md) ресурсов возвращается, предоставляющий доступные сведения об определенной версии.
+Когда приложение извлекает список доступных версий для файла, возвращается ресурс [driveItemVersion](../resources/driveitemversion.md) , который предоставляет доступ к сведениям о конкретной версии.
 
 <!--
 {

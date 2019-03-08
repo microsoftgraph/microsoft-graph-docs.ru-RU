@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Создание папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 2ccbedabb6fc7e6ec179e8ab5c97dd07959252c0
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.openlocfilehash: a81d8fe2c7511b4fe971ccdf114883088bea65b3
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760848"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482324"
 ---
 # <a name="create-a-new-folder-in-a-drive"></a>Создание папки на диске
 
@@ -52,8 +52,8 @@ POST /users/{user-id}/drive/items/{parent-item-id}/children
 
 ### <a name="request"></a>Запрос
 
-Ниже показан пример запроса на создание папки в корневой папке OneDrive пользователя, вошедшего в систему.
-Используемое свойство `@microsoft.graph.conflictBehavior` указывает, что если уже существует элемент с таким именем, служба должна выбрать новое имя папки при создании папки.
+Ниже показан пример запроса на создание папки в корневой папке OneDrive пользователя, выполнившего вход в систему.
+Используемое свойство `@microsoft.graph.conflictBehavior` указывает, что если при создании папки оказалось, что уже существует элемент с таким именем, служба должна выбрать новое имя папки.
 
 <!-- { "blockType": "request", "name": "create-folder", "scopes": "files.readwrite" } -->
 
@@ -70,7 +70,7 @@ Content-Type: application/json
 
 ### <a name="response"></a>Ответ
 
-Если успешно завершена, этот метод возвращает только что созданная папка как [DriveItem] [ item-resource] ресурсов.
+При успешном выполнении этот метод возвращает заново созданную папку в виде ресурса [DriveItem][item-resource].
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -108,9 +108,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-response"></a>Ошибка
+## <a name="error-response"></a>Ответ с ошибкой
 
-Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
+Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ответы с ошибкой][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md

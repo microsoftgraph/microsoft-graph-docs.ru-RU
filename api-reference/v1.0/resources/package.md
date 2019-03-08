@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Package
+title: Пакет
 localization_priority: Normal
-ms.openlocfilehash: 6f518058c6a68716f482bd9b6a870457de3d71a3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: c64dfce910456ef9b9415e3332c099d7814a71f2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866418"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482205"
 ---
 # <a name="package-resource-type"></a>Тип ресурса Package
 
@@ -32,9 +32,9 @@ ms.locfileid: "27866418"
 
 | Имя свойства | Тип   | Описание                                                                                                                                                                      |
 |:--------------|:-------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| type          | строка | String, указывающее тип пакета. Во время `oneNote` является единственным в настоящее время определенное значение, должно привести другие типы пакетов возвращаться и соответствующим образом их обработки. |
+| type          | string | Строка, указывающая тип пакета. Несмотря на то что `oneNote`— единственное значение, определенное на данный момент, следует ожидать, что могут быть возвращены пакеты других типов, и иметь возможность обработать их соответствующим образом. |
 
-## <a name="remarks"></a>Примечания 
+## <a name="remarks"></a>Заметки 
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 

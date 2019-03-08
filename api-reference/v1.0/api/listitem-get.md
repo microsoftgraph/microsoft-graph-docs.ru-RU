@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Получение записи из списка SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 1a1117717a0afc0d715da2297d69b0453ef2025e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: e9d747e5405a5aeaf97dfdf7e9a97f6236164a5a
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27950545"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480644"
 ---
 # <a name="get-an-item-in-a-list"></a>Получение элемента списка
 
 Возвращает метаданные [элемента][] в [списке][].
 
-[list]: ../resources/list.md
+[списке]: ../resources/list.md
 [элемента]: ../resources/listitem.md
 
 ## <a name="permissions"></a>Разрешения
@@ -47,7 +47,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}?expand=fields
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 

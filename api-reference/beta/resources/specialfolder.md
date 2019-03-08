@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SpecialFolder
 localization_priority: Normal
-ms.openlocfilehash: 5b187b1b4ff7183739ed734256a2d4c9e9fa9af6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ff1bee4ce71bf76c94951d298f80db74609710e6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512187"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481547"
 ---
 # <a name="specialfolder-resource-type"></a>Тип ресурса SpecialFolder
 

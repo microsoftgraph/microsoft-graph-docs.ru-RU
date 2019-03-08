@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: File
 localization_priority: Normal
-ms.openlocfilehash: 5812cffd4f7efbcd368cd576df0e16f4aedb7f1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 219398ea62b825797479bef0b7a2bf52d014c8c0
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528419"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480412"
 ---
 # <a name="file-resource-type"></a>Тип ресурса file
 
@@ -17,9 +17,9 @@ ms.locfileid: "29528419"
 
 Ресурс **File** — это единая структура, объединяющая элементы данных, связанные с файлами.
 
-Если у ресурса DriveItem есть ненулевой аспект file, то этот ресурс представляет файл. Помимо других свойств, у файлов есть связь content, которая содержит байтовый поток файла.
+Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **file**, то этот ресурс представляет файл. Помимо других свойств, у файлов есть связь **content**, которая содержит байтовый поток файла.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -43,7 +43,7 @@ ms.locfileid: "29528419"
 | hashes   | [HashesType](hashes.md) | Хэши двоичного содержимого файла (если они доступны). Только для чтения.                                                                                    |
 | mimeType | string                  | Тип MIME файла. Он определяется логикой на сервере и может не совпадать со значением, предоставленным при отправке файла. Только для чтения. |
 
-## <a name="remarks"></a>Заметки 
+## <a name="remarks"></a>Замечания 
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 

@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Копирование файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 378f47d380e6d144791d3551a398d1dcd0886295
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cdb22395cfde6820eb5450f39bd1e3408a4f82b2
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517556"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481904"
 ---
 # <a name="copy-a-driveitem"></a>Копирование ресурса DriveItem
 
@@ -48,7 +48,7 @@ POST /users/{userId}/drive/items/{itemId}/copy
 | Имя            | Значение                                          | Описание                                                                                                 |
 |:----------------|:-----------------------------------------------|:------------------------------------------------------------------------------------------------------------|
 | parentReference | [ItemReference](../resources/itemreference.md) | Необязательный. Отсылает к родительскому элементу, в котором будет создана копия.                                         |
-| name            | строка                                         | Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.    |
+| name            | string                                         | Необязательный. Новое имя копии. Если оно не предоставлено, будет использовано такое же имя, как в оригинале.    |
 
 **Примечание.** Элемент _parentReference_ должен включать параметры `driveId` и `id` для целевой папки.
 
@@ -72,7 +72,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Возвращает сведения о том, как [отслеживать ход](/graph/long-running-actions-overview) копирования после принятия запроса.
 
@@ -83,8 +83,7 @@ HTTP/1.1 202 Accepted
 Location: https://contoso.sharepoint.com/_api/v2.0/monitor/4A3407B5-88FC-4504-8B21-0AABD3412717
 ```
 
-В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования.
-Вы можете использовать эти сведения, чтобы [определить, когда копирование будет завершено](/graph/long-running-actions-overview).
+В значении заголовка `Location` имеется URL-адрес службы, которая возвращает сведения о текущем состоянии операции копирования. Вы можете использовать эту информацию, чтобы [определить время окончания копирования](/graph/long-running-actions-overview).
 
 ### <a name="remarks"></a>Замечания
 

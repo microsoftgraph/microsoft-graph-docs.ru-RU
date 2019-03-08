@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: listInfo
+title: ListInfo
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 459e51af92e01d10edd2ec1d86f3c288b125e1d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 9be9d0dc133c9b62a89504a79ce9da4836337cfe
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957468"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482408"
 ---
 # <a name="listinfo-resource"></a>Ресурс listInfo
 
@@ -18,7 +18,7 @@ ms.locfileid: "27957468"
 
 [списке]: list.md
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

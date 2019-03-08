@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: List
+title: Перечисление
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: c1cb3b6e74bd95929c392f4789ab916ae0e5569e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: aafae9e9214f98ade129d46b63f0e7f930ac4a9c
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527663"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481519"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -33,7 +33,7 @@ ms.locfileid: "29527663"
 | [Перечисление элементов списка][]  | GET /lists/{list-id}/items
 | [Обновление элемента списка][]      | PATCH /lists/{list-id}/items/{item-id}
 | [Удаление элемента списка][]      | DELETE /lists/{list-id}/items/{item-id}
-| [Создание элемента в списке][]      | POST /lists/{list-id}
+| [Создание элемента списка][]      | POST /lists/{list-id}
 | [Получение последних действий][] | GET /lists/{list-id}/activities
 
 [Получение списка]: ../api/list-get.md
@@ -88,7 +88,7 @@ ms.locfileid: "29527663"
 |:-----------------|:---------------------------------|:---------------------------
 | **columns**      | Коллекция ([columnDefinition][]) | Коллекция определений полей для данного списка.
 | **contentTypes** | Коллекция ([contentType][])      | Коллекция типов контента в данном списке.
-| **displayName**  | строка                           | Отображаемый заголовок списка.
+| **displayName**  | string                           | Отображаемый заголовок списка.
 | **list**         | [listInfo][]                     | Предоставляет дополнительные сведения о списке.
 | **system**       | [systemFacet][]                  | Если это свойство задано, оно указывает, что данным списком управляет система. Только для чтения.
 
@@ -97,7 +97,7 @@ ms.locfileid: "29527663"
 | Имя свойства            | Тип             | Описание
 |:-------------------------|:-----------------|:-------------------------------
 | **id**                   | string           | Уникальный идентификатор элемента. Только для чтения.
-| **name**                 | строка           | Имя элемента.
+| **name**                 | string           | Имя элемента.
 | **createdBy**            | [identitySet][]  | Удостоверение создателя данного элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset   | Дата и время создания элемента. Только для чтения.
 | **description**          | строка           | Текст с описанием элемента.

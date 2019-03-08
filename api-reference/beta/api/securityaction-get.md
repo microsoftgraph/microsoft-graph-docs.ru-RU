@@ -1,17 +1,17 @@
 ---
-title: Получение действия по обеспечению безопасности
+title: Получение объекта securityAction
 description: Получение свойств и связей объекта securityAction.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 336a8a73d0ec161f26dd3fcbd36caf86097108f5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 7bcad2d3249b0ac7c5bd08d3d61742e7dc5166d6
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366919"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482254"
 ---
-# <a name="get-security-action"></a>Получение действия по обеспечению безопасности
+# <a name="get-securityaction"></a>Получение объекта securityAction
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -43,13 +43,13 @@ GET /security/securityActions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация | Bearer {code} |
+| Authorization | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [securityAction](../resources/securityaction.md) в тексте отклика.
 
@@ -69,7 +69,7 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 
 ### <a name="response"></a>Ответ
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

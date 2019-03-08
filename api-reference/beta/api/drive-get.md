@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Получение доступа к ресурсу Drive
+title: Получение ресурса Drive
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58f0a7f302aa41f286d949a4cbae56d6ff1cd62f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0bea809fc719d90dadbde9282f64ac43df4b91e9
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518172"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481288"
 ---
 # <a name="get-drive"></a>Получение ресурса Drive
 
@@ -62,7 +62,7 @@ GET /users/{idOrUserPrincipalName}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _idOrUserPrincipalName_     | строка | Обязательный. Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive. |
+| _idOrUserPrincipalName_     | string | Обязательное. Идентификатор объекта пользователя, которому принадлежит хранилище OneDrive. |
 
 ## <a name="get-the-document-library-associated-with-a-group"></a>Получение библиотеки документов, сопоставленной с группой
 
@@ -80,7 +80,7 @@ GET /groups/{groupId}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _groupId_      | строка | Обязательный. Идентификатор группы, которой принадлежит библиотека документов. |
+| _groupId_      | string | Обязательное. Идентификатор группы, которой принадлежит библиотека документов. |
 
 ## <a name="get-the-document-library-for-a-site"></a>Получение библиотеки документов для сайта
 
@@ -96,7 +96,7 @@ GET /sites/{siteId}/drive
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _siteId_       | строка | Обязательный. Идентификатор для сайта, который содержит библиотеку документов. |
+| _siteId_       | string | Обязательное. Идентификатор для сайта, который содержит библиотеку документов. |
 
 ## <a name="get-a-drive-by-id"></a>Получение объекта drive с использованием его идентификатора
 
@@ -114,7 +114,7 @@ GET /drives/{driveId}
 
 | Имя параметра | Значение  | Описание                                       |
 |:---------------|:-------|:--------------------------------------------------|
-| _driveId_      | строка | Обязательный. Идентификатор запрошенного диска. |
+| _driveId_      | string | Обязательный. Идентификатор запрошенного диска. |
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 

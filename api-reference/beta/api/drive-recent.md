@@ -1,18 +1,18 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Создание списка последних файлов
+title: Список последних файлов
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 600db7e3f654ebaf0f8168c9fe74b82c58abf087
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: a32e9c3cf0e1d8265092e206b1083337dab9aa58
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510941"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480588"
 ---
-# <a name="list-recent-files"></a>Создание списка последних файлов
+# <a name="list-recent-files"></a>Список последних файлов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "29510941"
 GET /me/drive/recent
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 Этот метод возвращает коллекцию ресурсов [DriveItem](../resources/driveitem.md) для элементов, к которым владелец объекта drive недавно получал доступ.
 

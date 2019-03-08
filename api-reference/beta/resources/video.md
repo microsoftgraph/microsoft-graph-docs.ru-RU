@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Video
+title: Видео
 localization_priority: Normal
-ms.openlocfilehash: db560abc31daecc6064820ef6ef958808ddbc297
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508547"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481596"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -17,11 +17,11 @@ ms.locfileid: "29508547"
 
 Ресурс **Video** — это единая структура, объединяющая элементы данных, связанные с видео.
 
-Если у ресурса DriveItem есть ненулевой аспект video, то этот ресурс представляет видеофайл. Свойства ресурса Video заполняются путем извлечения метаданных из такого файла.
+Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **video**, то этот ресурс представляет видеофайл. Свойства ресурса **Video** заполняются путем извлечения метаданных из такого файла.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",

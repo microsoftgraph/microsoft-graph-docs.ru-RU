@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Восстановление предыдущей версии элемента списка SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: ef3b5848b6a6f60bf0515f914e87383e0a6f66bc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 20cf0460aa679fc40a4bb11d0887bc4946ddcd74
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511557"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482086"
 ---
 # <a name="restore-a-previous-version-of-a-listitem"></a>Восстановление предыдущей версии ресурса ListItem
 
@@ -37,7 +37,7 @@ POST /sites/{site-id}/items/{item-id}/versions/{version-id}/restoreVersion
 POST /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}/restoreVersion
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 Тело запроса не требуется.
 

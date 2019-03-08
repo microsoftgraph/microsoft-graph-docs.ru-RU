@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Отправка небольших файлов
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 30899a94783018580227e0d753169bf391ac081d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 59036213350b3efa5c22fd277328176999bbbc11
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991547"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481512"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
 
@@ -56,13 +56,13 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 Содержимое текста запроса должно представлять собой двоичный поток файла, который необходимо отправить.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) в теле отклика для вновь созданного или обновленного файла.
+При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) для вновь созданного или обновленного файла в теле ответа.
 
 ## <a name="example-upload-a-new-file"></a>Пример (отправка нового файла)
 
-В этом примере показано, как отправить строку "The contents of the file goes here" (Здесь начинается содержимое файла.) в файл FileB.txt в папке FolderA в объекте drive пользователя, вошедшего в систему.
+В этом примере показано, как отправить строку "The contents of the file goes here." (Здесь начинается содержимое файла.) в файл FileB.txt в папке FolderA на диске пользователя, выполнившего вход в систему.
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -73,9 +73,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле отклика для созданного файла.
+При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -93,7 +93,7 @@ Content-Type: application/json
 
 ## <a name="example-updating-an-existing-file"></a>Пример (обновление существующего файла)
 
-В этом примере показано, как заменить содержимое файла известным идентификатором.
+В этом примере показано, как заменить содержимое файла с известным идентификатором.
 
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
@@ -104,7 +104,7 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.
 

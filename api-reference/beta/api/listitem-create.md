@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 58e008ffc4685348aa8d69f44cbfcf59f4fbf715
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1af6162fd12c9c3dfc470b97e42a25d0cad8ebea
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528818"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482415"
 ---
 # <a name="create-a-new-item-in-a-list"></a>Создание элемента в списке
 
@@ -90,7 +90,7 @@ Content-type: application/json
 
 **Примечание.** Ответ усечен для наглядности. При фактическом вызове будут возвращены свойства, используемые по умолчанию.
 
-[list]: ../resources/list.md
+[списке]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
 <!--

@@ -1,15 +1,15 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение разрешений
 localization_priority: Normal
-ms.openlocfilehash: 4d893724af2c695597f0d81d5ceb0649c30ad7b0
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: 3c0d8c9a00a098e83ec0ff7bd4282546fe7d94c1
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27864136"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481351"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -63,7 +63,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 GET /me/drive/items/{item-id}/permissions/{perm-id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает ресурс [Permission](../resources/permission.md) для указанного идентификатора. 
 
@@ -85,15 +85,15 @@ Content-type: application/json
 }
 ```
 
-## <a name="remarks"></a>Примечания
+## <a name="remarks"></a>Замечания
 
 Ресурс [Permission](../resources/permission.md) использует _аспекты_ для предоставления сведений о типе разрешения, представленного ресурсом.
 
-Разрешения с аспектом [**link**](../resources/sharinglink.md) представляют ссылки для предоставления общего доступа, созданные для элемента. Такие ссылки содержат уникальный токен, предоставляющий доступ к элементу для любого пользователя, воспользовавшегося ссылкой.
+Разрешения с аспектом [**link**](../resources/sharinglink.md) представляют ссылки для совместного доступа, созданные в элементе. Ссылки для совместного доступа содержат уникальный токен, предоставляющий доступ к элементу для любого пользователя, у которого есть такая ссылка.
 
 Разрешения с аспектом [**invitation**](../resources/sharinginvitation.md) представляют разрешения, добавленные при приглашении определенных пользователей или групп поработать с файлом.
 
-### <a name="error-responses"></a>Ответы с ошибками
+### <a name="error-responses"></a>Отклики с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
