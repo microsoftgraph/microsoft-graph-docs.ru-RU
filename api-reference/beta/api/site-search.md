@@ -1,36 +1,37 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Поиск сайтов SharePoint по ключевому слову
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 16dae8ceab07c2902d1bdd17fa2b9dc045ffd021
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ee4aa139508e6a523ea1858c6b0598a5b8aaf9b5
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524186"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480756"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="7ebb8-102">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="7ebb8-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="663ec-102">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="663ec-102">Search for sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="7ebb8-103">Поиск [сайтов][], соответствующих указанным ключевым словам, в клиенте SharePoint.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
+<span data-ttu-id="663ec-103">Поиск [сайтов][], соответствующих указанным ключевым словам, в клиенте SharePoint.</span><span class="sxs-lookup"><span data-stu-id="663ec-103">Search across a SharePoint tenant for [sites][] that match provided keywords.</span></span>
 
+[сайтов]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="7ebb8-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="7ebb8-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="663ec-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="663ec-105">Permissions</span></span>
 
-<span data-ttu-id="7ebb8-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="663ec-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="663ec-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7ebb8-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ebb8-108">Permission type</span></span>                        | <span data-ttu-id="7ebb8-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="663ec-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="663ec-108">Permission type</span></span>                        | <span data-ttu-id="663ec-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="663ec-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="7ebb8-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="7ebb8-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ebb8-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="7ebb8-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="7ebb8-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-113">Not supported.</span></span>
-|<span data-ttu-id="7ebb8-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ebb8-114">Application</span></span>                            | <span data-ttu-id="7ebb8-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ebb8-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="663ec-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="663ec-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="663ec-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="663ec-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="663ec-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="663ec-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="663ec-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="663ec-113">Not supported.</span></span>
+|<span data-ttu-id="663ec-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="663ec-114">Application</span></span>                            | <span data-ttu-id="663ec-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="663ec-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="7ebb8-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ebb8-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="663ec-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="663ec-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -38,7 +39,7 @@ ms.locfileid: "29524186"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="7ebb8-117">Ответ</span><span class="sxs-lookup"><span data-stu-id="7ebb8-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="663ec-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="663ec-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
