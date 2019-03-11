@@ -4,12 +4,12 @@ description: " > **Важно!** API бета-версии (/beta) в Microsoft 
 localization_priority: Priority
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: a50a7a29f377bbb76c6dee8d8e58a07d258156b0
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.openlocfilehash: 86f911b787c68062ce2fad2e5e858bac2acc338a
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364572"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481435"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -32,17 +32,17 @@ Microsoft Graph Security API включает указанные ниже клю
 
 При использовании Microsoft Graph Security API доступны оповещения от указанных ниже поставщиков. Поддержка оповещений GET, PATCH (обновления доступны при использовании Microsoft Graph Security API, но могут быть недоступны в интерфейсе управления поставщика) и подписки (с помощью веб-перехватчиков) представлена в таблице ниже.
 
-| Поставщик безопасности | Оповещение GET| Оповещение PATCH| Подписка на оповещения|
+| Поставщик безопасности | <p align="center">Оповещение GET</p>| <p align="center">Оповещение PATCH</p>| <p align="center">Подписка на оповещения</p>|
 |:------------------|:---------|:-----------|:------------------|
-|[Центр безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| &#x2713; | &#x2713; | &#x2713; |
-|[Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | &#x2713; | &#x2713; | &#x2713; |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | &#x2713; | &#x2713; | &#x2713; |
-|[Advanced Threat Protection в Защитнике Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| &#x2713; | &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Расширенная защита от угроз Azure](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|Office 365 </br> <li> [По умолчанию](https://docs.microsoft.com/ru-RU/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/ru-RU/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li> | &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| &#x2713; | &#x2713; | &#x2713; |
-|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
-|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| &#x2713; | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) | [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) |
+|[Центр безопасности Azure](https://docs.microsoft.com/azure/security-center/security-center-alerts-type)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Защита идентификации Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/playbook) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts) | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Advanced Threat Protection в Защитнике Windows](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/attack-simulations-windows-defender-advanced-threat-protection)| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Расширенная защита от угроз Azure](https://docs.microsoft.com/azure-advanced-threat-protection/understanding-security-alerts#security-alert-categories)| <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|Office 365 <ul><li> [По умолчанию](https://docs.microsoft.com/ru-RU/office365/securitycompliance/alert-policies#default-alert-policies)</li> <li>[Cloud App Security](https://docs.microsoft.com/ru-RU/office365/securitycompliance/anomaly-detection-policies-in-ocas)</li></ul> | <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Azure Information Protection](https://docs.microsoft.com/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-a-security-provider-for-microsoft-graph-securityhow-does-this-work-and-what-alerts-will-i-receive) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> | <p align="center">&#x2713;</p> |
+|[Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility) **(предварительная версия)**| <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
+|[Palo Alto Networks](https://docs.paloaltonetworks.com/pan-os/9-0/pan-os-web-interface-help/monitor/monitor-logs/log-types.html)| <p align="center">&#x2713;</p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> | <p align="center"> [Уведомление о проблеме](https://github.com/microsoftgraph/security-api-solutions/issues/new) </p> |
 > **Примечание.** К экосистеме безопасности Microsoft Graph постоянно подключаются новые поставщики. Чтобы запросить новых поставщиков или дополнительную поддержку у существующих поставщиков, [уведомите о проблеме в репозитории GitHub для Microsoft Graph Security](https://github.com/microsoftgraph/security-api-solutions/issues/new).
 
 ## <a name="threat-indicators-preview"></a>Индикаторы угроз (предварительная версия)
@@ -78,7 +78,7 @@ Microsoft Graph Security API включает указанные ниже клю
 |Перечисление действий по обеспечению безопасности| [Перечисление действий по обеспечению безопасности](../api/securityactions-list.md) (предварительная версия)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Создание действий по обеспечению безопасности|[Создание действий по обеспечению безопасности](../api/securityactions-post.md) (предварительная версия)|[https://graph.microsoft.com/beta/security/securityActions](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Отмена действия по обеспечению безопасности|[Отмена действий по обеспечению безопасности](../api/securityaction-cancelsecurityaction.md) (предварительная версия)| [https://graph.microsoft.com/beta/security/securityActions/{id}/cancelSecurityAction](https://developer.microsoft.com/graph/graph-explorer?request=security/securityActions/{id}/cancelSecurityAction&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
-|Получение объекта tiIndicator|[Получение объекта tiIndicator](../api/tiindicator-get.md) (предварительная версия)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Получение индикатора аналитики угроз|[Получение объекта tiIndicator](../api/tiindicator-get.md) (предварительная версия)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Перечисление индикаторов аналитики угроз | [Перечисление объектов tiIndicator](../api/tiindicators-list.md) (предварительная версия) | [https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Создание индикатора аналитики угроз|[Создание объекта tiIndicator](../api/tiindicators-post.md) (предварительная версия)|[https://graph.microsoft.com/beta/security/tiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Отправка индикаторов аналитики угроз|[Отправка объектов tiIndicator](../api/tiindicator-submittiindicators.md) (предварительная версия)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |

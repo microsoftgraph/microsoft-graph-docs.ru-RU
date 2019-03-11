@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Скачивание файла
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 963d9cb2b80fa51f6b4b09d1316505672d876965
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 836ffe051077e41c7fcf9cb0404d8bb016948177
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927963"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481610"
 ---
 # <a name="download-the-contents-of-a-driveitem"></a>Скачивание содержимого элемента DriveItem
 
@@ -61,7 +61,7 @@ GET /me/drive/items/{item-id}/content
 Возвращает отклик `302 Found`, перенаправляя к URL-адресу загрузки файла, прошедшему предварительную проверку подлинности. Это такой же URL-адрес, доступный с помощью свойства `@microsoft.graph.downloadUrl` в ресурсе DriveItem.
 
 Чтобы скачать содержимое файла, приложению необходимо следовать заголовку `Location` в ответе.
-Многие библиотеки клиента HTTP автоматически выполним 302 в режиме одобрения администратором и загрузки файла сразу же Пуск.
+Многие библиотеки клиентов HTTP будут автоматически следовать перенаправлению 302 и немедленно начинать загрузку файла.
 
 URL-адреса загрузки, прошедшие предварительную проверку подлинности, действительны только на протяжении короткого периода времени (несколько минут) и не требуют заголовка `Authorization` для загрузки.
 

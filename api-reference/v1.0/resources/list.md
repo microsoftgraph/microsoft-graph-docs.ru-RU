@@ -1,16 +1,16 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 6bfd46e0822045869074cb0d78f14e3f0be0c994
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 7946346c5b872cad80eb3b8dc50109862ac15b8e
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984390"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481407"
 ---
 # <a name="list-resource"></a>Ресурс List
 
@@ -97,15 +97,15 @@ ms.locfileid: "27984390"
 
 | Имя свойства            | Тип              | Описание
 |:-------------------------|:------------------|:------------------------------
-| **id**                   | строка            | Уникальный идентификатор элемента. Только для чтения.
+| **id**                   | string            | Уникальный идентификатор элемента. Только для чтения.
 | **name**                 | строка            | Имя элемента.
 | **createdBy**            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | **createdDateTime**      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
 | **description**          | строка            | Текст с описанием элемента.
-| **eTag**;                 | string            | ETag для элемента. Только для чтения.                                                          |
-| **lastModifiedBy**       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
+| **eTag**                 | string            | ETag для элемента. Только для чтения.                                                          |
+| **lastModifiedBy**;       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | **lastModifiedDateTime** | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
-| **parentReference**;      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
+| **parentReference**      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.
 | **sharepointIds**        | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 | **webUrl**               | строка (url-адрес)      | URL-адрес для отображения элемента в браузере. Только для чтения.
 

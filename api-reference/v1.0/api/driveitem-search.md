@@ -1,21 +1,21 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Поиск файлов
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: bf387d7c0b3ef3b161610bd8ba1d44685dd45764
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 8211d9565640dd1cc3376a2803135352dfa88e3b
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976907"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481022"
 ---
 # <a name="search-for-a-driveitems-within-a-drive"></a>Поиск элементов DriveItem на диске
 
 Поиск элементов, соответствующих запросу, в иерархии элементов.
-Вы можете выполнить поиск в иерархии папок, в объекте drive или среди файлов, к которым предоставлен доступ текущему пользователю.
+Вы можете выполнить поиск в иерархии папок, на всем диске или среди файлов, к которым предоставлен доступ текущему пользователю.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,9 +41,9 @@ GET /users/{user-id}/drive/root/search(q='{search-text}')
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 | Параметр | Тип  | Описание                                                                                                                          |
 |:-----|:-------|:-------------------------------------------------------------------------------------------------------------------------------------|

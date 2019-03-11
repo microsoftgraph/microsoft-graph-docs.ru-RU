@@ -4,12 +4,12 @@ description: Данные безопасности, доступные чере�
 author: preetikr
 localization_priority: Priority
 ms.prod: security
-ms.openlocfilehash: e20a9abd036414eefc750fd667dbf7c1004b65bb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 4b46df393b84c72efb40bb88d8cdeb7aca44449d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947087"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30480427"
 ---
 # <a name="authorization-and-the-microsoft-graph-security-api"></a>Авторизация и API безопасности Microsoft Graph
 
@@ -78,7 +78,15 @@ API безопасности Microsoft Graph поддерживает два т�
 3. На странице регистрации нового приложения выберите **Добавить платформу** > **Интернет**. В поле **URL-адрес перенаправления** введите URL-адрес перенаправления.
 4. В разделе **Разрешения Microsoft Graph** в подразделе **Делегированные разрешения** нажмите кнопку **Добавить**. В диалоговом окне выберите необходимые разрешения. Список разрешений см. в статье [Разрешения безопасности](permissions-reference.md#security-permissions).
 
-    >API безопасности Microsoft Graph требуется область SecurityEvents.Read.All для запросов GET и область SecurityEvents.ReadWrite.All для запросов PATCH/POST.
+    >**Примечание.** Microsoft Graph Security API требуется область *.Read.All для запросов GET и область *.ReadWrite.All для запросов PATCH/POST/DELETE.
+
+    |Разрешение | Объект | Поддерживаемые запросы |
+    |:----------|:-------|:-------------------|
+    |SecurityActions.Read.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (предварительная версия) | GET |
+    |SecurityActions.ReadWrite.All| &bull; [securityActions](/graph/api/resources/securityaction?view=graph-rest-beta) (предварительная версия) | GET, POST |
+    |SecurityEvents.Read.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (предварительная версия)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (предварительная версия) | GET |
+    |SecurityEvents.ReadWrite.All | &bull; [alerts](/graph/api/resources/alert?view=graph-rest-1.0)</br> &bull; [secureScores](/graph/api/resources/securescores?view=graph-rest-beta) (предварительная версия)</br> &bull; [secureScoreControlProfiles](/graph/api/resources/securescorecontrolprofiles?view=graph-rest-beta) (предварительная версия) | GET, POST, PATCH |
+    |ThreatIndicators.ReadWrite.OwnedBy | &bull; [tiIndicator](/graph/api/resources/tiindicator?view=graph-rest-beta) (предварительная версия) | GET, POST, PATCH, DELETE|
 
 5. Нажмите кнопку **Сохранить**.
 

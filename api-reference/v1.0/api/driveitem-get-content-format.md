@@ -1,23 +1,23 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Преобразование в другие форматы
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: d33e03df0abcc9417c0fe5bc241e654185bd4313
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: b63e22aa280640362a70efcc4fa0d50673aab63d
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978552"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30481855"
 ---
 # <a name="download-a-file-in-another-format"></a>Скачивание файла в другом формате
 
 С помощью этого API вы можете получить содержимое элемента в определенном формате.
 Не все файлы можно преобразовать в любые форматы.
 
-Чтобы загрузить элемента в исходном формате, обратитесь к разделу [загрузить содержимое элемента](driveitem-get-content.md).
+Сведения о том, как скачать элемент в его исходном формате, см. в статье о [скачивании содержимого элемента](driveitem-get-content.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
@@ -39,13 +39,13 @@ GET /drive/root:/{path and filename}:/content?format={format}
 | _format_  | строка | Укажите формат, в котором следует скачать содержимое элемента. |
 
 
-### <a name="format-options"></a>Параметры формата
+### <a name="format-options"></a>Параметры форматирования
 
-Для параметра **Формат** допустимы следующие значения:
+Для параметра **format** допустимы указанные ниже значения.
 
 | Значение формата | Описание                        | Поддерживаемые расширения источника
 |:-------------|:-----------------------------------|----------------------------
-| pdf          | Преобразует элемент в формат PDF. | CSV, DOC, DOCX, ODP, ODS, ODT, POT, POTM, POTX, PPS, PPSX, PPSXM, PPT, PPTM, PPTX, RTF, XLS, XLSX
+| pdf          | Преобразует элемент в формат PDF. | csv, doc, docx, odp, ods, odt, pot, potm, potx, pps, ppsx, ppsxm, ppt, pptm, pptx, rtf, xls, xlsx
 
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
@@ -76,7 +76,7 @@ HTTP/1.1 302 Found
 Location: https://b0mpua-by3301.files.1drv.com/y23vmagahszhxzlcvhasdhasghasodfi
 ```
 
-### <a name="error-responses"></a>Ошибки
+### <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
