@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса registryKeyState
-description: Содержит сведения об изменениях ключа реестра, связанные с оповещение и процесс, изменений в реестр.
+title: Тип ресурса Регистрикэйстате
+description: Содержит сведения об изменениях в реестре, связанных с предупреждением, и процесс, который изменил разделы реестра.
 localization_priority: Normal
-ms.openlocfilehash: 688c690083e24dc6c8ee7229498910befd0fdf3e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
+ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804678"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29994428"
 ---
-# <a name="registrykeystate-resource-type"></a>Тип ресурса registryKeyState
+# <a name="registrykeystate-resource-type"></a>Тип ресурса Регистрикэйстате
 
-Содержит сведения об изменениях ключа реестра, связанные с оповещение и процесс, изменений в реестр.
+Содержит сведения об изменениях в реестре, связанных с предупреждением, и процесс, который изменил разделы реестра.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|куст|registryHive|[Куст реестра Windows](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) : <ul><li>HKEY_CURRENT_CONFIG</li> <li>HKEY_CURRENT_USER</li> <li>HKEY_LOCAL_MACHINE\SAM</li> <li>HKEY_LOCAL_MACHINE\Security</li> <li>HKEY_LOCAL_MACHINE\Software</li> <li>HKEY_LOCAL_MACHINE\System</li> <li>HKEY_USERS\\. По умолчанию.</li></ul> Возможные значения: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSamSoftware`, `localMachineSystem`, `usersDefault`.|
-|key|Строка|Текущий (то есть измененные) системного реестра (исключает КУСТ).|
-|oldKey|Строка|Предыдущий (то есть перед изменением) раздел реестра (исключает КУСТ).|
-|oldValueData|Строка|Предыдущий (то есть до изменения) данных значение ключа реестра (содержимое).|
-|oldValueName|Строка|Предыдущий (то есть перед изменением) имя раздела реестра.|
-|операция|registryOperation|Операция, изменено имя раздела реестра и/или значение. Возможные значения: `unknown`, `create`, `modify`, `delete`.|
-|processId|Int32|Обработать Идентификатором процесса изменения раздела реестра (процесс отображения сведений в коллекции оповещения «процессы»).|
-|valueData|Строка|Текущий (то есть измененные) значение ключа реестра (содержимое).|
-|Имени|Строка|Текущее имя значение ключа реестра (то есть измененные)|
-|Тип значения|registryValueType|[Тип значения ключа реестра](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>REG_DWORD_LITTLE_ENDIAN</li> <li>REG_DWORD_BIG_ENDIAN</li><li>REG_EXPAND_SZ</li> <li>REG_LINK</li> <li>REG_MULTI_SZ</li> <li>REG_NONE</li> <li>REG_QWORD ИНТЕРФЕЙСА</li> <li>REG_QWORD_LITTLE_ENDIAN</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
+|семейства|registryHive|[Куст реестра Windows](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-hives) : <ul><li>ХКЭЙ_КУРРЕНТ_КОНФИГ</li> <li>HKEY_CURRENT_USER</li> <li>ХКЭЙ_ЛОКАЛ_МАЧИНЕ\САМ</li> <li>Хкэй_локал_мачине\секурити</li> <li>Хкэй_локал_мачине\софтваре</li> <li>Хкэй_локал_мачине\систем</li> <li>HKEY_USERS\\. Умолчани.</li></ul> Возможные значения: `unknown`, `currentConfig`, `currentUser`, `localMachineSam`, `localMachineSecurity`, `localMachineSoftware`, `localMachineSystem`, `usersDefault`.|
+|ключа|String|Текущий (то есть измененный) раздел реестра (исключая КУСТ).|
+|Олдкэй|String|Предыдущий (то есть перед изменением) раздел реестра (исключает КУСТ).|
+|Олдвалуедата|String|Previous (то есть перед изменением) значение раздела реестра (Content).|
+|Олдвалуенаме|String|Previous (то есть перед изменением) имя значения раздела реестра.|
+|восстановление|registryOperation|Операция, в которой изменилось имя и/или значение раздела реестра. Возможные значения: `unknown`, `create`, `modify`, `delete`.|
+|processId|Int32|Идентификатор процесса (PID), который изменил раздел реестра (сведения о процессе будут отображаться в коллекции предупреждений "процессы").|
+|Валуедата|String|Текущие (то есть измененные) данные значения раздела реестра (содержимое).|
+|valueName|String|Current (то есть изменено) имя значения раздела реестра|
+|Типом|registryValueType|[Тип значения раздела реестра](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>РЕГ_ДВОРД_ЛИТТЛЕ_ЕНДИАН</li> <li>РЕГ_ДВОРД_БИГ_ЕНДИАН</li><li>REG_EXPAND_SZ</li> <li>РЕГ_ЛИНК</li> <li>REG_MULTI_SZ</li> <li>РЕГ_НОНЕ</li> <li>РЕГ_КВОРД</li> <li>РЕГ_КВОРД_ЛИТТЛЕ_ЕНДИАН</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
