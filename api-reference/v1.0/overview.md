@@ -2,12 +2,12 @@
 title: Справочные материалы по REST API Microsoft Graph v1.0
 description: Добро пожаловать в справочник REST API Microsoft Graph для конечной точки версии 1.0.
 localization_priority: Priority
-ms.openlocfilehash: 6e0dde56aae7857e9ae042f89ba5eb6b01737efa
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.openlocfilehash: bdebe1415ea020f575b0cbf35712b30d7830df05
+ms.sourcegitcommit: 1089e82254068556b0d0c7be45e3270e46c961e6
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27829077"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30546011"
 ---
 # <a name="microsoft-graph-rest-api-v10-reference"></a>Справочные материалы по REST API Microsoft Graph v1.0
 
@@ -52,5 +52,3 @@ ms.locfileid: "27829077"
 Есть ли дополнительные API или функции, которые вы бы хотели увидеть в Microsoft Graph? Опубликуйте запросы новых функций на [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
 
 Хотите оставить отзыв по существующим API Microsoft Graph? Свяжитесь с нами в [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).
-
-Вопросы или справки в коде с помощью корпорацию Майкрософт

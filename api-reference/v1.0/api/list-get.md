@@ -1,22 +1,22 @@
 ---
-author: rgregg
-ms.author: rgregg
+author: JeremyKelley
+ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Получение списка SharePoint
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 63b6fc4d2324c44c20e25fabe7ce0a89ce503ae3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 9e667055b47568d712349c6725bd4ebc70aa63fd
+ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916119"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30482352"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
 
 Возвращает метаданные для [списка][].
 
-[list]: ../resources/list.md
+[списка]: ../resources/list.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -79,7 +79,7 @@ Content-type: application/json
 GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
