@@ -1,39 +1,40 @@
 ---
 title: Тип ресурса iPv6Range
-description: Описание ресурсов iPv6Range из Microsoft Graph API для Intune, которая поддерживает несколько рабочих процессов.
+description: Определение диапазона IPv6.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 35b0401d3557a6afc84a27a2f47d35e17a3229a9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: 6b54782b1851ea800b548f02b34f60da3a3236a3
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29396352"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571538"
 ---
-# <a name="ipv6range-resource-type"></a><span data-ttu-id="d2ca5-103">Тип ресурса iPv6Range</span><span class="sxs-lookup"><span data-stu-id="d2ca5-103">iPv6Range resource type</span></span>
+# <a name="ipv6range-resource-type"></a><span data-ttu-id="b474e-103">Тип ресурса iPv6Range</span><span class="sxs-lookup"><span data-stu-id="b474e-103">iPv6Range resource type</span></span>
 
-> <span data-ttu-id="d2ca5-104">**Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены.</span><span class="sxs-lookup"><span data-stu-id="d2ca5-104">**Important:** APIs under the / beta version in Microsoft Graph are in preview and are subject to change.</span></span> <span data-ttu-id="d2ca5-105">Использование этих API в производственных приложениях не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d2ca5-105">Use of these APIs in production applications is not supported.</span></span>
+> <span data-ttu-id="b474e-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b474e-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="d2ca5-106">**Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.</span><span class="sxs-lookup"><span data-stu-id="d2ca5-106">**Note:** Using the Microsoft Graph APIs to configure Intune controls and policies still requires that the Intune service is [correctly licensed](https://go.microsoft.com/fwlink/?linkid=839381) by the customer.</span></span>
+> <span data-ttu-id="b474e-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b474e-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="d2ca5-107">Диапазон IPv6-адресов</span><span class="sxs-lookup"><span data-stu-id="d2ca5-107">IP V6 range</span></span>
+<span data-ttu-id="b474e-106">Определение диапазона IPv6.</span><span class="sxs-lookup"><span data-stu-id="b474e-106">IPv6 Range definition.</span></span>
 
-<span data-ttu-id="d2ca5-108">Наследуется от ресурса [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="d2ca5-108">Inherits from [ipRange](../resources/intune-shared-iprange.md)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d2ca5-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="d2ca5-109">Properties</span></span>
-|<span data-ttu-id="d2ca5-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="d2ca5-110">Property</span></span>|<span data-ttu-id="d2ca5-111">Тип</span><span class="sxs-lookup"><span data-stu-id="d2ca5-111">Type</span></span>|<span data-ttu-id="d2ca5-112">Описание</span><span class="sxs-lookup"><span data-stu-id="d2ca5-112">Description</span></span>|
+<span data-ttu-id="b474e-107">Наследуется от ресурса [ipRange](../resources/intune-shared-iprange.md)</span><span class="sxs-lookup"><span data-stu-id="b474e-107">Inherits from [ipRange](../resources/intune-shared-iprange.md)</span></span>
+
+## <a name="properties"></a><span data-ttu-id="b474e-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="b474e-108">Properties</span></span>
+|<span data-ttu-id="b474e-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="b474e-109">Property</span></span>|<span data-ttu-id="b474e-110">Тип</span><span class="sxs-lookup"><span data-stu-id="b474e-110">Type</span></span>|<span data-ttu-id="b474e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b474e-111">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="d2ca5-113">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="d2ca5-113">lowerAddress</span></span>|<span data-ttu-id="d2ca5-114">String</span><span class="sxs-lookup"><span data-stu-id="d2ca5-114">String</span></span>|<span data-ttu-id="d2ca5-115">Нижний IP-адрес</span><span class="sxs-lookup"><span data-stu-id="d2ca5-115">Lower IP Address</span></span>|
-|<span data-ttu-id="d2ca5-116">upperAddress</span><span class="sxs-lookup"><span data-stu-id="d2ca5-116">upperAddress</span></span>|<span data-ttu-id="d2ca5-117">String</span><span class="sxs-lookup"><span data-stu-id="d2ca5-117">String</span></span>|<span data-ttu-id="d2ca5-118">Верхний IP-адрес</span><span class="sxs-lookup"><span data-stu-id="d2ca5-118">Upper IP Address</span></span>|
+|<span data-ttu-id="b474e-112">lowerAddress</span><span class="sxs-lookup"><span data-stu-id="b474e-112">lowerAddress</span></span>|<span data-ttu-id="b474e-113">Строка</span><span class="sxs-lookup"><span data-stu-id="b474e-113">String</span></span>|<span data-ttu-id="b474e-114">Адрес нижнего уровня.</span><span class="sxs-lookup"><span data-stu-id="b474e-114">Lower address.</span></span>|
+|<span data-ttu-id="b474e-115">upperAddress</span><span class="sxs-lookup"><span data-stu-id="b474e-115">upperAddress</span></span>|<span data-ttu-id="b474e-116">String</span><span class="sxs-lookup"><span data-stu-id="b474e-116">String</span></span>|<span data-ttu-id="b474e-117">Верхний адрес.</span><span class="sxs-lookup"><span data-stu-id="b474e-117">Upper address.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="d2ca5-119">Связи</span><span class="sxs-lookup"><span data-stu-id="d2ca5-119">Relationships</span></span>
-<span data-ttu-id="d2ca5-120">Нет</span><span class="sxs-lookup"><span data-stu-id="d2ca5-120">None</span></span>
-## <a name="json-representation"></a><span data-ttu-id="d2ca5-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d2ca5-121">JSON Representation</span></span>
-<span data-ttu-id="d2ca5-122">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d2ca5-122">Here is a JSON representation of the resource.</span></span>
+## <a name="relationships"></a><span data-ttu-id="b474e-118">Отношения</span><span class="sxs-lookup"><span data-stu-id="b474e-118">Relationships</span></span>
+<span data-ttu-id="b474e-119">Нет</span><span class="sxs-lookup"><span data-stu-id="b474e-119">None</span></span>
+
+## <a name="json-representation"></a><span data-ttu-id="b474e-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b474e-120">JSON Representation</span></span>
+<span data-ttu-id="b474e-121">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b474e-121">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.iPv6Range"
 }
 -->
@@ -44,6 +45,7 @@ ms.locfileid: "29396352"
   "upperAddress": "String"
 }
 ```
+
 
 
 
