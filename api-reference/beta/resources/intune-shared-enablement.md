@@ -1,29 +1,27 @@
 ---
-title: Включение тип перечисления
-description: Описывается включение перечисление Microsoft Graph API для Intune, которая поддерживает несколько рабочих процессов.
+title: тип перечисления включения
+description: Описывает перечисление включения API Microsoft Graph для Intune, которое поддерживает несколько рабочих процессов.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 538b52790cf7748453adfda2a6bea8334a36fb87
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.prod: Intune
+ms.openlocfilehash: e781e1c58427ea166f77f3c250e572cbd3520210
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29399565"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571237"
 ---
-# <a name="enablement-enum-type"></a>Включение тип перечисления
+# <a name="enablement-enum-type"></a>тип перечисления включения
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Значения, используемые для указания состояния устройства. 
-
-Обратите внимание, что существует разница между отключена и не настроена.
+Возможные значения свойства
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|0|Значение по умолчанию устройства, без цели.|
-|enabled|1|Включение параметра на устройстве.|
-|Этот параметр отключен|2|Отключает настройку на устройстве.|
+|notConfigured|нуль|Значение по умолчанию для устройства, без намерения.|
+|enabled|1,1|Включает параметр на устройстве.|
+|активирован|2|Отключает параметр на устройстве.|

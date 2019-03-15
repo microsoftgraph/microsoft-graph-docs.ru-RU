@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Андр
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d219ec7a8cc51eb28a2e02e4a33e744d665735af
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bb3a35c5f8d3fdc15b1eaac1b6d742ecaa93372
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161014"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570719"
 ---
 # <a name="get-androidmanagedstoreapp"></a>Получение Андроидманажедстореапп
 
@@ -45,8 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInsta
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,11 +63,11 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1130
+Content-Length: 1162
 
 {
   "value": {
@@ -100,7 +99,8 @@ Content-Length: 1130
     "appIdentifier": "App Identifier value",
     "usedLicenseCount": 0,
     "totalLicenseCount": 1,
-    "appStoreUrl": "https://example.com/appStoreUrl/"
+    "appStoreUrl": "https://example.com/appStoreUrl/",
+    "supportsOemConfig": true
   }
 }
 ```

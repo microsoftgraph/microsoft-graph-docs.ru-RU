@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4855c3d0104fd8d054bd135eca2956da527df26
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fa59dd37e66fe148792df58d285f87ad4d0e6d70
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165676"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571167"
 ---
 # <a name="list-androidmanagedappprotections"></a>Перечисление объектов androidManagedAppProtection
 
@@ -40,8 +40,7 @@ GET /deviceAppManagement/androidManagedAppProtections
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,12 +57,12 @@ GET /deviceAppManagement/androidManagedAppProtections
 GET https://graph.microsoft.com/beta/deviceAppManagement/androidManagedAppProtections
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2909
+Content-Length: 3247
 
 {
   "value": [
@@ -111,6 +110,7 @@ Content-Length: 2909
       "appActionIfDeviceComplianceRequired": "wipe",
       "appActionIfMaximumPinRetriesExceeded": "wipe",
       "pinRequiredInsteadOfBiometricTimeout": "-PT3M9.8396734S",
+      "allowedOutboundClipboardSharingExceptionLength": 14,
       "isAssigned": true,
       "targetedAppManagementLevels": "unmanaged",
       "screenCaptureBlocked": true,
@@ -128,7 +128,11 @@ Content-Length: 2909
       ],
       "minimumWipePatchVersion": "Minimum Wipe Patch Version value",
       "allowedAndroidDeviceManufacturers": "Allowed Android Device Manufacturers value",
-      "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe"
+      "appActionIfAndroidDeviceManufacturerNotAllowed": "wipe",
+      "requiredAndroidSafetyNetDeviceAttestationType": "basicIntegrity",
+      "appActionIfAndroidSafetyNetDeviceAttestationFailed": "wipe",
+      "requiredAndroidSafetyNetAppsVerificationType": "enabled",
+      "appActionIfAndroidSafetyNetAppsVerificationFailed": "wipe"
     }
   ]
 }

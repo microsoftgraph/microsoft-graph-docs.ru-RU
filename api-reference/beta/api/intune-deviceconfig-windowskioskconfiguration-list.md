@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c052ee390fe451c22cdbe047fb99bd1cbeaa97a4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 58c071000b60ae98b62c821bc01854e3d8939136
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168840"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30570691"
 ---
 # <a name="list-windowskioskconfigurations"></a>Список Виндовскиоскконфигуратионс
 
@@ -41,8 +41,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,11 +59,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2136
+Content-Length: 2174
 
 {
   "value": [
@@ -93,12 +92,14 @@ Content-Length: 2136
                 "startLayoutTileSize": "small",
                 "name": "Name value",
                 "appType": "store",
+                "autoLaunch": true,
                 "appUserModelId": "App User Model Id value",
                 "appId": "App Id value",
                 "containedAppId": "Contained App Id value"
               }
             ],
             "showTaskBar": true,
+            "allowAccessToDownloadsFolder": true,
             "disallowDesktopApps": true,
             "startMenuLayoutXml": "c3RhcnRNZW51TGF5b3V0WG1s"
           },
@@ -120,8 +121,7 @@ Content-Length: 2136
       "kioskBrowserBlockedUrlExceptions": [
         "Kiosk Browser Blocked Url Exceptions value"
       ],
-      "edgeKioskEnablePublicBrowsing": true,
-      "edgeKioskResetAfterIdleTimeInMinutes": 4
+      "edgeKioskEnablePublicBrowsing": true
     }
   ]
 }

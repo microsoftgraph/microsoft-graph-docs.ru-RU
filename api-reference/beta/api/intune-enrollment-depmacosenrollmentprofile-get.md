@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Депм
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88e922e192cfeeb172805d252f1e690c79fdbaa3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 06b366394ce089836fa1047733a9406b021c8998
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166915"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571251"
 ---
 # <a name="get-depmacosenrollmentprofile"></a>Получение Депмакосенроллментпрофиле
 
@@ -43,8 +43,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacO
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -62,11 +61,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1187
+Content-Length: 1266
 
 {
   "value": {
@@ -98,7 +97,9 @@ Content-Length: 1187
     "privacyPaneDisabled": true,
     "registrationDisabled": true,
     "fileVaultDisabled": true,
-    "iCloudDiagnosticsDisabled": true
+    "iCloudDiagnosticsDisabled": true,
+    "iCloudStorageDisabled": true,
+    "chooseYourLockScreenDisabled": true
   }
 }
 ```

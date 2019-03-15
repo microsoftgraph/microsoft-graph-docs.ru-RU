@@ -4,12 +4,12 @@ description: Содержит свойства исключенных прило
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4ba3e53a26ff71dde2d5a95fde811e42ba2ccb99
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8dee0d5328f1f69c95159116bf913bc2abb959d7
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154028"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571692"
 ---
 # <a name="excludedapps-resource-type"></a>Тип ресурса Excludedapps к объекту
 
@@ -22,19 +22,20 @@ ms.locfileid: "30154028"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|обращения|Логический|Значение, если доступ к MS Office должен быть исключен или нет.|
-|невозможно|Логический|Значение, заДанное в поле IF MS Office Excel, не должно быть исключено.|
-|тень|Логический|Значение, которое должно быть исключено, если MS Office OneDrive для бизнеса — Groove.|
-|infoPath|Логический|Значение, если MS Office InfoPath следует исключить.|
-|Lync|Логический|Значение, если MS Office Skype для бизнеса — не следует исключать.|
-|oneDrive|Логический|Значение, которое должно быть исключено, если MS Office OneDrive должен быть исключен.|
-|Microsoft|Логический|Значение, если MS Office OneNote должен быть исключен или нет.|
-|outlook|Логический|Значение, если MS Office Outlook следует исключить из проверки.|
-|powerPoint|Логический|Значение, если MS Office PowerPoint следует исключить из проверки.|
-|publisher|Логический|Значение, если MS Office Publisher должен быть исключен или нет.|
-|Шарепоинтдесигнер|Логический|Значение для параметра if MS Office Шарепоинтдесигнер должно быть исключено или нет.|
-|visio|Логический|Значение, заДанное для if MS Office Visio, должно быть исключено.|
-|текстовых|Логический|Значение, заДанное для if MS Office Word, должно быть исключено.|
+|обращения|Boolean|Значение, если доступ к MS Office должен быть исключен или нет.|
+|невозможно|Boolean|Значение, заДанное в поле IF MS Office Excel, не должно быть исключено.|
+|тень|Boolean|Значение, которое должно быть исключено, если MS Office OneDrive для бизнеса — Groove.|
+|infoPath|Boolean|Значение, если MS Office InfoPath следует исключить.|
+|Lync|Boolean|Значение, если MS Office Skype для бизнеса — не следует исключать.|
+|oneDrive|Boolean|Значение, которое должно быть исключено, если MS Office OneDrive должен быть исключен.|
+|Microsoft|Boolean|Значение, если MS Office OneNote должен быть исключен или нет.|
+|outlook|Boolean|Значение, если MS Office Outlook следует исключить из проверки.|
+|powerPoint|Boolean|Значение, если MS Office PowerPoint следует исключить из проверки.|
+|publisher|Boolean|Значение, если MS Office Publisher должен быть исключен или нет.|
+|Шарепоинтдесигнер|Boolean|Значение для параметра if MS Office Шарепоинтдесигнер должно быть исключено или нет.|
+|Teams|Boolean|Значение, которое должно быть исключено, если MS Office Teams должен быть исключен.|
+|Visio|Boolean|Значение, заДанное для if MS Office Visio, должно быть исключено.|
+|текстовых|Boolean|Значение, заДанное для if MS Office Word, должно быть исключено.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -60,6 +61,7 @@ ms.locfileid: "30154028"
   "powerPoint": true,
   "publisher": true,
   "sharePointDesigner": true,
+  "teams": true,
   "visio": true,
   "word": true
 }

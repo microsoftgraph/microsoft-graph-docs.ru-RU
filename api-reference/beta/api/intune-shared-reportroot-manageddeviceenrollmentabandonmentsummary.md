@@ -4,12 +4,12 @@ description: Метаданные для сводного отчета об от
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 3490131b4779e60243305a727218791d7debfbc0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1a8a06cea56cdb9f21c491639bd24df8623a1e9d
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160944"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571146"
 ---
 # <a name="manageddeviceenrollmentabandonmentsummary-function"></a>Функция Манажеддевицеенроллментабандонментсуммари
 
@@ -19,7 +19,7 @@ ms.locfileid: "30160944"
 
 Метаданные для сводного отчета об отмене регистрации
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,14 +49,14 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|skip|Int32|Н/Д|
-|top|Int32|Н/Д|
-|filter|String|Н/Д|
-|skipToken|String|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
+|skipToken|String|Пока не задокументировано.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -67,8 +66,8 @@ GET /reports/managedDeviceEnrollmentAbandonmentSummary
 GET https://graph.microsoft.com/beta/reports/managedDeviceEnrollmentAbandonmentSummary(skip=4,top=3,filter='parameterValue',skipToken='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

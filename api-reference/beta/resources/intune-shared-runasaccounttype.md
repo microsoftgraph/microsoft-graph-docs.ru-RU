@@ -3,19 +3,19 @@ title: тип перечисления Рунасаккаунттипе
 description: Описывает перечисление Рунасаккаунттипе API Microsoft Graph для Intune, которое поддерживает несколько рабочих процессов.
 author: tfitzmac
 localization_priority: Normal
-ms.prod: intune
-ms.openlocfilehash: 61f2717ae88c813042b7a236cea1494402ec1f14
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.prod: Intune
+ms.openlocfilehash: 4dc06d3f1d4b3abe00dd65e81287a0950c2d40c5
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172746"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30571097"
 ---
 # <a name="runasaccounttype-enum-type"></a>тип перечисления Рунасаккаунттипе
 
-> **Важно:** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
-> **Примечание.** Для настройки элементов управления и политик Intune с помощью API Microsoft Graph по-прежнему требуется, чтобы клиент [лицензировал](https://go.microsoft.com/fwlink/?linkid=839381) Intune надлежащим образом.
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
 Указывает на контекст выполнения скрипта управления устройствами или приложения.
 
@@ -24,8 +24,3 @@ ms.locfileid: "30172746"
 |:---|:---|:---|
 |system|нуль|Контекст системы|
 |user|1,1|Контекст пользователя|
-
-
-
-
-
