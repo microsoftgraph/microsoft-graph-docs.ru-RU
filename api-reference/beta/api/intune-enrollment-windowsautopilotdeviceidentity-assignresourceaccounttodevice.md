@@ -1,30 +1,30 @@
 ---
-title: Список iosLobAppProvisioningConfigurations
-description: Список свойств и связей объектов iosLobAppProvisioningConfiguration.
+title: действие Ассигнресаурцеаккаунттодевице
+description: Назначение учетной записи ресурса автопилотным устройствам.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9694dae09ea265dad39626887ef73db773a5de42
+ms.openlocfilehash: e46f12d33e26f15a87746720bfd1b418d4f21878
 ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571839"
+ms.locfileid: "30631638"
 ---
-# <a name="list-ioslobappprovisioningconfigurations"></a>Список iosLobAppProvisioningConfigurations
+# <a name="assignresourceaccounttodevice-action"></a>действие Ассигнресаурцеаккаунттодевице
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Список свойств и связей объектов [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .
+Назначение учетной записи ресурса автопилотным устройствам.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementServiceConfig.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -34,7 +34,8 @@ ms.locfileid: "30571839"
 }
 -->
 ``` http
-GET /deviceAppManagement/iosLobAppProvisioningConfigurations
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
+POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/deploymentProfile/assignedDevices/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -44,45 +45,42 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте текст запроса для этого метода.
+В тело запроса добавьте параметры в формате JSON.
+
+В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
+
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|userPrincipalName|String|Пока не задокументировано.|
+|Аддрессаблеусернаме|String|Пока не задокументировано.|
+|Ресаурцеаккаунтнаме|String|Пока не задокументировано.|
+
+
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) в тексте отклика.
+В случае успешного выполнения это действие возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations
+POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceIdentityId}/assignResourceAccountToDevice
+
+Content-type: application/json
+Content-length: 170
+
+{
+  "userPrincipalName": "User Principal Name value",
+  "addressableUserName": "Addressable User Name value",
+  "resourceAccountName": "Resource Account Name value"
+}
 ```
 
 ### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-Content-Length: 632
-
-{
-  "value": [
-    {
-      "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
-      "id": "e2a23631-3631-e2a2-3136-a2e23136a2e2",
-      "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-      "payloadFileName": "Payload File Name value",
-      "payload": "cGF5bG9hZA==",
-      "roleScopeTagIds": [
-        "Role Scope Tag Ids value"
-      ],
-      "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-      "description": "Description value",
-      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
-      "displayName": "Display Name value",
-      "version": 7
-    }
-  ]
-}
+HTTP/1.1 204 No Content
 ```
 
 

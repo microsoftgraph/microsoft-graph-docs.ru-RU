@@ -1,30 +1,30 @@
 ---
-title: Получение iosLobAppProvisioningConfiguration
-description: Чтение свойств и связей объекта iosLobAppProvisioningConfiguration.
+title: Получение Виндовшеалсмониторингконфигуратион
+description: Чтение свойств и связей объекта Виндовшеалсмониторингконфигуратион.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 667ea00d6cf689f45196bd4fbefb9438c2ff9590
+ms.openlocfilehash: 643f435008d4dc5d952c2bdbcb09c7d4629f4ac8
 ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571860"
+ms.locfileid: "30631635"
 ---
-# <a name="get-ioslobappprovisioningconfiguration"></a>Получение iosLobAppProvisioningConfiguration
+# <a name="get-windowshealthmonitoringconfiguration"></a>Получение Виндовшеалсмониторингконфигуратион
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Чтение свойств и связей объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .
+Чтение свойств и связей объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
-|Делегированные (рабочая или учебная учетная запись)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Делегированные (рабочая или учебная учетная запись)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -34,7 +34,9 @@ ms.locfileid: "30571860"
 }
 -->
 ``` http
-GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/groupAssignments/{deviceConfigurationGroupAssignmentId}/deviceConfiguration
+GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations/{deviceConfigurationId}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -50,14 +52,14 @@ GET /deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvision
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningConfigurations/{iosLobAppProvisioningConfigurationId}
+GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,23 +67,23 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisioningCo
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 592
+Content-Length: 588
 
 {
   "value": {
-    "@odata.type": "#microsoft.graph.iosLobAppProvisioningConfiguration",
-    "id": "e2a23631-3631-e2a2-3136-a2e23136a2e2",
-    "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
-    "payloadFileName": "Payload File Name value",
-    "payload": "cGF5bG9hZA==",
+    "@odata.type": "#microsoft.graph.windowsHealthMonitoringConfiguration",
+    "id": "3439bcec-bcec-3439-ecbc-3934ecbc3934",
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
+    "supportsScopeTags": true,
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
     "description": "Description value",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "displayName": "Display Name value",
-    "version": 7
+    "version": 7,
+    "allowDeviceHealthMonitoring": "enabled",
+    "configDeviceHealthMonitoringScope": "healthMonitoring"
   }
 }
 ```

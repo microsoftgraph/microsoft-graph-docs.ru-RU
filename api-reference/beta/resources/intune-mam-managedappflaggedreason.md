@@ -4,12 +4,12 @@ description: Причина, по которой пользователю был
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13b5cdb11725452c78543a9a8d08823eafd426b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 15942be9f9b6d8b25941f0726ff6046feeea386b
+ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154070"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30572161"
 ---
 # <a name="managedappflaggedreason-enum-type"></a>тип перечисления Манажедаппфлагжедреасон
 
@@ -24,6 +24,8 @@ ms.locfileid: "30154070"
 |:---|:---|:---|
 |Нет|нуль|Нет ошибок.|
 |Рутеддевице|1,1|Регистрация приложения выполняется на корневом/незаблокированном устройстве.|
+|Андроидбутлоадерунлоккед|2|Регистрация приложения выполняется на устройстве с Android, на котором разблокирован загрузчик.|
+|Андроидфакторироммодифиед|4|Регистрация приложения выполняется на устройстве с Android, на котором было изменено фабричное ПЗУ.|
 
 
 
