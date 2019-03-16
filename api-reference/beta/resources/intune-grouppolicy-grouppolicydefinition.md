@@ -4,12 +4,12 @@ description: Сущность описывает все сведения об о
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7649d249a034278741199e1f858f07ea34c7137
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7c5062fda984dbe1dda518e77ff271750d30adb8
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164059"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644288"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
 
@@ -28,17 +28,17 @@ ms.locfileid: "30164059"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Класстипе|[Граупполицидефинитионкласстипе](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которым можно применить политику. Возможные значения: `user`, `machine`, `both`.|
+|Класстипе|[Граупполицидефинитионкласстипе](../resources/intune-grouppolicy-grouppolicydefinitionclasstype.md)|Определяет тип групп, к которым можно применить политику. Возможные значения: `user`, `machine`.|
 |displayName|String|Имя локализованной политики.|
-|Експлаинтекст|String|Локализованное объяснение или текст справки, связанный с политикой. Значение по умолчанию — пустое значение.|
+|Експлаинтекст|String|Локализованное объяснение или текст справки, связанный с политикой. По умолчанию это значение пусто.|
 |Категорипас|String|Локализованный полный путь к категории для политики.|
 |Суппортедон|String|Локализованная строка, используемая для указания версии операционной системы или приложения, на которые влияет политика.|
 |Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
 |id|String|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Отношения
-|Связь|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |Дефинитионфиле|[Граупполицидефинитионфиле](../resources/intune-grouppolicy-grouppolicydefinitionfile.md)|Файл групповой политики, связанный с определением.|
 |материалы|Коллекция [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Презентации групповой политики, связанные с определением.|
