@@ -1,0 +1,176 @@
+### YamlMime:YamlDocument
+ms.openlocfilehash: b893fc83f7ca7552b4decbac3dc37fd0441b7043
+ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30657919"
+documentType: LandingData
+title: Документация по Microsoft Graph
+metadata:
+  title: Документация по Microsoft Graph
+  description: Узнайте, как использовать Microsoft Graph для создания приложений для организаций и потребителей, взаимодействующих с данными миллионов пользователей.
+  services: active-directory
+  author: CelesteDG
+  manager: mtillman
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 12/13/2018
+  ms.author: celested
+abstract:
+  description: Microsoft Graph предоставляет единую модель программирования, которую можно использовать для создания приложений для организаций и потребителей, взаимодействующих с данными миллионов пользователей. Вы можете использовать REST API Microsoft Graph для доступа к данным в Azure Active Directory, службах Office 365, службах Enterprise Mobility and Security, службах Windows 10, Dynamics 365 и т. д. Ознакомьтесь с нашей документацией, чтобы узнать больше о том, как использовать API Microsoft Graph.
+  aside:
+    image:
+      alt: 
+      height: 110
+      src: ./images/index/whatsnew-video.png
+      width: 250
+    title: Новые возможности Microsoft Graph (12:39)
+    href: https://www.youtube.com/watch?v=3X10r2VVLCg
+    width: 250
+sections:
+- items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /graph/overview
+      html: <p>Узнайте больше о Microsoft Graph, возможностях и возможностях.</p>
+      image:
+        src: ./images/index/i_get-started.svg
+      title: Обзор Microsoft Graph
+    - href: /graph/overview-major-services
+      html: <p>Ознакомьтесь с основными службами и функциями, доступными в Microsoft Graph.</p>
+      image:
+        src: ./images/index/i_overview.svg
+      title: Службы и компоненты
+    - href: https://developer.microsoft.com/graph/graph-explorer/
+      html: <p>Создание запросов и просмотр ответов от Microsoft Graph.</p>
+      image:
+        src: ./images/index/i_queries.svg
+      title: Песочница Graph
+    - href: /graph/use-the-api
+      html: <p>Узнайте, как приступить к использованию API Microsoft Graph для доступа к ресурсам облачной службы Майкрософт.</p>
+      image:
+        src: ./images/index/i_code-edit.svg
+      title: Использование API
+    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
+      html: <p>Используйте REST API Microsoft Graph версии 1.0 для удовлетворения практических потребностей в производственном процессе.</p>
+      image:
+        src: ./images/index/i_api-reference.svg
+      title: REST API Microsoft Graph версии 1.0
+    - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
+      html: <p>Попробуйте конечная точка бета-версии Microsoft Graph.</p>
+      image:
+        src: ./images/index/i_api.svg
+      title: Бета-версия REST API Microsoft Graph
+- title: Поддерживаемые платформы
+  items:
+  - type: paragraph
+    text: В этой статье содержатся пакеты SDK и приводятся пошаговые учебные курсы по основным концепциям Microsoft Graph, в том числе создание простого приложения, использующего проверку подлинности Azure AD и доступ к данным с помощью Microsoft Graph.
+  - type: table
+    style: dataMatrix
+    columns:
+    - image:
+        src: ./images/index/logo_android.svg
+      title: Android
+    - image:
+        src: ./images/index/angular_solidBlack.svg
+      title: Angular
+    - image:
+        src: ./images/index/logo_NET.svg
+      title: ASP.NET
+    - image:
+        src: ./images/index/logo_ios.svg
+      title: iOS
+    - image:
+        src: ./images/index/logo_java.svg
+      title: Обработка
+    - image:
+        src: ./images/index/logo_js.svg
+      title: JavaScript
+    - image:
+        src: ./images/index/logo_nodejs.svg
+      title: Node.js
+    - image:
+        src: ./images/index/logo_php.svg
+      title: PHP
+    - image:
+        src: ./images/index/logo_python.svg
+      title: Python
+    - image:
+        src: ./images/index/logo_ruby.svg
+      title: Ruby
+    - image:
+        src: ./images/index/logo_windows.svg
+      title: UWP
+    - image:
+        src: ./images/index/logo_xamarin.svg
+      title: Xamarin
+    rows:
+    - title: Кратки
+      values:
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-dotnet
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ios-swift
+      - href: 
+      - href: 
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-node
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-php
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-Python
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-ruby
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-windowsuniversal
+      - href: https://developer.microsoft.com/graph/quick-start?platform=option-xamarin
+    - title: Руководство
+      values:
+      - href: 
+      - href: /tutorials/angular
+      - href: /tutorials/aspnet
+      - href: 
+      - href: 
+      - href: 
+      - href: /tutorials/node
+      - href: /tutorials/php
+      - href: /tutorials/python
+      - href: /tutorials/ruby
+      - href: /tutorials/uwp
+      - href: 
+    - title: СРЕДСТВ
+      values:
+      - href: https://github.com/microsoftgraph/msgraph-sdk-android
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+      - href: https://github.com/microsoftgraph/msgraph-sdk-objc
+      - href: https://github.com/microsoftgraph/msgraph-sdk-java
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
+      - href: https://github.com/microsoftgraph/msgraph-sdk-php
+      - href: 
+      - href: https://github.com/microsoftgraph/msgraph-sdk-ruby
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+      - href: https://www.nuget.org/packages/Microsoft.Graph
+- title: Ресурсы
+  items:
+  - type: list
+    style: cards
+    className: cardsM
+    columns: 3
+    items:
+    - href: /graph/changelog
+      html: <p>Сведения об изменениях в Microsoft Graph, в том числе API Microsoft Graph для конечной точки версии 1.0 и бета-версии.</p>
+      image:
+        src: ./images/index/i_backlog.svg
+      title: Журнал изменений
+    - href: https://developer.microsoft.com/graph/blogs/
+      html: <p>Прочитайте блог, в котором вы ознакомитесь с последними новостями и обновлениями.</p>
+      image:
+        src: ./images/index/i_blog.svg
+      title: Блог Microsoft Graph
+    - href: /graph/known-issues
+      html: <p>Сведения об известных проблемах, связанных с Microsoft Graph.</p>
+      image:
+        src: ./images/index/i_investigate.svg
+      title: Известные проблемы
