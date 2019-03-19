@@ -4,12 +4,12 @@ description: Единица измерения, которая не работа
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 933c940e25c772cede7918dabf62b52ee58f18d2
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657800"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676991"
 ---
 # <a name="timeoff-resource-type"></a>Тип ресурса Тимеофф
 
@@ -32,8 +32,8 @@ ms.locfileid: "30657800"
 |--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | id            |`string`      |Идентификатор объекта `timeOff`.|
 | userId            |`string`      |Идентификатор пользователя, `timeOff`назначенный. Обязательный.|
-| Шаредтимеофф     |`[timeOffItem](timeoffitem.md)`  |Общая версия этого `timeOff` объекта доступна как для сотрудников, так и для руководителей. Обязательный.|
-| Драфттимеофф      |`[timeOffItem](timeoffitem.md)`        |Черновая версия этого `timeOff` элемента, просматриваемая руководителями. Обязательный.|
+| Шаредтимеофф     |[Тимеоффитем](timeoffitem.md)  |Общая версия этого `timeOff` объекта доступна как для сотрудников, так и для руководителей. Обязательный.|
+| Драфттимеофф      |[Тимеоффитем](timeoffitem.md)        |Черновая версия этого `timeOff` элемента, просматриваемая руководителями. Обязательный.|
 | createdDateTime       |`DateTimeOffset`        |Отметка `timeOff` времени первоначального создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
 | lastModifiedDateTime      |`DateTimeOffset`        |Отметка `timeOff` времени последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
 | lastModifiedBy        |`microsoft.graph.identitySet`        |Удостоверение, которое Последнее обновило `timeOff`. |

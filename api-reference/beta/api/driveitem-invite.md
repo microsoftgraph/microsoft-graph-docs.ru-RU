@@ -5,12 +5,12 @@ ms.date: 09/10/2017
 title: Отправка приглашения на доступ к элементу
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: cc88297c1848e9b66195f9a07ac96167d096a762
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 1e02af913702aace46a5e3ca2f2e2650a2c7839e
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481211"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30676977"
 ---
 # <a name="send-a-sharing-invitation"></a>Отправка приглашения к совместному использованию
 
@@ -40,7 +40,7 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
@@ -65,7 +65,9 @@ POST /users/{userId}/drive/items/{itemId}/invite
 | message          | String                                          | Сообщение с обычным форматированным текстом, включенное в приглашение на доступ. Максимальная длина составляет 2000 символов. |
 | requireSignIn    | Boolean                                         | Указывает, куда должен зайти получатель приглашения, чтобы просмотреть элемент, к которому предоставлен общий доступ.            |
 | sendInvitation   | Boolean                                         | Указывает, создано ли электронное письмо или запись (false) или разрешение (true).            |
-| roles            | Collection(String)                              | Указывает роли, которые необходимо предоставить получателям приглашения к совместному использованию.                         |
+| roles            | Collection(String)                              | Указывают роли, которые предоставляются получателям приглашения на доступ.                         |
+| expirationDateTime | DateTimeOffset                       | Укажите значение даты и времени, после которого истечет срок действия разрешения. Доступно в OneDrive для бизнеса, SharePoint и в личных учетных записях OneDrive для бизнеса.
+| password           | String                         | Пароль, установленный в приглашении создателем. Только неОбязательные и OneDrive персональный
 
 ## <a name="example"></a>Пример
 
@@ -91,7 +93,9 @@ Content-type: application/json
   "message": "Here's the file that we're collaborating on.",
   "requireSignIn": true,
   "sendInvitation": true,
-  "roles": [ "write" ]
+  "roles": [ "write" ],
+  "password": "password123",
+  "expirationDateTime": "2018-07-15T14:00:00.000Z"
 }
 ```
 
@@ -101,7 +105,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```http
+```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -114,16 +118,87 @@ Content-type: application/json
           "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
         }
       },
+      "hasPassword": true,
       "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
       "invitation": {
         "email": "ryan@contoso.com",
         "signInRequired": true
       },
-      "roles": [ "write" ]
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
     }
   ]
 }
 ```
+### <a name="partial-success-response"></a>Частичный отклик об успешном выполнении
+
+При приглашении нескольких получателей уведомление может завершиться успешно для некоторых и не для других.
+В этом случае служба возвращает частичный отклик об успешном выполнении с кодом состояния HTTP 207.
+Когда возвращается частичный успех, ответ для каждого неудачного получателя будет содержать `error` объект со сведениями о том, что пошло не так, и как исправить его.
+
+Ниже приведен пример частичного ответа.  
+
+<!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
+
+```json
+HTTP/1.1 207 Multi-Status
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "John Adams",
+          "id": "5D8CA5D0-FFF8-4A97-B0A6-8F5AEA339681"
+        }
+      },
+      "id": "1EFG7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "adams@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "error": {
+        "code":"notAllowed",
+        "message":"Account verification needed to unblock sending emails.",
+        "localizedMessage": "Kontobestätigung erforderlich, um das Senden von E-Mails zu entsperren.",
+        "fixItUrl":"http://g.live.com/8SESkydrive/VerifyAccount",
+        "innererror":{  
+          "code":"accountVerificationRequired" 
+        }
+      }
+    },
+    {
+      "grantedTo": {
+        "user": {
+          "displayName": "Ryan Gregg",
+          "id": "42F177F1-22C0-4BE3-900D-4507125C5C20"
+        }
+      },
+      "id": "CCFC7CA3-7A19-4D57-8CEF-149DB9DDFA62",
+      "invitation": {
+        "email": "ryan@contoso.com",
+        "signInRequired": true
+      },
+      "roles": [ "write" ],
+      "expirationDateTime": "2018-07-15T14:00:00.000Z"
+    }
+  ]
+}
+```
+### <a name="sendnotification-errors"></a>Ошибки Сенднотификатион
+Ниже приведены некоторые дополнительные ошибки, которые приложение может столкнуть во вложенных `innererror` объектах при сбое отправки уведомления. Приложения не обязаны обрабатывать эти приложения.
+
+| Код                           | Описание
+|:-------------------------------|:--------------------------------------------------------------------------------------
+| Аккаунтверификатионрекуиред    | Для разблокировки уведомлений об отправке требуется проверка учетной записи.
+| Хипчеккрекуиред               | Необходимо выполнить разрешение ГИП (предотвращение проникновения на узел) — разрешить отправку уведомлений об отправке.
+| Ексчанжеинвалидусер            | Не найден почтовый ящик текущего пользователя.
+| Ексчанжеаутофмаилбокскуота      | Недостаточно квоты.
+| ЕксчанжемаксреЦипиентс          | ПреВышено максимальное количество получателей, которые могут быть отправлены в одно и то же время.
+
+>**Примечание:** В любой момент служба может добавить новые коды ошибок или прекратить возврат старых.
 
 ## <a name="remarks"></a>Замечания
 
