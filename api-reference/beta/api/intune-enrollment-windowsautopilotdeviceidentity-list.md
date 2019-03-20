@@ -4,12 +4,12 @@ description: Список свойств и связей объектов window
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33b44dbd8ed301db3343e9d01dd37fe47b2c04e8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b1520238c53db908b7c5801b679275216b97ef47
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148939"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572252"
 ---
 # <a name="list-windowsautopilotdeviceidentities"></a>Список Виндовсаутопилотдевицеидентитиес
 
@@ -41,8 +41,7 @@ GET /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceId
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -60,11 +59,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIden
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 897
+Content-Length: 1163
 
 {
   "value": [
@@ -83,7 +82,12 @@ Content-Length: 897
       "enrollmentState": "enrolled",
       "lastContactedDateTime": "2016-12-31T23:58:44.2908994-08:00",
       "addressableUserName": "Addressable User Name value",
-      "userPrincipalName": "User Principal Name value"
+      "userPrincipalName": "User Principal Name value",
+      "resourceName": "Resource Name value",
+      "skuNumber": "Sku Number value",
+      "systemFamily": "System Family value",
+      "azureActiveDirectoryDeviceId": "Azure Active Directory Device Id value",
+      "managedDeviceId": "Managed Device Id value"
     }
   ]
 }

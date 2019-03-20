@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 240bdc2d65d1ed8920fe1f9c067f1ffcd31a9f11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4b4100265797fd3cefc60e0288961b74839199c2
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149835"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572392"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -49,6 +49,7 @@ ms.locfileid: "30149835"
 - [Профиль Windows AutoPilot Deployment](intune-enrollment-windowsautopilotdeploymentprofile.md)
 - [Назначение профиля Windows Autopilot Deployment](intune-enrollment-windowsautopilotdeploymentprofileassignment.md)
 - [Удостоверение устройства с Windows Autopilot](intune-enrollment-windowsautopilotdeviceidentity.md)
+- [Тип устройства с автопилотом Windows](intune-enrollment-windowsautopilotdevicetype.md)
 - [Полное состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)
 - [Состояние назначения профиля Windows AutoPilot](intune-enrollment-windowsautopilotprofileassignmentstatus.md)
 - [Параметры Windows AutoPilot](intune-enrollment-windowsautopilotsettings.md)

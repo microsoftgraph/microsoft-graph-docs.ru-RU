@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windows1
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e32791ee6f131c772d25c75c15f746b39bf07249
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cc394939c6908e3dc5353f5100bb442661173b56
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172753"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572280"
 ---
 # <a name="get-windows10endpointprotectionconfiguration"></a>Get windows10EndpointProtectionConfiguration
 
@@ -45,8 +45,7 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,11 +63,11 @@ GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{devi
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 28223
+Content-Length: 29142
 
 {
   "value": {
@@ -84,6 +83,34 @@ Content-Length: 28223
     "displayName": "Display Name value",
     "version": 7,
     "dmaGuardDeviceEnumerationPolicy": "blockAll",
+    "firewallRules": [
+      {
+        "@odata.type": "microsoft.graph.windowsFirewallRule",
+        "displayName": "Display Name value",
+        "description": "Description value",
+        "packageFamilyName": "Package Family Name value",
+        "filePath": "File Path value",
+        "serviceName": "Service Name value",
+        "protocol": 8,
+        "localPortRanges": [
+          "Local Port Ranges value"
+        ],
+        "remotePortRanges": [
+          "Remote Port Ranges value"
+        ],
+        "localAddressRanges": [
+          "Local Address Ranges value"
+        ],
+        "remoteAddressRanges": [
+          "Remote Address Ranges value"
+        ],
+        "profileTypes": "domain",
+        "action": "blocked",
+        "trafficDirection": "out",
+        "interfaceTypes": "remoteAccess",
+        "localUserAuthorizations": "Local User Authorizations value"
+      }
+    ],
     "userRightsAccessCredentialManagerAsTrustedCaller": {
       "@odata.type": "microsoft.graph.deviceManagementUserRightsSetting",
       "state": "blocked",

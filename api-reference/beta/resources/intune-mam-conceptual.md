@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 4443c78c6ae58979b0390496d8d560bb15a90669
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150402"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572329"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -25,6 +25,8 @@ ms.locfileid: "30150402"
 
 - [Защита управляемых приложений для Android](intune-mam-androidmanagedappprotection.md)
 - [Регистрация управляемых приложений для Android](intune-mam-androidmanagedappregistration.md)
+- [Тип проверки приложений для проверки подлинности в управляемом приложении Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Тип аттестации для устройства безопасности управляемого приложения Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Идентификатор мобильных приложений для Android](intune-mam-androidmobileappidentifier.md)
 - [Уровень управления приложениями](intune-mam-appmanagementlevel.md)
 - [Тип приложения](intune-wip-applicationtype.md)

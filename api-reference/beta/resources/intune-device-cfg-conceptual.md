@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 40439a32cb9f078d483113cfee8949cd6f288d71
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
+ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159271"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30572441"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -125,7 +125,6 @@ ms.locfileid: "30159271"
 - [Запрос Защитника на отправку образца](intune-deviceconfig-defenderpromptforsamplesubmission.md)
 - [Тип защиты для Защитника](intune-deviceconfig-defenderprotectiontype.md)
 - [Тип сканирования для Защитника](intune-deviceconfig-defenderscantype.md)
-- [День запланированного сканирования в Защитнике](intune-deviceconfig-defenderschedulescanday.md)
 - [Тип отображения контактного лица из ИТ-отдела центра безопасности в Защитнике](intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)
 - [Тип уведомлений центра безопасности из приложения для Защитника](intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)
 - [Тип согласия на отправку образцов в Защитнике](intune-deviceconfig-defendersubmitsamplesconsenttype.md)
@@ -432,6 +431,12 @@ ms.locfileid: "30159271"
 - [Конфигурация оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationconfiguration.md)
 - [Режим оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Сетевой профиль брандмауэра Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
+- [Правило брандмауэра Windows](intune-deviceconfig-windowsfirewallrule.md)
+- [Типы интерфейса правил брандмауэра Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Типы профилей сети правила брандмауэра Windows](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Тип направления трафика правила брандмауэра Windows](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
+- [Настройка мониторинга работоспособности Windows](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Область мониторинга работоспособности Windows](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Конфигурация защиты удостоверений Windows](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Группа Active Directory киоска Windows](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Базовое приложение киоска Windows](intune-deviceconfig-windowskioskappbase.md)
@@ -471,6 +476,7 @@ ms.locfileid: "30159271"
 - [Конфигурация Центра обновления Windows для бизнеса](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Недели обновления в Центре обновления Windows для бизнеса](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Тип расписания установки с использованием Центра обновления Windows](intune-deviceconfig-windowsupdateinstallscheduletype.md)
+- [Параметр отображения уведомления об обновлениях Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Запланированная установка с использованием Центра обновления Windows](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Статус обновления Windows](intune-deviceconfig-windowsupdatestatus.md)
 - [Тип обновления Windows](intune-deviceconfig-windowsupdatetype.md)
