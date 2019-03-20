@@ -2,12 +2,12 @@
 title: Тип ресурса chatMessage
 description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 localization_priority: Priority
-ms.openlocfilehash: f61668d8c3892482043dd7531a6699974a964527
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
+ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458661"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30644323"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -31,25 +31,25 @@ ms.locfileid: "30458661"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |id|String| Только для чтения. Уникальный идентификатор сообщения.|
-|replyToId| string | Идентификатор родительского или корневого сообщения беседы |
-|from|[identitySet](identityset.md)| Сведения об отправителе сообщения|
-|etag| string | Номер версии сообщения |
-|messageType|String|Тип сообщения. Поддерживаемые в настоящее время значения: message, chatEvent, Typing|
-|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения|
-|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения|
-|deleted|Boolean|Указывает, удалено ли сообщение с возможностью восстановления|
-|deletedDateTime|dateTimeOffset|Только для чтения. Метка времени удаления сообщения |
-|subject|string|Строка темы сообщения. Необязательное|
+|replyToId| string | Идентификатор родительского или корневого сообщения беседы. |
+|from|[identitySet](identityset.md)| Только для чтения. Подробные сведения об отправителе сообщения.|
+|etag| строка | Номер версии сообщения. |
+|messageType|Строка|Тип сообщения. В настоящее время поддерживаются следующие значения: message, chatEvent, Typing.|
+|createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
+|lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения.|
+|deleted|Boolean|Указывает, было ли сообщение обратимо удалено.|
+|deletedDateTime|dateTimeOffset|Только для чтения. Метка времени удаления сообщения. |
+|subject|string|Строка темы сообщения. Необязательно.|
 |body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Возвращает неформатированный текст по умолчанию. Приложение может выбрать формат HTML в составе параметров запроса|
 |summary|string|Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений|
-|mentions|Коллекция [chatMessageMention](chatmention.md)| Список сущностей, упомянутых в сообщении. Поддерживаемые в настоящее время: user, bot, team, channel|
-|importance| string | Важность сообщения: высокая, низкая|
+|mentions|Коллекция [chatMessageMention](chatmention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
+|importance| строка | Важность сообщения: Normal, High.|
 |reactions| Коллекция [chatMessageReaction](chatreaction.md) | Реакции на сообщение (например, "Нравится")|
 |locale|string|Язык сообщения, установленный клиентом|
-|attachments|Коллекция [chatMessageAttachment](chatattachment.md) |Вложенные файлы|
+|attachments|Коллекция [chatMessageAttachment](chatattachment.md) |Вложенные файлы. В настоящее время вложения доступны только для чтения. Отправка вложений не поддерживается. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
