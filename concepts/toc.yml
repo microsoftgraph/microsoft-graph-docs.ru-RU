@@ -1,6 +1,8 @@
 name: Документация по Graph
 metadata: {}
 items:
+  - name: Документация по Microsoft Graph
+    href: index.yml
   - name: Обзор Microsoft Graph
     href: overview.md
     expanded: true
