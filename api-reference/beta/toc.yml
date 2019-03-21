@@ -2157,6 +2157,10 @@ items:
                     href: api/intune-enrollment-importeddeviceidentity-update.md
                   - name: Действие importDeviceIdentityList
                     href: api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md
+                  - name: Действие searchExistingIdentities
+                    href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
+                  - name: Действие searchExistingIdentities
+                    href: api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md
               - name: Результат импорта удостоверения устройства
                 href: resources/intune-enrollment-importeddeviceidentityresult.md
                 items:
@@ -2249,6 +2253,12 @@ items:
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md
                   - name: Действие unassignUserFromDevice
                     href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md
+                  - name: Действие assignResourceAccountToDevice
+                    href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
+                  - name: Действие unassignResourceAccountFromDevice
+                    href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
+              - name: Тип устройства с Windows Autopilot
+                href: resources/intune-enrollment-windowsautopilotdevicetype.md
               - name: Полное состояние назначения профиля Windows AutoPilot
                 href: resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md
               - name: Состояние назначения профиля Windows AutoPilot
@@ -2961,8 +2971,6 @@ items:
                 href: resources/intune-deviceconfig-defenderprotectiontype.md
               - name: Тип сканирования для Защитника
                 href: resources/intune-deviceconfig-defenderscantype.md
-              - name: День запланированного сканирования в Защитнике
-                href: resources/intune-deviceconfig-defenderschedulescanday.md
               - name: Тип отображения контактного лица из ИТ-отдела центра безопасности в Защитнике
                 href: resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md
               - name: Тип уведомлений центра безопасности из приложения для Защитника
@@ -4670,6 +4678,29 @@ items:
                 href: resources/intune-deviceconfig-windowsdeliveryoptimizationmode.md
               - name: Сетевой профиль брандмауэра Windows
                 href: resources/intune-deviceconfig-windowsfirewallnetworkprofile.md
+              - name: Правило брандмауэра Windows
+                href: resources/intune-deviceconfig-windowsfirewallrule.md
+              - name: Типы интерфейсов правила брандмауэра Windows
+                href: resources/intune-deviceconfig-windowsfirewallruleinterfacetypes.md
+              - name: Типы сетевого профиля брандмауэра Windows
+                href: resources/intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md
+              - name: Тип направления трафика правила брандмауэра Windows
+                href: resources/intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md
+              - name: Настройка наблюдения за работоспособностью Windows
+                href: resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md
+                  - name: Получение
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md
+                  - name: Создание
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md
+                  - name: Удаление
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md
+              - name: Область наблюдения за работоспособностью Windows
+                href: resources/intune-deviceconfig-windowshealthmonitoringscope.md
               - name: Конфигурация защиты удостоверений Windows
                 href: resources/intune-deviceconfig-windowsidentityprotectionconfiguration.md
                 items:
@@ -4889,6 +4920,8 @@ items:
                 href: resources/intune-deviceconfig-windowsupdateforbusinessupdateweeks.md
               - name: Тип расписания установки с использованием Центра обновления Windows
                 href: resources/intune-deviceconfig-windowsupdateinstallscheduletype.md
+              - name: Параметр отображения уведомления Центра обновления Windows
+                href: resources/intune-deviceconfig-windowsupdatenotificationdisplayoption.md
               - name: Запланированная установка с использованием Центра обновления Windows
                 href: resources/intune-deviceconfig-windowsupdatescheduledinstall.md
               - name: Статус обновления Windows
@@ -5619,7 +5652,7 @@ items:
                     href: api/intune-devices-windowsprotectionstate-get.md
                   - name: Обновление
                     href: api/intune-devices-windowsprotectionstate-update.md
-          - name: Управление мобильным приложением
+          - name: Управление мобильным приложением (MAM)
             href: resources/intune-mam-conceptual.md
             items:
               - name: Защита управляемых приложений для Android
@@ -5644,6 +5677,10 @@ items:
                     href: api/intune-mam-androidmanagedappregistration-get.md
                   - name: Создание
                     href: api/intune-mam-androidmanagedappregistration-create.md
+              - name: Тип проверки приложений системы безопасности для управляемых приложений для Android
+                href: resources/intune-mam-androidmanagedappsafetynetappsverificationtype.md
+              - name: Тип аттестации устройства системы безопасности для управляемых приложений для Android
+                href: resources/intune-mam-androidmanagedappsafetynetdeviceattestationtype.md
               - name: Идентификатор мобильных приложений для Android
                 href: resources/intune-mam-androidmobileappidentifier.md
               - name: Уровень управления приложениями
@@ -6192,7 +6229,7 @@ items:
                     href: api/intune-onboarding-windows10enrollmentcompletionpageconfiguration-update.md
               - name: Использование ПИН-кода в Windows Hello для бизнеса
                 href: resources/intune-onboarding-windowshelloforbusinesspinusage.md
-          - name: Управление доступом на основе ролей
+          - name: Управление доступом на основе ролей (RBAC)
             href: /resources/intune-rbac-conceptual.md
             items:
               - name: Данные назначенной роли для управления устройствами и приложениями
@@ -8402,6 +8439,67 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
+          - name: Расписание
+            href: resources/schedule.md
+            items:
+              - name: Создание или замена
+                href: api/team-put-schedule.md
+              - name: Получение
+                href: api/schedule-get.md
+              - name: Предоставление общего доступа
+                href: api/schedule-share.md
+          - name: Группа планирования
+            href: resources/schedulinggroup.md
+            items:
+              - name: Создание
+                href: api/schedule-post-schedulinggroups.md
+              - name: Перечисление
+                href: api/schedule-list-schedulinggroups.md
+              - name: Получение
+                href: api/schedulinggroup-get.md
+              - name: Замена
+                href: api/schedulinggroup-put.md
+              - name: Удаление
+                href: api/schedulinggroup-delete.md
+          - name: Смена
+            href: resources/shift.md
+            items:
+              - name: Создание
+                href: api/schedule-post-shifts.md
+              - name: Перечисление
+                href: api/schedule-list-shifts.md
+              - name: Получение
+                href: api/shift-get.md
+              - name: Замена
+                href: api/shift-put.md
+              - name: Удаление
+                href: api/shift-delete.md
+          - name: Отгул
+            href: resources/timeoff.md
+            items:
+              - name: Создание
+                href: api/schedule-post-timesoff.md
+              - name: Перечисление
+                href: api/schedule-list-timesoff.md
+              - name: Получение
+                href: api/timeoff-get.md
+              - name: Замена
+                href: api/timeoff-put.md
+              - name: Удаление
+                href: api/timeoff-delete.md
+          - name: Причина отгула
+            href: resources/timeoffreason.md
+            items:
+              - name: Создание
+                href: api/schedule-post-timeoffreasons.md
+              - name: Перечисление
+                href: api/schedule-list-timeoffreasons.md
+              - name: Получение
+                href: api/timeoffreason-get.md
+              - name: Замена
+                href: api/timeoffreason-put.md
+              - name: Удаление
+                href: api/timeoffreason-delete.md
           - name: Диск
             href: resources/drive.md
             items:
