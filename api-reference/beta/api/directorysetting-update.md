@@ -1,23 +1,23 @@
 ---
-title: Обновите параметр каталога
-description: Обновление свойства объекта параметр конкретного каталога.
+title: Обновление параметра каталога
+description: Обновление свойств определенного объекта параметров каталога.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: baaf6994f7052155173dd58b2c6b021939dc7ba7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 1337527b7be6c8cc7f2b52f37a1698d61fa9b842
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529098"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789615"
 ---
-# <a name="update-a-directory-setting"></a>Обновите параметр каталога
+# <a name="update-a-directory-setting"></a>Обновление параметра каталога
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойства объекта параметр конкретного каталога.
+Обновление свойств определенного объекта параметров каталога.
 
-> **Примечание**: версия /beta этот интерфейс API является только относится к группам. Для *обновления groupSettings*переименован версии /v1.0 этот интерфейс API.
+> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована для *обновления граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,8 @@ ms.locfileid: "29529098"
 |Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Обновление клиента всей или группу параметров.
+<!-- { "blockType": "ignored" } -->
+Обновление параметра на уровне клиента или отдельной группы.
 ```http
 PATCH /settings/{id}
 PATCH /groups/{id}/settings/{id}
@@ -44,7 +45,7 @@ PATCH /groups/{id}/settings/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| values | settingValue | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
+| values | Коллекция [settingValue](../resources/settingvalue.md) | Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений. |
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +72,7 @@ Content-length: 178
   ]
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,

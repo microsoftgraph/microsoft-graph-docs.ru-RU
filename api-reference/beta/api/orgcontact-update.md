@@ -1,21 +1,21 @@
 ---
 title: Обновление orgcontact
-description: Обновление свойства объекта orgcontact.
+description: Обновление свойств объекта orgcontact.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 50a0d50d4905c19b152302ee908cbece5eff399a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: cec4817472fe5192c7af836131cea83bcb60d77b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517885"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789636"
 ---
 # <a name="update-orgcontact"></a>Обновление orgcontact
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойства объекта orgcontact.
+Обновление свойств объекта orgcontact.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,8 +42,8 @@ PATCH /contacts/{id}
 |:---------------|:--------|:----------|
 |city|String||
 |country|String||
-|отделу;|String||
-|onPremisesSyncEnabled|Логическое||
+|department|String||
+|onPremisesSyncEnabled|Boolean||
 |displayName|String||
 |givenName|String||
 |jobTitle|String||
@@ -57,11 +57,11 @@ PATCH /contacts/{id}
 |state|Строка||
 |streetAddress|String||
 |surname|String||
-|businessPhones|String||
+|businessPhones|Коллекция строк||
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [orgContact](../resources/orgcontact.md) объект в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [orgContact](../resources/orgcontact.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -85,9 +85,8 @@ Content-length: 222
   "displayName": "displayName-value"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,30 +1,30 @@
 ---
-title: Обновление governanceRoleSetting
-description: Обновление свойств governanceRoleSetting.
+title: Обновление Говернанцеролесеттинг
+description: Обновление свойств объекта Говернанцеролесеттинг.
 localization_priority: Normal
-ms.openlocfilehash: e5fc297690816227e1031af363ea7d4d38199e25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509331"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789622"
 ---
-# <a name="update-governancerolesetting"></a>Обновление governanceRoleSetting
+# <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств [governanceRoleSetting](../resources/governancerolesetting.md).
+Обновление свойств объекта [говернанцеролесеттинг](../resources/governancerolesetting.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
->**Примечание:** Этот интерфейс API также требуется, что источник запроса имеют по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
+>**Примечание:** Этот API также требует, чтобы у автора запроса было по `Active` крайней мере одно`owner` назначение `user access administrator`роли администратора (или) для ресурса.
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,28 +39,28 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса задаете значения параметра [governanceRuleSettings](../resources/governancerulesetting.md) , который требуется обновить. 
+В тексте запроса укажите значения для [говернанцерулесеттингс](../resources/governancerulesetting.md) , которые необходимо обновить. 
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|adminEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются, когда администратор пытается добавить назначение подходящими роли.|
-|adminMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются, когда администратор пытается добавить членами назначения ролей.|
-|userEligibleSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются, когда пользователь пытается добавить назначение подходящими роли. Это действие не поддерживается для `pimforazurerbac` сценарий в данный момент и может быть доступно в последующих сценариях.|
-|userMemberSettings|[governanceRuleSetting](../resources/governancerulesetting.md)|Параметры правил, которые вычисляются при попытке активировать его назначения ролей.|
+|Админелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда администратор пытается добавить подходящего назначения роли.|
+|Админмемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются при попытке администратора добавить назначение роли прямого члена.|
+|Усерелигиблесеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается добавить подходящего назначения роли. В настоящее время этот `pimforazurerbac` сценарий не поддерживается и может быть доступен в следующих сценариях.|
+|Усермемберсеттингс|Коллекция [говернанцерулесеттинг](../resources/governancerulesetting.md)|Параметры правил, которые оцениваются, когда пользователь пытается активировать назначение роли.|
 
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 NoContent`. Метод не возвращает данные в теле отклика. 
 
 ### <a name="error-codes"></a>Коды ошибок
-Этот интерфейс API возвращает стандартные коды ошибок HTTP. Кроме того он возвращает следующие коды ошибок.
+Этот API возвращает стандартные коды ошибок HTTP. Кроме того, возвращаются следующие коды настраиваемых ошибок.
 
 |Код ошибки     | Сообщение об ошибке         | Сведения             |
 |:--------------| :---------------------|:--------------------|
-| 400 BadRequest| RoleSettingNotFound   | [GovernanceRoleSetting](../resources/governancerolesetting.md) не существует в системе.
-| 400 BadRequest| InvalidRoleSetting    | Недопустимые значения [governanceRuleSettings](../resources/governancerulesetting.md) , предоставляемые в тексте запроса.
+| 400 Бадрекуест| Ролесеттингнотфаунд   | [Говернанцеролесеттинг](../resources/governancerolesetting.md) не существует в системе.
+| 400 Бадрекуест| Инвалидролесеттинг    | В тексте запроса указаны недопустимые значения [говернанцерулесеттингс](../resources/governancerulesetting.md) .
 
 ## <a name="example"></a>Пример 
-В этом примере обновляется параметр роли для настраиваемых ролей 3 в Wingtip Toys - производственного подписки.
+В этом примере обновляется параметр Role для настраиваемой роли 3 в подписке Wingtip Toys — произ.
 ##### <a name="request"></a>Запрос
 <!-- {
   "blockType": "request",
@@ -75,7 +75,7 @@ Content-length: 350
   "adminEligibleSettings":[{"ruleIdentifier":"ExpirationRule","setting":"{\"permanentAssignment\":false,\"maximumGrantPeriodInMinutes\":129600}"}]
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "@odata.type": "microsoft.graph.None"

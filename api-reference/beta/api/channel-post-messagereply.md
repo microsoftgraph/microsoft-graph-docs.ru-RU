@@ -4,18 +4,18 @@ description: Ответ на существующее сообщение в ка
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 700180a6cfc328a62237f3dfffe663bb6c57a24e
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: 15e1bfffe7d7634092937a0605debfd5294b142b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "30039570"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789678"
 ---
 # <a name="reply-to-a-message-in-a-channel"></a>Ответ на сообщение в канале
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового ответа на [сообщение](../resources/chatmessage.md) в указанном [канала](../resources/channel.md).
+Создание нового ответа на [сообщение](../resources/chatmessage.md) в указанном канале [](../resources/channel.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,11 +37,11 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [сообщения](../resources/chatmessage.md) . Свойство body является обязательным, остальные свойства являются необязательными.
+В тексте запроса добавьте представление объекта [Message](../resources/chatmessage.md) в формате JSON. Только свойство Body является обязательным, другие свойства являются необязательными.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа с помощью [сообщения](../resources/chatmessage.md) , которая была создана.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика с созданным [сообщением](../resources/chatmessage.md) .
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -51,7 +51,7 @@ POST /teams/{id}/channels/{id}/messages/{id}/replies
   "name": "post_reply_message"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/messages
+POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 Content-type: application/json
 
 {
