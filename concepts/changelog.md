@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: 3b483efe388887b89a12a99ecea27b1f85753efd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 058b9c292690cce0d0a0462b82f73baf6618d74b
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571426"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789692"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,14 @@ ms.locfileid: "30571426"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="march-2019"></a>Март 2019 г.
+
+### <a name="directory-apis"></a>API каталогов
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | 1.0 | Добавлены свойства **passwordNotificationWindowInDays** и **passwordValidityPeriodInDays** для ресурса [domain](/graph/api/resources/domain?view=graph-rest-1.0).|
+| Дополнение | Бета-версия и версия 1.0 | Добавлены свойства **complianceExpirationDateTime**, **profileType** и **systemLabels** свойства для ресурса [device](/graph/api/resources/device?view=graph-rest-1.0).|
+| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **isResourceAccount** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).|
 
 ### <a name="microsoft-intune-apis"></a>API Microsoft Intune
 |Тип изменения|Версия|Описание|
@@ -50,13 +58,17 @@ ms.locfileid: "30571426"
 |Дополнение|бета|Добавлен элемент **lowSecurityBiometric** для типа перечисления [androidDeviceOwnerRequiredPasswordType](/graph/api/resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype?view=graph-rest-beta)|
 |Дополнение|бета|Добавлены элементы **androidBootloaderUnlocked** и **androidFactoryRomModified** для типа перечисления [managedAppFlaggedReason](/graph/api/resources/intune-mam-managedappflaggedreason?view=graph-rest-beta)|
 
-### <a name="directory-apis"></a>API каталогов
+### <a name="microsoft-teams-apis"></a>API Microsoft Teams
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
-| Дополнение | 1.0 | Добавлены свойства **passwordNotificationWindowInDays** и **passwordValidityPeriodInDays** для ресурса [domain](/graph/api/resources/domain?view=graph-rest-1.0).|
-| Дополнение | Бета-версия и версия 1.0 | Добавлены свойства **complianceExpirationDateTime**, **profileType** и **systemLabels** свойства для ресурса [device](/graph/api/resources/device?view=graph-rest-1.0).|
-| Дополнение | Бета-версия и версия 1.0 | Добавлено свойство **isResourceAccount** для ресурса [user](/graph/api/resources/user?view=graph-rest-1.0).|
+| Дополнение | бета | Добавлены ресурсы [schedule](/api-reference/beta/resources/schedule.md), [schedulingGroup](/api-reference/beta/resources/schedulinggroup.md), [shift](/api-reference/beta/resources/shift.md), [timeOffReason](/api-reference/beta/resources/timeoffreason.md) и [timeOff](/api-reference/beta/resources/timeoff.md), а также соответствующие методы. |
+
+### <a name="onedrive-and-sharepoint-apis"></a>API OneDrive и SharePoint
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | 1.0        | Добавлено свойство навигации **subscriptions** для объекта [driveItem](/graph/api/resources/driveItem?view=graph-rest-1.0) |
 
 ## <a name="february-2019"></a>Февраль 2019 г.
 
@@ -66,6 +78,12 @@ ms.locfileid: "30571426"
 | :-------------- | :------------ | :--------------------------------------- |
 | Дополнение        | бета          | Добавлены API финансовых показателей для Dynamics 365 Business Central. Дополнительные сведения см. в статье [Справочник по API финансовых показателей](/graph/api/resources/dynamics-graph-reference?view=graph-rest-v1.0).|
 
+### <a name="onedrive-and-sharepoint-apis"></a>API OneDrive и SharePoint
+
+| **Тип изменения** | **Версия** | **Описание**                          |
+| :-------------- | :---------- | :--------------------------------------- |
+| Дополнение        | бета        | Добавлено свойство **expirationDateTime** для типа DateTimeOffset [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
+| Дополнение        | бета        | Добавлено свойство **password** для строкового типа [driveItem_invite](/graph/api/resources/driveItem_invite?view=graph-rest-beta). |
 
 ## <a name="february-2019"></a>Февраль 2019 г.
 
@@ -1474,7 +1492,7 @@ ms.locfileid: "30571426"
 |Изменение|Бета|Удалены свойства **windowsCommercialId** и **windowsCommercialIdLastModifiedTime** из сложного типа [deviceManagementSettings](/graph/api/resources/intune-deviceconfig-devicemanagementsettings?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **showDisplayNameNextToLogo** для сложного типа [intuneBrand](/graph/api/resources/intune-onboarding-intunebrand?view=graph-rest-beta).|
 |Изменение|Бета-версия|Добавлено свойство **deviceUsageType** для сложного типа [outOfBoxExperienceSettings](/graph/api/resources/intune-enrollment-outofboxexperiencesettings?view=graph-rest-beta).|
-|Изменение|Бета-версия|Добавлены свойства **supportsUserLicensing** и **supportsDeviceLicensing** для сложного типа [vppLicensingType](/graph/api/resources/intune-apps-vpplicensingtype?view=graph-rest-beta).|
+|Изменение|бета|Добавлены свойства **supportsUserLicensing** и **supportsDeviceLicensing** для сложного типа [vppLicensingType](/graph/api/resources/intune-apps-vpplicensingtype?view=graph-rest-beta).|
 |Изменение|Бета-версия|Удалено свойство **actionMessage** для сложного типа [vppTokenActionResult](/graph/api/resources/intune-onboarding-vpptokenactionresult?view=graph-rest-beta)|
 
 ### <a name="reports-apis"></a>API отчетов
@@ -1619,7 +1637,7 @@ ms.locfileid: "30571426"
 |Тип изменения|Версия|Описание|
 |:---|:---|:---|
 |Дополнение|Бета|Добавлены новые объекты:<br/>[androidDeviceComplianceLocalActionLockDeviceWithPasscode](/graph/api/resources/intune-deviceconfig-androiddevicecompliancelocalactionlockdevicewithpasscode?view=graph-rest-beta)<br/>[iosLobAppProvisioningConfigurationAssignment](/graph/api/resources/intune-apps-ioslobappprovisioningconfigurationassignment?view=graph-rest-beta)<br/>[iosVppEBookAssignment](/graph/api/resources/intune-books-iosvppebookassignment?view=graph-rest-beta)<br/>[managedDeviceMobileAppConfigurationAssignment](/graph/api/resources/intune-apps-manageddevicemobileappconfigurationassignment?view=graph-rest-beta)<br/>[managedEBookAssignment](/graph/api/resources/intune-books-managedebookassignment?view=graph-rest-beta)<br/>[managedMobileApp](/graph/api/resources/intune-mam-managedmobileapp?view=graph-rest-beta)<br/>[mobileAppAssignment](/graph/api/resources/intune-apps-mobileappassignment?view=graph-rest-beta)<br/>[termsAndConditionsAssignment](/graph/api/resources/intune-companyterms-termsandconditionsassignment?view=graph-rest-beta)<br/>[vppToken](/graph/api/resources/intune-onboarding-vpptoken?view=graph-rest-beta)<br/>[windows10PFXImportCertificateProfile](/graph/api/resources/intune-deviceconfig-windows10pfximportcertificateprofile?view=graph-rest-beta)<br/>[windowsAssignedAccessProfile](/graph/api/resources/intune-deviceconfig-windowsassignedaccessprofile?view=graph-rest-beta)<br/>[windowsDomainJoinConfiguration](/graph/api/resources/intune-deviceconfig-windowsdomainjoinconfiguration?view=graph-rest-beta)<br/>|
-|Дополнение|Бета|Добавлены новые сложные типы:<br/>[iosLobAppAssignmentSettings](/graph/api/resources/intune-apps-ioslobappassignmentsettings?view=graph-rest-beta)<br/>[iosSingleSignOnSettings](/graph/api/resources/intune-deviceconfig-iossinglesignonsettings?view=graph-rest-beta)<br/>[iosStoreAppAssignmentSettings](/graph/api/resources/intune-apps-iosstoreappassignmentsettings?view=graph-rest-beta)<br/>[iosVppAppAssignmentSettings](/graph/api/resources/intune-apps-iosvppappassignmentsettings?view=graph-rest-beta)<br/>[mobileAppAssignmentSettings](/graph/api/resources/intune-apps-mobileappassignmentsettings?view=graph-rest-beta)<br/>[proxiedDomain](/graph/api/resources/intune-deviceconfig-proxieddomain?view=graph-rest-beta)<br/>[windowsInformationProtectionProxiedDomainCollection](/graph/api/resources/intune-mam-windowsinformationprotectionproxieddomaincollection?view=graph-rest-beta)<br/>[windowsStoreForBusinessAppAssignmentSettings](/graph/api/resources/intune-apps-windowsstoreforbusinessappassignmentsettings?view=graph-rest-beta)<br/>|
+|Дополнение|бета|Добавлены новые сложные типы:<br/>[iosLobAppAssignmentSettings](/graph/api/resources/intune-apps-ioslobappassignmentsettings?view=graph-rest-beta)<br/>[iosSingleSignOnSettings](/graph/api/resources/intune-deviceconfig-iossinglesignonsettings?view=graph-rest-beta)<br/>[iosStoreAppAssignmentSettings](/graph/api/resources/intune-apps-iosstoreappassignmentsettings?view=graph-rest-beta)<br/>[iosVppAppAssignmentSettings](/graph/api/resources/intune-apps-iosvppappassignmentsettings?view=graph-rest-beta)<br/>[mobileAppAssignmentSettings](/graph/api/resources/intune-apps-mobileappassignmentsettings?view=graph-rest-beta)<br/>[proxiedDomain](/graph/api/resources/intune-deviceconfig-proxieddomain?view=graph-rest-beta)<br/>[windowsInformationProtectionProxiedDomainCollection](/graph/api/resources/intune-mam-windowsinformationprotectionproxieddomaincollection?view=graph-rest-beta)<br/>[windowsStoreForBusinessAppAssignmentSettings](/graph/api/resources/intune-apps-windowsstoreforbusinessappassignmentsettings?view=graph-rest-beta)<br/>|
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-apps-mobileapp-assign?view=graph-rest-beta) для объекта [mobileApp](/graph/api/resources/intune-apps-mobileapp?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-apps-ioslobappprovisioningconfiguration-assign?view=graph-rest-beta) к объекту [iosLobAppProvisioningConfiguration](/graph/api/resources/intune-apps-ioslobappprovisioningconfiguration?view=graph-rest-beta). |
 |Дополнение|Бета-версия|Добавлено действие [assign](/graph/api/intune-apps-manageddevicemobileappconfiguration-assign?view=graph-rest-beta) для объекта [managedDeviceMobileAppConfiguration](/graph/api/resources/intune-apps-manageddevicemobileappconfiguration?view=graph-rest-beta). |
@@ -2972,7 +2990,7 @@ ms.locfileid: "30571426"
 | Дополнение        | 1.0 и бета | Сведения о расположении конечной точки службы авторизации теперь возвращаются в заголовке _www-authenticate_ при получении запроса с пустым токеном носителя. |
 | Дополнение        | 1.0 и бета-версия | Исправлена возможность фильтрации по свойству id объекта. Пример: GET https://graph.microsoft.com/v1.0/users?$filter=id+eq+'x'<br/>Ранее в запросах POST требовалось добавлять microsoft.graph перед именем функции или действия. Например: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups.<br/>Теперь не требуется указывать префикс (хотя его по-прежнему можно указывать). Таким образом, указанный ниже запрос также будет работать. POST https://graph.microsoft.com/v1.0/me/getMemberGroups |
 | Изменение          | Бета          | Удалены имена свойств подписок.  |
-| Дополнение        | Бета          | Мы добавили возможность находить (с помощью _directorySettingTemplates_) и переопределять поведение по умолчанию (путем создания _setting_ на основе шаблона) для объектов и связанных с ними функций. Изначально для управления поведением групп Office использовался только этот шаблон. |
+| Дополнение        | бета          | Мы добавили возможность находить (с помощью _directorySettingTemplates_) и переопределять поведение по умолчанию (путем создания _setting_ на основе шаблона) для объектов и связанных с ними функций. Изначально для управления поведением групп Office использовался только этот шаблон. |
 
 ### <a name="mail-folder"></a>Папка почты
 

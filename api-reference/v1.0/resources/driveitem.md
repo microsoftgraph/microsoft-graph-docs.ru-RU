@@ -5,14 +5,14 @@ ms.date: 09/10/2017
 title: DriveItem
 localization_priority: Priority
 ms.prod: sharepoint
-ms.openlocfilehash: 58253683bfcc7407af398ba801885f9624bb2c28
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 8dbbf3b673fe7f436b9600366765425011ab129f
+ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482422"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789629"
 ---
-# <a name="driveitem-resource-type"></a>Тип ресурса DriveItem
+# <a name="driveitem-resource-type"></a>Тип ресурса driveItem
 
 Ресурс **driveItem** представляет файл, папку или другой элемент, хранящийся на диске. Все объекты файловой системы в OneDrive и SharePoint возвращаются в виде ресурсов **driveItem**.
 
@@ -74,6 +74,7 @@ ms.locfileid: "30482422"
   "createdByUser": { "@odata.type": "microsoft.graph.user" },
   "lastModifiedByUser": { "@odata.type": "microsoft.graph.user" },
   "permissions": [ {"@odata.type": "microsoft.graph.permission"} ],
+  "subscriptions": [ {"@odata.type": "microsoft.graph.subscription"} ],
   "thumbnails": [ {"@odata.type": "microsoft.graph.thumbnailSet"}],
   "versions": [ {"@odata.type": "microsoft.graph.driveItemVersion"}],
 
@@ -143,6 +144,7 @@ ms.locfileid: "30482422"
 | lastModifiedByUser | [user][]                    | Удостоверение пользователя, который последним изменил элемент. Только для чтения.
 | listItem           | [listItem][]                | Для дисков в SharePoint, связанный элемент библиотеки документов. Только для чтения. Может иметь значение null.
 | permissions        | Коллекция объектов [permission][]   | Набор разрешений для элемента. Только для чтения. Допускается значение null.
+| subscriptions      | Коллекция [subscription][] | Набор подписок на элемент. Поддерживается только в корне диска.
 | thumbnails         | Коллекция объектов [thumbnailSet][] | Коллекция, содержащая объекты [ThumbnailSet][], связанные с элементом. Дополнительные сведения см. в статье о [получении эскизов][]. Только для чтения. Допускается значение null.
 | versions           | Коллекция [driveItemVersion][] | Список предыдущих версий элемента. Дополнительные сведения см. в статье, посвященной [получению предыдущих версий][]. Только для чтения. Допускается значение null.
 | workbook           | [workbook][]                | Для файлов, представляющих собой электронные таблицы Excel, получает доступ к API книги для работы с содержимым электронной таблицы. Допускается значение null.
@@ -157,7 +159,9 @@ ms.locfileid: "30482422"
 | @microsoft.graph.downloadUrl      | string | URL-адрес, который можно использовать для скачивания содержимого этого файла. Проверка подлинности не является обязательным условием, если используется такой URL-адрес. Только для чтения.
 | @microsoft.graph.sourceUrl        | string | При создании запроса PUT такую заметку экземпляра можно использовать, чтобы указать службе скачать содержимое по URL-адресу и сохранить его как файл. Только для записи.
 
-**Примечание.** Значение @microsoft.graph.downloadUrl — это краткосрочный URL-адрес, который не сохраняется в кэше. URL-адрес будет доступен в течение короткого времени (1 час), после чего станет недействительным.
+**Примечание.** Значение @microsoft.graph.downloadUrl — это краткосрочный URL-адрес, который не сохраняется в кэше.
+URL-адрес будет доступен в течение короткого времени (1 час), после чего станет недействительным.
+Удаление разрешений на доступ к файлу для пользователя может не сразу сделать URL-адрес недействительным.
 
 ## <a name="methods"></a>Методы
 
@@ -181,6 +185,7 @@ ms.locfileid: "30482422"
 | [Добавление разрешений](../api/driveitem-invite.md)            | `POST /drive/items/{item-id}/invite`
 | [Список разрешений](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Удаление разрешения](../api/permission-delete.md)         | `DELETE /drive/items/{item-id}/permissions/{perm-id}`
+| [Получение канала WebSocket][getWebSocket]                    | `GET /drive/root/subscriptions/socketIo`
 | [Предварительный просмотр элемента][item-preview]                             | `POST /drive/items/{item-id}/preview`
 
 [item-preview]: ../api/driveitem-preview.md
@@ -199,6 +204,7 @@ ms.locfileid: "30482422"
 [folder]: folder.md
 [получение предыдущих версий]: ../api/driveitem-list-versions.md
 [получение эскизов]: ../api/driveitem-list-thumbnails.md
+[getWebSocket]: ../api/driveitem-subscriptions-socketio.md
 [identitySet]: identityset.md
 [image]: image.md
 [itemReference]: itemreference.md
@@ -213,6 +219,7 @@ ms.locfileid: "30482422"
 [shared]: shared.md
 [sharepointIds]: sharepointids.md
 [specialFolder]: specialfolder.md
+[subscription]: subscription.md
 [thumbnailSet]: thumbnailset.md
 [video]: video.md
 [workbook]: workbook.md
