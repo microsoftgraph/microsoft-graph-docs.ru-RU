@@ -1,27 +1,47 @@
 ---
-title: Тип ресурса educationAssignmentIndividualRecipient
-description: 'Используется в свойстве assignment.assignTo. Если задано значение отдельные список получателей, будет выбранного студентов в классе '
+title: Тип ресурса ЕдукатионассигнментиндивидуалреЦипиент
+description: 'Используется внутри свойства назначение. Ассигнто. Если задан отдельный список получателей, выбранные студенты в классе будут '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: de04344aae43160f5fe601c7ec4bf05337400f60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 736345901faeeb4d3fab4d417752b684f1e19307
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522492"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30799993"
 ---
-# <a name="educationassignmentindividualrecipient-resource-type"></a>Тип ресурса educationAssignmentIndividualRecipient
+# <a name="educationassignmentindividualrecipient-resource-type"></a>Тип ресурса ЕдукатионассигнментиндивидуалреЦипиент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в свойстве [assignment.assignTo](educationassignment.md) . Если задано значение отдельные список получателей, выбранных студентов в классе получите объект отправки при публикации назначения.
+Используется внутри свойства [назначение. ассигнто](educationassignment.md) . Если задан отдельный список получателей, выбранные студенты в классе получат объект отправки при публикации назначения.
 
-Этот ресурс является подкласс [educationAssignmentRecipient](educationassignmentrecipient.md).
+Этот ресурс является подклассом [едукатионассигнментреЦипиент](educationassignmentrecipient.md).
 
 ## <a name="properties"></a>Свойства
+| Свойство     | Тип   |Описание|
+|:---------------|:--------|:----------|
+|recipients|Коллекция строк|Коллекция идентификаторов получателей.|
 
-Нет.
+## <a name="json-representation"></a>Представление в формате JSON
+
+Ниже указано представление ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.educationAssignmentIndividualRecipient"
+}-->
+
+```json
+{
+  "recipients": ["String"]
+}
+
+```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
