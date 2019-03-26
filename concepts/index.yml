@@ -1,7 +1,7 @@
 ### YamlMime:YamlDocument
 ms.openlocfilehash: 2ff7e9f52c7f8671bd2246bedc9ac213bff0c859
 ms.sourcegitcommit: 10adbecb5f82556e5acc2301fc226ae6884e142b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ru-RU
 ms.lasthandoff: 03/20/2019
 ms.locfileid: "30693696"
@@ -9,7 +9,7 @@ documentType: LandingData
 title: Документация по Microsoft Graph
 metadata:
   title: Документация по Microsoft Graph
-  description: Узнайте, как использовать Microsoft Graph для создания приложений для организаций и потребителей, взаимодействующих с данными миллионов пользователей.
+  description: Узнайте, как с помощью Microsoft Graph можно создавать приложения для организаций и клиентов, которые работают с данными миллионов пользователей.
   services: active-directory
   author: CelesteDG
   manager: mtillman
@@ -37,7 +37,7 @@ sections:
     columns: 3
     items:
     - href: /graph/overview
-      html: <p>Узнайте, что можно делать с Microsoft Graph и какие популярные сценарии использования API.</p>
+      html: <p>Узнайте, что можно делать с Microsoft Graph и ознакомьтесь с популярными вариантами использования API.</p>
       image:
         src: ./images/index/i_get-started.svg
       title: Обзор Microsoft Graph
@@ -62,7 +62,7 @@ sections:
         src: ./images/index/i_api-reference.svg
       title: REST API Microsoft Graph версии 1.0
     - href: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-beta
-      html: <p>Попробуйте конечная точка бета-версии Microsoft Graph.</p>
+      html: <p>Опробуйте бета-версию конечной точки Microsoft Graph.</p>
       image:
         src: ./images/index/i_api.svg
       title: Бета-версия REST API Microsoft Graph
@@ -87,7 +87,7 @@ sections:
       title: iOS
     - image:
         src: ./images/index/logo_java.svg
-      title: Обработка
+      title: Java
     - image:
         src: ./images/index/logo_js.svg
       title: JavaScript
@@ -110,7 +110,7 @@ sections:
         src: ./images/index/logo_xamarin.svg
       title: Xamarin
     rows:
-    - title: Кратки
+    - title: Быстрый запуск
       values:
       - href: https://developer.microsoft.com/graph/quick-start?platform=option-android
       - href: https://developer.microsoft.com/graph/quick-start?platform=option-angular
@@ -138,7 +138,7 @@ sections:
       - href: /graph/tutorials/ruby
       - href: /graph/tutorials/uwp
       - href: 
-    - title: СРЕДСТВ
+    - title: Пакет SDK
       values:
       - href: https://github.com/microsoftgraph/msgraph-sdk-android
       - href: https://github.com/microsoftgraph/msgraph-sdk-javascript
@@ -165,12 +165,12 @@ sections:
         src: ./images/index/i_backlog.svg
       title: Журнал изменений
     - href: https://developer.microsoft.com/graph/blogs/
-      html: <p>Прочитайте блог, в котором вы можете получить последние новости о новых API, критические изменения и многое другое.</p>
+      html: <p>Читайте блог, чтобы узнавать последние новости о новых API, критических изменениях и многом другом.</p>
       image:
         src: ./images/index/i_blog.svg
       title: Блог Microsoft Graph
     - href: /graph/known-issues
-      html: <p>Сведения об известных проблемах, связанных с Microsoft Graph.</p>
+      html: <p>Сведения об известных проблемах, связанных с Microsoft Graph</p>
       image:
         src: ./images/index/i_investigate.svg
       title: Известные проблемы
