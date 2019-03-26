@@ -6535,6 +6535,10 @@ items:
                 href: api/educationclass-list-assignments.md
               - name: Создание задания
                 href: api/educationclass-post-assignments.md
+              - name: Перечисление категорий
+                href: api/educationclass-list-categories.md
+              - name: Создание категории
+                href: api/educationclass-post-category.md
           - name: Пользователи
             href: resources/educationuser.md
             items:
@@ -6573,6 +6577,19 @@ items:
                 href: api/educationassignment-list-submissions.md
               - name: Получение URL-адреса папки ресурсов
                 href: api/educationassignment-getresourcesfolderurl.md
+              - name: Перечисление категорий
+                href: api/educationassignment-list-categories.md
+              - name: Добавление категории
+                href: api/educationassignment-add-categories.md
+              - name: Удаление категории
+                href: api/educationassignment-remove-category.md
+          - name: Категория
+            href: resources/educationcategory.md
+            items:
+              - name: Получение категории
+                href: api/educationcategory-get.md
+              - name: Удаление категории
+                href: api/educationcategory-delete.md
           - name: Сданная работа
             href: resources/educationsubmission.md
             items:
