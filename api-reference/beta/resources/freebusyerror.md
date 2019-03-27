@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса freeBusyError
-description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
+title: Тип ресурса Фрибусеррор
+description: Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 localization_priority: Normal
-ms.openlocfilehash: f1ff7717034798830a610b35dbbff5c987cf7371
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529847"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869339"
 ---
-# <a name="freebusyerror-resource-type"></a>Тип ресурса freeBusyError
+# <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет сведения об ошибке при попытке получить доступности пользователя, ресурса или список рассылки.
+Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |message |String |Описание ошибки. |
-|ResponseCode |String |Код ответа от запроса для обеспечения доступности пользователя, ресурса или список рассылки. |
+|Респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

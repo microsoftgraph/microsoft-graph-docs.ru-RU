@@ -4,12 +4,12 @@ description: Создайте группу задач Outlook в почтово�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 291eb580228f28754acccff78f60ed6a2004155b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516009"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869262"
 ---
 # <a name="create-outlooktaskgroup"></a>Создание outlookTaskGroup
 
@@ -28,8 +28,8 @@ ms.locfileid: "29516009"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskGroups
 POST /users/{id|userPrincipalName}/outlook/taskGroups
-
 ```
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -37,11 +37,11 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [outlookTaskGroup](../resources/outlooktaskgroup.md) .
+В тексте запроса добавьте представление объекта [OutlookTaskGroup](../resources/outlooktaskgroup.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` объект [outlookTaskGroup](../resources/outlooktaskgroup.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -59,10 +59,9 @@ Content-length: 40
   "name": "Leisure tasks"
 }
 ```
-В тексте запроса укажите представление JSON объекта [outlookTaskGroup](../resources/outlooktaskgroup.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+В тексте запроса добавьте представление объекта [OutlookTaskGroup](../resources/outlooktaskgroup.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

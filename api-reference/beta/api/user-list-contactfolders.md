@@ -1,21 +1,21 @@
 ---
 title: Список объектов contactFolder
-description: Получение всех контактов папок в почтовом ящике пользователь выполнил вход.
+description: Получение всех папок контактов в почтовом ящике вошедшего пользователя.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: f5f0a485c3c134b6627fce5d3b8f04c26dee503e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4aca24e167f1d9f1bfe3529e44665347a5e1cdbd
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523283"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869269"
 ---
 # <a name="list-contactfolders"></a>Список объектов contactFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех контактов папок в почтовом ящике пользователь выполнил вход.
+Получение всех папок контактов в почтовом ящике вошедшего пользователя.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,6 +29,7 @@ ms.locfileid: "29523283"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/contactFolders
 GET /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -40,9 +41,9 @@ GET /users/{id | userPrincipalName}/contactFolders
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [ContactFolder](../resources/contactfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -55,9 +56,8 @@ GET /users/{id | userPrincipalName}/contactFolders
 ```http
 GET https://graph.microsoft.com/beta/me/contactFolders
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

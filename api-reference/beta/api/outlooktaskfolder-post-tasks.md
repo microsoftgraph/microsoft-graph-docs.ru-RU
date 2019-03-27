@@ -1,23 +1,23 @@
 ---
 title: Создание outlookTask
-description: Создание задачи Outlook в папке указанной задачи.
+description: Создание задачи Outlook в указанной папке задач.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8ba293d83e2a202a45cfebf4c318ee73d808e1e4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 9d166a34d9cfa40c3a115a8e36e4f04a6732416c
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510598"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869395"
 ---
 # <a name="create-outlooktask"></a>Создание outlookTask
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание задачи Outlook в папке указанной задачи.
+Создание задачи Outlook в указанной папке задач.
 
-Метод POST всегда игнорирует времени часть **startDateTime** и **dueDateTime** в тексте запроса и предполагается времени, всегда полночь в указанном часовом поясе.
+Метод POST всегда игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -31,6 +31,8 @@ ms.locfileid: "29510598"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/taskFolders/{id}/tasks
+POST /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks
 POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks
 ```
@@ -38,14 +40,14 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответ, который может быть в формате UTC, если не указан этот заголовок. Необязательный параметр.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [outlookTask](../resources/outlooktask.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [OutlookTask](../resources/outlooktask.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` объект [outlookTask](../resources/outlooktask.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -71,11 +73,11 @@ Content-length: 376
   }
 }
 ```
-В тексте запроса укажите представление JSON объекта [outlookTask](../resources/outlooktask.md) .
+В тексте запроса добавьте представление объекта [OutlookTask](../resources/outlooktask.md) в формате JSON.
 ##### <a name="response"></a>Ответ
-Метод POST игнорирует области времени в тексте запроса, а также предполагается времени, всегда полночь в указанном часовом поясе (PST). Затем по умолчанию, метод POST преобразует и отображает все свойства зависящих от даты в формате UTC в ответе.
+Метод POST игнорирует часть времени в теле запроса и принимает время в полночь всегда в заданном часовом поясе (PST). Затем по умолчанию метод POST преобразует и отображает все свойства, связанные с датой, в формате UTC в ответе.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

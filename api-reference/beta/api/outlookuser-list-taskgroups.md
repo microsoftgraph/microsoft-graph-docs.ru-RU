@@ -4,12 +4,12 @@ description: Получение всех групп задач Outlook в поч
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: ba8e0982fabcc9a82ae3ba2ec3b9f34b1655932b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b3ebf2896ff8805280c23680915e54f9a094a7c8
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511095"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869360"
 ---
 # <a name="list-taskgroups"></a>Список taskGroups
 
@@ -17,7 +17,7 @@ ms.locfileid: "29511095"
 
 Получение всех групп задач Outlook в почтовом ящике пользователя.
 
-Ответ всегда включает в себя группу задач по умолчанию `My Tasks`и других групп задач, которые были созданы в почтовом ящике.
+Ответ всегда включает группу `My Tasks`задач по умолчанию и все остальные группы задач, созданные в почтовом ящике.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -30,6 +30,7 @@ ms.locfileid: "29511095"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskGroups
 GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -41,11 +42,11 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTaskGroup](../resources/outlooktaskgroup.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -56,9 +57,8 @@ GET /users/{id|userPrincipalName}/outlook/taskGroups
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/taskGroups
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

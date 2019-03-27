@@ -4,12 +4,12 @@ description: С помощью этого API можно создать папк
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a1d67351469b197781c98028052ad7d1cae3bc92
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c2f845f2a332c7e9c7a637839727fe7b82e50a46
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27974947"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869248"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
@@ -26,6 +26,7 @@ ms.locfileid: "27974947"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/mailFolders
 POST /users/{id | userPrincipalName}/mailFolders
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -62,8 +63,8 @@ Content-length: 159
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

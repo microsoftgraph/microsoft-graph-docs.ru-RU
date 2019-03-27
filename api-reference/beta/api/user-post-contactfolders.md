@@ -4,12 +4,12 @@ description: Создание объекта contactFolder в стандартн
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 75550f7468bda678d20f09343a7150d5f4e70fd7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 578798cd73ffef061ca10718d7f3d7dd3adfcec5
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521903"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869276"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 
@@ -30,6 +30,7 @@ ms.locfileid: "29521903"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/contactFolders
 POST /users/{id | userPrincipalName}/contactFolders
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -63,9 +64,8 @@ Content-length: 84
 }
 ```
 Предоставьте в тексте запроса описание объекта [contactFolder](../resources/contactfolder.md) в формате JSON.
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

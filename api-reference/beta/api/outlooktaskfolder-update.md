@@ -1,23 +1,23 @@
 ---
 title: Обновление outlooktaskfolder
-description: Обновление для записи свойств папки задач Outlook.
+description: Обновление свойств, доступных для записи, папки задач Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 83b75fb2588f58480e51e4e548bfd5d05b7f941b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 0475e8b3279278f407ff979fa42cf270ae48192b
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530162"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869409"
 ---
 # <a name="update-outlooktaskfolder"></a>Обновление outlooktaskfolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление для записи свойств папки задач Outlook.
+Обновление свойств, доступных для записи, папки задач Outlook.
 
-Невозможно изменить значение свойства **имя** папки задач по умолчанию, «Задачи».
+Вы не можете изменить значение свойства **Name** папки задач по умолчанию, "задачи".
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -30,6 +30,8 @@ ms.locfileid: "29530162"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskFolders/{id}
+PATCH /me/outlook/taskGroups/{id}/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskFolders/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 ```
@@ -47,10 +49,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [outlookTaskFolder](../resources/outlooktaskfolder.md) объект в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере изменяется имя папки указанной задачи для `Charity work`.
+В следующем примере показано изменение имени указанной папки задач на `Charity work`.
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskfolder"
@@ -64,9 +66,8 @@ Content-length: 31
   "name": "Charity work"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

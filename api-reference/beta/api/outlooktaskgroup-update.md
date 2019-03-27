@@ -1,23 +1,23 @@
 ---
 title: Обновление outlooktaskgroup
-description: Обновление для записи свойств группы задач Outlook.
+description: Обновление свойств, доступных для записи, для группы задач Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: b109be3bbb0ac485dd4da7778a69a5dddf8342db
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: b628f0cf610afef88a198db721ee5395a34d1e08
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516394"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869486"
 ---
 # <a name="update-outlooktaskgroup"></a>Обновление outlooktaskgroup
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление для записи свойств группы задач Outlook.
+Обновление свойств, доступных для записи, для группы задач Outlook.
 
-Обратите внимание на то, что нельзя изменять имя задачи группы по умолчанию «Мои задачи».
+Обратите внимание, что нельзя изменить имя группы задач по умолчанию "Мои задачи".
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -30,6 +30,7 @@ ms.locfileid: "29516394"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+PATCH /me/outlook/taskGroups/{id}
 PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 ```
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
@@ -46,10 +47,10 @@ PATCH /users/{id|userPrincipalName}/outlook/taskGroups/{id}
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [outlookTaskGroup](../resources/outlooktaskgroup.md) объект в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [outlookTaskGroup](../resources/outlooktaskgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере изменяется имя группы задач «Личные задачи». 
+В следующем примере имя группы задач изменяется на "личные задачи". 
 <!-- {
   "blockType": "request",
   "name": "update_outlooktaskgroup"
@@ -64,9 +65,8 @@ Content-length: 28
   "name": "Personal Tasks",
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

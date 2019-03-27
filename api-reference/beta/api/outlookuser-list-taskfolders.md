@@ -1,21 +1,21 @@
 ---
-title: Список taskFolders
-description: Получите все папки задач Outlook в почтовом ящике пользователя.
+title: Список Таскфолдерс
+description: Получение всех папок задач Outlook в почтовом ящике пользователя.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 438f70a41044ccc5d2b94a8099647a82ae08f945
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4037567a61ba6cd96759053035edef66455b94fa
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518858"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869241"
 ---
-# <a name="list-taskfolders"></a>Список taskFolders
+# <a name="list-taskfolders"></a>Список Таскфолдерс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите все папки задач Outlook в почтовом ящике пользователя.
+Получение всех папок задач Outlook в почтовом ящике пользователя.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -28,6 +28,7 @@ ms.locfileid: "29518858"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/outlook/taskFolders
 GET /users/{id|userPrincipalName}/outlook/taskFolders
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
@@ -39,11 +40,11 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [outlookTaskFolder](../resources/outlooktaskfolder.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -54,9 +55,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders
 ```http
 GET https://graph.microsoft.com/beta/me/outlook/taskFolders
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
