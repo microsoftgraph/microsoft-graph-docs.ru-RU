@@ -1,56 +1,57 @@
 ---
 title: Создание outlookTask
-description: Создание задачи Outlook в группе задач по умолчанию (`My Tasks`) и папки задач по умолчанию (`Tasks`) в почтовом ящике пользователя.
+description: Создайте задачу Outlook в группе задач по умолчанию (`My Tasks`) и папке задач по умолчанию (`Tasks`) в почтовом ящике пользователя.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 935732e14f7e467e3094d4a5a2f82d2922020569
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4de57847638ef98347a7561291d12486468428ee
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520993"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869458"
 ---
-# <a name="create-outlooktask"></a><span data-ttu-id="fd7b5-103">Создание outlookTask</span><span class="sxs-lookup"><span data-stu-id="fd7b5-103">Create outlookTask</span></span>
+# <a name="create-outlooktask"></a><span data-ttu-id="60ed2-103">Создание outlookTask</span><span class="sxs-lookup"><span data-stu-id="60ed2-103">Create outlookTask</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fd7b5-104">Создание задачи Outlook в группе задач по умолчанию (`My Tasks`) и папки задач по умолчанию (`Tasks`) в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-104">Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.</span></span>
+<span data-ttu-id="60ed2-104">Создайте задачу Outlook в группе задач по умолчанию (`My Tasks`) и папке задач по умолчанию (`Tasks`) в почтовом ящике пользователя.</span><span class="sxs-lookup"><span data-stu-id="60ed2-104">Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.</span></span>
 
-<span data-ttu-id="fd7b5-105">Метод POST всегда игнорирует времени часть **startDateTime** и **dueDateTime** в тексте запроса и предполагается времени, всегда полночь в указанном часовом поясе.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-105">The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time to be always midnight in the specified time zone.</span></span>
+<span data-ttu-id="60ed2-105">Метод POST всегда игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе.</span><span class="sxs-lookup"><span data-stu-id="60ed2-105">The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time to be always midnight in the specified time zone.</span></span>
 
-<span data-ttu-id="fd7b5-106">По умолчанию эта операция (и операции GET, ИСПРАВЛЕНИЙ и [выполнения](../api/outlooktask-complete.md) задачи) возвращает свойства, связанные с даты в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-106">By default, this operation (and the GET, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="fd7b5-107">Можно использовать `Prefer: outlook.timezone` заголовок, чтобы все свойства, связанный с данными в ответ, представленного в часовом поясе, отличного от UTC.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-107">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
+<span data-ttu-id="60ed2-106">По умолчанию эта операция (а также операции GET, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="60ed2-106">By default, this operation (and the GET, PATCH, and [complete](../api/outlooktask-complete.md) task operations) returns date-related properties in UTC.</span></span> <span data-ttu-id="60ed2-107">Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.</span><span class="sxs-lookup"><span data-stu-id="60ed2-107">You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fd7b5-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fd7b5-108">Permissions</span></span>
-<span data-ttu-id="fd7b5-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fd7b5-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="60ed2-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="60ed2-108">Permissions</span></span>
+<span data-ttu-id="60ed2-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="60ed2-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fd7b5-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fd7b5-111">Permission type</span></span>      | <span data-ttu-id="fd7b5-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="fd7b5-112">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="60ed2-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="60ed2-111">Permission type</span></span>      | <span data-ttu-id="60ed2-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="60ed2-112">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fd7b5-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fd7b5-113">Delegated (work or school account)</span></span> | <span data-ttu-id="fd7b5-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd7b5-114">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="fd7b5-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fd7b5-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fd7b5-116">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="fd7b5-116">Tasks.ReadWrite</span></span>    |
-|<span data-ttu-id="fd7b5-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fd7b5-117">Application</span></span> | <span data-ttu-id="fd7b5-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-118">Not supported.</span></span> |
+|<span data-ttu-id="60ed2-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="60ed2-113">Delegated (work or school account)</span></span> | <span data-ttu-id="60ed2-114">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="60ed2-114">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="60ed2-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="60ed2-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="60ed2-116">Tasks.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="60ed2-116">Tasks.ReadWrite</span></span>    |
+|<span data-ttu-id="60ed2-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="60ed2-117">Application</span></span> | <span data-ttu-id="60ed2-118">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="60ed2-118">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="fd7b5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fd7b5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="60ed2-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="60ed2-119">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/outlook/tasks
 POST /users/{id|userPrincipalName}/outlook/tasks
 ```
-## <a name="request-headers"></a><span data-ttu-id="fd7b5-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fd7b5-120">Request headers</span></span>
-| <span data-ttu-id="fd7b5-121">Имя</span><span class="sxs-lookup"><span data-stu-id="fd7b5-121">Name</span></span>       | <span data-ttu-id="fd7b5-122">Описание</span><span class="sxs-lookup"><span data-stu-id="fd7b5-122">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="60ed2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="60ed2-120">Request headers</span></span>
+| <span data-ttu-id="60ed2-121">Имя</span><span class="sxs-lookup"><span data-stu-id="60ed2-121">Name</span></span>       | <span data-ttu-id="60ed2-122">Описание</span><span class="sxs-lookup"><span data-stu-id="60ed2-122">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fd7b5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fd7b5-123">Authorization</span></span>  | <span data-ttu-id="fd7b5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-p103">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="fd7b5-126">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="fd7b5-126">Prefer: outlook.timezone</span></span> | <span data-ttu-id="fd7b5-127">Указывает часовой пояс для свойств времени в ответ, который может быть в формате UTC, если не указан этот заголовок.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-127">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="fd7b5-128">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-128">Optional.</span></span>|
+| <span data-ttu-id="60ed2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="60ed2-123">Authorization</span></span>  | <span data-ttu-id="60ed2-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="60ed2-p103">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="60ed2-126">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="60ed2-126">Prefer: outlook.timezone</span></span> | <span data-ttu-id="60ed2-127">Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан.</span><span class="sxs-lookup"><span data-stu-id="60ed2-127">Specifies the time zone for time properties in the response, which would be in UTC if this header is not specified.</span></span> <span data-ttu-id="60ed2-128">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="60ed2-128">Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fd7b5-129">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="fd7b5-129">Request body</span></span>
-<span data-ttu-id="fd7b5-130">В тексте запроса укажите представление JSON объекта [outlookTask](../resources/outlooktask.md) .</span><span class="sxs-lookup"><span data-stu-id="fd7b5-130">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="60ed2-129">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="60ed2-129">Request body</span></span>
+<span data-ttu-id="60ed2-130">В тексте запроса добавьте представление объекта [OutlookTask](../resources/outlooktask.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="60ed2-130">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fd7b5-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="fd7b5-131">Response</span></span>
+## <a name="response"></a><span data-ttu-id="60ed2-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="60ed2-131">Response</span></span>
 
-<span data-ttu-id="fd7b5-132">Успешно завершена, этот метод возвращает `201 Created` объект [outlookTask](../resources/outlooktask.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-132">If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
+<span data-ttu-id="60ed2-132">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="60ed2-132">If successful, this method returns `201 Created` response code and [outlookTask](../resources/outlooktask.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fd7b5-133">Пример</span><span class="sxs-lookup"><span data-stu-id="fd7b5-133">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fd7b5-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="fd7b5-134">Request</span></span>
-<span data-ttu-id="fd7b5-135">В следующем примере показано использование `Prefer: outlook.timezone` заголовка.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-135">The following example shows the use of the `Prefer: outlook.timezone` header.</span></span> <span data-ttu-id="fd7b5-136">Создает задачу, выражает **startDateTime** и **dueDateTime** в Восточное время (ПРИБЛ) и включает в себя `Prefer` заголовка из Тихоокеанское время (PST).</span><span class="sxs-lookup"><span data-stu-id="fd7b5-136">It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).</span></span>
+## <a name="example"></a><span data-ttu-id="60ed2-133">Пример</span><span class="sxs-lookup"><span data-stu-id="60ed2-133">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="60ed2-134">Запрос</span><span class="sxs-lookup"><span data-stu-id="60ed2-134">Request</span></span>
+<span data-ttu-id="60ed2-135">В приведенном ниже примере показано использование `Prefer: outlook.timezone` заголовка.</span><span class="sxs-lookup"><span data-stu-id="60ed2-135">The following example shows the use of the `Prefer: outlook.timezone` header.</span></span> <span data-ttu-id="60ed2-136">Он создает задачу, выражает **startDateTime** и **Дуедатетиме** в восточное стандартное время (EST) и включает `Prefer` заголовку тихоокеанского стандартного времени (PST).</span><span class="sxs-lookup"><span data-stu-id="60ed2-136">It creates a task, expresses **startDateTime** and **dueDateTime** in Eastern Standard Time (EST), and includes a `Prefer` header of Pacific Standard Time (PST).</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_outlooktask_from_outlookuser"
@@ -74,13 +75,13 @@ Content-length: 276
   }
 }
 ```
-<span data-ttu-id="fd7b5-137">В тексте запроса укажите представление JSON объекта [outlookTask](../resources/outlooktask.md) .</span><span class="sxs-lookup"><span data-stu-id="fd7b5-137">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="fd7b5-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="fd7b5-138">Response</span></span>
-<span data-ttu-id="fd7b5-139">Метод POST игнорирует времени часть **startDateTime** и **dueDateTime** в тексте запроса, а также предполагается времени, всегда полночь в указанном часовом поясе (ПРИБЛ).</span><span class="sxs-lookup"><span data-stu-id="fd7b5-139">The POST method ignores the time portion of **startDateTime** and **dueDateTime** in the request body and assumes the time to be always midnight in the specified time zone (EST).</span></span>
+<span data-ttu-id="60ed2-137">В тексте запроса добавьте представление объекта [OutlookTask](../resources/outlooktask.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="60ed2-137">In the request body, supply a JSON representation of [outlookTask](../resources/outlooktask.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="60ed2-138">Ответ</span><span class="sxs-lookup"><span data-stu-id="60ed2-138">Response</span></span>
+<span data-ttu-id="60ed2-139">Метод POST игнорирует часть времени **startDateTime** и **дуедатетиме** в теле запроса и предполагает, что время будет всегда в полночь в заданном часовом поясе (EST).</span><span class="sxs-lookup"><span data-stu-id="60ed2-139">The POST method ignores the time portion of **startDateTime** and **dueDateTime** in the request body and assumes the time to be always midnight in the specified time zone (EST).</span></span>
 
-<span data-ttu-id="fd7b5-140">Поскольку `Prefer` заголовок указывает PST-файлов, метод POST выражает все свойства зависящих от даты в ответ в PST-файлов.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-140">Since the `Prefer` header specifies PST, the POST method expresses all the date-related properties in the response in PST.</span></span> <span data-ttu-id="fd7b5-141">В частности для свойства **startDateTime** и **dueDateTime** метода POST преобразует полночь в EST PST-файл и возвращает их в PST-файлов в ответе.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-141">In particular, for the **startDateTime** and **dueDateTime** properties, the POST method converts midnight in EST to PST and returns them in PST in the response.</span></span>
+<span data-ttu-id="60ed2-140">Так как `Prefer` заголовок указывает PST-файл, метод POST выражает все свойства, связанные с датами, в ответе в PST-файле.</span><span class="sxs-lookup"><span data-stu-id="60ed2-140">Since the `Prefer` header specifies PST, the POST method expresses all the date-related properties in the response in PST.</span></span> <span data-ttu-id="60ed2-141">В частности, для свойств **startDateTime** и **дуедатетиме** метод POST преобразовывает полночь в СРЕДСТВе EST в PST-файл и возвращает их в PST-файле в ответе.</span><span class="sxs-lookup"><span data-stu-id="60ed2-141">In particular, for the **startDateTime** and **dueDateTime** properties, the POST method converts midnight in EST to PST and returns them in PST in the response.</span></span>
 
-<span data-ttu-id="fd7b5-p107">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="fd7b5-p107">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="60ed2-p107">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="60ed2-p107">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
