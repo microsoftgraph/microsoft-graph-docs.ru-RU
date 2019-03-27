@@ -4,12 +4,12 @@ description: Отправка сообщения, указанного в тел
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 542c36f4d52c461b5a423d9a7fb93a06b94b9b70
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: f08bb8969ee05384f4de0fec90883bb216df19cc
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27975808"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869318"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -30,6 +30,7 @@ ms.locfileid: "27975808"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
+POST /me/sendMail
 POST /users/{id | userPrincipalName}/sendMail
 ```
 ## <a name="request-headers"></a>Заголовки запросов
@@ -88,7 +89,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
@@ -99,7 +100,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-Следующий пример создает сообщение с использованием настраиваемых заголовков сообщений Интернета и отправляет сообщение.
+В следующем примере создается сообщение с использованием настраиваемых заголовков сообщений Интернета и выполняется его отправка.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

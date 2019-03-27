@@ -2,12 +2,12 @@
 title: Тип ресурса chatMessage
 description: Представляет отдельное сообщение чата в объекте channel или chat. Сообщение может быть корневым или частью беседы, определяемой свойством **replyToId** в сообщении.
 localization_priority: Priority
-ms.openlocfilehash: a74f422c6bf60e1293d8620b440152be77dacdc7
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: 1f1e38e53a7c7ad1b0452c9facc6d7f97314094e
+ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644323"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800000"
 ---
 # <a name="chatmessage-resource-type"></a>Тип ресурса chatMessage
 
@@ -38,8 +38,7 @@ ms.locfileid: "30644323"
 |createdDateTime|dateTimeOffset|Только для чтения. Метка времени создания сообщения.|
 |lastModifiedDateTime|dateTimeOffset|Только для чтения. Метка времени изменения или обновления сообщения.|
 |deleted|Boolean|Указывает, было ли сообщение обратимо удалено.|
-|deletedDateTime|dateTimeOffset|Только для чтения. Метка времени удаления сообщения. |
-|subject|string|Строка темы сообщения. Необязательно.|
+|deletedDateTime|dateTimeOffset|Только для чтения. Метка времени, в которое сообщение было удалено, или значение null, если сообщение не было удалено. |
 |body|[itemBody](itembody.md)|Представление содержимого сообщения в формате Plaintext/HTML. Возвращает неформатированный текст по умолчанию. Приложение может выбрать формат HTML в составе параметров запроса|
 |summary|string|Сводный текст сообщения, который можно использовать для push-уведомлений и представлений сводки или резервных представлений|
 |mentions|Коллекция [chatMessageMention](chatmention.md)| Список сущностей, упомянутых в сообщении. В настоящее время поддерживаются значения user, bot, team и channel.|
@@ -78,7 +77,6 @@ ms.locfileid: "30644323"
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
-  "isDeleted": "boolean",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},

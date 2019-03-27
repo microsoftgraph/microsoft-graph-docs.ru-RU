@@ -4,18 +4,18 @@ description: Получение сведений о доступности ко�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 0c2f6a54664242831d7fd3f2ddfc6a44984674e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 48283f7e81a1faea34d91dec72906b71361c816a
+ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530029"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30869381"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов для определенного периода времени.
+Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов (комнат или оборудования) для определенного периода времени.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +45,7 @@ POST /users/{id|userPrincipalName}/calendar/getSchedule
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|availabilityViewInterval|String|Представляет длительность периода времени в свойстве **availabilityView** отклика. Значение по умолчанию: 30 минут. Минимальное значение: 6. Максимальное значение: 1440. Необязательное свойство.|
+|availabilityViewInterval|Int32|Представляет длительность периода времени в свойстве **availabilityView** отклика. Значение по умолчанию: 30 минут. Минимальное значение: 6. Максимальное значение: 1440. Необязательное свойство.|
 |endTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс завершения периода.|
 |schedules|Коллекция String|Коллекция SMTP-адресов пользователей, списков рассылки или ресурсов для получения сведений о доступности.|
 |startTime|[dateTimeTimeZone](../resources/datetimetimezone.md)|Дата, время и часовой пояс начала периода.|
@@ -67,22 +67,21 @@ Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
 {        
-    "schedules": ["AdeleV@contoso.onmicrosoft.com", "AlexW@contoso.OnMicrosoft.com"],
+    "schedules": ["adelev@contoso.onmicrosoft.com", "meganb@contoso.onmicrosoft.com"],
     "startTime": {
-        "dateTime": "2018-08-06T09:00:00",
+        "dateTime": "2019-03-15T09:00:00",
         "timeZone": "Pacific Standard Time"
     },
     "endTime": {
-        "dateTime": "2018-08-06T18:00:00",
+        "dateTime": "2019-03-15T18:00:00",
         "timeZone": "Pacific Standard Time"
     },
-    "availabilityViewInterval": "15"
+    "availabilityViewInterval": "60"
 }
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -94,134 +93,130 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
-    "value":[
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "value": [
         {
-            "scheduleId":"AdeleV@contoso.onmicrosoft.com",
-            "availabilityView":"222222000022000000000000000000000000",
-            "scheduleItems":[
+            "scheduleId": "adelev@contoso.onmicrosoft.com",
+            "availabilityView": "000220000",
+            "scheduleItems": [
                 {
-                    "isPrivate":false,
-                    "status":"Busy",
-                    "subject":"Admininstrators debrief",
-                    "location":"Foyer",
-                    "start":{
-                        "dateTime":"2018-08-06T09:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "isPrivate": false,
+                    "status": "busy",
+                    "subject": "Let's go for lunch",
+                    "location": "Harry's Bar",
+                    "start": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     },
-                    "end":{
-                        "dateTime":"2018-08-06T10:30:00.0000000",
-                        "timeZone":"Pacific Standard Time"
-                    }
-                },
-                {
-                    "isPrivate":false,
-                    "status":"Busy",
-                    "subject":"Lunch yoga",
-                    "location":"Courtyard",
-                    "start":{
-                        "dateTime":"2018-08-06T11:30:00.0000000",
-                        "timeZone":"Pacific Standard Time"
-                    },
-                    "end":{
-                        "dateTime":"2018-08-06T12:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "end": {
+                        "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     }
                 }
             ],
-            "workingHours":{
-                "daysOfWeek":[
+            "workingHours": {
+                "daysOfWeek": [
                     "monday",
                     "tuesday",
                     "wednesday",
                     "thursday",
                     "friday"
                 ],
-                "startTime":"08:00:00.0000000",
-                "endTime":"17:00:00.0000000",
-                "timeZone":{
-                    "@odata.type":"#microsoft.graph.customTimeZone",
-                    "bias":480,
-                    "name":"Customized Time Zone",
-                    "standardOffset":{
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":1,
-                        "dayOfWeek":"sunday",
-                        "month":11,
-                        "year":0
-                    },
-                    "daylightOffset":{
-                        "daylightBias":-60,
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":2,
-                        "dayOfWeek":"sunday",
-                        "month":3,
-                        "year":0
-                    }
+                "startTime": "08:00:00.0000000",
+                "endTime": "17:00:00.0000000",
+                "timeZone": {
+                    "name": "Pacific Standard Time"
                 }
             }
         },
         {
-            "scheduleId":"AlexW@contoso.OnMicrosoft.com",
-            "availabilityView":"111111002222222200000000000000000000",
-            "scheduleItems":[
+            "scheduleId": "meganb@contoso.onmicrosoft.com",
+            "availabilityView": "200220010",
+            "scheduleItems": [
                 {
-                    "isPrivate":false,
-                    "status":"Tentative",
-                    "subject":"Admininstrators debrief",
-                    "location":"Foyer",
-                    "start":{
-                        "dateTime":"2018-08-06T09:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "status": "busy",
+                    "start": {
+                        "dateTime": "2019-03-15T08:30:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     },
-                    "end":{
-                        "dateTime":"2018-08-06T10:30:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "end": {
+                        "dateTime": "2019-03-15T09:30:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     }
                 },
                 {
-                    "isPrivate":false,
-                    "status":"Busy",
-                    "subject":"Q4 planning",
-                    "location":"Big Bear",
-                    "start":{
-                        "dateTime":"2018-08-06T11:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "status": "busy",
+                    "start": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     },
-                    "end":{
-                        "dateTime":"2018-08-06T13:00:00.0000000",
-                        "timeZone":"Pacific Standard Time"
+                    "end": {
+                        "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "status": "tentative",
+                    "start": {
+                        "dateTime": "2019-03-15T12:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T13:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "status": "busy",
+                    "start": {
+                        "dateTime": "2019-03-15T13:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T14:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    }
+                },
+                {
+                    "status": "tentative",
+                    "start": {
+                        "dateTime": "2019-03-15T16:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
+                    },
+                    "end": {
+                        "dateTime": "2019-03-15T17:00:00.0000000",
+                        "timeZone": "Pacific Standard Time"
                     }
                 }
             ],
-            "workingHours":{
-                "daysOfWeek":[
+            "workingHours": {
+                "daysOfWeek": [
                     "monday",
                     "tuesday",
                     "wednesday",
                     "thursday",
                     "friday"
                 ],
-                "startTime":"08:00:00.0000000",
-                "endTime":"17:00:00.0000000",
-                "timeZone":{
-                    "@odata.type":"#microsoft.graph.customTimeZone",
-                    "bias":480,
-                    "name":"Customized Time Zone",
-                    "standardOffset":{
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":1,
-                        "dayOfWeek":"sunday",
-                        "month":11,
-                        "year":0
+                "startTime": "08:00:00.0000000",
+                "endTime": "17:00:00.0000000",
+                "timeZone": {
+                    "@odata.type": "#microsoft.graph.customTimeZone",
+                    "bias": 480,
+                    "name": "Customized Time Zone",
+                    "standardOffset": {
+                        "time": "02:00:00.0000000",
+                        "dayOccurrence": 1,
+                        "dayOfWeek": "sunday",
+                        "month": 11,
+                        "year": 0
                     },
-                    "daylightOffset":{
-                        "daylightBias":-60,
-                        "time":"02:00:00.0000000",
-                        "dayOccurrence":2,
-                        "dayOfWeek":"sunday",
-                        "month":3,
-                        "year":0
+                    "daylightOffset": {
+                        "daylightBias": -60,
+                        "time": "02:00:00.0000000",
+                        "dayOccurrence": 2,
+                        "dayOfWeek": "sunday",
+                        "month": 3,
+                        "year": 0
                     }
                 }
             }
