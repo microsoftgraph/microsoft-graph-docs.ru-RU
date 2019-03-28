@@ -2,22 +2,24 @@
 title: Тип ресурсов timeSlot
 description: Период времени.
 localization_priority: Normal
-ms.openlocfilehash: 9a2469447bbf0fbb059b41f9bf2b546c341f9190
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: ee8746d1278f4c9422fa2803895a20c359d5f1e0
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517766"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936292"
 ---
-# <a name="timeslot-resource-type"></a><span data-ttu-id="6ec60-103">Тип ресурсов timeSlot</span><span class="sxs-lookup"><span data-stu-id="6ec60-103">timeSlot resource type</span></span>
+# <a name="timeslot-resource-type"></a><span data-ttu-id="3e2aa-103">Тип ресурсов timeSlot</span><span class="sxs-lookup"><span data-stu-id="3e2aa-103">timeSlot resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="6ec60-104">Период времени.</span><span class="sxs-lookup"><span data-stu-id="6ec60-104">A time period.</span></span>
+<span data-ttu-id="3e2aa-104">Представляет интервал времени для собрания.</span><span class="sxs-lookup"><span data-stu-id="3e2aa-104">Represents a time slot for a meeting.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="6ec60-105">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="6ec60-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="3e2aa-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3e2aa-105">JSON representation</span></span>
 
-<span data-ttu-id="6ec60-106">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="6ec60-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="3e2aa-106">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="3e2aa-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,11 +36,11 @@ ms.locfileid: "29517766"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="6ec60-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="6ec60-107">Properties</span></span>
-| <span data-ttu-id="6ec60-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="6ec60-108">Property</span></span>     | <span data-ttu-id="6ec60-109">Тип</span><span class="sxs-lookup"><span data-stu-id="6ec60-109">Type</span></span>   |<span data-ttu-id="6ec60-110">Описание</span><span class="sxs-lookup"><span data-stu-id="6ec60-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="3e2aa-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="3e2aa-107">Properties</span></span>
+| <span data-ttu-id="3e2aa-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="3e2aa-108">Property</span></span>     | <span data-ttu-id="3e2aa-109">Тип</span><span class="sxs-lookup"><span data-stu-id="3e2aa-109">Type</span></span>   |<span data-ttu-id="3e2aa-110">Описание</span><span class="sxs-lookup"><span data-stu-id="3e2aa-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="6ec60-111">end</span><span class="sxs-lookup"><span data-stu-id="6ec60-111">end</span></span>|[<span data-ttu-id="6ec60-112">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="6ec60-112">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="6ec60-113">Время начала периода.</span><span class="sxs-lookup"><span data-stu-id="6ec60-113">The time a period begins.</span></span>|
-|<span data-ttu-id="6ec60-114">start</span><span class="sxs-lookup"><span data-stu-id="6ec60-114">start</span></span>|[<span data-ttu-id="6ec60-115">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="6ec60-115">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="6ec60-116">Время окончания периода.</span><span class="sxs-lookup"><span data-stu-id="6ec60-116">The time the period ends.</span></span>|
+|<span data-ttu-id="3e2aa-111">end</span><span class="sxs-lookup"><span data-stu-id="3e2aa-111">end</span></span>|[<span data-ttu-id="3e2aa-112">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="3e2aa-112">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="3e2aa-113">Дата, время и часовой пояс, с которого начинается период.</span><span class="sxs-lookup"><span data-stu-id="3e2aa-113">The date, time, and time zone that a period begins.</span></span> |
+|<span data-ttu-id="3e2aa-114">start</span><span class="sxs-lookup"><span data-stu-id="3e2aa-114">start</span></span>|[<span data-ttu-id="3e2aa-115">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="3e2aa-115">dateTimeTimeZone</span></span>](datetimetimezone.md)|<span data-ttu-id="3e2aa-116">Дата, время и часовой пояс, в течение которого заканчивается срок.</span><span class="sxs-lookup"><span data-stu-id="3e2aa-116">The date, time, and time zone that a period ends.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
