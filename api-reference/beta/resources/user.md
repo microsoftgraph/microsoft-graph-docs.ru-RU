@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d0581afe678fd17d50f669bed281d1f0a1e53998
-ms.sourcegitcommit: 159cf5aaa39d3721d96d3fd800f6a8b91159f74d
+ms.openlocfilehash: 2c566c671a3ba83168a77e358c2d8ceccfe1bf45
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30379558"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936320"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -62,8 +62,8 @@ ms.locfileid: "30379558"
 |[Перечисление agreementAcceptances](../api/user-list-agreementacceptances.md) | Коллекция [agreementAcceptance](agreementacceptance.md) | Получение списка состояний принятия пользователем условий использования.|
 |[assignLicense](../api/user-assignlicense.md)|[user](user.md)|Добавление или удаление подписок пользователя. Вы также можете включать и отключать отдельные планы, связанные с подпиской.|
 |[Перечисление licenseDetails](../api/user-list-licensedetails.md) |Коллекция объектов [licenseDetails](licensedetails.md)| Получение коллекции объектов licenseDetails.|
-|[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка участия в списке групп. Это транзитивная проверка.|
-|[findmeetingtimes](../api/user-findmeetingtimes.md)|[findMeetingTimesResponse](findmeetingtimesresponse.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
+|[checkMemberGroups](../api/user-checkmembergroups.md)|Коллекция строк|Проверка членства в списке групп. Это транзитивная проверка.|
+|[findMeetingTimes](../api/user-findmeetingtimes.md)|[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md)|Получение времени и местоположения для собрания с учетом доступности участника, а также ограничений по местоположению или времени.|
 |[findRoomLists](../api/user-findroomlists.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение списка помещений, определенных в клиенте.|
 |[findRooms](../api/user-findrooms.md)|Коллекция [emailaddress.md](emailaddress.md) | Получение всех помещений для собраний в клиенте пользователя или определенном списке помещений. |
 |[getMailTips](../api/user-getmailtips.md)|Коллекия [mailTips](mailtips.md)|Возвращение подсказок о доступности одного или нескольких получателей для вошедшего пользователя. |
