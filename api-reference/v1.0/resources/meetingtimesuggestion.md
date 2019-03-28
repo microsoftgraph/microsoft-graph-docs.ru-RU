@@ -1,21 +1,21 @@
 ---
 title: Тип ресурсов meetingTimeSuggestion
-description: 'Предложения о собрании, который содержит сведения, например, время собрания, вероятность присутствия, отдельных '
+description: 'Предложение о собрании, которое включает такие сведения, как время собрания, вероятность посещения, Индивидуальная '
 localization_priority: Normal
-author: VinodRavichandran
-ms.prod: microsoft-teams
-ms.openlocfilehash: 8472526709e563900ac5193b0065111f3ed620fe
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 4c5a4cb4d094e7fd7fe9b0e56227a556c6e5b5d1
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978811"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936264"
 ---
 # <a name="meetingtimesuggestion-resource-type"></a>Тип ресурсов meetingTimeSuggestion
 
 Вариант собрания с такими сведениями, как информация о времени собрания, вероятности участия, занятости отдельных участников, а также доступных расположениях для проведения собрания.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -33,6 +33,7 @@ ms.locfileid: "27978811"
   "confidence": 100.0,
   "locations": [{"@odata.type": "microsoft.graph.location"}],
   "meetingTimeSlot": {"@odata.type": "microsoft.graph.timeSlot"},
+  "order": 1024,
   "organizerAvailability": "String",
   "suggestionReason": "String"
 }
@@ -44,9 +45,10 @@ ms.locfileid: "27978811"
 |attendeeAvailability|Коллекция [attendeeAvailability](attendeeavailability.md)|Массив, показывающий состояние занятости каждого участника для этого варианта собрания.|
 |confidence|Double|Процент вероятности того, что все участники будут присутствовать на собрании.|
 |locations|Коллекция [location](location.md)|Массив, в котором указано имя и географические данные каждого расположения для проведения этого варианта собрания.|
-|meetingTimeSlot|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
-|organizerAvailability|freeBusyStatus| Доступность Организатор собрания для этого предложения о собрании. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
-|suggestionReason|String|Обоснование предложенного времени для проведения собрания.|
+|Митингтимеслот|[timeSlot](timeslot.md)|Период времени, предложенный для собрания.|
+|порядке|Int32|Порядок предложений по времени собраний, отсортированных по их вычисленному значению, от высокого до невысокой, затем по чронологи при наличии предложений с одинаковым уровнем достоверности. |
+|Организераваилабилити|Фрибусистатус| Доступность организатора собрания для этого варианта собрания. Возможные `free`значения:, `tentative`, `busy`, `oof`, `workingElsewhere`,. `unknown`|
+|Suggestionreason объяснение|String|Обоснование предложенного времени для проведения собрания.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

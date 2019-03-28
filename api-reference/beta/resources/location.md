@@ -2,12 +2,14 @@
 title: Тип ресурса Location
 description: Представляет сведения о месте проведения события.
 localization_priority: Normal
-ms.openlocfilehash: 6e3c61bcf8f22a20bf41053c2310dc51f5b800a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 6c3dd1bdb565ce32e464e38d7909988b4f4c7791
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508610"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936285"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
 
@@ -33,9 +35,9 @@ ms.locfileid: "29508610"
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
-| locationEmailAddress | String | Необязательный электронный адрес для расположения. |
-| locationUri | String | Необязательный URI, представляющий местоположение. |
-| locationType | String | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
+| locationEmailAddress | Строка | Необязательный электронный адрес для расположения. |
+| locationUri | Строка | Необязательный URI, представляющий местоположение. |
+| locationType | locationType | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
 | uniqueId | String | Только для внутреннего использования.|
 | uniqueIdType | String | Только для внутреннего использования. |
 
@@ -55,8 +57,8 @@ ms.locfileid: "29508610"
   "coordinates": {"@odata.type": "microsoft.graph.outlookGeoCoordinates"},
   "displayName": "string",
   "locationEmailAddress": "string",
-  "locationUri": "string",
   "locationType": "string",
+  "locationUri": "string",
   "uniqueId": "string",
   "uniqueIdType": "string"
 }

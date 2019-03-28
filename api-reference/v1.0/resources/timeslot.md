@@ -2,18 +2,20 @@
 title: Тип ресурсов timeSlot
 description: Период времени.
 localization_priority: Normal
-ms.openlocfilehash: e01b8d0f34a21eb18bc92e8bcc4e1b8365541d5c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 7b09ae7f1c60a8348e9f22b856c65f326432e408
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27860566"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936243"
 ---
 # <a name="timeslot-resource-type"></a>Тип ресурсов timeSlot
 
-Период времени.
+Представляет интервал времени для собрания.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -35,8 +37,8 @@ ms.locfileid: "27860566"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|end|[dateTimeTimeZone](datetimetimezone.md)|Время начала периода.|
-|start|[dateTimeTimeZone](datetimetimezone.md)|Время окончания периода.|
+|end|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, с которого начинается период. |
+|start|[dateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, в течение которого заканчивается срок.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

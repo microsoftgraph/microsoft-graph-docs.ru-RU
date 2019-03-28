@@ -49,16 +49,16 @@ items:
             href: /graph/extensibility-open-users?toc=./ref/toc.json
           - name: Использование расширений схемы (пример)
             href: /graph/extensibility-schema-groups?toc=./ref/toc.json
-      - name: Ресурсы
-        items:
-          - name: Рекомендации
-            href: /graph/best-practices-concept?toc=./ref/toc.json
-          - name: Известные проблемы
-            href: /graph/known-issues?toc=./ref/toc.json
-          - name: Журнал изменений
-            href: /graph/changelog?toc=./ref/toc.json
-          - name: Ошибки
-            href: /graph/errors?toc=./ref/toc.json
+  - name: Ресурсы
+    items:
+      - name: Рекомендации
+        href: /graph/best-practices-concept?toc=./ref/toc.json
+      - name: Известные проблемы
+        href: /graph/known-issues?toc=./ref/toc.json
+      - name: Журнал изменений
+        href: /graph/changelog?toc=./ref/toc.json
+      - name: Ошибки
+        href: /graph/errors?toc=./ref/toc.json
   - name: Справочные материалы
     href: overview.md
     expanded: true
@@ -101,6 +101,8 @@ items:
                 href: api/user-list-calendarview.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
+              - name: Получение сведений о доступности
+                href: api/calendar-getschedule.md
               - name: Поиск времени для собрания
                 href: api/user-findmeetingtimes.md
           - name: Контакты
@@ -537,7 +539,9 @@ items:
                 href: api/calendar-post-events.md
               - name: Представление напоминаний
                 href: api/user-reminderview.md
-              - name: Поиск времени собраний
+              - name: Получение сведений о доступности
+                href: api/calendar-getschedule.md
+              - name: Поиск времени для собрания
                 href: api/user-findmeetingtimes.md
           - name: Представление календаря
             href: api/calendar-list-calendarview.md

@@ -4,12 +4,12 @@ description: ПредЛожите время и расположения соб�
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 345b42690644fb94a2b6b2bdf6b3cfcc9ead6333
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.openlocfilehash: 2aa8f10d1462065f0ae889261f25a15a3c29359b
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057059"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936299"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 
@@ -18,6 +18,8 @@ ms.locfileid: "30057059"
 ПредЛожите время и расположения собраний на основе доступности организатора и участников, а также ограничений времени или расположения, заданных в качестве параметров.
 
 Если метод **findMeetingTimes** не может вернуть предложение, то в свойстве **emptySuggestionsReason** будет указана причина. Это значение поможет вам лучше настраивать параметры и снова вызывать метод **findMeetingTimes**.
+
+Алгоритм, который используется для предложения времени и расположений для собраний, очень тонкая настройка времени. В сценариях, например тестовых средах, в которых входные параметры и данные календаря действуют как статические, следует ожидать, что предлагаемые результаты могут отличаться с течением времени.
 
 
 ## <a name="permissions"></a>Разрешения
@@ -47,14 +49,14 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attendees|Коллекция [аттендидатамодел](../resources/attendeedatamodel.md)|Коллекция участников или ресурсов собрания. В соответствующем свойстве **введите** или `required` `optional` выберите для человека и для `resource` ресурса, например комнаты для собраний. Если этот параметр не **** указан, `required` findMeetingTimes предполагается для свойства **Type** . Пустая коллекция приводит к тому, что **findMeetingTimes** ищет свободные интервалы времени только для организатора. Необязательное свойство.|
+|attendees|Коллекция объектов [attendeeBase](../resources/attendeebase.md)|Коллекция участников или ресурсов для собрания. В соответствующем свойстве **введите** или `required` `optional` выберите для человека и для `resource` ресурса, например комнаты для собраний. Если этот параметр не **** указан, `required` findMeetingTimes предполагается для свойства **Type** . Если указана пустая коллекция, действие **findMeetingTimes** ищет свободные периоды времени для организатора. Необязательное свойство.|
 |isOrganizerOptional|Edm.Boolean|Задайте значение `True`, если присутствие организатора не обязательно. Значение по умолчанию: `false`. Необязательный параметр.|
-|locationConstraint|[Локатионконстраинтс](../resources/locationconstraints.md)|Требования организатора к месту проведения собрания (например, требуется ли соответствующее предложение или собрание может пройти только в определенных местах). Необязательный параметр.|
+|locationConstraint|[locationConstraint](../resources/locationconstraint.md)|Требования организатора к месту проведения собрания (например, требуется ли соответствующее предложение или собрание может пройти только в определенных местах). Необязательный параметр.|
 |maxCandidates|Edm.Int32|Максимальное количество возвращаемых предложений времени проведения собрания. Необязательный параметр.|
-|meetingDuration|Edm.Duration|Длительность собрания, обозначенная в формате [ISO 8601](https://www.iso.org/iso/iso8601) . Например, 1 час обозначается как "PT1H", где "P" — это обозначение длительности, а "H" — обозначение часа. Используйте M, чтобы указать минуты для длительности; Например, 2 часа и 30 минут будут иметь вид "PT2H30M". Если длительность собрания не указана, **findMeetingTimes** использует значение по умолчанию, равное 30 минутам. Необязательное свойство.|
+|meetingDuration|Edm.Duration|Длительность собрания, обозначенная в формате [ISO 8601](https://www.iso.org/iso/iso8601) . Например, 1 час обозначается как "PT1H", где "P" — это обозначение длительности, а "H" — обозначение часа. Используйте M, чтобы указать минуты для длительности; Например, 2 часа и 30 минут будут иметь вид "PT2H30M". Если продолжительность собрания не указана, метод **findMeetingTimes** использует значение по умолчанию — 30 минут. Необязательное свойство.|
 |minimumAttendeePercentage|Edm.Double| Минимальная [достоверность](#the-confidence-of-a-meeting-suggestion), необходимая, чтобы вернуть период времени в ответе. Это процентное значение от 0 до 100. Необязательный параметр.|
 |returnSuggestionReasons|Edm.Boolean|Задайте значение `True`, если требуется вернуть причину каждого предложения в свойстве **suggestionReason**. По умолчанию задано значение `false`, и это свойство не возвращается. Необязательный параметр.|
-|timeConstraint|[Финдмитингтиместимеконстраинтс](../resources/findmeetingtimestimeconstraints.md)|Ограничения по времени для собрания, к которым могут относиться характер собрания (свойство **activityDomain**) и возможное время проведения собрания (свойство **timeSlots**). Если параметр **activityDomain** не задан, метод **findMeetingTimes** считает, что для него установлено значение `work`. Необязательный параметр.|
+|timeConstraint|[timeConstraint](../resources/timeconstraint.md)|Ограничения по времени для собрания, к которым могут относиться характер собрания (свойство **activityDomain**) и возможное время проведения собрания (свойство **timeSlots**). Если параметр **activityDomain** не задан, метод **findMeetingTimes** считает, что для него установлено значение `work`. Необязательный параметр.|
 
 В таблице ниже описываются ограничения, которые можно в дальнейшем указать в параметре **timeConstraint**.
 
@@ -70,9 +72,9 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [финдмитингтимесреспонсе](../resources/findmeetingtimesresponse.md) в тексте отклика. 
+В случае успеха этот метод возвращает код ответа `200 OK` и объект [meetingTimeSuggestionsResult](../resources/meetingtimesuggestionsresult.md) в тексте ответа. 
 
-**Финдмитингтимесреспонсе** включает коллекцию предложений о собраниях и свойство **емптисугжестионсреасон** . Каждое предложение определено как [митингтимесугжестион](../resources/meetingtimesuggestion.md), с участниками, у которых средний уровень вероятности 50% для участия, или определенным%, указанным в параметре **minimumAttendeePercentage** . 
+Объект **meetingTimeSuggestionsResult** включает коллекцию предложений и свойство **emptySuggestionsReason**. Каждое предложение определяется как объект [meetingTimeSuggestion](../resources/meetingtimesuggestion.md), где средняя вероятность присутствия участников составляет 50 % или определенное процентное значение, указанное в параметре **minimumAttendeePercentage**. 
 
 По умолчанию каждое предлагаемое время проведения собрания указывается в формате UTC. 
 
@@ -113,7 +115,7 @@ POST /users/{id|userPrincipalName}/findMeetingTimes
 
 Указав параметр **returnSuggestionReasons**, вы также получите в свойстве **suggestionReason** объяснение для каждого предложения, если метод **findMeetingTimes** возвращает какие-либо предложения.
 
-Обратите внимание, что в запросе задается время в часовом поясе PST. По умолчанию в ответе возвращаются предложения времени собраний в формате UTC. Вы можете использовать заголовок `Prefer: outlook.timezone` запроса, чтобы указать PST-файл, а также значения времени в отклике.
+Обратите внимание, что в запросе задается время в часовом поясе PST. По умолчанию в ответе возвращаются предложения времени собраний в формате UTC. С помощью заголовка запроса `Prefer: outlook.timezone` вы можете сделать так, чтобы в ответе тоже возвращалось Тихоокеанское время.
 
 ##### <a name="request"></a>Запрос
 Ниже представлен пример запроса.
@@ -168,12 +170,12 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже представлен пример ответа. Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.findMeetingTimesResponse",
+  "@odata.type": "microsoft.graph.meetingTimeSuggestionsResult",
   "isCollection": false
 } -->
 ```http
@@ -182,11 +184,43 @@ Content-type: application/json
 Preference-Applied: outlook.timezone="Pacific Standard Time"
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.findMeetingTimesResponse",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.meetingTimeSuggestionsResult",
     "emptySuggestionsReason": "",
     "meetingTimeSuggestions": [
         {
             "confidence": 100,
+            "order": 1,
+            "organizerAvailability": "free",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T17:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 2,
             "organizerAvailability": "free",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [
@@ -217,7 +251,70 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
         },
         {
             "confidence": 100,
-            "organizerAvailability": "free",
+            "order": 3,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T15:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T16:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 4,
+            "organizerAvailability": "tentative",
+            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
+            "attendeeAvailability": [
+                {
+                    "availability": "free",
+                    "attendee": {
+                        "emailAddress": {
+                            "address": "alexw@contoso.onmicrosoft.com"
+                        }
+                    }
+                }
+            ],
+            "locations": [
+                {
+                    "displayName": "Conf room Hood"
+                }
+            ],
+            "meetingTimeSlot": {
+                "start": {
+                    "dateTime": "2019-04-18T09:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                },
+                "end": {
+                    "dateTime": "2019-04-18T10:00:00.0000000",
+                    "timeZone": "Pacific Standard Time"
+                }
+            }
+        },
+        {
+            "confidence": 100,
+            "order": 5,
+            "organizerAvailability": "tentative",
             "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
             "attendeeAvailability": [
                 {
@@ -244,36 +341,6 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
                     "timeZone": "Pacific Standard Time"
                 }
             }
-        },
-        {
-            "confidence": 100,
-            "organizerAvailability": "free",
-            "suggestionReason": "Suggested because it is one of the nearest times when all attendees are available.",
-            "attendeeAvailability": [
-                {
-                    "availability": "free",
-                    "attendee": {
-                        "emailAddress": {
-                            "address": "alexw@contoso.onmicrosoft.com"
-                        }
-                    }
-                }
-            ],
-            "locations": [
-                {
-                    "displayName": "Conf room Hood"
-                }
-            ],
-            "meetingTimeSlot": {
-                "start": {
-                    "dateTime": "2019-04-18T16:00:00.0000000",
-                    "timeZone": "Pacific Standard Time"
-                },
-                "end": {
-                    "dateTime": "2019-04-18T17:00:00.0000000",
-                    "timeZone": "Pacific Standard Time"
-                }
-            }
         }
     ]
 }
@@ -290,7 +357,9 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "tocPath": "",
   "suppressions": [
     "Warning: /api-reference/beta/api/user_findmeetingtimes.md:\r\n      Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
-    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: /api-reference/beta/api/user-findmeetingtimes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)",
+    "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
+    Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
   ]
 }
 -->

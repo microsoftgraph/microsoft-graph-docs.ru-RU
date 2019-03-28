@@ -1,19 +1,21 @@
 ---
 title: Тип ресурсов attendeeAvailability
-description: Тип и занятость участника.
+description: Доступность участника.
 localization_priority: Normal
-ms.openlocfilehash: a6dee994fc5eb3786fc1a432adcb9333bdb56ec8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 63014553824b833e2e4cdfb03485fcb7962c01a0
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834750"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936250"
 ---
 # <a name="attendeeavailability-resource-type"></a>Тип ресурсов attendeeAvailability
 
-Тип и занятость участника.
+Доступность участника.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -35,8 +37,8 @@ ms.locfileid: "27834750"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attendee|[AttendeeBase](attendeebase.md)|Тип участника (сведения о том, является ли участник пользователем или ресурсом, а также о том, обязательный ли он, если объект представляет пользователя).|
-|availability|freeBusyStatus| Состояние доступности участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.|
+|attendee|[attendeeBase](attendeebase.md)|Адрес электронной почты и тип участника — является ли это пользователь или ресурс, а также является ли он обязательным, если это человек.|
+|availability|Фрибусистатус| Состояние занятости участника. Возможные `free`значения:, `tentative`, `busy`, `oof`, `workingElsewhere`,. `unknown`|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

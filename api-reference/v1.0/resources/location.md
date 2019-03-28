@@ -2,12 +2,14 @@
 title: Тип ресурса Location
 description: Представляет сведения о месте проведения события.
 localization_priority: Normal
-ms.openlocfilehash: 553634aec386798ac17e00b83883c54a99c0f9ca
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: a18dbcbe4228fee0363a13fe89f452703732077a
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27879802"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936278"
 ---
 # <a name="location-resource-type"></a>Тип ресурса Location
 
@@ -28,11 +30,11 @@ ms.locfileid: "27879802"
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
-| locationEmailAddress | String | Необязательный электронный адрес для расположения.              |
+| locationEmailAddress | Строка | Необязательный электронный адрес для расположения.              |
 | locationUri | Строка | Необязательный URI, представляющий местоположение. |
-| locationType | locationType | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
-| uniqueId | Строка | Только для внутреннего использования.|
-| uniqueIdType | locationUniqueIdType | Только для внутреннего использования. |
+| locationType | locationType | Тип расположения. Возможные `default`значения:, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`,. `postalAddress` Только для чтения.|
+| uniqueId | String | Только для внутреннего использования.|
+| uniqueIdType | Локатионуникуеидтипе | Только для внутреннего использования. |
 
 ## <a name="json-representation"></a>Представление JSON
 
