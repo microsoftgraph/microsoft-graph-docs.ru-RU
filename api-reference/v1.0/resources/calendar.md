@@ -1,25 +1,25 @@
 ---
 title: Тип ресурса calendar
-description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для ресурса user или стандартный календарь для ресурса group, представляющего группу Office 365.
+description: Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для пользователя или стандартный календарь для группы Office 365.
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6d7f926c26b0fdcf0c70e7f6d02593cff8bb46a6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: 1ca76ba581b4db8ab3a42ccc993e545afd9a922c
+ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917624"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936313"
 ---
 # <a name="calendar-resource-type"></a>Тип ресурса calendar
 
 Календарь, служащий контейнером для сведений о событиях. Это может быть календарь для ресурса [user](user.md) или стандартный календарь для ресурса [group](group.md), представляющего группу Office 365.
 
-> **Примечание:** Существуют небольшие отличия таким способом, который может взаимодействовать с календарей пользователей и группы календаря:
+> **Примечание.** Существует несколько незначительных различий в способе взаимодействия с календарями пользователей и календарями групп:
 
- - Их можно организовать только календарей пользователей в [calendarGroup](calendargroup.md).
- - Outlook автоматически принимает все приглашения на собрания от имени группы. Для календарей пользователей только можно [принять](../api/event-accept.md), [под вопросом принятие](../api/event-tentativelyaccept.md)или [отклонение](../api/event-decline.md) приглашения на собрания.
-  - Outlook не поддерживает напоминания о событиях группы. Можно [отложить](../api/event-snoozereminder.md) или [отклонение](../api/event-dismissreminder.md) [напоминание](reminder.md) для только календарей пользователей.
+ - В ресурсе [calendarGroup](calendargroup.md) можно упорядочить только календари пользователей.
+ - Outlook автоматически принимает все приглашения на собрания от имени группы. Приглашения на собрания можно [принять](../api/event-accept.md), [принять под вопросом](../api/event-tentativelyaccept.md) или [отклонить](../api/event-decline.md) только в календарях пользователя.
+  - Outlook не поддерживает напоминания о событиях группы. [Напоминание](reminder.md) можно [отложить](../api/event-snoozereminder.md) или [отключить](../api/event-dismissreminder.md) только для календарей пользователя.
 
 ## <a name="methods"></a>Методы
 
@@ -31,10 +31,11 @@ ms.locfileid: "27917624"
 |[Обновление](../api/calendar-update.md) | [calendar](calendar.md)  |Обновление свойств объекта **calendar**. Это может быть календарь для пользователя или стандартный календарь для группы Office 365. |
 |[Удаление](../api/calendar-delete.md) | Нет |Удаление объекта calendar. |
 |[Список экземпляров calendarView](../api/calendar-list-calendarview.md) |Коллекция [event](event.md)| Получение в представлении календаря повторений, исключений и отдельных экземпляров событий за определенный диапазон времени, указанных в основном календаре пользователя `(../me/calendarview)` или в другом заданном календаре.|
-|[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Получение списка событий в календаре.  Этот список содержит собрания с одним экземпляром и образцы рядов.|
-|[Создание события](../api/calendar-post-events.md) |[event](event.md)| Создайте новое событие в по умолчанию или указанного календаря.|
-|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Предложите совещаний и расположений на основе доступности организатора и участников и ограничения времени или расположение. |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем календаре.   |
+|[Список событий](../api/calendar-list-events.md) |Коллекция [event](event.md)| Получение списка событий в календаре. Этот список содержит собрания с одним экземпляром и образцы рядов.|
+|[Создание события](../api/calendar-post-events.md) |[event](event.md)| Создание события в стандартном или указанном календаре.|
+|[getSchedule](../api/calendar-getschedule.md) |Коллекция [scheduleInformation](scheduleinformation.md)|Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов для определенного периода времени. |
+|[findMeetingTimes](../api/user-findmeetingtimes.md) |[meetingTimeSuggestionsResult](meetingtimesuggestionsresult.md) |Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени. |
+|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[calendar](calendar.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем календаре.   |
 |[Получение календаря с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Получение календарей, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [calendar](calendar.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем календаре.  |
 |[Получение календаря с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [calendar](calendar.md) | Получение календаря, который содержит расширенное свойство с несколькими значениями, при помощи `$expand`. |
@@ -46,16 +47,16 @@ ms.locfileid: "27917624"
 |canShare |Boolean |Значение true, если у пользователя есть разрешение на совместное использование календаря, в противном случае — значение false. Только пользователь, создавший календарь, может предоставлять общий доступ к нему. |
 |canViewPrivateItems |Boolean |Значение true, если пользователь может читать элементы календаря, которые были помечены как частные, в противном случае — значение false. |
 |changeKey|String|Указывает версию объекта calendar. При каждом изменении календаря также меняется значение changeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения.|
-|color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue = 0, LightGreen = 1, LightOrange = 2, LightGray = 3, LightYellow = 4, LightTeal = 5, LightPink = 6, LightBrown = 7, LightRed = 8, MaxColor = 9, Auto = -1.|
-|id|String|Уникальный идентификатор группы. Только для чтения.|
-|name|String|Имя календаря.|
+|color|calendarColor|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|id|Строка|Уникальный идентификатор группы. Только для чтения.|
+|имя|String|Имя календаря.|
 |owner |[emailAddress](emailaddress.md) | Если это свойство задано, оно указывает на пользователя, создавшего или добавившего календарь. В календаре, созданном или добавленном пользователем, свойство **owner** установлено для этого пользователя. В календаре, который используется совместно с пользователем, свойство **owner** установлено для лица, предоставившего пользователю общий доступ к этому календарю. |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |calendarView|Коллекция [Event](event.md)|Представление календаря для календаря. Свойство навигации. Только для чтения.|
-|events|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
+|события|Коллекция [Event](event.md)|События в календаре. Свойство навигации. Только для чтения.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для календаря. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для календаря. Только для чтения. Допускается значение null.|
 
