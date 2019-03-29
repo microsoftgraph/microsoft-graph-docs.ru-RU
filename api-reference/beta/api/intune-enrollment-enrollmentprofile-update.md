@@ -4,31 +4,31 @@ description: Обновление свойств объекта объекта e
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1029d87b5df14c79e7e93b849e4bd1caca1066e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 222d8fbe049e7a66ecc0094f179e1dae6b187054
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141309"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975044"
 ---
-# <a name="update-enrollmentprofile"></a><span data-ttu-id="12974-103">Обновление объекта enrollmentprofile</span><span class="sxs-lookup"><span data-stu-id="12974-103">Update enrollmentProfile</span></span>
+# <a name="update-enrollmentprofile"></a><span data-ttu-id="4ea5f-103">Обновление объекта enrollmentprofile</span><span class="sxs-lookup"><span data-stu-id="4ea5f-103">Update enrollmentProfile</span></span>
 
-> <span data-ttu-id="12974-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12974-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4ea5f-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="12974-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="12974-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4ea5f-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="12974-106">Обновление свойств объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="12974-106">Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+<span data-ttu-id="4ea5f-106">Обновление свойств объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) .</span><span class="sxs-lookup"><span data-stu-id="4ea5f-106">Update the properties of a [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="12974-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="12974-107">Prerequisites</span></span>
-<span data-ttu-id="12974-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="12974-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="4ea5f-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="4ea5f-107">Prerequisites</span></span>
+<span data-ttu-id="4ea5f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4ea5f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="12974-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="12974-110">Permission type</span></span>|<span data-ttu-id="12974-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="12974-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="4ea5f-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4ea5f-110">Permission type</span></span>|<span data-ttu-id="4ea5f-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="4ea5f-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="12974-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="12974-112">Delegated (work or school account)</span></span>|<span data-ttu-id="12974-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="12974-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="12974-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="12974-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="12974-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12974-115">Not supported.</span></span>|
-|<span data-ttu-id="12974-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="12974-116">Application</span></span>|<span data-ttu-id="12974-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="12974-117">Not supported.</span></span>|
+|<span data-ttu-id="4ea5f-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4ea5f-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4ea5f-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4ea5f-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="4ea5f-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4ea5f-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4ea5f-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-115">Not supported.</span></span>|
+|<span data-ttu-id="4ea5f-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4ea5f-116">Application</span></span>|<span data-ttu-id="4ea5f-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="12974-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="12974-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="4ea5f-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4ea5f-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,37 +37,36 @@ ms.locfileid: "30141309"
 PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="12974-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="12974-119">Request headers</span></span>
-|<span data-ttu-id="12974-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="12974-120">Header</span></span>|<span data-ttu-id="12974-121">Значение</span><span class="sxs-lookup"><span data-stu-id="12974-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="4ea5f-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4ea5f-119">Request headers</span></span>
+|<span data-ttu-id="4ea5f-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4ea5f-120">Header</span></span>|<span data-ttu-id="4ea5f-121">Значение</span><span class="sxs-lookup"><span data-stu-id="4ea5f-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="12974-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="12974-122">Authorization</span></span>|<span data-ttu-id="12974-123">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="12974-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="12974-124">Accept</span><span class="sxs-lookup"><span data-stu-id="12974-124">Accept</span></span>|<span data-ttu-id="12974-125">application/json</span><span class="sxs-lookup"><span data-stu-id="12974-125">application/json</span></span>|
+|<span data-ttu-id="4ea5f-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4ea5f-122">Authorization</span></span>|<span data-ttu-id="4ea5f-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="4ea5f-124">Accept</span><span class="sxs-lookup"><span data-stu-id="4ea5f-124">Accept</span></span>|<span data-ttu-id="4ea5f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4ea5f-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="12974-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="12974-126">Request body</span></span>
-<span data-ttu-id="12974-127">В тексте запроса добавьте представление объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="12974-127">In the request body, supply a JSON representation for the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="4ea5f-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4ea5f-126">Request body</span></span>
+<span data-ttu-id="4ea5f-127">В тексте запроса добавьте представление объекта [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-127">In the request body, supply a JSON representation for the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object.</span></span>
 
-<span data-ttu-id="12974-128">В следующей таблице приведены свойства, необходимые при создании [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md).</span><span class="sxs-lookup"><span data-stu-id="12974-128">The following table shows the properties that are required when you create the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span></span>
+<span data-ttu-id="4ea5f-128">В следующей таблице приведены свойства, необходимые при создании [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md).</span><span class="sxs-lookup"><span data-stu-id="4ea5f-128">The following table shows the properties that are required when you create the [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md).</span></span>
 
-|<span data-ttu-id="12974-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="12974-129">Property</span></span>|<span data-ttu-id="12974-130">Тип</span><span class="sxs-lookup"><span data-stu-id="12974-130">Type</span></span>|<span data-ttu-id="12974-131">Описание</span><span class="sxs-lookup"><span data-stu-id="12974-131">Description</span></span>|
+|<span data-ttu-id="4ea5f-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="4ea5f-129">Property</span></span>|<span data-ttu-id="4ea5f-130">Тип</span><span class="sxs-lookup"><span data-stu-id="4ea5f-130">Type</span></span>|<span data-ttu-id="4ea5f-131">Описание</span><span class="sxs-lookup"><span data-stu-id="4ea5f-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="12974-132">id</span><span class="sxs-lookup"><span data-stu-id="12974-132">id</span></span>|<span data-ttu-id="12974-133">String</span><span class="sxs-lookup"><span data-stu-id="12974-133">String</span></span>|<span data-ttu-id="12974-134">GUID объекта</span><span class="sxs-lookup"><span data-stu-id="12974-134">The GUID for the object</span></span>|
-|<span data-ttu-id="12974-135">displayName</span><span class="sxs-lookup"><span data-stu-id="12974-135">displayName</span></span>|<span data-ttu-id="12974-136">String</span><span class="sxs-lookup"><span data-stu-id="12974-136">String</span></span>|<span data-ttu-id="12974-137">Имя профиля</span><span class="sxs-lookup"><span data-stu-id="12974-137">Name of the profile</span></span>|
-|<span data-ttu-id="12974-138">description</span><span class="sxs-lookup"><span data-stu-id="12974-138">description</span></span>|<span data-ttu-id="12974-139">String</span><span class="sxs-lookup"><span data-stu-id="12974-139">String</span></span>|<span data-ttu-id="12974-140">Описание профиля</span><span class="sxs-lookup"><span data-stu-id="12974-140">Description of the profile</span></span>|
-|<span data-ttu-id="12974-141">Рекуиресусераусентикатион</span><span class="sxs-lookup"><span data-stu-id="12974-141">requiresUserAuthentication</span></span>|<span data-ttu-id="12974-142">Логический</span><span class="sxs-lookup"><span data-stu-id="12974-142">Boolean</span></span>|<span data-ttu-id="12974-143">Указывает, требуется ли для профиля проверка подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="12974-143">Indicates if the profile requires user authentication</span></span>|
-|<span data-ttu-id="12974-144">Конфигуратионендпоинтурл</span><span class="sxs-lookup"><span data-stu-id="12974-144">configurationEndpointUrl</span></span>|<span data-ttu-id="12974-145">String</span><span class="sxs-lookup"><span data-stu-id="12974-145">String</span></span>|<span data-ttu-id="12974-146">URL-адрес конечной точки конфигурации, используемый для регистрации</span><span class="sxs-lookup"><span data-stu-id="12974-146">Configuration endpoint url to use for Enrollment</span></span>|
-|<span data-ttu-id="12974-147">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="12974-147">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="12974-148">Логический</span><span class="sxs-lookup"><span data-stu-id="12974-148">Boolean</span></span>|<span data-ttu-id="12974-149">Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.</span><span class="sxs-lookup"><span data-stu-id="12974-149">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
-|<span data-ttu-id="12974-150">Рекуирекомпанипорталонсетупассистантенролледдевицес</span><span class="sxs-lookup"><span data-stu-id="12974-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span></span>|<span data-ttu-id="12974-151">Логический</span><span class="sxs-lookup"><span data-stu-id="12974-151">Boolean</span></span>|<span data-ttu-id="12974-152">Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке</span><span class="sxs-lookup"><span data-stu-id="12974-152">Indicates that Company Portal is required on setup assistant enrolled devices</span></span>|
+|<span data-ttu-id="4ea5f-132">id</span><span class="sxs-lookup"><span data-stu-id="4ea5f-132">id</span></span>|<span data-ttu-id="4ea5f-133">Строка</span><span class="sxs-lookup"><span data-stu-id="4ea5f-133">String</span></span>|<span data-ttu-id="4ea5f-134">GUID объекта</span><span class="sxs-lookup"><span data-stu-id="4ea5f-134">The GUID for the object</span></span>|
+|<span data-ttu-id="4ea5f-135">displayName</span><span class="sxs-lookup"><span data-stu-id="4ea5f-135">displayName</span></span>|<span data-ttu-id="4ea5f-136">String</span><span class="sxs-lookup"><span data-stu-id="4ea5f-136">String</span></span>|<span data-ttu-id="4ea5f-137">Имя профиля</span><span class="sxs-lookup"><span data-stu-id="4ea5f-137">Name of the profile</span></span>|
+|<span data-ttu-id="4ea5f-138">description</span><span class="sxs-lookup"><span data-stu-id="4ea5f-138">description</span></span>|<span data-ttu-id="4ea5f-139">String</span><span class="sxs-lookup"><span data-stu-id="4ea5f-139">String</span></span>|<span data-ttu-id="4ea5f-140">Описание профиля</span><span class="sxs-lookup"><span data-stu-id="4ea5f-140">Description of the profile</span></span>|
+|<span data-ttu-id="4ea5f-141">Рекуиресусераусентикатион</span><span class="sxs-lookup"><span data-stu-id="4ea5f-141">requiresUserAuthentication</span></span>|<span data-ttu-id="4ea5f-142">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ea5f-142">Boolean</span></span>|<span data-ttu-id="4ea5f-143">Указывает, требуется ли для профиля проверка подлинности пользователя</span><span class="sxs-lookup"><span data-stu-id="4ea5f-143">Indicates if the profile requires user authentication</span></span>|
+|<span data-ttu-id="4ea5f-144">Конфигуратионендпоинтурл</span><span class="sxs-lookup"><span data-stu-id="4ea5f-144">configurationEndpointUrl</span></span>|<span data-ttu-id="4ea5f-145">String</span><span class="sxs-lookup"><span data-stu-id="4ea5f-145">String</span></span>|<span data-ttu-id="4ea5f-146">URL-адрес конечной точки конфигурации, используемый для регистрации</span><span class="sxs-lookup"><span data-stu-id="4ea5f-146">Configuration endpoint url to use for Enrollment</span></span>|
+|<span data-ttu-id="4ea5f-147">enableAuthenticationViaCompanyPortal</span><span class="sxs-lookup"><span data-stu-id="4ea5f-147">enableAuthenticationViaCompanyPortal</span></span>|<span data-ttu-id="4ea5f-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ea5f-148">Boolean</span></span>|<span data-ttu-id="4ea5f-149">Указывает на проверку подлинности с помощью помощника по настройке Apple, а не корпоративного портала.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-149">Indicates to authenticate with Apple Setup Assistant instead of Company Portal.</span></span>|
+|<span data-ttu-id="4ea5f-150">Рекуирекомпанипорталонсетупассистантенролледдевицес</span><span class="sxs-lookup"><span data-stu-id="4ea5f-150">requireCompanyPortalOnSetupAssistantEnrolledDevices</span></span>|<span data-ttu-id="4ea5f-151">Boolean</span><span class="sxs-lookup"><span data-stu-id="4ea5f-151">Boolean</span></span>|<span data-ttu-id="4ea5f-152">Указывает, что корпоративный портал необходим на зарегистрированных устройствах помощника по настройке</span><span class="sxs-lookup"><span data-stu-id="4ea5f-152">Indicates that Company Portal is required on setup assistant enrolled devices</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="12974-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="12974-153">Response</span></span>
-<span data-ttu-id="12974-154">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="12974-154">If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="4ea5f-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ea5f-153">Response</span></span>
+<span data-ttu-id="4ea5f-154">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [объекта enrollmentprofile](../resources/intune-enrollment-enrollmentprofile.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-154">If successful, this method returns a `200 OK` response code and an updated [enrollmentProfile](../resources/intune-enrollment-enrollmentprofile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="12974-155">Пример</span><span class="sxs-lookup"><span data-stu-id="12974-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="4ea5f-155">Пример</span><span class="sxs-lookup"><span data-stu-id="4ea5f-155">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="12974-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="12974-156">Request</span></span>
-<span data-ttu-id="12974-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="12974-157">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="4ea5f-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="4ea5f-156">Request</span></span>
+<span data-ttu-id="4ea5f-157">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-157">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles/{enrollmentProfileId}
 Content-type: application/json
@@ -84,8 +83,8 @@ Content-length: 370
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="12974-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="12974-158">Response</span></span>
-<span data-ttu-id="12974-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="12974-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="4ea5f-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="4ea5f-158">Response</span></span>
+<span data-ttu-id="4ea5f-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4ea5f-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
