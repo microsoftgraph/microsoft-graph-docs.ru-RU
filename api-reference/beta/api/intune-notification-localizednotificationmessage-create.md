@@ -4,31 +4,31 @@ description: Создание объекта localizedNotificationMessage.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: af7024f2218bb56f9f6cbf6a633c6513e50fdb9e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: da30922d7de4f4c8291befdac1471ff2e56bc03d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147700"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958783"
 ---
-# <a name="create-localizednotificationmessage"></a><span data-ttu-id="7e3cb-103">Создание объекта localizedNotificationMessage</span><span class="sxs-lookup"><span data-stu-id="7e3cb-103">Create localizedNotificationMessage</span></span>
+# <a name="create-localizednotificationmessage"></a><span data-ttu-id="f8cd2-103">Создание объекта localizedNotificationMessage</span><span class="sxs-lookup"><span data-stu-id="f8cd2-103">Create localizedNotificationMessage</span></span>
 
-> <span data-ttu-id="7e3cb-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="f8cd2-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7e3cb-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="f8cd2-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7e3cb-106">Создание объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).</span><span class="sxs-lookup"><span data-stu-id="7e3cb-106">Create a new [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.</span></span>
+<span data-ttu-id="f8cd2-106">Создание объекта [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md).</span><span class="sxs-lookup"><span data-stu-id="f8cd2-106">Create a new [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7e3cb-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="7e3cb-107">Prerequisites</span></span>
-<span data-ttu-id="7e3cb-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="7e3cb-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="f8cd2-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="f8cd2-107">Prerequisites</span></span>
+<span data-ttu-id="f8cd2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="f8cd2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7e3cb-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7e3cb-110">Permission type</span></span>|<span data-ttu-id="7e3cb-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7e3cb-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="f8cd2-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f8cd2-110">Permission type</span></span>|<span data-ttu-id="f8cd2-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f8cd2-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7e3cb-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7e3cb-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7e3cb-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7e3cb-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
-|<span data-ttu-id="7e3cb-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7e3cb-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7e3cb-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-115">Not supported.</span></span>|
-|<span data-ttu-id="7e3cb-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7e3cb-116">Application</span></span>|<span data-ttu-id="7e3cb-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-117">Not supported.</span></span>|
+|<span data-ttu-id="f8cd2-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f8cd2-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f8cd2-113">DeviceManagementServiceConfig.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f8cd2-113">DeviceManagementServiceConfig.ReadWrite.All</span></span>|
+|<span data-ttu-id="f8cd2-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f8cd2-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f8cd2-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-115">Not supported.</span></span>|
+|<span data-ttu-id="f8cd2-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f8cd2-116">Application</span></span>|<span data-ttu-id="f8cd2-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7e3cb-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7e3cb-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="f8cd2-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f8cd2-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,36 +37,35 @@ ms.locfileid: "30147700"
 POST /deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7e3cb-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7e3cb-119">Request headers</span></span>
-|<span data-ttu-id="7e3cb-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7e3cb-120">Header</span></span>|<span data-ttu-id="7e3cb-121">Значение</span><span class="sxs-lookup"><span data-stu-id="7e3cb-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="f8cd2-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f8cd2-119">Request headers</span></span>
+|<span data-ttu-id="f8cd2-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f8cd2-120">Header</span></span>|<span data-ttu-id="f8cd2-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f8cd2-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7e3cb-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7e3cb-122">Authorization</span></span>|<span data-ttu-id="7e3cb-123">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="7e3cb-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7e3cb-124">Accept</span><span class="sxs-lookup"><span data-stu-id="7e3cb-124">Accept</span></span>|<span data-ttu-id="7e3cb-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7e3cb-125">application/json</span></span>|
+|<span data-ttu-id="f8cd2-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="f8cd2-122">Authorization</span></span>|<span data-ttu-id="f8cd2-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="f8cd2-124">Accept</span><span class="sxs-lookup"><span data-stu-id="f8cd2-124">Accept</span></span>|<span data-ttu-id="f8cd2-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f8cd2-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7e3cb-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="7e3cb-126">Request body</span></span>
-<span data-ttu-id="7e3cb-127">В теле запроса добавьте представление объекта localizedNotificationMessage в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-127">In the request body, supply a JSON representation for the localizedNotificationMessage object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="f8cd2-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f8cd2-126">Request body</span></span>
+<span data-ttu-id="f8cd2-127">В теле запроса добавьте представление объекта localizedNotificationMessage в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-127">In the request body, supply a JSON representation for the localizedNotificationMessage object.</span></span>
 
-<span data-ttu-id="7e3cb-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта localizedNotificationMessage.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-128">The following table shows the properties that are required when you create the localizedNotificationMessage.</span></span>
+<span data-ttu-id="f8cd2-128">В приведенной ниже таблице указаны свойства, необходимые при создании объекта localizedNotificationMessage.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-128">The following table shows the properties that are required when you create the localizedNotificationMessage.</span></span>
 
-|<span data-ttu-id="7e3cb-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="7e3cb-129">Property</span></span>|<span data-ttu-id="7e3cb-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7e3cb-130">Type</span></span>|<span data-ttu-id="7e3cb-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7e3cb-131">Description</span></span>|
+|<span data-ttu-id="f8cd2-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="f8cd2-129">Property</span></span>|<span data-ttu-id="f8cd2-130">Тип</span><span class="sxs-lookup"><span data-stu-id="f8cd2-130">Type</span></span>|<span data-ttu-id="f8cd2-131">Описание</span><span class="sxs-lookup"><span data-stu-id="f8cd2-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7e3cb-132">id</span><span class="sxs-lookup"><span data-stu-id="7e3cb-132">id</span></span>|<span data-ttu-id="7e3cb-133">Строка</span><span class="sxs-lookup"><span data-stu-id="7e3cb-133">String</span></span>|<span data-ttu-id="7e3cb-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-134">Key of the entity.</span></span>|
-|<span data-ttu-id="7e3cb-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="7e3cb-135">lastModifiedDateTime</span></span>|<span data-ttu-id="7e3cb-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="7e3cb-136">DateTimeOffset</span></span>|<span data-ttu-id="7e3cb-137">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-137">DateTime the object was last modified.</span></span>|
-|<span data-ttu-id="7e3cb-138">locale</span><span class="sxs-lookup"><span data-stu-id="7e3cb-138">locale</span></span>|<span data-ttu-id="7e3cb-139">String</span><span class="sxs-lookup"><span data-stu-id="7e3cb-139">String</span></span>|<span data-ttu-id="7e3cb-140">Языковой стандарт, для которого предназначено сообщение.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-140">The Locale for which this message is destined.</span></span>|
-|<span data-ttu-id="7e3cb-141">subject</span><span class="sxs-lookup"><span data-stu-id="7e3cb-141">subject</span></span>|<span data-ttu-id="7e3cb-142">String</span><span class="sxs-lookup"><span data-stu-id="7e3cb-142">String</span></span>|<span data-ttu-id="7e3cb-143">Тема шаблона сообщения.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-143">The Message Template Subject.</span></span>|
-|<span data-ttu-id="7e3cb-144">messageTemplate</span><span class="sxs-lookup"><span data-stu-id="7e3cb-144">messageTemplate</span></span>|<span data-ttu-id="7e3cb-145">String</span><span class="sxs-lookup"><span data-stu-id="7e3cb-145">String</span></span>|<span data-ttu-id="7e3cb-146">Содержимое шаблона сообщения.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-146">The Message Template content.</span></span>|
-|<span data-ttu-id="7e3cb-147">isDefault</span><span class="sxs-lookup"><span data-stu-id="7e3cb-147">isDefault</span></span>|<span data-ttu-id="7e3cb-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="7e3cb-148">Boolean</span></span>|<span data-ttu-id="7e3cb-149">Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-149">Flag to indicate whether or not this is the default locale for language fallback.</span></span> <span data-ttu-id="7e3cb-150">Можно устанавливать только этот флаг.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-150">This flag can only be set.</span></span> <span data-ttu-id="7e3cb-151">Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-151">To unset, set this property to true on another Localized Notification Message.</span></span>|
+|<span data-ttu-id="f8cd2-132">id</span><span class="sxs-lookup"><span data-stu-id="f8cd2-132">id</span></span>|<span data-ttu-id="f8cd2-133">String</span><span class="sxs-lookup"><span data-stu-id="f8cd2-133">String</span></span>|<span data-ttu-id="f8cd2-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-134">Key of the entity.</span></span>|
+|<span data-ttu-id="f8cd2-135">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="f8cd2-135">lastModifiedDateTime</span></span>|<span data-ttu-id="f8cd2-136">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="f8cd2-136">DateTimeOffset</span></span>|<span data-ttu-id="f8cd2-137">Дата и время последнего изменения объекта.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-137">DateTime the object was last modified.</span></span>|
+|<span data-ttu-id="f8cd2-138">locale</span><span class="sxs-lookup"><span data-stu-id="f8cd2-138">locale</span></span>|<span data-ttu-id="f8cd2-139">String</span><span class="sxs-lookup"><span data-stu-id="f8cd2-139">String</span></span>|<span data-ttu-id="f8cd2-140">Языковой стандарт, для которого предназначено сообщение.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-140">The Locale for which this message is destined.</span></span>|
+|<span data-ttu-id="f8cd2-141">subject</span><span class="sxs-lookup"><span data-stu-id="f8cd2-141">subject</span></span>|<span data-ttu-id="f8cd2-142">String</span><span class="sxs-lookup"><span data-stu-id="f8cd2-142">String</span></span>|<span data-ttu-id="f8cd2-143">Тема шаблона сообщения.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-143">The Message Template Subject.</span></span>|
+|<span data-ttu-id="f8cd2-144">messageTemplate</span><span class="sxs-lookup"><span data-stu-id="f8cd2-144">messageTemplate</span></span>|<span data-ttu-id="f8cd2-145">String</span><span class="sxs-lookup"><span data-stu-id="f8cd2-145">String</span></span>|<span data-ttu-id="f8cd2-146">Содержимое шаблона сообщения.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-146">The Message Template content.</span></span>|
+|<span data-ttu-id="f8cd2-147">isDefault</span><span class="sxs-lookup"><span data-stu-id="f8cd2-147">isDefault</span></span>|<span data-ttu-id="f8cd2-148">Boolean</span><span class="sxs-lookup"><span data-stu-id="f8cd2-148">Boolean</span></span>|<span data-ttu-id="f8cd2-149">Флаг, указывающий, используется ли этот языковой стандарт в качестве базового языка.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-149">Flag to indicate whether or not this is the default locale for language fallback.</span></span> <span data-ttu-id="f8cd2-150">Можно устанавливать только этот флаг.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-150">This flag can only be set.</span></span> <span data-ttu-id="f8cd2-151">Чтобы снять его, задайте этому свойству значение true для другого локализованного сообщения уведомления.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-151">To unset, set this property to true on another Localized Notification Message.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7e3cb-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="7e3cb-152">Response</span></span>
-<span data-ttu-id="7e3cb-153">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-153">If successful, this method returns a `201 Created` response code and a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="f8cd2-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="f8cd2-152">Response</span></span>
+<span data-ttu-id="f8cd2-153">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-153">If successful, this method returns a `201 Created` response code and a [localizedNotificationMessage](../resources/intune-notification-localizednotificationmessage.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7e3cb-154">Пример</span><span class="sxs-lookup"><span data-stu-id="7e3cb-154">Example</span></span>
+## <a name="example"></a><span data-ttu-id="f8cd2-154">Пример</span><span class="sxs-lookup"><span data-stu-id="f8cd2-154">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7e3cb-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="7e3cb-155">Request</span></span>
-<span data-ttu-id="7e3cb-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-156">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="f8cd2-155">Запрос</span><span class="sxs-lookup"><span data-stu-id="f8cd2-155">Request</span></span>
+<span data-ttu-id="f8cd2-156">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-156">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/notificationMessageTemplates/{notificationMessageTemplateId}/localizedNotificationMessages
 Content-type: application/json
@@ -81,8 +80,8 @@ Content-length: 200
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7e3cb-157">Ответ</span><span class="sxs-lookup"><span data-stu-id="7e3cb-157">Response</span></span>
-<span data-ttu-id="7e3cb-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7e3cb-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="f8cd2-157">Отклик</span><span class="sxs-lookup"><span data-stu-id="f8cd2-157">Response</span></span>
+<span data-ttu-id="f8cd2-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="f8cd2-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
