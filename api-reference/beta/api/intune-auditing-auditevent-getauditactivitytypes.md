@@ -1,15 +1,15 @@
 ---
 title: Функция getAuditActivityTypes
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b7e02ebe088be009acee817482674747e2e4b6c1
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e326bcc85a64a98d8ec302ab425e0fbae258eb5
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30165606"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30979272"
 ---
 # <a name="getauditactivitytypes-function"></a>Функция getAuditActivityTypes
 
@@ -20,7 +20,7 @@ ms.locfileid: "30165606"
 Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,8 +53,8 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 
 
 
-## <a name="response"></a>Отклик
-При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в тексте отклика.
+## <a name="response"></a>Ответ
+При успешном выполнении эта функция возвращает код отклика `200 OK` и коллекцию String в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -65,7 +64,7 @@ GET /deviceManagement/auditEvents/getAuditActivityTypes
 GET https://graph.microsoft.com/beta/deviceManagement/auditEvents/getAuditActivityTypes(category='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
