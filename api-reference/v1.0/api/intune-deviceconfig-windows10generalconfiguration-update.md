@@ -4,12 +4,12 @@ description: Обновление свойств объекта windows10General
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a5c5ca0b7f2309f8472d2cf591b4dfac04417dba
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: a83940e3892ea02a9416ccbf97d99de63a57a3c1
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263709"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970830"
 ---
 # <a name="update-windows10generalconfiguration"></a>Обновление объекта windows10GeneralConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30263709"
 Обновление свойств объекта [windows10GeneralConfiguration](../resources/intune-deviceconfig-windows10generalconfiguration.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -38,8 +38,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,54 +48,54 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Конечная точка для обнаружения облачных принтеров.|
 |enterpriseCloudPrintOAuthAuthority|String|Конечная точка аутентификации для получения токенов OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
 |enterpriseCloudPrintResourceIdentifier|String|URI ресурса OAuth для службы печати, настроенный на портале Azure.|
 |enterpriseCloudPrintDiscoveryMaxLimit|Int32|Максимальное количество принтеров, запрашиваемых с конечной точки обнаружения. Этот параметр применяется только к мобильным устройствам. Допустимые значения: от 1 до 65 535.|
 |enterpriseCloudPrintMopriaDiscoveryResourceIdentifier|String|URI ресурса OAuth для службы обнаружения принтеров, настроенный на портале Azure.|
-|searchBlockDiacritics|Логический|Указывает, можно ли использовать диакритические знаки в поиске.|
-|searchDisableAutoLanguageDetection|Логический|Указывает, следует ли использовать автоматическое определение языка при индексировании контента и свойств.|
-|searchDisableIndexingEncryptedItems|Логический|Указывает, следует ли запретить индексирование защищенных WIP элементов, чтобы они не отображались в результатах поиска Кортаны или проводника.|
-|searchEnableRemoteQueries|Логический|Указывает, следует ли заблокировать удаленные запросы к индексу этого компьютера.|
-|searchDisableIndexerBackoff|Логический|Указывает, следует ли отключить функцию отхода индексатора поиска.|
-|searchDisableIndexingRemovableDrive|Логический|Указывает, могут ли пользователи добавлять расположения на съемных дисках в библиотеки и для индексирования.|
+|searchBlockDiacritics|Boolean|Указывает, можно ли использовать диакритические знаки в поиске.|
+|searchDisableAutoLanguageDetection|Boolean|Указывает, следует ли использовать автоматическое определение языка при индексировании контента и свойств.|
+|searchDisableIndexingEncryptedItems|Boolean|Указывает, следует ли запретить индексирование защищенных WIP элементов, чтобы они не отображались в результатах поиска Кортаны или проводника.|
+|searchEnableRemoteQueries|Boolean|Указывает, следует ли заблокировать удаленные запросы к индексу этого компьютера.|
+|searchDisableIndexerBackoff|Boolean|Указывает, следует ли отключить функцию отхода индексатора поиска.|
+|searchDisableIndexingRemovableDrive|Boolean|Указывает, могут ли пользователи добавлять расположения на съемных дисках в библиотеки и для индексирования.|
 |searchEnableAutomaticIndexSizeManangement|Boolean|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
 |diagnosticsDataSubmissionMode|[Диагностикдатасубмиссионмоде](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
-|oneDriveDisableFileSync|Логический|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
-|smartScreenEnableAppInstallControl|Логический|Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
+|oneDriveDisableFileSync|Boolean|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
+|smartScreenEnableAppInstallControl|Boolean|Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
 |personalizationDesktopImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
 |personalizationLockScreenImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
-|bluetoothAllowedServices|Коллекция строк|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
-|bluetoothBlockAdvertising|Логический|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
-|bluetoothBlockDiscoverableMode|Логический|Указывает, следует ли запретить использовать режим обнаружения по Bluetooth.|
-|bluetoothBlockPrePairing|Логический|Указывает, следует ли заблокировать автоматическое связывание отдельных пакетных периферийных устройств Bluetooth с главным устройством.|
+|bluetoothAllowedServices|Коллекция String|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
+|bluetoothBlockAdvertising|Boolean|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
+|bluetoothBlockDiscoverableMode|Boolean|Указывает, следует ли запретить использовать режим обнаружения по Bluetooth.|
+|bluetoothBlockPrePairing|Boolean|Указывает, следует ли заблокировать автоматическое связывание отдельных пакетных периферийных устройств Bluetooth с главным устройством.|
 |edgeBlockAutofill|Boolean|Указывает, следует ли заблокировать автозаполнение.|
-|edgeBlocked|Логический|Указывает, следует ли запретить использовать браузер Edge.|
+|edgeBlocked|Boolean|Указывает, следует ли запретить использовать браузер Edge.|
 |edgeCookiePolicy|[edgeCookiePolicy](../resources/intune-deviceconfig-edgecookiepolicy.md)|Указывает, какие файлы cookie следует блокировать в браузере Edge. Возможные значения: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
-|edgeBlockDeveloperTools|Логический|Указывает, следует ли заблокировать средства разработчика в браузере Edge.|
-|edgeBlockSendingDoNotTrackHeader|Логический|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
-|edgeBlockExtensions|Логический|Указывает, следует ли заблокировать расширения в браузере Edge.|
-|edgeBlockInPrivateBrowsing|Логический|Указывает, следует ли заблокировать просмотр InPrivate в корпоративных сетях в браузере Edge.|
-|edgeBlockJavaScript|Логический|Указывает, следует ли запретить использовать JavaScript.|
-|edgeBlockPasswordManager|Логический|Указывает, следует ли заблокировать диспетчер паролей.|
-|edgeBlockAddressBarDropdown|Логический|Позволяет заблокировать раскрывающийся список адресной строки в Microsoft Edge. Отключите этот параметр, чтобы уменьшить количество сетевых подключений Microsoft Edge к службам Майкрософт.|
-|edgeBlockCompatibilityList|Логический|Позволяет заблокировать список совместимости Майкрософт в Microsoft Edge. Этот список помогает Edge правильно отображать сайты с известными проблемами совместимости.|
-|edgeClearBrowsingDataOnExit|Логический|Указывает, следует ли удалять данные просмотра при выходе из Microsoft Edge.|
-|edgeAllowStartPagesModification|Логический|Указывает, могут ли пользователи изменять начальные страницы в Edge. Используйте свойство EdgeHomepageUrls, чтобы указать начальные страницы по умолчанию, отображаемые при открытии Edge.|
-|edgeDisableFirstRunPage|Логический|Позволяет заблокировать веб-страницу Майкрософт, которая открывается при первом запуске Microsoft Edge. Эта политика позволяет предприятиям, зарегистрированным в конфигурациях с нулевым выбросом, блокировать эту страницу.|
-|edgeBlockLiveTileDataCollection|Логический|Позволяет запретить Майкрософт собирать информацию о создании живых плиток, когда пользователи закрепляют сайты из Microsoft Edge на начальном экране.|
-|edgeSyncFavoritesWithInternetExplorer|Логический|Указывает, следует ли включить синхронизацию избранного между Internet Explorer и Microsoft Edge. Браузеры обмениваются данными о добавлении, удалении и изменении избранных элементов, а также их порядка.|
-|cellularBlockDataWhenRoaming|Логический|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
-|cellularBlockVpn|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети.|
-|cellularBlockVpnWhenRoaming|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
-|defenderBlockEndUserAccess|Логический|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
+|edgeBlockDeveloperTools|Boolean|Указывает, следует ли заблокировать средства разработчика в браузере Edge.|
+|edgeBlockSendingDoNotTrackHeader|Boolean|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
+|edgeBlockExtensions|Boolean|Указывает, следует ли заблокировать расширения в браузере Edge.|
+|edgeBlockInPrivateBrowsing|Boolean|Указывает, следует ли заблокировать просмотр InPrivate в корпоративных сетях в браузере Edge.|
+|edgeBlockJavaScript|Boolean|Указывает, следует ли запретить использовать JavaScript.|
+|edgeBlockPasswordManager|Boolean|Указывает, следует ли заблокировать диспетчер паролей.|
+|edgeBlockAddressBarDropdown|Boolean|Позволяет заблокировать раскрывающийся список адресной строки в Microsoft Edge. Отключите этот параметр, чтобы уменьшить количество сетевых подключений Microsoft Edge к службам Майкрософт.|
+|edgeBlockCompatibilityList|Boolean|Позволяет заблокировать список совместимости Майкрософт в Microsoft Edge. Этот список помогает Edge правильно отображать сайты с известными проблемами совместимости.|
+|edgeClearBrowsingDataOnExit|Boolean|Указывает, следует ли удалять данные просмотра при выходе из Microsoft Edge.|
+|edgeAllowStartPagesModification|Boolean|Указывает, могут ли пользователи изменять начальные страницы в Edge. Используйте свойство EdgeHomepageUrls, чтобы указать начальные страницы по умолчанию, отображаемые при открытии Edge.|
+|edgeDisableFirstRunPage|Boolean|Позволяет заблокировать веб-страницу Майкрософт, которая открывается при первом запуске Microsoft Edge. Эта политика позволяет предприятиям, зарегистрированным в конфигурациях с нулевым выбросом, блокировать эту страницу.|
+|edgeBlockLiveTileDataCollection|Boolean|Позволяет запретить Майкрософт собирать информацию о создании живых плиток, когда пользователи закрепляют сайты из Microsoft Edge на начальном экране.|
+|edgeSyncFavoritesWithInternetExplorer|Boolean|Указывает, следует ли включить синхронизацию избранного между Internet Explorer и Microsoft Edge. Браузеры обмениваются данными о добавлении, удалении и изменении избранных элементов, а также их порядка.|
+|cellularBlockDataWhenRoaming|Boolean|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
+|cellularBlockVpn|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети.|
+|cellularBlockVpnWhenRoaming|Boolean|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
+|defenderBlockEndUserAccess|Boolean|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Время до удаления вредоносного ПО на карантине (в днях). Допустимые значения: от 0 до 90.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Возвращает или задает действия Защитника в отношении обнаруженного вредоносного ПО для каждого уровня угрозы.|
 |defenderSystemScanSchedule|[Виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|День проверки системы Защитником. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
@@ -104,57 +103,57 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |defenderFileExtensionsToExclude|Коллекция строк|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderScanMaxCpu|Int32|Максимальный процент загрузки ЦП во время проверки. Допустимые значения: от 0 до 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Значение для отслеживания действий с файлами. Возможные значения: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|defenderProcessesToExclude|Коллекция строк|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
+|defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|Позволяет указать, нужно ли спрашивать пользователя перед отправкой образцов. Возможные значения: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
-|defenderRequireBehaviorMonitoring|Логический|Указывает, обязательно ли использовать наблюдение за поведением.|
-|defenderRequireCloudProtection|Логический|Указывает, обязательно ли использовать облачную защиту.|
-|defenderRequireNetworkInspectionSystem|Логический|Указывает, обязательно ли использовать систему проверки сети.|
-|defenderRequireRealTimeMonitoring|Логический|Указывает, обязательно ли использовать мониторинг в режиме реального времени.|
-|defenderScanArchiveFiles|Логический|Указывает, следует ли проверять архивные файлы.|
-|defenderScanDownloads|Логический|Указывает, следует ли проверять загрузки.|
-|defenderScanNetworkFiles|Логический|Указывает, следует ли сканировать файлы, открытые из сетевой папки.|
-|defenderScanIncomingMail|Логический|Указывает, следует ли проверять входящую почту.|
-|defenderScanMappedNetworkDrivesDuringFullScan|Логический|Указывает, следует ли сканировать подключенные сетевые диски во время полной проверки.|
-|defenderScanRemovableDrivesDuringFullScan|Логический|Указывает, следует ли сканировать съемные диски во время полной проверки.|
-|defenderScanScriptsLoadedInInternetExplorer|Логический|Указывает, следует ли проверять сценарии, загружаемые в браузере Internet Explorer.|
+|defenderRequireBehaviorMonitoring|Boolean|Указывает, обязательно ли использовать наблюдение за поведением.|
+|defenderRequireCloudProtection|Boolean|Указывает, обязательно ли использовать облачную защиту.|
+|defenderRequireNetworkInspectionSystem|Boolean|Указывает, обязательно ли использовать систему проверки сети.|
+|defenderRequireRealTimeMonitoring|Boolean|Указывает, обязательно ли использовать мониторинг в режиме реального времени.|
+|defenderScanArchiveFiles|Boolean|Указывает, следует ли проверять архивные файлы.|
+|defenderScanDownloads|Boolean|Указывает, следует ли проверять загрузки.|
+|defenderScanNetworkFiles|Boolean|Указывает, следует ли сканировать файлы, открытые из сетевой папки.|
+|defenderScanIncomingMail|Boolean|Указывает, следует ли проверять входящую почту.|
+|defenderScanMappedNetworkDrivesDuringFullScan|Boolean|Указывает, следует ли сканировать подключенные сетевые диски во время полной проверки.|
+|defenderScanRemovableDrivesDuringFullScan|Boolean|Указывает, следует ли сканировать съемные диски во время полной проверки.|
+|defenderScanScriptsLoadedInInternetExplorer|Boolean|Указывает, следует ли проверять сценарии, загружаемые в браузере Internet Explorer.|
 |defenderSignatureUpdateIntervalInHours|Int32|Интервал обновления сигнатур (в часах). Укажите 0, чтобы не проверять. Допустимые значения: от 0 до 24.|
 |defenderScanType|[defenderScanType](../resources/intune-deviceconfig-defenderscantype.md)|Тип проверки системы Защитником. Возможные значения: `userDefined`, `disabled`, `quick`, `full`.|
 |defenderScheduledScanTime|TimeOfDay|Время проверки системы Защитником.|
 |defenderScheduledQuickScanTime|TimeOfDay|Время ежедневной быстрой проверки.|
 |defenderCloudBlockLevel|[Дефендерклаудблокклевелтипе](../resources/intune-deviceconfig-defendercloudblockleveltype.md)|Определяет уровень облачной защиты. Возможные значения: `notConfigured`, `high`, `highPlus`, `zeroTolerance`.|
-|lockScreenAllowTimeoutConfiguration|Логический|Указывает, следует ли отображать настройку, позволяющую определить время до отключения экрана на экране блокировки мобильных устройств с Windows 10. Если для этой политики установлено значение Allow, значение, заданное свойством lockScreenTimeoutInSeconds, игнорируется.|
-|lockScreenBlockActionCenterNotifications|Логический|Указывает, следует ли запретить показ уведомлений из центра уведомлений на экране блокировки.|
-|lockScreenBlockCortana|Логический|Указывает, может ли пользователь взаимодействовать с Кортаной с помощью голоса при заблокированной системе.|
+|lockScreenAllowTimeoutConfiguration|Boolean|Указывает, следует ли отображать настройку, позволяющую определить время до отключения экрана на экране блокировки мобильных устройств с Windows 10. Если для этой политики установлено значение Allow, значение, заданное свойством lockScreenTimeoutInSeconds, игнорируется.|
+|lockScreenBlockActionCenterNotifications|Boolean|Указывает, следует ли запретить показ уведомлений из центра уведомлений на экране блокировки.|
+|lockScreenBlockCortana|Boolean|Указывает, может ли пользователь взаимодействовать с Кортаной с помощью голоса при заблокированной системе.|
 |lockScreenBlockToastNotifications|Boolean|Указывает, следует ли показывать всплывающие уведомления на экране блокировки устройства.|
 |lockScreenTimeoutInSeconds|Int32|Установите время (в секундах) от блокировки экрана до его выключения для мобильных устройств с Windows 10. Поддерживаемые значения: от 11 до 1800. Допустимые значения: от 11 до 1800.|
-|passwordBlockSimple|Логический|Укажите, разрешены ли такие ПИН-коды или пароли, как "1111" или "1234". Это свойство также контролирует использование графических паролей на компьютерах с Windows 10.|
+|passwordBlockSimple|Boolean|Укажите, разрешены ли такие ПИН-коды или пароли, как "1111" или "1234". Это свойство также контролирует использование графических паролей на компьютерах с Windows 10.|
 |passwordExpirationDays|Int32|Срок действия пароля (в днях). Допустимые значения: от 0 до 730.|
 |passwordMinimumLength|Int32|Минимальная длина пароля. Допустимые значения: от 4 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время бездействия до отключения экрана (в минутах).|
 |passwordMinimumCharacterSetCount|Int32|Количество наборов символов, которые требуются для пароля.|
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых необходимо запретить. Допустимые значения: от 0 до 50.|
-|passwordRequired|Логический|Указывает, обязательно ли использовать пароль.|
-|passwordRequireWhenResumeFromIdleState|Логический|Указывает, следует ли запрашивать пароль при выходе из состояния простоя.|
+|passwordRequired|Boolean|Указывает, обязательно ли использовать пароль.|
+|passwordRequireWhenResumeFromIdleState|Boolean|Указывает, следует ли запрашивать пароль при выходе из состояния простоя.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек. Допустимые значения: от 0 до 999.|
 |privacyAdvertisingId|[Статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, можно ли использовать идентификатор рекламы. Добавлено в Windows 10 версии 1607. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|privacyAutoAcceptPairingAndConsentPrompts|Логический|Указывает, следует ли запретить автоматическое принятие примечаний о связывании и конфиденциальности при запуске приложений.|
-|privacyBlockInputPersonalization|Логический|Указывает, следует ли запретить использовать облачные службы распознавания речи для приложений "Кортана", "Диктофон" или Store.|
-|startBlockUnpinningAppsFromTaskbar|Логический|Указывает, следует ли запретить пользователю откреплять приложения с панели задач.|
+|privacyAutoAcceptPairingAndConsentPrompts|Boolean|Указывает, следует ли запретить автоматическое принятие примечаний о связывании и конфиденциальности при запуске приложений.|
+|privacyBlockInputPersonalization|Boolean|Указывает, следует ли запретить использовать облачные службы распознавания речи для приложений "Кортана", "Диктофон" или Store.|
+|startBlockUnpinningAppsFromTaskbar|Boolean|Указывает, следует ли запретить пользователю откреплять приложения с панели задач.|
 |startMenuAppListVisibility|[Виндовсстартменуапплиствисибилититипе](../resources/intune-deviceconfig-windowsstartmenuapplistvisibilitytype.md)|Эта политика позволяет свернуть список приложений, полностью удалить этот список или отключить соответствующий переключатель в приложении "Параметры". Возможные значения: `userDefined`, `collapse`, `remove`, `disableSettingsApp`.|
-|startMenuHideChangeAccountSettings|Логический|Эта политика позволяет скрыть параметр для смены учетной записи на плитке пользователя в меню "Пуск".|
-|startMenuHideFrequentlyUsedApps|Логический|Эта политика позволяет скрыть наиболее часто используемые приложения в меню "Пуск" и отключить соответствующий переключатель в приложении "Параметры".|
-|startMenuHideHibernate|Логический|Эта политика позволяет скрыть параметр кнопки питания для перехода в режим гибернации в меню "Пуск".|
-|startMenuHideLock|Логический|Эта политика позволяет скрыть параметр для блокировки экрана на плитке пользователя в меню "Пуск".|
-|startMenuHidePowerButton|Логический|Эта политика позволяет скрыть кнопку питания в меню "Пуск".|
-|startMenuHideRecentJumpLists|Логический|Эта политика позволяет скрыть списки последних переходов в меню "Пуск" и на панели задач, а также отключить соответствующий переключатель в приложении "Параметры".|
-|startMenuHideRecentlyAddedApps|Логический|Эта политика позволяет скрыть недавно добавленные приложения в меню "Пуск" и отключить соответствующий переключатель в приложении "Параметры".|
-|startMenuHideRestartOptions|Логический|Эта политика позволяет скрыть параметр кнопки питания "Перезагрузить" или "Обновить и перезагрузить" в меню "Пуск".|
-|startMenuHideShutDown|Логический|Эта политика позволяет скрыть параметр кнопки питания "Завершить работу" или "Обновить и завершить работу" в меню "Пуск".|
-|startMenuHideSignOut|Логический|Эта политика позволяет скрыть параметр для выхода из учетной записи на плитке пользователя в меню "Пуск".|
-|startMenuHideSleep|Логический|Эта политика позволяет скрыть параметр кнопки питания для перехода в спящий режим в меню "Пуск".|
+|startMenuHideChangeAccountSettings|Boolean|Эта политика позволяет скрыть параметр для смены учетной записи на плитке пользователя в меню "Пуск".|
+|startMenuHideFrequentlyUsedApps|Boolean|Эта политика позволяет скрыть наиболее часто используемые приложения в меню "Пуск" и отключить соответствующий переключатель в приложении "Параметры".|
+|startMenuHideHibernate|Boolean|Эта политика позволяет скрыть параметр кнопки питания для перехода в режим гибернации в меню "Пуск".|
+|startMenuHideLock|Boolean|Эта политика позволяет скрыть параметр для блокировки экрана на плитке пользователя в меню "Пуск".|
+|startMenuHidePowerButton|Boolean|Эта политика позволяет скрыть кнопку питания в меню "Пуск".|
+|startMenuHideRecentJumpLists|Boolean|Эта политика позволяет скрыть списки последних переходов в меню "Пуск" и на панели задач, а также отключить соответствующий переключатель в приложении "Параметры".|
+|startMenuHideRecentlyAddedApps|Boolean|Эта политика позволяет скрыть недавно добавленные приложения в меню "Пуск" и отключить соответствующий переключатель в приложении "Параметры".|
+|startMenuHideRestartOptions|Boolean|Эта политика позволяет скрыть параметр кнопки питания "Перезагрузить" или "Обновить и перезагрузить" в меню "Пуск".|
+|startMenuHideShutDown|Boolean|Эта политика позволяет скрыть параметр кнопки питания "Завершить работу" или "Обновить и завершить работу" в меню "Пуск".|
+|startMenuHideSignOut|Boolean|Эта политика позволяет скрыть параметр для выхода из учетной записи на плитке пользователя в меню "Пуск".|
+|startMenuHideSleep|Boolean|Эта политика позволяет скрыть параметр кнопки питания для перехода в спящий режим в меню "Пуск".|
 |startMenuHideSwitchAccount|Boolean|Эта политика позволяет скрыть параметр для переключения между учетными записями на плитке пользователя в меню "Пуск".|
-|startMenuHideUserTile|Логический|Эта политика позволяет скрыть плитку пользователя в меню "Пуск".|
+|startMenuHideUserTile|Boolean|Эта политика позволяет скрыть плитку пользователя в меню "Пуск".|
 |startMenuLayoutEdgeAssetsXml|Binary|Этот параметр политики позволяет импортировать ресурсы Edge для использования с политикой startMenuLayoutXml. Макет меню "Пуск" может содержать вспомогательную плитку из приложения Edge для поиска файла локального ресурса Edge. Так как локальный ресурс Edge не существует, вспомогательная плитка Edge будет пустой. Эта политика применяется только при изменении политики startMenuLayoutXml. Значение должно быть в формате массива байтов в кодировке Base64 UTF-8.|
 |startMenuLayoutXml|Binary|Позволяет администраторам переопределять стандартный макет меню "Пуск" и блокировать его изменение пользователями. Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML-файл должен быть в формате массива байтов в кодировке UTF8.|
 |startMenuMode|[Виндовсстартменумодетипе](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|Позволяет администраторам определить вид меню "Пуск". Возможные значения: `userDefined`, `fullScreen`, `nonFullScreen`.|
@@ -168,94 +167,94 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 |startMenuPinnedFolderPictures|[Висибилитисеттинг](../resources/intune-deviceconfig-visibilitysetting.md)|Определяет, виден ли ярлык папки "Изображения" в меню "Пуск". Возможные значения: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderSettings|[Висибилитисеттинг](../resources/intune-deviceconfig-visibilitysetting.md)|Определяет, виден ли ярлык папки "Параметры" в меню "Пуск". Возможные значения: `notConfigured`, `hide`, `show`.|
 |startMenuPinnedFolderVideos|[Висибилитисеттинг](../resources/intune-deviceconfig-visibilitysetting.md)|Определяет, виден ли ярлык папки "Видео" в меню "Пуск". Возможные значения: `notConfigured`, `hide`, `show`.|
-|settingsBlockSettingsApp|Логический|Указывает, следует ли заблокировать доступ к приложению "Параметры".|
-|settingsBlockSystemPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Система" в приложении "Параметры".|
-|settingsBlockDevicesPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Устройства" в приложении "Параметры".|
-|settingsBlockNetworkInternetPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Сеть и Интернет" в приложении "Параметры".|
-|settingsBlockPersonalizationPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Персонализация" в приложении "Параметры".|
-|settingsBlockAccountsPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Учетные записи" в приложении "Параметры".|
-|settingsBlockTimeLanguagePage|Логический|Указывает, следует ли заблокировать доступ к разделу "Время и язык" в приложении "Параметры".|
-|settingsBlockEaseOfAccessPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Специальные возможности" в приложении "Параметры".|
-|settingsBlockPrivacyPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Конфиденциальность" в приложении "Параметры".|
-|settingsBlockUpdateSecurityPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Обновление и безопасность" в приложении "Параметры".|
-|settingsBlockAppsPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Приложения" в приложении "Параметры".|
-|settingsBlockGamingPage|Логический|Указывает, следует ли заблокировать доступ к разделу "Игры" в приложении "Параметры".|
-|windowsSpotlightBlockConsumerSpecificFeatures|Логический|Позволяет ИТ-администраторам заблокировать функции, обычно доступные только для потребителей, такие как рекомендации в меню "Пуск", уведомления, связанные с членством в группе, установка приложений после запуска при первом включении компьютера и плитки перенаправления.|
-|windowsSpotlightBlocked|Логический|Позволяет ИТ-администраторам отключить все функции "Windows: интересное".|
-|windowsSpotlightBlockOnActionCenter|Логический|Позволяет запретить Майкрософт показывать информацию о новых возможностях или изменениях после каждой чистой установки операционной системы, обновления или на постоянной основе.|
-|windowsSpotlightBlockTailoredExperiences|Логический|Позволяет заблокировать персонализацию контента на экране "Windows: интересное" на основе данных об использовании устройства.|
-|windowsSpotlightBlockThirdPartyNotifications|Логический|Позволяет заблокировать сторонний контент на экране "Windows: интересное".|
-|windowsSpotlightBlockWelcomeExperience|Логический|Позволяет заблокировать экран приветствия "Windows: интересное".|
-|windowsSpotlightBlockWindowsTips|Логический|Позволяет ИТ-администраторам отключать всплывающие советы по использованию Windows.|
+|settingsBlockSettingsApp|Boolean|Указывает, следует ли заблокировать доступ к приложению "Параметры".|
+|settingsBlockSystemPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Система" в приложении "Параметры".|
+|settingsBlockDevicesPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Устройства" в приложении "Параметры".|
+|settingsBlockNetworkInternetPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Сеть и Интернет" в приложении "Параметры".|
+|settingsBlockPersonalizationPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Персонализация" в приложении "Параметры".|
+|settingsBlockAccountsPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Учетные записи" в приложении "Параметры".|
+|settingsBlockTimeLanguagePage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Время и язык" в приложении "Параметры".|
+|settingsBlockEaseOfAccessPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Специальные возможности" в приложении "Параметры".|
+|settingsBlockPrivacyPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Конфиденциальность" в приложении "Параметры".|
+|settingsBlockUpdateSecurityPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Обновление и безопасность" в приложении "Параметры".|
+|settingsBlockAppsPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Приложения" в приложении "Параметры".|
+|settingsBlockGamingPage|Boolean|Указывает, следует ли заблокировать доступ к разделу "Игры" в приложении "Параметры".|
+|windowsSpotlightBlockConsumerSpecificFeatures|Boolean|Позволяет ИТ-администраторам заблокировать функции, обычно доступные только для потребителей, такие как рекомендации в меню "Пуск", уведомления, связанные с членством в группе, установка приложений после запуска при первом включении компьютера и плитки перенаправления.|
+|windowsSpotlightBlocked|Boolean|Позволяет ИТ-администраторам отключить все функции "Windows: интересное".|
+|windowsSpotlightBlockOnActionCenter|Boolean|Позволяет запретить Майкрософт показывать информацию о новых возможностях или изменениях после каждой чистой установки операционной системы, обновления или на постоянной основе.|
+|windowsSpotlightBlockTailoredExperiences|Boolean|Позволяет заблокировать персонализацию контента на экране "Windows: интересное" на основе данных об использовании устройства.|
+|windowsSpotlightBlockThirdPartyNotifications|Boolean|Позволяет заблокировать сторонний контент на экране "Windows: интересное".|
+|windowsSpotlightBlockWelcomeExperience|Boolean|Позволяет заблокировать экран приветствия "Windows: интересное".|
+|windowsSpotlightBlockWindowsTips|Boolean|Позволяет ИТ-администраторам отключать всплывающие советы по использованию Windows.|
 |windowsSpotlightConfigureOnLockScreen|[Виндовсспотлигхтенаблементсеттингс](../resources/intune-deviceconfig-windowsspotlightenablementsettings.md)|Указывает тип прожектора. Возможные значения: `notConfigured`, `disabled`, `enabled`.|
-|networkProxyApplySettingsDeviceWide|Логический|Если этот параметр включен, настройки прокси-сервера применяются ко всем процессам и учетным записям на устройстве. В противном случае они применяются к учетной записи пользователя, зарегистрированной в системе MDM.|
-|networkProxyDisableAutoDetect|Логический|Позволяет отключить автоматическое обнаружение настроек. Если этот параметр включен, система попытается найти путь к сценарию автонастройки прокси-сервера (PAC).|
+|networkProxyApplySettingsDeviceWide|Boolean|Если этот параметр включен, настройки прокси-сервера применяются ко всем процессам и учетным записям на устройстве. В противном случае они применяются к учетной записи пользователя, зарегистрированной в системе MDM.|
+|networkProxyDisableAutoDetect|Boolean|Позволяет отключить автоматическое обнаружение настроек. Если этот параметр включен, система попытается найти путь к сценарию автонастройки прокси-сервера (PAC).|
 |networkProxyAutomaticConfigurationUrl|String|Адрес сценария автонастройки прокси-сервера (PAC).|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Определяет ручные настройки прокси-сервера.|
-|accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
-|antiTheftModeBlocked|Логический|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
-|bluetoothBlocked|Boolean|Указывает, следует ли запретить использовать Bluetooth.|
-|cameraBlocked|Логический|Определяет, следует ли запретить доступ к камере устройства.|
-|connectedDevicesServiceBlocked|Логический|Указывает, следует ли блокировать службу подключенных устройств, которая позволяет находить другие устройства и подключаться к ним, удаленно обмениваться сообщениями и работать с приложениями, а также выполнять другие действия.|
-|certificatesBlockManualRootCertificateInstallation|Логический|Указывает, следует ли запретить пользователю вручную устанавливать корневой сертификат.|
-|copyPasteBlocked|Логический|Указывает, следует ли запретить пользователю копировать данные.|
-|cortanaBlocked|Логический|Указывает, следует ли запретить использовать Кортану.|
-|deviceManagementBlockFactoryResetOnMobile|Логический|Указывает, следует ли запретить пользователю сбрасывать настройки телефона.|
-|deviceManagementBlockManualUnenroll|Логический|Указывает, следует ли запретить пользователю вручную отменять регистрацию в системе управления устройствами.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
+|antiTheftModeBlocked|Boolean|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
+|bluetoothBlocked|Логический|Указывает, следует ли запретить использовать Bluetooth.|
+|cameraBlocked|Boolean|Определяет, следует ли запретить доступ к камере устройства.|
+|connectedDevicesServiceBlocked|Boolean|Указывает, следует ли блокировать службу подключенных устройств, которая позволяет находить другие устройства и подключаться к ним, удаленно обмениваться сообщениями и работать с приложениями, а также выполнять другие действия.|
+|certificatesBlockManualRootCertificateInstallation|Boolean|Указывает, следует ли запретить пользователю вручную устанавливать корневой сертификат.|
+|copyPasteBlocked|Boolean|Указывает, следует ли запретить пользователю копировать данные.|
+|cortanaBlocked|Boolean|Указывает, следует ли запретить использовать Кортану.|
+|deviceManagementBlockFactoryResetOnMobile|Boolean|Указывает, следует ли запретить пользователю сбрасывать настройки телефона.|
+|deviceManagementBlockManualUnenroll|Boolean|Указывает, следует ли запретить пользователю вручную отменять регистрацию в системе управления устройствами.|
 |safeSearchFilter|[Сафесеарчфилтертипе](../resources/intune-deviceconfig-safesearchfiltertype.md)|Определяет необходимый уровень фильтрации для безопасного поиска. Возможные значения: `userDefined`, `strict`, `moderate`.|
 |edgeBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна.|
-|edgeBlockSearchSuggestions|Логический|Указывает, следует ли запретить пользователю использовать варианты поиска в адресной строке.|
-|edgeBlockSendingIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer. Note: имя этого свойства является недостоверным; свойство устарело, вместо него используйте Еджесендинтранеттраффиктоинтернетексплорер.|
-|Еджесендинтранеттраффиктоинтернетексплорер|Логический|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer.|
-|edgeRequireSmartScreen|Логический|Указывает, обязательно ли использовать фильтр Smart Screen.|
+|edgeBlockSearchSuggestions|Boolean|Указывает, следует ли запретить пользователю использовать варианты поиска в адресной строке.|
+|edgeBlockSendingIntranetTrafficToInternetExplorer|Boolean|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer. Note: имя этого свойства является недостоверным; свойство устарело, вместо него используйте Еджесендинтранеттраффиктоинтернетексплорер.|
+|Еджесендинтранеттраффиктоинтернетексплорер|Boolean|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer.|
+|edgeRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
 |edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
 |edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для управляемых с помощью системы MDM устройств. Пользователи могут переопределять эту настройку и изменять поисковую систему по умолчанию, если не установлена политика AllowSearchEngineCustomization.|
-|edgeHomepageUrls|Коллекция строк|Список URL-адресов домашних страниц, показываемых на зарегистрированных в системе MDM устройствах в браузере Edge.|
-|edgeBlockAccessToAboutFlags|Логический|Указывает, следует ли запретить доступ к странице about flags в браузере Edge.|
-|smartScreenBlockPromptOverride|Логический|Указывает, могут ли пользователи игнорировать предупреждения фильтра SmartScreen о потенциально вредоносных веб-сайтах.|
-|smartScreenBlockPromptOverrideForFiles|Логический|Указывает, могут ли пользователи игнорировать предупреждения фильтра SmartScreen о скачивании непроверенных файлов.|
-|webRtcBlockLocalhostIpAddress|Логический|Указывает, отображается ли IP-адрес пользователя localhost при совершении телефонных звонков с помощью WebRTC.|
-|internetSharingBlocked|Логический|Указывает, следует ли запретить использовать Общий Интернет.|
-|settingsBlockAddProvisioningPackage|Логический|Указывает, следует ли запретить пользователю устанавливать пакеты подготовки.|
-|settingsBlockRemoveProvisioningPackage|Логический|Указывает, следует ли запретить агенту конфигурации среды выполнения удалять пакеты подготовки.|
-|settingsBlockChangeSystemTime|Логический|Указывает, следует ли запретить пользователю изменять настройки даты и времени.|
-|settingsBlockEditDeviceName|Логический|Указывает, следует ли запретить пользователю изменять имя устройства.|
-|settingsBlockChangeRegion|Логический|Указывает, следует ли запретить пользователю изменять региональные стандарты.|
-|settingsBlockChangeLanguage|Логический|Указывает, следует ли запретить пользователю изменять параметры языка.|
-|settingsBlockChangePowerSleep|Логический|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
-|locationServicesBlocked|Логический|Указывает, следует ли запретить использовать службы определения местоположения.|
-|microsoftAccountBlocked|Логический|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
-|microsoftAccountBlockSettingsSync|Логический|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
-|nfcBlocked|Логический|Указывает, следует ли запретить использовать NFC.|
-|resetProtectionModeBlocked|Логический|Указывает, следует ли запретить пользователю сбрасывать режим защиты.|
-|screenCaptureBlocked|Логический|Указывает, следует ли запретить пользователю делать снимки экрана.|
-|storageBlockRemovableStorage|Логический|Указывает, следует ли запретить использовать съемные носители.|
-|storageRequireMobileDeviceEncryption|Логический|Указывает, обязательно ли шифровать данные на мобильном устройстве.|
-|usbBlocked|Логический|Указывает, следует ли запретить пользователю подключать USB-устройства.|
-|voiceRecordingBlocked|Логический|Указывает, следует ли запретить пользователю записывать речь.|
-|wiFiBlockAutomaticConnectHotspots|Логический|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
-|wiFiBlocked|Логический|Указывает, следует ли запретить использовать Wi-Fi.|
-|wiFiBlockManualConfiguration|Логический|Указывает, следует ли запретить пользователю настраивать Wi-Fi вручную.|
+|edgeHomepageUrls|Коллекция String|Список URL-адресов домашних страниц, показываемых на зарегистрированных в системе MDM устройствах в браузере Edge.|
+|edgeBlockAccessToAboutFlags|Boolean|Указывает, следует ли запретить доступ к странице about flags в браузере Edge.|
+|smartScreenBlockPromptOverride|Boolean|Указывает, могут ли пользователи игнорировать предупреждения фильтра SmartScreen о потенциально вредоносных веб-сайтах.|
+|smartScreenBlockPromptOverrideForFiles|Boolean|Указывает, могут ли пользователи игнорировать предупреждения фильтра SmartScreen о скачивании непроверенных файлов.|
+|webRtcBlockLocalhostIpAddress|Boolean|Указывает, отображается ли IP-адрес пользователя localhost при совершении телефонных звонков с помощью WebRTC.|
+|internetSharingBlocked|Boolean|Указывает, следует ли запретить использовать Общий Интернет.|
+|settingsBlockAddProvisioningPackage|Boolean|Указывает, следует ли запретить пользователю устанавливать пакеты подготовки.|
+|settingsBlockRemoveProvisioningPackage|Boolean|Указывает, следует ли запретить агенту конфигурации среды выполнения удалять пакеты подготовки.|
+|settingsBlockChangeSystemTime|Boolean|Указывает, следует ли запретить пользователю изменять настройки даты и времени.|
+|settingsBlockEditDeviceName|Boolean|Указывает, следует ли запретить пользователю изменять имя устройства.|
+|settingsBlockChangeRegion|Boolean|Указывает, следует ли запретить пользователю изменять региональные стандарты.|
+|settingsBlockChangeLanguage|Boolean|Указывает, следует ли запретить пользователю изменять параметры языка.|
+|settingsBlockChangePowerSleep|Boolean|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
+|locationServicesBlocked|Boolean|Указывает, следует ли запретить использовать службы определения местоположения.|
+|microsoftAccountBlocked|Boolean|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
+|microsoftAccountBlockSettingsSync|Boolean|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
+|nfcBlocked|Boolean|Указывает, следует ли запретить использовать NFC.|
+|resetProtectionModeBlocked|Boolean|Указывает, следует ли запретить пользователю сбрасывать режим защиты.|
+|screenCaptureBlocked|Boolean|Указывает, следует ли запретить пользователю делать снимки экрана.|
+|storageBlockRemovableStorage|Boolean|Указывает, следует ли запретить использовать съемные носители.|
+|storageRequireMobileDeviceEncryption|Boolean|Указывает, обязательно ли шифровать данные на мобильном устройстве.|
+|usbBlocked|Boolean|Указывает, следует ли запретить пользователю подключать USB-устройства.|
+|voiceRecordingBlocked|Boolean|Указывает, следует ли запретить пользователю записывать речь.|
+|wiFiBlockAutomaticConnectHotspots|Boolean|Указывает, следует ли заблокировать автоматическое подключение к хот-спотам Wi-Fi. Ни на что не влияет, если Wi-Fi заблокирован.|
+|wiFiBlocked|Boolean|Указывает, следует ли запретить использовать Wi-Fi.|
+|wiFiBlockManualConfiguration|Boolean|Указывает, следует ли запретить пользователю настраивать Wi-Fi вручную.|
 |wiFiScanInterval|Int32|Указывает частоту поиска сетей Wi-Fi. Поддерживаемые значения: 1–500, где 100 — значение по умолчанию, а 500 — низкая частота. Допустимые значения: от 1 до 500.|
-|wirelessDisplayBlockProjectionToThisDevice|Логический|Указывает, могут ли другие устройства находить этот компьютер для проецирования контента.|
-|wirelessDisplayBlockUserInputFromReceiver|Логический|Указывает, следует ли блокировать запросы пользователя с беспроводного дисплея.|
-|wirelessDisplayRequirePinForPairing|Логический|Указывает, обязательно ли использовать ПИН-код для связывания с новыми устройствами.|
+|wirelessDisplayBlockProjectionToThisDevice|Boolean|Указывает, могут ли другие устройства находить этот компьютер для проецирования контента.|
+|wirelessDisplayBlockUserInputFromReceiver|Boolean|Указывает, следует ли блокировать запросы пользователя с беспроводного дисплея.|
+|wirelessDisplayRequirePinForPairing|Boolean|Указывает, обязательно ли использовать ПИН-код для связывания с новыми устройствами.|
 |windowsStoreBlocked|Boolean|Указывает, следует ли запретить использовать Microsoft Store.|
 |appsAllowTrustedAppsSideloading|[Статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, можно ли загружать неопубликованные приложения из пакетов AppX с доверенным сертификатом. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|windowsStoreBlockAutoUpdate|Логический|Указывает, следует ли заблокировать автоматическое обновление приложений из Microsoft Store.|
+|windowsStoreBlockAutoUpdate|Boolean|Указывает, следует ли заблокировать автоматическое обновление приложений из Microsoft Store.|
 |developerUnlockSetting|[Статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, следует ли разрешить разблокировку для разработки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
-|sharedUserAppDataAllowed|Логический|Указывает, следует ли запретить общий доступ к данным для пользователей одного приложения.|
-|appsBlockWindowsStoreOriginatedApps|Логический|Указывает, следует ли отключить запуск всех предустановленных или скачанных приложений из Microsoft Store.|
-|windowsStoreEnablePrivateStoreOnly|Логический|Указывает, следует ли включить только частный магазин.|
-|storageRestrictAppDataToSystemVolume|Логический|Указывает, можно ли хранить данные приложения не на системном диске.|
-|storageRestrictAppInstallToSystemVolume|Логический|Указывает, можно ли устанавливать приложения не на системном диске.|
-|gameDvrBlocked|Логический|Указывает, следует ли блокировать DVR и трансляцию контента.|
-|experienceBlockDeviceDiscovery|Логический|Указывает, следует ли блокировать обнаружение устройств.|
-|experienceBlockErrorDialogWhenNoSIM|Логический|Указывает, следует ли запретить отображение диалогового окна ошибки, если SIM-карта не обнаружена.|
-|experienceBlockTaskSwitcher|Логический|Указывает, следует ли заблокировать переключение задач на устройстве.|
-|logonBlockFastUserSwitching|Логический|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
-|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Логический|Указывает, требуется ли устройство для подключения к сети.|
+|sharedUserAppDataAllowed|Boolean|Указывает, следует ли запретить общий доступ к данным для пользователей одного приложения.|
+|appsBlockWindowsStoreOriginatedApps|Boolean|Указывает, следует ли отключить запуск всех предустановленных или скачанных приложений из Microsoft Store.|
+|windowsStoreEnablePrivateStoreOnly|Boolean|Указывает, следует ли включить только частный магазин.|
+|storageRestrictAppDataToSystemVolume|Boolean|Указывает, можно ли хранить данные приложения не на системном диске.|
+|storageRestrictAppInstallToSystemVolume|Boolean|Указывает, можно ли устанавливать приложения не на системном диске.|
+|gameDvrBlocked|Boolean|Указывает, следует ли блокировать DVR и трансляцию контента.|
+|experienceBlockDeviceDiscovery|Boolean|Указывает, следует ли блокировать обнаружение устройств.|
+|experienceBlockErrorDialogWhenNoSIM|Boolean|Указывает, следует ли запретить отображение диалогового окна ошибки, если SIM-карта не обнаружена.|
+|experienceBlockTaskSwitcher|Boolean|Указывает, следует ли заблокировать переключение задач на устройстве.|
+|logonBlockFastUserSwitching|Boolean|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
+|tenantLockdownRequireNetworkDuringOutOfBoxExperience|Boolean|Указывает, требуется ли устройство для подключения к сети.|
 
 
 
@@ -505,8 +504,8 @@ Content-length: 9822
 }
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

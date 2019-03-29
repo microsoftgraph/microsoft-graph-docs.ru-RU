@@ -4,12 +4,12 @@ description: Создание нового объекта Манажементк
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f19cef2899a11a57b06590c006de2181865a9d45
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e4531f8819be505587a27008f36fb9c06f2d92a
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156863"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30971642"
 ---
 # <a name="create-managementconditionstatement"></a>Создание Манажементкондитионстатемент
 
@@ -20,7 +20,7 @@ ms.locfileid: "30156863"
 Создание нового объекта [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -41,8 +41,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,9 +51,9 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
+|id|Строка|Уникальный идентификатор оператора условия управления. Созданное системой значение, назначаемое при создании.|
 |displayName|String|Имя, определенное администратором оператора условия управления.|
-|description|Строка|Заданное администратором описание оператора условия управления.|
+|description|String|Заданное администратором описание оператора условия управления.|
 |createdDateTime|DateTimeOffset|Время создания оператора условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения оператора условия управления. Обновленная сторона службы.|
 |выражение|[Манажементкондитионекспрессион](../resources/intune-fencing-managementconditionexpression.md)|Выражение оператора условия управления, используемое для оценки активации или деактивации оператора условия управления.|
@@ -64,7 +63,7 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -90,7 +89,7 @@ Content-length: 323
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created

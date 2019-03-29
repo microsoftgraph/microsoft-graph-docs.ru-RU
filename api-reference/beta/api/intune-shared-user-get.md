@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 82d2505bb2bc776af6421b64e79bfbf8f7d46b72
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 7e6643fa2beccf83384c454451094473e7c80ac8
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570964"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970963"
 ---
 # <a name="get-user"></a>Получение пользователя
 
@@ -21,7 +21,7 @@ ms.locfileid: "30570964"
 
 ## <a name="prerequisites"></a>Необходимые компоненты
 
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).  Конкретное разрешение зависит от контекста.
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).  Конкретное разрешение зависит от контекста.
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/users/{usersId}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ``` http
 HTTP/1.1 200 OK

@@ -1,15 +1,15 @@
 ---
 title: Функция getTopMobileApps
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e233feb9966fc90a56f38eff91c6bdab141b7462
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 68646ead33d9505522381ace92e5eeaa3e7b48ce
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169729"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30974239"
 ---
 # <a name="gettopmobileapps-function"></a>Функция getTopMobileApps
 
@@ -20,7 +20,7 @@ ms.locfileid: "30169729"
 Пока не задокументировано.
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,12 +49,12 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|status|String|Н/Д|
+|status|String|Пока не задокументировано.|
 |count|Int64|Н/Д|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха эта функция возвращает код `200 OK` отклика и коллекцию [mobileApp](../resources/intune-apps-mobileapp.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +65,7 @@ GET /deviceAppManagement/mobileApps/getTopMobileApps
 GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/getTopMobileApps(status='parameterValue',count=5)
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
