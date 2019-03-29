@@ -4,31 +4,31 @@ description: Создание нового объекта appLogCollectionReques
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da12791aab74c59d82b8efb4c98629ac1d809112
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08a6c3943d669363b3667266d1b6e6013e501570
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144998"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968646"
 ---
-# <a name="create-applogcollectionrequest"></a><span data-ttu-id="2fe77-103">Создание appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="2fe77-103">Create appLogCollectionRequest</span></span>
+# <a name="create-applogcollectionrequest"></a><span data-ttu-id="2c169-103">Создание appLogCollectionRequest</span><span class="sxs-lookup"><span data-stu-id="2c169-103">Create appLogCollectionRequest</span></span>
 
-> <span data-ttu-id="2fe77-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2fe77-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="2c169-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c169-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="2fe77-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2fe77-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="2c169-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="2c169-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="2fe77-106">Создание нового объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="2fe77-106">Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.</span></span>
+<span data-ttu-id="2c169-106">Создание нового объекта [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) .</span><span class="sxs-lookup"><span data-stu-id="2c169-106">Create a new [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="2fe77-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="2fe77-107">Prerequisites</span></span>
-<span data-ttu-id="2fe77-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="2fe77-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="2c169-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="2c169-107">Prerequisites</span></span>
+<span data-ttu-id="2c169-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2c169-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2fe77-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2fe77-110">Permission type</span></span>|<span data-ttu-id="2fe77-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2fe77-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="2c169-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2c169-110">Permission type</span></span>|<span data-ttu-id="2c169-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="2c169-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="2fe77-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2fe77-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2fe77-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2fe77-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
-|<span data-ttu-id="2fe77-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2fe77-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2fe77-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2fe77-115">Not supported.</span></span>|
-|<span data-ttu-id="2fe77-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2fe77-116">Application</span></span>|<span data-ttu-id="2fe77-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2fe77-117">Not supported.</span></span>|
+|<span data-ttu-id="2c169-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2c169-112">Delegated (work or school account)</span></span>|<span data-ttu-id="2c169-113">DeviceManagementManagedDevices.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="2c169-113">DeviceManagementManagedDevices.ReadWrite.All</span></span>|
+|<span data-ttu-id="2c169-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2c169-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="2c169-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c169-115">Not supported.</span></span>|
+|<span data-ttu-id="2c169-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2c169-116">Application</span></span>|<span data-ttu-id="2c169-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2c169-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="2fe77-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2fe77-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="2c169-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2c169-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,35 +37,34 @@ ms.locfileid: "30144998"
 POST /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2fe77-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2fe77-119">Request headers</span></span>
-|<span data-ttu-id="2fe77-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2fe77-120">Header</span></span>|<span data-ttu-id="2fe77-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2fe77-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="2c169-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2c169-119">Request headers</span></span>
+|<span data-ttu-id="2c169-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="2c169-120">Header</span></span>|<span data-ttu-id="2c169-121">Значение</span><span class="sxs-lookup"><span data-stu-id="2c169-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="2fe77-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="2fe77-122">Authorization</span></span>|<span data-ttu-id="2fe77-123">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="2fe77-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="2fe77-124">Accept</span><span class="sxs-lookup"><span data-stu-id="2fe77-124">Accept</span></span>|<span data-ttu-id="2fe77-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2fe77-125">application/json</span></span>|
+|<span data-ttu-id="2c169-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="2c169-122">Authorization</span></span>|<span data-ttu-id="2c169-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2c169-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="2c169-124">Accept</span><span class="sxs-lookup"><span data-stu-id="2c169-124">Accept</span></span>|<span data-ttu-id="2c169-125">application/json</span><span class="sxs-lookup"><span data-stu-id="2c169-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="2fe77-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2fe77-126">Request body</span></span>
-<span data-ttu-id="2fe77-127">В тексте запроса добавьте представление объекта appLogCollectionRequest в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2fe77-127">In the request body, supply a JSON representation for the appLogCollectionRequest object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="2c169-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2c169-126">Request body</span></span>
+<span data-ttu-id="2c169-127">В тексте запроса добавьте представление объекта appLogCollectionRequest в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2c169-127">In the request body, supply a JSON representation for the appLogCollectionRequest object.</span></span>
 
-<span data-ttu-id="2fe77-128">В следующей таблице приведены свойства, необходимые при создании appLogCollectionRequest.</span><span class="sxs-lookup"><span data-stu-id="2fe77-128">The following table shows the properties that are required when you create the appLogCollectionRequest.</span></span>
+<span data-ttu-id="2c169-128">В следующей таблице приведены свойства, необходимые при создании appLogCollectionRequest.</span><span class="sxs-lookup"><span data-stu-id="2c169-128">The following table shows the properties that are required when you create the appLogCollectionRequest.</span></span>
 
-|<span data-ttu-id="2fe77-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="2fe77-129">Property</span></span>|<span data-ttu-id="2fe77-130">Тип</span><span class="sxs-lookup"><span data-stu-id="2fe77-130">Type</span></span>|<span data-ttu-id="2fe77-131">Описание</span><span class="sxs-lookup"><span data-stu-id="2fe77-131">Description</span></span>|
+|<span data-ttu-id="2c169-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="2c169-129">Property</span></span>|<span data-ttu-id="2c169-130">Тип</span><span class="sxs-lookup"><span data-stu-id="2c169-130">Type</span></span>|<span data-ttu-id="2c169-131">Описание</span><span class="sxs-lookup"><span data-stu-id="2c169-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="2fe77-132">id</span><span class="sxs-lookup"><span data-stu-id="2fe77-132">id</span></span>|<span data-ttu-id="2fe77-133">String</span><span class="sxs-lookup"><span data-stu-id="2fe77-133">String</span></span>|<span data-ttu-id="2fe77-134">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="2fe77-134">The unique Identifier.</span></span> <span data-ttu-id="2fe77-135">Это идентификатор Усерид_девицеид_аппид.</span><span class="sxs-lookup"><span data-stu-id="2fe77-135">This is userId_DeviceId_AppId id.</span></span>|
-|<span data-ttu-id="2fe77-136">status</span><span class="sxs-lookup"><span data-stu-id="2fe77-136">status</span></span>|[<span data-ttu-id="2fe77-137">appLogUploadState</span><span class="sxs-lookup"><span data-stu-id="2fe77-137">appLogUploadState</span></span>](../resources/intune-devices-apploguploadstate.md)|<span data-ttu-id="2fe77-138">Запись состояния отправки.</span><span class="sxs-lookup"><span data-stu-id="2fe77-138">Log upload status.</span></span> <span data-ttu-id="2fe77-139">Возможные значения: `pending`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="2fe77-139">Possible values are: `pending`, `completed`, `failed`.</span></span>|
-|<span data-ttu-id="2fe77-140">Ошибк</span><span class="sxs-lookup"><span data-stu-id="2fe77-140">errorMessage</span></span>|<span data-ttu-id="2fe77-141">String</span><span class="sxs-lookup"><span data-stu-id="2fe77-141">String</span></span>|<span data-ttu-id="2fe77-142">Сообщение об ошибке, если оно возникло во время процесса отправки</span><span class="sxs-lookup"><span data-stu-id="2fe77-142">Error message if any during the upload process</span></span>|
-|<span data-ttu-id="2fe77-143">Кустомлогфолдерс</span><span class="sxs-lookup"><span data-stu-id="2fe77-143">customLogFolders</span></span>|<span data-ttu-id="2fe77-144">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="2fe77-144">String collection</span></span>|<span data-ttu-id="2fe77-145">Список папок журналов.</span><span class="sxs-lookup"><span data-stu-id="2fe77-145">List of log folders.</span></span> |
-|<span data-ttu-id="2fe77-146">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="2fe77-146">completedDateTime</span></span>|<span data-ttu-id="2fe77-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2fe77-147">DateTimeOffset</span></span>|<span data-ttu-id="2fe77-148">Время, когда запрос на отправку журнала достигает состояния терминала</span><span class="sxs-lookup"><span data-stu-id="2fe77-148">Time at which the upload log request reached a terminal state</span></span>|
+|<span data-ttu-id="2c169-132">id</span><span class="sxs-lookup"><span data-stu-id="2c169-132">id</span></span>|<span data-ttu-id="2c169-133">String</span><span class="sxs-lookup"><span data-stu-id="2c169-133">String</span></span>|<span data-ttu-id="2c169-134">Уникальный идентификатор.</span><span class="sxs-lookup"><span data-stu-id="2c169-134">The unique Identifier.</span></span> <span data-ttu-id="2c169-135">Это идентификатор Усерид_девицеид_аппид.</span><span class="sxs-lookup"><span data-stu-id="2c169-135">This is userId_DeviceId_AppId id.</span></span>|
+|<span data-ttu-id="2c169-136">status</span><span class="sxs-lookup"><span data-stu-id="2c169-136">status</span></span>|[<span data-ttu-id="2c169-137">appLogUploadState</span><span class="sxs-lookup"><span data-stu-id="2c169-137">appLogUploadState</span></span>](../resources/intune-devices-apploguploadstate.md)|<span data-ttu-id="2c169-138">Запись состояния отправки.</span><span class="sxs-lookup"><span data-stu-id="2c169-138">Log upload status.</span></span> <span data-ttu-id="2c169-139">Возможные значения: `pending`, `completed`, `failed`.</span><span class="sxs-lookup"><span data-stu-id="2c169-139">Possible values are: `pending`, `completed`, `failed`.</span></span>|
+|<span data-ttu-id="2c169-140">Ошибк</span><span class="sxs-lookup"><span data-stu-id="2c169-140">errorMessage</span></span>|<span data-ttu-id="2c169-141">String</span><span class="sxs-lookup"><span data-stu-id="2c169-141">String</span></span>|<span data-ttu-id="2c169-142">Сообщение об ошибке, если оно возникло во время процесса отправки</span><span class="sxs-lookup"><span data-stu-id="2c169-142">Error message if any during the upload process</span></span>|
+|<span data-ttu-id="2c169-143">Кустомлогфолдерс</span><span class="sxs-lookup"><span data-stu-id="2c169-143">customLogFolders</span></span>|<span data-ttu-id="2c169-144">Коллекция строк</span><span class="sxs-lookup"><span data-stu-id="2c169-144">String collection</span></span>|<span data-ttu-id="2c169-145">Список папок журналов.</span><span class="sxs-lookup"><span data-stu-id="2c169-145">List of log folders.</span></span> |
+|<span data-ttu-id="2c169-146">completedDateTime</span><span class="sxs-lookup"><span data-stu-id="2c169-146">completedDateTime</span></span>|<span data-ttu-id="2c169-147">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="2c169-147">DateTimeOffset</span></span>|<span data-ttu-id="2c169-148">Время, когда запрос на отправку журнала достигает состояния терминала</span><span class="sxs-lookup"><span data-stu-id="2c169-148">Time at which the upload log request reached a terminal state</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="2fe77-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="2fe77-149">Response</span></span>
-<span data-ttu-id="2fe77-150">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2fe77-150">If successful, this method returns a `201 Created` response code and a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="2c169-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c169-149">Response</span></span>
+<span data-ttu-id="2c169-150">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="2c169-150">If successful, this method returns a `201 Created` response code and a [appLogCollectionRequest](../resources/intune-devices-applogcollectionrequest.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2fe77-151">Пример</span><span class="sxs-lookup"><span data-stu-id="2fe77-151">Example</span></span>
+## <a name="example"></a><span data-ttu-id="2c169-151">Пример</span><span class="sxs-lookup"><span data-stu-id="2c169-151">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="2fe77-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="2fe77-152">Request</span></span>
-<span data-ttu-id="2fe77-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2fe77-153">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="2c169-152">Запрос</span><span class="sxs-lookup"><span data-stu-id="2c169-152">Request</span></span>
+<span data-ttu-id="2c169-153">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2c169-153">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshootingEventId}/appLogCollectionRequests
 Content-type: application/json
@@ -82,8 +81,8 @@ Content-length: 257
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="2fe77-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="2fe77-154">Response</span></span>
-<span data-ttu-id="2fe77-p104">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="2fe77-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="2c169-154">Отклик</span><span class="sxs-lookup"><span data-stu-id="2c169-154">Response</span></span>
+<span data-ttu-id="2c169-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2c169-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

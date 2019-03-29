@@ -4,31 +4,31 @@ description: Удаляет объект androidForWorkAppConfigurationSchema.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6b3cec240b45752f7b52a4a2993a34922ad6b44
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fc66bb111696aaade6e1731c4acacd6d9cd56b20
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175033"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30968548"
 ---
-# <a name="delete-androidforworkappconfigurationschema"></a><span data-ttu-id="f6061-103">Удаление объекта androidForWorkAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="f6061-103">Delete androidForWorkAppConfigurationSchema</span></span>
+# <a name="delete-androidforworkappconfigurationschema"></a><span data-ttu-id="7ed59-103">Удаление объекта androidForWorkAppConfigurationSchema</span><span class="sxs-lookup"><span data-stu-id="7ed59-103">Delete androidForWorkAppConfigurationSchema</span></span>
 
-> <span data-ttu-id="f6061-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f6061-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="7ed59-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ed59-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="f6061-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="f6061-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="7ed59-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7ed59-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="f6061-106">Удаляет объект [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).</span><span class="sxs-lookup"><span data-stu-id="f6061-106">Deletes a [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).</span></span>
+<span data-ttu-id="7ed59-106">Удаляет объект [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).</span><span class="sxs-lookup"><span data-stu-id="7ed59-106">Deletes a [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md).</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="f6061-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="f6061-107">Prerequisites</span></span>
-<span data-ttu-id="f6061-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="f6061-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="7ed59-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="7ed59-107">Prerequisites</span></span>
+<span data-ttu-id="7ed59-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7ed59-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="f6061-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="f6061-110">Permission type</span></span>|<span data-ttu-id="f6061-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="f6061-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="7ed59-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7ed59-110">Permission type</span></span>|<span data-ttu-id="7ed59-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7ed59-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="f6061-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="f6061-112">Delegated (work or school account)</span></span>|<span data-ttu-id="f6061-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="f6061-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="f6061-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="f6061-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="f6061-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f6061-115">Not supported.</span></span>|
-|<span data-ttu-id="f6061-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="f6061-116">Application</span></span>|<span data-ttu-id="f6061-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="f6061-117">Not supported.</span></span>|
+|<span data-ttu-id="7ed59-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7ed59-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7ed59-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7ed59-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="7ed59-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7ed59-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7ed59-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ed59-115">Not supported.</span></span>|
+|<span data-ttu-id="7ed59-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7ed59-116">Application</span></span>|<span data-ttu-id="7ed59-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7ed59-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="f6061-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="f6061-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="7ed59-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7ed59-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,30 +37,28 @@ ms.locfileid: "30175033"
 DELETE /deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAppConfigurationSchemaId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="f6061-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="f6061-119">Request headers</span></span>
-|<span data-ttu-id="f6061-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="f6061-120">Header</span></span>|<span data-ttu-id="f6061-121">Значение</span><span class="sxs-lookup"><span data-stu-id="f6061-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="7ed59-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7ed59-119">Request headers</span></span>
+|<span data-ttu-id="7ed59-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7ed59-120">Header</span></span>|<span data-ttu-id="7ed59-121">Значение</span><span class="sxs-lookup"><span data-stu-id="7ed59-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="f6061-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="f6061-122">Authorization</span></span>|<span data-ttu-id="f6061-123">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="f6061-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="f6061-124">Accept</span><span class="sxs-lookup"><span data-stu-id="f6061-124">Accept</span></span>|<span data-ttu-id="f6061-125">application/json</span><span class="sxs-lookup"><span data-stu-id="f6061-125">application/json</span></span>|
+|<span data-ttu-id="7ed59-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7ed59-122">Authorization</span></span>|<span data-ttu-id="7ed59-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7ed59-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="7ed59-124">Accept</span><span class="sxs-lookup"><span data-stu-id="7ed59-124">Accept</span></span>|<span data-ttu-id="7ed59-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7ed59-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="f6061-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="f6061-126">Request body</span></span>
-<span data-ttu-id="f6061-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="f6061-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="7ed59-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7ed59-126">Request body</span></span>
+<span data-ttu-id="7ed59-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="7ed59-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="f6061-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="f6061-128">Response</span></span>
-<span data-ttu-id="f6061-129">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="f6061-129">If successful, this method returns a `204 No Content` response code.</span></span>
+## <a name="response"></a><span data-ttu-id="7ed59-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="7ed59-128">Response</span></span>
+<span data-ttu-id="7ed59-129">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="7ed59-129">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="f6061-130">Пример</span><span class="sxs-lookup"><span data-stu-id="f6061-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="7ed59-130">Пример</span><span class="sxs-lookup"><span data-stu-id="7ed59-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="f6061-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="f6061-131">Request</span></span>
-<span data-ttu-id="f6061-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="f6061-132">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="7ed59-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="7ed59-131">Request</span></span>
+<span data-ttu-id="7ed59-132">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7ed59-132">Here is an example of the request.</span></span>
 ``` http
 DELETE https://graph.microsoft.com/beta/deviceManagement/androidForWorkAppConfigurationSchemas/{androidForWorkAppConfigurationSchemaId}
 ```
 
-### <a name="response"></a><span data-ttu-id="f6061-133">Отклик
-</span><span class="sxs-lookup"><span data-stu-id="f6061-133">Response</span></span>
-<span data-ttu-id="f6061-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="f6061-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="7ed59-133">Отклик</span><span class="sxs-lookup"><span data-stu-id="7ed59-133">Response</span></span>
+<span data-ttu-id="7ed59-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7ed59-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 204 No Content
 ```
