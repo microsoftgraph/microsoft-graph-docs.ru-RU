@@ -4,12 +4,12 @@ description: Обновление свойств объекта Даташари
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42be19a02b5839023a76568a1457df105036c4de
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5f89d81976eeea5cb4832aeb670c0bee26069487
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30157997"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958020"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
@@ -20,7 +20,7 @@ ms.locfileid: "30157997"
 Обновление свойств объекта [даташарингконсент](../resources/intune-devices-datasharingconsent.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -54,7 +53,7 @@ PATCH /deviceManagement/dataSharingConsents/{dataSharingConsentId}
 |id|String|Идентификатор согласия общего доступа к данным|
 |Сервицедисплайнаме|String|Отображаемое имя рабочего процесса службы|
 |Термсурл|String|Термсурл для согласия общего доступа к данным|
-|granted|Логический|Состояние предоставления согласия на общий доступ к данным|
+|granted|Boolean|Состояние предоставления согласия на общий доступ к данным|
 |Грантдатетиме|DateTimeOffset|Для этой учетной записи предоставлено согласие по времени|
 |Грантедбюпн|String|Имя участника-пользователя, которому назначено согласие для этой учетной записи.|
 |Грантедбюсерид|String|UserId пользователя, который предоставил согласие для этой учетной записи|

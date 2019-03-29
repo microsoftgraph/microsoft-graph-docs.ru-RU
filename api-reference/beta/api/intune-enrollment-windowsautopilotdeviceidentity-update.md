@@ -4,12 +4,12 @@ description: Обновление свойств объекта windowsAutopilot
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7e6aaba99e2526b139fd06fa047ec36828ef24a6
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 4132ebc9d93eae71712b04479c1139e1942a9979
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570789"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958734"
 ---
 # <a name="update-windowsautopilotdeviceidentity"></a>Обновление windowsAutopilotDeviceIdentity
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570789"
 Обновление свойств объекта [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -55,25 +55,25 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |Деплойментпрофилеассигнментстатус|[Виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |Деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`.|
 |Деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
-|orderIdentifier|Строка|Идентификатор заказа устройства автопилота Windows.|
-|Пурчасеордеридентифиер|Строка|Идентификатор заказа на покупку для устройства автопилота Windows.|
-|serialNumber|Строка|Серийный номер устройства Windows Autopilot.|
+|orderIdentifier|String|Идентификатор заказа устройства автопилота Windows.|
+|Пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
+|serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
-|manufacturer|Строка|OEM-производитель устройства автопилота Windows.|
-|model|Строка|Имя модели для устройства автопилота Windows.|
+|manufacturer|String|OEM-производитель устройства автопилота Windows.|
+|model|String|Имя модели для устройства автопилота Windows.|
 |Енроллментстате|[Енроллментстате](../resources/intune-enrollment-enrollmentstate.md)|Состояние регистрации в Intune для устройства автопилота Windows. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
 |Ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения в Intune к устройству автопилота Windows.|
-|Аддрессаблеусернаме|Строка|Имя пользователя с адресом.|
+|Аддрессаблеусернаме|String|Имя пользователя с адресом.|
 |userPrincipalName|String|Имя участника пользователя.|
 |resourceName|String|Имя ресурса.|
-|Скунумбер|Строка|Номер SKU|
-|Системфамили|Строка|Семейство системы|
-|Свойства azureactivedirectorydeviceid|Строка|ИДЕНТИФИКАТОР устройства AAD|
-|Манажеддевицеид|Строка|Управляемый идентификатор устройства|
+|Скунумбер|String|Номер SKU|
+|Системфамили|String|Семейство системы|
+|Свойства azureactivedirectorydeviceid|String|ИДЕНТИФИКАТОР устройства AAD|
+|Манажеддевицеид|String|Управляемый идентификатор устройства|
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -109,7 +109,7 @@ Content-length: 1001
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

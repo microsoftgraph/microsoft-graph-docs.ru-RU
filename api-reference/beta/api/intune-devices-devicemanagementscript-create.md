@@ -4,12 +4,12 @@ description: Создание нового объекта deviceManagementScript
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f7a27fef1e3487bf39a0140bad51c7ecae7e21a5
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 1a46e5eed8a4b5c678c9510d7471e3b7dc450ccb
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570762"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30959280"
 ---
 # <a name="create-devicemanagementscript"></a>Создание deviceManagementScript
 
@@ -20,7 +20,7 @@ ms.locfileid: "30570762"
 Создание нового объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -54,7 +54,7 @@ POST /deviceManagement/deviceManagementScripts
 |displayName|Строка|Имя скрипта управления устройствами.|
 |description|String|НеОбязательное описание скрипта управления устройствами.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
-|Скриптконтент|Двоичный|Содержимое скрипта.|
+|Скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
@@ -65,7 +65,7 @@ POST /deviceManagement/deviceManagementScripts
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,7 +96,7 @@ Content-length: 443
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
