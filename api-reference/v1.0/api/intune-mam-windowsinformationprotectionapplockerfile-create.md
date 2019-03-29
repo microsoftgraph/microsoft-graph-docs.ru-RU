@@ -4,29 +4,29 @@ description: Создание объекта windowsInformationProtectionAppLock
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f3b411e680a3df86b86517f63c8055cec8e4f17
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: d22e4be6d282ba7750b6c896b2592ea8b0b71a62
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30261840"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984039"
 ---
-# <a name="create-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="49482-103">Создание объекта windowsInformationProtectionAppLockerFile</span><span class="sxs-lookup"><span data-stu-id="49482-103">Create windowsInformationProtectionAppLockerFile</span></span>
+# <a name="create-windowsinformationprotectionapplockerfile"></a><span data-ttu-id="effe7-103">Создание объекта windowsInformationProtectionAppLockerFile</span><span class="sxs-lookup"><span data-stu-id="effe7-103">Create windowsInformationProtectionAppLockerFile</span></span>
 
-> <span data-ttu-id="49482-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="49482-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="effe7-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="effe7-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="49482-105">Создание объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).</span><span class="sxs-lookup"><span data-stu-id="49482-105">Create a new [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
+<span data-ttu-id="effe7-105">Создание объекта [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md).</span><span class="sxs-lookup"><span data-stu-id="effe7-105">Create a new [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="49482-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="49482-106">Prerequisites</span></span>
-<span data-ttu-id="49482-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).</span><span class="sxs-lookup"><span data-stu-id="49482-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/concepts/permissions-reference.md).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="effe7-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="effe7-106">Prerequisites</span></span>
+<span data-ttu-id="effe7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="effe7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="49482-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="49482-109">Permission type</span></span>|<span data-ttu-id="49482-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="49482-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="effe7-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="effe7-109">Permission type</span></span>|<span data-ttu-id="effe7-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="effe7-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="49482-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="49482-111">Delegated (work or school account)</span></span>|<span data-ttu-id="49482-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="49482-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="49482-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="49482-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="49482-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49482-114">Not supported.</span></span>|
-|<span data-ttu-id="49482-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="49482-115">Application</span></span>|<span data-ttu-id="49482-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="49482-116">Not supported.</span></span>|
+|<span data-ttu-id="effe7-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="effe7-111">Delegated (work or school account)</span></span>|<span data-ttu-id="effe7-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="effe7-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="effe7-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="effe7-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="effe7-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="effe7-114">Not supported.</span></span>|
+|<span data-ttu-id="effe7-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="effe7-115">Application</span></span>|<span data-ttu-id="effe7-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="effe7-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="49482-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="49482-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="effe7-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="effe7-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -38,35 +38,34 @@ POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInf
 POST /deviceAppManagement/mdmWindowsInformationProtectionPolicies/{mdmWindowsInformationProtectionPolicyId}/protectedAppLockerFiles
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="49482-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="49482-118">Request headers</span></span>
-|<span data-ttu-id="49482-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="49482-119">Header</span></span>|<span data-ttu-id="49482-120">Значение</span><span class="sxs-lookup"><span data-stu-id="49482-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="effe7-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="effe7-118">Request headers</span></span>
+|<span data-ttu-id="effe7-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="effe7-119">Header</span></span>|<span data-ttu-id="effe7-120">Значение</span><span class="sxs-lookup"><span data-stu-id="effe7-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="49482-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="49482-121">Authorization</span></span>|<span data-ttu-id="49482-122">Требуется Bearer &lt;маркер&gt;
-</span><span class="sxs-lookup"><span data-stu-id="49482-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="49482-123">Accept</span><span class="sxs-lookup"><span data-stu-id="49482-123">Accept</span></span>|<span data-ttu-id="49482-124">application/json</span><span class="sxs-lookup"><span data-stu-id="49482-124">application/json</span></span>|
+|<span data-ttu-id="effe7-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="effe7-121">Authorization</span></span>|<span data-ttu-id="effe7-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="effe7-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="effe7-123">Accept</span><span class="sxs-lookup"><span data-stu-id="effe7-123">Accept</span></span>|<span data-ttu-id="effe7-124">application/json</span><span class="sxs-lookup"><span data-stu-id="effe7-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="49482-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="49482-125">Request body</span></span>
-<span data-ttu-id="49482-126">В теле запроса добавьте представление объекта windowsInformationProtectionAppLockerFile в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="49482-126">In the request body, supply a JSON representation for the windowsInformationProtectionAppLockerFile object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="effe7-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="effe7-125">Request body</span></span>
+<span data-ttu-id="effe7-126">В теле запроса добавьте представление объекта windowsInformationProtectionAppLockerFile в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="effe7-126">In the request body, supply a JSON representation for the windowsInformationProtectionAppLockerFile object.</span></span>
 
-<span data-ttu-id="49482-127">В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionAppLockerFile.</span><span class="sxs-lookup"><span data-stu-id="49482-127">The following table shows the properties that are required when you create the windowsInformationProtectionAppLockerFile.</span></span>
+<span data-ttu-id="effe7-127">В приведенной ниже таблице указаны свойства, необходимые при создании объекта windowsInformationProtectionAppLockerFile.</span><span class="sxs-lookup"><span data-stu-id="effe7-127">The following table shows the properties that are required when you create the windowsInformationProtectionAppLockerFile.</span></span>
 
-|<span data-ttu-id="49482-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="49482-128">Property</span></span>|<span data-ttu-id="49482-129">Тип</span><span class="sxs-lookup"><span data-stu-id="49482-129">Type</span></span>|<span data-ttu-id="49482-130">Описание</span><span class="sxs-lookup"><span data-stu-id="49482-130">Description</span></span>|
+|<span data-ttu-id="effe7-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="effe7-128">Property</span></span>|<span data-ttu-id="effe7-129">Тип</span><span class="sxs-lookup"><span data-stu-id="effe7-129">Type</span></span>|<span data-ttu-id="effe7-130">Описание</span><span class="sxs-lookup"><span data-stu-id="effe7-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="49482-131">displayName</span><span class="sxs-lookup"><span data-stu-id="49482-131">displayName</span></span>|<span data-ttu-id="49482-132">String</span><span class="sxs-lookup"><span data-stu-id="49482-132">String</span></span>|<span data-ttu-id="49482-133">Понятное имя</span><span class="sxs-lookup"><span data-stu-id="49482-133">The friendly name</span></span>|
-|<span data-ttu-id="49482-134">fileHash</span><span class="sxs-lookup"><span data-stu-id="49482-134">fileHash</span></span>|<span data-ttu-id="49482-135">String</span><span class="sxs-lookup"><span data-stu-id="49482-135">String</span></span>|<span data-ttu-id="49482-136">Хэш SHA256 для файла</span><span class="sxs-lookup"><span data-stu-id="49482-136">SHA256 hash of the file</span></span>|
-|<span data-ttu-id="49482-137">file</span><span class="sxs-lookup"><span data-stu-id="49482-137">file</span></span>|<span data-ttu-id="49482-138">Binary</span><span class="sxs-lookup"><span data-stu-id="49482-138">Binary</span></span>|<span data-ttu-id="49482-139">Файл в виде массива байтов</span><span class="sxs-lookup"><span data-stu-id="49482-139">File as a byte array</span></span>|
-|<span data-ttu-id="49482-140">id</span><span class="sxs-lookup"><span data-stu-id="49482-140">id</span></span>|<span data-ttu-id="49482-141">String</span><span class="sxs-lookup"><span data-stu-id="49482-141">String</span></span>|<span data-ttu-id="49482-142">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="49482-142">Key of the entity.</span></span>|
-|<span data-ttu-id="49482-143">version</span><span class="sxs-lookup"><span data-stu-id="49482-143">version</span></span>|<span data-ttu-id="49482-144">Строка</span><span class="sxs-lookup"><span data-stu-id="49482-144">String</span></span>|<span data-ttu-id="49482-145">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="49482-145">Version of the entity.</span></span>|
+|<span data-ttu-id="effe7-131">displayName</span><span class="sxs-lookup"><span data-stu-id="effe7-131">displayName</span></span>|<span data-ttu-id="effe7-132">String</span><span class="sxs-lookup"><span data-stu-id="effe7-132">String</span></span>|<span data-ttu-id="effe7-133">Понятное имя</span><span class="sxs-lookup"><span data-stu-id="effe7-133">The friendly name</span></span>|
+|<span data-ttu-id="effe7-134">fileHash</span><span class="sxs-lookup"><span data-stu-id="effe7-134">fileHash</span></span>|<span data-ttu-id="effe7-135">String</span><span class="sxs-lookup"><span data-stu-id="effe7-135">String</span></span>|<span data-ttu-id="effe7-136">Хэш SHA256 для файла</span><span class="sxs-lookup"><span data-stu-id="effe7-136">SHA256 hash of the file</span></span>|
+|<span data-ttu-id="effe7-137">file</span><span class="sxs-lookup"><span data-stu-id="effe7-137">file</span></span>|<span data-ttu-id="effe7-138">Binary</span><span class="sxs-lookup"><span data-stu-id="effe7-138">Binary</span></span>|<span data-ttu-id="effe7-139">Файл в виде массива байтов</span><span class="sxs-lookup"><span data-stu-id="effe7-139">File as a byte array</span></span>|
+|<span data-ttu-id="effe7-140">id</span><span class="sxs-lookup"><span data-stu-id="effe7-140">id</span></span>|<span data-ttu-id="effe7-141">String</span><span class="sxs-lookup"><span data-stu-id="effe7-141">String</span></span>|<span data-ttu-id="effe7-142">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="effe7-142">Key of the entity.</span></span>|
+|<span data-ttu-id="effe7-143">version</span><span class="sxs-lookup"><span data-stu-id="effe7-143">version</span></span>|<span data-ttu-id="effe7-144">Строка</span><span class="sxs-lookup"><span data-stu-id="effe7-144">String</span></span>|<span data-ttu-id="effe7-145">Версия объекта.</span><span class="sxs-lookup"><span data-stu-id="effe7-145">Version of the entity.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="49482-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="49482-146">Response</span></span>
-<span data-ttu-id="49482-147">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="49482-147">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="effe7-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="effe7-146">Response</span></span>
+<span data-ttu-id="effe7-147">При успешном выполнении этот метод возвращает код отклика `201 Created` и объект [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="effe7-147">If successful, this method returns a `201 Created` response code and a [windowsInformationProtectionAppLockerFile](../resources/intune-mam-windowsinformationprotectionapplockerfile.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="49482-148">Пример</span><span class="sxs-lookup"><span data-stu-id="49482-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="effe7-148">Пример</span><span class="sxs-lookup"><span data-stu-id="effe7-148">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="49482-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="49482-149">Request</span></span>
-<span data-ttu-id="49482-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="49482-150">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="effe7-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="effe7-149">Request</span></span>
+<span data-ttu-id="effe7-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="effe7-150">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/windowsInformationProtectionPolicies/{windowsInformationProtectionPolicyId}/exemptAppLockerFiles
 Content-type: application/json
@@ -81,8 +80,8 @@ Content-length: 211
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="49482-151">Ответ</span><span class="sxs-lookup"><span data-stu-id="49482-151">Response</span></span>
-<span data-ttu-id="49482-p102">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="49482-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="effe7-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="effe7-151">Response</span></span>
+<span data-ttu-id="effe7-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="effe7-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
