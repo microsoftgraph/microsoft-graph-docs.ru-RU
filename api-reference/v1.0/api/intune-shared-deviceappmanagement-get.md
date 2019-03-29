@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceAp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: c5d54e1dfeb67192465468a8abe2f26a39c2c50a
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 841282551258c23dc57e34c06e803d4184f86809
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257388"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30958405"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -19,7 +19,7 @@ ms.locfileid: "30257388"
 
 ## <a name="prerequisites"></a>Необходимые разрешения
 
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).  Обратите внимание, что соответствующее разрешение зависит от рабочего процесса.
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).  Обратите внимание, что соответствующее разрешение зависит от рабочего процесса.
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -42,14 +42,13 @@ GET /deviceAppManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [deviceAppManagement](../resources/intune-shared-deviceappmanagement.md) в теле ответа.
 
 ## <a name="example-request"></a>Пример запроса

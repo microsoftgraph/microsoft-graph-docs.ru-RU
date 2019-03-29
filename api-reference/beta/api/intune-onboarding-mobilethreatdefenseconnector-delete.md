@@ -4,12 +4,12 @@ description: Удаляет объект mobileThreatDefenseConnector.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1204eb71abf6b5a3ada1f39270257182f2b7b0f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 62ff334e4df34c03c12a369ab267e04a55d3560d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150871"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965090"
 ---
 # <a name="delete-mobilethreatdefenseconnector"></a>Удаление объекта mobileThreatDefenseConnector
 
@@ -20,7 +20,7 @@ ms.locfileid: "30150871"
 Удаляет объект [mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md).
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ DELETE /deviceManagement/mobileThreatDefenseConnectors/{mobileThreatDefenseConne
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -59,7 +58,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/mobileThreatDefenseConn
 ```
 
 ### <a name="response"></a>Отклик
-
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content

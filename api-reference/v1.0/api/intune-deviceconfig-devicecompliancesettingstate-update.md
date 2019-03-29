@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceCompliance
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c22c97d8e15e79419066392d3a984ee0899589b7
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 735f9f3b564d7e810347d63a1c90233be7ff1de7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258669"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30963102"
 ---
 # <a name="update-devicecompliancesettingstate"></a>Update deviceComplianceSettingState
 
@@ -18,7 +18,7 @@ ms.locfileid: "30258669"
 Обновление свойств объекта [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -38,27 +38,26 @@ PATCH /deviceManagement/deviceCompliancePolicySettingStateSummaries/{deviceCompl
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [deviceComplianceSettingState](../resources/intune-deviceconfig-devicecompliancesettingstate.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта|
+|id|Строка|Ключ объекта|
 |setting|String|Имя класса параметров и свойства.|
-|settingName|String|Имя параметра в отчете.|
-|deviceId|String|Идентификатор устройства в отчете.|
-|deviceName|String|Имя устройства в отчете.|
-|userId|String|Идентификатор пользователя в отчете.|
-|userEmail|String|Адрес электронной почты пользователя в отчете.|
-|userName|String|Имя пользователя в отчете.|
-|userPrincipalName|String|Имя участника-пользователя в отчете.|
-|deviceModel|String|Модель устройства в отчете.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
+|userId|String|ИД пользователя в отчете|
+|userEmail|String|Электронный адрес пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
+|userPrincipalName|String|Имя участника-пользователя в отчете|
+|deviceModel|String|Модель устройства в отчете|
 |state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
@@ -92,8 +91,8 @@ Content-length: 517
 }
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

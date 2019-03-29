@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceManagement
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 02c64f6ad5ba9fe81ef71c49197aedd204ffdce4
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: a46d2fe4d138d6edcefa6d5f633afc54926336e2
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572546"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962584"
 ---
 # <a name="update-devicemanagementscript"></a>Обновление deviceManagementScript
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572546"
 Обновление свойств объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -54,7 +54,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 |displayName|Строка|Имя скрипта управления устройствами.|
 |description|String|НеОбязательное описание скрипта управления устройствами.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
-|Скриптконтент|Двоичный|Содержимое скрипта.|
+|Скриптконтент|Binary|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
@@ -65,7 +65,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,7 +96,7 @@ Content-length: 443
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

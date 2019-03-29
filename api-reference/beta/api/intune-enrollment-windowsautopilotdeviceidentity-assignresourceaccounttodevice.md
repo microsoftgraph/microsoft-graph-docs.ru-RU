@@ -1,17 +1,17 @@
 ---
-title: действие Ассигнресаурцеаккаунттодевице
+title: Действие assignResourceAccountToDevice
 description: Назначение учетной записи ресурса автопилотным устройствам.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e46f12d33e26f15a87746720bfd1b418d4f21878
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 587ef8cdd0b3c61edf4076c04c1d01e87b917dc9
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631638"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30962927"
 ---
-# <a name="assignresourceaccounttodevice-action"></a>действие Ассигнресаурцеаккаунттодевице
+# <a name="assignresourceaccounttodevice-action"></a>Действие assignResourceAccountToDevice
 
 > **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
 
@@ -20,7 +20,7 @@ ms.locfileid: "30631638"
 Назначение учетной записи ресурса автопилотным устройствам.
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -78,7 +78,7 @@ Content-length: 170
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content
 ```

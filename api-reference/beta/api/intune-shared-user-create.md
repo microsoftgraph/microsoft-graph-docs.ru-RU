@@ -4,12 +4,12 @@ description: Создание объекта user.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f46fbbc365e52ae9e46db9f6c05c3c8e8eeddc92
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 8f8cf0fb067c5a9cac80308f49fe07af122c1b47
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572259"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30965321"
 ---
 # <a name="create-user"></a>Создание пользователя
 
@@ -21,7 +21,7 @@ ms.locfileid: "30572259"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).  Конкретное требуемое разрешение зависит от контекста.
+Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).  Конкретное требуемое разрешение зависит от контекста.
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
