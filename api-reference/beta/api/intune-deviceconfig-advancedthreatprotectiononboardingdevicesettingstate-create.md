@@ -4,12 +4,12 @@ description: Создание нового объекта Адванцедсре
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0d37c00522a5f27db84e180035c38cc7d45db48
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d877edcdc82cee35c7fc75c556ca5ac0035221ad
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155904"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980665"
 ---
 # <a name="create-advancedthreatprotectiononboardingdevicesettingstate"></a>Создание Адванцедсреатпротектиононбоардингдевицесеттингстате
 
@@ -20,7 +20,7 @@ ms.locfileid: "30155904"
 Создание нового объекта [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,23 +50,23 @@ POST /deviceManagement/advancedThreatProtectionOnboardingStateSummary/advancedTh
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта|
+|id|Строка|Ключ объекта|
 |platformType|[deviceType](../resources/intune-shared-devicetype.md)|Тип платформы устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
 |setting|String|Имя класса параметров и свойства.|
-|settingName|String|Имя параметра в отчете.|
-|deviceId|String|Идентификатор устройства в отчете.|
-|deviceName|String|Имя устройства в отчете.|
-|userId|String|Идентификатор пользователя в отчете.|
-|userEmail|String|Адрес электронной почты пользователя в отчете.|
-|userName|String|Имя пользователя в отчете.|
-|userPrincipalName|String|Имя участника-пользователя в отчете.|
-|deviceModel|String|Модель устройства в отчете.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
+|userId|String|ИД пользователя в отчете|
+|userEmail|String|Электронный адрес пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
+|userPrincipalName|String|Имя участника-пользователя в отчете|
+|deviceModel|String|Модель устройства в отчете|
 |state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время, когда истекает период отсрочки применения политик на устройстве.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -96,8 +95,8 @@ Content-length: 573
 }
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

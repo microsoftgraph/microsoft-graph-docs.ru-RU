@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта mobileAp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eda41b5236a7897f1438f5eb453f0000fef705c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d68e049e43f69f1009c27bde0983a8d84bdb60f7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151711"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30980903"
 ---
 # <a name="get-mobileappcontent"></a>Get mobileAppContent
 
@@ -20,7 +20,7 @@ ms.locfileid: "30151711"
 Чтение свойств и связей объекта [mobileAppContent](../resources/intune-apps-mobileappcontent.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -45,8 +45,7 @@ GET /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.managedMobileL
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

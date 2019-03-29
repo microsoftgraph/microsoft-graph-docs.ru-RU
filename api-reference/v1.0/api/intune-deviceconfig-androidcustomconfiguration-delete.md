@@ -4,12 +4,12 @@ description: Удаляет объект androidCustomConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ebb060f72a006168bef0fd9dc67e390c1e1725be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: 93ea285334b8497b23658090e58c74d3fb7c3dba
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255285"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30982317"
 ---
 # <a name="delete-androidcustomconfiguration"></a>Delete androidCustomConfiguration
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255285"
 Удаляет объект [androidCustomConfiguration](../resources/intune-deviceconfig-androidcustomconfiguration.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -38,8 +38,7 @@ DELETE /deviceManagement/deviceConfigurations/{deviceConfigurationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -57,7 +56,6 @@ DELETE https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{d
 ```
 
 ### <a name="response"></a>Отклик
-
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 204 No Content

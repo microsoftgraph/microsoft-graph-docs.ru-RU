@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09c4b8852fb2425cd9b2b1273921c92e088115b3
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.openlocfilehash: cb6ae4337cd79b78d0cccc2d127b764fa740a2f3
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255271"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30984284"
 ---
 # <a name="get-devicecompliancedevicestatus"></a>Get deviceComplianceDeviceStatus
 
@@ -18,7 +18,7 @@ ms.locfileid: "30255271"
 Чтение свойств и связей объекта [deviceComplianceDeviceStatus](../resources/intune-deviceconfig-devicecompliancedevicestatus.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -41,8 +41,7 @@ GET /deviceManagement/deviceCompliancePolicies/{deviceCompliancePolicyId}/device
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса

@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47bbee4b0921f06809e1610db850ee8a20769fa3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 27a0fe4783b63ffabdabb6d68e2e8bafd9a43f7b
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160482"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30983080"
 ---
 # <a name="list-mdmwindowsinformationprotectionpolicies"></a>Перечисление объектов mdmWindowsInformationProtectionPolicy
 
@@ -20,7 +20,7 @@ ms.locfileid: "30160482"
 Перечисление свойств и связей объектов [mdmWindowsInformationProtectionPolicy](../resources/intune-mam-mdmwindowsinformationprotectionpolicy.md).
 
 ## <a name="prerequisites"></a>Предварительные условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -40,8 +40,7 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -58,8 +57,8 @@ GET /deviceAppManagement/mdmWindowsInformationProtectionPolicies
 GET https://graph.microsoft.com/beta/deviceAppManagement/mdmWindowsInformationProtectionPolicies
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
