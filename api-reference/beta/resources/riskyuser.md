@@ -1,57 +1,48 @@
 ---
 title: Тип ресурса riskyUsers
-description: Представляет пользователей Azure AD, в группу риска. Постоянно Azure AD выполнена оценка риска пользователя на основе различных сигналы и машинного обучения. Этот интерфейс API позволяет получать доступ ко всем пользователям под риском в Azure AD.
+description: Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
 author: cloudhandler
 localization_priority: Normal
-ms.prod: security
-ms.openlocfilehash: 27c189a81d6ba4e088c1242acfd2cf0d0f5c56c5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.prod: microsoft-identity-platform
+ms.openlocfilehash: 3265ea40903ca2c5c10272f5df280bd3715af366
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643911"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003722"
 ---
 # <a name="riskyusers-resource-type"></a>Тип ресурса riskyUsers
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователей Azure AD, в группу риска. Постоянно Azure AD выполнена оценка риска пользователя на основе различных сигналы и машинного обучения. Этот интерфейс API позволяет получать доступ ко всем пользователям под риском в Azure AD.
+Представляет пользователей Azure AD, которые находятся под угрозой. Azure AD постоянно оценивает риск пользователя на основе различных сигналов и машинного обучения. Этот API предоставляет программный доступ ко всем пользователям с рисками в Azure AD.
 
-> **Примечание:** Этот интерфейс API требуется лицензия на P2 Azure AD Premium.
+Для получения дополнительных сведений о событиях риска обратитесь к разделу [Защита удостоверенИй Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
 
-Дополнительные сведения о событиях риска можно [Azure Active Directory защиту](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/).
+>**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
 ## <a name="methods"></a>Методы
 
 | Метод   | Возвращаемый тип|Описание|
 |:---------------|:--------|:----------|
-|[Список riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyuser.md) |Список рискованный пользователей и их свойства.|
-|[Получение riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyuser.md)|Получите определенного пользователя рискованный и его свойства.|
+|[Список riskyUsers](../api/riskyusers-list.md) | [riskyUsers](riskyUser.md) |Список рискованных пользователей и их свойств.|
+|[Получение riskyUsers](../api/riskyusers-get.md) | [riskyUsers](riskyUser.md)|Получение определенного опасного пользователя и его свойств.|
+|[Подтверждение riskyUsers скомпрометированных атак](../api/riskyusers-confirmcompromised.md)|Подтвердите опасного пользователя в качестве скомпрометированного.|
+|[ОтКлонить riskyUsers](../api/riskyusers-dismiss.md)|ОтКлонить риск опасного пользователя.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|`id`|`string`|Уникальный идентификатор пользователя, под угрозой|
-|`isDeleted`|`bool`|Указывает, является ли пользователь удаляется. Возможные значения: `true`,`false`|
-|`isGuest`|`bool`|Указывает, является ли пользователь Гость. Возможные значения: `true`, `false`. Значение true, если удостоверение пользователя находится за пределами клиента в расчет. Этот пользователь может быть B2B или B2C пользователя с удостоверением в Azure AD, MSA или стороннего поставщика удостоверений. False, если удостоверение пользователя размещен внутри клиента в расчет|
-|`riskDetail`|`riskDetail`|Предоставляет "причину" определенного состояния пользователя с риском, входа или события риска. Возможные значения: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `unknownFutureValue`. Значение `none` означает, что действия для пользователя или входа пока не выполнялись.|
-|`riskLevel`|`riskLevel`|Предоставляет общий уровень риска рискованный пользователя, входа или события риска. Допустимые значения: `none`, `low`, `medium`, `high`, `hidden` и `unknownFutureValue`. Значение `hidden` означает, что пользователь или вход не разрешены в службе защиты идентификации Azure AD.|
-|`riskState`|`riskState`|Представляет "состояние риска" пользователя с риском, входа или события риска. Возможные значения: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
-|`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованный пользователя|
-|`userDisplayName`|`string`|Отображаемое имя рискованный пользователя|
-|`userPrincipalName`|`string`|Имя участника-пользователя рискующий|
+|`id`|`string`|Уникальный идентификатор пользователя под угрозой|
+|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true`,`false`|
+|`isGuest`|`bool`|Указывает, является ли пользователь гостямй. Возможные значения: `true`, `false`. Имеет значение true, если удостоверение пользователя находится вне клиента. Это может быть B2B или пользователь B2C с удостоверением в Azure AD, MSA или сторонним поставщиком удостоверений. False, если удостоверение пользователя находится внутри клиента в данный момент|
+|`isProcessing`|`bool`|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
+|`risk`|[особой](risk.md)|Опасное состояние пользователя|
+|`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованного пользователя|
+|`userDisplayName`|`string`|Опасное отображаемое имя пользователя|
+|`userPrincipalName`|`string`|Рискованное имя участника пользователя|
 
-## <a name="relationships"></a>Связи
-
-| Связь | Тип |Описание|
-|:---------------|:--------|:----------|
-|id|UserObjectId| Уникальный идентификатор пользователя, с которым связано событие данного риска с.|
-|isGuest|isGuest| Рискованный пользователя может быть Домашняя страница пользователя (B2E) или Гость (B2B, B2C).|
-|isDeleted|isDeleted| Пользователь может или не может быть удалена. |
-|riskState|riskState| Рискованный пользователя может присутствовать в одном из нескольких состояний. |
-|riskDetail|riskDetail| Рискованный пользователь сможет в определенном состоянии нескольким причинам. |
-|riskLevel|riskLevel| Рискованный пользователь может рассматриваться как один из нескольких уровней риска. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -67,13 +58,12 @@ ms.locfileid: "29643911"
 
 ```json
 {
-"id": "string",
+ "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
 "isGuest": "boolean",
+"isProcessing": "boolean",
 "isDeleted": "boolean",
-"riskDetail":  {"@odata.type": "microsoft.graph.riskDetail"},
-"riskLevel":  {"@odata.type": "microsoft.graph.riskLevel"},
-"riskState":  {"@odata.type": "microsoft.graph.riskState"},
+"risk": {"@odata.type": "microsoft.graph.risk"},
 "userDisplayName": "string",
 "userPrincipalName": "string"
 }
@@ -82,15 +72,10 @@ ms.locfileid: "29643911"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "riskyusers resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/riskyuser.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

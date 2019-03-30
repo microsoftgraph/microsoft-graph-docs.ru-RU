@@ -4,12 +4,12 @@ description: Обновляет свойства объекта defaultManagedAp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 90f9b1d1dd2d8ef9b0c6577400e0310d053c786d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 8872fbce82531296d3b4874b289cf1c7bab1bc9d
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572476"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30987743"
 ---
 # <a name="update-defaultmanagedappprotection"></a>Обновление объекта defaultManagedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572476"
 Обновляет свойства объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).
 
 ## <a name="prerequisites"></a>Необходимые условия
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -43,7 +43,7 @@ PATCH /deviceAppManagement/defaultManagedAppProtections/{defaultManagedAppProtec
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 В теле запроса добавьте представление объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).
@@ -220,7 +220,7 @@ Content-length: 3535
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
