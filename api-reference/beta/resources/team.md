@@ -4,18 +4,18 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 9a5f1968753d3d2412b3885e6a09e94f18731e40
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 01bfcc5a036e2df8f91aad7ad06aa71ba41f1e28
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458682"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30967603"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Команда в Microsoft Teams — это коллекция [каналов](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
+Команда в Microsoft Teams — это коллекция объектов [channel](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
 
 Каждая команда связана с [группой](../resources/group.md).
 У группы такой же идентификатор, как у команды. Например, /groups/{id}/team совпадает с /teams/{id}.
@@ -36,7 +36,7 @@ ms.locfileid: "30458682"
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
 |[Публикация приложений в организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание приложений Teams, видимых только для вашей организации. |
-|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
+|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
 |[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
 |[Перечисление сообщений в каналах](../api/channel-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | [Получение сообщений в канале](../api/channel-list-messages.md) |
 |[Отправка сообщения канала](../api/channel-post-chatmessage.md)  | [chatMessage](../resources/chatmessage.md) | [Отправка сообщения в канал](../api/channel-post-chatmessage.md) |

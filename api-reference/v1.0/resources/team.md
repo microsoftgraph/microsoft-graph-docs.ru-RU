@@ -4,18 +4,18 @@ description: 'Команда в Microsoft Teams — это коллекция к
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 692f0d12c172fb6b7088912eec952b519d852cac
-ms.sourcegitcommit: a1f1e59ee568340bfabdb524e01cff7860bcc862
+ms.openlocfilehash: 7c3dd42c25ce8c48722ab857f61e0c6a9a275581
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735574"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30964138"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
 
 
-Команда в Microsoft Teams — это коллекция [каналов](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
+Команда в Microsoft Teams — это коллекция объектов [channel](channel.md). Канал представляет тему и логически обособляет обсуждение в команде.
 
 Каждая команда связана с [группой](../resources/group.md).
 У группы такой же идентификатор, как у команды. Например, /groups/{id}/team совпадает с /teams/{id}.
@@ -35,7 +35,7 @@ ms.locfileid: "29735574"
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление всех команд](/graph/teams-list-all-teams) | Коллекция [group](group.md) | Перечисление всех групп, содержащих команды. |
 |[Публикация приложений в организации](../resources/teamsapp.md)| [teamsApp](../resources/teamsapp.md) | Создание приложений Teams, видимых только для вашей организации. |
-|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsappinstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
+|[Добавление приложения в команду](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsappinstallation.md) | Добавляет (устанавливает) приложение в команду.|
 |[Добавление вкладки в канал](../api/teamstab-add.md) | [teamsTab](../resources/teamstab.md) | Добавляет (устанавливает) вкладку в канал команды.|
 
 ## <a name="properties"></a>Свойства
@@ -52,7 +52,7 @@ ms.locfileid: "29735574"
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип   | Описание |
+| Отношение | Тип   | Описание |
 |:---------------|:--------|:----------|
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
