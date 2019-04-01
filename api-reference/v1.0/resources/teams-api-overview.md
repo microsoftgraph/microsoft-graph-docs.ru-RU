@@ -4,18 +4,18 @@ description: Microsoft Teams — это рабочее пространство 
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 07281fef3a3e7dd5ee396bb49a0409c23d57c45f
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.openlocfilehash: b0462b350df52a85a1a452be6ce38def86600eb3
+ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994442"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31003743"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
 
 
-Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика и многому другому.
+Microsoft Teams — это рабочее пространство с чатами в Office 365, обеспечивающее встроенный доступ к календарям команд, файлам, заметкам OneNote, планам Планировщика, расписаниям Смен и многому другому.
 
 ## <a name="key-resources-in-microsoft-teams"></a>Основные ресурсы в Microsoft Teams
 
@@ -29,6 +29,11 @@ Microsoft Teams — это рабочее пространство с чатам
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/teamsappinstallation-list.md), [установка](../api/teamsappinstallation-add.md), [обновление](../api/teamsappinstallation-delete.md), [удаление](../api/teamsappinstallation-delete.md) |
 | [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) (предварительная версия)| [Список](/graph/api/channel-list-messages?view=graph-rest-beta), [отправка](/graph/api/channel-post-chatmessage?view=graph-rest-beta), [чтение](/graph/api/channel-get-message?view=graph-rest-beta) |
 | [call](/graph/api/resources/call?view=graph-rest-beta) (предварительная версия)| [Ответ](/graph/api/call-answer?view=graph-rest-beta), [отклонение](/graph/api/call-reject?view=graph-rest-beta), [перенаправление](/graph/api/call-redirect?view=graph-rest-beta), [отключение звука](/graph/api/call-mute?view=graph-rest-beta), [включение звука](/graph/api/call-unmute?view=graph-rest-beta), [обновление метаданных](/graph/api/call-updatemetadata?view=graph-rest-beta), [изменение роли при демонстрации экрана](/graph/api/call-changescreensharingrole?view=graph-rest-beta), [перечисление участников](/graph/api/call-list-participants?view=graph-rest-beta), [приглашение участников](/graph/api/participant-invite?view=graph-rest-beta), [отключение звука всех участников](/graph/api/participant-muteall?view=graph-rest-beta) |
+|[schedule](/graph/api/resources/schedule?view=graph-rest-beta) (предварительная версия)| [Создание или замена](/graph/api/team-put-schedule?view=graph-rest-beta), [получение](/graph/api/schedule-get?view=graph-rest-beta), [предоставление общего доступа](/graph/api/schedule-share?view=graph-rest-beta) |
+|[schedulingGroup](/graph/api/resources/schedulinggroup?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-schedulinggroups?view=graph-rest-beta), [список](/graph/api/schedule-list-schedulinggroups?view=graph-rest-beta), [получение](/graph/api/schedulinggroup-get?view=graph-rest-beta), [замена](/graph/api/schedulinggroup-put?view=graph-rest-beta), [удаление](/graph/api/schedulinggroup-delete?view=graph-rest-beta) |
+|[shift](/graph/api/resources/shift?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-shifts?view=graph-rest-beta), [список](/graph/api/schedule-list-shifts?view=graph-rest-beta), [получение](/graph/api/shift-get?view=graph-rest-beta), [замена](/graph/api/shift-put?view=graph-rest-beta), [удаление](/graph/api/shift-delete?view=graph-rest-beta) |
+|[timeOff](/graph/api/resources/timeoff?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-timesoff?view=graph-rest-beta), [список](/graph/api/schedule-list-timesoff?view=graph-rest-beta), [получение](/graph/api/timeoff-get?view=graph-rest-beta), [замена](/graph/api/timeoff-put?view=graph-rest-beta), [удаление](/graph/api/timeoff-delete?view=graph-rest-beta) |
+|[timeOffReason](/graph/api/resources/timeoffreason?view=graph-rest-beta) (предварительная версия)| [Создание](/graph/api/schedule-post-timeoffreasons?view=graph-rest-beta), [список](/graph/api/schedule-list-timeoffreasons?view=graph-rest-beta), [получение](/graph/api/timeoffreason-get?view=graph-rest-beta), [замена](/graph/api/timeoffreason-put?view=graph-rest-beta), [удаление](/graph/api/timeoffreason-delete?view=graph-rest-beta) |
 
 ## <a name="teams-and-groups"></a>Команды и группы
 
