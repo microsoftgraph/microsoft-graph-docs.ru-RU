@@ -6987,7 +6987,7 @@ items:
                     href: api/accessreview-addreviewer.md
                   - name: Список решений
                     href: api/accessreview-listdecisions.md
-                  - name: Список «Мои решения»
+                  - name: Список "Мои решения"
                     href: api/accessreview-listmydecisions.md
                   - name: Список рецензентов
                     href: api/accessreview-listreviewers.md
@@ -7266,6 +7266,10 @@ items:
                     href: api/riskyusers-list.md
                   - name: Получение
                     href: api/riskyusers-get.md
+                  - name: Подтвердить скомпрометированный
+                    href: api/riskyusers-confirmcompromised.md
+                  - name: Отклонить
+                    href: api/riskyusers-dismiss.md
           - name: Поставщик удостоверений
             href: resources/identityprovider.md
             items:
