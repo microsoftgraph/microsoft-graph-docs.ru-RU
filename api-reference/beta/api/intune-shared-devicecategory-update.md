@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceCategory.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: eb2d3bc4f081065f27de1c303f87f9e98700d7b9
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 90f5305e2fb52b5ecd184aad837f2c9d8f6334ef
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572350"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30970102"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -21,7 +21,7 @@ ms.locfileid: "30572350"
 
 ## <a name="prerequisites"></a>Предварительные условия
 
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceCategories/{deviceCategoryId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Текст запроса
+## <a name="request-body"></a>Тело запроса
 
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта managedA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f1aa876b1ea5bdb50bae7a0614d25b24468c6bc
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 16f6672d7ec9ba6a1f9140c85e881cb679dde8f7
+ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572056"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30975100"
 ---
 # <a name="get-managedappprotection"></a>Get managedAppProtection
 
@@ -20,7 +20,7 @@ ms.locfileid: "30572056"
 Чтение свойств и связей объекта [managedAppProtection](../resources/intune-mam-managedappprotection.md).
 
 ## <a name="prerequisites"></a>Необходимые разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{man
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

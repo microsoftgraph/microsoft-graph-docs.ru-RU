@@ -1,19 +1,21 @@
 ---
 title: Список экземпляров
-description: 'Получение экземпляров (вхождений) события для заданного интервала времени. Если событие `SeriesMaster` типа, при этом будет получен '
+description: Получение экземпляров (повторов) события для заданного диапазона времени.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 6e18572a0c9f8d7d20ad8f3740559d645e4fa9e8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a697baa177060c3c885eb7a804620c147a0923fd
+ms.sourcegitcommit: e6168b868660ad0078d460424d4e6f987d2684a8
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977019"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "31026005"
 ---
 # <a name="list-instances"></a>Список экземпляров
 
-Получение экземпляров события в течение заданного диапазона времени. Если событие относится к типу `SeriesMaster`, возвращаются экземпляры и исключения события в рамках указанного диапазона времени.
+Получение экземпляров (повторов) события для заданного диапазона времени. 
+
+Если событие относится к типу `seriesMaster`, возвращаются экземпляры и исключения события для указанного диапазона времени.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -57,29 +59,31 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:--------|:--------|
-| Authorization  | строка | Bearer {токен}. Обязательный.  |
-| Prefer: outlook.timezone  | строка | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
+| Authorization  | string | Bearer {токен}. Обязательный.  |
+| Prefer: outlook.timezone  | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Event](../resources/event.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+В приведенном ниже примере выполняется получение в заданном диапазоне времени вхождений и исключений события, которое является главным событием повторяющейся серии.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["AAMkAGUzYRgWAAA="],
   "name": "get_instances"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/events/{id}/instances
+GET https://graph.microsoft.com/v1.0/me/events/AAMkAGUzYRgWAAA=/instances?startDateTime=2019-04-08T09:00:00.0000000&endDateTime=2019-04-30T09:00:00.0000000&$select=subject,bodyPreview,seriesMasterId,type,recurrence,start,end
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
+  "name": "get_instances",
   "truncated": true,
   "@odata.type": "microsoft.graph.event",
   "isCollection": true
@@ -87,22 +91,79 @@ GET https://graph.microsoft.com/v1.0/me/events/{id}/instances
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 354
 
 {
-  "value": [
-    {
-      "originalStartTimeZone": "originalStartTimeZone-value",
-      "originalEndTimeZone": "originalEndTimeZone-value",
-      "responseStatus": {
-        "response": "",
-        "time": "datetime-value"
-      },
-      "iCalUId": "iCalUId-value",
-      "reminderMinutesBeforeStart": 99,
-      "isReminderOn": true
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/events('AAMkAGUzYRgWAAA%3D')/instances(subject,bodyPreview,seriesMasterId,type,recurrence,start,end)",
+    "value": [
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1sE1TatAAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "Changing meeting from 4/15 to 4/16.",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "exception",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-16T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-16T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1ru1JMcAAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "occurrence",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-08T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-08T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1sa1do_AAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "occurrence",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-22T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-22T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        },
+        {
+            "@odata.etag": "W/\"x3IAvB5fbUWf4XNcBFLNUwAAKuA3yQ==\"",
+            "id": "AAMkAGUzYAgI1sw1n3PAAEYAAAAAlNFb2CNPe0ucP9you",
+            "subject": "Review strategy for Q3",
+            "bodyPreview": "",
+            "seriesMasterId": "AAMkAGUzYRgWAAA=",
+            "type": "occurrence",
+            "recurrence": null,
+            "start": {
+                "dateTime": "2019-04-29T20:30:00.0000000",
+                "timeZone": "UTC"
+            },
+            "end": {
+                "dateTime": "2019-04-29T21:00:00.0000000",
+                "timeZone": "UTC"
+            }
+        }
+    ]
 }
 ```
 
