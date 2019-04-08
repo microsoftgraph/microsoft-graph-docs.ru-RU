@@ -3,12 +3,12 @@ title: Настройка ответов с помощью параметров 
 description: В Microsoft Graph предусмотрены необязательные параметры запросов, с помощью которых можно указывать и регулировать объем возвращаемых данных. Поддерживаются указанные ниже параметры запросов.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 749415c25e03e3c29cdfb4b48ff66c562de0b84a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
+ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27818916"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479911"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -56,6 +56,14 @@ GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName, 'J')
 
 ```http
 GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName%2C+'J')
+```
+
+### <a name="escaping-single-quotes"></a>Пропуск одинарных кавычек
+
+В запросах, использующих одинарные кавычки, если любой параметр также содержит одинарные кавычки, их нужно пропустить дважды; в противном случае запрос завершится сбоем из-за недопустимого синтаксиса. В приведенном примере строковое значение `let''s meet for lunch?` содержит пропускаемую одинарную кавычку.
+
+```http
+GET https://graph.microsoft.com/v1.0/me/messages?$filter=subject eq 'let''s meet for lunch?'
 ```
 
 ## <a name="count-parameter"></a>Параметр count
@@ -239,10 +247,9 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 - [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- 
-  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
+- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 
