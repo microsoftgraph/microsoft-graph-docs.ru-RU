@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: Отменить подписку на диске элемента
+title: Отписаться от элемента Drive
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 064ab2d5ad86df5341a0f2f5a46fe7c227ff35fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 730bb02dda88f41bcac734b3ba282ad324267860
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513111"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31560110"
 ---
-# <a name="unfollow-drive-item"></a>Отменить подписку на диске элемента
+# <a name="unfollow-drive-item"></a>Отписаться от элемента Drive
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отменить подписку на [driveItem](../resources/driveitem.md).
+Отменяйте подписку на [driveItem](../resources/driveitem.md).
 
->**Примечание:** Для выполнения элемента, видите [Выполните элемента](driveitem-follow.md).
+>**Примечание:** Чтобы подписаться на элемент, обратитесь к разделу [Отслеживание элемента](driveitem-follow.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,25 +44,26 @@ DELETE /users/{user-id}/drive/following/{item-id}
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении вызова API возвращается отклик `204 No Content`.
-
-<!-- { "blockType": "response" } -->
-
-```http
-HTTP/1.1 204 No Content
-```
+При успешном выполнении вызова API возвращается отклик `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
-
-В этом примере unfollows элемент, определенный с `{item-id}`.
+### <a name="request"></a>Запрос
+Ниже приведен пример запроса.
+В этом примере отменяется отслеживание элемента, `{item-id}`указанного в параметре.
 
 <!-- { "blockType": "request", "name": "unfollow-item", "scopes": "files.read" } -->
 
 ```http
 DELETE /me/drive/following/{item-id}
 ```
-
-
+### <a name="response"></a>Отклик
+<!-- { 
+    "blockType": "response", 
+    "truncated": true 
+} -->
+```http
+HTTP/1.1 204 No Content
+```
 <!--
 {
   "type": "#page.annotation",

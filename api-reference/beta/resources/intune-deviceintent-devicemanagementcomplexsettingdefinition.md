@@ -1,0 +1,98 @@
+---
+title: Тип ресурса Девицеманажементкомплекссеттингдефинитион
+description: Объект, представляющий определение для сложного параметра
+author: tfitzmac
+localization_priority: Normal
+ms.prod: Intune
+ms.openlocfilehash: 47302a9f751662bdb8b51e70a9686ce9e8870062
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.translationtype: MT
+ms.contentlocale: ru-RU
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31524066"
+---
+# <a name="devicemanagementcomplexsettingdefinition-resource-type"></a>Тип ресурса Девицеманажементкомплекссеттингдефинитион
+
+> **Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.
+
+> **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
+
+Объект, представляющий определение для сложного параметра
+
+
+НаСледуется от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)
+
+## <a name="methods"></a>Методы
+|Метод|Возвращаемый тип|Описание|
+|:---|:---|:---|
+|[Список Девицеманажементкомплекссеттингдефинитионс](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md)|Коллекция [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|Список свойств и связей объектов [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md) .|
+|[Получение Девицеманажементкомплекссеттингдефинитион](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md)|[Девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|Чтение свойств и связей объекта [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md) .|
+|[Создание Девицеманажементкомплекссеттингдефинитион](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md)|[Девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|Создание нового объекта [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md) .|
+|[Удаление Девицеманажементкомплекссеттингдефинитион](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-delete.md)|Нет|Удаляет объект [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md).|
+|[Обновление Девицеманажементкомплекссеттингдефинитион](../api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md)|[Девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md)|Обновление свойств объекта [девицеманажементкомплекссеттингдефинитион](../resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md) .|
+
+## <a name="properties"></a>Свойства
+|Свойство|Тип|Описание|
+|:---|:---|:---|
+|id|Строка|Идентификатор определения параметра, унаследованного от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|Типом|[Девицемананжементинтентвалуетипе](../resources/intune-deviceintent-devicemanangementintentvaluetype.md)|Тип данных значения, наСледуемого из [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md). Возможные значения: `integer`, `boolean`, `string`, `complex`, `collection`, `abstractComplex`.|
+|displayName|String|Отображаемое имя параметра, унаследованное от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|Истоплевел|Boolean|Если параметр находится в верхнем уровне, его можно настроить без переноса в коллекцию или сложный параметр, наСледуемый от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|description|String|Описание параметра, унаследованное от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|Документатионурл|String|URL-адрес для установки документации, унаследованной от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|keywords|Коллекция строк|Ключевые слова, связанные с параметром, унаследованным от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|провероч|Коллекция [девицеманажементконстраинт](../resources/intune-deviceintent-devicemanagementconstraint.md)|Коллекция ограничений для значения параметра, наСледуемого из [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|зависящ|Коллекция [девицеманажементсеттингдепенденци](../resources/intune-deviceintent-devicemanagementsettingdependency.md)|Коллекция зависимостей от других параметров, наСледуемых от [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|
+|Пропертидефинитионидс|Коллекция строк|Определения каждого свойства сложного параметра|
+
+## <a name="relationships"></a>Отношения
+Нет
+
+## <a name="json-representation"></a>Представление JSON
+Ниже представлено описание ресурса в формате JSON.
+<!-- {
+  "blockType": "resource",
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.deviceManagementComplexSettingDefinition"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.deviceManagementComplexSettingDefinition",
+  "id": "String (identifier)",
+  "valueType": "String",
+  "displayName": "String",
+  "isTopLevel": true,
+  "description": "String",
+  "documentationUrl": "String",
+  "keywords": [
+    "String"
+  ],
+  "constraints": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+    }
+  ],
+  "dependencies": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementSettingDependency",
+      "definitionId": "String",
+      "constraints": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementSettingXmlConstraint"
+        }
+      ]
+    }
+  ],
+  "propertyDefinitionIds": [
+    "String"
+  ]
+}
+```
+
+
+
+
+
+
+

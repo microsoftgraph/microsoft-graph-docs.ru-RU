@@ -1,21 +1,21 @@
 ---
 title: Список riskyUsers
-description: Получение свойств и связей объекта **riskyUsers** .
+description: Получение свойств и связей коллекции объектов **рискюсер** .
 localization_priority: Normal
 author: cloudhandler
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: a902daf00f80470e1ac9a83a287eac507d55e171
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.openlocfilehash: ff134f0d0b03a30a11800de25f6692362541fd0e
+ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003729"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31559866"
 ---
 # <a name="list-riskyusers"></a>Список riskyUsers
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта **riskyUsers** .
+Получение свойств и связей коллекции объектов **рискюсер** .
 
 >**Примечание:** Для использования API riskyUsers требуется лицензия Azure AD Premium P2.
 
@@ -31,7 +31,7 @@ ms.locfileid: "31003729"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /riskyUsers/{query}
+GET /riskyUsers
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает `$filter` настройку ответа на запрос. Просмотрите пример, приведенный далее в этом разделе. 
@@ -45,11 +45,12 @@ GET /riskyUsers/{query}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [рискюсер](../resources/riskyUser.md) в тексте отклика.
 
-В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [идентитирискевент](../resources/identityriskevent.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
-#### <a name="example-1-list-risky-users"></a>Пример 1: список рискованных пользователей
+### <a name="example-1-list-risky-users"></a>Пример 1: список рискованных пользователей
+#### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
@@ -58,68 +59,75 @@ GET /riskyUsers/{query}
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers
 ```
-
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-  "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
-  "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
-  "isGuest": "true",
-  "isProcessing": true,
-  "isDeleted": "true",
-  "riskDetail": "adminConfirmedSigninCompromised",
-  "riskLevel": "high",
-  "riskState": "atRisk"
-  "userDisplayName": "Jon Doe",
-  "userPrincipalName": "jon@contoso.com"
+    "value":[
+        {
+            "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+            "riskLastUpdatedDateTime": "2016-01-29T20:03:57.7872426Z",
+            "isGuest": true,
+            "isProcessing": true,
+            "isDeleted": true,
+            "riskDetail": "adminConfirmedSigninCompromised",
+            "riskLevel": "high",
+            "riskState": "atRisk",
+            "userDisplayName": "Alex Wilbur",
+            "userPrincipalName": "alexw@contoso.com"
+        }
+    ]
 }
 ```
 
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "List riskyUsers",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-#### <a name="example-2-list-risky-users-and-filter-the-results"></a>Пример 2: список рискованных пользователей и фильтрация результатов
+### <a name="example-2-list-risky-users-and-filter-the-results"></a>Пример 2: список рискованных пользователей и фильтрация результатов
+#### <a name="request"></a>Запрос
 В приведенном ниже примере показано, `$filter` как получить коллекцию рискюсер с уровнем агрегированного риска среднего размера.
+
 <!-- {
   "blockType": "request",
-  "name": "list_riskyusers"
-}-->
+  "name": "list_filter_riskyusers"
+} -->
 ```http
 GET https://graph.microsoft.com/beta/riskyUsers?$filter=riskLevel eq microsoft.graph.riskLevel'medium'
 ```
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.riskyUsers"
+  "isCollection": true,
+  "@odata.type": "microsoft.graph.riskyUser"
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-type: application/json
+
 {
-      "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
-      "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
-      "isGuest": false,
-      "isProcessing": true,
-      "isDeleted": false,
-      "riskDetail": "none",
-      "riskLevel": "medium",
-      "riskState": "atRisk",
-      "userDisplayName": "Jon Doe",
-      "userPrincipalName": "jon@contoso.com",
-      }
-    }
+    "value": [
+        {
+            "id": "c2b6c2b9-dddc-acd0-2b39-d519d803dbc3",
+            "riskLastUpdatedDateTime": "2018-09-22T00:04:49.1195968Z",
+            "isGuest": false,
+            "isProcessing": true,
+            "isDeleted": false,
+            "riskDetail": "none",
+            "riskLevel": "medium",
+            "riskState": "atRisk",
+            "userDisplayName": "Alex Wilbur",
+            "userPrincipalName": "alexw@contoso.com",
+        }
+    ]
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
