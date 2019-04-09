@@ -4,12 +4,12 @@ description: 'Ресурс deviceManagement представляет конте�
 localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
-ms.openlocfilehash: 23ea35468bbff4010b5ed089b086fbb6cd7a9845
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b23285738d8a4268ce55d056ccd49defb823369a
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163030"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518542"
 ---
 # <a name="devicemanagement-resource-type"></a>Тип ресурса deviceManagement
 
@@ -24,6 +24,7 @@ ms.locfileid: "30163030"
 - Корпоративные положения и условия 
 - Профили корпоративной регистрации
 - Параметры конфигурации устройств
+- Параметры намерения устройства
 - Управление устройствами
 - Электронная SIM-карта (ESIM)
 - Ограждение
@@ -39,17 +40,17 @@ ms.locfileid: "30163030"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта deviceManagement](../api/intune-shared-devicemanagement-get.md)|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
+|[Получение deviceManagement](../api/intune-shared-devicemanagement-get.md)|Чтение свойств и связей объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |[Обновление объекта deviceManagement](../api/intune-shared-devicemanagement-update.md)|Обновление свойств объекта [deviceManagement](../resources/intune-shared-devicemanagement.md).|
 |**Настройка устройства**|
-|[Действие enableLegacyPcManagement](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|Нет|Н/Д|
+|[Действие enableLegacyPcManagement](../api/intune-shared-devicemanagement-enablelegacypcmanagement.md)|Нет|Пока не задокументировано.|
 |**Управление устройствами**|
-|[Действие sendCustomNotificationToCompanyPortal](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|Нет|Н/Д|
+|[Действие sendCustomNotificationToCompanyPortal](../api/intune-shared-devicemanagement-sendcustomnotificationtocompanyportal.md)|Нет|Пока не задокументировано.|
 |**Входящая миграция**|
 |[Функция verifyWindowsEnrollmentAutoDiscovery](../api/intune-shared-devicemanagement-verifywindowsenrollmentautodiscovery.md)|Boolean|Н/Д|
 |**Управление доступом на основе ролей (RBAC)**|
 |[Функция getEffectivePermissions](../api/intune-shared-devicemanagement-geteffectivepermissions.md)|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Получает действующие разрешения пользователя, прошедшего проверку подлинности|
-|[Функция Жетролескопетагсбидс](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|Коллекция [ролескопетаг](../resources/intune-rbac-rolescopetag.md)|Н/Д|
+|[Функция Жетролескопетагсбидс](../api/intune-shared-devicemanagement-getrolescopetagsbyids.md)|Коллекция [ролескопетаг](../resources/intune-rbac-rolescopetag.md)|Пока не задокументировано.|
 |[Функция Жетролескопетагсбиресаурце](../api/intune-shared-devicemanagement-getrolescopetagsbyresource.md)|Коллекция [ролескопетаг](../resources/intune-rbac-rolescopetag.md)|Н/Д|
 
 
@@ -58,32 +59,32 @@ ms.locfileid: "30163030"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор, связанный с устройством.|
 |**Настройка устройства**|
-|Интунеаккаунтид|Guid|Идентификатор учетной записи Intune для данного клиента|
-|Легаципкмананжементенаблед|Логический|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
+|Интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
+|Легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |Максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
 |Аккаунтмовекомплетиондатетиме|DateTimeOffset|Дата _Амп_ время, когда данные клиента перемещаются между скалеунитс.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о согласия администратора.|
-|deviceProtectionOverview;|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Общие сведения о защите устройств.|
-|managedDeviceCleanupSettings;|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md);|Правило очистки устройств|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Общие сведения о защите устройств.|
+|managedDeviceCleanupSettings;|[managedDeviceCleanupSettings;](../resources/intune-devices-manageddevicecleanupsettings.md)|Правило очистки устройств|
 |subscriptionState|[Девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
-|подписки|[Девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
+|subscriptions|[Девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств с Windows.|
 |**Входящая миграция**|
 |intuneBrand|[intuneBrand](../resources/intune-onboarding-intunebrand.md)|Ресурс intuneBrand содержит данные, которые используются для настройки внешнего вида приложений "Корпоративный портал" и веб-портала пользователя.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Обзор&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|Отношение|Тип|Обзор&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |:---|:---|:---|
 |**Android для работы**|
 |Андроиддевицеовнеренроллментпрофилес|Коллекция [андроиддевицеовнеренроллментпрофиле](../resources/intune-androidforwork-androiddeviceownerenrollmentprofile.md)|Объекты профилей регистрации владельца устройств Android.|
 |androidForWorkAppConfigurationSchemas|Коллекция [androidForWorkAppConfigurationSchema](../resources/intune-androidforwork-androidforworkappconfigurationschema.md)|Сущности схемы конфигурации в приложении Android for Work.|
 |androidForWorkEnrollmentProfiles|Коллекция [androidForWorkEnrollmentProfile](../resources/intune-androidforwork-androidforworkenrollmentprofile.md)|Сущности профиля регистрации Android for Work.|
 |androidForWorkSettings|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Одноэлементная сущность параметров Android for Work.|
-|androidManagedStoreAccountEnterpriseSettings;|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md);|Одноэлементная сущность учетной записи для учетной записи управляемого хранилища Android.|
+|androidManagedStoreAccountEnterpriseSettings|[androidManagedStoreAccountEnterpriseSettings](../resources/intune-androidforwork-androidmanagedstoreaccountenterprisesettings.md)|Одноэлементная сущность учетной записи для учетной записи управляемого хранилища Android.|
 |Андроидманажедстореаппконфигуратионсчемас|Коллекция [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md)|Сущности схемы конфигурации корпоративных приложений Android.|
-|**аудита;**|
+|**Аудит**|
 |auditEvents|Коллекция [auditEvent](../resources/intune-auditing-auditevent.md)|События аудита|
 |**Условия компании**|
 |termsAndConditions|Коллекция [termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Условия, связанные с управлением устройствами в компании.|
@@ -101,10 +102,15 @@ ms.locfileid: "30163030"
 |deviceConfigurationDeviceStateSummaries|[deviceConfigurationDeviceStateSummary](../resources/intune-deviceconfig-deviceconfigurationdevicestatesummary.md)|Общие сведения о состоянии конфигурации устройства для этой учетной записи.|
 |Девицеконфигуратионрестриктедаппсвиолатионс|Коллекция [рестриктедаппсвиолатион](../resources/intune-deviceconfig-restrictedappsviolation.md)|Нарушения ограниченного доступа к приложениям для этой учетной записи.|
 |deviceConfigurations|Коллекция [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Конфигурации устройств.|
-|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md);|Сводка по состоянию пользователей конфигурации устройств для этой учетной записи.|
+|deviceConfigurationUserStateSummaries|[deviceConfigurationUserStateSummary](../resources/intune-deviceconfig-deviceconfigurationuserstatesummary.md)|Сводка по состоянию пользователей конфигурации устройств для этой учетной записи.|
 |iosUpdateStatuses|Коллекция [iosUpdateDeviceStatus](../resources/intune-deviceconfig-iosupdatedevicestatus.md)|Состояния установки обновления программного обеспечения IOS для этой учетной записи.|
 |Ндесконнекторс|Коллекция [ндесконнектор](../resources/intune-deviceconfig-ndesconnector.md)|Коллекция соединителей NDES для этой учетной записи.|
 |softwareUpdateStatusSummary|[softwareUpdateStatusSummary](../resources/intune-deviceconfig-softwareupdatestatussummary.md)|Общие сведения о состоянии обновления программного обеспечения.|
+|**Цель устройства**|
+|целей|Коллекция [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md)|Целей управления устройствами|
+|Сеттингдефинитионс|Коллекция [девицеманажементсеттингдефинитион](../resources/intune-deviceintent-devicemanagementsettingdefinition.md)|Определения параметров намерения управления устройствами|
+|шаблонов|Коллекция [девицеманажементтемплате](../resources/intune-deviceintent-devicemanagementtemplate.md)|Доступные шаблоны|
+|categories|Коллекция [девицеманажементсеттингкатегори](../resources/intune-deviceintent-devicemanagementsettingcategory.md)|Доступные категории|
 |**Управление устройствами**|
 |applePushNotificationCertificate|[applePushNotificationCertificate](../resources/intune-devices-applepushnotificationcertificate.md)|Сертификат push-уведомлений Apple|
 |Даташарингконсентс|Коллекция [даташарингконсент](../resources/intune-devices-datasharingconsent.md)|Совместное использование данных.|
@@ -114,7 +120,7 @@ ms.locfileid: "30163030"
 |managedDevices|Коллекция [managedDevice](../resources/intune-devices-manageddevice.md)|Список управляемых устройств.|
 |Ремотеактионаудитс|Коллекция [remoteActionAudit](../resources/intune-devices-remoteactionaudit.md)|Список аудитов удаленных действий устройств с клиентом.|
 |windowsMalwareInformation|Коллекция [windowsMalwareInformation](../resources/intune-devices-windowsmalwareinformation.md)|Список уязвимых вредоносных программ в клиенте.|
-|**Регистрация**|
+|**Регистрации**|
 |depOnboardingSettings|Коллекция [depOnboardingSetting](../resources/intune-enrollment-deponboardingsetting.md)|Эти коллекции нескольких маркеров DEP для каждого клиента.|
 |Импортеддевицеидентитиес|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Импортированные удостоверения устройств.|
 |importedWindowsAutopilotDeviceIdentities|Коллекция [importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md)|Коллекция импортированных устройств Windows AutoPilot.|

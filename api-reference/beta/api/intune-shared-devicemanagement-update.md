@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceManagement
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: f4ef1c7eb4711afd2aa29071f160f440dceefba3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e0dc83489ede464eb9da000acb8db4e6af13f8d2
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960407"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518527"
 ---
 # <a name="update-devicemanagement"></a>Обновление объекта deviceManagement
 
@@ -32,6 +32,7 @@ ms.locfileid: "30960407"
 | &nbsp; &nbsp; **Аудит** | DeviceManagementApps.ReadWrite.All |
 | &nbsp; &nbsp; **Условия компании** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp; &nbsp; **Настройка устройства** | DeviceManagementConfiguration.ReadWrite.All |
+| &nbsp;&nbsp; **Цель устройства** | DeviceManagementConfiguration.ReadWrite.All|
 | &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All |
 | &nbsp;&nbsp; **Электронная SIM-карта** | DeviceManagementConfiguration.ReadWrite.All |
 | &nbsp;&nbsp; **Регистрация** | DeviceManagementServiceConfig.ReadWrite.All |
@@ -43,7 +44,7 @@ ms.locfileid: "30960407"
 | &nbsp;&nbsp; **Удаленная помощь** | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Управление расходами** по телекоммуникационной связи | DeviceManagementServiceConfig.ReadWrite.All |
 | &nbsp;&nbsp; **Траублехутинг** | DeviceManagementManagedDevices.ReadWrite.All |
-| &nbsp;&nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
+| &nbsp; &nbsp; **Windows Information Protection** | DeviceManagementApps.ReadWrite.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.|
 | Для приложений | Не поддерживается. |
 
@@ -73,15 +74,15 @@ PATCH /deviceManagement
 |:---|:---|:---|
 |id|String|Уникальный идентификатор устройства.|
 |**Настройка устройства**|
-|Интунеаккаунтид|GUID|Идентификатор учетной записи Intune для данного клиента|
+|Интунеаккаунтид|Глобальный уникальный идентификатор (GUID)|Идентификатор учетной записи Intune для данного клиента|
 |Легаципкмананжементенаблед|Boolean|Свойство, позволяющее управлять устаревшим управлением устаревших ПК для этой учетной записи. Это свойство доступно только для чтения.|
 |Максимумдептокенс|Int32|Максимальное число маркеров DEP, разрешенных для каждого клиента.|
 |settings|[deviceManagementSettings](../resources/intune-deviceconfig-devicemanagementsettings.md)|Параметры уровня учетной записи.|
 |**Управление устройствами**|
 |Аккаунтмовекомплетиондатетиме|DateTimeOffset|Дата _Амп_ время, когда данные клиента перемещаются между скалеунитс.|
 |adminConsent|[adminConsent](../resources/intune-devices-adminconsent.md)|Сведения о согласия администратора.|
-|deviceProtectionOverview;|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md);|Общие сведения о защите устройств.|
-|managedDeviceCleanupSettings;|[managedDeviceCleanupSettings](../resources/intune-devices-manageddevicecleanupsettings.md);|Правило очистки устройств|
+|deviceProtectionOverview|[deviceProtectionOverview](../resources/intune-devices-deviceprotectionoverview.md)|Общие сведения о защите устройств.|
+|managedDeviceCleanupSettings;|[managedDeviceCleanupSettings;](../resources/intune-devices-manageddevicecleanupsettings.md)|Правило очистки устройств|
 |subscriptionState|[Девицеманажементсубскриптионстате](../resources/intune-devices-devicemanagementsubscriptionstate.md)|Состояние подписки на управление мобильными устройствами для клиента. Возможные значения: `pending`, `active`, `warning`, `disabled`, `deleted`, `blocked`, `lockedOut`.|
 |subscriptions|[Девицеманажементсубскриптионс](../resources/intune-devices-devicemanagementsubscriptions.md)|Подписка клиента. Возможные значения: `none`, `intune`, `office365`, `intunePremium`, `intune_EDU`, `intune_SMB`.|
 |windowsMalwareOverview|[windowsMalwareOverview](../resources/intune-devices-windowsmalwareoverview.md)|Обзор вредоносных программ для устройств с Windows.|

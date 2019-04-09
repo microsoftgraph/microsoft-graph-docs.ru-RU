@@ -1,28 +1,28 @@
 ---
 title: Получение message
-description: Извлечение свойств и связи объекта message.
+description: Получение свойств и связей объекта Message.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: e5f7b8c73ac9e121a1f0cbe1bf4200326d2d4e29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643201"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518520"
 ---
-# <a name="get-message"></a>Получение message
+# <a name="get-message"></a>Вывод сообщения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта [message](../resources/message.md) .
+Получение свойств и связей объекта [Message](../resources/message.md) .
 
-К примеру можно получить сообщение и разверните все экземпляры [упомянуть](../resources/mention.md) в сообщении.
+Например, вы можете получить сообщение и развернуть все экземпляры [упоминания](../resources/mention.md) в сообщении.
 
-Существует два сценария, где приложения можно получить сообщение в почтовой папки другого пользователя.
+Существует два сценария, в которых приложение может получить сообщение в почтовой папке другого пользователя:
 
-* если у приложения есть разрешения для приложений;
-* Если приложение имеет соответствующий делегированных [разрешений](#permissions) от одного пользователя и другой пользователь доступ к папке почты с этим пользователем или, предоставленное делегированный доступ для пользователя, который. См. [подробные сведения и пример](/graph/outlook-share-messages-folders).
+* У приложения есть разрешения для приложений; или
+* Если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь предоставил доступ к почтовой папке этому пользователю или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-share-messages-folders).
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` можно также получить настраиваемые свойства и данные расширения в экземпляре **message**.
 
@@ -32,13 +32,14 @@ ms.locfileid: "29643201"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Mail.Read    |
-|Делегированные (личная учетная запись Майкрософт) | Mail.Read    |
+|Делегированные (рабочая или учебная учетная запись) | Mail. ReadBasic, mail. Read    |
+|Делегированные (личная учетная запись Майкрософт) | Mail. ReadBasic, mail. Read    |
 |Для приложений | Mail.Read |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Для получения указанного сообщения:<!-- { "blockType": "ignored" } -->
+Получение указанного сообщения:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}
 GET /users/{id | userPrincipalName}/messages/{id}
@@ -46,7 +47,8 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Чтобы получить сообщение и разверните все упоминания в сообщении:<!-- { "blockType": "ignored" } -->
+Чтобы получить сообщение и раскрыть все упоминания в сообщении, выполните следующие действия:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=mentions
 GET /users/{id | userPrincipalName}/messages/{id}?$expand=mentions
@@ -57,17 +59,17 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Можно использовать `$expand` были развернуты параметр запроса на **упоминания** свойство навигации для получения сообщений подробные сведения о каждом [упомянуть](../resources/mention.md) в сообщении.
+Вы можете использовать параметр `$expand` запроса для свойства навигации **упоминают** , чтобы получить сообщение с подробностями каждого [упоминания](../resources/mention.md) в развернутом сообщении.
 
 
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Prefer: outlook.body-content-type | string | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
@@ -75,7 +77,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [message](../resources/message.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
-Первый пример получает указанное сообщение. Не указывается любой заголовок для указания нужный формат текста которого требуется получить.
+В первом примере показано получение указанного сообщения. Он не задает заголовок, указывающий нужный формат возвращаемого текста.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkAGI1AAAoZCfHAAA="],
@@ -84,9 +86,9 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')
 ```
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Свойства **body** и **uniqueBody** возвращаются в формате HTML по умолчанию.
-Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
+##### <a name="response-1"></a>Ответ 1
+Ниже приведен пример ответа. Свойства **Body** и **uniqueBody** возвращаются в формате HTML по умолчанию.
+Note: объект Response, показанный здесь, усекается для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,7 +117,7 @@ Content-length: 523
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-В следующем примере пользователь выполнил вход — Swope Дану. В примере показано получение сведения обо всех упоминания в указанное сообщение в почтовый ящик пользователя Дану.
+В следующем примере вошедшего пользователя является дана свопе. В этом примере показано, как получить сведения обо всех упоминаниях в заданном сообщении в почтовом ящике пользователя дана.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AQMkADJmMTUAAAgVZAAAA"],
@@ -124,8 +126,8 @@ Content-length: 523
 ```http
 GET https://graph.microsoft.com/beta/me/messages/('AQMkADJmMTUAAAgVZAAAA')?$expand=mentions
 ```
-##### <a name="response-2"></a>Отклик 2
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response-2"></a>Ответ 2
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,7 +227,7 @@ Content-length: 2248
 
 ##### <a name="request-3"></a>Запрос 3
 
-Третий пример показано, как использовать `Prefer: outlook.body-content-type="text"` заголовка для получения **uniqueBody** указанного сообщения и **основной текст** в текстовом формате.
+В третьем примере показано, как использовать `Prefer: outlook.body-content-type="text"` заголовок для получения **основного текста** и **uniqueBody** указанного сообщения в текстовом формате.
 
 <!-- {
   "blockType": "request",
@@ -238,9 +240,9 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGI1AAAoZCfHAAA=')?$select
 Prefer: outlook.body-content-type="text"
 ```
 
-##### <a name="response-3"></a>Отклик 3
+##### <a name="response-3"></a>Ответ 3
 
-Ниже приведен пример отклика. Примечание: Ответ включает `Preference-Applied: outlook.body-content-type` заголовок, чтобы подтвердить `Prefer: outlook.body-content-type` заголовка запроса.
+Ниже приведен пример отклика. Note: ответ содержит `Preference-Applied: outlook.body-content-type` заголовок для подтверждения заголовка `Prefer: outlook.body-content-type` запроса.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -271,7 +273,7 @@ Content-length: 1550
 
 ##### <a name="request-4"></a>Запрос 4
 
-Четвертый примере показано, как получить заголовки сообщений Интернета для конкретного сообщения.  
+В четвертом примере показано, как получить заголовки сообщений Интернета для определенного сообщения.  
 
 <!-- {
   "blockType": "request",
@@ -285,7 +287,7 @@ GET https://graph.microsoft.com/beta/me/messages('AAMkAGVmMDEz')?$select=interne
 
 ##### <a name="response-4"></a>Отклик 4
 
-Ниже приведен пример отклика. Примечание: Число заголовков сообщений Интернета в объекте ответа были ограничены, для краткости.
+Ниже приведен пример отклика. Note: количество заголовков сообщений в Интернете в объекте Response было сокращено для краткости.
 
 <!-- {
   "blockType": "response",
@@ -329,8 +331,8 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
-- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
-- [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](/graph/extensibility-schema-groups)
+- [Добавление настраиваемых данных для пользователей с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
+- [Добавление пользовательских данных в группы с помощью расширений схемы (Предварительная версия)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
