@@ -4,12 +4,12 @@ description: Получение сведений о доступности ко�
 localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
-ms.openlocfilehash: 24e58a1e11bac8e9707aad17db43543862cfe486
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: e39b5e010c57bb74f518321f51cc4f3e4c709637
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926622"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518513"
 ---
 # <a name="calendar-getschedule"></a>calendar: getSchedule
 
@@ -20,9 +20,9 @@ ms.locfileid: "30926622"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Calendar.Read, Calendar.ReadWrite    |
+|Делегированные (рабочая или учебная учетная запись) | Calendars.Read, Calendars.ReadWrite    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений | Calendar.Read, Calendar.ReadWrite |
+|Для приложений | Calendars.Read, Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
