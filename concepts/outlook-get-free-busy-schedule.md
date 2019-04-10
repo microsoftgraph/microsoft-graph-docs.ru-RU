@@ -4,12 +4,12 @@ description: Общим сценарием на рабочем месте или
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 8ecf31ec74327d4f5fbd9d585eef24fcaec60709
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.openlocfilehash: 5e8fd1cd96c852c07c87bcaa35396fdd0fa5857d
+ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869199"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518499"
 ---
 # <a name="get-freebusy-schedule-of-users-and-resources"></a>Получение расписания доступности пользователей и ресурсов
 
@@ -158,7 +158,7 @@ Content-type: application/json
 ### <a name="permissions"></a>Разрешения
 Разрешения с минимальным уровнем привилегий, необходимые для действия **findmeetingtimes**, — Calendars.Read.Shared.
 
-Разрешение с минимальным уровнем привилегий, необходимое для действия **getSchedule**, — Calendar.Read. 
+Разрешение с минимальным уровнем привилегий, необходимое для действия **getSchedule**, — Calendars.Read. 
 
 ### <a name="version-support"></a>Поддержка версии
 
@@ -166,7 +166,7 @@ Content-type: application/json
 
 
 ## <a name="event-data-returned"></a>Возвращаемые данные события
-Разрешение с минимальным уровнем привилегий, необходимое действию **getSchedule** для получения приложением сведений о доступности, — Calendar.Read. В зависимости от сценария приложения согласие может даваться вошедшим в систему пользователем или администратором.
+Разрешение с минимальным уровнем привилегий, необходимое действию **getSchedule** для получения приложением сведений о доступности, — Calendars.Read. В зависимости от сценария приложения согласие может даваться вошедшим в систему пользователем или администратором.
 
 Если полученное разрешение позволяет приложению использовать действие **getSchedule** в календарях запрошенных пользователей через Outlook, запрошенный пользователь выбирает, какие данные события (при наличии) возвращает это действие **getSchedule**. 
 
