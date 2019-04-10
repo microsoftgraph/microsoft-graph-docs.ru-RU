@@ -5113,10 +5113,216 @@ items:
                 href: resources/intune-devices-deviceguardvirtualizationbasedsecuritystate.md
               - name: Состояние подтверждения работоспособности устройства
                 href: resources/intune-devices-devicehealthattestationstate.md
+              - name: Определение абстрактного сложного параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettingdefinition-update.md
+              - name: Экземпляр абстрактного сложного параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementabstractcomplexsettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementabstractcomplexsettinginstance-update.md
+              - name: Экземпляр логического параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementbooleansettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementbooleansettinginstance-update.md
+              - name: Определение параметра коллекции управления устройствами
+                href: resources/intune-deviceintent-devicemanagementcollectionsettingdefinition.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementcollectionsettingdefinition-update.md
+              - name: Экземпляр параметра коллекции управления устройствами
+                href: resources/intune-deviceintent-devicemanagementcollectionsettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementcollectionsettinginstance-update.md
+              - name: Определение сложного параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementcomplexsettingdefinition.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementcomplexsettingdefinition-update.md
+              - name: Экземпляр сложного параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementcomplexsettinginstance-update.md
+              - name: Ограничение управления устройствами
+                href: resources/intune-deviceintent-devicemanagementconstraint.md
+              - name: Ограничение перечисления управления устройствами
+                href: resources/intune-deviceintent-devicemanagementenumconstraint.md
+              - name: Значение перечисления управления устройствами
+                href: resources/intune-deviceintent-devicemanagementenumvalue.md
               - name: Состояние доступа к Exchange для управления устройствами
                 href: resources/intune-devices-devicemanagementexchangeaccessstate.md
               - name: Причина состояния доступа к Exchange для управления устройствами
                 href: resources/intune-devices-devicemanagementexchangeaccessstatereason.md
+              - name: Экземпляр цельного параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintegersettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintegersettinginstance-update.md
+              - name: Намерение управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintent.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintent-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintent-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintent-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintent-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintent-update.md
+                  - name: Действие updateSettings
+                    href: api/intune-deviceintent-devicemanagementintent-updatesettings.md
+                  - name: Действие назначения
+                    href: api/intune-deviceintent-devicemanagementintent-assign.md
+              - name: Назначение намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentassignment.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintentassignment-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentassignment-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintentassignment-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintentassignment-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentassignment-update.md
+              - name: Сводка по состоянию намерения настройки устройства для управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentdevicesettingstatesummary-update.md
+              - name: Состояние устройства намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentdevicestate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentdevicestate-update.md
+              - name: Сводка состояния устройства намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md
+                items:
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-get.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentdevicestatesummary-update.md
+              - name: Категория параметра намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentsettingcategory.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentsettingcategory-update.md
+              - name: Состояния пользователя намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentuserstate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentuserstate-update.md
+              - name: Сводка состояния пользователя намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanagementintentuserstatesummary.md
+                items:
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementintentuserstatesummary-get.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementintentuserstatesummary-update.md
               - name: Сценарий управления устройствами
                 href: resources/intune-devices-devicemanagementscript.md
                 items:
@@ -5191,10 +5397,96 @@ items:
                     href: api/intune-devices-devicemanagementscriptuserstate-delete.md
                   - name: Обновление
                     href: api/intune-devices-devicemanagementscriptuserstate-update.md
+              - name: Логическое ограничение параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingbooleanconstraint.md
+              - name: Категория параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingcategory.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementsettingcategory-update.md
+              - name: Определение параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingdefinition.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementsettingdefinition-update.md
+              - name: Зависимость параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingdependency.md
+              - name: Экземпляр параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementsettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementsettinginstance-get.md
+              - name: Цельное ограничение параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingintegerconstraint.md
+              - name: Регулярное выражение ограничения параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingregexconstraint.md
+              - name: Длина строки ограничения параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingstringlengthconstraint.md
+              - name: XML-ограничение параметра управления устройствами
+                href: resources/intune-deviceintent-devicemanagementsettingxmlconstraint.md
+              - name: Экземпляр параметра строки управления устройствами
+                href: resources/intune-deviceintent-devicemanagementstringsettinginstance.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementstringsettinginstance-update.md
               - name: Состояние подписки на управление устройствами
                 href: resources/intune-devices-devicemanagementsubscriptionstate.md
               - name: Подписки на управление устройствами
                 href: resources/intune-devices-devicemanagementsubscriptions.md
+              - name: Шаблон управления устройствами
+                href: resources/intune-deviceintent-devicemanagementtemplate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementtemplate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementtemplate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementtemplate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementtemplate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementtemplate-update.md
+                  - name: Действие createInstance
+                    href: api/intune-deviceintent-devicemanagementtemplate-createinstance.md
+              - name: Категория параметра шаблона управления устройствами
+                href: resources/intune-deviceintent-devicemanagementtemplatesettingcategory.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-devicemanagementtemplatesettingcategory-update.md
               - name: Данные ошибки "Устранение проблем с управлением устройствами"
                 href: resources/intune-troubleshooting-devicemanagementtroubleshootingerrordetails.md
               - name: Ресурс ошибки "Устранение проблем с управлением устройствами"
@@ -5212,6 +5504,8 @@ items:
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-delete.md
                   - name: Обновление
                     href: api/intune-troubleshooting-devicemanagementtroubleshootingevent-update.md
+              - name: Тип значения намерения управления устройствами
+                href: resources/intune-deviceintent-devicemanangementintentvaluetype.md
               - name: Общие сведения об операционной системе устройства
                 href: resources/intune-devices-deviceoperatingsystemsummary.md
               - name: Обзор защиты устройств
@@ -5541,6 +5835,67 @@ items:
                 href: resources/intune-devices-revokeapplevpplicensesactionresult.md
               - name: Расписание запуска
                 href: resources/intune-devices-runschedule.md
+              - name: Состояние соответствия требованиям базового плана безопасности
+                href: resources/intune-deviceintent-securitybaselinecompliancestate.md
+              - name: Состояние устройства базового плана безопасности
+                href: resources/intune-deviceintent-securitybaselinedevicestate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-securitybaselinedevicestate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-securitybaselinedevicestate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-securitybaselinedevicestate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-securitybaselinedevicestate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-securitybaselinedevicestate-update.md
+              - name: Состояние параметра базового плана безопасности
+                href: resources/intune-deviceintent-securitybaselinesettingstate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-securitybaselinesettingstate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-securitybaselinesettingstate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-securitybaselinesettingstate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-securitybaselinesettingstate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-securitybaselinesettingstate-update.md
+              - name: Состояние базового плана безопасности
+                href: resources/intune-deviceintent-securitybaselinestate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-securitybaselinestate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-securitybaselinestate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-securitybaselinestate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-securitybaselinestate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-securitybaselinestate-update.md
+              - name: Сводка состояния базового плана безопасности
+                href: resources/intune-deviceintent-securitybaselinestatesummary.md
+                items:
+                  - name: Получение
+                    href: api/intune-deviceintent-securitybaselinestatesummary-get.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-securitybaselinestatesummary-update.md
+              - name: Шаблон базового плана безопасности
+                href: resources/intune-deviceintent-securitybaselinetemplate.md
+                items:
+                  - name: Перечисление
+                    href: api/intune-deviceintent-securitybaselinetemplate-list.md
+                  - name: Получение
+                    href: api/intune-deviceintent-securitybaselinetemplate-get.md
+                  - name: Создание
+                    href: api/intune-deviceintent-securitybaselinetemplate-create.md
+                  - name: Удаление
+                    href: api/intune-deviceintent-securitybaselinetemplate-delete.md
+                  - name: Обновление
+                    href: api/intune-deviceintent-securitybaselinetemplate-update.md
               - name: Пользователь общего устройства Apple
                 href: resources/intune-devices-sharedappledeviceuser.md
               - name: Выражение условия унарного управления
