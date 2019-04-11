@@ -4,12 +4,12 @@ description: Состояние параметров политики соотв
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e0b98cc4809fb72bb7caf5fe55fe6e912fd00f9b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b6c204294190f2f585ad19f7cad4f68e2f7fcc03
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171500"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782207"
 ---
 # <a name="devicecompliancepolicysettingstate-resource-type"></a>Тип ресурса deviceCompliancePolicySettingState
 
@@ -35,7 +35,7 @@ ms.locfileid: "30171500"
 |sources|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Соответствующие политики|
 |currentValue|String|Текущее значение параметра на устройстве|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -68,6 +68,7 @@ ms.locfileid: "30171500"
   "currentValue": "String"
 }
 ```
+
 
 
 

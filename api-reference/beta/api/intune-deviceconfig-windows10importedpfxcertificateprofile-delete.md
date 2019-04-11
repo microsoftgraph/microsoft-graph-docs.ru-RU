@@ -4,12 +4,12 @@ description: Удаляет объект windows10ImportedPFXCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fb415911bb4998407144d13c99041040b75b2c4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6ec50518d63a98729e12e6761226c0eae3e84235
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989087"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780702"
 ---
 # <a name="delete-windows10importedpfxcertificateprofile"></a>Удаление windows10ImportedPFXCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

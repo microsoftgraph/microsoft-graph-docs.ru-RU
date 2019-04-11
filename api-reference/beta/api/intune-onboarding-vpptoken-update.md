@@ -4,12 +4,12 @@ description: Обновление свойств объекта VPP токен.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 19541267f099afd03b5910b034234dbe34146e44
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5ba7acb0c277a7ff7b35834d2ebf1835395640bc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978705"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781759"
 ---
 # <a name="update-vpptoken"></a>Обновить VPP токен
 
@@ -67,7 +67,7 @@ PATCH /deviceAppManagement/vppTokens/{vppTokenId}
 |displayName|String|Понятное имя маркера, указанного администратором.|
 |Локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
 |Клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
-|roleScopeTagIds|Коллекция строк|Идентификаторы тегов области ролей, назначенных этой сущности.|
+|roleScopeTagIds|Коллекция String|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

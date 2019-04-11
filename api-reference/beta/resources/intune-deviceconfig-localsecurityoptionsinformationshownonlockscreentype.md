@@ -4,12 +4,12 @@ description: Возможные значения для Локалсекурит
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1709fe10b6e6992aba128da57cb77006633c6909
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 86f532ffa894cc7542600d4f37bd25172a22dfd4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156135"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781556"
 ---
 # <a name="localsecurityoptionsinformationshownonlockscreentype-enum-type"></a>тип перечисления Локалсекуритйоптионсинформатионшовнонлоккскринтипе
 
@@ -22,10 +22,11 @@ ms.locfileid: "30156135"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроено|
+|notConfigured|нуль|Not Configured|
 |Усердисплайнамедомаинусер|1,1|Отображаемое имя пользователя, имена доменов и пользователей|
 |Усердисплайнамеонли|2|Только отображаемое имя пользователя|
 |Донотдисплайусер|4|Не отображать сведения о пользователе|
+
 
 
 

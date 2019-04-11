@@ -4,12 +4,12 @@ description: Сущность, которая представляет цель 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 909b071279b35c2ffec4c27b3431d25f7da8ac46
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2de7d4e8c177317aa220d6aafbba4bda8b7fe299
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524248"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780926"
 ---
 # <a name="devicemanagementintent-resource-type"></a>Тип ресурса Девицеманажементинтент
 
@@ -23,11 +23,11 @@ ms.locfileid: "31524248"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицеманажементинтентс](../api/intune-deviceintent-devicemanagementintent-list.md)|Коллекция [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md)|Список свойств и связей объектов [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
-|[Получение Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-get.md)|[Девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md)|Чтение свойств и связей объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
-|[Создание Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-create.md)|[Девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md)|Создание нового объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
+|[Получение Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-get.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Чтение свойств и связей объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
+|[Создание Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-create.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Создание нового объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
 |[Удаление Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-delete.md)|Нет|Удаляет объект [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md).|
-|[Обновление Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-update.md)|[Девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md)|Обновление свойств объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
-|[действие Упдатесеттингс](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Нет|Н/Д|
+|[Обновление Девицеманажементинтент](../api/intune-deviceintent-devicemanagementintent-update.md)|[deviceManagementIntent](../resources/intune-deviceintent-devicemanagementintent.md)|Обновление свойств объекта [девицеманажементинтент](../resources/intune-deviceintent-devicemanagementintent.md) .|
+|[Действие updateSettings](../api/intune-deviceintent-devicemanagementintent-updatesettings.md)|Нет|Н/Д|
 |[Действие назначения](../api/intune-deviceintent-devicemanagementintent-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
@@ -49,8 +49,8 @@ ms.locfileid: "31524248"
 |deviceSettingStateSummaries|Коллекция [девицеманажементинтентдевицесеттингстатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicesettingstatesummary.md)|Набор параметров и их состояний, а также количество устройств, которые относятся к соответствующему состоянию для всех параметров в цели|
 |deviceStates|Коллекция [девицеманажементинтентдевицестате](../resources/intune-deviceintent-devicemanagementintentdevicestate.md)|Коллекция состояний всех устройств, к которым применяется цель|
 |Усерстатес|Коллекция [девицеманажементинтентусерстате](../resources/intune-deviceintent-devicemanagementintentuserstate.md)|Коллекция состояний всех пользователей, к которым применяется цель|
-|Девицестатесуммари|[Девицеманажементинтентдевицестатесуммари](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Сводка состояний устройств и счетчиков устройств, которые относятся к соответствующему состоянию для всех устройств, к которым применяется цель|
-|userStateSummary|[Девицеманажементинтентусерстатесуммари](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md)|Сводка по состояниям пользователей и количества пользователей, относящихся к соответствующему состоянию для всех пользователей, к которым применяется цель|
+|Девицестатесуммари|[deviceManagementIntentDeviceStateSummary](../resources/intune-deviceintent-devicemanagementintentdevicestatesummary.md)|Сводка состояний устройств и счетчиков устройств, которые относятся к соответствующему состоянию для всех устройств, к которым применяется цель|
+|userStateSummary|[deviceManagementIntentUserStateSummary](../resources/intune-deviceintent-devicemanagementintentuserstatesummary.md)|Сводка по состояниям пользователей и количества пользователей, относящихся к соответствующему состоянию для всех пользователей, к которым применяется цель|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -71,8 +71,6 @@ ms.locfileid: "31524248"
   "templateId": "String"
 }
 ```
-
-
 
 
 

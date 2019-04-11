@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Моб
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9b0c338f974618fe28f3de6f54e1c9aabbef0ffc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 995eda4b463251504297ce1d11535622600015e3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970431"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780597"
 ---
 # <a name="list-mobilecontainedapps"></a>Список Мобилеконтаинедаппс
 
@@ -75,6 +75,7 @@ Content-Length: 150
   ]
 }
 ```
+
 
 
 

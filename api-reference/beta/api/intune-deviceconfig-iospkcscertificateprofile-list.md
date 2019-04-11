@@ -4,12 +4,12 @@ description: Список свойств и связей объектов iosPkc
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49d7311d81edca24335c211c55244815246d08aa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6ab9f163895e112ff87d2da239cc6dd6ded66631
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975814"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780863"
 ---
 # <a name="list-iospkcscertificateprofiles"></a>Список Иоспкксцертификатепрофилес
 
@@ -92,6 +92,7 @@ Content-Length: 1046
   ]
 }
 ```
+
 
 
 

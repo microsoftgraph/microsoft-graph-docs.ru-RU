@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеконфи
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e59946ce8e252daedc13cae4800eece4fdd8bd4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 801d403745bea8fa3e4b962a0892ced2129bd92f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960687"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782151"
 ---
 # <a name="create-deviceconfigurationconflictsummary"></a>Создание Девицеконфигуратионконфликтсуммари
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurationConflictSummary
 |:---|:---|:---|
 |Конфликтингдевицеконфигуратионс|Коллекция [settingSource](../resources/intune-deviceconfig-settingsource.md)|Набор политик в конфликте с заданным параметром|
 |id|String|Идентификатор этого набора конфликтующих политик. Этот идентификатор — идентификаторы всех политик в Конфликтингдевицеконфигуратионс в лексикографикал порядке, разделенных символами подчеркивания.|
-|Контрибутингсеттингс|Коллекция строк|Набор параметров в конфликте с заданными политиками|
+|Контрибутингсеттингс|Коллекция String|Набор параметров в конфликте с заданными политиками|
 |Девицечеккинсимпактед|Int32|Число возвратов, затронутых конфликтующими политиками и параметрами|
 
 
@@ -108,6 +108,7 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
 
 
 

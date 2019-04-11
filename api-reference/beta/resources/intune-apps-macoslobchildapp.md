@@ -4,12 +4,12 @@ description: Содержит свойства бизнес-приложения
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f4bf8a8715bb681d1737a2fb1b39e5bac61fb9d7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 54bd15c4549495ff891d7283c6851e7058ffb887
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147000"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780212"
 ---
 # <a name="macoslobchildapp-resource-type"></a>Тип ресурса Макослобчилдапп
 
@@ -44,6 +44,7 @@ ms.locfileid: "30147000"
   "versionNumber": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5efdbf5f9bd9aa3d29c366a0e3769aa29b6f411c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8cc91bd7988dbc8f1c1f36d4aaf28e10d2609710
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158144"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779988"
 ---
 # <a name="ratinggermanytelevisiontype-enum-type"></a>тип перечисления Ратингжерманителевисионтипе
 
@@ -26,9 +26,10 @@ ms.locfileid: "30158144"
 |Аллблоккед|1,1|Не разрешать показ контента|
 |обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
 |agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
-|agesAbove12|4|AB 12 Жахрен, от 12 лет до 12 лет|
+|agesAbove12|SP4|AB 12 Жахрен, от 12 лет до 12 лет|
 |agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
-|взрослые|6|Только для Жахрен, только для взрослых|
+|взрослые|ICMPv6|Только для Жахрен, только для взрослых|
+
 
 
 

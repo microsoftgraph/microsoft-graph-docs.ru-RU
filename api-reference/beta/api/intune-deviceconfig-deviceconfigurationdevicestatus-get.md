@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceCo
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 838a20339e973b51f58aac5f70f1c1ab5ec21227
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: af90982da90e92fbec5d6e1200862a099f559985
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961310"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782284"
 ---
 # <a name="get-deviceconfigurationdevicestatus"></a>Get deviceConfigurationDeviceStatus
 
@@ -90,6 +90,7 @@ Content-Length: 535
   }
 }
 ```
+
 
 
 

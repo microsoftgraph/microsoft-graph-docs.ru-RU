@@ -4,12 +4,12 @@ description: Список свойств и связей объектов iosMob
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80abc9744b9539947b56ac622317d04a2243c58a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8ffb7ae6f0e9430c5775513f26a0aba27c6b0caa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965636"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781486"
 ---
 # <a name="list-iosmobileappconfigurations"></a>Список iosMobileAppConfigurations
 
@@ -93,6 +93,7 @@ Content-Length: 889
   ]
 }
 ```
+
 
 
 

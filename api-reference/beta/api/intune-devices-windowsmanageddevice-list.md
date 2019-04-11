@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29c3e5199d97e19d92c9205daffb4ce9d45b7b27
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6b87da64194a033ec6fe753bcf6c77fa899a307c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981904"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781346"
 ---
 # <a name="list-windowsmanageddevices"></a>Список Виндовсманажеддевицес
 
@@ -34,8 +34,8 @@ ms.locfileid: "30981904"
 }
 -->
 ``` http
-GET /users/{usersId}/managedDevices
 GET /deviceManagement/managedDevices
+GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
 
@@ -56,7 +56,7 @@ GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceR
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-GET https://graph.microsoft.com/beta/users/{usersId}/managedDevices
+GET https://graph.microsoft.com/beta/deviceManagement/managedDevices
 ```
 
 ### <a name="response"></a>Отклик
@@ -238,6 +238,7 @@ Content-Length: 7973
   ]
 }
 ```
+
 
 
 

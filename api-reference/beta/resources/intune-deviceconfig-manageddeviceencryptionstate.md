@@ -4,12 +4,12 @@ description: Отчет о шифровании для каждого устро
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee73ab13ea48707eed745bced197fdd7ae5676b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9193c795f9c488b5f157014c81d00a4b5118d149
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177849"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779876"
 ---
 # <a name="manageddeviceencryptionstate-resource-type"></a>Тип ресурса Манажеддевицеенкриптионстате
 
@@ -31,8 +31,8 @@ ms.locfileid: "30177849"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
-|userPrincipalName|Строка|Имя пользователя|
+|id|Строка|Ключ объекта.|
+|userPrincipalName|String|Имя пользователя|
 |deviceType|[deviceTypes](../resources/intune-deviceconfig-devicetypes.md)|Платформа устройства. Возможные значения: `desktop`, `windowsRT`, `winMO6`, `nokia` `windowsPhone` `mac` `winCE` `unix` `macMDM` `holoLens` `surfaceHub` `androidForWork` `androidEnterprise` `android` `iSocConsumer`,,,,,,,,,,,,,,,,,,,,, `winEmbedded` `iPhone` `iPad` `iPod` , `blackberry`, `palm`, `unknown`.|
 |osVersion|String|Версия операционной системы устройства|
 |ТпмспеЦификатионверсион|String|Версия TPM устройства|
@@ -76,6 +76,7 @@ ms.locfileid: "30177849"
   ]
 }
 ```
+
 
 
 

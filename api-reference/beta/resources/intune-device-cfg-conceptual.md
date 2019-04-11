@@ -4,12 +4,12 @@ description: Список API Microsoft Graph для конечных точек
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: 691a528e381b4635af15bab6626f5858296c0979
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 0c25373b7a1c7657b2aee290c9a6ce5d0ae23cb9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572441"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781444"
 ---
 # <a name="device-configuration-in-microsoft-intune"></a>Настройка устройств в Microsoft Intune
 
@@ -31,8 +31,10 @@ ms.locfileid: "30572441"
 - [Специальная конфигурация Android](intune-deviceconfig-androidcustomconfiguration.md)
 - [Тип политики автоматического обновления приложения для владельца устройства с Android](intune-deviceconfig-androiddeviceownerappautoupdatepolicytype.md)
 - [Режим подключения аккумулятора для владельца устройства с Android](intune-deviceconfig-androiddeviceownerbatterypluggedmode.md)
+- [Политика соответствия требованиям владельца устройства Android](intune-deviceconfig-androiddeviceownercompliancepolicy.md)
 - [Тип политики разрешений приложения по умолчанию для владельца устройства с Android](intune-deviceconfig-androiddeviceownerdefaultapppermissionpolicytype.md)
 - [Общая конфигурация устройств для владельца устройства с Android](intune-deviceconfig-androiddeviceownergeneraldeviceconfiguration.md)
+- [Режим хранения владельца устройства Android](intune-deviceconfig-androiddeviceownerplaystoremode.md)
 - [Требуемый тип пароля для владельца устройства с Android](intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)
 - [Тип установки системного обновления для владельца устройства с Android](intune-deviceconfig-androiddeviceownersystemupdateinstalltype.md)
 - [Конфигурация сети Wi-Fi для владельца устройства с Android](intune-deviceconfig-androiddeviceownerwificonfiguration.md)
@@ -289,10 +291,13 @@ ms.locfileid: "30572441"
 - [Конфигурация функций для устройств с macOS](intune-deviceconfig-macosdevicefeaturesconfiguration.md)
 - [Конфигурация защиты конечных точек macOS](intune-deviceconfig-macosendpointprotectionconfiguration.md)
 - [Конфигурация корпоративной сети Wi-Fi для macOS](intune-deviceconfig-macosenterprisewificonfiguration.md)
+- [Конфигурация расширений macOS](intune-deviceconfig-macosextensionsconfiguration.md)
 - [Приложение брандмауэра macOS](intune-deviceconfig-macosfirewallapplication.md)
 - [Источники приложений для macOS Gatekeeper](intune-deviceconfig-macosgatekeeperappsources.md)
 - [Общая конфигурация устройств с macOS](intune-deviceconfig-macosgeneraldeviceconfiguration.md)
 - [Профиль импортированного сертификата PFX для macOS](intune-deviceconfig-macosimportedpfxcertificateprofile.md)
+- [расширение ядра macOS](intune-deviceconfig-macoskernelextension.md)
+- [Элемент запуска macOS](intune-deviceconfig-macoslaunchitem.md)
 - [Профиль сертификата SCEP для macOS](intune-deviceconfig-macosscepcertificateprofile.md)
 - [Доверенный корневой сертификат для macOS](intune-deviceconfig-macostrustedrootcertificate.md)
 - [Конфигурация VPN для macOS](intune-deviceconfig-macosvpnconfiguration.md)
@@ -432,11 +437,11 @@ ms.locfileid: "30572441"
 - [Режим оптимизации доставки в Windows](intune-deviceconfig-windowsdeliveryoptimizationmode.md)
 - [Сетевой профиль брандмауэра Windows](intune-deviceconfig-windowsfirewallnetworkprofile.md)
 - [Правило брандмауэра Windows](intune-deviceconfig-windowsfirewallrule.md)
-- [Типы интерфейса правил брандмауэра Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
-- [Типы профилей сети правила брандмауэра Windows](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
+- [Типы интерфейсов правила брандмауэра Windows](intune-deviceconfig-windowsfirewallruleinterfacetypes.md)
+- [Типы сетевого профиля брандмауэра Windows](intune-deviceconfig-windowsfirewallrulenetworkprofiletypes.md)
 - [Тип направления трафика правила брандмауэра Windows](intune-deviceconfig-windowsfirewallruletrafficdirectiontype.md)
-- [Настройка мониторинга работоспособности Windows](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
-- [Область мониторинга работоспособности Windows](intune-deviceconfig-windowshealthmonitoringscope.md)
+- [Настройка наблюдения за работоспособностью Windows](intune-deviceconfig-windowshealthmonitoringconfiguration.md)
+- [Область наблюдения за работоспособностью Windows](intune-deviceconfig-windowshealthmonitoringscope.md)
 - [Конфигурация защиты удостоверений Windows](intune-deviceconfig-windowsidentityprotectionconfiguration.md)
 - [Группа Active Directory киоска Windows](intune-deviceconfig-windowskioskactivedirectorygroup.md)
 - [Базовое приложение киоска Windows](intune-deviceconfig-windowskioskappbase.md)
@@ -476,7 +481,7 @@ ms.locfileid: "30572441"
 - [Конфигурация Центра обновления Windows для бизнеса](intune-deviceconfig-windowsupdateforbusinessconfiguration.md)
 - [Недели обновления в Центре обновления Windows для бизнеса](intune-deviceconfig-windowsupdateforbusinessupdateweeks.md)
 - [Тип расписания установки с использованием Центра обновления Windows](intune-deviceconfig-windowsupdateinstallscheduletype.md)
-- [Параметр отображения уведомления об обновлениях Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
+- [Параметр отображения уведомления Центра обновления Windows](intune-deviceconfig-windowsupdatenotificationdisplayoption.md)
 - [Запланированная установка с использованием Центра обновления Windows](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Статус обновления Windows](intune-deviceconfig-windowsupdatestatus.md)
 - [Тип обновления Windows](intune-deviceconfig-windowsupdatetype.md)

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Виндовсс
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1453fc30f4033979d2bb6e9d55a08e67b729089d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 55f24b23f1b028e18fd91f09ddb363f490c49910
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30965188"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780499"
 ---
 # <a name="update-windowsstoreapp"></a>Обновление Виндовсстореапп
 
@@ -68,7 +68,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appStoreUrl|String|URL-адрес хранилища приложений Windows.|
 
 
@@ -83,7 +84,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 741
+Content-length: 768
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreApp",
@@ -107,6 +108,7 @@ Content-length: 741
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
@@ -116,7 +118,7 @@ Content-length: 741
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 913
+Content-Length: 940
 
 {
   "@odata.type": "#microsoft.graph.windowsStoreApp",
@@ -143,9 +145,11 @@ Content-Length: 913
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

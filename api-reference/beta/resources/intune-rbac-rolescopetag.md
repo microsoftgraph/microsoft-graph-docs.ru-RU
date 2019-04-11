@@ -4,12 +4,12 @@ description: Тег области применения роли
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e8c7bfb12172f6ae99f14a65647a7a6ab8955fef
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6916521c8edef1b1decfb6b006779a372d3ab4e5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159425"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781955"
 ---
 # <a name="rolescopetag-resource-type"></a>Тип ресурса Ролескопетаг
 
@@ -31,7 +31,7 @@ ms.locfileid: "30159425"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое или понятное имя тега области применения роли.|
 |description|String|Описание тега области применения роли.|
 
@@ -54,6 +54,7 @@ ms.locfileid: "30159425"
   "description": "String"
 }
 ```
+
 
 
 

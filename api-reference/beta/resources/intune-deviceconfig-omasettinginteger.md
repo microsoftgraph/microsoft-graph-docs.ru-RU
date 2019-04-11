@@ -4,12 +4,12 @@ description: Определение целого числа параметра O
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cb87ecf7f658e9eb6ed19904a09460d2b2695be4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 54eec27cf91bb1da7790ae1432452ac026bf1683
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172326"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781927"
 ---
 # <a name="omasettinginteger-resource-type"></a>Тип ресурса omaSettingInteger
 
@@ -30,7 +30,7 @@ ms.locfileid: "30172326"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Int32|Значение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "30172326"
   "value": 1024
 }
 ```
+
 
 
 

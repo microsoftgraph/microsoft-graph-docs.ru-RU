@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2485a72a293cb1e09f31d3af8a5b88ce8b268703
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7ddd4195c1e249acff6b2a3a70987bc459045f8c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972426"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780296"
 ---
 # <a name="list-manageddevicemobileappconfigurations"></a>Перечисление объектов managedDeviceMobileAppConfiguration
 
@@ -84,6 +84,7 @@ Content-Length: 559
   ]
 }
 ```
+
 
 
 

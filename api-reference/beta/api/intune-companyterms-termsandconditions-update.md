@@ -4,12 +4,12 @@ description: Обновление свойств объекта termsAndConditio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f1855a5b3c4933b7304b9b984ab96aaaaab0b675
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4cc6eb5a3ad5b129693fa5bbedf55c56252bf19b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957418"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780555"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 
@@ -109,6 +109,7 @@ Content-Length: 505
   "version": 7
 }
 ```
+
 
 
 

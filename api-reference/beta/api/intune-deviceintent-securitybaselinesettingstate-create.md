@@ -4,12 +4,12 @@ description: Создание нового объекта Секуритибас
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01256dceacb34fb2b9e173ab671ab9f6b318449c
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 6d4a3a68eaab0f9f4c8b3bb7d4f9e8adf16dea37
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523653"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781829"
 ---
 # <a name="create-securitybaselinesettingstate"></a>Создание Секуритибаселинесеттингстате
 
@@ -20,7 +20,7 @@ ms.locfileid: "31523653"
 Создание нового объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -52,7 +52,7 @@ POST /deviceManagement/managedDevices/{managedDeviceId}/securityBaselineStates/{
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта|
 |settingName|String|Имя параметра, о котором сообщается|
-|state|[Секуритибаселинекомплианцестате](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия параметру базового уровня безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия параметру базового уровня безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |Сеттингкатегорид|String|Идентификатор категории параметров, к которой относится этот параметр|
 
 

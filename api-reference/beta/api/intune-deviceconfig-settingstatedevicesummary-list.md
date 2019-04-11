@@ -4,12 +4,12 @@ description: Список свойств и связей объектов settin
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 30e27fd4320cb89720c89034b9131b6b429c7e2e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 665bbb36b475e5542d8d8e7a2cece7b932bb9d02
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959399"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780268"
 ---
 # <a name="list-settingstatedevicesummaries"></a>Перечисление объектов settingStateDeviceSummary
 
@@ -91,6 +91,7 @@ Content-Length: 486
   ]
 }
 ```
+
 
 
 

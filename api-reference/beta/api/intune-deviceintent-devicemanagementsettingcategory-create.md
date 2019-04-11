@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7e9ee98d431d102e381719957ef9baa6859a0eb
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 82cdba65c1178eb86732cb7fc5439e2ed7d8a995
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524136"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31780996"
 ---
 # <a name="create-devicemanagementsettingcategory"></a>Создание Девицеманажементсеттингкатегори
 
@@ -86,8 +86,6 @@ Content-Length: 162
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

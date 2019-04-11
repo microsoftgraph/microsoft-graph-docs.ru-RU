@@ -4,12 +4,12 @@ description: Результат действия с устройством
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c435241056f5e29166355829d1c40438b525a92
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2d46aa2d4359430d17e3f3892b8b526a9efed603
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151431"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781872"
 ---
 # <a name="deviceactionresult-resource-type"></a>Тип ресурса deviceActionResult
 
@@ -27,7 +27,7 @@ ms.locfileid: "30151431"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "30151431"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

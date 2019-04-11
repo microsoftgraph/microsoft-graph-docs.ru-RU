@@ -4,12 +4,12 @@ description: Удаляет объект deviceComplianceScheduledActionForRule.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70fddb0b666b43491e7d5f537f460c10d587115c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a5dd226ec1751140d69e6b50e1dbbb39ba284a07
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971271"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781766"
 ---
 # <a name="delete-devicecompliancescheduledactionforrule"></a>Удаление объекта deviceComplianceScheduledActionForRule
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

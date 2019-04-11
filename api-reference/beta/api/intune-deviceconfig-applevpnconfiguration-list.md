@@ -4,12 +4,12 @@ description: Список свойств и связей объектов appleV
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f59ae7af1de4813c62d829754e22fe2c5d3d8b16
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ef4e0c40c66fcaba0c34c8b2d03e9e5adc42affb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986042"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31781724"
 ---
 # <a name="list-applevpnconfigurations"></a>Список Апплевпнконфигуратионс
 
@@ -140,6 +140,7 @@ Content-Length: 2334
   ]
 }
 ```
+
 
 
 
