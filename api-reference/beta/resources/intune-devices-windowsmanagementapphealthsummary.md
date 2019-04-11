@@ -4,40 +4,40 @@ description: Содержит свойства для сводки о работ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f62f5967702143149176cecd2513478256ead6d3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: aea7f113d144ca876b301acc3b303ac0f7072bc4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172060"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789257"
 ---
-# <a name="windowsmanagementapphealthsummary-resource-type"></a><span data-ttu-id="93d71-103">Тип ресурса Виндовсманажементапфеалссуммари</span><span class="sxs-lookup"><span data-stu-id="93d71-103">windowsManagementAppHealthSummary resource type</span></span>
+# <a name="windowsmanagementapphealthsummary-resource-type"></a><span data-ttu-id="9d3c6-103">Тип ресурса Виндовсманажементапфеалссуммари</span><span class="sxs-lookup"><span data-stu-id="9d3c6-103">windowsManagementAppHealthSummary resource type</span></span>
 
-> <span data-ttu-id="93d71-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="93d71-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="9d3c6-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="93d71-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="93d71-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="9d3c6-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="93d71-106">Содержит свойства для сводки о работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="93d71-106">Contains properties for the health summary of the Windows management app.</span></span>
+<span data-ttu-id="9d3c6-106">Содержит свойства для сводки о работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-106">Contains properties for the health summary of the Windows management app.</span></span>
 
-## <a name="methods"></a><span data-ttu-id="93d71-107">Методы</span><span class="sxs-lookup"><span data-stu-id="93d71-107">Methods</span></span>
-|<span data-ttu-id="93d71-108">Метод</span><span class="sxs-lookup"><span data-stu-id="93d71-108">Method</span></span>|<span data-ttu-id="93d71-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="93d71-109">Return Type</span></span>|<span data-ttu-id="93d71-110">Описание</span><span class="sxs-lookup"><span data-stu-id="93d71-110">Description</span></span>|
+## <a name="methods"></a><span data-ttu-id="9d3c6-107">Методы</span><span class="sxs-lookup"><span data-stu-id="9d3c6-107">Methods</span></span>
+|<span data-ttu-id="9d3c6-108">Метод</span><span class="sxs-lookup"><span data-stu-id="9d3c6-108">Method</span></span>|<span data-ttu-id="9d3c6-109">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="9d3c6-109">Return Type</span></span>|<span data-ttu-id="9d3c6-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9d3c6-110">Description</span></span>|
 |:---|:---|:---|
-|[<span data-ttu-id="93d71-111">Получение Виндовсманажементапфеалссуммари</span><span class="sxs-lookup"><span data-stu-id="93d71-111">Get windowsManagementAppHealthSummary</span></span>](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|<span data-ttu-id="93d71-112">[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).</span><span class="sxs-lookup"><span data-stu-id="93d71-112">[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)</span></span>|<span data-ttu-id="93d71-113">Чтение свойств и связей объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="93d71-113">Read properties and relationships of the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>|
-|[<span data-ttu-id="93d71-114">Обновление Виндовсманажементапфеалссуммари</span><span class="sxs-lookup"><span data-stu-id="93d71-114">Update windowsManagementAppHealthSummary</span></span>](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|<span data-ttu-id="93d71-115">[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md).</span><span class="sxs-lookup"><span data-stu-id="93d71-115">[windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md)</span></span>|<span data-ttu-id="93d71-116">Обновление свойств объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="93d71-116">Update the properties of a [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>|
+|[<span data-ttu-id="9d3c6-111">Получение Виндовсманажементапфеалссуммари</span><span class="sxs-lookup"><span data-stu-id="9d3c6-111">Get windowsManagementAppHealthSummary</span></span>](../api/intune-devices-windowsmanagementapphealthsummary-get.md)|[<span data-ttu-id="9d3c6-112">windowsManagementAppHealthSummary</span><span class="sxs-lookup"><span data-stu-id="9d3c6-112">windowsManagementAppHealthSummary</span></span>](../resources/intune-devices-windowsmanagementapphealthsummary.md)|<span data-ttu-id="9d3c6-113">Чтение свойств и связей объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="9d3c6-113">Read properties and relationships of the [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>|
+|[<span data-ttu-id="9d3c6-114">Обновление Виндовсманажементапфеалссуммари</span><span class="sxs-lookup"><span data-stu-id="9d3c6-114">Update windowsManagementAppHealthSummary</span></span>](../api/intune-devices-windowsmanagementapphealthsummary-update.md)|[<span data-ttu-id="9d3c6-115">windowsManagementAppHealthSummary</span><span class="sxs-lookup"><span data-stu-id="9d3c6-115">windowsManagementAppHealthSummary</span></span>](../resources/intune-devices-windowsmanagementapphealthsummary.md)|<span data-ttu-id="9d3c6-116">Обновление свойств объекта [виндовсманажементапфеалссуммари](../resources/intune-devices-windowsmanagementapphealthsummary.md) .</span><span class="sxs-lookup"><span data-stu-id="9d3c6-116">Update the properties of a [windowsManagementAppHealthSummary](../resources/intune-devices-windowsmanagementapphealthsummary.md) object.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="93d71-117">Свойства</span><span class="sxs-lookup"><span data-stu-id="93d71-117">Properties</span></span>
-|<span data-ttu-id="93d71-118">Свойство</span><span class="sxs-lookup"><span data-stu-id="93d71-118">Property</span></span>|<span data-ttu-id="93d71-119">Тип</span><span class="sxs-lookup"><span data-stu-id="93d71-119">Type</span></span>|<span data-ttu-id="93d71-120">Описание</span><span class="sxs-lookup"><span data-stu-id="93d71-120">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9d3c6-117">Свойства</span><span class="sxs-lookup"><span data-stu-id="9d3c6-117">Properties</span></span>
+|<span data-ttu-id="9d3c6-118">Свойство</span><span class="sxs-lookup"><span data-stu-id="9d3c6-118">Property</span></span>|<span data-ttu-id="9d3c6-119">Тип</span><span class="sxs-lookup"><span data-stu-id="9d3c6-119">Type</span></span>|<span data-ttu-id="9d3c6-120">Описание</span><span class="sxs-lookup"><span data-stu-id="9d3c6-120">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="93d71-121">id</span><span class="sxs-lookup"><span data-stu-id="93d71-121">id</span></span>|<span data-ttu-id="93d71-122">String</span><span class="sxs-lookup"><span data-stu-id="93d71-122">String</span></span>|<span data-ttu-id="93d71-123">Ключ объекта сводки работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="93d71-123">Key of the Windows management app health summary entity.</span></span>|
-|<span data-ttu-id="93d71-124">Хеалсидевицекаунт</span><span class="sxs-lookup"><span data-stu-id="93d71-124">healthyDeviceCount</span></span>|<span data-ttu-id="93d71-125">Int32</span><span class="sxs-lookup"><span data-stu-id="93d71-125">Int32</span></span>|<span data-ttu-id="93d71-126">Работоспособное число устройств.</span><span class="sxs-lookup"><span data-stu-id="93d71-126">Healthy device count.</span></span>|
-|<span data-ttu-id="93d71-127">Унхеалсидевицекаунт</span><span class="sxs-lookup"><span data-stu-id="93d71-127">unhealthyDeviceCount</span></span>|<span data-ttu-id="93d71-128">Int32</span><span class="sxs-lookup"><span data-stu-id="93d71-128">Int32</span></span>|<span data-ttu-id="93d71-129">Неработоспособное число устройств.</span><span class="sxs-lookup"><span data-stu-id="93d71-129">Unhealthy device count.</span></span>|
-|<span data-ttu-id="93d71-130">unknownDeviceCount</span><span class="sxs-lookup"><span data-stu-id="93d71-130">unknownDeviceCount</span></span>|<span data-ttu-id="93d71-131">Int32</span><span class="sxs-lookup"><span data-stu-id="93d71-131">Int32</span></span>|<span data-ttu-id="93d71-132">Количество неИзвестных устройств.</span><span class="sxs-lookup"><span data-stu-id="93d71-132">Unknown device count.</span></span>|
+|<span data-ttu-id="9d3c6-121">id</span><span class="sxs-lookup"><span data-stu-id="9d3c6-121">id</span></span>|<span data-ttu-id="9d3c6-122">String</span><span class="sxs-lookup"><span data-stu-id="9d3c6-122">String</span></span>|<span data-ttu-id="9d3c6-123">Ключ объекта сводки работоспособности приложения управления Windows.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-123">Key of the Windows management app health summary entity.</span></span>|
+|<span data-ttu-id="9d3c6-124">Хеалсидевицекаунт</span><span class="sxs-lookup"><span data-stu-id="9d3c6-124">healthyDeviceCount</span></span>|<span data-ttu-id="9d3c6-125">Int32</span><span class="sxs-lookup"><span data-stu-id="9d3c6-125">Int32</span></span>|<span data-ttu-id="9d3c6-126">Работоспособное число устройств.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-126">Healthy device count.</span></span>|
+|<span data-ttu-id="9d3c6-127">Унхеалсидевицекаунт</span><span class="sxs-lookup"><span data-stu-id="9d3c6-127">unhealthyDeviceCount</span></span>|<span data-ttu-id="9d3c6-128">Int32</span><span class="sxs-lookup"><span data-stu-id="9d3c6-128">Int32</span></span>|<span data-ttu-id="9d3c6-129">Неработоспособное число устройств.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-129">Unhealthy device count.</span></span>|
+|<span data-ttu-id="9d3c6-130">unknownDeviceCount</span><span class="sxs-lookup"><span data-stu-id="9d3c6-130">unknownDeviceCount</span></span>|<span data-ttu-id="9d3c6-131">Int32</span><span class="sxs-lookup"><span data-stu-id="9d3c6-131">Int32</span></span>|<span data-ttu-id="9d3c6-132">Количество неИзвестных устройств.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-132">Unknown device count.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="93d71-133">Отношения</span><span class="sxs-lookup"><span data-stu-id="93d71-133">Relationships</span></span>
-<span data-ttu-id="93d71-134">Нет</span><span class="sxs-lookup"><span data-stu-id="93d71-134">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="9d3c6-133">Отношения</span><span class="sxs-lookup"><span data-stu-id="9d3c6-133">Relationships</span></span>
+<span data-ttu-id="9d3c6-134">Нет</span><span class="sxs-lookup"><span data-stu-id="9d3c6-134">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="93d71-135">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="93d71-135">JSON Representation</span></span>
-<span data-ttu-id="93d71-136">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="93d71-136">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9d3c6-135">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9d3c6-135">JSON Representation</span></span>
+<span data-ttu-id="9d3c6-136">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9d3c6-136">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
@@ -53,6 +53,7 @@ ms.locfileid: "30172060"
   "unknownDeviceCount": 1024
 }
 ```
+
 
 
 
