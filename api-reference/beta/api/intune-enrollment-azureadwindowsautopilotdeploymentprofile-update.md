@@ -4,12 +4,12 @@ description: Обновление свойств объекта Азуреадв
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c59a30309c15f69741921d8fad31a8a120cf528d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 510d8360fb5192d5d3952c2fc56496760d6621d5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984347"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784278"
 ---
 # <a name="update-azureadwindowsautopilotdeploymentprofile"></a>Обновление Азуреадвиндовсаутопилотдеплойментпрофиле
 
@@ -45,7 +45,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Азуреадвиндовсаутопилотдеплойментпрофиле](../resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [азуреадвиндовсаутопилотдеплойментпрофиле](../resources/intune-enrollment-azureadwindowsautopilotdeploymentprofile.md).
@@ -150,6 +150,7 @@ Content-Length: 1269
   "enableWhiteGlove": true
 }
 ```
+
 
 
 

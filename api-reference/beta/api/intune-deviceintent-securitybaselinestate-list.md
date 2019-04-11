@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Сек
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c81ea805c4c29292eb3171410e1984a11aec9f6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 4d1c334b5f377d4fd31e2209bf6940fc2bf65a76
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522407"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783495"
 ---
 # <a name="list-securitybaselinestates"></a>Список Секуритибаселинестатес
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522407"
 Список свойств и связей объектов [секуритибаселинестате](../resources/intune-deviceintent-securitybaselinestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|

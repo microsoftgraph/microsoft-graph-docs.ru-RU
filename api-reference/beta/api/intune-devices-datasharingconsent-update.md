@@ -4,12 +4,12 @@ description: Обновление свойств объекта Даташари
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f89d81976eeea5cb4832aeb670c0bee26069487
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c7a2afb73ae2e9a139feb70c80449bdba100a3d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783817"
 ---
 # <a name="update-datasharingconsent"></a>Обновление Даташарингконсент
 
@@ -101,6 +101,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

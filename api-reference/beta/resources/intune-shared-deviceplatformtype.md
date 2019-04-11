@@ -4,12 +4,12 @@ description: Поддерживаемые типы платформ.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e060cba22c0f5dcb45ab17f5624f7a0246123810
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 51f74a9820b808bcc5685494665c67679d2191a3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139909"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782886"
 ---
 # <a name="deviceplatformtype-enum-type"></a>тип перечисления Девицеплатформтипе
 
@@ -26,10 +26,11 @@ ms.locfileid: "30139909"
 |Андроидфорворк|1,1|Андроидфорворк.|
 |iOS|2|модуле.|
 |macOS|4|MacOS.|
-|windowsPhone81|4|WindowsPhone 8,1.|
+|windowsPhone81|SP4|WindowsPhone 8,1.|
 |windows81AndLater|17:00|Windows 8,1 и более поздние версии|
-|windows10AndLater|6|Windows 10 и более поздних версий.|
-|Андроидворкпрофиле|7|Рабочий профиль Android.|
+|windows10AndLater|ICMPv6|Windows 10 и более поздних версий.|
+|Андроидворкпрофиле|см|Рабочий профиль Android.|
+
 
 
 

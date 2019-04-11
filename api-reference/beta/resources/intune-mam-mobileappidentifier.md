@@ -4,12 +4,12 @@ description: Идентификатор мобильного приложени�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5ea8ca1fbd4c7d131a566453ccbe9362d10419d5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f93b488010d885e1534f7995930a3bc3719bb15e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172781"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784826"
 ---
 # <a name="mobileappidentifier-resource-type"></a>Тип ресурса mobileAppIdentifier
 
@@ -23,7 +23,7 @@ ms.locfileid: "30172781"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "30172781"
   "@odata.type": "#microsoft.graph.mobileAppIdentifier"
 }
 ```
+
 
 
 

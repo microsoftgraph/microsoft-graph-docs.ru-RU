@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Апплогколлектиондовнлоаддетаилс
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3449e1f1a2b8651cea407690019d458d5ac24fa9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c581b6ffe1653c2962c03c8e6fe5d27d706882d5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147756"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784742"
 ---
 # <a name="applogcollectiondownloaddetails-resource-type"></a>Тип ресурса Апплогколлектиондовнлоаддетаилс
 
@@ -44,6 +44,7 @@ ms.locfileid: "30147756"
   "appLogDecryptionAlgorithm": "String"
 }
 ```
+
 
 
 

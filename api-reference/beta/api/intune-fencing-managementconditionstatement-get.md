@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Мана
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94b4c6933946e663e974c2ecd9d958c7b8e367cc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c0f3fa73be57634a87ed201ae1e59ab2b66373e1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958125"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783096"
 ---
 # <a name="get-managementconditionstatement"></a>Получение Манажементкондитионстатемент
 
@@ -86,6 +86,7 @@ Content-Length: 536
   }
 }
 ```
+
 
 
 

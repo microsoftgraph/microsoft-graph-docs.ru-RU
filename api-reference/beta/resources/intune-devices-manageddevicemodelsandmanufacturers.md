@@ -4,12 +4,12 @@ description: Модели и производства меатадата для 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfd8f068305bdae86a0acc9ef5f9113bb0d1c579
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 99291829bfa672a9ade85a0a015061e4f6ec8e10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148302"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782564"
 ---
 # <a name="manageddevicemodelsandmanufacturers-resource-type"></a>Тип ресурса Манажеддевицемоделсандмануфактурерс
 
@@ -22,8 +22,8 @@ ms.locfileid: "30148302"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Девицемоделс|Коллекция строк|Список моделей для управляемых устройств в учетной записи|
-|Девицемануфактурерс|Коллекция строк|Список производства для управляемых устройств в учетной записи|
+|Девицемоделс|Коллекция String|Список моделей для управляемых устройств в учетной записи|
+|Девицемануфактурерс|Коллекция String|Список производства для управляемых устройств в учетной записи|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -46,6 +46,7 @@ ms.locfileid: "30148302"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Удаляет объект Макосимпортедпфксце�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bb44cba1bfe9034659f02685e6acd57c1166e05
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 078298e3d4dd158c137736896fd4e7b1bb08eba2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980532"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783663"
 ---
 # <a name="delete-macosimportedpfxcertificateprofile"></a>Удаление Макосимпортедпфксцертификатепрофиле
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

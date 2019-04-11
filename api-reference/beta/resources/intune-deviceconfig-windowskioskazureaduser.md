@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: feda393a6bee1b3cfc55d16cc91d321a5b99d54d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 93a47ba1bafe8f2070eedb028cb0eaa64808d03d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168252"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783855"
 ---
 # <a name="windowskioskazureaduser-resource-type"></a>Тип ресурса Виндовскиосказуреадусер
 
@@ -26,7 +26,7 @@ ms.locfileid: "30168252"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя AzureAD, который будет заблокирован для этой конфигурации киоска|
-|userPrincipalName|Строка|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
+|userPrincipalName|String|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -45,6 +45,7 @@ ms.locfileid: "30168252"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

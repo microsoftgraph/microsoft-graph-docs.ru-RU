@@ -4,12 +4,12 @@ description: Метки оценок фильмов в Соединенном К
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a78b8569bea252951e4d325adf823b2954b2e0e0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4905a8f20b29f8b9eb9a1acaba8204e406c98290
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148120"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782900"
 ---
 # <a name="ratingunitedkingdommoviestype-enum-type"></a>тип перечисления Ратингунитедкингдоммовиестипе
 
@@ -26,11 +26,12 @@ ms.locfileid: "30148120"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|Классификация U подходит для всех возраста|
 |Универсалчилдрен|4|Классификация UC подходит для детей, предшествующих школе, старой метки оценки|
-|Паренталгуиданце|4|Классификация PG подходит для старшего уровня|
+|Паренталгуиданце|SP4|Классификация PG подходит для старшего уровня|
 |agesAbove12Video|17:00|12, выпуск видео, подходящий в течение 12 лет|
-|agesAbove12Cinema|6|12A, выпуск в кинотеатрах, подходящий для 12 лет и более|
-|agesAbove15|7|15, подходит только для 15 лет и более ранних версий.|
+|agesAbove12Cinema|ICMPv6|12A, выпуск в кинотеатрах, подходящий для 12 лет и более|
+|agesAbove15|см|15, подходит только для 15 лет и более ранних версий.|
 |взрослые|8,5|Подходит только для взрослых|
+
 
 
 

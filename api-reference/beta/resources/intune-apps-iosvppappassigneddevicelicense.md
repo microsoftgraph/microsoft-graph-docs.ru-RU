@@ -4,12 +4,12 @@ description: Назначение лицензии на устройство д�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56e41bdabc8b6585fe5b003d28eaa4259046f662
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d9fec5bb85486d5bc73835e1b0b855c76da72994
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174624"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784749"
 ---
 # <a name="iosvppappassigneddevicelicense-resource-type"></a>Тип ресурса Иосвппаппассигнеддевицелиценсе
 
@@ -34,11 +34,11 @@ ms.locfileid: "30174624"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|id|Строка|Ключ объекта. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |Усеремаиладдресс|String|Адрес электронной почты пользователя. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userId|String|Идентификатор пользователя. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |userName|String|Имя пользователя. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
-|userPrincipalName|Строка|Имя участника-пользователя. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
+|userPrincipalName|String|Имя участника-пользователя. НаСледуется от [иосвппаппассигнедлиценсе](../resources/intune-apps-iosvppappassignedlicense.md)|
 |Манажеддевицеид|String|Идентификатор управляемого устройства.|
 |deviceName|String|Имя устройства.|
 
@@ -65,6 +65,7 @@ ms.locfileid: "30174624"
   "deviceName": "String"
 }
 ```
+
 
 
 

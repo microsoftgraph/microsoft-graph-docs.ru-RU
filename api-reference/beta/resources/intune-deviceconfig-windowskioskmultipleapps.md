@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c657300cf3ca00482b85b7983f28b4df3135c97d
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 8cae99ce452cdb9b002ebe4fe24968ec368c9fc0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570845"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783439"
 ---
 # <a name="windowskioskmultipleapps-resource-type"></a>Тип ресурса windowsKioskMultipleApps
 
@@ -62,6 +62,7 @@ ms.locfileid: "30570845"
   "startMenuLayoutXml": "binary"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Рест
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb1c4160a963a91e957a0cc9615d8b90a7236eaa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4f9e5639293153e308965f22676d3c346b5a65b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971320"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782466"
 ---
 # <a name="get-restrictedappsviolation"></a>Получение Рестриктедаппсвиолатион
 
@@ -88,6 +88,7 @@ Content-Length: 664
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Допустимые значения владельца устро
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 529359a0227c208f0904e8bd84408208329f52a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ceaa8ee43139ab662c0d30a7b0b1d0d917dc1759
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141134"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782739"
 ---
 # <a name="androiddeviceownerbatterypluggedmode-enum-type"></a>тип перечисления Андроиддевицеовнербаттериплугжедмоде
 
@@ -23,9 +23,10 @@ ms.locfileid: "30141134"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен; Это значение игнорируется.|
-|питания|1,1|Источник питания является подзарядом сети ПЕРЕМЕНного тока.|
+|ac|1,1|Источник питания является подзарядом сети ПЕРЕМЕНного тока.|
 |Порт|2|Источник электроСети — USB-порт.|
 |инфракрас|4|Источник энергоПотребления беспроводной сети.|
+
 
 
 

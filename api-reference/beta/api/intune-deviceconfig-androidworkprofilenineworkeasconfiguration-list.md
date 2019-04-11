@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Анд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47266e115eeee1b40f852ba82d8e9bcb4d0cd528
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6d9d26398b68e102a0051ce682def615007d100b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985391"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782732"
 ---
 # <a name="list-androidworkprofilenineworkeasconfigurations"></a>Список Андроидворкпрофилениневоркеасконфигуратионс
 
@@ -92,6 +92,7 @@ Content-Length: 855
   ]
 }
 ```
+
 
 
 

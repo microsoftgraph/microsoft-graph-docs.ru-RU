@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Секу
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fb7d60b37d0e9b8c916e44308414ae32062fd685
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 7761d58bea30d565648a676506072e00b965ba1e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522386"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783768"
 ---
 # <a name="get-securitybaselinestate"></a>Получение Секуритибаселинестате
 
@@ -20,7 +20,7 @@ ms.locfileid: "31522386"
 Чтение свойств и связей объекта [секуритибаселинестате](../resources/intune-deviceintent-securitybaselinestate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|

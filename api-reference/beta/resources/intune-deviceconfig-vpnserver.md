@@ -4,12 +4,12 @@ description: Определение VPN-сервера.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9dd09e7ab0280120dd207424a862696ba087e20c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0bf45848059f7cbd74b408b4074b0ebc5c31b4e5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170464"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782837"
 ---
 # <a name="vpnserver-resource-type"></a>Тип ресурса Vpnserver.
 
@@ -24,7 +24,7 @@ ms.locfileid: "30170464"
 |:---|:---|:---|
 |description|String|Описание.|
 |address|String|Адрес (IP-адрес, полное ДОМЕНное имя или URL-адрес)|
-|Исдефаултсервер|Логический|Сервер по умолчанию.|
+|Исдефаултсервер|Boolean|Сервер по умолчанию.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -44,6 +44,7 @@ ms.locfileid: "30170464"
   "isDefaultServer": true
 }
 ```
+
 
 
 

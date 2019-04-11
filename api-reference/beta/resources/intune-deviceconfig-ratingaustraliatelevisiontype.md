@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a223f19a0360f9fef851bcd1576187a2f5a7f58e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4a65d8b272e99a3a8432214b3ac51916bc6e9f50
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139391"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784051"
 ---
 # <a name="ratingaustraliatelevisiontype-enum-type"></a>тип перечисления Ратингаустралиателевисионтипе
 
@@ -26,11 +26,12 @@ ms.locfileid: "30139391"
 |Аллблоккед|1,1|Не разрешать показ контента|
 |учебные заведения|2|Классификация P предназначена для учебных заведений|
 |children|4|Классификация C предназначена для дочерних элементов в 14|
-|обобщен|4|Классификация G подходит для всех возраста|
+|обобщен|SP4|Классификация G подходит для всех возраста|
 |Паренталгуиданце|17:00|Классификация PG рекомендуется для зрителей|
-|обнаружен|6|Для зрителей рекомендуется использовать классификацию M более 15|
-|agesAbove15|7|MA15 + Classification не подходит для зрителей в течение 15|
+|обнаружен|ICMPv6|Для зрителей рекомендуется использовать классификацию M более 15|
+|agesAbove15|см|MA15 + Classification не подходит для зрителей в течение 15|
 |agesAbove15AdultViolence|8,5|AV15 + Classification не подходит для зрителей в масштабе 15, взрослого только для насилия|
+
 
 
 

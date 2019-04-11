@@ -4,12 +4,12 @@ description: Метки оценок фильмов в Японии
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f327bd9c3623cbe768e7a87ba8af416ae9b0e4e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3bc6d1f12d9a7eec2a2f88d483670d34cabe1349
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147644"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31783278"
 ---
 # <a name="ratingjapanmoviestype-enum-type"></a>тип перечисления Ратингжапанмовиестипе
 
@@ -26,8 +26,9 @@ ms.locfileid: "30147644"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|Подходит для всех возраста|
 |Паренталгуиданце|4|Классификация стр – 12 запрашивает разрешения родителей для пользователей в течение 12|
-|agesAbove15|4|R15 + Classification подходит для зрителей от 15 или более ранних версий|
+|agesAbove15|SP4|R15 + Classification подходит для зрителей от 15 или более ранних версий|
 |agesAbove18|17:00|R18 + Classification подходит для зрителей от 18 лет и старше|
+
 
 
 

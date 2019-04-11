@@ -4,12 +4,12 @@ description: Удаляет экземпляр iosDeviceFeaturesConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4274e91f0690b6cc9b00cafd48eca038878b7b6c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: beb37f2ccdf282dbbb754c3c29324a60d7114cce
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974099"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782585"
 ---
 # <a name="delete-iosdevicefeaturesconfiguration"></a>Удаление объекта iosDeviceFeaturesConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

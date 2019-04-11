@@ -4,12 +4,12 @@ description: Сертификат push-уведомлений Apple
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c1bf303a3d0acee799819177bfca4b186a69ee3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6513e088c07fcc8d3b98b90a52d8d98f9df4a74c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154959"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784525"
 ---
 # <a name="applepushnotificationcertificate-resource-type"></a>Тип ресурса applePushNotificationCertificate
 
@@ -29,7 +29,7 @@ ms.locfileid: "30154959"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор сертификата|
+|id|String|Уникальный идентификатор сертификата|
 |appleIdentifier|String|Идентификатор Apple Id учетной записи, используемой для создания MDM Push Certificate.|
 |topicIdentifier|String|Идентификатор темы.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата push-уведомлений Apple.|
@@ -38,7 +38,7 @@ ms.locfileid: "30154959"
 |Цертификатеуплоадфаилуререасон|String|Причина сбоя отправки сертификата.|
 |certificate|String|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -62,6 +62,7 @@ ms.locfileid: "30154959"
   "certificate": "String"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Поддерживаемые бинарные операторы д
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143808"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784707"
 ---
 # <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a>тип перечисления Бинариманажементкондитионекспрессионоператортипе
 
@@ -24,6 +24,7 @@ ms.locfileid: "30143808"
 |:---|:---|:---|
 |или|нуль|Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.|
 |и|1,1|Оценивает набор операндов как true, если все его операнды имеют значение true.|
+
 
 
 

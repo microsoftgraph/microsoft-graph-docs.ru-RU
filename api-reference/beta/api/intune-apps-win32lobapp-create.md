@@ -4,12 +4,12 @@ description: Создание нового объекта win32LobApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a945b6118c016cfa93cd1ea87958718f60bd2ea4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9b4249ff5579ea29ca7c756956f6260df079a3a6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958545"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784819"
 ---
 # <a name="create-win32lobapp"></a>Создание win32LobApp
 
@@ -66,7 +66,8 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -79,6 +80,7 @@ POST /deviceAppManagement/mobileApps
 |Минимумнумберофпроцессорс|Int32|Значение минимального числа процессоров, необходимое для установки этого приложения.|
 |Минимумкпуспидинмхз|Int32|Значение минимальной скорости ЦП, необходимое для установки этого приложения.|
 |Детектионрулес|Коллекция [win32LobAppDetection](../resources/intune-apps-win32lobappdetection.md)|Правила обнаружения для определения бизнес-приложения Win32 (LoB).|
+|Рекуирементрулес|Коллекция [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|Правила требований для обнаружения бизнес-приложения Win32.|
 |Инсталлекспериенце|[win32LobAppInstallExperience](../resources/intune-apps-win32lobappinstallexperience.md)|Установка приложения.|
 |Ретурнкодес|Коллекция [win32LobAppReturnCode](../resources/intune-apps-win32lobappreturncode.md)|Коды возврата для поведения после установки.|
 |Мсиинформатион|[win32LobAppMsiInformation](../resources/intune-apps-win32lobappmsiinformation.md)|Сведения о MSI, если это приложение Win32 является приложением MSI.|
@@ -96,7 +98,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2364
+Content-length: 2732
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -120,6 +122,7 @@ Content-length: 2364
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -149,6 +152,17 @@ Content-length: 2364
       "detectionType": "exists",
       "operator": "equal",
       "detectionValue": "Detection Value value"
+    }
+  ],
+  "requirementRules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+      "operator": "equal",
+      "detectionValue": "Detection Value value",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "detectionType": "exists"
     }
   ],
   "installExperience": {
@@ -181,7 +195,7 @@ Content-length: 2364
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2536
+Content-Length: 2904
 
 {
   "@odata.type": "#microsoft.graph.win32LobApp",
@@ -208,6 +222,7 @@ Content-Length: 2536
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -239,6 +254,17 @@ Content-Length: 2536
       "detectionValue": "Detection Value value"
     }
   ],
+  "requirementRules": [
+    {
+      "@odata.type": "microsoft.graph.win32LobAppRegistryRequirement",
+      "operator": "equal",
+      "detectionValue": "Detection Value value",
+      "check32BitOn64System": true,
+      "keyPath": "Key Path value",
+      "valueName": "Value Name value",
+      "detectionType": "exists"
+    }
+  ],
   "installExperience": {
     "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
     "runAsAccount": "user"
@@ -263,6 +289,7 @@ Content-Length: 2536
   "setupFilePath": "Setup File Path value"
 }
 ```
+
 
 
 

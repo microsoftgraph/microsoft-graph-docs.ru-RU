@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсаутопилотсинкстатус
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9f41444f1b101c1e3f7b219e917a53aa95c9d46
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6fa6a896644e83be4acd55755baad9b9494ffee3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161385"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782473"
 ---
 # <a name="windowsautopilotsyncstatus-enum-type"></a>тип перечисления Виндовсаутопилотсинкстатус
 
@@ -17,7 +17,7 @@ ms.locfileid: "30161385"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
@@ -25,7 +25,8 @@ ms.locfileid: "30161385"
 |unknown|нуль|НеИзвестное состояние синхронизации|
 |inProgress|1,1|Выполняется синхронизация|
 |готовы|2|Синхронизация завершена.|
-|failed|4|Ошибка синхронизации.|
+|сбоев|4|Ошибка синхронизации.|
+
 
 
 

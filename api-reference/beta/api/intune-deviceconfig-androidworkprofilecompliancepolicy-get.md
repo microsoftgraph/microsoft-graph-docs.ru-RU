@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта androidW
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a15ee1f91319259588d65888563ac940ab28d57b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bae35f74751e08211c1c943efa4690fbb6ae4b5b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988079"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782361"
 ---
 # <a name="get-androidworkprofilecompliancepolicy"></a>Получение androidWorkProfileCompliancePolicy
 
@@ -104,6 +104,7 @@ Content-Length: 1542
   }
 }
 ```
+
 
 
 

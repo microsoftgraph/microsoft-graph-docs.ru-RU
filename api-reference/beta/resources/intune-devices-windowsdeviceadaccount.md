@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windowsDeviceADAccount
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9120c7722f62924e4a4ad407b3aac2ba4064b358
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5e0fc671703d9d68b908ec6ffa9ea3b1ce558a65
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140427"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784037"
 ---
 # <a name="windowsdeviceadaccount-resource-type"></a>Тип ресурса windowsDeviceADAccount
 
@@ -17,19 +17,19 @@ ms.locfileid: "30140427"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 
-Наследуется от [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
+Наследуется от ресурса [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |password|Строка|Н/Д. Наследуется от [windowsDeviceAccount](../resources/intune-devices-windowsdeviceaccount.md)|
 |domainName|String|Н/Д|
-|userName|String|Н/Д|
+|userName|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -47,6 +47,7 @@ ms.locfileid: "30140427"
   "userName": "String"
 }
 ```
+
 
 
 
