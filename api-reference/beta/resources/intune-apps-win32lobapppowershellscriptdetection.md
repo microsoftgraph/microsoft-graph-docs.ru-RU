@@ -4,12 +4,12 @@ description: Содержит свойства скрипта PowerShell для 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fa5452fd9e73aef846d0b6de86a2b84e2c42ba26
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ca55a55ea17dcd032204dcb786ea07a9801f4674
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168525"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785645"
 ---
 # <a name="win32lobapppowershellscriptdetection-resource-type"></a>Тип ресурса win32LobAppPowerShellScriptDetection
 
@@ -25,8 +25,8 @@ ms.locfileid: "30168525"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Свойства enforcesignaturecheck|Логический|Значение, указывающее, применяется ли проверка подписи|
-|runAs32Bit|Логический|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
+|Свойства enforcesignaturecheck|Boolean|Значение, указывающее, применяется ли проверка подписи|
+|runAs32Bit|Boolean|Значение, указывающее, должен ли этот скрипт выполняться как 32 бит|
 |Скриптконтент|String|Содержимое скрипта в кодировке Base64 для обнаружения бизнес-приложения Win32|
 
 ## <a name="relationships"></a>Отношения
@@ -47,6 +47,7 @@ ms.locfileid: "30168525"
   "scriptContent": "String"
 }
 ```
+
 
 
 

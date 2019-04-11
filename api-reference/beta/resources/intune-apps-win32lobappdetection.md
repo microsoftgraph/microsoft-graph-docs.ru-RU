@@ -4,12 +4,12 @@ description: Базовый класс для обнаружения прило�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01dd31307cacce3a2123516d21e9667ca22e5861
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 88a7e0d332def91fb9308058a48e9ba30c0cfa81
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172529"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787542"
 ---
 # <a name="win32lobappdetection-resource-type"></a>Тип ресурса win32LobAppDetection
 
@@ -23,7 +23,7 @@ ms.locfileid: "30172529"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "30172529"
   "@odata.type": "#microsoft.graph.win32LobAppDetection"
 }
 ```
+
 
 
 

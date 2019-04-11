@@ -4,12 +4,12 @@ description: Создание нового объекта Депиосенрол
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 446fccbcba1563f17e9de349386544e907b34140
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 84ef44ead42bff541510fec435e9178db7ba2e5e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963725"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787269"
 ---
 # <a name="create-depiosenrollmentprofile"></a>Создание Депиосенроллментпрофиле
 
@@ -75,7 +75,8 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 |Диагностиксдисаблед|Boolean|Указывает, является ли область настройки диагностики неактивной, наСледуемой от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Дисплайтонесетупдисаблед|Boolean|Указывает, отключен ли экран установки дисплайтоне от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Приваципанедисаблед|Boolean|Указывает, отключен ли экран конфиденциальности, унаследованный от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|iTunesPairingMode.|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
+|Девиценаметемплате|String|Задает шаблон литерала или имени. НаСледуется от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
 |Манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
 |Ресторефромандроиддисаблед|Boolean|Указывает, отключено ли восстановление из Android|
 |Аваитдевицеконфигуредконфирматион|Boolean|Указывает, должно ли устройство ждать настройки подтверждения.|
@@ -103,7 +104,7 @@ POST /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollment
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentProfiles
 Content-type: application/json
-Content-length: 1736
+Content-length: 1791
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -131,6 +132,7 @@ Content-length: 1736
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "Device Name Template value",
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -160,7 +162,7 @@ Content-length: 1736
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1785
+Content-Length: 1840
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -189,6 +191,7 @@ Content-Length: 1785
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "Device Name Template value",
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -212,6 +215,7 @@ Content-Length: 1785
   "watchMigrationScreenDisabled": true
 }
 ```
+
 
 
 

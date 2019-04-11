@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d186659ff2e67217c8d4c6f3b449925907822a11
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a9f5360f625a9e53513752133ca619d297a1dd82
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172466"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785400"
 ---
 # <a name="ratingirelandtelevisiontype-enum-type"></a>тип перечисления Ратингиреландтелевисионтипе
 
@@ -26,9 +26,10 @@ ms.locfileid: "30172466"
 |Аллблоккед|1,1|Не разрешать показ контента|
 |обобщен|2|Классификация "GA" подходит для всех аудиторий|
 |children|4|Классификация CH подходит для дочерних элементов|
-|Йоунгадултс|4|Классификация я подходит для аудитории тинаже|
+|Йоунгадултс|SP4|Классификация я подходит для аудитории тинаже|
 |Паренталсупервисион|17:00|Классификация PS предлагает родителям и хранителям учитывать доступ детей к ограничениям|
-|обнаружен|6|Классификация MA подходит для взрослых.|
+|обнаружен|ICMPv6|Классификация MA подходит для взрослых.|
+
 
 
 

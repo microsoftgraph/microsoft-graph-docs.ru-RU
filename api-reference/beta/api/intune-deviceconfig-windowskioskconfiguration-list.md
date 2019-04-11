@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 77b4a681d3436b2c1870daf59eafe0f2ec45f1df
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fd2004fa3ecd99fac5186ca53eefc975e8a546c5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988653"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785603"
 ---
 # <a name="list-windowskioskconfigurations"></a>Список Виндовскиоскконфигуратионс
 
@@ -126,6 +126,7 @@ Content-Length: 2174
   ]
 }
 ```
+
 
 
 

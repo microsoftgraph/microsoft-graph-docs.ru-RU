@@ -4,12 +4,12 @@ description: Список свойств и связей объектов androi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4618f252de905d7e784d4bce4ee96ffc524af551
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7adaa48428c24b3edbad6b74879a1814ed6d195d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958279"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787437"
 ---
 # <a name="list-androidmanagedappregistrations"></a>Перечисление объектов androidManagedAppRegistration
 
@@ -95,6 +95,7 @@ Content-Length: 1116
   ]
 }
 ```
+
 
 
 

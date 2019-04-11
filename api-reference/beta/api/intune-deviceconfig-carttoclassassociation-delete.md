@@ -4,12 +4,12 @@ description: Удаляет объект КарттоклассассоЦиат�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 26a4932d343edc6683f7b401902e004bc22eaa4e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c5f247b4221d4cfc0df8e2c95f5db8887ac48244
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975212"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787318"
 ---
 # <a name="delete-carttoclassassociation"></a>Удаление КарттоклассассоЦиатион
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/cartToClassAssociations
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

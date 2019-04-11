@@ -4,12 +4,12 @@ description: Обновление свойств объекта depOnboardingSet
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c882957b8fb44e1df539e98dec96e2c457fe854b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4ce491760b670953ca87e7953fb0d91c3c3a12f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968240"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787878"
 ---
 # <a name="update-deponboardingsetting"></a>Обновление depOnboardingSetting
 
@@ -58,11 +58,11 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}
 |Ластсинктригжереддатетиме|DateTimeOffset|При последнем запросе синхронизации в Intune.|
 |Свойства sharetokenwithschooldatasyncservice|Boolean|Указывает, включен ли общий доступ к маркеру DEP для службы School Data Sync.|
 |Lastsyncerrorcode к объекту|Int32|Код ошибки, полученный от Apple во время последней синхронизации DEP.|
-|Токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md);|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
+|Токентипе|[depTokenType](../resources/intune-enrollment-deptokentype.md)|Получает или задает тип токена DEP. Возможные значения: `none`, `dep`, `appleSchoolManager`.|
 |Токеннаме|String|Понятное имя для токена DEP|
 |Синцеддевицекаунт|Int32|Получает число синхронизированных устройств|
 |dataSharingConsentGranted|Boolean|Разрешение, предоставленное для предоставления общего доступа к данным с помощью службы Apple DEP|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -122,6 +122,7 @@ Content-Length: 689
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта managedA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c1d8b6e98dbe23c0877232783a6c2a1212e4643
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0e5038f2a2b12c038033be83833d230d65c35d7c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986994"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785561"
 ---
 # <a name="get-managedappstatusraw"></a>Get managedAppStatusRaw
 
@@ -79,6 +79,7 @@ Content-Length: 279
   }
 }
 ```
+
 
 
 

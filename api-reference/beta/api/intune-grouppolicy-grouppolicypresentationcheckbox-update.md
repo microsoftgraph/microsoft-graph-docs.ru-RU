@@ -4,12 +4,12 @@ description: Обновление свойств объекта Грауппол
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 92f5af7496dda48aced995e33e077be7fa6ff5f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a00c21cf6fdd177432b5aa5a28e4e816a3b9ffea
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962395"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787591"
 ---
 # <a name="update-grouppolicypresentationcheckbox"></a>Обновление Граупполиципресентатиончеккбокс
 
@@ -92,6 +92,7 @@ Content-Length: 240
   "defaultChecked": true
 }
 ```
+
 
 
 

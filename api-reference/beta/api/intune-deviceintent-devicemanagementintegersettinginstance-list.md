@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Дев
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c91b2559b16fac3d7e276d1b2cf5dbcd467ddc9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 584644a3bf88824a0f6533c2463cfc75b13a59d2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524276"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787500"
 ---
 # <a name="list-devicemanagementintegersettinginstances"></a>Список Девицеманажементинтежерсеттингинстанцес
 
@@ -79,8 +79,6 @@ Content-Length: 275
   ]
 }
 ```
-
-
 
 
 

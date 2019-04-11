@@ -4,12 +4,12 @@ description: Универсальное состояние видимости.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b89256c1e483e8ef0e8c3da9762c46449f09056
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b3dbca7dedfb1bebb114334f6cb5b62fd80f9a2a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163359"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786051"
 ---
 # <a name="visibilitysetting-enum-type"></a>тип перечисления Висибилитисеттинг
 
@@ -25,6 +25,7 @@ ms.locfileid: "30163359"
 |notConfigured|нуль|Не настроен.|
 |скрытых|1,1|Скрытых.|
 |отобразит|2|Отобразит.|
+
 
 
 

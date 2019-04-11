@@ -4,12 +4,12 @@ description: Определение плавающей запятой парам
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b4d1b1e4c2c02711d341f70bba28067489c3b817
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 506a005994e19e4eabef1a4fda951075f4ce8743
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166810"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786184"
 ---
 # <a name="omasettingfloatingpoint-resource-type"></a>Тип ресурса omaSettingFloatingPoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "30166810"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Single|Значение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "30166810"
   "value": "<Unknown Primitive Type Edm.Single>"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Ембеддед
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 03b9a29afd8e32e1a79ee1f363f2fc0d25623f0e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: dc2b5cbe9051e44ef68d62aa60fd67eb8b6a4597
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971509"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786982"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Обновление Ембеддедсимактиватионкодепулассигнмент
 
@@ -90,6 +90,7 @@ Content-Length: 228
   }
 }
 ```
+
 
 
 

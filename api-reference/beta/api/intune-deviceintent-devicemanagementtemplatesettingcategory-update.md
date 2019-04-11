@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33207396758c8102b0806b55bdcb2fb997c17338
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 39a7612804d2e3834376873afb95c0937b66dc4a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522715"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789264"
 ---
 # <a name="update-devicemanagementtemplatesettingcategory"></a>Обновление Девицеманажементтемплатесеттингкатегори
 
@@ -86,8 +86,6 @@ Content-Length: 170
   "displayName": "Display Name value"
 }
 ```
-
-
 
 
 

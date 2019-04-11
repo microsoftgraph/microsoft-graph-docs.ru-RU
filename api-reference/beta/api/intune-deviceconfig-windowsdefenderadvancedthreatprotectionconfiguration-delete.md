@@ -4,12 +4,12 @@ description: Удаляет объект windowsDefenderAdvancedThreatProtection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4bbf70829e94efefeaf11285111373f0738f4290
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ce68b7de135f514648eb68076468bc3892eaaf3d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967995"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785498"
 ---
 # <a name="delete-windowsdefenderadvancedthreatprotectionconfiguration"></a>Удаление объекта windowsDefenderAdvancedThreatProtectionConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

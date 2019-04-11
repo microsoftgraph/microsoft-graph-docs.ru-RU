@@ -4,12 +4,12 @@ description: Обновление свойств объекта Секурити
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3295cb35fbc9002f458a60d6f1b78a2ef380126b
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: c65f3c49159f6025ae32ee9a12c7acc395742509
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524584"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787745"
 ---
 # <a name="update-securitybaselinesettingstate"></a>Обновление Секуритибаселинесеттингстате
 
@@ -20,7 +20,7 @@ ms.locfileid: "31524584"
 Обновление свойств объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .
 
 ## <a name="prerequisites"></a>Необходимые компоненты
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/concepts/permissions-reference.md).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
@@ -52,7 +52,7 @@ PATCH /deviceManagement/managedDevices/{managedDeviceId}/securityBaselineStates/
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта|
 |settingName|String|Имя параметра, о котором сообщается|
-|state|[Секуритибаселинекомплианцестате](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия параметру базового уровня безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия параметру базового уровня безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |Сеттингкатегорид|String|Идентификатор категории параметров, к которой относится этот параметр|
 
 

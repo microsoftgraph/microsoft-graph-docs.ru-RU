@@ -4,12 +4,12 @@ description: Действие подключения к VPN-требованию
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6466031c4d913e7ab5679579c284d91ae64c5fa3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08e39402a0ab6211c3feec53cf325530ea216c85
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154168"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789180"
 ---
 # <a name="vpnondemandruleconnectionaction-enum-type"></a>тип перечисления Впнондемандрулеконнектионактион
 
@@ -26,6 +26,7 @@ ms.locfileid: "30154168"
 |Евалуатеконнектион|1,1|Оценка подключения.|
 |пропуск|2|Пропуск.|
 |disconnect|4|Соединять.|
+
 
 
 

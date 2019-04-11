@@ -4,12 +4,12 @@ description: Удаляет объект iosEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70203d692ae98ff43469ea0d1aea8db6df58f30c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 38796bcd7e379cae0ddac5ec17f00a290c3091f1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967379"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788865"
 ---
 # <a name="delete-iosenterprisewificonfiguration"></a>Удаление iosEnterpriseWiFiConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Андр
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c1226237d7d07aef3bda7ab000c895c26a6e2c25
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fd2712e878a313cbd2083ac50b5a7bfc7cda68dc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989276"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784987"
 ---
 # <a name="get-androidworkprofilenineworkeasconfiguration"></a>Получение Андроидворкпрофилениневоркеасконфигуратион
 
@@ -94,6 +94,7 @@ Content-Length: 801
   }
 }
 ```
+
 
 
 

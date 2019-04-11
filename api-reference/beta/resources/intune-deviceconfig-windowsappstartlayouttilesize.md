@@ -4,12 +4,12 @@ description: Размер плитки приложения Windows в маке�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fdb4f09d8e9cec666c1b89aabe987891e093500c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 498cb8f38eeb4f4223655156e2d6ef5f178140a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173943"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785750"
 ---
 # <a name="windowsappstartlayouttilesize-enum-type"></a>тип перечисления Виндовсаппстартлайауттилесизе
 
@@ -22,11 +22,12 @@ ms.locfileid: "30173943"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|hidden|нуль|Скрытый.|
+|hidden|нуль|Скрыто.|
 |small|1,1|Малый 1x1.|
 |medium|2|Средний 2x2.|
 |уровне|4|Широкие 4x2.|
-|large|4|Большой 4x4.|
+|large|SP4|Большой 4x4.|
+
 
 
 

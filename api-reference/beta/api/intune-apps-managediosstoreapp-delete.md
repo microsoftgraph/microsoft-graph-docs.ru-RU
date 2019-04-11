@@ -4,12 +4,12 @@ description: Удаляет объект managedIOSStoreApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e7c45821814c4aefdecf0144a6b684e9400cd4ec
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c40d9bfe3cd8a786948c4687f000731a9d10e7df
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979195"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788305"
 ---
 # <a name="delete-managediosstoreapp"></a>Delete managedIOSStoreApp
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAp
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

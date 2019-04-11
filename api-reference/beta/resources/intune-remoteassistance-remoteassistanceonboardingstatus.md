@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Ремотеассистанцеонбоардингстатус
-description: Н/Д
+description: Текущее состояние соединителя TeamViewer Connector
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ed4e99b41df0a66389d56ae7160d6395b78d7bcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 23490e61f4134b723cfc066043f132c44c295019
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163072"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787899"
 ---
 # <a name="remoteassistanceonboardingstatus-enum-type"></a>тип перечисления Ремотеассистанцеонбоардингстатус
 
@@ -17,14 +17,15 @@ ms.locfileid: "30163072"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Текущее состояние соединителя TeamViewer Connector
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотонбоардед|нуль|Н/Д|
-|входящей миграции|1,1|Н/Д|
-|подключены|2|Н/Д|
+|Нотонбоардед|нуль|Состояние, указанное при отсутствии активного соединителя TeamViewer Connector, настроенного или активного|
+|входящей миграции|1,1|Сведения о состоянии, когда система инициировала подключение TeamViewer, но служба еще не выполнила подтверждение соединителя|
+|подключены|2|Состояние, полученное в отчете, когда система успешно выполнила обмен сведениями об учетной записи с TeamViewer, и теперь может инициировать сеансы удаленного помощника с клиентами|
+
 
 
 

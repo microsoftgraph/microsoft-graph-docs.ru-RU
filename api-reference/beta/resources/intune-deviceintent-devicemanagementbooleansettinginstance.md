@@ -4,12 +4,12 @@ description: Экземпляр параметра, представляющий
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d1c300641ea50118b667d5c33c6f688dcaf55c2d
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: ff746cc368ba3048075ce795f514709ad2866bee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522512"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787241"
 ---
 # <a name="devicemanagementbooleansettinginstance-resource-type"></a>Тип ресурса Девицеманажементбулеансеттингинстанце
 
@@ -26,10 +26,10 @@ ms.locfileid: "31522512"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицеманажементбулеансеттингинстанцес](../api/intune-deviceintent-devicemanagementbooleansettinginstance-list.md)|Коллекция [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Список свойств и связей объектов [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
-|[Получение Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md)|[Девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Чтение свойств и связей объекта [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
-|[Создание Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-create.md)|[Девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Создание нового объекта [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
+|[Получение Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-get.md)|[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Чтение свойств и связей объекта [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
+|[Создание Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-create.md)|[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Создание нового объекта [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
 |[Удаление Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-delete.md)|Нет|Удаляет объект [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md).|
-|[Обновление Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-update.md)|[Девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Обновление свойств объекта [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
+|[Обновление Девицеманажементбулеансеттингинстанце](../api/intune-deviceintent-devicemanagementbooleansettinginstance-update.md)|[deviceManagementBooleanSettingInstance](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md)|Обновление свойств объекта [девицеманажементбулеансеттингинстанце](../resources/intune-deviceintent-devicemanagementbooleansettinginstance.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -59,8 +59,6 @@ ms.locfileid: "31522512"
   "value": true
 }
 ```
-
-
 
 
 

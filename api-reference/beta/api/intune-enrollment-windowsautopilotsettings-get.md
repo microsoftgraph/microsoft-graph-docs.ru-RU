@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windowsA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 88c439dfaf574f216e403d0485bbd0c73baddf6c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0c45927ebe96fc8d00bf6d32181225dfc59f1041
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959721"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788711"
 ---
 # <a name="get-windowsautopilotsettings"></a>Получение windowsAutopilotSettings
 
@@ -77,6 +77,7 @@ Content-Length: 308
   }
 }
 ```
+
 
 
 

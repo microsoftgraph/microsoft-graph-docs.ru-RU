@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bf396f4f919a332bf104305e7cc2e99f5a54d857
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d803ac7a3f6525b0ea947b5739c1434100a4f8a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961772"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785526"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Обновление deviceConfigurationGroupAssignment
 
@@ -97,6 +97,7 @@ Content-Length: 195
   "excludeGroup": true
 }
 ```
+
 
 
 

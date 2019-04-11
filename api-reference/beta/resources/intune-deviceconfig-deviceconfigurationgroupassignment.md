@@ -4,12 +4,12 @@ description: Назначение группы конфигурации устр
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2daa30edbfecc73fcc8daee766b1aae723110e59
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1805cb29e8920876d8a340c9379d7b3200c4c779
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172382"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789166"
 ---
 # <a name="deviceconfigurationgroupassignment-resource-type"></a>Тип ресурса deviceConfigurationGroupAssignment
 
@@ -33,12 +33,12 @@ ms.locfileid: "30172382"
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |Таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
-|excludeGroup|Логический|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
+|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md);|Ссылка навигации на целевую конфигурацию устройства.|
+|deviceConfiguration|[deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|Ссылка навигации на целевую конфигурацию устройства.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -56,6 +56,7 @@ ms.locfileid: "30172382"
   "excludeGroup": true
 }
 ```
+
 
 
 

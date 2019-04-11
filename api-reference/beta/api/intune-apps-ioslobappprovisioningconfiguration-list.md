@@ -4,12 +4,12 @@ description: Список свойств и связей объектов iosLob
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3e9a82886a8d16634572d1f64172d7cee5fff9e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 22281180565034c35425c81430325ec55a21cca5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984942"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787024"
 ---
 # <a name="list-ioslobappprovisioningconfigurations"></a>Список iosLobAppProvisioningConfigurations
 
@@ -84,6 +84,7 @@ Content-Length: 632
   ]
 }
 ```
+
 
 
 

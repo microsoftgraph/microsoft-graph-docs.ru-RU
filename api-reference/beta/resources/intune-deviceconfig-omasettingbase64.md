@@ -4,12 +4,12 @@ description: Определение параметров OMA в кодировк
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f6eae88e7158d5fd8d09caadda9fee6778182a9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 33488e3b6500056c0f183d5e219e5f5ec489c178
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166649"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787073"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -31,7 +31,7 @@ ms.locfileid: "30166649"
 |fileName|String|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
 |value|Строка|Значение (строка в кодировке Base64).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "30166649"
   "value": "String"
 }
 ```
+
 
 
 

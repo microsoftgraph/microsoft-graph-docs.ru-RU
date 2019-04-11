@@ -4,12 +4,12 @@ description: Параметры импорта PFX.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9e4933386599e7d99494d2972734653569854e89
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 831a0137e7aac53d26e51e30d867ef99996f56b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150598"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789110"
 ---
 # <a name="intendedpurpose-enum-type"></a>тип перечисления intendedPurpose
 
@@ -25,8 +25,9 @@ ms.locfileid: "30150598"
 |неназначенных|1,1|Неназначенных|
 |Смиминкриптион|2|Смиминкриптион|
 |Смимесигнинг|4|Смимесигнинг|
-|виртуального|4|ВИРТУАЛЬНОГО|
+|виртуального|SP4|VPN;|
 |подключений|17:00|Подключений|
+
 
 
 

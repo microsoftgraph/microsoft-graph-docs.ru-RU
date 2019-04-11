@@ -4,12 +4,12 @@ description: Обновление свойств объекта depEnrollmentPro
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 70690403a2c7d2855ce94ac0c58f99d214a7bf7f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 40384682136c84ac957ee39bec3a2b2144e7a6a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969423"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31787255"
 ---
 # <a name="update-depenrollmentprofile"></a>Обновление depEnrollmentProfile
 
@@ -64,7 +64,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmen
 |Обязательный|Boolean|Указывает, является ли профиль обязательной|
 |Локатиондисаблед|Boolean|Указывает, отключена ли область настройки службы расположения|
 |Суппортфоненумбер|String|Номер телефона службы поддержки|
-|iTunesPairingMode.|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
 |Профилеремовалдисаблед|Boolean|Указывает, отключен ли параметр удаления профиля|
 |Манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
 |Рестореблоккед|Boolean|Указывает, заблокирована ли область настроек восстановления|
@@ -185,6 +185,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

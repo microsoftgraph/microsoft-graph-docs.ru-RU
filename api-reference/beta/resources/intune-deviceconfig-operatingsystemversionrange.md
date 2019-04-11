@@ -4,12 +4,12 @@ description: Диапазон версий операционной систем
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 521f7d0b0ec4ddab728ed3b95c27acf21695b0d3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 80b0afb706a71ef8e0e3d4877fa7d0df822fe1d6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148610"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31788123"
 ---
 # <a name="operatingsystemversionrange-resource-type"></a>Тип ресурса Оператингсистемверсионранже
 
@@ -44,6 +44,7 @@ ms.locfileid: "30148610"
   "highestVersion": "String"
 }
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Манажеддевицецертификатестате
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 49ec8d739c3018a9aaace7dd0d972a1ac1c87141
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7079f2aed4425945706052f049e740cd66e73420
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164780"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31786737"
 ---
 # <a name="manageddevicecertificatestate-resource-type"></a>Тип ресурса Манажеддевицецертификатестате
 
@@ -31,7 +31,7 @@ ms.locfileid: "30164780"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |devicePlatform|[Девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Платформа устройства. Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |Цертификатекэйусаже|[Кэйусажес](../resources/intune-deviceconfig-keyusages.md)|Использование ключа. Возможные значения: `keyEncipherment`, `digitalSignature`.|
 |Цертификатевалидитипериодунитс|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Единицы срока действия. Возможные значения: `days`, `months`, `years`.|
@@ -46,7 +46,7 @@ ms.locfileid: "30164780"
 |Цертификатикспиратиондатетиме|DateTimeOffset|Дата окончания срока действия сертификата|
 |Цертификателастиссуанцестатечанжеддатетиме|DateTimeOffset|Последнее изменение состояния выдачи сертификата|
 |Ластцертификатестатечанжедатетиме|DateTimeOffset|Последнее изменение состояния выдачи сертификата|
-|Цертификатеиссуер|String|Имени|
+|Цертификатеиссуер|String|Издатель|
 |certificateThumbprint|String|Отпечаток|
 |Цертификатесериалнумбер|String|Серийный номер|
 |Цертификатекэйленгс|Int32|Длина ключа|
@@ -98,6 +98,7 @@ ms.locfileid: "30164780"
   "certificateErrorCode": 1024
 }
 ```
+
 
 
 

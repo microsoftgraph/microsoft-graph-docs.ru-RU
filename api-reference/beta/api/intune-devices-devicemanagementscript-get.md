@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта deviceMa
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3d179fd3179988e5480b82c7a074fc1512c3ac0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fa56cf17415494edbb324c1507ab3d05894c90dd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968947"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31785169"
 ---
 # <a name="get-devicemanagementscript"></a>Получение deviceManagementScript
 
@@ -89,6 +89,7 @@ Content-Length: 668
   }
 }
 ```
+
 
 
 

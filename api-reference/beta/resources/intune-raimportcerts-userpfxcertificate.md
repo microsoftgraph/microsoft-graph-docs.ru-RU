@@ -4,12 +4,12 @@ description: Объект, инкапсулирующий все сведени�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 534b2fa0f5f3240ead38deae45d3cc88091e40d8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 31a634c8c442cdbf53034b7d39062c1a3d0f5a01
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154931"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31789866"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
 
@@ -31,7 +31,7 @@ ms.locfileid: "30154931"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для сертификата PFX.|
+|id|Строка|Уникальный идентификатор для сертификата PFX.|
 |отпечаток|String|Отпечаток SHA-1 сертификата PFX.|
 |intendedPurpose|[userPfxIntendedPurpose](../resources/intune-raimportcerts-userpfxintendedpurpose.md)|Сертификат, предназначенный для целей из точки зрения развертывания. Возможные значения: `unassigned`, `smimeEncryption`, `smimeSigning`, `vpn`, `wifi`.|
 |userPrincipalName|String|Имя участника-пользователя сертификата PFX.|
@@ -74,7 +74,6 @@ ms.locfileid: "30154931"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-
 
 
 
