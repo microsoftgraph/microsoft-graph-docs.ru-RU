@@ -4,31 +4,31 @@ description: Содержит свойства интерфейса устано
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01402384c2628e1f53a854fa35097415181aaa20
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 544825542cd178d53e3aa0a9be5373f1a9f49675
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174949"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804629"
 ---
-# <a name="win32lobappinstallexperience-resource-type"></a><span data-ttu-id="48624-103">Тип ресурса win32LobAppInstallExperience</span><span class="sxs-lookup"><span data-stu-id="48624-103">win32LobAppInstallExperience resource type</span></span>
+# <a name="win32lobappinstallexperience-resource-type"></a><span data-ttu-id="ed829-103">Тип ресурса win32LobAppInstallExperience</span><span class="sxs-lookup"><span data-stu-id="ed829-103">win32LobAppInstallExperience resource type</span></span>
 
-> <span data-ttu-id="48624-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="48624-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="ed829-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ed829-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="48624-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="48624-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="ed829-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="ed829-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="48624-106">Содержит свойства интерфейса установки приложения Win32</span><span class="sxs-lookup"><span data-stu-id="48624-106">Contains installation experience properties for a Win32 App</span></span>
+<span data-ttu-id="ed829-106">Содержит свойства интерфейса установки приложения Win32</span><span class="sxs-lookup"><span data-stu-id="ed829-106">Contains installation experience properties for a Win32 App</span></span>
 
-## <a name="properties"></a><span data-ttu-id="48624-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="48624-107">Properties</span></span>
-|<span data-ttu-id="48624-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="48624-108">Property</span></span>|<span data-ttu-id="48624-109">Тип</span><span class="sxs-lookup"><span data-stu-id="48624-109">Type</span></span>|<span data-ttu-id="48624-110">Описание</span><span class="sxs-lookup"><span data-stu-id="48624-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="ed829-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ed829-107">Properties</span></span>
+|<span data-ttu-id="ed829-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="ed829-108">Property</span></span>|<span data-ttu-id="ed829-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ed829-109">Type</span></span>|<span data-ttu-id="ed829-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ed829-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="48624-111">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="48624-111">runAsAccount</span></span>|[<span data-ttu-id="48624-112">Рунасаккаунттипе</span><span class="sxs-lookup"><span data-stu-id="48624-112">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="48624-113">Указывает тип контекста выполнения, в котором работает приложение.</span><span class="sxs-lookup"><span data-stu-id="48624-113">Indicates the type of execution context the app runs in.</span></span> <span data-ttu-id="48624-114">Возможные значения: `system`, `user`.</span><span class="sxs-lookup"><span data-stu-id="48624-114">Possible values are: `system`, `user`.</span></span>|
+|<span data-ttu-id="ed829-111">runAsAccount</span><span class="sxs-lookup"><span data-stu-id="ed829-111">runAsAccount</span></span>|[<span data-ttu-id="ed829-112">Рунасаккаунттипе</span><span class="sxs-lookup"><span data-stu-id="ed829-112">runAsAccountType</span></span>](../resources/intune-shared-runasaccounttype.md)|<span data-ttu-id="ed829-113">Указывает тип контекста выполнения, в котором работает приложение.</span><span class="sxs-lookup"><span data-stu-id="ed829-113">Indicates the type of execution context the app runs in.</span></span> <span data-ttu-id="ed829-114">Возможные значения: `system`, `user`.</span><span class="sxs-lookup"><span data-stu-id="ed829-114">Possible values are: `system`, `user`.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="48624-115">Связи</span><span class="sxs-lookup"><span data-stu-id="48624-115">Relationships</span></span>
-<span data-ttu-id="48624-116">Нет</span><span class="sxs-lookup"><span data-stu-id="48624-116">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="ed829-115">Отношения</span><span class="sxs-lookup"><span data-stu-id="ed829-115">Relationships</span></span>
+<span data-ttu-id="ed829-116">Нет</span><span class="sxs-lookup"><span data-stu-id="ed829-116">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="48624-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="48624-117">JSON Representation</span></span>
-<span data-ttu-id="48624-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="48624-118">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="ed829-117">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ed829-117">JSON Representation</span></span>
+<span data-ttu-id="ed829-118">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ed829-118">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.win32LobAppInstallExperience"
@@ -40,6 +40,7 @@ ms.locfileid: "30174949"
   "runAsAccount": "String"
 }
 ```
+
 
 
 
