@@ -4,12 +4,12 @@ description: Создание объекта deviceInstallState.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa2402605f77d9d901c4941ded593e8c1d787040
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 16af56e2bf82b5e15d259229ae9a2416fa20e92c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986910"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778651"
 ---
 # <a name="create-deviceinstallstate"></a>Создание объекта deviceInstallState
 
@@ -44,7 +44,7 @@ POST /deviceAppManagement/managedEBooks/{managedEBookId}/userStateSummary/{userI
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта deviceInstallState в формате JSON.
 
 В таблице ниже приведены свойства, которые необходимо указывать при создании объекта deviceInstallState.
@@ -108,6 +108,7 @@ Content-Length: 423
   "userName": "User Name value"
 }
 ```
+
 
 
 

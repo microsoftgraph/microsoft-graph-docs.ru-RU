@@ -4,12 +4,12 @@ description: Обновление свойств объекта enrollmentTroubl
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7f5e0941987ab2d41b53085471c3842e23c73c6e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9eafa5ec230bd439e02f86bc19f13350aa35d2a8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984249"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776418"
 ---
 # <a name="update-enrollmenttroubleshootingevent"></a>Обновление enrollmentTroubleshootingEvent
 
@@ -160,7 +160,6 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

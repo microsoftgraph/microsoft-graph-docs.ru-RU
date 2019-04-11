@@ -4,12 +4,12 @@ description: Условия управления — это события, ко
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 594716867cec1dcef9e0fee87af21fb63af99df0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b10442832d08507c3d33b71dd38928bc1be895d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163107"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775249"
 ---
 # <a name="managementcondition-resource-type"></a>Тип ресурса Манажементкондитион
 
@@ -29,17 +29,17 @@ ms.locfileid: "30163107"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
+|id|Строка|Уникальный идентификатор для условия управления. Созданное системой значение, назначаемое при создании.|
 |uniqueName|String|Уникальное имя условия управления. Используется в выражениях условия управления.|
 |displayName|String|Имя условия управления, определенное администратором.|
-|description|Строка|Описание условия управления, заданное администратором.|
+|description|String|Описание условия управления, заданное администратором.|
 |createdDateTime|DateTimeOffset|Время создания условия управления. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения условия управления. Обновленная сторона службы.|
 |eTag|String|Тег ETag условия управления. Обновленная сторона службы.|
 |Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления.|
 
-## <a name="relationships"></a>Отношения
-|Связь|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |Манажементкондитионстатементс|Коллекция [манажементкондитионстатемент](../resources/intune-fencing-managementconditionstatement.md)|Операторы условия управления, связанные с условием управления.|
 
@@ -66,6 +66,7 @@ ms.locfileid: "30163107"
   ]
 }
 ```
+
 
 
 

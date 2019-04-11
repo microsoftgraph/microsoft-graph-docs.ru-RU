@@ -4,12 +4,12 @@ description: Ресурс organization представляет экземпля
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6de006bf465546fdb00769f5d3541a65a6b5580b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9806c1d263710ecaef2c04af89926e7568ad94da
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167510"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778105"
 ---
 # <a name="organization-resource-type"></a>Тип ресурса organization
 
@@ -23,8 +23,8 @@ ms.locfileid: "30167510"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список организаций](../api/intune-onboarding-organization-list.md)|Коллекция объектов [organization](../resources/intune-onboarding-organization.md)|Список свойств и связей объектов [organization](../resources/intune-onboarding-organization.md).|
-|[Получение организации](../api/intune-onboarding-organization-get.md)|[organization](../resources/intune-onboarding-organization.md)|Чтение свойств и связей объекта [organization](../resources/intune-onboarding-organization.md).|
-|[Обновление организации](../api/intune-onboarding-organization-update.md)|[organization](../resources/intune-onboarding-organization.md)|Обновление свойств объекта [organization](../resources/intune-onboarding-organization.md).|
+|[Получение организации](../api/intune-onboarding-organization-get.md)|[organization;](../resources/intune-onboarding-organization.md)|Чтение свойств и связей объекта [organization](../resources/intune-onboarding-organization.md).|
+|[Обновление организации](../api/intune-onboarding-organization-update.md)|[organization;](../resources/intune-onboarding-organization.md)|Обновление свойств объекта [organization](../resources/intune-onboarding-organization.md).|
 |[Действие setMobileDeviceManagementAuthority](../api/intune-onboarding-organization-setmobiledevicemanagementauthority.md)|Int32|Задание центра управления мобильными устройствами|
 
 ## <a name="properties"></a>Свойства
@@ -61,6 +61,7 @@ ms.locfileid: "30167510"
   }
 }
 ```
+
 
 
 

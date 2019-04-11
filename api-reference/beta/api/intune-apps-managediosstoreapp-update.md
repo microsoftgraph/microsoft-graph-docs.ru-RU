@@ -4,12 +4,12 @@ description: Обновляет свойства объекта managedIOSStoreA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9c588c0b41961aca714efc5b74f49f8421c1eb33
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 22bbf40c191926643ae343484f2db82a5883478a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984921"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775039"
 ---
 # <a name="update-managediosstoreapp"></a>Обновление managedIOSStoreApp
 
@@ -68,7 +68,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appAvailability|[Манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. НаСледуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md)|
 |bundleId|String|Идентификатор пакета приложения.|
@@ -88,7 +89,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1191
+Content-length: 1218
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -112,6 +113,7 @@ Content-length: 1191
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value",
@@ -137,7 +139,7 @@ Content-length: 1191
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1363
+Content-Length: 1390
 
 {
   "@odata.type": "#microsoft.graph.managedIOSStoreApp",
@@ -164,6 +166,7 @@ Content-Length: 1363
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "bundleId": "Bundle Id value",
@@ -183,6 +186,7 @@ Content-Length: 1363
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Значения, с помощью которых можно ог�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f0c7ffa5232333a5ddb99864cda65bf840f9b418
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ed63a6ba628eca414c865fb236c4d7b6d49f255c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177877"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775648"
 ---
 # <a name="deliveryoptimizationrestrictpeerselectionbyoptions-enum-type"></a>тип перечисления Деливерйоптимизатионрестриктпирселектионбйоптионс
 
@@ -23,7 +23,8 @@ ms.locfileid: "30177877"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|Сети|1,1|Маска подСети.|
+|Сети|1,1|Маска подсети.|
+
 
 
 

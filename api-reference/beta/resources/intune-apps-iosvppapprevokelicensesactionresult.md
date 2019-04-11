@@ -4,12 +4,12 @@ description: Определяет результаты действий в пр�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 542382411fcc1070dc0c397efbf43431081d73f7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cc9ef2e11bc4502b580bce25ffb7e94f301b8d13
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153454"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778476"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Иосвппаппревокелиценсесактионресулт
 
@@ -32,7 +32,7 @@ ms.locfileid: "30153454"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,7 @@ ms.locfileid: "30153454"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

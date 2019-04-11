@@ -4,12 +4,12 @@ description: Ресурс windowsAutopilotSettings представляет уч
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b34d6edbed5bc98989ea70186b081d5c88a1c1b6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e7882a522eb3e3adcf9ebdf24e2b8f820b0f3581
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140518"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778091"
 ---
 # <a name="windowsautopilotsettings-resource-type"></a>Тип ресурса windowsAutopilotSettings
 
@@ -24,18 +24,18 @@ ms.locfileid: "30140518"
 |:---|:---|:---|
 |[Получение windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Чтение свойств и связей объекта [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .|
 |[Обновление windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Обновление свойств объекта [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) .|
-|[Действие sync](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Нет|Н/Д|
+|[Действие синхронизации](../api/intune-enrollment-windowsautopilotsettings-sync.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|GUID объекта|
+|id|String|GUID объекта|
 |lastSyncDateTime|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |Ластмануалсинктригжердатетиме|DateTimeOffset|Дата и время последней синхронизации данных в службе DDS.|
 |syncStatus|[Виндовсаутопилотсинкстатус](../resources/intune-enrollment-windowsautopilotsyncstatus.md)|Указывает состояние синхронизации со службой синхронизации данных устройств (DDS). Возможные значения: `unknown`, `inProgress`, `completed`, `failed`.|
 
-## <a name="relationships"></a>Связи
-None
+## <a name="relationships"></a>Отношения
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -54,6 +54,7 @@ None
   "syncStatus": "String"
 }
 ```
+
 
 
 

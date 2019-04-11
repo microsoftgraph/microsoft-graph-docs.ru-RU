@@ -4,12 +4,12 @@ description: Сущность представляет неподписанно�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fd0c256b7118fcb0b378bbcd856bad949d52f1b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c4386084fff68d6db9be9106bd4da361ed1b933
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158060"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775858"
 ---
 # <a name="grouppolicypresentationvaluelongdecimal-resource-type"></a>Тип ресурса ГраупполиципресентатионвалуелонгдеЦимал
 
@@ -39,8 +39,8 @@ ms.locfileid: "30158060"
 |id|String|Ключ объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |value|Int64|Длинное значение без знака для связанной презентации.|
 
-## <a name="relationships"></a>Отношения
-|Связь|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |Дефинитионвалуе|[Граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Значение определения групповой политики, связанное со значением представления. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |демонстрации|[Граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|Представление групповой политики, связанное со значением презентации. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
@@ -62,6 +62,7 @@ ms.locfileid: "30158060"
   "value": 1024
 }
 ```
+
 
 
 

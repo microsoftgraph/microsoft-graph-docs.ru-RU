@@ -4,12 +4,12 @@ description: Параметры типа единого входа сети Wi �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54e84b884c36c39d6f33c8a8f9a7c5754c06b4d8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf818233dbb8910d5876496ff9d2d5b7b693b4c2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163982"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775417"
 ---
 # <a name="networksinglesignontype-enum-type"></a>тип перечисления Нетворксинглесигнонтипе
 
@@ -22,9 +22,10 @@ ms.locfileid: "30163982"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|активирован|нуль|Отключена|
+|активирован|нуль|Отключено|
 |Предварительный вход|1,1|Предварительный вход|
 |Вход в систему|2|После входа|
+
 
 
 

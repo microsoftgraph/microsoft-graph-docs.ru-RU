@@ -4,12 +4,12 @@ description: Нарушение профиля конфигурации огра
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8764d3d84ba0706f3769ef019def43cb080660d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 067b801d917435c1ff9d3722d078609f2c626baf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139916"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778084"
 ---
 # <a name="restrictedappsviolation-resource-type"></a>Тип ресурса Рестриктедаппсвиолатион
 
@@ -31,7 +31,7 @@ ms.locfileid: "30139916"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
+|id|String|Уникальный идентификатор объекта. Состоит из accountId, deviceId, Полициид и userId|
 |userId|String|Уникальный идентификатор пользователя, должен быть GUID|
 |userName|String|Имя пользователя|
 |Манажеддевицеид|String|Уникальный идентификатор управляемого устройства, должен быть GUID|
@@ -73,6 +73,7 @@ ms.locfileid: "30139916"
   ]
 }
 ```
+
 
 
 

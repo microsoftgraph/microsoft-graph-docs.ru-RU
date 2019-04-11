@@ -4,12 +4,12 @@ description: Доступность управляемого приложени�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e99e870ee1ee7f5fdcd4478963126a22127183e4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 62adb19851450836169469de526e4e6d85165e24
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162393"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775795"
 ---
 # <a name="managedappavailability-enum-type"></a>тип перечисления Манажедаппаваилабилити
 
@@ -24,6 +24,7 @@ ms.locfileid: "30162393"
 |:---|:---|:---|
 |глобального|нуль|Глобальное доступное приложение ко всем клиентам.|
 |Линеофбусинесс|1,1|Частные бизнес-приложения, частные для Организации.|
+
 
 
 

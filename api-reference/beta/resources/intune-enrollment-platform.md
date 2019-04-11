@@ -1,15 +1,15 @@
 ---
 title: тип перечисления платформы
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f07965ce3929a74d6596ed708cc7045437921a7a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: edb921a12ca932f5c10d22120a065fb46f2bb8d3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148176"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775747"
 ---
 # <a name="platform-enum-type"></a>тип перечисления платформы
 
@@ -17,7 +17,7 @@ ms.locfileid: "30148176"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
@@ -26,8 +26,9 @@ ms.locfileid: "30148176"
 |модуле|1,1|Платформа устройства IOS|
 |ОС|2|Платформа для устройств Android|
 |под|4|Платформа Windows для устройств|
-|Мобильные|4|Платформа устройства мобильные|
+|Мобильные|SP4|Платформа устройства мобильные|
 |macOS|17:00|Платформа для устройств Mac|
+
 
 
 

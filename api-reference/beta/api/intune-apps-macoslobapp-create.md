@@ -4,12 +4,12 @@ description: Создание нового объекта Макослобапп
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8baaccde92b22c0c69370cd0ba74574d256fc5f8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5b3ca43135218407df73fcf694fe237676bde98c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982779"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778749"
 ---
 # <a name="create-macoslobapp"></a>Создание Макослобапп
 
@@ -66,18 +66,19 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от объекта [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |size|Int64|Общий размер, включая все отправленные файлы. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |bundleId|String|Идентификатор пакета.|
-|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md);|Значение, которое представляет минимальную применимую версию операционной системы.|
+|minimumSupportedOperatingSystem|[macOSMinimumOperatingSystem](../resources/intune-apps-macosminimumoperatingsystem.md)|Значение, которое представляет минимальную применимую версию операционной системы.|
 |buildNumber|String|Номер сборки бизнес-приложения MacOS бизнес (LoB).|
 |versionNumber|String|Номер версии приложения MacOS для бизнеса (LoB).|
 |Чилдаппс|Коллекция [макослобчилдапп](../resources/intune-apps-macoslobchildapp.md)|Список приложений в этом пакете набора|
 |identityVersion|String|Версия удостоверения.|
 |md5HashChunkSize|Int32|Размер фрагмента для хеша MD5|
-|md5Hash|Коллекция строк|Хэш-коды MD5|
+|md5Hash|Коллекция String|Хэш-коды MD5|
 |ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск установленного приложения по его версии. Установите для этого параметра значение true для бизнес-приложений macOS (LoB), использующих функцию самостоятельного обновления.|
 
 
@@ -92,7 +93,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 1547
+Content-length: 1574
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -116,6 +117,7 @@ Content-length: 1547
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -154,7 +156,7 @@ Content-length: 1547
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1719
+Content-Length: 1746
 
 {
   "@odata.type": "#microsoft.graph.macOSLobApp",
@@ -181,6 +183,7 @@ Content-Length: 1719
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "committedContentVersion": "Committed Content Version value",
   "fileName": "File Name value",
   "size": 4,
@@ -213,6 +216,7 @@ Content-Length: 1719
   "ignoreVersionDetection": true
 }
 ```
+
 
 
 

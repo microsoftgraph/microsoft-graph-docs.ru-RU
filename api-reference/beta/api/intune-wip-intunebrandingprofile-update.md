@@ -4,12 +4,12 @@ description: Обновление свойств объекта Интунебр
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f8a805e8878dbd41493c550647ed9e038c320b13
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3f957966ed18003b65b164aff53b4a3d74468051
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976661"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776978"
 ---
 # <a name="update-intunebrandingprofile"></a>Обновление Интунебрандингпрофиле
 
@@ -67,9 +67,9 @@ PATCH /deviceManagement/intuneBrandingProfiles/{intuneBrandingProfileId}
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
 |showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
+|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на светлом фоне.|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md)|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
 
 
 
@@ -172,6 +172,7 @@ Content-Length: 1377
   }
 }
 ```
+
 
 
 

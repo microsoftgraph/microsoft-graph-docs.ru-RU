@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицегуардвиртуализатионбаседсекуритистате
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e05ff7e9354f8b8a5fbead8fb62369cb2e5d761
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 51def159e90b256e772138264139f2a96fbd3344
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153048"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778532"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритистате
 
@@ -17,18 +17,19 @@ ms.locfileid: "30153048"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|запускается|нуль|Запускается|
+|запускается|нуль|Запущено|
 |Ребутрекуиред|1,1|Обязательный корень|
 |require64BitArchitecture|2|необходима разрядная архитектура 64|
 |Нотлиценсед|4|Не лицензировано|
-|notConfigured|4|Не настроено|
+|notConfigured|SP4|Не настроено|
 |Доеснотмисардваререкуирементс|17:00|Система не соответствует требованиям к оборудованию|
 |остальные|42|Остальные. Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.|
+
 
 
 

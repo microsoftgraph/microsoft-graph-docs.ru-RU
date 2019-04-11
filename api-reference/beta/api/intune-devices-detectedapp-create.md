@@ -4,12 +4,12 @@ description: Создание объекта detectedApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bc12d980eb63bf3e6af065c35b73f4f6e01e9e0e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8f3d4941ba21aba9c0fcdabaccf35ff0454be91f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987197"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776922"
 ---
 # <a name="create-detectedapp"></a>Создание объекта detectedApp
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта detectedApp в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта detectedApp.
@@ -96,6 +96,7 @@ Content-Length: 216
   "deviceCount": 11
 }
 ```
+
 
 
 

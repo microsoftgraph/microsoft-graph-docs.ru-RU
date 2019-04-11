@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a8208d5f7f57727c476c2ce985edbc1b35bd07a6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 559ce622f0494727a7578b1d6f1fc17205108b66
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987715"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774976"
 ---
 # <a name="list-iosgeneraldeviceconfigurations"></a>Перечисление объектов iosGeneralDeviceConfiguration
 
@@ -324,6 +324,7 @@ Content-Length: 10318
   ]
 }
 ```
+
 
 
 

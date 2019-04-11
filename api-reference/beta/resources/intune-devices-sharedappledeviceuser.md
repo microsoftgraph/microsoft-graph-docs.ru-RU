@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Шаредаппледевицеусер
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f737432597d4528d1a682cd15552230af0ae83e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 43bc64243cb330f0761c8ded3ab646a0cde4f926
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156506"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778007"
 ---
 # <a name="sharedappledeviceuser-resource-type"></a>Тип ресурса Шаредаппледевицеусер
 
@@ -23,7 +23,7 @@ ms.locfileid: "30156506"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userPrincipalName|String|Имя пользователя|
-|Дататосинк|Логический|Данные для синхронизации|
+|Дататосинк|Boolean|Данные для синхронизации|
 |Квота|Int64|Квота данных|
 |Используется|Int64|Квота данных|
 
@@ -46,6 +46,7 @@ ms.locfileid: "30156506"
   "dataUsed": 1024
 }
 ```
+
 
 
 

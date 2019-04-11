@@ -4,12 +4,12 @@ description: Перечисление свойств и связей объек�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c7cd7f1cfc8d5274b820ecd26aa0ca4b3c75935
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b1f3d46d1cf80b9b090cc042b810f3373a295fa8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976619"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779554"
 ---
 # <a name="list-devicecompliancescheduledactionforrules"></a>List deviceComplianceScheduledActionForRules
 
@@ -74,6 +74,7 @@ Content-Length: 208
   ]
 }
 ```
+
 
 
 

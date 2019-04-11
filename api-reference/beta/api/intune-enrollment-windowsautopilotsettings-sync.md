@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e60f377eb2660b5bff56f2a34b7edf3e019e1168
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 306e95cc2d71595aae442766394d442e264504ee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985692"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778770"
 ---
 # <a name="sync-action"></a>Действие синхронизации
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotSettings/
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

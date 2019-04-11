@@ -4,12 +4,12 @@ description: Сведения о зависимостях для парамет�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31de8057be462c7c8a5ef6c6becd0c1a769a96b0
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b506ff636cf2a44b466d531f60924cd7eaa2c7b3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522358"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775550"
 ---
 # <a name="devicemanagementsettingdependency-resource-type"></a>Тип ресурса Девицеманажементсеттингдепенденци
 
@@ -46,8 +46,6 @@ ms.locfileid: "31522358"
   ]
 }
 ```
-
-
 
 
 

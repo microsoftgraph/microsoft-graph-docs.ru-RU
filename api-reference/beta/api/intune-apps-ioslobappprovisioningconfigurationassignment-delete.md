@@ -4,12 +4,12 @@ description: Удаляет объект Иослобапппровисиони�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e7d7b711b79238f0636958913a2737cd0cbdd8e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7a3f4053d4da74f8c999a5d79101eaa95700507d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968541"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776607"
 ---
 # <a name="delete-ioslobappprovisioningconfigurationassignment"></a>Удаление Иослобапппровисионингконфигуратионассигнмент
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/iosLobAppProvisionin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

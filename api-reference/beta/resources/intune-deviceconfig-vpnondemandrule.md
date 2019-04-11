@@ -4,12 +4,12 @@ description: Определение правила VPN по запросу.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b1bccd015e45291b344e7c77df4ac5c0a0af07d0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3209c91400b36adba772273cfa6768049adce448
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161588"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777657"
 ---
 # <a name="vpnondemandrule-resource-type"></a>Тип ресурса Впнондемандруле
 
@@ -22,12 +22,12 @@ ms.locfileid: "30161588"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Идентификатор|Коллекция строк|Идентификаторы набора сетевых служб (SSID).|
-|Днссеарчдомаинс|Коллекция строк|Домены поиска DNS.|
+|Идентификатор|Коллекция String|Идентификаторы набора сетевых служб (SSID).|
+|Днссеарчдомаинс|Коллекция String|Домены поиска DNS.|
 |Пробеурл|String|URL-адрес для зонда. Если этот URL-адрес успешно извлекается (возвращается код состояния HTTP 200) без перенаправления, это правило соответствует этому правилу.|
 |action|[Впнондемандрулеконнектионактион](../resources/intune-deviceconfig-vpnondemandruleconnectionaction.md)|Меры. Возможные значения: `connect`, `evaluateConnection`, `ignore`, `disconnect`.|
 |Домаинактион|[Впнондемандрулеконнектиондомаинактион](../resources/intune-deviceconfig-vpnondemandruleconnectiondomainaction.md)|Действие домена (применяется только при оценке подключения). Возможные значения: `connectIfNeeded`, `neverConnect`.|
-|домена|Коллекция строк|Домены (применяется только при оценке подключения).|
+|домена|Коллекция String|Домены (применяется только при оценке подключения).|
 |Проберекуиредурл|String|Обязательный URL-адрес для зонда (применяется только при оценке действия Connection и при необходимости Домаинактион подключается).|
 
 ## <a name="relationships"></a>Отношения
@@ -58,6 +58,7 @@ ms.locfileid: "30161588"
   "probeRequiredUrl": "String"
 }
 ```
+
 
 
 

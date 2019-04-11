@@ -4,12 +4,12 @@ description: Создание нового объекта Азуреадвинд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d2b702497fee15ce2fb0a76ac012b48cda5be1ed
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ef533a1a166fdbe2444a651e93f1f39d036d41e1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971887"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776530"
 ---
 # <a name="create-azureadwindowsautopilotdeploymentprofile"></a>Создание Азуреадвиндовсаутопилотдеплойментпрофиле
 
@@ -148,6 +148,7 @@ Content-Length: 1269
   "enableWhiteGlove": true
 }
 ```
+
 
 
 

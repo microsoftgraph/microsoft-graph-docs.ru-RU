@@ -4,12 +4,12 @@ description: В этой статье описаны объявляемые ме
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a4f034a6b35c1ae8bd8172a20c5da0ee2e818623
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: c060011097779b9893bfad5b5ba22ead129b505f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571706"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778385"
 ---
 # <a name="windows10endpointprotectionconfiguration-resource-type"></a>Тип ресурса windows10EndpointProtectionConfiguration
 
@@ -26,8 +26,8 @@ ms.locfileid: "30571706"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-list.md)|Коллекция [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|Перечисление свойств и связей объектов [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
-|[Получение объекта windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|Чтение свойств и связей объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
-|[Создание объекта windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|Создание объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
+|[Get windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-get.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|Чтение свойств и связей объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
+|[Создание windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-create.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|Создание объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
 |[Удаление объекта windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-delete.md)|Нет|Удаление объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
 |[Обновление объекта windows10EndpointProtectionConfiguration](../api/intune-deviceconfig-windows10endpointprotectionconfiguration-update.md)|[windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md)|Обновление свойств объекта [windows10EndpointProtectionConfiguration](../resources/intune-deviceconfig-windows10endpointprotectionconfiguration.md).|
 
@@ -36,7 +36,7 @@ ms.locfileid: "30571706"
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -81,9 +81,9 @@ ms.locfileid: "30571706"
 |Локалсекуритйоптионсблоккмикрософтаккаунтс|Boolean|Запретить пользователям добавлять новые учетные записи Майкрософт на этот компьютер.|
 |Локалсекуритйоптионсблоккремотелогонвисбланкпассворд|Boolean|Включите локальные учетные записи, не защищенные паролем, для входа в систему из расположений, отличных от физического устройства. Включено по умолчанию|
 |Локалсекуритйоптионсдисаблеадминистратораккаунт|Boolean|Определяет, включена или отключена учетная запись локального администратора.|
-|Локалсекуритйоптионсадминистратораккаунтнаме|Строка|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) учетной записи "Administrator".|
+|Локалсекуритйоптионсадминистратораккаунтнаме|String|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) учетной записи "Administrator".|
 |Локалсекуритйоптионсдисаблегуестаккаунт|Boolean|Определяет, включена или отключена Гостевая учетная запись.|
-|Локалсекуритйоптионсгуестаккаунтнаме|Строка|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) для учетной записи "гость".|
+|Локалсекуритйоптионсгуестаккаунтнаме|String|Определите имя другой учетной записи, которая будет связана с идентификатором безопасности (SID) для учетной записи "гость".|
 |Локалсекуритйоптионсалловундокквисаусавингтологон|Boolean|Запретите отстыковку портативного компьютера без необходимости входа в систему.|
 |Локалсекуритйоптионсблоккусерсинсталлингпринтердриверс|Boolean|Ограничьте установку драйверов принтеров в рамках подключения к общему принтеру только для администраторов.|
 |Локалсекуритйоптионсблоккремотеоптикалдривеакцесс|Boolean|Включение этого параметра позволяет интерактивно вошедший в систему пользователь получать доступ к устройству чтения компакт-дисков.|
@@ -93,11 +93,11 @@ ms.locfileid: "30571706"
 |Локалсекуритйоптионсдонотрекуиректрлалтдел|Boolean|Требовать нажатия клавиш CTRL + ALT + DEL, прежде чем пользователь сможет войти в систему.|
 |Локалсекуритйоптионшиделастсигнединусер|Boolean|Не отображать имя последнего пользователя, выполнившего вход на это устройство.|
 |Локалсекуритйоптионшидеусернамеатсигнин|Boolean|Не отображать имя пользователя, выполняющего вход на это устройство, после ввода учетных данных и отображения рабочего стола на устройстве.|
-|Локалсекуритйоптионслогонмессажетитле|Строка|Задайте заголовок сообщения для пользователей, пытающихся войти в систему.|
-|Локалсекуритйоптионслогонмессажетекст|Строка|Задайте текст сообщения для пользователей, пытающихся войти в систему.|
+|Локалсекуритйоптионслогонмессажетитле|String|Задайте заголовок сообщения для пользователей, пытающихся войти в систему.|
+|Локалсекуритйоптионслогонмессажетекст|String|Задайте текст сообщения для пользователей, пытающихся войти в систему.|
 |localSecurityOptionsAllowPKU2UAuthenticationRequests|Boolean|Блокировать запросы проверки подлинности PKU2U на этом устройстве для использования сетевых удостоверений.|
 |Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажерхелпербул|Boolean|Помощник по ПОЛЬЗОВАТЕЛЬСКОМу ИНТЕРФЕЙСу Boolean для объекта Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|
-|Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|Строка|Измените строку языка определения дескрипторов безопасности по умолчанию, чтобы разрешить или запретить пользователям и группам совершать удаленные вызовы в SAM.|
+|Локалсекуритйоптионсалловремотекаллстосекуритяккаунтсманажер|String|Измените строку языка определения дескрипторов безопасности по умолчанию, чтобы разрешить или запретить пользователям и группам совершать удаленные вызовы в SAM.|
 |Локалсекуритйоптионсминимумсессионсекуритифорнтлмсспбаседклиентс|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет клиенту требовать согласование 128-разрядного шифрования и/или сеанса защиты сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |Локалсекуритйоптионсминимумсессионсекуритифорнтлмсспбаседсерверс|[localSecurityOptionsMinimumSessionSecurity](../resources/intune-deviceconfig-localsecurityoptionsminimumsessionsecurity.md)|Этот параметр безопасности позволяет серверу требовать согласование 128-разрядного шифрования и/или сеанса защиты сеанса NTLMv2. Возможные значения: `none`, `requireNtmlV2SessionSecurity`, `require128BitEncryption`, `ntlmV2And128BitEncryption`.|
 |lanManagerAuthenticationLevel|[lanManagerAuthenticationLevel](../resources/intune-deviceconfig-lanmanagerauthenticationlevel.md)|Этот параметр безопасности определяет, какой протокол проверки подлинности "запрос/ответ" используется для входа в сеть. Возможные значения: `lmAndNltm`, `lmNtlmAndNtlmV2`, `lmAndNtlmOnly`, `lmAndNtlmV2`, `lmNtlmV2AndNotLm`, `lmNtlmV2AndNotLmOrNtm`.|
@@ -125,7 +125,7 @@ ms.locfileid: "30571706"
 |Локалсекуритйоптионсдоноталлованонимаусенумератионофсамаккаунтс|Boolean|Этот параметр безопасности определяет, какие дополнительные разрешения будут предоставлены анонимным подключениям к компьютеру.|
 |Локалсекуритйоптионсаллованонимаусенумератионофсамаккаунтсандшарес|Boolean|Этот параметр безопасности определяет, разрешено ли анонимным пользователям выполнять определенные действия, например перечислять имена доменных учетных записей и сетевые общие папки.|
 |Локалсекуритйоптионсдонотстореланманажерхашвалуеоннекстпассвордчанже|Boolean|Этот параметр безопасности определяет, будет ли сохраняться значение хэша LAN Manager (LM) для нового пароля при следующем изменении пароля. По умолчанию он не хранится.|
-|Локалсекуритйоптионссмарткардремовалбехавиор|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md);|Этот параметр безопасности определяет, что происходит при удалении смарт-карты пользователя, выполнившего вход в систему, из устройства чтения смарт-карт. Возможные значения: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
+|Локалсекуритйоптионссмарткардремовалбехавиор|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|Этот параметр безопасности определяет, что происходит при удалении смарт-карты пользователя, выполнившего вход в систему, из устройства чтения смарт-карт. Возможные значения: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
 |Дефендерсекуритицентердисаблеаппбровсеруи|Boolean|Используется для отключения отображения области защиты приложений и браузера.|
 |Дефендерсекуритицентердисаблефамилюи|Boolean|Используется для отключения отображения области семьи.|
 |Дефендерсекуритицентердисаблехеалсуи|Boolean|Используется для отключения отображения области производительности и работоспособности устройства.|
@@ -139,10 +139,10 @@ ms.locfileid: "30571706"
 |Дефендерсекуритицентердисаблесекуребутуи|Boolean|Используется для отключения отображения области безопасной загрузки в разделе Безопасность устройства.|
 |Дефендерсекуритицентердисаблетраублешутингуи|Boolean|Используется для отключения отображения устранения неполадок процесса безопасности в разделе Безопасность устройства.|
 |Дефендерсекуритицентердисаблевулнераблетпмфирмвареупдатеуи|Boolean|Используется для отключения отображения обновления микроПрограммы ДОВЕРЕНного ПЛАТФОРМЕНного модуля при обнаружении уязвимого программного обеспечения.|
-|Дефендерсекуритицентерорганизатиондисплайнаме|Строка|Имя компании, которое отображается для пользователей.|
-|Дефендерсекуритицентерхелпемаил|Строка|Адрес электронной почты, который отображается для пользователей.|
-|Дефендерсекуритицентерхелпфоне|Строка|Номер телефона или идентификатор Skype, который отображается для пользователей.|
-|Дефендерсекуритицентерхелпурл|Строка|URL-адрес портала справки это отображается для пользователей.|
+|Дефендерсекуритицентерорганизатиондисплайнаме|String|Имя компании, которое отображается для пользователей.|
+|Дефендерсекуритицентерхелпемаил|String|Адрес электронной почты, который отображается для пользователей.|
+|Дефендерсекуритицентерхелпфоне|String|Номер телефона или идентификатор Skype, который отображается для пользователей.|
+|Дефендерсекуритицентерхелпурл|String|URL-адрес портала справки это отображается для пользователей.|
 |Дефендерсекуритицентернотификатионсфромапп|[Дефендерсекуритицентернотификатионсфромапптипе](../resources/intune-deviceconfig-defendersecuritycenternotificationsfromapptype.md)|Уведомления, отображаемые в отображаемых областях приложения. Возможные значения: `notConfigured`, `blockNoncriticalNotifications`, `blockAllNotifications`.|
 |Дефендерсекуритицентеритконтактдисплай|[Дефендерсекуритицентеритконтактдисплайтипе](../resources/intune-deviceconfig-defendersecuritycenteritcontactdisplaytype.md)|Настройка места отображения контактной информации для конечных пользователей. Возможные значения: `notConfigured`, `displayInAppAndInNotifications`, `displayOnlyInApp`, `displayOnlyInNotifications`.|
 |firewallBlockStatefulFTP|Boolean|Блокирует FTP-подключения к устройству с отслеживанием состояния.|
@@ -184,7 +184,7 @@ ms.locfileid: "30571706"
 |Дефендеремаилконтентексекутион|[Дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее, следует ли удалять исполняемые файлы (exe, DLL, PS, JS, VBS и т. д.) из электронной почты (почтовая или почтовая программа). Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |Дефендерадванцедрансомеварепротектионтипе|[Дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее на использование расширенной защиты в рансомеваре. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |Дефендергуардмифолдерстипе|[Фолдерпротектионтипе](../resources/intune-deviceconfig-folderprotectiontype.md)|Значение, указывающее поведение защищенных папок. Возможные значения: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
-|defenderGuardedFoldersAllowedAppPaths|Коллекция строк|Список путей к файлам EXE, которым разрешен доступ к защищенным папкам|
+|defenderGuardedFoldersAllowedAppPaths|Коллекция String|Список путей к файлам EXE, которым разрешен доступ к защищенным папкам|
 |defenderAdditionalGuardedFolders|Коллекция String|Список путей к папкам, которые следует добавить в список защищенных папок|
 |Дефендернетворкпротектионтипе|[Дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее поведение Нетворкпротектион. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binary|XML-файл с информацией о защите от эксплойтов.|
@@ -215,7 +215,7 @@ ms.locfileid: "30571706"
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker. Эта политика действительна только для мобильных устройств.|
 |bitLockerEncryptDevice|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker.|
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|Политика системного диска BitLocker.|
-|bitLockerFixedDrivePolicy;|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md);|Политика фиксированного диска BitLocker.|
+|bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|Политика фиксированного диска BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Политика BitLocker в отношении съемных дисков.|
 
 ## <a name="relationships"></a>Связи
@@ -896,6 +896,7 @@ ms.locfileid: "30571706"
   }
 }
 ```
+
 
 
 

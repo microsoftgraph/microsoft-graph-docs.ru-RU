@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fc503791ba525c7a49f263931aef632079e088d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f417b29a8699d8b1ade4195992cf5ec431c8a67f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980070"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779701"
 ---
 # <a name="list-windowsmanagementapphealthstates"></a>Список Виндовсманажементапфеалсстатес
 
@@ -78,6 +78,7 @@ Content-Length: 410
   ]
 }
 ```
+
 
 
 

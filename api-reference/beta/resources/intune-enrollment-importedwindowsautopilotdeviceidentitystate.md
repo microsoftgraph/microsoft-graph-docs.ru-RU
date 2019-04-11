@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса importedWindowsAutopilotDeviceIdentityState
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 72ed544a7b4f9e4ddf003104b191ee064b884f76
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 42726817395296945fc593552ee50154fa34d332
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159012"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779771"
 ---
 # <a name="importedwindowsautopilotdeviceidentitystate-resource-type"></a>Тип ресурса importedWindowsAutopilotDeviceIdentityState
 
@@ -27,7 +27,7 @@ ms.locfileid: "30159012"
 |deviceErrorCode|Int32|Код ошибки устройства, сообщаемый службой каталогов устройства (DDS).|
 |deviceErrorName|Строка|Имя ошибки устройства, сообщаемое службой каталогов устройства (DDS).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "30159012"
   "deviceErrorName": "String"
 }
 ```
+
 
 
 

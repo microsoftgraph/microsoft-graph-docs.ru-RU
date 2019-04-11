@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта defaultM
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57112af0076f551e9b90c2e278a39c10305121b1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 13af1acbbeda4d0b8f2038ac8703c9e96bdf4f3f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959630"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775270"
 ---
 # <a name="get-defaultmanagedappprotection"></a>Get defaultManagedAppProtection
 
@@ -160,6 +160,7 @@ Content-Length: 3902
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Представляет группу, которую следуе�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0397a3f3def5be86b10f17e50617d488bf6a1512
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cbd211bec428ff3a03ff989fa9ece36e5c55c561
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175397"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775193"
 ---
 # <a name="exclusiongroupassignmenttarget-resource-type"></a>Тип ресурса exclusionGroupAssignmentTarget
 
@@ -20,14 +20,14 @@ ms.locfileid: "30175397"
 Представляет группу, которую следует исключить из назначения.
 
 
-Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)
+Наследуется от ресурса [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupId|String|ИД группы, являющейся объектом назначения. Наследуется от [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
+|groupId|String|Идентификатор группы-объекта назначения. Наследуется от ресурса [groupAssignmentTarget](../resources/intune-shared-groupassignmenttarget.md)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "30175397"
   "groupId": "String"
 }
 ```
+
 
 
 

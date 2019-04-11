@@ -4,12 +4,12 @@ description: Тип оповещения о параметрах уведомл�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5af4a4e4718734220321a2867d2e6a6be36f254
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 52812ab1761687062a1051e4d10eb9390e07fa27
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172438"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777034"
 ---
 # <a name="iosnotificationalerttype-enum-type"></a>тип перечисления Иоснотификатионалерттипе
 
@@ -24,8 +24,9 @@ ms.locfileid: "30172438"
 |:---|:---|:---|
 |Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
 |заголовок|1,1|Заголовок.|
-|модальный|2|Модаль.|
-|Нет|4|Нет.|
+|модаль|2|Модаль.|
+|нет|4|Нет.|
+
 
 
 

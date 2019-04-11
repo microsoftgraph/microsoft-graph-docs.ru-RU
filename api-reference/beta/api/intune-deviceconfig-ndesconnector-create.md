@@ -4,12 +4,12 @@ description: Создание нового объекта Ндесконнект
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33d3d832df9e14692316b9b12132c531a2b610d3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c8c105758f5d65e64c90a9928732c78ec8bb4f2e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986182"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774990"
 ---
 # <a name="create-ndesconnector"></a>Создание Ндесконнектор
 
@@ -43,7 +43,7 @@ POST /deviceManagement/ndesConnectors
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Ндесконнектор в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ндесконнектор.
@@ -92,6 +92,7 @@ Content-Length: 232
   "displayName": "Display Name value"
 }
 ```
+
 
 
 

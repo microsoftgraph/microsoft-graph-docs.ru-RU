@@ -4,12 +4,12 @@ description: Возможные значения для подтверждени
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4eb469516dd4ae960ae351843df31f07ead90edf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c81fe62d7ed2696b233b8684c665f7cf8341fbcd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146342"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778378"
 ---
 # <a name="defenderpromptforsamplesubmission-enum-type"></a>тип перечисления Дефендерпромптфорсамплесубмиссион
 
@@ -26,7 +26,8 @@ ms.locfileid: "30146342"
 |Алвайспромпт|1,1|Всегда запрашивать.|
 |Промптбефоресендингперсоналдата|2|ВыДавать запрос перед отправкой персональных данных.|
 |Неверсенддата|4|Никогда не отправлять данные.|
-|Сендаллдатависаутпромптинг|4|Отправлять все данные без выдачи запросов.|
+|Сендаллдатависаутпромптинг|SP4|Отправлять все данные без выдачи запросов.|
+
 
 
 

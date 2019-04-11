@@ -4,12 +4,12 @@ description: Тип агента управления.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: eb948626035bed2dac7ee18d103aa083bd0f2aeb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf8a40b8d6951c13da49766430fdd7fb303cbba0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172543"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775305"
 ---
 # <a name="managementagenttype-enum-type"></a>тип перечисления Манажементаженттипе
 
@@ -25,7 +25,7 @@ ms.locfileid: "30172543"
 |атрибутов|1,1|Управление устройством осуществляется с помощью Exchange Server.|
 |Корпоратив|2|Управление устройством осуществляется с помощью Intune MDM.|
 |Еасмдм|4|Устройство управляется как в Exchange Server, так и в Intune MDM.|
-|Интунеклиент|4|Управление клиентом Intune.|
+|Интунеклиент|SP4|Управление клиентом Intune.|
 |Еасинтунеклиент|17:00|Устройство — это EAS и двойное управление клиентом Intune.|
 |Конфигуратионманажерклиент|8,5|Управление устройством осуществляется с помощью Configuration Manager.|
 |Конфигуратионманажерклиентмдм|десяти|Управление устройством осуществляется с помощью Configuration Manager и MDM.|
@@ -34,6 +34,7 @@ ms.locfileid: "30172543"
 |жамф|32|Атрибуты устройства извлекаются из Жамф.|
 |Гуглеклауддевицеполициконтроллер|64|Управление устройством осуществляется с помощью Клауддпк Google.|
 |microsoft365ManagedMdm|258|Это устройство управляется Microsoft 365 с помощью Intune.|
+
 
 
 

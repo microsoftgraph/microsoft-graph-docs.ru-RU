@@ -4,12 +4,12 @@ description: Экземпляр параметра, представляющий
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 52be2b37eff10c7d03ac20a731044fd9cdd97d68
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 4ce1483bd4d8fe00c2cbc69f56c176b65dde5ffb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523674"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777685"
 ---
 # <a name="devicemanagementcomplexsettinginstance-resource-type"></a>Тип ресурса Девицеманажементкомплекссеттингинстанце
 
@@ -26,10 +26,10 @@ ms.locfileid: "31523674"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицеманажементкомплекссеттингинстанцес](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-list.md)|Коллекция [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Список свойств и связей объектов [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
-|[Получение Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md)|[Девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Чтение свойств и связей объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
-|[Создание Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-create.md)|[Девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Создание нового объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
+|[Получение Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-get.md)|[deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Чтение свойств и связей объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
+|[Создание Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-create.md)|[deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Создание нового объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
 |[Удаление Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-delete.md)|Нет|Удаляет объект [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md).|
-|[Обновление Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-update.md)|[Девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Обновление свойств объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
+|[Обновление Девицеманажементкомплекссеттингинстанце](../api/intune-deviceintent-devicemanagementcomplexsettinginstance-update.md)|[deviceManagementComplexSettingInstance](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md)|Обновление свойств объекта [девицеманажементкомплекссеттингинстанце](../resources/intune-deviceintent-devicemanagementcomplexsettinginstance.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -59,8 +59,6 @@ ms.locfileid: "31523674"
   "valueJson": "String"
 }
 ```
-
-
 
 
 

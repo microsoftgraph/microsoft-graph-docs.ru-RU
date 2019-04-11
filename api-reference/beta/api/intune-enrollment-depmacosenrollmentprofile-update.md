@@ -4,12 +4,12 @@ description: Обновление свойств объекта Депмакос
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f386801f1edf03544f46f4f730e830ef70130f7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 321eca355563cee62927aab392aa8a58a19d2f48
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978481"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776663"
 ---
 # <a name="update-depmacosenrollmentprofile"></a>Обновление Депмакосенроллментпрофиле
 
@@ -75,6 +75,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 |Диагностиксдисаблед|Boolean|Указывает, является ли область настройки диагностики неактивной, наСледуемой от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Дисплайтонесетупдисаблед|Boolean|Указывает, отключен ли экран установки дисплайтоне от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Приваципанедисаблед|Boolean|Указывает, отключен ли экран конфиденциальности, унаследованный от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|Девиценаметемплате|String|Задает шаблон литерала или имени. НаСледуется от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Регистратиондисаблед|Boolean|Указывает, отключена ли регистрация|
 |Филеваултдисаблед|Boolean|Указывает, отключено ли хранилище файлов|
 |Иклауддиагностиксдисаблед|Boolean|Указывает, отключен ли экран аналитики iCloud|
@@ -93,7 +94,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMa
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultMacOsEnrollmentProfile
 Content-type: application/json
-Content-length: 1136
+Content-length: 1191
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -121,6 +122,7 @@ Content-length: 1136
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "Device Name Template value",
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -134,7 +136,7 @@ Content-length: 1136
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1185
+Content-Length: 1240
 
 {
   "@odata.type": "#microsoft.graph.depMacOSEnrollmentProfile",
@@ -163,6 +165,7 @@ Content-Length: 1185
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "Device Name Template value",
   "registrationDisabled": true,
   "fileVaultDisabled": true,
   "iCloudDiagnosticsDisabled": true,
@@ -170,6 +173,7 @@ Content-Length: 1185
   "chooseYourLockScreenDisabled": true
 }
 ```
+
 
 
 

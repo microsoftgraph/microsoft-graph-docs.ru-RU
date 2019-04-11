@@ -4,12 +4,12 @@ description: Тип часов и процентного отношения дл
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba15df46075e5cbea1a2eab8a798c333f4a60ae6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1115029cd7106f19a2a8a706540278a5282ca18d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178117"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776257"
 ---
 # <a name="deliveryoptimizationbandwidthbusinesshourslimit-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсбусинесшаурслимит
 
@@ -27,7 +27,7 @@ ms.locfileid: "30178117"
 |Бандвидсперцентажедурингбусинесшаурс|Int32|Указывает процент пропускной способности для ограничения в рабочее время (0-100). Допустимые значения: от 0 до 100|
 |Бандвидсперцентажеаутсидебусинесшаурс|Int32|Указывает процент пропускной способности, ограничивающий рабочие часы (0-100). Допустимые значения: от 0 до 100.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "30178117"
   "bandwidthPercentageOutsideBusinessHours": 1024
 }
 ```
+
 
 
 

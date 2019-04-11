@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Нетв
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d49e81ddaf40ac406eb6fde75436196c80e2b1cc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7aca1114305df6e3526511e925bab817786f10e6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982009"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779169"
 ---
 # <a name="get-networkmanagementcondition"></a>Получение Нетворкманажементкондитион
 
@@ -84,6 +84,7 @@ Content-Length: 475
   }
 }
 ```
+
 
 
 

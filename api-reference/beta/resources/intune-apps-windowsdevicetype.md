@@ -4,12 +4,12 @@ description: Содержит свойства для типа устройст�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 554cfe0bbcc635ff2713a812a361de7d4922b3b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 036837c0de2b7e1415c5aec1daea9986373d47d1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171430"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776327"
 ---
 # <a name="windowsdevicetype-enum-type"></a>тип перечисления не к windowsdevicetype
 
@@ -22,11 +22,12 @@ ms.locfileid: "30171430"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Флаги не заданы.|
+|нет|нуль|Флаги не заданы.|
 |системной|1,1|Поддерживается ли тип устройства Windows для наСтольных ПК.|
 |связь|2|Поддерживается ли тип мобильного устройства Windows.|
-|holographic|4|Поддерживается ли тип устройства с Windows Holographic.|
+|holographic|SP4|Поддерживается ли тип устройства с Windows Holographic.|
 |группы|8,5|Поддерживается ли тип устройства группы Windows.|
+
 
 
 

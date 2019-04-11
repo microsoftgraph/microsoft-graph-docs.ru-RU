@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса allLicensedUsersAssignmentTarget
-description: Представляет назначение всем лицензированным пользователям в клиенте.
+description: Представляет ресурс, назначенный всем лицензированным пользователям в клиенте.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 43628067ea4ecc1a5a7e4cea24721f96e05c5537
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 70dcc2609708db3feff79612e4067e47bda3142d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172494"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31778833"
 ---
 # <a name="alllicensedusersassignmenttarget-resource-type"></a>Тип ресурса allLicensedUsersAssignmentTarget
 
@@ -17,16 +17,16 @@ ms.locfileid: "30172494"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Представляет назначение всем лицензированным пользователям в клиенте.
+Представляет ресурс, назначенный всем лицензированным пользователям в клиенте.
 
 
-Наследуется от типа [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
+Наследуется от ресурса [deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "30172494"
   "@odata.type": "#microsoft.graph.allLicensedUsersAssignmentTarget"
 }
 ```
+
 
 
 

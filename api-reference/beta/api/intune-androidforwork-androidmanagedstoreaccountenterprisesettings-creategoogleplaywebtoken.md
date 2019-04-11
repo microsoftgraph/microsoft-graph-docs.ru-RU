@@ -4,12 +4,12 @@ description: Создает веб-токен, используемый в вс�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b10259ef36897188102f0b553b6ed7df9b0fdbdd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ef4d99a7a36b7fbe56ca588044ee14534371c7a3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981715"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776838"
 ---
 # <a name="creategoogleplaywebtoken-action"></a>Действие createGooglePlayWebToken
 
@@ -83,6 +83,7 @@ Content-Length: 53
   "value": "Create Google Play Web Token value"
 }
 ```
+
 
 
 

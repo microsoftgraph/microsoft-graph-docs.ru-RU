@@ -4,12 +4,12 @@ description: Представляет уровень, к которому мож
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 352a801c53acd487fdac0206eca828461d35bf68
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1d18d09f2ba37b8b062f3d19ae5cf971d886f278
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148351"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777594"
 ---
 # <a name="managedappclipboardsharinglevel-enum-type"></a>тип перечисления Манажедаппклипбоардшаринглевел
 
@@ -25,7 +25,8 @@ ms.locfileid: "30148351"
 |Аллаппс|нуль|Общий доступ разрешен между всеми приложениями, управляемым или не|
 |Манажедаппсвиспастеин|1,1|Разрешен общий доступ для всех управляемых приложений с включенной вставкой|
 |managedApps|2|Общий доступ разрешен для всех управляемых приложений|
-|заблокировано|4|Совместное использование приложений отключено|
+|заблокированных|4|Совместное использование приложений отключено|
+
 
 
 

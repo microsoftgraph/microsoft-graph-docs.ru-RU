@@ -4,12 +4,12 @@ description: Удаляет объект Иострустедрутцертиф�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ae6551aab878de154d0e4a880db787bd0b1f925
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9dbdb076fb8817e8916b47b23f92b3b343879470
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971474"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779029"
 ---
 # <a name="delete-iostrustedrootcertificate"></a>Удаление Иострустедрутцертификате
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

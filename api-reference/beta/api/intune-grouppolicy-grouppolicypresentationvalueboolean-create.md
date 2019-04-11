@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 37ff34e47be9311faaba4535b39dc9740aeef436
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f3cb89bac8c8d934e1c2ce602c68c0fcffcd1a1a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983402"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31777055"
 ---
 # <a name="create-grouppolicypresentationvalueboolean"></a>Создание Граупполиципресентатионвалуебулеан
 
@@ -43,7 +43,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Граупполиципресентатионвалуебулеан в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Граупполиципресентатионвалуебулеан.
@@ -90,6 +90,7 @@ Content-Length: 267
   "value": true
 }
 ```
+
 
 
 

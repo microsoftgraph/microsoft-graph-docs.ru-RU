@@ -4,12 +4,12 @@ description: Возможные значения параметра Дмагуа
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 512bf44d25629f4b1c88c2309c464e9d0f33f625
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f6910172ef4ab733b09d837dcc9a7196893402ab
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159712"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31776649"
 ---
 # <a name="dmaguarddeviceenumerationpolicytype-enum-type"></a>тип перечисления Дмагуарддевицеенумератионполицитипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "30159712"
 |Девицедефаулт|нуль|Значение по умолчанию. Устройства с перераспределением DMA несовместимые драйверы будут перечисляться только после того, как пользователь разблокирует экран.|
 |Блоккалл|1,1|Устройства с пересопоставлением DMA несовместимые драйверы никогда не будут иметь разрешения на запуск и выполнение DMA в любое время.|
 |allowAll|2|Все внешние устройства с поддержкой прямого доступа к памяти PCIe будут перечисляться в любое время.|
+
 
 
 

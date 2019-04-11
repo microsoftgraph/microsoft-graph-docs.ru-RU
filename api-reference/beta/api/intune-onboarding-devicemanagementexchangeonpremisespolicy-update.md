@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80d05e29cb478071feef6152fda7af930b0b3652
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 329cac4b7fa550a648f0c820f02a1f69705efc0e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973399"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31779134"
 ---
 # <a name="update-devicemanagementexchangeonpremisespolicy"></a>Обновление Девицеманажементексчанжеонпремисесполици
 
@@ -128,6 +128,7 @@ Content-Length: 714
   ]
 }
 ```
+
 
 
 

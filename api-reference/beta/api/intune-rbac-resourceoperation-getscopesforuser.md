@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 988444f250e1afc9ccd4629437a63e2046c00a53
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0b7dc66e1ffed574d121c30911cf76076b254bb7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989094"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31775319"
 ---
 # <a name="getscopesforuser-function"></a>Функция Getscopesforuser к объекту
 
@@ -43,7 +43,7 @@ GET /deviceManagement/resourceOperations/{resourceOperationId}/getScopesForUser
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В URL-адресе запроса укажите перечисленные ниже параметры запроса и их значения.
 В приведенной ниже таблице указаны параметры, которые можно использовать с этой функцией.
 
@@ -77,6 +77,7 @@ Content-Length: 56
   ]
 }
 ```
+
 
 
 
