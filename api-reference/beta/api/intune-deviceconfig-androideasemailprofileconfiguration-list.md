@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Анд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 104125b5e43b4a31fb9163bb3313cfe67891d65f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bd8bc6dcc1d5b12ef3104ebbf4895a866c42d0b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987827"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771749"
 ---
 # <a name="list-androideasemailprofileconfigurations"></a>Список Андроидеасемаилпрофилеконфигуратионс
 
@@ -98,6 +98,7 @@ Content-Length: 1102
   ]
 }
 ```
+
 
 
 

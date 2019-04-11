@@ -4,12 +4,12 @@ description: 'Ресурс "Определение роли". Определен
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ba38f9293ce4a21d031a3c70e8d3bdbe5667f997
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: fca5f91c5ca708f715b1438f2fe8508060e3b91c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173719"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772008"
 ---
 # <a name="roledefinition-resource-type"></a>Тип ресурса roleDefinition
 
@@ -23,24 +23,24 @@ ms.locfileid: "30173719"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов roleDefinition](../api/intune-rbac-roledefinition-list.md)|Коллекция [roleDefinition](../resources/intune-rbac-roledefinition.md)|Список свойств и связей объектов [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|[Получение объекта roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md);|Чтение свойств и связей объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|[Создание объекта roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md);|Создание объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
-|[Удаление объекта roleDefinition](../api/intune-rbac-roledefinition-delete.md)|Нет|Удаление объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|[Получение roleDefinition](../api/intune-rbac-roledefinition-get.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Чтение свойств и связей объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|[Создание roleDefinition](../api/intune-rbac-roledefinition-create.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Создание объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
+|[Удаление roleDefinition](../api/intune-rbac-roledefinition-delete.md)|Нет|Удаление объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 |[Обновление объекта roleDefinition](../api/intune-rbac-roledefinition-update.md)|[roleDefinition](../resources/intune-rbac-roledefinition.md)|Обновление свойств объекта [roleDefinition](../resources/intune-rbac-roledefinition.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
+|id|Строка|Ключ объекта. Это свойство доступно только для чтения и создается автоматически.|
 |displayName|String|Отображаемое имя определения роли.|
 |description|String|Описание определения роли.|
 |permissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |rolePermissions|Коллекция [rolePermission](../resources/intune-rbac-rolepermission.md)|Список разрешений, активированных для роли. Они должны соответствовать объекту actionName, который определен как часть rolePermission.|
 |Исбуилтинроледефинитион|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
 |isBuiltIn|Boolean|Тип роли. Для встроенного определения роли задается значение True, а для настраиваемого — False.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |roleAssignments|Коллекция объектов [roleAssignment](../resources/intune-rbac-roleassignment.md)|Список назначений ролей для определения роли.|
@@ -104,6 +104,7 @@ ms.locfileid: "30173719"
   ]
 }
 ```
+
 
 
 

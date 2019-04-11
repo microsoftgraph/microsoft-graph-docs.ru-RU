@@ -4,12 +4,12 @@ description: Создание нового объекта Секуритибас
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 95222dba49c3cdcb807f610c67bcd94081d9bfe6
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 2d6f48f0fdb95f2d88f6af5f62975792453367d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522841"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773492"
 ---
 # <a name="create-securitybaselinetemplate"></a>Создание Секуритибаселинетемплате
 
@@ -89,8 +89,6 @@ Content-Length: 194
   "description": "Description value"
 }
 ```
-
-
 
 
 

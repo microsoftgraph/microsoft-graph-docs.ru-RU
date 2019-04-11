@@ -4,12 +4,12 @@ description: Класс устройства в Exchange.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ffa5f9c9f54722711a2e38116c2f2a3e03a3171e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7ec9f0242521bf23b4ed5f1c9f002211d542e48c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149569"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774661"
 ---
 # <a name="devicemanagementexchangedeviceclass-resource-type"></a>Тип ресурса Девицеманажементексчанжедевицекласс
 
@@ -25,7 +25,7 @@ ms.locfileid: "30149569"
 |name|String|Имя класса устройств, на который влияет это правило.|
 |type|[Девицеманажементексчанжеакцессрулетипе](../resources/intune-onboarding-devicemanagementexchangeaccessruletype.md)|Тип устройства, на которое влияет это правило, например Model, Family. Возможные значения: `family`, `model`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -42,6 +42,7 @@ ms.locfileid: "30149569"
   "type": "String"
 }
 ```
+
 
 
 

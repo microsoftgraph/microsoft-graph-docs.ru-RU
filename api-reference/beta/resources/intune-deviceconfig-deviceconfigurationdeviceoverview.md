@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceConfigurationDeviceOverview
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0cdbbcfde7bc0f1ecc2cf3bab00207adcb70bf40
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0e6ded68974f3a4baa307d186e93ea83931f07aa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175299"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773226"
 ---
 # <a name="deviceconfigurationdeviceoverview-resource-type"></a>Тип ресурса deviceConfigurationDeviceOverview
 
@@ -22,7 +22,7 @@ ms.locfileid: "30175299"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Чтение свойств и связей объекта [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).|
+|[Get deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-get.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Чтение свойств и связей объекта [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).|
 |[Обновление объекта deviceConfigurationDeviceOverview](../api/intune-deviceconfig-deviceconfigurationdeviceoverview-update.md)|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обновление свойств объекта [deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md).|
 
 ## <a name="properties"></a>Свойства
@@ -39,7 +39,7 @@ ms.locfileid: "30175299"
 |lastUpdateDateTime|DateTimeOffset|Время последнего обновления.|
 |configurationVersion|Int32|Версия политики для этого обзора|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -65,6 +65,7 @@ ms.locfileid: "30175299"
   "configurationVersion": 1024
 }
 ```
+
 
 
 

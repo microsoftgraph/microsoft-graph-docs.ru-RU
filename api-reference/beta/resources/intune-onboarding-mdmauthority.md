@@ -4,12 +4,12 @@ description: Центр управления мобильными устройс
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 57d4b9de9dc5d77482e13d4d09686edf37a363e2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74a73ef71035594e3d9600499791525fe67c9c71
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159432"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774703"
 ---
 # <a name="mdmauthority-enum-type"></a>тип перечисления Мдмаусорити
 
@@ -23,9 +23,10 @@ ms.locfileid: "30159432"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестно|
-|корпоративного|1,1|Intune|
+|корпоративного|1,1|Intune.|
 |SCCM|2|SCCM|
 |Office365|4|Office365|
+
 
 
 

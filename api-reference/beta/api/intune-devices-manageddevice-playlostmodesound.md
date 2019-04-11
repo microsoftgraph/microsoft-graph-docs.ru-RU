@@ -4,12 +4,12 @@ description: Удаленная блокировка
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47118126c251f1a57da9e35c6696997c9926329b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: eb368727131505f8de08e807911ad09dbdbfb176
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973413"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772547"
 ---
 # <a name="playlostmodesound-action"></a>Действие playLostModeSound
 
@@ -34,9 +34,9 @@ ms.locfileid: "30973413"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices/{managedDeviceId}/playLostModeSound
 POST /deviceManagement/managedDevices/{managedDeviceId}/playLostModeSound
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/playLostModeSound
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}/playLostModeSound
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}/playLostModeSound
 ```
 
@@ -57,7 +57,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}/playLostModeSound
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/playLostModeSound
 ```
 
 ### <a name="response"></a>Отклик
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDev
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Манажементцертификатевиссумбпринт
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 36adab8de1cebe884f6932e2a99b3aba9174d518
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 58b45f092848be7198141a34a443471426be273b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151263"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773709"
 ---
 # <a name="managementcertificatewiththumbprint-resource-type"></a>Тип ресурса Манажементцертификатевиссумбпринт
 
@@ -42,6 +42,7 @@ ms.locfileid: "30151263"
   "certificate": "String"
 }
 ```
+
 
 
 

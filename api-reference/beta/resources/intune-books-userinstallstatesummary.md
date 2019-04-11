@@ -4,12 +4,12 @@ description: Содержит свойства сводки по состоян�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ac15a6cc16a80199c807aab9569c5449ecde5273
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4ee8d92b9a9d36ddda087a20edbb8235d18811b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169057"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774010"
 ---
 # <a name="userinstallstatesummary-resource-type"></a>Тип ресурса userInstallStateSummary
 
@@ -22,23 +22,23 @@ ms.locfileid: "30169057"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список объектов userInstallStateSummary](../api/intune-books-userinstallstatesummary-list.md)|Коллекция [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|Список свойств и связей объектов [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
-|[Получение объекта userInstallStateSummary](../api/intune-books-userinstallstatesummary-get.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md);|Чтение свойств и связей объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
-|[Создание объекта userInstallStateSummary](../api/intune-books-userinstallstatesummary-create.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md);|Создание объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
+|[Перечисление объектов userInstallStateSummary](../api/intune-books-userinstallstatesummary-list.md)|Коллекция [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|Список свойств и связей объектов [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
+|[Get userInstallStateSummary](../api/intune-books-userinstallstatesummary-get.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|Чтение свойств и связей объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
+|[Создание объекта userInstallStateSummary](../api/intune-books-userinstallstatesummary-create.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|Создание объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
 |[Удаление объекта userInstallStateSummary](../api/intune-books-userinstallstatesummary-delete.md)|Нет|Удаляет объект [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
 |[Обновление объекта userInstallStateSummary](../api/intune-books-userinstallstatesummary-update.md)|[userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md)|Обновление свойств объекта [userInstallStateSummary](../resources/intune-books-userinstallstatesummary.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userName|String|Имя пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
 
 ## <a name="relationships"></a>Связи
-|Связь|Тип|Описание|
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |deviceStates|Коллекция [deviceInstallState](../resources/intune-books-deviceinstallstate.md)|Состояние установки электронной книги.|
 
@@ -60,6 +60,7 @@ ms.locfileid: "30169057"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

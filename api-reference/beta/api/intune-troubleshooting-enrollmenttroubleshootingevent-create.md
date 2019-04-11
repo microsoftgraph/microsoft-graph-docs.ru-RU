@@ -4,12 +4,12 @@ description: Создание объекта enrollmentTroubleshootingEvent.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a14ac55ddafe51d00ef8f0ca7d810b3e5482ac4f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e3d3cdd865bf2d2316d2e50e433375eb875c4406
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968436"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774626"
 ---
 # <a name="create-enrollmenttroubleshootingevent"></a>Создание объекта enrollmentTroubleshootingEvent
 
@@ -160,7 +160,6 @@ Content-Length: 1231
   "failureReason": "Failure Reason value"
 }
 ```
-
 
 
 

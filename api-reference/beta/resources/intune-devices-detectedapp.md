@@ -4,12 +4,12 @@ description: Управляемое или неуправляемое прило
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e2ace6b945799e8f21af08c3134598b86c05d88
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 01233111e74da95f84d0cbeb81e4675a5c6e049d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142436"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773198"
 ---
 # <a name="detectedapp-resource-type"></a>Тип ресурса detectedApp
 
@@ -22,11 +22,11 @@ ms.locfileid: "30142436"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список detectedApps](../api/intune-devices-detectedapp-list.md)|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Список свойств и связей объектов [detectedApp](../resources/intune-devices-detectedapp.md).|
-|[Получение detectedApp](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md);|Получение свойств и связей объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
-|[Создание объекта detectedApp](../api/intune-devices-detectedapp-create.md)|[detectedApp](../resources/intune-devices-detectedapp.md);|Создание объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
-|[Удаление объекта detectedApp](../api/intune-devices-detectedapp-delete.md)|Нет|Удаление объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
-|[Обновление detectedApp](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Обновление свойств объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
+|[Перечисление объектов detectedApp](../api/intune-devices-detectedapp-list.md)|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Список свойств и связей объектов [detectedApp](../resources/intune-devices-detectedapp.md).|
+|[Get detectedApp](../api/intune-devices-detectedapp-get.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Получение свойств и связей объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
+|[Создание объекта detectedApp](../api/intune-devices-detectedapp-create.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Создание объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
+|[Delete detectedApp](../api/intune-devices-detectedapp-delete.md)|Нет|Удаление объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
+|[Обновление объекта detectedApp](../api/intune-devices-detectedapp-update.md)|[detectedApp](../resources/intune-devices-detectedapp.md)|Обновление свойств объекта [detectedApp](../resources/intune-devices-detectedapp.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -60,6 +60,7 @@ ms.locfileid: "30142436"
   "deviceCount": 1024
 }
 ```
+
 
 
 

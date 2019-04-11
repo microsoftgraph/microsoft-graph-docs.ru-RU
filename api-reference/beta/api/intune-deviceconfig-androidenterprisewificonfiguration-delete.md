@@ -4,12 +4,12 @@ description: Удаляет объект androidEnterpriseWiFiConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a39c96400992e00558c2489826be6569e25de07
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d37189ce5e1108c7af4e54355fff8a464adb5e3a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963893"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773723"
 ---
 # <a name="delete-androidenterprisewificonfiguration"></a>Удаление androidEnterpriseWiFiConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

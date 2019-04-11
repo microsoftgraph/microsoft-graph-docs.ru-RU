@@ -4,12 +4,12 @@ description: Список свойств и связей объектов window
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2e85388b8ed9e219bc5f2dbd8231e14f3a23254b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 44461e634e1305686391e9ee7fdabfd55300ea17
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985489"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773569"
 ---
 # <a name="list-windowsinformationprotectionapplockerfiles"></a>Перечисление объектов windowsInformationProtectionAppLockerFile
 
@@ -80,6 +80,7 @@ Content-Length: 317
   ]
 }
 ```
+
 
 
 

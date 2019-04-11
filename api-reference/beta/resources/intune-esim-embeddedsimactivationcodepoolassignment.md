@@ -4,12 +4,12 @@ description: Внедренный объект назначения пула к�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60b92a7b1232ba19a4166171fa118b18f7a263b8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a5ec64384bd5620b74f9cdca2148e6b3064e9c98
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163394"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771525"
 ---
 # <a name="embeddedsimactivationcodepoolassignment-resource-type"></a>Тип ресурса Ембеддедсимактиватионкодепулассигнмент
 
@@ -54,6 +54,7 @@ ms.locfileid: "30163394"
   }
 }
 ```
+
 
 
 

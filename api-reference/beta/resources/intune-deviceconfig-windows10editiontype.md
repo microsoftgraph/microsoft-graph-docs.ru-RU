@@ -4,12 +4,12 @@ description: Тип выпуска Windows 10.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 18fba8f5fc663ff00b07a6338badf87e4ab5d875
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e76e35ce03c5af5f893148f02793d231721d24d7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173383"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772645"
 ---
 # <a name="windows10editiontype-enum-type"></a>тип перечисления windows10EditionType
 
@@ -26,15 +26,16 @@ ms.locfileid: "30173383"
 |windows10EnterpriseN|1,1|Windows 10 Ентерприсен|
 |windows10Education|2|Windows 10 для образовательных учреждений|
 |windows10EducationN|4|Windows 10 Едукатионн|
-|windows10MobileEnterprise|4|Windows 10 Mobile корпоративный|
+|windows10MobileEnterprise|SP4|Windows 10 Mobile корпоративный|
 |windows10HolographicEnterprise|17:00|Windows 10 holographic Корпоративная|
-|windows10Professional|6|Windows 10 профессиональная|
-|windows10ProfessionalN|7|Windows 10 Профессионалн|
+|windows10Professional|ICMPv6|Windows 10 профессиональная|
+|windows10ProfessionalN|см|Windows 10 Профессионалн|
 |windows10ProfessionalEducation|8,5|Windows 10 профессиональная образование|
 |windows10ProfessionalEducationN|10|Windows 10 профессиональная Едукатионн|
 |windows10ProfessionalWorkstation|десяти|Windows 10 профессиональная для рабочих станций|
 |windows10ProfessionalWorkstationN|-11:00|Windows 10 профессиональная для рабочих станций N|
 |notConfigured|12|NotConfigured|
+
 
 
 

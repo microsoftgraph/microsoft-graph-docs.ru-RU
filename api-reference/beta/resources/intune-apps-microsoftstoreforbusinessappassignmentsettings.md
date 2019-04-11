@@ -4,12 +4,12 @@ description: Содержит свойства, используемые при 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6fdcf4633433f471383e4c5b1c670eb5f5a8cb37
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 64aca2bde63a3a0e4295be6eb38f1d3362e52337
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164927"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771763"
 ---
 # <a name="microsoftstoreforbusinessappassignmentsettings-resource-type"></a>Тип ресурса microsoftStoreForBusinessAppAssignmentSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "30164927"
 |:---|:---|:---|
 |useDeviceContext|Boolean|Указывает, следует ли использовать контекст работы устройства для мобильного приложения Microsoft Store для бизнеса.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "30164927"
   "useDeviceContext": true
 }
 ```
+
 
 
 

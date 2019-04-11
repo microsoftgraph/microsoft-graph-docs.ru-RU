@@ -4,12 +4,12 @@ description: Создать новый объект importedWindowsAutopilotDevi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2ed8ed1af797e68998318f5ef7dea3836343cff4
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f7a35693408b214d028af90945e0d3179af83395
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968933"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774766"
 ---
 # <a name="create-importedwindowsautopilotdeviceidentity"></a>Создать importedWindowsAutopilotDeviceIdentity
 
@@ -55,6 +55,7 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 |orderIdentifier|String|Номер заказа устройства Windows Autopilot.|
 |serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
+|Импортид|String|Идентификатор импорта для устройства автопилота Windows.|
 |hardwareIdentifier|Двоичный|Аппаратный большой двоичный объект (BLOB) устройства Windows Autopilot.|
 |state|[importedWindowsAutopilotDeviceIdentityState](../resources/intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)|Текущее состояние импортированного устройства.|
 
@@ -70,13 +71,14 @@ POST /deviceManagement/importedWindowsAutopilotDeviceIdentityUploads/{importedWi
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 541
+Content-length: 575
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "orderIdentifier": "Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
+  "importId": "Import Id value",
   "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
   "state": {
     "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -93,7 +95,7 @@ Content-length: 541
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 624
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
@@ -101,6 +103,7 @@ Content-Length: 590
   "orderIdentifier": "Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
+  "importId": "Import Id value",
   "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
   "state": {
     "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -111,6 +114,7 @@ Content-Length: 590
   }
 }
 ```
+
 
 
 

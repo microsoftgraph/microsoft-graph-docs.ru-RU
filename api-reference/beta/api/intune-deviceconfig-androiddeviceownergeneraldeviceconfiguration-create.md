@@ -4,12 +4,12 @@ description: Создание нового объекта androidDeviceOwnerGene
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f82410f562d76f370e32863ed636cd3306cd4990
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: aa5f2ac532e4b8e912b47a50be755ab0ceb495fa
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964180"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771770"
 ---
 # <a name="create-androiddeviceownergeneraldeviceconfiguration"></a>Создание androidDeviceOwnerGeneralDeviceConfiguration
 
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -70,12 +70,14 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |cellularBlockWiFiTethering|Boolean|Указывает, следует ли заблокировать модем Wi-Fi.|
 |Датароамингблоккед|Boolean|Указывает, следует ли запретить пользователю перемещать данные.|
 |Датетимеконфигуратионблоккед|Boolean|Указывает, следует ли запретить пользователю вручную изменять дату или время на устройстве.|
-|Факториресетдевицеадминистраторемаилс|Коллекция строк|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
+|Факториресетдевицеадминистраторемаилс|Коллекция String|Список сообщений учетных записей Google, которые потребуются для проверки подлинности после завершения фабричного сброса устройства перед его настройкой.|
 |factoryResetBlocked|Boolean|Указывает, отключен ли параметр Reset фабрики в параметрах.|
 |kioskModeApps|Коллекция [appListItem](../resources/intune-deviceconfig-applistitem.md)|Список управляемых приложений, которые будут отображаться, когда устройство находится в режиме киоска. Эта коллекция может содержать не более 500 элементов.|
 |Киоскмодеваллпаперурл|String|URL-адрес общедоступного изображения, которое будет использоваться для фонового рисунка, когда устройство находится в режиме киоска.|
 |Киоскмодикситкоде|String|Код выхода, позволяющий пользователю выходить из режима киоска, когда устройство находится в режиме киоска.|
 |Киоскмодевиртуалхомебуттоненаблед|Boolean|Указывает, следует ли отображать кнопку виртуальной домашней страницы, когда устройство находится в режиме киоска.|
+|Киоскмодеблуетусконфигуратионенаблед|Boolean|Указывает, следует ли запретить пользователю настраивать параметры Bluetooth в режиме киоска.|
+|Киоскмодевификонфигуратионенаблед|Boolean|Указывает, следует ли разрешить пользователю настраивать параметры Wi/Fi в режиме киоска.|
 |Микрофонефорцемуте|Boolean|Указывает, следует ли запретить разблокирование микрофона устройства.|
 |Нетворкескапехатчалловед|Boolean|Указывает, будет ли устройство разрешать подключение к временному сетевому подключению во время загрузки.|
 |Нфкблоккаутгоингбеам|Boolean|Указывает, следует ли заблокировать исходящую форму NFC.|
@@ -83,10 +85,17 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Пассвордблокккэйгуардфеатурес|Коллекция [андроидкэйгуардфеатуре](../resources/intune-deviceconfig-androidkeyguardfeature.md)|Список компонентов кэйгуард устройств, которые необходимо заблокировать. Эта коллекция может содержать не более 7 элементов. Возможные значения: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
 |passwordExpirationDays|Int32|Указывает время в секундах, в течение которого можно задать пароль до истечения срока его действия, и потребуется новый пароль. Допустимые значения: от 1 до 365.|
 |passwordMinimumLength|Int32|Указывает минимальную длину пароля, необходимого для устройства. Допустимые значения: от 4 до 16.|
+|Пассвордминимумлеттерчарактерс|Int32|Указывает минимальное число символов, необходимых для пароля устройства. Допустимые значения — от 1 до 16.|
+|Пассвордминимумловеркасечарактерс|Int32|Указывает минимальное число символов нижнего регистра, необходимое для пароля устройства. Допустимые значения — от 1 до 16.|
+|Пассвордминимумнонлеттерчарактерс|Int32|Указывает минимальное количество небуквенных символов, необходимых для пароля устройства. Допустимые значения — от 1 до 16.|
+|Пассвордминимумнумерикчарактерс|Int32|Указывает минимальное количество числовых символов, необходимое для пароля устройства. Допустимые значения — от 1 до 16.|
+|Пассвордминимумсимболчарактерс|Int32|Указывает минимальное число символов, необходимых для пароля устройства. Допустимые значения — от 1 до 16.|
+|Пассвордминимумупперкасечарактерс|Int32|Указывает минимальное число символов верхнего каселеттер, необходимых для пароля устройства. Допустимые значения — от 1 до 16.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Миллисекунды бездействия до истечения времени ожидания экрана.|
 |Пассвордпревиауспассвордкаунттоблокк|Int32|Указывает продолжительность истории паролей, в которой пользователь не сможет ввести новый пароль, который совпадает с любым паролем в журнале. Допустимые значения: от 0 до 24.|
 |passwordRequiredType|[Андроиддевицеовнеррекуиредпассвордтипе](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Указывает минимальное качество пароля, необходимое для устройства. Возможные значения: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Указывает, сколько раз пользователь может ввести неправильный пароль до очистки устройства. Допустимые значения: от 4 до 11.|
+|Плайсторемоде|[Андроиддевицеовнерплайсторемоде](../resources/intune-deviceconfig-androiddeviceownerplaystoremode.md)|Указывает режим проигрывания устройства в хранилище. Возможные значения: `notConfigured`, `allowList`, `blockList`.|
 |Сафебутблоккед|Boolean|Указывает, отключена ли загрузка устройства в "безопасная загрузка".|
 |screenCaptureBlocked|Boolean|Указывает, следует ли отключить возможность использования снимков экрана.|
 |Секуритялловдебуггингфеатурес|Boolean|Указывает, следует ли запретить пользователю включать функции отладки на устройстве.|
@@ -120,7 +129,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 2517
+Content-length: 2905
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -158,6 +167,8 @@ Content-length: 2517
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeBluetoothConfigurationEnabled": true,
+  "kioskModeWiFiConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -167,10 +178,17 @@ Content-length: 2517
   ],
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
+  "passwordMinimumLetterCharacters": 15,
+  "passwordMinimumLowerCaseCharacters": 2,
+  "passwordMinimumNonLetterCharacters": 2,
+  "passwordMinimumNumericCharacters": 0,
+  "passwordMinimumSymbolCharacters": 15,
+  "passwordMinimumUpperCaseCharacters": 2,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
   "passwordPreviousPasswordCountToBlock": 4,
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "playStoreMode": "allowList",
   "safeBootBlocked": true,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
@@ -201,7 +219,7 @@ Content-length: 2517
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2689
+Content-Length: 3077
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -242,6 +260,8 @@ Content-Length: 2689
   "kioskModeWallpaperUrl": "https://example.com/kioskModeWallpaperUrl/",
   "kioskModeExitCode": "Kiosk Mode Exit Code value",
   "kioskModeVirtualHomeButtonEnabled": true,
+  "kioskModeBluetoothConfigurationEnabled": true,
+  "kioskModeWiFiConfigurationEnabled": true,
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -251,10 +271,17 @@ Content-Length: 2689
   ],
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
+  "passwordMinimumLetterCharacters": 15,
+  "passwordMinimumLowerCaseCharacters": 2,
+  "passwordMinimumNonLetterCharacters": 2,
+  "passwordMinimumNumericCharacters": 0,
+  "passwordMinimumSymbolCharacters": 15,
+  "passwordMinimumUpperCaseCharacters": 2,
   "passwordMinutesOfInactivityBeforeScreenTimeout": 14,
   "passwordPreviousPasswordCountToBlock": 4,
   "passwordRequiredType": "required",
   "passwordSignInFailureCountBeforeFactoryReset": 12,
+  "playStoreMode": "allowList",
   "safeBootBlocked": true,
   "screenCaptureBlocked": true,
   "securityAllowDebuggingFeatures": true,
@@ -279,6 +306,7 @@ Content-Length: 2689
   "wifiBlockEditPolicyDefinedConfigurations": true
 }
 ```
+
 
 
 

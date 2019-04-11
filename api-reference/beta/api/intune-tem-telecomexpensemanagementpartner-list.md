@@ -4,12 +4,12 @@ description: Список свойств и связей объектов teleco
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 892b91287ce397d5b1a13c679172bdb17e597e1a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8b75b93609cd9212c1bab3ac8a4fbe49ce974e0e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968800"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772344"
 ---
 # <a name="list-telecomexpensemanagementpartners"></a>Список объектов telecomExpenseManagementPartner
 
@@ -78,6 +78,7 @@ Content-Length: 358
   ]
 }
 ```
+
 
 
 

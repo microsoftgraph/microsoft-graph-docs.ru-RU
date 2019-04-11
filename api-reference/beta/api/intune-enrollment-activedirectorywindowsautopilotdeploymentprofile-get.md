@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Акти
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e89520242bdcda9bbfcccc2bc6c491910cefd932
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a3aaeb944f44dc24f21079778c74b64bcefc0f54
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981099"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773401"
 ---
 # <a name="get-activedirectorywindowsautopilotdeploymentprofile"></a>Получение Активедиректоривиндовсаутопилотдеплойментпрофиле
 
@@ -104,6 +104,7 @@ Content-Length: 1356
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Профиль развертывания Windows для автоп
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1bd93db688306ccc7f3238b13e20bba3db771dec
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: ef04802ab7c53b88b5e3afc3e70b6ce3f0137b07
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571370"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773660"
 ---
 # <a name="azureadwindowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса Азуреадвиндовсаутопилотдеплойментпрофиле
 
@@ -43,8 +43,8 @@ ms.locfileid: "30571370"
 |outOfBoxExperienceSettings|[outOfBoxExperienceSettings](../resources/intune-enrollment-outofboxexperiencesettings.md)|Настройка "от" в рамке наСледуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |Енроллментстатусскринсеттингс|[windowsEnrollmentStatusScreenSettings](../resources/intune-enrollment-windowsenrollmentstatusscreensettings.md)|Параметр экрана состояния регистрации, наСледуемый от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 |Екстраксардварехаш|Boolean|Извлечение Хардварехаш для профиля, унаследованного от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
-|Девиценаметемплате|Строка|Шаблон, используемый для именования автоПилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов. НаСледуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
-|deviceType|[Виндовсаутопилотдевицетипе](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автоПилота, к которому применяется этот профиль. НаСледуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md). Возможные значения: `windowsPc`, `surfaceHub2`.|
+|Девиценаметемплате|String|Шаблон, используемый для именования автоПилотного устройства. Это может быть настраиваемый текст, который также может содержать серийный номер устройства или случайное число. Общая длина текста, созданного шаблоном, не может превышать 15 символов. НаСледуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
+|deviceType|[windowsAutopilotDeviceType](../resources/intune-enrollment-windowsautopilotdevicetype.md)|Тип устройства автоПилота, к которому применяется этот профиль. НаСледуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md). Возможные значения: `windowsPc`, `surfaceHub2`.|
 |Енаблевхитеглове|Boolean|Включите для профиля белый Глове для автопилотного развертывания. НаСледуется от [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|
 
 ## <a name="relationships"></a>Связи
@@ -95,6 +95,7 @@ ms.locfileid: "30571370"
   "enableWhiteGlove": true
 }
 ```
+
 
 
 

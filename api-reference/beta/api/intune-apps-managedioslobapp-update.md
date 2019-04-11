@@ -4,12 +4,12 @@ description: Обновление свойств объекта managedIOSLobApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0b3709c3556f94e35d441a124df789756a4e4493
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0aea558c8fc4e219126a20b08ccfe78d73e6eadd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982814"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772274"
 ---
 # <a name="update-managedioslobapp"></a>Update managedIOSLobApp
 
@@ -68,7 +68,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appAvailability|[Манажедаппаваилабилити](../resources/intune-apps-managedappavailability.md)|Доступность приложения. НаСледуется от [managedApp](../resources/intune-apps-managedapp.md). Возможные значения: `global`, `lineOfBusiness`.|
 |version|String|Версия приложения. Наследуется от [managedApp](../resources/intune-apps-managedapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [managedMobileLobApp](../resources/intune-apps-managedmobilelobapp.md).|
@@ -94,7 +95,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1442
+Content-length: 1469
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -118,6 +119,7 @@ Content-length: 1442
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -149,7 +151,7 @@ Content-length: 1442
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1614
+Content-Length: 1641
 
 {
   "@odata.type": "#microsoft.graph.managedIOSLobApp",
@@ -176,6 +178,7 @@ Content-Length: 1614
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appAvailability": "lineOfBusiness",
   "version": "Version value",
   "committedContentVersion": "Committed Content Version value",
@@ -201,6 +204,7 @@ Content-Length: 1614
   "identityVersion": "Identity Version value"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 44de643c0f4887b54ec849f963cec346b436f506
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a6ea3a2e745049292979c45bd1a2af2137bd30b6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967414"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772638"
 ---
 # <a name="create-grouppolicypresentationvaluemultitext"></a>Создание Граупполиципресентатионвалуемултитекст
 
@@ -53,7 +53,7 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Ключ объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|Коллекция строк|Коллекция непустых строк для связанной презентации.|
+|values|Коллекция String|Коллекция непустых строк для связанной презентации.|
 
 
 
@@ -94,6 +94,7 @@ Content-Length: 292
   ]
 }
 ```
+
 
 
 

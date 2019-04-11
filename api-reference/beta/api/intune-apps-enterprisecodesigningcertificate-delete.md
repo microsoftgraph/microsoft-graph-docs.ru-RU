@@ -4,12 +4,12 @@ description: Удаляет объект Ентерприсекодесигни�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 11bfa26aeed0d4ded24aeb1318c47152a12122e3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f4ebe05c55b54731007d053ad55762dc206d58e2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974043"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771756"
 ---
 # <a name="delete-enterprisecodesigningcertificate"></a>Удаление Ентерприсекодесигнингцертификате
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/enterpriseCodeSignin
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

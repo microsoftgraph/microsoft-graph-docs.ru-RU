@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windows1
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05db3755b07f33d7c8e0d715dba9b386ea564eaf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c41eda1843612adf5c97a6c95c3a48657239c6a9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989493"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773317"
 ---
 # <a name="get-windows10importedpfxcertificateprofile"></a>Получение windows10ImportedPFXCertificateProfile
 
@@ -92,6 +92,7 @@ Content-Length: 813
   }
 }
 ```
+
 
 
 

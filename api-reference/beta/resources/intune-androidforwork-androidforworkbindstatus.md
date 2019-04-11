@@ -4,12 +4,12 @@ description: Состояние BIND клиента с помощью API Google
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f926f808e566263fd59526aa5531baf827ce3f72
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74d5079dcde477fb99ac96eeed72e105506b9d81
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139566"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772078"
 ---
 # <a name="androidforworkbindstatus-enum-type"></a>тип перечисления Андроидфорворкбиндстатус
 
@@ -22,10 +22,11 @@ ms.locfileid: "30139566"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нотбаунд|нуль|Н/Д|
-|bound (привязка)|1,1|Н/Д|
-|Баундандвалидатед|2|Н/Д|
-|Отмена привязки|4|Н/Д|
+|Нотбаунд|нуль|Пока не задокументировано.|
+|свободного|1,1|Пока не задокументировано.|
+|Баундандвалидатед|2|Пока не задокументировано.|
+|Отмена привязки|4|Пока не задокументировано.|
+
 
 
 

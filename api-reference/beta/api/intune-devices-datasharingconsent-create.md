@@ -4,12 +4,12 @@ description: Создание нового объекта Даташарингк
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0bb20f6e6029e33483d28545bf3f9be56b052a8f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8a242d5c8058af72ba7c78cf3a613534db887c97
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978082"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774304"
 ---
 # <a name="create-datasharingconsent"></a>Создание Даташарингконсент
 
@@ -101,6 +101,7 @@ Content-Length: 382
   "grantedByUserId": "Granted By User Id value"
 }
 ```
+
 
 
 

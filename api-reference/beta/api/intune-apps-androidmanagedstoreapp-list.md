@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Анд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: efd5be62e0c55b467042c21f380d3fe5792a9b98
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f03e05deec11e49d9c152dbb893b03dd655063a2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982947"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774752"
 ---
 # <a name="list-androidmanagedstoreapps"></a>Список Андроидманажедстореаппс
 
@@ -62,7 +62,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1236
+Content-Length: 1267
 
 {
   "value": [
@@ -91,6 +91,7 @@ Content-Length: 1236
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ],
+      "dependentAppCount": 1,
       "packageId": "Package Id value",
       "appIdentifier": "App Identifier value",
       "usedLicenseCount": 0,
@@ -101,6 +102,7 @@ Content-Length: 1236
   ]
 }
 ```
+
 
 
 

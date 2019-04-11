@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windowsI
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd7fd86a0023f94c4a50eacc5baab3a0bee28439
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 019a7280ddf7d5f565180b273fff3980712a50af
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957985"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772050"
 ---
 # <a name="get-windowsinformationprotection"></a>Получение windowsInformationProtection
 
@@ -202,6 +202,7 @@ Content-Length: 4405
   }
 }
 ```
+
 
 
 

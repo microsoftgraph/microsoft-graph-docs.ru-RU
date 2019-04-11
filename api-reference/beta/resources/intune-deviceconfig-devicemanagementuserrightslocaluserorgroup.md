@@ -4,12 +4,12 @@ description: Представляет сведения для локальног
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 68c514635540bcf12db27e8a9ca816573293d3ad
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cfdb49ef0b98e3d76d092b1ebf9574d6df8c47d9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174862"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774717"
 ---
 # <a name="devicemanagementuserrightslocaluserorgroup-resource-type"></a>Тип ресурса Девицеманажементусерригхтслокалусерорграуп
 
@@ -44,6 +44,7 @@ ms.locfileid: "30174862"
   "securityIdentifier": "String"
 }
 ```
+
 
 
 

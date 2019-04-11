@@ -4,12 +4,12 @@ description: Объект конфигурации групповой полит
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 540da94d92f3056a6699b7112f3589f6da4b7144
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f9c925ba10b1dde26e51a64b912c33143d58def3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160755"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774444"
 ---
 # <a name="grouppolicyconfiguration-resource-type"></a>Тип ресурса Граупполициконфигуратион
 
@@ -27,7 +27,7 @@ ms.locfileid: "30160755"
 |[Создание Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-create.md)|[Граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Создание нового объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
 |[Удаление Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-delete.md)|Нет|Удаляет объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md).|
 |[Обновление Граупполициконфигуратион](../api/intune-grouppolicy-grouppolicyconfiguration-update.md)|[Граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md)|Обновление свойств объекта [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) .|
-|[Действие assign](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|Коллекция [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Н/Д|
+|[Действие назначения](../api/intune-grouppolicy-grouppolicyconfiguration-assign.md)|Коллекция [граупполициконфигуратионассигнмент](../resources/intune-grouppolicy-grouppolicyconfigurationassignment.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -35,10 +35,10 @@ ms.locfileid: "30160755"
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |displayName|String|Предоставленное пользователем имя объекта ресурса.|
 |description|String|Предоставленное пользователем описание объекта ресурса.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Дефинитионвалуес|Коллекция [граупполицидефинитионвалуе](../resources/intune-grouppolicy-grouppolicydefinitionvalue.md)|Список включенных или отключенных значений определений групповой политики для конфигурации.|
@@ -62,6 +62,7 @@ ms.locfileid: "30160755"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

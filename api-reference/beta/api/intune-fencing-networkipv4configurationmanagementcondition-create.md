@@ -4,12 +4,12 @@ description: Создание нового объекта networkIPv4Configurati
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e045c50df3e2ce74ed3bc4d4420c506ef5e7a651
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6459876d0ee318ed3d855a5ff03cb43599773ca3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966175"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774549"
 ---
 # <a name="create-networkipv4configurationmanagementcondition"></a>Создание networkIPv4ConfigurationManagementCondition
 
@@ -62,8 +62,8 @@ POST /deviceManagement/managementConditions/{managementConditionId}/managementCo
 |ipV4Prefix|String|Подсеть IPv4, к которой необходимо подключиться. Например, 10.0.0.0/8|
 |ipV4Gateway|String|IPv4-адрес шлюза. Например, 10.0.0.0|
 |ipV4DHCPServer|String|IPv4-адрес DHCP-сервера для адаптера.|
-|ipV4DNSServerList|Коллекция строк|DNS-серверы IPv4, настроенные для адаптера.|
-|Днссуффикслист|Коллекция строк|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
+|ipV4DNSServerList|Коллекция String|DNS-серверы IPv4, настроенные для адаптера.|
+|Днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
 
 
 
@@ -130,6 +130,7 @@ Content-Length: 697
   ]
 }
 ```
+
 
 
 

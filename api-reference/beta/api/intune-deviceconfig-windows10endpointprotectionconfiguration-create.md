@@ -4,12 +4,12 @@ description: Создание объекта windows10EndpointProtectionConfigur
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e1fc2745ffe0a9c3274b23d424401f19f76cc50b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8af7cd90cf42ce3a8e79ba5a67a45e2b166200de
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987239"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771658"
 ---
 # <a name="create-windows10endpointprotectionconfiguration"></a>Создание windows10EndpointProtectionConfiguration
 
@@ -44,7 +44,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта windows10EndpointProtectionConfiguration в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые необходимо указывать при создании объекта windows10EndpointProtectionConfiguration.
@@ -53,7 +53,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -142,7 +142,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Локалсекуритйоптионсдоноталлованонимаусенумератионофсамаккаунтс|Boolean|Этот параметр безопасности определяет, какие дополнительные разрешения будут предоставлены анонимным подключениям к компьютеру.|
 |Локалсекуритйоптионсаллованонимаусенумератионофсамаккаунтсандшарес|Boolean|Этот параметр безопасности определяет, разрешено ли анонимным пользователям выполнять определенные действия, например перечислять имена доменных учетных записей и сетевые общие папки.|
 |Локалсекуритйоптионсдонотстореланманажерхашвалуеоннекстпассвордчанже|Boolean|Этот параметр безопасности определяет, будет ли сохраняться значение хэша LAN Manager (LM) для нового пароля при следующем изменении пароля. По умолчанию он не хранится.|
-|Локалсекуритйоптионссмарткардремовалбехавиор|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md);|Этот параметр безопасности определяет, что происходит при удалении смарт-карты пользователя, выполнившего вход в систему, из устройства чтения смарт-карт. Возможные значения: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
+|Локалсекуритйоптионссмарткардремовалбехавиор|[localSecurityOptionsSmartCardRemovalBehaviorType](../resources/intune-deviceconfig-localsecurityoptionssmartcardremovalbehaviortype.md)|Этот параметр безопасности определяет, что происходит при удалении смарт-карты пользователя, выполнившего вход в систему, из устройства чтения смарт-карт. Возможные значения: `lockWorkstation`, `noAction`, `forceLogoff`, `disconnectRemoteDesktopSession`.|
 |Дефендерсекуритицентердисаблеаппбровсеруи|Boolean|Используется для отключения отображения области защиты приложений и браузера.|
 |Дефендерсекуритицентердисаблефамилюи|Boolean|Используется для отключения отображения области семьи.|
 |Дефендерсекуритицентердисаблехеалсуи|Boolean|Используется для отключения отображения области производительности и работоспособности устройства.|
@@ -201,7 +201,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Дефендеремаилконтентексекутион|[Дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее, следует ли удалять исполняемые файлы (exe, DLL, PS, JS, VBS и т. д.) из электронной почты (почтовая или почтовая программа). Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |Дефендерадванцедрансомеварепротектионтипе|[Дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее на использование расширенной защиты в рансомеваре. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |Дефендергуардмифолдерстипе|[Фолдерпротектионтипе](../resources/intune-deviceconfig-folderprotectiontype.md)|Значение, указывающее поведение защищенных папок. Возможные значения: `userDefined`, `enable`, `auditMode`, `blockDiskModification`, `auditDiskModification`.|
-|defenderGuardedFoldersAllowedAppPaths|Коллекция строк|Список путей к файлам EXE, которым разрешен доступ к защищенным папкам|
+|defenderGuardedFoldersAllowedAppPaths|Коллекция String|Список путей к файлам EXE, которым разрешен доступ к защищенным папкам|
 |defenderAdditionalGuardedFolders|Коллекция String|Список путей к папкам, которые следует добавить в список защищенных папок|
 |Дефендернетворкпротектионтипе|[Дефендерпротектионтипе](../resources/intune-deviceconfig-defenderprotectiontype.md)|Значение, указывающее поведение Нетворкпротектион. Возможные значения: `userDefined`, `enable`, `auditMode`.|
 |defenderExploitProtectionXml|Binary|XML-файл с информацией о защите от эксплойтов.|
@@ -232,7 +232,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker. Эта политика действительна только для мобильных устройств.|
 |bitLockerEncryptDevice|Boolean|Позволяет администратору требовать включения шифрования с помощью BitLocker.|
 |bitLockerSystemDrivePolicy|[bitLockerSystemDrivePolicy](../resources/intune-deviceconfig-bitlockersystemdrivepolicy.md)|Политика системного диска BitLocker.|
-|bitLockerFixedDrivePolicy;|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md);|Политика фиксированного диска BitLocker.|
+|bitLockerFixedDrivePolicy|[bitLockerFixedDrivePolicy](../resources/intune-deviceconfig-bitlockerfixeddrivepolicy.md)|Политика фиксированного диска BitLocker.|
 |bitLockerRemovableDrivePolicy|[bitLockerRemovableDrivePolicy](../resources/intune-deviceconfig-bitlockerremovabledrivepolicy.md)|Политика BitLocker в отношении съемных дисков.|
 
 
@@ -1570,6 +1570,7 @@ Content-Length: 27813
   }
 }
 ```
+
 
 
 

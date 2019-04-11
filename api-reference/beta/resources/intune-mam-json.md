@@ -4,12 +4,12 @@ description: Представляет данные, возвращаемые в 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c602b1dd355d2780d564ffe3a6e25b3c18bff7ac
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 16ad26bc81d236d153c6188817575b4d682e6ce9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153930"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771616"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
@@ -23,7 +23,7 @@ ms.locfileid: "30153930"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "30153930"
   "@odata.type": "#microsoft.graph.Json"
 }
 ```
+
 
 
 

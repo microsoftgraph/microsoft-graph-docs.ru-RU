@@ -4,12 +4,12 @@ description: Возможные значения списка Конфигура
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfe34d8e0a6aa9b9f816cf19304af3a521fc654c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3554281a937f09db5592b3afc152550c814539fe
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156968"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774059"
 ---
 # <a name="configurationusage-enum-type"></a>тип перечисления Конфигуратионусаже
 
@@ -22,9 +22,10 @@ ms.locfileid: "30156968"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|заблокировано|нуль|Разрешена.|
-|Обязательный|1,1|Обязательно указывать.|
-|разрешенных|2|Необязательное свойство.|
+|заблокированных|нуль|Разрешена.|
+|Обязательный|1,1|Обязательный.|
+|разрешенных|2|Необязательный параметр.|
+
 
 
 

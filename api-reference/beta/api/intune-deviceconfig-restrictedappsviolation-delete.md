@@ -4,12 +4,12 @@ description: Удаляет объект Рестриктедаппсвиола�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 949fbaba592838e28a7f874b9bef8de71e538519
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 362481c00288b6cb52fdcad6ab9240f5c91cff50
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985377"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773436"
 ---
 # <a name="delete-restrictedappsviolation"></a>Удаление Рестриктедаппсвиолатион
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationRest
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

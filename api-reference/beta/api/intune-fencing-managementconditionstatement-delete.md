@@ -4,12 +4,12 @@ description: Удаляет объект Манажементкондитион�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8c876f58cdc112f9607cc3900e4a638c24e999cd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6b078e5b887534c00581bfb6ea401b79e6bf161c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971362"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772022"
 ---
 # <a name="delete-managementconditionstatement"></a>Удаление Манажементкондитионстатемент
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/managementConditionStat
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Винд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6df9c26f004673a5f84aa0a795e37b4c9053dc54
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 41daca4fe9ba7e4bb6a271cf26fbe9789bba70ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962710"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773555"
 ---
 # <a name="get-windowsphoneeasemailprofileconfiguration"></a>Получение Виндовсфониасемаилпрофилеконфигуратион
 
@@ -99,6 +99,7 @@ Content-Length: 1035
   }
 }
 ```
+
 
 
 

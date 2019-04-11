@@ -4,12 +4,12 @@ description: Создание нового объекта windows10EnrollmentCom
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9751c71cee378eabe3bbbf065e2e5ba3e0cdd337
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5c2edde71ba4ec8b61fe8894f05b0a6501df053c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957033"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31774738"
 ---
 # <a name="create-windows10enrollmentcompletionpageconfiguration"></a>Создание windows10EnrollmentCompletionPageConfiguration
 
@@ -64,7 +64,7 @@ POST /deviceManagement/deviceEnrollmentConfigurations
 |Кустомеррормессаже|String|Задать настраиваемое сообщение об ошибке, которое будет отображаться после сбоя установки|
 |Инсталлпрогресстимеаутинминутес|Int32|Задать время ожидания установки (в минутах)|
 |Алловдевицеусеонинсталлфаилуре|Boolean|Разрешить пользователю продолжать использовать устройство при сбое установки|
-|Селектедмобилеаппидс|Коллекция строк|Выбранные приложения для отслеживания состояния установки|
+|Селектедмобилеаппидс|Коллекция String|Выбранные приложения для отслеживания состояния установки|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 755
   ]
 }
 ```
+
 
 
 

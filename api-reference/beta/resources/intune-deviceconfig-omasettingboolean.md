@@ -4,12 +4,12 @@ description: Логическое определение параметров OM
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 739c7377b2b85ff3bae9dd0cf755961a9ca3cbb9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ff861d014ea134be95975977eccf3672d9be6698
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161595"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773653"
 ---
 # <a name="omasettingboolean-resource-type"></a>Тип ресурса omaSettingBoolean
 
@@ -30,7 +30,7 @@ ms.locfileid: "30161595"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Boolean|Значение|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -49,6 +49,7 @@ ms.locfileid: "30161595"
   "value": true
 }
 ```
+
 
 
 

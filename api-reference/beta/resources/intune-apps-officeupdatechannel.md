@@ -4,12 +4,12 @@ description: ПереЧисление, указывающее канал обн�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 62b91cc33ecce517015e7070caacd4dab8b9fbcf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c4db2473213e879b7beee7f082767bb4a9f63aee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147861"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772113"
 ---
 # <a name="officeupdatechannel-enum-type"></a>тип перечисления Оффицеупдатечаннел
 
@@ -22,11 +22,12 @@ ms.locfileid: "30147861"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Н/Д|
-|этой|1,1|Н/Д|
-|deferred|2|Н/Д|
-|Firstreleasecurrent —|4|Н/Д|
-|firstReleaseDeferred|4|Н/Д|
+|нет|нуль|Пока не задокументировано.|
+|этой|1,1|Пока не задокументировано.|
+|deferred|2|Пока не задокументировано.|
+|Firstreleasecurrent —|4|Пока не задокументировано.|
+|firstReleaseDeferred|SP4|Пока не задокументировано.|
+
 
 
 

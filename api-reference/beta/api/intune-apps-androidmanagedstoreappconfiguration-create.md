@@ -4,12 +4,12 @@ description: Создание нового объекта Андроидмана
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ee33f730fa05e1bb7a9640622960a37b926d1780
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 295f02e35e8d25b096678216817a11e9b4ac5c69
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986273"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773044"
 ---
 # <a name="create-androidmanagedstoreappconfiguration"></a>Создание Андроидманажедстореаппконфигуратион
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Андроидманажедстореаппконфигуратион в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Андроидманажедстореаппконфигуратион.
@@ -52,7 +52,7 @@ POST /deviceAppManagement/mobileAppConfigurations
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |targetedMobileApps|Коллекция String|приложение-обработчик Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этой сущности конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этой сущности конфигурации приложения. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |description|String|Администратор предоставил описание конфигурации устройства. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Унаследовано от [managedDeviceMobileAppConfiguration](../resources/intune-apps-manageddevicemobileappconfiguration.md)|
@@ -134,6 +134,7 @@ Content-Length: 764
   "appSupportsOemConfig": true
 }
 ```
+
 
 
 

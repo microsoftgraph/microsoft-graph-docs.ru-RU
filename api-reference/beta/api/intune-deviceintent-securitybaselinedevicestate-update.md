@@ -4,12 +4,12 @@ description: Обновление свойств объекта Секурити
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a1797f166fea7eb3507ae6a477ae574f4146c558
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: d454f5a58601cb3a8824393e017cd0acb16a0d9d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522694"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31773982"
 ---
 # <a name="update-securitybaselinedevicestate"></a>Обновление Секуритибаселинедевицестате
 
@@ -54,7 +54,7 @@ PATCH /deviceManagement/templates/{deviceManagementTemplateId}/microsoft.graph.s
 |Манажеддевицеид|String|Идентификатор устройства Intune|
 |deviceDisplayName|String|Отображаемое имя устройства|
 |userPrincipalName|String|"User Principal Name" (Имя участника-пользователя);|
-|state|[Секуритибаселинекомплианцестате](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия нормативным требованиям безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |lastReportedDateTime|DateTimeOffset|Дата и время последнего изменения отчета о политике|
 
 
@@ -98,8 +98,6 @@ Content-Length: 359
   "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
 }
 ```
-
-
 
 
 

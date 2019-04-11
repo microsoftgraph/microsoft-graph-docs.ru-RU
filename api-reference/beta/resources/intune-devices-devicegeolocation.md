@@ -4,12 +4,12 @@ description: Расположение устройства
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1eaa46929ae627dbf6cdee8d300b7910b4817ffc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: acf2987e7c022754ff0659d82027b4d0d26901bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149604"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772176"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -24,15 +24,15 @@ ms.locfileid: "30149604"
 |:---|:---|:---|
 |Ластколлектеддатетимеутк|DateTimeOffset|Время записи расположения относительно времени UTC|
 |lastCollectedDateTime|DateTimeOffset|Время записи расположения относительно времени UTC|
-|longitude|Double|Долгота расположения устройства|
-|latitude|Double|Широта расположения устройства|
-|altitude|Double|Высота (метров над уровнем моря)|
-|horizontalAccuracy|Double|Точность долготы и широты (м)|
-|verticalAccuracy|Double|Точность высоты (м)|
-|heading|Double|Направление от географического севера (градусов)|
+|longitude|Двойное с плавающей точкой|Долгота расположения устройства|
+|latitude|Двойное с плавающей точкой|Широта расположения устройства|
+|altitude|Двойное с плавающей точкой|Высота (метров над уровнем моря)|
+|horizontalAccuracy|Двойное с плавающей точкой|Точность долготы и широты (м)|
+|verticalAccuracy|Двойное с плавающей точкой|Точность высоты (м)|
+|heading|Двойное с плавающей точкой|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -56,6 +56,7 @@ ms.locfileid: "30149604"
   "speed": "<Unknown Primitive Type Edm.Double>"
 }
 ```
+
 
 
 

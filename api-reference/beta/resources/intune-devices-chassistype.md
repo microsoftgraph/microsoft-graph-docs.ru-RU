@@ -4,12 +4,12 @@ description: Тип корпуса.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1e925dcf502c28951bb8636652e5d429d0cd0916
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: eeee3eefb63c5387b134daeb75f920dbe13d1236
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161525"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31772575"
 ---
 # <a name="chassistype-enum-type"></a>тип перечисления Чассистипе
 
@@ -26,11 +26,12 @@ ms.locfileid: "30161525"
 |системной|1,1|Системной.|
 |ноутбуков|2|Ноутбуков.|
 |Ворксворкстатион|4|Рабочие.|
-|Ентерприсесервер|4|Сервер предприятия.|
+|Ентерприсесервер|SP4|Сервер предприятия.|
 |phone|100|Звонков.|
 |ПК|101|Мобильный планшет.|
 |Мобилеосер|102|Другой мобильный.|
 |Мобилеункновн|103|НеИзвестный мобильный телефон.|
+
 
 
 

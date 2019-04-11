@@ -4,12 +4,12 @@ description: Ресурс Импортеддевицеидентити пред�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1f5dcc3d7ef6cb59bffe1d7b8cfda958e76c3e35
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: d7cc903fa1b30177f037493fe090ebfde31831b0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572105"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771945"
 ---
 # <a name="importeddeviceidentity-resource-type"></a>Тип ресурса Импортеддевицеидентити
 
@@ -28,20 +28,20 @@ ms.locfileid: "30572105"
 |[Удаление Импортеддевицеидентити](../api/intune-enrollment-importeddeviceidentity-delete.md)|Нет|Удаляет объект [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md).|
 |[Обновление Импортеддевицеидентити](../api/intune-enrollment-importeddeviceidentity-update.md)|[Импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Обновление свойств объекта [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md) .|
 |[Действие importDeviceIdentityList](../api/intune-enrollment-importeddeviceidentity-importdeviceidentitylist.md)|Коллекция [импортеддевицеидентитиресулт](../resources/intune-enrollment-importeddeviceidentityresult.md)|Пока не задокументировано.|
-|[действие Сеарчексистингидентитиес](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Н/Д|
+|[Действие searchExistingIdentities](../api/intune-enrollment-importeddeviceidentity-searchexistingidentities.md)|Коллекция [импортеддевицеидентити](../resources/intune-enrollment-importeddeviceidentity.md)|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Идентификатор импортированного удостоверения устройства|
-|Импортеддевицеидентифиер|Строка|Импортированный идентификатор устройства|
+|Импортеддевицеидентифиер|String|Импортированный идентификатор устройства|
 |Импортеддевицеидентититипе|[Импортеддевицеидентититипе](../resources/intune-enrollment-importeddeviceidentitytype.md)|Тип импортированного удостоверения устройства. Возможные значения: `unknown`, `imei`, `serialNumber`.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения описания|
 |createdDateTime|DateTimeOffset|Дата и время создания устройства|
 |Ластконтактеддатетиме|DateTimeOffset|Дата и время последнего обращения к устройству|
 |description|String|Описание устройства|
 |Енроллментстате|[Енроллментстате](../resources/intune-enrollment-enrollmentstate.md)|Состояние устройства в Intune. Возможные значения: `unknown`, `enrolled`, `pendingReset`, `failed`, `notContacted`, `blocked`.|
-|platform|[управляем](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
+|platform|[platform](../resources/intune-enrollment-platform.md)|Платформа устройства. Возможные значения: `unknown`, `ios`, `android`, `windows`, `windowsMobile`, `macOS`.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -68,6 +68,7 @@ ms.locfileid: "30572105"
   "platform": "String"
 }
 ```
+
 
 
 
