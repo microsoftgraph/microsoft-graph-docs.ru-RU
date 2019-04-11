@@ -4,31 +4,31 @@ description: Обновление свойств объекта deviceConfigurat
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 517bc961d7845f7fe49b36d9e9e6151681639d24
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 120f7ff6a50318e938fcf2a8e2d0664d72d4151f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967435"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798623"
 ---
-# <a name="update-deviceconfigurationuserstatus"></a><span data-ttu-id="4565b-103">Обновление объекта deviceConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="4565b-103">Update deviceConfigurationUserStatus</span></span>
+# <a name="update-deviceconfigurationuserstatus"></a><span data-ttu-id="8a699-103">Обновление объекта deviceConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="8a699-103">Update deviceConfigurationUserStatus</span></span>
 
-> <span data-ttu-id="4565b-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4565b-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="8a699-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a699-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="4565b-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4565b-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="8a699-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="8a699-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="4565b-106">Обновление свойств объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="4565b-106">Update the properties of a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
+<span data-ttu-id="8a699-106">Обновление свойств объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="8a699-106">Update the properties of a [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="4565b-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="4565b-107">Prerequisites</span></span>
-<span data-ttu-id="4565b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="4565b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="8a699-107">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="8a699-107">Prerequisites</span></span>
+<span data-ttu-id="8a699-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8a699-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="4565b-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="4565b-110">Permission type</span></span>|<span data-ttu-id="4565b-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="4565b-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="8a699-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8a699-110">Permission type</span></span>|<span data-ttu-id="8a699-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="8a699-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="4565b-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="4565b-112">Delegated (work or school account)</span></span>|<span data-ttu-id="4565b-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="4565b-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="4565b-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="4565b-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="4565b-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4565b-115">Not supported.</span></span>|
-|<span data-ttu-id="4565b-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="4565b-116">Application</span></span>|<span data-ttu-id="4565b-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4565b-117">Not supported.</span></span>|
+|<span data-ttu-id="8a699-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8a699-112">Delegated (work or school account)</span></span>|<span data-ttu-id="8a699-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8a699-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="8a699-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8a699-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="8a699-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a699-115">Not supported.</span></span>|
+|<span data-ttu-id="8a699-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8a699-116">Application</span></span>|<span data-ttu-id="8a699-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8a699-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="4565b-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="4565b-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8a699-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8a699-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -45,35 +45,35 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsWifiEnterpriseEAPConfiguration/rootCertificatesForServerValidation/{windows81TrustedRootCertificateId}/userStatuses/{deviceConfigurationUserStatusId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4565b-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="4565b-119">Request headers</span></span>
-|<span data-ttu-id="4565b-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="4565b-120">Header</span></span>|<span data-ttu-id="4565b-121">Значение</span><span class="sxs-lookup"><span data-stu-id="4565b-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="8a699-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8a699-119">Request headers</span></span>
+|<span data-ttu-id="8a699-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="8a699-120">Header</span></span>|<span data-ttu-id="8a699-121">Значение</span><span class="sxs-lookup"><span data-stu-id="8a699-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="4565b-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="4565b-122">Authorization</span></span>|<span data-ttu-id="4565b-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="4565b-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="4565b-124">Accept</span><span class="sxs-lookup"><span data-stu-id="4565b-124">Accept</span></span>|<span data-ttu-id="4565b-125">application/json</span><span class="sxs-lookup"><span data-stu-id="4565b-125">application/json</span></span>|
+|<span data-ttu-id="8a699-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8a699-122">Authorization</span></span>|<span data-ttu-id="8a699-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8a699-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="8a699-124">Accept</span><span class="sxs-lookup"><span data-stu-id="8a699-124">Accept</span></span>|<span data-ttu-id="8a699-125">application/json</span><span class="sxs-lookup"><span data-stu-id="8a699-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="4565b-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="4565b-126">Request body</span></span>
-<span data-ttu-id="4565b-127">В тексте запроса добавьте представление объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4565b-127">In the request body, supply a JSON representation for the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="8a699-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="8a699-126">Request body</span></span>
+<span data-ttu-id="8a699-127">В тексте запроса добавьте представление объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8a699-127">In the request body, supply a JSON representation for the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object.</span></span>
 
-<span data-ttu-id="4565b-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="4565b-128">The following table shows the properties that are required when you create the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span></span>
+<span data-ttu-id="8a699-128">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="8a699-128">The following table shows the properties that are required when you create the [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md).</span></span>
 
-|<span data-ttu-id="4565b-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="4565b-129">Property</span></span>|<span data-ttu-id="4565b-130">Тип</span><span class="sxs-lookup"><span data-stu-id="4565b-130">Type</span></span>|<span data-ttu-id="4565b-131">Описание</span><span class="sxs-lookup"><span data-stu-id="4565b-131">Description</span></span>|
+|<span data-ttu-id="8a699-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="8a699-129">Property</span></span>|<span data-ttu-id="8a699-130">Тип</span><span class="sxs-lookup"><span data-stu-id="8a699-130">Type</span></span>|<span data-ttu-id="8a699-131">Описание</span><span class="sxs-lookup"><span data-stu-id="8a699-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="4565b-132">id</span><span class="sxs-lookup"><span data-stu-id="4565b-132">id</span></span>|<span data-ttu-id="4565b-133">Строка</span><span class="sxs-lookup"><span data-stu-id="4565b-133">String</span></span>|<span data-ttu-id="4565b-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="4565b-134">Key of the entity.</span></span>|
-|<span data-ttu-id="4565b-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="4565b-135">userDisplayName</span></span>|<span data-ttu-id="4565b-136">String</span><span class="sxs-lookup"><span data-stu-id="4565b-136">String</span></span>|<span data-ttu-id="4565b-137">Имя пользователя в объекте DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="4565b-137">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="4565b-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="4565b-138">devicesCount</span></span>|<span data-ttu-id="4565b-139">Int32</span><span class="sxs-lookup"><span data-stu-id="4565b-139">Int32</span></span>|<span data-ttu-id="4565b-140">Количество устройств для этого пользователя.</span><span class="sxs-lookup"><span data-stu-id="4565b-140">Devices count for that user.</span></span>|
-|<span data-ttu-id="4565b-141">status</span><span class="sxs-lookup"><span data-stu-id="4565b-141">status</span></span>|[<span data-ttu-id="4565b-142">Комплианцестатус</span><span class="sxs-lookup"><span data-stu-id="4565b-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="4565b-143">Состояние соответствия требованиям для отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="4565b-143">Compliance status of the policy report.</span></span> <span data-ttu-id="4565b-144">Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="4565b-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="4565b-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="4565b-145">lastReportedDateTime</span></span>|<span data-ttu-id="4565b-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4565b-146">DateTimeOffset</span></span>|<span data-ttu-id="4565b-147">Дата и время последнего изменения отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="4565b-147">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="4565b-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="4565b-148">userPrincipalName</span></span>|<span data-ttu-id="4565b-149">String</span><span class="sxs-lookup"><span data-stu-id="4565b-149">String</span></span>|<span data-ttu-id="4565b-150">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="4565b-150">UserPrincipalName.</span></span>|
+|<span data-ttu-id="8a699-132">id</span><span class="sxs-lookup"><span data-stu-id="8a699-132">id</span></span>|<span data-ttu-id="8a699-133">Строка</span><span class="sxs-lookup"><span data-stu-id="8a699-133">String</span></span>|<span data-ttu-id="8a699-134">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="8a699-134">Key of the entity.</span></span>|
+|<span data-ttu-id="8a699-135">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="8a699-135">userDisplayName</span></span>|<span data-ttu-id="8a699-136">String</span><span class="sxs-lookup"><span data-stu-id="8a699-136">String</span></span>|<span data-ttu-id="8a699-137">Имя пользователя в объекте DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="8a699-137">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="8a699-138">devicesCount</span><span class="sxs-lookup"><span data-stu-id="8a699-138">devicesCount</span></span>|<span data-ttu-id="8a699-139">Int32</span><span class="sxs-lookup"><span data-stu-id="8a699-139">Int32</span></span>|<span data-ttu-id="8a699-140">Количество устройств для этого пользователя.</span><span class="sxs-lookup"><span data-stu-id="8a699-140">Devices count for that user.</span></span>|
+|<span data-ttu-id="8a699-141">status</span><span class="sxs-lookup"><span data-stu-id="8a699-141">status</span></span>|[<span data-ttu-id="8a699-142">Комплианцестатус</span><span class="sxs-lookup"><span data-stu-id="8a699-142">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="8a699-143">Состояние соответствия требованиям для отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="8a699-143">Compliance status of the policy report.</span></span> <span data-ttu-id="8a699-144">Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="8a699-144">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="8a699-145">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="8a699-145">lastReportedDateTime</span></span>|<span data-ttu-id="8a699-146">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="8a699-146">DateTimeOffset</span></span>|<span data-ttu-id="8a699-147">Дата и время последнего изменения отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="8a699-147">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="8a699-148">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="8a699-148">userPrincipalName</span></span>|<span data-ttu-id="8a699-149">String</span><span class="sxs-lookup"><span data-stu-id="8a699-149">String</span></span>|<span data-ttu-id="8a699-150">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="8a699-150">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="4565b-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="4565b-151">Response</span></span>
-<span data-ttu-id="4565b-152">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="4565b-152">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="8a699-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a699-151">Response</span></span>
+<span data-ttu-id="8a699-152">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="8a699-152">If successful, this method returns a `200 OK` response code and an updated [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4565b-153">Пример</span><span class="sxs-lookup"><span data-stu-id="4565b-153">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8a699-153">Пример</span><span class="sxs-lookup"><span data-stu-id="8a699-153">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="4565b-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="4565b-154">Request</span></span>
-<span data-ttu-id="4565b-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="4565b-155">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="8a699-154">Запрос</span><span class="sxs-lookup"><span data-stu-id="8a699-154">Request</span></span>
+<span data-ttu-id="8a699-155">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8a699-155">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/userStatuses/{deviceConfigurationUserStatusId}
 Content-type: application/json
@@ -89,8 +89,8 @@ Content-length: 290
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="4565b-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="4565b-156">Response</span></span>
-<span data-ttu-id="4565b-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="4565b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="8a699-156">Отклик</span><span class="sxs-lookup"><span data-stu-id="8a699-156">Response</span></span>
+<span data-ttu-id="8a699-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="8a699-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -106,6 +106,7 @@ Content-Length: 339
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 
