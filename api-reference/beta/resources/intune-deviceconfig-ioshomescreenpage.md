@@ -4,12 +4,12 @@ description: Страница, содержащая приложения и па
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c958570caa81cff7add1e174cbb678fc68cecd87
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2c726d751d81277a4f1b79a33606e1a2ec3eaede
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149541"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807562"
 ---
 # <a name="ioshomescreenpage-resource-type"></a>Тип ресурса iosHomeScreenPage
 
@@ -25,7 +25,7 @@ ms.locfileid: "30149541"
 |displayName|String|Имя страницы|
 |icons|Коллекция [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|Список приложений и папок, отображающихся на странице. Эта коллекция может включать до 500 элементов.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -60,6 +60,7 @@ ms.locfileid: "30149541"
   ]
 }
 ```
+
 
 
 

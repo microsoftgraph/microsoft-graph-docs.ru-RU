@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ab394d4eed473ff320954e86a30df5f6b27fa59f
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 6c5903342895075ea5521bf6d121920b9c323055
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631629"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805378"
 ---
 # <a name="windowsautopilotdevicetype-enum-type"></a>тип перечисления Виндовсаутопилотдевицетипе
 
@@ -24,6 +24,7 @@ ms.locfileid: "30631629"
 |:---|:---|:---|
 |Виндовспк|нуль|Windows PC|
 |surfaceHub2|1,1|Surface Hub 2|
+
 
 
 

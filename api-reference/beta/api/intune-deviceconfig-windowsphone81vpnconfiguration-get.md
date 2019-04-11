@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windowsP
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2c40c86bf9a0864f1abdbbf4bab7a6749eabca04
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a8fa0cc988aca601e4a609dfe785494aa064fae4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987862"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806540"
 ---
 # <a name="get-windowsphone81vpnconfiguration"></a>Получение windowsPhone81VpnConfiguration
 
@@ -114,6 +114,7 @@ Content-Length: 1514
   }
 }
 ```
+
 
 
 

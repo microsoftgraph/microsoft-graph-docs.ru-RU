@@ -4,12 +4,12 @@ description: Перечисляет API Microsoft Graph для конечных 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
-ms.openlocfilehash: b1e9fc7512c3778fc3cf54223769c8f6dbe0a017
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 360b8e9bdda139246a5418898f1db3962fefaea4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172221"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806568"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -55,7 +55,7 @@ ms.locfileid: "30172221"
 - [Сводка по установке электронной книги](intune-books-ebookinstallsummary.md)
 - [Сертификат подписи корпоративного кода](intune-apps-enterprisecodesigningcertificate.md)
 - [Исключенные приложения](intune-apps-excludedapps.md)
-- [Сведения о шифровании файлов](intune-apps-fileencryptioninfo.md)
+- [Информация о шифровании файлов](intune-apps-fileencryptioninfo.md)
 - [Состояние установки](intune-books-installstate.md)
 - [Тип устройства iOS](intune-apps-iosdevicetype.md)
 - [Бизнес-приложение iOS](intune-apps-ioslobapp.md)
@@ -77,7 +77,7 @@ ms.locfileid: "30172221"
 - [Бизнес-приложение macOS](intune-apps-macoslobapp.md)
 - [Дочернее бизнес-приложение для macOS](intune-apps-macoslobchildapp.md)
 - [Минимальная версия операционной системы macOS](intune-apps-macosminimumoperatingsystem.md)
-- [Набор приложений Office для macOS](intune-apps-macosofficesuiteapp.md)
+- [Приложение из набора Office для macOS](intune-apps-macosofficesuiteapp.md)
 - [Приложение macOS, приобретенное по программе VPP](intune-apps-macosvppapp.md)
 - [Лицензия, назначенная приложению macOS, которое приобретено по программе VPP](intune-apps-macosvppappassignedlicense.md)
 - [Настройки назначения приложения macOS, приобретенного по программе VPP](intune-apps-macosvppappassignmentsettings.md)
@@ -91,13 +91,13 @@ ms.locfileid: "30172221"
 - [Состояние устройства, связанное с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 - [Общие сведения об устройствах, связанные с настройкой мобильных приложений для управляемых устройств](intune-apps-manageddevicemobileappconfigurationdevicesummary.md)
 - [Состояние пользователя, связанное с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
-- [Сводка по пользователям, связанным с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationusersummary.md)
+- [Ресурс managedDeviceMobileAppConfigurationUserSummary](intune-apps-manageddevicemobileappconfigurationusersummary.md)
 - [Управление электронной книгой](intune-books-managedebook.md)
 - [Назначение управляемой электронной книги](intune-books-managedebookassignment.md)
 - [Категория управляемых электронных книг](intune-books-managedebookcategory.md)
-- [Управляемое бизнес-приложение для iOS](intune-apps-managedioslobapp.md)
+- [Управляемые бизнес-приложения для iOS](intune-apps-managedioslobapp.md)
 - [Управляемое приложение из магазина iOS](intune-apps-managediosstoreapp.md)
-- [Управляемое мобильное бизнес-приложение](intune-apps-managedmobilelobapp.md)
+- [Управляемые мобильные бизнес-приложения](intune-apps-managedmobilelobapp.md)
 - [Тип ключа конфигурации приложения MDM](intune-apps-mdmappconfigkeytype.md)
 - [Приложение Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessapp.md)
 - [Настройки назначения приложения из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
@@ -107,13 +107,17 @@ ms.locfileid: "30172221"
 - [Назначение мобильного приложения](intune-apps-mobileappassignment.md)
 - [Настройки назначения мобильного приложения](intune-apps-mobileappassignmentsettings.md)
 - [Категория мобильных приложений](intune-apps-mobileappcategory.md)
-- [Содержимое мобильного приложения](intune-apps-mobileappcontent.md)
+- [Содержимое мобильных приложений](intune-apps-mobileappcontent.md)
 - [Файл содержимого мобильного приложения](intune-apps-mobileappcontentfile.md)
 - [Состояние отправки файла содержимого мобильного приложения](intune-apps-mobileappcontentfileuploadstate.md)
+- [Тип депендеци для мобильного приложения](intune-apps-mobileappdependecytype.md)
+- [Зависимость мобильных приложений](intune-apps-mobileappdependency.md)
 - [Состояние установки мобильных приложений](intune-apps-mobileappinstallstatus.md)
 - [Сводка по установке мобильных приложений](intune-apps-mobileappinstallsummary.md)
 - [Назначение конфигурации подготовки мобильных приложений группе](intune-apps-mobileappprovisioningconfiggroupassignment.md)
 - [Состояние публикации мобильного приложения](intune-apps-mobileapppublishingstate.md)
+- [Связь приложений для мобильных устройств](intune-apps-mobileapprelationship.md)
+- [Состояние связи мобильного приложения](intune-apps-mobileapprelationshipstate.md)
 - [Отдельное мобильное приложение](intune-apps-mobilecontainedapp.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
 - [Состояние проверки клиента Office](intune-cirrus-officeclientcheckinstatus.md)
@@ -130,7 +134,7 @@ ms.locfileid: "30172221"
 - [Информация об итоговом состоянии приложения](intune-apps-resultantappstatedetail.md)
 - [Сертификат подписи кода Symantec](intune-apps-symanteccodesigningcertificate.md)
 - [Состояние установки приложения пользователем](intune-apps-userappinstallstatus.md)
-- [Сводка по состояниям установки для пользователей](intune-books-userinstallstatesummary.md)
+- [Тип ресурса userInstallStateSummary](intune-books-userinstallstatesummary.md)
 - [Тип лицензирования VPP](intune-apps-vpplicensingtype.md)
 - [Веб-приложение](intune-apps-webapp.md)
 - [Бизнес-приложение Win32](intune-apps-win32lobapp.md)
@@ -139,14 +143,19 @@ ms.locfileid: "30172221"
 - [Оператор определения бизнес-приложения Win32](intune-apps-win32lobappdetectionoperator.md)
 - [Определение файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetection.md)
 - [Тип определения файловой системы бизнес-приложения Win32](intune-apps-win32lobappfilesystemdetectiontype.md)
+- [Требования к файловой системе для бизнес-приложения Win32](intune-apps-win32lobappfilesystemrequirement.md)
 - [Интерфейс установки бизнес-приложения Win32](intune-apps-win32lobappinstallexperience.md)
 - [Информация msi бизнес-приложения Win32](intune-apps-win32lobappmsiinformation.md)
 - [Тип пакета msi бизнес-приложения Win32](intune-apps-win32lobappmsipackagetype.md)
 - [Уведомление бизнес-приложения Win32](intune-apps-win32lobappnotification.md)
 - [Определение скрипта power shell бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetection.md)
+- [Тип обнаружения скрипта PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptdetectiontype.md)
+- [Требование к скрипту PowerShell для бизнес-приложения Win32](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Определение кода продукта бизнес-приложения Win32](intune-apps-win32lobappproductcodedetection.md)
 - [Определение реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetection.md)
 - [Тип определения реестра бизнес-приложения Win32](intune-apps-win32lobappregistrydetectiontype.md)
+- [Требования к реестру бизнес-приложений Win32](intune-apps-win32lobappregistryrequirement.md)
+- [Требования к бизнес-приложениям Win32](intune-apps-win32lobapprequirement.md)
 - [Код возврата бизнес-приложения Win32](intune-apps-win32lobappreturncode.md)
 - [Тип кода возврата бизнес-приложения Win32](intune-apps-win32lobappreturncodetype.md)
 - [Windows AppX](intune-apps-windowsappx.md)

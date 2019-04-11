@@ -4,12 +4,12 @@ description: Коллекция ресурсов Windows Information Protection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cbeb58464ccfd7aff3dfc6066ab276a2bd73f5c6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e5a303ad0b05813a4e44dc2208ff1b8692242d88
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149751"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806204"
 ---
 # <a name="windowsinformationprotectionresourcecollection-resource-type"></a>Тип ресурса windowsInformationProtectionResourceCollection
 
@@ -22,10 +22,10 @@ ms.locfileid: "30149751"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Отображаемое имя|
+|displayName|String|Отображаемое имя|
 |resources|Коллекция строк|Коллекция ресурсов|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "30149751"
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Список свойств и связей объектов organi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d8f861a3daab275f320bd76a312c9efa196b9f5b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 067489dad7e08053cd4e6004f1e8b20fca479853
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981512"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807758"
 ---
 # <a name="list-organizations"></a>Список организаций
 
@@ -83,6 +83,7 @@ Content-Length: 622
   ]
 }
 ```
+
 
 
 

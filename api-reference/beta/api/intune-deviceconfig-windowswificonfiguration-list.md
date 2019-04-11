@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 369c69ef49bfc57c3af72644471238ef94b102f5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 0db5e7cc79e4fd1b319bf0247b1263d5285936c5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967477"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805098"
 ---
 # <a name="list-windowswificonfigurations"></a>Список Виндовсвификонфигуратионс
 
@@ -96,6 +96,7 @@ Content-Length: 1087
   ]
 }
 ```
+
 
 
 

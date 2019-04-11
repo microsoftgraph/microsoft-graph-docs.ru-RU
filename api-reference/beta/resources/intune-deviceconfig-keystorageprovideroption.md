@@ -4,12 +4,12 @@ description: Параметры импорта поставщика хранил
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ddc1cffe1f4e6056d53a151a3b36b2622c9bf4b5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b422443abcdb72cd76399ae9f2e0fea59bb6f34f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30153020"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807114"
 ---
 # <a name="keystorageprovideroption-enum-type"></a>тип перечисления Кэйсторажепровидероптион
 
@@ -26,6 +26,7 @@ ms.locfileid: "30153020"
 |Усетпмкспосервисефаил|1,1|Импорт в KSP доверенного ПЛАТФОРМЕНного модуля (TPM), если он присутствует, в противном случае произойдет ошибка.|
 |Усепасспортфорворккспосервисефаил|2|Импорт в паспорт для Works KSP, если он доступен, в противном случае произойдет ошибка.|
 |Усесофтварексп|4|Импорт в KSP программного обеспечения.|
+
 
 
 

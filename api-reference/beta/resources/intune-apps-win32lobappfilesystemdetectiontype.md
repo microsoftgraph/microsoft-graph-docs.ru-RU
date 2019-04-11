@@ -4,12 +4,12 @@ description: Содержит все поддерживаемые типы об�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fc62005b02c30902937035199faffe663e232f4a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 08783d51d6d54b0ccf2cf6d7077185e9e1c286fb
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163499"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804965"
 ---
 # <a name="win32lobappfilesystemdetectiontype-enum-type"></a>тип перечисления win32LobAppFileSystemDetectionType
 
@@ -26,8 +26,10 @@ ms.locfileid: "30163499"
 |Существует|1,1|Существует ли указанный файл или папка.|
 |modifiedDate|2|Дата последнего изменения.|
 |createdDate|4|Дата создания.|
-|version|4|Тип значения Version.|
+|version|SP4|Тип значения Version.|
 |Сизеинмб|17:00|Тип определения размера.|
+|Доеснотексист|ICMPv6|Указанный файл или папка не существует.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Состояние ограниченных приложений
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2618ffe217231ce83571ebb5157f82b51abc531e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0eb8bc3f93f61cf0a2918f80e4464abc54fe8461
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152845"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807835"
 ---
 # <a name="restrictedappsstate-enum-type"></a>тип перечисления Рестриктедаппсстате
 
@@ -24,6 +24,7 @@ ms.locfileid: "30152845"
 |:---|:---|:---|
 |Прохибитедаппс|нуль|Запрещенные приложения|
 |Нотаппроведаппс|1,1|Неутвержденные приложения|
+
 
 
 

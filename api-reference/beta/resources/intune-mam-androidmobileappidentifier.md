@@ -4,12 +4,12 @@ description: Идентификатор приложения для Android.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a45c31a7829102dfabee85f930be397dede17513
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8106475817a333838a9f7e6a591f15ddd2ce111d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140105"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805735"
 ---
 # <a name="androidmobileappidentifier-resource-type"></a>Тип ресурса androidMobileAppIdentifier
 
@@ -27,7 +27,7 @@ ms.locfileid: "30140105"
 |:---|:---|:---|
 |packageId|String|Идентификатор приложения, указанный в магазине Google Play.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "30140105"
   "packageId": "String"
 }
 ```
+
 
 
 

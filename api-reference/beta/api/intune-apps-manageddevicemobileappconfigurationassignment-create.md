@@ -4,12 +4,12 @@ description: Создание объекта managedDeviceMobileAppConfiguration
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 762a971ee7f19da95593537e5da26a30ac9770fb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7da3f40c3e0fa950a443c21aa8cc03e31acce5bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807688"
 ---
 # <a name="create-manageddevicemobileappconfigurationassignment"></a>Создание объекта managedDeviceMobileAppConfigurationAssignment
 
@@ -90,6 +90,7 @@ Content-Length: 234
   }
 }
 ```
+
 
 
 

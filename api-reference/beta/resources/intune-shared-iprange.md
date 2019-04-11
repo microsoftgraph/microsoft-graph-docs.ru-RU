@@ -4,12 +4,12 @@ description: Базовый класс диапазона IP-адресов дл
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd4d21af712e5bf70e2d5d90e1204be546eb8ec7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d82988aaa54ec02915d889c7ab555e743388fa59
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30171143"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807296"
 ---
 # <a name="iprange-resource-type"></a>Тип ресурса ipRange
 
@@ -23,7 +23,7 @@ ms.locfileid: "30171143"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "30171143"
   "@odata.type": "#microsoft.graph.ipRange"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Определение строки параметра OMA в фо�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 846ed1c9bb17065b82f2663e7f4276b34442f9bd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d8dbc23845f62c5f2a70af9051efa732b3d3d8ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164535"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807373"
 ---
 # <a name="omasettingstringxml-resource-type"></a>Тип ресурса omaSettingStringXml
 
@@ -31,7 +31,7 @@ ms.locfileid: "30164535"
 |fileName|String|Имя файла, связанное со свойством Value (XML).|
 |value|Двоичный|Значение (массив байтов в кодировке UTF8).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -51,6 +51,7 @@ ms.locfileid: "30164535"
   "value": "binary"
 }
 ```
+
 
 
 

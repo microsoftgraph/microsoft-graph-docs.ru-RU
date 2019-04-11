@@ -4,12 +4,12 @@ description: Направления трафика правила брандма
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 327ad851e56e6765ead3c47e45b863bae3adb3e7
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: dbde291788bb0f68f53dae57352e4942d1358fcf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631637"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805770"
 ---
 # <a name="windowsfirewallruletrafficdirectiontype-enum-type"></a>тип перечисления Виндовсфиреваллрулетраффикдиректионтипе
 
@@ -25,6 +25,7 @@ ms.locfileid: "30631637"
 |notConfigured|нуль|Не настроен.|
 |вышли|1,1|Правило применяется к исходящему трафику.|
 |возврата|2|Правило применяется к входящему трафику.|
+
 
 
 

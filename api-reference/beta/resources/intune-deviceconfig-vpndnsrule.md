@@ -4,12 +4,12 @@ description: Определение правила DNS для VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 545c0dd8a84f19888452261e350a9b347061595c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: db3be739e6ee1e7c5ebe2a5bd33af648488df54f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158508"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805854"
 ---
 # <a name="vpndnsrule-resource-type"></a>Тип ресурса Впнднсруле
 
@@ -23,10 +23,10 @@ ms.locfileid: "30158508"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |name|String|Расширением.|
-|серверы|Коллекция строк|Серверами.|
+|серверами|Коллекция String|Серверами.|
 |Проксисерверури|String|URI прокси-сервера.|
-|автоТриггер|Логический|Автоматически подключаться к ВИРТУАЛЬНОЙ частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
-|persistent|Логический|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
+|автоТриггер|Boolean|Автоматически подключаться к ВИРТУАЛЬНОЙ частной сети, когда устройство подключается к этому домену: значение по умолчанию — false.|
+|сохраняемого|Boolean|Оставить это правило активным, даже если VPN-подключение не подключено: по умолчанию используется значение false.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -50,6 +50,7 @@ ms.locfileid: "30158508"
   "persistent": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта windowsPhone81StoreApp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5f825a8504b8b0cedfd8ffd4e482f29f0dbc38dc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 04b5c7be425ee63449be498a92c79e9490656533
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974316"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806253"
 ---
 # <a name="create-windowsphone81storeapp"></a>Создание windowsPhone81StoreApp
 
@@ -66,7 +66,8 @@ POST /deviceAppManagement/mobileApps
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appStoreUrl|String|URL-адрес магазина приложений Windows Phone 8,1.|
 
 
@@ -81,7 +82,7 @@ POST /deviceAppManagement/mobileApps
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 748
+Content-length: 775
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -105,6 +106,7 @@ Content-length: 748
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
@@ -114,7 +116,7 @@ Content-length: 748
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 920
+Content-Length: 947
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81StoreApp",
@@ -141,9 +143,11 @@ Content-Length: 920
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "appStoreUrl": "https://example.com/appStoreUrl/"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Указывает тип кода возврата.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e49268447551a3c86752536cf3b1f8f052d8fb2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 441c0270bc6488a09fec02f1e1681e009b889918
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145761"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805210"
 ---
 # <a name="win32lobappreturncodetype-enum-type"></a>тип перечисления win32LobAppReturnCodeType
 
@@ -22,11 +22,12 @@ ms.locfileid: "30145761"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|failed|нуль|Сбоев.|
+|сбоев|нуль|Сбоев.|
 |success|1,1|Отключен.|
 |Софтребут|2|Требуется программная перезагрузка.|
 |Хардребут|4|Необходима аппаратная перезагрузка.|
-|Retry|4|Retry.|
+|Retry|SP4|Повторите попытку.|
+
 
 
 

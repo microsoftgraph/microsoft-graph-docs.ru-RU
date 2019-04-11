@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6cef8f618282a0e645469c5d640f0d8ce31062aa
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d1c25198dd839b4cdc29bcf095d3cf6851b13935
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986427"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805182"
 ---
 # <a name="update-devicemanagementscriptassignment"></a>Обновление Девицеманажементскриптассигнмент
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/assig
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md).
@@ -90,6 +90,7 @@ Content-Length: 221
   }
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Считывание свойств и связей объекта 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e32725022df26ce112a08ea7c85ffe7005bb710c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 65cd240284111eb90f17590186ca0abb299a07ea
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30988212"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807443"
 ---
 # <a name="get-deviceandappmanagementroledefinition"></a>Получение deviceAndAppManagementRoleDefinition
 
@@ -120,6 +120,7 @@ Content-Length: 1391
   }
 }
 ```
+
 
 
 

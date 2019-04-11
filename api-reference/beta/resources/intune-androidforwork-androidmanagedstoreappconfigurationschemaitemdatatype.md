@@ -4,12 +4,12 @@ description: Тип данных элемента конфигурации в п
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 08ccd029d142d9794c259181b6d6b3688d59f856
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a73ba699a9fba27a82c98c17e7a0151e716f8da9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805686"
 ---
 # <a name="androidmanagedstoreappconfigurationschemaitemdatatype-enum-type"></a>тип перечисления Андроидманажедстореаппконфигуратионсчемаитемдататипе
 
@@ -22,14 +22,15 @@ ms.locfileid: "30151739"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|логический|нуль|Н/Д|
-|целое число|1,1|Н/Д|
-|string|2|Н/Д|
-|повторяюще|4|Н/Д|
-|MultiSelect|4|Н/Д|
-|bundle|17:00|Н/Д|
-|Бундлеаррай|6|Н/Д|
-|hidden|7|Н/Д|
+|bool|нуль|Пока не задокументировано.|
+|целое|1,1|Пока не задокументировано.|
+|string|2|Пока не задокументировано.|
+|повторяюще|4|Пока не задокументировано.|
+|MultiSelect|SP4|Пока не задокументировано.|
+|bundle|17:00|Пока не задокументировано.|
+|Бундлеаррай|ICMPv6|Пока не задокументировано.|
+|hidden|см|Пока не задокументировано.|
+
 
 
 

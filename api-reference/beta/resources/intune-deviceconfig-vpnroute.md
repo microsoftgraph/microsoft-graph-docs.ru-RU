@@ -4,12 +4,12 @@ description: Определение маршрута VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 54706d47267eef8fff6c465f24e4e9caa183ccc3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c13cb40b5324620eebeb7230135ef981dba84f36
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154301"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807716"
 ---
 # <a name="vpnroute-resource-type"></a>Тип ресурса Впнрауте
 
@@ -42,6 +42,7 @@ ms.locfileid: "30154301"
   "prefixSize": 1024
 }
 ```
+
 
 
 

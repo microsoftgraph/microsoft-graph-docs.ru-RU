@@ -4,12 +4,12 @@ description: Обновление свойств объекта managedDevice.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 56c45659d3e644a80d97f92ff6fe6659c4038d58
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3c7a0b95ff0ec3b5ad7cdd574405ccd4887e08dc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30967939"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807310"
 ---
 # <a name="update-manageddevice"></a>Обновление managedDevice
 
@@ -34,9 +34,9 @@ ms.locfileid: "30967939"
 }
 -->
 ``` http
-PATCH /users/{usersId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice
+PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices/{managedDeviceId}
 PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices/{managedDeviceId}
 ```
 
@@ -119,7 +119,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 |Манажементцертификатикспиратиондате|DateTimeOffset|Дата окончания срока действия сертификата управления устройствами|
 |икЦид|String|Идентификатор встроенной карты — это уникальный идентификационный номер SIM-карты.|
 |удид|String|Уникальный идентификатор устройства для устройств iOS и macOS.|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра устройства.|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра устройства.|
 |Виндовсактивемалварекаунт|Int32|Число активных вредоносных программ для этого устройства с Windows|
 |Виндовсремедиатедмалварекаунт|Int32|Количество исправленных вредоносных программ для этого устройства с Windows|
 |notes|String|Примечания к устройству, созданному ИТ ИТ Admin|
@@ -135,7 +135,7 @@ PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/devic
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-PATCH https://graph.microsoft.com/beta/users/{usersId}/managedDevices/{managedDeviceId}
+PATCH https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}
 Content-type: application/json
 Content-length: 7224
 
@@ -482,6 +482,7 @@ Content-Length: 7273
   }
 }
 ```
+
 
 
 

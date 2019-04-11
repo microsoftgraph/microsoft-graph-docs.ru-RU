@@ -4,12 +4,12 @@ description: Базовый класс для типа приложений
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4cccd1b5e7ec7ca16aeb76b87fc31d90e92e7dcd
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 89f309b53e44b0f2843145dd7c0f4d3ffa6d7f98
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30572084"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805217"
 ---
 # <a name="windowskioskdesktopapp-resource-type"></a>Тип ресурса windowsKioskDesktopApp
 
@@ -30,8 +30,8 @@ ms.locfileid: "30572084"
 |Тип|[Виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения, наСледуемого из [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md). Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
 |Автозапуск|Boolean|Разрешить автоматический запуск приложения в режиме киоска с несколькими приложениями, унаследованном от [виндовскиоскаппбасе](../resources/intune-deviceconfig-windowskioskappbase.md)|
 |path|String|Определение пути к классическому приложению|
-|Десктопаппликатионид|Строка|Определение Десктопаппликатионид приложения|
-|Десктопаппликатионлинкпас|Строка|Определение Десктопаппликатионлинкпас приложения|
+|Десктопаппликатионид|String|Определение Десктопаппликатионид приложения|
+|Десктопаппликатионлинкпас|String|Определение Десктопаппликатионлинкпас приложения|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -55,6 +55,7 @@ ms.locfileid: "30572084"
   "desktopApplicationLinkPath": "String"
 }
 ```
+
 
 
 

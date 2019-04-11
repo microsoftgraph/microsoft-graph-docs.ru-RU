@@ -4,12 +4,12 @@ description: Обновление свойств объекта Усерпфкс
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7fb9d717520dcf8f780d4891fbaa03144c551f2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 8f84d0579805fcb2fed5664a6046b380a9ce08cf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959084"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807674"
 ---
 # <a name="update-userpfxcertificate"></a>Обновление Усерпфксцертификате
 
@@ -117,7 +117,6 @@ Content-Length: 695
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
 }
 ```
-
 
 
 

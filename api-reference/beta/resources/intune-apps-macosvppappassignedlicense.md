@@ -4,12 +4,12 @@ description: Назначение лицензии на MacOS Volume Purchase Pr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c8c7d8eea98c92ae1a041b8220c171d62fceb385
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 31f8e078f7695a115ce92d6d3f687d41a13831fc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158893"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806302"
 ---
 # <a name="macosvppappassignedlicense-resource-type"></a>Тип ресурса Макосвппаппассигнедлиценсе
 
@@ -31,11 +31,11 @@ ms.locfileid: "30158893"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |Усеремаиладдресс|String|Адрес электронной почты пользователя.|
 |userId|String|Идентификатор пользователя.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|Строка|Имя участника-пользователя.|
+|userPrincipalName|String|Имя участника-пользователя.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -58,6 +58,7 @@ ms.locfileid: "30158893"
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

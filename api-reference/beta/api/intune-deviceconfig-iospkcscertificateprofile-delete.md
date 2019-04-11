@@ -4,12 +4,12 @@ description: Удаляет объект iosPkcsCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfbfdd742053f715a05e3c9bc0870cf1c57e3973
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 95f34e241462e60fc58d9cbc1652e6ec1ec6456d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961611"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805406"
 ---
 # <a name="delete-iospkcscertificateprofile"></a>Удаление iosPkcsCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

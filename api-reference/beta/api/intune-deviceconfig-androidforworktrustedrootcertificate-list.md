@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Анд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 554b7364dc237d9a1c635bd8d0107dcaed084ffc
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 366717ed5d71ed47e27c253725a4840afc2df658
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969297"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806736"
 ---
 # <a name="list-androidforworktrustedrootcertificates"></a>Список Андроидфорворктрустедрутцертификатес
 
@@ -85,6 +85,7 @@ Content-Length: 631
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Вин
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d599f1eaafcae1498d196852205f393274973eb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cc016087511b920fa9c420ce66efba072d0271d8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972517"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806316"
 ---
 # <a name="list-windowsinformationprotectionwipeactions"></a>Список Виндовсинформатионпротектионвипеактионс
 
@@ -79,6 +79,7 @@ Content-Length: 526
   ]
 }
 ```
+
 
 
 

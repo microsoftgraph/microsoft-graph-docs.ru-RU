@@ -4,12 +4,12 @@ description: Сводка по состоянию Advanced Threat Protection в 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e4390c765c4f1ed44e034b4554ae2d3137ba121
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf0c9604d356bbd20d14aec9eb60768342cc2945
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175012"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805154"
 ---
 # <a name="advancedthreatprotectiononboardingstatesummary-resource-type"></a>Тип ресурса Адванцедсреатпротектиононбоардингстатесуммари
 
@@ -38,7 +38,7 @@ ms.locfileid: "30175012"
 |conflictDeviceCount|Int32|Количество конфликтующих устройств.|
 |Нотассигнеддевицекаунт|Int32|Количество неназначенных устройств|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |Адванцедсреатпротектиононбоардингдевицесеттингстатес|Коллекция [адванцедсреатпротектиононбоардингдевицесеттингстате](../resources/intune-deviceconfig-advancedthreatprotectiononboardingdevicesettingstate.md)|Н/Д|
@@ -65,6 +65,7 @@ ms.locfileid: "30175012"
   "notAssignedDeviceCount": 1024
 }
 ```
+
 
 
 

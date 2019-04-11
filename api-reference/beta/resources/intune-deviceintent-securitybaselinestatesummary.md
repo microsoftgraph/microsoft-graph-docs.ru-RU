@@ -4,12 +4,12 @@ description: Сводка по состоянию соответствия но�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 28a479ec175a939d65d4d11c963df575a28e59d1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 8133fb325b0c2abdacf38e034aedc6523b13623c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523961"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806729"
 ---
 # <a name="securitybaselinestatesummary-resource-type"></a>Тип ресурса Секуритибаселинестатесуммари
 
@@ -22,8 +22,8 @@ ms.locfileid: "31523961"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение Секуритибаселинестатесуммари](../api/intune-deviceintent-securitybaselinestatesummary-get.md)|[Секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Чтение свойств и связей объекта [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md) .|
-|[Обновление Секуритибаселинестатесуммари](../api/intune-deviceintent-securitybaselinestatesummary-update.md)|[Секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Обновление свойств объекта [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md) .|
+|[Получение Секуритибаселинестатесуммари](../api/intune-deviceintent-securitybaselinestatesummary-get.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Чтение свойств и связей объекта [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md) .|
+|[Обновление Секуритибаселинестатесуммари](../api/intune-deviceintent-securitybaselinestatesummary-update.md)|[securityBaselineStateSummary](../resources/intune-deviceintent-securitybaselinestatesummary.md)|Обновление свойств объекта [секуритибаселинестатесуммари](../resources/intune-deviceintent-securitybaselinestatesummary.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -59,8 +59,6 @@ ms.locfileid: "31523961"
   "notApplicableCount": 1024
 }
 ```
-
-
 
 
 

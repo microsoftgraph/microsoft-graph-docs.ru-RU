@@ -4,12 +4,12 @@ description: Тип совместного использования данны
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 73315d5ace052cf49a372c5563bf7d5af35662e5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 6a0a5dd257636f2e90e1b5c1d2e46e6d24feef7b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159117"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807324"
 ---
 # <a name="androidworkprofilecrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидворкпрофилекросспрофиледаташарингтипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "30159117"
 |Превентани|1,1|Запретите общий доступ.|
 |Алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
 |Ограничения|4|Нет ограничений на общий доступ.|
+
 
 
 

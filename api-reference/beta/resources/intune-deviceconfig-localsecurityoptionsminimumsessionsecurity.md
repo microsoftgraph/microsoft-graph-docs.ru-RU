@@ -4,12 +4,12 @@ description: Возможные значения для Локалсекурит
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fe6007747aed1037a4dc3d5264bb432182a28c00
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a087c9d99164ce5c830b2d40022d7ddd99736547
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145348"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806400"
 ---
 # <a name="localsecurityoptionsminimumsessionsecurity-enum-type"></a>тип перечисления Локалсекуритйоптионсминимумсессионсекурити
 
@@ -22,10 +22,11 @@ ms.locfileid: "30145348"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Отправка ответов LM _Амп_ NTLM|
+|нет|нуль|Отправка ответов LM _Амп_ NTLM|
 |requireNtmlV2SessionSecurity|1,1|Отправлять LM _Амп_ NTLM — использовать сеансовую безопасность NTLMv2 при согласовании|
 |require128BitEncryption|2|Отправлять только LM _Амп_ NTLM ответы|
 |ntlmV2And128BitEncryption|4|Отправлять только LM _Амп_ NTLMv2 ответы|
+
 
 
 

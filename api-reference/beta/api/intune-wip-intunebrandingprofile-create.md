@@ -4,12 +4,12 @@ description: Создание нового объекта Интунебранд
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0ace74dd7f9ec021ac5836c98b0eb070df4b0e5b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e92ad91bd5d981e987fb6d5abfd32494f6ce54de
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30984487"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805518"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
@@ -67,9 +67,9 @@ POST /deviceManagement/intuneBrandingProfiles
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
 |showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
+|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на светлом фоне.|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md)|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
 
 
 
@@ -172,6 +172,7 @@ Content-Length: 1377
   }
 }
 ```
+
 
 
 

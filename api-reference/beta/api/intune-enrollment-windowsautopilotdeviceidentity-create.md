@@ -4,12 +4,12 @@ description: Создание нового объекта windowsAutopilotDevice
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1165fbd0ce159cc1c8717df2ed64431aac26f722
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c1fe0f7195007eaf937b1d6d82b20f1978136559
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958447"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805777"
 ---
 # <a name="create-windowsautopilotdeviceidentity"></a>Создание windowsAutopilotDeviceIdentity
 
@@ -55,7 +55,8 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 |Деплойментпрофилеассигнментстатус|[Виндовсаутопилотпрофилеассигнментстатус](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Состояние назначения профиля устройства автопилота Windows. Возможные значения: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |Деплойментпрофилеассигнментдетаиледстатус|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Подробное состояние назначения профиля для устройства автопилота Windows. Возможные значения: `none`, `hardwareRequirementsNotMet`.|
 |Деплойментпрофилеассигнеддатетиме|DateTimeOffset|Время настройки профиля для устройства автопилота Windows.|
-|orderIdentifier|String|Идентификатор заказа устройства автопилота Windows.|
+|orderIdentifier|String|Идентификатор заказа устройства с автопилотом Windows — не является устаревшим|
+|Грауптаг|String|Тег Group для устройства автопилота Windows.|
 |Пурчасеордеридентифиер|String|Идентификатор заказа на покупку для устройства автопилота Windows.|
 |serialNumber|String|Серийный номер устройства Windows Autopilot.|
 |productKey|Строка|Ключ продукта устройства Windows Autopilot.|
@@ -83,7 +84,7 @@ POST /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDeviceI
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 1001
+Content-length: 1035
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -91,6 +92,7 @@ Content-length: 1001
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -113,7 +115,7 @@ Content-length: 1001
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1050
+Content-Length: 1084
 
 {
   "@odata.type": "#microsoft.graph.windowsAutopilotDeviceIdentity",
@@ -122,6 +124,7 @@ Content-Length: 1050
   "deploymentProfileAssignmentDetailedStatus": "hardwareRequirementsNotMet",
   "deploymentProfileAssignedDateTime": "2016-12-31T23:58:26.2447023-08:00",
   "orderIdentifier": "Order Identifier value",
+  "groupTag": "Group Tag value",
   "purchaseOrderIdentifier": "Purchase Order Identifier value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -138,6 +141,7 @@ Content-Length: 1050
   "managedDeviceId": "Managed Device Id value"
 }
 ```
+
 
 
 

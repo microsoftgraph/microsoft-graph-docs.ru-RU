@@ -4,12 +4,12 @@ description: Создание объекта mobileAppContentFile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 014f4c5dffe209150ee94d758c07d8ac01e58609
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 59fd4d5783fa11ceac5f0ac6f86495ccd17d215a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962486"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806211"
 ---
 # <a name="create-mobileappcontentfile"></a>Создание объекта mobileAppContentFile
 
@@ -115,6 +115,7 @@ Content-Length: 503
   "isDependency": true
 }
 ```
+
 
 
 

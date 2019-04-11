@@ -4,12 +4,12 @@ description: Создание нового объекта Карттокласс
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6996f3ad5f22a5b623d6f259e9bf1b8ee43d087d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959357"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806379"
 ---
 # <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
 
@@ -56,8 +56,8 @@ POST /deviceManagement/cartToClassAssociations
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|Девицекартидс|Коллекция String|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|Классрумидс|Коллекция String|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

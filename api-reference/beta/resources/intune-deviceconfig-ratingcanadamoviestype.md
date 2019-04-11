@@ -4,12 +4,12 @@ description: Метки оценки фильмов в Канаде
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0a1ebcc17e324cc617235761be499f56a1a17ffe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5772dd27419c7f2b638a08aed8ba62b4d4c7880f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142590"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807765"
 ---
 # <a name="ratingcanadamoviestype-enum-type"></a>тип перечисления Ратингканадамовиестипе
 
@@ -26,9 +26,10 @@ ms.locfileid: "30142590"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|Классификация G подходит для всех возраста|
 |Паренталгуиданце|4|Категория PG рекомендует родительские рекомендации|
-|agesAbove14|4|Классификация 14A подходит для зрителей выше 14 или более ранних версий|
+|agesAbove14|SP4|Классификация 14A подходит для зрителей выше 14 или более ранних версий|
 |agesAbove18|17:00|Классификация 18A подходит для зрителей более 18 лет и старше|
-|ограниченной|6|Классификация R ограничена до 18 лет и старше|
+|ограниченной|ICMPv6|Классификация R ограничена до 18 лет и старше|
+
 
 
 

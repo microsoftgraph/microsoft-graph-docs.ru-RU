@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса mediaContentRatingNewZealand
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9328ccc8b3c6b7ce6af220d8f798497e00448a8b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d1d2b608a285413e8ad4f7049d06982a06878450
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159278"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807170"
 ---
 # <a name="mediacontentratingnewzealand-resource-type"></a>Тип ресурса mediaContentRatingNewZealand
 
@@ -42,6 +42,7 @@ ms.locfileid: "30159278"
   "tvRating": "String"
 }
 ```
+
 
 
 

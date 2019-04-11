@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bab12884cd87c18c5c303a075fc26033f188ffea
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7fa3989f4fe1324f404a16603f357a81136e1d9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144522"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806974"
 ---
 # <a name="ratingcanadatelevisiontype-enum-type"></a>тип перечисления Ратингканадателевисионтипе
 
@@ -26,10 +26,11 @@ ms.locfileid: "30144522"
 |Аллблоккед|1,1|Не разрешать показ контента|
 |children|2|Классификация C подходит для детей от 2 до 7 лет|
 |childrenAbove8|4|Классификация C8 подходит для детей от 8 до 8 лет|
-|обобщен|4|Классификация "G" подходит для общей аудитории|
+|обобщен|SP4|Классификация "G" подходит для общей аудитории|
 |Паренталгуиданце|17:00|PG, с родительским руководством|
-|agesAbove14|6|Классификация 14 + предназначена для зрителей от 14 лет и старше|
-|agesAbove18|7|18 + классификация предназначена для зрителей от 18 лет и старше|
+|agesAbove14|ICMPv6|Классификация 14 + предназначена для зрителей от 14 лет и старше|
+|agesAbove18|см|18 + классификация предназначена для зрителей от 18 лет и старше|
+
 
 
 

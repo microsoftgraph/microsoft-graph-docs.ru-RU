@@ -4,12 +4,12 @@ description: Метки оценок фильмов в Германии
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3a8543c0dd565edd12fcb0db4e523e5273570d5b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d5072b95d54b0640115f350d9e8de26e8ec23112
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139524"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807821"
 ---
 # <a name="ratinggermanymoviestype-enum-type"></a>тип перечисления Ратингжерманимовиестипе
 
@@ -26,9 +26,10 @@ ms.locfileid: "30139524"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|AB 0 Жахрен, без ограничений по возрасту|
 |agesAbove6|4|AB 6 Жахрен, от 6 лет и старше|
-|agesAbove12|4|AB 12 Жахрен, от 12 лет до 12 лет|
+|agesAbove12|SP4|AB 12 Жахрен, от 12 лет до 12 лет|
 |agesAbove16|17:00|AB 16 Жахрен, от 16 лет до 16 лет|
-|взрослые|6|Только для Жахрен, только для взрослых|
+|взрослые|ICMPv6|Только для Жахрен, только для взрослых|
+
 
 
 

@@ -4,12 +4,12 @@ description: Способ проверки поДлинности VPN.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d6f66d6c3f7f16494a0ae98600c02cd97bfac335
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d67b64a0464bde51d48f3b8c693a1a3d8a1bc449
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146398"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31807828"
 ---
 # <a name="vpnauthenticationmethod-enum-type"></a>тип перечисления Впнаусентикатионмесод
 
@@ -24,6 +24,7 @@ ms.locfileid: "30146398"
 |:---|:---|:---|
 |certificate|нуль|Проверка поДлинности с помощью сертификата.|
 |Усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
+
 
 
 

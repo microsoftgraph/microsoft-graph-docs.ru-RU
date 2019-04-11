@@ -4,12 +4,12 @@ description: Создание объекта settingStateDeviceSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8d77324ee3d1e13d51cc196d90015ee09e5760c1
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9f42ee2fa96cb7b46054ed7605233e7b30ea9fed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986777"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31805798"
 ---
 # <a name="create-settingstatedevicesummary"></a>Create settingStateDeviceSummary
 
@@ -52,7 +52,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта settingStateDeviceSummary в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта settingStateDeviceSummary.
@@ -119,6 +119,7 @@ Content-Length: 409
   "conflictDeviceCount": 3
 }
 ```
+
 
 
 

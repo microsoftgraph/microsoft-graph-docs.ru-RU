@@ -4,12 +4,12 @@ description: Возможные значения для обновления п�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 932a374f7ec78eca46862f6f7693072b27ef5109
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 56cbfc6f6a8b9952682a5f7cfeeb2f4caffc94b7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172417"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31806757"
 ---
 # <a name="windows10appsupdaterecurrence-enum-type"></a>тип перечисления windows10AppsUpdateRecurrence
 
@@ -22,10 +22,11 @@ ms.locfileid: "30172417"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Значение по умолчанию указывает один экземпляр.|
+|нет|нуль|Значение по умолчанию указывает один экземпляр.|
 |ежедневно|1,1|Ежедневно.|
 |Табель|2|Табель.|
 |ежемесячно|4|Ежемесячно.|
+
 
 
 
