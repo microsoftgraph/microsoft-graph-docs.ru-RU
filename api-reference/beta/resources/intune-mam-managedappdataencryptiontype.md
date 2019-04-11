@@ -4,12 +4,12 @@ description: Представляет уровень, на который дан
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47396f32ed23234c5fe758a29b6e97ee3602234f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 962e759e83b08baf7fc150e07dc84ed7146feb0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159082"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799533"
 ---
 # <a name="managedappdataencryptiontype-enum-type"></a>тип перечисления Манажедаппдатаенкриптионтипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "30159082"
 |Афтердевицерестарт|1,1|Данные приложения шифруются при перезапуске устройства.|
 |Вхендевицелоккедексцептопенфилес|2|Данные приложения, связанные с этой политикой, шифруются, если устройство заблокировано, за исключением данных в открытых файлах.|
 |Вхендевицелоккед|4|Данные о приложении, связанные с этой политикой, шифруются, когда устройство заблокировано|
+
 
 
 

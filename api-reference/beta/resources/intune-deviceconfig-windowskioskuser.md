@@ -4,12 +4,12 @@ description: Базовый класс пользователя, использ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b5f71f9ce3478e2c5a7c7347f608d533c15e392c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a8349d3574dfc3d23fc26fe4b0c2c6583deb8b36
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172235"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799246"
 ---
 # <a name="windowskioskuser-resource-type"></a>Тип ресурса Виндовскиоскусер
 
@@ -23,7 +23,7 @@ ms.locfileid: "30172235"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "30172235"
   "@odata.type": "#microsoft.graph.windowsKioskUser"
 }
 ```
+
 
 
 

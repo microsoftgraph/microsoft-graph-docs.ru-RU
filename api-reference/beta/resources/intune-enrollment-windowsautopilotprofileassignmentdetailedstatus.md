@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 814f8eaf6e2e5a35cc2fd7128507f5b811d9458a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 13a1f81f4364454dee281763722999092a4632af
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147973"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797685"
 ---
 # <a name="windowsautopilotprofileassignmentdetailedstatus-enum-type"></a>тип перечисления Виндовсаутопилотпрофилеассигнментдетаиледстатус
 
@@ -17,13 +17,14 @@ ms.locfileid: "30147973"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет подробного отчета о состоянии назначения|
+|нет|нуль|Нет подробного отчета о состоянии назначения|
 |Хардваререкуирементснотмет|1,1|Требования к оборудованию не выполнены. Это может произойти, если устройство с автоматическим развертыванием автоматически пилотного профиля назначено устройству без ДОВЕРЕНного ПЛАТФОРМЕНного модуля 2,0.|
+
 
 
 

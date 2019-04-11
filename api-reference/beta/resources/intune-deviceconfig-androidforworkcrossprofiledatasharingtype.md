@@ -4,12 +4,12 @@ description: Тип общего доступа к данным для Android �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7b9e27525b774678f0ff77d3d73f89b739f32918
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ec6c8f9a5300fb15ef8004322e06cc0cc2b28750
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162169"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799015"
 ---
 # <a name="androidforworkcrossprofiledatasharingtype-enum-type"></a>тип перечисления Андроидфорворккросспрофиледаташарингтипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "30162169"
 |Превентани|1,1|Запретите общий доступ.|
 |Алловперсоналтоворк|2|Разрешить для рабочего профиля запрос на общий доступ к данным из личного профиля.|
 |Ограничения|4|Нет ограничений на общий доступ.|
+
 
 
 

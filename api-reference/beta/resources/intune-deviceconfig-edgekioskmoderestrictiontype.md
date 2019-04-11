@@ -4,12 +4,12 @@ description: Укажите, как параметры Microsoft Edge будут
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a0dcd1d30895acbdecf9d9cc706ee14b7907f14f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 74b03555456c058411c9a50c7392f29fe60d3aed
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177961"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799547"
 ---
 # <a name="edgekioskmoderestrictiontype-enum-type"></a>тип перечисления Еджекиоскмодерестриктионтипе
 
@@ -26,7 +26,8 @@ ms.locfileid: "30177961"
 |Дигиталсигнаже|1,1|Интерактивная и цифровая подпись в режиме одного приложения.|
 |Нормалмоде|2|В обычном режиме (полная версия Microsoft EDGE).|
 |Публикбровсингсинглеапп|4|ОбщеДоступный обзор в режиме одного приложения.|
-|Публикбровсингмултиапп|4|ОбщеДоступный обзор (InPrivate) в режиме нескольких приложений.|
+|Публикбровсингмултиапп|SP4|ОбщеДоступный обзор (InPrivate) в режиме нескольких приложений.|
+
 
 
 

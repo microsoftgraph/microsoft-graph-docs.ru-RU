@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: be66d26126c2a8838ba54eda941fccc2d896cef9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 840a28595e1ce812368d2e7907ce56eee88245df
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31523702"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799134"
 ---
 # <a name="devicemanangementintentvaluetype-enum-type"></a>тип перечисления Девицемананжементинтентвалуетипе
 
@@ -28,8 +28,6 @@ ms.locfileid: "31523702"
 |знак|4|Значение параметра представляет собой сложный объект|
 |коллекция|SP4|Значение параметра представляет собой коллекцию|
 |Абстракткомплекс|17:00|Значение параметра является абстрактным сложным объектом|
-
-
 
 
 

@@ -4,12 +4,12 @@ description: Подтверждает файл заданного приложе
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f3fe5733450ee3990ce9ec3c95c1b34ab23d2a5a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 18242b7f4b3d874f85682d7a9eeb626455dea473
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962094"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797538"
 ---
 # <a name="commit-action"></a>Действие commit
 
@@ -86,6 +86,7 @@ Content-length: 399
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

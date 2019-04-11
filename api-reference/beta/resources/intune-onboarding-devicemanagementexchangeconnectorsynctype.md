@@ -4,12 +4,12 @@ description: Тип запрошенной синхронизации соеди
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47021a0a071995261f218cd4080026ababa33e0f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: abb2a74c27df76a75971a2e2205698002bc3d8ab
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166600"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798462"
 ---
 # <a name="devicemanagementexchangeconnectorsynctype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторсинктипе
 
@@ -24,6 +24,7 @@ ms.locfileid: "30166600"
 |:---|:---|:---|
 |Профиль выполнения FullSync|нуль|Обнаружение устройства в Exchange.|
 |Профиль выполнения deltasync|1,1|Обнаружение только устройства в Exchange, которое обновилось в окне "разностная синхронизация".|
+
 
 
 

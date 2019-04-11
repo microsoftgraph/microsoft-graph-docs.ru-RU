@@ -4,12 +4,12 @@ description: VPN-прокси-сервер.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4686049e2f3525409e81ec1492dcb052ab9f3657
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 212bafa99a51e269716978cafa4fcf274dd76579
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30140693"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797902"
 ---
 # <a name="windows10vpnproxyserver-resource-type"></a>Тип ресурса windows10VpnProxyServer
 
@@ -27,8 +27,8 @@ VPN-прокси-сервер.
 |:---|:---|:---|
 |Аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Address. НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|port|Int32|Порта. Допустимые значения — от 0 до 65535, наСледуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|Бипасспроксисерверфорлокаладдресс|Логический|Обход прокси-сервера для локального адреса.|
+|порта|Int32|Порта. Допустимые значения — от 0 до 65535, наСледуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
+|Бипасспроксисерверфорлокаладдресс|Boolean|Обход прокси-сервера для локального адреса.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -49,6 +49,7 @@ VPN-прокси-сервер.
   "bypassProxyServerForLocalAddress": true
 }
 ```
+
 
 
 

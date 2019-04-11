@@ -4,12 +4,12 @@ description: Возможные типы причин сбоя действия 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 05d3137bb5aac2aef3024825df5e7e0b84ffde51
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c9adb896d384be99496c016ef3bd39b02ff1a28e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169694"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798532"
 ---
 # <a name="vpptokenactionfailurereason-enum-type"></a>тип перечисления Впптокенактионфаилуререасон
 
@@ -22,11 +22,12 @@ ms.locfileid: "30169694"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет.|
+|нет|нуль|Нет.|
 |Апплефаилуре|1,1|В службе Apple возникла ошибка.|
 |Интерналеррор|2|Произошла внутренняя ошибка.|
 |Експиредвпптокен|4|Произошла ошибка из-за истечения срока действия маркера Apple Volume Purchase Program.|
-|Експиредапплепушнотификатионцертификате|4|Произошла ошибка из-за истечения срока действия сертификата push-уведомлений Apple Volume Purchase Program.|
+|Експиредапплепушнотификатионцертификате|SP4|Произошла ошибка из-за истечения срока действия сертификата push-уведомлений Apple Volume Purchase Program.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Минимальная версия операционной сис
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9f230ed4860e3ff8bad7968367ce5337b59521d4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c20bdf575041e28e348f050f7bad4688f76e1398
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152887"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798798"
 ---
 # <a name="windowsminimumoperatingsystem-resource-type"></a>Тип ресурса windowsMinimumOperatingSystem
 
@@ -22,13 +22,13 @@ ms.locfileid: "30152887"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v8_0|Логический|Windows 8.0 или более поздней версии.|
-|v8_1|Логический|Windows 8.1 или более поздней версии.|
+|v8_0|Boolean|Windows 8.0 или более поздней версии.|
+|v8_1|Boolean|Windows 8.1 или более поздней версии.|
 |v10_0|Boolean|Windows 10.0 или более поздней версии.|
-|v10_1607|Логический|Windows 10 1607 или более поздняя версия.|
-|v10_1703|Логический|Windows 10 1703 или более поздняя версия.|
-|v10_1709|Логический|Windows 10 1709 или более поздняя версия.|
-|v10_1803|Логический|Windows 10 1803 или более поздняя версия.|
+|v10_1607|Boolean|Windows 10 1607 или более поздняя версия.|
+|v10_1703|Boolean|Windows 10 1703 или более поздняя версия.|
+|v10_1709|Boolean|Windows 10 1709 или более поздняя версия.|
+|v10_1803|Boolean|Windows 10 1803 или более поздняя версия.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -52,6 +52,7 @@ ms.locfileid: "30152887"
   "v10_1803": true
 }
 ```
+
 
 
 

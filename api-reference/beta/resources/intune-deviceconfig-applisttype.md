@@ -4,12 +4,12 @@ description: Возможные значения списка приложени
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3b7d11107ca3ea2b698e28cd288f163ec190b0a6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a05fc37f692d58a4d5d434037fd9d1ebe09ecaa9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172676"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798728"
 ---
 # <a name="applisttype-enum-type"></a>тип перечисления Апплисттипе
 
@@ -22,9 +22,10 @@ ms.locfileid: "30172676"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Значение по умолчанию без намерения.|
+|нет|нуль|Значение по умолчанию без намерения.|
 |Аппсинлисткомплиант|1,1|Список представляет приложения, которые будут считаться совместимыми (только приложения в списке соответствуют требованиям).|
 |Аппснотинлисткомплиант|2|Список представляет приложения, которые будут считаться несовместимыми (все приложения являются совместимыми, кроме приложений в списке).|
+
 
 
 

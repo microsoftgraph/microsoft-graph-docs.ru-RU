@@ -4,12 +4,12 @@ description: Список свойств и связей объектов macOSC
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 10a9395e37bb4759690a35f2ab683a5f2634f1b3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4bcdd7bde4003754a08fc6dbe75fc78f91752671
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963473"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799491"
 ---
 # <a name="list-macoscompliancepolicies"></a>Перечисление объектов macOSCompliancePolicy
 
@@ -101,6 +101,7 @@ Content-Length: 1408
   ]
 }
 ```
+
 
 
 

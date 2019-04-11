@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта androidF
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9646f710b95a99a31291cf5fa52a4a48255a44a2
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6bf5bbacb61a7c40502fe433b9cb0264fd9032ee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959679"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798175"
 ---
 # <a name="get-androidforworkcompliancepolicy"></a>Получение androidForWorkCompliancePolicy
 
@@ -104,6 +104,7 @@ Content-Length: 1538
   }
 }
 ```
+
 
 
 

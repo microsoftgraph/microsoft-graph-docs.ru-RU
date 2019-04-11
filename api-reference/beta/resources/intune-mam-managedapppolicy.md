@@ -4,12 +4,12 @@ description: Ресурс ManagedAppPolicy представляет базовы
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8e98735a03583fef25fc460c6f989a5a7edf9b44
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 610012b216a0fe924af3cd4f08fb3928e504454b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144025"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798861"
 ---
 # <a name="managedapppolicy-resource-type"></a>Тип ресурса managedAppPolicy
 
@@ -22,8 +22,8 @@ ms.locfileid: "30144025"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список объектов managedAppPolicy](../api/intune-mam-managedapppolicy-list.md)|Коллекция [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Список свойств и связей объектов [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
-|[Получение объекта managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Чтение свойств и связей объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|[Перечисление объектов managedAppPolicy](../api/intune-mam-managedapppolicy-list.md)|Коллекция [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Список свойств и связей объектов [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
+|[Get managedAppPolicy](../api/intune-mam-managedapppolicy-get.md)|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md)|Чтение свойств и связей объекта [managedAppPolicy](../resources/intune-mam-managedapppolicy.md).|
 |[Действие targetApps](../api/intune-mam-managedapppolicy-targetapps.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
@@ -33,12 +33,12 @@ ms.locfileid: "30144025"
 |description|String|Описание политики.|
 |createdDateTime|DateTimeOffset|Дата и время создания политики.|
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения политики.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
-|id|String|Ключ объекта.|
-|version|Строка|Версия объекта.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
+|id|Строка|Ключ объекта.|
+|version|String|Версия объекта.|
 
-## <a name="relationships"></a>Связи
-None
+## <a name="relationships"></a>Отношения
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -62,6 +62,7 @@ None
   "version": "String"
 }
 ```
+
 
 
 

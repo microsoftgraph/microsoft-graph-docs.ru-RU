@@ -4,12 +4,12 @@ description: Метки оценки фильмов в Австралии
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 150f5612e0f904c5fda251d630fa3a9df749e5d5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 438b255970d42bfb0ef63018e87fcbcdfe62b163
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30162666"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797853"
 ---
 # <a name="ratingaustraliamoviestype-enum-type"></a>тип перечисления Ратингаустралиамовиестипе
 
@@ -26,9 +26,10 @@ ms.locfileid: "30162666"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|Классификация "G" подходит для всех пользователей|
 |Паренталгуиданце|4|Рекомендации на странице PG рекомендуются для просмотра в соответствии с рекомендациями от родителей и опекунов.|
-|обнаружен|4|Не рекомендуется использовать классификацию M для зрителей с 15|
+|обнаружен|SP4|Не рекомендуется использовать классификацию M для зрителей с 15|
 |agesAbove15|17:00|MA15 + Classification не подходит для зрителей в течение 15|
-|agesAbove18|6|R18 + Classification не подходит для зрителей в 18|
+|agesAbove18|ICMPv6|R18 + Classification не подходит для зрителей в 18|
+
 
 
 

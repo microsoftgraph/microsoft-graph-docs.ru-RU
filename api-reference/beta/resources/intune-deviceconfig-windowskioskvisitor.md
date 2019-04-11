@@ -4,12 +4,12 @@ description: Класс, используемый для определения 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 954f5a5dd5bddc76a9374540012992aa0b207671
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0cd6bc6e652b7058b55f60656191eafcae3c198c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163247"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798126"
 ---
 # <a name="windowskioskvisitor-resource-type"></a>Тип ресурса Виндовскиосквиситор
 
@@ -26,7 +26,7 @@ ms.locfileid: "30163247"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -41,6 +41,7 @@ ms.locfileid: "30163247"
   "@odata.type": "#microsoft.graph.windowsKioskVisitor"
 }
 ```
+
 
 
 

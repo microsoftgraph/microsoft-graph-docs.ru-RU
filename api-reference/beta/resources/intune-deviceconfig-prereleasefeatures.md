@@ -4,12 +4,12 @@ description: Возможные значения для предваритель
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d9cc6e2960858f68deb440362961c38eae39287
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: b22e12d5c27db40cfdab07c54fda28239a3d08d0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30144690"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797573"
 ---
 # <a name="prereleasefeatures-enum-type"></a>тип перечисления prereleaseFeatures
 
@@ -26,6 +26,7 @@ ms.locfileid: "30144690"
 |Сеттингсонли|1,1|Только функции предварительной версии.|
 |Сеттингсандекспериментатионс|2|Параметры и эксперименты, которые предварительно выпускают функции.|
 |notAllowed|4|Функции предварительной версии не разрешены.|
+
 
 
 

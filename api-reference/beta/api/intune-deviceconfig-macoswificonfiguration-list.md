@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Мак
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6f8ca1ea8df965310db4c00bc6a27aaefa6def63
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b9a6eccb80d06774d56dd749d0f01b526f90265c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983101"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798665"
 ---
 # <a name="list-macoswificonfigurations"></a>Список Макосвификонфигуратионс
 
@@ -93,6 +93,7 @@ Content-Length: 966
   ]
 }
 ```
+
 
 
 

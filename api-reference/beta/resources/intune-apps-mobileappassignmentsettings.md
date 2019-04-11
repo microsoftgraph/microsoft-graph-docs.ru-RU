@@ -4,12 +4,12 @@ description: Абстрактный класс, содержащий свойс�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13b8612133656395519b7f053115e788f02a69c9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3b5fff18f7227b1b8f30bd4a9ec35076e6b3f5a0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158739"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31798042"
 ---
 # <a name="mobileappassignmentsettings-resource-type"></a>Тип ресурса mobileAppAssignmentSettings
 
@@ -23,7 +23,7 @@ ms.locfileid: "30158739"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -38,6 +38,7 @@ ms.locfileid: "30158739"
   "@odata.type": "#microsoft.graph.mobileAppAssignmentSettings"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Состояние работоспособности клиент�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1a2d4083554f40bba138c5f886dfa77ad6c54a1d
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e2a04b8cf7520425527e118fcc9db00461c4edda
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159747"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797741"
 ---
 # <a name="configurationmanagerclienthealthstate-resource-type"></a>Тип ресурса Конфигуратионманажерклиенсеалсстате
 
@@ -44,6 +44,7 @@ ms.locfileid: "30159747"
   "lastSyncDateTime": "String (timestamp)"
 }
 ```
+
 
 
 
