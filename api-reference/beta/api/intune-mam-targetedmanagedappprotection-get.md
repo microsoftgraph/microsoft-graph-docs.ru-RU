@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта targeted
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 61425f5e9a4057e2805d28e838d472f362425346
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7b543a3d1cb4525992ab8211d456f35f11a678c2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956641"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800079"
 ---
 # <a name="get-targetedmanagedappprotection"></a>Получение объекта targetedManagedAppProtection
 
@@ -120,6 +120,7 @@ Content-Length: 2135
   }
 }
 ```
+
 
 
 

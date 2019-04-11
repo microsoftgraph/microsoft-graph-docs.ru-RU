@@ -4,12 +4,12 @@ description: Возможные значения для еженедельног
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: b35be5a180324ca6dfe6fccd7cc8aaf01ae47a0c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8899696ace2011440b641ae83849a179dbfd6438
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151109"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802837"
 ---
 # <a name="weeklyschedule-enum-type"></a>тип перечисления Виклисчедуле
 
@@ -26,11 +26,12 @@ ms.locfileid: "30151109"
 |решения|1,1|Решения.|
 |воскресеньям|2|Воскресеньям.|
 |Вторник|4|Вторник.|
-|во|4|Во.|
+|во|SP4|Во.|
 |Четверг|17:00|Четверг.|
-|Пятница|6|Пятница.|
-|пятницам|7|Пятницам.|
+|Пятница|ICMPv6|Пятница.|
+|пятницам|см|Пятницам.|
 |субботу|8,5|Субботу.|
+
 
 
 

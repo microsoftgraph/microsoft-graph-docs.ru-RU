@@ -4,12 +4,12 @@ description: Список свойств и связей объектов window
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 013717fb2dcdeb3cc6ae21b0512c0e23ce29f9c8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 2c9849870cb992f779c18e64045a02920ca63f94
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960610"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800870"
 ---
 # <a name="list-windows10pkcscertificateprofiles"></a>Список windows10PkcsCertificateProfiles
 
@@ -100,6 +100,7 @@ Content-Length: 1328
   ]
 }
 ```
+
 
 
 

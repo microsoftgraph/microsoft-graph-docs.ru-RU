@@ -4,12 +4,12 @@ description: Сущность представляет XML-файл ADMX (адм
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 494a2f8ff80b3a7f8ee9db9fea4d795494c19a92
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7ecccc683187b592c422d26a6f41bfd15b9d805b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161336"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804139"
 ---
 # <a name="grouppolicydefinitionfile-resource-type"></a>Тип ресурса Граупполицидефинитионфиле
 
@@ -29,16 +29,16 @@ ms.locfileid: "30161336"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |displayName|String|Локализованное понятное имя файла ADMX.|
-|description|String|Локализованное описание параметров политики в файле ADMX. Значение по умолчанию — пустое значение.|
-|Лангуажекодес|Коллекция строк|Поддерживаемые коды языков для ADMX.|
+|description|String|Локализованное описание параметров политики в файле ADMX. По умолчанию это значение пусто.|
+|Лангуажекодес|Коллекция String|Поддерживаемые коды языков для ADMX.|
 |Таржетпрефикс|String|Задает логическое имя, которое ссылается на пространство имен в файле ADMX.|
 |Атрибут|String|Указывает универсальный код ресурса (URI), используемый для идентификации пространства имен в файле ADMX.|
 |Полицитипе|[Граупполицитипе](../resources/intune-grouppolicy-grouppolicytype.md)|Указывает тип групповой политики. Возможные значения: `admxBacked`, `admxIngested`.|
-|id|String|Ключ объекта.|
+|id|Строка|Ключ объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
 
-## <a name="relationships"></a>Отношения
-|Связь|Тип|Описание|
+## <a name="relationships"></a>Связи
+|Отношение|Тип|Описание|
 |:---|:---|:---|
 |определения|Коллекция [граупполицидефинитион](../resources/intune-grouppolicy-grouppolicydefinition.md)|Определения групповой политики, связанные с файлом.|
 
@@ -65,6 +65,7 @@ ms.locfileid: "30161336"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

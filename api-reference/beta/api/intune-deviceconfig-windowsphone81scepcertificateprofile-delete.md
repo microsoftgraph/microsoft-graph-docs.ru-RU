@@ -4,12 +4,12 @@ description: Удаляет объект windowsPhone81SCEPCertificateProfile.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fac195e2fd3b444bb3009475411ce26960069673
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 76ea1371742ecd2dcaf152a929626732f6aabc5f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986854"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801290"
 ---
 # <a name="delete-windowsphone81scepcertificateprofile"></a>Удаление windowsPhone81SCEPCertificateProfile
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

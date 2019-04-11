@@ -4,12 +4,12 @@ description: Абстрактный класс, содержащий базов�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 24a8619d92eee6c666b7126a84895b14e0404755
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 888df51e17ab45dcada3d69fad95315b26b4b20e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156037"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800401"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -22,15 +22,15 @@ ms.locfileid: "30156037"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Список managedEBooks](../api/intune-books-managedebook-list.md)|Коллекция [managedEBook](../resources/intune-books-managedebook.md)|Список свойств и связей объектов [managedEBook](../resources/intune-books-managedebook.md).|
-|[Получение объекта managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|Чтение свойств и связей объекта [managedEBook](../resources/intune-books-managedebook.md).|
-|[действие назначения](../api/intune-books-managedebook-assign.md)|Нет|Н/Д|
+|[Перечисление объектов managedEBook](../api/intune-books-managedebook-list.md)|Коллекция [managedEBook](../resources/intune-books-managedebook.md)|Список свойств и связей объектов [managedEBook](../resources/intune-books-managedebook.md).|
+|[Get managedEBook](../api/intune-books-managedebook-get.md)|[managedEBook](../resources/intune-books-managedebook.md)|Чтение свойств и связей объекта [managedEBook](../resources/intune-books-managedebook.md).|
+|[Действие назначения](../api/intune-books-managedebook-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|displayName|String|Имя электронной книги.|
+|displayName|Строка|Имя электронной книги.|
 |description|String|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|
@@ -76,6 +76,7 @@ ms.locfileid: "30156037"
   "privacyInformationUrl": "String"
 }
 ```
+
 
 
 

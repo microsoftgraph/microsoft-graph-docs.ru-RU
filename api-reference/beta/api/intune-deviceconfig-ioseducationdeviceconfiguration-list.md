@@ -4,12 +4,12 @@ description: Список свойств и связей объектов iosEdu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: aa4f568bc041b9fc74faeffd97b5c62c1b7f346f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bb9767ed7a67687c94c6e8c133f2cec1d7e2aba7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981631"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800485"
 ---
 # <a name="list-ioseducationdeviceconfigurations"></a>Список Иоседукатиондевицеконфигуратионс
 
@@ -83,6 +83,7 @@ Content-Length: 510
   ]
 }
 ```
+
 
 
 

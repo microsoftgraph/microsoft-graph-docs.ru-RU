@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта macOSOff
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 80c582c8733bc3bad797a8bac571450a6f262743
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1f5fdb0a84b3e8ba83a5a7ff293a3fae146b9b13
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30985013"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800156"
 ---
 # <a name="get-macosofficesuiteapp"></a>Get macOSOfficeSuiteApp
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 930
+Content-Length: 959
 
 {
   "value": {
@@ -94,10 +94,12 @@ Content-Length: 930
     "isAssigned": true,
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
-    ]
+    ],
+    "dependentAppCount": 1
   }
 }
 ```
+
 
 
 

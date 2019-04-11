@@ -4,12 +4,12 @@ description: Создайте новый объект vppToken.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 31717a52cf66fdd0c4d2eff0717250a131540e9f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 189ba6e9ee465d5f0916254c22303ff445fda868
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964425"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802634"
 ---
 # <a name="create-vpptoken"></a>Создать VPP токен
 
@@ -67,7 +67,7 @@ POST /deviceAppManagement/vppTokens
 |displayName|String|Понятное имя маркера, указанного администратором.|
 |Локатионнаме|String|Расположение маркера возвращено от Apple VPP.|
 |Клаимтокенманажементфромекстерналмдм|Boolean|Согласие администратора, чтобы разрешить управление маркерами из внешних MDM.|
-|roleScopeTagIds|Коллекция строк|Идентификаторы тегов области ролей, назначенных этой сущности.|
+|roleScopeTagIds|Коллекция String|Идентификаторы тегов области ролей, назначенных этой сущности.|
 
 
 
@@ -153,6 +153,7 @@ Content-Length: 1115
   ]
 }
 ```
+
 
 
 

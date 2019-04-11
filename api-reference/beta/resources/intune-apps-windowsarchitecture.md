@@ -4,12 +4,12 @@ description: Содержит свойства для архитектуры Win
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 64a3175d020e045361e13035f4cb101a26f2e8f6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ebed524aefbe9ea75773fac675408f889fb43247
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152124"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803201"
 ---
 # <a name="windowsarchitecture-enum-type"></a>тип перечисления Виндовсарчитектуре
 
@@ -22,12 +22,13 @@ ms.locfileid: "30152124"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Флаги не заданы.|
+|нет|нуль|Флаги не заданы.|
 |платформы|1,1|Поддерживается ли тип архитектуры x86 Windows.|
 |x|2|Поддерживается ли тип архитектуры Windows x64.|
-|руки|4|Поддерживается ли тип архитектуры Windows ARM.|
-|neutral|8,5|Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
+|руки|SP4|Поддерживается ли тип архитектуры Windows ARM.|
+|определенно|8,5|Поддерживается ли тип архитектуры нейтральной архитектуры Windows.|
 |arm64|столбцов|Поддерживается ли тип архитектуры Windows Arm64.|
+
 
 
 

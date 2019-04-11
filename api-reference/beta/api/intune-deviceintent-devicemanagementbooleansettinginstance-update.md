@@ -4,12 +4,12 @@ description: Обновление свойств объекта Девицема
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6345fa1883cb8e909cad1859cfde96de1c4ffcb1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 9b44eaef87424f66146ca3337aab524ec8c35782
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522617"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804706"
 ---
 # <a name="update-devicemanagementbooleansettinginstance"></a>Обновление Девицеманажементбулеансеттингинстанце
 
@@ -95,8 +95,6 @@ Content-Length: 225
   "value": true
 }
 ```
-
-
 
 
 

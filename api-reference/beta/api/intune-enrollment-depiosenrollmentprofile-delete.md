@@ -4,12 +4,12 @@ description: Удаляет объект Депиосенроллментпро�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1c9eba09692bcdd42150dec27e6ebbbc9e009333
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 107cd11e1bc3f11041bcfdd36c5e3582128055e8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978285"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800730"
 ---
 # <a name="delete-depiosenrollmentprofile"></a>Удаление Депиосенроллментпрофиле
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

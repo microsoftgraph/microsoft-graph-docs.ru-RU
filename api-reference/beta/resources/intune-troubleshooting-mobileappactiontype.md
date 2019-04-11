@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Мобилеаппактионтипе
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 624d91851e2182bd8196a1c2bd64df93190b098b
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 52a10e605e4f4c912a138dd5b97b6e8f7ed61184
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152789"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802445"
 ---
 # <a name="mobileappactiontype-enum-type"></a>тип перечисления Мобилеаппактионтипе
 
@@ -17,7 +17,7 @@ ms.locfileid: "30152789"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
@@ -25,9 +25,8 @@ ms.locfileid: "30152789"
 |unknown|нуль|НеИзвестный результат.|
 |Инсталлкоммандсент|1,1|Была отправлена команда установки приложения.|
 |устанавлива|4|Приложение установлено.|
-|удалить|4|Приложение удалено.|
+|удалить|SP4|Приложение удалено.|
 |Усеррекуестединсталл|17:00|Установка запрошена пользователем|
-
 
 
 

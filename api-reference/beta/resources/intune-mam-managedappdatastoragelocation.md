@@ -4,12 +4,12 @@ description: Места хранения, в которых управляемы
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cd1031027f1a2d7c21acff4781484be79f7183fb
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 368ef15ff29e8b3fc611965f67af984879d523f2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148552"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802942"
 ---
 # <a name="managedappdatastoragelocation-enum-type"></a>тип перечисления Манажедаппдатасторажелокатион
 
@@ -22,9 +22,10 @@ ms.locfileid: "30148552"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Онедривефорбусинесс|1,1|OneDrive для бизнеса|
+|Онедривефорбусинесс|1,1|OneDrive для бизнеса;|
 |sharePoint|2|SharePoint|
-|localStorage|6|Локальное хранилище на устройстве|
+|localStorage|ICMPv6|Локальное хранилище на устройстве|
+
 
 
 

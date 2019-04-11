@@ -4,12 +4,12 @@ description: Обновление свойств объекта macOSDeviceFeatu
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: cdd65480ee4ce29ded7c841cd1ac33d59c05d974
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 1d3d583d894a11edc6d95a95f2b1869b08467689
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957887"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804321"
 ---
 # <a name="update-macosdevicefeaturesconfiguration"></a>Обновление объекта macOSDeviceFeaturesConfiguration
 
@@ -54,13 +54,31 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Аирпринтдестинатионс|Коллекция [аирпринтдестинатион](../resources/intune-deviceconfig-airprintdestination.md)|Массив принтеров Аирпринт, которые должны отображаться всегда. Эта коллекция может содержать не более 500 элементов. НаСледуется от [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|
+|Аутолаунчитемс|Коллекция [макослаунчитем](../resources/intune-deviceconfig-macoslaunchitem.md)|Список приложений, файлов, папок и других элементов, которые запускаются при входе пользователя. Эта коллекция может содержать не более 500 элементов.|
+|Админшовхостинфо|Boolean|Показывать ли сведения об узле администратора в окне входа.|
+|Логинвиндовтекст|String|Настраиваемый текст, отображаемый в окне входа.|
+|Аусоризедусерслиссидден|Boolean|Указывает, следует ли отображать диалоговое окно имя и пароль или список пользователей в окне входа.|
+|Аусоризедусерслиссиделокалусерс|Boolean|Отображение только сетевых и системных пользователей в списке авторизованных пользователей в окне входа.|
+|Аусоризедусерслиссидемобилеаккаунтс|Boolean|Следует ли скрыть пользователей для мобильных устройств в списке авторизованных пользователей в окне входа.|
+|Аусоризедусерслистинклуденетворкусерс|Boolean|Показывать ли пользователей сети в списке авторизованных пользователей в окне входа.|
+|Аусоризедусерслиссидеадминусерс|Boolean|Указывает, следует ли скрыть пользователей Admin в списке авторизованных пользователей в окне входа.|
+|Аусоризедусерслистшовосерманажедусерс|Boolean|Указывает, следует ли показывать других пользователей в списке авторизованных пользователей в окне входа.|
+|Шутдовндисаблед|Boolean|Указывает, следует ли скрыть элемент кнопка "завершение работы" в окне входа.|
+|Рестартдисаблед|Boolean|Указывает, следует ли скрыть элемент "кнопка переЗапуска" в окне входа.|
+|Слипдисаблед|Boolean|Указывает, следует ли скрыть пункт меню "сон" в окне входа.|
+|Консолеакцессдисаблед|Boolean|Будет ли другой пользователь игнорировать использование специального имени пользователя "_Гт_консоле_гт_".|
+|Шутдовндисабледвхилелогжедин|Boolean|Будет ли отключен элемент меню "завершение работы" в окне входа, когда пользователь вошел в систему.|
+|Рестартдисабледвхилелогжедин|Boolean|Будет ли отключен элемент меню переЗапуска в окне входа, когда пользователь вошел в систему.|
+|Повероффдисабледвхилелогжедин|Boolean|Будет ли отключен элемент меню Power of Power в окне входа, когда пользователь вошел в систему.|
+|Логаутдисабледвхилелогжедин|Boolean|Будет ли отключен элемент меню журнала в окне входа, когда пользователь вошел в систему.|
+|Скринлоккдисаблеиммедиате|Boolean|Следует ли отключить функции немедленной блокировки экрана.|
 
 
 
@@ -74,7 +92,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 500
+Content-length: 1334
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -93,7 +111,31 @@ Content-length: 500
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
 
@@ -102,7 +144,7 @@ Content-length: 500
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 672
+Content-Length: 1506
 
 {
   "@odata.type": "#microsoft.graph.macOSDeviceFeaturesConfiguration",
@@ -124,9 +166,34 @@ Content-Length: 672
       "port": 4,
       "forceTls": true
     }
-  ]
+  ],
+  "autoLaunchItems": [
+    {
+      "@odata.type": "microsoft.graph.macOSLaunchItem",
+      "path": "Path value",
+      "hide": true
+    }
+  ],
+  "adminShowHostInfo": true,
+  "loginWindowText": "Login Window Text value",
+  "authorizedUsersListHidden": true,
+  "authorizedUsersListHideLocalUsers": true,
+  "authorizedUsersListHideMobileAccounts": true,
+  "authorizedUsersListIncludeNetworkUsers": true,
+  "authorizedUsersListHideAdminUsers": true,
+  "authorizedUsersListShowOtherManagedUsers": true,
+  "shutDownDisabled": true,
+  "restartDisabled": true,
+  "sleepDisabled": true,
+  "consoleAccessDisabled": true,
+  "shutDownDisabledWhileLoggedIn": true,
+  "restartDisabledWhileLoggedIn": true,
+  "powerOffDisabledWhileLoggedIn": true,
+  "logOutDisabledWhileLoggedIn": true,
+  "screenLockDisableImmediate": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Объект Термсандкондитионсграупасси
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8b5b97e691ff16ce2c86057ab5dae229d8657974
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 0f3518dcc31bf703d3fe42e6bab15d5731d5beb5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142688"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800919"
 ---
 # <a name="termsandconditionsgroupassignment-resource-type"></a>Тип ресурса Термсандкондитионсграупассигнмент
 
@@ -34,7 +34,7 @@ ms.locfileid: "30142688"
 |id|String|Уникальный идентификатор объекта.|
 |Таржетграупид|String|Уникальный идентификатор группы, которой назначена политика Т_амп_к.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md)|Ссылка для перехода к назначенным условиям.|
@@ -54,6 +54,7 @@ ms.locfileid: "30142688"
   "targetGroupId": "String"
 }
 ```
+
 
 
 

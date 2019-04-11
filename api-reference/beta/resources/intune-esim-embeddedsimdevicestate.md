@@ -4,12 +4,12 @@ description: Описание встроенного состояния разв
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c358fb343282bdb30b43226a02fe127c73613dcc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8cd14c92e5619cbce071190b966d3274386cec89
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151060"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804370"
 ---
 # <a name="embeddedsimdevicestate-resource-type"></a>Тип ресурса Ембеддедсимдевицестате
 
@@ -31,13 +31,13 @@ ms.locfileid: "30151060"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор состояния встроенного SIM-устройства. Созданное системой значение, назначаемое при создании.|
+|id|String|Уникальный идентификатор состояния встроенного SIM-устройства. Созданное системой значение, назначаемое при создании.|
 |createdDateTime|DateTimeOffset|Время создания встроенного состояния SIM-устройства. Созданная сторона службы.|
 |modifiedDateTime|DateTimeOffset|Время последнего изменения состояния внедренного SIM-устройства. Обновленная сторона службы.|
 |lastSyncDateTime|DateTimeOffset|Время последнего возврата встроенного SIM-устройства. Обновленная сторона службы.|
 |УниверсалинтегратедЦиркуиткардидентифиер|String|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
 |deviceName|String|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
-|userName|String|Имя пользователя, для которого была подготовлена подписка (например, joe@contoso.com).|
+|userName|String|Имя пользователя, которому подготавливается подписка, например.joe@contoso.com|
 |state|[Ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |Статедетаилс|String|Строковое описание состояния подготовки.|
 
@@ -66,6 +66,7 @@ ms.locfileid: "30151060"
   "stateDetails": "String"
 }
 ```
+
 
 
 

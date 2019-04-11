@@ -4,12 +4,12 @@ description: Предельная проПускная способность в
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7fb4fa251e9f1cb936da0ada158050df42e0aab6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ecb024d15ee5d4e748d57e1b895c9418feadd52a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178243"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802739"
 ---
 # <a name="deliveryoptimizationbandwidthhourswithpercentage-resource-type"></a>Тип ресурса Деливерйоптимизатионбандвидсхаурсвисперцентаже
 
@@ -25,8 +25,8 @@ ms.locfileid: "30178243"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Бандвидсбаккграундперцентажехаурс|[Деливерйоптимизатионбандвидсбусинесшаурслимит](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процент загрузки в фоновом режиме.|
-|Бандвидсфореграундперцентажехаурс|[Деливерйоптимизатионбандвидсбусинесшаурслимит](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процентное соотношение загрузки в процентах.|
+|Бандвидсбаккграундперцентажехаурс|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процент загрузки в фоновом режиме.|
+|Бандвидсфореграундперцентажехаурс|[deliveryOptimizationBandwidthBusinessHoursLimit](../resources/intune-deviceconfig-deliveryoptimizationbandwidthbusinesshourslimit.md)|Процентное соотношение загрузки в процентах.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -57,6 +57,7 @@ ms.locfileid: "30178243"
   }
 }
 ```
+
 
 
 

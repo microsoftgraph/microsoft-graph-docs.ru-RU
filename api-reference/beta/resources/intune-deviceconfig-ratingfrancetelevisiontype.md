@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9806d79e03576cedb23701f45e09b7766c4f6339
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9148808d1b93e46a65582d8ac190f142743004c8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155246"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801374"
 ---
 # <a name="ratingfrancetelevisiontype-enum-type"></a>тип перечисления Ратингфранцетелевисионтипе
 
@@ -26,8 +26,9 @@ ms.locfileid: "30155246"
 |Аллблоккед|1,1|Не разрешать показ контента|
 |agesAbove10|2|Не рекомендуется использовать классификацию-10 для детей в 10|
 |agesAbove12|4|Не рекомендуется использовать классификацию-12 для детей в масштабе от 12|
-|agesAbove16|4|Не рекомендуется использовать классификацию-16 для детей в 16|
+|agesAbove16|SP4|Не рекомендуется использовать классификацию-16 для детей в 16|
 |agesAbove18|17:00|Не рекомендуется использовать классификацию-18 для людей в 18|
+
 
 
 

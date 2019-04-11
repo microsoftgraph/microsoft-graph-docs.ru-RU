@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса windowsDeviceAccount
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fefa449c14736908c73c9a590ec9736b23d1c603
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e00b089d546dbb5a512d30e31c2828debd108ac3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169127"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804027"
 ---
 # <a name="windowsdeviceaccount-resource-type"></a>Тип ресурса windowsDeviceAccount
 
@@ -17,14 +17,14 @@ ms.locfileid: "30169127"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |password|String|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,6 +40,7 @@ ms.locfileid: "30169127"
   "password": "String"
 }
 ```
+
 
 
 

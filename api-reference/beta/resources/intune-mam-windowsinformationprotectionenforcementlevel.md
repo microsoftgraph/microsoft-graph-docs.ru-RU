@@ -4,12 +4,12 @@ description: Возможные значения для уровней прин�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 184f5b6d296a37f9356c2cfeefe7c3ecdbdb6973
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ac5a360bebfc60dbaf4315be5e4e189f91c1f2b8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150150"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801619"
 ---
 # <a name="windowsinformationprotectionenforcementlevel-enum-type"></a>тип перечисления Виндовсинформатионпротектионенфорцементлевел
 
@@ -26,6 +26,7 @@ ms.locfileid: "30150150"
 |Енкриптандаудитонли|1,1|Только шифрование и аудит|
 |Енкриптаудитандпромпт|2|Шифрование, аудит и запрос|
 |Енкриптаудитандблокк|4|Шифрование, аудит и блокировка|
+
 
 
 

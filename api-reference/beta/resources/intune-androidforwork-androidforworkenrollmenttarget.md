@@ -4,12 +4,12 @@ description: Тип нацеленности управления рабочим
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d7287541a9862d2378a0af4aae49c50e1071067e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: af8fda49e5ae56ff7f6d9605fbc8553c018a72f0
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30167839"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803208"
 ---
 # <a name="androidforworkenrollmenttarget-enum-type"></a>тип перечисления Андроидфорворкенроллменттаржет
 
@@ -22,10 +22,11 @@ ms.locfileid: "30167839"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Н/Д|
-|all|1,1|Н/Д|
-|Целевой|2|Н/Д|
-|Таржетедасенроллментрестриктионс|4|Н/Д|
+|нет|нуль|Пока не задокументировано.|
+|ко|1,1|Пока не задокументировано.|
+|Целевой|2|Пока не задокументировано.|
+|Таржетедасенроллментрестриктионс|4|Пока не задокументировано.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Ентерприсек
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ce8700728284af5d2092d6fa6b3057368106eb6e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 6cd85a33da06395314fc30836ba6f28de00c98ba
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975240"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802081"
 ---
 # <a name="create-enterprisecodesigningcertificate"></a>Создание Ентерприсекодесигнингцертификате
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/enterpriseCodeSigningCertificates
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Ентерприсекодесигнингцертификате в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Ентерприсекодесигнингцертификате.
@@ -107,6 +107,7 @@ Content-Length: 439
   "uploadDateTime": "2016-12-31T23:58:46.5747426-08:00"
 }
 ```
+
 
 
 

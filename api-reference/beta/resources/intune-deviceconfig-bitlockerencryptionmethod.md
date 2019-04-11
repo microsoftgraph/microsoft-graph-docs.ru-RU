@@ -4,12 +4,12 @@ description: Типы Битлоккеренкриптионмесод
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6538408e4a42b6cf4edffefc9a71b88a915d54e6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 71790c6d4d67ebfdfe7da0c7726cf30b908433c4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30141316"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802536"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>тип перечисления Битлоккеренкриптионмесод
 
@@ -23,9 +23,10 @@ ms.locfileid: "30141316"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |aesCbc128|4|AES — CBC 128 — бит.|
-|aesCbc256|4|AES — CBC 256 — бит.|
-|xtsAes128|6|КСТС — AES 128 — бит.|
-|xtsAes256|7|КСТС — AES 256 — бит.|
+|aesCbc256|SP4|AES — CBC 256 — бит.|
+|xtsAes128|ICMPv6|КСТС — AES 128 — бит.|
+|xtsAes256|см|КСТС — AES 256 — бит.|
+
 
 
 

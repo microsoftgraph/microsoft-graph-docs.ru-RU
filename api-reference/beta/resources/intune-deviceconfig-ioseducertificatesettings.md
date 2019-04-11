@@ -4,12 +4,12 @@ description: Доверенные корневые сертификаты и с�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4c94b7bc75022f8338a41da3b3b9d135dff47ac3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8d9060c28744bae52d4690bf75487e298d58d2a1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30142653"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800933"
 ---
 # <a name="ioseducertificatesettings-resource-type"></a>Тип ресурса Иоседуцертификатесеттингс
 
@@ -31,7 +31,7 @@ ms.locfileid: "30142653"
 |certificateValidityPeriodValue|Int32|Значение срока действия сертификата.|
 |certificateValidityPeriodScale|[certificateValidityPeriodScale](../resources/intune-deviceconfig-certificatevalidityperiodscale.md)|Масштаб срока действия сертификата. Возможные значения: `days`, `months`, `years`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "30142653"
   "certificateValidityPeriodScale": "String"
 }
 ```
+
 
 
 

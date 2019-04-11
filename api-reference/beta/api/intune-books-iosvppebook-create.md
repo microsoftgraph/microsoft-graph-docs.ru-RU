@@ -4,12 +4,12 @@ description: Создание объекта iosVppEBook.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9c481c036310ec3373fb280f356bfbbdb91d795
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a1d8affc86d478e4d274e1dafa118ba8d46cca3a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973154"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800695"
 ---
 # <a name="create-iosvppebook"></a>Create iosVppEBook
 
@@ -68,7 +68,7 @@ POST /deviceAppManagement/managedEBooks
 |seller|String|Продавец.|
 |totalLicenseCount|Int32|Общее число лицензий.|
 |usedLicenseCount|Int32|Число используемых лицензий.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -151,6 +151,7 @@ Content-Length: 1026
   ]
 }
 ```
+
 
 
 

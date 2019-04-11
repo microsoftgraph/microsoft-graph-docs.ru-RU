@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Инту
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1d98ab3de9132ae86cd413e8412ca97ede9aa3ee
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7da63b694acf1846021f9635999ece4155d61a0f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989206"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803761"
 ---
 # <a name="get-intunebrandingprofileassignment"></a>Получение Интунебрандингпрофилеассигнмент
 
@@ -77,6 +77,7 @@ Content-Length: 249
   }
 }
 ```
+
 
 
 

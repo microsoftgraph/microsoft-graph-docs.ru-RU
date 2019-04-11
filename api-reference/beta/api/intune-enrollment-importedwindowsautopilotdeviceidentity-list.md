@@ -4,12 +4,12 @@ description: Список свойств и связей между объект
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 01d63916bce133d90bf8c0dbd3a12c90fefc1fc9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 84044941c68f911758e297803b81d2240db324cd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30973140"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31804531"
 ---
 # <a name="list-importedwindowsautopilotdeviceidentities"></a>Список importedWindowsAutopilotDeviceIdentities
 
@@ -63,7 +63,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDe
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 675
+Content-Length: 713
 
 {
   "value": [
@@ -73,6 +73,7 @@ Content-Length: 675
       "orderIdentifier": "Order Identifier value",
       "serialNumber": "Serial Number value",
       "productKey": "Product Key value",
+      "importId": "Import Id value",
       "hardwareIdentifier": "aGFyZHdhcmVJZGVudGlmaWVy",
       "state": {
         "@odata.type": "microsoft.graph.importedWindowsAutopilotDeviceIdentityState",
@@ -85,6 +86,7 @@ Content-Length: 675
   ]
 }
 ```
+
 
 
 

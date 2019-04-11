@@ -4,12 +4,12 @@ description: Представляет записи регистрации уст
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d4403ae2e4629a330fadd5136530d66c8a7d7f2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 552fbcc9e27eb94937d2aa2488e573b0d932bab2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161679"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803327"
 ---
 # <a name="windowsinformationprotectiondeviceregistration-resource-type"></a>Тип ресурса Виндовсинформатионпротектиондевицерегистратион
 
@@ -32,7 +32,7 @@ ms.locfileid: "30161679"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Ключ объекта.|
+|id|String|Ключ объекта.|
 |userId|String|UserId, связанный с этой записью регистрации устройства.|
 |deviceRegistrationId|Строка|Идентификатор устройства для записи регистрации этого устройства.|
 |deviceName|String|Имя устройства.|
@@ -41,7 +41,7 @@ ms.locfileid: "30161679"
 |Ластчеккиндатетиме|DateTimeOffset|Время последнего возврата устройства.|
 
 ## <a name="relationships"></a>Отношения
-None
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -63,6 +63,7 @@ None
   "lastCheckInDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

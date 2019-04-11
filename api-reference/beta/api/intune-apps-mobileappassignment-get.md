@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта mobileAp
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60d2581a117ac9d4075fd3a6d4d077412dbf86d7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 91f687f3b257f6c0f05fd193161b0770a953525b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974295"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31800898"
 ---
 # <a name="get-mobileappassignment"></a>Get mobileAppAssignment
 
@@ -81,6 +81,7 @@ Content-Length: 359
   }
 }
 ```
+
 
 
 

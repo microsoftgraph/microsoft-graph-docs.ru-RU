@@ -4,12 +4,12 @@ description: Представляет сводку по развертывани
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9d940a5cf996f2fa42ac73ccba89ccef7f5999e5
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 23fb9b2658bb15a851fca169c37bcf080d1c7c1c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156975"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803712"
 ---
 # <a name="managedapppolicydeploymentsummaryperapp-resource-type"></a>Тип ресурса managedAppPolicyDeploymentSummaryPerApp
 
@@ -25,7 +25,7 @@ ms.locfileid: "30156975"
 |mobileAppIdentifier|[mobileAppIdentifier](../resources/intune-mam-mobileappidentifier.md)|Развертывание приложения.|
 |configurationAppliedUserCount|Int32|Количество пользователей, к которым применяется политика.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "30156975"
   "configurationAppliedUserCount": 1024
 }
 ```
+
 
 
 

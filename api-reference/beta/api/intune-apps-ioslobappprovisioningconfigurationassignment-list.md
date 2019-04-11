@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Иос
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 93e6d6661e53fa401abc643c0aa14d38815be5cb
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 246adae6e760f2b2c19e811858f08068c5a2edbf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960841"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801808"
 ---
 # <a name="list-ioslobappprovisioningconfigurationassignments"></a>Список Иослобапппровисионингконфигуратионассигнментс
 
@@ -76,6 +76,7 @@ Content-Length: 286
   ]
 }
 ```
+
 
 
 

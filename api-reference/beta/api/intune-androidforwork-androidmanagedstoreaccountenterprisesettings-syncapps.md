@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4d6123aeb7cad5a39a2afa250c425226009ff785
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: f21a9799dc416b7b35a309d8f4984f4f03bf1378
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963550"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31803068"
 ---
 # <a name="syncapps-action"></a>Действие syncApps
 
@@ -62,6 +62,7 @@ POST https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAccoun
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

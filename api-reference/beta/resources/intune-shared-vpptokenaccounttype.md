@@ -4,12 +4,12 @@ description: Возможные типы маркера Apple Volume Purchase Pr
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 109cbfee1153ec4ef547ac14ca5efd0a2c2054b3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ad7c11f5ce44a39a749d63abb61da7b01948799e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143388"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802039"
 ---
 # <a name="vpptokenaccounttype-enum-type"></a>тип перечисления Впптокенаккаунттипе
 
@@ -24,6 +24,7 @@ ms.locfileid: "30143388"
 |:---|:---|:---|
 |подразделения|нуль|Токен Apple Volume Purchase Program, связанный с бизнес-программой.|
 |закончен|1,1|Токен Apple Volume Purchase Program, связанный с программой для образования.|
+
 
 
 

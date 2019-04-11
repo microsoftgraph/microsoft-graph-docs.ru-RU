@@ -4,12 +4,12 @@ description: Создание нового объекта Граупполици
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c5e051e6a6caea007bea9045dd0398f660dcd920
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 45a930e1973c00f7ec3ad67fe8d0ed863ab2a7f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969059"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802291"
 ---
 # <a name="create-grouppolicypresentationdecimaltextbox"></a>Создание ГраупполиципресентатиондеЦималтекстбокс
 
@@ -106,6 +106,7 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
+
 
 
 

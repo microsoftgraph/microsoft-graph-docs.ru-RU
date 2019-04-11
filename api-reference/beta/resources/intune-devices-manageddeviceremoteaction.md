@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Манажеддевицеремотеактион
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7aafc5402ceeebb56f948a669d4bf1f461578d0c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c619a45f1ddfe20654c208fed424631e4d3e183c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172802"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801136"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип перечисления Манажеддевицеремотеактион
 
@@ -17,16 +17,17 @@ ms.locfileid: "30172802"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|снять|нуль|Н/Д|
-|delete|1,1|Н/Д|
-|fullScan|2|Н/Д|
-|quickScan|4|Н/Д|
-|Сигнатуреупдате|4|Н/Д|
+|снять|нуль|Пока не задокументировано.|
+|delete|1,1|Пока не задокументировано.|
+|fullScan|2|Пока не задокументировано.|
+|quickScan|4|Пока не задокументировано.|
+|Сигнатуреупдате|SP4|Пока не задокументировано.|
+
 
 
 

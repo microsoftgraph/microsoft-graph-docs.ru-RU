@@ -4,12 +4,12 @@ description: Сообщение, которое будет отображать�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bd803ba1bf201b68278e8dc1bc67a27bbb3dd9a7
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f36ba0eed3485cf65f9111cb118a766fb17456bf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168056"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801150"
 ---
 # <a name="internetexplorermessagesetting-enum-type"></a>тип перечисления Интернетексплорермессажесеттинг
 
@@ -26,6 +26,7 @@ ms.locfileid: "30168056"
 |активирован|1,1|Активирован.|
 |enabled|2|Доступ.|
 |Кипгоинг|4|Кипгоинг.|
+
 
 
 

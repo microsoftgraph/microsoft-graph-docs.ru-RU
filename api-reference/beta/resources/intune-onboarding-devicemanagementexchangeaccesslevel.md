@@ -4,12 +4,12 @@ description: Уровень доступа в Exchange.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dc84149f9ca6b178807e4bd70984fe1abfff6a09
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: c235d31e97b570f70145884349eaef6e2254194c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174237"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802466"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>тип перечисления Девицеманажементексчанжеакцесслевел
 
@@ -22,10 +22,11 @@ ms.locfileid: "30174237"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|В Exchange не настроено правило доступа к устройствам.|
+|нет|нуль|В Exchange не настроено правило доступа к устройствам.|
 |разрешить|1,1|Разрешить устройству доступ к Exchange.|
 |блок|2|Блокировать доступ устройства к Exchange.|
 |папку|4|Карантин устройства в Exchange.|
+
 
 
 

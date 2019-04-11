@@ -4,12 +4,12 @@ description: Состояние действия отзыва лицензий, 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ec3ccf2bfd72ae9f6aeb85e3a7228faac09a8b2c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 432419f337750362256140b8d13a1841b49907d4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158172"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802165"
 ---
 # <a name="vpptokenrevokelicensesactionresult-resource-type"></a>Тип ресурса Впптокенревокелиценсесактионресулт
 
@@ -55,6 +55,7 @@ ms.locfileid: "30158172"
   "actionFailureReason": "String"
 }
 ```
+
 
 
 

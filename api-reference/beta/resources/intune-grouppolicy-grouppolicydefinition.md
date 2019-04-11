@@ -4,12 +4,12 @@ description: Сущность описывает все сведения об о
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7c5062fda984dbe1dda518e77ff271750d30adb8
-ms.sourcegitcommit: cd4bdb2c6754b1d5658e68909ea6c219466da6df
+ms.openlocfilehash: a9e411c2672650e3e603bfa0e64fde1c4db53607
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30644288"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802767"
 ---
 # <a name="grouppolicydefinition-resource-type"></a>Тип ресурса Граупполицидефинитион
 
@@ -64,6 +64,7 @@ ms.locfileid: "30644288"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

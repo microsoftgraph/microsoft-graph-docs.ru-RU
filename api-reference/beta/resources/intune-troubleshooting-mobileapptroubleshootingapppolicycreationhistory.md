@@ -4,12 +4,12 @@ description: Элемент History, содержащийся в соБытии 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a93b88f850e2fa220903362375774d8a6dded59c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cbbf575c7eaecb93e0256d6f672d0c4d6bdd0edf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160503"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802494"
 ---
 # <a name="mobileapptroubleshootingapppolicycreationhistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппполицикреатионхистори
 
@@ -47,7 +47,6 @@ ms.locfileid: "30160503"
   "errorCode": "String"
 }
 ```
-
 
 
 

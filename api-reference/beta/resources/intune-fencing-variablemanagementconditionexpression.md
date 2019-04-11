@@ -4,12 +4,12 @@ description: Оценивает состояние условия управле
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: fab070cc9d2c51fbe1dc4b33c82fb823a849b7cc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 548c0ffd27f76dacf5f88d9e783ce793e64cc434
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168231"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31802760"
 ---
 # <a name="variablemanagementconditionexpression-resource-type"></a>Тип ресурса Вариаблеманажементкондитионекспрессион
 
@@ -43,6 +43,7 @@ ms.locfileid: "30168231"
   "managementConditionId": "String"
 }
 ```
+
 
 
 

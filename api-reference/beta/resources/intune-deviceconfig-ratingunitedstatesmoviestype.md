@@ -4,12 +4,12 @@ description: Метки оценок фильмов в США
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8475e3cfa4dbdd2e93f685a1b954d44516104ac3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 804110ee07c85a1ca68f259e8b4ae9a206f5f29b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152740"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31801437"
 ---
 # <a name="ratingunitedstatesmoviestype-enum-type"></a>тип перечисления Ратингунитедстатесмовиестипе
 
@@ -26,9 +26,10 @@ ms.locfileid: "30152740"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |обобщен|2|G, все Недопущенные сроки|
 |Паренталгуиданце|4|PG, некоторые материалы могут не подойти для детей|
-|parentalGuidance13|4|PG13, некоторые материалы могут быть неприемлемыми для детей 13|
+|parentalGuidance13|SP4|PG13, некоторые материалы могут быть неприемлемыми для детей 13|
 |ограниченной|17:00|R для зрителей в разделе 17 требуется сопроводительный родитель или опекун взрослого|
-|взрослые|6|NC17, только для взрослых|
+|взрослые|ICMPv6|NC17, только для взрослых|
+
 
 
 
