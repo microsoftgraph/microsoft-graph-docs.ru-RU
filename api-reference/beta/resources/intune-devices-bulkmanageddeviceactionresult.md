@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса Булкманажеддевицеактионресулт
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 199fe08b4eaf339f17fdb67bb6dbcc0243fd90f9
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e0978367465fde92f9874e338a0de84da2a20403
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168336"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770937"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
@@ -22,10 +22,10 @@ ms.locfileid: "30168336"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
-|Фаиледдевицеидс|Коллекция строк|Неисправные устройства|
-|Нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
-|Нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
+|Сукцессфулдевицеидс|Коллекция String|Успешное выполнение устройств|
+|Фаиледдевицеидс|Коллекция String|Неисправные устройства|
+|Нотфаунддевицеидс|Коллекция String|Устройства не найдены|
+|Нотсуппортеддевицеидс|Коллекция String|Неподдерживаемые устройства|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -54,6 +54,7 @@ ms.locfileid: "30168336"
   ]
 }
 ```
+
 
 
 

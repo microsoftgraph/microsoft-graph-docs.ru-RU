@@ -4,12 +4,12 @@ description: Типы платформы Суппуртед для полити�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8f78d8b885f8468a550a0a6e5e9e5017bd9b258a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ae846552b736fccd34415459a08567eb82a0d347
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30149506"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771322"
 ---
 # <a name="policyplatformtype-enum-type"></a>тип перечисления Полициплатформтипе
 
@@ -26,11 +26,12 @@ ms.locfileid: "30149506"
 |Андроидфорворк|1,1|Андроидфорворк.|
 |iOS|2|модуле.|
 |macOS|4|MacOS.|
-|windowsPhone81|4|WindowsPhone 8,1.|
+|windowsPhone81|SP4|WindowsPhone 8,1.|
 |windows81AndLater|17:00|Windows 8,1 и более поздние версии|
-|windows10AndLater|6|Windows 10 и более поздних версий.|
-|Андроидворкпрофиле|7|Андроидворкпрофиле.|
-|all|100|Все платформы.|
+|windows10AndLater|ICMPv6|Windows 10 и более поздних версий.|
+|Андроидворкпрофиле|см|Андроидворкпрофиле.|
+|ко|100|Все платформы.|
+
 
 
 

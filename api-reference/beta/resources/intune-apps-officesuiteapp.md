@@ -4,12 +4,12 @@ description: Содержит свойства и наследуемые сво�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 3d7888edc73425c78090052222028e19f18ec8a1
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 0109154dada9ddfdf848b698b052f68c68527259
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30571377"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771056"
 ---
 # <a name="officesuiteapp-resource-type"></a>Тип ресурса officeSuiteApp
 
@@ -26,10 +26,10 @@ ms.locfileid: "30571377"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Оффицесуитеаппс](../api/intune-apps-officesuiteapp-list.md)|Коллекция [officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|Список свойств и связей объектов [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
-|[Получение officeSuiteApp](../api/intune-apps-officesuiteapp-get.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md);|Чтение свойств и связей объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
-|[Создание officeSuiteApp](../api/intune-apps-officesuiteapp-create.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md);|Создание нового объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
+|[Получение officeSuiteApp](../api/intune-apps-officesuiteapp-get.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|Чтение свойств и связей объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
+|[Создание officeSuiteApp](../api/intune-apps-officesuiteapp-create.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|Создание нового объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
 |[Удаление officeSuiteApp](../api/intune-apps-officesuiteapp-delete.md)|Нет|Удаляет объект [officeSuiteApp](../resources/intune-apps-officesuiteapp.md).|
-|[Обновление officeSuiteApp](../api/intune-apps-officesuiteapp-update.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md);|Обновление свойств объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
+|[Обновление officeSuiteApp](../api/intune-apps-officesuiteapp-update.md)|[officeSuiteApp](../resources/intune-apps-officesuiteapp.md)|Обновление свойств объекта [officeSuiteApp](../resources/intune-apps-officesuiteapp.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -37,41 +37,43 @@ ms.locfileid: "30571377"
 |id|Строка|Ключ объекта. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |displayName|Строка|Название приложения, которое предоставил или импортировал администратор. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |description|String|Описание приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|publisher|Строка|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|publisher|String|Издатель приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
-|privacyInformationUrl|Строка|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|informationUrl|Строка|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|owner|Строка|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|developer|Строка|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|developer|String|Разработчик приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |notes|String|Заметки для приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Аутоакцептеула|Boolean|Значение, которое будет автоматически принимать условия ЛИЦЕНЗИОНного соглашения на устройстве ендусер.|
 |productIds|Коллекция [оффицепродуктид](../resources/intune-apps-officeproductid.md)|Идентификаторы продуктов, представляющие SKU набора Office365.|
-|excludedApps;|[excludedApps](../resources/intune-apps-excludedapps.md);|Свойство для представления приложений, исключаемых из выбранного идентификатора продукта Office365.|
+|excludedApps|[excludedApps](../resources/intune-apps-excludedapps.md)|Свойство для представления приложений, исключаемых из выбранного идентификатора продукта Office365.|
 |Свойства usesharedcomputeractivation|Boolean|Свойство для представления того, используется ли активация на общем компьютере не для приложений Office365.|
 |updateChannel|[Оффицеупдатечаннел](../resources/intune-apps-officeupdatechannel.md)|Свойство для представления канала обновления Office365. Возможные значения: `none`, `current`, `deferred`, `firstReleaseCurrent`, `firstReleaseDeferred`.|
 |officePlatformArchitecture|[windowsArchitecture](../resources/intune-apps-windowsarchitecture.md)|Свойство для представления версии набора приложений Office365. Возможные значения: `none`, `x86`, `x64`, `arm`, `neutral`, `arm64`.|
-|localesToInstall|Коллекция строк|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словомhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
+|localesToInstall|Коллекция String|Свойство для представления языковых стандартов, устанавливаемых при установке приложений из Office365. В нем используется стандартная спецификация RFC 6033. Словомhttps://technet.microsoft.com/en-us/library/cc179219(v=office.16).aspx|
 |Инсталлпрогрессдисплайлевел|[Оффицесуитеинсталлпрогрессдисплайлевел](../resources/intune-apps-officesuiteinstallprogressdisplaylevel.md)|Для указания уровня отображения ПОЛЬЗОВАТЕЛЬСКОГО интерфейса установки хода установки на устройстве. Возможные значения: `none`, `full`.|
 |Шаулдунинсталлолдерверсионсофоффице|Boolean|Свойство, определяющее, следует ли удалить существующий MSI Office, если на устройстве развернут набор приложений Office365.|
-|Атрибута targetversion|Строка|Свойство, представляющее определенную целевую версию для набора приложений Office365, который должен быть развернут на устройствах.|
-|Упдатеверсион|Строка|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
-|Оффицеконфигуратионксмл|Двоичный|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
+|Атрибута targetversion|String|Свойство, представляющее определенную целевую версию для набора приложений Office365, который должен быть развернут на устройствах.|
+|Упдатеверсион|String|Свойство для представления версии обновления, в которой определенная Целевая версия доступна для набора приложений Office365.|
+|Оффицеконфигуратионксмл|Binary|Свойство, представляющее XML-файл конфигурации, который можно указать для приложений Office профессиональный плюс. Имеет приоритет над всеми другими свойствами. Если этот параметр указан, для создания приложения будет использоваться XML-файл конфигурации.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
@@ -107,6 +109,7 @@ ms.locfileid: "30571377"
   "roleScopeTagIds": [
     "String"
   ],
+  "dependentAppCount": 1024,
   "autoAcceptEula": true,
   "productIds": [
     "String"
@@ -141,6 +144,7 @@ ms.locfileid: "30571377"
   "officeConfigurationXml": "binary"
 }
 ```
+
 
 
 

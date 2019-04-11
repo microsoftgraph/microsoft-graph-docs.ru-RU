@@ -4,12 +4,12 @@ description: Сводные данные для управляемых устр�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6c7187bc5cb984e4ca7e607068e6010f747f868
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 07a6bda1e62088eabc3450cf2dcefc945f3ca898
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30175005"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771203"
 ---
 # <a name="manageddeviceoverview-resource-type"></a>Тип ресурса managedDeviceOverview
 
@@ -22,7 +22,7 @@ ms.locfileid: "30175005"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md);|Чтение свойств и связей объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
+|[Get managedDeviceOverview](../api/intune-devices-manageddeviceoverview-get.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Чтение свойств и связей объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
 |[Обновление объекта managedDeviceOverview](../api/intune-devices-manageddeviceoverview-update.md)|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Обновление свойств объекта [managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md).|
 
 ## <a name="properties"></a>Свойства
@@ -84,6 +84,7 @@ ms.locfileid: "30175005"
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Экземпляр параметра, представляющий
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 568a1d60572123424869f1ee98c3cb6bc600d36f
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a5987e74f4503a2f84e457a8d59d7219d941f600
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522554"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771476"
 ---
 # <a name="devicemanagementintegersettinginstance-resource-type"></a>Тип ресурса Девицеманажементинтежерсеттингинстанце
 
@@ -26,10 +26,10 @@ ms.locfileid: "31522554"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицеманажементинтежерсеттингинстанцес](../api/intune-deviceintent-devicemanagementintegersettinginstance-list.md)|Коллекция [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Список свойств и связей объектов [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
-|[Получение Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-get.md)|[Девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Чтение свойств и связей объекта [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
-|[Создание Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-create.md)|[Девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Создание нового объекта [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
+|[Получение Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-get.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Чтение свойств и связей объекта [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
+|[Создание Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-create.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Создание нового объекта [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
 |[Удаление Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-delete.md)|Нет|Удаляет объект [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md).|
-|[Обновление Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-update.md)|[Девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Обновление свойств объекта [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
+|[Обновление Девицеманажементинтежерсеттингинстанце](../api/intune-deviceintent-devicemanagementintegersettinginstance-update.md)|[deviceManagementIntegerSettingInstance](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md)|Обновление свойств объекта [девицеманажементинтежерсеттингинстанце](../resources/intune-deviceintent-devicemanagementintegersettinginstance.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -59,8 +59,6 @@ ms.locfileid: "31522554"
   "value": 1024
 }
 ```
-
-
 
 
 

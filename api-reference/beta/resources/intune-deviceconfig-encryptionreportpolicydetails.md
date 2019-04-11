@@ -4,12 +4,12 @@ description: Сведения о политике для отчета о шиф�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d9232acd2a155169385956b9d20b3011c963090a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 9c9903b54483fc6f77cd183abee0e54b10acf9cc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30177919"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771014"
 ---
 # <a name="encryptionreportpolicydetails-resource-type"></a>Тип ресурса Енкриптионрепортполицидетаилс
 
@@ -42,6 +42,7 @@ ms.locfileid: "30177919"
   "policyName": "String"
 }
 ```
+
 
 
 

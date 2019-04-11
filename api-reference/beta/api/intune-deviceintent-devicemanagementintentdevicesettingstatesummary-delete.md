@@ -4,12 +4,12 @@ description: Удаляет объект Девицеманажементинт�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2b067256a2459367ac6da04b109e19f3448e89e4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: db4e6b8a781fde728b0c6eae523ea37ab195a838
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522897"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770860"
 ---
 # <a name="delete-devicemanagementintentdevicesettingstatesummary"></a>Удаление Девицеманажементинтентдевицесеттингстатесуммари
 
@@ -62,8 +62,6 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/intents/{deviceManageme
 ``` http
 HTTP/1.1 204 No Content
 ```
-
-
 
 
 

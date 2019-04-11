@@ -4,12 +4,12 @@ description: Возможные значения для Дефендерсубм
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 17b035677c0f0e1639c6cfb0568852f0d366562a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 105f282f93eb43d8e977a997d0ea114ff86ace10
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163163"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771035"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>тип перечисления Дефендерсубмитсамплесконсенттипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "30163163"
 |Алвайспромпт|1,1|Всегда запрашивать|
 |Неверсенд|2|Никогда не отправлять|
 |Сендаллсамплесаутоматикалли|4|Автоматическая отправка всех примеров|
+
 
 
 

@@ -4,12 +4,12 @@ description: Создание нового объекта Девицеманаж
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 615b8d7a6cdae5b8f1d881181b80815f94cc508a
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: f52379e6cf4a729f7d1a94c839e8b1956348ea9e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522757"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770321"
 ---
 # <a name="create-devicemanagementstringsettinginstance"></a>Создание Девицеманажементстрингсеттингинстанце
 
@@ -95,8 +95,6 @@ Content-Length: 233
   "value": "Value value"
 }
 ```
-
-
 
 
 

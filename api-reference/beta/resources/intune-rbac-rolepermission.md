@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса rolePermission
-description: Н/Д
+description: Содержит набор Ресаурцеактионс, определяющих разрешения "разрешено" и "не разрешено" для каждой роли.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5b56df927cda3cbf98e7d736311aba2db5e53906
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e9bbd4782022faebcf56b8bf582e233fd5ba54f6
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145383"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771266"
 ---
 # <a name="rolepermission-resource-type"></a>Тип ресурса rolePermission
 
@@ -17,15 +17,15 @@ ms.locfileid: "30145383"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Содержит набор Ресаурцеактионс, определяющих разрешения "разрешено" и "не разрешено" для каждой роли.
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|actions|Коллекция строк|Разрешенные действия|
-|resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия|
+|actions|Коллекция String|Разрешенные действия — устарело|
+|resourceActions|Коллекция объектов [resourceAction](../resources/intune-rbac-resourceaction.md)|Действия с ресурсами, содержащие набор разрешенных и запрещенных разрешений.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -54,6 +54,7 @@ ms.locfileid: "30145383"
   ]
 }
 ```
+
 
 
 

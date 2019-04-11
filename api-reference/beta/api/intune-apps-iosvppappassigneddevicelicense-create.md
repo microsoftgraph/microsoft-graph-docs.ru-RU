@@ -4,12 +4,12 @@ description: Создание нового объекта Иосвппаппас
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 42109f11ffb01fa90b5ecde9e7952d4113fb23ba
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: ced922ee489e1f17f6b33df4a2807fee776fe0ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972909"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771252"
 ---
 # <a name="create-iosvppappassigneddevicelicense"></a>Создание Иосвппаппассигнеддевицелиценсе
 
@@ -43,7 +43,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/microsoft.graph.iosVppApp/ass
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Иосвппаппассигнеддевицелиценсе в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Иосвппаппассигнеддевицелиценсе.
@@ -101,6 +101,7 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
+
 
 
 

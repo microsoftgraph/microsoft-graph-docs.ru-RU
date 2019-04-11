@@ -4,12 +4,12 @@ description: Удаляет объект windowsPhone81GeneralConfiguration.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f9fd0e076d1255b84c104c3cc19abc24853d9fc8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a99f184c7b722c0a4935a8c59424dd9b9678d4ad
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981141"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770237"
 ---
 # <a name="delete-windowsphone81generalconfiguration"></a>Удаление объекта windowsPhone81GeneralConfiguration
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

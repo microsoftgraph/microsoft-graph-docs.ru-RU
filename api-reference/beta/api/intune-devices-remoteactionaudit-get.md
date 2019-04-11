@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта remoteAc
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 60c5d3991e46296e4e058afbdd416ccc77c5b8f8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 97143a97addc863ebc585823025f2ca4c9c36c43
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983304"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770783"
 ---
 # <a name="get-remoteactionaudit"></a>Получение remoteActionAudit
 
@@ -82,6 +82,7 @@ Content-Length: 543
   }
 }
 ```
+
 
 
 

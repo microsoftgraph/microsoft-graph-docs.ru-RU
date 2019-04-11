@@ -4,12 +4,12 @@ description: Создание объекта notificationMessageTemplate.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e3a42b9bb9ffff93f1ae92c94899ee1c76e8c6d9
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 60f5ef2ae0f46a85e2f793eb90c969a1fb28d311
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30959294"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770658"
 ---
 # <a name="create-notificationmessagetemplate"></a>Создание объекта notificationMessageTemplate
 
@@ -55,7 +55,7 @@ POST /deviceManagement/notificationMessageTemplates
 |displayName|Строка|Отображаемое имя для шаблона сообщения уведомления.|
 |defaultLocale|String|Языковой стандарт по умолчанию, который используется, если запрошенный языковой стандарт недоступен.|
 |brandingOptions|[Нотификатионтемплатебрандингоптионс](../resources/intune-notification-notificationtemplatebrandingoptions.md)|Параметры фирменной символики шаблона сообщения. Фирменная символика определяется в консоли администрирования Intune. Возможные значения: `none`, `includeCompanyLogo`, `includeCompanyName`, `includeContactInformation`.|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности.|
 
 
 
@@ -101,6 +101,7 @@ Content-Length: 372
   ]
 }
 ```
+
 
 
 

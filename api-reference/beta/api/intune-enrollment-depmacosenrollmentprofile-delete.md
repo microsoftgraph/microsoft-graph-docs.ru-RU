@@ -4,12 +4,12 @@ description: Удаляет объект Депмакосенроллментп�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 053985ab71c863c07e12aefcaa68819f64caabe7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 22a106a5276a1f9378aea8582fe0823668ea6264
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989157"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770839"
 ---
 # <a name="delete-depmacosenrollmentprofile"></a>Удаление Депмакосенроллментпрофиле
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

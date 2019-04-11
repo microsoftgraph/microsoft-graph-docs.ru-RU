@@ -4,12 +4,12 @@ description: Удаляет importedWindowsAutopilotDeviceIdentity.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 569f46952c88801b00ca5065b8d4a31e79378078
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 99c62005574c5d62b3ba7fb8a2fb3cff9f2af538
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957572"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770685"
 ---
 # <a name="delete-importedwindowsautopilotdeviceidentity"></a>Удаление importedWindowsAutopilotDeviceIdentity
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilo
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Метки рейтинга ТЕЛЕВИЗИОНного содер
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d016565ba9fdbb62ea24d39d52f0e2931bab3117
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8e280ad851e9d53b8c1dc2d000419d8aaa2d9c6c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166838"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31771364"
 ---
 # <a name="ratingunitedstatestelevisiontype-enum-type"></a>тип перечисления Ратингунитедстатестелевисионтипе
 
@@ -26,10 +26,11 @@ ms.locfileid: "30166838"
 |Аллблоккед|1,1|Не разрешать показ контента|
 |Чилдреналл|2|ТВ-Y, все дочерние элементы|
 |childrenAbove7|4|ТВ-Y7, детей от 7 лет и выше|
-|обобщен|4|ТЕЛЕВИДЕНИЕ (TV-G), пригодный для всех лет|
+|обобщен|SP4|ТЕЛЕВИДЕНИЕ (TV-G), пригодный для всех лет|
 |Паренталгуиданце|17:00|TV-PG, родительский совет|
-|childrenAbove14|6|TV-14, детей от 14 лет и выше|
-|взрослые|7|Только для передачи ТЕЛЕПЕРЕДАЧ-мА|
+|childrenAbove14|ICMPv6|TV-14, детей от 14 лет и выше|
+|взрослые|см|Только для передачи ТЕЛЕПЕРЕДАЧ-мА|
+
 
 
 

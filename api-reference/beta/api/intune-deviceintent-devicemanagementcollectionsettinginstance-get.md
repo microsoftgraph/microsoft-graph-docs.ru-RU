@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Деви
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f81fb1c2f7c43ad2d1072e574ec3b63945d0669e
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 21a2348d99b5ae76659f88cf9cbc29f84a0a1181
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31524052"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31770412"
 ---
 # <a name="get-devicemanagementcollectionsettinginstance"></a>Получение Девицеманажементколлектионсеттингинстанце
 
@@ -79,8 +79,6 @@ Content-Length: 237
   }
 }
 ```
-
-
 
 
 
