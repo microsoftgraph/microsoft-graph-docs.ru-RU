@@ -4,31 +4,31 @@ description: Обновление свойств объекта Андроидм
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8ea008cc304a86817f2da1c234ad57f30c4b4259
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 95b01edae05234c1e6bd9c801d3f5c5f83287195
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960981"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31782529"
 ---
-# <a name="update-androidmanagedstoreappconfigurationschema"></a><span data-ttu-id="227da-103">Обновление Андроидманажедстореаппконфигуратионсчема</span><span class="sxs-lookup"><span data-stu-id="227da-103">Update androidManagedStoreAppConfigurationSchema</span></span>
+# <a name="update-androidmanagedstoreappconfigurationschema"></a><span data-ttu-id="b6791-103">Обновление Андроидманажедстореаппконфигуратионсчема</span><span class="sxs-lookup"><span data-stu-id="b6791-103">Update androidManagedStoreAppConfigurationSchema</span></span>
 
-> <span data-ttu-id="227da-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="227da-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="b6791-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6791-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="227da-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="227da-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="b6791-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="b6791-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="227da-106">Обновление свойств объекта [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="227da-106">Update the properties of a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
+<span data-ttu-id="b6791-106">Обновление свойств объекта [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) .</span><span class="sxs-lookup"><span data-stu-id="b6791-106">Update the properties of a [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="227da-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="227da-107">Prerequisites</span></span>
-<span data-ttu-id="227da-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="227da-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="b6791-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="b6791-107">Prerequisites</span></span>
+<span data-ttu-id="b6791-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b6791-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="227da-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="227da-110">Permission type</span></span>|<span data-ttu-id="227da-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="227da-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="b6791-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b6791-110">Permission type</span></span>|<span data-ttu-id="b6791-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="b6791-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="227da-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="227da-112">Delegated (work or school account)</span></span>|<span data-ttu-id="227da-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="227da-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="227da-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="227da-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="227da-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="227da-115">Not supported.</span></span>|
-|<span data-ttu-id="227da-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="227da-116">Application</span></span>|<span data-ttu-id="227da-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="227da-117">Not supported.</span></span>|
+|<span data-ttu-id="b6791-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b6791-112">Delegated (work or school account)</span></span>|<span data-ttu-id="b6791-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6791-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="b6791-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b6791-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="b6791-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6791-115">Not supported.</span></span>|
+|<span data-ttu-id="b6791-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b6791-116">Application</span></span>|<span data-ttu-id="b6791-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="b6791-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="227da-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="227da-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6791-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b6791-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,32 +37,32 @@ ms.locfileid: "30960981"
 PATCH /deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManagedStoreAppConfigurationSchemaId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="227da-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="227da-119">Request headers</span></span>
-|<span data-ttu-id="227da-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="227da-120">Header</span></span>|<span data-ttu-id="227da-121">Значение</span><span class="sxs-lookup"><span data-stu-id="227da-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b6791-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b6791-119">Request headers</span></span>
+|<span data-ttu-id="b6791-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="b6791-120">Header</span></span>|<span data-ttu-id="b6791-121">Значение</span><span class="sxs-lookup"><span data-stu-id="b6791-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="227da-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="227da-122">Authorization</span></span>|<span data-ttu-id="227da-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="227da-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="227da-124">Accept</span><span class="sxs-lookup"><span data-stu-id="227da-124">Accept</span></span>|<span data-ttu-id="227da-125">application/json</span><span class="sxs-lookup"><span data-stu-id="227da-125">application/json</span></span>|
+|<span data-ttu-id="b6791-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="b6791-122">Authorization</span></span>|<span data-ttu-id="b6791-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6791-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="b6791-124">Accept</span><span class="sxs-lookup"><span data-stu-id="b6791-124">Accept</span></span>|<span data-ttu-id="b6791-125">application/json</span><span class="sxs-lookup"><span data-stu-id="b6791-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="227da-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="227da-126">Request body</span></span>
-<span data-ttu-id="227da-127">В тексте запроса добавьте представление объекта [Андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="227da-127">In the request body, supply a JSON representation for the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="b6791-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="b6791-126">Request body</span></span>
+<span data-ttu-id="b6791-127">В тексте запроса добавьте представление объекта [Андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b6791-127">In the request body, supply a JSON representation for the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object.</span></span>
 
-<span data-ttu-id="227da-128">В следующей таблице приведены свойства, необходимые при создании [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span><span class="sxs-lookup"><span data-stu-id="227da-128">The following table shows the properties that are required when you create the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span></span>
+<span data-ttu-id="b6791-128">В следующей таблице приведены свойства, необходимые при создании [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span><span class="sxs-lookup"><span data-stu-id="b6791-128">The following table shows the properties that are required when you create the [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md).</span></span>
 
-|<span data-ttu-id="227da-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="227da-129">Property</span></span>|<span data-ttu-id="227da-130">Тип</span><span class="sxs-lookup"><span data-stu-id="227da-130">Type</span></span>|<span data-ttu-id="227da-131">Описание</span><span class="sxs-lookup"><span data-stu-id="227da-131">Description</span></span>|
+|<span data-ttu-id="b6791-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="b6791-129">Property</span></span>|<span data-ttu-id="b6791-130">Тип</span><span class="sxs-lookup"><span data-stu-id="b6791-130">Type</span></span>|<span data-ttu-id="b6791-131">Описание</span><span class="sxs-lookup"><span data-stu-id="b6791-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="227da-132">id</span><span class="sxs-lookup"><span data-stu-id="227da-132">id</span></span>|<span data-ttu-id="227da-133">String</span><span class="sxs-lookup"><span data-stu-id="227da-133">String</span></span>|<span data-ttu-id="227da-134">Ключ объекта, которому соответствует имя пакета Android для схемы приложений.</span><span class="sxs-lookup"><span data-stu-id="227da-134">Key of the entity the Android package name for the application the schema corresponds to</span></span>|
-|<span data-ttu-id="227da-135">exampleJson</span><span class="sxs-lookup"><span data-stu-id="227da-135">exampleJson</span></span>|<span data-ttu-id="227da-136">Binary</span><span class="sxs-lookup"><span data-stu-id="227da-136">Binary</span></span>|<span data-ttu-id="227da-137">Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.</span><span class="sxs-lookup"><span data-stu-id="227da-137">UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app</span></span>|
-|<span data-ttu-id="227da-138">schemaItems</span><span class="sxs-lookup"><span data-stu-id="227da-138">schemaItems</span></span>|<span data-ttu-id="227da-139">Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)</span><span class="sxs-lookup"><span data-stu-id="227da-139">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="227da-140">Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме.</span><span class="sxs-lookup"><span data-stu-id="227da-140">Collection of items each representing a named configuration option in the schema</span></span>|
+|<span data-ttu-id="b6791-132">id</span><span class="sxs-lookup"><span data-stu-id="b6791-132">id</span></span>|<span data-ttu-id="b6791-133">String</span><span class="sxs-lookup"><span data-stu-id="b6791-133">String</span></span>|<span data-ttu-id="b6791-134">Ключ объекта, которому соответствует имя пакета Android для схемы приложений.</span><span class="sxs-lookup"><span data-stu-id="b6791-134">Key of the entity the Android package name for the application the schema corresponds to</span></span>|
+|<span data-ttu-id="b6791-135">exampleJson</span><span class="sxs-lookup"><span data-stu-id="b6791-135">exampleJson</span></span>|<span data-ttu-id="b6791-136">Binary</span><span class="sxs-lookup"><span data-stu-id="b6791-136">Binary</span></span>|<span data-ttu-id="b6791-137">Массив байтов в кодировке UTF8, содержащий образец соответствующей схеме строки JSON, который иллюстрирует настройку приложения.</span><span class="sxs-lookup"><span data-stu-id="b6791-137">UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app</span></span>|
+|<span data-ttu-id="b6791-138">schemaItems</span><span class="sxs-lookup"><span data-stu-id="b6791-138">schemaItems</span></span>|<span data-ttu-id="b6791-139">Коллекция [андроидманажедстореаппконфигуратионсчемаитем](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md)</span><span class="sxs-lookup"><span data-stu-id="b6791-139">[androidManagedStoreAppConfigurationSchemaItem](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschemaitem.md) collection</span></span>|<span data-ttu-id="b6791-140">Коллекция элементов, каждый из которых представляет именованный параметр конфигурации в схеме.</span><span class="sxs-lookup"><span data-stu-id="b6791-140">Collection of items each representing a named configuration option in the schema</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="227da-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="227da-141">Response</span></span>
-<span data-ttu-id="227da-142">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="227da-142">If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="b6791-141">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6791-141">Response</span></span>
+<span data-ttu-id="b6791-142">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [андроидманажедстореаппконфигуратионсчема](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="b6791-142">If successful, this method returns a `200 OK` response code and an updated [androidManagedStoreAppConfigurationSchema](../resources/intune-androidforwork-androidmanagedstoreappconfigurationschema.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="227da-143">Пример</span><span class="sxs-lookup"><span data-stu-id="227da-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b6791-143">Пример</span><span class="sxs-lookup"><span data-stu-id="b6791-143">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="227da-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="227da-144">Request</span></span>
-<span data-ttu-id="227da-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="227da-145">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="b6791-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="b6791-144">Request</span></span>
+<span data-ttu-id="b6791-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b6791-145">Here is an example of the request.</span></span>
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/androidManagedStoreAppConfigurationSchemas/{androidManagedStoreAppConfigurationSchemaId}
 Content-type: application/json
@@ -96,8 +96,8 @@ Content-length: 805
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="227da-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="227da-146">Response</span></span>
-<span data-ttu-id="227da-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="227da-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="b6791-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6791-146">Response</span></span>
+<span data-ttu-id="b6791-p102">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="b6791-p102">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -131,6 +131,7 @@ Content-Length: 854
   ]
 }
 ```
+
 
 
 

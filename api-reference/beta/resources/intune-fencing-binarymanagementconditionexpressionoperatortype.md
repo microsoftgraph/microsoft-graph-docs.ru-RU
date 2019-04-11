@@ -4,26 +4,27 @@ description: Поддерживаемые бинарные операторы д
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 35f60b9ee321ef3cbd65cf77273a65e7705f666a
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: afba6f274f6a597a77c2684800caf7b52d65aed1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143808"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784707"
 ---
-# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a><span data-ttu-id="9bd68-103">тип перечисления Бинариманажементкондитионекспрессионоператортипе</span><span class="sxs-lookup"><span data-stu-id="9bd68-103">binaryManagementConditionExpressionOperatorType enum type</span></span>
+# <a name="binarymanagementconditionexpressionoperatortype-enum-type"></a><span data-ttu-id="4a2a9-103">тип перечисления Бинариманажементкондитионекспрессионоператортипе</span><span class="sxs-lookup"><span data-stu-id="4a2a9-103">binaryManagementConditionExpressionOperatorType enum type</span></span>
 
-> <span data-ttu-id="9bd68-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9bd68-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="4a2a9-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="4a2a9-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9bd68-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9bd68-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="4a2a9-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="4a2a9-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9bd68-106">Поддерживаемые бинарные операторы для выражений условия управления.</span><span class="sxs-lookup"><span data-stu-id="9bd68-106">Supported binary operators for management condition expressions.</span></span>
+<span data-ttu-id="4a2a9-106">Поддерживаемые бинарные операторы для выражений условия управления.</span><span class="sxs-lookup"><span data-stu-id="4a2a9-106">Supported binary operators for management condition expressions.</span></span>
 
-## <a name="members"></a><span data-ttu-id="9bd68-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="9bd68-107">Members</span></span>
-|<span data-ttu-id="9bd68-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="9bd68-108">Member</span></span>|<span data-ttu-id="9bd68-109">Значение</span><span class="sxs-lookup"><span data-stu-id="9bd68-109">Value</span></span>|<span data-ttu-id="9bd68-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9bd68-110">Description</span></span>|
+## <a name="members"></a><span data-ttu-id="4a2a9-107">Элементы</span><span class="sxs-lookup"><span data-stu-id="4a2a9-107">Members</span></span>
+|<span data-ttu-id="4a2a9-108">Элемент</span><span class="sxs-lookup"><span data-stu-id="4a2a9-108">Member</span></span>|<span data-ttu-id="4a2a9-109">Значение</span><span class="sxs-lookup"><span data-stu-id="4a2a9-109">Value</span></span>|<span data-ttu-id="4a2a9-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4a2a9-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9bd68-111">или</span><span class="sxs-lookup"><span data-stu-id="9bd68-111">or</span></span>|<span data-ttu-id="9bd68-112">нуль</span><span class="sxs-lookup"><span data-stu-id="9bd68-112">0</span></span>|<span data-ttu-id="9bd68-113">Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="9bd68-113">Evaluates a set of operands as true if and only if one or more of its operands is true.</span></span>|
-|<span data-ttu-id="9bd68-114">и</span><span class="sxs-lookup"><span data-stu-id="9bd68-114">and</span></span>|<span data-ttu-id="9bd68-115">1,1</span><span class="sxs-lookup"><span data-stu-id="9bd68-115">1</span></span>|<span data-ttu-id="9bd68-116">Оценивает набор операндов как true, если все его операнды имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="9bd68-116">Evaluates a set of operands as true if and only if all of its operands are true.</span></span>|
+|<span data-ttu-id="4a2a9-111">или</span><span class="sxs-lookup"><span data-stu-id="4a2a9-111">or</span></span>|<span data-ttu-id="4a2a9-112">нуль</span><span class="sxs-lookup"><span data-stu-id="4a2a9-112">0</span></span>|<span data-ttu-id="4a2a9-113">Оценивает набор операндов как true, если один или несколько его операндов имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="4a2a9-113">Evaluates a set of operands as true if and only if one or more of its operands is true.</span></span>|
+|<span data-ttu-id="4a2a9-114">и</span><span class="sxs-lookup"><span data-stu-id="4a2a9-114">and</span></span>|<span data-ttu-id="4a2a9-115">1,1</span><span class="sxs-lookup"><span data-stu-id="4a2a9-115">1</span></span>|<span data-ttu-id="4a2a9-116">Оценивает набор операндов как true, если все его операнды имеют значение true.</span><span class="sxs-lookup"><span data-stu-id="4a2a9-116">Evaluates a set of operands as true if and only if all of its operands are true.</span></span>|
+
 
 
 
