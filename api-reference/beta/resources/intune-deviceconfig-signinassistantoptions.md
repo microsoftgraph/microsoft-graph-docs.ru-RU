@@ -4,12 +4,12 @@ description: Значения для параметра Сигнинассист
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a672343e0c5d62133ef0dce40e7969e24e69b1c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: f363967ef6aec0b6f505bc130ee29f05278bc378
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30163758"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794129"
 ---
 # <a name="signinassistantoptions-enum-type"></a>тип перечисления Сигнинассистантоптионс
 
@@ -24,6 +24,7 @@ ms.locfileid: "30163758"
 |:---|:---|:---|
 |notConfigured|нуль|Не настроено — влидсвк для запуска будет установлено значение СЕРВИЦЕ_ДЕМАНД_СТАРТ.|
 |активирован|1,1|Disabled — для запуска влидсвк будет задано значение СЕРВИЦЕ_ДИСАБЛЕД.|
+
 
 
 

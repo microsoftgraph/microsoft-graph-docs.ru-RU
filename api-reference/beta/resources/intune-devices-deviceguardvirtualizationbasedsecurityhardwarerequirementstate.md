@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0afb02cdd0dd1189642b9598639860f0a809a8ae
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 09ce410be4ba2a743a9fc09b05308b20fceec823
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148505"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790447"
 ---
 # <a name="deviceguardvirtualizationbasedsecurityhardwarerequirementstate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритихардваререкуирементстате
 
@@ -17,7 +17,7 @@ ms.locfileid: "30148505"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
@@ -25,8 +25,9 @@ ms.locfileid: "30148505"
 |Мисардваререкуирементс|нуль|Система соответствует требованиям к конфигурации оборудования|
 |Секуребутрекуиред|1,1|Необходима безопасная загрузка|
 |Дмапротектионрекуиред|2|Необходима защита DMA|
-|Хипервнотсуппортедфоргуествм|4|HyperV не поддерживается для гостевой ВИРТУАЛЬНОЙ машины|
+|Хипервнотсуппортедфоргуествм|SP4|HyperV не поддерживается для гостевой ВИРТУАЛЬНОЙ машины|
 |Хипервнотаваилабле|8,5|Функция HyperV недоступна|
+
 
 
 

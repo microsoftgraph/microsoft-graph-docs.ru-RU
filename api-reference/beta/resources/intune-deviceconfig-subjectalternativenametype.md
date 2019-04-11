@@ -4,12 +4,12 @@ description: Варианты альтернативного имени субъ
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 89b638a00ca57b497a1447e0a5491563cd228e30
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: ea055171fade56361562aeac065a67b23154e207
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166397"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792512"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>тип перечисления subjectAlternativeNameType
 
@@ -22,11 +22,12 @@ ms.locfileid: "30166397"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Нет альтернативного имени субъекта.|
+|нет|нуль|Нет альтернативного имени субъекта.|
 |emailAddress|1,1|Адрес электронной почты.|
 |userPrincipalName|2|Имя участника-пользователя (UPN).|
-|Кустомазуреадаттрибуте|4|Настраиваемый атрибут Azure AD.|
+|Кустомазуреадаттрибуте|SP4|Настраиваемый атрибут Azure AD.|
 |Домаиннамесервице|8,5|Служба доменных имен (DNS).|
+
 
 
 

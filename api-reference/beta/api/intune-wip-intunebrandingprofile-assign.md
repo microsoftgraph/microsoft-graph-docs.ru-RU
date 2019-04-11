@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: dfca0ec5d9f61e0b4dd91d53071dff9eb1036d6c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c463bee7422654430f055822d33b5d59e8540f25
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982513"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790321"
 ---
 # <a name="assign-action"></a>Действие назначения
 
@@ -85,6 +85,7 @@ Content-length: 279
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

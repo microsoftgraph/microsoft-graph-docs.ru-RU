@@ -4,12 +4,12 @@ description: Базовый класс для типа приложений
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a247c3f02dc64657ec9cd297d8fff5d8591549cd
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 8526eeafbeea990ff2b3f487dd94cfe7b7d302bd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572539"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792834"
 ---
 # <a name="windowskioskuwpapp-resource-type"></a>Тип ресурса Виндовскиоскувпапп
 
@@ -55,6 +55,7 @@ ms.locfileid: "30572539"
   "containedAppId": "String"
 }
 ```
+
 
 
 

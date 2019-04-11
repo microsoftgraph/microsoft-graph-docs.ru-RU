@@ -4,12 +4,12 @@ description: Содержит свойства для состояния уст�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4778728fbec389b276e5098ffa859f13ccb6a9e4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3efd555f4b4a728e9a4ae660eac9568cb7e3b2a9
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143962"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791119"
 ---
 # <a name="userappinstallstatus-resource-type"></a>Тип ресурса Усераппинсталлстатус
 
@@ -33,7 +33,7 @@ ms.locfileid: "30143962"
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
 |userName|String|Имя пользователя.|
-|userPrincipalName|Строка|Имя участника пользователя.|
+|userPrincipalName|String|Имя участника пользователя.|
 |installedDeviceCount|Int32|Количество установленных устройств.|
 |failedDeviceCount|Int32|Количество устройств со сбоями.|
 |notInstalledDeviceCount|Int32|Количество не установленных устройств.|
@@ -41,7 +41,7 @@ ms.locfileid: "30143962"
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|приложение|[mobileApp](../resources/intune-apps-mobileapp.md);|Ссылка навигации на мобильное приложение.|
+|программы|[mobileApp](../resources/intune-apps-mobileapp.md)|Ссылка навигации на мобильное приложение.|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Состояние установки приложения на устройствах.|
 
 ## <a name="json-representation"></a>Представление JSON
@@ -63,6 +63,7 @@ ms.locfileid: "30143962"
   "notInstalledDeviceCount": 1024
 }
 ```
+
 
 
 

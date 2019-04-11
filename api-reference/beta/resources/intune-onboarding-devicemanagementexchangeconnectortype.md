@@ -4,12 +4,12 @@ description: Тип соединителя Exchange.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8742a146f1183376424678f070b902eb052df5ac
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 75129a49352bb2cfe738c0dd58e382b26530ef53
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30150437"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791021"
 ---
 # <a name="devicemanagementexchangeconnectortype-enum-type"></a>тип перечисления Девицеманажементексчанжеконнектортипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "30150437"
 |хост|1,1|ПодКлючается к среде Exchange с несколькими клиентами Office 365|
 |Сервицетосервице|2|Служба Intune подключается напрямую к среде Exchange с несколькими клиентами Office 365|
 |уполномочен|4|ПодКлючается к выделенной среде Exchange O365.|
+
 
 
 

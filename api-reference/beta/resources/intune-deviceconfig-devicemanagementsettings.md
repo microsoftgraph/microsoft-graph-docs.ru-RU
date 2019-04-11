@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceManagementSettings
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8238ec075189a138552cb524a22facd99f4d5401
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: eba8ec934a29b78d7e6ca11f288a1bd787338d2b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164269"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790930"
 ---
 # <a name="devicemanagementsettings-resource-type"></a>Тип ресурса deviceManagementSettings
 
@@ -23,9 +23,9 @@ ms.locfileid: "30164269"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |deviceComplianceCheckinThresholdDays|Int32|Количество дней, в течение которых устройство может считаться соответствующим требованиям, несмотря на отсутствие записей после изменения. Допустимые значения: от 0 до 120|
-|isScheduledActionEnabled|Логический|Включена ли функция для запланированного действия для правила.|
+|isScheduledActionEnabled|Boolean|Включена ли функция для запланированного действия для правила.|
 |secureByDefault|Boolean|Устройство считается несоответствующим требованиям, если для данного свойства установлено значение true, но не выбраны целевые политики соответствия требованиям.|
-|Енханцеджаилбреак|Логический|Функция включена или не включена для обнаружения расширенной жаилбреак.|
+|Енханцеджаилбреак|Boolean|Функция включена или не включена для обнаружения расширенной жаилбреак.|
 |Девицеинактивитибефореретирементиндай|Int32|Когда устройство не будет возвращать указанное количество дней, данные компании могут быть удалены, а устройство не будет управляться. Допустимые значения — от 30 до 270|
 |Дериведкредентиалпровидер|[Дериведкредентиалпровидертипе](../resources/intune-deviceconfig-derivedcredentialprovidertype.md)|Производный поставщик учетных данных, который будет использоваться для этой учетной записи. Возможные значения: `notConfigured`, `entrustDataCard`, `purebred`, `xTec`, `intercede`.|
 |Дериведкредентиалурл|String|URI самообслуживания поставщика произВодных учетных данных.|
@@ -52,6 +52,7 @@ ms.locfileid: "30164269"
   "derivedCredentialUrl": "String"
 }
 ```
+
 
 
 

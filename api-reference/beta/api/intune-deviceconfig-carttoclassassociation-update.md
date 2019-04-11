@@ -4,12 +4,12 @@ description: Обновление свойств объекта Карттокл
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 09e83b523145f79d610b1299d61fafc5d0a03b02
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 4443a2924b60333d34830fee77f802df7e8aead3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30964481"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793828"
 ---
 # <a name="update-carttoclassassociation"></a>Обновление КарттоклассассоЦиатион
 
@@ -56,8 +56,8 @@ PATCH /deviceManagement/cartToClassAssociations/{cartToClassAssociationId}
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|Девицекартидс|Коллекция String|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|Классрумидс|Коллекция String|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 
@@ -110,6 +110,7 @@ Content-Length: 443
   ]
 }
 ```
+
 
 
 

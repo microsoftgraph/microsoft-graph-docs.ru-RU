@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта managedD
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 8fea7554c85f7b47eb5964a2fe12dbe16a22e09c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e9cfc8994eac177b1c2e2ac17f9ec8ec24407243
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974246"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792225"
 ---
 # <a name="get-manageddevicemobileappconfigurationdevicestatus"></a>Получение managedDeviceMobileAppConfigurationDeviceStatus
 
@@ -83,6 +83,7 @@ Content-Length: 551
   }
 }
 ```
+
 
 
 

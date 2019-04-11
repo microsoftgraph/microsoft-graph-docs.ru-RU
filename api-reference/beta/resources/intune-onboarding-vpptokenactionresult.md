@@ -4,12 +4,12 @@ description: Состояние действия, выполняемого с п
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 853c5c12ca0a85fe0f5a16efa86321e46a28ec5c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: cf8aeb73080ea16d89ec4b1473a7c44f25b4306a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159390"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790951"
 ---
 # <a name="vpptokenactionresult-resource-type"></a>Тип ресурса vppTokenActionResult
 
@@ -27,7 +27,7 @@ ms.locfileid: "30159390"
 |startDateTime|DateTimeOffset|Время начала действия|
 |lastUpdatedDateTime|DateTimeOffset|Время последнего обновления состояния действия|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "30159390"
   "lastUpdatedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

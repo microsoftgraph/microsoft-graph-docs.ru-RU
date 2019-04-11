@@ -2,14 +2,14 @@
 title: Список сообщений
 description: 'Получение сообщений в почтовом ящике пользователя, выполнившего вход (в том числе сообщений в папках "Удаленные" и "Несрочные"). '
 localization_priority: Normal
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 3a29392318de78c1e1ff5bd4ad4b560bc9c460f4
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: 19cb2dc1dd1e86cd697319a0dc8a729cb712e463
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518534"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792190"
 ---
 # <a name="list-messages"></a>Список сообщений
 
@@ -17,7 +17,11 @@ ms.locfileid: "31518534"
 
 Получение сообщений в почтовом ящике пользователя, выполнившего вход (в том числе сообщений в папках "Удаленные" и "Несрочные"). 
 
-В частности, можно фильтровать сообщения и получать только те сообщения, которые содержат упоминание [](../resources/mention.md) пользователя, выполнившего вход в систему.
+В зависимости от размера страницы и данных почтового ящика, доступ к сообщениям из почтового ящика может привести к нескольким запросам. Размер страницы по умолчанию равен 10 сообщениям. Чтобы получить следующую страницу сообщений, просто примените весь URL-адрес, возвращенный в `@odata.nextLink` следующий запрос Get-messages. Этот URL-адрес включает все параметры запроса, которые могли быть указаны в начальном запросе. 
+
+Не пытайтесь извлечь `$skip` значение из `@odata.nextLink` URL-адреса для управления ответами. Этот API использует `$skip` значение для хранения всех элементов, которые он пропало в почтовом ящике пользователя, чтобы вернуть страницу элементов типа Message. Таким образом, возможно даже в исходном ответе `$skip` значение больше размера страницы. Дополнительные сведения см в разделе [разбиение данных Microsoft Graph в приложении](/graph/paging).
+
+Вы можете фильтровать сообщения и получать только те сообщения, которые содержат [упоминание](../resources/mention.md) пользователя, выполнившего вход в систему.
 
 Обратите внимание, что по `GET /me/messages` умолчанию операция не возвращает свойство **упоминания** . Используйте параметр `$expand` запроса для [получения сведений о каждом упоминании в сообщении](../api/message-get.md#request-2).
 
@@ -80,20 +84,19 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Message](../resources/message.md) в тексте отклика.
 
-Размер страницы по умолчанию для этого запроса предусматривает отображение 10 сообщений. 
-
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
-В первом примере возвращаются 10 самых популярных сообщений в почтовом ящике вошедшего пользователя.
+В первом примере возвращаются значения по умолчанию: первые 10 сообщений в почтовом ящике пользователя, выполнившего вход. Он используется `$select` для возвращения подмножества свойств каждого сообщения в ответе. 
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/messages
+GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 ```
-##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response-1"></a>Ответ 1
+Ниже приведен пример ответа. Чтобы получить следующую страницу сообщений, примените URL-адрес, возвращенный в `@odata.nextLink` последующих запросах GET.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,28 +106,107 @@ GET https://graph.microsoft.com/beta/me/messages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "2016-10-19T10:37:00Z",
-      "sentDateTime": "2016-10-19T10:37:00Z",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessageRequest",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
 
 ##### <a name="request-2"></a>Запрос 2
-В следующем примере выполняется фильтрация всех сообщений в почтовом ящике вошедшего пользователя для тех, которые упоминают пользователя. Он используется `$select` для возвращения подмножества свойств каждого сообщения в ответе. 
+В следующем примере выполняется фильтрация всех сообщений в почтовом ящике вошедшего пользователя для тех, которые упоминают пользователя. Он также используется `$select` для возврата подмножества свойств каждого сообщения в ответе. 
 
 В этом примере также используются URL-кодировка для пробелов в строке параметра запроса.
 <!-- {

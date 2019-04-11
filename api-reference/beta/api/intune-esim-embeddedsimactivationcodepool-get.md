@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Ембе
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1ed067646a7f34f52c925ad7d5d1d8463fc97f7c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 38c6e35033dfa2c9f2f579691f250580b87ed319
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960106"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793135"
 ---
 # <a name="get-embeddedsimactivationcodepool"></a>Получение Ембеддедсимактиватионкодепул
 
@@ -86,6 +86,7 @@ Content-Length: 675
   }
 }
 ```
+
 
 
 

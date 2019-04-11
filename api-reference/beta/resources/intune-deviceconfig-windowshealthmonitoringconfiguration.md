@@ -4,12 +4,12 @@ description: Настройка мониторинга работоспособ�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1bd9b1e16a33a68048f347fba100d290a7d9d849
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 1a182dfd71c6afcdd5dfc04be369cd1212b3e054
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631630"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792393"
 ---
 # <a name="windowshealthmonitoringconfiguration-resource-type"></a>Тип ресурса Виндовшеалсмониторингконфигуратион
 
@@ -26,24 +26,24 @@ ms.locfileid: "30631630"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Виндовшеалсмониторингконфигуратионс](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-list.md)|Коллекция [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Список свойств и связей объектов [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
-|[Получение Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md)|[Виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Чтение свойств и связей объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
-|[Создание Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md)|[Виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Создание нового объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
+|[Получение Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-get.md)|[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Чтение свойств и связей объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
+|[Создание Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-create.md)|[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Создание нового объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
 |[Удаление Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-delete.md)|Нет|Удаляет объект [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md).|
-|[Обновление Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md)|[Виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Обновление свойств объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
+|[Обновление Виндовшеалсмониторингконфигуратион](../api/intune-deviceconfig-windowshealthmonitoringconfiguration-update.md)|[windowsHealthMonitoringConfiguration](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md)|Обновление свойств объекта [виндовшеалсмониторингконфигуратион](../resources/intune-deviceconfig-windowshealthmonitoringconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |Алловдевицехеалсмониторинг|[Включение](../resources/intune-shared-enablement.md)|Включает мониторинг работоспособности устройств на устройстве. Возможные значения: `notConfigured`, `enabled`, `disabled`.|
-|Конфигдевицехеалсмониторингскопе|[Виндовшеалсмониторингскопе](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|СепЦифиес набор событий, полученных с устройства, на котором включен мониторинг работоспособности. Возможные значения: `undefined`, `healthMonitoring`, `bootPerformance`.|
+|Конфигдевицехеалсмониторингскопе|[windowsHealthMonitoringScope](../resources/intune-deviceconfig-windowshealthmonitoringscope.md)|СепЦифиес набор событий, полученных с устройства, на котором включен мониторинг работоспособности. Возможные значения: `undefined`, `healthMonitoring`, `bootPerformance`.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
@@ -81,6 +81,7 @@ ms.locfileid: "30631630"
   "configDeviceHealthMonitoringScope": "String"
 }
 ```
+
 
 
 

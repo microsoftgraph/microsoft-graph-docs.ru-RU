@@ -4,12 +4,12 @@ description: Удаляет объект Андроидвпнконфигура�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9cf85b25050a189fd56a06c22cbf147891aa5c04
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 939219de870d1a59c460e9c0a61482bb89926075
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987071"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790384"
 ---
 # <a name="delete-androidvpnconfiguration"></a>Удаление Андроидвпнконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

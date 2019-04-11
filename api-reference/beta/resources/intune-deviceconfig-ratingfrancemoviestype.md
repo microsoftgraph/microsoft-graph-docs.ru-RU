@@ -4,12 +4,12 @@ description: Метки оценок фильмов во Франции
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 123a1e4c63891ad39cb0a238fd61393b555734f8
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 12c775d7717dfd06f20e8300fe3e04db6c526840
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172410"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794157"
 ---
 # <a name="ratingfrancemoviestype-enum-type"></a>тип перечисления Ратингфранцемовиестипе
 
@@ -26,8 +26,9 @@ ms.locfileid: "30172410"
 |Аллблоккед|1,1|Не разрешать никакие видеоролики|
 |agesAbove10|2|10 классификация запрещает обблокировка пленки мелкими 10|
 |agesAbove12|4|Классификация не позволяет обменять пленку небольшими уровнями в соответствии с 12|
-|agesAbove16|4|Классификация "16" запрещает обблокировка пленки мелкими уровнями в 16|
+|agesAbove16|SP4|Классификация "16" запрещает обблокировка пленки мелкими уровнями в 16|
 |agesAbove18|17:00|Категория "18" запрещает отбор незначительных элементов в 18|
+
 
 
 

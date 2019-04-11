@@ -4,12 +4,12 @@ description: Содержит свойства кода возврата для 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 4402464bd4618f1e33b9b766be529cbe592165c0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4c05d695b05a001e6854e254bf065d6fb41ba773
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30174589"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791350"
 ---
 # <a name="win32lobappreturncode-resource-type"></a>Тип ресурса win32LobAppReturnCode
 
@@ -42,6 +42,7 @@ ms.locfileid: "30174589"
   "type": "String"
 }
 ```
+
 
 
 

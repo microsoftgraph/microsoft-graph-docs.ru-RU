@@ -4,12 +4,12 @@ description: Способ проверки подлинности Wi/Fi.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 530265fc23a3ae94470779fb2b830aa6c677fb18
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7e3bc52b5f12eb3cc57f6e0b9db8b93a22c2c4ff
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146720"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792729"
 ---
 # <a name="wifiauthenticationmethod-enum-type"></a>тип перечисления Вифиаусентикатионмесод
 
@@ -24,6 +24,7 @@ ms.locfileid: "30146720"
 |:---|:---|:---|
 |certificate|нуль|Используйте сертификат удостоверения для проверки подлинности.|
 |Усернамеандпассворд|1,1|Используйте имя пользователя и пароль для проверки подлинности.|
+
 
 
 

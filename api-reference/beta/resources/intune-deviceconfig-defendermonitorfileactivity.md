@@ -4,12 +4,12 @@ description: Возможные значения для отслеживания
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d04d7a34de9c08c12d17c994381683c160bef1c4
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2888484f90bb3389fa7b7b12c79ce386d1bfd2db
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30152593"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794332"
 ---
 # <a name="defendermonitorfileactivity-enum-type"></a>тип перечисления Дефендермониторфилеактивити
 
@@ -26,7 +26,8 @@ ms.locfileid: "30152593"
 |Запретите|1,1|Отключите мониторинг действий с файлами.|
 |Монитораллфилес|2|Отслеживайте все файлы.|
 |Мониторинкомингфилесонли|4| Отслеживайте только входящие файлы.|
-|Монитораутгоингфилесонли|4|Отслеживайте только исходящие файлы.|
+|Монитораутгоингфилесонли|SP4|Отслеживайте только исходящие файлы.|
+
 
 
 

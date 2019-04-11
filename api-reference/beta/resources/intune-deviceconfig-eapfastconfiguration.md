@@ -4,12 +4,12 @@ description: Доступные параметры настройки EAP – FA
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d0d8a250b2272ae8b8287f9869697633493b116f
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 7acf6ffbf7a93bc5002f7f81679fc789ab313e2f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30173572"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790629"
 ---
 # <a name="eapfastconfiguration-enum-type"></a>тип перечисления Еапфастконфигуратион
 
@@ -26,6 +26,7 @@ ms.locfileid: "30173572"
 |Усепротектедакцесскредентиал|1,1|Использование учетных данных безопасного доступа (PAC).|
 |Усепротектедакцесскредентиаландпровисион|2|Использование учетных данных безопасного доступа (PAC) и подготовка ключа PAC.|
 |Усепротектедакцесскредентиаландпровисионанонимаусли|4|Использование учетных данных безопасного доступа (PAC), подготовка ключа PAC и анонимное выполнение.|
+
 
 
 

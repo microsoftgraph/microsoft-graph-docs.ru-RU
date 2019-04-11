@@ -4,12 +4,12 @@ description: Область мониторинга работоспособно�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: bcaabcd960502bebc7b4bc37fee5a9d5c7870193
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: b5b471c98137594d685702257e679d44e7c2c120
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30631610"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793891"
 ---
 # <a name="windowshealthmonitoringscope-enum-type"></a>тип перечисления Виндовшеалсмониторингскопе
 
@@ -25,6 +25,7 @@ ms.locfileid: "30631610"
 |undefined|нуль|Undefined|
 |healthMonitoring|1,1|Основные события для мониторинга работоспособности устройств Windows|
 |Бутперформанце|2|События производительности загрузки|
+
 
 
 

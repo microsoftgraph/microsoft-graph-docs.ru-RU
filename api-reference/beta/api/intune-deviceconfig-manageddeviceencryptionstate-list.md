@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Ман
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 192ea6cbfb16aa2c285db0281b578740e82f8058
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b41d70a4456934edef1e42a8e060d8afe00fc49a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977697"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793812"
 ---
 # <a name="list-manageddeviceencryptionstates"></a>Список Манажеддевицеенкриптионстатес
 
@@ -89,6 +89,7 @@ Content-Length: 812
   ]
 }
 ```
+
 
 
 

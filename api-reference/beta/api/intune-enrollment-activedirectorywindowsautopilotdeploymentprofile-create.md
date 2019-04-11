@@ -4,12 +4,12 @@ description: Создание нового объекта Активедирек
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 82a198ecf64d549514847826372584e4036b37dd
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 86498a03ed5111d6b54d5f0f26d0c38fcf858802
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30960757"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794493"
 ---
 # <a name="create-activedirectorywindowsautopilotdeploymentprofile"></a>Создание Активедиректоривиндовсаутопилотдеплойментпрофиле
 
@@ -148,6 +148,7 @@ Content-Length: 1277
   "enableWhiteGlove": true
 }
 ```
+
 
 
 

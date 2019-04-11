@@ -4,12 +4,12 @@ description: Удаляет объект deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d5e593eb76f4aa6b342b34e411c410fef5410e8
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5edc83a6607080f4cf57ea4b506f067cef89cb80
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962668"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31791819"
 ---
 # <a name="delete-devicecompliancedevicestatus"></a>Удаление объекта deviceComplianceDeviceStatus
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicie
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта androidF
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 94b9b0b4dd1da7590d6c734c52f2571d539bb290
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 7c2e426dc35512abd9b47f18223ba90ec8e6dc2d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30968919"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793009"
 ---
 # <a name="get-androidforworksettings"></a>Get androidForWorkSettings
 
@@ -85,6 +85,7 @@ Content-Length: 613
   }
 }
 ```
+
 
 
 

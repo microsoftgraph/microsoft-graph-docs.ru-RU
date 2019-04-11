@@ -4,12 +4,12 @@ description: Событие, представляющее событие уст�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 13459e2d8f76111137014918246fe1a573a191cd
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bf62dbf0c3a894e6bf1837d41f133ad3e74cc2cd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160468"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790510"
 ---
 # <a name="applevpptokentroubleshootingevent-resource-type"></a>Тип ресурса Апплевпптокентраублешутинжевент
 
@@ -84,7 +84,6 @@ ms.locfileid: "30160468"
   "tokenId": "String"
 }
 ```
-
 
 
 

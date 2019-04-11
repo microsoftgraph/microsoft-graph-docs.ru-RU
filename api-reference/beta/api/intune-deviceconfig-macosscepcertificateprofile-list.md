@@ -4,12 +4,12 @@ description: Список свойств и связей объектов macOSS
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 068a762d39359ad0e4d7b62f9775f4db91139d99
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e60be8b3441d58472ceccda5a07856829bd9f38e
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986490"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793744"
 ---
 # <a name="list-macosscepcertificateprofiles"></a>Список Макоссцепцертификатепрофилес
 
@@ -111,6 +111,7 @@ Content-Length: 1550
   ]
 }
 ```
+
 
 
 

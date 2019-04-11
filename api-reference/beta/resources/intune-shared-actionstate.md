@@ -4,12 +4,12 @@ description: Состояние действия на устройстве
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6d55ff0419c6178668bbee921c149c8bc797ebff
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1188670476e911b01375598a2361aae326a98425
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30143402"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793464"
 ---
 # <a name="actionstate-enum-type"></a>тип перечисления actionState
 
@@ -22,13 +22,14 @@ ms.locfileid: "30143402"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Недопустимое состояние действия|
+|нет|нуль|Недопустимое состояние действия|
 |закончен|1,1|Ожидается действие|
 |закрыт|2|Действие отменено.|
 |ASP|4|Действие активно.|
-|done|4|Действие выполнено без ошибок.|
-|failed|17:00|Не удалось выполнить действие|
-|notSupported|6|Действие не поддерживается.|
+|done|SP4|Действие выполнено без ошибок.|
+|сбоев|17:00|Не удалось выполнить действие|
+|notSupported|ICMPv6|Действие не поддерживается.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Портал, на котором администратор син
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 47182d7282c57b3a00aade30bd3f64319ab34479
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: bc1ad975ba35d0e942cf2d57f26929e66f02b661
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147945"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794241"
 ---
 # <a name="microsoftstoreforbusinessportalselectionoptions-enum-type"></a>тип перечисления Микрософтсторефорбусинесспорталселектионоптионс
 
@@ -22,9 +22,10 @@ ms.locfileid: "30147945"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Нет|нуль|Этот параметр недоступен для учетной записи|
+|нет|нуль|Этот параметр недоступен для учетной записи|
 |Компанипортал|1,1|Только корпоративный портал Intune.|
 |Приватесторе|2|Только частный магазин МСФБ.|
+
 
 
 

@@ -4,12 +4,12 @@ description: Класс, содержащий свойства для свойс
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0d06bd1b628848a34e6fa830a525c049526b46ee
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3f864f41a2068d6455dccb0a539c14e7e4b9dc6d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139034"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792764"
 ---
 # <a name="auditproperty-resource-type"></a>Тип ресурса auditProperty
 
@@ -26,7 +26,7 @@ ms.locfileid: "30139034"
 |oldValue|String|Старое значение.|
 |newValue|String|Новое значение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,7 @@ ms.locfileid: "30139034"
   "newValue": "String"
 }
 ```
+
 
 
 

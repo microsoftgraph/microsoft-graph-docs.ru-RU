@@ -4,12 +4,12 @@ description: Список свойств и связей объектов manage
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9626af535b0930ac7aa436abac3274b0f913a66d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: cf5acb7d4b720d6cc58c4e6e8b9a03dea6caa91d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983248"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793359"
 ---
 # <a name="list-managedappstatuses"></a>Перечисление объектов managedAppStatus
 
@@ -75,6 +75,7 @@ Content-Length: 227
   ]
 }
 ```
+
 
 
 

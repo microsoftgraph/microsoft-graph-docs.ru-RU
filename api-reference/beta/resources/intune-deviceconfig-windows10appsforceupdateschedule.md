@@ -4,12 +4,12 @@ description: Расписание принудительного обновле�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7aa5573c3d644299b9c0aa424f348a67db8379d0
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3c8c76c08c434ab9c5e3506339e53cda41156e09
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158228"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792358"
 ---
 # <a name="windows10appsforceupdateschedule-resource-type"></a>Тип ресурса windows10AppsForceUpdateSchedule
 
@@ -24,7 +24,7 @@ ms.locfileid: "30158228"
 |:---|:---|:---|
 |startDateTime|DateTimeOffset|Время начала принудительного перезапуска.|
 |recurrence|[windows10AppsUpdateRecurrence](../resources/intune-deviceconfig-windows10appsupdaterecurrence.md)|Расписание повторения. Возможные значения: `none`, `daily`, `weekly`, `monthly`.|
-|Руниммедиателифафтерстартдатетиме|Логический|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
+|Руниммедиателифафтерстартдатетиме|Boolean|Если этот параметр имеет значение true, задача выполняется немедленно, если StartDateTime находится в прошлое, иначе — выполняется при следующем повторении.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -44,6 +44,7 @@ ms.locfileid: "30158228"
   "runImmediatelyIfAfterStartDateTime": true
 }
 ```
+
 
 
 

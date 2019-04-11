@@ -4,12 +4,12 @@ description: Обновление свойств объекта Депиосен
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: ea708a5ffe661f8024c027d1ac9ef10877474cd6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3141aaf65cb7d7fca01cf9a9849aaed7ee310bbc
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986945"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793590"
 ---
 # <a name="update-depiosenrollmentprofile"></a>Обновление Депиосенроллментпрофиле
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Депиосенроллментпрофиле](../resources/intune-enrollment-depiosenrollmentprofile.md) в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании [депиосенроллментпрофиле](../resources/intune-enrollment-depiosenrollmentprofile.md).
@@ -75,7 +75,8 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 |Диагностиксдисаблед|Boolean|Указывает, является ли область настройки диагностики неактивной, наСледуемой от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Дисплайтонесетупдисаблед|Boolean|Указывает, отключен ли экран установки дисплайтоне от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
 |Приваципанедисаблед|Boolean|Указывает, отключен ли экран конфиденциальности, унаследованный от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
-|iTunesPairingMode.|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md).|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
+|Девиценаметемплате|String|Задает шаблон литерала или имени. НаСледуется от [депенроллментбасепрофиле](../resources/intune-enrollment-depenrollmentbaseprofile.md)|
+|iTunesPairingMode|[iTunesPairingMode](../resources/intune-enrollment-itunespairingmode.md)|Указывает режим связывания iTunes. Возможные значения: `disallow`, `allow`, `requiresCertificate`.|
 |Манажементцертификатес|Коллекция [манажементцертификатевиссумбпринт](../resources/intune-enrollment-managementcertificatewiththumbprint.md)|Сертификаты управления для конфигуратора Apple|
 |Ресторефромандроиддисаблед|Boolean|Указывает, отключено ли восстановление из Android|
 |Аваитдевицеконфигуредконфирматион|Boolean|Указывает, должно ли устройство ждать настройки подтверждения.|
@@ -103,7 +104,7 @@ PATCH /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIo
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/defaultIosEnrollmentProfile
 Content-type: application/json
-Content-length: 1736
+Content-length: 1791
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -131,6 +132,7 @@ Content-length: 1736
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "Device Name Template value",
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -160,7 +162,7 @@ Content-length: 1736
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1785
+Content-Length: 1840
 
 {
   "@odata.type": "#microsoft.graph.depIOSEnrollmentProfile",
@@ -189,6 +191,7 @@ Content-Length: 1785
   "diagnosticsDisabled": true,
   "displayToneSetupDisabled": true,
   "privacyPaneDisabled": true,
+  "deviceNameTemplate": "Device Name Template value",
   "iTunesPairingMode": "allow",
   "managementCertificates": [
     {
@@ -212,6 +215,7 @@ Content-Length: 1785
   "watchMigrationScreenDisabled": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 707f9780ff74056755d114a8ded3121790f2071f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: c6cb1d14a626a410fa054f6d9f7e912ec286bf20
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961534"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793520"
 ---
 # <a name="getauditcategories-function"></a>Функция getAuditCategories
 
@@ -70,6 +70,7 @@ Content-Length: 57
   ]
 }
 ```
+
 
 
 

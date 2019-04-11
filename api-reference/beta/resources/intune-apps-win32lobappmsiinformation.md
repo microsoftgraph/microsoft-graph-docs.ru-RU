@@ -4,12 +4,12 @@ description: Содержит свойства приложения MSI для �
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f330111a3e924e54cf23c30cd98d20e85cb38022
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3ddb69d3f01c816c592617cb75ed6f9b9877f856
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30158648"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31790062"
 ---
 # <a name="win32lobappmsiinformation-resource-type"></a>Тип ресурса win32LobAppMsiInformation
 
@@ -25,7 +25,7 @@ ms.locfileid: "30158648"
 |productCode|String|Код продукта MSI.|
 |productVersion|String|Версия продукта MSI.|
 |upgradeCode|String|Код обновления MSI.|
-|Рекуиресребут|Логический|Требует ли приложение MSI перезагрузку компьютера для завершения установки.|
+|Рекуиресребут|Boolean|Требует ли приложение MSI перезагрузку компьютера для завершения установки.|
 |Паккажетипе|[win32LobAppMsiPackageType](../resources/intune-apps-win32lobappmsipackagetype.md)|Тип пакета MSI. Возможные значения: `perMachine`, `perUser`, `dualPurpose`.|
 |productName|String|Имя продукта MSI.|
 |publisher|String|Издатель MSI.|
@@ -52,6 +52,7 @@ ms.locfileid: "30158648"
   "publisher": "String"
 }
 ```
+
 
 
 

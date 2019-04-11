@@ -4,12 +4,12 @@ description: Проксируемый домен
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5edabc31761a3abd79a94bb700392923d2d54513
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 98b58759fbac16ad7fad78dc2a9ef0c449c42659
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151207"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793625"
 ---
 # <a name="proxieddomain-resource-type"></a>Тип ресурса proxiedDomain
 
@@ -42,6 +42,7 @@ ms.locfileid: "30151207"
   "proxy": "String"
 }
 ```
+
 
 
 

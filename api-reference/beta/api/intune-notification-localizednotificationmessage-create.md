@@ -4,12 +4,12 @@ description: Создание объекта localizedNotificationMessage.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: da30922d7de4f4c8291befdac1471ff2e56bc03d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 5458605b4b4e58b27e65298f709121283fc91ecd
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958783"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31793310"
 ---
 # <a name="create-localizednotificationmessage"></a>Создание объекта localizedNotificationMessage
 
@@ -97,6 +97,7 @@ Content-Length: 313
   "isDefault": true
 }
 ```
+
 
 
 

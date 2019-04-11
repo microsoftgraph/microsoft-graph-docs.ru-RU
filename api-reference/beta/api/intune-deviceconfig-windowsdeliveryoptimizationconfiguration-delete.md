@@ -4,12 +4,12 @@ description: Удаляет объект Виндовсделиверйопти�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 48c0b5163b4ee7768115f26e8b94db2d4737d296
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: d1aed750b8a1ef4de4d0f568b91f0b4f66ed6aaf
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989346"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794353"
 ---
 # <a name="delete-windowsdeliveryoptimizationconfiguration"></a>Удаление Виндовсделиверйоптимизатионконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

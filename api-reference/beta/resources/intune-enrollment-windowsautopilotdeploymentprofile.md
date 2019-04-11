@@ -4,12 +4,12 @@ description: Профиль развертывания Windows для автоп
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 69035ba93b04ac66ce9e8883c7b5f7b04dff429a
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.openlocfilehash: 3f82d48422ecff99f106d4a62b07ac8532cb546c
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572462"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794542"
 ---
 # <a name="windowsautopilotdeploymentprofile-resource-type"></a>Тип ресурса windowsAutopilotDeploymentProfile
 
@@ -23,7 +23,7 @@ ms.locfileid: "30572462"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Получение windowsAutopilotDeploymentProfile](../api/intune-enrollment-windowsautopilotdeploymentprofile-get.md)|[windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md)|Чтение свойств и связей объекта [windowsAutopilotDeploymentProfile](../resources/intune-enrollment-windowsautopilotdeploymentprofile.md) .|
-|[Действие assign](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Нет|Н/Д|
+|[Действие назначения](../api/intune-enrollment-windowsautopilotdeploymentprofile-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -89,6 +89,7 @@ ms.locfileid: "30572462"
   "enableWhiteGlove": true
 }
 ```
+
 
 
 

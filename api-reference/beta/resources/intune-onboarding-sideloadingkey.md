@@ -4,12 +4,12 @@ description: Объект Сиделоадингкэй требуется для
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 7897a50861910b67763b7d694a30096509c6c56c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 698d021e6038694442e5b3a6f4b3eff2a50e9943
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30170527"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31792127"
 ---
 # <a name="sideloadingkey-resource-type"></a>Тип ресурса Сиделоадингкэй
 
@@ -31,7 +31,7 @@ ms.locfileid: "30170527"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор ключа загрузки на стороне.|
+|id|Строка|Уникальный идентификатор ключа загрузки на стороне.|
 |value|String|Значение ключа загрузки на стороне, это значение 5x5, разделенное хифенс.|
 |displayName|String|Имя ключа загрузки на стороне, отображаемое для администраторов ИТ-специалистов.|
 |description|String|Описание ключа загрузки на стороне, которое отображается для администраторов ИТ-специалистов..|
@@ -60,6 +60,7 @@ ms.locfileid: "30170527"
   "lastUpdatedDateTime": "String"
 }
 ```
+
 
 
 
