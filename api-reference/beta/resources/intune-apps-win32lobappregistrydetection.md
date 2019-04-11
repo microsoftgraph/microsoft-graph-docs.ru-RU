@@ -4,12 +4,12 @@ description: Содержит свойства реестра для обнар�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 076251ea185359127c3dad3610ec944f7cdb3178
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8c249a21075a2d2647fbb0cbcc53bf7c541a155f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169547"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795270"
 ---
 # <a name="win32lobappregistrydetection-resource-type"></a>Тип ресурса win32LobAppRegistryDetection
 
@@ -25,7 +25,7 @@ ms.locfileid: "30169547"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|check32BitOn64System|Логический|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
+|check32BitOn64System|Boolean|Значение, указывающее, является ли этот путь реестра для проверки 32-разрядного приложения в 64-разрядной системе|
 |Ключевой|String|Путь к разделу реестра для определения бизнес-приложения Win32 (LoB)|
 |valueName|String|Имя значения реестра|
 |Детектионтипе|[win32LobAppRegistryDetectionType](../resources/intune-apps-win32lobappregistrydetectiontype.md)|Тип обнаружения данных в реестре. Возможные значения: `notConfigured`, `exists`, `doesNotExist`, `string`, `integer`, `version`.|
@@ -53,6 +53,7 @@ ms.locfileid: "30169547"
   "detectionValue": "String"
 }
 ```
+
 
 
 

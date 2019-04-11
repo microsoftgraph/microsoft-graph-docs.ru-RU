@@ -4,12 +4,12 @@ description: Обновление свойств объекта remoteAssistance
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 560e8a7c777424d8f9b89751719201e395cc2307
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 3f1a4b37c27f6df9b3618051b1241cc35923834f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981407"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796740"
 ---
 # <a name="update-remoteassistancepartner"></a>Обновление объекта remoteAssistancePartner
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/remoteAssistancePartners/{remoteAssistancePartnerId}
 |id|String|Уникальный идентификатор партнера.|
 |displayName|Строка|Отображаемое имя партнера.|
 |onboardingUrl|String|URL-адрес портала подключения партнера, где администратор может настроить свою службу удаленного помощника.|
-|onboardingStatus|[Ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Подлежит определению. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
+|onboardingStatus|[Ремотеассистанцеонбоардингстатус](../resources/intune-remoteassistance-remoteassistanceonboardingstatus.md)|Понятное описание состояния текущего соединителя TeamViewer. Возможные значения: `notOnboarded`, `onboarding`, `onboarded`.|
 |lastConnectionDateTime|DateTimeOffset|Метка времени последнего запроса, отправленного в службу Intune партнером TEM.|
 
 
@@ -95,6 +95,7 @@ Content-Length: 315
   "lastConnectionDateTime": "2016-12-31T23:58:36.6670033-08:00"
 }
 ```
+
 
 
 

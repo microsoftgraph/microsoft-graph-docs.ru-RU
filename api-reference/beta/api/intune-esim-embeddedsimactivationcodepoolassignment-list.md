@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Емб
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 2595adcfd070a0e48819bde8e9a3747dcdbf901f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a22bc554bd8dbfac7f4a03a37c9130ca04ea1e5a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958216"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796607"
 ---
 # <a name="list-embeddedsimactivationcodepoolassignments"></a>Список Ембеддедсимактиватионкодепулассигнментс
 
@@ -76,6 +76,7 @@ Content-Length: 281
   ]
 }
 ```
+
 
 
 

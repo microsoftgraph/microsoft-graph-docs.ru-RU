@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Грау
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 462a0b7ff3cb5ffa96a03036b0d7180153bdcff6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 9ecff4ae6352190c7f045a79f4cd5376fdeb2bc2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30974701"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795361"
 ---
 # <a name="get-grouppolicyconfiguration"></a>Получение Граупполициконфигуратион
 
@@ -78,6 +78,7 @@ Content-Length: 348
   }
 }
 ```
+
 
 
 

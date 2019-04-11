@@ -4,12 +4,12 @@ description: Создание объекта deviceComplianceDeviceStatus.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a3f88b97de4d14405b53a4ee36bd22168c4e2798
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 64e4e3e0e7920a486cf0979c63dee252648e5aa5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30971380"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797055"
 ---
 # <a name="create-devicecompliancedevicestatus"></a>Создание объекта deviceComplianceDeviceStatus
 
@@ -107,6 +107,7 @@ Content-Length: 493
   "userPrincipalName": "User Principal Name value"
 }
 ```
+
 
 
 

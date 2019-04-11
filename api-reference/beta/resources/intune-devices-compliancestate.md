@@ -4,12 +4,12 @@ description: Состояние соответствия требованиям.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 29357c5248aea78ffca8af464ecf4c3af17bdbc3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 8c462df866b3c711bf4738c70ad4a1b0d68ceeb4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172928"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796271"
 ---
 # <a name="compliancestate-enum-type"></a>тип перечисления Комплианцестате
 
@@ -26,9 +26,10 @@ ms.locfileid: "30172928"
 |совместимо|1,1|Совместимо.|
 |несоответствующих|2|Устройство не совместимо и заблокировано из корпоративных ресурсов.|
 |противоречивы|4|Конфликт с другими правилами.|
-|error|4|Ошибка|
+|error|SP4|Ошибка|
 |Инграцепериод|254|Устройство не соответствует требованиям, но имеет доступ к корпоративным ресурсам|
 |Конфигманажер|255|Управление с помощью диспетчера конфигураций|
+
 
 
 

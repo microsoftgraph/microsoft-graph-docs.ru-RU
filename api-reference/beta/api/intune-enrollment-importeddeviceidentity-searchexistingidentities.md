@@ -4,12 +4,12 @@ description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a9e9bdfaaf071962120852776481e7c5c072580a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 827e61fe79d92e103098478243c1ba573942c577
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987554"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795529"
 ---
 # <a name="searchexistingidentities-action"></a>Действие searchExistingIdentities
 
@@ -43,7 +43,7 @@ POST /deviceManagement/importedDeviceIdentities/searchExistingIdentities
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тело запроса добавьте параметры в формате JSON.
 
 В приведенной ниже таблице указаны параметры, которые можно использовать с этим действием.
@@ -109,6 +109,7 @@ Content-Length: 577
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Представляет приложение в списке пр�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 477911dba492bdda09eb815aba968bb7f63955bf
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 45d8742a888eb492b71bf9829b9621bde9608ef5
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145404"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794969"
 ---
 # <a name="macosfirewallapplication-resource-type"></a>Тип ресурса Макосфиреваллаппликатион
 
@@ -23,7 +23,7 @@ ms.locfileid: "30145404"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |bundleId|String|Свойства bundleid приложения.|
-|Алловсинкомингконнектионс|Логический|Разрешены ли входящие подключения.|
+|Алловсинкомингконнектионс|Boolean|Разрешены ли входящие подключения.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -42,6 +42,7 @@ ms.locfileid: "30145404"
   "allowsIncomingConnections": true
 }
 ```
+
 
 
 

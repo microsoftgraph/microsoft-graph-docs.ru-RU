@@ -4,12 +4,12 @@ description: Возможные значения для канала Miracast.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0527aac2e78c7abdbc9f816f2a16d549f781947e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: e352bd96e5bef9d5400d7b148f1ca0b72a95acd3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148876"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796096"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
@@ -26,13 +26,13 @@ ms.locfileid: "30148876"
 |one|1,1|Один.|
 |two|2|2.|
 |three|4|Трёх.|
-|four|4|Четыре.|
-|пять|17:00|Следующих.|
-|Шесть|6|Шест.|
-|Семь|7|Неделю.|
-|Восемь|8,5|Основными.|
-|Девять|10|9.|
-|Десять|десяти|Раз.|
+|four|SP4|Четыре.|
+|five|17:00|Следующих.|
+|шест|ICMPv6|Шест.|
+|неделю|см|Неделю.|
+|Основными|8,5|Основными.|
+|9|10|9.|
+|раз|десяти|Раз.|
 |Eleven|-11:00|Eleven.|
 |Сиртисикс|36|36.|
 |40|40|40.|
@@ -43,6 +43,7 @@ ms.locfileid: "30148876"
 |Онехундредфифтисевен|157|Онехундредфифти — семь.|
 |Онехундредсикстйоне|161|Онехундредсиксти — один.|
 |Онехундредсикстифиве|165|Онехундредсиксти — пять.|
+
 
 
 

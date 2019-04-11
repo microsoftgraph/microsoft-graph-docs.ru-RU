@@ -4,12 +4,12 @@ description: Объект, представляющий ссылку на инф
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 25d97a6d085b9f1b7e0b1ab73361be3ac7ae74d2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 5905f62a1da0329db1b311ae586cdb64517a2b5d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30155561"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796544"
 ---
 # <a name="devicemanagementtroubleshootingerrorresource-resource-type"></a>Тип ресурса Девицеманажементтраублешутинжеррорресаурце
 
@@ -22,7 +22,7 @@ ms.locfileid: "30155561"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|text|String|Н/Д|
+|text|String|Пока не задокументировано.|
 |ссылка|String|Ссылка на веб-ресурс. Может содержать любой из следующих форматеров: {{UPN}}, {{Девицегуид}}, {{Усергуид}}|
 
 ## <a name="relationships"></a>Отношения
@@ -42,7 +42,6 @@ ms.locfileid: "30155561"
   "link": "String"
 }
 ```
-
 
 
 

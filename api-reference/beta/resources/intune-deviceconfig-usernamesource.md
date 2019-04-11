@@ -4,12 +4,12 @@ description: Источник имени пользователя.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 001fb659c86b3403e6a206daa72f9d12d8bdb383
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 53eae35e947b958c21df63ece3156da4107e8d0b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30166236"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796341"
 ---
 # <a name="usernamesource-enum-type"></a>тип перечисления usernameSource
 
@@ -25,6 +25,7 @@ ms.locfileid: "30166236"
 |userPrincipalName|нуль|Имя участника пользователя.|
 |primarySmtpAddress|1,1|Основной SMTP-адрес.|
 |samAccountName|2|Имя учетной записи SAM пользователя.|
+
 
 
 

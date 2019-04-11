@@ -4,12 +4,12 @@ description: Список свойств и связей объектов Мак
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3cd1a283e6972d9845b343e312128d51ef7409a
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: be8fe3389c1cdf08850d88eba09751c4e27e6657
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30977970"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795494"
 ---
 # <a name="list-macostrustedrootcertificates"></a>Список Макострустедрутцертификатес
 
@@ -85,6 +85,7 @@ Content-Length: 622
   ]
 }
 ```
+
 
 
 

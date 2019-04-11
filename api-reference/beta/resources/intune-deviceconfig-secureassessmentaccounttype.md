@@ -4,12 +4,12 @@ description: Тип учетных записей, разрешенных для
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f6698086b3da16466e9069781312e15ccd7c80c3
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 4fa14d90465ed9278fd20362800d5d111de62950
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30169379"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795011"
 ---
 # <a name="secureassessmentaccounttype-enum-type"></a>тип перечисления Секуреассессментаккаунттипе
 
@@ -22,9 +22,10 @@ ms.locfileid: "30169379"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|Азуреадаккаунт|нуль|Указывает учетную запись Azure AD в формате AzureAD\username@tenant.com.|
-|Домаинаккаунт|1,1|Указывает учетную запись домена в формате домен \ пользователь или user@domain.com.|
+|Азуреадаккаунт|нуль|Указывает, что учетная запись Azure AD AzureAD\username@tenant.comимеет формат.|
+|Домаинаккаунт|1,1|Указывает учетную запись домена в формате домен \ user@domain.comпользователь или.|
 |Локалаккаунт|2|Указывает локальную учетную запись в формате имени пользователя.|
+
 
 
 

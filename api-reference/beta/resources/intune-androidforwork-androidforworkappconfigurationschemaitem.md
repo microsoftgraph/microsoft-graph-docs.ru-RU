@@ -4,12 +4,12 @@ description: Один элемент конфигурации в схеме на
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 0de75506419ea0e403c7f55af07459514abb408c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 086da317eedc908ea44a7ec0d1b9140bbe0534b4
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30147735"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795193"
 ---
 # <a name="androidforworkappconfigurationschemaitem-resource-type"></a>Тип ресурса androidForWorkAppConfigurationSchemaItem
 
@@ -23,7 +23,7 @@ ms.locfileid: "30147735"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |schemaItemKey|String|Уникальный ключ, используемый приложением для определения элемента.|
-|displayName|String|Понятное человеку имя.|
+|displayName|Строка|Понятное человеку имя.|
 |description|String|Описание компонентов приложения, которыми управляет элемент.|
 |defaultBoolValue|Boolean|Значение по умолчанию для элементов логического типа, если указано разработчиком приложения.|
 |defaultIntValue|Int32|Значение по умолчанию для элементов целочисленного типа, если указано разработчиком приложения.|
@@ -32,7 +32,7 @@ ms.locfileid: "30147735"
 |dataType|[Андроидфорворкаппконфигуратионсчемаитемдататипе](../resources/intune-androidforwork-androidforworkappconfigurationschemaitemdatatype.md)|Тип значения, который описывает этот элемент. Возможные значения: `bool`, `integer`, `string`, `choice`, `multiselect`, `bundle`, `bundleArray`, `hidden`.|
 |selections|Коллекция объектов [keyValuePair](../resources/intune-shared-keyvaluepair.md)|Список понятных человеку пар имя-значение для допустимых значений, которые можно задать для этого элемента (только для элементов одиночного и множественного выбора).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -64,6 +64,7 @@ ms.locfileid: "30147735"
   ]
 }
 ```
+
 
 
 

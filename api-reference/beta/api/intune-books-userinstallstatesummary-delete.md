@@ -4,12 +4,12 @@ description: Удаляет объект userInstallStateSummary.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1096b73b4e0e74f69786598e7f82c54bfe4eae5f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a014d254331a7639a0a7848a15543124c46be88f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956907"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795018"
 ---
 # <a name="delete-userinstallstatesummary"></a>Удаление объекта userInstallStateSummary
 
@@ -62,6 +62,7 @@ DELETE https://graph.microsoft.com/beta/deviceAppManagement/managedEBooks/{manag
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

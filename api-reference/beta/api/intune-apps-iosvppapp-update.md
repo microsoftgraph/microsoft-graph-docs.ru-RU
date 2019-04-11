@@ -4,12 +4,12 @@ description: Обновление свойств объекта iosVppApp.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 341e5be4f111764932ed403fd9f2b9f20e63f95b
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bdf51b63f352b614c14cdd26a9c1fd4830961da3
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30982975"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796138"
 ---
 # <a name="update-iosvppapp"></a>Update iosVppApp
 
@@ -68,7 +68,8 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |releaseDateTime|DateTimeOffset|Дата и время выпуска приложения, на которое распространяется программа VPP.|
@@ -94,7 +95,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1972
+Content-length: 1999
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -118,6 +119,7 @@ Content-length: 1972
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -161,7 +163,7 @@ Content-length: 1972
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2144
+Content-Length: 2171
 
 {
   "@odata.type": "#microsoft.graph.iosVppApp",
@@ -188,6 +190,7 @@ Content-Length: 2144
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
+  "dependentAppCount": 1,
   "usedLicenseCount": 0,
   "totalLicenseCount": 1,
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
@@ -225,6 +228,7 @@ Content-Length: 2144
   ]
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Содержит свойства для минимальной в�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 98ad7191b919905e18246e904744b79dfeead06e
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 3775a9bbc9eee6bfef5dd1bef8235bf6fc770603
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30161497"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795178"
 ---
 # <a name="iosminimumoperatingsystem-resource-type"></a>Тип ресурса iosMinimumOperatingSystem
 
@@ -22,11 +22,11 @@ ms.locfileid: "30161497"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|v8_0|Логический|Версия 8.0 или выше.|
-|v9_0|Логический|Версия 9.0 или выше.|
-|v10_0|Логический|Версия 10.0 или выше.|
+|v8_0|Boolean|Версия 8.0 или выше.|
+|v9_0|Boolean|Версия 9.0 или выше.|
+|v10_0|Boolean|Версия 10.0 или выше.|
 |v11_0|Boolean|Версия 11.0 или выше.|
-|v12_0|Логический|Версия 12,0 или более поздняя.|
+|v12_0|Boolean|Версия 12,0 или более поздняя.|
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -48,6 +48,7 @@ ms.locfileid: "30161497"
   "v12_0": true
 }
 ```
+
 
 
 

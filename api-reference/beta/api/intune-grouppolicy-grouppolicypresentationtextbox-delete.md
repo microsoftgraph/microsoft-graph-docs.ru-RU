@@ -4,12 +4,12 @@ description: Удаляет объект Граупполиципресента�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 86ea8ae426a74a291b9be50d5f8631553964cf6f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: b8f80ba99852308564641e7ee2e9319c1a905470
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30958286"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795564"
 ---
 # <a name="delete-grouppolicypresentationtextbox"></a>Удаление Граупполиципресентатионтекстбокс
 
@@ -63,6 +63,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/groupPolicyConfiguratio
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

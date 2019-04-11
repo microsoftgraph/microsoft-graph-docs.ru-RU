@@ -4,12 +4,12 @@ description: Содержит свойства, используемые при 
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6c8f1dadc7a302c3b4b78f0fc9e278e9285ecbcc
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 48bac2fcc8dd8c7da65c3ee138aabaaf5649b356
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30172312"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795186"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
 
@@ -27,7 +27,7 @@ ms.locfileid: "30172312"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -43,6 +43,7 @@ ms.locfileid: "30172312"
   "vpnConfigurationId": "String"
 }
 ```
+
 
 
 

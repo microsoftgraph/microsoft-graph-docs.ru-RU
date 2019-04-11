@@ -4,12 +4,12 @@ description: Содержит свойства для корпоративног
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f09ca9a8f891b90563ebad2cff74775f4c6fb7c2
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2f4966b6608bcd96720c4260191388979e811061
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30168399"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796467"
 ---
 # <a name="vpplicensingtype-resource-type"></a>Тип ресурса vppLicensingType
 
@@ -22,12 +22,12 @@ ms.locfileid: "30168399"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Суппортусерлиценсинг|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|Суппортусерлиценсинг|Boolean|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |Суппортдевицелиценсинг|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
-|supportsUserLicensing|Логический|Указывает, поддерживает ли программа тип лицензирования пользователя.|
+|supportsUserLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования пользователя.|
 |supportsDeviceLicensing|Boolean|Указывает, поддерживает ли программа тип лицензирования устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -46,6 +46,7 @@ ms.locfileid: "30168399"
   "supportsDeviceLicensing": true
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновляет свойства объекта resourceOperatio
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3fc0453a077cec47c55838005bc464bc922b7e3
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 340225527a246df681bdea165e316e06e0dcbd54
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989227"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795662"
 ---
 # <a name="update-resourceoperation"></a>Обновление объекта resourceOperation
 
@@ -43,7 +43,7 @@ PATCH /deviceManagement/resourceOperations/{resourceOperationId}
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md) в формате JSON.
 
 Ниже показаны свойства, которые необходимо указывать при создании объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).
@@ -98,6 +98,7 @@ Content-Length: 298
   "enabledForScopeValidation": true
 }
 ```
+
 
 
 

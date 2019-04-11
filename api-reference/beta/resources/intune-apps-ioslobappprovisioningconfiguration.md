@@ -4,12 +4,12 @@ description: В этом разделе приведены описания об
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 128ef2c4b6e7bfabc98478a8249c3494701072b0
-ms.sourcegitcommit: 8eb88cfb48b0eb8f992570caebef577dfa2f30d3
+ms.openlocfilehash: 6a5a85b0b5467835a1ecb3d81997e0300ab08eee
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30570992"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796243"
 ---
 # <a name="ioslobappprovisioningconfiguration-resource-type"></a>Тип ресурса iosLobAppProvisioningConfiguration
 
@@ -27,7 +27,7 @@ ms.locfileid: "30570992"
 |[Создание iosLobAppProvisioningConfiguration](../api/intune-apps-ioslobappprovisioningconfiguration-create.md)|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)|Создание нового объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .|
 |[Удаление iosLobAppProvisioningConfiguration](../api/intune-apps-ioslobappprovisioningconfiguration-delete.md)|Нет|Удаляет объект [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md).|
 |[Обновление iosLobAppProvisioningConfiguration](../api/intune-apps-ioslobappprovisioningconfiguration-update.md)|[iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md)|Обновление свойств объекта [iosLobAppProvisioningConfiguration](../resources/intune-apps-ioslobappprovisioningconfiguration.md) .|
-|[Действие assign](../api/intune-apps-ioslobappprovisioningconfiguration-assign.md)|Нет|Н/Д|
+|[Действие назначения](../api/intune-apps-ioslobappprovisioningconfiguration-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -36,7 +36,7 @@ ms.locfileid: "30570992"
 |expirationDateTime|DateTimeOffset|Дата и время неОбязательного окончания срока действия профиля.|
 |payloadFileName|String|Имя файла полезных данных (*. мобилепровисион | *.xml).|
 |payload|Binary|Полезные данные (массив байтов в кодировке UTF8).|
-|roleScopeTagIds|Коллекция строк|Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.|
+|roleScopeTagIds|Коллекция String|Список тегов областей для данной сущности конфигурации подготовки бизнес-приложений iOS.|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта.|
 |description|String|Указанное администратором описание конфигурации устройства.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта.|
@@ -76,6 +76,7 @@ ms.locfileid: "30570992"
   "version": 1024
 }
 ```
+
 
 
 

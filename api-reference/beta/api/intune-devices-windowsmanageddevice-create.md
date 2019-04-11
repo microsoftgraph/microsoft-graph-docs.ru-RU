@@ -4,12 +4,12 @@ description: Создание нового объекта Виндовсмана
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 51c8f4281a65ac73f5db00e59a3df12a69967ec5
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: fdc1c7c142e0c00a5eb8b9129018d1ee4e434e6f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987120"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797363"
 ---
 # <a name="create-windowsmanageddevice"></a>Создание Виндовсманажеддевице
 
@@ -34,8 +34,8 @@ ms.locfileid: "30987120"
 }
 -->
 ``` http
-POST /users/{usersId}/managedDevices
 POST /deviceManagement/managedDevices
+POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/users/{userId}/managedDevices
 POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/detectedApps/{detectedAppId}/managedDevices
 ```
 
@@ -45,7 +45,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Виндовсманажеддевице в формате JSON.
 
 В следующей таблице приведены свойства, необходимые при создании Виндовсманажеддевице.
@@ -116,7 +116,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 |Манажементцертификатикспиратиондате|DateTimeOffset|Дата окончания срока действия сертификата управления устройствами наСледуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |икЦид|String|Идентификатор встроенной карты — это уникальный идентификационный номер SIM-карты. НаСледуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |удид|String|Уникальный идентификатор устройства для устройств iOS и macOS. НаСледуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
-|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра устройства. НаСледуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
+|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра устройства. НаСледуется от [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Виндовсактивемалварекаунт|Int32|Число активных вредоносных программ для этого устройства Windows, унаследованных из [managedDevice](../resources/intune-devices-manageddevice.md)|
 |Виндовсремедиатедмалварекаунт|Int32|Количество исправленных вредоносных программ для этого устройства Windows, унаследованных из [managedDevice](../resources/intune-devices-manageddevice.md)|
 |notes|String|Примечания на устройстве, созданном администратором ИТ, унаследованном от [managedDevice](../resources/intune-devices-manageddevice.md)|
@@ -132,7 +132,7 @@ POST /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/device
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ``` http
-POST https://graph.microsoft.com/beta/users/{usersId}/managedDevices
+POST https://graph.microsoft.com/beta/deviceManagement/managedDevices
 Content-type: application/json
 Content-length: 7231
 
@@ -479,6 +479,7 @@ Content-Length: 7280
   }
 }
 ```
+
 
 
 

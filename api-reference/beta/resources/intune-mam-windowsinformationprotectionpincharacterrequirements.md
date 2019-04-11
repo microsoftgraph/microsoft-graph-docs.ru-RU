@@ -4,12 +4,12 @@ description: Требования к ПИН-символам
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 1147f597a1c2bcaf18a29d783b42722195c79407
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: d5ba637128e50445af431ec6f1c95f52f7780d38
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30160811"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795858"
 ---
 # <a name="windowsinformationprotectionpincharacterrequirements-enum-type"></a>тип перечисления Виндовсинформатионпротектионпинчарактеррекуирементс
 
@@ -25,6 +25,7 @@ ms.locfileid: "30160811"
 |notAllow|нуль|Не разрешать|
 |Рекуиреатлеастоне|1,1|Требуется хотя бы один|
 |разрешить|2|Разрешить любой номер|
+
 
 
 

@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Иосв
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: f22c03faf2ab7f07d7e856bfd911853551858a1e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 41df66038090bd6872d7384666eb9465869db314
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30986462"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795851"
 ---
 # <a name="get-iosvppappassigneduserlicense"></a>Получение Иосвппаппассигнедусерлиценсе
 
@@ -78,6 +78,7 @@ Content-Length: 318
   }
 }
 ```
+
 
 
 

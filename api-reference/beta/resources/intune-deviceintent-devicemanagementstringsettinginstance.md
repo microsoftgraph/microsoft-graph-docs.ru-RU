@@ -4,12 +4,12 @@ description: Экземпляр параметра, представляющий
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6ea58c6fdb4a8ad3a2a68ead7044943093c22bb1
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: 3297085a905934792de2d371f295b467ad9a8e44
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522547"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31794948"
 ---
 # <a name="devicemanagementstringsettinginstance-resource-type"></a>Тип ресурса Девицеманажементстрингсеттингинстанце
 
@@ -26,10 +26,10 @@ ms.locfileid: "31522547"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Девицеманажементстрингсеттингинстанцес](../api/intune-deviceintent-devicemanagementstringsettinginstance-list.md)|Коллекция [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Список свойств и связей объектов [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
-|[Получение Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-get.md)|[Девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Чтение свойств и связей объекта [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
-|[Создание Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-create.md)|[Девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Создание нового объекта [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
+|[Получение Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-get.md)|[deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Чтение свойств и связей объекта [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
+|[Создание Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-create.md)|[deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Создание нового объекта [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
 |[Удаление Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-delete.md)|Нет|Удаляет объект [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md).|
-|[Обновление Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-update.md)|[Девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Обновление свойств объекта [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
+|[Обновление Девицеманажементстрингсеттингинстанце](../api/intune-deviceintent-devicemanagementstringsettinginstance-update.md)|[deviceManagementStringSettingInstance](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md)|Обновление свойств объекта [девицеманажементстрингсеттингинстанце](../resources/intune-deviceintent-devicemanagementstringsettinginstance.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -59,8 +59,6 @@ ms.locfileid: "31522547"
   "value": "String"
 }
 ```
-
-
 
 
 

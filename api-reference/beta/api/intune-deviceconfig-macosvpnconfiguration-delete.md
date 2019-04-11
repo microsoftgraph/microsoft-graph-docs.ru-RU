@@ -4,12 +4,12 @@ description: Удаляет объект Макосвпнконфигурати�
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9547d751aec67b870868f69a65866059456a7213
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: bed0a28d1728511db554fe462788f64ec61f3e55
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30970515"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795809"
 ---
 # <a name="delete-macosvpnconfiguration"></a>Удаление Макосвпнконфигуратион
 
@@ -64,6 +64,7 @@ DELETE https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{d
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

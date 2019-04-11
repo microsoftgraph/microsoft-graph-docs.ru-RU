@@ -4,12 +4,12 @@ description: Возможные значения для Локалсекурит
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5deaccdd8e1f3707617fe2df06a5fec087a47625
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 597b49f65027ae2d01cbfddf741ff8ca08f83eb2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139342"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796936"
 ---
 # <a name="localsecurityoptionsadministratorelevationpromptbehaviortype-enum-type"></a>тип перечисления Локалсекуритйоптионсадминистраторелеватионпромптбехавиортипе
 
@@ -22,13 +22,14 @@ ms.locfileid: "30139342"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|notConfigured|нуль|Не настроено|
+|notConfigured|нуль|Not Configured|
 |Елеватевисаутпромптинг|1,1|Повышение прав без выдачи запросов.|
 |Промптфоркредентиалсонсесекуредесктоп|2|Запрос учетных данных на безопасном рабочем столе|
 |Промптфорконсентонсесекуредесктоп|4|Запрос согласия на безопасном рабочем столе|
-|Промптфоркредентиалс|4|Запрос учетных данных|
+|Промптфоркредентиалс|SP4|Запрос учетных данных|
 |Промптфорконсент|17:00|Запрос согласия|
-|Промптфорконсентфорнонвиндовсбинариес|6|Запрос согласия для двоичных файлов, отличных от Windows|
+|Промптфорконсентфорнонвиндовсбинариес|ICMPv6|Запрос согласия для двоичных файлов, отличных от Windows|
+
 
 
 

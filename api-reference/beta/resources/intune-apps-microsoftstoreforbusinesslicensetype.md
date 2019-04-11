@@ -1,15 +1,15 @@
 ---
 title: тип перечисления Микрософтсторефорбусинесслиценсетипе
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e81ca6f09253c43ae936bbc243124fd8d9a19268
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 470f2b398bb146c6522d0fc0c6fe884813b12d92
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151074"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795928"
 ---
 # <a name="microsoftstoreforbusinesslicensetype-enum-type"></a>тип перечисления Микрософтсторефорбусинесслиценсетипе
 
@@ -17,13 +17,14 @@ ms.locfileid: "30151074"
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
-Н/Д
+Пока не задокументировано.
 
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|автономные|нуль|Н/Д|
-|Онлайн|1,1|Н/Д|
+|содержание|нуль|Пока не задокументировано.|
+|Онлайн|1,1|Пока не задокументировано.|
+
 
 
 

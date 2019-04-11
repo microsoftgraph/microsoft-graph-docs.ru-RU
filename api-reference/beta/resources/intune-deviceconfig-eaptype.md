@@ -4,12 +4,12 @@ description: Типы конфигурации протокола EAP (Extensibl
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 6aac4a2bf9c72d8d682ed444355ce2e410ff8f1c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1c0fea3bed512c98cd26488a7703554ac6c600f7
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30146853"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797426"
 ---
 # <a name="eaptype-enum-type"></a>тип перечисления Еаптипе
 
@@ -28,6 +28,7 @@ ms.locfileid: "30146853"
 |Еапттлс|21|Протокол TLS-туннелирования (EAP-TTLS).|
 |протокола|25|Протокол PEAP (protected Extensible Authentication Protocol).|
 |Еапфаст|43|EAP-гибкая Проверка поДлинности с помощью безопасного туннелирования (EAP-FAST).|
+
 
 
 

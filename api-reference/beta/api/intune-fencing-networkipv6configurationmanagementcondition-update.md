@@ -4,12 +4,12 @@ description: Обновление свойств объекта networkIPv6Confi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e2e6c6f7a51945e8cc54c9c80e47ea26337b4ac6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: be681eccf66f6aa71e13c3bf4eb306a5d8d3f73f
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30979846"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796915"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>Обновление networkIPv6ConfigurationManagementCondition
 
@@ -61,8 +61,8 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md). Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |ipV6Prefix|String|Подсеть IPv6, к которой необходимо подключиться. Например: 2001: db8::/32|
 |ipV6Gateway|String|Адрес шлюза IPv6 в. Например, 2001: db8:: 1|
-|ipV6DNSServerList|Коллекция строк|DNS-серверы IPv6, настроенные для адаптера.|
-|Днссуффикслист|Коллекция строк|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
+|ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптера.|
+|Днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
 
 
 
@@ -127,6 +127,7 @@ Content-Length: 651
   ]
 }
 ```
+
 
 
 

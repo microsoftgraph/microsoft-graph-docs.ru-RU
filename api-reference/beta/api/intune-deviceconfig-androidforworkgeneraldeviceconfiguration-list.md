@@ -4,12 +4,12 @@ description: Список свойств и связей объектов androi
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: e6538165d83dcf6fe0dec25bdeaafae816ff5b3e
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 459e08bb2f77cdd9428d8e853e8b922054ef5e38
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30966595"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796565"
 ---
 # <a name="list-androidforworkgeneraldeviceconfigurations"></a>Список Андроидфорворкженералдевицеконфигуратионс
 
@@ -119,6 +119,7 @@ Content-Length: 2431
   ]
 }
 ```
+
 
 
 

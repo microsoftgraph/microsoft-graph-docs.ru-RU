@@ -4,12 +4,12 @@ description: Методы, отличные от EAP, для проверки п
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 14ac915d14816a678aa395054548a1b1b5f035ee
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 2a69ea80f23b2671dfd58fee87573d6e2614b360
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30145516"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797461"
 ---
 # <a name="noneapauthenticationmethodforeapttlstype-enum-type"></a>тип перечисления Нонеапаусентикатионмесодфореапттлстипе
 
@@ -26,6 +26,7 @@ ms.locfileid: "30145516"
 |Чалленжехандшакеаусентикатионпротокол|1,1|Протокол проверки поДлинности подтверждения связи (CHAP).|
 |Микрософтчап|2| Microsoft CHAP (MS-CHAP).|
 |Микрософтчапверсионтво|4|Microsoft CHAP версии 2 (MS-CHAP v2).|
+
 
 
 

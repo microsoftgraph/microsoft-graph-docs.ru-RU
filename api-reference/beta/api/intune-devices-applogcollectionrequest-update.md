@@ -4,12 +4,12 @@ description: Обновление свойств объекта appLogCollection
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 81ac65687cabba41ee48c0e88e56428ac8735658
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a924def5da43959478ebaf060bd46e51408a2293
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962549"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795767"
 ---
 # <a name="update-applogcollectionrequest"></a>Обновление appLogCollectionRequest
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/mobileAppTroubleshootingEvents/{mobileAppTroubleshooting
 |id|String|Уникальный идентификатор. Это идентификатор Усерид_девицеид_аппид.|
 |status|[appLogUploadState](../resources/intune-devices-apploguploadstate.md)|Запись состояния отправки. Возможные значения: `pending`, `completed`, `failed`.|
 |Ошибк|String|Сообщение об ошибке, если оно возникло во время процесса отправки|
-|Кустомлогфолдерс|Коллекция строк|Список папок журналов. |
+|Кустомлогфолдерс|Коллекция String|Список папок журналов. |
 |completedDateTime|DateTimeOffset|Время, когда запрос на отправку журнала достигает состояния терминала|
 
 
@@ -99,6 +99,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

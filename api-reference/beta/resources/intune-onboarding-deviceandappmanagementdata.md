@@ -4,12 +4,12 @@ description: Экспортированные данные
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: d3b91b0186b2263a936cabe02bd533a550a24748
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: 1a889e65463733971dd36d04e6bba8a140fdba16
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154854"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31795711"
 ---
 # <a name="deviceandappmanagementdata-resource-type"></a>Тип ресурса Девицеандаппманажементдата
 
@@ -22,9 +22,9 @@ ms.locfileid: "30154854"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|content|Stream|Н/Д|
+|содержимое|Поток|Н/Д|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
@@ -40,6 +40,7 @@ ms.locfileid: "30154854"
   "content": "<Unknown Primitive Type Edm.Stream>"
 }
 ```
+
 
 
 

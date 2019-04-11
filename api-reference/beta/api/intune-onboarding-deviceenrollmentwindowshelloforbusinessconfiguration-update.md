@@ -4,12 +4,12 @@ description: Обновление свойств объекта deviceEnrollment
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 9a9cd26f0a57df1e46f15ddf80599dd275c2adcf
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 44a938e652ba71c6d18846a6a4e85a87b7653ca8
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30956879"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796502"
 ---
 # <a name="update-deviceenrollmentwindowshelloforbusinessconfiguration"></a>Обновление deviceEnrollmentWindowsHelloForBusinessConfiguration
 
@@ -135,6 +135,7 @@ Content-Length: 801
   "enhancedBiometricsState": "enabled"
 }
 ```
+
 
 
 

@@ -4,12 +4,12 @@ description: Обновление свойств объекта Грауппол
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 33643d51e82a4128b6103de324e96c30ef748ef6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: 413d41f0b082c15b717c459311a9805d2a2c1ba2
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30957684"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31796796"
 ---
 # <a name="update-grouppolicypresentationvaluemultitext"></a>Обновление Граупполиципресентатионвалуемултитекст
 
@@ -53,7 +53,7 @@ PATCH /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/d
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
 |id|String|Ключ объекта. НаСледуется от [граупполиципресентатионвалуе](../resources/intune-grouppolicy-grouppolicypresentationvalue.md)|
-|values|Коллекция строк|Коллекция непустых строк для связанной презентации.|
+|values|Коллекция String|Коллекция непустых строк для связанной презентации.|
 
 
 
@@ -94,6 +94,7 @@ Content-Length: 292
   ]
 }
 ```
+
 
 
 

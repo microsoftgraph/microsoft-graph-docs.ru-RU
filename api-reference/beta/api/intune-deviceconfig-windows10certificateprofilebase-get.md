@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта windows1
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: a7a035564fac516d278933edbaac0ab91b63b50f
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: a75de66158cd905e9bbc8c6996a47c1ae6d2e2b1
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30981169"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797279"
 ---
 # <a name="get-windows10certificateprofilebase"></a>Получение windows10CertificateProfileBase
 
@@ -91,6 +91,7 @@ Content-Length: 763
   }
 }
 ```
+
 
 
 

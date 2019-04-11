@@ -4,12 +4,12 @@ description: Чтение свойств и связей объекта Депи
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: c685e06a24a0cd155dd5948018ffb3dd745d93e0
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.openlocfilehash: e6ee9d73d25945480123f7cf8ef44d8eacc45e0d
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987043"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797139"
 ---
 # <a name="get-depiosenrollmentprofile"></a>Получение Депиосенроллментпрофиле
 
@@ -65,7 +65,7 @@ GET https://graph.microsoft.com/beta/deviceManagement/depOnboardingSettings/{dep
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1898
+Content-Length: 1955
 
 {
   "value": {
@@ -95,6 +95,7 @@ Content-Length: 1898
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
     "privacyPaneDisabled": true,
+    "deviceNameTemplate": "Device Name Template value",
     "iTunesPairingMode": "allow",
     "managementCertificates": [
       {
@@ -119,6 +120,7 @@ Content-Length: 1898
   }
 }
 ```
+
 
 
 

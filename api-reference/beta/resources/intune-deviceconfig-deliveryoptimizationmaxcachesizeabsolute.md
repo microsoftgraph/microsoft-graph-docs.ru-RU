@@ -4,12 +4,12 @@ description: 'Максимальный размер кэша для оптими
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
-ms.openlocfilehash: 5e1ff180136804d6a98e2ebbb292acc358d908d6
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.openlocfilehash: a955197e1e75ecb1f953f5ddc50b33b7e01a574b
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30178131"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31797195"
 ---
 # <a name="deliveryoptimizationmaxcachesizeabsolute-resource-type"></a>Тип ресурса Деливерйоптимизатионмакскачесизеабсолуте
 
@@ -44,6 +44,7 @@ ms.locfileid: "30178131"
   "maximumCacheSizeInGigabytes": 1024
 }
 ```
+
 
 
 
