@@ -4,12 +4,12 @@ description: 'Добавляет (закрепляет) вкладку в ука
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 5235cc7dd99098fce1bdad437a74d65e6a437742
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: 8a1caf00f16fc1f4384977913073623b02d2a33a
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967230"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824418"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `201 OK`.
+В случае успешного выполнения этот метод возвращает код отклика `201 Created`.
 
 ## <a name="example"></a>Пример
 
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
