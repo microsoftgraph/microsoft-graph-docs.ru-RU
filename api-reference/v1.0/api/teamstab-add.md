@@ -4,12 +4,12 @@ description: 'Добавляет (закрепляет) вкладку в ука
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: cebb4f48a81fb25f2b4836955e8f002b06c69258
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.openlocfilehash: b0beb699a52c2981166245e72d4d1c2361ac914c
+ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967272"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "31824404"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
@@ -45,7 +45,7 @@ POST /teams/{id}/channels/{id}/tabs
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код отклика `201 OK`.
+В случае успешного выполнения этот метод возвращает код отклика `201 Created`.
 
 ## <a name="example"></a>Пример
 
