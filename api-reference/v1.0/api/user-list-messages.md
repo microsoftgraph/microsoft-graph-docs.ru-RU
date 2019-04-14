@@ -2,25 +2,29 @@
 title: Список сообщений
 description: Получение сообщений в почтовом ящике пользователя, выполнившего вход (в том числе сообщений в папках "Удаленные" и "Несрочные").
 localization_priority: Priority
-author: dkershaw10
-ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 5bc831c952f13dbf67b4e7d3de6ccfd5aa28f0b1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+author: angelgolfer-ms
+ms.prod: outlook
+ms.openlocfilehash: dd3a5cbf3e5f4ee87b74602187c230f6be92940a
+ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976025"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31799911"
 ---
 # <a name="list-messages"></a>Список сообщений
 
 Получение сообщений в почтовом ящике пользователя, выполнившего вход (в том числе сообщений в папках "Удаленные" и "Несрочные").
 
+В зависимости от размера страницы и данных почтового ящика получение сообщений из почтового ящика может повлечь множество запросов. По умолчанию страница содержит 10 сообщений. Для получения следующей странице с сообщениями, просто примените весь URL-адрес, возвращаемый в `@odata.nextLink`, для другого запроса на получение сообщений. Этот URL-адрес включает любые параметры запроса, которые указаны в первоначальном запросе. 
+
+Не извлекайте значение `$skip` из URL-адреса `@odata.nextLink` для операций с ответами. Данный API использует значение `$skip` для учета всех элементов, просмотренных в почтовом ящике пользователя, и возврата элементов типа сообщение на странице. Таким образом, существует возможность, что даже в первоначальном ответе, значение `$skip` будет больше, чем размер страницы. Дополнительные сведения см. в статье [Разбивка данных Microsoft Graph по страницам в приложении](/graph/paging)
+
 В настоящее время эта операция возвращает текст сообщения только в формате HTML.
 
-Существует два сценария, где приложения можно получить сообщения в почтовой папки другого пользователя.
+Существует два сценария, когда приложение может получить сообщения из папки почты другого пользователя:
 
-* Если приложение имеет разрешения приложения, или,
-* Если приложение имеет соответствующий делегированных [разрешений](#permissions) от одного пользователя и другой пользователь доступ к папке почты с этим пользователем или, предоставленное делегированный доступ для пользователя, который. В разделе [сведения и примеры](/graph/outlook-share-messages-folders).
+* У приложения есть разрешения для приложений; или
+* У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой почты или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-share-messages-folders).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -54,31 +58,30 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.body-content-type | строка | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Prefer: outlook.body-content-type | string | Формат возвращаемых свойств **body** и **uniqueBody**. Возможные значения: "text" или "html". Если заголовок не указан, свойства **body** и **uniqueBody** возвращаются в формате HTML. Необязательный параметр. |
 
 
 ## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Message](../resources/message.md) в тексте отклика.
 
-Размер страницы по умолчанию для этого запроса предусматривает отображение 10 сообщений.
-
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+Данный пример получает по умолчанию 10 верхних сообщений в почтовом ящике выполнившего вход пользователя. `$select` используется для получения подмножества свойств каждого сообщения в ответе.
 <!-- {
   "blockType": "request",
   "name": "get_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/me/messages
+GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 ```
-##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Ответ
+Ниже приведен пример отклика. Чтобы получить следующую страницу с сообщениями, примените URL-адрес, возвращенный в `@odata.nextLink`, для последующего запроса GET.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,22 +91,125 @@ GET https://graph.microsoft.com/v1.0/me/messages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 317
 
 {
-  "value": [
-    {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
-      "hasAttachments": true,
-      "subject": "subject-value",
-      "body": {
-        "contentType": "",
-        "content": "content-value"
-      },
-      "bodyPreview": "bodyPreview-value"
-    }
-  ]
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$select=sender%2csubject&$skip=14",
+    "value": [
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+            "id": "AAMkAGUAAAwTW09AAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
+            "id": "AAMkAGUAAAq5QKlAAA=",
+            "subject": "You have late tasks!",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Planner",
+                    "address": "noreply@Planner.Office365.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
+            "id": "AAMkAGUAAAq5QKkAAA=",
+            "subject": "Your Azure AD Identity Protection Weekly Digest",
+            "sender": {
+                "emailAddress": {
+                    "name": "Microsoft Azure",
+                    "address": "azure-noreply@microsoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
+            "id": "AAMkAGUAAAq5QKjAAA=",
+            "subject": "Use attached file",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
+            "id": "AAMkAGUAAAq5QKiAAA=",
+            "subject": "Original invitation",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
+            "id": "AAMkAGUAAAq5QKhAAA=",
+            "subject": "Koala image",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
+            "id": "AAMkAGUAAAq5QKgAAA=",
+            "subject": "Sales invoice template",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dft\"",
+            "id": "AAMkAGUAAAq5UMVAAA=",
+            "subject": "Accepted: Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DfF\"",
+            "id": "AAMkAGUAAAq5UMUAAA=",
+            "subject": "Accepted: Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Adele Vance",
+                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
+                }
+            }
+        },
+        {
+            "@odata.type": "#microsoft.graph.eventMessage",
+            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
+            "id": "AAMkAGUAAAq5T8tAAA=",
+            "subject": "Review strategy for Q3",
+            "sender": {
+                "emailAddress": {
+                    "name": "Megan Bowen",
+                    "address": "MeganB@contoso.OnMicrosoft.com"
+                }
+            }
+        }
+    ]
 }
 ```
 
