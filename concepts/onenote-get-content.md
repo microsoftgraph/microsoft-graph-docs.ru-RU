@@ -4,12 +4,12 @@ description: " Корпоративная записная книжка в Offic
 author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
-ms.openlocfilehash: 883833bccd4663be4d62cbbd46ce7f2a2a471b4b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 835cd7ba930c7e8ea2d26f750a85e097db2399f0
+ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27945036"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "31751573"
 ---
 # <a name="get-onenote-content-and-structure-with-microsoft-graph"></a>Получение содержимого и структуры OneNote с помощью Microsoft Graph
 
@@ -156,15 +156,13 @@ ms.locfileid: "27945036"
 
 Получение HTML-контента страницы.
 
-`../pages/{page-id}/content[?includeIDs,preAuthenticated]`
+`../pages/{page-id}/content[?includeIDs]`
 
 (*Дополнительные сведения о [возвращаемом HTML-контенте](onenote-input-output-html.md)*.) 
 
 <br/>
 
 Указав в строке запроса параметр **includeIDs=true**, можно получить созданные идентификаторы, используемые для [обновления страницы](onenote-update-page.md).
-
-Указав в строке запроса параметр **preAuthenticated=true**, можно получить общедоступные URL-адреса [ресурсов изображений](#image-or-other-file-resource) на странице. Общедоступные URL-адреса действительны в течение одного часа. 
 
 
 
@@ -319,18 +317,16 @@ URI ресурса файла можно найти в [выходном HTML-к
     type="application/pdf" ... />
 ```
 
-Чтобы получить общедоступные URL-адреса изображений на странице с предварительной проверкой подлинности, включите параметр `preAuthenticated=true` в строку запроса при [получении содержимого страницы](#page-html-content) (**пример**: `GET ../pages/{page-id}/content?preAuthenticated=true`). Возвращаемые в [выходном HTML-коде](onenote-input-output-html.md#output-html-examples-for-images) общедоступные URL-адреса действительны в течение одного часа. Без этого флага полученные изображения не отображаются непосредственно в браузере, так как они являются личными и для их получения необходимо пройти проверку подлинности, как и для другого содержимого страницы. 
-
 > **Примечание.** Получение коллекции ресурсов не поддерживается. 
 
 При получении файлового ресурса не требуется включать в запрос тип контента **Accept**.
 
 Дополнительные сведения о запросах GET см. в следующих статьях документации по API REST Microsoft Graph:
 
-- [Запрос GET для страниц](/graph/api/page-get?view=graph-rest-1.0)
+- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
 - [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
 - [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [Запрос GET для записных книжек](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
 
@@ -343,11 +339,11 @@ URI ресурса файла можно найти в [выходном HTML-к
 
 **Помните:**
 
-- Все запросы GET начинаются с [корневого URL-адреса службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Примеры**: `https://www.onenote.com/api/v1.0/me/notes` и `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`.
+- Все запросы GET начинаются с [корневого URL-адреса службы](/graph/api/resources/onenote-api-overview?view=graph-rest-1.0#root-url). <br/><br/>**Примеры**: `https://www.onenote.com/api/v1.0/me/notes` и `https://www.onenote.com/api/v1.0/myOrganization/siteCollections/{id}/sites/{id}/notes/`
 
-- Пробелы в строке запроса URL следует кодировать как %20.<br/><br/>**Пример**: `filter=title%20eq%20'biology'`.
+- Пробелы в строке запроса URL следует кодировать как %20.<br/><br/>**Пример**: `filter=title%20eq%20'biology'`
 
-- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример**: `filter=tolower(name) eq 'spring'`.
+- В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример**: `filter=tolower(name) eq 'spring'`
  
 
 ### <a name="search--filter"></a>search и filter  
@@ -560,9 +556,9 @@ URI ресурса файла можно найти в [выходном HTML-к
  
 | Параметр запроса | Пример и описание |  
 |------|------|  
-| count | <p>`count=true`</p><p>Количество записей в коллекции. Значение возвращается в свойстве **@odata.count** отклика.</p> |  
+| count | <p>`count=true`</p><p>Количество объектов в коллекции. Значение возвращается в свойстве ответа **@odata.count**.</p> |  
 | expand | <p>`expand=sections,sectionGroups`</p><p>Свойства навигации, которые следует вернуть в тексте ответа. Для выражений **expand** поддерживаются следующие свойства:<br /> страницы: **parentNotebook**, **parentSection**;<br /> разделы: **parentNotebook**, **parentSectionGroup**;<br /> группы разделов: **sections**, **sectionGroups**, **parentNotebook**, **parentSectionGroup**;<br /> записные книжки: **sections**, **sectionGroups**.</p><p>По умолчанию запросы GET для страниц разворачивают **parentSection** и выделяют свойства раздела **id**, **name** и **self**. По умолчанию запросы GET для разделов и групп разделов разворачивают как **parentNotebook**, так и **parentSectionGroup**, а также выделяют родительские свойства **id**, **name** и **self**.</p><p>Может использоваться для одного объекта или коллекции.<br />Свойства следует разделять запятыми.<br />В именах свойств учитывается регистр.</p> |   
-| filter | <p>`filter=isDefault eq true`</p><p>Логическое выражение, указывающее, следует ли включать запись в набор результатов. Поддерживаются следующие функции и операторы OData:<br /> — операторы сравнения: **eq**, **ne**, **gt**, **ge**, **lt**, **le**;<br /> — логические операторы: **and**, **or**, **not**;<br /> — строковые функции: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**.</p><p>В случае имен [свойств](#onenote-entity-properties) и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br /><br />**Пример**: `filter=tolower(name) eq 'spring'`.</p> |  
+| filter | <p>`filter=isDefault eq true`</p><p>Логическое выражение, указывающее, следует ли включать запись в набор результатов. Поддерживаются следующие функции и операторы OData:<br /> — операторы сравнения: **eq**, **ne**, **gt**, **ge**, **lt**, **le**;<br /> — логические операторы: **and**, **or**, **not**;<br /> — строковые функции: **contains**, **endswith**, **startswith**, **length**, **indexof**, **substring**, **tolower**, **toupper**, **trim**, **concat**.</p><p>В случае имен [свойств](#onenote-entity-properties) и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br /><br />**Пример**: `filter=tolower(name) eq 'spring'`</p> |  
 | orderby | <p>`orderby=title,createdTime desc`</p><p>
             [Свойства](#onenote-entity-properties) для сортировки с необязательным порядком сортировки **asc** (по умолчанию) или **desc**. Вы можете сортировать по любому свойству сущности в запрошенной коллекции.</p><p>По умолчанию для записных книжек, разделов и групп разделов используется порядок сортировки `name asc`, а для страниц — `lastModifiedTime desc` (сначала отображается последняя измененная страница).</p><p>Разделяйте свойства запятыми и указывайте их в порядке применения. В именах свойств учитывается регистр.</p> |  
 | search | <p>`search=cell div`</p><p>Доступен только для пользовательских записных книжек.</p><p>Термин или фраза, которую нужно найти в заголовке и тексте страницы, замещающем тексте изображений и распознанном тексте. По умолчанию поисковые запросы возвращают результаты, отсортированные по релевантности.</p><p>OneNote использует полнотекстовый поиск Bing для поддержки поиска фраз, выделения корней, игнорирования орфографических ошибок, релевантности и ранжирования, разбиения слов, разных языков и других функций полнотекстового поиска. В строках search учитывается регистр.</p><p>Применяется только к страницам записных книжек, принадлежащих пользователю. Индексированное содержимое является личным и доступно только владельцу. Страницы, защищенные паролем, не индексируются. Применяется только к конечной точке `pages`.</p> |  
@@ -581,7 +577,7 @@ URI ресурса файла можно найти в [выходном HTML-к
 
 Microsoft Graph поддерживает указанные ниже функции и операторы OData в выражениях **filter**. Используя выражения OData, помните:
 
-- Пробелы в строке запроса URL необходимо заменять кодом `%20`.<br/><br/>**Пример:** `filter=isDefault%20eq%20true`.
+- Пробелы в строке запроса URL необходимо заменять кодом `%20`.<br/><br/>**Пример:** `filter=isDefault%20eq%20true`
 
 - В случае имен свойств и сравнения строк OData учитывается регистр. Рекомендуем использовать функцию OData **tolower** для сравнения строк.<br/><br/>**Пример:** `filter=tolower(name) eq 'spring'`
 
@@ -634,10 +630,10 @@ not | `not contains(tolower(title),'school')` |
 
 Список свойств и типы свойств см. в следующих статьях документации по API REST Microsoft Graph:
 
-- [Запрос GET для страниц](/graph/api/page-get?view=graph-rest-1.0)
+- [GET Pages](/graph/api/page-get?view=graph-rest-1.0)
 - [GET Sections](/graph/api/section-get?view=graph-rest-1.0)
 - [GET SectionGroups](/graph/api/sectiongroup-get?view=graph-rest-1.0)
-- [Запрос GET для записных книжек](/graph/api/notebook-get?view=graph-rest-1.0) 
+- [GET Notebooks](/graph/api/notebook-get?view=graph-rest-1.0) 
 
 
 
@@ -661,7 +657,7 @@ not | `not contains(tolower(title),'school')` |
 
 <br/>
 
-| Данные в отклике | Описание |  
+| Данные отклика | Описание |  
 |------|------|  
 | Код успешного завершения | Код состояния HTTP 200 |  
 | Текст ответа | Представление объекта или набора объектов в формате JSON, HTML-код страницы или двоичные данные файлового ресурса.  |  
@@ -702,7 +698,7 @@ not | `not contains(tolower(title),'school')` |
 
 ## <a name="see-also"></a>См. также
 
-- [Входной и выходной HTML-код для страниц OneNote](onenote-input-output-html.md)
+- [Входной и выходной код HTML для страниц OneNote](onenote-input-output-html.md)
 - [Интеграция с OneNote](integrate-with-onenote.md)
 - [Блог разработчиков OneNote](https://go.microsoft.com/fwlink/?LinkID=390183)
 - [Вопросы разработки OneNote на сайте Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
