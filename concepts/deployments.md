@@ -1,12 +1,12 @@
 ---
 title: Национальные облачные развертывания
 description: В дополнение к нашей глобальной сети центров обработки данных облачные службы Майкрософт доступны в трех отдельных национальных облачных службах. Эти национальные облачные версии являются физическими и логически изолированными от сети экземплярами корпоративных облачных служб Майкрософт, которые ограничены в пределах географических границ конкретных стран и обслуживаются местным персоналом.
-ms.openlocfilehash: f04da510e46572140c70b0df89eefeac57974b00
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: a32d8bde766718aa0f6f6080ed4b8ff4e3e7f520
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518506"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889907"
 ---
 # <a name="national-cloud-deployments"></a>Национальные облачные развертывания
 
@@ -70,9 +70,9 @@ ms.locfileid: "31518506"
 | SharePoint| ✔ | ✔ | ✔ |
 | Планировщик|✔ |✔ |✔ |
 | Отчеты  |➖| ✔ |➖|
-| Веб-перехватчики  | ➖|✔* |✔* |
+| Уведомления об изменениях (веб-перехватчики)  | ➖|✔* |✔* |
 | Запрос на получение различий | ➖ | ➖| ➖ |
-|Расширения схемы каталога |➖|➖|➖|
+| Расширения схемы каталога |➖|➖|➖|
 | Расширения открытого типа|➖|➖|➖|
   
 Следующие дополнительные функции Microsoft Graph доступны в предварительной версии (в `/beta` конечной точке) во всех национальных облачных развертываниях, за исключением тех случаев, когда они отмечены:
@@ -80,6 +80,7 @@ ms.locfileid: "31518506"
 * Контакты организации
 * Приложения
 * Субъекты-службы
+* Уведомления об изменениях (веб-перехватчики)
 
 (*) Ограниченная поддержка только для служб Exchange и OneDrive. Службы Azure AD не поддерживаются. 
 
@@ -89,8 +90,8 @@ ms.locfileid: "31518506"
 Дополнительные сведения о национальных облаках приведены в следующих разделах:
 - [Национальные облака Майкрософт](https://www.microsoft.com/TrustCenter/CloudServices/NationalCloud)
 - [Office 365 для государственных организаций США](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government)
-- [Служба Office 365, которой управляет 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
-- [Office 365 в Германии](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
+- [Служба Office 365, предоставляемая компанией 21Vianet](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet)
+- [Office 365 Germany](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-germany)
 - [Правительственные учреждения Azure](https://azure.microsoft.com/global-infrastructure/government/)
 - [Azure Китая 21Vianet](https://docs.microsoft.com/azure/china/)
 - [Azure Германия](https://docs.microsoft.com/azure/germany/)

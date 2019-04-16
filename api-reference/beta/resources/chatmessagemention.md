@@ -2,12 +2,13 @@
 title: Тип ресурса Чатмессажементион
 description: 'Представляет упоминание в объекте chatMessage. Упоминание может быть у пользователя, группы, ленты или канала. '
 localization_priority: Normal
-ms.openlocfilehash: 45b4c60e22f727210150a64078935741dfb71640
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+author: nkramer
+ms.openlocfilehash: 5d7304325e48c87bfd75b57bf49585f66a77b262
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31481372"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889998"
 ---
 # <a name="chatmessagemention-resource-type"></a>Тип ресурса Чатмессажементион
 
@@ -18,9 +19,9 @@ ms.locfileid: "31481372"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|string|Идентификатор упоминаемого объекта|
-|Ментионтекст|string|Строка, представляющая упоминание ex: отображаемое имя пользователя, имя группы и т. д.|
-|котором|[identitySet](identityset.md)|Пользователь, который упоминал|
+|id|int|Индекс упоминаемого объекта. Соответствует <at id="index"> тегу основного текста сообщения.|
+|Ментионтекст|string|Строка, используемая для представления упоминания. Например, отображаемое имя пользователя, имя группы.|
+|котором|[identitySet](identityset.md)|Упоминаемая сущность (пользователь, приложение, группа или канал).|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -34,7 +35,7 @@ ms.locfileid: "31481372"
 
 ```json
 {
-  "id": "string (identifier)",
+  "id": "number",
   "mentionText": "string",
   "mentioned": "microsoft.graph.identitySet"
  }

@@ -1,15 +1,15 @@
 ---
-title: Создание объекта event
+title: Создание события
 description: С помощью этого API можно создать событие.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
-ms.openlocfilehash: 193cb6214d807c329d135f026f239bd6a36c236e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 978f156302380edc05df79ec3a53c1ab0f853f41
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529812"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889956"
 ---
 # <a name="create-event"></a>Создание объекта event
 
@@ -41,7 +41,7 @@ POST /groups/{id}/calendar/events
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -70,7 +70,7 @@ Content-length: 285
 ```
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
@@ -79,7 +79,7 @@ Content-length: 285
   "@odata.type": "microsoft.graph.event"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 285
 

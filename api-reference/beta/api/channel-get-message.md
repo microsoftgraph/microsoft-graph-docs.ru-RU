@@ -4,12 +4,12 @@ description: Получение одного сообщения (без отве
 author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
-ms.openlocfilehash: 26b59ac395af3de314469fdb419095bcb6133d6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: ffd472f93d278b2df09633a8d78733154963a5e2
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523206"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889935"
 ---
 # <a name="get-channel-message"></a>Получение сообщения в канале
 
@@ -100,9 +100,14 @@ Content-length: 201
   ],
   "mentions": [
       {
-          "type": "user",
           "id": "id-value ",
-          "mentionText": "Test User"
+          "mentionText": "Test User",
+          "mentioned": {
+          "user": {
+            "id": "id-value",
+            "displayName: "string"
+          }
+        }
       }
   ],
   "importance": "normal",

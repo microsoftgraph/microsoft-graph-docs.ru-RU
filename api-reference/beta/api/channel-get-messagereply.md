@@ -1,21 +1,21 @@
 ---
 title: Получение ответа на сообщение канала
-description: Получение одного ответа на сообщение в канал группы.
+description: Получение одного ответа на сообщение в канале команды.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1bfd1ab079119a55cd9a031dc6a42e01074288be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: e61996d8f23e2606598954ce73ce0a4270308126
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515596"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889970"
 ---
 # <a name="get-a-reply-to-a-channel-message"></a>Получение ответа на сообщение канала
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение одного ответа на [сообщение](../resources/chatmessage.md) в [канал](../resources/channel.md) группы.
+Получение одного ответа на [сообщение](../resources/chatmessage.md) в канале команды [](../resources/channel.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,10 +41,10 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [chatmessage](../resources/chatmessage.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,7 +55,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -98,9 +98,14 @@ Content-length: 201
   ],
   "mentions": [
       {
-          "type": "user",
           "id": "id-value ",
-          "mentionText": "Test User"
+          "mentionText": "Test User",
+          "mentioned": {
+          "user": {
+            "id": "id-value",
+            "displayName: "string"
+          }
+        }
       }
   ],
   "importance": "normal",
