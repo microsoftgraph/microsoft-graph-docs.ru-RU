@@ -4,12 +4,12 @@ description: Представляет учетную запись пользов
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 2c566c671a3ba83168a77e358c2d8ceccfe1bf45
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.openlocfilehash: ee05a3c826924b606de599f2fbcadbebb963192f
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936320"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31890019"
 ---
 # <a name="user-resource-type"></a>Тип ресурса user
 
@@ -139,6 +139,7 @@ ms.locfileid: "30936320"
 |responsibilities|Коллекция строк|Список обязанностей пользователя.|
 |schools|Коллекция строк|Список учебных заведений, которые посещал пользователь.|
 |showInAddressList|Boolean|Значение **true**, если глобальный список адресов Outlook должен содержать этого пользователя. В противном случае используется значение **false**. Если не задано, будет считаться, что присвоено значение **true**. Для пользователей, приглашенных через диспетчер приглашений, этому свойству присваивается значение **false**.|
+|signInSessionsValidFromDateTime|DateTimeOffset| Все маркеры обновления или маркеры сеансов (файлы cookie сеанса), выпущенные до этого момента, являются недопустимыми. В приложениях возникает ошибка при использовании недопустимых маркеров обновления или маркеров сеансов для получения маркера делегированного доступа (для доступа к API, например Microsoft Graph).  В этом случае приложению потребуется получить новый маркер обновления, сделав запрос к конечной точке авторизации. Только для чтения. Сброс можно выполнить с помощью [revokeSignInSessions](../api/user-revokesigninsessions.md).|
 |skills|Коллекция строк|Список навыков пользователя.|
 |state|String|Область, республика, край или округ в адресе пользователя. Поддерживает параметр $filter.|
 |streetAddress|String|Почтовый адрес места работы пользователя.|
