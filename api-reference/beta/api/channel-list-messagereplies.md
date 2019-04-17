@@ -1,24 +1,24 @@
 ---
-title: Ответы на сообщение канала списка
-description: Список всех ответов на сообщение в канал группы.
+title: Список ответов на сообщения канала
+description: ПереЧисление всех ответов на сообщение в канале команды.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4ac3b068e93e370ce981d478c87e573f248695c6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 4ef844dc03b26e4f3184b138aa6f8a845453e0c7
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512299"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889977"
 ---
-# <a name="list-channel-message-replies"></a>Ответы на сообщение канала списка
+# <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех ответов на [сообщения](../resources/chatmessage.md) в [канал](../resources/channel.md) группы.
+ПереЧисление всех ответов на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) команды.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения|Разрешения (в порядке повышения привилегий)|
 |---------|-------------|
@@ -41,10 +41,10 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [chatmessage](../resources/channel.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/channel.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,7 +55,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 ```http
 GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -101,10 +101,15 @@ Content-length: 201
         ],
         "mentions": [
             {
-                "type": "user",
                 "id": "id-value ",
-                "mentionText": "Test User"
+                "mentionText": "Test User",
+                "mentioned": {
+                "user": {
+                    "id": "id-value",
+                    "displayName: "string"
+                }
             }
+        }
         ],
         "importance": "normal",
         "reactions": [

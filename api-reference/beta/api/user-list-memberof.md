@@ -1,21 +1,21 @@
 ---
-title: Список член групп пользователей
-description: Получите групп, каталог ролей и административных единиц измерения, которые пользователь является участником прямой. Эта операция не транзитивное.
+title: ПереЧисление пользователя memberOf
+description: Получение групп, ролей каталогов и административных единиц, непосредственным участником которых является пользователь. Эта операция не является транзитивной.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: c7d7f1fa0636be0831c866c23ed133361dd24df3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 41c436cfe2a83da00eadda94914c707e1c1aee62
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509709"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889914"
 ---
-# <a name="list-user-memberof"></a>Список член групп пользователей
+# <a name="list-user-memberof"></a>ПереЧисление пользователя memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите групп, каталог ролей и административных единиц измерения, которые пользователь является участником прямой. Эта операция не транзитивное.
+Получение групп, ролей каталогов и административных единиц, непосредственным участником которых является пользователь. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -31,6 +31,8 @@ ms.locfileid: "29509709"
 
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/memberOf
+or
 GET /users/{id | userPrincipalName}/memberOf
 ```
 
@@ -45,7 +47,7 @@ GET /users/{id | userPrincipalName}/memberOf
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -64,10 +66,9 @@ GET /users/{id | userPrincipalName}/memberOf
 GET https://graph.microsoft.com/beta/me/memberOf
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

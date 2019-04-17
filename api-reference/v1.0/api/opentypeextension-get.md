@@ -1,14 +1,14 @@
 ---
 title: Получение открытого расширения
-description: Получение открытого расширения (объекта openTypeExtension), определенного по имени или полному имени.
+description: Получение открытого расширения (объекта openTypeExtension), указанного по имени или полному имени.
 localization_priority: Priority
 author: dkershaw10
-ms.openlocfilehash: d3bc96577f86a7bc5d2006f42a03943363d70169
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.openlocfilehash: ee5a8d8f5d98024055b4d28dd67281f8e2e6d453
+ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27953233"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "31889942"
 ---
 # <a name="get-open-extension"></a>Получение открытого расширения
 
@@ -24,14 +24,14 @@ ms.locfileid: "27953233"
 
 ## <a name="permissions"></a>Разрешения
 
-В зависимости от ресурсов, содержащий данное расширение имени файла и разрешение типа (делегированные или приложение) запрошенный, разрешение, указанное в следующей таблице минимальными правами требуется для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от того, какой ресурс содержит расширение, и типа запрашиваемого расширения (делегированного или для приложений), разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированные (рабочая или учебная учетная запись) | Делегированные (личная учетная запись Майкрософт) | Application |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
 | [device](../resources/device.md) | Directory.Read.All | Не поддерживается | Device.ReadWrite.All |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read | Calendars.Read |
 | [group](../resources/group.md) | Group.Read.All | Не поддерживается | Group.Read.All |
-| [event](../resources/event.md) для групп | Group.Read.All | Не поддерживается | Не поддерживается |
+| [Событие для групп](../resources/event.md) | Group.Read.All | Не поддерживается | Не поддерживается |
 | [post](../resources/post.md) для групп | Group.Read.All | Не поддерживается | Group.Read.All |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read | 
 | [organization](../resources/organization.md) | User.Read | Не поддерживается | Не поддерживается |
@@ -121,8 +121,8 @@ GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{ex
 |:---------------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -370,7 +370,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 ```
 
 
-####<a name="response-5"></a>Отклик 5
+#### <a name="response-5"></a>Отклик 5
 
 В этом отклике для пятого примера почтовый ящик пользователя содержит только одно сообщение, свойство **id** которого имеет значение `Com.Contoso.Referral`.
 
