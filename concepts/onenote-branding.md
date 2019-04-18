@@ -4,12 +4,12 @@ description: " "
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
-ms.openlocfilehash: 472b1cf54582dfde21bb2137c5d4628d17664e94
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: HT
+ms.openlocfilehash: 416b059eabe277dc356e3ac9c1de5849ade8aa23
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928873"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904079"
 ---
 # <a name="branding-guidelines-for-onenote-api-developers"></a>Правила использования фирменной символики для разработчиков API OneNote 
  
@@ -45,7 +45,7 @@ ms.locfileid: "27928873"
 
 Чтобы логотип выделялся на странице, необходимо оставить вокруг него определенную часть незаполненного пространства. Минимальный отступ сверху, снизу и по бокам логотипа должен соответствовать его высоте.
 
-![Логотип, который включает только значок: сиреневый цвет на белом и наоборот](images/onenotelogoclearspace.png)
+![Логотип, демонстрирующий очистку псаце с высотой символа](images/onenotelogoclearspace.png)
 
 
 <a name="size"></a>
@@ -58,7 +58,7 @@ ms.locfileid: "27928873"
  
 **Печать:**&nbsp;&nbsp;5 мм (0,2 дюйма) 
 
-![Логотип, который включает только значок: сиреневый цвет на белом и наоборот](images/onenotelogominsize.png)
+![Логотип, демонстрирующий минимальный размер экрана и печати](images/onenotelogominsize.png)
 
 
 <a name="color"></a>
@@ -71,7 +71,7 @@ ms.locfileid: "27928873"
 
 **Печать:**&nbsp;&nbsp;C75 M100 Y0 K0 
 
-  ![Логотип, который включает только значок (сиреневый цвет на белом и наоборот)](images/onenotelogobgs.png)
+  ![Logo швоинг предпочтительный цвет фирменного стиля с белым и цветным фоном для фирменного стиля](images/onenotelogobgs.png)
  
 В цветовой среде с ограниченным набором цветов логотип может отображаться черным цветом. Однако логотип никогда не должен быть серым.
 <!--or white?-->
@@ -170,7 +170,7 @@ ms.locfileid: "27928873"
 
 ![Хороший пример логотипа на упаковке](images/onenoteusagepackaging1.png)
 
-![Хороший пример логотипа на упаковке](images/onenoteusagepackaging2.png)
+![Другое представление хорошего примера логотипа в упаковке](images/onenoteusagepackaging2.png)
 
 
 Если у вас есть вопросы по этому руководству или вы создаете новые средства взаимодействия с использованием фирменной символики, представленной здесь, свяжитесь с нами по адресу [@onenotedev](https://twitter.com/onenotedev).
