@@ -2,19 +2,20 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Поиск сайтов SharePoint по ключевому слову
+title: Поиск сайтов
+description: Выполните поиск в клиенте SharePoint для сайтов, которые совпадают с предоставленными ключевыми словами.
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 03e5a43c80ff5107f4e3aca514b1b411d71eb61d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 48a479df2f91dd4d60455a26c4e16f561ea88f83
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482121"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904121"
 ---
 # <a name="search-for-sites"></a>Поиск сайтов
 
-Поиск [сайтов][], соответствующих указанным ключевым словам, в клиенте SharePoint.
+Выполните поиск в клиенте SharePoint для [сайтов][] , которые совпадают с предоставленными ключевыми словами.
 
 [сайтов]: ../resources/site.md
 
@@ -65,6 +66,7 @@ Content-type: application/json
   ]
 }
 ```
+>**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**. Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.
 
 <!-- {
   "type": "#page.annotation",
