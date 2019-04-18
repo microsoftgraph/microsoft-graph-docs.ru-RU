@@ -3,12 +3,12 @@ title: Отслеживание изменений в данных Microsoft Gra
 description: Запросы изменений позволяют приложениям обнаруживать новые, обновленные и удаленные сущности, не считывая целевой ресурс полностью при каждом запросе. Приложения Microsoft Graph могут использовать запросы изменений, чтобы эффективно синхронизировать изменения с локальным хранилищем данных.
 author: piotrci
 localization_priority: Priority
-ms.openlocfilehash: 77f5a4eae74e40655d858fb839697aca80851afb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.openlocfilehash: e0affa6f4e3edf1289d31422dcd5833a4d5b17ff
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27823868"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904051"
 ---
 # <a name="use-delta-query-to-track-changes-in-microsoft-graph-data"></a>Отслеживание изменений в данных Microsoft Graph с помощью разностного запроса
 
@@ -91,7 +91,7 @@ ms.locfileid: "27823868"
 | Элементы на диске\* | Функция [delta](/graph/api/driveitem-delta?view=graph-rest-1.0) ресурса [driveItem](/graph/api/resources/driveitem?view=graph-rest-1.0) |
 | Элементы Planner\*\* | Функция [delta](/graph/api/planneruser-list-delta?view=graph-rest-beta) всего сегмента ресурса [plannerUser](/graph/api/resources/planneruser?view=graph-rest-beta) (предварительный просмотр) |
 
-> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для Drive](/graph/api/item-delta?view=graph-rest-1.0).
+> \* Небольшие различия в использовании ресурсов OneDrive и других поддерживаемых ресурсов касаются синтаксиса. Разностный запрос для ресурсов drive будет обновлен в соответствии с запросами для других типов ресурсов.  Дополнительные сведения о текущем синтаксисе см. в статье [Отслеживание изменений для drive](/graph/api/driveitem-delta?view=graph-rest-1.0).
 
 > \*\* Шаблон использования ресурсов Planner незначительно отличается от шаблонов использования других поддерживаемых ресурсов.  Дополнительные сведения см. в [этой статье](/graph/api/planneruser-list-delta?view=graph-rest-beta).
 

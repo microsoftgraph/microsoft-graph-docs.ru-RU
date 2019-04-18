@@ -4,18 +4,18 @@ description: q=excelstarter).
 localization_priority: Priority
 author: lumine2008
 ms.prod: excel
-ms.openlocfilehash: 234130a8fa56dfdc078c694069a9fe879140d27f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954885"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904072"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Запись данных в книгу Excel с помощью Microsoft Graph
 
 REST API для Excel обеспечивает простой независимый от платформ способ отправки информации в книгу Excel. В этой статье рассказывается, как записать простые наборы данных в книгу Excel в трех платформах веб-разработки: ASP.NET, Angular и React. Примеры кода, о которых рассказывается в этой статье, см. на веб-странице [примеров по работе с Excel и Microsoft Graph для начинающих на веб-сайте GitHub](https://github.com/microsoftgraph?utf8=%E2%9C%93&q=excelstarter).
 
-> **Примечание.** Во всех трех примерах показано, как записывать данные в книгу Excel с именем **demo.xlxs**. Вы можете отправить книгу из этих примеров в свой OneDrive. Кроме того, для отправки файлов в OneDrive можно использовать Microsoft Graph. Если вы хотите изучить вызовы REST, вам потребуется отправить файл любого типа в корневую папку вашего OneDrive. См. [пример списка задач ASP.NET для REST API Microsoft Graph](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
+> **Примечание.** Во всех трех примерах показано, как записывать данные в книгу Excel с именем **demo.xlsx**. Вы можете отправить книгу из этих примеров в свой OneDrive. Кроме того, для отправки файлов в OneDrive можно использовать Microsoft Graph. Если вы хотите изучить вызовы REST, вам потребуется отправить файл любого типа в корневую папку вашего OneDrive. См. [пример списка задач ASP.NET для REST API Microsoft Graph](https://github.com/microsoftgraph/aspnet-todo-rest-sample).
 
 Все три примера работы с Excel для начинающих делают одно и то же: получают имя и адрес пользователя, вошедшего в систему, и добавляют эти сведения в новую строку в книге **demo.xlsx**. Вы можете изменить примеры так, чтобы код добавлял дополнительные строки путем простого добавления информации в двумерный массив, представляющий строку или строки, которые вы хотите добавить.
 

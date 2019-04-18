@@ -3,12 +3,12 @@ title: Известные проблемы с Microsoft Graph
 description: В этой статье описываются известные проблемы, связанные с Microsoft Graph. Сведения о последних обновлениях см. в журнале изменений Microsoft Graph.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: ce0246f20b12bee9f1e474455f87bb3fd9396aee
-ms.sourcegitcommit: d1a9e7c8e1376a99c5a5416257889ec113613a77
+ms.openlocfilehash: 12a24d57370dfd593c6056e30db0d956266b29a1
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30458633"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904058"
 ---
 # <a name="known-issues-with-microsoft-graph"></a>Известные проблемы с Microsoft Graph
 
@@ -293,7 +293,7 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 
 ### <a name="filtering-on-schema-extension-properties-not-supported-on-all-entity-types"></a>Фильтрация по свойствам расширения схемы поддерживается не для всех типов объектов
 
-Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов сущностей Outlook **contact**, **event**, **message** или **post**.
+Фильтрация по свойствам расширения схемы (с помощью выражения `$filter`) не поддерживается для типов объектов Outlook **contact**, **event**, **message** или **post**.
 
 ## <a name="json-batching"></a>Пакетная обработка JSON
 
