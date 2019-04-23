@@ -3,12 +3,12 @@ title: Журнал изменений Microsoft Graph
 description: Этот журнал содержит сведения об изменениях Microsoft Graph, в том числе API Microsoft Graph для конечных точек версии 1.0 и бета-версии.
 author: jthake-msft
 localization_priority: Priority
-ms.openlocfilehash: c99c3eb7cb7b1085e2609b460545c111537aeefe
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 746902cb9e091a5b206966c631d6b68930e76ff9
+ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31981070"
 ---
 # <a name="changelog-for-microsoft-graph"></a>Журнал изменений Microsoft Graph
 
@@ -17,6 +17,12 @@ ms.locfileid: "31889991"
 Дополнительные сведения об известных проблемах с API Microsoft Graph см. в статье [Известные проблемы](known-issues.md).
 
 ## <a name="april-2019"></a>Апрель 2019 г.
+### <a name="azure-ad-b2c-apis"></a>API Azure AD B2C
+
+| **Тип изменения** | **Версия**   | **Описание**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Дополнение | Бета |Представлен новый тип ресурса [trustFrameworkPolicy](/graph/api/resources/trustframeworkpolicy?view=graph-rest-beta). Этот тип ресурса поддерживает операции [создания](/graph/api/trustframework-post-trustframeworkpolicy?view=graph-rest-beta), [перечисления](/graph/api/trustframework-list-trustframeworkpolicies?view=graph-rest-beta), [получения](/graph/api/trustframeworkpolicy-get?view=graph-rest-beta), [обновления](/graph/api/trustframework-put-trustframeworkpolicy?view=graph-rest-beta) и [удаления](/graph/api/trustframerkpolicy-delete?view=graph-rest-beta).|
+
 
 ### <a name="directory-apis"></a>API каталогов
 
@@ -265,9 +271,9 @@ ms.locfileid: "31889991"
 | Дополнение        | бета       | Добавлены API действия безопасности для [API безопасности](/graph/api/resources/security-api-overview?view=graph-rest-beta), включающие указанные ниже ресурсы и операции:<br/>[securityAction](/graph/api/resources/securityaction?view=graph-rest-beta) (и связанные объекты)<br/> [Получение объекта securityAction](/graph/api/securityaction-get?view=graph-rest-beta)<br/>[Создание объекта securityAction](/graph/api/securityactions-post?view=graph-rest-beta)<br/>[Перечисление объектов securityAction](/graph/api/securityactions-list?view=graph-rest-beta)<br/>[Отмена объекта securityAction](/graph/api/securityaction-cancelsecurityaction?view=graph-rest-beta)
 | Дополнение        | бета        | Представлен новый сложный тип: коллекция [historyStates](/graph/api/resources/alerthistorystate?view=graph-rest-beta) для оповещений. </br>Добавлена функция [updateAlerts](/graph/api/alert-updatealerts?view=graph-rest-beta) для обновления нескольких оповещений в одном запросе. |
 
-## <a name="january-2019"></a>Январь 2019 г.
+## <a name="january-2019"></a>Январь 2019 г.
 
-### <a name="azure-ad-apis"></a>API Azure AD
+### <a name="azure-ad-b2c-apis"></a>API Azure AD B2C
 
 | **Тип изменения** | **Версия**   | **Описание**                          |
 | :-------------- | :------------ | :--------------------------------------- |
@@ -969,7 +975,7 @@ ms.locfileid: "31889991"
 |Дополнение         | Бета          | Добавлена операция [клонирования](/graph/api/team-clone?view=graph-rest-beta) команды. |
 |Дополнение         | Бета          | Добавлены интерфейсы API для добавления [приложений](/graph/api/resources/teamsapp?view=graph-rest-beta) в группы и удаления из них. |
 |Изменение|Бета|Обновлен путь к сущности [команды](/graph/api/resources/team?view=graph-rest-beta).|
-|Изменение|Бета|Обновлен путь к сущности [канала](/graph/api/resources/channel?view=graph-rest-beta).|
+|Изменение|бета|Обновлен путь к сущности [канала](/graph/api/resources/channel?view=graph-rest-beta).|
 
 
 ### <a name="privileged-identity-management-apis"></a>API управления привилегированными пользователями
@@ -2867,7 +2873,7 @@ ms.locfileid: "31889991"
 
 ### <a name="outlook-calendar"></a>Календарь Outlook
 
-| **Тип изменения** | **Версия** | **Описание**                          |
+| **Тип изменения** | **Version** | **Описание**                          |
 | :-------------- | :---------- | :--------------------------------------- |
 | Дополнение        | 1.0        | Добавлено свойство **onlineMeetingUrl** к ресурсу [event](/graph/api/resources/event?view=graph-rest-1.0). |
 | Дополнение        | Бета-версия        | Добавлено действие [forward](/graph/api/event-forward?view=graph-rest-beta) к ресурсу event. |
