@@ -4,12 +4,12 @@ description: Outlook — это центр обмена сообщениями 
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
-ms.openlocfilehash: 71bf282eea44edc0cb0ac38953e9b1e67bc05c39
-ms.sourcegitcommit: d9d8b908061b3680e8a52790a6c9aaf8e51ceea0
+ms.openlocfilehash: 5480d174b542766ba540af97a1af99456ad21cf2
+ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28327987"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31904023"
 ---
 # <a name="outlook-mail-api-overview"></a>Обзор API почты Outlook
 
