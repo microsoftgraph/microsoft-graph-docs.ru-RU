@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса synchronizationProgress
-description: Представляет ход выполнения synchronizationJob к завершению.
+title: Тип ресурса Синчронизатионпрогресс
+description: Представляет ход выполнения Синчронизатионжоб в сторону завершения.
 localization_priority: Normal
 ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453959"
 ---
-# <a name="synchronizationprogress-resource-type"></a><span data-ttu-id="d306a-103">Тип ресурса synchronizationProgress</span><span class="sxs-lookup"><span data-stu-id="d306a-103">synchronizationProgress resource type</span></span>
+# <a name="synchronizationprogress-resource-type"></a><span data-ttu-id="bc840-103">Тип ресурса Синчронизатионпрогресс</span><span class="sxs-lookup"><span data-stu-id="bc840-103">synchronizationProgress resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d306a-104">Представляет ход выполнения [synchronizationJob](synchronization-synchronizationjob.md) к завершению.</span><span class="sxs-lookup"><span data-stu-id="d306a-104">Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.</span></span>
+<span data-ttu-id="bc840-104">Представляет ход выполнения [синчронизатионжоб](synchronization-synchronizationjob.md) в сторону завершения.</span><span class="sxs-lookup"><span data-stu-id="bc840-104">Represents the progress of a [synchronizationJob](synchronization-synchronizationjob.md) toward completion.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d306a-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d306a-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="bc840-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="bc840-105">Properties</span></span>
 
-| <span data-ttu-id="d306a-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d306a-106">Property</span></span>                              | <span data-ttu-id="d306a-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d306a-107">Type</span></span>      | <span data-ttu-id="d306a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d306a-108">Description</span></span>    |
+| <span data-ttu-id="bc840-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="bc840-106">Property</span></span>                              | <span data-ttu-id="bc840-107">Тип</span><span class="sxs-lookup"><span data-stu-id="bc840-107">Type</span></span>      | <span data-ttu-id="bc840-108">Описание</span><span class="sxs-lookup"><span data-stu-id="bc840-108">Description</span></span>    |
 |:--------------------------------------|:----------|:---------------|
-|<span data-ttu-id="d306a-109">completedUnits</span><span class="sxs-lookup"><span data-stu-id="d306a-109">completedUnits</span></span>|<span data-ttu-id="d306a-110">Int32</span><span class="sxs-lookup"><span data-stu-id="d306a-110">Int32</span></span>|<span data-ttu-id="d306a-111">Числитель соотношение хода выполнения; Количество единиц уже обработки изменений.</span><span class="sxs-lookup"><span data-stu-id="d306a-111">The numerator of a progress ratio; the number of units of changes already processed.</span></span>|
-|<span data-ttu-id="d306a-112">progressObservationDateTime</span><span class="sxs-lookup"><span data-stu-id="d306a-112">progressObservationDateTime</span></span>|<span data-ttu-id="d306a-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d306a-113">DateTimeOffset</span></span>|<span data-ttu-id="d306a-114">Время наблюдения хода выполнения как смещение в минутах от времени UTC.</span><span class="sxs-lookup"><span data-stu-id="d306a-114">The time of a progress observation as an offset in minutes from UTC.</span></span>|
-|<span data-ttu-id="d306a-115">totalUnits</span><span class="sxs-lookup"><span data-stu-id="d306a-115">totalUnits</span></span>|<span data-ttu-id="d306a-116">Int32</span><span class="sxs-lookup"><span data-stu-id="d306a-116">Int32</span></span>|<span data-ttu-id="d306a-117">Делителя соотношение хода выполнения; Количество единиц изменения обработки для выполнения синхронизации.</span><span class="sxs-lookup"><span data-stu-id="d306a-117">The denominator of a progress ratio; a number of units of changes to be processed to accomplish synchronization.</span></span>|
-|<span data-ttu-id="d306a-118">единицы</span><span class="sxs-lookup"><span data-stu-id="d306a-118">units</span></span>|<span data-ttu-id="d306a-119">String</span><span class="sxs-lookup"><span data-stu-id="d306a-119">String</span></span>|<span data-ttu-id="d306a-120">Необязательное описание единицы измерения.</span><span class="sxs-lookup"><span data-stu-id="d306a-120">An optional description of the units.</span></span>|
+|<span data-ttu-id="bc840-109">Комплетедунитс</span><span class="sxs-lookup"><span data-stu-id="bc840-109">completedUnits</span></span>|<span data-ttu-id="bc840-110">Int32</span><span class="sxs-lookup"><span data-stu-id="bc840-110">Int32</span></span>|<span data-ttu-id="bc840-111">Числитель коэффициента выполнения; количество единиц изменений, которые уже обработаны.</span><span class="sxs-lookup"><span data-stu-id="bc840-111">The numerator of a progress ratio; the number of units of changes already processed.</span></span>|
+|<span data-ttu-id="bc840-112">Прогрессобсерватиондатетиме</span><span class="sxs-lookup"><span data-stu-id="bc840-112">progressObservationDateTime</span></span>|<span data-ttu-id="bc840-113">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bc840-113">DateTimeOffset</span></span>|<span data-ttu-id="bc840-114">Время отслеживания хода выполнения как смещение в минутах от времени в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="bc840-114">The time of a progress observation as an offset in minutes from UTC.</span></span>|
+|<span data-ttu-id="bc840-115">Тоталунитс</span><span class="sxs-lookup"><span data-stu-id="bc840-115">totalUnits</span></span>|<span data-ttu-id="bc840-116">Int32</span><span class="sxs-lookup"><span data-stu-id="bc840-116">Int32</span></span>|<span data-ttu-id="bc840-117">Знаменатель коэффициента выполнения; количество единиц изменений, которые необходимо обработать для выполнения синхронизации.</span><span class="sxs-lookup"><span data-stu-id="bc840-117">The denominator of a progress ratio; a number of units of changes to be processed to accomplish synchronization.</span></span>|
+|<span data-ttu-id="bc840-118">продукции</span><span class="sxs-lookup"><span data-stu-id="bc840-118">units</span></span>|<span data-ttu-id="bc840-119">Строка</span><span class="sxs-lookup"><span data-stu-id="bc840-119">String</span></span>|<span data-ttu-id="bc840-120">Необязательное описание единиц измерения.</span><span class="sxs-lookup"><span data-stu-id="bc840-120">An optional description of the units.</span></span>|
 
 <!-- The troubleshootingUrl property is missing a description -->
 
-## <a name="json-representation"></a><span data-ttu-id="d306a-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d306a-121">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bc840-121">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bc840-121">JSON representation</span></span>
 
-<span data-ttu-id="d306a-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d306a-122">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="bc840-122">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bc840-122">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

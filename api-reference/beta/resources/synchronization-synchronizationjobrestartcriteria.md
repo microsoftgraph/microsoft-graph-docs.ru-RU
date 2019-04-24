@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса synchronizationJobRestartCriteria
-description: 'Определяет область [synchronizationJob: перезапустите](../api/synchronization_synchronizationjob_restart.md) действие.'
+title: Тип ресурса Синчронизатионжобрестарткритериа
+description: 'Определяет область действия [синчронизатионжоб: Restart](../api/synchronization_synchronizationjob_restart.md) .'
 localization_priority: Normal
 ms.openlocfilehash: 1e6ac952808f80d191fc93e9a804411ec4459d4c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453618"
 ---
-# <a name="synchronizationjobrestartcriteria-resource-type"></a><span data-ttu-id="80f9a-103">Тип ресурса synchronizationJobRestartCriteria</span><span class="sxs-lookup"><span data-stu-id="80f9a-103">synchronizationJobRestartCriteria resource type</span></span>
+# <a name="synchronizationjobrestartcriteria-resource-type"></a><span data-ttu-id="d4f21-103">Тип ресурса Синчронизатионжобрестарткритериа</span><span class="sxs-lookup"><span data-stu-id="d4f21-103">synchronizationJobRestartCriteria resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="80f9a-104">Определяет область [synchronizationJob: перезапустите](../api/synchronization_synchronizationjob_restart.md) действие.</span><span class="sxs-lookup"><span data-stu-id="80f9a-104">Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action.</span></span>
+<span data-ttu-id="d4f21-104">Определяет область действия [синчронизатионжоб: Restart](../api/synchronization_synchronizationjob_restart.md) .</span><span class="sxs-lookup"><span data-stu-id="d4f21-104">Defines the scope of the [synchronizationJob: restart](../api/synchronization_synchronizationjob_restart.md) action.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="80f9a-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="80f9a-105">Properties</span></span>
-| <span data-ttu-id="80f9a-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="80f9a-106">Property</span></span>     | <span data-ttu-id="80f9a-107">Тип</span><span class="sxs-lookup"><span data-stu-id="80f9a-107">Type</span></span>   |<span data-ttu-id="80f9a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="80f9a-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="d4f21-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d4f21-105">Properties</span></span>
+| <span data-ttu-id="d4f21-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d4f21-106">Property</span></span>     | <span data-ttu-id="d4f21-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d4f21-107">Type</span></span>   |<span data-ttu-id="d4f21-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d4f21-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="80f9a-109">resetScope</span><span class="sxs-lookup"><span data-stu-id="80f9a-109">resetScope</span></span>|<span data-ttu-id="80f9a-110">String</span><span class="sxs-lookup"><span data-stu-id="80f9a-110">String</span></span>| <span data-ttu-id="80f9a-111">Разделенный запятыми сочетание следующих значений: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span><span class="sxs-lookup"><span data-stu-id="80f9a-111">Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span></span> <span data-ttu-id="80f9a-112">Использование `Full` Если вы хотите, чтобы все параметры.</span><span class="sxs-lookup"><span data-stu-id="80f9a-112">Use `Full` if you want all of the options.</span></span>|
+|<span data-ttu-id="d4f21-109">Ресетскопе</span><span class="sxs-lookup"><span data-stu-id="d4f21-109">resetScope</span></span>|<span data-ttu-id="d4f21-110">Строка</span><span class="sxs-lookup"><span data-stu-id="d4f21-110">String</span></span>| <span data-ttu-id="d4f21-111">Разделенная заПятыми комбинация следующих значений: `Full`, `QuarantineState` `Watermark`,, `Escrows`, `ConnectorDataStore`.</span><span class="sxs-lookup"><span data-stu-id="d4f21-111">Comma-separated combination of the following values: `Full`, `QuarantineState`, `Watermark`, `Escrows`, `ConnectorDataStore`.</span></span> <span data-ttu-id="d4f21-112">Используйте `Full` , если вы хотите использовать все параметры.</span><span class="sxs-lookup"><span data-stu-id="d4f21-112">Use `Full` if you want all of the options.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="80f9a-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="80f9a-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d4f21-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d4f21-113">JSON representation</span></span>
 
-<span data-ttu-id="80f9a-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="80f9a-114">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d4f21-114">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d4f21-114">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

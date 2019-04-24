@@ -6,19 +6,19 @@ title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453611"
 ---
-# <a name="webpart-resource"></a><span data-ttu-id="cda0b-102">веб-часть ресурсов</span><span class="sxs-lookup"><span data-stu-id="cda0b-102">webPart resource</span></span>
+# <a name="webpart-resource"></a><span data-ttu-id="2bd15-102">ресурс webPart</span><span class="sxs-lookup"><span data-stu-id="2bd15-102">webPart resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cda0b-103">Тип и отображение сведений о веб-части на [sitePage](sitepage.md)представляет ресурс **веб-части** .</span><span class="sxs-lookup"><span data-stu-id="cda0b-103">The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).</span></span>
+<span data-ttu-id="2bd15-103">Ресурс **WebPart** представляет тип и сведения о визуализации веб-части в [ситепаже](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="2bd15-103">The **webPart** resource represents type and rendering information for a web part on a [sitePage](sitepage.md).</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="cda0b-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cda0b-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="2bd15-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2bd15-104">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,20 +35,21 @@ ms.locfileid: "29640177"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="cda0b-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cda0b-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="2bd15-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="2bd15-105">Properties</span></span>
 
-| <span data-ttu-id="cda0b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cda0b-106">Property</span></span>                | <span data-ttu-id="cda0b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cda0b-107">Type</span></span>             | <span data-ttu-id="cda0b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cda0b-108">Description</span></span>
+| <span data-ttu-id="2bd15-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="2bd15-106">Property</span></span>                | <span data-ttu-id="2bd15-107">Тип</span><span class="sxs-lookup"><span data-stu-id="2bd15-107">Type</span></span>             | <span data-ttu-id="2bd15-108">Описание</span><span class="sxs-lookup"><span data-stu-id="2bd15-108">Description</span></span>
 |:------------------------|:-----------------|:----------------------------------
-| <span data-ttu-id="cda0b-109">**type**</span><span class="sxs-lookup"><span data-stu-id="cda0b-109">**type**</span></span>                | <span data-ttu-id="cda0b-110">String</span><span class="sxs-lookup"><span data-stu-id="cda0b-110">String</span></span>           | <span data-ttu-id="cda0b-111">Уникальный идентификатор, определяющий тип веб-части.</span><span class="sxs-lookup"><span data-stu-id="cda0b-111">A unique identifier specifying the webPart type.</span></span> <span data-ttu-id="cda0b-112">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="cda0b-112">Read-only.</span></span>
-| <span data-ttu-id="cda0b-113">**data**</span><span class="sxs-lookup"><span data-stu-id="cda0b-113">**data**</span></span>                | <span data-ttu-id="cda0b-114">[sitePageData][]</span><span class="sxs-lookup"><span data-stu-id="cda0b-114">[sitePageData][]</span></span> | <span data-ttu-id="cda0b-115">Обязательные свойства для веб-части (зависит от веб-части)</span><span class="sxs-lookup"><span data-stu-id="cda0b-115">The required properties for the webPart (varies by webPart)</span></span>
+| <span data-ttu-id="2bd15-109">**type**</span><span class="sxs-lookup"><span data-stu-id="2bd15-109">**type**</span></span>                | <span data-ttu-id="2bd15-110">Строка</span><span class="sxs-lookup"><span data-stu-id="2bd15-110">String</span></span>           | <span data-ttu-id="2bd15-111">Уникальный идентификатор, указывающий тип веб-части.</span><span class="sxs-lookup"><span data-stu-id="2bd15-111">A unique identifier specifying the webPart type.</span></span> <span data-ttu-id="2bd15-112">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="2bd15-112">Read-only.</span></span>
+| <span data-ttu-id="2bd15-113">**data**</span><span class="sxs-lookup"><span data-stu-id="2bd15-113">**data**</span></span>                | <span data-ttu-id="2bd15-114">[Ситепажедата][]</span><span class="sxs-lookup"><span data-stu-id="2bd15-114">[sitePageData][]</span></span> | <span data-ttu-id="2bd15-115">Обязательные свойства веб-части (зависит от веб-части)</span><span class="sxs-lookup"><span data-stu-id="2bd15-115">The required properties for the webPart (varies by webPart)</span></span>
 
+[Ситепажедата]: sitepagedata.md
 [sitePageData]: sitepagedata.md
 
-## <a name="remarks"></a><span data-ttu-id="cda0b-117">Замечания</span><span class="sxs-lookup"><span data-stu-id="cda0b-117">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="2bd15-117">Комментарии</span><span class="sxs-lookup"><span data-stu-id="2bd15-117">Remarks</span></span>
 
-<span data-ttu-id="cda0b-118">Веб-части можно определить собственные необходимые свойства в области **данных**.</span><span class="sxs-lookup"><span data-stu-id="cda0b-118">Web parts can define their own required properties under **data**.</span></span>
+<span data-ttu-id="2bd15-118">Веб-части могут определять собственные обязательные свойства в разделе **Data**.</span><span class="sxs-lookup"><span data-stu-id="2bd15-118">Web parts can define their own required properties under **data**.</span></span>
 
-<span data-ttu-id="cda0b-119">Дополнительные сведения о страницах можно [sitePage](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="cda0b-119">For more information about pages, see [sitePage](sitepage.md).</span></span>
+<span data-ttu-id="2bd15-119">Более подробную информацию о страницах можно узнать в статье [ситепаже](sitepage.md).</span><span class="sxs-lookup"><span data-stu-id="2bd15-119">For more information about pages, see [sitePage](sitepage.md).</span></span>
 <!--
 {
   "type": "#page.annotation",

@@ -1,49 +1,49 @@
 ---
-title: Добавление соединителя connectorGroup
-description: Используйте этот интерфейс API для добавления нового connectorGroup соединитель.
+title: Добавление соединителя в Коннекторграуп
+description: Используйте этот API, чтобы добавить соединитель для нового Коннекторграуп.
 localization_priority: Normal
 ms.openlocfilehash: 097f24233ec1c540885d67b60a4b471ff1c64f65
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456173"
 ---
-# <a name="add-connector-to-connectorgroup"></a><span data-ttu-id="ebcd1-103">Добавление соединителя connectorGroup</span><span class="sxs-lookup"><span data-stu-id="ebcd1-103">Add Connector to connectorGroup</span></span>
+# <a name="add-connector-to-connectorgroup"></a><span data-ttu-id="3e3ad-103">Добавление соединителя в Коннекторграуп</span><span class="sxs-lookup"><span data-stu-id="3e3ad-103">Add Connector to connectorGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebcd1-104">Используйте этот интерфейс API для добавления нового connectorGroup соединитель.</span><span class="sxs-lookup"><span data-stu-id="ebcd1-104">Use this API to add a connector to a new connectorGroup.</span></span>
-## <a name="permissions"></a><span data-ttu-id="ebcd1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ebcd1-105">Permissions</span></span>
-<span data-ttu-id="ebcd1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ebcd1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3e3ad-104">Используйте этот API, чтобы добавить соединитель для нового Коннекторграуп.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-104">Use this API to add a connector to a new connectorGroup.</span></span>
+## <a name="permissions"></a><span data-ttu-id="3e3ad-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3e3ad-105">Permissions</span></span>
+<span data-ttu-id="3e3ad-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3e3ad-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="ebcd1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ebcd1-108">Permission type</span></span>      | <span data-ttu-id="ebcd1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ebcd1-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3e3ad-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3e3ad-108">Permission type</span></span>      | <span data-ttu-id="3e3ad-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3e3ad-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="ebcd1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ebcd1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="ebcd1-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="ebcd1-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="ebcd1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ebcd1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ebcd1-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="ebcd1-113">Not supported.</span></span>    |
-|<span data-ttu-id="ebcd1-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ebcd1-114">Application</span></span> | <span data-ttu-id="ebcd1-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ebcd1-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="3e3ad-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3e3ad-110">Delegated (work or school account)</span></span> | <span data-ttu-id="3e3ad-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="3e3ad-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="3e3ad-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3e3ad-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3e3ad-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-113">Not supported.</span></span>    |
+|<span data-ttu-id="3e3ad-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3e3ad-114">Application</span></span> | <span data-ttu-id="3e3ad-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3e3ad-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="ebcd1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ebcd1-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3e3ad-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3e3ad-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /connectors/{id}/memberOf
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="ebcd1-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="ebcd1-117">Request headers</span></span>
-| <span data-ttu-id="ebcd1-118">Имя</span><span class="sxs-lookup"><span data-stu-id="ebcd1-118">Name</span></span>       | <span data-ttu-id="ebcd1-119">Описание</span><span class="sxs-lookup"><span data-stu-id="ebcd1-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="3e3ad-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3e3ad-117">Request headers</span></span>
+| <span data-ttu-id="3e3ad-118">Имя</span><span class="sxs-lookup"><span data-stu-id="3e3ad-118">Name</span></span>       | <span data-ttu-id="3e3ad-119">Описание</span><span class="sxs-lookup"><span data-stu-id="3e3ad-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="ebcd1-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="ebcd1-120">Authorization</span></span>  | <span data-ttu-id="ebcd1-121">Токен носителя.</span><span class="sxs-lookup"><span data-stu-id="ebcd1-121">Bearer.</span></span> <span data-ttu-id="ebcd1-122">Обязательный</span><span class="sxs-lookup"><span data-stu-id="ebcd1-122">Required</span></span>|
+| <span data-ttu-id="3e3ad-120">Authorization</span><span class="sxs-lookup"><span data-stu-id="3e3ad-120">Authorization</span></span>  | <span data-ttu-id="3e3ad-121">Носителя.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-121">Bearer.</span></span> <span data-ttu-id="3e3ad-122">Обязательно</span><span class="sxs-lookup"><span data-stu-id="3e3ad-122">Required</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="ebcd1-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="ebcd1-123">Request body</span></span>
-<span data-ttu-id="ebcd1-124">В тексте запроса укажите представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="ebcd1-124">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="3e3ad-123">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3e3ad-123">Request body</span></span>
+<span data-ttu-id="3e3ad-124">В тексте запроса добавьте представление объекта [Коннекторграуп](../resources/connectorgroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-124">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="ebcd1-125">Ответ</span><span class="sxs-lookup"><span data-stu-id="ebcd1-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3e3ad-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="3e3ad-125">Response</span></span>
 
-<span data-ttu-id="ebcd1-126">Успешно завершена, этот метод возвращает `201 Created` объект [connectorGroup](../resources/connectorgroup.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="ebcd1-126">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
+<span data-ttu-id="3e3ad-126">В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-126">If successful, this method returns `201 Created` response code and [connectorGroup](../resources/connectorgroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="ebcd1-127">Пример</span><span class="sxs-lookup"><span data-stu-id="ebcd1-127">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="ebcd1-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="ebcd1-128">Request</span></span>
-<span data-ttu-id="ebcd1-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="ebcd1-129">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="3e3ad-127">Пример</span><span class="sxs-lookup"><span data-stu-id="3e3ad-127">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="3e3ad-128">Запрос</span><span class="sxs-lookup"><span data-stu-id="3e3ad-128">Request</span></span>
+<span data-ttu-id="3e3ad-129">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-129">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_connectorgroup_from_connector"
@@ -57,10 +57,9 @@ Content-length: 99
   "@odata.id": "https://graph.microsoft.com/{ver}/connectorGroups/{id}"
 }
 ```
-<span data-ttu-id="ebcd1-130">В тексте запроса укажите представление JSON объекта [connectorGroup](../resources/connectorgroup.md) .</span><span class="sxs-lookup"><span data-stu-id="ebcd1-130">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="ebcd1-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="ebcd1-131">Response</span></span>
-<span data-ttu-id="ebcd1-p103">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="ebcd1-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="3e3ad-130">В тексте запроса добавьте представление объекта [Коннекторграуп](../resources/connectorgroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-130">In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="3e3ad-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="3e3ad-131">Response</span></span>
+<span data-ttu-id="3e3ad-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3e3ad-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -6,29 +6,29 @@ title: Извлечение файлов
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: bd69a02a3c243a86d7f9d05b54eb3fac00eeee88
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481295"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454731"
 ---
-# <a name="check-out-a-driveitem-resource"></a><span data-ttu-id="54356-102">Получение ресурса DriveItem для изменения</span><span class="sxs-lookup"><span data-stu-id="54356-102">Check-out a DriveItem resource</span></span>
+# <a name="check-out-a-driveitem-resource"></a><span data-ttu-id="ef52b-102">Получение ресурса DriveItem для изменения</span><span class="sxs-lookup"><span data-stu-id="ef52b-102">Check-out a DriveItem resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="54356-103">Вы можете получить ресурс driveItem для изменения, чтобы другие пользователи не могли редактировать документ, а внесенные вами изменения не отображались, пока документ не будет [записан после изменения](driveitem-checkin.md).</span><span class="sxs-lookup"><span data-stu-id="54356-103">Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).</span></span>
+<span data-ttu-id="ef52b-103">Вы можете получить ресурс driveItem для изменения, чтобы другие пользователи не могли редактировать документ, а внесенные вами изменения не отображались, пока документ не будет [записан после изменения](driveitem-checkin.md).</span><span class="sxs-lookup"><span data-stu-id="ef52b-103">Check-out a driveItem resource to prevent others from editing the document, and your changes from being visible until the documented is [checked-in](driveitem-checkin.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="54356-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="54356-104">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="ef52b-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="ef52b-104">Permissions</span></span>
 
-<span data-ttu-id="54356-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="54356-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="ef52b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="ef52b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="54356-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="54356-107">Permission type</span></span>      | <span data-ttu-id="54356-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="54356-108">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="ef52b-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="ef52b-107">Permission type</span></span>      | <span data-ttu-id="ef52b-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="ef52b-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="54356-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="54356-109">Delegated (work or school account)</span></span> | <span data-ttu-id="54356-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54356-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="54356-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="54356-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="54356-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54356-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="54356-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="54356-113">Application</span></span> | <span data-ttu-id="54356-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="54356-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="ef52b-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="ef52b-109">Delegated (work or school account)</span></span> | <span data-ttu-id="ef52b-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef52b-110">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ef52b-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="ef52b-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="ef52b-112">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef52b-112">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="ef52b-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="ef52b-113">Application</span></span> | <span data-ttu-id="ef52b-114">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="ef52b-114">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="54356-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="54356-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="ef52b-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="ef52b-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -40,13 +40,13 @@ POST /sites/{siteId}/drive/items/{itemId}/checkout
 POST /users/{userId}/drive/items/{itemId}/checkout
 ```
 
-### <a name="request-body"></a><span data-ttu-id="54356-116">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="54356-116">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="ef52b-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="ef52b-116">Request body</span></span>
 
-<span data-ttu-id="54356-117">Тело запроса не требуется.</span><span class="sxs-lookup"><span data-stu-id="54356-117">No request body is required.</span></span>
+<span data-ttu-id="ef52b-117">Тело запроса не требуется.</span><span class="sxs-lookup"><span data-stu-id="ef52b-117">No request body is required.</span></span>
 
-## <a name="example"></a><span data-ttu-id="54356-118">Пример</span><span class="sxs-lookup"><span data-stu-id="54356-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="ef52b-118">Пример</span><span class="sxs-lookup"><span data-stu-id="ef52b-118">Example</span></span>
 
-<span data-ttu-id="54356-119">В этом примере показано, как записать после изменения файл, указанный по `{item-id}`.</span><span class="sxs-lookup"><span data-stu-id="54356-119">This example checks out a file identified by `{item-id}`.</span></span>
+<span data-ttu-id="ef52b-119">В этом примере показано, как записать после изменения файл, указанный по `{item-id}`.</span><span class="sxs-lookup"><span data-stu-id="ef52b-119">This example checks out a file identified by `{item-id}`.</span></span>
 
 <!-- { "blockType": "request", "name": "checkout-item", "scopes": "files.readwrite", "target": "action" } -->
 
@@ -54,9 +54,9 @@ POST /users/{userId}/drive/items/{itemId}/checkout
 POST /drives/{drive-id}/items/{item-id}/checkout
 ```
 
-## <a name="response"></a><span data-ttu-id="54356-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="54356-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="ef52b-120">Отклик</span><span class="sxs-lookup"><span data-stu-id="ef52b-120">Response</span></span>
 
-<span data-ttu-id="54356-121">При успешном выполнении вызова API возвращается отклик `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="54356-121">If successful, the API call returns a `204 No content`.</span></span>
+<span data-ttu-id="ef52b-121">При успешном выполнении вызова API возвращается отклик `204 No content`.</span><span class="sxs-lookup"><span data-stu-id="ef52b-121">If successful, the API call returns a `204 No content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 
@@ -64,7 +64,7 @@ POST /drives/{drive-id}/items/{item-id}/checkout
 HTTP/1.1 204 No content
 ```
 
-### <a name="remarks"></a><span data-ttu-id="54356-122">Замечания</span><span class="sxs-lookup"><span data-stu-id="54356-122">Remarks</span></span>
+### <a name="remarks"></a><span data-ttu-id="ef52b-122">Замечания</span><span class="sxs-lookup"><span data-stu-id="ef52b-122">Remarks</span></span>
 
 
 [item-resource]: ../resources/driveitem.md

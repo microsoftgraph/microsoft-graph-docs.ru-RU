@@ -5,49 +5,49 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42af211afb9f508e9033f3e77f2b1dd14aa484d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520734"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455186"
 ---
-# <a name="restore-deleted-item"></a><span data-ttu-id="262f1-103">Восстановление удаленного элемента</span><span class="sxs-lookup"><span data-stu-id="262f1-103">Restore deleted item</span></span>
+# <a name="restore-deleted-item"></a><span data-ttu-id="96d33-103">Восстановление удаленного элемента</span><span class="sxs-lookup"><span data-stu-id="96d33-103">Restore deleted item</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="262f1-104">Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="262f1-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
+<span data-ttu-id="96d33-104">Восстановление недавно удаленного элемента из контейнера для [удаленных элементов](../resources/directory.md).</span><span class="sxs-lookup"><span data-stu-id="96d33-104">Restores a recently deleted item from [deleted items](../resources/directory.md).</span></span> 
 
-<span data-ttu-id="262f1-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="262f1-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="262f1-106">Вы можете полностью восстановить случайно удаленный элемент.</span><span class="sxs-lookup"><span data-stu-id="262f1-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
+<span data-ttu-id="96d33-105">В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md).</span><span class="sxs-lookup"><span data-stu-id="96d33-105">Currently, deleted items functionality is only supported for the [group](../resources/group.md) and [user](../resources/user.md) resources.</span></span> <span data-ttu-id="96d33-106">Вы можете полностью восстановить случайно удаленный элемент.</span><span class="sxs-lookup"><span data-stu-id="96d33-106">If an item was accidentally deleted, you can fully restore the item.</span></span>
 
-<span data-ttu-id="262f1-107">Удаленный элемент можно восстановить в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="262f1-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="262f1-108">Через 30 дней элемент удаляется без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="262f1-108">After 30 days, the item is permanently deleted.</span></span>
+<span data-ttu-id="96d33-107">Удаленный элемент можно восстановить в течение 30 дней.</span><span class="sxs-lookup"><span data-stu-id="96d33-107">A recently deleted item will remain available for up to 30 days.</span></span> <span data-ttu-id="96d33-108">Через 30 дней элемент удаляется без возможности восстановления.</span><span class="sxs-lookup"><span data-stu-id="96d33-108">After 30 days, the item is permanently deleted.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="262f1-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="262f1-109">Permissions</span></span>
-<span data-ttu-id="262f1-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="262f1-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="96d33-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="96d33-109">Permissions</span></span>
+<span data-ttu-id="96d33-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="96d33-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-* <span data-ttu-id="262f1-112">Для пользователей: User.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="262f1-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
-* <span data-ttu-id="262f1-113">Для групп: Group.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="262f1-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="96d33-112">Для пользователей: User. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="96d33-112">For users: User.ReadWrite.All, Directory.AccessAsUser.All</span></span>
+* <span data-ttu-id="96d33-113">Для групп: Group. ReadWrite. ALL, Directory. AccessAsUser. ALL</span><span class="sxs-lookup"><span data-stu-id="96d33-113">For groups: Group.ReadWrite.All, Directory.AccessAsUser.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="262f1-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="262f1-114">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="96d33-114">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="96d33-114">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /directory/deleteditems/{id}/restore
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="262f1-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="262f1-115">Request headers</span></span>
-| <span data-ttu-id="262f1-116">Имя</span><span class="sxs-lookup"><span data-stu-id="262f1-116">Name</span></span>       | <span data-ttu-id="262f1-117">Описание</span><span class="sxs-lookup"><span data-stu-id="262f1-117">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="96d33-115">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="96d33-115">Request headers</span></span>
+| <span data-ttu-id="96d33-116">Имя</span><span class="sxs-lookup"><span data-stu-id="96d33-116">Name</span></span>       | <span data-ttu-id="96d33-117">Описание</span><span class="sxs-lookup"><span data-stu-id="96d33-117">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="262f1-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="262f1-118">Authorization</span></span>  | <span data-ttu-id="262f1-119">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="262f1-119">Bearer &lt;code&gt; *Required*</span></span>|
-| <span data-ttu-id="262f1-120">Accept</span><span class="sxs-lookup"><span data-stu-id="262f1-120">Accept</span></span> | <span data-ttu-id="262f1-121">application/json</span><span class="sxs-lookup"><span data-stu-id="262f1-121">application/json</span></span> |
+| <span data-ttu-id="96d33-118">Authorization</span><span class="sxs-lookup"><span data-stu-id="96d33-118">Authorization</span></span>  | <span data-ttu-id="96d33-119">Bearer &lt;code&gt; *Обязательный*.</span><span class="sxs-lookup"><span data-stu-id="96d33-119">Bearer &lt;code&gt; *Required*</span></span>|
+| <span data-ttu-id="96d33-120">Accept</span><span class="sxs-lookup"><span data-stu-id="96d33-120">Accept</span></span> | <span data-ttu-id="96d33-121">application/json</span><span class="sxs-lookup"><span data-stu-id="96d33-121">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="262f1-122">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="262f1-122">Request body</span></span>
-<span data-ttu-id="262f1-123">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="262f1-123">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="96d33-122">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="96d33-122">Request body</span></span>
+<span data-ttu-id="96d33-123">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="96d33-123">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="262f1-124">Ответ</span><span class="sxs-lookup"><span data-stu-id="262f1-124">Response</span></span>
+## <a name="response"></a><span data-ttu-id="96d33-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="96d33-124">Response</span></span>
 
-<span data-ttu-id="262f1-125">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="262f1-125">If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
+<span data-ttu-id="96d33-125">В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="96d33-125">If successful, this method returns `200 OK` response code and [directoryObject](../resources/directoryobject.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="262f1-126">Пример</span><span class="sxs-lookup"><span data-stu-id="262f1-126">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="262f1-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="262f1-127">Request</span></span>
+## <a name="example"></a><span data-ttu-id="96d33-126">Пример</span><span class="sxs-lookup"><span data-stu-id="96d33-126">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="96d33-127">Запрос</span><span class="sxs-lookup"><span data-stu-id="96d33-127">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -56,9 +56,9 @@ POST /directory/deleteditems/{id}/restore
 ```http
 POST https://graph.microsoft.com/beta/directory/deleteditems/46cc6179-19d0-473e-97ad-6ff84347bbbb/restore
 ```
-<span data-ttu-id="262f1-128">Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="262f1-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="262f1-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="262f1-129">Response</span></span>
-<span data-ttu-id="262f1-p104">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="262f1-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="96d33-128">Предоставьте в тексте запроса описание объекта [directoryObject](../resources/directoryobject.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="96d33-128">In the request body, supply a JSON representation of [directoryObject](../resources/directoryobject.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="96d33-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="96d33-129">Response</span></span>
+<span data-ttu-id="96d33-p104">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="96d33-p104">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
