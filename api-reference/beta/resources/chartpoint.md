@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4fd50e2e0b0f289f719dd6636eab16544e6a80f5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641969"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460921"
 ---
 # <a name="chartpoint-resource-type"></a>Тип ресурса ChartPoint
 
@@ -23,16 +23,16 @@ ms.locfileid: "29641969"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartPoint](../api/chartpoint-get.md) | [ChartPoint](chartpoint.md) |Чтение свойств и связей объекта chartPoint.|
-|[List](../api/chartpoint-list.md) | Коллекция объектов [ChartPoint](chartpoint.md) |Получение коллекции объектов chartPoint. |
+|[Список](../api/chartpoint-list.md) | Коллекция объектов [ChartPoint](chartpoint.md) |Получение коллекции объектов chartPoint. |
 |[Itemat](../api/chartpointscollection-itemat.md)|[ChartPoint](chartpoint.md)|Получение точки на основании ее положения в ряду.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|value|object|Возвращает значение точки диаграммы. Только для чтения.|
+|значение|object|Возвращает значение точки диаграммы. Только для чтения.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartPointFormat](chartpointformat.md)|Инкапсулирует свойства формата точки диаграммы. Только для чтения.|
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 6422cd3f40270f6502a58551e6c5c1b739219e00
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30154994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483168"
 ---
 # <a name="updatepriorities-action"></a>Действие updatePriorities
 
@@ -40,8 +40,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -56,7 +55,7 @@ POST /officeConfiguration/clientConfigurations/microsoft.management.services.api
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения это действие возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -79,8 +78,8 @@ Content-length: 143
 }
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 ```

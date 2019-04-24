@@ -1,21 +1,21 @@
 ---
-title: 'Вызовите: Включение звука'
-description: Позволяет приложениям включить сам.
+title: 'вызов: включение звука'
+description: Позволяет приложению включать и отключать микрофон.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4fce2bb622a7780fde9b95b64969b234a53e3be3
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462411"
 ---
-# <a name="call-unmute"></a>Вызовите: Включение звука
+# <a name="call-unmute"></a>вызов: включение звука
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Позволяет приложениям включить сам.
+Позволяет приложению включать и отключать микрофон.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/unmute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|ClientContext|String|Контекст клиента.|
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.

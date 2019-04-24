@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6b83be788af46e781706718e43cc68b39a75f79d
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463511"
 ---
 # <a name="windowsmobilemsi-resource-type"></a>Тип ресурса windowsMobileMSI
 
@@ -25,11 +25,11 @@ ms.locfileid: "31774276"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов windowsMobileMSI](../api/intune-apps-windowsmobilemsi-list.md)|Коллекция [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Список свойств и связей объектов [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
-|[Get windowsMobileMSI](../api/intune-apps-windowsmobilemsi-get.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Чтение свойств и связей объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
-|[Create windowsMobileMSI](../api/intune-apps-windowsmobilemsi-create.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Создание объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
-|[Delete windowsMobileMSI](../api/intune-apps-windowsmobilemsi-delete.md)|None|Удаление экземпляра [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
-|[Update windowsMobileMSI](../api/intune-apps-windowsmobilemsi-update.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Обновление свойств объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Перечисление windowsMobileMSIs](../api/intune-apps-windowsmobilemsi-list.md)|Коллекция [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Список свойств и связей объектов [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Получение windowsMobileMSI](../api/intune-apps-windowsmobilemsi-get.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|Считывание свойств и связей объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Создание windowsMobileMSI](../api/intune-apps-windowsmobilemsi-create.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|Создание объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Удаление windowsMobileMSI](../api/intune-apps-windowsmobilemsi-delete.md)|None|Удаление экземпляра [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
+|[Обновление windowsMobileMSI](../api/intune-apps-windowsmobilemsi-update.md)|[windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md)|Обновление свойств объекта [windowsMobileMSI](../resources/intune-apps-windowsmobilemsi.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -50,7 +50,7 @@ ms.locfileid: "31774276"
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |committedContentVersion|String|Внутренняя версия подтвержденного содержимого. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
 |fileName|String|Имя основного файла бизнес-приложения. Наследуется от [mobileLobApp](../resources/intune-apps-mobilelobapp.md).|
@@ -60,14 +60,14 @@ ms.locfileid: "31774276"
 |productVersion|String|Версия бизнес-приложения, к которому применяется MSI Windows Mobile.|
 |ignoreVersionDetection|Boolean|Логическое значение, позволяющее разрешить или запретить поиск установленного приложения по его версии. Задайте значение true для бизнес-приложений MSI для Windows Mobile с функцией самостоятельного обновления.|
 |identityVersion|String|Версия удостоверения.|
-|useDeviceContext|Boolean|Указывает, следует ли установить MSI с двойным режимом в контексте устройства. Если задано значение true, приложение будет установлено для всех пользователей. Если задано значение false, приложение будет установлено для каждого пользователя. Если значение равно null, служба будет использовать стандартный контекст установки пакета MSI. В случае с двойным режимом MSI это значение по умолчанию будет иметь значение "на пользователя".  Не может быть задано для приложений с несдвоенным режимом.  После первоначального создания приложения его невозможно изменить.|
+|useDeviceContext|Логический|Указывает, следует ли установить MSI с двойным режимом в контексте устройства. Если задано значение true, приложение будет установлено для всех пользователей. Если задано значение false, приложение будет установлено для каждого пользователя. Если значение равно null, служба будет использовать стандартный контекст установки пакета MSI. В случае с двойным режимом MSI это значение по умолчанию будет иметь значение "на пользователя".  Не может быть задано для приложений с несдвоенным режимом.  После первоначального создания приложения его невозможно изменить.|
 
 ## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

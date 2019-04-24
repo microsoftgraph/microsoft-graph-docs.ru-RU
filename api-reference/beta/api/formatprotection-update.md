@@ -3,11 +3,11 @@ title: Обновление объекта FormatProtection
 description: Обновление свойств объекта FormatProtection.
 localization_priority: Normal
 ms.openlocfilehash: f1ee62cf4c483c821d80de42dc8645f9cda2bdeb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520531"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463973"
 ---
 # <a name="update-formatprotection"></a>Обновление объекта FormatProtection
 
@@ -40,7 +40,7 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/protection
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|formulaHidden|boolean|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
+|formulaHidden|логический|Указывает, скрывает ли Excel формулу для ячеек в диапазоне. Значение NULL указывает, что для всего диапазона не задан единый параметр скрытия формулы.|
 |locked|boolean|Указывает, блокирует ли Excel ячейки в объекте. Значение NULL указывает, что для всего диапазона не задан единый параметр блокировки.|
 
 ## <a name="response"></a>Отклик
@@ -63,9 +63,8 @@ Content-length: 45
   "formulaHidden": true
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
