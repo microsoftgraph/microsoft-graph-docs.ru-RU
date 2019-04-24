@@ -1,21 +1,21 @@
 ---
-title: Список общих
-description: Вычисляемые представление, которое возвращает список файлов, совместно с пользователем.
+title: Список "Общие"
+description: Вычисляемое представление, которое возвращает список файлов, к которым предоставлен доступ пользователю.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 2eef2a9b306984a8ad05bcf8fefca2458d609ab1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 009d9f65b5403139235e5f9afa932ebbe54ff9d4
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500388"
 ---
-# <a name="list-shared"></a>Список общих
+# <a name="list-shared"></a>Список "Общие"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемые представление, которое возвращает список файлов, совместно с пользователем.
+Вычисляемое представление, которое возвращает список файлов, к которым предоставлен доступ пользователю.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,25 +30,25 @@ ms.locfileid: "29517353"
 ```http
 GET /me/insights/shared
 ```
-Запросите с «идентификатор пользователя» или «userPrincipalName» доступно только для пользователя, а не по кому-либо:
+Запрос с идентификатором пользователя или userPrincipalName доступен только пользователю, а не другим пользователям:
 ```http
-GET /users/<id | userPrincipalName>/insights/shared
+GET /users/{id | userPrincipalName}/insights/shared
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Можно использовать `$filter` параметр для фильтрации общих элементов запроса. Например на основе типа:
+С помощью параметра `$filter` запроса можно фильтровать общие элементы. Например, на основе типа:
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-В разделе Доступные типы контейнеров и типов можно фильтровать по в [resourceVisualization](../resources/insights-resourcevisualization.md).
+Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
 
-Вы также можете получить файлы, общие для определенного пользователя. Например, путем указания `lastshared/sharedby/address` свойства:
+Вы также можете получить файлы, к которым предоставлен доступ конкретному пользователю. Например, указав `lastshared/sharedby/address` свойство:
 
 `https://graph.microsoft.com/beta/me/insights/shared?$filter=lastshared/sharedby/address eq 'kellygraham@contoso.com'`
 
-Сложный тип [sharingDetail](../resources/insights-sharingdetail.md) см.
+Просмотр сложного типа [шарингдетаил](../resources/insights-sharingdetail.md) .
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -58,11 +58,11 @@ GET /users/<id | userPrincipalName>/insights/shared
 | Accept  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и список [общих](../resources/insights-shared.md) элементов в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [общих](../resources/insights-shared.md) элементов в теле отклика.
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
@@ -72,10 +72,9 @@ GET /users/<id | userPrincipalName>/insights/shared
 GET https://graph.microsoft.com/beta/me/insights/shared
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 {
     "value": [
@@ -112,8 +111,8 @@ GET https://graph.microsoft.com/beta/me/insights/shared
 }
 ```
 
-### <a name="expanding-resource"></a>Развертывание ресурсов
-Можно развернуть ссылается общих сведений об ресурса.
+### <a name="expanding-resource"></a>Расширение ресурса
+Ресурс, на который ссылается общая аналитика, может быть расширен.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/shared/{id}/resource
 ```

@@ -1,32 +1,32 @@
 ---
 title: Получение governanceRoleAssignmentRequest
-description: 'Получите governanceRoleAssignmentRequest. '
+description: 'Получение governanceRoleAssignmentRequest. '
 localization_priority: Normal
 ms.openlocfilehash: 6914dbe8c45bcc05bc684b08fb5fdf87405a045a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503704"
 ---
 # <a name="get-governanceroleassignmentrequest"></a>Получение governanceRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
+Получение [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
 
-Помимо области разрешений требуемыми инициатора запроса 
-*   Чтобы иметь по крайней мере одна роль назначения для ресурса; или
-*   — это тема [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
+Кроме области разрешений, для него требуется запрашивающий 
+*   для ресурса по крайней мере одно назначение роли; также
+*   — Это тема [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,16 +39,16 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
-Получите запрос назначения ролей
+Получение запроса на назначение роли
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequest"
@@ -58,7 +58,7 @@ GET /privilegedAccess/azureResources/roleAssignmentRequests/{id}
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/e68ff888-4af5-4ccb-8b74-39156090344b
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,

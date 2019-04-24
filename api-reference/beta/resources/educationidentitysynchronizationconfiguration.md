@@ -1,19 +1,19 @@
     ---
-Заголовок: описание «educationIdentitySynchronizationConfiguration ресурсов типа»: «абстрактный базовый класс для всех школа данных профиля identity синхронизации конфигураций. Производные классы определите поведение синхронизации удостоверения. Ниже приведены производных типов.»
-Автор: «mmast-msft» localization_priority: обычный ms.prod: «education»
+Title: "Едукатионидентитисинчронизатионконфигуратион типа ресурса" Описание: "абстрактный базовый класс для всех конфигураций синхронизации удостоверений профилей учебных данных. Производные классы определяют поведение синхронизации удостоверений. Ниже приведены производные типы.
+author: "ммаст — MSFT" локализатион_приорити: Normal MS. произ: "образование"
 ---
 
-# <a name="educationidentitysynchronizationconfiguration-resource-type"></a>Тип ресурса educationIdentitySynchronizationConfiguration
+# <a name="educationidentitysynchronizationconfiguration-resource-type"></a>Тип ресурса Едукатионидентитисинчронизатионконфигуратион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Абстрактный базовый класс для всех школа данных профиля identity синхронизации конфигураций. Производные классы определите поведение синхронизации удостоверения. Ниже приведены производные типы.
+Абстрактный базовый класс для всех конфигураций синхронизации удостоверения для учебного профиля данных. Производные классы определяют поведение синхронизации удостоверений. Ниже приведены производные типы.
 
-## <a name="derived-types"></a>Производные типы
+## <a name="derived-types"></a>ПроизВодные типы
 | Тип | Описание |
 |:-|:-|
-| [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Этот тип используется в соответствии с существующим учетным записям пользователей в Azure Active Directory (Azure AD). |
-| [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | Этот тип используется для создания новых учетных записей пользователей в Azure AD. |
+| [**Едукатионидентитиматчингконфигуратион**](educationidentitymatchingconfiguration.md) | Используйте этот тип для согласования с существующими учетными записями пользователей в Azure Active Directory (Azure AD). |
+| [**Едукатионидентитикреатионконфигуратион**](educationidentitycreationconfiguration.md) | Используйте этот тип для создания новых учетных записей пользователей в Azure AD. |
 <!--
 {
   "type": "#page.annotation",

@@ -5,21 +5,19 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 ms.openlocfilehash: 221037578e055e5bb57987058a190bc3026b3e0c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482359"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506339"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса GeoCoordinates
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ресурс **GeoCoordinates** предоставляет географические координаты и высоту расположения в соответствии с метаданными файла. Если у ресурса [**DriveItem**](driveitem.md) есть ненулевой аспект **location**, то этот ресурс представляет файл, с которым связано известное расположение.
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
@@ -49,15 +47,10 @@ ms.locfileid: "30482359"
 
 Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "The location facet provides geographic location related properties for an item",
   "keywords": "location,geographic,item,onedrive",
   "section": "documentation",
-  "tocPath": "Facets/Location",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/geocoordinates.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Facets/Location"
+} -->

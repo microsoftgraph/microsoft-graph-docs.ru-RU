@@ -1,257 +1,250 @@
-### YamlMime:Yaml
-ms.openlocfilehash: 41a827f929a9f038c2f5c5594cdfe01c21a19dc6
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
-ms.translationtype: HT
-ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657402"
 name: Документация по Graph
 metadata: {}
 items:
-- name: Документация по Microsoft Graph
-  href: index.yml
-- name: Обзор Microsoft Graph
-  href: overview.md
-  expanded: true
-  items:
-  - name: Обзор
+  - name: Документация по Microsoft Graph
+    href: index.yml
+  - name: Обзор Microsoft Graph
+    href: overview.md
     expanded: true
     items:
-    - name: Службы в Microsoft Graph
-      href: overview-major-services.md
-      expanded: true
-      items:
-      - name: Пользователи, с которыми вы можете связаться
-        href: users-you-can-reach.md
+      - name: Обзор
+        expanded: true
         items:
-        - name: Национальные облачные развертывания
-          href: deployments.md
-        - name: Гибридные развертывания (предварительная версия)
-          href: hybrid-rest-support.md
-      - name: Управление версиями и поддержка
-        href: versioning-and-support.md
-      - name: Условия использования
-        href: https://developer.microsoft.com/graph/terms-of-use
-    - name: Подключение к данным Microsoft Graph (предварительная версия)
-      href: data-connect-overview.md
-    - name: Учебники
-      href: tutorials.md
-      items:
-      - name: Angular
-        href: /graph/tutorials/angular
-      - name: ASP.NET
-        href: /graph/tutorials/aspnet
-      - name: Microsoft Flow
-        href: /graph/tutorials/flow
-      - name: Node.js
-        href: /graph/tutorials/node
-      - name: PHP
-        href: /graph/tutorials/php
-      - name: Python
-        href: /graph/tutorials/python
-      - name: Ruby
-        href: /graph/tutorials/ruby
-      - name: React
-        href: /graph/tutorials/react
-      - name: UWP
-        href: /graph/tutorials/uwp
-  - name: Обучение
-    expanded: true
-    items:
-    - name: Пользователи
-      href: azuread-users-concept-overview.md
-    - name: Группы
-      href: office365-groups-concept-overview.md
-    - name: Календарь
-      href: outlook-calendar-concept-overview.md
-      items:
-      - name: Поиск времени для собрания
-        href: findmeetingtimes-example.md
-      - name: Получение сведений о доступности
-        href: outlook-get-free-busy-schedule.md
-      - name: Планирование повторяющихся событий
-        href: outlook-schedule-recurring-events.md
-      - name: Получение общих событий
-        href: outlook-get-shared-events-calendars.md
-      - name: Неизменяемый идентификатор (предварительная версия)
-        href: outlook-immutable-id.md
-    - name: Взаимодействие с разными устройствами
-      href: cross-device-concept-overview.md
-      items:
-      - name: Веб-канал активности
-        href: activity-feed-concept-overview.md
-      - name: Ретрансляция устройств (предварительная версия)
-        href: device-relay-concept-overview.md
-      - name: Уведомления (предварительная версия)
-        href: notifications-concept-overview.md
-      - name: Создание приложений для различных устройств
-        href: cross-device-app-configuration.md
-    - name: Запись клиентов (предварительная версия)
-      href: booking-concept-overview.md
-    - name: Доступ к данным (предварительная версия)
-      href: data-connect-concept-overview.md
-      items:
-      - name: Начало работы
-        href: data-connect-get-started.md
-    - name: Устройства и приложения
-      href: intune-concept-overview.md
-    - name: Образование
-      href: education-concept-overview.md
-    - name: Файлы
-      href: onedrive-concept-overview.md
-    - name: Удостоверения и доступ
-      href: azuread-identity-access-management-concept-overview.md
-    - name: Почта
-      href: outlook-mail-concept-overview.md
-      items:
-      - name: Автоматизация обмена сообщениями
-        href: outlook-create-send-messages.md
-      - name: Упорядочение сообщений
-        href: outlook-organize-messages.md
-      - name: Получение общих сообщений
-        href: outlook-share-messages-folders.md
-      - name: Неизменяемый идентификатор (предварительная версия)
-        href: outlook-immutable-id.md
-      - name: Отправка почты от имени другого пользователя
-        href: outlook-send-mail-from-other-user.md
-    - name: Примечания
-      href: integrate-with-onenote.md
-      items:
-      - name: Получение содержимого OneNote
-        href: onenote-get-content.md
-      - name: Открытие клиента OneNote
-        href: open-onenote-client.md
-      - name: Создание страниц
-        href: onenote-create-page.md
-      - name: Обновление содержимого страницы
-        href: onenote-update-page.md
-      - name: Добавление изображений, видео и файлов
-        href: onenote-images-files.md
-      - name: Создание элементов с абсолютным положением
-        href: onenote-abs-pos.md
-      - name: Извлечение данных
-        href: onenote-extract-data.md
-      - name: Использование тегов заметок
-        href: onenote-note-tags.md
-      - name: РЕСУРСЫ
-      - name: Входной и выходной HTML-код
-        href: onenote-input-output-html.md
-      - name: Рекомендации
-        href: onenote-best-practices.md
-      - name: Правила размещения фирменной символики
-        href: onenote-branding.md
-      - name: Коды ошибок
-        href: onenote-error-codes.md
-    - name: Личные контакты.
-      href: outlook-contacts-concept-overview.md
-      items:
-      - name: Получение общих контактов
-        href: outlook-get-shared-contacts-folders.md
-      - name: Неизменяемый идентификатор (предварительная версия)
-        href: outlook-immutable-id.md
-    - name: Отчеты
-      href: reportroot-concept-overview.md
-    - name: Безопасность
-      href: security-concept-overview.md
-      items:
-      - name: Поток данных
-        href: security-dataflow.md
-      - name: Авторизация
-        href: security-authorization.md
-      - name: Интеграция с SIEM
-        href: security-siemintegration.md
+          - name: Службы в Microsoft Graph
+            href: overview-major-services.md
+            expanded: true
+            items:
+              - name: 'Пользователи, с которыми вы можете связаться'
+                href: users-you-can-reach.md
+                items:
+                  - name: Национальные облачные развертывания
+                    href: deployments.md
+                  - name: Гибридные развертывания (предварительная версия)
+                    href: hybrid-rest-support.md
+              - name: Управление версиями и поддержка
+                href: versioning-and-support.md
+              - name: Условия использования
+                href: 'https://developer.microsoft.com/graph/terms-of-use'
+          - name: Подключение к данным Microsoft Graph (предварительная версия)
+            href: data-connect-overview.md
+          - name: Учебники
+            href: tutorials.md
+            items:
+              - name: Angular
+                href: /graph/tutorials/angular
+              - name: ASP.NET
+                href: /graph/tutorials/aspnet
+              - name: Microsoft Flow
+                href: /graph/tutorials/flow
+              - name: Node.js
+                href: /graph/tutorials/node
+              - name: PHP
+                href: /graph/tutorials/php
+              - name: Python
+                href: /graph/tutorials/python
+              - name: Ruby
+                href: /graph/tutorials/ruby
+              - name: React
+                href: /graph/tutorials/react
+              - name: UWP
+                href: /graph/tutorials/uwp
+      - name: Обучение
+        expanded: true
         items:
-        - name: Splunk
-          href: security-splunk-siemintegration.md
-        - name: QRadar
-          href: security-qradar-siemintegration.md
-    - name: Сайты и списки
-      href: sharepoint-concept-overview.md
-    - name: Социальная аналитика
-      href: social-intel-concept-overview.md
-      items:
-      - name: Получение информации о релевантных людях
-        href: people-example.md
-    - name: Задачи и планы
-      href: planner-concept-overview.md
-    - name: Командная работа
-      href: teams-concept-overview.md
-      items:
-      - name: Создание группы и команды
-        href: teams-create-group-and-team.md
-      - name: Перечисление всех команд
-        href: teams-list-all-teams.md
-      - name: Настройка встроенных вкладок
-        href: teams-configuring-builtin-tabs.md
-    - name: Книги и диаграммы
-      href: excel-concept-overview.md
-      items:
-      - name: Управление сеансами
-        href: excel-manage-sessions.md
-      - name: Показ изображения диаграммы
-        href: excel-display-chart-image.md
-      - name: Использование функций книг
-        href: excel-use-functions.md
-      - name: Обновление формата диапазона
-        href: excel-update-range-format.md
-      - name: Запись данных в книгу
-        href: excel-write-to-workbook.md
-  - name: Разработка
-    expanded: true
-    items:
-    - name: Получение маркеров аутентификации
-      href: auth-overview.md
-      items:
-      - name: Регистрация приложения
-        href: auth-register-app-v2.md
-      - name: Получение доступа от имени пользователя
-        href: auth-v2-user.md
-      - name: Получение доступа без пользователя
-        href: auth-v2-service.md
-      - name: Разрешения
-        href: permissions-reference.md
-      - name: Управление доступом к приложению (CSP)
-        href: auth-cloudsolutionprovider.md
-    - name: Использование API
-      href: use-the-api.md
-      items:
-      - name: Разбиение на страницы
-        href: paging.md
-      - name: Использование параметров запроса
-        href: query-parameters.md
-      - name: Пакетные запросы
-        href: json-batching.md
-      - name: Регулирование
-        href: throttling.md
-      - name: Уведомления об изменениях
-        href: webhooks.md
-      - name: Отслеживание изменений
-        href: delta-query-overview.md
+          - name: Пользователи
+            href: azuread-users-concept-overview.md
+          - name: Группы
+            href: office365-groups-concept-overview.md
+          - name: Календарь
+            href: outlook-calendar-concept-overview.md
+            items:
+              - name: Поиск времени для собрания
+                href: findmeetingtimes-example.md
+              - name: Получение сведений о доступности
+                href: outlook-get-free-busy-schedule.md
+              - name: Планирование повторяющихся событий
+                href: outlook-schedule-recurring-events.md
+              - name: Получение общих событий
+                href: outlook-get-shared-events-calendars.md
+              - name: Неизменяемый идентификатор (предварительная версия)
+                href: outlook-immutable-id.md
+          - name: Взаимодействие с разными устройствами
+            href: cross-device-concept-overview.md
+            items:
+              - name: Веб-канал активности
+                href: activity-feed-concept-overview.md
+              - name: Ретрансляция устройств (предварительная версия)
+                href: device-relay-concept-overview.md
+              - name: Уведомления (предварительная версия)
+                href: notifications-concept-overview.md
+              - name: Создание приложений для различных устройств
+                href: cross-device-app-configuration.md
+          - name: Запись клиентов (предварительная версия)
+            href: booking-concept-overview.md
+          - name: Доступ к данным (предварительная версия)
+            href: data-connect-concept-overview.md
+            items:
+              - name: Начало работы
+                href: data-connect-get-started.md
+          - name: Устройства и приложения
+            href: intune-concept-overview.md
+          - name: Образование
+            href: education-concept-overview.md
+          - name: Файлы
+            href: onedrive-concept-overview.md
+          - name: Удостоверения и доступ
+            href: azuread-identity-access-management-concept-overview.md
+          - name: Почта
+            href: outlook-mail-concept-overview.md
+            items:
+              - name: Автоматизация обмена сообщениями
+                href: outlook-create-send-messages.md
+              - name: Упорядочение сообщений
+                href: outlook-organize-messages.md
+              - name: Получение общих сообщений
+                href: outlook-share-messages-folders.md
+              - name: Неизменяемый идентификатор (предварительная версия)
+                href: outlook-immutable-id.md
+              - name: Отправка почты от имени другого пользователя
+                href: outlook-send-mail-from-other-user.md
+          - name: Примечания
+            href: integrate-with-onenote.md
+            items:
+              - name: Получение содержимого OneNote
+                href: onenote-get-content.md
+              - name: Открытие клиента OneNote
+                href: open-onenote-client.md
+              - name: Создание страниц
+                href: onenote-create-page.md
+              - name: Обновление содержимого страницы
+                href: onenote-update-page.md
+              - name: 'Добавление изображений, видео и файлов'
+                href: onenote-images-files.md
+              - name: Создание элементов с абсолютным положением
+                href: onenote-abs-pos.md
+              - name: Извлечение данных
+                href: onenote-extract-data.md
+              - name: Использование тегов заметок
+                href: onenote-note-tags.md
+              - name: РЕСУРСЫ
+              - name: Входной и выходной HTML-код
+                href: onenote-input-output-html.md
+              - name: Рекомендации
+                href: onenote-best-practices.md
+              - name: Правила размещения фирменной символики
+                href: onenote-branding.md
+              - name: Коды ошибок
+                href: onenote-error-codes.md
+          - name: Личные контакты.
+            href: outlook-contacts-concept-overview.md
+            items:
+              - name: Получение общих контактов
+                href: outlook-get-shared-contacts-folders.md
+              - name: Неизменяемый идентификатор (предварительная версия)
+                href: outlook-immutable-id.md
+          - name: Отчеты
+            href: reportroot-concept-overview.md
+          - name: Безопасность
+            href: security-concept-overview.md
+            items:
+              - name: Поток данных
+                href: security-dataflow.md
+              - name: Авторизация
+                href: security-authorization.md
+              - name: Интеграция с SIEM
+                href: security-siemintegration.md
+                items:
+                  - name: Splunk
+                    href: security-splunk-siemintegration.md
+                  - name: QRadar
+                    href: security-qradar-siemintegration.md
+          - name: Сайты и списки
+            href: sharepoint-concept-overview.md
+          - name: Социальная аналитика
+            href: social-intel-concept-overview.md
+            items:
+              - name: Получение информации о релевантных людях
+                href: people-example.md
+          - name: Задачи и планы
+            href: planner-concept-overview.md
+          - name: Командная работа
+            href: teams-concept-overview.md
+            items:
+              - name: Создание группы и команды
+                href: teams-create-group-and-team.md
+              - name: Перечисление всех команд
+                href: teams-list-all-teams.md
+              - name: Настройка встроенных вкладок
+                href: teams-configuring-builtin-tabs.md
+          - name: Книги и диаграммы
+            href: excel-concept-overview.md
+            items:
+              - name: Управление сеансами
+                href: excel-manage-sessions.md
+              - name: Показ изображения диаграммы
+                href: excel-display-chart-image.md
+              - name: Использование функций книг
+                href: excel-use-functions.md
+              - name: Обновление формата диапазона
+                href: excel-update-range-format.md
+              - name: Запись данных в книгу
+                href: excel-write-to-workbook.md
+      - name: Разработка
+        expanded: true
         items:
-        - name: Получение изменений для событий (пример)
-          href: delta-query-events.md
-        - name: Получение изменений для групп (пример)
-          href: delta-query-groups.md
-        - name: Получение изменений для сообщений (пример)
-          href: delta-query-messages.md
-        - name: Получение изменений для пользователей (пример)
-          href: delta-query-users.md
-      - name: Добавление пользовательских данных
-        href: extensibility-overview.md
-        items:
-        - name: Использование открытых расширений (пример)
-          href: extensibility-open-users.md
-        - name: Использование расширений схемы (пример)
-          href: extensibility-schema-groups.md
-      - name: Рекомендации
-        href: best-practices-concept.md
-      - name: Известные проблемы
-        href: known-issues.md
-      - name: Журнал изменений
-        href: changelog.md
-      - name: Ошибки
-        href: errors.md
-  - name: Справочник по версии 1.0
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
-  - name: Документация для бета-версий
-    href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta
+          - name: Получение маркеров аутентификации
+            href: auth-overview.md
+            items:
+              - name: Регистрация приложения
+                href: auth-register-app-v2.md
+              - name: Получение доступа от имени пользователя
+                href: auth-v2-user.md
+              - name: Получение доступа без пользователя
+                href: auth-v2-service.md
+              - name: Разрешения
+                href: permissions-reference.md
+              - name: Управление доступом к приложению (CSP)
+                href: auth-cloudsolutionprovider.md
+          - name: Использование API
+            href: use-the-api.md
+            items:
+              - name: Разбиение на страницы
+                href: paging.md
+              - name: Использование параметров запроса
+                href: query-parameters.md
+              - name: Пакетные запросы
+                href: json-batching.md
+              - name: Регулирование
+                href: throttling.md
+              - name: Уведомления об изменениях
+                href: webhooks.md
+              - name: Отслеживание изменений
+                href: delta-query-overview.md
+                items:
+                  - name: Получение изменений для событий (пример)
+                    href: delta-query-events.md
+                  - name: Получение изменений для групп (пример)
+                    href: delta-query-groups.md
+                  - name: Получение изменений для сообщений (пример)
+                    href: delta-query-messages.md
+                  - name: Получение изменений для пользователей (пример)
+                    href: delta-query-users.md
+              - name: Добавление пользовательских данных
+                href: extensibility-overview.md
+                items:
+                  - name: Использование открытых расширений (пример)
+                    href: extensibility-open-users.md
+                  - name: Использование расширений схемы (пример)
+                    href: extensibility-schema-groups.md
+              - name: Рекомендации
+                href: best-practices-concept.md
+              - name: Известные проблемы
+                href: known-issues.md
+              - name: Журнал изменений
+                href: changelog.md
+              - name: Ошибки
+                href: errors.md
+      - name: Справочник по версии 1.0
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-1.0
+      - name: Документация для бета-версий
+        href: /graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta

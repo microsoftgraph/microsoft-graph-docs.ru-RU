@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1928273ef45b277fa81dba5a4db7b908134491d3
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342305"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506575"
 ---
 # <a name="eventmessagerequest-resource-type"></a>Тип ресурса eventMessageRequest
 
@@ -17,7 +17,7 @@ ms.locfileid: "30342305"
 
 Сообщение, представляющее приглашение на собрание.
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -82,21 +82,21 @@ ms.locfileid: "30342305"
 |bccRecipients|Коллекция [recipient](recipient.md)|Получатели скрытой копии сообщения.|
 |body|[itemBody](itembody.md)|Текст сообщения.|
 |bodyPreview|String|Первые 255 символов в тексте сообщения.|
-|categories|Коллекция строк|Категории, сопоставленные с сообщением.|
+|categories|Коллекция String|Категории, сопоставленные с сообщением.|
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели копии сообщения.|
 |changeKey|String|Версия сообщения.|
 |conversationId|String|Идентификатор беседы, к которой принадлежит электронное сообщение.|
 |createdDateTime|DateTimeOffset|Дата и время создания сообщения.|
 |endDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время окончания запрошенного собрания.|
 |from|[recipient](recipient.md)|Владелец почтового ящика и отправитель сообщения.|
-|hasAttachments|Логический|Указывает на наличие вложений в сообщении.|
-|id|Строка|Только для чтения.|
+|hasAttachments|Boolean|Указывает на наличие вложений в сообщении.|
+|id|String|Только для чтения.|
 |importance|String| Важность сообщения: `Low`, `Normal`, `High`.|
 |inferenceClassification|String| Возможные значения: `Focused`, `Other`.|
 |isDeliveryReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
-|isDraft|Boolean|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
+|isDraft|Логическое|Указывает, является ли сообщение черновиком. Сообщение считается черновиком, если оно еще не отправлено.|
 |isOutOfDate|Логический|Указывает, было ли это приглашение на собрание отменено в последний запрос.|
-|isRead|Boolean|Указывает, прочитано ли сообщение.|
+|isRead|Логический|Указывает, прочитано ли сообщение.|
 |isReadReceiptRequested|Логический|Указывает, запрашивается ли уведомление о прочтении сообщения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сообщения.|
 |location|[Location](location.md)|Расположение запрошенного собрания.|
@@ -113,15 +113,15 @@ ms.locfileid: "30342305"
 |startDateTime|[DateTimeTimeZone](datetimetimezone.md)|Время начала запрошенного собрания.|
 |subject|String|Тема сообщения.|
 |toRecipients|Коллекция [recipient](recipient.md)|Получатели сообщения, указанные в поле "Кому".|
-|type|Строка|Тип запрошенного собрания `singleInstance`:, `occurence`, `exception`,. `seriesMaster`|
+|type|String|Тип запрошенного собрания `singleInstance`:, `occurence`, `exception`,. `seriesMaster`|
 |uniqueBody|[itemBody](itembody.md)|Часть текста сообщения, которая является уникальной для текущего сообщения.|
 |webLink|String|URL-адрес для открытия сообщения в Outlook Web App.<br><br>Чтобы изменить способ отображения сообщения, можно добавить аргумент ispopout в конце URL-адреса. Если аргумент ispopout отсутствует или для него задано значение 1, то сообщение откроется во всплывающем окне. Если для аргумента ispopout задано значение 0, то в браузере сообщение будет отображаться в области просмотра Outlook Web App.<br><br>Сообщение откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook Web App. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br><br>Доступ к этому URL-адресу можно получить из объекта iFrame.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|attachments|Коллекция объектов [attachment](attachment.md)| Только для чтения. Допускается значение null.|
-|event|[Event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
+|attachments|Коллекция [Attachment](attachment.md)| Только для чтения. Допускается значение null.|
+|событие|[Event](event.md)| Событие, связанное с сообщением о событии. Для участников или ресурсов помещений предполагается, что помощник по ведению календаря настроен для автоматического обновления события в календаре, если поступают сообщения с приглашением на собрание. Свойство навигации.  Только для чтения.|
 |extensions|Коллекция [Extension](extension.md)| Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
@@ -129,18 +129,18 @@ ms.locfileid: "30342305"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта eventMessage](../api/eventmessage-get.md) | [eventMessage](eventmessage.md) |Считывание свойств и отношений объекта eventMessage.|
-|[Создание вложения](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Создание вложения путем записи в коллекцию вложений.|
-|[Список вложений](../api/eventmessage-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение коллекции объектов Attachment.|
+|[Создание вложения](../api/eventmessage-post-attachments.md) |[Attachment](attachment.md)| Создание вложения путем публикации в коллекции вложений.|
+|[Список вложений](../api/eventmessage-list-attachments.md) |Коллекция [Attachment](attachment.md)| Получение коллекции объектов вложений.|
 |[Обновление](../api/eventmessage-update.md) | [eventMessage](eventmessage.md)  |Обновление объекта eventMessage. |
-|[Удаление](../api/eventmessage-delete.md) | Нет. |Удаление объекта eventMessage. |
+|[Удаление](../api/eventmessage-delete.md) | Нет |Удаление объекта eventMessage. |
 |[copy](../api/message-copy.md)|[Message](message.md)||
 |[createForward](../api/message-createforward.md)|[Message](message.md)||
 |[createReply](../api/message-createreply.md)|[Message](message.md)||
-|[createReplyAll](../api/message-createreplyall.md)|[Сообщение](message.md)||
-|[forward](../api/message-forward.md)|Нет|ПереСылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[createReplyAll](../api/message-createreplyall.md)|[Message](message.md)||
+|[forward](../api/message-forward.md)|Отсутствует|ПереСылка сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[move](../api/message-move.md)|[Message](message.md)|Переместить сообщение в mailFolder.|
-|[reply](../api/message-reply.md)|Нет|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
-|[replyAll](../api/message-replyall.md)|Нет|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[reply](../api/message-reply.md)|Отсутствует|Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".|
+|[replyAll](../api/message-replyall.md)|Отсутствует|Ответ всем получателям сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 |[send](../api/message-send.md)|Нет|Отправка ранее созданного черновика сообщения. После этого сообщение сохраняется в папке "Отправленные".|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

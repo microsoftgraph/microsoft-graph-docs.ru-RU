@@ -1,23 +1,23 @@
 ---
-title: Член группы списка
-description: Получите административные единиц измерения, которые группа является непосредственным членом и группы.
+title: Группа списка memberOf
+description: Получение групп и административных единиц, непосредственным участником которых является группа.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: ecf127e7cc4af4aada3d75ef6415a242b0a9411b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517542"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502123"
 ---
-# <a name="list-group-memberof"></a>Член группы списка
+# <a name="list-group-memberof"></a>Группа списка memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите административные единиц измерения, которые группа является непосредственным членом и группы.
+Получение групп и административных единиц, непосредственным участником которых является группа.
 
-Эта операция не является транзитивной. В отличие от аналогичной операции для функции "Группы Office 365", эта операция возвращает группы всех типов, а не только группы Office 365. 
+Эта операция не является транзитивной. В отличие от извлечения групп Office 365 пользователя, возвращаются все типы групп, а не только группы Office 365. 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,9 +44,9 @@ GET /groups/{id}/memberOf
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -62,7 +62,7 @@ GET /groups/{id}/memberOf
 GET https://graph.microsoft.com/beta/groups/{id}/memberOf
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 >**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

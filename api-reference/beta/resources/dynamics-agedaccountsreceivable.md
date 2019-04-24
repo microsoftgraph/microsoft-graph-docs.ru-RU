@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ce5d010c08f956468398082821040e30b4ef2ace
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365579"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507618"
 ---
 # <a name="agedaccountsreceivable-resource-type"></a>Тип ресурса Ажедаккаунтсрецеивабле
 Представляет объект Ажедаккаунтсрецеивабле в Dynamics 365 Business Central, в котором отображается срок хранения учетной записи клиента.
@@ -27,7 +27,7 @@ ms.locfileid: "30365579"
 |:---------------|:--------|:--------------------------------------------|
 |customerId      |GUID     |Уникальный идентификатор клиента.                   |
 |Кустомернумбер  |строка   |Указывает номер клиента.                 |
-|name            |строка   |Указывает имя клиента.                   |
+|name            |string   |Указывает имя клиента.                   |
 |Курренцикоде    |строка   |Задает валюту.                      |
 |Баланцедуе      |числовых  |Указывает общее сальдо клиента.      |
 |Куррентамаунт   |числовых  |Указывает баланс для текущего периода распределения по срокам.|
@@ -41,7 +41,7 @@ ms.locfileid: "30365579"
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

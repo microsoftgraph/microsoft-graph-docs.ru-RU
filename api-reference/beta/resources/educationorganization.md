@@ -1,34 +1,34 @@
 ---
 title: Тип ресурса educationOrganization
-description: 'Использовать для моделирования обеих другой организации типов в образовательных сектора абстрактной сущности.  '
+description: 'Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 122717952781cd8effe415fb01b07ec9bf71143d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507476"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507184"
 ---
 # <a name="educationorganization-resource-type"></a>Тип ресурса educationOrganization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Использовать для моделирования обеих другой организации типов в образовательных сектора абстрактной сущности.  
+Абстрактный объект, используемый для моделирования сходства между различными типами организаций в секторе образования.  
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |description|String| Описание организации.|
-|displayName|String| Отображаемое имя организации.|
-|externalSource|string| Источник, где был создан данной организации. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+|displayName|String| Отображаемое имя Организации.|
+|externalSource|строка| Источник, из которого была создана данная организация. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
 
 ## <a name="relationships"></a>Связи
 Отсутствуют.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

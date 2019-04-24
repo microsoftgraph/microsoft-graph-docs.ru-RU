@@ -1,29 +1,29 @@
 ---
-title: Список governanceRoleDefinitions
-description: Получите коллекцию governanceRoleDefinitions для ресурса.
+title: Список Говернанцероледефинитионс
+description: Получение коллекции Говернанцероледефинитионс для ресурса.
 localization_priority: Normal
 ms.openlocfilehash: 0e03a75446723743cc43eef63c42dd0f39c86126
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525201"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503067"
 ---
-# <a name="list-governanceroledefinitions"></a>Список governanceRoleDefinitions
+# <a name="list-governanceroledefinitions"></a>Список Говернанцероледефинитионс
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [governanceRoleDefinitions](../resources/governanceroledefinition.md) для ресурса.
+Получение коллекции [говернанцероледефинитионс](../resources/governanceroledefinition.md) для ресурса.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
 
-Помимо области разрешений этот интерфейс API требует инициатор запроса может иметь по крайней мере одна роль назначения для ресурса.
+Кроме области разрешений, этот API требует, чтобы запрашивающий был иметь по крайней мере одно назначение роли для ресурса.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,28 +32,28 @@ GET /privilegedAccess/azureResources/resources/{resourceId}/roleDefinitions
 GET /privilegedAccess/azureResources/roleDefinitions?$filter=resourceId+eq+'{resourceId}'
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleDefinition](../resources/governanceroledefinition.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [говернанцероледефинитион](../resources/governanceroledefinition.md) в тексте отклика.
 ## <a name="example"></a>Пример
 <!-- {
   "blockType": "request",
   "name": "get_governanceroledefinitions"
 }-->
-В этом примере показано, как получить все определения ролей Wingtip Toys - производственного подписки.
+В этом примере показано, как получить все определения ролей для группы "компания" Wingtip Toys — произ.
 ##### <a name="request"></a>Запрос
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/resources/e5e7d29d-5465-45ac-885f-4716a5ee74b5/roleDefinitions  
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,

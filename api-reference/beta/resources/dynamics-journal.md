@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bef5008bbacb1729f48758b228e55a3f6adc2af0
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365474"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507303"
 ---
 # <a name="journal-resource-type"></a>Тип ресурса "журнал"
 Представляет журнал в Dynamics 365 Business Central.
@@ -41,7 +41,7 @@ ms.locfileid: "30365474"
 
 Ответ не имеет контента; код ответа — 204.
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

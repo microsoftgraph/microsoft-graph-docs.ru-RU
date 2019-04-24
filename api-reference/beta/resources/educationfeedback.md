@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса educationFeedback
-description: Отзывы учитель студента. Это свойство представляет часть текста обратной связи, а также who.
+title: Тип ресурса Едукатионфидбакк
+description: Обратная связь преподавателя с студентом. Это свойство представляет текстовую часть обратной связи вместе с тем, кто.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 90e55b20b371d04bc3c6d45bb84fe6bf42157a2f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515638"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507142"
 ---
-# <a name="educationfeedback-resource-type"></a>Тип ресурса educationFeedback
+# <a name="educationfeedback-resource-type"></a>Тип ресурса Едукатионфидбакк
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отзывы учитель студента. Это свойство представляет часть текста обратной связи, а также who.
+Обратная связь преподавателя с студентом. Это свойство представляет текстовую часть обратной связи вместе с тем, кто.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|feedbackBy|[identitySet](identityset.md)|Пользователь, создавший свои отзывы и предложения.|
-|feedbackDateTime|DateTimeOffset|Момент времени, когда был задан свои отзывы и предложения. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|text|[itemBody](itembody.md)|Отзывы|
+|Фидбаккби|[identitySet](identityset.md)|Пользователь, создавший отзыв.|
+|Фидбаккдатетиме|DateTimeOffset|Момент времени, когда была выдана обратная связь. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|text|[itemBody](itembody.md)|Замечания.|
 
 ## <a name="json-representation"></a>Представление JSON
 

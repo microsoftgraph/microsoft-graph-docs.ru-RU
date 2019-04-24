@@ -3,11 +3,11 @@ title: Тип ресурса Icon
 description: Представляет значок ячейки.
 localization_priority: Normal
 ms.openlocfilehash: c15ee02d1c6830cbb5246826665d0353b7e999b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516303"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506413"
 ---
 # <a name="icon-resource-type"></a>Тип ресурса Icon
 
@@ -20,8 +20,8 @@ ms.locfileid: "29516303"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|Получение объекта Icon | [Icon](icon.md) |Чтение свойств и связей объекта значка.|
-|[Update](../api/icon-update.md) | [Icon](icon.md)  |Обновление объекта значка. |
+|[Получение объекта Icon](../api/icon-get.md) | [Icon](icon.md) |Чтение свойств и связей объекта значка.|
+|[Обновление](../api/icon-update.md) | [Icon](icon.md)  |Обновление объекта значка. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|

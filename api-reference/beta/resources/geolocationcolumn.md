@@ -2,24 +2,24 @@
 author: kevklam
 ms.author: kevinlam
 ms.date: 09/10/2018
-title: GeolocationColumn
+title: Жеолокатионколумн
 localization_priority: Normal
 ms.openlocfilehash: 9c39a7f646f6f78a9e321f05765a252d5f66de30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527217"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506430"
 ---
-# <a name="geolocationcolumn-resource-type"></a>Тип ресурса geolocationColumn
+# <a name="geolocationcolumn-resource-type"></a>Тип ресурса Жеолокатионколумн
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**GeolocationColumn** на ресурс [columnDefinition](columndefinition.md) указывает, что столбец содержит географического расположения.
+**Жеолокатионколумн** для ресурса [columnDefinition](columndefinition.md) указывает на то, что столбец содержит географическое положение.
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлена JSON **geolocationColumn** ресурса.
+Ниже показано представление ресурса **жеолокатионколумн** в формате JSON.
 <!-- { "blockType": "resource", "@odata.type": "microsoft.graph.geolocationColumn" } -->
 
 ```json
@@ -29,7 +29,7 @@ ms.locfileid: "29527217"
 
 ## <a name="properties"></a>Свойства
 
-Ресурс **geolocationColumn** содержит свойства не.
+Ресурс **жеолокатионколумн** не содержит свойств.
 
 <!--
 {

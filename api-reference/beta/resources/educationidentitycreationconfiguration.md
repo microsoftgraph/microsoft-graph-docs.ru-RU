@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса educationIdentityCreationConfiguration
-description: Задает параметры, при создании школа данных профиля удостоверений. Эти удостоверения включают студентов и преподавателей. На основе этих параметров, пользователи будут создаваться в каталоге.
+title: Тип ресурса Едукатионидентитикреатионконфигуратион
+description: Определяет параметры создания удостоверений профиля School Data. К этим удостоверениям относятся студенты и преподаватели. На основе этих параметров пользователи будут созданы в каталоге.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 92ad3c36a9379bb570f2a635038903e64a0309e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511403"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507163"
 ---
-## <a name="educationidentitycreationconfiguration-resource-type"></a>Тип ресурса educationIdentityCreationConfiguration
+## <a name="educationidentitycreationconfiguration-resource-type"></a>Тип ресурса Едукатионидентитикреатионконфигуратион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает параметры, при создании школа данных профиля удостоверений. Эти удостоверения включают студентов и преподавателей. На основе этих параметров, пользователи будут создаваться в каталоге.
+Определяет параметры создания удостоверений профиля School Data. К этим удостоверениям относятся студенты и преподаватели. На основе этих параметров пользователи будут созданы в каталоге.
 
-> **Примечание:** Если у вас есть синхронизации каталогов, включенным для синхронизации между локальной службы каталогов Active Directory и Azure Active Directory (Azure AD), используйте [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) ресурсов.
+> **Примечание:** Если вы включили синхронизацию каталогов для синхронизации между локальной службой Active Directory и Azure Active Directory (Azure AD), используйте вместо этого ресурс [едукатионидентитиматчингконфигуратион](educationidentitymatchingconfiguration.md) .
 
-На основе [educationIdentitySynchronizationConfiguration](educationidentitysynchronizationconfiguration.md).
+Производный от [едукатионидентитисинчронизатионконфигуратион](educationidentitysynchronizationconfiguration.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **userDomains** | [educationIdentityDomain](educationidentitydomain.md) коллекции |  Задает список доменов для использования каждого типа пользователя.  |
+| **Усердомаинс** | Коллекция [едукатионидентитидомаин](educationidentitydomain.md) |  Задает список доменов для использования по типам пользователей.  |
 
 
 ## <a name="json-representation"></a>Представление JSON

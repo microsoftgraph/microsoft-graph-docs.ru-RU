@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса governanceSubject
-description: Представляет пользователей, групп и субъектов-служб, управляемых в управления правами Identity (PIM).
+title: Тип ресурса Говернанцесубжект
+description: Представляет пользователей, группы и субъекты-службы, которыми управляет привилегированный Диспетчер удостоверений (PIM).
 localization_priority: Normal
 ms.openlocfilehash: a83825a147429c81b3e83b2f2fb384672d2f527e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519166"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506436"
 ---
-# <a name="governancesubject-resource-type"></a>Тип ресурса governanceSubject
+# <a name="governancesubject-resource-type"></a>Тип ресурса Говернанцесубжект
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователей, групп и субъектов-служб, управляемых в управления правами Identity (PIM).
+Представляет пользователей, группы и субъекты-службы, которыми управляет привилегированный Диспетчер удостоверений (PIM).
 
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип       |Описание|
 |:----------|:----------|:----------|
 |id         |String     | Идентификатор субъекта.|
-|type       |Строка     |Тип субъекта. Значение может быть ``User``, ``Group``, и ``ServicePrincipal``.|
-|displayName|String     |Отображаемое имя субъекта.|
-|email      |String     |Адрес электронной почты субъекта пользователя. Если темы в других типах, он будет пустым.|
-|principalName|String   |Имя субъекта пользователя. Если темы в других типах, он будет пустым.|
+|type       |String     |Тип субъекта. Возможные значения: ``User``, ``Group``и. ``ServicePrincipal``|
+|displayName|Строка     |Отображаемое имя субъекта.|
+|email      |String     |Адрес электронной почты субъекта пользователя. Если тема находится в других типах, она пуста.|
+|principalName|String   |Имя субъекта пользователя. Если тема находится в других типах, она пуста.|
 
 ## <a name="relationships"></a>Отношения
 Нет

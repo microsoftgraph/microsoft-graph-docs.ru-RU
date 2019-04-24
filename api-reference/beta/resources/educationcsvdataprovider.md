@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса educationCsvDataProvider
-description: 'Используется для настройки синхронизации профилей данных school после ввода источника файлов CSV.  '
+title: Тип ресурса Едукатионксвдатапровидер
+description: 'Используется для настройки профиля синхронизации данных School, когда CSV-файлы являются источником входных данных.  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: bebacbc1c618c7558d81bde2611840e8d225a8fd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529875"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507182"
 ---
-# <a name="educationcsvdataprovider-resource-type"></a>Тип ресурса educationCsvDataProvider
+# <a name="educationcsvdataprovider-resource-type"></a>Тип ресурса Едукатионксвдатапровидер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для настройки синхронизации профилей данных school после ввода источника файлов CSV.  
+Используется для настройки профиля синхронизации данных School, когда CSV-файлы являются источником входных данных.  
 
-На основе [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).
+Производный от [едукатионсинчронизатиондатапровидер](educationsynchronizationdataprovider.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **пользовательских настроек** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Необязательный настроек применяется для синхронизации профилей.|
+| **настроек** | [Едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | НеОбязательные настройки, которые необходимо применить к профилю синхронизации.|
 
 ## <a name="json-representation"></a>Представление JSON
 

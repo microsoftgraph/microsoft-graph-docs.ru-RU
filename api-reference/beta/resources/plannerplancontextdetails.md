@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса plannerPlanContextDetails
-description: Дополнительные сведения о plannerPlanContext **plannerPlanContextDetails** ресурсов.
+title: Тип ресурса Планнерпланконтекстдетаилс
+description: Ресурс **планнерпланконтекстдетаилс** содержит дополнительные сведения о планнерпланконтекст.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 025e5b1623333d0235ae83e061e30247a3d130f6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32505951"
 ---
-# <a name="plannerplancontextdetails-resource-type"></a>Тип ресурса plannerPlanContextDetails
+# <a name="plannerplancontextdetails-resource-type"></a>Тип ресурса Планнерпланконтекстдетаилс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Дополнительные сведения о [plannerPlanContext](plannerplancontext.md) **plannerPlanContextDetails** ресурсов.
+Ресурс **планнерпланконтекстдетаилс** содержит дополнительные сведения о [планнерпланконтекст](plannerplancontext.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|url|String|URL-адрес пользовательского интерфейса, представленного связанного [plannerPlanContext](plannerplancontext.md). |
+|url|String|URL-адрес пользовательского интерфейса, представленного связанным [планнерпланконтекст](plannerplancontext.md). |
 
 ## <a name="json-representation"></a>Представление JSON
 

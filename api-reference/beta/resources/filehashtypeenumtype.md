@@ -1,33 +1,33 @@
 ---
-title: Перечисление fileHashType
-description: Перечисление для типов файлов хэш-функции.
+title: Перечисление Филехаштипе
+description: Enum для типов хэша файлов.
 localization_priority: Normal
 ms.openlocfilehash: 082fdd9cdad6c3ec1ea4e07020983ac0bac7ed65
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506372"
 ---
-# <a name="filehashtype-enum"></a>Перечисление fileHashType
+# <a name="filehashtype-enum"></a>Перечисление Филехаштипе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перечисление для типов файлов хэш-функции.
+Enum для типов хэша файлов.
 
 ## <a name="members"></a>Элементы
 
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|unknown|(0)|Неизвестный тип.|
-|SHA1|$1|Тип хэш SHA1.|
-|SHA256|–2| Тип SHA256 хэш-функции.|
-|MD5|–3| Тип хэш MD5.|
-|authenticodeHash256|4| Тип AuthenticodeHash256 хэш-функции.|
-|lsHash|$-5| Тип LsHash хэш-функции.|
-|ctph|6| Тип CTPH хэш-функции.|
-|peSha1|7| Тип PESHA1 хэш-функции.|
-|peSha256|: = 8| Тип PESHA256 хэш-функции.|
+|unknown|нуль|НеИзвестный тип.|
+|хэшем|1 |Тип хеша SHA1.|
+|хэш|2 | Тип хеша SHA256.|
+|алгоритм|3 | Тип хеша MD5.|
+|Свойства authenticodehash256|4 | Тип хеша свойства authenticodehash256.|
+|Лшаш|5 | Тип хеша Лшаш.|
+|КТФ|6 | Тип хеша КТФ.|
+|peSha1|7 | Тип хеша PESHA1.|
+|peSha256|8 | Тип хеша PESHA256.|
 <!--
 {
   "type": "#page.annotation",

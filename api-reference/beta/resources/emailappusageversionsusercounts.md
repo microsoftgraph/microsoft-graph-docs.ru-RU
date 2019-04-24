@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса emailAppUsageVersionsUserCounts
+title: Тип ресурса Емаилаппусажеверсионсусеркаунтс
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 371352c42e870f45224999b7a618d1bb694ea512
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27965287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506680"
 ---
-# <a name="emailappusageversionsusercounts-resource-type"></a>Тип ресурса emailAppUsageVersionsUserCounts
+# <a name="emailappusageversionsusercounts-resource-type"></a>Тип ресурса Емаилаппусажеверсионсусеркаунтс
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| Репортрефрешдате | Дата   |
 | outlook2016       | Int64  |
 | outlook2013       | Int64  |
 | outlook2010       | Int64  |
-| outlook2007       | Int64  |
-| не определено      | Int64  |
-| reportPeriod      | String |
+| Outlook2007       | Int64  |
+| определено      | Int64  |
+| Репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

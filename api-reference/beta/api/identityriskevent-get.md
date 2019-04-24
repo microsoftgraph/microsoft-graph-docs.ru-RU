@@ -1,21 +1,21 @@
 ---
-title: Получение identityRiskEvent
-description: Извлечение свойств и связи объекта identityriskevent.
+title: Получение объекта identityRiskEvent
+description: Получение свойств и связей объекта идентитирискевент.
 author: cloudhandler
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 54bb5a43971fd4108178a7cace6821e4369ec6a6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640597"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501289"
 ---
-# <a name="get-identityriskevent"></a>Получение identityRiskEvent
+# <a name="get-identityriskevent"></a>Получение объекта identityRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта identityriskevent.
+Получение свойств и связей объекта идентитирискевент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,12 +36,12 @@ GET /identityRiskEvents/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [identityRiskEvent](../resources/identityriskevent.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [идентитирискевент](../resources/identityriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

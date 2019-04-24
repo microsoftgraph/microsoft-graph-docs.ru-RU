@@ -1,17 +1,17 @@
 ---
 title: Создание события
-description: С помощью этого API можно создать событие.
+description: Этот API используется для создания события.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 978f156302380edc05df79ec3a53c1ab0f853f41
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889956"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502170"
 ---
-# <a name="create-event"></a>Создание объекта event
+# <a name="create-event"></a>Создание события
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ POST /groups/{id}/calendar/events
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [event](../resources/event.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код ответа `201 Created` и объект [event](../resources/event.md) в тексте ответа.
 
 ## <a name="example"></a>Пример

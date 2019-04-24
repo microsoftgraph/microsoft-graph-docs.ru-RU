@@ -3,11 +3,11 @@ title: Тип ресурса Filter
 description: Управляет фильтрацией столбца таблицы.
 localization_priority: Normal
 ms.openlocfilehash: 6adc4e378b47bcb134a640e77bf54c32a35b3be2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518893"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506422"
 ---
 # <a name="filter-resource-type"></a>Тип ресурса Filter
 
@@ -24,10 +24,10 @@ ms.locfileid: "29518893"
 |[Clear](../api/filter-clear.md)|Нет|Сбрасывает фильтр для определенного столбца.|
 
 ## <a name="properties"></a>Свойства
-Нет
+Отсутствует
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |criteria|[FilterCriteria](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
 

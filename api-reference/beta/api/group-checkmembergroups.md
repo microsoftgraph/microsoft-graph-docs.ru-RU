@@ -1,15 +1,15 @@
 ---
 title: 'group: checkMemberGroups'
-description: Проверьте наличие членства в указанный список групп. Возвращает из списка из которых эти группы
+description: Проверка членства в указанном списке групп. Возвращает список этих групп, из которых
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 838ea805f6732965029690a05e8d3294fdd62c26
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514903"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503110"
 ---
 # <a name="group-checkmembergroups"></a>group: checkMemberGroups
 
@@ -25,11 +25,11 @@ ms.locfileid: "29514903"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложения                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
+| Делегированные (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Для приложений                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. С помощью `Group.Read.All` разрешение возвращает ошибку. Мы знаем об этой проблеме.
+> **Примечание:** Этот API на `Directory.Read.All` данный момент требует разрешение или более высокий уровень. При использовании `Group.Read.All` этого разрешения будет возвращена ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -82,10 +82,9 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса educationSubmissionIndividualRecipient
-description: 'Подкласс educationSubmissionRecipient, которое указывает, что отправка назначен одному пользователю в классе.  '
+title: Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент
+description: 'Подкласс ЕдукатионсубмиссионреЦипиент, который указывает, что отправка назначена отдельному пользователю в классе.  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 8660ec569362d8170d15de86073c0ef59c9ec0a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519187"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507063"
 ---
-# <a name="educationsubmissionindividualrecipient-resource-type"></a>Тип ресурса educationSubmissionIndividualRecipient
+# <a name="educationsubmissionindividualrecipient-resource-type"></a>Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс [educationSubmissionRecipient](educationsubmissionrecipient.md) , которое указывает, что отправка назначен одному пользователю в классе.  
+Подкласс [едукатионсубмиссионреЦипиент](educationsubmissionrecipient.md) , который указывает, что отправка назначена отдельному пользователю в классе.  
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|userId|String|Идентификатор пользователя, которому назначена подачи.|
+|userId|String|Идентификатор пользователя, которому назначена отправка.|
 
 ## <a name="json-representation"></a>Представление JSON
 

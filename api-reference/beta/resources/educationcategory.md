@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 928f37b4d29a4443c947bd92bf4a71f9f8a05f59
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30801036"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507320"
 ---
 # <a name="educationcategory-resource-type"></a>Тип ресурса Едукатионкатегори
 
@@ -23,7 +23,7 @@ ms.locfileid: "30801036"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение Едукатионкатегори](../api/educationcategory-get.md) | [Едукатионкатегори](educationCategory.md) | Получение существующего **едукатионкатегори**.|
-|[Удаление категории](../api/educationcategory-delete.md) | Нет | Удаление **едукатионкатегори**.|
+|[Удаление категории](../api/educationcategory-delete.md) | Отсутствует | Удаление **едукатионкатегори**.|
 
 
 ## <a name="properties"></a>Свойства
@@ -32,7 +32,7 @@ ms.locfileid: "30801036"
 |id|String|Уникальный идентификатор для категории.|
 |displayName|String|Уникальный идентификатор для категории.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

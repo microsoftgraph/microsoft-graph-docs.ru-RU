@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса educationSynchronizationDataProvider
-description: 'Представляет схему SIS источника. Это позволяет системы, чтобы знать, как сопоставление входящих данных схемы Azure Active Directory (Azure AD). '
+title: Тип ресурса Едукатионсинчронизатиондатапровидер
+description: 'Представляет исходную схему SIS. Это позволяет системе узнать, как сопоставить входящие данные с схемой Azure Active Directory (Azure AD). '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: f592e75a3a6df1728839494ee41ac28065450d60
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507046"
 ---
-# <a name="educationsynchronizationdataprovider-resource-type"></a>Тип ресурса educationSynchronizationDataProvider
+# <a name="educationsynchronizationdataprovider-resource-type"></a>Тип ресурса Едукатионсинчронизатиондатапровидер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет схему SIS источника. Это позволяет системы, чтобы знать, как сопоставление входящих данных схемы Azure Active Directory (Azure AD).
+Представляет исходную схему SIS. Это позволяет системе узнать, как сопоставить входящие данные с схемой Azure Active Directory (Azure AD).
 
-> **Примечание:** В данном сложном типе абстрактный. Обращайтесь к определенным типам поставщиков данных из списка.
+> **Примечание:** Этот сложный тип является абстрактным. Ознакомьтесь со списками определенных типов поставщиков данных.
 
-## <a name="derived-types"></a>Производные типы
+## <a name="derived-types"></a>ПроизВодные типы
 | Тип | Описание |
 |:-|:-|:-|
-| [educationcsvdataprovider](educationcsvdataprovider.md) | Использовать с помощью CSV-файлов в качестве источника ввода. |
-| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | Используется с PowerSchool в качестве источника ввода. |
-| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | Использовать с использованием интерфейса API OneRoster в качестве источника ввода. |
+| [едукатионксвдатапровидер](educationcsvdataprovider.md) | Используется с CSV-файлами в качестве источника входных данных. |
+| [едукатионповерсчулдатапровидер](educationpowerschooldataprovider.md) | Используется с PowerSchool в качестве источника входных данных. |
+| [едукатиононеростерапидатапровидер](educationonerosterapidataprovider.md) | Используется с API OneRoster в качестве источника входных данных. |
 
 ## <a name="properties"></a>Свойства
 
-С этого типа свойств не представлено.
+Этот тип не представляет свойства.
 <!--
 {
   "type": "#page.annotation",

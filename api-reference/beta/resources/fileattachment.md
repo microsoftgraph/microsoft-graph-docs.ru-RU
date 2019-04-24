@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса fileAttachment
-description: Файл (например, текстовый файл или документ Word), подключенного к событию
+description: Файл (например, текстовый файл или документ Word), присоединенный к событию,
 localization_priority: Normal
 ms.openlocfilehash: 7d9f92565e38aaf418691480b7f8f3187c57647c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644093"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506370"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Файл (например, текстовый файл или документ Word) подключенного к [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md). Свойство **contentBytes** содержит кодировки Base64 содержимое файла.  
+Файл (например, текстовый файл или документ Word), присоединенный к событию, [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md). [](../resources/event.md) Свойство **contentBytes** включает содержимое файла в кодировке Base 64.  
 
 При создании вложенного файла включите в текст запроса следующее:
 
@@ -36,13 +36,13 @@ ms.locfileid: "29644093"
 |contentId|String|Идентификатор вложения в хранилище Exchange.|
 |contentLocation|String|Не используйте это свойство, так как оно не поддерживается.|
 |contentType|String|Тип контента этого вложения.|
-|id|String|Идентификатор вложения.|
+|id|Строка|Идентификатор вложения.|
 |isInline|Boolean|Задано значение true, если это встроенное вложение.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения.|
 |name|String|Имя, представляющее текст, который отображается под значком, представляющим внедренное вложение. Оно может не быть фактическим именем файла.|
 |size|Int32|Размер вложения в байтах.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

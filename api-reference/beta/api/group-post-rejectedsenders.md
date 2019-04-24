@@ -5,16 +5,13 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 12e3cab10c75a35e0abb0a1efe43b1c9d2adbf3f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514119"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502187"
 ---
 # <a name="create-rejectedsender"></a>Создание объекта rejectedSender
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Добавление пользователя или группы в список объектов rejectedSender.
 
 Укажите пользователя или группу с помощью параметра `@odata.id` в тексте запроса. Пользователи из списка запрещенных отправителей не могут отправлять записи в беседы группы (определенные в URL-адресе запроса POST). Убедитесь, что в списках запрещенных и разрешенных отправителей не указаны одни и те же пользователи или группы. В противном случае возникнет ошибка.
@@ -33,7 +30,6 @@ ms.locfileid: "29514119"
 ```http
 POST /groups/{id}/rejectedSenders/$ref
 ```
-
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
@@ -42,7 +38,7 @@ POST /groups/{id}/rejectedSenders/$ref
 ## <a name="request-body"></a>Текст запроса
 Укажите в тексте запроса идентификатор объекта user или group.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 Этот метод возвращает код отклика `204 No Content`, но не возвращает текст отклика.
 
 ## <a name="example"></a>Пример
@@ -50,19 +46,18 @@ POST /groups/{id}/rejectedSenders/$ref
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "name": "create_rejectedsender"
+  "name": "create_directoryobject_from_group"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/groups/{id}/rejectedSenders/$ref
+POST https://graph.microsoft.com/v1.0/groups/{id}/rejectedSenders/$ref
 Content-type: application/json
 Content-length: 30
 
 {
-  "@odata.id":"https://graph.microsoft.com/beta/users/alexd@contoso.com"
+  "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -74,15 +69,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create rejectedSender",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/group-post-rejectedsenders.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

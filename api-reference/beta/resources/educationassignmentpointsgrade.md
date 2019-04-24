@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса educationAssignmentPointsGrade
-description: Если тип марки точек назначения, каждой отправки будут иметь этот объект, связанный со свойством **submission.grade** . Это создаст подкласс из educationAssignmentGrade,
+title: Тип ресурса Едукатионассигнментпоинтсграде
+description: Если для назначения задан тип уровня баллов, то каждая отправка будет иметь этот объект, связанный с свойством **отправку. Grade** . При этом создается подкласс из Едукатионассигнментграде,
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 5d2a5cf6f6f886185179c6f1a61c1bb1d9d1ecfc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507338"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a>Тип ресурса educationAssignmentPointsGrade
+# <a name="educationassignmentpointsgrade-resource-type"></a>Тип ресурса Едукатионассигнментпоинтсграде
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Если тип марки точек назначения, каждой отправки будут иметь этот объект, связанный со свойством **submission.grade** . Это создаст подкласс из [educationAssignmentGrade](educationassignmentgrade.md), который добавит who данных этого свойства. Max точек хранится в свойстве **assignments.grading** .
+Если для назначения задан тип уровня баллов, то каждая отправка будет иметь этот объект, связанный с свойством **отправку. Grade** . При этом создается подкласс из [едукатионассигнментграде](educationassignmentgrade.md), который добавляет к этому свойству данные. Максимальные точки хранятся в свойстве **назначений. ступенчато** .
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|points|Single|Число точек a учитель передается объект отправки.|
+|points|Одинарное с плавающей точкой|Количество баллов, на которые преподаватель предоставляет этот объект отправки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

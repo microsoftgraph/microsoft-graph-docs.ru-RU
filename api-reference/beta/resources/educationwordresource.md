@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса educationWordResource
-description: 'Подкласс educationResource. Это ресурс документа Word. В каталоге **fileResource** , связанный с необходимо отправить файл Word '
+title: Тип ресурса Едукатионвордресаурце
+description: 'Подкласс объекта Едукатионресаурце. Это ресурс документа Word. Файл Word необходимо отправить в каталоге **филересаурце** , связанном с '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9d92b993ab920a894590346bf5fde0ff86c73e8d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506701"
 ---
-# <a name="educationwordresource-resource-type"></a>Тип ресурса educationWordResource
+# <a name="educationwordresource-resource-type"></a>Тип ресурса Едукатионвордресаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс [educationResource](educationresource.md). Это ресурс документа Word. В каталоге **fileResource** , связанный с назначения или отправки необходимо отправить файл Word.
+Подкласс объекта [едукатионресаурце](educationresource.md). Это ресурс документа Word. Файл Word необходимо отправить в каталоге **филересаурце** , связанном с назначением или отправкой.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|FileURL|String|Расположение файла на диске.|
+|fileUrl|String|Расположение файла на диске.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: c78e59c010e9c449af665d0b67abb0efcad0d3cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527789"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501947"
 ---
 # <a name="delete-grouplifecyclepolicy"></a>Удаление groupLifecyclePolicy
 
@@ -42,7 +42,7 @@ DELETE /groupLifecyclePolicies/{id}
 | Content-Type  | application/json |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 
 ## <a name="response"></a>Отклик
@@ -60,7 +60,7 @@ DELETE /groupLifecyclePolicies/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/groupLifecyclePolicies/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

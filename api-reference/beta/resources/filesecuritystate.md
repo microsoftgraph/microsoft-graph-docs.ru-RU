@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса fileSecurityState
+title: Тип ресурса объекта filesecuritystate
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 ms.openlocfilehash: 485addfda2707c8848c44c839f9593378943f327
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526958"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506416"
 ---
-# <a name="filesecuritystate-resource-type"></a>Тип ресурса fileSecurityState
+# <a name="filesecuritystate-resource-type"></a>Тип ресурса объекта filesecuritystate
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит сведения о файле (не процесса), связанные с оповещение.
+Содержит сведения о файле (не процессу), связанном с предупреждением.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий файл хэш-значений (криптографии и расположение конфиденциальные).|
+|fileHash|[fileHash](filehash.md)|Сложный тип, содержащий хэши файлов (криптография и с учетом расположения).|
 |name|String|Имя файла (без пути).|
-|path|String|Полный путь к файлу файл/файл изображения.|
-|riskScore|String|Поставщик создан/вычисляется риск показатель файл оповещений. Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
+|path|String|Полный путь к файлу или файлу imageFile.|
+|riskScore|String|Созданный поставщиком/вычисляемый показатель риска для файла оповещений. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: a5a6472427960d6e6179a80114fe9c9205e9e022
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529245"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502434"
 ---
 # <a name="group-getmembergroups"></a>group: getMemberGroups
 
@@ -25,11 +25,11 @@ ms.locfileid: "29529245"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                                 |
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
-| Делегированное (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
-| Делегированное (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
-| Для приложения                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
+| Делегированные (рабочая или учебная учетная запись)     | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
+| Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                              |
+| Для приложений                            | ~~Group.Read.All~~, Directory.Read.All, Directory.ReadWrite.All                             |
 
-> **Примечание.** В настоящее время для вызова этого API требуется разрешение `Directory.Read.All` или выше. С помощью `Group.Read.All` разрешение возвращает ошибку. Мы знаем об этой проблеме.
+> **Примечание:** Этот API на `Directory.Read.All` данный момент требует разрешение или более высокий уровень. При использовании `Group.Read.All` этого разрешения будет возвращена ошибка. Мы знаем об этой проблеме.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -53,7 +53,7 @@ POST /groups/{id}/getMemberGroups
 | :------------------ | :------ | :------------------------------------------------------------------------------------ |
 | securityEnabledOnly | Логическое | Задано значение **false**. Возвращение лишь защищенных групп поддерживается только для пользователей. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию String в тексте отклика, содержащем идентификаторы групп, в которых состоит данная группа.
 
@@ -78,7 +78,7 @@ Content-length: 33
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -1,78 +1,79 @@
 ---
-title: Список governanceRoleAssignmentRequests
-description: 'Получите коллекцию governanceRoleAssignmentRequests. '
+title: Список Говернанцеролеассигнментрекуестс
+description: 'Получение коллекции Говернанцеролеассигнментрекуестс. '
 localization_priority: Normal
 ms.openlocfilehash: 5ad26ef352eae93e9c804cfb62f5d00df12e32ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515463"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503280"
 ---
-# <a name="list-governanceroleassignmentrequests"></a>Список governanceRoleAssignmentRequests
+# <a name="list-governanceroleassignmentrequests"></a>Список Говернанцеролеассигнментрекуестс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
+Получение коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Список коллекцию [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) для ресурса.
+<!-- { "blockType": "ignored" } -->
+ПереЧисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) для ресурса.
     
->**Примечание:** Помимо области разрешений для запроса требуется инициатор запроса может иметь по крайней мере одна роль назначения для ресурса.
+>**Примечание:** Кроме области разрешений, запрос должен иметь по крайней мере одно назначение роли для ресурса.
 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignmentRequests
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'{resourceId}'
 ```
-Список коллекцию [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) моей.
+ПереЧисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) .
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=subjectId+eq+'{myId}'
 ```
 
-Список коллекцию [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md) , которые решения ожидающие администратора.
+ПереЧисление коллекции [говернанцеролеассигнментрекуестс](../resources/governanceroleassignmentrequest.md) , которые являются ожидающими решениями администратора.
     
->**Примечание:** Помимо области разрешений для этого запроса требуется инициатор запроса может иметь по крайней мере один `Active` назначение ролей администратора (`owner` или `user access administrator`) для ресурса.
+>**Примечание:** В этом запросе, кроме области разрешений, должен быть по крайней мере одно `Active` назначение роли администратора (`owner` или `user access administrator`) для ресурса.
 
 ```http
 GET /privilegedAccess/azureResources/roleAssignmentRequests?$filter=status/subStatus+eq+'PendingAdminDecision'
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignmentrequests"
 }-->
-Администраторы запросов ожидающие роль назначения для подписки на Wingtip Toys - производственного.
+Администраторы запрашивают запросы о назначениях ролей, ожидающие утверждения, для подписки Wingtip Toys — произ.
 ##### <a name="request"></a>Запрос
 
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests?$filter=resourceId+eq+'e5e7d29d-5465-45ac-885f-4716a5ee74b5'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

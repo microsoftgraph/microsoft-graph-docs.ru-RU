@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: db17537de2cd002a16b2c0306d4e4c9304010e44
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503676"
 ---
 # <a name="range-usedrange"></a>Range: UsedRange
 
@@ -59,8 +59,8 @@ GET /workbook/tables/{id|name}/columns/{id|name}/range/usedRange
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -81,7 +81,7 @@ Content-length: 169
 }
 ```
 
-Ниже приведен пример указания Дополнительно `valuesOnly` параметр.
+Ниже приведен пример, в котором указывается `valuesOnly` необязательный параметр.
 
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -94,7 +94,7 @@ Content-length: 169
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range/usedRange(valuesOnly=true)
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

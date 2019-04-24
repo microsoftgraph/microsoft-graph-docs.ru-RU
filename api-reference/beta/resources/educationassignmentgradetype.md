@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса educationAssignmentGradeType
-description: Представляет, как выражаемым числом назначения. Используется в свойстве **assignments.grading** .
+title: Тип ресурса Едукатионассигнментградетипе
+description: Указывает, как будет выполняться оценка назначения. Используется в свойстве **назначений. ступенчато** .
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 68809d88574f0ba01d6e2fafac2f60ea4229112c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507282"
 ---
-# <a name="educationassignmentgradetype-resource-type"></a>Тип ресурса educationAssignmentGradeType
+# <a name="educationassignmentgradetype-resource-type"></a>Тип ресурса Едукатионассигнментградетипе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет, как выражаемым числом назначения. Используется в свойстве **assignments.grading** .
+Указывает, как будет выполняться оценка назначения. Используется в свойстве **назначений. ступенчато** .
 
-В этом суперкласса не может использоваться непосредственно в свойстве назначения. Существует ли для нескольких различных способов марки назначений.
+Этот суперкласс нельзя использовать непосредственно в свойстве присваивания. Он существует для того, чтобы иметь возможность использовать несколько различных способов оценки назначений.
 
 
 ## <a name="properties"></a>Свойства

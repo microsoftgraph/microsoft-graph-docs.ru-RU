@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса educationFileSynchronizationVerificationMessage
-description: Представляет ошибки, возвращенной клиенту в ответ на запрос на запуск синхронизации профилей на основе CSV школа данных. Этот ресурс будет содержать ошибки, которые возникают из проверки. Пользователям необходимо исправить источника данных, перед перезапуском запроса для синхронизации с Azure Active Directory (Azure AD).
+title: Тип ресурса Едукатионфилесинчронизатионверификатионмессаже
+description: Представляет ошибку, возвращаемую клиенту в ответ на запрос о запуске синхронизации профилей учебных данных на основе CSV. В ресурсе будут содержаться ошибки, возникающие в результате проверки. Пользователи должны исправить исходные данные перед перезапуском запроса на синхронизацию с Azure Active Directory (Azure AD).
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 26f96c83ce14539011664b446265328f714ed402
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529896"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507133"
 ---
-# <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Тип ресурса educationFileSynchronizationVerificationMessage
+# <a name="educationfilesynchronizationverificationmessage-resource-type"></a>Тип ресурса Едукатионфилесинчронизатионверификатионмессаже
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ошибки, возвращенной клиенту в ответ на запрос на [Запуск синхронизации](../api/educationsynchronizationprofile-start.md) профилей на основе CSV школа данных. Этот ресурс будет содержать ошибки, которые возникают из проверки. Пользователям необходимо исправить источника данных, перед перезапуском запроса для синхронизации с Azure Active Directory (Azure AD).
+Представляет ошибку, возвращаемую клиенту в ответ на запрос о [запуске синхронизации](../api/educationsynchronizationprofile-start.md) профилей учебных данных на основе CSV. В ресурсе будут содержаться ошибки, возникающие в результате проверки. Пользователи должны исправить исходные данные перед перезапуском запроса на синхронизацию с Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
 | **type** | string | Тип сообщения. Возможные значения: `error`, `warning`, `information`. | 
-| **fileName** | string | Исходный файл, который содержит ошибки. |
+| **задан** | строка | Исходный файл, который содержит ошибку. |
 | **description** | строка | Подробные сведения о типе сообщения. |
 
 ## <a name="json-representation"></a>Представление JSON

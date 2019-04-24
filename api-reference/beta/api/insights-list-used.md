@@ -1,21 +1,21 @@
 ---
-title: Список, используемый
-description: Вычисляемые представление, которое возвращает список файлов, используемых с пользователем.
+title: Список "Использованные"
+description: Вычисляемое представление, которое возвращает список файлов, используемых с пользователем.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: e73536d5933d6293539eb00ba8cdc2e85ce5fa93
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 2341e41701a2b7306b9e0f1cb89a6b5df76b55ed
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526104"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500855"
 ---
-# <a name="list-used"></a>Список, используемый
+# <a name="list-used"></a>Список "Использованные"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемые представление, которое возвращает список файлов, используемых с пользователем.
+Вычисляемое представление, которое возвращает список файлов, используемых с пользователем.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -30,15 +30,15 @@ ms.locfileid: "29526104"
 ```http
 GET /me/insights/used
 ```
-Разрешения на запрос возвращает результаты использовавшихся документов других пользователей Упорядочить по «lastModifiedDateTime» и «lastAccessedDateTime» имеет значение «lastModifiedDateTime».
+Запрос документов, использовавшихся другими пользователями возвращает результаты, отсортированные по адресу "lastModifiedDateTime", а для "свойство lastaccesseddatetime" задано значение "lastModifiedDateTime".
 ```http
-GET /users/<id | userPrincipalName>/insights/used
+GET /users/{id | userPrincipalName}/insights/used
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Можно использовать `$filter` параметр к элементам фильтр, используемый запроса. Например на основе типа:
+С помощью параметра `$filter` запроса можно отфильтровать используемые элементы. Например, на основе типа:
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -46,7 +46,7 @@ GET /users/<id | userPrincipalName>/insights/used
 
 `https://graph.microsoft.com/beta/me/insights/used?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-В разделе Доступные типы контейнеров и типов можно фильтровать по в [resourceVisualization](../resources/insights-resourcevisualization.md).
+Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -56,11 +56,11 @@ GET /users/<id | userPrincipalName>/insights/used
 | Accept  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и список элементов [используется](../resources/insights-used.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список [использованных](../resources/insights-used.md) элементов в теле отклика.
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
@@ -70,10 +70,9 @@ GET /users/<id | userPrincipalName>/insights/used
 GET https://graph.microsoft.com/beta/me/insights/used
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
- 
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. 
 ```http
 {
     "value": [
@@ -103,8 +102,8 @@ GET https://graph.microsoft.com/beta/me/insights/used
 }
 ```
 
-### <a name="expanding-resource"></a>Развертывание ресурсов
-Можно развернуть ссылается используемых понимание назначения ресурса.
+### <a name="expanding-resource"></a>Расширение ресурса
+Ресурс, на который ссылается использованная аналитика, может быть расширен.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/used/{id}/resource
 ```

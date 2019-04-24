@@ -1,19 +1,19 @@
 ---
 title: Удаление объекта inferenceClassificationOverride
-description: Удалить фокус папки "Входящие" переопределение, указанный по идентификатору.
+description: Удаление отсортированного переопределения папки "Входящие", указанного с помощью идентификатора.
 localization_priority: Normal
 ms.openlocfilehash: 16298ebb02b0540272c0c858abf5b16759de824d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513832"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501065"
 ---
 # <a name="delete-inferenceclassificationoverride"></a>Удаление объекта inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалить [Фокус папки "Входящие"](../resources/manage-focused-inbox.md) переопределение, указанный по идентификатору.
+Удаление отсортированного переопределения [папки "Входящие"](../resources/manage-focused-inbox.md) , указанного с помощью идентификатора.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,7 +35,7 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -51,9 +51,8 @@ DELETE /users/{id}/inferenceClassification/overrides/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/me/inferenceClassification/overrides/98f5bdef-576a-404d-a2ea-07a3cf34af4r
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

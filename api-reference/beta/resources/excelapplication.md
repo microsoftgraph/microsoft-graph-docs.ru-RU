@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 48ee13a67d97f9c5c1a96a6ef6e104c5629f4108
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517619"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506533"
 ---
 # <a name="application-resource-type"></a>Тип ресурса приложения
 
@@ -22,13 +22,13 @@ ms.locfileid: "29517619"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение приложения](../api/excelapplication-get.md) | [Application](application.md) |Чтение свойства и связи объекта приложения.|
-|[Calculate](../api/excelapplication-calculate.md)|Нет|Пересчитывает данные во всех открытых в текущий момент книгах Excel.|
+|[Получение приложения](../api/excelapplication-get.md) | [Приложение](application.md) |Считывание свойств и связей объекта application.|
+|[Calculate](../api/excelapplication-calculate.md)|Отсутствует|Пересчитывает данные во всех открытых в текущий момент книгах Excel.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|calculationMode|string|Возвращает режим вычисления, используемый в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`. Только для чтения.|
+|Калкулатионмоде|string|Возвращает режим вычисления, который используется в книге. Возможные значения: `Automatic`, `AutomaticExceptTables`, `Manual`. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 Нет

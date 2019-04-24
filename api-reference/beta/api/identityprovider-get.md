@@ -1,19 +1,19 @@
 ---
 title: Получение identityProvider
-description: Извлечение свойств существующего identityProvider.
+description: Получение свойств существующего identityProvider.
 localization_priority: Normal
 ms.openlocfilehash: 8315c43bcd99b9ea96b408cd2feb61a59369e4c1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501349"
 ---
 # <a name="get-identityprovider"></a>Получение identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств существующего [identityProvider](../resources/identityprovider.md).
+Получение свойств существующего объекта [identityProvider](../resources/identityprovider.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -21,11 +21,11 @@ ms.locfileid: "29523073"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All IdentityProvider.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Трудовые или школы учетной записи необходимо быть глобальным администратором клиента.
+Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,15 +42,15 @@ GET /identityProviders/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и представление JSON [identityProvider](../resources/identityprovider.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и представление объекта [identityProvider](../resources/identityprovider.md) в формате JSON в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-В следующем примере извлекается определенных **identityProvider**.
+В приведенном ниже примере возвращается определенный объект **identityProvider**.
 
 ##### <a name="request"></a>Запрос
 
@@ -62,7 +62,7 @@ GET /identityProviders/{id}
 GET https://graph.microsoft.com/beta/identityProviders/Amazon-OAuth
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

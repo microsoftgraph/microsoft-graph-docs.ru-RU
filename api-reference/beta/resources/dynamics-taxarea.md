@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: aeda0ca136c178355a8a8f9589eb7410399ef62a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365453"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507233"
 ---
 # <a name="taxareas-resource-type"></a>Тип ресурса Таксареас
 Представляет тип ресурса "налоговая область" в Dynamics 365 Business Central.
@@ -33,9 +33,9 @@ ms.locfileid: "30365453"
 |Такстипе|строка|Тип налога для налоговой области.|
 |lastModifiedDateTime|отличным|Дата и время последнего изменения налоговой области. Только для чтения.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

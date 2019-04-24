@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9fd9f942458b0a5d4a31eb6dad361d0469755a06
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783397"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32508416"
 ---
 # <a name="delete-devicemanagementintentassignment"></a>Удаление Девицеманажементинтентассигнмент
 
@@ -46,7 +46,7 @@ DELETE /deviceManagement/intents/{deviceManagementIntentId}/assignments/{deviceM
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример

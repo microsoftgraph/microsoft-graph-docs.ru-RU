@@ -3,11 +3,11 @@ title: Обновление Говернанцеролесеттинг
 description: Обновление свойств объекта Говернанцеролесеттинг.
 localization_priority: Normal
 ms.openlocfilehash: f9c851f95df340693626ff82c960243eb2f85b54
-ms.sourcegitcommit: 3615f9475d57bfbb3a8c4402af863897f592dfbd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789622"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32503040"
 ---
 # <a name="update-governancerolesetting"></a>Обновление Говернанцеролесеттинг
 
@@ -34,7 +34,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 | Content-Type  | application/json|
 
 
@@ -54,7 +54,7 @@ PATCH /privilegedAccess/azureResources/roleSettings/{id}
 ### <a name="error-codes"></a>Коды ошибок
 Этот API возвращает стандартные коды ошибок HTTP. Кроме того, возвращаются следующие коды настраиваемых ошибок.
 
-|Код ошибки     | Сообщение об ошибке         | Сведения             |
+|Код ошибки     | Сообщение об ошибке         | Подробно             |
 |:--------------| :---------------------|:--------------------|
 | 400 Бадрекуест| Ролесеттингнотфаунд   | [Говернанцеролесеттинг](../resources/governancerolesetting.md) не существует в системе.
 | 400 Бадрекуест| Инвалидролесеттинг    | В тексте запроса указаны недопустимые значения [говернанцерулесеттингс](../resources/governancerulesetting.md) .

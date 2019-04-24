@@ -1,19 +1,19 @@
 ---
-title: Обновление объекта inferenceclassificationoverride
-description: 'Изменение поля **classifyAs** фокус папки "Входящие" переопределять значение, как указано. '
+title: Обновление inferenceClassificationOverride
+description: 'Измените значение поля **classifyAs** для параметра отсортированное переопределение, как указано. '
 localization_priority: Normal
 ms.openlocfilehash: 0cb3eab7f8a4efece8099ca8f65577d8a06b18d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508519"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500848"
 ---
-# <a name="update-inferenceclassificationoverride"></a>Обновление объекта inferenceclassificationoverride
+# <a name="update-inferenceclassificationoverride"></a>Обновление inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Изменение поля **classifyAs** [Фокус папки "Входящие"](../resources/manage-focused-inbox.md) переопределять значение, как указано. 
+Измените значение поля **classifyAs** для параметра [отсортированное](../resources/manage-focused-inbox.md) переопределение, как указано. 
 
 Вы не можете использовать операцию PATCH, чтобы менять поля в экземпляре [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md). 
 
@@ -69,9 +69,8 @@ Content-type: application/json
   "classifyAs": "focused"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

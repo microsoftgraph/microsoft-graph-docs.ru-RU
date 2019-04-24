@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса educationOneNoteResource
-description: 'Подкласс educationResource. Представляет расположение страницы OneNote.  '
+title: Тип ресурса Едукатиононенотересаурце
+description: 'Подкласс объекта Едукатионресаурце. Представляет расположение страницы OneNote.  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 60b0e4647f1a601d3cbe206e264f7d288ee2110c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521420"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507205"
 ---
-# <a name="educationonenoteresource-resource-type"></a>Тип ресурса educationOneNoteResource
+# <a name="educationonenoteresource-resource-type"></a>Тип ресурса Едукатиононенотересаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс [educationResource](educationresource.md). Представляет расположение страницы OneNote.  
+Подкласс объекта [едукатионресаурце](educationresource.md). Представляет расположение страницы OneNote.  
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|pageUrl|String|URL-адрес графическое представление Microsoft на страницу OneNote.|
-|sectionName|String|Имя раздела, который следует скопировать в или были скопированы в распределения.|
+|pageUrl|String|URL-адрес Microsoft Graph на страницу в OneNote.|
+|sectionName|String|Имя раздела, в который должны копироваться дистрибутивы или скопированы в.|
 
 ## <a name="json-representation"></a>Представление JSON
 

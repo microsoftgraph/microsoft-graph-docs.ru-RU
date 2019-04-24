@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: c69a54ef5323b1e3d171135d4b1b0231b6834c79
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970243"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32506358"
 ---
 # <a name="grouplifecyclepolicy-resource-type"></a>Тип ресурса groupLifecyclePolicy
 
@@ -22,10 +22,10 @@ ms.locfileid: "27970243"
 |[Get groupLifecyclePolicy](../api/grouplifecyclepolicy-get.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) |Чтение свойств и связей объекта groupLifecyclePolicy.|
 |[List groupLifecyclePolicies](../api/grouplifecyclepolicy-list.md) | Коллекция [groupLifecyclePolicy](grouplifecyclepolicy.md) | Перечисление всех объектов groupLifecyclePolicy. |
 |[Update groupLifecyclePolicy](../api/grouplifecyclepolicy-update.md) | [groupLifecyclePolicy](grouplifecyclepolicy.md) | Обновление объекта groupLifecyclePolicy. |
-|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | None | Удаление объекта groupLifecyclePolicy. |
-|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|None| Добавление группы в политику жизненного цикла. |
+|[Delete groupLifecyclePolicy](../api/grouplifecyclepolicy-delete.md) | Отсутствует | Удаление объекта groupLifecyclePolicy. |
+|[Add a group to a groupLifecyclePolicy](../api/grouplifecyclepolicy-addgroup.md)|Отсутствует| Добавление группы в политику жизненного цикла. |
 |[Remove a group from a groupLifecyclePolicy](../api/grouplifecyclepolicy-removegroup.md)|None| Удаление группы из политики жизненного цикла. |
-|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Нет| Обновите срок действия группы. |
+|[Обновление группы](../api/grouplifecyclepolicy-renewgroup.md)|Отсутствует| Обновление даты окончания срока действия группы. |
 
 ## <a name="properties"></a>Свойства
 
@@ -40,7 +40,7 @@ ms.locfileid: "27970243"
 
 Отсутствуют.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

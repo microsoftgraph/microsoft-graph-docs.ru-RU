@@ -1,29 +1,29 @@
 ---
-title: educationSynchronizationOAuth2ClientCredentialsConnectionSettings ресурсов
-description: При OAuth2 предоставить учетные данные клиента будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.
+title: ресурс educationSynchronizationOAuth2ClientCredentialsConnectionSettings
+description: При использовании предоставления учетных данных клиента OAuth2 для подключения к поставщику данных этот тип параметров подключения следует использовать для настройки профиля.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 37121868793dd76aec2c3b48182e114348d21014
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523556"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507042"
 ---
-# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>educationSynchronizationOAuth2ClientCredentialsConnectionSettings ресурсов
+# <a name="educationsynchronizationoauth2clientcredentialsconnectionsettings-resource"></a>ресурс educationSynchronizationOAuth2ClientCredentialsConnectionSettings
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-При [OAuth2 предоставить учетные данные клиента](https://tools.ietf.org/html/rfc6749#section-4.4) будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.
+При использовании [предоставления учетНых данных клиента OAuth2](https://tools.ietf.org/html/rfc6749#section-4.4) для подключения к поставщику данных этот тип параметров подключения следует использовать для настройки профиля.
 
-На основе [educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).
+Производный от [едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **tokenUrl** | String | URL-адрес для получения маркера доступа для поставщика данных. |
+| **Токенурл** | String | URL-адрес для получения маркеров доступа для поставщика данных. |
 | **scope** | String | [Область запроса доступа](https://tools.ietf.org/html/rfc6749#section-3.3). |
 
 ## <a name="json-representation"></a>Представление JSON

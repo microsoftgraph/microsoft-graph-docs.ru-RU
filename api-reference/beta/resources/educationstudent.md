@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса educationStudent
-description: Добавляются дополнительные сведения в файл `student`, который присутствует, когда значение параметра primaryRole для пользователя — .
+description: Добавляются дополнительные сведения в файл educationUser, который присутствует, когда значение параметра primaryRole для пользователя — `student`.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 554763d41c4ce48a09334394330e05fcd6dd4152
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522037"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507137"
 ---
 # <a name="educationstudent-resource-type"></a>Тип ресурса educationStudent
 
@@ -22,7 +22,7 @@ ms.locfileid: "29522037"
 |:---------------|:--------|:----------|
 |birthDate|Date| Дата рождения учащегося.|
 |externalId|String| Идентификатор учащегося в исходной системе.|
-|gender|educationGender| Возможные значения: `female`, `male`, `other`, `unkownFutureValue`.|
+|gender|Едукатионжендер| Возможные значения: `female`, `male`, `other`, `unkownFutureValue`.|
 |оценка|String|Текущий уровень оценок учащегося.|
 |graduationYear|String| Год выпуска учащегося из школы.|
 |studentNumber|String| Student Number.|
