@@ -3,28 +3,28 @@ title: Тип ресурса timeZoneBase
 description: Основное представление часового пояса.
 localization_priority: Normal
 ms.openlocfilehash: 9fc07961aaa475980309d8c843b613da8b42e448
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511648"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523016"
 ---
-# <a name="timezonebase-resource-type"></a><span data-ttu-id="08611-103">Тип ресурса timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="08611-103">timeZoneBase resource type</span></span>
+# <a name="timezonebase-resource-type"></a><span data-ttu-id="cafef-103">Тип ресурса timeZoneBase</span><span class="sxs-lookup"><span data-stu-id="cafef-103">timeZoneBase resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="08611-104">Основное представление часового пояса.</span><span class="sxs-lookup"><span data-stu-id="08611-104">The basic representation of a time zone.</span></span>
+<span data-ttu-id="cafef-104">Основное представление часового пояса.</span><span class="sxs-lookup"><span data-stu-id="cafef-104">The basic representation of a time zone.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="08611-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="08611-105">Properties</span></span>
-| <span data-ttu-id="08611-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="08611-106">Property</span></span>     | <span data-ttu-id="08611-107">Тип</span><span class="sxs-lookup"><span data-stu-id="08611-107">Type</span></span>   |<span data-ttu-id="08611-108">Описание</span><span class="sxs-lookup"><span data-stu-id="08611-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="cafef-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cafef-105">Properties</span></span>
+| <span data-ttu-id="cafef-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cafef-106">Property</span></span>     | <span data-ttu-id="cafef-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cafef-107">Type</span></span>   |<span data-ttu-id="cafef-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cafef-108">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="08611-109">name</span><span class="sxs-lookup"><span data-stu-id="08611-109">name</span></span> | <span data-ttu-id="08611-110">строка</span><span class="sxs-lookup"><span data-stu-id="08611-110">string</span></span> | <span data-ttu-id="08611-111">Имя часового пояса</span><span class="sxs-lookup"><span data-stu-id="08611-111">The name of a time zone.</span></span> <span data-ttu-id="08611-112">(стандартного, например "Гавайско-Алеутское время (зима)" или особого, например "Особый часовой пояс").</span><span class="sxs-lookup"><span data-stu-id="08611-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
+| <span data-ttu-id="cafef-109">name</span><span class="sxs-lookup"><span data-stu-id="cafef-109">name</span></span> | <span data-ttu-id="cafef-110">string</span><span class="sxs-lookup"><span data-stu-id="cafef-110">string</span></span> | <span data-ttu-id="cafef-111">Имя часового пояса</span><span class="sxs-lookup"><span data-stu-id="cafef-111">The name of a time zone.</span></span> <span data-ttu-id="cafef-112">(стандартного, например "Гавайско-Алеутское время (зима)" или особого, например "Особый часовой пояс").</span><span class="sxs-lookup"><span data-stu-id="cafef-112">It can be a standard time zone name such as "Hawaii-Aleutian Standard Time", or "Customized Time Zone" for a custom time zone.</span></span> |
 
 
-## <a name="json-representation"></a><span data-ttu-id="08611-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="08611-113">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="cafef-113">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cafef-113">JSON representation</span></span>
 
-<span data-ttu-id="08611-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="08611-114">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="cafef-114">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cafef-114">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
