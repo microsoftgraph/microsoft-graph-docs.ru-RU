@@ -5,64 +5,62 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7634997b58ec2bb65df1b3914c541fc57c5c37f9
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461684"
 ---
-# <a name="calendar-getschedule"></a><span data-ttu-id="2a579-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="2a579-103">calendar: getSchedule</span></span>
+# <a name="calendar-getschedule"></a><span data-ttu-id="a8bd2-103">calendar: getSchedule</span><span class="sxs-lookup"><span data-stu-id="a8bd2-103">calendar: getSchedule</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="a8bd2-104">Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов (комнат или оборудования) для определенного периода времени.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
 
-<span data-ttu-id="2a579-104">Получение сведений о доступности коллекции пользователей, списков рассылки или ресурсов (комнат или оборудования) для определенного периода времени.</span><span class="sxs-lookup"><span data-stu-id="2a579-104">Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a8bd2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a8bd2-105">Permissions</span></span>
+<span data-ttu-id="a8bd2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a8bd2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="2a579-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2a579-105">Permissions</span></span>
-<span data-ttu-id="2a579-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2a579-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="2a579-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2a579-108">Permission type</span></span>      | <span data-ttu-id="2a579-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2a579-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a8bd2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a8bd2-108">Permission type</span></span>      | <span data-ttu-id="a8bd2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a8bd2-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2a579-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2a579-110">Delegated (work or school account)</span></span> | <span data-ttu-id="2a579-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a579-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
-|<span data-ttu-id="2a579-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2a579-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2a579-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="2a579-113">Not supported.</span></span> |
-|<span data-ttu-id="2a579-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2a579-114">Application</span></span> | <span data-ttu-id="2a579-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2a579-115">Calendars.Read, Calendars.ReadWrite</span></span> |
+|<span data-ttu-id="a8bd2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a8bd2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a8bd2-111">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8bd2-111">Calendars.Read, Calendars.ReadWrite</span></span>    |
+|<span data-ttu-id="a8bd2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a8bd2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a8bd2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-113">Not supported.</span></span> |
+|<span data-ttu-id="a8bd2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a8bd2-114">Application</span></span> | <span data-ttu-id="a8bd2-115">Calendars.Read, Calendars.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a8bd2-115">Calendars.Read, Calendars.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2a579-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2a579-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a8bd2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a8bd2-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/calendar/getSchedule 
 POST /users/{id|userPrincipalName}/calendar/getSchedule
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="2a579-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2a579-117">Request headers</span></span>
-| <span data-ttu-id="2a579-118">Имя</span><span class="sxs-lookup"><span data-stu-id="2a579-118">Name</span></span>       | <span data-ttu-id="2a579-119">Тип</span><span class="sxs-lookup"><span data-stu-id="2a579-119">Type</span></span> | <span data-ttu-id="2a579-120">Описание</span><span class="sxs-lookup"><span data-stu-id="2a579-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a8bd2-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a8bd2-117">Request headers</span></span>
+| <span data-ttu-id="a8bd2-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a8bd2-118">Name</span></span>       | <span data-ttu-id="a8bd2-119">Тип</span><span class="sxs-lookup"><span data-stu-id="a8bd2-119">Type</span></span> | <span data-ttu-id="a8bd2-120">Описание</span><span class="sxs-lookup"><span data-stu-id="a8bd2-120">Description</span></span>|
 |:-----------|:------|:----------|
-| <span data-ttu-id="2a579-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="2a579-121">Authorization</span></span>  | <span data-ttu-id="2a579-122">string</span><span class="sxs-lookup"><span data-stu-id="2a579-122">string</span></span>  | <span data-ttu-id="2a579-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2a579-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2a579-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2a579-125">Content-Type</span></span>  | <span data-ttu-id="2a579-126">string</span><span class="sxs-lookup"><span data-stu-id="2a579-126">string</span></span> | <span data-ttu-id="2a579-127">Характер данных в тексте объекта (application/json).</span><span class="sxs-lookup"><span data-stu-id="2a579-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="2a579-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2a579-128">Required.</span></span>  |
-| <span data-ttu-id="2a579-129">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="2a579-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="2a579-130">string</span><span class="sxs-lookup"><span data-stu-id="2a579-130">string</span></span> | <span data-ttu-id="2a579-131">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="2a579-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="2a579-132">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="2a579-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="2a579-133">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="2a579-133">Optional.</span></span> |
+| <span data-ttu-id="a8bd2-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="a8bd2-121">Authorization</span></span>  | <span data-ttu-id="a8bd2-122">string</span><span class="sxs-lookup"><span data-stu-id="a8bd2-122">string</span></span>  | <span data-ttu-id="a8bd2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a8bd2-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="a8bd2-125">Content-Type</span></span>  | <span data-ttu-id="a8bd2-126">string</span><span class="sxs-lookup"><span data-stu-id="a8bd2-126">string</span></span> | <span data-ttu-id="a8bd2-127">Характер данных в тексте объекта (application/json).</span><span class="sxs-lookup"><span data-stu-id="a8bd2-127">Nature of the data in the body of an entity, which is application/json.</span></span> <span data-ttu-id="a8bd2-128">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-128">Required.</span></span>  |
+| <span data-ttu-id="a8bd2-129">Prefer: outlook.timezone</span><span class="sxs-lookup"><span data-stu-id="a8bd2-129">Prefer: outlook.timezone</span></span> | <span data-ttu-id="a8bd2-130">string</span><span class="sxs-lookup"><span data-stu-id="a8bd2-130">string</span></span> | <span data-ttu-id="a8bd2-131">С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-131">Use this to specify the time zone for start and end times in the response.</span></span> <span data-ttu-id="a8bd2-132">Если он не задан, эти значения времени возвращаются в формате UTC.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-132">If not specified, those time values are returned in UTC.</span></span> <span data-ttu-id="a8bd2-133">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-133">Optional.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2a579-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2a579-134">Request body</span></span>
-<span data-ttu-id="2a579-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="2a579-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a8bd2-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a8bd2-134">Request body</span></span>
+<span data-ttu-id="a8bd2-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2a579-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="2a579-136">Property</span></span>     | <span data-ttu-id="2a579-137">Тип</span><span class="sxs-lookup"><span data-stu-id="2a579-137">Type</span></span>   |<span data-ttu-id="2a579-138">Описание</span><span class="sxs-lookup"><span data-stu-id="2a579-138">Description</span></span>|
+| <span data-ttu-id="a8bd2-136">Свойство</span><span class="sxs-lookup"><span data-stu-id="a8bd2-136">Property</span></span>     | <span data-ttu-id="a8bd2-137">Тип</span><span class="sxs-lookup"><span data-stu-id="a8bd2-137">Type</span></span>   |<span data-ttu-id="a8bd2-138">Описание</span><span class="sxs-lookup"><span data-stu-id="a8bd2-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2a579-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="2a579-139">availabilityViewInterval</span></span>|<span data-ttu-id="2a579-140">Int32</span><span class="sxs-lookup"><span data-stu-id="2a579-140">Int32</span></span>|<span data-ttu-id="2a579-141">Представляет длительность периода времени в свойстве **availabilityView** отклика.</span><span class="sxs-lookup"><span data-stu-id="2a579-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="2a579-142">Значение по умолчанию: 30 минут. Минимальное значение: 6. Максимальное значение: 1440.</span><span class="sxs-lookup"><span data-stu-id="2a579-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="2a579-143">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="2a579-143">Optional.</span></span>|
-|<span data-ttu-id="2a579-144">endTime</span><span class="sxs-lookup"><span data-stu-id="2a579-144">endTime</span></span>|[<span data-ttu-id="2a579-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="2a579-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="2a579-146">Дата, время и часовой пояс завершения периода.</span><span class="sxs-lookup"><span data-stu-id="2a579-146">The date, time, and time zone that the period ends.</span></span>|
-|<span data-ttu-id="2a579-147">schedules</span><span class="sxs-lookup"><span data-stu-id="2a579-147">schedules</span></span>|<span data-ttu-id="2a579-148">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="2a579-148">String collection</span></span>|<span data-ttu-id="2a579-149">Коллекция SMTP-адресов пользователей, списков рассылки или ресурсов для получения сведений о доступности.</span><span class="sxs-lookup"><span data-stu-id="2a579-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
-|<span data-ttu-id="2a579-150">startTime</span><span class="sxs-lookup"><span data-stu-id="2a579-150">startTime</span></span>|[<span data-ttu-id="2a579-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="2a579-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="2a579-152">Дата, время и часовой пояс начала периода.</span><span class="sxs-lookup"><span data-stu-id="2a579-152">The date, time, and time zone that the period starts.</span></span>|
+|<span data-ttu-id="a8bd2-139">availabilityViewInterval</span><span class="sxs-lookup"><span data-stu-id="a8bd2-139">availabilityViewInterval</span></span>|<span data-ttu-id="a8bd2-140">Int32</span><span class="sxs-lookup"><span data-stu-id="a8bd2-140">Int32</span></span>|<span data-ttu-id="a8bd2-141">Представляет длительность периода времени в свойстве **availabilityView** отклика.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-141">Represents the duration of a time slot in an **availabilityView** in the response.</span></span> <span data-ttu-id="a8bd2-142">Значение по умолчанию: 30 минут. Минимальное значение: 6. Максимальное значение: 1440.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-142">The default is 30 minutes, minimum is 6, maximum is 1440.</span></span> <span data-ttu-id="a8bd2-143">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-143">Optional.</span></span>|
+|<span data-ttu-id="a8bd2-144">endTime</span><span class="sxs-lookup"><span data-stu-id="a8bd2-144">endTime</span></span>|[<span data-ttu-id="a8bd2-145">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="a8bd2-145">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="a8bd2-146">Дата, время и часовой пояс завершения периода.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-146">The date, time, and time zone that the period ends.</span></span>|
+|<span data-ttu-id="a8bd2-147">schedules</span><span class="sxs-lookup"><span data-stu-id="a8bd2-147">schedules</span></span>|<span data-ttu-id="a8bd2-148">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="a8bd2-148">String collection</span></span>|<span data-ttu-id="a8bd2-149">Коллекция SMTP-адресов пользователей, списков рассылки или ресурсов для получения сведений о доступности.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-149">A collection of SMTP addresses of users, distribution lists, or resources to get availability information for.</span></span>|
+|<span data-ttu-id="a8bd2-150">startTime</span><span class="sxs-lookup"><span data-stu-id="a8bd2-150">startTime</span></span>|[<span data-ttu-id="a8bd2-151">dateTimeTimeZone</span><span class="sxs-lookup"><span data-stu-id="a8bd2-151">dateTimeTimeZone</span></span>](../resources/datetimetimezone.md)|<span data-ttu-id="a8bd2-152">Дата, время и часовой пояс начала периода.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-152">The date, time, and time zone that the period starts.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2a579-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a579-153">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a8bd2-153">Отклик</span><span class="sxs-lookup"><span data-stu-id="a8bd2-153">Response</span></span>
 
-<span data-ttu-id="2a579-154">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [scheduleInformation](../resources/scheduleinformation.md) для каждого объекта в параметре `schedules`.</span><span class="sxs-lookup"><span data-stu-id="2a579-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
-## <a name="example"></a><span data-ttu-id="2a579-155">Пример</span><span class="sxs-lookup"><span data-stu-id="2a579-155">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="2a579-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="2a579-156">Request</span></span>
-<span data-ttu-id="2a579-157">В приведенном ниже примере возвращаются сведения о доступности двух пользователей для определенной даты, времени и часового пояса.</span><span class="sxs-lookup"><span data-stu-id="2a579-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
+<span data-ttu-id="a8bd2-154">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [scheduleInformation](../resources/scheduleinformation.md) для каждого объекта в параметре `schedules`.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-154">If successful, this method returns a `200 OK` response code and a collection of [scheduleInformation](../resources/scheduleinformation.md) objects for each object in the `schedules` parameter.</span></span>
+## <a name="example"></a><span data-ttu-id="a8bd2-155">Пример</span><span class="sxs-lookup"><span data-stu-id="a8bd2-155">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="a8bd2-156">Запрос</span><span class="sxs-lookup"><span data-stu-id="a8bd2-156">Request</span></span>
+<span data-ttu-id="a8bd2-157">В приведенном ниже примере возвращаются сведения о доступности двух пользователей для определенной даты, времени и часового пояса.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-157">The following example gets the availability information for two users for the specified date, time, and time zone.</span></span>
 
 <!-- {
   "blockType": "ignored",
   "name": "calendar_getSchedule"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendar/getschedule 
+POST https://graph.microsoft.com/v1.0/me/calendar/getschedule 
 Prefer: outlook.timezone="Pacific Standard Time"
 Content-Type: application/json
 
@@ -80,8 +78,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2a579-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="2a579-158">Response</span></span>
-<span data-ttu-id="2a579-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2a579-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a8bd2-158">Отклик</span><span class="sxs-lookup"><span data-stu-id="a8bd2-158">Response</span></span>
+<span data-ttu-id="a8bd2-p106">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a8bd2-p106">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "ignored",
   "truncated": true,
@@ -93,7 +91,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.scheduleInformation)",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.scheduleInformation)",
     "value": [
         {
             "scheduleId": "adelev@contoso.onmicrosoft.com",
@@ -234,9 +232,6 @@ Content-type: application/json
   "description": "calendar: getSchedule",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-getschedule.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }
 -->

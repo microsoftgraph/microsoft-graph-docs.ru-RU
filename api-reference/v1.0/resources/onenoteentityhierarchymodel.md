@@ -1,23 +1,23 @@
 ---
-title: onenoteEntityHierarchyModel ресурсов
-description: Это базовый тип для сущностей OneNote.
+title: ресурс Оненотинтитихиерарчимодел
+description: Это базовый тип для объектов OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: a25e50f6929ae6b13bbe59839f035d2e4a31a6fb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462622"
 ---
-# <a name="onenoteentityhierarchymodel-resource"></a><span data-ttu-id="b38f6-103">onenoteEntityHierarchyModel ресурсов</span><span class="sxs-lookup"><span data-stu-id="b38f6-103">onenoteEntityHierarchyModel resource</span></span>
+# <a name="onenoteentityhierarchymodel-resource"></a><span data-ttu-id="4938f-103">ресурс Оненотинтитихиерарчимодел</span><span class="sxs-lookup"><span data-stu-id="4938f-103">onenoteEntityHierarchyModel resource</span></span>
 
-<span data-ttu-id="b38f6-104">Это базовый тип для сущностей OneNote.</span><span class="sxs-lookup"><span data-stu-id="b38f6-104">This is a base type for OneNote entities.</span></span>
+<span data-ttu-id="4938f-104">Это базовый тип для объектов OneNote.</span><span class="sxs-lookup"><span data-stu-id="4938f-104">This is a base type for OneNote entities.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="b38f6-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="b38f6-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4938f-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4938f-105">JSON representation</span></span>
 
-<span data-ttu-id="b38f6-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="b38f6-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4938f-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4938f-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,14 +38,14 @@ ms.locfileid: "27990098"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="b38f6-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="b38f6-107">Properties</span></span>
-## <a name="properties"></a><span data-ttu-id="b38f6-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="b38f6-108">Properties</span></span>
-| <span data-ttu-id="b38f6-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="b38f6-109">Property</span></span>     | <span data-ttu-id="b38f6-110">Тип</span><span class="sxs-lookup"><span data-stu-id="b38f6-110">Type</span></span>   |<span data-ttu-id="b38f6-111">Описание</span><span class="sxs-lookup"><span data-stu-id="b38f6-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="4938f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4938f-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4938f-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="4938f-108">Properties</span></span>
+| <span data-ttu-id="4938f-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="4938f-109">Property</span></span>     | <span data-ttu-id="4938f-110">Тип</span><span class="sxs-lookup"><span data-stu-id="4938f-110">Type</span></span>   |<span data-ttu-id="4938f-111">Описание</span><span class="sxs-lookup"><span data-stu-id="4938f-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="b38f6-112">displayName</span><span class="sxs-lookup"><span data-stu-id="b38f6-112">displayName</span></span>|<span data-ttu-id="b38f6-113">Строка</span><span class="sxs-lookup"><span data-stu-id="b38f6-113">String</span></span>|<span data-ttu-id="b38f6-114">Имя записной книжки.</span><span class="sxs-lookup"><span data-stu-id="b38f6-114">The name of the notebook.</span></span>|
-|<span data-ttu-id="b38f6-115">createdBy</span><span class="sxs-lookup"><span data-stu-id="b38f6-115">createdBy</span></span>|[<span data-ttu-id="b38f6-116">identitySet</span><span class="sxs-lookup"><span data-stu-id="b38f6-116">identitySet</span></span>](identityset.md)|<span data-ttu-id="b38f6-p101">Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b38f6-p101">Identity of the user, device, and application which created the item. Read-only.</span></span>|
-|<span data-ttu-id="b38f6-119">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="b38f6-119">lastModifiedBy</span></span>|[<span data-ttu-id="b38f6-120">identitySet</span><span class="sxs-lookup"><span data-stu-id="b38f6-120">identitySet</span></span>](identityset.md)|<span data-ttu-id="b38f6-p102">Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b38f6-p102">Identity of the user, device, and application which created the item. Read-only.</span></span>|
-|<span data-ttu-id="b38f6-123">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="b38f6-123">lastModifiedDateTime</span></span>|<span data-ttu-id="b38f6-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="b38f6-124">DateTimeOffset</span></span>|<span data-ttu-id="b38f6-p103">Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="b38f6-p103">The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.</span></span>|
+|<span data-ttu-id="4938f-112">displayName</span><span class="sxs-lookup"><span data-stu-id="4938f-112">displayName</span></span>|<span data-ttu-id="4938f-113">String</span><span class="sxs-lookup"><span data-stu-id="4938f-113">String</span></span>|<span data-ttu-id="4938f-114">Имя записной книжки.</span><span class="sxs-lookup"><span data-stu-id="4938f-114">The name of the notebook.</span></span>|
+|<span data-ttu-id="4938f-115">createdBy</span><span class="sxs-lookup"><span data-stu-id="4938f-115">createdBy</span></span>|[<span data-ttu-id="4938f-116">identitySet</span><span class="sxs-lookup"><span data-stu-id="4938f-116">identitySet</span></span>](identityset.md)|<span data-ttu-id="4938f-p101">Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4938f-p101">Identity of the user, device, and application which created the item. Read-only.</span></span>|
+|<span data-ttu-id="4938f-119">lastModifiedBy</span><span class="sxs-lookup"><span data-stu-id="4938f-119">lastModifiedBy</span></span>|[<span data-ttu-id="4938f-120">identitySet</span><span class="sxs-lookup"><span data-stu-id="4938f-120">identitySet</span></span>](identityset.md)|<span data-ttu-id="4938f-p102">Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4938f-p102">Identity of the user, device, and application which created the item. Read-only.</span></span>|
+|<span data-ttu-id="4938f-123">lastModifiedDateTime</span><span class="sxs-lookup"><span data-stu-id="4938f-123">lastModifiedDateTime</span></span>|<span data-ttu-id="4938f-124">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="4938f-124">DateTimeOffset</span></span>|<span data-ttu-id="4938f-125">Дата и время последнего изменения записной книжки.</span><span class="sxs-lookup"><span data-stu-id="4938f-125">The date and time when the notebook was last modified.</span></span> <span data-ttu-id="4938f-126">Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC).</span><span class="sxs-lookup"><span data-stu-id="4938f-126">The timestamp represents date and time information using ISO 8601 format and is always in UTC time.</span></span> <span data-ttu-id="4938f-127">Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="4938f-127">For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.</span></span> <span data-ttu-id="4938f-128">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="4938f-128">Read-only.</span></span>|
 
 <!-- uuid: 8b1af557-1a7c-4432-86eb-94989c2d4b54
 2015-10-25 14:57:30 UTC -->
