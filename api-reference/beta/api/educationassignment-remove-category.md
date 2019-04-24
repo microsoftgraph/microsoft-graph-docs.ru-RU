@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 9b8d3b2099173911f3ddbadf17a36ba17a4c9027
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30801039"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464861"
 ---
 # <a name="remove-educationcategory"></a>Удаление Едукатионкатегори
 
@@ -41,7 +41,7 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -55,7 +55,7 @@ DELETE /education/classes/{id}/assignments/{id}/categories/{id}/$ref
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories/ec98f158-341d-4fea-9f8c-14a250d489ac/$ref
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

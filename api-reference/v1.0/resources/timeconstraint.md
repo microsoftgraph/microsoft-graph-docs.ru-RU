@@ -1,17 +1,17 @@
 ---
 title: Тип ресурсов timeConstraint
-description: Ограничивает предложения по времени проведения собрания определенными временными рамками и днями недели в соответствии с указанным описанием действия и доступными периодами времени.
+description: Запрещает предложения по времени собранию определенным часам и дням недели в соответствии с заданным характером активности и временем открытия.
 localization_priority: Normal
 ms.openlocfilehash: b6e239abbd0d9f7b4f83df4a60625a2f88131476
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815094"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456960"
 ---
 # <a name="timeconstraint-resource-type"></a>Тип ресурсов timeConstraint
 
-Ограничивает предложения по времени проведения собрания определенными временными рамками и днями недели в соответствии с указанным описанием действия и доступными периодами времени.
+Запрещает предложения по времени собранию определенным часам и дням недели в соответствии с заданным характером активности и временем открытия.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -35,7 +35,7 @@ ms.locfileid: "27815094"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|activityDomain|activityDomain|Природы действия, необязательно. Возможные значения: `work`, `personal`, `unrestricted`, или `unknown`.|
+|activityDomain|activityDomain|Описание действия (необязательно). `work`Возможные значения: `personal`,, `unrestricted`, или. `unknown`|
 |timeslots|Коллекция [timeSlot](timeslot.md)|Массив, содержащий значения периодов времени.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

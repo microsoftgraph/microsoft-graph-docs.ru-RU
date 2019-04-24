@@ -1,28 +1,28 @@
 ---
-title: 'Вызовите: ответ'
-description: Ответ на входящий звонок.
+title: 'вызов: ответ'
+description: Ответ на входящий вызов.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c5a93121e5f01939ad28808f7055fcad98a734ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530050"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461324"
 ---
-# <a name="call-answer"></a>Вызовите: ответ
+# <a name="call-answer"></a>вызов: ответ
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ответ на входящий звонок.
+Ответ на входящий вызов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                 |
 | :-------------- | :-----------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                        |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                        |
 | Для приложений     | Нет                                                        |
 
@@ -43,12 +43,12 @@ POST /applications/{id}/calls/{id}/answer
 
 | Параметр        | Тип                                     |Описание                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Идентификатор обратного вызова или подписки, на котором будет доставлено обратных вызовов. Обязательный.                                                               |
-|acceptedModalities|Коллекция String                         |Список принимать модальности. Приведены возможные значения: `unknown`, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`, `data`. Обязательный. |
-|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Конфигурация мультимедиа. Обязательный.                                                                                                            |
+|callbackUri       |String                                    |Идентификатор обратного вызова или подписки, для которой будут предоставляться обратные вызовы. Потребоваться                                                               |
+|Акцептедмодалитиес|Коллекция строк                         |Список принимаемых модальности. Возможные `unknown`значения:, `audio`, `video`, `screenSharing`, `videoBasedScreenSharing`,. `data` Потребоваться |
+|mediaConfig       |[mediaConfig](../resources/mediaconfig.md)|Настройка мультимедиа. Потребоваться                                                                                                            |
 
-## <a name="response"></a>Ответ
-Этот метод возвращает `202 Accepted` код ответа.
+## <a name="response"></a>Отклик
+Этот метод возвращает `202 Accepted` код отклика.
 
 ## <a name="examples"></a>Примеры
 В приведенном ниже примере показано, как вызывать этот API.
@@ -77,7 +77,7 @@ Content-Length: 211
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {
@@ -89,9 +89,9 @@ Content-Length: 211
 HTTP/1.1 202 Accepted
 ```
 
-### <a name="answer-voip-call-with-service-hosted-media"></a>VOIP ответить на звонок с помощью службы, размещенной мультимедиа
+### <a name="answer-voip-call-with-service-hosted-media"></a>Отвечать на звонки по VOIP с размещенными на службах носителями
 
-##### <a name="notification---incoming"></a>Уведомления - входящие
+##### <a name="notification---incoming"></a>Уведомление — входящий
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -159,7 +159,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -197,7 +197,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>Уведомления - Установка
+##### <a name="notification---establishing"></a>Установка уведомления
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -226,7 +226,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Уведомления - соединения
+##### <a name="notification---established"></a>Установленное уведомление
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -255,9 +255,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="answer-voip-call-with-application-hosted-media"></a>Отвечать на звонок по протоколу VOIP с приложение, размещенное мультимедиа
+### <a name="answer-voip-call-with-application-hosted-media"></a>Ответ на звонок VOIP с размещенными на сервере приложениями
 
-##### <a name="notification---incoming"></a>Уведомления - входящие
+##### <a name="notification---incoming"></a>Уведомление — входящий
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -312,7 +312,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -341,7 +341,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---establishing"></a>Уведомления - Установка
+##### <a name="notification---establishing"></a>Установка уведомления
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -370,7 +370,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Уведомления - соединения
+##### <a name="notification---established"></a>Установленное уведомление
 
 ```http
 POST https://bot.contoso.com/api/calls

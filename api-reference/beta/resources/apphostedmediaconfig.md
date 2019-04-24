@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса appHostedMediaConfig
-description: Стек мультимедиа, размещенных в приложении.
+title: Тип ресурса Апфостедмедиаконфиг
+description: Стек мультимедиа, размещенный в приложении.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a2e52c1c4d48649c5763be643f8b2ededb71bce5
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460900"
 ---
-# <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса appHostedMediaConfig
+# <a name="apphostedmediaconfig-resource-type"></a>Тип ресурса Апфостедмедиаконфиг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Стек мультимедиа, размещенных в приложении.
+Стек мультимедиа, размещенный в приложении.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                          | Тип    | Описание                                                     |
 | :-------------------------------- | :------ | :---------------------------------------------------------------|
-| BLOB-объектов                              | String  | Blob конфигурации мультимедиа, созданные агентом смарт-мультимедиа.    |
-| removeFromDefaultAudioGroup       | Boolean | Удаление звук из группы по умолчанию звука                       |
+| характеристики                              | String  | Большой двоичный объект конфигурации мультимедиа, созданный агентом интеллектуальных носителей.    |
+| Ремовефромдефаултаудиограуп       | Логический | Удаление звука из группы "звук" по умолчанию                       |
 
 ## <a name="json-representation"></a>Представление JSON
 

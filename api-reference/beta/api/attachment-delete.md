@@ -1,28 +1,28 @@
 ---
 title: Удаление вложения
-description: Удаление вложения из события календаря, сообщения, задачи Outlook или post.
+description: Удаление вложения из события календаря, сообщения, задачи Outlook или POST.
 localization_priority: Normal
 ms.openlocfilehash: 5bb24fc97a2f99dbb0fbec77e2de941f770c27fc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510899"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458973"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление вложения из календаря [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md).
+Удаление вложения из [события](../resources/event.md)календаря, [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* При доступе к вложениям в сообщениях: Mail.ReadWrite.
-* При доступе к вложениям в данных о событиях: Calendars.ReadWrite.
-* Если доступ к вложениям с задачами Outlook: Tasks.ReadWrite
-* Если доступ к вложениям в группу публикации: Group.ReadWrite.All
+* При доступе к вложениям в сообщениях: mail. ReadWrite
+* При доступе к вложениям в событиях: Calendars. ReadWrite
+* При доступе к вложениям в задачах Outlook: Tasks. ReadWrite
+* При доступе к вложениям в записях групп: Group. ReadWrite. ALL
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All
@@ -59,14 +59,14 @@ DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.
+Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.<!-- { "blockType": "ignored" } -->
 
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
 ```
 
-Вложения для [задач Outlook](../resources/outlooktask.md).
+Вложения для [задачи Outlook](../resources/outlooktask.md).
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -90,9 +90,9 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -110,7 +110,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 DELETE https://graph.microsoft.com/beta/me/events/{id}/attachments/{id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

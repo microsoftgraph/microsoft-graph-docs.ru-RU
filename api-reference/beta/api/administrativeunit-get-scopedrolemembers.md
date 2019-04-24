@@ -1,21 +1,21 @@
 ---
-title: Получение scopedRoleMember
-description: Получение определенных scopedRoleMembership ресурсов.
+title: Получение Скопедролемембер
+description: Получение определенного ресурса Scopedrolemembership изменен.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0e961097184730922aebd4348f88b8570d5c24ca
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644100"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459471"
 ---
-# <a name="get-a-scopedrolemember"></a>Получение scopedRoleMember
+# <a name="get-a-scopedrolemember"></a>Получение Скопедролемембер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение определенных [scopedRoleMembership](../resources/scopedrolemembership.md) ресурсов.
+Получение определенного ресурса [scopedrolemembership изменен](../resources/scopedrolemembership.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -39,12 +39,12 @@ GET /administrativeUnits/{id}/scopedRoleMembers/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект запрошенный [scopedRoleMembership](../resources/scopedrolemembership.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и запрошенный объект [scopedrolemembership изменен](../resources/scopedrolemembership.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
