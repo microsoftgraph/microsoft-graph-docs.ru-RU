@@ -1,29 +1,29 @@
 ---
-title: Соглашения по списку
-description: Получение списка объектов соглашения.
+title: Список соглашений
+description: Получение списка объектов Agreement.
 localization_priority: Normal
 ms.openlocfilehash: 82674e81b6b059ffafedf3b9c15c19e90438dc28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525978"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459204"
 ---
-# <a name="list-agreements"></a><span data-ttu-id="611dc-103">Соглашения по списку</span><span class="sxs-lookup"><span data-stu-id="611dc-103">List agreements</span></span>
+# <a name="list-agreements"></a><span data-ttu-id="1fd20-103">Список соглашений</span><span class="sxs-lookup"><span data-stu-id="1fd20-103">List agreements</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="611dc-104">Получение списка объектов [соглашения](../resources/agreement.md) .</span><span class="sxs-lookup"><span data-stu-id="611dc-104">Retrieve a list of [agreement](../resources/agreement.md) objects.</span></span>
-## <a name="permissions"></a><span data-ttu-id="611dc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="611dc-105">Permissions</span></span>
-<span data-ttu-id="611dc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="611dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1fd20-104">Получение списка объектов [Agreement](../resources/agreement.md) .</span><span class="sxs-lookup"><span data-stu-id="1fd20-104">Retrieve a list of [agreement](../resources/agreement.md) objects.</span></span>
+## <a name="permissions"></a><span data-ttu-id="1fd20-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1fd20-105">Permissions</span></span>
+<span data-ttu-id="1fd20-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1fd20-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="611dc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="611dc-108">Permission type</span></span>                        | <span data-ttu-id="611dc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="611dc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="1fd20-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1fd20-108">Permission type</span></span>                        | <span data-ttu-id="1fd20-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1fd20-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------------------------|:---------------------------------------------------------|
-|<span data-ttu-id="611dc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="611dc-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="611dc-111">Agreement.Read.All</span><span class="sxs-lookup"><span data-stu-id="611dc-111">Agreement.Read.All</span></span> |
-|<span data-ttu-id="611dc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="611dc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="611dc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="611dc-113">Not supported.</span></span> |
-|<span data-ttu-id="611dc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="611dc-114">Application</span></span>                            | <span data-ttu-id="611dc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="611dc-115">Not supported.</span></span> |
+|<span data-ttu-id="1fd20-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1fd20-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="1fd20-111">Agreement.Read.All</span><span class="sxs-lookup"><span data-stu-id="1fd20-111">Agreement.Read.All</span></span> |
+|<span data-ttu-id="1fd20-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1fd20-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1fd20-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1fd20-113">Not supported.</span></span> |
+|<span data-ttu-id="1fd20-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1fd20-114">Application</span></span>                            | <span data-ttu-id="1fd20-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1fd20-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="611dc-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="611dc-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1fd20-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1fd20-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /agreements
@@ -33,17 +33,17 @@ GET /agreements
 This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
 -->
 
-## <a name="request-headers"></a><span data-ttu-id="611dc-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="611dc-117">Request headers</span></span>
-| <span data-ttu-id="611dc-118">Имя</span><span class="sxs-lookup"><span data-stu-id="611dc-118">Name</span></span>         | <span data-ttu-id="611dc-119">Тип</span><span class="sxs-lookup"><span data-stu-id="611dc-119">Type</span></span>        | <span data-ttu-id="611dc-120">Описание</span><span class="sxs-lookup"><span data-stu-id="611dc-120">Description</span></span> |
+## <a name="request-headers"></a><span data-ttu-id="1fd20-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1fd20-117">Request headers</span></span>
+| <span data-ttu-id="1fd20-118">Имя</span><span class="sxs-lookup"><span data-stu-id="1fd20-118">Name</span></span>         | <span data-ttu-id="1fd20-119">Тип</span><span class="sxs-lookup"><span data-stu-id="1fd20-119">Type</span></span>        | <span data-ttu-id="1fd20-120">Описание</span><span class="sxs-lookup"><span data-stu-id="1fd20-120">Description</span></span> |
 |:-------------|:------------|:------------|
-| <span data-ttu-id="611dc-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="611dc-121">Authorization</span></span> | <span data-ttu-id="611dc-122">string</span><span class="sxs-lookup"><span data-stu-id="611dc-122">string</span></span> | <span data-ttu-id="611dc-123">Маркер носителя</span><span class="sxs-lookup"><span data-stu-id="611dc-123">Bearer \{token\}.</span></span> <span data-ttu-id="611dc-124">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="611dc-124">Required.</span></span> |
+| <span data-ttu-id="1fd20-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="1fd20-121">Authorization</span></span> | <span data-ttu-id="1fd20-122">string</span><span class="sxs-lookup"><span data-stu-id="1fd20-122">string</span></span> | <span data-ttu-id="1fd20-p102">Носитель \{токен\}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1fd20-p102">Bearer \{token\}. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="611dc-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="611dc-125">Request body</span></span>
-<span data-ttu-id="611dc-126">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="611dc-126">Do not supply a request body for this method.</span></span>
-## <a name="response"></a><span data-ttu-id="611dc-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="611dc-127">Response</span></span>
-<span data-ttu-id="611dc-128">Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [соглашения](../resources/agreement.md) в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="611dc-128">If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="611dc-129">Пример</span><span class="sxs-lookup"><span data-stu-id="611dc-129">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="611dc-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="611dc-130">Request</span></span>
+## <a name="request-body"></a><span data-ttu-id="1fd20-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1fd20-125">Request body</span></span>
+<span data-ttu-id="1fd20-126">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="1fd20-126">Do not supply a request body for this method.</span></span>
+## <a name="response"></a><span data-ttu-id="1fd20-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="1fd20-127">Response</span></span>
+<span data-ttu-id="1fd20-128">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Agreement](../resources/agreement.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1fd20-128">If successful, this method returns a `200 OK` response code and collection of [agreement](../resources/agreement.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="1fd20-129">Пример</span><span class="sxs-lookup"><span data-stu-id="1fd20-129">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="1fd20-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="1fd20-130">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "get_agreements"
@@ -51,8 +51,8 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ```http
 GET https://graph.microsoft.com/beta/agreements
 ```
-##### <a name="response"></a><span data-ttu-id="611dc-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="611dc-131">Response</span></span>
-><span data-ttu-id="611dc-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="611dc-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="1fd20-131">Отклик</span><span class="sxs-lookup"><span data-stu-id="1fd20-131">Response</span></span>
+><span data-ttu-id="1fd20-p103">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1fd20-p103">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

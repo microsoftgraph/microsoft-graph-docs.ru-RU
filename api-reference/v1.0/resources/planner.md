@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса planner
-description: Ресурс **planner** — это точка входа для объектной модели Планировщика. Он возвращает одноэлементный ресурс **planner**.  Он не содержит свойства, которые можно использовать.
+title: Тип ресурса планировщика
+description: Ресурс **планировщика** — точка входа для объектной модели планировщика. Он возвращает одноэлементный ресурс **планировщика** .  Он не содержит пригодных для использования свойств.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: f6d25238436b79dec0397df1d005e67e6b17239a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27955137"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462279"
 ---
-# <a name="planner-resource-type"></a><span data-ttu-id="62501-105">Тип ресурса planner</span><span class="sxs-lookup"><span data-stu-id="62501-105">planner resource type</span></span>
+# <a name="planner-resource-type"></a><span data-ttu-id="bb310-105">Тип ресурса планировщика</span><span class="sxs-lookup"><span data-stu-id="bb310-105">planner resource type</span></span>
 
-<span data-ttu-id="62501-p102">Ресурс **planner** — это точка входа для объектной модели Планировщика. Он возвращает одноэлементный ресурс **planner**.  Он не содержит свойства, которые можно использовать.</span><span class="sxs-lookup"><span data-stu-id="62501-p102">The **planner** resource is the entry point for the Planner object model. It returns a singleton **planner** resource.  It doesn't contain any usable properties.</span></span>
+<span data-ttu-id="bb310-106">Ресурс **планировщика** — точка входа для объектной модели планировщика.</span><span class="sxs-lookup"><span data-stu-id="bb310-106">The **planner** resource is the entry point for the Planner object model.</span></span> <span data-ttu-id="bb310-107">Он возвращает одноэлементный ресурс **планировщика** .</span><span class="sxs-lookup"><span data-stu-id="bb310-107">It returns a singleton **planner** resource.</span></span>  <span data-ttu-id="bb310-108">Он не содержит пригодных для использования свойств.</span><span class="sxs-lookup"><span data-stu-id="bb310-108">It doesn't contain any usable properties.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="62501-109">Методы</span><span class="sxs-lookup"><span data-stu-id="62501-109">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="bb310-109">Методы</span><span class="sxs-lookup"><span data-stu-id="bb310-109">Methods</span></span>
 
-| <span data-ttu-id="62501-110">Метод</span><span class="sxs-lookup"><span data-stu-id="62501-110">Method</span></span>           | <span data-ttu-id="62501-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="62501-111">Return Type</span></span>    |<span data-ttu-id="62501-112">Описание</span><span class="sxs-lookup"><span data-stu-id="62501-112">Description</span></span>|
+| <span data-ttu-id="bb310-110">Метод</span><span class="sxs-lookup"><span data-stu-id="bb310-110">Method</span></span>           | <span data-ttu-id="bb310-111">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="bb310-111">Return Type</span></span>    |<span data-ttu-id="bb310-112">Описание</span><span class="sxs-lookup"><span data-stu-id="bb310-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="62501-113">Создание объекта plannerBucket</span><span class="sxs-lookup"><span data-stu-id="62501-113">Create plannerBucket</span></span>](../api/planner-post-buckets.md) |[<span data-ttu-id="62501-114">plannerBucket</span><span class="sxs-lookup"><span data-stu-id="62501-114">plannerBucket</span></span>](plannerbucket.md)| <span data-ttu-id="62501-115">Создайте объект **plannerBucket**, отправив запрос POST в коллекцию buckets.</span><span class="sxs-lookup"><span data-stu-id="62501-115">Create a new **plannerBucket** by posting to the buckets collection.</span></span>|
-|[<span data-ttu-id="62501-116">Создание объекта plannerPlan</span><span class="sxs-lookup"><span data-stu-id="62501-116">Create plannerPlan</span></span>](../api/planner-post-plans.md) |[<span data-ttu-id="62501-117">plannerPlan</span><span class="sxs-lookup"><span data-stu-id="62501-117">plannerPlan</span></span>](plannerplan.md)| <span data-ttu-id="62501-118">Создайте объект **plannerPlan**, отправив запрос POST в коллекцию plans.</span><span class="sxs-lookup"><span data-stu-id="62501-118">Create a new **plannerPlan** by posting to the plans collection.</span></span>|
-|[<span data-ttu-id="62501-119">Создание объекта plannerTask</span><span class="sxs-lookup"><span data-stu-id="62501-119">Create plannerTask</span></span>](../api/planner-post-tasks.md) |[<span data-ttu-id="62501-120">plannerTask</span><span class="sxs-lookup"><span data-stu-id="62501-120">plannerTask</span></span>](plannertask.md)| <span data-ttu-id="62501-121">Создайте объект **plannerTask**, отправив запрос POST в коллекцию tasks.</span><span class="sxs-lookup"><span data-stu-id="62501-121">Create a new **plannerTask** by posting to the tasks collection.</span></span>|
+|[<span data-ttu-id="bb310-113">Создание объекта plannerBucket</span><span class="sxs-lookup"><span data-stu-id="bb310-113">Create plannerBucket</span></span>](../api/planner-post-buckets.md) |<span data-ttu-id="bb310-114">[plannerBucket](plannerbucket.md);</span><span class="sxs-lookup"><span data-stu-id="bb310-114">[plannerBucket](plannerbucket.md)</span></span>| <span data-ttu-id="bb310-115">Создание нового **plannerBucket** путем публикации в коллекции "сегменты".</span><span class="sxs-lookup"><span data-stu-id="bb310-115">Create a new **plannerBucket** by posting to the buckets collection.</span></span>|
+|[<span data-ttu-id="bb310-116">Создание объекта plannerPlan</span><span class="sxs-lookup"><span data-stu-id="bb310-116">Create plannerPlan</span></span>](../api/planner-post-plans.md) |[<span data-ttu-id="bb310-117">plannerPlan</span><span class="sxs-lookup"><span data-stu-id="bb310-117">plannerPlan</span></span>](plannerplan.md)| <span data-ttu-id="bb310-118">Создание нового **plannerPlan** путем публикации в коллекции plans.</span><span class="sxs-lookup"><span data-stu-id="bb310-118">Create a new **plannerPlan** by posting to the plans collection.</span></span>|
+|[<span data-ttu-id="bb310-119">Создание объекта plannerTask</span><span class="sxs-lookup"><span data-stu-id="bb310-119">Create plannerTask</span></span>](../api/planner-post-tasks.md) |<span data-ttu-id="bb310-120">[plannerTask](plannertask.md);</span><span class="sxs-lookup"><span data-stu-id="bb310-120">[plannerTask](plannertask.md)</span></span>| <span data-ttu-id="bb310-121">Создание нового **plannerTask** путем публикации в коллекции Tasks.</span><span class="sxs-lookup"><span data-stu-id="bb310-121">Create a new **plannerTask** by posting to the tasks collection.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="62501-122">Связи</span><span class="sxs-lookup"><span data-stu-id="62501-122">Relationships</span></span>
-| <span data-ttu-id="62501-123">Связь</span><span class="sxs-lookup"><span data-stu-id="62501-123">Relationship</span></span> | <span data-ttu-id="62501-124">Тип</span><span class="sxs-lookup"><span data-stu-id="62501-124">Type</span></span>   |<span data-ttu-id="62501-125">Описание</span><span class="sxs-lookup"><span data-stu-id="62501-125">Description</span></span>|
+## <a name="relationships"></a><span data-ttu-id="bb310-122">Связи</span><span class="sxs-lookup"><span data-stu-id="bb310-122">Relationships</span></span>
+| <span data-ttu-id="bb310-123">Отношение</span><span class="sxs-lookup"><span data-stu-id="bb310-123">Relationship</span></span> | <span data-ttu-id="bb310-124">Тип</span><span class="sxs-lookup"><span data-stu-id="bb310-124">Type</span></span>   |<span data-ttu-id="bb310-125">Описание</span><span class="sxs-lookup"><span data-stu-id="bb310-125">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="62501-126">buckets</span><span class="sxs-lookup"><span data-stu-id="62501-126">buckets</span></span>|<span data-ttu-id="62501-127">Коллекция объектов [plannerBucket](plannerbucket.md)</span><span class="sxs-lookup"><span data-stu-id="62501-127">[plannerBucket](plannerbucket.md) collection</span></span>| <span data-ttu-id="62501-p103">Только для чтения. Допускает значение null. Возвращает коллекцию указанных сегментов.</span><span class="sxs-lookup"><span data-stu-id="62501-p103">Read-only. Nullable. Returns a collection of the specified buckets</span></span>|
-|<span data-ttu-id="62501-131">plans</span><span class="sxs-lookup"><span data-stu-id="62501-131">plans</span></span>|<span data-ttu-id="62501-132">Коллекция объектов [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="62501-132">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="62501-p104">Только для чтения. Допускает значение null. Возвращает коллекцию указанных планов.</span><span class="sxs-lookup"><span data-stu-id="62501-p104">Read-only. Nullable. Returns a collection of the specified plans</span></span>|
-|<span data-ttu-id="62501-136">tasks</span><span class="sxs-lookup"><span data-stu-id="62501-136">tasks</span></span>|<span data-ttu-id="62501-137">Коллекция объектов [plannerTask](plannertask.md)</span><span class="sxs-lookup"><span data-stu-id="62501-137">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="62501-p105">Только для чтения. Допускает значение null. Возвращает коллекцию указанных задач.</span><span class="sxs-lookup"><span data-stu-id="62501-p105">Read-only. Nullable. Returns a collection of the specified tasks</span></span>|
+|<span data-ttu-id="bb310-126">сегментов</span><span class="sxs-lookup"><span data-stu-id="bb310-126">buckets</span></span>|<span data-ttu-id="bb310-127">Коллекция [plannerBucket](plannerbucket.md)</span><span class="sxs-lookup"><span data-stu-id="bb310-127">[plannerBucket](plannerbucket.md) collection</span></span>| <span data-ttu-id="bb310-128">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bb310-128">Read-only.</span></span> <span data-ttu-id="bb310-129">Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="bb310-129">Nullable.</span></span> <span data-ttu-id="bb310-130">Возвращает коллекцию указанных сегментов</span><span class="sxs-lookup"><span data-stu-id="bb310-130">Returns a collection of the specified buckets</span></span>|
+|<span data-ttu-id="bb310-131">планирует</span><span class="sxs-lookup"><span data-stu-id="bb310-131">plans</span></span>|<span data-ttu-id="bb310-132">Коллекция объектов [plannerPlan](plannerplan.md)</span><span class="sxs-lookup"><span data-stu-id="bb310-132">[plannerPlan](plannerplan.md) collection</span></span>| <span data-ttu-id="bb310-133">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bb310-133">Read-only.</span></span> <span data-ttu-id="bb310-134">Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="bb310-134">Nullable.</span></span> <span data-ttu-id="bb310-135">Возвращает коллекцию указанных планов</span><span class="sxs-lookup"><span data-stu-id="bb310-135">Returns a collection of the specified plans</span></span>|
+|<span data-ttu-id="bb310-136">tasks</span><span class="sxs-lookup"><span data-stu-id="bb310-136">tasks</span></span>|<span data-ttu-id="bb310-137">Коллекция [plannerTask](plannertask.md)</span><span class="sxs-lookup"><span data-stu-id="bb310-137">[plannerTask](plannertask.md) collection</span></span>| <span data-ttu-id="bb310-138">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="bb310-138">Read-only.</span></span> <span data-ttu-id="bb310-139">Допускается значение null.</span><span class="sxs-lookup"><span data-stu-id="bb310-139">Nullable.</span></span> <span data-ttu-id="bb310-140">Возвращает коллекцию указанных задач</span><span class="sxs-lookup"><span data-stu-id="bb310-140">Returns a collection of the specified tasks</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="62501-141">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="62501-141">JSON representation</span></span>
-<span data-ttu-id="62501-142">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="62501-142">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="bb310-141">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="bb310-141">JSON representation</span></span>
+<span data-ttu-id="bb310-142">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bb310-142">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,9 +45,9 @@ ms.locfileid: "27955137"
 }
 ```
 
-## <a name="example"></a><span data-ttu-id="62501-143">Пример</span><span class="sxs-lookup"><span data-stu-id="62501-143">Example</span></span>
+## <a name="example"></a><span data-ttu-id="bb310-143">Пример</span><span class="sxs-lookup"><span data-stu-id="bb310-143">Example</span></span>
 
-<span data-ttu-id="62501-144">**Планировщик работы** ресурсов доступна в корне диаграммы.</span><span class="sxs-lookup"><span data-stu-id="62501-144">The **planner** resource is available at the root of the graph.</span></span>
+<span data-ttu-id="bb310-144">Ресурс **планировщика** доступен в корневом каталоге диаграммы.</span><span class="sxs-lookup"><span data-stu-id="bb310-144">The **planner** resource is available at the root of the graph.</span></span>
 
 <!--{
   "blockType": "request"

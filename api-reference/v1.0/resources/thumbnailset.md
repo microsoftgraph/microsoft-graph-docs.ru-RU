@@ -5,33 +5,29 @@ ms.date: 09/10/2017
 title: ThumbnailSet
 localization_priority: Normal
 ms.openlocfilehash: a9d92d84c8495b8c138c34f752700ccd0aad64fd
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457020"
 ---
-# <a name="thumbnailset-resource-type"></a><span data-ttu-id="c819a-102">Тип ресурса ThumbnailSet</span><span class="sxs-lookup"><span data-stu-id="c819a-102">ThumbnailSet resource type</span></span>
+# <a name="thumbnailset-resource-type"></a><span data-ttu-id="7978d-102">Тип ресурса ThumbnailSet</span><span class="sxs-lookup"><span data-stu-id="7978d-102">ThumbnailSet resource type</span></span>
 
-<span data-ttu-id="c819a-p101">Ресурс **ThumbnailSet** представляет собой коллекцию ресурсов [thumbnail](thumbnail.md) с ключами. Он представляет набор эскизов, связанных с ресурсом DriveItem.</span><span class="sxs-lookup"><span data-stu-id="c819a-p101">The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources. It is used to represent a set of thumbnails associated with a DriveItem.</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a><span data-ttu-id="c819a-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="c819a-105">JSON representation</span></span>
+<span data-ttu-id="7978d-p101">Ресурс **ThumbnailSet** представляет собой коллекцию ресурсов [thumbnail](thumbnail.md) с ключами. Он представляет набор эскизов, связанных с ресурсом DriveItem.</span><span class="sxs-lookup"><span data-stu-id="7978d-p101">The **ThumbnailSet** resource is a keyed collection of [thumbnail](thumbnail.md) resources. It is used to represent a set of thumbnails associated with a DriveItem.</span></span>
 
-<span data-ttu-id="c819a-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="c819a-106">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="7978d-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="7978d-105">JSON representation</span></span>
 
-<!--{
+<span data-ttu-id="7978d-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7978d-106">Here is a JSON representation of the resource.</span></span>
+
+<!-- {
   "blockType": "resource",
-  "optionalProperties": [
-    "source",
-    "small",
-    "medium",
-    "large"
-  ],
+  "optionalProperties": ["source", "small", "medium", "large"],
+  "openType": true,
   "keyProperty": "id",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.thumbnailSet",
-  "openType": true
-}-->
+  "@odata.type": "microsoft.graph.thumbnailSet"
+} -->
 
 ```json
 {
@@ -43,21 +39,26 @@ ms.locfileid: "30480133"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="c819a-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="c819a-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="7978d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="7978d-107">Properties</span></span>
 
-| <span data-ttu-id="c819a-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="c819a-108">Property</span></span> | <span data-ttu-id="c819a-109">Тип</span><span class="sxs-lookup"><span data-stu-id="c819a-109">Type</span></span>                      | <span data-ttu-id="c819a-110">Описание</span><span class="sxs-lookup"><span data-stu-id="c819a-110">Description</span></span>                                                                       |
+| <span data-ttu-id="7978d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="7978d-108">Property</span></span> | <span data-ttu-id="7978d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="7978d-109">Type</span></span>                      | <span data-ttu-id="7978d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="7978d-110">Description</span></span>                                                                       |
 |:---------|:--------------------------|:----------------------------------------------------------------------------------|
-| <span data-ttu-id="c819a-111">id</span><span class="sxs-lookup"><span data-stu-id="c819a-111">id</span></span>       | <span data-ttu-id="c819a-112">String</span><span class="sxs-lookup"><span data-stu-id="c819a-112">String</span></span>                    | <span data-ttu-id="c819a-p102">Идентификатор в элементе. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="c819a-p102">The id within the item. Read-only.</span></span>                                                |
-| <span data-ttu-id="c819a-115">large</span><span class="sxs-lookup"><span data-stu-id="c819a-115">large</span></span>    | [<span data-ttu-id="c819a-116">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="c819a-116">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="c819a-117">Эскиз размером 1920x1920.</span><span class="sxs-lookup"><span data-stu-id="c819a-117">A 1920x1920 scaled thumbnail.</span></span>                                                     |
-| <span data-ttu-id="c819a-118">medium</span><span class="sxs-lookup"><span data-stu-id="c819a-118">medium</span></span>   | [<span data-ttu-id="c819a-119">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="c819a-119">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="c819a-120">Эскиз размером 176x176.</span><span class="sxs-lookup"><span data-stu-id="c819a-120">A 176x176 scaled thumbnail.</span></span>                                                       |
-| <span data-ttu-id="c819a-121">small</span><span class="sxs-lookup"><span data-stu-id="c819a-121">small</span></span>    | [<span data-ttu-id="c819a-122">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="c819a-122">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="c819a-123">Обрезанный эскиз размером 48x48.</span><span class="sxs-lookup"><span data-stu-id="c819a-123">A 48x48 cropped thumbnail.</span></span>                                                        |
-| <span data-ttu-id="c819a-124">source</span><span class="sxs-lookup"><span data-stu-id="c819a-124">source</span></span>   | [<span data-ttu-id="c819a-125">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="c819a-125">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="c819a-126">Пользовательский эскиз исходного изображения, используемого для создания других эскизов.</span><span class="sxs-lookup"><span data-stu-id="c819a-126">A custom thumbnail image or the original image used to generate other thumbnails.</span></span> |
+| <span data-ttu-id="7978d-111">id</span><span class="sxs-lookup"><span data-stu-id="7978d-111">id</span></span>       | <span data-ttu-id="7978d-112">String</span><span class="sxs-lookup"><span data-stu-id="7978d-112">String</span></span>                    | <span data-ttu-id="7978d-p102">Идентификатор в элементе. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="7978d-p102">The id within the item. Read-only.</span></span>                                                |
+| <span data-ttu-id="7978d-115">large</span><span class="sxs-lookup"><span data-stu-id="7978d-115">large</span></span>    | [<span data-ttu-id="7978d-116">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7978d-116">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7978d-117">Эскиз размером 1920x1920.</span><span class="sxs-lookup"><span data-stu-id="7978d-117">A 1920x1920 scaled thumbnail.</span></span>                                                     |
+| <span data-ttu-id="7978d-118">medium</span><span class="sxs-lookup"><span data-stu-id="7978d-118">medium</span></span>   | [<span data-ttu-id="7978d-119">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7978d-119">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7978d-120">Эскиз размером 176x176.</span><span class="sxs-lookup"><span data-stu-id="7978d-120">A 176x176 scaled thumbnail.</span></span>                                                       |
+| <span data-ttu-id="7978d-121">small</span><span class="sxs-lookup"><span data-stu-id="7978d-121">small</span></span>    | [<span data-ttu-id="7978d-122">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7978d-122">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7978d-123">Обрезанный эскиз размером 48x48.</span><span class="sxs-lookup"><span data-stu-id="7978d-123">A 48x48 cropped thumbnail.</span></span>                                                        |
+| <span data-ttu-id="7978d-124">source</span><span class="sxs-lookup"><span data-stu-id="7978d-124">source</span></span>   | [<span data-ttu-id="7978d-125">Thumbnail</span><span class="sxs-lookup"><span data-stu-id="7978d-125">Thumbnail</span></span>](thumbnail.md) | <span data-ttu-id="7978d-126">Пользовательский эскиз исходного изображения, используемого для создания других эскизов.</span><span class="sxs-lookup"><span data-stu-id="7978d-126">A custom thumbnail image or the original image used to generate other thumbnails.</span></span> |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "ThumbnailSet enables access to thumbnails of different sizes",
   "section": "documentation",
-  "tocPath": "Resources/ThumbnailSet"
-} -->
+  "tocPath": "Resources/ThumbnailSet",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/thumbnailset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

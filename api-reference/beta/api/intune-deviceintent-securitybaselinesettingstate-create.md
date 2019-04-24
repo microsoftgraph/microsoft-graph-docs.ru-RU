@@ -5,30 +5,30 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6d4a3a68eaab0f9f4c8b3bb7d4f9e8adf16dea37
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32466254"
 ---
-# <a name="create-securitybaselinesettingstate"></a><span data-ttu-id="7cd50-103">Создание Секуритибаселинесеттингстате</span><span class="sxs-lookup"><span data-stu-id="7cd50-103">Create securityBaselineSettingState</span></span>
+# <a name="create-securitybaselinesettingstate"></a><span data-ttu-id="25504-103">Создание Секуритибаселинесеттингстате</span><span class="sxs-lookup"><span data-stu-id="25504-103">Create securityBaselineSettingState</span></span>
 
-> <span data-ttu-id="7cd50-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cd50-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="25504-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="25504-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="7cd50-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="7cd50-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="25504-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="25504-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="7cd50-106">Создание нового объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .</span><span class="sxs-lookup"><span data-stu-id="7cd50-106">Create a new [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) object.</span></span>
+<span data-ttu-id="25504-106">Создание нового объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .</span><span class="sxs-lookup"><span data-stu-id="25504-106">Create a new [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="7cd50-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="7cd50-107">Prerequisites</span></span>
-<span data-ttu-id="7cd50-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="7cd50-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="25504-107">Необходимые компоненты</span><span class="sxs-lookup"><span data-stu-id="25504-107">Prerequisites</span></span>
+<span data-ttu-id="25504-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="25504-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="7cd50-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="7cd50-110">Permission type</span></span>|<span data-ttu-id="7cd50-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="7cd50-111">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="25504-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="25504-110">Permission type</span></span>|<span data-ttu-id="25504-111">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="25504-111">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="7cd50-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="7cd50-112">Delegated (work or school account)</span></span>|<span data-ttu-id="7cd50-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="7cd50-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
-|<span data-ttu-id="7cd50-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="7cd50-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="7cd50-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cd50-115">Not supported.</span></span>|
-|<span data-ttu-id="7cd50-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="7cd50-116">Application</span></span>|<span data-ttu-id="7cd50-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="7cd50-117">Not supported.</span></span>|
+|<span data-ttu-id="25504-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="25504-112">Delegated (work or school account)</span></span>|<span data-ttu-id="25504-113">DeviceManagementConfiguration.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="25504-113">DeviceManagementConfiguration.ReadWrite.All</span></span>|
+|<span data-ttu-id="25504-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="25504-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="25504-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="25504-115">Not supported.</span></span>|
+|<span data-ttu-id="25504-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="25504-116">Application</span></span>|<span data-ttu-id="25504-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="25504-117">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="7cd50-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="7cd50-118">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="25504-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="25504-118">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -37,33 +37,33 @@ ms.locfileid: "31781829"
 POST /deviceManagement/managedDevices/{managedDeviceId}/securityBaselineStates/{securityBaselineStateId}/settingStates
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="7cd50-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="7cd50-119">Request headers</span></span>
-|<span data-ttu-id="7cd50-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="7cd50-120">Header</span></span>|<span data-ttu-id="7cd50-121">Значение</span><span class="sxs-lookup"><span data-stu-id="7cd50-121">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="25504-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="25504-119">Request headers</span></span>
+|<span data-ttu-id="25504-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="25504-120">Header</span></span>|<span data-ttu-id="25504-121">Значение</span><span class="sxs-lookup"><span data-stu-id="25504-121">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="7cd50-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="7cd50-122">Authorization</span></span>|<span data-ttu-id="7cd50-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="7cd50-123">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="7cd50-124">Accept</span><span class="sxs-lookup"><span data-stu-id="7cd50-124">Accept</span></span>|<span data-ttu-id="7cd50-125">application/json</span><span class="sxs-lookup"><span data-stu-id="7cd50-125">application/json</span></span>|
+|<span data-ttu-id="25504-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="25504-122">Authorization</span></span>|<span data-ttu-id="25504-123">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="25504-123">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="25504-124">Accept</span><span class="sxs-lookup"><span data-stu-id="25504-124">Accept</span></span>|<span data-ttu-id="25504-125">application/json</span><span class="sxs-lookup"><span data-stu-id="25504-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="7cd50-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="7cd50-126">Request body</span></span>
-<span data-ttu-id="7cd50-127">В тексте запроса добавьте представление объекта Секуритибаселинесеттингстате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="7cd50-127">In the request body, supply a JSON representation for the securityBaselineSettingState object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="25504-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="25504-126">Request body</span></span>
+<span data-ttu-id="25504-127">В тексте запроса добавьте представление объекта Секуритибаселинесеттингстате в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="25504-127">In the request body, supply a JSON representation for the securityBaselineSettingState object.</span></span>
 
-<span data-ttu-id="7cd50-128">В следующей таблице приведены свойства, необходимые при создании Секуритибаселинесеттингстате.</span><span class="sxs-lookup"><span data-stu-id="7cd50-128">The following table shows the properties that are required when you create the securityBaselineSettingState.</span></span>
+<span data-ttu-id="25504-128">В следующей таблице приведены свойства, необходимые при создании Секуритибаселинесеттингстате.</span><span class="sxs-lookup"><span data-stu-id="25504-128">The following table shows the properties that are required when you create the securityBaselineSettingState.</span></span>
 
-|<span data-ttu-id="7cd50-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="7cd50-129">Property</span></span>|<span data-ttu-id="7cd50-130">Тип</span><span class="sxs-lookup"><span data-stu-id="7cd50-130">Type</span></span>|<span data-ttu-id="7cd50-131">Описание</span><span class="sxs-lookup"><span data-stu-id="7cd50-131">Description</span></span>|
+|<span data-ttu-id="25504-129">Свойство</span><span class="sxs-lookup"><span data-stu-id="25504-129">Property</span></span>|<span data-ttu-id="25504-130">Тип</span><span class="sxs-lookup"><span data-stu-id="25504-130">Type</span></span>|<span data-ttu-id="25504-131">Описание</span><span class="sxs-lookup"><span data-stu-id="25504-131">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="7cd50-132">id</span><span class="sxs-lookup"><span data-stu-id="7cd50-132">id</span></span>|<span data-ttu-id="7cd50-133">String</span><span class="sxs-lookup"><span data-stu-id="7cd50-133">String</span></span>|<span data-ttu-id="7cd50-134">Уникальный идентификатор объекта</span><span class="sxs-lookup"><span data-stu-id="7cd50-134">Unique identifier of the entity</span></span>|
-|<span data-ttu-id="7cd50-135">settingName</span><span class="sxs-lookup"><span data-stu-id="7cd50-135">settingName</span></span>|<span data-ttu-id="7cd50-136">String</span><span class="sxs-lookup"><span data-stu-id="7cd50-136">String</span></span>|<span data-ttu-id="7cd50-137">Имя параметра, о котором сообщается</span><span class="sxs-lookup"><span data-stu-id="7cd50-137">The setting name that is being reported</span></span>|
-|<span data-ttu-id="7cd50-138">state</span><span class="sxs-lookup"><span data-stu-id="7cd50-138">state</span></span>|[<span data-ttu-id="7cd50-139">securityBaselineComplianceState</span><span class="sxs-lookup"><span data-stu-id="7cd50-139">securityBaselineComplianceState</span></span>](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|<span data-ttu-id="7cd50-140">Состояние соответствия параметру базового уровня безопасности.</span><span class="sxs-lookup"><span data-stu-id="7cd50-140">The compliance state of the security baseline setting.</span></span> <span data-ttu-id="7cd50-141">Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.</span><span class="sxs-lookup"><span data-stu-id="7cd50-141">Possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.</span></span>|
-|<span data-ttu-id="7cd50-142">Сеттингкатегорид</span><span class="sxs-lookup"><span data-stu-id="7cd50-142">settingCategoryId</span></span>|<span data-ttu-id="7cd50-143">String</span><span class="sxs-lookup"><span data-stu-id="7cd50-143">String</span></span>|<span data-ttu-id="7cd50-144">Идентификатор категории параметров, к которой относится этот параметр</span><span class="sxs-lookup"><span data-stu-id="7cd50-144">The setting category id which this setting belongs to</span></span>|
+|<span data-ttu-id="25504-132">id</span><span class="sxs-lookup"><span data-stu-id="25504-132">id</span></span>|<span data-ttu-id="25504-133">String</span><span class="sxs-lookup"><span data-stu-id="25504-133">String</span></span>|<span data-ttu-id="25504-134">Уникальный идентификатор объекта</span><span class="sxs-lookup"><span data-stu-id="25504-134">Unique identifier of the entity</span></span>|
+|<span data-ttu-id="25504-135">settingName</span><span class="sxs-lookup"><span data-stu-id="25504-135">settingName</span></span>|<span data-ttu-id="25504-136">String</span><span class="sxs-lookup"><span data-stu-id="25504-136">String</span></span>|<span data-ttu-id="25504-137">Имя параметра, о котором сообщается</span><span class="sxs-lookup"><span data-stu-id="25504-137">The setting name that is being reported</span></span>|
+|<span data-ttu-id="25504-138">state</span><span class="sxs-lookup"><span data-stu-id="25504-138">state</span></span>|[<span data-ttu-id="25504-139">securityBaselineComplianceState</span><span class="sxs-lookup"><span data-stu-id="25504-139">securityBaselineComplianceState</span></span>](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|<span data-ttu-id="25504-140">Состояние соответствия параметру базового уровня безопасности.</span><span class="sxs-lookup"><span data-stu-id="25504-140">The compliance state of the security baseline setting.</span></span> <span data-ttu-id="25504-141">Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.</span><span class="sxs-lookup"><span data-stu-id="25504-141">Possible values are: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.</span></span>|
+|<span data-ttu-id="25504-142">Сеттингкатегорид</span><span class="sxs-lookup"><span data-stu-id="25504-142">settingCategoryId</span></span>|<span data-ttu-id="25504-143">String</span><span class="sxs-lookup"><span data-stu-id="25504-143">String</span></span>|<span data-ttu-id="25504-144">Идентификатор категории параметров, к которой относится этот параметр</span><span class="sxs-lookup"><span data-stu-id="25504-144">The setting category id which this setting belongs to</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="7cd50-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cd50-145">Response</span></span>
-<span data-ttu-id="7cd50-146">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="7cd50-146">If successful, this method returns a `201 Created` response code and a [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="25504-145">Отклик</span><span class="sxs-lookup"><span data-stu-id="25504-145">Response</span></span>
+<span data-ttu-id="25504-146">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="25504-146">If successful, this method returns a `201 Created` response code and a [securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="7cd50-147">Пример</span><span class="sxs-lookup"><span data-stu-id="7cd50-147">Example</span></span>
+## <a name="example"></a><span data-ttu-id="25504-147">Пример</span><span class="sxs-lookup"><span data-stu-id="25504-147">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="7cd50-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="7cd50-148">Request</span></span>
-<span data-ttu-id="7cd50-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="7cd50-149">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="25504-148">Запрос</span><span class="sxs-lookup"><span data-stu-id="25504-148">Request</span></span>
+<span data-ttu-id="25504-149">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="25504-149">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/securityBaselineStates/{securityBaselineStateId}/settingStates
 Content-type: application/json
@@ -77,8 +77,8 @@ Content-length: 185
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="7cd50-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="7cd50-150">Response</span></span>
-<span data-ttu-id="7cd50-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="7cd50-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="25504-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="25504-150">Response</span></span>
+<span data-ttu-id="25504-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="25504-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
