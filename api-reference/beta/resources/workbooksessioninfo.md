@@ -5,18 +5,18 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a2975fdf58d0f1d3a72f1f76853125d0a98bb485
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642221"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453285"
 ---
 # <a name="workbooksessioninfo-resource-type"></a>Тип ресурса workbookSessionInfo
 
 Предоставляет сведения о сеансе книги.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 6897e072ca18be4f87405ca063f92df8d2f2a50b
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454204"
 ---
 # <a name="delete-countriesregions"></a>Удаление Каунтриесрегионс
 Удаление объекта стран и регионов из Dynamics 365 Business Central.
@@ -36,7 +36,7 @@ DELETE /financials/companies('{id}')/countriesRegions('{id}')
 |Заголовок|Значение|
 |------|-----|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно указывать. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **каунтриесрегионс**, **каунтриесрегионс** не будет обновлен. |
+|If-Match       |Обязательный. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **каунтриесрегионс**, **каунтриесрегионс** не будет обновлен. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

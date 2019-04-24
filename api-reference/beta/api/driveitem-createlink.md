@@ -6,11 +6,11 @@ title: Предоставление доступа к файлу посредс�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 3f119ea285b3fa9e59ec8c67d5a7b3fd304fd196
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480504"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454584"
 ---
 # <a name="create-a-sharing-link-for-a-driveitem"></a>Создание ссылки совместного доступа для ресурса DriveItem
 
@@ -44,7 +44,7 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### <a name="request-body"></a>Тело запроса
+### <a name="request-body"></a>Текст запроса
 
 В теле запроса определяются свойства ссылки для совместного доступа, запрашиваемой приложением.
 Запрос должен быть объектом JSON с указанными ниже свойствами.
@@ -103,7 +103,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -146,7 +146,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -188,7 +188,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 

@@ -1,29 +1,29 @@
 ---
-title: тип ресурса website
-description: Представляет веб-сайта.
+title: Тип ресурса веб-сайта
+description: Представляет веб-сайт.
 localization_priority: Normal
 ms.openlocfilehash: 3f8aadaf0a6b6beb2394664f04195267062dc9ae
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641248"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454046"
 ---
-# <a name="website-resource-type"></a>тип ресурса website
+# <a name="website-resource-type"></a>Тип ресурса веб-сайта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет веб-сайта.
+Представляет веб-сайт.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|String| Возможные значения: `other`, `home`, `work`, `blog`, `profile`.|
-|address|строка|URL-адрес веб-сайта.|
-|displayName|строка|Отображаемое имя веб-сайта.|
+|type|Строка| Возможные значения: `other`, `home`, `work`, `blog`, `profile`.|
+|address|string|URL-адрес веб-сайта.|
+|displayName|string|Отображаемое имя веб-сайта.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

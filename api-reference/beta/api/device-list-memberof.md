@@ -1,21 +1,19 @@
 ---
 title: Список групп устройств
-description: Получите группы, это устройство является непосредственным членом. Эта операция не транзитивное.
+description: Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8cd803fbb89f16488e29b0f6490fbe06eee8f6c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455266"
 ---
 # <a name="list-device-groups"></a>Список групп устройств
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Получите группы, это устройство является непосредственным членом. Эта операция не транзитивное.
+Получение групп, непосредственным участником которых является это устройство. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +39,7 @@ GET /devices/{id}/memberOf
 | Accept  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,12 +55,11 @@ GET /devices/{id}/memberOf
   "name": "get_user_memberof"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/devices/{id}/memberOf
+GET https://graph.microsoft.com/v1.0/devices/{id}/memberOf
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,8 +93,5 @@ Content-type: application/json
   "description": "List memberOf",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/device-list-memberof.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "tocPath": ""
 }-->

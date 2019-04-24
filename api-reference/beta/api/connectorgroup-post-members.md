@@ -1,19 +1,19 @@
 ---
-title: Добавление соединителя connectorGroup
-description: Используйте этот интерфейс API для добавления соединитель connectorGroup.
+title: Добавление соединителя в Коннекторграуп
+description: Используйте этот API, чтобы добавить соединитель в Коннекторграуп.
 localization_priority: Normal
 ms.openlocfilehash: 8df6fdda80007217164f8ae2f21a1d3f8d667d23
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518256"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455928"
 ---
-# <a name="add-connector-to-connectorgroup"></a>Добавление соединителя connectorGroup
+# <a name="add-connector-to-connectorgroup"></a>Добавление соединителя в Коннекторграуп
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для добавления соединитель connectorGroup.
+Используйте этот API, чтобы добавить соединитель в Коннекторграуп.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,14 +31,14 @@ POST /connectorGroups/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя. Обязательный|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON ссылка на объект [соединителя](../resources/connector.md) .
+В тексте запроса добавьте представление ссылки на объект [Connector](../resources/connector.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` объект [соединителя](../resources/connector.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [Connector](../resources/connector.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -56,10 +56,9 @@ Content-length: 104
   "@odata.id": "https://graph.microsoft.com/{ver}/connector/{id}"
 }
 ```
-В тексте запроса укажите представление JSON ссылка на объект [соединителя](../resources/connector.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+В тексте запроса добавьте представление ссылки на объект [Connector](../resources/connector.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

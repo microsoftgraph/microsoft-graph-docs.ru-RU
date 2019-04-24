@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 312c2a0a219cd1f88ede106f253c0c9019109253
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640142"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455851"
 ---
 # <a name="update-chartseries"></a>Обновление объекта ChartSeries
 
@@ -36,12 +36,12 @@ PATCH /workbook/worksheets/{id|name}/charts(<name>)/series(<undefined>)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|строка|Представляет имя ряда в диаграмме.|
+|name|string|Представляет имя ряда в диаграмме.|
 
 ## <a name="response"></a>Отклик
 

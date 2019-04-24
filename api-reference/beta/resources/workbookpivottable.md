@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: fc43bf160e93e354ff58b2f960e8ec38d252287f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453879"
 ---
 # <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
 
@@ -28,11 +28,11 @@ ms.locfileid: "29641108"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Идентификатор сводной таблицы.   Только для чтения.|
+|id|Строка| Идентификатор сводной таблицы.   Только для чтения.|
 |name|String|Имя сводной таблицы.    |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |worksheet|[worksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 

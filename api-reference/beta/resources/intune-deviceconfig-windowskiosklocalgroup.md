@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 54a4686282e4c13f657adf010a3e0272025eb249
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789523"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453973"
 ---
 # <a name="windowskiosklocalgroup-resource-type"></a>Тип ресурса Виндовскиосклокалграуп
 
@@ -25,7 +25,7 @@ ms.locfileid: "31789523"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|groupName|String|Имя локальной группы, которая будет заблокирована для этой конфигурации киоска|
+|groupName|Строка|Имя локальной группы, которая будет заблокирована для этой конфигурации киоска|
 
 ## <a name="relationships"></a>Отношения
 Нет

@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса synchronizationProgress
-description: Представляет ход выполнения synchronizationJob к завершению.
+title: Тип ресурса Синчронизатионпрогресс
+description: Представляет ход выполнения Синчронизатионжоб в сторону завершения.
 localization_priority: Normal
 ms.openlocfilehash: b22bd95f54a9f268524dc98a8d3df94fcc14f773
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453959"
 ---
-# <a name="synchronizationprogress-resource-type"></a>Тип ресурса synchronizationProgress
+# <a name="synchronizationprogress-resource-type"></a>Тип ресурса Синчронизатионпрогресс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ход выполнения [synchronizationJob](synchronization-synchronizationjob.md) к завершению.
+Представляет ход выполнения [синчронизатионжоб](synchronization-synchronizationjob.md) в сторону завершения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                              | Тип      | Описание    |
 |:--------------------------------------|:----------|:---------------|
-|completedUnits|Int32|Числитель соотношение хода выполнения; Количество единиц уже обработки изменений.|
-|progressObservationDateTime|DateTimeOffset|Время наблюдения хода выполнения как смещение в минутах от времени UTC.|
-|totalUnits|Int32|Делителя соотношение хода выполнения; Количество единиц изменения обработки для выполнения синхронизации.|
-|единицы|String|Необязательное описание единицы измерения.|
+|Комплетедунитс|Int32|Числитель коэффициента выполнения; количество единиц изменений, которые уже обработаны.|
+|Прогрессобсерватиондатетиме|DateTimeOffset|Время отслеживания хода выполнения как смещение в минутах от времени в формате UTC.|
+|Тоталунитс|Int32|Знаменатель коэффициента выполнения; количество единиц изменений, которые необходимо обработать для выполнения синхронизации.|
+|продукции|Строка|Необязательное описание единиц измерения.|
 
 <!-- The troubleshootingUrl property is missing a description -->
 

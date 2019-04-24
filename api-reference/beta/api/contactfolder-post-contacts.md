@@ -1,21 +1,21 @@
 ---
 title: Создание объекта Contact
-description: Добавление контакта в корневую папку контактов или в конечную точку `contacts` другой папки контактов.
+description: Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 3fd45ee7f77e2d485b7a972b8454807368796226
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528062"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455676"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавление контакта в корневую папку контактов или в конечную точку `contacts` другой папки контактов.
+Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -70,9 +70,8 @@ Content-length: 210
 }
 ```
 Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,11 +3,11 @@ title: тип веб-ресурса
 description: Указывает параметры для веб-приложения.
 localization_priority: Normal
 ms.openlocfilehash: 7e03977481f0c021b7d67ec44fd4db275642cdf8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643512"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453952"
 ---
 # <a name="web-resource-type"></a>тип веб-ресурса
 
@@ -19,10 +19,10 @@ ms.locfileid: "29643512"
 
 | Свойство | Тип | Описание |
 |:---------|:-----|:------------|
-|implicitGrantSettings|[implicitGrantSettings](implicitgrantsettings.md)| Разрешение запроса маркеры, с помощью поток неявных OAuth 2.0 этого веб-приложения.|
+|ИмплиЦитгрантсеттингс|[ИмплиЦитгрантсеттингс](implicitgrantsettings.md)| Указывает, может ли это веб-приложение запрашивать маркеры, используя неявный поток OAuth 2,0.|
 |logoutUrl|String| Указывает URL-адрес, используемый службой проверки подлинности корпорации Майкрософт для выхода пользователя с помощью [основного канала](https://openid.net/specs/openid-connect-frontchannel-1_0.html), [обратного канала](https://openid.net/specs/openid-connect-backchannel-1_0.html) или протоколов выхода SAML. |
-|oauth2AllowImplicitFlow|Boolean| Рекомендуется использовать. Не используйте. | 
-|redirectUris|Коллекция String| Указывает URL-адресов, которые будут отправлены маркеры пользователя для входа в или отправки коды авторизации коды URI, OAuth 2.0 и маркеры доступа для перенаправления. |
+|oauth2AllowImplicitFlow|Boolean| Устаревшие. Не следует использовать. | 
+|Редиректурис|Коллекция строк| Задает URL-адреса, на которые отправляются маркеры пользователей для входа, или URI перенаправления, на которые отправляются коды авторизации OAuth 2,0 и маркеры доступа. |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

@@ -1,23 +1,23 @@
 ---
-title: Удаление параметров каталога
-description: Удалите параметр каталога.
+title: Удаление параметра каталога
+description: Удаление параметра каталога.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c66335ec863460c9b2167e25a7e78850846e105c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515827"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454864"
 ---
-# <a name="delete-a-directory-setting"></a>Удаление параметров каталога
+# <a name="delete-a-directory-setting"></a>Удаление параметра каталога
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите параметр каталога.
+Удаление параметра каталога.
 
-> **Примечание**: версия /beta этот интерфейс API является только относится к группам. Для *удаления groupSettings*переименован версии /v1.0 этот интерфейс API.
+> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *Удалить граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,8 @@ ms.locfileid: "29515827"
 |Для приложений | Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Удаление конкретных всей клиента или параметр групповой
+<!-- { "blockType": "ignored" } -->
+Удаление определенного параметра на уровне клиента или группы
 ```http
 DELETE /settings/{id}
 DELETE /groups/{id}/settings/{id}
@@ -41,7 +42,7 @@ DELETE /groups/{id}/settings/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,7 +58,7 @@ DELETE /groups/{id}/settings/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/settings/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true

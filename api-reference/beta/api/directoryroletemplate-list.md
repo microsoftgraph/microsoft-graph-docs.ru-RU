@@ -1,17 +1,17 @@
 ---
-title: Список объектов directoryRoleTemplate
-description: Получение списка объектов directoryRoleTemplate.
+title: Список directoryRoleTemplate
+description: Получение списка объектов directoryroletemplate.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 842f243df4010c51dfd95f038c10cebdd5184691
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454760"
 ---
-# <a name="list-directoryroletemplates"></a>Список объектов directoryRoleTemplate
+# <a name="list-directoryroletemplates"></a>Список directoryRoleTemplate
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -39,9 +39,9 @@ GET /directoryRoleTemplates
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryRoleTemplate](../resources/directoryroletemplate.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -54,9 +54,8 @@ GET /directoryRoleTemplates
 ```http
 GET https://graph.microsoft.com/beta/directoryRoleTemplates
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

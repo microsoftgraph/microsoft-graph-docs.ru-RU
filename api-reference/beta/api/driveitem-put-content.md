@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Отправка небольших файлов
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 151d7c9479068c5fdcecfb5a04166900bd527230
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482275"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454400"
 ---
 # <a name="upload-or-replace-the-contents-of-a-driveitem"></a>Отправка или замена содержимого элемента DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используя простой API отправки, вы можете отправлять содержимое нового файла или обновлять содержимое существующего файла с помощью одного вызова API. Этот метод поддерживает файлы размером не более 4 МБ.
 
@@ -60,11 +58,11 @@ PUT /users/{user-id}/drive/items/{parent-id}:/{filename}:/content
 
 ## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) в теле отклика для вновь созданного или обновленного файла.
+При успешном выполнении этот метод возвращает объект [driveItem](../resources/driveitem.md) для вновь созданного или обновленного файла в теле ответа.
 
 ## <a name="example-upload-a-new-file"></a>Пример (отправка нового файла)
 
-В этом примере показано, как отправить строку "The contents of the file goes here" (Здесь начинается содержимое файла.) в файл FileB.txt в папке FolderA в объекте drive пользователя, вошедшего в систему.
+В этом примере показано, как отправить строку "The contents of the file goes here." (Здесь начинается содержимое файла.) в файл FileB.txt в папке FolderA на диске пользователя, выполнившего вход в систему.
 
 <!-- { "blockType": "request", "name": "upload-via-put", "scopes": "files.readwrite" } -->
 
@@ -75,9 +73,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле отклика для созданного файла.
+При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -95,7 +93,7 @@ Content-Type: application/json
 
 ## <a name="example-updating-an-existing-file"></a>Пример (обновление существующего файла)
 
-В этом примере показано, как заменить содержимое файла известным идентификатором.
+В этом примере показано, как заменить содержимое файла с известным идентификатором.
 
 <!-- { "blockType": "request", "name": "upload-via-put-id", "scopes": "files.readwrite" } -->
 
@@ -106,9 +104,9 @@ Content-Type: text/plain
 The contents of the file goes here.
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] в теле отклика для созданного файла.
+При успешном выполнении этот метод возвращает ресурс [driveItem][item-resource] для созданного файла в теле ответа.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
@@ -124,21 +122,16 @@ Content-Type: application/json
 }
 ```
 
-## <a name="error-responses"></a>Отклики с ошибками
+## <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create a new file with content or update a file's content.",
   "keywords": "insert,upsert,update,upload",
-  "section": "documentation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-put-content.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "section": "documentation"
+} -->

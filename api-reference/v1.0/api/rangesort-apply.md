@@ -1,15 +1,15 @@
 ---
 title: 'RangeSort: apply'
-description: Выполняет сортировку.
+description: Выполнение операции сортировки.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: be024f3eacbb4e2d1178ec7b82a8e8ca604aff60
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967107"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452708"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -37,16 +37,16 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|WorkbookSortField коллекции|Список условий для сортировки.|
-|matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
+|fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
+|matchCase|логический|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
-|orientation|строка|Необязательный параметр. Является ли операция сортировки, строк или столбцов.  Возможные значения: `Rows`, `Columns`.|
-|метод|строка|Необязательный параметр. Метода упорядочения, используемый для китайских знаков.  Возможные значения: `PinYin`, `StrokeCount`.|
+|orientation|string|Необязательно. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
+|method|string|Необязательно. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Отклик
 
@@ -86,7 +86,7 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response"

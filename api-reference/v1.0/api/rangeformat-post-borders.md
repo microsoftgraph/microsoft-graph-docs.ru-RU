@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b7b8719e0fe9506ba460c1ec98d5ceec51a95f10
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27949306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32452851"
 ---
 # <a name="create-rangeborder"></a>Создание объекта RangeBorder
 
@@ -37,12 +37,12 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/borders
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [WorkbookRangeBorder](../resources/rangeborder.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [Воркбукранжебордер](../resources/rangeborder.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [WorkbookRangeBorder](../resources/rangeborder.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукранжебордер](../resources/rangeborder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -64,9 +64,9 @@ Content-length: 136
   "weight": "weight-value"
 }
 ```
-В тексте запроса укажите представление JSON объекта [WorkbookRangeBorder](../resources/rangeborder.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В тексте запроса добавьте представление объекта [Воркбукранжебордер](../resources/rangeborder.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

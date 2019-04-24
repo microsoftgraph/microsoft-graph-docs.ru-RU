@@ -1,22 +1,22 @@
 ---
 author: chackman
 ms.author: chackman
-title: Число элементов списка
+title: Список отслеживаемых элементов
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: df38a11a09f4ec86eb029f236030cc4565e5d939
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454808"
 ---
-# <a name="list-followed-items"></a>Число элементов списка
+# <a name="list-followed-items"></a>Список отслеживаемых элементов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список [элементов](../resources/driveitem.md) , следуют выполнен вход пользователя.
-Данная коллекция включает элементов, находящихся в диске компьютера пользователя, а также элементы, которые получают доступ из других дисков.
+Список [элементов](../resources/driveitem.md) , за которыми подписан пользователь, вошедшего в систему.
+Эта коллекция содержит элементы, которые находятся на диске пользователя, а также элементы, к которым у него есть доступ с других дисков.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,10 +36,10 @@ ms.locfileid: "29523311"
 GET /me/drive/following
 ```
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Этот метод возвращает коллекцию ресурсов [driveItem](../resources/driveitem.md) для элементов, которые выполнив владельца диска.
-Если не найдено элементов, возвращается пустая коллекция.
+Этот метод возвращает коллекцию ресурсов [driveItem](../resources/driveitem.md) для элементов, которые подписаны владельцем диска.
+Если не будет найдено ни одного элемента, то будет возвращена пустая коллекция.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItem)", "truncated": true } -->
 

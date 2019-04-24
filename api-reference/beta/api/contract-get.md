@@ -1,21 +1,19 @@
 ---
-title: Получение Contract
-description: Получение свойств и связей объекта contract.
+title: Получение контракта
+description: Получение свойств и связей объекта Contract.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6fa54d813a456cc5a29aadc84ec29f99dc475f9f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455592"
 ---
-# <a name="get-contract"></a>Получение Contract
+# <a name="get-contract"></a>Получение контракта
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Получение свойств и связей объекта [contract](../resources/contract.md).
+Получение свойств и связей объекта [Contract](../resources/contract.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -46,11 +44,11 @@ GET /contracts/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [Contract](../resources/contract.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [контракта](../resources/contract.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -60,15 +58,15 @@ GET /contracts/{id}
   "name": "get_contract"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/contracts/{id}
+GET https://graph.microsoft.com/v1.0/contracts/{id}
 ```
 
-##### <a name="response"></a>Ответ
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Отклик
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.Contract"
+  "@odata.type": "microsoft.graph.contract"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -86,15 +84,10 @@ Content-length: 186
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get Contract",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/contract-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

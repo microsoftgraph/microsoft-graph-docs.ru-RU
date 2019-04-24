@@ -1,21 +1,21 @@
 ---
 title: Удаление объекта directoryObject
-description: Удаление объекта directoryObject
+description: Удаление directoryObject.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 63e9d4574c505158171c93fd7ac9dc51678c7d2b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507721"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455095"
 ---
 # <a name="delete-directoryobject"></a>Удаление объекта directoryObject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление объекта directoryObject
+Удаление directoryObject.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,7 @@ ms.locfileid: "29507721"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
-**Примечание:** Пользователей, групп и контакты, типы объектов каталога. В результате, если вам потребуется удалить пользователей, следующие разрешения можно и должен использоваться: User.ReadWrite.All
+**Примечание:** Пользователи, группы и контакты — это типы объекта каталога. В результате, если необходимо удалить пользователей, можно использовать следующее разрешение: User. ReadWrite. ALL.
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -39,7 +39,7 @@ DELETE /directoryObjects/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,7 +55,7 @@ DELETE /directoryObjects/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/directoryObject/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

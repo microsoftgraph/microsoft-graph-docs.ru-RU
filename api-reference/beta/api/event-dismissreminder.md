@@ -1,21 +1,21 @@
 ---
 title: 'event: dismissReminder'
-description: Отключить напоминание, который будет активирована для события в календаре пользователя.
+description: ОтКлонить напоминание, запущенное для события в календаре пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 885a285e3c35f59b0fde76be5c84ae152a2ad13a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523052"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457510"
 ---
 # <a name="event-dismissreminder"></a>event: dismissReminder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключить напоминание, который будет активирована для [событий](../resources/event.md) [календаря](../resources/calendar.md)пользователя.
+ОтКлонить напоминание, запущенное для [события](../resources/event.md) в календаре пользователя [](../resources/calendar.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -73,7 +73,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 POST https://graph.microsoft.com/beta/me/events/{id}/dismissReminder
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {

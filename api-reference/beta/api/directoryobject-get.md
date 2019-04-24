@@ -1,21 +1,21 @@
 ---
 title: Получение объекта DirectoryObject
-description: Получение свойств и связей объекта directoryObject.
+description: Получение свойств и связей объекта directoryobject.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6ab9543469d5ad9618c4cf2f476c33ba866ed08e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514413"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455074"
 ---
-# <a name="get-directoryobject"></a>Получение объекта DirectoryObject
+# <a name="get-directoryobject"></a>Получение объекта directoryObject
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта directoryobject.
+Получение свойств и связей объекта directoryobject.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -38,7 +38,7 @@ GET /directoryObjects/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -53,9 +53,8 @@ GET /directoryObjects/{id}
 ```http
 GET https://graph.microsoft.com/beta/directoryObjects/{id}
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

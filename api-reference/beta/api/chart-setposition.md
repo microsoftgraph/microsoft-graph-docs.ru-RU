@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4e439356f2156a14bdbc906972c44f3c3299b05b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523108"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456636"
 ---
 # <a name="chart-setposition"></a>Chart: setPosition
 
@@ -42,7 +42,7 @@ POST /workbook/worksheets/{id|name}/charts(<name>)/setPosition
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|startCell|string|Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка — это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево).|
+|startCell|строка|Начальная ячейка. Место, куда будет перемещена диаграмма. Начальная ячейка — это верхняя левая или верхняя правая ячейка (это зависит от того, использует ли пользователь параметры отображения справа налево).|
 |endCell|string|Необязательный. Конечная ячейка. Если указан этот параметр, значения ширины и высоты диаграммы будут заданы так, чтобы полностью покрыть данную ячейку или диапазон.|
 
 ## <a name="response"></a>Отклик
@@ -68,7 +68,7 @@ Content-length: 66
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

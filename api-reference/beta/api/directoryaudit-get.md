@@ -1,18 +1,18 @@
 ---
 title: Получение directoryAudit
-description: Предоставляет (или получает) определенного элемента журнала аудита Azure Active Directory. Включает в себя журналы аудита, созданных функцией различных служб в Azure Active Directory пользователя, приложения, устройств и управление группами, привилегированной управления удостоверениями, обзоры доступа, условия использования, защиту, управление паролями (SSPR и администрирования сброс пароля ), Самообслуживания и т.д группы управления...
+description: Предоставляет (или получает) определенный элемент журнала аудита Azure Active Directory. Включает журналы аудита, созданные различными службами Azure Active Directory, например службой управления пользователями, приложениями, устройствами и группами, управления привилегированными пользователями, проверки доступа, условий использования, защиты идентификации, управления паролями (SSPR и сброс паролей администраторов), самостоятельного управления группами и т. д.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 43b478aed8ac6beb28d9db53d0c97c01b34f173a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956320"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455116"
 ---
 # <a name="get-directoryaudit"></a>Получение directoryAudit
-Предоставляет (или получает) определенного элемента журнала аудита Azure Active Directory. Включает в себя журналы аудита, созданных функцией различных служб в Azure Active Directory пользователя, приложения, устройств и управление группами, привилегированной управления удостоверениями, обзоры доступа, условия использования, защиту, управление паролями (SSPR и администрирования сброс пароля ), Самообслуживания и т.д группы управления...
+Предоставляет (или получает) определенный элемент журнала аудита Azure Active Directory. Включает журналы аудита, созданные различными службами Azure Active Directory, например службой управления пользователями, приложениями, устройствами и группами, управления привилегированными пользователями, проверки доступа, условий использования, защиты идентификации, управления паролями (SSPR и сброс паролей администраторов), самостоятельного управления группами и т. д.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "27956320"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается   |
 |Для приложений | AuditLog.Read.All | 
 
-Кроме того приложения должны быть [правильно зарегистрирован](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) для Azure AD.
+Кроме того, приложения должны быть [правильно зарегистрированы](https://docs.microsoft.com/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) в Azure AD.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -31,17 +31,17 @@ ms.locfileid: "27956320"
 GET /auditLogs/directoryAudits/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие параметры запроса OData для настройки ответа. Проверьте [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для порядок использования этих параметров.
+Этот метод поддерживает указанные ниже параметры запросов OData для настройки отклика. Сведения об использовании этих параметров см. в статье [Параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Authorization  | Bearer {code}|
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [directoryAudit](../resources/directoryaudit.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директоряудит](../resources/directoryaudit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -53,7 +53,7 @@ GET /auditLogs/directoryAudits/{id}
 ```http
 GET https://graph.microsoft.com/beta/auditLogs/directoryAudits/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

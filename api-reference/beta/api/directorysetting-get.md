@@ -1,23 +1,23 @@
 ---
-title: Получить параметры каталога
-description: Извлечение свойств объекта параметр конкретного каталога.
+title: Получение параметра каталога
+description: Получение свойств определенного объекта параметров каталога.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0ad7b0137e741ff6c6766980f121838ae00d8200
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525292"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454847"
 ---
-# <a name="get-a-directory-setting"></a>Получить параметры каталога
+# <a name="get-a-directory-setting"></a>Получение параметра каталога
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств объекта параметр конкретного каталога.
+Получение свойств определенного объекта параметров каталога.
 
-> **Примечание**: версия /beta этот интерфейс API является только относится к группам. Для *получения groupSettings*переименован версии /v1.0 этот интерфейс API.
+> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована, чтобы *получить граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,8 @@ ms.locfileid: "29525292"
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Получение определенных всей клиента или параметр групповой
+<!-- { "blockType": "ignored" } -->
+Получение определенного параметра на уровне клиента или группы
 ```http
 GET /settings/{id}
 GET /groups/{id}/settings/{id}
@@ -43,11 +44,11 @@ GET /groups/{id}/settings/{id}
 | Авторизация  | Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [directorySetting](../resources/directorysetting.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [директорисеттинг](../resources/directorysetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -58,9 +59,8 @@ GET /groups/{id}/settings/{id}
 ```http
 GET https://graph.microsoft.com/beta/settings/{id}
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

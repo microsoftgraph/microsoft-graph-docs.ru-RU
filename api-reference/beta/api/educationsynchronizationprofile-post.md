@@ -1,29 +1,29 @@
 ---
-title: Создание educationSynchronizationProfile
-description: 'Создание запроса для школа данных синхронизации профиля в клиентов. Запрос состояния, чтобы получить сведения о состоянии профиля. '
+title: Создание Едукатионсинчронизатионпрофиле
+description: 'Создайте запрос для нового профиля синхронизации данных School в клиенте. ЗаПросите состояние, чтобы получить состояние профиля. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: efc9b76405b57d0e47d645d0e7b00dc9425ba71b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520818"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457405"
 ---
-# <a name="create-an-educationsynchronizationprofile"></a>Создание educationSynchronizationProfile
+# <a name="create-an-educationsynchronizationprofile"></a>Создание Едукатионсинчронизатионпрофиле
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание запроса для нового данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов. [Запрос состояния](educationsynchronizationprofilestatus-get.md) , чтобы получить сведения о состоянии профиля. 
+Создайте запрос для нового [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. [Запросите состояние](educationsynchronizationprofilestatus-get.md) , чтобы получить состояние профиля. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+| Делегированное (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
+|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -36,13 +36,13 @@ POST /synchronizationProfiles
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-| Content-Type | string | application/json Обязательный. |
+| Content-Type | string | Приложение/JSON. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление объекта [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.
+В тексте запроса добавьте представление объекта [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `202, Accepted` код ответа и объект [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -98,7 +98,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

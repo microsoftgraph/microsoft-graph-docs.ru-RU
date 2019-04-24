@@ -1,19 +1,19 @@
 ---
 title: Создание приложения
-description: Используйте этот интерфейс API для создания нового приложения.
+description: С помощью этого API можно создать объект application.
 localization_priority: Normal
 ms.openlocfilehash: 350e5f0fcb45f7404a670c1a0af4e4ddd02a97c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514245"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455942"
 ---
 # <a name="create-application"></a>Создание приложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для создания нового приложения.
+С помощью этого API можно создать объект application.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -32,14 +32,14 @@ POST /connectorGroups/{id}/applications
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Токен носителя. Обязательный|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .
+В тексте запроса должно быть представление объекта [application](../resources/application.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` объект ответа кодов и [приложений](../resources/application.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [application](../resources/application.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -57,10 +57,9 @@ Content-length: 329
   "@odata.id": "https://graph.microsoft.com/{ver}/applications/{id}"
 }
 ```
-В тексте запроса укажите представление JSON объекта [приложения](../resources/application.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+В тексте запроса должно быть представление объекта [application](../resources/application.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

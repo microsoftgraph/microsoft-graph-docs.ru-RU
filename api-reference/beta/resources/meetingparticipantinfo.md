@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса meetingParticipantInfo
-description: Сведения о участник в собрании.
+title: Тип ресурса МитингпартиЦипантинфо
+description: Сведения о участниках собрания.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1ba727344b1f653125a482b592e7d28c11d1d3d5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457118"
 ---
-# <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса meetingParticipantInfo
+# <a name="meetingparticipantinfo-resource-type"></a>Тип ресурса МитингпартиЦипантинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о участник в собрании.
+Сведения о участниках собрания.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип                          | Описание                              |
 |:---------------|:------------------------------|:-----------------------------------------|
-| identity       | [identitySet](identityset.md) | Сведения об удостоверениях участника. |
-| UPN            | String                        | Имя участника-пользователя участника.  |
+| хищения       | [identitySet](identityset.md) | Сведения об удостоверении участника. |
+| Основное            | Строка                        | Имя участника пользователя.  |
 
 ## <a name="json-representation"></a>Представление JSON
 

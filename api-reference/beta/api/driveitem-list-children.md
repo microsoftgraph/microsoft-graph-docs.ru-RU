@@ -2,17 +2,17 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: ПереЧисление содержимого папки
+title: Создание списка содержимого папки
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 96c5623ba2534086fbcd2130b5b5228e53208c35
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454386"
 ---
-# <a name="list-children-of-a-driveitem"></a>Список дочерних элементов ресурса driveItem.
+# <a name="list-children-of-a-driveitem"></a>Создание списка дочерних элементов ресурса driveItem
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -45,19 +45,19 @@ GET /users/{user-id}/drive/items/{item-id}/children
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) `$expand`, `$select`, `$skipToken`, `$top` и `$orderby` для настройки ответа.
 
 ### <a name="optional-request-headers"></a>Необязательные заголовки запросов
 
 | Имя заголовка     | Значение | Описание                                                                                                                                              |
 |:----------------|:------|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом в файле, то будет возвращен отклик `HTTP 304 Not Modified`. |
+| _if-none-match_ | etag  | Если указан этот заголовок запроса, а предоставленный тег eTag (или cTag) совпадает с текущим тегом файла, то будет возвращен ответ `HTTP 304 Not Modified`. |
 
 ## <a name="examples"></a>Примеры
 
-### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке объекта drive текущего пользователя
+### <a name="list-children-in-the-root-of-the-current-users-drive"></a>Создание списка дочерних элементов в корневой папке диска текущего пользователя
 
-Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
 
 <!-- { "blockType": "request", "name": "list-children-root", "scopes": "files.read" } -->
 
@@ -68,7 +68,7 @@ GET /me/drive/root/children
 
 ### <a name="list-children-of-a-driveitem-with-a-known-id"></a>Создание списка дочерних элементов ресурса driveItem с использованием известного идентификатора
 
-Чтобы получить файлы, расположенные в корневой папке объекта drive, используйте связь `root` для drive, а затем получите доступ к связи дочернего элемента.
+Чтобы получить файлы, расположенные в корневой папке диска, используйте связь `root` для диска, а затем получите доступ к связи дочернего элемента.
 
 <!-- { "blockType": "request", "name": "list-children", "scopes": "files.read" } -->
 
@@ -112,7 +112,7 @@ Content-type: application/json
 
 Вы можете управлять размером страницы с помощью [необязательных параметров строки запроса](https://developer.microsoft.com/graph/docs/concepts/query_parameters)
 
-### <a name="error-responses"></a>Отклики с ошибками
+### <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

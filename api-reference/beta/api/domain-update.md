@@ -1,23 +1,21 @@
 ---
 title: Обновление домена
-description: Обновление свойств объекта домена.
+description: Обновление свойств объекта Domain.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c221ee4ec889f77712417ca7fca1c6d7708881ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524319"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454871"
 ---
 # <a name="update-domain"></a>Обновление домена
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Обновление свойств объекта Domain.
 
-Обновление свойств объекта домена.
-
-> **Важно!** Можно обновить только проверенные домены.
+> **Важно!** Обновлять можно только проверенные домены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,21 +45,22 @@ PATCH /domains/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в тело запроса, сохранят имеющиеся значения либо будут пересчитаны на основании изменений других значений свойств. Для повышения производительности включайте только измененные значения.
+В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Существующие свойства, не включенные в текст запроса, сохраняют свои предыдущие значения или пересчитываются в зависимости от изменений значений других свойств. Для достижения лучшей производительности включайте только измененные значения.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content` и не возвращает тело отклика.
+В случае успешного выполнения этот метод возвращает `204 No Content` код отклика и без текста отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["contoso.com"],
   "name": "update_domain"
 }-->
 ```http
-PATCH https://graph.microsoft.com/beta/domains/contoso.com
+PATCH https://graph.microsoft.com/v1.0/domains/contoso.com
 Content-type: application/json
 
 {
@@ -73,7 +72,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -86,15 +85,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Update domain",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/domain-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

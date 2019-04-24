@@ -1,18 +1,16 @@
 ---
-title: Список версий DriveItem
+title: ПереЧисление версий объекта DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b51982c9aff9f8be8c801b6f0e0fc16e9ff47852
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454344"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>Список версий DriveItem
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+# <a name="listing-versions-of-a-driveitem"></a>ПереЧисление версий объекта DriveItem
 
 OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 В зависимости от того, каковы служба и конфигурация, новую версию можно создавать при каждом изменении или сохранении, создавать вручную или не создавать никогда.
@@ -53,13 +51,13 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 
 ### <a name="http-request"></a>HTTP-запрос
 
-<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read" } -->
+<!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
 ```http
 GET /me/drive/items/{item-id}/versions
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Возвращается коллекция версий:
 
@@ -116,15 +114,10 @@ OneDrive не сохраняет полные метаданные для пре
 Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.
 
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List, review, and download previous versions of a driveItem",
   "keywords": "version, version history, versions",
   "section": "documentation",
-  "tocPath": "Items/Version history",
-  "suppressions": [
-    "Error: /api-reference/beta/api/driveitem-list-versions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "Items/Version history"
+} -->

@@ -1,19 +1,19 @@
 ---
-title: Перечисление участников
-description: Получение списка объектов соединителя, связанных с connectorGroup.
+title: Список элементов
+description: Получение списка объектов Connector, связанных с Коннекторграуп.
 localization_priority: Normal
 ms.openlocfilehash: 0a35e2645d017d6c0ff23121a5f592438e575798
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517059"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455893"
 ---
-# <a name="list-members"></a>Перечисление участников
+# <a name="list-members"></a>Список членов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов соединителя, связанных с connectorGroup.
+Получение списка объектов Connector, связанных с Коннекторграуп.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -34,14 +34,14 @@ GET /connectorGroups/{id}/members
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Токен носителя. Обязательный|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [соединителя](../resources/connector.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Connector](../resources/connector.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -52,9 +52,8 @@ GET /connectorGroups/{id}/members
 ```http
 GET https://graph.microsoft.com/{ver}/connectorGroups/{id}/members
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

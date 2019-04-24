@@ -1,29 +1,29 @@
 ---
 title: Отчеты об использовании устройств Microsoft Teams
-description: 'Использование отчетов об использовании устройства группами Майкрософт для получения понять использование устройства группами Майкрософт в вашей организации. '
+description: 'Используйте отчеты об использовании устройств Microsoft Teams, чтобы получить информацию об использовании устройств Microsoft Teams в вашей организации. '
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: d19df5132a67ac5862535a329eadbdff7044798c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576642"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457111"
 ---
 # <a name="microsoft-teams-device-usage-reports"></a>Отчеты об использовании устройств Microsoft Teams
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Использование отчетов об использовании устройства группами Майкрософт для получения понять использование устройства группами Майкрософт в вашей организации. 
+Используйте отчеты об использовании устройств Microsoft Teams, чтобы получить информацию об использовании устройств Microsoft Teams в вашей организации. 
 
 ## <a name="methods"></a>Методы
 
 | Метод                                   | Возвращаемый тип                              | Описание                              |
 | :--------------------------------------- | :--------------------------------------- | :--------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getteamsdeviceusageuserdetail.md) | [teamsDeviceUsageUserDetail](../resources/teamsdeviceusageuserdetail.md) | Получение сведений об использовании устройств Microsoft Teams отдельными пользователями. |
-| [Получение количества пользователей](../api/reportroot-getteamsdeviceusageusercounts.md) | [teamsDeviceUsageUserCounts](../resources/teamsdeviceusageusercounts.md) | Получение сведений о количестве уникальных пользователей в день по типам устройств. |
-| [Получение распределенного количества пользователей](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [teamsDeviceUsagedistributionUserCounts](../resources/teamsdeviceusagedistributionusercounts.md) | Получение количества уникальных пользователей по типам устройств за выбранный период времени. |
+| [Получение сведений о пользователях](../api/reportroot-getteamsdeviceusageuserdetail.md) | [Теамсдевицеусажеусердетаил](../resources/teamsdeviceusageuserdetail.md) | Получение сведений об использовании устройств Microsoft Teams отдельными пользователями. |
+| [Получение количества пользователей](../api/reportroot-getteamsdeviceusageusercounts.md) | [Теамсдевицеусажеусеркаунтс](../resources/teamsdeviceusageusercounts.md) | Получение сведений о количестве уникальных пользователей в день по типам устройств. |
+| [Получение распределенного количества пользователей](../api/reportroot-getteamsdeviceusagedistributionusercounts.md) | [Теамсдевицеусажедистрибутионусеркаунтс](../resources/teamsdeviceusagedistributionusercounts.md) | Получение количества уникальных пользователей по типам устройств за выбранный период времени. |
 <!--
 {
   "type": "#page.annotation",

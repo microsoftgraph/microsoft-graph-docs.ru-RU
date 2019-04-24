@@ -1,23 +1,23 @@
 ---
 author: chackman
 ms.author: chackman
-title: Следуйте элемента диска
+title: ПодПисаться на диск
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b0c8835593ed7203cc6239485f1dcd4f17f24fe7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454409"
 ---
-# <a name="follow-drive-item"></a>Следуйте элемента диска
+# <a name="follow-drive-item"></a>ПодПисаться на диск
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Следуйте [driveItem](../resources/driveitem.md).
+ПодПишитесь на [driveItem](../resources/driveitem.md).
 
->**Примечание:** Чтобы отменить подписку на элемент, обратитесь к [Unfollow элемента](driveitem-unfollow.md).
+>**Примечание:** Чтобы отписаться от элемента, ознакомьтесь со статьей [элемент](driveitem-unfollow.md)не подписаться.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,13 +45,13 @@ POST /users/{user-id}/drive/items/{item-id}/follow
 
 Тело запроса не требуется.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Этот метод возвращает [DriveItem](../resources/driveitem.md) для элемента а затем.
+Этот метод возвращает объект [DriveItem](../resources/driveitem.md) для отслеживаемого элемента.
 
 ## <a name="example"></a>Пример
 
-В этом примере исходя из элемента, определяемую средством `{item-id}`.
+В этом примере используется элемент, `{item-id}`идентифицируемый.
 
 <!-- { "blockType": "request", "name": "follow-item", "scopes": "files.read", "target": "action" } -->
 

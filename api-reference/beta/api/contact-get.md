@@ -1,26 +1,26 @@
 ---
 title: Получение контакта
-description: Извлечение свойств и связи контактного объекта.
+description: Получение свойств и связей объекта Contact.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e758a088400168ca755aae755054fcd57c1d092a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455683"
 ---
-# <a name="get-contact"></a>Получение контакта
+# <a name="get-contact"></a>Вывод контакта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи контактного объекта.
+Получение свойств и связей объекта Contact.
 
-Существует два сценария, где приложения можно получить контакт в папке контактов другого пользователя.
+Существует два сценария, в которых приложение может получить контакт в папке контактов другого пользователя:
 
-* Если приложение имеет разрешения приложения, или,
-* Если приложение имеет соответствующей делегированных [разрешений](#permissions) от одного пользователя, и другой пользователь общей папке контактов с этим пользователем или, предоставленное делегированный доступ для пользователя, который. В разделе [сведения и примеры](/graph/outlook-get-shared-contacts-folders).
+* У приложения есть разрешения для приложений; или
+* У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой контактов или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-contacts-folders).
 
 
 ## <a name="permissions"></a>Разрешения
@@ -33,17 +33,18 @@ ms.locfileid: "29530120"
 |Для приложений | Contacts.Read, Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->[Обратитесь](../resources/contact.md) в почтовом ящике пользователя.
+<!-- { "blockType": "ignored" } -->
+[Контакт](../resources/contact.md) в почтовом ящике пользователя.
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
 ```
-[Обратитесь](../resources/contact.md) в верхнего уровня [contactFolder](../resources/contactfolder.md) пользователя.
+[Контакт](../resources/contact.md) из верхнего уровня [contactFolder](../resources/contactfolder.md) пользователя.
 ```http
 GET /me/contactfolders/{Id}/contacts/{id}
 GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 ```
-[Контакт](../resources/contact.md), содержащийся в дочерней папке объекта [contactFolder](../resources/mailfolder.md). В приведенном ниже примере показан один уровень вложенности, но контакт может храниться в папке, вложенной в дочернюю папку и т. д.
+Объект [contact](../resources/contact.md) из дочерней папки в папке [contactFolder](../resources/mailfolder.md).  Приведенный ниже пример показывает один уровень вложенности, но для хранения контакта допускается несколько.
 ```http
 GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -51,7 +52,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 |Имя|Значение|Описание|
 |:---------------|:--------|:-------|
-|$expand|string|Список отношений, развертываемых и включаемых в ответ (разделитель — запятая). В разделе таблицы связей объекта [контактов](../resources/contact.md) для поддерживаемых имен. |
+|$expand|string|Список отношений, развертываемых и включаемых в ответ (разделитель — запятая). Сведения о поддерживаемых именах см. в таблице связи объекта [Contact](../resources/contact.md) . |
 |$select|string|Разделенный запятыми список свойств, включаемых в ответ.|
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -60,7 +61,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -75,8 +76,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contac
 ```http
 GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

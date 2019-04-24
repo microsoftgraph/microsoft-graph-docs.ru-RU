@@ -1,15 +1,15 @@
 ---
 title: Получение объектов каталога из списка идентификаторов
-description: Выберите "параметр запроса не поддерживается для этой операции.
+description: Параметр запроса select недоступен для этой операции.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7c76335889f336af6098eb00740085b40614c1ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512229"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455180"
 ---
 # <a name="get-directory-objects-from-a-list-of-ids"></a>Получение объектов каталога из списка идентификаторов
 
@@ -54,8 +54,8 @@ POST /directoryObjects/getByIds
 
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
-|ids|Коллекция String| Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов. |
-|types|Коллекция String| Коллекция типов ресурсов, определяющий набор ресурсов семейств сайтов для поиска. Если не указан, по умолчанию — [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), которая содержит все типы ресурсов, определенные в каталоге. Любого объекта, производного от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta) может быть указано в коллекции; Например: [пользователей](/graph/api/resources/user?view=graph-rest-beta), [группы](/graph/api/resources/group?view=graph-rest-beta), [устройства](/graph/api/resources/device?view=graph-rest-beta)и т. д. Для поиска справочных материалов, которые [Поставщик облаке решения](https://partner.microsoft.com/en-us/cloud-solution-provider) партнеров организации задается [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если не указан, по умолчанию — [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), которая содержит все типы ресурсов, определенные в каталоге, за исключением справочные материалы, которые [Поставщик решения облачных](https://partner.microsoft.com/en-us/cloud-solution-provider) партнерской организации. Значения не учитывают регистр.|
+|ids|Коллекция строк| Коллекция идентификаторов, для которой необходимо возвратить объекты. Вы можете указать до 1000 идентификаторов. |
+|types|Коллекция String| Коллекция типов ресурсов, указывающая набор коллекций ресурсов, в котором необходимо выполнить поиск. Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге. В коллекции можно указать любой объект, производный от [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta). Пример: [user](/graph/api/resources/user?view=graph-rest-beta), [group](/graph/api/resources/group?view=graph-rest-beta), [device](/graph/api/resources/device?view=graph-rest-beta). Для поиска ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider), укажите ресурс [directoryObjectPartnerReference](/graph/api/resources/directoryobjectpartnerreference?view=graph-rest-beta). Если аргумент не указан, по умолчанию используется объект [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta), который содержит все типы ресурсов, определенные в каталоге, кроме ссылок на партнерскую организацию, [поставляющую облачные решения](https://partner.microsoft.com/en-us/cloud-solution-provider). В значениях не учитывается регистр символов.|
 
 ## <a name="response"></a>Отклик
 
@@ -80,9 +80,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

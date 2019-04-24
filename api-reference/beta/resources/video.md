@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Видео
 localization_priority: Normal
 ms.openlocfilehash: 1e780c8392316be1f7fcc59f3818085dc462da29
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481596"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454025"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -21,7 +21,7 @@ ms.locfileid: "30481596"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
@@ -50,7 +50,7 @@ ms.locfileid: "30481596"
 |:--------------------------|:-------|:----------------------------------------
 | **audioBitsPerSample**    | Int32  | Количество разрядов звука на выборку.
 | **audioChannels**         | Int32  | Количество звуковых каналов.
-| **audioFormat**           | string | Название формата аудио (AAC, MP3, и т. д.).
+| **audioFormat**           | строка | Название формата аудио (AAC, MP3, и т. д.).
 | **audioSamplesPerSecond** | Int32  | Количество выборок звука в секунду.
 | **bitrate**               | Int32  | Скорость видео в битах в секунду.
 | **duration**              | Int64  | Длительность файла в миллисекундах.

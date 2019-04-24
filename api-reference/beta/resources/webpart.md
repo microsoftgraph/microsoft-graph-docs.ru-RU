@@ -6,17 +6,17 @@ title: WebPart
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c019da7cb10a8c26faa8d338c54436043f83db8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453611"
 ---
-# <a name="webpart-resource"></a>веб-часть ресурсов
+# <a name="webpart-resource"></a>ресурс webPart
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип и отображение сведений о веб-части на [sitePage](sitepage.md)представляет ресурс **веб-части** .
+Ресурс **WebPart** представляет тип и сведения о визуализации веб-части в [ситепаже](sitepage.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,16 +39,16 @@ ms.locfileid: "29640177"
 
 | Свойство                | Тип             | Описание
 |:------------------------|:-----------------|:----------------------------------
-| **type**                | String           | Уникальный идентификатор, определяющий тип веб-части. Только для чтения.
-| **data**                | [sitePageData][] | Обязательные свойства для веб-части (зависит от веб-части)
+| **type**                | Строка           | Уникальный идентификатор, указывающий тип веб-части. Только для чтения.
+| **data**                | [Ситепажедата][] | Обязательные свойства веб-части (зависит от веб-части)
 
-[sitePageData]: sitepagedata.md
+[Ситепажедата]: sitepagedata.md
 
-## <a name="remarks"></a>Замечания
+## <a name="remarks"></a>Комментарии
 
-Веб-части можно определить собственные необходимые свойства в области **данных**.
+Веб-части могут определять собственные обязательные свойства в разделе **Data**.
 
-Дополнительные сведения о страницах можно [sitePage](sitepage.md).
+Более подробную информацию о страницах можно узнать в статье [ситепаже](sitepage.md).
 <!--
 {
   "type": "#page.annotation",

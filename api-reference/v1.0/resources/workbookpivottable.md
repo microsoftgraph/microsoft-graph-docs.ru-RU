@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5f6360ce1eacc313f1bcc8a9f59b44b216a87b84
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456866"
 ---
 # <a name="pivottable-resource-type"></a>Тип ресурсов pivotTable
 
@@ -26,13 +26,13 @@ ms.locfileid: "27958742"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Идентификатор сводной таблицы.   Только для чтения.|
+|id|Строка| Идентификатор сводной таблицы.   Только для чтения.|
 |name|String|Имя сводной таблицы.    |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|worksheet|[WorkbookWorksheet](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
+|worksheet|[Воркбукворкшит](worksheet.md)| Лист, содержащий текущую сводную таблицу. Только для чтения.   |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

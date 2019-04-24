@@ -1,19 +1,19 @@
 ---
-title: Обновление connectorGroups
-description: Обновление свойства объекта connectorgroup.
+title: Обновление Коннекторграупс
+description: Обновление свойств объекта коннекторграуп.
 localization_priority: Normal
 ms.openlocfilehash: 9d6feec19552aeeebe51ba0fab07e805c6f4a2bb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455767"
 ---
-# <a name="update-connectorgroups"></a>Обновление connectorGroups
+# <a name="update-connectorgroups"></a>Обновление Коннекторграупс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойства объекта connectorgroup.
+Обновление свойств объекта коннекторграуп.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -31,19 +31,19 @@ PATCH /connectorGroups/{id}
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Токен носителя. Обязательный|
+| Authorization  | Носителя. Обязательно|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Возможные значения: `applicationProxy`.|
-|name|String|Имя connectorGroup.|
+|Коннекторграуптипе|строка| Возможные значения: `applicationProxy`.|
+|name|String|Имя Коннекторграуп.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные [connectorGroup](../resources/connectorgroup.md) объект в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [коннекторграуп](../resources/connectorgroup.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -61,9 +61,8 @@ Content-length: 99
   "connectorGroupType": "connectorGroupType-value",
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,23 +1,23 @@
 ---
 title: Параметры каталога списка
-description: Получение списка объектов параметр каталога.
+description: Получение списка объектов параметров каталога.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 708faad9dc90bf5f79f89d72b381391843371766
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515939"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32454829"
 ---
 # <a name="list-directory-settings"></a>Параметры каталога списка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов параметр каталога.
+Получение списка объектов параметров каталога.
 
-> **Примечание**: версия /beta этот интерфейс API является только относится к группам. Версия /v1.0 этот интерфейс API переименовано в *groupSettings списка*.
+> **Note**: версия/Beta этого API применяется только к группам. Версия/v1.0 этого API была переименована в *List граупсеттингс*.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -29,7 +29,8 @@ ms.locfileid: "29515939"
 |Для приложений | Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Список всей клиента или параметры группы
+<!-- { "blockType": "ignored" } -->
+ПереЧисление параметров на уровне клиента или группы
 ```http
 GET /settings
 GET /group/{id}/settings
@@ -43,11 +44,11 @@ GET /group/{id}/settings
 | Авторизация  | Bearer {токен}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [directorySetting](../resources/directorysetting.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [директорисеттинг](../resources/directorysetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -58,9 +59,8 @@ GET /group/{id}/settings
 ```http
 GET https://graph.microsoft.com/beta/settings
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

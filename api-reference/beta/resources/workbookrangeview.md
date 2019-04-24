@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ace424d12e38e4bb907923ea542ebd7330130d06
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643981"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32453509"
 ---
 # <a name="rangeview-resource-type"></a>Тип ресурсов rangeView
 
@@ -21,7 +21,7 @@ ms.locfileid: "29643981"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение списка строк](../api/workbookrangeview-list-rows.md)  |Коллекция [workbookRangeView](workbookrangeview.md)| Получение коллекции объектов workbookRangeView.|
+|[Получение списка строк](../api/workbookrangeview-list-rows.md) |Коллекция [workbookRangeView](workbookrangeview.md)| Получение коллекции объектов workbookRangeView.|
 |[Itemat](../api/workbookrangeview-itemat.md)|[workbookRangeView](workbookrangeview.md)|Получение видимой ячейки из диапазона с учетом индекса.|
 |[Диапазон](../api/workbookrangeview-range.md)|[workbookRange](range.md)|Возвращение экземпляра range, связанного с ресурсом rangeView.|
 
@@ -40,7 +40,7 @@ ms.locfileid: "29643981"
 |values|Json|Представляет необработанные значения указанного объекта rangeView. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.   |
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |rows|Коллекция [workbookRangeView](workbookrangeview.md)| Представляет коллекцию видимых ячеек в диапазоне, сопоставленных с указанным диапазоном. Только для чтения.    Только для чтения.|
 
