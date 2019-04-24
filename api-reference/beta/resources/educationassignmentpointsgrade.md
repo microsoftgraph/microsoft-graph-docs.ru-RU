@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса educationAssignmentPointsGrade
-description: Если тип марки точек назначения, каждой отправки будут иметь этот объект, связанный со свойством **submission.grade** . Это создаст подкласс из educationAssignmentGrade,
+title: Тип ресурса Едукатионассигнментпоинтсграде
+description: Если для назначения задан тип уровня баллов, то каждая отправка будет иметь этот объект, связанный с свойством **отправку. Grade** . При этом создается подкласс из Едукатионассигнментграде,
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 5d2a5cf6f6f886185179c6f1a61c1bb1d9d1ecfc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507338"
 ---
-# <a name="educationassignmentpointsgrade-resource-type"></a><span data-ttu-id="143c1-104">Тип ресурса educationAssignmentPointsGrade</span><span class="sxs-lookup"><span data-stu-id="143c1-104">educationAssignmentPointsGrade resource type</span></span>
+# <a name="educationassignmentpointsgrade-resource-type"></a><span data-ttu-id="fdb4e-104">Тип ресурса Едукатионассигнментпоинтсграде</span><span class="sxs-lookup"><span data-stu-id="fdb4e-104">educationAssignmentPointsGrade resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="143c1-105">Если тип марки точек назначения, каждой отправки будут иметь этот объект, связанный со свойством **submission.grade** .</span><span class="sxs-lookup"><span data-stu-id="143c1-105">When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property.</span></span> <span data-ttu-id="143c1-106">Это создаст подкласс из [educationAssignmentGrade](educationassignmentgrade.md), который добавит who данных этого свойства.</span><span class="sxs-lookup"><span data-stu-id="143c1-106">This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md), which will add the who data to this property.</span></span> <span data-ttu-id="143c1-107">Max точек хранится в свойстве **assignments.grading** .</span><span class="sxs-lookup"><span data-stu-id="143c1-107">The max points is stored in the **assignments.grading** property.</span></span>
+<span data-ttu-id="fdb4e-105">Если для назначения задан тип уровня баллов, то каждая отправка будет иметь этот объект, связанный с свойством **отправку. Grade** .</span><span class="sxs-lookup"><span data-stu-id="fdb4e-105">When an assignment is set to a points grade type, each submission will have this object associated with the **submission.grade** property.</span></span> <span data-ttu-id="fdb4e-106">При этом создается подкласс из [едукатионассигнментграде](educationassignmentgrade.md), который добавляет к этому свойству данные.</span><span class="sxs-lookup"><span data-stu-id="fdb4e-106">This creates a subclass from [educationAssignmentGrade](educationassignmentgrade.md), which will add the who data to this property.</span></span> <span data-ttu-id="fdb4e-107">Максимальные точки хранятся в свойстве **назначений. ступенчато** .</span><span class="sxs-lookup"><span data-stu-id="fdb4e-107">The max points is stored in the **assignments.grading** property.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="143c1-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="143c1-108">Properties</span></span>
-| <span data-ttu-id="143c1-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="143c1-109">Property</span></span>     | <span data-ttu-id="143c1-110">Тип</span><span class="sxs-lookup"><span data-stu-id="143c1-110">Type</span></span>   |<span data-ttu-id="143c1-111">Описание</span><span class="sxs-lookup"><span data-stu-id="143c1-111">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="fdb4e-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="fdb4e-108">Properties</span></span>
+| <span data-ttu-id="fdb4e-109">Свойство</span><span class="sxs-lookup"><span data-stu-id="fdb4e-109">Property</span></span>     | <span data-ttu-id="fdb4e-110">Тип</span><span class="sxs-lookup"><span data-stu-id="fdb4e-110">Type</span></span>   |<span data-ttu-id="fdb4e-111">Описание</span><span class="sxs-lookup"><span data-stu-id="fdb4e-111">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="143c1-112">points</span><span class="sxs-lookup"><span data-stu-id="143c1-112">points</span></span>|<span data-ttu-id="143c1-113">Single</span><span class="sxs-lookup"><span data-stu-id="143c1-113">Single</span></span>|<span data-ttu-id="143c1-114">Число точек a учитель передается объект отправки.</span><span class="sxs-lookup"><span data-stu-id="143c1-114">Number of points a teacher is giving this submission object.</span></span>|
+|<span data-ttu-id="fdb4e-112">points</span><span class="sxs-lookup"><span data-stu-id="fdb4e-112">points</span></span>|<span data-ttu-id="fdb4e-113">Одинарное с плавающей точкой</span><span class="sxs-lookup"><span data-stu-id="fdb4e-113">Single</span></span>|<span data-ttu-id="fdb4e-114">Количество баллов, на которые преподаватель предоставляет этот объект отправки.</span><span class="sxs-lookup"><span data-stu-id="fdb4e-114">Number of points a teacher is giving this submission object.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="143c1-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="143c1-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="fdb4e-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="fdb4e-115">JSON representation</span></span>
 
-<span data-ttu-id="143c1-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="143c1-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="fdb4e-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="fdb4e-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

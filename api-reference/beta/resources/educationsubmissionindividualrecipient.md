@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса educationSubmissionIndividualRecipient
-description: 'Подкласс educationSubmissionRecipient, которое указывает, что отправка назначен одному пользователю в классе.  '
+title: Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент
+description: 'Подкласс ЕдукатионсубмиссионреЦипиент, который указывает, что отправка назначена отдельному пользователю в классе.  '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 8660ec569362d8170d15de86073c0ef59c9ec0a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519187"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32507063"
 ---
-# <a name="educationsubmissionindividualrecipient-resource-type"></a><span data-ttu-id="cb45c-103">Тип ресурса educationSubmissionIndividualRecipient</span><span class="sxs-lookup"><span data-stu-id="cb45c-103">educationSubmissionIndividualRecipient resource type</span></span>
+# <a name="educationsubmissionindividualrecipient-resource-type"></a><span data-ttu-id="29dc2-103">Тип ресурса ЕдукатионсубмиссиониндивидуалреЦипиент</span><span class="sxs-lookup"><span data-stu-id="29dc2-103">educationSubmissionIndividualRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="cb45c-104">Подкласс [educationSubmissionRecipient](educationsubmissionrecipient.md) , которое указывает, что отправка назначен одному пользователю в классе.</span><span class="sxs-lookup"><span data-stu-id="cb45c-104">A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.</span></span>  
+<span data-ttu-id="29dc2-104">Подкласс [едукатионсубмиссионреЦипиент](educationsubmissionrecipient.md) , который указывает, что отправка назначена отдельному пользователю в классе.</span><span class="sxs-lookup"><span data-stu-id="29dc2-104">A subclass of [educationSubmissionRecipient](educationsubmissionrecipient.md) that indicates that a submission is assigned to an individual in the class.</span></span>  
 
 
-## <a name="properties"></a><span data-ttu-id="cb45c-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="cb45c-105">Properties</span></span>
-| <span data-ttu-id="cb45c-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="cb45c-106">Property</span></span>     | <span data-ttu-id="cb45c-107">Тип</span><span class="sxs-lookup"><span data-stu-id="cb45c-107">Type</span></span>   |<span data-ttu-id="cb45c-108">Описание</span><span class="sxs-lookup"><span data-stu-id="cb45c-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="29dc2-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="29dc2-105">Properties</span></span>
+| <span data-ttu-id="29dc2-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="29dc2-106">Property</span></span>     | <span data-ttu-id="29dc2-107">Тип</span><span class="sxs-lookup"><span data-stu-id="29dc2-107">Type</span></span>   |<span data-ttu-id="29dc2-108">Описание</span><span class="sxs-lookup"><span data-stu-id="29dc2-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="cb45c-109">userId</span><span class="sxs-lookup"><span data-stu-id="cb45c-109">userId</span></span>|<span data-ttu-id="cb45c-110">String</span><span class="sxs-lookup"><span data-stu-id="cb45c-110">String</span></span>|<span data-ttu-id="cb45c-111">Идентификатор пользователя, которому назначена подачи.</span><span class="sxs-lookup"><span data-stu-id="cb45c-111">User ID of the user to whom the submission is assigned.</span></span>|
+|<span data-ttu-id="29dc2-109">userId</span><span class="sxs-lookup"><span data-stu-id="29dc2-109">userId</span></span>|<span data-ttu-id="29dc2-110">String</span><span class="sxs-lookup"><span data-stu-id="29dc2-110">String</span></span>|<span data-ttu-id="29dc2-111">Идентификатор пользователя, которому назначена отправка.</span><span class="sxs-lookup"><span data-stu-id="29dc2-111">User ID of the user to whom the submission is assigned.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="cb45c-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="cb45c-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="29dc2-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="29dc2-112">JSON representation</span></span>
 
-<span data-ttu-id="cb45c-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="cb45c-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="29dc2-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="29dc2-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
