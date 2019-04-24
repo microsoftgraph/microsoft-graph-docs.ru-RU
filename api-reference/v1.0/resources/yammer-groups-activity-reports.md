@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: fd29d0ed2e1bc551595c8b8403325f64fc44998d
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522253"
 ---
 # <a name="yammer-groups-activity-reports"></a>Отчеты об активности в группах Yammer
 

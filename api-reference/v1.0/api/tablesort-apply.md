@@ -1,15 +1,15 @@
 ---
 title: 'TableSort: apply'
-description: Выполняет сортировку.
+description: Выполнение сортировки.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 69fda9b0a49c59a86a17e9a41eb89159085d857e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963761"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520244"
 ---
 # <a name="tablesort-apply"></a>TableSort: apply
 
@@ -36,14 +36,14 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|fields|WorkbookSortField коллекции|Список условий для сортировки.|
+|fields|Коллекция Воркбуксортфиелд|Список условий для сортировки.|
 |matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
-|method|string|Необязательный параметр. Метода упорядочения, используемый для китайских знаков.  Возможные значения: `PinYin`, `StrokeCount`.|
+|method|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
 
 ## <a name="response"></a>Отклик
 
@@ -81,7 +81,7 @@ Content-length: 298
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

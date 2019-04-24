@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 015768fb5150a64f13f3d34581a10b822712395c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791091"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522393"
 ---
 # <a name="devicemanagementsubscriptionstate-enum-type"></a>тип перечисления Девицеманажементсубскриптионстате
 
@@ -23,12 +23,12 @@ ms.locfileid: "31791091"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |закончен|нуль|Pending|
-|ASP|1,1|Активное|
-|warning|2|Предупреждение|
-|активирован|4|Отключено|
-|deleted|SP4|Deleted|
-|заблокированных|17:00|Заблокировано|
-|Блокировка|8,5|Блокировка|
+|ASP|1 |Активное|
+|warning|2 |Предупреждение|
+|активирован|3 |Отключена|
+|deleted|4 |Deleted|
+|заблокированных|5 |Заблокировано|
+|Блокировка|8 |Блокировка|
 
 
 

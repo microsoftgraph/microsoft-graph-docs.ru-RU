@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
 ms.openlocfilehash: d11f9eead6faf885bee579c634267e038f8a8ee4
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482261"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522225"
 ---
 # <a name="thumbnail-resource-type"></a>Тип ресурса thumbnail
 
@@ -48,7 +48,7 @@ ms.locfileid: "30482261"
 | sourceItemId | String | Уникальный идентификатор элемента, предоставившего эскиз. Доступен только при запросе эскиза папки.
 | url          | String | URL-адрес, используемый для получения содержимого эскиза.
 | width        | Int32  | Ширина эскиза в пикселях.
-| content      | Stream | Поток содержимого для эскиза.
+| содержимое      | Поток | Поток содержимого для эскиза.
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

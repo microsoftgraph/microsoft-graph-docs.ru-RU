@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса mentionsPreview
-description: Представляет сведения об объектах упоминаются в экземпляре ресурсов.
+title: Тип ресурса Ментионспревиев
+description: Представляет сведения об упоминании объектов в экземпляре ресурса.
 localization_priority: Normal
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: 55eb69d9ef9f6c3686026f6d46a9c78cc4df167b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518767"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523487"
 ---
-# <a name="mentionspreview-resource-type"></a>Тип ресурса mentionsPreview
+# <a name="mentionspreview-resource-type"></a>Тип ресурса Ментионспревиев
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет сведения о [упомянуть](../resources/mention.md) объекты в экземпляре ресурсов.
+Представляет сведения об [упоминании](../resources/mention.md) объектов в экземпляре ресурса.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| isMentioned | Логическое | Значение true, если пользователь выполнил вход упоминается в экземпляре ресурсов родительского. Только для чтения. Поддерживает параметр $filter. |
+| Упомянутые | Boolean | Имеет значение true, если пользователь, вошедшего в систему, упоминается в родительском экземпляре ресурса. Только для чтения. Поддерживает фильтр. |
 
 ## <a name="json-representation"></a>Представление JSON
 

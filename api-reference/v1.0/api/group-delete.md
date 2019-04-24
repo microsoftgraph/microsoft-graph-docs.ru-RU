@@ -5,17 +5,17 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 1e252ddfddfcd82bcd3f790c75b34f016f54c9fb
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251197"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522610"
 ---
 # <a name="delete-group"></a>Удаление группы
 
 Удаление группы.  
 
-После удаления группы Office 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По исТечении этого времени они безвозвратно удаляются.  Дополнительные сведения см. в разделе [deletedItems](../resources/directory.md).  Это применимо только к группам Office 365.
+После удаления группы Office 365 перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По истечении этого периода они удаляются без возможности восстановления.  Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).  Это применимо только к группам Office 365.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -38,13 +38,13 @@ DELETE /groups/{id}
 
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
@@ -63,7 +63,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}
 
 ### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. 
+Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
   "truncated": true

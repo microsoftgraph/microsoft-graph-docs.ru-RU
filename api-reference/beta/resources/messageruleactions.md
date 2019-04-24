@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a786a225bb9d439d60a29d2395b2d438975fc16c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523234"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523422"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -22,10 +22,10 @@ ms.locfileid: "29523234"
 |:---------------|:--------|:----------|
 | assignCategories | Коллекция String | Список категорий, которые необходимо назначить сообщению. |
 | copyToFolder | String | Идентификатор папки, в которую необходимо скопировать сообщение. |
-| delete | Логическое | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
+| delete | Boolean | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
 | forwardAsAttachmentTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение как вложение. |
 | forwardTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение. |
-| markAsRead | Логическое | Указывает, необходимо ли отмечать сообщение как прочтенное. |
+| markAsRead | Boolean | Указывает, необходимо ли отмечать сообщение как прочтенное. |
 | markImportance | String | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
 | permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |

@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса stringKeyAttributeMappingSourceValuePair
-description: Представляет пару ключ значение, где ключ — это строка, а значение — attributeMappingSource.
+title: Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
+description: Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — Аттрибутемаппингсаурце.
 localization_priority: Normal
 ms.openlocfilehash: ff914c23a238356a821d2902bf18900cf9957548
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516219"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523232"
 ---
-# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса stringKeyAttributeMappingSourceValuePair
+# <a name="stringkeyattributemappingsourcevaluepair-resource-type"></a>Тип ресурса Стрингкэйаттрибутемаппингсаурцевалуепаир
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пару ключ значение, где ключ — это строка, а значение — [attributeMappingSource](synchronization-attributemappingsource.md).
+Представляет собой комбинацию "ключ-значение", в которой ключ является строкой, а значение — [аттрибутемаппингсаурце](synchronization-attributemappingsource.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |key|String|Имя параметра.|
-|value|[attributeMappingSource](synchronization-attributemappingsource.md)|Значение параметра.|
+|значение|[Аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Значение параметра.|
 
 ## <a name="json-representation"></a>Представление JSON
 

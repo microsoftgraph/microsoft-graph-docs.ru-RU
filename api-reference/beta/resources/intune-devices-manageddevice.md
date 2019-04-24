@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a2233c1dea3dfc8992becf1a12c8e99f1938020a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787892"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522078"
 ---
 # <a name="manageddevice-resource-type"></a>Тип ресурса managedDevice
 
@@ -22,9 +22,9 @@ ms.locfileid: "31787892"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Получение managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
-|[Обновление managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Обновление свойств объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
-|[Действие executeAction](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md)|Пока не задокументировано.|
+|[Получение объекта managedDevice](../api/intune-devices-manageddevice-get.md)|[managedDevice](../resources/intune-devices-manageddevice.md);|Чтение свойств и связей объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
+|[Обновление объекта managedDevice](../api/intune-devices-manageddevice-update.md)|[managedDevice](../resources/intune-devices-manageddevice.md)|Обновление свойств объекта [managedDevice](../resources/intune-devices-manageddevice.md).|
+|[Действие executeAction](../api/intune-devices-manageddevice-executeaction.md)|[bulkManagedDeviceActionResult](../resources/intune-devices-bulkmanageddeviceactionresult.md);|Пока не задокументировано.|
 |[Действие enableLostMode](../api/intune-devices-manageddevice-enablelostmode.md)|Нет|Включение режима потери|
 |[Действие playLostModeSound](../api/intune-devices-manageddevice-playlostmodesound.md)|Нет|Удаленная блокировка|
 |[Действие setDeviceName](../api/intune-devices-manageddevice-setdevicename.md)|Нет|Задание имени устройства для устройства.|
@@ -45,7 +45,7 @@ ms.locfileid: "31787892"
 |[Действие syncDevice](../api/intune-devices-manageddevice-syncdevice.md)|None|Н/Д|
 |[Действие windowsDefenderScan](../api/intune-devices-manageddevice-windowsdefenderscan.md)|None|Н/Д|
 |[Действие windowsDefenderUpdateSignatures](../api/intune-devices-manageddevice-windowsdefenderupdatesignatures.md)|None|Н/Д|
-|[Действие updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|None|Н/Д|
+|[Действие updateWindowsDeviceAccount](../api/intune-devices-manageddevice-updatewindowsdeviceaccount.md)|Нет|Н/Д|
 |[Действие revokeAppleVppLicenses](../api/intune-devices-manageddevice-revokeapplevpplicenses.md)|Нет|Отзыв всех лицензий на Apple VPP для устройства|
 
 ## <a name="properties"></a>Свойства
@@ -117,7 +117,7 @@ ms.locfileid: "31787892"
 |Манажементцертификатикспиратиондате|DateTimeOffset|Дата окончания срока действия сертификата управления устройствами|
 |икЦид|String|Идентификатор встроенной карты — это уникальный идентификационный номер SIM-карты.|
 |удид|String|Уникальный идентификатор устройства для устройств iOS и macOS.|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого экземпляра устройства.|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого экземпляра устройства.|
 |Виндовсактивемалварекаунт|Int32|Число активных вредоносных программ для этого устройства с Windows|
 |Виндовсремедиатедмалварекаунт|Int32|Количество исправленных вредоносных программ для этого устройства с Windows|
 |notes|String|Примечания к устройству, созданному ИТ ИТ Admin|
@@ -127,7 +127,7 @@ ms.locfileid: "31787892"
 |Отношение|Тип|Описание|
 |:---|:---|:---|
 |detectedApps|Коллекция [detectedApp](../resources/intune-devices-detectedapp.md)|Все установленные на устройстве приложения|
-|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Категория устройств|
+|deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Категория устройства|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|Состояние защиты устройства.|
 |users|Коллекция объектов [user](../resources/intune-shared-user.md)|Основные пользователи, связанные с управляемым устройством.|
 

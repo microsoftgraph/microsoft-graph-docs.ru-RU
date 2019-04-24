@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6ec40f8fbea8ba5f5c8d6c7d810a0bc9cc55086c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774038"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32515397"
 ---
 # <a name="create-windows81generalconfiguration"></a>Создание windows81GeneralConfiguration
 
@@ -53,34 +53,34 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
-|applyOnlyToWindows81|Boolean|Указывает, применяется ли эта политика только к Windows 8.1. Это свойство доступно только для чтения.|
-|browserBlockAutofill|Boolean|Указывает, следует ли заблокировать автозаполнение.|
-|browserBlockAutomaticDetectionOfIntranetSites|Boolean|Указывает, следует ли заблокировать автоматическое обнаружение сайтов интрасети.|
-|browserBlockEnterpriseModeAccess|Boolean|Указывает, следует ли заблокировать доступ к корпоративному режиму.|
-|browserBlockJavaScript|Boolean|Указывает, следует ли запретить использование JavaScript.|
-|browserBlockPlugins|Boolean|Указывает, следует ли заблокировать подключаемые модули.|
+|applyOnlyToWindows81|Логический|Указывает, применяется ли эта политика только к Windows 8.1. Это свойство доступно только для чтения.|
+|browserBlockAutofill|Логический|Указывает, следует ли заблокировать автозаполнение.|
+|browserBlockAutomaticDetectionOfIntranetSites|Логический|Указывает, следует ли заблокировать автоматическое обнаружение сайтов интрасети.|
+|browserBlockEnterpriseModeAccess|Логический|Указывает, следует ли заблокировать доступ к корпоративному режиму.|
+|browserBlockJavaScript|Логический|Указывает, следует ли запретить использование JavaScript.|
+|browserBlockPlugins|Логический|Указывает, следует ли заблокировать подключаемые модули.|
 |browserBlockPopups|Логический|Указывает, следует ли блокировать всплывающие окна.|
-|browserBlockSendingDoNotTrackHeader|Boolean|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
-|browserBlockSingleWordEntryOnIntranetSites|Boolean|Указывает, следует ли блокировать переход на сайты интрасети при вводе одного слова.|
-|browserRequireSmartScreen|Boolean|Указывает, обязательно ли использовать фильтр Smart Screen.|
+|browserBlockSendingDoNotTrackHeader|Логический|Указывает, следует ли запретить пользователю отправлять заголовок DNT.|
+|browserBlockSingleWordEntryOnIntranetSites|Логический|Указывает, следует ли блокировать переход на сайты интрасети при вводе одного слова.|
+|browserRequireSmartScreen|Логический|Указывает, обязательно ли использовать фильтр Smart Screen.|
 |browserEnterpriseModeSiteListLocation|String|Расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или HTTP-адрес.|
 |browserInternetSecurityLevel|[Интернетситесекуритилевел](../resources/intune-deviceconfig-internetsitesecuritylevel.md)|Уровень интернет-безопасности. Возможные значения: `userDefined`, `medium`, `mediumHigh`, `high`.|
 |browserIntranetSecurityLevel|[Ситесекуритилевел](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности интрасети. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |browserLoggingReportLocation|String|Расположение хранения отчетов.|
-|browserRequireHighSecurityForRestrictedSites|Boolean|Указывает, обязателен ли высокий уровень безопасности для опасных сайтов.|
-|browserRequireFirewall|Boolean|Указывает, обязательно ли использовать брандмауэр.|
+|browserRequireHighSecurityForRestrictedSites|Логический|Указывает, обязателен ли высокий уровень безопасности для опасных сайтов.|
+|browserRequireFirewall|Логический|Указывает, обязательно ли использовать брандмауэр.|
 |browserRequireFraudWarning|Boolean|Указывает, обязательно ли предупреждение о мошенничестве.|
 |browserTrustedSitesSecurityLevel|[Ситесекуритилевел](../resources/intune-deviceconfig-sitesecuritylevel.md)|Уровень безопасности надежных сайтов. Возможные значения: `userDefined`, `low`, `mediumLow`, `medium`, `mediumHigh`, `high`.|
 |cellularBlockDataRoaming|Логический|Указывает, следует ли блокировать передачу данных в роуминге.|
 |diagnosticsBlockDataSubmission|Логический|Указывает, следует ли заблокировать отправку диагностических данных.|
-|passwordBlockPicturePasswordAndPin|Boolean|Указывает, следует ли запретить использование графического пароля и ПИН-кода.|
+|passwordBlockPicturePasswordAndPin|Логический|Указывает, следует ли запретить использование графического пароля и ПИН-кода.|
 |passwordExpirationDays|Int32|Срок действия пароля (в днях).|
 |passwordMinimumLength|Int32|Минимальная длина пароля.|
 |passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Время бездействия до отключения экрана (в минутах).|
@@ -88,7 +88,7 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |passwordPreviousPasswordBlockCount|Int32|Количество предыдущих паролей, повторное использование которых следует запретить. Допустимые значения: от 0 до 24.|
 |passwordRequiredType|[Рекуиредпассвордтипе](../resources/intune-deviceconfig-requiredpasswordtype.md)|Требуемый тип пароля. Возможные значения: `deviceDefault`, `alphanumeric`, `numeric`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Количество неудачных попыток входа до восстановления заводских настроек.|
-|storageRequireDeviceEncryption|Boolean|Указывает, обязательно ли шифрование данных на мобильном устройстве.|
+|storageRequireDeviceEncryption|Логический|Указывает, обязательно ли шифрование данных на мобильном устройстве.|
 |Минимумаутоинсталлклассификатион|[Упдатеклассификатион](../resources/intune-deviceconfig-updateclassification.md)|Минимальная Классификация обновлений, устанавливаемая автоматически. Возможные значения: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |Упдатесминимумаутоинсталлклассификатион|[Упдатеклассификатион](../resources/intune-deviceconfig-updateclassification.md)|Минимальная Классификация обновлений, устанавливаемая автоматически. Возможные значения: `userDefined`, `recommendedAndImportant`, `important`, `none`.|
 |updatesRequireAutomaticUpdates|Boolean|Указывает, обязательно ли автоматическое обновление.|

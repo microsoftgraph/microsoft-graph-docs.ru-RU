@@ -1,21 +1,21 @@
 ---
 title: Получение вкладки
-description: 'Извлечение свойств и отношения между заданной вкладки. '
+description: 'Получение свойств и связей указанной вкладки. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 1513893907d6448287f2541ffdc4617ab94ef455
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967020"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32522239"
 ---
 # <a name="get-tab"></a>Получение вкладки
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Извлечение свойств и связи указанного [вкладки](../resources/teamstab.md). 
+Получение свойств и связей указанной [вкладки](../resources/teamstab.md). 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,7 +35,7 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает $select и $разверните [Параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает $select и $expand [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -47,12 +47,12 @@ GET /teams/{id}/channels/{id}/tabs/{id}
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [tab](../resources/teamstab.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Tab](../resources/teamstab.md) в тексте отклика.
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
+GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}?$expand=teamsApp
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
@@ -90,6 +90,9 @@ Content-length: 401
   "description": "Get a channel tab",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

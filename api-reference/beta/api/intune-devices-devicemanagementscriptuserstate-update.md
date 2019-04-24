@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f6c2e2390d9ad6ba9ca650587d0eb5621d3c1011
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788725"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520293"
 ---
 # <a name="update-devicemanagementscriptuserstate"></a>Обновление Девицеманажементскриптусерстате
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 94ac680cda08abd70ecf7a4dc390e21b8a220ab5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32512637"
 ---
 # <a name="get-windowsphone81scepcertificateprofile"></a>Получение windowsPhone81SCEPCertificateProfile
 
