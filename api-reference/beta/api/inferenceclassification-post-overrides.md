@@ -1,19 +1,19 @@
 ---
 title: Создание объекта inferenceClassificationOverride
-description: 'Создание переопределения фокус папки "Входящие" для отправителя, определяемую средством SMTP-адрес. Постоянно классификации последующих сообщений от этого SMTP-адреса '
+description: 'Создание отсортированного переопределения папки "Входящие" для отправителя, определенного SMTP-адресом. Будущие сообщения с этого SMTP-адреса будут согласованы. '
 localization_priority: Normal
 ms.openlocfilehash: 234972bea59343a13d9104bbe222edf4be526987
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501303"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Создание объекта inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание переопределения [Фокус папки "Входящие"](../resources/manage-focused-inbox.md) для отправителя, определяемую средством SMTP-адрес. Будущее сообщений из SMTP-адреса постоянно классифицируются как указано в переопределении.
+Создание отсортированного переопределения [папки "Входящие"](../resources/manage-focused-inbox.md) для отправителя, определенного SMTP-адресом. Последующие сообщения с этого SMTP-адреса всегда будут классифицироваться так, как указано в переопределении.
 
 **Примечание**
 
@@ -69,9 +69,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

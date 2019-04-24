@@ -3,11 +3,11 @@ title: Тип ресурса licenseDetails
 description: Содержит сведения о лицензии, назначенной пользователю.
 localization_priority: Normal
 ms.openlocfilehash: 4495e85b45f6fcfda4f37e467e9cdc5393787dc1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843024"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585190"
 ---
 # <a name="licensedetails-resource-type"></a>Тип ресурса licenseDetails
 
@@ -17,19 +17,19 @@ ms.locfileid: "27843024"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция licenseDetails |Получение списка объектов licenseDetails для пользователя.|
+|[Перечисление licenseDetails](../api/user-list-licensedetails.md) | Коллекция объектов licenseDetails |Получение списка объектов licenseDetails для пользователя.|
 
 <!--|[Get licenseDetails](../api/licensedetails-get.md) | licenseDetails |Read properties and relationships of a licenseDetails object.|-->
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String| Уникальный идентификатор объекта сведений о лицензии. Только для чтения, ключевое, не допускает значения null. |
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, назначенных вместе с лицензией. Только для чтения, не допускает значения null. |
-|skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Имеет то же значение, что и свойство skuId в связанном объекте [SubscribedSku](subscribedsku.md). Только для чтения. |
-|skuPartNumber|String| Уникальное отображаемое имя SKU. Имеет то же значение, что и свойство skuPartNumber в связанном объекте [SubscribedSku](subscribedsku.md). Пример: AAD_Premium. Только для чтения. |
+|id|String| Уникальный идентификатор для объекта сведений о лицензии. Только для чтения, ключ, не допускающий значение null |
+|Сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, назначенных с лицензией. Только для чтения, не допускает значение null |
+|skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. Равно свойству skuId в связанном объекте [SubscribedSku](subscribedsku.md) . Только для чтения |
+|Скупартнумбер|String| Имя уникального отображаемого номера SKU. Равно Скупартнумбер для связанного объекта [SubscribedSku](subscribedsku.md) ; Пример: "Аад_премиум". Только для чтения |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

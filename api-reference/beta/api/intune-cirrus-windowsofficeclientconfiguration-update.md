@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: d116d846b6540ea2b9e2a91f54a5abdfa81e2409
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30139251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483294"
 ---
 # <a name="update-windowsofficeclientconfiguration"></a>Обновление Виндовсоффицеклиентконфигуратион
 
@@ -40,8 +40,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +50,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Еще не задокументировано, унаследовано от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|Строка|Еще не задокументировано, унаследовано от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |Усерпреференцепайлоад|Stream|Еще не задокументировано, унаследовано от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |Полиципайлоад|Stream|Еще не задокументировано, унаследовано от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |description|String|Еще не задокументировано, унаследовано от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
@@ -62,7 +61,7 @@ PATCH /officeConfiguration/clientConfigurations/{key}
 
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -104,7 +103,7 @@ Content-length: 949
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK

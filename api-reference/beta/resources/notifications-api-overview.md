@@ -4,11 +4,11 @@ description: Для отправки push-уведомлений пользов�
 localization_priority: Priority
 ms.prod: project-rome
 ms.openlocfilehash: 2a4c23955e348159d2e17514d6041260f13cffba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513986"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458791"
 ---
 # <a name="use-the-notifications-rest-api-in-microsoft-graph"></a>Использование REST API уведомлений в Microsoft Graph
 

@@ -1,29 +1,29 @@
 ---
-title: Создание bookingBusiness
-description: Создание нового резервирования Microsoft business в клиент.
+title: Создание Букингбусинесс
+description: Создайте новую бизнес-деятельность Майкрософт в клиенте.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 95a9217392953d287689dca7a7b6f4c74fbe6383
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519250"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461767"
 ---
-# <a name="create-bookingbusiness"></a>Создание bookingBusiness
+# <a name="create-bookingbusiness"></a>Создание Букингбусинесс
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового резервирования Microsoft business в клиент.
+Создайте новую бизнес-деятельность Майкрософт в клиенте.
 
-Это первый шаг в настройке business резервирования, где необходимо указать отображаемое имя бизнес. Можно включить другие сведения, такие как рабочий адрес, адрес веб-сайта и планирования политики или задать эти сведения позже, [изменив](bookingbusiness-update.md) **bookingBusiness**.
+Это первый шаг при настройке учета для бизнеса, в котором необходимо указать отображаемое имя. Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политика планирования, или задать эту информацию позже [](bookingbusiness-update.md) , обновив **букингбусинесс**.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All  |
+|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Manage. ALL  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается. |
 
@@ -36,14 +36,14 @@ POST /bookingBusinesses
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [bookingBusiness](../resources/bookingbusiness.md) .
+В тексте запроса добавьте представление объекта [Букингбусинесс](../resources/bookingbusiness.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `201, Created` объект [bookingBusiness](../resources/bookingbusiness.md) и кода ответа в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -73,8 +73,8 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-В тексте запроса укажите представление JSON объекта [bookingBusiness](../resources/bookingbusiness.md) .
-##### <a name="response"></a>Ответ
+В тексте запроса добавьте представление объекта [Букингбусинесс](../resources/bookingbusiness.md) в формате JSON.
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

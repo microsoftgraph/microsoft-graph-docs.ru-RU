@@ -1,23 +1,23 @@
 ---
-title: 'groupLifecyclePolicy: renewGroup'
+title: 'groupLifecyclePolicy: Реневграуп'
 description: Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 7eb0ef44a5e07c8c293ba804cc8ec31a8312576d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520874"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501853"
 ---
-# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: renewGroup
+# <a name="grouplifecyclepolicy-renewgroup"></a>groupLifecyclePolicy: Реневграуп
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновляет срок действия группы. Когда группа обновляется, срок ее действия продляется на количество дней, определенное политикой.
 
-> **Примечание:** В версии 1.0, [Используйте группы ресурсов следует обновить запросы](/graph/api/group-renew?view=graph-rest-1.0).
+> **Примечание:** В версии 1.0 [Используйте ресурс Group, чтобы выполнить обновление запросов](/graph/api/group-renew?view=graph-rest-1.0).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "29520874"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All или Directory.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается |
-|Для приложения | Group.ReadWrite.All или Directory.ReadWrite.All |
+|Для приложений | Group.ReadWrite.All или Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -49,7 +49,7 @@ POST /groupLifecyclePolicies/renewGroup
 
 | Параметр | Тип | Описание |
 |:---------------|:--------|:----------|
-|groupId|GUID| Идентификатор группы для обновления. |
+|groupId|GUID| Идентификатор группы, которую требуется обновить. |
 
 ## <a name="response"></a>Отклик
 
@@ -73,7 +73,7 @@ Content-length: 57
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

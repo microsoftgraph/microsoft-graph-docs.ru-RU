@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bfd7778d3fdc9675880b98a356dd690c4b1eaec8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966946"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456887"
 ---
 # <a name="working-with-users-in-microsoft-graph"></a>Работа с пользователями в Microsoft Graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "27966946"
 - По идентификатору пользователя (`/users/{id | userPrincipalName}`). 
 - С помощью псевдонима `/me` (который совпадает с `/users/{signed-in user's id}`) для пользователя, вошедшего в систему.
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Авторизация
 
 Для операций доступа к пользователям необходимо одно из указанных ниже [разрешений](https://developer.microsoft.com/graph/docs/authorization/permission_scopes). Первые три разрешения могут быть предоставлены приложению пользователем. Остальные разрешения могут быть предоставлены приложению администратором.
 
@@ -59,7 +59,7 @@ ms.locfileid: "27966946"
 
 > **Примечание.** Для выполнения некоторых из этих операций необходимы дополнительные разрешения.
 
-| Путь    | Описание |
+| Path    | Описание |
 |:---------|:-------------|
 |[`/users`](../api/user-list.md) | Вывод списка пользователей в организации. |
 |[`/users/{id}`](../api/user-get.md) | Получение определенного пользователя по идентификатору. |

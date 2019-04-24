@@ -1,29 +1,29 @@
 ---
-title: Список educationSynchronizationProfiles
-description: Получение коллекции школа данных синхронизации профилей в клиента.
+title: Список Едукатионсинчронизатионпрофилес
+description: Получение коллекции профилей синхронизации учебных данных в клиенте.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1907b0ef08473a79d66e79fcb4751b281e9a18ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457467"
 ---
-# <a name="list-educationsynchronizationprofiles"></a>Список educationSynchronizationProfiles
+# <a name="list-educationsynchronizationprofiles"></a>Список Едукатионсинчронизатионпрофилес
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение коллекции данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.
+Получение коллекции [профилей синхронизации](../resources/educationsynchronizationprofile.md) учебных данных в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-----------|:----------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+| Делегированные (рабочая или учебная учетная запись) | Едуадминистратион. Read, Едуадминистратион. ReadWrite |
+|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -33,7 +33,7 @@ GET /synchronizationProfiles
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа: $filter, $orderby, $top, $skip и $count.
+Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -41,9 +41,9 @@ GET /synchronizationProfiles
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationSynchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионсинчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -56,7 +56,7 @@ GET /synchronizationProfiles
 GET https://graph.microsoft.com/beta/education/synchronizationProfiles
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

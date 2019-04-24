@@ -1,21 +1,21 @@
 ---
-title: Список подписок
-description: Вычисляемые представление, которое возвращает список элементов, прибора вокруг пользователя.
+title: Список "Популярные"
+description: Вычисляемое представление, которое возвращает список элементов, которые обходить пользователь.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 512dcdfb8a94a2a90c47c4005298537d1d83f137
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525110"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32500827"
 ---
-# <a name="list-trending"></a>Список подписок
+# <a name="list-trending"></a>Список "Популярные"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемые представление, которое возвращает список элементов, прибора вокруг пользователя.
+Вычисляемое представление, которое возвращает список элементов, которые обходить пользователь.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,7 +36,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-Можно использовать `$filter` параметр для фильтрации элементов тенденции запроса. Например на основе типа:
+С помощью параметра `$filter` запроса можно фильтровать элементы тенденции. Например, на основе типа:
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
@@ -44,7 +44,7 @@ GET /users/{id | userPrincipalName}/insights/trending
 
 `https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 
-В разделе Доступные типы контейнеров и типов можно фильтровать по в [resourceVisualization](../resources/insights-resourcevisualization.md).
+Просмотрите доступные типы и типы контейнеров, которые можно фильтровать в [ресурсе resourcevisualization](../resources/insights-resourcevisualization.md).
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -54,11 +54,11 @@ GET /users/{id | userPrincipalName}/insights/trending
 | Accept  | application/json|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и список элементов [прибора](../resources/insights-trending.md) в теле ответа. Каждый элемент содержит свойства визуализации для отображения элемента в работу.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и список элементов [тенденции](../resources/insights-trending.md) в тексте отклика. Каждый элемент содержит свойства зрительного образа для отображения элемента в интерфейсе пользователя.
 
 ## <a name="example"></a>Пример
 #### <a name="request"></a>Запрос
@@ -66,8 +66,8 @@ GET /users/{id | userPrincipalName}/insights/trending
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending
 ```
-#### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. В разделе Пример с усеченными ответа в нижней части страницы.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства. Пример неусеченного ответа в нижней части страницы.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -98,8 +98,8 @@ Content-length: 801
 }
 ```
 
-### <a name="expanding-resource"></a>Развертывание ресурсов
-Можно развернуть ссылается тенденции понимание назначения ресурса.
+### <a name="expanding-resource"></a>Расширение ресурса
+Ресурс, на который ссылается аналитика оценки тенденций, можно расширить.
 ```http
 GET https://graph.microsoft.com/beta/me/insights/trending/{id}/resource
 ```

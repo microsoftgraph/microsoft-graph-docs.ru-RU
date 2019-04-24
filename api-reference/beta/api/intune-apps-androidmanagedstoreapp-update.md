@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5030ce96a61cb3f69ab2de5ab518cff3136d41c1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32496879"
 ---
 # <a name="update-androidmanagedstoreapp"></a>Обновление Андроидманажедстореапп
 
@@ -68,14 +68,14 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppIns
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |packageId|String|Идентификатор пакета.|
 |appIdentifier|String|Имя удостоверения.|
 |usedLicenseCount|Int32|Количество используемых лицензий VPP.|
 |totalLicenseCount|Int32|Общее количество лицензий VPP.|
 |appStoreUrl|String|URL-адрес приложения для рабочего хранилища.|
-|Суппортсоемконфиг|Boolean|Поддерживает ли это приложение политику Оемконфиг.|
+|Суппортсоемконфиг|Логический|Поддерживает ли это приложение политику Оемконфиг.|
 
 
 

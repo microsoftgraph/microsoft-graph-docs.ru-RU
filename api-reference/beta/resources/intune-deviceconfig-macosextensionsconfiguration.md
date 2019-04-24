@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a8c4cd08f905189080a3ef56faa5a23f4f107853
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809304"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460466"
 ---
 # <a name="macosextensionsconfiguration-resource-type"></a>Тип ресурса Макосекстенсионсконфигуратион
 
@@ -26,24 +26,24 @@ ms.locfileid: "31809304"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Макосекстенсионсконфигуратионс](../api/intune-deviceconfig-macosextensionsconfiguration-list.md)|Коллекция [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Список свойств и связей объектов [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
-|[Получение Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-get.md)|[Макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Чтение свойств и связей объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
-|[Создание Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-create.md)|[Макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Создание нового объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
+|[Получение Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-get.md)|[macOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Чтение свойств и связей объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
+|[Создание Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-create.md)|[macOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Создание нового объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
 |[Удаление Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-delete.md)|Нет|Удаляет объект [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md).|
-|[Обновление Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-update.md)|[Макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Обновление свойств объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
+|[Обновление Макосекстенсионсконфигуратион](../api/intune-deviceconfig-macosextensionsconfiguration-update.md)|[macOSExtensionsConfiguration](../resources/intune-deviceconfig-macosextensionsconfiguration.md)|Обновление свойств объекта [макосекстенсионсконфигуратион](../resources/intune-deviceconfig-macosextensionsconfiguration.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|Кернелекстенсионоверридесалловед|Boolean|Если задано значение true, пользователи могут утверждать дополнительные расширения ядра, не разрешенные профилями конфигураций.|
-|Кернелекстенсионалловедтеамидентифиерс|Коллекция String|Все расширения ядра, подписанные с помощью идентификаторов команд в этом списке, могут быть загружены.|
+|Кернелекстенсионоверридесалловед|Логический|Если задано значение true, пользователи могут утверждать дополнительные расширения ядра, не разрешенные профилями конфигураций.|
+|Кернелекстенсионалловедтеамидентифиерс|Коллекция строк|Все расширения ядра, подписанные с помощью идентификаторов команд в этом списке, могут быть загружены.|
 |Кернелекстенсионсалловед|Коллекция [макоскернелекстенсион](../resources/intune-deviceconfig-macoskernelextension.md)|Список расширений ядра, которые будут разрешены для загрузки. . Эта коллекция может содержать не более 500 элементов.|
 
 ## <a name="relationships"></a>Связи

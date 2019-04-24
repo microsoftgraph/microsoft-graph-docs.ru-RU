@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 206e60662cacec145a15eebac545b820e9121a8f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799393"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32479759"
 ---
 # <a name="create-androideasemailprofileconfiguration"></a>Создание Андроидеасемаилпрофилеконфигуратион
 
@@ -53,26 +53,26 @@ POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gr
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|Строка|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |имя_учетной_записи|String|Имя учетной записи Exchange ActiveSync, отображаемое пользователям как имя профиля EAS (этот).|
 |Параметр authenticationmethod|[Еасаусентикатионмесод](../resources/intune-deviceconfig-easauthenticationmethod.md)|Способ проверки поДлинности для Exchange ActiveSync. Возможные значения: `usernameAndPassword`, `certificate`.|
-|Синккалендар|Boolean|Включает и выключает синхронизацию календаря. Если для этого устройства задано значение false, календарь отключен.|
-|Синкконтактс|Boolean|Включает и выключает синхронизацию контактов. Если задано значение false, контакты на устройстве отключены.|
-|Синктаскс|Boolean|Включает и выключает синхронизацию задач. Если задано значение false, задачи на устройстве отключены.|
-|Синкнотес|Boolean|Включает и выключает синхронизацию заметок. Если задано значение false, примечания отключаются на устройстве.|
+|Синккалендар|Логический|Включает и выключает синхронизацию календаря. Если для этого устройства задано значение false, календарь отключен.|
+|Синкконтактс|Логический|Включает и выключает синхронизацию контактов. Если задано значение false, контакты на устройстве отключены.|
+|Синктаскс|Логический|Включает и выключает синхронизацию задач. Если задано значение false, задачи на устройстве отключены.|
+|Синкнотес|Логический|Включает и выключает синхронизацию заметок. Если задано значение false, примечания отключаются на устройстве.|
 |Дуратионофемаилтосинк|[Емаилсинкдуратион](../resources/intune-deviceconfig-emailsyncduration.md)|Продолжительность синхронизации электронной почты. Возможные значения: `userDefined`, `oneDay`, `threeDays`, `oneWeek`, `twoWeeks`, `oneMonth`, `unlimited`.|
 |Емаиладдресссаурце|[Усеремаилсаурце](../resources/intune-deviceconfig-useremailsource.md)|Атрибут электронной почты, выбранный из AAD и добавленный в этот профиль перед установкой на устройстве. Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
 |Емаилсинксчедуле|[Емаилсинксчедуле](../resources/intune-deviceconfig-emailsyncschedule.md)|Расписание синхронизации электронной почты. Возможные значения: `userDefined`, `asMessagesArrive`, `manual`, `fifteenMinutes`, `thirtyMinutes`, `sixtyMinutes`, `basedOnMyUsage`.|
 |hostName|String|Расположение Exchange (URL-адрес), к которому подключается исходное почтовое приложение.|
-|Рекуиресмиме|Boolean|Указывает, следует ли использовать сертификат S/MIME.|
-|Рекуирессл|Boolean|Указывает, следует ли использовать SSL.|
+|Рекуиресмиме|Логический|Указывает, следует ли использовать сертификат S/MIME.|
+|Рекуирессл|Логический|Указывает, следует ли использовать SSL.|
 |usernameSource|[Андроидусернамесаурце](../resources/intune-deviceconfig-androidusernamesource.md)|Атрибут username, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Возможные значения: `username`, `userPrincipalName`, `samAccountName`, `primarySmtpAddress`.|
-|Усердомаиннамесаурце|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|Атрибут Усердомаиннаме, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Возможные значения: `fullDomainName`, `netBiosDomainName`.|
+|Усердомаиннамесаурце|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md);|Атрибут Усердомаиннаме, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Возможные значения: `fullDomainName`, `netBiosDomainName`.|
 |Кустомдомаиннаме|String|Значение имени пользовательского домена, используемое при создании профиля электронной почты, перед установкой на устройстве.|
 
 

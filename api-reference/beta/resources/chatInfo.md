@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса chatInfo
-description: Сведения о сообщении в группах Майкрософт.
+title: Тип ресурса Чатинфо
+description: Сведения о сообщении в Microsoft Teams.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3c1414d10a262280bcf0d3a307fc0c71aed2fbde
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507665"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461075"
 ---
-# <a name="chatinfo-resource-type"></a>Тип ресурса chatInfo
+# <a name="chatinfo-resource-type"></a>Тип ресурса Чатинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о сообщении в группах Майкрософт.
+Сведения о сообщении в Microsoft Teams.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип    | Описание|
 |:--------------------|:--------|:-----------|
-| MessageId           | String  | Уникальный идентификатор для сообщения в канале группами Майкрософт. |
-| replyChainMessageId | String  | Идентификатор сообщения. |
-| threadId            | String  | Уникальный идентификатор потока в группами Майкрософт. |
+| messageId           | String  | Уникальный идентификатор сообщения в канале Microsoft Teams. |
+| Репличаинмессажеид | String  | Идентификатор ответного сообщения. |
+| Tидентификатор            | String  | Уникальный идентификатор потока в Microsoft Teams. |
 
 ## <a name="json-representation"></a>Представление JSON
 

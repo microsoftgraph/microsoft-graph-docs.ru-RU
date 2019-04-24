@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 2aea4388ef29978606a7bc09813c7cd92f977ed5
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30364600"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459187"
 ---
 # <a name="get-alert"></a>Получение оповещения
 
@@ -39,7 +39,7 @@ GET /security/alerts/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | Bearer {Code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -63,9 +63,9 @@ GET /security/alerts/{id}
 GET https://graph.microsoft.com/beta/security/alerts/{id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": false,

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: c83a4fb2b6878f23dacfa8258a06e0f9da33fe33
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365719"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458392"
 ---
 # <a name="update-customerpaymentjournals"></a>Обновление Кустомерпайментжаурналс
 Обновление свойств объекта журнала платежей клиента для Dynamics 365 Business Central.
@@ -39,7 +39,7 @@ PATCH /financials/companies('{id}')/customerPaymentJournals('{id}')
 |------|-----|
 |Авторизация |Bearer {токен}. Обязательный.|
 |Content-Type  |application/json|
-|If-Match      |Обязательно указывать. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
+|If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **кустомерпайментжаурналс**, **кустомерпайментжаурналс** не будет обновлен. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.

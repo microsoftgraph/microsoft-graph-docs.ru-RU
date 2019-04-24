@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 9820bfd08d509ee0eb5903a847be62e4d417b346
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30148631"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483119"
 ---
 # <a name="update-officeclientconfigurationassignment"></a>Обновление Оффицеклиентконфигуратионассигнмент
 
@@ -40,8 +40,7 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -52,11 +51,11 @@ PATCH /officeConfiguration/clientConfigurations/{officeClientConfigurationId}/as
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Пока не задокументировано.|
-|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Н/Д|
+|target|[officeConfigurationAssignmentTarget](../resources/intune-cirrus-officeconfigurationassignmenttarget.md)|Пока нет описания|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [оффицеклиентконфигуратионассигнмент](../resources/intune-cirrus-officeclientconfigurationassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -75,7 +74,7 @@ Content-length: 98
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK

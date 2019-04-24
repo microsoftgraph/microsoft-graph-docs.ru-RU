@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c683b2ae19caa55c62f0af834fbb8b74d5fb904c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806379"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32471583"
 ---
 # <a name="create-carttoclassassociation"></a>Создание КарттоклассассоЦиатион
 
@@ -56,8 +56,8 @@ POST /deviceManagement/cartToClassAssociations
 |version|Int32|Версия КарттоклассассоЦиатион.|
 |displayName|String|Указанное администратором имя конфигурации устройства.|
 |description|String|Администратор предоставил описание КарттоклассассоЦиатион.|
-|Девицекартидс|Коллекция String|Идентификаторы корзин устройств, которые необходимо связать с классами.|
-|Классрумидс|Коллекция String|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
+|Девицекартидс|Коллекция строк|Идентификаторы корзин устройств, которые необходимо связать с классами.|
+|Классрумидс|Коллекция строк|Идентификаторы аудиторий, которые необходимо связать с тележками устройств.|
 
 
 

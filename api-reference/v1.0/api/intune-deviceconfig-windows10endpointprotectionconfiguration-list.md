@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 75e2797027aa87854b5946b336115fae61b43b5d
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30978901"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463119"
 ---
 # <a name="list-windows10endpointprotectionconfigurations"></a>Перечисление объектов windows10EndpointProtectionConfiguration
 

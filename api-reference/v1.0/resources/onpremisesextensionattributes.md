@@ -1,37 +1,37 @@
 ---
 title: Тип ресурса onPremisesExtensionAttributes
-description: Свойство **onPremisesExtensionAttributes** удостоверение пользователя содержит пятнадцать свойства атрибут настраиваемого расширения. Для пользователя с **onPremisesSyncEnabled** , этот набор свойств, создаются в локальной службе Active Directory и синхронизируются с Azure AD и доступен только для чтения. Для пользователей только в облаке, (где **onPremisesSyncEnabled** имеет значение false) эти свойства могут быть установлены во время создания или обновления.
+description: Свойство **onPremisesExtensionAttributes** объекта user содержит пятнадцать свойств настраиваемого атрибута расширения. Для пользователя **onPremisesSyncEnabled** этот набор свойств размещается в локальной службе Active Directory и синхронизируется с Azure AD и доступен только для чтения. Для пользователя, предназначенного только для облачного облака (где **onPremisesSyncEnabled** имеет значение false), эти свойства можно задать при создании или обновлении.
 localization_priority: Normal
 ms.openlocfilehash: c0cb765efe9e94c8254e45eaa9d55bc16382f6d2
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462629"
 ---
 # <a name="onpremisesextensionattributes-resource-type"></a>Тип ресурса onPremisesExtensionAttributes
 
-Свойство **onPremisesExtensionAttributes** удостоверение [пользователя](user.md) содержит пятнадцать свойства атрибут настраиваемого расширения. Для пользователя с **onPremisesSyncEnabled** , этот набор свойств, создаются в локальной службе Active Directory и синхронизируются с Azure AD и доступен только для чтения. Для пользователей только в облаке, (где **onPremisesSyncEnabled** имеет значение false) эти свойства могут быть установлены во время создания или обновления.
+Свойство **onPremisesExtensionAttributes** объекта [User](user.md) содержит пятнадцать свойств настраиваемого атрибута расширения. Для пользователя **onPremisesSyncEnabled** этот набор свойств размещается в локальной службе Active Directory и синхронизируется с Azure AD и доступен только для чтения. Для пользователя, предназначенного только для облачного облака (где **onPremisesSyncEnabled** имеет значение false), эти свойства можно задать при создании или обновлении.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensionAttribute1|Строка| Первый атрибут настраиваемые расширения. |
-|extensionAttribute2|Строка| Второй атрибут настраиваемые расширения. |
-|extensionAttribute3|Строка| Третий атрибут настраиваемые расширения. |
-|extensionAttribute4|Строка| Четвертая атрибут настраиваемые расширения. |
-|extensionAttribute5|Строка| Атрибут пятый настраиваемые расширения. |
-|extensionAttribute6|Строка| Атрибут шестой настраиваемые расширения. |
-|extensionAttribute7|Строка| Атрибут седьмой настраиваемые расширения. |
-|extensionAttribute8|Строка| Атрибут восьмому настраиваемые расширения. |
-|extensionAttribute9|Строка| Атрибут девятого настраиваемые расширения. |
-|extensionAttribute10|Строка| Десятое атрибут настраиваемые расширения. |
-|extensionAttribute11|Строка| Атрибут eleventh настраиваемые расширения. |
-|extensionAttribute12|Строка| Атрибут twelfth настраиваемые расширения. |
-|extensionAttribute13|Строка| Атрибут thirteenth настраиваемые расширения. |
-|extensionAttribute14|Строка| Атрибут fourteenth настраиваемые расширения. |
-|extensionAttribute15|Строка| Атрибут пятнадцатого настраиваемые расширения. |
+|От extensionattribute1|String| Первый настраиваемый атрибут расширения. |
+|extensionAttribute2|String| Второй настраиваемый атрибут расширения. |
+|extensionAttribute3|String| Третий настраиваемый атрибут расширения. |
+|extensionAttribute4|String| Четвертый настраиваемый атрибут расширения. |
+|extensionAttribute5|String| Пятый настраиваемый атрибут расширения. |
+|extensionAttribute6|String| Шестой настраиваемый атрибут расширения. |
+|extensionAttribute7|String| Седьмой настраиваемый атрибут расширения. |
+|extensionAttribute8|String| Восьмой настраиваемый атрибут расширения. |
+|extensionAttribute9|String| Девятый атрибут расширения. |
+|extensionAttribute10|String| Десятый атрибут расширенной настройки. |
+|extensionAttribute11|String| Одиннадцатый атрибут настраиваемого расширения. |
+|extensionAttribute12|String| Двенадцатый настраиваемый атрибут расширения. |
+|extensionAttribute13|String| Настраиваемый атрибут расширения Сиртинс. |
+|extensionAttribute14|String| Настраиваемый атрибут расширения Фауртинс. |
+|extensionAttribute15|String| Пятнадцатый настраиваемый атрибут расширения. |
 
 ## <a name="json-representation"></a>Представление JSON
 

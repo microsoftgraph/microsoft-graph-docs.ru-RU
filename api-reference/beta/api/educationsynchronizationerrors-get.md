@@ -1,28 +1,28 @@
 ---
-title: Получение educationSynchronizationErrors
-description: 'Получите ошибки, возникающие во время проверки и/или во время синхронизации профиля синхронизации данных конкретного school в клиентов. '
+title: Получение Едукатионсинчронизатионеррорс
+description: 'Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного профиля синхронизации данных School в клиенте. '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 48afa5ce7efc267eedc16449324980e527409dc9
-ms.sourcegitcommit: dcc5907f2c3ffc0f0e82e953b7ab9cf4ab938360
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "29425129"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464274"
 ---
-# <a name="get-educationsynchronizationerrors"></a>Получение educationSynchronizationErrors
+# <a name="get-educationsynchronizationerrors"></a>Получение Едукатионсинчронизатионеррорс
 
-Получите ошибки, возникающие во время проверки и/или во время синхронизации данных конкретного школа [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиента. 
+Получение ошибок, возникших во время проверки, и/или во время синхронизации определенного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте. 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:-----------|:------|
-| Делегированные (рабочая или учебная учетная запись) | EduAdministration.Read EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт|Не поддерживается.|
-|Для приложений| EduAdministration.Read.All EduAdministration.ReadWrite.All |
+| Делегированные (рабочая или учебная учетная запись) | Едуадминистратион. Read, Едуадминистратион. ReadWrite |
+|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
+|Для приложений| Едуадминистратион. Read. ALL, Едуадминистратион. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -30,7 +30,7 @@ ms.locfileid: "29425129"
 GET /synchronizationProfiles/{id}/errors
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа: $filter, $orderby, $top, $skip и $count.
+Этот метод поддерживает следующие [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика: $filter, $orderby, $top, $skip и $Count.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
@@ -38,9 +38,9 @@ GET /synchronizationProfiles/{id}/errors
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [Ошибка синхронизации](../resources/educationsynchronizationerror.md) в теле ответа.
+Не указывайте текст запроса для этого метода.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Error синхронизации](../resources/educationsynchronizationerror.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

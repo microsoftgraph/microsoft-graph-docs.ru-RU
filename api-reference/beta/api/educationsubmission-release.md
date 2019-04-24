@@ -1,28 +1,28 @@
 ---
-title: 'educationSubmission: освобождение'
-description: " и указывает, что выполняется оценка успеваемости. Это действие можно выполнить только с преподаватель."
+title: 'educationSubmission: Release'
+description: " Указывает, что выполняется ступенчатое выполнение. Это действие может выполнить только преподаватель."
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: fb8d9ce6646cb7055f2edb4cc56c7d9784d96915
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464504"
 ---
-# <a name="educationsubmission-release"></a>educationSubmission: освобождение
+# <a name="educationsubmission-release"></a>educationSubmission: Release
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это действие делает марки и отзыв, связанный с этой отправки доступные студента. Это измените состояние подачи с «отправленные» на «выпущенная» и указывает, что выполняется оценка успеваемости. Это действие можно выполнить только с преподаватель.
+Это действие делает оценку и обратную связь, связанную с этой отправкой, доступной студенту. Это приведет к изменению состояния отправки с "Отправлено" на "выпущено" и указывает на то, что выполняется ступенчатое выполнение. Это действие может выполнить только преподаватель.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite   |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -38,9 +38,9 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -56,7 +56,7 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/release
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/release
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {

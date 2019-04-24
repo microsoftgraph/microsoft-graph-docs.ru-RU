@@ -1,19 +1,19 @@
 ---
-title: Перечисление domainNameReferences
-description: Получение списка объектов directoryObject со ссылкой на домен. Возвращаемый список содержит все объекты каталога, у которых есть зависимости от домена.
+title: Список Домаиннамереференцес
+description: Получение списка directoryObject со ссылкой на домен. Возвращаемый список будет содержать все объекты каталога с зависимостью от домена.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4b9846f1a24b393609494542cf1785ec511f5b49
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963663"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467276"
 ---
-# <a name="list-domainnamereferences"></a>Перечисление domainNameReferences
+# <a name="list-domainnamereferences"></a>Список Домаиннамереференцес
 
-Получение списка объектов [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращаемый список содержит все объекты каталога, у которых есть зависимости от домена.
+Получение списка [directoryObject](../resources/directoryobject.md) со ссылкой на домен. Возвращаемый список будет содержать все объекты каталога с зависимостью от домена.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,9 +44,9 @@ GET /domains/{id}/domainNameReferences
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -64,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/domains/{domain-name}/domainNameReferences
 ```
 
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

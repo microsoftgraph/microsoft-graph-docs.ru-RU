@@ -1,16 +1,17 @@
 ---
 title: Тип ресурса timeZoneInformation
-description: Представляет часовой пояс. Поддерживаемые формата является Windows и Internet Assigned Numbers Authority (IANA) часовой пояс (также известной как Олсон часовой пояс)
+description: Представляет часовой пояс. Поддерживаемый формат — Windows, а часовой пояс IP Numbers Authority (IANA) (также известный как часовой пояс Олсона).
 localization_priority: Normal
 ms.openlocfilehash: ced18a28a5c086416fa7247e1531d772fd63b977
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27830200"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456917"
 ---
 # <a name="timezoneinformation-resource-type"></a>Тип ресурса timeZoneInformation
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Представляет часовой пояс. Поддерживаются формат Windows и формат [часового пояса IANA](https://www.iana.org/time-zones), также известного как часовой пояс Олсона (после устранения известной проблемы).
 
@@ -18,7 +19,7 @@ ms.locfileid: "27830200"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |alias|string|Идентификатор часового пояса.|
-|displayName|строка|Отображаемое имя часового пояса.|
+|displayName|string|Отображаемое имя часового пояса.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,10 +43,15 @@ ms.locfileid: "27830200"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "timeZoneInformation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/timezoneinformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8ad392b2685d4322c5afc90f82c381a790ef8a46
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250490"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585141"
 ---
 # <a name="windowsinformationprotectionnetworklearningsummary-resource-type"></a>Тип ресурса windowsInformationProtectionNetworkLearningSummary
 
@@ -29,12 +29,12 @@ ms.locfileid: "30250490"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|Строка|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
+|id|String|Уникальный идентификатор объекта WindowsInformationProtectionNetworkLearningSummary.|
 |url|String|URL-адрес веб-сайта|
 |deviceCount|Int32|Количество устройств|
 
-## <a name="relationships"></a>Связи
-None
+## <a name="relationships"></a>Отношения
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

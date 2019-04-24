@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 802bf9197ad7574dbf2480fb7c0631e3fd212d9d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524683"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459005"
 ---
 # <a name="list-applications"></a>Список приложений
 
@@ -57,7 +57,7 @@ GET /applications
 GET https://graph.microsoft.com/beta/applications
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

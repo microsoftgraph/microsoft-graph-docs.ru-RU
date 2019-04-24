@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 14cb0d88013b13f57b186f5388d5ac89f60db043
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256842"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465526"
 ---
 # <a name="ipv4range-resource-type"></a>Тип ресурса iPv4Range
 
@@ -18,7 +18,7 @@ ms.locfileid: "30256842"
 Определение диапазона IPv4.
 
 
-Наследуется от [ipRange](../resources/intune-mam-iprange.md)
+Наследуется от ресурса [ipRange](../resources/intune-mam-iprange.md)
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

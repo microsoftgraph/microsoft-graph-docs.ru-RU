@@ -1,19 +1,19 @@
 ---
-title: Список identityProviders
-description: Извлечение всех identityProviders в каталоге.
+title: Перечисление объектов identityProvider
+description: Получение всех объектов identityProvider в каталоге.
 localization_priority: Normal
 ms.openlocfilehash: 4226e6f091527d2df8bfb544327ec2e49f2b890c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529735"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501331"
 ---
-# <a name="list-identityproviders"></a>Список identityProviders
+# <a name="list-identityproviders"></a>Перечисление объектов identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение всех [identityProviders](../resources/identityprovider.md) в каталоге.
+Получение всех объектов [identityProvider](../resources/identityprovider.md) в каталоге.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -21,11 +21,11 @@ ms.locfileid: "29529735"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All IdentityProvider.ReadWrite.All|
+|Делегированные (рабочая или учебная учетная запись)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Трудовые или школы учетной записи необходимо быть глобальным администратором клиента.
+Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -42,15 +42,15 @@ GET /identityProviders
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию [identityProviders](../resources/identityprovider.md) в представление JSON в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [identityProvider](../resources/identityprovider.md) в формате JSON в тексте отклика.
 
 ## <a name="example"></a>Пример
 
-В следующем примере извлекаются все **identityProvider**.
+В приведенном ниже примере возвращаются все объекты **identityProvider**.
 
 ##### <a name="request"></a>Запрос
 
@@ -62,7 +62,7 @@ GET /identityProviders
 GET https://graph.microsoft.com/beta/identityProviders
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

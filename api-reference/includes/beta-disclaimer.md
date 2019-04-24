@@ -4,16 +4,16 @@ ms.topic: include
 ms.date: 01/18/2019
 ms.author: jasonjoh
 ms.openlocfilehash: 9c3b11477fd5208480ee47a16121648af04d6e8b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530190"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523036"
 ---
 <!-- markdownlint-disable MD041-->
 
 > [!IMPORTANT]
-> Интерфейсы API в разделе `/beta` версии в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
+> API в `/beta` версии в Microsoft Graph могут быть изменены. Использование этих API в производственных приложениях не поддерживается.
 
 <!--
 {

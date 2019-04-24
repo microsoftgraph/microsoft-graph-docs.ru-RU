@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8648fb92953ef8ece7be672e746bffbb63393859
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31808989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32489452"
 ---
 # <a name="update-mobileappdependency"></a>Обновление Мобилеаппдепенденци
 
@@ -53,7 +53,7 @@ PATCH /deviceAppManagement/mobileApps/{mobileAppId}/relationships/{mobileAppRela
 |id|String|Идентификатор сущности отношения. НаСледуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |targetId|String|Идентификатор приложения целевого дочернего мобильного приложения. НаСледуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
 |Таржетдисплайнаме|String|Отображаемое имя целевого дочернего мобильного приложения. НаСледуется от [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|
-|Депенденцитипе|[Мобилеаппдепендецитипе](../resources/intune-apps-mobileappdependecytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
+|Депенденцитипе|[mobileAppDependecyType](../resources/intune-apps-mobileappdependecytype.md)|Тип отношения зависимости между родительским и дочерним приложениями. Возможные значения: `detect`, `autoInstall`.|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения.|
 
 

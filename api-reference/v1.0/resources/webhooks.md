@@ -4,11 +4,11 @@ description: REST API Microsoft Graph использует механизм ве
 localization_priority: Priority
 author: piotrci
 ms.openlocfilehash: 60def6f31ac13ad5417ad3d00e48e700550f6efe
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30159376"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456894"
 ---
 # <a name="use-the-microsoft-graph-api-to-get-change-notifications"></a>Получение уведомлений об изменениях с помощью API Microsoft Graph 
 

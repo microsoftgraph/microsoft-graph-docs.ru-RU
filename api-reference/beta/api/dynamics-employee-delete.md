@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 485d254252bfdf15df5fd8b3faea4b19f6f59f05
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365670"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458343"
 ---
 # <a name="delete-employees"></a>Удаление сотрудников
 Удаление сотрудника из Dynamics 365 Business Central.
@@ -37,7 +37,7 @@ DELETE /financials/companies('{id}')/employees('{id}')
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно указывать. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **сотрудников**, **сотрудники** не будут обновляться. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **сотрудников**, **сотрудники** не будут обновляться. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

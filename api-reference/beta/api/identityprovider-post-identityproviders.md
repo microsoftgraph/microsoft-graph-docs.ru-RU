@@ -1,19 +1,19 @@
 ---
 title: Создание identityProvider
-description: Создайте новый identityProvider, указав отображаемое имя, тип identityProvider, идентификатор клиента и секрет клиента.
+description: Создание объекта identityProvider путем указания отображаемого имени, типа identityProvider, идентификатора клиента и секрета клиента.
 localization_priority: Normal
 ms.openlocfilehash: c0b005d729510fa68d9edd8bfea7b85687543cf2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514651"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501275"
 ---
 # <a name="create-identityprovider"></a>Создание identityProvider
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [identityProvider](../resources/identityprovider.md) , указав отображаемое имя, тип identityProvider, идентификатор клиента и секрет клиента.
+Создание объекта [identityProvider](../resources/identityprovider.md) путем указания отображаемого имени, типа identityProvider, идентификатора клиента и секрета клиента.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "29514651"
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
-Трудовые или школы учетной записи необходимо быть глобальным администратором клиента.
+Рабочая или учебная учетная запись должна быть глобальным администратором клиента.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -43,22 +43,22 @@ POST /identityProviders
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса для представления JSON объекта [identityProvider](../resources/identityprovider.md) . Требуются все свойства, перечисленные в следующей таблице.
+Предоставьте в тексте запроса описание объекта [identityProvider](../resources/identityprovider.md) в формате JSON. Все свойства, перечисленные в приведенной ниже таблице, являются обязательными.
 
 |Свойство|Тип|Описание|
 |:---------------|:--------|:----------|
-|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученные при регистрации приложения с поставщиком удостоверений.|
-|client_secret|String|Секрет клиента для приложения. Это секрет клиента, полученные при регистрации приложения с поставщиком удостоверений.|
+|clientId|String|Идентификатор клиента для приложения. Это идентификатор клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
+|clientSecret|String|Секрет клиента для приложения. Это секрет клиента, полученный при регистрации приложения с помощью поставщика удостоверений.|
 |name|String|Отображаемое имя поставщика удостоверений.|
-|type|String|Тип поставщика удостоверений. Оно должно быть одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
+|type|String|Тип поставщика удостоверений Он должен иметь одно из следующих значений: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook</ul>|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` объект [identityProvider](../resources/identityprovider.md) и кода ответа в теле ответа. В случае неудачи `4xx` будут возвращены с подробные сведения об ошибке.
+В случае успеха этот метод возвращает код отклика `201 Created` и объект [identityProvider](../resources/identityprovider.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 
 ## <a name="example"></a>Пример
 
-В следующем примере создается **identityProvider**.
+В приведенном ниже примере создается объект **identityProvider**.
 
 ##### <a name="request"></a>Запрос
 
@@ -78,7 +78,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

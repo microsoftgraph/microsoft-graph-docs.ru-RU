@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4299b83e5cb11f4c6eea460621198b43ab3c0890
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985762"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584721"
 ---
 # <a name="list-acceptedsenders"></a>Список acceptedSenders
 Получение пользователей или групп из списка acceptedSenders для данной группы.
@@ -38,8 +38,8 @@ GET /groups/{id}/acceptedSenders
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryObject](../resources/directoryobject.md) в тексте отклика.
@@ -55,9 +55,9 @@ GET /groups/{id}/acceptedSenders
 GET https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders
 ```
 
-#### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
->**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+>**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

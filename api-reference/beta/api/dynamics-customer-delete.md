@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ccda17713436a2455c073eb58c8ecfadf3a58a12
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365775"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458399"
 ---
 # <a name="delete-customers"></a>Удаление клиентов
 Удаление объекта Customer из Dynamics 365 Business Central.
@@ -37,7 +37,7 @@ DELETE /financials/companies('{id}')/customers('{id}')
 |Заголовок         |Значение                     |
 |---------------|--------------------------|
 |Авторизация  |Bearer {токен}. Обязательный. |
-|If-Match       |Обязательно указывать. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
+|If-Match       |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **клиентов**, **Клиенты** не будут обновлены. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

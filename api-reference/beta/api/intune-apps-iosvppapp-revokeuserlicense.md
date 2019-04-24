@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 690e547929e53f2378ca0244c0c57a7444652628
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795648"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32495633"
 ---
 # <a name="revokeuserlicense-action"></a>Действие revokeAllLicenses
 
@@ -53,7 +53,7 @@ POST /deviceAppManagement/mobileApps/{mobileAppId}/deviceStatuses/{mobileAppInst
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |userId|String|Идентификатор пользователя, которому назначена лицензия на приложение|
-|Нотифиманажеддевицес|Boolean|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
+|Нотифиманажеддевицес|Логический|Логическое значение, указывающее, следует ли отправлять уведомление об отзыве на устройство|
 
 
 

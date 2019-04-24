@@ -1,21 +1,21 @@
 ---
-title: 'вызов: playPrompt'
-description: Воспроизведение запрос в вызове.
+title: 'Call: Плайпромпт'
+description: ПроИгрывать запрос в вызове.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 32ea1b838a71d40a6f6106a648962c6a77c29057
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507791"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461236"
 ---
-# <a name="call-playprompt"></a>вызов: playPrompt
+# <a name="call-playprompt"></a>Call: Плайпромпт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Воспроизведение запрос в вызове.
+ПроИгрывать запрос в вызове.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,11 +44,11 @@ POST /applications/{id}/calls/{id}/playPrompt
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|запросы|[запрос](../resources/prompt.md) семейства сайтов||
-|ClientContext|String|Контекст клиента.|
+|выдан|Коллекция [Prompt](../resources/prompt.md)||
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [playPromptOperation](../resources/playPromptOperation.md) и кода ответа в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [плайпромптоператион](../resources/playPromptOperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -94,7 +94,7 @@ HTTP/1.1 200 OK
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомления - операция завершена
+##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -1,28 +1,28 @@
 ---
-title: Создание educationAssignmentResource
-description: создается OData.Type, чтобы указать, какой тип ресурсов. Обратите внимание, что файловым ресурсам, сначала нужно передать для назначения **resourceFolder**.
+title: Создание Едукатионассигнментресаурце
+description: OData. Type, указывающая тип создаваемого ресурса. Обратите внимание, что файловые ресурсы сначала необходимо отправить в **ресаурцефолдер**назначений.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 34e8740336acbef056ec0b3703547de51fdc42ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527992"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464812"
 ---
-# <a name="create-educationassignmentresource"></a>Создание educationAssignmentResource
+# <a name="create-educationassignmentresource"></a>Создание Едукатионассигнментресаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание [назначения ресурсов](../resources/educationassignmentresource.md). Сам ресурс имеет @odata.type которое указывает тип ресурсов. Обратите внимание, что файловым ресурсам, сначала нужно передать для назначения **resourceFolder**.
+Создайте [ресурс назначения](../resources/educationassignmentresource.md). В самом ресурсе есть @odata. Type, указывающий тип создаваемого ресурса. Обратите внимание, что файловые ресурсы сначала необходимо отправить в **ресаурцефолдер**назначений.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается.  | 
 
@@ -38,11 +38,11 @@ POST /education/classes/{id}/assignments/{id}/resources
 | Content-Type  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление объекта [educationAssignmentResource](../resources/educationassignmentresource.md) с JSON.
+В тексте запроса добавьте представление объекта [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [educationAssignmentResource](../resources/educationassignmentresource.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -66,8 +66,8 @@ Content-length: 212
 }
 
 ```
-В тексте запроса укажите представление объекта [educationAssignmentResource](../resources/educationassignmentresource.md) с JSON.
-##### <a name="response"></a>Ответ
+В тексте запроса добавьте представление объекта [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в формате JSON.
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

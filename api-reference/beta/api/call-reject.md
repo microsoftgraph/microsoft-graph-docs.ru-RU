@@ -1,28 +1,28 @@
 ---
-title: 'Вызовите: отклонить'
-description: Отклонение входящего звонка.
+title: 'вызов: отклонено'
+description: Отклонение входящего вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 5b42ebee208431cd0a02be291d07f580d98c87a1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516191"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461321"
 ---
-# <a name="call-reject"></a>Вызовите: отклонить
+# <a name="call-reject"></a>вызов: отклонено
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отклонение входящего звонка.
+Отклонение входящего вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)                |
 | :-------------- | :--------------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
 | Для приложений     | Нет                                                       |
 
@@ -43,7 +43,7 @@ POST /applications/{id}/calls/{id}/reject
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Причина|String|Причину отклонения.|
+|причиной|String|Причина отклонения.|
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
@@ -55,7 +55,7 @@ Returns `202 Accepted` response code
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
 
-##### <a name="notification---incoming"></a>Уведомления - входящие
+##### <a name="notification---incoming"></a>Уведомление — входящий
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -125,7 +125,7 @@ Content-Length: 24
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {
@@ -137,7 +137,7 @@ Content-Length: 24
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---deleted"></a>Уведомления - удалены
+##### <a name="notification---deleted"></a>Уведомление удалено
 
 ```http
 POST https://bot.contoso.com/api/calls

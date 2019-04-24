@@ -1,19 +1,19 @@
 ---
-title: Получение impossibleTravelRiskEvent
-description: Извлечение свойств и связи объекта impossibletravelriskevent.
+title: Получение объекта impossibleTravelRiskEvent
+description: Получение свойств и связей объекта импоссиблетравелрискевент.
 localization_priority: Normal
 ms.openlocfilehash: e5f1d7a47c261a9524225a1308531de8cd8de27c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520720"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501363"
 ---
-# <a name="get-impossibletravelriskevent"></a>Получение impossibleTravelRiskEvent
+# <a name="get-impossibletravelriskevent"></a>Получение объекта impossibleTravelRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта impossibletravelriskevent.
+Получение свойств и связей объекта импоссиблетравелрискевент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,11 +35,11 @@ GET /impossibleTravelRiskEvents/{id}
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [impossibleTravelRiskEvent](../resources/impossibletravelriskevent.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [импоссиблетравелрискевент](../resources/impossibletravelriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -50,9 +50,8 @@ GET /impossibleTravelRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/impossibleTravelRiskEvents/22e65c1f-909a-42b5-c0d2-075f30e27887-0bfdc7a8-6a16-c33e-7de9-a60a28ae533b-15475553-dbc1-8879-5079-23b1edd25bab
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

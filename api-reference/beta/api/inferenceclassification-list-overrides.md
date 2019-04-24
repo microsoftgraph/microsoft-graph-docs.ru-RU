@@ -1,19 +1,19 @@
 ---
-title: Список переопределений
-description: Получите переопределения фокус папки "Входящие", пользователь настроил для всегда классификации сообщения от определенных отправителей различными способами.
+title: Переопределение списка
+description: Получение параметров сортировки папки "Входящие", которые пользователь настроил для того, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.
 localization_priority: Normal
 ms.openlocfilehash: a49d47e39caff5c00981d02551b0eeb564239f73
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511921"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32501282"
 ---
-# <a name="list-overrides"></a>Список переопределений
+# <a name="list-overrides"></a>Переопределение списка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите переопределения [Фокус папки "Входящие"](../resources/manage-focused-inbox.md) , пользователь настроил для всегда классификации сообщения от определенных отправителей различными способами.
+Получение параметров [сортировки папки "Входящие"](../resources/manage-focused-inbox.md) , которые пользователь настроил для того, чтобы всегда классифицировать сообщения от определенных отправителей определенными способами.
 
 Каждое переопределение соответствует SMTP-адресу отправителя. Изначально у пользователя нет переопределений.
 ## <a name="permissions"></a>Разрешения
@@ -38,11 +38,11 @@ GET /users/{id}/inferenceClassification/overrides
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -53,9 +53,8 @@ GET /users/{id}/inferenceClassification/overrides
 ```http
 GET https://graph.microsoft.com/beta/me/inferenceClassification/overrides
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

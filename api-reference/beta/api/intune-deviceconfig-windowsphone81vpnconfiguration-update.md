@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1e5f8726dc820ec352326f61e73aa77e725ccefa
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31795053"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32512623"
 ---
 # <a name="update-windowsphone81vpnconfiguration"></a>Обновление windowsPhone81VpnConfiguration
 
@@ -54,8 +54,8 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|roleScopeTagIds|Коллекция String|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|Суппортсскопетагс|Boolean|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|roleScopeTagIds|Коллекция строк|Список тегов областей для этого экземпляра сущности. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|Суппортсскопетагс|Логический|Указывает, поддерживает ли базовая конфигурация устройства назначение тегов области. Назначение свойства Скопетагс не разрешено, если это значение равно false, а сущности не будут отображаться для пользователей с ограниченной областью действия. Это происходит для устаревших политик, созданных в Silverlight, и может быть разрешено путем удаления и повторного создания политики на портале Azure. Это свойство доступно только для чтения. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
@@ -66,13 +66,13 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |applyOnlyToWindows81|Boolean|Указывает, применяется ли эта политика только к Windows 8.1. Это свойство доступно только для чтения. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |connectionType|[Виндовсвпнконнектионтипе](../resources/intune-deviceconfig-windowsvpnconnectiontype.md)|Тип подключения. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md). Возможные значения: `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`.|
 |Логинграупордомаин|String|Группа входа или домен, когда для параметра Тип подключения установлено мобильное подключение Dell Сониквалл. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|Енаблесплиттуннелинг|Boolean|Включение Расщепленного туннелирования для VPN. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
+|Енаблесплиттуннелинг|Логический|Включение Расщепленного туннелирования для VPN. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
 |проксисервер|[windows81VpnProxyServer](../resources/intune-deviceconfig-windows81vpnproxyserver.md)|Прокси-сервер. НаСледуется от [windows81VpnConfiguration](../resources/intune-deviceconfig-windows81vpnconfiguration.md)|
-|Бипассвпнонкомпанивифи|Boolean|Обход VPN в сети Wi-Fi компании.|
-|Бипассвпнонхомевифи|Boolean|Обход VPN для домашнего Wi-Fi.|
+|Бипассвпнонкомпанивифи|Логический|Обход VPN в сети Wi-Fi компании.|
+|Бипассвпнонхомевифи|Логический|Обход VPN для домашнего Wi-Fi.|
 |Параметр authenticationmethod|[Впнаусентикатионмесод](../resources/intune-deviceconfig-vpnauthenticationmethod.md)|Метод проверки поДлинности. Возможные значения: `certificate`, `usernameAndPassword`.|
-|Ремемберусеркредентиалс|Boolean|Запомнить учетные данные пользователя.|
-|Днссуффикссеарчлист|Коллекция String|Список поиска DNS-суффиксов.|
+|Ремемберусеркредентиалс|Логический|Запомнить учетные данные пользователя.|
+|Днссуффикссеарчлист|Коллекция строк|Список поиска DNS-суффиксов.|
 
 
 

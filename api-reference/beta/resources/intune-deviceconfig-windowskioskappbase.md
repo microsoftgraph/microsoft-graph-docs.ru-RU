@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6254ca7835687d64d209b118f9ed0d4a4ec26e8e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778077"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464288"
 ---
 # <a name="windowskioskappbase-resource-type"></a>Тип ресурса Виндовскиоскаппбасе
 
@@ -25,7 +25,7 @@ ms.locfileid: "31778077"
 |Стартлайауттилесизе|[windowsAppStartLayoutTileSize](../resources/intune-deviceconfig-windowsappstartlayouttilesize.md)|Размер плитки приложения для начального макета. Возможные значения: `hidden`, `small`, `medium`, `wide`, `large`.|
 |name|String|Представляет понятное имя приложения.|
 |Тип|[Виндовскиоскапптипе](../resources/intune-deviceconfig-windowskioskapptype.md)|Тип приложения. Возможные значения: `unknown`, `store`, `desktop`, `aumId`.|
-|Автозапуск|Boolean|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
+|Автозапуск|Логический|Разрешение автоматического запуска приложения в полноэкранном режиме с поддержкой нескольких приложений|
 
 ## <a name="relationships"></a>Отношения
 Нет

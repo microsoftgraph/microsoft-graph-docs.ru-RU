@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0512a493032e738bba41362ecdc40e78de951baf
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365845"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458595"
 ---
 # <a name="get-customers"></a>Получение клиентов
 Получение свойств и связей объекта Customer для Dynamics 365 Business Central.
@@ -41,7 +41,7 @@ GET /financials/companies('{id}')/customers('{id}')
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **Customers** в тексте отклика.
 
 **Запрос**

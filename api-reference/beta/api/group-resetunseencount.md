@@ -1,21 +1,21 @@
 ---
 title: 'group: resetUnseenCount'
-description: Сброс unseenCount всех записей, которые текущий пользователь не просматривал со времени своего предыдущего посещения. Поддерживается только для групп Office 365.
+description: Сброс свойства unseenCount всех записей, которые пользователь не просматривал со своего предыдущего посещения. Поддерживается только для групп Office 365.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: aa37261a536437d0e82195ecfaae06de9e1c6a3a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524816"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32502010"
 ---
 # <a name="group-resetunseencount"></a>group: resetUnseenCount
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сброс unseenCount все сообщения, которые текущий пользователь не с момента их последнего посетить. Поддерживается только для групп Office 365.
+Сброс свойства unseenCount всех записей, которые пользователь не просматривал со своего предыдущего посещения. Поддерживается только для групп Office 365.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -37,10 +37,10 @@ POST /groups/{id}/resetUnseenCount
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  | 
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -54,7 +54,7 @@ POST /groups/{id}/resetUnseenCount
 POST https://graph.microsoft.com/beta/groups/{id}/resetUnseenCount
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",
