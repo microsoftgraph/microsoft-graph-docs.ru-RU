@@ -1,53 +1,53 @@
 ---
-title: Создание bookingBusiness
-description: Создание нового резервирования Microsoft business в клиент.
+title: Создание Букингбусинесс
+description: Создайте новую бизнес-деятельность Майкрософт в клиенте.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 95a9217392953d287689dca7a7b6f4c74fbe6383
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519250"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461767"
 ---
-# <a name="create-bookingbusiness"></a><span data-ttu-id="d7399-103">Создание bookingBusiness</span><span class="sxs-lookup"><span data-stu-id="d7399-103">Create bookingBusiness</span></span>
+# <a name="create-bookingbusiness"></a><span data-ttu-id="31cc3-103">Создание Букингбусинесс</span><span class="sxs-lookup"><span data-stu-id="31cc3-103">Create bookingBusiness</span></span>
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d7399-104">Создание нового резервирования Microsoft business в клиент.</span><span class="sxs-lookup"><span data-stu-id="d7399-104">Create a new Microsoft Bookings business in a tenant.</span></span>
+<span data-ttu-id="31cc3-104">Создайте новую бизнес-деятельность Майкрософт в клиенте.</span><span class="sxs-lookup"><span data-stu-id="31cc3-104">Create a new Microsoft Bookings business in a tenant.</span></span>
 
-<span data-ttu-id="d7399-105">Это первый шаг в настройке business резервирования, где необходимо указать отображаемое имя бизнес.</span><span class="sxs-lookup"><span data-stu-id="d7399-105">This is the first step in setting up a Bookings business where you must specify the business display name.</span></span> <span data-ttu-id="d7399-106">Можно включить другие сведения, такие как рабочий адрес, адрес веб-сайта и планирования политики или задать эти сведения позже, [изменив](bookingbusiness-update.md) **bookingBusiness**.</span><span class="sxs-lookup"><span data-stu-id="d7399-106">You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.</span></span>
-## <a name="permissions"></a><span data-ttu-id="d7399-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d7399-107">Permissions</span></span>
-<span data-ttu-id="d7399-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d7399-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="31cc3-105">Это первый шаг при настройке учета для бизнеса, в котором необходимо указать отображаемое имя.</span><span class="sxs-lookup"><span data-stu-id="31cc3-105">This is the first step in setting up a Bookings business where you must specify the business display name.</span></span> <span data-ttu-id="31cc3-106">Вы можете включить другие сведения, такие как рабочий адрес, адрес веб-сайта и политика планирования, или задать эту информацию позже [](bookingbusiness-update.md) , обновив **букингбусинесс**.</span><span class="sxs-lookup"><span data-stu-id="31cc3-106">You can include other information such as business address, web site address, and scheduling policy, or set that information later by [updating](bookingbusiness-update.md) the **bookingBusiness**.</span></span>
+## <a name="permissions"></a><span data-ttu-id="31cc3-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="31cc3-107">Permissions</span></span>
+<span data-ttu-id="31cc3-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="31cc3-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="d7399-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d7399-110">Permission type</span></span>      | <span data-ttu-id="d7399-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d7399-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="31cc3-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="31cc3-110">Permission type</span></span>      | <span data-ttu-id="31cc3-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="31cc3-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="d7399-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d7399-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="d7399-113">Bookings.Manage.All</span><span class="sxs-lookup"><span data-stu-id="d7399-113">Bookings.Manage.All</span></span>  |
-|<span data-ttu-id="d7399-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d7399-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d7399-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d7399-115">Not supported.</span></span>   |
-|<span data-ttu-id="d7399-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d7399-116">Application</span></span> | <span data-ttu-id="d7399-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d7399-117">Not supported.</span></span> |
+|<span data-ttu-id="31cc3-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="31cc3-112">Delegated (work or school account)</span></span> |  <span data-ttu-id="31cc3-113">Резервирования. Manage. ALL</span><span class="sxs-lookup"><span data-stu-id="31cc3-113">Bookings.Manage.All</span></span>  |
+|<span data-ttu-id="31cc3-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="31cc3-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31cc3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31cc3-115">Not supported.</span></span>   |
+|<span data-ttu-id="31cc3-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="31cc3-116">Application</span></span> | <span data-ttu-id="31cc3-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31cc3-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="d7399-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d7399-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31cc3-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="31cc3-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /bookingBusinesses
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="d7399-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d7399-119">Request headers</span></span>
-| <span data-ttu-id="d7399-120">Имя</span><span class="sxs-lookup"><span data-stu-id="d7399-120">Name</span></span>       | <span data-ttu-id="d7399-121">Описание</span><span class="sxs-lookup"><span data-stu-id="d7399-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="31cc3-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="31cc3-119">Request headers</span></span>
+| <span data-ttu-id="31cc3-120">Имя</span><span class="sxs-lookup"><span data-stu-id="31cc3-120">Name</span></span>       | <span data-ttu-id="31cc3-121">Описание</span><span class="sxs-lookup"><span data-stu-id="31cc3-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="d7399-122">Authorization</span><span class="sxs-lookup"><span data-stu-id="d7399-122">Authorization</span></span>  | <span data-ttu-id="d7399-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="d7399-123">Bearer {code}</span></span>|
+| <span data-ttu-id="31cc3-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="31cc3-122">Authorization</span></span>  | <span data-ttu-id="31cc3-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="31cc3-123">Bearer {code}</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="d7399-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="d7399-124">Request body</span></span>
-<span data-ttu-id="d7399-125">В тексте запроса укажите представление JSON объекта [bookingBusiness](../resources/bookingbusiness.md) .</span><span class="sxs-lookup"><span data-stu-id="d7399-125">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="31cc3-124">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="31cc3-124">Request body</span></span>
+<span data-ttu-id="31cc3-125">В тексте запроса добавьте представление объекта [Букингбусинесс](../resources/bookingbusiness.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="31cc3-125">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="d7399-126">Ответ</span><span class="sxs-lookup"><span data-stu-id="d7399-126">Response</span></span>
-<span data-ttu-id="d7399-127">Успешно завершена, этот метод возвращает `201, Created` объект [bookingBusiness](../resources/bookingbusiness.md) и кода ответа в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="d7399-127">If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="31cc3-126">Отклик</span><span class="sxs-lookup"><span data-stu-id="31cc3-126">Response</span></span>
+<span data-ttu-id="31cc3-127">В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингбусинесс](../resources/bookingbusiness.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="31cc3-127">If successful, this method returns `201, Created` response code and [bookingBusiness](../resources/bookingbusiness.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d7399-128">Пример</span><span class="sxs-lookup"><span data-stu-id="d7399-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="d7399-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="d7399-129">Request</span></span>
-<span data-ttu-id="d7399-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d7399-130">The following is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="31cc3-128">Пример</span><span class="sxs-lookup"><span data-stu-id="31cc3-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="31cc3-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="31cc3-129">Request</span></span>
+<span data-ttu-id="31cc3-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="31cc3-130">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "create_bookingbusiness_from_bookingbusinesses"
@@ -73,9 +73,9 @@ Content-type: application/json
     "defaultCurrencyIso":"USD"
 }
 ```
-<span data-ttu-id="d7399-131">В тексте запроса укажите представление JSON объекта [bookingBusiness](../resources/bookingbusiness.md) .</span><span class="sxs-lookup"><span data-stu-id="d7399-131">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
-##### <a name="response"></a><span data-ttu-id="d7399-132">Ответ</span><span class="sxs-lookup"><span data-stu-id="d7399-132">Response</span></span>
-<span data-ttu-id="d7399-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d7399-133">The following is an example of the response.</span></span> <span data-ttu-id="d7399-134">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="d7399-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="d7399-135">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d7399-135">All of the properties will be returned from an actual call.</span></span>
+<span data-ttu-id="31cc3-131">В тексте запроса добавьте представление объекта [Букингбусинесс](../resources/bookingbusiness.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="31cc3-131">In the request body, supply a JSON representation of [bookingBusiness](../resources/bookingbusiness.md) object.</span></span>
+##### <a name="response"></a><span data-ttu-id="31cc3-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="31cc3-132">Response</span></span>
+<span data-ttu-id="31cc3-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="31cc3-133">The following is an example of the response.</span></span> <span data-ttu-id="31cc3-134">Примечание. Представленный здесь объект отклика может быть усечен для краткости.</span><span class="sxs-lookup"><span data-stu-id="31cc3-134">Note: The response object shown here may be truncated for brevity.</span></span> <span data-ttu-id="31cc3-135">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="31cc3-135">All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

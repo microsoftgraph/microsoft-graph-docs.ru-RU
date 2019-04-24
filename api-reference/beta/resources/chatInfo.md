@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса chatInfo
-description: Сведения о сообщении в группах Майкрософт.
+title: Тип ресурса Чатинфо
+description: Сведения о сообщении в Microsoft Teams.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3c1414d10a262280bcf0d3a307fc0c71aed2fbde
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507665"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461075"
 ---
-# <a name="chatinfo-resource-type"></a><span data-ttu-id="2785b-103">Тип ресурса chatInfo</span><span class="sxs-lookup"><span data-stu-id="2785b-103">chatInfo resource type</span></span>
+# <a name="chatinfo-resource-type"></a><span data-ttu-id="e8221-103">Тип ресурса Чатинфо</span><span class="sxs-lookup"><span data-stu-id="e8221-103">chatInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2785b-104">Сведения о сообщении в группах Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="2785b-104">Information about a message in Microsoft Teams.</span></span>
+<span data-ttu-id="e8221-104">Сведения о сообщении в Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="e8221-104">Information about a message in Microsoft Teams.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2785b-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="2785b-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="e8221-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="e8221-105">Properties</span></span>
 
-| <span data-ttu-id="2785b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="2785b-106">Property</span></span>            | <span data-ttu-id="2785b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="2785b-107">Type</span></span>    | <span data-ttu-id="2785b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="2785b-108">Description</span></span>|
+| <span data-ttu-id="e8221-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="e8221-106">Property</span></span>            | <span data-ttu-id="e8221-107">Тип</span><span class="sxs-lookup"><span data-stu-id="e8221-107">Type</span></span>    | <span data-ttu-id="e8221-108">Описание</span><span class="sxs-lookup"><span data-stu-id="e8221-108">Description</span></span>|
 |:--------------------|:--------|:-----------|
-| <span data-ttu-id="2785b-109">MessageId</span><span class="sxs-lookup"><span data-stu-id="2785b-109">messageId</span></span>           | <span data-ttu-id="2785b-110">String</span><span class="sxs-lookup"><span data-stu-id="2785b-110">String</span></span>  | <span data-ttu-id="2785b-111">Уникальный идентификатор для сообщения в канале группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="2785b-111">The unique identifier for a message in a Microsoft Teams channel.</span></span> |
-| <span data-ttu-id="2785b-112">replyChainMessageId</span><span class="sxs-lookup"><span data-stu-id="2785b-112">replyChainMessageId</span></span> | <span data-ttu-id="2785b-113">String</span><span class="sxs-lookup"><span data-stu-id="2785b-113">String</span></span>  | <span data-ttu-id="2785b-114">Идентификатор сообщения.</span><span class="sxs-lookup"><span data-stu-id="2785b-114">The ID of the reply message.</span></span> |
-| <span data-ttu-id="2785b-115">threadId</span><span class="sxs-lookup"><span data-stu-id="2785b-115">threadId</span></span>            | <span data-ttu-id="2785b-116">String</span><span class="sxs-lookup"><span data-stu-id="2785b-116">String</span></span>  | <span data-ttu-id="2785b-117">Уникальный идентификатор потока в группами Майкрософт.</span><span class="sxs-lookup"><span data-stu-id="2785b-117">The unique identifier for a thread in Microsoft Teams.</span></span> |
+| <span data-ttu-id="e8221-109">messageId</span><span class="sxs-lookup"><span data-stu-id="e8221-109">messageId</span></span>           | <span data-ttu-id="e8221-110">String</span><span class="sxs-lookup"><span data-stu-id="e8221-110">String</span></span>  | <span data-ttu-id="e8221-111">Уникальный идентификатор сообщения в канале Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="e8221-111">The unique identifier for a message in a Microsoft Teams channel.</span></span> |
+| <span data-ttu-id="e8221-112">Репличаинмессажеид</span><span class="sxs-lookup"><span data-stu-id="e8221-112">replyChainMessageId</span></span> | <span data-ttu-id="e8221-113">String</span><span class="sxs-lookup"><span data-stu-id="e8221-113">String</span></span>  | <span data-ttu-id="e8221-114">Идентификатор ответного сообщения.</span><span class="sxs-lookup"><span data-stu-id="e8221-114">The ID of the reply message.</span></span> |
+| <span data-ttu-id="e8221-115">Tидентификатор</span><span class="sxs-lookup"><span data-stu-id="e8221-115">threadId</span></span>            | <span data-ttu-id="e8221-116">String</span><span class="sxs-lookup"><span data-stu-id="e8221-116">String</span></span>  | <span data-ttu-id="e8221-117">Уникальный идентификатор потока в Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="e8221-117">The unique identifier for a thread in Microsoft Teams.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="2785b-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2785b-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="e8221-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="e8221-118">JSON representation</span></span>
 
-<span data-ttu-id="2785b-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2785b-119">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="e8221-119">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e8221-119">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

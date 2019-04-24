@@ -5,55 +5,55 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 93139514ae66b4af4c6ade8de8f068050b985451
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927358"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467213"
 ---
-# <a name="get-domain"></a><span data-ttu-id="04ff2-103">Получение домена</span><span class="sxs-lookup"><span data-stu-id="04ff2-103">Get domain</span></span>
+# <a name="get-domain"></a><span data-ttu-id="c9ab7-103">Получение домена</span><span class="sxs-lookup"><span data-stu-id="c9ab7-103">Get domain</span></span>
 
-<span data-ttu-id="04ff2-104">Получение свойств и связей объекта домена.</span><span class="sxs-lookup"><span data-stu-id="04ff2-104">Retrieve the properties and relationships of domain object.</span></span>
+<span data-ttu-id="c9ab7-104">Получение свойств и связей объекта домена.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-104">Retrieve the properties and relationships of domain object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="04ff2-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="04ff2-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c9ab7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c9ab7-105">Permissions</span></span>
 
-<span data-ttu-id="04ff2-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="04ff2-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c9ab7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c9ab7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="04ff2-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="04ff2-108">Permission type</span></span>      | <span data-ttu-id="04ff2-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="04ff2-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c9ab7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c9ab7-108">Permission type</span></span>      | <span data-ttu-id="c9ab7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c9ab7-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="04ff2-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="04ff2-110">Delegated (work or school account)</span></span> | <span data-ttu-id="04ff2-111">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="04ff2-111">Directory.Read.All</span></span>    |
-|<span data-ttu-id="04ff2-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="04ff2-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="04ff2-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="04ff2-113">Not supported.</span></span>    |
-|<span data-ttu-id="04ff2-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="04ff2-114">Application</span></span> | <span data-ttu-id="04ff2-115">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="04ff2-115">Directory.Read.All, Domain.ReadWrite.All</span></span> |
+|<span data-ttu-id="c9ab7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c9ab7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c9ab7-111">Directory.Read.All</span><span class="sxs-lookup"><span data-stu-id="c9ab7-111">Directory.Read.All</span></span>    |
+|<span data-ttu-id="c9ab7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c9ab7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c9ab7-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-113">Not supported.</span></span>    |
+|<span data-ttu-id="c9ab7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c9ab7-114">Application</span></span> | <span data-ttu-id="c9ab7-115">Directory.Read.All, Domain.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c9ab7-115">Directory.Read.All, Domain.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="04ff2-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="04ff2-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c9ab7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c9ab7-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /domains/{id}
 ```
 
-> <span data-ttu-id="04ff2-117">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="04ff2-117">For {id}, specify the domain with its fully qualified domain name.</span></span>
+> <span data-ttu-id="c9ab7-117">В качестве параметра {id} укажите домен, используя его полное доменное имя.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-117">For {id}, specify the domain with its fully qualified domain name.</span></span>
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="04ff2-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="04ff2-118">Optional query parameters</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c9ab7-118">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c9ab7-118">Optional query parameters</span></span>
 
-<span data-ttu-id="04ff2-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="04ff2-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
+<span data-ttu-id="c9ab7-119">Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-119">This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="04ff2-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="04ff2-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="c9ab7-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c9ab7-120">Request headers</span></span>
 
-| <span data-ttu-id="04ff2-121">Имя</span><span class="sxs-lookup"><span data-stu-id="04ff2-121">Name</span></span>      |<span data-ttu-id="04ff2-122">Описание</span><span class="sxs-lookup"><span data-stu-id="04ff2-122">Description</span></span>|
+| <span data-ttu-id="c9ab7-121">Имя</span><span class="sxs-lookup"><span data-stu-id="c9ab7-121">Name</span></span>      |<span data-ttu-id="c9ab7-122">Описание</span><span class="sxs-lookup"><span data-stu-id="c9ab7-122">Description</span></span>|
 |:----------|:----------|
-| <span data-ttu-id="04ff2-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="04ff2-123">Authorization</span></span>  | <span data-ttu-id="04ff2-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="04ff2-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="04ff2-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="04ff2-126">Content-Type</span></span>  | <span data-ttu-id="04ff2-127">application/json</span><span class="sxs-lookup"><span data-stu-id="04ff2-127">application/json</span></span> |
+| <span data-ttu-id="c9ab7-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c9ab7-123">Authorization</span></span>  | <span data-ttu-id="c9ab7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="c9ab7-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="c9ab7-126">Content-Type</span></span>  | <span data-ttu-id="c9ab7-127">application/json</span><span class="sxs-lookup"><span data-stu-id="c9ab7-127">application/json</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="04ff2-128">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="04ff2-128">Request body</span></span>
-<span data-ttu-id="04ff2-129">Не указывайте тело запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="04ff2-129">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c9ab7-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c9ab7-128">Request body</span></span>
+<span data-ttu-id="c9ab7-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="04ff2-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="04ff2-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c9ab7-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="c9ab7-130">Response</span></span>
 
-<span data-ttu-id="04ff2-131">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="04ff2-131">If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="04ff2-132">Пример</span><span class="sxs-lookup"><span data-stu-id="04ff2-132">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="04ff2-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="04ff2-133">Request</span></span>
+<span data-ttu-id="c9ab7-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [domain](../resources/domain.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-131">If successful, this method returns a `200 OK` response code and [domain](../resources/domain.md) object in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c9ab7-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c9ab7-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c9ab7-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c9ab7-133">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -63,8 +63,8 @@ GET /domains/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
-##### <a name="response"></a><span data-ttu-id="04ff2-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="04ff2-134">Response</span></span>
-<span data-ttu-id="04ff2-p103">Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="04ff2-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="c9ab7-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="c9ab7-134">Response</span></span>
+<span data-ttu-id="c9ab7-p103">Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c9ab7-p103">Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
