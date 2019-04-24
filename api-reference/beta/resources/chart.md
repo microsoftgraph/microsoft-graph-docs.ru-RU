@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 4bc0ad0d31981e7e84241519e92569ab25c2cf18
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460942"
 ---
 # <a name="chart-resource-type"></a>Тип ресурса Chart
 
@@ -25,12 +25,12 @@ ms.locfileid: "29643236"
 |[Получение объекта Chart](../api/chart-get.md) | [Chart](chart.md) |Чтение свойств и связей объекта диаграммы.|
 |[Создание объекта ChartSeries](../api/chart-post-series.md) |[ChartSeries](chartseries.md)| Создание объекта ChartSeries путем добавления в коллекцию рядов.|
 |[Список рядов](../api/chart-list-series.md) |Коллекция объектов [ChartSeries](chartseries.md)| Получение коллекции объектов ChartSeries.|
-|[обновление](../api/chart-update.md). | [Chart](chart.md)   |Обновление объекта Chart. |
+|[Обновление](../api/chart-update.md) | [Chart](chart.md)   |Обновление объекта Chart. |
 |[Image](../api/chart-image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
-|[Delete](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
+|[Удаление](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
 |[Setdata](../api/chart-setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
 |[Setposition](../api/chart-setposition.md)|Нет|Располагает диаграмму относительно ячеек на листе.|
-|[List](../api/chart-list.md) | Коллекция объектов [Chart](chart.md) |Получение коллекции объектов диаграмм. |
+|[Список](../api/chart-list.md) | Коллекция объектов [Chart](chart.md) |Получение коллекции объектов диаграмм. |
 |[Itemat](../api/chartcollection-itemat.md)|[Диаграмма](chart.md)|Возвращает диаграмму с учетом ее положения в коллекции.|
 |[Add](../api/chartcollection-add.md)|[Chart](chart.md)|Создает диаграмму.|
 
@@ -40,12 +40,12 @@ ms.locfileid: "29643236"
 |height|double|Обозначает высоту объекта диаграммы (в пунктах).|
 |id|строка|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
 |left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
-|name|строка|Обозначает имя объекта диаграммы.|
+|name|string|Обозначает имя объекта диаграммы.|
 |top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|
 |width|double|Представляет ширину объекта диаграммы (в пунктах).|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |axes|[ChartAxes](chartaxes.md)|Представляет оси диаграммы. Только для чтения.|
 |dataLabels|[ChartDataLabels](chartdatalabels.md)|Представляет метки данных на диаграмме. Только для чтения.|
@@ -53,7 +53,7 @@ ms.locfileid: "29643236"
 |legend|[ChartLegend](chartlegend.md)|Представляет условные обозначения для диаграммы. Только для чтения.|
 |series|Коллекция объектов [ChartSeries](chartseries.md)|Представляет один ряд данных или коллекцию рядов данных в диаграмме. Только для чтения.|
 |title|[ChartTitle](charttitle.md)|Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование. Только для чтения.|
-|worksheet|[Worksheet](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
+|лист|[Worksheet](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

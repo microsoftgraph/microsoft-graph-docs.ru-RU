@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: beebe65fe6d534c4624bfc9de1601f580ad029db
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782452"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32477946"
 ---
 # <a name="get-androidforworkvpnconfiguration"></a>Получение androidForWorkVpnConfiguration
 

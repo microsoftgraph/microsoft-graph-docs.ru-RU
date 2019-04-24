@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 2549d8babd000a36f0ff3ccd38541ef3c1b2e466
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925821"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463672"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
@@ -28,16 +28,16 @@ ms.locfileid: "27925821"
 |[Перечисление пользователей](../api/educationschool-list-users.md) |Коллекция [educationUser](educationuser.md)| Получение коллекции объектов **educationUser**.|
 |[Удаление пользователя](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Удаление **educationUser** из учебного заведения через свойство навигации **users**.|
 |[Обновление](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Обновление объекта **educationSchool**. |
-|[Удаление](../api/educationschool-delete.md) | None |Удаление объекта **educationSchool**. |
+|[Удаление](../api/educationschool-delete.md) | Нет |Удаление объекта **educationSchool**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|GUID этого учебного заведения.|
+|id|Строка|GUID этого учебного заведения.|
 |displayName| String| Отображаемое имя учебного заведения.| 
-|описание| String | Описание учебного заведения.| 
-|status| строка| Только для чтения. Возможные значения: `inactive`, `active`, `expired`, `deleteable`.|
-|externalSource| educationExternalSource| Только для чтения.  Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+|description| String | Описание учебного заведения.| 
+|status| string| Только для чтения. `inactive`Возможные значения: `active`,, `expired`,. `deleteable`|
+|externalSource| Едукатионекстерналсаурце| Только для чтения.  Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Адрес электронной почты директора.|
 |principalName| String | Имя директора.|
 |externalPrincipalId| String | Идентификатор директора в системе синхронизации. |
@@ -51,7 +51,7 @@ ms.locfileid: "27925821"
 |createdBy|[identitySet](identityset.md)|Объект, который создал учебное заведение.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |classes|Коллекция [educationClass](educationclass.md)| Классы, которые обучаются в учебном заведении. Допускается значение null.|
 |users|Коллекция [educationUser](educationuser.md)| Пользователи в учебном заведении. Допускается значение null.|

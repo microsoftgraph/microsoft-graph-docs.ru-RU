@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 27bef92d9392cd6369564e86417b438ed8bd5a5a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365831"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463637"
 ---
 # <a name="create-journals"></a>Создание журналов
 Создает журнал в Dynamics 365 Business Central. 
@@ -43,7 +43,7 @@ POST /financials/companies('{id}')/journals('{id}')
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **журналов** в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **журналов** в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -5,11 +5,11 @@ title: PersonOrGroupColumn
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 5ff8d61a2796edd615a66416b4f8f4d6d565909a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27985453"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462475"
 ---
 # <a name="personorgroupcolumn-resource-type"></a>Тип ресурса personOrGroupColumn
 
@@ -33,10 +33,10 @@ ms.locfileid: "27985453"
 | Имя свойства              | Тип    | Описание
 |:---------------------------|:--------|:--------------------------------------
 | **allowMultipleSelection** | boolean | Указывает, можно ли выбрать несколько значений в источнике.
-| **displayAs**              | string  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
+| **displayAs**              | строка  | Указывает способ отображения сведений о выбранном человеке или группе. См. ниже.
 | **chooseFromType**         | string  | Указывает, что можно выбирать: только людей либо людей и группы. Должно иметь тип `peopleAndGroups` или `peopleOnly`.
 
-## <a name="displayas-options"></a>Параметры displayAs
+## <a name="displayas-options"></a>Параметры DisplayAs
 
 | Значение DisplayAs               | Описание
 |:------------------------------|:-----------------------

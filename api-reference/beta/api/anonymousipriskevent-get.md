@@ -1,19 +1,19 @@
 ---
-title: Получение anonymousIpRiskEvent
-description: Извлечение свойств и связи объекта anonymousipriskevent.
+title: Получение объекта anonymousIpRiskEvent
+description: Получение свойств и связей объекта анонимаусиприскевент.
 localization_priority: Normal
 ms.openlocfilehash: c306593d55792035377d18ad1888f5a4ca707aa6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459523"
 ---
-# <a name="get-anonymousipriskevent"></a>Получение anonymousIpRiskEvent
+# <a name="get-anonymousipriskevent"></a>Получение объекта anonymousIpRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта anonymousipriskevent.
+Получение свойств и связей объекта анонимаусиприскевент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,11 +36,11 @@ GET /anonymousIpRiskEvents/{id}
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) и кода ответа в значении тело ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [анонимаусиприскевент](../resources/anonymousipriskevent.md) в значении тела отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -51,9 +51,8 @@ GET /anonymousIpRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/anonymousIpRiskEvents/2016-01-29T00:00:56.22556656a56d0b2-3c51-7c5e-bc1a-1ccdb3bd9c71
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

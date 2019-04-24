@@ -1,28 +1,28 @@
 ---
-title: 'Вызовите: передача'
-description: Переключение активного вызова.
+title: 'Call: Transfer'
+description: Передача активного вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b1c503be31b17fb608abbec340aa9390ce315435
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516254"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462433"
 ---
-# <a name="call-transfer"></a>Вызовите: передача
+# <a name="call-transfer"></a>Call: Transfer
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Переключение активного вызова.
+Передача активного вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)         |
 | :-------------- | :-------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
 | Для приложений     | Calls.Initiate.All                                  |
 
@@ -43,15 +43,15 @@ POST /applications/{id}/calls/{id}/transfer
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|transferTarget|[invitationParticipantInfo](../resources/invitationparticipantinfo.md)|Участник, который является целевым для переключения.|
-|ClientContext|String|Контекст клиента.|
+|Трансфертаржет|[ИнвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Участник, который является целевым объектом передачи.|
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код ответа.
+## <a name="response"></a>Отклик
+Возвращает `202 Accepted` код отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="transfer-call-directly-with-no-user-involvement"></a>Переключение звонка напрямую, не требующее вмешательства пользователя
+### <a name="transfer-call-directly-with-no-user-involvement"></a>Прямой перенос вызовов без участия пользователя
 
 В приведенном ниже примере показано, как вызывать этот API.
 
@@ -98,7 +98,7 @@ Content-Length: 430
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомления - передача
+##### <a name="notification---transferring"></a>Передача уведомлений
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -132,7 +132,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомления - передачи принятия
+##### <a name="notification---transfer-accepted"></a>Уведомление — передача принята
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -166,7 +166,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Уведомления - завершен
+##### <a name="notification---terminated"></a>Уведомление — прервано
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -196,9 +196,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="consultative-transfer"></a>Консультативное переключение
+### <a name="consultative-transfer"></a>Передача Консультативного
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/transfer
@@ -236,7 +236,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---transferring"></a>Уведомления - передача
+##### <a name="notification---transferring"></a>Передача уведомлений
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -270,7 +270,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---transfer-accepted"></a>Уведомления - передачи принятия
+##### <a name="notification---transfer-accepted"></a>Уведомление — передача принята
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Уведомления - завершен
+##### <a name="notification---terminated"></a>Уведомление — прервано
 
 ```http
 POST https://bot.contoso.com/api/calls

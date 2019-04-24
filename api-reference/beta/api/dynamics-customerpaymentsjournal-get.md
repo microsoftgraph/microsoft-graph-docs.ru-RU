@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 14d90b40dc7584b50024ff82921242d0213ed790
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365691"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458658"
 ---
 # <a name="get-customerpaymentjournals"></a>Получение Кустомерпайментжаурналс
 Получение свойств и связей объекта журнала платежей клиента для Dynamics 365 Business Central.
@@ -42,7 +42,7 @@ GET /financials/companies('{id}')/customerPaymentJournals('{id}')
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **кустомерпайментжаурналс** в тексте отклика.
 
 ## <a name="example"></a>Пример

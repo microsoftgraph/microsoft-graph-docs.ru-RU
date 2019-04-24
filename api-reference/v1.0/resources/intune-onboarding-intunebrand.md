@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a47e19aaca3aa5e7469d9fb01cbae7b5363c1270
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257458"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585253"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -20,7 +20,7 @@ ms.locfileid: "30257458"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|Строка|Название компании или организации, которое отображается пользователям.|
+|displayName|String|Название компании или организации, которое отображается пользователям.|
 |contactITName|String|Имя пользователя или название организации, ответственных за ИТ-поддержку.|
 |contactITPhoneNumber|String|Номер телефона пользователя или организации, ответственных за ИТ-поддержку.|
 |contactITEmailAddress|String|Адрес электронной почты пользователя или организации, ответственных за ИТ-поддержку.|
@@ -35,7 +35,7 @@ ms.locfileid: "30257458"
 |showNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

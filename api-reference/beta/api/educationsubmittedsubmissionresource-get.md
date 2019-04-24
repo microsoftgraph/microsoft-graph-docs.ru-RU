@@ -1,28 +1,28 @@
 ---
-title: Получение educationSubmittedSubmissionResource
-description: Возвращает отправленные ресурсов. Это будет доступно для преподавателей после отправки студента и будет доступен для студента после преподаватель выпуска подачи.  Обратите внимание, что учителя можно оставить заметки в некоторые ресурсы.
+title: Получение Едукатионсубмиттедсубмиссионресаурце
+description: Возвращает отправленный ресурс. Это будет доступно для преподавателя после того, как ученик отправил, и будет доступен студенту после того, как преподаватель выпустит отправку.  Обратите внимание, что преподаватели могут оставлять заметок в некоторых ресурсах.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: e529231e6503b67390b7248228af84dc59b5f633
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513279"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457492"
 ---
-# <a name="get-educationsubmittedsubmissionresource"></a>Получение educationSubmittedSubmissionResource
+# <a name="get-educationsubmittedsubmissionresource"></a>Получение Едукатионсубмиттедсубмиссионресаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает отправленные ресурсов. Это будет доступно для преподавателей после отправки студента и будет доступен для студента после преподаватель выпуска подачи.  Обратите внимание, что учителя можно оставить заметки в некоторые ресурсы.
+Возвращает отправленный ресурс. Это будет доступно для преподавателя после того, как ученик отправил, и будет доступен студенту после того, как преподаватель выпустит отправку.  Обратите внимание, что преподаватели могут оставлять заметок в некоторых ресурсах.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -40,9 +40,9 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [educationSubmissionResource](../resources/educationsubmissionresource.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионсубмиссионресаурце](../resources/educationsubmissionresource.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -53,7 +53,7 @@ GET /education/classes/{id}/assignments/{id}/submissions/{id}/submittedResources
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/submittedResources/f2387c3b-ec39-4bf2-a399-d7242677f024
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

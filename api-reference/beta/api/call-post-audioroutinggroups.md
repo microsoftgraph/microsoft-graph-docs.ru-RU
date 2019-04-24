@@ -1,21 +1,21 @@
 ---
-title: Создание звуковых группы маршрутизации
-description: Создание нового **audioRoutingGroup**.
+title: Создание группы маршрутизации звука
+description: Создание нового **аудиораутингграуп**.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc0e2a3463229762b3a641f33f77f2df8d506aa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522863"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461222"
 ---
-# <a name="create-audio-routing-group"></a>Создание звуковых группы маршрутизации
+# <a name="create-audio-routing-group"></a>Создание группы маршрутизации звука
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового **audioRoutingGroup**.
+Создание нового **аудиораутингграуп**.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "29522863"
 |:---------------------------------------|:--------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                               |
-| Для приложений                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,14 +39,14 @@ POST /applications/{id}/calls/{id}/audioRoutingGroups
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
+В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [audioRoutingGroup](../resources/audioroutinggroup.md) и кода ответа в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-one-to-one-audio-routing-group"></a>В примере 1: Один к одному группу звука маршрутизации
+### <a name="example-1-one-to-one-audio-routing-group"></a>Пример 1: "одна к одной группе маршрутизации аудио"
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -72,7 +72,7 @@ Content-Length: 233
 }
 ```
 
-В тексте запроса укажите представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
+В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
 
@@ -99,7 +99,7 @@ Content-Length: 233
   ]
 }
 ```
-### <a name="example-2-multicast-audioroutinggroup"></a>Пример 2: AudioRoutingGroup многоадресной рассылки
+### <a name="example-2-multicast-audioroutinggroup"></a>Пример 2: multicast Аудиораутингграуп
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -130,7 +130,7 @@ Content-Length: 233
 }
 ```
 
-В тексте запроса укажите представление JSON объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
+В тексте запроса добавьте представление объекта [Аудиораутингграуп](../resources/audioroutinggroup.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
 

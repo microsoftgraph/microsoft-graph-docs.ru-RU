@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/10/2017
-title: Файл действий
+title: Действия с файлами
 localization_priority: Normal
 ms.openlocfilehash: 75849fc67febe8c0f22d4dbd057da98aea5e8854
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459493"
 ---
 # <a name="enumerate-activities-preview"></a>Перечисление действий (ознакомительная версия)
 
@@ -19,7 +19,7 @@ ms.locfileid: "29511179"
 
 **Примечание.** Ресурс activities представлен в предварительной версии и пока не доступен всем клиентам.
 
-[activities]: ../resources/itemactivity.md
+[действий]: ../resources/itemactivity.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -52,7 +52,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/activities
 GET https://graph.microsoft.com/beta/me/drive/activities
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 

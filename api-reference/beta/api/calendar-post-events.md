@@ -1,21 +1,19 @@
 ---
-title: Создание объекта event
-description: Используйте этот API для создания нового события в заданном по умолчанию или указанном календаре.
+title: Создание события
+description: С помощью этого API можно создать событие в календаре по умолчанию или указанном календаре.
 author: angelgolfer-ms
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: c620b2fb25a0ead99a07304b61db314300f6ea2e
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342312"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462083"
 ---
 # <a name="create-event"></a>Создание события
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Используйте этот API для создания нового события в заданном по умолчанию или указанном календаре.
+С помощью этого API можно создать событие в календаре по умолчанию или указанном календаре.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +24,8 @@ ms.locfileid: "30342312"
 |Для приложений | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->[Календарь](../resources/calendar.md)пользователя или группы по умолчанию.
+<!-- { "blockType": "ignored" } -->
+[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
 ```http
 POST /me/calendar/events
 POST /users/{id | userPrincipalName}/calendar/events
@@ -68,21 +67,21 @@ POST /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}/events
   "name": "create_event_from_calendar"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
+POST https://graph.microsoft.com/v1.0/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events
 Content-type: application/json
 
 {
   "subject": "Let's go for lunch",
   "body": {
     "contentType": "HTML",
-    "content": "Does next month work for you?"
+    "content": "Does mid month work for you?"
   },
   "start": {
-      "dateTime": "2019-03-10T12:00:00",
+      "dateTime": "2019-03-15T12:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "end": {
-      "dateTime": "2019-03-10T14:00:00",
+      "dateTime": "2019-03-15T14:00:00",
       "timeZone": "Pacific Standard Time"
   },
   "location":{
@@ -101,7 +100,7 @@ Content-type: application/json
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,21 +111,21 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
-    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==\"",
-    "id": "AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA=",
-    "createdDateTime": "2019-02-28T21:36:26.7105485Z",
-    "lastModifiedDateTime": "2019-02-28T21:36:26.9577227Z",
-    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjGjw==",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('5d8d505c-864f-4804-88c7-4583c966cde8')/calendars('AAMkAGViNDU7zAAAAAGtlAAA%3D')/events/$entity",
+    "@odata.etag": "W/\"/IUUrIl3PkG1JCSsPfU+8wAAGXjEpA==\"",
+    "id": "AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA=",
+    "createdDateTime": "2019-02-28T21:17:57.56197Z",
+    "lastModifiedDateTime": "2019-02-28T21:17:59.044919Z",
+    "changeKey": "/IUUrIl3PkG1JCSsPfU+8wAAGXjEpA==",
     "categories": [],
     "originalStartTimeZone": "Pacific Standard Time",
     "originalEndTimeZone": "Pacific Standard Time",
-    "uid": "040000008200C780DAE",
+    "iCalUId": "040000008200E641B4C",
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
     "subject": "Let's go for lunch",
-    "bodyPreview": "Does next month work for you?",
+    "bodyPreview": "Does mid month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
@@ -136,7 +135,7 @@ Content-type: application/json
     "seriesMasterId": null,
     "showAs": "busy",
     "type": "singleInstance",
-    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZe6CkAAA%3D&exvsurl=1&path=/calendar/item",
+    "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
     "onlineMeetingUrl": null,
     "recurrence": null,
     "responseStatus": {
@@ -145,14 +144,14 @@ Content-type: application/json
     },
     "body": {
         "contentType": "html",
-        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes next month work for you?\r\n</body>\r\n</html>\r\n"
+        "content": "<html>\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\r\n<meta content=\"text/html; charset=us-ascii\">\r\n</head>\r\n<body>\r\nDoes mid month work for you?\r\n</body>\r\n</html>\r\n"
     },
     "start": {
-        "dateTime": "2019-03-10T12:00:00.0000000",
+        "dateTime": "2019-03-15T12:00:00.0000000",
         "timeZone": "Pacific Standard Time"
     },
     "end": {
-        "dateTime": "2019-03-10T14:00:00.0000000",
+        "dateTime": "2019-03-15T14:00:00.0000000",
         "timeZone": "Pacific Standard Time"
     },
     "location": {
@@ -193,15 +192,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/calendar-post-events.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

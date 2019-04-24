@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e5606516092633ff14d23947f73626adc6d83c2c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643117"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460998"
 ---
 # <a name="chartseries-resource-type"></a>Тип ресурса ChartSeries
 
@@ -25,17 +25,17 @@ ms.locfileid: "29643117"
 |[Получение объекта ChartSeries](../api/chartseries-get.md) | [ChartSeries](chartseries.md) |Чтение свойств и связей объекта chartSeries.|
 |[Создание объекта ChartPoints](../api/chartseries-post-points.md) |[ChartPoints](chartpoint.md)| Создание объекта ChartPoints путем добавления в коллекцию точек.|
 |[Список точек](../api/chartseries-list-points.md) |Коллекция объектов [ChartPoints](chartpoint.md)| Получение коллекции объектов ChartPoints.|
-|[обновление](../api/chartseries-update.md). | [ChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
-|[List](../api/chartseries-list.md) | Коллекция объектов [ChartSeries](chartseries.md) |Получение коллекции объектов chartSeries. |
+|[Обновление](../api/chartseries-update.md) | [ChartSeries](chartseries.md) |Обновление объекта ChartSeries. |
+|[Список](../api/chartseries-list.md) | Коллекция объектов [ChartSeries](chartseries.md) |Получение коллекции объектов chartSeries. |
 |[Itemat](../api/chartseriescollection-itemat.md)|[ChartSeries](chartseries.md)|Возвращает ряд на основании сведений о его позиции в коллекции.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|строка|Представляет имя ряда в диаграмме.|
+|name|string|Представляет имя ряда в диаграмме.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartSeriesFormat](chartseriesformat.md)|Представляет форматирование ряда диаграммы, включая формат заливки и линий. Только для чтения.|
 |points|Коллекция объектов [ChartPoints](chartpoint.md)|Представляет коллекцию всех точек в ряду. Только для чтения.|

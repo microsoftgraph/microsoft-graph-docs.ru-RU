@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
 ms.openlocfilehash: 42824275bd79f4b631d53365997d2dd96984f7b5
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480854"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463077"
 ---
 # <a name="numbercolumn-resource-type"></a>Тип ресурса numberColumn
 
@@ -34,7 +34,7 @@ ms.locfileid: "30480854"
 | Имя свойства      | Тип   | Описание
 |:-------------------|:-------|:-----------------------------------------------
 | **decimalPlaces**  | string | Количество десятичных разрядов, которые необходимо отображать. Ниже перечислены возможные значения.
-| **displayAs**      | string | Способ отображения значения в пользовательском интерфейсе. Должно иметь тип `number` или `percentage`. Если тип не указан, считается, что значение имеет тип `number`.
+| **displayAs**      | строка | Способ отображения значения в пользовательском интерфейсе. Должно иметь тип `number` или `percentage`. Если тип не указан, считается, что значение имеет тип `number`.
 | **maximum**        | double | Максимальное разрешенное значение.
 | **minimum**        | double | Минимальное разрешенное значение.
 

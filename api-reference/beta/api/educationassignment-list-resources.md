@@ -1,28 +1,28 @@
 ---
-title: Список educationAssignmentResources
-description: Получите все ресурсы, связанные с этим назначением.
+title: Список Едукатионассигнментресаурцес
+description: Получение всех ресурсов, связанных с этим назначением.
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5556210604ce6b0c273a0e4d89e1a792d2639b12
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518571"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464791"
 ---
-# <a name="list-educationassignmentresources"></a>Список educationAssignmentResources
+# <a name="list-educationassignmentresources"></a>Список Едукатионассигнментресаурцес
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите все ресурсы, связанные с этим назначением.
+Получение всех ресурсов, связанных с этим назначением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. ReadBasic, EduAssignments. Реадвритебасик, EduAssignments. Read, EduAssignments. ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -40,9 +40,9 @@ GET /education/classes/{id}/assignments/{id}/resources
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [educationAssignmentResource](../resources/educationassignmentresource.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [едукатионассигнментресаурце](../resources/educationassignmentresource.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -53,7 +53,7 @@ GET /education/classes/{id}/assignments/{id}/resources
 ```http
 GET https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/resources
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

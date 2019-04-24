@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса cloudAppSecurityState
-description: Содержит информацию о состояниях об облачных приложений (destinationServiceName, destinationServiceIp).
+title: Тип ресурса Клаудаппсекуритистате
+description: Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).
 localization_priority: Normal
 ms.openlocfilehash: ff76adf1d3879c3dac3f19ae122d82c9523d5193
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876806"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584861"
 ---
-# <a name="cloudappsecuritystate-resource-type"></a>Тип ресурса cloudAppSecurityState
+# <a name="cloudappsecuritystate-resource-type"></a>Тип ресурса Клаудаппсекуритистате
 
-Содержит информацию о состояниях об облачных приложений (destinationServiceName, destinationServiceIp).
+Содержит сведения о состоянии облачного приложения (Дестинатионсервиценаме, Дестинатионсервицеип).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|destinationServiceIp|Строка|Конечный IP-адрес подключения для облачных приложений и служб.|
-|destinationServiceName|Строка|Имя облачных приложений и служб (например «Salesforce», «Общего банка данных», и т.д.).|
-|riskScore|Строка|Оценка риска поставщика создается/вычисляемые из облачных приложений и служб. Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
+|Дестинатионсервицеип|String|Конечный IP-адрес подключения к облачному приложению или службе.|
+|Дестинатионсервиценаме|String|Имя облачного приложения или службы (например, "Salesforce", "DropBox" и т. д.).|
+|riskScore|String|Полученный поставщиком и вычисляемый показатель риска облачного приложения или службы. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
 ## <a name="json-representation"></a>Представление JSON
 

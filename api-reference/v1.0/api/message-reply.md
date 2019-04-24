@@ -1,19 +1,19 @@
 ---
 title: 'message: reply'
-description: Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".
+description: Ответ отправителю сообщения. Затем сообщение сохраняется в папке "Отправленные".
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1aacac847295926562036a65007cac1f542f50fd
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961311"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463644"
 ---
 # <a name="message-reply"></a>message: reply
 
-Ответ отправителю сообщения. После этого сообщение сохраняется в папке "Отправленные".
+Ответ отправителю сообщения. Затем сообщение сохраняется в папке "Отправленные".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/reply
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|

@@ -1,21 +1,21 @@
 ---
 title: Обновление administrativeunit
-description: Обновляет свойства объекта administrativeUnit.
+description: Обновление свойств объекта administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f3c57f8784bf642df7944bc6295ebd4fadc0ba43
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511158"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459283"
 ---
 # <a name="update-administrativeunit"></a>Обновление administrativeunit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновляет свойства объекта [administrativeUnit](../resources/administrativeunit.md) .
+Обновление свойств объекта [administrativeUnit](../resources/administrativeunit.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,13 +44,13 @@ PATCH /administrativeUnits/{id}
 
 | Свойство   | Тип |Описание|
 |:---------------|:--------|:----------|
-|description|строка|Описание административных подразделения.|
-|displayName|string|Отображаемое имя для административного подразделения.|
-|visibility|string|Видимость для административного подразделения. Если не установлено, а затем значение по умолчанию — «общедоступный». Может иметь значение «HiddenMembership», который скрывает членство, не являющиеся членами.|
+|description|строка|Описание административной единицы.|
+|displayName|строка|Отображаемое имя административной единицы.|
+|visibility|string|Видимость административной единицы. Если не задано, то значение по умолчанию — "общедоступный". Может иметь значение "значение hiddenmembership", которое скрывает членство в группах, не являющихся участниками.|
 
-Поскольку ресурсов **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), можно использовать `PATCH` операции для добавления, обновления или удаления данных конкретного приложения в настраиваемых свойств расширения в существующий экземпляр **administrativeUnit** .
+Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **administrativeUnit** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 

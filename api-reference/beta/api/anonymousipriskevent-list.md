@@ -1,19 +1,19 @@
 ---
-title: Список anonymousIpRiskEvents
-description: Получение списка объектов anonymousipriskevent.
+title: Список Анонимаусиприскевентс
+description: Получение списка объектов анонимаусиприскевент.
 localization_priority: Normal
 ms.openlocfilehash: c2927ae470441d581a0879e97e395ca7720035f4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516814"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459264"
 ---
-# <a name="list-anonymousipriskevents"></a>Список anonymousIpRiskEvents
+# <a name="list-anonymousipriskevents"></a>Список Анонимаусиприскевентс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов anonymousipriskevent.
+Получение списка объектов анонимаусиприскевент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,11 +36,11 @@ GET /anonymousIpRiskEvents
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [anonymousIpRiskEvent](../resources/anonymousipriskevent.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [анонимаусиприскевент](../resources/anonymousipriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -51,9 +51,8 @@ GET /anonymousIpRiskEvents
 ```http
 GET https://graph.microsoft.com/v1.0/anonymousIpRiskEvents
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

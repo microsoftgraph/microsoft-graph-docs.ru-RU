@@ -1,19 +1,19 @@
 ---
-title: onenoteEntityBaseModel ресурсов
-description: Это базовый тип для сущности OneNote.
+title: ресурс Оненотинтитибасемодел
+description: Это базовый тип для объектов OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 53ed86ae22f3ac9fccdef98e56382cd9440e71e2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27923133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462615"
 ---
-# <a name="onenoteentitybasemodel-resource"></a>onenoteEntityBaseModel ресурсов
+# <a name="onenoteentitybasemodel-resource"></a>ресурс Оненотинтитибасемодел
 
-Это базовый тип для сущности OneNote.
+Это базовый тип для объектов OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,7 +38,7 @@ ms.locfileid: "27923133"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|self|Строка|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
+|Self|String|Конечная точка, в которой можно получить сведения о странице. Только для чтения.|
 
 <!-- uuid: bfb567de-2a2a-4b81-bf47-a55626a0c166
 2015-10-25 14:57:30 UTC -->

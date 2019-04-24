@@ -1,27 +1,27 @@
 ---
-title: Создание bookingAppointment
-description: Создание нового bookingAppointment для указанного bookingbusiness.
+title: Создание Букингаппоинтмент
+description: Создание нового Букингаппоинтмент для указанного букингбусинесс.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a6573215d28950944dfed05a0e4dcb441cdf1fda
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517374"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461824"
 ---
-# <a name="create-bookingappointment"></a>Создание bookingAppointment
+# <a name="create-bookingappointment"></a>Создание Букингаппоинтмент
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).
+Создание нового [букингаппоинтмент](../resources/bookingappointment.md) для указанного [букингбусинесс](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Букингсаппоинтмент. ReadWrite. ALL, Books. ReadWrite. ALL, Books. Manage. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -34,18 +34,18 @@ POST /bookingBusinesses/{id}/appointments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .
+В тексте запроса добавьте представление объекта [Букингаппоинтмент](../resources/bookingappointment.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `201, Created` объект [bookingAppointment](../resources/bookingappointment.md) и кода ответа в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингаппоинтмент](../resources/bookingappointment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса. В этом встречи не затрагивает резервирование конкретных сотрудников.
+Ниже приведен пример запроса. Эта встреча не включает в себя резервирование определенных сотрудников сотрудников.
 <!-- {
   "blockType": "request",
   "name": "create_bookingappointment_from_bookingbusiness"
@@ -161,8 +161,8 @@ Content-type: application/json
     }
 }
 ```
-В тексте запроса укажите представление JSON объекта [bookingAppointment](../resources/bookingappointment.md) .
-##### <a name="response"></a>Ответ
+В тексте запроса добавьте представление объекта [Букингаппоинтмент](../resources/bookingappointment.md) в формате JSON.
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

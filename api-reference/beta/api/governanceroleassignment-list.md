@@ -1,41 +1,41 @@
 ---
-title: Список governanceRoleAssignments
-description: Получите коллекцию governanceRoleAssignments.
+title: Список Говернанцеролеассигнментс
+description: Получение коллекции Говернанцеролеассигнментс.
 localization_priority: Normal
 ms.openlocfilehash: b6b83397d93ab502758202c7f22513d97db37540
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524872"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465266"
 ---
-# <a name="list-governanceroleassignments"></a>Список governanceRoleAssignments
+# <a name="list-governanceroleassignments"></a>Список Говернанцеролеассигнментс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [governanceRoleAssignments](../resources/governanceroleassignment.md).
+Получение коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureResources  |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. Азурересаурцес  |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | PrivilegedAccess.ReadWrite.AzureResources |
+|Для приложений | Привилежедакцесс. ReadWrite. Азурересаурцес |
 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Список коллекцию [governanceRoleAssignments](../resources/governanceroleassignment.md) для ресурса.
+ПереЧисление коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md) для ресурса.
 
->**Примечание:** Помимо области разрешений для этого запроса требуется инициатор запроса может иметь по крайней мере одна роль назначения для ресурса. 
+>**Примечание:** Кроме области разрешений, этот запрос требует, чтобы запрашивающая сторона состроила по крайней мере одно назначение роли для ресурса. 
 ```http
 GET /privilegedAccess/azureResources/resources/{resourceId}/roleAssignments
 GET /privilegedAccess/azureResources/roleAssignments?$filter=resourceId+eq+'{resourceId}'
 ```
-Список коллекцию [governanceRoleAssignments](../resources/governanceroleassignment.md) моей.
+ПереЧисление коллекции [говернанцеролеассигнментс](../resources/governanceroleassignment.md) .
 ```http
 GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId}'
 ```
@@ -45,16 +45,16 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [governanceRoleAssignment](../resources/governanceroleassignment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
-В этом примере показано, как получить Мои назначения ролей по подписке Wingtip Toys - производственного.
+В этом примере показано, как получить назначения ролей для подписки Wingtip Toys — произ.
 <!-- {
   "blockType": "request",
   "name": "get_governanceroleassignments"
@@ -64,7 +64,7 @@ GET /privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'{myId
 ```http
 GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignments?$filter=subjectId+eq+'918e54be-12c4-4f4c-a6d3-2ee0e3661c51'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,21 +1,21 @@
 ---
-title: 'вызов: cancelMediaProcessing'
-description: Отменяет с мультимедиа для всех выполняемых любых операций PlayPrompt или записи.
+title: 'Call: Канцелмедиапроцессинг'
+description: ОтМеняет обработку мультимедиа для всех выполняемых операций Плайпромпт или записи.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 77c35cb0cfeaea6ebb2e623b32b1fa3c70f65777
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461312"
 ---
-# <a name="call-cancelmediaprocessing"></a>вызов: cancelMediaProcessing
+# <a name="call-cancelmediaprocessing"></a>Call: Канцелмедиапроцессинг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отменяет с мультимедиа для всех выполняемых любых операций PlayPrompt или записи.
+ОтМеняет обработку мультимедиа для всех выполняемых операций Плайпромпт или записи.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/cancelMediaProcessing
 
 | Параметр      | Тип    | Описание                                                    |
 |:---------------|:--------|:---------------------------------------------------------------|
-| all            | Логическое | Флаг, указывающий, следует ли остановить все операции или текущий. |
-| ClientContext  | String  | Контекст клиента.                                            |
+| ко            | Логический | Флаг, указывающий, следует ли остановить все операции или текущие. |
+| Контекст  | String  | Контекст клиента.                                            |
 
-## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
+## <a name="response"></a>Отклик
+Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -84,7 +84,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомления - операция завершена
+##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
 ```http
 POST https://bot.contoso.com/api/calls

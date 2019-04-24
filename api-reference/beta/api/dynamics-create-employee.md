@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 5432a312c4a1702b47413ee7080da0653a159fef
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365607"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463651"
 ---
 # <a name="create-employees"></a>Создание сотрудников
 Создайте объект Employee в Dynamics 365 Business Central.
@@ -42,7 +42,7 @@ POST /financials/companies('{id}')/employees
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта Employees в формате **** JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **Employees** в тексте отклика.
 
 ## <a name="example"></a>Пример

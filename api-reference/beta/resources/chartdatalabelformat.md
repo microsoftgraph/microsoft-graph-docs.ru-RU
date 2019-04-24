@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ced4e03cf715efdddac9570dbd00c4dc0b59b9bb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641017"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461019"
 ---
 # <a name="chartdatalabelformat-resource-type"></a>Тип ресурса ChartDataLabelFormat
 
@@ -25,7 +25,7 @@ ms.locfileid: "29641017"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Представляет формат заливки для текущей метки данных диаграммы. Только для чтения.|
 |font|[ChartFont](chartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для метки данных диаграммы. Только для чтения.|

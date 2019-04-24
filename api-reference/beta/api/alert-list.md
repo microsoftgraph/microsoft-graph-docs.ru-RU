@@ -1,21 +1,19 @@
 ---
-title: перечисление оповещений;
-description: Получение списка объектов оповещения.
-localization_priority: Normal
+title: Перечисление оповещений
+description: Получение списка объектов оповещений.
 author: preetikr
+localization_priority: Priority
 ms.prod: security
 ms.openlocfilehash: d50c3244ae2c0e9f158dc38923136ef3e8656f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524382"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459215"
 ---
-# <a name="list-alerts"></a>перечисление оповещений;
+# <a name="list-alerts"></a>Перечисление оповещений
 
- [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Получение списка объектов [оповещение](../resources/alert.md) .
+Получение списка объектов [оповещений](../resources/alert.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,9 +21,9 @@ ms.locfileid: "29524382"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All  |
+|Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.Read.All SecurityEvents.ReadWrite.All |
+|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,32 +39,32 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает следующие [параметры запроса OData](/graph/query-parameters) для настройки ответа.
+Этот метод поддерживает следующие [Параметры запроса OData](/graph/query-parameters) для настройки отклика:
 
 - `$count`
 - `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top`Возвращает совокупные верхней результаты из каждого API поставщика безопасности.
+- `$top`Возвращает сводные результаты из каждого поставщика API безопасности.  
 
-Чтобы вернуть набор альтернативных свойства, используйте OData `$select` параметр для определения набора свойств **оповещения** , которые будут запроса.  Например, для возврата **assignedTo**, **категории**и свойства **уровень серьезности** , добавьте следующий запрос: `$select=assignedTo,category,severity`.
+Чтобы получить альтернативный набор свойств, используйте параметр запроса `$select` OData, чтобы указать требуемый набор свойств **оповещения** .  Например, чтобы вернуть свойства **assignedTo**, **Category**и **Severity** , добавьте в запрос следующее: `$select=assignedTo,category,severity`.
 
-> **Примечание:** `$top` имеет более 1000 оповещения и сочетание `$top`  +  `$skip` не может превышать 6000 оповещения. Например `/security/alerts?$top=10&$skip=5990` возвращает `200 OK` код ответа, но `/security/alerts?$top=10&$skip=5991` возвращает `400 Bad Request` код ответа.  Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
+> **Примечание:** `$top` ограничено 1000 оповещений, а их `$top`  +  `$skip` комбинация не может превышать 6000. Например, `/security/alerts?$top=10&$skip=5990` возвращает код `200 OK` отклика, но `/security/alerts?$top=10&$skip=5991` возвратит код `400 Bad Request` отклика.  Дополнительные сведения см. в разделе [ответ об ошибках API безопасности Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | Bearer {Code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода. Текст запроса будет игнорироваться.
+Не указывайте текст запроса для этого метода. Текст запроса будет игнорироваться.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов **оповещения** в теле ответа. Если код состояния, отличный от 2xx или 404 возвращается у поставщика или если поставщик времени ожидания, ответ будет `206 Partial Content` код состояния с ответа поставщика в заголовке предупреждения. Для получения дополнительных сведений см [Microsoft Graph безопасности API сообщений об ошибках](../resources/security-error-codes.md).
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов **Alert** в тексте отклика. Если поставщик возвращает код состояния, отличный от 2xx или 404, или если время ожидания поставщика истекло, ответ будет кодом `206 Partial Content` состояния с ответом поставщика в заголовке предупреждения. Дополнительные сведения см. в разделе [ответ об ошибках API безопасности Microsoft Graph](../resources/security-error-codes.md).
 
 ## <a name="example"></a>Пример
 
@@ -79,10 +77,10 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/security/alerts
+GET https://graph.microsoft.com/v1.0/security/alerts
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
@@ -114,15 +112,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List alerts",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/alert-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

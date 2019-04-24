@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса meetingParticipants
+title: Тип ресурса МитингпартиЦипантс
 description: Участники собрания.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 57a07e29beae6915c7e40f7fb8a6e941351fd38f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508785"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463826"
 ---
-# <a name="meetingparticipants-resource-type"></a>Тип ресурса meetingParticipants
+# <a name="meetingparticipants-resource-type"></a>Тип ресурса МитингпартиЦипантс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,8 +21,8 @@ ms.locfileid: "29508785"
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| attendees | [meetingParticipantInfo](meetingparticipantinfo.md) коллекции |  |
-| organizer | [meetingParticipantInfo](meetingparticipantinfo.md) |  |
+| attendees | Коллекция [митингпартиЦипантинфо](meetingparticipantinfo.md) |  |
+| organizer | [МитингпартиЦипантинфо](meetingparticipantinfo.md) |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

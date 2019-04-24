@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df18ff1902dd750ef44311e2924a7e63e0ba0e58
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460959"
 ---
 # <a name="chartaxes-resource-type"></a>Тип ресурса ChartAxes
 
@@ -25,10 +25,10 @@ ms.locfileid: "29644079"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|categoryAxis|[ChartAxis](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
-|seriesAxis|[ChartAxis](chartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
+|Категоряксис|[ChartAxis](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
+|Сериесаксис|[ChartAxis](chartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
 |valueAxis|[ChartAxis](chartaxis.md)|Представляет ось значений для оси. Только для чтения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

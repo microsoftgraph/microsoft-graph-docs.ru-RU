@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса teamsAsyncOperation
-description: 'Операцию асинхронного группами Майкрософт — это операция, выходит за рамки жизненным циклом одним запросом API. '
+title: Тип ресурса Теамсасинкоператион
+description: 'Асинхронная операция Microsoft Teams — это операция, не истечение срока действия одного запроса API. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: dea11ee20e09f1de7c058ef7704e6a824ba2f765
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27963439"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462258"
 ---
-# <a name="teamsasyncoperation-resource-type"></a>Тип ресурса teamsAsyncOperation
+# <a name="teamsasyncoperation-resource-type"></a>Тип ресурса Теамсасинкоператион
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Асинхронная операция Microsoft Teams — это операция, не истечение срока действия одного запроса API. Эти операции долго выполняются или слишком дороги для завершения в течение периода действия исходного запроса.
 
-Операцию асинхронного группами Майкрософт — это операция, выходит за рамки жизненным циклом одним запросом API. Эти операции выполняются длительным или слишком дорого для выполнения в рамках интервала времени их исходного запроса.
-
-При запуске асинхронной операции, метод возвращает 202 код ответа принято. Ответ также будет содержать заголовок расположения, который содержит расположение teamsAsyncOperation. Периодически проверяйте состояние операции, сделав запрос GET по этому адресу; Подождите > 30 секунд между проверок.
-После успешного завершения запроса состояния будет иметь «выполнена успешно» и targetResourceLocation будет указывать на ресурс созданные или измененные.
+При запуске асинхронной операции метод возвращает код ответа, принятый в 202. В ответе также будет содержаться заголовок Location, который содержит расположение Теамсасинкоператион. Периодически проверяйте состояние операции, выполнив запрос GET к этому расположению; Дождитесь >30 секунд между проверками.
+После успешного выполнения запроса состояние будет "выполнено успешно", а Таржетресаурцелокатион будет указывать на ресурс "создано/изменено".
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип   | Описание |
 |:---------------|:--------|:----------|
-|id|строка |Операция уникальный идентификатор.|
-|operationType|[teamsAsyncOperationType](teamsasyncoperationtype.md) |Указывает, какой тип операции, описанного.|
+|id|строка |Уникальный идентификатор операции.|
+|Оператионтипе|[Объекта teamsasyncoperationtype](teamsasyncoperationtype.md) |Указывает, какие типы операций описаны.|
 |createdDateTime|DateTimeOffset |Время создания операции.|
-|status|[teamsAsyncOperationStatus](teamsasyncoperationstatus.md)| Состояние операции.|
-|lastActionDateTime|DateTimeOffset |Время последнего обновления асинхронной операции.|
-|attemptsCount|Int32|Количество раз, когда операция перед помечаются как успешные и неудачные.|
-|targetResourceId|Идентификатор GUID |Идентификатор объекта, который создал или изменены в результате этой асинхронной операции, обычно [группы](../resources/team.md).|
-|targetResourceLocation|string|Расположение объекта, который создал или изменил как результат этой асинхронной операции. Этот URL-адрес следует рассматривать как Непрозрачное значение и не синтаксический анализ в его компонента пути.|
-|error|[operationError](operationerror.md)|Любая ошибка, которая приводит к сбою асинхронной операции.|
+|status|[Теамсасинкоператионстатус](teamsasyncoperationstatus.md)| Состояние операции.|
+|Ластактиондатетиме|DateTimeOffset |Время последнего обновления асинхронной операции.|
+|Аттемптскаунт|Int32|Сколько раз была предпринята попытка выполнения операции до ее пометки как успешной или неудачной.|
+|Таржетресаурцеид|кодом |Идентификатор объекта, созданного или измененного в результате асинхронной операции, как правило, [команды](../resources/team.md).|
+|Таржетресаурцелокатион|строка|Расположение объекта, созданного или измененного в результате асинхронной операции. Этот URL-адрес должен считаться непрозрачным значением и не был проанализирован в пути к его компонентам.|
+|error|[Оператионеррор](operationerror.md)|Любая ошибка, которая приводит к сбою асинхронной операции.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -60,10 +60,15 @@ ms.locfileid: "27963439"
 
 <!-- uuid: 20fd7863-9545-40d4-ae8f-fee2d115a690
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teams async operation resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

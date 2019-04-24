@@ -3,11 +3,11 @@ title: Тип ресурса physicalAddress
 description: Представляет почтовый адрес ресурса, например контакта или события.
 localization_priority: Normal
 ms.openlocfilehash: 2bbfc3f38d4d353d370b9c8ba859b06cc2e4398b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27866012"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462468"
 ---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 

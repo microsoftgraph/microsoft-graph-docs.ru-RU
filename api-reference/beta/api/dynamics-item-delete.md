@@ -1,5 +1,5 @@
 ---
-title: Удаление элементов
+title: удалять элементы.
 description: Удаляет объект item в Dynamics 365 Business Central.
 services: project-madeira
 documentationcenter: ''
@@ -7,13 +7,13 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: b8b03c12ccc4592af97ee4160ca317eac65f73f5
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365516"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458483"
 ---
-# <a name="delete-items"></a>Удаление элементов
+# <a name="delete-items"></a>удалять элементы.
 Удаление элемента из Dynamics 365 Business Central.
 
 ## <a name="permissions"></a>Разрешения
@@ -37,7 +37,7 @@ DELETE /financials/companies('{id}')/items('{id}')
 |Заголовок       |Значение                    |
 |-------------|-------------------------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|If-Match     |Обязательно указывать. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **элементов**, **элементы** не будут обновлены. |
+|If-Match     |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу **элементов**, **элементы** не будут обновлены. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

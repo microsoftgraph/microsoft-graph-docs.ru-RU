@@ -1,21 +1,21 @@
 ---
-title: Удаление educationSynchronizationProfile
-description: Удаление профиля синхронизации данных school в клиентов на основе идентификатора.
+title: Удаление Едукатионсинчронизатионпрофиле
+description: Удалите профиль School Data Synchronization в клиенте на основе идентификатора.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 2aaa0d47bcc98c814ad525deb781ac7a7df28d87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512474"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457454"
 ---
-# <a name="delete-a-educationsynchronizationprofile"></a>Удаление educationSynchronizationProfile
+# <a name="delete-a-educationsynchronizationprofile"></a>Удаление Едукатионсинчронизатионпрофиле
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов на основе идентификатора.
+Удалите профиль School Data [Synchronization](../resources/educationsynchronizationprofile.md) в клиенте на основе идентификатора.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,13 +34,13 @@ DELETE /synchronizationProfiles/{id}
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Отклик
-При успешном выполнении этот метод возвращает код отклика `202 Accepted` и не возвращает тело отклика.
+Не указывайте текст запроса для этого метода.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика и без текста отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -53,7 +53,7 @@ DELETE /synchronizationProfiles/{id}
 DELETE https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

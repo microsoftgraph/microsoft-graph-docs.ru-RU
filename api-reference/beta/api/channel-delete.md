@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 734df0a79881993f4e002562e5125305b624c4c7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525334"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463784"
 ---
 # <a name="delete-channel"></a>Удаление канала
 
@@ -17,7 +17,7 @@ ms.locfileid: "29525334"
 
 Удаление [канала](../resources/channel.md).
 
-> **Примечание**: существует известная проблема с разрешениями приложения и этот интерфейс API. Дополнительные сведения см [Известные проблемы списка](/graph/known-issues#application-permissions).
+> **Note**: существует известная проблема, связанная с разрешениями приложения и этим API. Дополнительные сведения см. в [списке известных проблем](/graph/known-issues#application-permissions).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,7 +28,7 @@ ms.locfileid: "29525334"
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Group.ReadWrite.All    |
 
-> **Примечание**: этот интерфейс API поддерживает разрешениями администратора. Глобальных администраторов и администраторов службы группами Майкрософт могут получить доступ к группам будут недоступны, они не должна быть членом.
+> **Примечание**. Этот API поддерживает разрешения администратора. Глобальные администраторы и администраторы службы Microsoft Teams могут получать доступ к командам, в которых они не состоят.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -41,9 +41,9 @@ DELETE /teams/{id}/channels/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 ## <a name="example"></a>Пример
@@ -58,7 +58,7 @@ DELETE /teams/{id}/channels/{id}
 DELETE https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 <!-- {

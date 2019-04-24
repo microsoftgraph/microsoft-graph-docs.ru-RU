@@ -1,30 +1,30 @@
 ---
-title: 'вызов: updateMetadata'
-description: Обновление приложений метаданные, связанные с помощью вызова.
+title: 'Call: Упдатеметадата'
+description: Обновление метаданных апплиатион, связанных с вызовом.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b3dade26dde72acd796cc3751df136fde4a4bbea
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507987"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463497"
 ---
-# <a name="call-updatemetadata"></a>вызов: updateMetadata
+# <a name="call-updatemetadata"></a>Call: Упдатеметадата
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление приложений метаданные, связанные с помощью вызова.
+Обновление метаданных апплиатион, связанных с вызовом.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений     | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/updateMetadata
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|metadata|String|Большой двоичный объект данных, предоставленных участника в списке.|
-|ClientContext|String|Контекст клиента.|
+|метаданных|String|Большой двоичный объект данных, предоставляемый участником в списке.|
+|Контекст|String|Контекст клиента.|
 
-## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
+## <a name="response"></a>Отклик
+Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.

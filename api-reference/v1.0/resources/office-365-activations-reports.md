@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 44775b2a14bbd00452d27a04f8e225612100b3fa
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29572558"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463056"
 ---
 # <a name="office-365-activations-reports"></a>Отчеты об активации Office 365
 
@@ -20,6 +20,6 @@ ms.locfileid: "29572558"
 ## <a name="reports"></a>Отчеты
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getoffice365activationsuserdetail.md) | Поток      | Получите сведения о пользователях, которые активировали Office 365. |
+| [Получение сведений о пользователях](../api/reportroot-getoffice365activationsuserdetail.md) | Stream      | Получите сведения о пользователях, которые активировали Office 365. |
 | [Получение количества активаций](../api/reportroot-getoffice365activationcounts.md) | Поток      | Получите сведения о количестве активаций Office 365 на компьютерах и мобильных устройствах. |
-| [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Поток      | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |
+| [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Stream      | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |

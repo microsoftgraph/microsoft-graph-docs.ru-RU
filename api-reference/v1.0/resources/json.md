@@ -3,11 +3,11 @@ title: Тип ресурса Json
 description: Представляет данные, возвращаемые в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: 5e41417fadfccdc5e0c0f08675496d50222d3ecb
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867545"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585155"
 ---
 # <a name="json-resource-type"></a>Тип ресурса Json
 
@@ -16,7 +16,7 @@ ms.locfileid: "27867545"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

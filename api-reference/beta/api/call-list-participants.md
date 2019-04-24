@@ -1,21 +1,21 @@
 ---
 title: Список участников
-description: Получение списка участников объектов в вызове.
+description: Получение списка объектов участников в вызове.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: bc38af4a6bee4a380a001310303d67efb2705dcf
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461279"
 ---
 # <a name="list-participants"></a>Список участников
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка участников объектов в вызове.
+Получение списка объектов участников в вызове.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,7 +23,7 @@ ms.locfileid: "29967349"
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий) |
 | :-------------- | :------------------------------------------ |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
 | Для приложений     | Нет                                        |
 
@@ -38,7 +38,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,7 +52,7 @@ GET /applications/{id}/calls/{id}/participants
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [участника](../resources/participant.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов- [участников](../resources/participant.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

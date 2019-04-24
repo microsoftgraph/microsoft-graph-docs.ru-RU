@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса commsOperation
+title: Тип ресурса Коммсоператион
 description: Состояние определенных длительных операций.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b7914bd9692b4d9a94294f9a09659467e10550a6
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642207"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460599"
 ---
-# <a name="commsoperation-resource-type"></a>Тип ресурса commsOperation
+# <a name="commsoperation-resource-type"></a>Тип ресурса Коммсоператион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,14 +24,14 @@ ms.locfileid: "29642207"
 
 | Свойство           | Тип                        | Описание                                                                     |
 | :----------------- | :-------------------------- | :-------------------------------------------------------------------------------|
-| clientContext      | String                      | Контекст клиента.                                                             |
+| Контекст      | String                      | Контекст клиента.                                                             |
 | createdDateTime    | DateTimeOffset              | Время начала операции.                                                |
 | id                 | String                      | Идентификатор операции. Только для чтения. Создается сервером.                                  |
-| lastActionDateTime | DateTimeOffset              | Время последнего действия операции.                                   |
+| Ластактиондатетиме | DateTimeOffset              | Время последнего действия операции.                                   |
 | resultInfo         | [resultInfo](resultinfo.md) | Сведения о результате. Только для чтения. Создается сервером.                            |
 | status             | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`. Только для чтения. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -1,21 +1,21 @@
 ---
-title: Добавить участника
-description: Используйте этот интерфейс API для добавления элемента (пользователя или группы) для административного подразделения.
+title: Добавление участника
+description: Используйте этот API, чтобы добавить члена (пользователя или группы) в административную единицу.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c1cc9ce7e091ac96ca2484c74404c3a4b04b19ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509485"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459247"
 ---
-# <a name="add-a-member"></a>Добавить участника
+# <a name="add-a-member"></a>Добавление участника
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для добавления элемента (пользователя или группы) для административного подразделения.
+Используйте этот API, чтобы добавить члена (пользователя или группы) в административную единицу.
 
 `NOTE: Currently it's only possible to add one member at a time to an administrative unit.`
 
@@ -40,7 +40,7 @@ POST /administrativeUnits/{id}/members/$ref
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON [пользователя](../resources/user.md), [группы](../resources/group.md) или [directoryObject](../resources/directoryobject.md) для добавления.
+В тексте запроса добавьте представление объекта [User](../resources/user.md), [Group](../resources/group.md) или [directoryObject](../resources/directoryobject.md) , которое необходимо добавить, в формате JSON.
 
 ## <a name="response"></a>Отклик
 
@@ -60,9 +60,9 @@ Content-length: 109
 }
 
 ```
-В тексте запроса укажите представление JSON `id` объекта [пользователя](../resources/user.md) или [группы](../resources/group.md) , необходимо добавить.
+В тексте запроса добавьте представление `id` объекта [пользователя](../resources/user.md) или [группы](../resources/group.md) , который вы хотите добавить, в формате JSON.
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
  
 ```http

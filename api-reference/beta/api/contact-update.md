@@ -1,21 +1,21 @@
 ---
 title: Обновление контакта
-description: Обновляет свойства объекта контакта.
+description: Обновление свойств объекта Contact.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: c6ed3304b5f44a8bb1d35c1db491e8eaf7ae47b4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528209"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455701"
 ---
 # <a name="update-contact"></a>Обновление контакта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновляет свойства объекта контакта.
+Обновление свойств объекта Contact.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -26,7 +26,8 @@ ms.locfileid: "29528209"
 |Для приложений | Contacts.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->[Обратитесь](../resources/contact.md) в пользователя по умолчанию [contactFolder](../resources/contactfolder.md).
+<!-- { "blockType": "ignored" } -->
+[Контакт](../resources/contact.md) от [contactFolder](../resources/contactfolder.md)пользователя по умолчанию.
 ```http
 PATCH /me/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contacts/{id}
@@ -36,7 +37,7 @@ PATCH /users/{id | userPrincipalName}/contacts/{id}
 PATCH /me/contactFolders/{id}/contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 ```
-[Обратитесь](../resources/contact.md) в дочерней папкой [contactFolder](../resources/mailfolder.md).  В приведенном ниже примере показана один уровень вложения, но контакт может быть найдена в дочерних дочернего и т. д.
+Объект [contact](../resources/contact.md) из дочерней папки в папке [contactFolder](../resources/mailfolder.md).  Приведенный ниже пример показывает один уровень вложенности, но для хранения контакта допускается несколько.
 ```http
 PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
@@ -59,7 +60,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |companyName|String|Название компании контакта.|
 |department|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта. Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию обновления.|
-|emailAddresses|[typedEmailAddress](../resources/typedemailaddress.md) коллекции|Электронные адреса контакта.|
+|emailAddresses|Коллекция [типедемаиладдресс](../resources/typedemailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
 |gender |String |Пол контакта. |
 |generation|String|Поколение контакта.|
@@ -73,26 +74,26 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/cont
 |officeLocation|String|Расположение офиса контакта.|
 |parentFolderId|String|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
-|phones |Коллекция [phone](../resources/phone.md) |Номера телефонов, связанный с этим контактом, например домашний, мобильный телефон и рабочий телефон. |
-|postalAddresses |[physicalAddress](../resources/physicaladdress.md) коллекции |Адреса, связанные с этим контактом, например домашний адрес и рабочего адреса. |
+|phones |Коллекция [phone](../resources/phone.md) |Номера телефонов, связанные с контактом, например домашний телефон, мобильный телефон и служебный телефон. |
+|postalAddresses |Коллекция [physicalAddress](../resources/physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и служебный адрес. |
 |profession|String|Профессия контакта.|
 |spouseName|String|Имя супруга или супруги контакта.|
 |surname|String|Фамилия контакта.|
 |title|String|Звание контакта.|
 |websites |Коллекция [website](../resources/website.md)|Веб-сайты, связанные с контактом. |
-|WeddingAnniversary |дата; |Годовщина свадьбы контакта. |
+|Веддинганниверсари |Дата |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски. Это необязательное свойство.|
-|yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
+|yomiSurname|Строка|Фамилия контакта, записанная так, как она звучит по-японски. Это необязательное свойство.|
 
-Поскольку ресурсов **контактов** поддерживает [расширения](/graph/extensibility-overview), можно использовать `PATCH` операции для добавления, обновления или удаления данных конкретного приложения в настраиваемых свойств расширения в существующий экземпляр **контактов** .
+Так как **контактный** ресурс поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, относящиеся к приложению, в пользовательских свойствах расширения в существующем экземпляре **контакта** .
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и обновленные, [обратитесь в](../resources/contact.md) объект в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [Contact](../resources/contact.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере обновляются адрес электронной почты личного указанного контакта.
+В следующем примере обновляется личный адрес электронной почты указанного контакта.
 <!-- {
   "blockType": "request",
   "name": "update_contact"
@@ -117,8 +118,8 @@ Content-type: application/json
     ]
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

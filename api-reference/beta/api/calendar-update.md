@@ -1,15 +1,15 @@
 ---
 title: Обновление календаря
-description: 'Обновление свойств объекта calendar. Календарь может иметь одно для пользователя '
+description: 'Обновление свойств объекта calendar. Календарь может быть одним для пользователя, '
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 2fb6ea839d6565c379c2d9af55920bd0166a7fb1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508477"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461726"
 ---
 # <a name="update-calendar"></a>Обновление календаря
 
@@ -26,7 +26,8 @@ ms.locfileid: "29508477"
 |Для приложений | Calendars.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Пользователя или группы по умолчанию [календаря](../resources/calendar.md).
+<!-- { "blockType": "ignored" } -->
+[Календарь](../resources/calendar.md) пользователя или группы по умолчанию.
 ```http
 PATCH /me/calendar
 PATCH /users/{id | userPrincipalName}/calendar
@@ -56,8 +57,8 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}/calendars/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue = 0, LightGreen = 1, LightOrange = 2, LightGray = 3, LightYellow = 4, LightTeal = 5, LightPink = 6, LightBrown = 7, LightRed = 8, MaxColor = 9, Auto = -1.|
-|isDefaultCalendar|Логическое|Значение true, если этот календарь является пользователя по умолчанию, значение false в противном случае.|
+|color|String|Задает цветовую тему, отличающую этот календарь от других календарей в пользовательском интерфейсе. Значения свойств: LightBlue=0, LightGreen=1, LightOrange=2, LightGray=3, LightYellow=4, LightTeal=5, LightPink=6, LightBrown=7, LightRed=8, MaxColor=9, Auto=-1|
+|isDefaultCalendar|Boolean|Значение true, если это используемый по умолчанию календарь пользователя. В противном случае используется значение false.|
 |name|String|Имя календаря.|
 
 ## <a name="response"></a>Отклик
@@ -78,9 +79,8 @@ Content-type: application/json
   "name": "Social events"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

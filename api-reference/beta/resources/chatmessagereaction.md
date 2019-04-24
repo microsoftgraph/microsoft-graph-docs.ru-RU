@@ -3,11 +3,11 @@ title: Тип ресурса Чатмессажереактион
 description: 'Представляет реакцию на объект chatMessage. '
 localization_priority: Normal
 ms.openlocfilehash: 5020653ef02c1604aece46f3ff2c7ea1c82a75ec
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31481386"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460641"
 ---
 # <a name="chatmessagereaction-resource-type"></a>Тип ресурса Чатмессажереактион
 
@@ -18,11 +18,11 @@ ms.locfileid: "31481386"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Реактионтипе|string| Тип реакции. Планируемые значения включают: <br><ul><li>В данном случае, как и сообщение, в этом случае используется пустое содержимое.</li><li>Эмодзи, реакция на эмодзи. Для содержимого задано значение Юникод для эмодзи.</li><li>Label — содержимое задается в виде строки в метке.</li></ul>|
+|Реактионтипе|строка| Тип реакции. Планируемые значения включают: <br><ul><li>В данном случае, как и сообщение, в этом случае используется пустое содержимое.</li><li>Эмодзи, реакция на эмодзи. Для содержимого задано значение Юникод для эмодзи.</li><li>Label — содержимое задается в виде строки в метке.</li></ul>|
 |createdDateTime|dateTimeOffset|Метка времени в формате UTC для корневого сообщения в формате ISO-8601.|
 |user|identitySet|Пользователь, который реагировал на сообщение.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

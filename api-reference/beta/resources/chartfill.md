@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: ca968737007e5c1dfc223a45d2c2aeb3a0d12c3e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641885"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461052"
 ---
 # <a name="chartfill-resource-type"></a>Тип ресурса ChartFill
 
@@ -28,7 +28,7 @@ ms.locfileid: "29641885"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

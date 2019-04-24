@@ -5,11 +5,11 @@ ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
 ms.openlocfilehash: ddd6b3c6d3048bf7a6d3ab2dbc8ff7259651ee2f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481162"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460626"
 ---
 # <a name="columndefinition-resource-type"></a>Тип ресурса columnDefinition
 
@@ -62,7 +62,7 @@ ms.locfileid: "30481162"
 | Имя свойства           | Тип    | Описание
 |:------------------------|:--------|:-----------------------------------------
 | **columnGroup**         | строка  | Для столбцов сайтов это имя группы, к которой принадлежит данный столбец. Помогает упорядочивать связанные столбцы.
-| **description**         | string  | Описание столбца, которое видит пользователь.
+| **description**         | строка  | Описание столбца, которое видит пользователь.
 | **displayName**         | string  | Имя столбца, которое видит пользователь.
 | **enforceUniqueValues** | логический | Если задано значение true, в соответствующем столбце не может быть нескольких элементов списка с одинаковыми значениями.
 | **hidden**              | boolean | Указывает, отображается ли столбец в пользовательском интерфейсе.

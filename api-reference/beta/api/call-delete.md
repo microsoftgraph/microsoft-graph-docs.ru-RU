@@ -1,21 +1,21 @@
 ---
-title: Удалить вызов
-description: Удалите или прервите активного вызова.
+title: Удаление звонка
+description: Удаление или разрыв активного вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ed4ae5c8fdd397541e015a31bc6ecee948f0ea0e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461327"
 ---
-# <a name="delete-call"></a>Удалить вызов
+# <a name="delete-call"></a>Удаление звонка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите или прервите активного вызова.
+Удаление или разрыв активного вызова.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ DELETE /applications/{id}/calls/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
@@ -70,7 +70,7 @@ DELETE https://graph.microsoft.com/beta/app/calls/{id}
 HTTP/1.1 204 No Content
 ```
 
-##### <a name="notification---terminating"></a>Уведомления - завершение
+##### <a name="notification---terminating"></a>Уведомление — завершение
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -99,7 +99,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Уведомления - завершен
+##### <a name="notification---terminated"></a>Уведомление — прервано
 
 ```http
 POST https://bot.contoso.com/api/calls

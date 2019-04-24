@@ -1,30 +1,30 @@
 ---
-title: Получение звукового группы маршрутизации
-description: Извлечение свойств и связи объекта audioRoutingGroup.
+title: Получение группы маршрутизации звука
+description: Получение свойств и связей объекта Аудиораутингграуп.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 810a27c91c5a31a970f7b279d774d12bf049210d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524039"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459040"
 ---
-# <a name="get-audio-routing-group"></a>Получение звукового группы маршрутизации
+# <a name="get-audio-routing-group"></a>Получение группы маршрутизации звука
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта [audioRoutingGroup](../resources/audioroutinggroup.md) .
+Получение свойств и связей объекта [аудиораутингграуп](../resources/audioroutinggroup.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                               |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                               |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                               |
-| Для приложений                            | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -42,10 +42,10 @@ GET /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [audioRoutingGroup](../resources/audioroutinggroup.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [аудиораутингграуп](../resources/audioroutinggroup.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 

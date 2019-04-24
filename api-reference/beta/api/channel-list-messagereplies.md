@@ -4,18 +4,20 @@ description: ПереЧисление всех ответов на сообще�
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 4ef844dc03b26e4f3184b138aa6f8a845453e0c7
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: 3c3c681c820f4cc855105ec1605be920a98a1430
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889977"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456460"
 ---
 # <a name="list-channel-message-replies"></a>Список ответов на сообщения канала
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ПереЧисление всех ответов на [сообщение](../resources/chatmessage.md) в [канале](../resources/channel.md) команды.
+
+Этот метод перечисляет только ответы на заданное сообщение, если таковые имеются. Чтобы получить само сообщение, просто вызовите [сообщение Get Channel](channel-get-message.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,7 +35,8 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-[Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) в настоящее время не поддерживаются.
+
+С помощью параметра запроса [$Top](/graph/query-parameters#top-parameter) можно управлять количеством элементов в ответе. Другие [Параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
@@ -47,15 +50,16 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/channel.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
+В этом примере указанное сообщение имеет два ответа. Каждый ответ содержит один или несколько объектов [чатмессажементион](../resources/chatmessagemention.md) .
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype", "1555375673184"],
   "name": "get_channel_message_replies"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/replies
+GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages/1555375673184/replies
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -68,63 +72,118 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages/{id}/repl
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "value": [
-    {
-        "id": "id-value",
-        "replyToId": "id-value",
-        "from" : {
-            "user": { 
-            "id":  "id-value",
-            "displayName": "John Doe"
-            }  
-        },
-        "etag": "id-value",
-        "messageType": "message",
-        "createdDateTime": "2018-07-09T07:40:20.152Z",
-        "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-        "body": {
-            "content": "This is a response to a message.",
-            "contentType": "Text"
-        },
-        "attachments": [
-          {
-              "id": "5e32f195-168a-474f-a273-123123123",
-              "contentType": "reference",
-              "contentUrl": "https://test.sharepoint.com/sites/TestSite/Shared%20Documents/General/Test.txt",
-              "content": null,
-              "name": "Test.txt",
-              "thumbnailUrl": null
-          }
-        ],
-        "mentions": [
-            {
-                "id": "id-value ",
-                "mentionText": "Test User",
-                "mentioned": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages('1555375673184')/replies",
+    "@odata.count": 2,
+    "value": [
+        {
+            "id": "1555377090002",
+            "replyToId": "1555375673184",
+            "etag": "1555377090002",
+            "messageType": "message",
+            "createdDateTime": "2019-04-16T01:11:30.002Z",
+            "lastModifiedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
                 "user": {
-                    "id": "id-value",
-                    "displayName: "string"
+                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+                    "displayName": "Adele Vance",
+                    "userIdentityType": "aadUser"
                 }
-            }
-        }
-        ],
-        "importance": "normal",
-        "reactions": [
-            {
-                "reactionType": "like",
-                "user": {
-                    "id": "id-value",
-                    "displayName": "John Doe"
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><div>Ah, <at id=\"0\">Megan</at>, <at id=\"1\">Alex</at>, I saw them in a separate folder. Thanks!</div>\n</div>"
+            },
+            "attachments": [],
+            "mentions": [
+                {
+                    "id": 0,
+                    "mentionText": "Megan",
+                    "mentioned": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+                            "displayName": "Megan",
+                            "userIdentityType": "aadUser"
+                        }
+                    }
                 },
-                "createdDateTime": "2018-07-09T07:40:20.152Z"
-            }
-        ],
-        "locale": "en-us"
-    }
-  ]
+                {
+                    "id": 1,
+                    "mentionText": "Alex",
+                    "mentioned": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "be178404-260a-4f80-b7e5-d52c1e6fdc71",
+                            "displayName": "Alex",
+                            "userIdentityType": "aadUser"
+                        }
+                    }
+                }
+            ],
+            "reactions": []
+        },
+        {
+            "id": "1555375848360",
+            "replyToId": "1555375673184",
+            "etag": "1555375848360",
+            "messageType": "message",
+            "createdDateTime": "2019-04-16T00:50:48.36Z",
+            "lastModifiedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+                    "displayName": "Adele Vance",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><div>And, <at id=\"0\">Alex Wilber</at>, can we see the February report as well?</div>\n</div>"
+            },
+            "attachments": [],
+            "mentions": [
+                {
+                    "id": 0,
+                    "mentionText": "Alex Wilber",
+                    "mentioned": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "be178404-260a-4f80-b7e5-d52c1e6fdc71",
+                            "displayName": "Alex Wilber",
+                            "userIdentityType": "aadUser"
+                        }
+                    }
+                }
+            ],
+            "reactions": []
+        }
+    ]
 }
 ```
 
@@ -133,7 +192,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel message replies",
+  "description": "List channel message replies",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",

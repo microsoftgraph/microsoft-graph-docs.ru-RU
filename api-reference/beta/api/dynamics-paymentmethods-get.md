@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: b9c3fa5cc594b50ab2e2ab21e8e57b593ca8c78c
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365733"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458294"
 ---
 # <a name="get-paymentmethods"></a>Получение Пайментмесодс
 Получение свойств и связей объекта метода оплаты для Dynamics 365 Business Central.
@@ -42,7 +42,7 @@ GET /financials/companies('{id}')/paymentMethods('{id}')
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **пайментмесодс** в тексте отклика.
 
 ## <a name="example"></a>Пример

@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 6addfb3617b05bcb8b6a12d6df31e115d5ea01a9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365768"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463721"
 ---
 # <a name="create-taxareas"></a>Создание Таксареас
 Создает объект налоговой области в Dynamics 365 Business Central.
@@ -43,7 +43,7 @@ POST /financials/companies('{id}')/taxAreas('{id}')
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта **Таксареас** в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод ```201 Created``` возвращает код отклика и объект **таксареас** в тексте отклика.
 
 ## <a name="example"></a>Пример

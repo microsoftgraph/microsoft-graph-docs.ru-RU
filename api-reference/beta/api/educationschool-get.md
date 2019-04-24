@@ -5,15 +5,13 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 6db5540b4e706d96316dc7c92030c2fe18437d82
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508155"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457701"
 ---
 # <a name="get-educationschool"></a>Получение educationSchool
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств и связей объекта school.
 
@@ -42,7 +40,7 @@ GET /education/users/schools
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationSchool](../resources/educationschool.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -53,9 +51,9 @@ GET /education/users/schools
   "name": "get_educationschool"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/schools/10001
+GET https://graph.microsoft.com/v1.0/education/schools/{school-id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
@@ -71,9 +69,9 @@ Content-type: application/json
 Content-length: 292
 
 {
-  "schoolPrincipalEmail": "AmyRoebuck@contoso.com",
-  "schoolPrincipalName": "Amy Roebuck",
-  "externalSchoolPrincipalId": "14007",
+  "principalEmail": "AmyRoebuck@contoso.com",
+  "principalName": "Amy Roebuck",
+  "externalPrincipalId": "14007",
   "lowestGrade": "9",
   "highestGrade": "12"
 }
@@ -81,15 +79,10 @@ Content-length: 292
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get educationSchool",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/educationschool-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

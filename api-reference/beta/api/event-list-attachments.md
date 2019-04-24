@@ -1,21 +1,21 @@
 ---
 title: Список вложений
-description: Получение списка объектов attachment, вложенных в данные о событии.
+description: Получение списка объектов attachment, вложенных в событие.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cf092595f558d3aa1529023029ce84c6f2a4cb87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463966"
 ---
 # <a name="list-attachments"></a>Список вложений
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [attachment](../resources/attachment.md), вложенных в данные о событии.
+Получение списка объектов [attachment](../resources/attachment.md), вложенных в событие.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -44,7 +44,7 @@ GET /groups/{id}/events/{id}/attachments
 
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-В частности, можно использовать `$expand` параметр для включения всех встроенных вложений событий с помощью rest свойства событий запроса. Пример:
+В частности, параметр `$expand` запроса можно использовать для включения всех вложений в события, встроенных в остальные свойства события. Пример:
 
 ```http
 GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
@@ -58,9 +58,9 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Attachment](../resources/attachment.md) в тексте отклика.
 
@@ -78,10 +78,9 @@ GET https://graph.microsoft.com/beta/me/events/{id}?$expand=attachments
 GET https://graph.microsoft.com/beta/me/events/{id}/attachments
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

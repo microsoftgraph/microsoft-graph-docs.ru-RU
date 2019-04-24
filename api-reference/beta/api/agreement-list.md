@@ -1,19 +1,19 @@
 ---
-title: Соглашения по списку
-description: Получение списка объектов соглашения.
+title: Список соглашений
+description: Получение списка объектов Agreement.
 localization_priority: Normal
 ms.openlocfilehash: 82674e81b6b059ffafedf3b9c15c19e90438dc28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525978"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459204"
 ---
-# <a name="list-agreements"></a>Соглашения по списку
+# <a name="list-agreements"></a>Список соглашений
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов [соглашения](../resources/agreement.md) .
+Получение списка объектов [Agreement](../resources/agreement.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,12 +36,12 @@ This method supports the [OData Query Parameters](https://developer.microsoft.co
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Маркер носителя Обязательный. |
+| Authorization | string | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [соглашения](../resources/agreement.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Agreement](../resources/agreement.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 <!-- {

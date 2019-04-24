@@ -1,21 +1,21 @@
 ---
 title: Создание administrativeUnit
-description: Используйте этот интерфейс API для создания нового administrativeUnit.
+description: Используйте этот API для создания нового administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 999f65db5c50ae012cf10242100523b2f6d0c4ce
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509688"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459308"
 ---
 # <a name="create-administrativeunit"></a>Создание administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для создания нового [administrativeUnit](../resources/administrativeunit.md).
+Используйте этот API для создания нового [administrativeUnit](../resources/administrativeunit.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,13 +37,13 @@ POST /administrativeUnits
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [administrativeUnit](../resources/administrativeunit.md) .
+В тексте запроса добавьте представление объекта [AdministrativeUnit](../resources/administrativeunit.md) в формате JSON.
 
-Поскольку ресурсов **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), можно использовать `POST` операции и Добавление настраиваемых свойств с собственными данными в административных единицу при его создании.
+Так как ресурс **administrativeUnit** поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавлять настраиваемые свойства с собственными данными в административную единицу при создании.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` объект [administrativeUnit](../resources/administrativeunit.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -63,9 +63,9 @@ Content-length: 150
     "visibility": "true"
 }
 ```
-В тексте запроса укажите представление JSON объекта [administrativeUnit](../resources/administrativeunit.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В тексте запроса добавьте представление объекта [AdministrativeUnit](../resources/administrativeunit.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

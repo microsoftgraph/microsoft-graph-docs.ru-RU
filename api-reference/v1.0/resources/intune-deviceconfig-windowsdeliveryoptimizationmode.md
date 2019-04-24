@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c9034c7c90257a7ca622cd203d4ab84387fd2014
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30251505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463896"
 ---
 # <a name="windowsdeliveryoptimizationmode-enum-type"></a>тип перечисления Виндовсделиверйоптимизатионмоде
 
@@ -24,7 +24,7 @@ ms.locfileid: "30251505"
 |httpOnly|1,1|Только HTTP, без пиринга|
 |Хттпвиспирингнат|2|ОПЕРАЦИОННАЯ система по умолчанию — HTTP, смешанная с одноранговым устройством с одним транслятором сетевых адресов|
 |Хттпвиспирингприватеграуп|4|HTTP-смешение с одноранговым элементом в частной группе|
-|Хттпвисинтернетпиринг|4|HTTP-смешение с подключением к Интернету|
+|Хттпвисинтернетпиринг|SP4|HTTP-смешение с подключением к Интернету|
 |Симпледовнлоад|99|Простой режим загрузки без пиринга|
 |Бипассмоде|100|Режим обхода. Не используйте оптимизацию доставки и не используйте BITS|
 

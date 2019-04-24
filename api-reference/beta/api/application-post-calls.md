@@ -1,32 +1,32 @@
 ---
 title: Создание звонка
-description: Создайте новый звонок.
+description: Создание нового звонка.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 52255948a1d375871722a9af1aed8336844ac1bc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643575"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459054"
 ---
 # <a name="create-call"></a>Создание звонка
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый звонок.
+Создание нового звонка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)                                             |
 |:---------------------------------------|:----------------------------------------------------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                                                                           |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                                                                           |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                                                                           |
-| Для приложений                            | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All |
+| Для приложений                            | Calls. Жоинграупкаллсасгуест. ALL, Calls. Жоинграупкаллс. ALL, Calls. initiate. ALL, Calls. Инитиатеграупкаллс. ALL |
 
-> **Примечание:** Для вызова с приложение, размещенное мультимедиа необходимо иметь разрешение Calls.AccessMedia.All с одним из разрешения, перечисленные в предыдущей таблице.
+> **Примечание:** Для вызова с размещенными в приложении носителями требуется разрешение Calls. Акцессмедиа. ALL с одним из разрешений, перечисленных в предыдущей таблице.
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -40,19 +40,19 @@ POST /applications/{id}/calls
 |:--------------|:--------------------------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [вызова](../resources/call.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [Call](../resources/call.md) в формате JSON.
 
-> **Примечание:** Свойства помечены как `Server generated` игнорируются при обработке `POST` на `app/calls`.
+> **Примечание:** Свойства, отмеченные как `Server generated` , игнорируются при обработке. `POST` `app/calls`
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [call](../resources/call.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [Call](../resources/call.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>Создание одноранговые звонок по протоколу VOIP с помощью службы, размещенной мультимедиа
+### <a name="create-peer-to-peer-voip-call-with-service-hosted-media"></a>Создание однорангового вызова VOIP с размещенными в службе носителями
 
-> **Примечание:** Этот вызов необходимо иметь права Calls.Initiate.All.
+> **Примечание:** Для этого вызова требуется разрешение Calls. initiate. ALL.
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -105,7 +105,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -160,7 +160,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---establishing"></a>Уведомления - Установка
+##### <a name="notification---establishing"></a>Установка уведомления
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -188,7 +188,7 @@ Content-Type: application/json
   ]
 }
 ```
-##### <a name="notification---established"></a>Уведомления - соединения
+##### <a name="notification---established"></a>Установленное уведомление
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -217,9 +217,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>Создание одноранговые звонок по протоколу VOIP с приложение, размещенное мультимедиа
+### <a name="create-peer-to-peer-voip-call-with-application-hosted-media"></a>Создание однорангового вызова VOIP с размещенными в приложении носителями
 
-> Примечание: Требуется разрешение Calls.Initiate.All и Calls.AccessMedia.All.
+> Note: требуются вызовы. initiate. ALL и Calls. Акцессмедиа. ALL.
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -268,9 +268,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="create-group-call-with-service-hosted-media"></a>Создание группы вызова с помощью службы, размещенной мультимедиа
+### <a name="create-group-call-with-service-hosted-media"></a>Создание группового звонка с размещенными у службы носителями
 
-> **Примечание:** В этом примере должно разрешения Calls.InitiateGroupCalls.All и Calls.AccessMedia.All.
+> **Примечание:** В этом примере требуются разрешения Calls. Инитиатеграупкаллс. ALL и Calls. Акцессмедиа. ALL.
 
 ##### <a name="request"></a>Запрос
 
@@ -334,9 +334,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-private-meeting-with-service-hosted-media"></a>Закрытый присоединиться к собранию с помощью службы, размещенной мультимедиа
+### <a name="join-private-meeting-with-service-hosted-media"></a>ПриСоединение к частному собранию с размещенными на службы носителями
 
-> **Примечание:** В этом примере требуется разрешение Calls.JoinGroupCalls.All.
+> **Примечание:** В этом примере требуется разрешение Calls. Жоинграупкаллс. ALL.
 
 ##### <a name="request"></a>Запрос
 
@@ -390,9 +390,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-with-service-hosted-media"></a>Присоединение к собранию канала с помощью службы, размещенной мультимедиа
+### <a name="join-channel-meeting-with-service-hosted-media"></a>ПриСоединение к собранию канала с размещенными в службах носителями
 
-> **Примечание:** В этом примере требуется разрешение Calls.JoinGroupCalls.All.
+> **Примечание:** В этом примере требуется разрешение Calls. Жоинграупкаллс. ALL.
 
 ##### <a name="request"></a>Запрос
 
@@ -447,9 +447,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>Присоединение к собранию канала в качестве гостя с мультимедиа службы, размещенной
+### <a name="join-channel-meeting-as-a-guest-with-service-hosted-media"></a>ПриСоединение к собранию канала в качестве гостя с размещенными в службах носителями
 
-> **Примечание:** В этом примере требуется разрешение Calls.JoinGroupCallsAsGuest.All.
+> **Примечание:** В этом примере требуется разрешение Calls. Жоинграупкаллсасгуест. ALL.
 
 ##### <a name="request"></a>Запрос
 

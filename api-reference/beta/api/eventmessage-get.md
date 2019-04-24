@@ -1,32 +1,32 @@
 ---
 title: Получение объекта eventMessage
-description: Разверните узел "параметр на **события**
+description: развернуть "параметр для **события**
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: ffa2524939e5866bc74d255606a7a28297d691d2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521770"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464002"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств и связей объекта [eventMessage](../resources/eventmessage.md). Применение `$expand` параметр на свойство навигации **события** для получения связанного [события](../resources/event.md) в календаре участника.
+Получение свойств и связей объекта [eventMessage](../resources/eventmessage.md). Примените `$expand` параметр в свойстве навигации **события** , чтобы получить связанное [событие](../resources/event.md) в календаре участника.
 
-### <a name="get-the-event-message-body-in-html-or-text-format"></a>Получение событий текст сообщения в формате HTML или текст
+### <a name="get-the-event-message-body-in-html-or-text-format"></a>Получение текста сообщения о событии в формате HTML или текстовом формате
 
-Текст сообщений событий может быть в формате HTML или текст.
+Тексты сообщений о событиях могут быть в формате HTML или текстовом формате.
 
-Можно использовать `Prefer: outlook.body-content-type` укажите нужный формат, заголовок, возвращаемых в свойствах **uniqueBody** и **основной текст** в `GET` запроса:
+`Prefer: outlook.body-content-type` Вы можете использовать заголовок, чтобы указать нужный формат, возвращаемый в свойствах **Body** и **uniqueBody** в `GET` запросе:
 
-- Укажите `Prefer: outlook.body-content-type="text"` для получения событий текст сообщения, возвращаемые в текстовом формате.
-- Укажите `Prefer: outlook.body-content-type="html"`, или просто пропустить заголовка для возврата события текст сообщения в формате HTML.
+- Укажите `Prefer: outlook.body-content-type="text"` , чтобы получить текст сообщения о событии, возвращенный в текстовом формате.
+- Укажите `Prefer: outlook.body-content-type="html"`или просто пропустите заголовок, чтобы вернуть текст сообщения события в формате HTML.
 
-При указании любого из заголовка ответа будет включать соответствующий `Preference-Applied` заголовок подтверждения:
+Если указан любой из этих заголовков, в ответ будет `Preference-Applied` включен соответствующий заголовок в качестве подтверждения:
 
 - Чтобы получить результат выполнения запроса в текстовом формате: `Preference-Applied: outlook.body-content-type="text"`
 - Чтобы получить результат выполнения запроса в формате HTML: `Preference-Applied: outlook.body-content-type="html"`
@@ -57,7 +57,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -73,7 +73,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_lAAA=')
 ```
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -188,7 +188,7 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/beta/me/messages('AAMkADYAAAImV_jAAA=')?$expand=microsoft.graph.eventMessage/event
 ```
-##### <a name="response-2"></a>Отклик 2
+##### <a name="response-2"></a>Ответ 2
 Ниже приведен пример отклика. В отклике возвращаются свойства связанного события.
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {

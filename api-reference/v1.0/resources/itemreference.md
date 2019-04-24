@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 ms.openlocfilehash: 5c60ee4a0ac8538d71d37403e6f790e32d6a74cf
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585225"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
@@ -17,7 +17,7 @@ ms.locfileid: "30480392"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
@@ -44,9 +44,9 @@ ms.locfileid: "30480392"
 | driveId       | Строка            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
 | driveType     | String            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
 | id            | String            | Уникальный идентификатор элемента на диске. Только для чтения.
-| name          | Строка            | Имя элемента, на который направлена ссылка. Только для чтения.
+| name          | String            | Имя элемента, на который направлена ссылка. Только для чтения.
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
-| shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
+| shareId       | Строка            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 
 [drive]: ../resources/drive.md

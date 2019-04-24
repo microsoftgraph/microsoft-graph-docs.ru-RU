@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 036837c0de2b7e1415c5aec1daea9986373d47d1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776327"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463462"
 ---
 # <a name="windowsdevicetype-enum-type"></a>тип перечисления не к windowsdevicetype
 
@@ -22,7 +22,7 @@ ms.locfileid: "31776327"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Флаги не заданы.|
+|Нет|нуль|Флаги не заданы.|
 |системной|1,1|Поддерживается ли тип устройства Windows для наСтольных ПК.|
 |связь|2|Поддерживается ли тип мобильного устройства Windows.|
 |holographic|SP4|Поддерживается ли тип устройства с Windows Holographic.|

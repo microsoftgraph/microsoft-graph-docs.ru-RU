@@ -1,21 +1,21 @@
 ---
 title: Список контактов
-description: Получение всех контактов в почтовом ящике пользователь выполнил вход (.../me/contacts) или из указанной папки "Контакты".
+description: Получение всех контактов в почтовом ящике вошедшего пользователя (. ../ме/контактс) или из указанной папки контактов.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b3e5ee2ad13e454c0ab118b1a5b14509c9b33fbd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455704"
 ---
 # <a name="list-contacts"></a>Список контактов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение всех контактов в почтовом ящике пользователь выполнил вход (.../me/contacts) или из указанной папки "Контакты".
+Получение всех контактов в почтовом ящике вошедшего пользователя (. ../ме/контактс) или из указанной папки контактов.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,7 +43,7 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -58,9 +58,8 @@ GET /users/{id | userPrincipalName}/contactFolders/{id}/contacts
 ```http
 GET https://graph.microsoft.com/beta/me/contactFolders/{id}/contacts
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

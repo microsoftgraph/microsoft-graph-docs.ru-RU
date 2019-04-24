@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e0978367465fde92f9874e338a0de84da2a20403
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31770937"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32467353"
 ---
 # <a name="bulkmanageddeviceactionresult-resource-type"></a>Тип ресурса Булкманажеддевицеактионресулт
 
@@ -22,10 +22,10 @@ ms.locfileid: "31770937"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Сукцессфулдевицеидс|Коллекция String|Успешное выполнение устройств|
-|Фаиледдевицеидс|Коллекция String|Неисправные устройства|
-|Нотфаунддевицеидс|Коллекция String|Устройства не найдены|
-|Нотсуппортеддевицеидс|Коллекция String|Неподдерживаемые устройства|
+|Сукцессфулдевицеидс|Коллекция строк|Успешное выполнение устройств|
+|Фаиледдевицеидс|Коллекция строк|Неисправные устройства|
+|Нотфаунддевицеидс|Коллекция строк|Устройства не найдены|
+|Нотсуппортеддевицеидс|Коллекция строк|Неподдерживаемые устройства|
 
 ## <a name="relationships"></a>Отношения
 Нет

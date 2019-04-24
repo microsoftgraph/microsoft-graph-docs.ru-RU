@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса teamsAppInstallation
-description: 'TeamsApp, установленные в группе. '
+title: Тип ресурса Теамсаппинсталлатион
+description: 'TeamsApp, установленный в команде. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 153b131cd24709995d7215b1cf568a8565f42a80
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: c98f1b927c319eb1d81573fd9dc43e1baad86a39
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929482"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462356"
 ---
-# <a name="teamsappinstallation-resource-type"></a>Тип ресурса teamsAppInstallation
+# <a name="teamsappinstallation-resource-type"></a>Тип ресурса Теамсаппинсталлатион
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-[TeamsApp](teamsapp.md) установлен в [группы](team.md). Любой программы-роботы, являющихся частью приложения становится частью любой группы добавляется приложение.
+[TeamsApp](teamsapp.md) , установленный в [команде](team.md). Все боты, которые входят в состав приложения, станут частью любой команды, в которую добавляется приложение.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Список приложений, установленные в группе.|
-|[Добавить приложение](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Добавляет (установить) приложения в группу.|
-|[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет (удаление) приложения из группы.|
-|[Обновление приложения](../api/teamsappinstallation-delete.md) | Нет | Обновление до последней версии приложения.|
+|[Список приложений](../api/teamsappinstallation-list.md) | [teamsAppInstallation](teamsapp.md) | Список приложений, установленных в команде.|
+|[Добавление приложения](../api/teamsappinstallation-add.md) | [teamsAppInstallation](teamsapp.md) | Добавляет (устанавливает) приложение в команду.|
+|[Удаление приложения](../api/teamsappinstallation-delete.md) | Нет | Удаляет приложение из команды.|
+|[Обновление приложения](../api/teamsappinstallation-upgrade.md) | Нет | Обновление до последней версии приложения.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | строка   | Уникальный идентификатор (не appid команды). |
+| id                  | строка   | Уникальный идентификатор (а не идентификаторы Teams). |
 
 ## <a name="relationships"></a>Связи
 
-| Связь   | Тип    | Описание |
+| Отношение   | Тип    | Описание |
 |:---------------|:--------|:----------|
-|teamsApp|[teamsApp](teamsapp.md)| Приложения, которая устанавливается. |
-|teamsAppDefinition|[teamsAppDefinition](teamsapp.md)| Подробные сведения о данной версии приложения. |
+|teamsApp|[teamsApp](teamsapp.md)| Установленное приложение. |
+|Теамсаппдефинитион|[Теамсаппдефинитион](teamsapp.md)| Сведения о данной версии приложения. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -56,17 +56,22 @@ ms.locfileid: "27929482"
 # <a name="see-also"></a>См. также
 
 - [teamsApp](teamsapp.md)
-- [teamsAppDefinition](teamsappdefinition.md)
+- [Теамсаппдефинитион](teamsappdefinition.md)
 - [teamsTab](../resources/teamstab.md)
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "teamsApp resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsappinstallation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->
 

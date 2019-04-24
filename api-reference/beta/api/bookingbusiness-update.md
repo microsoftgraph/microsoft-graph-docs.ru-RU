@@ -1,27 +1,27 @@
 ---
-title: Обновление bookingbusiness
-description: Обновление свойства объекта bookingBusiness.
+title: Обновление букингбусинесс
+description: Обновление свойств объекта Букингбусинесс.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: dba24dafef030ae53fc83fb06d1cc7b99ed71e81
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528804"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461628"
 ---
-# <a name="update-bookingbusiness"></a>Обновление bookingbusiness
+# <a name="update-bookingbusiness"></a>Обновление букингбусинесс
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойства объекта [bookingBusiness](../resources/bookingbusiness.md) .
+Обновление свойств объекта [букингбусинесс](../resources/bookingbusiness.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All Bookings.Manage.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Резервирования. ReadWrite. ALL, Books. Manage. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -33,28 +33,28 @@ PATCH /bookingBusinesses/<id>
 ## <a name="optional-request-headers"></a>Необязательные заголовки запросов
 | Имя       | Описание|
 |:-----------|:-----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](../resources/physicaladdress.md)|Почтовый адрес организации.|
-|businessHours|[bookingWorkHours](../resources/bookingworkhours.md) коллекции|Часы работы для предприятий.|
-|businessType|String|Тип бизнеса.|
-|defaultCurrencyIso|String|Код для валюты, предприятию работает в Microsoft резервирования.|
-|displayName|Строка|Имя для бизнеса, связанный с клиентами.|
+|address|[physicalAddress](../resources/physicaladdress.md)|Адрес в почтовом ящике организации.|
+|businessHours|Коллекция [букингворкхаурс](../resources/bookingworkhours.md)|Количество часов работы для бизнеса.|
+|Бусинесстипе|String|Тип бизнеса.|
+|Дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
+|displayName|String|Название организации, которая взаимодействует с клиентами.|
 |email|String|Адрес электронной почты для бизнеса.|
 |phone|String|Номер телефона для бизнеса.|
-|schedulingPolicy|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создать резервирования для бизнеса.|
-|websiteUrl|String|URL-адрес веб-сайта бизнеса.|
+|Счедулингполици|[bookingSchedulingPolicy](../resources/bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
+|Вебситеурл|String|URL-адрес веб-сайта компании.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
-В следующем примере обновляются рабочий адрес электронной почты и планирования политики, чтобы изменить промежуток времени резервирования по умолчанию business часа и переход резервирования до 30 дней.
+В следующем примере показано, как обновить адрес электронной почты и политику планирования, чтобы изменить период резервирования по умолчанию для бизнеса на час, а затем выполнить резервное резервирование в течение 30 дней.
 <!-- {
   "blockType": "request",
   "name": "update_bookingbusiness"
@@ -74,7 +74,7 @@ Content-type: application/json
   }
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

@@ -5,20 +5,20 @@ localization_priority: Normal
 author: simonhult
 ms.prod: insights
 ms.openlocfilehash: 270fa800242ae7a25ed0f5959a97b6a70f7cedd3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917274"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462461"
 ---
 # <a name="persontype-resource-type"></a>тип ресурса personType
 
 Представляет тип пользователя.
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса operationError
-description: Описание ошибки в teamsAsyncOperation.
+title: Тип ресурса Оператионеррор
+description: Описание ошибок в Теамсасинкоператион.
 localization_priority: Normal
 ms.openlocfilehash: 22590d7d955cf01385292d2796ad960b1c0ced41
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27824586"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462608"
 ---
-# <a name="operationerror-resource-type"></a>Тип ресурса operationError
+# <a name="operationerror-resource-type"></a>Тип ресурса Оператионеррор
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).
 
-Описание ошибки в [teamsAsyncOperation](teamsasyncoperation.md).
-
-## <a name="operationerror-properties"></a>operationError свойства
+## <a name="operationerror-properties"></a>Свойства Оператионеррор
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|code|String (только для чтения)|Код ошибки операции.|
-|message|String (только для чтения)|Сообщение об ошибке операции.|
+|code|string (только для чтения)|Код ошибки операции.|
+|message|string (только для чтения)|Сообщение об ошибке операции.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,10 +39,15 @@ ms.locfileid: "27824586"
 
 <!-- uuid: 069fadaa-52db-4ced-85d5-74f7caa2c66f
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "operation error resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/operationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

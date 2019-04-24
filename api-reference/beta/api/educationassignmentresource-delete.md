@@ -1,28 +1,28 @@
 ---
-title: Удаление educationAssignmentResource
+title: Удаление Едукатионассигнментресаурце
 description: .
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0a6ac6f4cddde9d80e48080b0f54b2610e84782c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513041"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457923"
 ---
-# <a name="delete-educationassignmentresource"></a>Удаление educationAssignmentResource
+# <a name="delete-educationassignmentresource"></a>Удаление Едукатионассигнментресаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите ресурс из назначения. Учителя только в классе можно удалить ресурс. После публикации назначения студентов учителя нельзя удалить ресурсы, которые помечены как «distributeToStudents».
+Удаление ресурса из назначения. Только преподаватели в классе могут удалить ресурс. После публикации назначения для учащихся преподаватели не могут удалять ресурсы, помеченные как "Дистрибутетостудентс".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
 |Для приложений | Не поддерживается. | 
 
@@ -38,10 +38,10 @@ DELETE /educationClasses/assignments/{id}/resources/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -54,7 +54,7 @@ DELETE /educationClasses/assignments/{id}/resources/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/resources/22002
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 

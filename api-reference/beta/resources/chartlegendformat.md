@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса ChartLegendFormat
-description: Инкапсулирует свойства формата для легенды диаграммы.
+description: Инкапсулирует свойства формата легенды диаграммы.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 8a61d92ada713da1533d6c25e3f8acbc30969d33
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460963"
 ---
 # <a name="chartlegendformat-resource-type"></a>Тип ресурса ChartLegendFormat
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Инкапсулирует свойства формата для легенды диаграммы.
+Инкапсулирует свойства формата легенды диаграммы.
 
 
 ## <a name="methods"></a>Методы
@@ -25,7 +25,7 @@ ms.locfileid: "29640079"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
 |шрифт|[ChartFont](chartfont.md)|Представляет атрибуты шрифта (название, размер, цвет и т. д.) легенды диаграммы. Только для чтения.|

@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: a26edfd8fe3296f92c7f62b40eea7d3be35722a5
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30801037"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457931"
 ---
 # <a name="get-educationcategory"></a>Получение Едукатионкатегори
 
@@ -41,7 +41,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [едукатионкатегори](../resources/educationcategory.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -53,7 +53,7 @@ GET /education/classes/{id}/assignmentCategories/{id}
 ```http
 GET https://graph.microsoft.com/beta/education/classes/<id>/assignmentCategories/<id>
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

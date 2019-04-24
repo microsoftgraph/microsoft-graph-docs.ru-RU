@@ -1,28 +1,28 @@
 ---
-title: 'Вызовите: перенаправление'
-description: Перенаправление входящего звонка.
+title: 'вызов: redirect'
+description: Перенаправление входящего вызова.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6a926aa082cc35896d11ec4124091b0d2c838c0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511991"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461281"
 ---
-# <a name="call-redirect"></a>Вызовите: перенаправление
+# <a name="call-redirect"></a>вызов: redirect
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перенаправление входящего звонка.
+Перенаправление входящего вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)         |
 | :-------------- | :-------------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция                |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                |
 | Для приложений     | Calls.Initiate.All                                  |
 
@@ -43,18 +43,18 @@ POST /applications/{id}/calls/{id}/redirect
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|Targets|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции|Участники целевой операции перенаправления.|
-|targetDisposition|String|Возможное значение — это:`default`|
+|targets|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)|Целевые участники операции перенаправления.|
+|Таржетдиспоситион|String|Возможные значения:`default`|
 |timeout|Int32|Время ожидания в секундах для операции перенаправления.|
-|maskCallee|Логическое|Указывает, следует ли скрытие вызываемого абонента.|
-|maskCaller|Логическое|Указывает, следует ли скрытие вызывающего абонента.|
+|Масккалли|Логический|Указывает, следует ли маскировать вызываемого вызываемого абонента.|
+|Масккаллер|Логический|Указывает, следует ли маскировать вызывающий абонент.|
 
-## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код ответа
+## <a name="response"></a>Отклик
+Возвращает `202 Accepted` код отклика
 
 ## <a name="examples"></a>Примеры
 
-### <a name="redirect-a-call"></a>Перенаправление звонка
+### <a name="redirect-a-call"></a>ПереНаправление вызова
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -105,7 +105,7 @@ HTTP/1.1 202 Accepted
 
 ### <a name="forward-a-call"></a>Переадресация звонка
 
-##### <a name="notification---incoming"></a>Уведомления - входящие
+##### <a name="notification---incoming"></a>Уведомление — входящий
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -158,7 +158,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ```http
 POST https://graph.microsoft.com/beta/app/calls/57DAB8B1894C409AB240BD8BEAE78896/redirect
@@ -191,7 +191,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-##### <a name="notification---redirecting"></a>Уведомления — перенаправление
+##### <a name="notification---redirecting"></a>Перенаправление уведомлений
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -220,7 +220,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated"></a>Уведомления - завершен
+##### <a name="notification---terminated"></a>Уведомление — прервано
 
 ```http
 POST https://bot.contoso.com/api/calls

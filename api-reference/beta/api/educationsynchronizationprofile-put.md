@@ -1,21 +1,21 @@
 ---
-title: Обновление educationSynchronizationProfile
-description: Обновляет свойства существующего профиля синхронизации данных school в клиентов.
+title: Обновление Едукатионсинчронизатионпрофиле
+description: Обновление свойств существующего профиля синхронизации данных School в клиенте.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 668aad65abe2c9b3d4609400118f9341748210f1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510577"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464721"
 ---
-# <a name="update-an-educationsynchronizationprofile"></a>Обновление educationSynchronizationProfile
+# <a name="update-an-educationsynchronizationprofile"></a>Обновление Едукатионсинчронизатионпрофиле
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств существующих данных school [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.
+Обновление свойств существующего [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "29510577"
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,10 +39,10 @@ PUT /synchronizationProfiles
 | Content-Type | string | application/json. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление объекта [synchronizationProfile](../resources/educationsynchronizationprofile.md) с JSON.
+В тексте запроса добавьте представление объекта [синчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в формате JSON.
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `202, Accepted` код ответа и объект [synchronizationProfile](../resources/educationsynchronizationprofile.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `202, Accepted` код отклика и объект [синчронизатионпрофиле](../resources/educationsynchronizationprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -98,7 +98,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

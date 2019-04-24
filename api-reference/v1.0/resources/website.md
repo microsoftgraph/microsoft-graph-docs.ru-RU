@@ -1,15 +1,15 @@
 ---
-title: тип ресурса website
+title: Тип ресурса веб-сайта
 description: Представляет веб-сайт.
 localization_priority: Normal
 ms.openlocfilehash: 1ffbee8a67527aac97bb4f60b7f8b1637ba1ebe5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27851368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457027"
 ---
-# <a name="website-resource-type"></a>тип ресурса website
+# <a name="website-resource-type"></a>Тип ресурса веб-сайта
 
 Представляет веб-сайт.
 
@@ -17,11 +17,11 @@ ms.locfileid: "27851368"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|websiteType| Возможные значения: `other`, `home`, `work`, `blog`, `profile`.|
+|type|websiteType| Допустимые значения: `other`, `home`, `work`, `blog`, `profile`.|
 |address|string|URL-адрес веб-сайта.|
-|displayName|строка|Отображаемое имя веб-сайта.|
+|displayName|string|Отображаемое имя веб-сайта.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

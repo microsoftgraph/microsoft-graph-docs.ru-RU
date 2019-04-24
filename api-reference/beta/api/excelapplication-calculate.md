@@ -1,17 +1,17 @@
 ---
-title: 'Приложение: вычисление'
+title: 'Приложение: расчет'
 description: Пересчитывает данные во всех открытых в текущий момент книгах Excel.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: f16c858f7e8c9d85dbe8252bde0a791bc325514c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514504"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464018"
 ---
-# <a name="application-calculate"></a>Приложение: вычисление
+# <a name="application-calculate"></a>Приложение: расчет
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -41,7 +41,7 @@ POST /workbook/application/calculate
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|calculationType|string|Указывает тип вычислений для использования.  Возможные значения: `Recalculate`, `Full`, `FullRebuild`.|
+|Калкулатионтипе|string|Определяет тип расчета, который нужно использовать.  Возможные значения: `Recalculate`, `Full`, `FullRebuild`.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +65,7 @@ Content-length: 48
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

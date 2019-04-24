@@ -1,28 +1,28 @@
 ---
 title: 'educationSubmission: отзыв'
-description: 'Указывает, что студента хочет вернуть отправку. Это действие можно выполнить только с студента. '
+description: 'Указывает, что студенту требуется выполнить отправку. Это действие можно выполнить только студентом. '
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 0be94d2888223ca31e37b71e490c4a9fdc28b7d0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520419"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457632"
 ---
 # <a name="educationsubmission-recall"></a>educationSubmission: отзыв
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает, что студента хочет вернуть отправку. Это действие можно выполнить только с студента. Оно будет изменен состояние подачи «отправленные» вернуться к «рабочий».
+Указывает, что студенту требуется выполнить отправку. Это действие можно выполнить только студентом. Он изменит состояние отправки с "Отправлено" обратно на "работает".
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  EduAssignments.ReadWriteBasic EduAssignments.ReadWrite  |
+|Делегированные (рабочая или учебная учетная запись) |  EduAssignments. Реадвритебасик, EduAssignments. ReadWrite  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
 |Для приложений |Не поддерживается.  | 
 
@@ -39,7 +39,7 @@ POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 
 ## <a name="request-body"></a>Текст запроса
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -54,7 +54,7 @@ POST /education/classes/<id>/assignments/{id}/submissions/{id}/recall
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/recall
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 <!-- {

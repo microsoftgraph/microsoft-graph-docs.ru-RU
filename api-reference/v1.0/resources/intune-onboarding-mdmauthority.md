@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 965c53a5f751dbf7fd1403ad6a2cb0fca44538b6
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585212"
 ---
 # <a name="mdmauthority-enum-type"></a>тип перечисления Мдмаусорити
 
@@ -21,7 +21,7 @@ ms.locfileid: "30258473"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Неизвестно|
-|корпоративного|1,1|Intune|
+|корпоративного|1,1|Intune.|
 |SCCM|2|SCCM|
 |Office365|4|Office365|
 

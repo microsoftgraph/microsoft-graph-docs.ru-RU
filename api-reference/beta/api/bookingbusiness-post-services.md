@@ -1,27 +1,27 @@
 ---
-title: Создание bookingService
-description: Создание нового bookingService для указанного bookingbusiness.
+title: Создание Букингсервице
+description: Создание нового Букингсервице для указанного букингбусинесс.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 50501ac1dd79b41b9e970f870964fffaace2f8da
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516114"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32461778"
 ---
-# <a name="create-bookingservice"></a>Создание bookingService
+# <a name="create-bookingservice"></a>Создание Букингсервице
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [bookingService](../resources/bookingservice.md) для указанного [bookingbusiness](../resources/bookingbusiness.md).
+Создание нового [букингсервице](../resources/bookingservice.md) для указанного [букингбусинесс](../resources/bookingbusiness.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.ReadWrite.All Bookings.Manage.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Резервирования. ReadWrite. ALL, Books. Manage. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -34,14 +34,14 @@ POST /bookingBusinesses/{id}/services
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [bookingService](../resources/bookingservice.md) .
+В тексте запроса добавьте представление объекта [Букингсервице](../resources/bookingservice.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `201, Created` объект [bookingService](../resources/bookingservice.md) и кода ответа в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод `201, Created` возвращает код отклика и объект [букингсервице](../resources/bookingservice.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -114,8 +114,8 @@ Content-type: application/json
     ]
 }
 ```
-В тексте запроса укажите представление JSON объекта [bookingService](../resources/bookingservice.md) .
-##### <a name="response"></a>Ответ
+В тексте запроса добавьте представление объекта [Букингсервице](../resources/bookingservice.md) в формате JSON.
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

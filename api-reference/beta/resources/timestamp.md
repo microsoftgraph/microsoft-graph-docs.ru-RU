@@ -1,19 +1,19 @@
 ---
-title: Тип ресурса метки времени
-description: Дата и время сведения о времени.
+title: Тип ресурса timeStamp
+description: Сведения о дате и времени для определенного момента времени.
 localization_priority: Normal
 ms.openlocfilehash: 79faa8f74fbaf64eb6756183ecc309c6522873e6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529364"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463574"
 ---
-# <a name="timestamp-resource-type"></a>Тип ресурса метки времени
+# <a name="timestamp-resource-type"></a>Тип ресурса timeStamp
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Дата и время сведения о времени.
+Сведения о дате и времени для определенного момента времени.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,9 +38,9 @@ ms.locfileid: "29529364"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|дата|Date|Часть date метка времени.|
-|time|TimeOfDay|Часть времени метка времени.|
-|timeZone|String|Часовой пояс часть метки времени — это один из 24 продольными областей в мире.|
+|дата|Date|Часть даты метки времени.|
+|time|TimeOfDay|Часть времени метки времени.|
+|timeZone|String|Часть временной метки, представляющая часовой пояс (одна из 24 лонгитудинал областей мира).|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

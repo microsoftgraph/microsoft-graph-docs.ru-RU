@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса licenseAssignmentState
-description: Свойство **licenseAssignmentStates** удостоверение пользователя — это семейство объектов **licenseAssignmentState** . Его предоставляет подробные сведения о назначениях лицензии для пользователя.
+title: Тип ресурса Лиценсеассигнментстате
+description: Свойство **лиценсеассигнментстатес** объекта User — коллекция объектов **лиценсеассигнментстате** . Он предоставляет пользователю сведения о назначении лицензий пользователю.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 0822c975ab81badf5334881bb460532161858010
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29649455"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32585148"
 ---
-# <a name="licenseassignmentstate-resource-type"></a>Тип ресурса licenseAssignmentState
+# <a name="licenseassignmentstate-resource-type"></a>Тип ресурса Лиценсеассигнментстате
 
 
-Свойство **licenseAssignmentStates** удостоверение [пользователя](user.md) — это семейство объектов **licenseAssignmentState** . Его предоставляет подробные сведения о назначениях лицензии для пользователя. Эти сведения включают сведения о таких как:  
+Свойство **лиценсеассигнментстатес** объекта [User](user.md) — коллекция объектов **лиценсеассигнментстате** . Он предоставляет пользователю сведения о назначении лицензий пользователю. Сведения включают следующие сведения:  
 
  - Какие планы отключены для пользователя
- - Ли назначенных пользователю напрямую или наследуется из группы лицензии
+ - Указывает, была ли лицензия назначена пользователю напрямую или унаследована от группы.
  - Текущее состояние назначения
- - Дополнительные сведения об ошибке, если состояние назначения — ошибка 
+ - Сведения об ошибке, если состояние назначения — ошибка 
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedByGroup|string|Идентификатор группы, предназначенного для назначения данной лицензии. Если назначения лицензий назначенных прямым, это поле будет Null. Только для чтения.|
-|disabledPlans|Collection(String)|Планы обслуживания, которые отключены в этой назначения. Только для чтения.|
-|error|String|Сбой назначения лицензий. Если лицензия назначена успешно, в этом поле будет Null. Только для чтения. Возможные значения: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation`, `UniquenessViolation`, и `Others`. Дополнительные сведения о том, как выявлять и исправлять назначение лицензий ошибки можно [здесь](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
+|Ассигнедбиграуп|строка|Идентификатор группы, которая назначает эту лицензию. Если назначение относится к прямой назначенной лицензии, это поле будет иметь значение null. Только для чтения.|
+|Дисабледпланс|Collection(String)|Планы обслуживания, которые отключены в этом назначении. Только для чтения.|
+|error|String|Ошибка при назначении лицензии. Если лицензия назначена успешно, это поле будет иметь значение null. Только для чтения. Возможные значения: `CountViolation`, `MutuallyExclusiveViolation`, `DependencyViolation`, `ProhibitedInUsageLocationViolation` `UniquenessViolation`, и `Others`. Дополнительные сведения о том, как определять и устранять ошибки назначения лицензий, можно найти [здесь](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-resolve-problems).|
 |skuId|String|Уникальный идентификатор SKU. Только для чтения.|
-|state|String|Указывает текущее состояние данного назначения. Только для чтения. Возможные значения: активный, ActiveWithError, отключено и ошибки.|
+|state|String|Указывает текущее состояние этого назначения. Только для чтения. Возможные значения: Active, Активевисеррор, Disabled и Error.|
 
 ## <a name="json-representation"></a>Представление JSON
 

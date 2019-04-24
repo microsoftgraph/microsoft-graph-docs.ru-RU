@@ -1,19 +1,19 @@
 ---
-title: onenoteEntitySchemaObjectModel ресурсов
-description: Это базовый тип для сущностей OneNote.
+title: ресурс Оненотинтитисчемаобжектмодел
+description: Это базовый тип для объектов OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 168359bbdaa659db461aa33af96e402a4a81783d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978713"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462594"
 ---
-# <a name="onenoteentityschemaobjectmodel-resource"></a>onenoteEntitySchemaObjectModel ресурсов
+# <a name="onenoteentityschemaobjectmodel-resource"></a>ресурс Оненотинтитисчемаобжектмодел
 
-Это базовый тип для сущностей OneNote.
+Это базовый тип для объектов OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 

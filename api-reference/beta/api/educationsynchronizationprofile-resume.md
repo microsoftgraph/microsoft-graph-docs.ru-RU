@@ -1,21 +1,21 @@
 ---
-title: Возобновление синхронизации на educationSynchronizationProfile
-description: Возобновление синхронизации в конкретных школа профиль синхронизации данных клиента.
+title: ВозОбновление синхронизации в Едукатионсинчронизатионпрофиле
+description: ВозОбновление синхронизации конкретного профиля синхронизации данных School в клиенте.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 50ffcb4ceab401a3041ecb69baa1de0409be94a4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513258"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32464854"
 ---
-# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>Возобновление синхронизации на educationSynchronizationProfile
+# <a name="resume-sync-on-an-educationsynchronizationprofile"></a>ВозОбновление синхронизации в Едукатионсинчронизатионпрофиле
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возобновление синхронизации данных конкретного школа [синхронизации профилей](../resources/educationsynchronizationprofile.md) в клиентов.
+ВозОбновление синхронизации конкретного [профиля синхронизации](../resources/educationsynchronizationprofile.md) данных School в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -23,7 +23,7 @@ ms.locfileid: "29513258"
 | Тип разрешения | Разрешения |
 |:-----------|:----------|
 | Делегированные (рабочая или учебная учетная запись) | EduAdministration.ReadWrite |
-|Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
+|Делегированная учетная запись (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -38,8 +38,8 @@ POST /synchronizationProfiles/{id}/resume
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
-## <a name="response"></a>Ответ
+Не указывайте текст запроса для этого метода.
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
 ## <a name="example"></a>Пример
@@ -53,9 +53,9 @@ POST /synchronizationProfiles/{id}/resume
 POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/resume
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Нет тело ответа отсутствует.
+Текст отклика отсутствует.
 
 <!-- {
   "blockType": "response",

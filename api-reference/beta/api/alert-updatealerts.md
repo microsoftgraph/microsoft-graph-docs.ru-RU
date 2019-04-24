@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 5be6374d70baaf4205d5fc1e431111844ce34313
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366996"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459317"
 ---
 # <a name="alert-updatealerts"></a>Предупреждение: Упдатеалертс
 
@@ -47,9 +47,9 @@ POST /security/alerts/updateAlerts
 
 | Параметр    | Тип        | Описание |
 |:-------------|:------------|:------------|
-|value|[](../resources/alert.md) коллекция Alerts| Коллекция оповещений, которые необходимо обновить. Каждая сущность должна иметь **идентификатор**, **вендоринформатион**и другие редактируемые свойства, которые необходимо обновить.|
+|значение|[](../resources/alert.md) коллекция Alerts| Коллекция оповещений, которые необходимо обновить. Каждая сущность должна иметь **идентификатор**, **вендоринформатион**и другие редактируемые свойства, которые необходимо обновить.|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `200, OK` возвращает код отклика и объект коллекции [Alerts](../resources/alert.md) в тексте отклика.
 
@@ -89,9 +89,9 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
