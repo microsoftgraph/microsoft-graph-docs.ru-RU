@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 55af41d002548a9920c22e6c492ac7ed3eaff54e
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366580"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458504"
 ---
 # <a name="update-paymentmethods"></a>Обновление Пайментмесодс
 Обновление свойств объекта метода оплаты для Dynamics 365 Business Central.
@@ -38,7 +38,7 @@ PATCH /financials/companies('{id}')/paymentMethods('{id}')
 |--------------|--------------------------|
 |Авторизация |Bearer {токен}. Обязательный. |
 |Content-Type  |application/json          |
-|If-Match      |Обязательно указывать. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайментмесодс**, **пайментмесодс** не будет обновлен. |
+|If-Match      |Обязательно. Если этот заголовок запроса включен, а предоставленный тег eTag не отвечает текущему тегу в **пайментмесодс**, **пайментмесодс** не будет обновлен. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.

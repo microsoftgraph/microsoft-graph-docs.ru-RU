@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса commsNotification
-description: Связь уведомлений базовый тип, который был опубликован серверами коммуникаций для уведомление об изменениях.
+title: Тип ресурса Коммснотификатион
+description: Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2372720976b5d06ffe49c00068625bdb92048674
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460676"
 ---
-# <a name="commsnotification-resource-type"></a>Тип ресурса commsNotification
+# <a name="commsnotification-resource-type"></a>Тип ресурса Коммснотификатион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Связь уведомлений базовый тип, который был опубликован серверами коммуникаций для уведомление об изменениях.
+Базовый тип уведомления о связи, который публикуется серверами Communications Server для уведомления об изменениях.
 
 ## <a name="properties"></a>Свойства
 | Свойство       | Тип    | Описание                                                |
 |:---------------|:--------|:-----------------------------------------------------------|
 | changeType     | String  | Возможные значения: `created`, `updated`, `deleted`.      |
-| resource       | String  | URI-идентификатор ресурса, который был изменен.                      |
+| resource       | String  | URI ресурса, который был изменен.                      |
 
-> **Примечание:** `resourceData` доступен в качестве дополнительных данных. Это объект или Collection(entity) в зависимости от изменений, упакованный в уведомления.
+> **Примечание:** `resourceData` доступна в виде дополнительных данных. Это сущность или коллекция (сущность) в зависимости от количества изменений, упакованных в уведомление.
 
 ## <a name="json-representation"></a>Представление JSON
 

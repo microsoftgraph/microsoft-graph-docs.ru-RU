@@ -1,19 +1,19 @@
 ---
-title: onenoteEntityHierarchyModel ресурсов
-description: Это базовый тип для сущностей OneNote.
+title: ресурс Оненотинтитихиерарчимодел
+description: Это базовый тип для объектов OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: a25e50f6929ae6b13bbe59839f035d2e4a31a6fb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27990098"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462622"
 ---
-# <a name="onenoteentityhierarchymodel-resource"></a>onenoteEntityHierarchyModel ресурсов
+# <a name="onenoteentityhierarchymodel-resource"></a>ресурс Оненотинтитихиерарчимодел
 
-Это базовый тип для сущностей OneNote.
+Это базовый тип для объектов OneNote.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -42,7 +42,7 @@ ms.locfileid: "27990098"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Имя записной книжки.|
+|displayName|String|Имя записной книжки.|
 |createdBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedBy|[identitySet](identityset.md)|Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения записной книжки. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`. Только для чтения.|

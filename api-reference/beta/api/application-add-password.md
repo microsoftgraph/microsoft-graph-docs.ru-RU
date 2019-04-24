@@ -1,21 +1,21 @@
 ---
-title: Добавление приложения пароль
-description: Добавляет в приложение надежный пароль.
+title: Добавление пароля приложения
+description: Добавляет надежный пароль для приложения.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 15189ee709b2b369d014f9854bcdbd4dc1b7e9be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526825"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459208"
 ---
-# <a name="add-application-password"></a>Добавление приложения пароль
+# <a name="add-application-password"></a>Добавление пароля приложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Добавляет в приложение надежный пароль.
+Добавляет надежный пароль для приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,11 +38,11 @@ POST /applications/{id}/addPassword
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект пароль и кода ответа в теле ответа. Создает надежный пароль, который возвращается с помощью Azure AD `secretText` свойство. Нет возможности для получения пароля в будущем.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект Password в тексте отклика. Azure AD создает надежный пароль, который возвращается с `secretText` помощью свойства. В будущем невозможно получить этот пароль.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -51,7 +51,7 @@ POST /applications/{id}/addPassword
 ```http
 POST https://graph.microsoft.com/beta/applications/{id}/addPassword
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 
 ```http

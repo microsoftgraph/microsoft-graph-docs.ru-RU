@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 453e8c03c40966aedeaf58a4f441f7c16500d9a0
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30801042"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457783"
 ---
 # <a name="create-educationcategory"></a>Создание Едукатионкатегори
 
@@ -42,7 +42,7 @@ POST /education/classes/{id}/assignmentCategories
 В тексте запроса добавьте представление объекта [Едукатионкатегори](../resources/educationcategory.md) в формате JSON.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [едукатионкатегори](../resources/educationcategory.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -63,7 +63,7 @@ Content-length: 33
 ```
 В тексте запроса добавьте представление объекта [Едукатионкатегори](../resources/educationcategory.md) в формате JSON.
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса plannerBucket
-description: ) для выполнения задач в плане в Office 365. Она содержится в plannerPlan и можно создать свою коллекцию plannerTasks.
+description: ) для задач в плане в Office 365. Он находится в plannerPlan и может иметь коллекцию перечисление plannertasks.
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: 8cfc25e5554b20d4f808c8929b53549f4c44d7a2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982836"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462300"
 ---
 # <a name="plannerbucket-resource-type"></a>Тип ресурса plannerBucket
 
-Ресурс **plannerBucket** представляет сегмент (или "специальный столбец") для задач плана в Office 365. Он содержится в объекте [plannerPlan](plannerplan.md) и может содержать коллекцию объектов [plannerTasks](plannertask.md).
+Ресурс **plannerBucket** представляет сегмент (или "настраиваемый столбец") для задач в плане в Office 365. Он находится в [plannerPlan](plannerplan.md) и может иметь коллекцию [перечисление plannertasks](plannertask.md).
 
 
 
@@ -21,26 +21,26 @@ ms.locfileid: "27982836"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md) |Чтение свойств и отношений объекта **plannerBucket**.|
-|[Перечисление объектов plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция объектов [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask**.|
-|[Создание](../api/planner-post-buckets.md) | [plannerBucket](plannerbucket.md)   | Создание объекта **plannerBucket**. |
-|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md)   |Обновление объекта **plannerBucket**. |
-|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket**. |
+|[Получение объекта plannerBucket](../api/plannerbucket-get.md) | [plannerBucket](plannerbucket.md); |Чтение свойств и связей объекта **plannerBucket** .|
+|[Перечисление plannerTasks](../api/plannerbucket-list-tasks.md) |Коллекция [plannerTask](plannertask.md)| Получение коллекции объектов **plannerTask** .|
+|[создание](../api/planner-post-buckets.md); | [plannerBucket](plannerbucket.md);   | Создание нового объекта **plannerBucket** . |
+|[Обновление](../api/plannerbucket-update.md) | [plannerBucket](plannerbucket.md);   |Обновление объекта **plannerBucket** . |
+|[Удаление](../api/plannerbucket-delete.md) | Нет |Удаление объекта **plannerBucket** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|Строка| Только для чтения. Идентификатор сегмента. Это 28 знаков без учета регистра. [Формат](planner-identifiers-disclaimer.md) проверяются на службу.|
-|name|Строка|Имя сегмента.|
-|orderHint|Строка|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
-|planId|Строка|Идентификатор плана, к которому относится сегмент.|
+|id|String| Только для чтения. Идентификатор сегмента. Содержит 28 знаков, учитывается регистр. [Проверка формата](planner-identifiers-disclaimer.md) проводится для службы.|
+|name|String|Имя сегмента.|
+|orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определяется, как описано [здесь](planner-order-hint-format.md).|
+|planId|String|ИДЕНТИФИКАТОР плана, к которому относится сегмент.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|tasks|Коллекция объектов [plannerTask](plannertask.md)| Только для чтения. Допускает значение null. Коллекция задач в сегменте.|
+|tasks|Коллекция [plannerTask](plannertask.md)| Только для чтения. Допускается значение null. Коллекция задач в сегменте.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

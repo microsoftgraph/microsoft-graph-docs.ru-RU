@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса serviceHostedMediaConfig
-description: Тип serviceHostedMediaConfig.
+title: Тип ресурса Сервицехостедмедиаконфиг
+description: Тип Сервицехостедмедиаконфиг.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2ab19f992dd7fac48844cd46a0600a0242517709
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642228"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463283"
 ---
-# <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса serviceHostedMediaConfig
+# <a name="servicehostedmediaconfig-resource-type"></a>Тип ресурса Сервицехостедмедиаконфиг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип serviceHostedMediaConfig.
+Тип Сервицехостедмедиаконфиг.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                    | Тип                                                        | Описание                                       |
 | :-------------------------- | :---------------------------------------------------------- | :-------------------------------------------------|
-| preFetchMedia               | [mediaInfo](mediainfo.md) коллекции                        | Список мультимедиа для предварительно выборки.                   |
-| removeFromDefaultAudioGroup | Boolean                                                     | Удалите собственный участника из группы по умолчанию звука. |
+| Префетчмедиа               | Коллекция [медиаинфо](mediainfo.md)                        | Список носителей для предварительной загрузки.                   |
+| Ремовефромдефаултаудиограуп | Логический                                                     | Удаление самостоятельного участника из группы "звук" по умолчанию. |
 
 ## <a name="json-representation"></a>Представление JSON
 

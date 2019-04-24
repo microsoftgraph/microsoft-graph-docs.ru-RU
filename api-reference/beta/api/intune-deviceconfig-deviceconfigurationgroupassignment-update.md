@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d803ac7a3f6525b0ea947b5739c1434100a4f8a0
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31785526"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32470253"
 ---
 # <a name="update-deviceconfigurationgroupassignment"></a>Обновление deviceConfigurationGroupAssignment
 
@@ -60,7 +60,7 @@ PATCH /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.g
 |:---|:---|:---|
 |id|String|Ключ объекта.|
 |Таржетграупид|String|Идентификатор группы AAD, на которую направляться конфигурация устройства.|
-|excludeGroup|Boolean|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
+|excludeGroup|Логический|Указывает, следует ли исключить эту группу. Значения по умолчанию, включаемые в группу|
 
 
 

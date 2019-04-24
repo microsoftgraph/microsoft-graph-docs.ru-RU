@@ -1,21 +1,21 @@
 ---
 title: Обновление объекта contactFolder
-description: Обновление свойств объекта contactfolder.
+description: Обновление свойств объекта contactFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 1d644e3f9f74a2ff34ad557f8dac97bc131f7f03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32455585"
 ---
 # <a name="update-contactfolder"></a>Обновление объекта contactFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта contactfolder.
+Обновление свойств объекта contactFolder.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя папки.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|string|Имя папки, если распознанный папки. В настоящее время `contacts` является единственным папку распознанный контакты.|
+|wellKnownName|строка|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
 
 ## <a name="response"></a>Отклик
 
@@ -66,9 +66,8 @@ Content-length: 84
   "displayName": "displayName-value"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

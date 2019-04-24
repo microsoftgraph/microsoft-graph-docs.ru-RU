@@ -1,21 +1,21 @@
 ---
 title: Получение члена
-description: Используйте этот интерфейс API для получения определенного члена (пользователя или группы) административное подразделение.
+description: Используйте этот API для получения определенного элемента (пользователя или группы) в административной единице.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 67067d0e465aab61449a42cd833f9e6ce07fcd12
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459633"
 ---
 # <a name="get-a-member"></a>Получение члена
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для получения определенного члена (пользователя или группы) административное подразделение.
+Используйте этот API для получения определенного элемента (пользователя или группы) в административной единице.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,11 +38,11 @@ GET /administrativeUnits/{id}/members/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [пользователя](../resources/user.md) или [группы](../resources/group.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [User](../resources/user.md) или [Group](../resources/group.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -52,8 +52,8 @@ GET /administrativeUnits/{id}/members/{id}
 GET https://graph.microsoft.com/beta/administrativeUnits/{id}/members/{id}
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример respone. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Отклик
+Ниже приведен пример респоне. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 200 OK

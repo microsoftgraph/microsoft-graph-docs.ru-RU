@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса операции
-description: Состояние выполнения длительной операции.
+title: Тип ресурса Operation
+description: Состояние длительной операции.
 localization_priority: Normal
 ms.openlocfilehash: 4f2e2c9a6fb9eb6d26a3511c637e79822919e2f5
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27884968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462678"
 ---
-# <a name="operation-resource-type"></a>Тип ресурса операции
+# <a name="operation-resource-type"></a>Тип ресурса Operation
 
-Состояние выполнения длительной операции.
+Состояние длительной операции.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -36,8 +36,8 @@ ms.locfileid: "27884968"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
-|status|operationStatus|Текущее состояние операции: `notStarted`, `running`, `completed`, `failed`. |
+|Ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
+|status|Оператионстатус|Текущее состояние операции: `notStarted`, `running`,, `completed``failed` |
 
 <!-- uuid: 13fa92b1-3b41-498b-aab1-f943464a124f
 2018-03-30 10:29:30 UTC -->

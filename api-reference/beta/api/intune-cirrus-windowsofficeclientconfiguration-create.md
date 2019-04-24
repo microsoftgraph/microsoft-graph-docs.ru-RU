@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: Intune
 ms.openlocfilehash: 5a8e11fcf9728a554c8938d3ccf2314bf5e1999c
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30164164"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32483455"
 ---
 # <a name="create-windowsofficeclientconfiguration"></a>Создание Виндовсоффицеклиентконфигуратион
 
@@ -40,8 +40,7 @@ POST /officeConfiguration/clientConfigurations
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,7 +50,7 @@ POST /officeConfiguration/clientConfigurations
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Идентификатор политики конфигурации клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
+|id|Строка|Идентификатор политики конфигурации клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |Усерпреференцепайлоад|Stream|Строка JSON параметров настройки в двоичном формате. Эти значения могут быть переопределены пользователем. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |Полиципайлоад|Stream|Строка JSON параметров политики в двоичном формате эти значения не могут быть изменены пользователем. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|
 |description|String|Администратор предоставил описание политики конфигурации клиента Office. НаСледуется от [officeClientConfiguration](../resources/intune-cirrus-officeclientconfiguration.md)|

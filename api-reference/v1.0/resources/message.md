@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 40bb849ba7dd62a3571ab5bf95e70eb6b9a27a85
-ms.sourcegitcommit: d91ca408bae7842ea4d1d94b49594fd82a32e0c9
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29745554"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463049"
 ---
 # <a name="message-resource-type"></a>Тип ресурса message
 
@@ -91,7 +91,7 @@ ms.locfileid: "29745554"
 
 
 ## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |attachments|Коллекция [attachment](attachment.md) |Вложения [fileAttachment](fileattachment.md) и [itemAttachment](itemattachment.md) для сообщения.|
 |extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для сообщения. Допускается значение null.|

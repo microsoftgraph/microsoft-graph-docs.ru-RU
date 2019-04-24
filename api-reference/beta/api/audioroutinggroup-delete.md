@@ -1,30 +1,30 @@
 ---
-title: Удаление звука группы маршрутизации
-description: Удаление указанного звука группы маршрутизации.
+title: Удаление группы маршрутизации звука
+description: Удаление указанной группы маршрутизации звука.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c0e5c0cd58c867f7c69a3ac5d4f99a11af223ee
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511445"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459355"
 ---
-# <a name="delete-audio-routing-group"></a>Удаление звука группы маршрутизации
+# <a name="delete-audio-routing-group"></a>Удаление группы маршрутизации звука
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление указанного [audioRoutingGroup](../resources/audioroutinggroup.md).
+Удаление указанного [аудиораутингграуп](../resources/audioroutinggroup.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Тип разрешения | Разрешения (в порядке повышения привилегий)  |
 | :-------------- | :------------------------------------------- |
-| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
+| Делегированные (рабочая или учебная учетная запись)     | Неподдерживаемая функция        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -39,7 +39,7 @@ DELETE /applications/{id}/calls/{id}/audioRoutingGroups/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.

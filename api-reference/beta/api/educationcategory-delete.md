@@ -5,11 +5,11 @@ author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 3c68f4a9950437ddcebc0cd40237bef07c597648
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30801034"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457917"
 ---
 # <a name="delete-educationcategory"></a>Удаление Едукатионкатегори
 
@@ -24,7 +24,7 @@ ms.locfileid: "30801034"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись)| EduAssignments. Реадвритебасик, EduAssignments. ReadWrite |
 |Делегированные (личная учетная запись Майкрософт) |   Не поддерживается. |
-|Приложение | Не поддерживается.  | 
+|Для приложений | Не поддерживается.  | 
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -57,7 +57,7 @@ DELETE /education/classes/<id>/assignmentCategories/<id>
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignmentCategories/19002
 ```
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 

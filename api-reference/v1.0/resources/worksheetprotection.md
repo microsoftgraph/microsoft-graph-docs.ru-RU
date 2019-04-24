@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: c8a719d1be9f21edf1bef82d2aa058b45bbf2df8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463616"
 ---
 # <a name="worksheetprotection-resource-type"></a>Тип ресурса WorksheetProtection
 
@@ -20,14 +20,14 @@ ms.locfileid: "27984236"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта WorksheetProtection](../api/worksheetprotection-get.md) | [WorkbookWorksheetProtection](worksheetprotection.md) |Чтение свойств и связей объекта worksheetProtection.|
+|[Получение объекта WorksheetProtection](../api/worksheetprotection-get.md) | [Воркбукворкшитпротектион](worksheetprotection.md) |Чтение свойств и связей объекта worksheetProtection.|
 |[Protect](../api/worksheetprotection-protect.md)|Нет|Защита листа. Выдает исключение, если лист защищен.|
 |[Unprotect](../api/worksheetprotection-unprotect.md)|Нет|Снятие защиты с листа|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|options|[WorkbookWorksheetProtectionOptions](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
+|options|[Воркбукворкшитпротектионоптионс](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 |protected|boolean|Указывает, защищен ли лист.  Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

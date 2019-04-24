@@ -1,29 +1,37 @@
 ---
-title: Тип перечисления teamsAsyncOperationType
-description: Типы teamsAsyncOperation. Участники будут добавляться здесь дополнительных async поддерживают операции.
+title: тип перечисления объекта teamsasyncoperationtype
+description: Типы Теамсасинкоператион. Элементы будут добавлены здесь, так как поддерживаются дополнительные асинхронные операции.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3866c41b74fc6748479099d43b268afa115dde67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27978685"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462237"
 ---
-# <a name="teamsasyncoperationtype-enum-type"></a>Тип перечисления teamsAsyncOperationType
+# <a name="teamsasyncoperationtype-enum-type"></a>тип перечисления объекта teamsasyncoperationtype
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Типы [teamsAsyncOperation](teamsasyncoperation.md). Участники будут добавляться здесь дополнительных async поддерживают операции.
+Типы [теамсасинкоператион](teamsasyncoperation.md). Элементы будут добавлены здесь, так как поддерживаются дополнительные асинхронные операции.
 
 ## <a name="members"></a>Элементы
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|Недопустимый|0|Недопустимое значение.|
-|cloneTeam|1|Операция следует скопировать группы.|
-|archiveTeam|2|Операции в архив группы.|
-|unarchiveTeam|3|Операция восстановление архивированных группы.|
-|createTeam|3|Операция создать группу «с нуля».|
+|Недопустимый|нуль|Недопустимое значение.|
+|Клонетеам|1,1|Операция клонирования команды.|
+|Арчиветеам|2|Операция архивации команды.|
+|Унарчиветеам|4|Операция восстановления архивной команды.|
+|Креатетеам|4|Операция по созданию команды с нуля.|
 
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/resources/teamsasyncoperationtype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: a71aed2da93c2121492f1eb29826470b797768ed
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643316"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32460991"
 ---
 # <a name="charttitle-resource-type"></a>Тип ресурса ChartTitle
 
@@ -23,17 +23,17 @@ ms.locfileid: "29643316"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartTitle](../api/charttitle-get.md) | [ChartTitle](charttitle.md) |Чтение свойств и связей объекта chartTitle.|
-|[обновление](../api/charttitle-update.md). | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
+|[Обновление](../api/charttitle-update.md) | [ChartTitle](charttitle.md)    |Обновление объекта ChartTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |overlay|boolean|Логическое значение, указывающее, отображается ли заголовок диаграммы поверх нее.|
-|text|строка|Представляет текст заголовка диаграммы.|
+|text|string|Представляет текст заголовка диаграммы.|
 |visible|boolean|Логическое значение, представляющее видимость объекта заголовка диаграммы.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartTitleFormat](charttitleformat.md)|Представляет форматирование названия диаграммы, включая формат заливки и шрифта. Только для чтения.|
 

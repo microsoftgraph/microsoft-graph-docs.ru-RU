@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 9470243651d668d8a1440077be89225b0ebe7b21
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515764"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459251"
 ---
 # <a name="get-application"></a>Получение объекта application
 
@@ -40,7 +40,7 @@ GET /applications/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -56,7 +56,7 @@ GET /applications/{id}
 GET https://graph.microsoft.com/beta/applications/{id}
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

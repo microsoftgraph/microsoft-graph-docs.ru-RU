@@ -1,30 +1,30 @@
 ---
-title: 'bookingBusiness: публикация'
-description: Сделайте доступными странице планирования бизнеса внешним клиентам.
+title: 'Букингбусинесс: публикация'
+description: Сделайте страницу планирования для этого бизнеса доступной внешним клиентам.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 11d8bea864772c0bcc4365c056973fac782add5d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462013"
 ---
-# <a name="bookingbusiness-publish"></a>bookingBusiness: публикация
+# <a name="bookingbusiness-publish"></a>Букингбусинесс: публикация
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сделайте доступными странице планирования бизнеса внешним клиентам.
+Сделайте страницу планирования для этого бизнеса доступной внешним клиентам.
 
-Свойства **isPublished** значение true, а свойство **publicUrl** URL-адрес страницы планирования.
+Задайте для свойства **публикации** значение true, а свойству **ПУБЛИКУРЛ** — URL-адрес страницы планирования.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  Bookings.Manage.All   |
+|Делегированные (рабочая или учебная учетная запись) |  Резервирования. Manage. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
 |Для приложений | Не поддерживается.  |
 
@@ -37,11 +37,11 @@ POST /bookingBusinesses/{id}/publish
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No content`. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
@@ -56,7 +56,7 @@ POST /bookingBusinesses/{id}/publish
 POST https://graph.microsoft.com/beta/bookingBusinesses/Contosolunchdelivery@M365B489948.onmicrosoft.com/publish
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

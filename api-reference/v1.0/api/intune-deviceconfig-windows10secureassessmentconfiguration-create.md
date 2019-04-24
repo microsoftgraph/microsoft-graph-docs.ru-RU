@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d152b1011803ac9405ea87f2cd75d4c31d56ef91
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30972923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459754"
 ---
 # <a name="create-windows10secureassessmentconfiguration"></a>Create windows10SecureAssessmentConfiguration
 
@@ -56,8 +56,8 @@ POST /deviceManagement/deviceConfigurations
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |launchUri|String|URL-адрес страницы оценки, которая автоматически загружается при запуске браузера для надежного тестирования. Это должен быть допустимый URL-адрес (http\[s\]://msdn.microsoft.com/).|
 |configurationAccount|String|Учетная запись, с использованием которой настраивается устройство с Windows для прохождения теста. В качестве пользователя можно указать учетную запись домена (domen\polzovatel), учетную запись AAD (imya_polzovatelya@klient.com) или локальную учетную запись (имя пользователя).|
-|allowPrinting|Boolean|Определяет, разрешается ли приложению печатать во время выполнения теста.|
-|allowScreenCapture|Boolean|Определяет, разрешается ли создавать снимки экрана во время выполнения теста.|
+|allowPrinting|Логический|Определяет, разрешается ли приложению печатать во время выполнения теста.|
+|allowScreenCapture|Логический|Определяет, разрешается ли создавать снимки экрана во время выполнения теста.|
 |allowTextSuggestion|Boolean|Определяет, разрешается ли использовать текстовые предложения во время выполнения теста.|
 
 

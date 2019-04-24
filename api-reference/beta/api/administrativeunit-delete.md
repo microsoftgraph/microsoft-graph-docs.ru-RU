@@ -1,21 +1,21 @@
 ---
 title: Удаление administrativeUnit
-description: Удалите administrativeUnit.
+description: Удаление administrativeUnit.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4dff40e4ce881624dc5498d68c7490617b8596fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526153"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32459467"
 ---
 # <a name="delete-administrativeunit"></a>Удаление administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [administrativeUnit](../resources/administrativeunit.md).
+Удаление [administrativeUnit](../resources/administrativeunit.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,7 +39,7 @@ DELETE /administrativeUnits/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,9 +55,8 @@ DELETE /administrativeUnits/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/administrativeUnits/{id}
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -1,19 +1,19 @@
 ---
-title: Удаление appRoleAssignment
-description: Удалите appRoleAssignment.
+title: Удаление объекта AppRoleAssignment
+description: Удаление Аппролеассигнмент.
 localization_priority: Normal
 ms.openlocfilehash: 1c9855e05de9aa1773bb9de5f1c5e7f17c51df9a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519369"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32458967"
 ---
-# <a name="delete-approleassignment"></a>Удаление appRoleAssignment
+# <a name="delete-approleassignment"></a>Удаление объекта AppRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите appRoleAssignment.
+Удаление Аппролеассигнмент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -53,7 +53,7 @@ DELETE /groups/{id}/appRoleAssignments/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/appRoleAssignments/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

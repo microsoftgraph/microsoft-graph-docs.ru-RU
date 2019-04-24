@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 49a4e16e6f24ebac22c760cf11e63c220181d0b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457487"
 ---
 # <a name="get-event"></a>Получение события
 
@@ -17,12 +17,12 @@ ms.locfileid: "29509086"
 
 Получение свойств и отношений указанного объекта [event](../resources/event.md).
 
-Существует два сценария, где приложения можно получить событие в календаре другого пользователя.
+Существует два сценария, в которых приложение может получить событие в календаре другого пользователя:
 
-* Если приложение имеет разрешения приложения, или,
-* Если приложение имеет соответствующей делегированных [разрешений](#permissions) от одного пользователя и другой пользователь общий календарь с этим пользователем или, получает делегированный доступ для пользователя, который. В разделе [сведения и примеры](/graph/outlook-get-shared-events-calendars).
+* если у приложения есть разрешения для приложений;
+* если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним календарем или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-get-shared-events-calendars).
 
-Так как ресурс **event** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` можно получить настраиваемые свойства и данные расширения в экземпляре **event**.
+Так как ресурс **event** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` вы можете получить настраиваемые свойства и данные расширения в экземпляре **события**.
 
 
 ### <a name="support-various-time-zones"></a>Поддержка разных часовых поясов
@@ -74,10 +74,10 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Prefer: outlook.timezone | string | С помощью этого заголовка вы можете задать часовой пояс для времени начала и окончания в ответе. Если он не задан, эти значения времени возвращаются в формате UTC. Необязательный параметр. |
-| Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательное свойство. |
+| Prefer: outlook.body-content-type | string | Формат возвращаемого свойства **body**. Возможные значения: "text" или "html". Заголовок `Preference-Applied` возвращается как подтверждение, если заголовок `Prefer` указан. Если заголовок не указан, свойство **body** возвращается в формате HTML. Необязательный параметр. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -89,7 +89,7 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 - Заголовок `Prefer: outlook.timezone` для получения значений даты и времени, которые возвращаются для стандартного тихоокеанского времени. 
 - Параметр запроса `$select`, который возвращает конкретные свойства. Без параметра `$select` будут возвращены все свойства событий.
 
-Запрос не указано какое-либо `Prefer: outlook.body-content-type` заголовок, чтобы указать определенный формат текста возвращаемых событий. 
+В запросе не определен никакой заголовок `Prefer: outlook.body-content-type`, чтобы указать конкретный формат для текста возвращаемого события. 
 
 <!-- {
   "blockType": "request",
@@ -99,8 +99,8 @@ GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{i
 GET https://graph.microsoft.com/beta/me/events('AAMkAGIAAAoZDOFAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
-##### <a name="response-1"></a>Ответ 1
-Ниже приведен пример ответа. Так как не `Prefer: outlook.body-content-type` заголовок был задан, возвращаются свойства **текста** в формате HTML по умолчанию. 
+##### <a name="response-1"></a>Ответ 1
+Ниже приведен пример ответа. Так как заголовок `Prefer: outlook.body-content-type` не указан, свойство **body** возвращается в формате HTML по умолчанию. 
 
 <!-- {
   "blockType": "response",
@@ -178,9 +178,9 @@ Content-length: 1928
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-Во втором примере показано, как использовать `Prefer: outlook.body-content-type="text"` заголовок, чтобы получить свойство **body** события, указанного в текстовом формате.
+Во втором примере показано, как использовать `Prefer: outlook.body-content-type="text"` заголовок для получения свойства **Body** указанного события в текстовом формате.
 
-Запрос также использует `$select` параметр для возврата свойств запроса. Без `$select` параметр, все свойства, события будут возвращены.
+В запросе также используется параметр `$select` для возврата отдельных свойств. Без параметра `$select` будут возвращены все свойства событий.
 
 <!-- {
   "blockType": "request",
@@ -191,7 +191,7 @@ GET https://graph.microsoft.com/beta/me/events('AAMkAGI1AAAoZDOFAAA=')?$select=s
 Prefer: outlook.body-content-type="text"
 ```
 ##### <a name="response-2"></a>Ответ 2
-Ниже приведен пример отклика. Свойство **body** , возвращается в текстовом формате. 
+Ниже приведен пример отклика. Свойство **body** возвращается в текстовом формате. 
 
 <!-- {
   "blockType": "response",
@@ -221,7 +221,7 @@ Content-length: 636
 
 ##### <a name="request-3"></a>Запрос 3
 
-В третьем примере показано получение событие, которое указывает более одного расположения. В запросе указан параметр `$select` для возврата отдельных свойств. 
+В третьем примере показано, как получается событие, задающее несколько расположений. В запросе указан параметр `$select` для возврата отдельных свойств. 
 
 <!-- {
   "blockType": "request",
@@ -230,10 +230,10 @@ Content-length: 636
 ```http
 GET https://graph.microsoft.com/beta/me/events('AAMkADAGAADDdm4NAAA=')?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,locations
 ```
-##### <a name="response-3"></a>Отклик 3
+##### <a name="response-3"></a>Ответ 3
 Ниже приведен пример ответа. Свойство **locations** включает информацию о трех местах, для которых организовано событие. 
 
-Поскольку запрос не указано какое-либо `Prefer: outlook.timezone` или `Prefer: outlook.body-content-type` заголовок, **start** и **end** свойства отображаются в формате UTC часовой пояс по умолчанию и является текст в формате HTML по умолчанию.  
+Так как в запросе не указано ни `Prefer: outlook.timezone` одного `Prefer: outlook.body-content-type` заголовка или заголовка, свойства **Start** и **End** отображаются в ЧАСОВОМ поясе по умолчанию в формате UTC, а текст по умолчанию — в формате HTML.  
 
 <!-- {
   "blockType": "response",

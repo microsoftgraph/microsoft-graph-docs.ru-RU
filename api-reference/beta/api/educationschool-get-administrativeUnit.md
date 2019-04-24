@@ -1,21 +1,21 @@
 ---
 title: Получение administrativeUnit
-description: Получение простого каталог **administrativeUnit** , соответствующий этой **educationSchool**.
+description: Получение простого каталога **administrativeUnit** , соответствующего этому **educationSchool**.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 47dd3b5543f7f10385529aef56e99537abc2f524
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520706"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32457698"
 ---
 # <a name="get-administrativeunit"></a>Получение administrativeUnit
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение простого каталог **administrativeUnit** , соответствующий этой **educationSchool**.
+Получение простого каталога **administrativeUnit** , соответствующего этому **educationSchool**.
 
 >**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях. В данном случае используйте ресурс `...beta/education/me/schools`.
 
@@ -39,9 +39,9 @@ GET /education/schools/{id}/administrativeUnit
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [administrativeUnit](../resources/administrativeunit.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [administrativeUnit](../resources/administrativeunit.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -52,7 +52,7 @@ GET /education/schools/{id}/administrativeUnit
 ```http
 GET https://graph.microsoft.com/beta/education/schools/2961761D-8094-4183-A9F6-8E36E966C7D9/administrativeUnit
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

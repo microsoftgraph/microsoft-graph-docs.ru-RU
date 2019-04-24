@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 85c002b9b9a8271b47209ca11bb27eb2885815a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32465554"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -34,15 +34,15 @@ ms.locfileid: "27984383"
 - [Диапазон IPv6-адресов](intune-mam-ipv6range.md)
 - [JSON](intune-mam-json.md)
 - [Пара "ключ-значение"](intune-mam-keyvaluepair.md)
-- [Управляемые приложения буфер обмена, общий доступ к уровень](intune-mam-managedappclipboardsharinglevel.md)
+- [Уровень совместного доступа к буферу обмена управляемого приложения](intune-mam-managedappclipboardsharinglevel.md)
 - [Конфигурация управляемых приложений](intune-mam-managedappconfiguration.md)
-- [Управляемый тип шифрования данных приложения](intune-mam-managedappdataencryptiontype.md)
-- [Место хранения данных управляемых приложений](intune-mam-managedappdatastoragelocation.md)
-- [Уровень передачи данных управляемых приложений](intune-mam-managedappdatatransferlevel.md)
+- [Тип шифрования данных управляемого приложения](intune-mam-managedappdataencryptiontype.md)
+- [Место хранения данных управляемого приложения](intune-mam-managedappdatastoragelocation.md)
+- [Уровень передачи данных управляемого приложения](intune-mam-managedappdatatransferlevel.md)
 - [Состояние диагностики управляемых приложений](intune-mam-managedappdiagnosticstatus.md)
-- [Управляемые приложения отмеченные причине](intune-mam-managedappflaggedreason.md)
+- [Причина пометки управляемого приложения](intune-mam-managedappflaggedreason.md)
 - [Операция управляемых приложений](intune-mam-managedappoperation.md)
-- [Набор символов управляемых приложений ПИН-кода](intune-mam-managedapppincharacterset.md)
+- [Набор символов ПИН-кода управляемого приложения](intune-mam-managedapppincharacterset.md)
 - [Политика управляемых приложений](intune-mam-managedapppolicy.md)
 - [Сводка по развертыванию политик для управляемых приложений](intune-mam-managedapppolicydeploymentsummary.md)
 - [Сводка по развертыванию политик для отдельных управляемых приложений](intune-mam-managedapppolicydeploymentsummaryperapp.md)
@@ -63,10 +63,10 @@ ms.locfileid: "27984383"
 - [Файл AppLocker для Windows Information Protection](intune-mam-windowsinformationprotectionapplockerfile.md)
 - [Сертификат восстановления данных Windows Information Protection](intune-mam-windowsinformationprotectiondatarecoverycertificate.md)
 - [Классическое приложение Windows Information Protection](intune-mam-windowsinformationprotectiondesktopapp.md)
-- [Уровень принудительное применение защиты сведения о Windows](intune-mam-windowsinformationprotectionenforcementlevel.md)
+- [Уровень применения Windows Information Protection](intune-mam-windowsinformationprotectionenforcementlevel.md)
 - [Коллекция диапазонов IP-адресов Windows Information Protection](intune-mam-windowsinformationprotectioniprangecollection.md)
 - [Сводка по обучению сети Windows Information Protection](intune-wip-windowsinformationprotectionnetworklearningsummary.md)
-- [Требования к символ Windows сведения защиты ПИН-кода](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
+- [Требования к символам ПИН-кода Windows Information Protection](intune-mam-windowsinformationprotectionpincharacterrequirements.md)
 - [Политика Windows Information Protection](intune-mam-windowsinformationprotectionpolicy.md)
 - [Коллекция проксируемых доменов Windows Information Protection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Коллекция ресурсов Windows Information Protection](intune-mam-windowsinformationprotectionresourcecollection.md)
