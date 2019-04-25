@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2b0011c0f6833599493a64734aeb3e29147bf949
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771232"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551892"
 ---
 # <a name="mobileappcontentfileuploadstate-enum-type"></a>тип перечисления Мобилеаппконтентфилеуплоадстате
 
@@ -23,9 +23,9 @@ ms.locfileid: "31771232"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |success|нуль|Пока не задокументировано.|
-|Трансиентеррор|1,1|Пока не задокументировано.|
-|error|2|Пока не задокументировано.|
-|unknown|4|Пока не задокументировано.|
+|Трансиентеррор|1 |Пока не задокументировано.|
+|error|2 |Пока не задокументировано.|
+|unknown|3 |Пока не задокументировано.|
 |Азуресторажеурирекуестсукцесс|100|Пока не задокументировано.|
 |Азуресторажеурирекуестпендинг|101|Пока не задокументировано.|
 |Азуресторажеурирекуестфаилед|102|Пока не задокументировано.|

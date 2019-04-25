@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0e35208ce0296e5577164f359db622ef10dda457
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31791210"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553885"
 ---
 # <a name="androidmanagedstoreaccountenrollmenttarget-enum-type"></a>тип перечисления Андроидманажедстореаккаунтенроллменттаржет
 
@@ -22,10 +22,10 @@ ms.locfileid: "31791210"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Пока не задокументировано.|
-|ко|1,1|Пока не задокументировано.|
-|Целевой|2|Пока не задокументировано.|
-|Таржетедасенроллментрестриктионс|4|Пока не задокументировано.|
+|Нет|нуль|Пока не задокументировано.|
+|ко|1 |Пока не задокументировано.|
+|Целевой|2 |Пока не задокументировано.|
+|Таржетедасенроллментрестриктионс|3 |Пока не задокументировано.|
 
 
 

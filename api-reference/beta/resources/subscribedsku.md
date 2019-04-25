@@ -1,40 +1,40 @@
 ---
 title: Тип ресурса subscribedSku
-description: " Создание, обновление и удаление не поддерживается. Выражения фильтра запроса не поддерживается. Наследуется от directoryObject."
+description: " Создание, обновление и удаление не поддерживаются. Выражения фильтра запросов не поддерживаются. Наследуется от directoryObject."
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090e6912ce2f337a8e30322c9b45161af73175cc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522702"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582092"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В подписанных SKU поддерживается только операция чтения. Создание, обновление и удаление не поддерживаются. Выражения фильтра запроса не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
+На подписанных SKU поддерживаются только операции чтения; Создание, обновление и удаление не поддерживаются. Выражения фильтра запросов не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
 
 
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|Получение объекта subscribedSku | [subscribedSku](subscribedsku.md) |Чтение свойств и связей объекта subscribedSku.|
-|[Список объектов subscribedSku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
+|[Получение объекта subscribedSku](../api/subscribedsku-get.md) | [subscribedSku](subscribedsku.md) |Чтение свойств и связей объекта subscribedSku.|
+|[Список subscribedsku](../api/subscribedsku-list.md) | Коллекция объектов [subscribedSku](subscribedsku.md) |Получение списка коммерческих подписок, приобретенных организацией.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|appliesTo|String| Например, User или Company. |
-|capabilityStatus|Строка| Например, Enabled. |
+|Тег|String| Например, User или Company. |
+|Капабилитистатус|String| Пример: "Enabled". |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
-|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Ключ, значение NULL не допускается. |
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Значение NULL не допускается |
+|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
+|Препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
+|Сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
-|skuPartNumber|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. |
+|Скупартнумбер|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. |
 
 ## <a name="relationships"></a>Отношения
 Нет

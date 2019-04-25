@@ -1,19 +1,19 @@
 ---
-title: Удаление synchronizationSchema
-description: Удаление настраиваемой схемы и сбрасывает схемы в конфигурации по умолчанию. Если схема удаляется в контексте шаблона, он возвращает схему одно связанное с помощью шаблона по умолчанию `factoryTag`.
+title: Удаление Синчронизатионсчема
+description: Удаляет настраиваемую схему и восстанавливает конфигурацию схемы по умолчанию. Если схема удалена в контексте шаблона, она сбрасывается в схему по умолчанию, связанную с шаблоном `factoryTag`.
 localization_priority: Normal
 ms.openlocfilehash: cb4c6295fe962ea9570da19b9b6ee8190b2024f5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526993"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545347"
 ---
-# <a name="delete-synchronizationschema"></a>Удаление synchronizationSchema
+# <a name="delete-synchronizationschema"></a>Удаление Синчронизатионсчема
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление настраиваемой схемы и сбрасывает схемы в конфигурации по умолчанию. Если схема удаляется в контексте шаблона, он возвращает схему одно связанное с помощью шаблона по умолчанию `factoryTag`.
+Удаляет настраиваемую схему и восстанавливает конфигурацию схемы по умолчанию. Если схема удалена в контексте шаблона, она сбрасывается в схему по умолчанию, связанную с шаблоном `factoryTag`.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,11 +39,11 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код отклика `201 No Content`. Он не возвращает все действия в тексте ответа.
+В случае успешного выполнения этот метод возвращает код отклика `201 No Content`. Он не возвращает ничего в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -54,8 +54,8 @@ DELETE /applications/{id}/synchronization/templates/{templateId}/schema
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

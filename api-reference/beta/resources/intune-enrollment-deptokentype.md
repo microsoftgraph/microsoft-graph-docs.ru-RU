@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c4008d271f33bb68e9cc770c41bddb4129f597bd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31803026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573853"
 ---
 # <a name="deptokentype-enum-type"></a>тип перечисления Дептокентипе
 
@@ -22,9 +22,9 @@ ms.locfileid: "31803026"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Тип маркера — None|
-|DEP|1,1|Тип токена — DEP.|
-|Апплесчулманажер|2|Тип маркера — Apple School Manager|
+|Нет|нуль|Тип маркера — None|
+|DEP|1 |Тип токена — DEP.|
+|Апплесчулманажер|2 |Тип маркера — Apple School Manager|
 
 
 

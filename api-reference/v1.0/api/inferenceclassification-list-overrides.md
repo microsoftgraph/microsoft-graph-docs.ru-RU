@@ -1,15 +1,15 @@
 ---
-title: Список переопределений
+title: Переопределение списка
 description: Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.
 localization_priority: Normal
 ms.openlocfilehash: ab8324ac892df570ed0d28fabb7b31f3280adcef
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27883897"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577618"
 ---
-# <a name="list-overrides"></a>Список переопределений
+# <a name="list-overrides"></a>Переопределение списка
 
 Получение переопределений, настроенных пользователем для классификации сообщений от определенных отправителей.
 
@@ -35,10 +35,10 @@ GET /users/{id}/inferenceClassification/overrides
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика. Если у пользователя нет настроенных переопределений, возвращается пустая коллекция.
 ## <a name="example"></a>Пример
@@ -51,8 +51,8 @@ GET /users/{id}/inferenceClassification/overrides
 ```http
 GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

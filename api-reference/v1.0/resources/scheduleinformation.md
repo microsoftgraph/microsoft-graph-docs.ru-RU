@@ -3,11 +3,11 @@ title: Тип ресурса Счедулеинформатион
 description: Представляет доступность пользователя, списка рассылки или ресурса за указанный период времени.
 localization_priority: Normal
 ms.openlocfilehash: a19689eeafe9723cdadeb6147700933ab171637c
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926623"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579270"
 ---
 # <a name="scheduleinformation-resource-type"></a>Тип ресурса Счедулеинформатион
 
@@ -23,7 +23,7 @@ ms.locfileid: "30926623"
 |workingHours |[workingHours](workinghours.md) |Дни недели и часы работы пользователя в определенном часовом поясе. Они задаются как часть [mailboxSettings](mailboxsettings.md)пользователя.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

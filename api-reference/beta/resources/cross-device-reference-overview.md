@@ -1,27 +1,27 @@
 ---
 title: Создание условий для работы на разных устройствах с помощью API Microsoft Graph
-description: '{Это выпуска бета-версии. Содержимое похож на существующий project_rome_overview.md.}'
+description: '{Это бета-версия. Содержимое аналогично существующему прожект_роме_овервиев. md.}'
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 9a365198edc337bbd6baf1b7a688e0bbeaa74cd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529378"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543415"
 ---
 # <a name="use-the-microsoft-graph-api-to-enable-cross-device-experiences"></a>Создание условий для работы на разных устройствах с помощью API Microsoft Graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-{Это выпуска бета-версии. Содержимое похож на существующий project_rome_overview.md.}
+{Это бета-версия. Содержимое аналогично существующему прожект_роме_овервиев. md.}
 
 # <a name="next-steps"></a>Дальнейшие действия
 
-- [Общие сведения о включении между устройствами взаимодействия с помощью веб-канал API в Microsoft Graph активности](/graph/activity-feed-concept-overview)
+- [Общие сведения о разрешении взаимодействия между устройствами с помощью API каналов активности в Microsoft Graph](/graph/activity-feed-concept-overview)
 - [Использование API веб-канала активности для возобновления активности пользователя на разных устройствах](activity-feed-api-overview.md)
-- [Общие сведения о включении взаимодействия между устройствами с помощью API преобразования устройства в Microsoft Graph](/graph/device-relay-concept-overview)
-- [Используйте устройство реле API для передачи взаимодействие с пользователем через устройств](device-relay-api-overview.md)
+- [Общие сведения о разрешении взаимодействия между устройствами с помощью API преобразования устройств в Microsoft Graph](/graph/device-relay-concept-overview)
+- [Использование API ретрансляции устройств для передачи взаимодействия пользователя между устройствами](device-relay-api-overview.md)
 <!--
 {
   "type": "#page.annotation",

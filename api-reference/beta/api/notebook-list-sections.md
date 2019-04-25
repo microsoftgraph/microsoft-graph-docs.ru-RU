@@ -1,17 +1,17 @@
 ---
-title: Перечисление разделов
-description: Получение списка объектов section из указанной записной книжки.
+title: Вывод списка разделов
+description: Получение списка объектов Section из указанной записной книжки.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 6f9894b00db6ba7a90613628cd3367b78ce288b9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528951"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540235"
 ---
-# <a name="list-sections"></a>Перечисление разделов
+# <a name="list-sections"></a>Вывод списка разделов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "29528951"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.Create, Notes.Read, Notes.ReadWrite    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
@@ -34,11 +34,11 @@ GET /groups/{id}/onenote/notebooks/{id}/sections
 GET /sites/{id}/onenote/notebooks/{id}/sections
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
-По умолчанию используется порядок сортировки `name asc`.
+По умолчанию используется `name asc`порядок сортировки.
 
-Запрос, используемый по умолчанию, разворачивает `parentNotebook` и выбирает соответствующие свойства `id`, `displayName` и `self`. Допустимые значения `expand` для разделов: `parentNotebook` и `parentSectionGroup`.
+Запрос по умолчанию `parentNotebook` разворачивает и выбирает `id`свойства `displayName`, и `self` . Допустимые `expand` значения для разделов `parentNotebook` — `parentSectionGroup`и.
 
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -48,11 +48,11 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [section](../resources/section.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [section](../resources/section.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -63,7 +63,7 @@ GET /sites/{id}/onenote/notebooks/{id}/sections
 ```http
 GET https://graph.microsoft.com/beta/me/onenote/notebooks/{id}/sections
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

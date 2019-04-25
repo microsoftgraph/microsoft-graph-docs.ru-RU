@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 72597fa1678110a40b9dd1a0ea6e6235625144ab
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657534"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582884"
 ---
 # <a name="timeoffreason-resource-type"></a>Тип ресурса Тимеоффреасон
 
@@ -21,11 +21,11 @@ ms.locfileid: "30657534"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание Тимеоффреасон](../api/schedule-post-timeoffreasons.md) | [Тимеоффреасон](timeoffreason.md) | Создание нового `timeOffReason`объекта.|
-|[Список Тимеоффреасон](../api/schedule-list-timeoffreasons.md) | Коллекция [тимеоффреасон](timeoffreason.md) | Получение списка `timeOffReasons` по расписанию.|
+|[Создание Тимеоффреасон](../api/schedule-post-timeoffreasons.md) | [Тимеоффреасон](timeoffreason.md) | Создание объекта `timeOffReason`.|
+|[Список Тимеоффреасон](../api/schedule-list-timeoffreasons.md) | Коллекция [тимеоффреасон](timeoffreason.md) | Получение списка объектов `timeOffReasons` в расписании.|
 |[Получение Тимеоффреасон](../api/timeoffreason-get.md) | [Тимеоффреасон](timeoffreason.md) | Получение `timeOffReason` по идентификатору.|
-|[Замена Тимеоффреасон](../api/timeoffreason-put.md) | [Тимеоффреасон](timeoffreason.md) | Замените элемент `timeOffReason`.|
-|[Удаление Тимеоффреасон](../api/timeoffreason-delete.md) | Нет | ПоМетить `timeOffReason` как неактивное.|
+|[Замена Тимеоффреасон](../api/timeoffreason-put.md) | [Тимеоффреасон](timeoffreason.md) | Замена объекта `timeOffReason`.|
+|[Удаление Тимеоффреасон](../api/timeoffreason-delete.md) | Нет | Объект `timeOffReason` помечается как неактивный.|
 
 ## <a name="properties"></a>Свойства
 |Имя          |Тип           |Описание                                                                                 |
@@ -33,12 +33,12 @@ ms.locfileid: "30657534"
 | id            |`string`      |Идентификатор объекта `timeOffReason`.|
 | displayName               | `string`                  | Имя файла `timeOffReason`. Обязательный. |
 | Иконтипе | `enum`   | Поддерживаемые типы значков: нет; Мойка ведения запускается ходил Фирстаид; врача Нотворкинг; регистрации Журидути; любой кружк звонков Погода Общий Пиггибанк; Dog очень Траффикконе; крепления Веселая. Обязательный. |
-| "активен"          |`bool`      | Указывает, `timeOffReason` можно ли использовать при создании новых сущностей или обновлении существующих. Обязательный. |
-| createdDateTime       |`DateTimeOffset`        |Отметка `timeOffReason` времени первоначального создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
-| lastModifiedDateTime      |`DateTimeOffset`         |Отметка `timeOffReason` времени последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |Удостоверение, которое Последнее обновило `timeOffReason`.|
+| isActive          |`bool`      | Указывает, можно ли использовать объект `timeOffReason` при создании новых сущностей или обновлении существующих. Обязательный. |
+| createdDateTime       |`DateTimeOffset`        |Отметка `timeOffReason` времени первоначального создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| lastModifiedDateTime      |`DateTimeOffset`         |Отметка `timeOffReason` времени последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |Учетная запись, которая последней обновила этот объект `timeOffReason`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

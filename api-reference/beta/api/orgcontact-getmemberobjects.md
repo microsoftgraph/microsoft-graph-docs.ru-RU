@@ -1,15 +1,15 @@
 ---
 title: 'orgContact: getMemberObjects'
-description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
+description: Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ab9d516fe4200a188defe026fdf44ac183bb5909
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523752"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539769"
 ---
 # <a name="orgcontact-getmemberobjects"></a>orgContact: getMemberObjects
 
@@ -40,7 +40,7 @@ POST /contacts/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое||
+|securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>Отклик
 
@@ -64,9 +64,8 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

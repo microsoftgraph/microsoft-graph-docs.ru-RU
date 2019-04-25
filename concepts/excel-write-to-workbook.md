@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a8fcc90d4050cb6f0db2fb5e2b3a22d267f8cede
-ms.sourcegitcommit: bbe42a15dad4ffe037a6934ab6001b585b7574c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31904072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526316"
 ---
 # <a name="write-data-to-an-excel-workbook-with-microsoft-graph"></a>Запись данных в книгу Excel с помощью Microsoft Graph
 

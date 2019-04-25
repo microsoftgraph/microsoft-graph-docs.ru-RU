@@ -1,19 +1,19 @@
 ---
 title: Перечисление объектов secureScores
-description: Извлечение свойств и связи объекта secureScores.
+description: Получение свойств и связей объекта Секурескорес.
 localization_priority: Normal
 ms.openlocfilehash: e574c3e52eb60f29dac89e2795b04666c7a1f02b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642963"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545478"
 ---
 # <a name="list-securescores"></a>Перечисление объектов secureScores
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта [secureScores](../resources/securescores.md) .
+Получение свойств и связей объекта [секурескорес](../resources/securescores.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -21,9 +21,9 @@ ms.locfileid: "29642963"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  SecurityEvents.Read.All SecurityEvents.ReadWrite.All.   |
+|Делегированные (рабочая или учебная учетная запись) |  Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL.   |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | SecurityEvents.Read.All SecurityEvents.ReadWrite.All. |
+|Для приложений | Область securityevents. Read. ALL, область securityevents. ReadWrite. ALL. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -37,15 +37,15 @@ GET /security/secureScores
 
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | В заголовке указывается "Bearer {код}". Обязательный.|
+| Авторизация  | Bearer {Code}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **secureScores** в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **секурескорес** в тексте отклика.
 
 ## <a name="example"></a>Пример
 

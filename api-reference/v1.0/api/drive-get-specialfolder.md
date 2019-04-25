@@ -6,11 +6,11 @@ title: Получение специальных папок
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 55b976a32583546d7ed5993083af82dc0a55121f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482380"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551416"
 ---
 # <a name="get-a-special-folder-by-name"></a>Получение доступа к специальной папке по ее имени
 
@@ -109,7 +109,7 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a>Замечания
+## <a name="remarks"></a>Примечания
 
 > **Примечание.** Элементы DriveItem с аспектом `specialFolder` указывают, что элемент представляет собой специальную папку, и доступ к нему можно получить через коллекцию `special`.
 

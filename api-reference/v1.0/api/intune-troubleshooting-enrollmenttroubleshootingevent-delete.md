@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b49d6ce57a98e58ce0897bc15a5661eb1d6e0812
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30962822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576586"
 ---
 # <a name="delete-enrollmenttroubleshootingevent"></a>Удаление объекта enrollmentTroubleshootingEvent
 
@@ -44,7 +44,7 @@ DELETE /deviceManagement/troubleshootingEvents/{deviceManagementTroubleshootingE
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример

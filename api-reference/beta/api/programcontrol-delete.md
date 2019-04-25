@@ -1,25 +1,25 @@
 ---
-title: Удаление programControl
-description: Доступ к функции проверки в Azure AD, удалить объект programControl.  Это удаляет связь проверки доступа из программы.
+title: Удаление Програмконтрол
+description: В функции рецензирования Access Azure AD удалите объект Програмконтрол.  Это отменяет связь с проверкой доступа из программы.
 localization_priority: Normal
 ms.openlocfilehash: 7510dfe80f758a75f190402d3ae426138e60bbed
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510836"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538559"
 ---
-# <a name="delete-programcontrol"></a>Удаление programControl
+# <a name="delete-programcontrol"></a>Удаление Програмконтрол
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD удаления объекта [programControl](../resources/programcontrol.md) .  Это удаляет связь проверки доступа из программы.
+В функции рецензирования [Access](../resources/accessreviews-root.md) Azure AD удалите объект [програмконтрол](../resources/programcontrol.md) .  Это отменяет связь с проверкой доступа из программы.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.ReadWrite.All`.  Также должен быть выполнен вход пользователя в роль каталог, который позволяет пользователям удалять programControl. |
+|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, что позволяет удалять Програмконтрол. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -31,13 +31,13 @@ DELETE /programControls('<id>')
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Маркер носителя Обязательный. |
+| Authorization | string | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `204, No Content`. Метод не возвращает данные в теле отклика.
 
 ## <a name="example"></a>Пример

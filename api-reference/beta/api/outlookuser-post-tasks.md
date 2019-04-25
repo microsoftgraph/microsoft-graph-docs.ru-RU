@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 4de57847638ef98347a7561291d12486468428ee
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869458"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539653"
 ---
 # <a name="create-outlooktask"></a>Создание outlookTask
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [OutlookTask](../resources/outlooktask.md) в формате JSON.
@@ -81,7 +81,7 @@ Content-length: 276
 
 Так как `Prefer` заголовок указывает PST-файл, метод POST выражает все свойства, связанные с датами, в ответе в PST-файле. В частности, для свойств **startDateTime** и **дуедатетиме** метод POST преобразовывает полночь в СРЕДСТВе EST в PST-файл и возвращает их в PST-файле в ответе.
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

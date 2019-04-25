@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 1f8cc6a1dbda0f86e808d72bfc91339af58afa33
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966939"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550107"
 ---
 # <a name="list-classes"></a>Перечисление курсов
 
@@ -40,8 +40,8 @@ GET /education/users/{id}/classes
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationClass](../resources/educationclass.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -54,7 +54,7 @@ GET /education/users/{id}/classes
 ```http
 GET https://graph.microsoft.com/v1.0/education/me/classes
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

@@ -1,19 +1,17 @@
 ---
 title: Получение руководителя
 description: Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный руководителем пользователя.
-localization_priority: Normal
+localization_priority: Priority
 author: dkershaw10
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 87f57712bbef74864b6100527391d9f3c56f8455
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516100"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547846"
 ---
 # <a name="list-manager"></a>Получение руководителя
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение руководителя пользователя. Возвращает пользователя или контакт, назначенный руководителем пользователя.
 ## <a name="permissions"></a>Разрешения
@@ -39,21 +37,29 @@ GET /users/{id | userPrincipalName}/manager
 | Content-Type   | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [directoryObject](../resources/directoryobject.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "request",
+  "name": "get_manager"
+}-->
 ```http
-GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/manager
+GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "response",
+  "truncated": false,
+  "@odata.type": "microsoft.graph.directoryObject",
+  "isCollection": false
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -80,15 +86,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List directReports",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-list-manager.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

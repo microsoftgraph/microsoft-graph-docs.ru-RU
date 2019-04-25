@@ -3,11 +3,11 @@ title: Тип ресурса recentNotebookLinks
 description: Ссылки для открытия записной книжки OneNote. Этот тип ресурса существует как свойство ресурса recentNotebook.
 localization_priority: Normal
 ms.openlocfilehash: 846047bd602d19cb4745e0a63f0326aaf7bfb512
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810586"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579482"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>Тип ресурса recentNotebookLinks
 
@@ -19,7 +19,7 @@ ms.locfileid: "27810586"
 |oneNoteClientUrl|[externalLink](externallink.md)|Открывает записную книжку в собственном клиенте OneNote, если он установлен.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает записную книжку в OneNote Online.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b3c8bc4a3ebcc9a2cd347b89bc4cac376c588341
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640576"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543809"
 ---
 # <a name="charttitleformat-resource-type"></a>Тип ресурса ChartTitleFormat
 
@@ -25,10 +25,10 @@ ms.locfileid: "29640576"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fill|[ChartFill](chartfill.md)|Представляет формат заливки объекта, включая сведения о форматировании фона. Только для чтения.|
-|шрифт|[ChartFont](chartfont.md)|Представляет атрибуты шрифта (название, размер, цвет и т. д.) для объекта. Только для чтения.|
+|шрифт|[ChartFont](chartfont.md)|Представляет атрибуты шрифта (название, размер, цвет и т. д.) для объекта. Только для чтения.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

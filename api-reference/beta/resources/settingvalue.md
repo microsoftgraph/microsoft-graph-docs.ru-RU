@@ -1,28 +1,28 @@
 ---
 title: Тип ресурса settingValue
-description: Параметр, представленный парой "имя-значение".
+description: Параметр, представленный в виде "имя-значение".
 localization_priority: Normal
 ms.openlocfilehash: aa30fd61c1498be08be4d87175d18015c58323ba
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527740"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584109"
 ---
 # <a name="settingvalue-resource-type"></a>Тип ресурса settingValue
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметр, представленный парой "имя-значение".
+Параметр, представленный в виде "имя-значение".
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|string|Имя удаляемого параметра (как определено directorySettingTemplate).|
-|value|строка|Значение параметра.|
+|name|string|Имя параметра (как определено в Директорисеттингтемплате).|
+|value|string|Значение параметра.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

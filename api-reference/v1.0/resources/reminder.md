@@ -1,31 +1,31 @@
 ---
 title: Тип ресурса reminder
-description: Напоминание для события в календаре пользователя.
+description: Напоминание о событии в календаре пользователя.
 localization_priority: Normal
 ms.openlocfilehash: e8aa591f078b90249b36d3dc2f666ddac4502461
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27815724"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579347"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
-Напоминание для [события](event.md) в [Календарь](calendar.md)пользователя.
+Напоминание о [событии](event.md) в календаре [](calendar.md)пользователя.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |changeKey|String|Указывает версию напоминания. При каждом изменении напоминания также меняется значение **changeKey**. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
-|eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
-|eventId|String|Уникальный идентификатор события. Только для чтения.|
-|eventLocation|[Location](location.md)|Место проведения события.|
-|eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
-|eventSubject|String|Текст в строке темы события.|
-|eventWebLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
-|reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, заданные для упоминания.|
+|Евентендтиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
+|Диапазоне|String|Уникальный идентификатор события. Только для чтения.|
+|Евентлокатион|[Location](location.md)|Место проведения события.|
+|Евентстарттиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
+|Евентсубжект|String|Текст в строке темы сообщения о событии.|
+|Евентвеблинк|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+|Реминдерфиретиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, заданные для упоминания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

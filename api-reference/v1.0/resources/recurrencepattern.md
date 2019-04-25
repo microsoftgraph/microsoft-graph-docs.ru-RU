@@ -3,11 +3,11 @@ title: Тип ресурса recurrencePattern
 description: 'Описывает частоту повторения события. '
 localization_priority: Normal
 ms.openlocfilehash: ebdb8a71d9f3acfb40191a7148f55999f6158aa1
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579389"
 ---
 # <a name="recurrencepattern-resource-type"></a>Тип ресурса recurrencePattern
 
@@ -35,12 +35,12 @@ ms.locfileid: "27892185"
 |dayOfMonth|Int32|День месяца, в который происходит событие. Обязательное, если для **type** задано значение `absoluteMonthly` или `absoluteYearly`. |
 |daysOfWeek|Коллекция dayOfWeek|Коллекция дней недели, в которые происходит событие. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. <br>Если для **type** задано значение `relativeMonthly` или `relativeYearly`, а **daysOfWeek** указывает несколько дней, то событие происходит в первый день, соответствующий расписанию. <br> Обязательный параметр, если для **type** задано значение `weekly`, `relativeMonthly` или `relativeYearly`.|
 |firstDayOfWeek|dayOfWeek|Первый день недели. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`. Значение по умолчанию: `sunday`. Обязательное, если для **type** задано значение `weekly`. |
-|index|weekIndex|Указывает, в какой из разрешенных дней, указанных в **daysOfsWeek**, происходит событие (начиная с первого экземпляра за месяц). Возможные значения: `first`, `second`, `third`, `fourth`, `last`. Значение по умолчанию: `first`. Необязательное, если для **type** задано значение `relativeMonthly` или `relativeYearly`. |
-|interval|Int32|Количество единиц между повторениями. Единицами могут быть дни, недели, месяцы или годы (в зависимости от значения **type**). Обязательное. |
+|index|Викиндекс|Указывает, в какой из разрешенных дней, указанных в **daysOfsWeek**, происходит событие (начиная с первого экземпляра за месяц). Допустимые значения: `first`, `second`, `third`, `fourth`, `last`. Значение по умолчанию: `first`. Необязательное, если для **type** задано значение `relativeMonthly` или `relativeYearly`. |
+|interval|Int32|Количество единиц между повторениями. Единицами могут быть дни, недели, месяцы или годы (в зависимости от значения **type**). Обязательный. |
 |month|Int32|Месяц, в который происходит событие.  Это число от 1 до 12.|
-|type|recurrencePatternType|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательное.|
+|type|Рекурренцепаттернтипе|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательное.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

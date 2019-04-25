@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: dbac25f4cf86074876fd1be4f0632a5afdb08dc1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520167"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544090"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
@@ -44,7 +44,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{contactFolderId}/contacts
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` объект [пользователя](../resources/contact.md) и кода ответа в теле ответа.
+В случае успеха этот метод возвращает `201 Created` код отклика и объект [Contact](../resources/contact.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

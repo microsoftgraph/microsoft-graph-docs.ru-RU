@@ -1,48 +1,48 @@
 ---
-title: Тип ресурса synchronizationJob
-description: Выполняет синхронизацию с периодически выполняется в фоновом режиме, опроса для изменения в один каталог и помещает их в другой каталог. Задание синхронизации всегда специально для конкретного экземпляра приложения клиента. Как часть процесса установки задания синхронизации необходимо предоставить разрешение на чтение и запись в целевом каталоге объекты и настройке задания синхронизации схемы.
+title: Тип ресурса Синчронизатионжоб
+description: Выполняет синхронизацию с периодического выполнения в фоновом режиме, опрашивает изменения в одном каталоге и помещает их в другой каталог. Задание синхронизации всегда относится к определенному экземпляру приложения в клиенте. В рамках настройки задания синхронизации необходимо предоставить авторизацию для чтения и записи объектов в целевом каталоге, а также для настройки схемы синхронизации задания.
 localization_priority: Normal
 ms.openlocfilehash: 57515857ac6561e73ef0f67f91bdead98abfb937
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510570"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580661"
 ---
-# <a name="synchronizationjob-resource-type"></a>Тип ресурса synchronizationJob
+# <a name="synchronizationjob-resource-type"></a>Тип ресурса Синчронизатионжоб
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Выполняет синхронизацию с периодически выполняется в фоновом режиме, опроса для изменения в один каталог и помещает их в другой каталог. Задание синхронизации всегда специально для конкретного экземпляра приложения клиента. Как часть процесса установки задания синхронизации необходимо предоставить разрешение на чтение и запись в целевом каталоге объекты и настройке задания синхронизации схемы.
+Выполняет синхронизацию с периодического выполнения в фоновом режиме, опрашивает изменения в одном каталоге и помещает их в другой каталог. Задание синхронизации всегда относится к определенному экземпляру приложения в клиенте. В рамках настройки задания синхронизации необходимо предоставить авторизацию для чтения и записи объектов в целевом каталоге, а также для настройки схемы синхронизации задания.
 
 ## <a name="methods"></a>Методы
 
 | Метод        | Возвращаемый тип               | Описание                  |
 |:--------------|:--------------------------|:-----------------------------|
-|[List](../api/synchronization-synchronizationjob-list.md)             |[synchronizationJob](synchronization-synchronizationjob.md) коллекции  |Список существующих заданий для экземпляра данного приложения (участников-служб).|
-|[Получение synchronizationJob](../api/synchronization-synchronizationjob-get.md) | [synchronizationJob](synchronization-synchronizationjob.md) |Чтение свойства и связи объекта synchronizationJob.|
-|[Create](../api/synchronization-synchronizationjob-post.md)         |[synchronizationJob](synchronization-synchronizationjob.md)   |Создание нового задания для данного приложения.|
-|[Start](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание находится в приостановленном состоянии, он по-прежнему производится из точки, где был приостановлен задания. Если задание находится в карантине, состояние карантина снят.|
-|[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительное задание, чтобы начать заново и повторно обрабатывать все объекты в каталоге.|
-|[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временно приостановить синхронизации. Сохраняются все текущие, включая состояние задания и задание продолжит работу с где оно было прервано Если [запустить](../api/synchronization-synchronizationjob-start.md) вызов.|
-|[Delete](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалить все состояния, связанных с заданием.|
-|[Получение synchrnoizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Получите схему эффективной синхронизации задания.|
-|[Обновление synchroizationSchema](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновление схемы заданий синхронизации. |
-|[Проверка учетных данных](../api/synchronization-synchronizationjob-validatecredentials.md)|Нет|Тестирование предоставленные учетные данные для целевой каталог.|
+|[List](../api/synchronization-synchronizationjob-list.md)             |Коллекция [синчронизатионжоб](synchronization-synchronizationjob.md)  |ПереЧисление существующих заданий для определенного экземпляра приложения (субъекта-службы).|
+|[Получение Синчронизатионжоб](../api/synchronization-synchronizationjob-get.md) | [Синчронизатионжоб](synchronization-synchronizationjob.md) |Чтение свойств и связей объекта Синчронизатионжоб.|
+|[Создание](../api/synchronization-synchronizationjob-post.md)         |[Синчронизатионжоб](synchronization-synchronizationjob.md)   |Создание нового задания для определенного приложения.|
+|[Start](../api/synchronization-synchronizationjob-start.md)          |Нет   |Запуск синхронизации. Если задание приостановлено, оно продолжается с того места, где было приостановлено задание. Если задание находится в карантине, статус карантина очищается.|
+|[Restart](../api/synchronization-synchronizationjob-restart.md)      |Нет   |Принудительно запустить задание и повторно обработать все объекты в каталоге.|
+|[Pause](../api/synchronization-synchronizationjob-pause.md)          |Нет   |Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении [начального](../api/synchronization-synchronizationjob-start.md) вызова.|
+|[Удаление](../api/synchronization-synchronizationjob-delete.md)        |Нет   |Остановите синхронизацию и окончательно удалите все состояния, связанные с заданием.|
+|[Получение Синчрноизатионсчема](../api/synchronization-synchronizationschema-get.md)    |[Синчронизатионсчема](synchronization-synchronizationschema.md)   |Получение действующей схемы синхронизации задания.|
+|[Обновление Синчроизатионсчема](../api/synchronization-synchronizationschema-update.md)    |Нет   |Обновите схему синхронизации задания. |
+|[Проверка учетных данных](../api/synchronization-synchronizationjob-validatecredentials.md)|Нет|Проверка предоставленных учетных данных в целевом каталоге.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство      | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|id             |String                     |Идентификатор задания уникальных синхронизации. Только для чтения.|
-|Расписание       |[synchronizationSchedule](synchronization-synchronizationschedule.md)|Расписание выполнения задания. Только для чтения.|
-|status         |[synchronizationStatus](synchronization-synchronizationstatus.md)     |Состояние задания, которое включает в себя после последнего выполнения задания, текущее состояние задания и ошибках.|
-|templateId     |String    |Идентификатор [шаблона синхронизации](synchronization-synchronizationtemplate.md) на основе этого задания.|
+|id             |String                     |Уникальный идентификатор задания синхронизации. Только для чтения.|
+|Диспетчер       |[Синчронизатионсчедуле](synchronization-synchronizationschedule.md)|Расписание, используемое для запуска задания. Только для чтения.|
+|status         |[Синчронизатионстатус](synchronization-synchronizationstatus.md)     |Состояние задания, которое включает время последнего запуска задания, текущее состояние задания и ошибки.|
+|templateId     |String    |Идентификатор [шаблона синхронизации](synchronization-synchronizationtemplate.md) , на котором основано это задание.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|схема|[synchronizationSchema](synchronization-synchronizationschema.md)| Схема синхронизации, настроенных для задания.|
+|схемы|[Синчронизатионсчема](synchronization-synchronizationschema.md)| Схема синхронизации, настроенная для задания.|
 
 ## <a name="json-representation"></a>Представление JSON
 

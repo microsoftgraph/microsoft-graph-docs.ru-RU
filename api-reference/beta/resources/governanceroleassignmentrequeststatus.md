@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса governanceRoleAssignmentRequestStatus
+title: Тип ресурса Говернанцеролеассигнментрекуестстатус
 description: Представляет состояние governanceRoleAssignmentRequest.
 localization_priority: Normal
 ms.openlocfilehash: f4f0b23cf13de5beedb1964484ec4fbbb6e98720
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510178"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547434"
 ---
-# <a name="governanceroleassignmentrequeststatus-resource-type"></a>Тип ресурса governanceRoleAssignmentRequestStatus
+# <a name="governanceroleassignmentrequeststatus-resource-type"></a>Тип ресурса Говернанцеролеассигнментрекуестстатус
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,11 +19,11 @@ ms.locfileid: "29510178"
 ## <a name="properties"></a>Свойства
 Свойство       | Тип |Описание|
 |:----|:-------------|:-----|
-|status |String| Состояние запроса назначений ролей. Значение может быть `InProgress` или `Closed`.|
-|Дополнительные сведения о |String| Состояние sub запрос назначения ролей. Значения могут быть `Accepted`, `PendingEvaluation`, `Granted`, `Denied`, `PendingProvisioning`, `Provisioned`, `PendingRevocation`, `Revoked`, `Canceled`, `Failed`, `PendingApprovalProvisioning`, `PendingApproval`, `FailedAsResourceIsLocked`, `PendingAdminDecision`, `AdminApproved`, `AdminDenied`, `TimedOut`, и `ProvisioningStarted`.|
-|statusDetails       |Коллекция [keyValue](../resources/keyvalue.md)| Подробные сведения о состоянии запроса назначений ролей. Представляет результаты оценки различные правила. |
+|status |String| Состояние запроса на назначение роли. Значение может быть `InProgress` или `Closed`.|
+|подСостояние |String| Дочерний статус запроса на назначение роли. Возможные значения `Accepted`:, `PendingEvaluation` `Granted` `Denied` `PendingProvisioning` `PendingAdminDecision` `AdminApproved` `AdminDenied` `TimedOut` `FailedAsResourceIsLocked` `ProvisioningStarted`,,,,,,,,,,,,,, и. `Provisioned` `PendingRevocation` `Revoked` `Canceled` `Failed` `PendingApprovalProvisioning` `PendingApproval`|
+|Статусдетаилс       |Коллекция [keyValue](../resources/keyvalue.md)| Сведения о состоянии запроса на назначение роли. Он представляет результаты оценки различных правил. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

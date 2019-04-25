@@ -6,11 +6,11 @@ title: ListItem
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 435544db272b26e6fe3ac0e09803858eec9d05f6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480882"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581643"
 ---
 # <a name="listitem-resource"></a>Ресурс ListItem
 
@@ -38,9 +38,9 @@ ms.locfileid: "30480882"
 [Получение]: ../api/listitem-get.md
 [Получение аналитики]: ../api/itemanalytics-get.md
 [Получение действий по интервалу]: ../api/itemactivity-getbyinterval.md
-[Create]: ../api/listitem-create.md
-[Delete]: ../api/listitem-delete.md
-[Update]: ../api/listitem-update.md
+[Создание]: ../api/listitem-create.md
+[Удаление]: ../api/listitem-delete.md
+[Обновление]: ../api/listitem-update.md
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -91,11 +91,11 @@ ms.locfileid: "30480882"
 
 | Имя свойства        | Тип              | Описание
 |:---------------------|:------------------|:----------------------------------
-| id                   | string            | Уникальный идентификатор элемента. Только для чтения.
+| id                   | строка            | Уникальный идентификатор элемента. Только для чтения.
 | name                 | string            | Имя или название элемента.
 | createdBy            | [identitySet][]   | Удостоверение создателя данного элемента. Только для чтения.
 | createdDateTime      | DateTimeOffset    | Дата и время создания элемента. Только для чтения.
-| description          | string            | Текст с описанием элемента.
+| description          | строка            | Текст с описанием элемента.
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Удостоверение пользователя, который последним изменил данный элемент. Только для чтения.
 | lastModifiedDateTime | DateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.
@@ -110,10 +110,10 @@ ms.locfileid: "30480882"
 | Имя связи | Тип                           | Описание
 |:------------------|:-------------------------------|:-------------------------------
 | activities        | Коллекция [itemActivity][]    | Список последних действий, выполненных с элементом.
-| аналитическ         | Ресурс [itemAnalytics][]     | Аналитика сведений о действиях, которые были выполнены для этого элемента.
+| analytics         | Ресурс [itemAnalytics][]     | Аналитика сведений о действиях, которые были выполнены для этого элемента.
 | driveItem         | [driveItem][]                  | Для библиотек документов связь **driveItem** предоставляет ресурс listItem как объект **[driveItem][]**
 | fields            | [fieldValueSet][]              | Значения столбцов, установленные для данного элемента списка.
-| Версия          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.
+| versions          | Коллекция [listItemVersion][] | Список предыдущих версий элемента списка.
 
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
@@ -124,7 +124,7 @@ ms.locfileid: "30480882"
 [itemAnalytics]: itemanalytics.md
 [itemReference]: itemreference.md
 [list]: list.md
-[listItemVersion]: listitemversion.md.
+[listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
 
 <!--

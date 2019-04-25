@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 678c6e78070a7aae185a041962083b7908ef1cc1
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549408"
 ---
 # <a name="omasettingbase64-resource-type"></a>Тип ресурса omaSettingBase64
 
@@ -29,7 +29,7 @@ ms.locfileid: "30258592"
 |fileName|String|Имя файла, связанное со свойством Value (CER,  | *. CRT | *. p7b | *. bin).|
 |value|Строка|Значение (строка в кодировке Base64).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

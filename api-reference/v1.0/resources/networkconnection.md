@@ -1,40 +1,40 @@
 ---
 title: Тип ресурса networkConnection
-description: Содержит информацию о состояниях о сетевое подключение, связанные с оповещение.
+description: Содержит сведения о состоянии сетевого подключения, связанного с оповещением.
 localization_priority: Normal
 ms.openlocfilehash: 78ddcfd19d68b8dcd64c74a5beed6d1430f0ca38
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27826511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580277"
 ---
 # <a name="networkconnection-resource-type"></a>Тип ресурса networkConnection
 
-Содержит информацию о состояниях о сетевое подключение, связанные с оповещение.
+Содержит сведения о состоянии сетевого подключения, связанного с оповещением.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|applicationName|String|Имя приложения, управление сетевое подключение (например, Facebook, SMTP, и т.д.).|
-|destinationAddress|Строка|Конечный IP-адрес (сетевое подключение).|
-|destinationDomain|Строка|Часть домена конечный URL-адрес назначения. (например «www.contoso.com»).|
-|destinationPort|Строка|Порт назначения (сетевое подключение).|
-|destinationUrl|Строка|Строка подключения URL-адрес или URI - исключение параметров в сети. (например, «www.contoso.com/products/default.html»)|
-|Направление|connectionDirection|Направление подключения к сети. Возможные значения: `unknown`, `inbound`, `outbound`.|
-|domainRegisteredDateTime|DateTimeOffset|Дата регистрации целевом домене. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|localDnsName|Строка|Локальное разрешение имен DNS как оно отображается в локальном кэше DNS узла (например, в случае подделано файл «hosts»).|
-|natDestinationAddress|Строка|Преобразование адресов конечный IP-адрес в сети.|
-|natDestinationPort|Строка|Конечный порт преобразование адресов в сети.|
-|natSourceAddress|Строка|Преобразование адресов исходный IP-адрес в сети.|
-|natSourcePort|Строка|Порт источника, преобразование адресов сети.|
-|protocol|[securityNetworkProtocol](securitynetworkprotocol.md)|Сетевой протокол. Возможные значения: `unknown`, `ip`, `icmp`, `igmp`, `ggp`, `ipv4`, `tcp`, `pup`, `udp`, `idp`, `ipv6`, `ipv6RoutingHeader`, `ipv6FragmentHeader`, `ipSecEncapsulatingSecurityPayload`, `ipSecAuthenticationHeader`, `icmpV6`, `ipv6NoNextHeader`, `ipv6DestinationOptions`, `nd` , `raw`, `ipx`, `spx`, `spxII`.|
-|riskScore|Строка|Поставщик создан/вычисляется риск показатель для подключения к сети. Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
-|sourceAddress|Строка|(То есть источник) IP-адрес источника (сетевое подключение).|
-|sourcePort|Строка|Исходный (то есть источник) IP-адрес порт (сетевое подключение).|
-|status|connectionStatus|Состояние подключения к сети. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
-|urlParameters|Строка|Параметры (суффикс) URL-адрес назначения.|
+|applicationName|String|Имя приложения, управляющего сетевым подключением (например, Facebook, SMTP и т. д.).|
+|Дестинатионаддресс|String|Конечный IP-адрес (сетевого подключения).|
+|Дестинатиондомаин|String|Часть конечного домена, в которой находится конечный URL-адрес. (например, "www.contoso.com").|
+|Дестинатионпорт|String|Порт назначения (для сетевого подключения).|
+|Дестинатионурл|String|URL-адрес сетевого подключения/URI-строка — без параметров. (например, "www.contoso.com/products/Default.HTML")|
+|direction|connectionDirection|Направление сетевого подключения. Возможные значения: `unknown`, `inbound`, `outbound`.|
+|Домаинрегистереддатетиме|DateTimeOffset|Дата регистрации конечного домена. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Локалднснаме|String|Локальное разрешение DNS-имен, отображаемое в локальном кэше DNS узла (например, на случай, если файл hosts был подделан).|
+|Натдестинатионаддресс|String|IP-адрес назначения преобразования сетевых адресов.|
+|Натдестинатионпорт|String|Порт назначения преобразования сетевых адресов.|
+|Натсаурцеаддресс|String|IP-адрес источника преобразования сетевых адресов.|
+|Натсаурцепорт|String|Порт источника преобразования сетевых адресов.|
+|Protocol|[securityNetworkProtocol](securitynetworkprotocol.md)|Сетевой протокол. Возможные значения: `unknown`, `ip`, `icmp`, `igmp` `ggp` `ipv4` `tcp` `ipSecEncapsulatingSecurityPayload` `ipSecAuthenticationHeader` `icmpV6` `ipv6NoNextHeader` `ipv6DestinationOptions` `nd` `ipv6RoutingHeader` `ipv6FragmentHeader`,,,,,,,,,,,,,,,,,,,,, `pup` `udp` `idp` `ipv6` , `raw`, `ipx`, `spx`, `spxII`.|
+|riskScore|String|Созданный поставщиком/вычисляемый показатель риска для сетевого подключения. Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
+|Саурцеаддресс|String|Источник (то есть источник) IP-адрес сетевого подключения.|
+|Саурцепорт|String|Исходный (то есть источник) IP-порт (сетевого подключения).|
+|status|connectionStatus|Состояние сетевого подключения. Возможные значения: `unknown`, `attempted`, `succeeded`, `blocked`, `failed`.|
+|Урлпараметерс|String|Параметры (суффикс) конечного URL-адреса.|
 
 ## <a name="json-representation"></a>Представление JSON
 

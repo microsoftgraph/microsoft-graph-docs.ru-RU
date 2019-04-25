@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: a9da6ea1bc1570f40fe4159d9c62951fca539cb5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544586"
 ---
 # <a name="get-team"></a>Получение команды
 
@@ -43,7 +43,7 @@ GET /teams/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 

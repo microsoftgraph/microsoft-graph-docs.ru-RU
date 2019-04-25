@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса plannerCategoryDescriptions
-description: 'Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту сведений о плане. Можно задать до 6 категорий. '
+title: Тип ресурса Планнеркатегоридескриптионс
+description: 'Ресурс **планнеркатегоридескриптионс** представляет описательные метки для категорий, определенных для плана. Он принадлежит объекту сведений о плане. Может быть определено до 6 категорий. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 33031dc3c688e1fefb34109cb0a4a303dbe1c183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579032"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a>Тип ресурса plannerCategoryDescriptions
+# <a name="plannercategorydescriptions-resource-type"></a>Тип ресурса Планнеркатегоридескриптионс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту [сведений о плане](plannerplandetails.md). Можно задать до 6 категорий. 
+Ресурс **планнеркатегоридескриптионс** представляет описательные метки для категорий, определенных для плана. Он принадлежит объекту [сведений о плане](plannerplandetails.md) . Может быть определено до 6 категорий. 
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|category1|String|Метка, сопоставленная с категорией 1.|
-|category2|String|Метка, сопоставленная с категорией 2.|
-|category3|String|Метка, сопоставленная с категорией 3.|
-|category4|String|Метка, сопоставленная с категорией 4.|
-|category5|String|Метка, сопоставленная с категорией 5.|
-|category6|String|Метка, сопоставленная с категорией 6.|
+|Category1|String|Метка, связанная с категорией 1|
+|category2|String|Метка, сопоставленная с категорией 2|
+|Category3|String|Метка, связанная с категорией 3|
+|category4|String|Метка, сопоставленная с категорией 4|
+|category5|String|Метка, сопоставленная с категорией 5|
+|category6|String|Метка, сопоставленная с категорией 6|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

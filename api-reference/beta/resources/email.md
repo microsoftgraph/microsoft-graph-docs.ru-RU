@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса электронной почты
-description: Ниже представлено описание ресурса в формате JSON.
+description: Ниже этот ресурс представлен в формате JSON.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: cc1fc5bf69cb420b8cd0476a439123e90b236b48
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512586"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542988"
 ---
 # <a name="email-resource-type"></a>Тип ресурса электронной почты
 

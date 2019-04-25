@@ -3,11 +3,11 @@ title: Удаление вложения
 description: Удаление вложения из данных календаря о событии, сообщения почты или записи группы.
 localization_priority: Normal
 ms.openlocfilehash: f6ac2e60c9fdc8a224e22a49e6928cdc41e9730b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816998"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551465"
 ---
 # <a name="delete-attachment"></a>Удаление вложения
 
@@ -15,9 +15,9 @@ ms.locfileid: "27816998"
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-* Если доступ к вложений в сообщениях: Mail.ReadWrite.
-* Если доступ к вложениям в события: Calendars.ReadWrite.
-* Если доступ к вложениям в группу публикации: Group.ReadWrite.All.
+* При доступе к вложениям в сообщениях: mail. ReadWrite.
+* При доступе к вложениям в событиях: Calendars. ReadWrite.
+* При доступе к вложениям в записях групп: Group. ReadWrite. ALL.
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All.
@@ -66,8 +66,7 @@ DELETE /users/{id | userPrincipalName}/messages/{id}/attachments/{id}
 DELETE /me/mailFolders/{id}/messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/attachments/{id}
 ```
-Вложения для [сообщений](../resources/message.md) , содержащихся в дочерней папкой [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показана один уровень вложения, но сообщение может быть найдена в дочерних дочернего и т. д.
-<!-- { "blockType": "ignored" } -->
+Вложения [сообщения](../resources/message.md) в дочерней папке объекта [mailFolder](../resources/mailfolder.md) в почтовом ящике пользователя.  В приведенном ниже примере показан один уровень вложенности, но сообщение может находиться в папке, вложенной в дочернюю, и т. д.<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/mailFolders/{id}/childFolders/{id}/.../messages/{id}/attachments/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages/{id}/attachments/{id}
@@ -83,8 +82,8 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 |:---------------|:--------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -100,7 +99,7 @@ DELETE /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/me/events/{id}/attachments/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

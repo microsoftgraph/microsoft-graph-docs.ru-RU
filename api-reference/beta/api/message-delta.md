@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 8a5f6f22fc037eb1853f4c16fbb60d05099562aa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518914"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540537"
 ---
 # <a name="message-delta"></a>message: delta
 
@@ -60,7 +60,7 @@ GET /users/<id>/mailFolders/{id}/messages/delta
 | Content-Type  | string  | application/json. Обязательный. |
 | Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и объект [message](../resources/message.md) в тексте ответа.
 
@@ -86,7 +86,7 @@ Prefer: odata.maxpagesize=2
 
 Ниже показан отклик с маркером состояния _skipToken_ в заголовке отклика _@odata.nextLink_.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

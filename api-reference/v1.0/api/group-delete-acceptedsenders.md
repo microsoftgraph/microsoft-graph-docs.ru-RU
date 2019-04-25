@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 86d9cc6cd0adf1c29f64044299daa1ed2c8403d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962368"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548144"
 ---
 # <a name="remove-acceptedsender"></a>Удаление объекта acceptedSender
 Удаление пользователя или группы из списка acceptedSenders. 
@@ -36,8 +36,8 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 |:---------------|:---------------------------|
 | Авторизация  | Bearer {токен}. Обязательный.  
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
@@ -54,8 +54,8 @@ DELETE /groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/gr
 DELETE https://graph.microsoft.com/v1.0/groups/{id}/acceptedSenders/$ref?$id=https://graph.microsoft.com/v1.0/users/{user-id}
 ```
 
-#### <a name="response"></a>Ответ
-Ниже приведен пример ответа. 
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 
 <!-- {
   "blockType": "response",

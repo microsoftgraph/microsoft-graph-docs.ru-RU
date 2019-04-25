@@ -3,11 +3,11 @@ title: Тип ресурса provisionedPlan
 description: Свойство **provisionedPlans** объектов user и organization представляет собой коллекцию объектов **provisionedPlan**.
 localization_priority: Normal
 ms.openlocfilehash: dd8d4f5b406a2291a829d7c11d4948bd9a08d453
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27831488"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579666"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 
@@ -17,11 +17,11 @@ ms.locfileid: "27831488"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Пример: "Enabled".|
+|Капабилитистатус|String|Пример: "Enabled".|
 |provisioningStatus|String|Пример: "Success".|
 |service|String|Имя службы, например “AccessControlS2S”.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

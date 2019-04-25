@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта se
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 7bcad2d3249b0ac7c5bd08d3d61742e7dc5166d6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: fcbecbd0c15efc493164929f769a79deb3cbd98a
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482254"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545511"
 ---
 # <a name="get-securityaction"></a>Получение объекта securityAction
 
@@ -23,7 +23,7 @@ ms.locfileid: "30482254"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
 
@@ -43,13 +43,13 @@ GET /security/securityActions/{id}
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Авторизация | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [securityAction](../resources/securityaction.md) в тексте отклика.
 
@@ -67,7 +67,7 @@ GET /security/securityActions/{id}
 GET https://graph.microsoft.com/beta/security/securityActions/{id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

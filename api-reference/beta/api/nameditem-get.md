@@ -3,11 +3,11 @@ title: Получение объекта NamedItem
 description: Получение свойств и связей объекта nameditem.
 localization_priority: Normal
 ms.openlocfilehash: 80c98e34239ddd81cc5a52308f105bb698ee6125
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643806"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540256"
 ---
 # <a name="get-nameditem"></a>Получение объекта NamedItem
 
@@ -37,7 +37,7 @@ GET /workbook/names(<name>)
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик

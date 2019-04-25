@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса sharingDetail
+title: Тип ресурса Шарингдетаил
 description: 'Сложный тип, содержащий свойства общих элементов. '
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 3fff669b2b337e9566cd41a7cd5eb5ab73a84944
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551563"
 ---
-# <a name="sharingdetail-resource-type"></a>Тип ресурса sharingDetail
+# <a name="sharingdetail-resource-type"></a>Тип ресурса Шарингдетаил
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -34,11 +34,11 @@ ms.locfileid: "29643351"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |-----------    | -------------|
-| sharedDateTime        | DateTimeOffset| Дата и время последнего общий файл. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.  |
-| sharingSubject        | String          | Тема, с которым предоставлен общий доступ в документе. |
-| sharingType             | String        | Определяет способ документ предоставлен общий доступ, может быть «Ссылка», «Вложения», «Группа», «Сайт».     |
-| sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, общих документов.  |
-| sharingReference        | [resourceReference](insights-resourcereference.md)      |  |
+| sharedDateTime        | DateTimeOffset| Дата и время последнего предоставления общего доступа к файлу. Метка времени представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `2014-01-01T00:00:00Z`. Только для чтения.  |
+| Шарингсубжект        | String          | Тема, к которой был предоставлен общий доступ к документу. |
+| Шарингтипе             | String        | Определяет способ предоставления общего доступа к документу, который может быть "ссылка", "вложение", "Группа", "сайт".     |
+| sharedBy                | [insightIdentity](insights-insightidentity.md)      | Пользователь, имеющий общий доступ к документу.  |
+| Шарингреференце        | [Ресаурцереференце](insights-resourcereference.md)      |  |
 <!--
 {
   "type": "#page.annotation",

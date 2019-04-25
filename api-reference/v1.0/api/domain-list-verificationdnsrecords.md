@@ -1,23 +1,23 @@
 ---
-title: Перечисление verificationDnsRecords
+title: Список verificationDnsRecords
 description: Получение списка объектов domainDnsRecord.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e0339b9bf50551d9bcb10ad2c5c582beabc4c9b9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27927235"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551528"
 ---
-# <a name="list-verificationdnsrecords"></a>Перечисление verificationDnsRecords
+# <a name="list-verificationdnsrecords"></a>Список verificationDnsRecords
 
-Получение списка объектов [domainDnsRecord](../resources/domaindnsrecord.md).
+Получение списка объектов [domainDnsRecord](../resources/domaindnsrecord.md) .
 
-Вам не удастся использовать сопоставленный домен с вашим клиентом Azure AD, пока не будет проверено владение доменом. Чтобы подтвердить владение доменом, получите записи проверки домена и добавьте сведения в файл зоны домена. Это можно сделать с помощью регистратора доменных имен или путем настройки DNS-сервера.
+Вы не можете использовать связанный домен с клиентом Azure AD, пока не будет проверено владение. Чтобы проверить владение доменом, извлеките записи проверки домена и добавьте сведения в файл зоны домена. Это можно сделать с помощью регистратора доменных имен или DNS-сервера.
 
-Для корневых доменов требуется проверка. Например, для домена contoso.com требуется проверка. Если корневой домен проверен, то его дочерние домены будут автоматически считаться проверенными. Например, если домен contoso.com проверен, то его дочерний домен subdomain.contoso.com будет автоматически считаться проверенным.
+Корневые домены требуют проверки. Например, для contoso.com требуется проверка. При проверке корневого домена автоматически проверяются дочерние домены корневого домена. Например, subdomain.contoso.com автоматически проверяется, если contoso.com проверено.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -49,13 +49,13 @@ GET /domains/{id}/verificationDnsRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -68,9 +68,9 @@ GET /domains/{id}/verificationDnsRecords
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/verificationDnsRecords
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

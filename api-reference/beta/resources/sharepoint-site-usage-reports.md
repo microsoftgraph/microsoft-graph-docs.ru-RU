@@ -1,21 +1,21 @@
 ---
 title: Отчеты об использовании сайтов SharePoint
-description: Можно получить высокоуровневое представление значение, которое вы получаете из SharePoint с точки зрения общее число файлов, которые пользователи хранят на сайтах SharePoint, сколько файлов используется и хранения данных, использования по всем сайтам. Затем можно перейти в отчет об использовании сайта SharePoint для понимания тенденции и на уровне сведений о среде для всех сайтов.
+description: Вы можете получить высокоуровневое представление значения, получаемого из SharePoint, в терминах общего числа файлов, которые пользователи хранят на сайтах SharePoint, сколько файлов активно используется, а хранилище потребляется на всех этих сайтах. Затем вы можете детализировать отчет об использовании сайта SharePoint, чтобы выявить тенденции и получить сведения об использовании на уровне сайта.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: f25d752a179eac68b34465010ce6f2cb7fab08e8
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29575281"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584079"
 ---
 # <a name="sharepoint-site-usage-reports"></a>Отчеты об использовании сайтов SharePoint
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Можно получить высокоуровневое представление значение, которое вы получаете из SharePoint с точки зрения общее число файлов, которые пользователи хранят на сайтах SharePoint, сколько файлов используется и хранения данных, использования по всем сайтам. Затем можно перейти в отчет об использовании сайта SharePoint для понимания тенденции и на уровне сведений о среде для всех сайтов.
+Вы можете получить высокоуровневое представление значения, получаемого из SharePoint, в терминах общего числа файлов, которые пользователи хранят на сайтах SharePoint, сколько файлов активно используется, а хранилище потребляется на всех этих сайтах. Затем вы можете детализировать отчет об использовании сайта SharePoint, чтобы выявить тенденции и получить сведения об использовании на уровне сайта.
 
 > **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/SharePoint-site-usage-4ecfb843-e5d5-464d-8bf6-7ed512a9b213).
 
@@ -23,11 +23,11 @@ ms.locfileid: "29575281"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о сайтах](../api/reportroot-getsharepointsiteusagedetail.md) | Поток          | [sharePointSiteUsageDetail](../resources/sharepointsiteusagedetail.md) | Получите сведения об использовании сайтов SharePoint. |
-| [Получение количества файлов](../api/reportroot-getsharepointsiteusagefilecounts.md) | Stream          | [sharePointSiteUsageFileCounts](../resources/sharepointsiteusagefilecounts.md) | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
-| [Получение количества сайтов](../api/reportroot-getsharepointsiteusagesitecounts.md) | Поток          | [sharePointSiteUsageSiteCounts](../resources/sharepointsiteusagesitecounts.md) | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
-| [Получение занятого объема хранилища](../api/reportroot-getsharepointsiteusagestorage.md) | Stream          | [siteUsageStorage](../resources/siteusagestorage.md) | Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период. |
-| [Получение количества страниц](../api/reportroot-getsharepointsiteusagepages.md) | Stream          | [sharePointSiteUsagePages](../resources/sharepointsiteusagepages.md) | Узнайте, сколько страниц было просмотрено на всех сайтах. |
+| [Получение сведений о сайтах](../api/reportroot-getsharepointsiteusagedetail.md) | Поток          | [Шарепоинтситеусажедетаил](../resources/sharepointsiteusagedetail.md) | Получите сведения об использовании сайтов SharePoint. |
+| [Получение количества файлов](../api/reportroot-getsharepointsiteusagefilecounts.md) | Поток          | [Шарепоинтситеусажефилекаунтс](../resources/sharepointsiteusagefilecounts.md) | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
+| [Получение количества сайтов](../api/reportroot-getsharepointsiteusagesitecounts.md) | Поток          | [Шарепоинтситеусажеситекаунтс](../resources/sharepointsiteusagesitecounts.md) | Узнайте, сколько всего файлов на всех сайтах и сколько из них активны. Файл (пользователь или система) считается активным, если он был сохранен, синхронизирован, изменен или отправлен в указанный период. |
+| [Получение занятого объема хранилища](../api/reportroot-getsharepointsiteusagestorage.md) | Поток          | [Ситеусажестораже](../resources/siteusagestorage.md) | Отслеживайте динамику выделенного и использованного объема хранилища за отчетный период. |
+| [Получение количества страниц](../api/reportroot-getsharepointsiteusagepages.md) | Stream          | [Шарепоинтситеусажепажес](../resources/sharepointsiteusagepages.md) | Узнайте, сколько страниц было просмотрено на всех сайтах. |
 <!--
 {
   "type": "#page.annotation",

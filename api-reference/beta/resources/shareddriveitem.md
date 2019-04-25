@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: SharedDriveItem
 localization_priority: Normal
 ms.openlocfilehash: b146fdf0f7ee2e2037fcb1d36511d0afa503005b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584112"
 ---
 # <a name="shareddriveitem-resource-type"></a>Тип ресурса SharedDriveItem
 
@@ -50,8 +50,8 @@ ms.locfileid: "30480630"
 
 | Свойство | Тип                          | Описание                                                      |
 | :------- | :---------------------------- | :--------------------------------------------------------------- |
-| id       | String                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
-| name     | Строка                        | Отображаемое имя общего элемента.                             |
+| id       | Строка                        | Уникальный идентификатор для общего ресурса, к которому предоставляется доступ.              |
+| name     | String                        | Отображаемое имя общего элемента.                             |
 | owner    | [IdentitySet](identityset.md) | Сведения о владельце общего элемента, ставшего объектом ссылки. |
 
 ## <a name="relationships"></a>Связи

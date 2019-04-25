@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса attributeMappingParameterSchema
-description: Описывает один параметр, используемый в attributeMappingFunctionSchema.
+title: Тип ресурса Аттрибутемаппингпараметерсчема
+description: Описывает один параметр, используемый в Аттрибутемаппингфунктионсчема.
 localization_priority: Normal
 ms.openlocfilehash: bad88fc58dcc529f086a3e3870e0bb10a9d23329
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529952"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582229"
 ---
-# <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса attributeMappingParameterSchema
+# <a name="attributemappingparameterschema-resource-type"></a>Тип ресурса Аттрибутемаппингпараметерсчема
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает один параметр, используемый в [attributeMappingFunctionSchema](../resources/synchronization-attributemappingfunctionschema.md).
+Описывает один параметр, используемый в [аттрибутемаппингфунктионсчема](../resources/synchronization-attributemappingfunctionschema.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:-------------------------|:---------------|
-|allowMultipleOccurrences    |Логическое                   |Данному параметру можно указать несколько раз (например нескольких входных данных строки в `Concatenate(string,string,...)` функция). |
-|name                        |String                    |Имя параметра |
-|Обязательный                    |Логическое                   |`true`Если параметр является обязательным; в противном случае `false`. |
+|Алловмултиплеоккурренцес    |Boolean                   |Данный параметр может быть указан несколько раз (например, с несколькими входными строками в `Concatenate(string,string,...)` функции). |
+|name                        |String                    |Имя параметра. |
+|Обязательный                    |Boolean                   |`true`значение, если параметр является обязательным; в `false`противном случае. |
 |type                        |String                    |Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`. Значение по умолчанию: `String`.|
 
 ## <a name="json-representation"></a>Представление JSON

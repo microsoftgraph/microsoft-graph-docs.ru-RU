@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса bookingWorkTimeSlot
+title: Тип ресурса Букингворктимеслот
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: a193843617d5acc7e18d8a06993a1629b80762be
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513790"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543718"
 ---
-# <a name="bookingworktimeslot-resource-type"></a>Тип ресурса bookingWorkTimeSlot
+# <a name="bookingworktimeslot-resource-type"></a>Тип ресурса Букингворктимеслот
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Время начала и окончания для работы.
+Время начала и окончания работы.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|end|TimeOfDay|Время дня, работа начинается. Например 08:00:00.0000000.|
-|start|TimeOfDay|Время дня, работа останавливается. Например 17:00:00.0000000.|
+|end|TimeOfDay|Время суток, в которое начинается рабочий день. Например, 08:00:00.0000000.|
+|start|TimeOfDay|Время суток, когда работа завершается. Например, 17:00:00.0000000.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

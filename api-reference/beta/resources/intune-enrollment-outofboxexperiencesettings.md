@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 0f465297f437f3710f8c789d8683794b7c9d5fa5
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31773513"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547013"
 ---
 # <a name="outofboxexperiencesettings-resource-type"></a>Тип ресурса Outofboxexperiencesettings.
 
@@ -22,12 +22,12 @@ ms.locfileid: "31773513"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Хидепривацисеттингс|Boolean|Отображение или скрытие параметров конфиденциальности для пользователя|
-|Хидиула|Boolean|Отображение или скрытие ЛИЦЕНЗИОНного соглашения для пользователя|
+|Хидепривацисеттингс|Логический|Отображение или скрытие параметров конфиденциальности для пользователя|
+|Хидиула|Логический|Отображение или скрытие ЛИЦЕНЗИОНного соглашения для пользователя|
 |userType|[Виндовсусертипе](../resources/intune-enrollment-windowsusertype.md)|Тип пользователя. Возможные значения: `administrator`, `standard`.|
-|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md)|Тип проверки подлинности присоединения AAD. Возможные значения: `singleUser`, `shared`.|
-|Скипкэйбоардселектионпаже|Boolean|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
-|Хидискапелинк|Boolean|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
+|deviceUsageType|[windowsDeviceUsageType](../resources/intune-enrollment-windowsdeviceusagetype.md).|Тип проверки подлинности присоединения AAD. Возможные значения: `singleUser`, `shared`.|
+|Скипкэйбоардселектионпаже|Логический|Если задано, пропускать страницу "Выбор клавиатуры", если задан язык и регион|
+|Хидискапелинк|Логический|Если задано значение true, пользователь не сможет начать с другой учетной записи, при входе в компанию|
 
 ## <a name="relationships"></a>Отношения
 Нет

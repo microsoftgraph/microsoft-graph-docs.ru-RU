@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса emailAppUsageAppsUserCounts
+title: Тип ресурса Емаилаппусажеаппсусеркаунтс
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 220770fab755c0e345af23f3fc3113732af63ff0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27970383"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542813"
 ---
-# <a name="emailappusageappsusercounts-resource-type"></a>Тип ресурса emailAppUsageAppsUserCounts
+# <a name="emailappusageappsusercounts-resource-type"></a>Тип ресурса Емаилаппусажеаппсусеркаунтс
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
-| mailForMac        | Int64  |
-| outlookForMac     | Int64  |
-| outlookForWindows | Int64  |
-| outlookForMobile  | Int64  |
-| otherForMobile    | Int64  |
-| outlookForWeb     | Int64  |
+| Репортрефрешдате | Дата   |
+| Маилформак        | Int64  |
+| Аутлукформак     | Int64  |
+| Аутлукфорвиндовс | Int64  |
+| Аутлукформобиле  | Int64  |
+| Осерформобиле    | Int64  |
+| Аутлукфорвеб     | Int64  |
 | pop3App           | Int64  |
 | imap4App          | Int64  |
-| smtpApp           | Int64  |
-| reportPeriod      | String |
+| Смтпапп           | Int64  |
+| Репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

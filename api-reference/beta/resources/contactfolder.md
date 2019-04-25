@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 599f1765b6305d2dc4d482ec035ee4b24eb5183a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640870"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543387"
 ---
 # <a name="contactfolder-resource-type"></a>Тип ресурса contactFolder
 
@@ -17,40 +17,40 @@ ms.locfileid: "29640870"
 
 Папка, содержащая контакты.
 
-В этом ресурсе возможно использование [запроса изменений](/graph/delta-query-overview) для отслеживания добавочных дополнений, удалений и обновлений благодаря функции [delta](../api/contactfolder-delta.md).
+Этот ресурс поддерживает отслеживание добавлений, удалений и обновлений с помощью [разностного запроса](/graph/delta-query-overview) с функцией [delta](../api/contactfolder-delta.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md) |Получение папки с контактами с помощью идентификатора папки контактов.|
-|[Обновление](../api/contactfolder-update.md) | [contactFolder](contactfolder.md) |Обновление объекта contactFolder. |
+|[Получение contactFolder](../api/contactfolder-get.md) | [contactFolder](contactfolder.md). |Получение папки с контактами с помощью идентификатора папки контактов.|
+|[Обновление](../api/contactfolder-update.md) | [contactFolder](contactfolder.md). |Обновление объекта contactFolder. |
 |[Удаление](../api/contactfolder-delete.md) | Нет |Удаление объекта contactFolder. |
 |[Список экземпляров childFolders](../api/contactfolder-list-childfolders.md) |Коллекция [contactFolder](contactfolder.md)| Получение коллекции дочерних папок для указанной папки с контактами.|
-|[Создание дочернего элемента contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md).| Создание дочернего элемента contactFolder для указанной папки.|
+|[Создание дочернего элемента contactFolder](../api/contactfolder-post-childfolders.md) |[contactFolder](contactfolder.md).| Создание дочернего объекта contactFolder указанной папки.|
 |[delta](../api/contact-delta.md)|Коллекция [contact](contact.md)| Получение набора папок контактов, которые были добавлены в почтовый ящик пользователя или удалены из него.|
 |[Список контактов в папке](../api/contactfolder-list-contacts.md) |Коллекция [contact](contact.md)| Получение коллекции контактов из стандартной папки с контактами для пользователя, выполнившего вход (`.../me/contacts`), или из указанной папки с контактами.|
 |[Создание контакта в папке](../api/contactfolder-post-contacts.md) |[contact](contact.md)| Добавление контакта в корневую папку с контактами или конечную точку `contacts` другой папки с контактами.|
 |**Расширенные свойства**| | |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md)  |Создание одного или несколько расширенных свойств с одним значением в новом или существующем экземпляре contactFolder.   |
-|[Получение contactFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Получение экземпляров contactFolder, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
-|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем экземпляре contactFolder.  |
-|[Получение contactFolder с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md) | Получение экземпляра contactFolder, который содержит расширенное свойство с несколькими значениями, при помощи `$expand`. |
+|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contactFolder](contactfolder.md).  |Создание одного или несколько расширенных свойств с одним значением в новом или существующем экземпляре contactFolder.   |
+|[Получение contactFolder с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md). | Получение экземпляров contactFolder, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
+|[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contactFolder](contactfolder.md). | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем экземпляре contactFolder.  |
+|[Получение contactFolder с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [contactFolder](contactfolder.md). | Получение экземпляра contactFolder, который содержит расширенное свойство с несколькими значениями, при помощи `$expand`. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |displayName|String|Отображаемое имя папки.|
-|id|String|Уникальный идентификатор папки с контактами. Только для чтения.|
+|id|Строка|Уникальный идентификатор папки с контактами. Только для чтения.|
 |parentFolderId|String|Идентификатор родительской папки для папки.|
-|wellKnownName|строка|Имя папки, если распознанный папки. В настоящее время `contacts` является единственным папку распознанный контакты.|
+|wellKnownName|string|Имя папки, если она является распознаваемой папкой. В `contacts` настоящее время это единственная распознанная папка контактов.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |childFolders|Коллекция [ContactFolder](contactfolder.md)|Коллекция дочерних папок в папке. Свойство навигации. Только для чтения. Допускается значение null.|
-|contacts|Коллекция [contact](contact.md)|Контакты в папке. Свойство навигации. Только для чтения. Допускается значение null.|
+|contacts|Коллекция [Contact](contact.md)|Контакты в папке. Свойство навигации. Только для чтения. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для contactFolder. Только для чтения. Допускается значение null.|
 |singleValueExtendedProperties|Коллекция [singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md)| Коллекция расширенных свойств с одним значением, определенных для contactFolder. Только для чтения. Допускается значение null.|
 

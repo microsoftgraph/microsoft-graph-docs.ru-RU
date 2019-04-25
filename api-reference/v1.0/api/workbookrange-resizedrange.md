@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 4eb5aad208ecd7c60e45b2419b61570915bb7338
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931295"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554648"
 ---
 # <a name="workbookrange-resizedrange"></a>workbookRange: resizedRange
 Возвращает объект диапазона, подобный текущему объекту диапазона, но увеличенный (или уменьшенный) на некоторое количество строк и столбцов в правом нижнем углу.
@@ -30,12 +30,12 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |deltaRows|Int32|Количество строк, добавляемых в правый нижний угол текущего диапазона. Используйте положительное число, чтобы расширить диапазон, или отрицательное число, чтобы уменьшить его.|
-|deltaColumns|Int32|Число столбцов, с помощью которого разверните нижний правый угол относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное значение, чтобы уменьшить его.|
+|deltaColumns|Int32|Количество столбцов, по которым разворачивается нижний правый угол относительно текущего диапазона. Используйте положительное число, чтобы расширить диапазон или отрицательное число, чтобы уменьшить его.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -43,8 +43,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Отклик
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [workbookRange](../resources/range.md) в теле отклика.
@@ -63,8 +63,8 @@ POST /me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, d
 POST https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/range/resizedRange(deltaRows={n}, deltaColumns={n})
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

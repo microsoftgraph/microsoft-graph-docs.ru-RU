@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 49e8f0efc187653b6070296ff8c9ed43967056b1
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31780716"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552424"
 ---
 # <a name="androidforworksettings-resource-type"></a>Тип ресурса androidForWorkSettings
 
@@ -22,10 +22,10 @@ ms.locfileid: "31780716"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Get androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Чтение свойств и связей объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
-|[Update androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-update.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Обновление свойств объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
+|[Получение объекта androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-get.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md);|Чтение свойств и связей объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
+|[Обновление объекта androidForWorkSettings](../api/intune-androidforwork-androidforworksettings-update.md)|[androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md)|Обновление свойств объекта [androidForWorkSettings](../resources/intune-androidforwork-androidforworksettings.md).|
 |[Действие requestSignupUrl](../api/intune-androidforwork-androidforworksettings-requestsignupurl.md)|String|Пока не задокументировано.|
-|[Действие completeSignup](../api/intune-androidforwork-androidforworksettings-completesignup.md)|Нет|Пока не задокументировано|
+|[completeSignup action](../api/intune-androidforwork-androidforworksettings-completesignup.md)|Нет|Пока не задокументировано|
 |[Действие syncApps](../api/intune-androidforwork-androidforworksettings-syncapps.md)|Нет|Пока не задокументировано|
 |[Действие unbind](../api/intune-androidforwork-androidforworksettings-unbind.md)|Нет|Пока не задокументировано|
 
@@ -41,7 +41,7 @@ ms.locfileid: "31780716"
 |lastModifiedDateTime|DateTimeOffset|Время последнего изменения параметров Android for Work|
 |enrollmentTarget|[Андроидфорворкенроллменттаржет](../resources/intune-androidforwork-androidforworkenrollmenttarget.md)|Указывает, какие пользователи могут регистрировать устройства в Android для управления рабочими устройствами. Возможные значения: `none`, `all`, `targeted`, `targetedAsEnrollmentRestrictions`.|
 |targetGroupIds|Коллекция строк|Указывает, какие группы AAD могут регистрировать устройства для управления с помощью Android for Work, если для параметра enrollmentTarget задано значение Targeted.|
-|Девицеовнерманажементенаблед|Boolean|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
+|Девицеовнерманажементенаблед|Логический|Указывает, передается ли эта учетная запись управлению владельцами устройств Android с помощью Клауддпк.|
 
 ## <a name="relationships"></a>Отношения
 Нет

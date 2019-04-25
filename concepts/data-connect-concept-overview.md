@@ -5,11 +5,11 @@ author: ajacks-msft
 localization_priority: Priority
 ms.prod: data-connect
 ms.openlocfilehash: 8d12b35dfaa8b5a787d373c55ffbaafe2f69ac1f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27969081"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526363"
 ---
 # <a name="overview-of-microsoft-graph-data-connect-preview"></a>Обзор Microsoft Graph Data Connect (предварительная версия)
 Microsoft Graph содержит разнообразные данные о сотрудниках и их рабочих местах, включая сведения о том, как люди работают, общаются, выполняют совместные задания и управляют своим временем. Служба Microsoft Graph Data Connect предоставляет эти данные в Microsoft Azure, что обеспечивает доступ к наилучшим средствам разработки и размещения для работы с этими данными. Это позволяет клиентам использовать преимущества инновационных или отраслевых приложений, которые повышают производительность и обеспечивают полный контроль над данными Microsoft Graph. Корпорация Майкрософт также предлагает более безопасные средства управления, ожидаемые клиентами.

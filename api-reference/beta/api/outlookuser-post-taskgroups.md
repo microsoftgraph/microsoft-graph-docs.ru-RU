@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 364510c3d866b193012763d17dbc22f2e1d7c8f7
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869262"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539668"
 ---
 # <a name="create-outlooktaskgroup"></a>Создание outlookTaskGroup
 
@@ -61,7 +61,7 @@ Content-length: 40
 ```
 В тексте запроса добавьте представление объекта [OutlookTaskGroup](../resources/outlooktaskgroup.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

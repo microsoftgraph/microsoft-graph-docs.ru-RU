@@ -1,16 +1,16 @@
 ---
-title: Тип ресурса targetResourceApp
-description: Указывает объект приложения, который был добавлен, обновлении или удалении администраторами с как часть аудита активности. На основе targetResource ресурсов.
+title: Тип ресурса Таржетресаурцеапп
+description: Указывает, что объект приложения был добавлен, обновлен или удален администраторами в рамках действия аудита. Является производным от ресурса targetResource.
 localization_priority: Normal
 ms.openlocfilehash: e426eacb1bdea15a2666f45bb061d28afcc693bf
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27873369"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583118"
 ---
-# <a name="targetresourceapp-resource-type"></a>Тип ресурса targetResourceApp
-Указывает объект приложения, который был добавлен, обновлении или удалении администраторами с как часть аудита активности. На основе [targetResource](targetresource.md) ресурсов.
+# <a name="targetresourceapp-resource-type"></a>Тип ресурса Таржетресаурцеапп
+Указывает, что объект приложения был добавлен, обновлен или удален администраторами в рамках действия аудита. Является производным от ресурса [targetResource](targetresource.md) .
 
 
 

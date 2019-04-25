@@ -3,11 +3,11 @@ title: Просмотр ресурсов в Microsoft Graph
 description: Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.
 localization_priority: Priority
 ms.openlocfilehash: dc4cafc00516f4222ba6ec860dd45ff96d608dd8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581011"
 ---
 # <a name="traverse-microsoft-graph"></a>Просмотр ресурсов в Microsoft Graph
 

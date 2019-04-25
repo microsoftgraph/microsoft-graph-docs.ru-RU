@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 9d166a34d9cfa40c3a115a8e36e4f04a6732416c
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869395"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539737"
 ---
 # <a name="create-outlooktask"></a>Создание outlookTask
 
@@ -40,7 +40,7 @@ POST /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/task
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательное свойство.|
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр.|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [OutlookTask](../resources/outlooktask.md) в формате JSON.
@@ -77,7 +77,7 @@ Content-length: 376
 ##### <a name="response"></a>Ответ
 Метод POST игнорирует часть времени в теле запроса и принимает время в полночь всегда в заданном часовом поясе (PST). Затем по умолчанию метод POST преобразует и отображает все свойства, связанные с датой, в формате UTC в ответе.
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

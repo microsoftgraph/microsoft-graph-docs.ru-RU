@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса mailboxUsageDetail
+title: Тип ресурса Маилбоксусажедетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 63b4b997a0ae559338fffd2acfabaa35dcc306e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581270"
 ---
-# <a name="mailboxusagedetail-resource-type"></a>Тип ресурса mailboxUsageDetail
+# <a name="mailboxusagedetail-resource-type"></a>Тип ресурса Маилбоксусажедетаил
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                        | Тип    |
 | :------------------------------ | :------ |
-| reportRefreshDate               | Date    |
+| Репортрефрешдате               | Дата    |
 | userPrincipalName               | String  |
 | displayName                     | String  |
 | isDeleted                       | Boolean |
-| deletedDate                     | Date    |
-| Дата создания                     | Date    |
-| lastActivityDate                | Date    |
+| Делетеддате                     | Дата    |
+| createdDate                     | Дата    |
+| Ластактивитидате                | Дата    |
 | itemCount                       | Int64   |
-| storageUsedInBytes              | Int64   |
-| issueWarningQuotaInBytes        | Int64   |
-| prohibitSendQuotaInBytes        | Int64   |
-| prohibitSendReceiveQuotaInBytes | Int64   |
-| reportPeriod                    | String  |
+| Сторажеусединбитес              | Int64   |
+| Иссуеварнингкуотаинбитес        | Int64   |
+| Прохибитсендкуотаинбитес        | Int64   |
+| Прохибитсендрецеивекуотаинбитес | Int64   |
+| Репортпериод                    | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

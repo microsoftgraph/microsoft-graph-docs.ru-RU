@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса hostSecurityState
+title: Тип ресурса Хостсекуритистате
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 ms.openlocfilehash: d6f566a2bd42163c570fe837d2419057c62664bb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526699"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547412"
 ---
-# <a name="hostsecuritystate-resource-type"></a>Тип ресурса hostSecurityState
+# <a name="hostsecuritystate-resource-type"></a>Тип ресурса Хостсекуритистате
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит с сохранением состояния сведения об узле (включая устройства, компьютеры и т. п.).
+Содержит сведения о состоянии узла (включая устройства, компьютеры и т. д.).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
-|полное доменное имя|String|Полное доменное имя (полное доменное имя) (например, machine.company.com) узла.|
-|isAzureAadJoined|Логическое|Значение true, если узел является домен, в состав доменных служб Active Directory Azure.|
-|isAzureAadRegistered|Логическое|Значение true, если узел зарегистрирован устройства регистрации Azure Active Directory (BYOD устройства - то есть, не полностью управляются предприятия).|
-|isHybridAzureDomainJoined|Логическое|Значение true, если узел присоединен к домену на локальный домен Active Directory.|
-|netBiosName|String|Имя локального узла без DNS-имени домена.|
-|И-5.|String|Операционной системы. (Например, Windows10, MacOS, RHEL, и т.д.).|
-|privateIpAddress|String|Частный (не маршрутизируемые) адрес IPv4 или IPv6 [(см)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
-|publicIpAddress|String|Открыто маршрутизируемыми IPv4 или IPv6-адрес [(см)](https://tools.ietf.org/html/rfc1918)во время оповещения.|
-|riskScore|String|Оценка риска поставщика создается/вычисляемые узла.  Рекомендуемое значение диапазона 0-1, который соответствует в процентах.|
+|полным|String|ПОЛНОЕ доменное имя узла (полное доменное имя) (например, machine.company.com).|
+|Исазуреааджоинед|Логический|True, если узел подключен к доменным службам Azure Active Directory.|
+|Исазуреаадрегистеред|Логический|True, если узел зарегистрирован с регистрацией устройств Azure Active Directory (BYOD Devices — то есть, не полностью управляется предприятием).|
+|Ишибридазуредомаинжоинед|Логический|True, если узел является доменом, присоединенным к локальному домену Active Directory.|
+|Нетбиоснаме|String|Имя локального узла без DNS-имени домена.|
+|совместим|String|Хост операционной системы. (Например, Windows10, MacOS, РХЕЛ и т. д.).|
+|Приватеипаддресс|String|Частный (без маршрутизации) IPv4-или IPv6-адрес (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) на момент оповещения.|
+|ПублиЦипаддресс|String|IPv4-или IPv6-адрес общеДоступной маршрутизации (см. [RFC 1918](https://tools.ietf.org/html/rfc1918)) во время оповещения.|
+|riskScore|String|Полученный поставщиком и вычисляемый показатель риска для узла.  Рекомендуемый диапазон значений 0-1, указывающий на процентное соотношение.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

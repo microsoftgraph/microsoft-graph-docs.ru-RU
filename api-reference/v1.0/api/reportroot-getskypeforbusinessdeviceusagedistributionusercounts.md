@@ -1,15 +1,15 @@
 ---
 title: 'reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts'
-description: Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
+description: Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей устройств с Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: e02a5f7fdc708acb00eda53ec6570879e4407843
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570850"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580892"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
@@ -37,11 +37,11 @@ GET /reports/getSkypeForBusinessDeviceUsageDistributionUserCounts(period='{perio
 
 ## <a name="function-parameters"></a>Параметры функции
 
-В URL-адресе запроса укажите следующий параметр и действительное значение.
+В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | строка | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -59,10 +59,10 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - "Report Refresh Date" (Дата обновления отчета);
-- Windows
+- "Windows";
 - "Windows Phone";
 - "Android Phone" (Телефон с Android);
-- "iPhone";
+- iPhone
 - iPad
 - Report Period (отчетный период)
 

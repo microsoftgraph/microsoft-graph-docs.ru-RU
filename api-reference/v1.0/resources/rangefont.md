@@ -1,27 +1,27 @@
 ---
 title: Тип ресурса RangeFont
-description: Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
+description: Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 829b391d561aae63ae94972c55039acfdf4c48d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579524"
 ---
 # <a name="rangefont-resource-type"></a>Тип ресурса RangeFont
 
-Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
+Этот объект представляет атрибуты шрифта (имя, размер, цвет и т. д.) для объекта.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFont](../api/rangefont-get.md) | [WorkbookRangeFont](rangefont.md) |Чтение свойств и связей объекта rangeFont.|
-|[обновление](../api/rangefont-update.md). | [WorkbookRangeFont](rangefont.md)   |Обновление объекта RangeFont. |
+|[Получение объекта RangeFont](../api/rangefont-get.md) | [Воркбукранжефонт](rangefont.md) |Чтение свойств и связей объекта rangeFont.|
+|[Обновление](../api/rangefont-update.md) | [Воркбукранжефонт](rangefont.md)   |Обновление объекта RangeFont. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -29,11 +29,11 @@ ms.locfileid: "27962298"
 |bold|boolean|Указывает, является ли шрифт полужирным.|
 |color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
-|name|строка|Имя шрифта (например, Calibri)|
-|size|double|font-size|
-|underline|строка|Тип подчеркивание шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|name|string|Имя шрифта (например, Calibri)|
+|size|double|размер шрифта|
+|underline|string|Тип подчеркивания, применяемый для шрифта. Допустимые значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

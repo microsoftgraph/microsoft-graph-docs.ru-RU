@@ -3,11 +3,11 @@ title: Тип ресурса recurrenceRange
 description: 'Описывает диапазон дат, согласно которому повторяется событие. '
 localization_priority: Normal
 ms.openlocfilehash: 4129b698e48b01e0208b88fbdc57fb777835cd4e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27872991"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579403"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
@@ -23,7 +23,7 @@ ms.locfileid: "27872991"
 |numberOfOccurrences|Int32|Количество повторений события. Обязательное свойство, которое должно быть положительным, если для **type** задано значение `numbered`.|
 |recurrenceTimeZone|String |Часовой пояс для свойств **startDate** и **endDate**. Необязательное. Если это свойство не задано, используется часовой пояс события.|
 |startDate|Date|Дата, с которой начинает применяться расписание повторения. В зависимости от того, каково расписание повторения события, первый экземпляр собрания может приходиться на эту или более позднюю дату. Должно быть задано то же значение, что и для свойства **start** повторяющегося [события](event.md). Обязательное.|
-|type|recurrenceRangeType|Диапазон повторения. Возможные значения: `endDate`, `noEnd`, `numbered`. Обязательный.|
+|type|Рекурренцеранжетипе|Диапазон повторения. Допустимые значения: `endDate`, `noEnd`, `numbered`. Обязательный.|
 
 С помощью свойства **type** можно указывать различные типы для **recurrenceRange**. Обратите внимание на обязательные свойства для каждого типа, описанные в приведенной ниже таблице.
 
@@ -34,7 +34,7 @@ ms.locfileid: "27872991"
 |`numbered`|Диапазон с определенным количеством повторений | Событие повторяется определенное количество раз (указанное в **numberOfOccurrences**) в соответствии с расписанием повторения, начиная с даты **startDate**. | Повторение события 10 раз с 1 июня 2017 г.  | **type**, **startDate**, **numberOfOccurrences** |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

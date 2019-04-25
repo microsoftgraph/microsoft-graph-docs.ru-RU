@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: c66ab2f29ee44d76ed0ee300743f50cb0debdd16
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642732"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535545"
 ---
 # <a name="call-resource-type"></a>Тип ресурса call
 
@@ -81,7 +81,7 @@ ms.locfileid: "29642732"
 
 ## <a name="relationships"></a>Связи
 
-| Связь        | Тип                                                 | Описание                                                         |
+| Отношение        | Тип                                                 | Описание                                                         |
 |:--------------------|:-----------------------------------------------------|:--------------------------------------------------------------------|
 | audioRoutingGroups  | Коллекция [audioRoutingGroup](audioroutinggroup.md) | Только для чтения. Допускается значение null.                                                |
 | operations          | Коллекция [commsOperation](commsoperation.md)       | Только для чтения. Допускается значение null.                                                |

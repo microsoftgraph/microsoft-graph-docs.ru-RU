@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c15d65c6d0a5a9749654698a51996cb21c254a9d
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676991"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582845"
 ---
 # <a name="timeoff-resource-type"></a>Тип ресурса Тимеофф
 
@@ -24,7 +24,7 @@ ms.locfileid: "30676991"
 |[Создание Тимеофф](../api/schedule-post-timesoff.md) | [Тимеофф](timeOff.md) | Создание нового объекта `timeOff`.|
 |[Список Тимеоффс](../api/schedule-list-timesoff.md) | Коллекция [тимеофф](timeOff.md) | Получение списка `timeOff` объектов в расписании.|
 |[Получение Тимеофф](../api/timeoff-get.md) | [Тимеофф](timeOff.md) | Получение `timeOff` по идентификатору.|
-|[Замена Тимеофф](../api/timeoff-put.md) | [Тимеофф](timeOff.md) | Замените элемент `timeOff`.|
+|[Замена Тимеофф](../api/timeoff-put.md) | [Тимеофф](timeOff.md) | Замена объекта `timeOff`.|
 |[Удаление Тимеофф](../api/timeoff-delete.md) | Нет | Удаление `timeOff` из расписания.|
 
 ## <a name="properties"></a>Свойства
@@ -34,11 +34,11 @@ ms.locfileid: "30676991"
 | userId            |`string`      |Идентификатор пользователя, `timeOff`назначенный. Обязательный.|
 | Шаредтимеофф     |[Тимеоффитем](timeoffitem.md)  |Общая версия этого `timeOff` объекта доступна как для сотрудников, так и для руководителей. Обязательный.|
 | Драфттимеофф      |[Тимеоффитем](timeoffitem.md)        |Черновая версия этого `timeOff` элемента, просматриваемая руководителями. Обязательный.|
-| createdDateTime       |`DateTimeOffset`        |Отметка `timeOff` времени первоначального создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
-| lastModifiedDateTime      |`DateTimeOffset`        |Отметка `timeOff` времени последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |Удостоверение, которое Последнее обновило `timeOff`. |
+| createdDateTime       |`DateTimeOffset`        |Отметка `timeOff` времени первоначального создания. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| lastModifiedDateTime      |`DateTimeOffset`        |Отметка `timeOff` времени последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |Учетная запись, которая последней обновила этот объект `timeOff`. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

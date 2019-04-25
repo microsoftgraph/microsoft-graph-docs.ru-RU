@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса oAuth2PermissionGrant
-description: Представляет области OAuth 2.0 (делегированы разрешения), которые были присвоены приложения (представленного участников-служб) в ходе процесса согласия пользователь или администратор.
+description: Представляет области OAuth 2,0 (делегированные разрешения), которые были предоставлены приложению (представленному субъектом-службой) в рамках процесса разрешения пользователя или администратора.
 localization_priority: Normal
 ms.openlocfilehash: ea6486aedca4c3fcf73e59a5652ccf517fb01ddc
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640779"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581559"
 ---
 # <a name="oauth2permissiongrant-resource-type"></a>Тип ресурса oAuth2PermissionGrant
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет области OAuth 2.0 (делегированы разрешения), которые были присвоены приложения (представленного участников-служб) в ходе процесса согласия пользователь или администратор.
+Представляет области OAuth 2,0 (делегированные разрешения), которые были предоставлены приложению (представленному субъектом-службой) в рамках процесса разрешения пользователя или администратора.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -43,16 +43,16 @@ ms.locfileid: "29640779"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|clientId|String| Идентификатор участника службы предоставляются разрешения для олицетворения пользователя при доступе к ресурсу, (представлено свойством Ид_ресурса). |
-|consentType|String| Указывает, если согласие предоставленный администратором (от имени организации) или пользователем. Возможные значения: *AllPrincipals* или *участника*. |
-|expiryTime|DateTimeOffset| На данный момент игнорируется значение времени истечения срока действия. |
+|clientId|String| Идентификатор субъекта-службы, которому предоставлено согласие на олицетворение пользователя при доступе к ресурсу (представленному свойством resourceId). |
+|Консенттипе|String| Указывает, было ли согласие предоставлено администратором (от имени Организации) или отдельным пользователем. Возможные значения: *аллпринЦипалс* или *Principal*. |
+|Експиритиме|DateTimeOffset| В настоящее время значение срока действия игнорируется. |
 |id|String| Уникальный идентификатор. Только для чтения.|
-|principalId|String| Если consentType является *AllPrincipals* это значение равно null и согласия применяется ко всем пользователям в организации. Если consentType является *основной*, это свойство определяет идентификатор пользователя, который предоставлены разрешения и применяется только к этому пользователю. |
-|resourceId|String| Задает идентификатор участника службы ресурсов, к которому был разрешен доступ. |
-|scope|String| Задает значение утверждения [область](/graph/permissions-reference) , должно привести к приложению ресурсов в маркер доступа OAuth 2.0. Например, *User.Read* |
-|startTime|DateTimeOffset| На данный момент времени начала игнорируется. |
+|principalId|String| Если Консенттипе — *аллпринЦипалс* , это значение равно null, а согласие применяется ко всем пользователям в Организации. Если Консенттипе является *субъектом*, это свойство указывает идентификатор пользователя, который предоставил согласие и применяется только для этого пользователя. |
+|resourceId|String| Указывает идентификатор субъекта службы ресурсов, которому предоставлен доступ. |
+|scope|Строка| Указывает значение утверждения [области](/graph/permissions-reference) , которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. Например, *User. Read* |
+|startTime|DateTimeOffset| В настоящее время значение времени начала игнорируется. |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -60,10 +60,10 @@ ms.locfileid: "29640779"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Чтение свойства и связи объекта oAuth2PermissionGrant.|
+|[Получение oAuth2PermissionGrant](../api/oauth2permissiongrant-get.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Чтение свойств и связей объекта oAuth2PermissionGrant.|
 |[Список oAuth2PermissionGrants](../api/oauth2permissiongrant-list.md) | Коллекция [oAuth2PermissionGrant](oauth2permissiongrant.md) | Получение списка объектов oauth2PermissionGrant. |
 |[Обновление oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) |Обновление объекта oAuth2PermissionGrant. |
-|[Удаление oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | None; |Удалите объект oAuth2PermissionGrant. |
+|[Удаление oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | Нет |Удаление объекта oAuth2PermissionGrant. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

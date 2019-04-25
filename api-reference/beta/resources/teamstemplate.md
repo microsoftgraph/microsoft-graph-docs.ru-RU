@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса teamsTemplate
-description: Описание сущности teamsTemplate.
+title: Тип ресурса Теамстемплате
+description: Описывает объект Теамстемплате.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e75b3d8df318b116d5d908a40d4f756d9ee70864
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513048"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583174"
 ---
-# <a name="teamstemplate-resource-type"></a>Тип ресурса teamsTemplate
+# <a name="teamstemplate-resource-type"></a>Тип ресурса Теамстемплате
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Шаблон группы — это план для создания [группы](../resources/team.md) в группами Майкрософт. Шаблон указывает структуры, параметры и даже контента, который следует предоставить в новые группы, созданные на основе шаблона. Корпорация Майкрософт предоставляет набор базовых шаблонов и пользователи могут сохранять свои собственные пользовательские шаблоны.
+Шаблон группы — это план для создания [команды](../resources/team.md) в Microsoft Teams. Шаблон определяет структуру, параметры и даже содержимое, которое должно быть подготовлено в новой команде, созданной с помощью шаблона. Корпорация Майкрософт предоставляет набор базовых шаблонов и клиентов, которые могут сохранять собственные настраиваемые шаблоны.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип     | Описание |
 |:------------------- |:-------- |:----------- |
-| id                  | String   | Уникальный идентификатор шаблона. Не может быть null. |
+| id                  | String   | Уникальный идентификатор шаблона. Не может иметь значение null. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 <!-- {
   "blockType": "resource",
@@ -39,7 +39,7 @@ ms.locfileid: "29513048"
 
 # <a name="see-also"></a>См. также
 
-- Команда
+- [team](team.md)
 
 <!--
 {

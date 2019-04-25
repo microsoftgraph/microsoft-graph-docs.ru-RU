@@ -1,43 +1,43 @@
 ---
-title: Тип ресурса privilegedRoleSettings
-description: Представляет параметры для привилегированной роли.
+title: Тип ресурса Привилежедролесеттингс
+description: Представляет параметры привилегированной роли.
 localization_priority: Normal
 ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642781"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563287"
 ---
-# <a name="privilegedrolesettings-resource-type"></a>Тип ресурса privilegedRoleSettings
+# <a name="privilegedrolesettings-resource-type"></a>Тип ресурса Привилежедролесеттингс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет параметры для привилегированной роли.
+Представляет параметры привилегированной роли.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Чтение свойства и связи объекта privilegedRoleSettings.|
-|[Обновление privilegedRoleSettings](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Обновление объекта privilegedRoleSettings.|
+|[Получение privilegedRoleSettings](../api/privilegedrolesettings-get.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Чтение свойств и связей объекта Привилежедролесеттингс.|
+|[Обновление Привилежедролесеттингс](../api/privilegedrolesettings-update.md) | [privilegedRoleSettings](privilegedrolesettings.md) |Обновление объекта Привилежедролесеттингс.|
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|elevationDuration|duration|Длительность, при активации роли.|
-|id|строка| Уникальный идентификатор для параметров роли. Только для чтения.|
-|isMfaOnElevationConfigurable|boolean|**значение true,** Если mfaOnElevation может быть настроен. **значение false,** Если mfaOnElevation не настраивается.|
-|lastGlobalAdmin|boolean|Для внутреннего использования используется только.|
-|maxElavationDuration|duration|Максимальной длительности для активации роли.|
-|mfaOnElevation|boolean|**значение true,** Если необходимо активировать роль многофакторной проверкой Подлинности. **значение false,** Если многофакторной проверкой Подлинности не требуется для включения роли.|
-|minElevationDuration|duration|Минимальная продолжительность активированные роли.|
-|notificationToUserOnElevation|boolean|**значение true,** Если отправить уведомление конечному пользователю при активации роли. **значение false,** Если не отправлять уведомления при активации роли.|
-|ticketingInfoOnElevation|boolean|**значение true,** Если отдела сведения требуется при активации роли. **значение false,** Если отдела сведения не является обязательным, когда активировать роль.|
-|approvalOnElevation|boolean|**значение true,** Если требуется утверждение при активации роли. **значение false,** Если утверждение не является обязательным, когда активировать роль.|
-|approverIds|array|Список идентификаторов утверждения, если требуется для активации утверждение.|
+|Елеватиондуратион|duration|Продолжительность активации роли.|
+|id|string| Уникальный идентификатор для параметров роли. Только для чтения.|
+|Исмфаонелеватионконфигурабле|boolean|**значение true** , если мфаонелеватион является настраиваемым. **false** , если мфаонелеватион не является настраиваемым.|
+|Ластглобаладмин|boolean|Только для внутреннего использования.|
+|Макселаватиондуратион|duration|Максимальный срок для активированной роли.|
+|Мфаонелеватион|boolean|**значение true** , если для активации роли требуется mfa. **false** , если MFA не требуется для активации роли.|
+|Минелеватиондуратион|duration|Минимальная длительность для активированной роли.|
+|Нотификатионтаусеронелеватион|boolean|**имеет значение true** , если вы отправляете уведомление конечному пользователю при активации роли. **значение false** , если уведомление не отправляется при активации роли.|
+|Тиккетингинфунелеватион|boolean|**имеет значение true** , если при активации роли требуются сведения о билетах. **false** , если при активации роли не требуются сведения о билетах.|
+|Аппровалонелеватион|boolean|**имеет значение true** , если при активации роли необходимо выполнить утверждение. **false** , если при активации роли не нужно утверждать.|
+|Аппроверидс|массив|Список идентификаторов утверждения, если для активации необходимо утверждение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

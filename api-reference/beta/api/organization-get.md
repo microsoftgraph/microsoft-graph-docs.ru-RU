@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0313fb5912d8cc9e12319fafac518becfee105a7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520083"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539830"
 ---
 # <a name="get-organization"></a>Получение организации
 
@@ -17,7 +17,7 @@ ms.locfileid: "29520083"
 
 Получение свойств и связей объекта organization, для которого выполнена проверка подлинности.
 
-Поскольку ресурсов **организации** поддерживает [расширения](/graph/extensibility-overview), вы также можете использовать `GET` операции для получения данных расширения и настраиваемых свойств в экземпляре **организации** .
+Так как ресурс **Организации** поддерживает [расширения](/graph/extensibility-overview), с помощью `GET` операции можно также получить настраиваемые свойства и данные расширения в экземпляре **Организации** .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -25,7 +25,7 @@ ms.locfileid: "29520083"
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.Read, Directory.Read.All |
+|Делегированные (рабочая или учебная учетная запись) | User. Read, Directory. Read. ALL |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений | Directory.Read.All |
 
@@ -51,7 +51,7 @@ GET /organization
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -71,7 +71,7 @@ GET /organization
 GET https://graph.microsoft.com/beta/organization
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {

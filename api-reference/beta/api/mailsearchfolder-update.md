@@ -1,21 +1,21 @@
 ---
-title: Обновление mailSearchFolder
-description: Обновление для записи свойства объекта mailSearchFolder.
+title: Обновление Маилсеарчфолдер
+description: Обновление свойств, доступных для записи, объекта Маилсеарчфолдер.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 54e901751fc404ba2099205c6b16d86c99d9b05f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528468"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540613"
 ---
-# <a name="update-mailsearchfolder"></a>Обновление mailSearchFolder
+# <a name="update-mailsearchfolder"></a>Обновление Маилсеарчфолдер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление для записи свойства объекта [mailSearchFolder](../resources/mailsearchfolder.md) .
+Обновление свойств, доступных для записи, объекта [маилсеарчфолдер](../resources/mailsearchfolder.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,9 +45,9 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | displayName | String | Отображаемое имя [mailFolder](../resources/mailfolder.md).|
-| includeNestedFolders | Логическое | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
-| sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | String | Запросов OData для фильтрации сообщений. |
+| Инклуденестедфолдерс | Логический | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
+| Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
@@ -70,9 +70,9 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

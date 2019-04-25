@@ -1,17 +1,15 @@
 ---
 title: Управление сортировкой почты
-description: 'Конкретный папки «Входящие» позволяет просматривать важные сообщения в `Focused` вкладка из папки «Входящие», а остальную часть сообщения в папке "Входящие" `Other` вкладки. Система классификации '
+description: 'Сортировка папки "Входящие" позволяет просматривать важные сообщения на `Focused` вкладке папки "Входящие", а остальные сообщения — на `Other` вкладке. Система классификации '
 localization_priority: Normal
 ms.openlocfilehash: 5ee5d5f9dd48faa7d0590cbbc6dfda39d8f117e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529252"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562587"
 ---
 # <a name="manage-focused-inbox"></a>Управление сортировкой почты
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Сортировка почты позволяет просматривать важные сообщения на вкладке `Focused` папки "Входящие", а остальные входящие сообщения — на вкладке `Other`. Система классификации изначально упорядочивает сообщения в папке "Входящие" стандартным способом. По мере использования системы вы можете исправлять ее поведение и обучать ее с помощью пользовательского интерфейса или программного кода. Чем больше вы используете систему, тем лучше она будет определять важные входящие сообщения.
 
@@ -33,11 +31,3 @@ ms.locfileid: "29529252"
 [Создание операции переопределения для отправителя](../api/inferenceclassification-post-overrides.md) | [Перечисление всех операций переопределения для пользователей](../api/inferenceclassification-list-overrides.md) |
 
 [Обновление операции переопределения для отправителя](../api/inferenceclassificationoverride-update.md) | [Удаление операции переопределения для отправителя](../api/inferenceclassificationoverride-delete.md) 
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/manage-focused-inbox.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

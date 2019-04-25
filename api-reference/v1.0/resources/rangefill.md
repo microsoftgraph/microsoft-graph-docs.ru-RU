@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 75aa4bd91ad6f1038fdc42460c6a3c9ab928a09d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911821"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579475"
 ---
 # <a name="rangefill-resource-type"></a>Тип ресурса RangeFill
 
@@ -20,16 +20,16 @@ ms.locfileid: "27911821"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта RangeFill](../api/rangefill-get.md) | [WorkbookRangeFill](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
-|[обновление](../api/rangefill-update.md). | [WorkbookRangeFill](rangefill.md)   |Обновление объекта RangeFill. |
+|[Получение объекта RangeFill](../api/rangefill-get.md) | [Воркбукранжефилл](rangefill.md) |Чтение свойств и связей объекта rangeFill.|
+|[Обновление](../api/rangefill-update.md) | [Воркбукранжефилл](rangefill.md)   |Обновление объекта RangeFill. |
 |[Clear](../api/rangefill-clear.md)|Нет|Сбрасывает фон диапазона.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|строка|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
+|color|string|HTML-код, представляющий цвет линии границы в виде #RRGGBB (например, FFA500) или в виде ключевого слова в HTML (например, orange).|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

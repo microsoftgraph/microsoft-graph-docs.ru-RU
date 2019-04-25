@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 71790c6d4d67ebfdfe7da0c7726cf30b908433c4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802536"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549333"
 ---
 # <a name="bitlockerencryptionmethod-enum-type"></a>тип перечисления Битлоккеренкриптионмесод
 
@@ -22,10 +22,10 @@ ms.locfileid: "31802536"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|aesCbc128|4|AES — CBC 128 — бит.|
-|aesCbc256|SP4|AES — CBC 256 — бит.|
-|xtsAes128|ICMPv6|КСТС — AES 128 — бит.|
-|xtsAes256|см|КСТС — AES 256 — бит.|
+|aesCbc128|3 |AES — CBC 128 — бит.|
+|aesCbc256|4 |AES — CBC 256 — бит.|
+|xtsAes128|6 |КСТС — AES 128 — бит.|
+|xtsAes256|7 |КСТС — AES 256 — бит.|
 
 
 

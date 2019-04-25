@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ea055171fade56361562aeac065a67b23154e207
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31792512"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548672"
 ---
 # <a name="subjectalternativenametype-enum-type"></a>тип перечисления subjectAlternativeNameType
 
@@ -22,11 +22,11 @@ ms.locfileid: "31792512"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Нет альтернативного имени субъекта.|
-|emailAddress|1,1|Адрес электронной почты.|
-|userPrincipalName|2|Имя участника-пользователя (UPN).|
-|Кустомазуреадаттрибуте|SP4|Настраиваемый атрибут Azure AD.|
-|Домаиннамесервице|8,5|Служба доменных имен (DNS).|
+|Нет|нуль|Нет альтернативного имени субъекта.|
+|emailAddress|1 |Адрес электронной почты.|
+|userPrincipalName|2 |Имя участника-пользователя (UPN).|
+|Кустомазуреадаттрибуте|4 |Настраиваемый атрибут Azure AD.|
+|Домаиннамесервице|8 |Служба доменных имен (DNS).|
 
 
 

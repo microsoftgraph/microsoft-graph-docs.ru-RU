@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ae6151c23bf05b076ade441f908a2810c80f45ed
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253465"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534362"
 ---
 # <a name="managedebook-resource-type"></a>Тип ресурса managedEBook
 
@@ -28,7 +28,7 @@ ms.locfileid: "30253465"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|Строка|Ключ объекта.|
-|displayName|String|Имя электронной книги.|
+|displayName|Строка|Имя электронной книги.|
 |description|String|Описание.|
 |publisher|String|Издатель.|
 |publishedDateTime|DateTimeOffset|Дата и время публикации электронной книги.|

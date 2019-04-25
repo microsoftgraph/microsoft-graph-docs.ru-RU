@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса impossibleTravelRiskEvent
-description: События риска обнаруживается Azure Active Directory защиту которых возникают два учетной записи войти в систему из мест необычных для пользователя и невозможно в поездке между различными расположениями в интервал между которые запускаются входа полные сведения о события рисков можно найти в документации по Azure AD защиту.
+title: Тип ресурса Импоссиблетравелрискевент
+description: Событие риска, обнаруженное службой удостоверений Azure Active Directory, в котором два входа с учетной записью происходят из расположений нетипично для пользователя, и вы не сможете перемещаться между расположениями в период между входами. полная информация события риска можно найти в документации по защите удостоверений Azure AD.
 localization_priority: Normal
 ms.openlocfilehash: 517a09963570ce2c4a9e58edf7b73babaaff0426
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529385"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548329"
 ---
-# <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса impossibleTravelRiskEvent
+# <a name="impossibletravelriskevent-resource-type"></a>Тип ресурса Импоссиблетравелрискевент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-События риска обнаруживается [Azure Active Directory защиту](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) которых возникают два учетной записи войти в систему из мест необычных для пользователя и невозможно в поездке между различными расположениями в интервал между полная которые запускаются входа сведения о мероприятиях риска можно найти в [документации по Azure AD защиту](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
+Событие риска, обнаруженное службой [удостоверенИй Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection/) , в котором два входа учетной записи происходят из расположений, нетипичных для пользователя, и вы не сможете перемещаться между расположениями в промежутке между входами. Complete сведения о событиях риска можно найти в [документации по защите удостоверенИй Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-identityprotection-risk-events-types/).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [impossibleTravelRiskEvent](impossibletravelriskevent.md) |Чтение свойства и связи объекта impossibleTravelRiskEvent.|
+|[Получение объекта impossibleTravelRiskEvent](../api/impossibletravelriskevent-get.md) | [Импоссиблетравелрискевент](impossibletravelriskevent.md) |Чтение свойств и связей объекта Импоссиблетравелрискевент.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|closedDateTime|dateTimeOffset| Дата и время закрытия события риска|
-|createdDateTime|dateTimeOffset| Дата и время создания события риска. Это всегда больше или равно datetime самого события риска. Это правильное свойство для использования в качестве фильтра при запросе события рисков.|
-|deviceInformation|string| Сведения об устройстве|
-|id|string| Только чтение|
-|ipAddress|string| IP-адрес второго входа в|
-|isAtypicalLocation|boolean| Если выполняется одно из расположений необычных для пользователя|
-|location|string| Расположение, подключенного к IP-адрес второго входа в|
-|previousIPAddress|string| IP-адрес первого входа в|
-|previousLocation|string| Расположение, подключенного к IP-адрес первого входа в|
-|previousSigninDateTime|dateTimeOffset| Дата и время первого входа в|
-|riskEventDateTime|dateTimeOffset| Дата и время второго входа в|
-|riskEventStatus|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
+|Клоседдатетиме|dateTimeOffset| Дата и время закрытия события риска|
+|createdDateTime|dateTimeOffset| Дата и время создания события риска. Он всегда больше или равен значению DateTime самого события риска. Это правильное свойство, используемое в качестве фильтра при запросе событий риска.|
+|Девицеинформатион|string| Сведения об устройстве|
+|id|string| Только для чтения|
+|ipAddress|string| IP-адрес второго входа|
+|Исатипикаллокатион|логический| Если одно из расположений для пользователя является нетипичным|
+|location|string| Расположение, подключенное к IP-адресу второго входа|
+|Превиаусипаддресс|string| IP-адрес первого входа|
+|Превиауслокатион|string| Расположение, подключенное к IP-адресу первого входа|
+|Превиауссигниндатетиме|dateTimeOffset| Дата и время первого входа|
+|Рискевентдатетиме|dateTimeOffset| Дата и время второго входа|
+|Рискевентстатус|string| Возможные значения: `active`, `remediated`, `dismissedAsFixed`, `dismissedAsFalsePositive`, `dismissedAsIgnore`, `loginBlocked`, `closedMfaAuto`, `closedMultipleReasons`.|
 |riskLevel|string| Возможные значения: `low`, `medium`, `high`.|
-|riskEventType|string| Тип риска|
-|UserAgent|string| Строка агента пользователя в браузере|
-|userDisplayName|string| Имя пользователя в группу риска|
-|userId|string| Идентификатор пользователя в группу риска|
-|userPrincipalName|string| Имя участника-пользователя пользователя в группу риска|
+|Рискевенттипе|string| Тип риска|
+|userAgent|string| Строка агента пользователя браузера|
+|userDisplayName|string| Имя пользователя под угрозой|
+|userId|string| Идентификатор пользователя, который подвергается риску|
+|userPrincipalName|string| Имя участника пользователя, который подвергается риску|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|impactedUser|[user](user.md)| Только для чтения. Допускается значение null.|
+|Импактедусер|[user](user.md)| Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса userActivationCounts
+title: Тип ресурса Усерактиватионкаунтс
 description: Ниже указано представление ресурса в формате JSON.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 535355d6be3f6b617d7eb293890aa05a517cfc3b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27980351"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581284"
 ---
-# <a name="useractivationcounts-resource-type"></a>Тип ресурса userActivationCounts
+# <a name="useractivationcounts-resource-type"></a>Тип ресурса Усерактиватионкаунтс
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   | Описание                              |
 | :---------------- | :----- | ---------------------------------------- |
-| productType       | Строка | Тип продукта, например «Office 365 профессиональный плюс», «Клиента Project» или «Visio Pro для Office 365". |
-| lastActivatedDate | Date   | Дата последней активации.       |
-| Windows           | Int64  | Число активации в Windows. Эта цифра включает в себя каждые активации на компьютерах под управлением Windows. |
-| mac               | Int64  | Число активации на Mac OS.          |
-| windows10Mobile   | Int64  | Активация на количество Windows 10 mobile. |
-| операций ввода-вывода               | Int64  | Число активации на операций ввода-вывода.             |
-| Android (en)           | Int64  | Число активации на устройстве Android.  |
-| activatedOnSharedComputer   | Логический | Значение true, если пользователь продукта на совместно используемый компьютер перед. |
+| Продукттипе       | String | Тип продукта, например "Office 365 профессиональный плюс", "клиент Project" или "Visio Pro для Office 365". |
+| Ластактиватеддате | Дата   | Дата последней активации.       |
+| под           | Int64  | Счетчик активаций в Windows. Это число включает все активации на любом компьютере с Windows. |
+| mac               | Int64  | Число активаций в Mac OS.          |
+| windows10Mobile   | Int64  | Счетчик активаций для Windows 10 Mobile. |
+| модуле               | Int64  | Счетчик активаций на iOS.             |
+| ОС           | Int64  | Счетчик активаций на устройстве с Android.  |
+| Активатедоншаредкомпутер   | Boolean | Имеет значение true, если пользователь использовал продукт на общедоступном компьютере. |
 
 ## <a name="json-representation"></a>Представление JSON
 

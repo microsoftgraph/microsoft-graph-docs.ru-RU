@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса bookingSchedulingPolicy
+title: Тип ресурса Букингсчедулингполици
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 3dee3314818d46c4131526dc92565eb4f8ca6ea2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523451"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543774"
 ---
-# <a name="bookingschedulingpolicy-resource-type"></a>Тип ресурса bookingSchedulingPolicy
+# <a name="bookingschedulingpolicy-resource-type"></a>Тип ресурса Букингсчедулингполици
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет набор политик, определяющие способ создания встреч в календаре Microsoft резервирования.
+Представляет набор политик, определяющих, как будут создаваться встречи в календаре Microsoft Books.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowStaffSelection|Логическое|True, если разрешить пользователям выбрать определенным человеком резервирования.|
-|maximumAdvance|Длительность|Максимальное количество дней, которые могут поступать резервирования. Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|minimumLeadTime|Длительность|Минимальное количество времени, созданные ранее которой должна состоять резервирования и отмены ресурса. Следует формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|sendConfirmationsToOwner|Логическое| Значение true для уведомления business по электронной почте при создании или изменении резервирования. Используйте адрес электронной почты, указанных в свойстве **электронной почты** объекта **bookingBusiness** для бизнеса. |
-|timeSlotInterval|Длительность|Продолжительность каждого промежуток времени, идентификаторами в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|Алловстаффселектион|Логический|Значение true, если необходимо разрешить клиентам выбирать определенного человека для резервирования.|
+|Максимумадванце|Duration (Длительность)|Максимальное количество дней, в течение которых можно выполнить резервирование. Он соответствует формату [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|Минимумлеадтиме|Duration (Длительность)|Минимальное время, по истечении которого должны выполняться резервирования и отмены. Он соответствует формату [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|Сендконфирматионстувнер|Логический| Значение true, чтобы уведомить бизнес по электронной почте при создании или изменении резервирования. Используйте адрес электронной почты, указанный в свойстве **Email** объекта **букингбусинесс** для бизнеса. |
+|Тимеслотинтервал|Duration (Длительность)|Продолжительность каждого интервала времени, обозначенного в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,55 +1,55 @@
 ---
 title: Тип ресурса governanceResource
-description: Представляет ресурсы, которые может осуществляться по управления правами Identity (PIM). Azure ресурсах может быть подписки, группы ресурсов и ресурсов, таких как виртуальную машину, базы данных SQL, и т.д.
+description: Представляет ресурсы, которыми можно управлять с помощью привилегированного управления удостоверениями (PIM). Для ресурсов Azure может быть подписка, Группа ресурсов и ресурс, такой как виртуальная машина, база данных SQL и т. д.
 localization_priority: Normal
 ms.openlocfilehash: 92a738350a47cc9eaf436382d020330fac89db1f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547427"
 ---
 # <a name="governanceresource-resource-type"></a>Тип ресурса governanceResource
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ресурсы, которые может осуществляться по управления правами Identity (PIM). Azure ресурсах может быть подписки, группы ресурсов и ресурсов, таких как виртуальную машину, базы данных SQL, и т.д.
+Представляет ресурсы, которыми можно управлять с помощью привилегированного управления удостоверениями (PIM). Для ресурсов Azure может быть подписка, Группа ресурсов и ресурс, такой как виртуальная машина, база данных SQL и т. д.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:----------|
-|[List](../api/governanceresource-list.md) | [governanceResource](../resources/governanceresource.md) коллекции|Список коллекцию ресурсов, которыми запрашивающего доступ к.|
-|[Get](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Чтение свойства и связи с указанным идентификатором сущности ресурсов.|
-|Регистрация | |Зарегистрируйте неуправляемые Azure подписки или управление группу для службы управления персональными данными. |
+|[List](../api/governanceresource-list.md) | Коллекция [governanceResource](../resources/governanceresource.md)|ПереЧисление коллекции ресурсов, к которым у запрашивающего есть доступ.|
+|[Получение](../api/governanceresource-get.md) | [governanceResource](../resources/governanceresource.md) |Чтение свойств и связей объекта ресурса, указанного по идентификатору.|
+|[Зарегистрировать](../api/governanceresource-register.md) | |Регистрация неуправляемой подписки Azure или группы управления для службы управления информационными данными. |
 
-Не `POST`, `PUT`, `PATCH`, `DELETE` поддерживаются в `roleDefinitions` набора сущностей в данный момент.
+Нет `POST`, `PUT`, `PATCH`, `DELETE` поддерживаются в `roleDefinitions` наборе сущностей в настоящее время.
 
 ## <a name="properties"></a>Свойства
 | Свойство          |Тип         |Описание|
 |:------------------|:----------|:----------|
-|id                 |String     |Идентификатор ресурса. Это в формате GUID.|
-|externalId           |String   |Внешний идентификатор ресурса, представляющее его исходный идентификатор во внешней системе. Например ресурсов подписки внешний идентификатор может быть «/ подписок/c14ae696-5e0c-4e5d-88cc-bef6637737ac». |
-|type               |Строка     |Обязательный. Тип ресурса Например для Azure ресурсы тип может быть «Подписки», «Группа ресурсов», «Microsoft.Sql/server», и т.д.|
-|displayName        |String     |Отображаемое имя ресурса.|
-|status             |String     |Состояние указанного ресурса. Например, он может представлять ли ресурс заблокирован или нет (значения: `Active` / `Locked`). Примечание: Это свойство может быть расширен в будущем для поддержки дополнительных сценариев.|
-|registeredDateTime|DateTimeOffset      |Представляет при регистрации ресурса в PIM даты и времени.|
-|registeredRoot|String      |ExternalId область корневой ресурсов, зарегистрированные в PIM. Область корневой может быть родительский элемент или выше ресурсы предков.|
-|roleAssignmentCount|Int32      |Необязательный параметр. Число назначений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleAssignmentCount` в запросе.|
-|roleDefinitionCount|Int32      |Необязательный параметр. Количество определений ролей для указанного ресурса. Чтобы получить свойство, рекомендуется использовать явным образом `$select=roleDefinitionCount` в запросе.|
-|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательный параметр. Он представляет состояние запрашивающего доступ к ресурсу. Чтобы получить свойство, рекомендуется использовать явным образом `$select=permissions` в запросе.|
+|id                 |Строка     |Идентификатор ресурса. Он указан в формате GUID.|
+|externalId           |String   |Внешний идентификатор ресурса, представляющий его исходный идентификатор во внешней системе. Например, внешний идентификатор ресурса подписки может иметь значение "/Subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac". |
+|type               |String     |Обязательный. Тип ресурса. Например, для ресурсов Azure типом может быть "Subscription", "ResourceGroup", "Microsoft. SQL/Server" и т. д.|
+|displayName        |Строка     |Отображаемое имя ресурса.|
+|status             |String     |Состояние данного ресурса. Например, он может представлять, заблокирован ли ресурс (значения: `Active` / `Locked`). Примечание: это свойство может быть расширено в будущем для поддержки дополнительных сценариев.|
+|Регистереддатетиме|DateTimeOffset      |Представляет дату и время, когда ресурс регистрируется в PIM.|
+|Регистередрут|String      |Екстерналид из корневой области ресурса, зарегистрированной в PIM. В качестве корневой области можно указать родительские, бабушке или более поздние ресурсы предков.|
+|Ролеассигнменткаунт|Int32      |Необязательный. Число назначений ролей для данного ресурса. Чтобы получить свойство, используйте `$select=roleAssignmentCount` експликтли в запросе.|
+|Роледефинитионкаунт|Int32      |Необязательный. Количество определений ролей для данного ресурса. Чтобы получить свойство, используйте `$select=roleDefinitionCount` експликтли в запросе.|
+|permissions|[governancePermission](../resources/governancepermission.md)      |Необязательно. Он представляет состояние доступа запрашивающего к ресурсу. Чтобы получить свойство, используйте `$select=permissions` експликтли в запросе.|
 
-## <a name="relationships"></a>Отношения
-| Связь   | Тип                                         |Описание|
+## <a name="relationships"></a>Связи
+| Отношение   | Тип                                         |Описание|
 |:---------------|:---------------------------------------------|:----------|
-|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) коллекции|Коллекция назначения ролей для ресурса.|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) коллекции|Коллекция файлов определения ролей для ресурса.|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) коллекции|Коллекция запросы назначения ролей для ресурса.|
-|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) коллекции|Коллекция параметров роли для ресурса.|
-|Parent          |[governanceResource](../resources/governanceresource.md)           |Только для чтения. Родительский ресурс. для `pimforazurerbac` сценарий, он может представлять подписки, принадлежит ресурс.|
+|roleAssignments |Коллекция [governanceRoleAssignment](../resources/governanceroleassignment.md)|Коллекция назначений ролей для ресурса.|
+|roleDefinitions |Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md)|Коллекция ролей дефинтионс для ресурса.|
+|Ролеассигнментрекуестс |Коллекция [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Коллекция запросов назначений ролей для ресурса.|
+|Ролесеттингс |Коллекция [говернанцеролесеттинг](../resources/governancerolesetting.md)|Коллекция параметров роли для ресурса.|
+|верхнего          |[governanceResource](../resources/governanceresource.md)           |Только для чтения. Родительский ресурс. для `pimforazurerbac` сценария может представлять подписку, к которой относится ресурс.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,19 +1,19 @@
 ---
-title: Получение unfamiliarLocationRiskEvent
-description: Извлечение свойств и связи объекта unfamiliarlocationriskevent.
+title: Получение объекта unfamiliarLocationRiskEvent
+description: Получение свойств и связей объекта унфамилиарлокатионрискевент.
 localization_priority: Normal
 ms.openlocfilehash: 99a7578cf9ebe183483c9d09a83696a4bc2ffbef
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515484"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548189"
 ---
-# <a name="get-unfamiliarlocationriskevent"></a>Получение unfamiliarLocationRiskEvent
+# <a name="get-unfamiliarlocationriskevent"></a>Получение объекта unfamiliarLocationRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта unfamiliarlocationriskevent.
+Получение свойств и связей объекта унфамилиарлокатионрискевент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,11 +35,11 @@ GET /unfamiliarLocationRiskEvents/{id}
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [unfamiliarLocationRiskEvent](../resources/unfamiliarlocationriskevent.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [унфамилиарлокатионрискевент](../resources/unfamiliarlocationriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -50,9 +50,8 @@ GET /unfamiliarLocationRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/unfamiliarLocationRiskEvents/700b6476-8138-4c14-4962-c43614958301-8dce9c6b-21f1-2e3b-2c3b-5164f751e7ad-4e5591fd-2ac1-4e9d-96a9-aca8339e2604
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

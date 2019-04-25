@@ -1,23 +1,23 @@
 ---
 title: Удаление пользователя — API Microsoft Graph
-description: Описывает метод Delete ресурса пользователя (Entity) API Microsoft Graph (REST).
+description: Описан метод удаления ресурса (объекта) user из API Microsoft Graph (REST).
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f7f8ed5b11930865d88ed7f01530c052c3e63738
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253794"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548154"
 ---
-# <a name="delete-a-user"></a>Удаление пользователя
+# <a name="delete-a-user"></a>Удалить пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление пользователя.  
 
-При удалении пользовательские ресурсы перемещаются во временный контейнер и могут быть восстановлены в течение 30 дней.  По исТечении этого времени они безвозвратно удаляются.  Дополнительные сведения см. в разделе [deletedItems](../resources/directory.md).
+При удалении ресурсы user перемещаются во временный контейнер, и их можно восстановить в течение 30 дней.  По истечении этого периода они удаляются без возможности восстановления.  Дополнительные сведения см. в статье [deletedItems](../resources/directory.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -62,7 +62,7 @@ DELETE /users/{id | userPrincipalName}
 ```http
 DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5be4 
 ```
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 <!-- {

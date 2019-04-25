@@ -1,25 +1,25 @@
 ---
-title: Настройка синхронизации с помощью настраиваемого конечного атрибутов
-description: Можно настроить параметры синхронизации схемы для включения настраиваемые атрибуты, которые определены в целевой каталог. В этой статье описывается настройка Salesforce подписки, добавив новое поле под названием `officeCode`. Вы настроили синхронизацию с Azure Active Directory (Azure AD) для Salesforce, и для каждого пользователя будет заполнения `officeCode` поля в Salesforce со значением из `extensionAttribute10` в Azure AD.
+title: Настройка синхронизации с пользовательскими целевыми атрибутами
+description: Вы можете настроить схему синхронизации, включив в нее настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается, как настроить подписку на Salesforce, добавив новое `officeCode`поле с именем. Вы настраиваете синхронизацию из Azure Active Directory (Azure AD) с Salesforce, и для каждого пользователя вы заполните `officeCode` поле в Salesforce значением из `extensionAttribute10` поля в Azure AD.
 localization_priority: Normal
 ms.openlocfilehash: 1b0a19bab796f7bd8261ebf898450c07bf1415e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508883"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582151"
 ---
-# <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с помощью настраиваемого конечного атрибутов
+# <a name="configure-synchronization-with-custom-target-attributes"></a>Настройка синхронизации с пользовательскими целевыми атрибутами
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Можно настроить параметры синхронизации схемы для включения настраиваемые атрибуты, которые определены в целевой каталог. В этой статье описывается настройка Salesforce подписки, добавив новое поле под названием `officeCode`. Вы настроили синхронизацию с Azure Active Directory (Azure AD) для Salesforce, и для каждого пользователя будет заполнения `officeCode` поля в Salesforce со значением из `extensionAttribute10` в Azure AD.
+Вы можете настроить схему синхронизации, включив в нее настраиваемые атрибуты, определенные в целевом каталоге. В этой статье описывается, как настроить подписку на Salesforce, добавив новое `officeCode`поле с именем. Вы настраиваете синхронизацию из Azure Active Directory (Azure AD) с Salesforce, и для каждого пользователя вы заполните `officeCode` поле в Salesforce значением из `extensionAttribute10` поля в Azure AD.
 
-В этой статье предполагается, что уже содержит приложение, которое поддерживает синхронизацию к клиенту через [Портал Azure](https://portal.azure.com), что вы знаете отображаемое имя приложения и имеют маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации содержатся [маркеры доступа Get для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
+В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью [портала Azure](https://portal.azure.com), вы знаете отображаемое имя приложения, и у вас есть маркер авторизации для Microsoft Graph. Сведения о том, как получить маркер авторизации, можно найти [в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
 
-## <a name="find-the-service-principal-object-by-display-name"></a>Найдите объект участника службы по отображаемому имени
+## <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта субъекта службы по отображаемому имени
 
-Следующий пример демонстрирует найдите объект участника службы с отображаемым именем Salesforce.
+В приведенном ниже примере показано, как найти объект субъекта службы с отображаемым именем Salesforce.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -47,12 +47,12 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{servicePrincipalId}` — Это `167e33e9-f80e-490e-b4d8-698d4a80fb3e`.
+Параметр `{servicePrincipalId}` имеет `167e33e9-f80e-490e-b4d8-698d4a80fb3e`значение.
 
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>Список заданий синхронизации в контексте участников-служб 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a>ПереЧисление заданий синхронизации в контексте субъекта-службы 
 
-Следующий пример показывает, как получить `jobId` , необходимые для работы с. Как правило ответ возвращается только одно задание.
+В приведенном ниже примере показано `jobId` , как получить сведения о том, что необходимо для работы. Как правило, ответ возвращает только одно задание.
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -71,11 +71,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-`{jobId}` — Это `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.
+Параметр `{jobId}` имеет `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`значение.
 
 
 ## <a name="get-the-synchronization-schema"></a>Получение схемы синхронизации
-Следующем примере показано, как получить схему синхронизации.
+В приведенном ниже примере показано, как получить схему синхронизации.
 
 <!-- {
   "blockType": "request",
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Будут возвращены все свойства в фактический вызов.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -183,20 +183,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Добавьте определение для атрибута officeCode и сопоставление атрибутов
+## <a name="add-a-definition-for-the-officecode-attribute-and-a-mapping-between-attributes"></a>Добавление определения атрибута Оффицекоде и сопоставления между атрибутами
 
-Используйте редактор обычного текста по выбору (например, ["Блокнот" ++](https://notepad-plus-plus.org/) или [Редактора JSON Online](https://www.jsoneditoronline.org/)) для:
+Используйте простой текстовый редактор (например, [Notepad + +](https://notepad-plus-plus.org/) или [Редактор JSON Online](https://www.jsoneditoronline.org/)), чтобы:
 
-1. Добавьте [Определение атрибута](synchronization-attributedefinition.md) для `officeCode` атрибут. 
+1. Добавьте `officeCode` [Определение атрибута](synchronization-attributedefinition.md) . 
 
-    - В разделе каталоги определить каталог с именем salesforce.com и в массив объектов, один с именем **пользователя**.
-    - Добавьте новый атрибут в список, укажите имя и тип, как показано в следующем примере.
+    - В разделе Каталоги найдите каталог с именем salesforce.com и в массиве объекта найдите одного **пользователя**.
+    - Добавьте новый атрибут в список, указав имя и тип, как показано в следующем примере.
 
-2. Добавьте [атрибут сопоставления](synchronization-attributemapping.md) между `officeCode` и `extensionAttribute10`.
+2. Добавьте [сопоставление атрибутов](synchronization-attributemapping.md) между `officeCode` и `extensionAttribute10`.
 
-    - В разделе [synchronizationRules](synchronization-synchronizationrule.md)найти правило, которое задает в качестве исходного каталога и Salesforce.com как в целевом каталоге Azure AD (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
-    - Найдите в [objectMappings](synchronization-objectmapping.md) правила сопоставления между пользователями (`"sourceObjectName": "User",   "targetObjectName": "User"`).
-    - В массиве [attributeMappings](synchronization-attributemapping.md) **objectMapping**добавьте новую запись, как показано в следующем примере.
+    - В разделе [синчронизатионрулес](synchronization-synchronizationrule.md)найдите правило, задающее Azure AD в качестве исходного каталога, и Salesforce.com в качестве целевого каталога (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).
+    - В [обжектмаппингс](synchronization-objectmapping.md) правила найдите сопоставление между пользователями (`"sourceObjectName": "User",   "targetObjectName": "User"`).
+    - В массиве [аттрибутемаппингс](synchronization-attributemapping.md) объекта **обжектмаппинг**добавьте новую запись, как показано в следующем примере.
 
 ```json
 {  
@@ -246,9 +246,9 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="save-the-modified-synchronization-schema"></a>Сохранение измененного синхронизации схемы
+## <a name="save-the-modified-synchronization-schema"></a>Сохранение измененной схемы синхронизации
 
-При сохранении схемы обновленные синхронизации убедитесь, что включение всей схемы, включая части без изменений. Этот запрос будет заменить существующую схему, предоставленные.
+При сохранении обновленной схемы синхронизации убедитесь, что включается вся схема, включая неизмененные части. Этот запрос заменит существующую схему на предоставленную вами.
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -261,7 +261,7 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-Схема была сохранена успешно, в следующей итерации задание синхронизации, начнется повторно обработки всех учетных записей в Azure AD и новые сопоставления будет применяться ко всем подготовленные учетные записи.
+Если схема была успешно сохранена, в следующей итерации задания синхронизации начнется повторная обработка всех учетных записей в Azure AD, а новые сопоставления будут применены ко всем подготовленным учетным записям.
 <!--
 {
   "type": "#page.annotation",

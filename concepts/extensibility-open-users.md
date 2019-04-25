@@ -4,11 +4,11 @@ description: 'Мы рассмотрим пример использования 
 author: dkershaw10
 localization_priority: Priority
 ms.openlocfilehash: 69b0918dba3159a552e2b00d4f54b21e67d017e4
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867265"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526142"
 ---
 # <a name="add-custom-data-to-users-using-open-extensions"></a>Добавление пользовательских данных в ресурсы user с помощью открытых расширений
 Мы рассмотрим пример использования *открытых расширений*. 

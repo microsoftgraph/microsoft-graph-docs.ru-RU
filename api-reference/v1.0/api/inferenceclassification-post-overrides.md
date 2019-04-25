@@ -1,13 +1,13 @@
 ---
 title: Создание объекта inferenceClassificationOverride
-description: 'Создание переопределения для отправителя, определяемую средством SMTP-адрес. Постоянно классификации последующих сообщений от этого SMTP-адреса '
+description: 'Создание переопределения для отправителя, указанному по SMTP-адресу. Будущие сообщения с этого SMTP-адреса будут согласованы. '
 localization_priority: Normal
 ms.openlocfilehash: 37648d699d4d54b2995af6bf847347c6537a414d
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27848694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577625"
 ---
 # <a name="create-inferenceclassificationoverride"></a>Создание объекта inferenceClassificationOverride
 
@@ -67,8 +67,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

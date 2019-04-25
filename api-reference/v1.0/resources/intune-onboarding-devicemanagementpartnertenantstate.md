@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c14c1806e65ba180837082288b76e047055f8a9f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583559"
 ---
 # <a name="devicemanagementpartnertenantstate-enum-type"></a>тип перечисления Девицеманажементпартнертенантстате
 
@@ -21,11 +21,11 @@ ms.locfileid: "30257983"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |unknown|нуль|Состояние партнера неизвестно.|
-|выходе|1,1|Партнер недоступен.|
-|enabled|2|Партнер включен.|
-|нулем|4|Подключение к партнеру завершается.|
-|клоняет|4|Партнерские сообщения отклоняются.|
-|не отвечает|17:00|Партнер не отвечает.|
+|выходе|1 |Партнер недоступен.|
+|enabled|2 |Партнер включен.|
+|нулем|3 |Подключение к партнеру завершается.|
+|клоняет|4 |Партнерские сообщения отклоняются.|
+|не отвечает|5 |Партнер не отвечает.|
 
 
 

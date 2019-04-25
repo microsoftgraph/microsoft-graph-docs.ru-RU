@@ -1,19 +1,19 @@
 ---
 title: 'event: accept'
-description: Примите события, указанного в календаре пользователя.
+description: Принятие указанного события в календаре пользователя.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5e89aa5cd934805fed9e8b08f93fed6d4e7cfe8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972567"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550009"
 ---
 # <a name="event-accept"></a>event: accept
 
-Примите указанного [события](../resources/event.md) в [Календарь](../resources/calendar.md)пользователя.
+Принять указанное [событие](../resources/event.md) в календаре пользователя [](../resources/calendar.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,13 +48,13 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |comment|String|Текст, включенный в ответ. Необязательный.|
-|sendResponse|Boolean|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
+|sendResponse|Логическое|Значение `true` указывает, что организатору должен быть отправлен ответ. В противном случае используется значение `false`. Необязательный. Значение по умолчанию: `true`.|
 
 ## <a name="response"></a>Отклик
 
@@ -79,7 +79,7 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

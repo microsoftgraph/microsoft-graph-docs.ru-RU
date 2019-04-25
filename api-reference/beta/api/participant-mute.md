@@ -1,21 +1,21 @@
 ---
-title: 'Участник: Выкл.'
-description: Отключение микрофона определенного участника в вызове.
+title: 'участник: выкл.'
+description: Отключение выключения определенного участника в вызове.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0fa4190ca6a3871c42af3c753cb3d9d48d320bd5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521742"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539431"
 ---
-# <a name="participant-mute"></a>Участник: Выкл.
+# <a name="participant-mute"></a>участник: выкл.
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключение микрофона определенного участника в вызове.
+Отключение выключения определенного участника в вызове.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,10 +43,10 @@ POST /applications/{id}/calls/{id}/participants/{id}/mute
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|ClientContext|String|Контекст клиента.|
+|Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -67,7 +67,7 @@ Content-Length: 46
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -90,9 +90,9 @@ Content-Length: 259
 }
 ```
 
-## <a name="example---mute-specific-participant"></a>Пример — отключить определенного участника
+## <a name="example---mute-specific-participant"></a>Пример: Специальный участник
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/0698446E77E24E4D85F80597083CB830/mute
@@ -104,7 +104,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 ```http
 HTTP/1.1 200 OK
@@ -127,7 +127,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-muted"></a>Выключен ли уведомления - участников, добавлены участника
+##### <a name="notification---roster-updated-with-participant-muted"></a>Список уведомлений обновлен с отключенным участником
 
 ```http
 POST https://bot.contoso.com/api/calls

@@ -1,27 +1,27 @@
 ---
 title: Разрешения
-description: 'Удаление приложения из каталога приложений организации (каталог приложений клиента). '
+description: 'Удалите приложение из каталога приложений организации (Каталог приложений клиента). '
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: e88b072e9beb9f29cf5a26c9dccac89ffa78fc39
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518053"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544593"
 ---
-# <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений организации
+# <a name="remove-an-app-from-your-organizations-app-catalog"></a>Удаление приложения из каталога приложений Организации
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаление [приложения](../resources/teamsapp.md) из каталога приложений организации (каталог приложений клиента). Чтобы удалить приложение из каталога приложений вашей организации, укажите `organization` как **distributionMethod** в [teamsCatalogApp](../resources/teamsapp.md) ресурсов.
+
+Удалите [приложение](../resources/teamsapp.md) из каталога приложений организации (Каталог приложений клиента). Чтобы удалить приложение из каталога приложений вашей организации, укажите `organization` в качестве **distributionMethod** в ресурсе [теамскаталогапп](../resources/teamsapp.md) .
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
->**Примечание:** Только глобальный администратор может вызывать этот интерфейс API. 
+>**Примечание:** Только глобальные администраторы могут вызывать этот API. 
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
@@ -45,7 +45,7 @@ DELETE /appCatalogs/teamsApps/{id}
 
 Нет.
 
->**Примечание:** Используйте код, возвращенный вызова [списка публикации приложений](./teamsapp-list.md) для ссылок на приложением, которое вы хотите обновить. Не используйте код из манифеста приложения ZIP-архив.
+>**Примечание:** Используйте идентификатор, возвращенный при вызове [списка опубликованных приложений](./teamsapp-list.md) , для ссылки на приложение, которое вы хотите обновить. Не используйте идентификатор из манифеста пакета приложения ZIP.
 
 ## <a name="response"></a>Ответ
 
@@ -58,19 +58,11 @@ HTTP/1.1 204 No Content
 ### <a name="request"></a>Запрос
 
 ```http
-DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
+DELETE https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 ```http
 HTTP/1.1 204 No Content
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/teamsapp-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

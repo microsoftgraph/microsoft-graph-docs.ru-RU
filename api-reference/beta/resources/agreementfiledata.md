@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса agreementFileData
-description: Представляет blob Azure Active Directory (Azure AD) условия соглашения использовать файл.
+title: Тип ресурса Агриментфиледата
+description: Представляет большой двоичный объект условий использования файла соглашения Azure Active Directory (Azure AD).
 localization_priority: Normal
 ms.openlocfilehash: bc0e7395875f64a3ee52e43b26da1a2df6276c9c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517031"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544133"
 ---
-# <a name="agreementfiledata-resource-type"></a>Тип ресурса agreementFileData
+# <a name="agreementfiledata-resource-type"></a>Тип ресурса Агриментфиледата
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет blob Azure Active Directory (Azure AD) условия соглашения использовать файл.
+Представляет большой двоичный объект условий использования файла соглашения Azure Active Directory (Azure AD).
 
 ## <a name="properties"></a>Свойства
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|data|Binary|Данные, представляющие условия использования PDF-документа. Только для чтения.|
+|data|Двоичный|Данные, представляющие условия использования PDF-документа. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

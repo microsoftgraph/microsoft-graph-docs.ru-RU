@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса directoryObjectPartnerReference
-description: Представляет ссылку на объект каталога в клиентов партнера. Наследуется от directoryObject.
+title: Тип ресурса Директорйобжектпартнерреференце
+description: Представляет ссылку на объект каталога в клиенте-партнере. Наследуется от directoryObject.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: a031586d1f92bf2b8b331e9b71058211b4617382
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640310"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543278"
 ---
-# <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса directoryObjectPartnerReference
+# <a name="directoryobjectpartnerreference-resource-type"></a>Тип ресурса Директорйобжектпартнерреференце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,13 +21,13 @@ ms.locfileid: "29640310"
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|description|String| Описание объект, возвращенный. Только для чтения. |
-|displayName|String| Имя объекта каталога, возвращаемых, такой как группы или приложения. Только для чтения. |
-|externalPartnerTenantId|GUID| Идентификатор клиента для клиента партнера. Только для чтения. |
-|id|String| Уникальный идентификатор для ресурса. Наследуется от [directoryObject](directoryobject.md?view=graph-rest-beta). Только для чтения. |
-|objectType|String| Тип объекта, который указывает ссылка в партнера для клиентов. Только для чтения. |
+|description|String| Описание возвращаемого объекта. Только для чтения. |
+|displayName|String| Имя возвращаемого объекта каталога, например Group или Application. Только для чтения. |
+|Екстерналпартнертенантид|Guid| Идентификатор клиента для партнерского клиента. Только для чтения. |
+|id|Строка| Уникальный идентификатор ресурса. Наследуется от [directoryObject](directoryobject.md?view=graph-rest-beta). Только для чтения. |
+|objectType|String| Тип упоминаемого объекта в партнерской клиенте. Только для чтения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

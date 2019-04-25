@@ -5,19 +5,19 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 ms.openlocfilehash: 63155bbeb586956f539b0c28ac1f7706189b5445
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482282"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581060"
 ---
 # <a name="itemreference-resource-type"></a>Тип ресурса ItemReference
 
 Ресурс **ItemReference** предоставляет сведения, необходимые для обращения к ресурсу [DriveItem](driveitem.md) через API.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
@@ -42,11 +42,11 @@ ms.locfileid: "30482282"
 | Свойство      | Тип              | Описание
 |:--------------|:------------------|:-----------------------------------------
 | driveId       | Строка            | Уникальный идентификатор экземпляра диска, содержащего элемент. Только для чтения.
-| driveType     | Строка            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
+| driveType     | String            | Служит для идентификации типа для объекта drive. Сведения о возможных значениях см. в статье, посвященной ресурсу [drive][].
 | id            | String            | Уникальный идентификатор элемента на диске. Только для чтения.
 | name          | String            | Имя элемента, на который направлена ссылка. Только для чтения.
 | path          | String            | Путь, по которому можно перейти к элементу. Только для чтения.
-| shareId       | String            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
+| shareId       | Строка            | Уникальный идентификатор общего ресурса, доступ к которому можно получить с помощью API [Shares][].
 | sharepointIds | [sharepointIds][] | Возвращает идентификаторы, использующиеся для обеспечения совместимости с SharePoint REST. Только для чтения.
 
 [drive]: ../resources/drive.md
@@ -71,5 +71,9 @@ GET https://graph.microsoft.com/v1.0/drives/{driveId}/items/{id}
   "type": "#page.annotation",
   "description": "ItemReference returns a pointer to another item.",
   "section": "documentation",
+  "suppressions": [
+    "Warning: /api-reference/v1.0/resources/itemreference.md:
+      Found potential enums in resource example that weren't defined in a table:(personal,business,documentLibrary) are in resource, but () are in table"
+  ],
   "tocPath": "Resources/ItemReference"
 } -->

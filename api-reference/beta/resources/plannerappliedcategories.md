@@ -1,28 +1,29 @@
 ---
-title: Тип ресурса plannerAppliedCategories
-description: Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или метки), которые были применены к задаче. Он является частью объекта plannerTask.
+title: Тип ресурса Планнерапплиедкатегориес
+description: Ресурс **апплиедкатегориесколлектион** представляет коллекцию категорий (или меток), которые были применены к задаче. Он является частью объекта plannerTask.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: b4e3ae92d179669d449d33c34ade4ae4476570fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517668"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541355"
 ---
-# <a name="plannerappliedcategories-resource-type"></a>Тип ресурса plannerAppliedCategories
+# <a name="plannerappliedcategories-resource-type"></a>Тип ресурса Планнерапплиедкатегориес
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **AppliedCategoriesCollection** представляет коллекцию категорий (или меток), примененных к задаче. Он является частью объекта [plannerTask](plannertask.md). К задаче можно применить до 6 категорий. Описания категорий, например `category1` и `category2`, являются частью объекта [сведений о плане](plannerplandetails.md). Это открытый тип.
+Ресурс **апплиедкатегориесколлектион** представляет коллекцию категорий (или меток), которые были применены к задаче. Он является частью объекта [plannerTask](plannertask.md) .
+К задаче может быть применено до 6 категорий. Описания категорий, например `category1`, `category2` и т. д., входят в состав объекта " [сведения о плане](plannerplandetails.md) ". Это открытый тип.
 
 ## <a name="properties"></a>Свойства
-Клиент может определять свойства открытого типа. В этом случае клиент должен указать значения для свойств `category1`, `category2`, `category3`, `category4`, `category5` или `category6`, а также использовать логическое значение `true` при применении соответствующих категорий к задаче. Ниже показан пример. Если не применить свойства, они будут автоматически удалены. Для этого им будет присвоено логическое значение `false`. 
+Клиентская возможность может определять свойства открытого типа. `category1`В этом случае клиент должен предоставлять, `category2`, `category3` `category4`, `category5` и/или `category6` как свойства со своими значениями `true` Boolean при применении соответствующих категорий к задаче. Пример показан ниже. Если они не применяются, свойства автоматически удаляются путем присвоения их значений `false` логическому значению. 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса в формате JSON
+Ниже этот ресурс представлен в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -38,7 +39,7 @@ ms.locfileid: "29517668"
 }
 ```
 
-Пример: 
+Пример. 
 
 ```json
 {

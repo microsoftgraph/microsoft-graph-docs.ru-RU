@@ -1,13 +1,13 @@
 ---
 title: Определение /me как одноэлементного класса
-description: Это то, что необходимо добавить в документах, чтобы убедиться, что наценки-сканера
+description: Вот что нужно было добавить в документы, чтобы убедиться, что сканер Markdown
 localization_priority: Normal
 ms.openlocfilehash: da71bfcb25efbebdf4e6a111f23d8d16e3aca342
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842898"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569531"
 ---
 # <a name="helpers-examples-that-arent-included-in-the-docs"></a>Вспомогательный код (примеры, не включенные в документы)
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cc9ef2e11bc4502b580bce25ffb7e94f301b8d13
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778476"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552158"
 ---
 # <a name="iosvppapprevokelicensesactionresult-resource-type"></a>Тип ресурса Иосвппаппревокелиценсесактионресулт
 

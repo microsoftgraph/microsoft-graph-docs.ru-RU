@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30676970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583797"
 ---
 # <a name="shift-resource-type"></a>Тип ресурса Shift
 
@@ -21,10 +21,10 @@ ms.locfileid: "30676970"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Создание смены](../api/schedule-post-shifts.md) | [перемещен](shift.md) | Создание нового `shift`объекта.|
+|[Создание смены](../api/schedule-post-shifts.md) | [перемещен](shift.md) | Создание объекта `shift`.|
 |[ПереЧисление смещений](../api/schedule-list-shifts.md) | Коллекция " [SHIFT](shift.md) " | Получение списка `shifts` по данному расписанию.|
 |[Получение Shift](../api/shift-get.md) | [перемещен](shift.md) | Получение `shift` по идентификатору.|
-|[Замена Shift](../api/shift-put.md) | [перемещен](shift.md) | Замените элемент `shift`.|
+|[Замена Shift](../api/shift-put.md) | [перемещен](shift.md) | Замена объекта `shift`.|
 |[Удаление смены](../api/shift-delete.md) | Нет | Удаление `shift` из расписания.|
 
 ## <a name="properties"></a>Свойства
@@ -35,11 +35,11 @@ ms.locfileid: "30676970"
 | Счедулингграупид         |`string`      |Идентификатор группы планирования, в которой `shift` входит. Обязательный. |
 | Шаредшифт   |[Шифтитем](shiftitem.md)  |Общая версия этого `shift` объекта доступна как для сотрудников, так и для руководителей. Обязательный. |
 | Драфтшифт        |[Шифтитем](shiftitem.md)        |Черновая версия этого `shift` элемента, просматриваемая руководителями. Обязательный. |
-| createdDateTime       |`DateTimeOffset`        |Временная метка, на которую `shift` был создан впервые. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
-| lastModifiedDateTime      |`DateTimeOffset`        |Отметка времени `shift` последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |Удостоверение, которое Последнее обновило `shift`.|
+| createdDateTime       |`DateTimeOffset`        |Временная метка, на которую `shift` был создан впервые. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| lastModifiedDateTime      |`DateTimeOffset`        |Отметка времени `shift` последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| lastModifiedBy        |`microsoft.graph.identitySet`        |Учетная запись, которая последней обновила этот объект `shift`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

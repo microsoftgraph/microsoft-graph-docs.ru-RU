@@ -1,15 +1,15 @@
 ---
 title: Получение объекта eventMessage
-description: Разверните параметр на свойство навигации **события** для получения связанного события в календаре участника.
+description: Разверните параметр в свойстве навигации **события** , чтобы получить связанное событие в календаре участника.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 53428679904ba41ce5a539d62eba2a48cce4eedc
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956705"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584189"
 ---
 # <a name="get-eventmessage"></a>Получение объекта eventMessage
 
@@ -42,8 +42,8 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 |:-----------|:------|:----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -60,7 +60,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 ```
 ##### <a name="response-1"></a>Отклик 1
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
@@ -144,7 +144,7 @@ Content-type: application/json
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=microsoft.graph.eventMessage/event
 ```
-##### <a name="response-2"></a>Отклик 2
+##### <a name="response-2"></a>Ответ 2
 Ниже приведен пример отклика. В отклике возвращаются свойства связанного события. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

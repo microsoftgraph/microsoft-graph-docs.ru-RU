@@ -1,21 +1,21 @@
 ---
-title: Тип ресурса resourceReference
-description: Сложный тип, содержащий свойства средствами.
+title: Тип ресурса Ресаурцереференце
+description: Сложный тип, содержащий свойства аналитики.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 4fa4563904472fad9fc28fa4acb10b77887b5872
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642760"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549708"
 ---
-# <a name="resourcereference-resource-type"></a>Тип ресурса resourceReference
+# <a name="resourcereference-resource-type"></a>Тип ресурса Ресаурцереференце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип, содержащий свойства [средствами](insights.md).
+Сложный тип, содержащий свойства [аналитики](insights.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,9 +33,9 @@ ms.locfileid: "29642760"
 
 | Свойство      | Тип      | Описание  |
 | ------------- |-----------| -------------|
-| webUrl        | String    | URL-адрес, приводя к указанного элемента. |
-| id            | String    | Уникальный идентификатор элемента.           |
-| type          | String    | Строковое значение, которое можно использовать для классификации элемента, например, «microsoft.graph.driveItem» |
+| webUrl        | String    | URL-адрес, ведущая к указанному элементу. |
+| id            | Строка    | Уникальный идентификатор элемента.           |
+| type          | String    | Строковое значение, которое может использоваться для классификации элемента, например "Microsoft. Graph. driveItem" |
 <!--
 {
   "type": "#page.annotation",

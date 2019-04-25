@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса expressionInputObject
-description: 'Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.'
+title: Тип ресурса Експрессионинпутобжект
+description: 'Представляет объект, который будет использоваться в качестве входных тестовых данных, когда действие [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) выполняет оценку выражения.'
 localization_priority: Normal
 ms.openlocfilehash: 3e631102505408b955404c4badb33b98f314236f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641654"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582111"
 ---
-# <a name="expressioninputobject-resource-type"></a>Тип ресурса expressionInputObject
+# <a name="expressioninputobject-resource-type"></a>Тип ресурса Експрессионинпутобжект
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет объект для использования в качестве входного тестовых данных при [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие выполняется вычисление выражения.
+Представляет объект, который будет использоваться в качестве входных тестовых данных, когда действие [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) выполняет оценку выражения.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|definition|[objectDefinition](synchronization-objectdefinition.md)|Определение объекта теста.|
-|properties|[stringKeyObjectValuePair](synchronization-stringkeyobjectvaluepair.md) коллекции|Значения свойств объекта теста.|
+|RDLC|[Обжектдефинитион](synchronization-objectdefinition.md)|Определение тестового объекта.|
+|properties|Коллекция [стрингкэйобжектвалуепаир](synchronization-stringkeyobjectvaluepair.md)|Значения свойств тестового объекта.|
 
 ## <a name="json-representation"></a>Представление JSON
 

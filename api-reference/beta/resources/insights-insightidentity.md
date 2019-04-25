@@ -5,11 +5,11 @@ author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 45ac8874a30ebb4f3196f03a675229bf1fab750c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643890"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549575"
 ---
 # <a name="insightidentity"></a>insightIdentity
 
@@ -32,9 +32,9 @@ ms.locfileid: "29643890"
 
 | Свойство              | Тип          | Описание  |
 | -------------         |-----------    | -------------|
-| displayName       | String          | Отображаемое имя пользователя, который общих элемента. |
-| id              | String        | Идентификатор пользователя, который общих элемента.     |
-| address             | String      | Адрес электронной почты пользователя, который общих элемента.  |
+| displayName       | Строка          | Отображаемое имя пользователя, который предоставил общий доступ к элементу. |
+| id              | String        | Идентификатор пользователя, который предоставил общий доступ к элементу.     |
+| address             | String      | Адрес электронной почты пользователя, который предоставил общий доступ к элементу.  |
 <!--
 {
   "type": "#page.annotation",

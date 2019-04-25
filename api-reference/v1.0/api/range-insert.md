@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: aa59abfd2b60454a73472fc5283d3c7212ee48ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27929048"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558204"
 ---
 # <a name="range-insert"></a>Range: insert
 
@@ -37,12 +37,12 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|shift|string|Указывает, каким способом сдвига ячеек.  Возможные значения: `Down`, `Right`.|
+|shift|string|Определяет способ сдвига ячеек.  Возможные значения: `Down`, `Right`.|
 
 ## <a name="response"></a>Отклик
 
@@ -66,8 +66,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

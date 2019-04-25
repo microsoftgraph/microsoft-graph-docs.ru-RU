@@ -1,15 +1,15 @@
 ---
-title: 'servicePrincipal: checkMemberGroups'
-description: Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
+title: 'servicePrincipal: Чеккмемберграупс'
+description: Для вызова этого API требуется одно из следующих разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье Разрешения.
 localization_priority: Normal
 ms.openlocfilehash: 2237f83ce32bbb34f983226011f1c324185040b4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545522"
 ---
-# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: checkMemberGroups
+# <a name="serviceprincipal-checkmembergroups"></a>servicePrincipal: Чеккмемберграупс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -64,9 +64,8 @@ Content-length: 44
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

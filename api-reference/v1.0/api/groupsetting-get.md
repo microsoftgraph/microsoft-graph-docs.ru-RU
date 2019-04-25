@@ -1,19 +1,19 @@
 ---
 title: Получение параметра группы
-description: Получение свойств для определенного объекта параметра группы.
+description: Получение свойств определенного объекта параметров группы.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d47441a66ab0b2ed3602a69f4a92a06050708f67
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27936503"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577835"
 ---
 # <a name="get-a-group-setting"></a>Получение параметра группы
 
-Получение свойств для определенного объекта параметра группы.
+Получение свойств определенного объекта параметров группы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,14 +29,14 @@ ms.locfileid: "27936503"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Получение указанного параметра, заданного на уровне клиента или отдельной группы.
+Получение определенного параметра на уровне клиента или группы.
 
 ```http
 GET /groupSettings/{id}
 GET /groups/{id}/settings/{id}
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 > Примечание. $filter не поддерживается.
 
@@ -45,13 +45,13 @@ GET /groups/{id}/settings/{id}
 |:----------|:----------|
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и объект [groupSetting](../resources/groupsetting.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [groupSetting](../resources/groupsetting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -63,9 +63,9 @@ GET /groups/{id}/settings/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1,32 +1,32 @@
 ---
-title: Тип ресурса teamMessagingSettings
-description: Параметры для настройки системы обмена сообщениями и упоминания рабочих групп.
+title: Тип ресурса Теаммессагингсеттингс
+description: Параметры для настройки обмена сообщениями и упоминаний в команде.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: d98dfa3c2306cabb99b6de96aed2010cefa10717
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510101"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553950"
 ---
-# <a name="teammessagingsettings-resource-type"></a>Тип ресурса teamMessagingSettings
+# <a name="teammessagingsettings-resource-type"></a>Тип ресурса Теаммессагингсеттингс
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры для настройки системы обмена сообщениями и упоминания в [группы](team.md).
+
+Параметры для настройки обмена сообщениями и упоминаний в [команде](team.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Логическое|Если параметр имеет значение true, пользователи могут изменять свои сообщения;|
-|allowUserDeleteMessages|Логическое|Если параметр имеет значение true, пользователи могут удалять свои сообщения.|
-|allowOwnerDeleteMessages|Логическое|Если параметр имеет значение true, владельцы могут удалять все сообщения.|
-|allowTeamMentions|Логическое|Если задано значение true, допускаются упоминания @team.|
-|allowChannelMentions|Логическое|Если задано значение true, допускаются упоминания @channel.|
+|Алловусередитмессажес|Логический|Если задано значение true, пользователи могут редактировать сообщения.|
+|Алловусерделетемессажес|Логический|Если задано значение true, пользователи могут удалять свои сообщения.|
+|Аллововнерделетемессажес|Логический|Если задано значение true, владельцы могут удалять любые сообщения.|
+|Алловтеамментионс|Логический|Если задано значение true, @team упоминаний разрешены.|
+|Алловчаннелментионс|Логический|Если задано значение true, @channel упоминаний разрешены.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -47,15 +47,10 @@ ms.locfileid: "29510101"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "team's messagingSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/teammessagingsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

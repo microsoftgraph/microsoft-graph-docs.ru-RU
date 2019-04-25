@@ -1,19 +1,19 @@
 ---
 title: 'event: snoozeReminder'
-description: Отложить напоминание для события в календаре пользователя до нового времени.
+description: ОтЛожить напоминание о событии в календаре пользователя до нового времени.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d3f8ffab576182f5e67dad49e34c67d886fe0bde
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932415"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584308"
 ---
 # <a name="event-snoozereminder"></a>event: snoozeReminder
 
-Отложить напоминание для [события](../resources/event.md) в [календаре](../resources/calendar.md) пользователя до нового времени.
+ОтЛожить напоминание о [событии](../resources/event.md) в календаре [](../resources/calendar.md) пользователя до нового времени.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -48,7 +48,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -80,7 +80,7 @@ Content-length: 97
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

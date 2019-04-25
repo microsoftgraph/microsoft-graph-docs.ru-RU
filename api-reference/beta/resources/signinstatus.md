@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса signInStatus
-description: Предоставляет входа в состояние (успешное или неудачное) входа в программу
+title: Тип ресурса Сигнинстатус
+description: Предоставляет состояние входа (успешный или неУдачный) входа
 localization_priority: Normal
 ms.openlocfilehash: 96bcee62bac24701254f56bee41422ca91501d9e
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583573"
 ---
-# <a name="signinstatus-resource-type"></a>Тип ресурса signInStatus
-Предоставляет входа в состояние (успешное или неудачное) входа в программу
+# <a name="signinstatus-resource-type"></a>Тип ресурса Сигнинстатус
+Предоставляет состояние входа (успешный или неУдачный) входа
 
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|additionalDetails|Строка|Дополнительные сведения для входа в действия|
-|errorCode|Int32|Содержит код ошибки 5 6digit, созданного во время сбоя входа. Извлечение [списка кодов ошибок и сообщений](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
-|failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующей операции регистрации. Извлечение [списка кодов ошибок и сообщений](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|additionalDetails|String|Предоставляет дополнительные сведения об активности входа|
+|errorCode|Int32|Предоставляет код ошибки 5 6digit, который создается при сбое входа. Ознакомьтесь со [списком кодов и сообщений об ошибках](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
+|failureReason|String|Содержит сообщение об ошибке или причину сбоя для соответствующего действия при входе. Ознакомьтесь со [списком кодов и сообщений об ошибках](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-reporting-activity-sign-ins-errors).|
 
 ## <a name="json-representation"></a>Представление JSON
 

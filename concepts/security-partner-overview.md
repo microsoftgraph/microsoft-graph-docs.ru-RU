@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 312c13cdad2ce8341095a87d33f4a5b01f7e1eef
-ms.sourcegitcommit: fd9f62fd9a6d311f98afe2e31afca8b818c402c2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31003701"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574843"
 ---
 # <a name="partnering-with-the-microsoft-graph-security-api--technology-partner-opportunities"></a>Партнерские организации с помощью API безопасности Microsoft Graph — возможности для партнеров по технологиям
 

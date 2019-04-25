@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 54baa557317675b198b1d557e81cd7a675d82fee
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544338"
 ---
 # <a name="get-timeoffreason"></a>Получение Тимеоффреасон
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [тимеоффреасон](../resources/timeoffreason.md) в тексте отклика.
 
@@ -64,7 +64,7 @@ GET /teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

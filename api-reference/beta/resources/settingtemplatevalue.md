@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса settingTemplateValue
-description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию для этого параметра, если экземпляр этого параметра не создан.
+title: Тип ресурса Сеттингтемплатевалуе
+description: Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
 localization_priority: Normal
 ms.openlocfilehash: 80b640419eb2084888dcd6887ece54b4fd4bdf3c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528013"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583683"
 ---
-# <a name="settingtemplatevalue-resource-type"></a>Тип ресурса settingTemplateValue
+# <a name="settingtemplatevalue-resource-type"></a>Тип ресурса Сеттингтемплатевалуе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет определение отдельного параметра шаблона, включая значение по умолчанию для этого параметра, если экземпляр этого параметра не создан.
+Представляет определение отдельного параметра шаблона, включая значение по умолчанию, если не создается экземпляр этого параметра.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|defaultValue|string|Значение по умолчанию для параметра. Только для чтения.|
-|description|строка|Описание параметра. Только для чтения.|
-|name|string|Имя параметра. Только для чтения.|
+|Значение|string|Значение по умолчанию для параметра. Только для чтения.|
+|description|string|Описание параметра. Только для чтения.|
+|name|строка|Имя параметра. Только для чтения.|
 |type|string|Тип параметра. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON

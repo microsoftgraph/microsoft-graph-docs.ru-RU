@@ -5,11 +5,11 @@ ms.date: 09/17/2017
 title: BaseItemVersion
 localization_priority: Normal
 ms.openlocfilehash: 56a2c230c53c4b5bd50e8c123dd69eedec67a141
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543874"
 ---
 # <a name="baseitemversion-resource-type"></a>Тип ресурса baseItemVersion
 

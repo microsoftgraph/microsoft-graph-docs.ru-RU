@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5beacfd60eb2237ed85a95bca21c27a38f956d16
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255208"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583160"
 ---
 # <a name="ioslobappassignmentsettings-resource-type"></a>Тип ресурса iosLobAppAssignmentSettings
 
@@ -25,7 +25,7 @@ ms.locfileid: "30255208"
 |:---|:---|:---|
 |vpnConfigurationId|String|ИД конфигурации VPN, применяемой к этому приложению.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

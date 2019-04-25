@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7063eb0a7aa437b51a2bfecb482012771297f766
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936257"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578166"
 ---
 # <a name="locationconstraintitem-resource-type"></a>Тип ресурсов locationConstraintItem
 
@@ -19,7 +19,7 @@ ms.locfileid: "30936257"
 
 Тип, производный от [location](location.md).
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -51,9 +51,9 @@ ms.locfileid: "30936257"
 | address | [physicalAddress](physicaladdress.md) |Почтовый адрес расположения. |
 | coordinates | [outlookGeoCoordinates](outlookgeocoordinates.md) | Географические координаты и высота расположения. |
 | displayName  | String | Имя, связанное с расположением.                       |
-| locationEmailAddress | Строка | Необязательный адрес электронной почты для расположения. |
+| locationEmailAddress | String | Необязательный адрес электронной почты для расположения. |
 | locationType | locationType | Тип расположения. Возможные значения: `default`, `conferenceRoom`, `homeAddress`, `businessAddress`,`geoCoordinates`, `streetAddress`, `hotel`, `restaurant`, `localBusiness`, `postalAddress`. Только для чтения.|
-| locationUri | Строка | Необязательный URI, представляющий местоположение. |
+| locationUri | String | Необязательный URI, представляющий местоположение. |
 | Ресолвеаваилабилити | Boolean | Если задано значение true и указанный ресурс занят, [findMeetingTimes](../api/user-findmeetingtimes.md) ищет свободный ресурс. Если задано значение false и указанный ресурс занят, **findMeetingTimes** возвращает ресурс с наиболее высоким приоритетом в кэше пользователя, не проверяя, свободен ли этот ресурс. Значение по умолчанию: true. |
 | uniqueId | String | Только для внутреннего использования.|
 | uniqueIdType | String | Только для внутреннего использования. |

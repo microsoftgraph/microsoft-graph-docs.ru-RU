@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: de24baee308377cb0b907084b0f1644da5c7fe1a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518011"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544658"
 ---
 # <a name="get-tablesort"></a>Получение объекта TableSort
 
@@ -41,7 +41,7 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -56,9 +56,8 @@ GET /workbook/worksheets/{id|name}/tables/{id|name}/sort
 ```http
 GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/sort
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

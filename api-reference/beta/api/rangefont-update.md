@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 5857941f8c08c9090ba05098ae1d69a34dead791
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546264"
 ---
 # <a name="update-rangefont"></a>Обновление объекта rangefont
 
@@ -38,17 +38,17 @@ PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|bold|boolean|Указывает, является ли шрифт полужирным.|
+|bold|логический|Указывает, является ли шрифт полужирным.|
 |color|строка|HTML-код цвета текста. Например, значение #FF0000 обозначает красный цвет.|
 |italic|boolean|Указывает, применяется ли курсив.|
-|name|строка|Имя шрифта (например, Calibri)|
-|size|double|font-size|
-|underline|строка|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
+|name|string|Имя шрифта (например, Calibri)|
+|size|double|размер шрифта|
+|underline|string|Тип подчеркивания, применяемый для шрифта. Возможные значения: `None`, `Single`, `Double`, `SingleAccountant`, `DoubleAccountant`.|
 
 ## <a name="response"></a>Отклик
 

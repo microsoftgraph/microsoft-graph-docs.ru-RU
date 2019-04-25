@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 12b1970601bf2e938ecaee8ff63a1ce9f1ada90d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583552"
 ---
 # <a name="permanently-delete-item"></a>Удаление элемента без возможности восстановления
 
@@ -18,7 +18,7 @@ ms.locfileid: "27991932"
 В настоящее время хранение удаленных элементов поддерживается только для ресурсов [group](../resources/group.md) и [user](../resources/user.md). Вы можете окончательно удалить элемент из папки "Удаленные". После окончательного удаления элемент **невозможно** восстановить.
 
 ## <a name="permissions"></a>Разрешения
-Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).
+Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 ### <a name="for-users"></a>Для пользователей:
 
@@ -47,8 +47,8 @@ DELETE /directory/deletedItems/{id}
 | Authorization  | Bearer &lt;code&gt; *Обязательный*.|
 | Accept  | application/json |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -64,8 +64,8 @@ DELETE /directory/deletedItems/{id}
 ```http
 DELETE https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}
 ```
-##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

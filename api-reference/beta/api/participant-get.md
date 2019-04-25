@@ -1,21 +1,21 @@
 ---
-title: Получение участников
-description: Извлечение свойств и связи объекта **участника** .
+title: Получение участника
+description: Получение свойств и связей объекта **участника** .
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 5b966b3fae9ea687fea22e01227e585d5d69d4cf
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507672"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539401"
 ---
-# <a name="get-participant"></a>Получение участников
+# <a name="get-participant"></a>Получение участника
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта **участника** .
+Получение свойств и связей объекта **участника** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -34,7 +34,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -42,10 +42,10 @@ GET /applications/{id}/calls/{id}/participants/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [участника](../resources/participant.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [участника](../resources/participant.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -59,7 +59,7 @@ GET /applications/{id}/calls/{id}/participants/{id}
 GET https://graph.microsoft.com/beta/app/calls/{id}/participants/{id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

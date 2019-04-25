@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: d592b3e9ae084223a08364c7cd719e2b6d03c0ef
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577807"
 ---
 # <a name="list-groupsettingtemplates"></a>Перечисление объектов groupSettingTemplate
 
@@ -32,7 +32,7 @@ ms.locfileid: "27962340"
 GET /groupSettingTemplates
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 > **Примечание.** $filter не поддерживается.
 
@@ -41,8 +41,8 @@ GET /groupSettingTemplates
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,9 +57,9 @@ GET /groupSettingTemplates
 ```http
 GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

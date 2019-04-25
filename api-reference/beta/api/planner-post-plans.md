@@ -5,15 +5,13 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: a5383bacedef2e7e6df718a4286f034e67f6a7d9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524718"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539028"
 ---
 # <a name="create-plannerplan"></a>Создание объекта plannerPlan
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API, чтобы создать объект **plannerPlan**.
 
@@ -40,11 +38,12 @@ POST /planner/plans
 | :------------ | :------------------------ |
 | Авторизация | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON. В качестве свойства владельца **PlannerPlan** необходимо указать идентификатор объекта [group](../resources/group.md).
 
->**Примечание:** Пользователя, создающего план должен быть членом группы, который будет владельцем плана. При создании новой группы с помощью [Создать группу](../api/group-post-groups.md), вы не добавляются в группу как члена группы. После создания группы добавьте себя в качестве члена с помощью [учета членов группы](../api/group-post-members.md).
+>**Примечание.** Пользователь, создающий план, должен быть участником группы, владеющей планом. При создании группы с помощью средства [создания группы](../api/group-post-groups.md) вы не становитесь ее участником. После создания группы добавьте себя в качестве участника с помощью операции [добавления участников группы](../api/group-post-members.md).
+
 
 ## <a name="response"></a>Отклик
 
@@ -57,12 +56,13 @@ POST /planner/plans
 ### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
+
 <!-- {
   "blockType": "request",
   "name": "create_plannerplan_from_planner"
 }-->
 ``` http
-POST https://graph.microsoft.com/beta/planner/plans
+POST https://graph.microsoft.com/v1.0/planner/plans
 Content-type: application/json
 Content-length: 381
 
@@ -74,9 +74,9 @@ Content-length: 381
 
 Включите в текст запроса описание объекта [plannerPlan](../resources/plannerplan.md) в формате JSON.
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -106,15 +106,10 @@ Content-length: 357
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create plannerPlan",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/planner-post-plans.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

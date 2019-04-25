@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 8952bc837ff326aa1095293d70183791b46def38
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27954136"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550065"
 ---
 # <a name="get-educationuser"></a>Получение educationUser
 
@@ -37,8 +37,8 @@ GET /education/users/{id}
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвратит код отклика `200 OK` и объект [educationUser](../resources/educationuser.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -51,7 +51,7 @@ GET /education/users/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/education/users/{user-id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

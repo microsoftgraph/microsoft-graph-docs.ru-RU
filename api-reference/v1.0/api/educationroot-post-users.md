@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 29785bdc2a3afe8bce1521f7321da53eda66ff0b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947360"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550317"
 ---
 # <a name="create-educationuser"></a>Создание educationUser
 
@@ -37,7 +37,7 @@ POST /education/users
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [educationUser](../resources/educationuser.md) в формате JSON.
 
 
@@ -88,7 +88,7 @@ Content-length: 508
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

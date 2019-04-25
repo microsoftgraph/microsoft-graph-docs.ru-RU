@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: azure-ad
 ms.openlocfilehash: a03ca03e0b7105c8f07347f6ed52aa322a6fd090
-ms.sourcegitcommit: e8b488f8068845522b869bf97475da7b078bee3d
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30342291"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583111"
 ---
 # <a name="targetresource-resource-type"></a>Тип ресурса targetResource
 
@@ -20,14 +20,14 @@ ms.locfileid: "30342291"
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|Указывает уникальный идентификатор ресурса.|
+|id|Строка|Указывает уникальный идентификатор ресурса.|
 |displayName|String|Указывает отображаемое имя, заданное для ресурса. Обычно указывается при создании ресурса.|
 |type|String|Описывает тип ресурса.  Примеры значений: `Application`, `Group` `ServicePrincipal`, и `User`.|
 |userPrincipalName|String|Если **** для `User`параметра Type задано значение, включается имя пользователя, инициировавшего действие; `null` для других типов.|
 |groupType|String|Если **** для `Group`параметра Type задано значение, это указывает тип группы.|
 |modifiedProperties|Коллекция [модифиедпроперти](modifiedproperty.md)|Указывает имя, старое значение и новое значение каждого атрибута, который изменился. Значения свойств зависят от **типа**операции.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

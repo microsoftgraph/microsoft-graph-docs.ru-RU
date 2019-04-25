@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса keyValue
+title: Тип ресурса Ключзначение
 description: Ниже показано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: 4223df85f9f120ba6477480f943d65a2511b6f2e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528531"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581097"
 ---
-# <a name="keyvalue-resource-type"></a>Тип ресурса keyValue
+# <a name="keyvalue-resource-type"></a>Тип ресурса Ключзначение
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "29528531"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |key|string||
-|value|строка||
+|value|string||
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

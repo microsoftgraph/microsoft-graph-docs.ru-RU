@@ -2,21 +2,21 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: IncompleteData
+title: Инкомплетедата
 localization_priority: Normal
 ms.openlocfilehash: f2493263d5293b95cbe386b46c56429d11dda089
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525089"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549036"
 ---
-# <a name="incompletedata-resource-type"></a>Тип ресурса incompleteData
+# <a name="incompletedata-resource-type"></a>Тип ресурса Инкомплетедата
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Аспекта **incompleteData** указывает, что ресурс был создан с помощью неполные данные.
-Свойства в можно указать сведения о, поэтому неполные данные.
+Аспект **инкомплетедата** указывает, что ресурс был создан с неполными данными.
+Свойства, содержащиеся в, могут содержать сведения о причине неполных данных.
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,8 +33,8 @@ ms.locfileid: "29525089"
 
 | Свойство                  | Тип           | Описание
 |:--------------------------|:---------------|:--------------------------------
-| missingDataBeforeDateTime | DateTimeOffset | Служба не имеет источника данных до указанного времени.
-| wasThrottled              | Логическое        | Не удалось записать часть данных из-за высокой активности.
+| Миссингдатабефоредатетиме | DateTimeOffset | В службе нет исходных данных до указанного времени.
+| Вассроттлед              | Логический        | Некоторые данные не были записаны из-за чрезмерной активности.
 
 <!--
 {

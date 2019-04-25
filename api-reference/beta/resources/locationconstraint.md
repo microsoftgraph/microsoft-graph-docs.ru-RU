@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1c1aea23e9021afb21e6664197cc19e49a36afd4
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30937799"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578171"
 ---
 # <a name="locationconstraint-resource-type"></a>Тип ресурсов locationConstraint
 
@@ -17,7 +17,7 @@ ms.locfileid: "30937799"
 
 Условия, заданные клиентом в отношении расположения для проведения собрания.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже показано представление JSON ресурса.
 

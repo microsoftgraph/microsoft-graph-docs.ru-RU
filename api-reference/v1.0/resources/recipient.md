@@ -3,11 +3,11 @@ title: Тип ресурса recipient
 description: 'Представляет сведения о пользователе, который отправляет или получает событие, сообщение или запись в группе. '
 localization_priority: Normal
 ms.openlocfilehash: 89d1ae7703d5b8b0e2a94027e74fbd4c4ebf9ed8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27875294"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579431"
 ---
 # <a name="recipient-resource-type"></a>Тип ресурса recipient
 
@@ -18,7 +18,7 @@ ms.locfileid: "27875294"
 |:---------------|:--------|:----------|
 |emailAddress|[EmailAddress](emailaddress.md)|Электронный адрес получателя.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

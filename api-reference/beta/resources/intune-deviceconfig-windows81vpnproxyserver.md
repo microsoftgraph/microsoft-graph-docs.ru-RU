@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1a337dc2d18ed5f10ecb9f8f654a7d19175fc476
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31800912"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554256"
 ---
 # <a name="windows81vpnproxyserver-resource-type"></a>Тип ресурса windows81VpnProxyServer
 
@@ -28,8 +28,8 @@ VPN-прокси-сервер.
 |Аутоматикконфигуратионскриптурл|String|URL-адрес скрипта автоматической настройки прокси-сервера. НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |address|String|Address. НаСледуется от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
 |порта|Int32|Порта. Допустимые значения — от 0 до 65535, наСледуемые от [впнпроксисервер](../resources/intune-deviceconfig-vpnproxyserver.md)|
-|Аутоматикаллидетектпроксисеттингс|Boolean|Автоматически определять параметры прокси-сервера.|
-|Бипасспроксисерверфорлокаладдресс|Boolean|Обход прокси-сервера для локального адреса.|
+|Аутоматикаллидетектпроксисеттингс|Логический|Автоматически определять параметры прокси-сервера.|
+|Бипасспроксисерверфорлокаладдресс|Логический|Обход прокси-сервера для локального адреса.|
 
 ## <a name="relationships"></a>Отношения
 Нет

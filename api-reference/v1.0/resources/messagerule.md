@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: a1a1ed26b7f0e659af0b7aeebae7f6da456afddf
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943482"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580291"
 ---
 # <a name="messagerule-resource-type"></a>Тип ресурса messageRule
 
@@ -25,18 +25,18 @@ ms.locfileid: "27943482"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 | actions | [messageRuleActions](messageruleactions.md) | Действия, которые нужно применить к сообщению при выполнении определенных условий. |
-| conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, при соблюдении которых с указанным правилом выполняются соответствующие действия. |
-| displayName | Строка | Отображаемое имя правила. |
+| conditions | [messageRulePredicates](messagerulepredicates.md) | Условия, выполнение которых активирует соответствующие действия для указанного правила. |
+| displayName | String | Отображаемое имя правила. |
 | exceptions | [messageRulePredicates](messagerulepredicates.md) | Условия исключения для правила. |
 | hasError | Boolean | Указывает, является ли правило ошибкой. Только для чтения. |
 | id |String|Уникальный идентификатор правила. Только для чтения.|
-| isEnabled | Логический | Указывает, включено ли применение правила к сообщениям. |
-| isReadOnly | Логический | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
+| isEnabled | Boolean | Указывает, включено ли применение правила к сообщениям. |
+| isReadOnly | Boolean | Указывает, доступно ли правило только для чтения и можно ли изменить или удалить его с помощью REST API для правил. |
 | sequence | Int32 | Определяет последовательность выполнения правила среди прочих правил. |
 
 
 ## <a name="json-representation"></a>Представление JSON
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -68,7 +68,7 @@ ms.locfileid: "27943482"
 |[Получение правила](../api/messagerule-get.md) | [messageRule](messagerule.md) |Считывает свойства и отношения объекта **messageRule**.|
 |[Создание](../api/mailfolder-post-messagerules.md) | [messageRule](messagerule.md) |Создает объект **messageRule**, определяя набор условий и действий.|
 |[Обновление](../api/messagerule-update.md) | [messageRule](messagerule.md) |Изменяет записываемые свойства объекта **messageRule** и сохраняет изменения. |
-|[Удаление](../api/messagerule-delete.md) | Отсутствует |Удаляет указанный объект **messageRule**. |
+|[Удаление](../api/messagerule-delete.md) | Нет |Удаляет указанный объект **messageRule**. |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

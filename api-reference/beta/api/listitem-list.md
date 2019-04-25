@@ -3,18 +3,16 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Получение элементов из списка SharePoint
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: sharepoint
 ms.openlocfilehash: 26d2aa28566a666692e49bc0d07305bf793e21d1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481694"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540984"
 ---
 # <a name="enumerate-items-in-a-list"></a>Перечисление элементов списка
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение коллекции ресурсов [item][item] из объекта [list][].
 
@@ -34,22 +32,22 @@ ms.locfileid: "30481694"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Column1,Column2)
 ```
 
 ## <a name="example"></a>Пример
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-list-items" } -->
+<!-- { "blockType": "request", "name": "get-list-items", "scopes": "sites.read.all" } -->
 
 ```http
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expand=fields(select=Name,Color,Quantity)
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
@@ -87,15 +85,10 @@ Content-type: application/json
 }
 ```
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Enumerate",
-  "suppressions": [
-    "Error: /api-reference/beta/api/listitem-list.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": "ListItem/Enumerate"
+} -->

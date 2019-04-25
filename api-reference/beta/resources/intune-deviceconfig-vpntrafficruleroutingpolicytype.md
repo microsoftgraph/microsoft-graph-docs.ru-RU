@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 360a7ea9ab46a9d482fd8e41c2d2a64041453e88
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31777783"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555019"
 ---
 # <a name="vpntrafficruleroutingpolicytype-enum-type"></a>тип перечисления Впнтраффикрулераутингполицитипе
 
@@ -22,9 +22,9 @@ ms.locfileid: "31777783"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|Политика маршрутизации не указана.|
-|Сплиттуннел|1,1|Сетевой трафик для указанного приложения будет перенаправлен через VPN.|
-|Форцетуннел|2|Весь сетевой трафик будет маршрутизироваться через VPN.|
+|Нет|нуль|Политика маршрутизации не указана.|
+|Сплиттуннел|1 |Сетевой трафик для указанного приложения будет перенаправлен через VPN.|
+|Форцетуннел|2 |Весь сетевой трафик будет маршрутизироваться через VPN.|
 
 
 

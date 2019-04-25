@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1d202997cdf0c1325e887337842513cc30dd2941
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256394"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549540"
 ---
 # <a name="omasettingboolean-resource-type"></a>Тип ресурса omaSettingBoolean
 
@@ -28,7 +28,7 @@ ms.locfileid: "30256394"
 |omaUri|String|OMA. Наследуется от [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |value|Boolean|Значение|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

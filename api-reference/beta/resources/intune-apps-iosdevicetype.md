@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 121e297355d0d5734f7c4e23087bf14773c598c4
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778209"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553066"
 ---
 # <a name="iosdevicetype-resource-type"></a>Тип ресурса iosDeviceType
 
@@ -22,7 +22,7 @@ ms.locfileid: "31778209"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|iPad|Boolean|Указывает, должно ли приложение работать на iPad.|
+|iPad|Логический|Указывает, должно ли приложение работать на iPad.|
 |iPhoneAndIPod|Boolean|Указывает, должно ли приложение работать на iPhone и iPod.|
 
 ## <a name="relationships"></a>Отношения

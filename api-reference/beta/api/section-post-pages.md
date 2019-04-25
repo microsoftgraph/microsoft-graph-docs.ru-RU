@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 2aa153234f6fab60d020c115bc6e972168a4fa37
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640289"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545715"
 ---
 # <a name="create-page"></a>Создание страницы
 
@@ -36,8 +36,8 @@ POST /sites/{id}/onenote/sections/{id}/pages
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите HTML-содержимое страницы.
@@ -93,8 +93,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
-<!-- { "blockType": "ignored" } -->
+Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

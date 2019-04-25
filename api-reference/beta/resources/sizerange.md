@@ -3,11 +3,11 @@ title: Тип ресурса sizeRange
 description: Указывает максимальный и минимальный размеры (в килобайтах) входящего сообщения, при которых применяется условие или исключение.
 localization_priority: Normal
 ms.openlocfilehash: ecf4a4349e7ee54b9f21fa27879834b45dc87491
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522401"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583249"
 ---
 # <a name="sizerange-resource-type"></a>Тип ресурса sizeRange
 

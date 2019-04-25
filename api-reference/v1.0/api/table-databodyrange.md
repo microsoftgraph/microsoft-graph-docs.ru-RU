@@ -1,15 +1,15 @@
 ---
 title: 'Table: DataBodyRange'
-description: Получает объект диапазона, связанный с основными данными таблицы.
+description: Получает объект диапазона, связанный с данными таблицы.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: df24451e8da5f8e936d5c2013d1049370c0fed33
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967338"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560832"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 
@@ -36,7 +36,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 ## <a name="response"></a>Отклик
 
@@ -56,8 +56,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/dataBodyRange
 POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|name}/dataBodyRange
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

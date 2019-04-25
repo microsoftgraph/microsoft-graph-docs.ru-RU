@@ -2,23 +2,23 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
-title: SitePageData
+title: Ситепажедата
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583398"
 ---
-# <a name="sitepagedata-resource"></a>sitePageData ресурсов
+# <a name="sitepagedata-resource"></a>ресурс Ситепажедата
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **sitePageData** представляет свойства [веб-части][]. Как эти свойства в зависимости от веб-части, это OpenType без основных свойств.
+Ресурс **ситепажедата** представляет свойства [веб-части][]. Так как эти свойства зависят от веб-части, это OpenType без фиксированных свойств.
 
-[веб-части]: webpart.md
+[Частей]: webpart.md
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -34,7 +34,7 @@ ms.locfileid: "29644023"
 ```
 
 ## <a name="properties"></a>Свойства
-Этот ресурс не имеет основных свойств, но — OpenType, содержащий все свойства, необходимые для определения веб-части.
+У этого ресурса нет фиксированных свойств, но это OpenType содержит все свойства, необходимые для определения веб-части.
 
 <!--
 {

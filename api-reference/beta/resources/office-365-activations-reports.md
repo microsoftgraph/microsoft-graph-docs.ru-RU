@@ -1,21 +1,21 @@
 ---
 title: Отчеты об активации Office 365
-description: Отчет активации Office 365 позволяет представление, из которых пользователи активации Office 365 подписок на по крайней мере одно устройство. Предоставляет декомпозиции Office 365 ProPlus, Project и Visio Pro для активации подписки Office 365, а также декомпозиции активаций различных рабочего стола и устройств. В этом отчете может помочь определить пользователей, которые могут потребоваться дополнительную поддержку для активации подписки Office.
+description: Отчет об активации Office 365 предоставляет представление о том, какие пользователи активировали подписки на Office 365 по крайней мере на одном устройстве. Он содержит сведения об активации подписки на Office 365 профессиональный плюс, Project и Visio Pro для Office 365, а также разделение активаций на настольных компьютерах и устройствах. Этот отчет поможет определить пользователей, которым может потребоваться дополнительная поддержка для активации подписки на Office.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 345ab500ef5986471bb801a88ee5886473a3dd60
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573681"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581600"
 ---
 # <a name="office-365-activations-reports"></a>Отчеты об активации Office 365
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отчет активации Office 365 позволяет представление, из которых пользователи активации Office 365 подписок на по крайней мере одно устройство. Предоставляет декомпозиции Office 365 ProPlus, Project и Visio Pro для активации подписки Office 365, а также декомпозиции активаций различных рабочего стола и устройств. В этом отчете может помочь определить пользователей, которые могут потребоваться дополнительную поддержку для активации подписки Office.
+Отчет об активации Office 365 предоставляет представление о том, какие пользователи активировали подписки на Office 365 по крайней мере на одном устройстве. Он содержит сведения об активации подписки на Office 365 профессиональный плюс, Project и Visio Pro для Office 365, а также разделение активаций на настольных компьютерах и устройствах. Этот отчет поможет определить пользователей, которым может потребоваться дополнительная поддержка для активации подписки на Office.
 
 > **Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Office-activations-87c24ae2-82e0-4d1e-be01-c3bcc3f18c60).
 
@@ -24,7 +24,7 @@ ms.locfileid: "29573681"
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
 | [Получение сведений о пользователях](../api/reportroot-getoffice365activationsuserdetail.md) | Stream          | [office365ActivationsUserDetail](../resources/office365activationsuserdetail.md) | Получите сведения о пользователях, которые активировали Office 365. |
 | [Получение количества активаций](../api/reportroot-getoffice365activationcounts.md) | Поток          | [office365ActivationCounts](../resources/office365activationcounts.md) | Получите сведения о количестве активаций Office 365 на компьютерах и мобильных устройствах. |
-| [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Stream          | [office365ActivationsUserCounts](../resources/office365activationsusercounts.md) | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |
+| [Получение количества пользователей](../api/reportroot-getoffice365activationsusercounts.md) | Поток          | [office365ActivationsUserCounts](../resources/office365activationsusercounts.md) | Узнайте, сколько пользователей активировали подписку на Office на компьютере или мобильном устройстве. |
 <!--
 {
   "type": "#page.annotation",

@@ -1,21 +1,21 @@
 ---
 title: Список вложений
-description: Получите список объектов вложения, подключенного к задачи Outlook.
+description: Получение списка объектов вложений, вложенных в задачу Outlook.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 9d330f0a86b99bbd667ff1f32a5b5fc549dfc7f2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526909"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539825"
 ---
 # <a name="list-attachments"></a>Список вложений
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список объектов [вложения](../resources/attachment.md) , подключенного к задачи Outlook.
+Получение списка объектов [вложений](../resources/attachment.md) , вложенных в задачу Outlook.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -48,11 +48,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [вложения](../resources/attachment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [вложений](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -68,10 +68,9 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 GET https://graph.microsoft.com/beta/users/{id}/outlook/tasks/{id}/attachments
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

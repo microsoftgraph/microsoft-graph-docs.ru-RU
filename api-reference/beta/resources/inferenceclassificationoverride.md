@@ -1,27 +1,27 @@
 ---
 title: Тип ресурса inferenceClassificationOverride
-description: Представляет пользовательское переопределение для классификации входящих сообщений от определенного отправителя.
+description: Представляет переопределение пользователя, определяющее, как должны классифицироваться входящие сообщения от определенного отправителя
 localization_priority: Normal
 ms.openlocfilehash: 1cf1896b43dccfe59ed253c22a8a7341e9ee6e1d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511802"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548735"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет пользователя переопределения для способ входящих сообщений от определенного отправителя всегда следует рассматривать как и [Фокус папки «Входящие»](manage-focused-inbox.md).
+Представляет переопределение пользователя, которое всегда должно классифицироваться как входящие сообщения от определенного отправителя, как в [папке "отсортированНые"](manage-focused-inbox.md).
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Update](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **classifyAs** переопределения указанным образом. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
+|[Обновление](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения указанным образом. |
+|[Удаление](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -30,11 +30,11 @@ ms.locfileid: "29511802"
 |id|string| Уникальный идентификатор переопределения. Только для чтения.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Сведения об электронном адресе отправителя, для которого создано переопределение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

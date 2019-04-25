@@ -1,25 +1,23 @@
 ---
 title: Создание страницы
-description: Создание страницы OneNote в разделе по умолчанию записной книжки по умолчанию.
+description: Создайте новую страницу OneNote в разделе по умолчанию записной книжки по умолчанию.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 9b8a48de889a0db5c6eea42fcbd64cae4ff23a43
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640814"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539981"
 ---
 # <a name="create-page"></a>Создание страницы
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Создайте новую страницу OneNote в разделе по умолчанию записной книжки по умолчанию.
 
-Создание страницы OneNote в разделе по умолчанию записной книжки по умолчанию.
+Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, `sectionName` можно использовать параметр запроса.  Пример: `../onenote/pages?sectionName=My%20section`
 
-Чтобы создать страницу в другом разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`.  Пример: `../onenote/pages?sectionName=My%20section`
-
-Операция `POST /onenote/pages` используется только для создания страниц в записной книжке текущего пользователя, используемой по умолчанию. Если вы хотите сделать это в других записных книжках, вы можете [создать страницы в определенном разделе](../api/section-post-pages.md).           
+Эта `POST /onenote/pages` операция используется только для создания страниц в записной книжке текущего пользователя по умолчанию. Если вы нацелены на другие записные книжки, вы можете [создавать страницы в указанном разделе](../api/section-post-pages.md).           
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -42,27 +40,27 @@ POST /sites/{id}/onenote/pages
 ## <a name="request-headers"></a>Заголовки запросов  
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | string | `text/html` или `application/xhtml+xml` для содержимого HTML, в том числе для необходимой части Presentation составных запросов. В составных запросах используется тип содержимого `multipart/form-data; boundary=your-boundary`. |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса укажите содержимое HTML для страницы.
+## <a name="request-body"></a>Текст запроса
+В теле запроса добавьте HTML-контент для страницы.
 
-Тело может содержать HTML-код, размещенный непосредственно в теле запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.
+Текст может содержать HTML-код, размещенный прямо в тексте запроса, либо формат составного сообщения, как показано в примере. Если вы отправляете двоичные данные, необходимо отправить составной запрос.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `201 Created` и новый объект [page](../resources/page.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [Page](../resources/page.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-В случае пути `../onenote/pages`, чтобы создать страницу в определенном разделе записной книжки, используемой по умолчанию, примените параметр запроса `sectionName`. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (либо был переименован), API создаст другой раздел.
+В `../onenote/pages` пути можно использовать параметр `sectionName` запроса, чтобы создать страницу в определенном разделе записной книжки по умолчанию. Пример: `../onenote/pages?sectionName=My%20section`. Если раздел не существует (или был переименован), API создаст новый раздел.
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/pages
+POST https://graph.microsoft.com/v1.0/me/onenote/pages
 Content-length: 312
 Content-type: multipart/form-data; boundary=MyPartBoundary198374
 
@@ -101,8 +99,7 @@ Content-Type:application/pdf
 --MyPartBoundary198374--
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание: Для краткости усекается объект ответа, показано ниже. При фактическом вызове будут возвращены все свойства.
-<!-- { "blockType": "ignored" } -->
+Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -127,15 +124,10 @@ Content-length: 312
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-post-pages.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

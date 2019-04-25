@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31570363e19c40be18c2a0dc684539ecaa360f47
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31775186"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547160"
 ---
 # <a name="itunespairingmode-enum-type"></a>тип перечисления Итунеспаирингмоде
 
@@ -23,8 +23,8 @@ ms.locfileid: "31775186"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Использование|нуль|Связывание запрещено|
-|разрешить|1,1|Связывание разрешено|
-|Рекуиресцертификате|2|Сертификат, необходимый для связывания с iTunes|
+|разрешить|1 |Связывание разрешено|
+|Рекуиресцертификате|2 |Сертификат, необходимый для связывания с iTunes|
 
 
 

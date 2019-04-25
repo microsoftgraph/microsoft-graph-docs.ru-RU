@@ -1,19 +1,19 @@
 ---
 title: Список календарей
-description: Получение списка календарей из группы календарей.
+description: Получение списка календарей, входящих в группу.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5852e43e32b58a714e44dcbcad2a77e3f1999bf9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27922937"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573377"
 ---
 # <a name="list-calendars"></a>Список календарей
 
-Получение списка календарей из группы календарей.
+Получение списка календарей, входящих в группу.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -53,11 +53,11 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 | :------------ | :----- | :------------------------ |
 | Authorization | string | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Calendar](../resources/calendar.md) в тексте отклика.
 
@@ -76,9 +76,9 @@ GET /users/{id | userPrincipalName}/calendarGroups/{id}/calendars
 GET https://graph.microsoft.com/v1.0/me/calendarGroups/{id}/calendars
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

@@ -1,26 +1,26 @@
 ---
-title: 'privilegedRoleAssignmentRequest: Мой'
-description: Получите запросы назначений привилегированной роль инициатора.
+title: 'Привилежедролеассигнментрекуест: My'
+description: Получение запросов на назначение привилегированных ролей инициатора запроса.
 localization_priority: Normal
 ms.openlocfilehash: 79545b5ea0ad88c55d7a09eb5c77982e812721eb
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643110"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546566"
 ---
-# <a name="privilegedroleassignmentrequest-my"></a>privilegedRoleAssignmentRequest: Мой
+# <a name="privilegedroleassignmentrequest-my"></a>Привилежедролеассигнментрекуест: My
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите запросы назначений привилегированной роль инициатора.
+Получение запросов на назначение привилегированных ролей инициатора запроса.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. Read. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -37,11 +37,11 @@ POST /privilegedRoleAssignmentRequests/my
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` кода и [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) коллекции объект ответа в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект коллекции [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

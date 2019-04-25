@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса phone
+title: Тип ресурса Phone
 description: Представляет номер телефона.
 localization_priority: Normal
 ms.openlocfilehash: a343d4e1d65126048a27ad723c86ae49eb2ed752
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573769"
 ---
-# <a name="phone-resource-type"></a>Тип ресурса phone
+# <a name="phone-resource-type"></a>Тип ресурса Phone
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -19,10 +19,10 @@ ms.locfileid: "29527231"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|number|string|Номер телефона.|
+|число|string|Номер телефона.|
 |type|String|Тип номера телефона. Возможные значения: `home`, `business`, `mobile`, `other`, `assistant`, `homeFax`, `businessFax`, `otherFax`, `pager`, `radio`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

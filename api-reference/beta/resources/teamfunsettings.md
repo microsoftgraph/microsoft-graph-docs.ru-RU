@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса teamFunSettings
-description: Параметры для настройки использования Giphy, memes и наклейки рабочих групп.
+title: Тип ресурса Теамфунсеттингс
+description: Параметры для настройки использования Giphy, мемов и наклеек в команде.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: dc8d4cfa05f7bc6cbda9dfbf5d113370a1981ba5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515862"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583223"
 ---
-# <a name="teamfunsettings-resource-type"></a>Тип ресурса teamFunSettings
+# <a name="teamfunsettings-resource-type"></a>Тип ресурса Теамфунсеттингс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры для настройки использования Giphy, memes и наклейки в [группы](team.md).
+Параметры для настройки использования Giphy, мемес и наклеек в [команде](team.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowGiphy|Логическое|Если присвоено значение true, позволяет использовать Giphy.|
-|giphyContentRating|String (enum)|Оценка контента Giphy. Возможные значения: `moderate`, `strict`.|
-|allowStickersAndMemes|Логическое|Если параметр имеет значение true, позволяет пользователям включают в себя наклейки и memes.|
-|allowCustomMemes|Логическое|Если задано значение true, предоставляет пользователям возможность включать настраиваемых memes.|
+|Алловгифи|Boolean|Если задано значение true, включается использование Giphy.|
+|Гификонтентратинг|String (enum)|Оценка содержимого Giphy. Возможные значения: `moderate`, `strict`.|
+|Алловстиккерсандмемес|Boolean|Если задано значение true, пользователям разрешается включать наклейки и мемес.|
+|Алловкустоммемес|Boolean|Если задано значение true, пользователи могут включать пользовательские мемес.|
 
 ## <a name="json-representation"></a>Представление JSON
 

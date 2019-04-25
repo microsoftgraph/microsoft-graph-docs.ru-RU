@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: df48b4ac527103ea97fb262ad49566e7c2339549
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574000"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581473"
 ---
 # <a name="reportroot-getyammergroupsactivitydetail"></a>reportRoot: getYammerGroupsActivityDetail
 
@@ -38,11 +38,11 @@ GET /reports/getYammerGroupsActivityDetail(date={date_value})
 
 ## <a name="function-parameters"></a>Параметры функции
 
-В URL-адресе запроса укажите один из следующих параметров и действительное значение.
+В URL-адресе запроса укажите один из приведенных ниже параметров и действительное значение.
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | строка | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. |
 | date      | Date   | Указывает дату, за которую вы хотите просмотреть пользователей, выполнивших какое-либо действие. Значение {date_value} указывается в формате ГГГГ-ММ-ДД. Так как этот отчет доступен только за последние 30 дней, значение {date_value} должно быть датой из этого диапазона. |
 
 > **Примечание.** В URL-адресе необходимо указать либо период, либо дату.
@@ -103,7 +103,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
 #### <a name="request"></a>Запрос
-При вызове с `date`, пределах отчета активности на данной даты.
+При вызове с `date`параметром a для отчета предоставляется область действия на заданную дату.
 
 <!--{
   "blockType": "request",
@@ -115,7 +115,7 @@ Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date='2018-03-05')
 ```
 
-#### <a name="response"></a>Отклик
+#### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика.
 

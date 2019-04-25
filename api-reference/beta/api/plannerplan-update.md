@@ -1,21 +1,21 @@
 ---
-title: Обновление объекта plannerplan
-description: Обновление свойств объекта **plannerplan**.
+title: Обновление plannerPlan
+description: Обновление свойств объекта **plannerPlan** .
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 86f486ceb5b2adca66049e5370dc0b6fa5c670ff
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538940"
 ---
-# <a name="update-plannerplan"></a>Обновление объекта plannerplan
+# <a name="update-plannerplan"></a>Обновление plannerPlan
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта **plannerplan**.
+Обновление свойств объекта **plannerPlan** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,7 +45,7 @@ PATCH /planner/plans/<id>
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |owner|String|Идентификатор `id` [группы](../resources/group.md), которой принадлежит план. Чтобы в этом поле можно было указать значение, должна существовать подходящая группа. Указанное значение может изменить только владелец.|
-|title|String|Название плана.|
+|title|Строка|Название плана.|
 
 ## <a name="response"></a>Ответ
 
@@ -71,8 +71,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

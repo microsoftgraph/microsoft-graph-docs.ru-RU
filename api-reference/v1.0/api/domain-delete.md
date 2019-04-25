@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0cfcd80109640e7fc2025407ac4872906204b4d3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947157"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562526"
 ---
 # <a name="delete-domain"></a>Удаление домена
 
@@ -45,9 +45,9 @@ DELETE /domains/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -65,9 +65,9 @@ DELETE /domains/{id}
 DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

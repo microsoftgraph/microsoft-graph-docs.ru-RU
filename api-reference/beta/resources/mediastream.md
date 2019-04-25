@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса mediaStream
-description: Тип mediaStream.
+title: Тип ресурса Медиастреам
+description: Тип Медиастреам.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4867675da3427beb790beb240cd7bc0b86f04317
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519964"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581598"
 ---
-# <a name="mediastream-resource-type"></a>Тип ресурса mediaStream
+# <a name="mediastream-resource-type"></a>Тип ресурса Медиастреам
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип mediaStream.
+Тип Медиастреам.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип    | Описание                                                                                                   |
 | :---------- | :------ | :------------------------------------------------------------------------------------------------------------ |
-| Direction   | String  | Направление. Возможные значения: `inactive`, `sendOnly`, `receiveOnly`, `sendReceive`.                  |
+| direction   | String  | Направление. `inactive`Возможные значения: `sendOnly`,, `receiveOnly`,. `sendReceive`                  |
 | label       | String  | Метка потока мультимедиа.                                                                                       |
-| MediaType   | String  | Тип носителя. Возможное значение — `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`.        |
-| serverMuted | Логическое | Если мультимедиа отключен на сервере.                                                                          |
-| SourceId    | String  | Исходный код.                                                                                                |
+| mediaType   | String  | Тип мультимедиа. Возможные `unknown`значения:, `audio` `video`,, `videoBasedScreenSharing`,. `data`        |
+| Сервермутед | Boolean | Если сервер отключен на носителе.                                                                          |
+| Идентификатор    | String  | Идентификатор источника.                                                                                                |
 
 ## <a name="json-representation"></a>Представление JSON
 

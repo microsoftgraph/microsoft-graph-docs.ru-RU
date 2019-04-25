@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 3e5e6841e0c8f37cf9a054bcd5d7276e3b1fd04b
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29571396"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582243"
 ---
 # <a name="reportroot-getoffice365activationsuserdetail"></a>reportRoot: getOffice365ActivationsUserDetail
 
@@ -60,7 +60,7 @@ CSV-файл содержит столбцы со следующими заго�
 - Windows 10 Mobile
 - iOS
 - Android
-- Активированные на совместно используемый компьютер
+- Активирован на общем компьютере
 
 ## <a name="example"></a>Пример
 

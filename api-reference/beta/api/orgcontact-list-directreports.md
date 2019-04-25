@@ -1,21 +1,21 @@
 ---
-title: 'orgContact: список directReports'
-description: Получение прямых отчетов контакта.
+title: 'orgContact: List directReports'
+description: Получение подчиненных отчетов о контакте.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 8912116ca3f9b7602841e7ec1963b7ed4259061d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523773"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539875"
 ---
-# <a name="orgcontact-list-directreports"></a>orgContact: список directReports
+# <a name="orgcontact-list-directreports"></a>orgContact: List directReports
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение прямых отчетов контакта.
+Получение подчиненных отчетов о контакте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ GET /contacts/{id}/directReports
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,9 +55,8 @@ GET /contacts/{id}/directReports
 ```http
 GET https://graph.microsoft.com/beta/contacts/{id}/directReports
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

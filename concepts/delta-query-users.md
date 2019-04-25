@@ -4,11 +4,11 @@ description: Запрос позволяет запрашивать добавл
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: b4f79951f79393e22c40ef9a4f55e29e0145ccea
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27850479"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526337"
 ---
 # <a name="get-incremental-changes-for-users"></a>Получение добавочных изменений для пользователей
 

@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0a5b877c2c24d1764e9badb44dab1f25143c2dce
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657527"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583785"
 ---
 # <a name="shiftactivity-resource-type"></a>Тип ресурса Шифтактивити
 
@@ -21,8 +21,8 @@ ms.locfileid: "30657527"
 | Свойство                         | Тип                    | Описание                                                                                                                                                                        |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | Предопл               | `bool`                  | Указывает, следует `microsoft.graph.user` ли платить за действие в течение этого периода `shift`. Обязательный.    |
-| startDateTime               | `DateTimeOffset`                  | Дата и время начала для `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". Обязательный. |
-| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, полночь UTC 1 января 2014: "2014 – 01 – 01T00:00:00Z". Обязательный.    |
+| startDateTime               | `DateTimeOffset`                  | Дата и время начала для `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный. |
+| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для `shiftActivity`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный.    |
 | code               | `string`                  | Определенный пользователем код для `shiftActivity`. Обязательный.    |
 | displayName               | `string`                  | Имя файла `shiftActivity`. Обязательное.    |
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4dc64ed9d1db3354926f0f2395e6c2cef84cff28
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989459"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548007"
 ---
 # <a name="create-trustframeworkpolicy"></a>Создание Трустфрамеворкполици
 
@@ -23,7 +23,7 @@ ms.locfileid: "31989459"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)|Policy. ReadWrite. Трустфрамеворк|
+|Делегированные (рабочая или учебная учетная запись)|Policy.ReadWrite.TrustFramework|
 |Делегированные (личная учетная запись Майкрософт)| Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -41,13 +41,13 @@ POST /trustFramework/policies
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательно.|
+|Content-Type|Application/XML. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте XML-представление объекта [трустфрамеворкполици](../resources/trustframeworkpolicy.md) . Необходимый тип контента — `application/xml`.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [трустфрамеворкполици](../resources/trustframeworkpolicy.md) в тексте отклика. В случае неудачи возвращается ошибка `4xx` с подробностями.
 

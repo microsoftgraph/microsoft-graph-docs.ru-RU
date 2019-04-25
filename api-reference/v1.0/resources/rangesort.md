@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 6d1fb0be3feae69ff2cae34f360a0f78d46a6172
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947577"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579510"
 ---
 # <a name="rangesort-resource-type"></a>Тип ресурса RangeSort
 
@@ -25,12 +25,12 @@ ms.locfileid: "27947577"
 ## <a name="properties"></a>Свойства
 Нет
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже показано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

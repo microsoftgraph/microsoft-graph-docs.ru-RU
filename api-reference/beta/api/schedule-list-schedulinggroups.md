@@ -1,15 +1,15 @@
 ---
-title: Список Счедулингграупс
+title: Список объектов schedulingGroup
 description: Получение списка Счедулингграуп в этом расписании.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 7d1195540fd2ed4d73007930a964189848c85228
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657688"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545622"
 ---
 # <a name="list-schedulegroups"></a>Список Счедулеграупс
 
@@ -47,7 +47,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.
 
@@ -64,7 +64,7 @@ GET /teams/{teamId}/schedule/schedulingGroups
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule/schedulingGroups
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

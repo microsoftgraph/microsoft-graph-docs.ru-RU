@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 83d1f6e52e11afc60c84977676279ae02182e047
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972588"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550436"
 ---
 # <a name="list-members"></a>Перечисление участников
 
@@ -22,7 +22,7 @@ ms.locfileid: "27972588"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  EduRoster.ReadBasic  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается  |
-|Для приложений | EduRoster.Read.All, EduRoster.ReadWrite.All, а также Member.Read.Hidden | 
+|Для приложений | EduRoster. Read. ALL, EduRoster. ReadWrite. ALL плюс Member. Read. Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -37,8 +37,8 @@ GET /education/classes/{id}/members
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Отклик
 При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [educationUser](../resources/educationuser.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -51,7 +51,7 @@ GET /education/classes/{id}/members
 ```http
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/members
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

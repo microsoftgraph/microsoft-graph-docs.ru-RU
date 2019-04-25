@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса itemAttachment
-description: Контакт, события или сообщения, подключенный к другой событий
+description: Контакт, событие или сообщение, присоединенное к другому событию,
 localization_priority: Normal
 ms.openlocfilehash: cce33cb7597f04435daff723a0125305968eea99
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640422"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581106"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контакт, события или сообщения, подключенный к другого [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md).  
+Контакт, событие или сообщение, присоединенное к другому событию [](../resources/event.md), [сообщению](../resources/message.md), [задаче Outlook](../resources/outlooktask.md)или [POST](../resources/post.md).  
 
 Производный от типа [attachment](attachment.md).
 
@@ -22,24 +22,24 @@ ms.locfileid: "29640422"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Получение](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
-|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип контента этого вложения.|
-|id|String| Идентификатор вложения.|
+|id|Строка| Идентификатор вложения.|
 |isInline|Boolean|Значение true указывает, что вложение является встроенным, например внедренным изображением в теле элемента.|
 |lastModifiedDateTime|DateTimeOffset|Время и дата последнего изменения вложения.|
 |name|String|Отображаемое имя вложения.|
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|item|[OutlookItem](outlookitem.md)|Вложенные контакта, сообщение или события. Свойство навигации.|
+|item|[OutlookItem](outlookitem.md)|Вложенный контакт, сообщение или событие. Свойство навигации.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

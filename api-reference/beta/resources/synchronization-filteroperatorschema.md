@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса filterOperatorSchema
-description: Описывает оператор, который может использоваться в фильтре.
+title: Тип ресурса Филтероператорсчема
+description: Описывает оператор, который можно использовать в фильтре.
 localization_priority: Normal
 ms.openlocfilehash: 04bee90f81c0098832cd4b6355be266668d0f69b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641822"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581739"
 ---
-# <a name="filteroperatorschema-resource-type"></a>Тип ресурса filterOperatorSchema
+# <a name="filteroperatorschema-resource-type"></a>Тип ресурса Филтероператорсчема
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает оператор, который можно использовать в [Фильтр](synchronization-filter.md).
+Описывает оператор, который можно использовать в фильтре [](synchronization-filter.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|арность                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию — `Binary`.|
-|multivaluedComparisonType   |scopeOperatorMultiValuedComparisonType          |Возможные значения: `All`, `Any`. Применяется только к многозначных атрибутов. `All`означает, что все значения должны соответствовать условие. `Any`означает, что по крайней мере одно значение должен удовлетворяют условию. Значение по умолчанию — `All`.|
+|равн                       |String          |Арность оператора. Возможные значения: `Binary`, `Unary`. Значение по умолчанию: `Binary`.|
+|Мултивалуедкомпарисонтипе   |Скопеоператормултивалуедкомпарисонтипе          |Возможные значения: `All`, `Any`. Применяется только к многозначным атрибутам. `All`означает, что все значения должны удовлетворять условию. `Any`Указывает, что по крайней мере одно значение должно удовлетворять условию. Значение по умолчанию: `All`.|
 |name                        |String                     |Имя оператора. |
-|supportedAttributeTypes     |Коллекция String         |Атрибут типы, которые поддерживаются оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
+|Суппортедаттрибутетипес     |Коллекция String         |Типы атрибутов, поддерживаемые оператором. Возможные значения: `Boolean`, `Binary`, `Reference`, `Integer`, `String`.|
 
 ## <a name="json-representation"></a>Представление JSON
 

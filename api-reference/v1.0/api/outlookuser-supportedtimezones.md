@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: c9c90ea56b1c0924ec91436733c99c67333b99d5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981716"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556671"
 ---
 # <a name="outlookuser-supportedtimezones"></a>outlookUser: supportedTimeZones
 
@@ -39,20 +39,20 @@ GET /me/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStan
 GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=microsoft.graph.timeZoneStandard'{timezone_format}')
 ```
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 | Параметр       | Тип | Описание|
 |:---------------|:--------|:----------|
-| TimeZoneStandard  | timeZoneStandard  | Формат часовых поясов. Поддерживаемые значение: `Windows` и `Iana`. Необязательный. |
+| TimeZoneStandard  | Тимезонестандард  | Формат часовых поясов. Поддерживаемые значение: `Windows` и `Iana`. Необязательный. |
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [timeZoneInformation](../resources/timezoneinformation.md) в тексте ответа.
 
 ## <a name="example"></a>Пример
@@ -67,7 +67,7 @@ GET /users/{id|userPrincipalName}/outlook/supportedTimeZones(TimeZoneStandard=mi
 GET https://graph.microsoft.com/v1.0/me/outlook/supportedTimeZones
 ```
 
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",

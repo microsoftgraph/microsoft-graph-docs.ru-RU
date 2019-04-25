@@ -1,19 +1,19 @@
 ---
 title: Получение privilegedRoleSummary
-description: Извлечение свойств и связи объекта privilegedRoleSummary.
+description: Получение свойств и связей объекта Привилежедролесуммари.
 localization_priority: Normal
 ms.openlocfilehash: 3778ddcc297607b062354dcdf44727a0f57375dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508232"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546474"
 ---
 # <a name="get-privilegedrolesummary"></a>Получение privilegedRoleSummary
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта [privilegedRoleSummary](../resources/privilegedrolesummary.md) .
+Получение свойств и связей объекта [привилежедролесуммари](../resources/privilegedrolesummary.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -38,13 +38,13 @@ GET /privilegedRoles/{id}?$expand=summary
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [privilegedRoleSummary](../resources/privilegedrolesummary.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [привилежедролесуммари](../resources/privilegedrolesummary.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -55,9 +55,8 @@ GET /privilegedRoles/{id}?$expand=summary
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

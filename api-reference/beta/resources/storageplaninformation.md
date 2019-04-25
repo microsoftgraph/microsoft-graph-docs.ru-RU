@@ -5,17 +5,17 @@ ms.date: 06/20/2018
 title: StoragePlanInformation
 localization_priority: Normal
 ms.openlocfilehash: 05140b3256e434449d663c4992e74298bbdedd30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519236"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582122"
 ---
 # <a name="storageplaninformation-resource-type"></a>Тип ресурса storagePlanInformation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **storagePlanInformation** содержит сведения о планы квоты хранилища диска.
+Ресурс **storagePlanInformation** предоставляет сведения о планах квот хранилища диска.
 
 ### <a name="json-representation"></a>Представление JSON
 
@@ -35,7 +35,7 @@ ms.locfileid: "29519236"
 
 | Имя свойства     | Тип      | Описание                                                             |
 |:------------------|:----------|:----------------------------------------------------------------------- |
-| upgradeAvailable  | Логическое   | Указывает, если доступны выше планы квота хранилища. Только для чтения. |
+| Упградеаваилабле  | Boolean   | Указывает, доступны ли планы квоты хранилища выше. Только для чтения. |
 
 
 <!--

@@ -6,11 +6,11 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 006f239acdecb2fb93ecf1d70e25a42b056b9283
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480196"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552785"
 ---
 # <a name="sitecollection-resource"></a>Ресурс SiteCollection
 
@@ -18,7 +18,7 @@ ms.locfileid: "30480196"
 
 Если для свойства **siteCollection** ресурса [**site**](site.md) задано значение, отличное от NULL, этот сайт является корневым для семейства веб-сайтов.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

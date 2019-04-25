@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6599f0dbc083859bef4f7a334d36fdcdfa63ee86
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801598"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578017"
 ---
 # <a name="devicemanagementscript-resource-type"></a>Тип ресурса deviceManagementScript
 
@@ -27,7 +27,7 @@ Intune предоставит клиенту возможность запуск
 |[Создание deviceManagementScript](../api/intune-devices-devicemanagementscript-create.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Создание нового объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
 |[Удаление deviceManagementScript](../api/intune-devices-devicemanagementscript-delete.md)|Нет|Удаляет объект [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md).|
 |[Обновление deviceManagementScript](../api/intune-devices-devicemanagementscript-update.md)|[deviceManagementScript](../resources/intune-devices-devicemanagementscript.md)|Обновление свойств объекта [deviceManagementScript](../resources/intune-devices-devicemanagementscript.md) .|
-|[Действие назначения](../api/intune-devices-devicemanagementscript-assign.md)|Нет|Н/Д|
+|[Действие assign](../api/intune-devices-devicemanagementscript-assign.md)|Нет|Н/Д|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -36,7 +36,7 @@ Intune предоставит клиенту возможность запуск
 |displayName|Строка|Имя скрипта управления устройствами.|
 |description|String|НеОбязательное описание скрипта управления устройствами.|
 |runSchedule|[runSchedule](../resources/intune-devices-runschedule.md)|Интервал для запуска скрипта. Если не определен, сценарий будет выполняться один раз|
-|Скриптконтент|Binary|Содержимое скрипта.|
+|Скриптконтент|Двоичный|Содержимое скрипта.|
 |createdDateTime|DateTimeOffset|Дата и время создания сценария управления устройствами.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения скрипта управления устройствами.|
 |runAsAccount|[Рунасаккаунттипе](../resources/intune-shared-runasaccounttype.md)|Указывает тип контекста выполнения. Возможные значения: `system`, `user`.|
@@ -50,7 +50,7 @@ Intune предоставит клиенту возможность запуск
 |:---|:---|:---|
 |groupAssignments|Коллекция [девицеманажементскриптграупассигнмент](../resources/intune-devices-devicemanagementscriptgroupassignment.md)|Список назначений групп для сценария управления устройствами.|
 |assignments|Коллекция [девицеманажементскриптассигнмент](../resources/intune-devices-devicemanagementscriptassignment.md)|Список назначений групп для сценария управления устройствами.|
-|Свойства навигации runsummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md)|Сводка по запуску для сценария управления устройствами.|
+|Свойства навигации runsummary|[deviceManagementScriptRunSummary](../resources/intune-devices-devicemanagementscriptrunsummary.md);|Сводка по запуску для сценария управления устройствами.|
 |deviceRunStates|Коллекция [девицеманажементскриптдевицестате](../resources/intune-devices-devicemanagementscriptdevicestate.md)|Список состояний запуска для этого сценария на всех устройствах.|
 |userRunStates|Коллекция [девицеманажементскриптусерстате](../resources/intune-devices-devicemanagementscriptuserstate.md)|Список состояний запуска этого сценария для всех пользователей.|
 

@@ -1,21 +1,21 @@
 ---
-title: Тип ресурса educationSubmissionRecipient
-description: Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку. Возможные значения включают отдельных пользователей или групп. Используется в свойстве **submission.recipient** .
+title: Тип ресурса ЕдукатионсубмиссионреЦипиент
+description: 'Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку. Возможные значения: "люди" или "группы". Используется в свойстве **отправителя. Recipient** .'
 author: dipakboyed
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 27b9714c2ae20a46447adacb4e98112945d9c12a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516877"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542885"
 ---
-# <a name="educationsubmissionrecipient-resource-type"></a>Тип ресурса educationSubmissionRecipient
+# <a name="educationsubmissionrecipient-resource-type"></a>Тип ресурса ЕдукатионсубмиссионреЦипиент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку. Возможные значения включают отдельных пользователей или групп. Используется в свойстве **submission.recipient** .
+Абстрактный класс, представляющий различные наборы пользователей, которым можно назначить отправку. Возможные значения: "люди" или "группы". Используется в свойстве **отправителя. Recipient** .
 
 
 ## <a name="properties"></a>Свойства

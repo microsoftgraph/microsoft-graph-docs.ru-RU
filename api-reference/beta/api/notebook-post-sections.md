@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 3f40c9d89c8b507b142748378b0a9a90be82203d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526811"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540186"
 ---
 # <a name="create-section"></a>Создание раздела
 
@@ -36,7 +36,7 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -64,7 +64,7 @@ Content-length: 27
   "displayName": "Section name"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

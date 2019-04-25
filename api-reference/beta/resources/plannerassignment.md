@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса plannerAssignment
-description: Ресурс **plannerAssignment** представляет назначение задачи пользователю. Этот тип используется в открытом типе plannerAssignments.
+title: Тип ресурса Планнерассигнмент
+description: Ресурс **планнерассигнмент** представляет назначение задачи пользователю. Этот тип используется в открытом типе Планнерассигнментс.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 054cd42eedd27a7fe11abc2e5578a56da667e05d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522506"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541362"
 ---
-# <a name="plannerassignment-resource-type"></a>Тип ресурса plannerAssignment
+# <a name="plannerassignment-resource-type"></a>Тип ресурса Планнерассигнмент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **plannerAssignment** представляет назначение задачи пользователю. Этот тип используется в открытом типе [plannerAssignments](plannerassignments.md).
+Ресурс **планнерассигнмент** представляет назначение задачи пользователю. Этот тип используется в открытом типе [планнерассигнментс](plannerassignments.md).
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|assignedBy|[identitySet](identityset.md)|Удостоверение пользователя, назначившего задачу.|
-|assignedDateTime|DateTimeOffset|Дата и время назначения задачи. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|orderHint|String|Указание, которое позволяет упорядочить назначенных пользователей для задачи. Используемый формат описан [здесь](planner-order-hint-format.md).|
+|Ассигнедби|[identitySet](identityset.md)|Идентификатор пользователя, который выполнил назначение задачи, например, назначение.|
+|Ассигнеддатетиме|DateTimeOffset|Время назначения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|orderHint|String|ПодСказка, используемая для упорядочивания уполномоченные в задаче. Формат определяется, как описано [ниже](planner-order-hint-format.md).|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.

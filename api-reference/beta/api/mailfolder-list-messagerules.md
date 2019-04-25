@@ -5,15 +5,13 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 5f63a6821055c0b3e724ae5d81c278b4f7238a6e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530099"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540694"
 ---
 # <a name="list-rules"></a>Перечисление правил
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение всех объектов [messageRule](../resources/messagerule.md), определенных для папки "Входящие" пользователя.
 
@@ -29,8 +27,8 @@ ms.locfileid: "29530099"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/mailFolders/inbox/messagerules
-GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
+GET /me/mailFolders/inbox/messageRules
+GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
@@ -40,7 +38,7 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код ответа `200 OK` и коллекцию объектов [messageRule](../resources/messagerule.md) в тексте ответа.
 ## <a name="example"></a>Пример
@@ -48,14 +46,14 @@ GET /users/{id | userPrincipalName}/mailFolders/inbox/messagerules
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["inbox"],
   "name": "get_messagerules"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/mailFolders/inbox/messagerules
+GET https://graph.microsoft.com/v1.0/me/mailFolders/inbox/messageRules
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -67,7 +65,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/beta/$metadata#Me/mailFolders('inbox')/messageRules",
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#Me/mailFolders('inbox')/messageRules",
   "value":[
     {
       "id":"AQAAAJ5dZp8=",
@@ -117,15 +115,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "List rules",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/mailfolder-list-messagerules.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

@@ -3,11 +3,11 @@ title: Тип ресурса referenceAttachment
 description: Ссылка на файл (например, текстовый файл или документ Word) на облачном диске OneDrive для бизнеса или в других поддерживаемых местах хранения, вложенный в событие, сообщение или запись.
 localization_priority: Normal
 ms.openlocfilehash: 0696ac4b0f93ed4982ec576a15afe071486f9c88
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853125"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579417"
 ---
 # <a name="referenceattachment-resource-type"></a>Тип ресурса referenceAttachment
 
@@ -20,19 +20,19 @@ ms.locfileid: "27853125"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Get](../api/attachment-get.md) | [referenceAttachment](referenceattachment.md) |Чтение свойств и связей объекта referenceAttachment.|
-|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта referenceAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |contentType|String|Тип контента этого вложения.|
-|id|String|Идентификатор вложения.  Только для чтения.|
+|id|Строка|Идентификатор вложения.  Только для чтения.|
 |isInline|Boolean|Значение true указывает, что вложение встроено в содержимое объекта.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения вложения. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|имя|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
+|name|String|Текст, который отображается под значком, представляет внедренное вложение. Он может не быть фактическим именем файла.|
 |size|Int32|Объем метаданных, которые хранятся в сообщении с вложением (в байтах). Это значение не отображает фактический размер файла.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
