@@ -1,19 +1,19 @@
 ---
 title: Список существующих шаблонов синхронизации
-description: Список шаблонов синхронизации, связанных с указанного приложения или участников-служб.
+description: Список шаблонов синхронизации, связанных с конкретным приложением или участником службы.
 localization_priority: Normal
 ms.openlocfilehash: 309d1ddd6d702652b14e10895de10486a5d23783
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523633"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536973"
 ---
 # <a name="list-existing-synchronization-templates"></a>Список существующих шаблонов синхронизации
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список шаблонов синхронизации, связанных с указанного приложения или участников-служб.
+Список шаблонов синхронизации, связанных с конкретным приложением или участником службы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -39,11 +39,11 @@ GET applications/{id}/synchronization/templates
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ### <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и acollection [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) объектов в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и Аколлектион объектов [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в теле отклика.
 
 ### <a name="example"></a>Пример
 
@@ -57,9 +57,9 @@ GET applications/{id}/synchronization/templates
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/templates
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Будут возвращены все свойства в фактический вызов.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

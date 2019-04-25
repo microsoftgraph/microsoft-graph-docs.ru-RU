@@ -1,19 +1,19 @@
 ---
 title: Создание privilegedApproval
-description: Используйте этот интерфейс API для создания нового privilegedApproval.
+description: Используйте этот API для создания нового Привилежедаппровал.
 localization_priority: Normal
 ms.openlocfilehash: 076184417f6dc77dfc57046d75a3274716232f3b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507679"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538583"
 ---
 # <a name="create-privilegedapproval"></a>Создание privilegedApproval
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для создания нового privilegedApproval.
+Используйте этот API для создания нового Привилежедаппровал.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,13 +36,13 @@ POST /privilegedApproval
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [privilegedApproval](../resources/privilegedapproval.md) .
+В тексте запроса добавьте представление объекта [Привилежедаппровал](../resources/privilegedapproval.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` объект [privilegedApproval](../resources/privilegedapproval.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -64,10 +64,9 @@ Content-length: 180
   "approvalDuration": "datetime-value"
 }
 ```
-В тексте запроса укажите представление JSON объекта [privilegedApproval](../resources/privilegedapproval.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+В тексте запроса добавьте представление объекта [Привилежедаппровал](../resources/privilegedapproval.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

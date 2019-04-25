@@ -1,24 +1,24 @@
 ---
 title: Тип ресурса fileHash
-description: Содержит информацию о состояниях о хэши файлов (криптографии и расположение конфиденциальные).
+description: Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
 localization_priority: Normal
 ms.openlocfilehash: 9d72812d1ad43999ea3ed5b28251d629b9380d47
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876771"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564773"
 ---
 # <a name="filehash-resource-type"></a>Тип ресурса fileHash
 
-Содержит информацию о состояниях о хэши файлов (криптографии и расположение конфиденциальные).
+Содержит сведения о состоянии хэшей файлов (криптографии и зависящие от местонахождения).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|hashType|fileHashType|Тип файла хэш-функции. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
-|hashValue|Строка|Значение хэш файла.|
+|Хаштипе|fileHashType|Тип хэша файла. Возможные значения: `unknown`, `sha1`, `sha256`, `md5`, `authenticodeHash256`, `lsHash`, `ctph`, `peSha1`, `peSha256`.|
+|Хашвалуе|String|Значение хэша файла.|
 
 ## <a name="json-representation"></a>Представление JSON
 

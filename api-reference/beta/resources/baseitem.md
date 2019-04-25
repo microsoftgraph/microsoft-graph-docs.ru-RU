@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: BaseItem
+title: baseItem
 localization_priority: Normal
 ms.openlocfilehash: 8e01d219fcc67c583fddba8d9893ed94a23c409b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481974"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535583"
 ---
 # <a name="baseitem-resource-type"></a>Тип ресурса baseItem
 
@@ -52,13 +52,13 @@ ms.locfileid: "30481974"
 
 | Свойство             | Тип              | Описание                                                                            |
 | :------------------- | :---------------- | :------------------------------------------------------------------------------------- |
-| id                   | string            | Уникальный идентификатор диска. Только для чтения.                                         |
+| id                   | строка            | Уникальный идентификатор диска. Только для чтения.                                         |
 | createdBy            | [identitySet][]   | Идентификатор пользователя, устройства или приложения, создавшего элемент. Только для чтения.        |
 | createdDateTime      | dateTimeOffset    | Дата и время создания элемента. Только для чтения.                                             |
 | eTag                 | string            | ETag для элемента. Только для чтения.                                                          |
 | lastModifiedBy       | [identitySet][]   | Идентификатор пользователя, устройства или приложения, внесшего последние изменения в элемент. Только для чтения. |
 | lastModifiedDateTime | dateTimeOffset    | Дата и время последнего изменения элемента. Только для чтения.                                   |
-| name                 | строка            | Имя элемента. Чтение и запись.                                                      |
+| name                 | string            | Имя элемента. Чтение и запись.                                                      |
 | parentReference      | [itemReference][] | Сведения о родительском элементе, если элемент выступает в роли родительского элемента. Чтение и запись.                              |
 | webUrl               | строка (url-адрес)      | URL-адрес для отображения ресурса в браузере. Только для чтения.                              |
 

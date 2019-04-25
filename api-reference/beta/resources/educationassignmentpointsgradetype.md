@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса educationAssignmentPointsGradeType
-description: Используется совместно со свойством **assignments.grading** . Это подкласс educationAssignmentGradeType.
+title: Тип ресурса Едукатионассигнментпоинтсградетипе
+description: Используется с свойством **назначений. ступенчато** . Это подкласс Едукатионассигнментградетипе.
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 567bff38f8a20456dffffdd91775a1e32852fe20
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508897"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543121"
 ---
-# <a name="educationassignmentpointsgradetype-resource-type"></a>Тип ресурса educationAssignmentPointsGradeType
+# <a name="educationassignmentpointsgradetype-resource-type"></a>Тип ресурса Едукатионассигнментпоинтсградетипе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется совместно со свойством **assignments.grading** . Это подкласс [educationAssignmentGradeType](educationassignmentgradetype.md).
+Используется с свойством **назначений. ступенчато** . Это подкласс [едукатионассигнментградетипе](educationassignmentgradetype.md).
 
-Это означает, что назначения выражаемым числом и сохраняет максимальное число пунктов, которые можно достичь каждого студента на этот рабочий элемент. Если это назначения, каждой отправки будет [educationAssignmentPointsGrade](educationassignmentpointsgrade.md) свойства, связанного с ним для хранения каждого студента точек.
+Это означает, что назначение обладает повышенными уровнями и сохраняет максимальное число баллов, которое каждый учащийся может выполнить для этого рабочего элемента. Если этот параметр задан для назначения, при каждой отправке будет получено свойство [едукатионассигнментпоинтсграде](educationassignmentpointsgrade.md) , связанное с ним для хранения точек каждого учащегося.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|maxPoints|Single| Максимальное число точек можно для данного назначения.  |
+|Макспоинтс|Одинарное| Максимальное число баллов, которое можно сделать для этого назначения.  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

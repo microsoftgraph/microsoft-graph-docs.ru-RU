@@ -4,12 +4,12 @@ description: Получение свойств и связей объекта Me
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 8d15a1f07ae42e9c203a26a970896fea0d360494
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.openlocfilehash: b1a94d396d5c249cdadda233632bb596d34a3625
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518520"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540494"
 ---
 # <a name="get-message"></a>Вывод сообщения
 
@@ -19,10 +19,12 @@ ms.locfileid: "31518520"
 
 Например, вы можете получить сообщение и развернуть все экземпляры [упоминания](../resources/mention.md) в сообщении.
 
+Вы можете использовать `$value` параметр для [получения содержимого MIME сообщения](/graph/outlook-get-mime-message).
+
 Существует два сценария, в которых приложение может получить сообщение в почтовой папке другого пользователя:
 
 * У приложения есть разрешения для приложений; или
-* Если у приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь предоставил доступ к почтовой папке этому пользователю или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-share-messages-folders).
+* У приложения есть соответствующие делегированные [разрешения](#permissions) от одного пользователя, а другой пользователь поделился с ним папкой почты или предоставил ему делегированный доступ. См. [подробные сведения и пример](/graph/outlook-share-messages-folders).
 
 Так как ресурс **message** поддерживает [расширения](/graph/extensibility-overview), с помощью операции `GET` можно также получить настраиваемые свойства и данные расширения в экземпляре **message**.
 
@@ -47,6 +49,15 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
+Получение содержимого MIME указанного сообщения:
+<!-- { "blockType": "ignored" } --> 
+```http 
+GET /me/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/messages/{id}/$value 
+GET /me/mailFolders/{id}/messages/{id}/$value 
+GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value 
+```
+
 Чтобы получить сообщение и раскрыть все упоминания в сообщении, выполните следующие действия:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -57,9 +68,11 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}?$expand=menti
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Вы можете использовать параметр `$expand` запроса для свойства навигации **упоминают** , чтобы получить сообщение с подробностями каждого [упоминания](../resources/mention.md) в развернутом сообщении.
+Используйте `$value` параметр для получения содержимого MIME сообщения.
+
+Используйте параметр `$expand` запроса в свойстве навигации **упоминания** , чтобы получить сообщение с подробными сведениями о каждом [упоминании](../resources/mention.md) в развернутом сообщении.
 
 
 
@@ -331,8 +344,8 @@ Content-type: application/json
 ## <a name="see-also"></a>См. также
 
 - [Добавление пользовательских данных в ресурсы с помощью расширений](/graph/extensibility-overview)
-- [Добавление настраиваемых данных для пользователей с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
-- [Добавление пользовательских данных в группы с помощью расширений схемы (Предварительная версия)](/graph/extensibility-schema-groups)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений (предварительная версия)](/graph/extensibility-open-users)
+- [Добавление пользовательских данных в ресурсы group с помощью расширений схемы (предварительная версия)](/graph/extensibility-schema-groups)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

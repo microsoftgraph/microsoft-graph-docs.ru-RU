@@ -1,23 +1,23 @@
 ---
 title: Создание privilegedRoleAssignment
-description: Используйте этот интерфейс API для создания нового privilegedRoleAssignment.
+description: Используйте этот API для создания нового Привилежедролеассигнмент.
 localization_priority: Normal
 ms.openlocfilehash: 5522956b129eae8a19fd00b0e70b41380dbdd25e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513405"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538604"
 ---
 # <a name="create-privilegedroleassignment"></a>Создание privilegedRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для создания нового [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
+Используйте этот API для создания нового [привилежедролеассигнмент](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона должна иметь роль _Привилегированной роль администратора_ . 
+Запрашивающая сторона должна иметь привилегированную роль _администратора ролей_ . 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -36,13 +36,13 @@ POST /privilegedRoleAssignments
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите представление JSON объекта [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .
+В тексте запроса добавьте представление объекта [Привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` объект [privilegedRoleAssignment](../resources/privilegedroleassignment.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -60,10 +60,9 @@ Content-length: 164
   "roleId": "roleId-value"
 }
 ```
-В тексте запроса укажите представление JSON объекта [privilegedRoleAssignment](../resources/privilegedroleassignment.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+В тексте запроса добавьте представление объекта [Привилежедролеассигнмент](../resources/privilegedroleassignment.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

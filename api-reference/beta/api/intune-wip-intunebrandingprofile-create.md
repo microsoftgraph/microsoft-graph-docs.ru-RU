@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e92ad91bd5d981e987fb6d5abfd32494f6ce54de
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805518"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541807"
 ---
 # <a name="create-intunebrandingprofile"></a>Создание Интунебрандингпрофиле
 
@@ -53,7 +53,7 @@ POST /deviceManagement/intuneBrandingProfiles
 |id|String|Ключ профиля|
 |имя_профиля|String|Имя профиля|
 |Профиледескриптион|String|Описание профиля|
-|Исдефаултпрофиле|Boolean|Показывает, используется ли профиль по умолчанию.|
+|Исдефаултпрофиле|Логический|Показывает, используется ли профиль по умолчанию.|
 |createdDateTime|DateTimeOffset|При создании Брандингпрофиле.|
 |lastModifiedDateTime|DateTimeOffset|При последнем изменении Брандингпрофиле.|
 |displayName|Строка|Название компании или организации, которое отображается пользователям.|
@@ -65,15 +65,15 @@ POST /deviceManagement/intuneBrandingProfiles
 |onlineSupportSiteUrl|String|URL-адрес сайта ИТ-службы технической поддержки компании или организации.|
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
-|showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
+|showLogo|Логический|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
+|Семеколорлого|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение логотипа, отображаемое в приложениях корпоративного портала на фоновом фоне цвета темы.|
 |lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение логотипа, отображаемое в приложениях корпоративного портала на светлом фоне.|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md)|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
+|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице "приложения корпоративного портала"|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [интунебрандингпрофиле](../resources/intune-wip-intunebrandingprofile.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

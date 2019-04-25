@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e352bd96e5bef9d5400d7b148f1ca0b72a95acd3
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796096"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541404"
 ---
 # <a name="miracastchannel-enum-type"></a>тип перечисления Миракастчаннел
 
@@ -23,17 +23,17 @@ ms.locfileid: "31796096"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |UserDefined типа|нуль|Пользователь определен, значение по умолчанию, без намерения.|
-|one|1,1|Один.|
-|two|2|2.|
-|three|4|Трёх.|
-|four|SP4|Четыре.|
-|five|17:00|Следующих.|
-|шест|ICMPv6|Шест.|
-|неделю|см|Неделю.|
-|Основными|8,5|Основными.|
-|9|10|9.|
-|раз|десяти|Раз.|
-|Eleven|-11:00|Eleven.|
+|one|1 |Один.|
+|two|2 |2.|
+|three|3 |Трёх.|
+|four|4 |Четыре.|
+|five|5 |Следующих.|
+|шест|6 |Шест.|
+|неделю|7 |Неделю.|
+|Основными|8 |Основными.|
+|9|9 |9.|
+|раз|10 |Раз.|
+|Eleven|11 |Eleven.|
 |Сиртисикс|36|36.|
 |40|40|40.|
 |Фортифаур|44|44.|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3c9fcc9d06ec02db77de0a3608f80a44632e667c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30975338"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566054"
 ---
 # <a name="update-windows81compliancepolicy"></a>Update windows81CompliancePolicy
 

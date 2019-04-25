@@ -4,12 +4,12 @@ description: Получение списка объектов securityAction.
 localization_priority: Normal
 author: preetikr
 ms.prod: security
-ms.openlocfilehash: 1a161fd6113e6f29b061bd1dca9d2c4b16d7ee9c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 93988de6a970df22350e8d0fc89126c8becfe493
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482317"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537589"
 ---
 # <a name="list-securityactions"></a>Список Секуритяктионс
 
@@ -23,7 +23,7 @@ ms.locfileid: "30482317"
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
+| Делегированные (рабочая или учебная учетная запись)     | Не поддерживается. |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 | Для приложений                            | Секуритяктионс. Read. ALL, Секуритяктионс. ReadWrite. ALL |
 
@@ -43,13 +43,13 @@ GET /security/securityActions
 
 | Имя      |Описание|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Авторизация | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [securityAction](../resources/securityaction.md) в теле отклика.
 
@@ -67,7 +67,7 @@ GET /security/securityActions
 GET https://graph.microsoft.com/beta/security/securityActions
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

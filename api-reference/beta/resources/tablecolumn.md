@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9f70b5363ccc7552975db8f2396af705d8bf1557
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643103"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565613"
 ---
 # <a name="tablecolumn-resource-type"></a>Тип ресурса TableColumn
 
@@ -28,7 +28,7 @@ ms.locfileid: "29643103"
 |[Headerrowrange](../api/tablecolumn-headerrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой заголовков столбца.|
 |[Range](../api/tablecolumn-range.md)|[Range](range.md)|Получает объект диапазона, связанный со всем столбцом.|
 |[Totalrowrange](../api/tablecolumn-totalrowrange.md)|[Range](range.md)|Получает объект диапазона, связанный со строкой итогов столбца.|
-|[Delete](../api/tablecolumn-delete.md)|Нет|Удаляет столбец из таблицы.|
+|[Удаление](../api/tablecolumn-delete.md)|Нет|Удаляет столбец из таблицы.|
 |[Список](../api/tablecolumn-list.md) | Коллекция объектов [TableColumn](tablecolumn.md) |Получение коллекции объектов tableColumn. |
 |[Itemat](../api/tablecolumncollection-itemat.md)|[TableColumn](tablecolumn.md)|Возвращает столбец на основании его позиции в коллекции.|
 |[Add](../api/tablecolumncollection-add.md)|[TableColumn](tablecolumn.md)|Добавляет новый столбец в таблицу.|
@@ -38,11 +38,11 @@ ms.locfileid: "29643103"
 |:---------------|:--------|:----------|
 |id|int|Возвращает уникальный ключ, идентифицирующий столбец в таблице. Только для чтения.|
 |index|int|Возвращает номер индекса столбца в коллекции столбцов таблицы. Используется нулевой индекс. Только для чтения.|
-|name|строка|Возвращает имя столбца таблицы. Только для чтения.|
+|name|string|Возвращает имя столбца таблицы. Только для чтения.|
 |values|json|Представляет необработанные значения указанного диапазона. Могут возвращаться строковые и числовые данные, а также логические значения. Ячейка, которая содержит ошибку, вернет строку ошибки.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |filter|[Filter](filter.md)|Возвращает фильтр, применяемый к столбцу. Только для чтения.|
 

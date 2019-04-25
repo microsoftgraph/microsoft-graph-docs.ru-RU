@@ -4,17 +4,17 @@ description: Получение свойств указанного опреде
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 9a8dc6acb0a9645ca5a1f58dfb462b168be1ff90
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528524"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545564"
 ---
 # <a name="get-schemaextension"></a>Получение schemaExtension
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение свойств указанного определения [schemaExtension](../resources/schemaextension.md).
+Получение свойств указанного определения [schemaExtension](../resources/schemaextension.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -41,11 +41,11 @@ GET /schemaExtensions/{id}
 | Content-Type   | application/json |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [schemaExtension](../resources/schemaextension.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [schemaExtension](../resources/schemaextension.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -56,7 +56,7 @@ GET /schemaExtensions/{id}
 ```http
 GET https://graph.microsoft.com/beta/schemaExtensions/graphlearn_test
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
 <!-- {
   "blockType": "response",

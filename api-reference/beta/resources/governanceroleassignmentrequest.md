@@ -1,57 +1,57 @@
 ---
 title: Тип ресурса governanceRoleAssignmentRequest
-description: Представляет запрос для операций назначения роли управления удостоверениями Privilegd.
+description: Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 localization_priority: Normal
 ms.openlocfilehash: 242f1d311a2d304d0d8dab0a4e24f9294722ab6e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642067"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547457"
 ---
 # <a name="governanceroleassignmentrequest-resource-type"></a>Тип ресурса governanceRoleAssignmentRequest
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запрос для операций назначения роли управления удостоверениями Privilegd.
+Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 
-`governanceRoleAssignmentRequest`смоделировать билетов сущности, используется для управления жизненным циклом назначения ролей. Он представляет намерения/решение для пользователей и администраторов, а также обеспечивает гибкость для внедрения повторяющаяся schduling, шлюзы утверждения и т. д. по сравнению с непосредственно предоставление `POST`, `PUT`, и `DELETE` операции на `governanceRoleAssignment`.
+`governanceRoleAssignmentRequest`— Это объект с моделированием билетов, используемый для управления жизненным циклом назначений ролей. Он представляет намерение/решение для пользователей и администраторов, а также обеспечивает гибкость, позволяющую включать реализацию перечисленных счдулинг, шлюзов утверждения и т. д., в отличие от прямого предоставления `POST` `PUT`и `DELETE` операций. вкл `governanceRoleAssignment`.
 
 ## <a name="methods"></a>Методы
 
 | Метод          |Возвращаемый тип  |Описание|
 |:------------|:--------|:--------|
-|[Получение](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получите запрос назначения ролей, заданную идентификатором.  
-|[List](../api/governanceroleassignmentrequest-list.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) коллекции|Получите запросы назначений ролей для ресурса.|
-|[создание](../api/governanceroleassignmentrequest-post.md);|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Создание запроса для управления жизненным циклом существующего или нового назначения роли.|
-|[Отмена](../api/governanceroleassignmentrequest-cancel.md)|  |Отмена назначения запроса ожидающие роли.|
-|[обновление](../api/governanceroleassignmentrequest-update.md).| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Администраторы обновлять решения на запросы, если запросов в состояние `PendingAdminDecision`.|
+|[Получение](../api/governanceroleassignmentrequest-get.md) | [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получение запроса на назначение роли, указанного по ИДЕНТИФИКАТОРу.  
+|[List](../api/governanceroleassignmentrequest-list.md) | Коллекция [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Получение запросов на назначение ролей ресурсу.|
+|[Создание](../api/governanceroleassignmentrequest-post.md)|  [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Создание запроса на управление жизненным циклом существующего или нового назначения роли.|
+|[Отмена](../api/governanceroleassignmentrequest-cancel.md)|  |Отмена ожидающего запроса на назначение роли.|
+|[Обновление](../api/governanceroleassignmentrequest-update.md)| [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Администраторы обновляют решения в запросах, если запросы находятся в состоянии `PendingAdminDecision`.|
 
 ## <a name="properties"></a>Свойства
 | Свойство                  | Тип          |Описание|
 |:--------------------------|:--------------|:----------|
-|id                         |String         |Идентификатор запроса назначений ролей.|
-|resourceId                 |String         |Обязательный. Идентификатор ресурса запрос назначения ролей, связанный с.|
-|roleDefinitionId           |Строка         |Обязательный. Идентификатор запрос назначения ролей, связанный с определения роли.|
-|subjectId                  |Строка         |Обязательный. Идентификатор субъекта, запрос назначения ролей, связанный с.|
-|type                       |Строка         |Обязательный. Представляет тип операции в назначении ролей. Значение может быть <ul><li>`AdminAdd`: Администраторам назначение пользователей и групп для роли.</li><li>`UserAdd`: Пользователи активировать подходящими назначения;</li><li> `AdminUpdate`: Администраторам изменение существующего назначения ролей</li><li>`AdminRemove`: Администраторам удаление пользователей и групп из роли.<li>`UserRemove`: Пользователи отключение active назначения;<li>`UserExtend`: Пользователи запрос для расширения их истекающим сроком действия назначения;</li><li>`AdminExtend`: Администраторы расширение назначений с истекающим сроком действия.</li><li>`UserRenew`: Пользователи запроса на обновление назначений истекшим сроком действия;</li><li>`AdminRenew`: Администраторы расширение назначений с истекающим сроком действия.</li></ul>|
-|assignmentState|Строка  |Обязательный. Состояние назначения. Значение может быть <ul><li> `Eligible`для подходящими назначения</li><li> `Active`-Если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей.</li></ul>|
-|requestedDateTime          |DateTimeOffset |Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|расписание                   |[governanceSchedule](governanceschedule.md)|Объект расписание запрос назначения ролей.|
-|Причина                     |String         |Сообщение, предоставляемые пользователями и администраторами при создании запроса о зачем он нужен.|
-|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |Состояние запроса назначений ролей.|
-|linkedEligibleRoleAssignmentId|String        |Если запрос для активации роли, он представляет идентификатор `eligible assignment` ссылки; В противном случае — значение `null`. |
+|id                         |String         |Идентификатор запроса на назначение роли.|
+|resourceId                 |String         |Обязательный. Идентификатор ресурса, с которым связан запрос назначения роли.|
+|Роледефинитионид           |String         |Обязательный. Идентификатор определения роли, с которым связан запрос назначения роли.|
+|Субжектид                  |String         |Обязательный. Идентификатор субъекта, с которым связан запрос назначения роли.|
+|type                       |String         |Обязательный. Представляет тип операции для назначения роли. Значение может быть <ul><li>`AdminAdd`: Администраторы Назначение пользователям и группам ролей;</li><li>`UserAdd`: Пользователи активируют подходящие назначения;</li><li> `AdminUpdate`: Администраторы изменение существующих назначений ролей</li><li>`AdminRemove`: Администраторы удалять пользователей и группы из ролей;<li>`UserRemove`: Пользователи деактивируют активные назначения;<li>`UserExtend`: Пользователи запрашивают, чтобы расширить их назначения с истекшим сроком действия;</li><li>`AdminExtend`: Администраторы расширяют назначения с истекающим сроком действия.</li><li>`UserRenew`: Пользователи запрашивают обновление назначений с истекшим сроком действия;</li><li>`AdminRenew`: Администраторы расширяют назначения с истекающим сроком действия.</li></ul>|
+|Ассигнментстате|String  |Обязательный. Состояние назначения. Значение может быть <ul><li> `Eligible`для подходящего назначения</li><li> `Active`— Если он напрямую назначается `Active` администраторами или активирован в соответствии с подходящими пользователями.</li></ul>|
+|Рекуестеддатетиме          |DateTimeOffset |Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Диспетчер                   |[governanceSchedule](governanceschedule.md)|Объект расписания для запроса на назначение роли.|
+|причиной                     |String         |Сообщение, предоставленное пользователями и администраторами при создании запроса о том, почему это необходимо.|
+|status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |Состояние запроса на назначение роли.|
+|Линкеделигиблеролеассигнментид|String        |Если это запрос на активацию роли, он представляет идентификатор, на `eligible assignment` который ссылается ссылка; В противном случае — `null`значение. |
 
 
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип                                |Описание|
+| Отношение | Тип                                |Описание|
 |:-------------|:----------------------------------|:----------|
-|resource      |[governanceResource](../resources/governanceresource.md)            |Только для чтения. Ресурс, запрос имеет своей целью. |
-|roleDefinition|[governanceRoleDefinition](../resources/governanceroledefinition.md)|Только для чтения. Определение ролей, запрос имеет своей целью. |
-|subject       |[governanceSubject](../resources/governancesubject.md)|Только для чтения. Участника пользователя или группы.|
+|resource      |[governanceResource](../resources/governanceresource.md)            |Только для чтения. Ресурс, на который запрашивается запрос. |
+|roleDefinition|[Говернанцероледефинитион](../resources/governanceroledefinition.md)|Только для чтения. Определение роли, которому назначен запрос. |
+|subject       |[Говернанцесубжект](../resources/governancesubject.md)|Только для чтения. Участник группы "пользователь/группа".|
 
-### <a name="json-representation"></a>Представление JSON
+### <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

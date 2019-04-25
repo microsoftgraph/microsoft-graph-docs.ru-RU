@@ -1,19 +1,19 @@
 ---
-title: Получение suspiciousIpRiskEvent
-description: Извлечение свойств и связи объекта suspiciousipriskevent.
+title: Получение объекта suspiciousIpRiskEvent
+description: Получение свойств и связей объекта суспиЦиаусиприскевент.
 localization_priority: Normal
 ms.openlocfilehash: 64218e000eb32065a65d68d69e3735caa11b3ca0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521560"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545379"
 ---
-# <a name="get-suspiciousipriskevent"></a>Получение suspiciousIpRiskEvent
+# <a name="get-suspiciousipriskevent"></a>Получение объекта suspiciousIpRiskEvent
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта suspiciousipriskevent.
+Получение свойств и связей объекта суспиЦиаусиприскевент.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,11 +35,11 @@ GET /suspiciousIpRiskEvents/{id}
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [suspiciousIpRiskEvent](../resources/suspiciousipriskevent.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [суспиЦиаусиприскевент](../resources/suspiciousipriskevent.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -50,9 +50,8 @@ GET /suspiciousIpRiskEvents/{id}
 ```http
 GET https://graph.microsoft.com/v1.0/suspiciousIpRiskEvents/02e8bfd1-5231-1006-01cc-434f84e0859e-97b7301f-bc05-8e2c-fdfa-2004eb66ff70-287e7b9b-1d60-aa96-6ddb-65c81ee31475
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

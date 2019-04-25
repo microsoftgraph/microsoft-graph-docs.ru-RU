@@ -1,28 +1,28 @@
 ---
 title: Тип ресурса API
-description: Задает параметры для приложения Web API.
+description: Задает параметры для приложения веб-API.
 localization_priority: Normal
 ms.openlocfilehash: 9d9259911464feb545b97a9eb8585723a9c3e20e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521448"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535693"
 ---
 # <a name="api-resource-type"></a>Тип ресурса API
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Задает параметры для приложения Web API.
+Задает параметры для приложения веб-API.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:---------------|:--------|:----------|
-|requestedAccessTokenVersion|Int32| Указывает версию маркера обслуживаемых доступа для текущего ресурса API. Возможные значения: 1 или 2.  |
-|oauth2PermissionScopes|[permissionScope](permissionscope.md) коллекции| Коллекция OAuth 2.0 области разрешений, предоставляемых веб-приложению API (ресурс) на клиентские приложения. Эти области разрешений могут быть предоставлены на клиентские приложения во время подтверждения. |
+|Рекуестедакцесстокенверсион|Int32| Указывает принятую версию маркера доступа для текущего ресурса API. Возможные значения: 1 или 2.  |
+|oauth2PermissionScopes|Коллекция [permissionScope](permissionscope.md)| Коллекция областей разрешений OAuth 2,0, предоставляемых приложением веб-API (ресурсом) для клиентских приложений. Эти области разрешений могут быть назначены клиентским приложениям во время согласия пользователя. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

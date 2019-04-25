@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса educationExcelResource
-description: 'Подкласс educationResource. Этот тип ресурсов представляет документа в формате Excel.  '
+title: Тип ресурса Едукатионексцелресаурце
+description: 'Подкласс объекта Едукатионресаурце. Этот тип ресурса представляет документ Excel.  '
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 14d7823f166ca12d202a6561bc9fe7b158ab7476
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522422"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542827"
 ---
-# <a name="educationexcelresource-resource-type"></a>Тип ресурса educationExcelResource
+# <a name="educationexcelresource-resource-type"></a>Тип ресурса Едукатионексцелресаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подкласс [educationResource](educationresource.md). Этот тип ресурсов представляет документа в формате Excel.  
+Подкласс объекта [едукатионресаурце](educationresource.md). Этот тип ресурса представляет документ Excel.  
  
->**Примечание:** Файл Excel должен находиться в папку ресурсов, связанного с объектом назначения или отправки, к которой принадлежит ресурс.
+>**Примечание:** Файл Excel должен находиться в папке ресурсов, связанной с назначением или объектом отправки, к которому принадлежит ресурс.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|FileURL|String|Указатель на объект файла Excel.|
+|fileUrl|String|Указатель на объект файла Excel.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

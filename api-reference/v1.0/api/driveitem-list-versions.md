@@ -1,16 +1,16 @@
 ---
-title: Список версий DriveItem
+title: ПереЧисление версий объекта DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fa25734967aca0ad5c7022f147ca243530f1ac3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932065"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548114"
 ---
-# <a name="listing-versions-of-a-driveitem"></a>Список версий DriveItem
+# <a name="listing-versions-of-a-driveitem"></a>ПереЧисление версий объекта DriveItem
 
 OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 В зависимости от того, каковы служба и конфигурация, новую версию можно создавать при каждом изменении или сохранении, создавать вручную или не создавать никогда.

@@ -4,20 +4,21 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Identity
 localization_priority: Normal
-ms.openlocfilehash: 0a963f7158dbb812fc1f51fbff208297a2a9f076
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.openlocfilehash: 10b39bd5747e10ea4340bb5b4c54df0f94eb4229
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482198"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547146"
 ---
 # <a name="identityset-resource-type"></a>Тип ресурса Identity
 
-Ресурс **IdentitySet** представляет собой коллекцию ресурсов [identity](identity.md) с ключами. Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
+Ресурс **Identity** является коллекцией с ключом для ресурсов [Identity](identity.md) .
+Он представляет набор удостоверений, связанных с различными событиями для элемента, например _созданием_ или _последним изменением_.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
-Ниже представлено описание ресурса в формате JSON.
+Ниже указано представление ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -25,6 +26,8 @@ ms.locfileid: "30482198"
   "optionalProperties": [
     "application",
     "applicationInstance",
+    "conversation",
+    "conversationIdentityType",
     "device",
     "encrypted",
     "guest",
@@ -35,13 +38,15 @@ ms.locfileid: "30482198"
 } -->
 ```json
 {
-  "application": {"@odata.type": "#microsoft.graph.identity"},
-  "applicationInstance": {"@odata.type": "#microsoft.graph.identity"},
-  "device": {"@odata.type": "#microsoft.graph.identity"},
-  "encrypted": {"@odata.type": "#microsoft.graph.identity"},
-  "guest": {"@odata.type": "#microsoft.graph.identity"},
-  "phone": {"@odata.type": "#microsoft.graph.identity"},
-  "user": {"@odata.type": "#microsoft.graph.identity"}
+  "application": {"@odata.type": "microsoft.graph.identity"},
+  "applicationInstance": {"@odata.type": "microsoft.graph.identity"},
+  "conversation": {"@odata.type": "microsoft.graph.identity"},
+  "conversationIdentityType": {"@odata.type": "microsoft.graph.identity"},
+  "device": {"@odata.type": "microsoft.graph.identity"},
+  "encrypted": {"@odata.type": "microsoft.graph.identity"},
+  "guest": {"@odata.type": "microsoft.graph.identity"},
+  "phone": {"@odata.type": "microsoft.graph.identity"},
+  "user": {"@odata.type": "microsoft.graph.identity"}
 }
 ```
 
@@ -50,6 +55,8 @@ ms.locfileid: "30482198"
 | Свойство    | Тип                    | Описание                                             |
 |:------------|:------------------------|:--------------------------------------------------------|
 | application | [Идентификация](identity.md) | Необязательный. Приложение, связанное с данным действием.  |
+| conversation| [Identity](identity.md) | Необязательный. Группа или канал, связанные с этим действием.       |
+| Конверсатионидентититипе| [Identity](identity.md) | Необязательный. Указывает, идентифицирует **** ли свойство беседы группу или канал.|
 | Устройство      | [Идентификация](identity.md) | Необязательный. Устройство, связанное с данным действием.       |
 | phone       | [identity](identity.md) | Необязательно. Номер телефона, связанный с этим действием. |
 | user        | [Identity](identity.md) | Необязательный. Пользователь, связанный с данным действием.         |

@@ -1,15 +1,15 @@
 ---
 title: 'Table: DataBodyRange'
-description: Получает объект диапазона, связанный с основными данными таблицы.
+description: Получает объект диапазона, связанный с данными таблицы.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: d66911b1906df828ee4e1b345e8090070ddebab9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517563"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536952"
 ---
 # <a name="table-databodyrange"></a>Table: DataBodyRange
 
@@ -56,9 +56,8 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/DataBodyRange
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/DataBodyRange
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

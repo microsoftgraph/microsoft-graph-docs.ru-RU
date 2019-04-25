@@ -1,15 +1,15 @@
 ---
 title: 'reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts'
-description: Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
+description: Узнайте, сколько сотрудников организации используют уникальные устройства. В отчете будет показано количество пользователей устройств с Windows, телефонов с Windows, телефонов с Android, iPhone и iPad.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: c31dd67e40d1fc4933847db874cfdf81f72479bf
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574903"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537906"
 ---
 # <a name="reportroot-getskypeforbusinessdeviceusagedistributionusercounts"></a>reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts
 
@@ -39,13 +39,13 @@ GET /reports/getSkypeForBusinessDeviceUsageDistributionUserCounts(period='{perio
 
 ## <a name="function-parameters"></a>Параметры функции
 
-В URL-адресе запроса укажите следующий параметр и действительное значение.
+В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.
 
 | Параметр | Тип   | Описание                              |
 | :-------- | :----- | :--------------------------------------- |
-| period    | строка | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
+| period    | string | Указывает отчетный период. Поддерживаемые значения {period_value}: D7, D30, D90 и D180. Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде. Обязательный. |
 
-Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки ответа. Выходной тип по умолчанию — текст и csv. Тем не менее если вы хотите указать тип выходных данных, можно использовать параметр $format запроса OData, задайте значение text/CSV-файла или приложение/json.
+Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика. Тип выходных данных по умолчанию — Text/CSV. Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -64,22 +64,22 @@ URL-адреса для скачивания, для которых выполн
 CSV-файл содержит столбцы со следующими заголовками:
 
 - "Report Refresh Date" (Дата обновления отчета);
-- Windows
+- "Windows";
 - "Windows Phone";
 - "Android Phone" (Телефон с Android);
-- "iPhone";
+- iPhone
 - iPad
 - Report Period (отчетный период)
 
 ### <a name="json"></a>JSON
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **[skypeForBusinessDeviceUsageDistributionUserCounts](../resources/skypeforbusinessdeviceusagedistributionusercounts.md)** в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[скипефорбусинессдевицеусажедистрибутионусеркаунтс](../resources/skypeforbusinessdeviceusagedistributionusercounts.md)** в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="csv"></a>CSV
 
-Ниже приведен пример выводит CSV.
+Ниже приведен пример выходных данных CSV.
 
 #### <a name="request"></a>Запрос
 
@@ -123,7 +123,7 @@ Report Refresh Date,Windows,Windows Phone,Android Phone,iPhone,iPad,Report Perio
 
 ### <a name="json"></a>JSON
 
-Ниже приведен пример, в котором возвращает JSON.
+Ниже приведен пример, в котором возвращается JSON.
 
 #### <a name="request"></a>Запрос
 

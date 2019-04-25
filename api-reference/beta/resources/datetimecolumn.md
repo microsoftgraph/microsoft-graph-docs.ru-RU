@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: DateTimeColumn
+title: dateTimeColumn
 localization_priority: Normal
 ms.openlocfilehash: da8fe44e377a071ee3f20b82f7190b690dcfd6b2
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482170"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535293"
 ---
 # <a name="datetimecolumn-resource-type"></a>Тип ресурса dateTimeColumn
 
@@ -34,7 +34,7 @@ ms.locfileid: "30482170"
 | Имя свойства      | Тип               | Описание
 |:-------------------|:-------------------|:----------------------------------------------
 | **displayAs**      | string             | Способ отображения значения в пользовательском интерфейсе. Должно иметь один из типов `default`, `friendly` или `standard`. Дополнительные сведения см. ниже. Если тип не указан, считается, что значение имеет тип `default`.
-| **format**         | string             | Указывает способ представления значения: только в виде даты либо в виде даты и времени. Должно иметь тип `dateOnly` или `dateTime`
+| **format**         | строка             | Указывает способ представления значения: только в виде даты либо в виде даты и времени. Должно иметь тип `dateOnly` или `dateTime`
 
 ## <a name="displayas-values"></a>Значения DisplayAs
 

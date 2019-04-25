@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a9ce84430eeb483b1a97cacf5b3fb6897c72e80e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30253920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565921"
 ---
 # <a name="edgesearchenginetype-enum-type"></a>тип перечисления Еджесеарченгинетипе
 
@@ -20,8 +20,8 @@ ms.locfileid: "30253920"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|по умолчанию|нуль|Использует заводские настройки поГраничного сервера, чтобы назначить поисковую систему по умолчанию для рынка пользователей|
-|Bing|1,1|Устанавливает Bing как поисковую систему по умолчанию|
+|умолчани|нуль|Использует заводские настройки поГраничного сервера, чтобы назначить поисковую систему по умолчанию для рынка пользователей|
+|Bing|1 |Устанавливает Bing как поисковую систему по умолчанию|
 
 
 

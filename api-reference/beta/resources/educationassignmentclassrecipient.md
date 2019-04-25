@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса educationAssignmentClassRecipient
-description: 'Используется в свойстве assignment.assignTo. Если задано значение класс получателя, будет каждые учебы в классе '
+title: Тип ресурса ЕдукатионассигнментклассреЦипиент
+description: 'Используется внутри свойства назначение. Ассигнто. Если задано значение "класс получателя", каждый учащийся в классе будет '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 4aa7e19c3f71f074bf9ed9b4910e6862d31f20b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543115"
 ---
-# <a name="educationassignmentclassrecipient-resource-type"></a>Тип ресурса educationAssignmentClassRecipient
+# <a name="educationassignmentclassrecipient-resource-type"></a>Тип ресурса ЕдукатионассигнментклассреЦипиент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется в свойстве [assignment.assignTo](educationassignment.md) . Если задано значение класс получателя, каждые учебы в классе получите объект отправки при публикации назначения.
+Используется внутри свойства [назначение. ассигнто](educationassignment.md) . Если задано значение класс Recipient, каждый учащийся в классе получит объект отправки при публикации назначения.
 
-Этот ресурс является подкласс [educationAssignmentRecipient](educationassignmentrecipient.md).
+Этот ресурс является подклассом [едукатионассигнментреЦипиент](educationassignmentrecipient.md).
 
 ## <a name="properties"></a>Свойства
 

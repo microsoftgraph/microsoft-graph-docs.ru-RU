@@ -3,11 +3,11 @@ title: Получение объекта multiValueLegacyExtendedProperty
 description: Разверните узел ".
 localization_priority: Normal
 ms.openlocfilehash: 7a649020bf326d4ec1ed3a83ae0c759a012378d4
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641087"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540263"
 ---
 # <a name="get-multivaluelegacyextendedproperty"></a>Получение объекта multiValueLegacyExtendedProperty
 
@@ -19,25 +19,25 @@ ms.locfileid: "29641087"
 
 Поддерживаются следующие ресурсы пользователей:
 
-- [calendar](../resources/calendar.md);
-- [contact](../resources/contact.md);
+- [calendar](../resources/calendar.md)
+- [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md). 
 - [event](../resources/event.md)
-- [mailFolder](../resources/mailfolder.md)
+- [mailFolder](../resources/mailfolder.md);
 - [message](../resources/message.md) 
-- [Задачи Outlook](../resources/outlooktask.md)
-- [Папки задач Outlook](../resources/outlooktaskfolder.md)
+- [Задача Outlook](../resources/outlooktask.md)
+- [Папка задач Outlook](../resources/outlooktaskfolder.md)
 
 Кроме того, поддерживаются следующие ресурсы групп:
 
-- [calendar](../resources/calendar.md) для групп;
-- [event](../resources/event.md) для групп;
+- [calendar](../resources/calendar.md) для групп
+- group [event](../resources/event.md);
 - [post](../resources/post.md) для групп. 
 
 Дополнительные сведения о том, когда следует использовать расширенные свойства или открытые расширения и как задавать расширенные свойства, см. в статье [Обзор расширенных свойств](../resources/extended-properties-overview.md).
 
 ## <a name="permissions"></a>Разрешения
-В зависимости от ресурса они будут расширенные свойства из и разрешение введите (делегированные или приложения) вы запроса, разрешение, указанное в следующей таблице является минимальным необходимым условием для вызова этот интерфейс API. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
+В зависимости от ресурса, из которого вы получаете расширенное свойство, а также от запрашиваемого типа разрешения (делегированного или приложения), для вызова этого API требуется минимум разрешение, указанное в следующей таблице. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 | Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
 |:-----|:-----|:-----|:-----|
@@ -45,54 +45,61 @@ ms.locfileid: "29641087"
 | [contact](../resources/contact.md) | Contacts.Read | Contacts.Read | Contacts.Read |
 | [contactFolder](../resources/contactfolder.md). | Contacts.Read | Contacts.Read | Contacts.Read |
 | [event](../resources/event.md) | Calendars.Read | Calendars.Read |  Calendars.Read|
-| [calendar](../resources/calendar.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
-| [event](../resources/event.md) для групп; | Group.Read.All | Не поддерживается | Не поддерживается |
-| [post](../resources/post.md) для групп. | Group.Read.All | Не поддерживается | Group.Read.All |
-| [mailFolder](../resources/mailfolder.md) | Mail.Read | Mail.Read | Mail.Read |
+| [calendar](../resources/calendar.md) для групп | Group.Read.All | Не поддерживается | Не поддерживается |
+| group [event](../resources/event.md); | Group.Read.All | Не поддерживается | Не поддерживается |
+| group [post](../resources/post.md). | Group.Read.All | Не поддерживается | Group.Read.All |
+| [mailFolder](../resources/mailfolder.md); | Mail.Read | Mail.Read | Mail.Read |
 | [message](../resources/message.md) | Mail.Read | Mail.Read | Mail.Read |
-| [Задачи Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Не поддерживается |
-| [Папки задач Outlook](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Не поддерживается |
+| [Задача Outlook](../resources/outlooktask.md) | Tasks.Read | Tasks.Read | Не поддерживается |
+| [Папка задач Outlook](../resources/outlooktaskfolder.md) | Tasks.Read | Tasks.Read | Не поддерживается |
  
 ## <a name="http-request"></a>HTTP-запрос
 
 Вы можете получить экземпляр ресурса, дополненный расширенным свойством, которое совпадает с фильтром в свойстве **id**. Убедитесь, что вы применяете [кодировку URL](https://www.w3schools.com/tags/ref_urlencode.asp) для символов пробелов в строке фильтра.
 
-Получение экземпляра **сообщения** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **message**:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/mailFolders/{id}/messages/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **mailFolder** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **mailFolder**:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/mailFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **событий** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **event**:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **календаря** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **calendar**:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/calendars/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **контактов** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **contact**:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /me/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}/contacts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **contactFolder** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **contactFolder**:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/contactfolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/contactFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **outlookTask** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра **outlookTask** :
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -101,7 +108,8 @@ GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}/tasks/{id}?$expand=mu
 GET /me/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}/tasks/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
-Получение экземпляра **outlookTaskFolder** :<!-- { "blockType": "ignored" } -->
+Получение экземпляра **outlookTaskFolder** :
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /users/{id|userPrincipalName}/outlook/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -109,12 +117,14 @@ GET /me/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedPrope
 GET /users/{id|userPrincipalName}/outlook/taskGroups/{id}/taskFolders/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **события** группы:<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **event** для группы:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/events/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 ```
 
-Получение экземпляра **публиковать** группы:<!-- { "blockType": "ignored" } -->
+Получение экземпляра объекта **post** для группы:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /groups/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
 GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueExtendedProperties($filter=id eq '{id_value}')
@@ -130,12 +140,12 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts/{id}?$expand=multiValueEx
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `200 OK`. 
+В случае успешного выполнения этот метод возвращает код отклика `200 OK`. 
 
 Основной текст отклика содержит объект, который представляет запрошенный экземпляр ресурса, дополненный соответствующим объектом [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md).
 

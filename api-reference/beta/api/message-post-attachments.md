@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 56693a04d6f0579d043b4d745fe53ae61536b82e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510094"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540466"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -25,7 +25,7 @@ ms.locfileid: "29510094"
 
 Все эти типы ресурсов вложений являются производными от ресурса [attachment](../resources/attachment.md). 
 
-Можно добавить вложения в существующее сообщение, отправку сообщений в коллекцию вложения или в новое сообщение, который [черновик](../api/user-post-messages.md)или [создан и отправлен во время выполнения](../api/user-sendmail.md).
+Вложение можно добавить к существующему сообщению, добавив его в коллекцию вложений или в новое сообщение, которое будет [черновиком](../api/user-post-messages.md)или [создано и отправлено на ходу](../api/user-sendmail.md).
 
 Так как в настоящее время максимальный общий размер каждого запроса REST составляет 4 МБ, размер добавляемого вложения не может превышать 4 МБ.
 ## <a name="permissions"></a>Разрешения
@@ -38,7 +38,8 @@ ms.locfileid: "29510094"
 |Для приложений | Mail.ReadWrite |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.
+<!-- { "blockType": "ignored" } -->
+Вложения [сообщения](../resources/message.md) в почтовом ящике пользователя.
 ```http
 POST /me/messages/{id}/attachments
 POST /users/{id | userPrincipalName}/messages/{id}/attachments
@@ -62,9 +63,9 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders/{id}/messages
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание объекта [Attachment](../resources/attachment.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [вложения](../resources/attachment.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [вложения](../resources/attachment.md) в тексте отклика.
 
 ## <a name="example-file-attachment"></a>Пример (вложенный файл)
 
@@ -149,9 +150,8 @@ Content-length: 200
 
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,8 +175,8 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>Пример (вложенная ссылка)
 
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса, добавляет подключение к ссылку существующее сообщение.
-Вложение указывает на папку на OneDrive.
+Ниже приведен пример запроса, который добавляет к существующему сообщению ссылку с вложением.
+Вложение указывает на папку в OneDrive.
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_message",

@@ -3,11 +3,11 @@ title: Перечисление oauth2PermissionGrants
 description: Получение списка объектов oauth2PermissionGrant.
 localization_priority: Normal
 ms.openlocfilehash: 9af84b4af64466658058259a665d426484511526
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643257"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540200"
 ---
 # <a name="list-oauth2permissiongrants"></a>Перечисление oauth2PermissionGrants
 
@@ -37,14 +37,14 @@ GET /oauth2PermissionGrants
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
@@ -56,9 +56,9 @@ GET /oauth2PermissionGrants
 ```http
 GET https://graph.microsoft.com/beta/oauth2PermissionGrants
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

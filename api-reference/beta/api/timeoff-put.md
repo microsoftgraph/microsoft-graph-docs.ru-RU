@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: baa95edcece586a481a538d2f0ff68a309c8ce10
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657695"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544353"
 ---
 # <a name="replace-timeoff"></a>Замена Тимеофф
 
@@ -85,7 +85,7 @@ Prefer: return=representation
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

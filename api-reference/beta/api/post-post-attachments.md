@@ -1,15 +1,15 @@
 ---
 title: Добавление вложения
-description: Используйте этот интерфейс API для добавления вложения в сообщение. Начиная с него
+description: С помощью этого API можно добавить вложение к записи. Так как
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 4349673b5400674394db33540f09a407a0a6af33
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538740"
 ---
 # <a name="add-attachment"></a>Добавление вложения
 
@@ -35,7 +35,8 @@ ms.locfileid: "29527894"
 |Для приложений | Group.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-<!-- { "blockType": "ignored" } -->Вложения для [записи](../resources/post.md) в [поток](../resources/conversationthread.md) , относящегося к [беседе](../resources/conversation.md) группы.
+<!-- { "blockType": "ignored" } -->
+Вложения для [записи](../resources/post.md) в [цепочке](../resources/conversationthread.md) [беседы](../resources/conversation.md) в группе.
 ```http
 POST /groups/{id}/threads/{id}/posts/{id}/attachments
 POST /groups/{id}/conversations/{id}/threads/{id}/posts/{id}/attachments
@@ -74,8 +75,8 @@ Content-length: 142
 
 Предоставьте в тексте запроса описание объекта [attachment](../resources/attachment.md) в формате JSON.
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,9 +116,8 @@ Content-length: 100
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -142,8 +142,8 @@ Content-length: 162
 ## <a name="example-reference-attachment"></a>Пример (вложенная ссылка)
 
 ##### <a name="request"></a>Запрос
-Ниже приведен пример запроса, добавляет подключение к ссылку на сообщение.
-Вложение указывает на папку на OneDrive.
+Ниже приведен пример запроса, который добавляет к существующей записи вложение ссылки.
+Вложение указывает на папку в OneDrive.
 <!-- {
   "blockType": "request",
   "name": "create_reference_attachment_from_post",

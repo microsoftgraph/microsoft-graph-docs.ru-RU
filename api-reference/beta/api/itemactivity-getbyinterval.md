@@ -2,26 +2,26 @@
 author: daspek
 ms.author: dspektor
 ms.date: 10/06/2017
-title: Получение элементов активности Статистика по интервал
+title: Получение статистики по действиям элемента по интервалу
 localization_priority: Normal
 ms.openlocfilehash: f9601538d825efe346ab57fdbecd6c74dc9978d7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516457"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541313"
 ---
-# <a name="get-item-activity-stats-by-interval"></a>Получение элементов активности Статистика по интервал
+# <a name="get-item-activity-stats-by-interval"></a>Получение статистики по действиям элемента по интервалу
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [itemActivityStats][] для выполнения действий, выполняемых в разделе этого ресурса в течение указанного временного интервала.
+Получение [итемактивитистатс][] для действий, выполненных с этим ресурсом в течение указанного интервала времени.
 
->**Примечание:** **ItemAnalytics** ресурсов, пока недоступна во всех [Национальный развертываний](/graph/deployments).
+>**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
 
-Статистические выражения на аналитики могут быть недоступны для всех типов действий.
+Статистические функции аналитики могут быть недоступны для всех типов действий.
 
-[itemActivityStats]: ../resources/itemactivitystat.md
+[Итемактивитистатс]: ../resources/itemactivitystat.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,9 +47,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 
 | Параметр      | Тип               | Описание
 |:---------------|:-------------------|:---------------------------------------
-| startDateTime  | String (метка времени) | Время начала развертываемыми статистической обработки действий.
-| endDateTime    | String (метка времени) | Время окончания развертываемыми статистические действиям.
-| interval       | string             | Интервал статистической обработки.
+| startDateTime  | строка (timestamp) | Время начала агрегирования действий.
+| endDateTime    | строка (timestamp) | Время окончания агрегирования действий.
+| interval       | string             | Интервал объединения.
 
 ## <a name="example"></a>Пример
 
@@ -61,7 +61,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 GET /drives/{drive-id}/items/{item-id}/getActivitiesByInterval(startDateTime='2017-01-01',endDateTime='2017-01-3',interval='day')
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivityStat)", "truncated": true } -->
 

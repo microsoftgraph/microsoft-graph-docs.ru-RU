@@ -1,21 +1,21 @@
 ---
 title: Создание объекта MailFolder
-description: С помощью этого API можно создать дочернюю папку почты.
+description: Используйте этот API для создания нового дочернего элемента mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 92c57b5336eb60377915a4abc64b070b28bb98ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516492"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540677"
 ---
 # <a name="create-mailfolder"></a>Создание объекта MailFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-С помощью этого API можно создать дочернюю папку почты.
+Используйте этот API для создания нового дочернего элемента [mailFolder](../resources/mailfolder.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,13 +36,13 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительской папки в URL-АДРЕСЕ запроса как идентификатор папки или имя известных папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительскую папку в URL-АДРЕСе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательный параметр. |
 | Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -55,7 +55,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [mailFolder](../resources/mailfolder.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -77,11 +77,11 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -2,15 +2,15 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: ПереЧисление дочерних сайтов для сайта SharePoint
+title: Создание списка дочерних сайтов для сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f5037373ab914dabe33f11892f90a3bcfad77d5b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480112"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537246"
 ---
 # <a name="enumerate-subsites"></a>Перечисление дочерних сайтов
 

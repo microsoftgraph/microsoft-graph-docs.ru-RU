@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 77c79db2cd385bf6323fade9ec8f353a4e46a9cb
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31806505"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563947"
 ---
 # <a name="defaultmanagedappprotection-resource-type"></a>Тип ресурса defaultManagedAppProtection
 
@@ -25,10 +25,10 @@ ms.locfileid: "31806505"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-list.md)|Коллекция [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Перечисление свойств и связей объектов [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
-|[Get defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-get.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Чтение свойств и связей объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
-|[Создание объекта defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-create.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Создает объект [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
-|[Delete defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-delete.md)|Нет|Удаление объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
+|[Перечисление объектов DefaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-list.md)|Коллекция [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Перечисление свойств и связей объектов [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
+|[Получение объекта defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-get.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md);|Чтение свойств и связей объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
+|[Создание объекта defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-create.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md);|Создание объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
+|[Удаление объекта defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-delete.md)|Нет|Удаление объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
 |[Обновление объекта defaultManagedAppProtection](../api/intune-mam-defaultmanagedappprotection-update.md)|[defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md)|Обновление свойств объекта [defaultManagedAppProtection](../resources/intune-mam-defaultmanagedappprotection.md).|
 
 ## <a name="properties"></a>Свойства

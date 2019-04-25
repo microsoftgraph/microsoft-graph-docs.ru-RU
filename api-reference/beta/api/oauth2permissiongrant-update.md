@@ -1,19 +1,19 @@
 ---
 title: Обновление oAuth2PermissionGrant
-description: Обновление свойства объекта oAuth2PermissionGrant.
+description: Обновление свойств объекта oAuth2PermissionGrant.
 localization_priority: Normal
 ms.openlocfilehash: fb990c56b4d7ae62ac35935a91d69688b96bff28
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522142"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540207"
 ---
 # <a name="update-oauth2permissiongrant"></a>Обновление oAuth2PermissionGrant
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойства объекта oAuth2PermissionGrant.
+Обновление свойств объекта oAuth2PermissionGrant.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ PATCH /drive/root/createdByUser/oAuth2Permissiongrants/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|scope|String| Задает значение утверждения область, должно привести к приложению ресурсов в маркер доступа OAuth 2.0. |
+|scope|String| Указывает значение утверждения области, которое должно ожидать приложение ресурсов в маркере доступа OAuth 2,0. |
 
 ## <a name="response"></a>Отклик
 
@@ -65,7 +65,7 @@ Content-length: 30
   "scope": "scope-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",

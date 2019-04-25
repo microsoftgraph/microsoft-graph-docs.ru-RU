@@ -1,13 +1,13 @@
 ---
 title: Тип ресурса internetMessageHeader
-description: 'Пары "ключ значение" представляет заголовок сообщения Интернета, в соответствии с RFC5322, который предоставляет '
+description: 'Ключ типа "ключ — значение", представляющий заголовок сообщения в Интернете, как определено в RFC5322, который предоставляет '
 localization_priority: Normal
 ms.openlocfilehash: 2a8dd616ffe8417a5064c0a98976d512b1279704
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27892353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567517"
 ---
 # <a name="internetmessageheader-resource-type"></a>Тип ресурса internetMessageHeader
 
@@ -20,8 +20,8 @@ ms.locfileid: "27892353"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|name|строка|Представляет ключ в паре "ключ-значение".|
-|value|строка|Представляет значение в паре "ключ-значение".|
+|name|string|Представляет ключ в паре "ключ-значение".|
+|value|string|Представляет значение в паре "ключ-значение".|
 
 ## <a name="json-representation"></a>Представление JSON
 

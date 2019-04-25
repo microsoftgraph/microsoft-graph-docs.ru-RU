@@ -3,11 +3,11 @@ title: Обновление фотографии
 description: Обновление свойств объекта фотографии.
 localization_priority: Normal
 ms.openlocfilehash: 4db957b18ea65c8e65f8b446229b57a6f627fad0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521511"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539047"
 ---
 # <a name="update-photo"></a>Обновление фотографии
 
@@ -42,7 +42,7 @@ PATCH /drive/root/createdByUser/photo
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [photo](../resources/photo.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -63,7 +63,7 @@ Content-length: 53
   "id": "id-value"
 }
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

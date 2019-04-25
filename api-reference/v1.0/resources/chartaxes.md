@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 483a69f11425f3b8991305e6acdf6b970d0e2db1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27976389"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569433"
 ---
 # <a name="chartaxes-resource-type"></a>Тип ресурса ChartAxes
 
@@ -23,11 +23,11 @@ ms.locfileid: "27976389"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|categoryAxis|[WorkbookChartAxis](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
-|seriesAxis|[WorkbookChartAxis](chartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
-|valueAxis|[WorkbookChartAxis](chartaxis.md)|Представляет ось значений для оси. Только для чтения.|
+|Категоряксис|[Воркбукчартаксис](chartaxis.md)|Представляет ось категорий на диаграмме. Только для чтения.|
+|Сериесаксис|[Воркбукчартаксис](chartaxis.md)|Представляет ось ряда данных для объемной диаграммы. Только для чтения.|
+|valueAxis|[Воркбукчартаксис](chartaxis.md)|Представляет ось значений для оси. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -6,11 +6,11 @@ title: Получение сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: bc1f4e478b93472b683cd8249d55a98f751dfaa0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482289"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537321"
 ---
 # <a name="get-a-site-resource"></a>Получение ресурса site
 
@@ -60,9 +60,9 @@ GET /sites/contoso.sharepoint.com
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a>Доступ к сайту группы для ресурса group
+## <a name="access-a-group-team-site"></a>Доступ к сайту группы для группы
 
-Чтобы получить доступ к сайту группы для ресурса group, создайте следующий запрос:
+Чтобы получить доступ к сайту группы для группы, создайте следующий запрос:
 
 ```http
 GET /groups/{group-id}/sites/root
@@ -78,7 +78,7 @@ GET /groups/{group-id}/sites/root
 GET /sites/{site-id}
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 

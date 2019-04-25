@@ -6,17 +6,17 @@ title: Создание новой страницы на сайте SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 0e66c38fc05402c8838d4ec081f492a394ea8ff2
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640156"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545344"
 ---
-# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создайте страницу в списке страниц сайта узла
+# <a name="create-a-page-in-the-site-pages-list-of-a-site"></a>Создание страницы в списке страниц сайта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового [sitePage][] в страниц сайта [списка][] на [сайте][].
+Создайте новый [ситепаже][] в [списке][] страниц сайта на [сайте][].
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,13 +36,13 @@ ms.locfileid: "29640156"
 POST /sites/{site-id}/pages
 ```
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON [sitePage][] ресурсов для создания.
+В теле запроса добавьте представление ресурса [ситепаже][] , который требуется создать, в формате JSON.
 
 ## <a name="example"></a>Пример
 
-Следующем примере показано, как создать новую страницу.
+В приведенном ниже примере показано, как создать новую страницу.
 
 <!-- { "blockType": "request", "name": "create-page", "scopes": "sites.readwrite.all" } -->
 
@@ -99,9 +99,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Если успешно завершена, этот метод возвращает [sitePage][] в теле ответа для созданного страницы.
+В случае успешного выполнения этот метод возвращает объект [ситепаже][] в тексте отклика для созданной страницы.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 

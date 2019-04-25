@@ -1,21 +1,21 @@
 ---
 title: Создание раздела
-description: Создание объекта section в указанной группе разделов.
+description: Создание нового раздела в указанной группе разделов.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 25c66aa1b1db1f40e3cd9d2b9902288f36ccd766
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510507"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537575"
 ---
 # <a name="create-section"></a>Создание раздела
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание объекта [section](../resources/section.md) в указанной группе разделов.
+Создание нового [раздела](../resources/section.md) в указанной группе разделов.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,7 +36,7 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sections
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
@@ -65,7 +65,7 @@ Content-length: 27
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

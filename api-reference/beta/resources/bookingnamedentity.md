@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса bookingNamedEntity
+title: Тип ресурса Букингнамедентити
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 1cee769181fdf8dce694050cdbc2658fdf29ece4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535456"
 ---
-# <a name="bookingnamedentity-resource-type"></a>Тип ресурса bookingNamedEntity
+# <a name="bookingnamedentity-resource-type"></a>Тип ресурса Букингнамедентити
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Это базовый тип для резервирования Microsoft сущностей, которые обеспечивают отображаемое имя, например, [bookingBusiness](bookingbusiness.md), [bookingPerson](bookingperson.md), [bookingService](bookingservice.md).
+Это базовый тип для сущностей Microsoft Books, предоставляющих отображаемое имя, например, [букингбусинесс](bookingbusiness.md), [букингперсон](bookingperson.md), [букингсервице](bookingservice.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя для производные сущности, который взаимодействует с клиентами.|
-|id|String| Идентификатор производные сущности. Только для чтения.|
+|displayName|String|Имя производной сущности, которая взаимодействует с клиентами.|
+|id|String| Идентификатор производной сущности. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

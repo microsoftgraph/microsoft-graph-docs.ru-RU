@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationJob: validateCredentials'
-description: Убедитесь, что учетные данные действительны в клиентов.
+title: 'Синчронизатионжоб: Валидатекредентиалс'
+description: Убедитесь, что учетные данные действительны в клиенте.
 localization_priority: Normal
 ms.openlocfilehash: 122d673e89f15697b2fdeefbcefb516cf9ad89ca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519005"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537141"
 ---
-# <a name="synchronizationjob-validatecredentials"></a>synchronizationJob: validateCredentials
+# <a name="synchronizationjob-validatecredentials"></a>Синчронизатионжоб: Валидатекредентиалс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Убедитесь, что учетные данные действительны в клиентов.
+Убедитесь, что учетные данные действительны в клиенте.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -33,18 +33,18 @@ POST /servicePrincipals/{id}/synchronization/jobs/{id}/validateCredentials
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|useSavedCredentials|Логическое|При `true`, `credentials` параметр игнорируется и проверяются предварительно сохраненных учетных данных (при его наличии). |
-|Credentials|[synchronizationSecretKeyStringValuePair](../resources/synchronization-secretkeystringvaluepair.md) коллекции|Учетные данные для проверки. Игнорируется, если `useSavedCredentials` — это параметр `true`.|
+|Усесаведкредентиалс|Логический|Когда `true` `credentials` параметр будет игнорироваться и будут проверены ранее сохраненные учетные данные (если они есть). |
+|записей|Коллекция [синчронизатионсекреткэйстрингвалуепаир](../resources/synchronization-secretkeystringvaluepair.md)|Учетные данные для проверки. Игнорируется, `useSavedCredentials` если параметр `true`имеет значение.|
 
 ## <a name="response"></a>Ответ
-Если проверка прошла успешно, этот метод возвращает `204, No Content` код ответа. Он не возвращает все действия в теле ответа.
+Если проверка прошла успешно, этот метод возвращает `204, No Content` код отклика. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -67,7 +67,7 @@ Content-length: 218
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

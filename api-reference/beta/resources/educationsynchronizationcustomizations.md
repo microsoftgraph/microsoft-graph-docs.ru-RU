@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса educationSynchronizationCustomizations
-description: Содержит список сущностей для синхронизации и их настройки, при их наличии.
+title: Тип ресурса Едукатионсинчронизатионкустомизатионс
+description: Содержит список сущностей для синхронизации и их настройки, если они есть.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 9e513e64afb1478ca7b5cc5d53f1964d16d9928b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523255"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543205"
 ---
-# <a name="educationsynchronizationcustomizations-resource-type"></a>Тип ресурса educationSynchronizationCustomizations
+# <a name="educationsynchronizationcustomizations-resource-type"></a>Тип ресурса Едукатионсинчронизатионкустомизатионс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит список сущностей для синхронизации и их [настройки](educationsynchronizationcustomization.md), при их наличии.
+Содержит список сущностей для синхронизации и их [настройки](educationsynchronizationcustomization.md), если они есть.
 
-> **Примечание:** Настройка свойств для синхронизации не применяется к **studentEnrollment** и **teacherRoster** сущности.
+> **Примечание:** Настройка свойств для синхронизации не применяется к объектам **студентенроллмент** и **теачерростер** .
 
-Этот ресурс, принадлежит следующие поставщики данных:
+Этот ресурс является членом следующих поставщиков данных:
 
-* [educationCsvDataProvider](educationcsvdataprovider.md)
-* [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
+* [Едукатионксвдатапровидер](educationcsvdataprovider.md)
+* [Едукатионповерсчулдатапровидер](educationpowerschooldataprovider.md)
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **School** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Настройка для сущности school.        |
-| **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Настройка раздела сущности.         |
-| student | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Настройка для учащихся сущности.         |
-| teacher | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Настройка для преподавателей сущности.         |
-| **studentEnrollment** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Настройка для регистрации учащихся.           |
-| **teacherRoster** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |       Настройка для преподавателей участников.    |
+| **Название** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для учебного объекта School.        |
+| **section** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта Section.         |
+| **student** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта Student.         |
+| **teacher** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка для объекта учителя.         |
+| **Студентенроллмент** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |  Настройка регистрации для учащихся.           |
+| **Теачерростер** | [Едукатионсинчронизатионкустомизатион](educationsynchronizationcustomization.md) |       Настройка для списка преподавателей.    |
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

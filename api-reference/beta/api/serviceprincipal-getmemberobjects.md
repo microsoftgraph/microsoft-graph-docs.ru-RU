@@ -1,19 +1,19 @@
 ---
 title: 'servicePrincipal: getMemberObjects'
-description: Получите список групп и ролей каталогов, которые этой основной службы является членом.  Проверка доверия транзитивных.
+description: Получение списка групп и ролей каталогов, членом которых является данный участник службы.  Эта проверка является транзитивным.
 localization_priority: Normal
 ms.openlocfilehash: a1856e0c359e464078f7689043d1bea493c2bb13
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520762"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537482"
 ---
 # <a name="serviceprincipal-getmemberobjects"></a>servicePrincipal: getMemberObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите список групп и ролей каталогов, которые этой основной службы является членом.  Проверка доверия транзитивных.
+Получение списка групп и ролей каталогов, членом которых является данный участник службы.  Эта проверка является транзитивным.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ POST /servicePrincipals/{id}/getMemberObjects
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|securityEnabledOnly|Логическое||
+|securityEnabledOnly|Boolean||
 
 ## <a name="response"></a>Отклик
 
@@ -64,9 +64,8 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

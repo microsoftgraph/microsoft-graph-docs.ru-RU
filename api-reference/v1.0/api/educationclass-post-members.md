@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 1999833036d4e1452cb45bedbd58a0e2d160df39
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928019"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550457"
 ---
 # <a name="add-a-student"></a>Добавление учащегося
 
@@ -22,7 +22,7 @@ ms.locfileid: "27928019"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Не поддерживается.  |
 |Делегированные (личная учетная запись Майкрософт) |  Не поддерживается.  |
-|Для приложений | EduRoster.ReadWrite.All, а также Member.Read.Hidden | 
+|Для приложений | EduRoster. ReadWrite. ALL, Plus Member. Read. Hidden | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,7 +35,7 @@ POST /education/classes/{id}/members/$ref
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [educationUser](../resources/educationuser.md) в формате JSON.
 
 
@@ -59,8 +59,8 @@ Content-length: 56
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. 
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика. 
 
 
 <!-- {

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e85cdc1ffa1781420b5ef911147f25ef97a726dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539001"
 ---
 # <a name="update-plannerbucket"></a>Обновление объекта plannerbucket
 
@@ -43,7 +43,7 @@ PATCH /planner/buckets/<id>
 |:---------------|:--------|:----------|
 |name|String|Имя сегмента.|
 |orderHint|String|Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](../resources/planner-order-hint-format.md).|
-|planId|Строка|Идентификатор плана, к которому относится сегмент.|
+|planId|String|Идентификатор плана, к которому относится сегмент.|
 
 ## <a name="response"></a>Ответ
 
@@ -69,8 +69,7 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

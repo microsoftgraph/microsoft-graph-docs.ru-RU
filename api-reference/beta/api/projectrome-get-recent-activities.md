@@ -1,20 +1,18 @@
 ---
-title: Получите последние действия пользователя
-description: " API-ИНТЕРФЕЙС. Служба запросов для последних historyItems и затем по запросу этих связанных действий. Действия будут упорядочены в соответствии с самыми последними **lastModified** на **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответе. Разрешение UserActivity.ReadWrite.CreatedByApp будут также применены дополнительные фильтрации в ответ, чтобы возвращаются только действий, созданных приложением. В этом фильтрации на сервере может привести к пустой страницы Если пользователь является особенно active и другие приложения были созданы более последние действия. Для получения действия этого приложения, используйте свойство **nextLink** для разбиения по страницам."
+title: Получение последних действий пользователя
+description: " Функцию. Служба будет запрашивать последние Historyitem, а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы."
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 5ac5522472404e70f07b5b658e404cd4e77bbf88
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538450"
 ---
-# <a name="get-recent-user-activities"></a>Получите последние действия пользователя
+# <a name="get-recent-user-activities"></a>Получение последних действий пользователя
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Получите последние действия для данного пользователя. Эта функция OData имеет некоторые поведения по умолчанию для работы как API «использовался последним». Служба запросов для последних [historyItems](../resources/projectrome-historyitem.md)и затем по запросу этих связанных действий. Действия будут упорядочены в соответствии с самыми последними **lastModified** на **historyItem**. Это означает, что действия без **historyItems** не будут включены в ответе. Разрешение UserActivity.ReadWrite.CreatedByApp будут также применены дополнительные фильтрации в ответ, чтобы возвращаются только действий, созданных приложением. В этом фильтрации на сервере может привести к пустой страницы Если пользователь является особенно active и другие приложения были созданы более последние действия. Для получения действия этого приложения, используйте свойство **nextLink** для разбиения по страницам.
+Получение последних действий для определенного пользователя. Эта функция OData имеет некоторые варианты поведения по умолчанию, которые могут работать так же, как и "самый последний использованный" API. Служба будет запрашивать последние [historyitem](../resources/projectrome-historyitem.md), а затем извлекать эти связанные действия. Действия сортируются в соответствии с последним значением **LastModified** в **historyItem**. Это означает, что действия без **historyitem** не будут включены в ответ. Разрешение UserActivity. ReadWrite. CreatedByApp также будет применять к отклику дополнительную фильтрацию, чтобы возвращались только действия, созданные приложением. Такая фильтрация на стороне сервера может привести к пустым страницам, если пользователь является особенно активным и другие приложения создали более новые действия. Чтобы получить действия приложения, используйте свойство **nextLink** для разбивки на страницы.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,13 +34,13 @@ GET /me/activities/recent
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запроса:
+Этот метод поддерживает некоторые [Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. Поддерживаются следующие параметры запросов:
 
-- для свойства **historyItems** навигации разверните $.
-- Чтобы ограничить максимальное число элементов на страницах $top.
-- $filter свойства **lastModifiedDateTime** для **действия** или **historyItems**, если были развернуты.
+- $expand для свойства навигации **historyitem** .
+- $Top, чтобы ограничить максимальное количество элементов на страницах.
+- $filter в свойстве **lastModifiedDateTime** для **действий** или **historyitem**, если она развернута.
 
-Ниже приведены некоторые примеры поддерживаемых запросов с кодировкой URL-адрес.
+Ниже приведено несколько примеров поддерживаемых запросов с кодированием URL-адресов.
 
 ```
 /me/activities/recent?$expand=historyItems($filter=lastModifiedDateTime%20gt%202018-01-22T21:45:00.347Z%20and%20lastModifiedDateTime%20lt%202018-01-22T22:00:00.347Z)
@@ -56,15 +54,15 @@ GET /me/activities/recent
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | строка | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте текста запроса.
+Не указывайте текст запроса.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа с помощью последние действия пользователя для приложения.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика с последними действиями пользователя для вашего приложения.
 
 ## <a name="example"></a>Пример
 
@@ -73,12 +71,12 @@ GET /me/activities/recent
 Ниже приведен пример запроса.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "get_recent_activities"
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/me/activities/recent
+GET https://graph.microsoft.com/v1.0/me/activities/recent
 ```
 
 ##### <a name="response"></a>Отклик
@@ -86,9 +84,9 @@ GET https://graph.microsoft.com/beta/me/activities/recent
 Ниже приведен пример отклика.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.activity)"
+  "@odata.type": "Collection(microsoft.graph.userActivity)"
 } -->
 
 ```http
@@ -96,10 +94,10 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(userActivity)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(userActivity)",
+    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/activities/recent?$skiptoken=%24filter%3dlastModifiedDateTime+lt+2018-02-26T18%3a06%3a19.365Z",
     "value": [{
-        "@odata.type": "#microsoft.graph.activity",
+        "@odata.type": "#microsoft.graph.userActivity",
         "activitySourceHost": "https://www.contoso.com",
         "createdDateTime": "2018-02-26T18:34:29.592Z",
         "lastModifiedDateTime": "2018-02-26T18:34:29.607Z",
@@ -109,7 +107,7 @@ Content-Type: application/json
             "attribution": {
               "iconUrl": "https://www.contoso.com/icon",
               "alternateText": "Contoso, Ltd.",
-              "addImageQuery": "false",
+              "addImageQuery": false,
               },
             "displayText": "Contoso How-To: How to Tie a Reef Knot",
             "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
@@ -143,15 +141,24 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Get recent activities",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
   "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-get-recent-activities.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+    "Error: get_recent_activities/container/contentInfo:
+      Property 'contentInfo' is of type Custom but has no custom members.",
+
+    "Warning: get_recent_activities/container/visualElements/content/$schema:
+      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/body:
+      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
+
+    "Warning: get_recent_activities/container/visualElements/content/type:
+      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
+
+  ],
+  "tocPath": ""
+}-->

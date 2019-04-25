@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 75280102768e281cdd62a76aaaa0b1e9d5812d45
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257738"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534586"
 ---
 # <a name="windows10generalconfiguration-resource-type"></a>Тип ресурса windows10GeneralConfiguration
 
@@ -32,12 +32,12 @@ ms.locfileid: "30257738"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|description|Строка|Указанное администратором описание конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|version|Int32|Версия конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|id|Строка|Ключ объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|createdDateTime|DateTimeOffset|Дата и время создания объекта. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |enterpriseCloudPrintDiscoveryEndPoint|String|Конечная точка для обнаружения облачных принтеров.|
 |enterpriseCloudPrintOAuthAuthority|String|Конечная точка аутентификации для получения токенов OAuth.|
 |enterpriseCloudPrintOAuthClientIdentifier|String|GUID клиентского приложения, которому разрешено получать токены OAuth из системы OAuth.|
@@ -50,17 +50,17 @@ ms.locfileid: "30257738"
 |searchEnableRemoteQueries|Логический|Указывает, следует ли заблокировать удаленные запросы к индексу этого компьютера.|
 |searchDisableIndexerBackoff|Логический|Указывает, следует ли отключить функцию отхода индексатора поиска.|
 |searchDisableIndexingRemovableDrive|Логический|Указывает, могут ли пользователи добавлять расположения на съемных дисках в библиотеки и для индексирования.|
-|searchEnableAutomaticIndexSizeManangement|Boolean|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
+|searchEnableAutomaticIndexSizeManangement|Логический|Указывает минимальный объем памяти на жестком диске с индексом до остановки индексирования.|
 |diagnosticsDataSubmissionMode|[Диагностикдатасубмиссионмоде](../resources/intune-deviceconfig-diagnosticdatasubmissionmode.md)|Возвращает или задает значение, позволяющее устройству отправлять данные диагностики и телеметрии использования, такие как Watson. Возможные значения: `userDefined`, `none`, `basic`, `enhanced`, `full`.|
 |oneDriveDisableFileSync|Логический|Возвращает или задает значение, позволяющее ИТ-администраторам запретить работу приложений и функций с файлами в OneDrive.|
 |smartScreenEnableAppInstallControl|Логический|Позволяет ИТ-администраторам разрешать или запрещать установку приложений из мест, отличных от Store.|
 |personalizationDesktopImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на рабочем столе, или URL-адрес локального изображения в файловой системе, которое нужно разместить на рабочем столе.|
 |personalizationLockScreenImageUrl|String|Начинающийся с http или https URL-адрес изображения в формате JPG, JPEG или PNG, которое необходимо скачать и разместить на экране блокировки, или URL-адрес локального изображения в файловой системе, которое нужно разместить на экране блокировки.|
-|bluetoothAllowedServices|Коллекция строк|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
-|bluetoothBlockAdvertising|Логический|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
+|bluetoothAllowedServices|Коллекция String|Укажите список разрешенных служб и профилей Bluetooth в шестнадцатеричном формате.|
+|bluetoothBlockAdvertising|Boolean|Указывает, следует ли запретить использовать рекламу по Bluetooth.|
 |bluetoothBlockDiscoverableMode|Логический|Указывает, следует ли запретить использовать режим обнаружения по Bluetooth.|
 |bluetoothBlockPrePairing|Логический|Указывает, следует ли заблокировать автоматическое связывание отдельных пакетных периферийных устройств Bluetooth с главным устройством.|
-|edgeBlockAutofill|Boolean|Указывает, следует ли заблокировать автозаполнение.|
+|edgeBlockAutofill|Логический|Указывает, следует ли заблокировать автозаполнение.|
 |edgeBlocked|Логический|Указывает, следует ли запретить использовать браузер Edge.|
 |edgeCookiePolicy|[edgeCookiePolicy](../resources/intune-deviceconfig-edgecookiepolicy.md)|Указывает, какие файлы cookie следует блокировать в браузере Edge. Возможные значения: `userDefined`, `allow`, `blockThirdParty`, `blockAll`.|
 |edgeBlockDeveloperTools|Логический|Указывает, следует ли заблокировать средства разработчика в браузере Edge.|
@@ -79,7 +79,7 @@ ms.locfileid: "30257738"
 |cellularBlockDataWhenRoaming|Логический|Указывает, следует ли запретить использовать мобильные данные в роуминге.|
 |cellularBlockVpn|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети.|
 |cellularBlockVpnWhenRoaming|Логический|Указывает, следует ли запретить использовать VPN по сотовой сети в роуминге.|
-|defenderBlockEndUserAccess|Логический|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
+|defenderBlockEndUserAccess|Boolean|Указывает, следует ли заблокировать доступ пользователей к Защитнику.|
 |defenderDaysBeforeDeletingQuarantinedMalware|Int32|Время до удаления вредоносного ПО на карантине (в днях). Допустимые значения: от 0 до 90.|
 |defenderDetectedMalwareActions|[defenderDetectedMalwareActions](../resources/intune-deviceconfig-defenderdetectedmalwareactions.md)|Возвращает или задает действия Защитника в отношении обнаруженного вредоносного ПО для каждого уровня угрозы.|
 |defenderSystemScanSchedule|[Виклисчедуле](../resources/intune-deviceconfig-weeklyschedule.md)|День проверки системы Защитником. Возможные значения: `userDefined`, `everyday`, `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
@@ -87,7 +87,7 @@ ms.locfileid: "30257738"
 |defenderFileExtensionsToExclude|Коллекция строк|Расширения файлов, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderScanMaxCpu|Int32|Максимальный процент загрузки ЦП во время проверки. Допустимые значения: от 0 до 100|
 |defenderMonitorFileActivity|[defenderMonitorFileActivity](../resources/intune-deviceconfig-defendermonitorfileactivity.md)|Значение для отслеживания действий с файлами. Возможные значения: `userDefined`, `disable`, `monitorAllFiles`, `monitorIncomingFilesOnly`, `monitorOutgoingFilesOnly`.|
-|defenderProcessesToExclude|Коллекция строк|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
+|defenderProcessesToExclude|Коллекция String|Процессы, которые необходимо исключить из проверки и защиты в режиме реального времени.|
 |defenderPromptForSampleSubmission|[defenderPromptForSampleSubmission](../resources/intune-deviceconfig-defenderpromptforsamplesubmission.md)|Позволяет указать, нужно ли спрашивать пользователя перед отправкой образцов. Возможные значения: `userDefined`, `alwaysPrompt`, `promptBeforeSendingPersonalData`, `neverSendData`, `sendAllDataWithoutPrompting`.|
 |defenderRequireBehaviorMonitoring|Логический|Указывает, обязательно ли использовать наблюдение за поведением.|
 |defenderRequireCloudProtection|Логический|Указывает, обязательно ли использовать облачную защиту.|
@@ -136,9 +136,9 @@ ms.locfileid: "30257738"
 |startMenuHideShutDown|Логический|Эта политика позволяет скрыть параметр кнопки питания "Завершить работу" или "Обновить и завершить работу" в меню "Пуск".|
 |startMenuHideSignOut|Логический|Эта политика позволяет скрыть параметр для выхода из учетной записи на плитке пользователя в меню "Пуск".|
 |startMenuHideSleep|Логический|Эта политика позволяет скрыть параметр кнопки питания для перехода в спящий режим в меню "Пуск".|
-|startMenuHideSwitchAccount|Boolean|Эта политика позволяет скрыть параметр для переключения между учетными записями на плитке пользователя в меню "Пуск".|
-|startMenuHideUserTile|Логический|Эта политика позволяет скрыть плитку пользователя в меню "Пуск".|
-|startMenuLayoutEdgeAssetsXml|Binary|Этот параметр политики позволяет импортировать ресурсы Edge для использования с политикой startMenuLayoutXml. Макет меню "Пуск" может содержать вспомогательную плитку из приложения Edge для поиска файла локального ресурса Edge. Так как локальный ресурс Edge не существует, вспомогательная плитка Edge будет пустой. Эта политика применяется только при изменении политики startMenuLayoutXml. Значение должно быть в формате массива байтов в кодировке Base64 UTF-8.|
+|startMenuHideSwitchAccount|Логический|Эта политика позволяет скрыть параметр для переключения между учетными записями на плитке пользователя в меню "Пуск".|
+|startMenuHideUserTile|Boolean|Эта политика позволяет скрыть плитку пользователя в меню "Пуск".|
+|startMenuLayoutEdgeAssetsXml|Двоичный|Этот параметр политики позволяет импортировать ресурсы Edge для использования с политикой startMenuLayoutXml. Макет меню "Пуск" может содержать вспомогательную плитку из приложения Edge для поиска файла локального ресурса Edge. Так как локальный ресурс Edge не существует, вспомогательная плитка Edge будет пустой. Эта политика применяется только при изменении политики startMenuLayoutXml. Значение должно быть в формате массива байтов в кодировке Base64 UTF-8.|
 |startMenuLayoutXml|Binary|Позволяет администраторам переопределять стандартный макет меню "Пуск" и блокировать его изменение пользователями. Чтобы изменить макет, необходимо указать XML-файл на основе схемы изменения макета. XML-файл должен быть в формате массива байтов в кодировке UTF8.|
 |startMenuMode|[Виндовсстартменумодетипе](../resources/intune-deviceconfig-windowsstartmenumodetype.md)|Позволяет администраторам определить вид меню "Пуск". Возможные значения: `userDefined`, `fullScreen`, `nonFullScreen`.|
 |startMenuPinnedFolderDocuments|[Висибилитисеттинг](../resources/intune-deviceconfig-visibilitysetting.md)|Определяет, виден ли ярлык папки "Документы" в меню "Пуск". Возможные значения: `notConfigured`, `hide`, `show`.|
@@ -175,9 +175,9 @@ ms.locfileid: "30257738"
 |networkProxyDisableAutoDetect|Логический|Позволяет отключить автоматическое обнаружение настроек. Если этот параметр включен, система попытается найти путь к сценарию автонастройки прокси-сервера (PAC).|
 |networkProxyAutomaticConfigurationUrl|String|Адрес сценария автонастройки прокси-сервера (PAC).|
 |networkProxyServer|[windows10NetworkProxyServer](../resources/intune-deviceconfig-windows10networkproxyserver.md)|Определяет ручные настройки прокси-сервера.|
-|accountsBlockAddingNonMicrosoftAccountEmail|Логический|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
+|accountsBlockAddingNonMicrosoftAccountEmail|Boolean|Указывает, следует ли запретить пользователю добавлять учетные записи электронной почты на устройства, не связанные с учетной записью Майкрософт.|
 |antiTheftModeBlocked|Логический|Указывает, следует ли запретить пользователю выбирать режим AntiTheft (только для Windows 10 Mobile).|
-|bluetoothBlocked|Boolean|Указывает, следует ли запретить использовать Bluetooth.|
+|bluetoothBlocked|Логический|Указывает, следует ли запретить использовать Bluetooth.|
 |cameraBlocked|Логический|Определяет, следует ли запретить доступ к камере устройства.|
 |connectedDevicesServiceBlocked|Логический|Указывает, следует ли блокировать службу подключенных устройств, которая позволяет находить другие устройства и подключаться к ним, удаленно обмениваться сообщениями и работать с приложениями, а также выполнять другие действия.|
 |certificatesBlockManualRootCertificateInstallation|Логический|Указывает, следует ли запретить пользователю вручную устанавливать корневой сертификат.|
@@ -186,7 +186,7 @@ ms.locfileid: "30257738"
 |deviceManagementBlockFactoryResetOnMobile|Логический|Указывает, следует ли запретить пользователю сбрасывать настройки телефона.|
 |deviceManagementBlockManualUnenroll|Логический|Указывает, следует ли запретить пользователю вручную отменять регистрацию в системе управления устройствами.|
 |safeSearchFilter|[Сафесеарчфилтертипе](../resources/intune-deviceconfig-safesearchfiltertype.md)|Определяет необходимый уровень фильтрации для безопасного поиска. Возможные значения: `userDefined`, `strict`, `moderate`.|
-|edgeBlockPopups|Boolean|Указывает, следует ли блокировать всплывающие окна.|
+|edgeBlockPopups|Логический|Указывает, следует ли блокировать всплывающие окна.|
 |edgeBlockSearchSuggestions|Логический|Указывает, следует ли запретить пользователю использовать варианты поиска в адресной строке.|
 |edgeBlockSendingIntranetTrafficToInternetExplorer|Логический|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer. Note: имя этого свойства является недостоверным; свойство устарело, вместо него используйте Еджесендинтранеттраффиктоинтернетексплорер.|
 |Еджесендинтранеттраффиктоинтернетексплорер|Логический|Указывает, следует ли переключить трафик интрасети от края к Internet Explorer.|
@@ -194,7 +194,7 @@ ms.locfileid: "30257738"
 |edgeEnterpriseModeSiteListLocation|String|Указывает расположение списка сайтов, запускаемых в корпоративном режиме. Это может быть локальный файл, локальная сеть или http-адрес.|
 |edgeFirstRunUrl|String|URL-адрес, открываемый в браузере Edge при первом запуске.|
 |edgeSearchEngine|[edgeSearchEngineBase](../resources/intune-deviceconfig-edgesearchenginebase.md)|Позволяет ИТ-администраторам устанавливать поисковую систему по умолчанию для управляемых с помощью системы MDM устройств. Пользователи могут переопределять эту настройку и изменять поисковую систему по умолчанию, если не установлена политика AllowSearchEngineCustomization.|
-|edgeHomepageUrls|Коллекция строк|Список URL-адресов домашних страниц, показываемых на зарегистрированных в системе MDM устройствах в браузере Edge.|
+|edgeHomepageUrls|Коллекция String|Список URL-адресов домашних страниц, показываемых на зарегистрированных в системе MDM устройствах в браузере Edge.|
 |edgeBlockAccessToAboutFlags|Логический|Указывает, следует ли запретить доступ к странице about flags в браузере Edge.|
 |smartScreenBlockPromptOverride|Логический|Указывает, могут ли пользователи игнорировать предупреждения фильтра SmartScreen о потенциально вредоносных веб-сайтах.|
 |smartScreenBlockPromptOverrideForFiles|Логический|Указывает, могут ли пользователи игнорировать предупреждения фильтра SmartScreen о скачивании непроверенных файлов.|
@@ -206,7 +206,7 @@ ms.locfileid: "30257738"
 |settingsBlockEditDeviceName|Логический|Указывает, следует ли запретить пользователю изменять имя устройства.|
 |settingsBlockChangeRegion|Логический|Указывает, следует ли запретить пользователю изменять региональные стандарты.|
 |settingsBlockChangeLanguage|Логический|Указывает, следует ли запретить пользователю изменять параметры языка.|
-|settingsBlockChangePowerSleep|Логический|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
+|settingsBlockChangePowerSleep|Boolean|Указывает, следует ли запретить пользователю изменять параметры питания и спящего режима.|
 |locationServicesBlocked|Логический|Указывает, следует ли запретить использовать службы определения местоположения.|
 |microsoftAccountBlocked|Логический|Указывает, следует ли запретить использовать учетную запись Майкрософт.|
 |microsoftAccountBlockSettingsSync|Логический|Указывает, следует ли запретить синхронизировать настройки учетной записи Майкрософт.|
@@ -224,7 +224,7 @@ ms.locfileid: "30257738"
 |wirelessDisplayBlockProjectionToThisDevice|Логический|Указывает, могут ли другие устройства находить этот компьютер для проецирования контента.|
 |wirelessDisplayBlockUserInputFromReceiver|Логический|Указывает, следует ли блокировать запросы пользователя с беспроводного дисплея.|
 |wirelessDisplayRequirePinForPairing|Логический|Указывает, обязательно ли использовать ПИН-код для связывания с новыми устройствами.|
-|windowsStoreBlocked|Boolean|Указывает, следует ли запретить использовать Microsoft Store.|
+|windowsStoreBlocked|Логический|Указывает, следует ли запретить использовать Microsoft Store.|
 |appsAllowTrustedAppsSideloading|[Статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, можно ли загружать неопубликованные приложения из пакетов AppX с доверенным сертификатом. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
 |windowsStoreBlockAutoUpdate|Логический|Указывает, следует ли заблокировать автоматическое обновление приложений из Microsoft Store.|
 |developerUnlockSetting|[Статеманажементсеттинг](../resources/intune-deviceconfig-statemanagementsetting.md)|Указывает, следует ли разрешить разблокировку для разработки. Возможные значения: `notConfigured`, `blocked`, `allowed`.|
@@ -237,18 +237,18 @@ ms.locfileid: "30257738"
 |experienceBlockDeviceDiscovery|Логический|Указывает, следует ли блокировать обнаружение устройств.|
 |experienceBlockErrorDialogWhenNoSIM|Логический|Указывает, следует ли запретить отображение диалогового окна ошибки, если SIM-карта не обнаружена.|
 |experienceBlockTaskSwitcher|Логический|Указывает, следует ли заблокировать переключение задач на устройстве.|
-|logonBlockFastUserSwitching|Логический|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
+|logonBlockFastUserSwitching|Boolean|Отключает возможность быстрого переключения между учетными записями пользователей, вошедших в систему, без выхода из системы.|
 |tenantLockdownRequireNetworkDuringOutOfBoxExperience|Логический|Указывает, требуется ли устройство для подключения к сети.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 |Отношение|Тип|Описание|
 |:---|:---|:---|
-|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
-|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации по устройствам. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Обзор состояния параметров конфигурации устройств по пользователям. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
+|assignments|Коллекция [deviceConfigurationAssignment](../resources/intune-deviceconfig-deviceconfigurationassignment.md)|Список назначений для профиля конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceStatuses|Коллекция [deviceConfigurationDeviceStatus](../resources/intune-deviceconfig-deviceconfigurationdevicestatus.md)|Состояние установки конфигурации для каждого устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatuses|Коллекция [deviceConfigurationUserStatus](../resources/intune-deviceconfig-deviceconfigurationuserstatus.md)|Состояние установки конфигурации устройств пользователем. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceStatusOverview|[deviceConfigurationDeviceOverview](../resources/intune-deviceconfig-deviceconfigurationdeviceoverview.md)|Обзор состояния конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|userStatusOverview|[deviceConfigurationUserOverview](../resources/intune-deviceconfig-deviceconfigurationuseroverview.md)|Обзор состояния конфигурации устройств для пользователей. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
+|deviceSettingStateSummaries|Коллекция [settingStateDeviceSummary](../resources/intune-deviceconfig-settingstatedevicesummary.md)|Сводка данных о состоянии настройки конфигурации устройств. Наследуется от [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

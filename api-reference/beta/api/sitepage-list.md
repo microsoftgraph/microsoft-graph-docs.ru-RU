@@ -2,25 +2,25 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 03/15/2018
-title: Список страниц на сайте
+title: Список страниц сайта
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 127f3e470e7a9f4570923858b6c18c45d7bc6a7c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641192"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537197"
 ---
-# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>Список страниц в списке страниц сайта узла
+# <a name="list-the-pages-in-the-site-pages-list-of-a-site"></a>ПереЧисление страниц в списке страниц сайта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [] [sitePages] страниц сайта [списка][] на сайте [сайта][]. (С разбиение на страницы) возвращаются все страницы на сайте.
+Получение коллекции [sitePages] [] из [списка][] страниц сайта на [сайте][]сайта. Возвращаются все страницы сайта (с разбивкой на страницы).
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[сайта]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 

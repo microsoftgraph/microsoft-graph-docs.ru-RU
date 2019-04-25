@@ -1,21 +1,21 @@
 ---
 title: 'message: move'
-description: Переместите сообщение в папку. Это создает новую копию сообщения в папке назначения и удаляет исходное сообщение.
+description: Перемещение сообщения в папку. При этом будет создана новая копия сообщения в конечной папке, а исходное сообщение будет удалено.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: efe2bcf262ef91b4684bc812fa19bdbe52f12564
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526860"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540487"
 ---
 # <a name="message-move"></a>message: move
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Переместите сообщение в папку. Это создает новую копию сообщения в папке назначения и удаляет исходное сообщение.
+Перемещение сообщения в папку. При этом будет создана новая копия сообщения в конечной папке, а исходное сообщение будет удалено.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательный параметр. |
 | Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,11 +51,11 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
-|DestinationId|String|Идентификатор папки назначения, или имя известных папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|DestinationId|String|Идентификатор целевой папки или имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и ресурсов [сообщения](../resources/message.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и ресурс [Message](../resources/message.md) в теле отклика.
 
 ## <a name="example"></a>Пример
 
@@ -63,7 +63,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ##### <a name="request"></a>Запрос
 
-Следующий запрос перемещает указанное сообщение в папки «Удаленные», определяется именем известных папки `deleteditems`.
+Следующий запрос перемещает указанное сообщение в папку "Удаленные", которое определяется по известному имени `deleteditems`папки.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -83,7 +83,7 @@ Content-type: application/json
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

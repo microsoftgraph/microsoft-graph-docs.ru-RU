@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipals: список ownedObjects'
-description: Получение списка объектов, владельцем которого servicePrincipal.  Это может включать приложения или групп.
+title: 'СервицепринЦипалс: List ownedObjects'
+description: Получение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
 localization_priority: Normal
 ms.openlocfilehash: 788ee23010825a657e8eb5664f11de1d2cf1b34a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537568"
 ---
-# <a name="serviceprincipals-list-ownedobjects"></a>servicePrincipals: список ownedObjects
+# <a name="serviceprincipals-list-ownedobjects"></a>СервицепринЦипалс: List ownedObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов, владельцем которого servicePrincipal.  Это может включать приложения или групп.
+Получение списка объектов, принадлежащих servicePrincipal.  Это могут быть приложения или группы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ GET /servicePrincipals/{id}/ownedObjects
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -53,9 +53,8 @@ GET /servicePrincipals/{id}/ownedObjects
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/ownedObjects
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

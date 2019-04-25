@@ -1,28 +1,28 @@
 ---
-title: Список privilegedApproval
-description: Получение списка объектов privilegedapproval.
+title: Перечисление privilegedApproval
+description: Получение списка объектов привилежедаппровал.
 localization_priority: Normal
 ms.openlocfilehash: ab3a3c2670cd0ddebf8415e112305679c1d3446c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521553"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538681"
 ---
-# <a name="list-privilegedapproval"></a>Список privilegedApproval
+# <a name="list-privilegedapproval"></a>Перечисление privilegedApproval
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов privilegedapproval.
+Получение списка объектов привилежедаппровал.
 
-Чтобы отфильтровать результаты запроса, используйте стандартные OData ``$filter`` выражения в URI.
+Чтобы отфильтровать результаты запроса, используйте стандартные выражения OData ``$filter`` в URI.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -40,13 +40,13 @@ GET /privilegedApproval
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [privilegedApproval](../resources/privilegedapproval.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -58,9 +58,8 @@ GET /privilegedApproval
 ```http
 GET https://graph.microsoft.com/beta/privilegedApproval
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

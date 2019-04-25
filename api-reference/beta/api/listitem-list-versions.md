@@ -6,11 +6,11 @@ title: Получение предыдущей версии записи спи�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: b8a9078bb0e56f3c3068a92bab9835f2a4964f79
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481344"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540967"
 ---
 # <a name="listing-versions-of-a-listitem-preview"></a>Создание списка версий элемента ListItem (ознакомительная версия)
 
@@ -57,7 +57,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions
 GET /sites/{site-id}/items/{item-id}/versions
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Возвращается коллекция версий:
 

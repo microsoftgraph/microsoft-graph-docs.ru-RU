@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: bf4c76615bb2b72545c502513450b2d5f4baef6e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534446"
 ---
 # <a name="win32lobappmsipackagetype-enum-type"></a>тип перечисления win32LobAppMsiPackageType
 
@@ -23,8 +23,8 @@ ms.locfileid: "31796159"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Пермачине|нуль|Указывает пакет приложений для компьютера.|
-|perUser|1,1|Указывает на пользовательский пакет приложения.|
-|Дуалпурпосе|2|Указывает пакет приложений с двумя целями.|
+|perUser|1 |Указывает на пользовательский пакет приложения.|
+|Дуалпурпосе|2 |Указывает пакет приложений с двумя целями.|
 
 
 

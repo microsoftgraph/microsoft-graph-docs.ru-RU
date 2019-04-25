@@ -3,11 +3,11 @@ title: Получение фотографии
 description: Получение свойств и связей объекта фотографии.
 localization_priority: Normal
 ms.openlocfilehash: ffe127cf7e59a4cf29275a7673cb95e1ce7e4581
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538954"
 ---
 # <a name="get-photo"></a>Получение фотографии
 
@@ -39,9 +39,9 @@ GET /drive/root/createdByUser/photo
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и объект [photo](../resources/photo.md) в тексте отклика.
 ## <a name="examples"></a>Примеры
@@ -82,7 +82,7 @@ Content-length: 53
 GET https://graph.microsoft.com/beta/users/{id|userPrincipalName}/photo/$value
 ```
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- { "blockType": "ignored","@odata.type": "stream" } -->
 

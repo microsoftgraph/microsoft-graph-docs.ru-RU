@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: bdfbec8f5373637924262388dab0e9c74c363af9
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366692"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543128"
 ---
 # <a name="taxgroups-resource-type"></a>Тип ресурса Таксграупс
 Представляет тип ресурса Таксграупс в Dynamics 365 Business Central.
@@ -27,17 +27,17 @@ ms.locfileid: "30366692"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор Таксграуп. Только для чтения.|
-|code|строка|Указывает налоговую группу.|
-|displayName|строка|Задает отображаемое имя налоговой группы.|
-|Такстипе|строка|Указывает тип налога для группы.|
+|id|Глобальный уникальный идентификатор (GUID)|Уникальный идентификатор Таксграуп. Только для чтения.|
+|code|string|Указывает налоговую группу.|
+|displayName|string|Задает отображаемое имя налоговой группы.|
+|Такстипе|string|Указывает тип налога для группы.|
 |lastModifiedDateTime|отличным|Дата и время последнего изменения налоговой группы. Только для чтения.|  
 
 
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление объекта Таксграуп в формате JSON.
 

@@ -1,38 +1,38 @@
 ---
 title: Тип ресурса educationSynchronizationError
-description: Представляет ошибку во время проверки данных профиля school и/или синхронизации. Уникальный ошибка создается для каждой записи, не удается проверить и/или синхронизация с Azure Active Directory (Azure AD).
+description: Представляет ошибку во время проверки и/или синхронизации профиля данных учебного заведения. Для каждой записи, которая не проходит проверку и/или синхронизируется с помощью Azure Active Directory (Azure AD), создается уникальная ошибка.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5c937e95441132e4633b0f5e48a75b0597b8f08d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525145"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542968"
 ---
 # <a name="educationsynchronizationerror-resource-type"></a>Тип ресурса educationSynchronizationError
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ошибку во время проверки данных профиля school и/или синхронизации. Уникальный ошибка создается для каждой записи, не удается проверить и/или синхронизация с Azure Active Directory (Azure AD).
+Представляет ошибку во время проверки и/или синхронизации профиля данных учебного заведения. Для каждой записи, которая не проходит проверку и/или синхронизируется с помощью Azure Active Directory (Azure AD), создается уникальная ошибка.
 
 ## <a name="methods"></a>Методы
 
 | Метод | Возвращаемый тип | Описание |
 |:-|:-|:-|
-| [Получение ошибки синхронизации](../api/educationsynchronizationerrors-get.md) | **educationSynchronizationError** коллекции| Возвращает список ошибок синхронизации службы, связанные с профилем. |
+| [Получение ошибок синхронизации](../api/educationsynchronizationerrors-get.md) | Коллекция **educationSynchronizationError**| Возвращает список ошибок синхронизации, связанных с профилем. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **entryType** | string |  Представляет сущности синхронизации (школа, раздел, учебы, преподаватель).       |
-| errorCode | string |  Представляет код ошибки для этой ошибки.         |
-| **ErrorMessage** | string |  Содержит описание ошибки.        |
-| **joiningValue** | string |  Уникальный идентификатор для записи.         |
-| recordedDateTime | DateTimeOffset | Время возникновения этой ошибки.         |
-| **reportableIdentifier** | string | Идентификатор элемента в этой записи об ошибках.       |
+| **Ентритипе** | string |  Представляет объект синхронизации (School, section, Student, преподаватель).       |
+| **Коде** | string |  Представляет код ошибки для этой ошибки.         |
+| **Ошибк** | string |  Содержит описание ошибки.        |
+| **Жоинингвалуе** | string |  Уникальный идентификатор для записи.         |
+| **recordedDateTime** | DateTimeOffset | Время возникновения ошибки.         |
+| **Репортаблеидентифиер** | string | Идентификатор этой записи об ошибке.       |
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

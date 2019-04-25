@@ -5,11 +5,11 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: dac616314626f3acd5a88e6bc88755a3051f43fe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524851"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539024"
 ---
 # <a name="update-plannerassignedtotaskboardtaskformat"></a>Обновление объекта plannerAssignedToTaskBoardTaskFormat
 
@@ -41,8 +41,8 @@ PATCH /planner/tasks/<id>/assignedToTaskBoardFormat
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказки используется для задачи заказа на просмотр AssignedTo панели задач. Ключ каждой записи — один пользователей, которым назначена эта задача, а значение — подсказка order. Формат каждое значение определяется в [с помощью подсказки порядке в планировщике (.. / resources/planner_order_hint_format.md).|
-|unassignedOrderHint|String|Присваивается значение подсказку для упорядочивания задачи в представлении AssignedTo Доска задач при всем пользователям, не назначена задача или orderHintsByAssignee словаря не предоставляет подсказку порядке для пользователя задачи. Формат определяется в [с помощью подсказки порядке в планировщике](../resources/planner-order-hint-format.md).|
+|orderHintsByAssignee|[plannerOrderHintsByAssignee](../resources/plannerorderhintsbyassignee.md)|Словарь подсказок, используемых для упорядочивания задач в представлении AssignedTo доски задач. Ключом каждой записи является один из пользователей, которому назначена задача, а значением является подсказка порядка. Формат каждого значения определяется в разделе [использование подсказок порядка в планировщике (.. /ресаурцес/планнер_ордер_хинт_формат.МД).|
+|unassignedOrderHint|Строка|Значение подсказки используется для упорядочивания задачи в представлении AssignedTo доски задач, когда задача не назначена никому, или если словарь Ордерхинтсбяссигни не предоставляет подсказку порядка для пользователя, которому назначена задача. Формат определяется в разделе [Использование подсказок порядка в планировщике](../resources/planner-order-hint-format.md).|
 
 ## <a name="response"></a>Отклик
 
@@ -69,9 +69,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   }
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

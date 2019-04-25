@@ -1,25 +1,25 @@
 ---
-title: Список programControls программы
-description: В Azure AD access дается обзор компонента, список всех programControl объектов, связанные с определенной программе.
+title: Список Програмконтролс программы
+description: В функции проверки доступа Azure AD перечислите все объекты Програмконтрол, связанные с определенной программой.
 localization_priority: Normal
 ms.openlocfilehash: 9134e9aa322446553da2e0c644a6fc8b43b0b54d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508267"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546446"
 ---
-# <a name="list-programcontrols-of-a-program"></a>Список programControls программы
+# <a name="list-programcontrols-of-a-program"></a>Список Програмконтролс программы
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В компоненте [дается обзор доступа](../resources/accessreviews-root.md) Azure AD перечислены все [programControl](../resources/programcontrol.md) объекты, связанные с определенной программе.
+В функции проверки [доступа](../resources/accessreviews-root.md) Azure AD перечислите все объекты [програмконтрол](../resources/programcontrol.md) , связанные с определенной программой.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Также должен быть выполнен вход пользователя в роль каталог, который позволяет им читать программы. |
+|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -31,13 +31,13 @@ GET /programs('{programId}')/controls
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Маркер носителя Обязательный. |
+| Authorization | string | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Нет текста запроса должен задаваться.
+Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200, OK` код ответа и массив объектов [programControl](../resources/programcontrol.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [програмконтрол](../resources/programcontrol.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

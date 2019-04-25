@@ -1,15 +1,15 @@
 ---
 title: 'RangeSort: apply'
-description: Выполняет сортировку.
+description: Выполнение операции сортировки.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7979033ce520f0d29172a910f4935c428bee383f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523584"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538268"
 ---
 # <a name="rangesort-apply"></a>RangeSort: apply
 
@@ -45,7 +45,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/sort/apply
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |fields|SortField|Список условий для сортировки.|
-|matchCase|boolean|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
+|matchCase|логический|Необязательный. Указывает, необходимо ли учитывать регистр при сортировке строк.|
 |hasHeaders|boolean|Необязательный параметр. Указывает, есть ли у диапазона заголовок.|
 |orientation|string|Необязательный параметр. Указывает направление сортировки: по строкам или по столбцам.  Возможные значения: `Rows`, `Columns`.|
 |метод|string|Необязательный параметр. Метод сортировки, используемый для китайских символов.  Возможные значения: `PinYin`, `StrokeCount`.|
@@ -88,7 +88,7 @@ Content-length: 358
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

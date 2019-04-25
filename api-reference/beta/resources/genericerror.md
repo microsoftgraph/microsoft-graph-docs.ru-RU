@@ -1,19 +1,19 @@
 ---
-title: Тип ресурса Общая ошибка
-description: Это ошибка.
+title: Тип ресурса Женерицеррор
+description: Общая ошибка общего назначения.
 localization_priority: Normal
 ms.openlocfilehash: d3c7e9cd7ff7be635adfbf329170068cd944f0b2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524130"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547502"
 ---
-# <a name="genericerror-resource-type"></a>Тип ресурса Общая ошибка
+# <a name="genericerror-resource-type"></a>Тип ресурса Женерицеррор
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Это ошибка.
+Общая ошибка общего назначения.
 
 ## <a name="properties"></a>Свойства
 
@@ -22,7 +22,7 @@ ms.locfileid: "29524130"
 | message | String | Сообщение об ошибке. |
 | code | String | Код ошибки. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

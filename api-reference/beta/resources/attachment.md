@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса attachment
-description: Связанное содержимое можно добавить на событие
+description: Вы можете добавить связанное содержимое в событие,
 localization_priority: Normal
 ms.openlocfilehash: 59e1074cea9508af45cef0b6e61ea223a3ca851e
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535599"
 ---
 # <a name="attachment-resource-type"></a>Тип ресурса attachment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Связанное содержимое можно добавить для [события](../resources/event.md), [сообщения](../resources/message.md), [задачи Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md) в виде вложения.
+Вы можете добавить связанное содержимое к [](../resources/event.md)событию [](../resources/message.md), сообщению, [задаче Outlook](../resources/outlooktask.md)или [публикации](../resources/post.md) в виде вложения.
 
 **attachment** — базовый ресурс для следующих производных типов вложений:
 
@@ -27,16 +27,16 @@ ms.locfileid: "29643152"
 
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Чтение свойства и связи вложения, подключенного к события, сообщения, задачи Outlook или post.|
+|[Получение вложения](../api/attachment-get.md) | [attachment](attachment.md) |Считывание свойств и связей вложений, вложенных в событие, сообщение, задачу Outlook или POST.|
 |[Добавление вложения к данным о событии](../api/event-post-attachments.md) | [attachment](attachment.md) |Добавление для события файла, элемента или ссылки в качестве вложения.|
 |[Добавление вложения в сообщение](../api/message-post-attachments.md) | [attachment](attachment.md) |Добавление в сообщение файла, элемента или ссылки в качестве вложения.|
-|[Добавление вложения в задачи Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или вложения ссылки на задачи Outlook.|
+|[Добавление вложения к задаче Outlook](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Добавление файла, элемента или ссылки на вложение к задаче Outlook.|
 |[Добавление вложения в запись](../api/post-post-attachments.md) | [attachment](attachment.md) |Добавление в запись файла, элемента или ссылки в качестве вложения.|
 |[Список вложений для события](../api/event-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для события. |
 |[Список вложений для сообщения](../api/message-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для сообщения. |
-|[Вложения списка задачи Outlook](../api/outlooktask-list-attachments.md) | Коллекция [attachment](attachment.md) | Получение списка вложений для задачи Outlook. |
-|[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для записи. |
-|[Удаление](../api/attachment-delete.md) | Нет |Удаление вложения на события, сообщения, задачи Outlook или post. |
+|[Список вложений задачи Outlook](../api/outlooktask-list-attachments.md) | Коллекция [attachment](attachment.md)  | Получение списка вложений для задачи Outlook. |
+|[Список вложений для записи](../api/post-list-attachments.md) | Коллекция [attachment](attachment.md) | Получение списка вложений для записи. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление вложения для события, сообщения, задачи Outlook или POST. |
 
 ## <a name="properties"></a>Свойства
 
@@ -48,7 +48,7 @@ ms.locfileid: "29643152"
 |id|String| Только для чтения.|
 |isInline|Boolean|Значение `true`, если вложение является встроенным. В противном случае — значение `false`.|
 |lastModifiedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|имя|String|Отображаемое имя вложения. Она не обязательно должна находиться фактическое имя файла.|
+|name|String|Отображаемое имя вложения. Он может не быть фактическим именем файла.|
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Отношения

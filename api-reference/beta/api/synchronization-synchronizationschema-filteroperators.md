@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationSchema: filterOperators'
-description: Список всех операторы, поддерживаемые в области видимости фильтров.
+title: 'Синчронизатионсчема: Филтероператорс'
+description: ПереЧисление всех операторов, поддерживаемых в фильтрах областей видимости.
 localization_priority: Normal
 ms.openlocfilehash: 68e0c9f583e92989213d1442aee1610b1495bae0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641710"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537145"
 ---
-# <a name="synchronizationschema-filteroperators"></a>synchronizationSchema: filterOperators
+# <a name="synchronizationschema-filteroperators"></a>Синчронизатионсчема: Филтероператорс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список всех операторы, поддерживаемые в [области видимости фильтров](../resources/synchronization-filter.md).
+ПереЧисление всех операторов, поддерживаемых в [фильтрах областей видимости](../resources/synchronization-filter.md).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,15 +36,15 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema/filterOpera
 
 | Имя           | Тип    | Описание|
 |:---------------|:--------|:-----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200, OK` код ответа и объект коллекции [filterOperatorSchema](../resources/synchronization-filteroperatorschema.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200, OK` код отклика и объект коллекции [филтероператорсчема](../resources/synchronization-filteroperatorschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -59,9 +59,9 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Будут возвращены все свойства в фактический вызов.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

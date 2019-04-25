@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса audioSourceLevel
-description: Конфигурации уровня для других источников.
+title: Тип ресурса Аудиосаурцелевел
+description: Настройка уровня для других источников.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: c91a4c57b283f7669b2be22bba5de5d958b437ad
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528377"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535597"
 ---
-# <a name="audiosourcelevel-resource-type"></a>Тип ресурса audioSourceLevel
+# <a name="audiosourcelevel-resource-type"></a>Тип ресурса Аудиосаурцелевел
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Конфигурации уровня для других источников.
+Настройка уровня для других источников.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство               | Тип    | Описание                                                                                         |
 | :--------------------- | :------ | :---------------------------------------------------------------------------------------------------|
-| duckOthers             | Логическое | Включение этого источника для duck другие источники при активный. Если значение равно true, Уклонение от уровня должно быть задано.|
-| level                  | Int64   | Уклонение от уровня источника, если `duckOthers` задано значение `true`.                                     |
-| Участник            | String  | Источник участников аудиопотока.                                                                |
+| Дуккосерс             | Логический | Позволяет этому источнику дукк другие источники в активном состоянии. Если задано значение true, необходимо задать уровень дуккинг.|
+| level                  | Int64   | Дуккинг уровень источника, если `duckOthers` задано значение. `true`                                     |
+| абонент            | String  | Поток звука участника источника.                                                                |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

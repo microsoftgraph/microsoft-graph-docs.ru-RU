@@ -1,31 +1,31 @@
 ---
-title: Перечисление сайтов
-description: Список [] доступных [сайтов] в организации, соответствующих указанным критериям фильтра и запроса.
+title: ПереЧисление сайтов
+description: ПереЧислите доступные [сайты] [] в Организации, которые совпадают с предоставленными критериями фильтра и параметрами запроса.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f225d9990637f8251ae40e3f66b0f993bbf74f32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520342"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545207"
 ---
-# <a name="enumerate-sites"></a>Перечисление сайтов
+# <a name="enumerate-sites"></a>ПереЧисление сайтов
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список доступных [сайтов][] в организации, которая соответствуют указанным отбора и запроса.
+Список доступных [сайтов][] в Организации, которые отвечают предоставленным условиям фильтра и параметрам запроса.
 
-В настоящее время поддерживаются только следующие параметры запроса:
+В настоящее время поддерживаются только следующие параметры запросов:
 
-| Оператор фильтра             | Оператор SELECT        | Описание
+| Оператор Filter             | Оператор SELECT        | Описание
 |:-----------------------------|:------------------------|:--------------------
-|`siteCollection/root ne null` | `siteCollection,webUrl` | Список всех семейств сайтов корневого уровня в организации. Полезные при обнаружении главного сайта для каждого География.
+|`siteCollection/root ne null` | `siteCollection,webUrl` | ПереЧисление всех семейств сайтов корневого уровня в Организации. Полезен для обнаружения домашнего сайта для каждого из географических регионов.
 
-Кроме того могут используйте запрос **[поиска][]** семейства сайтов «/ sites» для поиска сайты, соответствующие заданным ключевые слова.
+Кроме того, вы можете использовать **[поисковый][]** запрос в семействе "" "" "" "" "" "" "" "" "" "" "
 
-[Search]: site-search.md
-[sites]: ../resources/site.md
+[выполнять]: site-search.md
+[сайтов]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 
@@ -55,7 +55,7 @@ GET https://graph.microsoft.com/beta/sites?filter=siteCollection/root ne null
 GET https://graph.microsoft.com/beta/sites?select=siteCollection,webUrl&filter=siteCollection/root%20ne%20null
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 

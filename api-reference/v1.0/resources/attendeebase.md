@@ -3,11 +3,11 @@ title: Тип ресурсов attendeeBase
 description: Тип участника.
 localization_priority: Normal
 ms.openlocfilehash: d009ef6a58c63017addf8b8a1bdecc1974abbff3
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27878675"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569356"
 ---
 # <a name="attendeebase-resource-type"></a>Тип ресурсов attendeeBase
 
@@ -15,7 +15,7 @@ ms.locfileid: "27878675"
 
 Тип, производный от [recipient](recipient.md).
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -38,7 +38,7 @@ ms.locfileid: "27878675"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|type|attendeeType| Тип участника. Возможные значения: `required`, `optional`, `resource`. В настоящее время Если участник — это пользователь, [findMeetingTimes](../api/user-findmeetingtimes.md) всегда считает пользователя принадлежит `Required` типа.|
+|type|attendeeType| Тип участника. Допустимые значения: `required`, `optional`, `resource`. Если участник является пользователем, то [findMeetingTimes](../api/user-findmeetingtimes.md) всегда определяет тип этого пользователя как `Required`.|
 |emailAddress|[emailAddress](emailaddress.md)|Включает имя и SMTP-адрес участника.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

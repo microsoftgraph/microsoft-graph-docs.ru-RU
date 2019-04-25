@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 93b6ae9184ce094051eef4a9aefb696c0d1cefa9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801080"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571165"
 ---
 # <a name="ioscertificateprofile-resource-type"></a>Тип ресурса iosCertificateProfile
 
@@ -25,8 +25,8 @@ ms.locfileid: "31801080"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов iosCertificateProfile](../api/intune-deviceconfig-ioscertificateprofile-list.md)|Коллекция [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|Список свойств и связей объектов [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md).|
-|[Get iosCertificateProfile](../api/intune-deviceconfig-ioscertificateprofile-get.md)|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|Чтение свойств и связей объекта [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md).|
+|[Список объектов iosCertificateProfile](../api/intune-deviceconfig-ioscertificateprofile-list.md)|Коллекция [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|Список свойств и связей объектов [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md).|
+|[Получение объекта iosCertificateProfile](../api/intune-deviceconfig-ioscertificateprofile-get.md)|[iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md)|Чтение свойств и связей объекта [iosCertificateProfile](../resources/intune-deviceconfig-ioscertificateprofile.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

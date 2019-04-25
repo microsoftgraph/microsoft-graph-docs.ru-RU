@@ -1,23 +1,23 @@
 ---
 title: Список trendingAround
-description: Вычисляемые представление, которое возвращает список элементов, прибора вокруг пользователя.
+description: Вычисляемое представление, возвращающее список элементов, которые обходить пользователь.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 625ae9d66ce1b891ebdba3209d92bd0e88b06a94
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507630"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544206"
 ---
 # <a name="list-trendingaround"></a>Список trendingAround
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемые представление, которое возвращает список элементов, прибора вокруг пользователя.
+Вычисляемое представление, возвращающее список элементов, которые обходить пользователь.
 
-**Примечание:** Этот интерфейс API будет устаревшим и вместо нее [Прибора API](../resources/insights-trending.md).
+**Примечание:** Этот API будет устаревшим и заменен [API](../resources/insights-trending.md)-интерфейсом тенденций.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -45,20 +45,19 @@ GET /drive/root/lastModifiedByUser/trendingAround
 | Content-Type   | application/json           |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Если успешно завершена, этот метод возвращает 200 OK ответа код и коллекцию объектов [driveItem](../resources/driveitem.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код ответа 200 ОК и коллекцию объектов [driveItem](../resources/driveitem.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 ```http
 GET https://graph.microsoft.com/beta/me/trendingAround
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

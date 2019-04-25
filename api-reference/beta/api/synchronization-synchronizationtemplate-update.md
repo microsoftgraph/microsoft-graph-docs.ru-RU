@@ -1,19 +1,19 @@
 ---
-title: Обновление synchronizationTemplate
-description: Обновление (переопределение) шаблон синхронизации, связанный с заданным приложением.
+title: Обновление Синчронизатионтемплате
+description: Update (переопределить) шаблон синхронизации, связанный с заданным приложением.
 localization_priority: Normal
 ms.openlocfilehash: 152186afd9f7b7cce2a04170de7148d454525d80
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517465"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536897"
 ---
-# <a name="update-synchronizationtemplate"></a>Обновление synchronizationTemplate
+# <a name="update-synchronizationtemplate"></a>Обновление Синчронизатионтемплате
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление (переопределение) шаблон синхронизации, связанный с заданным приложением.
+Update (переопределить) шаблон синхронизации, связанный с заданным приложением.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса предоставить к объекту [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) , чтобы заменить существующий шаблон. Убедитесь, что все свойства. Отсутствующие свойства будут удалены.
+В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) для замены существующего шаблона. Убедитесь, что все свойства предоставлены. Отсутствующие свойства будут удалены.
 
 ### <a name="response"></a>Отклик
 
@@ -49,7 +49,7 @@ PUT application/{id}/synchronization/templates/{templateId}
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса. 
 
->**Примечание:** Объект запроса, показанный сокращение для удобства чтения. Включите все свойства в фактический вызов.
+>**Примечание:** Объект Request, показанный здесь, сокращается для удобочитаемости. Включает все свойства в фактическом вызове.
 <!-- {
   "blockType": "request",
   "name": "update_synchronizationtemplate"
@@ -66,8 +66,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

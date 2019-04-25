@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 25a5daf571f7533bd1682974adecad1cfd984894
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644086"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535447"
 ---
 # <a name="chartaxistitle-resource-type"></a>Тип ресурса ChartAxisTitle
 
@@ -23,20 +23,20 @@ ms.locfileid: "29644086"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartAxisTitle](../api/chartaxistitle-get.md) | [ChartAxisTitle](chartaxistitle.md) |Чтение свойств и связей объекта chartAxisTitle.|
-|[обновление](../api/chartaxistitle-update.md). | [ChartAxisTitle](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
+|[Обновление](../api/chartaxistitle-update.md) | [ChartAxisTitle](chartaxistitle.md)    |Обновление объекта ChartAxisTitle. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|text|строка|Обозначает название оси.|
+|text|string|Обозначает название оси.|
 |visible|boolean|Логическое значение, которое определяет видимость названия оси.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartAxisTitleFormat](chartaxistitleformat.md)|Представляет форматирование для названия оси диаграммы. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

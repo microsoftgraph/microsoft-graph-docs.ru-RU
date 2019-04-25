@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b51768aea1338486431ceffadd95f8760a7216ab
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260216"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542034"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -21,15 +21,15 @@ ms.locfileid: "30260216"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |lastCollectedDateTime|DateTimeOffset|Время записи расположения относительно времени UTC|
-|longitude|Double|Долгота расположения устройства|
-|latitude|Double|Широта расположения устройства|
-|altitude|Double|Высота (метров над уровнем моря)|
-|horizontalAccuracy|Double|Точность долготы и широты (м)|
-|verticalAccuracy|Double|Точность высоты (м)|
-|heading|Double|Направление от географического севера (градусов)|
+|longitude|Двойное|Долгота расположения устройства|
+|latitude|Двойное|Широта расположения устройства|
+|altitude|Двойное|Высота (метров над уровнем моря)|
+|horizontalAccuracy|Двойное|Точность долготы и широты (м)|
+|verticalAccuracy|Двойное|Точность высоты (м)|
+|heading|Двойное|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

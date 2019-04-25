@@ -1,22 +1,22 @@
 ---
 title: Создание пользователя
-description: Используйте этот интерфейс API для создания нового пользователя.
+description: Используйте этот API, чтобы создать нового пользователя.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9d1e98ffa4be67141d1e5ae679f9f51a71ef92fd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.openlocfilehash: fe7fddb437684bbf038de39198b74be4fc5e1824
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642529"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536581"
 ---
 # <a name="create-user"></a>Создание пользователя
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для создания нового пользователя.
-Текст запроса содержит пользователю создать. Как минимум необходимо указать необходимые свойства для пользователя. При необходимости можно указать любые другие свойства для записи.
+Используйте этот API, чтобы создать нового пользователя.
+В теле запроса указан пользователь, которого нужно создать. Вам нужно указать как минимум обязательные свойства для пользователя. При необходимости вы можете указать другие записываемые свойства.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,7 +37,7 @@ POST /users
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса предоставьте описание объекта [user](../resources/user.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при создании пользователя.
@@ -45,13 +45,13 @@ POST /users
 | Параметр | Тип | Описание|
 |:---------------|:--------|:----------|
 |accountEnabled |boolean |Если учетная запись обеспечена — true, в противном случае — false.|
-|displayName |строка |Имя, которое следует отобразить в адресной книге для пользователя.|
-|onPremisesImmutableId |строка |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
+|displayName |string |Имя, которое следует отобразить в адресной книге для пользователя.|
+|onPremisesImmutableId |string |Необходимо указывать только при создании учетной записи пользователя, если вы используете федеративный домен для свойства userPrincipalName (UPN) этого пользователя.|
 |mailNickname |string |Почтовый псевдоним для пользователя.|
 |passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |Пароль для профиля пользователя.|
-|userPrincipalName |строка |Имя участника-пользователя (polzovatel@contoso.com).|
+|userPrincipalName |string |Имя участника-пользователя (polzovatel@contoso.com).|
 
-Поскольку **пользовательский** ресурс поддерживает [расширения](/graph/extensibility-overview), можно использовать `POST` операции и Добавление настраиваемых свойств с собственными данными в экземпляр пользовательского при его создании.
+Так как **Пользовательский** ресурс поддерживает [расширения](/graph/extensibility-overview), вы можете использовать `POST` операцию и добавить настраиваемые свойства с собственными данными в экземпляр пользователя при его создании.
 
 ## <a name="response"></a>Отклик
 
@@ -89,7 +89,7 @@ Content-type: application/json
   "@odata.type": "microsoft.graph.user"
 } -->
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 
 {

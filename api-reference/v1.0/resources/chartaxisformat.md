@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 92258887c9646890ee63d14aebcd32ada7a8aaa6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27952113"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569251"
 ---
 # <a name="chartaxisformat-resource-type"></a>Тип ресурса ChartAxisFormat
 
@@ -22,10 +22,10 @@ ms.locfileid: "27952113"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|font|[WorkbookChartFont](chartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для элемента оси диаграммы. Только для чтения.|
-|line|[WorkbookChartLineFormat](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
+|font|[Воркбукчартфонт](chartfont.md)|Представляет атрибуты шрифта (имя, размер, цвет и т. д.) для элемента оси диаграммы. Только для чтения.|
+|line|[Воркбукчартлинеформат](chartlineformat.md)|Представляет форматирование линий диаграммы. Только для чтения.|
 
 
 ## <a name="json-representation"></a>Представление JSON

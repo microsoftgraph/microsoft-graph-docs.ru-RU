@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: a1a45f5ac6d26b58f1179616d3a6b9b76c6c1618
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27912318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549890"
 ---
 # <a name="conversationthread-resource-type"></a>Тип ресурса conversationThread
 conversationThread — это коллекция экземпляров [post](post.md).
@@ -36,13 +36,13 @@ conversationThread — это коллекция экземпляров [post](p
 |ccRecipients|Коллекция [recipient](recipient.md)|Получатели в поле "Копия" для цепочки.|
 |topic|String|Тема беседы. Это свойство можно задать при создании беседы, но его невозможно обновить.||
 |hasAttachments|Boolean|Указывает, содержит ли какая-либо запись в этой цепочке хотя бы одно вложение.|
-|lastDeliveredDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|uniqueSenders|Коллекция String|Все пользователи, которые отправили сообщение в эту цепочку.|
+|Ластделивереддатетиме|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Уникуесендерс|Коллекция String|Все пользователи, которые отправили сообщение в эту цепочку.|
 |preview|String|Краткая сводка из текста последней записи в этой беседе.|
 |isLocked|Boolean|Указывает, заблокирована ли цепочка.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |posts|Коллекция [post](post.md)| Только для чтения. Допускается значение null.|
 

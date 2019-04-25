@@ -2,31 +2,31 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 05/07/2018
-title: Удаление страницы на сайте SharePoint
+title: Удаление страницы с сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: f855942288556fdf07e2b3af78408976c34eb052
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513027"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537135"
 ---
-# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Удалить страницу в списке страниц сайта узла
+# <a name="delete-page-from-the-site-pages-list-of-a-site"></a>Удаление страницы из списка страниц сайта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удаляет [sitePage][] страниц сайта [списка][] на [сайте][].
+Удаляет объект [ситепаже][] из [списка][] страниц сайта на [сайте][].
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[сайта]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
->**Примечание:** Для удаления элемента, пользователю должно быть предоставлено доступ на запись приложения для удаляемого элемента.
+>**Примечание:** Чтобы удалить элемент, пользователь должен получить доступ к приложению на запись для элемента, который требуется удалить.
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -55,7 +55,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот вызов возвращает `204 No Content` уведомление о том, что ресурс был удален и возникла ничего не возвращает.
+В случае успешного выполнения этот вызов возвращает `204 No Content` ответ, указывающий на то, что ресурс был удален и что не было возвращено.
 
 ## <a name="example"></a>Пример
 
@@ -66,7 +66,7 @@ DELETE /sites/{site-id}/pages/{page-id}
 ```http
 DELETE /sites/{site-id}/pages/{page-id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response" } -->
 

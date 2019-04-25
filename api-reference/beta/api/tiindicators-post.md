@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 440515a45b4c530f32dd20fe29497e338b54a6bf
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481442"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537025"
 ---
 # <a name="create-threat-intelligence-indicator"></a>Создание индикатора для логики операций с угрозами
 
@@ -39,7 +39,7 @@ POST /security/tiIndicators
 
 | Имя          | Описание   |
 |:--------------|:--------------|
-| Authorization | Bearer {code} |
+| Авторизация | Bearer {code} |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -82,7 +82,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

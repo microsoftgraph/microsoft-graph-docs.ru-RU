@@ -1,21 +1,21 @@
 ---
-title: 'orgContact: член списка'
-description: Получить список групп и администрирования единицы которой контакт.
+title: 'orgContact: List memberOf'
+description: Получение списка групп и единиц админстративе, участником которых является контакт.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: c215b13cbce03ef7d12929aeee0af4f2d60403ec
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525054"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539772"
 ---
-# <a name="orgcontact-list-memberof"></a>orgContact: член списка
+# <a name="orgcontact-list-memberof"></a>orgContact: List memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получить список групп и администрирования единицы которой контакт.
+Получение списка групп и единиц админстративе, участником которых является контакт.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,7 +40,7 @@ GET /contacts/{id}/memberOf
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -55,9 +55,8 @@ GET /contacts/{id}/memberOf
 ```http
 GET https://graph.microsoft.com/beta/contacts/{id}/memberOf
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

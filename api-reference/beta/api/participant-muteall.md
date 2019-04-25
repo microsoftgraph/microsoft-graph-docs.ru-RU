@@ -1,21 +1,21 @@
 ---
-title: 'Участник: muteAll'
-description: Отключение всех участников в вызове.
+title: 'участник: Мутеалл'
+description: Отключение звука всех участников звонка.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2a74a224141b77f0a09718bbafee3cf1dab0e8e9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539374"
 ---
-# <a name="participant-muteall"></a>Участник: muteAll
+# <a name="participant-muteall"></a>участник: Мутеалл
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Отключение всех участников в вызове.
+Отключение звука всех участников звонка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/muteAll
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|Коллекция String|Участники, выключен.|
-|ClientContext|String|Контекст клиента.|
+|participants|Коллекция строк|Участники, которые должны быть отключены.|
+|Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` объект [commsOperation](../resources/commsoperation.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [коммсоператион](../resources/commsoperation.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -71,7 +71,7 @@ Content-Length: 81
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

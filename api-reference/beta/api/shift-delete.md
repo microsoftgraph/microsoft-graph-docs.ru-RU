@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8bf6483663607767550a48fa801619b8d2842c63
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657772"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537505"
 ---
 # <a name="delete-shift"></a>Удаление смены
 
@@ -64,7 +64,7 @@ DELETE /teams/{teamId}/schedule/shifts/{shiftId}
 DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/shifts/{shiftId}
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

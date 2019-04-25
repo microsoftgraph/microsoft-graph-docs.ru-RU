@@ -3,11 +3,11 @@ title: Тип ресурса dateTimeTimeZone
 description: Описывает дату, время и часовой пояс для определенного момента.
 localization_priority: Normal
 ms.openlocfilehash: ee5359c0ababad2a4f785d17a02ac5bb618d2681
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30057045"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535280"
 ---
 # <a name="datetimetimezone-resource-type"></a>Тип ресурса dateTimeTimeZone
 
@@ -221,9 +221,9 @@ Pacific/Apia
 
 Pacific/Kiritimati
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление JSON ресурса.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

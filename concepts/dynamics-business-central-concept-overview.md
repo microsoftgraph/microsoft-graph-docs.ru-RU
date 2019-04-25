@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 0602b02592bec5210f243f77654a52ba96e6746a
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366804"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526155"
 ---
 # <a name="dynamics-365-business-central-api-overview-preview"></a>Общие сведения о корпоративном центральном API Dynamics 365 (Предварительная версия)
 Dynamics 365 Business Central — это решение по управлению предприятием, которое легко использовать и адаптируется, помогая подключаться к Организации и принимать разумные решения. Он обеспечивает комплексное представление вашего бизнеса, позволяя вам управлять финансами, автоматизировать и защитить цепочку поставок, продавать интеллектуальные и повышать эффективность обслуживания клиентов, поддерживать проекты в течение времени и в соответствии с бюджетом и оптимизировать операции.

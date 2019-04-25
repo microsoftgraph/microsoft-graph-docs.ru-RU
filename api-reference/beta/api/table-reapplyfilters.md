@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b687d3cbf89d68f89d7e854bb3d7171427d8e466
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522891"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536890"
 ---
 # <a name="table-reapplyfilters"></a>Table: reapplyFilters
 
@@ -56,7 +56,7 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

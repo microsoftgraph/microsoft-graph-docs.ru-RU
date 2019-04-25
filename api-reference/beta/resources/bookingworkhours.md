@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса bookingWorkHours
+title: Тип ресурса Букингворкхаурс
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 9a51fb9d4f97dde2e3b50d9a19481eeab31483d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527537"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535493"
 ---
-# <a name="bookingworkhours-resource-type"></a>Тип ресурса bookingWorkHours
+# <a name="bookingworkhours-resource-type"></a>Тип ресурса Букингворкхаурс
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет набор рабочих часов в один день недели для [bookingBusiness](bookingbusiness.md) или [bookingStaffMember](bookingstaffmember.md).
+Представляет набор рабочих часов в один день недели для [букингбусинесс](bookingbusiness.md) или [букингстаффмембер](bookingstaffmember.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|Day|String| День недели, представленный в этом экземпляре. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
-|timeslots|[bookingWorkTimeSlot](bookingworktimeslot.md) коллекции|Список времени начала и окончания во время дня.|
+|открыт|String| День недели, представленный этим экземпляром. Возможные значения: `sunday`, `monday`, `tuesday`, `wednesday`, `thursday`, `friday`, `saturday`.|
+|Тимеслотс|Коллекция [букингворктимеслот](bookingworktimeslot.md)|Список начальных и конечных моментов в течение дня.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

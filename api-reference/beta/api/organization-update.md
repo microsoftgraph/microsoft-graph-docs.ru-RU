@@ -5,17 +5,17 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 090be61f98ecd8f55a5e1a9edfe45bf7b39f23de
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526846"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539774"
 ---
 # <a name="update-organization"></a>Обновление организации
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта organization, для которого выполнена проверка подлинности. В этом случае `organization` представляет собой коллекцию только одну запись, поэтому его **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** организации.
+Обновление свойств объекта organization, для которого выполнена проверка подлинности. В этом случае `organization` определяется как коллекция только одной записи, поэтому ее **идентификатор** должен быть указан в запросе.  **Идентификатор** также называется **tenantId** Организации.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,13 +47,13 @@ PATCH /organization/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|marketingNotificationEmails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
+|marketingNotificationEmails|Коллекция строк|                                        **Примечание.** Значение NULL не допускается.            |
 |privacyProfile|[privacyProfile](../resources/privacyprofile.md)|Профиль конфиденциальности организации (заданные свойства statementUrl и contactEmail).            |
 |securityComplianceNotificationMails|Коллекция String||
 |securityComplianceNotificationPhones|Коллекция String||
 |technicalNotificationMails|Коллекция String|                                        **Примечание.** Значение NULL не допускается.            |
 
-Поскольку ресурсов **организации** поддерживает [расширения](/graph/extensibility-overview), можно использовать `PATCH` операции для добавления, обновления или удаления данных конкретного приложения в настраиваемых свойств расширения в существующий экземпляр **организации** .
+Так как ресурс **Организации** поддерживает [расширения](/graph/extensibility-overview), с помощью `PATCH` операции можно добавлять, обновлять или удалять собственные данные, зависящие от приложения, в пользовательских свойствах расширения в существующем экземпляре **Организации** .
 
 ## <a name="response"></a>Отклик
 
@@ -85,7 +85,7 @@ Content-length: 411
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 <!-- {

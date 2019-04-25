@@ -1,19 +1,17 @@
 ---
 title: Создание приглашения
-description: Используйте этот API для создания приглашения. Приглашение позволяет добавить внешнего пользователя в организацию.
-localization_priority: Normal
+description: Используйте этот API для создания нового приглашения. Приглашение добавляет внешнего пользователя в организацию.
+localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 92bf3929fa4f736be3c6956f20aff6965291a876
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528860"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541327"
 ---
 # <a name="create-invitation"></a>Создание приглашения
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Используйте этот API для создания [приглашения](../resources/invitation.md). Приглашение позволяет добавить внешнего пользователя в организацию.
 
@@ -43,7 +41,7 @@ POST /invitations
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса должно быть представление объекта [invitation](../resources/invitation.md) в формате JSON.
 
 В приведенной ниже таблице показаны свойства, которые обязательно указывать при создании приглашения.
@@ -65,7 +63,7 @@ POST /invitations
   "name": "create_user_from_users"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/invitations
+POST https://graph.microsoft.com/v1.0/invitations
 Content-type: application/json
 Content-length: 551
 
@@ -75,13 +73,12 @@ Content-length: 551
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.invitations"
+  "@odata.type": "microsoft.graph.invitation"
 } -->
 ```http
 HTTP/1.1 201 OK
@@ -108,14 +105,14 @@ Content-length: 551
   },
   "inviteRedirectUrl": "https://myapp.com/",
   "status": "Completed",
-  "invitedUser":  [ {  "id": "243b1de4-ad9f-421c-a933-d55305fb165d" } ]
+  "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
 ```
-<!--
-{
+
+<!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: /api-reference/beta/api/invitation-post.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+    "Error: create_user_from_users/invitedUser:
+      Property 'invitedUser' is of type Custom but has no custom members."
   ]
-}
--->
+}-->

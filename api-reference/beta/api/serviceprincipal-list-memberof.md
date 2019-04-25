@@ -1,19 +1,19 @@
 ---
-title: Член servicePrincipal списка
-description: Получите групп и ролей каталогов, которые эта служба участника принадлежит к прямой. Эта операция не транзитивное.
+title: Список servicePrincipal memberOf
+description: Получение групп и ролей каталогов, непосредственным участником которых является данный участник службы. Эта операция не является транзитивной.
 localization_priority: Normal
 ms.openlocfilehash: 84f82f632ef9c8f7e933d024f4d7df958415f140
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524207"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537474"
 ---
-# <a name="list-serviceprincipal-memberof"></a>Член servicePrincipal списка
+# <a name="list-serviceprincipal-memberof"></a>Список servicePrincipal memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите групп и ролей каталогов, которые эта служба участника принадлежит к прямой. Эта операция не транзитивное.
+Получение групп и ролей каталогов, непосредственным участником которых является данный участник службы. Эта операция не является транзитивной.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ GET /servicePrincipals/{id}/memberOf
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -61,10 +61,9 @@ GET /servicePrincipals/{id}/memberOf
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,11 +5,11 @@ ms.date: 09/12/2017
 title: contentTypeInfo
 localization_priority: Normal
 ms.openlocfilehash: 196a71be06b4e3c02330aba21559341650caa550
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530064"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535404"
 ---
 # <a name="contenttypeinfo-resource-type"></a>Тип ресурса contentTypeInfo
 
@@ -34,7 +34,7 @@ ms.locfileid: "29530064"
 | Имя свойства  | Тип    | Описание
 |:---------------|:--------|:--------------------------------------------------
 | **id**         | string  | Идентификатор типа контента.
-| **name**       | строка  | Имя типа контента.
+| **name**       | string  | Имя типа контента.
 
 <!--
 {

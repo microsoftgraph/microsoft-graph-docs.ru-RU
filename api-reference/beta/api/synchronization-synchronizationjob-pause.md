@@ -1,19 +1,19 @@
 ---
-title: 'synchronizationJob: Приостановка'
-description: Временно приостановить синхронизации. Сохраняются все текущие, включая состояние задания и задание продолжит работу с где остановились при вызове Пуск.
+title: 'Синчронизатионжоб: пауза'
+description: Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении начального вызова.
 localization_priority: Normal
 ms.openlocfilehash: 9f8cac05511b5efd17234ccf16b763999418bf2a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537180"
 ---
-# <a name="synchronizationjob-pause"></a>synchronizationJob: Приостановка
+# <a name="synchronizationjob-pause"></a>Синчронизатионжоб: пауза
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Временно приостановить синхронизации. Сохраняются все текущие, включая состояние задания и задание продолжит работу с где оно было прервано Если [запустить](../api/synchronization-synchronizationjob-start.md) вызов.
+Временная остановка синхронизации. Все ход выполнения, включая состояние задания, хранятся, а задание продолжится с того места, где оно было отключено при выполнении [начального](../api/synchronization-synchronizationjob-start.md) вызова.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,11 +38,11 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-В случае успеха возвращает `204 No Content` ответа. Он не возвращает все действия в теле ответа.
+В случае успеха возвращает `204 No Content` отклик. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -56,8 +56,8 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 POST https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/pause
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

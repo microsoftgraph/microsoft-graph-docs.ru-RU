@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса audioConferencing
-description: Представляет телефона данные для доступа к onlineMeeting.
+title: Тип ресурса АудиоконференЦинг
+description: Представляет сведения о доступе к телефонии для Онлинемитинг.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb822f2049d84f9a2460370f05d5dfc85c347f15
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535574"
 ---
-# <a name="audioconferencing-resource-type"></a>Тип ресурса audioConferencing
+# <a name="audioconferencing-resource-type"></a>Тип ресурса АудиоконференЦинг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет телефона данные для доступа к [onlineMeeting](onlinemeeting.md).
+Представляет сведения о доступе к телефонии для [онлинемитинг](onlinemeeting.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип    | Описание                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| dialinUrl           | String  | URL-адрес, доступном веб-страницу, которая содержит данные для подключения. |
-| leaderPasscode      | String  | Ведущий сотрудник, пароль для подключения к поставщику конференции звук.      |
-| participantPasscode | String  | Участников пароль, необходимый для подключения к поставщику конференции звук. |
-| tollFreeNumber      | String  | Бесплатный номер для подключения к поставщику конференции звук.              |
-| tollNumber          | String  | Бесплатный номер для подключения к поставщику конференции звук.                   |
+| Диалинурл           | String  | URL-адрес веб-страницы, которая содержит сведения о телефонном доступе. |
+| Леадерпасскоде      | String  | Пароль заполнения, необходимый для подключения к поставщику конференции с аудио-и видеоКонференциями.      |
+| ПартиЦипантпасскоде | String  | Пароль участника, необходимый для подключения к поставщику конференции с аудио-и видеоКонференциями. |
+| Толлфринумбер      | String  | Бесплатный номер для подключения к поставщику конференции с аудио.              |
+| Толлнумбер          | String  | Платный номер для подключения к поставщику конференции с аудио-и видеоКонференциями.                   |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -1,19 +1,19 @@
 ---
-title: 'privilegedApproval: myRequests'
-description: Получите запрашивающего запросов на утверждение.
+title: 'Привилежедаппровал: Мирекуестс'
+description: Получение запросов утверждения запрашивающей стороны.
 localization_priority: Normal
 ms.openlocfilehash: 9fcbdab424c98633a8f543875b9b7c2275894df0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512894"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546670"
 ---
-# <a name="privilegedapproval-myrequests"></a>privilegedApproval: myRequests
+# <a name="privilegedapproval-myrequests"></a>Привилежедаппровал: Мирекуестс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите запрашивающего запросов на утверждение.
+Получение запросов утверждения запрашивающей стороны.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,9 +40,9 @@ GET /privilegedApproval/myRequests
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` объект [privilegedApproval](../resources/privilegedapproval.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод `200 OK` возвращает код отклика и объект [привилежедаппровал](../resources/privilegedapproval.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -56,9 +56,8 @@ GET /privilegedApproval/myRequests
 GET https://graph.microsoft.com/beta/privilegedApproval/myRequests
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

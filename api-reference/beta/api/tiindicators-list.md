@@ -5,11 +5,11 @@ localization_priority: Normal
 author: preetikr
 ms.prod: security
 ms.openlocfilehash: 98f058d94c101a2f664f21ea05252a51476b426d
-ms.sourcegitcommit: 88ddd033de0f36eedade277d57c922ebd0db5bba
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366912"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544430"
 ---
 # <a name="list-threat-intelligence-indicators"></a>Список индикаторов логики операций с угрозами
 
@@ -23,9 +23,9 @@ ms.locfileid: "30366912"
 
 | Тип разрешения     | Разрешения (в порядке повышения привилегий) |
 |:---------------------------------------|:--------------------------------------------|
-| Делегированные (рабочая или учебная учетная запись)     | Среатиндикаторс. ReadWrite. Овнедби  |
+| Делегированные (рабочая или учебная учетная запись)     | ThreatIndicators.ReadWrite.OwnedBy  |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-| Для приложений                            | Среатиндикаторс. ReadWrite. Овнедби |
+| Для приложений                            | ThreatIndicators.ReadWrite.OwnedBy |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -67,9 +67,9 @@ GET /security/tiIndicators
 GET https://graph.microsoft.com/beta/security/tiIndicators
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 > [!NOTE]
 > Объект Response, показанный здесь, может быть укорочен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

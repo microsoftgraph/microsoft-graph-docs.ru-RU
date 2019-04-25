@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса bookingReminder
+title: Тип ресурса Букингреминдер
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 0e5188a5a440134d11404c102b4641fc98cad04f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526083"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535486"
 ---
-# <a name="bookingreminder-resource-type"></a>Тип ресурса bookingReminder
+# <a name="bookingreminder-resource-type"></a>Тип ресурса Букингреминдер
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет при и к которым следует отправить по электронной почте напоминания.
+Указывает, когда и кому отправлять напоминания по электронной почте.
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|message|String|Сообщение в напоминания.|
-|Offset|Длительность|Количество времени до начала встречи, на который будут отправляться напоминания. Отображаются в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
-|recipients|String| Лиц, которые shouold получать оповещение. Возможные значения: `allAttendees`, `staff`, `customer`.|
+|message|String|Сообщение в памятке.|
+|корреспондирующей|Duration (Длительность)|Количество времени до начала встречи, в которое будет отправлено напоминание. Он отмечен в формате [ISO 8601](https://www.iso.org/iso-8601-date-and-time-format.html) .|
+|recipients|String| Лица, шауолд получать напоминание. Возможные значения: `allAttendees`, `staff`, `customer`.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

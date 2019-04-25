@@ -1,21 +1,21 @@
 ---
-title: Обновление объекта mailfolder
-description: Обновление свойств объекта mailfolder.
+title: Обновление mailFolder
+description: Обновление свойств объекта mailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 63642678a58271bd0c0218879bf22504842c11e0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518116"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540646"
 ---
-# <a name="update-mailfolder"></a>Обновление объекта mailfolder
+# <a name="update-mailfolder"></a>Обновление mailFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойств объекта mailfolder.
+Обновление свойств объекта [mailFolder](../resources/mailfolder.md) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -44,7 +44,7 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Отображаемое имя объекта mailFolder.|
+|displayName|String|Отображаемое имя элемента mailFolder.|
 
 ## <a name="response"></a>Ответ
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [mailFolder](../resources/mailfolder.md) в тексте отклика.
@@ -66,9 +66,9 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

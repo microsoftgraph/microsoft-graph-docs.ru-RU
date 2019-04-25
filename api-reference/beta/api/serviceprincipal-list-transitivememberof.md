@@ -1,19 +1,19 @@
 ---
-title: Доверия транзитивных член servicePrincipal списка
-description: Получите групп и ролей каталогов, которые этой основной службы является членом. Эта операция доверия транзитивных и будет включать всех групп, эта служба участника, вложенных входит.
+title: ПереЧисление транзитивных servicePrincipal memberOf
+description: Получение групп и ролей каталогов, членом которых является данный участник службы. Эта операция является транзитивным и включает все группы, вложенные в состав участника службы.
 localization_priority: Normal
 ms.openlocfilehash: 4588f5ea4c6190b3743988c1d97bfd5caacbfaa4
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526230"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545151"
 ---
-# <a name="list-serviceprincipal-transitive-memberof"></a>Доверия транзитивных член servicePrincipal списка
+# <a name="list-serviceprincipal-transitive-memberof"></a>ПереЧисление транзитивных servicePrincipal memberOf
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите групп и ролей каталогов, которые этой основной службы является членом. Эта операция доверия транзитивных и будет включать всех групп, эта служба участника, вложенных входит.
+Получение групп и ролей каталогов, членом которых является данный участник службы. Эта операция является транзитивным и включает все группы, вложенные в состав участника службы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,7 +38,7 @@ GET /servicePrincipals/{id}/memberOf
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,10 +57,9 @@ GET /servicePrincipals/{id}/memberOf
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/memberOf
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

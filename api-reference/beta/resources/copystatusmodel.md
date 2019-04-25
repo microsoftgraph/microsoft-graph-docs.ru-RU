@@ -1,19 +1,19 @@
 ---
-title: Тип ресурса copyStatusModel
+title: Тип ресурса Копистатусмодел
 description: Ниже показано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: bf1a88b74f38f21f89b089b31ea5b6e7b6af9f0b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521126"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535238"
 ---
-# <a name="copystatusmodel-resource-type"></a>Тип ресурса copyStatusModel
+# <a name="copystatusmodel-resource-type"></a>Тип ресурса Копистатусмодел
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

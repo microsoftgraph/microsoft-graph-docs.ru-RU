@@ -1,26 +1,26 @@
 ---
-title: Обновление privilegedapproval
-description: Обновление свойства объекта privilegedapproval.
+title: Обновление привилежедаппровал
+description: Обновление свойств объекта привилежедаппровал.
 localization_priority: Normal
 ms.openlocfilehash: cb108ca35b07138f84a9fd969bfe7c7241e9672e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524900"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538679"
 ---
-# <a name="update-privilegedapproval"></a>Обновление privilegedapproval
+# <a name="update-privilegedapproval"></a>Обновление привилежедаппровал
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновление свойства объекта privilegedapproval.
+Обновление свойств объекта привилежедаппровал.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | Не поддерживается. |
 
@@ -39,21 +39,21 @@ PATCH /privilegedApproval/<id>
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|approvalDuration|Длительность||
-|approvalState|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
-|approvalType|String||
-|approverReason|String||
+|Аппровалдуратион|Duration (Длительность)||
+|Аппровалстате|string| Возможные значения: `pending`, `approved`, `denied`, `aborted`, `canceled`.|
+|Аппровалтипе|String||
+|Аппроверреасон|String||
 |endDateTime|DateTimeOffset||
-|requestorReason|String||
+|Рекуесторреасон|String||
 |roleId|String||
 |startDateTime|DateTimeOffset||
 |userId|String||
 
 ## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
+В случае успеха этот метод возвращает код `204 No Content` отклика
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -72,9 +72,8 @@ Content-length: 180
   "approverReason": "approverReason-value"
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

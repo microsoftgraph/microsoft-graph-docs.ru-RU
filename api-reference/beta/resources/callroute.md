@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса callRoute
-description: Тип callRoute.
+title: Тип ресурса Каллрауте
+description: Тип Каллрауте.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cfa470c4d3a03655221cab1f29baa60d00a8cf6c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512803"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543840"
 ---
-# <a name="callroute-resource-type"></a>Тип ресурса callRoute
+# <a name="callroute-resource-type"></a>Тип ресурса Каллрауте
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип callRoute.
+Тип Каллрауте.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип                          | Описание                                                  |
 | :------------------ | :---------------------------- | :----------------------------------------------------------- |
-| Final               | [identitySet](identityset.md) | Идентификатор, который был разрешен к в вызове.               |
-| Original            | [identitySet](identityset.md) | Идентификатор, который изначально использовался в вызове.           |
-| routingType         | String                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
+| Наконец               | [identitySet](identityset.md) | Идентификатор, разрешенный в вызове.               |
+| Исходный текст            | [identitySet](identityset.md) | Идентификатор, который изначально использовался при вызове.           |
+| Раутингтипе         | String                        | Возможные значения: `forwarded`, `lookup`, `selfFork`.  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

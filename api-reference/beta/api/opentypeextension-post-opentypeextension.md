@@ -1,20 +1,20 @@
 ---
 title: Создание открытого расширения
-description: Создание расширения open (объект openTypeExtension) и Добавление настраиваемых свойств
+description: Создание открытого расширения (объекта openTypeExtension) и Добавление настраиваемых свойств
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: a654d0bc48bc5f4f83be4adaf258fa3186914745
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642711"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539958"
 ---
 # <a name="create-open-extension"></a>Создание открытого расширения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте расширение open (объект[openTypeExtension](../resources/opentypeextension.md) ) и добавьте настраиваемых свойств в новый или существующий экземпляр поддерживаемые ресурсов.
+Создание открытого расширения (объекта[openTypeExtension](../resources/opentypeextension.md) ) и Добавление настраиваемых свойств в новый или существующий экземпляр поддерживаемого ресурса.
 
 > **Примечание.** Если вы создаете открытые расширения для ресурсов Outlook, см. раздел **Рекомендации, касающиеся Outlook** в статье [Тип ресурса openTypeExtension](../resources/opentypeextension.md#outlook-specific-considerations).
 
@@ -90,11 +90,11 @@ POST /users/{id|userPrincipalName}/extensions
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставьте JSON в тексте [openTypeExtension](../resources/opentypeextension.md)следующие обязательные пар имя значение и любые дополнительные пользовательские данные. JSON полезных данных может быть простых типов или массивами простых типов.
+Предоставьте основной текст JSON объекта [openTypeExtension](../resources/opentypeextension.md)со следующими обязательными парами имя — значение и любыми дополнительными пользовательскими данными. Полезные данные JSON могут относиться к простому типу или представлять собой массив элементов простого типа.
 
 | Имя       | Значение |
 |:---------------|:----------|
-| @odata.type | Microsoft.Graph.OpenTypeExtension |
+| @odata.type | Microsoft. Graph. OpenTypeExtension |
 | extensionName | %уникальная_строка% |
 
 При создании расширения в _новом_ экземпляре ресурса предоставьте не только объект **openTypeExtension**, но и представление JSON соответствующих свойств для создания этого экземпляра ресурса.
@@ -108,9 +108,9 @@ POST /users/{id|userPrincipalName}/extensions
 При создании расширения с использованием такой же операции, как для создания экземпляра ресурса, операция возвращает такой же код ответа, что и при создании экземпляра ресурса без расширения.
 Изучите соответствующие статьи о создании экземпляров, перечисленные [выше](#create-an-extension-in-a-new-resource-instance).
 
-### <a name="response-body"></a>Текст отклика
+### <a name="response-body"></a>Текст ответа
 
-| Сценарий       | Ресурс  | Текст отклика |
+| Сценарий       | Ресурс  | Текст ответа |
 |:---------------|:----------|:--------------|
 | Создание расширения с явным созданием _нового_ экземпляра ресурса | [contact](../resources/contact.md), [event](../resources/event.md), [message](../resources/message.md) | Включает новый экземпляр, дополненный объектом [openTypeExtension](../resources/opentypeextension.md). |
 | Создание расширения с неявным созданием экземпляра ресурса | [post](../resources/post.md) | Ответ содержит только код ответа без текста. |
@@ -169,7 +169,7 @@ POST https://graph.microsoft.com/beta/me/messages
 - Стандартное свойство **extensionName**, указанное в запросе.
 - Пользовательские данные из запроса, сохраненные в виде 3 настраиваемых свойств.
 
-Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

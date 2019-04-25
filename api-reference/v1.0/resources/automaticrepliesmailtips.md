@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса automaticRepliesMailTips
-description: Почтовые подсказки о автоматические ответы, которые были настроены для почтового ящика.
+title: Тип ресурса Аутоматикреплиесмаилтипс
+description: Подсказки о любых автоматических ответах, настроенных в почтовом ящике.
 localization_priority: Normal
 ms.openlocfilehash: bb477979b975996f70e4b8ac624befab7f254f46
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27816277"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569454"
 ---
-# <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса automaticRepliesMailTips
+# <a name="automaticrepliesmailtips-resource-type"></a>Тип ресурса Аутоматикреплиесмаилтипс
 
 
-[Почтовые подсказки](../resources/mailtips.md) о автоматические ответы, которые были настроены для почтового ящика.
+[Подсказки](../resources/mailtips.md) о любых автоматических ответах, настроенных в почтовом ящике.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:-----|:-----|:-----|
 | message | String | Сообщение автоматического ответа. |
-| messageLanguage | [localeInfo](../resources/localeinfo.md) | Язык, сообщение автоматического ответа. |
-| scheduledEndTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время окончания устанавливаются автоматические ответы. |
-| scheduledStartTime | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время автоматические ответы чтобы начать. |
+| Мессажелангуаже | [localeInfo](../resources/localeinfo.md) | Язык, на котором находится сообщение с автоматическим ответом. |
+| Счедуледендтиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время завершения установки автоматических ответов. |
+| Счедуледстарттиме | [dateTimeTimeZone](../resources/datetimetimezone.md) | Дата и время начала набора автоматических ответов. |
 
 ## <a name="json-representation"></a>Представление JSON
 

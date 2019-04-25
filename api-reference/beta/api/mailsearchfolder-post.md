@@ -1,21 +1,21 @@
 ---
-title: Создание mailSearchFolder
-description: Используйте этот интерфейс API для создания нового mailSearchFolder в почтовом ящике указанного пользователя.
+title: Создание Маилсеарчфолдер
+description: Используйте этот API, чтобы создать новый Маилсеарчфолдер в почтовом ящике указанного пользователя.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 7ef9992e1b0eaee83c39831424215cb9756f895d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517731"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540655"
 ---
-# <a name="create-mailsearchfolder"></a>Создание mailSearchFolder
+# <a name="create-mailsearchfolder"></a>Создание Маилсеарчфолдер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для создания нового [mailSearchFolder](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
+Используйте этот API, чтобы создать новый [маилсеарчфолдер](../resources/mailsearchfolder.md) в почтовом ящике указанного пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -36,13 +36,13 @@ POST /me/mailFolders/{id}/childFolders
 POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
-Укажите родительской папки в URL-АДРЕСЕ запроса как идентификатор папки или имя известных папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
+Укажите родительскую папку в URL-АДРЕСе запроса как идентификатор папки или известное имя папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательный параметр. |
 | Content-Type | `application/json`. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -51,15 +51,15 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 | Параметр | Тип | Описание |
 |:----------|:-----|:------------|
-| @odata.type | String | Тип создать папку. Задайте значение «microsoft.graph.mailSearchFolder». |
+| @odata.type | String | Тип создаваемой папки. Задано значение "Microsoft. Graph. Маилсеарчфолдер". |
 | displayName | String | Отображаемое имя новой папки.|
-| includeNestedFolders | Логическое | Как следует обход иерархии папок почтового ящика. `true`означает, что глубокого поиска должны быть в то время как `false` означает, что следует частичного поиска. |
-| sourceFolderIDs | Коллекция String | Папки почтовых ящиков, которые должны быть получены. |
-| filterQuery | String | Запросов OData для фильтрации сообщений. |
+| Инклуденестедфолдерс | Логический | Способ обхода иерархии папок почтовых ящиков. `true`означает, что следует выполнить глубокий поиск, а `false` это означает, что вместо этого следует выполнить неглубокий Поиск. |
+| Саурцефолдеридс | Коллекция строк | Папки почтовых ящиков, которые должны быть mined. |
+| Филтеркуери | String | Запрос OData для фильтрации сообщений. |
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [mailSearchFolder](../resources/mailsearchfolder.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [маилсеарчфолдер](../resources/mailsearchfolder.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -85,11 +85,11 @@ Content-length: 159
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
->**Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -6,21 +6,21 @@ title: Получение страницы на сайте
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 2232a72cc116965332e055178be87eb5eea0405d
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640548"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545296"
 ---
-# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получение страницы в списке страниц сайта узла
+# <a name="get-a-page-in-the-site-pages-list-of-a-site"></a>Получение страницы в списке страниц сайта
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Возвращает метаданные для [sitePage][] страниц сайта [списка][] на [сайте][].
+Возвращает метаданные для объекта [ситепаже][] в [списке][] страниц сайта на [сайте][].
 
 [sitePage]: ../resources/sitepage.md
 [list]: ../resources/list.md
-[site]: ../resources/site.md
+[сайта]: ../resources/site.md
 
 ## <a name="permissions"></a>Разрешения
 

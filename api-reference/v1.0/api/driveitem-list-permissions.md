@@ -6,11 +6,11 @@ title: Список пользователей, имеющих доступ к �
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 1157aaafbcebe784acef9c08ff3987a0921ef833
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548137"
 ---
 # <a name="list-sharing-permissions-on-a-driveitem"></a>Создание списка разрешений на общий доступ в элементе DriveItem
 

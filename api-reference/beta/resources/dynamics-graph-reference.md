@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: ee67d28a90732bdc1d804da41994de32bf0a7f4f
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30366594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543081"
 ---
 # <a name="working-with-the-dynamics-365-business-central-api-in-microsoft-graph"></a>Работа с API Dynamics 365 Business Central в Microsoft Graph
 Вы можете использовать Microsoft Graph для подключения и интеграции веб-службы или решения SaaS с Microsoft Dynamics 365 Business Central. С помощью Microsoft Graph вы можете создавать приложения, которые обеспечивают доступ к данным и тесно интегрируются с Microsoft Dynamics 365 Business Central.
@@ -23,7 +23,7 @@ ms.locfileid: "30366594"
 API Dynamics 365 Business Central позволяет считывать и изменять бизнес-данные через приложения, которые подключены и интегрируются через одну конечную точку. Используйте API, например, для получения доступа к сведениям [](../resources/dynamics-customer.md) о клиентах и [поставщиках](../resources/dynamics-vendor.md) или [просмотра просроченных платежей](../resources/dynamics-agedaccountspayable.md).
 
 ## <a name="next-steps"></a>Дальнейшие действия
-API Dynamics 365 Business Central может открыть новые способы взаимодействия с пользователями. Чтобы узнать больше, ознакомьтесь со следующими статьями:
+API Dynamics 365 Business Central может открыть новые способы взаимодействия с пользователями. Дополнительные сведения см. в следующих источниках.
 
 + [Dynamics 365 Business Central Overview](/graph/dynamics-business-central-concept-overview)
 + Попробуйте использовать [проводник Graph](https://developer.microsoft.com/graph/graph-explorer).

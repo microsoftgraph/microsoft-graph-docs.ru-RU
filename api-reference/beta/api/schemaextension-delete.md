@@ -4,11 +4,11 @@ description: Удаление определения расширения схе
 localization_priority: Normal
 author: dkershaw10
 ms.openlocfilehash: 2a9bdca6459f19c2d397914a2c4818a2331d68c9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526006"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537910"
 ---
 # <a name="delete-schemaextension"></a>Удаление schemaExtension
 
@@ -41,7 +41,7 @@ DELETE /schemaExtensions/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -57,7 +57,7 @@ DELETE /schemaExtensions/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

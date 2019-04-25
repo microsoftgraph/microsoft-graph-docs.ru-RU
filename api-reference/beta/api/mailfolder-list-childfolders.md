@@ -1,17 +1,17 @@
 ---
 title: Список childFolders
-description: 'Получите коллекцию папок в указанной папке. Можно использовать `.../me/MailFolders` ярлык для получения верхнего уровня '
+description: 'Получение коллекции папок в указанной папке. Вы можете использовать `.../me/MailFolders` ярлык для получения верхнего уровня '
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 96dec9ca1ba6dbd8e50e8eb978756a98657d2c9d
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967237"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540881"
 ---
-# <a name="list-childfolders"></a>Список childFolders
+# <a name="list-childfolders"></a>Вывод списка объектов childFolder
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -56,7 +56,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-list-mail-folders"></a>В примере 1: Список почтовых папок
+### <a name="example-1-list-mail-folders"></a>Пример 1: список почтовых папок
 
 #### <a name="request"></a>Запрос
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",
@@ -123,7 +123,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-list-mail-search-folders"></a>Пример 2: Список почтовых папок поиска
+### <a name="example-2-list-mail-search-folders"></a>Пример 2: список папок поиска почты
 
 #### <a name="request"></a>Запрос
 
@@ -142,7 +142,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 
 Ниже приведен пример отклика.
 
-> **Примечание.**  Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

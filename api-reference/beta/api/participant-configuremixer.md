@@ -1,21 +1,21 @@
 ---
-title: 'Участник: configureMixer'
-description: Настройка как смешанное аудио для различных участников в многосторонней беседе.
+title: 'участник: Конфигуремиксер'
+description: Настройка смешанного звука для разных участников многочастной беседы.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0be23ec4c9e7835c919328655e89880003546472
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29530043"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539476"
 ---
-# <a name="participant-configuremixer"></a>Участник: configureMixer
+# <a name="participant-configuremixer"></a>участник: Конфигуремиксер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Настройка как смешанное аудио для различных участников в многосторонней беседе.
+Настройка смешанного звука для разных участников многочастной беседы.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "29530043"
 | :-------------- | :------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается        |
-| Для приложений     | Calls.JoinGroupCalls.All Calls.InitiateGroupCalls.All |
+| Для приложений     | Calls. Жоинграупкаллс. ALL, Calls. Инитиатеграупкаллс. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,11 +43,11 @@ POST /applications/{id}/calls/{id}/participants/configureMixer
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participantMixerLevels|[participantMixerLevel](../resources/participantmixerlevel.md) коллекции| Конфигурация микшер уровни для заданного звука участников.|
-|ClientContext|String|Контекст клиента.|
+|ПартиЦипантмиксерлевелс|Коллекция [партиЦипантмиксерлевел](../resources/participantmixerlevel.md)| Настройка уровней микшера для данного участника аудио.|
+|Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
+Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="example"></a>Пример
 В приведенном ниже примере показано, как вызывать этот API.
@@ -88,7 +88,7 @@ Content-Length: 501
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -102,7 +102,7 @@ HTTP/1.1 202 Accepted
 Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8beae78896/operations/0fe0623f-d628-42ed-b4bd-8ac290072cc5
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомления - операция завершена
+##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
 ```http
 POST https://bot.contoso.com/api/calls

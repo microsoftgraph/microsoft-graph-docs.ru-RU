@@ -1,15 +1,15 @@
 ---
-title: 'servicePrincipal: список createdObjects'
+title: 'servicePrincipal: List createdObjects'
 description: Получение списка объектов directoryobject.
 localization_priority: Normal
 ms.openlocfilehash: 8a20a6812cc94e58471dc9b4afe754da45bf199b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524256"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537566"
 ---
-# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: список createdObjects
+# <a name="serviceprincipal-list-createdobjects"></a>servicePrincipal: List createdObjects
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -38,7 +38,7 @@ GET /servicePrincipals/{id}/createdObjects
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -53,9 +53,8 @@ GET /servicePrincipals/{id}/createdObjects
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/createdObjects
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

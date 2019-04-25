@@ -1,28 +1,28 @@
 ---
 title: Получение dataPolicyOperation
-description: Извлечение свойств объекта dataPolicyOperation.
+description: Получение свойств объекта dataPolicyOperation.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 2f9c4608aaa8d951b5a5fed6b499643e5a4d63d0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27956341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565564"
 ---
 # <a name="get-datapolicyoperation"></a>Получение dataPolicyOperation
 
-Извлечение свойств объекта **dataPolicyOperation** .
+Получение свойств объекта **dataPolicyOperation** .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) |  User.Export.All User.Read.All  |
-|Делегированные (личная учетная запись Майкрософт) |  Неприменимо  |
-|Application | User.Export.All User.Read.All | 
+|Делегированные (рабочая или учебная учетная запись) |  User. Export. ALL, User. Read. ALL  |
+|Делегированные (личная учетная запись Майкрософт) |  Не применимо  |
+|Для приложений | User. Export. ALL, User. Read. ALL | 
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -35,10 +35,10 @@ GET /dataPolicyOperations/{id}
 |:----------|:----------|
 | Authorization  | Bearer {token}|
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [dataPolicyOperation](../resources/datapolicyoperation.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [dataPolicyOperation](../resources/datapolicyoperation.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 <!-- {

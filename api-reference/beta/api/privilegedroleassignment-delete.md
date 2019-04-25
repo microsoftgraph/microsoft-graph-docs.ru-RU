@@ -1,23 +1,23 @@
 ---
 title: Удаление privilegedRoleAssignment
-description: Удалите privilegedRoleAssignment.
+description: Удаление Привилежедролеассигнмент.
 localization_priority: Normal
 ms.openlocfilehash: 2b98509457d7e26b4b65d42840f04550429bcc95
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526748"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546607"
 ---
 # <a name="delete-privilegedroleassignment"></a>Удаление privilegedRoleAssignment
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалите [privilegedRoleAssignment](../resources/privilegedroleassignment.md).
+Удаление [привилежедролеассигнмент](../resources/privilegedroleassignment.md).
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запрашивающая сторона должна иметь роль _Привилегированной роль администратора_ .
+Запрашивающая сторона должна иметь привилегированную роль _администратора ролей_ .
  
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -32,7 +32,7 @@ ms.locfileid: "29526748"
 DELETE /privilegedRoleAssignments/{id}
 ```
 
-Обратите внимание, что ``<id>`` в формате «userId_roleId», где идентификатор пользователя — это строка идентификатора GUID для Azure AD идентификатор пользователя, а roleId — string GUID для идентификатора роль Azure администратора.
+Обратите ``<id>`` внимание, что в формате "усерид_ролеид", где UserID — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
@@ -40,13 +40,13 @@ DELETE /privilegedRoleAssignments/{id}
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -57,9 +57,8 @@ DELETE /privilegedRoleAssignments/{id}
 ```http
 DELETE https://graph.microsoft.com/beta/privilegedRoleAssignments/{id}
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 3d6d6b92eae818d4d1fac379a1f82aa7fac5887a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31793163"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563954"
 ---
 # <a name="iosmanagedappprotection-resource-type"></a>Тип ресурса iosManagedAppProtection
 
@@ -25,10 +25,10 @@ ms.locfileid: "31793163"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-list.md)|Коллекция [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Перечисление свойств и связей объектов [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
-|[Получение объекта iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Чтение свойств и связей объекта [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
-|[Создание объекта iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Создает объект [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
-|[Delete iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|Нет|Удаление объекта [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
+|[Перечисление объектов IosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-list.md)|Коллекция [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Перечисление свойств и связей объектов [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
+|[Получение объекта iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-get.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md);|Чтение свойств и связей объекта [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
+|[Создание объекта iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-create.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md);|Создание объекта [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
+|[Удаление объекта iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-delete.md)|Нет|Удаление объекта [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
 |[Обновление объекта iosManagedAppProtection](../api/intune-mam-iosmanagedappprotection-update.md)|[iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md)|Обновление свойств объекта [iosManagedAppProtection](../resources/intune-mam-iosmanagedappprotection.md).|
 
 ## <a name="properties"></a>Свойства

@@ -1,39 +1,39 @@
 ---
-title: Тип ресурса educationAssignmentResource
-description: Объект оболочки, в которой хранятся ресурсы, связанные с назначением. Добавляет свойство **distributeForStudentWork** и указывает, что ресурс будет программы-оболочки
+title: Тип ресурса Едукатионассигнментресаурце
+description: Объект-оболочка, в котором хранятся ресурсы, связанные с назначением. Упаковщик добавляет свойство **дистрибутефорстудентворк** и указывает на то, что этот ресурс
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 4d05cf5307e77dc6a7ac438c1bd4f4af4e73784e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529231"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542987"
 ---
-# <a name="educationassignmentresource-resource-type"></a>Тип ресурса educationAssignmentResource
+# <a name="educationassignmentresource-resource-type"></a>Тип ресурса Едукатионассигнментресаурце
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект оболочки, в которой хранятся ресурсы, связанные с назначением. Программа-оболочка добавляет свойство **distributeForStudentWork** и указывает, что ресурс будет скопировать для отправки учебы.  Если объект не копируется, каждого студента появится ссылка на ресурс для назначения. Студент не сможет обновлять этот ресурс. Это выдаче преподаватель учебы ничего не включены. Если распространяется ресурса, каждого студента будет получать копию этого ресурса в списке ресурсов их отправки. Каждый студент будет изменять их копию и отправьте его для ранжирования.
+Объект-оболочка, в котором хранятся ресурсы, связанные с назначением. Оболочка добавляет свойство **дистрибутефорстудентворк** и указывает, что этот ресурс будет скопирован в отправку учащегося.  Если объект не копируется, каждый учащийся увидит ссылку на ресурс на назначении. Учащийся не сможет обновить этот ресурс. Это выдача от преподавателя к студенту, которую не следует включать. Если ресурс распространяется, каждый учащийся получит копию этого ресурса в списке ресурсов их отправки. Каждый студент сможет изменить свою копию и отправит их для ступенчатого.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Чтение свойства и связи объекта **educationAssignmentResource** .|
-|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md) |Обновление объекта **educationAssignmentResource** . |
-|[Delete](../api/educationassignmentresource-delete.md) | Нет |Удаление объекта **educationAssignmentResource** . |
+|[Получение Едукатионассигнментресаурце](../api/educationassignmentresource-get.md) | [Едукатионассигнментресаурце](educationassignmentresource.md) |Чтение свойств и связей объекта **едукатионассигнментресаурце** .|
+|[Обновление](../api/educationassignmentresource-update.md) | [Едукатионассигнментресаурце](educationassignmentresource.md) |Обновление объекта **едукатионассигнментресаурце** . |
+|[Удаление](../api/educationassignmentresource-delete.md) | Нет |Удаление объекта **едукатионассигнментресаурце** . |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|distributeForStudentWork|Логическое|Указывает, будет ли этот ресурс необходимо копировать в каждой учебы отправки для изменения и отправки.|
-|id|String| Идентификатор ресурса. Только для чтения.|
-|resource|[educationResource](educationresource.md)|Объект ресурса, связанный с этим назначением.|
+|Дистрибутефорстудентворк|Логический|Указывает, следует ли копировать этот ресурс в каждую отправку учащегося для изменения и отправки.|
+|id|String| ИДЕНТИФИКАТОР этого ресурса. Только для чтения.|
+|resource|[Едукатионресаурце](educationresource.md)|Объект ресурса, связанный с этим назначением.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Отсутствуют.
 
 

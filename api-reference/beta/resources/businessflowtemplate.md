@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса businessFlowTemplate
-description: В Azure AD access дается обзор компонента, `businesFlowTemplate` представляет шаблон поток business Azure AD. Идентификатор шаблона, такую как просмотрите гостевой членов группы, хранится в телефонном звонящего при создании проверки доступа.
+title: Тип ресурса Бусинессфловтемплате
+description: В функции рецензирования Access в Azure AD объект `businesFlowTemplate` представляет шаблон рабочего процесса Azure AD. Идентификатор шаблона, например, для проверки гостевых участников группы, предоставляется вызывающим абонентом при создании проверки доступа.
 localization_priority: Normal
 ms.openlocfilehash: 567a7f499e2fb493f3ca519e312e69fb43fe3b79
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529581"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543745"
 ---
-# <a name="businessflowtemplate-resource-type"></a>Тип ресурса businessFlowTemplate
+# <a name="businessflowtemplate-resource-type"></a>Тип ресурса Бусинессфловтемплате
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В компоненте [дается обзор доступа](accessreviews-root.md) Azure AD `businesFlowTemplate` представляет шаблон поток business Azure AD. Идентификатор шаблона, такую как просмотрите гостевой членов группы, хранится в телефонном звонящего при создании проверки доступа.
+В функции рецензирования [Access](accessreviews-root.md) в Azure AD объект `businesFlowTemplate` представляет шаблон рабочего процесса Azure AD. Идентификатор шаблона, например, для проверки гостевых участников группы, предоставляется вызывающим абонентом при создании проверки доступа.
 
-Поток шаблон бизнес-объекты создаются автоматически при onboards глобального администратора клиента для использования доступа к дается обзор компонента.  Можно создавать без дополнительных бизнес-поток шаблонов.
+Объекты шаблона бизнес-процесса автоматически создаются, когда глобальный администратор, входящей в клиент, должен использовать функцию "обзоры Access".  Невозможно создать дополнительные шаблоны бизнес-процесса.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список businessFlowTemplates](../api/businessflowtemplate-list.md) | [businessFlowTemplate](businessflowtemplate.md) коллекции| Получение шаблонов поток business подходят для доступа к обзоры.|
+|[Список Бусинессфловтемплатес](../api/businessflowtemplate-list.md) | Коллекция [бусинессфловтемплате](businessflowtemplate.md)| Получите шаблоны бизнес-процесса, подходящие для доступа к рецензированию.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | Функция назначенный идентификатор шаблона поток business                                      |
-| `displayName`            |`String`                | Имя шаблона поток business                                                             |
+| `id`                     |`String`                | Идентификатор шаблона рабочего процесса, назначенный компонентом                                      |
+| `displayName`            |`String`                | Имя шаблона бизнес-процесса                                                             |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет.
 
@@ -39,10 +39,10 @@ ms.locfileid: "29529581"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание accessReview](../api/accessreview-create.md) | [accessReview](accessreview.md) |   Создание нового accessReview. |
+|[Создание Акцессревиев](../api/accessreview-create.md) | [Акцессревиев](accessreview.md) |   Создание нового Акцессревиев. |
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

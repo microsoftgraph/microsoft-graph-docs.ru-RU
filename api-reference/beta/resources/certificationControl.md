@@ -1,24 +1,24 @@
 ---
-title: " Тип ресурса certificationControl"
-description: Этот ресурс содержит соответствия требованиям сертификации данные, связанные с безопасного элемента управления показателя.
+title: " Тип ресурса Цертификатионконтрол"
+description: Этот ресурс содержит данные сертификации соответствия требованиям, связанные с контролем безопасности по показателю.
 localization_priority: Normal
 ms.openlocfilehash: 6f8269a85a8d3cb032f3e58457df95f4dd432c11
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810390"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535415"
 ---
-#  <a name="certificationcontrol-resource-type"></a>Тип ресурса certificationControl
+#  <a name="certificationcontrol-resource-type"></a>Тип ресурса Цертификатионконтрол
 
-Содержит соответствия требованиям сертификации данные, связанные с безопасного элемента управления показателя.
+Содержит данные сертификации соответствия требованиям, связанные с контролем безопасного индекса.
 
 |Свойство |Тип |Описание |
 |:--|:--|:--|
-|name | строка | Имя элемента управления сертификации |
-|url | строка | URL-адрес для службы Microsoft доверять портала |
+|name | string | Имя элемента управления сертификацией |
+|url | string | URL-адрес портала доверия службы Майкрософт |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

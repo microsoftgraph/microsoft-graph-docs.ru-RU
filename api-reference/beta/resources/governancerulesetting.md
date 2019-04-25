@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса governanceRuleSetting
-description: Представляет правила, которые предоставляют параметры роли.
+title: Тип ресурса Говернанцерулесеттинг
+description: Представляет правила, из которых состоят параметры ролей.
 localization_priority: Normal
 ms.openlocfilehash: bbb44760cf4b7377e5e5cc6dd312c2caee9897fa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522240"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547461"
 ---
-# <a name="governancerulesetting-resource-type"></a>Тип ресурса governanceRuleSetting
+# <a name="governancerulesetting-resource-type"></a>Тип ресурса Говернанцерулесеттинг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет правила, которые предоставляют параметры роли.
+Представляет правила, из которых состоят параметры ролей.
 
 
 ## <a name="properties"></a>Свойства
 |Свойство      | Тип         |Описание|
 |:-------------|:-------------|:----------|
-|ruleIdentifier|String        |Идентификатор правила. Например ``ExpirationRule`` и ``MfaRule``.|
-|setting       |String        |Параметры правила. Значение — это строка JSON со списком пар в формате Parameter_Name:Parameter_Value. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
+|Рулеидентифиер|String        |Идентификатор правила. Например, ``ExpirationRule`` и ``MfaRule``.|
+|setting       |String        |Параметры правила. Значением является строка JSON со списком пар в формате Параметер_наме: Параметер_валуе. Пример: `{"permanentAssignment":false,"maximumGrantPeriodInMinutes":129600}`|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

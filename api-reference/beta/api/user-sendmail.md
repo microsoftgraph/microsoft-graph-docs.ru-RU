@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 47cdb200f7de493c6fcc83b3d77be2af1824ef65
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869430"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536469"
 ---
 # <a name="send-mail"></a>Отправка почты
 
@@ -100,7 +100,7 @@ Content-length: 512
 }
 ```
 
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 Ниже приведен пример ответа.
 <!-- {
   "blockType": "response",
@@ -156,7 +156,7 @@ HTTP/1.1 202 Accepted
 ```
 
 ##### <a name="request-3"></a>Запрос 3
-В следующем примере создается сообщение с пользовательскими заголовками Интернет и отправляется сообщение.
+В следующем примере создается сообщение с использованием настраиваемых заголовков сообщений Интернета и выполняется его отправка.
 <!-- {
   "blockType": "request",
   "name": "user_sendmail_with_headers"

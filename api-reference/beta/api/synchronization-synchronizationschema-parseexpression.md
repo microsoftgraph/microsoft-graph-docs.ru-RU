@@ -1,21 +1,21 @@
 ---
-title: 'synchronizationSchema: parseExpression'
-description: '(.. / resources/synchronization_attributemappingsource.md) объекта. '
+title: 'Синчронизатионсчема: Парсикспрессион'
+description: '(.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). '
 localization_priority: Normal
 ms.openlocfilehash: 27545333c6ff7b3c9ffde3e1c59abd09465db1c2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545369"
 ---
-# <a name="synchronizationschema-parseexpression"></a>synchronizationSchema: parseExpression
+# <a name="synchronizationschema-parseexpression"></a>Синчронизатионсчема: Парсикспрессион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Синтаксический анализ указанного строковое выражение в [attributeMappingSource | (.. / resources/synchronization_attributemappingsource.md) объекта. 
+ПроАнализируйте заданное строковое выражение в объект [Аттрибутемаппингсаурце | (.. Объект/ресаурцес/синчронизатион_аттрибутемаппингсаурце.МД). 
 
-Дополнительные сведения о выражениях можно [Написании выражений для сопоставления атрибута в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
+Более подробную информацию о выражениях можно узнать [в статье Создание выражений для СопоставленИй атрибутов в Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-writing-expressions-for-attribute-mappings).
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,19 +36,19 @@ POST /servicePrincipals/{id}/synchronization/templates/{id}/schema/parseExpressi
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Описание|
 |:---------------|:----------|
-| Authorization  | Bearer {code}|
+| Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|выражение               |String               |Выражение для синтаксического разбора.|
-|testInputObject          |[expressionInputObject](../resources/synchronization-expressioninputobject.md)|Объект данных тестирования для оценки выражения. Необязательный параметр.|
-|targetAttributeDefinition|[attributeDefinition](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этого выражения. Необязательный параметр.|
+|выражение               |String               |Выражение для синтаксического анализа.|
+|Тестинпутобжект          |[Експрессионинпутобжект](../resources/synchronization-expressioninputobject.md)|Тестовый объект данных, с которым вычисляется выражение. Необязательно.|
+|Таржетаттрибутедефинитион|[Аттрибутедефинитион](../resources/synchronization-attributedefinition.md) |Определение атрибута, который будет сопоставлен с этим выражением. Необязательный параметр.|
 
-## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [parseExpressionResponse](../resources/synchronization-parseexpressionresponse.md) в теле ответа.
+## <a name="response"></a>Отклик
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [парсикспрессионреспонсе](../resources/synchronization-parseexpressionresponse.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -113,7 +113,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

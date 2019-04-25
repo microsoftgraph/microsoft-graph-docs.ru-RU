@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: efd0a202d6db1711caa4c7341367d3d1afe85038
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809306"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534635"
 ---
 # <a name="win32lobappfilesystemrequirement-resource-type"></a>Тип ресурса win32LobAppFileSystemRequirement
 
@@ -29,7 +29,7 @@ ms.locfileid: "31809306"
 |Детектионвалуе|String|Значение обнаружения, унаследованное от [win32LobAppRequirement](../resources/intune-apps-win32lobapprequirement.md)|
 |path|String|Путь к файлу или папке для определения бизнес-приложения Win32|
 |Филеорфолдернаме|String|Имя файла или папки для определения бизнес-приложения Win32|
-|check32BitOn64System|Boolean|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
+|check32BitOn64System|Логический|Значение, указывающее, предназначен ли этот файл или папка для проверки 32-разрядного приложения в 64-разрядной системе|
 |Детектионтипе|[win32LobAppFileSystemDetectionType](../resources/intune-apps-win32lobappfilesystemdetectiontype.md)|Тип обнаружения файловой системы. Возможные значения: `notConfigured`, `exists`, `modifiedDate`, `createdDate`, `version`, `sizeInMB`, `doesNotExist`.|
 
 ## <a name="relationships"></a>Отношения

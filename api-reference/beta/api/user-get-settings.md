@@ -1,22 +1,20 @@
 ---
 title: Получение параметров
-description: Чтение объекта параметры пользователей и организаций.
+description: Чтение объекта параметров пользователя и Организации.
 author: dkershaw10
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 128feebf624350baaea9fee41c411bd46c2b42c5
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507483"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536577"
 ---
 # <a name="get-settings"></a>Получение параметров
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Чтение объекта [Параметры](../resources/user-settings.md) пользователей и организаций.
-Чтобы узнать, как обновить свойства объекта [параметров](../resources/user-settings.md) , обратитесь к разделу [Изменение параметров пользователей](user-update-settings.md).
+Чтение объекта [параметров](../resources/user-settings.md) пользователя и Организации.
+Чтобы узнать, как обновить свойства объекта [Settings](../resources/user-settings.md) , ознакомьтесь со статьей [Обновление параметров пользователя](user-update-settings.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +24,7 @@ ms.locfileid: "29507483"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) | User.Read.All, User.ReadWrite.All    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | User.Read.All,User.ReadWrite.All |
+|Для приложений | User. Read. ALL, User. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -34,7 +32,7 @@ ms.locfileid: "29507483"
 GET /me/settings/
 ```
 
-Запросите с «идентификатор пользователя» или «userPrincipalName» доступен только пользователем или пользователем с разрешениями User.ReadWrite.All. [Для получения дополнительных сведений см.](/graph/permissions-reference)
+Запрос с идентификатором пользователя или userPrincipalName доступен только пользователю или пользователем с разрешениями User. ReadWrite. ALL. Чтобы узнать больше, ознакомьтесь [](/graph/permissions-reference)с разрешениями.
 
 ```http
 GET /users/{id | userPrincipalName}/settings/
@@ -42,24 +40,23 @@ GET /users/{id | userPrincipalName}/settings/
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [параметров пользователя](../resources/user-settings.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [пользовательских параметров](../resources/user-settings.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
 
 ```http
-GET https://graph.microsoft.com/beta/me/settings
+GET https://graph.microsoft.com/v1.0/me/settings
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 200 OK
@@ -71,11 +68,4 @@ Content-length: 72
   "contributionToContentDiscoveryDisabled": false
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-get-settings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+

@@ -1,21 +1,19 @@
 ---
 title: Создание записной книжки
-description: Создание записной книжки OneNote.
+description: Создайте новую записную книжку OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: deeb775f19ba2378cd15ffcbd72ef2caafd23b83
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514826"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540172"
 ---
 # <a name="create-notebook"></a>Создание записной книжки
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Создание [записной книжки](../resources/notebook.md) OneNote.
+Создайте новую записную [книжКу](../resources/notebook.md)OneNote.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -36,17 +34,17 @@ POST /sites/{id}/onenote/notebooks
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Тело запроса
-В теле запроса укажите имя записной книжки. 
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите имя записной книжки. 
 
-Имена записных книжек должны быть уникальными. Имя должно содержать не более 128 символов, в нем не должно быть следующих знаков:  ?*\/:<>|'"
+Имена записных книжек должны быть уникальными. Имя не может содержать более 128 символов или содержать следующие символы: _Км_ *\/: _лт__гт_ | ' "
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `201 Created` и новый объект [notebook](../resources/notebook.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и новый объект [записной книжки](../resources/notebook.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -56,7 +54,7 @@ POST /sites/{id}/onenote/notebooks
   "name": "create_notebook_from_onenote"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/onenote/notebooks
+POST https://graph.microsoft.com/v1.0/me/onenote/notebooks
 Content-type: application/json
 Content-length: 30
 
@@ -65,7 +63,7 @@ Content-length: 30
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. Примечание. Показанный здесь объект ответа усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -81,7 +79,6 @@ Content-length: 284
   "isDefault": true,
   "userRole": {
   },
-  "id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
   "isShared": true,
   "sectionsUrl": "sectionsUrl-value",
   "sectionGroupsUrl": "sectionGroupsUrl-value",
@@ -98,15 +95,10 @@ Content-length: 284
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Notebook",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/onenote-post-notebooks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

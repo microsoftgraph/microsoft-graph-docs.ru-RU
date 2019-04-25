@@ -1,15 +1,15 @@
 ---
-title: Тип соединителя ресурсов
+title: Тип ресурса Connector
 description: Ниже показано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: eed936c808e920f35a741a836a1fab64b2754bf8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525733"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535539"
 ---
-# <a name="connector-resource-type"></a>Тип соединителя ресурсов
+# <a name="connector-resource-type"></a>Тип ресурса Connector
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -24,23 +24,23 @@ ms.locfileid: "29525733"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение соединителя](../api/connector-get.md) | [Connector](connector.md) |Чтение свойства и связи объекта соединителя.|
-|[Перечисление memberOf](../api/connector-list-memberof.md) |[connectorGroup](connectorgroup.md) коллекции| Получите объект connectorGroup, связанный с соединителем.|
+|[Получение соединителя](../api/connector-get.md) | [PDIF](connector.md) |Чтение свойств и связей объекта Connector.|
+|[Список memberOf](../api/connector-list-memberof.md) |Коллекция [коннекторграуп](connectorgroup.md)| Получение объекта Коннекторграуп, связанного с соединителем.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|externalIp|String|Внешний IP-адрес как вредоносным службой для этого соединителя компьютера. Только чтение|
-|id|String| Идентификатор объекта соединитель. <BR>Только для чтения.|
-|имя_компьютера|String| Имя компьютера, на котором работает соединитель. <BR>Только чтение|
-|status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только чтение |
+|Екстерналип|String|Внешний IP-адрес, обнаруженный службой для соединителного компьютера. Только для чтения|
+|id|Строка| Идентификатор объекта Connector. <BR>Только для чтения.|
+|ИмяКомпьютера|String| Имя компьютера, на котором работает соединитель. <BR>Только для чтения|
+|status|string| Указывает состояние соединителя. Возможные значения: `active`, `inactive`. Только для чтения |
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|memberOf|[connectorGroup](connectorgroup.md) коллекции| ConnectorGroup, который является членом подключиться.<br>Только для чтения. |
+|memberOf|Коллекция [коннекторграуп](connectorgroup.md)| Коннекторграуп, участником которого является подключение.<br>Только для чтения. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

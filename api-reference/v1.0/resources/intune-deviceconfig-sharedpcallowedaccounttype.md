@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7528b79652be799e2cc8b9b6d30622f10b5c6a0e
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30263177"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534600"
 ---
 # <a name="sharedpcallowedaccounttype-enum-type"></a>тип перечисления Шаредпкалловедаккаунттипе
 
@@ -20,8 +20,8 @@ ms.locfileid: "30263177"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|книге|1,1|Только учетные записи гостя.|
-|domain;|2|Только учетные записи, присоединенные к домену.|
+|книге|1 |Только учетные записи гостя.|
+|domain|2 |Только учетные записи, присоединенные к домену.|
 
 
 

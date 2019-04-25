@@ -1,33 +1,33 @@
 ---
-title: educationOneRosterApiDataProvider ресурсов
-description: Используется для настройки синхронизации профилей данных school при использовании OneRoster API в качестве источника ввода.
+title: ресурс Едукатиононеростерапидатапровидер
+description: Используется для настройки профиля синхронизации данных School при использовании API OneRoster в качестве источника входных данных.
 author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 55a3cd0e20f15c4b7d44bc7aebdc19f202e044f1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527985"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543000"
 ---
-# <a name="educationonerosterapidataprovider-resource"></a>educationOneRosterApiDataProvider ресурсов
+# <a name="educationonerosterapidataprovider-resource"></a>ресурс Едукатиононеростерапидатапровидер
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используется для настройки синхронизации профилей данных school при использовании [OneRoster API](https://www.imsglobal.org/activity/onerosterlis) в качестве источника ввода.
+Используется для настройки профиля синхронизации данных School при использовании [API OneRoster](https://www.imsglobal.org/activity/onerosterlis) в качестве источника входных данных.
 
-На основе [educationSynchronizationDataProvider](educationsynchronizationdataprovider.md).
+Производный от [едукатионсинчронизатиондатапровидер](educationsynchronizationdataprovider.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 |:-|:-|:-|
-| **connectionUrl** | String | URL-адрес подключения к экземпляру OneRoster. |
-| **schoolsIds** | Коллекция String |  Список sourcedIds school для синхронизации. |
-| ProviderName | String | Имя поставщика услуг OneRoster, определенный в [спецификации OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
-| **connectionsettings используется для определения** | [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [microsoft.graph.educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [microsoft.graph.educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
-| **пользовательских настроек** | [microsoft.graph.educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Дополнительные настройки применяется для синхронизации профилей.|
+| **Коннектионурл** | String | URL-адрес подключения к экземпляру OneRoster. |
+| **Счулсидс** | Коллекция строк |  Список Саурцедидс School для синхронизации. |
+| **providerName** | String | Имя поставщика службы OneRoster, как определено [спецификациЕй OneRoster](https://www.imsglobal.org/oneroster-v11-final-best-practice-and-implementation-guide#AppA). |
+| **Коннектионсеттингс** | [Microsoft. Graph. Едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md) | Параметры подключения для экземпляра OneRoster. Должен иметь тип [Microsoft. Graph. educationSynchronizationOAuth1ConnectionSettings](educationsynchronizationoauth1connectionsettings.md) или [Microsoft. Graph. educationSynchronizationOAuth2ClientCredentialsConnectionSettings](educationsynchronizationoauth2clientcredentialsconnectionsettings.md). |
+| **настроек** | [Microsoft. Graph. Едукатионсинчронизатионкустомизатионс](educationsynchronizationcustomizations.md) | НеОбязательная Настройка, применяемая к профилю синхронизации.|
 
 ## <a name="json-representation"></a>Представление JSON
 <!-- {

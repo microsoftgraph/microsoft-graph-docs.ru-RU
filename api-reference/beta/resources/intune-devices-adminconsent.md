@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b14eb19096a034612715081ae2e3dba25b5bb218
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787906"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534495"
 ---
 # <a name="adminconsent-resource-type"></a>Тип ресурса Adminconsent.
 

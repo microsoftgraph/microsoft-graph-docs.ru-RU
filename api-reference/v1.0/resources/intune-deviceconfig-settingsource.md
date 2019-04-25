@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса settingSource
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 33337b5c5e9c6bd51bb5bc60326022e0dd303d59
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257192"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32534670"
 ---
 # <a name="settingsource-resource-type"></a>Тип ресурса settingSource
 
@@ -20,10 +20,10 @@ ms.locfileid: "30257192"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Н/Д|
-|displayName|String|Н/Д|
+|id|String|Пока не задокументировано.|
+|displayName|String|Пока не задокументировано.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

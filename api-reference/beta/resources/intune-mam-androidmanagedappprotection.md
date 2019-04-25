@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 253ad74509953925ec26a3349846bc69de7aa8a8
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789397"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563961"
 ---
 # <a name="androidmanagedappprotection-resource-type"></a>Тип ресурса androidManagedAppProtection
 
@@ -25,12 +25,11 @@ ms.locfileid: "31789397"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-list.md)|Коллекция [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Перечисление свойств и связей объектов [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
-|[Get androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Чтение свойств и связей объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
-|[Создание androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-create.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Создание объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
-|[Удаление androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-delete.md)|Нет|Удаление объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
-|[Обновление androidManagedAppProtection
-](../api/intune-mam-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Обновление свойств объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
+|[Перечисление объектов AndroidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-list.md)|Коллекция [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Перечисление свойств и связей объектов [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
+|[Получение объекта androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-get.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md);|Чтение свойств и связей объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
+|[Создание объекта androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-create.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md);|Создание объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
+|[Удаление объекта androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-delete.md)|Нет|Удаление объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
+|[Обновление объекта androidManagedAppProtection](../api/intune-mam-androidmanagedappprotection-update.md)|[androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md)|Обновление свойств объекта [androidManagedAppProtection](../resources/intune-mam-androidmanagedappprotection.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

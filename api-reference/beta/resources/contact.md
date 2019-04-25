@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: d2bdc1be9e504bc72ce12ffe924b6da0812b99ce
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642452"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535482"
 ---
 # <a name="contact-resource-type"></a>Тип ресурса contact
 
@@ -90,16 +90,16 @@ ms.locfileid: "29642452"
 |children|Коллекция String|Имена детей контакта.|
 |companyName|String|Название компании контакта.|
 |createdDateTime|DateTimeOffset|Время создания контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|отделу;|String|Отдел контакта.|
+|department|String|Отдел контакта.|
 |displayName|String|Отображаемое имя контакта. Отображаемое имя можно указать в операции [создания](../api/user-post-contacts.md) или [обновления](../api/contact-update.md). Обратите внимание, что последующие обновления других свойств могут привести к тому, что автоматически созданное значение перезапишет указанное значение displayName. Чтобы сохранить существующее значение, всегда добавляйте его как displayName в операцию [обновления](../api/contact-update.md).|
-|emailAddresses|[typedEmailAddress](typedemailaddress.md) коллекции|Электронные адреса контакта.|
+|emailAddresses|Коллекция [типедемаиладдресс](typedemailaddress.md)|Электронные адреса контакта.|
 |fileAs|String|Имя, под которым хранится контакт.|
-|flag|[followupFlag](followupflag.md)|Значение флага, указывающее состояние, Дата начала, Дата завершения или Дата завершения для этого контакта. |
+|flag|[followupFlag](followupflag.md)|Значение флага, которое указывает статус, дату начала, дату выполнения или дату завершения для контакта. |
 |gender |String |Пол контакта. |
 |generation|String|Поколение контакта.|
 |givenName|String|Имя контакта.|
-|id|String|Уникальный идентификатор контакта. Только для чтения.|
-|imAddresses|Коллекция String|Адреса контакта для обмена мгновенными сообщениями.|
+|id|Строка|Уникальный идентификатор контакта. Только для чтения.|
+|imAddresses|Коллекция строк|Адреса контакта для обмена мгновенными сообщениями.|
 |initials|String|Инициалы контакта.|
 |jobTitle|String|Должность контакта.|
 |lastModifiedDateTime|DateTimeOffset|Время изменения контакта. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
@@ -109,22 +109,22 @@ ms.locfileid: "29642452"
 |officeLocation|String|Расположение офиса контакта.|
 |parentFolderId|String|Идентификатор родительской папки контакта.|
 |personalNotes|String|Заметки пользователя о контакте.|
-|phones |Коллекция [phone](phone.md) |Номера телефонов, связанный с этим контактом, например домашний, мобильный телефон и рабочий телефон. |
-|postalAddresses |[physicalAddress](physicaladdress.md) коллекции |Адреса, связанные с этим контактом, например домашний адрес и рабочего адреса. |
+|phones |Коллекция [phone](phone.md) |Номера телефонов, связанные с контактом, например домашний телефон, мобильный телефон и служебный телефон. |
+|postalAddresses |Коллекция [physicalAddress](physicaladdress.md) |Адреса, связанные с контактом, например домашний адрес и служебный адрес. |
 |profession|String|Профессия контакта.|
 |spouseName|String|Имя супруга или супруги контакта.|
 |surname|String|Фамилия контакта.|
 |title|String|Звание контакта.|
 |websites |Коллекция [website](website.md)|Веб-сайты, связанные с контактом. |
-|weddingAnniversary |Date |Годовщина свадьбы контакта. |
+|Веддинганниверсари |Дата |Годовщина свадьбы контакта. |
 |yomiCompanyName|String|Название компании контакта, записанное так, как оно звучит по-японски.|
 |yomiGivenName|String|Имя контакта, записанное так, как оно звучит по-японски.|
 |yomiSurname|String|Фамилия контакта, записанная так, как она звучит по-японски.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|extensions|Коллекция [extension](extension.md)|Коллекция open расширения, определенные для этого контакта. Допускается значение null.|
+|extensions|Коллекция [extension](extension.md)|Коллекция открытых расширений, определенных для контакта. Допускается значение null.|
 |multiValueExtendedProperties|Коллекция [multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md)| Коллекция расширенных свойств с несколькими значениями, определенных для контакта. Только для чтения. Допускается значение null.|
 |Фотография
 |[photo](profilephoto.md)| Необязательное фото контакта. Можно получить или задать фото для контакта.|
@@ -144,7 +144,7 @@ ms.locfileid: "29642452"
 |**Расширения схемы**| | |
 |[Добавление значений расширений для схемы](/graph/extensibility-schema-groups) || Создание определения расширения схемы и его дальнейшее использование для добавления в ресурс введенных пользовательских данных.|
 |**Расширенные свойства**| | |
-|[Создание расширенного свойства с одним значением](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем контакте.   |
+|[Создание однозначного расширенного свойства](../api/singlevaluelegacyextendedproperty-post-singlevalueextendedproperties.md) |[contact](contact.md)  |Создание одного или нескольких расширенных свойств с одним значением в новом или существующем контакте.   |
 |[Получение контакта с расширенным свойством с одним значением](../api/singlevaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Получение контактов, которые содержат расширенное свойство с одним значением, при помощи `$expand` или `$filter`. |
 |[Создание расширенного свойства с несколькими значениями](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md) | [contact](contact.md) | Создание одного или нескольких расширенных свойств с несколькими значениями в новом или существующем контакте.  |
 |[Получение контакта с расширенным свойством с несколькими значениями](../api/multivaluelegacyextendedproperty-get.md)  | [contact](contact.md) | Получение контакта, который содержит расширенное свойство с несколькими значениями, при помощи `$expand`. |

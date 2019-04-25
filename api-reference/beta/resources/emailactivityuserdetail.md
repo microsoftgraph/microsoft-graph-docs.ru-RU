@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса emailActivityUserDetail
+title: Тип ресурса Емаилактивитюсердетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: b871bf5dbaedd961fad09bf97be868f46e7430a1
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938309"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542834"
 ---
-# <a name="emailactivityuserdetail-resource-type"></a>Тип ресурса emailActivityUserDetail
+# <a name="emailactivityuserdetail-resource-type"></a>Тип ресурса Емаилактивитюсердетаил
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип              |
 | :---------------- | :---------------- |
-| reportRefreshDate | Date              |
-| userPrincipalName | Строка            |
-| displayName       | Строка            |
+| Репортрефрешдате | Дата              |
+| userPrincipalName | String            |
+| displayName       | String            |
 | isDeleted         | Логический           |
-| deletedDate       | Date              |
-| lastActivityDate  | Date              |
-| sendCount         | Int64             |
-| receiveCount      | Int64             |
-| readCount         | Int64             |
-| assignedProducts  | Коллекция String |
-| reportPeriod      | String            |
+| Делетеддате       | Дата              |
+| Ластактивитидате  | Дата              |
+| Сендкаунт         | Int64             |
+| Рецеивекаунт      | Int64             |
+| Реадкаунт         | Int64             |
+| Ассигнедпродуктс  | Коллекция строк |
+| Репортпериод      | String            |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

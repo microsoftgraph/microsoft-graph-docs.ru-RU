@@ -1,24 +1,24 @@
 ---
-title: Get собрания по сети
-description: Извлечение свойств и связи объекта **onlineMeeting** .
+title: Получение собраний по сети
+description: Получение свойств и связей объекта **онлинемитинг** .
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: ef45d73aef8124d962d05ea84117c93bac16f0a2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510654"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539938"
 ---
-# <a name="get-online-meeting"></a>Get собрания по сети
+# <a name="get-online-meeting"></a>Получение собраний по сети
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Извлечение свойств и связи объекта **onlineMeeting** .
+Получение свойств и связей объекта **онлинемитинг** .
 
-> **Примечание:** `GET` Метод не может превышать [VTC идентификатор конференции](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Эти коды создаются для облачных видео взаимодействия пользователей с корпоративным лицензированием и этот метод используется для получения сведений о присоединиться к собранию.
-> Для регулярного потоков можно использовать робот `joinURL` для присоединения к собранию и без просмотра не требуется.
+> **Примечание:** `GET` Метод ограничен [идентификатором конференции VTC](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). Эти идентификаторы создаются для пользователей, лицензированных для облачных видеоКонференций, и этот метод используется для получения сведений о присоединении к собранию.
+> Для обычных потоков, Bot может использовать `joinURL` для присоединения к собранию, а поиск не требуется.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -28,7 +28,7 @@ ms.locfileid: "29510654"
 |:---------------------------------------|:------------------------------------------------------|
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается.                                        |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                        |
-| Для приложений                            | OnlineMeetings.Read.All OnlineMeetings.ReadWrite.All |
+| Для приложений                            | Онлинемитингс. Read. ALL, Онлинемитингс. ReadWrite. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,7 +38,7 @@ GET /applications/{id}/onlineMeetings/{id}
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя          | Описание               |
@@ -46,10 +46,10 @@ GET /applications/{id}/onlineMeetings/{id}
 | Авторизация | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` объект [onlineMeeting](../resources/onlinemeeting.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [онлинемитинг](../resources/onlinemeeting.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -64,7 +64,7 @@ GET /applications/{id}/onlineMeetings/{id}
 GET https://graph.microsoft.com/beta/app/onlineMeetings/{id}
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 

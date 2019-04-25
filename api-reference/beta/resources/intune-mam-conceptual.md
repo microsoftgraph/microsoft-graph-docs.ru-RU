@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 223efcd67b9e025347f510ce207b093122fa6b52
-ms.sourcegitcommit: f58ff560fa02ac95e296375c143b0922fb6a425c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30572329"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563982"
 ---
 # <a name="how-to-protect-your-company-app-data-with-microsoft-intune"></a>Защита данных корпоративных приложений с помощью Microsoft Intune
 
@@ -25,8 +25,8 @@ ms.locfileid: "30572329"
 
 - [Защита управляемых приложений для Android](intune-mam-androidmanagedappprotection.md)
 - [Регистрация управляемых приложений для Android](intune-mam-androidmanagedappregistration.md)
-- [Тип проверки приложений для проверки подлинности в управляемом приложении Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
-- [Тип аттестации для устройства безопасности управляемого приложения Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
+- [Тип проверки приложений системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetappsverificationtype.md)
+- [Тип аттестации устройства системы безопасности для управляемых приложений для Android](intune-mam-androidmanagedappsafetynetdeviceattestationtype.md)
 - [Идентификатор мобильных приложений для Android](intune-mam-androidmobileappidentifier.md)
 - [Уровень управления приложениями](intune-mam-appmanagementlevel.md)
 - [Тип приложения](intune-wip-applicationtype.md)

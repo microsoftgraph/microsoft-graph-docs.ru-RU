@@ -1,19 +1,19 @@
 ---
-title: Создание synchronizationTemplate
-description: Создание нового шаблона синхронизации для указанного приложения.
+title: Создание Синчронизатионтемплате
+description: Создайте новый шаблон синхронизации для конкретного приложения.
 localization_priority: Normal
 ms.openlocfilehash: ce519b57766956b10d05b6b3745ca16f609b597c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29509891"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536966"
 ---
-# <a name="create-synchronizationtemplate"></a>Создание synchronizationTemplate
+# <a name="create-synchronizationtemplate"></a>Создание Синчронизатионтемплате
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создание нового шаблона синхронизации для указанного приложения.
+Создайте новый шаблон синхронизации для конкретного приложения.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,11 +38,11 @@ POST /applications/{id}/synchronization/templates/
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите создать объект [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) . `id`, `applicationId` И `factoryTag` свойства являются обязательными. Если нет `schema` предоставляется с помощью шаблона по умолчанию схема, связанная с `factoryTag` свойство будет использоваться.
+В теле запроса добавьте объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) , который требуется создать. `id`Свойства `applicationId` и `factoryTag` свойства являются обязательными. Если с `schema` шаблоном не предоставляется никакой шаблон, будет использоваться схема по умолчанию, связанная со `factoryTag` свойством.
 
 ### <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [synchronizationTemplate](../resources/synchronization-synchronizationtemplate.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [синчронизатионтемплате](../resources/synchronization-synchronizationtemplate.md) в тексте отклика.
 
 ### <a name="example"></a>Пример
 
@@ -63,9 +63,9 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Будут возвращены все свойства в фактический вызов.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

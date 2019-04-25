@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса commsNotifications
-description: Список уведомлений, используемого серверами коммуникаций для отправки нескольких уведомлений в одном пакете.
+title: Тип ресурса Коммснотификатионс
+description: Список уведомлений, используемых серверами Communications Server для отправки нескольких уведомлений в один пакет.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2d002b74bffe0911e2ba1fef4eed324b52ebcc49
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535524"
 ---
-# <a name="commsnotifications-resource-type"></a>Тип ресурса commsNotifications
+# <a name="commsnotifications-resource-type"></a>Тип ресурса Коммснотификатионс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Список уведомлений, используемого серверами коммуникаций для отправки нескольких уведомлений в одном пакете.
+Список уведомлений, используемых серверами Communications Server для отправки нескольких уведомлений в один пакет.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип                                                 | Описание                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| value          | [commsNotification](commsnotification.md) коллекции | Уведомление об изменении в ресурсе. |
+| значение          | Коллекция [коммснотификатион](commsnotification.md) | Уведомление об изменении ресурса. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
