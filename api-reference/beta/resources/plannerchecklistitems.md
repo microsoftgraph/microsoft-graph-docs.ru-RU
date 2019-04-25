@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса plannerChecklistItems
-description: Ресурс **plannerChecklistItemCollection** представляет коллекцию элементов контрольного списка для задачи. Это открытый тип. Он является частью объекта сведений о задаче. Значение в паре "свойство-значение" представляет собой объект checklistItem.
+title: Тип ресурса Планнерчекклиститемс
+description: Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче. Это открытый тип. Он является частью объекта сведений о задаче. Значение в параметре "свойство-значение" является объектом Чекклиститем.
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: cdc2822574497b2a76cc92c8b7b22f2e1bccc2e8
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511879"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579053"
 ---
-# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="37f72-106">Тип ресурса plannerChecklistItems</span><span class="sxs-lookup"><span data-stu-id="37f72-106">plannerChecklistItems resource type</span></span>
+# <a name="plannerchecklistitems-resource-type"></a><span data-ttu-id="840bc-106">Тип ресурса Планнерчекклиститемс</span><span class="sxs-lookup"><span data-stu-id="840bc-106">plannerChecklistItems resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="37f72-p102">Ресурс **plannerChecklistItemCollection** представляет коллекцию элементов контрольного списка для задачи. Это открытый тип. Он является частью объекта [сведений о задаче](plannertaskdetails.md). Значение в паре "свойство-значение" представляет собой объект [checklistItem](plannerchecklistitem.md).</span><span class="sxs-lookup"><span data-stu-id="37f72-p102">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task. It is an Open Type. It is part of the [task details](plannertaskdetails.md) object. The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
+<span data-ttu-id="840bc-107">Ресурс **планнерчекклиститемколлектион** представляет коллекцию элементов контрольного списка в задаче.</span><span class="sxs-lookup"><span data-stu-id="840bc-107">The **plannerChecklistItemCollection** resource represents the collection of checklist items on a task.</span></span> <span data-ttu-id="840bc-108">Это открытый тип.</span><span class="sxs-lookup"><span data-stu-id="840bc-108">It is an Open Type.</span></span> <span data-ttu-id="840bc-109">Он является частью объекта [сведений о задаче](plannertaskdetails.md) .</span><span class="sxs-lookup"><span data-stu-id="840bc-109">It is part of the [task details](plannertaskdetails.md) object.</span></span> <span data-ttu-id="840bc-110">Значение в параметре "свойство-значение" является объектом [чекклиститем](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="840bc-110">The value in the property-value pair is the [checklistItem](plannerchecklistitem.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="37f72-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="37f72-111">Properties</span></span>
-<span data-ttu-id="37f72-p103">Клиент может определять свойства открытого типа. В этом случае клиент должен указать идентификаторы **GUID** в качестве свойств, а их значения должны представлять собой объекты [checklistItem](plannerchecklistitem.md). Ниже показан пример. Чтобы удалить элемент в контрольном списке, задайте для свойства значение `null`.</span><span class="sxs-lookup"><span data-stu-id="37f72-p103">Properties of an Open Type can be defined by the client. In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects. Example is shown below. To remove an item in the checklist, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="840bc-111">Свойства</span><span class="sxs-lookup"><span data-stu-id="840bc-111">Properties</span></span>
+<span data-ttu-id="840bc-112">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="840bc-112">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="840bc-113">В этом случае клиент должен предоставлять **GUID** в качестве свойств, а их значения должны быть объектами [чекклиститем](plannerchecklistitem.md) .</span><span class="sxs-lookup"><span data-stu-id="840bc-113">In this case, the client should provide **GUIDs** as properties and their values must be [checklistItem](plannerchecklistitem.md) objects.</span></span> <span data-ttu-id="840bc-114">Пример показан ниже.</span><span class="sxs-lookup"><span data-stu-id="840bc-114">Example is shown below.</span></span> <span data-ttu-id="840bc-115">Чтобы удалить элемент в контрольном списке, присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="840bc-115">To remove an item in the checklist, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="37f72-116">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="37f72-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="840bc-116">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="840bc-116">JSON representation</span></span>
 
-<span data-ttu-id="37f72-117">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="37f72-117">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="840bc-117">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="840bc-117">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -45,7 +45,7 @@ ms.locfileid: "29511879"
   }
 }
 ```
-<span data-ttu-id="37f72-118">Пример:</span><span class="sxs-lookup"><span data-stu-id="37f72-118">// Example</span></span>
+<span data-ttu-id="840bc-118">Примеры</span><span class="sxs-lookup"><span data-stu-id="840bc-118">// Example</span></span>
 
 ```json
 {

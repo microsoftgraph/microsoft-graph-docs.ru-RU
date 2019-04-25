@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса filterOperand
+title: Тип ресурса Филтероперанд
 description: Содержит коллекцию значений для операнда.
 localization_priority: Normal
 ms.openlocfilehash: ab62477889cc92954ed308c508e18a638cd59375
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515379"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581809"
 ---
-# <a name="filteroperand-resource-type"></a><span data-ttu-id="93a30-103">Тип ресурса filterOperand</span><span class="sxs-lookup"><span data-stu-id="93a30-103">filterOperand resource type</span></span>
+# <a name="filteroperand-resource-type"></a><span data-ttu-id="5755a-103">Тип ресурса Филтероперанд</span><span class="sxs-lookup"><span data-stu-id="5755a-103">filterOperand resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="93a30-104">Содержит коллекцию значений для операнда.</span><span class="sxs-lookup"><span data-stu-id="93a30-104">Contains a collection of values for the operand.</span></span>
+<span data-ttu-id="5755a-104">Содержит коллекцию значений для операнда.</span><span class="sxs-lookup"><span data-stu-id="5755a-104">Contains a collection of values for the operand.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="93a30-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="93a30-105">Properties</span></span>
-| <span data-ttu-id="93a30-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="93a30-106">Property</span></span>     | <span data-ttu-id="93a30-107">Тип</span><span class="sxs-lookup"><span data-stu-id="93a30-107">Type</span></span>   |<span data-ttu-id="93a30-108">Описание</span><span class="sxs-lookup"><span data-stu-id="93a30-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="5755a-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5755a-105">Properties</span></span>
+| <span data-ttu-id="5755a-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5755a-106">Property</span></span>     | <span data-ttu-id="5755a-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5755a-107">Type</span></span>   |<span data-ttu-id="5755a-108">Описание</span><span class="sxs-lookup"><span data-stu-id="5755a-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="93a30-109">values</span><span class="sxs-lookup"><span data-stu-id="93a30-109">values</span></span>|<span data-ttu-id="93a30-110">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="93a30-110">String collection</span></span>|<span data-ttu-id="93a30-111">Коллекция значений.</span><span class="sxs-lookup"><span data-stu-id="93a30-111">Collection of values.</span></span>|
+|<span data-ttu-id="5755a-109">values</span><span class="sxs-lookup"><span data-stu-id="5755a-109">values</span></span>|<span data-ttu-id="5755a-110">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="5755a-110">String collection</span></span>|<span data-ttu-id="5755a-111">Коллекция значений.</span><span class="sxs-lookup"><span data-stu-id="5755a-111">Collection of values.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="93a30-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="93a30-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5755a-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5755a-112">JSON representation</span></span>
 
-<span data-ttu-id="93a30-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="93a30-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5755a-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5755a-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

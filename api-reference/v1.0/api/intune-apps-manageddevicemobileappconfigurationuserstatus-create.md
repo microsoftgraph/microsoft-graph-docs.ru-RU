@@ -5,28 +5,28 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1b912d21fae21652d9a801443aee7e1d08446dd7
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30980287"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32578199"
 ---
-# <a name="create-manageddevicemobileappconfigurationuserstatus"></a><span data-ttu-id="bebda-103">Создание объекта managedDeviceMobileAppConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="bebda-103">Create managedDeviceMobileAppConfigurationUserStatus</span></span>
+# <a name="create-manageddevicemobileappconfigurationuserstatus"></a><span data-ttu-id="1415b-103">Создание объекта managedDeviceMobileAppConfigurationUserStatus</span><span class="sxs-lookup"><span data-stu-id="1415b-103">Create managedDeviceMobileAppConfigurationUserStatus</span></span>
 
-> <span data-ttu-id="bebda-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="bebda-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="1415b-104">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="1415b-104">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="bebda-105">Создание объекта [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="bebda-105">Create a new [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object.</span></span>
+<span data-ttu-id="1415b-105">Создание объекта [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md).</span><span class="sxs-lookup"><span data-stu-id="1415b-105">Create a new [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object.</span></span>
 
-## <a name="prerequisites"></a><span data-ttu-id="bebda-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="bebda-106">Prerequisites</span></span>
-<span data-ttu-id="bebda-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="bebda-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="1415b-106">Предварительные условия</span><span class="sxs-lookup"><span data-stu-id="1415b-106">Prerequisites</span></span>
+<span data-ttu-id="1415b-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1415b-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="bebda-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="bebda-109">Permission type</span></span>|<span data-ttu-id="bebda-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="bebda-110">Permissions (from most to least privileged)</span></span>|
+|<span data-ttu-id="1415b-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1415b-109">Permission type</span></span>|<span data-ttu-id="1415b-110">Разрешения (в порядке убывания привилегий)</span><span class="sxs-lookup"><span data-stu-id="1415b-110">Permissions (from most to least privileged)</span></span>|
 |:---|:---|
-|<span data-ttu-id="bebda-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="bebda-111">Delegated (work or school account)</span></span>|<span data-ttu-id="bebda-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="bebda-112">DeviceManagementApps.ReadWrite.All</span></span>|
-|<span data-ttu-id="bebda-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="bebda-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="bebda-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bebda-114">Not supported.</span></span>|
-|<span data-ttu-id="bebda-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="bebda-115">Application</span></span>|<span data-ttu-id="bebda-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="bebda-116">Not supported.</span></span>|
+|<span data-ttu-id="1415b-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1415b-111">Delegated (work or school account)</span></span>|<span data-ttu-id="1415b-112">DeviceManagementApps.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1415b-112">DeviceManagementApps.ReadWrite.All</span></span>|
+|<span data-ttu-id="1415b-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1415b-113">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="1415b-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1415b-114">Not supported.</span></span>|
+|<span data-ttu-id="1415b-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1415b-115">Application</span></span>|<span data-ttu-id="1415b-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1415b-116">Not supported.</span></span>|
 
-## <a name="http-request"></a><span data-ttu-id="bebda-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="bebda-117">HTTP Request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1415b-117">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1415b-117">HTTP Request</span></span>
 <!-- {
   "blockType": "ignored"
 }
@@ -35,35 +35,35 @@ ms.locfileid: "30980287"
 POST /deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="bebda-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="bebda-118">Request headers</span></span>
-|<span data-ttu-id="bebda-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="bebda-119">Header</span></span>|<span data-ttu-id="bebda-120">Значение</span><span class="sxs-lookup"><span data-stu-id="bebda-120">Value</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="1415b-118">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1415b-118">Request headers</span></span>
+|<span data-ttu-id="1415b-119">Заголовок</span><span class="sxs-lookup"><span data-stu-id="1415b-119">Header</span></span>|<span data-ttu-id="1415b-120">Значение</span><span class="sxs-lookup"><span data-stu-id="1415b-120">Value</span></span>|
 |:---|:---|
-|<span data-ttu-id="bebda-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="bebda-121">Authorization</span></span>|<span data-ttu-id="bebda-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="bebda-122">Bearer &lt;token&gt; Required.</span></span>|
-|<span data-ttu-id="bebda-123">Accept</span><span class="sxs-lookup"><span data-stu-id="bebda-123">Accept</span></span>|<span data-ttu-id="bebda-124">application/json</span><span class="sxs-lookup"><span data-stu-id="bebda-124">application/json</span></span>|
+|<span data-ttu-id="1415b-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1415b-121">Authorization</span></span>|<span data-ttu-id="1415b-122">Bearer &lt;token&gt;. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1415b-122">Bearer &lt;token&gt; Required.</span></span>|
+|<span data-ttu-id="1415b-123">Accept</span><span class="sxs-lookup"><span data-stu-id="1415b-123">Accept</span></span>|<span data-ttu-id="1415b-124">application/json</span><span class="sxs-lookup"><span data-stu-id="1415b-124">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="bebda-125">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="bebda-125">Request body</span></span>
-<span data-ttu-id="bebda-126">В тексте запроса добавьте представление объекта managedDeviceMobileAppConfigurationUserStatus в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="bebda-126">In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationUserStatus object.</span></span>
+## <a name="request-body"></a><span data-ttu-id="1415b-125">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1415b-125">Request body</span></span>
+<span data-ttu-id="1415b-126">В тексте запроса добавьте представление объекта managedDeviceMobileAppConfigurationUserStatus в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="1415b-126">In the request body, supply a JSON representation for the managedDeviceMobileAppConfigurationUserStatus object.</span></span>
 
-<span data-ttu-id="bebda-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта managedDeviceMobileAppConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="bebda-127">The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationUserStatus.</span></span>
+<span data-ttu-id="1415b-127">В таблице ниже приведены свойства, которые необходимо указывать при создании объекта managedDeviceMobileAppConfigurationUserStatus.</span><span class="sxs-lookup"><span data-stu-id="1415b-127">The following table shows the properties that are required when you create the managedDeviceMobileAppConfigurationUserStatus.</span></span>
 
-|<span data-ttu-id="bebda-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="bebda-128">Property</span></span>|<span data-ttu-id="bebda-129">Тип</span><span class="sxs-lookup"><span data-stu-id="bebda-129">Type</span></span>|<span data-ttu-id="bebda-130">Описание</span><span class="sxs-lookup"><span data-stu-id="bebda-130">Description</span></span>|
+|<span data-ttu-id="1415b-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="1415b-128">Property</span></span>|<span data-ttu-id="1415b-129">Тип</span><span class="sxs-lookup"><span data-stu-id="1415b-129">Type</span></span>|<span data-ttu-id="1415b-130">Описание</span><span class="sxs-lookup"><span data-stu-id="1415b-130">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="bebda-131">id</span><span class="sxs-lookup"><span data-stu-id="bebda-131">id</span></span>|<span data-ttu-id="bebda-132">Строка</span><span class="sxs-lookup"><span data-stu-id="bebda-132">String</span></span>|<span data-ttu-id="bebda-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="bebda-133">Key of the entity.</span></span>|
-|<span data-ttu-id="bebda-134">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="bebda-134">userDisplayName</span></span>|<span data-ttu-id="bebda-135">String</span><span class="sxs-lookup"><span data-stu-id="bebda-135">String</span></span>|<span data-ttu-id="bebda-136">Имя пользователя в объекте DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="bebda-136">User name of the DevicePolicyStatus.</span></span>|
-|<span data-ttu-id="bebda-137">devicesCount</span><span class="sxs-lookup"><span data-stu-id="bebda-137">devicesCount</span></span>|<span data-ttu-id="bebda-138">Int32</span><span class="sxs-lookup"><span data-stu-id="bebda-138">Int32</span></span>|<span data-ttu-id="bebda-139">Количество устройств для этого пользователя.</span><span class="sxs-lookup"><span data-stu-id="bebda-139">Devices count for that user.</span></span>|
-|<span data-ttu-id="bebda-140">status</span><span class="sxs-lookup"><span data-stu-id="bebda-140">status</span></span>|[<span data-ttu-id="bebda-141">Комплианцестатус</span><span class="sxs-lookup"><span data-stu-id="bebda-141">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="bebda-142">Состояние соответствия требованиям для отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="bebda-142">Compliance status of the policy report.</span></span> <span data-ttu-id="bebda-143">Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="bebda-143">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
-|<span data-ttu-id="bebda-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="bebda-144">lastReportedDateTime</span></span>|<span data-ttu-id="bebda-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="bebda-145">DateTimeOffset</span></span>|<span data-ttu-id="bebda-146">Дата и время последнего изменения отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="bebda-146">Last modified date time of the policy report.</span></span>|
-|<span data-ttu-id="bebda-147">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="bebda-147">userPrincipalName</span></span>|<span data-ttu-id="bebda-148">String</span><span class="sxs-lookup"><span data-stu-id="bebda-148">String</span></span>|<span data-ttu-id="bebda-149">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="bebda-149">UserPrincipalName.</span></span>|
+|<span data-ttu-id="1415b-131">id</span><span class="sxs-lookup"><span data-stu-id="1415b-131">id</span></span>|<span data-ttu-id="1415b-132">Строка</span><span class="sxs-lookup"><span data-stu-id="1415b-132">String</span></span>|<span data-ttu-id="1415b-133">Ключ объекта.</span><span class="sxs-lookup"><span data-stu-id="1415b-133">Key of the entity.</span></span>|
+|<span data-ttu-id="1415b-134">userDisplayName</span><span class="sxs-lookup"><span data-stu-id="1415b-134">userDisplayName</span></span>|<span data-ttu-id="1415b-135">String</span><span class="sxs-lookup"><span data-stu-id="1415b-135">String</span></span>|<span data-ttu-id="1415b-136">Имя пользователя в объекте DevicePolicyStatus.</span><span class="sxs-lookup"><span data-stu-id="1415b-136">User name of the DevicePolicyStatus.</span></span>|
+|<span data-ttu-id="1415b-137">devicesCount</span><span class="sxs-lookup"><span data-stu-id="1415b-137">devicesCount</span></span>|<span data-ttu-id="1415b-138">Int32</span><span class="sxs-lookup"><span data-stu-id="1415b-138">Int32</span></span>|<span data-ttu-id="1415b-139">Количество устройств для этого пользователя.</span><span class="sxs-lookup"><span data-stu-id="1415b-139">Devices count for that user.</span></span>|
+|<span data-ttu-id="1415b-140">status</span><span class="sxs-lookup"><span data-stu-id="1415b-140">status</span></span>|[<span data-ttu-id="1415b-141">Комплианцестатус</span><span class="sxs-lookup"><span data-stu-id="1415b-141">complianceStatus</span></span>](../resources/intune-shared-compliancestatus.md)|<span data-ttu-id="1415b-142">Состояние соответствия требованиям для отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="1415b-142">Compliance status of the policy report.</span></span> <span data-ttu-id="1415b-143">Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span><span class="sxs-lookup"><span data-stu-id="1415b-143">Possible values are: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.</span></span>|
+|<span data-ttu-id="1415b-144">lastReportedDateTime</span><span class="sxs-lookup"><span data-stu-id="1415b-144">lastReportedDateTime</span></span>|<span data-ttu-id="1415b-145">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="1415b-145">DateTimeOffset</span></span>|<span data-ttu-id="1415b-146">Дата и время последнего изменения отчета о политике.</span><span class="sxs-lookup"><span data-stu-id="1415b-146">Last modified date time of the policy report.</span></span>|
+|<span data-ttu-id="1415b-147">userPrincipalName</span><span class="sxs-lookup"><span data-stu-id="1415b-147">userPrincipalName</span></span>|<span data-ttu-id="1415b-148">String</span><span class="sxs-lookup"><span data-stu-id="1415b-148">String</span></span>|<span data-ttu-id="1415b-149">Имя участника-пользователя.</span><span class="sxs-lookup"><span data-stu-id="1415b-149">UserPrincipalName.</span></span>|
 
 
 
-## <a name="response"></a><span data-ttu-id="bebda-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="bebda-150">Response</span></span>
-<span data-ttu-id="bebda-151">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="bebda-151">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object in the response body.</span></span>
+## <a name="response"></a><span data-ttu-id="1415b-150">Отклик</span><span class="sxs-lookup"><span data-stu-id="1415b-150">Response</span></span>
+<span data-ttu-id="1415b-151">В случае успешного выполнения этот метод возвращает код отклика `201 Created` и объект [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="1415b-151">If successful, this method returns a `201 Created` response code and a [managedDeviceMobileAppConfigurationUserStatus](../resources/intune-apps-manageddevicemobileappconfigurationuserstatus.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="bebda-152">Пример</span><span class="sxs-lookup"><span data-stu-id="bebda-152">Example</span></span>
+## <a name="example"></a><span data-ttu-id="1415b-152">Пример</span><span class="sxs-lookup"><span data-stu-id="1415b-152">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="bebda-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="bebda-153">Request</span></span>
-<span data-ttu-id="bebda-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="bebda-154">Here is an example of the request.</span></span>
+### <a name="request"></a><span data-ttu-id="1415b-153">Запрос</span><span class="sxs-lookup"><span data-stu-id="1415b-153">Request</span></span>
+<span data-ttu-id="1415b-154">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="1415b-154">Here is an example of the request.</span></span>
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceAppManagement/mobileAppConfigurations/{managedDeviceMobileAppConfigurationId}/userStatuses
 Content-type: application/json
@@ -79,8 +79,8 @@ Content-length: 306
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="bebda-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="bebda-155">Response</span></span>
-<span data-ttu-id="bebda-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="bebda-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+### <a name="response"></a><span data-ttu-id="1415b-155">Отклик</span><span class="sxs-lookup"><span data-stu-id="1415b-155">Response</span></span>
+<span data-ttu-id="1415b-p103">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="1415b-p103">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json

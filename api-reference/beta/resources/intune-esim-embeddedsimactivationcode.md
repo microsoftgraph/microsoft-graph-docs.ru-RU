@@ -5,35 +5,35 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c44b685c46b300ced8d81d61de9308648c69eacc
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787633"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547034"
 ---
-# <a name="embeddedsimactivationcode-resource-type"></a><span data-ttu-id="9707f-103">Тип ресурса Ембеддедсимактиватионкоде</span><span class="sxs-lookup"><span data-stu-id="9707f-103">embeddedSIMActivationCode resource type</span></span>
+# <a name="embeddedsimactivationcode-resource-type"></a><span data-ttu-id="56ea1-103">Тип ресурса Ембеддедсимактиватионкоде</span><span class="sxs-lookup"><span data-stu-id="56ea1-103">embeddedSIMActivationCode resource type</span></span>
 
-> <span data-ttu-id="9707f-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9707f-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
+> <span data-ttu-id="56ea1-104">**Важно!** API Microsoft Graph в версии/Beta могут изменяться; рабочее использование не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="56ea1-104">**Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.</span></span>
 
-> <span data-ttu-id="9707f-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="9707f-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
+> <span data-ttu-id="56ea1-105">**Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.</span><span class="sxs-lookup"><span data-stu-id="56ea1-105">**Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.</span></span>
 
-<span data-ttu-id="9707f-106">Встроенный код активации SIM-карты, предоставленный оператором мобильной связи.</span><span class="sxs-lookup"><span data-stu-id="9707f-106">The embedded SIM activation code as provided by the mobile operator.</span></span>
+<span data-ttu-id="56ea1-106">Встроенный код активации SIM-карты, предоставленный оператором мобильной связи.</span><span class="sxs-lookup"><span data-stu-id="56ea1-106">The embedded SIM activation code as provided by the mobile operator.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9707f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="9707f-107">Properties</span></span>
-|<span data-ttu-id="9707f-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="9707f-108">Property</span></span>|<span data-ttu-id="9707f-109">Тип</span><span class="sxs-lookup"><span data-stu-id="9707f-109">Type</span></span>|<span data-ttu-id="9707f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9707f-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="56ea1-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="56ea1-107">Properties</span></span>
+|<span data-ttu-id="56ea1-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="56ea1-108">Property</span></span>|<span data-ttu-id="56ea1-109">Тип</span><span class="sxs-lookup"><span data-stu-id="56ea1-109">Type</span></span>|<span data-ttu-id="56ea1-110">Описание</span><span class="sxs-lookup"><span data-stu-id="56ea1-110">Description</span></span>|
 |:---|:---|:---|
-|<span data-ttu-id="9707f-111">ИнтегратедЦиркуиткардидентифиер</span><span class="sxs-lookup"><span data-stu-id="9707f-111">integratedCircuitCardIdentifier</span></span>|<span data-ttu-id="9707f-112">String</span><span class="sxs-lookup"><span data-stu-id="9707f-112">String</span></span>|<span data-ttu-id="9707f-113">Идентификатор интегрированной цепи (ИКЦИД) для этого встроенного кода активации SIM-карты, предоставленный оператором мобильной связи.</span><span class="sxs-lookup"><span data-stu-id="9707f-113">The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.</span></span>
-<span data-ttu-id="9707f-114">входные данные должны быть согласованы со следующим регулярным\[выражением: ' ^ 0-9\]{19}\[0-9\]_км_ $ '.</span><span class="sxs-lookup"><span data-stu-id="9707f-114">The input must match the following regular expression: '^\[0-9\]{19}\[0-9\]?$'.</span></span>|
-|<span data-ttu-id="9707f-115">Матчингидентифиер</span><span class="sxs-lookup"><span data-stu-id="9707f-115">matchingIdentifier</span></span>|<span data-ttu-id="9707f-116">String</span><span class="sxs-lookup"><span data-stu-id="9707f-116">String</span></span>|<span data-ttu-id="9707f-117">Матчингидентифиер (Матчингид), как указано в разделе ГСМА Association СГП. 22 RSP, раздел 4,1.</span><span class="sxs-lookup"><span data-stu-id="9707f-117">The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.</span></span>
-<span data-ttu-id="9707f-118">Входные данные должны быть согласованы со следующим регулярным\[выражением: ' ^ a –\-\]ZA ' Z0 – 9 \* $ '.</span><span class="sxs-lookup"><span data-stu-id="9707f-118">The input must match the following regular expression: '^\[a-zA-Z0-9\-\]\*$'.</span></span>|
-|<span data-ttu-id="9707f-119">Смдпплуссервераддресс</span><span class="sxs-lookup"><span data-stu-id="9707f-119">smdpPlusServerAddress</span></span>|<span data-ttu-id="9707f-120">String</span><span class="sxs-lookup"><span data-stu-id="9707f-120">String</span></span>|<span data-ttu-id="9707f-121">Полное доменное имя сервера SM — DP + Server, как указано в технической спецификации GSM Association СПГ .22 RSP.</span><span class="sxs-lookup"><span data-stu-id="9707f-121">The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.</span></span>
-<span data-ttu-id="9707f-122">Входные данные должны быть согласованы со следующим регулярным\[выражением: ' ^ (a-\]Za-z0\[-9 + (-a-\]Za-z0\.-9\[+) \*) +\]{2,}a-zA-Z $ '.</span><span class="sxs-lookup"><span data-stu-id="9707f-122">The input must match the following regular expression: '^(\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+)\*\.)+\[a-zA-Z\]{2,}$'.</span></span>|
+|<span data-ttu-id="56ea1-111">ИнтегратедЦиркуиткардидентифиер</span><span class="sxs-lookup"><span data-stu-id="56ea1-111">integratedCircuitCardIdentifier</span></span>|<span data-ttu-id="56ea1-112">String</span><span class="sxs-lookup"><span data-stu-id="56ea1-112">String</span></span>|<span data-ttu-id="56ea1-113">Идентификатор интегрированной цепи (ИКЦИД) для этого встроенного кода активации SIM-карты, предоставленный оператором мобильной связи.</span><span class="sxs-lookup"><span data-stu-id="56ea1-113">The Integrated Circuit Card Identifier (ICCID) for this embedded SIM activation code as provided by the mobile operator.</span></span>
+<span data-ttu-id="56ea1-114">входные данные должны быть согласованы со следующим регулярным\[выражением: ' ^ 0-9\]{19}\[0-9\]_км_ $ '.</span><span class="sxs-lookup"><span data-stu-id="56ea1-114">The input must match the following regular expression: '^\[0-9\]{19}\[0-9\]?$'.</span></span>|
+|<span data-ttu-id="56ea1-115">Матчингидентифиер</span><span class="sxs-lookup"><span data-stu-id="56ea1-115">matchingIdentifier</span></span>|<span data-ttu-id="56ea1-116">String</span><span class="sxs-lookup"><span data-stu-id="56ea1-116">String</span></span>|<span data-ttu-id="56ea1-117">Матчингидентифиер (Матчингид), как указано в разделе ГСМА Association СГП. 22 RSP, раздел 4,1.</span><span class="sxs-lookup"><span data-stu-id="56ea1-117">The MatchingIdentifier (MatchingID) as specified in the GSMA Association SGP.22 RSP Technical Specification section 4.1.</span></span>
+<span data-ttu-id="56ea1-118">Входные данные должны быть согласованы со следующим регулярным\[выражением: ' ^ a –\-\]ZA ' Z0 – 9 \* $ '.</span><span class="sxs-lookup"><span data-stu-id="56ea1-118">The input must match the following regular expression: '^\[a-zA-Z0-9\-\]\*$'.</span></span>|
+|<span data-ttu-id="56ea1-119">Смдпплуссервераддресс</span><span class="sxs-lookup"><span data-stu-id="56ea1-119">smdpPlusServerAddress</span></span>|<span data-ttu-id="56ea1-120">String</span><span class="sxs-lookup"><span data-stu-id="56ea1-120">String</span></span>|<span data-ttu-id="56ea1-121">Полное доменное имя сервера SM — DP + Server, как указано в технической спецификации GSM Association СПГ .22 RSP.</span><span class="sxs-lookup"><span data-stu-id="56ea1-121">The fully qualified domain name of the SM-DP+ server as specified in the GSM Association SPG .22 RSP Technical Specification.</span></span>
+<span data-ttu-id="56ea1-122">Входные данные должны быть согласованы со следующим регулярным\[выражением: ' ^ (a-\]Za-z0\[-9 + (-a-\]Za-z0\.-9\[+) \*) +\]{2,}a-zA-Z $ '.</span><span class="sxs-lookup"><span data-stu-id="56ea1-122">The input must match the following regular expression: '^(\[a-zA-Z0-9\]+(-\[a-zA-Z0-9\]+)\*\.)+\[a-zA-Z\]{2,}$'.</span></span>|
 
-## <a name="relationships"></a><span data-ttu-id="9707f-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="9707f-123">Relationships</span></span>
-<span data-ttu-id="9707f-124">Нет</span><span class="sxs-lookup"><span data-stu-id="9707f-124">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="56ea1-123">Отношения</span><span class="sxs-lookup"><span data-stu-id="56ea1-123">Relationships</span></span>
+<span data-ttu-id="56ea1-124">Нет</span><span class="sxs-lookup"><span data-stu-id="56ea1-124">None</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="9707f-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9707f-125">JSON Representation</span></span>
-<span data-ttu-id="9707f-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9707f-126">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="56ea1-125">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="56ea1-125">JSON Representation</span></span>
+<span data-ttu-id="56ea1-126">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="56ea1-126">Here is a JSON representation of the resource.</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.embeddedSIMActivationCode"

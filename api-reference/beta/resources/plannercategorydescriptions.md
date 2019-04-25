@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса plannerCategoryDescriptions
-description: 'Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту сведений о плане. Можно задать до 6 категорий. '
+title: Тип ресурса Планнеркатегоридескриптионс
+description: 'Ресурс **планнеркатегоридескриптионс** представляет описательные метки для категорий, определенных для плана. Он принадлежит объекту сведений о плане. Может быть определено до 6 категорий. '
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 33031dc3c688e1fefb34109cb0a4a303dbe1c183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521238"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579032"
 ---
-# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="85866-105">Тип ресурса plannerCategoryDescriptions</span><span class="sxs-lookup"><span data-stu-id="85866-105">plannerCategoryDescriptions resource type</span></span>
+# <a name="plannercategorydescriptions-resource-type"></a><span data-ttu-id="9cd45-105">Тип ресурса Планнеркатегоридескриптионс</span><span class="sxs-lookup"><span data-stu-id="9cd45-105">plannerCategoryDescriptions resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="85866-p102">Ресурс **plannerCategoryDescriptions** представляет описательные метки категорий, заданных для плана. Он принадлежит объекту [сведений о плане](plannerplandetails.md). Можно задать до 6 категорий.</span><span class="sxs-lookup"><span data-stu-id="85866-p102">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan. It belongs to the [plan details](plannerplandetails.md) object. There can be up to 6 categories defined.</span></span> 
+<span data-ttu-id="9cd45-106">Ресурс **планнеркатегоридескриптионс** представляет описательные метки для категорий, определенных для плана.</span><span class="sxs-lookup"><span data-stu-id="9cd45-106">The **plannerCategoryDescriptions** resource represents the descriptive labels for the categories that have been defined for a plan.</span></span> <span data-ttu-id="9cd45-107">Он принадлежит объекту [сведений о плане](plannerplandetails.md) .</span><span class="sxs-lookup"><span data-stu-id="9cd45-107">It belongs to the [plan details](plannerplandetails.md) object.</span></span> <span data-ttu-id="9cd45-108">Может быть определено до 6 категорий.</span><span class="sxs-lookup"><span data-stu-id="9cd45-108">There can be up to 6 categories defined.</span></span> 
 
 
-## <a name="properties"></a><span data-ttu-id="85866-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="85866-109">Properties</span></span>
-| <span data-ttu-id="85866-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="85866-110">Property</span></span>     | <span data-ttu-id="85866-111">Тип</span><span class="sxs-lookup"><span data-stu-id="85866-111">Type</span></span>   |<span data-ttu-id="85866-112">Описание</span><span class="sxs-lookup"><span data-stu-id="85866-112">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="9cd45-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="9cd45-109">Properties</span></span>
+| <span data-ttu-id="9cd45-110">Свойство</span><span class="sxs-lookup"><span data-stu-id="9cd45-110">Property</span></span>     | <span data-ttu-id="9cd45-111">Тип</span><span class="sxs-lookup"><span data-stu-id="9cd45-111">Type</span></span>   |<span data-ttu-id="9cd45-112">Описание</span><span class="sxs-lookup"><span data-stu-id="9cd45-112">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="85866-113">category1</span><span class="sxs-lookup"><span data-stu-id="85866-113">category1</span></span>|<span data-ttu-id="85866-114">String</span><span class="sxs-lookup"><span data-stu-id="85866-114">String</span></span>|<span data-ttu-id="85866-115">Метка, сопоставленная с категорией 1.</span><span class="sxs-lookup"><span data-stu-id="85866-115">The label associated with Category 1</span></span>|
-|<span data-ttu-id="85866-116">category2</span><span class="sxs-lookup"><span data-stu-id="85866-116">category2</span></span>|<span data-ttu-id="85866-117">String</span><span class="sxs-lookup"><span data-stu-id="85866-117">String</span></span>|<span data-ttu-id="85866-118">Метка, сопоставленная с категорией 2.</span><span class="sxs-lookup"><span data-stu-id="85866-118">The label associated with Category 2</span></span>|
-|<span data-ttu-id="85866-119">category3</span><span class="sxs-lookup"><span data-stu-id="85866-119">category3</span></span>|<span data-ttu-id="85866-120">String</span><span class="sxs-lookup"><span data-stu-id="85866-120">String</span></span>|<span data-ttu-id="85866-121">Метка, сопоставленная с категорией 3.</span><span class="sxs-lookup"><span data-stu-id="85866-121">The label associated with Category 3</span></span>|
-|<span data-ttu-id="85866-122">category4</span><span class="sxs-lookup"><span data-stu-id="85866-122">category4</span></span>|<span data-ttu-id="85866-123">String</span><span class="sxs-lookup"><span data-stu-id="85866-123">String</span></span>|<span data-ttu-id="85866-124">Метка, сопоставленная с категорией 4.</span><span class="sxs-lookup"><span data-stu-id="85866-124">The label associated with Category 4</span></span>|
-|<span data-ttu-id="85866-125">category5</span><span class="sxs-lookup"><span data-stu-id="85866-125">category5</span></span>|<span data-ttu-id="85866-126">String</span><span class="sxs-lookup"><span data-stu-id="85866-126">String</span></span>|<span data-ttu-id="85866-127">Метка, сопоставленная с категорией 5.</span><span class="sxs-lookup"><span data-stu-id="85866-127">The label associated with Category 5</span></span>|
-|<span data-ttu-id="85866-128">category6</span><span class="sxs-lookup"><span data-stu-id="85866-128">category6</span></span>|<span data-ttu-id="85866-129">String</span><span class="sxs-lookup"><span data-stu-id="85866-129">String</span></span>|<span data-ttu-id="85866-130">Метка, сопоставленная с категорией 6.</span><span class="sxs-lookup"><span data-stu-id="85866-130">The label associated with Category 6</span></span>|
+|<span data-ttu-id="9cd45-113">Category1</span><span class="sxs-lookup"><span data-stu-id="9cd45-113">category1</span></span>|<span data-ttu-id="9cd45-114">String</span><span class="sxs-lookup"><span data-stu-id="9cd45-114">String</span></span>|<span data-ttu-id="9cd45-115">Метка, связанная с категорией 1</span><span class="sxs-lookup"><span data-stu-id="9cd45-115">The label associated with Category 1</span></span>|
+|<span data-ttu-id="9cd45-116">category2</span><span class="sxs-lookup"><span data-stu-id="9cd45-116">category2</span></span>|<span data-ttu-id="9cd45-117">String</span><span class="sxs-lookup"><span data-stu-id="9cd45-117">String</span></span>|<span data-ttu-id="9cd45-118">Метка, сопоставленная с категорией 2</span><span class="sxs-lookup"><span data-stu-id="9cd45-118">The label associated with Category 2</span></span>|
+|<span data-ttu-id="9cd45-119">Category3</span><span class="sxs-lookup"><span data-stu-id="9cd45-119">category3</span></span>|<span data-ttu-id="9cd45-120">String</span><span class="sxs-lookup"><span data-stu-id="9cd45-120">String</span></span>|<span data-ttu-id="9cd45-121">Метка, связанная с категорией 3</span><span class="sxs-lookup"><span data-stu-id="9cd45-121">The label associated with Category 3</span></span>|
+|<span data-ttu-id="9cd45-122">category4</span><span class="sxs-lookup"><span data-stu-id="9cd45-122">category4</span></span>|<span data-ttu-id="9cd45-123">String</span><span class="sxs-lookup"><span data-stu-id="9cd45-123">String</span></span>|<span data-ttu-id="9cd45-124">Метка, сопоставленная с категорией 4</span><span class="sxs-lookup"><span data-stu-id="9cd45-124">The label associated with Category 4</span></span>|
+|<span data-ttu-id="9cd45-125">category5</span><span class="sxs-lookup"><span data-stu-id="9cd45-125">category5</span></span>|<span data-ttu-id="9cd45-126">String</span><span class="sxs-lookup"><span data-stu-id="9cd45-126">String</span></span>|<span data-ttu-id="9cd45-127">Метка, сопоставленная с категорией 5</span><span class="sxs-lookup"><span data-stu-id="9cd45-127">The label associated with Category 5</span></span>|
+|<span data-ttu-id="9cd45-128">category6</span><span class="sxs-lookup"><span data-stu-id="9cd45-128">category6</span></span>|<span data-ttu-id="9cd45-129">String</span><span class="sxs-lookup"><span data-stu-id="9cd45-129">String</span></span>|<span data-ttu-id="9cd45-130">Метка, сопоставленная с категорией 6</span><span class="sxs-lookup"><span data-stu-id="9cd45-130">The label associated with Category 6</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="85866-131">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="85866-131">JSON representation</span></span>
-<span data-ttu-id="85866-132">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="85866-132">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="9cd45-131">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9cd45-131">JSON representation</span></span>
+<span data-ttu-id="9cd45-132">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9cd45-132">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

@@ -3,49 +3,49 @@ title: Просмотр ресурсов в Microsoft Graph
 description: Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.
 localization_priority: Priority
 ms.openlocfilehash: dc4cafc00516f4222ba6ec860dd45ff96d608dd8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27863835"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581011"
 ---
-# <a name="traverse-microsoft-graph"></a><span data-ttu-id="f05ef-104">Просмотр ресурсов в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f05ef-104">Traverse Microsoft Graph</span></span>
+# <a name="traverse-microsoft-graph"></a><span data-ttu-id="4342b-104">Просмотр ресурсов в Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="4342b-104">Traverse Microsoft Graph</span></span>
 
-<span data-ttu-id="f05ef-p102">Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p102">In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph.</span></span>
+<span data-ttu-id="4342b-p102">Помимо чтения и записи данных с помощью API Microsoft Graph, вы можете использовать шаблоны запросов для просмотра ресурсов в Microsoft Graph. Документ метаданных поможет вам разобраться в модели данных ресурсов и отношений в Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="4342b-p102">In addition to using the Microsoft Graph API to read and write data, you can use a number of request patterns to traverse through the resources in Microsoft Graph. The metadata document also helps you to understand the data model of the resources and relationships in Microsoft Graph.</span></span>
 
-## <a name="microsoft-graph-api-metadata"></a><span data-ttu-id="f05ef-107">Метаданные API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f05ef-107">Microsoft Graph API metadata</span></span>
+## <a name="microsoft-graph-api-metadata"></a><span data-ttu-id="4342b-107">Метаданные API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="4342b-107">Microsoft Graph API metadata</span></span>
 
-<span data-ttu-id="f05ef-p103">Документ метаданных ($metadata) публикуется в корневом каталоге службы. По указанным ниже URL-адресам можно просмотреть сервисный документ для версии 1.0 и бета-версии API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p103">The metadata document ($metadata) is published at the service root. You can view the service document for the v1.0 and beta versions of the Microsoft Graph API via the following URLs.</span></span>
+<span data-ttu-id="4342b-p103">Документ метаданных ($metadata) публикуется в корневом каталоге службы. По указанным ниже URL-адресам можно просмотреть сервисный документ для версии 1.0 и бета-версии API Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="4342b-p103">The metadata document ($metadata) is published at the service root. You can view the service document for the v1.0 and beta versions of the Microsoft Graph API via the following URLs.</span></span>
 
-<span data-ttu-id="f05ef-110">**Метаданные API Microsoft Graph 1.0**</span><span class="sxs-lookup"><span data-stu-id="f05ef-110">**Microsoft Graph API v1.0 metadata**</span></span>
+<span data-ttu-id="4342b-110">**Метаданные API Microsoft Graph 1.0**</span><span class="sxs-lookup"><span data-stu-id="4342b-110">**Microsoft Graph API v1.0 metadata**</span></span>
 ```
     https://graph.microsoft.com/v1.0/$metadata
 ```
 
-<span data-ttu-id="f05ef-111">**Метаданные API Microsoft Graph (бета-версия)**</span><span class="sxs-lookup"><span data-stu-id="f05ef-111">**Microsoft Graph API beta metadata**</span></span>
+<span data-ttu-id="4342b-111">**Метаданные API Microsoft Graph (бета-версия)**</span><span class="sxs-lookup"><span data-stu-id="4342b-111">**Microsoft Graph API beta metadata**</span></span>
 
 ```
     https://graph.microsoft.com/beta/$metadata
 ```
 
-<span data-ttu-id="f05ef-112">Метаданные позволяют разобраться в модели данных Microsoft Graph, в том числе типах объектов, сложных типах и перечислениях, из которых состоят ресурсы, представленные в пакетах запросов и откликов.</span><span class="sxs-lookup"><span data-stu-id="f05ef-112">The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets.</span></span>
+<span data-ttu-id="4342b-112">Метаданные позволяют разобраться в модели данных Microsoft Graph, в том числе типах объектов, сложных типах и перечислениях, из которых состоят ресурсы, представленные в пакетах запросов и откликов.</span><span class="sxs-lookup"><span data-stu-id="4342b-112">The metadata allows you to see and understand the Microsoft Graph data model, including the entity types, complex types, and enumerations that make up the resources represented in the request and response packets.</span></span>
 
-<span data-ttu-id="f05ef-113">С помощью метаданных можно узнать о связях между объектами в Microsoft Graph и создать URL-адреса для перехода между ними.</span><span class="sxs-lookup"><span data-stu-id="f05ef-113">You can use the metadata to learn the realtionships between entities in Microsoft Graph and establish URLs that navigate between those entities.</span></span>
+<span data-ttu-id="4342b-113">С помощью метаданных можно узнать о связях между объектами в Microsoft Graph и создать URL-адреса для перехода между ними.</span><span class="sxs-lookup"><span data-stu-id="4342b-113">You can use the metadata to learn the realtionships between entities in Microsoft Graph and establish URLs that navigate between those entities.</span></span>
 
-<span data-ttu-id="f05ef-p104">Имена ресурсов URL-адреса пути, параметры запросов, а также параметры и значения действий указываются без учета регистра. Но назначаемые значения, идентификаторы объектов и другие значения в кодировке Base64 указываются с учетом регистра.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p104">Path URL resource names, query parameters, and action parameters and values are not case-sensitive. However, values you assign, entity IDs, and other base-64-encoded values are case-sensitive.</span></span>
+<span data-ttu-id="4342b-p104">Имена ресурсов URL-адреса пути, параметры запросов, а также параметры и значения действий указываются без учета регистра. Но назначаемые значения, идентификаторы объектов и другие значения в кодировке Base64 указываются с учетом регистра.</span><span class="sxs-lookup"><span data-stu-id="4342b-p104">Path URL resource names, query parameters, and action parameters and values are not case-sensitive. However, values you assign, entity IDs, and other base-64-encoded values are case-sensitive.</span></span>
 
-## <a name="view-a-collection-of-resources"></a><span data-ttu-id="f05ef-116">Просмотр коллекции ресурсов</span><span class="sxs-lookup"><span data-stu-id="f05ef-116">View a collection of resources</span></span>
+## <a name="view-a-collection-of-resources"></a><span data-ttu-id="4342b-116">Просмотр коллекции ресурсов</span><span class="sxs-lookup"><span data-stu-id="4342b-116">View a collection of resources</span></span>
 
-<span data-ttu-id="f05ef-p105">Microsoft Graph позволяет просматривать ресурсы в клиенте с помощью HTTP-запросов GET. Отклик на запрос включает свойства каждого ресурса, при этом каждый ресурс определяется по соответствующему идентификатору. ИД ресурса может быть GUID, его формат обычно разнится в зависимости от типа ресурса.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p105">Microsoft Graph lets you view resources in a tenant using HTTP GET queries. The query response includes properties of each resource, with each resource identified by its ID. The format of a resource ID can be a GUID, and generally varies according to the resource type.</span></span> 
+<span data-ttu-id="4342b-p105">Microsoft Graph позволяет просматривать ресурсы в клиенте с помощью HTTP-запросов GET. Отклик на запрос включает свойства каждого ресурса, при этом каждый ресурс определяется по соответствующему идентификатору. ИД ресурса может быть GUID, его формат обычно разнится в зависимости от типа ресурса.</span><span class="sxs-lookup"><span data-stu-id="4342b-p105">Microsoft Graph lets you view resources in a tenant using HTTP GET queries. The query response includes properties of each resource, with each resource identified by its ID. The format of a resource ID can be a GUID, and generally varies according to the resource type.</span></span> 
 
-<span data-ttu-id="f05ef-120">Например, можно получить коллекцию объектов user, определенных в клиенте:</span><span class="sxs-lookup"><span data-stu-id="f05ef-120">For example, you can get the collection of users defined in a tenant:</span></span>
+<span data-ttu-id="4342b-120">Например, можно получить коллекцию объектов user, определенных в клиенте:</span><span class="sxs-lookup"><span data-stu-id="4342b-120">For example, you can get the collection of users defined in a tenant:</span></span>
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-<span data-ttu-id="f05ef-p106">При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов [user](/graph/api/resources/user?view=graph-rest-1.0). Каждый объект user идентифицируется по свойству **id** и сопровождается свойствами по умолчанию. Полезные данные, показанные ниже, усечены для краткости.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p106">If successful, you'll get a 200 OK response that contains the collection of [user](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each user is identified by the **id** property and accompanied by its default properties. The payload shown below is truncated for brevity.</span></span>
+<span data-ttu-id="4342b-p106">При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов [user](/graph/api/resources/user?view=graph-rest-1.0). Каждый объект user идентифицируется по свойству **id** и сопровождается свойствами по умолчанию. Полезные данные, показанные ниже, усечены для краткости.</span><span class="sxs-lookup"><span data-stu-id="4342b-p106">If successful, you'll get a 200 OK response that contains the collection of [user](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each user is identified by the **id** property and accompanied by its default properties. The payload shown below is truncated for brevity.</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -88,14 +88,14 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="f05ef-p107">Microsoft Graph позволяет также просматривать коллекции, переходя к нужному отношению, которым связаны ресурсы. Например, применяя свойство навигации **mailFolders** объекта user, вы можете запрашивать коллекцию ресурсов [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="f05ef-p107">Microsoft Graph also lets you view collections by navigating the relationships of one resource with another. For example, through a user's **mailFolders** navigation property, you can query for the collection of [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resources in the user's mailbox:</span></span>
+<span data-ttu-id="4342b-p107">Microsoft Graph позволяет также просматривать коллекции, переходя к нужному отношению, которым связаны ресурсы. Например, применяя свойство навигации **mailFolders** объекта user, вы можете запрашивать коллекцию ресурсов [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) в почтовом ящике пользователя:</span><span class="sxs-lookup"><span data-stu-id="4342b-p107">Microsoft Graph also lets you view collections by navigating the relationships of one resource with another. For example, through a user's **mailFolders** navigation property, you can query for the collection of [mailFolder](/graph/api/resources/mailfolder?view=graph-rest-1.0) resources in the user's mailbox:</span></span>
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/mailfolders HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-<span data-ttu-id="f05ef-p108">При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов [mailFolder](/graph/api/resources/user?view=graph-rest-1.0). Каждый объект **mailFolder** определяется по его свойству **id** и сопровождается другими свойствами. Полезные данные, показанные ниже, усечены для краткости.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p108">If successful, you'll get a 200 OK response that contains the collection of [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each **mailFolder** is identified by the **id** property and accompanied by its properties. The payload shown below is truncated for brevity.</span></span>
+<span data-ttu-id="4342b-p108">При успешном выполнении запроса будет получен отклик 200 OK, который содержит полезные данные с коллекцией ресурсов [mailFolder](/graph/api/resources/user?view=graph-rest-1.0). Каждый объект **mailFolder** определяется по его свойству **id** и сопровождается другими свойствами. Полезные данные, показанные ниже, усечены для краткости.</span><span class="sxs-lookup"><span data-stu-id="4342b-p108">If successful, you'll get a 200 OK response that contains the collection of [mailFolder](/graph/api/resources/user?view=graph-rest-1.0) resources in the payload. Each **mailFolder** is identified by the **id** property and accompanied by its properties. The payload shown below is truncated for brevity.</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -135,16 +135,16 @@ Content-type: application/json
 
 
 
-## <a name="view-a-specific-resource-from-a-collection-by-id"></a><span data-ttu-id="f05ef-129">Просмотр ресурса из коллекции по идентификатору</span><span class="sxs-lookup"><span data-stu-id="f05ef-129">View a specific resource from a collection by ID</span></span>
+## <a name="view-a-specific-resource-from-a-collection-by-id"></a><span data-ttu-id="4342b-129">Просмотр ресурса из коллекции по идентификатору</span><span class="sxs-lookup"><span data-stu-id="4342b-129">View a specific resource from a collection by ID</span></span>
 
-<span data-ttu-id="f05ef-p109">Еще раз приведем ресурс **user** в качестве примера. Чтобы просмотреть сведения об определенном пользователе, отправьте HTTPS-запрос GET, указав идентификатор объекта user. Для объекта **user** в качестве идентификатора можно использовать свойство **id** или **userPrincipalName**. В следующем примере запроса указано значение **userPrincipalName** как идентификатор user.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p109">Continuing with using **user** as an example - to view the information about a user, use an HTTPS GET request to get a specific user by the user's ID. For a **user** entity, you can use either the **id** or **userPrincipalName** property as the identifier. The following request example uses the **userPrincipalName** value as the user's ID.</span></span> 
+<span data-ttu-id="4342b-p109">Еще раз приведем ресурс **user** в качестве примера. Чтобы просмотреть сведения об определенном пользователе, отправьте HTTPS-запрос GET, указав идентификатор объекта user. Для объекта **user** в качестве идентификатора можно использовать свойство **id** или **userPrincipalName**. В следующем примере запроса указано значение **userPrincipalName** как идентификатор user.</span><span class="sxs-lookup"><span data-stu-id="4342b-p109">Continuing with using **user** as an example - to view the information about a user, use an HTTPS GET request to get a specific user by the user's ID. For a **user** entity, you can use either the **id** or **userPrincipalName** property as the identifier. The following request example uses the **userPrincipalName** value as the user's ID.</span></span> 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-<span data-ttu-id="f05ef-133">При успешном выполнении запроса будет получен отклик 200 OK, содержащий полезные данные с представлением ресурса user, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="f05ef-133">If successful, you'll get a 200 OK response that contains the user resource representation in the payload, as shown.</span></span>
+<span data-ttu-id="4342b-133">При успешном выполнении запроса будет получен отклик 200 OK, содержащий полезные данные с представлением ресурса user, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="4342b-133">If successful, you'll get a 200 OK response that contains the user resource representation in the payload, as shown.</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -165,15 +165,15 @@ content-length: 982
 }
 ```
 
-## <a name="read-specific-properties-of-a-resource"></a><span data-ttu-id="f05ef-134">Чтение определенных свойств ресурса</span><span class="sxs-lookup"><span data-stu-id="f05ef-134">Read specific properties of a resource</span></span>
-<span data-ttu-id="f05ef-135">Чтобы получить только биографические данные пользователя, например предоставленное им описание в разделе _Обо мне_ и набор квалификационных навыков, в предыдущий запрос можно добавить параметр [$select](query-parameters.md), как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="f05ef-135">To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example.</span></span> 
+## <a name="read-specific-properties-of-a-resource"></a><span data-ttu-id="4342b-134">Чтение определенных свойств ресурса</span><span class="sxs-lookup"><span data-stu-id="4342b-134">Read specific properties of a resource</span></span>
+<span data-ttu-id="4342b-135">Чтобы получить только биографические данные пользователя, например предоставленное им описание в разделе _Обо мне_ и набор квалификационных навыков, в предыдущий запрос можно добавить параметр [$select](query-parameters.md), как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="4342b-135">To retrieve only the user's biographical data, such as the user's provided _About me_ description and their skill set, you can add the [$select](query-parameters.md) query parameter to the previous request, as shown in the following example.</span></span> 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com?$select=displayName,aboutMe,skills HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-<span data-ttu-id="f05ef-136">При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="f05ef-136">The successful response returns the 200 OK status and a payload, as shown.</span></span>
+<span data-ttu-id="4342b-136">При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="4342b-136">The successful response returns the 200 OK status and a payload, as shown.</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -191,17 +191,17 @@ content-length: 169
     ]
 }
 ```
-<span data-ttu-id="f05ef-137">Здесь возвращаются не полные наборы свойств для объекта **user**, а только основные свойства **aboutMe**, **displayName** и **skills**.</span><span class="sxs-lookup"><span data-stu-id="f05ef-137">Here, instead of the entire property sets on the **user** entity, only the **aboutMe**, **displayName**, and **skills** basic properties are returned.</span></span>
+<span data-ttu-id="4342b-137">Здесь возвращаются не полные наборы свойств для объекта **user**, а только основные свойства **aboutMe**, **displayName** и **skills**.</span><span class="sxs-lookup"><span data-stu-id="4342b-137">Here, instead of the entire property sets on the **user** entity, only the **aboutMe**, **displayName**, and **skills** basic properties are returned.</span></span>
 
-## <a name="read-specific-properties-of-the-resources-in-a-collection"></a><span data-ttu-id="f05ef-138">Чтение отдельных свойств ресурсов в коллекции</span><span class="sxs-lookup"><span data-stu-id="f05ef-138">Read specific properties of the resources in a collection</span></span>
-<span data-ttu-id="f05ef-p110">Вы можете не только просматривать отдельные свойства одного ресурса, но и получить все ее ресурсы только с указанными свойствами, применив к коллекции аналогичный параметр запроса [$select](query-parameters.md). Например, чтобы запросить имена элементов на диске вошедшего пользователя, можно отправить следующий HTTPS-запрос GET.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p110">In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each. For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request.</span></span>
+## <a name="read-specific-properties-of-the-resources-in-a-collection"></a><span data-ttu-id="4342b-138">Чтение отдельных свойств ресурсов в коллекции</span><span class="sxs-lookup"><span data-stu-id="4342b-138">Read specific properties of the resources in a collection</span></span>
+<span data-ttu-id="4342b-p110">Вы можете не только просматривать отдельные свойства одного ресурса, но и получить все ее ресурсы только с указанными свойствами, применив к коллекции аналогичный параметр запроса [$select](query-parameters.md). Например, чтобы запросить имена элементов на диске вошедшего пользователя, можно отправить следующий HTTPS-запрос GET.</span><span class="sxs-lookup"><span data-stu-id="4342b-p110">In addition to reading specific properties of a single resource, you can also apply the similar [$select](query-parameters.md) query parameter to a collection to get back all resources in the collection with just the specific properties returned on each. For example, to query the name of the signed-in user's drive items, you can submit the following HTTPS GET request.</span></span>
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/me/drive/root/children?$select=name HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-<span data-ttu-id="f05ef-141">При успешном ответе возвращаются код состояния 200 OK и полезные данные, содержащие только имена общих файлов, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="f05ef-141">The successful response returns a 200 OK status code and a payload that contains only the names of the shared files, as shown in the following example.</span></span>
+<span data-ttu-id="4342b-141">При успешном ответе возвращаются код состояния 200 OK и полезные данные, содержащие только имена общих файлов, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="4342b-141">The successful response returns a 200 OK status code and a payload that contains only the names of the shared files, as shown in the following example.</span></span>
 
 ```no-highlight 
 {
@@ -223,15 +223,15 @@ Authorization : Bearer {access_token}
 }
 ```
 
-## <a name="traverse-from-one-resource-to-another-via-relationship"></a><span data-ttu-id="f05ef-142">Переход от одного ресурса к другому с помощью отношения</span><span class="sxs-lookup"><span data-stu-id="f05ef-142">Traverse from one resource to another via relationship</span></span>
-<span data-ttu-id="f05ef-p111">Руководитель состоит в отношении **directReports** со своими подчиненными. Чтобы запросить список подчиненных пользователя, можно использовать приведенный ниже HTTPS-запрос GET для перехода к целевому объекту с помощью отношения.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p111">A manager holds a **directReports** relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.</span></span> 
+## <a name="traverse-from-one-resource-to-another-via-relationship"></a><span data-ttu-id="4342b-142">Переход от одного ресурса к другому с помощью отношения</span><span class="sxs-lookup"><span data-stu-id="4342b-142">Traverse from one resource to another via relationship</span></span>
+<span data-ttu-id="4342b-p111">Руководитель состоит в отношении **directReports** со своими подчиненными. Чтобы запросить список подчиненных пользователя, можно использовать приведенный ниже HTTPS-запрос GET для перехода к целевому объекту с помощью отношения.</span><span class="sxs-lookup"><span data-stu-id="4342b-p111">A manager holds a **directReports** relationship with the other users reporting to him or her. To query the list of the direct reports of a user, you can use the following HTTPS GET request to navigate to the intended target via relationship traversal.</span></span> 
 
 ```no-highlight 
 GET https://graph.microsoft.com/v1.0/users/john.doe@contoso.onmicrosoft.com/directReports HTTP/1.1
 Authorization : Bearer {access_token}
 ```
 
-<span data-ttu-id="f05ef-145">При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="f05ef-145">The successful response returns the 200 OK status and a payload, as shown.</span></span>
+<span data-ttu-id="4342b-145">При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="4342b-145">The successful response returns the 200 OK status and a payload, as shown.</span></span>
 
 ```no-highlight 
 HTTP/1.1 200 OK
@@ -249,7 +249,7 @@ content-length: 152
 }
 ```
 
-<span data-ttu-id="f05ef-p112">Аналогичным образом можно переходить к ресурсам, используя их отношения. Например, отношение user-messages позволяет перейти от пользователя Azure Active Directory (AD) к набору сообщений Outlook. В приведенном ниже примере показано, как это сделать в вызове REST API.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p112">Similarly, you can follow a relationship to navigate to related resources. For example, the user-messages relationship enables traversal from an Azure Active Directory (Azure AD) User to a set of Outlook mail messages. The following example shows how to do this in a REST API call.</span></span>
+<span data-ttu-id="4342b-p112">Аналогичным образом можно переходить к ресурсам, используя их отношения. Например, отношение user-messages позволяет перейти от пользователя Azure Active Directory (AD) к набору сообщений Outlook. В приведенном ниже примере показано, как это сделать в вызове REST API.</span><span class="sxs-lookup"><span data-stu-id="4342b-p112">Similarly, you can follow a relationship to navigate to related resources. For example, the user-messages relationship enables traversal from an Azure Active Directory (Azure AD) User to a set of Outlook mail messages. The following example shows how to do this in a REST API call.</span></span>
 
 
 ```no-highlight 
@@ -258,7 +258,7 @@ Authorization : Bearer {access_token}
 ```
 
     
-<span data-ttu-id="f05ef-149">При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="f05ef-149">The successful response returns the 200 OK status and a payload, as shown.</span></span>
+<span data-ttu-id="4342b-149">При успешном выполнении запроса в отклике возвращаются полезные данные и состояние 200 OK, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="4342b-149">The successful response returns the 200 OK status and a payload, as shown.</span></span>
 
 
 ```no-highlight 
@@ -294,10 +294,10 @@ content-length: 147
   ]
 }
 ```
-<span data-ttu-id="f05ef-150">Чтобы просмотреть все отношения для ресурса, откройте метаданные, найдите нужный EntityType и просмотрите все его свойства NavigationProperties.</span><span class="sxs-lookup"><span data-stu-id="f05ef-150">You can see all the relationships on a given resource by going to the metadata, finding the EntityType, and looking at all NavigationProperties for that EntityType.</span></span>
+<span data-ttu-id="4342b-150">Чтобы просмотреть все отношения для ресурса, откройте метаданные, найдите нужный EntityType и просмотрите все его свойства NavigationProperties.</span><span class="sxs-lookup"><span data-stu-id="4342b-150">You can see all the relationships on a given resource by going to the metadata, finding the EntityType, and looking at all NavigationProperties for that EntityType.</span></span>
 
-## <a name="call-functions"></a><span data-ttu-id="f05ef-151">Вызов функций</span><span class="sxs-lookup"><span data-stu-id="f05ef-151">Call functions</span></span>
-<span data-ttu-id="f05ef-p113">Microsoft Graph также поддерживает _функции_ для выполнения с ресурсами действий, отличных от простых операций CRUD (создание, чтение, обновление и удаление). Они часто имеют форму HTTPS-запросов POST, принимающих аргументы. Например, с помощью указанной ниже функции вошедший пользователь (`me`) может отправить сообщение электронной почты.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p113">Microsoft Graph also supports _functions_ to manipulate resources in ways that are not simply create, read, update, and delete (CRUD) operations. They are often in the shape of HTTPS POST requests in order to intake arguments for the function. For example, the following function lets the signed-in user (`me`) send an email message.</span></span>
+## <a name="call-functions"></a><span data-ttu-id="4342b-151">Вызов функций</span><span class="sxs-lookup"><span data-stu-id="4342b-151">Call functions</span></span>
+<span data-ttu-id="4342b-p113">Microsoft Graph также поддерживает _функции_ для выполнения с ресурсами действий, отличных от простых операций CRUD (создание, чтение, обновление и удаление). Они часто имеют форму HTTPS-запросов POST, принимающих аргументы. Например, с помощью указанной ниже функции вошедший пользователь (`me`) может отправить сообщение электронной почты.</span><span class="sxs-lookup"><span data-stu-id="4342b-p113">Microsoft Graph also supports _functions_ to manipulate resources in ways that are not simply create, read, update, and delete (CRUD) operations. They are often in the shape of HTTPS POST requests in order to intake arguments for the function. For example, the following function lets the signed-in user (`me`) send an email message.</span></span>
 
 ```no-highlight 
 POST https://graph.microsoft.com/v1.0/me/sendMail HTTP/1.1
@@ -331,13 +331,13 @@ content-length: 96
 }
 ```
 
-<span data-ttu-id="f05ef-p114">Вы можете просмотреть все доступные функции в метаданных. Они отображаются как функции или действия.</span><span class="sxs-lookup"><span data-stu-id="f05ef-p114">You can see all the functions that are available in the metadata. They appear as Functions or Actions.</span></span>
+<span data-ttu-id="4342b-p114">Вы можете просмотреть все доступные функции в метаданных. Они отображаются как функции или действия.</span><span class="sxs-lookup"><span data-stu-id="4342b-p114">You can see all the functions that are available in the metadata. They appear as Functions or Actions.</span></span>
 
-## <a name="use-the-microsoft-graph-sdks"></a><span data-ttu-id="f05ef-157">Использование пакетов SDK Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f05ef-157">Use the Microsoft Graph SDKs</span></span>
+## <a name="use-the-microsoft-graph-sdks"></a><span data-ttu-id="4342b-157">Использование пакетов SDK Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="4342b-157">Use the Microsoft Graph SDKs</span></span>
 
-<span data-ttu-id="f05ef-p115">Вам нравятся возможности и удобство пакетов SDK? Вы всегда можете вызывать Microsoft Graph с помощью REST API, но мы также предоставляем пакеты SDK для многих популярных платформ. Обзор доступных пакетов SDK см. в разделе [Примеры кода и пакеты SDK](https://developer.microsoft.com/graph/code-samples-and-sdks).</span><span class="sxs-lookup"><span data-stu-id="f05ef-p115">Like the power and ease of SDKs? While you can always use REST APIs to call Microsoft Graph, we also provide SDKs for many popular platforms. To explore the SDKs that are available, see [Code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).</span></span>
+<span data-ttu-id="4342b-p115">Вам нравятся возможности и удобство пакетов SDK? Вы всегда можете вызывать Microsoft Graph с помощью REST API, но мы также предоставляем пакеты SDK для многих популярных платформ. Обзор доступных пакетов SDK см. в разделе [Примеры кода и пакеты SDK](https://developer.microsoft.com/graph/code-samples-and-sdks).</span><span class="sxs-lookup"><span data-stu-id="4342b-p115">Like the power and ease of SDKs? While you can always use REST APIs to call Microsoft Graph, we also provide SDKs for many popular platforms. To explore the SDKs that are available, see [Code samples and SDKs](https://developer.microsoft.com/graph/code-samples-and-sdks).</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="f05ef-161">См. также</span><span class="sxs-lookup"><span data-stu-id="f05ef-161">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="4342b-161">См. также</span><span class="sxs-lookup"><span data-stu-id="4342b-161">See also</span></span>
 
-- [<span data-ttu-id="f05ef-162">Использование API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="f05ef-162">Use the Microsoft Graph API</span></span>](use-the-api.md)
-- [<span data-ttu-id="f05ef-163">Получение токенов аутентификации</span><span class="sxs-lookup"><span data-stu-id="f05ef-163">Get auth tokens</span></span>](auth-overview.md)
+- [<span data-ttu-id="4342b-162">Использование API Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="4342b-162">Use the Microsoft Graph API</span></span>](use-the-api.md)
+- [<span data-ttu-id="4342b-163">Получение токенов аутентификации</span><span class="sxs-lookup"><span data-stu-id="4342b-163">Get auth tokens</span></span>](auth-overview.md)

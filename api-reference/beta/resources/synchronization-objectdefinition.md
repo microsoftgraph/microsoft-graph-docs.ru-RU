@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса objectDefinition
-description: Описывает объект и его атрибуты. Определения объектов являются частью directoryDefinition, который обновляется как часть synchronizationSchema.
+title: Тип ресурса Обжектдефинитион
+description: Описывает объект и его атрибуты. Определения объектов входят в состав Директоридефинитион, который обновляется в составе Синчронизатионсчема.
 localization_priority: Normal
 ms.openlocfilehash: d8182cad44deac156c077e977551abc9c31c7d25
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29514133"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581767"
 ---
-# <a name="objectdefinition-resource-type"></a><span data-ttu-id="ebf42-104">Тип ресурса objectDefinition</span><span class="sxs-lookup"><span data-stu-id="ebf42-104">objectDefinition resource type</span></span>
+# <a name="objectdefinition-resource-type"></a><span data-ttu-id="4217d-104">Тип ресурса Обжектдефинитион</span><span class="sxs-lookup"><span data-stu-id="4217d-104">objectDefinition resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="ebf42-105">Описывает объект и его атрибуты.</span><span class="sxs-lookup"><span data-stu-id="ebf42-105">Describes an object and its attributes.</span></span> <span data-ttu-id="ebf42-106">Определения объектов являются частью [directoryDefinition](synchronization-directorydefinition.md), который обновляется как часть [synchronizationSchema](synchronization-synchronizationschema.md).</span><span class="sxs-lookup"><span data-stu-id="ebf42-106">Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).</span></span>
+<span data-ttu-id="4217d-105">Описывает объект и его атрибуты.</span><span class="sxs-lookup"><span data-stu-id="4217d-105">Describes an object and its attributes.</span></span> <span data-ttu-id="4217d-106">Определения объектов входят в состав [директоридефинитион](synchronization-directorydefinition.md), который обновляется в составе [синчронизатионсчема](synchronization-synchronizationschema.md).</span><span class="sxs-lookup"><span data-stu-id="4217d-106">Object definitions are part of [directoryDefinition](synchronization-directorydefinition.md), which is updated as part of [synchronizationSchema](synchronization-synchronizationschema.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="ebf42-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="ebf42-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="4217d-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="4217d-107">Properties</span></span>
 
-| <span data-ttu-id="ebf42-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="ebf42-108">Property</span></span>      | <span data-ttu-id="ebf42-109">Тип</span><span class="sxs-lookup"><span data-stu-id="ebf42-109">Type</span></span>      | <span data-ttu-id="ebf42-110">Описание</span><span class="sxs-lookup"><span data-stu-id="ebf42-110">Description</span></span>    |
+| <span data-ttu-id="4217d-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="4217d-108">Property</span></span>      | <span data-ttu-id="4217d-109">Тип</span><span class="sxs-lookup"><span data-stu-id="4217d-109">Type</span></span>      | <span data-ttu-id="4217d-110">Описание</span><span class="sxs-lookup"><span data-stu-id="4217d-110">Description</span></span>    |
 |:--------------|:----------|:---------------|
-|<span data-ttu-id="ebf42-111">attributes</span><span class="sxs-lookup"><span data-stu-id="ebf42-111">attributes</span></span>     |<span data-ttu-id="ebf42-112">[attributeDefinition](synchronization-attributedefinition.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="ebf42-112">[attributeDefinition](synchronization-attributedefinition.md) collection</span></span>    | <span data-ttu-id="ebf42-113">Определяет атрибуты объекта.</span><span class="sxs-lookup"><span data-stu-id="ebf42-113">Defines attributes of the object.</span></span> |
-|<span data-ttu-id="ebf42-114">Метаданные</span><span class="sxs-lookup"><span data-stu-id="ebf42-114">metadata</span></span>       |<span data-ttu-id="ebf42-115">[metadataEntry](synchronization-metadataentry.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="ebf42-115">[metadataEntry](synchronization-metadataentry.md) collection</span></span>   |<span data-ttu-id="ebf42-116">Расширение дополнительные свойства.</span><span class="sxs-lookup"><span data-stu-id="ebf42-116">Additional extension properties.</span></span> <span data-ttu-id="ebf42-117">Если не указан явно, значения метаданных не должно изменяться.</span><span class="sxs-lookup"><span data-stu-id="ebf42-117">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
-|<span data-ttu-id="ebf42-118">name</span><span class="sxs-lookup"><span data-stu-id="ebf42-118">name</span></span>           |<span data-ttu-id="ebf42-119">String</span><span class="sxs-lookup"><span data-stu-id="ebf42-119">String</span></span>     |<span data-ttu-id="ebf42-120">Имя объекта.</span><span class="sxs-lookup"><span data-stu-id="ebf42-120">Name of the object.</span></span> <span data-ttu-id="ebf42-121">Должно быть уникальным в определении каталога.</span><span class="sxs-lookup"><span data-stu-id="ebf42-121">Must be unique within a directory definition.</span></span> <span data-ttu-id="ebf42-122">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="ebf42-122">Not nullable.</span></span>|
+|<span data-ttu-id="4217d-111">attributes</span><span class="sxs-lookup"><span data-stu-id="4217d-111">attributes</span></span>     |<span data-ttu-id="4217d-112">Коллекция [аттрибутедефинитион](synchronization-attributedefinition.md)</span><span class="sxs-lookup"><span data-stu-id="4217d-112">[attributeDefinition](synchronization-attributedefinition.md) collection</span></span>    | <span data-ttu-id="4217d-113">Определяет атрибуты объекта.</span><span class="sxs-lookup"><span data-stu-id="4217d-113">Defines attributes of the object.</span></span> |
+|<span data-ttu-id="4217d-114">метаданных</span><span class="sxs-lookup"><span data-stu-id="4217d-114">metadata</span></span>       |<span data-ttu-id="4217d-115">Коллекция [метадатаентри](synchronization-metadataentry.md)</span><span class="sxs-lookup"><span data-stu-id="4217d-115">[metadataEntry](synchronization-metadataentry.md) collection</span></span>   |<span data-ttu-id="4217d-116">Дополнительные свойства расширения.</span><span class="sxs-lookup"><span data-stu-id="4217d-116">Additional extension properties.</span></span> <span data-ttu-id="4217d-117">Если явно не указано иное, значения метаданных не должны изменяться.</span><span class="sxs-lookup"><span data-stu-id="4217d-117">Unless mentioned explicitly, metadata values should not be changed.</span></span>|
+|<span data-ttu-id="4217d-118">name</span><span class="sxs-lookup"><span data-stu-id="4217d-118">name</span></span>           |<span data-ttu-id="4217d-119">String</span><span class="sxs-lookup"><span data-stu-id="4217d-119">String</span></span>     |<span data-ttu-id="4217d-120">Имя объекта.</span><span class="sxs-lookup"><span data-stu-id="4217d-120">Name of the object.</span></span> <span data-ttu-id="4217d-121">Должно быть уникальным в пределах определения каталога.</span><span class="sxs-lookup"><span data-stu-id="4217d-121">Must be unique within a directory definition.</span></span> <span data-ttu-id="4217d-122">Значение null не допускается.</span><span class="sxs-lookup"><span data-stu-id="4217d-122">Not nullable.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="ebf42-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="ebf42-123">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="4217d-123">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="4217d-123">JSON representation</span></span>
 
-<span data-ttu-id="ebf42-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="ebf42-124">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="4217d-124">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="4217d-124">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -43,7 +43,7 @@ ms.locfileid: "29514133"
 }
 ```
 
-## <a name="json-example"></a><span data-ttu-id="ebf42-125">Пример JSON</span><span class="sxs-lookup"><span data-stu-id="ebf42-125">JSON Example</span></span>
+## <a name="json-example"></a><span data-ttu-id="4217d-125">Пример JSON</span><span class="sxs-lookup"><span data-stu-id="4217d-125">JSON Example</span></span>
 
 <!-- {
   "blockType": "resource",

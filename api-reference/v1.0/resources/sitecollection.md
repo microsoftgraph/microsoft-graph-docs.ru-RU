@@ -6,21 +6,21 @@ title: SiteCollection
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 006f239acdecb2fb93ecf1d70e25a42b056b9283
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480196"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552785"
 ---
-# <a name="sitecollection-resource"></a><span data-ttu-id="721f9-102">Ресурс SiteCollection</span><span class="sxs-lookup"><span data-stu-id="721f9-102">SiteCollection resource</span></span>
+# <a name="sitecollection-resource"></a><span data-ttu-id="27c48-102">Ресурс SiteCollection</span><span class="sxs-lookup"><span data-stu-id="27c48-102">SiteCollection resource</span></span>
 
-<span data-ttu-id="721f9-103">Ресурс **siteCollection** предоставляет больше сведений о семействе веб-сайтов.</span><span class="sxs-lookup"><span data-stu-id="721f9-103">The **siteCollection** resource provides more information about a site collection.</span></span>
+<span data-ttu-id="27c48-103">Ресурс **siteCollection** предоставляет больше сведений о семействе веб-сайтов.</span><span class="sxs-lookup"><span data-stu-id="27c48-103">The **siteCollection** resource provides more information about a site collection.</span></span>
 
-<span data-ttu-id="721f9-104">Если для свойства **siteCollection** ресурса [**site**](site.md) задано значение, отличное от NULL, этот сайт является корневым для семейства веб-сайтов.</span><span class="sxs-lookup"><span data-stu-id="721f9-104">If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.</span></span>
+<span data-ttu-id="27c48-104">Если для свойства **siteCollection** ресурса [**site**](site.md) задано значение, отличное от NULL, этот сайт является корневым для семейства веб-сайтов.</span><span class="sxs-lookup"><span data-stu-id="27c48-104">If a [**site**](site.md) resource has a non-null **siteCollection** property, then the site is a root site for a site collection.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="721f9-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="721f9-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="27c48-105">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="27c48-105">JSON representation</span></span>
 
-<span data-ttu-id="721f9-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="721f9-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="27c48-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="27c48-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,12 +36,12 @@ ms.locfileid: "30480196"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="721f9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="721f9-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="27c48-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="27c48-107">Properties</span></span>
 
-| <span data-ttu-id="721f9-108">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="721f9-108">Property name</span></span>        | <span data-ttu-id="721f9-109">Тип</span><span class="sxs-lookup"><span data-stu-id="721f9-109">Type</span></span>     | <span data-ttu-id="721f9-110">Описание</span><span class="sxs-lookup"><span data-stu-id="721f9-110">Description</span></span>
+| <span data-ttu-id="27c48-108">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="27c48-108">Property name</span></span>        | <span data-ttu-id="27c48-109">Тип</span><span class="sxs-lookup"><span data-stu-id="27c48-109">Type</span></span>     | <span data-ttu-id="27c48-110">Описание</span><span class="sxs-lookup"><span data-stu-id="27c48-110">Description</span></span>
 |:---------------------|:---------|:---------------------------------------------------
-| <span data-ttu-id="721f9-111">**hostname**</span><span class="sxs-lookup"><span data-stu-id="721f9-111">**hostname**</span></span>         | <span data-ttu-id="721f9-112">строка</span><span class="sxs-lookup"><span data-stu-id="721f9-112">string</span></span>   | <span data-ttu-id="721f9-p101">Имя узла для семейства веб-сайтов. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="721f9-p101">The hostname for the site collection. Read-only.</span></span>
-| <span data-ttu-id="721f9-115">**root**</span><span class="sxs-lookup"><span data-stu-id="721f9-115">**root**</span></span>             | <span data-ttu-id="721f9-116">[root][]</span><span class="sxs-lookup"><span data-stu-id="721f9-116">[root][]</span></span> | <span data-ttu-id="721f9-117">Если задано, это указывает на то, что это корневое семейство веб-сайтов в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="721f9-117">If present, indicates that this is a root site collection in SharePoint.</span></span> <span data-ttu-id="721f9-118">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="721f9-118">Read-only.</span></span>
+| <span data-ttu-id="27c48-111">**hostname**</span><span class="sxs-lookup"><span data-stu-id="27c48-111">**hostname**</span></span>         | <span data-ttu-id="27c48-112">строка</span><span class="sxs-lookup"><span data-stu-id="27c48-112">string</span></span>   | <span data-ttu-id="27c48-p101">Имя узла для семейства веб-сайтов. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="27c48-p101">The hostname for the site collection. Read-only.</span></span>
+| <span data-ttu-id="27c48-115">**root**</span><span class="sxs-lookup"><span data-stu-id="27c48-115">**root**</span></span>             | <span data-ttu-id="27c48-116">[root][]</span><span class="sxs-lookup"><span data-stu-id="27c48-116">[root][]</span></span> | <span data-ttu-id="27c48-117">Если задано, это указывает на то, что это корневое семейство веб-сайтов в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="27c48-117">If present, indicates that this is a root site collection in SharePoint.</span></span> <span data-ttu-id="27c48-118">Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="27c48-118">Read-only.</span></span>
 
 [root]: root.md
 

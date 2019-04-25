@@ -2,26 +2,26 @@
 author: rahmit
 ms.author: rahmit
 ms.date: 09/01/2018
-title: SitePageData
+title: Ситепажедата
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 78661f5ce6336f4430297d8969ff8cd82b761c9a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644023"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583398"
 ---
-# <a name="sitepagedata-resource"></a><span data-ttu-id="27d84-102">sitePageData ресурсов</span><span class="sxs-lookup"><span data-stu-id="27d84-102">sitePageData resource</span></span>
+# <a name="sitepagedata-resource"></a><span data-ttu-id="656b0-102">ресурс Ситепажедата</span><span class="sxs-lookup"><span data-stu-id="656b0-102">sitePageData resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="27d84-103">Ресурс **sitePageData** представляет свойства [веб-части][].</span><span class="sxs-lookup"><span data-stu-id="27d84-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="27d84-104">Как эти свойства в зависимости от веб-части, это OpenType без основных свойств.</span><span class="sxs-lookup"><span data-stu-id="27d84-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
+<span data-ttu-id="656b0-103">Ресурс **ситепажедата** представляет свойства [веб-части][].</span><span class="sxs-lookup"><span data-stu-id="656b0-103">The **sitePageData** resource represents the properties of a [webPart][].</span></span> <span data-ttu-id="656b0-104">Так как эти свойства зависят от веб-части, это OpenType без фиксированных свойств.</span><span class="sxs-lookup"><span data-stu-id="656b0-104">As these properties vary by web part, this is an OpenType with no fixed properties.</span></span>
 
-[веб-части]: webpart.md
+[Частей]: webpart.md
 [webPart]: webpart.md
 
-## <a name="json-representation"></a><span data-ttu-id="27d84-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="27d84-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="656b0-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="656b0-106">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,8 +34,8 @@ ms.locfileid: "29644023"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="27d84-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="27d84-107">Properties</span></span>
-<span data-ttu-id="27d84-108">Этот ресурс не имеет основных свойств, но — OpenType, содержащий все свойства, необходимые для определения веб-части.</span><span class="sxs-lookup"><span data-stu-id="27d84-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
+## <a name="properties"></a><span data-ttu-id="656b0-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="656b0-107">Properties</span></span>
+<span data-ttu-id="656b0-108">У этого ресурса нет фиксированных свойств, но это OpenType содержит все свойства, необходимые для определения веб-части.</span><span class="sxs-lookup"><span data-stu-id="656b0-108">This resource has no fixed properties, but is an OpenType containing all properties necessary to define a web part.</span></span>
 
 <!--
 {

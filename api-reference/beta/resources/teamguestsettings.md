@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса teamGuestSettings
-description: Параметры для настройки ли гости могут создать, обновить или удалить каналы рабочих групп.
+title: Тип ресурса Теамгуестсеттингс
+description: Параметры для настройки того, могут ли гости создавать, изменять или удалять каналы в команде.
 localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 4d76ffcbc5ec675ee670394854183c07721c0af9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29522310"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554011"
 ---
-# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="9b269-103">Тип ресурса teamGuestSettings</span><span class="sxs-lookup"><span data-stu-id="9b269-103">teamGuestSettings resource type</span></span>
+# <a name="teamguestsettings-resource-type"></a><span data-ttu-id="49842-103">Тип ресурса Теамгуестсеттингс</span><span class="sxs-lookup"><span data-stu-id="49842-103">teamGuestSettings resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9b269-104">Параметры для настройки ли гости могут создать, обновить или удалить каналы в [группы](team.md).</span><span class="sxs-lookup"><span data-stu-id="9b269-104">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
+<span data-ttu-id="49842-104">Параметры для настройки того, могут ли гости создавать, обновлять или удалять каналы в [команде](team.md).</span><span class="sxs-lookup"><span data-stu-id="49842-104">Settings to configure whether guests can create, update, or delete channels in the [team](team.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="9b269-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="9b269-105">Properties</span></span>
-| <span data-ttu-id="9b269-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="9b269-106">Property</span></span>     | <span data-ttu-id="9b269-107">Тип</span><span class="sxs-lookup"><span data-stu-id="9b269-107">Type</span></span>   |<span data-ttu-id="9b269-108">Описание</span><span class="sxs-lookup"><span data-stu-id="9b269-108">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="49842-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="49842-105">Properties</span></span>
+| <span data-ttu-id="49842-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="49842-106">Property</span></span>     | <span data-ttu-id="49842-107">Тип</span><span class="sxs-lookup"><span data-stu-id="49842-107">Type</span></span>   |<span data-ttu-id="49842-108">Описание</span><span class="sxs-lookup"><span data-stu-id="49842-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9b269-109">allowCreateUpdateChannels</span><span class="sxs-lookup"><span data-stu-id="9b269-109">allowCreateUpdateChannels</span></span>|<span data-ttu-id="9b269-110">Логическое</span><span class="sxs-lookup"><span data-stu-id="9b269-110">Boolean</span></span>|<span data-ttu-id="9b269-111">Если параметр имеет значение true, Гости можно добавлять и обновлять каналов.</span><span class="sxs-lookup"><span data-stu-id="9b269-111">If set to true, guests can add and update channels.</span></span>|
-|<span data-ttu-id="9b269-112">allowDeleteChannels</span><span class="sxs-lookup"><span data-stu-id="9b269-112">allowDeleteChannels</span></span>|<span data-ttu-id="9b269-113">Логическое</span><span class="sxs-lookup"><span data-stu-id="9b269-113">Boolean</span></span>|<span data-ttu-id="9b269-114">Если параметр имеет значение true, гости могут удалять каналы.</span><span class="sxs-lookup"><span data-stu-id="9b269-114">If set to true, guests can delete channels.</span></span>|
+|<span data-ttu-id="49842-109">Алловкреатеупдатечаннелс</span><span class="sxs-lookup"><span data-stu-id="49842-109">allowCreateUpdateChannels</span></span>|<span data-ttu-id="49842-110">Логический</span><span class="sxs-lookup"><span data-stu-id="49842-110">Boolean</span></span>|<span data-ttu-id="49842-111">Если задано значение true, гости могут добавлять и обновлять каналы.</span><span class="sxs-lookup"><span data-stu-id="49842-111">If set to true, guests can add and update channels.</span></span>|
+|<span data-ttu-id="49842-112">Алловделетечаннелс</span><span class="sxs-lookup"><span data-stu-id="49842-112">allowDeleteChannels</span></span>|<span data-ttu-id="49842-113">Логический</span><span class="sxs-lookup"><span data-stu-id="49842-113">Boolean</span></span>|<span data-ttu-id="49842-114">Если задано значение true, гости могут удалять каналы.</span><span class="sxs-lookup"><span data-stu-id="49842-114">If set to true, guests can delete channels.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9b269-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="9b269-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="49842-115">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="49842-115">JSON representation</span></span>
 
-<span data-ttu-id="9b269-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9b269-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="49842-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="49842-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
