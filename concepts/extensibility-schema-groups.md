@@ -4,11 +4,11 @@ description: 'В этой статье мы рассмотрим подробн�
 author: dkershaw10
 localization_priority: Priority
 ms.openlocfilehash: c1241133dff25769d7dc140fc086ab286093ab04
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27867538"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526104"
 ---
 # <a name="add-custom-data-to-groups-using-schema-extensions"></a>Добавление пользовательских данных в группы с помощью расширений схемы 
 
