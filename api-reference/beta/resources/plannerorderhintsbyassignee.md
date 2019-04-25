@@ -1,26 +1,28 @@
 ---
-title: Тип ресурса plannerOrderHintsByAssignee
-description: '**PlannerOrderHintsByAssignee** — это ресурс, который содержит упорядочения ссылки assignees в plannerTask ресурсов, чтобы указать порядок задач в представлении назначено панели задач.'
+title: Тип ресурса Планнерордерхинтсбяссигни
+description: '**Планнерордерхинтсбяссигни** — это ресурс, который содержит подсказки упорядочения для уполномоченные в ресурсе plannerTask, чтобы указать порядок задачи, назначенный для представления доски задач.'
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 27ef2c796c636e39ed6408c373cf0ac66c5572dd
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520909"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575935"
 ---
-# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="364a9-103">Тип ресурса plannerOrderHintsByAssignee</span><span class="sxs-lookup"><span data-stu-id="364a9-103">plannerOrderHintsByAssignee resource type</span></span>
+# <a name="plannerorderhintsbyassignee-resource-type"></a><span data-ttu-id="0f041-103">Тип ресурса Планнерордерхинтсбяссигни</span><span class="sxs-lookup"><span data-stu-id="0f041-103">plannerOrderHintsByAssignee resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="364a9-p101">**plannerOrderHintsByAssignee** — это ресурс, который содержит [указания в отношении порядка](planner-order-hint-format.md) расположения исполнителей задачи [plannerTask](plannertask.md) в представлении "Кому назначено" на доске задач. Это открытый тип. Свойства — это идентификаторы исполнителей, а значения — указания в отношении порядка расположения.</span><span class="sxs-lookup"><span data-stu-id="364a9-p101">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board. This type is an open type. The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
+<span data-ttu-id="0f041-104">**Планнерордерхинтсбяссигни** — это ресурс, который содержит [подсказки упорядочения](planner-order-hint-format.md) для уполномоченные в ресурсе [plannerTask](plannertask.md) , чтобы указать порядок задачи, назначенный для представления доски задач.</span><span class="sxs-lookup"><span data-stu-id="0f041-104">The **plannerOrderHintsByAssignee** is a resource that contains [ordering hints](planner-order-hint-format.md) for assignees in a [plannerTask](plannertask.md) resource, to indicate the order of the task in Assigned To view of the Task Board.</span></span>
+<span data-ttu-id="0f041-105">Этот тип является открытым типом.</span><span class="sxs-lookup"><span data-stu-id="0f041-105">This type is an open type.</span></span> <span data-ttu-id="0f041-106">Свойства — это идентификаторы пользователей, назначенных задаче, а значения — подсказки порядка.</span><span class="sxs-lookup"><span data-stu-id="0f041-106">The properties are the ids of users assigned to the task, and the values are order hints.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="364a9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="364a9-107">Properties</span></span>
-<span data-ttu-id="364a9-p102">Свойства открытого типа может задавать клиент. Он должен указать идентификаторы исполнителей как имена свойств, а допустимое [указание в отношении порядка расположения](planner-order-hint-format.md) как значение. Свойства этого типа невозможно удалить. Служба будет автоматически удалять значения после обновления заданий в содержащем их объекте [plannerTask](plannertask.md).</span><span class="sxs-lookup"><span data-stu-id="364a9-p102">Properties of an Open Type can be defined by the client. In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value. Properties cannot be removed from this type. The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
+## <a name="properties"></a><span data-ttu-id="0f041-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="0f041-107">Properties</span></span>
+<span data-ttu-id="0f041-108">Клиентская возможность может определять свойства открытого типа.</span><span class="sxs-lookup"><span data-stu-id="0f041-108">Properties of an Open Type can be defined by the client.</span></span> <span data-ttu-id="0f041-109">В этом случае клиент должен предоставить идентификаторы пользователей, назначенных задаче, в качестве имен свойств и допустимую [подсказку порядка](planner-order-hint-format.md) в качестве значения.</span><span class="sxs-lookup"><span data-stu-id="0f041-109">In this case, the client must provide ids of users assigned to the task as property names, and a valid [order hint](planner-order-hint-format.md) as the value.</span></span>
+<span data-ttu-id="0f041-110">Невозможно удалить свойства из этого типа.</span><span class="sxs-lookup"><span data-stu-id="0f041-110">Properties cannot be removed from this type.</span></span> <span data-ttu-id="0f041-111">Служба автоматически удалит значения, так как назначения для содержащегося [plannerTask](plannertask.md) будут обновлены.</span><span class="sxs-lookup"><span data-stu-id="0f041-111">The service will automatically remove values as the assignments on the containing [plannerTask](plannertask.md) are updated.</span></span>
 
-<span data-ttu-id="364a9-112">Пример:</span><span class="sxs-lookup"><span data-stu-id="364a9-112">Example:</span></span>
+<span data-ttu-id="0f041-112">Пример.</span><span class="sxs-lookup"><span data-stu-id="0f041-112">Example:</span></span>
 
 <!-- {
   "blockType": "resource",
