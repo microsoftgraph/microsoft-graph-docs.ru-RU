@@ -5,11 +5,11 @@ author: VinodRavichandran
 localization_priority: Priority
 ms.prod: microsoft-teams
 ms.openlocfilehash: ab01bc71ccb4f7490a60c47712198f72032fc157
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543876"
 ---
 # <a name="working-with-the-calls-and-online-meetings-api-in-microsoft-graph"></a>Работа с API звонков и собраний по сети в Microsoft Graph
 

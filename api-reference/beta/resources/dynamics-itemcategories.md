@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: e18319683f6dbceddccc9cf83e48cd3ef89f895d
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365747"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543058"
 ---
 # <a name="itemcategories-resource-type"></a>Тип ресурса Итемкатегориес
 Представляет категорию для ряда элементов в Dynamics 365 Business Central.
@@ -28,16 +28,16 @@ ms.locfileid: "30365747"
 ## <a name="properties"></a>Свойства
 | Свойство           | Тип   |Описание                                     |
 |:-------------------|:-------|:-----------------------------------------------|
-|id                  |GUID    |Уникальный идентификатор Итемкатегори. Не редактируемые.|
-|code                |строка  |Код Итемкатегори.                          |
-|displayName         |строка  |Отображаемое имя Итемкатегориес.                |
+|id                  |Глобальный уникальный идентификатор (GUID)    |Уникальный идентификатор Итемкатегори. Не редактируемые.|
+|code                |string  |Код Итемкатегори.                          |
+|displayName         |string  |Отображаемое имя Итемкатегориес.                |
 |lastModifiedDateTime|отличным|Дата и время последнего изменения Итемкатегори. Только для чтения.|  
 
 
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление объекта Итемкатегориес в формате JSON.
 

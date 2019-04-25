@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: b4409eb18dab41d43adc038b702a65fa8d63e4de
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640583"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543812"
 ---
 # <a name="chartlineformat-resource-type"></a>Тип ресурса ChartLineFormat
 
@@ -23,19 +23,19 @@ ms.locfileid: "29640583"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartLineFormat](../api/chartlineformat-get.md) | [ChartLineFormat](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
-|[обновление](../api/chartlineformat-update.md). | [ChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
+|[Обновление](../api/chartlineformat-update.md) | [ChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Нет|Очищает формат линий элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|строка|HTML-код цвета, представляющий цвет линий в диаграмме.|
+|color|string|HTML-код цвета, представляющий цвет линий в диаграмме.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

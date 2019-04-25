@@ -3,11 +3,11 @@ title: Работа с ресурсами Azure Active Directory в Microsoft Gr
 description: Microsoft Graph для Azure Active Directory (Azure AD) предоставляет REST API для управления организацией, ресурсами и активами.
 localization_priority: Priority
 ms.openlocfilehash: 35e938caa05409cb7b4a9da66ef970f63685393c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512453"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535529"
 ---
 # <a name="working-with-azure-active-directory-resources-in-microsoft-graph"></a>Работа с ресурсами Azure Active Directory в Microsoft Graph
 

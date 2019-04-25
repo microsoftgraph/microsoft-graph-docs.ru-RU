@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса governancePermission
-description: 'Представляет, governanceSubject имеет разрешение на доступ к определенным governanceResource.  '
+title: Тип ресурса Говернанцепермиссион
+description: 'Представляет разрешение на доступ к определенному governanceResource в Говернанцесубжект.  '
 localization_priority: Normal
 ms.openlocfilehash: 255cd4c25a957a40e5e5ac765ed446f516c51607
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643785"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547510"
 ---
-# <a name="governancepermission-resource-type"></a>Тип ресурса governancePermission
+# <a name="governancepermission-resource-type"></a>Тип ресурса Говернанцепермиссион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет, [governanceSubject](../resources/governancesubject.md) имеет разрешение на доступ к определенным [governanceResource](../resources/governanceresource.md).  
+Представляет разрешение на доступ к определенному [governanceResource](../resources/governanceresource.md)в [говернанцесубжект](../resources/governancesubject.md) .  
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|accessLevel|String|Уровень доступа. Допустимые значения: ``None``, ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
-|isActive|Boolean|Указывает, если инициатора запроса имеет назначения активная роль на уровне доступа.|
-|isEligible|Boolean|Указывает, имеет ли инициатора запроса все назначения ролей право на уровне доступа.|
+|accessLevel|String|Уровень доступа. Допустимые значения ``None``: ``UserRead``, ``AdminRead``, и ``AdminReadWrite``.|
+|isActive|Логический|Указывает, имеет ли запрашивающая сторона какое – либо активное назначение ролей для этого уровня доступа.|
+|Действительный|Логический|Указывает, имеет ли запрашивающее назначение роли для уровня доступа.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

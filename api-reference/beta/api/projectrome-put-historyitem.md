@@ -1,20 +1,18 @@
 ---
-title: Создать или заменить historyItem
-description: Создание новой или заменить существующий элемент журнала для существующего действия пользователя.
+title: Создание или замена объекта historyItem
+description: Создание нового или замена существующего элемента журнала для существующего действия пользователя.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: 777918d36a366534f7b07f505086a115f8c03c4e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29527915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546401"
 ---
-# <a name="create-or-replace-a-historyitem"></a>Создать или заменить historyItem
+# <a name="create-or-replace-a-historyitem"></a>Создание или замена объекта historyItem
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Создание новой или заменить существующий элемент журнала для существующего действия пользователя.
+Создание нового или замена существующего элемента журнала для существующего действия пользователя.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,7 +33,7 @@ ms.locfileid: "29527915"
 PUT /me/activities/{id}/historyItems/{id}
 ```
 
-Код должен быть идентификатор GUID.
+Идентификатор должен быть ИДЕНТИФИКАТОРом GUID.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -45,11 +43,11 @@ PUT /me/activities/{id}/historyItems/{id}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON объекта [historyItem](../resources/projectrome-historyitem.md) .
+В тексте запроса добавьте представление объекта [HistoryItem](../resources/projectrome-historyitem.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа, если был создан historyItem или `200 OK` Если historyItem был заменен.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если был создан `200 OK` historyItem, или если historyItem был заменен.
 
 ## <a name="example"></a>Пример
 
@@ -63,7 +61,7 @@ PUT /me/activities/{id}/historyItems/{id}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/13881113971988980728/historyItems/390e06e2-7e5b-4133-8014-fac7ac5991af
+PUT https://graph.microsoft.com/v1.0/me/activities/{activity-id}/historyItems/{item-id}
 Content-type: application/json
 Content-length: 364
 
@@ -74,14 +72,14 @@ Content-length: 364
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.historyItem"
+    "@odata.type": "microsoft.graph.activityHistoryItem"
 } -->
 
 ```http
@@ -89,7 +87,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('user%40contoso.com')/activities('13881113971988980728')/historyItems/$entity",
     "status": "updated",
     "userTimezone": "Africa/Casablanca",
     "createdDateTime": "2018-02-26T20:28:22.14Z",
@@ -104,15 +102,10 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Upsert historyitem",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-put-historyitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

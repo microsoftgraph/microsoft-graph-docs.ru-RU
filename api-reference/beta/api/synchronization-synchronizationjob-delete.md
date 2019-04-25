@@ -1,19 +1,19 @@
 ---
-title: Удаление synchronizationJob
-description: Остановить задание синхронизации и окончательно удалить все состояния, связанные с ним. Синхронизированные учетные записи остаются-является.
+title: Удаление Синчронизатионжоб
+description: Остановите задание синхронизации и окончательно удалите все связанные с ним состояния. Синхронизированные учетные записи остаются недоступными.
 localization_priority: Normal
 ms.openlocfilehash: 29083413c5b24a5ed07b671adfa048f58d437f0d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521686"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545230"
 ---
-# <a name="delete-synchronizationjob"></a>Удаление synchronizationJob
+# <a name="delete-synchronizationjob"></a>Удаление Синчронизатионжоб
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Остановить задание синхронизации и окончательно удалить все состояния, связанные с ним. Синхронизированные учетные записи остаются-является.
+Остановите задание синхронизации и окончательно удалите все связанные с ним состояния. Синхронизированные учетные записи остаются недоступными.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,11 +38,11 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-В случае успеха возвращает `204 No Content` ответа. Он не возвращает все действия в теле ответа.
+В случае успеха возвращает `204 No Content` отклик. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -56,7 +56,7 @@ DELETE /servicePrincipals/{id}/synchronization/jobs/{jobId}/
 DELETE https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 <!-- {

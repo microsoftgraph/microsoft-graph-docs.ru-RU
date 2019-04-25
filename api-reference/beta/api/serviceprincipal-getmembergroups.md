@@ -1,19 +1,19 @@
 ---
 title: 'servicePrincipal: getMemberGroups'
-description: Получение списка групп, участника-службы является членом.  Проверка доверия транзитивных.
+description: Получение списка групп, членом которых является данный участник службы.  Это транзитивная проверка.
 localization_priority: Normal
 ms.openlocfilehash: 80d81444b9e70bd27b5bc5346ffa0e42e9371837
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519642"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545476"
 ---
 # <a name="serviceprincipal-getmembergroups"></a>servicePrincipal: getMemberGroups
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка групп, участника-службы является членом.  Проверка доверия транзитивных.
+Получение списка групп, членом которых является данный участник службы.  Это транзитивная проверка.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -65,9 +65,8 @@ Content-length: 33
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

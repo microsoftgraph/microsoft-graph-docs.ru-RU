@@ -1,19 +1,19 @@
 ---
-title: 'servicePrincipal: список appRoleAssignments'
-description: Получение списка объектов approleassignment.
+title: 'servicePrincipal: List Аппролеассигнментс'
+description: Получение списка объектов аппролеассигнмент.
 localization_priority: Normal
 ms.openlocfilehash: af98d4b92e936a961d0edefe6a4f00c71a5a75ed
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641987"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545294"
 ---
-# <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: список appRoleAssignments
+# <a name="serviceprincipal-list-approleassignments"></a>servicePrincipal: List Аппролеассигнментс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов approleassignment.
+Получение списка объектов аппролеассигнмент.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -35,14 +35,14 @@ GET /servicePrincipals/{id}/appRoleAssignments
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [appRoleAssignment](../resources/approleassignment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

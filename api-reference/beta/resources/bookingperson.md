@@ -1,34 +1,34 @@
 ---
-title: Тип ресурса bookingPerson
+title: Тип ресурса Букингперсон
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: be00e59e2378c454cd9c939f992376dd9c54c3b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508407"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543805"
 ---
-# <a name="bookingperson-resource-type"></a>Тип ресурса bookingPerson
+# <a name="bookingperson-resource-type"></a>Тип ресурса Букингперсон
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Это базовый тип для пользователя в business резервирования Майкрософт, который может быть [bookingCustomer](bookingcustomer.md) или [bookingStaffMember](bookingstaffmember.md).
+Это базовый тип для человека в Microsoft Books бизнеса, который может быть [букингкустомер](bookingcustomer.md) или [букингстаффмембер](bookingstaffmember.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|String|Имя для производные сущности, который взаимодействует с клиентами.|
-|emailAddress|String|Адрес электронной почты контакта.|
-|id|Строка| Идентификатор производные сущности. Только для чтения.|
+|displayName|Строка|Имя производной сущности, которая взаимодействует с клиентами.|
+|emailAddress|String|Адрес электронной почты пользователя.|
+|id|String| Идентификатор производной сущности. Только для чтения.|
 
 ## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

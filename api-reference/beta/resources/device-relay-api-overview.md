@@ -1,25 +1,25 @@
 ---
 title: См. также
-description: '{Это Обзор API уровня модуля ретрансляции устройства}.'
+description: '{Это обзор уровня API для модуля ретрансляции устройств.}'
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f1f4946a5a4859095160f23884a2fbacdc238538
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29524340"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543281"
 ---
-# <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>Используйте устройство реле API для передачи взаимодействие с пользователем через устройства (Предварительная версия)
+# <a name="use-the-device-relay-api-to-transfer-a-users-experience-across-devices-preview"></a>Использование API ретрансляции устройств для передачи взаимодействия пользователя между устройствами (Предварительная версия)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-{Это Обзор API уровня модуля ретрансляции устройства}.
+{Это обзор уровня API для модуля ретрансляции устройств.}
 
-{Контента — варианты использования ретрансляции устройства, сопоставления отдельных API}.
+{В содержимом используются варианты ретрансляции устройств, сопоставленные с отдельными API.}
 
-{Поиск Обзор API «в разделе» в этой статье CDK - https://microsoft.sharepoint.com/teams/OfficeDeveloperEducation/DevEdWiki/Guidance%20for%20Microsoft%20Graph%20concept%20topics.aspx - Дополнительные сведения о том, как это отличается от Общие сведения об уровне обслуживания, устройство ретрансляции концепцию overview.md.}
+{Search for "Обзор API в справочном разделе" в этой статье CDK https://microsoft.sharepoint.com/teams/OfficeDeveloperEducation/DevEdWiki/Guidance%20for%20Microsoft%20Graph%20concept%20topics.aspx — сведения о том, как это отличается от обзора уровня службы, Device-Relay-Concept-Overview.md.}
 
 ## <a name="see-also"></a>См. также
 

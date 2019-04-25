@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: e02cc4b10e4f1f933921f86735f9b09610cfe818
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800014"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542891"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -53,7 +53,7 @@ ms.locfileid: "30800014"
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|

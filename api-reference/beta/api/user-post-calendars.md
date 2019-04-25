@@ -1,19 +1,17 @@
 ---
 title: Создание объекта Calendar
-description: С помощью этого API можно создать календарь для экземпляра user.
+description: С помощью этого API можно создать календарь для пользователя.
 author: dkershaw10
-localization_priority: Normal
+localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: afbb37d9394f2c08c94c6c8f41c56431e6938831
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869332"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544138"
 ---
 # <a name="create-calendar"></a>Создание объекта Calendar
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 С помощью этого API можно создать календарь для экземпляра [user](../resources/user.md).
 ## <a name="permissions"></a>Разрешения
@@ -52,17 +50,16 @@ POST /users/{id | userPrincipalName}/calendars
   "name": "create_calendar_from_user"
 }-->
 ```http
-POST https://graph.microsoft.com/beta/me/calendars
+POST https://graph.microsoft.com/v1.0/me/calendars
 Content-type: application/json
 
 {
   "name": "Volunteer"
 }
-
 ```
 Предоставьте в тексте запроса описание объекта [calendar](../resources/calendar.md) в формате JSON.
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -73,18 +70,14 @@ HTTP/1.1 201 Created
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#me/calendars/$entity",
-    "@odata.id":"https://graph.microsoft.com/beta/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
+    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#me/calendars/$entity",
+    "@odata.id":"https://graph.microsoft.com/v1.0/users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/calendars('AAMkADJmMVAAA=')",
     "id":"AAMkADJmMVAAA=",
     "name":"Volunteer",
     "color":"auto",
-    "isDefaultCalendar":false,
     "changeKey":"DxYSthXJXEWwAQSYQnXvIgAAIxGttg==",
     "canShare":true,
     "canViewPrivateItems":true,
-    "hexColor": "",
-    "isShared":false,
-    "isSharedWithMe":false,
     "canEdit":true,
     "owner":{
         "name":"Samantha Booth",
@@ -95,15 +88,10 @@ Content-type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Create Calendar",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/user-post-calendars.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

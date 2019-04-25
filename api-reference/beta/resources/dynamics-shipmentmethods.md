@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 2f7ef9611fc85c13ac24c79b292e06a6bdc5d587
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365502"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543037"
 ---
 # <a name="shipmentmethods-resource-type"></a>Тип ресурса Шипментмесодс
 Представляет способ отгрузки в Dynamics 365 Business Central, таких как UPS, Федекс и DHL.
@@ -28,16 +28,16 @@ ms.locfileid: "30365502"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор Шипментмесод. Не редактируемые.|
-|code|строка|Указывает код метода отгрузки.|
-|displayName|строка|Задает отображаемое имя метода отгрузки.|
+|id|Глобальный уникальный идентификатор (GUID)|Уникальный идентификатор Шипментмесод. Не редактируемые.|
+|code|string|Указывает код метода отгрузки.|
+|displayName|string|Задает отображаемое имя метода отгрузки.|
 |lastModifiedDateTime|отличным|Дата и время последнего изменения метода отгрузки. Только для чтения.|  
 
 
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление объекта Шипментмесод в формате JSON.
 

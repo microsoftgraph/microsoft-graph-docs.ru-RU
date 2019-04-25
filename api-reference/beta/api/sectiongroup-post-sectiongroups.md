@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 94fc0cc005155ccf9ec3e6bcb8ea0371867b3cc9
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545535"
 ---
 # <a name="create-sectiongroup"></a>Создание sectionGroup
 
@@ -36,8 +36,8 @@ POST /sites/{id}/onenote/sectionGroups/{id}/sectionGroups
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type | строка | `application/json` |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Тело запроса
 В теле запроса укажите имя группы разделов.

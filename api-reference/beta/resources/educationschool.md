@@ -1,23 +1,23 @@
 ---
 title: Тип ресурса educationSchool
-description: 'Учебное заведение. Ресурс **EducationSchool** в настоящее время соответствует ресурсу administrativeUnit, и у них общий идентификатор.  '
+description: 'Учебное заведение. В настоящее время ресурс **educationSchool** соответствует ресурсу administrativeUnit и использует тот же идентификатор.  '
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 917395324e6ae519af468a4bb4b31056796e1498
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512544"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542964"
 ---
 # <a name="educationschool-resource-type"></a>Тип ресурса educationSchool
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Учебное заведение. Ресурс **EducationSchool** в настоящее время соответствует ресурсу [administrativeUnit](administrativeunit.md), и у них общий идентификатор.  
+Учебное заведение. В настоящее время ресурс **educationSchool** соответствует ресурсу [administrativeUnit](administrativeunit.md) и использует тот же идентификатор.  
 
-Этот ресурс — подтип [educationOrganization](educationorganization.md).
+Этот ресурс является подтипом [educationOrganization](educationorganization.md).
 
 
 
@@ -33,16 +33,16 @@ ms.locfileid: "29512544"
 |[Добавление пользователя](../api/educationschool-post-users.md) |[educationUser](educationuser.md)| Добавление нового объекта **educationClass** в учебное заведение через публикацию в свойстве навигации **users**.|
 |[Перечисление пользователей](../api/educationschool-list-users.md) |Коллекция [educationUser](educationuser.md)| Получение коллекции объектов **educationUser**.|
 |[Удаление пользователя](../api/educationschool-delete-users.md) |[educationUser](educationuser.md)| Удаление **educationUser** из учебного заведения через свойство навигации **users**.|
-|[Получение administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Получение элемента **administrativeUnit**, соответствующего учебному заведению **educationSchool**.|
+|[Получение administrativeUnit](../api/educationschool-get-administrativeunit.md) |[administrativeUnit](administrativeunit.md)| Получение **administrativeUnit** , соответствующего этому **educationSchool**.|
 |[Обновление](../api/educationschool-update.md) | [educationSchool](educationschool.md) |Обновление объекта **educationSchool**. |
-|[Удаление](../api/educationschool-delete.md) | None |Удаление объекта **educationSchool**. |
+|[Удаление](../api/educationschool-delete.md) | Нет |Удаление объекта **educationSchool**. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|String|GUID этого учебного заведения.|
+|id|Строка|GUID этого учебного заведения.|
 |displayName| String| Отображаемое имя учебного заведения.| 
-|description| Строка | Описание учебного заведения.| 
+|description| String | Описание учебного заведения.| 
 |status| string| Только для чтения. Возможные значения: `inactive`, `active`, `expired`, `deleteable`.|
 |externalSource| string| Только для чтения.  Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
 |principalEmail| String| Адрес электронной почты директора.|
@@ -59,7 +59,7 @@ ms.locfileid: "29512544"
 
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |classes|Коллекция [educationClass](educationclass.md)| Классы, которые обучаются в учебном заведении. Допускается значение null.|
 |users|Коллекция [educationUser](educationuser.md)| Пользователи в учебном заведении. Допускается значение null.|

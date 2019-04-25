@@ -7,11 +7,11 @@ author: SusanneWindfeldPedersen
 localization_priority: Normal
 ms.prod: dynamics-365-business-central
 ms.openlocfilehash: 870e188939646594b62e6eebf3e234eb0211f140
-ms.sourcegitcommit: f2444a37a719b87777bdddbd086f106746fa0a1c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "30365754"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543030"
 ---
 # <a name="unitsofmeasure-resource-type"></a>Тип ресурса Унитсофмеасуре
 Представляет единицу измерения, которая является стандартом измерения количества в Dynamics 365 Business Central.
@@ -28,17 +28,17 @@ ms.locfileid: "30365754"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id|GUID|Уникальный идентификатор Унитсофмеасуре. Не редактируемые.|
-|code|строка|Задает код для единицы измерения.|
-|displayName|строка|Задает отображаемое имя единицы измерения.|
-|Интернатионалстандардкоде|строка|Указывает код единицы измерения, выраженный в соответствии с УНЕЦЕ Rec20 Standard в связи с электронной отправкой документов продажи.|
+|id|Глобальный уникальный идентификатор (GUID)|Уникальный идентификатор Унитсофмеасуре. Не редактируемые.|
+|code|string|Задает код для единицы измерения.|
+|displayName|string|Задает отображаемое имя единицы измерения.|
+|Интернатионалстандардкоде|string|Указывает код единицы измерения, выраженный в соответствии с УНЕЦЕ Rec20 Standard в связи с электронной отправкой документов продажи.|
 |lastModifiedDateTime|отличным|Дата и время последнего изменения единицы измерения. Только для чтения.|  
 
 
 ## <a name="relationships"></a>Отношения
 Нет
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление ресурса **унитсофмеасуре** в формате JSON.
 

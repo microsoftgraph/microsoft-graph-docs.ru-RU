@@ -1,25 +1,25 @@
 ---
-title: Список privilegedOperationEvents
-description: Фильтр '' выражения.
+title: Список Привилежедоператионевентс
+description: Filter "Expression".
 localization_priority: Normal
 ms.openlocfilehash: 4ea6f778098a8b56c8819f55fb33ffb5420cce6b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512635"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546605"
 ---
-# <a name="list-privilegedoperationevents"></a>Список privilegedOperationEvents
+# <a name="list-privilegedoperationevents"></a>Список Привилежедоператионевентс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [privilegedOperationEvent](../resources/privilegedoperationevent.md) объектов, которые представляют события аудита, созданных функцией привилегированной управления удостоверениями для операций роли. Для получения дополнительных сведений о событии аудита обратитесь [privilegedOperationEvent](../resources/privilegedoperationevent.md). Чтобы отфильтровать результаты запроса, используйте стандартные OData ``$filter`` выражение.
+Получение списка объектов [привилежедоператионевент](../resources/privilegedoperationevent.md) , представляющих события аудита, которые создаются с помощью привилегированного управления удостоверениями для операций с ролями. Сведения о событии аудита содержатся в разделе [привилежедоператионевент](../resources/privilegedoperationevent.md). Чтобы отфильтровать результаты запроса, используйте стандартное выражение ``$filter`` OData.
 
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запросившая сторона должен иметь одно из следующих ролей: _Привилегированной роль администратора_, _Глобального администратора_, _Администратора безопасности_или _Безопасности чтения_.
+Запрашивающая сторона должна иметь одну из следующих ролей: привилегированный _Администратор ролей_, _глобальный администратор_, _администратор безопасности_или _средство чтения безопасности_.
 
  
 
@@ -43,24 +43,24 @@ GET /privilegedOperationEvents
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [privilegedOperationEvent](../resources/privilegedoperationevent.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедоператионевент](../resources/privilegedoperationevent.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 ## <a name="examples"></a>Примеры
 
 ### <a name="get-audit-events-for-role-assignment-operations"></a>Получение событий аудита для операций назначения ролей
 ##### <a name="request"></a>Запрос
-В следующем примере показано запрос для получения событий аудита для операций назначения ролей. В этом случае ``requestType`` значение — ``Assign``.
+В приведенном ниже примере показан запрос на получение событий аудита для операций с назначением ролей. В этом случае ``requestType`` значение равно ``Assign``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -112,15 +112,15 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Получение событий аудита для операций активации собственный роли и makePermanent
+### <a name="get-audit-events-for-the-operations-of-self-role-activation-and-makepermanent"></a>Получение событий аудита для операций активации и Макеперманент в роли самоконтроля
 ##### <a name="request"></a>Запрос
-В следующем примере показано запрос для получения событий аудита для операций активации собственный роли и makePermanent. В этом случае ``requestType`` значение — ``Activate``.
+В приведенном ниже примере показан запрос на получение событий аудита для операций активации и Макеперманент. В этом случае ``requestType`` значение равно ``Activate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -173,15 +173,15 @@ Content-length: 547
 }
 ```
 
-### <a name="get-audit-events-for-role-assignment-deactivation"></a>Получение событий аудита для деактивации назначения ролей
+### <a name="get-audit-events-for-role-assignment-deactivation"></a>Получение событий аудита для отключения назначения ролей
 ##### <a name="request"></a>Запрос
-В следующем примере показано запрос для получения событий аудита для деактивации назначения ролей. В этом случае ``requestType`` значение — ``Deactivate``.
+В приведенном ниже примере показан запрос на получение событий аудита для деактивации назначения роли. В этом случае ``requestType`` значение равно ``Deactivate``.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -216,15 +216,15 @@ Content-length: 547
     ]
 }
 ```
-### <a name="get-audit-events-created-in-a-time-range"></a>Получение событий аудита, созданных в период времени
+### <a name="get-audit-events-created-in-a-time-range"></a>Получение событий аудита, созданных в диапазоне времени
 ##### <a name="request"></a>Запрос 
-В следующем примере показано запрос для получения событий аудита, созданных в период времени.
+В приведенном ниже примере показан запрос на получение событий аудита, созданных в диапазоне времени.
 
 <!-- { "blockType": "request" } -->
 ```http
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

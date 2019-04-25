@@ -1,21 +1,21 @@
 ---
-title: 'Участник: приглашение'
-description: Приглашение участников активного вызова.
+title: 'участник: пригласить'
+description: Приглашение участников в активный звонок.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 50c9ebd30bf70290006d8c04ccfb29e09ce0d566
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29510171"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539480"
 ---
-# <a name="participant-invite"></a>Участник: приглашение
+# <a name="participant-invite"></a>участник: пригласить
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Приглашение участников активного вызова.
+Приглашение участников в активный звонок.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -24,7 +24,7 @@ ms.locfileid: "29510171"
 | :-------------- | :--------------------------------------------------------- |
 | Делегированные (рабочая или учебная учетная запись)     | Не поддерживается                       |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается                       |
-| Для приложений     | Calls.InitiateGroupCalls.All                               |
+| Для приложений     | Calls. Инитиатеграупкаллс. ALL                               |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -43,14 +43,14 @@ POST /applications/{id}/calls/{id}/participants/invite
 
 | Параметр      | Тип    |Описание|
 |:---------------|:--------|:----------|
-|participants|[invitationParticipantInfo](../resources/invitationparticipantinfo.md) коллекции| Чтобы пригласить участников.|
-|ClientContext|String|Контекст клиента.|
+|participants|Коллекция [инвитатионпартиЦипантинфо](../resources/invitationparticipantinfo.md)| Участники, которые необходимо пригласить.|
+|Контекст|String|Контекст клиента.|
 
 ## <a name="response"></a>Ответ
-Возвращает `202 Accepted` код ответа и расположения заголовком с uri для [commsOperation](../resources/commsoperation.md) , созданные для этого запроса.
+Возвращает `202 Accepted` код отклика и заголовок Location с URI для [коммсоператион](../resources/commsoperation.md) , созданного для этого запроса.
 
 ## <a name="examples"></a>Примеры
-В приведенных ниже примерах показано, как вызывать этот интерфейс API.
+В приведенных ниже примерах показано, как вызывать этот API.
 
 ##### <a name="request"></a>Запрос
 Ниже показан пример запроса.
@@ -83,7 +83,7 @@ Content-Length: 464
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 > **Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 
@@ -99,9 +99,9 @@ Location: https://graph.microsoft.com/beta/app/calls/57dab8b1-894c-409a-b240-bd8
 ```
 <br/>
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующие P2P собрания
+### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующем собрании P2P
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ```http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/participants/invite
@@ -126,7 +126,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 ```http
 HTTP/1.1 200 OK
@@ -142,7 +142,7 @@ Content-Length: 259
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомления - операция завершена
+##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -172,7 +172,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Уведомления - участников, добавлены добавлена участника
+##### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный при добавлении участника
 
 ```http
 POST https://bot.contoso.com/api/calls
@@ -245,13 +245,13 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующие P2P собрания
+### <a name="invite-participants-in-existing-p2p-meeting"></a>Приглашение участников в существующем собрании P2P
 
-В этом примере показан полный поток E2E для [Пригласить участников](../api/participant-invite.md) в существующего собрания P2P.
+В этом примере показан полный E2Eный процесс для [приглашения участников](../api/participant-invite.md) в существующем собрании P2P.
 
-##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>Входящие VOIP ответить на звонок с помощью службы, размещенной мультимедиа
+##### <a name="answer-incoming-voip-call-with-service-hosted-media"></a>Ответ на входящий вызов VOIP с размещенными в службе носителями
 
-##### <a name="notification---incoming"></a>Уведомления - входящие
+##### <a name="notification---incoming"></a>Уведомление — входящий
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -304,7 +304,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ``` http
 POST /app/calls/57DAB8B1894C409AB240BD8BEAE78896/answer
@@ -330,7 +330,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 ``` http
 HTTP/1.1 200 OK
@@ -346,7 +346,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---establishing"></a>Уведомления - Установка
+##### <a name="notification---establishing"></a>Установка уведомления
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -375,7 +375,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Уведомления - соединения
+##### <a name="notification---established"></a>Установленное уведомление
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -406,11 +406,11 @@ Content-Type: application/json
 }
 ```
 
-### <a name="join-channel-meeting-without-media"></a>Присоединение к собранию канала без мультимедиа
+### <a name="join-channel-meeting-without-media"></a>ПриСоединение к собранию канала без мультимедиа
 
-> **Важно**: Если экземпляр программы-робота присоединения к собранию — только в качестве Упрощение передачи, его следует избегать согласования мультимедиа.  Таким образом, она лучше всего подходит для добавления без каких-либо `requestedModalities` или `mediaConfig`.
+> **Важно!** если экземпляр Bot присоединяется только в целях облегчения передачи, следует избегать согласования мультимедиа.  Поэтому лучше всего добавлять его без `requestedModalities` или. `mediaConfig`
 
-##### <a name="request"></a>Запросить
+##### <a name="request"></a>Запрос
 
 ``` http
 POST /app/calls
@@ -446,14 +446,14 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
 ``` http
 HTTP/1.1 201 Created
 Location: https://graph.microsoft.com/beta/app/calls/90ED37DCD8E34E119DE330A955DDA06F
 ```
 
-##### <a name="notification---establishing"></a>Уведомления - Установка
+##### <a name="notification---establishing"></a>Установка уведомления
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -483,7 +483,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---established"></a>Уведомления - соединения
+##### <a name="notification---established"></a>Установленное уведомление
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -513,7 +513,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="invite-participant-from-initial-incoming-call"></a>Приглашение участников из начального входящего звонка
+### <a name="invite-participant-from-initial-incoming-call"></a>Приглашение участника от начального входящего звонка
 
 ``` http
 POST /app/calls/90ED37DCD8E34E119DE330A955DDA06F/participants/invite
@@ -552,7 +552,7 @@ Content-Length: 306
 }
 ```
 
-##### <a name="notification---operation-completed"></a>Уведомления - операция завершена
+##### <a name="notification---operation-completed"></a>Уведомление о завершении операции
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -582,7 +582,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---roster-updated-with-participant-added"></a>Уведомления - участников, добавлены добавлена участника
+##### <a name="notification---roster-updated-with-participant-added"></a>Уведомление — список, обновленный при добавлении участника
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -655,7 +655,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---terminated-the-original-p2p-call"></a>Уведомления - завершен к первоначальному звонку P2P
+##### <a name="notification---terminated-the-original-p2p-call"></a>Уведомление — завершен первоначальный Звонок P2P
 
 ``` http
 POST https://bot.contoso.com/api/calls
@@ -685,7 +685,7 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="notification---deleted-the-original-p2p-call"></a>Уведомления - удалена к первоначальному звонку P2P
+##### <a name="notification---deleted-the-original-p2p-call"></a>Уведомление: Исходный вызов P2P удален
 
 ``` http
 POST https://bot.contoso.com/api/calls

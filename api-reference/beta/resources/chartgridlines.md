@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 852b52fd70e619b8720ef56fb0e857fb499f0abf
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640212"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543704"
 ---
 # <a name="chartgridlines-resource-type"></a>Тип ресурса ChartGridlines
 
@@ -23,7 +23,7 @@ ms.locfileid: "29640212"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartGridlines](../api/chartgridlines-get.md) | [ChartGridlines](chartgridlines.md) |Чтение свойств и связей объекта chartGridlines.|
-|[обновление](../api/chartgridlines-update.md). | [ChartGridlines](chartgridlines.md)    |Обновление объекта ChartGridlines. |
+|[Обновление](../api/chartgridlines-update.md) | [ChartGridlines](chartgridlines.md)    |Обновление объекта ChartGridlines. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -31,11 +31,11 @@ ms.locfileid: "29640212"
 |visible|boolean|Логическое значение, определяющее, отображаются ли линии сетки оси.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartGridlinesFormat](chartgridlinesformat.md)|Представляет форматирование линий сетки диаграммы. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

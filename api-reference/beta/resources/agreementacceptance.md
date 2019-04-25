@@ -1,19 +1,19 @@
 ---
 title: Тип ресурса agreementAcceptance
-description: Представляет текущее состояние пользователя в области компании настраиваемые условия использования на платформе Azure Active Directory (Azure AD).
+description: Представляет текущее состояние пользователя в пределах области настраиваемых терминов компании на платформе Azure Active Directory (Azure AD).
 localization_priority: Normal
 ms.openlocfilehash: 884a6b7dcf4dcc8f00aa927dd9d486c074b64183
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29518872"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544066"
 ---
 # <a name="agreementacceptance-resource-type"></a>Тип ресурса agreementAcceptance
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет текущее состояние пользователя в области компании настраиваемые условия использования на платформе Azure Active Directory (Azure AD).
+Представляет текущее состояние пользователя в пределах области настраиваемых терминов компании на платформе Azure Active Directory (Azure AD).
 
 <!--
 ## Methods
@@ -28,21 +28,21 @@ ms.locfileid: "29518872"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|agreementFileId|String|Идентификатор файла соглашения, принятия пользователем.|
-|agreementId|String|Идентификатор соглашения.|
-|id|Строка| Только для чтения.|
-|recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|state|string| Возможные значения: `accepted`, `declined`.|
-|userDisplayName|String|Отображаемое имя пользователя, когда было записывается.|
-|userEmail|String|Адрес электронной почты пользователя, когда было записывается.|
-|userId|String|Идентификатор пользователя, который принятия соглашения.|
-|userPrincipalName|String|Имя участника-пользователя, когда было записывается.|
+|Агриментфилеид|String|Идентификатор файла соглашения, принятого пользователем.|
+|Агриментид|String|Идентификатор соглашения.|
+|id|String| Только для чтения.|
+|recordedDateTime|DateTimeOffset|Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601 (время всегда в формате UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|состояние|string| Возможные значения: `accepted`, `declined`.|
+|userDisplayName|String|Отображаемое имя пользователя, когда оно было записано.|
+|userEmail|String|Сообщение электронной почты пользователя, когда сообщение о принятии было записано.|
+|userId|String|Идентификатор пользователя, который принял соглашение.|
+|userPrincipalName|String|ИМЯ участника-пользователя, когда оно было записано.|
 
 ## <a name="relationships"></a>Отношения
 Нет
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 
