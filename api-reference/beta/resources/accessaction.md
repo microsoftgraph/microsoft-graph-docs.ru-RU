@@ -2,30 +2,30 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2018
-title: AccessAction
+title: Акцессактион
 localization_priority: Normal
 ms.openlocfilehash: bef6444fd42080c6f5b7cdabb69dbe9a50bab8d6
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29511522"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535829"
 ---
-# <a name="accessaction-resource-type"></a><span data-ttu-id="0aa84-102">Тип ресурса accessAction</span><span class="sxs-lookup"><span data-stu-id="0aa84-102">accessAction resource type</span></span>
+# <a name="accessaction-resource-type"></a><span data-ttu-id="043cd-102">Тип ресурса Акцессактион</span><span class="sxs-lookup"><span data-stu-id="043cd-102">accessAction resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0aa84-103">Сведения о присутствии ресурса **accessAction** на [**itemActivity**] [ activity] указывает, что действие доступ элемента.</span><span class="sxs-lookup"><span data-stu-id="0aa84-103">The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.</span></span>
+<span data-ttu-id="043cd-103">Присутствие ресурса **акцессактион** в [**itemActivity**] [ activity] указывает на то, что действие получило доступ к элементу.</span><span class="sxs-lookup"><span data-stu-id="043cd-103">The presence of the **accessAction** resource on an [**itemActivity**][activity] indicates that the activity accessed an item.</span></span>
 
-><span data-ttu-id="0aa84-104">**Примечание:** Записи о действиях Access доступны в настоящее время только в SharePoint и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="0aa84-104">**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
+><span data-ttu-id="043cd-104">**Примечание:** Записи действий Access доступны только в SharePoint и OneDrive для бизнеса.</span><span class="sxs-lookup"><span data-stu-id="043cd-104">**Note:** Access activity records are currently only available on SharePoint and OneDrive for Business.</span></span>
 
 [activity]: itemactivity.md
 
-## <a name="properties"></a><span data-ttu-id="0aa84-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="0aa84-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="043cd-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="043cd-105">Properties</span></span>
 
-<span data-ttu-id="0aa84-106">Этот тип ресурсов не имеет параметров.</span><span class="sxs-lookup"><span data-stu-id="0aa84-106">This resource type has no properties.</span></span>
+<span data-ttu-id="043cd-106">У этого типа ресурса нет свойств.</span><span class="sxs-lookup"><span data-stu-id="043cd-106">This resource type has no properties.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="0aa84-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="0aa84-107">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="043cd-107">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="043cd-107">JSON representation</span></span>
 
 <!-- {
   "blockType": "resource",
