@@ -3,11 +3,11 @@ title: Получение фотографии
 description: Получение указанного объекта profilePhoto или его метаданных (свойств **profilePhoto**).
 localization_priority: Priority
 ms.openlocfilehash: 55bdf01515f654eb1622703f9b846de840bc5611
-ms.sourcegitcommit: bf3d0c94faeb206f9f986423a436fb355acd54c1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "31751559"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538569"
 ---
 # <a name="get-photo"></a>Получение фотографии
 

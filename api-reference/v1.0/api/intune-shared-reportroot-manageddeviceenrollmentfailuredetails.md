@@ -1,15 +1,15 @@
 ---
 title: Функция Манажеддевицеенроллментфаилуредетаилс
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: c234181bb70ca0df11cff01b67eb7d6fa60e27ca
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262995"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576799"
 ---
 # <a name="manageddeviceenrollmentfailuredetails-function"></a>Функция Манажеддевицеенроллментфаилуредетаилс
 
@@ -39,8 +39,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,14 +48,14 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|skip|Int32|Н/Д|
-|top|Int32|Н/Д|
-|filter|String|Н/Д|
+|skip|Int32|Пока не задокументировано.|
+|top|Int32|Пока не задокументировано.|
+|filter|String|Пока не задокументировано.|
 |skipToken|String|Н/Д|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения эта функция возвращает код отклика `200 OK` и объект [report](../resources/intune-shared-report.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
@@ -66,7 +65,7 @@ GET /reports/managedDeviceEnrollmentFailureDetails
 GET https://graph.microsoft.com/v1/reports/managedDeviceEnrollmentFailureDetails(skip=4,top=3,filter='parameterValue',skipToken='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Объект Response, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ``` http

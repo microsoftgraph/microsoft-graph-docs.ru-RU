@@ -1,17 +1,17 @@
 ---
-title: Получение объекта deviceManagement
+title: Получение deviceManagement
 description: Чтение свойств и связей объекта deviceManagement.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 7ae3300ffa73aa42481930e5701755d2551a6076
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30250637"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576953"
 ---
-# <a name="get-devicemanagement"></a>Получение объекта deviceManagement
+# <a name="get-devicemanagement"></a>Получение deviceManagement
 
 > **Примечание:** Для API Microsoft Graph для Intune требуется [Активная лицензия Intune](https://go.microsoft.com/fwlink/?linkid=839381) для клиента.
 
@@ -54,14 +54,13 @@ GET /deviceManagement
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [deviceManagement](../resources/intune-shared-devicemanagement.md) в теле отклика.
 
 ## <a name="example"></a>Пример
@@ -72,8 +71,7 @@ GET https://graph.microsoft.com/v1.0/deviceManagement
 ```
 
 ### <a name="response"></a>Отклик
-
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

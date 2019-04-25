@@ -3,11 +3,11 @@ title: Обновление объекта inferenceclassificationoverride
 description: 'Изменение поля **classifyAs** переопределения указанным образом. '
 localization_priority: Normal
 ms.openlocfilehash: fdd11e6c3d3f4fb72d9f94226e8cb3d35dde2c03
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27843976"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577577"
 ---
 # <a name="update-inferenceclassificationoverride"></a>Обновление объекта inferenceclassificationoverride
 
@@ -38,7 +38,7 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | строка  | Bearer {токен}. Обязательный. |
 | Content-Type | string  | Характер данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -46,9 +46,9 @@ PATCH /users/{id}/inferenceClassification/overrides/{id}
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classifyAs|string| Указывает, как входящие сообщения из определенной отправитель всегда должен следует рассматривать как. Возможные значения: `focused`, `other`.|
+|classifyAs|string| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK` и обновленный объект [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -68,7 +68,7 @@ Content-type: application/json
 }
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

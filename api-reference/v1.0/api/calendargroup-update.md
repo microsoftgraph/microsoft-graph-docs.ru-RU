@@ -1,19 +1,19 @@
 ---
 title: Обновление объекта calendarGroup.
-description: Обновление свойств объекта calendargroup.
+description: Обновление свойств объекта calendarGroup.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: e093ddd962b1fa0397159c47bdc5388184a8ba3c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958756"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32583734"
 ---
 # <a name="update-calendargroup"></a>Обновление объекта calendarGroup.
 
-Обновление свойств объекта calendargroup.
+Обновление свойств объекта calendarGroup.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -43,7 +43,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 | Авторизация | Bearer {токен}. Обязательный.   |
 | Content-Type  | application/json. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
@@ -51,7 +51,7 @@ PATCH /users/{id | userPrincipalName}/calendarGroups/{id}
 | :------- | :----- | :-------------- |
 | name     | String | Имя группы. |
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [calendarGroup](../resources/calendargroup.md) в тексте отклика.
 
@@ -76,9 +76,9 @@ Content-length: 30
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 <!-- {
   "blockType": "response",

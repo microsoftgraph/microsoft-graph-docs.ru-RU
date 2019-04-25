@@ -1,25 +1,25 @@
 ---
 title: Тип ресурса followupFlag
-description: 'Позволяет флаг в элементе для пользователя к исполнению более поздней версии. '
+description: 'Позволяет установить флаг в элементе, чтобы пользователь выполнит дальнейшие действия. '
 localization_priority: Normal
 ms.openlocfilehash: 60d2e40a10c3ba5b2af9aa798b84aadaebedd57a
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885500"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541999"
 ---
 # <a name="followupflag-resource-type"></a>Тип ресурса followupFlag
 
 
-Позволяет флаг в элементе для пользователя к исполнению более поздней версии. 
+Позволяет установить флаг в элементе, чтобы пользователь выполнит дальнейшие действия. 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |completedDateTime|[dateTimeTimeZone](datetimetimezone.md)|Дата и время, когда выполнение было завершено.|
 |dueDateTime|**dateTimeTimeZone**|Дата и время, когда выполнение должно быть завершено.|
-|flagStatus|followupFlagStatus|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
+|flagStatus|Фолловупфлагстатус|Состояние выполнения для элемента. Возможные значения: `notFlagged`, `complete` и `flagged`.|
 |startDateTime|**dateTimeTimeZone**|Дата и время, когда следует начать выполнение.|
 
 ## <a name="json-representation"></a>Представление JSON

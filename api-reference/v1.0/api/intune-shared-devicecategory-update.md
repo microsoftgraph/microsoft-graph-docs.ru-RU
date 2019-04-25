@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 831232fc656ad4aa0968e40aca5ae54b1e13ceef
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255180"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576967"
 ---
 # <a name="update-devicecategory"></a>Обновление объекта deviceCategory
 
@@ -23,7 +23,7 @@ ms.locfileid: "30255180"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp;&nbsp; **** Подключение и <br> &nbsp;&nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
+| &nbsp;&nbsp; **** Подключение и <br> &nbsp; &nbsp; **Управление устройствами**| DeviceManagementManagedDevices.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -40,19 +40,18 @@ PATCH /deviceManagement/detectedApps/{detectedAppId}/managedDevices/{managedDevi
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта [deviceCategory](../resources/intune-shared-devicecategory.md) в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта [deviceCategory](../resources/intune-shared-devicecategory.md).
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
-|**Подключение**|
+|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|**Входящая миграция**|
 |displayName|String|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 

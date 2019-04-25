@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 76c1d0c8b22484b3a35d0db49c5a4e578e656880
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255173"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577037"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -23,7 +23,7 @@ ms.locfileid: "30255173"
 |Тип разрешения|Разрешения (в порядке убывания привилегий)|
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)||
-| &nbsp; &nbsp; **Подключение** | Девицеманажементманажед Devices. ReadWrite. ALL|
+| &nbsp; &nbsp; **Входящая миграция** | Девицеманажементманажед Devices. ReadWrite. ALL|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
@@ -39,19 +39,18 @@ POST /deviceManagement/deviceCategories
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Авторизация|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта deviceCategory в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта deviceCategory.
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Уникальный идентификатор категории устройства. Только для чтения.|
-|**Подключение**|
+|id|Строка|Уникальный идентификатор категории устройства. Только для чтения.|
+|**Входящая миграция**|
 |displayName|String|Отображаемое имя категории устройств.|
 |description|String|Необязательное описание категории устройств.|
 
@@ -75,7 +74,7 @@ Content-length: 135
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 201 Created

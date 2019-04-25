@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса noMediaConfig
-description: Конфигурация мультимедиа, указывающие нет носителя.
+title: Тип ресурса Номедиаконфиг
+description: Конфигурация мультимедиа, указывающая на отсутствие носителя.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8d564493889cc367ecdb697ce4031c40a4cbbbef
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641318"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581640"
 ---
-# <a name="nomediaconfig-resource-type"></a>Тип ресурса noMediaConfig
+# <a name="nomediaconfig-resource-type"></a>Тип ресурса Номедиаконфиг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Конфигурация мультимедиа, указывающие нет носителя.
+Конфигурация мультимедиа, указывающая на отсутствие носителя.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| Ремовефромдефаултаудиограуп | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

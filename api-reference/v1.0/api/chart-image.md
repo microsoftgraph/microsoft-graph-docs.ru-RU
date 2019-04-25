@@ -1,15 +1,15 @@
 ---
 title: 'Chart: Image'
-description: Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.
+description: Отрисовывает диаграмму в виде изображения с кодировкой Base64, масштабируя ее в соответствии с указанным размером.
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 0f61866885f0798b9e96f80e22a636fb5f619e34
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27939723"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32581687"
 ---
 # <a name="chart-image"></a>Chart: Image
 
@@ -42,9 +42,9 @@ GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fitt
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|height|Int32|Желаемую высоту изображения. Необязательный атрибут.|
-|width|Int32|Желаемую ширину изображения. Необязательный атрибут.|
-|fittingMode|строка|Метод, используемый для масштабирования диаграммы для указанного измерения (если заданы высота и ширина).»  Возможные значения: `Fit`, `FitAndCenter`, `Fill`.|
+|height|Int32|Нужная высота создаваемого изображения. Необязательный параметр.|
+|width|Int32|Нужная ширина создаваемого изображения. Необязательный параметр.|
+|fittingMode|string|Метод, используемый для масштабирования диаграммы до указанных размеров (если заданы и высота, и ширина). "  Допустимые значения: `Fit`, `FitAndCenter`, `Fill`.|
 
 ## <a name="response"></a>Отклик
 
@@ -62,8 +62,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.<!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json;odata.metadata=minimal;odata.streaming=true
