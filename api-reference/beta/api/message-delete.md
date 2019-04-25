@@ -1,25 +1,25 @@
 ---
 title: Удаление сообщения
-description: Удалить сообщение в почтовый ящик указанного пользователя или отношения сообщения.
+description: Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 1237ba7e4aa5ab0439af9f07902705e7b4061374
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513545"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32540551"
 ---
 # <a name="delete-message"></a>Удаление сообщения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Удалить сообщение в почтовый ящик указанного пользователя или отношения сообщения.
+Удаление сообщения из почтового ящика указанного пользователя или удаление связи сообщения.
 
-Например можно удалить определенных [@ упоминание](../resources/mention.md) пользователя, указанный в сообщении.
+Например, вы можете удалить из сообщения указанного [](../resources/mention.md) пользователя.
 
->**Примечание** Можно не удалять элементы в папке восстанавливаемый удалений (представленное [имя папки известных](../resources/mailfolder.md) `recoverableitemsdeletions`). Для получения дополнительных сведений см [хранения удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
+>**Note (Примечание** ) Удаление элементов из папки "удаления элементов с возможностью восстановления" может быть недоступно (представлено известным [именем](../resources/mailfolder.md) `recoverableitemsdeletions`папки). Дополнительные сведения см. в статье [Хранение удаленных](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/recoverable-items-folder#deleted-item-retention) элементов и [Очистка удаленных элементов](https://docs.microsoft.com/en-us/exchange/policy-and-compliance/recoverable-items-folder/clean-up-deleted-items) .
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -32,7 +32,8 @@ ms.locfileid: "29513545"
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Удаление указанного сообщения:<!-- { "blockType": "ignored" } -->
+Удаление указанного сообщения:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}
@@ -40,7 +41,8 @@ DELETE /me/mailFolders/{id}/messages/{id}
 DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 
-Удаление конкретных [упомянуть](../resources/mention.md) в сообщении:<!-- { "blockType": "ignored" } -->
+Чтобы удалить определенное [упоминание](../resources/mention.md) в сообщении, выполните следующие действия:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/messages/{id}/mentions/{id}
 DELETE /users/{id | userPrincipalName}/messages/{id}/mentions/{id}
@@ -54,7 +56,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -62,7 +64,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 
 ## <a name="example"></a>Пример
 ##### <a name="request-1"></a>Запрос 1
-Первый пример удаляет указанное сообщение.
+В первом примере показано, как удалить указанное сообщение.
 <!-- {
   "blockType": "request",
   "name": "delete_message"
@@ -70,7 +72,7 @@ DELETE /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/mentions/{
 ```http
 DELETE https://graph.microsoft.com/beta/me/messages/{id}
 ```
-##### <a name="response-1"></a>Ответ 1
+##### <a name="response-1"></a>Ответ 1
 Ниже приведен пример ответа. 
 <!-- {
   "blockType": "response",
@@ -81,7 +83,7 @@ HTTP/1.1 204 No Content
 ```
 
 ##### <a name="request-2"></a>Запрос 2
-Следующий пример удаляет определенные **упомянуть** в указанное сообщение.
+В следующем примере показано, как **** удалить определенное упоминание из указанного сообщения.
 <!-- {
   "blockType": "request",
   "name": "delete_mention_in_message"

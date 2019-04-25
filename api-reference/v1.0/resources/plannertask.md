@@ -5,11 +5,11 @@ localization_priority: Priority
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 52dd5917ef0ddb2ec0a05d6952962bfc430c6027
-ms.sourcegitcommit: 597dfc95a44e0f2354d056b5567bcff2bb2837f1
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "29892514"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32579953"
 ---
 # <a name="plannertask-resource-type"></a>Тип ресурса plannerTask
 
@@ -50,7 +50,7 @@ ms.locfileid: "29892514"
 |title|Строка|Название задачи.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |assignedToTaskBoardFormat|[plannerAssignedToTaskBoardTaskFormat](plannerassignedtotaskboardtaskformat.md);| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по свойству assignedTo.|
 |bucketTaskBoardFormat|[plannerBucketTaskBoardTaskFormat](plannerbuckettaskboardtaskformat.md);| Только для чтения. Допускает значение null. Используется для правильного отображения задачи на доске задач при сортировке по сегменту.|

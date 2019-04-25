@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: bda2c1849f154435608f311671026e224b0c7e3c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642326"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543756"
 ---
 # <a name="chartdatalabels-resource-type"></a>Тип ресурса ChartDataLabels
 
@@ -23,26 +23,26 @@ ms.locfileid: "29642326"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Получение объекта ChartDataLabels](../api/chartdatalabels-get.md) | [ChartDataLabels](chartdatalabels.md) |Чтение свойств и связей объекта chartDataLabels.|
-|[обновление](../api/chartdatalabels-update.md). | [ChartDataLabels](chartdatalabels.md) |Обновление объекта chartDataLabels. |
+|[Обновление](../api/chartdatalabels-update.md) | [ChartDataLabels](chartdatalabels.md) |Обновление объекта chartDataLabels. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|position|строка|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
-|разделитель|строка|Строка, представляющая разделитель для меток данных на диаграмме.|
-|showBubbleSize|boolean|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
-|showCategoryName|boolean|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
-|showLegendKey|boolean|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|
-|showPercentage|boolean|Логическое значение, которое указывает, отображается ли процентное соотношение меток данных.|
-|showSeriesName|boolean|Логическое значение, которое указывает, отображается ли имя ряда для меток данных.|
+|position|string|Значение DataLabelPosition, которое представляет положение метки данных. Возможные значения: `None`, `Center`, `InsideEnd`, `InsideBase`, `OutsideEnd`, `Left`, `Right`, `Top`, `Bottom`, `BestFit`, `Callout`.|
+|разделитель|string|Строка, представляющая разделитель для меток данных на диаграмме.|
+|showBubbleSize|логический|Логическое значение, которое указывает, отображается ли размер пузырьков с метками данных.|
+|showCategoryName|логический|Логическое значение, которое указывает, отображается ли имя для категории меток данных.|
+|showLegendKey|логический|Логическое значение, которое указывает, отображаются ли условные обозначения для меток данных.|
+|showPercentage|логический|Логическое значение, которое указывает, отображается ли процентное соотношение меток данных.|
+|showSeriesName|логический|Логическое значение, которое указывает, отображается ли имя ряда для меток данных.|
 |showValue|boolean|Логическое значение, которое указывает, отображается ли значение метки данных.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |format|[ChartDataLabelFormat](chartdatalabelformat.md)|Представляет формат меток данных диаграммы, включая форматирование заливки и шрифтов. Только для чтения.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

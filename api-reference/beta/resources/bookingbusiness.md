@@ -1,67 +1,67 @@
 ---
-title: Тип ресурса bookingBusiness
+title: Тип ресурса Букингбусинесс
 description: " > **Важно!** API бета-версии (/beta) в Microsoft Graph проходят тестирование и могут быть изменены. Использование этих API в производственных приложениях не поддерживается."
 localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: bookings
 ms.openlocfilehash: 03790cfe39ef2de463ae843ba6b18cd6d91e754d
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528923"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543866"
 ---
-# <a name="bookingbusiness-resource-type"></a>Тип ресурса bookingBusiness
+# <a name="bookingbusiness-resource-type"></a>Тип ресурса Букингбусинесс
 
  [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
  
-Представляет бизнеса в Microsoft резервирования. Это объект верхнего уровня в API-Интерфейс Microsoft резервирования. Он содержит бизнес-данных и связанных с ними бизнес-объекты например встреч, клиенты, службы и сотрудников.
+Представляет бизнес в книгах корпорации Майкрософт. Это объект верхнего уровня в API Microsoft Books. Он содержит деловые сведения и связанные бизнес-объекты, такие как встречи, клиенты, службы и сотрудники.
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список bookingBusinesses](../api/bookingbusiness-list.md) | [bookingBusiness](bookingbusiness.md) коллекции |Получите коллекцию объектов bookingbusiness в клиента. |
-|[Создание bookingBusiness](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Создание нового резервирования Microsoft business. |
-|[Получение bookingBusiness](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Чтение свойства и связи объекта bookingBusiness.|
-|[Update](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств в объект **bookingBusiness** . |
-|[Delete](../api/bookingbusiness-delete.md) | Нет |Удалите объект **bookingBusiness** . |
-|[Создание bookingAppointment](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Создайте новый bookingAppointment, отправку сообщений в коллекцию встреч.|
-|[Список встреч](../api/bookingbusiness-list-appointments.md) |[bookingAppointment](bookingappointment.md) коллекции| Получите коллекцию объектов bookingAppointment.|
-|[Создание bookingCustomer](../api/bookingbusiness-post-customers.md) |[bookingCustomer](bookingcustomer.md)| Создайте новый bookingCustomer, отправку сообщений в коллекцию customers.|
-|[Список клиентов](../api/bookingbusiness-list-customers.md) |[bookingCustomer](bookingcustomer.md) коллекции| Получите коллекцию объектов bookingCustomer.|
-|[Создание bookingService](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Создайте новый bookingService, отправку сообщений в коллекцию служб.|
-|[Список служб](../api/bookingbusiness-list-services.md) |[bookingService](bookingservice.md) коллекции| Получите коллекцию объектов bookingService.|
-|[Создание bookingStaffMember](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Создайте новый bookingStaffMember, отправку сообщений в коллекцию staffMembers.|
-|[Список staffMembers](../api/bookingbusiness-list-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md) коллекции| Получите коллекцию объектов bookingStaffMember.|
-|[Список calendarView](../api/bookingbusiness-list-calendarview.md)|[bookingAppointment](bookingappointment.md) коллекции|Получите коллекцию объектов **bookingAppointment** , что происходит в за указанный диапазон дат.|
-|[Publish](../api/bookingbusiness-publish.md)|Нет|Сделайте доступными странице планирования бизнеса внешним клиентам. Свойства **isPublished** значение true, а свойство **publicUrl** URL-адрес страницы планирования.|
-|[отмена публикации](../api/bookingbusiness-unpublish.md).|Нет| Доступность планирования страницы бизнеса не для внешних клиентов. Присвойте свойству **isPublished** значение false и свойство **publicUrl** значения NULL.|
+|[Список Букингбусинессес](../api/bookingbusiness-list.md) | Коллекция [букингбусинесс](bookingbusiness.md) |Получение коллекции объектов букингбусинесс в клиенте. |
+|[Создание Букингбусинесс](../api/bookingbusiness-post-bookingbusinesses.md) | [bookingBusiness](bookingbusiness.md) | Создание новой книги Майкрософт для бизнеса. |
+|[Получение Букингбусинесс](../api/bookingbusiness-get.md) | [bookingBusiness](bookingbusiness.md) |Чтение свойств и связей объекта Букингбусинесс.|
+|[Обновление](../api/bookingbusiness-update.md) | [bookingBusiness](bookingbusiness.md) |Обновление свойств объекта **букингбусинесс** . |
+|[Удаление](../api/bookingbusiness-delete.md) | Нет |Удаление объекта **букингбусинесс** . |
+|[Создание Букингаппоинтмент](../api/bookingbusiness-post-appointments.md) |[bookingAppointment](bookingappointment.md)| Создание нового Букингаппоинтмент путем публикации в коллекции встреч.|
+|[Список встреч](../api/bookingbusiness-list-appointments.md) |Коллекция [букингаппоинтмент](bookingappointment.md)| Получение коллекции объектов Букингаппоинтмент.|
+|[Создание Букингкустомер](../api/bookingbusiness-post-customers.md) |[Букингкустомер](bookingcustomer.md)| Создание нового Букингкустомер путем публикации в коллекции Customers.|
+|[ПереЧисление клиентов](../api/bookingbusiness-list-customers.md) |Коллекция [букингкустомер](bookingcustomer.md)| Получение коллекции объектов Букингкустомер.|
+|[Создание Букингсервице](../api/bookingbusiness-post-services.md) |[bookingService](bookingservice.md)| Создание нового Букингсервице путем публикации в коллекции служб.|
+|[Список служб](../api/bookingbusiness-list-services.md) |Коллекция [букингсервице](bookingservice.md)| Получение коллекции объектов Букингсервице.|
+|[Создание Букингстаффмембер](../api/bookingbusiness-post-staffmembers.md) |[bookingStaffMember](bookingstaffmember.md)| Создание нового Букингстаффмембер путем отправки в коллекцию Стаффмемберс.|
+|[Список Стаффмемберс](../api/bookingbusiness-list-staffmembers.md) |Коллекция [букингстаффмембер](bookingstaffmember.md)| Получение коллекции объектов Букингстаффмембер.|
+|[Список calendarView](../api/bookingbusiness-list-calendarview.md)|Коллекция [букингаппоинтмент](bookingappointment.md)|Получение коллекции объектов **букингаппоинтмент** , выполняемых в указанном диапазоне дат.|
+|[publish](../api/bookingbusiness-publish.md)|Нет|Сделайте страницу планирования для этого бизнеса доступной внешним клиентам. Задайте для свойства **публикации** значение true, а свойству **ПУБЛИКУРЛ** — URL-адрес страницы планирования.|
+|[unpublish](../api/bookingbusiness-unpublish.md)|Нет| Сделайте страницу планирования этого бизнеса недоступной для внешних клиентов. Задайте для **** свойства publishs значение false, а свойству **публикурл** — значение null.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|address|[physicalAddress](physicaladdress.md)|Почтовый адрес организации. Свойство **адрес** вместе с **телефона** и **webSiteUrl**отображаются в нижнем колонтитуле предприятие планирования страницы.|
-|businessHours|[bookingWorkHours](bookingworkhours.md) коллекции|Часы работы для предприятий.|
-|businessType|String|Тип бизнеса.|
-|defaultCurrencyIso|String|Код для валюты, предприятию работает в Microsoft резервирования.|
-|displayName|String|Название организации, который взаимодействует с клиентами. Это имя отображается в верхней части бизнеса, планирование страницы.|
+|address|[physicalAddress](physicaladdress.md)|Адрес в почтовом ящике организации. Свойство **Address** вместе с **телефоном** и **вебситеурл**отображается в нижнем колонтитуле страницы бизнес-планирования.|
+|businessHours|Коллекция [букингворкхаурс](bookingworkhours.md)|Количество часов работы для бизнеса.|
+|Бусинесстипе|String|Тип бизнеса.|
+|Дефаулткурренциисо|String|Код валюты, в которой работает предприятие, в Microsoft Books.|
+|displayName|Строка|Название организации, которая взаимодействует с клиентами. Это имя отображается в верхней части страницы "планирование бизнеса".|
 |email|String|Адрес электронной почты для бизнеса.|
-|id|Строка|Уникальный программный идентификатор для бизнеса. Только для чтения.|
-|IsPublished|Логическое|Страница расписания предоставленной внешним клиентам. Для установки этого свойства используется действий **Публикация** и **Отмена публикации** . Только для чтения.|
-|phone|String|Номер телефона для бизнеса. Свойство **phone** вместе с **адресом** и **webSiteUrl**отображаются в нижнем колонтитуле предприятие планирования страницы.|
-|publicUrl|String|URL-адрес для планирования страницы, которая задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
-|schedulingPolicy|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создать резервирования для бизнеса.|
-|websiteUrl|String|URL-адрес веб-сайта бизнеса. Свойство **webSiteUrl** вместе с **адреса**, **Телефон**, отображаются в нижней части страницы планирования бизнес.|
+|id|String|Уникальный программный идентификатор для бизнеса. Только для чтения.|
+|Публикации|Логический|Страница планирования стала доступна внешним клиентам. Для задания этого свойства используйте действия " **опубликовать** " и " **отменить публикацию** ". Только для чтения.|
+|phone|String|Номер телефона для бизнеса. Свойство **Phone** вместе с адресами **** и **вебситеурл**отображается в нижнем колонтитуле страницы бизнес-планирования.|
+|Публикурл|String|URL-адрес страницы расписания, который задается после [публикации](../api/bookingbusiness-publish.md) или [отмены публикации](../api/bookingbusiness-unpublish.md) страницы. Только для чтения.|
+|Счедулингполици|[bookingSchedulingPolicy](bookingschedulingpolicy.md)|Указывает, как можно создавать резервирования для этого бизнеса.|
+|Вебситеурл|String|URL-адрес веб-сайта компании. Свойство **вебситеурл** вместе с параметром **Address**( **Телефон**) отображается в нижнем колонтитуле страницы бизнес-планирования.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|appointments|[bookingAppointment](bookingappointment.md) коллекции| Все встречи бизнеса. Только для чтения. Допускается значение null.|
-|calendarView|[bookingAppointment](bookingappointment.md) коллекции| Набор встреч в этом бизнеса в указанный диапазон дат. Только для чтения. Допускается значение null.|
-|Клиенты|[bookingCustomer](bookingcustomer.md) коллекции| Все клиенты бизнеса. Только для чтения. Допускается значение null.|
-|службы|[bookingService](bookingservice.md) коллекции| Всех служб, предоставляемых бизнеса. Только для чтения. Допускается значение null.|
-|staffMembers|[bookingStaffMember](bookingstaffmember.md) коллекции| Все сотрудники, предоставляющие службы в этом бизнеса. Только для чтения. Допускается значение null.|
+|appointments|Коллекция [букингаппоинтмент](bookingappointment.md)| Все встречи этого бизнеса. Только для чтения. Допускается значение null.|
+|calendarView|Коллекция [букингаппоинтмент](bookingappointment.md)| Набор встреч этого бизнеса в указанном диапазоне дат. Только для чтения. Допускается значение null.|
+|TAP|Коллекция [букингкустомер](bookingcustomer.md)| Все клиенты этого предприятия. Только для чтения. Допускается значение null.|
+|служб|Коллекция [букингсервице](bookingservice.md)| Все службы, предлагаемые этим бизнесом. Только для чтения. Допускается значение null.|
+|Стаффмемберс|Коллекция [букингстаффмембер](bookingstaffmember.md)| Все сотрудники, которые предоставляют услуги в этом бизнесе. Только для чтения. Допускается значение null.|
 
 ## <a name="json-representation"></a>Представление JSON
 

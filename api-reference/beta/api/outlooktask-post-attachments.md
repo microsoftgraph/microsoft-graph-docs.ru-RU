@@ -1,21 +1,21 @@
 ---
-title: Создание объекта Attachment
-description: Используйте этот интерфейс API для добавления вложения в outlookTask.
+title: Создание вложения
+description: Используйте этот API, чтобы добавить вложение в объект outlookTask.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: ae6c420c9c0ccf10df4d2d62a27f4b8c0d857c32
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539859"
 ---
 # <a name="create-attachment"></a>Создание вложения
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот интерфейс API для добавления [вложений](../resources/attachment.md) к [outlookTask](../resources/outlooktask.md).
+Используйте этот API, чтобы добавить [вложение](../resources/attachment.md) в объект [outlookTask](../resources/outlooktask.md).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -41,7 +41,7 @@ POST /users/{id|userPrincipalName}/outlook/tasks/{id}/attachments
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
-| Content-Type | Строка, представляющая тип данных в теле сущности. Обязательный. |
+| Content-Type | Строка, представляющая тип данных в теле объекта. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -75,10 +75,9 @@ Content-length: 142
 }
 ```
 
-### <a name="response"></a>Ответ
+### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

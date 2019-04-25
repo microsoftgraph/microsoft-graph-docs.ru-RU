@@ -1,19 +1,19 @@
 ---
-title: Перечисление параметров группы
-description: Получение списка, включающего объекты параметров группы.
+title: Параметры группы списка
+description: Получение списка объектов параметров групп.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 8cb245c786ef1fbede3e305fd73df74eb574393c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.openlocfilehash: 445e03aebe0743aaaf674e4ad458eb7b392186fb
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932366"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577842"
 ---
-# <a name="list-group-settings"></a>Перечисление параметров группы
+# <a name="list-group-settings"></a>Параметры группы списка
 
-Получение списка, включающего объекты параметров группы.
+Получение списка объектов параметров групп.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -29,28 +29,28 @@ ms.locfileid: "27932366"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 
-Перечисление параметров на уровне клиента или отдельной группы.
+ПереЧисление параметров на уровне клиента или группы.
 
 ```http
 GET /groupSettings
-GET group/{id}/settings
+GET groups/{id}/settings
 ```
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-> Примечание. $filter не поддерживается.
+>**Примечание.** $filter не поддерживается.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя | Описание |
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [groupSetting](../resources/groupsetting.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [groupSetting](../resources/groupsetting.md) в тексте отклика.
 ## <a name="example"></a>Пример
 
 ##### <a name="request"></a>Запрос
@@ -62,9 +62,9 @@ GET group/{id}/settings
 ```http
 GET https://graph.microsoft.com/v1.0/groupSettings
 ```
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

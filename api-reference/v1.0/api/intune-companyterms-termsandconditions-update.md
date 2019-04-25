@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 708d59565896bb7d4782c156dd4af3ff5599b82c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30961212"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32580235"
 ---
 # <a name="update-termsandconditions"></a>Update termsAndConditions
 

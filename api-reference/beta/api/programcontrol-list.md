@@ -1,25 +1,25 @@
 ---
-title: Список programControls
-description: В Azure AD access дается обзор компонента, список объектов programControl для всех программ в клиентов.
+title: Список Програмконтролс
+description: В функции проверки доступа Azure AD перечислите все объекты Програмконтрол для всех программ в клиенте.
 localization_priority: Normal
 ms.openlocfilehash: 52361e3878445d4f739fd0cd33817d5b254ddc03
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525061"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546435"
 ---
-# <a name="list-programcontrols"></a>Список programControls
+# <a name="list-programcontrols"></a>Список Програмконтролс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В функции [дается обзор доступа](../resources/accessreviews-root.md) Azure AD список объектов [programControl](../resources/programcontrol.md) для всех программ в клиентов.
+В функции проверки [доступа](../resources/accessreviews-root.md) Azure AD перечислите все объекты [програмконтрол](../resources/programcontrol.md) для всех программ в клиенте.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Также должен быть выполнен вход пользователя в роль каталог, который позволяет им читать программы. |
+|Делегированные (рабочая или учебная учетная запись)     | `ProgramControl.Read.All`, `ProgramControl.ReadWrite.All`.  Пользователь, вошедшего в систему, также должен находиться в роли каталога, который позволяет им читать программу. |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -31,13 +31,13 @@ GET /programControls
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя         | Тип        | Описание |
 |:-------------|:------------|:------------|
-| Authorization | string | Маркер носителя Обязательный. |
+| Authorization | string | Носитель \{токен\}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Нет текста запроса должен задаваться.
+Не следует предоставлять текст запроса.
 
 ## <a name="response"></a>Ответ
-Успешно завершена, этот метод возвращает `200, OK` код ответа и массив объектов [programControl](../resources/programcontrol.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200, OK` код отклика и массив объектов [програмконтрол](../resources/programcontrol.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -51,7 +51,7 @@ GET https://graph.microsoft.com/beta/programControls
 ```
 
 ##### <a name="response"></a>Отклик
->**Примечание.** Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
+>**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,7 +83,7 @@ Content-type: application/json
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список programControls программы](program-listcontrols.md) |     [programControl](../resources/programcontrol.md) коллекции|    Получите коллекцию элементов управления из программы.|
+|[Список Програмконтролс программы](program-listcontrols.md) |     Коллекция [програмконтрол](../resources/programcontrol.md)|    Получение коллекции элементов управления программы.|
 
 
 <!--

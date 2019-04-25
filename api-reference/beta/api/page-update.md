@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: d80aae98828fa2ad07360e3a5b8d660e5d980b35
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519810"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539420"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -21,7 +21,7 @@ ms.locfileid: "29519810"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 
@@ -36,15 +36,15 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса задаете массив объектов [patchContentCommand](../resources/patchcontentcommand.md) , которые представляют изменения на страницу. Дополнительные сведения и примеры в разделе [содержимого страницы OneNote обновления](/graph/onenote-update-page).
+В теле запроса добавьте массив объектов [патчконтенткомманд](../resources/patchcontentcommand.md) , которые представляют изменения на странице. Дополнительные сведения и примеры приведены в [статье обновление содержимого страницы OneNote](/graph/onenote-update-page).
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Для запроса PATCH не возвращается никаких данных JSON.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

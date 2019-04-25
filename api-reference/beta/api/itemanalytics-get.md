@@ -5,21 +5,21 @@ ms.date: 10/06/2017
 title: Получение аналитики
 localization_priority: Normal
 ms.openlocfilehash: d1f6b255747cffe7fdccb5d098e73a56151b6245
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516261"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541047"
 ---
 # <a name="get-analytics"></a>Получение аналитики
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите [itemAnalytics][] о представлениях, выполняемых в этом ресурсе.
-**ItemAnalytics** ресурсов — это удобный способ получить статистику активности для `allTime` и `lastSevenDays`.
-Для интервала времени или интервал используйте [getActivitiesByInterval][] API.
+Получение [итеманалитикс][] о представлениях, которые были выполнены для этого ресурса.
+Ресурс **итеманалитикс** — это удобный способ получения статистики действий `allTime` и. `lastSevenDays`
+Для настраиваемого диапазона или интервала времени используйте API [getActivitiesByInterval][] .
 
->**Примечание:** **ItemAnalytics** ресурсов, пока недоступна во всех [Национальный развертываний](/graph/deployments).
+>**Примечание:** Ресурс **итеманалитикс** пока недоступен во всех [национальных развертываниях](/graph/deployments).
 
 [itemAnalytics]: ../resources/itemanalytics.md
 [getActivitiesByInterval]: ../api/itemactivity-getbyinterval.md
@@ -54,7 +54,7 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/analytics
 GET /drives/{drive-id}/items/{item-id}/analytics
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 

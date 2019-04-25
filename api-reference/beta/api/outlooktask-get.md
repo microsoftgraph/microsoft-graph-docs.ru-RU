@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: f140734b6e5fa3e6488b71dbe183a9e3d82fc795
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967293"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539765"
 ---
 # <a name="get-outlooktask"></a>Получение outlookTask
 
@@ -17,7 +17,7 @@ ms.locfileid: "29967293"
 
 Получение свойств и связей задачи Outlook в почтовом ящике пользователя.
 
-По умолчанию эта операция (и POST, ИСПРАВЛЕНИЙ и [выполнения](../api/outlooktask-complete.md) операции задачи) возвращает свойства, связанные с даты в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
+По умолчанию эта операция (а также операции POST, PATCH и [Complete](../api/outlooktask-complete.md) ) Возвращает свойства, связанные с датами, в формате UTC. Можно использовать заголовок `Prefer: outlook.timezone`, чтобы все свойства, связанные с датами, были представлены в часовом поясе, отличном от UTC.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -47,7 +47,7 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 | Имя                     | Описание                                       |
 |:-------------------------|:--------------------------------------------------|
 | Авторизация            | Bearer {токен}. Обязательный.                         |
-| Prefer: outlook.timezone | Указывает часовой пояс для свойств времени в ответ, который может быть в формате UTC, если не указан этот заголовок. Необязательное свойство. |
+| Prefer: outlook.timezone | Задает часовой пояс для свойств времени в отклике в формате UTC, если заголовок не указан. Необязательный параметр. |
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -55,11 +55,11 @@ GET /users/{id|userPrincipalName}/outlook/tasks/{id}
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` объект [outlookTask](../resources/outlooktask.md) и кода ответа в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [outlookTask](../resources/outlooktask.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-an-outlook-task"></a>В примере 1: Получение задачи Outlook
+### <a name="example-1-get-an-outlook-task"></a>Пример 1: получение задачи Outlook
 
 #### <a name="request"></a>Запрос
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MTrgAAA=')
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.
+Ниже приведен пример отклика. По умолчанию свойства даты и времени в ответе возвращаются в формате UTC.
 
 > **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
@@ -124,11 +124,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2: Получение задачи Outlook с помощью свойства даты и времени в Тихоокеанское время
+### <a name="example-2-get-outlook-task-with-date-time-properties-in-pacific-standard-time"></a>Пример 2: получение задачи Outlook со свойствами даты и времени в стандартном Тихоокеанском времени
 
 #### <a name="request"></a>Запрос
 
-В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать свойства даты и времени в ответ в Тихоокеанское время.
+В этом примере используется `Prefer: outlook.timezone` заголовок, чтобы указать, что API должен возвращать в ответе свойства даты и времени в ответе в стандартном Тихоокеанском времени.
 
 <!-- {
   "blockType": "request",
@@ -140,9 +140,9 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks('AAMkADA1MHgwAAA=')
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
-Ниже приведен пример отклика. Свойства даты и времени в ответе возвращаются в указанном Тихоокеанское время.
+Ниже приведен пример отклика. Свойства даты и времени в отклике возвращаются в указанном тихоокеанском стандартном Тихоокеанском времени.
 
 > **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

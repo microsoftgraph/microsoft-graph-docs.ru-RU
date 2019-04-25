@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8a1caf00f16fc1f4384977913073623b02d2a33a
-ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824418"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32544651"
 ---
 # <a name="add-tab-to-channel"></a>Добавление вкладки в канал
 
@@ -70,7 +70,7 @@ POST https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
