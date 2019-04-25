@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 93500903e0936f734eaab33ccf03c4b2a4a9483e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27948620"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520678"
 ---
 # <a name="list-subscribedskus"></a>Список объектов SubscribedSku
 Получение списка коммерческих подписок, приобретенных организацией.
@@ -35,10 +35,10 @@ GET /subscribedSkus
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | &lt;Токен&gt; носителя. *Обязательный* |
+| Authorization  | string  | &lt;Токен&gt; носителя. *Обязательный* |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -54,7 +54,7 @@ GET /subscribedSkus
 GET https://graph.microsoft.com/v1.0/subscribedSkus
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

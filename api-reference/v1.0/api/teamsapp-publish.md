@@ -1,27 +1,27 @@
 ---
 title: Разрешения
-description: 'Публикация приложения в каталоге приложений группами Майкрософт. '
+description: 'Опубликуйте приложение в каталоге приложений Microsoft Teams. '
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 0c8093092a6a5dfc6d8c97df372832f15cc8eb20
-ms.sourcegitcommit: 2c60e38bb1b71ba958659f66ad4736495e520851
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28016746"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521763"
 ---
-# <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений организации
+# <a name="publish-apps-to-your-organizations-app-catalog"></a>Публикация приложений в каталоге приложений Организации
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Публикация [приложения](../resources/teamsapp.md) в каталог приложений группами Майкрософт. В частности этот интерфейс API публикует приложение в каталоге организации (клиент каталога приложений); созданный ресурс будет иметь `distributionMethod`  =  `organization`.
+Опубликуйте [приложение](../resources/teamsapp.md) в каталоге приложений Microsoft Teams. В частности, этот API публикует приложение в каталоге организации (Каталог приложений клиента); созданный ресурс будет иметь `distributionMethod`  =  `organization`.
 
 ## <a name="permissions"></a>Разрешения
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
->**Примечание:** Только глобальный администратор может вызывать этот интерфейс API. 
+>**Примечание:** Только глобальные администраторы могут вызывать этот API. 
 
 | Тип разрешения                        | Разрешения (в порядке повышения привилегий)|
 |:----------------------------------     |:-------------|
@@ -40,29 +40,29 @@ POST /appCatalogs/teamsApps
 | Заголовок        | Значение           |
 |:--------------|:--------------  |
 | Авторизация | Bearer {токен}. Обязательный.  |
-| Content-Type  | приложение/zip |
+| Content-Type  | приложение/ZIP-индекс |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Zip полезных команд манифеста. Для приложения группы ZIP-файл, [перейдите в раздел Create пакет приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Не удается создать приложения для организации, которая имеет тот же идентификатор манифеста в качестве другого приложения в организации.
+Полезные данные манифеста ZIP Teams. Для ZIP-файла приложения Teams [в разделе Create a App Package](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). Вы не можете создать приложение для Организации с таким же ИДЕНТИФИКАТОРом манифеста, что и у другого приложения в этой Организации.
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [teamsCatalogApp](../resources/teamsapp.md) .
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [теамскаталогапп](../resources/teamsapp.md) .
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
 
 ```http
-POST https://graph.microsoft.com/v1.0/appCatalogs/teamsApps
+POST https://graph.microsoft.com/beta/appCatalogs/teamsApps
 Content-type: application/zip
 Content-length: 244
 
 [Zip file containing a Teams app package]
 ```
 
-Сведения о создании ZIP-файл приложения группами Майкрософт перейдите в раздел [Create пакет приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
+Сведения о том, как создать ZIP-файл приложения Microsoft Teams, можно найти в разделе [Создание пакета приложения](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/apps/apps-package). 
 
 ### <a name="response"></a>Отклик
 
@@ -78,3 +78,11 @@ Content-Type: application/json
   "distributionMethod": "organization"
 }
 ```
+<!--
+{
+  "type": "#page.annotation",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamsapp-publish.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -1,68 +1,68 @@
 ---
-title: Обзор синхронизации API Azure AD
-description: ') позволяет автоматизировать создания, обслуживания и удаления удостоверений в облако (программное обеспечение как службы или SaaS) приложениями, такими как общего банка данных, Salesforce, ServiceNow и многое другое. API синхронизации можно использовать в Microsoft Graph для управления синхронизацией identity программным путем, включая:'
+title: Общие сведения об API синхронизации Azure AD
+description: ') позволяет автоматизировать создание, Обслуживание и удаление удостоверений в приложениях Cloud (программное обеспечение, в качестве службы или SaaS), таких как Dropbox, Salesforce, ServiceNow и т. д. С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:'
 localization_priority: Normal
 ms.openlocfilehash: ed994b8204fdee38f558da499259538e85eacd30
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529560"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523464"
 ---
-# <a name="azure-ad-synchronization-api-overview"></a>Обзор синхронизации API Azure AD
+# <a name="azure-ad-synchronization-api-overview"></a>Общие сведения об API синхронизации Azure AD
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Azure (Azure AD) удостоверений синхронизации с Active Directory (также называемая «Подготовка») позволяет автоматизировать создания, обслуживания и удаления удостоверений в облаке (программное обеспечение как службы или SaaS) приложениями, такими как общего банка данных, Salesforce, ServiceNow, и многое другое. API синхронизации можно использовать в Microsoft Graph для управления синхронизацией identity программным путем, включая:
+Синхронизация удостоверений Azure Active Directory (также называемая "наполнением") позволяет автоматизировать создание, Обслуживание и удаление удостоверений в Cloud (программное обеспечение, в виде службы или SaaS), например Dropbox, Salesforce, ServiceNow и многое другое. С помощью API синхронизации в Microsoft Graph можно управлять синхронизацией удостоверений программным способом, в том числе:
 
-- Создание, запуск и остановка задания синхронизации
-- Вносить изменения в схеме синхронизации для задания
+- Создание, запуск и остановка заданий синхронизации
+- Внесение изменений в схему синхронизации для заданий
 - Проверка текущего состояния синхронизации 
 
-Дополнительные сведения о синхронизации в Azure AD см.
+Дополнительные сведения о синхронизации в Azure AD приведены в следующих статьях:
 
-* [Автоматизировать пользователя обеспечение и Отмена обеспечения SaaS приложений с помощью Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
-* [Управление для корпоративных приложений в портале Azure при подготовке учетной записи пользователя](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
+* [Автоматизация подготовки пользователей и их отмена в приложениях SaaS с помощью Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-saas-app-provisioning)
+* [Управление предоставлением учетных записей пользователей для корпоративных приложений на портале Azure](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-enterprise-apps-manage-provisioning)
 
-Можно также попробовать API в [Обозревателе график](https://developer.microsoft.com/graph/graph-explorer) в пример клиента или собственного клиента.
+Вы также можете попробовать API в [проводнике Graph](https://developer.microsoft.com/graph/graph-explorer) в образце клиента или в собственном клиенте.
 
 ## <a name="synchronization-job"></a>Задание синхронизации
 
-Задания синхронизации для выполнения синхронизации периодически выполняется в фоновом режиме, опроса для изменения в один каталог и помещает их в другой каталог. Задание синхронизации всегда специально для конкретного экземпляра приложения клиента. Как часть процесса установки задания синхронизации необходимо предоставить разрешение на чтение и запись в целевом каталоге объекты и настройке задания синхронизации схемы.
+Задания синхронизации выполняют синхронизацию, периодически запуская в фоновом режиме, запрашивают изменения в одном каталоге и отправляют их в другой каталог. Задание синхронизации всегда относится к определенному экземпляру приложения в клиенте. В рамках настройки задания синхронизации необходимо предоставить авторизацию для чтения и записи объектов в целевом каталоге, а также для настройки схемы синхронизации задания.
 
-Для получения дополнительных сведений см [Задание синхронизации](synchronization-synchronizationjob.md).
+Более подробную информацию можно узнать в статье [Задание синхронизации](synchronization-synchronizationjob.md).
 
 ## <a name="synchronization-schema"></a>Схема синхронизации
 
-Схема синхронизации определяет объекты, которые будут синхронизированы и как они будут синхронизироваться. Схема синхронизации содержит основные сведения об установке для задания синхронизации. Как правило будет настроить некоторые [атрибут сопоставления](synchronization-attributemapping.md)или добавить [области видимости фильтров](synchronization-filter.md) синхронизировать только объекты, удовлетворяющие определенному условию.
+Схема синхронизации определяет объекты, которые будут синхронизированы и как они будут синхронизированы. Схема синхронизации содержит большую часть сведений о настройке для определенного задания синхронизации. Как правило, вы настраиваете некоторые [сопоставления атрибутов](synchronization-attributemapping.md)или добавляете [Фильтр областей](synchronization-filter.md) для синхронизации только объектов, удовлетворяющих определенному условию.
 
 Схема синхронизации включает в себя следующие компоненты:
 
 - Определения каталогов
 - Правила синхронизации
-- Объект сопоставления
+- Сопоставления объектов
 
-Для получения дополнительных сведений см [синхронизации](synchronization-synchronizationschema.md).
+Более подробную информацию можно узнать в статье [схема синхронизации](synchronization-synchronizationschema.md).
 
 ## <a name="synchronization-template"></a>Шаблон синхронизации
 
-Шаблон синхронизации предоставляет параметры предварительно настроенным синхронизации для конкретного приложения. Эти параметры (важнее, [синхронизации схемы](synchronization-synchronizationschema.md)) будет использоваться по умолчанию для любое [Задание синхронизации](synchronization-synchronizationjob.md) , основанный на шаблоне. Шаблоны задаются разработчиком приложения.
+Шаблон синхронизации предоставляет предварительно настроенные параметры синхронизации для определенного приложения. Эти параметры (наиболее важное, [схема синхронизации](synchronization-synchronizationschema.md)) будут использоваться по умолчанию для всех [заданий синхронизации](synchronization-synchronizationjob.md) , основанных на этом шаблоне. Шаблоны задаются разработчиком приложения.
 
 Для получения дополнительных сведений см [шаблон синхронизации](synchronization-synchronizationtemplate.md).
 
 ## <a name="working-with-the-synchronization-api"></a>Работа с API синхронизации
 
-Работа с синхронизацией API в основном состоит из доступ к ресурсам [synchronizationJob](synchronization-synchronizationjob.md) и [synchronizationSchema](synchronization-synchronizationschema.md) . Чтобы найти [synchronizationJob](synchronization-synchronizationjob.md) ресурса, необходимо знать идентификатор объекта-участника службы, к которой принадлежит задание синхронизации. В приведенных ниже примерах показано, как работать с ресурсами **synchronizationJob** и **synchronizationSchema** .
+Работа с API синхронизации в основном включает доступ к ресурсам [синчронизатионжоб](synchronization-synchronizationjob.md) и [синчронизатионсчема](synchronization-synchronizationschema.md) . Чтобы найти ресурс [синчронизатионжоб](synchronization-synchronizationjob.md) , необходимо знать идентификатор объекта участника службы, к которому относится задание синхронизации. В приведенных ниже примерах показано, как работать с ресурсами **синчронизатионжоб** и **синчронизатионсчема** .
 
 ### <a name="authorization"></a>Authorization
 
-Интерфейс API синхронизации Azure AD для авторизации используется OAuth 2.0. Прежде чем вносить какие-либо запросы API-интерфейса, необходимо получить маркер доступа. Для получения дополнительных сведений см [маркеры доступа Get для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации, приложению Directory.ReadWrite.All разрешения. Для получения дополнительных сведений см [разрешения для каталога](/graph/permissions-reference#directory-permissions).
+API синхронизации Azure AD использует OAuth 2,0 для проверки подлинности. Перед выполнением запросов к API необходимо получить маркер доступа. Дополнительные сведения [можно найти в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview). Для доступа к ресурсам синхронизации приложению требуются разрешения Directory. ReadWrite. ALL. Для получения дополнительных сведений ознакомьтесь с разрешениями для [каталогов](/graph/permissions-reference#directory-permissions).
 
-### <a name="find-the-service-principal-object-by-display-name"></a>Найдите объект участника службы по отображаемому имени
+### <a name="find-the-service-principal-object-by-display-name"></a>Поиск объекта субъекта службы по отображаемому имени
 
-Следующем примере показано, как для объекта-участника службы поиска по отображаемому имени.
+В приведенном ниже примере показано, как найти объект участника службы по отображаемому имени.
 
-Запрос 
+**Запрос** 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -90,16 +90,18 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="find-the-service-principal-object-by-app-id"></a>Найдите объект участника службы по Идентификатору приложения
+### <a name="find-the-service-principal-object-by-app-id"></a>Поиск объекта субъекта службы по ИДЕНТИФИКАТОРу приложения
 
-Следующем примере показано, как найти объекта участника-службы с идентификатором приложения.
+В приведенном ниже примере показано, как найти объект субъекта службы по ИДЕНТИФИКАТОРу приложения.
 
-Запрос
+**Request** 
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=AppId eq '219561ee-1480-4c67-9aa6-63d861fae3ef'
 ```
 
-Ответ
+**Отклик**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -113,17 +115,19 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="list-existing-synchronization-jobs"></a>Список существующих заданий синхронизации
+### <a name="list-existing-synchronization-jobs"></a>ПереЧисление существующих заданий синхронизации
 
-Следующем примере показано, как список существующих заданий синхронизации.
+В приведенном ниже примере показано, как перечислить существующие задания синхронизации.
 
-Запрос
+**Запрос**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
 ```
 
-Ответ
+**Отклик**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -142,17 +146,19 @@ HTTP/1.1 200 OK
 }
 ```
 
-### <a name="get-synchronization-job-status"></a>Получить сведения о состоянии задания синхронизации
-Следующем примере показано, как получить сведения о состоянии задания синхронизации.
+### <a name="get-synchronization-job-status"></a>Получение состояния задания синхронизации
+В приведенном ниже примере показано, как получить состояние задания синхронизации.
 
-Запрос
+**Запрос**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}
 
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs/SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa
 ```
 
-Ответ
+**Отклик**
+<!-- { "blockType": "ignored" } -->
 ```http
     HTTP/1.1 200 OK
     {
@@ -168,14 +174,16 @@ GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a
 ```
 
 ### <a name="get-synchronization-schema"></a>Получение схемы синхронизации
-Следующем примере показано, как получить схему синхронизации.
+В приведенном ниже примере показано, как получить схему синхронизации.
 
-Запрос
+**Запрос**
+<!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-Ответ
+**Отклик**
+<!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK
 {
@@ -185,8 +193,8 @@ HTTP/1.1 200 OK
 ```
 ## <a name="see-also"></a>См. также
 
-* [Настройка синхронизации с расширением атрибутов каталога](../resources/synchronization-configure-with-directory-extension-attributes.md)
-* [Настройка синхронизации с помощью настраиваемого конечного атрибутов](../resources/synchronization-configure-with-custom-target-attributes.md)
+* [Настройка синхронизации с атрибутами расширения каталога](../resources/synchronization-configure-with-directory-extension-attributes.md)
+* [Настройка синхронизации с пользовательскими целевыми атрибутами](../resources/synchronization-configure-with-custom-target-attributes.md)
 
 
 

@@ -4,15 +4,16 @@ description: Обновление свойств указанной вкладк
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 1a864e6d31caa07eaa9f30bfddc22b40659a277b
-ms.sourcegitcommit: 0a673c6f4ad7aed12fb0e69608c0f73957bae10e
+ms.openlocfilehash: ed1138d5dbb1aec1cd3e14839b5fffaef4ee5f8f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31824397"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521840"
 ---
 # <a name="update-tab"></a>Обновление вкладки
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Обновление свойств указанной [вкладки](../resources/teamstab.md). Это можно использовать для настройки контента вкладки.
 
@@ -42,7 +43,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Tab](../resources/teamstab.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`.
 
@@ -50,7 +51,7 @@ PATCH /teams/{id}/channels/{id}/tabs/{id}
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/tabs/{id}
+PATCH https://graph.microsoft.com/beta/teams/{id}/channels/{id}/tabs/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -58,7 +59,7 @@ Content-length: 211
   "displayName": "My Contoso Tab - updated"
 }
 ```
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -90,6 +91,9 @@ Content-type: application/json
   "description": "Update tab in channel",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/teamstab-update.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
 }
 -->

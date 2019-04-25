@@ -2,18 +2,18 @@
 title: Архивация команды
 description: 'Архивация указанной команды. '
 author: nkramer
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 28c1ea9d96d55587f95af85c9aba50a43fe08d60
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890026"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520251"
 ---
 # <a name="archive-team"></a>Архивация команды
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Архивация указанной [команды](../resources/team.md). При архивации команды пользователь больше не сможет отправлять сообщения в любой канал команды или присваивать сообщениям отметку "Нравится", изменять название команды, описание, другие параметры и в целом вносить большинство изменений в команду.
 Изменение участия в команде по-прежнему допускается.
@@ -66,7 +66,7 @@ POST /teams/{id}/archive
   "name": "archive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/archive
+POST https://graph.microsoft.com/beta/teams/{id}/archive
 ```
 #### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
@@ -78,10 +78,15 @@ Content-Length: 0
 ```
 <!-- uuid: e848414b-4669-4484-ac36-1504c58a3fb8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Archive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/team-archive.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

@@ -5,13 +5,13 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 0f93449f5fdebfce3388f20418174b03b91615d6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524038"
 ---
-# <a name="remove-member"></a>Удаление элемента
+# <a name="remove-member"></a>Удаление члена
 С помощью этого API можно удалить участника из группы Office 365 или группы безопасности (обычной или с поддержкой почты) через свойство навигации **members**. Вы можете удалять пользователей или другие группы.
 
 ## <a name="permissions"></a>Разрешения
@@ -32,10 +32,10 @@ DELETE /groups/{id}/members/{id}/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`. В тексте отклика не возвращается никаких данных.
@@ -53,8 +53,8 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 Укажите в запросе свойство `id` удаляемого объекта каталога после сегмента $ref.
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
->**Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства.
+Ниже приведен пример отклика.
+>**Примечание.**  Объект ответа, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

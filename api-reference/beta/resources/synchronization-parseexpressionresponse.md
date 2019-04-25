@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса parseExpressionResponse
-description: 'Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.'
+title: Тип ресурса Парсикспрессионреспонсе
+description: 'Представляет отклик от действия [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) .'
 localization_priority: Normal
 ms.openlocfilehash: f8ea708468e1e580693b2bd0e6f0e7f3494996f0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641059"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523436"
 ---
-# <a name="parseexpressionresponse-resource-type"></a>Тип ресурса parseExpressionResponse
+# <a name="parseexpressionresponse-resource-type"></a>Тип ресурса Парсикспрессионреспонсе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ответ от [synchronizationSchema: parseExpression](../api/synchronization_synchronizationschema_parseexpression.md) действие.
+Представляет отклик от действия [синчронизатионсчема: парсикспрессион](../api/synchronization_synchronizationschema_parseexpression.md) .
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|error|OData.Error|Дополнительные сведения об ошибке, если вычисление выражения возникла ошибка.|
-|evaluationResult|Коллекция String|Коллекция значений, созданные средством оценки выражения.|
-|evaluationSucceeded|Boolean|`true`При оценке прошла успешно.|
-|parsedExpression|[attributeMappingSource](synchronization-attributemappingsource.md)|Объект [attributeMappingSource](synchronization-attributemappingsource.md) , представляющий проанализированного выражения.|
-|parsingSucceeded|Boolean|`true`Если выражение успешно обработан.|
+|error|OData. Error|Сведения об ошибке, если вычисление выражений привело к ошибке.|
+|Евалуатионресулт|Коллекция строк|Коллекция значений, полученных при оценке выражения.|
+|Евалуатионсукцеедед|Boolean|`true`, если оценка выполнена успешно.|
+|Парседекспрессион|[Аттрибутемаппингсаурце](synchronization-attributemappingsource.md)|Объект [аттрибутемаппингсаурце](synchronization-attributemappingsource.md) , представляющий проанализированное выражение.|
+|Парсингсукцеедед|Boolean|`true`, если выражение было успешно проанализировано.|
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 7e87edcebae95f32ce0bccaf849a7d21140f4878
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29639946"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523807"
 ---
 # <a name="worksheetprotection-resource-type"></a>Тип ресурса WorksheetProtection
 
@@ -32,7 +32,7 @@ ms.locfileid: "29639946"
 |protected|boolean|Указывает, защищен ли лист.  Только для чтения.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |options|[WorksheetProtectionOptions](worksheetprotectionoptions.md)|Параметры защиты листа. Только для чтения.|
 

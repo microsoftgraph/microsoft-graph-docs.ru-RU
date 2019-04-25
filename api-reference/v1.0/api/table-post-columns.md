@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 17c49101decad6ad840ff8c564e204ccd6399072
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981226"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520643"
 ---
 # <a name="create-tablecolumn"></a>Создание объекта TableColumn
 
@@ -36,12 +36,12 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [WorkbookTableColumn](../resources/tablecolumn.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [Воркбуктаблеколумн](../resources/tablecolumn.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [WorkbookTableColumn](../resources/tablecolumn.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбуктаблеколумн](../resources/tablecolumn.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -62,9 +62,9 @@ Content-length: 81
   "values": "values-value"
 }
 ```
-В тексте запроса укажите представление JSON объекта [WorkbookTableColumn](../resources/tablecolumn.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В тексте запроса добавьте представление объекта [Воркбуктаблеколумн](../resources/tablecolumn.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

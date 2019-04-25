@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: acf2987e7c022754ff0659d82027b4d0d26901bd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772176"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524444"
 ---
 # <a name="devicegeolocation-resource-type"></a>Тип ресурса deviceGeoLocation
 
@@ -24,12 +24,12 @@ ms.locfileid: "31772176"
 |:---|:---|:---|
 |Ластколлектеддатетимеутк|DateTimeOffset|Время записи расположения относительно времени UTC|
 |lastCollectedDateTime|DateTimeOffset|Время записи расположения относительно времени UTC|
-|longitude|Двойное с плавающей точкой|Долгота расположения устройства|
-|latitude|Двойное с плавающей точкой|Широта расположения устройства|
-|altitude|Двойное с плавающей точкой|Высота (метров над уровнем моря)|
-|horizontalAccuracy|Двойное с плавающей точкой|Точность долготы и широты (м)|
-|verticalAccuracy|Двойное с плавающей точкой|Точность высоты (м)|
-|heading|Двойное с плавающей точкой|Направление от географического севера (градусов)|
+|longitude|Double|Долгота расположения устройства|
+|latitude|Double|Широта расположения устройства|
+|altitude|Double|Высота (метров над уровнем моря)|
+|horizontalAccuracy|Double|Точность долготы и широты (м)|
+|verticalAccuracy|Double|Точность высоты (м)|
+|heading|Double|Направление от географического севера (градусов)|
 |speed|Double|Скорость передвижения устройства (м/с)|
 
 ## <a name="relationships"></a>Отношения

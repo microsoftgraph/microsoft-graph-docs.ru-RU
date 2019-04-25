@@ -3,11 +3,11 @@ title: 'Filter: apply'
 description: Применяет заданные условия фильтра для определенного столбца.
 localization_priority: Normal
 ms.openlocfilehash: e7223c1b3d7cd75356c459f366c1a230eeb06e59
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27846146"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524262"
 ---
 # <a name="filter-apply"></a>Filter: apply
 
@@ -33,12 +33,12 @@ POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/ap
 |:---------------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|criteria|WorkbookFilterCriteria|Применяемые условия.|
+|criteria|Воркбукфилтеркритериа|Применяемые условия.|
 
 ## <a name="response"></a>Отклик
 
@@ -76,7 +76,7 @@ Content-length: 321
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

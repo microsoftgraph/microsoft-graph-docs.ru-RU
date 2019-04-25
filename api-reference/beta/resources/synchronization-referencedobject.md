@@ -1,26 +1,26 @@
 ---
-title: Тип ресурса referencedObject
-description: Описывает ссылку на другой объект, определенных в одно и то же определение каталога.
+title: Тип ресурса Референцедобжект
+description: Описывает ссылку на другой объект, определенный в том же определении каталога.
 localization_priority: Normal
 ms.openlocfilehash: dcec232335fdf3d447097ea1ae87fbc9ea676cfe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529322"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523247"
 ---
-# <a name="referencedobject-resource-type"></a>Тип ресурса referencedObject
+# <a name="referencedobject-resource-type"></a>Тип ресурса Референцедобжект
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Описывает ссылку на другой объект, определенных в одно и то же [Определение каталога](synchronization-directorydefinition.md).
+Описывает ссылку на другой объект, определенный в том же [определении каталога](synchronization-directorydefinition.md).
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                   | Тип                      | Описание    |
 |:---------------------------|:--------------------------|:---------------|
-|referencedObjectName        |String                     |Имя объекта, на который указывает ссылка. Должно соответствовать одному из объектов в [каталоге определения](synchronization-directorydefinition.md).|
-|referencedProperty          |String                     |**В настоящее время не поддерживается**. Имя свойства в этом объекте, значение которой используется в качестве ссылки.|
+|Референцедобжектнаме        |String                     |Имя объекта, на который указывает ссылка. Должен сопоставлять один из объектов в [определении каталога](synchronization-directorydefinition.md).|
+|Референцедпроперти          |String                     |**В настоящее время не поддерживается**. Имя свойства в объекте, на который указывает ссылка, значение, которое используется в качестве ссылки.|
 
 ## <a name="json-representation"></a>Представление JSON
 

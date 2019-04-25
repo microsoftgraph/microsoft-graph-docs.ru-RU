@@ -1,21 +1,21 @@
 ---
-title: Перечисление serviceConfigurationRecords
-description: Получение списка объектов domainDnsRecord, которые требуются, чтобы включить службы для домена.
+title: Список serviceConfigurationRecords
+description: Получает список объектов domainDnsRecord, необходимых для включения служб для домена.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 4237b0b0f1c7bddfe8572268a367207a2eeb1434
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917491"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520090"
 ---
-# <a name="list-serviceconfigurationrecords"></a>Перечисление serviceConfigurationRecords
+# <a name="list-serviceconfigurationrecords"></a>Список serviceConfigurationRecords
 
-Получение списка объектов [domainDnsRecord](../resources/domaindnsrecord.md), которые требуются, чтобы включить службы для домена.
+Получает список объектов [domainDnsRecord](../resources/domaindnsrecord.md) , необходимых для включения служб для домена.
 
-Используйте возвращенный список для добавления записей в файле зоны домена. Это можно сделать с помощью регистратора доменных имен или путем настройки DNS-сервера.
+Используйте возвращенный список, чтобы добавить записи в файл зоны домена. Это можно сделать с помощью регистратора доменных имен или DNS-сервера.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -45,13 +45,13 @@ GET /domains/contoso.com/serviceConfigurationRecords
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type  | application/json |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [domainDnsRecord](../resources/domaindnsrecord.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -64,7 +64,7 @@ GET /domains/contoso.com/serviceConfigurationRecords
 GET https://graph.microsoft.com/v1.0/domains/{domain-name}/serviceConfigurationRecords
 ```
 ##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

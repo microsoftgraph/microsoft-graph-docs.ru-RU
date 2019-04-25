@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c4962ff9f920b97a0dad361549e9b5829b3740b8
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30258095"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524374"
 ---
 # <a name="mobilethreatpartnertenantstate-enum-type"></a>тип перечисления Мобилесреатпартнертенантстате
 
@@ -21,9 +21,9 @@ ms.locfileid: "30258095"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |выходе|нуль|Партнер недоступен.|
-|доступен|1,1|Партнер доступен.|
-|enabled|2|Партнер включен.|
-|не отвечает|4|Партнер не отвечает.|
+|доступен|1 |Партнер доступен.|
+|enabled|2 |Партнер включен.|
+|не отвечает|3 |Партнер не отвечает.|
 
 
 

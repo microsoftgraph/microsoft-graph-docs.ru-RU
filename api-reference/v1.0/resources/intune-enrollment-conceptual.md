@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 03c4775a3d5042a4d8b39821c257278798d59882
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966323"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523380"
 ---
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Регистрация корпоративных устройств с помощью Intune
 
@@ -19,8 +19,8 @@ ms.locfileid: "27966323"
 
 Для управления корпоративными устройствами в Intune используются перечисленные ниже ресурсы Graph.
 
-- [Импортированные windows автопилот устройств удостоверений](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
-- [Состояние импортированных windows автопилот устройства identity импорта](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
-- [Состояние импортированных windows автопилот устройства удостоверения](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
-- [Отправка identity устройства автопилот импортированных windows](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
-- [Состояние передачи удостоверения устройства автопилот импортированных windows](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)
+- [Импортированное удостоверение устройства с Windows Autopilot](intune-enrollment-importedwindowsautopilotdeviceidentity.md)
+- [Состояние импорта удостоверения устройства с Windows Autopilot](intune-enrollment-importedwindowsautopilotdeviceidentityimportstatus.md)
+- [Состояние импортированного удостоверения устройства с Windows Autopilot](intune-enrollment-importedwindowsautopilotdeviceidentitystate.md)
+- [Загрузка импортированного удостоверения устройства Windows AutoPilot](intune-enrollment-importedwindowsautopilotdeviceidentityupload.md)
+- [Статус загрузки импортированного удостоверения устройства Windows AutoPilot](intune-enrollment-importedwindowsautopilotdeviceidentityuploadstatus.md)

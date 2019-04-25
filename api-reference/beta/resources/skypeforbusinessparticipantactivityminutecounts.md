@@ -1,24 +1,24 @@
 ---
-title: Тип ресурса skypeForBusinessParticipantActivityMinuteCounts
+title: Тип ресурса СкипефорбусинесспартиЦипантактивитиминутекаунтс
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: 984a3a87cf2c4ae0298f6c82f9f82a7a6b3a409c
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27842765"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523429"
 ---
-# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a>Тип ресурса skypeForBusinessParticipantActivityMinuteCounts
+# <a name="skypeforbusinessparticipantactivityminutecounts-resource-type"></a>Тип ресурса СкипефорбусинесспартиЦипантактивитиминутекаунтс
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| Ресурс        | Int64  |
-| reportRefreshDate | Date   |
-| reportDate        | Date   |
-| reportPeriod      | String |
+| Audiovideohttp        | Int64  |
+| Репортрефрешдате | Дата   |
+| reportDate        | Дата   |
+| Репортпериод      | String |
 
 ## <a name="json-representation"></a>Представление JSON
 

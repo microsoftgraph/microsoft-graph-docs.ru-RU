@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса tokenMeetingInfo
-description: Тип tokenMeetingInfo.
+title: Тип ресурса Токенмитингинфо
+description: Тип Токенмитингинфо.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 8e115887e67f19375ca8b96a216af98c80e0b312
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642592"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32523023"
 ---
-# <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса tokenMeetingInfo
+# <a name="tokenmeetinginfo-resource-type"></a>Тип ресурса Токенмитингинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип tokenMeetingInfo.
+Тип Токенмитингинфо.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип    | Описание                                                                    |
 | :--------------------------- | :------ | :----------------------------------------------------------------------------- |
-| allowConversationWithoutHost | Boolean | Указывает, если беседы можно продолжить после покидает узла беседы. |
-| токен                        | Строка  | Маркер для присоединения к/активации собрания.                                        |
+| Алловконверсатионвисаусост | Boolean | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
+| токен                        | Строка  | Токен для присоединения и активации собрания.                                        |
 
 ## <a name="json-representation"></a>Представление JSON
 

@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Изменение разрешений на общий доступ
 localization_priority: Normal
 ms.openlocfilehash: b2c3c41c9feecf7b2874ffdcc468593b6eeb7444
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482072"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521245"
 ---
 # <a name="update-sharing-permission"></a>Обновление разрешения на общий доступ
 
@@ -56,7 +56,7 @@ PATCH /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 |:---------|:------------------|:------------------------------|
 | roles    | Коллекция строк | Массив типов разрешений. |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и обновленный объект [permission](../resources/permission.md) в тексте отклика.
 

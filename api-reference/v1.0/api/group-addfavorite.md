@@ -5,11 +5,11 @@ localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 5878c3b0ac324592204310c80458744e4e54c446
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27916392"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32524164"
 ---
 # <a name="group-addfavorite"></a>group: addFavorite
 Добавление группы в список избранных групп текущего пользователя. Поддерживается только для групп Office 365.
@@ -35,8 +35,8 @@ POST /groups/{id}/addFavorite
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Prefer | return=minimal. Если заголовок минимального отклика включен в заголовок запроса, то в отклике об успешном выполнении возвращается код `204 No Content`. Необязательный параметр.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.
@@ -52,8 +52,8 @@ POST /groups/{id}/addFavorite
 POST https://graph.microsoft.com/v1.0/groups/{id}/addFavorite
 ```
 
-#### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": false

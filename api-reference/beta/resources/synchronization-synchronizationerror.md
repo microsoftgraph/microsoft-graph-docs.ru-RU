@@ -1,19 +1,19 @@
 ---
-title: Тип ресурса synchronizationError
-description: Представляет ошибки, возникшей во время синхронизации.
+title: Тип ресурса Синчронизатионеррор
+description: Представляет сообщение об ошибке, возникшей во время процесса синхронизации.
 localization_priority: Normal
 ms.openlocfilehash: f37dca5b65a67eb36b2b6a130eee8feb692cd271
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513174"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525980"
 ---
-# <a name="synchronizationerror-resource-type"></a>Тип ресурса synchronizationError
+# <a name="synchronizationerror-resource-type"></a>Тип ресурса Синчронизатионеррор
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет ошибки, возникшей во время синхронизации.
+Представляет сообщение об ошибке, возникшей во время процесса синхронизации.
 
 ## <a name="properties"></a>Свойства
 
@@ -22,9 +22,9 @@ ms.locfileid: "29513174"
 |:---------------|:--------|:----------|
 |code|String||
 |message|String||
-|tenantActionable|Логическое||
+|Тенантактионабле|Boolean||
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

@@ -5,11 +5,11 @@ author: jackson-woods
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 42bb4fc0e98294c9a319e20a6b4f632f040ef0da
-ms.sourcegitcommit: 255061099661a38278140675db4cbadbdca9be7c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "29760932"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521656"
 ---
 # <a name="get-access-on-behalf-of-a-user"></a>Получение доступа от имени пользователя
 Для чтения и записи ресурсов от имени пользователя с помощью Microsoft Graph приложение должно получать маркер доступа из Azure AD и вкладывать этот маркер в запросы для Microsoft Graph. Поток проверки подлинности, который будет использоваться для получения маркеров доступа, зависит от типа разрабатываемого приложения и от того, хотите ли вы использовать OpenID Connect для обеспечения входа пользователя в приложение. В нативных и мобильных приложениях, а также в некоторых веб-приложениях часто используется поток предоставления кода авторизации OAuth 2.0. В этой статье рассматривается пример использования такого потока. 

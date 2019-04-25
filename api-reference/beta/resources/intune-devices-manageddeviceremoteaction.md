@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c619a45f1ddfe20654c208fed424631e4d3e183c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31801136"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521315"
 ---
 # <a name="manageddeviceremoteaction-enum-type"></a>тип перечисления Манажеддевицеремотеактион
 
@@ -23,10 +23,10 @@ ms.locfileid: "31801136"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |снять|нуль|Пока не задокументировано.|
-|delete|1,1|Пока не задокументировано.|
-|fullScan|2|Пока не задокументировано.|
-|quickScan|4|Пока не задокументировано.|
-|Сигнатуреупдате|SP4|Пока не задокументировано.|
+|delete|1 |Пока не задокументировано.|
+|fullScan|2 |Пока не задокументировано.|
+|quickScan|3 |Пока не задокументировано.|
+|Сигнатуреупдате|4 |Пока не задокументировано.|
 
 
 

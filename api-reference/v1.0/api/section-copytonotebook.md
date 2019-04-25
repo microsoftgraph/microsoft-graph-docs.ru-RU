@@ -1,20 +1,20 @@
 ---
-title: 'section: copyToNotebook'
+title: 'раздел: copyToNotebook'
 description: Копирование раздела в указанную записную книжку.
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: e122f8f7dfee82caa026ff569899516af4205ac2
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991057"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521021"
 ---
-# <a name="section-copytonotebook"></a>section: copyToNotebook
+# <a name="section-copytonotebook"></a>раздел: copyToNotebook
 Копирование раздела в указанную записную книжку.
 
-Для операций Copy необходимо использовать модель асинхронного вызова:  сначала вызовите действие Copy, а затем опросите конечную точку операции, чтобы получить результат.
+Для операций копирования необходимо использовать шаблон асинхронного вызова: сначала вызвать действие Copy, а затем опросить конечную точку операции, чтобы получить результат.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,18 +37,18 @@ POST /groups/{id}/onenote/sections/{id}/copyToNotebook
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите объект JSON, который содержит параметры, требуемые операцией.
+## <a name="request-body"></a>Текст запроса
+В тексте запроса укажите объект JSON, содержащий необходимые для операции параметры.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|groupId|Строка|Идентификатор группы, в которую необходимо выполнить копирование. Используется только при копировании в группу Office 365.|
-|id|Строка|Обязательный. Идентификатор целевой записной книжки. |
-|renameAs|Строка|Имя копии. По умолчанию используется имя существующего элемента. |
+|groupId|String|Идентификатор группы, в которую будет копироваться. Используйте только при копировании в группу Office 365.|
+|id|String|Обязательный. Идентификатор целевой записной книжки. |
+|Ренамеас|String|Имя копии. По умолчанию используется имя существующего элемента. |
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код ответа `202 Accepted` и заголовок `Operation-Location`. [Чтобы получить сведения о состоянии операции копирования](onenoteoperation-get.md), опросите конечную точку Operation-Location.
+В случае успешного выполнения этот метод возвращает `202 Accepted` код отклика `Operation-Location` и заголовок. Опросить конечную точку Operations to Location, чтобы [получить состояние операции копирования](onenoteoperation-get.md).
 
 ## <a name="example"></a>Пример
 Ниже приведен пример вызова этого API.
@@ -70,7 +70,7 @@ Content-length: 84
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

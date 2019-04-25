@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: Видео
 localization_priority: Normal
 ms.openlocfilehash: deba8cccb5f0ab80ca03395ef9f798719d542b8d
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480805"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521847"
 ---
 # <a name="video-resource-type"></a>Тип ресурса video
 
@@ -19,7 +19,7 @@ ms.locfileid: "30480805"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",

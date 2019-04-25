@@ -1,16 +1,18 @@
 ---
 title: Получение подписки
 description: Получение свойств и связей подписки.
-localization_priority: Priority
+localization_priority: Normal
 author: piotrci
 ms.openlocfilehash: f2a1088ac6f84d236aec64fad6e0fd0d9d21e473
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30156471"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32520636"
 ---
 # <a name="get-subscription"></a>Получение подписки
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение свойств и связей подписки.
 
@@ -39,7 +41,6 @@ ms.locfileid: "30156471"
 
   - Используйте соответствующее разрешение приложения для подписки на изменения элементов в папке или почтовом ящике _любого_ пользователя в клиенте.
   - Не используйте разрешения Outlook на общий доступ (Contacts.Read.Shared, Calendars.Read.Shared, Mail.Read.Shared и их аналоги для чтения и записи), так как они **не** поддерживают подписку на уведомления об изменениях элементов в общих или делегированных папках.
- 
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -56,7 +57,7 @@ GET /subscriptions/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Тип | Описание|
-|:-----------|:------|:----------|
+|:-----------|:-----|:-----------|
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
@@ -78,7 +79,7 @@ GET /subscriptions/{id}
 }-->
 
 ```http
-GET https://graph.microsoft.com/v1.0/subscriptions/{id}
+GET https://graph.microsoft.com/beta/subscriptions/{id}
 ```
 
 ##### <a name="response"></a>Отклик
@@ -109,10 +110,15 @@ Content-length: 252
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get subscription",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": [
+    "Error: /api-reference/beta/api/subscription-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
+  ]
+}
+-->

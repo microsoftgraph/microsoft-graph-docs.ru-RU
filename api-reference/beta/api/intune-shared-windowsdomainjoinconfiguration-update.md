@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 66314179f65748abca432dcf4f41bab3c16ebd32
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30969640"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32526932"
 ---
 # <a name="update-windowsdomainjoinconfiguration"></a>Обновление Виндовсдомаинжоинконфигуратион
 
@@ -82,7 +82,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 Note: поддержка свойств текста запроса зависит от контекста вызова.  Не все свойства подходят для всех рабочих процессов.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсдомаинжоинконфигуратион](../resources/intune-shared-windowsdomainjoinconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

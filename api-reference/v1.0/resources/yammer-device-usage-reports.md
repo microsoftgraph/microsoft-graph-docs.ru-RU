@@ -5,11 +5,11 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5067da550813f3511e82cd968ef51f605dca3d1c
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29573195"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32521903"
 ---
 # <a name="yammer-device-usage-reports"></a>Отчеты об использовании устройств с Yammer
 
@@ -21,6 +21,6 @@ ms.locfileid: "29573195"
 
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getyammerdeviceusageuserdetail.md) | Stream      | Получение сведений об использовании устройств с Yammer с разбивкой по пользователям. |
+| [Получение сведений о пользователях](../api/reportroot-getyammerdeviceusageuserdetail.md) | Поток      | Получение сведений об использовании устройств с Yammer с разбивкой по пользователям. |
 | [Получение количества пользователей с разбивкой по устройствам](../api/reportroot-getyammerdeviceusagedistributionusercounts.md) | Stream      | Получение сведений о количестве пользователей с разбивкой по типам устройств.  |
-| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Stream      | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |
+| [Получение количества пользователей](../api/reportroot-getyammerdeviceusageusercounts.md) | Поток      | Получение сведений о количестве пользователей в день с разбивкой по типам устройств. |
