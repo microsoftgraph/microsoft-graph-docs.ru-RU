@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 71b36a94624140586f2275679df91c4ed7374335
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30987904"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527177"
 ---
 # <a name="create-devicecategory"></a>Создание объекта deviceCategory
 
@@ -46,7 +46,7 @@ POST /deviceManagement/deviceCategories
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В теле запроса добавьте представление объекта deviceCategory в формате JSON.
 

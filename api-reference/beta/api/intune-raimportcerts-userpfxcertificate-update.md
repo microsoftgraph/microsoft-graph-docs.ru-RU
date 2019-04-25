@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8f84d0579805fcb2fed5664a6046b380a9ce08cf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31807674"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527947"
 ---
 # <a name="update-userpfxcertificate"></a>Обновление Усерпфксцертификате
 
@@ -66,7 +66,7 @@ PATCH /deviceManagement/userPfxCertificates/{userPFXCertificateId}
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [усерпфксцертификате](../resources/intune-raimportcerts-userpfxcertificate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

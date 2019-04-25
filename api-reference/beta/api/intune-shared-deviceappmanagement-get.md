@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: c27099cdc0e2ffbbc3e0e02cde07b9b4e34ea33c
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30963515"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32527184"
 ---
 # <a name="get-deviceappmanagement"></a>Get deviceAppManagement
 
@@ -27,7 +27,7 @@ ms.locfileid: "30963515"
 |:---|:---|
 | Делегированные (рабочая или учебная учетная запись) | |
 | &nbsp;&nbsp; **Приложения**, **книги**или подключение **** | DeviceManagementApps. ReadWrite. ALL, DeviceManagementApps. Реадв. ALL |
-| &nbsp; &nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
+| &nbsp;&nbsp; **Управление устройствами** | DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All |
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается.|
 |Для приложений|Не поддерживается.|
 
