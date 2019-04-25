@@ -1,21 +1,19 @@
 ---
-title: Тип ресурса externalLink
-description: URL-адрес, который открывает страницу или записную книжку OneNote.
+title: Тип ресурса Екстерналлинк
+description: URL-адрес, который открывает страницу OneNote или записную книжку.
 localization_priority: Normal
 ms.openlocfilehash: 36acee037a9012290f489f7df675f92265feda1e
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515617"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547651"
 ---
-# <a name="externallink-resource-type"></a>Тип ресурса externalLink
+# <a name="externallink-resource-type"></a>Тип ресурса Екстерналлинк
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+URL-адрес, который открывает страницу OneNote или записную книжку.
 
-URL-адрес, который открывает страницу или записную книжку OneNote.
-
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -36,19 +34,14 @@ URL-адрес, который открывает страницу или зап
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|href|Строка|URL-адрес ссылки.|
+|href|String|URL-адрес ссылки.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "externalLink resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/externallink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

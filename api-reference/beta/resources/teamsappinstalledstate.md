@@ -1,17 +1,17 @@
 ---
-title: Members
+title: Элементы
 description: Описывает текущее состояние установки teamsApp.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 82e46faccd2a91a82ba4fb7352391f58a42c33a9
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517276"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554018"
 ---
-#<a name="teamsappinstalledstate-enum-type"></a>Тип перечисления teamsAppInstalledState
+#<a name="teamsappinstalledstate-enum-type"></a>тип перечисления Теамсаппинсталледстате
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,10 +21,10 @@ ms.locfileid: "29517276"
 
 | Элемент | Значение| Описание |
 |:---------------|:--------|:----------|
-|notInstalled|(0)|Приложение не установлено в группу.|
-|Installed|$1|Приложение устанавливается в обычном режиме.|
-|installedAndHidden|–2|Приложение установлен, но скрыты.|
-|installedAndPermanent|–3|Приложение устанавливается без возможности восстановления и не могут быть удалены.|
+|Нотинсталлед|нуль|Приложение не установлено в группу.|
+|устанавлива|1 |Приложение устанавливается обычным образом.|
+|Инсталледандхидден|2 |Приложение установлено, но скрыто в представлении.|
+|Инсталледандперманент|3 |Приложение устанавливается без возможности восстановления и не может быть удалено.|
 <!--
 {
   "type": "#page.annotation",

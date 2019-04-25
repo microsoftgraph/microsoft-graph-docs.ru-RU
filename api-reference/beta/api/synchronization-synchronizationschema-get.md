@@ -1,19 +1,19 @@
 ---
-title: Получение synchronizationSchema
-description: Получение схемы для задания синхронизации или шаблона.
+title: Получение Синчронизатионсчема
+description: Получение схемы для данного задания или шаблона синхронизации.
 localization_priority: Normal
 ms.openlocfilehash: 050357c94997ca7a45d9ca09bf164638072d1354
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537008"
 ---
-# <a name="get-synchronizationschema"></a>Получение synchronizationSchema
+# <a name="get-synchronizationschema"></a>Получение Синчронизатионсчема
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение схемы для задания синхронизации или шаблона.
+Получение схемы для данного задания или шаблона синхронизации.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -40,11 +40,11 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 
 ## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и объект [synchronizationSchema](../resources/synchronization-synchronizationschema.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [синчронизатионсчема](../resources/synchronization-synchronizationschema.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -58,10 +58,10 @@ GET /applications/{id}/synchronization/templates/{templateId}/schema
 GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. Будут возвращены все свойства в фактический вызов.
+>**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

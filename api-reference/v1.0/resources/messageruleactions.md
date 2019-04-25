@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 33f1167d7317f941ebfa79b372e9cf575c14989b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27914159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548504"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -21,17 +21,17 @@ ms.locfileid: "27914159"
 |:---------------|:--------|:----------|
 | assignCategories | Коллекция String | Список категорий, которые необходимо назначить сообщению. |
 | copyToFolder | String | Идентификатор папки, в которую необходимо скопировать сообщение. |
-| delete | Boolean | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
+| delete | Логический | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
 | forwardAsAttachmentTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение как вложение. |
 | forwardTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение. |
-| markAsRead | Boolean | Указывает, необходимо ли отмечать сообщение как прочтенное. |
+| markAsRead | Логический | Указывает, необходимо ли отмечать сообщение как прочтенное. |
 | markImportance | importance | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
-| permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
-| redirectTo | Коллекция [recipient](recipient.md) | Адреса электронной почты, к которым необходимо перенаправить сообщение. |
+| permanentDelete | Логический | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
+| redirectTo | Коллекция [recipient](recipient.md) | Адреса электронной почты, на которые необходимо перенаправить сообщение. |
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {

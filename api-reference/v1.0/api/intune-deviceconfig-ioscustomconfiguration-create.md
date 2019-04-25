@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 594583d77c271f47fa99facb7551991a8e73f5d6
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30976332"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552905"
 ---
 # <a name="create-ioscustomconfiguration"></a>Создание объекта iosCustomConfiguration
 
@@ -41,7 +41,7 @@ POST /deviceManagement/deviceConfigurations
 |Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса добавьте представление объекта iosCustomConfiguration в формате JSON.
 
 В приведенной ниже таблице указаны свойства, необходимые при создании объекта iosCustomConfiguration.

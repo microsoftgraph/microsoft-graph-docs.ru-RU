@@ -1,23 +1,23 @@
 ---
-title: Список privilegedRoleAssignments
-description: Получение списка privilegedRoleAssignment объекты, которые соответствуют все назначения ролей для организации.
+title: Список Привилежедролеассигнментс
+description: Получение списка объектов Привилежедролеассигнмент, соответствующих всем назначениям ролей для Организации.
 localization_priority: Normal
 ms.openlocfilehash: c576e0d9c0a278e02159e02cea94ddd927561e08
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516590"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538639"
 ---
-# <a name="list-privilegedroleassignments"></a>Список privilegedRoleAssignments
+# <a name="list-privilegedroleassignments"></a>Список Привилежедролеассигнментс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка [privilegedRoleAssignment](../resources/privilegedroleassignment.md) объекты, которые соответствуют все назначения ролей для организации.
+Получение списка объектов [привилежедролеассигнмент](../resources/privilegedroleassignment.md) , соответствующих всем назначениям ролей для Организации.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Запросившая сторона должен иметь одно из следующих ролей: _Привилегированной роль администратора_, _Глобального администратора_, _Администратора безопасности_или _Безопасности чтения_. 
+Запрашивающая сторона должна иметь одну из следующих ролей: привилегированный _Администратор ролей_, _глобальный администратор_, _администратор безопасности_или _средство чтения безопасности_. 
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
@@ -39,17 +39,17 @@ GET /privilegedRoleAssignments
 | Авторизация  | Bearer {токен}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [privilegedRoleAssignment](../resources/privilegedroleassignment.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедролеассигнмент](../resources/privilegedroleassignment.md) в тексте отклика.
 
-Обратите внимание, что необходимо зарегистрировать для PIM клиента. В противном случае будут возвращены код состояния HTTP 403 запрещено.
+Обратите внимание, что клиент должен быть зарегистрирован в PIM. В противном случае будет возвращен код состояния HTTP 403 запрещено.
 ## <a name="examples"></a>Примеры
-### <a name="get-all-role-assignments"></a>Получите все назначения ролей
+### <a name="get-all-role-assignments"></a>Получение всех назначений ролей
 ##### <a name="request"></a>Запрос
-В следующем примере показано запрос на получение все назначения ролей:
+В приведенном ниже примере показан запрос на получение всех назначений ролей:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -57,7 +57,7 @@ GET /privilegedRoleAssignments
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -83,9 +83,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-active-role-assignments"></a>Получение назначения ролей active
+### <a name="get-active-role-assignments"></a>Получение активных назначений ролей
 ##### <a name="request"></a>Запрос 
-В следующем примере показано запроса для назначения ролей active запроса:
+В приведенном ниже примере показан запрос на запросы о назначениях активных ролей.
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -93,7 +93,7 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -127,9 +127,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-permanent-role-assignments"></a>Получение назначения ролей постоянное
+### <a name="get-permanent-role-assignments"></a>Получение постоянных назначений ролей
 ##### <a name="request"></a>Запрос 
-В следующем примере показан запрос для назначения ролей постоянных запросов, где ``expirationDateTime`` значение — ``null``:
+В приведенном ниже примере показан запрос на запрос постоянных назначений ролей ``expirationDateTime`` , где ``null``значение:
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -137,7 +137,7 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20eq%20null
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
@@ -171,9 +171,9 @@ Content-length: 237
   ]
 }
 ```
-### <a name="get-eligible-role-assignments"></a>Получение назначения ролей право
+### <a name="get-eligible-role-assignments"></a>Получение подходящих назначений ролей
 ##### <a name="request"></a>Запрос 
-В следующем примере показано запроса для назначения ролей подходящими запроса, включая активных и неактивная:
+В приведенном ниже примере показан запрос на запросы о подходящих назначениях ролей, включая активные и неактивные.
 <!-- {
   "blockType": "request",
   "name": "get_privilegedroleassignments"
@@ -181,7 +181,7 @@ Content-length: 237
 ```http
 GET https://graph.microsoft.com/beta/privilegedRoleAssignments?$filter=isElevated%20eq%20true%20and%20expirationDateTime%20ne%20null%20or%20isElevated%20eq%20false
 ```
-##### <a name="response"></a>Ответ 
+##### <a name="response"></a>Отклик 
 Ниже приводится пример отклика. Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",

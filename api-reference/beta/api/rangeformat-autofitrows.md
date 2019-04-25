@@ -1,15 +1,15 @@
 ---
 title: 'RangeFormat: autofitRows'
-description: Изменяет высоту строк текущего диапазона на оптимальную с учетом текущих данных в столбцах.
+description: Изменяет высоту строк текущего диапазона так, чтобы она была оптимальной, с учетом текущих данных в столбцах.
 localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: a25fdd90f8bb0f7ad92aca5207c1529abc370a65
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517710"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32546156"
 ---
 # <a name="rangeformat-autofitrows"></a>RangeFormat: autofitRows
 
@@ -57,7 +57,7 @@ POST /workbook/tables/{id|name}/columns/{id|name}/range/format/autofitRows
 POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/format/autofitRows
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response",

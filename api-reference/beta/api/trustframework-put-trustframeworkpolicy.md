@@ -5,11 +5,11 @@ localization_priority: Normal
 author: valnav
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: de2327489d6606c40fe55934d333f2fd2f9c0b44
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31989389"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32536980"
 ---
 # <a name="update-or-create-trustframeworkpolicy"></a>Обновление или создание Трустфрамеворкполици
 
@@ -42,7 +42,7 @@ PUT /trustFramework/policies/{id}/$value
 |Имя|Описание|
 |:---------------|:----------|
 |Авторизация|Bearer {токен}. Обязательный.|
-|Content-Type|Application/XML. Обязательно.|
+|Content-Type|Application/XML. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 
@@ -50,7 +50,7 @@ PUT /trustFramework/policies/{id}/$value
 
 >**Note:** тип контента должен быть `application/xml`.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 Ответ будет одним из следующих вариантов:
 - Если [трустфрамеворкполици](../resources/trustframeworkpolicy.md) существует, успешный запрос возвращает код `200 OK` отклика.

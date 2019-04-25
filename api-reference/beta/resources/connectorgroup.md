@@ -1,15 +1,15 @@
 ---
-title: Тип ресурса connectorGroup
+title: Тип ресурса Коннекторграуп
 description: Ниже показано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: de405d2f0cbe0417271ab54e66c5c30073d8ee7f
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517500"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543394"
 ---
-# <a name="connectorgroup-resource-type"></a>Тип ресурса connectorGroup
+# <a name="connectorgroup-resource-type"></a>Тип ресурса Коннекторграуп
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -17,29 +17,29 @@ ms.locfileid: "29517500"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение connectorGroup](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Чтение свойства и связи объекта connectorGroup.|
-|[Создание приложения](../api/connectorgroup-post-applications.md) |[application](application.md)| Свяжите приложение с группой соединителя с учета в коллекцию приложений.|
-|[Список приложений](../api/connectorgroup-list-applications.md) |коллекции [приложения](application.md)| Получение коллекции объектов связанного приложения.|
-|[Создание соединителя](../api/connectorgroup-post-members.md) |[Connector](connector.md)| Добавьте соединитель для соединителя группы, отправку сообщений в коллекцию элементов.|
-|[Перечисление участников](../api/connectorgroup-list-members.md) |Коллекция [соединителей](connector.md)| Получите соединитель коллекции объектов.|
-|[Update](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Обновление объекта connectorGroup. |
-|[Delete](../api/connectorgroup-delete.md) | Нет |Удалите объект connectorGroup. Все соединители должны быть Удаление соединителя группы могут быть удалены. |
+|[Получение Коннекторграуп](../api/connectorgroup-get.md) | [connectorGroup](connectorgroup.md) |Чтение свойств и связей объекта Коннекторграуп.|
+|[Создание приложения](../api/connectorgroup-post-applications.md) |[application](application.md)| Свяжите приложение с группой соединителей, размещая в коллекции Applications.|
+|[Перечисление приложений](../api/connectorgroup-list-applications.md) |Коллекция [приложений](application.md)| Получение связанной коллекции объектов Application.|
+|[Создание соединителя](../api/connectorgroup-post-members.md) |[PDIF](connector.md)| Добавьте соединитель в группу соединителей, отправив его в коллекцию Members.|
+|[Перечисление участников](../api/connectorgroup-list-members.md) |[](connector.md) Коллекция соединителей| Получение коллекции объектов Connector.|
+|[Обновление](../api/connectorgroup-update.md) | [connectorGroup](connectorgroup.md)    |Обновление объекта Коннекторграуп. |
+|[Удаление](../api/connectorgroup-delete.md) | Нет |Удаление объекта Коннекторграуп. Перед удалением группы конектор необходимо удалить все соединители. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|connectorGroupType|string| Тип соединителей, которые будут использоваться с этой группой. Возможные значения: `applicationProxy`.|
-|id|String| Идентификатор объекта connectorGroup|
-|isDefault|Boolean| Указывает, является ли connectorGroup соединителя группы по умолчанию. Только один соединитель группы могут быть connectorGroup по умолчанию и устанавливается системой.|
-|name|String| Имя, связанное с connectorGroup.|
+|Коннекторграуптипе|string| Тип соединителей, которые будут использоваться для группы. Возможные значения: `applicationProxy`.|
+|id|Строка| Идентификатор объекта Коннекторграуп|
+|isDefault|Boolean| Указывает, является ли Коннекторграуп группой соединителей по умолчанию. Только одна группа соединителей может быть Коннекторграуп по умолчанию и задается системой.|
+|name|String| Имя, связанное с Коннекторграуп.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|приложения|коллекции [приложения](application.md)| Только для чтения. Допускается значение null.|
-|members|Коллекция [соединителей](connector.md)| Только для чтения. Допускается значение null.|
+|заявлен|Коллекция [приложений](application.md)| Только для чтения. Допускается значение null.|
+|members|[](connector.md) Коллекция соединителей| Только для чтения. Допускается значение null.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
