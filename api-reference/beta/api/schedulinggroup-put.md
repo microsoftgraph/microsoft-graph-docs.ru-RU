@@ -1,37 +1,37 @@
 ---
-title: Замена Счедулингграуп
+title: Замена объекта schedulingGroup
 description: Замена существующего Счедулингграуп.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f1ccca9d8df6ae1153de1086c62b9c6cf5756f15
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657702"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545888"
 ---
-# <a name="replace-schedulinggroup"></a><span data-ttu-id="e85d5-103">Замена Счедулингграуп</span><span class="sxs-lookup"><span data-stu-id="e85d5-103">Replace schedulingGroup</span></span>
+# <a name="replace-schedulinggroup"></a><span data-ttu-id="3d8d3-103">Замена объекта schedulingGroup</span><span class="sxs-lookup"><span data-stu-id="3d8d3-103">Replace schedulingGroup</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e85d5-104">Замена существующего [счедулингграуп](../resources/schedulinggroup.md).</span><span class="sxs-lookup"><span data-stu-id="e85d5-104">Replace an existing [schedulingGroup](../resources/schedulinggroup.md).</span></span>
+<span data-ttu-id="3d8d3-104">Замена существующего [счедулингграуп](../resources/schedulinggroup.md).</span><span class="sxs-lookup"><span data-stu-id="3d8d3-104">Replace an existing [schedulingGroup](../resources/schedulinggroup.md).</span></span>
 
-<span data-ttu-id="e85d5-105">Если указанный [счедулингграуп](../resources/schedulinggroup.md) не существует, этот метод возвращает значение `404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="e85d5-105">If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.</span></span>
+<span data-ttu-id="3d8d3-105">Если указанный [счедулингграуп](../resources/schedulinggroup.md) не существует, этот метод возвращает значение `404 Not found`.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-105">If the specified [schedulingGroup](../resources/schedulinggroup.md) doesn't exist, this method returns `404 Not found`.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="e85d5-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e85d5-106">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="3d8d3-106">Разрешения</span><span class="sxs-lookup"><span data-stu-id="3d8d3-106">Permissions</span></span>
 
-<span data-ttu-id="e85d5-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e85d5-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="3d8d3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="3d8d3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e85d5-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e85d5-109">Permission type</span></span>      | <span data-ttu-id="e85d5-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e85d5-110">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="3d8d3-109">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="3d8d3-109">Permission type</span></span>      | <span data-ttu-id="3d8d3-110">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="3d8d3-110">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e85d5-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e85d5-111">Delegated (work or school account)</span></span> | <span data-ttu-id="e85d5-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e85d5-112">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e85d5-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e85d5-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e85d5-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e85d5-114">Not supported.</span></span>    |
-|<span data-ttu-id="e85d5-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e85d5-115">Application</span></span> | <span data-ttu-id="e85d5-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e85d5-116">Not supported.</span></span> |
+|<span data-ttu-id="3d8d3-111">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="3d8d3-111">Delegated (work or school account)</span></span> | <span data-ttu-id="3d8d3-112">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="3d8d3-112">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="3d8d3-113">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="3d8d3-113">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="3d8d3-114">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-114">Not supported.</span></span>    |
+|<span data-ttu-id="3d8d3-115">Для приложений</span><span class="sxs-lookup"><span data-stu-id="3d8d3-115">Application</span></span> | <span data-ttu-id="3d8d3-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-116">Not supported.</span></span> |
 
-> <span data-ttu-id="e85d5-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="e85d5-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="e85d5-118">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="e85d5-118">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="3d8d3-117">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-117">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="3d8d3-118">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-118">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e85d5-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e85d5-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="3d8d3-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="3d8d3-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -39,26 +39,26 @@ ms.locfileid: "30657702"
 PUT /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="e85d5-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e85d5-120">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="3d8d3-120">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="3d8d3-120">Request headers</span></span>
 
-| <span data-ttu-id="e85d5-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="e85d5-121">Header</span></span>       | <span data-ttu-id="e85d5-122">Значение</span><span class="sxs-lookup"><span data-stu-id="e85d5-122">Value</span></span> |
+| <span data-ttu-id="3d8d3-121">Заголовок</span><span class="sxs-lookup"><span data-stu-id="3d8d3-121">Header</span></span>       | <span data-ttu-id="3d8d3-122">Значение</span><span class="sxs-lookup"><span data-stu-id="3d8d3-122">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="e85d5-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e85d5-123">Authorization</span></span>  | <span data-ttu-id="e85d5-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e85d5-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="e85d5-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="e85d5-126">Content-Type</span></span>  | <span data-ttu-id="e85d5-127">application/json</span><span class="sxs-lookup"><span data-stu-id="e85d5-127">application/json</span></span>  |
+| <span data-ttu-id="3d8d3-123">Авторизация</span><span class="sxs-lookup"><span data-stu-id="3d8d3-123">Authorization</span></span>  | <span data-ttu-id="3d8d3-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="3d8d3-126">Content-Type</span><span class="sxs-lookup"><span data-stu-id="3d8d3-126">Content-Type</span></span>  | <span data-ttu-id="3d8d3-127">application/json</span><span class="sxs-lookup"><span data-stu-id="3d8d3-127">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="e85d5-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="e85d5-128">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="3d8d3-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="3d8d3-128">Request body</span></span>
 
-<span data-ttu-id="e85d5-129">В тексте запроса добавьте представление объекта [Счедулингграуп](../resources/schedulinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="e85d5-129">In the request body, supply a JSON representation of a [schedulingGroup](../resources/schedulinggroup.md) object.</span></span>
+<span data-ttu-id="3d8d3-129">В тексте запроса добавьте представление объекта [Счедулингграуп](../resources/schedulinggroup.md) в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-129">In the request body, supply a JSON representation of a [schedulingGroup](../resources/schedulinggroup.md) object.</span></span>
 
-## <a name="response"></a><span data-ttu-id="e85d5-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="e85d5-130">Response</span></span>
+## <a name="response"></a><span data-ttu-id="3d8d3-130">Ответ</span><span class="sxs-lookup"><span data-stu-id="3d8d3-130">Response</span></span>
 
-<span data-ttu-id="e85d5-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e85d5-131">If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
+<span data-ttu-id="3d8d3-131">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [счедулингграуп](../resources/schedulinggroup.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-131">If successful, this method returns a `200 OK` response code and a [schedulingGroup](../resources/schedulinggroup.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e85d5-132">Пример</span><span class="sxs-lookup"><span data-stu-id="e85d5-132">Example</span></span>
+## <a name="example"></a><span data-ttu-id="3d8d3-132">Пример</span><span class="sxs-lookup"><span data-stu-id="3d8d3-132">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="e85d5-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="e85d5-133">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="3d8d3-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="3d8d3-133">Request</span></span>
 
-<span data-ttu-id="e85d5-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e85d5-134">The following is an example of the request.</span></span>
+<span data-ttu-id="3d8d3-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-134">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "schedule-put-schedulinggroups"
@@ -78,11 +78,11 @@ Prefer: return=representation
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="e85d5-135">Ответ</span><span class="sxs-lookup"><span data-stu-id="e85d5-135">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="3d8d3-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="3d8d3-135">Response</span></span>
 
-<span data-ttu-id="e85d5-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e85d5-136">The following is an example of the response.</span></span> 
+<span data-ttu-id="3d8d3-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-136">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="e85d5-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e85d5-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="3d8d3-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="3d8d3-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
