@@ -5,25 +5,25 @@ localization_priority: Normal
 author: lumine2008
 ms.prod: excel
 ms.openlocfilehash: 86db999cd39275ebb38c653e6dc4dda69fd87433
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941753"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32525518"
 ---
-# <a name="range-offsetrange"></a><span data-ttu-id="8440b-105">Range: OffsetRange</span><span class="sxs-lookup"><span data-stu-id="8440b-105">Range: OffsetRange</span></span>
+# <a name="range-offsetrange"></a><span data-ttu-id="9ea31-105">Range: OffsetRange</span><span class="sxs-lookup"><span data-stu-id="9ea31-105">Range: OffsetRange</span></span>
 
-<span data-ttu-id="8440b-p102">Возвращает объект, представляющий диапазон, который смещен от указанного диапазона. Измерение возвращаемого диапазона будет соответствовать этому диапазону. Если результирующий диапазон выходит за пределы таблицы листа, вызывается исключение.</span><span class="sxs-lookup"><span data-stu-id="8440b-p102">Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.</span></span>
-## <a name="permissions"></a><span data-ttu-id="8440b-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8440b-109">Permissions</span></span>
-<span data-ttu-id="8440b-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8440b-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="9ea31-p102">Возвращает объект, представляющий диапазон, который смещен от указанного диапазона. Измерение возвращаемого диапазона будет соответствовать этому диапазону. Если результирующий диапазон выходит за пределы таблицы листа, вызывается исключение.</span><span class="sxs-lookup"><span data-stu-id="9ea31-p102">Gets an object which represents a range that's offset from the specified range. The dimension of the returned range will match this range. If the resulting range is forced outside the bounds of the worksheet grid, an exception will be thrown.</span></span>
+## <a name="permissions"></a><span data-ttu-id="9ea31-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="9ea31-109">Permissions</span></span>
+<span data-ttu-id="9ea31-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="9ea31-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="8440b-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8440b-112">Permission type</span></span>      | <span data-ttu-id="8440b-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8440b-113">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="9ea31-112">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="9ea31-112">Permission type</span></span>      | <span data-ttu-id="9ea31-113">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="9ea31-113">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="8440b-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8440b-114">Delegated (work or school account)</span></span> | <span data-ttu-id="8440b-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="8440b-115">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="8440b-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8440b-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8440b-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8440b-117">Not supported.</span></span>    |
-|<span data-ttu-id="8440b-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8440b-118">Application</span></span> | <span data-ttu-id="8440b-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8440b-119">Not supported.</span></span> |
+|<span data-ttu-id="9ea31-114">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="9ea31-114">Delegated (work or school account)</span></span> | <span data-ttu-id="9ea31-115">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="9ea31-115">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="9ea31-116">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="9ea31-116">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="9ea31-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9ea31-117">Not supported.</span></span>    |
+|<span data-ttu-id="9ea31-118">Для приложений</span><span class="sxs-lookup"><span data-stu-id="9ea31-118">Application</span></span> | <span data-ttu-id="9ea31-119">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="9ea31-119">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="8440b-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8440b-120">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9ea31-120">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="9ea31-120">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /workbook/names/{name}/range/offsetRange
@@ -31,28 +31,28 @@ GET /workbook/worksheets/{id|name}/range(address='<address>')/offsetRange
 GET /workbook/tables/{id|name}/columns/{id|name}/range/offsetRange
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="8440b-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="8440b-121">Request headers</span></span>
-| <span data-ttu-id="8440b-122">Имя</span><span class="sxs-lookup"><span data-stu-id="8440b-122">Name</span></span>       | <span data-ttu-id="8440b-123">Описание</span><span class="sxs-lookup"><span data-stu-id="8440b-123">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="9ea31-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="9ea31-121">Request headers</span></span>
+| <span data-ttu-id="9ea31-122">Имя</span><span class="sxs-lookup"><span data-stu-id="9ea31-122">Name</span></span>       | <span data-ttu-id="9ea31-123">Описание</span><span class="sxs-lookup"><span data-stu-id="9ea31-123">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="8440b-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="8440b-124">Authorization</span></span>  | <span data-ttu-id="8440b-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="8440b-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="8440b-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="8440b-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="8440b-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="8440b-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="9ea31-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="9ea31-124">Authorization</span></span>  | <span data-ttu-id="9ea31-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="9ea31-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="9ea31-127">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="9ea31-127">Workbook-Session-Id</span></span>  | <span data-ttu-id="9ea31-p105">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="9ea31-p105">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="8440b-130">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8440b-130">Request body</span></span>
-<span data-ttu-id="8440b-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="8440b-131">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="9ea31-130">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="9ea31-130">Request body</span></span>
+<span data-ttu-id="9ea31-131">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="9ea31-131">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="8440b-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="8440b-132">Parameter</span></span>    | <span data-ttu-id="8440b-133">Тип</span><span class="sxs-lookup"><span data-stu-id="8440b-133">Type</span></span>   |<span data-ttu-id="8440b-134">Описание</span><span class="sxs-lookup"><span data-stu-id="8440b-134">Description</span></span>|
+| <span data-ttu-id="9ea31-132">Параметр</span><span class="sxs-lookup"><span data-stu-id="9ea31-132">Parameter</span></span>    | <span data-ttu-id="9ea31-133">Тип</span><span class="sxs-lookup"><span data-stu-id="9ea31-133">Type</span></span>   |<span data-ttu-id="9ea31-134">Описание</span><span class="sxs-lookup"><span data-stu-id="9ea31-134">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8440b-135">rowOffset</span><span class="sxs-lookup"><span data-stu-id="8440b-135">rowOffset</span></span>|<span data-ttu-id="8440b-136">Int32</span><span class="sxs-lookup"><span data-stu-id="8440b-136">Int32</span></span>|<span data-ttu-id="8440b-p106">Количество строк (положительное, отрицательное или нулевое), на которое необходимо сместить диапазон. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.</span><span class="sxs-lookup"><span data-stu-id="8440b-p106">The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.</span></span>|
-|<span data-ttu-id="8440b-139">columnOffset</span><span class="sxs-lookup"><span data-stu-id="8440b-139">columnOffset</span></span>|<span data-ttu-id="8440b-140">Int32</span><span class="sxs-lookup"><span data-stu-id="8440b-140">Int32</span></span>|<span data-ttu-id="8440b-p107">Количество столбцов (положительное, отрицательное или 0), на который нужно сместить диапазон. Положительные значения соответствуют смещению вправо, а отрицательные — влево.</span><span class="sxs-lookup"><span data-stu-id="8440b-p107">The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.</span></span>|
+|<span data-ttu-id="9ea31-135">rowOffset</span><span class="sxs-lookup"><span data-stu-id="9ea31-135">rowOffset</span></span>|<span data-ttu-id="9ea31-136">Int32</span><span class="sxs-lookup"><span data-stu-id="9ea31-136">Int32</span></span>|<span data-ttu-id="9ea31-p106">Количество строк (положительное, отрицательное или нулевое), на которое необходимо сместить диапазон. Положительные значения соответствуют смещению вниз, а отрицательные — вверх.</span><span class="sxs-lookup"><span data-stu-id="9ea31-p106">The number of rows (positive, negative, or 0) by which the range is to be offset. Positive values are offset downward, and negative values are offset upward.</span></span>|
+|<span data-ttu-id="9ea31-139">columnOffset</span><span class="sxs-lookup"><span data-stu-id="9ea31-139">columnOffset</span></span>|<span data-ttu-id="9ea31-140">Int32</span><span class="sxs-lookup"><span data-stu-id="9ea31-140">Int32</span></span>|<span data-ttu-id="9ea31-p107">Количество столбцов (положительное, отрицательное или 0), на который нужно сместить диапазон. Положительные значения соответствуют смещению вправо, а отрицательные — влево.</span><span class="sxs-lookup"><span data-stu-id="9ea31-p107">The number of columns (positive, negative, or 0) by which the range is to be offset. Positive values are offset to the right, and negative values are offset to the left.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="8440b-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="8440b-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="9ea31-143">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ea31-143">Response</span></span>
 
-<span data-ttu-id="8440b-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="8440b-144">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="9ea31-144">В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="9ea31-144">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="8440b-145">Пример</span><span class="sxs-lookup"><span data-stu-id="8440b-145">Example</span></span>
-<span data-ttu-id="8440b-146">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="8440b-146">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="8440b-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="8440b-147">Request</span></span>
-<span data-ttu-id="8440b-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="8440b-148">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="9ea31-145">Пример</span><span class="sxs-lookup"><span data-stu-id="9ea31-145">Example</span></span>
+<span data-ttu-id="9ea31-146">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="9ea31-146">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="9ea31-147">Запрос</span><span class="sxs-lookup"><span data-stu-id="9ea31-147">Request</span></span>
+<span data-ttu-id="9ea31-148">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="9ea31-148">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "isComposable": true,
@@ -69,8 +69,8 @@ Content-length: 49
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="8440b-149">Ответ</span><span class="sxs-lookup"><span data-stu-id="8440b-149">Response</span></span>
-<span data-ttu-id="8440b-p108">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.</span><span class="sxs-lookup"><span data-stu-id="8440b-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="9ea31-149">Отклик</span><span class="sxs-lookup"><span data-stu-id="9ea31-149">Response</span></span>
+<span data-ttu-id="9ea31-p108">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="9ea31-p108">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
