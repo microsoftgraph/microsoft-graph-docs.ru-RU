@@ -1,27 +1,25 @@
 ---
 title: Тип ресурса calendarGroup
-description: Группа пользователей календарей.
+description: Группа пользовательских календарей.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cea68da3a91396972c4e237d1fdaf0e16d65e3a3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643715"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543794"
 ---
 # <a name="calendargroup-resource-type"></a>Тип ресурса calendarGroup
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Группа пользователей календарей.
+Группа пользовательских календарей.
 
 ## <a name="methods"></a>Методы
 
 | Метод                                                      | Возвращаемый тип                        | Описание                                                   |
 | :---------------------------------------------------------- | :--------------------------------- | :------------------------------------------------------------ |
-| [Список групп календарей](../api/user-list-calendargroups.md)  | Коллекция объектов [Calendar](calendar.md) | Получение групп календарей пользователя.                               |
+| [Список групп календарей](../api/user-list-calendargroups.md)  | Коллекция [Calendar](calendar.md) | Получение групп календарей пользователя.                               |
 | [Создание группы календарей](../api/user-post-calendargroups.md) | [Calendar](calendar.md)            | Создание группы календарей.                                  |
 | [Получение группы календарей](../api/calendargroup-get.md)           | [calendarGroup](calendargroup.md)  | Чтение свойств и связей, принадлежащих объекту группы календарей. |
 | [Обновление](../api/calendargroup-update.md)                    | [calendarGroup](calendargroup.md)  | Обновление объекта calendarGroup.                                  |
@@ -36,11 +34,11 @@ ms.locfileid: "29643715"
 | name      | String | Имя группы.                                                                                                                                                                                           |
 | changeKey | String | Указывает версию группы календарей. При каждом изменении группы календарей также меняется значение ChangeKey. Благодаря этому Exchange может применять изменения к правильной версии объекта. Только для чтения. |
 | classId   | Guid   | Идентификатор класса. Только для чтения.                                                                                                                                                                          |
-| id        | String | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
+| id        | Строка | Уникальный идентификатор группы. Только для чтения.                                                                                                                                                                 |
 
 ## <a name="relationships"></a>Связи
 
-| Связь | Тип                               | Описание                                                                    |
+| Отношение | Тип                               | Описание                                                                    |
 | :----------- | :--------------------------------- | :----------------------------------------------------------------------------- |
 | calendars    | Коллекция [Calendar](calendar.md) | Календари в группе календарей. Свойство навигации. Только для чтения. Допускается значение null. |
 
@@ -48,13 +46,25 @@ ms.locfileid: "29643715"
 
 Ниже представлено описание ресурса в формате JSON.
 
-<!-- {
+<!--{
   "blockType": "resource",
   "optionalProperties": [
     "calendars"
   ],
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.calendarGroup"
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.calendarGroup",
+  "@odata.annotations": [
+    {
+      "property": "calendars",
+      "capabilities": {
+        "changeTracking": false,
+        "expandable": false,
+        "navigability": "single",
+        "searchable": false
+      }
+    }
+  ]
 }-->
 
 ```json
@@ -69,15 +79,10 @@ ms.locfileid: "29643715"
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "calendarGroup resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/calendargroup.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->
