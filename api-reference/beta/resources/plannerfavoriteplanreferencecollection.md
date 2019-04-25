@@ -1,25 +1,25 @@
 ---
-title: Тип ресурса plannerFavoritePlanReferenceCollection
-description: " значение — это объект plannerFavoritePlanReference."
+title: Тип ресурса Планнерфаворитепланреференцеколлектион
+description: " значение — объект Планнерфаворитепланреференце."
 author: TarkanSevilmis
 localization_priority: Normal
 ms.prod: planner
 ms.openlocfilehash: c473d4101a1247420e641b532ea04dfbc1a26d2c
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519488"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572628"
 ---
-# <a name="plannerfavoriteplanreferencecollection-resource-type"></a>Тип ресурса plannerFavoritePlanReferenceCollection
+# <a name="plannerfavoriteplanreferencecollection-resource-type"></a>Тип ресурса Планнерфаворитепланреференцеколлектион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ресурс **plannerFavoritePlanReferenceCollection** представляет коллекцию ссылок на планы, которые помечены как Избранное пользователя. Этот ресурс является открытым и является частью объекта [plannerUser](planneruser.md) . Имя свойства в паре значение свойства — это идентификатор соответствующего плана. значение — это объект [plannerFavoritePlanReference](plannerfavoriteplanreference.md) .
+Ресурс **планнерфаворитепланреференцеколлектион** представляет коллекцию ссылок на планы, помеченные пользователем в качестве избранного. Этот ресурс является открытым типом и является частью объекта [plannerUser](planneruser.md) . Имя свойства в разделе "свойство-значение" является ИДЕНТИФИКАТОРом соответствующего плана; значение — объект [планнерфаворитепланреференце](plannerfavoriteplanreference.md) .
 
 
 ## <a name="properties"></a>Свойства
-Можно определить свойства этого типа open. Имена свойств являются `id` значений [plannerPlan](plannerplan.md) ресурсов и их значения должны быть [plannerFavoritePlanReference](plannerfavoriteplanreference.md) объектов. Чтобы удалить элемент в списке "Избранное", задайте значение свойства, которое должно `null`.
+Вы можете определить свойства этого открытого типа. Имена свойств — это `id` значения ресурсов [plannerPlan](plannerplan.md) и их значения должны быть [планнерфаворитепланреференце](plannerfavoriteplanreference.md) объектами. Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null`.
 
 
 ## <a name="json-representation"></a>Представление JSON

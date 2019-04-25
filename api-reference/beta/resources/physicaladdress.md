@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: eb7bf1ee21a40517704f20176f5fbcf9ea2b276a
-ms.sourcegitcommit: 539ed08adf3b7ad3253c98636d4ab303ce00176e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "30056989"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573783"
 ---
 # <a name="physicaladdress-resource-type"></a>Тип ресурса physicalAddress
 
@@ -30,9 +30,9 @@ ms.locfileid: "30056989"
 |type|physicalAddressType|Тип адреса. Возможные значения: `unknown`, `home`, `business`, `other`.|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже показано представление JSON ресурса.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",

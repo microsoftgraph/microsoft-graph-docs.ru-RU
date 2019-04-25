@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 851fd68fd1457ad4e926290bc103fc8222ead7c6
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27968654"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572923"
 ---
 # <a name="create-rejectedsender"></a>Создание объекта rejectedSender
 Добавление пользователя или группы в список объектов rejectedSender.
@@ -57,8 +57,8 @@ Content-length: 30
   "@odata.id":"https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
 }
 ```
-#### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+#### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true

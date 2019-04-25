@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 2d1ca7eb358078852061d6208ca6e1b3f534f1ea
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30255943"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575123"
 ---
 # <a name="androidworkprofiledefaultapppermissionpolicytype-enum-type"></a>тип перечисления Андроидворкпрофиледефаултапппермиссионполицитипе
 
@@ -21,9 +21,9 @@ ms.locfileid: "30255943"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Девицедефаулт|нуль|Значение по умолчанию для устройства, без намерения.|
-|появляется|1,1|Появляется.|
-|автоПредоставление|2|Автоматическое предоставление.|
-|автоЗапрет|4|Автоматическое отклонение.|
+|Подсказка|1 |Появляется.|
+|автоПредоставление|2 |Автоматическое предоставление.|
+|автоЗапрет|3 |Автоматическое отклонение.|
 
 
 

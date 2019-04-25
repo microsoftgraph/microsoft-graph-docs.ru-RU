@@ -4,11 +4,11 @@ description: Удаление существующего действия пол
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: cbe12a373f06c2893a5ca202247865f4ce4a8f52
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27966855"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574203"
 ---
 # <a name="delete-an-activity"></a>Удаление действия
 
@@ -37,15 +37,15 @@ DELETE /me/activities/{id}
 
 |Имя | Тип | Описание|
 |:----|:-----|:-----------|
-|Authorization | строка | Bearer {токен}. Обязательный.|
+|Authorization | string | Bearer {токен}. Обязательный.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Нет текста запроса.
+Текст запроса отсутствует.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `204 No Content` код ответа, если действие был удален.
+В случае успешного выполнения этот метод возвращает `204 No Content` код отклика, если действие было удалено.
 
 ## <a name="example"></a>Пример
 
@@ -62,7 +62,7 @@ DELETE /me/activities/{id}
 DELETE https://graph.microsoft.com/v1.0/me/activities/{activity-id}/
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8f54c7066af2c4d24f41e612e3dd09a94a5c8bc7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772659"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574619"
 ---
 # <a name="windowskioskprofile-resource-type"></a>Тип ресурса Виндовскиоскпрофиле
 
@@ -24,7 +24,7 @@ ms.locfileid: "31772659"
 |:---|:---|:---|
 |Профилеид|String|Ключ объекта.|
 |имя_профиля|String|Это понятное имя, используемое для идентификации группы приложений, макета этих приложений в меню "Пуск" и пользователей, которым назначена эта конфигурация киоска.|
-|Аппконфигуратион|[windowsKioskAppConfiguration;](../resources/intune-deviceconfig-windowskioskappconfiguration.md)|Конфигурация приложения, которая будет использоваться для этой конфигурации киоска.|
+|Аппконфигуратион|[windowsKioskAppConfiguration](../resources/intune-deviceconfig-windowskioskappconfiguration.md);|Конфигурация приложения, которая будет использоваться для этой конфигурации киоска.|
 |Усераккаунтсконфигуратион|Коллекция [виндовскиоскусер](../resources/intune-deviceconfig-windowskioskuser.md)|Учетные записи пользователей, которые будут заблокированы для этой конфигурации киоска. Эта коллекция может содержать не более 100 элементов.|
 
 ## <a name="relationships"></a>Отношения

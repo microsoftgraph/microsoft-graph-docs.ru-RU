@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
-title: defaultColumnValue
+title: DefaultColumnValue
 localization_priority: Normal
 ms.openlocfilehash: 400fc25bf38f12db2be8cef21ddc351316d1265b
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27810593"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574605"
 ---
 # <a name="defaultcolumnvalue-resource-type"></a>Тип ресурса defaultColumnValue
 

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: tfitzmac
 ms.prod: intune
 ms.openlocfilehash: a2e41d9b17ca7acafa98dad65db5d2ff5ce30925
-ms.sourcegitcommit: 03421b75d717101a499e0b311890f5714056e29e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30151298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572943"
 ---
 # <a name="reportroot-resource-type"></a>Тип ресурса reportRoot
 
@@ -30,7 +30,7 @@ ms.locfileid: "30151298"
 |**Устранение неполадок**|
 |[Функция Манажеддевицеенроллментабандонментдетаилс](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentdetails.md)|[report](../resources/intune-shared-report.md)|Метаданные для отчета о прекращении регистрации|
 |[Функция Манажеддевицеенроллментабандонментсуммари](../api/intune-shared-reportroot-manageddeviceenrollmentabandonmentsummary.md)|[report](../resources/intune-shared-report.md)|Метаданные для сводного отчета об отмене регистрации|
-|[Функция Манажеддевицеенроллментфаилуредетаилс](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|Н/Д|
+|[Функция Манажеддевицеенроллментфаилуредетаилс](../api/intune-shared-reportroot-manageddeviceenrollmentfailuredetails.md)|Пока не задокументировано.|
 |[Функция Манажеддевицеенроллментфаилуретрендс](../api/intune-shared-reportroot-manageddeviceenrollmentfailuretrends.md)|Метаданные отчета о тенденциях сбоев регистрации|
 |[Функция Манажеддевицеенроллменттопфаилурес](../api/intune-shared-reportroot-manageddeviceenrollmenttopfailures.md)|Н/Д|
 
@@ -39,7 +39,7 @@ ms.locfileid: "30151298"
 |:---|:---|:---|
 |id|String|Уникальный идентификатор для этого объекта.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON
