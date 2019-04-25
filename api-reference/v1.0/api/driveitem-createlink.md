@@ -6,31 +6,31 @@ title: Предоставление доступа к файлу посредс�
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 94081dc75945e938e8559f9535d2f15832865dd6
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480693"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548315"
 ---
-# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="a77dd-102">Создание ссылки совместного доступа для ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="a77dd-102">Create a sharing link for a DriveItem</span></span>
+# <a name="create-a-sharing-link-for-a-driveitem"></a><span data-ttu-id="18dba-102">Создание ссылки совместного доступа для ресурса DriveItem</span><span class="sxs-lookup"><span data-stu-id="18dba-102">Create a sharing link for a DriveItem</span></span>
 
-<span data-ttu-id="a77dd-103">Используя действие **createLink**, вы можете поделиться ресурсом [DriveItem](../resources/driveitem.md) с помощью ссылки для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="a77dd-103">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
+<span data-ttu-id="18dba-103">Используя действие **createLink**, вы можете поделиться ресурсом [DriveItem](../resources/driveitem.md) с помощью ссылки для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="18dba-103">You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.</span></span>
 
-<span data-ttu-id="a77dd-p101">Действие **createLink** создает ссылку для совместного доступа, если ссылка указанного типа еще не существует для приложения, совершающего вызов. Если для приложения уже создана такая ссылка указанного типа, возвращается она.</span><span class="sxs-lookup"><span data-stu-id="a77dd-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
+<span data-ttu-id="18dba-p101">Действие **createLink** создает ссылку для совместного доступа, если ссылка указанного типа еще не существует для приложения, совершающего вызов. Если для приложения уже создана такая ссылка указанного типа, возвращается она.</span><span class="sxs-lookup"><span data-stu-id="18dba-p101">The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application. If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.</span></span>
 
-<span data-ttu-id="a77dd-106">Ресурсы DriveItem наследуют разрешения совместного доступа от своих предков.</span><span class="sxs-lookup"><span data-stu-id="a77dd-106">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
+<span data-ttu-id="18dba-106">Ресурсы DriveItem наследуют разрешения совместного доступа от своих предков.</span><span class="sxs-lookup"><span data-stu-id="18dba-106">DriveItem resources inherit sharing permissions from their ancestors.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a77dd-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a77dd-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="18dba-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="18dba-107">Permissions</span></span>
 
-<span data-ttu-id="a77dd-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a77dd-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="18dba-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="18dba-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a77dd-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a77dd-110">Permission type</span></span>      | <span data-ttu-id="a77dd-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a77dd-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="18dba-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="18dba-110">Permission type</span></span>      | <span data-ttu-id="18dba-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="18dba-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a77dd-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a77dd-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a77dd-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a77dd-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a77dd-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a77dd-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a77dd-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a77dd-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a77dd-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a77dd-116">Application</span></span> | <span data-ttu-id="a77dd-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a77dd-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="18dba-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="18dba-112">Delegated (work or school account)</span></span> | <span data-ttu-id="18dba-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18dba-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="18dba-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="18dba-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="18dba-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18dba-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="18dba-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="18dba-116">Application</span></span> | <span data-ttu-id="18dba-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="18dba-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a77dd-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a77dd-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="18dba-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="18dba-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -42,50 +42,50 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### <a name="request-body"></a><span data-ttu-id="a77dd-119">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a77dd-119">Request body</span></span>
+### <a name="request-body"></a><span data-ttu-id="18dba-119">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="18dba-119">Request body</span></span>
 
-<span data-ttu-id="a77dd-120">В теле запроса определяются свойства ссылки для совместного доступа, запрашиваемой приложением.</span><span class="sxs-lookup"><span data-stu-id="a77dd-120">The body of the request defines properties of the sharing link your application is requesting.</span></span>
-<span data-ttu-id="a77dd-121">Запрос должен быть объектом JSON с указанными ниже свойствами.</span><span class="sxs-lookup"><span data-stu-id="a77dd-121">The request should be a JSON object with the following properties.</span></span>
+<span data-ttu-id="18dba-120">В теле запроса определяются свойства ссылки для совместного доступа, запрашиваемой приложением.</span><span class="sxs-lookup"><span data-stu-id="18dba-120">The body of the request defines properties of the sharing link your application is requesting.</span></span>
+<span data-ttu-id="18dba-121">Запрос должен быть объектом JSON с указанными ниже свойствами.</span><span class="sxs-lookup"><span data-stu-id="18dba-121">The request should be a JSON object with the following properties.</span></span>
 
-|   <span data-ttu-id="a77dd-122">Имя</span><span class="sxs-lookup"><span data-stu-id="a77dd-122">Name</span></span>    |  <span data-ttu-id="a77dd-123">Тип</span><span class="sxs-lookup"><span data-stu-id="a77dd-123">Type</span></span>  |                                 <span data-ttu-id="a77dd-124">Описание</span><span class="sxs-lookup"><span data-stu-id="a77dd-124">Description</span></span>                                  |
+|   <span data-ttu-id="18dba-122">Имя</span><span class="sxs-lookup"><span data-stu-id="18dba-122">Name</span></span>    |  <span data-ttu-id="18dba-123">Тип</span><span class="sxs-lookup"><span data-stu-id="18dba-123">Type</span></span>  |                                 <span data-ttu-id="18dba-124">Описание</span><span class="sxs-lookup"><span data-stu-id="18dba-124">Description</span></span>                                  |
 | :-------- | :----- | :--------------------------------------------------------------------------- |
-| <span data-ttu-id="a77dd-125">**type**</span><span class="sxs-lookup"><span data-stu-id="a77dd-125">**type**</span></span>  | <span data-ttu-id="a77dd-126">string</span><span class="sxs-lookup"><span data-stu-id="a77dd-126">string</span></span> | <span data-ttu-id="a77dd-p104">Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.</span><span class="sxs-lookup"><span data-stu-id="a77dd-p104">The type of sharing link to create. Either `view`, `edit`, or `embed`.</span></span>       |
-| <span data-ttu-id="a77dd-129">**scope**</span><span class="sxs-lookup"><span data-stu-id="a77dd-129">**scope**</span></span> | <span data-ttu-id="a77dd-130">string</span><span class="sxs-lookup"><span data-stu-id="a77dd-130">string</span></span> | <span data-ttu-id="a77dd-131">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="a77dd-131">Optional.</span></span> <span data-ttu-id="a77dd-132">Область создаваемой ссылки.</span><span class="sxs-lookup"><span data-stu-id="a77dd-132">The scope of link to create.</span></span> <span data-ttu-id="a77dd-133">Возможные значения: `anonymous` или `organization`.</span><span class="sxs-lookup"><span data-stu-id="a77dd-133">Either `anonymous` or `organization`.</span></span> |
+| <span data-ttu-id="18dba-125">**type**</span><span class="sxs-lookup"><span data-stu-id="18dba-125">**type**</span></span>  | <span data-ttu-id="18dba-126">string</span><span class="sxs-lookup"><span data-stu-id="18dba-126">string</span></span> | <span data-ttu-id="18dba-p104">Тип создаваемой ссылки для совместного доступа. Возможные значения: `view`, `edit` или `embed`.</span><span class="sxs-lookup"><span data-stu-id="18dba-p104">The type of sharing link to create. Either `view`, `edit`, or `embed`.</span></span>       |
+| <span data-ttu-id="18dba-129">**scope**</span><span class="sxs-lookup"><span data-stu-id="18dba-129">**scope**</span></span> | <span data-ttu-id="18dba-130">string</span><span class="sxs-lookup"><span data-stu-id="18dba-130">string</span></span> | <span data-ttu-id="18dba-131">Необязательно.</span><span class="sxs-lookup"><span data-stu-id="18dba-131">Optional.</span></span> <span data-ttu-id="18dba-132">Область создаваемой ссылки.</span><span class="sxs-lookup"><span data-stu-id="18dba-132">The scope of link to create.</span></span> <span data-ttu-id="18dba-133">Возможные значения: `anonymous` или `organization`.</span><span class="sxs-lookup"><span data-stu-id="18dba-133">Either `anonymous` or `organization`.</span></span> |
 
 
-### <a name="link-types"></a><span data-ttu-id="a77dd-134">Типы ссылок</span><span class="sxs-lookup"><span data-stu-id="a77dd-134">Link types</span></span>
+### <a name="link-types"></a><span data-ttu-id="18dba-134">Типы ссылок</span><span class="sxs-lookup"><span data-stu-id="18dba-134">Link types</span></span>
 
-<span data-ttu-id="a77dd-135">Параметр **type** может принимать указанные ниже значения.</span><span class="sxs-lookup"><span data-stu-id="a77dd-135">The following values are allowed for the **type** parameter.</span></span>
+<span data-ttu-id="18dba-135">Параметр **type** может принимать указанные ниже значения.</span><span class="sxs-lookup"><span data-stu-id="18dba-135">The following values are allowed for the **type** parameter.</span></span>
 
-| <span data-ttu-id="a77dd-136">Значение типа</span><span class="sxs-lookup"><span data-stu-id="a77dd-136">Type value</span></span> | <span data-ttu-id="a77dd-137">Описание</span><span class="sxs-lookup"><span data-stu-id="a77dd-137">Description</span></span>                                                                                  |
+| <span data-ttu-id="18dba-136">Значение типа</span><span class="sxs-lookup"><span data-stu-id="18dba-136">Type value</span></span> | <span data-ttu-id="18dba-137">Описание</span><span class="sxs-lookup"><span data-stu-id="18dba-137">Description</span></span>                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| `view`     | <span data-ttu-id="a77dd-138">Создает ссылку на объект DriveItem, предполагающую доступ только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a77dd-138">Creates a read-only link to the DriveItem.</span></span>                                                        |
-| `edit`     | <span data-ttu-id="a77dd-139">Создает ссылку на объект DriveItem, предполагающую доступ для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="a77dd-139">Creates a read-write link to the DriveItem.</span></span>                                                       |
-| `embed`    | <span data-ttu-id="a77dd-140">Создает встраиваемую ссылку на объект DriveItem.</span><span class="sxs-lookup"><span data-stu-id="a77dd-140">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="a77dd-141">Этот вариант доступен только для файлов в личных учетных записях OneDrive.</span><span class="sxs-lookup"><span data-stu-id="a77dd-141">This option is only available for files in OneDrive personal.</span></span> |
+| `view`     | <span data-ttu-id="18dba-138">Создает ссылку на объект DriveItem, предполагающую доступ только для чтения.</span><span class="sxs-lookup"><span data-stu-id="18dba-138">Creates a read-only link to the DriveItem.</span></span>                                                        |
+| `edit`     | <span data-ttu-id="18dba-139">Создает ссылку на объект DriveItem, предполагающую доступ для чтения и записи.</span><span class="sxs-lookup"><span data-stu-id="18dba-139">Creates a read-write link to the DriveItem.</span></span>                                                       |
+| `embed`    | <span data-ttu-id="18dba-140">Создает встраиваемую ссылку на объект DriveItem.</span><span class="sxs-lookup"><span data-stu-id="18dba-140">Creates an embeddable link to the DriveItem.</span></span> <span data-ttu-id="18dba-141">Этот вариант доступен только для файлов в личных учетных записях OneDrive.</span><span class="sxs-lookup"><span data-stu-id="18dba-141">This option is only available for files in OneDrive personal.</span></span> |
 
-### <a name="scope-types"></a><span data-ttu-id="a77dd-142">Типы областей</span><span class="sxs-lookup"><span data-stu-id="a77dd-142">Scope types</span></span>
+### <a name="scope-types"></a><span data-ttu-id="18dba-142">Типы областей</span><span class="sxs-lookup"><span data-stu-id="18dba-142">Scope types</span></span>
 
-<span data-ttu-id="a77dd-143">Параметр **scope** может принимать указанные ниже значения.</span><span class="sxs-lookup"><span data-stu-id="a77dd-143">The following values are allowed for the **scope** parameter.</span></span>
-<span data-ttu-id="a77dd-144">Если параметр **scope** не задан, создается ссылка того типа, который используется в организации по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="a77dd-144">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
+<span data-ttu-id="18dba-143">Параметр **scope** может принимать указанные ниже значения.</span><span class="sxs-lookup"><span data-stu-id="18dba-143">The following values are allowed for the **scope** parameter.</span></span>
+<span data-ttu-id="18dba-144">Если параметр **scope** не задан, создается ссылка того типа, который используется в организации по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="18dba-144">If the **scope** parameter is not specified, the default link type for the organization is created.</span></span>
 
-| <span data-ttu-id="a77dd-145">Значение</span><span class="sxs-lookup"><span data-stu-id="a77dd-145">Value</span></span>          | <span data-ttu-id="a77dd-146">Описание</span><span class="sxs-lookup"><span data-stu-id="a77dd-146">Description</span></span>
+| <span data-ttu-id="18dba-145">Значение</span><span class="sxs-lookup"><span data-stu-id="18dba-145">Value</span></span>          | <span data-ttu-id="18dba-146">Описание</span><span class="sxs-lookup"><span data-stu-id="18dba-146">Description</span></span>
 |:---------------|:------------------------------------------------------------
-| `anonymous`    | <span data-ttu-id="a77dd-147">Любой пользователь, у которого есть ссылка, имеет доступ, не требуя входа в систему.</span><span class="sxs-lookup"><span data-stu-id="a77dd-147">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="a77dd-148">Сюда могут относиться пользователи за прев Организации.</span><span class="sxs-lookup"><span data-stu-id="a77dd-148">This may include people outside of your organization.</span></span> <span data-ttu-id="a77dd-149">Поддержка анонимных ссылок может быть отключена администратором.</span><span class="sxs-lookup"><span data-stu-id="a77dd-149">Anonymous link support may be disabled by an administrator.</span></span>
-| `organization` | <span data-ttu-id="a77dd-150">Любой пользователь, вошедший в организацию (клиент), может использовать эту ссылку для получения доступа.</span><span class="sxs-lookup"><span data-stu-id="a77dd-150">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="a77dd-151">Доступно только в OneDrive для бизнеса и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="a77dd-151">Only available in OneDrive for Business and SharePoint.</span></span>
+| `anonymous`    | <span data-ttu-id="18dba-147">Любой пользователь, у которого есть ссылка, имеет доступ, не требуя входа в систему.</span><span class="sxs-lookup"><span data-stu-id="18dba-147">Anyone with the link has access, without needing to sign in.</span></span> <span data-ttu-id="18dba-148">Сюда могут относиться пользователи за прев Организации.</span><span class="sxs-lookup"><span data-stu-id="18dba-148">This may include people outside of your organization.</span></span> <span data-ttu-id="18dba-149">Поддержка анонимных ссылок может быть отключена администратором.</span><span class="sxs-lookup"><span data-stu-id="18dba-149">Anonymous link support may be disabled by an administrator.</span></span>
+| `organization` | <span data-ttu-id="18dba-150">Любой пользователь, вошедший в организацию (клиент), может использовать эту ссылку для получения доступа.</span><span class="sxs-lookup"><span data-stu-id="18dba-150">Anyone signed into your organization (tenant) can use the link to get access.</span></span> <span data-ttu-id="18dba-151">Доступно только в OneDrive для бизнеса и SharePoint.</span><span class="sxs-lookup"><span data-stu-id="18dba-151">Only available in OneDrive for Business and SharePoint.</span></span>
 
 
-## <a name="response"></a><span data-ttu-id="a77dd-152">Ответ</span><span class="sxs-lookup"><span data-stu-id="a77dd-152">Response</span></span>
+## <a name="response"></a><span data-ttu-id="18dba-152">Ответ</span><span class="sxs-lookup"><span data-stu-id="18dba-152">Response</span></span>
 
-<span data-ttu-id="a77dd-153">В случае успешного выполнения этот метод возвращает в тексте ответа один ресурс [Permission](../resources/permission.md), представляющий запрашиваемые разрешения для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="a77dd-153">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
+<span data-ttu-id="18dba-153">В случае успешного выполнения этот метод возвращает в тексте ответа один ресурс [Permission](../resources/permission.md), представляющий запрашиваемые разрешения для совместного доступа.</span><span class="sxs-lookup"><span data-stu-id="18dba-153">If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.</span></span>
 
-<span data-ttu-id="a77dd-154">Если для элемента создается новая ссылка совместного доступа, возвращается код ответа `201 Created`, а если возвращается существующая ссылка — код `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="a77dd-154">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
+<span data-ttu-id="18dba-154">Если для элемента создается новая ссылка совместного доступа, возвращается код ответа `201 Created`, а если возвращается существующая ссылка — код `200 OK`.</span><span class="sxs-lookup"><span data-stu-id="18dba-154">The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a77dd-155">Пример</span><span class="sxs-lookup"><span data-stu-id="a77dd-155">Example</span></span>
+## <a name="example"></a><span data-ttu-id="18dba-155">Пример</span><span class="sxs-lookup"><span data-stu-id="18dba-155">Example</span></span>
 
-<span data-ttu-id="a77dd-156">В приведенном ниже примере запрашивается создание ссылки для совместного доступа к объекту DriveItem, указанному по {itemId}, в хранилище OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="a77dd-156">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
-<span data-ttu-id="a77dd-157">Ссылка для совместного доступа подразумевает доступ только для чтения, и ее может использовать каждый, кому она предоставлена.</span><span class="sxs-lookup"><span data-stu-id="a77dd-157">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
+<span data-ttu-id="18dba-156">В приведенном ниже примере запрашивается создание ссылки для совместного доступа к объекту DriveItem, указанному по {itemId}, в хранилище OneDrive пользователя.</span><span class="sxs-lookup"><span data-stu-id="18dba-156">The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.</span></span>
+<span data-ttu-id="18dba-157">Ссылка для совместного доступа подразумевает доступ только для чтения, и ее может использовать каждый, кому она предоставлена.</span><span class="sxs-lookup"><span data-stu-id="18dba-157">The sharing link is configured to be read-only and usable by anyone with the link.</span></span>
 
-### <a name="request"></a><span data-ttu-id="a77dd-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="a77dd-158">Request</span></span>
+### <a name="request"></a><span data-ttu-id="18dba-158">Запрос</span><span class="sxs-lookup"><span data-stu-id="18dba-158">Request</span></span>
 
 <!-- {
   "blockType": "request",
@@ -102,7 +102,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a77dd-159">Ответ</span><span class="sxs-lookup"><span data-stu-id="a77dd-159">Response</span></span>
+### <a name="response"></a><span data-ttu-id="18dba-159">Ответ</span><span class="sxs-lookup"><span data-stu-id="18dba-159">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -125,13 +125,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-company-sharable-links"></a><span data-ttu-id="a77dd-160">Создание ссылок с возможностью общего доступа в компании</span><span class="sxs-lookup"><span data-stu-id="a77dd-160">Creating company sharable links</span></span>
+## <a name="creating-company-sharable-links"></a><span data-ttu-id="18dba-160">Создание ссылок с возможностью общего доступа в компании</span><span class="sxs-lookup"><span data-stu-id="18dba-160">Creating company sharable links</span></span>
 
-<span data-ttu-id="a77dd-161">OneDrive для бизнеса и SharePoint поддерживают ссылки с возможностью общего доступа в компании.</span><span class="sxs-lookup"><span data-stu-id="a77dd-161">OneDrive for Business and SharePoint support company sharable links.</span></span>
-<span data-ttu-id="a77dd-162">Они аналогичны ссылкам, не требующим проверки подлинности, но работают только для элементов соответствующей организации.</span><span class="sxs-lookup"><span data-stu-id="a77dd-162">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
-<span data-ttu-id="a77dd-163">Чтобы создать такую ссылку, задайте для параметра **scope** значение `organization`.</span><span class="sxs-lookup"><span data-stu-id="a77dd-163">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
+<span data-ttu-id="18dba-161">OneDrive для бизнеса и SharePoint поддерживают ссылки с возможностью общего доступа в компании.</span><span class="sxs-lookup"><span data-stu-id="18dba-161">OneDrive for Business and SharePoint support company sharable links.</span></span>
+<span data-ttu-id="18dba-162">Они аналогичны ссылкам, не требующим проверки подлинности, но работают только для элементов соответствующей организации.</span><span class="sxs-lookup"><span data-stu-id="18dba-162">These are similar to anonymous links, except they only work for members of the owning organization.</span></span>
+<span data-ttu-id="18dba-163">Чтобы создать такую ссылку, задайте для параметра **scope** значение `organization`.</span><span class="sxs-lookup"><span data-stu-id="18dba-163">To create a company sharable link, use the **scope** parameter with a value of `organization`.</span></span>
 
-### <a name="request"></a><span data-ttu-id="a77dd-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="a77dd-164">Request</span></span>
+### <a name="request"></a><span data-ttu-id="18dba-164">Запрос</span><span class="sxs-lookup"><span data-stu-id="18dba-164">Request</span></span>
 
 <!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
 
@@ -145,7 +145,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a77dd-165">Ответ</span><span class="sxs-lookup"><span data-stu-id="a77dd-165">Response</span></span>
+### <a name="response"></a><span data-ttu-id="18dba-165">Ответ</span><span class="sxs-lookup"><span data-stu-id="18dba-165">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -168,13 +168,13 @@ Content-Type: application/json
 }
 ```
 
-## <a name="creating-embeddable-links"></a><span data-ttu-id="a77dd-166">Создание встраиваемых ссылок</span><span class="sxs-lookup"><span data-stu-id="a77dd-166">Creating embeddable links</span></span>
+## <a name="creating-embeddable-links"></a><span data-ttu-id="18dba-166">Создание встраиваемых ссылок</span><span class="sxs-lookup"><span data-stu-id="18dba-166">Creating embeddable links</span></span>
 
-<span data-ttu-id="a77dd-p112">При использовании типа ссылки `embed` возвращаемое значение webUrl можно внедрять в элемент HTML `<iframe>`. При создании встроенной ссылки свойство `webHtml` содержит HTML-код для объекта `<iframe>`, в котором размещается содержимое.</span><span class="sxs-lookup"><span data-stu-id="a77dd-p112">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
+<span data-ttu-id="18dba-p112">При использовании типа ссылки `embed` возвращаемое значение webUrl можно внедрять в элемент HTML `<iframe>`. При создании встроенной ссылки свойство `webHtml` содержит HTML-код для объекта `<iframe>`, в котором размещается содержимое.</span><span class="sxs-lookup"><span data-stu-id="18dba-p112">When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element. When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.</span></span>
 
-<span data-ttu-id="a77dd-169">**Примечание.** Внедрение ссылок поддерживается только в личных учетных записях OneDrive.</span><span class="sxs-lookup"><span data-stu-id="a77dd-169">**Note:** Embed links are only supported for OneDrive personal.</span></span>
+<span data-ttu-id="18dba-169">**Примечание.** Внедрение ссылок поддерживается только в личных учетных записях OneDrive.</span><span class="sxs-lookup"><span data-stu-id="18dba-169">**Note:** Embed links are only supported for OneDrive personal.</span></span>
 
-### <a name="request"></a><span data-ttu-id="a77dd-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="a77dd-170">Request</span></span>
+### <a name="request"></a><span data-ttu-id="18dba-170">Запрос</span><span class="sxs-lookup"><span data-stu-id="18dba-170">Request</span></span>
 
 <!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
 
@@ -187,7 +187,7 @@ Content-Type: application/json
 }
 ```
 
-### <a name="response"></a><span data-ttu-id="a77dd-171">Ответ</span><span class="sxs-lookup"><span data-stu-id="a77dd-171">Response</span></span>
+### <a name="response"></a><span data-ttu-id="18dba-171">Отклик</span><span class="sxs-lookup"><span data-stu-id="18dba-171">Response</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -210,11 +210,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="a77dd-172">Примечания</span><span class="sxs-lookup"><span data-stu-id="a77dd-172">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="18dba-172">Примечания</span><span class="sxs-lookup"><span data-stu-id="18dba-172">Remarks</span></span>
 
-* <span data-ttu-id="a77dd-173">Срок действия ссылок, созданных с помощью этого действия, не истекает при условии, что в организации не включена политика срока действия.</span><span class="sxs-lookup"><span data-stu-id="a77dd-173">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
-* <span data-ttu-id="a77dd-174">Ссылки отображаются в разрешениях на совместное использование для элемента и могут быть удалены владельцем элемента.</span><span class="sxs-lookup"><span data-stu-id="a77dd-174">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
-* <span data-ttu-id="a77dd-175">Они всегда указывают на текущую версию элемента, если он не был извлечен (только в SharePoint).</span><span class="sxs-lookup"><span data-stu-id="a77dd-175">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
+* <span data-ttu-id="18dba-173">Срок действия ссылок, созданных с помощью этого действия, не истекает при условии, что в организации не включена политика срока действия.</span><span class="sxs-lookup"><span data-stu-id="18dba-173">Links created using this action do not expire unless a default expiration policy is enforced for the organization.</span></span>
+* <span data-ttu-id="18dba-174">Ссылки отображаются в разрешениях на совместное использование для элемента и могут быть удалены владельцем элемента.</span><span class="sxs-lookup"><span data-stu-id="18dba-174">Links are visible in the sharing permissions for the item and can be removed by an owner of the item.</span></span>
+* <span data-ttu-id="18dba-175">Они всегда указывают на текущую версию элемента, если он не был извлечен (только в SharePoint).</span><span class="sxs-lookup"><span data-stu-id="18dba-175">Links always point to the current version of a item unless the item is checked out (SharePoint only).</span></span>
 
 <!-- {
   "type": "#page.annotation",

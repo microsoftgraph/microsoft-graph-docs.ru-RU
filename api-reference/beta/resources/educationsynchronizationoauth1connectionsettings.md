@@ -1,29 +1,29 @@
 ---
-title: educationSynchronizationOAuth1ConnectionSettings ресурсов
-description: При OAuth1 будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.
+title: ресурс educationSynchronizationOAuth1ConnectionSettings
+description: Когда OAuth1 используется для подключения к поставщику данных, этот тип параметров подключения следует использовать для настройки профиля.
 localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: 71e45033c022061b72c1ea0be815ff3e0b611475
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29516674"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542825"
 ---
-# <a name="educationsynchronizationoauth1connectionsettings-resource"></a><span data-ttu-id="d38f4-103">educationSynchronizationOAuth1ConnectionSettings ресурсов</span><span class="sxs-lookup"><span data-stu-id="d38f4-103">educationSynchronizationOAuth1ConnectionSettings resource</span></span>
+# <a name="educationsynchronizationoauth1connectionsettings-resource"></a><span data-ttu-id="822b7-103">ресурс educationSynchronizationOAuth1ConnectionSettings</span><span class="sxs-lookup"><span data-stu-id="822b7-103">educationSynchronizationOAuth1ConnectionSettings resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d38f4-104">При OAuth1 будет использоваться для подключения к поставщику данных, этот тип параметры подключения можно использовать для настройки профиля.</span><span class="sxs-lookup"><span data-stu-id="d38f4-104">When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile.</span></span>
+<span data-ttu-id="822b7-104">Когда OAuth1 используется для подключения к поставщику данных, этот тип параметров подключения следует использовать для настройки профиля.</span><span class="sxs-lookup"><span data-stu-id="822b7-104">When OAuth1 is to be used to connect to the data provider, this connection settings type should be used to set up the profile.</span></span>
 
-<span data-ttu-id="d38f4-105">На основе [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span><span class="sxs-lookup"><span data-stu-id="d38f4-105">Derived from [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span></span>
+<span data-ttu-id="822b7-105">Производный от [Microsoft. Graph. едукатионсинчронизатионконнектионсеттингс](educationsynchronizationconnectionsettings.md).</span><span class="sxs-lookup"><span data-stu-id="822b7-105">Derived from [microsoft.graph.educationSynchronizationConnectionSettings](educationsynchronizationconnectionsettings.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="d38f4-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="d38f4-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="822b7-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="822b7-106">Properties</span></span>
 
-<span data-ttu-id="d38f4-107">Дополнительные свойства, предоставляемые интерфейсом этого типа.</span><span class="sxs-lookup"><span data-stu-id="d38f4-107">No additional properties are exposed by this type.</span></span>
+<span data-ttu-id="822b7-107">Этот тип не представляет никакие дополнительные свойства.</span><span class="sxs-lookup"><span data-stu-id="822b7-107">No additional properties are exposed by this type.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="d38f4-108">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d38f4-108">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="822b7-108">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="822b7-108">JSON representation</span></span>
 <!-- {
   "blockType": "resource",
   "@odata.type": "microsoft.graph.educationSynchronizationOAuth1ConnectionSettings"

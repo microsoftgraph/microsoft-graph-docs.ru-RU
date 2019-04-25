@@ -5,31 +5,31 @@ localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 4b080c7ed60f07c78dcf11574277b08086613d5a
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29576943"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537916"
 ---
-# <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a><span data-ttu-id="d839c-104">reportRoot: getSkypeForBusinessPeerToPeerActivityCounts</span><span class="sxs-lookup"><span data-stu-id="d839c-104">reportRoot: getSkypeForBusinessPeerToPeerActivityCounts</span></span>
+# <a name="reportroot-getskypeforbusinesspeertopeeractivitycounts"></a><span data-ttu-id="e442d-104">reportRoot: getSkypeForBusinessPeerToPeerActivityCounts</span><span class="sxs-lookup"><span data-stu-id="e442d-104">reportRoot: getSkypeForBusinessPeerToPeerActivityCounts</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="d839c-105">Отслеживайте динамику использования по количеству и типу проведенных в организации сеансов</span><span class="sxs-lookup"><span data-stu-id="d839c-105">Get usage trends on the number and type of sessions held in your organization.</span></span> <span data-ttu-id="d839c-106">(обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям и передача файлов).</span><span class="sxs-lookup"><span data-stu-id="d839c-106">Types of sessions include IM, audio, video, application sharing, and file transfer.</span></span>
+<span data-ttu-id="e442d-105">Отслеживайте динамику использования по количеству и типу проведенных в организации сеансов</span><span class="sxs-lookup"><span data-stu-id="e442d-105">Get usage trends on the number and type of sessions held in your organization.</span></span> <span data-ttu-id="e442d-106">(обмен мгновенными сообщениями, аудио, видео, общий доступ к приложениям и передача файлов).</span><span class="sxs-lookup"><span data-stu-id="e442d-106">Types of sessions include IM, audio, video, application sharing, and file transfer.</span></span>
 
-> <span data-ttu-id="d839c-107">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).</span><span class="sxs-lookup"><span data-stu-id="d839c-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).</span></span>
+> <span data-ttu-id="e442d-107">**Примечание.** Подробные сведения о различных представлениях и названиях отчетов см. в [этой статье](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).</span><span class="sxs-lookup"><span data-stu-id="e442d-107">**Note:** For details about different report views and names, see [Office 365 Reports - Skype for Business peer-to-peer activity](https://support.office.com/client/Skype-for-Business-Online-peertopeer-activity-d3b2d569-4ee9-44b8-92bf-d518142f0713).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="d839c-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="d839c-108">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="e442d-108">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e442d-108">Permissions</span></span>
 
-<span data-ttu-id="d839c-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="d839c-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="e442d-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e442d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-| <span data-ttu-id="d839c-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="d839c-111">Permission type</span></span>                        | <span data-ttu-id="d839c-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="d839c-112">Permissions (from least to most privileged)</span></span> |
+| <span data-ttu-id="e442d-111">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e442d-111">Permission type</span></span>                        | <span data-ttu-id="e442d-112">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e442d-112">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :--------------------------------------- |
-| <span data-ttu-id="d839c-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="d839c-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="d839c-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d839c-114">Reports.Read.All</span></span>                         |
-| <span data-ttu-id="d839c-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="d839c-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="d839c-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="d839c-116">Not supported.</span></span>                           |
-| <span data-ttu-id="d839c-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="d839c-117">Application</span></span>                            | <span data-ttu-id="d839c-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="d839c-118">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="e442d-113">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e442d-113">Delegated (work or school account)</span></span>     | <span data-ttu-id="e442d-114">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="e442d-114">Reports.Read.All</span></span>                         |
+| <span data-ttu-id="e442d-115">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e442d-115">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e442d-116">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e442d-116">Not supported.</span></span>                           |
+| <span data-ttu-id="e442d-117">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e442d-117">Application</span></span>                            | <span data-ttu-id="e442d-118">Reports.Read.All</span><span class="sxs-lookup"><span data-stu-id="e442d-118">Reports.Read.All</span></span>                         |
 
-## <a name="http-request"></a><span data-ttu-id="d839c-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="d839c-119">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="e442d-119">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e442d-119">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -37,54 +37,54 @@ ms.locfileid: "29576943"
 GET /reports/getSkypeForBusinessPeerToPeerActivityCounts(period='{period_value}')
 ```
 
-## <a name="function-parameters"></a><span data-ttu-id="d839c-120">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="d839c-120">Function parameters</span></span>
+## <a name="function-parameters"></a><span data-ttu-id="e442d-120">Параметры функции</span><span class="sxs-lookup"><span data-stu-id="e442d-120">Function parameters</span></span>
 
-<span data-ttu-id="d839c-121">В URL-адресе запроса укажите следующий параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="d839c-121">In the request URL, provide the following parameter with a valid value.</span></span>
+<span data-ttu-id="e442d-121">В URL-адресе запроса укажите приведенный ниже параметр и действительное значение.</span><span class="sxs-lookup"><span data-stu-id="e442d-121">In the request URL, provide the following parameter with a valid value.</span></span>
 
-| <span data-ttu-id="d839c-122">Параметр</span><span class="sxs-lookup"><span data-stu-id="d839c-122">Parameter</span></span> | <span data-ttu-id="d839c-123">Тип</span><span class="sxs-lookup"><span data-stu-id="d839c-123">Type</span></span>   | <span data-ttu-id="d839c-124">Описание</span><span class="sxs-lookup"><span data-stu-id="d839c-124">Description</span></span>                              |
+| <span data-ttu-id="e442d-122">Параметр</span><span class="sxs-lookup"><span data-stu-id="e442d-122">Parameter</span></span> | <span data-ttu-id="e442d-123">Тип</span><span class="sxs-lookup"><span data-stu-id="e442d-123">Type</span></span>   | <span data-ttu-id="e442d-124">Описание</span><span class="sxs-lookup"><span data-stu-id="e442d-124">Description</span></span>                              |
 | :-------- | :----- | :--------------------------------------- |
-| <span data-ttu-id="d839c-125">period</span><span class="sxs-lookup"><span data-stu-id="d839c-125">period</span></span>    | <span data-ttu-id="d839c-126">строка</span><span class="sxs-lookup"><span data-stu-id="d839c-126">string</span></span> | <span data-ttu-id="d839c-127">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="d839c-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="d839c-128">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="d839c-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="d839c-129">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="d839c-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="d839c-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d839c-130">Required.</span></span> |
+| <span data-ttu-id="e442d-125">period</span><span class="sxs-lookup"><span data-stu-id="e442d-125">period</span></span>    | <span data-ttu-id="e442d-126">string</span><span class="sxs-lookup"><span data-stu-id="e442d-126">string</span></span> | <span data-ttu-id="e442d-127">Указывает отчетный период.</span><span class="sxs-lookup"><span data-stu-id="e442d-127">Specifies the length of time over which the report is aggregated.</span></span> <span data-ttu-id="e442d-128">Поддерживаемые значения {period_value}: D7, D30, D90 и D180.</span><span class="sxs-lookup"><span data-stu-id="e442d-128">The supported values for {period_value} are: D7, D30, D90, and D180.</span></span> <span data-ttu-id="e442d-129">Эти значения указываются в формате D*n*, где *n* — количество дней в отчетном периоде.</span><span class="sxs-lookup"><span data-stu-id="e442d-129">These values follow the format D*n* where *n* represents the number of days over which the report is aggregated.</span></span> <span data-ttu-id="e442d-130">Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e442d-130">Required.</span></span> |
 
-<span data-ttu-id="d839c-131">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки ответа.</span><span class="sxs-lookup"><span data-stu-id="d839c-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="d839c-132">Выходной тип по умолчанию — текст и csv.</span><span class="sxs-lookup"><span data-stu-id="d839c-132">The default output type is text/csv.</span></span> <span data-ttu-id="d839c-133">Тем не менее если вы хотите указать тип выходных данных, можно использовать параметр $format запроса OData, задайте значение text/CSV-файла или приложение/json.</span><span class="sxs-lookup"><span data-stu-id="d839c-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
+<span data-ttu-id="e442d-131">Этот метод поддерживает `$format` [параметр запроса OData](/graph/query-parameters) для настройки отклика.</span><span class="sxs-lookup"><span data-stu-id="e442d-131">This method supports the `$format` [OData query parameter](/graph/query-parameters) to customize the response.</span></span> <span data-ttu-id="e442d-132">Тип выходных данных по умолчанию — Text/CSV.</span><span class="sxs-lookup"><span data-stu-id="e442d-132">The default output type is text/csv.</span></span> <span data-ttu-id="e442d-133">Тем не менее, если вы хотите указать тип выходных данных, можно использовать параметр запроса OData $format, для которого задано значение Text/CSV или Application/JSON.</span><span class="sxs-lookup"><span data-stu-id="e442d-133">However, if you want to specify the output type, you can use the OData $format query parameter set to text/csv or application/json.</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="d839c-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="d839c-134">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="e442d-134">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e442d-134">Request headers</span></span>
 
-| <span data-ttu-id="d839c-135">Имя</span><span class="sxs-lookup"><span data-stu-id="d839c-135">Name</span></span>          | <span data-ttu-id="d839c-136">Описание</span><span class="sxs-lookup"><span data-stu-id="d839c-136">Description</span></span>               |
+| <span data-ttu-id="e442d-135">Имя</span><span class="sxs-lookup"><span data-stu-id="e442d-135">Name</span></span>          | <span data-ttu-id="e442d-136">Описание</span><span class="sxs-lookup"><span data-stu-id="e442d-136">Description</span></span>               |
 | :------------ | :------------------------ |
-| <span data-ttu-id="d839c-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="d839c-137">Authorization</span></span> | <span data-ttu-id="d839c-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="d839c-p106">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="e442d-137">Авторизация</span><span class="sxs-lookup"><span data-stu-id="e442d-137">Authorization</span></span> | <span data-ttu-id="e442d-p106">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e442d-p106">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="d839c-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="d839c-140">Response</span></span>
+## <a name="response"></a><span data-ttu-id="e442d-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="e442d-140">Response</span></span>
 
-### <a name="csv"></a><span data-ttu-id="d839c-141">CSV</span><span class="sxs-lookup"><span data-stu-id="d839c-141">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="e442d-141">CSV</span><span class="sxs-lookup"><span data-stu-id="e442d-141">CSV</span></span>
 
-<span data-ttu-id="d839c-142">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="d839c-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="d839c-143">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="d839c-143">That URL can be found in the `Location` header in the response.</span></span>
+<span data-ttu-id="e442d-142">В случае успешного выполнения этот метод возвращает отклик `302 Found`, который перенаправляет на URL-адрес, для которого выполнена предварительная аутентификация, для скачивания отчета.</span><span class="sxs-lookup"><span data-stu-id="e442d-142">If successful, this method returns a `302 Found` response that redirects to a preauthenticated download URL for the report.</span></span> <span data-ttu-id="e442d-143">Этот URL-адрес можно найти в заголовке `Location` отклика.</span><span class="sxs-lookup"><span data-stu-id="e442d-143">That URL can be found in the `Location` header in the response.</span></span>
 
-<span data-ttu-id="d839c-144">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="d839c-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
+<span data-ttu-id="e442d-144">URL-адреса для скачивания, для которых выполнена предварительная аутентификация, действительны в течение нескольких минут и не требуют заголовка `Authorization`.</span><span class="sxs-lookup"><span data-stu-id="e442d-144">Preauthenticated download URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header.</span></span>
 
-<span data-ttu-id="d839c-145">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="d839c-145">The CSV file has the following headers for columns.</span></span>
+<span data-ttu-id="e442d-145">CSV-файл содержит столбцы со следующими заголовками:</span><span class="sxs-lookup"><span data-stu-id="e442d-145">The CSV file has the following headers for columns.</span></span>
 
-- <span data-ttu-id="d839c-146">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="d839c-146">Report Refresh Date</span></span>
-- <span data-ttu-id="d839c-147">"Report Date" (Дата отчета);</span><span class="sxs-lookup"><span data-stu-id="d839c-147">Report Date</span></span>
-- <span data-ttu-id="d839c-148">Report Period (отчетный период)</span><span class="sxs-lookup"><span data-stu-id="d839c-148">Report Period</span></span>
-- <span data-ttu-id="d839c-149">"IM" (Обмен мгновенными сообщениями);</span><span class="sxs-lookup"><span data-stu-id="d839c-149">IM</span></span>
-- <span data-ttu-id="d839c-150">Audio (аудио)</span><span class="sxs-lookup"><span data-stu-id="d839c-150">Audio</span></span>
-- <span data-ttu-id="d839c-151">Video (видео)</span><span class="sxs-lookup"><span data-stu-id="d839c-151">Video</span></span>
-- <span data-ttu-id="d839c-152">"App Sharing" (Общий доступ к приложениям);</span><span class="sxs-lookup"><span data-stu-id="d839c-152">App Sharing</span></span>
-- <span data-ttu-id="d839c-153">"File Transfer" (Передача файлов).</span><span class="sxs-lookup"><span data-stu-id="d839c-153">File Transfer</span></span>
+- <span data-ttu-id="e442d-146">"Report Refresh Date" (Дата обновления отчета);</span><span class="sxs-lookup"><span data-stu-id="e442d-146">Report Refresh Date</span></span>
+- <span data-ttu-id="e442d-147">"Report Date" (Дата отчета);</span><span class="sxs-lookup"><span data-stu-id="e442d-147">Report Date</span></span>
+- <span data-ttu-id="e442d-148">"Report Period" (Отчетный период);</span><span class="sxs-lookup"><span data-stu-id="e442d-148">Report Period</span></span>
+- <span data-ttu-id="e442d-149">"IM" (Обмен мгновенными сообщениями);</span><span class="sxs-lookup"><span data-stu-id="e442d-149">IM</span></span>
+- <span data-ttu-id="e442d-150">"Audio" (Аудио);</span><span class="sxs-lookup"><span data-stu-id="e442d-150">Audio</span></span>
+- <span data-ttu-id="e442d-151">"Video" (Видео);</span><span class="sxs-lookup"><span data-stu-id="e442d-151">Video</span></span>
+- <span data-ttu-id="e442d-152">"App Sharing" (Общий доступ к приложениям);</span><span class="sxs-lookup"><span data-stu-id="e442d-152">App Sharing</span></span>
+- <span data-ttu-id="e442d-153">"File Transfer" (Передача файлов).</span><span class="sxs-lookup"><span data-stu-id="e442d-153">File Transfer</span></span>
 
-### <a name="json"></a><span data-ttu-id="d839c-154">JSON</span><span class="sxs-lookup"><span data-stu-id="d839c-154">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="e442d-154">JSON</span><span class="sxs-lookup"><span data-stu-id="e442d-154">JSON</span></span>
 
-<span data-ttu-id="d839c-155">Успешно завершена, этот метод возвращает `200 OK` код ответа и объект **[skypeForBusinessPeerToPeerActivityCounts](../resources/skypeforbusinesspeertopeeractivitycounts.md)** в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="d839c-155">If successful, this method returns a `200 OK` response code and a **[skypeForBusinessPeerToPeerActivityCounts](../resources/skypeforbusinesspeertopeeractivitycounts.md)** object in the response body.</span></span>
+<span data-ttu-id="e442d-155">В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект **[скипефорбусинесспиртопирактивитикаунтс](../resources/skypeforbusinesspeertopeeractivitycounts.md)** в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="e442d-155">If successful, this method returns a `200 OK` response code and a **[skypeForBusinessPeerToPeerActivityCounts](../resources/skypeforbusinesspeertopeeractivitycounts.md)** object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="d839c-156">Пример</span><span class="sxs-lookup"><span data-stu-id="d839c-156">Example</span></span>
+## <a name="example"></a><span data-ttu-id="e442d-156">Пример</span><span class="sxs-lookup"><span data-stu-id="e442d-156">Example</span></span>
 
-### <a name="csv"></a><span data-ttu-id="d839c-157">CSV</span><span class="sxs-lookup"><span data-stu-id="d839c-157">CSV</span></span>
+### <a name="csv"></a><span data-ttu-id="e442d-157">CSV</span><span class="sxs-lookup"><span data-stu-id="e442d-157">CSV</span></span>
 
-<span data-ttu-id="d839c-158">Ниже приведен пример выводит CSV.</span><span class="sxs-lookup"><span data-stu-id="d839c-158">The following is an example that outputs CSV.</span></span>
+<span data-ttu-id="e442d-158">Ниже приведен пример выходных данных CSV.</span><span class="sxs-lookup"><span data-stu-id="e442d-158">The following is an example that outputs CSV.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d839c-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="d839c-159">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e442d-159">Запрос</span><span class="sxs-lookup"><span data-stu-id="e442d-159">Request</span></span>
 
-<span data-ttu-id="d839c-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d839c-160">The following is an example of the request.</span></span>
+<span data-ttu-id="e442d-160">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e442d-160">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -95,9 +95,9 @@ GET /reports/getSkypeForBusinessPeerToPeerActivityCounts(period='{period_value}'
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivityCounts(period='D7')?$format=text/csv
 ```
 
-#### <a name="response"></a><span data-ttu-id="d839c-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="d839c-161">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e442d-161">Отклик</span><span class="sxs-lookup"><span data-stu-id="e442d-161">Response</span></span>
 
-<span data-ttu-id="d839c-162">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d839c-162">The following is an example of the response.</span></span>
+<span data-ttu-id="e442d-162">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e442d-162">The following is an example of the response.</span></span>
 
 <!-- { "blockType": "ignored" } --> 
 
@@ -107,7 +107,7 @@ Content-Type: text/plain
 Location: https://reports.office.com/data/download/JDFKdf2_eJXKS034dbc7e0t__XDe
 ```
 
-<span data-ttu-id="d839c-163">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="d839c-163">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
+<span data-ttu-id="e442d-163">У скачанного после перенаправления 302 CSV-файла будет приведенная ниже схема.</span><span class="sxs-lookup"><span data-stu-id="e442d-163">Follow the 302 redirection and the CSV file that downloads will have the following schema.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -122,13 +122,13 @@ Content-Type: application/octet-stream
 Report Refresh Date,Report Date,Report Period,IM,Audio,Video,App Sharing,File Transfer
 ```
 
-### <a name="json"></a><span data-ttu-id="d839c-164">JSON</span><span class="sxs-lookup"><span data-stu-id="d839c-164">JSON</span></span>
+### <a name="json"></a><span data-ttu-id="e442d-164">JSON</span><span class="sxs-lookup"><span data-stu-id="e442d-164">JSON</span></span>
 
-<span data-ttu-id="d839c-165">Ниже приведен пример, в котором возвращает JSON.</span><span class="sxs-lookup"><span data-stu-id="d839c-165">The following is an example that returns JSON.</span></span>
+<span data-ttu-id="e442d-165">Ниже приведен пример, в котором возвращается JSON.</span><span class="sxs-lookup"><span data-stu-id="e442d-165">The following is an example that returns JSON.</span></span>
 
-#### <a name="request"></a><span data-ttu-id="d839c-166">Запрос</span><span class="sxs-lookup"><span data-stu-id="d839c-166">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="e442d-166">Запрос</span><span class="sxs-lookup"><span data-stu-id="e442d-166">Request</span></span>
 
-<span data-ttu-id="d839c-167">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="d839c-167">The following is an example of the request.</span></span>
+<span data-ttu-id="e442d-167">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e442d-167">The following is an example of the request.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -139,11 +139,11 @@ Report Refresh Date,Report Date,Report Period,IM,Audio,Video,App Sharing,File Tr
 GET https://graph.microsoft.com/beta/reports/getSkypeForBusinessPeerToPeerActivityCounts(period='D7')?$format=application/json
 ```
 
-#### <a name="response"></a><span data-ttu-id="d839c-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="d839c-168">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="e442d-168">Отклик</span><span class="sxs-lookup"><span data-stu-id="e442d-168">Response</span></span>
 
-<span data-ttu-id="d839c-169">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="d839c-169">The following is an example of the response.</span></span>
+<span data-ttu-id="e442d-169">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e442d-169">The following is an example of the response.</span></span>
 
-> <span data-ttu-id="d839c-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="d839c-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+> <span data-ttu-id="e442d-p108">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="e442d-p108">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 
 <!-- {
   "blockType": "response",

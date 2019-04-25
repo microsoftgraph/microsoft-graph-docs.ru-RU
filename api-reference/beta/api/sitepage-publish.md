@@ -6,31 +6,31 @@ title: Страница публикации
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 5a00a69542c2b59b1b268433b08656c87d194feb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507532"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32545241"
 ---
-# <a name="sitepage-publish"></a><span data-ttu-id="1814b-102">sitePage: публикация</span><span class="sxs-lookup"><span data-stu-id="1814b-102">sitePage: publish</span></span>
+# <a name="sitepage-publish"></a><span data-ttu-id="def25-102">Ситепаже: публикация</span><span class="sxs-lookup"><span data-stu-id="def25-102">sitePage: publish</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1814b-103">Публикация последней версии ресурсов [sitePage][] , предоставляющего версии страницы для всех пользователей.</span><span class="sxs-lookup"><span data-stu-id="1814b-103">Publish the latest version of a [sitePage][] resource, which makes the version of the page available to all users.</span></span> <span data-ttu-id="1814b-104">Если страница извлечена, вернуть ее и опубликовать его.</span><span class="sxs-lookup"><span data-stu-id="1814b-104">If the page is checked out, check in the page and publish it.</span></span> <span data-ttu-id="1814b-105">Если страница извлечена вызывающему этот интерфейс API, страница автоматически вернули и последующей публикацией.</span><span class="sxs-lookup"><span data-stu-id="1814b-105">If the page is checked out to the caller of this API, the page is automatically checked in and then published.</span></span>
+<span data-ttu-id="def25-103">Опубликуйте последнюю версию ресурса [ситепаже][] , которая делает версию страницы доступной для всех пользователей.</span><span class="sxs-lookup"><span data-stu-id="def25-103">Publish the latest version of a [sitePage][] resource, which makes the version of the page available to all users.</span></span> <span data-ttu-id="def25-104">Если страница извлечена, необходимо вернуть страницу и опубликовать ее.</span><span class="sxs-lookup"><span data-stu-id="def25-104">If the page is checked out, check in the page and publish it.</span></span> <span data-ttu-id="def25-105">Если страница извлечена в вызывающий объект этого API, страница автоматически возвращается и затем публикуется.</span><span class="sxs-lookup"><span data-stu-id="def25-105">If the page is checked out to the caller of this API, the page is automatically checked in and then published.</span></span>
 
 [sitePage]: ../resources/sitepage.md
 
-## <a name="permissions"></a><span data-ttu-id="1814b-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1814b-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="def25-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="def25-107">Permissions</span></span>
 
-<span data-ttu-id="1814b-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1814b-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="def25-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="def25-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1814b-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1814b-110">Permission type</span></span>      | <span data-ttu-id="1814b-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1814b-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="def25-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="def25-110">Permission type</span></span>      | <span data-ttu-id="def25-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="def25-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1814b-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1814b-112">Delegated (work or school account)</span></span> | <span data-ttu-id="1814b-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1814b-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1814b-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1814b-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1814b-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1814b-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1814b-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1814b-116">Application</span></span> | <span data-ttu-id="1814b-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1814b-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="def25-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="def25-112">Delegated (work or school account)</span></span> | <span data-ttu-id="def25-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="def25-113">Files.ReadWrite, Files.ReadWrite.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="def25-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="def25-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="def25-115">Files.ReadWrite, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="def25-115">Files.ReadWrite, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="def25-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="def25-116">Application</span></span> | <span data-ttu-id="def25-117">Files.ReadWrite.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="def25-117">Files.ReadWrite.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1814b-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1814b-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="def25-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="def25-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -38,13 +38,13 @@ ms.locfileid: "29507532"
 POST /sites/{siteId}/pages/{pageId}/publish
 ```
 
-## <a name="request-body"></a><span data-ttu-id="1814b-119">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1814b-119">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="def25-119">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="def25-119">Request body</span></span>
 
-<span data-ttu-id="1814b-120">Это сообщение не имеет текста запроса.</span><span class="sxs-lookup"><span data-stu-id="1814b-120">This message does not have a request body.</span></span> <span data-ttu-id="1814b-121">Любой текст запроса отправляются будет игнорироваться.</span><span class="sxs-lookup"><span data-stu-id="1814b-121">Any request body sent will be ignored.</span></span>
+<span data-ttu-id="def25-120">У этого сообщения нет текста запроса.</span><span class="sxs-lookup"><span data-stu-id="def25-120">This message does not have a request body.</span></span> <span data-ttu-id="def25-121">Любой Отправленный текст запроса будет игнорироваться.</span><span class="sxs-lookup"><span data-stu-id="def25-121">Any request body sent will be ignored.</span></span>
 
-## <a name="response"></a><span data-ttu-id="1814b-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="1814b-122">Response</span></span>
+## <a name="response"></a><span data-ttu-id="def25-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="def25-122">Response</span></span>
 
-<span data-ttu-id="1814b-123">При успешном выполнении вызова API возвращается отклик `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="1814b-123">If successful, the API call returns a `204 No Content`.</span></span>
+<span data-ttu-id="def25-123">При успешном выполнении вызова API возвращается отклик `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="def25-123">If successful, the API call returns a `204 No Content`.</span></span>
 
 <!-- { "blockType": "response" } -->
 

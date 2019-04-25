@@ -5,21 +5,21 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 396c53b8d03f573c214dcf43a3637cf06f412a33
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30937798"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535608"
 ---
-# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="a75f8-103">Тип ресурсов attendeeAvailability</span><span class="sxs-lookup"><span data-stu-id="a75f8-103">attendeeAvailability resource type</span></span>
+# <a name="attendeeavailability-resource-type"></a><span data-ttu-id="f5a3e-103">Тип ресурсов attendeeAvailability</span><span class="sxs-lookup"><span data-stu-id="f5a3e-103">attendeeAvailability resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a75f8-104">Доступность участника.</span><span class="sxs-lookup"><span data-stu-id="a75f8-104">The availability of an attendee.</span></span>
+<span data-ttu-id="f5a3e-104">Доступность участника.</span><span class="sxs-lookup"><span data-stu-id="f5a3e-104">The availability of an attendee.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a75f8-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a75f8-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="f5a3e-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="f5a3e-105">JSON representation</span></span>
 
-<span data-ttu-id="a75f8-106">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="a75f8-106">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="f5a3e-106">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="f5a3e-106">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -36,11 +36,11 @@ ms.locfileid: "30937798"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="a75f8-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="a75f8-107">Properties</span></span>
-| <span data-ttu-id="a75f8-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="a75f8-108">Property</span></span>     | <span data-ttu-id="a75f8-109">Тип</span><span class="sxs-lookup"><span data-stu-id="a75f8-109">Type</span></span>   |<span data-ttu-id="a75f8-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a75f8-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="f5a3e-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="f5a3e-107">Properties</span></span>
+| <span data-ttu-id="f5a3e-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="f5a3e-108">Property</span></span>     | <span data-ttu-id="f5a3e-109">Тип</span><span class="sxs-lookup"><span data-stu-id="f5a3e-109">Type</span></span>   |<span data-ttu-id="f5a3e-110">Описание</span><span class="sxs-lookup"><span data-stu-id="f5a3e-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="a75f8-111">attendee</span><span class="sxs-lookup"><span data-stu-id="a75f8-111">attendee</span></span>|[<span data-ttu-id="a75f8-112">attendeeBase</span><span class="sxs-lookup"><span data-stu-id="a75f8-112">attendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="a75f8-113">Адрес электронной почты и тип участника — является ли это пользователь или ресурс, а также является ли он обязательным, если это человек.</span><span class="sxs-lookup"><span data-stu-id="a75f8-113">The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
-|<span data-ttu-id="a75f8-114">availability</span><span class="sxs-lookup"><span data-stu-id="a75f8-114">availability</span></span>|<span data-ttu-id="a75f8-115">Фрибусистатус</span><span class="sxs-lookup"><span data-stu-id="a75f8-115">freeBusyStatus</span></span>| <span data-ttu-id="a75f8-p101">Состояние занятости участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="a75f8-p101">The availability status of the attendee. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
+|<span data-ttu-id="f5a3e-111">attendee</span><span class="sxs-lookup"><span data-stu-id="f5a3e-111">attendee</span></span>|[<span data-ttu-id="f5a3e-112">attendeeBase</span><span class="sxs-lookup"><span data-stu-id="f5a3e-112">attendeeBase</span></span>](attendeebase.md)|<span data-ttu-id="f5a3e-113">Адрес электронной почты и тип участника — является ли это пользователь или ресурс, а также является ли он обязательным, если это человек.</span><span class="sxs-lookup"><span data-stu-id="f5a3e-113">The email address and type of attendee - whether it's a person or a resource, and whether required or optional if it's a person.</span></span>|
+|<span data-ttu-id="f5a3e-114">availability</span><span class="sxs-lookup"><span data-stu-id="f5a3e-114">availability</span></span>|<span data-ttu-id="f5a3e-115">Фрибусистатус</span><span class="sxs-lookup"><span data-stu-id="f5a3e-115">freeBusyStatus</span></span>| <span data-ttu-id="f5a3e-p101">Состояние занятости участника. Возможные значения: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span><span class="sxs-lookup"><span data-stu-id="f5a3e-p101">The availability status of the attendee. Possible values are: `free`, `tentative`, `busy`, `oof`, `workingElsewhere`, `unknown`.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

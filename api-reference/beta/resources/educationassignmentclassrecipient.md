@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса educationAssignmentClassRecipient
-description: 'Используется в свойстве assignment.assignTo. Если задано значение класс получателя, будет каждые учебы в классе '
+title: Тип ресурса ЕдукатионассигнментклассреЦипиент
+description: 'Используется внутри свойства назначение. Ассигнто. Если задано значение "класс получателя", каждый учащийся в классе будет '
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
 ms.openlocfilehash: 4aa7e19c3f71f074bf9ed9b4910e6862d31f20b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29529994"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543115"
 ---
-# <a name="educationassignmentclassrecipient-resource-type"></a><span data-ttu-id="8eb82-104">Тип ресурса educationAssignmentClassRecipient</span><span class="sxs-lookup"><span data-stu-id="8eb82-104">educationAssignmentClassRecipient resource type</span></span>
+# <a name="educationassignmentclassrecipient-resource-type"></a><span data-ttu-id="a334c-104">Тип ресурса ЕдукатионассигнментклассреЦипиент</span><span class="sxs-lookup"><span data-stu-id="a334c-104">educationAssignmentClassRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8eb82-105">Используется в свойстве [assignment.assignTo](educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="8eb82-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="8eb82-106">Если задано значение класс получателя, каждые учебы в классе получите объект отправки при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="8eb82-106">When set to class recipient, every student in the class will receive a submission object when the assignment is published.</span></span>
+<span data-ttu-id="a334c-105">Используется внутри свойства [назначение. ассигнто](educationassignment.md) .</span><span class="sxs-lookup"><span data-stu-id="a334c-105">Used inside the [assignment.assignTo](educationassignment.md) property.</span></span> <span data-ttu-id="a334c-106">Если задано значение класс Recipient, каждый учащийся в классе получит объект отправки при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="a334c-106">When set to class recipient, every student in the class will receive a submission object when the assignment is published.</span></span>
 
-<span data-ttu-id="8eb82-107">Этот ресурс является подкласс [educationAssignmentRecipient](educationassignmentrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="8eb82-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
+<span data-ttu-id="a334c-107">Этот ресурс является подклассом [едукатионассигнментреЦипиент](educationassignmentrecipient.md).</span><span class="sxs-lookup"><span data-stu-id="a334c-107">This resource is a subclass of [educationAssignmentRecipient](educationassignmentrecipient.md).</span></span>
 
-## <a name="properties"></a><span data-ttu-id="8eb82-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="8eb82-108">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a334c-108">Свойства</span><span class="sxs-lookup"><span data-stu-id="a334c-108">Properties</span></span>
 
-<span data-ttu-id="8eb82-109">Нет.</span><span class="sxs-lookup"><span data-stu-id="8eb82-109">None.</span></span>
+<span data-ttu-id="a334c-109">Нет.</span><span class="sxs-lookup"><span data-stu-id="a334c-109">None.</span></span>
 
 
 <!-- {

@@ -5,27 +5,25 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 3647d0b4b580aa76c886f50f9bae8283219dfbfe
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29507644"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539455"
 ---
-# <a name="delete-page"></a><span data-ttu-id="e8f42-103">Удаление страницы</span><span class="sxs-lookup"><span data-stu-id="e8f42-103">Delete page</span></span>
+# <a name="delete-page"></a><span data-ttu-id="b6118-103">Удаление страницы</span><span class="sxs-lookup"><span data-stu-id="b6118-103">Delete page</span></span>
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+<span data-ttu-id="b6118-104">Удаление страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="b6118-104">Delete a OneNote page.</span></span>
+## <a name="permissions"></a><span data-ttu-id="b6118-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="b6118-105">Permissions</span></span>
+<span data-ttu-id="b6118-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="b6118-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-<span data-ttu-id="e8f42-104">Удаление страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="e8f42-104">Delete a OneNote page.</span></span>
-## <a name="permissions"></a><span data-ttu-id="e8f42-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e8f42-105">Permissions</span></span>
-<span data-ttu-id="e8f42-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e8f42-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
-
-|<span data-ttu-id="e8f42-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e8f42-108">Permission type</span></span>      | <span data-ttu-id="e8f42-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e8f42-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="b6118-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="b6118-108">Permission type</span></span>      | <span data-ttu-id="b6118-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="b6118-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="e8f42-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e8f42-110">Delegated (work or school account)</span></span> | <span data-ttu-id="e8f42-111">Notes.ReadWrite, Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8f42-111">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
-|<span data-ttu-id="e8f42-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e8f42-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e8f42-113">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="e8f42-113">Notes.ReadWrite</span></span>    |
-|<span data-ttu-id="e8f42-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e8f42-114">Application</span></span> | <span data-ttu-id="e8f42-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e8f42-115">Notes.ReadWrite.All</span></span> |
+|<span data-ttu-id="b6118-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="b6118-110">Delegated (work or school account)</span></span> | <span data-ttu-id="b6118-111">Notes. ReadWrite, Notes. ReadWrite. ALL</span><span class="sxs-lookup"><span data-stu-id="b6118-111">Notes.ReadWrite, Notes.ReadWrite.All</span></span>    |
+|<span data-ttu-id="b6118-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="b6118-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="b6118-113">Notes.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="b6118-113">Notes.ReadWrite</span></span>    |
+|<span data-ttu-id="b6118-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="b6118-114">Application</span></span> | <span data-ttu-id="b6118-115">Notes.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="b6118-115">Notes.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="e8f42-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e8f42-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b6118-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="b6118-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /me/onenote/pages/{id}
@@ -33,27 +31,27 @@ DELETE /users/{id | userPrincipalName}/onenote/pages/{id}
 DELETE /groups/{id}/onenote/pages/{id}
 DELETE /sites/{id}/onenote/pages/{id}
 ```
-## <a name="request-headers"></a><span data-ttu-id="e8f42-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="e8f42-117">Request headers</span></span>
-| <span data-ttu-id="e8f42-118">Имя</span><span class="sxs-lookup"><span data-stu-id="e8f42-118">Name</span></span>       | <span data-ttu-id="e8f42-119">Тип</span><span class="sxs-lookup"><span data-stu-id="e8f42-119">Type</span></span> | <span data-ttu-id="e8f42-120">Описание</span><span class="sxs-lookup"><span data-stu-id="e8f42-120">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="b6118-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="b6118-117">Request headers</span></span>
+| <span data-ttu-id="b6118-118">Имя</span><span class="sxs-lookup"><span data-stu-id="b6118-118">Name</span></span>       | <span data-ttu-id="b6118-119">Тип</span><span class="sxs-lookup"><span data-stu-id="b6118-119">Type</span></span> | <span data-ttu-id="b6118-120">Описание</span><span class="sxs-lookup"><span data-stu-id="b6118-120">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="e8f42-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="e8f42-121">Authorization</span></span>  | <span data-ttu-id="e8f42-122">string</span><span class="sxs-lookup"><span data-stu-id="e8f42-122">string</span></span>  | <span data-ttu-id="e8f42-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="e8f42-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="b6118-121">Authorization</span><span class="sxs-lookup"><span data-stu-id="b6118-121">Authorization</span></span>  | <span data-ttu-id="b6118-122">string</span><span class="sxs-lookup"><span data-stu-id="b6118-122">string</span></span>  | <span data-ttu-id="b6118-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="b6118-p102">Bearer {token}. Required.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="e8f42-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="e8f42-125">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b6118-125">Отклик</span><span class="sxs-lookup"><span data-stu-id="b6118-125">Response</span></span>
 
-<span data-ttu-id="e8f42-p103">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="e8f42-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="b6118-p103">При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="b6118-p103">If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="e8f42-128">Пример</span><span class="sxs-lookup"><span data-stu-id="e8f42-128">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="e8f42-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="e8f42-129">Request</span></span>
-<span data-ttu-id="e8f42-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="e8f42-130">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="b6118-128">Пример</span><span class="sxs-lookup"><span data-stu-id="b6118-128">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="b6118-129">Запрос</span><span class="sxs-lookup"><span data-stu-id="b6118-129">Request</span></span>
+<span data-ttu-id="b6118-130">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="b6118-130">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "delete_page"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
+DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
 ```
-##### <a name="response"></a><span data-ttu-id="e8f42-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="e8f42-131">Response</span></span>
-<span data-ttu-id="e8f42-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="e8f42-132">Here is an example of the response.</span></span>
+##### <a name="response"></a><span data-ttu-id="b6118-131">Ответ</span><span class="sxs-lookup"><span data-stu-id="b6118-131">Response</span></span>
+<span data-ttu-id="b6118-132">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="b6118-132">Here is an example of the response.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -64,15 +62,10 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Delete page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/page-delete.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

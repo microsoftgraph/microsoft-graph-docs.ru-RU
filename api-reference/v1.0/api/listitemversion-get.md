@@ -1,31 +1,31 @@
 ---
-title: Получение ListItemVersion ресурсов
+title: Получение ресурса ListItemVersion
 description: В этой статье рассказывается, как получить метаданные для определенной версии ресурса ListItem.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 3e45cf260a9f526a7309c63791ed2cb6b8196e45
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972539"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32541397"
 ---
-# <a name="get-a-listitemversion-resource"></a><span data-ttu-id="edc09-103">Получение ListItemVersion ресурсов</span><span class="sxs-lookup"><span data-stu-id="edc09-103">Get a ListItemVersion resource</span></span>
+# <a name="get-a-listitemversion-resource"></a><span data-ttu-id="8633a-103">Получение ресурса ListItemVersion</span><span class="sxs-lookup"><span data-stu-id="8633a-103">Get a ListItemVersion resource</span></span>
 
-<span data-ttu-id="edc09-104">В этой статье рассказывается, как получить метаданные для определенной версии ресурса [ListItem](../resources/listitem.md).</span><span class="sxs-lookup"><span data-stu-id="edc09-104">Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).</span></span>
+<span data-ttu-id="8633a-104">В этой статье рассказывается, как получить метаданные для определенной версии ресурса [ListItem](../resources/listitem.md).</span><span class="sxs-lookup"><span data-stu-id="8633a-104">Retrieve the metadata for a specific version of a [ListItem](../resources/listitem.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="edc09-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="edc09-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8633a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8633a-105">Permissions</span></span>
 
-<span data-ttu-id="edc09-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="edc09-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="8633a-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8633a-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|            <span data-ttu-id="edc09-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="edc09-108">Permission type</span></span>             | <span data-ttu-id="edc09-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="edc09-109">Permissions (from least to most privileged)</span></span> |
+|            <span data-ttu-id="8633a-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8633a-108">Permission type</span></span>             | <span data-ttu-id="8633a-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8633a-109">Permissions (from least to most privileged)</span></span> |
 | :------------------------------------- | :------------------------------------------ |
-| <span data-ttu-id="edc09-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="edc09-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="edc09-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edc09-111">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
-| <span data-ttu-id="edc09-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="edc09-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="edc09-113">Н/д</span><span class="sxs-lookup"><span data-stu-id="edc09-113">n/a</span></span>                                         |
-| <span data-ttu-id="edc09-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="edc09-114">Application</span></span>                            | <span data-ttu-id="edc09-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="edc09-115">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="8633a-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8633a-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="8633a-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8633a-111">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
+| <span data-ttu-id="8633a-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8633a-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8633a-113">Н/д</span><span class="sxs-lookup"><span data-stu-id="8633a-113">n/a</span></span>                                         |
+| <span data-ttu-id="8633a-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8633a-114">Application</span></span>                            | <span data-ttu-id="8633a-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8633a-115">Sites.Read.All, Sites.ReadWrite.All</span></span>         |
 
 
-## <a name="http-request"></a><span data-ttu-id="edc09-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="edc09-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8633a-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8633a-116">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -35,16 +35,16 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 ```
 
 
-## <a name="response"></a><span data-ttu-id="edc09-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="edc09-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8633a-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="8633a-117">Response</span></span>
 
-<span data-ttu-id="edc09-118">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="edc09-118">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.</span></span>
+<span data-ttu-id="8633a-118">При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [ListItemVersion](../resources/listitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="8633a-118">If successful, this method returns a `200 OK` response code and a [ListItemVersion](../resources/listitemversion.md) object in the response body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="edc09-119">Пример</span><span class="sxs-lookup"><span data-stu-id="edc09-119">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8633a-119">Пример</span><span class="sxs-lookup"><span data-stu-id="8633a-119">Example</span></span>
 
-<span data-ttu-id="edc09-120">В этом примере показано, как получить версию объекта listItem и расширить коллекцию полей для запроса значений полей в объекте listItem.</span><span class="sxs-lookup"><span data-stu-id="edc09-120">This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.</span></span>
+<span data-ttu-id="8633a-120">В этом примере показано, как получить версию объекта listItem и расширить коллекцию полей для запроса значений полей в объекте listItem.</span><span class="sxs-lookup"><span data-stu-id="8633a-120">This example retrieves a version of a listItem and expands the fields collection to request the values of fields in the listItem.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="edc09-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="edc09-121">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="8633a-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8633a-121">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-single-version-listItem", "scopes": "files.read sites.read.all", "tags": "service.graph service.sharepoint" } -->
 
@@ -52,9 +52,9 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}
 GET /sites/{site-id}/lists/{list-id}/items/{item-id}/versions/{version-id}?expand=fields
 ```
 
-### <a name="response"></a><span data-ttu-id="edc09-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="edc09-122">Response</span></span>
+### <a name="response"></a><span data-ttu-id="8633a-122">Отклик</span><span class="sxs-lookup"><span data-stu-id="8633a-122">Response</span></span>
 
-<span data-ttu-id="edc09-123">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="edc09-123">This returns a collection of versions:</span></span>
+<span data-ttu-id="8633a-123">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="8633a-123">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItemVersion", "truncated": true } -->
 

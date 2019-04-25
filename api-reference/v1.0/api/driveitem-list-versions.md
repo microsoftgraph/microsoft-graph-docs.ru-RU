@@ -1,34 +1,34 @@
 ---
-title: Список версий DriveItem
+title: ПереЧисление версий объекта DriveItem
 description: OneDrive и SharePoint можно настроить на хранение журнала для файлов.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: fa25734967aca0ad5c7022f147ca243530f1ac3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932065"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548114"
 ---
-# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="a765a-103">Список версий DriveItem</span><span class="sxs-lookup"><span data-stu-id="a765a-103">Listing versions of a DriveItem</span></span>
+# <a name="listing-versions-of-a-driveitem"></a><span data-ttu-id="a050c-103">ПереЧисление версий объекта DriveItem</span><span class="sxs-lookup"><span data-stu-id="a050c-103">Listing versions of a DriveItem</span></span>
 
-<span data-ttu-id="a765a-104">OneDrive и SharePoint можно настроить на хранение журнала для файлов.</span><span class="sxs-lookup"><span data-stu-id="a765a-104">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
-<span data-ttu-id="a765a-105">В зависимости от того, каковы служба и конфигурация, новую версию можно создавать при каждом изменении или сохранении, создавать вручную или не создавать никогда.</span><span class="sxs-lookup"><span data-stu-id="a765a-105">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
+<span data-ttu-id="a050c-104">OneDrive и SharePoint можно настроить на хранение журнала для файлов.</span><span class="sxs-lookup"><span data-stu-id="a050c-104">OneDrive and SharePoint can be configured to retain the history for files.</span></span>
+<span data-ttu-id="a050c-105">В зависимости от того, каковы служба и конфигурация, новую версию можно создавать при каждом изменении или сохранении, создавать вручную или не создавать никогда.</span><span class="sxs-lookup"><span data-stu-id="a050c-105">Depending on the service and configuration, a new version can be created for each edit, each time the file is saved, manually, or never.</span></span>
 
-<span data-ttu-id="a765a-106">Предыдущие версии документа могут храниться в течение ограниченного времени в зависимости от того, каковы параметры администратора, которые могут быть уникальными для каждого пользователя или расположения.</span><span class="sxs-lookup"><span data-stu-id="a765a-106">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
+<span data-ttu-id="a050c-106">Предыдущие версии документа могут храниться в течение ограниченного времени в зависимости от того, каковы параметры администратора, которые могут быть уникальными для каждого пользователя или расположения.</span><span class="sxs-lookup"><span data-stu-id="a050c-106">Previous versions of a document may be retained for a finite period of time depending on admin settings which may be unique per user or location.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="a765a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a765a-107">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="a050c-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a050c-107">Permissions</span></span>
 
-<span data-ttu-id="a765a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a765a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a050c-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a050c-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="a765a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a765a-110">Permission type</span></span>      | <span data-ttu-id="a765a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a765a-111">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a050c-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a050c-110">Permission type</span></span>      | <span data-ttu-id="a050c-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a050c-111">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a765a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a765a-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a765a-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a765a-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a765a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a765a-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a765a-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a765a-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a765a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a765a-116">Application</span></span> | <span data-ttu-id="a765a-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a765a-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="a050c-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a050c-112">Delegated (work or school account)</span></span> | <span data-ttu-id="a050c-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a050c-113">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a050c-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a050c-114">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a050c-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a050c-115">Files.Read, Files.ReadWrite, Files.Read.All, Files.ReadWrite.All</span></span>    |
+|<span data-ttu-id="a050c-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a050c-116">Application</span></span> | <span data-ttu-id="a050c-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a050c-117">Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
 
-## <a name="http-request"></a><span data-ttu-id="a765a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a765a-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a050c-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a050c-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored"} -->
 
@@ -40,16 +40,16 @@ GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
 ```
 
-## <a name="response"></a><span data-ttu-id="a765a-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="a765a-119">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a050c-119">Отклик</span><span class="sxs-lookup"><span data-stu-id="a050c-119">Response</span></span>
 
-<span data-ttu-id="a765a-120">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [DriveItemVersion](../resources/driveitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a765a-120">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
+<span data-ttu-id="a050c-120">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [DriveItemVersion](../resources/driveitemversion.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a050c-120">If successful, this method returns a `200 OK` response code and collection of [DriveItemVersion](../resources/driveitemversion.md) objects in the response body.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="a765a-121">Пример</span><span class="sxs-lookup"><span data-stu-id="a765a-121">Example</span></span>
+## <a name="example"></a><span data-ttu-id="a050c-121">Пример</span><span class="sxs-lookup"><span data-stu-id="a050c-121">Example</span></span>
 
-<span data-ttu-id="a765a-122">В этом примере показано, как получить версии файла для объекта Drive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="a765a-122">This example retrieves the versions of a file in the current user's drive.</span></span>
+<span data-ttu-id="a050c-122">В этом примере показано, как получить версии файла для объекта Drive текущего пользователя.</span><span class="sxs-lookup"><span data-stu-id="a050c-122">This example retrieves the versions of a file in the current user's drive.</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="a765a-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a765a-123">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="a050c-123">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a050c-123">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "get-previous-versions", "scopes": "files.read", "tags": "service.graph" } -->
 
@@ -57,9 +57,9 @@ GET /users/{user-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 ```
 
-### <a name="response"></a><span data-ttu-id="a765a-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="a765a-124">Response</span></span>
+### <a name="response"></a><span data-ttu-id="a050c-124">Отклик</span><span class="sxs-lookup"><span data-stu-id="a050c-124">Response</span></span>
 
-<span data-ttu-id="a765a-125">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="a765a-125">This returns a collection of versions:</span></span>
+<span data-ttu-id="a050c-125">Возвращается коллекция версий:</span><span class="sxs-lookup"><span data-stu-id="a050c-125">This returns a collection of versions:</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.driveItemVersion)", "truncated": true } -->
 
@@ -107,11 +107,11 @@ Content-Type: application/json
 }
 ```
 
-## <a name="remarks"></a><span data-ttu-id="a765a-126">Замечания</span><span class="sxs-lookup"><span data-stu-id="a765a-126">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="a050c-126">Замечания</span><span class="sxs-lookup"><span data-stu-id="a050c-126">Remarks</span></span>
 
-<span data-ttu-id="a765a-127">OneDrive не сохраняет полные метаданные для предыдущих версий файла.</span><span class="sxs-lookup"><span data-stu-id="a765a-127">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
+<span data-ttu-id="a050c-127">OneDrive не сохраняет полные метаданные для предыдущих версий файла.</span><span class="sxs-lookup"><span data-stu-id="a050c-127">OneDrive does not preserve the complete metadata for previous versions of a file.</span></span>
 
-<span data-ttu-id="a765a-128">Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.</span><span class="sxs-lookup"><span data-stu-id="a765a-128">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
+<span data-ttu-id="a050c-128">Когда ваше приложение получает список доступных версий для файла, возвращается ресурс [DriveItemVersion](../resources/driveitemversion.md), в котором представлены доступные сведения об определенной версии.</span><span class="sxs-lookup"><span data-stu-id="a050c-128">When your app retrieves the list of available versions for a file, a [DriveItemVersion](../resources/driveitemversion.md) resource is returned that provides the available information about the specific version.</span></span>
 
 
 <!-- {

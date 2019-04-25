@@ -5,32 +5,32 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5e0b03eeea8c0e9d22a9f7279c821f6d90211470
-ms.sourcegitcommit: 3410e1b8dcf62a7b0e4d6b11920912479f21feb2
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30801041"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32542848"
 ---
-# <a name="educationformresource-resource-type"></a><span data-ttu-id="74756-104">Тип ресурса Едукатионформресаурце</span><span class="sxs-lookup"><span data-stu-id="74756-104">educationFormResource resource type</span></span>
+# <a name="educationformresource-resource-type"></a><span data-ttu-id="97854-104">Тип ресурса Едукатионформресаурце</span><span class="sxs-lookup"><span data-stu-id="97854-104">educationFormResource resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="74756-105">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="74756-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="74756-106">Этот ресурс является формой.</span><span class="sxs-lookup"><span data-stu-id="74756-106">This resource is a form.</span></span>
+<span data-ttu-id="97854-105">Подкласс объекта [едукатионресаурце](educationresource.md).</span><span class="sxs-lookup"><span data-stu-id="97854-105">A subclass of [educationResource](educationresource.md).</span></span> <span data-ttu-id="97854-106">Этот ресурс является формой.</span><span class="sxs-lookup"><span data-stu-id="97854-106">This resource is a form.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="74756-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="74756-107">Properties</span></span>
-| <span data-ttu-id="74756-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="74756-108">Property</span></span>     | <span data-ttu-id="74756-109">Тип</span><span class="sxs-lookup"><span data-stu-id="74756-109">Type</span></span>   |<span data-ttu-id="74756-110">Описание</span><span class="sxs-lookup"><span data-stu-id="74756-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="97854-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="97854-107">Properties</span></span>
+| <span data-ttu-id="97854-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="97854-108">Property</span></span>     | <span data-ttu-id="97854-109">Тип</span><span class="sxs-lookup"><span data-stu-id="97854-109">Type</span></span>   |<span data-ttu-id="97854-110">Описание</span><span class="sxs-lookup"><span data-stu-id="97854-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="74756-111">Оригиналформид</span><span class="sxs-lookup"><span data-stu-id="74756-111">originalFormId</span></span>|<span data-ttu-id="74756-112">String</span><span class="sxs-lookup"><span data-stu-id="74756-112">String</span></span>|<span data-ttu-id="74756-113">Исходный идентификатор формы.</span><span class="sxs-lookup"><span data-stu-id="74756-113">Original id of the Form.</span></span>|
-|<span data-ttu-id="74756-114">Формид</span><span class="sxs-lookup"><span data-stu-id="74756-114">formId</span></span>|<span data-ttu-id="74756-115">String</span><span class="sxs-lookup"><span data-stu-id="74756-115">String</span></span>|<span data-ttu-id="74756-116">Идентификатор формы.</span><span class="sxs-lookup"><span data-stu-id="74756-116">Id of the Form.</span></span>|
-|<span data-ttu-id="74756-117">Исграупформ</span><span class="sxs-lookup"><span data-stu-id="74756-117">isGroupForm</span></span>|<span data-ttu-id="74756-118">Boolean</span><span class="sxs-lookup"><span data-stu-id="74756-118">Boolean</span></span>|<span data-ttu-id="74756-119">Принадлежность формы группе классов.</span><span class="sxs-lookup"><span data-stu-id="74756-119">Whether the Form belongs to a class group.</span></span>|
-|<span data-ttu-id="74756-120">Виевурл</span><span class="sxs-lookup"><span data-stu-id="74756-120">viewUrl</span></span>|<span data-ttu-id="74756-121">String</span><span class="sxs-lookup"><span data-stu-id="74756-121">String</span></span>|<span data-ttu-id="74756-122">URL-адрес студента для формы.</span><span class="sxs-lookup"><span data-stu-id="74756-122">Student URL for the Form.</span></span>|
-|<span data-ttu-id="74756-123">Виевурл</span><span class="sxs-lookup"><span data-stu-id="74756-123">viewUrl</span></span>|<span data-ttu-id="74756-124">String</span><span class="sxs-lookup"><span data-stu-id="74756-124">String</span></span>|<span data-ttu-id="74756-125">URL-адрес студента для формы.</span><span class="sxs-lookup"><span data-stu-id="74756-125">Student URL for the Form.</span></span>|
-|<span data-ttu-id="74756-126">Едитурл</span><span class="sxs-lookup"><span data-stu-id="74756-126">editUrl</span></span>|<span data-ttu-id="74756-127">String</span><span class="sxs-lookup"><span data-stu-id="74756-127">String</span></span>|<span data-ttu-id="74756-128">URL-адрес преподавателя для формы.</span><span class="sxs-lookup"><span data-stu-id="74756-128">Teacher URL for the Form.</span></span>|
+|<span data-ttu-id="97854-111">Оригиналформид</span><span class="sxs-lookup"><span data-stu-id="97854-111">originalFormId</span></span>|<span data-ttu-id="97854-112">String</span><span class="sxs-lookup"><span data-stu-id="97854-112">String</span></span>|<span data-ttu-id="97854-113">Исходный идентификатор формы.</span><span class="sxs-lookup"><span data-stu-id="97854-113">Original id of the Form.</span></span>|
+|<span data-ttu-id="97854-114">Формид</span><span class="sxs-lookup"><span data-stu-id="97854-114">formId</span></span>|<span data-ttu-id="97854-115">String</span><span class="sxs-lookup"><span data-stu-id="97854-115">String</span></span>|<span data-ttu-id="97854-116">Идентификатор формы.</span><span class="sxs-lookup"><span data-stu-id="97854-116">Id of the Form.</span></span>|
+|<span data-ttu-id="97854-117">Исграупформ</span><span class="sxs-lookup"><span data-stu-id="97854-117">isGroupForm</span></span>|<span data-ttu-id="97854-118">Логический</span><span class="sxs-lookup"><span data-stu-id="97854-118">Boolean</span></span>|<span data-ttu-id="97854-119">Принадлежность формы группе классов.</span><span class="sxs-lookup"><span data-stu-id="97854-119">Whether the Form belongs to a class group.</span></span>|
+|<span data-ttu-id="97854-120">Виевурл</span><span class="sxs-lookup"><span data-stu-id="97854-120">viewUrl</span></span>|<span data-ttu-id="97854-121">String</span><span class="sxs-lookup"><span data-stu-id="97854-121">String</span></span>|<span data-ttu-id="97854-122">URL-адрес студента для формы.</span><span class="sxs-lookup"><span data-stu-id="97854-122">Student URL for the Form.</span></span>|
+|<span data-ttu-id="97854-123">Виевурл</span><span class="sxs-lookup"><span data-stu-id="97854-123">viewUrl</span></span>|<span data-ttu-id="97854-124">String</span><span class="sxs-lookup"><span data-stu-id="97854-124">String</span></span>|<span data-ttu-id="97854-125">URL-адрес студента для формы.</span><span class="sxs-lookup"><span data-stu-id="97854-125">Student URL for the Form.</span></span>|
+|<span data-ttu-id="97854-126">Едитурл</span><span class="sxs-lookup"><span data-stu-id="97854-126">editUrl</span></span>|<span data-ttu-id="97854-127">String</span><span class="sxs-lookup"><span data-stu-id="97854-127">String</span></span>|<span data-ttu-id="97854-128">URL-адрес преподавателя для формы.</span><span class="sxs-lookup"><span data-stu-id="97854-128">Teacher URL for the Form.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="74756-129">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="74756-129">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="97854-129">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="97854-129">JSON representation</span></span>
 
-<span data-ttu-id="74756-130">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="74756-130">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="97854-130">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="97854-130">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

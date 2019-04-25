@@ -1,28 +1,28 @@
 ---
-title: " Тип ресурса controlScore"
-description: Этот ресурс содержит счета клиента и описание для отдельного элемента управления.
+title: " Тип ресурса Контролскоре"
+description: Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.
 localization_priority: Normal
 ms.openlocfilehash: d8c2d73205f00a9dd5f2f28fcee3c33778bb3276
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27891471"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543380"
 ---
-#  <a name="controlscore-resource-type"></a><span data-ttu-id="52f32-103">Тип ресурса controlScore</span><span class="sxs-lookup"><span data-stu-id="52f32-103">controlScore resource type</span></span>
+#  <a name="controlscore-resource-type"></a><span data-ttu-id="61c55-103">Тип ресурса Контролскоре</span><span class="sxs-lookup"><span data-stu-id="61c55-103">controlScore resource type</span></span>
 
-<span data-ttu-id="52f32-104">Этот ресурс содержит счета клиента и описание для отдельного элемента управления.</span><span class="sxs-lookup"><span data-stu-id="52f32-104">This resource contains a tenant score and description for an individual control.</span></span>
+<span data-ttu-id="61c55-104">Этот ресурс содержит оценку и описание клиента для отдельного элемента управления.</span><span class="sxs-lookup"><span data-stu-id="61c55-104">This resource contains a tenant score and description for an individual control.</span></span>
 
-|<span data-ttu-id="52f32-105">Имя</span><span class="sxs-lookup"><span data-stu-id="52f32-105">Name</span></span> |<span data-ttu-id="52f32-106">Тип</span><span class="sxs-lookup"><span data-stu-id="52f32-106">Type</span></span> |<span data-ttu-id="52f32-107">Описание</span><span class="sxs-lookup"><span data-stu-id="52f32-107">Description</span></span> |
+|<span data-ttu-id="61c55-105">Имя</span><span class="sxs-lookup"><span data-stu-id="61c55-105">Name</span></span> |<span data-ttu-id="61c55-106">Тип</span><span class="sxs-lookup"><span data-stu-id="61c55-106">Type</span></span> |<span data-ttu-id="61c55-107">Описание</span><span class="sxs-lookup"><span data-stu-id="61c55-107">Description</span></span> |
 |:--|:--|:--|
-|   <span data-ttu-id="52f32-108">ИмяЭлементаУправления</span><span class="sxs-lookup"><span data-stu-id="52f32-108">controlName</span></span> |   <span data-ttu-id="52f32-109">Строка</span><span class="sxs-lookup"><span data-stu-id="52f32-109">String</span></span>  |   <span data-ttu-id="52f32-110">Уникальное имя элемента управления</span><span class="sxs-lookup"><span data-stu-id="52f32-110">Control unique name</span></span> |
-|   <span data-ttu-id="52f32-111">score</span><span class="sxs-lookup"><span data-stu-id="52f32-111">score</span></span>   |   <span data-ttu-id="52f32-112">Double</span><span class="sxs-lookup"><span data-stu-id="52f32-112">Double</span></span>  |  <span data-ttu-id="52f32-113">Клиент достичь счета для элемента управления (он зависит от дня операций клиента в элементе управления).</span><span class="sxs-lookup"><span data-stu-id="52f32-113">Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).</span></span> |
-|   <span data-ttu-id="52f32-114">controlCategory</span><span class="sxs-lookup"><span data-stu-id="52f32-114">controlCategory</span></span> |   <span data-ttu-id="52f32-115">Строка</span><span class="sxs-lookup"><span data-stu-id="52f32-115">String</span></span>  |  <span data-ttu-id="52f32-116">Категория действие элемента управления (удостоверения, данные, устройства, приложения, инфраструктуры).</span><span class="sxs-lookup"><span data-stu-id="52f32-116">Control action category (Identity, Data, Device, Apps, Infrastructure).</span></span> |
-|   <span data-ttu-id="52f32-117">описание</span><span class="sxs-lookup"><span data-stu-id="52f32-117">description</span></span> |   <span data-ttu-id="52f32-118">Строка</span><span class="sxs-lookup"><span data-stu-id="52f32-118">String</span></span>  |  <span data-ttu-id="52f32-119">Описание элемента управления.</span><span class="sxs-lookup"><span data-stu-id="52f32-119">Description of the control.</span></span> |
+|   <span data-ttu-id="61c55-108">Контролнаме</span><span class="sxs-lookup"><span data-stu-id="61c55-108">controlName</span></span> |   <span data-ttu-id="61c55-109">String</span><span class="sxs-lookup"><span data-stu-id="61c55-109">String</span></span>  |   <span data-ttu-id="61c55-110">Уникальное имя элемента управления</span><span class="sxs-lookup"><span data-stu-id="61c55-110">Control unique name</span></span> |
+|   <span data-ttu-id="61c55-111">score</span><span class="sxs-lookup"><span data-stu-id="61c55-111">score</span></span>   |   <span data-ttu-id="61c55-112">Двойное</span><span class="sxs-lookup"><span data-stu-id="61c55-112">Double</span></span>  |  <span data-ttu-id="61c55-113">Оценка, полученная клиентом для элемента управления (она варьируется по дням, в зависимости от операций клиента в элементе управления).</span><span class="sxs-lookup"><span data-stu-id="61c55-113">Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).</span></span> |
+|   <span data-ttu-id="61c55-114">Контролкатегори</span><span class="sxs-lookup"><span data-stu-id="61c55-114">controlCategory</span></span> |   <span data-ttu-id="61c55-115">String</span><span class="sxs-lookup"><span data-stu-id="61c55-115">String</span></span>  |  <span data-ttu-id="61c55-116">Категория действий управления (идентификация, данные, устройство, приложения, инфраструктура).</span><span class="sxs-lookup"><span data-stu-id="61c55-116">Control action category (Identity, Data, Device, Apps, Infrastructure).</span></span> |
+|   <span data-ttu-id="61c55-117">description</span><span class="sxs-lookup"><span data-stu-id="61c55-117">description</span></span> |   <span data-ttu-id="61c55-118">String</span><span class="sxs-lookup"><span data-stu-id="61c55-118">String</span></span>  |  <span data-ttu-id="61c55-119">Описание элемента управления.</span><span class="sxs-lookup"><span data-stu-id="61c55-119">Description of the control.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="52f32-120">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="52f32-120">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="61c55-120">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="61c55-120">JSON representation</span></span>
 
-<span data-ttu-id="52f32-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="52f32-121">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="61c55-121">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="61c55-121">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

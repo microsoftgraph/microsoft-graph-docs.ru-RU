@@ -3,29 +3,47 @@ title: Тип ресурса Чатмессажементион
 description: 'Представляет упоминание в объекте chatMessage. Упоминание может быть у пользователя, группы, ленты или канала. '
 localization_priority: Normal
 author: nkramer
-ms.openlocfilehash: 5d7304325e48c87bfd75b57bf49585f66a77b262
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.prod: microsoft-teams
+ms.openlocfilehash: 7dc2948821bee244e3ccde6e134a7ac2a201ad63
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889998"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32543688"
 ---
-# <a name="chatmessagemention-resource-type"></a><span data-ttu-id="9dc5f-104">Тип ресурса Чатмессажементион</span><span class="sxs-lookup"><span data-stu-id="9dc5f-104">chatMessageMention resource type</span></span>
+# <a name="chatmessagemention-resource-type"></a><span data-ttu-id="57c33-104">Тип ресурса Чатмессажементион</span><span class="sxs-lookup"><span data-stu-id="57c33-104">chatMessageMention resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="9dc5f-105">Представляет упоминание в объекте [chatMessage](chatmessage.md) .</span><span class="sxs-lookup"><span data-stu-id="9dc5f-105">Represents a mention in a [chatMessage](chatmessage.md) entity.</span></span> <span data-ttu-id="9dc5f-106">Упоминание может быть у пользователя, группы, ленты или канала.</span><span class="sxs-lookup"><span data-stu-id="9dc5f-106">The mention can be to a user, team, bot, or channel.</span></span> 
+<span data-ttu-id="57c33-105">Представляет упоминание в объекте [chatMessage](chatmessage.md) .</span><span class="sxs-lookup"><span data-stu-id="57c33-105">Represents a mention in a [chatMessage](chatmessage.md) entity.</span></span> <span data-ttu-id="57c33-106">Упоминание может быть у [пользователя](user.md), [группы](team.md), ленты или [канала](channel.md).</span><span class="sxs-lookup"><span data-stu-id="57c33-106">The mention can be to a [user](user.md), [team](team.md), bot, or [channel](channel.md).</span></span> 
 
-## <a name="properties"></a><span data-ttu-id="9dc5f-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="9dc5f-107">Properties</span></span>
-| <span data-ttu-id="9dc5f-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="9dc5f-108">Property</span></span>     | <span data-ttu-id="9dc5f-109">Тип</span><span class="sxs-lookup"><span data-stu-id="9dc5f-109">Type</span></span>   |<span data-ttu-id="9dc5f-110">Описание</span><span class="sxs-lookup"><span data-stu-id="9dc5f-110">Description</span></span>|
+<span data-ttu-id="57c33-107">В объекте **chatMessage** , содержащем одно или несколько упоминаний, свойство **Content** текста сообщения представляет сообщение чата в HTML.</span><span class="sxs-lookup"><span data-stu-id="57c33-107">In a **chatMessage** object that contains one or more mentions, the message body **content** property represents the chat message in HTML.</span></span> <span data-ttu-id="57c33-108">Он заключает **ментионтекст** каждого упоминания в элементе HTML `at` с `id` атрибутом, соответствующим свойству **ID** упомянутого упоминания.</span><span class="sxs-lookup"><span data-stu-id="57c33-108">It encloses the **mentionText** of each mention in an HTML `at` element, with an `id` attribute that corresponds to the **id** property of the mention.</span></span>
+
+<span data-ttu-id="57c33-109">Например, сообщение чата содержит два упомянутых элемента с текстом "Меган" и "Алекс" соответственно.</span><span class="sxs-lookup"><span data-stu-id="57c33-109">As an example, a chat message contains two mentions, with the mention text "Megan" and "Alex" respectively.</span></span> <span data-ttu-id="57c33-110">Его свойство \*\*\*\* Body свойства Content `at` определяет элементы для двух упомянутых ниже элементов.</span><span class="sxs-lookup"><span data-stu-id="57c33-110">Its body **content** property specifies `at` elements for the two mentions as follows:</span></span>
+
+``` json
+"body": {
+    "contentType": "html",
+    "content": "<div><div>Ah, <at id=\"0\">Megan</at>, <at id=\"1\">Alex</at>, I saw them in a separate folder. Thanks!</div>\n</div>"
+}
+```
+
+<span data-ttu-id="57c33-111">В свойстве **Content** первое упоминание имеет атрибут HTML `id` 0.</span><span class="sxs-lookup"><span data-stu-id="57c33-111">In the **content** property, the first mention has an HTML `id` attribute of 0.</span></span> <span data-ttu-id="57c33-112">Это соответствует свойству **ID** этого первого экземпляра **чатмессажементион**, которое также равно 0.</span><span class="sxs-lookup"><span data-stu-id="57c33-112">This corresponds to the **id** property of that first instance of **chatMessageMention**, which is also 0.</span></span>
+
+<span data-ttu-id="57c33-113">Второе упоминание имеет `id` атрибут 1, совпадающий со свойством **ID** второго экземпляра, который равен 1.</span><span class="sxs-lookup"><span data-stu-id="57c33-113">The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.</span></span>
+
+<span data-ttu-id="57c33-114">Полный контекст этого примера приведен в разделе [список ответов на сообщения канала](../api/channel-list-messagereplies.md#example).</span><span class="sxs-lookup"><span data-stu-id="57c33-114">For a fuller context of the example, see [List channel message replies](../api/channel-list-messagereplies.md#example).</span></span>
+
+## <a name="properties"></a><span data-ttu-id="57c33-115">Свойства</span><span class="sxs-lookup"><span data-stu-id="57c33-115">Properties</span></span>
+| <span data-ttu-id="57c33-116">Свойство</span><span class="sxs-lookup"><span data-stu-id="57c33-116">Property</span></span>     | <span data-ttu-id="57c33-117">Тип</span><span class="sxs-lookup"><span data-stu-id="57c33-117">Type</span></span>   |<span data-ttu-id="57c33-118">Описание</span><span class="sxs-lookup"><span data-stu-id="57c33-118">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="9dc5f-111">id</span><span class="sxs-lookup"><span data-stu-id="9dc5f-111">id</span></span>|<span data-ttu-id="9dc5f-112">int</span><span class="sxs-lookup"><span data-stu-id="9dc5f-112">int</span></span>|<span data-ttu-id="9dc5f-113">Индекс упоминаемого объекта.</span><span class="sxs-lookup"><span data-stu-id="9dc5f-113">Index of the entity being mentioned.</span></span> <span data-ttu-id="9dc5f-114">Соответствует <at id="index"> тегу основного текста сообщения.</span><span class="sxs-lookup"><span data-stu-id="9dc5f-114">Matches with the <at id="index"> tag of the message body.</span></span>|
-|<span data-ttu-id="9dc5f-115">Ментионтекст</span><span class="sxs-lookup"><span data-stu-id="9dc5f-115">mentionText</span></span>|<span data-ttu-id="9dc5f-116">string</span><span class="sxs-lookup"><span data-stu-id="9dc5f-116">string</span></span>|<span data-ttu-id="9dc5f-117">Строка, используемая для представления упоминания.</span><span class="sxs-lookup"><span data-stu-id="9dc5f-117">String used to represent the mention.</span></span> <span data-ttu-id="9dc5f-118">Например, отображаемое имя пользователя, имя группы.</span><span class="sxs-lookup"><span data-stu-id="9dc5f-118">For example, User display name, Team name.</span></span>|
-|<span data-ttu-id="9dc5f-119">котором</span><span class="sxs-lookup"><span data-stu-id="9dc5f-119">mentioned</span></span>|[<span data-ttu-id="9dc5f-120">identitySet</span><span class="sxs-lookup"><span data-stu-id="9dc5f-120">identitySet</span></span>](identityset.md)|<span data-ttu-id="9dc5f-121">Упоминаемая сущность (пользователь, приложение, группа или канал).</span><span class="sxs-lookup"><span data-stu-id="9dc5f-121">The entity (user, application, team, or channel) that was mentioned.</span></span>|
+|<span data-ttu-id="57c33-119">id</span><span class="sxs-lookup"><span data-stu-id="57c33-119">id</span></span>|<span data-ttu-id="57c33-120">Int32</span><span class="sxs-lookup"><span data-stu-id="57c33-120">Int32</span></span>|<span data-ttu-id="57c33-121">Индекс объекта, упоминаемого в заданном **chatMessage**.</span><span class="sxs-lookup"><span data-stu-id="57c33-121">Index of an entity being mentioned in the specified **chatMessage**.</span></span> <span data-ttu-id="57c33-122">Соответствует значению {index} в соответствующем `<at id="{index}">` теге в тексте сообщения.</span><span class="sxs-lookup"><span data-stu-id="57c33-122">Matches the {index} value in the corresponding `<at id="{index}">` tag in the message body.</span></span>|
+|<span data-ttu-id="57c33-123">Ментионтекст</span><span class="sxs-lookup"><span data-stu-id="57c33-123">mentionText</span></span>|<span data-ttu-id="57c33-124">string</span><span class="sxs-lookup"><span data-stu-id="57c33-124">string</span></span>|<span data-ttu-id="57c33-125">Строка, используемая для представления упоминания.</span><span class="sxs-lookup"><span data-stu-id="57c33-125">String used to represent the mention.</span></span> <span data-ttu-id="57c33-126">Например, отображаемое имя пользователя, имя группы.</span><span class="sxs-lookup"><span data-stu-id="57c33-126">For example, a user's display name, a team name.</span></span>|
+|<span data-ttu-id="57c33-127">котором</span><span class="sxs-lookup"><span data-stu-id="57c33-127">mentioned</span></span>|[<span data-ttu-id="57c33-128">identitySet</span><span class="sxs-lookup"><span data-stu-id="57c33-128">identitySet</span></span>](identityset.md)|<span data-ttu-id="57c33-129">Упоминаемая сущность (пользователь, приложение, группа или канал).</span><span class="sxs-lookup"><span data-stu-id="57c33-129">The entity (user, application, team, or channel) that was mentioned.</span></span>  <span data-ttu-id="57c33-130">Если это канал или группа, @mentioned, Identity содержит свойство **CONVERSATION** , предоставляющее идентификатор команды или канала, и свойство **конверсатионидентититипе** , которое представляет группу или канал.</span><span class="sxs-lookup"><span data-stu-id="57c33-130">If it was a channel or team that was @mentioned, the identitySet contains a **conversation** property giving the ID of the team/channel, and a **conversationIdentityType** property that represents either the team or channel.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="9dc5f-122">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="9dc5f-122">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="57c33-131">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="57c33-131">JSON representation</span></span>
 
-<span data-ttu-id="9dc5f-123">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="9dc5f-123">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="57c33-132">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="57c33-132">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -35,9 +53,9 @@ ms.locfileid: "31889998"
 
 ```json
 {
-  "id": "number",
+  "id": 1024,
   "mentionText": "string",
-  "mentioned": "microsoft.graph.identitySet"
+  "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
  }
 
 ```

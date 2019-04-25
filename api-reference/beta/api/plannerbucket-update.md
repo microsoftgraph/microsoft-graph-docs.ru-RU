@@ -5,55 +5,55 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: e85cdc1ffa1781420b5ef911147f25ef97a726dc
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32539001"
 ---
-# <a name="update-plannerbucket"></a><span data-ttu-id="561c0-103">Обновление объекта plannerbucket</span><span class="sxs-lookup"><span data-stu-id="561c0-103">Update plannerbucket</span></span>
+# <a name="update-plannerbucket"></a><span data-ttu-id="5790c-103">Обновление объекта plannerbucket</span><span class="sxs-lookup"><span data-stu-id="5790c-103">Update plannerbucket</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="561c0-104">Обновление свойств объекта **plannerbucket**.</span><span class="sxs-lookup"><span data-stu-id="561c0-104">Update the properties of **plannerbucket** object.</span></span>
-## <a name="permissions"></a><span data-ttu-id="561c0-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="561c0-105">Permissions</span></span>
-<span data-ttu-id="561c0-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="561c0-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="5790c-104">Обновление свойств объекта **plannerbucket**.</span><span class="sxs-lookup"><span data-stu-id="5790c-104">Update the properties of **plannerbucket** object.</span></span>
+## <a name="permissions"></a><span data-ttu-id="5790c-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="5790c-105">Permissions</span></span>
+<span data-ttu-id="5790c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="5790c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="561c0-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="561c0-108">Permission type</span></span>      | <span data-ttu-id="561c0-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="561c0-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="5790c-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="5790c-108">Permission type</span></span>      | <span data-ttu-id="5790c-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="5790c-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="561c0-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="561c0-110">Delegated (work or school account)</span></span> | <span data-ttu-id="561c0-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="561c0-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="561c0-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="561c0-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="561c0-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="561c0-113">Not supported.</span></span>    |
-|<span data-ttu-id="561c0-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="561c0-114">Application</span></span> | <span data-ttu-id="561c0-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="561c0-115">Not supported.</span></span> |
+|<span data-ttu-id="5790c-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="5790c-110">Delegated (work or school account)</span></span> | <span data-ttu-id="5790c-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="5790c-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="5790c-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="5790c-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="5790c-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5790c-113">Not supported.</span></span>    |
+|<span data-ttu-id="5790c-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="5790c-114">Application</span></span> | <span data-ttu-id="5790c-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="5790c-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="561c0-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="561c0-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="5790c-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="5790c-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 PATCH /planner/buckets/<id>
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="561c0-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="561c0-117">Optional request headers</span></span>
-| <span data-ttu-id="561c0-118">Имя</span><span class="sxs-lookup"><span data-stu-id="561c0-118">Name</span></span>       | <span data-ttu-id="561c0-119">Описание</span><span class="sxs-lookup"><span data-stu-id="561c0-119">Description</span></span>|
+## <a name="optional-request-headers"></a><span data-ttu-id="5790c-117">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="5790c-117">Optional request headers</span></span>
+| <span data-ttu-id="5790c-118">Имя</span><span class="sxs-lookup"><span data-stu-id="5790c-118">Name</span></span>       | <span data-ttu-id="5790c-119">Описание</span><span class="sxs-lookup"><span data-stu-id="5790c-119">Description</span></span>|
 |:-----------|:-----------|
-| <span data-ttu-id="561c0-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="561c0-120">Authorization</span></span>  | <span data-ttu-id="561c0-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="561c0-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="561c0-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="561c0-123">If-Match</span></span>  | <span data-ttu-id="561c0-p103">Последнее известное значение ETag обновляемого объекта **plannerBucket**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="561c0-p103">Last known ETag value for the **plannerBucket** to be updated. Required.</span></span>|
+| <span data-ttu-id="5790c-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="5790c-120">Authorization</span></span>  | <span data-ttu-id="5790c-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5790c-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="5790c-123">If-Match</span><span class="sxs-lookup"><span data-stu-id="5790c-123">If-Match</span></span>  | <span data-ttu-id="5790c-p103">Последнее известное значение ETag обновляемого объекта **plannerBucket**. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="5790c-p103">Last known ETag value for the **plannerBucket** to be updated. Required.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="561c0-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="561c0-126">Request body</span></span>
-<span data-ttu-id="561c0-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="561c0-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
+## <a name="request-body"></a><span data-ttu-id="5790c-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="5790c-126">Request body</span></span>
+<span data-ttu-id="5790c-p104">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.</span><span class="sxs-lookup"><span data-stu-id="5790c-p104">In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance you shouldn't include existing values that haven't changed.</span></span>
 
-| <span data-ttu-id="561c0-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="561c0-130">Property</span></span>     | <span data-ttu-id="561c0-131">Тип</span><span class="sxs-lookup"><span data-stu-id="561c0-131">Type</span></span>   |<span data-ttu-id="561c0-132">Описание</span><span class="sxs-lookup"><span data-stu-id="561c0-132">Description</span></span>|
+| <span data-ttu-id="5790c-130">Свойство</span><span class="sxs-lookup"><span data-stu-id="5790c-130">Property</span></span>     | <span data-ttu-id="5790c-131">Тип</span><span class="sxs-lookup"><span data-stu-id="5790c-131">Type</span></span>   |<span data-ttu-id="5790c-132">Описание</span><span class="sxs-lookup"><span data-stu-id="5790c-132">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="561c0-133">name</span><span class="sxs-lookup"><span data-stu-id="561c0-133">name</span></span>|<span data-ttu-id="561c0-134">String</span><span class="sxs-lookup"><span data-stu-id="561c0-134">String</span></span>|<span data-ttu-id="561c0-135">Имя сегмента.</span><span class="sxs-lookup"><span data-stu-id="561c0-135">Name of the bucket.</span></span>|
-|<span data-ttu-id="561c0-136">orderHint</span><span class="sxs-lookup"><span data-stu-id="561c0-136">orderHint</span></span>|<span data-ttu-id="561c0-137">String</span><span class="sxs-lookup"><span data-stu-id="561c0-137">String</span></span>|<span data-ttu-id="561c0-p105">Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="561c0-p105">Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
-|<span data-ttu-id="561c0-140">planId</span><span class="sxs-lookup"><span data-stu-id="561c0-140">planId</span></span>|<span data-ttu-id="561c0-141">Строка</span><span class="sxs-lookup"><span data-stu-id="561c0-141">String</span></span>|<span data-ttu-id="561c0-142">Идентификатор плана, к которому относится сегмент.</span><span class="sxs-lookup"><span data-stu-id="561c0-142">Plan id to which the bucket belongs.</span></span>|
+|<span data-ttu-id="5790c-133">name</span><span class="sxs-lookup"><span data-stu-id="5790c-133">name</span></span>|<span data-ttu-id="5790c-134">String</span><span class="sxs-lookup"><span data-stu-id="5790c-134">String</span></span>|<span data-ttu-id="5790c-135">Имя сегмента.</span><span class="sxs-lookup"><span data-stu-id="5790c-135">Name of the bucket.</span></span>|
+|<span data-ttu-id="5790c-136">orderHint</span><span class="sxs-lookup"><span data-stu-id="5790c-136">orderHint</span></span>|<span data-ttu-id="5790c-137">String</span><span class="sxs-lookup"><span data-stu-id="5790c-137">String</span></span>|<span data-ttu-id="5790c-p105">Указание, используемое для упорядочивания элементов этого типа в списке. Формат определен в статье [Использование указаний order в Планировщике](../resources/planner-order-hint-format.md).</span><span class="sxs-lookup"><span data-stu-id="5790c-p105">Hint used to order items of this type in a list view. The format is defined in [Using order hints in Planner](../resources/planner-order-hint-format.md).</span></span>|
+|<span data-ttu-id="5790c-140">planId</span><span class="sxs-lookup"><span data-stu-id="5790c-140">planId</span></span>|<span data-ttu-id="5790c-141">String</span><span class="sxs-lookup"><span data-stu-id="5790c-141">String</span></span>|<span data-ttu-id="5790c-142">Идентификатор плана, к которому относится сегмент.</span><span class="sxs-lookup"><span data-stu-id="5790c-142">Plan id to which the bucket belongs.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="561c0-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="561c0-143">Response</span></span>
+## <a name="response"></a><span data-ttu-id="5790c-143">Ответ</span><span class="sxs-lookup"><span data-stu-id="5790c-143">Response</span></span>
 
-<span data-ttu-id="561c0-144">В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerBucket](../resources/plannerbucket.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="561c0-144">If successful, this method returns a `200 OK` response code and updated [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
+<span data-ttu-id="5790c-144">В случае успеха этот метод возвращает код ответа `200 OK` и обновленный объект [plannerBucket](../resources/plannerbucket.md) в тексте ответа.</span><span class="sxs-lookup"><span data-stu-id="5790c-144">If successful, this method returns a `200 OK` response code and updated [plannerBucket](../resources/plannerbucket.md) object in the response body.</span></span>
 
-<span data-ttu-id="561c0-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="561c0-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
+<span data-ttu-id="5790c-p106">Этот метод может возвращать любые [коды состояния HTTP](/graph/errors). Приложения должны обрабатывать ошибки 400, 403, 404, 409 и 412, которые возникают чаще всего. Дополнительные сведения об этих ошибках см. в разделе [Основные ошибки Планировщика](../resources/planner-overview.md#common-planner-error-conditions).</span><span class="sxs-lookup"><span data-stu-id="5790c-p106">This method can return any of the [HTTP status codes](/graph/errors). The most common errors that apps should handle for this method are the 400, 403, 404, 409, and 412 responses. For more information about these errors, see [Common Planner error conditions](../resources/planner-overview.md#common-planner-error-conditions).</span></span>
 
-## <a name="example"></a><span data-ttu-id="561c0-148">Пример</span><span class="sxs-lookup"><span data-stu-id="561c0-148">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="561c0-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="561c0-149">Request</span></span>
-<span data-ttu-id="561c0-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="561c0-150">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="5790c-148">Пример</span><span class="sxs-lookup"><span data-stu-id="5790c-148">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="5790c-149">Запрос</span><span class="sxs-lookup"><span data-stu-id="5790c-149">Request</span></span>
+<span data-ttu-id="5790c-150">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="5790c-150">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_plannerbucket"
@@ -68,9 +68,8 @@ If-Match: W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
   "name": "Development"
 }
 ```
-##### <a name="response"></a><span data-ttu-id="561c0-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="561c0-151">Response</span></span>
-<span data-ttu-id="561c0-p107">Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-</span><span class="sxs-lookup"><span data-stu-id="561c0-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="5790c-151">Отклик</span><span class="sxs-lookup"><span data-stu-id="5790c-151">Response</span></span>
+<span data-ttu-id="5790c-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="5790c-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,

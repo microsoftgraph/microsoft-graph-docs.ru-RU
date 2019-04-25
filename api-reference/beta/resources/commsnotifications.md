@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса commsNotifications
-description: Список уведомлений, используемого серверами коммуникаций для отправки нескольких уведомлений в одном пакете.
+title: Тип ресурса Коммснотификатионс
+description: Список уведомлений, используемых серверами Communications Server для отправки нескольких уведомлений в один пакет.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 2d002b74bffe0911e2ba1fef4eed324b52ebcc49
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29520594"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535524"
 ---
-# <a name="commsnotifications-resource-type"></a><span data-ttu-id="5c3b3-103">Тип ресурса commsNotifications</span><span class="sxs-lookup"><span data-stu-id="5c3b3-103">commsNotifications resource type</span></span>
+# <a name="commsnotifications-resource-type"></a><span data-ttu-id="da9fe-103">Тип ресурса Коммснотификатионс</span><span class="sxs-lookup"><span data-stu-id="da9fe-103">commsNotifications resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="5c3b3-104">Список уведомлений, используемого серверами коммуникаций для отправки нескольких уведомлений в одном пакете.</span><span class="sxs-lookup"><span data-stu-id="5c3b3-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
+<span data-ttu-id="da9fe-104">Список уведомлений, используемых серверами Communications Server для отправки нескольких уведомлений в один пакет.</span><span class="sxs-lookup"><span data-stu-id="da9fe-104">List of notifications used by the Communications servers for sending multiple notifications in a single batch.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="5c3b3-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="5c3b3-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="da9fe-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="da9fe-105">Properties</span></span>
 
-| <span data-ttu-id="5c3b3-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="5c3b3-106">Property</span></span>       | <span data-ttu-id="5c3b3-107">Тип</span><span class="sxs-lookup"><span data-stu-id="5c3b3-107">Type</span></span>                                                 | <span data-ttu-id="5c3b3-108">Описание</span><span class="sxs-lookup"><span data-stu-id="5c3b3-108">Description</span></span>                                   |
+| <span data-ttu-id="da9fe-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="da9fe-106">Property</span></span>       | <span data-ttu-id="da9fe-107">Тип</span><span class="sxs-lookup"><span data-stu-id="da9fe-107">Type</span></span>                                                 | <span data-ttu-id="da9fe-108">Описание</span><span class="sxs-lookup"><span data-stu-id="da9fe-108">Description</span></span>                                   |
 |:---------------|:-----------------------------------------------------|:----------------------------------------------|
-| <span data-ttu-id="5c3b3-109">value</span><span class="sxs-lookup"><span data-stu-id="5c3b3-109">value</span></span>          | <span data-ttu-id="5c3b3-110">[commsNotification](commsnotification.md) коллекции</span><span class="sxs-lookup"><span data-stu-id="5c3b3-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="5c3b3-111">Уведомление об изменении в ресурсе.</span><span class="sxs-lookup"><span data-stu-id="5c3b3-111">The notification of a change in the resource.</span></span> |
+| <span data-ttu-id="da9fe-109">значение</span><span class="sxs-lookup"><span data-stu-id="da9fe-109">value</span></span>          | <span data-ttu-id="da9fe-110">Коллекция [коммснотификатион](commsnotification.md)</span><span class="sxs-lookup"><span data-stu-id="da9fe-110">[commsNotification](commsnotification.md) collection</span></span> | <span data-ttu-id="da9fe-111">Уведомление об изменении ресурса.</span><span class="sxs-lookup"><span data-stu-id="da9fe-111">The notification of a change in the resource.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="5c3b3-112">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5c3b3-112">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="da9fe-112">Представление в формате JSON</span><span class="sxs-lookup"><span data-stu-id="da9fe-112">JSON representation</span></span>
 
-<span data-ttu-id="5c3b3-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5c3b3-113">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="da9fe-113">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="da9fe-113">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
