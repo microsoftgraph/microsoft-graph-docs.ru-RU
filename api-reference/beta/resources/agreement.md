@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса соглашения
-description: Представляет клиента настраиваемый соглашение об условиях использования, который создается и управляется с помощью Azure Active Directory (Azure AD). Можно использовать следующие методы для создания и управления компонента Azure Active Directory условия использования согласно сценарию.
+title: Тип ресурса договора
+description: Представляет настраиваемое соглашение об использовании клиента, которое создается и управляется с помощью Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления условиями использования функции Azure Active Directory в соответствии со сценарием.
 localization_priority: Normal
 ms.openlocfilehash: b253877f1bf82e4fbc61cebaef3c1bce208d9cca
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29513853"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32535750"
 ---
-# <a name="agreement-resource-type"></a>Тип ресурса соглашения
+# <a name="agreement-resource-type"></a>Тип ресурса договора
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет клиента настраиваемый соглашение об условиях использования, который создается и управляется с помощью Azure Active Directory (Azure AD). Можно использовать следующие методы для создания и управления [Azure Active Directory условия использования компонента](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) согласно сценарию.
+Представляет настраиваемое соглашение об использовании клиента, которое создается и управляется с помощью Azure Active Directory (Azure AD). Вы можете использовать следующие методы для создания и управления [условиями использования функции Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-tou) в соответствии со сценарием.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-| [Создание соглашения](../api/agreement-post-agreements.md) | [соглашения](agreement.md) | Создайте новое соглашение с учета в коллекцию соглашения. |
-| [Соглашения по списку](../api/agreement-list.md) | [соглашение](agreement.md) семейства сайтов | Получение коллекции объектов соглашения. |
-| [Получение соглашения](../api/agreement-get.md) | [соглашения](agreement.md) | Чтение свойства и связи объекта соглашения. |
-| [Обновить соглашения](../api/agreement-update.md) | [соглашения](agreement.md) | Обновление объекта соглашения. |
+| [Создание договоров](../api/agreement-post-agreements.md) | [Корпоратив](agreement.md) | Создание нового соглашения путем публикации в коллекции договоров. |
+| [Список соглашений](../api/agreement-list.md) | Коллекция [договоров](agreement.md) | Получение коллекции объектов Agreement. |
+| [Получение соглашения](../api/agreement-get.md) | [Корпоратив](agreement.md) | Чтение свойств и связей объекта Agreement. |
+| [Обновление соглашения](../api/agreement-update.md) | [Корпоратив](agreement.md) | Обновление объекта договора. |
 | [Удаление соглашения](../api/agreement-delete.md) | Нет | Удаление объекта соглашения. |
 <!--
 | [Create agreementFile](../api/agreement-post-files.md) | [agreementFile](agreementfile.md) | Create a new agreementFile by posting to the files collection. |
@@ -34,14 +34,14 @@ ms.locfileid: "29513853"
 |:-------------|:------------|:------------|
 |displayName|String|Отображаемое имя соглашения.|
 |id|String| Только для чтения.|
-|isViewingBeforeAcceptanceRequired|Логическое|Указывает, есть ли у пользователя можно развернуть и отобразить соглашения перед подтверждением.|
+|Исвиевингбефореакцептанцерекуиред|Логический|Указывает, должно ли пользователь развернуть и просмотреть Соглашение перед принятием.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип        | Описание |
+## <a name="relationships"></a>Связи
+| Отношение | Тип        | Описание |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md) коллекции|Только для чтения. PDF-файлы, связанные с этого соглашения.|
+|files|Коллекция [агриментфиле](agreementfile.md)|Только для чтения. Документы PDF, связанные с этим соглашением.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

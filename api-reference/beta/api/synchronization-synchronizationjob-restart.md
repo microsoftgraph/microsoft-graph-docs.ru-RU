@@ -1,19 +1,19 @@
 ---
-title: Перезапустите synchronizationJob
-description: Перезапустите задание синхронизации, заставить его повторно обработать все объекты в каталоге. При необходимости удаляет существующие состояние синхронизации и предыдущих ошибок.
+title: Перезапуск Синчронизатионжоб
+description: ПереЗапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге. При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.
 localization_priority: Normal
 ms.openlocfilehash: 169f95c3662fd774207584b54fcf27fb2548c795
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526727"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537101"
 ---
-# <a name="restart-synchronizationjob"></a>Перезапустите synchronizationJob
+# <a name="restart-synchronizationjob"></a>Перезапуск Синчронизатионжоб
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Перезапустите задание синхронизации, заставить его повторно обработать все объекты в каталоге. При необходимости удаляет существующие состояние синхронизации и предыдущих ошибок.
+ПереЗапустите задание синхронизации, чтобы принудительно обработать все объекты в каталоге. При необходимости можно очистить существующее состояние синхронизации и предыдущие ошибки.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -38,15 +38,15 @@ POST /servicePrincipals/{id}/synchronization/jobs/{jobId}/restart
 
 ## <a name="request-body"></a>Текст запроса
 
-Предоставить объект JSON в тексте запроса следующий параметр.
+В тексте запроса укажите объект JSON со следующим параметром.
 
 | Параметр     | Тип      | Описание    |
 |:--------------|:----------|:---------------|
-|criteria       |[synchronizationJobRestartCriteria](../resources/synchronization-synchronizationjobrestartcriteria.md) |Перезапустите критериев|
+|criteria       |[Синчронизатионжобрестарткритериа](../resources/synchronization-synchronizationjobrestartcriteria.md) |Условия переЗапуска|
 
 ## <a name="response"></a>Ответ
 
-В случае успеха возвращает `204 No Content` ответа. Он не возвращает все действия в теле ответа.
+В случае успеха возвращает `204 No Content` отклик. В тексте отклика не возвращается никаких данных.
 
 ## <a name="example"></a>Пример
 
@@ -68,8 +68,8 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа.
+##### <a name="response"></a>Отклик
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",

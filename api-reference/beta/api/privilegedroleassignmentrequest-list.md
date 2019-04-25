@@ -1,28 +1,28 @@
 ---
-title: Список privilegedRoleAssignmentRequests
-description: 'Получите коллекцию privilegedRoleAssignmentRequest. '
+title: Список Привилежедролеассигнментрекуестс
+description: 'Получение коллекции Привилежедролеассигнментрекуест. '
 localization_priority: Normal
 ms.openlocfilehash: 06a6c66bcb566df0b6db5193bd753832bd9235a3
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640730"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538615"
 ---
-# <a name="list-privilegedroleassignmentrequests"></a>Список privilegedRoleAssignmentRequests
+# <a name="list-privilegedroleassignmentrequests"></a>Список Привилежедролеассигнментрекуестс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получите коллекцию [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md). 
+Получение коллекции [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md). 
 
-**Примечание:** В этом инициатор запроса должна иметь по крайней мере одно назначение роли для ресурса.
+**Примечание:** Этот запрашивающий должно иметь по крайней мере одно назначение роли для ресурса.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | PrivilegedAccess.ReadWrite.AzureAD, Directory.Read.All, Directory.AccessAsUser.All    |
+|Делегированные (рабочая или учебная учетная запись) | Привилежедакцесс. ReadWrite. AzureAD, Directory. Read. ALL, Directory. AccessAsUser. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
 |Для приложений                            | Не поддерживается. |
 
@@ -33,18 +33,18 @@ GET /privilegedRoleAssignmentRequests
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает [Параметры запроса OData](/graph/query-parameters) , которые помогут при настройке клиентов ответа.
+Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
-Успешно завершена, этот метод возвращает `200 OK` код ответа и коллекцию объектов [privilegedRoleAssignmentRequest](../resources/privilegedroleassignmentrequest.md) в теле ответа.
+## <a name="response"></a>Ответ
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

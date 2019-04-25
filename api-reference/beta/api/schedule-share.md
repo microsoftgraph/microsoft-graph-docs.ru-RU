@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: eaa2eae082c2b50f39b4a3ac2547ca5b0135381f
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657723"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537828"
 ---
 # <a name="schedule-share"></a>Расписание: общий доступ
 
@@ -56,7 +56,7 @@ POST /teams/{teamId}/schedule/share
 | startDateTime         |`DateTimeOffset`   |Время начала совместного использования смен по расписанию. Обязательный.   |
 | endDateTime           |`DateTimeOffset`   | Время окончания для совместного использования смены графика до.   |
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 При успешном выполнении этот метод возвращает код отклика `204 No Content`. Метод не возвращает данные в теле отклика.
 
@@ -80,7 +80,7 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

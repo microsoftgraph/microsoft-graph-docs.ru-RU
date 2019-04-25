@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса yammerDeviceUsageUserDetail
+title: Тип ресурса Яммердевицеусажеусердетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
 ms.openlocfilehash: 5fe3aa7fa9da243c9cc8f9b015ee85d779b84eb3
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574154"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551430"
 ---
-# <a name="yammerdeviceusageuserdetail-resource-type"></a>Тип ресурса yammerDeviceUsageUserDetail
+# <a name="yammerdeviceusageuserdetail-resource-type"></a>Тип ресурса Яммердевицеусажеусердетаил
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип    |
 | :---------------- | :------ |
-| reportRefreshDate | Date    |
-| userPrincipalName | Строка  |
-| displayName       | Строка  |
-| userState         | Строка  |
-| stateChangeDate   | Date    |
-| lastActivityDate  | Date    |
-| usedWeb           | Boolean |
-| usedWindowsPhone  | Boolean |
-| usedAndroidPhone  | Boolean |
-| usediPhone        | Boolean |
-| usediPad          | Boolean |
-| usedOthers        | Boolean |
-| reportPeriod      | String  |
+| Репортрефрешдате | Дата    |
+| userPrincipalName | String  |
+| displayName       | String  |
+| userState         | String  |
+| Статечанжедате   | Дата    |
+| Ластактивитидате  | Дата    |
+| Уседвеб           | Логический |
+| Уседвиндовсфоне  | Логический |
+| Уседандроидфоне  | Логический |
+| Уседифоне        | Логический |
+| Уседипад          | Логический |
+| Уседосерс        | Логический |
+| Репортпериод      | String  |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

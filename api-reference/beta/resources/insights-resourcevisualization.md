@@ -1,21 +1,21 @@
 ---
-title: Тип ресурса resourceVisualization
-description: Сложный тип, содержащий свойства средствами.
+title: Тип ресурса ресурсе resourcevisualization
+description: Сложный тип, содержащий свойства аналитики.
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 48ec1619d07d0f31bf8325c25b161084f505b3ee
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550740"
 ---
-# <a name="resourcevisualization-resource-type"></a>Тип ресурса resourceVisualization
+# <a name="resourcevisualization-resource-type"></a>Тип ресурса ресурсе resourcevisualization
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сложный тип, содержащий свойства [средствами](insights.md).
+Сложный тип, содержащий свойства [аналитики](insights.md).
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -39,52 +39,52 @@ ms.locfileid: "29641297"
 | Свойство              | Тип          | Описание  |
 | -------------         |---------------| -------------|
 | title                 | String        | Текст заголовка элемента.               |
-| type              | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для конкретного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
-| Тип носителя             | String        | Тип элемента мультимедиа. Можно использовать для фильтрации для определенного типа файлов, поддерживаемые типы Mime IANA мультимедиа на основании. Обратите внимание, что не все типы Mime мультимедиа поддерживаются. |
-| previewImageUrl       | String        | URL-адрес, приводя к изображения предварительного просмотра для элемента. |
-| previewText           | String        | Предварительная версия текст для элемента. |
-| containerWebUrl       | String        | Путь, приводя к папке, в которой хранится элемент. |
-| containerDisplayName  | String        | Строка, описывающая, где хранится элемент. Например имя сайт SharePoint или имя пользователя, определение владельца OneDrive, хранения элемента.  |
-| containerType         | String | Можно использовать для фильтрации по типу контейнер, в котором хранится файл. Например, сайта или OneDriveBusiness.       |
+| type              | String        | Тип мультимедиа элемента. Можно использовать для фильтрации определенного файла на основе определенного типа. Ниже приведены поддерживаемые типы. |
+| mediaType             | String        | Тип мультимедиа элемента. Может использоваться для фильтрации для определенного типа файлов на основе поддерживаемых типов MIME для мультимедиа IANA. Обратите внимание, что поддерживаются не все типы MIME мультимедиа. |
+| Превиевимажеурл       | String        | URL-адрес, ведущая к изображению для предварительного просмотра элемента. |
+| previewText           | String        | Предварительный текст для элемента. |
+| Контаинервебурл       | String        | Путь, начинающийся с папки, в которой хранится элемент. |
+| Контаинердисплайнаме  | String        | Строка, описывающая место хранения элемента. Например, имя сайта SharePoint или имя пользователя, идентифицирующее владельца OneDrive, в котором хранится элемент.  |
+| Контаинертипе         | String | Можно использовать для фильтрации по типу контейнера, в котором хранится файл. Например, site или Онедривебусинесс.       |
 
-## <a name="type-property-values"></a>Тип значения свойств
+## <a name="type-property-values"></a>Ввод значений свойств
 -   PowerPoint
 -   Word
 -   Excel
--   PDF
+-   ]
 -   OneNote
--   OneNotePage
+-   Оненотепаже
 -   InfoPath
 -   Visio
 -   Publisher
 -   Project
 -   Access
 -   Почта
--   CSV
--   Archive
--   XPS
--   Audio (аудио)
--   Video (видео)
+-   Расширения
+-   Архив
+-   Компьютеров
+-   "Audio" (Аудио);
+-   "Video" (Видео);
 -   Изображение
--   Web
+-   Веб
 -   Текст
 -   Xml
 -   Story
--   ExternalContent
+-   Екстерналконтент
 -   Folder
--   Other
+-   Другие
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/Type eq 'PowerPoint'`
 
-## <a name="containertype-property-values"></a>значения свойств containerType
-Поддерживаемые типы может отличаться в зависимости от контейнеров, с которых [возможность получения](insights.md) возвращает файлы. Например только сведений об [общих](insights-shared.md) возвращает файлы из 'Общего банка данных», «Поле» и «GDrive».
+## <a name="containertype-property-values"></a>значения свойств Контаинертипе
+Поддерживаемые типы могут различаться в зависимости от контейнера, из [](insights.md) которого возвращаются файлы. Например, только [Общие](insights-shared.md) сведения о файлах "Dropbox", "Box" и "гдриве".
 
--   OneDriveBusiness
--   Site
+-   Онедривебусинесс
+-   Сайт
 -   Почта
--   Общего банка данных
+-   Оставляют
 -   Box
--   GDrive
+-   Гдриве
 
 Пример запроса:`https://graph.microsoft.com/beta/me/insights/trending?$filter=ResourceVisualization/containerType eq 'OneDriveBusiness'`
 <!--

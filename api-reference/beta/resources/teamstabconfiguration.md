@@ -1,33 +1,33 @@
 ---
-title: teamsTabConfiguration ресурсов (тип Open)
+title: Тип ресурса Теамстабконфигуратион (Open Type)
 description: Параметры, определяющие содержимое вкладки.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 10cc22e70288d1643a3a2cdebe23a012e22e3879
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519201"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32550744"
 ---
-# <a name="teamstabconfiguration-resource-type-open-type"></a>teamsTabConfiguration ресурсов (тип Open)
+# <a name="teamstabconfiguration-resource-type-open-type"></a>Тип ресурса Теамстабконфигуратион (Open Type)
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Параметры, определяющие содержимое [вкладки](teamstab.md). Если вкладки интерактивно настроено, эти сведения задается приложение поставщика вкладки.
-В дополнение к указанные ниже свойства некоторые приложения поставщика вкладки укажите дополнительные настраиваемые свойства.
+Параметры, определяющие содержимое [вкладки](teamstab.md). При настройке вкладки в интерактивном режиме эти сведения задаются приложением поставщика вкладок.
+Помимо приведенных ниже свойств, некоторые приложения поставщика вкладок задают дополнительные настраиваемые свойства.
 
 ## <a name="properties"></a>Свойства
 
 |Свойство|Тип|Описание|
 |-|-|-|
-|  entityId   |   string |  Идентификатор для сущности, размещенного поставщиком вкладки.     |
-|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в группах. Обязательный.    |
-|  removeUrl  |   string |  URL-адрес, вызванный клиентом команды при удалении вкладки с помощью команды клиента.     |
-|  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне группы.     |
+|  entityId   |   string |  Идентификатор для сущности, размещенной у поставщика вкладок.     |
+|  contentUrl |   string |  URL-адрес, используемый для отображения содержимого вкладки в Teams. Обязательный.    |
+|  removeUrl  |   string |  URL-адрес, вызываемый клиентом Teams при удалении вкладки с помощью клиента Teams.     |
+|  websiteUrl |   string |  URL-адрес для отображения содержимого вкладки вне Teams.     |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 <!-- {

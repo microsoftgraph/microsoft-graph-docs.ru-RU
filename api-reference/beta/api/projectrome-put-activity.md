@@ -1,20 +1,18 @@
 ---
 title: Создание или замена действия
-description: Создание новой или заменить существующий активности пользователей для вашего приложения. Если вы хотите создать действие пользователя и его связанных с ними **historyItems** в один запрос, можно использовать глубокой вставки.
+description: Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую вставку.
 localization_priority: Normal
 ms.prod: project-rome
 ms.openlocfilehash: e0c010e7aefd16dca90d2b43d4f18f73d6c4f374
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29967342"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32538486"
 ---
 # <a name="create-or-replace-an-activity"></a>Создание или замена действия
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Создание новой или заменить существующий активности пользователей для вашего приложения. Если вы хотите создать действие пользователя и его связанных с ними **historyItems** в один запрос, можно использовать [глубоко вставки](#example-2-deep-insert).
+Создание нового или замена существующего действия пользователя для вашего приложения. Если вы хотите создать действия пользователя и связанные с ним **historyitem** в одном запросе, вы можете использовать глубокую [вставку](#example-2-deep-insert).
 
 ## <a name="permissions"></a>Разрешения
 
@@ -34,7 +32,7 @@ ms.locfileid: "29967342"
 PUT /me/activities/{appActivityId}
 ```
 
-> **Примечание:** AppActivityId в URL-адрес должен быть URL-безопасными (все символы, за исключением RFC 2396 незарезервированные символы должны быть преобразованы в их шестнадцатеричное представление), но исходного appActivityId не должен быть безопасно URL-адрес.
+> **Примечание:** Аппактивитид в URL-АДРЕСе должен быть безопасным по URL-АДРЕСу (все символы, кроме зарезервированных символов RFC 2396, должны быть преобразованы в шестнадцатеричное представление), но исходный Аппактивитид не обязательно должен быть безопасным по URL-АДРЕСу.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -44,15 +42,15 @@ PUT /me/activities/{appActivityId}
 
 ## <a name="request-body"></a>Текст запроса
 
-В тексте запроса укажите представление JSON объекта [активности](../resources/projectrome-activity.md) .
+В тексте запроса добавьте представление объекта [Activity](../resources/projectrome-activity.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа, если действие было создано или `200 OK` при замене действия.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, если действие было `200 OK` создано, или если действие было заменено.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-create-an-activity"></a>В примере 1: Создание мероприятия
+### <a name="example-1-create-an-activity"></a>Пример 1: Создание действия
 
 #### <a name="request"></a>Запрос
 
@@ -64,7 +62,7 @@ PUT /me/activities/{appActivityId}
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -85,7 +83,7 @@ Content-type: application/json
     "attribution": {
       "iconUrl": "https://www.contoso.com/icon",
       "alternateText": "Contoso, Ltd.",
-      "addImageQuery": "false"
+      "addImageQuery": false
     },
     "description": "How to Tie a Reef Knot. A step-by-step visual guide to the art of nautical knot-tying.",
     "backgroundColor": "#ff0000",
@@ -113,7 +111,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -162,9 +160,9 @@ Content-Type: application/json
 }
 ```
 
-### <a name="example-2-deep-insert"></a>Пример 2: Глубокое вставить
+### <a name="example-2-deep-insert"></a>Пример 2: глубокая Вставка
 
-В этом примере создается новое действие и элемент журнала для этого действия в пределах одного запроса.
+В этом примере показано создание нового действия и элемента журнала для этого действия в одном запросе.
 
 #### <a name="request"></a>Запрос
 
@@ -176,7 +174,7 @@ Content-Type: application/json
 } -->
 
 ```http
-PUT https://graph.microsoft.com/beta/me/activities/%2Farticle%3F12345
+PUT https://graph.microsoft.com/v1.0/me/activities/%2Farticle%3F12345
 Content-type: application/json
 
 {
@@ -230,7 +228,7 @@ Content-type: application/json
 <!-- {
     "blockType": "ignored",
     "truncated": true,
-    "@odata.type": "microsoft.graph.activity"
+    "@odata.type": "microsoft.graph.userActivity"
 } -->
 
 ```http
@@ -294,15 +292,10 @@ Content-Type: application/json
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2017-06-07 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "Upsert activity",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/projectrome-put-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

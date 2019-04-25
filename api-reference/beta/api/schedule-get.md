@@ -5,11 +5,11 @@ author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 84abbad582d346c106c751030b07c6337c939f48
-ms.sourcegitcommit: 081cacecb4960aabc9e1011d12f06fe9ecf7d188
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30657590"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32537902"
 ---
 # <a name="get-schedule"></a>Получение расписания
 
@@ -54,7 +54,7 @@ GET /teams/{teamId}/schedule
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Schedule](../resources/schedule.md) в тексте отклика.
 
@@ -71,7 +71,7 @@ GET /teams/{teamId}/schedule
 GET https://graph.microsoft.com/beta/teams/{teamId}/schedule
 ```
 
-#### <a name="response"></a>Ответ
+#### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика. 
 

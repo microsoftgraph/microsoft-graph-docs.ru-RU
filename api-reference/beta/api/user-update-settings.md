@@ -1,21 +1,21 @@
 ---
 title: Обновление параметров
-description: 'Обновляет свойства объекта settings. '
+description: 'Обновление свойств объекта Settings. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: d21d7fb26945e4a46fdf877bb5911aba0621ce3b
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.openlocfilehash: 5536eb096ae963990e4a06f6fc95e273fd4d1557
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508764"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547629"
 ---
 # <a name="update-settings"></a>Обновление параметров
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Обновляет свойства объекта [settings](../resources/user-settings.md) . Пользователи в той же организации могут иметь различные параметры на основе их приоритета или политики организации. Для получения текущих параметров пользователя, просмотрите [параметры текущего пользователя](user-get-settings.md). 
+Обновление свойств объекта [Settings](../resources/user-settings.md) . Пользователи в одной организации могут иметь различные параметры в зависимости от их предпочтения или политики Организации. Чтобы получить текущие параметры пользователя, просмотрите [параметры текущей учетной записи пользователя](user-get-settings.md). 
 
 ## <a name="permissions"></a>Разрешения
 
@@ -23,20 +23,20 @@ ms.locfileid: "29508764"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | User.ReadWrite User.ReadWrite.All   |
+|Делегированные (рабочая или учебная учетная запись) | User. ReadWrite, User. ReadWrite. ALL   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
 |Для приложений | User.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
-PATCH https://graph.microsoft.com/beta/me/settings
+PATCH /me/settings
 ```
 
-Запросите с «идентификатор пользователя» или «userPrincipalName» доступен только пользователем или пользователем с разрешениями User.ReadWrite.All. [Для получения дополнительных сведений см.](/graph/permissions-reference) 
+Запрос с идентификатором пользователя или userPrincipalName доступен только пользователю или пользователем с разрешениями User. ReadWrite. ALL. Чтобы узнать больше, ознакомьтесь [](/graph/permissions-reference)с разрешениями. 
 
 ```http
-PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
+PATCH /users/{id | userPrincipalName}/settings/
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -52,13 +52,13 @@ PATCH https://graph.microsoft.com/beta/users/{id | userPrincipalName}/settings/
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логическое|Параметр имеет значение true отключить делегированный доступ для [тенденций](../resources/insights-trending.md) API и отключать доступ к документам в углубимся Office для пользователя. Настройка значение "true" также влияет на соответствие содержимого, отображаемые в Office 365 —, предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса Показать менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
+|Контрибутионтоконтентдисковеридисаблед|Логический|Установите значение true, чтобы запретить представителю доступ [](../resources/insights-trending.md) к API тенденций и отключить доступ к документам в Office delve для пользователя. Значение true также влияет на релевантность контента, отображаемого в Office 365, например, Рекомендуемые сайты в SharePoint Home и представление обнаружение в OneDrive для бизнеса содержат менее релевантные результаты. Этот параметр отражает состояние элемента управления в [Office delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout).|
 
 ## <a name="example"></a>Пример 
 
 ##### <a name="request"></a>Запрос
 
-Ниже приведен пример запроса по отказаться пользователя из Delve и отключить его вклад в контента релевантности для всей организации.
+Ниже приведен пример запроса на отказаться от участия пользователя в delve и отказаться от его участия в релевантности контента для всей Организации.
 
 ```http
 PATCH https://graph.microsoft.com/beta/me/settings
@@ -70,10 +70,9 @@ Content-length: 37
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 
 ```http
 HTTP/1.1 200 OK
@@ -88,10 +87,10 @@ Content-length: 72
 
 #### <a name="batch-request"></a>Пакетный запрос
 
-Можно также отказаться несколько пользователей из Delve и отключить их влияние на контента релевантности для всей организации с помощью пакетного запроса.
-Для получения дополнительных сведений см [пакетные JSON](/graph/json-batching).
+Кроме того, можно отказаться от использования нескольких пользователей из delve и отказаться от их вклада в релевантность содержимого для всей Организации с помощью пакетного запроса.
+Для получения дополнительных сведений см [Пакетная обработка JSON](/graph/json-batching).
 
-**Важно**: только для членов группы ролей [Управления организацией](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) можно обновить несколько пользователей. 
+**Важно!** только члены группы ролей " [Управление организацией](https://support.office.com/article/permissions-in-the-office-365-security-compliance-center-d10608af-7934-490a-818e-e68f17d0e9c1?ui=en-US&rs=en-US&ad=US) " могут обновлять нескольких пользователей. 
 
 
 <!--

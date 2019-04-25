@@ -1,21 +1,21 @@
 ---
 title: Список workingWith
-description: Вычисляемые insight для списка пользователей, которые пользователь работает с.
+description: Вычисляемое представление о списке пользователей, с которыми работает пользователь.
 author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: ca5fdd4602d109d98002c0ef54fde5ad341e1903
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521623"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32547696"
 ---
 # <a name="list-workingwith"></a>Список workingWith
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вычисляемые insight для списка пользователей, которые пользователь работает с.
+Вычисляемое представление о списке пользователей, с которыми работает пользователь.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -43,20 +43,19 @@ GET /drive/root/lastModifiedByUser/workingWith
 | Content-Type   | application/json           |
 
 ## <a name="request-body"></a>Текст запроса
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
-Если успешно завершена, этот метод возвращает 200 OK ответа код и коллекцию объектов- [пользователей](../resources/user.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает код ответа 200 ОК и коллекцию объектов [User](../resources/user.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 ```http
 GET https://graph.microsoft.com/beta/me/workingWith
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
-
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

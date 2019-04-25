@@ -1,33 +1,33 @@
 ---
-title: Тип ресурса teamsDeviceUsageUserCounts
+title: Тип ресурса Теамсдевицеусажеусеркаунтс
 description: Ниже указано представление ресурса в формате JSON.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 671dfada02b9c16d3392d0a97023b82020fd1218
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987400"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32553598"
 ---
-# <a name="teamsdeviceusageusercounts-resource-type"></a>Тип ресурса teamsDeviceUsageUserCounts
+# <a name="teamsdeviceusageusercounts-resource-type"></a>Тип ресурса Теамсдевицеусажеусеркаунтс
 
 ## <a name="properties"></a>Свойства
 
 | Свойство          | Тип   |
 | :---------------- | :----- |
-| reportRefreshDate | Date   |
+| Репортрефрешдате | Дата   |
 | web               | Int64  |
 | windowsPhone      | Int64  |
-| androidPhone      | Int64  |
-| операций ввода-вывода               | Int64  |
+| Андроидфоне      | Int64  |
+| модуле               | Int64  |
 | mac               | Int64  |
-| Windows           | Int64  |
-| reportDate        | Date   |
-| reportPeriod      | String |
+| под           | Int64  |
+| reportDate        | Дата   |
+| Репортпериод      | String |
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже указано представление ресурса в формате JSON.
 

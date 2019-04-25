@@ -6,11 +6,11 @@ title: Удаление файла или папки
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 6c6afe91167d6ce8c4bce3d53eb3cb9085bb394f
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482149"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32548070"
 ---
 # <a name="delete-a-driveitem"></a>Удаление ресурса DriveItem
 
@@ -46,7 +46,7 @@ DELETE /users/{userId}/drive/items/{itemId}
 
 ## <a name="example"></a>Пример
 
-Ниже приведен пример, в котором показано, как вызвать этот API.
+Ниже приведен пример вызова этого API.
 
 <!-- { "blockType": "request", "name": "delete-item", "scopes": "files.readwrite", "tags": "service.graph" } -->
 
@@ -64,7 +64,7 @@ DELETE /me/drive/items/{item-id}
 HTTP/1.1 204 No Content
 ```
 
-### <a name="error-responses"></a>Ошибки
+### <a name="error-responses"></a>Ответы с ошибками
 
 Дополнительные сведения о том, как возвращаются ошибки, см. в статье [Ошибки][error-response].
 

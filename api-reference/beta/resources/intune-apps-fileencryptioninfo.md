@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9a2236e2c63703ea5af2662d5b0f4594e7888799
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789726"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32552179"
 ---
 # <a name="fileencryptioninfo-resource-type"></a>Тип ресурса fileEncryptionInfo
 
@@ -22,10 +22,10 @@ ms.locfileid: "31789726"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|encryptionKey|Binary|Ключ, используемый для шифрования содержимого файла.|
-|initializationVector|Binary|Вектор инициализации, используемый для алгоритма шифрования.|
-|mac|Binary|Хэш зашифрованного содержимого файла + IV (хэш содержимого).|
-|macKey|Binary|Ключ для получения свойства mac.|
+|encryptionKey|Двоичный|Ключ, используемый для шифрования содержимого файла.|
+|initializationVector|Двоичный|Вектор инициализации, используемый для алгоритма шифрования.|
+|mac|Двоичный|Хэш зашифрованного содержимого файла + IV (хэш содержимого).|
+|macKey|Двоичный|Ключ для получения свойства mac.|
 |profileIdentifier|String|Идентификатор профиля.|
 |fileDigest|Binary|Дайджест файла до шифрования.|
 |fileDigestAlgorithm|String|Алгоритм дайджеста файла.|
