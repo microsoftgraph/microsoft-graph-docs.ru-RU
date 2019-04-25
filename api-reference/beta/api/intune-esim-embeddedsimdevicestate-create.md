@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1a2d7561f116287d73b2a0e4f781bf6fa49930ea
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31776999"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532347"
 ---
 # <a name="create-embeddedsimdevicestate"></a>Создание Ембеддедсимдевицестате
 
@@ -56,13 +56,13 @@ POST /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCode
 |lastSyncDateTime|DateTimeOffset|Время последнего возврата встроенного SIM-устройства. Обновленная сторона службы.|
 |УниверсалинтегратедЦиркуиткардидентифиер|String|Универсальный интегрированный идентификатор карты (УИКЦИД), определяющий оборудование, на котором будет развернут профиль.|
 |deviceName|String|Имя устройства, на которое была подготовлена подписка, например DESKTOP — Джо|
-|userName|String|Имя пользователя, которому подготавливается подписка, например.joe@contoso.com|
+|userName|String|Имя пользователя, для которого была подготовлена подписка (например, joe@contoso.com).|
 |state|[Ембеддедсимдевицестатевалуе](../resources/intune-esim-embeddedsimdevicestatevalue.md)|Состояние операции профиля, примененной к устройству. Возможные значения: `notEvaluated`, `failed`, `installing`, `installed`, `deleting`, `error`, `deleted`, `removedByUser`.|
 |Статедетаилс|String|Строковое описание состояния подготовки.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ембеддедсимдевицестате](../resources/intune-esim-embeddedsimdevicestate.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

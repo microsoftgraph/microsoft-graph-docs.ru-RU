@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: dc2b5cbe9051e44ef68d62aa60fd67eb8b6a4597
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786982"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532529"
 ---
 # <a name="update-embeddedsimactivationcodepoolassignment"></a>Обновление Ембеддедсимактиватионкодепулассигнмент
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/embeddedSIMActivationCodePools/{embeddedSIMActivationCod
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [ембеддедсимактиватионкодепулассигнмент](../resources/intune-esim-embeddedsimactivationcodepoolassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

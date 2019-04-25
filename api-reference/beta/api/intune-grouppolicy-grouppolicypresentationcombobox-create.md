@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 9ca375a771856f314563e2780128fc7d8aab3c88
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31782179"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32531175"
 ---
 # <a name="create-grouppolicypresentationcombobox"></a>Создание Граупполиципресентатионкомбобокс
 
@@ -54,13 +54,13 @@ POST /deviceManagement/groupPolicyConfigurations/{groupPolicyConfigurationId}/de
 |id|String|Ключ объекта. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения объекта. НаСледуется от [граупполиципресентатион](../resources/intune-grouppolicy-grouppolicypresentation.md)|
 |Значение|String|Локализованная строка по умолчанию, отображаемая в поле со списком. По умолчанию это значение пусто.|
-|мнение|Коллекция String|Локализованные строки, перечисленные в раскрывающемся списке поля со списком. По умолчанию это значение пусто.|
+|мнение|Коллекция строк|Локализованные строки, перечисленные в раскрывающемся списке поля со списком. По умолчанию это значение пусто.|
 |Обязательный|Boolean|Указывает, следует ли указать значение для параметра. Значение по умолчанию  false.|
 |maxLength|Int64|Целое число без знака, задающее максимальное количество текстовых символов для параметра. Значение по умолчанию — 1023.|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполиципресентатионкомбобокс](../resources/intune-grouppolicy-grouppolicypresentationcombobox.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

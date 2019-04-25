@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 562ae8b137754acc3475ba98fb335a4f7e7310dd
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532662"
 ---
 # <a name="update-windowsautopilotdeploymentprofileassignment"></a>Обновление Виндовсаутопилотдеплойментпрофилеассигнмент
 
@@ -55,7 +55,7 @@ PATCH /deviceManagement/windowsAutopilotDeviceIdentities/{windowsAutopilotDevice
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [виндовсаутопилотдеплойментпрофилеассигнмент](../resources/intune-enrollment-windowsautopilotdeploymentprofileassignment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

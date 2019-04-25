@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: cd0c63b1d8c8df449a68cbeb64f391adb659ae64
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31805371"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532116"
 ---
 # <a name="create-grouppolicyconfiguration"></a>Создание Граупполициконфигуратион
 
@@ -58,7 +58,7 @@ POST /deviceManagement/groupPolicyConfigurations
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [граупполициконфигуратион](../resources/intune-grouppolicy-grouppolicyconfiguration.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

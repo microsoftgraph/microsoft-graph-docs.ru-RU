@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 1fc25e95f961630b19b022c4156ef0b6ec2059b7
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772071"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532438"
 ---
 # <a name="create-embeddedsimactivationcodepool"></a>Создание Ембеддедсимактиватионкодепул
 
@@ -59,7 +59,7 @@ POST /deviceManagement/embeddedSIMActivationCodePools
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [ембеддедсимактиватионкодепул](../resources/intune-esim-embeddedsimactivationcodepool.md) в тексте отклика.
 
 ## <a name="example"></a>Пример

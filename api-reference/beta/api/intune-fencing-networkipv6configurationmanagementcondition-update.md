@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: be681eccf66f6aa71e13c3bf4eb306a5d8d3f73f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32532109"
 ---
 # <a name="update-networkipv6configurationmanagementcondition"></a>Обновление networkIPv6ConfigurationManagementCondition
 
@@ -61,12 +61,12 @@ PATCH /deviceManagement/managementConditions/{managementConditionId}/managementC
 |Аппликаблеплатформс|Коллекция [девицеплатформтипе](../resources/intune-shared-deviceplatformtype.md)|Соответствующие платформы для этого условия управления. НаСледуется от [манажементкондитион](../resources/intune-fencing-managementcondition.md). Возможные значения: `android`, `androidForWork`, `iOS`, `macOS`, `windowsPhone81`, `windows81AndLater`, `windows10AndLater`, `androidWorkProfile`.|
 |ipV6Prefix|String|Подсеть IPv6, к которой необходимо подключиться. Например: 2001: db8::/32|
 |ipV6Gateway|String|Адрес шлюза IPv6 в. Например, 2001: db8:: 1|
-|ipV6DNSServerList|Коллекция String|DNS-серверы IPv6, настроенные для адаптера.|
-|Днссуффикслист|Коллекция String|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
+|ipV6DNSServerList|Коллекция строк|DNS-серверы IPv6, настроенные для адаптера.|
+|Днссуффикслист|Коллекция строк|Допустимые DNS-суффиксы для текущей сети. Например, Seattle.contoso.com|
 
 
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает `200 OK` код отклика и обновленный объект [networkIPv6ConfigurationManagementCondition](../resources/intune-fencing-networkipv6configurationmanagementcondition.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
