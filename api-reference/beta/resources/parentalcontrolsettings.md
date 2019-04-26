@@ -1,30 +1,34 @@
 ---
-title: Тип ресурса parentalControlSettings
-description: Указывает параметры родительского контроля для приложения. Эти параметры определяют на взаимодействие с согласия пользователя.
+title: Тип ресурса Паренталконтролсеттингс
+description: Указывает параметры родительского контроля для приложения. Эти параметры управляют согласия пользователя.
 localization_priority: Normal
 ms.openlocfilehash: 52a808cd4c3e6f29e4d43c7c4ea5c9e30a81447b
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643005"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568670"
 ---
-# <a name="parentalcontrolsettings-resource-type"></a>Тип ресурса parentalControlSettings
+# <a name="parentalcontrolsettings-resource-type"></a>Тип ресурса Паренталконтролсеттингс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Указывает параметры родительского контроля для приложения. Эти параметры определяют на взаимодействие с согласия пользователя.
+Указывает параметры родительского контроля для приложения. Эти параметры управляют согласия пользователя.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство | Тип | Описание |
 :---------------|:--------|:----------|
-|countriesBlockedForMinors|Коллекция String| Указывает [двухбуквенный код страны ISO](https://www.iso.org/iso-3166-country-codes.html). Доступ к приложению будут блокироваться для минорам из указанной в этом списке.|
-|legalAgeGroupRule| String | Правило срок хранения в юридическом группы, которая применяется для пользователей приложения. Может быть установлено одно из следующих значений: <table><tr><th>Значение</th><th>Описание</th></tr><tr><td>Allow (разрешить)</td><td>Значение, используемое по умолчанию. Требуют соблюдения юридических по меньшей мере. Это означает, что является обязательным для минорам в Европейском союзе и Корея, родительское согласие.</td></tr><tr><td>RequireConsentForPrivacyServices</td><td>Обеспечивает пользователю для указания Дата рождения в соответствии с правилами COPPA. </td></tr><tr><td>RequireConsentForMinors</td><td>Требуется родительское согласие для возраста ниже 18, вне зависимости от страны дополнительный номер правила.</td></tr><tr><td>RequireConsentForKids</td><td>Требуется родительское согласие для возраста ниже 14, вне зависимости от страны дополнительный номер правила.</td></tr><tr><td>BlockMinors</td><td>Блоки минорам с помощью приложения.</td></tr></table> |
+|Каунтриесблоккедформинорс|Коллекция String| Задает [двузначные коды стран ISO](https://www.iso.org/iso-3166-country-codes.html). Доступ к приложению будет заблокирован для небольших стран из стран, указанных в этом списке.|
+|Легалажеграупруле| String | Указывает правило группы допустимых возрастов, которое применяется к пользователям приложения. Может иметь одно из следующих значений: <table><tr><th>Значение</th><th>Описание</th></tr><tr><td>Разрешить</td><td>Значение, используемое по умолчанию. ПриМеняет юридическое минимальное значение. Это означает, что для второстепенных стран Европейского союза и Корее требуются разрешения родителей.</td></tr><tr><td>Рекуиреконсентфорпривацисервицес</td><td>Указывает, что пользователь должен указать дату рождения для обеспечения соответствия правилам Коппа. </td></tr><tr><td>Рекуиреконсентформинорс</td><td>Для более ранних версий, независимо от правил для стран, требуется согласие пользователя в течение 18 лет.</td></tr><tr><td>Рекуиреконсентфоркидс</td><td>Для более ранних версий, независимо от правил для стран, требуется согласие на родителей в течение 14 лет.</td></tr><tr><td>Блоккминорс</td><td>Блокирует небольшие из использования приложения.</td></tr></table> |
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
+<!--{
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.parentalControlSettings"
+}-->
 ```json
 {
   "countriesBlockedForMinors": [ "String" ],
@@ -32,11 +36,3 @@ ms.locfileid: "29643005"
 }
 
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/parentalcontrolsettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

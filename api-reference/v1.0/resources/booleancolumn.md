@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
-title: BooleanColumn
+title: booleanColumn
 localization_priority: Normal
 ms.openlocfilehash: a9f8ac1c7618e27f40e3019026c2f9bf8c0ebe84
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480203"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569412"
 ---
 # <a name="booleancolumn-resource-type"></a>Тип ресурса BooleanColumn
 

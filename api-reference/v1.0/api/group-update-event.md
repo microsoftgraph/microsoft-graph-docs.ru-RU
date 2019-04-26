@@ -5,13 +5,16 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: 1bab9229ea6f005074bfbcce91a3f6d1c5761f54
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991617"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571739"
 ---
 # <a name="update-event"></a>Обновление события
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Обновление объекта [event](../resources/event.md).
 
 ## <a name="permissions"></a>Разрешения
@@ -33,12 +36,12 @@ PATCH /groups/{id}/calendar/events/{id}
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.
 
 ## <a name="example"></a>Пример
@@ -50,7 +53,7 @@ PATCH /groups/{id}/calendar/events/{id}
   "name": "update_group_event"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/groups/{id}/events/{id}
+PATCH https://graph.microsoft.com/beta/groups/{id}/events/{id}
 Content-type: application/json
 Content-length: 211
 
@@ -61,14 +64,14 @@ Content-length: 211
     "response": "",
     "time": "datetime-value"
   },
-  "iCalUId": "iCalUId-value",
+  "uid": "iCalUId-value",
   "reminderMinutesBeforeStart": 99,
   "isReminderOn": true
 }
 ```
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 
 <!-- {
   "blockType": "response",
@@ -80,10 +83,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Update event",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

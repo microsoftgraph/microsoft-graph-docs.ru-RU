@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Разрешение
+title: Permission
 localization_priority: Normal
 ms.openlocfilehash: 12390583dcb1a87a5c9492ae3dcbcb132a66f69c
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482079"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568258"
 ---
 # <a name="permission-resource-type"></a>Тип ресурса разрешения
 
@@ -17,7 +17,7 @@ ms.locfileid: "30482079"
 
 Ресурс **Permission** предоставляет сведения о разрешении на совместный доступ, предоставленном для ресурса [driveItem](driveitem.md) .
 
-Разрешения на совместный доступ могут принимать самые различные формы.
+Разрешения на совместный доступ могут иметь самые различные формы.
 Ресурс **Permission** представляет эти различные формы с помощью аспектов ресурса.
 
 >**Примечание:** Библиотеки документов OneDrive для бизнеса и SharePoint не возвращают свойство **inheritedFrom** .
@@ -69,8 +69,8 @@ ms.locfileid: "30482079"
 | inheritedFrom       | [ItemReference][]           | Предоставляет ссылку на предка текущего разрешения, если оно унаследовано от предка. Только для чтения.
 | ссылка                | [SharingLink][]             | Предоставляет сведения о ссылке для текущего разрешения, если это разрешение типа link. Только для чтения.
 | roles               | Collection(String)          | Тип разрешения, например `read`. Полный список ролей см. ниже. Только для чтения.
-| shareId             | String                      | Уникальный маркер, который можно использовать для доступа к общему элементу через **[API shares][]**. Только для чтения.
-| expirationDateTime  | DateTimeOffset              | Формат YYYY – MM – ДДВчч: mm: ССЧП of DateTimeOffset указывает срок действия разрешения. DateTime. MinValue указывает, что для этого разрешения не задано действие срока действия. Необязательно.
+| shareId             | Строка                      | Уникальный маркер, который можно использовать для доступа к общему элементу через **[API shares][]**. Только для чтения.
+| expirationDateTime  | DateTimeOffset              | Формат YYYY – MM – ДДВчч: mm: ССЧП of DateTimeOffset указывает срок действия разрешения. DateTime. MinValue указывает, что для этого разрешения не задано действие срока действия. Необязательный параметр.
 | hasPassword         | Boolean                     | Указывает, задан ли для этого разрешения пароль, который отображается в ответе. НеОбязательный и только для чтения и только для OneDrive персональный.
 
 ### <a name="roles-enumeration-values"></a>Значения перечислений ролей
@@ -221,12 +221,12 @@ ms.locfileid: "30482079"
 
 | Метод                                                   | Путь REST
 |:---------------------------------------------------------|:-----------------------
-| [Вывод списка разрешений](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
+| [Получение списка разрешений](../api/driveitem-list-permissions.md) | `GET /drive/items/{item-id}/permissions`
 | [Получение разрешения](../api/permission-get.md)               | `GET /drive/items/{item-id}/permissions/{id}`
 | [Создание ссылки] [CreateLink]                                | `POST /drive/items/{item-id}/createLink`
 | [Приглашение пользователей] [пригласить]                                  | `POST /drive/items/{item-id}/invite`
 | [Обновление](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
-| [удаление](../api/permission-delete.md);                    | `DELETE /drive/items/{item-id}/permissions/{id}`
+| [Удаление](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 
 
 
@@ -247,8 +247,6 @@ ms.locfileid: "30482079"
   "keywords": "sharing,permissions,read,write,acl",
   "section": "documentation",
   "tocPath": "Resources/Permission",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/permission.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

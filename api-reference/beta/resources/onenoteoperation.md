@@ -1,23 +1,23 @@
 ---
 title: Тип ресурса onenoteOperation
-description: Состояние определенных операций OneNote, выполняющихся в течение длительного времени.
+description: Состояние определенных длительно выполняемых операций OneNote.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 146a1b1d9a51cc541e06fd789f987a2d39dff48a
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512852"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568873"
 ---
 # <a name="onenoteoperation-resource-type"></a>Тип ресурса onenoteOperation
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Состояние определенных операций OneNote, выполняющихся в течение длительного времени.
+Состояние определенных длительно выполняемых операций OneNote.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -46,15 +46,15 @@ ms.locfileid: "29512852"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |createdDateTime| DateTimeOffset |Время начала операции.|
-|error|[onenoteOperationError](onenoteoperationerror.md)|Ошибка при выполнении операции.|
+|error|[Оненотеоператионеррор](onenoteoperationerror.md)|Ошибка, возвращенная операцией.|
 |id|string|Идентификатор операции. Только для чтения.|
-|lastActionDateTime| DateTimeOffset |Время последнего действия операции.|
-|resourceId|строка|Идентификатор ресурса.|
-|resourceLocation|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
-|status|string|Текущее состояние операции: `notstarted`, `running`, `completed`, `failed`. |
-|percentComplete|string|Процент завершения операции, если операция в состоянии `running`.
+|Ластактиондатетиме| DateTimeOffset |Время последнего действия операции.|
+|resourceId|string|Идентификатор ресурса.|
+|Ресаурцелокатион|string|URI ресурса для объекта. Например, URI ресурса для скопированной страницы или раздела. |
+|status|string|Текущее состояние операции: `notstarted`, `running`,, `completed``failed` |
+|percentComplete|string|Процент завершения операции, если операция все еще находится в `running` состоянии.
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 
@@ -73,8 +73,6 @@ ms.locfileid: "29512852"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenoteoperation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

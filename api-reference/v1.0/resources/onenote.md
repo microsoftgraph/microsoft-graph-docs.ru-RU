@@ -5,11 +5,11 @@ author: jewan-microsoft
 localization_priority: Priority
 ms.prod: onenote
 ms.openlocfilehash: 8240336bfcb9e45e33172c2c1551b71a65c315e0
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27982353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32462804"
 ---
 # <a name="onenote-resource-type"></a>Тип ресурса onenote
 
@@ -47,14 +47,14 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 
 
 ## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |notebooks|Коллекция [Notebook](notebook.md)|Коллекция записных книжек OneNote, принадлежащих пользователю или группе. Только для чтения. Допускается значение null.|
-|operations|[OnenoteOperation](onenoteoperation.md) коллекции |Состояние операций OneNote. Получение коллекции операций не поддерживается, но можно получить состояние длительных операций, если в отклике возвращается заголовок `Operation-Location`. Только для чтения. Допускается значение null.|
-|pages|[OnenotePage](page.md) коллекции|Страницы всех записных книжек OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
-|resources|[OnenoteResource](resource.md) коллекции |Изображения и другие ресурсы file на страницах OneNote. Получение коллекции ресурсов не поддерживается, но можно [получить двоичное содержимое определенного ресурса](resource.md). Только для чтения. Допускается значение null.|
+|operations|Коллекция [OnenoteOperation](onenoteoperation.md) |Состояние операций OneNote. Получение коллекции операций не поддерживается, но можно получить состояние длительных операций, если в отклике возвращается заголовок `Operation-Location`. Только для чтения. Допускается значение null.|
+|pages|Коллекция [OnenotePage](page.md)|Страницы всех записных книжек OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
+|resources|Коллекция [OnenoteResource](resource.md) |Изображения и другие файловые ресурсы на страницах OneNote. Получение коллекции ресурсов не поддерживается, но можно [получить двоичное содержимое определенного ресурса](resource.md). Только для чтения. Допускается значение null.|
 |sectionGroups|Коллекция [SectionGroup](sectiongroup.md)|Группы разделов во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускает значение null.|
-|sections|[OnenoteSection](section.md) коллекции|Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
+|sections|Коллекция [OnenoteSection](section.md)|Разделы во всех записных книжках OneNote, принадлежащих пользователю или группе.  Только для чтения. Допускается значение null.|
 
 ## <a name="methods"></a>Методы
 
@@ -65,7 +65,7 @@ https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections |
 |[Создание страницы](../api/onenote-post-pages.md) |[Page](page.md)| Создание страницы путем публикации в коллекции страниц.|
 |[Перечисление страниц](../api/onenote-list-pages.md) |Коллекция [Page](page.md)| Получение коллекции страниц.|
 |[Перечисление групп разделов](../api/onenote-list-sectiongroups.md) |Коллекция [SectionGroup](sectiongroup.md)| Получение коллекции групп разделов.|
-|[Перечисление разделов](../api/onenote-list-sections.md) |[OnenoteSection](section.md) коллекции| Получение коллекции разделов.|
+|[Перечисление разделов](../api/onenote-list-sections.md) |Коллекция [OnenoteSection](section.md)| Получение коллекции разделов.|
 
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 5ac61b494fc261832a864c4c87998532a863f87b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774143"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572033"
 ---
 # <a name="windows10vpnconnectiontype-enum-type"></a>тип перечисления windows10VpnConnectionType
 
@@ -23,15 +23,15 @@ ms.locfileid: "31774143"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Пулсесекуре|нуль|Безопасный импульс.|
-|f5EdgeClient|1,1|ПоГраничный клиент F5.|
-|Деллсоникваллмобилеконнект|2|Мобильное подключение Dell Сониквалл.|
-|Чеккпоинткапсулевпн|4|Проверка поКапсулы VPN.|
-|Автоматически|SP4|Автоматически.|
-|Клиентских|17:00|Клиентских.|
-|L2TP|ICMPv6|L2TP.|
-|PPTP|см|PPTP.|
-|клиентов|8,5|Клиентов.|
-|Элемент paloaltoglobalprotect|10|Palo Alto сети Глобалпротект.|
+|f5EdgeClient|1 |ПоГраничный клиент F5.|
+|Деллсоникваллмобилеконнект|2 |Мобильное подключение Dell Сониквалл.|
+|Чеккпоинткапсулевпн|3 |Проверка поКапсулы VPN.|
+|Автоматически|4 |Автоматически.|
+|Клиентских|5 |Клиентских.|
+|L2TP|6 |L2TP.|
+|PPTP|7 |PPTP.|
+|клиентов|8 |Клиентов.|
+|Элемент paloaltoglobalprotect|9 |Palo Alto сети Глобалпротект.|
 
 
 

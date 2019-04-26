@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: dbef3e97651d5b65b64488f308212ff0fe2d89b3
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27915615"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569685"
 ---
 # <a name="create-chart"></a>Создание объекта Chart
 
@@ -35,12 +35,12 @@ POST /workbook/worksheets/{id|name}/charts/
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
-В тексте запроса укажите представление JSON объекта [WorkbookChart](../resources/chart.md) .
+## <a name="request-body"></a>Текст запроса
+В тексте запроса добавьте представление объекта [Воркбукчарт](../resources/chart.md) в формате JSON.
 
 ## <a name="response"></a>Ответ
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [WorkbookChart](../resources/chart.md) в теле ответа.
+В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [воркбукчарт](../resources/chart.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -60,9 +60,9 @@ Content-length: 52
   "left": 99
 }
 ```
-В тексте запроса укажите представление JSON объекта [WorkbookChart](../resources/chart.md) .
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+В тексте запроса добавьте представление объекта [Воркбукчарт](../resources/chart.md) в формате JSON.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

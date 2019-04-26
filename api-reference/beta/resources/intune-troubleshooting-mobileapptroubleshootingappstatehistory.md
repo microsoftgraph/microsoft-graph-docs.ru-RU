@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 75285b5dec8b3b3808f2e81a4655d9298d12d486
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31772085"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570668"
 ---
 # <a name="mobileapptroubleshootingappstatehistory-resource-type"></a>Тип ресурса Мобилеапптраублешутингаппстатехистори
 
@@ -26,7 +26,7 @@ ms.locfileid: "31772085"
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |Оккурренцедатетиме|DateTimeOffset|Время возникновения элемента журнала. НаСледуется от [мобилеапптраублешутингхисторитем](../resources/intune-troubleshooting-mobileapptroubleshootinghistoryitem.md)|
-|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md)|Идентификатор группы безопасности AAD, к которой назначена эта группа. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
+|actionType|[mobileAppActionType](../resources/intune-troubleshooting-mobileappactiontype.md);|Идентификатор группы безопасности AAD, к которой назначена эта группа. Возможные значения: `unknown`, `installCommandSent`, `installed`, `uninstalled`, `userRequestedInstall`.|
 |Рунстате|[Рунстате](../resources/intune-shared-runstate.md)|Состояние элемента. Возможные значения: `unknown`, `success`, `fail`.|
 |errorCode|String|Код ошибки для сбоя, пустой при отсутствии ошибки.|
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: a9f3d7ebb6e44224d637a59220acc9d17c449871
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30262799"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571116"
 ---
 # <a name="windowshelloforbusinesspinusage-enum-type"></a>тип перечисления Виндовшеллофорбусинесспинусаже
 
@@ -20,9 +20,9 @@ ms.locfileid: "30262799"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|разрешенных|нуль|Н/Д|
-|Обязательный|1,1|Н/Д|
-|разрешена|2|Н/Д|
+|разрешенных|нуль|Пока не задокументировано.|
+|Обязательный|1 |Пока не задокументировано.|
+|разрешена|2 |Пока не задокументировано.|
 
 
 

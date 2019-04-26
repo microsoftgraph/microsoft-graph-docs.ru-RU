@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса invitationParticipantInfo
-description: '**InvitationParticipant** используется для представления набора удостоверения, связанного с приглашением беседы и предоставляет приглашение Дополнительные параметры.'
+title: Тип ресурса ИнвитатионпартиЦипантинфо
+description: '**ИнвитатионпартиЦипант** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569966"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса invitationParticipantInfo
+# <a name="invitationparticipantinfo-resource-type"></a>Тип ресурса ИнвитатионпартиЦипантинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**InvitationParticipant** используется для представления набора удостоверения, связанного с приглашением беседы и предоставляет приглашение Дополнительные параметры.
+**ИнвитатионпартиЦипант** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                           | Тип                          | Описание                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| endpointType                       | String                        | Возможные значения: `default`, `voicemail`. |
-| identity                           | [identitySet](identityset.md) | [IdentitySet](identityset.md) , связанной с приглашением.                   |
+| Ендпоинттипе                       | String                        | Возможные значения: `default`, `voicemail`. |
+| хищения                           | [identitySet](identityset.md) | [Удостоверение](identityset.md) , связанное с этим приглашением.                   |
 | languageId                         | String                        | Строка языка и региональных параметров языка.                                                                                     |
-| область                             | String                        | Область участника.                                                           |
-| replacesCallId                     | String                        | Необязательный параметр. Вызов которого idenity целевой в настоящее время является частью. Этот звонок будет удалена, после добавления участника. |
+| региональных                             | String                        | Регион участника.                                                           |
+| Реплацескаллид                     | String                        | Необязательное свойство. Вызов, частью которого в данный момент является целевой иденити. Этот вызов будет сброшен после добавления участника. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -57,8 +57,6 @@ ms.locfileid: "29641920"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/invitationparticipantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

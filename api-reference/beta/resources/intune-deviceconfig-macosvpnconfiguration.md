@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8fb1ab7e8625ad79b83d3930e45d6241d30deb04
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788564"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570675"
 ---
 # <a name="macosvpnconfiguration-resource-type"></a>Тип ресурса Макосвпнконфигуратион
 

@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 9da0c29acf49d0e183a2ded4652fe0972f21bf76
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27925919"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569034"
 ---
 # <a name="chartlineformat-resource-type"></a>Тип ресурса ChartLineFormat
 
@@ -20,16 +20,16 @@ ms.locfileid: "27925919"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта ChartLineFormat](../api/chartlineformat-get.md) | [WorkbookChartLineFormat](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
-|[обновление](../api/chartlineformat-update.md). | [WorkbookChartLineFormat](chartlineformat.md) |Обновление объекта ChartLineFormat. |
+|[Получение объекта ChartLineFormat](../api/chartlineformat-get.md) | [Воркбукчартлинеформат](chartlineformat.md) |Чтение свойств и связей объекта chartLineFormat.|
+|[Обновление](../api/chartlineformat-update.md) | [Воркбукчартлинеформат](chartlineformat.md) |Обновление объекта ChartLineFormat. |
 |[Clear](../api/chartlineformat-clear.md)|Нет|Очищает формат линий элемента диаграммы.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|color|строка|HTML-код цвета, представляющий цвет линий в диаграмме.|
+|color|string|HTML-код цвета, представляющий цвет линий в диаграмме.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

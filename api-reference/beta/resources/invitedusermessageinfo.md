@@ -1,29 +1,29 @@
 ---
-title: Настройка приглашения
-description: Объект invitedUserMessageInfo позволяет настроить сообщение приглашение.
+title: Настройка сообщения с приглашением
+description: Объект invitedUserMessageInfo позволяет настроить сообщение с приглашением.
 localization_priority: Normal
 ms.openlocfilehash: fa7ead6938ddfaca78322f56f4638c45d3f2df14
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643792"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569972"
 ---
-# <a name="configuring-the-invitation-message"></a>Настройка приглашения
+# <a name="configuring-the-invitation-message"></a>Настройка сообщения с приглашением
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объект invitedUserMessageInfo позволяет настроить сообщение [приглашение](invitation.md).
+Объект invitedUserMessageInfo позволяет настроить сообщение с приглашением [](invitation.md) .
 
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|ccRecipients|[Recipients](recipient.md)|Дополнительные получатели, которым следует отправить приглашение. В настоящее время поддерживается только 1 дополнительный получатель.|
-|customizedMessageBody|Строка|Ваш собственный текст сообщения, который можно отправлять вместо предоставляемого по умолчанию.|
-|messageLanguage|String|Выбранный вами язык для сообщения, которое отправляется по умолчанию. Если указано значение customizedMessageBody, это свойство игнорируется, и сообщение отправляется с помощью customizedMessageBody. Язык должен быть указан в формате ISO 639. Значение по умолчанию — en-US.|
+|ccRecipients|[Получатели](recipient.md)|Дополнительные получатели сообщение о приглашении должно быть отправлено. В настоящее время поддерживается только один дополнительный получатель.|
+|Кустомизедмессажебоди|String|Настраиваемый текст сообщения, которое вы хотите отправить, если вы не хотите использовать сообщение по умолчанию.|
+|Мессажелангуаже|String|Язык, по которому необходимо отправить сообщение по умолчанию. Если указан параметр Кустомизедмессажебоди, это свойство игнорируется, а сообщение отправляется с помощью Кустомизедмессажебоди. Языковой формат должен быть в СТАНДАРТе ISO 639. Значение по умолчанию — en-US.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {"blockType": "resource", "@odata.type": "microsoft.graph.invitedUserMessageInfo"} -->

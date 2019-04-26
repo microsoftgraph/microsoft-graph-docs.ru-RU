@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 831cea99e2eefaf87db814b149798506950bf407
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27986595"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569447"
 ---
 # <a name="chart-resource-type"></a>Тип ресурса Chart
 
@@ -20,17 +20,17 @@ ms.locfileid: "27986595"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Получение объекта Chart](../api/chart-get.md) | [WorkbookChart](chart.md) |Чтение свойств и связей объекта диаграммы.|
-|[Создание объекта ChartSeries](../api/chart-post-series.md) |[WorkbookChartSeries](chartseries.md)| Создание объекта ChartSeries путем добавления в коллекцию рядов.|
-|[Список рядов](../api/chart-list-series.md) |[WorkbookChartSeries](chartseries.md) коллекции| Получение коллекции объектов ChartSeries.|
-|[Обновление](../api/chart-update.md) | [WorkbookChart](chart.md)   |Обновление объекта Chart. |
+|[Получение объекта Chart](../api/chart-get.md) | [Воркбукчарт](chart.md) |Чтение свойств и связей объекта диаграммы.|
+|[Создание объекта ChartSeries](../api/chart-post-series.md) |[Воркбукчартсериес](chartseries.md)| Создание объекта ChartSeries путем добавления в коллекцию рядов.|
+|[Список рядов](../api/chart-list-series.md) |Коллекция [воркбукчартсериес](chartseries.md)| Получение коллекции объектов ChartSeries.|
+|[Обновление](../api/chart-update.md) | [Воркбукчарт](chart.md)   |Обновление объекта Chart. |
 |[Image](../api/chart-image.md)|Строка изображения с кодировкой base64|Отрисовывает диаграмму в виде изображения с кодировкой base64, масштабируя ее в соответствии с указанным размером.|
-|[Delete](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
+|[Удаление](../api/chart-delete.md)|Нет|Удаляет объект диаграммы.|
 |[Setdata](../api/chart-setdata.md)|Нет|Сбрасывает исходные данные для диаграммы.|
 |[Setposition](../api/chart-setposition.md)|Нет|Располагает диаграмму относительно ячеек на листе.|
-|[Список](../api/chart-list.md) | [WorkbookChart](chart.md) коллекции |Получение коллекции объектов диаграмм. |
-|[Itemat](../api/chartcollection-itemat.md)|[WorkbookChart](chart.md)|Возвращает диаграмму на основании сведений о ее позиции в коллекции.|
-|[Add](../api/chartcollection-add.md)|[WorkbookChart](chart.md)|Создает диаграмму.|
+|[Список](../api/chart-list.md) | Коллекция [воркбукчарт](chart.md) |Получение коллекции объектов диаграмм. |
+|[Itemat](../api/chartcollection-itemat.md)|[Воркбукчарт](chart.md)|Возвращает диаграмму с учетом ее положения в коллекции.|
+|[Add](../api/chartcollection-add.md)|[Воркбукчарт](chart.md)|Создает диаграмму.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -38,20 +38,20 @@ ms.locfileid: "27986595"
 |height|double|Обозначает высоту объекта диаграммы (в пунктах).|
 |id|строка|Возвращает диаграмму с учетом ее положения в коллекции. Только для чтения.|
 |left|double|Расстояние в пунктах от левого края диаграммы до начала листа.|
-|name|строка|Обозначает имя объекта диаграммы.|
+|name|string|Обозначает имя объекта диаграммы.|
 |top|double|Представляет расстояние в пунктах от верхнего края объекта до верхнего края первой строки (на листе) или до верхнего края области диаграммы (на диаграмме).|
 |width|double|Представляет ширину объекта диаграммы (в пунктах).|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|axes|[WorkbookChartAxes](chartaxes.md)|Представляет оси диаграммы. Только для чтения.|
-|dataLabels|[WorkbookChartDataLabels](chartdatalabels.md)|Представляет метки данных на диаграмме. Только для чтения.|
-|format|[WorkbookChartAreaFormat](chartareaformat.md)|Инкапсулирует свойства формата для области диаграммы. Только для чтения.|
-|legend|[WorkbookChartLegend](chartlegend.md)|Представляет условные обозначения для диаграммы. Только для чтения.|
-|series|[WorkbookChartSeries](chartseries.md) коллекции|Представляет один ряд данных или коллекцию рядов данных в диаграмме. Только для чтения.|
-|title|[WorkbookChartTitle](charttitle.md)|Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование. Только для чтения.|
-|worksheet|[WorkbookWorksheet](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
+|axes|[Воркбукчартаксес](chartaxes.md)|Представляет оси диаграммы. Только для чтения.|
+|dataLabels|[Воркбукчартдаталабелс](chartdatalabels.md)|Представляет метки данных на диаграмме. Только для чтения.|
+|format|[Воркбукчартареаформат](chartareaformat.md)|Инкапсулирует свойства формата для области диаграммы. Только для чтения.|
+|legend|[Воркбукчартлеженд](chartlegend.md)|Представляет условные обозначения для диаграммы. Только для чтения.|
+|series|Коллекция [воркбукчартсериес](chartseries.md)|Представляет один ряд данных или коллекцию рядов данных в диаграмме. Только для чтения.|
+|title|[Воркбукчарттитле](charttitle.md)|Представляет заголовок указанной диаграммы, включая его текст, видимость, положение и форматирование. Только для чтения.|
+|лист|[Воркбукворкшит](worksheet.md)|Лист, содержащий текущую диаграмму. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

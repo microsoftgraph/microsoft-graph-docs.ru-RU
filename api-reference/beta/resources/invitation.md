@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 6f303e55735c24edc46cb7107d9541c4b20c479a
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640555"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570098"
 ---
 # <a name="invitation-manager"></a>Диспетчер приглашений
 
@@ -41,11 +41,11 @@ ms.locfileid: "29640555"
 |sendInvitationMessage|Boolean|Указывает, следует ли отправлять письмо приглашаемому пользователю. Значение по умолчанию: false.|
 |inviteRedirectUrl|String|URL-адрес, на который пользователь перенаправляется после активации приглашения. Указывать обязательно.|
 |inviteRedeemUrl|String|URL-адрес для активации приглашения. Только для чтения.|
-|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. Значение по умолчанию: Guest. Администратор компании может заменить его на Member. |
+|invitedUserType|String|Элемент userType, связанный с приглашаемым пользователем. Значение по умолчанию: Guest. Вы можете пригласить как участник, если вы являетесь администратором компании. |
 |status|String|Состояние приглашения. Возможные значения: PendingAcceptance, Completed, InProgress и Error|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |invitedUser|[User](user.md)|Пользователь, создаваемый при создании приглашения. Только для чтения.|
 

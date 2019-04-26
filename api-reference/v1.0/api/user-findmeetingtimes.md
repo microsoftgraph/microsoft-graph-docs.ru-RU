@@ -5,11 +5,11 @@ localization_priority: Priority
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 661b2f25f14baddd04e15c7a9fcf38d9f1df4079
-ms.sourcegitcommit: a90abf5b89dbbdfefb1b7794d1f12c6e2bfb0cda
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936355"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567874"
 ---
 # <a name="user-findmeetingtimes"></a>user: findMeetingTimes
 Предложение времени проведения собрания и местоположения с учетом доступности организатора и участников, а также ограничений по местоположению или времени, указанных в качестве параметров.
@@ -353,6 +353,8 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
   "suppressions": [
       "Warning: /api-reference/v1.0/api/user-findmeetingtimes.md:
       Failed to parse any rows out of table with headers: |activityDomain value|Suggestions for meeting times|",
+      "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
+      Expected type Double but actual was Int64. Property: confidence, actual value: '100'",
       "Error: user_findmeetingtimes/meetingTimeSuggestions/member/confidence:\r\n
       Expected type Float but actual was Int64. Property: confidence, actual value: '100'"
   ],

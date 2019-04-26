@@ -1,19 +1,19 @@
 ---
 title: 'message: move'
-description: Переместите сообщение в папку. Это создает новую копию сообщения в папке назначения и удаляет исходное сообщение.
+description: Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения и удаляется исходное сообщение.
 author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: outlook
 ms.openlocfilehash: 0a6631bd6c8313751f9d34efc68d48fa0c38ffa9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27977159"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32463630"
 ---
 # <a name="message-move"></a>message: move
 
-Переместите сообщение в папку. Это создает новую копию сообщения в папке назначения и удаляет исходное сообщение.
+Перемещение сообщения в папку. При этом в целевой папке создается новая копия сообщения и удаляется исходное сообщение.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,20 +40,20 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 | Заголовок | Значение |
 |:-------|:------|
-| Authorization | `Bearer {token}`. Обязательный. |
-| Content-Type | `application/json`. Обязательный. |
+| Авторизация | `Bearer {token}`. Обязательно. |
+| Content-Type | `application/json`. Обязательно. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр   | Тип |Описание|
 |:---------------|:--------|:----------|
-|destinationId|String|Идентификатор папки назначения, или имя известных папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
+|destinationId|String|Идентификатор целевой папки либо имя известной папки. Список поддерживаемых известных имен см. в статье [Тип ресурса mailFolder](../resources/mailfolder.md).|
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и ресурсов [сообщения](../resources/message.md) в теле ответа.
+В случае успеха этот метод возвращает код отклика `201 Created` и ресурс [message](../resources/message.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
@@ -61,7 +61,7 @@ POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/move
 
 ##### <a name="request"></a>Запрос
 
-Следующий запрос перемещает указанное сообщение в папки «Удаленные», определяется именем известных папки `deleteditems`.
+Приведенный ниже запрос перемещает указанное сообщение в папку "Удаленные", указанную по ее известному имени `deleteditems`.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["AAMkADhAAATs28OAAA="],
@@ -77,11 +77,11 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 Ниже приведен пример отклика.
 
-> **Примечание:** объект ответа, показанный здесь может быть сокращение для удобства чтения. При фактическом вызове будут возвращены все свойства.
+> **Примечание.**  Представленный здесь объект ответа может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

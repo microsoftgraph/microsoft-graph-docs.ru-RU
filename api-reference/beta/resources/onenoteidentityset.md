@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса oneNoteIdentitySet
-description: '**Поддержка готовится к выпуску**'
+title: Тип ресурса Оненотеидентитисет
+description: '**Поддержка скоро**'
 localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: e149d5548ce3585bbcda1f0a199fa97d7543af77
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642473"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568894"
 ---
-# <a name="onenoteidentityset-resource-type"></a>Тип ресурса oneNoteIdentitySet
+# <a name="onenoteidentityset-resource-type"></a>Тип ресурса Оненотеидентитисет
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-**Поддержка готовится к выпуску**
+**Поддержка скоро**
 
-Тип OneNoteIdentitySet — с ключом коллекцию объектов [OneNoteIdentity](onenoteidentity.md) .
-Он используется для представления набора удостоверения, связанные с различные события для _записной книжки_, _раздел_ или _страницы_, например, _созданные_ или _Кем изменено_. 
+Тип Оненотеидентитисет является коллекцией с ключами объектов [оненотеидентити](onenoteidentity.md) .
+Он используется для представления набора удостоверений, связанных с различными событиями для _записНой книжки_, _раздела_ или _страницы_, например _созданных автором_ или автором _последнего изменения_. 
  
-В настоящее время в нем ключей и одного _**пользователя**_.  В будущем могут быть добавлены разделы, такие как устройство или приложение для изменения элемента.
+В настоящее время он содержит один ключ, _**User**_.  В дальнейшем можно добавить такие ключи, как устройство или приложение для изменения элемента.
 
-В будущем этого типа будут объединены с [IdentitySet](identityset.md)
+В дальнейшем этот тип будет объединен с [Identity](identityset.md)
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,19 +33,19 @@ ms.locfileid: "29642473"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.onenoteidentityset"
+  "@odata.type": "microsoft.graph.onenoteIdentityset"
 }-->
 
 ```json
 {
-  "user": {"@odata.type": "microsoft.graph.oneNoteIdentity"}
+  "user": {"@odata.type": "microsoft.graph.onenoteIdentity"}
 }
 
 ```
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|user|[oneNoteIdentity](onenoteidentity.md)|Ресурс OneNoteIdentity, представляющий пользователя.|
+|user|[Оненотеидентити](onenoteidentity.md)|Ресурс Оненотеидентити, представляющий пользователя.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -56,8 +56,6 @@ ms.locfileid: "29642473"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/onenoteidentityset.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

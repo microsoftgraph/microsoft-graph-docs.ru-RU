@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса teamMessagingSettings
-description: Параметры для настройки системы обмена сообщениями и упоминания рабочих групп.
+title: Тип ресурса Теаммессагингсеттингс
+description: Параметры для настройки обмена сообщениями и упоминаний в команде.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f8b643b752ab130433153e7a238a64d2960d6705
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967962"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573846"
 ---
-# <a name="teammessagingsettings-resource-type"></a>Тип ресурса teamMessagingSettings
+# <a name="teammessagingsettings-resource-type"></a>Тип ресурса Теаммессагингсеттингс
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-
-Параметры для настройки системы обмена сообщениями и упоминания в [группы](team.md).
+Параметры для настройки обмена сообщениями и упоминаний в [команде](team.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|allowUserEditMessages|Логический|Если параметр имеет значение true, пользователи могут изменять свои сообщения;|
-|allowUserDeleteMessages|Логический|Если параметр имеет значение true, пользователи могут удалять свои сообщения.|
-|allowOwnerDeleteMessages|Логический|Если параметр имеет значение true, владельцы могут удалять все сообщения.|
-|allowTeamMentions|Логический|Если задано значение true, допускаются упоминания @team.|
-|allowChannelMentions|Логический|Если задано значение true, допускаются упоминания @channel.|
+|Алловусередитмессажес|Boolean|Если задано значение true, пользователи могут редактировать сообщения.|
+|Алловусерделетемессажес|Boolean|Если задано значение true, пользователи могут удалять свои сообщения.|
+|Аллововнерделетемессажес|Boolean|Если задано значение true, владельцы могут удалять любые сообщения.|
+|Алловтеамментионс|Boolean|Если задано значение true, @team упоминаний разрешены.|
+|Алловчаннелментионс|Boolean|Если задано значение true, @channel упоминаний разрешены.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -47,10 +47,13 @@ ms.locfileid: "27967962"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "team's messagingSettings resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
