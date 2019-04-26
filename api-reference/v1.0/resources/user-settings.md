@@ -1,40 +1,40 @@
 ---
-title: параметры типа ресурсов
-description: 'Параметры текущего пользователя. '
+title: Тип ресурса settings
+description: 'Текущие параметры пользователя. '
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 433824e715940f2309619a0467179ef99ee3daec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27981408"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456935"
 ---
-# <a name="settings-resource-type"></a>параметры типа ресурсов
+# <a name="settings-resource-type"></a>Тип ресурса settings
 
-Параметры текущего пользователя. Чтобы узнать, как получить или обновить пользовательские параметры, обратитесь к разделу [получить параметры](../api/user-get-settings.md) и [обновление параметров](../api/user-update-settings.md).
+Текущие параметры пользователя. Сведения о получении и обновлении параметров пользователя см. в статьях [Получение параметров](../api/user-get-settings.md) и [Обновление параметров](../api/user-update-settings.md).
 
 Этот ресурс поддерживает:
 
-- Проверка ли пользователь и организации пользователя "участие" для обнаружения контента.
-- Отключение и Включение контента обнаружения для определенных пользователей. Кроме того, отключаются документов в Office углубимся.
+- Проверку участия пользователя и организации пользователя в поиске содержимого.
+- Включение и отключение поиска содержимого для конкретных пользователей. При этом также отключаются документы в Office Delve.
 
 ## <a name="methods"></a>Методы
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
-|[Получение параметров пользователя](../api/user-get-settings.md) |[Параметры](../resources/user-settings.md)| Получите параметры пользователей и организаций. |
-|[Изменение параметров пользователей](../api/user-update-settings.md) |[Параметры](../resources/user-settings.md)| Обновление текущих параметров пользователя. |
+|[Получение параметров пользователя](../api/user-get-settings.md) |[settings](../resources/user-settings.md)| Получение параметров пользователя и организации. |
+|[Обновление параметров пользователя](../api/user-update-settings.md) |[settings](../resources/user-settings.md)| Обновление текущих параметров пользователя. |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ для пользователя отключена [прибора](/graph/api/resources/insights-trending?view=graph-rest-beta) API. Если параметр имеет значение true, документов в углубимся Office пользователя отключены. Если задано значение true, релевантность содержимое, отображаемое в Office 365, например в предлагаемые сайты в Домашняя страница SharePoint и влияет на представление обнаружения в OneDrive для бизнеса. Пользователи могут управлять этим параметром [Углубимся Office](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
-|contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отражает [уровень организации](https://support.office.com/en-us/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff) управление делегированный доступ, [прибора](/graph/api/resources/insights-trending?view=graph-rest-beta) API. Если значение равно true, организации не имеет доступа к углубимся Office. Релевантность содержимое, отображаемое в Office 365, например в предлагаемые сайты в Домашняя страница SharePoint и представления обнаружения в OneDrive для бизнеса контролируется для всей организации. Этот параметр доступен только для чтения и может быть изменено только администраторами в [центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
+|contributionToContentDiscoveryDisabled|Логический|Если задано значение true, делегированный доступ к API [trending](/graph/api/resources/insights-trending?view=graph-rest-beta) пользователя отключен. Если задано значение true, документы в Office Delve пользователя отключены. Установка значения true влияет на релевантность содержимого, отображаемого в Office 365, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Пользователи могут управлять этим параметром в [Office Delve](https://support.office.com/en-us/article/are-my-documents-safe-in-office-delve-f5f409a2-37ed-4452-8f61-681e5e1836f3?ui=en-US&rs=en-US&ad=US#bkmk_optout). |
+|contributionToContentDiscoveryAsOrganizationDisabled|Логический|Отображает [параметр на уровне организации](https://support.office.com/ru-RU/article/office-delve-for-office-365-admins-54f87a42-15a4-44b4-9df0-d36287d9531b#bkmk_delveonoff), управляющий делегированным доступом к API [trending](/graph/api/resources/insights-trending?view=graph-rest-beta). Если задано значение true, у организации отсутствует доступ к Office Delve. Это влияет для всей организации на релевантность содержимого, отображаемого в Office 365, например в рекомендуемых сайтах на домашней странице SharePoint и в представлении "Обнаружение" в OneDrive для бизнеса. Этот параметр доступен только для чтения и может изменяться только администраторами в [Центре администрирования SharePoint](https://support.office.com/article/about-the-office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23?ui=en-US&rs=en-US&ad=US).|
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Представление в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

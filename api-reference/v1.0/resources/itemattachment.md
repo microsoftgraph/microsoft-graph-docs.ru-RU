@@ -3,11 +3,11 @@ title: Тип ресурса itemAttachment
 description: 'Контакт, событие или сообщение, вложенное в другое событие, сообщение или запись.  '
 localization_priority: Priority
 ms.openlocfilehash: df996175e545b78f4ca9a1b6271b9cb012ffffce
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27853524"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32584819"
 ---
 # <a name="itemattachment-resource-type"></a>Тип ресурса itemAttachment
 
@@ -20,7 +20,7 @@ ms.locfileid: "27853524"
 | Метод       | Возвращаемый тип  |Описание|
 |:---------------|:--------|:----------|
 |[Получение](../api/attachment-get.md) | [itemAttachment](itemattachment.md) |Чтение свойств и связей объекта itemAttachment.|
-|[Delete](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
+|[Удаление](../api/attachment-delete.md) | Нет |Удаление объекта itemAttachment. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -33,7 +33,7 @@ ms.locfileid: "27853524"
 |size|Int32|Размер вложения в байтах.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |item|[OutlookItem](outlookitem.md)|Вложенное сообщение или событие. Свойство навигации.|
 
