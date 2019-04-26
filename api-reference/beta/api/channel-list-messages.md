@@ -4,62 +4,66 @@ description: 'Получение списка сообщений (без отв�
 localization_priority: Priority
 author: nkramer
 ms.prod: microsoft-teams
-ms.openlocfilehash: 000e85db202ea08677876a288e6a68dc2e20ed52
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.openlocfilehash: c5b442ff81f08d4daf9112e3eb129330877cba5f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31890005"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32456495"
 ---
-# <a name="list-channel-messages"></a><span data-ttu-id="95177-104">Перечисление сообщений в каналах</span><span class="sxs-lookup"><span data-stu-id="95177-104">List channel messages</span></span>
+# <a name="list-channel-messages"></a><span data-ttu-id="c409a-104">Перечисление сообщений в каналах</span><span class="sxs-lookup"><span data-stu-id="c409a-104">List channel messages</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="95177-105">Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="95177-105">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> <span data-ttu-id="95177-106">Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-get-messagereply.md) или [получения ответа на сообщение](channel-list-messagereplies.md).</span><span class="sxs-lookup"><span data-stu-id="95177-106">To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) API.</span></span> 
+<span data-ttu-id="c409a-105">Получение списка [сообщений](../resources/chatmessage.md) (без ответов) в [канале](../resources/channel.md) [команды](../resources/team.md).</span><span class="sxs-lookup"><span data-stu-id="c409a-105">Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md).</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="95177-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="95177-107">Permissions</span></span>
-<span data-ttu-id="95177-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="95177-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c409a-106">Чтобы получить ответы на сообщение, вызовите API [перечисления ответов на сообщение](channel-get-messagereply.md) или [получения ответа на сообщение](channel-list-messagereplies.md).</span><span class="sxs-lookup"><span data-stu-id="c409a-106">To get the replies for a message, call the [list message replies](channel-get-messagereply.md) or the [get message reply](channel-list-messagereplies.md) API.</span></span> 
 
-|<span data-ttu-id="95177-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="95177-110">Permission Type</span></span>|<span data-ttu-id="95177-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="95177-111">Permissions (from least to most privileged)</span></span>|
+## <a name="permissions"></a><span data-ttu-id="c409a-107">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c409a-107">Permissions</span></span>
+<span data-ttu-id="c409a-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, в том числе о выборе разрешений, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c409a-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="c409a-110">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c409a-110">Permission Type</span></span>|<span data-ttu-id="c409a-111">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c409a-111">Permissions (from least to most privileged)</span></span>|
 |---------|-------------|
-|<span data-ttu-id="95177-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="95177-112">Delegated (work or school account)</span></span>|<span data-ttu-id="95177-113">Group.Read.All,Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="95177-113">Group.Read.All,Group.ReadWrite.All</span></span>|
-|<span data-ttu-id="95177-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="95177-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="95177-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="95177-115">Not supported</span></span>|
-|<span data-ttu-id="95177-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="95177-116">Application</span></span>| <span data-ttu-id="95177-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="95177-117">Not supported.</span></span> |
+|<span data-ttu-id="c409a-112">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c409a-112">Delegated (work or school account)</span></span>|<span data-ttu-id="c409a-113">Group.Read.All,Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c409a-113">Group.Read.All,Group.ReadWrite.All</span></span>|
+|<span data-ttu-id="c409a-114">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c409a-114">Delegated (personal Microsoft account)</span></span>|<span data-ttu-id="c409a-115">Не поддерживается</span><span class="sxs-lookup"><span data-stu-id="c409a-115">Not supported</span></span>|
+|<span data-ttu-id="c409a-116">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c409a-116">Application</span></span>| <span data-ttu-id="c409a-117">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c409a-117">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="95177-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="95177-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c409a-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c409a-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/messages
 ```
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="95177-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="95177-119">Optional query parameters</span></span>
-<span data-ttu-id="95177-120">[Параметры запроса OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) в настоящее время не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="95177-120">The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="c409a-119">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="c409a-119">Optional query parameters</span></span>
 
-## <a name="request-headers"></a><span data-ttu-id="95177-121">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="95177-121">Request headers</span></span>
-| <span data-ttu-id="95177-122">Заголовок</span><span class="sxs-lookup"><span data-stu-id="95177-122">Header</span></span>       | <span data-ttu-id="95177-123">Значение</span><span class="sxs-lookup"><span data-stu-id="95177-123">Value</span></span> |
+<span data-ttu-id="c409a-120">Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.</span><span class="sxs-lookup"><span data-stu-id="c409a-120">You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response.</span></span> <span data-ttu-id="c409a-121">Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.</span><span class="sxs-lookup"><span data-stu-id="c409a-121">The other [OData query parameters](/graph/query-parameters) are not currently supported.</span></span>
+
+## <a name="request-headers"></a><span data-ttu-id="c409a-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c409a-122">Request headers</span></span>
+| <span data-ttu-id="c409a-123">Заголовок</span><span class="sxs-lookup"><span data-stu-id="c409a-123">Header</span></span>       | <span data-ttu-id="c409a-124">Значение</span><span class="sxs-lookup"><span data-stu-id="c409a-124">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="95177-124">Авторизация</span><span class="sxs-lookup"><span data-stu-id="95177-124">Authorization</span></span>  | <span data-ttu-id="95177-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="95177-p104">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="c409a-125">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c409a-125">Authorization</span></span>  | <span data-ttu-id="c409a-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c409a-p104">Bearer {token}. Required.</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="95177-127">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="95177-127">Request body</span></span>
-<span data-ttu-id="95177-128">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="95177-128">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="c409a-128">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="c409a-128">Request body</span></span>
+<span data-ttu-id="c409a-129">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="c409a-129">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="95177-129">Отклик</span><span class="sxs-lookup"><span data-stu-id="95177-129">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c409a-130">Отклик</span><span class="sxs-lookup"><span data-stu-id="c409a-130">Response</span></span>
 
-<span data-ttu-id="95177-130">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="95177-130">If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.</span></span>
-## <a name="example"></a><span data-ttu-id="95177-131">Пример</span><span class="sxs-lookup"><span data-stu-id="95177-131">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="95177-132">Запрос</span><span class="sxs-lookup"><span data-stu-id="95177-132">Request</span></span>
-<span data-ttu-id="95177-133">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="95177-133">Here is an example of the request.</span></span>
+<span data-ttu-id="c409a-131">В случае успешного выполнения этот метод возвращает код отклика `200 OK` и коллекцию объектов [chatmessage](../resources/chatmessage.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="c409a-131">If successful, this method returns a `200 OK` response code and a collection of [chatmessage](../resources/chatmessage.md) objects in the response body.</span></span>
+## <a name="example"></a><span data-ttu-id="c409a-132">Пример</span><span class="sxs-lookup"><span data-stu-id="c409a-132">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="c409a-133">Запрос</span><span class="sxs-lookup"><span data-stu-id="c409a-133">Request</span></span>
+<span data-ttu-id="c409a-134">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c409a-134">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"],
   "name": "get_channel_messages"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
+GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages
 ```
-##### <a name="response"></a><span data-ttu-id="95177-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="95177-134">Response</span></span>
-<span data-ttu-id="95177-135">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="95177-135">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="c409a-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c409a-135">Response</span></span>
+<span data-ttu-id="c409a-136">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c409a-136">Here is an example of the response.</span></span> 
 
-><span data-ttu-id="95177-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="95177-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="c409a-p105">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="c409a-p105">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -69,63 +73,150 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}/messages
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
-  "value": [
-    {
-        "id": "id-value",
-        "replyToId": "id-value",
-        "from" : {
-            "user": { 
-                "id":  "id-value",
-                "displayName": "John Doe"
-            }  
-        },
-        "etag": "id-value",
-        "messageType": "message",
-        "createdDateTime": "2018-07-09T07:40:20.152Z",
-        "lastModifiedDateTime": "2018-07-09T07:40:20.152Z",
-        "body": {
-            "content": "Hello World",
-            "contentType": "Text"
-        },
-        "attachments": [
-          {
-              "id": "5e32f195-168a-474f-a273-123123123",
-              "contentType": "reference",
-              "contentUrl": "https://test.sharepoint.com/sites/TestSite/Shared%20Documents/General/Test.txt",
-              "content": null,
-              "name": "Test.txt",
-              "thumbnailUrl": null
-          }
-        ],
-        "mentions": [
-            {
-                "id": "id-value ",
-                "mentionText": "Test User",
-                "mentioned": {
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages",
+    "@odata.count": 3,
+    "value": [
+        {
+            "id": "1555375673184",
+            "replyToId": null,
+            "etag": "1555375673184",
+            "messageType": "message",
+            "createdDateTime": "2019-04-16T00:47:53.184Z",
+            "lastModifiedDateTime": null,
+            "deletedDateTime": null,
+            "subject": "",
+            "summary": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
                 "user": {
-                    "id": "id-value",
-                    "displayName: "string"
+                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+                    "displayName": "Adele Vance",
+                    "userIdentityType": "aadUser"
                 }
-            }
-        }
-        ],
-        "importance": "normal",
-        "reactions": [
-            {
-                "reactionType": "like",
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div><div>Nice to join this team. <at id=\"0\">Megan Bowen</at>, have we got the March report ready please?</div>\n</div>"
+            },
+            "attachments": [],
+            "mentions": [
+                {
+                    "id": 0,
+                    "mentionText": "Megan Bowen",
+                    "mentioned": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
+                            "displayName": "Megan Bowen",
+                            "userIdentityType": "aadUser"
+                        }
+                    }
+                }
+            ],
+            "reactions": []
+        },
+        {
+            "id": "1548100551644",
+            "replyToId": null,
+            "etag": "1548100551893",
+            "messageType": "message",
+            "createdDateTime": "2019-01-21T19:55:51.644Z",
+            "lastModifiedDateTime": null,
+            "deletedDateTime": null,
+            "subject": "",
+            "summary": null,
+            "importance": "normal",
+            "locale": "en-us",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
                 "user": {
-                    "id": "id-value",
-                    "displayName": "John Doe"
-                },
-                "createdDateTime": "2018-07-09T07:40:20.152Z"
-            }
-        ],
-        "locale": "en-us"
-    }
-  ]
+                    "id": "c651e5be-7631-42ad-99c6-12c59def11fb",
+                    "displayName": "Miriam Graham",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div>I've added an Excel tab to the channel containing the P&amp;L Summary. \r\n<div style=\"display:inline\"><at id=\"0\">Isaiah Langer</at></div> and team, please review the Sale Summary tab in particular, and make any necessary updates.</div>"
+            },
+            "attachments": [],
+            "mentions": [
+                {
+                    "id": 0,
+                    "mentionText": "Isaiah Langer",
+                    "mentioned": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "b525e831-bd00-45e5-860c-a4329ef5f5d8",
+                            "displayName": "Isaiah Langer",
+                            "userIdentityType": "aadUser"
+                        }
+                    }
+                }
+            ],
+            "reactions": [
+                {
+                    "reactionType": "like",
+                    "createdDateTime": "2019-01-21T19:55:51.893Z",
+                    "user": {
+                        "application": null,
+                        "device": null,
+                        "conversation": null,
+                        "user": {
+                            "id": "e1ecb745-c10f-40af-a9d4-cab946c80ac7",
+                            "displayName": null,
+                            "userIdentityType": "aadUser"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": "1548100547534",
+            "replyToId": null,
+            "etag": "1548100547534",
+            "messageType": "message",
+            "createdDateTime": "2019-01-21T19:55:47.534Z",
+            "lastModifiedDateTime": null,
+            "deletedDateTime": null,
+            "subject": "",
+            "summary": null,
+            "importance": "high",
+            "locale": "en-us",
+            "policyViolation": null,
+            "from": {
+                "application": null,
+                "device": null,
+                "conversation": null,
+                "user": {
+                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
+                    "displayName": "Adele Vance",
+                    "userIdentityType": "aadUser"
+                }
+            },
+            "body": {
+                "contentType": "html",
+                "content": "<div>Just a reminder to everyone to please update your monthly reports by this Friday!</div>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": []
+        }
+    ]
 }
 ```
 
@@ -134,7 +225,7 @@ Content-length: 201
 <!--
 {
   "type": "#page.annotation",
-  "description": "Get channel messages",
+  "description": "List channel messages",
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
