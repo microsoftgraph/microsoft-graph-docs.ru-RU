@@ -1,37 +1,37 @@
 ---
-title: Тип ресурса programControlType
-description: 'В Azure AD access дается обзор компонента, тип элемента управления программы используется, когда для связывания элемента управления в программу, чтобы указать тип доступа проверки элемента управления.  '
+title: Тип ресурса Програмконтролтипе
+description: 'В функции рецензирования Access в Azure AD при сопоставлении элемента управления с программой используется тип элемента управления Program, чтобы указать тип проверки доступа, для которой предназначен элемент управления.  '
 localization_priority: Normal
 ms.openlocfilehash: 8b17a0f30fbdceb6b6da24d5cbe972223acb29b0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519705"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563338"
 ---
-# <a name="programcontroltype-resource-type"></a>Тип ресурса programControlType
+# <a name="programcontroltype-resource-type"></a>Тип ресурса Програмконтролтипе
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-В компоненте [дается обзор доступа](accessreviews-root.md) Azure AD тип элемента управления программы используется при связывания элемента управления в программу, чтобы указать тип проверки доступа, управления.  
+В функции рецензирования [Access](accessreviews-root.md) в Azure AD при сопоставлении элемента управления с программой используется тип элемента управления Program, чтобы указать тип проверки доступа, для которой предназначен элемент управления.  
 
-Объекты типа программа управления создаются автоматически при onboards глобального администратора клиента для использования доступа к дается обзор компонента.  Типы элементов управления не дополнительные программы могут быть созданы.
+Объекты типа управления программой автоматически создаются, когда глобальный администратор, входящей в клиент, должен использовать функцию "обзоры доступа".  Невозможно создать дополнительные типы элементов управления программы.
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список programControlTypes](../api/programcontroltype-list.md) | [programControlType](programcontroltype.md) коллекции| Список типов элементов управления программы. |
+|[Список Програмконтролтипес](../api/programcontroltype-list.md) | Коллекция [програмконтролтипе](programcontroltype.md)| Список типов элементов управления программы. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-| `id`                     |`String`                | Идентификатор компонента назначенные программы типа элемента управления                                      |
+| `id`                     |`String`                | Идентификатор типа программного элемента управления, назначенный с помощью функции                                      |
 | `displayName`            |`String`                | Имя типа элемента управления программы                                                             |
 
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 
 Нет.
 
@@ -40,7 +40,7 @@ ms.locfileid: "29519705"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Создание programControl](../api/programcontrol-create.md) |     [programControl](programcontrol.md) |   Добавьте programControl программы.|
+|[Создание Програмконтрол](../api/programcontrol-create.md) |     [Програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -70,8 +70,6 @@ ms.locfileid: "29519705"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/programcontroltype.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

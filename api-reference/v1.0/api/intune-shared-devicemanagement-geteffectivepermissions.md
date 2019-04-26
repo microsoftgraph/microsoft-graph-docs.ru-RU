@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: d6c58ae88e2b5cf9a6787529868f8cf9e42879be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257353"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576960"
 ---
 # <a name="geteffectivepermissions-function"></a>Функция getEffectivePermissions
 
@@ -39,8 +39,7 @@ GET /deviceManagement/getEffectivePermissions
 ## <a name="request-headers"></a>Заголовки запросов
 |Заголовок|Значение|
 |:---|:---|
-|Authorization|Требуется Bearer &lt;маркер&gt;
-|
+|Авторизация|Bearer &lt;token&gt;. Обязательный.|
 |Accept|application/json|
 
 ## <a name="request-body"></a>Текст запроса
@@ -49,7 +48,7 @@ GET /deviceManagement/getEffectivePermissions
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|scope|String|Н/Д|
+|scope|String|Пока не задокументировано.|
 
 
 ## <a name="response"></a>Отклик
@@ -62,8 +61,8 @@ GET /deviceManagement/getEffectivePermissions
 GET https://graph.microsoft.com/v1.0/deviceManagement/getEffectivePermissions(scope='parameterValue')
 ```
 
-### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json

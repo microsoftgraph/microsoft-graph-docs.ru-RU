@@ -1,19 +1,19 @@
 ---
 title: Создание раздела
-description: Создание нового onenoteSection в указанном записной книжки.
+description: Создание нового Оненотесектион в указанной записной книжке.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: cec39a64f7405d13efacb1080c5d6c1482dceabb
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27942495"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562162"
 ---
 # <a name="create-section"></a>Создание раздела
 
-Создание нового [onenoteSection](../resources/section.md) в указанном записной книжки.
+Создание нового [оненотесектион](../resources/section.md) в указанной записной книжке.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -37,14 +37,14 @@ POST /sites/{id}/onenote/notebooks/{id}/sections
 | Authorization  | string  | Bearer {токен}. Обязательный. |
 | Content-Type | string | `application/json` |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите имя раздела.
 
 В рамках одного и того же уровня иерархии имена разделов должны быть уникальными. Имя должно содержать не более 50 символов, в нем не должно быть следующих знаков:  ?*\/:<>|&#''%~
 
 ## <a name="response"></a>Отклик
 
-Успешно завершена, этот метод возвращает `201 Created` код ответа и объект [onenoteSection](../resources/section.md) в теле ответа.
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [оненотесектион](../resources/section.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос

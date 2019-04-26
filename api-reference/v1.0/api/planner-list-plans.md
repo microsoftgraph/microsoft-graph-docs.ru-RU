@@ -5,13 +5,15 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 1521bc5d03943288d516f9db975c394619bfb71c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27911660"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562071"
 ---
 # <a name="list-plans"></a>Перечисление планов
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов **plannerplan**.
 ## <a name="permissions"></a>Разрешения
@@ -36,8 +38,8 @@ GET /planner/plans
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
@@ -53,10 +55,10 @@ GET /planner/plans
   "name": "get_plans"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/plans
+GET https://graph.microsoft.com/beta/planner/plans
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,10 +92,13 @@ Content-length: 421
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List plans",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

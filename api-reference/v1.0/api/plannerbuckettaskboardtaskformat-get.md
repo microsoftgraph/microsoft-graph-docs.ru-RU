@@ -13,6 +13,8 @@ ms.locfileid: "32562015"
 ---
 # <a name="get-plannerbuckettaskboardtaskformat"></a>Получение объекта plannerBucketTaskBoardTaskFormat
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Получение свойств и связей объекта **plannerBucketTaskBoardTaskFormat**.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -26,7 +28,7 @@ ms.locfileid: "32562015"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /planner/tasks/{id}/bucketTaskBoardFormat
+GET /planner/tasks/<id>/bucketTaskBoardFormat
 ```
 
 ## <a name="request-headers"></a>Заголовки запросов
@@ -51,7 +53,7 @@ GET /planner/tasks/{id}/bucketTaskBoardFormat
   "name": "get_plannerbuckettaskboardtaskformat"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/tasks/{task-id}/bucketTaskBoardFormat
+GET https://graph.microsoft.com/beta/planner/tasks/01gzSlKkIUSUl6DF_EilrmQAKDhh/bucketTaskBoardFormat
 ```
 ##### <a name="response"></a>Отклик
 Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
@@ -73,10 +75,13 @@ Content-length: 76
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get plannerBucketTaskBoardTaskFormat",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

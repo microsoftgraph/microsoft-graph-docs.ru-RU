@@ -1,17 +1,17 @@
 ---
-title: Тип участника ресурса
+title: Тип ресурса участника
 description: Тип участника.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: f49526824b2b6c4eb4a5065f05ab4c765d299faa
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508148"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568663"
 ---
-# <a name="participant-resource-type"></a>Тип участника ресурса
+# <a name="participant-resource-type"></a>Тип ресурса участника
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,23 +21,23 @@ ms.locfileid: "29508148"
 
 | Метод                                                          | Возвращаемый тип                              | Описание                                       |
 |:----------------------------------------------------------------|:-----------------------------------------|:--------------------------------------------------|
-| [Получение участников](../api/participant-get.md)                    | [Участник](participant.md)            | Чтение свойств объекта **участника** .    |
-| [ConfigureMixer](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Настройка участников аудиомикшеру.            |
-| [Приглашение](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Приглашение участников к звонку.                 |
-| [Отключить участников](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Отключение микрофона участника в ходе вызова.                     |
-| [Отключение всех участников](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Отключение всех участников собрания.         |
+| [Получение участника](../api/participant-get.md)                    | [абонент](participant.md)            | Чтение свойств объекта **участника** .    |
+| [Конфигуремиксер](../api/participant-configuremixer.md)          | [commsOperation](commsoperation.md)      | Настройка микшера звука участника.            |
+| [Приглашение](../api/participant-invite.md)                          | [commsOperation](commsoperation.md)      | Приглашение участника на звонок.                 |
+| [Отключение звука для участника](../api/participant-mute.md)                  | [commsOperation](commsoperation.md)      | Отключение выключения участника в вызове.                     |
+| [Отключение звука всех участников](../api/participant-muteall.md)          | [commsOperation](commsoperation.md)      | Отключение выключения всех участников собрания.         |
 
 ## <a name="properties"></a>Свойства
 
 | Свойство             | Тип                                     | Описание                                                  |
 | :------------------- | :--------------------------------------- | :------------------------------------------------------------|
-| id                   | String                                   | Код участника.                                          |
-| сведения о                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
-| isInLobby            | boolean                                  | значение true, если участник в зале ожидания                          |
-| isMuted              | boolean                                  | значение true, если выключен ли участника (клиент или сервер выключен ли)    |
-| mediaStreams         | [mediaStream](mediastream.md) коллекции | Список мультимедийных потоков.                                   |
-| Метаданные             | String                                   | Большой двоичный объект данных, предоставленных участника в списке     |
-| recordingInfo        | [recordingInfo](recordinginfo.md)        | Сведения о ли участник имеет возможность записи. |
+| id                   | String                                   | Идентификатор участника.                                          |
+| info                 | [participantInfo](participantinfo.md)    | Участник участника.                          |
+| Исинлобби            | boolean                                  | true, если участник находится в зале ожидания                          |
+| автоЗвук              | boolean                                  | true, если участник отключен (клиент или сервер выключен)    |
+| Медиастреамс         | Коллекция [медиастреам](mediastream.md) | Список потоков мультимедиа.                                   |
+| метаданных             | String                                   | Большой двоичный объект данных, предоставляемый участником в списке     |
+| Рекордингинфо        | [Рекордингинфо](recordinginfo.md)        | Сведения о том, имеет ли участник возможность записи. |
 
 ## <a name="relationships"></a>Отношения
 Нет
@@ -112,8 +112,6 @@ ms.locfileid: "29508148"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participant.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

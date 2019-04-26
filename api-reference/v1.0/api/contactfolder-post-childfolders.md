@@ -13,6 +13,8 @@ ms.locfileid: "32566201"
 ---
 # <a name="create-contactfolder"></a>Создание объекта ContactFolder
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Создание дочернего объекта contactFolder указанной папки. 
 
 Вы также можете [создать объект contactFolder в папке контактов пользователя по умолчанию](user-post-contactfolders.md).
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
   "name": "create_contactfolder_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
+POST https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 Content-type: application/json
 Content-length: 84
 
@@ -82,10 +84,13 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create ContactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

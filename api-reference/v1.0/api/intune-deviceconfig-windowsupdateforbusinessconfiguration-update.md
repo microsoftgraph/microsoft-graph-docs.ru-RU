@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: be695198ad9ae6f5d5aa5f4d3dbc52650daca4ae
-ms.sourcegitcommit: 7b98b61db7cdbaff037e1b222ac58eef4c5bee89
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30983983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563562"
 ---
 # <a name="update-windowsupdateforbusinessconfiguration"></a>Обновление объекта windowsUpdateForBusinessConfiguration
 

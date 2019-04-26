@@ -3,11 +3,11 @@ title: Тип ресурса Регистрикэйстате
 description: Содержит сведения об изменениях в реестре, связанных с предупреждением, и процесс, который изменил разделы реестра.
 localization_priority: Normal
 ms.openlocfilehash: d07b0b6f502794154b400444eaf3854535e04547
-ms.sourcegitcommit: a4773239d8559899c3f9433b3073e250a56d2e04
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29994428"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563002"
 ---
 # <a name="registrykeystate-resource-type"></a>Тип ресурса Регистрикэйстате
 
@@ -28,7 +28,7 @@ ms.locfileid: "29994428"
 |valueName|String|Current (то есть изменено) имя значения раздела реестра|
 |Типом|registryValueType|[Тип значения раздела реестра](https://docs.microsoft.com/en-us/windows/desktop/sysinfo/registry-value-types) <ul><li>REG_BINARY</li> <li>REG_DWORD</li> <li>РЕГ_ДВОРД_ЛИТТЛЕ_ЕНДИАН</li> <li>РЕГ_ДВОРД_БИГ_ЕНДИАН</li><li>REG_EXPAND_SZ</li> <li>РЕГ_ЛИНК</li> <li>REG_MULTI_SZ</li> <li>РЕГ_НОНЕ</li> <li>РЕГ_КВОРД</li> <li>РЕГ_КВОРД_ЛИТТЛЕ_ЕНДИАН</li> <li>REG_SZ</li></ul> Возможные значения: `unknown`, `binary`, `dword`, `dwordLittleEndian`, `dwordBigEndian`, `expandSz`, `link`, `multiSz`, `none`, `qword`, `qwordlittleEndian`, `sz`.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

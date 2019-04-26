@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 4c64dd892fa3b3718e693a0e8661706d0589601a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784770"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567062"
 ---
 # <a name="easemailprofileconfigurationbase-resource-type"></a>Тип ресурса Еасемаилпрофилеконфигуратионбасе
 
@@ -26,7 +26,7 @@ ms.locfileid: "31784770"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Еасемаилпрофилеконфигуратионбасес](../api/intune-deviceconfig-easemailprofileconfigurationbase-list.md)|Коллекция [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|Список свойств и связей объектов [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md) .|
-|[Получение Еасемаилпрофилеконфигуратионбасе](../api/intune-deviceconfig-easemailprofileconfigurationbase-get.md)|[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md)|Чтение свойств и связей объекта [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md) .|
+|[Получение Еасемаилпрофилеконфигуратионбасе](../api/intune-deviceconfig-easemailprofileconfigurationbase-get.md)|[easEmailProfileConfigurationBase](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md);|Чтение свойств и связей объекта [еасемаилпрофилеконфигуратионбасе](../resources/intune-deviceconfig-easemailprofileconfigurationbase.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -40,8 +40,8 @@ ms.locfileid: "31784770"
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |usernameSource|[Усеремаилсаурце](../resources/intune-deviceconfig-useremailsource.md)|Атрибут username, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Возможные значения: `userPrincipalName`, `primarySmtpAddress`.|
-|Усернамеаадсаурце|[usernameSource](../resources/intune-deviceconfig-usernamesource.md)|Имя поля AAD, которое будет использоваться для извлечения имени пользователя для профиля электронной почты. Возможные значения: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
-|Усердомаиннамесаурце|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md)|Атрибут Усердомаиннаме, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Возможные значения: `fullDomainName`, `netBiosDomainName`.|
+|Усернамеаадсаурце|[usernameSource](../resources/intune-deviceconfig-usernamesource.md);|Имя поля AAD, которое будет использоваться для извлечения имени пользователя для профиля электронной почты. Возможные значения: `userPrincipalName`, `primarySmtpAddress`, `samAccountName`.|
+|Усердомаиннамесаурце|[domainNameSource](../resources/intune-deviceconfig-domainnamesource.md);|Атрибут Усердомаиннаме, который выбирается из AAD и вставляется в этот профиль перед установкой на устройстве. Возможные значения: `fullDomainName`, `netBiosDomainName`.|
 |Кустомдомаиннаме|String|Значение имени пользовательского домена, используемое при создании профиля электронной почты, перед установкой на устройстве.|
 
 ## <a name="relationships"></a>Связи

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: d3a7cf0d140ad15c48e0f5b7908c5e2e4b318770
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788928"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32554445"
 ---
 # <a name="webapp-resource-type"></a>Тип ресурса webApp
 
@@ -25,11 +25,11 @@ ms.locfileid: "31788928"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов webApp](../api/intune-apps-webapp-list.md)|Коллекция [webApp](../resources/intune-apps-webapp.md)|Список свойств и связей объектов [webApp](../resources/intune-apps-webapp.md).|
-|[Get webApp](../api/intune-apps-webapp-get.md)|[webApp](../resources/intune-apps-webapp.md)|Чтение свойств и связей объекта [webApp](../resources/intune-apps-webapp.md).|
-|[Create webApp](../api/intune-apps-webapp-create.md)|[webApp](../resources/intune-apps-webapp.md)|Создание объекта [webApp](../resources/intune-apps-webapp.md).|
-|[Delete webApp](../api/intune-apps-webapp-delete.md)|None|Удаление экземпляра [webApp](../resources/intune-apps-webapp.md).|
-|[Update webApp](../api/intune-apps-webapp-update.md)|[webApp](../resources/intune-apps-webapp.md)|Обновление свойств объекта [webApp](../resources/intune-apps-webapp.md).|
+|[Перечисление webApps](../api/intune-apps-webapp-list.md)|Коллекция [webApp](../resources/intune-apps-webapp.md)|Список свойств и связей объектов [webApp](../resources/intune-apps-webapp.md).|
+|[Получение webApp](../api/intune-apps-webapp-get.md)|[webApp](../resources/intune-apps-webapp.md);|Считывание свойств и связей объекта [webApp](../resources/intune-apps-webapp.md).|
+|[Создание webApp](../api/intune-apps-webapp-create.md)|[webApp](../resources/intune-apps-webapp.md);|Создание объекта [webApp](../resources/intune-apps-webapp.md).|
+|[Удаление webApp](../api/intune-apps-webapp-delete.md)|None|Удаление экземпляра [webApp](../resources/intune-apps-webapp.md).|
+|[Обновление webApp](../api/intune-apps-webapp-update.md)|[webApp](../resources/intune-apps-webapp.md)|Обновление свойств объекта [webApp](../resources/intune-apps-webapp.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
@@ -41,7 +41,7 @@ ms.locfileid: "31788928"
 |largeIcon|[mimeContent](../resources/intune-shared-mimecontent.md)|Представляет большой значок, который отображается в сведениях о приложении, используется для отправки значка. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |createdDateTime|DateTimeOffset|Дата и время создания приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|isFeatured|Boolean|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
+|isFeatured|Логический|Значение, которое показывает, отмечено ли приложение как подобранное администратором. Наследуется от объекта [mobileApp](../resources/intune-apps-mobileapp.md).|
 |privacyInformationUrl|String|URL-адрес заявления о конфиденциальности. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |informationUrl|String|URL-адрес страницы с дополнительными сведениями. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |owner|String|Владелец приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
@@ -50,7 +50,7 @@ ms.locfileid: "31788928"
 |uploadState|Int32|Состояние отправки. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md)|
 |publishingState|[Мобилеапппублишингстате](../resources/intune-apps-mobileapppublishingstate.md)|Состояние публикации для приложения. Приложение невозможно назначить, если оно не опубликовано. НаСледуется от [mobileApp](../resources/intune-apps-mobileapp.md). Возможные значения: `notPublished`, `processing`, `published`.|
 |isAssigned|Boolean|Значение, указывающее, назначено ли приложение по крайней мере одной группе. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|roleScopeTagIds|Коллекция String|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|roleScopeTagIds|Коллекция строк|Список идентификаторов тегов области для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Депендентаппкаунт|Int32|Общее количество зависимостей для дочернего приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |appUrl|String|URL-адрес веб-приложения.|
 |useManagedBrowser|Boolean|Указывает, следует ли использовать управляемый браузер. Это свойство применимо только к Android и iOS.|
@@ -60,7 +60,7 @@ ms.locfileid: "31788928"
 |:---|:---|:---|
 |categories|Коллекция [mobileAppCategory](../resources/intune-apps-mobileappcategory.md)|Список категорий для этого приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |assignments|Коллекция [mobileAppAssignment](../resources/intune-apps-mobileappassignment.md)|Список назначений группы для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
-|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md)|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
+|installSummary|[mobileAppInstallSummary](../resources/intune-apps-mobileappinstallsummary.md);|Общие сведения по установке мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |deviceStatuses|Коллекция [mobileAppInstallStatus](../resources/intune-apps-mobileappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |userStatuses|Коллекция [усераппинсталлстатус](../resources/intune-apps-userappinstallstatus.md)|Список состояний установки для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|
 |Таблица|Коллекция [мобилеаппрелатионшип](../resources/intune-apps-mobileapprelationship.md)|Список отношений для этого мобильного приложения. Наследуется от [mobileApp](../resources/intune-apps-mobileapp.md).|

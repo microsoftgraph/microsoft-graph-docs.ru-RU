@@ -5,13 +5,15 @@ localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
 ms.openlocfilehash: 5a5115b7afffebcf663b01c3836ba718d896098e
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27958224"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562078"
 ---
 # <a name="list-buckets"></a>Перечисление сегментов
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Получение списка объектов **plannerbucket**.
 
@@ -37,8 +39,8 @@ GET /planner/buckets
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Ответ
 
@@ -53,10 +55,10 @@ GET /planner/buckets
   "name": "get_buckets"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/planner/buckets
+GET https://graph.microsoft.com/beta/planner/buckets
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -83,10 +85,13 @@ Content-length: 251
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "List buckets",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

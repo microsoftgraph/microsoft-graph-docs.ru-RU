@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 93f50cd4f62909514145cfd369f32e1736b7215f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27928525"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563492"
 ---
 # <a name="chart-setdata"></a>Chart: setData
 
@@ -35,13 +35,13 @@ POST /workbook/worksheets/{id|name}/charts/{name}/setData
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
 |sourceData|Json|Объект Range, соответствующий исходным данным.|
-|seriesBy|строка|Необязательный параметр. Указывает, что способ столбцы или строки используются в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), строк, столбцов.  Возможные значения: `Auto`, `Columns`, `Rows`.|
+|seriesBy|string|Необязательный параметр. Определяет способ использования столбцов или строк в качестве рядов данных на диаграмме. Может иметь одно из следующих значений: Auto (по умолчанию), Rows, Columns.  Допустимые значения: `Auto`, `Columns`, `Rows`.|
 
 ## <a name="response"></a>Отклик
 
@@ -66,7 +66,7 @@ Content-length: 70
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 <!-- {
   "blockType": "response"

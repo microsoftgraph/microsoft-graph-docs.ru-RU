@@ -5,11 +5,11 @@ localization_priority: Priority
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: 8ede194abffe745bee9a23906b965d43de93cec8
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561840"
 ---
 # <a name="list-groups"></a>Список групп
 Список всех групп, доступных в организации, в том числе Групп Office 365.
@@ -36,17 +36,19 @@ GET /groups
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Чтобы показать список только Групп Office 365 (т. н. единых групп), примените фильтр для **groupTypes**: <!-- { "blockType": "ignored" } -->
+Чтобы получить только результаты из функции "Группы Office 365" (т. н. единые группы), примените фильтр **groupTypes**:
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$filter=groupTypes/any(c:c+eq+'Unified')
 ```
 
-С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере: <!-- { "blockType": "ignored" } -->
+С помощью параметра `$orderby` запросов OData можно сортировать группы в организации по значениям **displayName**, как показано в приведенном ниже примере.
+<!-- { "blockType": "ignored" } -->
 ```
 GET https://graph.microsoft.com/v1.0/groups?$orderby=displayName
 ```
 
-Дополнительную информацию о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
+Дополнительные сведения о параметрах запроса OData см. в статье [Параметры запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|

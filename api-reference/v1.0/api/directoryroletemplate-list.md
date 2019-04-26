@@ -1,17 +1,17 @@
 ---
-title: Список объектов directoryRoleTemplate
+title: Список directoryRoleTemplate
 description: Получение списка объектов directoryRoleTemplate.
 author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 0e52cb3a32c54833395722f0368d01cb49965402
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941970"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562533"
 ---
-# <a name="list-directoryroletemplates"></a>Список объектов directoryRoleTemplate
+# <a name="list-directoryroletemplates"></a>Список directoryRoleTemplate
 
 Получение списка объектов directoryRoleTemplate.
 
@@ -36,12 +36,12 @@ GET /directoryRoleTemplates
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [directoryRoleTemplate](../resources/directoryroletemplate.md) в теле отклика.
 ## <a name="example"></a>Пример
@@ -54,8 +54,8 @@ GET /directoryRoleTemplates
 ```http
 GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ```
-##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

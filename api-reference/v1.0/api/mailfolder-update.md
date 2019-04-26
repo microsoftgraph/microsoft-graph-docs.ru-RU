@@ -1,19 +1,19 @@
 ---
-title: Обновление объекта mailfolder
-description: Обновление свойств объекта mailfolder.
+title: Обновление объекта MailFolder
+description: Обновление свойств объекта MailFolder.
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 849b5e99f96b3ca891ef719e6ae45e8a2bcdd372
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27938652"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561421"
 ---
-# <a name="update-mailfolder"></a>Обновление объекта mailfolder
+# <a name="update-mailfolder"></a>Обновление объекта MailFolder
 
-Обновление свойств объекта mailfolder.
+Обновление свойств объекта MailFolder.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -35,12 +35,12 @@ PATCH /users/{id | userPrincipalName}/mailFolders/{id}
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить. Предыдущие значения существующих свойств, не включенных в текст запроса, останутся прежними или будут повторно вычислены с учетом измененных значений других свойств. Для достижения оптимальной производительности не следует включать существующие значения, которые не изменились.
 
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|displayName|Строка|Отображаемое имя объекта mailFolder.|
+|displayName|String|Отображаемое имя элемента mailFolder.|
 
 ## <a name="response"></a>Отклик
 
@@ -61,8 +61,8 @@ Content-length: 159
   "displayName": "displayName-value",
 }
 ```
-##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+##### <a name="response"></a>Отклик
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -5,11 +5,11 @@ author: TarkanSevilmis
 localization_priority: Priority
 ms.prod: planner
 ms.openlocfilehash: c2e8be27eeb4f91b3030701e2f8416fecf29c2d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27947073"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564233"
 ---
 # <a name="planner-tasks-and-plans-api-overview"></a>Обзор API планов и заданий Планировщика
 Планировщик — удобное средство для визуальной организации работы команд. С помощью Планировщика пользователи могут создавать планы, упорядочивать и назначать задачи, делиться сведениями о ходе выполнения, а также совместно работать над контентом.  Планировщик включает несколько интерактивных интерфейсов, в том числе доску задач, страницу диаграмм и представление расписаний, а также интеграцию между службами Office 365.

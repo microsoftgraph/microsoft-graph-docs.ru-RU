@@ -5,15 +5,15 @@ localization_priority: Normal
 author: nkramer
 ms.prod: microsoft-teams
 ms.openlocfilehash: 77cd2decf1250d6d189aba20df1db172475ab806
-ms.sourcegitcommit: a39db1154a07aa0dd7e96fb6f9d7e891a812207e
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "31889984"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576425"
 ---
 # <a name="unarchive-team"></a>Распаковка объекта команды
 
-
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Восстановление архивной [команды](../resources/team.md). Это восстанавливает возможность пользователей отправлять сообщения и редактировать команду, абидинг по клиенту и параметрам группы. Архивация Teams выполняется с помощью API [архива](team-archive.md) .
 
@@ -56,7 +56,7 @@ POST /teams/{id}/unarchive
   "name": "unarchive_team"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/teams/{id}/unarchive
+POST https://graph.microsoft.com/beta/teams/{id}/unarchive
 ```
 
 #### <a name="response"></a>Отклик
@@ -70,10 +70,13 @@ Content-Length: 0
 
 <!-- uuid: 9a9bb83f-6f35-4426-bb04-73ca43ad6cc8
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Unarchive team",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

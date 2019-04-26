@@ -1,17 +1,17 @@
 ---
-title: Список пользователей
+title: Перечисление пользователей
 description: Получение списка объектов user.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 7529097f5d22443b95123cc7a2f578f0521b8ca4
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27926136"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563898"
 ---
-# <a name="list-users"></a>Список пользователей
+# <a name="list-users"></a>Перечисление пользователей
 
 Получение списка объектов user.
 
@@ -48,9 +48,9 @@ GET /users
 | Авторизация | Bearer {токен} (обязательный)  |
 | Content-Type  | application/json           |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -72,7 +72,7 @@ GET /users
 GET https://graph.microsoft.com/v1.0/users
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
@@ -108,7 +108,7 @@ Content-length: 608
 
 ### <a name="example-2-users-request-using-select"></a>Пример 2. Запрос пользователей с помощью оператора $select
 
-Если вам необходим другой набор свойств, вы можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
+Если вам нужен другой набор свойств, можете использовать параметр запроса OData `$select`. Например, чтобы возвратить свойства _displayName_, _givenName_ и _postalCode_, вам следует добавить к запросу следующее: `$select=displayName,givenName,postalCode`.
 
 ##### <a name="request"></a>Запрос
 

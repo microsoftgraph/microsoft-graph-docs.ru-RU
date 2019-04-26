@@ -5,13 +5,15 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: 691ec8d4d2f6c95c217a9ddb99fbd4e8608483f9
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27962200"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556468"
 ---
 # <a name="delete-page"></a>Удаление страницы
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление страницы OneNote.
 ## <a name="permissions"></a>Разрешения
@@ -19,7 +21,7 @@ ms.locfileid: "27962200"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 
@@ -48,7 +50,7 @@ DELETE /sites/{id}/onenote/pages/{id}
   "name": "delete_page"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/onenote/pages/{id}
+DELETE https://graph.microsoft.com/beta/me/onenote/pages/{id}
 ```
 ##### <a name="response"></a>Ответ
 Ниже приведен пример отклика.
@@ -62,10 +64,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete page",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

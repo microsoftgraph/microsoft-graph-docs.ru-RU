@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c235d31e97b570f70145884349eaef6e2254194c
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31802466"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566628"
 ---
 # <a name="devicemanagementexchangeaccesslevel-enum-type"></a>тип перечисления Девицеманажементексчанжеакцесслевел
 
@@ -22,10 +22,10 @@ ms.locfileid: "31802466"
 ## <a name="members"></a>Элементы
 |Элемент|Значение|Описание|
 |:---|:---|:---|
-|нет|нуль|В Exchange не настроено правило доступа к устройствам.|
-|разрешить|1,1|Разрешить устройству доступ к Exchange.|
-|блок|2|Блокировать доступ устройства к Exchange.|
-|папку|4|Карантин устройства в Exchange.|
+|Нет|нуль|В Exchange не настроено правило доступа к устройствам.|
+|разрешить|1 |Разрешить устройству доступ к Exchange.|
+|блок|2 |Блокировать доступ устройства к Exchange.|
+|папку|3 |Карантин устройства в Exchange.|
 
 
 

@@ -3,11 +3,11 @@ title: Тип ресурса Счедулеинформатион
 description: 'Представляет доступность пользователя, списка рассылки или ресурса за указанный период времени. '
 localization_priority: Normal
 ms.openlocfilehash: 6c809b9cf600d9b620164f253d2a37e57a0f5d4d
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30869493"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563079"
 ---
 # <a name="scheduleinformation-resource-type"></a>Тип ресурса Счедулеинформатион
 
@@ -25,7 +25,7 @@ ms.locfileid: "30869493"
 |workingHours |[workingHours](workinghours.md) |Дни недели и часы работы пользователя в определенном часовом поясе. Они задаются как часть [mailboxSettings](mailboxsettings.md)пользователя.|
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -57,8 +57,6 @@ ms.locfileid: "30869493"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/scheduleinformation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

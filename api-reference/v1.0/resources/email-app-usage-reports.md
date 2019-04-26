@@ -5,11 +5,11 @@ localization_priority: Normal
 author: pranoychaudhuri
 ms.prod: reports
 ms.openlocfilehash: 00adbec446cda1ea6855c7f52e847f88f42c65bd
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32555901"
 ---
 # <a name="email-app-usage-reports"></a>Отчеты об использовании почтовых приложений
 
@@ -21,7 +21,7 @@ ms.locfileid: "29574441"
 
 | Функция                                 | Возвращаемый тип | Описание                              |
 | :--------------------------------------- | :---------- | :--------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getemailappusageuserdetail.md) | Поток      | Узнайте, какие действия пользователи выполняли в различных почтовых приложениях. |
+| [Получение сведений о пользователях](../api/reportroot-getemailappusageuserdetail.md) | Stream      | Узнайте, какие действия пользователи выполняли в различных почтовых приложениях. |
 | [Получение количества пользователей по приложениям](../api/reportroot-getemailappusageappsusercounts.md) | Поток      | Узнайте, сколько уникальных пользователей у каждого почтового приложения. |
 | [Получение количества пользователей](../api/reportroot-getemailappusageusercounts.md) | Поток      | Узнайте, сколько уникальных пользователей подключалось к Exchange Online с помощью любого почтового приложения. |
 | [Получение количества пользователей по версиям](../api/reportroot-getemailappusageversionsusercounts.md) | Поток      | Узнайте, сколько уникальных пользователей у каждой версии Outlook для компьютера. |

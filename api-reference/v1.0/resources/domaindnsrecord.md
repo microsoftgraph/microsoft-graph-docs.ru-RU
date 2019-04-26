@@ -13,6 +13,8 @@ ms.locfileid: "32562764"
 ---
 # <a name="domaindnsrecord-resource-type"></a>Тип ресурса domainDnsRecord
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Для каждого домена в клиенте может потребоваться добавить записи DNS в файл зоны DNS домена, чтобы домен можно было использовать в Microsoft Online Services. Объект **DomainDnsRecord** используется для представления таких DNS-записей. Базовый объект для сущностей [домаинднскнамерекорд](domaindnscnamerecord.md), [домаинднсмксрекорд](domaindnsmxrecord.md), [домаинднссрврекорд](domaindnssrvrecord.md) и [домаинднссрврекорд](domaindnssrvrecord.md) .
 
 ## <a name="methods"></a>Методы
@@ -36,7 +38,6 @@ ms.locfileid: "32562764"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -57,10 +58,13 @@ ms.locfileid: "32562764"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

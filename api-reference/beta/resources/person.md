@@ -1,21 +1,21 @@
 ---
 title: Тип ресурса person
-description: Объединенные данные о сотруднике из всех почты, контакты и социальными сетями. Пользователи могут быть локального контактов, контакты из социальных сетей, вашей организации каталогов и людей из последних коммуникаций (например, электронной почты и Скайп).
+description: Объединение сведений о человеке через почту, контакты и социальные сети. Пользователи могут быть локальными контактами, контактами из социальных сетей, каталогом вашей организации и людьми из недавних коммуникаций (таких как электронная почта и Skype).
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
 ms.openlocfilehash: 32a2c9905ab52e9b229bb8673fb4a84d90a706ac
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512404"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561476"
 ---
 # <a name="person-resource-type"></a>Тип ресурса person
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Объединенные данные о сотруднике из всех почты, контакты и социальными сетями. Пользователи могут быть локального контактов, контакты из социальных сетей, вашей организации каталогов и людей из последних коммуникаций (например, электронной почты и Скайп).
+Объединение сведений о человеке через почту, контакты и социальные сети. Пользователи могут быть локальными контактами, контактами из социальных сетей, каталогом вашей организации и людьми из недавних коммуникаций (таких как электронная почта и Skype).
 
 ## <a name="methods"></a>Методы
 
@@ -30,26 +30,26 @@ ms.locfileid: "29512404"
 |birthday|string|День рождения человека.|
 |companyName|string|Название компании человека.|
 |department|string|Отдел, в котором работает человек.|
-|displayName|строка|Отображаемое имя человека.|
-|emailAddresses|[rankedEmailAddress](rankedemailaddress.md) коллекции|Электронные адреса человека.|
+|displayName|string|Отображаемое имя человека.|
+|emailAddresses|Коллекция [ранкедемаиладдресс](rankedemailaddress.md)|Электронные адреса человека.|
 |givenName|string|Имя человека.|
-|id|string|Уникальный идентификатор человека. Только для чтения.|
+|id|строка|Уникальный идентификатор человека. Только для чтения.|
 |isFavorite|boolean|Имеет значение `true`, если пользователь добавил этого человека в список избранных.|
-|MailboxType|string|Тип почтового ящика, представленного адрес электронной почты пользователя.|
-|officeLocation;|string|Расположение офиса человека.|
+|mailboxType|string|Тип почтового ящика, представленного адресом электронной почты пользователя.|
+|officeLocation|string|Расположение офиса человека.|
 |personNotes|string|Заметки в произвольной форме о человеке, созданные пользователем.|
-|personType|string|Тип лица, например списка рассылки.|
+|personType|string|Тип лица, например список рассылки.|
 |phones|Коллекция [phone](phone.md)|Номера телефонов человека.|
 |postalAddresses|Коллекция [location](location.md)|Адреса человека.|
 |profession|string|Профессия человека.|
-|sources|[personDataSource](persondatasource.md) коллекции|Источники пользователя данные, поступающие из, например, каталога или контактов Outlook.|
+|sources|Коллекция [персондатасаурце](persondatasource.md)|Источники, из которых берутся данные пользователя, например, "каталог" или "Контакты Outlook".|
 |surname|string|Фамилия человека.|
-|должности.|string|Должность пользователя.|
+|title|строка|Должность человека.|
 |userPrincipalName|string|Имя участника-пользователя человека. Имя участника-пользователя — это имя для входа, используемое в Интернете и закрепленное за человеком. Оно основано на интернет-стандарте [RFC 822](https://www.ietf.org/rfc/rfc0822.txt). В соответствии с соглашением оно должно быть сопоставлено с именем пользователя для электронной почты. В общем случае оно должно иметь следующий формат: псевдоним@домен.|
 |websites|Коллекция [website](website.md)|Веб-сайты человека.|
 |yomiCompany|string|Название компании человека, записанное так, как оно звучит по-японски.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 
 Нет
 
@@ -101,8 +101,6 @@ ms.locfileid: "29512404"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/person.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

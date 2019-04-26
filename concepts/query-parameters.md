@@ -4,11 +4,11 @@ description: В Microsoft Graph предусмотрены необязател�
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: aff7fa2cb36c1ab5a5464c09221178e2a5e88ab1
-ms.sourcegitcommit: 953895b28b6bae6e17eead938565fde289c49ef7
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479911"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564171"
 ---
 # <a name="use-query-parameters-to-customize-responses"></a>Настройка ответов с помощью параметров запроса
 
@@ -247,9 +247,10 @@ GET https://graph.microsoft.com/v1.0/me/messages?$search="pizza"
 
 - [Свойства, доступные для поиска в Exchange](https://docs.microsoft.com/ru-RU/Exchange/policy-and-compliance/ediscovery/message-properties-and-search-operators#searchable-properties-in-exchange)
 
-- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Руководство по синтаксису языка запросов по ключевым словам (KQL)](https://docs.microsoft.com/ru-RU/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-- [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx)
+- 
+  [Свойства сообщений и операторы поиска для обнаружения электронных данных на месте в Exchange 2016](https://technet.microsoft.com/en-us/library/dn774955(v=exchg.160).aspx).
 
 ### <a name="using-search-on-person-collections"></a>Использование параметра $search в коллекциях person
 

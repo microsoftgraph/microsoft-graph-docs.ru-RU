@@ -5,14 +5,15 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: 5c909176634d64245d5ff5521c0da68b02e8777b
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27972266"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561371"
 ---
 # <a name="delete-outlook-category"></a>Удаление категории Outlook
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Удаление указанного объекта [outlookCategory](../resources/outlookcategory.md).
 
@@ -37,8 +38,8 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -49,13 +50,12 @@ DELETE /users/{id|userPrincipalName}/outlook/masterCategories/{id}
 Ниже приведен пример запроса.
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["4b1c2495-54c9-4a5e-90a2-0ab0b31987d8"],
   "name": "delete_outlookcategory"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
+DELETE https://graph.microsoft.com/beta/me/outlook/masterCategories/4b1c2495-54c9-4a5e-90a2-0ab0b31987d8
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
@@ -68,10 +68,13 @@ HTTP/1.1 204 No Content
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Delete outlookCategory",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

@@ -3,11 +3,11 @@ title: Тип ресурса inferenceClassificationOverride
 description: Представляет пользовательское переопределение для классификации входящих сообщений от определенного отправителя.
 localization_priority: Normal
 ms.openlocfilehash: 8df0f1e5fa34c630c51de7c73234e6092448f867
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885066"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567538"
 ---
 # <a name="inferenceclassificationoverride-resource-type"></a>Тип ресурса inferenceClassificationOverride
 
@@ -18,17 +18,17 @@ ms.locfileid: "27885066"
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[обновление](../api/inferenceclassificationoverride-update.md). | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения, указанный. |
-|[Delete](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
+|[Обновление](../api/inferenceclassificationoverride-update.md) | [inferenceClassificationOverride](inferenceclassificationoverride.md) |Изменение поля **ClassifyAs** переопределения указанным образом. |
+|[Удаление](../api/inferenceclassificationoverride-delete.md) | Нет |Удаление переопределения по идентификатору. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classifyAs|inferenceClassificationType| Указывает, как входящие сообщения из определенной отправитель всегда должен следует рассматривать как. Возможные значения: `focused`, `other`.|
-|id|строка| Уникальный идентификатор переопределения. Только для чтения.|
+|classifyAs|inferenceClassificationType| Указывает, как должны классифицироваться все входящие сообщения от определенного отправителя. Возможные значения: `focused`, `other`.|
+|id|string| Уникальный идентификатор переопределения. Только для чтения.|
 |senderEmailAddress|[emailAddress](emailaddress.md)|Сведения об электронном адресе отправителя, для которого создано переопределение.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 

@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
 ms.openlocfilehash: cd0c6d8473347ed86aff0bd83a8cd663e9b2c1ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27967121"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566208"
 ---
 # <a name="create-contact"></a>Создание контакта
 
@@ -83,7 +83,7 @@ Content-length: 210
 
 В теле запроса представьте объект [Contact](../resources/contact.md) в формате JSON.
 
-### <a name="response"></a>Отклик
+### <a name="response"></a>Ответ
 
 Ниже приведен пример отклика. **Примечание.** Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 

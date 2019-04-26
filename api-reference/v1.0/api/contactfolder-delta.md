@@ -5,11 +5,11 @@ localization_priority: Normal
 author: angelgolfer-ms
 ms.prod: outlook
 ms.openlocfilehash: 838f7e60a857fd27fb18158298b3c1109a73dd8d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27931743"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566222"
 ---
 # <a name="contactfolder-delta"></a>contactFolder: delta
 
@@ -40,8 +40,8 @@ GET /users/{id}/contactFolders/delta
 
 | Параметр запроса      | Тип   |Описание|
 |:---------------|:--------|:----------|
-| $deltatoken | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для той же коллекции папок контактов и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
-| $skiptoken | строка | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает, что из коллекции папок контактов получены не все изменения. |
+| $deltatoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `deltaLink` при предыдущем вызове функции **delta** для той же коллекции папок контактов и указывает на завершение этого цикла отслеживания изменений. Сохраните URL-адрес `deltaLink` с этим токеном и примените его в первом запросе следующего цикла отслеживания изменений для этой коллекции.|
+| $skiptoken | string | Этот [маркер состояния](/graph/delta-query-overview) возвращается в URL-адресе `nextLink` при предыдущем вызове функции **delta** и указывает, что из коллекции папок контактов получены не все изменения. |
 
 ### <a name="odata-query-parameters"></a>Параметры запросов OData
 
@@ -50,9 +50,9 @@ GET /users/{id}/contactFolders/delta
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание |
 |:---------------|:----------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json. Обязательный. |
-| Prefer | строка  | odata.maxpagesize={x}. Необязательный параметр. |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json. Обязательный. |
+| Prefer | string  | odata.maxpagesize={x}. Необязательный параметр. |
 
 ## <a name="response"></a>Отклик
 
@@ -108,7 +108,7 @@ Content-length: 254
 
 ### <a name="see-also"></a>См. также
 
-- [Отслеживание изменений данных Microsoft Graph с помощью разностного запроса](/graph/delta-query-overview)
+- [Отслеживание изменений данных Microsoft Graph с помощью запроса изменений](/graph/delta-query-overview)
 - [Получение добавочных изменений сообщений в папке](/graph/delta-query-messages)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

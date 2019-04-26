@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/14/2017
-title: itemActivity
+title: ItemActivity
 localization_priority: Normal
 ms.openlocfilehash: 5e2be549c3e3e9e799449679b605577ecd782a94
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29517297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561889"
 ---
 # <a name="itemactivity-resource-type"></a>Тип ресурса ItemActivity
 
@@ -18,7 +18,7 @@ ms.locfileid: "29517297"
 Ресурс **ItemActivity** предоставляет сведения о действиях, выполненных с элементом или в контейнере.
 В настоящее время доступен только в SharePoint и OneDrive для бизнеса.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 <!-- {
   "blockType": "resource",
@@ -46,10 +46,10 @@ ms.locfileid: "29517297"
 | Свойство | Тип                    | Описание
 |:---------|:------------------------|:----------------------------------------
 | id       | string                  | Уникальный идентификатор действия. Только для чтения.
-| Access   | [accessAction][]        | Обращения к элемента.
+| обращения   | [Акцессактион][]        | Доступ к элементу.
 | action   | [itemActionSet][]       | Сведения о выполненном действии. Только для чтения.
 | actor    | [identitySet][]         | Удостоверение, выполнившее действие. Только для чтения.
-| location | [location][]            | Физическое расположение, где было выполнено действие. Только для чтения.
+| location | [location][]            | Физическое расположение, в котором было выполнено действие. Только для чтения.
 | times    | [itemActivityTimeSet][] | Сведения о том, когда было выполнено действие. Только для чтения.
 
 [identitySet]: identityset.md
@@ -85,7 +85,7 @@ ms.locfileid: "29517297"
 | share       | [shareAction][]   | К элементу был предоставлен общий доступ.
 | version     | [versionAction][] | Для элемента была указана версия.
 
-[accessAction]: accessaction.md
+[Акцессактион]: accessaction.md
 [commentAction]: commentaction.md
 [createAction]: createaction.md
 [deleteAction]: deleteaction.md
@@ -109,8 +109,6 @@ ms.locfileid: "29517297"
   "keywords": "activities,activity,action",
   "section": "documentation",
   "tocPath": "Resources/ItemActivity",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/itemactivity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -3,11 +3,11 @@ title: Тип ресурса provisionedPlan
 description: Свойство **provisionedPlans** объектов user и organization представляет собой коллекцию объектов **provisionedPlan**.
 localization_priority: Normal
 ms.openlocfilehash: 5f9d9c5b2dfffb86643c5e355799f46382bc38cd
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563355"
 ---
 # <a name="provisionedplan-resource-type"></a>Тип ресурса provisionedPlan
 
@@ -19,11 +19,11 @@ ms.locfileid: "29643372"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|capabilityStatus|String|Пример: "Enabled".|
+|Капабилитистатус|String|Пример: "Enabled".|
 |provisioningStatus|String|Пример: "Success".|
 |service|String|Имя службы, например “AccessControlS2S”.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -32,7 +32,7 @@ ms.locfileid: "29643372"
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisionedplan"
+  "@odata.type": "microsoft.graph.provisionedPlan"
 }-->
 
 ```json
@@ -53,8 +53,6 @@ ms.locfileid: "29643372"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/provisionedplan.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
