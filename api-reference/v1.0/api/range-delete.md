@@ -5,25 +5,25 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: 671dc5785aae4d912d60c2356fc7b1a204630c3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941604"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575228"
 ---
-# <a name="range-delete"></a><span data-ttu-id="c8ee7-103">Range: delete</span><span class="sxs-lookup"><span data-stu-id="c8ee7-103">Range: delete</span></span>
+# <a name="range-delete"></a><span data-ttu-id="70301-103">Range: delete</span><span class="sxs-lookup"><span data-stu-id="70301-103">Range: delete</span></span>
 
-<span data-ttu-id="c8ee7-104">Удаляет ячейки, связанные с диапазоном.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-104">Deletes the cells associated with the range.</span></span>
-## <a name="permissions"></a><span data-ttu-id="c8ee7-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c8ee7-105">Permissions</span></span>
-<span data-ttu-id="c8ee7-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c8ee7-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="70301-104">Удаляет ячейки, связанные с диапазоном.</span><span class="sxs-lookup"><span data-stu-id="70301-104">Deletes the cells associated with the range.</span></span>
+## <a name="permissions"></a><span data-ttu-id="70301-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="70301-105">Permissions</span></span>
+<span data-ttu-id="70301-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="70301-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="c8ee7-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c8ee7-108">Permission type</span></span>      | <span data-ttu-id="c8ee7-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c8ee7-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="70301-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="70301-108">Permission type</span></span>      | <span data-ttu-id="70301-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="70301-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="c8ee7-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c8ee7-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c8ee7-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="c8ee7-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="c8ee7-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c8ee7-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c8ee7-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-113">Not supported.</span></span>    |
-|<span data-ttu-id="c8ee7-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c8ee7-114">Application</span></span> | <span data-ttu-id="c8ee7-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-115">Not supported.</span></span> |
+|<span data-ttu-id="70301-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="70301-110">Delegated (work or school account)</span></span> | <span data-ttu-id="70301-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="70301-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="70301-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="70301-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="70301-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70301-113">Not supported.</span></span>    |
+|<span data-ttu-id="70301-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="70301-114">Application</span></span> | <span data-ttu-id="70301-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="70301-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="c8ee7-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c8ee7-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="70301-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="70301-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /workbook/names/{name}/range/delete
@@ -31,27 +31,27 @@ POST /workbook/worksheets/{id|name}/range(address='<address>')/delete
 POST /workbook/tables/{id|name}/columns/{id|name}/range/delete
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="c8ee7-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="c8ee7-117">Request headers</span></span>
-| <span data-ttu-id="c8ee7-118">Имя</span><span class="sxs-lookup"><span data-stu-id="c8ee7-118">Name</span></span>       | <span data-ttu-id="c8ee7-119">Описание</span><span class="sxs-lookup"><span data-stu-id="c8ee7-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="70301-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="70301-117">Request headers</span></span>
+| <span data-ttu-id="70301-118">Имя</span><span class="sxs-lookup"><span data-stu-id="70301-118">Name</span></span>       | <span data-ttu-id="70301-119">Описание</span><span class="sxs-lookup"><span data-stu-id="70301-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="c8ee7-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="c8ee7-120">Authorization</span></span>  | <span data-ttu-id="c8ee7-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="c8ee7-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="c8ee7-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="c8ee7-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="70301-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="70301-120">Authorization</span></span>  | <span data-ttu-id="70301-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="70301-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="70301-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="70301-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="70301-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="70301-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="c8ee7-126">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="c8ee7-126">Request body</span></span>
-<span data-ttu-id="c8ee7-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="70301-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="70301-126">Request body</span></span>
+<span data-ttu-id="70301-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="70301-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="c8ee7-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="c8ee7-128">Parameter</span></span>    | <span data-ttu-id="c8ee7-129">Тип</span><span class="sxs-lookup"><span data-stu-id="c8ee7-129">Type</span></span>   |<span data-ttu-id="c8ee7-130">Описание</span><span class="sxs-lookup"><span data-stu-id="c8ee7-130">Description</span></span>|
+| <span data-ttu-id="70301-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="70301-128">Parameter</span></span>    | <span data-ttu-id="70301-129">Тип</span><span class="sxs-lookup"><span data-stu-id="70301-129">Type</span></span>   |<span data-ttu-id="70301-130">Описание</span><span class="sxs-lookup"><span data-stu-id="70301-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="c8ee7-131">shift</span><span class="sxs-lookup"><span data-stu-id="c8ee7-131">shift</span></span>|<span data-ttu-id="c8ee7-132">строка</span><span class="sxs-lookup"><span data-stu-id="c8ee7-132">string</span></span>|<span data-ttu-id="c8ee7-133">Указывает, каким способом сдвига ячеек.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-133">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="c8ee7-134">Возможные значения: `Up`, `Left`.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-134">The possible values are: `Up`, `Left`.</span></span>|
+|<span data-ttu-id="70301-131">shift</span><span class="sxs-lookup"><span data-stu-id="70301-131">shift</span></span>|<span data-ttu-id="70301-132">string</span><span class="sxs-lookup"><span data-stu-id="70301-132">string</span></span>|<span data-ttu-id="70301-133">Определяет способ сдвига ячеек.</span><span class="sxs-lookup"><span data-stu-id="70301-133">Specifies which way to shift the cells.</span></span>  <span data-ttu-id="70301-134">Возможные значения: `Up`, `Left`.</span><span class="sxs-lookup"><span data-stu-id="70301-134">The possible values are: `Up`, `Left`.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="c8ee7-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="c8ee7-135">Response</span></span>
+## <a name="response"></a><span data-ttu-id="70301-135">Отклик</span><span class="sxs-lookup"><span data-stu-id="70301-135">Response</span></span>
 
-<span data-ttu-id="c8ee7-p105">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
+<span data-ttu-id="70301-p105">В случае успешного выполнения этот метод возвращает код отклика `200 OK`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="70301-p105">If successful, this method returns `200 OK` response code. It does not return anything in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c8ee7-138">Пример</span><span class="sxs-lookup"><span data-stu-id="c8ee7-138">Example</span></span>
-<span data-ttu-id="c8ee7-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-139">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="c8ee7-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="c8ee7-140">Request</span></span>
-<span data-ttu-id="c8ee7-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-141">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="70301-138">Пример</span><span class="sxs-lookup"><span data-stu-id="70301-138">Example</span></span>
+<span data-ttu-id="70301-139">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="70301-139">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="70301-140">Запрос</span><span class="sxs-lookup"><span data-stu-id="70301-140">Request</span></span>
+<span data-ttu-id="70301-141">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="70301-141">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_delete"
@@ -66,8 +66,8 @@ Content-length: 28
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="c8ee7-142">Ответ</span><span class="sxs-lookup"><span data-stu-id="c8ee7-142">Response</span></span>
-<span data-ttu-id="c8ee7-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="c8ee7-143">Here is an example of the response.</span></span> 
+##### <a name="response"></a><span data-ttu-id="70301-142">Отклик</span><span class="sxs-lookup"><span data-stu-id="70301-142">Response</span></span>
+<span data-ttu-id="70301-143">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="70301-143">Here is an example of the response.</span></span> 
 <!-- {
   "blockType": "response",
   "truncated": true

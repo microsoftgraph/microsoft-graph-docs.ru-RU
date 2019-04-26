@@ -5,55 +5,55 @@ author: dkershaw10
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 1ebea83f26bd3fcf54e530e80173c830fbde7ba8
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27941690"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32577765"
 ---
-# <a name="update-a-group-setting"></a><span data-ttu-id="1df0f-103">Обновление параметра группы</span><span class="sxs-lookup"><span data-stu-id="1df0f-103">Update a group setting</span></span>
+# <a name="update-a-group-setting"></a><span data-ttu-id="08da1-103">Обновление параметра группы</span><span class="sxs-lookup"><span data-stu-id="08da1-103">Update a group setting</span></span>
 
-<span data-ttu-id="1df0f-104">Обновление свойств для указанных объектов параметров группы.</span><span class="sxs-lookup"><span data-stu-id="1df0f-104">Update the properties of a specific group setting object.</span></span>
+<span data-ttu-id="08da1-104">Обновление свойств для указанных объектов параметров группы.</span><span class="sxs-lookup"><span data-stu-id="08da1-104">Update the properties of a specific group setting object.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="1df0f-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1df0f-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="08da1-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="08da1-105">Permissions</span></span>
 
-<span data-ttu-id="1df0f-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1df0f-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="08da1-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="08da1-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
 
-|<span data-ttu-id="1df0f-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1df0f-108">Permission type</span></span>      | <span data-ttu-id="1df0f-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1df0f-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="08da1-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="08da1-108">Permission type</span></span>      | <span data-ttu-id="08da1-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="08da1-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1df0f-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1df0f-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1df0f-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="1df0f-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
-|<span data-ttu-id="1df0f-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1df0f-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1df0f-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1df0f-113">Not supported.</span></span>    |
-|<span data-ttu-id="1df0f-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1df0f-114">Application</span></span> | <span data-ttu-id="1df0f-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1df0f-115">Directory.ReadWrite.All</span></span> |
+|<span data-ttu-id="08da1-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="08da1-110">Delegated (work or school account)</span></span> | <span data-ttu-id="08da1-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span><span class="sxs-lookup"><span data-stu-id="08da1-111">Directory.ReadWrite.All, Directory.AccessAsUser.All</span></span>    |
+|<span data-ttu-id="08da1-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="08da1-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="08da1-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="08da1-113">Not supported.</span></span>    |
+|<span data-ttu-id="08da1-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="08da1-114">Application</span></span> | <span data-ttu-id="08da1-115">Directory.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="08da1-115">Directory.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1df0f-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1df0f-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="08da1-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="08da1-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 
-<span data-ttu-id="1df0f-117">Обновление параметра на уровне клиента или отдельной группы.</span><span class="sxs-lookup"><span data-stu-id="1df0f-117">Update a tenant-wide or group specific setting.</span></span>
+<span data-ttu-id="08da1-117">Обновление параметра на уровне клиента или отдельной группы.</span><span class="sxs-lookup"><span data-stu-id="08da1-117">Update a tenant-wide or group specific setting.</span></span>
 
 ```http
 PATCH /groupSettings/{id}
 PATCH /groups/{id}/settings/{id}
 ```
-## <a name="optional-request-headers"></a><span data-ttu-id="1df0f-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="1df0f-118">Optional request headers</span></span>
-| <span data-ttu-id="1df0f-119">Имя</span><span class="sxs-lookup"><span data-stu-id="1df0f-119">Name</span></span> | <span data-ttu-id="1df0f-120">Описание</span><span class="sxs-lookup"><span data-stu-id="1df0f-120">Description</span></span> |
+## <a name="optional-request-headers"></a><span data-ttu-id="08da1-118">Необязательные заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="08da1-118">Optional request headers</span></span>
+| <span data-ttu-id="08da1-119">Имя</span><span class="sxs-lookup"><span data-stu-id="08da1-119">Name</span></span> | <span data-ttu-id="08da1-120">Описание</span><span class="sxs-lookup"><span data-stu-id="08da1-120">Description</span></span> |
 |:-----------|:-----------|
-| <span data-ttu-id="1df0f-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="1df0f-121">Authorization</span></span>  | <span data-ttu-id="1df0f-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="1df0f-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="1df0f-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="1df0f-124">Content-Type</span></span>  | <span data-ttu-id="1df0f-125">application/json</span><span class="sxs-lookup"><span data-stu-id="1df0f-125">application/json</span></span>  |
+| <span data-ttu-id="08da1-121">Авторизация</span><span class="sxs-lookup"><span data-stu-id="08da1-121">Authorization</span></span>  | <span data-ttu-id="08da1-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="08da1-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="08da1-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="08da1-124">Content-Type</span></span>  | <span data-ttu-id="08da1-125">application/json</span><span class="sxs-lookup"><span data-stu-id="08da1-125">application/json</span></span>  |
 
-## <a name="request-body"></a><span data-ttu-id="1df0f-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="1df0f-126">Request body</span></span>
-<span data-ttu-id="1df0f-127">В теле запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="1df0f-127">In the request body, supply the values for relevant fields that should be updated.</span></span> 
+## <a name="request-body"></a><span data-ttu-id="08da1-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="08da1-126">Request body</span></span>
+<span data-ttu-id="08da1-127">В тексте запроса укажите значения для соответствующих полей, которые необходимо обновить.</span><span class="sxs-lookup"><span data-stu-id="08da1-127">In the request body, supply the values for relevant fields that should be updated.</span></span> 
 
-| <span data-ttu-id="1df0f-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="1df0f-128">Property</span></span> | <span data-ttu-id="1df0f-129">Тип</span><span class="sxs-lookup"><span data-stu-id="1df0f-129">Type</span></span> | <span data-ttu-id="1df0f-130">Описание</span><span class="sxs-lookup"><span data-stu-id="1df0f-130">Description</span></span> |
+| <span data-ttu-id="08da1-128">Свойство</span><span class="sxs-lookup"><span data-stu-id="08da1-128">Property</span></span> | <span data-ttu-id="08da1-129">Тип</span><span class="sxs-lookup"><span data-stu-id="08da1-129">Type</span></span> | <span data-ttu-id="08da1-130">Описание</span><span class="sxs-lookup"><span data-stu-id="08da1-130">Description</span></span> |
 |:---------------|:--------|:----------|
-| <span data-ttu-id="1df0f-131">values</span><span class="sxs-lookup"><span data-stu-id="1df0f-131">values</span></span> | <span data-ttu-id="1df0f-132">Коллекция объектов settingValue</span><span class="sxs-lookup"><span data-stu-id="1df0f-132">settingValue collection</span></span> | <span data-ttu-id="1df0f-p103">Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений.</span><span class="sxs-lookup"><span data-stu-id="1df0f-p103">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
+| <span data-ttu-id="08da1-131">values</span><span class="sxs-lookup"><span data-stu-id="08da1-131">values</span></span> | <span data-ttu-id="08da1-132">Коллекция settingValue</span><span class="sxs-lookup"><span data-stu-id="08da1-132">settingValue collection</span></span> | <span data-ttu-id="08da1-p103">Обновленный набор значений.  ПРИМЕЧАНИЕ. Необходимо предоставить весь набор коллекции. Вы не можете обновить отдельный набор значений.</span><span class="sxs-lookup"><span data-stu-id="08da1-p103">The updated set of values.  NOTE: You must supply the entire collection set. You cannot update a single set of values.</span></span> |
 
-## <a name="response"></a><span data-ttu-id="1df0f-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="1df0f-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="08da1-136">Отклик</span><span class="sxs-lookup"><span data-stu-id="08da1-136">Response</span></span>
 
-<span data-ttu-id="1df0f-137">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="1df0f-137">If successful, this method returns a `204 No Content` response code.</span></span>
+<span data-ttu-id="08da1-137">В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.</span><span class="sxs-lookup"><span data-stu-id="08da1-137">If successful, this method returns a `204 No Content` response code.</span></span>
 
-## <a name="example"></a><span data-ttu-id="1df0f-138">Пример</span><span class="sxs-lookup"><span data-stu-id="1df0f-138">Example</span></span>
-#### <a name="request"></a><span data-ttu-id="1df0f-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="1df0f-139">Request</span></span>
+## <a name="example"></a><span data-ttu-id="08da1-138">Пример</span><span class="sxs-lookup"><span data-stu-id="08da1-138">Example</span></span>
+#### <a name="request"></a><span data-ttu-id="08da1-139">Запрос</span><span class="sxs-lookup"><span data-stu-id="08da1-139">Request</span></span>
 <!-- {
   "blockType": "request",
   "name": "update_groupsetting"
@@ -123,7 +123,7 @@ Content-length: 173
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="1df0f-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="1df0f-140">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="08da1-140">Ответ</span><span class="sxs-lookup"><span data-stu-id="08da1-140">Response</span></span>
 
 <!-- {
   "blockType": "response",
