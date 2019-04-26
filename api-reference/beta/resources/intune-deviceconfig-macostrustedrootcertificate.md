@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 80b5ef9140cec663f07d3287f53da9cd93d53adf
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31804006"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570654"
 ---
 # <a name="macostrustedrootcertificate-resource-type"></a>Тип ресурса Макострустедрутцертификате
 
@@ -42,7 +42,7 @@ ms.locfileid: "31804006"
 |description|String|Указанное администратором описание конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md).|
 |displayName|String|Указанное администратором имя конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Версия конфигурации устройства. Наследуется от объекта [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
-|trustedRootCertificate|Binary|Доверенный корневой сертификат.|
+|trustedRootCertificate|Двоичный|Доверенный корневой сертификат.|
 |Цертфиленаме|String|Имя файла, отображаемое в ПОЛЬЗОВАТЕЛЬСКОМ ИНТЕРФЕЙСе.|
 
 ## <a name="relationships"></a>Связи

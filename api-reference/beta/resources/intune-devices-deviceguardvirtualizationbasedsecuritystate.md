@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 51def159e90b256e772138264139f2a96fbd3344
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778532"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570133"
 ---
 # <a name="deviceguardvirtualizationbasedsecuritystate-enum-type"></a>тип перечисления Девицегуардвиртуализатионбаседсекуритистате
 
@@ -23,11 +23,11 @@ ms.locfileid: "31778532"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |запускается|нуль|Запущено|
-|Ребутрекуиред|1,1|Обязательный корень|
-|require64BitArchitecture|2|необходима разрядная архитектура 64|
-|Нотлиценсед|4|Не лицензировано|
-|notConfigured|SP4|Не настроено|
-|Доеснотмисардваререкуирементс|17:00|Система не соответствует требованиям к оборудованию|
+|Ребутрекуиред|1 |Обязательный корень|
+|require64BitArchitecture|2 |необходима разрядная архитектура 64|
+|Нотлиценсед|3 |Не лицензировано|
+|notConfigured|4 |Не настроено|
+|Доеснотмисардваререкуирементс|5 |Система не соответствует требованиям к оборудованию|
 |остальные|42|Остальные. Дополнительные сведения см. в журналах событий в Microsoft Windows Девицегуард.|
 
 
