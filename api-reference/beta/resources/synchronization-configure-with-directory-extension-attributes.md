@@ -1,25 +1,25 @@
 ---
-title: Настройка синхронизации с расширением атрибутов каталога
-description: 'Можно настроить параметры синхронизации схемы для включения атрибутов каталога расширения Azure Active Directory (Azure AD). В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значение User.CommunityNickname в Salesforce. В этом сценарии у вас есть Azure AD подключить настроить для подготовки число атрибуты расширения каталогов Windows Server Active Directory локально для Azure AD. '
+title: Настройка синхронизации с атрибутами расширения каталога
+description: 'Вы можете настроить схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD). В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значения User. Коммунитиниккнаме в Salesforce. В этом сценарии у вас есть Azure AD Connect, настроенный на подготовку ряда атрибутов расширения каталогов из локальной среды Windows Server Active Directory в Azure AD. '
 localization_priority: Normal
 ms.openlocfilehash: 4160a95acfc6b23f5d5a9d880f36d9ca6a1f3362
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523864"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32582163"
 ---
-# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="076cb-105">Настройка синхронизации с расширением атрибутов каталога</span><span class="sxs-lookup"><span data-stu-id="076cb-105">Configure synchronization with directory extension attributes</span></span>
+# <a name="configure-synchronization-with-directory-extension-attributes"></a><span data-ttu-id="0ea36-105">Настройка синхронизации с атрибутами расширения каталога</span><span class="sxs-lookup"><span data-stu-id="0ea36-105">Configure synchronization with directory extension attributes</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="076cb-106">Можно настроить параметры синхронизации схемы для включения атрибутов каталога расширения Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="076cb-106">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="076cb-107">В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значение User.CommunityNickname в Salesforce.</span><span class="sxs-lookup"><span data-stu-id="076cb-107">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="076cb-108">В этом сценарии у вас есть Azure AD подключить настроить для подготовки число атрибуты расширения каталогов Windows Server Active Directory локально для Azure AD.</span><span class="sxs-lookup"><span data-stu-id="076cb-108">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
+<span data-ttu-id="0ea36-106">Вы можете настроить схему синхронизации, включив в нее атрибуты расширения каталога Azure Active Directory (Azure AD).</span><span class="sxs-lookup"><span data-stu-id="0ea36-106">You can customize your synchronization schema to include Azure Active Directory (Azure AD) directory extension attributes.</span></span> <span data-ttu-id="0ea36-107">В этой статье описывается, как использовать атрибут расширения каталога (**extension_9d98asdfl15980a_Nickname**) для заполнения значения User. Коммунитиниккнаме в Salesforce.</span><span class="sxs-lookup"><span data-stu-id="0ea36-107">This article describes how to use a directory extension attribute (**extension_9d98asdfl15980a_Nickname**) to populate the value of User.CommunityNickname in Salesforce.</span></span> <span data-ttu-id="0ea36-108">В этом сценарии у вас есть Azure AD Connect, настроенный на подготовку ряда атрибутов расширения каталогов из локальной среды Windows Server Active Directory в Azure AD.</span><span class="sxs-lookup"><span data-stu-id="0ea36-108">In this scenario, you have Azure AD Connect set up to provision a number of directory extension attributes from Windows Server Active Directory on-premises to Azure AD.</span></span> 
 
-<span data-ttu-id="076cb-109">В этой статье предполагается, что уже содержит приложение, которое поддерживает синхронизацию к клиенту через [Портал Azure](https://portal.azure.com), что вы знаете отображаемое имя приложения и имеют маркер авторизации для Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="076cb-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="076cb-110">Сведения о том, как получить маркер авторизации содержатся [маркеры доступа Get для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span><span class="sxs-lookup"><span data-stu-id="076cb-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
+<span data-ttu-id="0ea36-109">В этой статье предполагается, что вы уже добавили приложение, которое поддерживает синхронизацию с клиентом с помощью [портала Azure](https://portal.azure.com), вы знаете отображаемое имя приложения, и у вас есть маркер авторизации для Microsoft Graph.</span><span class="sxs-lookup"><span data-stu-id="0ea36-109">This article assumes that you have already added an application that supports synchronization to your tenant through the [Azure Portal](https://portal.azure.com), that you know the application display name, and that you have an authorization token for Microsoft Graph.</span></span> <span data-ttu-id="0ea36-110">Сведения о том, как получить маркер авторизации, можно найти [в статье получение маркеров доступа для вызова Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span><span class="sxs-lookup"><span data-stu-id="0ea36-110">For information about how to get the authorization token, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).</span></span>
 
-## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="076cb-111">Найдите объект участника службы по отображаемому имени</span><span class="sxs-lookup"><span data-stu-id="076cb-111">Find the service principal object by display name</span></span>
+## <a name="find-the-service-principal-object-by-display-name"></a><span data-ttu-id="0ea36-111">Поиск объекта субъекта службы по отображаемому имени</span><span class="sxs-lookup"><span data-stu-id="0ea36-111">Find the service principal object by display name</span></span>
 
-<span data-ttu-id="076cb-112">Следующий пример демонстрирует найдите объект участника службы с отображаемым именем «Изолированной среды Salesforce».</span><span class="sxs-lookup"><span data-stu-id="076cb-112">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
+<span data-ttu-id="0ea36-112">В приведенном ниже примере показано, как найти объект участника службы с отображаемым именем "песочницы Salesforce".</span><span class="sxs-lookup"><span data-stu-id="0ea36-112">The following example shows how to find a service principal object with the display name "Salesforce Sandbox".</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals?$select=id,appId,displayName&$filter=startswith(displayName, 'salesforce')
@@ -49,11 +49,11 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="076cb-113">`{servicePrincipalId}` — Это `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span><span class="sxs-lookup"><span data-stu-id="076cb-113">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
+<span data-ttu-id="0ea36-113">Параметр `{servicePrincipalId}` имеет `60443998-8cf7-4e61-b05c-a53b658cb5e1`значение.</span><span class="sxs-lookup"><span data-stu-id="0ea36-113">The `{servicePrincipalId}` is `60443998-8cf7-4e61-b05c-a53b658cb5e1`.</span></span>
 
-## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="076cb-114">Список заданий синхронизации в контексте участников-служб</span><span class="sxs-lookup"><span data-stu-id="076cb-114">List synchronization jobs in the context of the service principal</span></span> 
+## <a name="list-synchronization-jobs-in-the-context-of-the-service-principal"></a><span data-ttu-id="0ea36-114">ПереЧисление заданий синхронизации в контексте субъекта-службы</span><span class="sxs-lookup"><span data-stu-id="0ea36-114">List synchronization jobs in the context of the service principal</span></span> 
 
-<span data-ttu-id="076cb-115">Следующий пример показывает, как получить `jobId` , необходимые для работы с.</span><span class="sxs-lookup"><span data-stu-id="076cb-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="076cb-116">Как правило ответ возвращается только одно задание.</span><span class="sxs-lookup"><span data-stu-id="076cb-116">Generally, the response returns only one job.</span></span>
+<span data-ttu-id="0ea36-115">В приведенном ниже примере показано `jobId` , как получить сведения о том, что необходимо для работы.</span><span class="sxs-lookup"><span data-stu-id="0ea36-115">The following example shows you how to get the `jobId` that you need to work with.</span></span> <span data-ttu-id="0ea36-116">Как правило, ответ возвращает только одно задание.</span><span class="sxs-lookup"><span data-stu-id="0ea36-116">Generally, the response returns only one job.</span></span>
 
 ```http
 GET https://graph.microsoft.com/beta/servicePrincipals/60443998-8cf7-4e61-b05c-a53b658cb5e1/synchronization/jobs
@@ -74,18 +74,18 @@ Authorization: Bearer {Token}
 }
 ```
 
-<span data-ttu-id="076cb-117">`{jobId}` — Это `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span><span class="sxs-lookup"><span data-stu-id="076cb-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
+<span data-ttu-id="0ea36-117">Параметр `{jobId}` имеет `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`значение.</span><span class="sxs-lookup"><span data-stu-id="0ea36-117">The `{jobId}` is `SfSandboxOutDelta.e4bbf44533ea4eabb17027f3a92e92aa`.</span></span>
 
-## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="076cb-118">Найдите имя атрибута расширения каталогов, вы должны</span><span class="sxs-lookup"><span data-stu-id="076cb-118">Find the name of the directory extension attribute you need</span></span>
+## <a name="find-the-name-of-the-directory-extension-attribute-you-need"></a><span data-ttu-id="0ea36-118">Найдите имя необходимого атрибута расширения каталога</span><span class="sxs-lookup"><span data-stu-id="0ea36-118">Find the name of the directory extension attribute you need</span></span>
 
-<span data-ttu-id="076cb-119">Вам понадобится полное имя атрибута расширения.</span><span class="sxs-lookup"><span data-stu-id="076cb-119">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="076cb-120">Если вы не знаете полное имя (который должен выглядеть **extension_9d98asdfl15980a_Nickname**), просмотрите следующие сведения о атрибуты расширения каталогов, а также для их проверки:</span><span class="sxs-lookup"><span data-stu-id="076cb-120">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
+<span data-ttu-id="0ea36-119">Вам потребуется полное имя атрибута расширения.</span><span class="sxs-lookup"><span data-stu-id="0ea36-119">You'll need the full name of the extension attribute.</span></span> <span data-ttu-id="0ea36-120">Если полное имя (которое должно выглядеть аналогично **extension_9d98asdfl15980a_Nickname**), ознакомьтесь со следующими сведениями о атрибутах расширения каталогов и способах их проверки:</span><span class="sxs-lookup"><span data-stu-id="0ea36-120">If you don't know the full name (which should look similar to **extension_9d98asdfl15980a_Nickname**), see the following information about directory extension attributes and how to inspect them:</span></span> 
 
-* [<span data-ttu-id="076cb-121">Расширение схемы directory Azure AD с помощью настраиваемых свойств</span><span class="sxs-lookup"><span data-stu-id="076cb-121">Extending the Azure AD directory schema with custom properties</span></span>](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
-* [<span data-ttu-id="076cb-122">Расширения схемы Directory | Основные понятия графике API</span><span class="sxs-lookup"><span data-stu-id="076cb-122">Directory schema extensions | Graph API concepts</span></span>](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
+* [<span data-ttu-id="0ea36-121">Расширение схемы каталога Azure AD с помощью настраиваемых свойств</span><span class="sxs-lookup"><span data-stu-id="0ea36-121">Extending the Azure AD directory schema with custom properties</span></span>](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-graphapi-directoryextensions-web/)
+* [<span data-ttu-id="0ea36-122">Расширения схемы каталогов | Основные понятия API Graph</span><span class="sxs-lookup"><span data-stu-id="0ea36-122">Directory schema extensions | Graph API concepts</span></span>](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions)
 
 
-## <a name="get-the-synchronization-schema"></a><span data-ttu-id="076cb-123">Получение схемы синхронизации</span><span class="sxs-lookup"><span data-stu-id="076cb-123">Get the synchronization schema</span></span>
-<span data-ttu-id="076cb-124">Следующем примере показано, как получить схему синхронизации.</span><span class="sxs-lookup"><span data-stu-id="076cb-124">The following example shows how to get the synchronization schema.</span></span>
+## <a name="get-the-synchronization-schema"></a><span data-ttu-id="0ea36-123">Получение схемы синхронизации</span><span class="sxs-lookup"><span data-stu-id="0ea36-123">Get the synchronization schema</span></span>
+<span data-ttu-id="0ea36-124">В приведенном ниже примере показано, как получить схему синхронизации.</span><span class="sxs-lookup"><span data-stu-id="0ea36-124">The following example shows how to get the synchronization schema.</span></span>
 
 <!-- {
   "blockType": "request",
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/sync
 Authorization: Bearer {Token}
 ```
 
-><span data-ttu-id="076cb-125">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="076cb-125">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="076cb-126">Будут возвращены все свойства в фактический вызов.</span><span class="sxs-lookup"><span data-stu-id="076cb-126">All the properties will be returned in an actual call.</span></span>
+><span data-ttu-id="0ea36-125">**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.</span><span class="sxs-lookup"><span data-stu-id="0ea36-125">**Note:** The response object shown here might be shortened for readability.</span></span> <span data-ttu-id="0ea36-126">При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="0ea36-126">All the properties will be returned in an actual call.</span></span>
 
 <!-- {
   "blockType": "response",
@@ -105,6 +105,7 @@ Authorization: Bearer {Token}
 } -->
 ```http
 HTTP/1.1 200 OK
+Content-Type: application/json
 
 {
   "directories": [
@@ -193,20 +194,20 @@ HTTP/1.1 200 OK
 }
 ```
 
-## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="076cb-127">Добавьте определение для атрибута расширения каталогов и сопоставление атрибутов</span><span class="sxs-lookup"><span data-stu-id="076cb-127">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
+## <a name="add-a-definition-for-the-directory-extension-attribute-and-a-mapping-between-the-attributes"></a><span data-ttu-id="0ea36-127">Добавление определения атрибута расширения каталога и сопоставления между атрибутами</span><span class="sxs-lookup"><span data-stu-id="0ea36-127">Add a definition for the directory extension attribute, and a mapping between the attributes</span></span>
 
-<span data-ttu-id="076cb-128">Используйте редактор обычного текста по выбору (например, ["Блокнот" ++](https://notepad-plus-plus.org/) или [Редактора JSON Online](https://www.jsoneditoronline.org/)) для:</span><span class="sxs-lookup"><span data-stu-id="076cb-128">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
+<span data-ttu-id="0ea36-128">Используйте простой текстовый редактор (например, [Notepad + +](https://notepad-plus-plus.org/) или [Редактор JSON Online](https://www.jsoneditoronline.org/)), чтобы:</span><span class="sxs-lookup"><span data-stu-id="0ea36-128">Use a plain text editor of your choice (for example, [Notepad++](https://notepad-plus-plus.org/) or [JSON Editor Online](https://www.jsoneditoronline.org/)) to:</span></span>
 
-1. <span data-ttu-id="076cb-129">Добавьте [Определение атрибута](synchronization-attributedefinition.md) для `extension_9d98asdfl15980a_Nickname` атрибут.</span><span class="sxs-lookup"><span data-stu-id="076cb-129">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
+1. <span data-ttu-id="0ea36-129">Добавьте `extension_9d98asdfl15980a_Nickname` [Определение атрибута](synchronization-attributedefinition.md) .</span><span class="sxs-lookup"><span data-stu-id="0ea36-129">Add an [attribute definition](synchronization-attributedefinition.md) for the `extension_9d98asdfl15980a_Nickname` attribute.</span></span> 
 
-    - <span data-ttu-id="076cb-130">В разделе каталоги найти каталог с именем «Azure Active Directory» и найдите один с именем **пользователя**в массив объектов.</span><span class="sxs-lookup"><span data-stu-id="076cb-130">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
-    - <span data-ttu-id="076cb-131">Добавьте новый атрибут в список, укажите имя и тип, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="076cb-131">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
+    - <span data-ttu-id="0ea36-130">В разделе Каталоги найдите каталог с именем "Azure Active Directory" и в массиве объекта найдите одного пользователя с именем **User**.</span><span class="sxs-lookup"><span data-stu-id="0ea36-130">Under directories, find the directory with the name "Azure Active Directory", and in the object's array, find the one named **User**.</span></span>
+    - <span data-ttu-id="0ea36-131">Добавьте новый атрибут в список, указав имя и тип, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="0ea36-131">Add the new attribute to the list, specifying the name and type, as shown in the following example.</span></span>
 
-2. <span data-ttu-id="076cb-132">Добавьте [атрибут сопоставления](synchronization-attributemapping.md) между extension_9d98asdfl15980a_Nickname и CommunityNickname.</span><span class="sxs-lookup"><span data-stu-id="076cb-132">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
+2. <span data-ttu-id="0ea36-132">Добавьте [сопоставление атрибутов](synchronization-attributemapping.md) между Extension_9d98asdfl15980a_Nickname и коммунитиниккнаме.</span><span class="sxs-lookup"><span data-stu-id="0ea36-132">Add an [attribute mapping](synchronization-attributemapping.md) between extension_9d98asdfl15980a_Nickname and CommunityNickname.</span></span>
 
-    - <span data-ttu-id="076cb-133">В разделе [synchronizationRules](synchronization-synchronizationrule.md)найти правило, которое задает в качестве исходного каталога и Salesforce.com как в целевом каталоге Azure AD (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span><span class="sxs-lookup"><span data-stu-id="076cb-133">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
-    - <span data-ttu-id="076cb-134">Найдите в [objectMappings](synchronization-objectmapping.md) правила сопоставления между пользователями (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span><span class="sxs-lookup"><span data-stu-id="076cb-134">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
-    - <span data-ttu-id="076cb-135">В массиве [attributeMappings](synchronization-attributemapping.md) **objectMapping**добавьте новую запись, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="076cb-135">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
+    - <span data-ttu-id="0ea36-133">В разделе [синчронизатионрулес](synchronization-synchronizationrule.md)найдите правило, задающее Azure AD в качестве исходного каталога, и Salesforce.com в качестве целевого каталога`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`().</span><span class="sxs-lookup"><span data-stu-id="0ea36-133">Under [synchronizationRules](synchronization-synchronizationrule.md), find the rule that specifies Azure AD as source directory, and Salesforce.com as the target directory (`"sourceDirectoryName": "Azure Active Directory",   "targetDirectoryName": "salesforce.com"`).</span></span>
+    - <span data-ttu-id="0ea36-134">В [обжектмаппингс](synchronization-objectmapping.md) правила найдите сопоставление между пользователями (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span><span class="sxs-lookup"><span data-stu-id="0ea36-134">In the [objectMappings](synchronization-objectmapping.md) of the rule, find the mapping between users (`"sourceObjectName": "User",   "targetObjectName": "User"`).</span></span>
+    - <span data-ttu-id="0ea36-135">В массиве [аттрибутемаппингс](synchronization-attributemapping.md) объекта **обжектмаппинг**добавьте новую запись, как показано в следующем примере.</span><span class="sxs-lookup"><span data-stu-id="0ea36-135">In the [attributeMappings](synchronization-attributemapping.md) array of the **objectMapping**, add a new entry, as shown in the following example.</span></span>
 
     ```json
     {
@@ -257,9 +258,9 @@ HTTP/1.1 200 OK
     }
     ```
 
-## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="076cb-136">Сохранение измененного синхронизации схемы</span><span class="sxs-lookup"><span data-stu-id="076cb-136">Save the modified synchronization schema</span></span>
+## <a name="save-the-modified-synchronization-schema"></a><span data-ttu-id="0ea36-136">Сохранение измененной схемы синхронизации</span><span class="sxs-lookup"><span data-stu-id="0ea36-136">Save the modified synchronization schema</span></span>
 
-<span data-ttu-id="076cb-137">При сохранении схемы обновленные синхронизации убедитесь, что включение всей схемы, включая части без изменений.</span><span class="sxs-lookup"><span data-stu-id="076cb-137">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="076cb-138">Этот запрос будет заменить существующую схему, предоставленные.</span><span class="sxs-lookup"><span data-stu-id="076cb-138">This request will replace the existing schema with the one that you provide.</span></span>
+<span data-ttu-id="0ea36-137">При сохранении обновленной схемы синхронизации убедитесь, что включается вся схема, включая неизмененные части.</span><span class="sxs-lookup"><span data-stu-id="0ea36-137">When you save the updated synchronization schema, make sure that you include the entire schema, including the unmodified parts.</span></span> <span data-ttu-id="0ea36-138">Этот запрос заменит существующую схему на предоставленную вами.</span><span class="sxs-lookup"><span data-stu-id="0ea36-138">This request will replace the existing schema with the one that you provide.</span></span>
 
 ```http
 PUT https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalId}/synchronization/jobs/{jobId}/schema
@@ -272,12 +273,4 @@ Authorization: Bearer {Token}
 HTTP/1.1 201 No Content
 ```
 
-<span data-ttu-id="076cb-139">Схема была сохранена успешно, в следующей итерации задание синхронизации, начнется повторно обработки всех учетных записей в Azure AD и новые сопоставления будет применяться ко всем подготовленные учетные записи.</span><span class="sxs-lookup"><span data-stu-id="076cb-139">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/synchronization-configure-with-directory-extension-attributes.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+<span data-ttu-id="0ea36-139">Если схема была успешно сохранена, в следующей итерации задания синхронизации начнется повторная обработка всех учетных записей в Azure AD, а новые сопоставления будут применены ко всем подготовленным учетным записям.</span><span class="sxs-lookup"><span data-stu-id="0ea36-139">If the schema was saved successfully, on the next iteration of the synchronization job, it will start re-processing all the accounts in your Azure AD, and the new mappings will be applied to all provisioned accounts.</span></span>

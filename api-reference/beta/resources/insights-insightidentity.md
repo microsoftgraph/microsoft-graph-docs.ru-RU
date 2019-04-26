@@ -20,6 +20,12 @@ ms.locfileid: "32549575"
 ## <a name="json-representation"></a><span data-ttu-id="2e3c9-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2e3c9-105">JSON representation</span></span>
 <span data-ttu-id="2e3c9-106">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="2e3c9-106">Here is a JSON representation of the resource</span></span>
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+  ],
+  "@odata.type": "microsoft.graph.insightIdentity"
+}-->
 ```json
 {
   "displayName": "string",
@@ -35,11 +41,3 @@ ms.locfileid: "32549575"
 | <span data-ttu-id="2e3c9-111">displayName</span><span class="sxs-lookup"><span data-stu-id="2e3c9-111">displayName</span></span>       | <span data-ttu-id="2e3c9-112">Строка</span><span class="sxs-lookup"><span data-stu-id="2e3c9-112">String</span></span>          | <span data-ttu-id="2e3c9-113">Отображаемое имя пользователя, который предоставил общий доступ к элементу.</span><span class="sxs-lookup"><span data-stu-id="2e3c9-113">The display name of the user who shared the item.</span></span> |
 | <span data-ttu-id="2e3c9-114">id</span><span class="sxs-lookup"><span data-stu-id="2e3c9-114">id</span></span>              | <span data-ttu-id="2e3c9-115">String</span><span class="sxs-lookup"><span data-stu-id="2e3c9-115">String</span></span>        | <span data-ttu-id="2e3c9-116">Идентификатор пользователя, который предоставил общий доступ к элементу.</span><span class="sxs-lookup"><span data-stu-id="2e3c9-116">The id of the user who shared the item.</span></span>     |
 | <span data-ttu-id="2e3c9-117">address</span><span class="sxs-lookup"><span data-stu-id="2e3c9-117">address</span></span>             | <span data-ttu-id="2e3c9-118">String</span><span class="sxs-lookup"><span data-stu-id="2e3c9-118">String</span></span>      | <span data-ttu-id="2e3c9-119">Адрес электронной почты пользователя, который предоставил общий доступ к элементу.</span><span class="sxs-lookup"><span data-stu-id="2e3c9-119">The email address of the user who shared the item.</span></span>  |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-insightidentity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

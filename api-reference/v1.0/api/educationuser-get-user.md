@@ -13,6 +13,8 @@ ms.locfileid: "32550086"
 ---
 # <a name="get-user"></a><span data-ttu-id="a6b7d-103">Получение пользователя</span><span class="sxs-lookup"><span data-stu-id="a6b7d-103">Get user</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="a6b7d-104">Получение простого каталога **user**, который соответствует этому объекту **educationUser**.</span><span class="sxs-lookup"><span data-stu-id="a6b7d-104">Retrieve the simple directory **user** that corresponds to this **educationUser**.</span></span>
 
 ><span data-ttu-id="a6b7d-105">**Примечание.** Если используется делегированный маркер, участники могут видеть сведения только о своих учебных заведениях.</span><span class="sxs-lookup"><span data-stu-id="a6b7d-105">**Note:** If the delegated token is used, members can only see information about their own schools.</span></span> <span data-ttu-id="a6b7d-106">В данном случае используйте ресурс `...beta/education/me/schools`.</span><span class="sxs-lookup"><span data-stu-id="a6b7d-106">Use the `...beta/education/me/schools` resource in this case.</span></span>
@@ -49,7 +51,7 @@ GET /education/users/{id}/user
   "name": "get_user"
 }-->
 ```http
-GET https://graph.microsoft.com/v1.0/education/me/user
+GET https://graph.microsoft.com/beta/education/me/user
 ```
 ##### <a name="response"></a><span data-ttu-id="a6b7d-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="a6b7d-132">Response</span></span>
 <span data-ttu-id="a6b7d-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="a6b7d-133">The following is an example of the response.</span></span> 
@@ -86,10 +88,13 @@ Content-length: 491
 
 <!-- uuid: FC4AAF57-A0ED-4899-B104-A8B89B72AD5A
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Get user",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

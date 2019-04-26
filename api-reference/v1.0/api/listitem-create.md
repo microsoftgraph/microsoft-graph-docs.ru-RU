@@ -3,49 +3,51 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Создание записи в списке SharePoint
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 48cccb9c4200c80a0f37a04493b4df0f2d4066d0
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481029"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557105"
 ---
-# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="a89bf-102">Создание элемента в списке</span><span class="sxs-lookup"><span data-stu-id="a89bf-102">Create a new item in a list</span></span>
+# <a name="create-a-new-item-in-a-list"></a><span data-ttu-id="8093c-102">Создание элемента в списке</span><span class="sxs-lookup"><span data-stu-id="8093c-102">Create a new item in a list</span></span>
 
-<span data-ttu-id="a89bf-103">Создание элемента [listItem][] в [списке][].</span><span class="sxs-lookup"><span data-stu-id="a89bf-103">Create a new [listItem][] in a [list][].</span></span>
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-## <a name="permissions"></a><span data-ttu-id="a89bf-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a89bf-104">Permissions</span></span>
+<span data-ttu-id="8093c-103">Создание элемента [listItem][] в [списке][].</span><span class="sxs-lookup"><span data-stu-id="8093c-103">Create a new [listItem][] in a [list][].</span></span>
 
-<span data-ttu-id="a89bf-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a89bf-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="8093c-104">Разрешения</span><span class="sxs-lookup"><span data-stu-id="8093c-104">Permissions</span></span>
 
-|<span data-ttu-id="a89bf-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a89bf-107">Permission type</span></span>      | <span data-ttu-id="a89bf-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a89bf-108">Permissions (from least to most privileged)</span></span>              |
+<span data-ttu-id="8093c-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="8093c-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+
+|<span data-ttu-id="8093c-107">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="8093c-107">Permission type</span></span>      | <span data-ttu-id="8093c-108">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="8093c-108">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="a89bf-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a89bf-109">Delegated (work or school account)</span></span> | <span data-ttu-id="a89bf-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a89bf-110">Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="a89bf-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a89bf-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a89bf-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a89bf-112">Not supported.</span></span>    |
-|<span data-ttu-id="a89bf-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a89bf-113">Application</span></span> | <span data-ttu-id="a89bf-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="a89bf-114">Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="8093c-109">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="8093c-109">Delegated (work or school account)</span></span> | <span data-ttu-id="8093c-110">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8093c-110">Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="8093c-111">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="8093c-111">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="8093c-112">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="8093c-112">Not supported.</span></span>    |
+|<span data-ttu-id="8093c-113">Для приложений</span><span class="sxs-lookup"><span data-stu-id="8093c-113">Application</span></span> | <span data-ttu-id="8093c-114">Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="8093c-114">Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="a89bf-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a89bf-115">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="8093c-115">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="8093c-115">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 ```
 
-## <a name="request-body"></a><span data-ttu-id="a89bf-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="a89bf-116">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="8093c-116">Тело запроса</span><span class="sxs-lookup"><span data-stu-id="8093c-116">Request body</span></span>
 
-<span data-ttu-id="a89bf-117">В теле запроса укажите представление ресурса [listItem][], который необходимо создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a89bf-117">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
+<span data-ttu-id="8093c-117">В теле запроса укажите представление ресурса [listItem][], который необходимо создать, в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8093c-117">In the request body, supply a JSON representation of the [listItem][] resource to create.</span></span>
 
-## <a name="example"></a><span data-ttu-id="a89bf-118">Пример</span><span class="sxs-lookup"><span data-stu-id="a89bf-118">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8093c-118">Пример</span><span class="sxs-lookup"><span data-stu-id="8093c-118">Example</span></span>
 
-<span data-ttu-id="a89bf-119">В примере ниже показано, как создать элемент списка общего назначения.</span><span class="sxs-lookup"><span data-stu-id="a89bf-119">Here is an example of how to create a new generic list item.</span></span>
+<span data-ttu-id="8093c-119">В примере ниже показано, как создать элемент списка общего назначения.</span><span class="sxs-lookup"><span data-stu-id="8093c-119">Here is an example of how to create a new generic list item.</span></span>
 
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
 ```json
-POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
+POST https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
 {
@@ -57,9 +59,9 @@ Content-Type: application/json
 }
 ```
 
-## <a name="response"></a><span data-ttu-id="a89bf-120">Ответ</span><span class="sxs-lookup"><span data-stu-id="a89bf-120">Response</span></span>
+## <a name="response"></a><span data-ttu-id="8093c-120">Ответ</span><span class="sxs-lookup"><span data-stu-id="8093c-120">Response</span></span>
 
-<span data-ttu-id="a89bf-121">При успешном выполнении этот метод возвращает объект [listItem][] для созданного элемента списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="a89bf-121">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
+<span data-ttu-id="8093c-121">При успешном выполнении этот метод возвращает объект [listItem][] для созданного элемента списка в теле ответа.</span><span class="sxs-lookup"><span data-stu-id="8093c-121">If successful, this method returns a [listItem][] in the response body for the created list item.</span></span>
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
@@ -86,16 +88,19 @@ Content-type: application/json
 }
 ```
 
-<span data-ttu-id="a89bf-122">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="a89bf-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="a89bf-123">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="a89bf-123">Default properties will be returned from the actual call.</span></span>
+<span data-ttu-id="8093c-122">**Примечание.** Ответ усечен для наглядности.</span><span class="sxs-lookup"><span data-stu-id="8093c-122">**Note:** The response object is truncated for clarity.</span></span> <span data-ttu-id="8093c-123">При фактическом вызове будут возвращены свойства, используемые по умолчанию.</span><span class="sxs-lookup"><span data-stu-id="8093c-123">Default properties will be returned from the actual call.</span></span>
 
 [списке]: ../resources/list.md
 [list]: ../resources/list.md
 [listItem]: ../resources/listitem.md
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Add a new item to a SharePoint list.",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "ListItem/Create"
-} -->
+  "tocPath": "ListItem/Create",
+  "suppressions": []
+}
+-->

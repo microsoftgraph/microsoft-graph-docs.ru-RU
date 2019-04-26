@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса operationError
-description: Описание ошибки в teamsAsyncOperation.
+title: Тип ресурса Оператионеррор
+description: Описание ошибок в Теамсасинкоператион.
 localization_priority: Normal
 ms.openlocfilehash: 1f07fe064d7bbd255f2693071c86842a34fdffa0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29526132"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568915"
 ---
-# <a name="operationerror-resource-type"></a><span data-ttu-id="61e79-103">Тип ресурса operationError</span><span class="sxs-lookup"><span data-stu-id="61e79-103">operationError resource type</span></span>
+# <a name="operationerror-resource-type"></a><span data-ttu-id="95a1b-103">Тип ресурса Оператионеррор</span><span class="sxs-lookup"><span data-stu-id="95a1b-103">operationError resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="61e79-104">Описание ошибки в [teamsAsyncOperation](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="61e79-104">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
+<span data-ttu-id="95a1b-104">Описание ошибок в [теамсасинкоператион](teamsasyncoperation.md).</span><span class="sxs-lookup"><span data-stu-id="95a1b-104">Describes errors in [teamsAsyncOperation](teamsasyncoperation.md).</span></span>
 
-## <a name="operationerror-properties"></a><span data-ttu-id="61e79-105">operationError свойства</span><span class="sxs-lookup"><span data-stu-id="61e79-105">operationError Properties</span></span>
-| <span data-ttu-id="61e79-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="61e79-106">Property</span></span>     | <span data-ttu-id="61e79-107">Тип</span><span class="sxs-lookup"><span data-stu-id="61e79-107">Type</span></span>   |<span data-ttu-id="61e79-108">Описание</span><span class="sxs-lookup"><span data-stu-id="61e79-108">Description</span></span>|
+## <a name="operationerror-properties"></a><span data-ttu-id="95a1b-105">Свойства Оператионеррор</span><span class="sxs-lookup"><span data-stu-id="95a1b-105">operationError Properties</span></span>
+| <span data-ttu-id="95a1b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="95a1b-106">Property</span></span>     | <span data-ttu-id="95a1b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="95a1b-107">Type</span></span>   |<span data-ttu-id="95a1b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="95a1b-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="61e79-109">code</span><span class="sxs-lookup"><span data-stu-id="61e79-109">code</span></span>|<span data-ttu-id="61e79-110">String (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="61e79-110">string (readonly)</span></span>|<span data-ttu-id="61e79-111">Код ошибки операции.</span><span class="sxs-lookup"><span data-stu-id="61e79-111">Operation error code.</span></span>|
-|<span data-ttu-id="61e79-112">message</span><span class="sxs-lookup"><span data-stu-id="61e79-112">message</span></span>|<span data-ttu-id="61e79-113">String (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="61e79-113">string (readonly)</span></span>|<span data-ttu-id="61e79-114">Сообщение об ошибке операции.</span><span class="sxs-lookup"><span data-stu-id="61e79-114">Operation error message.</span></span>|
+|<span data-ttu-id="95a1b-109">code</span><span class="sxs-lookup"><span data-stu-id="95a1b-109">code</span></span>|<span data-ttu-id="95a1b-110">string (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="95a1b-110">string (readonly)</span></span>|<span data-ttu-id="95a1b-111">Код ошибки операции.</span><span class="sxs-lookup"><span data-stu-id="95a1b-111">Operation error code.</span></span>|
+|<span data-ttu-id="95a1b-112">message</span><span class="sxs-lookup"><span data-stu-id="95a1b-112">message</span></span>|<span data-ttu-id="95a1b-113">string (только для чтения)</span><span class="sxs-lookup"><span data-stu-id="95a1b-113">string (readonly)</span></span>|<span data-ttu-id="95a1b-114">Сообщение об ошибке операции.</span><span class="sxs-lookup"><span data-stu-id="95a1b-114">Operation error message.</span></span>|
 
-## <a name="json-representation"></a><span data-ttu-id="61e79-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="61e79-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="95a1b-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="95a1b-115">JSON representation</span></span>
 
-<span data-ttu-id="61e79-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="61e79-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="95a1b-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="95a1b-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -46,8 +46,6 @@ ms.locfileid: "29526132"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/operationerror.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

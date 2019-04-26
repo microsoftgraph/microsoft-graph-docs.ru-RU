@@ -13,6 +13,8 @@ ms.locfileid: "32584329"
 ---
 # <a name="event-tentativelyaccept"></a><span data-ttu-id="4a27a-103">event: tentativelyAccept</span><span class="sxs-lookup"><span data-stu-id="4a27a-103">event: tentativelyAccept</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="4a27a-104">Предварительно принять указанное [событие](../resources/event.md) в календаре пользователя [](../resources/calendar.md).</span><span class="sxs-lookup"><span data-stu-id="4a27a-104">Tentatively accept the specified [event](../resources/event.md) in a user [calendar](../resources/calendar.md).</span></span>
 
 ## <a name="permissions"></a><span data-ttu-id="4a27a-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="4a27a-105">Permissions</span></span>
@@ -69,7 +71,7 @@ POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{
   "name": "event_tentativelyaccept"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/events/{id}/tentativelyAccept
+POST https://graph.microsoft.com/beta/me/events/{id}/tentativelyAccept
 Content-type: application/json
 Content-length: 56
 
@@ -92,10 +94,13 @@ HTTP/1.1 200 OK
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "event: tentativelyAccept",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
