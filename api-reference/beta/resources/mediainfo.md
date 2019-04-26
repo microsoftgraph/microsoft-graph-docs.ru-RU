@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса mediaInfo
-description: Запрашивает сведения о мультимедиа, используемые в действиях для.
+title: Тип ресурса Медиаинфо
+description: Сведения о мультимедиа, используемые в действиях для запросов.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 65cf71f5c116fe213d0e32d560ec24704bff1172
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523983"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562624"
 ---
-# <a name="mediainfo-resource-type"></a><span data-ttu-id="dd1ea-103">Тип ресурса mediaInfo</span><span class="sxs-lookup"><span data-stu-id="dd1ea-103">mediaInfo resource type</span></span>
+# <a name="mediainfo-resource-type"></a><span data-ttu-id="d21d6-103">Тип ресурса Медиаинфо</span><span class="sxs-lookup"><span data-stu-id="d21d6-103">mediaInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dd1ea-104">Запрашивает сведения о мультимедиа, используемые в действиях для.</span><span class="sxs-lookup"><span data-stu-id="dd1ea-104">The media information used in actions for prompts.</span></span>
+<span data-ttu-id="d21d6-104">Сведения о мультимедиа, используемые в действиях для запросов.</span><span class="sxs-lookup"><span data-stu-id="d21d6-104">The media information used in actions for prompts.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="dd1ea-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="dd1ea-105">Properties</span></span>
-| <span data-ttu-id="dd1ea-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="dd1ea-106">Property</span></span>       | <span data-ttu-id="dd1ea-107">Тип</span><span class="sxs-lookup"><span data-stu-id="dd1ea-107">Type</span></span>    | <span data-ttu-id="dd1ea-108">Описание</span><span class="sxs-lookup"><span data-stu-id="dd1ea-108">Description</span></span>                      |
+## <a name="properties"></a><span data-ttu-id="d21d6-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d21d6-105">Properties</span></span>
+| <span data-ttu-id="d21d6-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d21d6-106">Property</span></span>       | <span data-ttu-id="d21d6-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d21d6-107">Type</span></span>    | <span data-ttu-id="d21d6-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d21d6-108">Description</span></span>                      |
 |:---------------|:--------|:---------------------------------|
-| <span data-ttu-id="dd1ea-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="dd1ea-109">resourceId</span></span>     | <span data-ttu-id="dd1ea-110">String</span><span class="sxs-lookup"><span data-stu-id="dd1ea-110">String</span></span>  | <span data-ttu-id="dd1ea-111">Уникальный идентификатор ресурса.</span><span class="sxs-lookup"><span data-stu-id="dd1ea-111">Unique identity of the resource.</span></span> |
-| <span data-ttu-id="dd1ea-112">URI</span><span class="sxs-lookup"><span data-stu-id="dd1ea-112">uri</span></span>            | <span data-ttu-id="dd1ea-113">String</span><span class="sxs-lookup"><span data-stu-id="dd1ea-113">String</span></span>  | <span data-ttu-id="dd1ea-114">Путь к ресурсу.</span><span class="sxs-lookup"><span data-stu-id="dd1ea-114">Path to the resource.</span></span>            |
+| <span data-ttu-id="d21d6-109">resourceId</span><span class="sxs-lookup"><span data-stu-id="d21d6-109">resourceId</span></span>     | <span data-ttu-id="d21d6-110">String</span><span class="sxs-lookup"><span data-stu-id="d21d6-110">String</span></span>  | <span data-ttu-id="d21d6-111">Уникальный идентификатор ресурса.</span><span class="sxs-lookup"><span data-stu-id="d21d6-111">Unique identity of the resource.</span></span> |
+| <span data-ttu-id="d21d6-112">URI</span><span class="sxs-lookup"><span data-stu-id="d21d6-112">uri</span></span>            | <span data-ttu-id="d21d6-113">String</span><span class="sxs-lookup"><span data-stu-id="d21d6-113">String</span></span>  | <span data-ttu-id="d21d6-114">Путь к ресурсу.</span><span class="sxs-lookup"><span data-stu-id="d21d6-114">Path to the resource.</span></span>            |
 
-## <a name="json-representation"></a><span data-ttu-id="dd1ea-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="dd1ea-115">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d21d6-115">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d21d6-115">JSON representation</span></span>
 
-<span data-ttu-id="dd1ea-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="dd1ea-116">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d21d6-116">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d21d6-116">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

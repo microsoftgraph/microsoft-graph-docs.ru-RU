@@ -1,28 +1,28 @@
 ---
 title: Тип ресурса publicClient
-description: Задает параметры для без веб-приложения или веб-Api. (например, Mobile или других общедоступных клиентом, например установленные приложения, запущенного на устройстве настольных систем)
+description: Задает параметры для веб-API без веб-приложения или веб-API. (например, мобильный или другой общедоступный клиент, например, установленное приложение, запущенное на настольном устройстве)
 localization_priority: Normal
 ms.openlocfilehash: ff1d77709293a7167868451671e1660196c9a4db
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29644058"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563370"
 ---
-# <a name="publicclient-resource-type"></a><span data-ttu-id="2dd83-104">Тип ресурса publicClient</span><span class="sxs-lookup"><span data-stu-id="2dd83-104">publicClient resource type</span></span>
+# <a name="publicclient-resource-type"></a><span data-ttu-id="09309-104">Тип ресурса publicClient</span><span class="sxs-lookup"><span data-stu-id="09309-104">publicClient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2dd83-105">Задает параметры для без веб-приложения или веб-Api.</span><span class="sxs-lookup"><span data-stu-id="2dd83-105">Specifies settings for non Web App or Web Api.</span></span> <span data-ttu-id="2dd83-106">(например, Mobile или других общедоступных клиентом, например установленные приложения, запущенного на устройстве настольных систем)</span><span class="sxs-lookup"><span data-stu-id="2dd83-106">(e.g. Mobile or other public client such as an installed application running on a desktop device)</span></span>
+<span data-ttu-id="09309-105">Задает параметры для веб-API без веб-приложения или веб-API.</span><span class="sxs-lookup"><span data-stu-id="09309-105">Specifies settings for non Web App or Web Api.</span></span> <span data-ttu-id="09309-106">(например, мобильный или другой общедоступный клиент, например, установленное приложение, запущенное на настольном устройстве)</span><span class="sxs-lookup"><span data-stu-id="09309-106">(e.g. Mobile or other public client such as an installed application running on a desktop device)</span></span>
 
-## <a name="properties"></a><span data-ttu-id="2dd83-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="2dd83-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="09309-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="09309-107">Properties</span></span>
 
-| <span data-ttu-id="2dd83-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="2dd83-108">Property</span></span> | <span data-ttu-id="2dd83-109">Тип</span><span class="sxs-lookup"><span data-stu-id="2dd83-109">Type</span></span> | <span data-ttu-id="2dd83-110">Описание</span><span class="sxs-lookup"><span data-stu-id="2dd83-110">Description</span></span> |
+| <span data-ttu-id="09309-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="09309-108">Property</span></span> | <span data-ttu-id="09309-109">Тип</span><span class="sxs-lookup"><span data-stu-id="09309-109">Type</span></span> | <span data-ttu-id="09309-110">Описание</span><span class="sxs-lookup"><span data-stu-id="09309-110">Description</span></span> |
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2dd83-111">redirectUris</span><span class="sxs-lookup"><span data-stu-id="2dd83-111">redirectUris</span></span>|<span data-ttu-id="2dd83-112">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="2dd83-112">String collection</span></span>| <span data-ttu-id="2dd83-113">Указывает URL-адресов, которые будут отправлены маркеры пользователя для входа в или отправки коды авторизации коды URI, OAuth 2.0 и маркеры доступа для перенаправления.</span><span class="sxs-lookup"><span data-stu-id="2dd83-113">Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.</span></span> |
+|<span data-ttu-id="09309-111">Редиректурис</span><span class="sxs-lookup"><span data-stu-id="09309-111">redirectUris</span></span>|<span data-ttu-id="09309-112">Коллекция String</span><span class="sxs-lookup"><span data-stu-id="09309-112">String collection</span></span>| <span data-ttu-id="09309-113">Задает URL-адреса, на которые отправляются маркеры пользователей для входа, или URI перенаправления, на которые отправляются коды авторизации OAuth 2,0 и маркеры доступа.</span><span class="sxs-lookup"><span data-stu-id="09309-113">Specifies the URLs that user tokens are sent to for sign in, or the redirect URIs that OAuth 2.0 authorization codes and access tokens are sent to.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="2dd83-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="2dd83-114">JSON representation</span></span>
-<span data-ttu-id="2dd83-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="2dd83-115">Here is a JSON representation of the resource.</span></span>
+## <a name="json-representation"></a><span data-ttu-id="09309-114">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="09309-114">JSON representation</span></span>
+<span data-ttu-id="09309-115">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="09309-115">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",

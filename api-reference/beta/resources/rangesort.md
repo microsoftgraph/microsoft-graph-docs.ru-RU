@@ -5,30 +5,30 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: cd43905c6f838d841cc2adb0b5737ccb173c087f
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642172"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563298"
 ---
-# <a name="rangesort-resource-type"></a><span data-ttu-id="dd437-103">Тип ресурса RangeSort</span><span class="sxs-lookup"><span data-stu-id="dd437-103">RangeSort resource type</span></span>
+# <a name="rangesort-resource-type"></a><span data-ttu-id="d3fdd-103">Тип ресурса RangeSort</span><span class="sxs-lookup"><span data-stu-id="d3fdd-103">RangeSort resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="dd437-104">Управляет операциями сортировки для объектов Range.</span><span class="sxs-lookup"><span data-stu-id="dd437-104">Manages sorting operations on Range objects.</span></span>
+<span data-ttu-id="d3fdd-104">Управляет операциями сортировки для объектов Range.</span><span class="sxs-lookup"><span data-stu-id="d3fdd-104">Manages sorting operations on Range objects.</span></span>
 
 
-## <a name="methods"></a><span data-ttu-id="dd437-105">Методы</span><span class="sxs-lookup"><span data-stu-id="dd437-105">Methods</span></span>
+## <a name="methods"></a><span data-ttu-id="d3fdd-105">Методы</span><span class="sxs-lookup"><span data-stu-id="d3fdd-105">Methods</span></span>
 
-| <span data-ttu-id="dd437-106">Метод</span><span class="sxs-lookup"><span data-stu-id="dd437-106">Method</span></span>           | <span data-ttu-id="dd437-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="dd437-107">Return Type</span></span>    |<span data-ttu-id="dd437-108">Описание</span><span class="sxs-lookup"><span data-stu-id="dd437-108">Description</span></span>|
+| <span data-ttu-id="d3fdd-106">Метод</span><span class="sxs-lookup"><span data-stu-id="d3fdd-106">Method</span></span>           | <span data-ttu-id="d3fdd-107">Возвращаемый тип</span><span class="sxs-lookup"><span data-stu-id="d3fdd-107">Return Type</span></span>    |<span data-ttu-id="d3fdd-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d3fdd-108">Description</span></span>|
 |:---------------|:--------|:----------|
-|[<span data-ttu-id="dd437-109">Apply</span><span class="sxs-lookup"><span data-stu-id="dd437-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="dd437-110">Нет</span><span class="sxs-lookup"><span data-stu-id="dd437-110">None</span></span>|<span data-ttu-id="dd437-111">Выполняет сортировку.</span><span class="sxs-lookup"><span data-stu-id="dd437-111">Perform a sort operation.</span></span>|
+|[<span data-ttu-id="d3fdd-109">Apply</span><span class="sxs-lookup"><span data-stu-id="d3fdd-109">Apply</span></span>](../api/rangesort-apply.md)|<span data-ttu-id="d3fdd-110">Нет</span><span class="sxs-lookup"><span data-stu-id="d3fdd-110">None</span></span>|<span data-ttu-id="d3fdd-111">Выполняет сортировку.</span><span class="sxs-lookup"><span data-stu-id="d3fdd-111">Perform a sort operation.</span></span>|
 
-## <a name="properties"></a><span data-ttu-id="dd437-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="dd437-112">Properties</span></span>
-<span data-ttu-id="dd437-113">Нет</span><span class="sxs-lookup"><span data-stu-id="dd437-113">None</span></span>
+## <a name="properties"></a><span data-ttu-id="d3fdd-112">Свойства</span><span class="sxs-lookup"><span data-stu-id="d3fdd-112">Properties</span></span>
+<span data-ttu-id="d3fdd-113">Нет</span><span class="sxs-lookup"><span data-stu-id="d3fdd-113">None</span></span>
 
-## <a name="relationships"></a><span data-ttu-id="dd437-114">Связи</span><span class="sxs-lookup"><span data-stu-id="dd437-114">Relationships</span></span>
-<span data-ttu-id="dd437-115">Нет</span><span class="sxs-lookup"><span data-stu-id="dd437-115">None</span></span>
+## <a name="relationships"></a><span data-ttu-id="d3fdd-114">Отношения</span><span class="sxs-lookup"><span data-stu-id="d3fdd-114">Relationships</span></span>
+<span data-ttu-id="d3fdd-115">Нет</span><span class="sxs-lookup"><span data-stu-id="d3fdd-115">None</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

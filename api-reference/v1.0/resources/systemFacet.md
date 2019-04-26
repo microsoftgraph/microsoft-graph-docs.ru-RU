@@ -2,23 +2,23 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
-title: Аспект System
+title: SystemFacet
 localization_priority: Normal
 ms.openlocfilehash: 356fa44c77280223ee9ff90d9ae54ad541e8d0d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563709"
 ---
-# <a name="system-facet"></a><span data-ttu-id="37060-102">Аспект System</span><span class="sxs-lookup"><span data-stu-id="37060-102">System facet</span></span>
+# <a name="system-facet"></a><span data-ttu-id="8aa66-102">Аспект System</span><span class="sxs-lookup"><span data-stu-id="8aa66-102">System facet</span></span>
 
-<span data-ttu-id="37060-103">Аспект **System** указывает, что объект управляется системой, выполняющей необходимые ей операции.</span><span class="sxs-lookup"><span data-stu-id="37060-103">The **System** facet indicates that the object is managed by the system for its own operation.</span></span>
-<span data-ttu-id="37060-104">Большинству приложений следует игнорировать элементы, содержащие аспект System.</span><span class="sxs-lookup"><span data-stu-id="37060-104">Most apps should ignore items that have a System facet.</span></span>
+<span data-ttu-id="8aa66-103">Аспект **System** указывает, что объект управляется системой, выполняющей необходимые ей операции.</span><span class="sxs-lookup"><span data-stu-id="8aa66-103">The **System** facet indicates that the object is managed by the system for its own operation.</span></span>
+<span data-ttu-id="8aa66-104">Большинству приложений следует игнорировать элементы, содержащие аспект System.</span><span class="sxs-lookup"><span data-stu-id="8aa66-104">Most apps should ignore items that have a System facet.</span></span>
 
-<span data-ttu-id="37060-105">**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.</span><span class="sxs-lookup"><span data-stu-id="37060-105">**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.</span></span>
+<span data-ttu-id="8aa66-105">**Примечание.** В настоящее время этот аспект пуст, но в будущих редакциях API он может быть дополнен другими свойствами.</span><span class="sxs-lookup"><span data-stu-id="8aa66-105">**Note**: While this facet is empty today, in future API revisions the facet may be populated with additional properties.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="37060-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="37060-106">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="8aa66-106">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8aa66-106">JSON representation</span></span>
 
 <!-- { "blockType": "resource", "@type": "microsoft.graph.systemFacet", "@type.aka": "microsoft.graph.systemFacet" } -->
 
@@ -27,9 +27,9 @@ ms.locfileid: "27804797"
 }
 ```
 
-## <a name="properties"></a><span data-ttu-id="37060-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="37060-107">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="8aa66-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="8aa66-107">Properties</span></span>
 
-<span data-ttu-id="37060-108">Нет.</span><span class="sxs-lookup"><span data-stu-id="37060-108">None.</span></span> <span data-ttu-id="37060-109">Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.</span><span class="sxs-lookup"><span data-stu-id="37060-109">This facet is a null or not-null value and contains no properties.</span></span>
+<span data-ttu-id="8aa66-p102">Нет. Этот аспект принимает нулевое или ненулевое значение и не содержит свойств.</span><span class="sxs-lookup"><span data-stu-id="8aa66-p102">None. This facet is a null or not-null value and contains no properties.</span></span>
 
 <!-- {
   "type": "#page.annotation",

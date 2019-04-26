@@ -3,28 +3,28 @@ title: Тип ресурса responseStatus
 description: Состояние ответа к приглашению на собрание.
 localization_priority: Normal
 ms.openlocfilehash: 270c432235b929af2cb55ff63e10397fea5f92fb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528076"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562989"
 ---
-# <a name="responsestatus-resource-type"></a><span data-ttu-id="39003-103">Тип ресурса responseStatus</span><span class="sxs-lookup"><span data-stu-id="39003-103">responseStatus resource type</span></span>
+# <a name="responsestatus-resource-type"></a><span data-ttu-id="d78fb-103">Тип ресурса responseStatus</span><span class="sxs-lookup"><span data-stu-id="d78fb-103">responseStatus resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="39003-104">Состояние ответа к приглашению на собрание.</span><span class="sxs-lookup"><span data-stu-id="39003-104">The response status of a meeting request.</span></span>
+<span data-ttu-id="d78fb-104">Состояние ответа к приглашению на собрание.</span><span class="sxs-lookup"><span data-stu-id="d78fb-104">The response status of a meeting request.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="39003-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="39003-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d78fb-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d78fb-105">Properties</span></span>
 
-| <span data-ttu-id="39003-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="39003-106">Property</span></span> | <span data-ttu-id="39003-107">Тип</span><span class="sxs-lookup"><span data-stu-id="39003-107">Type</span></span>           | <span data-ttu-id="39003-108">Описание</span><span class="sxs-lookup"><span data-stu-id="39003-108">Description</span></span> |
+| <span data-ttu-id="d78fb-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d78fb-106">Property</span></span> | <span data-ttu-id="d78fb-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d78fb-107">Type</span></span>           | <span data-ttu-id="d78fb-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d78fb-108">Description</span></span> |
 |:---------|:---------------|:------------|
-| <span data-ttu-id="39003-109">response</span><span class="sxs-lookup"><span data-stu-id="39003-109">response</span></span> | <span data-ttu-id="39003-110">String</span><span class="sxs-lookup"><span data-stu-id="39003-110">String</span></span>         | <span data-ttu-id="39003-111">Тип ответа.</span><span class="sxs-lookup"><span data-stu-id="39003-111">The response type.</span></span> <span data-ttu-id="39003-112">Возможные значения: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.</span><span class="sxs-lookup"><span data-stu-id="39003-112">Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.</span></span>
-| <span data-ttu-id="39003-113">time</span><span class="sxs-lookup"><span data-stu-id="39003-113">time</span></span>     | <span data-ttu-id="39003-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="39003-114">DateTimeOffset</span></span> | <span data-ttu-id="39003-p102">Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="39003-p102">The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>
+| <span data-ttu-id="d78fb-109">response</span><span class="sxs-lookup"><span data-stu-id="d78fb-109">response</span></span> | <span data-ttu-id="d78fb-110">String</span><span class="sxs-lookup"><span data-stu-id="d78fb-110">String</span></span>         | <span data-ttu-id="d78fb-111">Тип ответа.</span><span class="sxs-lookup"><span data-stu-id="d78fb-111">The response type.</span></span> <span data-ttu-id="d78fb-112">Возможные значения: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.</span><span class="sxs-lookup"><span data-stu-id="d78fb-112">Possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.</span></span>
+| <span data-ttu-id="d78fb-113">time</span><span class="sxs-lookup"><span data-stu-id="d78fb-113">time</span></span>     | <span data-ttu-id="d78fb-114">DateTimeOffset</span><span class="sxs-lookup"><span data-stu-id="d78fb-114">DateTimeOffset</span></span> | <span data-ttu-id="d78fb-p102">Дата и время возвращения ответа. Они представлены в формате ISO 8601 (всегда используется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.</span><span class="sxs-lookup"><span data-stu-id="d78fb-p102">The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="39003-118">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="39003-118">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d78fb-118">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="d78fb-118">JSON representation</span></span>
 
-<span data-ttu-id="39003-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="39003-119">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="d78fb-119">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d78fb-119">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
