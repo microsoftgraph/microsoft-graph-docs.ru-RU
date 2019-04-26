@@ -1,55 +1,55 @@
 ---
-title: Тип ресурса skypeForBusinessActivityUserDetail
+title: Тип ресурса Скипефорбусинессактивитюсердетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.openlocfilehash: e847cbf469db3be55c8c12ebf31056a262962886
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27828653"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32571767"
 ---
-# <a name="skypeforbusinessactivityuserdetail-resource-type"></a>Тип ресурса skypeForBusinessActivityUserDetail
+# <a name="skypeforbusinessactivityuserdetail-resource-type"></a>Тип ресурса Скипефорбусинессактивитюсердетаил
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                                 | Тип              |
 | :--------------------------------------- | :---------------- |
-| totalPeerToPeerSessionCount              | Int64             |
-| totalOrganizedConferenceCount            | Int64             |
-| totalParticipatedConferenceCount         | Int64             |
-| peerToPeerLastActivityDate               | Date              |
-| organizedConferenceLastActivityDate      | Date              |
-| participatedConferenceLastActivityDate   | Date              |
-| peerToPeerIMCount                        | Int64             |
-| peerToPeerAudioCount                     | Int64             |
-| peerToPeerAudioMinutes                   | Int64             |
-| peerToPeerVideoCount                     | Int64             |
-| peerToPeerVideoMinutes                   | Int64             |
-| peerToPeerAppSharingCount                | Int64             |
-| peerToPeerFileTransferCount              | Int64             |
-| organizedConferenceIMCount               | Int64             |
-| organizedConferenceAudioVideoCount       | Int64             |
-| organizedConferenceAudioVideoMinutes     | Int64             |
-| organizedConferenceAppSharingCount       | Int64             |
-| organizedConferenceWebCount              | Int64             |
+| Тоталпиртопирсессионкаунт              | Int64             |
+| Тоталорганизедконференцекаунт            | Int64             |
+| ТоталпартиЦипатедконференцекаунт         | Int64             |
+| Пиртопирластактивитидате               | Дата              |
+| Организедконференцеластактивитидате      | Дата              |
+| ПартиЦипатедконференцеластактивитидате   | Дата              |
+| Пиртопиримкаунт                        | Int64             |
+| Пиртопираудиокаунт                     | Int64             |
+| Пиртопираудиоминутес                   | Int64             |
+| Пиртопирвидеокаунт                     | Int64             |
+| Пиртопирвидеоминутес                   | Int64             |
+| Пиртопираппшарингкаунт                | Int64             |
+| Пиртопирфилетрансферкаунт              | Int64             |
+| Организедконференцеимкаунт               | Int64             |
+| Организедконференцеаудиовидеокаунт       | Int64             |
+| Организедконференцеаудиовидеоминутес     | Int64             |
+| Организедконференцеаппшарингкаунт       | Int64             |
+| Организедконференцевебкаунт              | Int64             |
 | organizedConferenceDialInOut3rdPartyCount | Int64             |
-| organizedConferenceCloudDialInOutMicrosoftCount | Int64             |
-| organizedConferenceCloudDialInMicrosoftMinutes | Int64             |
-| organizedConferenceCloudDialOutMicrosoftMinutes | Int64             |
-| participatedConferenceIMCount           | Int64             |
-| participatedConferenceAudioVideoCount   | Int64             |
-| participatedConferenceAudioVideoMinutes | Int64             |
-| participatedConferenceAppSharingCount   | Int64             |
-| participatedConferenceWebCount          | Int64             |
+| Организедконференцеклауддиалинаутмикрософткаунт | Int64             |
+| Организедконференцеклауддиалинмикрософтминутес | Int64             |
+| Организедконференцеклауддиалаутмикрософтминутес | Int64             |
+| ПартиЦипатедконференцеимкаунт           | Int64             |
+| ПартиЦипатедконференцеаудиовидеокаунт   | Int64             |
+| ПартиЦипатедконференцеаудиовидеоминутес | Int64             |
+| ПартиЦипатедконференцеаппшарингкаунт   | Int64             |
+| ПартиЦипатедконференцевебкаунт          | Int64             |
 | participatedConferenceDialInOut3rdPartyCount | Int64             |
-| reportRefreshDate                        | Date              |
-| userPrincipalName                        | Строка            |
-| isDeleted                                | Логический           |
-| deletedDate                              | Date              |
-| lastActivityDate                         | Date              |
-| assignedProducts                         | Коллекция String |
-| reportPeriod                             | String            |
+| Репортрефрешдате                        | Дата              |
+| userPrincipalName                        | String            |
+| isDeleted                                | Boolean           |
+| Делетеддате                              | Дата              |
+| Ластактивитидате                         | Дата              |
+| Ассигнедпродуктс                         | Коллекция String |
+| Репортпериод                             | String            |
 
 ## <a name="json-representation"></a>Представление JSON
 

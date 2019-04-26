@@ -1,21 +1,21 @@
 ---
-title: Тип ресурса pageLinks
+title: Тип ресурса Пажелинкс
 description: Ссылки для открытия страницы OneNote.
 localization_priority: Normal
 ms.openlocfilehash: 07c89d99b5731eccd57bec79c25d7d97509c54a0
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523829"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568658"
 ---
-# <a name="pagelinks-resource-type"></a>Тип ресурса pageLinks
+# <a name="pagelinks-resource-type"></a>Тип ресурса Пажелинкс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ссылки для открытия страницы OneNote.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -37,7 +37,7 @@ ms.locfileid: "29523829"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Открывает страницу в собственном клиенте OneNote (если он установлен).|
+|oneNoteClientUrl|[externalLink](externallink.md)|Открывает страницу в собственном клиенте OneNote, если она установлена.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает страницу в OneNote Online.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -49,8 +49,6 @@ ms.locfileid: "29523829"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/pagelinks.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -1,29 +1,29 @@
 ---
-title: Тип ресурса participantInfo
-description: Содержит дополнительные свойства сведения об удостоверениях, участников
+title: Тип ресурса ПартиЦипантинфо
+description: Содержит дополнительные свойства удостоверения участника
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3d040fd5be86068c30e7a63dae50888c4f3ec756
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29528349"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568611"
 ---
-# <a name="participantinfo-resource-type"></a>Тип ресурса participantInfo
+# <a name="participantinfo-resource-type"></a>Тип ресурса ПартиЦипантинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит дополнительные свойства сведения об удостоверениях, участников
+Содержит дополнительные свойства удостоверения участника
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип                          | Описание  |
 |:---------------|:------------------------------|:-------------|
-| identity       | [identitySet](identityset.md) | [IdentitySet](identityset.md) , связанный с данным участником. |
+| хищения       | [identitySet](identityset.md) | [Удостоверение](identityset.md) , связанное с этим участником. |
 | languageId     | String                        | Строка языка и региональных параметров языка. |
-| область         | String                        | Область участника. |
+| региональных         | String                        | Регион участника. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -53,8 +53,6 @@ ms.locfileid: "29528349"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/participantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

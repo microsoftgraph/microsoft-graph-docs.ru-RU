@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 105f282f93eb43d8e977a997d0ea114ff86ace10
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31771035"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563477"
 ---
 # <a name="defendersubmitsamplesconsenttype-enum-type"></a>тип перечисления Дефендерсубмитсамплесконсенттипе
 
@@ -23,9 +23,9 @@ ms.locfileid: "31771035"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Сендсафесамплесаутоматикалли|нуль|Автоматическая отправка надежных образцов|
-|Алвайспромпт|1,1|Всегда запрашивать|
-|Неверсенд|2|Никогда не отправлять|
-|Сендаллсамплесаутоматикалли|4|Автоматическая отправка всех примеров|
+|Алвайспромпт|1 |Всегда запрашивать|
+|Неверсенд|2 |Никогда не отправлять|
+|Сендаллсамплесаутоматикалли|3 |Автоматическая отправка всех примеров|
 
 
 

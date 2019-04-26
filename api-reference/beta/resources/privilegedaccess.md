@@ -1,38 +1,38 @@
 ---
-title: Тип ресурса privilegedAccess
-description: " например `privilegedAccess/azureResources` представляет PIM управление правами доступа к ресурсам Azure."
+title: Тип ресурса Привилежедакцесс
+description: " Например, `privilegedAccess/azureResources` представляет PIM управление привилегированным доступом к ресурсам Azure."
 localization_priority: Normal
 ms.openlocfilehash: 9ac8ab596906509bc0303f9a70794b6484759cc2
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512929"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563686"
 ---
-# <a name="privilegedaccess-resource-type"></a>Тип ресурса privilegedAccess
+# <a name="privilegedaccess-resource-type"></a>Тип ресурса Привилежедакцесс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет группу функциональные возможности службы управления правами Identity (PIM). Различных экземпляров `privilegedAccess` представляют различных поставщиков, управляется PIM; например `privilegedAccess/azureResources` представляет PIM управление правами доступа к ресурсам Azure.
+Представляет группу функциональных возможностей, предоставляемых службой управления привилегированными удостоверениями (PIM). Различные экземпляры `privilegedAccess` представляют разных поставщиков, УПРАВЛЯЕМЫХ службой PIM; Например, `privilegedAccess/azureResources` представляет PIM управление привилегированным доступом к ресурсам Azure.
 
 
-`privilegedAccess`доступно только для чтения в данный момент. Не `POST`, `PUT`, `PATCH`, или `DELETE` поддерживается на `privilegedAccess` набора сущностей.
+`privilegedAccess`в настоящее время доступен только для чтения. `PUT` `POST` `privilegedAccess` В наборе сущностей `DELETE` поддерживаются не поддерживаемые операции, а также операции. `PATCH`
 
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----------|:----------|:----------|
-|id         |String     |Идентификатор поставщика, управляется PIM.|
-|displayName|String     |Отображаемое имя поставщика, управляется PIM.|
+|id         |String     |Идентификатор поставщика, управляемого службой PIM.|
+|displayName|String     |Отображаемое имя поставщика, управляемого службой PIM.|
 
 
-## <a name="relationships"></a>Отношения
-| Связь   | Тип                                         |Описание|
+## <a name="relationships"></a>Связи
+| Отношение   | Тип                                         |Описание|
 |:---------------|:---------------------------------------------|:----------|
-|resources       |[governanceResource](../resources/governanceresource.md) коллекции            |Набор ресурсов для поставщика.|
-|roleAssignments |[governanceRoleAssignment](../resources/governanceroleassignment.md) коллекции|Коллекция назначения ролей для поставщика.|
-|roleDefinitions |[governanceRoleDefinition](../resources/governanceroledefinition.md) коллекции|Коллекция файлов определения ролей для поставщика.|
-|roleAssignmentRequests |[governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md) коллекции|Коллекция запросы назначения ролей для поставщика.|
-|roleSettings |[governanceRoleSetting](../resources/governancerolesetting.md) коллекции|Коллекция параметров роли для поставщика.|
+|resources       |Коллекция [governanceResource](../resources/governanceresource.md)            |Коллекция ресурсов для поставщика.|
+|roleAssignments |Коллекция [governanceRoleAssignment](../resources/governanceroleassignment.md)|Коллекция назначений ролей для поставщика.|
+|roleDefinitions |Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md)|Коллекция ролей дефинтионс для поставщика.|
+|Ролеассигнментрекуестс |Коллекция [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md)|Коллекция запросов назначений ролей для поставщика.|
+|Ролесеттингс |Коллекция [говернанцеролесеттинг](../resources/governancerolesetting.md)|Коллекция параметров роли для поставщика.|
 
 
 ## <a name="json-representation"></a>Представление JSON
@@ -44,6 +44,8 @@ ms.locfileid: "29512929"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.privilegedAccess"
 }-->
 
@@ -64,8 +66,6 @@ ms.locfileid: "29512929"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedaccess.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

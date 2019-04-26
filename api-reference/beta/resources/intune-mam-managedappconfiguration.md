@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: c52ade795ff98d809d4013babdb6aae37c8106d9
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31787297"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563848"
 ---
 # <a name="managedappconfiguration-resource-type"></a>Тип ресурса managedAppConfiguration
 
@@ -25,8 +25,8 @@ ms.locfileid: "31787297"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов managedAppConfiguration](../api/intune-mam-managedappconfiguration-list.md)|Коллекция [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|Список свойств и связей объектов [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
-|[Get managedAppConfiguration](../api/intune-mam-managedappconfiguration-get.md)|[managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|Чтение свойств и связей объекта [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
+|[Список managedAppConfigurations](../api/intune-mam-managedappconfiguration-list.md)|Коллекция [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|Список свойств и связей объектов [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
+|[Получение объекта managedAppConfiguration](../api/intune-mam-managedappconfiguration-get.md)|[managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md)|Чтение свойств и связей объекта [managedAppConfiguration](../resources/intune-mam-managedappconfiguration.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
