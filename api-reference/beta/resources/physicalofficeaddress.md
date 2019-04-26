@@ -1,17 +1,17 @@
 ---
-title: Тип ресурса physicalOfficeAddress
-description: Представляет рабочего адреса ресурсов, таких как события или контакта.
+title: Тип ресурса Фисикалоффицеаддресс
+description: Представляет рабочий адрес ресурса, например контакт или событие.
 localization_priority: Normal
 ms.openlocfilehash: bd4274e29b2ef0f9e7e8318528d18103be19fabc
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27817789"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573734"
 ---
-# <a name="physicalofficeaddress-resource-type"></a>Тип ресурса physicalOfficeAddress
+# <a name="physicalofficeaddress-resource-type"></a>Тип ресурса Фисикалоффицеаддресс
 
-Представляет рабочего адреса ресурсов, таких как организационные контакта.
+Представляет рабочий адрес ресурса, например контакта в Организации.
 
 ## <a name="properties"></a>Свойства
 
@@ -19,12 +19,12 @@ ms.locfileid: "27817789"
 |:---------------|:--------|:----------|
 |city|String|Город.|
 |countryOrRegion|String|Страна или регион. Это строковое значение в произвольном формате, например "США".|
-|officeLocation  | String | Расположение комнаты, например номер построения и office для организации контакта.  |
+|officeLocation  | String | Местоположение Office, например здание и номер офиса для контакта в Организации.  |
 |postalCode|String|Почтовый индекс.|
 |state|String|Штат.|
 |street|String|Улица.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

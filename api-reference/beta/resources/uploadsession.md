@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: UploadSession
 localization_priority: Normal
 ms.openlocfilehash: 85e26779d7c7df72a3176290654511ebd0f9493b
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480270"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32576117"
 ---
 # <a name="uploadsession-resource"></a>Ресурс UploadSession
 
@@ -17,9 +17,9 @@ ms.locfileid: "30480270"
 
 Ресурс **UploadSession** содержит сведения о способе отправки больших файлов в OneDrive, OneDrive для бизнеса или в библиотеки документов SharePoint.
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",

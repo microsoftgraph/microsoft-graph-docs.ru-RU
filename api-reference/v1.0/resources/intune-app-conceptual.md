@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: intune
 ms.openlocfilehash: 988042a5e36cb87f6fedf3c8ba3764c56d955b98
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27951819"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566831"
 ---
 # <a name="manage-apps-using-microsoft-intune"></a>Управление приложениями с помощью Microsoft Intune
 
@@ -20,16 +20,16 @@ ms.locfileid: "27951819"
 - [Бизнес-приложение для Android](intune-apps-androidlobapp.md)
 - [Минимальная версия операционной системы Android](intune-apps-androidminimumoperatingsystem.md)
 - [Приложение из магазина Android](intune-apps-androidstoreapp.md)
-- [Параметр элемента конфигурации приложения](intune-apps-appconfigurationsettingitem.md)
+- [Элемент параметра конфигурации приложения](intune-apps-appconfigurationsettingitem.md)
 - [Состояние установки устройства](intune-books-deviceinstallstate.md)
 - [Сводка по установке электронной книги](intune-books-ebookinstallsummary.md)
 - [Сведения о шифровании файлов](intune-apps-fileencryptioninfo.md)
-- [Установка состояния](intune-books-installstate.md)
+- [Состояние установки](intune-books-installstate.md)
 - [Тип устройства iOS](intune-apps-iosdevicetype.md)
 - [Бизнес-приложение iOS](intune-apps-ioslobapp.md)
 - [Настройки назначения бизнес-приложения iOS](intune-apps-ioslobappassignmentsettings.md)
 - [Минимальная версия операционной системы iOS](intune-apps-iosminimumoperatingsystem.md)
-- [Настройка мобильного приложения операций ввода-вывода](intune-apps-iosmobileappconfiguration.md)
+- [Настройка мобильных приложений для iOS](intune-apps-iosmobileappconfiguration.md)
 - [Приложение из магазина iOS](intune-apps-iosstoreapp.md)
 - [Настройки назначения приложения из магазина iOS](intune-apps-iosstoreappassignmentsettings.md)
 - [Приложение iOS, приобретенное по программе VPP](intune-apps-iosvppapp.md)
@@ -40,10 +40,10 @@ ms.locfileid: "27951819"
 - [Управляемое бизнес-приложение Android](intune-apps-managedandroidlobapp.md)
 - [Управляемое приложение из магазина Android](intune-apps-managedandroidstoreapp.md)
 - [Управляемое приложение](intune-apps-managedapp.md)
-- [Доступность управляемых приложений](intune-apps-managedappavailability.md)
+- [Доступность управляемого приложения](intune-apps-managedappavailability.md)
 - [Конфигурация мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfiguration.md)
 - [Назначение конфигурации мобильных приложений для управляемых устройств](intune-apps-manageddevicemobileappconfigurationassignment.md)
-- [Управляемые состояние устройства конфигурации устройства мобильного приложения](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
+- [Состояние устройства, связанное с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationdevicestatus.md)
 - [Общие сведения об устройствах, связанные с настройкой мобильных приложений для управляемых устройств](intune-apps-manageddevicemobileappconfigurationdevicesummary.md)
 - [Состояние пользователя, связанное с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationuserstatus.md)
 - [Сводка по пользователям, связанным с конфигурацией мобильного приложения на управляемом устройстве](intune-apps-manageddevicemobileappconfigurationusersummary.md)
@@ -55,14 +55,14 @@ ms.locfileid: "27951819"
 - [Тип ключа конфигурации приложения MDM](intune-apps-mdmappconfigkeytype.md)
 - [Приложение Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessapp.md)
 - [Настройки назначения приложения из Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinessappassignmentsettings.md)
-- [Microsoft хранения для бизнес-тип лицензии](intune-apps-microsoftstoreforbusinesslicensetype.md)
+- [Тип лицензии Microsoft Store для бизнеса](intune-apps-microsoftstoreforbusinesslicensetype.md)
 - [Мобильное приложение](intune-apps-mobileapp.md)
 - [Назначение мобильного приложения](intune-apps-mobileappassignment.md)
 - [Настройки назначения мобильного приложения](intune-apps-mobileappassignmentsettings.md)
 - [Категория мобильных приложений](intune-apps-mobileappcategory.md)
 - [Содержимое мобильного приложения](intune-apps-mobileappcontent.md)
 - [Файл содержимого мобильного приложения](intune-apps-mobileappcontentfile.md)
-- [Состояние загрузки содержимого файла мобильного приложения](intune-apps-mobileappcontentfileuploadstate.md)
+- [Состояние отправки файла содержимого мобильного приложения](intune-apps-mobileappcontentfileuploadstate.md)
 - [Состояние публикации мобильного приложения](intune-apps-mobileapppublishingstate.md)
 - [Мобильное бизнес-приложение](intune-apps-mobilelobapp.md)
 - [Сводка по состояниям установки для пользователей](intune-books-userinstallstatesummary.md)

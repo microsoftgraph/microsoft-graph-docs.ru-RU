@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 63285c5b0d0c7d1b342d13478777ddd6e87ae17f
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30254074"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32572390"
 ---
 # <a name="devicecompliancesettingstate-resource-type"></a>Тип ресурса deviceComplianceSettingState
 
@@ -29,21 +29,21 @@ ms.locfileid: "30254074"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|id|String|Ключ объекта|
+|id|Строка|Ключ объекта|
 |setting|String|Имя класса параметров и свойства.|
-|settingName|String|Имя параметра в отчете.|
-|deviceId|String|Идентификатор устройства в отчете.|
-|deviceName|String|Имя устройства в отчете.|
-|userId|String|Идентификатор пользователя в отчете.|
-|userEmail|String|Адрес электронной почты пользователя в отчете.|
-|userName|String|Имя пользователя в отчете.|
-|userPrincipalName|String|Имя участника-пользователя в отчете.|
-|deviceModel|String|Модель устройства в отчете.|
+|settingName|String|Имя параметра в отчете|
+|deviceId|String|ИД устройства в отчете|
+|deviceName|String|Имя устройства в отчете|
+|userId|String|ИД пользователя в отчете|
+|userEmail|String|Электронный адрес пользователя в отчете|
+|userName|String|Имя пользователя в отчете|
+|userPrincipalName|String|Имя участника-пользователя в отчете|
+|deviceModel|String|Модель устройства в отчете|
 |state|[Комплианцестатус](../resources/intune-shared-compliancestatus.md)|Состояние соответствия для параметра. Возможные значения: `unknown`, `notApplicable`, `compliant`, `remediated`, `nonCompliant`, `error`, `conflict`, `notAssigned`.|
 |complianceGracePeriodExpirationDateTime|DateTimeOffset|Дата и время истечения льготного периода соответствия требования для устройства|
 
-## <a name="relationships"></a>Связи
-None
+## <a name="relationships"></a>Отношения
+Нет
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.

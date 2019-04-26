@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 472cc91b97547459694239c07bd211d1bd4ba1be
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260965"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32565967"
 ---
 # <a name="devicemanagementexchangeconnectorstatus-enum-type"></a>тип перечисления Девицеманажементексчанжеконнекторстатус
 
@@ -21,9 +21,9 @@ ms.locfileid: "30260965"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нет|нуль|Соединитель не существует.|
-|Коннектионпендинг|1,1|Ожидание подключения к среде Exchange.|
-|присоединен|2|Подключение к среде Exchange|
-|подключения|4|Отключено от среды Exchange|
+|Коннектионпендинг|1 |Ожидание подключения к среде Exchange.|
+|присоединен|2 |Подключение к среде Exchange|
+|подключения|3 |Отключено от среды Exchange|
 
 
 

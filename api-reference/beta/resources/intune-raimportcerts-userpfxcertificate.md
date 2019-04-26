@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 31a634c8c442cdbf53034b7d39062c1a3d0f5a01
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31789866"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566404"
 ---
 # <a name="userpfxcertificate-resource-type"></a>Тип ресурса Усерпфксцертификате
 
@@ -40,7 +40,7 @@ ms.locfileid: "31789866"
 |providerName|String|Поставщик криптографии, используемый для шифрования этого объекта BLOB.|
 |keyName|String|Имя ключа (в пределах поставщика), используемого для шифрования большого двоичного объекта.|
 |Паддингсчеме|[userPfxPaddingScheme](../resources/intune-raimportcerts-userpfxpaddingscheme.md)|Схема заполнения, используемая поставщиком во время шифрования и расшифровки. Возможные значения: `none`, `pkcs1`, `oaepSha1`, `oaepSha256`, `oaepSha384`, `oaepSha512`.|
-|Енкриптедпфксблоб|Binary|Зашифрованный BLOB-объект PFX.|
+|Енкриптедпфксблоб|Двоичный|Зашифрованный BLOB-объект PFX.|
 |Енкриптедпфкспассворд|String|Зашифрованный пароль PFX.|
 |createdDateTime|DateTimeOffset|Дата и время импорта этого PFX-сертификата.|
 |lastModifiedDateTime|DateTimeOffset|Дата и время последнего изменения сертификата PFX.|

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 6f2ccbf60dffa6f8f0fafd6cfc4238b57e1d17c6
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799666"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32573104"
 ---
 # <a name="resourceoperation-resource-type"></a>Тип ресурса resourceOperation
 
@@ -23,10 +23,10 @@ ms.locfileid: "31799666"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Перечисление объектов resourceOperation](../api/intune-rbac-resourceoperation-list.md)|Коллекция объектов [resourceOperation](../resources/intune-rbac-resourceoperation.md)|Список свойств и связей объектов [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
-|[Получение объекта resourceOperation](../api/intune-rbac-resourceoperation-get.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Чтение свойств и связей объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
-|[Создание объекта resourceOperation](../api/intune-rbac-resourceoperation-create.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Создание объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
-|[Удаление resourceOperation](../api/intune-rbac-resourceoperation-delete.md)|Нет|Удаление объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
-|[Обновление объекта resourceOperation](../api/intune-rbac-resourceoperation-update.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Обновляет свойства объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
+|[Получение объекта resourceOperation](../api/intune-rbac-resourceoperation-get.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md);|Чтение свойств и связей объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
+|[Создание объекта resourceOperation](../api/intune-rbac-resourceoperation-create.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md);|Создание объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
+|[Удаление объекта resourceOperation](../api/intune-rbac-resourceoperation-delete.md)|Нет|Удаление объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
+|[Обновление объекта resourceOperation](../api/intune-rbac-resourceoperation-update.md)|[resourceOperation](../resources/intune-rbac-resourceoperation.md)|Обновление свойств объекта [resourceOperation](../resources/intune-rbac-resourceoperation.md).|
 |[Функция Getscopesforuser к объекту](../api/intune-rbac-resourceoperation-getscopesforuser.md)|Коллекция строк|Н/Д|
 
 ## <a name="properties"></a>Свойства

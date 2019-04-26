@@ -1,15 +1,15 @@
 ---
 title: Получение пользователя
-description: Получение свойств и связей объекта пользователей.
+description: Получение свойств и связей объекта user.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bc408abf60ad42f564c4c36a37151db122ad573d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27984152"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32567881"
 ---
 # <a name="get-a-user"></a>Получение пользователя
 
@@ -27,17 +27,19 @@ ms.locfileid: "27984152"
 |Для приложений | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
-Для конкретного пользователя.<!-- { "blockType": "ignored" } -->
+Для определенного пользователя:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
 
-Для пользователя выполнил вход.<!-- { "blockType": "ignored" } -->
+Для вошедшего пользователя:
+<!-- { "blockType": "ignored" } -->
 ```http
 GET /me
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+## <a name="optional-query-parameters"></a>Необязательные параметры запроса
 Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа.
 
 По умолчанию возвращается только ограниченный набор свойств (_businessPhones, displayName, givenName, id, jobTitle, mail, mobilePhone, officeLocation, preferredLanguage, surname, userPrincipalName_). 
@@ -50,8 +52,8 @@ GET /me
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Content-Type   | application/json |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
@@ -145,7 +147,7 @@ Content-length: 491
 ```http
 GET https://graph.microsoft.com/v1.0/users/{id | userPrincipalName}?$select=displayName,givenName,postalCode
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 <!-- { "blockType": "ignored" } -->
 ```http
 HTTP/1.1 200 OK

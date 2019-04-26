@@ -5,11 +5,11 @@ localization_priority: Normal
 author: jewan-microsoft
 ms.prod: onenote
 ms.openlocfilehash: ef51342aba7bab49fde6d69ea0c77c62dc841b7d
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971713"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32556545"
 ---
 # <a name="update-page"></a>Обновление страницы
 
@@ -19,7 +19,7 @@ ms.locfileid: "27971713"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes.ReadWrite, Notes.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Notes. ReadWrite, Notes. ReadWrite. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Notes.ReadWrite    |
 |Для приложений | Notes.ReadWrite.All |
 
@@ -38,11 +38,11 @@ PATCH /sites/{id}/onenote/pages/{id}/content
 | Content-Type | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса укажите массив объектов [patchContentCommand](../resources/patchcontentcommand.md), представляющих изменения, вносимые в страницу. Дополнительные сведения и примеры см. в статье <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">Обновление страниц OneNote</a>.
+В теле запроса добавьте массив объектов [патчконтенткомманд](../resources/patchcontentcommand.md) , которые представляют изменения на странице. Более подробную информацию и примеры можно найти в <a href="https://msdn.microsoft.com/office/office365/howto/onenote-update-page">статье Update OneNote Pages</a>.
 
 ## <a name="response"></a>Отклик
 
-При успешном выполнении этот метод возвращает код отклика `204 No Content`.  Для запроса PATCH не возвращается никаких данных JSON.
+В случае успешного выполнения этот метод возвращает код отклика `204 No Content`.  Данные JSON не возвращаются по PATCH-запросу.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.

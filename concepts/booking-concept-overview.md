@@ -5,11 +5,11 @@ author: angelgolfer-ms
 localization_priority: Priority
 ms.prod: bookings
 ms.openlocfilehash: af9fa2b993a3ed4a55c5c526f31e0582b18ea837
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27917337"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32570294"
 ---
 # <a name="microsoft-bookings-api-overview-preview"></a>Обзор API Microsoft Bookings (предварительная версия)
 

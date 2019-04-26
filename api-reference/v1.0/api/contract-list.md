@@ -1,19 +1,19 @@
 ---
-title: Перечисление contract
-description: Получение списка объектов contract, сопоставленных с клиентом партнера.
+title: Список контрактов
+description: Получение списка объектов контракта, связанных с клиентом партнера.
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: b4003bf2aaa910d3ad33e299a9fdb01f47229d1a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27932982"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566187"
 ---
-# <a name="list-contracts"></a>Перечисление contract
+# <a name="list-contracts"></a>Список контрактов
 
-Получение списка объектов [contract](../resources/contract.md), сопоставленных с клиентом партнера.
+Получение списка объектов [контракта](../resources/contract.md) , связанных с клиентом партнера.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -35,9 +35,9 @@ GET /contracts
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки отклика. 
+Этот метод поддерживает [параметры запросов OData](https://developer.microsoft.com/graph/docs/concepts/query_parameters) для настройки ответа. 
 
-> Для свойств customerId, defaultDomainName и displayName поддерживается фильтрация.
+> Фильтрация поддерживается для customerId, Дефаултдомаиннаме и displayName.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -45,13 +45,13 @@ GET /contracts
 |:----------|:----------|
 | Авторизация  | Bearer {токен}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
-Не указывайте тело запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и коллекцию объектов [Contract](../resources/contract.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и коллекцию объектов [Contract](../resources/contract.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
@@ -64,9 +64,9 @@ GET /contracts
 GET https://graph.microsoft.com/v1.0/contracts
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

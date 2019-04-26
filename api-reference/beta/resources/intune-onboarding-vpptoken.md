@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 806c652e7d1d75de16dd40f4db1dfc39ae4f442a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31774122"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566495"
 ---
 # <a name="vpptoken-resource-type"></a>Тип ресурса vppToken
 
@@ -23,11 +23,11 @@ ms.locfileid: "31774122"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список VPP токенов](../api/intune-onboarding-vpptoken-list.md)|Коллекция [VPP токенов](../resources/intune-onboarding-vpptoken.md)|Список свойств и связей объектов [VPP токен](../resources/intune-onboarding-vpptoken.md).|
-|[Получить vppToken](../api/intune-onboarding-vpptoken-get.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Чтение свойств и связей объекта [vppToken](../resources/intune-onboarding-vpptoken.md).|
-|[Создать VPP токен](../api/intune-onboarding-vpptoken-create.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Создайте новый объект [vppToken](../resources/intune-onboarding-vpptoken.md).|
-|[Удалить vppToken](../api/intune-onboarding-vpptoken-delete.md)|Отсутствует|Удаляет [VPP токен](../resources/intune-onboarding-vpptoken.md).|
+|[Получить VPP токен](../api/intune-onboarding-vpptoken-get.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Чтение свойств и связей объекта [VPP токен](../resources/intune-onboarding-vpptoken.md).|
+|[Создать VPP токен](../api/intune-onboarding-vpptoken-create.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Создайте новый объект [VPP токен](../resources/intune-onboarding-vpptoken.md).|
+|[Удалить VPP токен](../api/intune-onboarding-vpptoken-delete.md)|Отсутствует|Удаляет [VPP токен](../resources/intune-onboarding-vpptoken.md).|
 |[Обновить VPP токен](../api/intune-onboarding-vpptoken-update.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Обновление свойств объекта [VPP токен](../resources/intune-onboarding-vpptoken.md).|
-|[Действие syncLicenses](../api/intune-onboarding-vpptoken-synclicenses.md)|[vppToken](../resources/intune-onboarding-vpptoken.md)|Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken|
+|[Действие syncLicenses](../api/intune-onboarding-vpptoken-synclicenses.md)|[VPP токен](../resources/intune-onboarding-vpptoken.md)|Синхронизирует лицензии, связанные с конкретным appleVolumePurchaseProgramToken|
 |[Действие revokeLicenses](../api/intune-onboarding-vpptoken-revokelicenses.md)|Нет|Отзыв лицензий, связанных с определенным appleVolumePurchaseProgramToken|
 |[Функция Жетлиценсесфорапп](../api/intune-onboarding-vpptoken-getlicensesforapp.md)|Коллекция [впптокенлиценсесуммари](../resources/intune-onboarding-vpptokenlicensesummary.md)|Н/Д|
 

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: e7f3dcbbc2544a4231cd5da102985d7142feb03a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31809310"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32551801"
 ---
 # <a name="mobileapprelationshipstate-resource-type"></a>Тип ресурса Мобилеаппрелатионшипстате
 
@@ -22,7 +22,7 @@ ms.locfileid: "31809310"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|Саурцеидс|Коллекция String|Коллекция идентификаторов исходного приложения для мобильных устройств.|
+|Саурцеидс|Коллекция строк|Коллекция идентификаторов исходного приложения для мобильных устройств.|
 |targetId|String|Идентификатор связанного конечного приложения.|
 |Таржетдисплайнаме|String|Отображаемое имя связанного конечного приложения.|
 |deviceId|String|Соответствующий идентификатор устройства.|

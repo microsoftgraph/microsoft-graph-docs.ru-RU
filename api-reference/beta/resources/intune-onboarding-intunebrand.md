@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ffaa20097147d5edcfc8af84418d65d6db29a746
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31788298"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32566530"
 ---
 # <a name="intunebrand-resource-type"></a>Тип ресурса intuneBrand
 
@@ -32,10 +32,10 @@ ms.locfileid: "31788298"
 |onlineSupportSiteName|String|Отображаемое имя сайта ИТ-службы технической поддержки компании или организации.|
 |themeColor|[rgbColor](../resources/intune-shared-rgbcolor.md)|Основной цвет темы, который используется в приложениях "Корпоративный портал" и на веб-портале.|
 |showLogo|Boolean|Логическое значение, которое определяет, отображаются ли предоставленные администратором изображения логотипов.|
-|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение с логотипом на светлом фоне, которое отображается в приложениях "Корпоративный портал".|
+|lightBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md);|Изображение с логотипом на светлом фоне, которое отображается в приложениях "Корпоративный портал".|
 |darkBackgroundLogo|[mimeContent](../resources/intune-shared-mimecontent.md)|Изображение с логотипом на темном фоне, которое отображается в приложениях "Корпоративный портал".|
 |showNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
-|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md)|Настраиваемое изображение, отображаемое на начальной странице приложения корпоративного портала|
+|Ландингпажекустомизедимаже|[mimeContent](../resources/intune-shared-mimecontent.md);|Настраиваемое изображение, отображаемое на начальной странице приложения корпоративного портала|
 |Кустомпривацимессаже|String|Пользовательское сообщение о конфиденциальности.|
 |showDisplayNameNextToLogo|Boolean|Логическое значение, которое определяет, отображается ли возле изображения логотипа указанное администратором отображаемое имя.|
 

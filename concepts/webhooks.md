@@ -4,11 +4,11 @@ description: API Microsoft Graph использует механизм веб-п
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: 7060a1d6f213a413c453725774da8ffeedb1b277
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31980937"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32575970"
 ---
 # <a name="set-up-notifications-for-changes-in-user-data"></a>Настройка уведомлений об изменениях в пользовательских данных
 

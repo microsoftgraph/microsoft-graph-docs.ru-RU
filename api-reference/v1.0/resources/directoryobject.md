@@ -5,11 +5,11 @@ localization_priority: Priority
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: da596d80bee17e55f8ecffe8f212e686af8e30d7
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27964139"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32574682"
 ---
 # <a name="directoryobject-resource-type"></a>Тип ресурса directoryObject
 
