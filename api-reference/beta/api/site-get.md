@@ -5,45 +5,45 @@ ms.date: 09/10/2017
 title: Получение сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: bc1f4e478b93472b683cd8249d55a98f751dfaa0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 644d7b617f6b47bc06a163655450fdf5ddbc0bfc
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537321"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335846"
 ---
-# <a name="get-a-site-resource"></a><span data-ttu-id="0ab89-102">Получение ресурса site</span><span class="sxs-lookup"><span data-stu-id="0ab89-102">Get a site resource</span></span>
+# <a name="get-a-site-resource"></a><span data-ttu-id="c7990-102">Получение ресурса site</span><span class="sxs-lookup"><span data-stu-id="c7990-102">Get a site resource</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="0ab89-p101">Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="0ab89-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
+<span data-ttu-id="c7990-p101">Получение свойств и отношений ресурса [site][]. Ресурс **site** представляет сайт группы в SharePoint.</span><span class="sxs-lookup"><span data-stu-id="c7990-p101">Retrieve properties and relationships for a [site][] resource. A **site** resource represents a team site in SharePoint.</span></span>
 
 [site]: ../resources/site.md
 
-<span data-ttu-id="0ab89-106">При обращении ресурс **site** рассматривается как уникальный идентификатор, состоящий из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="0ab89-106">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
+<span data-ttu-id="c7990-106">При обращении ресурс **site** рассматривается как уникальный идентификатор, состоящий из следующих значений:</span><span class="sxs-lookup"><span data-stu-id="c7990-106">A **site** is addressed be a unique identifier which is a composite ID of the following values:</span></span>
 
-* <span data-ttu-id="0ab89-107">имя узла семейства веб-сайтов (contoso.sharepoint.com);</span><span class="sxs-lookup"><span data-stu-id="0ab89-107">Site collection hostname (contoso.sharepoint.com)</span></span>
-* <span data-ttu-id="0ab89-108">уникальный идентификатор семейства веб-сайтов (GUID);</span><span class="sxs-lookup"><span data-stu-id="0ab89-108">Site collection unique ID (GUID)</span></span>
-* <span data-ttu-id="0ab89-109">уникальный идентификатор сайта (GUID).</span><span class="sxs-lookup"><span data-stu-id="0ab89-109">Site unique ID (GUID)</span></span>
+* <span data-ttu-id="c7990-107">имя узла семейства веб-сайтов (contoso.sharepoint.com);</span><span class="sxs-lookup"><span data-stu-id="c7990-107">Site collection hostname (contoso.sharepoint.com)</span></span>
+* <span data-ttu-id="c7990-108">уникальный идентификатор семейства веб-сайтов (GUID);</span><span class="sxs-lookup"><span data-stu-id="c7990-108">Site collection unique ID (GUID)</span></span>
+* <span data-ttu-id="c7990-109">уникальный идентификатор сайта (GUID).</span><span class="sxs-lookup"><span data-stu-id="c7990-109">Site unique ID (GUID)</span></span>
 
-<span data-ttu-id="0ab89-110">Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="0ab89-110">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
+<span data-ttu-id="c7990-110">Кроме того, существует зарезервированный идентификатор сайта `root`, который всегда ссылается на корневой сайт указанного целевого объекта, как показано ниже.</span><span class="sxs-lookup"><span data-stu-id="c7990-110">There is also a reserved site identifier, `root`, which always references the root site for a given target, as follows:</span></span>
 
-* <span data-ttu-id="0ab89-111">`/sites/root`. Корневой сайт клиента.</span><span class="sxs-lookup"><span data-stu-id="0ab89-111">`/sites/root`: The tenant root site.</span></span>
-* <span data-ttu-id="0ab89-112">`/groups/{group-id}/sites/root`. Сайт группы для ресурса group.</span><span class="sxs-lookup"><span data-stu-id="0ab89-112">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
+* <span data-ttu-id="c7990-111">`/sites/root`. Корневой сайт клиента.</span><span class="sxs-lookup"><span data-stu-id="c7990-111">`/sites/root`: The tenant root site.</span></span>
+* <span data-ttu-id="c7990-112">`/groups/{group-id}/sites/root`. Сайт группы для ресурса group.</span><span class="sxs-lookup"><span data-stu-id="c7990-112">`/groups/{group-id}/sites/root`: The group's team site.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="0ab89-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="0ab89-113">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c7990-113">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c7990-113">Permissions</span></span>
 
-<span data-ttu-id="0ab89-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="0ab89-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c7990-p102">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c7990-p102">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="0ab89-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="0ab89-116">Permission type</span></span>      | <span data-ttu-id="0ab89-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="0ab89-117">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c7990-116">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c7990-116">Permission type</span></span>      | <span data-ttu-id="c7990-117">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c7990-117">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="0ab89-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="0ab89-118">Delegated (work or school account)</span></span> | <span data-ttu-id="0ab89-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0ab89-119">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="0ab89-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="0ab89-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="0ab89-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="0ab89-121">Not supported.</span></span>    |
-|<span data-ttu-id="0ab89-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="0ab89-122">Application</span></span> | <span data-ttu-id="0ab89-123">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="0ab89-123">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c7990-118">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c7990-118">Delegated (work or school account)</span></span> | <span data-ttu-id="c7990-119">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7990-119">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c7990-120">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c7990-120">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c7990-121">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c7990-121">Not supported.</span></span>    |
+|<span data-ttu-id="c7990-122">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c7990-122">Application</span></span> | <span data-ttu-id="c7990-123">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c7990-123">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="get-the-tenants-root-site"></a><span data-ttu-id="0ab89-124">Получение корневого сайта клиента</span><span class="sxs-lookup"><span data-stu-id="0ab89-124">Get the tenant's root site</span></span>
+## <a name="get-the-tenants-root-site"></a><span data-ttu-id="c7990-124">Получение корневого сайта клиента</span><span class="sxs-lookup"><span data-stu-id="c7990-124">Get the tenant's root site</span></span>
 
-<span data-ttu-id="0ab89-125">Чтобы получить доступ к корневому сайту SharePoint внутри клиента, создайте следующие запросы:</span><span class="sxs-lookup"><span data-stu-id="0ab89-125">To access the root SharePoint site within a tenant:</span></span>
+<span data-ttu-id="c7990-125">Чтобы получить доступ к корневому сайту SharePoint внутри клиента, создайте следующие запросы:</span><span class="sxs-lookup"><span data-stu-id="c7990-125">To access the root SharePoint site within a tenant:</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -52,25 +52,25 @@ GET /sites/root
 GET /sites/contoso.sharepoint.com
 ```
 
-## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="0ab89-126">Использование относительного URL-адреса сервера для доступа к сайту</span><span class="sxs-lookup"><span data-stu-id="0ab89-126">Access a site by server-relative URL</span></span>
+## <a name="access-a-site-by-server-relative-url"></a><span data-ttu-id="c7990-126">Использование относительного URL-адреса сервера для доступа к сайту</span><span class="sxs-lookup"><span data-stu-id="c7990-126">Access a site by server-relative URL</span></span>
 
-<span data-ttu-id="0ab89-127">Если у вас есть относительный URL-адрес сервера для ресурса **site**, можно создать следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="0ab89-127">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
+<span data-ttu-id="c7990-127">Если у вас есть относительный URL-адрес сервера для ресурса **site**, можно создать следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="c7990-127">If you have the server-relative URL for a **site** resource, you can construct a request as follows:</span></span>
 
 ```http
 GET /sites/{hostname}:/{server-relative-path}
 ```
 
-## <a name="access-a-group-team-site"></a><span data-ttu-id="0ab89-128">Доступ к сайту группы для группы</span><span class="sxs-lookup"><span data-stu-id="0ab89-128">Access a group team site</span></span>
+## <a name="access-a-group-team-site"></a><span data-ttu-id="c7990-128">Доступ к сайту группы для группы</span><span class="sxs-lookup"><span data-stu-id="c7990-128">Access a group team site</span></span>
 
-<span data-ttu-id="0ab89-129">Чтобы получить доступ к сайту группы для группы, создайте следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="0ab89-129">To access the team site for a group:</span></span>
+<span data-ttu-id="c7990-129">Чтобы получить доступ к сайту группы для группы, создайте следующий запрос:</span><span class="sxs-lookup"><span data-stu-id="c7990-129">To access the team site for a group:</span></span>
 
 ```http
 GET /groups/{group-id}/sites/root
 ```
 
-## <a name="example"></a><span data-ttu-id="0ab89-130">Пример</span><span class="sxs-lookup"><span data-stu-id="0ab89-130">Example</span></span>
+## <a name="example"></a><span data-ttu-id="c7990-130">Пример</span><span class="sxs-lookup"><span data-stu-id="c7990-130">Example</span></span>
 
-### <a name="request"></a><span data-ttu-id="0ab89-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="0ab89-131">Request</span></span>
+### <a name="request"></a><span data-ttu-id="c7990-131">Запрос</span><span class="sxs-lookup"><span data-stu-id="c7990-131">Request</span></span>
 
 <!-- { "blockType": "request", "name": "get-site" } -->
 
@@ -78,7 +78,7 @@ GET /groups/{group-id}/sites/root
 GET /sites/{site-id}
 ```
 
-### <a name="response"></a><span data-ttu-id="0ab89-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="0ab89-132">Response</span></span>
+### <a name="response"></a><span data-ttu-id="c7990-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="c7990-132">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "truncated": true } -->
 
@@ -109,8 +109,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/Get by ID",
-  "suppressions": [
-    "Error: /api-reference/beta/api/site-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

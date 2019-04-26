@@ -4,32 +4,32 @@ description: Создайте новую смену.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: ae7ff2f598373d58b2a01b678dbb70ae8e290b2d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 558aaacb3620d1c90f5bf819d20de62d2ddb2173
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545604"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33336336"
 ---
-# <a name="create-shift"></a><span data-ttu-id="972dc-103">Создание смены</span><span class="sxs-lookup"><span data-stu-id="972dc-103">Create shift</span></span>
+# <a name="create-shift"></a><span data-ttu-id="31ebc-103">Создание смены</span><span class="sxs-lookup"><span data-stu-id="31ebc-103">Create shift</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="972dc-104">Создайте новый экземпляр [SHIFT](../resources/shift.md) в расписании [](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="972dc-104">Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).</span></span>
+<span data-ttu-id="31ebc-104">Создайте новый экземпляр [SHIFT](../resources/shift.md) в расписании [](../resources/schedule.md).</span><span class="sxs-lookup"><span data-stu-id="31ebc-104">Create a new [shift](../resources/shift.md) instance in a [schedule](../resources/schedule.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="972dc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="972dc-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="31ebc-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="31ebc-105">Permissions</span></span>
 
-<span data-ttu-id="972dc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="972dc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="31ebc-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="31ebc-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="972dc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="972dc-108">Permission type</span></span>      | <span data-ttu-id="972dc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="972dc-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="31ebc-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="31ebc-108">Permission type</span></span>      | <span data-ttu-id="31ebc-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="31ebc-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="972dc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="972dc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="972dc-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="972dc-111">Group.ReadWrite.All</span></span>    |
-|<span data-ttu-id="972dc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="972dc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="972dc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="972dc-113">Not supported.</span></span>    |
-|<span data-ttu-id="972dc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="972dc-114">Application</span></span> | <span data-ttu-id="972dc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="972dc-115">Not supported.</span></span> |
+|<span data-ttu-id="31ebc-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="31ebc-110">Delegated (work or school account)</span></span> | <span data-ttu-id="31ebc-111">Group.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="31ebc-111">Group.ReadWrite.All</span></span>    |
+|<span data-ttu-id="31ebc-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="31ebc-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="31ebc-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31ebc-113">Not supported.</span></span>    |
+|<span data-ttu-id="31ebc-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="31ebc-114">Application</span></span> | <span data-ttu-id="31ebc-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="31ebc-115">Not supported.</span></span> |
 
-> <span data-ttu-id="972dc-116">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="972dc-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="972dc-117">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="972dc-117">Global admins can access groups that they are not a member of.</span></span>
+> <span data-ttu-id="31ebc-116">**Примечание**. Этот API поддерживает разрешения администратора.</span><span class="sxs-lookup"><span data-stu-id="31ebc-116">**Note**: This API supports admin permissions.</span></span> <span data-ttu-id="31ebc-117">Глобальные администраторы могут получать доступ к группам, которые не являются участниками.</span><span class="sxs-lookup"><span data-stu-id="31ebc-117">Global admins can access groups that they are not a member of.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="972dc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="972dc-118">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="31ebc-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="31ebc-118">HTTP request</span></span>
 
 <!-- { "blockType": "ignored" } -->
 
@@ -37,22 +37,22 @@ ms.locfileid: "32545604"
 POST /teams/{teamId}/schedule/shifts
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="972dc-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="972dc-119">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="31ebc-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="31ebc-119">Request headers</span></span>
 
-| <span data-ttu-id="972dc-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="972dc-120">Header</span></span>       | <span data-ttu-id="972dc-121">Значение</span><span class="sxs-lookup"><span data-stu-id="972dc-121">Value</span></span> |
+| <span data-ttu-id="31ebc-120">Заголовок</span><span class="sxs-lookup"><span data-stu-id="31ebc-120">Header</span></span>       | <span data-ttu-id="31ebc-121">Значение</span><span class="sxs-lookup"><span data-stu-id="31ebc-121">Value</span></span> |
 |:---------------|:--------|
-| <span data-ttu-id="972dc-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="972dc-122">Authorization</span></span>  | <span data-ttu-id="972dc-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="972dc-p103">Bearer {token}. Required.</span></span>  |
-| <span data-ttu-id="972dc-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="972dc-125">Content-Type</span></span>  | <span data-ttu-id="972dc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="972dc-126">application/json</span></span>  |
+| <span data-ttu-id="31ebc-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="31ebc-122">Authorization</span></span>  | <span data-ttu-id="31ebc-p103">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="31ebc-p103">Bearer {token}. Required.</span></span>  |
+| <span data-ttu-id="31ebc-125">Content-Type</span><span class="sxs-lookup"><span data-stu-id="31ebc-125">Content-Type</span></span>  | <span data-ttu-id="31ebc-126">application/json</span><span class="sxs-lookup"><span data-stu-id="31ebc-126">application/json</span></span>  |
 
-## <a name="response"></a><span data-ttu-id="972dc-127">Ответ</span><span class="sxs-lookup"><span data-stu-id="972dc-127">Response</span></span>
+## <a name="response"></a><span data-ttu-id="31ebc-127">Отклик</span><span class="sxs-lookup"><span data-stu-id="31ebc-127">Response</span></span>
 
-<span data-ttu-id="972dc-128">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="972dc-128">If successful, this method returns a `201 Created` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
+<span data-ttu-id="31ebc-128">В случае успешного выполнения этот метод возвращает `201 Created` код отклика и объект [сдвига](../resources/shift.md) в тексте отклика.</span><span class="sxs-lookup"><span data-stu-id="31ebc-128">If successful, this method returns a `201 Created` response code and a [shift](../resources/shift.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="972dc-129">Пример</span><span class="sxs-lookup"><span data-stu-id="972dc-129">Example</span></span>
+## <a name="example"></a><span data-ttu-id="31ebc-129">Пример</span><span class="sxs-lookup"><span data-stu-id="31ebc-129">Example</span></span>
 
-#### <a name="request"></a><span data-ttu-id="972dc-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="972dc-130">Request</span></span>
+#### <a name="request"></a><span data-ttu-id="31ebc-130">Запрос</span><span class="sxs-lookup"><span data-stu-id="31ebc-130">Request</span></span>
 
-<span data-ttu-id="972dc-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="972dc-131">The following is an example of the request.</span></span>
+<span data-ttu-id="31ebc-131">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="31ebc-131">The following is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "schedule-post-shifts"
@@ -100,11 +100,11 @@ Content-type: application/json
 }
 ```
 
-#### <a name="response"></a><span data-ttu-id="972dc-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="972dc-132">Response</span></span>
+#### <a name="response"></a><span data-ttu-id="31ebc-132">Отклик</span><span class="sxs-lookup"><span data-stu-id="31ebc-132">Response</span></span>
 
-<span data-ttu-id="972dc-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="972dc-133">The following is an example of the response.</span></span> 
+<span data-ttu-id="31ebc-133">Ниже приведен пример отклика.</span><span class="sxs-lookup"><span data-stu-id="31ebc-133">The following is an example of the response.</span></span> 
 
-><span data-ttu-id="972dc-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="972dc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
+><span data-ttu-id="31ebc-p104">**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="31ebc-p104">**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -175,8 +175,6 @@ Content-length: 401
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/schedule-post-shifts.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
