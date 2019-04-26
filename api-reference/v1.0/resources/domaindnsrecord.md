@@ -13,6 +13,8 @@ ms.locfileid: "32562764"
 ---
 # <a name="domaindnsrecord-resource-type"></a><span data-ttu-id="c20f7-105">Тип ресурса domainDnsRecord</span><span class="sxs-lookup"><span data-stu-id="c20f7-105">domainDnsRecord resource type</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="c20f7-106">Для каждого домена в клиенте может потребоваться добавить записи DNS в файл зоны DNS домена, чтобы домен можно было использовать в Microsoft Online Services.</span><span class="sxs-lookup"><span data-stu-id="c20f7-106">For each domain in the tenant, you may be required to add DNS record(s) to the DNS zone file of the domain before the domain can be used by Microsoft Online Services.</span></span> <span data-ttu-id="c20f7-107">Объект **DomainDnsRecord** используется для представления таких DNS-записей.</span><span class="sxs-lookup"><span data-stu-id="c20f7-107">The **DomainDnsRecord** entity is used to present such DNS records.</span></span> <span data-ttu-id="c20f7-108">Базовый объект для сущностей [домаинднскнамерекорд](domaindnscnamerecord.md), [домаинднсмксрекорд](domaindnsmxrecord.md), [домаинднссрврекорд](domaindnssrvrecord.md) и [домаинднссрврекорд](domaindnssrvrecord.md) .</span><span class="sxs-lookup"><span data-stu-id="c20f7-108">Base entity for [DomainDnsCnameRecord](domaindnscnamerecord.md), [DomainDnsMxRecord](domaindnsmxrecord.md), [DomainDnsSrvRecord](domaindnssrvrecord.md) and [DomainDnsSrvRecord](domaindnssrvrecord.md) entities.</span></span>
 
 ## <a name="methods"></a><span data-ttu-id="c20f7-109">Методы</span><span class="sxs-lookup"><span data-stu-id="c20f7-109">Methods</span></span>
@@ -36,7 +38,6 @@ ms.locfileid: "32562764"
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "optionalProperties": [
 
   ],
@@ -57,10 +58,13 @@ ms.locfileid: "32562764"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "domainDnsRecord resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->

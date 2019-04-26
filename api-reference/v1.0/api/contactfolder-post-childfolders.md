@@ -13,6 +13,8 @@ ms.locfileid: "32566201"
 ---
 # <a name="create-contactfolder"></a><span data-ttu-id="ae47f-103">Создание объекта ContactFolder</span><span class="sxs-lookup"><span data-stu-id="ae47f-103">Create ContactFolder</span></span>
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 <span data-ttu-id="ae47f-104">Создание дочернего объекта contactFolder указанной папки.</span><span class="sxs-lookup"><span data-stu-id="ae47f-104">Create a new contactFolder as a child of a specified folder.</span></span> 
 
 <span data-ttu-id="ae47f-105">Вы также можете [создать объект contactFolder в папке контактов пользователя по умолчанию](user-post-contactfolders.md).</span><span class="sxs-lookup"><span data-stu-id="ae47f-105">You can also [create a new contactFolder under the user's default contact folder](user-post-contactfolders.md).</span></span>
@@ -52,7 +54,7 @@ POST /users/{id | userPrincipalName}/contactFolders/{id}/childFolders
   "name": "create_contactfolder_from_contactfolder"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/me/contactFolders/{id}/childFolders
+POST https://graph.microsoft.com/beta/me/contactFolders/{id}/childFolders
 Content-type: application/json
 Content-length: 84
 
@@ -82,10 +84,13 @@ Content-length: 104
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Create ContactFolder",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
-}-->
+  "tocPath": "",
+  "suppressions": []
+}
+-->
