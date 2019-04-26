@@ -1,15 +1,15 @@
 ---
 title: Создание объекта Contact
-description: Добавление контакта в корневую папку с контактами или конечную точку contacts другой папки с контактами.
+description: Добавление контакта в корневую папку с контактами или конечную точку контактов другой папки с контактами.
 author: dkershaw10
 localization_priority: Priority
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: bd2bdfdbfc5242a49085c236171b86cd7aa29f3a
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
-ms.translationtype: MT
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27935642"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564073"
 ---
 # <a name="create-contact"></a>Создание объекта Contact
 
@@ -72,7 +72,7 @@ Content-type: application/json
 Предоставьте в тексте запроса описание объекта [contact](../resources/contact.md) в формате JSON.
 
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

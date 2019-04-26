@@ -4,11 +4,11 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 localization_priority: Priority
 ms.openlocfilehash: 4ec732fdc9e2a1c91ff6e5bb58c26e606272e641
-ms.sourcegitcommit: d264fa064215879fa88a4680402cd57a470d73db
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31980958"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558001"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph 
 Microsoft Graph предоставляет детализированные разрешения, управляющие доступом приложений к ресурсам, таким как пользователи, группы и почта. Разработчик указывает, какие разрешения для Microsoft Graph должно запрашивать его приложение. Входя в приложение, пользователь (иногда администратор) получает возможность согласиться с предоставлением этих разрешений. Если пользователь дает согласие, приложение получает доступ к запрашиваемым ресурсам и интерфейсам API. Для приложений, не предусматривающих вход пользователя, администратор может заранее дать согласие при установке приложения или во время регистрации. 

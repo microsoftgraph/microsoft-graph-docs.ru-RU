@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ee2689bfbc6b407a688c0422c568d4b311694c06
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797251"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562288"
 ---
 # <a name="devicemanagementsettingbooleanconstraint-resource-type"></a>Тип ресурса Девицеманажементсеттингбулеанконстраинт
 
@@ -25,7 +25,7 @@ Constraint — принудительно определяет конкретн�
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|value|Boolean|Логическое значение, с которым выполняется сравнение|
+|значение|Boolean|Логическое значение, с которым выполняется сравнение|
 
 ## <a name="relationships"></a>Отношения
 Нет

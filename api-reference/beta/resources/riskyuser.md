@@ -5,11 +5,11 @@ author: cloudhandler
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 927e4eb519f8a849ac2cb259bed962bad44d9a6d
-ms.sourcegitcommit: 9fd437a77da99d8436d6c852edd99a9ba873f8cd
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31559984"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563184"
 ---
 # <a name="riskyusers-resource-type"></a>Тип ресурса riskyUsers
 
@@ -35,7 +35,7 @@ ms.locfileid: "31559984"
 | Свойство   | Тип|Описание|
 |:---------------|:--------|:----------|
 |`id`|`string`|Уникальный идентификатор пользователя под угрозой|
-|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true`, `false`|
+|`isDeleted`|`bool`|Указывает, удален ли пользователь. Возможные значения: `true`,`false`|
 |`isGuest`|`bool`|Указывает, является ли пользователь гостямй. Возможные значения: `true`, `false`. Имеет значение true, если удостоверение пользователя находится вне клиента. Это может быть B2B или пользователь B2C с удостоверением в Azure AD, MSA или сторонним поставщиком удостоверений. False, если удостоверение пользователя находится внутри клиента в данный момент|
 |`isProcessing`|`bool`|Указывает, вехсер ли опасное состояние пользователя при обработке внутренней|
 |`riskLastUpdatedDateTime`|`datetime`|Дата и время последнего обновления рискованного пользователя|
@@ -50,7 +50,7 @@ ms.locfileid: "31559984"
 |:---------------|:--------|:----------|
 |лист|Коллекция [рискюсерхисторитем](riskyuserhistoryitem.md)| |
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

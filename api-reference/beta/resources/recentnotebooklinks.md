@@ -1,27 +1,27 @@
 ---
 title: Тип ресурса recentNotebookLinks
-description: Ссылки на открытие записной книжке OneNote. Этот тип ресурса существует как свойство ресурса recentNotebook.
+description: Ссылки для открытия записной книжки OneNote. Этот тип ресурса существует как свойство ресурса recentNotebook.
 localization_priority: Normal
 ms.openlocfilehash: 328f337d63645cdd52722a4216006920c493f9e7
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29525887"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563328"
 ---
 # <a name="recentnotebooklinks-resource-type"></a>Тип ресурса recentNotebookLinks
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Ссылки на открытие записной книжке OneNote. Этот тип ресурса существует как свойство ресурса [recentNotebook](recentnotebook.md).
+Ссылки для открытия записной книжки OneNote. Этот тип ресурса существует как свойство ресурса [recentNotebook](recentnotebook.md).
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Открывает записную книжку в клиент OneNote, если она установлена.|
+|oneNoteClientUrl|[externalLink](externallink.md)|Открывает записную книжку в клиенте OneNote, если она установлена.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает записную книжку в OneNote Online.|
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 

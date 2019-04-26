@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: ab5dd14c0929c58b9c076d1115d487e560d80333
-ms.sourcegitcommit: 77f485ec03a8c917f59d2fbed4df1ec755f3da58
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31522582"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562281"
 ---
 # <a name="securitybaselinesettingstate-resource-type"></a>Тип ресурса Секуритибаселинесеттингстате
 
@@ -23,17 +23,17 @@ ms.locfileid: "31522582"
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
 |[Список Секуритибаселинесеттингстатес](../api/intune-deviceintent-securitybaselinesettingstate-list.md)|Коллекция [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Список свойств и связей объектов [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
-|[Получение Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-get.md)|[Секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Чтение свойств и связей объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
-|[Создание Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-create.md)|[Секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Создание нового объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
+|[Получение Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-get.md)|[securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Чтение свойств и связей объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
+|[Создание Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-create.md)|[securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Создание нового объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
 |[Удаление Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-delete.md)|Нет|Удаляет объект [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md).|
-|[Обновление Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-update.md)|[Секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Обновление свойств объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
+|[Обновление Секуритибаселинесеттингстате](../api/intune-deviceintent-securitybaselinesettingstate-update.md)|[securityBaselineSettingState](../resources/intune-deviceintent-securitybaselinesettingstate.md)|Обновление свойств объекта [секуритибаселинесеттингстате](../resources/intune-deviceintent-securitybaselinesettingstate.md) .|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
 |id|String|Уникальный идентификатор объекта|
 |settingName|String|Имя параметра, о котором сообщается|
-|state|[Секуритибаселинекомплианцестате](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия параметру базового уровня безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
+|state|[securityBaselineComplianceState](../resources/intune-deviceintent-securitybaselinecompliancestate.md)|Состояние соответствия параметру базового уровня безопасности. Возможные значения: `unknown`, `secure`, `notApplicable`, `notSecure`, `error`, `conflict`.|
 |Сеттингкатегорид|String|Идентификатор категории параметров, к которой относится этот параметр|
 
 ## <a name="relationships"></a>Отношения

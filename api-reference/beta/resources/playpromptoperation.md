@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса playPromptOperation
-description: Операция playPrompt для получения результатов playPrompt действие.
+title: Тип ресурса Плайпромптоператион
+description: Операция Плайпромпт для получения результата действия Плайпромпт.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: a6ecdb06c910923d35f9d36590ad09fd7835fccb
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515204"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563688"
 ---
-# <a name="playpromptoperation-resource-type"></a>Тип ресурса playPromptOperation
+# <a name="playpromptoperation-resource-type"></a>Тип ресурса Плайпромптоператион
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Операция playPrompt для получения результатов playPrompt действие.
+Операция Плайпромпт для получения результата действия Плайпромпт.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство            | Тип                        | Описание|
 |:--------------------|:----------------------------|:-----------------------------------------------------------------------------------|
-| ClientContext       | String                      | Контекст клиента.                                                                |
-| completionReason    | String                      | Возможные значения: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
+| Контекст       | String                      | Контекст клиента.                                                                |
+| Комплетионреасон    | String                      | Возможные значения: `unknown`, `completedSuccessfully`, `mediaOperationCanceled`. |
 | createdDateTime     | DateTimeOffset              | Время начала операции.                                                   |
-| id                  | String                      | Только для чтения.                                                                         |
-| lastActionDateTime  | DateTimeOffset              | Время последнего действия операции.                                      |
-| resultInfo          | [resultInfo](resultInfo.md) | Сведения о результатов. Только для чтения. Сервер, созданный.                               |
+| id                  | Строка                      | Только для чтения.                                                                         |
+| Ластактиондатетиме  | DateTimeOffset              | Время последнего действия операции.                                      |
+| resultInfo          | [resultInfo](resultInfo.md) | Сведения о результате. Только для чтения. Создается сервером.                               |
 | status              | String                      | Возможные значения: `notStarted`, `running`, `completed`, `failed`.               |
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

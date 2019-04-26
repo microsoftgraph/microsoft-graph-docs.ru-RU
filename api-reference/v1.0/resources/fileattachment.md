@@ -3,11 +3,11 @@ title: Тип ресурса fileAttachment
 description: 'Файл (например, текстовый файл или документ Word), вложенный в сведения о событии, сообщение или запись. **contentBytes** '
 localization_priority: Priority
 ms.openlocfilehash: 07dcdac0497caa106eac38d1248661218a7fcc5e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574819"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564766"
 ---
 # <a name="fileattachment-resource-type"></a>Тип ресурса fileAttachment
 

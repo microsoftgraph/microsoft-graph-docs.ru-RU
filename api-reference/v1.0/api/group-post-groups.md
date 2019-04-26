@@ -5,11 +5,11 @@ author: dkershaw10
 localization_priority: Priority
 ms.prod: groups
 ms.openlocfilehash: 8bf432d30ba000641654d8c5d457096f5bfcb70e
-ms.sourcegitcommit: 66066b71d353fd7c2481d43b1dba2c33390eee61
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29574868"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561798"
 ---
 # <a name="create-group"></a>Создание группы
 Используйте этот API, чтобы создать группу согласно инструкциям в тексте запроса. Можно создать один из трех типов групп:

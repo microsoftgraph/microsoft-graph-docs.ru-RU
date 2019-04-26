@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53eae35e947b958c21df63ece3156da4107e8d0b
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31796341"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561973"
 ---
 # <a name="usernamesource-enum-type"></a>тип перечисления usernameSource
 
@@ -23,8 +23,8 @@ ms.locfileid: "31796341"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |userPrincipalName|нуль|Имя участника пользователя.|
-|primarySmtpAddress|1,1|Основной SMTP-адрес.|
-|samAccountName|2|Имя учетной записи SAM пользователя.|
+|primarySmtpAddress|1 |Основной SMTP-адрес.|
+|samAccountName|2 |Имя учетной записи SAM пользователя.|
 
 
 

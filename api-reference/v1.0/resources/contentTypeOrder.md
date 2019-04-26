@@ -5,11 +5,11 @@ ms.date: 09/13/2017
 title: contentTypeOrder
 localization_priority: Normal
 ms.openlocfilehash: ccea5804c3f4eddb02b5d4163302362f29b5fbc8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27890498"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561329"
 ---
 # <a name="contenttypeorder-resource-type"></a>Тип ресурса contentTypeOrder
 

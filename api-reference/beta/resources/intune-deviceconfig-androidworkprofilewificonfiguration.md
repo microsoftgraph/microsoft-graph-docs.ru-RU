@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 8b124a622645c22910c06d52e15a0f22db7f7e38
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31799372"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562351"
 ---
 # <a name="androidworkprofilewificonfiguration-resource-type"></a>Тип ресурса Андроидворкпрофилевификонфигуратион
 

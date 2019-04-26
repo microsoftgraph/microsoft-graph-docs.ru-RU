@@ -1,31 +1,31 @@
 ---
-title: Тип ресурса oneDriveUsageAccountDetail
+title: Тип ресурса Онедривеусажеаккаунтдетаил
 description: Ниже указано представление ресурса в формате JSON.
 localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9c13e03d1170b0ebbc53394541c4564c60c67e78
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27957398"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563548"
 ---
-# <a name="onedriveusageaccountdetail-resource-type"></a>Тип ресурса oneDriveUsageAccountDetail
+# <a name="onedriveusageaccountdetail-resource-type"></a>Тип ресурса Онедривеусажеаккаунтдетаил
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                | Тип    |
 | :---------------------- | :------ |
-| reportRefreshDate       | Date    |
+| Репортрефрешдате       | Дата    |
 | siteUrl                 | String  |
-| ownerDisplayName        | String  |
+| Овнердисплайнаме        | String  |
 | isDeleted               | Boolean |
-| lastActivityDate        | Date    |
-| fileCount               | Int64   |
-| activeFileCount         | Int64   |
-| storageUsedInBytes      | Int64   |
-| storageAllocatedInBytes | Int64   |
-| reportPeriod            | String  |
+| Ластактивитидате        | Дата    |
+| Филекаунт               | Int64   |
+| Активефилекаунт         | Int64   |
+| Сторажеусединбитес      | Int64   |
+| Сторажеаллокатединбитес | Int64   |
+| Репортпериод            | String  |
 
 ## <a name="json-representation"></a>Представление JSON
 

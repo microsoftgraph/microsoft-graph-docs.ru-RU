@@ -1,15 +1,15 @@
 ---
 title: 'conversationThread: reply'
-description: 'Ответ на поток во время групповой беседы и добавьте новую запись. Можно указать родительский беседы '
+description: 'Ответ на цепочку в беседе группы и добавление в нее новой записи. Вы можете указать родительскую беседу. '
 author: dkershaw10
 localization_priority: Normal
 ms.prod: groups
 ms.openlocfilehash: c4cbe8e1339d164f399152854d678c0179940c83
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27987750"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564220"
 ---
 # <a name="conversationthread-reply"></a>conversationThread: reply
 
@@ -36,7 +36,7 @@ POST /groups/{id}/conversations/{id}/threads/{id}/reply
 | Авторизация  | Bearer {токен}. Обязательный.  |
 | Content-Type  | application/json. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.
 
 | Параметр    | Тип   |Описание|
@@ -70,7 +70,7 @@ Content-length: 1131
 }
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",

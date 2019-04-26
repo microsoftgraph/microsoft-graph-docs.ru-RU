@@ -5,11 +5,11 @@ author: mmast-msft
 localization_priority: Normal
 ms.prod: education
 ms.openlocfilehash: 5b9f17cf82c6839a95f1fd81405aa675e0f4d6ba
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27943202"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562708"
 ---
 # <a name="educationroot-resource-type"></a>Тип ресурса educationRoot
 
@@ -30,10 +30,10 @@ ms.locfileid: "27943202"
 Нет
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение NULL.|
-|me|[educationUser](educationuser.md)| Только для чтения. Допускается значение NULL.|
+|classes|Коллекция [educationClass](educationclass.md)| Только для чтения. Допускается значение null.|
+|me|[educationUser](educationuser.md)| Только для чтения. Допускается значение null.|
 |schools|Коллекция [educationSchool](educationschool.md)| Только для чтения. Допускается значение NULL.|
 |users|Коллекция [educationUser](educationuser.md)| Только для чтения. Допускается значение null.|
 

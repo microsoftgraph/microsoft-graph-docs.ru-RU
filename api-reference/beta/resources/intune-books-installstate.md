@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 25b731f79ed78b7eb4f52a38eaa53a5b49e3df80
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31798707"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558407"
 ---
 # <a name="installstate-enum-type"></a>тип перечисления Инсталлстате
 
@@ -23,11 +23,11 @@ ms.locfileid: "31798707"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Нотаппликабле|нуль|НеПрименимо.|
-|устанавлива|1,1|Устанавлива.|
-|сбоев|2|Сбоев.|
-|Нотинсталлед|4|Не установлено.|
-|Унинсталлфаилед|SP4|Не удалось выполнить удаление.|
-|unknown|17:00|Найден.|
+|устанавлива|1 |Устанавлива.|
+|сбоев|2 |Сбоев.|
+|Нотинсталлед|3 |Не установлено.|
+|Унинсталлфаилед|4 |Не удалось выполнить удаление.|
+|unknown|5 |Найден.|
 
 
 

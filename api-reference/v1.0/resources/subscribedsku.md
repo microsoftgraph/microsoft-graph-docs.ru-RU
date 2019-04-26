@@ -5,17 +5,17 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: e9e61fba199d6d3e509700fe61e75bde240c7f16
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27937441"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563723"
 ---
 # <a name="subscribedsku-resource-type"></a>Тип ресурса subscribedSku
 
 Содержит сведения о SKU службы, на которую компания подписана.
 
-В подписанных SKU поддерживается только операция чтения. Создание, обновление и удаление не поддерживаются. Выражения фильтра запроса не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
+На подписанных SKU поддерживаются только операции чтения; Создание, обновление и удаление не поддерживаются. Выражения фильтра запросов не поддерживаются. Наследуется от [directoryObject](directoryobject.md).
 
 ## <a name="methods"></a>Методы
 | Метод           | Возвращаемый тип    |Описание|
@@ -26,14 +26,14 @@ ms.locfileid: "27937441"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|appliesTo|String| Например, User или Company. |
-|capabilityStatus|Строка| Например, Enabled. |
+|Тег|String| Например, User или Company. |
+|Капабилитистатус|String| Пример: "Enabled". |
 |consumedUnits|Int32| Количество лицензий, которые были назначены. |
-|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Ключ, значение NULL не допускается. |
-|prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
-|servicePlans|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Значение NULL не допускается |
+|id|String| Уникальный идентификатор объекта sku, подписка на который выполнена. Key, не допускающая значение null. |
+|Препаидунитс|[licenseUnitsDetail](licenseunitsdetail.md)| Сведения о количестве и состоянии предварительно оплаченных лицензий. |
+|Сервицепланс|Коллекция [servicePlanInfo](serviceplaninfo.md)| Сведения о планах обслуживания, доступных в отношении SKU. Не допускает значение null |
 |skuId|Guid| Уникальный идентификатор (GUID) для SKU службы. |
-|skuPartNumber|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. |
+|Скупартнумбер|String| Артикул SKU, например: AAD_PREMIUM или RMSBASIC. |
 
 ## <a name="relationships"></a>Отношения
 Нет

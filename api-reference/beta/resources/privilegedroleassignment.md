@@ -1,47 +1,47 @@
 ---
-title: Тип ресурса privilegedRoleAssignment
-description: 'Представляет назначение привилегированной ролей для определенного пользователя. '
+title: Тип ресурса Привилежедролеассигнмент
+description: 'Представляет назначение привилегированной роли для определенного пользователя. '
 localization_priority: Normal
 ms.openlocfilehash: 479b6d46dc479134fd0abb46b1a9ffe478611a82
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29515120"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563426"
 ---
-# <a name="privilegedroleassignment-resource-type"></a>Тип ресурса privilegedRoleAssignment
+# <a name="privilegedroleassignment-resource-type"></a>Тип ресурса Привилежедролеассигнмент
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет назначение привилегированной ролей для определенного пользователя. 
+Представляет назначение привилегированной роли для определенного пользователя. 
 
 
 ## <a name="methods"></a>Методы
 
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
-|[Список privilegedRoleAssignment коллекции](../api/privilegedroleassignment-list.md) | [privilegedRoleAssignment](privilegedroleassignment.md) коллекции|Получите коллекцию объектов privilegedRoleAssignment.|
-|[Получение privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Чтение свойства и связи объекта privilegedRoleAssignment.|
-|[Создание назначения](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Создание нового назначения путем учета к коллекции назначений.|
-|[Delete](../api/privilegedroleassignment-delete.md) | Нет |Удалите объект privilegedRoleAssignment. |
-|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Сделайте как постоянное назначение ролей.|
-|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Сделайте назначения ролей как подходящими.|
-|[My](../api/privilegedroleassignment-my.md)|[privilegedRoleAssignment](privilegedroleassignment.md) коллекции|Получение назначения привилегированной роли текущего пользователя.|
+|[Коллекция Привилежедролеассигнмент списка](../api/privilegedroleassignment-list.md) | Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение коллекции объектов Привилежедролеассигнмент.|
+|[Получение privilegedRoleAssignment](../api/privilegedroleassignment-get.md) | [privilegedRoleAssignment](privilegedroleassignment.md) |Чтение свойств и связей объекта Привилежедролеассигнмент.|
+|[Создание задания](../api/privilegedroleassignment-post-privilegedroleassignments.md) |[privilegedRoleAssignment](privilegedroleassignment.md)| Создайте новое назначение путем публикации в коллекции назначений.|
+|[Удаление](../api/privilegedroleassignment-delete.md) | Нет |Удаление объекта privilegedRoleAssignment. |
+|[makePermanent](../api/privilegedroleassignment-makepermanent.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как бессрочного.|
+|[makeEligible](../api/privilegedroleassignment-makeeligible.md)|[privilegedRoleAssignment](privilegedroleassignment.md)|Выполнение назначения ролей как соответствующего требованиям.|
+|[my](../api/privilegedroleassignment-my.md)|Коллекция [privilegedRoleAssignment](privilegedroleassignment.md)|Получение привилегированных назначений ролей текущего пользователя.|
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|expirationDateTime|dateTimeOffset|Даты-времени UTC при истечет назначения временные привилегированной роли. Для назначения постоянной роли значение null.|
-|id|string| Уникальный идентификатор для назначения привилегированной роли. Только для чтения. Это в формате «userId_roleId», где идентификатор пользователя — это строка идентификатора GUID для Azure AD идентификатор пользователя, а roleId — string GUID для идентификатора роль Azure администратора.|
-|isElevated|boolean|**значение true,** если активирован назначения ролей. **значение false,** Если назначения ролей отключена.|
-|resultMessage|string|Установка службы сообщения результата.|
-|roleId|string|идентификатор роли В строковом формате GUID.|
-|userId|string|Идентификатор пользователя. В строковом формате GUID.|
+|expirationDateTime|dateTimeOffset|Дата и время в формате UTC, когда истечет срок действия назначения роли Temporary privileged. Для назначения постоянной роли значение равно null.|
+|id|string| Уникальный идентификатор для назначения привилегированной роли. Только для чтения. Он указан в формате "Усерид_ролеид", где userId — это строка GUID для идентификатора пользователя Azure AD, а roleId — строка GUID для идентификатора роли администратора Azure.|
+|Повышенный уровень|boolean|**значение true** , если назначение роли активировано. **значение false** , если назначение роли отключено.|
+|Ресултмессаже|string|Результирующее сообщение, заданное службой.|
+|roleId|string|Идентификатор роли. В формате строки GUID.|
+|userId|string|Идентификатор пользователя. В формате строки GUID.|
 
-## <a name="relationships"></a>Отношения
-| Связь | Тип   |Описание|
+## <a name="relationships"></a>Связи
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|roleInfo|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null. Сведения о связанных ролей.|
+|Ролеинфо|[privilegedRole](privilegedrole.md)| Только для чтения. Допускается значение null. Сведения о связанной роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 

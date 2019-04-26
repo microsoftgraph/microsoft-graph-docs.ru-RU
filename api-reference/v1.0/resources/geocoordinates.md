@@ -5,11 +5,11 @@ ms.date: 09/10/2017
 title: GeoCoordinates
 localization_priority: Normal
 ms.openlocfilehash: cafd9d72e6c7959b32672744959393ae9478c5b1
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30481960"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558078"
 ---
 # <a name="geocoordinates-resource-type"></a>Тип ресурса GeoCoordinates
 
@@ -17,7 +17,7 @@ ms.locfileid: "30481960"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже этот ресурс представлен в формате JSON.
+Ниже показано представление JSON ресурса.
 
 <!-- {
   "blockType": "resource",
@@ -40,7 +40,7 @@ ms.locfileid: "30481960"
 | Свойство  | Тип   | Описание
 |:----------|:-------|:--------------------------------------------------------
 | altitude  | Double | Необязательный. Высота элемента над уровнем моря (в футах). Только для чтения.
-| latitude  | Double | Необязательный. Широта элемента (в десятичной системе). Только для чтения.
+| latitude  | Двойное | Необязательный. Широта элемента (в десятичной системе). Только для чтения.
 | longitude | Double | Необязательный. Широта элемента (в десятичном виде). Только для чтения.
 
 ## <a name="remarks"></a>Заметки

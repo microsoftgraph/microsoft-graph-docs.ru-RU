@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 00d329baea829fa8fb7664895382a377f53461ab
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30257038"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561204"
 ---
 # <a name="windowsinformationprotectionapp-resource-type"></a>Тип ресурса windowsInformationProtectionApp
 
@@ -20,13 +20,13 @@ ms.locfileid: "30257038"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|displayName|String|Отображаемое имя приложения.|
-|description|Строка|Описание приложения.|
+|displayName|Строка|Отображаемое имя приложения.|
+|description|String|Описание приложения.|
 |publisherName|String|Имя издателя|
 |productName|String|Название продукта.|
 |denied|Boolean|Если задано значение true, то приложению отказано в защите или исключении.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

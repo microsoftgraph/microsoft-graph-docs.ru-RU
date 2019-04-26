@@ -3,11 +3,11 @@ title: Тип ресурса Фрибусеррор
 description: Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 localization_priority: Normal
 ms.openlocfilehash: a08fe8278644ab81f2c1fbe1c7d1530cab27d91b
-ms.sourcegitcommit: a17ad12b05fbad86fc21ea4384c36e3b14e543c3
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926620"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32558092"
 ---
 # <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
 

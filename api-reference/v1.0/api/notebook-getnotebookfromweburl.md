@@ -1,27 +1,27 @@
 ---
-title: 'записная книжка: getNotebookFromWebUrl'
-description: Извлечение свойств и связи объекта записной книжки, с помощью его URL-адрес.
+title: 'Записная книжка: Жетнотебукфромвебурл'
+description: Получение свойств и связей объекта записной книжки с помощью URL-пути.
 author: jewan-microsoft
 localization_priority: Normal
 ms.prod: onenote
 ms.openlocfilehash: 3d14edf5a8992f9f4386e4b50aa74d54986b62f1
-ms.sourcegitcommit: bdbc68ed8eaf43386d2cdf7b79e64ebbe1e860c0
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29982064"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562204"
 ---
-# <a name="notebook-getnotebookfromweburl"></a>записная книжка: getNotebookFromWebUrl
+# <a name="notebook-getnotebookfromweburl"></a>Записная книжка: Жетнотебукфромвебурл
 
-Извлечение свойств и связи объекта [записной книжки](../resources/notebook.md) с помощью его URL-адрес.
+Получение свойств и связей объекта записной [книжки](../resources/notebook.md) с помощью URL-пути.
 
-Расположение может быть записных книжек пользователя в Office 365, группа записных книжек или записных книжек размещенного сайта группы SharePoint на Office 365.
+Местоположение может представлять собой записные книжки для пользователей в Office 365, групповые записные книжки или записные книжки группы, размещаемые в SharePoint, в Office 365.
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Notes.Create, Notes.Read, Notes.ReadWrite, Notes.Read.All, Notes.ReadWrite.All    |
+|Делегированные (рабочая или учебная учетная запись) | Notes. Create, Notes. Read, Notes. ReadWrite, Notes. Read. ALL, Notes. ReadWrite. ALL    |
 |Для приложений | Notes.Read.All, Notes.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
@@ -39,15 +39,15 @@ POST /sites/{id}/onenote/notebooks/GetNotebookFromWebUrl
 | Accept | string | `application/json` |
 
 ## <a name="request-body"></a>Текст запроса
-В тексте запроса укажите JSON, представляющую полный путь URL-адрес к записной книжки, которую требуется получить.
+В тексте запроса добавьте представление в формате JSON полного URL-пути к записной книжке, которую необходимо получить.
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-| `webUrl`     |`String`     | Путь к URL-адрес записной книжки для извлечения. Он также может содержать «onenote:» префикс.|
+| `webUrl`     |`String`     | Путь URL-адреса извлекаемой записной книжки. Он также может содержать префикс "OneNote:".|
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
-При успешном выполнении этот метод возвращает код отклика `200 OK` и объект [notebook](../resources/notebook.md) в теле отклика.
+В случае успешного выполнения этот метод возвращает `200 OK` код отклика и объект [Notebook](../resources/notebook.md) в теле отклика.
 ## <a name="example"></a>Пример
 ##### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -61,7 +61,7 @@ Content-type: application/json
 
 {"webUrl":"webUrl value"}
 ```
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 Ниже приведен пример отклика. 
 
 >**Примечание.** Представленный здесь объект отклика может быть сокращен для удобочитаемости. При фактическом вызове будут возвращены все свойства.

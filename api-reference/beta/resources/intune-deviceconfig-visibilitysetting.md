@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: b3dbca7dedfb1bebb114334f6cb5b62fd80f9a2a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31786051"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561966"
 ---
 # <a name="visibilitysetting-enum-type"></a>тип перечисления Висибилитисеттинг
 
@@ -23,8 +23,8 @@ ms.locfileid: "31786051"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |notConfigured|нуль|Не настроен.|
-|скрытых|1,1|Скрытых.|
-|отобразит|2|Отобразит.|
+|скрытых|1 |Скрытых.|
+|отобразит|2 |Отобразит.|
 
 
 

@@ -1,23 +1,23 @@
 ---
-title: Тип ресурса patchContentCommand
+title: Тип ресурса Патчконтенткомманд
 description: Изменения, которые необходимо внести на страницу OneNote в запросе PATCH.
 localization_priority: Normal
 ms.openlocfilehash: d0d8f320d22a8b3466ddd53deee5bcb7955ff3d1
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523885"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568481"
 ---
-# <a name="patchcontentcommand-resource-type"></a>Тип ресурса patchContentCommand
+# <a name="patchcontentcommand-resource-type"></a>Тип ресурса Патчконтенткомманд
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Изменения, которые необходимо внести на страницу OneNote в запросе PATCH.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
-Ниже показано представление ресурса в формате JSON, которое отправляется в теле запроса [PATCH pages/{id}`](../api/page-update.md). 
+Ниже показано представление ресурса в формате JSON, которое отправляется в теле запроса [Patch Pages/{ID} '](../api/page-update.md) . 
 
 <!-- {
   "blockType": "resource",
@@ -40,10 +40,10 @@ ms.locfileid: "29523885"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|action|String|Действие, которое необходимо выполнить над целевым элементом. Возможные значения: `replace`, `append`, `delete`, `insert` или `prepend`.|
-|content|String|Строка правильно оформленного HTML-кода, который необходимо добавить на страницу, а также двоичные данные любого изображения или файла. Если контент содержит двоичные данные, необходимо отправить запрос с использованием типа контента `multipart/form-data` с частью Commands. |
-|position|String|Расположение относительно целевого элемента, куда необходимо добавить указанный контент. Возможные значения: `after` (используется по умолчанию) или `before`.|
-|target|String|Элемент для обновления. Значение этого свойства должно представлять собой `#<data-id>`, созданный идентификатор `<id>` элемента либо ключевое слово `body` или `title`.|
+|action|String|Действие, которое необходимо выполнить для целевого элемента. Возможные значения: `replace`, `append`, `delete`, `insert` и `prepend`.|
+|content|String|Строка правильно оформленного HTML-кода, который нужно добавить на страницу, а также двоичные данные изображения или файла. Если содержимое содержит двоичные данные, необходимо отправить запрос, используя тип `multipart/form-data` контента с частью "Commands". |
+|position|String|Место для добавления предоставленного контента относительно целевого элемента. Возможные значения: `after` (по умолчанию) `before`или.|
+|target|String|Обновляемый элемент. Должен быть `#<data-id>` либо сгенерированным `<id>` элементом, либо ключевым словом `body` or. `title`|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

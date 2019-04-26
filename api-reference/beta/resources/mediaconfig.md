@@ -1,27 +1,27 @@
 ---
-title: Тип ресурса mediaConfig
-description: Конфигурация мультимедиа, используемый для подключения к звонку.
+title: Тип ресурса Медиаконфиг
+description: Конфигурация мультимедиа, используемая для подключения к вызову.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: e4f6e940cd319d10cd3f03e3c94d0473164beb29
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642620"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562554"
 ---
-# <a name="mediaconfig-resource-type"></a>Тип ресурса mediaConfig
+# <a name="mediaconfig-resource-type"></a>Тип ресурса Медиаконфиг
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Конфигурация мультимедиа, используемый для подключения к звонку.
+Конфигурация мультимедиа, используемая для подключения к вызову.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство       | Тип    | Описание|
 |:---------------|:--------|:----------|
-| removeFromDefaultAudioGroup | Boolean |  |
+| Ремовефромдефаултаудиограуп | Boolean |  |
 
 ## <a name="json-representation"></a>Представление JSON
 

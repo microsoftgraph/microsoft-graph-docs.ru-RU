@@ -2,14 +2,14 @@
 author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/10/2017
-title: Квота
+title: Назначаем
 localization_priority: Normal
 ms.openlocfilehash: 7cafff3162c7cdc4435df1cde522b42998398693
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30480308"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563376"
 ---
 # <a name="quota-resource-type"></a>Тип ресурса Quota
 

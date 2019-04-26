@@ -4,11 +4,11 @@ description: 'Пакетная обработка JSON позволяет опт
 author: piotrci
 localization_priority: Priority
 ms.openlocfilehash: f36cc1c8e8ccc016078eab52c4c7f3874892d000
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27885185"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32560900"
 ---
 # <a name="combine-multiple-requests-in-one-http-call-using-json-batching"></a>Объединение нескольких запросов в один вызов HTTP с помощью пакетной обработки JSON
 

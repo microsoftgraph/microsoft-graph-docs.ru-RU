@@ -1,30 +1,30 @@
 ---
-title: Тип ресурса participantMixerLevel
-description: Конфигурация микшер уровни для заданного звука участников
+title: Тип ресурса ПартиЦипантмиксерлевел
+description: Настройка уровней микшера для данного участника аудио
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 14804e02766e375568fac03cb97d2eaf76142353
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29643834"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568626"
 ---
-# <a name="participantmixerlevel-resource-type"></a>Тип ресурса participantMixerLevel
+# <a name="participantmixerlevel-resource-type"></a>Тип ресурса ПартиЦипантмиксерлевел
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Конфигурация микшер уровни для заданного звука участников
+Настройка уровней микшера для данного участника аудио
 
 ## <a name="properties"></a>Свойства
 
 | Свойство               | Тип                                                      | Описание                                                                                         |
 | :--------------------- | :-------------------------------------------------------- | :---------------------------------------------------------------------------------------------------|
-| Уклонение от                | [audioDuckingConfiguration](audioduckingconfiguration.md) | Конфигурация (синхронизацию и) из других источников для этой partipant пользовательский набор Уклонение от.       |
-| exclusiveMode          | boolean                                                   | Является ли источники без явного источника уровня необходимо удалить из набора.                       |
-| Участник            | String                                                    | Участник, для которого настраивается микшера.                                             |
-| sourceLevels           | [audioSourceLevel](audiosourcelevel.md) коллекции        | Конфигурации уровня для других источников.                                                              |
+| дуккинг                | [Аудиодуккингконфигуратион](audioduckingconfiguration.md) | Конфигурация дуккинг (фасинг in и out) других источников для этого партипант настраиваемого набора.       |
+| Ексклусивемоде          | boolean                                                   | Следует ли удалять источники без явного исходного уровня из набора.                       |
+| абонент            | String                                                    | Участник, для которого настраивается микшер.                                             |
+| Саурцелевелс           | Коллекция [аудиосаурцелевел](audiosourcelevel.md)        | Настройка уровня для других источников.                                                              |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -46,7 +46,7 @@ ms.locfileid: "29643834"
 }
 ```
 
-## <a name="example---mixer-level"></a>Пример — уровень микшер
+## <a name="example---mixer-level"></a>Пример — уровень микшера
 
 <!-- {
   "blockType": "example",

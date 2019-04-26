@@ -1,21 +1,21 @@
 ---
-title: Тип ресурса sectionLinks
+title: Тип ресурса Сектионлинкс
 description: Ссылки для открытия раздела OneNote.
 localization_priority: Normal
 ms.openlocfilehash: a5e2f4800472e8cedc495e6de1c17a6586710e87
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29519915"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562878"
 ---
-# <a name="sectionlinks-resource-type"></a>Тип ресурса sectionLinks
+# <a name="sectionlinks-resource-type"></a>Тип ресурса Сектионлинкс
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Ссылки для открытия раздела OneNote.
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -37,7 +37,7 @@ ms.locfileid: "29519915"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|oneNoteClientUrl|[externalLink](externallink.md)|Открывает раздел в собственном клиенте OneNote (если он установлен).|
+|oneNoteClientUrl|[externalLink](externallink.md)|Открывает раздел в собственном клиенте OneNote, если он установлен.|
 |oneNoteWebUrl|[externalLink](externallink.md)|Открывает раздел в OneNote Online.|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

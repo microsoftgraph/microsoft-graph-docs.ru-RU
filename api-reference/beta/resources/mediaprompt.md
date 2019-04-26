@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса mediaPrompt
-description: Тип mediaPrompt.
+title: Тип ресурса Медиапромпт
+description: Тип Медиапромпт.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: b87af39d6d6ac4879aba44573b920a43d4f92145
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29508533"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562597"
 ---
-# <a name="mediaprompt-resource-type"></a>Тип ресурса mediaPrompt
+# <a name="mediaprompt-resource-type"></a>Тип ресурса Медиапромпт
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Тип mediaPrompt.
+Тип Медиапромпт.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство    | Тип                      | Описание                                                                     |
 | :---------- | :------------------------ | :------------------------------------------------------------------------------ |
-| Loop        | Int32                     | Счетчик цикла. значение 0 указывает цикл бесконечно. Значение по умолчанию — `1`. |
-| mediaInfo   | [mediaInfo](mediainfo.md) | Сведения о мультимедиа                                                           |
+| CNAME        | Int32                     | Число циклов. значение 0 указывает, что цикл должен быть бесконечным. Значение по умолчанию — `1`. |
+| Медиаинфо   | [Медиаинфо](mediainfo.md) | Сведения о мультимедиа                                                           |
 
 ## <a name="json-representation"></a>Представление JSON
 

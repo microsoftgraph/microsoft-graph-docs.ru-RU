@@ -5,11 +5,11 @@ author: lleonard-msft
 localization_priority: Normal
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: f138be1632c72f8c31eb08fcdaefc50e7affb3e5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27991533"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562456"
 ---
 # <a name="add-directory-role-member"></a>Добавление участника роли каталога
 
@@ -33,8 +33,8 @@ POST /directoryRoles/{id}/members/$ref
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json  |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json  |
 
 ## <a name="request-body"></a>Текст запроса
 Предоставьте в тексте запроса описание добавляемого объекта [directoryObject](../resources/directoryobject.md) или [user](../resources/user.md) в формате JSON.
@@ -59,7 +59,7 @@ Content-type: application/json
 }
 ```
 
-##### <a name="response"></a>Отклик
+##### <a name="response"></a>Ответ
 Примечание. Представленный здесь объект отклика может быть усечен для краткости. 
 <!-- {
   "blockType": "response",

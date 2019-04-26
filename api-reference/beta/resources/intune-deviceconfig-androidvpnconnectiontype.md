@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 584f2d7ca14c05c87542c500b16af74f4f96b129
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31778924"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561994"
 ---
 # <a name="androidvpnconnectiontype-enum-type"></a>тип перечисления Androidvpnconnectiontype.
 
@@ -23,11 +23,11 @@ ms.locfileid: "31778924"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Цискоаниконнект|нуль|Cisco Аниконнект.|
-|Пулсесекуре|1,1|Безопасный импульс.|
-|f5EdgeClient|2|ПоГраничный клиент F5.|
-|Деллсоникваллмобилеконнект|4|Мобильное подключение Dell Сониквалл.|
-|Чеккпоинткапсулевпн|SP4|Проверка поКапсулы VPN.|
-|клиентов|17:00|Клиентов|
+|Пулсесекуре|1 |Безопасный импульс.|
+|f5EdgeClient|2 |ПоГраничный клиент F5.|
+|Деллсоникваллмобилеконнект|3 |Мобильное подключение Dell Сониквалл.|
+|Чеккпоинткапсулевпн|4 |Проверка поКапсулы VPN.|
+|клиентов|5 |Клиентов|
 
 
 

@@ -3,11 +3,11 @@ title: Тип ресурса signIn
 description: 'Этот ресурс представляет сведения о действиях входа пользователя или приложения в каталоге. '
 localization_priority: Priority
 ms.openlocfilehash: a2ccb84daee642d207919217aa2857745846c769
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29640968"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557974"
 ---
 # <a name="signin-resource-type"></a>Тип ресурса signIn
 Этот ресурс представляет сведения о действиях входа пользователя или приложения в каталоге. 

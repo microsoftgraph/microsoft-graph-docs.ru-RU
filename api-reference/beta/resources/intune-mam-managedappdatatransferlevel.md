@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f5fdf418dbd3b2b959dbd23de6467b663491d89a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31779568"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563828"
 ---
 # <a name="managedappdatatransferlevel-enum-type"></a>тип перечисления Манажедаппдататрансферлевел
 
@@ -23,8 +23,8 @@ ms.locfileid: "31779568"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |Аллаппс|нуль|Все приложения.|
-|managedApps|1,1|Управляемые приложения.|
-|нет|2|Нет приложений.|
+|managedApps|1 |Управляемые приложения.|
+|Нет|2 |Нет приложений.|
 
 
 

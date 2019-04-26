@@ -3,11 +3,11 @@ title: Тип ресурса recurrencePattern
 description: Описывает частоту повторения события.
 localization_priority: Normal
 ms.openlocfilehash: 4798ce7fc33fd6dec7aec1b8c333ae66c917e373
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29512264"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563046"
 ---
 # <a name="recurrencepattern-resource-type"></a>Тип ресурса recurrencePattern
 
@@ -42,7 +42,7 @@ ms.locfileid: "29512264"
 |month|Int32|Месяц, в который происходит событие.  Это число от 1 до 12.|
 |type|String|Тип расписания повторения: `daily`, `weekly`, `absoluteMonthly`, `relativeMonthly`, `absoluteYearly`, `relativeYearly`. Обязательное.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

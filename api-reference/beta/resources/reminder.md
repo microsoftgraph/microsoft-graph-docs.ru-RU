@@ -1,33 +1,31 @@
 ---
 title: Тип ресурса reminder
-description: Напоминание для события в календаре пользователя.
+description: Напоминание о событии в календаре пользователя.
 localization_priority: Normal
 ms.openlocfilehash: 88d9cb4f30f60819a606b3b1f3573d16860d9a00
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29521035"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563167"
 ---
 # <a name="reminder-resource-type"></a>Тип ресурса reminder
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
-Напоминание для [события](event.md) в [Календарь](calendar.md)пользователя.
+Напоминание о [событии](event.md) в календаре [](calendar.md)пользователя.
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |changeKey|String|Указывает версию напоминания. При каждом изменении напоминания также меняется значение **changeKey**. Благодаря этому Exchange может применять изменения к правильной версии объекта.|
-|eventEndTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
-|eventId|String|Уникальный идентификатор события. Только для чтения.|
-|eventLocation|[Location](location.md)|Место проведения события.|
-|eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
-|eventSubject|String|Текст в строке темы события.|
-|eventWebLink|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
-|reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, заданные для упоминания.|
+|Евентендтиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс завершения события.|
+|Диапазоне|String|Уникальный идентификатор события. Только для чтения.|
+|Евентлокатион|[Location](location.md)|Место проведения события.|
+|Евентстарттиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс начала события.|
+|Евентсубжект|String|Текст в строке темы сообщения о событии.|
+|Евентвеблинк|String|URL-адрес для открытия события в Outlook в Интернете.<br/><br/>Событие откроется в браузере, если вы вошли в свой почтовый ящик с помощью Outlook в Интернете. Если вход с помощью браузера еще не выполнен, вам будет предложено войти.<br/><br/>Доступ к этому URL-адресу можно получить из объекта iFrame.|
+|Реминдерфиретиме|[DateTimeTimeZone](datetimetimezone.md)|Дата, время и часовой пояс, заданные для упоминания.|
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -55,15 +53,10 @@ ms.locfileid: "29521035"
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!--
-{
+<!-- {
   "type": "#page.annotation",
   "description": "reminder resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/reminder.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->
+  "tocPath": ""
+}-->

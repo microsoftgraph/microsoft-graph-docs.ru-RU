@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 7acae28253dc07a64fd9a86d538bdfbbf70aa63a
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31781661"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562337"
 ---
 # <a name="appledevicefeaturesconfigurationbase-resource-type"></a>Тип ресурса appleDeviceFeaturesConfigurationBase
 
@@ -25,8 +25,8 @@ ms.locfileid: "31781661"
 ## <a name="methods"></a>Методы
 |Метод|Возвращаемый тип|Описание|
 |:---|:---|:---|
-|[Перечисление объектов appleDeviceFeaturesConfigurationBase](../api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md)|Коллекция [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|Список свойств и связей объектов [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md).|
-|[Get appleDeviceFeaturesConfigurationBase](../api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md)|[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|Чтение свойств и связей объекта [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md).|
+|[Список объектов appleDeviceFeaturesConfigurationBase](../api/intune-deviceconfig-appledevicefeaturesconfigurationbase-list.md)|Коллекция [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|Список свойств и связей объектов [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md).|
+|[Получение объекта appleDeviceFeaturesConfigurationBase](../api/intune-deviceconfig-appledevicefeaturesconfigurationbase-get.md)|[appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md)|Чтение свойств и связей объекта [appleDeviceFeaturesConfigurationBase](../resources/intune-deviceconfig-appledevicefeaturesconfigurationbase.md).|
 
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|

@@ -1,17 +1,17 @@
 ---
-title: Список записей
-description: 'Получение публикаций из указанной цепочки. Можно указать родительский беседы и поток, или, '
+title: Список публикаций
+description: 'Получение публикаций из указанной цепочки. Вы можете указать родительский сеанс связи и поток, или '
 localization_priority: Normal
 author: dkershaw10
 ms.prod: groups
 ms.openlocfilehash: aa411939f9e8040b127a8821c23b557defffbaec
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27961521"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564101"
 ---
-# <a name="list-posts"></a>Список записей
+# <a name="list-posts"></a>Список публикаций
 
 Получение записей из указанного потока. Вы можете задать родительскую беседу вместе с цепочкой или только цепочку, не ссылаясь на родительскую беседу.
 
@@ -20,9 +20,9 @@ ms.locfileid: "27961521"
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Group.Read.All    |
+|Делегированные (рабочая или учебная учетная запись) | Group. ReadWrite. ALL, Group. Read. ALL    |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Для приложений | Group.ReadWrite.All, Group.Read.All |
+|Для приложений | Group. ReadWrite. ALL, Group. Read. ALL |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -38,10 +38,10 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 |:---------------|:--------|
 | Авторизация  | Bearer {токен}. Обязательный.  |
 
-## <a name="request-body"></a>Тело запроса
-Не указывайте тело запроса для этого метода.
+## <a name="request-body"></a>Текст запроса
+Не указывайте текст запроса для этого метода.
 
-## <a name="response"></a>Отклик
+## <a name="response"></a>Ответ
 
 В случае успеха этот метод возвращает код отклика `200 OK` и коллекцию объектов [Post](../resources/post.md) в тексте отклика.
 ## <a name="example"></a>Пример
@@ -55,7 +55,7 @@ GET /groups/{id}/conversations/{id}/threads/{id}/posts
 GET https://graph.microsoft.com/v1.0/groups/{id}/threads/{id}/posts
 ```
 ##### <a name="response"></a>Отклик
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

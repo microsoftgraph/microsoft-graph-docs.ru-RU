@@ -1,15 +1,15 @@
 ---
 title: Тип ресурса deviceHealthAttestationState
-description: Н/Д
+description: Пока не задокументировано.
 author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 53fa5cdafdc125fdc32ef599a625c58e3bcbe687
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30256149"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563814"
 ---
 # <a name="devicehealthattestationstate-resource-type"></a>Тип ресурса deviceHealthAttestationState
 
@@ -53,7 +53,7 @@ ms.locfileid: "30256149"
 |healthStatusMismatchInfo|String|Этот атрибут отображается, когда служба DHA обнаруживает ошибку целостности данных.|
 |healthAttestationSupportedStatus|String|Этот атрибут указывает, поддерживается ли DHA для устройства.|
 
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 Нет
 
 ## <a name="json-representation"></a>Представление JSON

@@ -5,11 +5,11 @@ localization_priority: Normal
 author: mmast-msft
 ms.prod: education
 ms.openlocfilehash: c5b145d12dd99293eef9c338ff840d5781c5ef3f
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27933990"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562715"
 ---
 # <a name="educationclass-resource-type"></a>Тип ресурса educationClass
 
@@ -35,24 +35,24 @@ ms.locfileid: "27933990"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|id| String| Уникальный идентификатор для курса.|
-|описание|String| Описание курса.|
-|displayName|String| Название курса.|
+|id| Строка| Уникальный идентификатор для курса.|
+|description|String| Описание курса.|
+|displayName|Строка| Название курса.|
 |mailNickname|String| Почтовое имя для отправки почты всем участникам, если это возможно. |
 |createdBy|[identitySet](identityset.md)| Объект, который создал курс. |
 |classCode|String| Код курса, используемый учебным заведением для идентификации курса.|
 |externalId|String| Идентификатор курса из системы синхронизации. |
 |externalName|String|Название курса в системе синхронизации.|
-|externalSource|educationExternalSource| Способ создания этого курса. Возможные значения: `sis`, `manual`, `unknownFutureValue`.|
+|externalSource|Едукатионекстерналсаурце| Способ создания этого курса. Допустимые значения: `sis`, `manual`, `unknownFutureValue`.|
 |term|[educationTerm](educationterm.md)|Срок для этого курса.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип   |Описание|
+| Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
-|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение NULL.|
+|members|Коллекция [educationUser](../resources/educationuser.md)| Все пользователи для этого курса. Допускается значение null.|
 |schools|Коллекция [educationSchool](../resources/educationschool.md)| Все учебные заведения, с которыми сопоставлен этот курс. Допускается значение NULL.|
 |teachers|Коллекция [educationUser](../resources/educationuser.md)|  Все преподаватели для этого курса. Допускается значение NULL.|
-|group|[group](../resources/group.md)| Группа каталогов, соответствующий этот класс.|
+|group|[group](../resources/group.md)| Группа каталогов, соответствующая этому классу.|
 
 ## <a name="json-representation"></a>Представление JSON
 

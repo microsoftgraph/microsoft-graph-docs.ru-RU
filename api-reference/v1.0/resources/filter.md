@@ -3,11 +3,11 @@ title: Тип ресурса Filter
 description: Управляет фильтрацией столбца таблицы.
 localization_priority: Normal
 ms.openlocfilehash: cc4b1b105c2049b36fa27cb88b41102366648fa8
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27834666"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32564318"
 ---
 # <a name="filter-resource-type"></a>Тип ресурса Filter
 
@@ -25,7 +25,7 @@ ms.locfileid: "27834666"
 
 | Имя | Тип   |Описание|
 |:---------------|:--------|:----------|
-|criteria|[WorkbookFilterCriteria](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
+|criteria|[Воркбукфилтеркритериа](filtercriteria.md)|Текущий фильтр, заданный для определенного столбца. Только для чтения.|
 
 ## <a name="json-representation"></a>Представление JSON
 

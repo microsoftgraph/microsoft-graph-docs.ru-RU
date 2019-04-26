@@ -5,11 +5,11 @@ localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
 ms.openlocfilehash: 5d127580c0a4851c5a991ccc0646007ddf1298a5
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27924918"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32562435"
 ---
 # <a name="activate-directoryrole"></a>Активация directoryRole
 
@@ -33,17 +33,17 @@ POST /directoryRoles
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Тип | Описание|
 |:---------------|:--------|:----------|
-| Authorization  | строка  | Bearer {токен}. Обязательный. |
-| Content-Type  | строка  | application/json  |
+| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Content-Type  | string  | application/json  |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
 
 В приведенной ниже таблице показаны обязательные свойства при активации роли каталога.
 
 |Параметр | Тип | Описание|
 |:---------|:---------|:---------|
-|roleTemplateId | строка | Обязательный. Идентификатор [directoryRoleTemplate](../resources/directoryroletemplate.md) на основе ролей. Это единственный параметр, который может быть указано в запросе.|
+|roleTemplateId | string | Обязательный. Идентификатор для объекта [directoryRoleTemplate](../resources/directoryroletemplate.md), который лежит в основе роли. Это единственное свойство, которое можно указать в запросе.|
 
 ## <a name="response"></a>Отклик
 
@@ -65,8 +65,8 @@ Content-type: application/json
 }
 ```
 В теле запроса укажите описание объекта [directoryRole](../resources/directoryrole.md) в формате JSON.
-##### <a name="response"></a>Отклик
-Примечание. Представленный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
+##### <a name="response"></a>Ответ
+Примечание. Показанный здесь объект отклика может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,

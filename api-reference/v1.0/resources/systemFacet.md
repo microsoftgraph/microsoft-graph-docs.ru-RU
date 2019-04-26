@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
-title: Аспект System
+title: SystemFacet
 localization_priority: Normal
 ms.openlocfilehash: 356fa44c77280223ee9ff90d9ae54ad541e8d0d6
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27804797"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563709"
 ---
 # <a name="system-facet"></a>Аспект System
 

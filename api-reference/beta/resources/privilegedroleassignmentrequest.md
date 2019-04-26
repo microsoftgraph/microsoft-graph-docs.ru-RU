@@ -1,52 +1,52 @@
 ---
-title: Тип ресурса privilegedRoleAssignmentRequest
-description: Представляет запрос для операций назначения роли управления удостоверениями Privilegd.
+title: Тип ресурса Привилежедролеассигнментрекуест
+description: Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 localization_priority: Normal
 ms.openlocfilehash: c0e0bbfa76b7ffb4e122d381d45dd4092f0843c1
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29642431"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32563361"
 ---
-# <a name="privilegedroleassignmentrequest-resource-type"></a>Тип ресурса privilegedRoleAssignmentRequest
+# <a name="privilegedroleassignmentrequest-resource-type"></a>Тип ресурса Привилежедролеассигнментрекуест
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Представляет запрос для операций назначения роли управления удостоверениями Privilegd.
+Представляет запрос для операций назначения ролей в Привилегд управления удостоверениями.
 
-`privilegedRoleAssignmentRequest`смоделировать билетов сущности, используется для управления жизненным циклом назначения ролей. Он представляет намерения/решение для пользователей и администраторов, а также обеспечивает гибкость для внедрения повторяющаяся schduling, шлюзы утверждения и т. д. по сравнению с непосредственно предоставление `POST` и `LIST` операции в том числе в `MY` и `Cancel` функции на `governanceRoleAssignment`.
+`privilegedRoleAssignmentRequest`— Это объект с моделированием билетов, используемый для управления жизненным циклом назначений ролей. Он представляет намерение/решение для пользователей и администраторов, а также обеспечивает гибкость, позволяющую включать реализацию перечисленных счдулинг, шлюзов утверждения и т. д., в отличие от прямого предоставления `POST` и `LIST` операций, а также `MY` и `Cancel` функции On `governanceRoleAssignment`.
 
 ## <a name="methods"></a>Методы
 
 | Метод       | Возвращаемый тип | Описание |
 |:-------------|:------------|:------------|
-|[List](../api/privilegedroleassignmentrequest-list.md) | [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md) коллекции|Список запросов назначения ролей.|
-|[создание](../api/privilegedroleassignmentrequest-post.md);|  [privilegedroleassignmentrequest](../resources/privilegedroleassignmentrequest.md)|Создание запроса для управления жизненным циклом существующего или нового назначения роли.|
-|[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена назначения запроса ожидающие роли.|
-|[My](../api/privilegedroleassignmentrequest-my.md)|  |Получите запрос назначения ролей для текущего requstor.|
+|[List](../api/privilegedroleassignmentrequest-list.md) | Коллекция [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Список запросов на назначение ролей.|
+|[Создание](../api/privilegedroleassignmentrequest-post.md)|  [привилежедролеассигнментрекуест](../resources/privilegedroleassignmentrequest.md)|Создание запроса на управление жизненным циклом существующего или нового назначения роли.|
+|[Отмена](../api/privilegedroleassignmentrequest-cancel.md)|  |Отмена ожидающего запроса на назначение роли.|
+|[My](../api/privilegedroleassignmentrequest-my.md)|  |Получение запроса на назначение роли для текущего рекустор.|
 
 ## <a name="properties"></a>Свойства
 
 | Свойство     | Тип        | Описание |
 |:-------------|:------------|:------------|
-|id|String| Только для чтения. Идентификатор запроса назначений ролей.|
-|assignmentState|String| Состояние назначения. Значение может быть `Eligible` подходящими назначения `Active` - если она назначена непосредственно `Active` администраторами, или активируемого на допустимость назначения для пользователей.|
-|duration|String| Длительность назначения ролей.|
-|Причина|String| Причина для назначения ролей.|
-|requestedDateTime|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|id|String| Только для чтения. Идентификатор запроса на назначение роли.|
+|Ассигнментстате|String| Состояние назначения. Значение может быть `Eligible` для правого назначения `Active` , если оно напрямую назначено `Active` администраторами или активировано в соответствии с подходящими пользователями.|
+|duration|String| Продолжительность назначения роли.|
+|причиной|String| Причина назначения роли.|
+|Рекуестеддатетиме|DateTimeOffset| Только для чтения. Время создания запроса. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |roleId|String| Идентификатор роли.|
-|расписание|[governanceSchedule](governanceschedule.md)| Объект расписание запрос назначения ролей.|
-|status|String| Состояние чтения only.The запрос назначения ролей. Значение может быть `NotStarted`,`Completed`,`RequestedApproval`,`Scheduled`,`Approved`,`ApprovalDenied`,`ApprovalAborted`,`Cancelling`,`Cancelled`,`Revoked`,`RequestExpired`.|
-|ticketNumber|String| TicketNumber назначения роли. |
-|ticketSystem|String| TicketSystem назначения роли.|
-|type|String| Представляет тип операции в назначении ролей. Значение может быть `AdminAdd`: администраторам Добавление пользователей в роли. `UserAdd`: Добавление назначений ролей пользователей.|
+|Диспетчер|[governanceSchedule](governanceschedule.md)| Объект расписания для запроса на назначение роли.|
+|status|Строка| Только для чтения. состояние запроса на назначение роли. Возможные значения `NotStarted``Completed`:,`RequestedApproval``Scheduled``Approved``Revoked``RequestExpired`,,,,,,,,,.`ApprovalDenied``ApprovalAborted``Cancelling``Cancelled`|
+|Тиккетнумбер|String| Тиккетнумбер для назначения роли. |
+|Тиккетсистем|String| Тиккетсистем для назначения роли.|
+|type|String| Представляет тип операции для назначения роли. Возможные значения `AdminAdd`: Администраторы Add Users to Roles; `UserAdd`: Пользователи добавляют назначения ролей.|
 |userId|String| Идентификатор пользователя.|
 
 ## <a name="relationships"></a>Связи
-| Связь | Тип        | Описание |
+| Отношение | Тип        | Описание |
 |:-------------|:------------|:------------|
-|roleInfo|[privilegedRole](privilegedrole.md)| Объект roleInfo запрос назначения ролей.|
+|Ролеинфо|[privilegedRole](privilegedrole.md)| Объект Ролеинфо запроса назначения роли.|
 
 ## <a name="json-representation"></a>Представление JSON
 

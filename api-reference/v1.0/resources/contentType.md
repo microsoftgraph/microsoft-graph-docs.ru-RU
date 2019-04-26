@@ -2,14 +2,14 @@
 author: daspek
 ms.author: dspektor
 ms.date: 09/12/2017
-title: contentType
+title: ContentType
 localization_priority: Normal
 ms.openlocfilehash: c7d4b3222ec64432d6a2c9921e53ce409de3f139
-ms.sourcegitcommit: d2b3ca32602ffa76cc7925d7f4d1e2258e611ea5
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "27876736"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32561357"
 ---
 # <a name="contenttype-resource-type"></a>Тип ресурса contentType
 
@@ -48,9 +48,9 @@ ms.locfileid: "27876736"
 
 | Имя свойства     | Тип                 | Описание
 |:------------------|:---------------------|:----------------------------------
-| **description**   | string               | Текст с описанием элемента.
+| **description**   | строка               | Текст с описанием элемента.
 | **group**         | string               | Имя группы, которой принадлежит этот тип контента. Позволяет упорядочить связанные типы контента.
-| **hidden**        | boolean              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
+| **hidden**        | логический              | Указывает, является ли данный тип контента скрытым в меню "Создать" в списке.
 | **id**            | string               | Уникальный идентификатор типа контента.
 | **inheritedFrom** | [itemReference][]    | Если этот тип контента унаследован от другой области (например, сайта), он будет содержать ссылку на элемент, в котором определен тип контента.
 | **name**          | string               | Имя типа контента.

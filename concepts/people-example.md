@@ -6,11 +6,11 @@ author: simonhult
 localization_priority: Priority
 ms.prod: insights
 ms.openlocfilehash: 9c1ff26acb2032a775e71cbb0caecec3331d058e
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31797146"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32557923"
 ---
 # <a name="use-the-people-api-in-microsoft-graph-to-get-information-about-the-people-most-relevant-to-you"></a>Использование API People в Microsoft Graph для получения сведений о наиболее релевантных для вас людях
 
