@@ -1,60 +1,61 @@
 ---
-title: Сообщения об ошибках API безопасности Microsoft Graph
-description: Ошибки в API-Интерфейс безопасности Microsoft Graph возвращаются с помощью стандартных код состояния HTTP 206 Частичное контента и являются через заголовок предупреждения.
+title: Ответы на ошибки API безопасности Microsoft Graph
+description: Ошибки в API безопасности Microsoft Graph возвращаются с помощью стандартного кода состояния частичного содержимого HTTP 206 и доставляются с помощью заголовка предупреждения.
 author: preetikr
 localization_priority: Normal
 ms.prod: security
 ms.openlocfilehash: 52b7c375bd3e0c6a367f1150a21bb96ef84437ff
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27921431"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32549001"
 ---
-# <a name="microsoft-graph-security-api-error-responses"></a><span data-ttu-id="c2141-103">Сообщения об ошибках API безопасности Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="c2141-103">Microsoft Graph Security API error responses</span></span>
+# <a name="microsoft-graph-security-api-error-responses"></a><span data-ttu-id="9ad21-103">Ответы на ошибки API безопасности Microsoft Graph</span><span class="sxs-lookup"><span data-stu-id="9ad21-103">Microsoft Graph Security API error responses</span></span>
 
-<span data-ttu-id="c2141-104">Ошибки в API-Интерфейс безопасности Microsoft Graph возвращаются с помощью стандартных код состояния HTTP 206 Частичное контента и являются через заголовок предупреждения.</span><span class="sxs-lookup"><span data-stu-id="c2141-104">Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header.</span></span>
+<span data-ttu-id="9ad21-104">Ошибки в API безопасности Microsoft Graph возвращаются с помощью стандартного кода состояния частичного содержимого HTTP 206 и доставляются с помощью заголовка предупреждения.</span><span class="sxs-lookup"><span data-stu-id="9ad21-104">Errors in the Microsoft Graph Security API are returned using the standard HTTP 206 Partial Content status code and are delivered via a warning header.</span></span>
 
-## <a name="errors"></a><span data-ttu-id="c2141-105">Ошибки</span><span class="sxs-lookup"><span data-stu-id="c2141-105">Errors</span></span>
+## <a name="errors"></a><span data-ttu-id="9ad21-105">Ошибки</span><span class="sxs-lookup"><span data-stu-id="9ad21-105">Errors</span></span>
 
-<span data-ttu-id="c2141-106">API-Интерфейс безопасности Microsoft Graph — федеративных служба, которая получает несколько ответов от всех поставщиков данных.</span><span class="sxs-lookup"><span data-stu-id="c2141-106">The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers.</span></span> <span data-ttu-id="c2141-107">При получении ошибки HTTP с API-Интерфейс безопасности Microsoft Graph возвращается предупреждение заголовка в следующем формате:<!-- { "blockType": "ignored" } --></span><span class="sxs-lookup"><span data-stu-id="c2141-107">When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format: <!-- { "blockType": "ignored" } --></span></span>
+<span data-ttu-id="9ad21-106">API безопасности Microsoft Graph — это Федеративная служба, которая получает несколько ответов от всех поставщиков данных.</span><span class="sxs-lookup"><span data-stu-id="9ad21-106">The Microsoft Graph Security API is a federated service that receives multiple responses from all data providers.</span></span> <span data-ttu-id="9ad21-107">При получении сообщения об ошибке HTTP с помощью API безопасности Microsoft Graph он отправляет заголовку предупреждения в следующем формате:</span><span class="sxs-lookup"><span data-stu-id="9ad21-107">When an HTTP error is received by the Microsoft Graph Security API, it will send back a warning header in the following format:</span></span>
+<!-- { "blockType": "ignored" } -->
 
 ```http
 {Vendor}/{Provider}/{StatusCode}/{LatencyInMs}
 ```
 
-<span data-ttu-id="c2141-108">Этот заголовок предупреждение только отправляется обратно клиентов при один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404.</span><span class="sxs-lookup"><span data-stu-id="c2141-108">This warning header is only sent back to clients when one of the data providers returns an error code other than 2xx or 404.</span></span> <span data-ttu-id="c2141-109">Пример:</span><span class="sxs-lookup"><span data-stu-id="c2141-109">For example:</span></span>
+<span data-ttu-id="9ad21-108">Этот заголовок предупреждения отправляется обратно только клиентам, когда один из поставщиков данных возвращает код ошибки, отличный от 2xx или 404.</span><span class="sxs-lookup"><span data-stu-id="9ad21-108">This warning header is only sent back to clients when one of the data providers returns an error code other than 2xx or 404.</span></span> <span data-ttu-id="9ad21-109">Примеры:</span><span class="sxs-lookup"><span data-stu-id="9ad21-109">For example:</span></span>
 
-- <span data-ttu-id="c2141-110">HttpStatusCode.Forbidden (403) может быть возвращено, если не предоставляется доступ к ресурсу.</span><span class="sxs-lookup"><span data-stu-id="c2141-110">HttpStatusCode.Forbidden (403) might be returned if the access to the resource is not granted.</span></span>
-- <span data-ttu-id="c2141-111">Если поставщик времени ожидания, HttpStatusCode.GatewayTimeout (504) возвращается в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="c2141-111">If a provider times out, HttpStatusCode.GatewayTimeout (504) is returned in the warning header.</span></span>
-- <span data-ttu-id="c2141-112">Если происходит ошибка внутреннего поставщика HttpStatusCode.InternalServerError (500) используется в заголовке предупреждения.</span><span class="sxs-lookup"><span data-stu-id="c2141-112">If an internal provider error happens, HttpStatusCode.InternalServerError (500) is used in the warning header.</span></span>
+- <span data-ttu-id="9ad21-110">HttpStatusCode. запрещено (403) может быть возвращено, если доступ к ресурсу не предоставляется.</span><span class="sxs-lookup"><span data-stu-id="9ad21-110">HttpStatusCode.Forbidden (403) might be returned if the access to the resource is not granted.</span></span>
+- <span data-ttu-id="9ad21-111">Если время ожидания поставщика истекло, в заголовке предупреждения возвращается HttpStatusCode. Гатевайтимеаут (504).</span><span class="sxs-lookup"><span data-stu-id="9ad21-111">If a provider times out, HttpStatusCode.GatewayTimeout (504) is returned in the warning header.</span></span>
+- <span data-ttu-id="9ad21-112">Если происходит ошибка внутреннего поставщика, в заголовке предупреждения используется HttpStatusCode. Интерналсервереррор (500).</span><span class="sxs-lookup"><span data-stu-id="9ad21-112">If an internal provider error happens, HttpStatusCode.InternalServerError (500) is used in the warning header.</span></span>
 
-<span data-ttu-id="c2141-113">Если поставщик данных возвращает 2xx или 404, он не отображается в заголовке предупреждение так как эти коды для успеха или когда данные не найдены соответственно.</span><span class="sxs-lookup"><span data-stu-id="c2141-113">If a data provider returns 2xx or 404, it’s not shown in the warning header because these codes are expected for success or when data is not found respectively.</span></span> <span data-ttu-id="c2141-114">В системе с федеративным 404 не найден ожидается как количество раз данные известно только один или несколько, но не для всех поставщиков.</span><span class="sxs-lookup"><span data-stu-id="c2141-114">In a federated system, a 404 not found is expected as many times the data is only known to one or several, but not all, providers.</span></span>
+<span data-ttu-id="9ad21-113">Если поставщик данных возвращает 2xx или 404, он не отображается в заголовке предупреждения, так как эти коды являются ожидаемыми для успешного выполнения или когда данные не были найдены соответственно.</span><span class="sxs-lookup"><span data-stu-id="9ad21-113">If a data provider returns 2xx or 404, it’s not shown in the warning header because these codes are expected for success or when data is not found respectively.</span></span> <span data-ttu-id="9ad21-114">В федеративной системе ожидается 404, но ожидается, что данные не будут найдены одному или нескольким, но не всем, поставщикам.</span><span class="sxs-lookup"><span data-stu-id="9ad21-114">In a federated system, a 404 not found is expected as many times the data is only known to one or several, but not all, providers.</span></span>
 
-## <a name="example"></a><span data-ttu-id="c2141-115">Пример</span><span class="sxs-lookup"><span data-stu-id="c2141-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9ad21-115">Пример</span><span class="sxs-lookup"><span data-stu-id="9ad21-115">Example</span></span>
 
-<span data-ttu-id="c2141-116">Пользователь запрашивает `security/alerts/{alert_id}`.</span><span class="sxs-lookup"><span data-stu-id="c2141-116">A user asks for `security/alerts/{alert_id}`.</span></span>
+<span data-ttu-id="9ad21-116">Пользователь запрашивает `security/alerts/{alert_id}`.</span><span class="sxs-lookup"><span data-stu-id="9ad21-116">A user asks for `security/alerts/{alert_id}`.</span></span>
 
     Provider 1: 404 (provider does not have a record of this alert ID)
     Provider 2: 504 (provider timed out)
     Provider 3: 200 (success)
     Provider 4: 403 (customer has not licensed this provider)
 
-<span data-ttu-id="c2141-117">Так как 404 и 200 ожидаемых условиях, предупреждение заголовка содержит следующие элементы:</span><span class="sxs-lookup"><span data-stu-id="c2141-117">Because both 404 and 200 are expected conditions, the warning header contains the following:</span></span>
+<span data-ttu-id="9ad21-117">Так как 404 и 200, ожидаемые условия, заголовок предупреждения содержит следующие сведения:</span><span class="sxs-lookup"><span data-stu-id="9ad21-117">Because both 404 and 200 are expected conditions, the warning header contains the following:</span></span>
 
 ```HTTP
 Warning : 199 - "{Vendor2}/{Provider 2}/504/10000",    (usual timeout limit is set at 10 seconds)
           199 - "{Vendor4}/{Provider 4}/403/10"       (Provider 4 rejected the request in 10 ms)
 ```
 
-> <span data-ttu-id="c2141-118">**Примечание:** Каждого заголовка HTTP — это коллекция элементов, чтобы пользователи могли предупреждение заголовок перечислить и проверить все элементы.</span><span class="sxs-lookup"><span data-stu-id="c2141-118">**Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.</span></span>
+> <span data-ttu-id="9ad21-118">**Примечание:** Каждый заголовок HTTP является коллекцией подэлементов, поэтому пользователи могут перечислить заголовок предупреждения и проверить все элементы.</span><span class="sxs-lookup"><span data-stu-id="9ad21-118">**Note:** Each HTTP header is a collection of subitems, so users can enumerate the Warning header and check all items.</span></span>
 
-## <a name="constraints"></a><span data-ttu-id="c2141-119">Ограничения</span><span class="sxs-lookup"><span data-stu-id="c2141-119">Constraints</span></span>
+## <a name="constraints"></a><span data-ttu-id="9ad21-119">Провероч</span><span class="sxs-lookup"><span data-stu-id="9ad21-119">Constraints</span></span>
 
-<span data-ttu-id="c2141-120">`$top` Параметр запроса OData для которого настроено ограничение 1000 оповещений и сочетание `$top`  +  `$skip` параметров не может превышать 6000 оповещения запросов OData.</span><span class="sxs-lookup"><span data-stu-id="c2141-120">The `$top` OData query parameter has a limit of 1000 alerts, and a combination of `$top` + `$skip` OData query parameters cannot exceed 6000 alerts.</span></span> <span data-ttu-id="c2141-121">Например `/security/alerts?$top=10&$skip=5990` возвращает `200 OK` код ответа, но `/security/alerts?$top=10&$skip=5991` возвращает `400 Bad Request` код ответа.</span><span class="sxs-lookup"><span data-stu-id="c2141-121">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>
+<span data-ttu-id="9ad21-120">параметр `$top` запроса odata имеет предел в 1000 оповещений, а сочетание `$top`  +  `$skip` параметров запроса odata не может превышать 6000 оповещений.</span><span class="sxs-lookup"><span data-stu-id="9ad21-120">The `$top` OData query parameter has a limit of 1000 alerts, and a combination of `$top` + `$skip` OData query parameters cannot exceed 6000 alerts.</span></span> <span data-ttu-id="9ad21-121">Например, `/security/alerts?$top=10&$skip=5990` возвращает код `200 OK` отклика, но `/security/alerts?$top=10&$skip=5991` возвратит код `400 Bad Request` отклика.</span><span class="sxs-lookup"><span data-stu-id="9ad21-121">For example, `/security/alerts?$top=10&$skip=5990` will return a `200 OK` response code, but `/security/alerts?$top=10&$skip=5991` will return a `400 Bad Request` response code.</span></span>
 
-<span data-ttu-id="c2141-122">Обходной предела является использование `$filter` параметр запроса OData с `eventDateTime` оповещения сущности из Microsoft Graph безопасности API, с помощью `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и замените значение даты и времени последнего предупреждения (6000th).</span><span class="sxs-lookup"><span data-stu-id="c2141-122">A work-around for this limit is to use the `$filter` OData query parameter with the `eventDateTime` of the alert entity from the Microsoft Graph Security API, using `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` and replacing the dateTime value with the last (6000th) alert.</span></span> <span data-ttu-id="c2141-123">Можно также задать диапазон для `eventDateTime`; например *alerts?$ фильтра = Дата и время **gt** 2018-11 -**11**T00:00:00.000Z & Дата и время **lt** 2018-11 -**12**T00:00:00.000Z*</span><span class="sxs-lookup"><span data-stu-id="c2141-123">You can also set a range for the `eventDateTime`; for example, *alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z*</span></span>
+<span data-ttu-id="9ad21-122">Для обхода этого ограничения необходимо использовать параметр запроса `$filter` OData с `eventDateTime` объектом Alert из API безопасности Microsoft Graph, используя `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` и заменив значение DateTime на Последнее (6000th) оповещение.</span><span class="sxs-lookup"><span data-stu-id="9ad21-122">A work-around for this limit is to use the `$filter` OData query parameter with the `eventDateTime` of the alert entity from the Microsoft Graph Security API, using `?$filter=eventDateTime gt {YYYY-MM-DDT00:00:00.000Z}` and replacing the dateTime value with the last (6000th) alert.</span></span> <span data-ttu-id="9ad21-123">Кроме того, можно задать диапазон для объекта `eventDateTime`; Например, *алертс_км_ $ Filter = евентдатетиме **gt** 2018-11 –**11**T00:00:00.000 з_амп_евентдатетиме **lt** 2018-11 –**12**T00:00:00.000 z*</span><span class="sxs-lookup"><span data-stu-id="9ad21-123">You can also set a range for the `eventDateTime`; for example, *alerts?$filter=eventDateTime **gt** 2018-11-**11**T00:00:00.000Z&eventDateTime **lt** 2018-11-**12**T00:00:00.000Z*</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="c2141-124">См. также</span><span class="sxs-lookup"><span data-stu-id="c2141-124">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9ad21-124">См. также</span><span class="sxs-lookup"><span data-stu-id="9ad21-124">See also</span></span>
 
-<span data-ttu-id="c2141-125">Если у вас возникли неполадки с авторизации, видеть [авторизации и API -Интерфейс Microsoft Graph безопасности](/graph/security-authorization).</span><span class="sxs-lookup"><span data-stu-id="c2141-125">If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).</span></span>
+<span data-ttu-id="9ad21-125">Если у вас возникли проблемы с авторизацией, обратитесь к разделу [авторизация и API безопасности Microsoft Graph](/graph/security-authorization).</span><span class="sxs-lookup"><span data-stu-id="9ad21-125">If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).</span></span>
