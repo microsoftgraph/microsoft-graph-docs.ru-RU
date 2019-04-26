@@ -1,35 +1,35 @@
 ---
-title: Тип ресурса invitationParticipantInfo
-description: '**InvitationParticipant** используется для представления набора удостоверения, связанного с приглашением беседы и предоставляет приглашение Дополнительные параметры.'
+title: Тип ресурса ИнвитатионпартиЦипантинфо
+description: '**ИнвитатионпартиЦипант** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.'
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: cb20dde1a74472695755e65dc404a6709f79c8b0
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641920"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569966"
 ---
-# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="3e06b-103">Тип ресурса invitationParticipantInfo</span><span class="sxs-lookup"><span data-stu-id="3e06b-103">invitationParticipantInfo resource type</span></span>
+# <a name="invitationparticipantinfo-resource-type"></a><span data-ttu-id="d86c1-103">Тип ресурса ИнвитатионпартиЦипантинфо</span><span class="sxs-lookup"><span data-stu-id="d86c1-103">invitationParticipantInfo resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="3e06b-104">**InvitationParticipant** используется для представления набора удостоверения, связанного с приглашением беседы и предоставляет приглашение Дополнительные параметры.</span><span class="sxs-lookup"><span data-stu-id="3e06b-104">The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.</span></span>
+<span data-ttu-id="d86c1-104">**ИнвитатионпартиЦипант** используется для представления набора удостоверений, связанных с приглашением на беседу, и предоставляет дополнительные параметры приглашения.</span><span class="sxs-lookup"><span data-stu-id="d86c1-104">The **InvitationParticipant** is used to represent a set of identities associated with a conversation invitation, and provides additional invitation parameters.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="3e06b-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="3e06b-105">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="d86c1-105">Свойства</span><span class="sxs-lookup"><span data-stu-id="d86c1-105">Properties</span></span>
 
-| <span data-ttu-id="3e06b-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="3e06b-106">Property</span></span>                           | <span data-ttu-id="3e06b-107">Тип</span><span class="sxs-lookup"><span data-stu-id="3e06b-107">Type</span></span>                          | <span data-ttu-id="3e06b-108">Описание</span><span class="sxs-lookup"><span data-stu-id="3e06b-108">Description</span></span>                                                                          |
+| <span data-ttu-id="d86c1-106">Свойство</span><span class="sxs-lookup"><span data-stu-id="d86c1-106">Property</span></span>                           | <span data-ttu-id="d86c1-107">Тип</span><span class="sxs-lookup"><span data-stu-id="d86c1-107">Type</span></span>                          | <span data-ttu-id="d86c1-108">Описание</span><span class="sxs-lookup"><span data-stu-id="d86c1-108">Description</span></span>                                                                          |
 | :--------------------------------- | :---------------------------- | :----------------------------------------------------------------------------------- |
-| <span data-ttu-id="3e06b-109">endpointType</span><span class="sxs-lookup"><span data-stu-id="3e06b-109">endpointType</span></span>                       | <span data-ttu-id="3e06b-110">String</span><span class="sxs-lookup"><span data-stu-id="3e06b-110">String</span></span>                        | <span data-ttu-id="3e06b-111">Возможные значения: `default`, `voicemail`.</span><span class="sxs-lookup"><span data-stu-id="3e06b-111">Possible values are: `default`, `voicemail`.</span></span> |
-| <span data-ttu-id="3e06b-112">identity</span><span class="sxs-lookup"><span data-stu-id="3e06b-112">identity</span></span>                           | [<span data-ttu-id="3e06b-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="3e06b-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="3e06b-114">[IdentitySet](identityset.md) , связанной с приглашением.</span><span class="sxs-lookup"><span data-stu-id="3e06b-114">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
-| <span data-ttu-id="3e06b-115">languageId</span><span class="sxs-lookup"><span data-stu-id="3e06b-115">languageId</span></span>                         | <span data-ttu-id="3e06b-116">String</span><span class="sxs-lookup"><span data-stu-id="3e06b-116">String</span></span>                        | <span data-ttu-id="3e06b-117">Строка языка и региональных параметров языка.</span><span class="sxs-lookup"><span data-stu-id="3e06b-117">The language culture string.</span></span>                                                                                     |
-| <span data-ttu-id="3e06b-118">область</span><span class="sxs-lookup"><span data-stu-id="3e06b-118">region</span></span>                             | <span data-ttu-id="3e06b-119">String</span><span class="sxs-lookup"><span data-stu-id="3e06b-119">String</span></span>                        | <span data-ttu-id="3e06b-120">Область участника.</span><span class="sxs-lookup"><span data-stu-id="3e06b-120">Region of the participant.</span></span>                                                           |
-| <span data-ttu-id="3e06b-121">replacesCallId</span><span class="sxs-lookup"><span data-stu-id="3e06b-121">replacesCallId</span></span>                     | <span data-ttu-id="3e06b-122">String</span><span class="sxs-lookup"><span data-stu-id="3e06b-122">String</span></span>                        | <span data-ttu-id="3e06b-123">Необязательный параметр.</span><span class="sxs-lookup"><span data-stu-id="3e06b-123">Optional.</span></span> <span data-ttu-id="3e06b-124">Вызов которого idenity целевой в настоящее время является частью.</span><span class="sxs-lookup"><span data-stu-id="3e06b-124">The call which the target idenity is currently a part of.</span></span> <span data-ttu-id="3e06b-125">Этот звонок будет удалена, после добавления участника.</span><span class="sxs-lookup"><span data-stu-id="3e06b-125">This call will be dropped once the participant is added.</span></span> |
+| <span data-ttu-id="d86c1-109">Ендпоинттипе</span><span class="sxs-lookup"><span data-stu-id="d86c1-109">endpointType</span></span>                       | <span data-ttu-id="d86c1-110">String</span><span class="sxs-lookup"><span data-stu-id="d86c1-110">String</span></span>                        | <span data-ttu-id="d86c1-111">Возможные значения: `default`, `voicemail`.</span><span class="sxs-lookup"><span data-stu-id="d86c1-111">Possible values are: `default`, `voicemail`.</span></span> |
+| <span data-ttu-id="d86c1-112">хищения</span><span class="sxs-lookup"><span data-stu-id="d86c1-112">identity</span></span>                           | [<span data-ttu-id="d86c1-113">identitySet</span><span class="sxs-lookup"><span data-stu-id="d86c1-113">identitySet</span></span>](identityset.md) | <span data-ttu-id="d86c1-114">[Удостоверение](identityset.md) , связанное с этим приглашением.</span><span class="sxs-lookup"><span data-stu-id="d86c1-114">The [identitySet](identityset.md) associated with this invitation.</span></span>                   |
+| <span data-ttu-id="d86c1-115">languageId</span><span class="sxs-lookup"><span data-stu-id="d86c1-115">languageId</span></span>                         | <span data-ttu-id="d86c1-116">String</span><span class="sxs-lookup"><span data-stu-id="d86c1-116">String</span></span>                        | <span data-ttu-id="d86c1-117">Строка языка и региональных параметров языка.</span><span class="sxs-lookup"><span data-stu-id="d86c1-117">The language culture string.</span></span>                                                                                     |
+| <span data-ttu-id="d86c1-118">региональных</span><span class="sxs-lookup"><span data-stu-id="d86c1-118">region</span></span>                             | <span data-ttu-id="d86c1-119">String</span><span class="sxs-lookup"><span data-stu-id="d86c1-119">String</span></span>                        | <span data-ttu-id="d86c1-120">Регион участника.</span><span class="sxs-lookup"><span data-stu-id="d86c1-120">Region of the participant.</span></span>                                                           |
+| <span data-ttu-id="d86c1-121">Реплацескаллид</span><span class="sxs-lookup"><span data-stu-id="d86c1-121">replacesCallId</span></span>                     | <span data-ttu-id="d86c1-122">String</span><span class="sxs-lookup"><span data-stu-id="d86c1-122">String</span></span>                        | <span data-ttu-id="d86c1-123">Необязательное свойство.</span><span class="sxs-lookup"><span data-stu-id="d86c1-123">Optional.</span></span> <span data-ttu-id="d86c1-124">Вызов, частью которого в данный момент является целевой иденити.</span><span class="sxs-lookup"><span data-stu-id="d86c1-124">The call which the target idenity is currently a part of.</span></span> <span data-ttu-id="d86c1-125">Этот вызов будет сброшен после добавления участника.</span><span class="sxs-lookup"><span data-stu-id="d86c1-125">This call will be dropped once the participant is added.</span></span> |
 
-## <a name="json-representation"></a><span data-ttu-id="3e06b-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="3e06b-126">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="d86c1-126">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="d86c1-126">JSON representation</span></span>
 
-<span data-ttu-id="3e06b-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="3e06b-127">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="d86c1-127">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="d86c1-127">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -57,8 +57,6 @@ ms.locfileid: "29641920"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/invitationparticipantinfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
