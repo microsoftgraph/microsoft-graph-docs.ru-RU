@@ -5,33 +5,33 @@ ms.date: 09/10/2017
 title: Поиск сайтов SharePoint по ключевому слову
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: 156093c9d3b87f0a4e44f6928b36a8aa92a4ef4d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a5594eb71fd4193756d3d07af82bbd7bbe4a7ea3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537253"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335838"
 ---
-# <a name="search-for-sites"></a><span data-ttu-id="e33d9-102">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="e33d9-102">Search for sites</span></span>
+# <a name="search-for-sites"></a><span data-ttu-id="1880d-102">Поиск сайтов</span><span class="sxs-lookup"><span data-stu-id="1880d-102">Search for sites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="e33d9-103">Выполните поиск в клиенте SharePoint для [сайтов][] , которые совпадают с предоставленными ключевыми словами.</span><span class="sxs-lookup"><span data-stu-id="e33d9-103">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
+<span data-ttu-id="1880d-103">Выполните поиск в клиенте SharePoint для [сайтов][] , которые совпадают с предоставленными ключевыми словами.</span><span class="sxs-lookup"><span data-stu-id="1880d-103">Search across a SharePoint tenant for [sites][] that match keywords provided.</span></span>
 
 [сайтов]: ../resources/site.md
 [sites]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="e33d9-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="e33d9-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="1880d-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1880d-105">Permissions</span></span>
 
-<span data-ttu-id="e33d9-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="e33d9-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="1880d-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1880d-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="e33d9-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="e33d9-108">Permission type</span></span>                        | <span data-ttu-id="e33d9-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="e33d9-109">Permissions (from least to most privileged)</span></span>
+|<span data-ttu-id="1880d-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1880d-108">Permission type</span></span>                        | <span data-ttu-id="1880d-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1880d-109">Permissions (from least to most privileged)</span></span>
 |:--------------------------------------|:-------------------------------------
-|<span data-ttu-id="e33d9-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="e33d9-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="e33d9-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e33d9-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
-|<span data-ttu-id="e33d9-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="e33d9-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="e33d9-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="e33d9-113">Not supported.</span></span>
-|<span data-ttu-id="e33d9-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="e33d9-114">Application</span></span>                            | <span data-ttu-id="e33d9-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="e33d9-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="1880d-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1880d-110">Delegated (work or school account)</span></span>     | <span data-ttu-id="1880d-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1880d-111">Sites.Read.All, Sites.ReadWrite.All</span></span>
+|<span data-ttu-id="1880d-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1880d-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1880d-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1880d-113">Not supported.</span></span>
+|<span data-ttu-id="1880d-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1880d-114">Application</span></span>                            | <span data-ttu-id="1880d-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1880d-115">Sites.Read.All, Sites.ReadWrite.All</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="e33d9-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="e33d9-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="1880d-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1880d-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "search-sites", "scopes": "service.sharepoint sites.readwrite.all" } -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "32537253"
 GET https://graph.microsoft.com/beta/sites?search={query}
 ```
 
-## <a name="response"></a><span data-ttu-id="e33d9-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="e33d9-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="1880d-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="1880d-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
@@ -68,7 +68,7 @@ Content-type: application/json
   ]
 }
 ```
-><span data-ttu-id="e33d9-118">**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="e33d9-118">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="e33d9-119">Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="e33d9-119">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
+><span data-ttu-id="1880d-118">**Примечание:** Единственное свойство, которое подходит для сортировки, — **createdDateTime**.</span><span class="sxs-lookup"><span data-stu-id="1880d-118">**Note:** The only property that works for sorting is **createdDateTime**.</span></span> <span data-ttu-id="1880d-119">Фильтр поиска — это поиск с произвольным текстом, который использует несколько свойств при получении результатов поиска.</span><span class="sxs-lookup"><span data-stu-id="1880d-119">The search filter is a free text search that uses multiple properties when retrieving the search results.</span></span>
 
 <!--
 {
@@ -77,8 +77,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/Search",
-  "suppressions": [
-    "Error: /api-reference/beta/api/site-search.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

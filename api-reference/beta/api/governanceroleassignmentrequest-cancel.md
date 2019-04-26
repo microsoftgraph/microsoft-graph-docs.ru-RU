@@ -2,59 +2,59 @@
 title: Отмена governanceRoleAssignmentRequest
 description: Отмена объекта governanceRoleAssignmentRequest.
 localization_priority: Normal
-ms.openlocfilehash: 0437051a3d2550da8a8fe3e9984214ff7c885e3a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d4573af27def33f11c4c20e11ce99a8b309581fb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32467330"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33329678"
 ---
-# <a name="cancel-governanceroleassignmentrequest"></a><span data-ttu-id="fae66-103">Отмена governanceRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="fae66-103">Cancel governanceRoleAssignmentRequest</span></span>
+# <a name="cancel-governanceroleassignmentrequest"></a><span data-ttu-id="17708-103">Отмена governanceRoleAssignmentRequest</span><span class="sxs-lookup"><span data-stu-id="17708-103">Cancel governanceRoleAssignmentRequest</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fae66-104">Отмена объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span><span class="sxs-lookup"><span data-stu-id="fae66-104">Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
+<span data-ttu-id="17708-104">Отмена объекта [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span><span class="sxs-lookup"><span data-stu-id="17708-104">Cancel a [governanceRoleAssignmentRequest](../resources/governanceroleassignmentrequest.md).</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="fae66-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fae66-105">Permissions</span></span>
-<span data-ttu-id="fae66-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="fae66-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="17708-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="17708-105">Permissions</span></span>
+<span data-ttu-id="17708-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="17708-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="fae66-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="fae66-108">Permission type</span></span>      | <span data-ttu-id="fae66-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="fae66-109">Permissions</span></span>              |
+|<span data-ttu-id="17708-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="17708-108">Permission type</span></span>      | <span data-ttu-id="17708-109">Разрешения</span><span class="sxs-lookup"><span data-stu-id="17708-109">Permissions</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="fae66-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="fae66-110">Delegated (work or school account)</span></span> | <span data-ttu-id="fae66-111">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="fae66-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
-|<span data-ttu-id="fae66-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="fae66-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="fae66-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="fae66-113">Not supported.</span></span>    |
-|<span data-ttu-id="fae66-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="fae66-114">Application</span></span> | <span data-ttu-id="fae66-115">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="fae66-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
+|<span data-ttu-id="17708-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="17708-110">Delegated (work or school account)</span></span> | <span data-ttu-id="17708-111">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="17708-111">PrivilegedAccess.ReadWrite.AzureResources</span></span>  |
+|<span data-ttu-id="17708-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="17708-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="17708-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="17708-113">Not supported.</span></span>    |
+|<span data-ttu-id="17708-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="17708-114">Application</span></span> | <span data-ttu-id="17708-115">Привилежедакцесс. ReadWrite. Азурересаурцес</span><span class="sxs-lookup"><span data-stu-id="17708-115">PrivilegedAccess.ReadWrite.AzureResources</span></span> |
 
-## <a name="optional-query-parameters"></a><span data-ttu-id="fae66-116">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="fae66-116">Optional query parameters</span></span>
-<span data-ttu-id="fae66-117">Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="fae66-117">This method does **not** support [OData Query Parameters](/graph/query-parameters).</span></span>
+## <a name="optional-query-parameters"></a><span data-ttu-id="17708-116">Необязательные параметры запросов</span><span class="sxs-lookup"><span data-stu-id="17708-116">Optional query parameters</span></span>
+<span data-ttu-id="17708-117">Этот метод **не** поддерживает [параметры запросов OData](/graph/query-parameters).</span><span class="sxs-lookup"><span data-stu-id="17708-117">This method does **not** support [OData Query Parameters](/graph/query-parameters).</span></span>
 
-### <a name="http-request"></a><span data-ttu-id="fae66-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="fae66-118">HTTP request</span></span>
+### <a name="http-request"></a><span data-ttu-id="17708-118">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="17708-118">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="fae66-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="fae66-119">Request headers</span></span>
-| <span data-ttu-id="fae66-120">Имя</span><span class="sxs-lookup"><span data-stu-id="fae66-120">Name</span></span>       | <span data-ttu-id="fae66-121">Описание</span><span class="sxs-lookup"><span data-stu-id="fae66-121">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="17708-119">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="17708-119">Request headers</span></span>
+| <span data-ttu-id="17708-120">Имя</span><span class="sxs-lookup"><span data-stu-id="17708-120">Name</span></span>       | <span data-ttu-id="17708-121">Описание</span><span class="sxs-lookup"><span data-stu-id="17708-121">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="fae66-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="fae66-122">Authorization</span></span>  | <span data-ttu-id="fae66-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="fae66-123">Bearer {code}</span></span>|
-| <span data-ttu-id="fae66-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="fae66-124">Content-type</span></span>  | <span data-ttu-id="fae66-125">application/json</span><span class="sxs-lookup"><span data-stu-id="fae66-125">application/json</span></span>|
+| <span data-ttu-id="17708-122">Авторизация</span><span class="sxs-lookup"><span data-stu-id="17708-122">Authorization</span></span>  | <span data-ttu-id="17708-123">Bearer {code}</span><span class="sxs-lookup"><span data-stu-id="17708-123">Bearer {code}</span></span>|
+| <span data-ttu-id="17708-124">Content-Type</span><span class="sxs-lookup"><span data-stu-id="17708-124">Content-type</span></span>  | <span data-ttu-id="17708-125">application/json</span><span class="sxs-lookup"><span data-stu-id="17708-125">application/json</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="fae66-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="fae66-126">Request body</span></span>
-<span data-ttu-id="fae66-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="fae66-127">Do not supply a request body for this method.</span></span>
+## <a name="request-body"></a><span data-ttu-id="17708-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="17708-126">Request body</span></span>
+<span data-ttu-id="17708-127">Не указывайте текст запроса для этого метода.</span><span class="sxs-lookup"><span data-stu-id="17708-127">Do not supply a request body for this method.</span></span>
 
-## <a name="response"></a><span data-ttu-id="fae66-128">Отклик</span><span class="sxs-lookup"><span data-stu-id="fae66-128">Response</span></span>
-<span data-ttu-id="fae66-p102">В случае успешного выполнения этот метод возвращает код отклика `204 NoContent`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="fae66-p102">If successful, this method returns `204 NoContent` response code. It does not return anything in the response body.</span></span> 
+## <a name="response"></a><span data-ttu-id="17708-128">Ответ</span><span class="sxs-lookup"><span data-stu-id="17708-128">Response</span></span>
+<span data-ttu-id="17708-p102">В случае успешного выполнения этот метод возвращает код отклика `204 NoContent`. В тексте отклика не возвращается никаких данных.</span><span class="sxs-lookup"><span data-stu-id="17708-p102">If successful, this method returns `204 NoContent` response code. It does not return anything in the response body.</span></span> 
 
-## <a name="error-codes"></a><span data-ttu-id="fae66-131">Коды ошибок</span><span class="sxs-lookup"><span data-stu-id="fae66-131">Error codes</span></span>
-<span data-ttu-id="fae66-132">Этот API соответствует стандартным кодам протокола HTTP.</span><span class="sxs-lookup"><span data-stu-id="fae66-132">This API follows the standard of HTTP codes.</span></span> <span data-ttu-id="fae66-133">Кроме того, коды настраиваемых ошибок указаны ниже.</span><span class="sxs-lookup"><span data-stu-id="fae66-133">Besides, the custom error codes are shown below.</span></span>
-|<span data-ttu-id="fae66-134">Код ошибки</span><span class="sxs-lookup"><span data-stu-id="fae66-134">Error code</span></span>     | <span data-ttu-id="fae66-135">Сообщение об ошибке</span><span class="sxs-lookup"><span data-stu-id="fae66-135">Error message</span></span>              | <span data-ttu-id="fae66-136">Подробно</span><span class="sxs-lookup"><span data-stu-id="fae66-136">Details</span></span> |
+## <a name="error-codes"></a><span data-ttu-id="17708-131">Коды ошибок</span><span class="sxs-lookup"><span data-stu-id="17708-131">Error codes</span></span>
+<span data-ttu-id="17708-132">Этот API соответствует стандартным кодам протокола HTTP.</span><span class="sxs-lookup"><span data-stu-id="17708-132">This API follows the standard of HTTP codes.</span></span> <span data-ttu-id="17708-133">Кроме того, коды настраиваемых ошибок указаны ниже.</span><span class="sxs-lookup"><span data-stu-id="17708-133">Besides, the custom error codes are shown below.</span></span>
+|<span data-ttu-id="17708-134">Код ошибки</span><span class="sxs-lookup"><span data-stu-id="17708-134">Error code</span></span>     | <span data-ttu-id="17708-135">Сообщение об ошибке</span><span class="sxs-lookup"><span data-stu-id="17708-135">Error message</span></span>              | <span data-ttu-id="17708-136">Сведения</span><span class="sxs-lookup"><span data-stu-id="17708-136">Details</span></span> |
 |:--------------------| :---------------------|:--------------------|
-| <span data-ttu-id="fae66-137">400 Бадрекуест</span><span class="sxs-lookup"><span data-stu-id="fae66-137">400 BadRequest</span></span> | <span data-ttu-id="fae66-138">Ролеассигнментрекуестнотфаунд</span><span class="sxs-lookup"><span data-stu-id="fae66-138">RoleAssignmentRequestNotFound</span></span> | <span data-ttu-id="fae66-139">GovernanceRoleAssignmentRequest не существует в системе.</span><span class="sxs-lookup"><span data-stu-id="fae66-139">The governanceRoleAssignmentRequest does not exist in system.</span></span>
-| <span data-ttu-id="fae66-140">400 Бадрекуест</span><span class="sxs-lookup"><span data-stu-id="fae66-140">400 BadRequest</span></span> | <span data-ttu-id="fae66-141">Рекуестканнотбеканцеллед</span><span class="sxs-lookup"><span data-stu-id="fae66-141">RequestCannotBeCancelled</span></span>    | <span data-ttu-id="fae66-142">Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены.</span><span class="sxs-lookup"><span data-stu-id="fae66-142">Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled.</span></span>
+| <span data-ttu-id="17708-137">400 Бадрекуест</span><span class="sxs-lookup"><span data-stu-id="17708-137">400 BadRequest</span></span> | <span data-ttu-id="17708-138">Ролеассигнментрекуестнотфаунд</span><span class="sxs-lookup"><span data-stu-id="17708-138">RoleAssignmentRequestNotFound</span></span> | <span data-ttu-id="17708-139">GovernanceRoleAssignmentRequest не существует в системе.</span><span class="sxs-lookup"><span data-stu-id="17708-139">The governanceRoleAssignmentRequest does not exist in system.</span></span>
+| <span data-ttu-id="17708-140">400 Бадрекуест</span><span class="sxs-lookup"><span data-stu-id="17708-140">400 BadRequest</span></span> | <span data-ttu-id="17708-141">Рекуестканнотбеканцеллед</span><span class="sxs-lookup"><span data-stu-id="17708-141">RequestCannotBeCancelled</span></span>    | <span data-ttu-id="17708-142">Только те запросы, которые `Granted`находятся `PendingApproval`в `PendingApprovalProvisioning` состоянии `PendingAdminDecision` , и могут быть отменены.</span><span class="sxs-lookup"><span data-stu-id="17708-142">Only requests in status of `Granted`, `PendingApproval`, `PendingApprovalProvisioning` and `PendingAdminDecision` can be cancelled.</span></span>
 
-## <a name="example"></a><span data-ttu-id="fae66-143">Пример</span><span class="sxs-lookup"><span data-stu-id="fae66-143">Example</span></span>
-##### <a name="request"></a><span data-ttu-id="fae66-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="fae66-144">Request</span></span>
-<span data-ttu-id="fae66-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="fae66-145">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="17708-143">Пример</span><span class="sxs-lookup"><span data-stu-id="17708-143">Example</span></span>
+##### <a name="request"></a><span data-ttu-id="17708-144">Запрос</span><span class="sxs-lookup"><span data-stu-id="17708-144">Request</span></span>
+<span data-ttu-id="17708-145">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="17708-145">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "cancel_governanceroleassignmentrequest"
@@ -63,7 +63,7 @@ POST /privilegedAccess/azureResources/roleAssignmentRequests/{id}/cancel
 POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignmentRequests/7c53453e-d5a4-41e0-8eb1-32d5ec8bfdee/cancel
 ```
 
-##### <a name="response"></a><span data-ttu-id="fae66-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="fae66-146">Response</span></span>
+##### <a name="response"></a><span data-ttu-id="17708-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="17708-146">Response</span></span>
 <!-- {
   "blockType": "response",
   "truncated": false,
@@ -82,8 +82,6 @@ HTTP/1.1 204 No Content
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/governanceroleassignmentrequest-cancel.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

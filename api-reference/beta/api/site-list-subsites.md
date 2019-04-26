@@ -5,33 +5,33 @@ ms.date: 09/10/2017
 title: Создание списка дочерних сайтов для сайта SharePoint
 localization_priority: Normal
 ms.prod: sharepoint
-ms.openlocfilehash: f5037373ab914dabe33f11892f90a3bcfad77d5b
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: bb88d261fa1802157a6621370af9a66eb8b2b5b5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32537246"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335915"
 ---
-# <a name="enumerate-subsites"></a><span data-ttu-id="1326e-102">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="1326e-102">Enumerate subsites</span></span>
+# <a name="enumerate-subsites"></a><span data-ttu-id="c3567-102">Перечисление дочерних сайтов</span><span class="sxs-lookup"><span data-stu-id="c3567-102">Enumerate subsites</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="1326e-103">Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="1326e-103">Get a collection of subsites defined for a [site][].</span></span>
+<span data-ttu-id="c3567-103">Вы можете получить коллекцию дочерних сайтов, определенных для [сайта][].</span><span class="sxs-lookup"><span data-stu-id="c3567-103">Get a collection of subsites defined for a [site][].</span></span>
 
 [сайта]: ../resources/site.md
 [site]: ../resources/site.md
 
-## <a name="permissions"></a><span data-ttu-id="1326e-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="1326e-105">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="c3567-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="c3567-105">Permissions</span></span>
 
-<span data-ttu-id="1326e-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="1326e-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="c3567-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="c3567-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="1326e-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="1326e-108">Permission type</span></span>      | <span data-ttu-id="1326e-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="1326e-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="c3567-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="c3567-108">Permission type</span></span>      | <span data-ttu-id="c3567-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="c3567-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="1326e-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="1326e-110">Delegated (work or school account)</span></span> | <span data-ttu-id="1326e-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1326e-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
-|<span data-ttu-id="1326e-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="1326e-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="1326e-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="1326e-113">Not supported.</span></span>    |
-|<span data-ttu-id="1326e-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="1326e-114">Application</span></span> | <span data-ttu-id="1326e-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="1326e-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
+|<span data-ttu-id="c3567-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="c3567-110">Delegated (work or school account)</span></span> | <span data-ttu-id="c3567-111">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3567-111">Sites.Read.All, Sites.ReadWrite.All</span></span>    |
+|<span data-ttu-id="c3567-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="c3567-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="c3567-113">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="c3567-113">Not supported.</span></span>    |
+|<span data-ttu-id="c3567-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="c3567-114">Application</span></span> | <span data-ttu-id="c3567-115">Sites.Read.All, Sites.ReadWrite.All</span><span class="sxs-lookup"><span data-stu-id="c3567-115">Sites.Read.All, Sites.ReadWrite.All</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="1326e-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="1326e-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="c3567-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="c3567-116">HTTP request</span></span>
 
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -39,7 +39,7 @@ ms.locfileid: "32537246"
 GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 ```
 
-## <a name="response"></a><span data-ttu-id="1326e-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="1326e-117">Response</span></span>
+## <a name="response"></a><span data-ttu-id="c3567-117">Отклик</span><span class="sxs-lookup"><span data-stu-id="c3567-117">Response</span></span>
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
@@ -76,8 +76,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "Sites/List subsites",
-  "suppressions": [
-    "Error: /api-reference/beta/api/site-list-subsites.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

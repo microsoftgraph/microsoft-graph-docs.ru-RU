@@ -4,34 +4,34 @@ description: 'Создание черновика ответного сообщ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: 112db29116625da1c154783eee840c7a69b5ebfc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 0705e4cfdb8b5e7a1aee90dece01f351f840c4c1
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540557"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338606"
 ---
-# <a name="message-createreply"></a><span data-ttu-id="2eb9d-103">message: createReply</span><span class="sxs-lookup"><span data-stu-id="2eb9d-103">message: createReply</span></span>
+# <a name="message-createreply"></a><span data-ttu-id="278e3-103">message: createReply</span><span class="sxs-lookup"><span data-stu-id="278e3-103">message: createReply</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="2eb9d-104">Создание черновика ответного сообщения, чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createReply**.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-104">Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call.</span></span> <span data-ttu-id="2eb9d-105">После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-105">You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
+<span data-ttu-id="278e3-104">Создание черновика ответного сообщения, чтобы добавить комментарий или обновить любые свойства сообщения одновременно в одном вызове **createReply**.</span><span class="sxs-lookup"><span data-stu-id="278e3-104">Create a draft of a reply message to include a comment or update any message properties all in one **createReply** call.</span></span> <span data-ttu-id="278e3-105">После этого вы сможете [обновить](../api/message-update.md) или [отправить](../api/message-send.md) черновик.</span><span class="sxs-lookup"><span data-stu-id="278e3-105">You can then [update](../api/message-update.md) or [send](../api/message-send.md) the draft.</span></span>
 
-<span data-ttu-id="2eb9d-106">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="2eb9d-106">**Note**</span></span>
+<span data-ttu-id="278e3-106">**Примечание**</span><span class="sxs-lookup"><span data-stu-id="278e3-106">**Note**</span></span>
 
-- <span data-ttu-id="2eb9d-107">Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="2eb9d-108">Если указать и то, и другое, будет возвращена ошибка неПравильного запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
-- <span data-ttu-id="2eb9d-109">Если параметр **replyTo** указан в исходном сообщении, в формате сообщения Интернета ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в **replyTo**, а не получателям **из**.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-109">If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.</span></span> 
+- <span data-ttu-id="278e3-107">Можно указать либо свойство Comment, либо свойство **Body** для `message` параметра.</span><span class="sxs-lookup"><span data-stu-id="278e3-107">You can specify either a comment or the **body** property of the `message` parameter.</span></span> <span data-ttu-id="278e3-108">Если указать и то, и другое, будет возвращена ошибка неПравильного запроса HTTP 400.</span><span class="sxs-lookup"><span data-stu-id="278e3-108">Specifying both will return an HTTP 400 Bad Request error.</span></span>
+- <span data-ttu-id="278e3-109">Если параметр **replyTo** указан в исходном сообщении, в формате сообщения Интернета ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), необходимо отправить ответ получателям в **replyTo**, а не получателям **из**.</span><span class="sxs-lookup"><span data-stu-id="278e3-109">If **replyTo** is specified in the original message, per Internet Message Format ([RFC 2822](https://www.rfc-editor.org/info/rfc2822)), you should send the reply to the recipients in **replyTo**, and not the recipients in **from**.</span></span> 
 
-## <a name="permissions"></a><span data-ttu-id="2eb9d-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="2eb9d-110">Permissions</span></span>
-<span data-ttu-id="2eb9d-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="2eb9d-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+## <a name="permissions"></a><span data-ttu-id="278e3-110">Разрешения</span><span class="sxs-lookup"><span data-stu-id="278e3-110">Permissions</span></span>
+<span data-ttu-id="278e3-p103">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="278e3-p103">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="2eb9d-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="2eb9d-113">Permission type</span></span>      | <span data-ttu-id="2eb9d-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="2eb9d-114">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="278e3-113">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="278e3-113">Permission type</span></span>      | <span data-ttu-id="278e3-114">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="278e3-114">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="2eb9d-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="2eb9d-115">Delegated (work or school account)</span></span> | <span data-ttu-id="2eb9d-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2eb9d-116">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="2eb9d-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="2eb9d-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="2eb9d-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2eb9d-118">Mail.ReadWrite</span></span>    |
-|<span data-ttu-id="2eb9d-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="2eb9d-119">Application</span></span> | <span data-ttu-id="2eb9d-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="2eb9d-120">Mail.ReadWrite</span></span> |
+|<span data-ttu-id="278e3-115">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="278e3-115">Delegated (work or school account)</span></span> | <span data-ttu-id="278e3-116">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="278e3-116">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="278e3-117">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="278e3-117">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="278e3-118">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="278e3-118">Mail.ReadWrite</span></span>    |
+|<span data-ttu-id="278e3-119">Для приложений</span><span class="sxs-lookup"><span data-stu-id="278e3-119">Application</span></span> | <span data-ttu-id="278e3-120">Mail.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="278e3-120">Mail.ReadWrite</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="2eb9d-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="2eb9d-121">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="278e3-121">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="278e3-121">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/messages/{id}/createReply
@@ -39,28 +39,28 @@ POST /users/{id | userPrincipalName}/messages/{id}/createReply
 POST /me/mailFolders/{id}/messages/{id}/createReply
 POST /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/createReply
 ```
-## <a name="request-headers"></a><span data-ttu-id="2eb9d-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="2eb9d-122">Request headers</span></span>
-| <span data-ttu-id="2eb9d-123">Имя</span><span class="sxs-lookup"><span data-stu-id="2eb9d-123">Name</span></span>       | <span data-ttu-id="2eb9d-124">Тип</span><span class="sxs-lookup"><span data-stu-id="2eb9d-124">Type</span></span> | <span data-ttu-id="2eb9d-125">Описание</span><span class="sxs-lookup"><span data-stu-id="2eb9d-125">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="278e3-122">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="278e3-122">Request headers</span></span>
+| <span data-ttu-id="278e3-123">Имя</span><span class="sxs-lookup"><span data-stu-id="278e3-123">Name</span></span>       | <span data-ttu-id="278e3-124">Тип</span><span class="sxs-lookup"><span data-stu-id="278e3-124">Type</span></span> | <span data-ttu-id="278e3-125">Описание</span><span class="sxs-lookup"><span data-stu-id="278e3-125">Description</span></span>|
 |:---------------|:--------|:----------|
-| <span data-ttu-id="2eb9d-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="2eb9d-126">Authorization</span></span>  | <span data-ttu-id="2eb9d-127">string</span><span class="sxs-lookup"><span data-stu-id="2eb9d-127">string</span></span>  | <span data-ttu-id="2eb9d-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-p104">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="2eb9d-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="2eb9d-130">Content-Type</span></span> | <span data-ttu-id="2eb9d-131">string</span><span class="sxs-lookup"><span data-stu-id="2eb9d-131">string</span></span>  | <span data-ttu-id="2eb9d-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-p105">Nature of the data in the body of an entity. Required.</span></span> |
+| <span data-ttu-id="278e3-126">Authorization</span><span class="sxs-lookup"><span data-stu-id="278e3-126">Authorization</span></span>  | <span data-ttu-id="278e3-127">string</span><span class="sxs-lookup"><span data-stu-id="278e3-127">string</span></span>  | <span data-ttu-id="278e3-p104">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="278e3-p104">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="278e3-130">Content-Type</span><span class="sxs-lookup"><span data-stu-id="278e3-130">Content-Type</span></span> | <span data-ttu-id="278e3-131">string</span><span class="sxs-lookup"><span data-stu-id="278e3-131">string</span></span>  | <span data-ttu-id="278e3-p105">Характер данных в теле объекта. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="278e3-p105">Nature of the data in the body of an entity. Required.</span></span> |
 
-## <a name="request-body"></a><span data-ttu-id="2eb9d-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="2eb9d-134">Request body</span></span>
-<span data-ttu-id="2eb9d-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-135">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="278e3-134">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="278e3-134">Request body</span></span>
+<span data-ttu-id="278e3-135">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="278e3-135">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="2eb9d-136">Параметр</span><span class="sxs-lookup"><span data-stu-id="2eb9d-136">Parameter</span></span>    | <span data-ttu-id="2eb9d-137">Тип</span><span class="sxs-lookup"><span data-stu-id="2eb9d-137">Type</span></span>   |<span data-ttu-id="2eb9d-138">Описание</span><span class="sxs-lookup"><span data-stu-id="2eb9d-138">Description</span></span>|
+| <span data-ttu-id="278e3-136">Параметр</span><span class="sxs-lookup"><span data-stu-id="278e3-136">Parameter</span></span>    | <span data-ttu-id="278e3-137">Тип</span><span class="sxs-lookup"><span data-stu-id="278e3-137">Type</span></span>   |<span data-ttu-id="278e3-138">Описание</span><span class="sxs-lookup"><span data-stu-id="278e3-138">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="2eb9d-139">comment</span><span class="sxs-lookup"><span data-stu-id="2eb9d-139">comment</span></span>|<span data-ttu-id="2eb9d-140">String</span><span class="sxs-lookup"><span data-stu-id="2eb9d-140">String</span></span>|<span data-ttu-id="2eb9d-p106">Добавляемый комментарий. Может быть пустой строкой.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-p106">A comment to include. Can be an empty string.</span></span>|
-|<span data-ttu-id="2eb9d-143">message</span><span class="sxs-lookup"><span data-stu-id="2eb9d-143">message</span></span>|[<span data-ttu-id="2eb9d-144">message</span><span class="sxs-lookup"><span data-stu-id="2eb9d-144">message</span></span>](../resources/message.md)|<span data-ttu-id="2eb9d-145">Все доступные для записи свойства, которые необходимо обновить в ответном сообщении.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-145">Any writeable properties to update in the reply message.</span></span>|
+|<span data-ttu-id="278e3-139">comment</span><span class="sxs-lookup"><span data-stu-id="278e3-139">comment</span></span>|<span data-ttu-id="278e3-140">String</span><span class="sxs-lookup"><span data-stu-id="278e3-140">String</span></span>|<span data-ttu-id="278e3-p106">Добавляемый комментарий. Может быть пустой строкой.</span><span class="sxs-lookup"><span data-stu-id="278e3-p106">A comment to include. Can be an empty string.</span></span>|
+|<span data-ttu-id="278e3-143">message</span><span class="sxs-lookup"><span data-stu-id="278e3-143">message</span></span>|[<span data-ttu-id="278e3-144">message</span><span class="sxs-lookup"><span data-stu-id="278e3-144">message</span></span>](../resources/message.md)|<span data-ttu-id="278e3-145">Все доступные для записи свойства, которые необходимо обновить в ответном сообщении.</span><span class="sxs-lookup"><span data-stu-id="278e3-145">Any writeable properties to update in the reply message.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="2eb9d-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="2eb9d-146">Response</span></span>
+## <a name="response"></a><span data-ttu-id="278e3-146">Отклик</span><span class="sxs-lookup"><span data-stu-id="278e3-146">Response</span></span>
 
-<span data-ttu-id="2eb9d-147">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-147">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
+<span data-ttu-id="278e3-147">В случае успеха этот метод возвращает код отклика `201 Created` и объект [message](../resources/message.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="278e3-147">If successful, this method returns `201 Created` response code and [message](../resources/message.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="2eb9d-148">Пример</span><span class="sxs-lookup"><span data-stu-id="2eb9d-148">Example</span></span>
-<span data-ttu-id="2eb9d-149">В приведенном ниже примере создается черновик ответа, в тексте запроса добавляется комментарий и получатель.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-149">The following example creates a reply draft, adds a comment and a recipient in the request body.</span></span>
-##### <a name="request"></a><span data-ttu-id="2eb9d-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="2eb9d-150">Request</span></span>
-<span data-ttu-id="2eb9d-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-151">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="278e3-148">Пример</span><span class="sxs-lookup"><span data-stu-id="278e3-148">Example</span></span>
+<span data-ttu-id="278e3-149">В приведенном ниже примере создается черновик ответа, в тексте запроса добавляется комментарий и получатель.</span><span class="sxs-lookup"><span data-stu-id="278e3-149">The following example creates a reply draft, adds a comment and a recipient in the request body.</span></span>
+##### <a name="request"></a><span data-ttu-id="278e3-150">Запрос</span><span class="sxs-lookup"><span data-stu-id="278e3-150">Request</span></span>
+<span data-ttu-id="278e3-151">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="278e3-151">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "message_createreply"
@@ -90,8 +90,8 @@ Content-Type: application/json
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="2eb9d-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="2eb9d-152">Response</span></span>
-<span data-ttu-id="2eb9d-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="2eb9d-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="278e3-152">Отклик</span><span class="sxs-lookup"><span data-stu-id="278e3-152">Response</span></span>
+<span data-ttu-id="278e3-p107">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="278e3-p107">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -144,8 +144,6 @@ Content-type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/message-createreply.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

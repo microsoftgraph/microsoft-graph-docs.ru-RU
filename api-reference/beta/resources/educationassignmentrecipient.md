@@ -4,24 +4,24 @@ description: Используется в свойстве **назначений
 localization_priority: Normal
 author: dipakboyed
 ms.prod: education
-ms.openlocfilehash: 43ce19e62bf49932eb42b04e0bf22e4ab8cf0261
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 2f7c9c6dcf634ceb030a2958d7cc4761428b5af6
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32507324"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340611"
 ---
-# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="fc479-104">Тип ресурса ЕдукатионассигнментреЦипиент</span><span class="sxs-lookup"><span data-stu-id="fc479-104">educationAssignmentRecipient resource type</span></span>
+# <a name="educationassignmentrecipient-resource-type"></a><span data-ttu-id="0a076-104">Тип ресурса ЕдукатионассигнментреЦипиент</span><span class="sxs-lookup"><span data-stu-id="0a076-104">educationAssignmentRecipient resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="fc479-105">Используется в свойстве **назначений. ассигнто** .</span><span class="sxs-lookup"><span data-stu-id="fc479-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="fc479-106">Этот суперкласс является абстрактным, и вы не можете задать это значение для свойства в назначениях.</span><span class="sxs-lookup"><span data-stu-id="fc479-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="fc479-107">Этот суперкласс представляет, Кому назначено назначение при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="fc479-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
+<span data-ttu-id="0a076-105">Используется в свойстве **назначений. ассигнто** .</span><span class="sxs-lookup"><span data-stu-id="0a076-105">Used within the **assignments.assignTo** property.</span></span> <span data-ttu-id="0a076-106">Этот суперкласс является абстрактным, и вы не можете задать это значение для свойства в назначениях.</span><span class="sxs-lookup"><span data-stu-id="0a076-106">This superclass is abstract and you cannot set the property in assignments to this value.</span></span> <span data-ttu-id="0a076-107">Этот суперкласс представляет, Кому назначено назначение при публикации назначения.</span><span class="sxs-lookup"><span data-stu-id="0a076-107">This superclass represents who the assignment should be assigned to when the assignment is published.</span></span>
 
 
-<span data-ttu-id="fc479-108">Ресурс [едукатионассигнментклассреЦипиент](educationassignmentclassrecipient.md) является подклассом этого суперкласса.</span><span class="sxs-lookup"><span data-stu-id="fc479-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
+<span data-ttu-id="0a076-108">Ресурс [едукатионассигнментклассреЦипиент](educationassignmentclassrecipient.md) является подклассом этого суперкласса.</span><span class="sxs-lookup"><span data-stu-id="0a076-108">The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.</span></span>
 
-## <a name="properties"></a><span data-ttu-id="fc479-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="fc479-109">Properties</span></span>
-<span data-ttu-id="fc479-110">Нет.</span><span class="sxs-lookup"><span data-stu-id="fc479-110">None.</span></span>
+## <a name="properties"></a><span data-ttu-id="0a076-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="0a076-109">Properties</span></span>
+<span data-ttu-id="0a076-110">Нет.</span><span class="sxs-lookup"><span data-stu-id="0a076-110">None.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -48,8 +48,6 @@ ms.locfileid: "32507324"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/educationassignmentrecipient.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

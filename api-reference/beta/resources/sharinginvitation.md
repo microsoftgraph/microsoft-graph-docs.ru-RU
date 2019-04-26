@@ -4,22 +4,22 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingInvitation
 localization_priority: Normal
-ms.openlocfilehash: 0f3acc102762cc1243d8be8362149df1d33717dc
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 1265432ea10e00d0456b4669d5e43e3a6ef7b1f7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584063"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343110"
 ---
-# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="a5700-102">Тип ресурса SharingInvitation</span><span class="sxs-lookup"><span data-stu-id="a5700-102">SharingInvitation resource type</span></span>
+# <a name="sharinginvitation-resource-type"></a><span data-ttu-id="a35b8-102">Тип ресурса SharingInvitation</span><span class="sxs-lookup"><span data-stu-id="a35b8-102">SharingInvitation resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="a5700-103">Ресурс **SharingInvitation** — это единая структура, объединяющая элементы данных, связанные с приглашениями.</span><span class="sxs-lookup"><span data-stu-id="a5700-103">The **SharingInvitation** resource groups invitation-related data items into a single strucutre.</span></span>
+<span data-ttu-id="a35b8-103">Ресурс **SharingInvitation** — это единая структура, объединяющая элементы данных, связанные с приглашениями.</span><span class="sxs-lookup"><span data-stu-id="a35b8-103">The **SharingInvitation** resource groups invitation-related data items into a single strucutre.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="a5700-104">Описание в формате JSON</span><span class="sxs-lookup"><span data-stu-id="a5700-104">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a35b8-104">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a35b8-104">JSON representation</span></span>
 
-<span data-ttu-id="a5700-105">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="a5700-105">Here is a JSON representation of the resource</span></span>
+<span data-ttu-id="a35b8-105">Ниже показано представление JSON ресурса.</span><span class="sxs-lookup"><span data-stu-id="a35b8-105">Here is a JSON representation of the resource</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -38,17 +38,17 @@ ms.locfileid: "32584063"
 
 ```
 
-## <a name="properties"></a><span data-ttu-id="a5700-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a5700-106">Properties</span></span>
+## <a name="properties"></a><span data-ttu-id="a35b8-106">Свойства</span><span class="sxs-lookup"><span data-stu-id="a35b8-106">Properties</span></span>
 
-| <span data-ttu-id="a5700-107">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="a5700-107">Property Name</span></span>  | <span data-ttu-id="a5700-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a5700-108">Type</span></span>                          | <span data-ttu-id="a5700-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a5700-109">Description</span></span>                                                                                                                   |
+| <span data-ttu-id="a35b8-107">Имя свойства</span><span class="sxs-lookup"><span data-stu-id="a35b8-107">Property Name</span></span>  | <span data-ttu-id="a35b8-108">Тип</span><span class="sxs-lookup"><span data-stu-id="a35b8-108">Type</span></span>                          | <span data-ttu-id="a35b8-109">Описание</span><span class="sxs-lookup"><span data-stu-id="a35b8-109">Description</span></span>                                                                                                                   |
 |:---------------|:------------------------------|:------------------------------------------------------------------------------------------------------------------------------|
-| <span data-ttu-id="a5700-110">email</span><span class="sxs-lookup"><span data-stu-id="a5700-110">email</span></span>          | <span data-ttu-id="a5700-111">String</span><span class="sxs-lookup"><span data-stu-id="a5700-111">String</span></span>                        | <span data-ttu-id="a5700-p101">Электронный адрес получателя приглашения к совместному использованию. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a5700-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>                                          |
-| <span data-ttu-id="a5700-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="a5700-114">invitedBy</span></span>      | [<span data-ttu-id="a5700-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="a5700-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="a5700-p102">Предоставляет сведения об отправителе приглашения, создавшего данное разрешение (если такие сведения доступны). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a5700-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span> |
-| <span data-ttu-id="a5700-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="a5700-118">signInRequired</span></span> | <span data-ttu-id="a5700-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="a5700-119">Boolean</span></span>                       | <span data-ttu-id="a5700-p103">Значение `true` указывает, что получатель приглашения должен выполнить вход для доступа к предоставленному элементу. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a5700-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>                     |
+| <span data-ttu-id="a35b8-110">email</span><span class="sxs-lookup"><span data-stu-id="a35b8-110">email</span></span>          | <span data-ttu-id="a35b8-111">String</span><span class="sxs-lookup"><span data-stu-id="a35b8-111">String</span></span>                        | <span data-ttu-id="a35b8-p101">Электронный адрес получателя приглашения к совместному использованию. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a35b8-p101">The email address provided for the recipient of the sharing invitation. Read-only.</span></span>                                          |
+| <span data-ttu-id="a35b8-114">invitedBy</span><span class="sxs-lookup"><span data-stu-id="a35b8-114">invitedBy</span></span>      | [<span data-ttu-id="a35b8-115">identitySet</span><span class="sxs-lookup"><span data-stu-id="a35b8-115">identitySet</span></span>](identityset.md) | <span data-ttu-id="a35b8-p102">Предоставляет сведения об отправителе приглашения, создавшего данное разрешение (если такие сведения доступны). Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a35b8-p102">Provides information about who sent the invitation that created this permission, if that information is available. Read-only.</span></span> |
+| <span data-ttu-id="a35b8-118">signInRequired</span><span class="sxs-lookup"><span data-stu-id="a35b8-118">signInRequired</span></span> | <span data-ttu-id="a35b8-119">Boolean</span><span class="sxs-lookup"><span data-stu-id="a35b8-119">Boolean</span></span>                       | <span data-ttu-id="a35b8-p103">Значение `true` указывает, что получатель приглашения должен выполнить вход для доступа к предоставленному элементу. Только для чтения.</span><span class="sxs-lookup"><span data-stu-id="a35b8-p103">If `true` the recipient of the invitation needs to sign in in order to access the shared item. Read-only.</span></span>                     |
 
-## <a name="remarks"></a><span data-ttu-id="a5700-122">Заметки</span><span class="sxs-lookup"><span data-stu-id="a5700-122">Remarks</span></span> 
+## <a name="remarks"></a><span data-ttu-id="a35b8-122">Заметки</span><span class="sxs-lookup"><span data-stu-id="a35b8-122">Remarks</span></span> 
 
-<span data-ttu-id="a5700-123">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="a5700-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
+<span data-ttu-id="a35b8-123">Дополнительные сведения об аспектах ресурса DriveItem см. в описании типа [DriveItem](driveitem.md).</span><span class="sxs-lookup"><span data-stu-id="a35b8-123">For more information about the facets on a DriveItem, see [DriveItem](driveitem.md).</span></span>
 
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -60,8 +60,6 @@ ms.locfileid: "32584063"
   "keywords": "image,width,height,item,facet",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharinginvitation.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,22 +2,22 @@
 title: Тип ресурса Пажелинкс
 description: Ссылки для открытия страницы OneNote.
 localization_priority: Normal
-ms.openlocfilehash: 07c89d99b5731eccd57bec79c25d7d97509c54a0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: d6ce07ae53b4d1f960566012d4a46e482ccbf9c5
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32568658"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344976"
 ---
-# <a name="pagelinks-resource-type"></a><span data-ttu-id="8fbe9-103">Тип ресурса Пажелинкс</span><span class="sxs-lookup"><span data-stu-id="8fbe9-103">pageLinks resource type</span></span>
+# <a name="pagelinks-resource-type"></a><span data-ttu-id="a76b4-103">Тип ресурса Пажелинкс</span><span class="sxs-lookup"><span data-stu-id="a76b4-103">pageLinks resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="8fbe9-104">Ссылки для открытия страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="8fbe9-104">Links for opening a OneNote page.</span></span>
+<span data-ttu-id="a76b4-104">Ссылки для открытия страницы OneNote.</span><span class="sxs-lookup"><span data-stu-id="a76b4-104">Links for opening a OneNote page.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="8fbe9-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="8fbe9-105">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="a76b4-105">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="a76b4-105">JSON representation</span></span>
 
-<span data-ttu-id="8fbe9-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="8fbe9-106">Here is a JSON representation of the resource.</span></span>
+<span data-ttu-id="a76b4-106">Ниже представлено описание ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="a76b4-106">Here is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -34,11 +34,11 @@ ms.locfileid: "32568658"
 }
 
 ```
-## <a name="properties"></a><span data-ttu-id="8fbe9-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="8fbe9-107">Properties</span></span>
-| <span data-ttu-id="8fbe9-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="8fbe9-108">Property</span></span>     | <span data-ttu-id="8fbe9-109">Тип</span><span class="sxs-lookup"><span data-stu-id="8fbe9-109">Type</span></span>   |<span data-ttu-id="8fbe9-110">Описание</span><span class="sxs-lookup"><span data-stu-id="8fbe9-110">Description</span></span>|
+## <a name="properties"></a><span data-ttu-id="a76b4-107">Свойства</span><span class="sxs-lookup"><span data-stu-id="a76b4-107">Properties</span></span>
+| <span data-ttu-id="a76b4-108">Свойство</span><span class="sxs-lookup"><span data-stu-id="a76b4-108">Property</span></span>     | <span data-ttu-id="a76b4-109">Тип</span><span class="sxs-lookup"><span data-stu-id="a76b4-109">Type</span></span>   |<span data-ttu-id="a76b4-110">Описание</span><span class="sxs-lookup"><span data-stu-id="a76b4-110">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="8fbe9-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="8fbe9-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="8fbe9-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="8fbe9-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="8fbe9-113">Открывает страницу в собственном клиенте OneNote, если она установлена.</span><span class="sxs-lookup"><span data-stu-id="8fbe9-113">Opens the page in the OneNote native client if it's installed.</span></span>|
-|<span data-ttu-id="8fbe9-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="8fbe9-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="8fbe9-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="8fbe9-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="8fbe9-116">Открывает страницу в OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="8fbe9-116">Opens the page in OneNote Online.</span></span>|
+|<span data-ttu-id="a76b4-111">oneNoteClientUrl</span><span class="sxs-lookup"><span data-stu-id="a76b4-111">oneNoteClientUrl</span></span>|[<span data-ttu-id="a76b4-112">externalLink</span><span class="sxs-lookup"><span data-stu-id="a76b4-112">externalLink</span></span>](externallink.md)|<span data-ttu-id="a76b4-113">Открывает страницу в собственном клиенте OneNote, если она установлена.</span><span class="sxs-lookup"><span data-stu-id="a76b4-113">Opens the page in the OneNote native client if it's installed.</span></span>|
+|<span data-ttu-id="a76b4-114">oneNoteWebUrl</span><span class="sxs-lookup"><span data-stu-id="a76b4-114">oneNoteWebUrl</span></span>|[<span data-ttu-id="a76b4-115">externalLink</span><span class="sxs-lookup"><span data-stu-id="a76b4-115">externalLink</span></span>](externallink.md)|<span data-ttu-id="a76b4-116">Открывает страницу в OneNote Online.</span><span class="sxs-lookup"><span data-stu-id="a76b4-116">Opens the page in OneNote Online.</span></span>|
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

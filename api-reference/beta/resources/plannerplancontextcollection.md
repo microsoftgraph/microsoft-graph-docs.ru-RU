@@ -4,27 +4,27 @@ description: Ресурс **планнерпланконтекстколлект
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 6ec515a164c5b0fca6334930b55a4b5d4e73b7d9
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 8d5394ff8a9503ab9ffba4810c9c2cad0d9a2fbf
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32581718"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344463"
 ---
-# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="284e1-105">Тип ресурса Планнерпланконтекстколлектион</span><span class="sxs-lookup"><span data-stu-id="284e1-105">plannerPlanContextCollection resource type</span></span>
+# <a name="plannerplancontextcollection-resource-type"></a><span data-ttu-id="5c9c8-105">Тип ресурса Планнерпланконтекстколлектион</span><span class="sxs-lookup"><span data-stu-id="5c9c8-105">plannerPlanContextCollection resource type</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 
-<span data-ttu-id="284e1-106">Ресурс **планнерпланконтекстколлектион** представляет коллекцию внешних контекстов, с которыми связан план.</span><span class="sxs-lookup"><span data-stu-id="284e1-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="284e1-107">Этот ресурс является открытым типом и является частью объекта [plannerPlan](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="284e1-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="284e1-108">Значение в параметре "свойство-значение" является объектом [планнерпланконтекст](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="284e1-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
+<span data-ttu-id="5c9c8-106">Ресурс **планнерпланконтекстколлектион** представляет коллекцию внешних контекстов, с которыми связан план.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-106">The **plannerPlanContextCollection** resource represents the collection of external contexts to which a plan is linked.</span></span> <span data-ttu-id="5c9c8-107">Этот ресурс является открытым типом и является частью объекта [plannerPlan](plannerplan.md) .</span><span class="sxs-lookup"><span data-stu-id="5c9c8-107">This resource is an open type and is part of the [plannerPlan](plannerplan.md) object.</span></span> <span data-ttu-id="5c9c8-108">Значение в параметре "свойство-значение" является объектом [планнерпланконтекст](plannerplancontext.md) .</span><span class="sxs-lookup"><span data-stu-id="5c9c8-108">The value in the property-value pair is the [plannerPlanContext](plannerplancontext.md) object.</span></span>
 
 
-## <a name="properties"></a><span data-ttu-id="284e1-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="284e1-109">Properties</span></span>
-<span data-ttu-id="284e1-110">Вы можете определить свойства этого открытого типа.</span><span class="sxs-lookup"><span data-stu-id="284e1-110">You can define the properties of this open type.</span></span> <span data-ttu-id="284e1-111">Значения свойств должны представлять собой отличительный идентификатор, представляющий внешний контекст в качестве имени свойства.</span><span class="sxs-lookup"><span data-stu-id="284e1-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="284e1-112">Значения свойств должны быть [планнерпланконтекст](plannerplancontext.md) объектами.</span><span class="sxs-lookup"><span data-stu-id="284e1-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="284e1-113">В зависимости от требований OData имена свойств в открытых типах не могут содержать следующие символы: `.`, `:`, `%`, `@`.</span><span class="sxs-lookup"><span data-stu-id="284e1-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="284e1-114">Эти символы необходимо закодировать с помощью URL-кодировки.</span><span class="sxs-lookup"><span data-stu-id="284e1-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="284e1-115">Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="284e1-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
+## <a name="properties"></a><span data-ttu-id="5c9c8-109">Свойства</span><span class="sxs-lookup"><span data-stu-id="5c9c8-109">Properties</span></span>
+<span data-ttu-id="5c9c8-110">Вы можете определить свойства этого открытого типа.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-110">You can define the properties of this open type.</span></span> <span data-ttu-id="5c9c8-111">Значения свойств должны представлять собой отличительный идентификатор, представляющий внешний контекст в качестве имени свойства.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-111">The property values should be distinctive identifier that represents the external context as the property name.</span></span> <span data-ttu-id="5c9c8-112">Значения свойств должны быть [планнерпланконтекст](plannerplancontext.md) объектами.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-112">The property values must be [plannerPlanContext](plannerplancontext.md) objects.</span></span> <span data-ttu-id="5c9c8-113">В зависимости от требований OData имена свойств в открытых типах не могут содержать следующие символы: `.`, `:`, `%`, `@`.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-113">Based on OData requirements, property names in open types cannot contain the following characters: `.`, `:`, `%`, `@`.</span></span> <span data-ttu-id="5c9c8-114">Эти символы необходимо закодировать с помощью URL-кодировки.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-114">These characters need to be encoded using URL encoding.</span></span> <span data-ttu-id="5c9c8-115">Чтобы удалить элемент из списка "Избранное", присвойте свойству значение `null`.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-115">To remove an item in the favorites list, set the value of the property to `null`.</span></span>
 
-## <a name="json-representation"></a><span data-ttu-id="284e1-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="284e1-116">JSON representation</span></span>
+## <a name="json-representation"></a><span data-ttu-id="5c9c8-116">Представление JSON</span><span class="sxs-lookup"><span data-stu-id="5c9c8-116">JSON representation</span></span>
 
-<span data-ttu-id="284e1-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="284e1-117">The following is a JSON representation of the resource.</span></span>
+<span data-ttu-id="5c9c8-117">Ниже указано представление ресурса в формате JSON.</span><span class="sxs-lookup"><span data-stu-id="5c9c8-117">The following is a JSON representation of the resource.</span></span>
 
 <!-- {
   "blockType": "resource",
@@ -58,8 +58,6 @@ ms.locfileid: "32581718"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerplancontextcollection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

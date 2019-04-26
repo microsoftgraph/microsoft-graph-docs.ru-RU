@@ -4,62 +4,62 @@ description: Возвращает объект диапазона, предст�
 author: lumine2008
 localization_priority: Normal
 ms.prod: excel
-ms.openlocfilehash: 8d44374fa5340b8c488920ba27f2b2bf348124e0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 25c45abdb526a31700fed68007b123e30c41377a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32546258"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33331995"
 ---
-# <a name="range-intersection"></a><span data-ttu-id="41057-103">Range: Intersection</span><span class="sxs-lookup"><span data-stu-id="41057-103">Range: Intersection</span></span>
+# <a name="range-intersection"></a><span data-ttu-id="a0bc3-103">Range: Intersection</span><span class="sxs-lookup"><span data-stu-id="a0bc3-103">Range: Intersection</span></span>
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-<span data-ttu-id="41057-104">Возвращает объект диапазона, представляющий собой прямоугольное пересечение заданных диапазонов.</span><span class="sxs-lookup"><span data-stu-id="41057-104">Gets the range object that represents the rectangular intersection of the given ranges.</span></span>
-## <a name="permissions"></a><span data-ttu-id="41057-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="41057-105">Permissions</span></span>
-<span data-ttu-id="41057-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="41057-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
+<span data-ttu-id="a0bc3-104">Возвращает объект диапазона, представляющий собой прямоугольное пересечение заданных диапазонов.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-104">Gets the range object that represents the rectangular intersection of the given ranges.</span></span>
+## <a name="permissions"></a><span data-ttu-id="a0bc3-105">Разрешения</span><span class="sxs-lookup"><span data-stu-id="a0bc3-105">Permissions</span></span>
+<span data-ttu-id="a0bc3-p101">Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).</span><span class="sxs-lookup"><span data-stu-id="a0bc3-p101">One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).</span></span>
 
-|<span data-ttu-id="41057-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="41057-108">Permission type</span></span>      | <span data-ttu-id="41057-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="41057-109">Permissions (from least to most privileged)</span></span>              |
+|<span data-ttu-id="a0bc3-108">Тип разрешения</span><span class="sxs-lookup"><span data-stu-id="a0bc3-108">Permission type</span></span>      | <span data-ttu-id="a0bc3-109">Разрешения (в порядке повышения привилегий)</span><span class="sxs-lookup"><span data-stu-id="a0bc3-109">Permissions (from least to most privileged)</span></span>              |
 |:--------------------|:---------------------------------------------------------|
-|<span data-ttu-id="41057-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="41057-110">Delegated (work or school account)</span></span> | <span data-ttu-id="41057-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41057-111">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="41057-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="41057-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="41057-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="41057-113">Files.ReadWrite</span></span>    |
-|<span data-ttu-id="41057-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="41057-114">Application</span></span> | <span data-ttu-id="41057-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="41057-115">Not supported.</span></span> |
+|<span data-ttu-id="a0bc3-110">Делегированные (рабочая или учебная учетная запись)</span><span class="sxs-lookup"><span data-stu-id="a0bc3-110">Delegated (work or school account)</span></span> | <span data-ttu-id="a0bc3-111">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0bc3-111">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a0bc3-112">Делегированные (личная учетная запись Майкрософт)</span><span class="sxs-lookup"><span data-stu-id="a0bc3-112">Delegated (personal Microsoft account)</span></span> | <span data-ttu-id="a0bc3-113">Files.ReadWrite</span><span class="sxs-lookup"><span data-stu-id="a0bc3-113">Files.ReadWrite</span></span>    |
+|<span data-ttu-id="a0bc3-114">Для приложений</span><span class="sxs-lookup"><span data-stu-id="a0bc3-114">Application</span></span> | <span data-ttu-id="a0bc3-115">Не поддерживается.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-115">Not supported.</span></span> |
 
-## <a name="http-request"></a><span data-ttu-id="41057-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="41057-116">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="a0bc3-116">HTTP-запрос</span><span class="sxs-lookup"><span data-stu-id="a0bc3-116">HTTP request</span></span>
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/names(<name>)/range/Intersection
+GET /workbook/names/{name}/range/Intersection
 GET /workbook/worksheets/{id|name}/range(address='<address>')/Intersection
 GET /workbook/tables/{id|name}/columns/{id|name}/range/Intersection
 
 ```
-## <a name="request-headers"></a><span data-ttu-id="41057-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="41057-117">Request headers</span></span>
-| <span data-ttu-id="41057-118">Имя</span><span class="sxs-lookup"><span data-stu-id="41057-118">Name</span></span>       | <span data-ttu-id="41057-119">Описание</span><span class="sxs-lookup"><span data-stu-id="41057-119">Description</span></span>|
+## <a name="request-headers"></a><span data-ttu-id="a0bc3-117">Заголовки запросов</span><span class="sxs-lookup"><span data-stu-id="a0bc3-117">Request headers</span></span>
+| <span data-ttu-id="a0bc3-118">Имя</span><span class="sxs-lookup"><span data-stu-id="a0bc3-118">Name</span></span>       | <span data-ttu-id="a0bc3-119">Описание</span><span class="sxs-lookup"><span data-stu-id="a0bc3-119">Description</span></span>|
 |:---------------|:----------|
-| <span data-ttu-id="41057-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="41057-120">Authorization</span></span>  | <span data-ttu-id="41057-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="41057-p102">Bearer {token}. Required.</span></span> |
-| <span data-ttu-id="41057-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="41057-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="41057-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="41057-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
+| <span data-ttu-id="a0bc3-120">Авторизация</span><span class="sxs-lookup"><span data-stu-id="a0bc3-120">Authorization</span></span>  | <span data-ttu-id="a0bc3-p102">Bearer {токен}. Обязательный.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-p102">Bearer {token}. Required.</span></span> |
+| <span data-ttu-id="a0bc3-123">Workbook-Session-Id</span><span class="sxs-lookup"><span data-stu-id="a0bc3-123">Workbook-Session-Id</span></span>  | <span data-ttu-id="a0bc3-p103">Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-p103">Workbook session Id that determines if changes are persisted or not. Optional.</span></span>|
 
-## <a name="request-body"></a><span data-ttu-id="41057-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="41057-126">Request body</span></span>
-<span data-ttu-id="41057-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="41057-127">In the request body, provide a JSON object with the following parameters.</span></span>
+## <a name="request-body"></a><span data-ttu-id="a0bc3-126">Текст запроса</span><span class="sxs-lookup"><span data-stu-id="a0bc3-126">Request body</span></span>
+<span data-ttu-id="a0bc3-127">В тексте запроса предоставьте JSON-объект с указанными ниже параметрами.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-127">In the request body, provide a JSON object with the following parameters.</span></span>
 
-| <span data-ttu-id="41057-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="41057-128">Parameter</span></span>    | <span data-ttu-id="41057-129">Тип</span><span class="sxs-lookup"><span data-stu-id="41057-129">Type</span></span>   |<span data-ttu-id="41057-130">Описание</span><span class="sxs-lookup"><span data-stu-id="41057-130">Description</span></span>|
+| <span data-ttu-id="a0bc3-128">Параметр</span><span class="sxs-lookup"><span data-stu-id="a0bc3-128">Parameter</span></span>    | <span data-ttu-id="a0bc3-129">Тип</span><span class="sxs-lookup"><span data-stu-id="a0bc3-129">Type</span></span>   |<span data-ttu-id="a0bc3-130">Описание</span><span class="sxs-lookup"><span data-stu-id="a0bc3-130">Description</span></span>|
 |:---------------|:--------|:----------|
-|<span data-ttu-id="41057-131">anotherRange</span><span class="sxs-lookup"><span data-stu-id="41057-131">anotherRange</span></span>|<span data-ttu-id="41057-132">string</span><span class="sxs-lookup"><span data-stu-id="41057-132">string</span></span>|<span data-ttu-id="41057-133">Объект или адрес диапазона, который будет использоваться для определения пересечения диапазонов.</span><span class="sxs-lookup"><span data-stu-id="41057-133">The range object or range address that will be used to determine the intersection of ranges.</span></span>|
+|<span data-ttu-id="a0bc3-131">anotherRange</span><span class="sxs-lookup"><span data-stu-id="a0bc3-131">anotherRange</span></span>|<span data-ttu-id="a0bc3-132">string</span><span class="sxs-lookup"><span data-stu-id="a0bc3-132">string</span></span>|<span data-ttu-id="a0bc3-133">Объект или адрес диапазона, который будет использоваться для определения пересечения диапазонов.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-133">The range object or range address that will be used to determine the intersection of ranges.</span></span>|
 
-## <a name="response"></a><span data-ttu-id="41057-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="41057-134">Response</span></span>
+## <a name="response"></a><span data-ttu-id="a0bc3-134">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0bc3-134">Response</span></span>
 
-<span data-ttu-id="41057-135">В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/range.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="41057-135">If successful, this method returns `200 OK` response code and [Range](../resources/range.md) object in the response body.</span></span>
+<span data-ttu-id="a0bc3-135">В случае успеха этот метод возвращает код отклика `200 OK` и объект [Range](../resources/workbookrange.md) в теле отклика.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-135">If successful, this method returns `200 OK` response code and [Range](../resources/workbookrange.md) object in the response body.</span></span>
 
-## <a name="example"></a><span data-ttu-id="41057-136">Пример</span><span class="sxs-lookup"><span data-stu-id="41057-136">Example</span></span>
-<span data-ttu-id="41057-137">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="41057-137">Here is an example of how to call this API.</span></span>
-##### <a name="request"></a><span data-ttu-id="41057-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="41057-138">Request</span></span>
-<span data-ttu-id="41057-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="41057-139">Here is an example of the request.</span></span>
+## <a name="example"></a><span data-ttu-id="a0bc3-136">Пример</span><span class="sxs-lookup"><span data-stu-id="a0bc3-136">Example</span></span>
+<span data-ttu-id="a0bc3-137">Ниже приведен пример вызова этого API.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-137">Here is an example of how to call this API.</span></span>
+##### <a name="request"></a><span data-ttu-id="a0bc3-138">Запрос</span><span class="sxs-lookup"><span data-stu-id="a0bc3-138">Request</span></span>
+<span data-ttu-id="a0bc3-139">Ниже приведен пример запроса.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-139">Here is an example of the request.</span></span>
 <!-- {
   "blockType": "request",
   "name": "range_intersection"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names(<name>)/range/Intersection
+GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/range/Intersection
 Content-type: application/json
 Content-length: 42
 
@@ -68,12 +68,12 @@ Content-length: 42
 }
 ```
 
-##### <a name="response"></a><span data-ttu-id="41057-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="41057-140">Response</span></span>
-<span data-ttu-id="41057-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="41057-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
+##### <a name="response"></a><span data-ttu-id="a0bc3-140">Отклик</span><span class="sxs-lookup"><span data-stu-id="a0bc3-140">Response</span></span>
+<span data-ttu-id="a0bc3-p104">Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.</span><span class="sxs-lookup"><span data-stu-id="a0bc3-p104">Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.</span></span>
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.range"
+  "@odata.type": "microsoft.graph.workbookRange"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -99,8 +99,6 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/range-intersection.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
