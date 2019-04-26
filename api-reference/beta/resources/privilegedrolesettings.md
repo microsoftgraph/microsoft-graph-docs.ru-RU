@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедролесеттингс
 description: Представляет параметры привилегированной роли.
 localization_priority: Normal
-ms.openlocfilehash: 7d4c14065defc63190d1d25b435c734b9f219e36
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 6500d5a51fcedce97d71c1c4022c7d941de27b83
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563287"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344232"
 ---
 # <a name="privilegedrolesettings-resource-type"></a>Тип ресурса Привилежедролесеттингс
 
@@ -35,9 +35,9 @@ ms.locfileid: "32563287"
 |Нотификатионтаусеронелеватион|boolean|**имеет значение true** , если вы отправляете уведомление конечному пользователю при активации роли. **значение false** , если уведомление не отправляется при активации роли.|
 |Тиккетингинфунелеватион|boolean|**имеет значение true** , если при активации роли требуются сведения о билетах. **false** , если при активации роли не требуются сведения о билетах.|
 |Аппровалонелеватион|boolean|**имеет значение true** , если при активации роли необходимо выполнить утверждение. **false** , если при активации роли не нужно утверждать.|
-|Аппроверидс|массив|Список идентификаторов утверждения, если для активации необходимо утверждение.|
+|Аппроверидс| string collection |Список идентификаторов утверждения, если для активации необходимо утверждение.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -65,7 +65,7 @@ ms.locfileid: "32563287"
   "notificationToUserOnElevation": true,
   "ticketingInfoOnElevation": true,
   "approvalOnElevation": false,
-  "approverIds": []
+  "approverIds": ["string"]
 }
 
 ```
@@ -79,8 +79,6 @@ ms.locfileid: "32563287"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedrolesettings.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

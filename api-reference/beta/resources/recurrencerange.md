@@ -2,12 +2,12 @@
 title: Тип ресурса recurrenceRange
 description: 'Описывает диапазон дат, согласно которому повторяется событие. '
 localization_priority: Normal
-ms.openlocfilehash: cee5a06d8f76264cd7c98924c532c8f864cab87d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f20d8b134f4b1e0f338b615dd3129a17d585ca94
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563116"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343894"
 ---
 # <a name="recurrencerange-resource-type"></a>Тип ресурса recurrenceRange
 
@@ -36,7 +36,7 @@ ms.locfileid: "32563116"
 |`noEnd`   |Диапазон без даты окончания | Событие повторяется во все дни, входящие в соответствующее расписание повторения, начиная с даты **startDate**. | Бесконечное повторение события с 1 июня 2017 г. | **type**, **startDate** |
 |`numbered`|Диапазон с определенным количеством повторений | Событие повторяется определенное количество раз (указанное в **numberOfOccurrences**) в соответствии с расписанием повторения, начиная с даты **startDate**. | Повторение события 10 раз с 1 июня 2017 г.  | **type**, **startDate**, **numberOfOccurrences** |
 
-## <a name="json-representation"></a>Описание в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 

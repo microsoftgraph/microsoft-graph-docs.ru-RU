@@ -4,12 +4,12 @@ description: Ресурс **планнерассигнмент** предста�
 localization_priority: Normal
 author: TarkanSevilmis
 ms.prod: planner
-ms.openlocfilehash: 054cd42eedd27a7fe11abc2e5578a56da667e05d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fddb3214417fc1320b6218b4e9fd0266b176e26a
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32541362"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344620"
 ---
 # <a name="plannerassignment-resource-type"></a>Тип ресурса Планнерассигнмент
 
@@ -22,10 +22,10 @@ ms.locfileid: "32541362"
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
 |Ассигнедби|[identitySet](identityset.md)|Идентификатор пользователя, который выполнил назначение задачи, например, назначение.|
-|Ассигнеддатетиме|DateTimeOffset|Время назначения задачи. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Ассигнеддатетиме|DateTimeOffset|Время назначения задачи. Тип Timestamp представляет сведения о дате и времени с использованием формата ISO 8601, причем всегда используется время в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
 |orderHint|String|ПодСказка, используемая для упорядочивания уполномоченные в задаче. Формат определяется, как описано [ниже](planner-order-hint-format.md).|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
@@ -54,8 +54,6 @@ ms.locfileid: "32541362"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/plannerassignment.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

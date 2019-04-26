@@ -4,12 +4,12 @@ description: Вы можете получить сведения о действ
 localization_priority: Normal
 ms.prod: reports
 author: pranoychaudhuri
-ms.openlocfilehash: 98d0393545963a73852197f5bd78241cfb958a22
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cfe8c698533b46d4edbbb724dc5fb993cc85cfdb
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32584105"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343172"
 ---
 # <a name="sharepoint-activity-reports"></a>Отчеты о действиях в SharePoint
 
@@ -23,15 +23,7 @@ ms.locfileid: "32584105"
 
 | Функция                                 | Возвращаемый тип CSV | Возвращаемый тип JSON                         | Описание                              |
 | :--------------------------------------- | :-------------- | :--------------------------------------- | ---------------------------------------- |
-| [Получение сведений о пользователях](../api/reportroot-getsharepointactivityuserdetail.md) | Поток          | [Шарепоинтактивитюсердетаил](../resources/sharepointactivityuserdetail.md) | Получите сведения о действиях в SharePoint с разбивкой по пользователям. |
-| [Получение количества файлов](../api/reportroot-getsharepointactivityfilecounts.md) | Поток          | [Ситеактивитисуммари](../resources/siteactivitysummary.md) | Получите количество уникальных пользователей с лицензиями, которые работали с файлами, хранящимися на сайтах SharePoint. |
-| [Получение количества пользователей](../api/reportroot-getsharepointactivityusercounts.md) | Поток          | [Шарепоинтактивитюсеркаунтс](../resources/sharepointactivityusercounts.md) | Получение сведений о том, как меняется количество активных пользователей. Пользователь считается активным, если он выполнил действие с файлом (сохранение, синхронизация, изменение или предоставление общего доступа) или посетил страницу в указанный период. |
+| [Получение сведений о пользователях](../api/reportroot-getsharepointactivityuserdetail.md) | Stream          | [Шарепоинтактивитюсердетаил](../resources/sharepointactivityuserdetail.md) | Получите сведения о действиях в SharePoint с разбивкой по пользователям. |
+| [Получение количества файлов](../api/reportroot-getsharepointactivityfilecounts.md) | Stream          | [Ситеактивитисуммари](../resources/siteactivitysummary.md) | Получите количество уникальных пользователей с лицензиями, которые работали с файлами, хранящимися на сайтах SharePoint. |
+| [Получение количества пользователей](../api/reportroot-getsharepointactivityusercounts.md) | Stream          | [Шарепоинтактивитюсеркаунтс](../resources/sharepointactivityusercounts.md) | Получение сведений о том, как меняется количество активных пользователей. Пользователь считается активным, если он выполнил действие с файлом (сохранение, синхронизация, изменение или предоставление общего доступа) или посетил страницу в указанный период. |
 | [Получение страниц](../api/reportroot-getsharepointactivitypages.md) | Stream          | [Шарепоинтактивитипажес](../resources/sharepointactivitypages.md) | Получите количество уникальных страниц, посещенных пользователями. |
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharepoint-activity-reports.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

@@ -4,12 +4,12 @@ description: Шифтитем представляет версию смены.
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: 7ff829ca0f43124404b4b99b048c9919368b6009
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fd5b3d224e60fc3f21b4d484952c7a2643b02407
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583790"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343040"
 ---
 # <a name="shiftitem-resource-type"></a>Тип ресурса Шифтитем
 
@@ -20,12 +20,12 @@ ms.locfileid: "32583790"
 ## <a name="properties"></a>Свойства
 | Свойство                         | Тип                    | Описание                                                                             |
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
-| notes               | `string`                  | Примечания для `shiftItem`.      |
-| displayName               | `string`                  | Имя файла `shiftItem`. |
-| startDateTime               | `DateTimeOffset`                  | Дата и время начала для `shiftItem`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный. |
-| endDateTime               | `DateTimeOffset`                  | Дата и время окончания для `shiftItem`. Обязательный. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
-| theme | `enum`   |    |  |  | Поддерживаемые цвета: белый; компонентов Интенсив цвет Розов желтый участка Даркблуе; Даркгрин; Даркпурпле; Даркпинк; Даркеллов. |
-| activities    | `collection([shiftActivity](shiftactivity.md))`    | Добавочная часть сдвига, в которой можно получить сведения о том, когда и где сотрудник наносится на свою смену. Например, назначение или запланированный перерыв или обед. Обязательное. |
+| notes               | string                  | Примечания для `shiftItem`.      |
+| displayName               | string                  | Имя файла `shiftItem`. |
+| startDateTime               | DateTimeOffset                  | Дата и время начала для `shiftItem`. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". Обязательный. |
+| endDateTime               | DateTimeOffset                 | Дата и время окончания для `shiftItem`. Обязательный. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
+| theme | Счедулинтитисеме   |  Поддерживаемые цвета: белый; компонентов Интенсив цвет Розов желтый участка Даркблуе; Даркгрин; Даркпурпле; Даркпинк; Даркеллов. |
+| activities    | Коллекция [шифтактивити](shiftactivity.md)   | Добавочная часть сдвига, в которой можно получить сведения о том, когда и где сотрудник наносится на свою смену. Например, назначение или запланированный перерыв или обед. Обязательное. |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -38,20 +38,12 @@ ms.locfileid: "32583790"
 }-->
 ```json
 {
-  "displayName": "Day shift",
-  "notes": "Please do inventory as part of your shift.",
-  "startDateTime": "2019-03-11T15:00:00Z",
-  "endDateTime": "2019-03-12T00:00:00Z",
-  "theme": "blue",
-  "activities": [
-    {
-      "isPaid": true,
-      "startDateTime": "2019-03-11T15:00:00Z",
-      "endDateTime": "2019-03-11T15:15:00Z",
-      "code": "",
-      "displayName": "Lunch"
-    }
-  ]
+  "displayName": "String",
+  "notes": "String",
+  "startDateTime": "String (timestamp)",
+  "endDateTime": "String (timestamp)",
+  "theme": "String",
+  "activities": [{"@odata.type": "microsoft.graph.shiftActivity"}]
 }
 ```
 
@@ -65,8 +57,6 @@ ms.locfileid: "32583790"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shiftitem.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

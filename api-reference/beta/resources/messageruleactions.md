@@ -4,12 +4,12 @@ description: Представляет набор действий, доступ�
 author: angelgolfer-ms
 localization_priority: Normal
 ms.prod: outlook
-ms.openlocfilehash: a786a225bb9d439d60a29d2395b2d438975fc16c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 5582bbe2d6dcf054b276bd583a8544752d6d5eb4
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32523422"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33342235"
 ---
 # <a name="messageruleactions-resource-type"></a>Тип ресурса messageRuleActions
 
@@ -22,13 +22,13 @@ ms.locfileid: "32523422"
 |:---------------|:--------|:----------|
 | assignCategories | Коллекция String | Список категорий, которые необходимо назначить сообщению. |
 | copyToFolder | String | Идентификатор папки, в которую необходимо скопировать сообщение. |
-| delete | Boolean | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
+| delete | Логический | Указывает, нужно ли перемещать сообщение в папку "Удаленные". |
 | forwardAsAttachmentTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение как вложение. |
 | forwardTo | Коллекция [recipient](recipient.md) | Электронные адреса получателей, которым необходимо переслать сообщение. |
-| markAsRead | Boolean | Указывает, необходимо ли отмечать сообщение как прочтенное. |
+| markAsRead | Логический | Указывает, необходимо ли отмечать сообщение как прочтенное. |
 | markImportance | String | Задает важность сообщения. Допустимые значения: `low`, `normal`, `high`. |
 | moveToFolder |  String| Идентификатор папки, в которую сообщение будет перемещено. |
-| permanentDelete | Boolean | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
+| permanentDelete | Логический | Указывает, нужно ли окончательно удалять сообщение без сохранения в папке "Удаленные". |
 | redirectTo | [recipient](recipient.md) | Электронный адрес, на который должно быть перенаправлено сообщение. |
 | stopProcessingRules | Boolean | Указывает, должны ли обрабатываться последующие правила. |
 
@@ -69,8 +69,6 @@ ms.locfileid: "32523422"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/messageruleactions.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

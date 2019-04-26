@@ -2,12 +2,12 @@
 title: Тип ресурса Program
 description: 'В функции рецензирования Access в Azure AD программа — это контейнер, содержащий программные элементы управления. У клиента может быть одна или несколько программ.  Каждый элемент управления содержит ссылку на проверку доступа к программе, чтобы упростить обнаружение связанных проверок доступа.  '
 localization_priority: Normal
-ms.openlocfilehash: 2498279f27f5859eadcfa1d70662e3d8f3b5246c
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7c0016cb194acd7ad8533acb34650b57df720ace
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563415"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344036"
 ---
 # <a name="program-resource-type"></a>Тип ресурса Program
 
@@ -23,19 +23,10 @@ ms.locfileid: "32563415"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание программы](../api/program-create.md) |   [Программа](program.md)   |   Создайте новую программу.|
-|[Удаление программы](../api/program-delete.md) |   Нет.   |   Удаление программы.|
+|[Удаление программы](../api/program-delete.md) |   Отсутствуют.   |   Удаление программы.|
 |[Список программ](../api/program-list.md) |  Коллекция [Program](program.md)|   Получение коллекции всех программ.|
 |[Список Програмконтролс программы](../api/program-listcontrols.md) |      Коллекция [програмконтрол](programcontrol.md)| Получение коллекции элементов управления программы.|
 |[Программа обновления](../api/program-update.md) |   [Программа](program.md)|  Обновление программы.|
-
-## <a name="permissions"></a>Разрешения
-
-|Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
-
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -58,6 +49,7 @@ ms.locfileid: "32563415"
   "optionalProperties": [
 
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.program"
 }-->
 
@@ -77,8 +69,6 @@ ms.locfileid: "32563415"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/program.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -2,12 +2,12 @@
 title: Тип ресурса Привилежедоператионевент
 description: Представляет событие аудита, созданное с помощью привилегированного управления удостоверениями для операций с ролями, например администратором, который управляет привилегированными ролями, пользователь активирует свою роль, а пользователь отключает свою роль.
 localization_priority: Normal
-ms.openlocfilehash: 2ad8f7e5db956dfbb2fa0d74f441b01f2b5d68aa
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c7a7cdb31289dc0cdd31c843d18138676d518eb3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563680"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344300"
 ---
 # <a name="privilegedoperationevent-resource-type"></a>Тип ресурса Привилежедоператионевент
 
@@ -41,7 +41,7 @@ ms.locfileid: "32563680"
 |Усермаил|string|Адрес электронной почты пользователя.|
 |userName|string|Отображаемое имя пользователя.|
 
-## <a name="relationships"></a>Отношения
+## <a name="relationships"></a>Связи
 Нет
 
 
@@ -71,7 +71,9 @@ ms.locfileid: "32563680"
   "tenantId": "string",
   "userId": "string",
   "userMail": "string",
-  "userName": "string"
+  "userName": "string",
+  "referenceKey": "string",
+  "referenceSystem": "string"
 }
 
 ```
@@ -85,8 +87,6 @@ ms.locfileid: "32563680"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/privilegedoperationevent.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

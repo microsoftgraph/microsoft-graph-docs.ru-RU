@@ -2,12 +2,12 @@
 title: Тип ресурса Програмконтрол
 description: В функции рецензирования Access в Azure AD объект элемента управления Program представляет элемент управления, связывая проверку доступа с программой.
 localization_priority: Normal
-ms.openlocfilehash: 3d9829b8e2585d4deda95551021e2fd9b8d14c7a
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 7d194f3e80f44eb57be0deb7d2ffd71624c385d7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563385"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344028"
 ---
 # <a name="programcontrol-resource-type"></a>Тип ресурса Програмконтрол
 
@@ -21,16 +21,8 @@ ms.locfileid: "32563385"
 | Метод           | Возвращаемый тип    |Описание|
 |:---------------|:--------|:----------|
 |[Создание Програмконтрол](../api/programcontrol-create.md) |     [Програмконтрол](programcontrol.md) |   Добавление Програмконтрол в программу.|
-|[Удаление Програмконтрол](../api/programcontrol-delete.md) |     Нет.   |   Удаление Програмконтрол из программы.|
+|[Удаление Програмконтрол](../api/programcontrol-delete.md) |     Отсутствуют.   |   Удаление Програмконтрол из программы.|
 |[Список Програмконтролс](../api/programcontrol-list.md) | Коллекция [програмконтрол](programcontrol.md)| ПереЧисление элементов управления для всех программ в клиенте.|
-
-## <a name="permissions"></a>Разрешения
-
-|Тип разрешения                        | Разрешения (в порядке повышения привилегий)              |
-|:--------------------------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)     | Програмконтрол. Read. ALL, Програмконтрол. ReadWrite. ALL |
-|Делегированные (личная учетная запись Майкрософт) | Не поддерживается. |
-|Для приложений                            | Не поддерживается. |
 
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
@@ -59,7 +51,7 @@ ms.locfileid: "32563385"
 
 ## <a name="json-representation"></a>Представление JSON
 
-Ниже показано представление ресурса в формате JSON.
+Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
@@ -78,8 +70,8 @@ ms.locfileid: "32563385"
  "displayName": "string",
  "status": "string",
  "createdDateTime": "string (timestamp)",
- "owner": "microsoft.graph.userIdentity",
- "resource":"microsoft.graph.programResource"
+ "owner": {"@odata.type":"microsoft.graph.userIdentity"},
+ "resource":{"@odata.type":"microsoft.graph.programResource"}
 }
 
 ```
@@ -94,7 +86,24 @@ ms.locfileid: "32563385"
 |:---------------|:--------|:----------|
 | `type`               |`String`  | Тип ресурса, указывающий, является ли он группой или приложением. |     
 
+## <a name="json-representation"></a>Представление JSON
 
+Ниже представлено описание ресурса в формате JSON.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [
+
+  ],
+  "@odata.type": "microsoft.graph.programResource"
+}-->
+
+```json
+{
+ "type": "string"
+}
+
+```
 <!--
 {
   "type": "#page.annotation",
@@ -102,8 +111,6 @@ ms.locfileid: "32563385"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/programcontrol.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

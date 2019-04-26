@@ -2,15 +2,17 @@
 title: Тип ресурса Фрибусеррор
 description: Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 localization_priority: Normal
-ms.openlocfilehash: e2c755b51e72adf3ff4efa4de5c9438e70d701e1
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb83c99cf52a562bc10244143785313fe3a6c149
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547501"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33340178"
 ---
 # <a name="freebusyerror-resource-type"></a>Тип ресурса Фрибусеррор
 
+ [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ 
 Представляет сведения об ошибке при попытке получить доступ к пользователю, списку рассылки или ресурсу.
 
 ## <a name="properties"></a>Свойства
@@ -20,7 +22,7 @@ ms.locfileid: "32547501"
 |Респонсекоде |String |Код ответа из запроса на доступность пользователя, списка рассылки или ресурса. |
 
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже указано представление ресурса в формате JSON.
 
@@ -48,6 +50,7 @@ ms.locfileid: "32547501"
   "description": "freeBusyError resource",
   "keywords": "",
   "section": "documentation",
-  "tocPath": ""
+  "tocPath": "",
+  "suppressions": []
 }
 -->

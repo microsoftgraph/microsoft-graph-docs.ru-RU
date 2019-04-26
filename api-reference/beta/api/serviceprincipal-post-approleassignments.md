@@ -2,12 +2,12 @@
 title: Создание объекта appRoleAssignment
 description: Используйте этот API для создания нового Аппролеассигнмент.
 localization_priority: Normal
-ms.openlocfilehash: 70993bf1e5402c3fab7229269fbc007602813c40
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: cb171e4d6149de5ba169dbf7ad48e87cb055fb47
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32545333"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33335816"
 ---
 # <a name="create-approleassignment"></a>Создание объекта appRoleAssignment
 
@@ -38,7 +38,7 @@ POST /servicePrincipals/{id}/appRoleAssignments
 ## <a name="request-body"></a>Текст запроса
 В тексте запроса добавьте представление объекта [Аппролеассигнмент](../resources/approleassignment.md) в формате JSON.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успешного выполнения этот метод `201 Created` возвращает код отклика и объект [аппролеассигнмент](../resources/approleassignment.md) в тексте отклика.
 
@@ -68,7 +68,7 @@ Content-length: 233
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.approleassignment"
+  "@odata.type": "microsoft.graph.appRoleAssignment"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -94,8 +94,6 @@ Content-length: 253
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/serviceprincipal-post-approleassignments.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

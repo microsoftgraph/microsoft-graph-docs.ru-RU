@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Получение разрешений
 localization_priority: Normal
-ms.openlocfilehash: 05faf2bdeccc5f1ed1dadc484cf690473902d941
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 9bcea8660c93c2df884be3c3b2a475807273f3be
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32539484"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33332705"
 ---
 # <a name="get-sharing-permission-for-a-file-or-folder"></a>Получение разрешения на общий доступ для файла или папки
 
@@ -49,7 +49,7 @@ GET /users/{user-id}/drive/items/{item-id}/permissions/{perm-id}
 
 Этот метод поддерживает [параметр запроса $select](/graph/query-parameters) для формирования отклика.
 
-## <a name="response"></a>Ответ
+## <a name="response"></a>Отклик
 
 В случае успеха этот метод возвращает код отклика `200 OK` и ресурс [Permission](../resources/permission.md) в теле отклика.
 
@@ -103,8 +103,6 @@ Content-type: application/json
   "keywords": "permission, permissions, sharing",
   "section": "documentation",
   "tocPath": "OneDrive/Item/Get permission",
-  "suppressions": [
-    "Error: /api-reference/beta/api/permission-get.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

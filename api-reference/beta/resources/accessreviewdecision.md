@@ -4,12 +4,12 @@ description: В функции рецензирования Access в `accessRev
 localization_priority: Normal
 author: lleonard-msft
 ms.prod: microsoft-identity-platform
-ms.openlocfilehash: 9642c8a51e4e9efe1a1748243b0e24aeff07cfa0
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: a3ba49484f46f6d41349abbd7a857ee365ef3ff0
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32535779"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33339365"
 ---
 # <a name="accessreviewdecision-resource-type"></a>Тип ресурса АкцессревиевдеЦисион
 
@@ -20,7 +20,7 @@ ms.locfileid: "32535779"
 
 ## <a name="methods"></a>Методы
 
-Нет.  Объекты этого типа автоматически создаются компонентом при инициализации проверки доступа и не могут быть удалены.  Они могут извлекаться из проверки доступа с помощью связей " [решения](../api/accessreview-listdecisions.md) " и " [мидеЦисионс](../api/accessreview-listmydecisions.md) ".
+Отсутствуют.  Объекты этого типа автоматически создаются компонентом при инициализации проверки доступа и не могут быть удалены.  Они могут извлекаться из проверки доступа с помощью связей " [решения](../api/accessreview-listdecisions.md) " и " [мидеЦисионс](../api/accessreview-listmydecisions.md) ".
 
 ## <a name="properties"></a>Свойства
 
@@ -61,7 +61,7 @@ ms.locfileid: "32535779"
 |[Список решений Акцессревиев](../api/accessreview-listdecisions.md) |      Коллекция [акцессревиевдеЦисион](accessreviewdecision.md)| Получение решений для Акцессревиев.|
 |[Список моих решений Акцессревиев](../api/accessreview-listmydecisions.md) |     Коллекция [акцессревиевдеЦисион](accessreviewdecision.md)| В качестве проверяющего получите мое решение Акцессревиев.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
@@ -99,8 +99,6 @@ ms.locfileid: "32535779"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/accessreviewdecision.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

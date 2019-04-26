@@ -4,12 +4,12 @@ description: Отношение с широкими возможностями, 
 author: simonhult
 localization_priority: Normal
 ms.prod: insights
-ms.openlocfilehash: 07fe0f50d6961f0fce6c426c7fb2431f17127bf7
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 90ebc84aa66fcd3dfd352d79256b725bf7a6d0e7
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32551311"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333577"
 ---
 # <a name="trending-resource-type"></a>Тип ресурса трендов
 
@@ -31,32 +31,32 @@ ms.locfileid: "32551311"
 | weight                | Двойное                    | Значение, определяющее степень тенденции документа в данный момент. Чем больше это число, тем больше документ будет обходить пользователь (более релевантно). Возвращенные документы сортируются по этому значению.  |
 | Ресурсе resourcevisualization | [Ресурсе resourcevisualization](insights-resourcevisualization.md)    | Свойства, которые можно использовать для отображения документа в вашем интерфейсе. |
 | Ресаурцереференце     | [Ресаурцереференце](insights-resourcereference.md)        | Справочные свойства документа тенденций, такие как URL-адрес и тип документа. |
-
-## <a name="relationships"></a>Связи
+| lastModifiedDateTime  | DateTimeOffset            | |
+## <a name="relationships"></a>Отношения
 
 | Свойство      | Тип          | Описание  |
 | ------------- |---------------| -------------|
-| resource      | Объект        | Используется для навигации по документу трендов. |
+| resource      | .        | Используется для навигации по документу трендов. |
 
 ## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
+<!-- {
+  "blockType": "resource",
+  "keyProperty":"id",
+  "optionalProperties": [
+    "resource"
+  ],
+  "@odata.type": "microsoft.graph.trending"
+}-->
+
 ```json
 {
   "id": "string",
   "weight": "double",
-  "resourceVisualization": [{"@odata.type": "microsoft.graph.resourceVisualization"}],
-  "resourceReference": [{"@odata.type": "microsoft.graph.resourceReference"}],
-  
-  "resource": [ { "@odata.type": "microsoft.graph.entity" } ]
+  "resourceVisualization": {"@odata.type": "microsoft.graph.resourceVisualization"},
+  "resourceReference": {"@odata.type": "microsoft.graph.resourceReference"},
+  "lastModifiedDateTime": "String (timestamp)"
 }
 ```
-<!--
-{
-  "type": "#page.annotation",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/insights-trending.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
-}
--->

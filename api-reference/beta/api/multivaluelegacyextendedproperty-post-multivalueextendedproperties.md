@@ -1,15 +1,15 @@
 ---
-title: Создание многозначного расширенного свойства
+title: Создание расширенного свойства с несколькими значениями
 description: 'Создание одного или нескольких многозначных расширенных свойств в новом или существующем экземпляре ресурса. '
 localization_priority: Normal
-ms.openlocfilehash: ba54bc3de2eb80fd7283f1a313448b77a04bbe4d
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: fdf3b1a53bfc07623463015eb734382fede698d3
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32540364"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33338350"
 ---
-# <a name="create-multi-value-extended-property"></a>Создание многозначного расширенного свойства
+# <a name="create-multi-value-extended-property"></a>Создание расширенного свойства с несколькими значениями
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
@@ -21,7 +21,7 @@ ms.locfileid: "32540364"
 - [contact](../resources/contact.md)
 - [contactFolder](../resources/contactfolder.md). 
 - [event](../resources/event.md)
-- [mailFolder](../resources/mailfolder.md);
+- [mailFolder](../resources/mailfolder.md)
 - [message](../resources/message.md)
 - [Задача Outlook](../resources/outlooktask.md)
 - [Папка задач Outlook](../resources/outlooktaskfolder.md)
@@ -46,7 +46,7 @@ ms.locfileid: "32540364"
 | [calendar](../resources/calendar.md) для групп | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [event](../resources/event.md); | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
 | group [post](../resources/post.md). | Group.ReadWrite.All | Не поддерживается | Не поддерживается |
-| [mailFolder](../resources/mailfolder.md); | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [mailFolder](../resources/mailfolder.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
 | [Задача Outlook](../resources/outlooktask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [Папка задач Outlook](../resources/outlooktaskfolder.md) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
@@ -176,7 +176,7 @@ PATCH /groups/{id}/events/{id}
 
 
 ## <a name="example"></a>Пример
-##### <a name="request-1"></a>Запрос 1
+##### <a name="request-1"></a>Запрос 1
 
 В первом примере в новом экземпляре event создается многозначное расширенное свойство с помощью одной операции POST. Помимо свойств, которые обычно указываются для нового события, тело запроса включает коллекцию **multiValueExtendedProperties**, которая содержит одно расширенное свойство. Тело запроса включает следующие данные для многозначного расширенного свойства:
 
@@ -277,9 +277,7 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
 

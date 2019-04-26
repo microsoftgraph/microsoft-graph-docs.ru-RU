@@ -3,12 +3,12 @@ title: Тип ресурса активности
 description: Представляет одно действие в приложении — например, телепередача, документ или текущую кампанию в видеоигре. Когда пользователь наносит это действие, задействование регистрируется в виде элемента журнала, который указывает время начала и окончания для этого действия. По мере того как пользователь повторно перезапускается с этим действием, для одного действия пользователя записываются несколько элементов журнала.
 localization_priority: Normal
 ms.prod: project-rome
-ms.openlocfilehash: 5deaab5d7ea071bfda686380d49fb41214a7b29e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 4ae3fb47961140a784a1fa15fc606fd8967be96b
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32563392"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33344024"
 ---
 # <a name="activity-resource-type"></a>Тип ресурса активности
 
@@ -38,7 +38,7 @@ ms.locfileid: "32563392"
 |Усертимезоне | String | Необязательное свойство. Часовой пояс, в котором устройство пользователя, используемое для создания действия, было размещено во время создания действия; значения, предоставляемые как идентификаторы Олсона для поддержки представления на нескольких платформах.|
 |createdDateTime | DateTimeOffset | ЗаДается сервером. Дата и время в формате UTC, когда объект был создан на сервере. |
 |lastModifiedDateTime | DateTimeOffset | ЗаДается сервером. Дата и время в формате UTC, когда объект был изменен на сервере. |
-|id | String | Идентификатор, созданный сервером, используемый для адресации URL-адресов.|
+|id | Строка | Идентификатор, созданный сервером, используемый для адресации URL-адресов.|
 |Аппактивитид | String | Обязательный. Уникальный идентификатор действия в контексте приложения, предоставленного вызывающим и неизменяемым после этого.|
 |Активитисаурцехост | String | Обязательный. URL-адрес домена, представляющий сопоставление удостоверений между платформами для приложения. Сопоставление хранится в виде JSON-файла, размещенного в домене или настраиваемого через центр разработки для Windows. JSON-файл называется Cross-Platform-App-Identifiers и размещается в корне домена HTTPS в домене верхнего уровня или включает поддомен. Примеры: https://contoso.com или https://myapp.contoso.com, но НЕ https://myapp.contoso.com/somepath. Для удостоверения приложения на нескольких платформах необходимо наличие уникального файла и домена (или дочернего домена). Например, для Word и PowerPoint требуется отдельный файл и домен.|
 |appDisplayName | String | Необязательное свойство. Краткое текстовое описание приложения, которое используется для создания действия для использования в случаях, когда приложение не установлено на локальном устройстве пользователя.|
@@ -46,15 +46,15 @@ ms.locfileid: "32563392"
 |Фаллбаккурл | String | Необязательное свойство. URL-адрес, используемый для запуска действия в веб-приложении, если оно доступно.|
 |contentUrl | String | Необязательное свойство. Используется в событии, когда содержимое может отображаться за преработкой в собственном или веб-интерфейсе веб-приложения (например, указатель на элемент в RSS-канале).|
 |Висуалелементс| [Висуалинфо](../resources/projectrome-visualinfo.md) | Обязательный. Объект, содержащий информацию для отображения действий в пользовательском интерфейсе.|
-|Контентинфо | Нетипизированный объект JSON | Необязательный параметр. Настраиваемая часть расширяемого описания содержимого Data – JSON – LD в соответствии с синтаксисом [Schema.org](https://schema.org) .|
+|Контентинфо | Нетипизированный объект JSON | Необязательно. Настраиваемая часть расширяемого описания содержимого Data – JSON – LD в соответствии с синтаксисом [Schema.org](https://schema.org) .|
 |expirationDateTime | DateTimeOffset | ЗаДается сервером. DateTime в формате UTC, когда истечет срок действия объекта на сервере.|
-|status | EnumType | ЗаДается сервером. Код состояния, используемый для идентификации допустимых объектов. Значения: активные, обновленные, удаленные, проигнорированы.|
+|status | string | ЗаДается сервером. Код состояния, используемый для идентификации допустимых объектов. Значения: активные, обновленные, удаленные, проигнорированы.|
 
 ## <a name="relationships"></a>Связи
 
 |Отношение | Тип | Описание|
 |:------------|:-----|:-----------|
-|Historyitem| Коллекция [historyItem](../resources/projectrome-historyitem.md) | Необязательный параметр. Свойство NavigationProperty/вложение; свойство навигации для Historyitem действия.|
+|Historyitem| Коллекция [historyItem](../resources/projectrome-historyitem.md) | Необязательно. Свойство NavigationProperty/вложение; свойство навигации для Historyitem действия.|
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -71,6 +71,7 @@ ms.locfileid: "32563392"
     "visualElements",
     "historyItems"
   ],
+  "keyProperty": "id",
   "@odata.type": "microsoft.graph.activity"
 }-->
 
@@ -87,7 +88,7 @@ ms.locfileid: "32563392"
     "lastModifiedDateTime": "DateTimeOffset",
     "expirationDateTime": "DateTimeOffset",
     "id": "String",
-    "status": "EnumType",
+    "status": "string",
     "contentInfo": { "@data.type": "microsoft.graph.Json" },
     "visualElements": { "@data.type": "microsoft.graph.visualInfo" },
     "historyItems": [{ "@odata.type": "microsoft.graph.historyItem" }]
@@ -103,8 +104,6 @@ ms.locfileid: "32563392"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/projectrome-activity.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

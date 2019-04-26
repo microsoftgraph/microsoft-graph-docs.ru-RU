@@ -4,12 +4,12 @@ ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
-ms.openlocfilehash: 7f0ecdbb498ee75133ec9499027f7cfdc6191327
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: c5a08ca3a1a7b91d5cd2277a71f1301adf5edc93
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583825"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343101"
 ---
 # <a name="sharinglink-resource-type"></a>Тип ресурса sharingLink
 
@@ -47,7 +47,7 @@ ms.locfileid: "32583825"
 | application    | [identity][]  | Приложение, с которым сопоставлена ссылка.
 | type           | String        | Тип созданной ссылки.
 | scope          | String        | Область ссылки, представленная этим разрешением. Значение `anonymous` указывает, что ссылку может использовать любой пользователь, значение `organization` указывает, что ссылку могут использовать только пользователи, выполнившие вход в один и тот же клиент.
-| Превентсдовнлоад | Boolean       | Если этот параметр имеет значение true, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для загрузки содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
+| Превентсдовнлоад | Логический       | Если этот параметр имеет значение true, пользователь может использовать эту ссылку только для просмотра элемента в Интернете и не может использовать его для загрузки содержимого элемента. Только для OneDrive для бизнеса и SharePoint.
 | webHtml        | String        | Для ссылок `embed` это свойство содержит HTML-код элемента `<iframe>`, который внедряет элемент на веб-страницу.
 | webUrl         | Строка        | URL-адрес, который открывает элемент в браузере на веб-сайте OneDrive.
 
@@ -83,8 +83,6 @@ ms.locfileid: "32583825"
   "keywords": "sharing,sharing link, sharing url, webUrl",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/sharinglink.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

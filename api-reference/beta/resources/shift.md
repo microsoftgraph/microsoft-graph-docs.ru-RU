@@ -4,12 +4,12 @@ description: Смена — это единица запланированной
 author: nkramer
 localization_priority: Normal
 ms.prod: microsoft-teams
-ms.openlocfilehash: cd80cd36bd32ea9efba9e565aabd2da963c51ec8
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: f5c66d0f555ae6e5740883ed72964a8fa36df303
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32583797"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33343053"
 ---
 # <a name="shift-resource-type"></a>Тип ресурса Shift
 
@@ -37,7 +37,7 @@ ms.locfileid: "32583797"
 | Драфтшифт        |[Шифтитем](shiftitem.md)        |Черновая версия этого `shift` элемента, просматриваемая руководителями. Обязательный. |
 | createdDateTime       |`DateTimeOffset`        |Временная метка, на которую `shift` был создан впервые. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
 | lastModifiedDateTime      |`DateTimeOffset`        |Отметка времени `shift` последнего обновления. Тип Timestamp представляет сведения о времени и дате с использованием формата ISO 8601 (всегда применяется формат UTC). Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: "2014-01-01T00:00:00Z". |
-| lastModifiedBy        |`microsoft.graph.identitySet`        |Учетная запись, которая последней обновила этот объект `shift`.|
+| lastModifiedBy        | [identitySet](identityset.md)        |Учетная запись, которая последней обновила этот объект `shift`.|
 
 ## <a name="json-representation"></a>Представление в формате JSON
 
@@ -56,47 +56,9 @@ ms.locfileid: "32583797"
   "lastModifiedDateTime": "2019-03-14T05:32:51.451Z",
   "userId": "c5d0c76b-80c4-481c-be50-923cd8d680a1",
   "schedulingGroupId": "TAG_228940ed-ff84-4e25-b129-1b395cf78be0",
-  "lastModifiedBy": {
-    "application": null,
-    "device": null,
-    "conversation": null,
-    "user": {
-      "id": "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
-      "displayName": "John Doe"
-    }
-  },
-  "sharedShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:15:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  },
-  "draftShift": {
-    "displayName": "Day shift",
-    "notes": "Please do inventory as part of your shift.",
-    "startDateTime": "2019-03-11T15:00:00Z",
-    "endDateTime": "2019-03-12T00:00:00Z",
-    "theme": "blue",
-    "activities": [
-      {
-        "isPaid": true,
-        "startDateTime": "2019-03-11T15:00:00Z",
-        "endDateTime": "2019-03-11T15:30:00Z",
-        "code": "",
-        "displayName": "Lunch"
-      }
-    ]
-  }
+  "lastModifiedBy": {"@odata.type":"microsoft.graph.identitySet"},
+  "sharedShift": {"@odata.type":"microsoft.graph.shiftItem"},
+  "draftShift": {"@odata.type":"microsoft.graph.shiftItem"}
 }
 ```
 
@@ -110,8 +72,6 @@ ms.locfileid: "32583797"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/shift.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

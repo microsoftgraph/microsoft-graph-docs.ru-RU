@@ -2,12 +2,12 @@
 title: Тип ресурса Говернанцероледефинитион
 description: Представляет определения ролей. Для ресурсов Azure он может представлять роли Azure RBAC, такие как Owner, Reader, корреспондент и т. д.
 localization_priority: Normal
-ms.openlocfilehash: 867864892bac9107c44ba9125336429248b6697e
-ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
+ms.openlocfilehash: 27b4b144f834f3b5eb4270a2875da5add10efb9d
+ms.sourcegitcommit: 014eb3944306948edbb6560dbe689816a168c4f7
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/24/2019
-ms.locfileid: "32547454"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33333759"
 ---
 # <a name="governanceroledefinition-resource-type"></a>Тип ресурса Говернанцероледефинитион
 
@@ -21,33 +21,31 @@ ms.locfileid: "32547454"
 
 | Метод          | Возвращаемый тип |Описание|
 |:---------------|:--------|:--------|:----------|
-|[List](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |ПереЧисление коллекции определений ролей для ресурса.|
+|[Список](../api/governanceroledefinition-list.md) | Коллекция [говернанцероледефинитион](../resources/governanceroledefinition.md) |ПереЧисление коллекции определений ролей для ресурса.|
 |[Получение](../api/governanceroledefinition-get.md) | [Говернанцероледефинитион](../resources/governanceroledefinition.md) |Считывание свойств и связей объекта определения роли, указанного по идентификатору.|
 Нет `POST`, `PUT`, `PATCH`, `DELETE` поддерживается в `roleDefinitions` наборе сущностей для Now.
 ## <a name="properties"></a>Свойства
 | Свойство  | Тип      |Описание|
 |:----|:----------|:----------|:----------|
-|id         |String     |Идентификатор определения роли. |
+|id         |Строка     |Идентификатор определения роли. |
 |resourceId |String     |Обязательный. Идентификатор ресурса, связанного с определением роли. |
 |externalId   |String     |Внешний идентификатор определения роли.|
 |displayName|Строка     |Отображаемое имя определения роли.|
-|Субжекткаунт|Int32     |Необязательный. Количество субъектов, назначенных для роли. Он представляет состояние доступа запрашивающего к ресурсу. Чтобы получить свойство, используйте `$select=subjectCount` експликтли в запросе.|
-|Елигиблеассигнменткаунт|Int32|Необязательный. Число подходящих назначений ролей, связанных с определением роли. Чтобы получить свойство, используйте `$select=eligibleAssignmentCount` експликтли в запросе.|
-|Активеассигнменткаунт|Int32    |Необязательный. Количество активных назначений ролей, связанных с определением роли.  Чтобы получить свойство, используйте `$select=activeAssignmentCount` експликтли в запросе.|
+|templateId | String | |
 
-
-## <a name="relationships"></a>Связи
+## <a name="relationships"></a>Отношения
 | Отношение | Тип   |Описание|
 |:---------------|:--------|:----------|
 |resource|[governanceResource](../resources/governanceresource.md)|Только для чтения. Связанный ресурс для определения роли.|
 |Ролесеттинг|[Говернанцеролесеттинг](../resources/governancerolesetting.md)|Связанный параметр роли для определения роли.|
 
-## <a name="json-representation"></a>Представление в формате JSON
+## <a name="json-representation"></a>Представление JSON
 
 Ниже представлено описание ресурса в формате JSON.
 
 <!-- {
   "blockType": "resource",
+  "keyProperty": "id",
   "optionalProperties": [
 
   ],
@@ -59,7 +57,8 @@ ms.locfileid: "32547454"
   "id": "String (identifier)",
   "resourceId": "String",
   "externalId": "String",
-  "displayName": "String",
+  "displayName": "String",  
+  "templateId":"String"
 }
 
 ```
@@ -73,8 +72,6 @@ ms.locfileid: "32547454"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/governanceroledefinition.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->
