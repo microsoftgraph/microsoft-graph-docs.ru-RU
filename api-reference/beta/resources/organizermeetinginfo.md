@@ -1,28 +1,28 @@
 ---
-title: Тип ресурса organizerMeetingInfo
-description: Сведения о собрании, содержащий организатора собрания.
+title: Тип ресурса Организермитингинфо
+description: Сведения о собрании, содержащие организатора собрания.
 author: VinodRavichandran
 localization_priority: Normal
 ms.prod: microsoft-teams
 ms.openlocfilehash: 3b7d21a313d8744f18c8b96549bc9470b587361c
-ms.sourcegitcommit: d95f6d39a0479da6e531f3734c4029dc596b9a3f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29641997"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568600"
 ---
-# <a name="organizermeetinginfo-resource-type"></a>Тип ресурса organizerMeetingInfo
+# <a name="organizermeetinginfo-resource-type"></a>Тип ресурса Организермитингинфо
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Сведения о собрании, содержащий организатора собрания.
+Сведения о собрании, содержащие организатора собрания.
 
 ## <a name="properties"></a>Свойства
 
 | Свойство                     | Тип                          | Описание                                     |
 | :--------------------------- | :---------------------------- | :-----------------------------------------------|
-| allowConversationWithoutHost | Boolean                       | Указывает, если беседы можно продолжить после покидает узла беседы. |
-| organizer                    | [identitySet](identityset.md) | Организатор identity Azure Active Directory.  |
+| Алловконверсатионвисаусост | Boolean                       | Указывает, может ли беседа продолжиться после закрытия узла беседы. |
+| organizer                    | [identitySet](identityset.md) | Удостоверение Azure Active Directory для организатора.  |
 
 ## <a name="json-representation"></a>Представление JSON
 
@@ -33,12 +33,14 @@ ms.locfileid: "29641997"
   "optionalProperties": [
 
   ],
+  "baseType": "microsoft.graph.meetingInfo",
+   "openType": true,
   "@odata.type": "microsoft.graph.organizerMeetingInfo"
 }-->
 ```json
 {
   "allowConversationWithoutHost": true,
-  "organizer": { "@odata.type": "#microsoft.graph.identitySet" }
+  "organizer": { "@odata.type": "microsoft.graph.identitySet" }
 }
 ```
 
@@ -69,8 +71,6 @@ ms.locfileid: "29641997"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/organizermeetinginfo.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

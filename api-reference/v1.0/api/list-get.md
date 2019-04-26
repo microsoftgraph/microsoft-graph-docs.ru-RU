@@ -3,16 +3,18 @@ author: JeremyKelley
 ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Получение списка SharePoint
-localization_priority: Priority
+localization_priority: Normal
 ms.prod: sharepoint
 ms.openlocfilehash: 9e667055b47568d712349c6725bd4ebc70aa63fd
-ms.sourcegitcommit: b877a8dc9aeaf74f975ca495b401ffff001d7699
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30482352"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568084"
 ---
 # <a name="get-metadata-for-a-list"></a>Получение метаданных списка
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Возвращает метаданные для [списка][].
 
@@ -31,8 +33,8 @@ ms.locfileid: "30482352"
 ## <a name="http-request"></a>HTTP-запрос
 
 ```http
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}
+GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
 ## <a name="request-body"></a>Тело запроса
@@ -43,7 +45,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=colu
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list" } -->
 
 ```http
 GET /sites/{site-id}/lists/{list-id}
@@ -51,7 +53,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 #### <a name="response"></a>Ответ
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
@@ -73,22 +75,21 @@ Content-type: application/json
 
 #### <a name="request"></a>Запрос
 
-<!-- { "blockType": "request", "name": "get-list-multi-expand", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-multi-expand" } -->
 
 ```http
-GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
+GET /sites/{site-id}/lists/{list-id}?select=name,lastModifiedDateTime&expand=columns(select=name,description),items(expand=fields(select=Name,Color,Quantity))
 ```
 
 #### <a name="response"></a>Отклик
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all service.sharepoint" } -->
 
 ```json
 HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "1234-112-112-4",
   "name": "Inventory",
   "lastModifiedDateTime": "2016-08-30T08:32:00Z",
   "columns": [
@@ -134,10 +135,13 @@ Content-type: application/json
 }
 ```
 
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "",
   "keywords": "",
   "section": "documentation",
-  "tocPath": "Lists/Get metadata"
-} -->
+  "tocPath": "Lists/Get metadata",
+  "suppressions": []
+}
+-->

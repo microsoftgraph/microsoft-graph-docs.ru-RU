@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: 757cc2aa3b5e5b27a0b36d2d077da1c7a66f35ce
-ms.sourcegitcommit: 873b99d9001d1b2af21836e47f15360b08e10a40
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30260601"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568761"
 ---
 # <a name="policyplatformtype-enum-type"></a>тип перечисления Полициплатформтипе
 
@@ -21,13 +21,13 @@ ms.locfileid: "30260601"
 |Элемент|Значение|Описание|
 |:---|:---|:---|
 |ОС|нуль|ОС.|
-|iOS|2|модуле.|
-|macOS|4|MacOS.|
-|windowsPhone81|4|WindowsPhone 8,1.|
-|windows81AndLater|17:00|Windows 8,1 и более поздние версии|
-|windows10AndLater|6|Windows 10 и более поздних версий.|
-|Андроидворкпрофиле|7|Андроидворкпрофиле.|
-|all|100|Все платформы.|
+|iOS|2 |модуле.|
+|macOS|3 |MacOS.|
+|windowsPhone81|4 |WindowsPhone 8,1.|
+|windows81AndLater|5 |Windows 8,1 и более поздние версии|
+|windows10AndLater|6 |Windows 10 и более поздних версий.|
+|Андроидворкпрофиле|7 |Андроидворкпрофиле.|
+|ко|100|Все платформы.|
 
 
 

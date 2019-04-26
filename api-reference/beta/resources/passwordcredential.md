@@ -1,22 +1,22 @@
 ---
-title: Тип ресурса passwordCredential
-description: Содержит учетные данные пароль, связанный с приложением или участника службы. Свойство **passwordCredentials** servicePrincipal сущности и сущности приложения — это коллекция **passwordCredential**.
+title: Тип ресурса Пассвордкредентиал
+description: Содержит учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** объекта servicePrincipal и сущности приложения является коллекцией **пассвордкредентиал**.
 localization_priority: Normal
 ms.openlocfilehash: 900bfb8a5828d636dfa1f1abfd0348ceb4aee143
-ms.sourcegitcommit: 3d24047b3af46136734de2486b041e67a34f3d83
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29523150"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568469"
 ---
-# <a name="passwordcredential-resource-type"></a>Тип ресурса passwordCredential
+# <a name="passwordcredential-resource-type"></a>Тип ресурса Пассвордкредентиал
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Содержит учетные данные пароль, связанный с приложением или участника службы. Свойство **passwordCredentials** [servicePrincipal](serviceprincipal.md) сущности и сущности [приложения](application.md) — это коллекция **passwordCredential**.
+Содержит учетные данные пароля, связанные с приложением или субъектом службы. Свойство **пассвордкредентиалс** объекта [servicePrincipal](serviceprincipal.md) и сущности [приложения](application.md) является коллекцией **пассвордкредентиал**.
 
 
-## <a name="json-representation"></a>Представление JSON
+## <a name="json-representation"></a>Описание в формате JSON
 
 Ниже показано представление JSON ресурса.
 
@@ -42,12 +42,12 @@ ms.locfileid: "29523150"
 ## <a name="properties"></a>Свойства
 | Свойство     | Тип   |Описание|
 |:---------------|:--------|:----------|
-|customKeyIdentifier|Binary|            |
-|endDateTime|DateTimeOffset|Дата и время истечения срока действия пароля. Тип метки времени представляет сведения даты и времени с использованием формата ISO 8601 и — это всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|Идентификатор ключа|Guid|            |
-|startDateTime|DateTimeOffset|Дата и время, в которой становится допустимый пароль. Тип метки времени представляет сведения даты и времени с использованием формата ISO 8601 и — это всегда в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
-|secretText|String| Пароли должны быть 16-64 символов |
-|подсказка|String|  |
+|Кустомкэйидентифиер|Двоичный|            |
+|endDateTime|DateTimeOffset|Дата и время истечения срока действия пароля. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Него значение KeyID|Guid|            |
+|startDateTime|DateTimeOffset|Дата и время, когда пароль становится действительным. Тип timestamp представляет сведения о дате и времени с использованием формата ISO 8601 и всегда задается в формате UTC. Например, значение полуночи 1 января 2014 г. в формате UTC выглядит так: `'2014-01-01T00:00:00Z'`.|
+|Секреттекст|String| Пароли должны иметь длину 16-64 символов |
+|сказок|String|  |
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -58,8 +58,6 @@ ms.locfileid: "29523150"
   "keywords": "",
   "section": "documentation",
   "tocPath": "",
-  "suppressions": [
-    "Error: /api-reference/beta/resources/passwordcredential.md:\r\n      Exception processing links.\r\n    System.ArgumentException: Link Definition was null. Link text: !INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)\r\n      at ApiDoctor.Validation.DocFile.get_LinkDestinations()\r\n      at ApiDoctor.Validation.DocSet.ValidateLinks(Boolean includeWarnings, String[] relativePathForFiles, IssueLogger issues, Boolean requireFilenameCaseMatch, Boolean printOrphanedFiles)"
-  ]
+  "suppressions": []
 }
 -->

@@ -5,11 +5,11 @@ author: tfitzmac
 localization_priority: Normal
 ms.prod: Intune
 ms.openlocfilehash: f3dac405c71e4e85cc29bb36d335a57bb51fbe0f
-ms.sourcegitcommit: 20fef447f7e658a454a3887ea49746142c22e45c
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31783740"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32568733"
 ---
 # <a name="managementconditionexpressionstring-resource-type"></a>Тип ресурса Манажементкондитионекспрессионстринг
 
@@ -25,7 +25,7 @@ ms.locfileid: "31783740"
 ## <a name="properties"></a>Свойства
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|value|String|Строковое значение выражения оператора условия управления.|
+|значение|String|Строковое значение выражения оператора условия управления.|
 
 ## <a name="relationships"></a>Отношения
 Нет

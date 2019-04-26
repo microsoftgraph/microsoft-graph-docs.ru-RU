@@ -5,11 +5,11 @@ author: lumine2008
 localization_priority: Normal
 ms.prod: excel
 ms.openlocfilehash: e7dade7e0c83808aa10700e87dd54a1e8fe9bb7c
-ms.sourcegitcommit: 36be044c89a19af84c93e586e22200ec919e4c9f
+ms.sourcegitcommit: 0ce657622f42c510a104156a96bf1f1f040bc1cd
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "27971972"
+ms.lasthandoff: 04/24/2019
+ms.locfileid: "32569692"
 ---
 # <a name="worksheet-range"></a>Worksheet: Range
 
@@ -35,7 +35,7 @@ GET /workbook/worksheets/{id|name}/range
 | Авторизация  | Bearer {токен}. Обязательный. |
 | Workbook-Session-Id  | Идентификатор сеанса работы с книгой, определяющий, сохраняются ли изменения. Задавать не обязательно.|
 
-## <a name="function-parameters"></a>Параметры функций
+## <a name="function-parameters"></a>Параметры функции
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
@@ -58,7 +58,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### <a name="response"></a>Ответ
-Ниже приведен пример ответа. Примечание. Объект ответа, показанный здесь, может быть усечен для краткости. Все свойства будут возвращены при фактическом вызове.
+Ниже приведен пример ответа. Примечание. Объект отклика, показанный здесь, может быть усечен для краткости. При фактическом вызове будут возвращены все свойства.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -79,7 +79,7 @@ Content-length: 169
 }
 ```
 
-Если необязательный `address` параметр не указан, эта функция возвращает диапазон всего рабочего листа.
+Если необязательный `address` параметр не указан, эта функция возвращает весь диапазон листа.
 
 ##### <a name="request"></a>Запрос
 
@@ -91,7 +91,7 @@ Content-length: 169
 GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id|name}/range
 ```
 
-##### <a name="response"></a>Ответ
+##### <a name="response"></a>Отклик
 
 <!-- {
   "blockType": "response",
